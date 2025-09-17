@@ -1,0 +1,56 @@
+@use "../../styles/variables" as *;
+
+.breadCrumbs {
+    font-size: 16px;
+
+    ul {
+        display: flex;
+        gap: 10px;
+        list-style: none;
+        flex-wrap: wrap;
+    }
+
+    li {
+        display: flex;
+        align-items: center;
+        padding: 6px 14px;
+        border-radius: 6px;
+        border: 1px solid var(--color-sidebar-bg);
+        box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+        transition: all 0.2s ease-in-out;
+        cursor: pointer;
+
+        a {
+            @include body-text();
+            text-decoration: none;
+        }
+
+        &:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        &.active {
+            cursor: default;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15);
+
+            a {
+                pointer-events: none;
+                 @include bold-text();
+            }
+
+            span {
+                background: none;
+                padding: 0;
+                font-weight: 600;
+            }
+        }
+    }
+
+    .arrow {
+        font-size: 18px;
+        margin: 0 2px;
+        display: flex;
+        align-items: center;
+    }
+}
