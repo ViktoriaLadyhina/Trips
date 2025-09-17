@@ -30,7 +30,7 @@ const Home = () => {
       <ul className="home__countries">
         {countries?.map((c) => (
           <li key={c.id}>
-            <Link to={`/country/${c.path}`} className="home__countries-btn">
+            <Link to={`/${c.path}`} className="home__countries-btn">
               <div className="home__countries-btn-image">
                 <img src={c.imagePath} alt={c.country} />
               </div>

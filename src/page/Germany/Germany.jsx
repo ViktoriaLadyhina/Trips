@@ -12,7 +12,7 @@ const BASE_PHOTO_URL = import.meta.env.VITE_BASE_PHOTO_URL;
 
 const Germany = () => {
     const dispatch = useDispatch();
-    const { lang, status, error, countries, initialized } = useSelector((state) => state.language);
+    const { lang, status, countries, initialized } = useSelector((state) => state.language);
 
     useEffect(() => {
         if (lang && !initialized) {
@@ -20,11 +20,9 @@ const Germany = () => {
         }
     }, [lang, dispatch, initialized]);
 
-    useEffect(() => {
-        if (status === "failed") console.error(error);
-    }, [status, error]);
-
     const country = countries.find(c => c.path === 'germany');
+
+    if (status === "failed") return <ErrorBox />;
     if (!initialized || !country) { return <Loader />; }
 
     const InfoBlock = ({ data, className }) => (
@@ -53,12 +51,12 @@ const Germany = () => {
         <div className="germany">
             {/* Сайдбар с землями */}
             <aside className="germany__sidebar">
-                <h2 className="germany__sidebar-title">Земли Германии</h2>
+                <h2 className="germany__sidebar-title">{country.germanStates.title}</h2>
                 <ul className="germany__sidebar-list">
-                    {country.germanStates.map(state => (
+                    {country.germanStates.items.map(state => (
                         <li key={state.id} className="germany__sidebar-item">
                             {state.hasInfo ? (
-                                <Link to={`/germany/state/${state.id}`} className="germany__sidebar-link">
+                                <Link to={state.path} className="germany__sidebar-link">
                                     {state.name}
                                 </Link>
                             ) : (
