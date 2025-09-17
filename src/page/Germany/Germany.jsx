@@ -6,6 +6,7 @@ import ErrorBox from '../../components/error/ErrorBox';
 import { dePhotos } from '../../datas/fotos/de';
 import './Germany.scss'
 import { Link } from 'react-router-dom';
+import BreadCrumbs from '../../components/breadCrumbs/BreadCrumbs';
 
 const BASE_PHOTO_URL = import.meta.env.VITE_BASE_PHOTO_URL;
 
@@ -38,6 +39,16 @@ const Germany = () => {
 
     const currentMap = dePhotos.map[lang] || dePhotos.map.ru;
 
+    const crumbs = [
+        {
+            label: lang === 'ru' ? 'Главная' : lang === 'de' ? 'Startseite' : 'Головна',
+            path: '/'
+        },
+        {
+            label: country?.country
+        }
+    ];
+
     return (
         <div className="germany">
             {/* Сайдбар с землями */}
@@ -62,6 +73,7 @@ const Germany = () => {
 
             {/* Основной контент */}
             <div className="germany__content">
+                <BreadCrumbs crumbs={crumbs} />
                 <h1 className="germany__title">{country?.country}</h1>
                 <img src={`${BASE_PHOTO_URL}${currentMap}`} alt={`${country?.country} карта`} />
                 <InfoBlock data={country.desc.capital} className="germany__capital" />
