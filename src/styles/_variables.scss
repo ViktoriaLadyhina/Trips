@@ -1,0 +1,60 @@
+/* ===== Цвета для светлой темы ===== */
+:root {
+  /* Общий фон страницы */
+  --color-body-bg: url('/background.jpg');
+
+  /* Фон страницы для sidebar */
+  --color-sidebar-bg: #FFE4B5;
+
+  /* Цвет основного текста */
+  --color-text: #333;
+
+  /* Основной цвет выделения (кнопки, ссылки) */
+  --color-primary: #4CAF50;
+
+  /* Цвет H1 заголовков */
+  --color-heading-h1: blue;
+
+  /* Цвет H2 заголовков */
+  --color-heading-h2: red;
+
+  /* Цвет H3 заголовков */
+  --color-heading-h3: blue;
+}
+
+/* ===== Цвета для темной темы ===== */
+[data-theme='dark'] {
+  --color-body-bg: url('/background-dark.jpg');
+  --color-text: #eee;
+  --color-primary: #4CAF50;
+  --color-heading-h1: #3399ff;
+  --color-heading-h2: #66ccff;
+  --color-heading-h3: #99ddff;
+}
+
+/* ===== Миксины ===== */
+@mixin heading($size, $color-var, $weight: 700, $line-height: 1.2) {
+  font-size: $size;
+  color: var(#{$color-var});
+  font-family: 'Arial, sans-serif'; 
+  font-weight: $weight;
+  line-height: $line-height;
+  margin: 0;
+}
+@mixin h1() { @include heading(49px, --color-heading-h1); }
+@mixin h2() { @include heading(32px, --color-heading-h2); }
+@mixin h3() { @include heading(28px, --color-heading-h3); }
+
+@mixin text($size: 16px, $color-var: --color-text, $weight: 400, $line-height: 1.5) {
+  font-size: $size;
+  color: var(#{$color-var});
+  font-family: 'Arial, sans-serif';
+  font-weight: $weight;
+  line-height: $line-height;
+  margin: 0;
+}
+@mixin body-text() { @include text(16px, --color-text, 400, 1.5); }
+@mixin small-text() { @include text(14px, --color-text, 400, 1.4); }
+@mixin medium-text() { @include text(18px, --color-text, 500, 1.6); }
+@mixin large-text() { @include text(20px, --color-text, 600, 1.6); }
+@mixin bold-text() { @include text(16px, --color-text, 700, 1.5); }

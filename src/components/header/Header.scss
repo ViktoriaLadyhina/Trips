@@ -1,0 +1,13 @@
+.header {
+  width: 100vw;       // 100% ширины экрана
+  max-width: 100%;    
+  margin: 0;
+  padding: 0;
+  text-align: center;
+
+  img {
+    display: block;
+    width: 100%;      // растягиваем на всю ширину блока
+    height: auto;     // сохраняем пропорции
+  }
+}
