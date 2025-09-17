@@ -1,6 +1,7 @@
 export const datas = [
   {
     id: 1,
+    path: 'ukraine',
     country: 'Ukraine',
     imagePath: '/ukr/sofiyskiy.jpg',
     desc: {
@@ -11,16 +12,6 @@ export const datas = [
       geography: [
         { text: 'Die Ukraine ist ein Staat in Osteuropa. Im Osten und Norden grenzt sie an Russland, im Nordwesten an Belarus, im Westen an Polen, die Slowakei, Ungarn und Rumänien. Im Süden wird sie vom Schwarzen Meer, im Südosten vom Asowschen Meer umspült.' }
       ],
-      symbols: [
-        {
-          bold: 'Wappen:',
-          text: 'Am 28. Juni 1996 wurde durch Artikel 20 der ukrainischen Verfassung das kleine Wappen des Staates – ein goldener Dreizack auf blauem Hintergrund – offiziell bestätigt. Der Dreizack war einst das Staatssymbol der Kiewer Rus zur Zeit der Herrschaft der Rurikiden. Es gibt mehrere Theorien zur Herkunft des Symbols: Einige Forscher verbinden es mit Poseidon, dem Meeresgott der griechischen Mythologie. Ähnliche Embleme traten in Byzanz, Skandinavien und bei den Sarmaten auf. Der Dreizack wurde als religiöses, staatliches, militärisches oder heraldisches Symbol verwendet, manchmal auch nur als dekoratives Element. Späte Exemplare des Dreizacks (1. Jahrtausend n. Chr.) wurden auf dem Gebiet der Ukraine gefunden. Das kleine Wappen ist Teil des großen Wappens.'
-        },
-        {
-          bold: 'Flagge:',
-          text: 'Am 28. Januar 1992 beschloss die Werchowna Rada der Ukraine die nationale Flagge: ein rechteckiges Tuch mit zwei gleich breiten horizontalen Streifen – oben blau, unten gelb.'
-        }
-      ],
       population: [
         { bold: 'Einwohnerzahl:' },
         { text: ' etwa 39 Millionen Menschen (2025), bezogen auf die von der ukrainischen Regierung kontrollierten Gebiete. Die Mehrheit lebt in Städten.' }
@@ -29,36 +20,89 @@ export const datas = [
         { bold: 'Sprachen:' },
         { text: ' Ukrainisch (Amtssprache) sowie Sprachen nationaler Minderheiten — Krimtatarisch, Ungarisch, Rumänisch, Polnisch u.a.' }
       ],
-      holidays: [
-        { bold: '1. Januar', text: ' – Neujahr' },
-        { bold: '25. Dezember', text: ' – Weihnachten (nach neuem Kalender)' },
-        { bold: '8. März', text: ' – Internationaler Frauentag' },
-        { bold: 'Ostern', text: ' – fällt auf einen Sonntag zwischen dem 4. April und 8. Mai (bewegliches Datum)' },
-        { bold: '1. Mai', text: ' – Tag der Arbeit' },
-        { bold: '9. Mai', text: ' – Tag des Sieges über den Nationalsozialismus im Zweiten Weltkrieg' },
-        { bold: '28. Juni', text: ' – Tag der Verfassung der Ukraine' },
-        { bold: '15. Juli', text: ' – Tag der ukrainischen Staatlichkeit' },
-        { bold: '1. Oktober', text: ' – Tag der Verteidigerinnen und Verteidiger der Ukraine' },
-        { bold: '24. August', text: ' – Unabhängigkeitstag der Ukraine' }
-      ],
       cuisine: [
         { bold: 'Küche:' },
-        { text: ' Das kulinarische Aushängeschild ist der Borschtsch mit Pampuschki, dazu verschiedene Koteletts, Schmorgerichte, Kohlrouladen, Schaschlik und Speck. Mehr über die traditionelle Küche finden Sie ' },
-        { link: { text: 'hier', url: 'https://ukraine.ua/de' } },
-        { text: '.' }
+        { text: ' Das kulinarische Aushängeschild ist der Borschtsch mit Pampuschki, dazu verschiedene Koteletts, Schmorgerichte, Kohlrouladen, Schaschlik und Speck. ' },
       ],
       entry: [
         { bold: 'Einreise in die Ukraine:' },
         { text: ' Ausländische Staatsbürger durchlaufen Pass- und Zollkontrolle. Für die meisten Länder ist ein Visum oder ein anderes Einreisedokument gemäß den geltenden Vorschriften erforderlich.' }
       ]
     },
-    briefHistory: [
-      { text: 'Die Geschichte der heutigen Ukraine beginnt mit der Tripolje-Kultur in der Jungsteinzeit. Im 7. Jahrhundert v. Chr. lebten hier die Skythen. Im 9.–10. Jahrhundert entstand die Kiewer Rus. 988–989 fand die Christianisierung der Rus durch Fürst Wladimir den Großen statt. Im 12.–13. Jahrhundert wurde die Kiewer Rus durch innere Konflikte und die mongolisch-tatarische Invasion geschwächt.' },
-      { text: 'Im 16.–17. Jahrhundert standen ukrainische Gebiete unter der Herrschaft Polens, Litauens und des Osmanischen Reiches. 1648–1654 führte Bohdan Chmelnyzkyj den nationalen Befreiungskrieg, der zu einer Autonomie in Verbindung mit dem Moskauer Zarenreich führte.' },
-      { text: 'Im 20. Jahrhundert erlebte die Ukraine die Revolution von 1917, den Eintritt in die UdSSR, die Hungersnot (Holodomor) 1932–1933, den Zweiten Weltkrieg und den Wiederaufbau. 1986 ereignete sich die Katastrophe im Kernkraftwerk Tschernobyl.' },
-      { text: 'Am 24. August 1991 erklärte die Ukraine ihre Unabhängigkeit. 2004 fand die Orange Revolution statt, 2013–2014 die Revolution der Würde. 2014 annektierte Russland die Krim, im Osten begann ein bewaffneter Konflikt. Seit Februar 2022 führt Russland einen groß angelegten Krieg gegen die Ukraine.' },
-      { text: 'Die heutige Ukraine ist eine präsidentiell-parlamentarische Republik. Präsident seit 2019 ist Wolodymyr Selenskyj. Die offizielle Währung ist die Hrywnja (UAH). Premierministerin seit Juli 2025 ist Julia Swyrydenko.' }
-    ]
+    symbols: {
+      title: "Heraldik",
+      items: [
+        {
+          bold: 'Wappen:',
+          text: ' am 28. Juni 1996 wurde durch Artikel 20 der ukrainischen Verfassung das kleine Wappen des Staates – ein goldener Dreizack auf blauem Hintergrund – offiziell bestätigt. Der Dreizack war einst das Staatssymbol der Kiewer Rus zur Zeit der Herrschaft der Rurikiden. Es gibt mehrere Theorien zur Herkunft des Symbols: Einige Forscher verbinden es mit Poseidon, dem Meeresgott der griechischen Mythologie. Ähnliche Embleme traten in Byzanz, Skandinavien und bei den Sarmaten auf. Der Dreizack wurde als religiöses, staatliches, militärisches oder heraldisches Symbol verwendet, manchmal auch nur als dekoratives Element. Späte Exemplare des Dreizacks (1. Jahrtausend n. Chr.) wurden auf dem Gebiet der Ukraine gefunden. Das kleine Wappen ist Teil des großen Wappens.',
+          img: "Ukraine/gerb.gif"
+        },
+        {
+          bold: 'Flagge:',
+          text: ' am 28. Januar 1992 beschloss die Werchowna Rada der Ukraine die nationale Flagge: ein rechteckiges Tuch mit zwei gleich breiten horizontalen Streifen – oben blau, unten gelb.',
+          img: "Ukraine/flag.jpeg"
+        }
+      ]
+    },
+    holidays: {
+      title: "Feiertage",
+      items: [
+        { bold: "1. Januar", text: " – Neujahr" },
+        { bold: "25. Dezember", text: " – Weihnachten (nach neuem Stil)" },
+        { bold: "8. März", text: " – Internationaler Frauentag" },
+        { bold: "Ostern", text: " – wird an einem Tag zwischen 4. April und 8. Mai gefeiert (bewegliches Datum)" },
+        { bold: "1. Mai", text: " – Tag der Arbeit" },
+        { bold: "9. Mai", text: " – Tag des Sieges über den Nationalsozialismus im Zweiten Weltkrieg" },
+        { bold: "28. Juni", text: " – Tag der Verfassung der Ukraine" },
+        { bold: "15. Juli", text: " – Tag der ukrainischen Staatlichkeit" },
+        { bold: "1. Oktober", text: " – Tag der Verteidigerinnen und Verteidiger der Ukraine" },
+        { bold: "24. August", text: " – Unabhängigkeitstag der Ukraine" }
+      ]
+    },
+    briefHistory: {
+      title: 'Kurze Geschichte',
+      items: [
+        { text: 'Die Geschichte der heutigen Ukraine beginnt mit der Tripolje-Kultur in der Jungsteinzeit. Im 7. Jahrhundert v. Chr. lebten hier die Skythen. Im 9.–10. Jahrhundert entstand die Kiewer Rus. 988–989 fand die Christianisierung der Rus durch Fürst Wladimir den Großen statt. Im 12.–13. Jahrhundert wurde die Kiewer Rus durch innere Konflikte und die mongolisch-tatarische Invasion geschwächt.',
+          img: "Ukraine/i2.jpeg"
+         },
+        { text: 'Im 16.–17. Jahrhundert standen ukrainische Gebiete unter der Herrschaft Polens, Litauens und des Osmanischen Reiches. 1648–1654 führte Bohdan Chmelnyzkyj den nationalen Befreiungskrieg, der zu einer Autonomie in Verbindung mit dem Moskauer Zarenreich führte.' },
+        { text: 'Im 20. Jahrhundert erlebte die Ukraine die Revolution von 1917, den Eintritt in die UdSSR, die Hungersnot (Holodomor) 1932–1933, den Zweiten Weltkrieg und den Wiederaufbau. 1986 ereignete sich die Katastrophe im Kernkraftwerk Tschernobyl.' },
+        { text: 'Am 24. August 1991 erklärte die Ukraine ihre Unabhängigkeit. 2004 fand die Orange Revolution statt, 2013–2014 die Revolution der Würde. 2014 annektierte Russland die Krim, im Osten begann ein bewaffneter Konflikt. Seit Februar 2022 führt Russland einen groß angelegten Krieg gegen die Ukraine.' },
+        { text: 'Die heutige Ukraine ist eine präsidentiell-parlamentarische Republik. Präsident seit 2019 ist Wolodymyr Selenskyj. Die offizielle Währung ist die Hrywnja (UAH). Premierministerin seit Juli 2025 ist Julia Swyrydenko.' }
+      ]
+    },
+    ukraineRegions: {
+      title: "Regionen der Ukraine",
+      items: [
+        { id: 1, name: 'Oblast Winnyzja', path: 'vinnytska', hasInfo: false },
+        { id: 2, name: 'Oblast Wolhynien', path: 'volynska', hasInfo: false },
+        { id: 3, name: 'Oblast Dnipropetrowsk', path: 'dnepropetrovska', hasInfo: false },
+        { id: 4, name: 'Oblast Donezk', path: 'donetska', hasInfo: false },
+        { id: 5, name: 'Oblast Schytomyr', path: 'zhytomyrska', hasInfo: false },
+        { id: 6, name: 'Oblast Transkarpatien', path: 'zakarpatska', hasInfo: false },
+        { id: 7, name: 'Oblast Saporischschja', path: 'zaporizka', hasInfo: false },
+        { id: 8, name: 'Oblast Iwano-Frankiwsk', path: 'ivano-frankivska', hasInfo: false },
+        { id: 9, name: 'Oblast Kiew', path: 'kyivska', hasInfo: false },
+        { id: 10, name: 'Oblast Kirovohrad', path: 'kirovohradska', hasInfo: false },
+        { id: 11, name: 'Oblast Luhansk', path: 'luganska', hasInfo: false },
+        { id: 12, name: 'Oblast Lwiw', path: 'lvivska', hasInfo: false },
+        { id: 13, name: 'Oblast Mykolajiw', path: 'mykolaivska', hasInfo: false },
+        { id: 14, name: 'Oblast Odessa', path: 'odeska', hasInfo: false },
+        { id: 15, name: 'Oblast Poltawa', path: 'poltavska', hasInfo: false },
+        { id: 16, name: 'Oblast Riwne', path: 'rovenska', hasInfo: false },
+        { id: 17, name: 'Oblast Sumy', path: 'sumska', hasInfo: false },
+        { id: 18, name: 'Oblast Ternopil', path: 'ternopilska', hasInfo: false },
+        { id: 19, name: 'Oblast Charkiw', path: 'kharkivska', hasInfo: false },
+        { id: 20, name: 'Oblast Cherson', path: 'khersonska', hasInfo: false },
+        { id: 21, name: 'Oblast Chmelnyzkyj', path: 'khmelnytska', hasInfo: false },
+        { id: 22, name: 'Oblast Tscherkassy', path: 'cherkaska', hasInfo: false },
+        { id: 23, name: 'Oblast Tschernihiw', path: 'chernihivska', hasInfo: false },
+        { id: 24, name: 'Oblast Tscherniwzi', path: 'chernivetska', hasInfo: false },
+        { id: 25, name: 'Kiew (Stadt mit speziellem Status)', path: 'kyiv', hasInfo: false },
+        { id: 26, name: 'Sewastopol (Stadt mit speziellem Status)', path: 'sevastopol', hasInfo: false },
+        { id: 27, name: 'Autonome Republik Krim', path: 'crimea', hasInfo: false }
+      ]
+    }
   },
   {
     id: 2,
@@ -138,24 +182,91 @@ export const datas = [
         { text: "Nach dem Krieg wurde das Land in BRD und DDR geteilt. 1990 erfolgte die Wiedervereinigung, und das heutige Deutschland wurde zu einem föderalen Staat mit 16 Bundesländern, reicher Kultur, Wirtschaft und dem Bestreben, die Lehren der Geschichte zu lernen und zu bewahren." }
       ]
     },
-    germanStates: [
-      { id: 1, name: 'Baden-Württemberg', hasInfo: false },
-      { id: 2, name: 'Bayern', hasInfo: false },
-      { id: 3, name: 'Berlin', hasInfo: false },
-      { id: 4, name: 'Brandenburg', hasInfo: false },
-      { id: 5, name: 'Bremen', hasInfo: false },
-      { id: 6, name: 'Hamburg', hasInfo: false },
-      { id: 7, name: 'Hessen', hasInfo: false },
-      { id: 8, name: 'Mecklenburg-Vorpommern', hasInfo: false },
-      { id: 9, name: 'Niedersachsen', hasInfo: false },
-      { id: 10, name: 'Nordrhein-Westfalen', hasInfo: false },
-      { id: 11, name: 'Rheinland-Pfalz', hasInfo: false },
-      { id: 12, name: 'Saarland', hasInfo: false },
-      { id: 13, name: 'Sachsen', hasInfo: false },
-      { id: 14, name: 'Sachsen-Anhalt', hasInfo: false },
-      { id: 15, name: 'Schleswig-Holstein', hasInfo: false },
-      { id: 16, name: 'Thüringen', hasInfo: false }
-    ]
+    germanStates: {
+      title: 'Bundesländer Deutschlands',
+      items: [
+        {
+          id: 1,
+          name: 'Baden-Württemberg',
+          hasInfo: false
+        },
+        {
+          id: 2,
+          name: 'Bayern',
+          hasInfo: false
+        },
+        {
+          id: 3,
+          name: 'Berlin',
+          hasInfo: false
+        },
+        {
+          id: 4,
+          name: 'Brandenburg',
+          hasInfo: false
+        },
+        {
+          id: 5,
+          name: 'Bremen',
+          hasInfo: false
+        },
+        {
+          id: 6,
+          name: 'Hamburg',
+          hasInfo: false
+        },
+        {
+          id: 7,
+          name: 'Hessen',
+          hasInfo: false
+        },
+        {
+          id: 8,
+          name: 'Mecklenburg-Vorpommern',
+          hasInfo: false
+        },
+        {
+          id: 9,
+          name: 'Niedersachsen',
+          hasInfo: false
+        },
+        {
+          id: 10,
+          name: 'Nordrhein-Westfalen',
+          hasInfo: true
+        },
+        {
+          id: 11,
+          name: 'Rheinland-Pfalz',
+          hasInfo: false
+        },
+        {
+          id: 12,
+          name: 'Saarland',
+          hasInfo: false
+        },
+        {
+          id: 13,
+          name: 'Sachsen',
+          hasInfo: false
+        },
+        {
+          id: 14,
+          name: 'Sachsen-Anhalt',
+          hasInfo: false
+        },
+        {
+          id: 15,
+          name: 'Schleswig-Holstein',
+          hasInfo: false
+        },
+        {
+          id: 16,
+          name: 'Thüringen',
+          hasInfo: false
+        }
+      ]
+    }
   }
 
 ];

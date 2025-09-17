@@ -79,6 +79,7 @@ const languageSlice = createSlice({
       .addCase(fetchPageData.rejected, (state, action) => {
         state.status = "failed";
         state.error = action.error.message;
+        console.error("Ошибка загрузки страницы:", action.error.message);
       });
   },
 });
