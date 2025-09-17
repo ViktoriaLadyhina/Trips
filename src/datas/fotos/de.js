@@ -9,5 +9,8 @@ castles: [
   "Germania/zamok1.jpg",
   "Germania/parahod.gif",
   "Germania/zamok3.jpg"
+],
+nrw: [
+  "Germania/Nordrhein/001.jpg"
 ]
 };

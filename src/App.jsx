@@ -4,6 +4,7 @@ import Layout from './components/layout/Layout'
 import Home from './page/home/Home'
 import Germany from './page/Germany/Germany';
 import Ukraine from './page/Ukraine/Ukraine';
+import NRW from './page/Germany/NRW/NRW';
 
 function App() {
 
@@ -13,8 +14,9 @@ function App() {
       <Routes>
         <Route path='/' element={<Layout />}>
           <Route index element={<Home />} />
-          <Route path='country/ukraine' element={<Ukraine />} />
-          <Route path='country/germany' element={<Germany />} />
+          <Route path='ukraine' element={<Ukraine />} />
+          <Route path='germany' element={<Germany />} />
+          <Route path='germany/nrw' element={<NRW />} />
         </Route>
       </Routes>
     </>
