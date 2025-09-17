@@ -56,7 +56,7 @@ const Germany = () => {
                     {country.germanStates.items.map(state => (
                         <li key={state.id} className="germany__sidebar-item">
                             {state.hasInfo ? (
-                                <Link to={`/germany/state/${state.id}`} className="germany__sidebar-link">
+                                <Link to={state.path} className="germany__sidebar-link">
                                     {state.name}
                                 </Link>
                             ) : (

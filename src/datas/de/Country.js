@@ -62,9 +62,10 @@ export const datas = [
     briefHistory: {
       title: 'Kurze Geschichte',
       items: [
-        { text: 'Die Geschichte der heutigen Ukraine beginnt mit der Tripolje-Kultur in der Jungsteinzeit. Im 7. Jahrhundert v. Chr. lebten hier die Skythen. Im 9.–10. Jahrhundert entstand die Kiewer Rus. 988–989 fand die Christianisierung der Rus durch Fürst Wladimir den Großen statt. Im 12.–13. Jahrhundert wurde die Kiewer Rus durch innere Konflikte und die mongolisch-tatarische Invasion geschwächt.',
+        {
+          text: 'Die Geschichte der heutigen Ukraine beginnt mit der Tripolje-Kultur in der Jungsteinzeit. Im 7. Jahrhundert v. Chr. lebten hier die Skythen. Im 9.–10. Jahrhundert entstand die Kiewer Rus. 988–989 fand die Christianisierung der Rus durch Fürst Wladimir den Großen statt. Im 12.–13. Jahrhundert wurde die Kiewer Rus durch innere Konflikte und die mongolisch-tatarische Invasion geschwächt.',
           img: "Ukraine/i2.jpeg"
-         },
+        },
         { text: 'Im 16.–17. Jahrhundert standen ukrainische Gebiete unter der Herrschaft Polens, Litauens und des Osmanischen Reiches. 1648–1654 führte Bohdan Chmelnyzkyj den nationalen Befreiungskrieg, der zu einer Autonomie in Verbindung mit dem Moskauer Zarenreich führte.' },
         { text: 'Im 20. Jahrhundert erlebte die Ukraine die Revolution von 1917, den Eintritt in die UdSSR, die Hungersnot (Holodomor) 1932–1933, den Zweiten Weltkrieg und den Wiederaufbau. 1986 ereignete sich die Katastrophe im Kernkraftwerk Tschernobyl.' },
         { text: 'Am 24. August 1991 erklärte die Ukraine ihre Unabhängigkeit. 2004 fand die Orange Revolution statt, 2013–2014 die Revolution der Würde. 2014 annektierte Russland die Krim, im Osten begann ein bewaffneter Konflikt. Seit Februar 2022 führt Russland einen groß angelegten Krieg gegen die Ukraine.' },
@@ -183,90 +184,144 @@ export const datas = [
       ]
     },
     germanStates: {
-      title: 'Bundesländer Deutschlands',
+      title: "Bundesländer Deutschlands",
       items: [
-        {
-          id: 1,
-          name: 'Baden-Württemberg',
-          hasInfo: false
-        },
-        {
-          id: 2,
-          name: 'Bayern',
-          hasInfo: false
-        },
-        {
-          id: 3,
-          name: 'Berlin',
-          hasInfo: false
-        },
-        {
-          id: 4,
-          name: 'Brandenburg',
-          hasInfo: false
-        },
-        {
-          id: 5,
-          name: 'Bremen',
-          hasInfo: false
-        },
-        {
-          id: 6,
-          name: 'Hamburg',
-          hasInfo: false
-        },
-        {
-          id: 7,
-          name: 'Hessen',
-          hasInfo: false
-        },
-        {
-          id: 8,
-          name: 'Mecklenburg-Vorpommern',
-          hasInfo: false
-        },
-        {
-          id: 9,
-          name: 'Niedersachsen',
-          hasInfo: false
-        },
+        { id: 1, name: 'Baden-Württemberg', hasInfo: false, path: '/germany/baden-wuerttemberg' },
+        { id: 2, name: 'Bayern', hasInfo: false, path: '/germany/bavaria' },
+        { id: 3, name: 'Berlin', hasInfo: false, path: '/germany/berlin' },
+        { id: 4, name: 'Brandenburg', hasInfo: false, path: '/germany/brandenburg' },
+        { id: 5, name: 'Bremen', hasInfo: false, path: '/germany/bremen' },
+        { id: 6, name: 'Hamburg', hasInfo: false, path: '/germany/hamburg' },
+        { id: 7, name: 'Hessen', hasInfo: false, path: '/germany/hessen' },
+        { id: 8, name: 'Mecklenburg-Vorpommern', hasInfo: false, path: '/germany/mecklenburg-vorpommern' },
+        { id: 9, name: 'Niedersachsen', hasInfo: false, path: '/germany/lower-saxony' },
         {
           id: 10,
           name: 'Nordrhein-Westfalen',
-          hasInfo: true
+          hasInfo: true,
+          path: '/germany/nrw',
+          desc: {
+            capital: [
+              { bold: 'Hauptstadt:' },
+              { text: ' Düsseldorf' }
+            ],
+            population: [
+              { bold: 'Einwohnerzahl:' },
+              { text: ' ca. 18,1 Mio. Menschen. Ausländer: ca. 2 Mio. Menschen.' }
+            ],
+            area: [
+              { bold: 'Fläche:' },
+              { text: ' 34.000 km². Bevölkerungsdichte: ca. 525 Einwohner pro km².' }
+            ],
+            geography: [
+              { bold: 'Geographie:' },
+              { text: ' Nordrhein-Westfalen liegt im Westen Deutschlands und grenzt an Belgien (99 km), die Niederlande (387 km) sowie an die Bundesländer Niedersachsen (583 km), Hessen (269 km) und Rheinland-Pfalz (307 km).' },
+              { text: 'Das Land umfasst zwei große Landschaftsregionen: das Norddeutsche Tiefland und das deutsche Mittelgebirge, die sich entlang des Rheins in nordrheinische und westfälische Teile gliedern.' },
+              { text: 'Am linken Rheinufer liegen die Eifel-Berge (Eifel) und das Vorland Vennvorland (Aachener Region). Am rechten Rheinufer befinden sich Bergisches Land, Sauerland, Rothaargebirge, Siegerland, Siebengebirge sowie Teile des Westwaldes und Weserberglands. Wälder bedecken etwa 24 % der Fläche.' }
+            ],
+            history: [
+              { bold: 'Namensherkunft:' },
+              { text: ' Der Name Nordrhein-Westfalen entstand nach der Anordnung der britischen Militärregierung am 23. August 1946 durch die Vereinigung der Provinz Westfalen (Provinz Westfalen) und der Provinz Nordrhein (Provinz Nordrhein). Am 21. Januar 1947 wurde das Gebiet Lippe (Lippe) hinzugefügt.' }
+            ],
+            economy: [
+              { bold: 'Wirtschaft:' },
+              { text: ' Nordrhein-Westfalen ist eines der größten wirtschaftlichen Zentren Deutschlands. Historisch entwickelte Branchen sind Kohle-, Eisen-, Metall-, Stahl- und Textilindustrie.' },
+              { text: 'Die Landwirtschaft spielt eine untergeordnete Rolle und versorgt hauptsächlich die Bevölkerung der Großstädte mit Lebensmitteln.' }
+            ],
+            cities: [
+              { bold: 'Große Städte:' },
+              { text: ' Köln, Essen, Dortmund, Düsseldorf, Duisburg, Bonn, Münster, Wuppertal, Aachen, Bielefeld, Paderborn, Bochum, Krefeld, Gelsenkirchen, Leverkusen, Mülheim, Remscheid, Solingen, Mönchengladbach, Siegen, Hamm, Recklinghausen.' }
+            ],
+            rivers: [
+              { bold: 'Wichtige Flüsse und Kanäle:' },
+              { text: ' Rhein, Lippe, Ruhr, Ems, Weser, Mittellandkanal.' }
+            ],
+            tourism: [
+              { bold: 'Tourismus und Freizeit:' },
+              { text: ' Nordrhein-Westfalen ist bekannt für seine reiche Geschichte und Kultur. Zahlreiche historische Gebäude, Museen und Parks laden zu Besuchen ein. Beliebt sind Ausflüge entlang des Rheins und touristische Routen durch die Berge und Waldgebiete.' }
+            ]
+          },
+          symbols: {
+            title: "Heraldik",
+            items: [
+              {
+                bold: "Wappen:",
+                text: " das Wappen von Nordrhein-Westfalen vereint die Symbole der drei historischen Provinzen, aus denen das Land 1946–1947 gebildet wurde. Der silberne Rheinbalken auf grünem Grund symbolisiert die Rheinprovinz. Das sächsische Pferd auf rotem Grund ist das Symbol Westfalens (im westfälischen Wappen aufbäumend dargestellt). Die rote Rose mit goldenem Herz und Blättern ist das Wappen der Grafen von Lippe, das seit dem 13. Jahrhundert verwendet wird.",
+                img: "Germania/Nordrhein/002.gif"
+              },
+              {
+                bold: "Flagge:",
+                text: " die Flagge Nordrhein-Westfalens besteht aus den Farben des Wappens: Grün, Weiß und Rot, horizontal angeordnet.",
+                img: "Germania/Nordrhein/003.gif"
+              }
+            ]
+          },
+          briefHistory: {
+            title: 'Kurze Geschichte',
+            items: [
+              {
+                text: "Nach dem Zweiten Weltkrieg lag das Gebiet des heutigen Nordrhein-Westfalen in der britischen Besatzungszone. Das neue Bundesland wurde am 23. August 1946 aus der ehemaligen preußischen Provinz Westfalen und dem nördlichen Teil der Rheinprovinz (Rheinland) durch die britische Besatzungsverwaltung geschaffen. Ziel der Zusammenlegung war die einheitliche Verwaltung des Ruhrgebiets, einer wichtigen Industrieregion."
+              },
+              {
+                text: "1947 wurde das ehemalige Land Lippe gemäß dem Erlass Nr. 77 der britischen Militärverwaltung vom 21. Januar 1947 in Nordrhein-Westfalen eingegliedert. Am 5. November 1948 verabschiedete das Landesparlament das „Gesetz über den Zusammenschluss des Landes Lippe-Detmold mit dem Land Nordrhein-Westfalen“, womit der Vereinigungsprozess offiziell abgeschlossen wurde."
+              },
+              {
+                text: "Am 8. Mai 1949 nahm der Parlamentarische Rat Deutschlands das Grundgesetz der BRD an, und Nordrhein-Westfalen wurde offiziell eines der Bundesländer Deutschlands."
+              },
+              {
+                text: "Am 18. Juni 1950 wurde die Landesverfassung verabschiedet, die die innere Organisation und die Rechte des Landes festlegte."
+              }
+            ]
+          },
+          nrwRegions: [
+            {
+              title: "Regierungsbezirke in Nordrhein-Westfalen",
+              items: [
+                { id: 1, name: 'Arnsberg', hasInfo: false },
+                { id: 2, name: 'Detmold', hasInfo: false },
+                { id: 3, name: 'Düsseldorf', hasInfo: false },
+                { id: 4, name: 'Köln', hasInfo: false },
+                { id: 5, name: 'Münster', hasInfo: false }
+              ]
+            },
+            {
+              title: "Kreisfreie Städte in Nordrhein-Westfalen",
+              items: [
+                { id: 6, name: 'Bielefeld', hasInfo: false },
+                { id: 7, name: 'Bonn', hasInfo: false },
+                { id: 8, name: 'Bottrop', hasInfo: false },
+                { id: 9, name: 'Bochum', hasInfo: false },
+                { id: 10, name: 'Wuppertal', hasInfo: false },
+                { id: 11, name: 'Gelsenkirchen', hasInfo: false },
+                { id: 12, name: 'Dortmund', hasInfo: false },
+                { id: 13, name: 'Duisburg', hasInfo: false },
+                { id: 14, name: 'Düsseldorf', hasInfo: false },
+                { id: 15, name: 'Solingen', hasInfo: false },
+                { id: 16, name: 'Köln', hasInfo: false },
+                { id: 17, name: 'Krefeld', hasInfo: false },
+                { id: 18, name: 'Leverkusen', hasInfo: false },
+                { id: 19, name: 'Mönchengladbach', hasInfo: false },
+                { id: 20, name: 'Mülheim an der Ruhr', hasInfo: false },
+                { id: 21, name: 'Münster', hasInfo: false },
+                { id: 22, name: 'Oberhausen', hasInfo: false },
+                { id: 23, name: 'Remscheid', hasInfo: false },
+                { id: 24, name: 'Hagen', hasInfo: false },
+                { id: 25, name: 'Hamm', hasInfo: false },
+                { id: 26, name: 'Herne', hasInfo: false },
+                { id: 27, name: 'Essen', hasInfo: false }
+              ]
+            }
+          ],
         },
-        {
-          id: 11,
-          name: 'Rheinland-Pfalz',
-          hasInfo: false
-        },
-        {
-          id: 12,
-          name: 'Saarland',
-          hasInfo: false
-        },
-        {
-          id: 13,
-          name: 'Sachsen',
-          hasInfo: false
-        },
-        {
-          id: 14,
-          name: 'Sachsen-Anhalt',
-          hasInfo: false
-        },
-        {
-          id: 15,
-          name: 'Schleswig-Holstein',
-          hasInfo: false
-        },
-        {
-          id: 16,
-          name: 'Thüringen',
-          hasInfo: false
-        }
+        { id: 11, name: 'Rheinland-Pfalz', hasInfo: false, path: '/germany/rhineland-pfalz' },
+        { id: 12, name: 'Saarland', hasInfo: false, path: '/germany/saarland' },
+        { id: 13, name: 'Sachsen', hasInfo: false, path: '/germany/saxony' },
+        { id: 14, name: 'Sachsen-Anhalt', hasInfo: false, path: '/germany/saxony-anhalt' },
+        { id: 15, name: 'Schleswig-Holstein', hasInfo: false, path: '/germany/schleswig-holstein' },
+        { id: 16, name: 'Thüringen', hasInfo: false, path: '/germany/thuringia' }
       ]
     }
+
   }
 
 ];

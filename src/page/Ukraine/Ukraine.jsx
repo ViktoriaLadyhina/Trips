@@ -39,9 +39,7 @@ const Ukraine = () => {
             label: lang === 'ru' ? 'Главная' : lang === 'de' ? 'Startseite' : 'Головна',
             path: '/'
         },
-        {
-            label: country?.country
-        }
+        { label: country?.country  }
     ];
 
     return (
