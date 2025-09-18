@@ -11,6 +11,7 @@ castles: [
   "Germania/zamok3.jpg"
 ],
 nrw: [
-  "Germania/Nordrhein/001.jpg"
+  "Germania/Nordrhein/001.jpg",
+  {path: "Germania/Nordrhein/004.gif", title: "Карта административного округа Кельн"}
 ]
 };
