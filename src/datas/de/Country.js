@@ -2,6 +2,7 @@ export const datas = [
   {
     id: 1,
     path: 'ukraine',
+    currentMap: "",
     country: 'Ukraine',
     imagePath: '/ukr/sofiyskiy.jpg',
     desc: {
@@ -72,7 +73,7 @@ export const datas = [
         { text: 'Die heutige Ukraine ist eine präsidentiell-parlamentarische Republik. Präsident seit 2019 ist Wolodymyr Selenskyj. Die offizielle Währung ist die Hrywnja (UAH). Premierministerin seit Juli 2025 ist Julia Swyrydenko.' }
       ]
     },
-    ukraineRegions: {
+    regions: {
       title: "Regionen der Ukraine",
       items: [
         { id: 1, name: 'Oblast Winnyzja', path: 'vinnytska', hasInfo: false },
@@ -109,6 +110,7 @@ export const datas = [
     id: 2,
     path: 'germany',
     country: 'Deutschland',
+    currentMap: "Germania/karta.gif",
     imagePath: '/de/Castle_Neuschwanstein.jpg',
     desc: {
       capital: [
@@ -183,7 +185,7 @@ export const datas = [
         { text: "Nach dem Krieg wurde das Land in BRD und DDR geteilt. 1990 erfolgte die Wiedervereinigung, und das heutige Deutschland wurde zu einem föderalen Staat mit 16 Bundesländern, reicher Kultur, Wirtschaft und dem Bestreben, die Lehren der Geschichte zu lernen und zu bewahren." }
       ]
     },
-    germanStates: {
+    regions: {
       title: "Bundesländer Deutschlands",
       items: [
         { id: 1, name: 'Baden-Württemberg', hasInfo: false, path: '/germany/baden-wuerttemberg' },

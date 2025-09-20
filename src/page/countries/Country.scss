@@ -1,6 +1,6 @@
 @use '../../styles/variables' as *;
 
-.ukraine {
+.country {
     margin-top: 40px;
 
     &__content {
@@ -17,6 +17,12 @@
     &__geography,
     &__population,
     &__languages,
+    &__administrative,
+    &__government,
+    &__currency,
+    &__transport,
+    &__climate,
+    &__tourism,
     &__cuisine,
     &__entry {
         text-align: justify;
@@ -65,11 +71,7 @@
         }
     }
 
-    &__holidays-item {
-    margin-bottom: 4px; 
-  }
-
-    &__registr {
+    &__photo {
         max-width: 300px;
         height: auto;
         border-radius: 8px;
@@ -149,9 +151,9 @@
 // На мобильных убираем
 @media (max-width: 768px) {
 
-    .ukraine__registr,
-    .ukraine__registr--right,
-    .ukraine__history-img {
+    .germany__castle,
+    .germany__castle--right,
+    .germany__history-img {
         display: none;
     }
 }

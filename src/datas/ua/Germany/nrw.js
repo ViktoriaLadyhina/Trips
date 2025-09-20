@@ -1,8 +1,9 @@
-export const datas = {
+const datas = {
     id: 10,
     name: 'Північний Рейн-Вестфалія',
     hasInfo: true,
-    path: '/germany/nrw',
+    path: 'nrw',
+    currentMap: "Germania/Nordrhein/nrw2.gif",
     desc: {
         capital: [
             { bold: 'Столиця:' },
@@ -76,17 +77,20 @@ export const datas = {
             }
         ]
     },
-    nrwRegions: [
+    discriptRegions: [
         {
             title: "Адміністративні округи в Північному Рейні-Вестфалії",
             items: [
-                { id: 1, name: 'Арнсберг', hasInfo: false },
-                { id: 2, name: 'Детмольд', hasInfo: false },
-                { id: 3, name: 'Дюссельдорф', hasInfo: false },
+                { id: 1, name: 'Арнсберг', hasInfo: false, patch: "arnsberg", },
+                { id: 2, name: 'Детмольд', hasInfo: false, patch: "detmold", },
+                { id: 3, name: 'Дюссельдорф', hasInfo: false, patch: "dusseldorf" },
                 {
                     id: 4,
-                    name: 'Адміністративний округ Кельн',
+                    title: 'Адміністративний округ Кельн',
+                    name: 'Кельн',
                     hasInfo: true,
+                    patch: "koln",
+                    currentMap: "Germania/Nordrhein/004.gif",
                     desc: {
                         history: [
                             { text: 'Адміністративний округ Кельн — один із п’яти адміністративних округів землі Північний Рейн-Вестфалія. Розташований у південно-західній частині землі.' },
@@ -109,7 +113,7 @@ export const datas = {
                             { text: ' Aachen, Bonn, Köln, Leverkusen.' }
                         ]
                     },
-                    koelnDistrict: [
+                    subRegion: [
                         {
                             id: 1,
                             name: "Аахен",
@@ -393,7 +397,7 @@ export const datas = {
                             communities: [
                                 { id: 1, name: "Бедбург", hasInfo: false },
                                 { id: 2, name: "Бергхайм", hasInfo: false },
-                                { id: 3, name: "Брюль", hasInfo: false },
+                                { id: 3, name: "Брюль", hasInfo: true, patch: "bruehl" },
                                 { id: 4, name: "Ельсдорф", hasInfo: false },
                                 { id: 5, name: "Ерфтштадт", hasInfo: false },
                                 { id: 6, name: "Фрехен", hasInfo: false },
@@ -496,35 +500,36 @@ export const datas = {
                         }
                     ],
                 },
-                { id: 5, name: 'Мюнстер', hasInfo: false }
+                { id: 5, name: 'Мюнстер', hasInfo: false, patch: "munster" }
             ]
         },
         {
             title: "Вільні міста в Північному Рейні-Вестфалії",
             items: [
-                { id: 6, name: 'Білефельд', hasInfo: false },
-                { id: 7, name: 'Бонн', hasInfo: false },
-                { id: 8, name: 'Боттроп', hasInfo: false },
-                { id: 9, name: 'Бохум', hasInfo: false },
-                { id: 10, name: 'Вупперталь', hasInfo: false },
-                { id: 11, name: 'Гельзенкірхен', hasInfo: false },
-                { id: 12, name: 'Дортмунд', hasInfo: false },
-                { id: 13, name: 'Дуйсбург', hasInfo: false },
-                { id: 14, name: 'Дюссельдорф', hasInfo: false },
-                { id: 15, name: 'Золінген', hasInfo: false },
-                { id: 16, name: 'Кельн', hasInfo: false },
-                { id: 17, name: 'Крефельд', hasInfo: false },
-                { id: 18, name: 'Леверкузен', hasInfo: false },
-                { id: 19, name: 'Менхенгладбах', hasInfo: false },
-                { id: 20, name: 'Мюльхайм-на-Рурі', hasInfo: false },
-                { id: 21, name: 'Мюнстер', hasInfo: false },
-                { id: 22, name: 'Обергаузен', hasInfo: false },
-                { id: 23, name: 'Ремшайд', hasInfo: false },
-                { id: 24, name: 'Хаген', hasInfo: false },
-                { id: 25, name: 'Хамм', hasInfo: false },
-                { id: 26, name: 'Херне', hasInfo: false },
-                { id: 27, name: 'Ессен', hasInfo: false }
+                { id: 6, name: 'Білефельд', hasInfo: false, patch: "bielefeld", },
+                { id: 7, name: 'Бонн', hasInfo: false, patch: "bonn", },
+                { id: 8, name: 'Боттроп', hasInfo: false, patch: "bottrop", },
+                { id: 9, name: 'Бохум', hasInfo: false, patch: "bochum", },
+                { id: 10, name: 'Вупперталь', hasInfo: false, patch: "wuppertal", },
+                { id: 11, name: 'Гельзенкірхен', hasInfo: false, patch: "gelsenkirchen", },
+                { id: 12, name: 'Дортмунд', hasInfo: false, patch: "dortmund", },
+                { id: 13, name: 'Дуйсбург', hasInfo: false, patch: "duisburg", },
+                { id: 14, name: 'Дюссельдорф', hasInfo: false, patch: "duesseldorf", },
+                { id: 15, name: 'Золінген', hasInfo: false, patch: "solingen", },
+                { id: 16, name: 'Кельн', hasInfo: false, patch: "koeln", },
+                { id: 17, name: 'Крефельд', hasInfo: false, patch: "krefeld", },
+                { id: 18, name: 'Леверкузен', hasInfo: false, patch: "leverkusen", },
+                { id: 19, name: 'Менхенгладбах', hasInfo: false, patch: "moenchengladbach", },
+                { id: 20, name: 'Мюльхайм-на-Рурі', hasInfo: false, patch: "muelheim", },
+                { id: 21, name: 'Мюнстер', hasInfo: false, patch: "muenster", },
+                { id: 22, name: 'Обергаузен', hasInfo: false, patch: "oberhausen", },
+                { id: 23, name: 'Ремшайд', hasInfo: false, patch: "remscheid", },
+                { id: 24, name: 'Хаген', hasInfo: false, patch: "hagen", },
+                { id: 25, name: 'Хамм', hasInfo: false, patch: "hamm", },
+                { id: 26, name: 'Херне', hasInfo: false, patch: "herne", },
+                { id: 27, name: 'Ессен', hasInfo: false, patch: "essen", }
             ]
         }
     ],
 }
+export default datas

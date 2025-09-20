@@ -1,8 +1,9 @@
-export const datas = {
+const datas = {
     id: 10,
     name: 'Nordrhein-Westfalen',
     hasInfo: true,
-    path: '/germany/nrw',
+    path: 'nrw',
+    currentMap: "Germania/Nordrhein/nrw2.gif",
     desc: {
         capital: [
             { bold: 'Hauptstadt:' },
@@ -62,38 +63,33 @@ export const datas = {
     briefHistory: {
         title: 'Kurze Geschichte',
         items: [
-            {
-                text: "Nach dem Zweiten Weltkrieg lag das Gebiet des heutigen Nordrhein-Westfalen in der britischen Besatzungszone. Das neue Bundesland wurde am 23. August 1946 aus der ehemaligen preußischen Provinz Westfalen und dem nördlichen Teil der Rheinprovinz (Rheinland) durch die britische Besatzungsverwaltung geschaffen. Ziel der Zusammenlegung war die einheitliche Verwaltung des Ruhrgebiets, einer wichtigen Industrieregion."
-            },
-            {
-                text: "1947 wurde das ehemalige Land Lippe gemäß dem Erlass Nr. 77 der britischen Militärverwaltung vom 21. Januar 1947 in Nordrhein-Westfalen eingegliedert. Am 5. November 1948 verabschiedete das Landesparlament das „Gesetz über den Zusammenschluss des Landes Lippe-Detmold mit dem Land Nordrhein-Westfalen“, womit der Vereinigungsprozess offiziell abgeschlossen wurde."
-            },
-            {
-                text: "Am 8. Mai 1949 nahm der Parlamentarische Rat Deutschlands das Grundgesetz der BRD an, und Nordrhein-Westfalen wurde offiziell eines der Bundesländer Deutschlands."
-            },
-            {
-                text: "Am 18. Juni 1950 wurde die Landesverfassung verabschiedet, die die innere Organisation und die Rechte des Landes festlegte."
-            }
+            { text: "Nach dem Zweiten Weltkrieg lag das Gebiet des heutigen Nordrhein-Westfalen in der britischen Besatzungszone. Das neue Bundesland wurde am 23. August 1946 aus der ehemaligen preußischen Provinz Westfalen und dem nördlichen Teil der Rheinprovinz (Rheinland) durch die britische Besatzungsverwaltung geschaffen. Ziel der Zusammenlegung war die einheitliche Verwaltung des Ruhrgebiets, einer wichtigen Industrieregion." },
+            { text: "1947 wurde das ehemalige Land Lippe gemäß dem Erlass Nr. 77 der britischen Militärverwaltung vom 21. Januar 1947 in Nordrhein-Westfalen eingegliedert. Am 5. November 1948 verabschiedete das Landesparlament das „Gesetz über den Zusammenschluss des Landes Lippe-Detmold mit dem Land Nordrhein-Westfalen“, womit der Vereinigungsprozess offiziell abgeschlossen wurde." },
+            { text: "Am 8. Mai 1949 nahm der Parlamentarische Rat Deutschlands das Grundgesetz der BRD an, und Nordrhein-Westfalen wurde offiziell eines der Bundesländer Deutschlands." },
+            { text: "Am 18. Juni 1950 wurde die Landesverfassung verabschiedet, die die innere Organisation und die Rechte des Landes festlegte." }
         ]
     },
-    nrwRegions: [
+    discriptRegions: [
         {
             title: "Regierungsbezirke in Nordrhein-Westfalen",
             items: [
-                { id: 1, name: 'Arnsberg', hasInfo: false },
-                { id: 2, name: 'Detmold', hasInfo: false },
-                { id: 3, name: 'Düsseldorf', hasInfo: false },
+                { id: 1, name: 'Arnsberg', hasInfo: false, patch: "arnsberg" },
+                { id: 2, name: 'Detmold', hasInfo: false, patch: "detmold" },
+                { id: 3, name: 'Düsseldorf', hasInfo: false, patch: "dusseldorf" },
                 {
                     id: 4,
-                    name: 'Regierungsbezirk Köln',
+                    title: 'Regierungsbezirk Köln',
+                    name: 'Köln',
                     hasInfo: true,
+                    patch: "koln",
+                    currentMap: "Germania/Nordrhein/004.gif",
                     desc: {
                         history: [
                             { text: 'Regierungsbezirk Köln ist einer der fünf Regierungsbezirke in Nordrhein-Westfalen. Er liegt im Südwesten des Bundeslandes.' },
                             { text: 'Gegründet 1815.' }
                         ],
                         area: [
-                            { bold: 'ПFläche:' },
+                            { bold: 'Fläche:' },
                             { text: ' ca. 7.365 km².' }
                         ],
                         population: [
@@ -109,7 +105,7 @@ export const datas = {
                             { text: ' Aachen, Bonn, Köln, Leverkusen.' }
                         ]
                     },
-                    koelnDistrict: [
+                    subRegion: [
                         {
                             id: 1,
                             name: "Aachen",
@@ -393,7 +389,7 @@ export const datas = {
                             communities: [
                                 { id: 1, name: "Bedburg", hasInfo: false },
                                 { id: 2, name: "Bergheim", hasInfo: false },
-                                { id: 3, name: "Brühl", hasInfo: false },
+                                { id: 3, name: "Brühl", hasInfo: true, patch: "bruehl" },
                                 { id: 4, name: "Elsdorf", hasInfo: false },
                                 { id: 5, name: "Erftstadt", hasInfo: false },
                                 { id: 6, name: "Frechen", hasInfo: false },
@@ -496,35 +492,36 @@ export const datas = {
                         }
                     ],
                 },
-                { id: 5, name: 'Münster', hasInfo: false }
+                { id: 5, name: 'Münster', hasInfo: false, patch: "munster" }
             ]
         },
         {
             title: "Kreisfreie Städte in Nordrhein-Westfalen",
             items: [
-                { id: 6, name: 'Bielefeld', hasInfo: false },
-                { id: 7, name: 'Bonn', hasInfo: false },
-                { id: 8, name: 'Bottrop', hasInfo: false },
-                { id: 9, name: 'Bochum', hasInfo: false },
-                { id: 10, name: 'Wuppertal', hasInfo: false },
-                { id: 11, name: 'Gelsenkirchen', hasInfo: false },
-                { id: 12, name: 'Dortmund', hasInfo: false },
-                { id: 13, name: 'Duisburg', hasInfo: false },
-                { id: 14, name: 'Düsseldorf', hasInfo: false },
-                { id: 15, name: 'Solingen', hasInfo: false },
-                { id: 16, name: 'Köln', hasInfo: false },
-                { id: 17, name: 'Krefeld', hasInfo: false },
-                { id: 18, name: 'Leverkusen', hasInfo: false },
-                { id: 19, name: 'Mönchengladbach', hasInfo: false },
-                { id: 20, name: 'Mülheim an der Ruhr', hasInfo: false },
-                { id: 21, name: 'Münster', hasInfo: false },
-                { id: 22, name: 'Oberhausen', hasInfo: false },
-                { id: 23, name: 'Remscheid', hasInfo: false },
-                { id: 24, name: 'Hagen', hasInfo: false },
-                { id: 25, name: 'Hamm', hasInfo: false },
-                { id: 26, name: 'Herne', hasInfo: false },
-                { id: 27, name: 'Essen', hasInfo: false }
+                { id: 6, name: 'Bielefeld', hasInfo: false, patch: "bielefeld", },
+                { id: 7, name: 'Bonn', hasInfo: false, patch: "bonn", },
+                { id: 8, name: 'Bottrop', hasInfo: false, patch: "bottrop", },
+                { id: 9, name: 'Bochum', hasInfo: false, patch: "bochum", },
+                { id: 10, name: 'Wuppertal', hasInfo: false, patch: "wuppertal", },
+                { id: 11, name: 'Gelsenkirchen', hasInfo: false, patch: "gelsenkirchen", },
+                { id: 12, name: 'Dortmund', hasInfo: false, patch: "dortmund", },
+                { id: 13, name: 'Duisburg', hasInfo: false, patch: "duisburg", },
+                { id: 14, name: 'Düsseldorf', hasInfo: false, patch: "duesseldorf", },
+                { id: 15, name: 'Solingen', hasInfo: false, patch: "solingen", },
+                { id: 16, name: 'Köln', hasInfo: false, patch: "koeln", },
+                { id: 17, name: 'Krefeld', hasInfo: false, patch: "krefeld", },
+                { id: 18, name: 'Leverkusen', hasInfo: false, patch: "leverkusen", },
+                { id: 19, name: 'Mönchengladbach', hasInfo: false, patch: "moenchengladbach", },
+                { id: 20, name: 'Mülheim an der Ruhr', hasInfo: false, patch: "muelheim", },
+                { id: 21, name: 'Münster', hasInfo: false, patch: "muenster", },
+                { id: 22, name: 'Oberhausen', hasInfo: false, patch: "oberhausen", },
+                { id: 23, name: 'Remscheid', hasInfo: false, patch: "remscheid", },
+                { id: 24, name: 'Hagen', hasInfo: false, patch: "hagen", },
+                { id: 25, name: 'Hamm', hasInfo: false, patch: "hamm", },
+                { id: 26, name: 'Herne', hasInfo: false, patch: "herne", },
+                { id: 27, name: 'Essen', hasInfo: false, patch: "essen", }
             ]
         }
     ]
 }
+export default datas

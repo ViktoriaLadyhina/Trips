@@ -3,6 +3,7 @@ export const datas = [
     id: 1,
     path: 'ukraine',
     country: 'Украина',
+    currentMap: "",
     imagePath: '/ukr/sofiyskiy.jpg',
     desc: {
       capital: [
@@ -72,7 +73,7 @@ export const datas = [
         { text: 'Современная Украина — президентско-парламентская республика. Президент с 2019 года — Владимир Зеленский. Гривна (UAH) — официальная валюта. Премьер-министр с июля 2025 года — Юлия Свириденко.' }
       ]
     },
-    ukraineRegions: {
+    regions: {
       title: "Области Украины",
       items: [
         { id: 1, name: 'Винницкая область', path: 'vinnytska', hasInfo: false },
@@ -109,6 +110,7 @@ export const datas = [
     id: 2,
     path: 'germany',
     country: 'Германия',
+    currentMap: "Germania/karta.gif",
     imagePath: '/de/Castle_Neuschwanstein.jpg',
     desc: {
       capital: [
@@ -183,25 +185,25 @@ export const datas = [
         { text: "После войны страна была разделена на ФРГ и ГДР. В 1990 году произошло объединение, и современная Германия стала федеративным государством с 16 землями, богатой культурой, экономикой и стремлением изучать и помнить уроки истории." }
       ]
     },
-    germanStates: {
+    regions: {
       title: "Земли Германии",
       items: [
-        { id: 1, name: 'Баден-Вюртемберг', hasInfo: false, path: '/germany/baden-wuerttemberg' },
-        { id: 2, name: 'Бавария', hasInfo: false, path: '/germany/bavaria' },
-        { id: 3, name: 'Берлин', hasInfo: false, path: '/germany/berlin' },
-        { id: 4, name: 'Бранденбург', hasInfo: false, path: '/germany/brandenburg' },
-        { id: 5, name: 'Бремен', hasInfo: false, path: '/germany/bremen' },
-        { id: 6, name: 'Гамбург', hasInfo: false, path: '/germany/hamburg' },
-        { id: 7, name: 'Гессен', hasInfo: false, path: '/germany/hessen' },
-        { id: 8, name: 'Мекленбург-Передняя Померания', hasInfo: false, path: '/germany/mecklenburg-vorpommern' },
-        { id: 9, name: 'Нижняя Саксония', hasInfo: false, path: '/germany/lower-saxony' },
-        { id: 10, name: 'Северный Рейн-Вестфалия', hasInfo: true, path: '/germany/nrw' },
-        { id: 11, name: 'Рейнланд-Пфальц', hasInfo: false, path: '/germany/rhineland-pfalz' },
-        { id: 12, name: 'Саар', hasInfo: false, path: '/germany/saarland' },
-        { id: 13, name: 'Саксония', hasInfo: false, path: '/germany/saxony' },
-        { id: 14, name: 'Саксония-Анхальт', hasInfo: false, path: '/germany/saxony-anhalt' },
-        { id: 15, name: 'Шлезвиг-Гольштейн', hasInfo: false, path: '/germany/schleswig-holstein' },
-        { id: 16, name: 'Тюрингия', hasInfo: false, path: '/germany/thuringia' }
+        { id: 1, name: 'Баден-Вюртемберг', hasInfo: false, path: 'baden-wuerttemberg' },
+        { id: 2, name: 'Бавария', hasInfo: false, path: 'bavaria' },
+        { id: 3, name: 'Берлин', hasInfo: false, path: 'berlin' },
+        { id: 4, name: 'Бранденбург', hasInfo: false, path: 'brandenburg' },
+        { id: 5, name: 'Бремен', hasInfo: false, path: 'bremen' },
+        { id: 6, name: 'Гамбург', hasInfo: false, path: 'hamburg' },
+        { id: 7, name: 'Гессен', hasInfo: false, path: 'hessen' },
+        { id: 8, name: 'Мекленбург-Передняя Померания', hasInfo: false, path: 'mecklenburg-vorpommern' },
+        { id: 9, name: 'Нижняя Саксония', hasInfo: false, path: 'lower-saxony' },
+        { id: 10, name: 'Северный Рейн-Вестфалия', hasInfo: true, path: 'nrw' },
+        { id: 11, name: 'Рейнланд-Пфальц', hasInfo: false, path: 'rhineland-pfalz' },
+        { id: 12, name: 'Саар', hasInfo: false, path: 'saarland' },
+        { id: 13, name: 'Саксония', hasInfo: false, path: 'saxony' },
+        { id: 14, name: 'Саксония-Анхальт', hasInfo: false, path: 'saxony-anhalt' },
+        { id: 15, name: 'Шлезвиг-Гольштейн', hasInfo: false, path: 'schleswig-holstein' },
+        { id: 16, name: 'Тюрингия', hasInfo: false, path: 'thuringia' }
       ]
     }
   }

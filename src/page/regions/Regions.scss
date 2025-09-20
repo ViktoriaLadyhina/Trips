@@ -1,6 +1,6 @@
 @use '../../styles/variables' as *;
 
-.germany {
+.regions {
     margin-top: 40px;
 
     &__content {
@@ -14,15 +14,13 @@
     }
 
     &__capital,
-    &__geography,
-    &__symbols,
     &__population,
-    &__languages,
-    &__administrative,
-    &__government,
-    &__currency,
-    &__transport,
-    &__climate,
+    &__area,
+    &__history,
+    &__economy,
+    &__geography,
+    &__cities,
+    &__rivers,
     &__tourism {
         text-align: justify;
         padding: 3px;
@@ -38,7 +36,6 @@
 
     &__history,
     &__symbols {
-
         &-title {
             @include h3();
             padding: 20px;
@@ -69,7 +66,7 @@
         }
     }
 
-    &__castle {
+    &__foto {
         max-width: 300px;
         height: auto;
         border-radius: 8px;
@@ -87,14 +84,6 @@
         margin-bottom: 15px;
     }
 
-    &__history-img {
-        float: left;
-        max-width: 300px;
-        height: auto;
-        margin: 10px 10px 10px 0;
-        border-radius: 8px;
-    }
-
     &__sidebar {
         float: left;
         width: 230px;
@@ -106,6 +95,7 @@
         &-title {
             @include h3();
             padding: 5px;
+            font-size: 18px;
         }
 
         &-list {

@@ -1,8 +1,9 @@
-export const datas = {
+const datas = {
     id: 10,
     name: 'Северный Рейн-Вестфалия',
     hasInfo: true,
-    path: '/germany/nrw',
+    path: 'nrw',
+    currentMap: "Germania/Nordrhein/nrw2.gif",
     desc: {
         capital: [
             { bold: 'Столица:' },
@@ -62,32 +63,26 @@ export const datas = {
     briefHistory: {
         title: 'Краткая история',
         items: [
-            {
-                text: "После Второй мировой войны территория современной земли Северный Рейн-Вестфалия находилась в британской оккупационной зоне. Новая земля была создана 23 августа 1946 года на основе бывшей прусской провинции Вестфалия и северной части Рейнской провинции (Rheinland) британской оккупационной администрацией. Целью объединения было обеспечение единого управления Рурским бассейном, важного промышленного региона."
-            },
-            {
-                text: "В 1947 году бывшая земля Липпе была включена в состав Северного Рейна-Вестфалии согласно распоряжению британского военного командования № 77 от 21 января 1947 года. 5 ноября 1948 года парламент земли принял «Закон об объединении земли Липпе-Детмольд с землей Северный Рейн-Вестфалия», официально завершив процесс объединения."
-            },
-            {
-                text: "8 мая 1949 года Парламентский совет Германии принял Конституцию ФРГ, и земля Северный Рейн-Вестфалия официально стала одной из земель Германии."
-            },
-            {
-                text: "18 июня 1950 года была принята Конституция самой земли, закрепившая её внутреннее устройство и права."
-            }
+            { text: "После Второй мировой войны территория современной земли Северный Рейн-Вестфалия находилась в британской оккупационной зоне. Новая земля была создана 23 августа 1946 года на основе бывшей прусской провинции Вестфалия и северной части Рейнской провинции (Rheinland) британской оккупационной администрацией. Целью объединения было обеспечение единого управления Рурским бассейном, важного промышленного региона." },
+            { text: "В 1947 году бывшая земля Липпе была включена в состав Северного Рейна-Вестфалии согласно распоряжению британского военного командования № 77 от 21 января 1947 года. 5 ноября 1948 года парламент земли принял «Закон об объединении земли Липпе-Детмольд с землей Северный Рейн-Вестфалия», официально завершив процесс объединения." },
+            { text: "8 мая 1949 года Парламентский совет Германии принял Конституцию ФРГ, и земля Северный Рейн-Вестфалия официально стала одной из земель Германии." },
+            { text: "18 июня 1950 года была принята Конституция самой земли, закрепившая её внутреннее устройство и права." }
         ]
     },
-    nrwRegions: [
+    discriptRegions: [
         {
             title: "Административные округа в Северном Рейне-Вестфалии",
             items: [
-                { id: 1, name: 'Арнсберг', hasInfo: false },
-                { id: 2, name: 'Детмольд', hasInfo: false },
-                { id: 3, name: 'Дюссельдорф', hasInfo: false },
+                { id: 1, name: 'Арнсберг', hasInfo: false, patch: "arnsberg" },
+                { id: 2, name: 'Детмольд', hasInfo: false, patch: "detmold" },
+                { id: 3, name: 'Дюссельдорф', hasInfo: false, patch: "dusseldorf" },
                 {
                     id: 4,
-                    name: 'Кёльн',
-                    titel: "Административный округ Кёльн",
+                    title: "Административный округ Кёльн",
+                    name: "Кёльн",
                     hasInfo: true,
+                    patch: "koln",
+                    currentMap: "Germania/Nordrhein/004.gif",
                     desc: {
                         history: [
                             { text: 'Административный округ Кёльн — один из пяти административных округов земли Северный Рейн-Вестфалия. Он расположен в юго-западной части земли.' },
@@ -110,7 +105,7 @@ export const datas = {
                             { text: ' Aachen, Bonn, Köln, Leverkusen.' }
                         ]
                     },
-                    koelnDistrict: [
+                    subRegion: [
                         {
                             id: 1,
                             name: "Аахен",
@@ -394,7 +389,7 @@ export const datas = {
                             communities: [
                                 { id: 1, name: "Бедбург", hasInfo: false },
                                 { id: 2, name: "Бергхайм", hasInfo: false },
-                                { id: 3, name: "Брюль", hasInfo: false },
+                                { id: 3, name: "Брюль", hasInfo: true, patch: "bruehl" },
                                 { id: 4, name: "Эльсдорф", hasInfo: false },
                                 { id: 5, name: "Эрфтштадт", hasInfo: false },
                                 { id: 6, name: "Фрехен", hasInfo: false },
@@ -497,35 +492,36 @@ export const datas = {
                         }
                     ]
                 },
-                { id: 5, name: 'Мюнстер', hasInfo: false }
+                { id: 5, name: 'Мюнстер', hasInfo: false, patch: "munster" }
             ]
         },
         {
             title: "Свободные города в Северном Рейне-Вестфалии",
             items: [
-                { id: 6, name: 'Билефельд', hasInfo: false },
-                { id: 7, name: 'Бонн', hasInfo: false },
-                { id: 8, name: 'Боттроп', hasInfo: false },
-                { id: 9, name: 'Бохум', hasInfo: false },
-                { id: 10, name: 'Вупперталь', hasInfo: false },
-                { id: 11, name: 'Гельзенкирхен', hasInfo: false },
-                { id: 12, name: 'Дортмунд', hasInfo: false },
-                { id: 13, name: 'Дуйсбург', hasInfo: false },
-                { id: 14, name: 'Дюссельдорф', hasInfo: false },
-                { id: 15, name: 'Золинген', hasInfo: false },
-                { id: 16, name: 'Кёльн', hasInfo: false },
-                { id: 17, name: 'Крефельд', hasInfo: false },
-                { id: 18, name: 'Леверкузен', hasInfo: false },
-                { id: 19, name: 'Мёнхенгладбах', hasInfo: false },
-                { id: 20, name: 'Мюльхайм-на-Руре', hasInfo: false },
-                { id: 21, name: 'Мюнстер', hasInfo: false },
-                { id: 22, name: 'Оберхаузен', hasInfo: false },
-                { id: 23, name: 'Ремшайд', hasInfo: false },
-                { id: 24, name: 'Хаген', hasInfo: false },
-                { id: 25, name: 'Хамм', hasInfo: false },
-                { id: 26, name: 'Херне', hasInfo: false },
-                { id: 27, name: 'Эссен', hasInfo: false }
+                { id: 6, name: 'Билефельд', hasInfo: false, patch: "bielefeld", },
+                { id: 7, name: 'Бонн', hasInfo: false, patch: "bonn", },
+                { id: 8, name: 'Боттроп', hasInfo: false, patch: "bottrop", },
+                { id: 9, name: 'Бохум', hasInfo: false, patch: "bochum", },
+                { id: 10, name: 'Вупперталь', hasInfo: false, patch: "wuppertal", },
+                { id: 11, name: 'Гельзенкирхен', hasInfo: false, patch: "gelsenkirchen", },
+                { id: 12, name: 'Дортмунд', hasInfo: false, patch: "dortmund", },
+                { id: 13, name: 'Дуйсбург', hasInfo: false, patch: "duisburg", },
+                { id: 14, name: 'Дюссельдорф', hasInfo: false, patch: "duesseldorf", },
+                { id: 15, name: 'Золинген', hasInfo: false, patch: "solingen", },
+                { id: 16, name: 'Кёльн', hasInfo: false, patch: "koeln", },
+                { id: 17, name: 'Крефельд', hasInfo: false, patch: "krefeld", },
+                { id: 18, name: 'Леверкузен', hasInfo: false, patch: "leverkusen", },
+                { id: 19, name: 'Мёнхенгладбах', hasInfo: false, patch: "moenchengladbach", },
+                { id: 20, name: 'Мюльхайм-на-Руре', hasInfo: false, patch: "muelheim" },
+                { id: 21, name: 'Мюнстер', hasInfo: false, patch: "muenster", },
+                { id: 22, name: 'Оберхаузен', hasInfo: false, patch: "oberhausen", },
+                { id: 23, name: 'Ремшайд', hasInfo: false, patch: "remscheid", },
+                { id: 24, name: 'Хаген', hasInfo: false, patch: "hagen", },
+                { id: 25, name: 'Хамм', hasInfo: false, patch: "hamm", },
+                { id: 26, name: 'Херне', hasInfo: false, patch: "herne", },
+                { id: 27, name: 'Эссен', hasInfo: false, patch: "essen", }
             ]
         }
     ],
 }
+export default datas

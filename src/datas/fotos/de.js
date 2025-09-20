@@ -1,17 +1,11 @@
-export const dePhotos = {
+export const Photos = {
   country: "Germany",
-map: {
-  ru: "Germania/karta.gif",
-  ua: "Germania/karta.gif", 
-  de: "Germania/karta.gif"
-},
-castles: [
-  "Germania/zamok1.jpg",
-  "Germania/parahod.gif",
-  "Germania/zamok3.jpg"
-],
+    countries: [
+    { path: "Germania/zamok1.jpg", title: "Castle1" },
+    { path: "Germania/parahod.gif", title: "Steamship" },
+    { path: "Germania/zamok3.jpg", title: "Castle2" }
+  ],
 nrw: [
-  "Germania/Nordrhein/001.jpg",
-  {path: "Germania/Nordrhein/004.gif", title: "Карта административного округа Кельн"}
+  {path: "Germania/Nordrhein/001.jpg", title: "Castle"},
 ]
 };

@@ -1,0 +1,79 @@
+@use '../../styles/variables' as *;
+
+.city {
+    margin-top: 40px;
+
+    &__container {
+        padding: 5px;
+    }
+
+    &__title {
+        @include h1();
+        margin-bottom: 20px;
+        text-align: center;
+    }
+
+    &__desc {
+
+        &-general,
+        &-population,
+        &-area,
+        &-postalCode,
+        &-phone,
+        &-officialSite {
+            text-align: justify;
+            padding: 3px;
+
+            &__bold {
+                @include bold-text;
+                display: inline;
+            }
+
+            &__text {
+                @include body-text;
+                display: inline;
+            }
+
+            a {
+                text-decoration: none;
+            }
+        }
+    }
+        &__notablePeople {
+
+            &-title {
+                @include h3();
+                padding: 20px;
+                text-align: center;
+            }
+
+            &-item {
+                margin-bottom: 5px;
+                text-align: left;
+
+                &__bold {
+                    @include bold-text;
+                    display: inline;
+                }
+
+                &__text {
+                    @include body-text;
+                    display: inline;
+                }
+            }
+        }
+
+        &-interestingFacts,
+        &__history {
+            &-title {
+                @include h3();
+                padding: 20px;
+                text-align: center;
+            }
+
+            &-text {
+                @include body-text;
+                text-align: justify;
+            }
+        }
+    }

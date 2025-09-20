@@ -3,6 +3,7 @@ export const datas = [
     id: 1,
     path: 'ukraine',
     country: 'Україна',
+    currentMap: "",
     imagePath: '/ukr/sofiyskiy.jpg',
     desc: {
       capital: [
@@ -72,7 +73,7 @@ export const datas = [
         { text: 'Сучасна Україна — президентсько-парламентська республіка. Президент з 2019 року — Володимир Зеленський. Гривня (UAH) — офіційна валюта. Прем’єр-міністр з липня 2025 року — Юлія Свириденко.' }
       ]
     },
-    ukraineRegions: {
+    regions: {
       title: "Області України",
       items: [
         { id: 1, name: 'Вінницька область', path: 'vinnytska', hasInfo: false },
@@ -111,6 +112,7 @@ export const datas = [
     id: 2,
     path: 'germany',
     country: 'Німеччина',
+    currentMap: "Germania/karta.gif",
     imagePath: '/de/Castle_Neuschwanstein.jpg',
     desc: {
       capital: [
@@ -185,7 +187,7 @@ export const datas = [
         { text: "Після війни країна була розділена на ФРН та НДР. У 1990 році відбулося об'єднання, і сучасна Німеччина стала федеративною державою з 16 землями, багатою культурою, економікою та прагненням вивчати і пам'ятати уроки історії." }
       ]
     },
-    germanStates: {
+    regions: {
       title: "Землі Німеччини",
       items: [
         { id: 1, name: 'Баден-Вюртемберг', hasInfo: false, path: '/germany/baden-wuerttemberg' },
