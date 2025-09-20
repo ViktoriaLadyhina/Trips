@@ -2,6 +2,8 @@
 import { useSelector } from "react-redux";
 import './Home.scss'
 import { Link } from "react-router";
+import { useMeta } from '../../hooks/useMeta';
+
 import { datas as datasUa } from '../../datas/ua/home'
 import { datas as datasRu } from '../../datas/ru/home'
 import { datas as datasDe } from '../../datas/de/home'
@@ -15,6 +17,7 @@ const Home = () => {
   // выбираем данные в зависимости от языка
   const homeData = lang === 'ua' ? datasUa : lang === 'de' ? datasDe : datasRu;
   const countries = lang === 'ua' ? countriesUa : lang === 'de' ? countriesDe : countriesRu;
+  useMeta(homeData.meta);
 
   return (
     <div className="home">
@@ -34,8 +37,8 @@ const Home = () => {
         ))}
       </ul>
       <h3 className="home__section">{homeData?.subtitle_2}</h3>
-      <img src="/world-map.gif" alt="World map" className="home__worldMap"/>
-      
+      <img src="/world-map.gif" alt="World map" className="home__worldMap" />
+
       <p className="home__desc">{homeData?.description_2}</p>
       <p className="home__desc">{homeData?.description_3}</p>
       <p className="home__desc">{homeData?.description_4}</p>

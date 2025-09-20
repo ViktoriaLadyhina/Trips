@@ -1,11 +1,15 @@
 import { useSelector } from 'react-redux';
+import { Link, useParams } from 'react-router';
+
 import { datas as countriesUa } from '../../datas/ua/country';
 import { datas as countriesRu } from '../../datas/ru/country';
 import { datas as countriesDe } from '../../datas/de/country';
-import { Link, useParams } from 'react-router';
+
 import BreadCrumbs from '../../components/breadCrumbs/BreadCrumbs';
 import InfoBlock from '../../components/InfoBlock/InfoBlock';
 import { photosByCountry } from "../../datas/fotos";
+import { useMeta } from '../../hooks/useMeta';
+
 import './Country.scss'
 
 const BASE_PHOTO_URL = import.meta.env.VITE_BASE_PHOTO_URL;
@@ -19,7 +23,7 @@ const Country = () => {
 
     // ищем нужную страну
     const country = countries.find(c => c.path === countryPath);
-
+    useMeta(country?.meta);
     if (!country) return <p>Country not found</p>;
 
     const photos = photosByCountry[countryPath];
@@ -30,9 +34,7 @@ const Country = () => {
             label: lang === 'ru' ? 'Главная' : lang === 'de' ? 'Startseite' : 'Головна',
             path: '/'
         },
-        {
-            label: country?.country
-        }
+        { label: country?.country }
     ];
 
     return (

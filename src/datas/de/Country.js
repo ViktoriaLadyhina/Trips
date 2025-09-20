@@ -104,7 +104,15 @@ export const datas = [
         { id: 26, name: 'Sewastopol (Stadt mit speziellem Status)', path: 'sevastopol', hasInfo: false },
         { id: 27, name: 'Autonome Republik Krim', path: 'crimea', hasInfo: false }
       ]
+    },
+    meta: {
+      title: "Ukraine — Informationen über das Land, Sehenswürdigkeiten und Kultur",
+      description: "Alles über das Land Ukraine: Hauptstadt Kiew, Geografie, Bevölkerung, Sprachen, Küche, Feiertage und kurze Geschichte.",
+      ogTitle: "Ukraine — Informationen über das Land und Sehenswürdigkeiten",
+      ogDescription: "Detaillierte Informationen über die Ukraine: Kultur, Symbole, Geschichte, Regionen und interessante Fakten.",
+      ogImage: "/ukr/sofiyskiy.jpg"
     }
+
   },
   {
     id: 2,
@@ -197,7 +205,7 @@ export const datas = [
         { id: 7, name: 'Hessen', hasInfo: false, path: '/germany/hessen' },
         { id: 8, name: 'Mecklenburg-Vorpommern', hasInfo: false, path: '/germany/mecklenburg-vorpommern' },
         { id: 9, name: 'Niedersachsen', hasInfo: false, path: '/germany/lower-saxony' },
-        { id: 10, name: 'Nordrhein-Westfalen', hasInfo: true, path: '/germany/nrw'  },
+        { id: 10, name: 'Nordrhein-Westfalen', hasInfo: true, path: '/germany/nrw' },
         { id: 11, name: 'Rheinland-Pfalz', hasInfo: false, path: '/germany/rhineland-pfalz' },
         { id: 12, name: 'Saarland', hasInfo: false, path: '/germany/saarland' },
         { id: 13, name: 'Sachsen', hasInfo: false, path: '/germany/saxony' },
@@ -205,8 +213,14 @@ export const datas = [
         { id: 15, name: 'Schleswig-Holstein', hasInfo: false, path: '/germany/schleswig-holstein' },
         { id: 16, name: 'Thüringen', hasInfo: false, path: '/germany/thuringia' }
       ]
+    },
+    meta: {
+      title: "Deutschland — Informationen über das Land, Sehenswürdigkeiten und Kultur",
+      description: "Alles über Deutschland: Hauptstadt Berlin, Geografie, Bevölkerung, Sprachen, Küche, Symbole, Geschichte und Regionen.",
+      ogTitle: "Deutschland — Informationen über das Land und Sehenswürdigkeiten",
+      ogDescription: "Detaillierte Informationen über Deutschland: Kultur, Symbole, Geschichte, Regionen und interessante Fakten.",
+      ogImage: "/de/Castle_Neuschwanstein.jpg"
     }
-
   }
 
 ];
