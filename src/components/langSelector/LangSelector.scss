@@ -1,0 +1,36 @@
+.language-switcher {
+  display: inline-block;
+  position: relative;
+
+  select {
+    appearance: none; /* убираем стандартный стиль браузера */
+    background-color: var(--color-cart-bg);
+    color: var(--color-text);
+    border: 1px solid var(--color-text);
+    border-radius: 8px;
+    padding: 0.4rem 1.2rem 0.4rem 0.6rem;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+
+    /* стрелка кастомная */
+    background-image: url("data:image/svg+xml;charset=US-ASCII,%3Csvg width='10' height='6' viewBox='0 0 10 6' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M0 0l5 6 5-6H0z' fill='%23333'/%3E%3C/svg%3E");
+    background-repeat: no-repeat;
+    background-position: right 0.5rem center;
+    background-size: 10px 6px;
+
+    &:hover {
+      border-color: var(--color-primary);
+    }
+  }
+
+  /* Темная тема для селекта */
+  [data-theme='dark'] & select {
+    background-color: var(--color-sidebar-bg);
+    color: var(--color-text);
+    border: 1px solid var(--color-text);
+
+    /* стрелка белая для темной темы */
+    background-image: url("data:image/svg+xml;charset=US-ASCII,%3Csvg width='10' height='6' viewBox='0 0 10 6' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M0 0l5 6 5-6H0z' fill='%23eee'/%3E%3C/svg%3E");
+  }
+}
