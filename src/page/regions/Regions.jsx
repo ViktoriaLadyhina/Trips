@@ -1,12 +1,14 @@
-import React from 'react'
 import { regions as ruRegions } from '../../datas/ru';
 import { regions as uaRegions } from '../../datas/ua';
 import { regions as deRegions } from '../../datas/de';
+
 import { useSelector } from 'react-redux';
 import { Link, useParams } from 'react-router';
+
 import InfoBlock from '../../components/InfoBlock/InfoBlock';
 import BreadCrumbs from '../../components/breadCrumbs/BreadCrumbs';
 import { photosByCountry } from "../../datas/fotos";
+import { useMeta } from '../../hooks/useMeta';
 import './Regions.scss'
 
 const BASE_PHOTO_URL = import.meta.env.VITE_BASE_PHOTO_URL;
@@ -17,23 +19,24 @@ const Regions = () => {
 
     const allRegions = lang === 'ua' ? uaRegions : lang === 'de' ? deRegions : ruRegions;
 
+    const countryRegions = allRegions[countryPath];
 
-  const countryRegions = allRegions[countryPath];
-  if (!countryRegions) return <p>Country not found</p>;
+    const region = countryRegions[regionsPath];
+    useMeta(region?.meta || {});
 
-  const region = countryRegions[regionsPath];
-  if (!region) return <p>Region not found</p>;
+    if (!countryRegions) return <p>Country not found</p>;
+    if (!region) return <p>Region not found</p>;
 
-  const photos = photosByCountry[countryPath];
+    const photos = photosByCountry[countryPath];
 
-  const crumbs = [
-    { label: lang === 'ru' ? 'Главная' : lang === 'de' ? 'Startseite' : 'Головна', path: '/' },
-    { label: countryRegions.countryName, path: `/${countryPath}` },
-    { label: region.name }
-  ];
+    const crumbs = [
+        { label: lang === 'ru' ? 'Главная' : lang === 'de' ? 'Startseite' : 'Головна', path: '/' },
+        { label: countryRegions.countryName, path: `/${countryPath}` },
+        { label: region.name }
+    ];
 
-  return (
-           <div className='regions'>
+    return (
+        <div className='regions'>
             <aside className="regions__sidebar">
                 {region.discriptRegions.map((regionBlock) => (
                     <div key={regionBlock.title}>
@@ -61,7 +64,7 @@ const Regions = () => {
                 <BreadCrumbs crumbs={crumbs} />
 
                 <h1 className="regions__title">{region.name}</h1>
-                                {region.currentMap && (
+                {region.currentMap && (
                     <img src={`${BASE_PHOTO_URL}${region.currentMap}`} alt={`${region?.country} map`} />
                 )}
 
@@ -103,7 +106,7 @@ const Regions = () => {
                 </div>
             </div>
         </div>
-  )
+    )
 }
 
 export default Regions

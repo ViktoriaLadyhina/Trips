@@ -491,6 +491,14 @@ const datas = {
                             gerb: "Germania/Nordrhein/Luden/015.png"
                         }
                     ],
+                    meta: {
+                        title: "Köln — Verwaltungsbezirk Nordrhein-Westfalens",
+                        description: "Detaillierte Informationen über Köln: Kultur, Geschichte, Sehenswürdigkeiten des Bezirks.",
+                        ogTitle: "Köln — Bezirk NRW",
+                        ogDescription: "Köln: Verwaltungsbezirk in Nordrhein-Westfalen, Städte, Geschichte und interessante Fakten.",
+                        ogImage: "/nrw/koeln.jpg"
+                    }
+
                 },
                 { id: 5, name: 'Münster', hasInfo: false, patch: "munster" }
             ]
@@ -522,6 +530,13 @@ const datas = {
                 { id: 27, name: 'Essen', hasInfo: false, patch: "essen", }
             ]
         }
-    ]
+    ],
+    meta: {
+        title: "Nordrhein-Westfalen — Informationen über die Region",
+        description: "Nordrhein-Westfalen: Städte, Bezirke, Kultur und Sehenswürdigkeiten.",
+        ogTitle: "Nordrhein-Westfalen — Informationen über die Region und Bezirke",
+        ogDescription: "Detaillierte Informationen über Nordrhein-Westfalen: Städte, Bezirke, Geschichte und interessante Fakten.",
+        ogImage: "/nrw/nrw-map.jpg"
+    }
 }
 export default datas

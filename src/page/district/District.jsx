@@ -1,8 +1,11 @@
 import { useSelector } from 'react-redux';
+import { useParams } from 'react-router';
+
 import BreadCrumbs from '../../components/breadCrumbs/BreadCrumbs.jsx';
 import Region from '../../components/region/Region.jsx';
-import { useParams } from 'react-router';
 import InfoBlock from '../../components/InfoBlock/InfoBlock.jsx'
+import { useMeta } from '../../hooks/useMeta';
+
 import { regions as ruDistricts } from '../../datas/ru';
 import { regions as uaDistricts } from '../../datas/ua';
 import { regions as deDistricts } from '../../datas/de';
@@ -17,14 +20,16 @@ const District = () => {
   const allDistricts = lang === 'ua' ? uaDistricts : lang === 'de' ? deDistricts : ruDistricts;
 
   const countryRegions = allDistricts[countryPath];
-  if (!countryRegions) return <p>Country not found</p>;
 
   const region = countryRegions[regionsPath];
-  if (!region) return <p>Region not found</p>;
 
   // Ищем район по patch
   const districtItems = region.discriptRegions.flatMap(r => r.items);
   const district = districtItems.find(d => d.patch === districtPath);
+  useMeta(district?.meta);
+
+  if (!countryRegions) return <p>Country not found</p>;
+  if (!region) return <p>Region not found</p>;
   if (!district) return <p>District not found</p>;
 
   const crumbs = [
@@ -33,7 +38,6 @@ const District = () => {
     { label: region.name, path: `/${countryPath}/${regionsPath}` },
     { label: district.title }
   ];
-
 
   return (
     <div className='district'>

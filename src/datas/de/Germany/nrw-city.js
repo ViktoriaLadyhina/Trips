@@ -55,6 +55,13 @@ const datas = [
                 { text: 'Im Jahr 1285 erhielt die Stadt Stadtrechte vom Erzbischof Siegfried von Westerburg.' },
                 { text: 'Ab 1469 wurde Brühl für mehr als 150 Jahre zur offiziellen Residenz der Kölner Erzbischöfe.' }
             ]
+        },
+        meta: {
+            title: "Brühl — Stadt in Nordrhein-Westfalen",
+            description: "Brühl: Geschichte, Sehenswürdigkeiten, berühmte Persönlichkeiten und interessante Fakten der Stadt.",
+            ogTitle: "Brühl — Informationen zur Stadt",
+            ogDescription: "Detaillierte Informationen über Brühl: Kultur, Geschichte, berühmte Einwohner und interessante Fakten.",
+            ogImage: "/nrw/bruehl.jpg"
         }
     }
 ]

@@ -1,11 +1,14 @@
 import { useSelector } from 'react-redux';
 import { useParams } from 'react-router';
-import BreadCrumbs from '../../components/breadCrumbs/BreadCrumbs.jsx';
+
 import { regions as ruDistricts } from '../../datas/ru';
 import { regions as uaDistricts } from '../../datas/ua';
 import { regions as deDistricts } from '../../datas/de';
+
+import BreadCrumbs from '../../components/breadCrumbs/BreadCrumbs.jsx';
 import InfoBlock from '../../components/InfoBlock/InfoBlock.jsx';
 import { useCityData } from '../../hooks/useCityData.js';
+import { useMeta } from '../../hooks/useMeta';
 import './City.scss'
 
 const BASE_PHOTO_URL = import.meta.env.VITE_BASE_PHOTO_URL;
@@ -20,30 +23,33 @@ const City = () => {
     // логика для поиска самого города
     // 1. Берём страны
     const countryRegions = allDistricts[countryPath];
-    if (!countryRegions) return <p>Country not found</p>;
 
     // 2. Берём регион
     const region = countryRegions[regionsPath];
-    if (!region) return <p>Region not found</p>;
 
     // 3. Ищем район по patch
     const districtItems = region.discriptRegions.flatMap(r => r.items);
     const district = districtItems.find(d => d.patch === districtPath);
-    if (!district) return <p>District not found</p>;
 
     // Получаем все субрегионы района
     const subRegions = district.subRegion;
-    if (!subRegions || subRegions.length === 0) return <p>No subRegions found</p>;
 
     // Получаем все города из всех субрегионов
     const allCities = subRegions.flatMap(sub => sub.communities);
-    if (!allCities || allCities.length === 0) return <p>No cities found</p>;
 
     // Ищем город по cityPath
     const city = allCities.find(c => c.patch === cityPath);
+
+    useMeta(cityData?.meta);
+
+    if (!countryRegions) return <p>Country not found</p>;
+    if (!region) return <p>Region not found</p>;
+    if (!district) return <p>District not found</p>;
+    if (!subRegions || subRegions.length === 0) return <p>No subRegions found</p>;
+    if (!allCities || allCities.length === 0) return <p>No cities found</p>;
     if (!city) return <p>City not found</p>;
 
-    // Опционально: находим родительский субрегион
+    // находим родительский субрегион для хлебных крошек
     const parentSubRegion = subRegions.find(sub => sub.communities.some(c => c.patch === cityPath));
 
     if (error) return <p>{error}</p>;
