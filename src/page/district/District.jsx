@@ -39,7 +39,7 @@ const District = () => {
     <div className='district'>
       <BreadCrumbs crumbs={crumbs} />
       <div className='district__container'>
-        <div className='district__title'>{district.titel}</div>
+        <div className='district__title'>{district.title}</div>
         <div className='district__map'>
           <img src={`${BASE_PHOTO_URL}${district.currentMap}`} alt={`${district?.titel} map`} />
         </div>

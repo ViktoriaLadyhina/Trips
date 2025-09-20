@@ -1,7 +1,7 @@
 @use '../../styles/variables' as *;
 
 .region {
-    background-color: rgb(250, 248, 245);
+    background-color: var(--color-cart-bg);
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     transition: box-shadow 0.3s ease;
@@ -20,7 +20,8 @@
 
         &-list {
             width: 230px;
-            background-color: rgb(243, 240, 235);
+            background-color: var(--color-cart-bg);
+            color: var(--color-sidebar-text);
             list-style: none;
             display: block;
             text-align: left;

@@ -11,7 +11,7 @@ const Region = ({ data, countryPath, regionsPath, districtPath }) => {
       <div className='region__title'>{data.name} ({data.fullName})</div>
       <div className='region__container'>
         <div className='region__container-list'>
-          <InfoBlock data={data.com} className="region__container-list__text-com" />
+          <InfoBlock data={data.com} className="region__container_desc-text-com" />
           {data.communities.map((reg) => (
             <li key={reg.id} className="region__container-list__item">
               {reg.hasInfo ? (

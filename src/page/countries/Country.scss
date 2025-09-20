@@ -67,7 +67,17 @@
         &-img {
             max-width: 100px;
             height: auto;
-            flex-shrink: 0; // чтобы картинка не сжималась
+            flex-shrink: 0;
+            transition: box-shadow 0.3s ease;
+
+            [data-theme='dark'] & {
+                box-shadow: 0 0 15px rgba(255, 255, 255, 0.1); 
+                border-radius: 8px; 
+            }
+
+            &:hover {
+                box-shadow: 0 0 20px rgba(255, 255, 255, 0.2);
+            }
         }
     }
 
@@ -104,6 +114,7 @@
         box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
         background-color: var(--color-sidebar-bg);
         margin: 0 20px 20px 0;
+        color: var(--color-sidebar-text);
 
         &-title {
             @include h3();
@@ -133,7 +144,7 @@
             color: inherit;
 
             &:hover {
-                text-decoration: none; 
+                text-decoration: none;
                 box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2); // "всплытие"
                 transform: translateY(-3px); // приподнятие
                 background-color: rgba(0, 0, 0, 0.05); // лёгкое выделение фона

@@ -59,12 +59,18 @@ const City = () => {
         { label: cityData.name },
     ];
 
+    const attractions = {
+        ru: "Достопримечательности",
+        ua: "Пам'ятки",
+        de: "Sehenswürdigkeiten"
+    }
 
     return (
         <div className='city'>
             <BreadCrumbs crumbs={crumbs} />
             <div className='city__container'>
                 <div className='city__title'>{cityData.name}</div>
+                <button className='city__button'>{attractions[lang]}</button>
                 <div className='city__desc'>
                     <InfoBlock data={cityData?.desc?.general} className="city__desc-general" />
                     <InfoBlock data={cityData?.desc?.population} className="city__desc-population" />
