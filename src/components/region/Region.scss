@@ -1,0 +1,94 @@
+@use '../../styles/variables' as *;
+
+.region {
+    background-color: rgb(250, 248, 245);
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s ease;
+    padding: 6px;
+    margin: 10px;
+    border: 1px solid var(--color-sidebar-bg);
+
+    &__title {
+        @include h3();
+        margin: 10px;
+    }
+
+    &__container {
+        display: flex;
+        flex-wrap: wrap;
+
+        &-list {
+            width: 230px;
+            background-color: rgb(243, 240, 235);
+            list-style: none;
+            display: block;
+            text-align: left;
+            margin: 10px;
+            padding: 5px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: box-shadow 0.3s ease;
+
+            li {
+                transition: all 0.2s ease;
+            }
+
+            &__link {
+                text-decoration: none;
+                @include bold-text;
+                display: block;
+                padding: 2px 10px;
+                border-radius: 6px;
+                transition: all 0.2s ease;
+                color: inherit;
+
+                &:hover {
+                    text-decoration: none;
+                    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+                    transform: translateY(-3px);
+                    background-color: rgba(0, 0, 0, 0.05);
+                }
+
+                &--disabled {
+                    cursor: default;
+                    color: gray;
+                    text-decoration: none;
+                }
+            }
+        }
+
+        &_desc {
+            display: flex;
+            align-items: flex-start;
+            flex-wrap: wrap;
+
+            &-gerb {
+                padding: 6px;
+            }
+
+            &-text {
+                padding: 6px;
+
+                &-center,
+                &-area,
+                &-population,
+                &-density,
+                &-code,
+                &-description,
+                &-com {
+                    text-align: left;
+                    padding: 3px;
+
+                    &__bold {
+                        @include bold-text;
+                    }
+
+                    &__text {
+                        @include body-text;
+                    }
+                }
+            }
+        }
+    }
+
+}

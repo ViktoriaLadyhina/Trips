@@ -3,6 +3,7 @@ export const datas = [
     id: 1,
     path: 'ukraine',
     country: 'Украина',
+    currentMap: "",
     imagePath: '/ukr/sofiyskiy.jpg',
     desc: {
       capital: [
@@ -72,7 +73,7 @@ export const datas = [
         { text: 'Современная Украина — президентско-парламентская республика. Президент с 2019 года — Владимир Зеленский. Гривна (UAH) — официальная валюта. Премьер-министр с июля 2025 года — Юлия Свириденко.' }
       ]
     },
-    ukraineRegions: {
+    regions: {
       title: "Области Украины",
       items: [
         { id: 1, name: 'Винницкая область', path: 'vinnytska', hasInfo: false },
@@ -109,6 +110,7 @@ export const datas = [
     id: 2,
     path: 'germany',
     country: 'Германия',
+    currentMap: "Germania/karta.gif",
     imagePath: '/de/Castle_Neuschwanstein.jpg',
     desc: {
       capital: [
@@ -183,142 +185,25 @@ export const datas = [
         { text: "После войны страна была разделена на ФРГ и ГДР. В 1990 году произошло объединение, и современная Германия стала федеративным государством с 16 землями, богатой культурой, экономикой и стремлением изучать и помнить уроки истории." }
       ]
     },
-    germanStates: {
+    regions: {
       title: "Земли Германии",
       items: [
-        { id: 1, name: 'Баден-Вюртемберг', hasInfo: false, path: '/germany/baden-wuerttemberg' },
-        { id: 2, name: 'Бавария', hasInfo: false, path: '/germany/bavaria' },
-        { id: 3, name: 'Берлин', hasInfo: false, path: '/germany/berlin' },
-        { id: 4, name: 'Бранденбург', hasInfo: false, path: '/germany/brandenburg' },
-        { id: 5, name: 'Бремен', hasInfo: false, path: '/germany/bremen' },
-        { id: 6, name: 'Гамбург', hasInfo: false, path: '/germany/hamburg' },
-        { id: 7, name: 'Гессен', hasInfo: false, path: '/germany/hessen' },
-        { id: 8, name: 'Мекленбург-Передняя Померания', hasInfo: false, path: '/germany/mecklenburg-vorpommern' },
-        { id: 9, name: 'Нижняя Саксония', hasInfo: false, path: '/germany/lower-saxony' },
-        {
-          id: 10,
-          name: 'Северный Рейн-Вестфалия',
-          hasInfo: true,
-          path: '/germany/nrw',
-          desc: {
-            capital: [
-              { bold: 'Столица:' },
-              { text: ' Дюссельдорф' }
-            ],
-            population: [
-              { bold: 'Население:' },
-              { text: ' около 18,1 млн человек. Иностранцев — около 2 млн человек.' }
-            ],
-            area: [
-              { bold: 'Площадь:' },
-              { text: ' 34 000 км². Плотность населения — около 525 человек на 1 км².' }
-            ],
-            geography: [
-              { bold: 'География:' },
-              { text: ' Северный Рейн-Вестфалия находится на западе Германии и граничит с Бельгией (99 км), Нидерландами (387 км), а также с федеральными землями Нижняя Саксония (583 км), Гессен (269 км) и Рейнланд-Пфальц (307 км).' },
-              { text: ' Земля включает два крупных ландшафтных региона: Северная низменность и немецкое среднегорье, которые подразделяются на северорейнскую и вестфальскую части вдоль Рейна.' },
-              { text: ' По левому берегу Рейна находятся горы Айфель (Eifel) и предгорья Vennvorland (Аахенский регион). По правому берегу Рейна — Bergisches Land, Зауерланд (Sauerland), Ротхааргебирге (Rothaargebirge), Зигерланд (Siegerland), Сибенгебирге (Siebengebirge) и части западного леса и Везербергланда (Weserbergland). Леса занимают около 24% территории.' }
-            ],
-            history: [
-              { bold: 'Происхождение названия:' },
-              { text: ' Название Nordrhein-Westfalen появилось после постановления британского военного правительства 23 августа 1946 года, объединяющего провинцию Вестфалия (Provinz Westfalen) и провинцию Северный Рейн (Provinz Nordrhein). 21 января 1947 года к ним присоединилась территория Липпе (Lippe).' }
-            ],
-            economy: [
-              { bold: 'Економика:' },
-              { text: ' Северный Рейн-Вестфалия — один из крупнейших экономических центров Германии. Исторически развиты угольная, железная, металлургическая, стальная и текстильная промышленность.' },
-              { text: 'Сельское хозяйство играет вспомогательную роль, обеспечивая продовольствием жителей крупных городов.' }
-            ],
-            cities: [
-              { bold: 'Крупные города:' },
-              { text: ' Кёльн, Эссен, Дортмунд, Дюссельдорф, Дюйсбург, Бонн, Мюнстер, Вупперталь, Аахен, Билефельд, Падерборн, Бохум, Крефельд, Гельзенкирхен, Леверкузен, Мюльхайм, Ремшайд, Золинген, Мёнхен-Гладбах, Зиген, Хамм, Реклингхаузен.' }
-            ],
-            rivers: [
-              { bold: 'Главные реки и каналы:' },
-              { text: ' Рейн, Липпе, Рур, Эмс, Везер, Миттельландканал.' }
-            ],
-            tourism: [
-              { bold: 'Туризм и отдых:' },
-              { text: ' Северный Рейн-Вестфалия славится богатой историей и культурой. Здесь расположены многочисленные исторические здания, музеи и парки. Популярны экскурсии по Рейну и туристические маршруты по горным и лесным районам.' }
-            ]
-          },
-          symbols: {
-            title: "Геральдика",
-            items: [
-              {
-                bold: "Герб:",
-                text: " на гербе Северной Рейн-Вестфалии объединены символы трёх исторических провинций, из которых была образована земля в 1946–1947 годах. Серебристая полоска Рейна на зелёном фоне символизирует Рейнскую провинцию. Саксонский конь на красном фоне — символ Вестфалии (в вестфальском варианте он вставший на дыбы). Красная роза с золотой сердцевиной и листьями — герб графов фон Липпе, использовавшийся с XIII века.",
-                img: "Germania/Nordrhein/002.gif"
-              },
-              {
-                bold: "Флаг:",
-                text: " флаг Северного Рейна-Вестфалии состоит из цветов герба: зелёного, белого и красного, расположенных горизонтальными полосами.",
-                img: "Germania/Nordrhein/003.gif"
-              }
-            ]
-          },
-          briefHistory: {
-            title: 'Краткая история',
-            items: [
-              {
-                text: "После Второй мировой войны территория современной земли Северный Рейн-Вестфалия находилась в британской оккупационной зоне. Новая земля была создана 23 августа 1946 года на основе бывшей прусской провинции Вестфалия и северной части Рейнской провинции (Rheinland) британской оккупационной администрацией. Целью объединения было обеспечение единого управления Рурским бассейном, важного промышленного региона."
-              },
-              {
-                text: "В 1947 году бывшая земля Липпе была включена в состав Северного Рейна-Вестфалии согласно распоряжению британского военного командования № 77 от 21 января 1947 года. 5 ноября 1948 года парламент земли принял «Закон об объединении земли Липпе-Детмольд с землей Северный Рейн-Вестфалия», официально завершив процесс объединения."
-              },
-              {
-                text: "8 мая 1949 года Парламентский совет Германии принял Конституцию ФРГ, и земля Северный Рейн-Вестфалия официально стала одной из земель Германии."
-              },
-              {
-                text: "18 июня 1950 года была принята Конституция самой земли, закрепившая её внутреннее устройство и права."
-              }
-            ]
-          },
-          nrwRegions: [
-            {
-              title: "Административные округа в Северном Рейне-Вестфалии",
-              items: [
-                { id: 1, name: 'Арнсберг', hasInfo: false },
-                { id: 2, name: 'Детмольд', hasInfo: false },
-                { id: 3, name: 'Дюссельдорф', hasInfo: false },
-                { id: 4, name: 'Кёльн', hasInfo: false },
-                { id: 5, name: 'Мюнстер', hasInfo: false }
-              ]
-            },
-            {
-              title: "Свободные города в Северном Рейне-Вестфалии",
-              items: [
-                { id: 6, name: 'Билефельд', hasInfo: false },
-                { id: 7, name: 'Бонн', hasInfo: false },
-                { id: 8, name: 'Боттроп', hasInfo: false },
-                { id: 9, name: 'Бохум', hasInfo: false },
-                { id: 10, name: 'Вупперталь', hasInfo: false },
-                { id: 11, name: 'Гельзенкирхен', hasInfo: false },
-                { id: 12, name: 'Дортмунд', hasInfo: false },
-                { id: 13, name: 'Дуйсбург', hasInfo: false },
-                { id: 14, name: 'Дюссельдорф', hasInfo: false },
-                { id: 15, name: 'Золинген', hasInfo: false },
-                { id: 16, name: 'Кёльн', hasInfo: false },
-                { id: 17, name: 'Крефельд', hasInfo: false },
-                { id: 18, name: 'Леверкузен', hasInfo: false },
-                { id: 19, name: 'Мёнхенгладбах', hasInfo: false },
-                { id: 20, name: 'Мюльхайм-на-Руре', hasInfo: false },
-                { id: 21, name: 'Мюнстер', hasInfo: false },
-                { id: 22, name: 'Оберхаузен', hasInfo: false },
-                { id: 23, name: 'Ремшайд', hasInfo: false },
-                { id: 24, name: 'Хаген', hasInfo: false },
-                { id: 25, name: 'Хамм', hasInfo: false },
-                { id: 26, name: 'Херне', hasInfo: false },
-                { id: 27, name: 'Эссен', hasInfo: false }
-              ]
-            }
-          ],
-        },
-        { id: 11, name: 'Рейнланд-Пфальц', hasInfo: false, path: '/germany/rhineland-pfalz' },
-        { id: 12, name: 'Саар', hasInfo: false, path: '/germany/saarland' },
-        { id: 13, name: 'Саксония', hasInfo: false, path: '/germany/saxony' },
-        { id: 14, name: 'Саксония-Анхальт', hasInfo: false, path: '/germany/saxony-anhalt' },
-        { id: 15, name: 'Шлезвиг-Гольштейн', hasInfo: false, path: '/germany/schleswig-holstein' },
-        { id: 16, name: 'Тюрингия', hasInfo: false, path: '/germany/thuringia' }
+        { id: 1, name: 'Баден-Вюртемберг', hasInfo: false, path: 'baden-wuerttemberg' },
+        { id: 2, name: 'Бавария', hasInfo: false, path: 'bavaria' },
+        { id: 3, name: 'Берлин', hasInfo: false, path: 'berlin' },
+        { id: 4, name: 'Бранденбург', hasInfo: false, path: 'brandenburg' },
+        { id: 5, name: 'Бремен', hasInfo: false, path: 'bremen' },
+        { id: 6, name: 'Гамбург', hasInfo: false, path: 'hamburg' },
+        { id: 7, name: 'Гессен', hasInfo: false, path: 'hessen' },
+        { id: 8, name: 'Мекленбург-Передняя Померания', hasInfo: false, path: 'mecklenburg-vorpommern' },
+        { id: 9, name: 'Нижняя Саксония', hasInfo: false, path: 'lower-saxony' },
+        { id: 10, name: 'Северный Рейн-Вестфалия', hasInfo: true, path: 'nrw' },
+        { id: 11, name: 'Рейнланд-Пфальц', hasInfo: false, path: 'rhineland-pfalz' },
+        { id: 12, name: 'Саар', hasInfo: false, path: 'saarland' },
+        { id: 13, name: 'Саксония', hasInfo: false, path: 'saxony' },
+        { id: 14, name: 'Саксония-Анхальт', hasInfo: false, path: 'saxony-anhalt' },
+        { id: 15, name: 'Шлезвиг-Гольштейн', hasInfo: false, path: 'schleswig-holstein' },
+        { id: 16, name: 'Тюрингия', hasInfo: false, path: 'thuringia' }
       ]
     }
   }

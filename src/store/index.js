@@ -3,7 +3,7 @@ import languageReducer from "./features/languageSlice";
 
 const store = configureStore({
     reducer: {
-         language: languageReducer,
+         language: languageReducer
     }
 })
 export default store;

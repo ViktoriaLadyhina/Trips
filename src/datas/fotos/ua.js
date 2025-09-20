@@ -1,7 +1,6 @@
-export const dePhotos = {
+export const Photos = {
   country: "Ukraine",
-registr: [
-  "Ukraine/i.jpeg",
-  "Ukraine/i2.jpeg"
-]
+  countries: [
+    { path: "Ukraine/i.jpeg", title: "Київ" },
+  ]
 };

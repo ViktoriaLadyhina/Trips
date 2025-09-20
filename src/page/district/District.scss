@@ -1,0 +1,26 @@
+@use '../../styles/variables' as *;
+
+.district{
+    margin-top: 40px;
+
+        &__title {
+        @include h1();
+        margin-bottom: 20px;
+        text-align: center;
+    }
+
+    &__history,
+    &__area,
+    &__population {
+        text-align: justify;
+        padding: 3px;
+
+        &__bold {
+            @include bold-text;
+        }
+
+        &__text {
+            @include body-text;
+        }
+    }
+}
