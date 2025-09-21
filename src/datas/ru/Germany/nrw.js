@@ -490,7 +490,15 @@ const datas = {
                             ],
                             gerb: "Germania/Nordrhein/Luden/015.png"
                         }
-                    ]
+                    ],
+                    meta: {
+                        title: "Кёльн — административный округ Северного Рейна-Вестфалия",
+                        description: "Подробная информация о Кёльне: культура, история, достопримечательности округа.",
+                        ogTitle: "Кёльн — административный округ Северного Рейна-Вестфалия",
+                        ogDescription: "Кёльн: административный округ Северного Рейна-Вестфалии, города, история и интересные факты.",
+                        ogImage: "/nrw/koeln.jpg"
+                    }
+
                 },
                 { id: 5, name: 'Мюнстер', hasInfo: false, patch: "munster" }
             ]
@@ -508,7 +516,7 @@ const datas = {
                 { id: 13, name: 'Дуйсбург', hasInfo: false, patch: "duisburg", },
                 { id: 14, name: 'Дюссельдорф', hasInfo: false, patch: "duesseldorf", },
                 { id: 15, name: 'Золинген', hasInfo: false, patch: "solingen", },
-                { id: 16, name: 'Кёльн', hasInfo: false, patch: "koeln", },
+                { id: 16, name: 'Кёльн', hasInfo: true, patch: "koeln", },
                 { id: 17, name: 'Крефельд', hasInfo: false, patch: "krefeld", },
                 { id: 18, name: 'Леверкузен', hasInfo: false, patch: "leverkusen", },
                 { id: 19, name: 'Мёнхенгладбах', hasInfo: false, patch: "moenchengladbach", },
@@ -523,5 +531,13 @@ const datas = {
             ]
         }
     ],
+    meta: {
+        title: "Северный Рейн-Вестфалия — информация о регионе",
+        description: "Северный Рейн-Вестфалия: города, округа, культура и достопримечательности.",
+        ogTitle: "Северный Рейн-Вестфалия — информация о регионе и округах",
+        ogDescription: "Подробная информация о Северном Рейне-Вестфалии: города, округа, история и интересные факты.",
+        ogImage: "/nrw/nrw-map.jpg"
+    }
+
 }
 export default datas

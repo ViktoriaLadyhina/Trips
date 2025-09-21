@@ -499,6 +499,14 @@ const datas = {
                             gerb: "Germania/Nordrhein/Luden/015.png"
                         }
                     ],
+                    meta: {
+                        title: "Кельн — адміністративний округ Північного Рейну-Вестфалія",
+                        description: "Детальна інформація про Кельн: культура, історія, визначні місця округу.",
+                        ogTitle: "Кельн — адміністративний округ Північного Рейну-Вестфалія",
+                        ogDescription: "Кельн: адміністративний округ Північного Рейну-Вестфалія, міста, історія та цікаві факти.",
+                        ogImage: "/nrw/koeln.jpg"
+                    }
+
                 },
                 { id: 5, name: 'Мюнстер', hasInfo: false, patch: "munster" }
             ]
@@ -516,7 +524,7 @@ const datas = {
                 { id: 13, name: 'Дуйсбург', hasInfo: false, patch: "duisburg", },
                 { id: 14, name: 'Дюссельдорф', hasInfo: false, patch: "duesseldorf", },
                 { id: 15, name: 'Золінген', hasInfo: false, patch: "solingen", },
-                { id: 16, name: 'Кельн', hasInfo: false, patch: "koeln", },
+                { id: 16, name: 'Кельн', hasInfo: true, patch: "koeln", },
                 { id: 17, name: 'Крефельд', hasInfo: false, patch: "krefeld", },
                 { id: 18, name: 'Леверкузен', hasInfo: false, patch: "leverkusen", },
                 { id: 19, name: 'Менхенгладбах', hasInfo: false, patch: "moenchengladbach", },
@@ -531,5 +539,12 @@ const datas = {
             ]
         }
     ],
+    meta: {
+        title: "Північний Рейн-Вестфалія — інформація про регіон",
+        description: "Північний Рейн-Вестфалія: міста, округи, культура та визначні місця.",
+        ogTitle: "Північний Рейн-Вестфалія — інформація про регіон та округи",
+        ogDescription: "Детальна інформація про Північний Рейн-Вестфалія: міста, округи, історія та цікаві факти.",
+        ogImage: "/nrw/nrw-map.jpg"
+    }
 }
 export default datas

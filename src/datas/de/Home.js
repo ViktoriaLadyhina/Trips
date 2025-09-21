@@ -22,6 +22,13 @@ export const datas = {
 
         "description_8": `Sehenswürdigkeiten sind unsere Geschichte, unsere Kultur, unser Erbe. Wenn wir sie nicht bewahren, werden wir künftigen Generationen nichts hinterlassen und uns selbst als Nation verlieren. In der Geschichte unseres Landes gab es bereits Zeiten, in denen Tempel zerstört, Hügelgräber geplündert und Relikte alter Zivilisationen vernichtet wurden. Daran müssen wir uns erinnern, damit es nie wieder geschieht. Das ist unsere Geschichte. Unser Land.`,
 
-        "subtitle_3": "Karte Europas (politisch)"
+        "subtitle_3": "Karte Europas (politisch)",
 
+        meta: {
+                title: "Unsere Reisen – Webseite über Reisen",
+                description: "Wir berichten über Reisen, die besten Routen und Erlebnisse.",
+                ogTitle: "Unsere Reisen – Webseite über Reisen",
+                ogDescription: "Die besten Reisen und Tipps für Touristen.",
+                ogImage: "https://site.com/preview.jpg",
+        }
 }

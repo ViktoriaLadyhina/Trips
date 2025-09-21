@@ -104,9 +104,15 @@ export const datas = [
         { id: 26, name: 'Севастополь (місто зі спец. статусом)', path: 'sevastopol', hasInfo: false },
         { id: 27, name: 'Автономна Республіка Крим', path: 'crimea', hasInfo: false }
       ]
+    },
+    meta: {
+      title: "Україна — інформація про країну, визначні місця та культура",
+      description: "Усе про країну Україна: столиця Київ, географія, населення, мови, кухня, свята та коротка історія.",
+      ogTitle: "Україна — інформація про країну та визначні місця",
+      ogDescription: "Детальна інформація про Україну: культура, символи, історія, регіони та цікаві факти.",
+      ogImage: "/ukr/sofiyskiy.jpg"
     }
   },
-
 
   {
     id: 2,
@@ -199,7 +205,7 @@ export const datas = [
         { id: 7, name: 'Гессен', hasInfo: false, path: '/germany/hessen' },
         { id: 8, name: 'Мекленбург-Передня Померанія', hasInfo: false, path: '/germany/mecklenburg-vorpommern' },
         { id: 9, name: 'Нижня Саксонія', hasInfo: false, path: '/germany/lower-saxony' },
-        { id: 10, name: 'Північний Рейн-Вестфалія', hasInfo: true, path: '/germany/nrw'  },
+        { id: 10, name: 'Північний Рейн-Вестфалія', hasInfo: true, path: '/germany/nrw' },
         { id: 11, name: 'Рейнланд-Пфальц', hasInfo: false, path: '/germany/rhineland-pfalz' },
         { id: 12, name: 'Саар', hasInfo: false, path: '/germany/saarland' },
         { id: 13, name: 'Саксонія', hasInfo: false, path: '/germany/saxony' },
@@ -207,6 +213,13 @@ export const datas = [
         { id: 15, name: 'Шлезвіг-Гольштейн', hasInfo: false, path: '/germany/schleswig-holstein' },
         { id: 16, name: 'Тюрингія', hasInfo: false, path: '/germany/thuringia' }
       ]
+    },
+    meta: {
+      title: "Німеччина — інформація про країну, визначні місця та культура",
+      description: "Усе про країну Німеччина: столиця Берлін, географія, населення, мови, кухня, символи, історія та регіони.",
+      ogTitle: "Німеччина — інформація про країну та визначні місця",
+      ogDescription: "Детальна інформація про Німеччину: культура, символи, історія, регіони та цікаві факти.",
+      ogImage: "/de/Castle_Neuschwanstein.jpg"
     }
 
   }

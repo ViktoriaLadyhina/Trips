@@ -19,7 +19,6 @@ function App() {
           <Route path="/:countryPath/:regionsPath" element={<Regions />} />
           <Route path="/:countryPath/:regionsPath/:districtPath" element={<District />} />
           <Route path="/:countryPath/:regionsPath/:districtPath/:cityPath" element={<City />} />
-          
         </Route>
       </Routes>
     </>

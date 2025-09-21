@@ -1,10 +1,14 @@
 /* ===== Цвета для светлой темы ===== */
 :root {
   /* Общий фон страницы */
-  --color-body-bg: url('/background.jpg');
+  --color-body-bg: #f5f5f5;
 
   /* Фон страницы для sidebar */
-  --color-sidebar-bg: #FFE4B5;
+  --color-sidebar-bg:#ffddb3;
+
+  /* Цвет фона для карточек */
+  --color-cart-bg:  #f7f2e8;
+
 
   /* Цвет основного текста */
   --color-text: #333;
@@ -13,48 +17,78 @@
   --color-primary: #4CAF50;
 
   /* Цвет H1 заголовков */
-  --color-heading-h1: blue;
+  --color-heading-h1: #111;
 
   /* Цвет H2 заголовков */
   --color-heading-h2: red;
 
   /* Цвет H3 заголовков */
-  --color-heading-h3: blue;
+  --color-heading-h3: #222;
+
+  /* цвета текста sidebar */  
+  --color-sidebar-text: #333;
+
 }
 
 /* ===== Цвета для темной темы ===== */
 [data-theme='dark'] {
-  --color-body-bg: url('/background-dark.jpg');
+  --color-body-bg: #121212;
+  --color-cart-bg: #1e1e1e;
+  --color-sidebar-bg: #1a1a1a;
+
   --color-text: #eee;
   --color-primary: #4CAF50;
-  --color-heading-h1: #3399ff;
-  --color-heading-h2: #66ccff;
-  --color-heading-h3: #99ddff;
+  --color-heading-h1: #E0E0E0;
+  -color-heading-h2: red;
+  --color-heading-h3: #B3B3B3;
+  --color-sidebar-text: #eee;
 }
 
 /* ===== Миксины ===== */
 @mixin heading($size, $color-var, $weight: 700, $line-height: 1.2) {
   font-size: $size;
   color: var(#{$color-var});
-  font-family: 'Arial, sans-serif'; 
   font-weight: $weight;
   line-height: $line-height;
   margin: 0;
 }
-@mixin h1() { @include heading(49px, --color-heading-h1); }
-@mixin h2() { @include heading(32px, --color-heading-h2); }
-@mixin h3() { @include heading(28px, --color-heading-h3); }
+
+@mixin h1() {
+  @include heading(49px, --color-heading-h1);
+}
+
+@mixin h2() {
+  @include heading(32px, --color-heading-h2);
+}
+
+@mixin h3() {
+  @include heading(28px, --color-heading-h3);
+}
 
 @mixin text($size: 16px, $color-var: --color-text, $weight: 400, $line-height: 1.5) {
   font-size: $size;
   color: var(#{$color-var});
-  font-family: 'Arial, sans-serif';
   font-weight: $weight;
   line-height: $line-height;
   margin: 0;
 }
-@mixin body-text() { @include text(16px, --color-text, 400, 1.5); }
-@mixin small-text() { @include text(14px, --color-text, 400, 1.4); }
-@mixin medium-text() { @include text(18px, --color-text, 500, 1.6); }
-@mixin large-text() { @include text(20px, --color-text, 600, 1.6); }
-@mixin bold-text() { @include text(16px, --color-text, 700, 1.5); }
+
+@mixin body-text() {
+  @include text(16px, --color-text, 400, 1.5);
+}
+
+@mixin small-text() {
+  @include text(14px, --color-text, 400, 1.4);
+}
+
+@mixin medium-text() {
+  @include text(18px, --color-text, 500, 1.6);
+}
+
+@mixin large-text() {
+  @include text(20px, --color-text, 600, 1.6);
+}
+
+@mixin bold-text() {
+  @include text(16px, --color-text, 700, 1.5);
+}

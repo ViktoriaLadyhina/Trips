@@ -13,6 +13,48 @@
         text-align: center;
     }
 
+    &__button {
+        display: inline-block;
+        padding: 10px 20px;
+        margin: 10px 0;
+        font-size: 16px;
+        font-family: 'Inter', 'Roboto', 'Lato', 'Open Sans', sans-serif;
+        font-weight: 600;
+        color: var(--color-primary);
+        background-color: var(--color-cart-bg);
+        border: 2px solid var(--color-primary);
+        border-radius: 8px;
+        cursor: pointer;
+        text-decoration: none;
+        transition: all 0.3s ease, box-shadow 0.3s ease;
+
+        &:hover {
+            background-color: var(--color-primary);
+            color: var(--color-body-bg);
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+            transform: translateY(-2px);
+        }
+
+        /* Поддержка темной темы */
+        [data-theme='dark'] & {
+            background-color: var(--color-sidebar-bg);
+            color: var(--color-primary);
+            border: 2px solid var(--color-primary);
+
+            &:hover {
+                background-color: var(--color-primary);
+                color: var(--color-body-bg);
+                box-shadow: 0 4px 12px rgba(255, 255, 255, 0.2);
+            }
+        }
+
+        &--disabled {
+            cursor: default;
+            opacity: 0.6;
+            pointer-events: none;
+        }
+    }
+
     &__desc {
 
         &-general,
@@ -39,41 +81,42 @@
             }
         }
     }
-        &__notablePeople {
 
-            &-title {
-                @include h3();
-                padding: 20px;
-                text-align: center;
-            }
-
-            &-item {
-                margin-bottom: 5px;
-                text-align: left;
-
-                &__bold {
-                    @include bold-text;
-                    display: inline;
-                }
-
-                &__text {
-                    @include body-text;
-                    display: inline;
-                }
-            }
+    &__notablePeople {
+        &-title {
+            @include h3();
+            padding: 20px;
+            text-align: center;
         }
 
-        &-interestingFacts,
-        &__history {
-            &-title {
-                @include h3();
-                padding: 20px;
-                text-align: center;
+        &-item {
+            margin-bottom: 5px;
+            text-align: left;
+
+            &__bold {
+                @include bold-text;
+                display: inline;
             }
 
-            &-text {
+            &__text {
                 @include body-text;
-                text-align: justify;
+                display: inline;
             }
         }
     }
+
+    &__geography,
+    &__interestingFacts,
+    &__history {
+        &-title {
+            @include h3();
+            padding: 20px;
+            text-align: center;
+        }
+
+        &-text {
+            @include body-text;
+            text-align: justify;
+        }
+    }
+}
