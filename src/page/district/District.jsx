@@ -43,29 +43,39 @@ const District = () => {
     <div className='district'>
       <BreadCrumbs crumbs={crumbs} />
       <div className='district__container'>
-        <div className='district__title'>{district.title}</div>
-        <div className='district__map'>
-          <img src={`${BASE_PHOTO_URL}${district.currentMap}`} alt={`${district?.titel} map`} />
-        </div>
-        <div className='district__desc'>
-          <InfoBlock data={district?.desc?.history} className="district__history" />
-          <InfoBlock data={district?.desc?.area} className="district__area" />
-          <InfoBlock data={district?.desc?.population} className="district__population" />
-        </div>
-        <div className='district__list'>
-          {district?.subRegion?.map((subRegion) => (
-            <Region
-              key={subRegion.id}
-              data={subRegion}
-              countryPath={countryPath}
-              regionsPath={regionsPath}
-              districtPath={districtPath}
-            />
-          ))}
+        {district?.title && <div className='district__title'>{district.title}</div>}
 
+        {district?.currentMap && (
+          <div className='district__map'>
+            <img
+              src={`${BASE_PHOTO_URL}${district.currentMap}`}
+              alt={`${district?.title || 'district'} map`}
+            />
+          </div>
+        )}
+
+        <div className='district__desc'>
+          {district?.desc?.history && (<InfoBlock data={district.desc.history} className="district__history" />)}
+          {district?.desc?.area && (<InfoBlock data={district.desc.area} className="district__area" />)}
+          {district?.desc?.population && (<InfoBlock data={district.desc.population} className="district__population" />)}
         </div>
+
+        {district?.subRegion?.length > 0 && (
+          <div className='district__list'>
+            {district.subRegion.map((subRegion) => (
+              <Region
+                key={subRegion.id}
+                data={subRegion}
+                countryPath={countryPath}
+                regionsPath={regionsPath}
+                districtPath={districtPath}
+              />
+            ))}
+          </div>
+        )}
       </div>
     </div>
+
   )
 }
 

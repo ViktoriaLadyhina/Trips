@@ -516,7 +516,7 @@ const datas = {
                 { id: 13, name: 'Дуйсбург', hasInfo: false, patch: "duisburg", },
                 { id: 14, name: 'Дюссельдорф', hasInfo: false, patch: "duesseldorf", },
                 { id: 15, name: 'Золинген', hasInfo: false, patch: "solingen", },
-                { id: 16, name: 'Кёльн', hasInfo: false, patch: "koeln", },
+                { id: 16, name: 'Кёльн', hasInfo: true, patch: "koeln", },
                 { id: 17, name: 'Крефельд', hasInfo: false, patch: "krefeld", },
                 { id: 18, name: 'Леверкузен', hasInfo: false, patch: "leverkusen", },
                 { id: 19, name: 'Мёнхенгладбах', hasInfo: false, patch: "moenchengladbach", },

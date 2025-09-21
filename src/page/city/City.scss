@@ -83,7 +83,6 @@
     }
 
     &__notablePeople {
-
         &-title {
             @include h3();
             padding: 20px;
@@ -106,7 +105,8 @@
         }
     }
 
-    &-interestingFacts,
+    &__geography,
+    &__interestingFacts,
     &__history {
         &-title {
             @include h3();
