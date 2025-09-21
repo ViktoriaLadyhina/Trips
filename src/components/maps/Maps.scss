@@ -1,0 +1,44 @@
+.map-container {
+  width: 100%;
+  height: auto;;
+  margin: 0 auto;
+  overflow: visible;
+
+  svg {
+    width: 100%;
+    height: auto;
+
+    path {
+      fill: #d9e6f2;
+      stroke: #333;
+      transition: fill 0.3s;
+      transition: stroke-width 0.3s, fill 0.3s;
+
+      &.interactive {
+        cursor: pointer;
+
+        &:hover {
+          fill: #6ca0dc;
+          stroke-width: 2;
+        }
+      }
+
+      &.disabled {
+        cursor: default;
+
+        &:hover {
+          stroke-width: 2;
+          stroke: #999;
+        }
+      }
+    }
+
+    text {
+      font-size: 14px; // увеличить, если мелко
+      font-weight: 700;
+      fill: #0d3b66;
+      text-anchor: middle; // по центру
+      pointer-events: none; // чтобы не мешали клику на path
+    }
+  }
+}

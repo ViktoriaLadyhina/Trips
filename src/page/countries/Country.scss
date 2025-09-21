@@ -7,6 +7,15 @@
         padding: 5px;
     }
 
+    &__map {
+        max-width: 600px;
+        margin: 0 auto;
+    }
+
+    &__breadcrumbs {
+        margin-bottom: 15px;
+    }
+
     &__title {
         @include h1();
         margin-bottom: 20px;
@@ -71,8 +80,8 @@
             transition: box-shadow 0.3s ease;
 
             [data-theme='dark'] & {
-                box-shadow: 0 0 15px rgba(255, 255, 255, 0.1); 
-                border-radius: 8px; 
+                box-shadow: 0 0 15px rgba(255, 255, 255, 0.1);
+                border-radius: 8px;
             }
 
             &:hover {
@@ -115,6 +124,14 @@
         background-color: var(--color-sidebar-bg);
         margin: 0 20px 20px 0;
         color: var(--color-sidebar-text);
+
+        &-toggle {
+            display: none;
+            cursor: pointer;
+            font-size: 24px;
+            padding: 10px;
+            user-select: none;
+        }
 
         &-title {
             @include h3();
@@ -159,12 +176,32 @@
     }
 }
 
-// На мобильных убираем
+
 @media (max-width: 768px) {
 
-    .germany__castle,
-    .germany__castle--right,
-    .germany__history-img {
+    .country__photo,
+    .country__photo--right,
+    .country__history-img {
         display: none;
+    }
+
+    .country__sidebar-toggle {
+        display: block; // показываем кнопку
+    }
+
+    .country__sidebar {
+        &> :not(.country__sidebar-toggle) {
+            display: none;
+        }
+
+        &.mobile-open> :not(.country__sidebar-toggle) {
+            display: block;
+        }
+    }
+}
+
+@media (max-width: 500px) {
+    .country__breadcrumbs {
+        display: block;
     }
 }

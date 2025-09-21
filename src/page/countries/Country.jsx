@@ -1,5 +1,6 @@
 import { useSelector } from 'react-redux';
 import { Link, useParams } from 'react-router';
+import { useState } from 'react';
 
 import { datas as countriesUa } from '../../datas/ua/country';
 import { datas as countriesRu } from '../../datas/ru/country';
@@ -9,14 +10,17 @@ import BreadCrumbs from '../../components/breadCrumbs/BreadCrumbs';
 import InfoBlock from '../../components/InfoBlock/InfoBlock';
 import { photosByCountry } from "../../datas/fotos";
 import { useMeta } from '../../hooks/useMeta';
+import CountryMap from '../../components/maps/CountryMap'
 
 import './Country.scss'
+
 
 const BASE_PHOTO_URL = import.meta.env.VITE_BASE_PHOTO_URL;
 
 const Country = () => {
     const { countryPath } = useParams();
     const { lang } = useSelector((state) => state.language);
+    const [sidebarOpen, setSidebarOpen] = useState(false);
 
     // выбираем данные в зависимости от языка
     const countries = lang === 'ua' ? countriesUa : lang === 'de' ? countriesDe : countriesRu;
@@ -37,38 +41,48 @@ const Country = () => {
         { label: country?.country }
     ];
 
+
     return (
         <div className="country">
             {/* Сайдбар */}
-            {country.regions && (
-                <aside className="country__sidebar">
-                    <h2 className="country__sidebar-title">{country.regions.title}</h2>
-                    <ul className="country__sidebar-list">
-                        {country.regions.items?.map(state => (
-                            <li key={state.id} className="country__sidebar-item">
-                                {state.hasInfo ? (
-                                    <Link to={`/${countryPath}/${state.path}`} className="country__sidebar-link">
-                                        {state.name}
-                                    </Link>
-                                ) : (
-                                    <span className="country__sidebar-link country__sidebar-link--disabled">
-                                        {state.name}
-                                    </span>
-                                )}
-                            </li>
-                        ))}
-                    </ul>
-                </aside>
-            )}
+            <aside className={`country__sidebar ${sidebarOpen ? "mobile-open" : ""}`}>
+                {/* Кнопка-гамбургер на мобильных */}
+                <div className="country__sidebar-toggle" onClick={() => setSidebarOpen(!sidebarOpen)}>☰</div>
+
+                {/* Заголовок и список */}
+                <h2 className="country__sidebar-title">{country.regions.title}</h2>
+                <ul className={`country__sidebar-list ${sidebarOpen ? "active" : ""}`}>
+                    {country.regions.items?.map((state) => (
+                        <li key={state.id} className="country__sidebar-item">
+                            {state.hasInfo ? (
+                                <Link
+                                    to={`/${countryPath}/${state.path}`}
+                                    className="country__sidebar-link"
+                                >
+                                    {state.name}
+                                </Link>
+                            ) : (
+                                <span className="country__sidebar-link country__sidebar-link--disabled">
+                                    {state.name}
+                                </span>
+                            )}
+                        </li>
+                    ))}
+                </ul>
+            </aside>
 
             {/* Основной контент */}
+
             <div className="country__content">
-                <BreadCrumbs crumbs={crumbs} />
+                <div className="country__breadcrumbs"> <BreadCrumbs crumbs={crumbs} /></div>
                 <h1 className="country__title">{country?.country}</h1>
 
-                {country.currentMap && (
-                    <img src={`${BASE_PHOTO_URL}${country.currentMap}`} alt={`${country?.country} map`} />
-                )}
+                <div className='country__map'>
+                    <CountryMap
+                        countryKey={country.path}
+                        regions={country.regions}
+                    />
+                </div>
 
                 {country.desc?.capital && <InfoBlock data={country.desc.capital} className="country__capital" />}
                 {photos.countries[0] && (<img src={`${BASE_PHOTO_URL}${photos.countries[0].path}`} alt={photos.countries[0].title} className="country__photo" />)}
