@@ -92,3 +92,14 @@
     }
   }
 }
+
+@media (max-width: 500px) {
+  .breadCrumbs {
+    display: block;
+    padding-top: 45px;
+
+    ul, li {
+      display: block; 
+    }
+  }
+}

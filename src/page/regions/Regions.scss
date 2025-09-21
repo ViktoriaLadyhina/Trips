@@ -103,6 +103,14 @@
         margin: 0 20px 20px 0;
         color: var(--color-sidebar-text);
 
+                &-toggle {
+            display: none;
+            cursor: pointer;
+            font-size: 24px;
+            padding: 10px;
+            user-select: none;
+        }
+
         &-title {
             @include h3();
             padding: 5px;
@@ -150,9 +158,22 @@
 // На мобильных убираем
 @media (max-width: 768px) {
 
-    .germany__castle,
-    .germany__castle--right,
-    .germany__history-img {
+    .regions__foto,
+    .regions__foto--right {
         display: none;
+    }
+
+    .regions__sidebar-toggle {
+        display: block; // показываем кнопку
+    }
+
+    .regions__sidebar {
+        &> :not(.regions__sidebar-toggle) {
+            display: none;
+        }
+
+        &.mobile-open> :not(.regions__sidebar-toggle) {
+            display: block;
+        }
     }
 }

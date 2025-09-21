@@ -10,12 +10,14 @@ import InfoBlock from '../../components/InfoBlock/InfoBlock';
 import BreadCrumbs from '../../components/breadCrumbs/BreadCrumbs';
 import { useMeta } from '../../hooks/useMeta';
 import './Regions.scss'
+import { useState } from 'react';
 
 const BASE_PHOTO_URL = import.meta.env.VITE_BASE_PHOTO_URL;
 
 const Regions = () => {
     const { countryPath, regionsPath } = useParams();
     const { lang } = useSelector((state) => state.language);
+    const [sidebarOpen, setSidebarOpen] = useState(false);
 
     const allRegions = lang === 'ua' ? uaRegions : lang === 'de' ? deRegions : ruRegions;
 
@@ -37,12 +39,13 @@ const Regions = () => {
     return (
         <div className='regions'>
 
-            <aside className="regions__sidebar">
+            <aside className={`regions__sidebar ${sidebarOpen ? "mobile-open" : ""}`}>
+                <div className="regions__sidebar-toggle" onClick={() => setSidebarOpen(!sidebarOpen)}>☰</div>
                 {/* Административные округа */}
                 {region.discriptRegions[0] && (
                     <div>
                         <h2 className="regions__sidebar-title">{region.discriptRegions[0].title}</h2>
-                        <ul className="regions__sidebar-list">
+                        <ul className={`regions__sidebar-list ${sidebarOpen ? "active" : ""}`}>
                             {region.discriptRegions[0]?.items?.map((district) => (
                                 <li key={district.id} className="regions__sidebar-item">
                                     {district.hasInfo ? (
