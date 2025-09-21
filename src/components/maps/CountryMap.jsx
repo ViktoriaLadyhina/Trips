@@ -1,9 +1,10 @@
 import React from "react";
 import GermanyMap from "./germany/Germany";
+import UkraineMap from './ukraine/Ukraine'
 
 const maps = {
   germany: GermanyMap,
-  // ukraine: UkraineMap,
+  ukraine: UkraineMap,
 };
 
 export default function CountryMap({ countryKey, regions }) {
