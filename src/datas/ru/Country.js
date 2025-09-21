@@ -3,7 +3,6 @@ export const datas = [
     id: 1,
     path: 'ukraine',
     country: 'Украина',
-    currentMap: "",
     imagePath: '/ukr/sofiyskiy.jpg',
     desc: {
       capital: [
@@ -76,35 +75,36 @@ export const datas = [
     regions: {
       title: "Области Украины",
       items: [
-        { id: 1, name: 'Винницкая область', path: 'vinnytska', hasInfo: false },
-        { id: 2, name: 'Волынская область', path: 'volynska', hasInfo: false },
-        { id: 3, name: 'Днепропетровская область', path: 'dnepropetrovska', hasInfo: false },
-        { id: 4, name: 'Донецкая область', path: 'donetska', hasInfo: false },
-        { id: 5, name: 'Житомирская область', path: 'zhytomyrska', hasInfo: false },
-        { id: 6, name: 'Закарпатская область', path: 'zakarpatska', hasInfo: false },
-        { id: 7, name: 'Запорожская область', path: 'zaporizka', hasInfo: false },
-        { id: 8, name: 'Ивано-Франковская область', path: 'ivano-frankivska', hasInfo: false },
-        { id: 9, name: 'Киевская область', path: 'kyivska', hasInfo: false },
-        { id: 10, name: 'Кировоградская область', path: 'kirovohradska', hasInfo: false },
-        { id: 11, name: 'Луганская область', path: 'luganska', hasInfo: false },
-        { id: 12, name: 'Львовская область', path: 'lvivska', hasInfo: false },
-        { id: 13, name: 'Николаевская область', path: 'mykolaivska', hasInfo: false },
-        { id: 14, name: 'Одесская область', path: 'odeska', hasInfo: false },
-        { id: 15, name: 'Полтавская область', path: 'poltavska', hasInfo: false },
-        { id: 16, name: 'Ровенская область', path: 'rovenska', hasInfo: false },
-        { id: 17, name: 'Сумская область', path: 'sumska', hasInfo: false },
-        { id: 18, name: 'Тернопольская область', path: 'ternopilska', hasInfo: false },
-        { id: 19, name: 'Харьковская область', path: 'kharkivska', hasInfo: false },
-        { id: 20, name: 'Херсонская область', path: 'khersonska', hasInfo: false },
-        { id: 21, name: 'Хмельницкая область', path: 'khmelnytska', hasInfo: false },
-        { id: 22, name: 'Черкасская область', path: 'cherkaska', hasInfo: false },
-        { id: 23, name: 'Черниговская область', path: 'chernihivska', hasInfo: false },
-        { id: 24, name: 'Черновицкая область', path: 'chernivetska', hasInfo: false },
-        { id: 25, name: 'Киев (город со спец. статусом)', path: 'kyiv', hasInfo: false },
-        { id: 26, name: 'Севастополь (город со спец. статусом)', path: 'sevastopol', hasInfo: false },
-        { id: 27, name: 'Автономная Республика Крым', path: 'crimea', hasInfo: false }
+        { id: 1, name: 'Винницкая область', path: 'vinnytska', hasInfo: false, svgId: "vinnytsia" },
+        { id: 2, name: 'Волынская область', path: 'volynska', hasInfo: false, svgId: "volyn" },
+        { id: 3, name: 'Днепропетровская область', path: 'dnepropetrovska', hasInfo: false, svgId: "dnipropetrovsk" },
+        { id: 4, name: 'Донецкая область', path: 'donetska', hasInfo: false, svgId: "donetsk" },
+        { id: 5, name: 'Житомирская область', path: 'zhytomyrska', hasInfo: false, svgId: "zhytomyr" },
+        { id: 6, name: 'Закарпатская область', path: 'zakarpatska', hasInfo: false, svgId: "zakarpattia" },
+        { id: 7, name: 'Запорожская область', path: 'zaporizka', hasInfo: false, svgId: "zaporizhia" },
+        { id: 8, name: 'Ивано-Франковская область', path: 'ivano-frankivska', hasInfo: false, svgId: "ivano-frankivsk" },
+        { id: 9, name: 'Киевская область', path: 'kyivska', hasInfo: false, svgId: "kyiv" },
+        { id: 10, name: 'Кировоградская область', path: 'kirovohradska', hasInfo: false, svgId: "kirovohrad" },
+        { id: 11, name: 'Луганская область', path: 'luganska', hasInfo: false, svgId: "luhansk" },
+        { id: 12, name: 'Львовская область', path: 'lvivska', hasInfo: false, svgId: "lviv" },
+        { id: 13, name: 'Николаевская область', path: 'mykolaivska', hasInfo: false, svgId: "mykolaiv" },
+        { id: 14, name: 'Одесская область', path: 'odeska', hasInfo: false, svgId: "odessa" },
+        { id: 15, name: 'Полтавская область', path: 'poltavska', hasInfo: false, svgId: "poltava" },
+        { id: 16, name: 'Ровенская область', path: 'rovenska', hasInfo: false, svgId: "rivne" },
+        { id: 17, name: 'Сумская область', path: 'sumska', hasInfo: false, svgId: "sumy" },
+        { id: 18, name: 'Тернопольская область', path: 'ternopilska', hasInfo: false, svgId: "ternopil" },
+        { id: 19, name: 'Харьковская область', path: 'kharkivska', hasInfo: false, svgId: "kharkiv" },
+        { id: 20, name: 'Херсонская область', path: 'khersonska', hasInfo: false, svgId: "kherson" },
+        { id: 21, name: 'Хмельницкая область', path: 'khmelnytska', hasInfo: false, svgId: "khmelnytskyi" },
+        { id: 22, name: 'Черкасская область', path: 'cherkaska', hasInfo: false, svgId: "cherkasy" },
+        { id: 23, name: 'Черниговская область', path: 'chernihivska', hasInfo: false, svgId: "chernihiv" },
+        { id: 24, name: 'Черновицкая область', path: 'chernivetska', hasInfo: false, svgId: "chernivtsi" },
+        { id: 25, name: 'Киев', path: 'kyiv', hasInfo: false, svgId: "kyiv-city" },
+        { id: 26, name: 'Севастополь', path: 'sevastopol', hasInfo: false, svgId: "sevastopol" },
+        { id: 27, name: 'Автономная Республика Крым', path: 'crimea', hasInfo: false, svgId: "crimea" }
       ]
-    },
+    }
+    ,
     meta: {
       title: "Украина — информация о стране, достопримечательности и культура",
       description: "Все о стране Украина: столица Киев, география, население, языки, кухня, праздники и краткая история.",
@@ -192,26 +192,26 @@ export const datas = [
       ]
     },
     regions: {
-  title: "Земли Германии",
-  items: [
-    { id: 1, name: 'Баден-Вюртемберг', hasInfo: false, path: 'baden-wuerttemberg', svgId: "bw" },
-    { id: 2, name: 'Бавария', hasInfo: false, path: 'bavaria', svgId: "by" },
-    { id: 3, name: 'Берлин', hasInfo: false, path: 'berlin', svgId: "be" },
-    { id: 4, name: 'Бранденбург', hasInfo: false, path: 'brandenburg', svgId: "bb" },
-    { id: 5, name: 'Бремен', hasInfo: false, path: 'bremen', svgId: "hb" },
-    { id: 6, name: 'Гамбург', hasInfo: false, path: 'hamburg', svgId: "hh" },
-    { id: 7, name: 'Гессен', hasInfo: false, path: 'hessen', svgId: "he" },
-    { id: 8, name: 'Мекленбург-Передняя Померания', hasInfo: false, path: 'mecklenburg-vorpommern', svgId: "mv" },
-    { id: 9, name: 'Нижняя Саксония', hasInfo: false, path: 'lower-saxony', svgId: "ni" },
-    { id: 10, name: 'Северный Рейн-Вестфалия', hasInfo: true, path: 'nrw', svgId: "nw" },
-    { id: 11, name: 'Рейнланд-Пфальц', hasInfo: false, path: 'rhineland-pfalz', svgId: "rp" },
-    { id: 12, name: 'Саар', hasInfo: false, path: 'saarland', svgId: "sl" },
-    { id: 13, name: 'Саксония', hasInfo: false, path: 'saxony', svgId: "sn" },
-    { id: 14, name: 'Саксония-Анхальт', hasInfo: false, path: 'saxony-anhalt', svgId: "st" },
-    { id: 15, name: 'Шлезвиг-Гольштейн', hasInfo: false, path: 'schleswig-holstein', svgId: "sh" },
-    { id: 16, name: 'Тюрингия', hasInfo: false, path: 'thuringia', svgId: "th" }
-  ]
-},
+      title: "Земли Германии",
+      items: [
+        { id: 1, name: 'Баден-Вюртемберг', hasInfo: false, path: 'baden-wuerttemberg', svgId: "bw" },
+        { id: 2, name: 'Бавария', hasInfo: false, path: 'bavaria', svgId: "by" },
+        { id: 3, name: 'Берлин', hasInfo: false, path: 'berlin', svgId: "be" },
+        { id: 4, name: 'Бранденбург', hasInfo: false, path: 'brandenburg', svgId: "bb" },
+        { id: 5, name: 'Бремен', hasInfo: false, path: 'bremen', svgId: "hb" },
+        { id: 6, name: 'Гамбург', hasInfo: false, path: 'hamburg', svgId: "hh" },
+        { id: 7, name: 'Гессен', hasInfo: false, path: 'hessen', svgId: "he" },
+        { id: 8, name: 'Мекленбург-Передняя Померания', hasInfo: false, path: 'mecklenburg-vorpommern', svgId: "mv" },
+        { id: 9, name: 'Нижняя Саксония', hasInfo: false, path: 'lower-saxony', svgId: "ni" },
+        { id: 10, name: 'Северный Рейн-Вестфалия', hasInfo: true, path: 'nrw', svgId: "nw" },
+        { id: 11, name: 'Рейнланд-Пфальц', hasInfo: false, path: 'rhineland-pfalz', svgId: "rp" },
+        { id: 12, name: 'Саар', hasInfo: false, path: 'saarland', svgId: "sl" },
+        { id: 13, name: 'Саксония', hasInfo: false, path: 'saxony', svgId: "sn" },
+        { id: 14, name: 'Саксония-Анхальт', hasInfo: false, path: 'saxony-anhalt', svgId: "st" },
+        { id: 15, name: 'Шлезвиг-Гольштейн', hasInfo: false, path: 'schleswig-holstein', svgId: "sh" },
+        { id: 16, name: 'Тюрингия', hasInfo: false, path: 'thuringia', svgId: "th" }
+      ]
+    },
     meta: {
       title: "Германия — информация о стране, достопримечательности и культура",
       description: "Все о стране Германия: столица Берлин, география, население, языки, кухня, символы, история и регионы.",
@@ -219,6 +219,5 @@ export const datas = [
       ogDescription: "Подробная информация о стране Германия: культура, символы, история, регионы и интересные факты.",
       ogImage: "/de/Castle_Neuschwanstein.jpg"
     }
-
   }
 ];
