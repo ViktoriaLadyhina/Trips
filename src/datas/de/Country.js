@@ -118,7 +118,6 @@ export const datas = [
     id: 2,
     path: 'germany',
     country: 'Deutschland',
-    currentMap: "Germania/karta.gif",
     imagePath: '/de/Castle_Neuschwanstein.jpg',
     desc: {
       capital: [
@@ -196,24 +195,25 @@ export const datas = [
     regions: {
       title: "Bundesländer Deutschlands",
       items: [
-        { id: 1, name: 'Baden-Württemberg', hasInfo: false, path: '/germany/baden-wuerttemberg' },
-        { id: 2, name: 'Bayern', hasInfo: false, path: '/germany/bavaria' },
-        { id: 3, name: 'Berlin', hasInfo: false, path: '/germany/berlin' },
-        { id: 4, name: 'Brandenburg', hasInfo: false, path: '/germany/brandenburg' },
-        { id: 5, name: 'Bremen', hasInfo: false, path: '/germany/bremen' },
-        { id: 6, name: 'Hamburg', hasInfo: false, path: '/germany/hamburg' },
-        { id: 7, name: 'Hessen', hasInfo: false, path: '/germany/hessen' },
-        { id: 8, name: 'Mecklenburg-Vorpommern', hasInfo: false, path: '/germany/mecklenburg-vorpommern' },
-        { id: 9, name: 'Niedersachsen', hasInfo: false, path: '/germany/lower-saxony' },
-        { id: 10, name: 'Nordrhein-Westfalen', hasInfo: true, path: '/germany/nrw' },
-        { id: 11, name: 'Rheinland-Pfalz', hasInfo: false, path: '/germany/rhineland-pfalz' },
-        { id: 12, name: 'Saarland', hasInfo: false, path: '/germany/saarland' },
-        { id: 13, name: 'Sachsen', hasInfo: false, path: '/germany/saxony' },
-        { id: 14, name: 'Sachsen-Anhalt', hasInfo: false, path: '/germany/saxony-anhalt' },
-        { id: 15, name: 'Schleswig-Holstein', hasInfo: false, path: '/germany/schleswig-holstein' },
-        { id: 16, name: 'Thüringen', hasInfo: false, path: '/germany/thuringia' }
+        { id: 1, name: 'Baden-Württemberg', hasInfo: false, path: '/germany/baden-wuerttemberg', svgId: 'bw' },
+        { id: 2, name: 'Bayern', hasInfo: false, path: '/germany/bavaria', svgId: 'by' },
+        { id: 3, name: 'Berlin', hasInfo: false, path: '/germany/berlin', svgId: 'be' },
+        { id: 4, name: 'Brandenburg', hasInfo: false, path: '/germany/brandenburg', svgId: 'bb' },
+        { id: 5, name: 'Bremen', hasInfo: false, path: '/germany/bremen', svgId: 'hb' },
+        { id: 6, name: 'Hamburg', hasInfo: false, path: '/germany/hamburg', svgId: 'hh' },
+        { id: 7, name: 'Hessen', hasInfo: false, path: '/germany/hessen', svgId: 'he' },
+        { id: 8, name: 'Mecklenburg-Vorpommern', hasInfo: false, path: '/germany/mecklenburg-vorpommern', svgId: 'mv' },
+        { id: 9, name: 'Niedersachsen', hasInfo: false, path: '/germany/lower-saxony', svgId: 'ni' },
+        { id: 10, name: 'Nordrhein-Westfalen', hasInfo: true, path: '/germany/nrw', svgId: 'nw' },
+        { id: 11, name: 'Rheinland-Pfalz', hasInfo: false, path: '/germany/rhineland-pfalz', svgId: 'rp' },
+        { id: 12, name: 'Saarland', hasInfo: false, path: '/germany/saarland', svgId: 'sl' },
+        { id: 13, name: 'Sachsen', hasInfo: false, path: '/germany/saxony', svgId: 'sn' },
+        { id: 14, name: 'Sachsen-Anhalt', hasInfo: false, path: '/germany/saxony-anhalt', svgId: 'st' },
+        { id: 15, name: 'Schleswig-Holstein', hasInfo: false, path: '/germany/schleswig-holstein', svgId: 'sh' },
+        { id: 16, name: 'Thüringen', hasInfo: false, path: '/germany/thuringia', svgId: 'th' }
       ]
-    },
+    }
+    ,
     meta: {
       title: "Deutschland — Informationen über das Land, Sehenswürdigkeiten und Kultur",
       description: "Alles über Deutschland: Hauptstadt Berlin, Geografie, Bevölkerung, Sprachen, Küche, Symbole, Geschichte und Regionen.",

@@ -5,12 +5,15 @@ import { datas as countriesUa } from '../../datas/ua/country';
 import { datas as countriesRu } from '../../datas/ru/country';
 import { datas as countriesDe } from '../../datas/de/country';
 
+
 import BreadCrumbs from '../../components/breadCrumbs/BreadCrumbs';
 import InfoBlock from '../../components/InfoBlock/InfoBlock';
 import { photosByCountry } from "../../datas/fotos";
 import { useMeta } from '../../hooks/useMeta';
+import CountryMap from '../../components/maps/CountryMap'
 
 import './Country.scss'
+
 
 const BASE_PHOTO_URL = import.meta.env.VITE_BASE_PHOTO_URL;
 
@@ -36,6 +39,7 @@ const Country = () => {
         },
         { label: country?.country }
     ];
+    
 
     return (
         <div className="country">
@@ -66,9 +70,10 @@ const Country = () => {
                 <BreadCrumbs crumbs={crumbs} />
                 <h1 className="country__title">{country?.country}</h1>
 
-                {country.currentMap && (
-                    <img src={`${BASE_PHOTO_URL}${country.currentMap}`} alt={`${country?.country} map`} />
-                )}
+                <CountryMap
+                    countryKey={country.path}
+                    regions={country.regions}
+                />
 
                 {country.desc?.capital && <InfoBlock data={country.desc.capital} className="country__capital" />}
                 {photos.countries[0] && (<img src={`${BASE_PHOTO_URL}${photos.countries[0].path}`} alt={photos.countries[0].title} className="country__photo" />)}

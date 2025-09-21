@@ -117,7 +117,6 @@ export const datas = [
     id: 2,
     path: 'germany',
     country: 'Германия',
-    currentMap: "Germania/karta.gif",
     imagePath: '/de/Castle_Neuschwanstein.jpg',
     desc: {
       capital: [
@@ -193,26 +192,26 @@ export const datas = [
       ]
     },
     regions: {
-      title: "Земли Германии",
-      items: [
-        { id: 1, name: 'Баден-Вюртемберг', hasInfo: false, path: 'baden-wuerttemberg' },
-        { id: 2, name: 'Бавария', hasInfo: false, path: 'bavaria' },
-        { id: 3, name: 'Берлин', hasInfo: false, path: 'berlin' },
-        { id: 4, name: 'Бранденбург', hasInfo: false, path: 'brandenburg' },
-        { id: 5, name: 'Бремен', hasInfo: false, path: 'bremen' },
-        { id: 6, name: 'Гамбург', hasInfo: false, path: 'hamburg' },
-        { id: 7, name: 'Гессен', hasInfo: false, path: 'hessen' },
-        { id: 8, name: 'Мекленбург-Передняя Померания', hasInfo: false, path: 'mecklenburg-vorpommern' },
-        { id: 9, name: 'Нижняя Саксония', hasInfo: false, path: 'lower-saxony' },
-        { id: 10, name: 'Северный Рейн-Вестфалия', hasInfo: true, path: 'nrw' },
-        { id: 11, name: 'Рейнланд-Пфальц', hasInfo: false, path: 'rhineland-pfalz' },
-        { id: 12, name: 'Саар', hasInfo: false, path: 'saarland' },
-        { id: 13, name: 'Саксония', hasInfo: false, path: 'saxony' },
-        { id: 14, name: 'Саксония-Анхальт', hasInfo: false, path: 'saxony-anhalt' },
-        { id: 15, name: 'Шлезвиг-Гольштейн', hasInfo: false, path: 'schleswig-holstein' },
-        { id: 16, name: 'Тюрингия', hasInfo: false, path: 'thuringia' }
-      ]
-    },
+  title: "Земли Германии",
+  items: [
+    { id: 1, name: 'Баден-Вюртемберг', hasInfo: false, path: 'baden-wuerttemberg', svgId: "bw" },
+    { id: 2, name: 'Бавария', hasInfo: false, path: 'bavaria', svgId: "by" },
+    { id: 3, name: 'Берлин', hasInfo: false, path: 'berlin', svgId: "be" },
+    { id: 4, name: 'Бранденбург', hasInfo: false, path: 'brandenburg', svgId: "bb" },
+    { id: 5, name: 'Бремен', hasInfo: false, path: 'bremen', svgId: "hb" },
+    { id: 6, name: 'Гамбург', hasInfo: false, path: 'hamburg', svgId: "hh" },
+    { id: 7, name: 'Гессен', hasInfo: false, path: 'hessen', svgId: "he" },
+    { id: 8, name: 'Мекленбург-Передняя Померания', hasInfo: false, path: 'mecklenburg-vorpommern', svgId: "mv" },
+    { id: 9, name: 'Нижняя Саксония', hasInfo: false, path: 'lower-saxony', svgId: "ni" },
+    { id: 10, name: 'Северный Рейн-Вестфалия', hasInfo: true, path: 'nrw', svgId: "nw" },
+    { id: 11, name: 'Рейнланд-Пфальц', hasInfo: false, path: 'rhineland-pfalz', svgId: "rp" },
+    { id: 12, name: 'Саар', hasInfo: false, path: 'saarland', svgId: "sl" },
+    { id: 13, name: 'Саксония', hasInfo: false, path: 'saxony', svgId: "sn" },
+    { id: 14, name: 'Саксония-Анхальт', hasInfo: false, path: 'saxony-anhalt', svgId: "st" },
+    { id: 15, name: 'Шлезвиг-Гольштейн', hasInfo: false, path: 'schleswig-holstein', svgId: "sh" },
+    { id: 16, name: 'Тюрингия', hasInfo: false, path: 'thuringia', svgId: "th" }
+  ]
+},
     meta: {
       title: "Германия — информация о стране, достопримечательности и культура",
       description: "Все о стране Германия: столица Берлин, география, население, языки, кухня, символы, история и регионы.",

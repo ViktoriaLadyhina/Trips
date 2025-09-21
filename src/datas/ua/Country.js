@@ -118,7 +118,6 @@ export const datas = [
     id: 2,
     path: 'germany',
     country: 'Німеччина',
-    currentMap: "Germania/karta.gif",
     imagePath: '/de/Castle_Neuschwanstein.jpg',
     desc: {
       capital: [
@@ -196,22 +195,22 @@ export const datas = [
     regions: {
       title: "Землі Німеччини",
       items: [
-        { id: 1, name: 'Баден-Вюртемберг', hasInfo: false, path: '/germany/baden-wuerttemberg' },
-        { id: 2, name: 'Баварія', hasInfo: false, path: '/germany/bavaria' },
-        { id: 3, name: 'Берлін', hasInfo: false, path: '/germany/berlin' },
-        { id: 4, name: 'Бранденбург', hasInfo: false, path: '/germany/brandenburg' },
-        { id: 5, name: 'Бремен', hasInfo: false, path: '/germany/bremen' },
-        { id: 6, name: 'Гамбург', hasInfo: false, path: '/germany/hamburg' },
-        { id: 7, name: 'Гессен', hasInfo: false, path: '/germany/hessen' },
-        { id: 8, name: 'Мекленбург-Передня Померанія', hasInfo: false, path: '/germany/mecklenburg-vorpommern' },
-        { id: 9, name: 'Нижня Саксонія', hasInfo: false, path: '/germany/lower-saxony' },
-        { id: 10, name: 'Північний Рейн-Вестфалія', hasInfo: true, path: '/germany/nrw' },
-        { id: 11, name: 'Рейнланд-Пфальц', hasInfo: false, path: '/germany/rhineland-pfalz' },
-        { id: 12, name: 'Саар', hasInfo: false, path: '/germany/saarland' },
-        { id: 13, name: 'Саксонія', hasInfo: false, path: '/germany/saxony' },
-        { id: 14, name: 'Саксонія-Ангальт', hasInfo: false, path: '/germany/saxony-anhalt' },
-        { id: 15, name: 'Шлезвіг-Гольштейн', hasInfo: false, path: '/germany/schleswig-holstein' },
-        { id: 16, name: 'Тюрингія', hasInfo: false, path: '/germany/thuringia' }
+        { id: 1, name: 'Баден-Вюртемберг', hasInfo: false, path: '/germany/baden-wuerttemberg', svgId: 'bw' },
+        { id: 2, name: 'Баварія', hasInfo: false, path: '/germany/bavaria', svgId: 'by' },
+        { id: 3, name: 'Берлін', hasInfo: false, path: '/germany/berlin', svgId: 'be' },
+        { id: 4, name: 'Бранденбург', hasInfo: false, path: '/germany/brandenburg', svgId: 'bb' },
+        { id: 5, name: 'Бремен', hasInfo: false, path: '/germany/bremen', svgId: 'hb' },
+        { id: 6, name: 'Гамбург', hasInfo: false, path: '/germany/hamburg', svgId: 'hh' },
+        { id: 7, name: 'Гессен', hasInfo: false, path: '/germany/hessen', svgId: 'he' },
+        { id: 8, name: 'Мекленбург-Передня Померанія', hasInfo: false, path: '/germany/mecklenburg-vorpommern', svgId: 'mv' },
+        { id: 9, name: 'Нижня Саксонія', hasInfo: false, path: '/germany/lower-saxony', svgId: 'ni' },
+        { id: 10, name: 'Північний Рейн-Вестфалія', hasInfo: true, path: '/germany/nrw', svgId: 'nw' },
+        { id: 11, name: 'Рейнланд-Пфальц', hasInfo: false, path: '/germany/rhineland-pfalz', svgId: 'rp' },
+        { id: 12, name: 'Саар', hasInfo: false, path: '/germany/saarland', svgId: 'sl' },
+        { id: 13, name: 'Саксонія', hasInfo: false, path: '/germany/saxony', svgId: 'sn' },
+        { id: 14, name: 'Саксонія-Ангальт', hasInfo: false, path: '/germany/saxony-anhalt', svgId: 'st' },
+        { id: 15, name: 'Шлезвіг-Гольштейн', hasInfo: false, path: '/germany/schleswig-holstein', svgId: 'sh' },
+        { id: 16, name: 'Тюрингія', hasInfo: false, path: '/germany/thuringia', svgId: 'th' }
       ]
     },
     meta: {
