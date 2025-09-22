@@ -33,22 +33,20 @@
     &__climate,
     &__tourism,
     &__cuisine,
-    &__entry {
-        text-align: justify;
-        padding: 3px;
-
-        &__bold {
-            @include bold-text;
-        }
-
-        &__text {
-            @include body-text;
-        }
-    }
-
+    &__entry,
     &__history,
     &__symbols,
     &__holidays {
+        text-align: justify;
+        padding: 3px;
+
+        &-bold {
+            @include bold-text;
+        }
+
+        &_-text {
+            @include body-text;
+        }
 
         &-title {
             @include h3();
@@ -56,37 +54,11 @@
             text-align: center;
         }
 
-        &-text {
-            @include body-text;
-            text-align: justify;
-        }
-
-        &-bold {
-            @include bold-text;
-            text-align: justify;
-        }
-
         &-item {
             display: flex;
             align-items: flex-start;
-            gap: 10px;
-            margin-bottom: 15px;
-        }
-
-        &-img {
-            max-width: 100px;
-            height: auto;
-            flex-shrink: 0;
-            transition: box-shadow 0.3s ease;
-
-            [data-theme='dark'] & {
-                box-shadow: 0 0 15px rgba(255, 255, 255, 0.1);
-                border-radius: 8px;
-            }
-
-            &:hover {
-                box-shadow: 0 0 20px rgba(255, 255, 255, 0.2);
-            }
+            gap: 5px;
+            margin-bottom: 5px;
         }
     }
 
@@ -101,19 +73,6 @@
             float: left;
             margin: 10px 10px 10px 0;
         }
-    }
-
-    &__history-text {
-        text-align: justify;
-        margin-bottom: 15px;
-    }
-
-    &__history-img {
-        float: left;
-        max-width: 300px;
-        height: auto;
-        margin: 10px 10px 10px 0;
-        border-radius: 8px;
     }
 
     &__sidebar {

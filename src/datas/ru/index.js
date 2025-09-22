@@ -3,6 +3,7 @@ import nrw from './germany/nrw';
 import nrwCity from './germany/nrw-city';
 
 // Украина
+import sumska from './ukraine/sumska'
 
 
 export const regions = {
@@ -13,6 +14,7 @@ export const regions = {
   },
   ukraine: {
     countryName: "Украина",
+    sumska
   },
 
 };

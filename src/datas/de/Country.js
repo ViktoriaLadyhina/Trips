@@ -63,10 +63,7 @@ export const datas = [
     briefHistory: {
       title: 'Kurze Geschichte',
       items: [
-        {
-          text: 'Die Geschichte der heutigen Ukraine beginnt mit der Tripolje-Kultur in der Jungsteinzeit. Im 7. Jahrhundert v. Chr. lebten hier die Skythen. Im 9.–10. Jahrhundert entstand die Kiewer Rus. 988–989 fand die Christianisierung der Rus durch Fürst Wladimir den Großen statt. Im 12.–13. Jahrhundert wurde die Kiewer Rus durch innere Konflikte und die mongolisch-tatarische Invasion geschwächt.',
-          img: "Ukraine/i2.jpeg"
-        },
+        { text: 'Die Geschichte der heutigen Ukraine beginnt mit der Tripolje-Kultur in der Jungsteinzeit. Im 7. Jahrhundert v. Chr. lebten hier die Skythen. Im 9.–10. Jahrhundert entstand die Kiewer Rus. 988–989 fand die Christianisierung der Rus durch Fürst Wladimir den Großen statt. Im 12.–13. Jahrhundert wurde die Kiewer Rus durch innere Konflikte und die mongolisch-tatarische Invasion geschwächt.' },
         { text: 'Im 16.–17. Jahrhundert standen ukrainische Gebiete unter der Herrschaft Polens, Litauens und des Osmanischen Reiches. 1648–1654 führte Bohdan Chmelnyzkyj den nationalen Befreiungskrieg, der zu einer Autonomie in Verbindung mit dem Moskauer Zarenreich führte.' },
         { text: 'Im 20. Jahrhundert erlebte die Ukraine die Revolution von 1917, den Eintritt in die UdSSR, die Hungersnot (Holodomor) 1932–1933, den Zweiten Weltkrieg und den Wiederaufbau. 1986 ereignete sich die Katastrophe im Kernkraftwerk Tschernobyl.' },
         { text: 'Am 24. August 1991 erklärte die Ukraine ihre Unabhängigkeit. 2004 fand die Orange Revolution statt, 2013–2014 die Revolution der Würde. 2014 annektierte Russland die Krim, im Osten begann ein bewaffneter Konflikt. Seit Februar 2022 führt Russland einen groß angelegten Krieg gegen die Ukraine.' },
@@ -92,7 +89,7 @@ export const datas = [
         { id: 14, name: 'Oblast Odessa', path: 'odeska', hasInfo: false, svgId: "odessa" },
         { id: 15, name: 'Oblast Poltawa', path: 'poltavska', hasInfo: false, svgId: "poltava" },
         { id: 16, name: 'Oblast Riwne', path: 'rovenska', hasInfo: false, svgId: "rivne" },
-        { id: 17, name: 'Oblast Sumy', path: 'sumska', hasInfo: false, svgId: "sumy" },
+        { id: 17, name: 'Oblast Sumy', path: 'sumska', hasInfo: true, svgId: "sumy" },
         { id: 18, name: 'Oblast Ternopil', path: 'ternopilska', hasInfo: false, svgId: "ternopil" },
         { id: 19, name: 'Oblast Charkiw', path: 'kharkivska', hasInfo: false, svgId: "kharkiv" },
         { id: 20, name: 'Oblast Cherson', path: 'khersonska', hasInfo: false, svgId: "kherson" },
@@ -182,10 +179,7 @@ export const datas = [
     briefHistory: {
       title: 'Kurze Geschichte',
       items: [
-        {
-          text: "Die Geschichte Deutschlands reicht über viele Jahrhunderte zurück. Im frühen Mittelalter bildeten germanische Stämme ihre eigenen Staaten, und ab der Zeit der Franken und Karls des Großen begann der christliche Einfluss auf Kultur und Politik.",
-          img: "Germania/zamok3.jpg"
-        },
+        { text: "Die Geschichte Deutschlands reicht über viele Jahrhunderte zurück. Im frühen Mittelalter bildeten germanische Stämme ihre eigenen Staaten, und ab der Zeit der Franken und Karls des Großen begann der christliche Einfluss auf Kultur und Politik." },
         { text: "Im XI–XV Jahrhundert existierte das Heilige Römische Reich Deutscher Nation, in dem der König vom Hochadel gewählt wurde. Städte und Burgen dieser Zeit ziehen noch heute Touristen durch ihre Architektur und Geschichte an." },
         { text: "Ab dem 16. Jahrhundert begann die Reformation: Martin Luther, Ulrich Zwingli und Johannes Calvin brachten revolutionäre Veränderungen in das religiöse Leben, die die heutige religiöse Landschaft Deutschlands und die Tradition offener Glaubensdiskussionen prägten." },
         { text: "Im 18.–19. Jahrhundert entstanden große deutsche Staaten, Kultur und Wirtschaft entwickelten sich weiter. Das Deutsche Reich wurde 1871 nach der Vereinigung der norddeutschen Länder unter der Führung Bismarcks gegründet." },

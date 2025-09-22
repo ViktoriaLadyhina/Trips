@@ -42,6 +42,7 @@ const Country = () => {
     ];
 
 
+
     return (
         <div className="country">
             {/* Сайдбар */}
@@ -98,50 +99,10 @@ const Country = () => {
                 {country.desc?.tourism && <InfoBlock data={country.desc.tourism} className="country__tourism" />}
                 {country.desc?.cuisine && <InfoBlock data={country.desc.cuisine} className="country__cuisine" />}
                 {country.desc?.entry && <InfoBlock data={country.desc.entry} className="country__entry" />}
-
-                {/* Символы */}
-                {country.symbols?.items?.length > 0 && (
-                    <div className="country__symbols">
-                        <h2 className="country__symbols-title">{country.symbols.title}</h2>
-                        {country.symbols.items.map((item, index) => (
-                            <div key={index} className="country__symbols-item">
-                                {item.img && (
-                                    <img src={`${BASE_PHOTO_URL}${item.img}`} alt={item.bold || ''} className="country__symbols-img" />
-                                )}
-                                <p className="country__symbols-text">
-                                    {item.bold && <span className="country__symbols-bold">{item.bold}</span>}
-                                    {item.text}
-                                </p>
-                            </div>
-                        ))}
-                    </div>
-                )}
-
-                {/* Праздники */}
-                {country.holidays?.items?.length > 0 && (
-                    <div className="country__holidays">
-                        <h2 className="country__holidays-title">{country.holidays.title}</h2>
-                        {country.holidays.items.map((item, index) => (
-                            <p key={index} className="country__holidays-text">
-                                {item.bold && <span className="country__holidays-bold">{item.bold}</span>}
-                                {item.text}
-                            </p>
-                        ))}
-                    </div>
-                )}
-
-                {/* История */}
-                {country.briefHistory?.items?.length > 0 && (
-                    <div className="country__history">
-                        <h2 className="country__history-title">{country.briefHistory.title}</h2>
-                        {country.briefHistory.items.map((item, index) => (
-                            <p key={index} className="country__history-text">
-                                {item.img && <img src={`${BASE_PHOTO_URL}${item.img}`} alt="History" className="country__history-img" />}
-                                {item.text}
-                            </p>
-                        ))}
-                    </div>
-                )}
+                {country.symbols && <InfoBlock data={country.symbols} className="country__symbols" />}
+                {photos.countries[2] && (<img src={`${BASE_PHOTO_URL}${photos.countries[2].path}`} alt={photos.countries[2].title} className="country__photo country__photo" />)}
+                {country.holidays && <InfoBlock data={country.holidays} className="country__holidays" />}
+                {country.briefHistory && <InfoBlock data={country.briefHistory} className="country__history" />}
             </div>
         </div>
     );

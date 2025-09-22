@@ -1,6 +1,7 @@
 .map-container {
   width: 100%;
-  height: auto;;
+  height: auto;
+  ;
   margin: 0 auto;
   overflow: visible;
 
@@ -8,11 +9,30 @@
     width: 100%;
     height: auto;
 
+    .map-shape {
+      [data-theme='light'] & {
+        filter: drop-shadow(0 0 8px rgba(0, 0, 0, 0.7));
+      }
+
+      [data-theme='dark'] & {
+        filter: drop-shadow(0 0 8px rgba(255, 255, 255, 0.8));
+      }
+    }
+
     path {
       fill: #d9e6f2;
       stroke: #333;
-      transition: fill 0.3s;
-      transition: stroke-width 0.3s, fill 0.3s;
+      transition: fill 0.3s, stroke-width 0.3s, filter 0.3s;
+
+      // Светлая тема → тёмная тень
+      [data-theme='light'] & {
+        filter: drop-shadow(0 0 3px rgba(0, 0, 0, 0.5));
+      }
+
+      // Тёмная тема → светлое свечение
+      [data-theme='dark'] & {
+        filter: drop-shadow(0 0 3px rgba(255, 255, 255, 0.6));
+      }
 
       &.interactive {
         cursor: pointer;

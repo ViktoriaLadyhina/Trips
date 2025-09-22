@@ -37,16 +37,10 @@ const datas = [
         },
         notablePeople: {
             title: 'Bekannte Persönlichkeiten',
-            items: {
-                1: [
-                    { bold: 'Steffi Graf' },
-                    { text: ' berühmte Tennisspielerin, geboren in Brühl. 1988 wurde sie Ehrenbürgerin der Stadt.' },
-                ],
-                2: [
-                    { bold: 'Max Ernst' },
-                    { text: ' surrealistischer Maler, der in Brühl geboren wurde.' },
-                ]
-            }
+            items: [
+                { bold: 'Steffi Graf', text: ' berühmte Tennisspielerin, geboren in Brühl. 1988 wurde sie Ehrenbürgerin der Stadt.' },
+                { bold: 'Max Ernst', text: ' surrealistischer Maler, der in Brühl geboren wurde.' }
+            ]
         },
         briefHistory: {
             title: 'Kurze Geschichte',
@@ -106,41 +100,18 @@ const datas = [
         },
         notablePeople: {
             title: 'Berühmte Persönlichkeiten aus Köln',
-            items: {
-                1: [
-                    { bold: 'Konrad Adenauer' },
-                    { text: ' – erster Bundeskanzler der BRD, von 1917–1933 Oberbürgermeister von Köln.' }
-                ],
-                2: [
-                    { bold: 'Nikolaus August Otto' },
-                    { text: ' – Ingenieur, Erfinder des ersten Verbrennungsmotors (1874), Mitbegründer der Fabrik Kloeckner Humboldt Deutz AG.' }
-                ],
-                3: [
-                    { bold: 'Georg Simon Ohm' },
-                    { text: ' – Physiker, entdeckte das Gesetz des elektrischen Widerstands (1827), lehrte in Köln.' }
-                ],
-                4: [
-                    { bold: 'August Sander' },
-                    { text: ' – Fotograf, Autor der Serie „Menschen des 20. Jahrhunderts“.' }
-                ],
-                5: [
-                    { bold: 'Karlheinz Stockhausen' },
-                    { text: ' – Komponist, einer der Pioniere der elektronischen Musik, arbeitete im WDR-Studio.' }
-                ],
-                6: [
-                    { bold: 'Max Ernst' },
-                    { text: ' – surrealistischer Künstler, geboren in Köln.' }
-                ],
-                7: [
-                    { bold: 'Heinrich Böll' },
-                    { text: ' – Schriftsteller, Nobelpreisträger für Literatur (1972), lebte und arbeitete in Köln.' }
-                ],
-                8: [
-                    { bold: 'Günter Grass' },
-                    { text: ' – Schriftsteller, Nobelpreisträger für Literatur (1999), zeitweise mit Köln verbunden.' }
-                ]
-            }
-        },
+            items: [
+                { bold: 'Konrad Adenauer', text: ' – erster Bundeskanzler der BRD, von 1917–1933 Oberbürgermeister von Köln.' },
+                { bold: 'Nikolaus August Otto', text: ' – Ingenieur, Erfinder des ersten Verbrennungsmotors (1874), Mitbegründer der Fabrik Kloeckner Humboldt Deutz AG.' },
+                { bold: 'Georg Simon Ohm', text: ' – Physiker, entdeckte das Gesetz des elektrischen Widerstands (1827), lehrte in Köln.' },
+                { bold: 'August Sander', text: ' – Fotograf, Autor der Serie „Menschen des 20. Jahrhunderts“.' },
+                { bold: 'Karlheinz Stockhausen', text: ' – Komponist, einer der Pioniere der elektronischen Musik, arbeitete im WDR-Studio.' },
+                { bold: 'Max Ernst', text: ' – surrealistischer Künstler, geboren in Köln.' },
+                { bold: 'Heinrich Böll', text: ' – Schriftsteller, Nobelpreisträger für Literatur (1972), lebte und arbeitete in Köln.' },
+                { bold: 'Günter Grass', text: ' – Schriftsteller, Nobelpreisträger für Literatur (1999), zeitweise mit Köln verbunden.' }
+            ]
+        }
+        ,
         interestingFacts: {
             title: 'Interessante Fakten',
             items: [
