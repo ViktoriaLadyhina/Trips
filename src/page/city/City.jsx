@@ -92,72 +92,36 @@ const City = () => {
 
                         <div className='city__desc'>
                             {cityData.desc?.general && (<InfoBlock data={cityData.desc.general} className="city__desc-general" />)}
+
+                            {photos?.[regionsPath]?.[cityPath]?.[0] && (
+                                <img
+                                    src={`${BASE_PHOTO_URL}${photos[regionsPath][cityPath][0].path}`}
+                                    alt={photos[regionsPath][cityPath][0].title}
+                                    className='city__foto--right'
+                                />
+                            )}
+                            
                             {cityData.desc?.population && (<InfoBlock data={cityData.desc.population} className="city__desc-population" />)}
                             {cityData.desc?.area && (<InfoBlock data={cityData.desc.area} className="city__desc-area" />)}
                             {cityData.desc?.postalCode && (<InfoBlock data={cityData.desc.postalCode} className="city__desc-postalCode" />)}
                             {cityData.desc?.phone && (<InfoBlock data={cityData.desc.phone} className="city__desc-phone" />)}
                             {cityData.desc?.officialSite && (<InfoBlock data={cityData.desc.officialSite} className="city__desc-officialSite" />)}
+                            {cityData.notablePeople && (<InfoBlock data={cityData.notablePeople} className="city__desc-notablePeople" />)}
+
+                            {photos?.[regionsPath]?.[cityPath]?.[1] && (
+                                <img
+                                    src={`${BASE_PHOTO_URL}${photos[regionsPath][cityPath][1].path}`}
+                                    alt={photos[regionsPath][cityPath][1].title}
+                                    className='city__foto'
+                                />
+                            )}
+
+                            {cityData.geography && (<InfoBlock data={cityData.geography} className="city__desc-geography" />)}
+                            {cityData.interestingFacts && (<InfoBlock data={cityData.interestingFacts} className="city__desc-interestingFacts" />)}
+                            {cityData.briefHistory && (<InfoBlock data={cityData.briefHistory} className="city__desc-history" />)}
                         </div>
 
-                        {photos?.[regionsPath]?.[cityPath]?.[1] && (
-                            <img
-                                src={`${BASE_PHOTO_URL}${photos[regionsPath][cityPath][1].path}`}
-                                alt={photos[regionsPath][cityPath][1].title}
-                                className='regions__foto'
-                            />
-                        )}
 
-                        {cityData.geography?.items?.length > 0 && (
-                            <div className="city__geography">
-                                {cityData.geography.title && <h2 className="city__geography-title">{cityData.geography.title}</h2>}
-                                {cityData.geography.items.map((item, index) => (
-                                    item.text && <p key={index} className="city__geography-text">{item.text}</p>
-                                ))}
-                            </div>
-                        )}
-
-                        {cityData.notablePeople?.items && Object.entries(cityData.notablePeople.items).length > 0 && (
-                            <div className="city__notablePeople">
-                                {cityData.notablePeople.title && <h2 className="city__notablePeople-title">{cityData.notablePeople.title}</h2>}
-                                {Object.entries(cityData.notablePeople.items).map(([id, personArray]) => {
-                                    const boldItem = personArray.find(item => item.bold);
-                                    const textItem = personArray.find(item => item.text);
-
-                                    return (
-                                        <div key={id} className="city__notablePeople-item">
-                                            {boldItem && <span className="city__notablePeople-item__bold">{boldItem.bold} </span>}
-                                            {textItem && <span className="city__notablePeople-item__text">{textItem.text}</span>}
-                                        </div>
-                                    );
-                                })}
-                            </div>
-                        )}
-
-                        {photos?.[regionsPath]?.[cityPath]?.[0] && (
-                            <img
-                                src={`${BASE_PHOTO_URL}${photos[regionsPath][cityPath][0].path}`}
-                                alt={photos[regionsPath][cityPath][1]?.title}
-                                className='regions__foto'
-                            />
-                        )}
-
-                        {cityData.interestingFacts?.items?.length > 0 && (
-                            <div className="city__interestingFacts">
-                                {cityData.interestingFacts.title && <h2 className="city__interestingFacts-title">{cityData.interestingFacts.title}</h2>}
-                                {cityData.interestingFacts.items.map((item, index) => item.text && (
-                                    <p key={index} className="city__interestingFacts-text">{item.text}</p>
-                                ))}
-                            </div>
-                        )}
-
-                        {cityData.briefHistory?.items?.length > 0 && (
-                            <div className="city__history">
-                                {cityData.briefHistory.title && <h2 className="city__history-title">{cityData.briefHistory.title}</h2>}
-                                {cityData.briefHistory.items.map((item, index) => item.text && (
-                                    <p key={index} className="city__history-text">{item.text}</p>
-                                ))}
-                            </div>
-                        )}
                     </div>
                 </>
             )}

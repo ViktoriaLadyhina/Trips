@@ -36,8 +36,6 @@ const regionCenters = {
 export default function UkraineMap({ regions, countryPath }) {
   const navigate = useNavigate();
   const regionItems = regions?.items || [];
-
-  console.log(ukraine);
   
   const [hoverRegion, setHoverRegion] = useState(null);
   const [tooltipPos, setTooltipPos] = useState([0, 0]);
@@ -49,6 +47,7 @@ export default function UkraineMap({ regions, countryPath }) {
         xmlns="http://www.w3.org/2000/svg"
         preserveAspectRatio="xMidYMid meet"
       >
+        <g className="map-shape">
         {/* Рендер регионов */}
         {ukraine.locations.map((loc) => {
           const region = regionItems.find(r => r.svgId.toLowerCase() === loc.id);
@@ -118,6 +117,7 @@ export default function UkraineMap({ regions, countryPath }) {
             </text>
           );
         })}
+        </g>
       </svg>
 
       {hoverRegion && (

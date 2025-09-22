@@ -15,11 +15,11 @@
         text-align: justify;
         padding: 3px;
 
-        &__bold {
+        &-bold {
             @include bold-text;
         }
 
-        &__text {
+        &-text {
             @include body-text;
         }
     }

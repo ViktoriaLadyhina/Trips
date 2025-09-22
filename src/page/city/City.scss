@@ -62,61 +62,48 @@
         &-area,
         &-postalCode,
         &-phone,
-        &-officialSite {
+        &-officialSite,
+        &-notablePeople,
+        &-geography,
+        &-interestingFacts,
+        &-history {
             text-align: justify;
             padding: 3px;
 
-            &__bold {
+            &-bold {
                 @include bold-text;
                 display: inline;
+                text-align: justify;
             }
 
-            &__text {
+            &-text {
                 @include body-text;
                 display: inline;
+                text-align: justify;
             }
 
             a {
                 text-decoration: none;
             }
-        }
-    }
 
-    &__notablePeople {
-        &-title {
-            @include h3();
-            padding: 20px;
-            text-align: center;
-        }
-
-        &-item {
-            margin-bottom: 5px;
-            text-align: left;
-
-            &__bold {
-                @include bold-text;
-                display: inline;
-            }
-
-            &__text {
-                @include body-text;
-                display: inline;
+            &-title {
+                @include h3();
+                padding: 20px;
+                text-align: center;
             }
         }
     }
 
-    &__geography,
-    &__interestingFacts,
-    &__history {
-        &-title {
-            @include h3();
-            padding: 20px;
-            text-align: center;
-        }
+        &__foto {
+        max-width: 300px;
+        height: auto;
+        border-radius: 8px;
+        margin: 10px 0 10px 10px;
+        float: right;
 
-        &-text {
-            @include body-text;
-            text-align: justify;
+        &--right {
+            float: left;
+            margin: 10px 10px 10px 0;
         }
     }
 }

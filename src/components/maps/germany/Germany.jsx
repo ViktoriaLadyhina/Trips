@@ -36,6 +36,7 @@ export default function GermanyMap({ regions, countryPath }) {
         xmlns="http://www.w3.org/2000/svg"
         preserveAspectRatio="xMidYMid meet"
       >
+        <g className="map-shape">
         {/* Сначала рендерим все регионы */}
         {germany.locations.map((loc) => {
           const region = regionItems.find(r => r.svgId.toLowerCase() === loc.id);
@@ -66,38 +67,39 @@ export default function GermanyMap({ regions, countryPath }) {
           const center = regionCenters[loc.id] || { x: 0, y: 0, dx: 0, dy: 0 };
 
           return (
- <text
-  key={`${loc.id}-label`}
-  x={center.x}
-  y={center.y}
-  textAnchor="middle"
-  dominantBaseline="middle"
-  fontSize="10"
-  fill="#000"
-  dx={center.dx || 0}
-  pointerEvents="none"
->
- {region.name.includes("-")
-  ? region.name.split("-").map((part, i) => (
-      <tspan
-        key={i}
-        x={center.x + (center.dx || 0)}
-        dy={i === 0 ? `${center.dy}em` : "1.2em"}
-      >
-        {i === 0 ? part.trim() + "-" : part.trim()}
-      </tspan>
-    ))
-  : (
-      <tspan
-        x={center.x + (center.dx || 0)}
-        dy={`${center.dy}em`}
-      >
-        {region.name}
-      </tspan>
-    )}
-</text>
+            <text
+              key={`${loc.id}-label`}
+              x={center.x}
+              y={center.y}
+              textAnchor="middle"
+              dominantBaseline="middle"
+              fontSize="10"
+              fill="#000"
+              dx={center.dx || 0}
+              pointerEvents="none"
+            >
+              {region.name.includes("-")
+                ? region.name.split("-").map((part, i) => (
+                  <tspan
+                    key={i}
+                    x={center.x + (center.dx || 0)}
+                    dy={i === 0 ? `${center.dy}em` : "1.2em"}
+                  >
+                    {i === 0 ? part.trim() + "-" : part.trim()}
+                  </tspan>
+                ))
+                : (
+                  <tspan
+                    x={center.x + (center.dx || 0)}
+                    dy={`${center.dy}em`}
+                  >
+                    {region.name}
+                  </tspan>
+                )}
+            </text>
           );
         })}
+         </g>
       </svg>
 
       {hoverRegion && (

@@ -22,6 +22,8 @@ const Regions = () => {
     const allRegions = lang === 'ua' ? uaRegions : lang === 'de' ? deRegions : ruRegions;
 
     const countryRegions = allRegions[countryPath];
+    console.log(allRegions);
+
 
     const region = countryRegions[regionsPath];
     useMeta(region?.meta || {});
@@ -36,6 +38,9 @@ const Regions = () => {
         { label: countryRegions.countryName, path: `/${countryPath}` },
         { label: region.name }
     ];
+
+
+
     return (
         <div className='regions'>
 
@@ -102,10 +107,10 @@ const Regions = () => {
 
                 {region.desc.capital && <InfoBlock data={region.desc.capital} className="regions__capital" />}
                 {region.desc.population && <InfoBlock data={region.desc.population} className="regions__population" />}
-                {photos[regionsPath]?.[0] && (
+                {photos[regionsPath]?.region?.[0] && (
                     <img
-                        src={`${BASE_PHOTO_URL}${photos[regionsPath][0].path}`}
-                        alt={photos[regionsPath][0].title}
+                        src={`${BASE_PHOTO_URL}${photos[regionsPath].region[0].path}`}
+                        alt={photos[regionsPath].region[0].title}
                         className="regions__foto"
                     />
                 )}
@@ -116,32 +121,12 @@ const Regions = () => {
                 {region.desc.history && <InfoBlock data={region.desc.history} className="regions__history" />}
                 {region.desc.economy && <InfoBlock data={region.desc.economy} className="regions__economy" />}
                 {region.desc.tourism && <InfoBlock data={region.desc.tourism} className="regions__tourism" />}
+                {region.desc.culture && <InfoBlock data={region.desc.culture} className="regions__culture" />}
+                {region.desc.notablePeople && <InfoBlock data={region.desc.notablePeople} className="regions__notablePeople" />}
+                {region.desc.interestingFacts && <InfoBlock data={region.desc.interestingFacts} className="regions__interestingFacts" />}
+                {region.symbols && <InfoBlock data={region.symbols} className="regions__symbols" />}
+                {region.briefHistory && <InfoBlock data={region.briefHistory} className="regions__history" />}
 
-                <div className="regions__symbols">
-                    {region.symbols?.title && <h2 className="regions__symbols-title">{region.symbols.title}</h2>}
-                    {region.symbols.items && region.symbols.items.map((item, index) => (
-                        <div key={index} className="regions__symbols-item">
-                            {item.img && (
-                                <img
-                                    src={`${BASE_PHOTO_URL}${item.img}`}
-                                    alt={item.bold}
-                                    className="regions__symbols-img"
-                                />
-                            )}
-                            <p className="regions__symbols-text">
-                                {item.bold && <span className="regions__symbols-bold">{item.bold}</span>}
-                                {item.text}
-                            </p>
-                        </div>
-                    ))}
-                </div>
-
-                <div className="regions__history">
-                    {region.briefHistory?.title && <h2 className="regions__history-title">{region.briefHistory.title}</h2>}
-                    {region.briefHistory.items && region.briefHistory.items.map((item, index) => (
-                        <p key={index} className="regions__history-text">{item.text}</p>
-                    ))}
-                </div>
             </div>
         </div>
     )
