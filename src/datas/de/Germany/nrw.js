@@ -73,15 +73,15 @@ const datas = {
         {
             title: "Regierungsbezirke in Nordrhein-Westfalen",
             items: [
-                { id: 1, name: 'Arnsberg', hasInfo: false, patch: "arnsberg" },
-                { id: 2, name: 'Detmold', hasInfo: false, patch: "detmold" },
-                { id: 3, name: 'Düsseldorf', hasInfo: false, patch: "dusseldorf" },
+                { id: 1, name: 'Arnsberg', hasInfo: false, path: "arnsberg" },
+                { id: 2, name: 'Detmold', hasInfo: false, path: "detmold" },
+                { id: 3, name: 'Düsseldorf', hasInfo: false, path: "dusseldorf" },
                 {
                     id: 4,
                     title: 'Regierungsbezirk Köln',
                     name: 'Köln',
                     hasInfo: true,
-                    patch: "koln",
+                    path: "koln",
                     currentMap: "Germania/Nordrhein/004.gif",
                     desc: {
                         history: [
@@ -389,7 +389,7 @@ const datas = {
                             communities: [
                                 { id: 1, name: "Bedburg", hasInfo: false },
                                 { id: 2, name: "Bergheim", hasInfo: false },
-                                { id: 3, name: "Brühl", hasInfo: true, patch: "bruehl" },
+                                { id: 3, name: "Brühl", hasInfo: true, path: "bruehl" },
                                 { id: 4, name: "Elsdorf", hasInfo: false },
                                 { id: 5, name: "Erftstadt", hasInfo: false },
                                 { id: 6, name: "Frechen", hasInfo: false },
@@ -500,34 +500,34 @@ const datas = {
                     }
 
                 },
-                { id: 5, name: 'Münster', hasInfo: false, patch: "munster" }
+                { id: 5, name: 'Münster', hasInfo: false, path: "munster" }
             ]
         },
         {
             title: "Kreisfreie Städte in Nordrhein-Westfalen",
             items: [
-                { id: 6, name: 'Bielefeld', hasInfo: false, patch: "bielefeld", },
-                { id: 7, name: 'Bonn', hasInfo: false, patch: "bonn", },
-                { id: 8, name: 'Bottrop', hasInfo: false, patch: "bottrop", },
-                { id: 9, name: 'Bochum', hasInfo: false, patch: "bochum", },
-                { id: 10, name: 'Wuppertal', hasInfo: false, patch: "wuppertal", },
-                { id: 11, name: 'Gelsenkirchen', hasInfo: false, patch: "gelsenkirchen", },
-                { id: 12, name: 'Dortmund', hasInfo: false, patch: "dortmund", },
-                { id: 13, name: 'Duisburg', hasInfo: false, patch: "duisburg", },
-                { id: 14, name: 'Düsseldorf', hasInfo: false, patch: "duesseldorf", },
-                { id: 15, name: 'Solingen', hasInfo: false, patch: "solingen", },
-                { id: 16, name: 'Köln', hasInfo: true, patch: "koeln", },
-                { id: 17, name: 'Krefeld', hasInfo: false, patch: "krefeld", },
-                { id: 18, name: 'Leverkusen', hasInfo: false, patch: "leverkusen", },
-                { id: 19, name: 'Mönchengladbach', hasInfo: false, patch: "moenchengladbach", },
-                { id: 20, name: 'Mülheim an der Ruhr', hasInfo: false, patch: "muelheim", },
-                { id: 21, name: 'Münster', hasInfo: false, patch: "muenster", },
-                { id: 22, name: 'Oberhausen', hasInfo: false, patch: "oberhausen", },
-                { id: 23, name: 'Remscheid', hasInfo: false, patch: "remscheid", },
-                { id: 24, name: 'Hagen', hasInfo: false, patch: "hagen", },
-                { id: 25, name: 'Hamm', hasInfo: false, patch: "hamm", },
-                { id: 26, name: 'Herne', hasInfo: false, patch: "herne", },
-                { id: 27, name: 'Essen', hasInfo: false, patch: "essen", }
+                { id: 6, name: 'Bielefeld', hasInfo: false, path: "bielefeld", },
+                { id: 7, name: 'Bonn', hasInfo: false, path: "bonn", },
+                { id: 8, name: 'Bottrop', hasInfo: false, path: "bottrop", },
+                { id: 9, name: 'Bochum', hasInfo: false, path: "bochum", },
+                { id: 10, name: 'Wuppertal', hasInfo: false, path: "wuppertal", },
+                { id: 11, name: 'Gelsenkirchen', hasInfo: false, path: "gelsenkirchen", },
+                { id: 12, name: 'Dortmund', hasInfo: false, path: "dortmund", },
+                { id: 13, name: 'Duisburg', hasInfo: false, path: "duisburg", },
+                { id: 14, name: 'Düsseldorf', hasInfo: false, path: "duesseldorf", },
+                { id: 15, name: 'Solingen', hasInfo: false, path: "solingen", },
+                { id: 16, name: 'Köln', hasInfo: true, path: "koeln", },
+                { id: 17, name: 'Krefeld', hasInfo: false, path: "krefeld", },
+                { id: 18, name: 'Leverkusen', hasInfo: false, path: "leverkusen", },
+                { id: 19, name: 'Mönchengladbach', hasInfo: false, path: "moenchengladbach", },
+                { id: 20, name: 'Mülheim an der Ruhr', hasInfo: false, path: "muelheim", },
+                { id: 21, name: 'Münster', hasInfo: false, path: "muenster", },
+                { id: 22, name: 'Oberhausen', hasInfo: false, path: "oberhausen", },
+                { id: 23, name: 'Remscheid', hasInfo: false, path: "remscheid", },
+                { id: 24, name: 'Hagen', hasInfo: false, path: "hagen", },
+                { id: 25, name: 'Hamm', hasInfo: false, path: "hamm", },
+                { id: 26, name: 'Herne', hasInfo: false, path: "herne", },
+                { id: 27, name: 'Essen', hasInfo: false, path: "essen", }
             ]
         }
     ],

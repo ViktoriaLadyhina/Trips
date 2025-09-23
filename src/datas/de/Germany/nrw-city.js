@@ -2,7 +2,7 @@ const datas = [
     {
         id: 1,
         name: 'Brühl',
-        patch: "bruehl",
+        path: "bruehl",
         desc: {
             general: [
                 { text: 'Stadt im Bundesland Nordrhein-Westfalen' }
@@ -61,7 +61,7 @@ const datas = [
     {
         id: 2,
         name: 'Köln',
-        patch: "koeln",
+        path: "koeln",
         desc: {
             general: [
                 { text: 'Köln ist die größte Stadt des Bundeslandes Nordrhein-Westfalen und die viertgrößte Stadt Deutschlands.' },
@@ -110,8 +110,7 @@ const datas = [
                 { bold: 'Heinrich Böll', text: ' – Schriftsteller, Nobelpreisträger für Literatur (1972), lebte und arbeitete in Köln.' },
                 { bold: 'Günter Grass', text: ' – Schriftsteller, Nobelpreisträger für Literatur (1999), zeitweise mit Köln verbunden.' }
             ]
-        }
-        ,
+        },
         interestingFacts: {
             title: 'Interessante Fakten',
             items: [

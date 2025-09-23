@@ -1,42 +1,29 @@
-import { useSelector } from 'react-redux';
-import { useParams } from 'react-router';
 
 import BreadCrumbs from '../../components/breadCrumbs/BreadCrumbs.jsx';
 import Region from '../../components/region/Region.jsx';
 import InfoBlock from '../../components/InfoBlock/InfoBlock.jsx'
 import { useMeta } from '../../hooks/useMeta';
 
-import { regions as ruDistricts } from '../../datas/ru';
-import { regions as uaDistricts } from '../../datas/ua';
-import { regions as deDistricts } from '../../datas/de';
 import './District.scss'
+import useCityFullData from '../../hooks/useCityFullData.js';
 
 const BASE_PHOTO_URL = import.meta.env.VITE_BASE_PHOTO_URL;
 
 const District = () => {
-  const { countryPath, regionsPath, districtPath } = useParams();
-  const { lang } = useSelector((state) => state.language);
+  const { lang, country, region, district, error } = useCityFullData();
+  console.log(country);
+  
 
-  const allDistricts = lang === 'ua' ? uaDistricts : lang === 'de' ? deDistricts : ruDistricts;
+  useMeta(district?.meta || {});
 
-  const countryRegions = allDistricts[countryPath];
-
-  const region = countryRegions[regionsPath];
-
-  // Ищем район по patch
-  const districtItems = region.discriptRegions.flatMap(r => r.items);
-  const district = districtItems.find(d => d.patch === districtPath);
-  useMeta(district?.meta);
-
-  if (!countryRegions) return <p>Country not found</p>;
-  if (!region) return <p>Region not found</p>;
+  if (error) return <p>{error}</p>;
   if (!district) return <p>District not found</p>;
 
   const crumbs = [
-    { label: lang === 'ru' ? 'Главная' : lang === 'de' ? 'Startseite' : 'Головна', path: '/' },
-    { label: countryRegions.countryName, path: `/${countryPath}` },
-    { label: region.name, path: `/${countryPath}/${regionsPath}` },
-    { label: district.title }
+    { label: lang === "ru" ? "Главная" : lang === "de" ? "Startseite" : "Головна", path: "/" },
+    { label: country.countryName, path: `/${country.path}` },
+    { label: region.name, path: `/${country.path}/${region.path}` },
+    { label: district.name || district.title }
   ];
 
   return (
@@ -61,14 +48,14 @@ const District = () => {
         </div>
 
         {district?.subRegion?.length > 0 && (
-          <div className='district__list'>
+          <div className="district__list">
             {district.subRegion.map((subRegion) => (
               <Region
                 key={subRegion.id}
                 data={subRegion}
-                countryPath={countryPath}
-                regionsPath={regionsPath}
-                districtPath={districtPath}
+                countryPath={country.path}
+                regionsPath={region.path}
+                districtPath={district.path} 
               />
             ))}
           </div>

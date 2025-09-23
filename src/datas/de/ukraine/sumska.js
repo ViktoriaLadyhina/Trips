@@ -97,18 +97,32 @@ const datas = {
             { bold: 'Gegenwart:' },
             { text: ' Sumy bewahrt weiterhin ein reiches historisches Erbe, und das Gedenken an die heldenhafte Vergangenheit — von den alten slawischen Städten bis zum Partisanenkampf — ist ein wichtiger Teil der kulturellen Identität der Region.' },
             { bold: 'Heute:' },
-            { text: ' Im Februar 2022 war Sumy eine der ersten Regionen, die den Schlag der groß angelegten Invasion Russlands aufnahm. Grenzstädte und Dörfer wurden heftig beschossen und zerstört, viele Siedlungen nur wenige Kilometer von der Grenze entfernt wurden nahezu ausgelöscht. Die Bewohner mussten ihre Häuser verlassen, um sich vor der ständigen Bedrohung zu schützen. Trotz der Tragödie und der enormen Verluste zeigte die Region erstaunliche Widerstandsfähigkeit: lokale Gemeinschaften schlossen sich zusammen, um zu überleben und Leben zu retten. Diese neueste Seite der Geschichte Sumys wurde zum Symbol für Mut und Unbeugsamkeit ihres Volkes.' }
-        ]
+            { text: 'Im Februar 2022 erlebte die Region Sumy als eine der ersten den Angriff der umfassenden Invasion Russlands. Grenzstädte und Dörfer wurden heftig beschossen und zerstört, viele Siedlungen, die nur wenige Kilometer von der Grenze entfernt liegen, wurden nahezu dem Erdboden gleichgemacht.' },
+            { text: 'Die Bewohner waren gezwungen, ihre Häuser zu verlassen, um sich vor der ständigen Bedrohung zu retten. Trotz der Tragödie und enormer Verluste zeigte die Region eine erstaunliche Standhaftigkeit: die lokalen Gemeinden schlossen sich zusammen, um durchzuhalten und Leben zu bewahren.' },
+            { text: 'Besondere Erwähnung verdient die Stadt Achtyrka, die 2022 den Titel „Stadt-Held der Ukraine“ erhielt für den massenhaften Heldenmut der Einwohner und die Standhaftigkeit bei der Verteidigung der Stadt.' },
+            { text: 'Diese neueste Seite der Geschichte der Region Sumy ist ein Symbol für den Mut und die Unerschütterlichkeit ihres Volkes.' }]
     },
     discriptRegions: [
         {
-            title: "Verwaltungsbezirke der Oblast Sumy",
+            title: "Landkreise der Oblast Sumy",
             items: [
-                { id: 1, name: 'Achtyrski', hasInfo: false, path: "akhtyrka" },
-                { id: 2, name: 'Konotopski', hasInfo: false, path: "konotop" },
-                { id: 3, name: 'Romenski', hasInfo: false, path: "romny" },
-                { id: 4, name: 'Sumski', hasInfo: false, path: "sumy" },
-                { id: 5, name: 'Schostkinski', hasInfo: false, path: "shostka" }
+                { id: 1, name: "Sumsky", hasInfo: false, patch: "sumskyi" },
+                { id: 2, name: "Akhtyrsky", hasInfo: false, patch: "akhtyrskyi" },
+                { id: 3, name: "Konotopsky", hasInfo: false, patch: "konotopskyi" },
+                { id: 4, name: "Romensky", hasInfo: false, patch: "romenskyi" },
+                { id: 5, name: "Shostkynsky", hasInfo: false, patch: "shostkynskyi" }
+            ]
+        },
+        {
+            title: "Städte mit regionaler Unterstellung",
+            items: [
+                { id: 1, name: "Sumy", hasInfo: false, patch: "sumy" },
+                { id: 2, name: "Lebedyn", hasInfo: false, patch: "lebedyn" },
+                { id: 3, name: "Romny", hasInfo: false, patch: "romny" },
+                { id: 4, name: "Shostka", hasInfo: false, patch: "shostka" },
+                { id: 5, name: "Akhtyrka", hasInfo: false, patch: "akhtyrka" },
+                { id: 6, name: "Glukhiv", hasInfo: false, patch: "gluhov" },
+                { id: 7, name: "Konotop", hasInfo: false, patch: "konotop" }
             ]
         }
     ],

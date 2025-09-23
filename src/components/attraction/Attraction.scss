@@ -1,0 +1,51 @@
+@use '../../styles//variables' as *;
+
+.attrCard {
+    background-color: var(--color-cart-bg);
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s ease;
+    padding: 6px;
+    margin: 10px;
+    border: 1px solid var(--color-sidebar-bg);
+
+    &__title {
+        @include h3();
+        margin: 10px;
+    }
+
+    &__desc {
+        display: flex;
+        align-items: flex-start;
+        gap: 10px;
+
+        &-foto {
+            padding: 6px;
+
+            img {
+                border-radius: 8px;
+                 box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            }
+        }
+
+        &-info {
+            text-align: left;
+
+        &-text {
+            @include body-text;
+            padding: 10px;
+            flex: 1; // чтобы текст занимал оставшееся место
+        }
+
+        &-more {
+            @include bold-text;
+            padding: 10px;
+        }
+    }
+    }
+}
+@media (max-width: 500px) {
+    .attrCard__desc {
+        flex-wrap: wrap;
+    }
+}

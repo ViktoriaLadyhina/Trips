@@ -1,6 +1,6 @@
 import React from "react";
 import GermanyMap from "./germany/Germany";
-import UkraineMap from './ukraine/Ukraine'
+import UkraineMap from './ukraine/Ukraine';
 
 const maps = {
   germany: GermanyMap,
