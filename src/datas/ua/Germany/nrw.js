@@ -81,15 +81,15 @@ const datas = {
         {
             title: "Адміністративні округи в Північному Рейні-Вестфалії",
             items: [
-                { id: 1, name: 'Арнсберг', hasInfo: false, patch: "arnsberg", },
-                { id: 2, name: 'Детмольд', hasInfo: false, patch: "detmold", },
-                { id: 3, name: 'Дюссельдорф', hasInfo: false, patch: "dusseldorf" },
+                { id: 1, name: 'Арнсберг', hasInfo: false, path: "arnsberg", },
+                { id: 2, name: 'Детмольд', hasInfo: false, path: "detmold", },
+                { id: 3, name: 'Дюссельдорф', hasInfo: false, path: "dusseldorf" },
                 {
                     id: 4,
                     title: 'Адміністративний округ Кельн',
                     name: 'Кельн',
                     hasInfo: true,
-                    patch: "koln",
+                    path: "koln",
                     currentMap: "Germania/Nordrhein/004.gif",
                     desc: {
                         history: [
@@ -508,34 +508,34 @@ const datas = {
                     }
 
                 },
-                { id: 5, name: 'Мюнстер', hasInfo: false, patch: "munster" }
+                { id: 5, name: 'Мюнстер', hasInfo: false, path: "munster" }
             ]
         },
         {
             title: "Вільні міста в Північному Рейні-Вестфалії",
             items: [
-                { id: 6, name: 'Білефельд', hasInfo: false, patch: "bielefeld", },
-                { id: 7, name: 'Бонн', hasInfo: false, patch: "bonn", },
-                { id: 8, name: 'Боттроп', hasInfo: false, patch: "bottrop", },
-                { id: 9, name: 'Бохум', hasInfo: false, patch: "bochum", },
-                { id: 10, name: 'Вупперталь', hasInfo: false, patch: "wuppertal", },
-                { id: 11, name: 'Гельзенкірхен', hasInfo: false, patch: "gelsenkirchen", },
-                { id: 12, name: 'Дортмунд', hasInfo: false, patch: "dortmund", },
-                { id: 13, name: 'Дуйсбург', hasInfo: false, patch: "duisburg", },
-                { id: 14, name: 'Дюссельдорф', hasInfo: false, patch: "duesseldorf", },
-                { id: 15, name: 'Золінген', hasInfo: false, patch: "solingen", },
-                { id: 16, name: 'Кельн', hasInfo: true, patch: "koeln", },
-                { id: 17, name: 'Крефельд', hasInfo: false, patch: "krefeld", },
-                { id: 18, name: 'Леверкузен', hasInfo: false, patch: "leverkusen", },
-                { id: 19, name: 'Менхенгладбах', hasInfo: false, patch: "moenchengladbach", },
-                { id: 20, name: 'Мюльхайм-на-Рурі', hasInfo: false, patch: "muelheim", },
-                { id: 21, name: 'Мюнстер', hasInfo: false, patch: "muenster", },
-                { id: 22, name: 'Обергаузен', hasInfo: false, patch: "oberhausen", },
-                { id: 23, name: 'Ремшайд', hasInfo: false, patch: "remscheid", },
-                { id: 24, name: 'Хаген', hasInfo: false, patch: "hagen", },
-                { id: 25, name: 'Хамм', hasInfo: false, patch: "hamm", },
-                { id: 26, name: 'Херне', hasInfo: false, patch: "herne", },
-                { id: 27, name: 'Ессен', hasInfo: false, patch: "essen", }
+                { id: 6, name: 'Білефельд', hasInfo: false, path: "bielefeld", },
+                { id: 7, name: 'Бонн', hasInfo: false, path: "bonn", },
+                { id: 8, name: 'Боттроп', hasInfo: false, path: "bottrop", },
+                { id: 9, name: 'Бохум', hasInfo: false, path: "bochum", },
+                { id: 10, name: 'Вупперталь', hasInfo: false, path: "wuppertal", },
+                { id: 11, name: 'Гельзенкірхен', hasInfo: false, path: "gelsenkirchen", },
+                { id: 12, name: 'Дортмунд', hasInfo: false, path: "dortmund", },
+                { id: 13, name: 'Дуйсбург', hasInfo: false, path: "duisburg", },
+                { id: 14, name: 'Дюссельдорф', hasInfo: false, path: "duesseldorf", },
+                { id: 15, name: 'Золінген', hasInfo: false, path: "solingen", },
+                { id: 16, name: 'Кельн', hasInfo: true, path: "koeln", },
+                { id: 17, name: 'Крефельд', hasInfo: false, path: "krefeld", },
+                { id: 18, name: 'Леверкузен', hasInfo: false, path: "leverkusen", },
+                { id: 19, name: 'Менхенгладбах', hasInfo: false, path: "moenchengladbach", },
+                { id: 20, name: 'Мюльхайм-на-Рурі', hasInfo: false, path: "muelheim", },
+                { id: 21, name: 'Мюнстер', hasInfo: false, path: "muenster", },
+                { id: 22, name: 'Обергаузен', hasInfo: false, path: "oberhausen", },
+                { id: 23, name: 'Ремшайд', hasInfo: false, path: "remscheid", },
+                { id: 24, name: 'Хаген', hasInfo: false, path: "hagen", },
+                { id: 25, name: 'Хамм', hasInfo: false, path: "hamm", },
+                { id: 26, name: 'Херне', hasInfo: false, path: "herne", },
+                { id: 27, name: 'Ессен', hasInfo: false, path: "essen", }
             ]
         }
     ],

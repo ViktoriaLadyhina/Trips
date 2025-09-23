@@ -24,7 +24,7 @@ const Region = ({ data, countryPath, regionsPath, districtPath }) => {
                 <li key={reg.id} className="region__container-list__item">
                   {reg.hasInfo ? (
                     <Link
-                      to={`/${countryPath}/${regionsPath}/${districtPath}/${reg.patch}`}
+                      to={`/${countryPath}/${regionsPath}/${districtPath}/${reg.path}`}
                       className="region__container-list__link"
                     >
                       {reg.name}
@@ -58,7 +58,6 @@ const Region = ({ data, countryPath, regionsPath, districtPath }) => {
         </div>
       </div>
     </div>
-
   )
 }
 

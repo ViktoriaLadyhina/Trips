@@ -1,9 +1,6 @@
-import { regions as ruRegions } from '../../datas/ru';
-import { regions as uaRegions } from '../../datas/ua';
-import { regions as deRegions } from '../../datas/de';
+
 import { photosByCountry } from "../../datas/fotos";
 
-import { useSelector } from 'react-redux';
 import { Link, useParams } from 'react-router';
 
 import InfoBlock from '../../components/InfoBlock/InfoBlock';
@@ -11,35 +8,28 @@ import BreadCrumbs from '../../components/breadCrumbs/BreadCrumbs';
 import { useMeta } from '../../hooks/useMeta';
 import './Regions.scss'
 import { useState } from 'react';
+import CountryMap from '../../components/maps/CountryMap';
+import useCityFullData from '../../hooks/useCityFullData';
 
 const BASE_PHOTO_URL = import.meta.env.VITE_BASE_PHOTO_URL;
 
 const Regions = () => {
     const { countryPath, regionsPath } = useParams();
-    const { lang } = useSelector((state) => state.language);
+    const { lang, country, region, error } = useCityFullData();
     const [sidebarOpen, setSidebarOpen] = useState(false);
 
-    const allRegions = lang === 'ua' ? uaRegions : lang === 'de' ? deRegions : ruRegions;
-
-    const countryRegions = allRegions[countryPath];
-    console.log(allRegions);
-
-
-    const region = countryRegions[regionsPath];
     useMeta(region?.meta || {});
-
-    if (!countryRegions) return <p>Country not found</p>;
-    if (!region) return <p>Region not found</p>;
 
     const photos = photosByCountry[countryPath];
 
-    const crumbs = [
-        { label: lang === 'ru' ? 'Главная' : lang === 'de' ? 'Startseite' : 'Головна', path: '/' },
-        { label: countryRegions.countryName, path: `/${countryPath}` },
-        { label: region.name }
-    ];
+    if (error) return <p>{error}</p>;
+    if (!country) return <p>Loading...</p>;
 
-
+const crumbs = [
+  { label: lang === 'ru' ? 'Главная' : lang === 'de' ? 'Startseite' : 'Головна', path: '/' },
+  { label: country?.countryName, path: `/${country.path}` },
+  { label: region?.name }
+];
 
     return (
         <div className='regions'>
@@ -55,7 +45,7 @@ const Regions = () => {
                                 <li key={district.id} className="regions__sidebar-item">
                                     {district.hasInfo ? (
                                         <Link
-                                            to={`/${countryPath}/${regionsPath}/${district.patch}`}
+                                            to={`/${countryPath}/${regionsPath}/${district.path}`}
                                             className="regions__sidebar-link"
                                         >
                                             {district.name}
@@ -80,7 +70,7 @@ const Regions = () => {
                                 <li key={city.id} className="regions__sidebar-item">
                                     {city.hasInfo ? (
                                         <Link
-                                            to={`/${countryPath}/${regionsPath}/city/${city.patch}`}
+                                            to={`/${countryPath}/${regionsPath}/city/${city.path}`}
                                             className="regions__sidebar-link"
                                         >
                                             {city.name}
@@ -104,6 +94,13 @@ const Regions = () => {
                 {region.currentMap && (
                     <img src={`${BASE_PHOTO_URL}${region.currentMap}`} alt={`${region?.country} map`} />
                 )}
+
+                <div className='country__map'>
+                    <CountryMap
+                        countryKey={region.path}
+                        regions={region.regions}
+                    />
+                </div>
 
                 {region.desc.capital && <InfoBlock data={region.desc.capital} className="regions__capital" />}
                 {region.desc.population && <InfoBlock data={region.desc.population} className="regions__population" />}
