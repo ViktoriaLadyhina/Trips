@@ -112,8 +112,6 @@ function useCityFullData() {
     setCity(foundCity);
     setError(null);
   }, [lang, countryPath, regionsPath, districtPath, cityPath]);
-
-  console.log(attractions);
   
 
   return {

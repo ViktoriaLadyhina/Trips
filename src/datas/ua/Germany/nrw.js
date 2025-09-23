@@ -397,7 +397,7 @@ const datas = {
                             communities: [
                                 { id: 1, name: "Бедбург", hasInfo: false },
                                 { id: 2, name: "Бергхайм", hasInfo: false },
-                                { id: 3, name: "Брюль", hasInfo: true, patch: "bruehl" },
+                                { id: 3, name: "Брюль", hasInfo: true, path: "bruehl" },
                                 { id: 4, name: "Ельсдорф", hasInfo: false },
                                 { id: 5, name: "Ерфтштадт", hasInfo: false },
                                 { id: 6, name: "Фрехен", hasInfo: false },

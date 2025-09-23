@@ -1,0 +1,72 @@
+@use '../../styles//variables' as *;
+
+.attraction {
+
+    &__title {
+        @include h3();
+        margin: 40px;
+    }
+
+    &__desc {
+        overflow: hidden;
+
+        &-foto {
+            float: left;
+            width: 300px;
+            margin: 0 15px 15px 0;
+            border-radius: 8px;
+            // box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+
+            img {
+                width: 100%;
+                height: auto;
+                border-radius: 8px;
+                box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            }
+        }
+
+        &-full_description,
+        &-interestingFacts {
+            padding: 10px;
+            flex: 1; // чтобы текст занимал оставшееся место
+            text-align: left;
+
+            &-title {
+                @include h3();
+                padding: 10px;
+                text-align: center;
+            }
+
+            &-bold {
+                @include bold-text;
+                display: inline;
+                text-align: justify;
+            }
+
+            &-text {
+                @include body-text;
+                text-align: justify;
+                display: inline;
+            }
+        }
+
+        &-construction_period,
+        &-founder {
+            text-align: left;
+
+            &-bold {
+                @include bold-text;
+            }
+
+            &-text {
+                @include body-text
+            }
+        }
+    }
+}
+
+// @media (max-width: 500px) {
+//     .attrCard__desc {
+//         flex-wrap: wrap;
+//     }
+// }
