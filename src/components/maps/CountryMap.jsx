@@ -1,16 +1,19 @@
-import React from "react";
 import GermanyMap from "./germany/Germany";
+import SumskaMap from "./ukraine/SumskaMap";
 import UkraineMap from './ukraine/Ukraine';
 
 const maps = {
-  germany: GermanyMap,
-  ukraine: UkraineMap,
+  germany: { country: GermanyMap },
+  ukraine: { country: UkraineMap, sumska: SumskaMap },
 };
 
-export default function CountryMap({ countryKey, regions }) {
-  const MapComponent = maps[countryKey];
+export default function CountryMap({ countryKey, regionKey, regions }) {
+  const country = maps[countryKey];
+  if (!country) return null;
 
-  if (!MapComponent) return null; // если для страны нет интерактивной карты
+  const MapComponent = regionKey && country[regionKey] ? country[regionKey] : country.country;
+  if (!MapComponent) return null;
 
-  return <MapComponent regions={regions} countryPath={countryKey} />;
+
+  return <MapComponent regions={regions} countryPath={countryKey} regionPath={regionKey} />;
 }

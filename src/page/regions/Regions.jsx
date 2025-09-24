@@ -25,11 +25,12 @@ const Regions = () => {
     if (error) return <p>{error}</p>;
     if (!country) return <p>Loading...</p>;
 
-const crumbs = [
-  { label: lang === 'ru' ? 'Главная' : lang === 'de' ? 'Startseite' : 'Головна', path: '/' },
-  { label: country?.countryName, path: `/${country.path}` },
-  { label: region?.name }
-];
+    const crumbs = [
+        { label: lang === 'ru' ? 'Главная' : lang === 'de' ? 'Startseite' : 'Головна', path: '/' },
+        { label: country?.countryName, path: `/${country.path}` },
+        { label: region?.name }
+    ];
+
 
     return (
         <div className='regions'>
@@ -90,15 +91,11 @@ const crumbs = [
             <div className="regions__content">
                 <BreadCrumbs crumbs={crumbs} />
 
-                <h1 className="regions__title">{region.name}</h1>
-                {region.currentMap && (
-                    <img src={`${BASE_PHOTO_URL}${region.currentMap}`} alt={`${region?.country} map`} />
-                )}
-
-                <div className='country__map'>
+                <div className='regions__map'>
                     <CountryMap
-                        countryKey={region.path}
-                        regions={region.regions}
+                        countryKey={country?.path}
+                        regions={region}
+                        regionKey={region?.path}
                     />
                 </div>
 

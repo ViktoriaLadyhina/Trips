@@ -3,7 +3,6 @@ const datas = {
     name: 'Северный Рейн-Вестфалия',
     hasInfo: true,
     path: 'nrw',
-    currentMap: "Germania/Nordrhein/nrw2.gif",
     desc: {
         capital: [
             { bold: 'Столица:' },

@@ -36,7 +36,7 @@ const regionCenters = {
 export default function UkraineMap({ regions, countryPath }) {
   const navigate = useNavigate();
   const regionItems = regions?.items || [];
-  
+
   const [hoverRegion, setHoverRegion] = useState(null);
   const [tooltipPos, setTooltipPos] = useState([0, 0]);
 
@@ -95,22 +95,22 @@ export default function UkraineMap({ regions, countryPath }) {
               >
                 {displayName.includes("-")
                   ? displayName.split("-").map((part, i) => (
-                      <tspan
-                        key={i}
-                        x={center.x + (center.dx || 0)}
-                        dy={i === 0 ? `${center.dy}em` : "1.2em"}
-                      >
-                        {i === 0 ? part.trim() + "-" : part.trim()}
-                      </tspan>
-                    ))
+                    <tspan
+                      key={i}
+                      x={center.x + (center.dx || 0)}
+                      dy={i === 0 ? `${center.dy}em` : "1.2em"}
+                    >
+                      {i === 0 ? part.trim() + "-" : part.trim()}
+                    </tspan>
+                  ))
                   : (
-                      <tspan
-                        x={center.x + (center.dx || 0)}
-                        dy={`${center.dy}em`}
-                      >
-                        {displayName}
-                      </tspan>
-                    )}
+                    <tspan
+                      x={center.x + (center.dx || 0)}
+                      dy={`${center.dy}em`}
+                    >
+                      {displayName}
+                    </tspan>
+                  )}
               </text>
             );
           })}

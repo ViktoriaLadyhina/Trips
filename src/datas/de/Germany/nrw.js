@@ -3,7 +3,6 @@ const datas = {
     name: 'Nordrhein-Westfalen',
     hasInfo: true,
     path: 'nrw',
-    currentMap: "Germania/Nordrhein/nrw2.gif",
     desc: {
         capital: [
             { bold: 'Hauptstadt:' },
