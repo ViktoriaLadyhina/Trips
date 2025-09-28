@@ -1,33 +1,31 @@
-import { Link } from "react-router"; // или react-router-dom
-import { useSearchRegions } from "../../hooks/useSearchRegions";
 import { useState } from "react";
+import { useNavigate } from "react-router-dom";
 
-export default function SearchPage() {
-  const [query, setQuery] = useState("");
-  const [results, setResults] = useState([]);
-  const { search } = useSearchRegions();
+const Search = () => {
+  const [value, setValue] = useState('');
+  const navigate = useNavigate();
 
-  function handleSearch() {
-    setResults(search(query));
-  }
+  const handleSearch = () => {
+    if (value.trim()) {
+      navigate(`/search?query=${encodeURIComponent(value.trim())}`);
+    }
+  };
+
+  const handleKeyPress = (e) => {
+    if (e.key === "Enter") handleSearch();
+  };
 
   return (
     <div>
-      <input value={query} onChange={e => setQuery(e.target.value)} />
+      <input
+        value={value}
+        onChange={e => setValue(e.target.value)}
+        onKeyPress={handleKeyPress}
+        placeholder="Введите слово для поиска"
+      />
       <button onClick={handleSearch}>Найти</button>
-
-      <ul>
-        {results.map((r, i) => (
-          <li key={i}>
-            <Link to={r.link}>
-              {r.country && `${r.country} → `}
-              {r.region && `${r.region} → `}
-              {r.city && `${r.city}: `}
-            </Link>
-            {r.value}
-          </li>
-        ))}
-      </ul>
     </div>
   );
-}
+};
+
+export default Search;

@@ -3,6 +3,7 @@ const datas = [
         id: 1,
         name: 'Brühl',
         path: "bruehl",
+        district: "koln",
         desc: {
             general: [
                 { text: 'Stadt im Bundesland Nordrhein-Westfalen' }
@@ -62,6 +63,7 @@ const datas = [
         id: 2,
         name: 'Köln',
         path: "koeln",
+        district: "city",
         desc: {
             general: [
                 { text: 'Köln ist die größte Stadt des Bundeslandes Nordrhein-Westfalen und die viertgrößte Stadt Deutschlands.' },

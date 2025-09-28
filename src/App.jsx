@@ -8,6 +8,7 @@ import District from "./page/district/District";
 import City from './page/city/City'
 import AttractionsList from './page/attractions/AttractionsList';
 import Attraction from './page/attraction/Attraction';
+import SearchPage from './page/searchPage/SearchPage';
 
 function App() {
 
@@ -23,6 +24,7 @@ function App() {
           <Route path="/:countryPath/:regionsPath/:districtPath/:cityPath" element={<City />} />
           <Route path="/:countryPath/:regionsPath/:districtPath/:cityPath/attractions" element={<AttractionsList />} />
           <Route path="/:countryPath/:regionsPath/:districtPath/:cityPath/attractions/:attractionsPath" element={<Attraction />} />
+          <Route path="/search" element={<SearchPage />} />
         </Route>
       </Routes>
     </>
