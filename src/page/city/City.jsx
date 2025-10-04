@@ -1,4 +1,4 @@
-import { useNavigate, useParams } from 'react-router';
+import { useParams } from 'react-router';
 import { photosByCountry } from "../../datas/fotos/index.js";
 
 import BreadCrumbs from '../../components/breadCrumbs/BreadCrumbs.jsx';
@@ -6,13 +6,13 @@ import InfoBlock from '../../components/InfoBlock/InfoBlock.jsx';
 import { useMeta } from '../../hooks/useMeta.js';
 import './City.scss'
 import useCityFullData from '../../hooks/useCityFullData.js';
+import BtnAttr from '../../components/btn-attr/BtnAttr.jsx';
 
 const BASE_PHOTO_URL = import.meta.env.VITE_BASE_PHOTO_URL;
 
 const City = () => {
     const { countryPath, regionsPath, districtPath, cityPath } = useParams();
     const { country, region, district, parentSubRegion, city, cityData, lang, error } = useCityFullData();
-    const navigate = useNavigate();
 
     useMeta(cityData?.meta);
 
@@ -20,11 +20,6 @@ const City = () => {
     if (!cityData) return <p>Loading...</p>;
 
     const photos = photosByCountry[countryPath];
-
-    const handleClick = () => {
-        navigate(`/${countryPath}/${regionsPath}/${districtPath}/${cityPath}/attractions`);
-    };
-
 
     // Хлебные крошки
     const crumbs = [
@@ -36,12 +31,6 @@ const City = () => {
         { label: city.name }
     ];
 
-    const attractions = {
-        ru: "Достопримечательности",
-        ua: "Пам'ятки",
-        de: "Sehenswürdigkeiten"
-    }
-
     return (
         <div className='city'>
             {cityData && (
@@ -51,7 +40,7 @@ const City = () => {
                     <div className='city__container'>
                         {cityData.name && <div className='city__title'>{cityData.name}</div>}
 
-                        <button className='city__button' onClick={handleClick}>{attractions[lang]}</button>
+                        <BtnAttr lang={lang} path={`/${countryPath}/${regionsPath}/${districtPath}/${cityPath}/attractions`}/>
 
                         <div className='city__desc'>
                             {cityData.desc?.general && (<InfoBlock data={cityData.desc.general} className="city__desc-general" />)}

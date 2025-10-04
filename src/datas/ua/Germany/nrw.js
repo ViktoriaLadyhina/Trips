@@ -513,6 +513,7 @@ const datas = {
         {
             title: "Вільні міста в Північному Рейні-Вестфалії",
             items: [
+                { id: 28, name: 'Аахен', hasInfo: false, path: "aachen" },
                 { id: 6, name: 'Білефельд', hasInfo: false, path: "bielefeld", },
                 { id: 7, name: 'Бонн', hasInfo: false, path: "bonn", },
                 { id: 8, name: 'Боттроп', hasInfo: false, path: "bottrop", },

@@ -1,13 +1,35 @@
-.header {
-  width: 100vw;       // 100% ширины экрана
-  max-width: 100%;    
-  margin: 0;
-  padding: 0;
-  text-align: center;
+@use '../../styles/variables' as *;
 
-  img {
-    display: block;
-    width: 100%;      // растягиваем на всю ширину блока
-    height: auto;     // сохраняем пропорции
+.header {
+  padding: 20px;
+
+  &__title {
+    @include h1();
+    margin: 60px;
+    text-align: center;
+  }
+
+  &__menu {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: space-between;
+
+    &-theme {
+      display: flex;
+      justify-content: space-between;
+    }
+
+
+    &-lang {
+      display: flex;
+      justify-content: space-between;
+      padding-left: 160px;
+    }
+
+    &-search {
+      display: flex;
+      justify-content: space-between;
+    }
   }
 }

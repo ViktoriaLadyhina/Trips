@@ -1,12 +1,18 @@
 @use '../../styles/variables' as *;
 
-.district{
+.district {
     margin-top: 40px;
 
-        &__title {
+    &__title {
         @include h1();
         margin-bottom: 20px;
         text-align: center;
+    }
+
+    &__map {
+        max-width: 1000px;
+        margin: 0 auto; // центрируем блок
+        display: block; // чтобы SVG растягивался нормально
     }
 
     &__history,

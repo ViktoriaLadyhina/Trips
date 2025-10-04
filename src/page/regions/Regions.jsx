@@ -10,6 +10,7 @@ import './Regions.scss'
 import { useState } from 'react';
 import CountryMap from '../../components/maps/CountryMap';
 import useCityFullData from '../../hooks/useCityFullData';
+import BtnAttr from "../../components/btn-attr/BtnAttr";
 
 const BASE_PHOTO_URL = import.meta.env.VITE_BASE_PHOTO_URL;
 
@@ -30,7 +31,6 @@ const Regions = () => {
         { label: country?.countryName, path: `/${country.path}` },
         { label: region?.name }
     ];
-
 
     return (
         <div className='regions'>
@@ -90,6 +90,10 @@ const Regions = () => {
 
             <div className="regions__content">
                 <BreadCrumbs crumbs={crumbs} />
+
+                <h1 className="regions__title">{region.name}</h1>
+
+<BtnAttr lang={lang} path={`/${countryPath}/${regionsPath}/attractions`}/>
 
                 <div className='regions__map'>
                     <CountryMap
