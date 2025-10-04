@@ -91,6 +91,8 @@ const Regions = () => {
             <div className="regions__content">
                 <BreadCrumbs crumbs={crumbs} />
 
+                
+
                 <div className='regions__map'>
                     <CountryMap
                         countryKey={country?.path}
