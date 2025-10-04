@@ -4,10 +4,10 @@ import { Link } from 'react-router-dom';
 
 const BASE_PHOTO_URL = import.meta.env.VITE_BASE_PHOTO_URL;
 
-const Region = ({ data, countryPath, regionsPath, districtPath }) => {
+const Region = ({ data, countryPath, regionsPath, districtPath, id }) => {
 
   return (
-    <div className='region'>
+    <div className='region' id={id}>
       {(data?.name || data?.fullName) && (
         <div className='region__title'>
           {data.name} {data.fullName ? `(${data.fullName})` : ''}

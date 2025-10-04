@@ -1,4 +1,3 @@
-// src/hooks/useCityFullData.js
 import { useState, useEffect } from "react";
 import { useParams } from "react-router";
 import { useSelector } from "react-redux";
@@ -32,7 +31,6 @@ function useCityFullData() {
       return;
     }
     foundCountry.path = countryPath;
-    
 
     const foundRegion = foundCountry[regionsPath];
     if (!foundRegion) {
@@ -91,19 +89,27 @@ function useCityFullData() {
     }
 
     // Загружаем достопримечательности
- const modulesAttr = import.meta.glob("../datas/*/*/*-attractions.js");
-      const keyAttr = Object.keys(modulesAttr).find(path =>
-        path.endsWith(`${lang}/${countryPath}/${regionsPath}-attractions.js`)
-      );
-      if (keyAttr) {
-        modulesAttr[keyAttr]()
-          .then(module => {
-            const cityAttractions = module.default.filter(a => a.cityPath === cityPath);
-            setAttractions(cityAttractions);
-          })
-          .catch(() => console.warn("Attractions data file not found"));
-      }
+    const modulesAttr = import.meta.glob("../datas/*/*/*-attractions.js");
+    const keyAttr = Object.keys(modulesAttr).find(path =>
+      path.endsWith(`${lang}/${countryPath}/${regionsPath}-attractions.js`)
+    );
+    if (keyAttr) {
+      modulesAttr[keyAttr]()
+        .then(module => {
+          let filteredAttractions = [];
 
+          if (cityPath) {
+            filteredAttractions = module.default.filter(a => a.cityPath === cityPath);
+          } else if (districtPath) {
+            filteredAttractions = module.default.filter(a => a.districtPath === districtPath);
+          } else if (regionsPath) {
+            filteredAttractions = module.default.filter(a => a.regionsPath === regionsPath);
+          }
+
+          setAttractions(filteredAttractions);
+        })
+        .catch(() => console.warn("Attractions data file not found"));
+    }
 
     setCountry(foundCountry);
     setRegion(foundRegion);
@@ -111,8 +117,8 @@ function useCityFullData() {
     setParentSubRegion(foundParentSubRegion);
     setCity(foundCity);
     setError(null);
+
   }, [lang, countryPath, regionsPath, districtPath, cityPath]);
-  
 
   return {
     lang,

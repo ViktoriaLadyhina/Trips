@@ -505,6 +505,7 @@ const datas = {
         {
             title: "Kreisfreie Städte in Nordrhein-Westfalen",
             items: [
+                { id: 28, name: 'Aachen', hasInfo: false, path: "aachen" },
                 { id: 6, name: 'Bielefeld', hasInfo: false, path: "bielefeld", },
                 { id: 7, name: 'Bonn', hasInfo: false, path: "bonn", },
                 { id: 8, name: 'Bottrop', hasInfo: false, path: "bottrop", },

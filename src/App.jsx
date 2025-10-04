@@ -18,12 +18,21 @@ function App() {
       <Routes>
         <Route path='/' element={<Layout />}>
           <Route index element={<Home />} />
+
           <Route path="/:countryPath" element={<Country />} />
+
           <Route path="/:countryPath/:regionsPath" element={<Regions />} />
+
           <Route path="/:countryPath/:regionsPath/:districtPath" element={<District />} />
+
           <Route path="/:countryPath/:regionsPath/:districtPath/:cityPath" element={<City />} />
+
+          <Route path="/:countryPath/:regionsPath/attractions" element={<AttractionsList />} />
+          <Route path="/:countryPath/:regionsPath/:districtPath/attractions" element={<AttractionsList />} />
           <Route path="/:countryPath/:regionsPath/:districtPath/:cityPath/attractions" element={<AttractionsList />} />
+
           <Route path="/:countryPath/:regionsPath/:districtPath/:cityPath/attractions/:attractionsPath" element={<Attraction />} />
+
           <Route path="/search" element={<SearchPage />} />
         </Route>
       </Routes>

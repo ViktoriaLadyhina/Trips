@@ -4,6 +4,7 @@ const datas = [
         name: "Палаци Брюля: ансамбль Аугустусбург і Фалькенлюст",
         type: "палац",
         path: 'bruehl-palaces',
+        regionsPath: "nrw",
         districtPath: "koln",
         cityPath: "bruehl",
         fotoCard: "Germania/Nordrhein/Bruhl/001.jpg",
