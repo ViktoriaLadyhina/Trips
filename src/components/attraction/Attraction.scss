@@ -12,6 +12,7 @@
     &__title {
         @include h3();
         margin: 10px;
+        font-size: 1.5rem; // базовый размер
     }
 
     &__desc {
@@ -20,32 +21,81 @@
         gap: 10px;
 
         &-foto {
-            padding: 6px;
+            flex-shrink: 0;
+            max-width: 250px;
 
             img {
+                width: 250px;
+                height: auto;
                 border-radius: 8px;
-                 box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+                box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+                object-fit: cover;
             }
         }
 
         &-info {
             text-align: left;
 
-        &-text {
-            @include body-text;
-            padding: 10px;
-            flex: 1; // чтобы текст занимал оставшееся место
-        }
+            &-text {
+                @include body-text;
+                padding: 10px;
+                flex: 1;
+            }
 
-        &-more {
-            @include bold-text;
-            padding: 10px;
+            &-more {
+                @include bold-text;
+                padding: 10px;
+            }
         }
-    }
     }
 }
+
+// Адаптивность
+@media (max-width: 768px) {
+    .attrCard__desc {
+        flex-direction: column; // текст переходит под фото
+        align-items: flex-start; // фото слева, текст под ним
+        gap: 10px; // отступ между фото и текстом
+    }
+
+    .attrCard__desc-info-text,
+    .attrCard__desc-info-more {
+        padding: 5px 0;
+        text-align: left; // текст по левому краю
+    }
+
+    .attrCard__title {
+        font-size: 1.3rem;
+    }
+}
+
 @media (max-width: 500px) {
     .attrCard__desc {
-        flex-wrap: wrap;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .attrCard__desc-foto {
+        max-width: 100%; // убрали фиксированное ограничение
+        width: 100%;     // изображение под размер контейнера
+    }
+
+    .attrCard__desc-foto img {
+        width: 100%;    // обязательно подстраиваем img
+        height: auto;   // сохраняем пропорции
+    }
+
+    .attrCard__desc-info-text {
+        padding: 5px;
+        text-align: center;
+    }
+
+    .attrCard__desc-info-more {
+        padding: 5px;
+        text-align: center;
+    }
+
+    .attrCard__title {
+        font-size: 1.1rem;
     }
 }

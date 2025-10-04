@@ -32,7 +32,7 @@ const Attraction = () => {
             label: lang === "ru" ? "Достопримечательности" : lang === "de" ? "Sehenswürdigkeiten" : "Пам'ятки",
             path: `/${country.path}/${region.path}/${districtPath ? districtPath + '/' : ''}${city.path}/attractions`
         },
-        attraction ? { label: attraction.name } : null  
+        attraction ? { label: attraction.name } : null
     ].filter(Boolean);
 
     const construction_periodTitle = {
@@ -71,8 +71,11 @@ const Attraction = () => {
                     <span className='attraction__desc-construction_period-text'>{attraction.construction_period && (attraction.construction_period)}</span>
                 </div>
 
+                {attraction.tickets_and_entry && (<InfoBlock data={attraction.tickets_and_entry} className="attraction__desc-tickets_and_entry" />)}
                 {attraction.full_description && (<InfoBlock data={attraction.full_description} className="attraction__desc-full_description" />)}
                 {attraction.interestingFacts && (<InfoBlock data={attraction.interestingFacts} className="attraction__desc-interestingFacts" />)}
+
+                {attraction?.officialSite && (<InfoBlock data={attraction.officialSite} className="attraction__desc-officialSite" />)}
             </div>
         </div>
     )

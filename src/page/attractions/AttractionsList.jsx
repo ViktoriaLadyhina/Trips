@@ -7,7 +7,7 @@ import useCityFullData from '../../hooks/useCityFullData.js';
 import './Attractions.scss'
 
 const AttractionsList = () => {
-    const { countryPath, regionsPath, districtPath, cityPath } = useParams();
+    const { districtPath, cityPath } = useParams();
     const { country, region, district, parentSubRegion, city, attractions, lang, error } = useCityFullData();
 
     if (error) return <p>{error}</p>;
@@ -38,10 +38,6 @@ const filteredAttractions = attractions?.filter(attr => {
         ua: "Пам'ятки",
         de: "Sehenswürdigkeiten"
     }
-
-console.log("URL params:", { countryPath, regionsPath, districtPath, cityPath });
-console.log("Attractions data:", attractions);
-console.log("Filtered:", filteredAttractions);
 
     return (
         <div className="attractions">
