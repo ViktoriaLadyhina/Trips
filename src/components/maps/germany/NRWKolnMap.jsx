@@ -7,18 +7,18 @@ const slugify = (str = "") =>
   str.toString().toLowerCase().trim().replace(/\s+/g, "-").replace(/[^\w\-]/g, "");
 
 const kolnDistrictCenters = {
-  AC: { x: 35, y: 220, dx: 0, dy: -50 },
-  DN: { x: 70, y: 190, dx: -5, dy: -25 },
-  EU: { x: 100, y: 250, dx: -15, dy: -45 },
-  HS: { x: 30, y: 270, dx: 5, dy: -145 },
-  GM: { x: 160, y: 230, dx: 20, dy: -90 },
-  BM: { x: 110, y: 200, dx: -20, dy: -55 },
-  SU: { x: 140, y: 180, dx: 10, dy: -15 },
-  GL: { x: 180, y: 180, dx: -42, dy: -45 },
-  K: { x: 120, y: 150, dx: -2, dy: -5 },
-  LEV: { x: 160, y: 140, dx: -34, dy: -12 },
-  BN: { x: 80, y: 160, dx: 51, dy: 20 },
-  A: { x: 35, y: 220, dx: -15, dy: -35 },
+  AC: { x: 35, y: 220, dx: 0, dy: 10 },
+  DN: { x: 70, y: 190, dx: -10, dy: 30 },
+  EU: { x: 100, y: 250, dx: -20, dy: 15 },
+  HS: { x: 30, y: 270, dx: 5, dy: -85 },
+  GM: { x: 160, y: 230, dx: 5, dy: -40 },
+  BM: { x: 110, y: 200, dx: -25, dy: 5 },
+  SU: { x: 140, y: 180, dx: 5, dy: 40 },
+  GL: { x: 180, y: 180, dx: -48, dy: 10 },
+  K: { x: 120, y: 150, dx: -10, dy: 50 },
+  LEV: { x: 160, y: 140, dx: -40, dy: 44 },
+  BN: { x: 80, y: 160, dx: 43, dy: 77 },
+  A: { x: 35, y: 220, dx: -12, dy: 2 },
 };
 
 const NRWKolnMap = ({ regions }) => {
@@ -58,7 +58,7 @@ const NRWKolnMap = ({ regions }) => {
 
   return (
     <div className="koln-map">
-      <svg viewBox="0 0 210 250">
+      <svg viewBox="0 150 210 155">
         <g className="map-shape">
           {/* 1️⃣ Субрегионы */}
           {kolnSubRegions.map((reg) => {
