@@ -2,7 +2,7 @@ import GermanyMap from "./germany/Germany";
 import SumskaMap from "./ukraine/SumskaMap";
 import UkraineMap from './ukraine/Ukraine';
 import NRWMap from './germany/NRWMap';
-import NRWKolnMap from './germany/NRW-KolnMap';
+import NRWKolnMap from './germany/NRWKolnMap';
 
 const maps = {
   germany: {
