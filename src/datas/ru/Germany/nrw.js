@@ -505,6 +505,7 @@ const datas = {
         {
             title: "Свободные города в Северном Рейне-Вестфалии",
             items: [
+                { id: 28, name: 'Аахен', hasInfo: false, path: "aachen" },
                 { id: 6, name: 'Билефельд', hasInfo: false, path: "bielefeld", },
                 { id: 7, name: 'Бонн', hasInfo: false, path: "bonn", },
                 { id: 8, name: 'Боттроп', hasInfo: false, path: "bottrop", },

@@ -4,6 +4,7 @@ const datas = [
         name: "Brühler Schlösser: Ensemble Augustusburg und Falkenlust",
         type: "Schloss",
         path: 'bruehl-palaces',
+        regionsPath: "nrw",
         districtPath: "koln",
         cityPath: "bruehl",
         fotoCard: "Germania/Nordrhein/Bruhl/001.jpg",

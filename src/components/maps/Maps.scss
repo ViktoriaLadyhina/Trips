@@ -58,5 +58,17 @@
       text-anchor: middle; // по центру
       pointer-events: none; // чтобы не мешали клику на path
     }
+
+    .map-label {
+      font-size: 4px; 
+    }
   }
+}
+
+.koln-map svg .map-shape path {
+  filter: none; // внутренние патчи
+}
+
+.koln-map svg .map-shape path.outer {
+  filter: drop-shadow(0 0 8px rgba(0,0,0,0.7));
 }

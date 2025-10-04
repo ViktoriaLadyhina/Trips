@@ -1,4 +1,5 @@
-
+import { useEffect } from "react";
+import { useLocation, useNavigate, useParams } from "react-router";
 import BreadCrumbs from '../../components/breadCrumbs/BreadCrumbs.jsx';
 import Region from '../../components/region/Region.jsx';
 import InfoBlock from '../../components/InfoBlock/InfoBlock.jsx'
@@ -6,15 +7,38 @@ import { useMeta } from '../../hooks/useMeta';
 
 import './District.scss'
 import useCityFullData from '../../hooks/useCityFullData.js';
+import CountryMap from '../../components/maps/CountryMap.jsx';
+import BtnAttr from "../../components/btn-attr/BtnAttr.jsx";
 
 const BASE_PHOTO_URL = import.meta.env.VITE_BASE_PHOTO_URL;
 
+const slugify = (str = "") =>
+  str
+    .toString()
+    .toLowerCase()
+    .trim()
+    .replace(/\s+/g, "-")
+    .replace(/[^\w\-]/g, "");
+
 const District = () => {
+  const { countryPath, regionsPath, districtPath } = useParams();
   const { lang, country, region, district, error } = useCityFullData();
-  console.log(country);
-  
+  const location = useLocation();
 
   useMeta(district?.meta || {});
+
+  useEffect(() => {
+    const params = new URLSearchParams(location.search);
+    const scrollTo = params.get("scrollTo");
+
+    if (scrollTo) {
+      // даём компоненту время отрендериться
+      setTimeout(() => {
+        const el = document.getElementById(`subregion-${scrollTo}`);
+        el?.scrollIntoView({ behavior: "smooth" });
+      }, 50);
+    }
+  }, [location.search]);
 
   if (error) return <p>{error}</p>;
   if (!district) return <p>District not found</p>;
@@ -29,17 +53,20 @@ const District = () => {
   return (
     <div className='district'>
       <BreadCrumbs crumbs={crumbs} />
+
       <div className='district__container'>
         {district?.title && <div className='district__title'>{district.title}</div>}
 
-        {district?.currentMap && (
-          <div className='district__map'>
-            <img
-              src={`${BASE_PHOTO_URL}${district.currentMap}`}
-              alt={`${district?.title || 'district'} map`}
-            />
-          </div>
-        )}
+<BtnAttr lang={lang} path={`/${countryPath}/${regionsPath}/${districtPath}/attractions`}/>
+
+        <div className='district__map'>
+          <CountryMap
+            countryKey={country?.path}
+            regionKey={region?.path}
+            districtKey={district?.path}
+            regions={region}
+          />
+        </div>
 
         <div className='district__desc'>
           {district?.desc?.history && (<InfoBlock data={district.desc.history} className="district__history" />)}
@@ -55,7 +82,8 @@ const District = () => {
                 data={subRegion}
                 countryPath={country.path}
                 regionsPath={region.path}
-                districtPath={district.path} 
+                districtPath={district.path}
+                id={`subregion-${slugify(subRegion.fullName)}`}
               />
             ))}
           </div>
