@@ -2,6 +2,7 @@
 
 .regions {
     margin-top: 40px;
+    margin: 0 auto;
 
     &__content {
         padding: 5px;
@@ -11,6 +12,18 @@
         @include h1();
         margin-bottom: 20px;
         text-align: center;
+    }
+
+    &__map {
+        max-width: 600px;
+        margin: 0 auto 20px;
+        height: auto;
+        display: block;
+
+        svg {
+            width: 100%;
+            height: auto;
+        }
     }
 
     &__capital,

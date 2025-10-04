@@ -10,6 +10,7 @@ import './Regions.scss'
 import { useState } from 'react';
 import CountryMap from '../../components/maps/CountryMap';
 import useCityFullData from '../../hooks/useCityFullData';
+import BtnAttr from "../../components/btn-attr/BtnAttr";
 
 const BASE_PHOTO_URL = import.meta.env.VITE_BASE_PHOTO_URL;
 
@@ -25,11 +26,11 @@ const Regions = () => {
     if (error) return <p>{error}</p>;
     if (!country) return <p>Loading...</p>;
 
-const crumbs = [
-  { label: lang === 'ru' ? 'Главная' : lang === 'de' ? 'Startseite' : 'Головна', path: '/' },
-  { label: country?.countryName, path: `/${country.path}` },
-  { label: region?.name }
-];
+    const crumbs = [
+        { label: lang === 'ru' ? 'Главная' : lang === 'de' ? 'Startseite' : 'Головна', path: '/' },
+        { label: country?.countryName, path: `/${country.path}` },
+        { label: region?.name }
+    ];
 
     return (
         <div className='regions'>
@@ -91,14 +92,14 @@ const crumbs = [
                 <BreadCrumbs crumbs={crumbs} />
 
                 <h1 className="regions__title">{region.name}</h1>
-                {region.currentMap && (
-                    <img src={`${BASE_PHOTO_URL}${region.currentMap}`} alt={`${region?.country} map`} />
-                )}
 
-                <div className='country__map'>
+<BtnAttr lang={lang} path={`/${countryPath}/${regionsPath}/attractions`}/>
+
+                <div className='regions__map'>
                     <CountryMap
-                        countryKey={region.path}
-                        regions={region.regions}
+                        countryKey={country?.path}
+                        regions={region}
+                        regionKey={region?.path}
                     />
                 </div>
 

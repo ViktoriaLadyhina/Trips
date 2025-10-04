@@ -1,0 +1,57 @@
+@use '../../styles/variables' as *;
+
+.search-results {
+    
+    &__title {
+        @include h1();
+        margin: 40px;
+    }
+  span {
+    display: block;
+    font-weight: 600;
+    margin: 1rem 0 0.5rem;
+    color: #333;
+    @include bold-text;
+  }
+
+  ul {
+    list-style: none;
+    padding-left: 0;
+    margin: 0 0 1rem 0;
+    text-align: left;
+
+    li {
+      margin-bottom: 0.5rem;
+      @include body-text;
+
+      > a {
+        display: inline-block;
+        font-weight: 500;
+        color: var(--color-primary); // цвет ссылки
+        text-decoration: none;
+        transition: color 0.2s;
+
+        &:hover {
+          color: #0056b3;
+        }
+      }
+
+      ul {
+        margin-top: 0.25rem;
+        padding-left: 1.5rem; // сдвиг подпунктов
+
+        li {
+          margin-bottom: 0.25rem;
+          font-weight: 400;
+          @include body-text;
+
+
+          &:before {
+            content: "• "; // маркер
+            color: #999;
+          }
+        }
+      }
+    }
+  }
+}

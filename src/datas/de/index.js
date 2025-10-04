@@ -8,14 +8,40 @@ import sumska from './ukraine/sumska'
 
 export const regions = {
   germany: {
-    countryName: "Deutschland",
+    countryName: "Германия",
     nrw,
     'nrw-city': nrwCity,
     'nrw-attractions': nrwAttractions
   },
   ukraine: {
-    countryName: "Ukraine",
-    sumska
+    countryName: "Украина",
+    sumska,
   },
-
 };
+
+export const regionsSearch = {
+    germany: {
+    nrw,
+  },
+  ukraine: {
+    sumska,
+  },
+}
+
+export const citySearch = {
+    germany: {
+    'nrw-city': nrwCity,
+  },
+  ukraine: {
+
+  },
+}
+
+export const attractionsSearch = {
+    germany: {
+    'nrw-attractions': nrwAttractions
+  },
+  ukraine: {
+
+  },
+}

@@ -3,7 +3,6 @@ const datas = {
     name: 'Сумская область',
     hasInfo: true,
     path: 'sumska',
-    currentMap: "Ukraine/Sumy/sumy_map.gif",
     desc: {
         capital: [
             { bold: 'Административный центр:' },

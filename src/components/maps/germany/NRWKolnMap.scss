@@ -1,0 +1,51 @@
+.koln-map {
+  svg {
+    width: 100%;
+    height: auto;
+    display: block;
+
+    .map-shape {
+      /* Убираем все drop-shadow */
+      filter: none;
+
+      path {
+        fill: #d9e6f2;
+        stroke: #333;           
+        stroke-width: 0.2;        
+        transition: fill 0.3s, stroke-width 0.3s;
+
+        &.interactive {
+          cursor: pointer;
+
+          &:hover {
+            fill: #6ca0dc;
+            stroke-width: 0.7;  
+          }
+        }
+
+        &.disabled {
+          cursor: default;
+
+          &:hover {
+            stroke-width: 1;
+            stroke: #bbb;     
+          }
+        }
+
+        filter: none 
+      }
+
+      text {
+        font-size: 14px;
+        font-weight: 700;
+        fill: #0d3b66;
+        text-anchor: middle;
+        pointer-events: none;
+
+        &.map-label {
+          font-size: 4px;
+        }
+      }
+    }
+  }
+}

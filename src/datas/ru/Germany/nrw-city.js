@@ -3,6 +3,7 @@ const datas = [
         id: 1,
         name: 'Брюль',
         path: "bruehl",
+        district: "koln",
         desc: {
             general: [
                 { text: 'Город в земле Северный Рейн-Вестфалия' }
@@ -62,6 +63,7 @@ const datas = [
         id: 2,
         name: 'Кёльн',
         path: "koeln",
+        district: "city",
         desc: {
             general: [
                 { text: 'Кёльн – крупнейший город земли Северный Рейн-Вестфалия и четвёртый по численности город Германии.' },

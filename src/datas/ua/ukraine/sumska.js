@@ -3,7 +3,6 @@ const datas = {
     name: 'Сумська область',
     hasInfo: true,
     path: 'sumska',
-    currentMap: "Ukraine/Sumy/sumy_map.gif",
     desc: {
         capital: [
             { bold: 'Адміністративний центр:' },
@@ -108,23 +107,23 @@ const datas = {
         {
             title: "Райони Сумської області",
             items: [
-                { id: 1, name: "Сумський", hasInfo: false, patch: "sumskyi" },
-                { id: 2, name: "Ахтирський", hasInfo: false, patch: "akhtyrskyi" },
-                { id: 3, name: "Конотопський", hasInfo: false, patch: "konotopskyi" },
-                { id: 4, name: "Роменський", hasInfo: false, patch: "romenskyi" },
-                { id: 5, name: "Шосткинський", hasInfo: false, patch: "shostkynskyi" }
+                { id: 1, name: "Сумський", hasInfo: false, path: "sumskyi" },
+                { id: 2, name: "Ахтирський", hasInfo: false, path: "akhtyrskyi" },
+                { id: 3, name: "Конотопський", hasInfo: false, path: "konotopskyi" },
+                { id: 4, name: "Роменський", hasInfo: false, path: "romenskyi" },
+                { id: 5, name: "Шосткинський", hasInfo: false, path: "shostkynskyi" }
             ]
         },
         {
             title: "Міста обласного підпорядкування",
             items: [
-                { id: 1, name: "Суми", hasInfo: false, patch: "sumy" },
-                { id: 2, name: "Лебедин", hasInfo: false, patch: "lebedyn" },
-                { id: 3, name: "Ромни", hasInfo: false, patch: "romny" },
-                { id: 4, name: "Шостка", hasInfo: false, patch: "shostka" },
-                { id: 5, name: "Ахтирка", hasInfo: false, patch: "akhtyrka" },
-                { id: 6, name: "Глухів", hasInfo: false, patch: "gluhov" },
-                { id: 7, name: "Конотоп", hasInfo: false, patch: "konotop" }
+                { id: 1, name: "Суми", hasInfo: false, path: "sumy" },
+                { id: 2, name: "Лебедин", hasInfo: false, path: "lebedyn" },
+                { id: 3, name: "Ромни", hasInfo: false, path: "romny" },
+                { id: 4, name: "Шостка", hasInfo: false, path: "shostka" },
+                { id: 5, name: "Ахтирка", hasInfo: false, path: "akhtyrka" },
+                { id: 6, name: "Глухів", hasInfo: false, path: "gluhov" },
+                { id: 7, name: "Конотоп", hasInfo: false, path: "konotop" }
             ]
         }
     ],

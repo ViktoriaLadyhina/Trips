@@ -1,9 +1,7 @@
 .map-container {
   width: 100%;
   height: auto;
-  ;
   margin: 0 auto;
-  overflow: visible;
 
   svg {
     width: 100%;
@@ -54,11 +52,23 @@
     }
 
     text {
-      font-size: 14px; // увеличить, если мелко
+      font-size: 14px; 
       font-weight: 700;
       fill: #0d3b66;
       text-anchor: middle; // по центру
       pointer-events: none; // чтобы не мешали клику на path
     }
+
+    .map-label {
+      font-size: 4px; 
+    }
   }
+}
+
+.koln-map svg .map-shape path {
+  filter: none; // внутренние патчи
+}
+
+.koln-map svg .map-shape path.outer {
+  filter: drop-shadow(0 0 8px rgba(0,0,0,0.7));
 }

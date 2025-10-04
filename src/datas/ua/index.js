@@ -19,3 +19,30 @@ export const regions = {
   },
 
 };
+
+export const regionsSearch = {
+    germany: {
+    nrw,
+  },
+  ukraine: {
+    sumska,
+  },
+}
+
+export const citySearch = {
+    germany: {
+    'nrw-city': nrwCity,
+  },
+  ukraine: {
+
+  },
+}
+
+export const attractionsSearch = {
+    germany: {
+    'nrw-attractions': nrwAttractions
+  },
+  ukraine: {
+
+  },
+}
