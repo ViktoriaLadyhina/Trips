@@ -1,0 +1,72 @@
+@use '../../styles/variables' as *;
+
+.search {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem; // расстояние между инпутом и кнопкой
+
+  input {
+    flex: 1; // инпут занимает доступное место
+    padding: 0.4rem 0.8rem;
+    border: 1px solid var(--color-text);
+    border-radius: 8px;
+    background-color: var(--color-cart-bg);
+    color: var(--color-text);
+    font-size: 1rem;
+    outline: none;
+    transition: all 0.3s ease;
+
+    &:hover,
+    &:focus {
+      border-color: var(--color-primary);
+    }
+
+    &::placeholder {
+      color: var(--color-text);
+      opacity: 0.7;
+    }
+  }
+
+  button {
+    padding: 0.4rem 1.2rem;
+    border-radius: 8px;
+    border: 1px solid var(--color-text);
+    background-color: var(--color-cart-bg);
+    color: var(--color-text);
+    font-size: 1rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+
+    &:hover {
+      border-color: var(--color-primary);
+      background-color: var(--color-primary-light); // если есть такая переменная
+      color: var(--color-bg); // для контраста текста
+    }
+  }
+
+  /* Темная тема */
+  [data-theme='dark'] & {
+    input {
+      background-color: var(--color-sidebar-bg);
+      color: var(--color-text);
+      border: 1px solid var(--color-text);
+    }
+
+    button {
+      background-color: var(--color-sidebar-bg);
+      color: var(--color-text);
+      border: 1px solid var(--color-text);
+    }
+  }
+
+  /* Адаптивность */
+  @media (max-width: 768px) {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 0.5rem;
+
+    button {
+      width: 100%;
+    }
+  }
+}

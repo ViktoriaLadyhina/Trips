@@ -16,6 +16,7 @@ export const Header = () => {
   return (
     <div className='header'>
       <div className='header__title'>{homeData?.title}</div>
+      <div className='header__image'><img src="/header.jpg" alt="" /></div>
       <div className='header__menu'>
         <div className='header__menu-theme'><ThemeToggle /></div>
         <div className='header__menu-lang'><LangSelector /></div>
