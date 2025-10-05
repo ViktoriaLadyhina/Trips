@@ -391,7 +391,7 @@ const datas = {
                                 { id: 3, name: "Brühl", hasInfo: true, path: "bruehl" },
                                 { id: 4, name: "Elsdorf", hasInfo: false },
                                 { id: 5, name: "Erftstadt", hasInfo: false },
-                                { id: 6, name: "Frechen", hasInfo: false },
+                                { id: 6, name: "Frechen", hasInfo: true, path: 'frechen' },
                                 { id: 7, name: "Hürth", hasInfo: false },
                                 { id: 8, name: "Kerpen", hasInfo: false },
                                 { id: 9, name: "Pulheim", hasInfo: false },

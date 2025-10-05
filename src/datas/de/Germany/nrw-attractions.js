@@ -8,6 +8,7 @@ const datas = [
         districtPath: "koln",
         cityPath: "bruehl",
         fotoCard: "Germania/Nordrhein/Bruhl/001.jpg",
+        location: "Brühl, Deutschland",
         officialSite: [
             { bold: 'Offizielle Website der Brühler Schlösser', link: 'https://www.schlossbruehl.de/en/' },
         ],
@@ -115,6 +116,187 @@ const datas = [
             ogDescription: "Entdecken Sie das Max-Ernst-Museum in Brühl, seine Sammlung und Ausstellungen, die dem Dadaismus und Surrealismus gewidmet sind.",
             ogImage: "/nrw/bruehl/max-ernst-museum.jpg"
         }
+    },
+    {
+        id: "keramion_frechen",
+        name: "KERAMION – Zentrum für moderne und historische Keramik",
+        type: "Museum",
+        path: "keramion",
+        regionsPath: "nrw",
+        districtPath: "koln",
+        cityPath: "frechen",
+        fotoCard: "../../Gallery/Germany/Frechen/frechen_keramion.jpg",
+        location: "Frechen, Deutschland",
+        officialSite: [
+            { bold: 'Offizielle Website von KERAMION', link: 'https://keramion.de/' }
+        ],
+        unesco_status: {
+            included: false
+        },
+        tickets_and_entry: {
+            title: "Eintrittspreise (gültig für 2025)",
+            items: [
+                { bold: "Eintritt für Erwachsene:", text: " 7,00 €" },
+                { bold: "Ermäßigt:", text: " 5,00 €" },
+                { bold: "Familienkarte:", text: " 14,00 € (2 Erwachsene + bis zu 3 Kinder)" },
+                { bold: "Kinder bis 16 Jahre:", text: " kostenlos" }
+            ]
+        },
+        visiting_hours: {
+            title: "Öffnungszeiten",
+            items: [
+                { text: "Dienstag – Sonntag: 11:00–17:00" },
+                { text: "Montag: geschlossen" }
+            ]
+        },
+        short_description: "Das KERAMION in Frechen ist ein Museum, das historische und moderne Keramik vereint; es befindet sich in einem futuristisch gestalteten runden Gebäude, das 1971 vom Architekturbüro Peter Neufert im Auftrag des Sammlers Dr. Gottfried Cremer errichtet wurde.",
+        full_description: {
+            title: "Beschreibung und Geschichte",
+            items: [
+                { text: "Das KERAMION in Frechen ist ein Zentrum für moderne und historische Keramik, gegründet im Jahr 2002. Es vereinte die private Sammlung von Dr. Gottfried Cremer mit dem städtischen historischen Keramikmuseum." },
+                { text: "Das Museumsgebäude wurde 1970–1971 nach Plänen des Architekten Peter Neufert und des Ingenieurs Stefan Polónyi speziell für die Präsentation der einzigartigen Sammlung von Dr. Cremer errichtet. Die Architektur erinnert an eine Töpferscheibe mit einer kuppelförmigen Lichtkuppel." },
+                { text: "Die Sammlung umfasst etwa 5.000 Werke – von historischer Keramik aus Frechen (einschließlich der berühmten Bartmannkrüge aus dem 16.–19. Jahrhundert) bis hin zu modernen Arbeiten von über 500 Künstlern aus Deutschland und dem Ausland." },
+                { text: "Neben der Dauerausstellung organisiert das Museum regelmäßig Sonderausstellungen, kreative Projekte, Workshops und Bildungsprogramme." }
+            ]
+        },
+        interestingFacts: {
+            title: "Interessante Fakten",
+            items: [
+                { text: "Das KERAMION-Gebäude gilt als architektonisches Wahrzeichen: die runde Form mit kuppelförmiger Lichtkuppel, Glassegmenten und Fassadenverkleidung macht das Museum leicht erkennbar." },
+                { text: "In der historischen Ausstellung sind die berühmten Bartmannkrüge vertreten – bärtige Krüge, die zum Symbol der Keramikproduktion in Frechen wurden." },
+                { text: "Die Sammlung von Cremer ist eine der größten privaten Sammlungen zeitgenössischer Keramik in Deutschland." }
+            ]
+        },
+        construction_period: "Das Museumsgebäude wurde 1970–1971 errichtet. Das Museum wurde 2002 eröffnet.",
+        founder: "Dr. Gottfried Cremer und die Stadt Frechen",
+        categories: ["Museum", "Kunst", "Keramik", "Sammlung historisch und modern"],
+        meta: {
+            title: "KERAMION – moderne und historische Keramik in Frechen",
+            description: "KERAMION: Dauerausstellung und Sonderausstellungen von Keramik, Geschichte der Produktion und zeitgenössische künstlerische Perspektiven.",
+            ogTitle: "KERAMION – Zentrum für moderne und historische Keramik, Frechen",
+            ogDescription: "Erfahren Sie mehr über die Sammlung von Cremer, die historische Keramik aus Frechen und die Ausstellungen im KERAMION.",
+            ogImage: "../../Gallery/Germany/Frechen/frechen_keramion.jpg"
+        }
+    },
+    {
+        id: "burg_bachem_frechen",
+        name: "Burg Bachem – historische Wasserburg in Frechen",
+        type: "Schloss",
+        path: "burg-bachem",
+        regionsPath: "nrw",
+        districtPath: "koln",
+        cityPath: "frechen",
+        fotoCard: "../../Gallery/Germany/Frechen/Burg-Bachem_3.jpg",
+        location: "Frechen, Deutschland",
+        officialSite: [
+            { bold: "Offizielle Website Burg Bachem", link: "https://www.burg-bachem.de/" }
+        ],
+        unesco_status: {
+            included: false
+        },
+        tickets_and_entry: {
+            title: "Eintritt und Zugang",
+            items: [
+                { bold: "Zugang:", text: "Das Schloss ist eine private Residenz, das Schlossgelände und der See sind für Spaziergänge zugänglich." },
+                { bold: "Besuchszeiten:", text: "Das Betreten des Sees und der Alleen ist tagsüber möglich." }
+            ]
+        },
+        visiting_hours: {
+            title: "Besuchszeiten",
+            items: [
+                { text: "Zugang zum See und den Alleen ist tagsüber möglich." }
+            ]
+        },
+        short_description: "Burg Bachem in Frechen – der größte und am besten erhaltene Schlosskomplex der Stadt, umgeben von einem Graben mit steinerner Brücke. Das Schloss ist ein bedeutendes Denkmal der Geschichte und Architektur des Stadtteils Bachem.",
+        full_description: {
+            title: "Beschreibung und Geschichte",
+            items: [
+                { text: "Burg Bachem wird erstmals im 13. Jahrhundert in Dokumenten erwähnt. Im Laufe der Jahrhunderte wurde der Komplex mehrfach umgebaut und modernisiert, besonders bis zum 18. Jahrhundert, um den Anforderungen der Zeit gerecht zu werden." },
+                { text: "Im 19. und 20. Jahrhundert verursachte der Braunkohletagebau in unmittelbarer Nähe des Schlosses erhebliche strukturelle Schäden, und verschiedene zeitweilige Nutzungen mit zerstörerischen Eingriffen verschlechterten den Zustand des Gebäudes weiter." },
+                { text: "Mitte der 1970er Jahre führte der derzeitige Eigentümer eine umfassende Restaurierung des Schlosskomplexes durch, brachte ihn wieder in Nutzung und stoppte den weiteren Verfall." },
+                { text: "Fast vierzig Jahre später wurde das Hauptgebäude erneut unter Berücksichtigung moderner Anforderungen an Komfort und Sicherheit rekonstruiert. Heute verfügt das Schloss über sieben Wohnräume: sechs werden vorübergehend komplett möbliert vermietet, und einer dient dem Eigentümer als Wohnraum." },
+                { text: "Der Bachemer Bach, der in der Nähe fließt, versorgte das Schloss früher mit Wasser für die Schutzgräben. Der See und die Alleen werden von den Einheimischen aktiv für Spaziergänge, Hundespaziergänge und Erholung in der Natur genutzt und verbinden historischen Wert mit moderner Funktionalität." }
+            ]
+        },
+        interestingFacts: {
+            title: "Interessante Fakten",
+            items: [
+                { text: "Das Schloss ist ein historisches Denkmal und ein wichtiger Teil der Stadtarchitektur von Frechen." },
+                { text: "Der See und die Alleen rund um das Schloss sind ein beliebter Ort für Spaziergänge bei den Einheimischen." },
+                { text: "Der Bachemer Bach versorgte das Schloss früher mit Wasser für die Schutzgräben." }
+            ]
+        },
+        construction_period: "Vermutlich Anfang des 13. Jahrhunderts, mit späteren Umbauten und umfassender Restaurierung in den 1970er Jahren",
+        founder: "Ursprünglich im Besitz lokaler Adelsfamilien",
+        categories: ["Schloss", "historisch", "Wasserburg", "Freizeit und Natur"],
+        meta: {
+            title: "Burg Bachem in Frechen – historische Wasserburg und See",
+            description: "Burg Bachem: Geschichte, Wassergräben, Spazierbereiche und Erholung am kleinen See in Frechen.",
+            ogTitle: "Burg Bachem – Frechen, Deutschland",
+            ogDescription: "Entdecken Sie die historische Wasserburg Burg Bachem und den See mit Spazierwegen in Frechen.",
+            ogImage: "../../Gallery/Germany/Frechen/Burg-Bachem_3.jpg"
+        }
+    },
+    {
+        id: "phantasialand",
+        name: "Phantasialand",
+        type: "Freizeitpark",
+        path: "phantasialand",
+        regionsPath: "nrw",
+        districtPath: "koln",
+        cityPath: "bruehl",
+        fotoCard: "../../Gallery/Germany/Bruhl/Full/001.jpg",
+        location: "Brühl, Deutschland",
+        officialSite: [
+            { bold: 'Offizielle Website von Phantasialand', link: 'https://www.phantasialand.de/en/' }
+        ],
+        unesco_status: {
+            included: false
+        },
+        tickets_and_entry: {
+            title: "Tickets und Eintritt",
+            items: [
+                { bold: "Ticketpreise:", text: " abhängig von Saison und Alter der Besucher. Es wird empfohlen, Tickets im Voraus über die offizielle Website zu kaufen." },
+                { bold: "Öffnungszeiten:", text: " Hauptsaison (28. März – 15. November) von 9:00 bis 18:00 Uhr, Attraktionen öffnen um 10:00 Uhr. Sommerzeit (Juli – August) bis 19:00 Uhr. Wintersaison Wintertraum (16. November – 26. Januar) von 11:00 bis 20:00 Uhr. Geschlossen am 24., 25. Dezember und 1. Januar." }
+            ]
+        },
+        short_description: "Phantasialand in Brühl ist einer der meistbesuchten Themenparks Europas mit über 30 Attraktionen und 6 einzigartigen Themenbereichen. Geöffnet seit 1967, empfängt jährlich etwa 2 Millionen Besucher. Der Park ist bekannt für seine beeindruckenden Achterbahnen und Wasserfahrgeschäfte sowie die Liebe zum Detail in der Gestaltung jeder Zone, was unvergessliche Erlebnisse für Besucher jeden Alters schafft.",
+        full_description: {
+            title: "Beschreibung und Geschichte",
+            items: [
+                { text: "Phantasialand, eröffnet am 30. April 1967, liegt in Brühl, etwa 20 km südwestlich von Köln, Nordrhein-Westfalen." },
+                { text: "Der Park ist in sechs Themenbereiche unterteilt: Berlin, Africa, Mexico, China Town, Fantasy und Mystery. Im Park gibt es über 30 Attraktionen, darunter 8 Achterbahnen und 4 Wasserfahrgeschäfte." },
+                { text: "Phantasialand bietet zwei Themenhotels: Hotel Matamba (Afrika) und Hotel Ling Bao (China), die ein einzigartiges Übernachtungserlebnis und einfachen Zugang zum Park bieten." }
+            ]
+        },
+        interestingFacts: {
+            title: "Interessante Fakten",
+            items: [
+                { text: "Phantasialand aktualisiert regelmäßig seine Attraktionen, um den Besuchern neue Erlebnisse zu bieten." },
+                { text: "Der Park ist bekannt für seine Liebe zum Detail in der Gestaltung der Themenbereiche und schafft eine einzigartige Atmosphäre in jedem von ihnen." },
+                { text: "Phantasialand entwickelt aktiv die Infrastruktur weiter, einschließlich neuer Hotels, Theater und Konzertsäle." }
+            ]
+        },
+        popular_attractions: {
+            title: "Beliebte Attraktionen",
+            items: [
+                { bold: "Taron", text: " – leistungsstarke Stahlachterbahn (2016)" },
+                { bold: "F.L.Y.", text: " – erste fliegende Achterbahn der Welt" },
+                { bold: "Chiapas", text: " – Wasserachterbahn mit 53° Neigungswinkel und 76 km/h Geschwindigkeit" },
+                { bold: "Black Mamba", text: " – invertierte Achterbahn durch den afrikanischen Dschungel" },
+            ]
+        },
+        construction_period: "1967 – heute",
+        founder: "eröffnet 1967, Gründer – Gottlieb Löffelhardt und Richard Schmidt",
+        categories: ["Freizeitpark", "Attraktionen", "Familienurlaub", "Achterbahnen", "Wasserfahrgeschäfte"],
+        meta: {
+            title: "Phantasialand in Brühl: Themenpark mit Attraktionen und Hotels",
+            description: "Phantasialand – einer der meistbesuchten Parks Europas mit über 30 Attraktionen, Themenbereichen und einzigartigen Hotels.",
+            ogTitle: "Phantasialand – Brühl, Deutschland",
+            ogDescription: "Entdecken Sie Phantasialand in Brühl: Attraktionen, Themenbereiche, Hotels und Unterhaltung für die ganze Familie.",
+            ogImage: "../../Gallery/Germany/Bruhl/Full/001.jpg"
+        },
+        theme_zones: [{ bold: "Themenbereiche:", text: ' "Berlin", "Africa", "Mexico", "China Town", "Fantasy", "Mystery"' }],
     }
 ];
 export default datas;

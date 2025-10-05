@@ -4,6 +4,8 @@ import { useParams } from 'react-router';
 import BreadCrumbs from '../../components/breadCrumbs/BreadCrumbs.jsx';
 import InfoBlock from '../../components/InfoBlock/InfoBlock.jsx';
 import './Attraction.scss'
+import Gallery from '../../components/gallery/Gallery.jsx';
+import { photosByCountry } from '../../datas/fotos/index.js';
 
 const BASE_PHOTO_URL = import.meta.env.VITE_BASE_PHOTO_URL;
 
@@ -12,6 +14,15 @@ const Attraction = () => {
     const { country, region, district, parentSubRegion, city, attractions, lang, error } = useCityFullData();
 
     const attraction = attractions.find(a => a.path === attractionsPath);
+    const photos = photosByCountry[country?.path];
+    const attractionPhotos = photos?.[region?.path]?.[city?.path]?.[attractionsPath] || [];
+   console.log(attractionsPath);
+   
+    // Преобразуем в массив для Gallery
+    const images = attractionPhotos.map(photo => ({
+        src: `${BASE_PHOTO_URL}${photo.path}`,
+        alt: photo.title[lang]
+    }));
 
     if (error) return <p>{error}</p>;
     if (!country || !region || !city) return <p>Loading...</p>;
@@ -35,17 +46,9 @@ const Attraction = () => {
         attraction ? { label: attraction.name } : null
     ].filter(Boolean);
 
-    const construction_periodTitle = {
-        ru: "Период строительства",
-        ua: "Період будівництва",
-        de: "Bauzeit"
-    }
+    const construction_periodTitle = { ru: "Период строительства", ua: "Період будівництва", de: "Bauzeit" }
 
-    const founderTitle = {
-        ru: "Основатель",
-        ua: "Засновник",
-        de: "Gründer"
-    }
+    const founderTitle = { ru: "Основатель", ua: "Засновник", de: "Gründer" }
 
     return (
         <div className="attraction">
@@ -73,9 +76,14 @@ const Attraction = () => {
 
                 {attraction.tickets_and_entry && (<InfoBlock data={attraction.tickets_and_entry} className="attraction__desc-tickets_and_entry" />)}
                 {attraction.full_description && (<InfoBlock data={attraction.full_description} className="attraction__desc-full_description" />)}
+                {attraction.theme_zones && (<InfoBlock data={attraction.theme_zones} className="attraction__desc-theme_zones" />)}
+                {attraction.popular_attractions && (<InfoBlock data={attraction.popular_attractions} className="attraction__desc-popular_attractions" />)}
+                {attraction.hotels && (<InfoBlock data={attraction.hotels} className="attraction__desc-hotels" />)}
                 {attraction.interestingFacts && (<InfoBlock data={attraction.interestingFacts} className="attraction__desc-interestingFacts" />)}
 
                 {attraction?.officialSite && (<InfoBlock data={attraction.officialSite} className="attraction__desc-officialSite" />)}
+
+                {images.length > 0 && <Gallery images={images} />}
             </div>
         </div>
     )
