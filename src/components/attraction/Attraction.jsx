@@ -10,11 +10,9 @@ const Attraction = ({ attr, lang }) => {
     const districtPath = params.districtPath || attr.districtPath;
     const cityPath = params.cityPath || attr.cityPath;
 
-    const more = {
-        ru: "Подробнее",
-        ua: "Докладніше",
-        de: "Weitere Details"
-    };
+    const more = { ru: "Подробнее", ua: "Докладніше", de: "Weitere Details" };
+    const location = { ru: "Месторасположение", ua: "Місце розташування", de: "Standort" };
+
 
     // Формируем путь корректно
     let detailPath = `/${countryPath}`;
@@ -32,6 +30,7 @@ const Attraction = ({ attr, lang }) => {
                 </div>
                 <div className='attrCard__desc-info'>
                     <div className='attrCard__desc-info-text'>{attr.short_description}</div>
+                    <div className='attrCard__desc-info-text'>{location[lang]}: {attr.location}</div>
                     <div className='attrCard__desc-info-more'>
                         <Link to={detailPath}>
                             {more[lang]}

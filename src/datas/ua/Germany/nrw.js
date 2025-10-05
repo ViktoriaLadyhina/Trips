@@ -399,7 +399,7 @@ const datas = {
                                 { id: 3, name: "Брюль", hasInfo: true, path: "bruehl" },
                                 { id: 4, name: "Ельсдорф", hasInfo: false },
                                 { id: 5, name: "Ерфтштадт", hasInfo: false },
-                                { id: 6, name: "Фрехен", hasInfo: false },
+                                { id: 6, name: "Фрехен", hasInfo: true, path: 'frechen' },
                                 { id: 7, name: "Хюрт", hasInfo: false },
                                 { id: 8, name: "Керпен", hasInfo: false },
                                 { id: 9, name: "Пульхайм", hasInfo: false },

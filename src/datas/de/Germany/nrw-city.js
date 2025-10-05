@@ -149,6 +149,87 @@ const datas = [
             ogDescription: "Detaillierte Informationen über Köln: Kultur, Geschichte, berühmte Einwohner und interessante Fakten.",
             ogImage: "/nrw/koeln.jpg"
         }
+    },
+    {
+        id: 3,
+        name: 'Frechen',
+        path: "frechen",
+        district: "koln",
+        desc: {
+            general: [
+                { text: 'Frechen ist eine Stadt im Bundesland Nordrhein-Westfalen, die zum Rhein-Erft-Kreis gehört und nur etwa 10 km westlich von Köln liegt.' },
+                { text: 'Die Stadt ist bekannt für ihre historische Töpfertradition, industrielle Entwicklung und ihre Nähe zur Rhein-Ruhr-Region.' }
+            ],
+            population: [
+                { bold: 'Einwohnerzahl:' },
+                { text: ' etwa 52.000 Menschen (2025)' }
+            ],
+            area: [
+                { bold: 'Fläche:' },
+                { text: ' ca. 45,1 km²' }
+            ],
+            postalCode: [
+                { bold: 'Postleitzahl:' },
+                { text: ' 50226' }
+            ],
+            phone: [
+                { bold: 'Telefonvorwahl:' },
+                { text: ' +49 02234' }
+            ],
+            officialSite: [
+                { bold: 'Offizielle Website der Stadt Frechen', link: 'https://www.frechen.de/' }
+            ]
+        },
+        geography: {
+            title: 'Geografie',
+            items: [
+                { text: 'Frechen liegt am westlichen Stadtrand von Köln und ist Teil der Metropolregion Rhein-Ruhr.' },
+                { text: 'Die Höhe über dem Meeresspiegel variiert zwischen 58 und 158 Metern, die Stadt befindet sich an den Hängen der Ville-Höhen.' },
+                { text: 'Wichtige Verkehrsachsen wie die Autobahnen A1, A4 und A61 verlaufen in der Nähe und verbinden Frechen mit Köln, Bonn und Aachen.' },
+                { text: 'Die Stadt ist von Grünflächen, kleinen Wäldern und ehemaligen Industriegruben umgeben, die teilweise zu Naherholungsgebieten umgestaltet wurden.' }
+            ]
+        },
+        notablePeople: {
+            title: 'Bekannte Persönlichkeiten aus Frechen',
+            items: [
+                { bold: 'Ayo', text: ' – deutsch-nigerianische Sängerin und Songwriterin, geboren in Frechen.' },
+                { bold: 'Kirsten Bolm', text: ' – Leichtathletin und deutsche Meisterin im Hürdenlauf.' },
+                { bold: 'Wayne Carpendale', text: ' – Schauspieler und Fernsehmoderator.' },
+                { bold: 'Pierre Vogel', text: ' – bekannter islamischer Prediger, aufgewachsen in Frechen.' },
+                { bold: 'Hannah Meul', text: ' – Profikletterin und Mitglied des deutschen Nationalteams.' },
+                { bold: 'Marcel Heller', text: ' – deutscher Fußballspieler, der in der Bundesliga aktiv war.' },
+                { bold: 'Sonja Bertram', text: ' – Theater- und Fernsehschauspielerin.' }
+            ]
+        },
+        interestingFacts: {
+            title: 'Interessante Fakten',
+            items: [
+                { text: 'Frechen ist als „Stadt der Keramik“ bekannt: Lokale Handwerker wurden für ihre Tonwaren berühmt, insbesondere für die Bartmannskrüge.' },
+                { text: 'Das Keramion-Museum beherbergt eine einzigartige Sammlung von Keramiken und moderner Kunst – das Gebäude selbst gilt als architektonisches Meisterwerk des Modernismus.' },
+                { text: 'Im Mittelalter wurde Frechener Keramik in ganz Europa exportiert, insbesondere nach England und in die Niederlande.' },
+                { text: 'Frechen verfügt über eine gut ausgebaute Verkehrsinfrastruktur und gilt als attraktiver Wohnort für Pendler nach Köln.' },
+                { text: 'Viele ehemalige Braunkohletagebaue in der Umgebung wurden in Natur- und Erholungsgebiete umgewandelt.' }
+            ]
+        },
+        briefHistory: {
+            title: 'Geschichte',
+            items: [
+                { text: 'Frechen wurde erstmals im Jahr 877 urkundlich erwähnt und ist damit einer der ältesten Orte der Region.' },
+                { text: 'Seit dem 16. Jahrhundert ist die Stadt für ihre Töpferproduktion bekannt – insbesondere für die Herstellung der „Bartmannskrüge“, die in ganz Europa exportiert wurden.' },
+                { text: 'Im 18. und 19. Jahrhundert begann der Braunkohleabbau in der Umgebung, wodurch Frechen zu einem industriellen Zentrum wurde.' },
+                { text: 'Nach dem Zweiten Weltkrieg entwickelte sich Frechen zu einem wichtigen Industrie- und Wohnvorort von Köln.' },
+                { text: 'Am 2. September 1951 erhielt Frechen das Stadtrecht.' },
+                { text: 'Im Jahr 1975 wurden im Zuge der kommunalen Neugliederung die Ortsteile Grefrath, Habbelrath, Königsdorf und Neufreimersdorf eingemeindet.' },
+                { text: 'Heute ist Frechen eine moderne Stadt mit historischem Stadtkern, Keramikmuseum und guter Infrastruktur – ein beliebter Wohnort für Kölner.' }
+            ]
+        },
+        meta: {
+            title: "Frechen – die Stadt der Keramik vor den westlichen Toren Kölns",
+            description: "Frechen: Geschichte, Geografie, bekannte Persönlichkeiten und interessante Fakten über die Keramikstadt in Nordrhein-Westfalen.",
+            ogTitle: "Frechen – Stadtinformationen",
+            ogDescription: "Detaillierte Informationen über Frechen: Kultur, Geschichte, bekannte Persönlichkeiten und interessante Fakten.",
+            ogImage: "/nrw/frechen.jpg"
+        }
     }
 ]
 

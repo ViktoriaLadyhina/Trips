@@ -1,0 +1,103 @@
+@use '../../styles/variables' as *;
+
+.gallery {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 100%;
+
+    &__thumbnails {
+        display: flex;
+        gap: 4px;
+        overflow-x: auto;
+        overflow-y: hidden;
+        scrollbar-width: none; // скрываем скроллбар в Firefox
+        -ms-overflow-style: none; // скрываем в IE
+
+        &::-webkit-scrollbar {
+            display: none; // скрываем в Chrome/Safari
+        }
+
+        padding: 0.3rem;
+        border-radius: 8px;
+        margin-bottom: 0.5rem;
+        background-color: var(--color-sidebar-bg);
+
+        max-width: 880px;
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    &__thumb {
+        width: 100px;
+        height: 60px;
+        object-fit: cover;
+        cursor: pointer;
+        opacity: 0.6;
+        border: 2px solid transparent;
+        flex-shrink: 0; // предотвращаем сжатие миниатюр
+
+        &.active {
+            opacity: 1;
+            border-color: #007bff;
+        }
+    }
+
+    &__main-wrapper {
+        display: flex;
+        align-items: center;
+        background-color: var(--color-sidebar-bg); // единый фон
+        border-radius: 8px;
+        padding: 10px;
+        transition: background-color 0.3s;
+        max-width: 880px;
+        width: 100%;
+
+        &:hover {
+            background-color: var(--color-sidebar-hover); // при наведении
+        }
+
+        .gallery__nav {
+            width: 50px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            background: transparent;
+            border: none;
+            outline: none;
+            transition: color 0.3s;
+            font-size: 30px;
+
+            &:hover {
+                color: var(--color-primary); // можно оставить эффект при наведении
+            }
+        }
+
+        .gallery__image-container {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+            .gallery__image {
+                width: 100%;
+                height: auto;
+                border-radius: 4px;
+                display: block;
+                max-height: 500px;
+                object-fit: contain;
+            }
+
+            .gallery__caption {
+                margin-top: 5px;
+                font-size: 1rem;
+                text-align: center;
+                width: 100%;
+                overflow: hidden;
+                text-overflow: ellipsis;
+                white-space: nowrap;
+            }
+        }
+    }
+}

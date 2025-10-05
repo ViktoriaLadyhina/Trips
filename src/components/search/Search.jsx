@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
+import './Search.scss'
 
 const Search = () => {
   const [value, setValue] = useState('');
@@ -16,7 +17,7 @@ const Search = () => {
   };
 
   return (
-    <div>
+    <div className="search">
       <input
         value={value}
         onChange={e => setValue(e.target.value)}

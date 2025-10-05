@@ -2,34 +2,84 @@
 
 .header {
   padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 
   &__title {
     @include h1();
-    margin: 60px;
+    margin: 20px 0;
     text-align: center;
+  }
+
+  &__image {
+    width: 100%;
+    max-width: 1600px; // максимальная ширина изображения
+    img {
+      width: 100%;
+      height: auto;   // сохраняем пропорции
+      display: block; // убираем лишние отступы снизу
+    }
+    margin: 20px 0;
   }
 
   &__menu {
     display: flex;
     align-items: center;
-    width: 100%;
     justify-content: space-between;
+    width: 100%;
+    max-width: 1600px; // ограничиваем ширину меню
 
-    &-theme {
-      display: flex;
-      justify-content: space-between;
-    }
-
-
-    &-lang {
-      display: flex;
-      justify-content: space-between;
-      padding-left: 160px;
-    }
-
+    &-theme,
+    &-lang,
     &-search {
       display: flex;
-      justify-content: space-between;
+      align-items: center;
+    }
+
+    &-lang {
+      padding-left: 20px; // убрал фиксированные 160px для адаптивности
+    }
+  }
+
+  // ===== Адаптивность =====
+  @media (max-width: 1200px) {
+    &__menu {
+      flex-wrap: wrap;
+      gap: 10px;
+      justify-content: center;
+
+      &-lang {
+        padding-left: 10px;
+      }
+    }
+  }
+
+  @media (max-width: 768px) {
+    &__title {
+      font-size: 1.5rem; // уменьшаем размер заголовка
+    }
+
+    &__image {
+      margin: 10px 0;
+    }
+
+    &__menu {
+      flex-direction: column;
+      gap: 10px;
+      align-items: center;
+
+      &-lang,
+      &-theme,
+      &-search {
+        padding-left: 0;
+      }
+    }
+  }
+
+  @media (max-width: 480px) {
+    &__title {
+      font-size: 1.2rem;
     }
   }
 }
