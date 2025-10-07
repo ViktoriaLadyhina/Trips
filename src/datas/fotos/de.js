@@ -9,10 +9,15 @@ export const Photos = {
     region: [
       { path: "Germania/Nordrhein/001.jpg", title: { ru: "Замок", ua: "Замок", de: "Burg" } }
     ],
-    koeln: [
-      { path: "Germania/Nordrhein/Keln/001.jpg", title: { ru: "Кельн 1", ua: "Кельн 1", de: "Köln 1" } },
-      { path: "Germania/Nordrhein/Keln/021.jpg", title: { ru: "Кельн 2", ua: "Кельн 2", de: "Köln 2" } }
-    ],
+koeln: {
+  gallery: [
+    { path: "Germania/Nordrhein/Keln/001.jpg", title: { ru: "Кельн 1", ua: "Кельн 1", de: "Köln 1" } },
+    { path: "Germania/Nordrhein/Keln/021.jpg", title: { ru: "Кельн 2", ua: "Кельн 2", de: "Köln 2" } }
+  ],
+  'rathaus-koeln': [
+    { path: "../../Gallery/Germany/Koln/Full/Rathaus-Köln.JPG", title: { ru: "Кёльнская ратуша", ua: "Кельнська ратуша", de: "Kölner Rathaus" } }
+  ]
+},
     bruehl: {
       'phantasialand': [
         { path: "../../Gallery/Germany/Bruhl/Full/001.jpg", title: { ru: "Парк атракционов «Фантазия Ленд» - 2006", ua: "Парк атракціонів «Фантазія Ленд» - 2006", de: "Freizeitpark «Fantasia Land» - 2006" } },
@@ -53,6 +58,6 @@ export const Photos = {
         { path: "../../Gallery/Germany/Frechen/Burg-Bachem-lake_1.jpg", title: { ru: "Озерцо возле замка Бахем, 2024", ua: "Озерце біля замку Бахем, 2024", de: "Ein kleiner See in der Nähe von Burg Bachem, 2024" } },
         { path: "../../Gallery/Germany/Frechen/Burg-Bachem-lake_2.jpg", title: { ru: "Озерцо возле замка Бахем, 2024", ua: "Озерце біля замку Бахем, 2024", de: "Ein kleiner See in der Nähe von Burg Bachem, 2024" } },
       ]
-    }
+    },
   }
 };

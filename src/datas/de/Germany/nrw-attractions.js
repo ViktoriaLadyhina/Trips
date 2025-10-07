@@ -297,6 +297,85 @@ const datas = [
             ogImage: "../../Gallery/Germany/Bruhl/Full/001.jpg"
         },
         theme_zones: [{ bold: "Themenbereiche:", text: ' "Berlin", "Africa", "Mexico", "China Town", "Fantasy", "Mystery"' }],
+    },
+    {
+        id: "rathaus_koeln_miqua",
+        name: "Kölner Rathaus und archäologisches Quartier MiQua",
+        type: "Historisches Gebäude",
+        path: "rathaus-koeln",
+        regionsPath: "nrw",
+        districtPath: "city",
+        cityPath: "koeln",
+        fotoCard: "../../Gallery/Germany/Koln/Full/Rathaus-Köln.JPG",
+        location: "Köln, Deutschland",
+        officialSite: [
+            { bold: "Offizielle Website", link: "https://www.stadt-koeln.de/", text: ' der Stadt Köln (Rathaus)' },
+            { bold: "<br> Projekt MiQua", link: "https://miqua.lvr.de/", text: ' – archäologisches Museum' }
+        ],
+        unesco_status: {
+            included: false
+        },
+        tickets_and_entry: {
+            title: "Eintritt und Zugang",
+            items: [
+                { bold: "Zugang:", text: "Das Rathaus ist ein aktives Gebäude des Stadtrats. Der Zugang zu den Verwaltungsräumen ist eingeschränkt, jedoch sind Teile der Säle und der Turm im Rahmen von Führungen zugänglich." },
+                { bold: "MiQua:", text: "Der Besuch des archäologischen Quartiers ist im Rahmen von Führungen mit einem Guide möglich. Nach Abschluss der Bauarbeiten wird das Museum für den freien Besuch geöffnet." }
+            ]
+        },
+        visiting_hours: {
+            title: "Öffnungszeiten",
+            items: [
+                { text: "Führungen durch das Rathaus finden nach Plan statt, Details sind auf der Website der Stadt Köln zu finden." },
+                { text: "MiQua – Zugang zu den unterirdischen Ausgrabungen nur mit Führer. Nach der Eröffnung des Museums ist ein regulärer Betriebsplan vorgesehen." }
+            ]
+        },
+        short_description: "Das Kölner Rathaus ist das älteste Verwaltungsgebäude Deutschlands, das einen gotischen Turm, eine Renaissance-Loggia und den historischen Hansasaal kombiniert. Unter ihm befindet sich der einzigartige archäologische Museumskomplex MiQua mit Überresten des römischen Praetoriums und des jüdischen Viertels.",
+        full_description: {
+            title: "Beschreibung und Geschichte",
+            items: [
+                { text: "Das Kölner Rathaus (Kölner Rathaus) ist eines der wichtigsten Symbole der Stadt und das älteste Gebäude der kommunalen Verwaltung in Deutschland. Es vereint architektonische Elemente der Gotik, Renaissance und moderner Restaurierungen." },
+                { text: "Die ersten Erwähnungen des Gebäudes, in dem sich die Bürger versammelten, stammen aus dem 12. Jahrhundert (1135-1152). Im 14. Jahrhundert begann der Bau des neuen Komplexes, einschließlich des <b>Hansasaals</b>, in dem 1367 Vertreter der Hanse tagten." },
+                { text: "Anfang des 15. Jahrhunderts (1407-1414) wurde der Komplex um den imposanten <b>Rathaus-Turm (Ratsturm)</b> mit einer Höhe von etwa 61 Metern erweitert – ein Beispiel für die Spätgotik. Seine Fassade wird von über hundert Steinfiguren geschmückt, darunter nicht nur historische Persönlichkeiten, sondern auch moderne Kölner Helden – z. B. der Schriftsteller Heinrich Böll und Karnevalsfiguren." },
+                { text: "Im 16. Jahrhundert (1569-1573) errichtete der Architekt Wilhelm Vernukken aus Kalkar die elegante <b>Renaissance-Loggia (Laube)</b>, inspiriert von der Architektur Antwerpens. Ihre Arkaden und reich verzierte Steinschnitzerei verleihen dem Gebäude ein feierliches Aussehen." },
+                { text: "In der Nähe befand sich der <b>Spanischer Bau</b>, in dem Gerichts- und Verwaltungsbehörden untergebracht waren." },
+                { text: "Während des Zweiten Weltkriegs wurde das Rathaus stark durch Bomben beschädigt: Dach, Fassaden und ein großer Teil des Interieurs wurden zerstört. Nach dem Krieg, ab Ende der 1940er Jahre, begann eine umfangreiche Restaurierung. Die Wiederherstellung dauerte Jahrzehnte, einschließlich der vollständigen Rekonstruktion des Hansasaals und des Turms." },
+                { text: "Bis in die 1970er Jahre waren die Hauptarbeiten abgeschlossen, und das Gebäude wurde wieder zur Residenz des Stadtrats." },
+                { text: "In der Nähe des Rathauses entdeckten Archäologen Überreste des mittelalterlichen jüdischen Viertels, einschließlich der <b>Mikwe – rituelles Bad aus dem 12. Jahrhundert</b>, das in etwa 10 Metern Tiefe erhalten geblieben ist." },
+                { text: "Heute entsteht unter dem Rathaus und den umliegenden Quartieren das <b>MiQua – Museum im Quartier</b>, ein archäologisches Museum mit einer Fläche von etwa 6000 m²." },
+                { text: "Das Museum wird Exponate aus drei historischen Epochen vereinen: <b>römisch</b> (Reste des Praetoriums – Palast des Statthalters der römischen Provinz Niedergermanien), <b>jüdisch-mittelalterlich</b> (Wohnhäuser, Mikwe, Synagoge), <b>mittelalterlich-christlich</b> (Gebäude der Zünfte und Fundamente des Rathauses)." },
+                { text: "MiQua wird als unterirdischer Rundgang von etwa 700 Metern Länge gebaut, bei dem die Besucher durch verschiedene historische Schichten der Stadt gehen können." },
+                { text: "Das Projekt ist ingenieurtechnisch einzigartig: Das Museum ruht auf einer massiven Betonplatte von etwa 50 cm Dicke, die auf Hunderten Pfählen bis zu 36 Metern in die Erde reichen. Der Bau ist durch die Notwendigkeit erschwert, archäologische Funde in ihrem ursprünglichen Zustand zu erhalten." },
+                { text: "Die offizielle Eröffnung von MiQua wurde mehrfach verschoben, jedoch kann bereits jetzt ein Teil der unterirdischen Ausgrabungen im Rahmen von Führungen besichtigt werden." }
+            ]
+        },
+        interestingFacts: {
+            title: "Interessante Fakten",
+            items: [
+                { text: "Auf dem Rathaus-Turm ist der hölzerne Kopf Platzjabbeck angebracht, der jede Stunde die Zunge herausstreckt – ein Symbol der Spott über die Macht." },
+                { text: "Der Hansasaal ist mit der Skulpturenkomposition 'Neun tapfere Helden' geschmückt, die Figuren aus heidnischer, jüdischer und christlicher Tradition vereint." },
+                { text: "Die Fundamente des Rathauses ruhen teilweise auf Überresten der antiken römischen Stadtmauer." },
+                { text: "MiQua vereint drei historische Schichten: römisch, jüdisch und mittelalterlich-christlich, und schafft einen kontinuierlichen Rundgang durch 2000 Jahre Kölner Geschichte." },
+                { text: "Das MiQua-Projekt ist für seine komplexen Ingenieurlösungen bekannt – das Museum ist praktisch 'über' den archäologischen Ruinen aufgehängt." }
+            ]
+        },
+        construction_period: "12.-16. Jahrhundert, mit anschließenden Restaurierungen nach dem Zweiten Weltkrieg",
+        founder: "Stadt Köln unter Beteiligung der Architekten Wilhelm Vernukken und Meister der gotischen Schule",
+        categories: ["Historisches Gebäude", "Museum", "Archäologie", "Gotik", "Renaissance"],
+        sub_objects: {
+            title: "Objekte des Rathauses und des archäologischen Quartiers",
+            items: [
+                { bold: "Hansasaal", text: " – Hauptsaal des Rathauses aus dem 14. Jahrhundert, Sitzungen der Hanse, geschmückt mit Skulpturen der Neun Helden." },
+                { bold: "Ratsturm", text: " – Turm mit einer Höhe von 61 Metern und Hunderten von Figuren, Symbol der Macht und des Stolzes der Stadt." },
+                { bold: "MiQua", text: " – Unterirdisches archäologisches Museum mit 6000 m² Fläche, Ruinen des römischen Praetoriums und des jüdischen Viertels." }
+            ]
+        },
+        meta: {
+            title: "Kölner Rathaus und archäologisches Quartier MiQua – Geschichte Kölns unter der Stadt",
+            description: "Kölner Rathaus: gotischer Turm, Renaissance-Loggia und unterirdisches Museum MiQua mit römischen und jüdischen Artefakten.",
+            ogTitle: "Rathaus Köln und MiQua – Geschichte unter der Stadt",
+            ogDescription: "Erkunden Sie das Kölner Rathaus und das unterirdische Museum MiQua, wo das antike Rom auf das Mittelalter trifft.",
+            ogImage: "../../Gallery/Germany/Koln/Full/Rathaus-Köln.JPG"
+        }
     }
 ];
 export default datas;

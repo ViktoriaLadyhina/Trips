@@ -20,7 +20,7 @@ export const Header = () => {
       <div className='header__menu'>
         <div className='header__menu-theme'><ThemeToggle /></div>
         <div className='header__menu-lang'><LangSelector /></div>
-        <div className='header__menu-search'><Search /></div>
+        <div className='header__menu-search'><Search lang={lang} /></div>
       </div>
     </div>
   )

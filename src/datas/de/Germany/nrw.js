@@ -131,7 +131,7 @@ const datas = {
                                 { text: " 05 3 34." }
                             ],
                             description: [
-                                { text: "Der Bezirk gehört zum Bundesland Nordrhein-Westfalen und untersteht dem Regierungsbezirk Köln." }
+                                { text: "Der Bezirk Aachen gehört zum Bundesland Nordrhein-Westfalen und untersteht dem Regierungsbezirk Köln." }
                             ],
                             com: [
                                 { text: "Der Bezirk ist unterteilt in " },
@@ -177,7 +177,7 @@ const datas = {
                                 { text: " 05 3 58." }
                             ],
                             description: [
-                                { text: "Der Bezirk gehört zum Bundesland Nordrhein-Westfalen und untersteht dem Regierungsbezirk Köln." }
+                                { text: "Der Bezirk Düren gehört zum Bundesland Nordrhein-Westfalen und untersteht dem Regierungsbezirk Köln." }
                             ],
                             com: [
                                 { text: "Der Bezirk ist unterteilt in " },
@@ -228,7 +228,7 @@ const datas = {
                                 { text: " 05 3 74." }
                             ],
                             description: [
-                                { text: "Der Kreis gehört zum Land Nordrhein-Westfalen und untersteht dem Regierungsbezirk Köln." }
+                                { text: "Oberbergischer Kreis gehört zum Land Nordrhein-Westfalen und untersteht dem Regierungsbezirk Köln." }
                             ],
                             com: [
                                 { text: "Der Kreis gliedert sich in " },
@@ -277,7 +277,7 @@ const datas = {
                                 { text: " 05 3 66." }
                             ],
                             description: [
-                                { text: "Der Bezirk gehört zum Bundesland Nordrhein-Westfalen und untersteht dem Regierungsbezirk Köln." }
+                                { text: "Der Bezirk uskirchen gehört zum Bundesland Nordrhein-Westfalen und untersteht dem Regierungsbezirk Köln." }
                             ],
                             com: [
                                 { text: "Der Bezirk ist unterteilt in " },
@@ -324,7 +324,7 @@ const datas = {
                                 { text: " 05 3 82." }
                             ],
                             description: [
-                                { text: "Der Kreis gehört zum Bundesland Nordrhein-Westfalen und untersteht dem Regierungsbezirk Köln." }
+                                { text: "Rhein-Sieg-Kreis gehört zum Bundesland Nordrhein-Westfalen und untersteht dem Regierungsbezirk Köln." }
                             ],
                             com: [
                                 { text: "Der Kreis gliedert sich in " },
@@ -379,7 +379,7 @@ const datas = {
                                 { text: " 05 3 62." }
                             ],
                             description: [
-                                { text: "Der Kreis gehört zum Land Nordrhein-Westfalen und untersteht dem Regierungsbezirk Köln." }
+                                { text: "Rhein-Erft-Kreis gehört zum Land Nordrhein-Westfalen und untersteht dem Regierungsbezirk Köln." }
                             ],
                             com: [
                                 { text: "Der Kreis gliedert sich in " },
@@ -425,7 +425,7 @@ const datas = {
                                 { text: " 05 3 78." }
                             ],
                             description: [
-                                { text: "Der Kreis gehört zum Bundesland Nordrhein‑Westfalen und untersteht dem Regierungsbezirk Köln." }
+                                { text: "Rheinisch-Bergischer Kreis gehört zum Bundesland Nordrhein‑Westfalen und untersteht dem Regierungsbezirk Köln." }
                             ],
                             com: [
                                 { text: "Der Kreis gliedert sich in " },
@@ -469,7 +469,7 @@ const datas = {
                                 { text: " 05 3 70." }
                             ],
                             description: [
-                                { text: "Der Kreis gehört zum Bundesland Nordrhein‑Westfalen und untersteht dem Regierungsbezirk Köln." }
+                                { text: "Kreis Heinsberg gehört zum Bundesland Nordrhein‑Westfalen und untersteht dem Regierungsbezirk Köln." }
                             ],
                             com: [
                                 { text: "Der Kreis gliedert sich in " },
