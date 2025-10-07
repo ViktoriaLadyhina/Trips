@@ -27,9 +27,15 @@ export default function CountryMap({ countryKey, regionKey, regions, districtKey
   if (regionKey && country[regionKey]) {
     const region = country[regionKey];
 
-    if (districtKey && region[districtKey]) {
-      MapComponent = region[districtKey];
+    // Если districtKey задан, но карты для него нет — не показываем карту
+    if (districtKey) {
+      if (region[districtKey]) {
+        MapComponent = region[districtKey];
+      } else {
+        return null; // <-- ничего не рендерим
+      }
     } else {
+      // districtKey не задан — показываем карту региона
       MapComponent = region.region || region;
     }
   }

@@ -72,6 +72,8 @@ const District = () => {
           {district?.desc?.history && (<InfoBlock data={district.desc.history} className="district__history" />)}
           {district?.desc?.area && (<InfoBlock data={district.desc.area} className="district__area" />)}
           {district?.desc?.population && (<InfoBlock data={district.desc.population} className="district__population" />)}
+          {district?.desc?.districts && (<InfoBlock data={district.desc.districts} className="district__districts" />)}
+          {district?.desc?.cities && (<InfoBlock data={district.desc.cities} className="district__cities" />)}
         </div>
 
         {district?.subRegion?.length > 0 && (

@@ -49,13 +49,14 @@ const SearchPage = () => {
     setResultAttraction(attractionsResult);
   }, [query, lang, allCountries, allRegions, allCities, allAttractions]);
 
-  const searchResults = {
-    ru: "Результаты поиска",
-    ua: "Результати пошуку",
-    de: "Suchergebnisse"
-  };
+  const searchResults = { ru: "Результаты поиска", ua: "Результати пошуку", de: "Suchergebnisse" };
+  const searchByCountries = { ru: "Поиск по странам", ua: "Пошук за країнами", de: "Suche nach Ländern" };
+const searchByRegions = { ru: "Поиск по землям/областям", ua: "Пошук за землями/областями", de: "Suche nach Bundesländern/Regionen" };
+const searchByDistricts = { ru: "Поиск по краям/районам", ua: "Пошук за краями/районами", de: "Suche nach Kreisen/Bezirken" };
+const searchByCities = { ru: "Поиск по городам", ua: "Пошук за містами", de: "Suche nach Städten" };
+const searchByAttractions = { ru: "Поиск по достопримечательностям", ua: "Пошук за пам’ятками", de: "Suche nach Sehenswürdigkeiten" };
 
-  const crumbs = [
+const crumbs = [
     {
       label: lang === 'ru' ? 'Главная' : lang === 'de' ? 'Startseite' : 'Головна',
       path: '/'
@@ -69,7 +70,7 @@ const SearchPage = () => {
       <h2 className="search-results__title">{searchResults[lang]}: '{query}'</h2>
 
       <div>
-        <span>Поиск по странам</span>
+        <span>{searchByCountries[lang]}</span>
         <ul>
           {resultCountries?.map((c) => (
             <li key={c.countryPath}>
@@ -81,7 +82,7 @@ const SearchPage = () => {
           ))}
         </ul>
 
-        <span>Поиск по землям/областям</span>
+        <span>{searchByRegions[lang]}</span>
         <ul>
           {resultRegions?.map((r, i) => (
             <li key={i}>
@@ -95,7 +96,7 @@ const SearchPage = () => {
           ))}
         </ul>
 
-        <span>Поиск по краям/районам</span>
+        <span>{searchByDistricts[lang]}</span>
         <ul>
           {resultDistricts?.map((d, i) => (
             <li key={i}>
@@ -109,7 +110,7 @@ const SearchPage = () => {
           ))}
         </ul>
 
-        <span>Поиск по городам</span>
+        <span>{searchByCities[lang]}</span>
         <ul>
           {resultCity?.map(c => (
             <li key={c.cityPath}>
@@ -123,7 +124,7 @@ const SearchPage = () => {
           ))}
         </ul>
 
-        <span>Поиск по достопримечательностям</span>
+        <span>{searchByAttractions[lang]}</span>
         <ul>
           {resultAttraction?.map(a => (
             <li key={a.attractionPath}>

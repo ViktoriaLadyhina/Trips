@@ -72,7 +72,7 @@ const NRWMap = ({ regions }) => {
               <path
                 key={loc.id}
                 d={loc.path}
-                className="interactive"
+                className={district.hasInfo ? "interactive" : "disabled"}
                 onClick={() => handleDistrictClick(district)}
                 onMouseEnter={(e) => {
                   setHoverRegion(district.name);

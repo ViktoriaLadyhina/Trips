@@ -20,8 +20,6 @@ const City = () => {
     if (!cityData) return <p>Loading...</p>;
 
     const photos = photosByCountry[countryPath];
-    console.log(photos);
-
 
     // Хлебные крошки
     const crumbs = [
@@ -32,7 +30,8 @@ const City = () => {
         ...(parentSubRegion ? [{ label: parentSubRegion.name }] : []),
         { label: city.name }
     ];
-    console.log(regionsPath, cityPath);
+
+    
     return (
         <div className='city'>
             {cityData && (
