@@ -50,12 +50,12 @@ const datas = {
             {
                 bold: "Wappen:",
                 text: " das Wappen von Nordrhein-Westfalen vereint die Symbole der drei historischen Provinzen, aus denen das Land 1946–1947 gebildet wurde. Der silberne Rheinbalken auf grünem Grund symbolisiert die Rheinprovinz. Das sächsische Pferd auf rotem Grund ist das Symbol Westfalens (im westfälischen Wappen aufbäumend dargestellt). Die rote Rose mit goldenem Herz und Blättern ist das Wappen der Grafen von Lippe, das seit dem 13. Jahrhundert verwendet wird.",
-                img: "Germania/Nordrhein/002.gif"
+                img: "Germany/nrw/gerb.gif"
             },
             {
                 bold: "Flagge:",
                 text: " die Flagge Nordrhein-Westfalens besteht aus den Farben des Wappens: Grün, Weiß und Rot, horizontal angeordnet.",
-                img: "Germania/Nordrhein/003.gif"
+                img: "Germany/nrw/flag.gif"
             }
         ]
     },
@@ -146,7 +146,7 @@ const datas = {
                                 { id: 10, name: "Hilchenbach", hasInfo: false },
                                 { id: 11, name: "Erndtebrück", hasInfo: false }
                             ],
-                            gerb: "Germania/Nordrhein/Luden/DEU_Kreis_Siegen-Wittgenstein_COA.png"
+                            gerb: "Germany/nrw/arnsberg/Siegen-Wittgenstein/gerb.png"
                         },
                         {
                             id: 2,
@@ -196,7 +196,7 @@ const datas = {
                                 { id: 13, name: "Ense", hasInfo: false },
                                 { id: 14, name: "Erwitte", hasInfo: false }
                             ],
-                            gerb: "Germania/Nordrhein/Luden/003.png"
+                            gerb: "Germany/nrw/arnsberg/Soest/gerb.png"
                         },
                         {
                             id: 3,
@@ -247,7 +247,7 @@ const datas = {
                                 { id: 14, name: "Hemer", hasInfo: false },
                                 { id: 15, name: "Schalksmühle", hasInfo: false }
                             ],
-                            gerb: "Germania/Nordrhein/Luden/005.png"
+                            gerb: "Germany/nrw/arnsberg/Märkischer-Kreis/gerb.png"
                         },
                         {
                             id: 4,
@@ -290,7 +290,7 @@ const datas = {
                                 { id: 6, name: "Olpe", hasInfo: false },
                                 { id: 7, name: "Finnentrop", hasInfo: false }
                             ],
-                            gerb: "Germania/Nordrhein/Luden/006.png"
+                            gerb: "Germany/nrw/arnsberg/Olpe/gerb.png"
                         },
                         {
                             id: 5,
@@ -336,7 +336,7 @@ const datas = {
                                 { id: 9, name: "Holzwickede", hasInfo: false },
                                 { id: 10, name: "Schwerte", hasInfo: false }
                             ],
-                            gerb: "Germania/Nordrhein/Luden/007.png"
+                            gerb: "Germany/nrw/arnsberg/Unna/gerb.png"
                         },
                         {
                             id: 6,
@@ -384,7 +384,7 @@ const datas = {
                                 { id: 11, name: "Schmallenberg", hasInfo: false },
                                 { id: 12, name: "Eslohe", hasInfo: false }
                             ],
-                            gerb: "Germania/Nordrhein/Luden/004.png"
+                            gerb: "Germany/nrw/arnsberg/Hochsauerlandkreis/gerb.png"
                         },
                         {
                             id: 7,
@@ -429,7 +429,7 @@ const datas = {
                                 { id: 8, name: "Wetter (Ruhr)", hasInfo: false },
                                 { id: 9, name: "Witten", hasInfo: false }
                             ],
-                            gerb: "Germania/Nordrhein/Luden/002.png"
+                            gerb: "Germany/nrw/arnsberg/Ennepe-Ruhr-Kreis/gerb.png"
                         }
                     ]
                 },
@@ -508,7 +508,7 @@ const datas = {
                                 { id: 9, name: "Stolberg", hasInfo: false },
                                 { id: 10, name: "Eschweiler", hasInfo: false }
                             ],
-                            gerb: "Germania/Nordrhein/Luden/008.png"
+                            gerb: "Germany/nrw/koln/Aachen/gerb.png"
                         },
                         {
                             id: 2,
@@ -559,7 +559,7 @@ const datas = {
                                 { id: 14, name: "Heimbach", hasInfo: false },
                                 { id: 15, name: "Hürtgenwald", hasInfo: false }
                             ],
-                            gerb: "Germania/Nordrhein/Luden/009.png"
+                            gerb: "Germany/nrw/koln/Düren/gerb.png"
                         },
                         {
                             id: 3,
@@ -608,7 +608,7 @@ const datas = {
                                 { id: 12, name: "Hückeswagen", hasInfo: false },
                                 { id: 13, name: "Engelskirchen", hasInfo: false }
                             ],
-                            gerb: "Germania/Nordrhein/Luden/010.png"
+                            gerb: "Germany/nrw/koln/Oberbergischer/gerb.png"
                         },
                         {
                             id: 4,
@@ -655,7 +655,7 @@ const datas = {
                                 { id: 10, name: "Nettersheim", hasInfo: false },
                                 { id: 11, name: "Dahlem", hasInfo: false }
                             ],
-                            gerb: "Germania/Nordrhein/Luden/011.png"
+                            gerb: "Germany/nrw/koln/Euskirchen/gerb.png"
                         },
                         {
                             id: 5,
@@ -710,7 +710,7 @@ const datas = {
                                 { id: 18, name: "Swisttal", hasInfo: false },
                                 { id: 19, name: "Hennef (Sieg)", hasInfo: false }
                             ],
-                            gerb: "Germania/Nordrhein/Luden/012.png"
+                            gerb: "Germany/nrw/koln/Rhein-Sieg-Kreis/gerb.png"
                         },
                         {
                             id: 6,
@@ -756,7 +756,7 @@ const datas = {
                                 { id: 9, name: "Pulheim", hasInfo: false },
                                 { id: 10, name: "Wesseling", hasInfo: false }
                             ],
-                            gerb: "Germania/Nordrhein/Luden/013.png"
+                            gerb: "Germany/nrw/koln/Rhein-Erft-Kreis/gerb.png"
                         },
                         {
                             id: 7,
@@ -800,7 +800,7 @@ const datas = {
                                 { id: 7, name: "Odenthal", hasInfo: false },
                                 { id: 8, name: "Rösrath", hasInfo: false }
                             ],
-                            gerb: "Germania/Nordrhein/Luden/014.png"
+                            gerb: "Germany/nrw/koln/Rheinisch-Bergischer/gerb.png"
                         },
                         {
                             id: 8,
@@ -846,7 +846,7 @@ const datas = {
                                 { id: 9, name: "Hückelhoven", hasInfo: false },
                                 { id: 10, name: "Erkelenz", hasInfo: false }
                             ],
-                            gerb: "Germania/Nordrhein/Luden/015.png"
+                            gerb: "Germany/nrw/koln/Heinsberg/gerb.png"
                         }
                     ],
                     meta: {

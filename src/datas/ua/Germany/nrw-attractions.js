@@ -306,7 +306,7 @@ const datas = [
         regionsPath: "nrw",
         districtPath: "city",
         cityPath: "koeln",
-        fotoCard: "../../Gallery/Germany/Koln/Full/Rathaus-Köln.JPG",
+        fotoCard: "Germany/nrw/koln/koln-city/rathaus-koeln/Rathaus-Köln.jpg",
         location: "Кельн, Німеччина",
         officialSite: [
             { bold: "Офіційний сайт", link: "https://www.stadt-koeln.de/", text: ' міста Кельн (ратуша)' },
@@ -374,7 +374,7 @@ const datas = [
             description: "Кельнська ратуша: готична вежа, ренесансна лоджія та підземний музей MiQua із римськими та єврейськими артефактами.",
             ogTitle: "Rathaus Köln und MiQua – Geschichte unter der Stadt",
             ogDescription: "Досліджуйте Кельнську ратушу та підземний музей MiQua, де Стародавній Рим зустрічається з Середньовіччям.",
-            ogImage: "../../Gallery/Germany/Koln/Full/Rathaus-Köln.JPG"
+            ogImage: "Germany/nrw/koln/koln-city/rathaus-koeln/Rathaus-Köln.jpg"
         }
     }
 ]

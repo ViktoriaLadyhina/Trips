@@ -5,6 +5,7 @@ import { Link } from 'react-router-dom';
 const BASE_PHOTO_URL = import.meta.env.VITE_BASE_PHOTO_URL;
 
 const Region = ({ data, countryPath, regionsPath, districtPath, id }) => {
+  
 
   return (
     <div className='region' id={id}>
@@ -52,7 +53,7 @@ const Region = ({ data, countryPath, regionsPath, districtPath, id }) => {
 
           {data?.gerb && (
             <div className='region__container_desc-gerb'>
-              <img src={`${BASE_PHOTO_URL}${data.gerb}`} alt={data.name} />
+              <img src={`${BASE_PHOTO_URL}${data.gerb}`} alt={data.fullName} />
             </div>
           )}
         </div>

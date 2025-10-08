@@ -7,7 +7,7 @@ const datas = [
         regionsPath: "nrw",
         districtPath: "koln",
         cityPath: "bruehl",
-        fotoCard: "Germania/Nordrhein/Bruhl/001.jpg",
+        fotoCard: "Germany/nrw/koln/Rhein-Erft-Kreis/bruhl/bruhel_palaces/001.jpg",
         location: "Брюль, Германия",
         officialSite: [
             { bold: 'Официальный сайт дворцов Брюля', link: 'https://www.schlossbruehl.de/en/' },
@@ -73,7 +73,7 @@ const datas = [
         regionsPath: "nrw",
         districtPath: "koln",
         cityPath: "bruehl",
-        fotoCard: "../../Gallery/Germany/Bruhl/Full/Max-Ernst-Museum.jpg",
+        fotoCard: "Germany/nrw/koln/Rhein-Erft-Kreis/bruhl/max_ernst_museum/Max-Ernst-Museum.jpg",
         location: "Брюль, Германия",
         officialSite: [
             { bold: 'Официальный сайт Музея Макса Эрнста', link: 'https://maxernstmuseum.lvr.de/en/startseite_1.html' }
@@ -114,7 +114,7 @@ const datas = [
             description: "Единственный в мире музей, посвящённый Максу Эрнсту. Коллекция, история, дадаизм, сюрреализм, временные выставки.",
             ogTitle: "Музей Макса Эрнста – Брюль, Германия",
             ogDescription: "Познакомьтесь с музеем Макса Эрнста в Брюле, его коллекцией и выставками, посвящёнными дадаизму и сюрреализму.",
-            ogImage: "../../Gallery/Germany/Bruhl/Full/Max-Ernst-Museum.jpg"
+            ogImage: "Germany/nrw/koln/Rhein-Erft-Kreis/bruhl/max_ernst_museum/Max-Ernst-Museum.jpg"
         }
     },
     {
@@ -125,7 +125,7 @@ const datas = [
         regionsPath: "nrw",
         districtPath: "koln",
         cityPath: "frechen",
-        fotoCard: "../../Gallery/Germany/Frechen/frechen_keramion.jpg",
+        fotoCard: "Germany/nrw/koln/Rhein-Erft-Kreis/frechen/keramion/frechen_keramion.jpg",
         location: "Фрехен, Германия",
         officialSite: [
             { bold: 'Официальный сайт KERAMION', link: 'https://keramion.de/' }
@@ -175,7 +175,7 @@ const datas = [
             description: "KERAMION: постоянная коллекция и временные выставки керамики, история производства и современное художественное видение.",
             ogTitle: "KERAMION – Центр современной и исторической керамики, Frechen",
             ogDescription: "Узнайте о коллекции Cremer, исторической керамике Фрехена и выставках в KERAMION.",
-            ogImage: "../../Gallery/Germany/Frechen/frechen_keramion.jpg"
+            ogImage: "Germany/nrw/koln/Rhein-Erft-Kreis/frechen/keramion/frechen_keramion.jpg"
         }
     },
     {
@@ -186,7 +186,7 @@ const datas = [
         regionsPath: "nrw",
         districtPath: "koln",
         cityPath: "frechen",
-        fotoCard: "../../Gallery/Germany/Frechen/Burg-Bachem_3.jpg",
+        fotoCard: "Germany/nrw/koln/Rhein-Erft-Kreis/frechen/burg-bachem/Burg-Bachem_3.jpg",
         location: "Фрехен, Германия",
         officialSite: [
             { bold: "Официальный сайт Burg Bachem", link: "https://www.burg-bachem.de/" }
@@ -234,7 +234,7 @@ const datas = [
             description: "Burg Bachem: история, водяные рвы, прогулочные зоны и отдых у небольшого озера в Фрехене.",
             ogTitle: "Burg Bachem – Frechen, Deutschland",
             ogDescription: "Откройте для себя историческую водяную крепость Burg Bachem и озеро с прогулочными аллеями во Фрехене.",
-            ogImage: "../../Gallery/Germany/Frechen/Burg-Bachem_3.jpg"
+            ogImage: "Germany/nrw/koln/Rhein-Erft-Kreis/frechen/burg-bachem/Burg-Bachem_3.jpg"
         }
     },
     {
@@ -245,7 +245,7 @@ const datas = [
         regionsPath: "nrw",
         districtPath: "koln",
         cityPath: "bruehl",
-        fotoCard: "../../Gallery/Germany/Bruhl/Full/001.jpg",
+        fotoCard: "Germany/nrw/koln/Rhein-Erft-Kreis/bruhl/phantasialand/001.jpg",
         location: "Брюль, Германия",
         officialSite: [
             { bold: 'Официальный сайт Phantasialand', link: 'https://www.phantasialand.de/en/' }
@@ -294,7 +294,7 @@ const datas = [
             description: "Phantasialand – один из самых посещаемых парков Европы с более чем 30 аттракционами, тематическими зонами и уникальными отелями.",
             ogTitle: "Phantasialand – Брюль, Германия",
             ogDescription: "Познакомьтесь с Phantasialand в Брюле: аттракционы, тематические зоны, отели и развлечения для всей семьи.",
-            ogImage: "../../Gallery/Germany/Bruhl/Full/001.jpg"
+            ogImage: "Germany/nrw/koln/Rhein-Erft-Kreis/bruhl/phantasialand/001.jpg"
         },
         theme_zones: [{ bold: "Тематические зоны:", text: ' "Berlin", "Africa", "Mexico", "China Town", "Fantasy", "Mystery"' }],
     },
@@ -306,7 +306,7 @@ const datas = [
         regionsPath: "nrw",
         districtPath: "city",
         cityPath: "koeln",
-        fotoCard: "../../Gallery/Germany/Koln/Full/Rathaus-Köln.JPG",
+        fotoCard: "Germany/nrw/koln/koln-city/rathaus-koeln/Rathaus-Köln.jpg",
         location: "Кёльн, Германия",
         officialSite: [
             { bold: "Официальный сайт", link: "https://www.stadt-koeln.de/", text: ' города Кёльна (ратуша)' },
@@ -374,7 +374,7 @@ const datas = [
             description: "Кёльнская ратуша: готическая башня, ренессансная лоджия и подземный музей MiQua с римскими и еврейскими артефактами.",
             ogTitle: "Rathaus Köln und MiQua – Geschichte unter der Stadt",
             ogDescription: "Исследуйте Кёльнскую ратушу и подземный музей MiQua, где древний Рим встречается со Средневековьем.",
-            ogImage: "../../Gallery/Germany/Koln/Full/Rathaus-Köln.JPG"
+            ogImage: "Germany/nrw/koln/koln-city/rathaus-koeln/Rathaus-Köln.jpg"
         }
     }
 ];

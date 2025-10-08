@@ -306,7 +306,7 @@ const datas = [
         regionsPath: "nrw",
         districtPath: "city",
         cityPath: "koeln",
-        fotoCard: "../../Gallery/Germany/Koln/Full/Rathaus-Köln.JPG",
+        fotoCard: "Germany/nrw/koln/koln-city/rathaus-koeln/Rathaus-Köln.jpg",
         location: "Köln, Deutschland",
         officialSite: [
             { bold: "Offizielle Website", link: "https://www.stadt-koeln.de/", text: ' der Stadt Köln (Rathaus)' },
@@ -374,7 +374,7 @@ const datas = [
             description: "Kölner Rathaus: gotischer Turm, Renaissance-Loggia und unterirdisches Museum MiQua mit römischen und jüdischen Artefakten.",
             ogTitle: "Rathaus Köln und MiQua – Geschichte unter der Stadt",
             ogDescription: "Erkunden Sie das Kölner Rathaus und das unterirdische Museum MiQua, wo das antike Rom auf das Mittelalter trifft.",
-            ogImage: "../../Gallery/Germany/Koln/Full/Rathaus-Köln.JPG"
+            ogImage: "Germany/nrw/koln/koln-city/rathaus-koeln/Rathaus-Köln.jpg"
         }
     }
 ];
