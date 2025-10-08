@@ -56,25 +56,25 @@ const datas = {
         items: [
             {
                 bold: "Wappen:",
-                text: [
-                    "Die Elemente des Wappens sind auf einem heraldischen Schild mit blauem Feld und gelbem Rand angeordnet. Blau neben Gelb ist in Sumy traditionell. ",
-                    "Im blauen Feld befindet sich ein goldener Helm mit silbernen Details, darunter ein heraldisch gebogener goldener Ährenkolben mit 25 Körnern, links ein goldenes Achtyrka-Kreuz. ",
-                    "Der goldene Helm im oberen Teil des Wappens symbolisiert den historischen Ursprung unserer Länder seit der Kiewer Rus. ",
-                    "Der goldene Ährenkolben, gebogen in Form des Buchstabens „S“ mit 25 Körnern, symbolisiert den historischen Weg der Bildung der Oblast Sumy sowie die Landwirtschaft — die Haupttätigkeit der Einwohner und Charakterzüge: Fleiß, Gastfreundschaft, Häuslichkeit, Liebe zum Heimatland. ",
-                    "Das goldene Kreuz weist auf Spiritualität hin, die von Generation zu Generation weitergegeben wird. ",
-                    "Die Anordnung dieser Elemente unter dem goldenen Helm symbolisiert die Bereitschaft und Fähigkeit der Bewohner, ihr Heimatland und die geistigen sowie materiellen Werte zu schützen, was sich in der gesamten Geschichte gezeigt hat — von Kämpfen gegen Nomadenstämme bis zu heldenhaften Kapiteln des Zweiten Weltkriegs. ",
-                    "Diese drei Elemente symbolisieren auch die drei Teile der Oblast Sumy: Helm — Gebiete, die von der Oblast Tschernihiw abgetrennt wurden; Ähre — Gebiete, die von der Oblast Charkiw abgetrennt wurden; Kreuz — Gebiete, die von der Oblast Poltawa abgetrennt wurden. ",
-                    "Die blau-gelben Farben unterstreichen, dass die Region ein integraler Bestandteil des Staates Ukraine ist."
-                ],
-                img: "Ukraine/Sumy/045_gerb.gif"
+                text: `
+        Die Elemente des Wappens sind auf einem heraldischen Schild mit blauem Feld und gelbem Rand angeordnet. Blau neben Gelb ist in Sumy traditionell.<br>
+        Im blauen Feld befindet sich ein goldener Helm mit silbernen Details, darunter ein heraldisch gebogener goldener Ährenkolben mit 25 Körnern, links ein goldenes Achtyrka-Kreuz.<br>
+        Der goldene Helm im oberen Teil des Wappens symbolisiert den historischen Ursprung unserer Länder seit der Kiewer Rus.<br>
+        Der goldene Ährenkolben, gebogen in Form des Buchstabens „S“ mit 25 Körnern, symbolisiert den historischen Weg der Bildung der Oblast Sumy sowie die Landwirtschaft — die Haupttätigkeit der Einwohner und Charakterzüge: Fleiß, Gastfreundschaft, Häuslichkeit, Liebe zum Heimatland.<br>
+        Das goldene Kreuz weist auf Spiritualität hin, die von Generation zu Generation weitergegeben wird.<br>
+        Die Anordnung dieser Elemente unter dem goldenen Helm symbolisiert die Bereitschaft und Fähigkeit der Bewohner, ihr Heimatland und die geistigen sowie materiellen Werte zu schützen, was sich in der gesamten Geschichte gezeigt hat — von Kämpfen gegen Nomadenstämme bis zu heldenhaften Kapiteln des Zweiten Weltkriegs.<br>
+        Diese drei Elemente symbolisieren auch die drei Teile der Oblast Sumy: Helm — Gebiete, die von der Oblast Tschernihiw abgetrennt wurden; Ähre — Gebiete, die von der Oblast Charkiw abgetrennt wurden; Kreuz — Gebiete, die von der Oblast Poltawa abgetrennt wurden.<br>
+        Die blau-gelben Farben unterstreichen, dass die Region ein integraler Bestandteil des Staates Ukraine ist.
+      `,
+                img: "Ukraine/sumska/gerb.gif"
             },
             {
                 bold: "Flagge:",
-                text: [
-                    "Die Flagge der Oblast Sumy ist ein blaues Tuch mit dem Verhältnis von Breite zu Länge 2:3.",
-                    "Im Zentrum befindet sich das Wappen der Region, dessen Größe in Höhe des Flaggentuchs im Verhältnis 2:3 steht."
-                ],
-                img: "Ukraine/Sumy/053_flag.gif"
+                text: `
+        Die Flagge der Oblast Sumy ist ein blaues Tuch mit dem Verhältnis von Breite zu Länge 2:3.<br>
+        Im Zentrum befindet sich das Wappen der Region, dessen Größe in Höhe des Flaggentuchs im Verhältnis 2:3 steht.
+      `,
+                img: "Ukraine/sumska/flag.gif"
             }
         ]
     },

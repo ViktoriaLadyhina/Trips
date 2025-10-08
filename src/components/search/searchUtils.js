@@ -5,6 +5,7 @@
 // -----------------------
 export const normalize = str => str
   .toLowerCase()
+  .replace(/<[^>]*>/g, "")
   .replace(/ё/g, "е")
   .replace(/ä/g, "a")
   .replace(/ö/g, "o")
@@ -12,6 +13,9 @@ export const normalize = str => str
   .replace(/ß/g, "ss")
   .replace(/['’]/g, "")
   .trim();
+
+export const stripHTML = str => 
+  typeof str === "string" ? str.replace(/<[^>]*>/g, "").trim() : str;
 
 // -----------------------
 // 2️⃣ Глубокий поиск по объекту/массиву
@@ -197,6 +201,7 @@ export const searchAll = (value, lang, allCountries, allRegions, allCities, allA
   const resultsCountriesRaw = deepSearch(allCountries, obj =>
     typeof obj === "string" && normalize(obj).includes(normalizedValue)
   );
+
   const countryGroups = {};
   resultsCountriesRaw.forEach(r => {
     const countryInfo = getCountryInfoByPath(r.path, allCountries);
@@ -205,8 +210,9 @@ export const searchAll = (value, lang, allCountries, allRegions, allCities, allA
     const key = countryInfo.countryPath;
     if (!countryGroups[key]) countryGroups[key] = { ...countryInfo, matches: [] };
 
-    if (r.value && !countryGroups[key].matches.includes(r.value)) {
-      countryGroups[key].matches.push(r.value);
+    const cleanValue = stripHTML(r.value);
+    if (cleanValue && !countryGroups[key].matches.includes(cleanValue)) {
+      countryGroups[key].matches.push(cleanValue);
     }
   });
   const countriesResult = Object.values(countryGroups);
@@ -217,6 +223,7 @@ export const searchAll = (value, lang, allCountries, allRegions, allCities, allA
   const resultsRegionsRaw = deepSearch(allRegions, obj =>
     typeof obj === "string" && normalize(obj).includes(normalizedValue)
   );
+
   const regionGroups = {};
   resultsRegionsRaw.forEach(r => {
     const regionInfo = getRegionInfoByPath(r.path, allRegions);
@@ -225,41 +232,38 @@ export const searchAll = (value, lang, allCountries, allRegions, allCities, allA
     const key = `${regionInfo.countryKey}|${regionInfo.regionPath}`;
     if (!regionGroups[key]) regionGroups[key] = { ...regionInfo, matches: [] };
 
-    if (r.value && !regionGroups[key].matches.includes(r.value)) {
-      regionGroups[key].matches.push(r.value);
+    const cleanValue = stripHTML(r.value);
+    if (cleanValue && !regionGroups[key].matches.includes(cleanValue)) {
+      regionGroups[key].matches.push(cleanValue);
     }
   });
   const regionsResult = Object.values(regionGroups);
 
   // -----------------------
-// 3️⃣ Поиск по district/районам
-// -----------------------
-const resultsDistrictsRaw = resultsRegionsRaw
-  .map(r => getDistrictInfoByPath(r.path, allRegions))
-  .filter(d => d && d.value);
+  // Поиск по district/районам
+  // -----------------------
+  const resultsDistrictsRaw = resultsRegionsRaw
+    .map(r => getDistrictInfoByPath(r.path, allRegions))
+    .filter(d => d && d.value);
 
-const districtGroups = {};
-resultsDistrictsRaw.forEach(d => {
-  const key = `${d.countryKey}|${d.regionKey}|${d.districtPath}`;
-  if (!districtGroups[key]) {
-    districtGroups[key] = { ...d, matches: [] };
-  }
+  const districtGroups = {};
+  resultsDistrictsRaw.forEach(d => {
+    const key = `${d.countryKey}|${d.regionKey}|${d.districtPath}`;
+    if (!districtGroups[key]) {
+      districtGroups[key] = { ...d, matches: [] };
+    }
 
-  // Добавляем объект вместо простой строки
-  const matchObj = {
-    text: d.districtFullTitle || d.districtTitle, // или можно добавить описание, если есть
-    source: "district",
-    id: d.districtPath
-  };
+    const matchObj = {
+      text: stripHTML(d.districtFullTitle || d.districtTitle),
+      source: "district",
+      id: d.districtPath
+    };
 
-  // Проверяем, нет ли уже такого id в matches
-  if (!districtGroups[key].matches.find(m => m.id === matchObj.id)) {
-    districtGroups[key].matches.push(matchObj);
-  }
-});
-
-const districtsResult = Object.values(districtGroups);
-
+    if (!districtGroups[key].matches.find(m => m.id === matchObj.id)) {
+      districtGroups[key].matches.push(matchObj);
+    }
+  });
+  const districtsResult = Object.values(districtGroups);
 
   // -----------------------
   // Поиск по городам
@@ -267,6 +271,7 @@ const districtsResult = Object.values(districtGroups);
   const resultsCitiesRaw = deepSearch(allCities, obj =>
     typeof obj === "string" && normalize(obj).includes(normalizedValue)
   );
+
   const cityGroups = {};
   resultsCitiesRaw.forEach(r => {
     const cityInfo = getCityInfoByPath(r.path, allCities, r.value);
@@ -275,8 +280,9 @@ const districtsResult = Object.values(districtGroups);
     const key = `${cityInfo.countryKey}|${cityInfo.regionKey}|${cityInfo.district}|${cityInfo.cityPath}`;
     if (!cityGroups[key]) cityGroups[key] = { ...cityInfo, matches: [] };
 
-    if (r.value && !cityGroups[key].matches.includes(r.value)) {
-      cityGroups[key].matches.push(r.value);
+    const cleanValue = stripHTML(r.value);
+    if (cleanValue && !cityGroups[key].matches.includes(cleanValue)) {
+      cityGroups[key].matches.push(cleanValue);
     }
   });
   const citiesResult = Object.values(cityGroups);
@@ -287,6 +293,7 @@ const districtsResult = Object.values(districtGroups);
   const resultsAttractionsRaw = deepSearch(allAttractions, obj =>
     typeof obj === "string" && normalize(obj).includes(normalizedValue)
   );
+
   const attractionGroups = {};
   resultsAttractionsRaw.forEach(r => {
     const attractionInfo = getAttractionsInfoByPath(r.path, allAttractions, r.value);
@@ -295,8 +302,9 @@ const districtsResult = Object.values(districtGroups);
     const key = attractionInfo.attractionPath;
     if (!attractionGroups[key]) attractionGroups[key] = { ...attractionInfo, matches: [] };
 
-    if (r.value && !attractionGroups[key].matches.includes(r.value)) {
-      attractionGroups[key].matches.push(r.value);
+    const cleanValue = stripHTML(r.value);
+    if (cleanValue && !attractionGroups[key].matches.includes(cleanValue)) {
+      attractionGroups[key].matches.push(cleanValue);
     }
   });
   const attractionsResult = Object.values(attractionGroups);

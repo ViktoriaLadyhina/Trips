@@ -31,6 +31,7 @@ const City = () => {
         { label: city.name }
     ];
 
+    
     return (
         <div className='city'>
             {cityData && (
@@ -40,15 +41,15 @@ const City = () => {
                     <div className='city__container'>
                         {cityData.name && <div className='city__title'>{cityData.name}</div>}
 
-                        <BtnAttr lang={lang} path={`/${countryPath}/${regionsPath}/${districtPath}/${cityPath}/attractions`}/>
+                        <BtnAttr lang={lang} path={`/${countryPath}/${regionsPath}/${districtPath}/${cityPath}/attractions`} />
 
                         <div className='city__desc'>
                             {cityData.desc?.general && (<InfoBlock data={cityData.desc.general} className="city__desc-general" />)}
 
-                            {photos?.[regionsPath]?.[cityPath]?.[0] && (
+                            {photos?.[regionsPath]?.[cityPath]?.gallery?.[0] && (
                                 <img
-                                    src={`${BASE_PHOTO_URL}${photos[regionsPath][cityPath][0].path}`}
-                                    alt={photos[regionsPath][cityPath][0].title}
+                                    src={`${BASE_PHOTO_URL}${photos[regionsPath][cityPath].gallery[0].path}`}
+                                    alt={photos[regionsPath][cityPath].gallery[0].title.de}
                                     className='city__foto--right'
                                 />
                             )}
@@ -60,10 +61,10 @@ const City = () => {
                             {cityData.desc?.officialSite && (<InfoBlock data={cityData.desc.officialSite} className="city__desc-officialSite" />)}
                             {cityData.notablePeople && (<InfoBlock data={cityData.notablePeople} className="city__desc-notablePeople" />)}
 
-                            {photos?.[regionsPath]?.[cityPath]?.[1] && (
+                            {photos?.[regionsPath]?.[cityPath]?.gallery?.[1] && (
                                 <img
-                                    src={`${BASE_PHOTO_URL}${photos[regionsPath][cityPath][1].path}`}
-                                    alt={photos[regionsPath][cityPath][1].title}
+                                    src={`${BASE_PHOTO_URL}${photos?.[regionsPath]?.[cityPath]?.gallery?.[1].path}`}
+                                    alt={photos?.[regionsPath]?.[cityPath]?.gallery?.[1].title}
                                     className='city__foto'
                                 />
                             )}

@@ -77,7 +77,7 @@ const Attraction = () => {
                 {attraction.tickets_and_entry && (<InfoBlock data={attraction.tickets_and_entry} className="attraction__desc-tickets_and_entry" />)}
                 {attraction.full_description && (<InfoBlock data={attraction.full_description} className="attraction__desc-full_description" />)}
                 {attraction.theme_zones && (<InfoBlock data={attraction.theme_zones} className="attraction__desc-theme_zones" />)}
-                {attraction.popular_attractions && (<InfoBlock data={attraction.popular_attractions} className="attraction__desc-popular_attractions" />)}
+                {attraction.sub_objects && (<InfoBlock data={attraction.sub_objects} className="attraction__desc-sub_objects" />)}
                 {attraction.hotels && (<InfoBlock data={attraction.hotels} className="attraction__desc-hotels" />)}
                 {attraction.interestingFacts && (<InfoBlock data={attraction.interestingFacts} className="attraction__desc-interestingFacts" />)}
 

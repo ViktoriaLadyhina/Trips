@@ -50,12 +50,12 @@ const datas = {
             {
                 bold: "Герб:",
                 text: " на гербі Північного Рейну-Вестфалії об'єднані символи трьох історичних провінцій, з яких була утворена земля у 1946–1947 роках. Срібляста смуга Рейну на зеленому тлі символізує Рейнську провінцію. Саксонський кінь на червоному тлі — символ Вестфалії (у вестфальському варіанті він встав на диби). Червона троянда з золотим серцевиною і листям — герб графів фон Ліппе, що використовувався з XIII століття.",
-                img: "Germania/Nordrhein/002.gif"
+                img: "Germany/nrw/gerb.gif"
             },
             {
                 bold: "Прапор:",
                 text: " прапор Північного Рейну-Вестфалії складається з кольорів герба: зеленого, білого та червоного, розташованих горизонтальними смугами.",
-                img: "Germania/Nordrhein/003.gif"
+                img: "Germany/nrw/flag.gif"
             }
         ]
     },
@@ -80,7 +80,367 @@ const datas = {
         {
             title: "Адміністративні округи в Північному Рейні-Вестфалії",
             items: [
-                { id: 1, name: 'Арнсберг', hasInfo: false, path: "arnsberg", },
+                {
+                    id: 1,
+                    title: 'Адміністративний округ Арнсберг',
+                    name: 'Арнсберг',
+                    hasInfo: true,
+                    path: "arnsberg",
+                    desc: {
+                        history: [
+                            { text: 'Адміністративний округ Арнсберг — один із п\'яти адміністративних округів землі Північний Рейн-Вестфалія. Він розташований на південному сході землі.' },
+                            { text: 'Заснований 30 квітня 1815 року.' }
+                        ],
+                        area: [
+                            { bold: 'Площа:' },
+                            { text: ' близько 8 003 км².' }
+                        ],
+                        population: [
+                            { bold: 'Населення:' },
+                            { text: ' близько 3 573 137 осіб (станом на 2024 р.).' }
+                        ],
+                        districts: [
+                            { bold: 'Округа-райони (Kreise):' },
+                            { text: 'Еннепе-Рур (Ennepe-Ruhr-Kreis), Меркіш (Märkischer Kreis), Хохзауерланд (Hochsauerlandkreis), Ольпе (Olpe), Зіген-Віттгенштайн (Siegen-Wittgenstein), Зост (Soest), Унна (Unna)' }
+                        ],
+                        cities: [
+                            { bold: 'Міста, що не належать районам (kreisfreie Städte):' },
+                            { text: 'Бохум (Bochum), Дортмунд (Dortmund), Хаґен (Hagen), Гамм (Hamm), Херне (Herne)' }
+                        ]
+                    },
+                    subRegion: [
+                        {
+                            id: 1,
+                            name: "Зіген-Віттгенштайн",
+                            fullName: "Kreis Siegen-Wittgenstein",
+                            parentDistrict: "Арнсберг",
+                            center: [
+                                { bold: "Центр району:" },
+                                { text: " місто Зіген." }
+                            ],
+                            area: [
+                                { bold: "Площа:" },
+                                { text: " 1 132,9 км² (станом на 2023 р.)" }
+                            ],
+                            population: [
+                                { bold: "Населення:" },
+                                { text: " 274 379 осіб (станом на 31.12.2023 р.)" }
+                            ],
+                            density: [
+                                { bold: "Щільність населення:" },
+                                { text: " 242,7 осіб/км² (станом на 2023 р.)" }
+                            ],
+                            code: [
+                                { bold: "Офіційний код району:" },
+                                { text: " 05 9 70." }
+                            ],
+                            description: [
+                                { text: "Район Зіген-Віттгенштайн входить до землі Північний Рейн-Вестфалія, підпорядкований адміністративному округу Арнсберг." }
+                            ],
+                            com: [
+                                { text: "Район поділяється на " },
+                                { bold: "11 громад:" }
+                            ],
+                            communities: [
+                                { id: 1, name: "Бад-Берлебург", hasInfo: false },
+                                { id: 2, name: "Бад-Ласфе", hasInfo: false },
+                                { id: 3, name: "Бурбах", hasInfo: false },
+                                { id: 4, name: "Вільнсдорф", hasInfo: false },
+                                { id: 5, name: "Зіген", hasInfo: false },
+                                { id: 6, name: "Кройцталь", hasInfo: false },
+                                { id: 7, name: "Нетфен", hasInfo: false },
+                                { id: 8, name: "Фройденберг", hasInfo: false },
+                                { id: 9, name: "Нойнкірхен", hasInfo: false },
+                                { id: 10, name: "Хільхенбах", hasInfo: false },
+                                { id: 11, name: "Ерндтебрюк", hasInfo: false }
+                            ],
+                            gerb: "Germany/nrw/arnsberg/Siegen-Wittgenstein/gerb.png"
+                        },
+                        {
+                            id: 2,
+                            name: "Зост",
+                            fullName: "Kreis Soest",
+                            parentDistrict: "Арнсберг",
+                            center: [
+                                { bold: "Центр району:" },
+                                { text: " місто Зост." }
+                            ],
+                            area: [
+                                { bold: "Площа:" },
+                                { text: " 1 328,6 км² (станом на 2023 р.)" }
+                            ],
+                            population: [
+                                { bold: "Населення:" },
+                                { text: " близько 300 297 осіб (станом на 2023 р.)" }
+                            ],
+                            density: [
+                                { bold: "Щільність населення:" },
+                                { text: " 226 осіб/км²." }
+                            ],
+                            code: [
+                                { bold: "Офіційний код району:" },
+                                { text: " 05 9 74." }
+                            ],
+                            description: [
+                                { text: "Район Зост входить до землі Північний Рейн-Вестфалія, підпорядкований адміністративному округу Арнсберг." }
+                            ],
+                            com: [
+                                { text: "Район поділяється на " },
+                                { bold: "14 громад:" }
+                            ],
+                            communities: [
+                                { id: 1, name: "Анрьохте", hasInfo: false },
+                                { id: 2, name: "Бад-Зассендорф", hasInfo: false },
+                                { id: 3, name: "Варштайн", hasInfo: false },
+                                { id: 4, name: "Вельфер", hasInfo: false },
+                                { id: 5, name: "Верль", hasInfo: false },
+                                { id: 6, name: "Віккеде", hasInfo: false },
+                                { id: 7, name: "Гезеке", hasInfo: false },
+                                { id: 8, name: "Зост", hasInfo: false },
+                                { id: 9, name: "Ліппеталь", hasInfo: false },
+                                { id: 10, name: "Ліппштадт", hasInfo: false },
+                                { id: 11, name: "Мьонезее", hasInfo: false },
+                                { id: 12, name: "Рютен", hasInfo: false },
+                                { id: 13, name: "Ензе", hasInfo: false },
+                                { id: 14, name: "Ервитте", hasInfo: false }
+                            ],
+                            gerb: "Germany/nrw/arnsberg/Soest/gerb.png"
+                        },
+                        {
+                            id: 3,
+                            name: "Меркіш",
+                            fullName: "Kreis Märkischer Kreis",
+                            parentDistrict: "Арнсберг",
+                            center: [
+                                { bold: "Центр району:" },
+                                { text: " місто Люденшайд." }
+                            ],
+                            area: [
+                                { bold: "Площа:" },
+                                { text: " 1 058,95 км² (станом на 2023 р.)" }
+                            ],
+                            population: [
+                                { bold: "Населення:" },
+                                { text: " 408 899 осіб (станом на 31 грудня 2023 р.)" }
+                            ],
+                            density: [
+                                { bold: "Щільність населення:" },
+                                { text: " 390 осіб/км²." }
+                            ],
+                            code: [
+                                { bold: "Офіційний код району:" },
+                                { text: " 05 9 62." }
+                            ],
+                            description: [
+                                { text: "Район Меркіш входить до землі Північний Рейн-Вестфалія, підпорядкований адміністративному округу Арнсберг." }
+                            ],
+                            com: [
+                                { text: "Район поділяється на " },
+                                { bold: "15 громад:" }
+                            ],
+                            communities: [
+                                { id: 1, name: "Альтена", hasInfo: false },
+                                { id: 2, name: "Бальфе", hasInfo: false },
+                                { id: 3, name: "Вердоль", hasInfo: false },
+                                { id: 4, name: "Ізерлон", hasInfo: false },
+                                { id: 5, name: "Кірспе", hasInfo: false },
+                                { id: 6, name: "Люденшайд", hasInfo: false },
+                                { id: 7, name: "Майнерцхаген", hasInfo: false },
+                                { id: 8, name: "Менден", hasInfo: false },
+                                { id: 9, name: "Нахродт-Віблінгверде", hasInfo: false },
+                                { id: 10, name: "Нойенраде", hasInfo: false },
+                                { id: 11, name: "Плеттенберг", hasInfo: false },
+                                { id: 12, name: "Хальфер", hasInfo: false },
+                                { id: 13, name: "Хершайд", hasInfo: false },
+                                { id: 14, name: "Хемер", hasInfo: false },
+                                { id: 15, name: "Шальксмюле", hasInfo: false }
+                            ],
+                            gerb: "Germany/nrw/arnsberg/Märkischer-Kreis/gerb.png"
+                        },
+                        {
+                            id: 4,
+                            name: "Ольпе",
+                            fullName: "Kreis Olpe",
+                            parentDistrict: "Арнсберг",
+                            center: [
+                                { bold: "Центр району:" },
+                                { text: " місто Ольпе." }
+                            ],
+                            area: [
+                                { bold: "Площа:" },
+                                { text: " 710,7 км² (станом на 2023 р.)" }
+                            ],
+                            population: [
+                                { bold: "Населення:" },
+                                { text: " 134 439 осіб (станом на 31 грудня 2022 р.)" }
+                            ],
+                            density: [
+                                { bold: "Щільність населення:" },
+                                { text: " 188,8 осіб/км²." }
+                            ],
+                            code: [
+                                { bold: "Офіційний код району:" },
+                                { text: " 05 9 66." }
+                            ],
+                            description: [
+                                { text: "Район Ольпе входить до землі Північний Рейн-Вестфалія, підпорядкований адміністративному округу Арнсберг." }
+                            ],
+                            com: [
+                                { text: "Район поділяється на " },
+                                { bold: "7 громад:" }
+                            ],
+                            communities: [
+                                { id: 1, name: "Аттендорн", hasInfo: false },
+                                { id: 2, name: "Венден", hasInfo: false },
+                                { id: 3, name: "Дрольсхаген", hasInfo: false },
+                                { id: 4, name: "Кірххундем", hasInfo: false },
+                                { id: 5, name: "Леннештадт", hasInfo: false },
+                                { id: 6, name: "Ольпе", hasInfo: false },
+                                { id: 7, name: "Фіннентроп", hasInfo: false }
+                            ],
+                            gerb: "Germany/nrw/arnsberg/Olpe/gerb.png"
+                        },
+                        {
+                            id: 5,
+                            name: "Унна",
+                            fullName: "Kreis Unna",
+                            parentDistrict: "Арнсберг",
+                            center: [
+                                { bold: "Центр району:" },
+                                { text: " місто Унна." }
+                            ],
+                            area: [
+                                { bold: "Площа:" },
+                                { text: " 543,2 км² (станом на 31 грудня 2023 р.)" }
+                            ],
+                            population: [
+                                { bold: "Населення:" },
+                                { text: " 396 283 осіб (станом на 31 грудня 2023 р.)" }
+                            ],
+                            density: [
+                                { bold: "Щільність населення:" },
+                                { text: " 730,3 осіб/км²." }
+                            ],
+                            code: [
+                                { bold: "Офіційний код району:" },
+                                { text: " 05 9 78." }
+                            ],
+                            description: [
+                                { text: "Район Унна входить до землі Північний Рейн-Вестфалія, підпорядкований адміністративному округу Арнсберг." }
+                            ],
+                            com: [
+                                { text: "Район поділяється на " },
+                                { bold: "10 громад:" }
+                            ],
+                            communities: [
+                                { id: 1, name: "Бёнен", hasInfo: false },
+                                { id: 2, name: "Бергкамен", hasInfo: false },
+                                { id: 3, name: "Верне", hasInfo: false },
+                                { id: 4, name: "Зельм", hasInfo: false },
+                                { id: 5, name: "Камен", hasInfo: false },
+                                { id: 6, name: "Люнен", hasInfo: false },
+                                { id: 7, name: "Унна", hasInfo: false },
+                                { id: 8, name: "Фрёнденберг", hasInfo: false },
+                                { id: 9, name: "Хольцвіккеде", hasInfo: false },
+                                { id: 10, name: "Шверте", hasInfo: false }
+                            ],
+                            gerb: "Germany/nrw/arnsberg/Unna/gerb.png"
+                        },
+                        {
+                            id: 6,
+                            name: "Хохзауерланд",
+                            fullName: "Hochsauerlandkreis",
+                            parentDistrict: "Арнсберг",
+                            center: [
+                                { bold: "Центр району:" },
+                                { text: " місто Мешеде." }
+                            ],
+                            area: [
+                                { bold: "Площа:" },
+                                { text: " 1 960,2 км² (станом на 31 грудня 2023 р.)" }
+                            ],
+                            population: [
+                                { bold: "Населення:" },
+                                { text: " 261 193 особи (станом на 31 грудня 2023 р.)" }
+                            ],
+                            density: [
+                                { bold: "Щільність населення:" },
+                                { text: " 133,2 осіб/км²." }
+                            ],
+                            code: [
+                                { bold: "Офіційний код району:" },
+                                { text: " 05 9 58." }
+                            ],
+                            description: [
+                                { text: "Район Хохзауерланд входить до землі Північний Рейн-Вестфалія, підпорядкований адміністративному округу Арнсберг." }
+                            ],
+                            com: [
+                                { text: "Район поділяється на " },
+                                { bold: "12 громад:" }
+                            ],
+                            communities: [
+                                { id: 1, name: "Арнсберг", hasInfo: false },
+                                { id: 2, name: "Бествіг", hasInfo: false },
+                                { id: 3, name: "Брілон", hasInfo: false },
+                                { id: 4, name: "Вінтерберг", hasInfo: false },
+                                { id: 5, name: "Зундерн", hasInfo: false },
+                                { id: 6, name: "Марсберг", hasInfo: false },
+                                { id: 7, name: "Медебах", hasInfo: false },
+                                { id: 8, name: "Мешеде", hasInfo: false },
+                                { id: 9, name: "Ольсберг", hasInfo: false },
+                                { id: 10, name: "Халленберг", hasInfo: false },
+                                { id: 11, name: "Шмалленберг", hasInfo: false },
+                                { id: 12, name: "Еслоє", hasInfo: false }
+                            ],
+                            gerb: "Germany/nrw/arnsberg/Hochsauerlandkreis/gerb.png"
+                        },
+                        {
+                            id: 7,
+                            name: "Еннепе-Рур",
+                            fullName: "Ennepe-Ruhr-Kreis",
+                            parentDistrict: "Арнсберг",
+                            center: [
+                                { bold: "Центр району:" },
+                                { text: " місто Швельм." }
+                            ],
+                            area: [
+                                { bold: "Площа:" },
+                                { text: " 408,44 км² (станом на 31 грудня 2023 р.)" }
+                            ],
+                            population: [
+                                { bold: "Населення:" },
+                                { text: " 314 167 осіб (станом на 31 грудня 2024 р.)" }
+                            ],
+                            density: [
+                                { bold: "Щільність населення:" },
+                                { text: " 766,9 осіб/км²." }
+                            ],
+                            code: [
+                                { bold: "Офіційний код району:" },
+                                { text: " 05 9 54." }
+                            ],
+                            description: [
+                                { text: "Район Еннепе-Рур входить до землі Північний Рейн-Вестфалія, підпорядкований адміністративному округу Арнсберг." }
+                            ],
+                            com: [
+                                { text: "Район поділяється на " },
+                                { bold: "9 громад:" }
+                            ],
+                            communities: [
+                                { id: 1, name: "Бреккерфельд", hasInfo: false },
+                                { id: 2, name: "Еннепеталь", hasInfo: false },
+                                { id: 3, name: "Гевельсберг", hasInfo: false },
+                                { id: 4, name: "Хаттінген", hasInfo: false },
+                                { id: 5, name: "Хердека", hasInfo: false },
+                                { id: 6, name: "Швельм", hasInfo: false },
+                                { id: 7, name: "Шпрокхьофель", hasInfo: false },
+                                { id: 8, name: "Веттер (Рур)", hasInfo: false },
+                                { id: 9, name: "Віттен", hasInfo: false }
+                            ],
+                            gerb: "Germany/nrw/arnsberg/Ennepe-Ruhr-Kreis/gerb.png"
+                        }
+                    ]
+                },
                 { id: 2, name: 'Детмольд', hasInfo: false, path: "detmold", },
                 { id: 3, name: 'Дюссельдорф', hasInfo: false, path: "dusseldorf" },
                 {
@@ -89,7 +449,6 @@ const datas = {
                     name: 'Кельн',
                     hasInfo: true,
                     path: "koln",
-                    currentMap: "Germania/Nordrhein/004.gif",
                     desc: {
                         history: [
                             { text: 'Адміністративний округ Кельн — один із п’яти адміністративних округів землі Північний Рейн-Вестфалія. Розташований у південно-західній частині землі.' },
@@ -101,15 +460,15 @@ const datas = {
                         ],
                         population: [
                             { bold: 'Населення:' },
-                            { text: ' приблизно 4,49 мільйона.' }
+                            { text: ' приблизно 4,49 мільйона (на 2021 р.).' }
                         ],
                         districts: [
                             { bold: 'До складу входять райони (Kreise):' },
-                            { text: ' Aachen, Düren, Euskirchen, Heinsberg, Oberbergischer Kreis, Rhein-Erft-Kreis, Rhein-Sieg-Kreis, Rheinisch-Bergischer Kreis.' }
+                            { text: 'Аахен (Aachen), Дюрен (Düren), Ойскирхен (Euskirchen), Хайнсберг (Heinsberg), Обербергиш (Oberbergischer Kreis), Рейн-Эрфт (Rhein-Erft-Kreis), Рейн-Зиг (Rhein-Sieg-Kreis), Рейниш-Бергиш (Rheinisch-Bergischer Kreis)' }
                         ],
                         cities: [
                             { bold: 'Міста, які не належать до районів (kreisfreie Städte):' },
-                            { text: ' Aachen, Bonn, Köln, Leverkusen.' }
+                            { text: 'Аахен (Aachen), Бонн (Bonn), Кёльн (Köln), Леверкузен (Leverkusen)' }
                         ]
                     },
                     subRegion: [
@@ -139,7 +498,7 @@ const datas = {
                                 { text: " 05 3 34." }
                             ],
                             description: [
-                                { text: "Район входить до складу землі Північний Рейн-Вестфалія, підпорядкований адміністративному округу Кельн." }
+                                { text: "Район Аахен входить до складу землі Північний Рейн-Вестфалія, підпорядкований адміністративному округу Кельн." }
                             ],
                             com: [
                                 { text: "Район поділяється на " },
@@ -157,7 +516,7 @@ const datas = {
                                 { id: 9, name: "Штольберг", hasInfo: false },
                                 { id: 10, name: "Ешвайлер", hasInfo: false }
                             ],
-                            gerb: "Germania/Nordrhein/Luden/008.png"
+                            gerb: "Germany/nrw/koln/Aachen/gerb.png"
                         },
                         {
                             id: 2,
@@ -185,7 +544,7 @@ const datas = {
                                 { text: " 05 3 58." }
                             ],
                             description: [
-                                { text: "Район входить до складу землі Північний Рейн-Вестфалія, підпорядкований адміністративному округу Кельн." }
+                                { text: "Район Дюрен входить до складу землі Північний Рейн-Вестфалія, підпорядкований адміністративному округу Кельн." }
                             ],
                             com: [
                                 { text: "Район поділяється на " },
@@ -208,7 +567,7 @@ const datas = {
                                 { id: 14, name: "Хаймбах", hasInfo: false },
                                 { id: 15, name: "Хюртгенвальд", hasInfo: false }
                             ],
-                            gerb: "Germania/Nordrhein/Luden/009.png"
+                            gerb: "Germany/nrw/koln/Düren/gerb.png"
                         },
                         {
                             id: 3,
@@ -236,7 +595,7 @@ const datas = {
                                 { text: " 05 3 74." }
                             ],
                             description: [
-                                { text: "Район входить до землі Північний Рейн-Вестфалія, підпорядкований адміністративному округу Кельн." }
+                                { text: "Район Обербергіш входить до землі Північний Рейн-Вестфалія, підпорядкований адміністративному округу Кельн." }
                             ],
                             com: [
                                 { text: "Район поділяється на " },
@@ -257,7 +616,7 @@ const datas = {
                                 { id: 12, name: "Хюккесваген", hasInfo: false },
                                 { id: 13, name: "Енгельскірхен", hasInfo: false }
                             ],
-                            gerb: "Germania/Nordrhein/Luden/010.png"
+                            gerb: "Germany/nrw/koln/Oberbergischer/gerb.png"
                         },
                         {
                             id: 4,
@@ -285,7 +644,7 @@ const datas = {
                                 { text: " 05 3 66." }
                             ],
                             description: [
-                                { text: "Район входить до складу землі Північний Рейн-Вестфалія, підпорядкований адміністративному округу Кельн." }
+                                { text: "Район Ойскирхен входить до складу землі Північний Рейн-Вестфалія, підпорядкований адміністративному округу Кельн." }
                             ],
                             com: [
                                 { text: "Район поділяється на " },
@@ -304,7 +663,7 @@ const datas = {
                                 { id: 10, name: "Неттерсхайм", hasInfo: false },
                                 { id: 11, name: "Далем", hasInfo: false }
                             ],
-                            gerb: "Germania/Nordrhein/Luden/011.png"
+                            gerb: "Germany/nrw/koln/Euskirchen/gerb.png"
                         },
                         {
                             id: 5,
@@ -332,7 +691,7 @@ const datas = {
                                 { text: " 05 3 82." }
                             ],
                             description: [
-                                { text: "Район входить до складу землі Північний Рейн-Вестфалія, підпорядкований адміністративному округу Кельн." }
+                                { text: "Район Рейн-Зіг входить до складу землі Північний Рейн-Вестфалія, підпорядкований адміністративному округу Кельн." }
                             ],
                             com: [
                                 { text: "Район поділяється на " },
@@ -359,7 +718,7 @@ const datas = {
                                 { id: 18, name: "Свістталь", hasInfo: false },
                                 { id: 19, name: "Хеннеф", hasInfo: false }
                             ],
-                            gerb: "Germania/Nordrhein/Luden/012.png"
+                            gerb: "Germany/nrw/koln/Rhein-Sieg-Kreis/gerb.png"
                         },
                         {
                             id: 6,
@@ -387,7 +746,7 @@ const datas = {
                                 { text: " 05 3 62." }
                             ],
                             description: [
-                                { text: "Район входить до складу землі Північний Рейн-Вестфалия, підпорядкований адміністративному округу Кёльн." }
+                                { text: "Район Рейн-Ерфт входить до складу землі Північний Рейн-Вестфалия, підпорядкований адміністративному округу Кёльн." }
                             ],
                             com: [
                                 { text: "Район поділяється на " },
@@ -405,7 +764,7 @@ const datas = {
                                 { id: 9, name: "Пульхайм", hasInfo: false },
                                 { id: 10, name: "Веселлінг", hasInfo: false }
                             ],
-                            gerb: "Germania/Nordrhein/Luden/013.png"
+                            gerb: "Germany/nrw/koln/Rhein-Erft-Kreis/gerb.png"
                         },
                         {
                             id: 7,
@@ -433,7 +792,7 @@ const datas = {
                                 { text: " 05 3 78." }
                             ],
                             description: [
-                                { text: "Район входить до складу землі Північний Рейн‑Вестфалія, підпорядкований адміністративному округу Кельн." }
+                                { text: "Район Рейнiш-Бергiш входить до складу землі Північний Рейн‑Вестфалія, підпорядкований адміністративному округу Кельн." }
                             ],
                             com: [
                                 { text: "Район поділяється на " },
@@ -449,7 +808,7 @@ const datas = {
                                 { id: 7, name: "Оденаль", hasInfo: false },
                                 { id: 8, name: "Рёсрат", hasInfo: false }
                             ],
-                            gerb: "Germania/Nordrhein/Luden/014.png"
+                            gerb: "Germany/nrw/koln/Rheinisch-Bergischer/gerb.png"
                         },
                         {
                             id: 8,
@@ -477,7 +836,7 @@ const datas = {
                                 { text: " 05 3 70." }
                             ],
                             description: [
-                                { text: "Район входить до складу землі Північний Рейн‑Вестфалія, підпорядкований адміністративному округу Кельн." }
+                                { text: "Район Хайнсберг входить до складу землі Північний Рейн‑Вестфалія, підпорядкований адміністративному округу Кельн." }
                             ],
                             com: [
                                 { text: "Район поділяється на " },
@@ -495,7 +854,7 @@ const datas = {
                                 { id: 9, name: "Хюккельхофен", hasInfo: false },
                                 { id: 10, name: "Еркеленц", hasInfo: false }
                             ],
-                            gerb: "Germania/Nordrhein/Luden/015.png"
+                            gerb: "Germany/nrw/koln/Heinsberg/gerb.png"
                         }
                     ],
                     meta: {

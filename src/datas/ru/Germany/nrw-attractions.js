@@ -7,7 +7,7 @@ const datas = [
         regionsPath: "nrw",
         districtPath: "koln",
         cityPath: "bruehl",
-        fotoCard: "Germania/Nordrhein/Bruhl/001.jpg",
+        fotoCard: "Germany/nrw/koln/Rhein-Erft-Kreis/bruhl/bruhel_palaces/001.jpg",
         location: "Брюль, Германия",
         officialSite: [
             { bold: 'Официальный сайт дворцов Брюля', link: 'https://www.schlossbruehl.de/en/' },
@@ -73,7 +73,7 @@ const datas = [
         regionsPath: "nrw",
         districtPath: "koln",
         cityPath: "bruehl",
-        fotoCard: "../../Gallery/Germany/Bruhl/Full/Max-Ernst-Museum.jpg",
+        fotoCard: "Germany/nrw/koln/Rhein-Erft-Kreis/bruhl/max_ernst_museum/Max-Ernst-Museum.jpg",
         location: "Брюль, Германия",
         officialSite: [
             { bold: 'Официальный сайт Музея Макса Эрнста', link: 'https://maxernstmuseum.lvr.de/en/startseite_1.html' }
@@ -114,7 +114,7 @@ const datas = [
             description: "Единственный в мире музей, посвящённый Максу Эрнсту. Коллекция, история, дадаизм, сюрреализм, временные выставки.",
             ogTitle: "Музей Макса Эрнста – Брюль, Германия",
             ogDescription: "Познакомьтесь с музеем Макса Эрнста в Брюле, его коллекцией и выставками, посвящёнными дадаизму и сюрреализму.",
-            ogImage: "../../Gallery/Germany/Bruhl/Full/Max-Ernst-Museum.jpg"
+            ogImage: "Germany/nrw/koln/Rhein-Erft-Kreis/bruhl/max_ernst_museum/Max-Ernst-Museum.jpg"
         }
     },
     {
@@ -125,7 +125,7 @@ const datas = [
         regionsPath: "nrw",
         districtPath: "koln",
         cityPath: "frechen",
-        fotoCard: "../../Gallery/Germany/Frechen/frechen_keramion.jpg",
+        fotoCard: "Germany/nrw/koln/Rhein-Erft-Kreis/frechen/keramion/frechen_keramion.jpg",
         location: "Фрехен, Германия",
         officialSite: [
             { bold: 'Официальный сайт KERAMION', link: 'https://keramion.de/' }
@@ -175,7 +175,7 @@ const datas = [
             description: "KERAMION: постоянная коллекция и временные выставки керамики, история производства и современное художественное видение.",
             ogTitle: "KERAMION – Центр современной и исторической керамики, Frechen",
             ogDescription: "Узнайте о коллекции Cremer, исторической керамике Фрехена и выставках в KERAMION.",
-            ogImage: "../../Gallery/Germany/Frechen/frechen_keramion.jpg"
+            ogImage: "Germany/nrw/koln/Rhein-Erft-Kreis/frechen/keramion/frechen_keramion.jpg"
         }
     },
     {
@@ -186,7 +186,7 @@ const datas = [
         regionsPath: "nrw",
         districtPath: "koln",
         cityPath: "frechen",
-        fotoCard: "../../Gallery/Germany/Frechen/Burg-Bachem_3.jpg",
+        fotoCard: "Germany/nrw/koln/Rhein-Erft-Kreis/frechen/burg-bachem/Burg-Bachem_3.jpg",
         location: "Фрехен, Германия",
         officialSite: [
             { bold: "Официальный сайт Burg Bachem", link: "https://www.burg-bachem.de/" }
@@ -234,7 +234,7 @@ const datas = [
             description: "Burg Bachem: история, водяные рвы, прогулочные зоны и отдых у небольшого озера в Фрехене.",
             ogTitle: "Burg Bachem – Frechen, Deutschland",
             ogDescription: "Откройте для себя историческую водяную крепость Burg Bachem и озеро с прогулочными аллеями во Фрехене.",
-            ogImage: "../../Gallery/Germany/Frechen/Burg-Bachem_3.jpg"
+            ogImage: "Germany/nrw/koln/Rhein-Erft-Kreis/frechen/burg-bachem/Burg-Bachem_3.jpg"
         }
     },
     {
@@ -245,7 +245,7 @@ const datas = [
         regionsPath: "nrw",
         districtPath: "koln",
         cityPath: "bruehl",
-        fotoCard: "../../Gallery/Germany/Bruhl/Full/001.jpg",
+        fotoCard: "Germany/nrw/koln/Rhein-Erft-Kreis/bruhl/phantasialand/001.jpg",
         location: "Брюль, Германия",
         officialSite: [
             { bold: 'Официальный сайт Phantasialand', link: 'https://www.phantasialand.de/en/' }
@@ -277,7 +277,7 @@ const datas = [
                 { text: "Phantasialand активно развивает инфраструктуру, включая новые отели, театры и концертные залы." }
             ]
         },
-        popular_attractions: {
+        sub_objects: {
             title: "Популярные аттракционы",
             items: [
                 { bold: "Taron", text: " – мощная стальная горка (2016)" },
@@ -294,9 +294,88 @@ const datas = [
             description: "Phantasialand – один из самых посещаемых парков Европы с более чем 30 аттракционами, тематическими зонами и уникальными отелями.",
             ogTitle: "Phantasialand – Брюль, Германия",
             ogDescription: "Познакомьтесь с Phantasialand в Брюле: аттракционы, тематические зоны, отели и развлечения для всей семьи.",
-            ogImage: "../../Gallery/Germany/Bruhl/Full/001.jpg"
+            ogImage: "Germany/nrw/koln/Rhein-Erft-Kreis/bruhl/phantasialand/001.jpg"
         },
         theme_zones: [{ bold: "Тематические зоны:", text: ' "Berlin", "Africa", "Mexico", "China Town", "Fantasy", "Mystery"' }],
+    },
+    {
+        id: "rathaus_koeln_miqua",
+        name: "Кёльнская ратуша и археологический квартал MiQua",
+        type: "Historisches Gebäude",
+        path: "rathaus-koeln",
+        regionsPath: "nrw",
+        districtPath: "city",
+        cityPath: "koeln",
+        fotoCard: "Germany/nrw/koln/koln-city/rathaus-koeln/Rathaus-Köln.jpg",
+        location: "Кёльн, Германия",
+        officialSite: [
+            { bold: "Официальный сайт", link: "https://www.stadt-koeln.de/", text: ' города Кёльна (ратуша)' },
+            { bold: "<br> Проект MiQua", link: "https://miqua.lvr.de/", text: ' – археологический музей' }
+        ],
+        unesco_status: {
+            included: false
+        },
+        tickets_and_entry: {
+            title: "Вход и доступ",
+            items: [
+                { bold: "Доступ:", text: "Ратуша является действующим зданием городского совета. Вход в административные помещения ограничен, однако часть залов и башня доступны в рамках экскурсий." },
+                { bold: "MiQua:", text: "Посещение археологического квартала возможно по экскурсионным маршрутам и с гидом. После завершения строительства музей будет открыт для свободного посещения." }
+            ]
+        },
+        visiting_hours: {
+            title: "Часы посещения",
+            items: [
+                { text: "Экскурсии по ратуше проводятся по расписанию, уточняется на сайте города Кёльна." },
+                { text: "MiQua – доступ к подземным раскопкам возможен только с экскурсоводом. После открытия музея планируется стандартный график работы." }
+            ]
+        },
+        short_description: "Кёльнская ратуша – старейшее административное здание Германии, сочетающее готическую башню, ренессансную лоджию и исторический зал Ганзы. Под ней расположен уникальный археологический музейный комплекс MiQua с остатками римского претория и еврейского квартала.",
+        full_description: {
+            title: "Описание и история",
+            items: [
+                { text: "Кёльнская ратуша (Kölner Rathaus) – один из главных символов города и старейшее здание муниципальной власти в Германии. Она объединяет архитектурные элементы готики, ренессанса и современных реставраций." },
+                { text: "Первые упоминания о здании, где собирались горожане, относятся к XII веку (1135-1152). В XIV веке началось строительство нового комплекса, включая <b>зал Hansasaal</b>, где в 1367 году заседали представители Ганзы." },
+                { text: "В начале XV века (1407-1414) к комплексу была пристроена величественная <b>Башня ратуши (Ratsturm)</b> высотой около 61 метра – пример поздней готики. Её фасад украшают более сотни каменных фигур, среди которых не только исторические персонажи, но и современные герои Кёльна – например, писатель Генрих Бёлль и карнавальные персонажи." },
+                { text: "В XVI веке (1569-1573) архитектор Вильгельм Вернуккен из Калькара возвёл изысканную <b>ренессансную лоджию (Laube)</b>, вдохновлённую архитектурой Антверпена. Её аркады и богатая каменная резьба придают зданию торжественный облик." },
+                { text: "Рядом находилось <b>крыло Spanischer Bau</b>, где размещались судебные и административные органы." },
+                { text: "Во время Второй мировой войны ратуша сильно пострадала от бомбардировок: были уничтожены крыша, фасады и значительная часть интерьера. После войны, с конца 1940-х годов, началась масштабная реставрация. Восстановление продолжалось десятилетиями, включая полное воссоздание Hansasaal и башни." },
+                { text: "К 1970-м годам основные работы были завершены, и здание вновь стало резиденцией городского совета." },
+                { text: "Рядом с ратушей археологи обнаружили остатки средневекового еврейского квартала, включая <b>Mikwe – ритуальную баню XII века</b>, сохранившуюся на глубине около 10 метров." },
+                { text: "Сегодня под зданием ратуши и окружающими кварталами формируется <b>MiQua – Museum im Quartier</b>, музей археологического квартала площадью около 6000 м²." },
+                { text: "Музей объединит экспозиции трёх исторических эпох: <b>римской</b> (остатки Praetorium – дворца наместника римской провинции Нижняя Германия), <b>еврейской средневековой</b> (жилые дома, Mikwe, синагога), <b>средневековой христианской</b> (здания гильдий и фундаменты ратуши)." },
+                { text: "MiQua строится в виде подземного маршрута длиной около 700 метров, где посетители смогут пройти сквозь разные слои истории города." },
+                { text: "Проект уникален по инженерным решениям: музей покоится на массивной бетонной плите толщиной около 50 см, установленной на сотнях свай, уходящих до 36 метров в землю. Строительство осложнено необходимостью сохранить археологические находки в первозданном виде." },
+                { text: "Официальное открытие MiQua несколько раз откладывалось, однако уже сейчас часть подземных раскопок можно осмотреть в рамках экскурсионных туров." }
+            ]
+        },
+        interestingFacts: {
+            title: "Интересные факты",
+            items: [
+                { text: "На башне ратуши установлена деревянная голова Platzjabbeck, которая каждый час высовывает язык – символ насмешки над властью." },
+                { text: "Hansasaal украшен скульптурной композицией 'Девять доблестных героев', объединяющей персонажей из языческой, еврейской и христианской традиций." },
+                { text: "Фундаменты ратуши частично опираются на остатки древнеримской городской стены." },
+                { text: "MiQua объединяет три исторических слоя: римский, еврейский и средневеково-христианский, создавая непрерывный маршрут сквозь 2000 лет истории Кёльна." },
+                { text: "Проект MiQua известен сложнейшими инженерными решениями – музей фактически «подвешен» над археологическими руинами." }
+            ]
+        },
+        construction_period: "XII-XVI века, с последующими реставрациями после Второй мировой войны",
+        founder: "Город Кёльн, при участии архитекторов Вильгельма Вернуккена и мастеров готической школы",
+        categories: ["Историческое здание", "Музей", "Археология", "Готика", "Ренессанс"],
+        sub_objects: {
+            title: "Объекты ратуши и археологического квартала",
+            items: [
+                { bold: "Hansasaal", text: " – главный зал ратуши XIV века, место заседаний Ганзы, украшен скульптурами Девяти героев." },
+                { bold: "Ratsturm", text: " – башня высотой 61 метр с сотнями фигур, символ власти и гордости города." },
+                { bold: "MiQua", text: " – подземный археологический музей площадью 6000 м² с руинами римского претория и еврейского квартала." }
+            ]
+        },
+        meta: {
+            title: "Кёльнская ратуша и археологический квартал MiQua – история Кёльна под землёй",
+            description: "Кёльнская ратуша: готическая башня, ренессансная лоджия и подземный музей MiQua с римскими и еврейскими артефактами.",
+            ogTitle: "Rathaus Köln und MiQua – Geschichte unter der Stadt",
+            ogDescription: "Исследуйте Кёльнскую ратушу и подземный музей MiQua, где древний Рим встречается со Средневековьем.",
+            ogImage: "Germany/nrw/koln/koln-city/rathaus-koeln/Rathaus-Köln.jpg"
+        }
     }
 ];
 export default datas;

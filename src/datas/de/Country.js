@@ -1,10 +1,8 @@
 export const datas = [
   {
     id: 1,
-    patch: 'ukraine',
-    currentMap: "",
+    path: 'ukraine',
     country: 'Ukraine',
-    imagePatch: '/ukr/sofiyskiy.jpg',
     desc: {
       capital: [
         { bold: 'Hauptstadt:' },
@@ -41,7 +39,7 @@ export const datas = [
         {
           bold: 'Flagge:',
           text: ' am 28. Januar 1992 beschloss die Werchowna Rada der Ukraine die nationale Flagge: ein rechteckiges Tuch mit zwei gleich breiten horizontalen Streifen – oben blau, unten gelb.',
-          img: "Ukraine/flag.jpeg"
+          img: "Ukraine/Flag.svg"
         }
       ]
     },
@@ -107,15 +105,14 @@ export const datas = [
       description: "Alles über das Land Ukraine: Hauptstadt Kiew, Geografie, Bevölkerung, Sprachen, Küche, Feiertage und kurze Geschichte.",
       ogTitle: "Ukraine — Informationen über das Land und Sehenswürdigkeiten",
       ogDescription: "Detaillierte Informationen über die Ukraine: Kultur, Symbole, Geschichte, Regionen und interessante Fakten.",
-      ogImage: "/ukr/sofiyskiy.jpg"
+      ogImage: "Ukraine/Flag.svg"
     }
 
   },
   {
     id: 2,
-    patch: 'germany',
+    path: 'germany',
     country: 'Deutschland',
-    imagePatch: '/de/Castle_Neuschwanstein.jpg',
     desc: {
       capital: [
         { bold: 'Hauptstadt:' },
@@ -166,12 +163,12 @@ export const datas = [
         {
           bold: "Wappen:",
           text: " das kleine Wappen Deutschlands zeigt einen schwarzen Adler auf goldenem Hintergrund. Der Adler ist seit der Zeit des Heiligen Römischen Reiches ein Symbol von Macht und Staatlichkeit. Er tauchte in der Heraldik verschiedener deutscher Fürstentümer und Städte über Jahrhunderte auf und diente als Zeichen staatlicher und militärischer Autorität. Der heutige Adler wurde nach der Wiedervereinigung Deutschlands in den 1950er Jahren offiziell eingeführt und bildet die Grundlage des großen Wappens.",
-          img: "Germania/Gerb.gif"
+          img: "Germany/Gerb.gif"
         },
         {
           bold: "Flagge:",
           text: " die Nationalflagge Deutschlands ist ein rechteckiges Tuch mit drei gleich breiten horizontalen Streifen: oben – schwarz, Mitte – rot, unten – gold. Diese Farben haben historische Bedeutung und stehen im Zusammenhang mit den nationalen Befreiungsbewegungen des 19. Jahrhunderts und symbolisieren Einheit und Freiheit des Landes.",
-          img: "Germania/Flag.jpg"
+          img: "Germany/Flag.jpg"
         }
       ]
     },
@@ -212,7 +209,7 @@ export const datas = [
       description: "Alles über Deutschland: Hauptstadt Berlin, Geografie, Bevölkerung, Sprachen, Küche, Symbole, Geschichte und Regionen.",
       ogTitle: "Deutschland — Informationen über das Land und Sehenswürdigkeiten",
       ogDescription: "Detaillierte Informationen über Deutschland: Kultur, Symbole, Geschichte, Regionen und interessante Fakten.",
-      ogImage: "/de/Castle_Neuschwanstein.jpg"
+      ogImage: "Germany/Flag.jpg"
     }
   }
 

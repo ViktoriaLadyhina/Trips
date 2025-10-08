@@ -50,12 +50,12 @@ const datas = {
             {
                 bold: "Wappen:",
                 text: " das Wappen von Nordrhein-Westfalen vereint die Symbole der drei historischen Provinzen, aus denen das Land 1946–1947 gebildet wurde. Der silberne Rheinbalken auf grünem Grund symbolisiert die Rheinprovinz. Das sächsische Pferd auf rotem Grund ist das Symbol Westfalens (im westfälischen Wappen aufbäumend dargestellt). Die rote Rose mit goldenem Herz und Blättern ist das Wappen der Grafen von Lippe, das seit dem 13. Jahrhundert verwendet wird.",
-                img: "Germania/Nordrhein/002.gif"
+                img: "Germany/nrw/gerb.gif"
             },
             {
                 bold: "Flagge:",
                 text: " die Flagge Nordrhein-Westfalens besteht aus den Farben des Wappens: Grün, Weiß und Rot, horizontal angeordnet.",
-                img: "Germania/Nordrhein/003.gif"
+                img: "Germany/nrw/flag.gif"
             }
         ]
     },
@@ -72,7 +72,367 @@ const datas = {
         {
             title: "Regierungsbezirke in Nordrhein-Westfalen",
             items: [
-                { id: 1, name: 'Arnsberg', hasInfo: false, path: "arnsberg" },
+                {
+                    id: 1,
+                    title: 'Regierungsbezirk Arnsberg',
+                    name: 'Arnsberg',
+                    hasInfo: true,
+                    path: "arnsberg",
+                    desc: {
+                        history: [
+                            { text: 'Der Regierungsbezirk Arnsberg ist einer von fünf Regierungsbezirken des Bundeslandes Nordrhein-Westfalen. Er liegt im Südosten des Landes.' },
+                            { text: 'Gegründet am 30. April 1815.' }
+                        ],
+                        area: [
+                            { bold: 'Fläche:' },
+                            { text: ' etwa 8.003 km².' }
+                        ],
+                        population: [
+                            { bold: 'Bevölkerung:' },
+                            { text: ' etwa 3.573.137 Einwohner (Stand 2024).' }
+                        ],
+                        districts: [
+                            { bold: 'Kreise:' },
+                            { text: 'Ennepe-Ruhr-Kreis, Märkischer Kreis, Hochsauerlandkreis, Olpe, Siegen-Wittgenstein, Soest, Unna' }
+                        ],
+                        cities: [
+                            { bold: 'Kreisfreie Städte:' },
+                            { text: 'Bochum, Dortmund, Hagen, Hamm, Herne' }
+                        ]
+                    },
+                    subRegion: [
+                        {
+                            id: 1,
+                            name: "Siegen-Wittgenstein",
+                            fullName: "Kreis Siegen-Wittgenstein",
+                            parentDistrict: "Arnsberg",
+                            center: [
+                                { bold: "Kreisstadt:" },
+                                { text: " Stadt Siegen." }
+                            ],
+                            area: [
+                                { bold: "Fläche:" },
+                                { text: " 1.132,9 km² (Stand 2023)." }
+                            ],
+                            population: [
+                                { bold: "Einwohnerzahl:" },
+                                { text: " 274.379 Personen (Stand 31.12.2023)." }
+                            ],
+                            density: [
+                                { bold: "Bevölkerungsdichte:" },
+                                { text: " 242,7 Personen/km² (Stand 2023)." }
+                            ],
+                            code: [
+                                { bold: "Amtlicher Regionalschlüssel:" },
+                                { text: " 05 9 70." }
+                            ],
+                            description: [
+                                { text: "Der Kreis Siegen-Wittgenstein gehört zum Land Nordrhein-Westfalen und untersteht dem Regierungsbezirk Arnsberg." }
+                            ],
+                            com: [
+                                { text: "Der Kreis ist unterteilt in " },
+                                { bold: "11 Gemeinden:" }
+                            ],
+                            communities: [
+                                { id: 1, name: "Bad Berleburg", hasInfo: false },
+                                { id: 2, name: "Bad Laasphe", hasInfo: false },
+                                { id: 3, name: "Burbach", hasInfo: false },
+                                { id: 4, name: "Wilnsdorf", hasInfo: false },
+                                { id: 5, name: "Siegen", hasInfo: false },
+                                { id: 6, name: "Kreuztal", hasInfo: false },
+                                { id: 7, name: "Netphen", hasInfo: false },
+                                { id: 8, name: "Freudenberg", hasInfo: false },
+                                { id: 9, name: "Neunkirchen", hasInfo: false },
+                                { id: 10, name: "Hilchenbach", hasInfo: false },
+                                { id: 11, name: "Erndtebrück", hasInfo: false }
+                            ],
+                            gerb: "Germany/nrw/arnsberg/Siegen-Wittgenstein/gerb.png"
+                        },
+                        {
+                            id: 2,
+                            name: "Soest",
+                            fullName: "Kreis Soest",
+                            parentDistrict: "Arnsberg",
+                            center: [
+                                { bold: "Kreisstadt:" },
+                                { text: " Stadt Soest." }
+                            ],
+                            area: [
+                                { bold: "Fläche:" },
+                                { text: " 1.328,6 km² (Stand 2023)." }
+                            ],
+                            population: [
+                                { bold: "Einwohnerzahl:" },
+                                { text: " etwa 300.297 Personen (Stand 2023)." }
+                            ],
+                            density: [
+                                { bold: "Bevölkerungsdichte:" },
+                                { text: " 226 Personen/km²." }
+                            ],
+                            code: [
+                                { bold: "Amtlicher Regionalschlüssel:" },
+                                { text: " 05 9 74." }
+                            ],
+                            description: [
+                                { text: "Der Kreis Soest gehört zum Land Nordrhein-Westfalen und untersteht dem Regierungsbezirk Arnsberg." }
+                            ],
+                            com: [
+                                { text: "Der Kreis ist unterteilt in " },
+                                { bold: "14 Gemeinden:" }
+                            ],
+                            communities: [
+                                { id: 1, name: "Anröchte", hasInfo: false },
+                                { id: 2, name: "Bad Sassendorf", hasInfo: false },
+                                { id: 3, name: "Warstein", hasInfo: false },
+                                { id: 4, name: "Welver", hasInfo: false },
+                                { id: 5, name: "Werl", hasInfo: false },
+                                { id: 6, name: "Wickede", hasInfo: false },
+                                { id: 7, name: "Geseke", hasInfo: false },
+                                { id: 8, name: "Soest", hasInfo: false },
+                                { id: 9, name: "Lippetal", hasInfo: false },
+                                { id: 10, name: "Lippstadt", hasInfo: false },
+                                { id: 11, name: "Möhnesee", hasInfo: false },
+                                { id: 12, name: "Rüthen", hasInfo: false },
+                                { id: 13, name: "Ense", hasInfo: false },
+                                { id: 14, name: "Erwitte", hasInfo: false }
+                            ],
+                            gerb: "Germany/nrw/arnsberg/Soest/gerb.png"
+                        },
+                        {
+                            id: 3,
+                            name: "Märkischer Kreis",
+                            fullName: "Kreis Märkischer Kreis",
+                            parentDistrict: "Arnsberg",
+                            center: [
+                                { bold: "Kreisstadt:" },
+                                { text: " Stadt Lüdenscheid." }
+                            ],
+                            area: [
+                                { bold: "Fläche:" },
+                                { text: " 1.058,95 km² (Stand 2023)." }
+                            ],
+                            population: [
+                                { bold: "Einwohnerzahl:" },
+                                { text: " 408.899 Personen (Stand 31.12.2023)." }
+                            ],
+                            density: [
+                                { bold: "Bevölkerungsdichte:" },
+                                { text: " 390 Personen/km²." }
+                            ],
+                            code: [
+                                { bold: "Amtlicher Regionalschlüssel:" },
+                                { text: " 05 9 62." }
+                            ],
+                            description: [
+                                { text: "Der Märkische Kreis gehört zum Land Nordrhein-Westfalen und untersteht dem Regierungsbezirk Arnsberg." }
+                            ],
+                            com: [
+                                { text: "Der Kreis ist unterteilt in " },
+                                { bold: "15 Gemeinden:" }
+                            ],
+                            communities: [
+                                { id: 1, name: "Altena", hasInfo: false },
+                                { id: 2, name: "Balve", hasInfo: false },
+                                { id: 3, name: "Werdohl", hasInfo: false },
+                                { id: 4, name: "Iserlohn", hasInfo: false },
+                                { id: 5, name: "Kierspe", hasInfo: false },
+                                { id: 6, name: "Lüdenscheid", hasInfo: false },
+                                { id: 7, name: "Meinerzhagen", hasInfo: false },
+                                { id: 8, name: "Menden", hasInfo: false },
+                                { id: 9, name: "Nachrodt-Wiblingwerde", hasInfo: false },
+                                { id: 10, name: "Neuenrade", hasInfo: false },
+                                { id: 11, name: "Plettenberg", hasInfo: false },
+                                { id: 12, name: "Halver", hasInfo: false },
+                                { id: 13, name: "Herscheid", hasInfo: false },
+                                { id: 14, name: "Hemer", hasInfo: false },
+                                { id: 15, name: "Schalksmühle", hasInfo: false }
+                            ],
+                            gerb: "Germany/nrw/arnsberg/Märkischer-Kreis/gerb.png"
+                        },
+                        {
+                            id: 4,
+                            name: "Olpe",
+                            fullName: "Kreis Olpe",
+                            parentDistrict: "Arnsberg",
+                            center: [
+                                { bold: "Kreisstadt:" },
+                                { text: " Stadt Olpe." }
+                            ],
+                            area: [
+                                { bold: "Fläche:" },
+                                { text: " 710,7 km² (Stand 2023)." }
+                            ],
+                            population: [
+                                { bold: "Einwohnerzahl:" },
+                                { text: " 134.439 Personen (Stand 31.12.2022)." }
+                            ],
+                            density: [
+                                { bold: "Bevölkerungsdichte:" },
+                                { text: " 188,8 Personen/km²." }
+                            ],
+                            code: [
+                                { bold: "Amtlicher Regionalschlüssel:" },
+                                { text: " 05 9 66." }
+                            ],
+                            description: [
+                                { text: "Der Kreis Olpe gehört zum Land Nordrhein-Westfalen und untersteht dem Regierungsbezirk Arnsberg." }
+                            ],
+                            com: [
+                                { text: "Der Kreis ist unterteilt in " },
+                                { bold: "7 Gemeinden:" }
+                            ],
+                            communities: [
+                                { id: 1, name: "Attendorn", hasInfo: false },
+                                { id: 2, name: "Wenden", hasInfo: false },
+                                { id: 3, name: "Drolshagen", hasInfo: false },
+                                { id: 4, name: "Kirchhundem", hasInfo: false },
+                                { id: 5, name: "Lennestadt", hasInfo: false },
+                                { id: 6, name: "Olpe", hasInfo: false },
+                                { id: 7, name: "Finnentrop", hasInfo: false }
+                            ],
+                            gerb: "Germany/nrw/arnsberg/Olpe/gerb.png"
+                        },
+                        {
+                            id: 5,
+                            name: "Unna",
+                            fullName: "Kreis Unna",
+                            parentDistrict: "Arnsberg",
+                            center: [
+                                { bold: "Kreisstadt:" },
+                                { text: " Stadt Unna." }
+                            ],
+                            area: [
+                                { bold: "Fläche:" },
+                                { text: " 543,2 km² (Stand 31.12.2023)." }
+                            ],
+                            population: [
+                                { bold: "Einwohnerzahl:" },
+                                { text: " 396.283 Personen (Stand 31.12.2023)." }
+                            ],
+                            density: [
+                                { bold: "Bevölkerungsdichte:" },
+                                { text: " 730,3 Personen/km²." }
+                            ],
+                            code: [
+                                { bold: "Amtlicher Regionalschlüssel:" },
+                                { text: " 05 9 78." }
+                            ],
+                            description: [
+                                { text: "Der Kreis Unna gehört zum Land Nordrhein-Westfalen und untersteht dem Regierungsbezirk Arnsberg." }
+                            ],
+                            com: [
+                                { text: "Der Kreis ist unterteilt in " },
+                                { bold: "10 Gemeinden:" }
+                            ],
+                            communities: [
+                                { id: 1, name: "Bönen", hasInfo: false },
+                                { id: 2, name: "Bergkamen", hasInfo: false },
+                                { id: 3, name: "Werne", hasInfo: false },
+                                { id: 4, name: "Selm", hasInfo: false },
+                                { id: 5, name: "Kamen", hasInfo: false },
+                                { id: 6, name: "Lünen", hasInfo: false },
+                                { id: 7, name: "Unna", hasInfo: false },
+                                { id: 8, name: "Fröndenberg", hasInfo: false },
+                                { id: 9, name: "Holzwickede", hasInfo: false },
+                                { id: 10, name: "Schwerte", hasInfo: false }
+                            ],
+                            gerb: "Germany/nrw/arnsberg/Unna/gerb.png"
+                        },
+                        {
+                            id: 6,
+                            name: "Hochsauerlandkreis",
+                            fullName: "Hochsauerlandkreis",
+                            parentDistrict: "Arnsberg",
+                            center: [
+                                { bold: "Kreisstadt:" },
+                                { text: " Stadt Meschede." }
+                            ],
+                            area: [
+                                { bold: "Fläche:" },
+                                { text: " 1.960,2 km² (Stand 31.12.2023)." }
+                            ],
+                            population: [
+                                { bold: "Einwohnerzahl:" },
+                                { text: " 261.193 Personen (Stand 31.12.2023)." }
+                            ],
+                            density: [
+                                { bold: "Bevölkerungsdichte:" },
+                                { text: " 133,2 Personen/km²." }
+                            ],
+                            code: [
+                                { bold: "Amtlicher Regionalschlüssel:" },
+                                { text: " 05 9 58." }
+                            ],
+                            description: [
+                                { text: "Der Hochsauerlandkreis gehört zum Land Nordrhein-Westfalen und untersteht dem Regierungsbezirk Arnsberg." }
+                            ],
+                            com: [
+                                { text: "Der Kreis ist unterteilt in " },
+                                { bold: "12 Gemeinden:" }
+                            ],
+                            communities: [
+                                { id: 1, name: "Arnsberg", hasInfo: false },
+                                { id: 2, name: "Bestwig", hasInfo: false },
+                                { id: 3, name: "Brilon", hasInfo: false },
+                                { id: 4, name: "Winterberg", hasInfo: false },
+                                { id: 5, name: "Sundern", hasInfo: false },
+                                { id: 6, name: "Marsberg", hasInfo: false },
+                                { id: 7, name: "Medebach", hasInfo: false },
+                                { id: 8, name: "Meschede", hasInfo: false },
+                                { id: 9, name: "Olsberg", hasInfo: false },
+                                { id: 10, name: "Hallenberg", hasInfo: false },
+                                { id: 11, name: "Schmallenberg", hasInfo: false },
+                                { id: 12, name: "Eslohe", hasInfo: false }
+                            ],
+                            gerb: "Germany/nrw/arnsberg/Hochsauerlandkreis/gerb.png"
+                        },
+                        {
+                            id: 7,
+                            name: "Ennepe-Ruhr-Kreis",
+                            fullName: "Ennepe-Ruhr-Kreis",
+                            parentDistrict: "Arnsberg",
+                            center: [
+                                { bold: "Kreisstadt:" },
+                                { text: " Stadt Schwelm." }
+                            ],
+                            area: [
+                                { bold: "Fläche:" },
+                                { text: " 408,44 km² (Stand 31.12.2023)." }
+                            ],
+                            population: [
+                                { bold: "Einwohnerzahl:" },
+                                { text: " 314.167 Personen (Stand 31.12.2024)." }
+                            ],
+                            density: [
+                                { bold: "Bevölkerungsdichte:" },
+                                { text: " 766,9 Personen/km²." }
+                            ],
+                            code: [
+                                { bold: "Amtlicher Regionalschlüssel:" },
+                                { text: " 05 9 54." }
+                            ],
+                            description: [
+                                { text: "Der Ennepe-Ruhr-Kreis gehört zum Land Nordrhein-Westfalen und untersteht dem Regierungsbezirk Arnsberg." }
+                            ],
+                            com: [
+                                { text: "Der Kreis ist unterteilt in " },
+                                { bold: "9 Gemeinden:" }
+                            ],
+                            communities: [
+                                { id: 1, name: "Breckerfeld", hasInfo: false },
+                                { id: 2, name: "Ennepetal", hasInfo: false },
+                                { id: 3, name: "Gevelsberg", hasInfo: false },
+                                { id: 4, name: "Hattingen", hasInfo: false },
+                                { id: 5, name: "Herdecke", hasInfo: false },
+                                { id: 6, name: "Schwelm", hasInfo: false },
+                                { id: 7, name: "Sprockhövel", hasInfo: false },
+                                { id: 8, name: "Wetter (Ruhr)", hasInfo: false },
+                                { id: 9, name: "Witten", hasInfo: false }
+                            ],
+                            gerb: "Germany/nrw/arnsberg/Ennepe-Ruhr-Kreis/gerb.png"
+                        }
+                    ]
+                },
                 { id: 2, name: 'Detmold', hasInfo: false, path: "detmold" },
                 { id: 3, name: 'Düsseldorf', hasInfo: false, path: "dusseldorf" },
                 {
@@ -81,7 +441,6 @@ const datas = {
                     name: 'Köln',
                     hasInfo: true,
                     path: "koln",
-                    currentMap: "Germania/Nordrhein/004.gif",
                     desc: {
                         history: [
                             { text: 'Regierungsbezirk Köln ist einer der fünf Regierungsbezirke in Nordrhein-Westfalen. Er liegt im Südwesten des Bundeslandes.' },
@@ -131,7 +490,7 @@ const datas = {
                                 { text: " 05 3 34." }
                             ],
                             description: [
-                                { text: "Der Bezirk gehört zum Bundesland Nordrhein-Westfalen und untersteht dem Regierungsbezirk Köln." }
+                                { text: "Der Bezirk Aachen gehört zum Bundesland Nordrhein-Westfalen und untersteht dem Regierungsbezirk Köln." }
                             ],
                             com: [
                                 { text: "Der Bezirk ist unterteilt in " },
@@ -149,7 +508,7 @@ const datas = {
                                 { id: 9, name: "Stolberg", hasInfo: false },
                                 { id: 10, name: "Eschweiler", hasInfo: false }
                             ],
-                            gerb: "Germania/Nordrhein/Luden/008.png"
+                            gerb: "Germany/nrw/koln/Aachen/gerb.png"
                         },
                         {
                             id: 2,
@@ -177,7 +536,7 @@ const datas = {
                                 { text: " 05 3 58." }
                             ],
                             description: [
-                                { text: "Der Bezirk gehört zum Bundesland Nordrhein-Westfalen und untersteht dem Regierungsbezirk Köln." }
+                                { text: "Der Bezirk Düren gehört zum Bundesland Nordrhein-Westfalen und untersteht dem Regierungsbezirk Köln." }
                             ],
                             com: [
                                 { text: "Der Bezirk ist unterteilt in " },
@@ -200,7 +559,7 @@ const datas = {
                                 { id: 14, name: "Heimbach", hasInfo: false },
                                 { id: 15, name: "Hürtgenwald", hasInfo: false }
                             ],
-                            gerb: "Germania/Nordrhein/Luden/009.png"
+                            gerb: "Germany/nrw/koln/Düren/gerb.png"
                         },
                         {
                             id: 3,
@@ -228,7 +587,7 @@ const datas = {
                                 { text: " 05 3 74." }
                             ],
                             description: [
-                                { text: "Der Kreis gehört zum Land Nordrhein-Westfalen und untersteht dem Regierungsbezirk Köln." }
+                                { text: "Oberbergischer Kreis gehört zum Land Nordrhein-Westfalen und untersteht dem Regierungsbezirk Köln." }
                             ],
                             com: [
                                 { text: "Der Kreis gliedert sich in " },
@@ -249,7 +608,7 @@ const datas = {
                                 { id: 12, name: "Hückeswagen", hasInfo: false },
                                 { id: 13, name: "Engelskirchen", hasInfo: false }
                             ],
-                            gerb: "Germania/Nordrhein/Luden/010.png"
+                            gerb: "Germany/nrw/koln/Oberbergischer/gerb.png"
                         },
                         {
                             id: 4,
@@ -277,7 +636,7 @@ const datas = {
                                 { text: " 05 3 66." }
                             ],
                             description: [
-                                { text: "Der Bezirk gehört zum Bundesland Nordrhein-Westfalen und untersteht dem Regierungsbezirk Köln." }
+                                { text: "Der Bezirk uskirchen gehört zum Bundesland Nordrhein-Westfalen und untersteht dem Regierungsbezirk Köln." }
                             ],
                             com: [
                                 { text: "Der Bezirk ist unterteilt in " },
@@ -296,7 +655,7 @@ const datas = {
                                 { id: 10, name: "Nettersheim", hasInfo: false },
                                 { id: 11, name: "Dahlem", hasInfo: false }
                             ],
-                            gerb: "Germania/Nordrhein/Luden/011.png"
+                            gerb: "Germany/nrw/koln/Euskirchen/gerb.png"
                         },
                         {
                             id: 5,
@@ -324,7 +683,7 @@ const datas = {
                                 { text: " 05 3 82." }
                             ],
                             description: [
-                                { text: "Der Kreis gehört zum Bundesland Nordrhein-Westfalen und untersteht dem Regierungsbezirk Köln." }
+                                { text: "Rhein-Sieg-Kreis gehört zum Bundesland Nordrhein-Westfalen und untersteht dem Regierungsbezirk Köln." }
                             ],
                             com: [
                                 { text: "Der Kreis gliedert sich in " },
@@ -351,7 +710,7 @@ const datas = {
                                 { id: 18, name: "Swisttal", hasInfo: false },
                                 { id: 19, name: "Hennef (Sieg)", hasInfo: false }
                             ],
-                            gerb: "Germania/Nordrhein/Luden/012.png"
+                            gerb: "Germany/nrw/koln/Rhein-Sieg-Kreis/gerb.png"
                         },
                         {
                             id: 6,
@@ -379,7 +738,7 @@ const datas = {
                                 { text: " 05 3 62." }
                             ],
                             description: [
-                                { text: "Der Kreis gehört zum Land Nordrhein-Westfalen und untersteht dem Regierungsbezirk Köln." }
+                                { text: "Rhein-Erft-Kreis gehört zum Land Nordrhein-Westfalen und untersteht dem Regierungsbezirk Köln." }
                             ],
                             com: [
                                 { text: "Der Kreis gliedert sich in " },
@@ -397,7 +756,7 @@ const datas = {
                                 { id: 9, name: "Pulheim", hasInfo: false },
                                 { id: 10, name: "Wesseling", hasInfo: false }
                             ],
-                            gerb: "Germania/Nordrhein/Luden/013.png"
+                            gerb: "Germany/nrw/koln/Rhein-Erft-Kreis/gerb.png"
                         },
                         {
                             id: 7,
@@ -425,7 +784,7 @@ const datas = {
                                 { text: " 05 3 78." }
                             ],
                             description: [
-                                { text: "Der Kreis gehört zum Bundesland Nordrhein‑Westfalen und untersteht dem Regierungsbezirk Köln." }
+                                { text: "Rheinisch-Bergischer Kreis gehört zum Bundesland Nordrhein‑Westfalen und untersteht dem Regierungsbezirk Köln." }
                             ],
                             com: [
                                 { text: "Der Kreis gliedert sich in " },
@@ -441,7 +800,7 @@ const datas = {
                                 { id: 7, name: "Odenthal", hasInfo: false },
                                 { id: 8, name: "Rösrath", hasInfo: false }
                             ],
-                            gerb: "Germania/Nordrhein/Luden/014.png"
+                            gerb: "Germany/nrw/koln/Rheinisch-Bergischer/gerb.png"
                         },
                         {
                             id: 8,
@@ -469,7 +828,7 @@ const datas = {
                                 { text: " 05 3 70." }
                             ],
                             description: [
-                                { text: "Der Kreis gehört zum Bundesland Nordrhein‑Westfalen und untersteht dem Regierungsbezirk Köln." }
+                                { text: "Kreis Heinsberg gehört zum Bundesland Nordrhein‑Westfalen und untersteht dem Regierungsbezirk Köln." }
                             ],
                             com: [
                                 { text: "Der Kreis gliedert sich in " },
@@ -487,7 +846,7 @@ const datas = {
                                 { id: 9, name: "Hückelhoven", hasInfo: false },
                                 { id: 10, name: "Erkelenz", hasInfo: false }
                             ],
-                            gerb: "Germania/Nordrhein/Luden/015.png"
+                            gerb: "Germany/nrw/koln/Heinsberg/gerb.png"
                         }
                     ],
                     meta: {

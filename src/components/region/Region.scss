@@ -17,6 +17,7 @@
     &__container {
         display: flex;
         flex-wrap: wrap;
+        justify-content: space-between;
 
         &-list {
             width: 230px;
@@ -60,15 +61,16 @@
 
         &_desc {
             display: flex;
+            flex-wrap: wrap; 
             align-items: flex-start;
-            flex-wrap: wrap;
-
-            &-gerb {
-                padding: 6px;
-            }
+            justify-content: space-between;
+            flex: 1;
 
             &-text {
                 padding: 6px;
+                display: flex;
+                flex-direction: column;
+                flex: 1;
 
                 &-center,
                 &-area,
@@ -89,7 +91,17 @@
                     }
                 }
             }
+
+            &-gerb {
+                padding: 6px;
+                max-width: 165px; 
+
+                img {
+                    width: 100%;
+                    height: auto;
+                    display: block;
+                }
+            }
         }
     }
-
 }
