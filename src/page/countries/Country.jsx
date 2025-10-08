@@ -14,7 +14,6 @@ import CountryMap from '../../components/maps/CountryMap'
 
 import './Country.scss'
 
-
 const BASE_PHOTO_URL = import.meta.env.VITE_BASE_PHOTO_URL;
 
 const Country = () => {
@@ -31,6 +30,7 @@ const Country = () => {
     if (!country) return <p>Country not found</p>;
 
     const photos = photosByCountry[countryPath];
+    
 
     // BreadCrumbs
     const crumbs = [
@@ -40,7 +40,6 @@ const Country = () => {
         },
         { label: country?.country }
     ];
-
 
 
     return (
@@ -86,7 +85,7 @@ const Country = () => {
                 </div>
 
                 {country.desc?.capital && <InfoBlock data={country.desc.capital} className="country__capital" />}
-                {photos.countries[0] && (<img src={`${BASE_PHOTO_URL}${photos.countries[0].path}`} alt={photos.countries[0].title} className="country__photo" />)}
+                {photos.gallery[2] && (<img src={`${BASE_PHOTO_URL}${photos.gallery[2].path}`} alt={photos.gallery[2].title} className="country__photo" />)}
                 {country.desc?.geography && <InfoBlock data={country.desc.geography} className="country__geography" />}
                 {country.desc?.population && <InfoBlock data={country.desc.population} className="country__population" />}
                 {country.desc?.languages && <InfoBlock data={country.desc.languages} className="country__languages" />}
@@ -94,13 +93,13 @@ const Country = () => {
                 {country.desc?.government && <InfoBlock data={country.desc.government} className="country__government" />}
                 {country.desc?.currency && <InfoBlock data={country.desc.currency} className="country__currency" />}
                 {country.desc?.transport && <InfoBlock data={country.desc.transport} className="country__transport" />}
-                {photos.countries[1] && (<img src={`${BASE_PHOTO_URL}${photos.countries[1].path}`} alt={photos.countries[1].title} className="country__photo country__photo--right" />)}
+                {photos.gallery[3] && (<img src={`${BASE_PHOTO_URL}${photos.gallery[3].path}`} alt={photos.gallery[3].title} className="country__photo country__photo--right" />)}
                 {country.desc?.climate && <InfoBlock data={country.desc.climate} className="country__climate" />}
                 {country.desc?.tourism && <InfoBlock data={country.desc.tourism} className="country__tourism" />}
                 {country.desc?.cuisine && <InfoBlock data={country.desc.cuisine} className="country__cuisine" />}
                 {country.desc?.entry && <InfoBlock data={country.desc.entry} className="country__entry" />}
                 {country.symbols && <InfoBlock data={country.symbols} className="country__symbols" />}
-                {photos.countries[2] && (<img src={`${BASE_PHOTO_URL}${photos.countries[2].path}`} alt={photos.countries[2].title} className="country__photo country__photo" />)}
+                {photos.gallery[4] && (<img src={`${BASE_PHOTO_URL}${photos.gallery[4].path}`} alt={photos.gallery[4].title} className="country__photo country__photo" />)}
                 {country.holidays && <InfoBlock data={country.holidays} className="country__holidays" />}
                 {country.briefHistory && <InfoBlock data={country.briefHistory} className="country__history" />}
             </div>

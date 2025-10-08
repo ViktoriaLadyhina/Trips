@@ -50,12 +50,12 @@ const datas = {
             {
                 bold: "Герб:",
                 text: " на гербе Северной Рейн-Вестфалии объединены символы трёх исторических провинций, из которых была образована земля в 1946–1947 годах. Серебристая полоска Рейна на зелёном фоне символизирует Рейнскую провинцию. Саксонский конь на красном фоне — символ Вестфалии (в вестфальском варианте он вставший на дыбы). Красная роза с золотой сердцевиной и листьями — герб графов фон Липпе, использовавшийся с XIII века.",
-                img: "Germania/Nordrhein/002.gif"
+                img: "Germany/nrw/gerb.gif"
             },
             {
                 bold: "Флаг:",
                 text: " флаг Северного Рейна-Вестфалии состоит из цветов герба: зелёного, белого и красного, расположенных горизонтальными полосами.",
-                img: "Germania/Nordrhein/003.gif"
+                img: "Germany/nrw/flag.gif"
             }
         ]
     },
@@ -146,7 +146,7 @@ const datas = {
                                 { id: 10, name: "Хильхенбах", hasInfo: false },
                                 { id: 11, name: "Эрндтебрюк", hasInfo: false }
                             ],
-                            gerb: "Germania/Nordrhein/Luden/DEU_Kreis_Siegen-Wittgenstein_COA.png"
+                            gerb: "Germany/nrw/arnsberg/Siegen-Wittgenstein/gerb.png"
                         },
                         {
                             id: 2,
@@ -196,7 +196,7 @@ const datas = {
                                 { id: 13, name: "Энзе", hasInfo: false },
                                 { id: 14, name: "Эрвитте", hasInfo: false }
                             ],
-                            gerb: "Germania/Nordrhein/Luden/003.png"
+                            gerb: "Germany/nrw/arnsberg/Soest/gerb.png"
                         },
                         {
                             id: 3,
@@ -247,7 +247,7 @@ const datas = {
                                 { id: 14, name: "Хемер", hasInfo: false },
                                 { id: 15, name: "Шальксмюле", hasInfo: false }
                             ],
-                            gerb: "Germania/Nordrhein/Luden/005.png"
+                            gerb: "Germany/nrw/arnsberg/Märkischer-Kreis/gerb.png"
                         },
                         {
                             id: 4,
@@ -290,7 +290,7 @@ const datas = {
                                 { id: 6, name: "Ольпе", hasInfo: false },
                                 { id: 7, name: "Финнентроп", hasInfo: false }
                             ],
-                            gerb: "Germania/Nordrhein/Luden/006.png"
+                            gerb: "Germany/nrw/arnsberg/Olpe/gerb.png"
                         },
                         {
                             id: 5,
@@ -336,7 +336,7 @@ const datas = {
                                 { id: 9, name: "Хольцвиккеде", hasInfo: false },
                                 { id: 10, name: "Шверте", hasInfo: false }
                             ],
-                            gerb: "Germania/Nordrhein/Luden/007.png"
+                            gerb: "Germany/nrw/arnsberg/Unna/gerb.png"
                         },
                         {
                             id: 6,
@@ -384,7 +384,7 @@ const datas = {
                                 { id: 11, name: "Шмалленберг", hasInfo: false },
                                 { id: 12, name: "Эслоэ", hasInfo: false }
                             ],
-                            gerb: "Germania/Nordrhein/Luden/004.png"
+                            gerb: "Germany/nrw/arnsberg/Hochsauerlandkreis/gerb.png"
                         },
                         {
                             id: 7,
@@ -429,7 +429,7 @@ const datas = {
                                 { id: 8, name: "Веттер (Рур)", hasInfo: false },
                                 { id: 9, name: "Виттен", hasInfo: false }
                             ],
-                            gerb: "Germania/Nordrhein/Luden/002.png"
+                            gerb: "Germany/nrw/arnsberg/Ennepe-Ruhr-Kreis/gerb.png"
                         }
                     ]
                 },
@@ -508,7 +508,7 @@ const datas = {
                                 { id: 9, name: "Штольберг", hasInfo: false },
                                 { id: 10, name: "Эшвайлер", hasInfo: false }
                             ],
-                            gerb: "Germania/Nordrhein/Luden/008.png"
+                            gerb: "Germany/nrw/koln/Aachen/gerb.png"
                         },
                         {
                             id: 2,
@@ -559,7 +559,7 @@ const datas = {
                                 { id: 14, name: "Хаймбах", hasInfo: false },
                                 { id: 15, name: "Хюртгенвальд", hasInfo: false }
                             ],
-                            gerb: "Germania/Nordrhein/Luden/009.png"
+                            gerb: "Germany/nrw/koln/Düren/gerb.png"
                         },
                         {
                             id: 3,
@@ -608,7 +608,7 @@ const datas = {
                                 { id: 12, name: "Хюккесваген", hasInfo: false },
                                 { id: 13, name: "Энгельскирхен", hasInfo: false }
                             ],
-                            gerb: "Germania/Nordrhein/Luden/010.png"
+                            gerb: "Germany/nrw/koln/Oberbergischer/gerb.png"
                         },
                         {
                             id: 4,
@@ -655,7 +655,7 @@ const datas = {
                                 { id: 10, name: "Неттерсхайм", hasInfo: false },
                                 { id: 11, name: "Далем", hasInfo: false }
                             ],
-                            gerb: "Germania/Nordrhein/Luden/011.png"
+                            gerb: "Germany/nrw/koln/Euskirchen/gerb.png"
                         },
                         {
                             id: 5,
@@ -710,7 +710,7 @@ const datas = {
                                 { id: 18, name: "Свистталь (Swisttal)", hasInfo: false },
                                 { id: 19, name: "Хеннеф (Hennef)", hasInfo: false }
                             ],
-                            gerb: "Germania/Nordrhein/Luden/012.png"
+                            gerb: "Germany/nrw/koln/Rhein-Sieg-Kreis/gerb.png"
                         },
                         {
                             id: 6,
@@ -756,7 +756,7 @@ const datas = {
                                 { id: 9, name: "Пульхайм", hasInfo: false },
                                 { id: 10, name: "Весселинг", hasInfo: false }
                             ],
-                            gerb: "Germania/Nordrhein/Luden/013.png"
+                            gerb: "Germany/nrw/koln/Rhein-Erft-Kreis/gerb.png"
                         },
                         {
                             id: 7,
@@ -800,7 +800,7 @@ const datas = {
                                 { id: 7, name: "Оденаль", hasInfo: false },
                                 { id: 8, name: "Рёсрат", hasInfo: false }
                             ],
-                            gerb: "Germania/Nordrhein/Luden/014.png"
+                            gerb: "Germany/nrw/koln/Rheinisch-Bergischer/gerb.png"
                         },
                         {
                             id: 8,
@@ -846,7 +846,7 @@ const datas = {
                                 { id: 9, name: "Хюккельхофен", hasInfo: false },
                                 { id: 10, name: "Эркеленц", hasInfo: false }
                             ],
-                            gerb: "Germania/Nordrhein/Luden/015.png"
+                            gerb: "Germany/nrw/koln/Heinsberg/gerb.png"
                         }
                     ],
                     meta: {
