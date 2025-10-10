@@ -12,10 +12,9 @@
 
         &-foto {
             float: left;
-            width: 300px;
+            width: 350px;
             margin: 0 15px 15px 0;
             border-radius: 8px;
-            // box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 
             img {
                 width: 100%;
@@ -33,7 +32,7 @@
         &-sub_objects {
             padding: 10px;
             flex: 1; // чтобы текст занимал оставшееся место
-            text-align: left;
+            text-align: justify;
 
             &-title {
                 @include h3();
@@ -54,8 +53,63 @@
             }
         }
 
+        &-relics {
+            padding: 10px;
+            text-align: left;
+
+            &-title {
+                @include h3();
+                padding: 10px;
+                text-align: center;
+            }
+
+            &-item {
+                display: flex;
+                align-items: flex-start;
+                flex-wrap: wrap;
+                margin-bottom: 20px; // расстояние между реликвиями
+
+                p {
+                    margin: 0;
+                }
+
+                img {
+                    max-width: 300px;
+                    flex-shrink: 0;
+                    margin-right: 15px;
+                    display: block;
+                    border-radius: 8px;
+                    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+
+                    &:first-child {
+                        max-width: 400px; 
+                    }
+                }
+
+                .content {
+                    flex: 1;
+                    display: flex;
+                    flex-direction: column;
+                }
+
+                .attraction__desc-relics-text {
+                    @include body-text;
+                    text-align: justify;
+                    padding-left: 0;
+                    margin: 0;
+                }
+
+                .attraction__desc-relics-bold {
+                    @include bold-text;
+                    // display: block; 
+                    margin-bottom: 5px;
+                }
+            }
+        }
+
         &-construction_period,
-        &-founder {
+        &-founder,
+        &-architects {
             text-align: left;
 
             &-bold {
