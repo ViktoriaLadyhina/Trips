@@ -41,7 +41,6 @@ const Country = () => {
         { label: country?.country }
     ];
 
-
     return (
         <div className="country">
             {/* Сайдбар */}
@@ -53,7 +52,7 @@ const Country = () => {
                 <h2 className="country__sidebar-title">{country.regions.title}</h2>
                 <ul className={`country__sidebar-list ${sidebarOpen ? "active" : ""}`}>
                     {country.regions.items?.map((state) => (
-                        <li key={state.id} className="country__sidebar-item">
+                        <li key={state.id} className="country__sidebar-item">                           
                             {state.hasInfo ? (
                                 <Link
                                     to={`/${countryPath}/${state.path}`}

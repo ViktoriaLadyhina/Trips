@@ -747,7 +747,7 @@ const datas = {
                             communities: [
                                 { id: 1, name: "Bedburg", hasInfo: false },
                                 { id: 2, name: "Bergheim", hasInfo: false },
-                                { id: 3, name: "Brühl", hasInfo: true, path: "bruehl" },
+                                { id: 3, name: "Brühl", hasInfo: true, path: "bruhl" },
                                 { id: 4, name: "Elsdorf", hasInfo: false },
                                 { id: 5, name: "Erftstadt", hasInfo: false },
                                 { id: 6, name: "Frechen", hasInfo: true, path: 'frechen' },
@@ -875,7 +875,7 @@ const datas = {
                 { id: 13, name: 'Duisburg', hasInfo: false, path: "duisburg", },
                 { id: 14, name: 'Düsseldorf', hasInfo: false, path: "duesseldorf", },
                 { id: 15, name: 'Solingen', hasInfo: false, path: "solingen", },
-                { id: 16, name: 'Köln', hasInfo: true, path: "koeln", },
+                { id: 16, name: 'Köln', hasInfo: true, path: "koln", },
                 { id: 17, name: 'Krefeld', hasInfo: false, path: "krefeld", },
                 { id: 18, name: 'Leverkusen', hasInfo: false, path: "leverkusen", },
                 { id: 19, name: 'Mönchengladbach', hasInfo: false, path: "moenchengladbach", },

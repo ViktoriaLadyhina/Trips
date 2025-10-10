@@ -2,7 +2,7 @@ const datas = [
     {
         id: 1,
         name: 'Brühl',
-        path: "bruehl",
+        path: "bruhl",
         district: "koln",
         desc: {
             general: [
@@ -62,7 +62,7 @@ const datas = [
     {
         id: 2,
         name: 'Köln',
-        path: "koeln",
+        path: "koln",
         district: "city",
         desc: {
             general: [

@@ -19,14 +19,15 @@ const InfoBlock = ({ data = [], className }) => {
                 className={`${className}-img`}
               />
             )}
-
-            {/* поддержка HTML внутри текста */}
-            <p
-              className={`${className}-text`}
-              dangerouslySetInnerHTML={{
-                __html: `${item.bold ? `<span class="${className}-bold">${safeText(item.bold)}</span> ` : ""}${safeText(item.text)}`
-              }}
-            />
+            <div className="content">
+              {/* поддержка HTML внутри текста */}
+              <p
+                className={`${className}-text`}
+                dangerouslySetInnerHTML={{
+                  __html: `${item.bold ? `<span class="${className}-bold">${safeText(item.bold)}</span> ` : ""}${safeText(item.text)}`
+                }}
+              />
+            </div>
           </div>
         ))}
       </div>

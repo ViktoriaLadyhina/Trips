@@ -11,16 +11,22 @@ export const Fotos = {
     region: [
       { path: "Germany/nrw/001.jpg", title: { ru: "Замок", ua: "Замок", de: "Burg" } }
     ],
-    koeln: {
+    koln: {
       gallery: [
         { path: "Germany/nrw/koln/koln-city/001.jpg", title: { ru: "Кельн 1", ua: "Кельн 1", de: "Köln 1" } },
         { path: "Germany/nrw/koln/koln-city/021.jpg", title: { ru: "Кельн 2", ua: "Кельн 2", de: "Köln 2" } }
       ],
       'rathaus-koeln': [
         { path: "Germany/nrw/koln/koln-city/rathaus-koeln/Rathaus-Köln.jpg", title: { ru: "Кёльнская ратуша (фото взято с википедии)", ua: "Кельнська ратуша (фото взято з Вікіпедії)", de: "Kölner Rathaus (Foto von Wikipedia entnommen)" } }
-      ]
+      ],
+      'cologne-cathedral': [
+        { path: "Germany/nrw/koln/koln-city/koln-cathedral/023.jpg", title: { ru: "Кёльнский собор (фото взято с Интернета)", ua: "Кельнський собор (фото взято з Інтернету)", de: "Kölner Dom (Foto aus dem Internet)" } },
+        { path: "Germany/nrw/koln/koln-city/koln-cathedral/027.jpg", title: { ru: "Кёльнский собор. Портал Святого Петра", ua: "Кельнський собор. Портал Святого Петра", de: "Kölner Dom. Portal des Heiligen Petrus" } },
+        { path: "Germany/nrw/koln/koln-city/koln-cathedral/026.jpg", title: { ru: "Кёльнский собор. Распятие Геро", ua: "Кельнський собор. Розп’яття Геро", de: "Kölner Dom. Gero-Kreuz" } },
+        { path: "Germany/nrw/koln/koln-city/koln-cathedral/024.jpg", title: { ru: "Кёльнский собор. Ларь с мощами трёх волхвов", ua: "Кельнський собор. Лар з мощами трьох волхвів", de: "Kölner Dom. Schrein der Heiligen Drei Könige" } },
+      ],
     },
-    bruehl: {
+    bruhl: {
       'phantasialand': [
         { path: "Germany/nrw/koln/Rhein-Erft-Kreis/bruhl/phantasialand/001.jpg", title: { ru: "Парк атракционов «Фантазия Ленд» - 2006", ua: "Парк атракціонів «Фантазія Ленд» - 2006", de: "Freizeitpark «Fantasia Land» - 2006" } },
         { path: "Germany/nrw/koln/Rhein-Erft-Kreis/bruhl/phantasialand/002.jpg", title: { ru: "Скала-череп - 2006", ua: "Скеля-череп - 2006", de: "Schädel-Felsen - 2006" } },
@@ -44,12 +50,12 @@ export const Fotos = {
         { path: "Germany/nrw/koln/Rhein-Erft-Kreis/bruhl/phantasialand/020.jpg", title: { ru: "Пруд с утками и карпами - 2006", ua: "Став з качками та коропами - 2006", de: "Teich mit Enten und Karpfen - 2006" } }
       ],
       "max-ernst-museum": [
-        { path: "Germany/nrw/koln/Rhein-Erft-Kreis/bruhl/max_ernst_museum/Max-Ernst-Museum.jpg", title: { ru: "Музей Макса Эрнста (фото взято с интернета)", ua: "Музей Макса Ернста (фото взято з Інтернету)", de: "Max Ernst Museum (Foto von Internet entnommen)" } }
+        { path: "Germany/nrw/koln/Rhein-Erft-Kreis/bruhl/max_ernst_museum/Max-Ernst-Museum.jpg", title: { ru: "Музей Макса Эрнста (фото взято с интернета)", ua: "Музей Макса Ернста (фото взято з Інтернету)", de: "Max Ernst Museum (Foto aus dem Internet)" } }
       ]
     },
     frechen: {
       'keramion': [
-        { path: "Germany/nrw/koln/Rhein-Erft-Kreis/frechen/keramion/frechen_keramion.jpg", title: { ru: "KERAMION – Центр современной и исторической керамики (фото взято с интернета)", ua: "KERAMION – Центр сучасної та історичної кераміки (фото взято з Інтернету)", de: "KERAMION – Zentrum für zeitgenössische und historische Keramik (Foto von Internet entnommen)" } },
+        { path: "Germany/nrw/koln/Rhein-Erft-Kreis/frechen/keramion/frechen_keramion.jpg", title: { ru: "KERAMION – Центр современной и исторической керамики (фото взято с интернета)", ua: "KERAMION – Центр сучасної та історичної кераміки (фото взято з Інтернету)", de: "KERAMION – Zentrum für zeitgenössische und historische Keramik (Foto aus dem Internet)" } },
       ],
       'burg-bachem': [
         { path: "Germany/nrw/koln/Rhein-Erft-Kreis/frechen/burg-bachem/Burg-Bachem_1.jpg", title: { ru: "Замок Бахем, 2024", ua: "Замок Бахем, 2024", de: "Burg Bachem, 2024" } },

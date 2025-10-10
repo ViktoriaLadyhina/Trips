@@ -16,7 +16,6 @@ const Attraction = () => {
     const attraction = attractions.find(a => a.path === attractionsPath);
     const photos = photosByCountry[country?.path];
     const attractionPhotos = photos?.[region?.path]?.[city?.path]?.[attractionsPath] || [];
-   console.log(attractionsPath);
    
     // Преобразуем в массив для Gallery
     const images = attractionPhotos.map(photo => ({
@@ -47,8 +46,8 @@ const Attraction = () => {
     ].filter(Boolean);
 
     const construction_periodTitle = { ru: "Период строительства", ua: "Період будівництва", de: "Bauzeit" }
-
     const founderTitle = { ru: "Основатель", ua: "Засновник", de: "Gründer" }
+    const architects = { ru: "Архитекторы", ua: "Архітектори", de: "Architekten" };
 
     return (
         <div className="attraction">
@@ -73,11 +72,16 @@ const Attraction = () => {
                     <span className='attraction__desc-construction_period-bold'>{construction_periodTitle[lang]}: </span>
                     <span className='attraction__desc-construction_period-text'>{attraction.construction_period && (attraction.construction_period)}</span>
                 </div>
+                <div className='attraction__desc-architects'>
+                    <span className='attraction__desc-architects-bold'>{architects[lang]}: </span>
+                    <span className='attraction__desc-architects-text'>{attraction.architects && (attraction.architects)}</span>
+                </div>
 
                 {attraction.tickets_and_entry && (<InfoBlock data={attraction.tickets_and_entry} className="attraction__desc-tickets_and_entry" />)}
                 {attraction.full_description && (<InfoBlock data={attraction.full_description} className="attraction__desc-full_description" />)}
                 {attraction.theme_zones && (<InfoBlock data={attraction.theme_zones} className="attraction__desc-theme_zones" />)}
                 {attraction.sub_objects && (<InfoBlock data={attraction.sub_objects} className="attraction__desc-sub_objects" />)}
+                {attraction.relics && (<InfoBlock data={attraction.relics} className="attraction__desc-relics" />)}
                 {attraction.hotels && (<InfoBlock data={attraction.hotels} className="attraction__desc-hotels" />)}
                 {attraction.interestingFacts && (<InfoBlock data={attraction.interestingFacts} className="attraction__desc-interestingFacts" />)}
 

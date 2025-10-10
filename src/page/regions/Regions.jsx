@@ -31,6 +31,7 @@ const Regions = () => {
         { label: country?.countryName, path: `/${country.path}` },
         { label: region?.name }
     ];
+console.log(region);
 
     return (
         <div className='regions'>
