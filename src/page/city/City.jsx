@@ -13,11 +13,14 @@ const BASE_PHOTO_URL = import.meta.env.VITE_BASE_PHOTO_URL;
 const City = () => {
     const { countryPath, regionsPath, districtPath, cityPath } = useParams();
     const { country, region, district, parentSubRegion, city, cityData, lang, error } = useCityFullData();
+console.log(country, region, district, parentSubRegion, city, cityData);
 
     useMeta(cityData?.meta);
 
     if (error) return <p>{error}</p>;
     if (!cityData) return <p>Loading...</p>;
+console.log(country, region, cityPath)
+    
 
     const photos = photosByCountry[countryPath];
 

@@ -77,7 +77,7 @@ function useCityFullData() {
     if (foundCity) {
       const modules = import.meta.glob("../datas/*/*/*-city.js");
       const key = Object.keys(modules).find(path =>
-        path.endsWith(`${lang}/${countryPath}/${regionsPath}-city.js`)
+        path.toLowerCase().endsWith(`${lang}/${countryPath}/${regionsPath}-city.js`)
       );
 
       if (key) {
@@ -91,7 +91,7 @@ function useCityFullData() {
     // Загружаем достопримечательности
     const modulesAttr = import.meta.glob("../datas/*/*/*-attractions.js");
     const keyAttr = Object.keys(modulesAttr).find(path =>
-      path.endsWith(`${lang}/${countryPath}/${regionsPath}-attractions.js`)
+      path.toLowerCase().includes(`${lang}/${countryPath}/${regionsPath}-attractions.js`)
     );
     if (keyAttr) {
       modulesAttr[keyAttr]()

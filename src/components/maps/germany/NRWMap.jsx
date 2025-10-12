@@ -34,7 +34,7 @@ const NRWMap = ({ regions }) => {
     Rdusseldorf: { x: 300, y: 310, dx: -140, dy: -110 },
     Rarnsberg: { x: 120, y: 180, dx: 320, dy: 110 },
     Rmunster: { x: 200, y: 100, dx: 80, dy: -20 },
-    Ckoeln: { x: 395, y: 385, dx: -155, dy: -0 }, 
+    Ckoln: { x: 395, y: 385, dx: -155, dy: -0 }, 
     Cduesseldorf: { x: 305, y: 315, dx: -70, dy: -35 }, // -----
     Caachen: { x: 55, y: 205, dx: 35, dy: 221 },
     Cbonn: { x: 125, y: 185, dx: 145, dy: 265 },
