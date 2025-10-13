@@ -12,19 +12,19 @@ const BASE_PHOTO_URL = import.meta.env.VITE_BASE_PHOTO_URL;
 
 const City = () => {
     const { countryPath, regionsPath, districtPath, cityPath } = useParams();
-    const { country, region, district, parentSubRegion, city, cityData, lang, error } = useCityFullData();
+    const { region, district, parentSubRegion, city, cityData, lang, error } = useCityFullData();
 
     useMeta(cityData?.meta);
 
     if (error) return <p>{error}</p>;
-    if (!cityData) return <p>Loading...</p>;
+    if (!cityData) return <p>Loading...</p>;    
 
     const photos = photosByCountry[countryPath];
 
     // Хлебные крошки
     const crumbs = [
         { label: lang === "ru" ? "Главная" : lang === "de" ? "Startseite" : "Головна", path: "/" },
-        { label: country.countryName, path: `/${countryPath}` },
+        { label: region.country, path: `/${countryPath}` },
         { label: region.name, path: `/${countryPath}/${regionsPath}` },
         ...(district ? [{ label: district.name, path: `/${countryPath}/${regionsPath}/${districtPath}` }] : []),
         ...(parentSubRegion ? [{ label: parentSubRegion.name }] : []),

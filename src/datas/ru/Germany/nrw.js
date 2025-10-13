@@ -3,6 +3,7 @@ const datas = {
     name: 'Северный Рейн-Вестфалия',
     hasInfo: true,
     path: 'nrw',
+    country: "Германия",
     desc: {
         capital: [
             { bold: 'Столица:' },

@@ -1,6 +1,7 @@
 const datas = {
     id: 10,
     name: 'Nordrhein-Westfalen',
+    country: "Deutschland",
     hasInfo: true,
     path: 'nrw',
     desc: {

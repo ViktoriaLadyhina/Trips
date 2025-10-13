@@ -22,16 +22,18 @@ const Regions = () => {
     useMeta(region?.meta || {});
 
     const photos = photosByCountry[countryPath];
+    console.log(country);
+    
 
     if (error) return <p>{error}</p>;
     if (!country) return <p>Loading...</p>;
 
     const crumbs = [
         { label: lang === 'ru' ? 'Главная' : lang === 'de' ? 'Startseite' : 'Головна', path: '/' },
-        { label: country?.countryName, path: `/${country.path}` },
+        { label: region?.country, path: `/${country.path}` },
         { label: region?.name }
     ];
-console.log(region);
+
 
     return (
         <div className='regions'>

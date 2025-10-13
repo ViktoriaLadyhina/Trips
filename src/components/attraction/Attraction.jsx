@@ -30,7 +30,11 @@ const Attraction = ({ attr, lang }) => {
                 </div>
                 <div className='attrCard__desc-info'>
                     <div className='attrCard__desc-info-text'>{attr.short_description}</div>
+
+{attr.unesco_status?.included && <span className='attrCard__desc-info-text'>UNESCO {attr.unesco_status.year}</span>}
+
                     <div className='attrCard__desc-info-text'>{location[lang]}: {attr.location}</div>
+
                     <div className='attrCard__desc-info-more'>
                         <Link to={detailPath}>
                             {more[lang]}

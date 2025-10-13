@@ -1,6 +1,7 @@
 const datas = {
     id: 11,
     name: 'Сумська область',
+    country: "Україна",
     hasInfo: true,
     path: 'sumska',
     desc: {

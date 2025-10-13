@@ -1,6 +1,7 @@
 const datas = {
     id: 10,
     name: 'Північний Рейн-Вестфалія',
+    country: "Німеччина",
     hasInfo: true,
     path: 'nrw',
     desc: {

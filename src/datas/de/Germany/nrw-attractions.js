@@ -2,13 +2,14 @@ const datas = [
     {
         id: "cologne_cathedral",
         name: "Kölner Dom",
-        type: "Dom",
+        type: ["cathedral"],
         path: "cologne-cathedral",
         regionsPath: "nrw",
         districtPath: "city",
         cityPath: "koln",
         fotoCard: "Germany/nrw/koln/koln-city/koln-cathedral/023.jpg",
         location: "Köln, Deutschland",
+        address: [ {bold: "Adresse:", text: " Domkloster 4, 50667 Köln, Deutschland"} ],
         officialSite: [
             { bold: 'Offizielle Webseite des Kölner Doms', link: 'https://www.koelner-dom.de/' }
         ],
@@ -19,8 +20,7 @@ const datas = [
         construction_period: "1248–1880",
         architects: ["Konrad von Hochstaden, ", "Werkstätten der Baumeister XIII–XIX Jh."],
         founder: "Reinald von Dassel",
-        historical_figures: ["Reinald von Dassel", "Wilhelm von Gennep", "Otto IV", "Maria de’ Medici", "Stephan Lochner"],
-        short_description: "Der Kölner Dom ist ein majestätisches gotisches Meisterwerk, Symbol der Stadt und ganz Deutschlands. Seine beiden Türme erreichen 157 Meter, und der Bau dauerte über sechs Jahrhunderte. Der Dom beherbergt Heiligtümer, Kunstwerke und einzigartige Glasfenster. Er ist nicht nur ein religiöses Zentrum, sondern auch eine architektonische Legende, die Millionen von Touristen anzieht und mit ihrer Größe und Geschichte beeindruckt. Der Dom ist in die UNESCO-Welterbeliste aufgenommen und bleibt ein beliebtes touristisches und spirituelles Zentrum.",
+        short_description: "Der Kölner Dom ist ein majestätisches gotisches Meisterwerk, Symbol der Stadt und ganz Deutschlands. Seine beiden Türme erreichen 157 Meter, und der Bau dauerte über sechs Jahrhunderte. Der Dom beherbergt Heiligtümer, Kunstwerke und einzigartige Glasfenster. Er ist nicht nur ein religiöses Zentrum, sondern auch eine architektonische Legende, die Millionen von Touristen anzieht und mit ihrer Größe und Geschichte beeindruckt. ",
         full_description: {
             title: "Beschreibung und Geschichte",
             items: [
@@ -75,13 +75,14 @@ const datas = [
     {
         id: "bruhel_palaces",
         name: "Brühler Schlösser: Ensemble Augustusburg und Falkenlust",
-        type: "Schloss",
+        type: ['palace', 'museum'],
         path: 'bruhl-palaces',
         regionsPath: "nrw",
         districtPath: "koln",
         cityPath: "bruhl",
         fotoCard: "Germany/nrw/koln/Rhein-Erft-Kreis/bruhl/bruhel_palaces/001.jpg",
         location: "Brühl, Deutschland",
+        address: [ {bold: "Adresse:", text: " Schloss Augustusburg — Max-Ernst-Allee, 50321 Brühl, Deutschland <br>Schloss Falkenlust — An Schloss Falkenlust 1, 50321 Brühl, Deutschland"} ],
         officialSite: [
             { bold: 'Offizielle Website der Brühler Schlösser', link: 'https://www.schlossbruehl.de/en/' },
         ],
@@ -97,11 +98,9 @@ const datas = [
                 { bold: "Preise für 2025:", text: " Augustusburg — 11 € für Erwachsene, kostenlos für Besucher bis 25 Jahre; Falkenlust — 8 €; Kombiticket — 17 €." }
             ]
         },
-        architectural_style: ["Barock", "Rokoko"],
         construction_period: "1723–Mitte des 18. Jahrhunderts",
         architects: ["Johann Conrad Schlaun", "Balthasar Neumann", "Dominique Girard", "François de Cuvilliés"],
         founder: "Clemens August von Wittelsbach",
-        historical_figures: ["Clemens August", "Joseph Clemens", "Karl Albrecht", "Karl VII.", "Maria Theresia", "Karl VI."],
         short_description: "Die Brühler Schlösser sind ein herausragendes Ensemble des Barock und Rokoko in der Stadt Brühl bei Köln. Sie wurden im Auftrag des Kurfürsten Clemens August errichtet und 1984 in die UNESCO-Welterbeliste aufgenommen. Neben den architektonischen Meisterwerken ist das Ensemble berühmt für seinen französischen Garten mit prächtigem Parterre, Spiegelbecken, Brunnen sowie ausgedehnten Landschaftsgärten im englischen Stil.",
         full_description: {
             title: 'Beschreibung und Geschichte',
@@ -128,8 +127,6 @@ const datas = [
                 { text: "Im 19. Jahrhundert gestaltete Peter Joseph Lenné Teile des Parks im englischen Stil um." }
             ]
         },
-        related_objects: ["Augustusburg", "Falkenlust"],
-        categories: ["Architektur", "UNESCO", "Museum", "Schloss", "Gärten und Parks"],
         meta: {
             title: "Die Brühler Schlösser und der prächtige Park: Architektur und Natur des 18. Jahrhunderts",
             description: "Das Ensemble der Schlösser Augustusburg und Falkenlust in Brühl – ein Meisterwerk des Barock und Rokoko, ergänzt durch französische und englische Gärten, Brunnen, Alleen und Spiegelbecken. Geschichte, Stil, interessante Fakten.",
@@ -141,13 +138,14 @@ const datas = [
     {
         id: "max_ernst_museum",
         name: "Max-Ernst-Museum",
-        type: "Museum",
+        type: ['museum'],
         path: "max-ernst-museum",
         regionsPath: "nrw",
         districtPath: "koln",
         cityPath: "bruhl",
         fotoCard: "Germany/nrw/koln/Rhein-Erft-Kreis/bruhl/max_ernst_museum/Max-Ernst-Museum.jpg",
         location: "Brühl, Deutschland",
+        address: [ {bold: "Adresse:", text: " Comesstraße 42 / Max-Ernst-Allee 1, 50321 Brühl, Deutschland"} ],
         officialSite: [
             { bold: 'Offizielle Webseite des Max-Ernst-Museums', link: 'https://maxernstmuseum.lvr.de/en/startseite_1.html' }
         ],
@@ -181,7 +179,6 @@ const datas = [
         },
         construction_period: "2000–2005",
         founder: "LVR-Fonds (Stadt- und Regionalbehörden)",
-        categories: ["Museum", "Kunst", "Dadaismus", "Surrealismus"],
         meta: {
             title: "Max-Ernst-Museum in Brühl: Leben und Werk des Künstlers",
             description: "Das einzige Museum weltweit, das Max Ernst gewidmet ist. Sammlung, Geschichte, Dadaismus, Surrealismus, Sonderausstellungen.",
@@ -193,13 +190,14 @@ const datas = [
     {
         id: "keramion_frechen",
         name: "KERAMION – Zentrum für moderne und historische Keramik",
-        type: "Museum",
+        type: ['museum'],
         path: "keramion",
         regionsPath: "nrw",
         districtPath: "koln",
         cityPath: "frechen",
         fotoCard: "Germany/nrw/koln/Rhein-Erft-Kreis/frechen/keramion/frechen_keramion.jpg",
         location: "Frechen, Deutschland",
+        address: [ {bold: "Adresse:", text: " Bonnstraße 12, 50226 Frechen, Deutschland"} ],
         officialSite: [
             { bold: 'Offizielle Website von KERAMION', link: 'https://keramion.de/' }
         ],
@@ -212,14 +210,8 @@ const datas = [
                 { bold: "Eintritt für Erwachsene:", text: " 7,00 €" },
                 { bold: "Ermäßigt:", text: " 5,00 €" },
                 { bold: "Familienkarte:", text: " 14,00 € (2 Erwachsene + bis zu 3 Kinder)" },
-                { bold: "Kinder bis 16 Jahre:", text: " kostenlos" }
-            ]
-        },
-        visiting_hours: {
-            title: "Öffnungszeiten",
-            items: [
-                { text: "Dienstag – Sonntag: 11:00–17:00" },
-                { text: "Montag: geschlossen" }
+                { bold: "Kinder bis 16 Jahre:", text: " kostenlos" },
+                { bold: "Öffnungszeiten:", text: " Dienstag – Sonntag: 11:00–17:00, Montag: geschlossen" }
             ]
         },
         short_description: "Das KERAMION in Frechen ist ein Museum, das historische und moderne Keramik vereint; es befindet sich in einem futuristisch gestalteten runden Gebäude, das 1971 vom Architekturbüro Peter Neufert im Auftrag des Sammlers Dr. Gottfried Cremer errichtet wurde.",
@@ -242,7 +234,6 @@ const datas = [
         },
         construction_period: "Das Museumsgebäude wurde 1970–1971 errichtet. Das Museum wurde 2002 eröffnet.",
         founder: "Dr. Gottfried Cremer und die Stadt Frechen",
-        categories: ["Museum", "Kunst", "Keramik", "Sammlung historisch und modern"],
         meta: {
             title: "KERAMION – moderne und historische Keramik in Frechen",
             description: "KERAMION: Dauerausstellung und Sonderausstellungen von Keramik, Geschichte der Produktion und zeitgenössische künstlerische Perspektiven.",
@@ -254,13 +245,14 @@ const datas = [
     {
         id: "burg_bachem_frechen",
         name: "Burg Bachem – historische Wasserburg in Frechen",
-        type: "Schloss",
+        type: ['castle'],
         path: "burg-bachem",
         regionsPath: "nrw",
         districtPath: "koln",
         cityPath: "frechen",
-        fotoCard: "../../Gallery/Germany/Frechen/Burg-Bachem_3.jpg",
+        fotoCard: "Germany/nrw/koln/Rhein-Erft-Kreis/frechen/burg-bachem/Burg-Bachem_3.jpg",
         location: "Frechen, Deutschland",
+        address: [ {bold: "Adresse:", text: " Schloßstraße 8, 50226 Frechen, Deutschland"} ],
         officialSite: [
             { bold: "Offizielle Website Burg Bachem", link: "https://www.burg-bachem.de/" }
         ],
@@ -272,12 +264,6 @@ const datas = [
             items: [
                 { bold: "Zugang:", text: "Das Schloss ist eine private Residenz, das Schlossgelände und der See sind für Spaziergänge zugänglich." },
                 { bold: "Besuchszeiten:", text: "Das Betreten des Sees und der Alleen ist tagsüber möglich." }
-            ]
-        },
-        visiting_hours: {
-            title: "Besuchszeiten",
-            items: [
-                { text: "Zugang zum See und den Alleen ist tagsüber möglich." }
             ]
         },
         short_description: "Burg Bachem in Frechen – der größte und am besten erhaltene Schlosskomplex der Stadt, umgeben von einem Graben mit steinerner Brücke. Das Schloss ist ein bedeutendes Denkmal der Geschichte und Architektur des Stadtteils Bachem.",
@@ -301,25 +287,25 @@ const datas = [
         },
         construction_period: "Vermutlich Anfang des 13. Jahrhunderts, mit späteren Umbauten und umfassender Restaurierung in den 1970er Jahren",
         founder: "Ursprünglich im Besitz lokaler Adelsfamilien",
-        categories: ["Schloss", "historisch", "Wasserburg", "Freizeit und Natur"],
         meta: {
             title: "Burg Bachem in Frechen – historische Wasserburg und See",
             description: "Burg Bachem: Geschichte, Wassergräben, Spazierbereiche und Erholung am kleinen See in Frechen.",
             ogTitle: "Burg Bachem – Frechen, Deutschland",
             ogDescription: "Entdecken Sie die historische Wasserburg Burg Bachem und den See mit Spazierwegen in Frechen.",
-            ogImage: "../../Gallery/Germany/Frechen/Burg-Bachem_3.jpg"
+            ogImage: "Germany/nrw/koln/Rhein-Erft-Kreis/frechen/burg-bachem/Burg-Bachem_3.jpg"
         }
     },
     {
         id: "phantasialand",
         name: "Phantasialand",
-        type: "Freizeitpark",
+        type: ['amusement_park'],
         path: "phantasialand",
         regionsPath: "nrw",
         districtPath: "koln",
         cityPath: "bruhl",
         fotoCard: "../../Gallery/Germany/Bruhl/Full/001.jpg",
         location: "Brühl, Deutschland",
+        address: [ {bold: "Adresse:", text: " Berggeiststraße 31–41, 50321 Brühl, Deutschland"} ],
         officialSite: [
             { bold: 'Offizielle Website von Phantasialand', link: 'https://www.phantasialand.de/en/' }
         ],
@@ -350,7 +336,7 @@ const datas = [
                 { text: "Phantasialand entwickelt aktiv die Infrastruktur weiter, einschließlich neuer Hotels, Theater und Konzertsäle." }
             ]
         },
-        popular_attractions: {
+        sub_objects: {
             title: "Beliebte Attraktionen",
             items: [
                 { bold: "Taron", text: " – leistungsstarke Stahlachterbahn (2016)" },
@@ -359,9 +345,9 @@ const datas = [
                 { bold: "Black Mamba", text: " – invertierte Achterbahn durch den afrikanischen Dschungel" },
             ]
         },
+        theme_zones: [{ bold: "Themenbereiche:", text: ' "Berlin", "Africa", "Mexico", "China Town", "Fantasy", "Mystery"' }],
         construction_period: "1967 – heute",
         founder: "eröffnet 1967, Gründer – Gottlieb Löffelhardt und Richard Schmidt",
-        categories: ["Freizeitpark", "Attraktionen", "Familienurlaub", "Achterbahnen", "Wasserfahrgeschäfte"],
         meta: {
             title: "Phantasialand in Brühl: Themenpark mit Attraktionen und Hotels",
             description: "Phantasialand – einer der meistbesuchten Parks Europas mit über 30 Attraktionen, Themenbereichen und einzigartigen Hotels.",
@@ -369,18 +355,18 @@ const datas = [
             ogDescription: "Entdecken Sie Phantasialand in Brühl: Attraktionen, Themenbereiche, Hotels und Unterhaltung für die ganze Familie.",
             ogImage: "../../Gallery/Germany/Bruhl/Full/001.jpg"
         },
-        theme_zones: [{ bold: "Themenbereiche:", text: ' "Berlin", "Africa", "Mexico", "China Town", "Fantasy", "Mystery"' }],
     },
     {
         id: "rathaus_koln_miqua",
         name: "Kölner Rathaus und archäologisches Quartier MiQua",
-        type: "Historisches Gebäude",
+        type: ['historical_building', 'museum'],
         path: "rathaus-koln",
         regionsPath: "nrw",
         districtPath: "city",
         cityPath: "koln",
         fotoCard: "Germany/nrw/koln/koln-city/rathaus-koeln/Rathaus-Köln.jpg",
         location: "Köln, Deutschland",
+        address: [ {bold: "Adresse Kölner Rathaus:", text: " Rathausplatz 2, 50667 Köln, Deutschland "}, {bold: "<br>Adresse MiQua:", text: " Augustiner Straße 10–12, 50667 Köln, Deutschland "} ],
         officialSite: [
             { bold: "Offizielle Website", link: "https://www.stadt-koeln.de/", text: ' der Stadt Köln (Rathaus)' },
             { bold: "<br> Projekt MiQua", link: "https://miqua.lvr.de/", text: ' – archäologisches Museum' }
@@ -391,15 +377,8 @@ const datas = [
         tickets_and_entry: {
             title: "Eintritt und Zugang",
             items: [
-                { bold: "Zugang:", text: "Das Rathaus ist ein aktives Gebäude des Stadtrats. Der Zugang zu den Verwaltungsräumen ist eingeschränkt, jedoch sind Teile der Säle und der Turm im Rahmen von Führungen zugänglich." },
+                { bold: "Zugang:", text: "Das Rathaus ist ein aktives Gebäude des Stadtrats. Der Zugang zu den Verwaltungsräumen ist eingeschränkt, jedoch sind Teile der Säle und der Turm im Rahmen von Führungen zugänglich. Führungen durch das Rathaus finden nach Zeitplan statt und werden auf der Website der Stadt Köln angegeben." },
                 { bold: "MiQua:", text: "Der Besuch des archäologischen Quartiers ist im Rahmen von Führungen mit einem Guide möglich. Nach Abschluss der Bauarbeiten wird das Museum für den freien Besuch geöffnet." }
-            ]
-        },
-        visiting_hours: {
-            title: "Öffnungszeiten",
-            items: [
-                { text: "Führungen durch das Rathaus finden nach Plan statt, Details sind auf der Website der Stadt Köln zu finden." },
-                { text: "MiQua – Zugang zu den unterirdischen Ausgrabungen nur mit Führer. Nach der Eröffnung des Museums ist ein regulärer Betriebsplan vorgesehen." }
             ]
         },
         short_description: "Das Kölner Rathaus ist das älteste Verwaltungsgebäude Deutschlands, das einen gotischen Turm, eine Renaissance-Loggia und den historischen Hansasaal kombiniert. Unter ihm befindet sich der einzigartige archäologische Museumskomplex MiQua mit Überresten des römischen Praetoriums und des jüdischen Viertels.",
@@ -433,7 +412,6 @@ const datas = [
         },
         construction_period: "12.-16. Jahrhundert, mit anschließenden Restaurierungen nach dem Zweiten Weltkrieg",
         founder: "Stadt Köln unter Beteiligung der Architekten Wilhelm Vernukken und Meister der gotischen Schule",
-        categories: ["Historisches Gebäude", "Museum", "Archäologie", "Gotik", "Renaissance"],
         sub_objects: {
             title: "Objekte des Rathauses und des archäologischen Quartiers",
             items: [
@@ -449,6 +427,61 @@ const datas = [
             ogDescription: "Erkunden Sie das Kölner Rathaus und das unterirdische Museum MiQua, wo das antike Rom auf das Mittelalter trifft.",
             ogImage: "Germany/nrw/koln/koln-city/rathaus-koeln/Rathaus-Köln.jpg"
         }
+    },
+    {
+    id: "roemisch_germanisches_museum",
+    name: "Römisch-Germanisches Museum",
+    type: ["museum"],
+    path: "roemisch-germanisches-museum",
+    regionsPath: "nrw",
+    districtPath: "city",
+    cityPath: "koln",
+    fotoCard: "Germany/nrw/koln/koln-city/roemisch-germanisches-museum/001.jpg",
+    location: "Köln, Deutschland",
+    officialSite: [
+        { bold: "Offizielle Webseite des Römisch-Germanischen Museums", link: "https://museenkoeln.de/portal/Roemisch-Germanisches-Museum" }
+    ],
+    construction_period: "1974 (gegründet 1946, Renovierung seit 2019)",
+    architects: ["Heinz Röcke, ", "Klaus Renner"],
+    founder: "Archäologischer Dienst Köln (als Reaktion auf die Entdeckung der römischen Villa mit Dionysosmosaik, 1941)",
+    short_description: "Das Römisch-Germanische Museum in Köln bewahrt einzigartige archäologische Funde aus der römischen Zeit. Es wurde direkt über den Ruinen einer antiken Villa mit dem Dionysosmosaik errichtet und bildet eine Brücke zwischen Antike und Moderne. Hier werden Mosaike, Glas, Schmuck und Artefakte präsentiert, die die Geschichte von Köln als antike Kolonie Colonia Claudia Ara Agrippinensium erzählen.",
+    full_description: {
+        title: "Beschreibung und Geschichte",
+        items: [
+            { bold: "Über das Museum.", text: "Das Römisch-Germanische Museum bewahrt umfangreiche archäologische Funde, die die Geschichte Kölns – der römischen Kolonie Colonia Claudia Ara Agrippinensium – erzählen. In der Sammlung finden sich Kunstwerke und Alltagsgegenstände der römischen Zeit: Schmuck, Glasgefäße, Marmorgrabsteine, Keramik und Münzen." },
+            { bold: "Hauptattraktion", text: " – das Dionysosmosaik (Dionysosmosaik), datiert auf ca. 220–230 n. Chr. Es bedeckte den Boden einer römischen Villa, auf deren Ruinen das erste Museumsgebäude errichtet wurde. Neben dem Mosaik kann man hier eine große Sammlung römischen Glases, weiblichen Schmucks und Alltagsgegenständen sehen, die bei archäologischen Ausgrabungen in Köln gefunden wurden." },
+            { bold: "Ausstellung und Bedeutung.", text: "Neben dem Mosaik ist das Museum bekannt für seine Sammlung römischen und germanischen Glases, weiblichen Schmucks, Amphoren, Alltagsgegenstände und Münzen. Es erzählt die Geschichte der Stadt Köln, die zur Zeit des Römischen Reiches Colonia Claudia Ara Agrippinensium hieß. Das Museum erfüllt auch wissenschaftliche und archäologische Funktionen – es beteiligt sich an Ausgrabungen und am Erhalt des antiken Erbes der Region." },
+            { bold: "Museumsgründung.", text: "Das Museum wurde 1946 kurz nach dem Zweiten Weltkrieg gegründet. Anlass für die Gründung war ein Zufallsfund – 1941, während Bauarbeiten am Kölner Dom, entdeckten Archäologen die Ruinen eines römischen Hauses mit dem prächtigen Dionysosmosaik. Um den Fund vor Ort (in situ) zu bewahren, wurde beschlossen, das Museum direkt über diesen Ruinen zu errichten." },
+            { bold: "Gebäude und Architektur.", text: "Das moderne Museumsgebäude am Roncalliplatz 4 wurde von den Architekten Heinz Röcke und Klaus Renner entworfen. Es wurde 1974 eröffnet. Die Architektur ist streng und funktional, im Geist des Modernismus der 1970er Jahre. Klare geometrische Formen und große Panoramafenster unterstreichen den wissenschaftlichen Charakter des Museums und erzeugen den Eindruck ruhiger Monumentalität. Im alten Gebäude war das Mosaik sogar von außen sichtbar – durch ein großes Fenster zur Platzseite am Kölner Dom." },
+            { bold: "Renovierung.", text: "Heute befindet sich das Museumsgebäude in einer umfassenden Renovierung (seit 2019, Fertigstellung geplant für 2027). Die Hauptausstellung ist vorübergehend im Belgischen Haus in der Cäcilienstraße untergebracht. Trotz des Umzugs arbeitet das Museum weiterhin und empfängt Besucher." },
+        ]
+    },
+    tickets_and_entry: {
+        title: "Praktische Informationen",
+        items: [
+            { bold: "Adresse (temporäre Ausstellung):", text: "Belgisches Haus, Cäcilienstraße 46, 50667 Köln" },
+            { bold: "Altes Gebäude:", text: "Roncalliplatz 4, neben dem Kölner Dom" },
+            { bold: "Öffnungszeiten:", text: "Mittwoch bis Montag, 10:00 – 18:00, Dienstag geschlossen" },
+            { bold: "Eintrittspreise (2025):", text: "Erwachsene – 6 €, ermäßigt – 3 €" },
+        ]
+    },
+    interestingFacts: {
+        title: "Interessante Fakten",
+        items: [
+            { text: "Das Museum wurde nach der zufälligen Entdeckung einer römischen Villa im Jahr 1941 gegründet – direkt unter dem zukünftigen Platz beim Kölner Dom." },
+            { text: "Das Dionysosmosaik gilt als eines der schönsten römischen Mosaike nördlich der Alpen." },
+            { text: "Das erste Museumsgebäude wurde direkt über den Originalruinen errichtet – ein seltenes Beispiel für eine In-situ-Ausstellung." },
+            { text: "Die Sammlung römischen Glases des Museums ist eine der größten der Welt." },
+            { text: "Seit 2019 befindet sich das Museum in Renovierung; die Eröffnung des modernisierten Gebäudes ist für 2027 geplant." }
+        ]
+    },
+    meta: {
+        title: "Römisch-Germanisches Museum in Köln: Antike unter dem Dom",
+        description: "Das Römisch-Germanische Museum ist ein einzigartiges archäologisches Museum in Köln, errichtet über einer römischen Villa. Dionysosmosaik, Glas, Schmuck und Geschichte der Stadt Colonia.",
+        ogTitle: "Römisch-Germanisches Museum Köln — Geschichte und Dionysosmosaik",
+        ogDescription: "Museum der antiken Colonia: Dionysosmosaik, römisches Glas und Archäologie in Köln. Erfahren Sie, wie die Antike unter der modernen Stadt erhalten blieb.",
+        ogImage: "Germany/nrw/koln/koln-city/roemisch-germanisches-museum/001.jpg"
     }
+}
 ];
 export default datas;

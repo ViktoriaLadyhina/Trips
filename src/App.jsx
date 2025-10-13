@@ -9,6 +9,7 @@ import City from './page/city/City'
 import AttractionsList from './page/attractions/AttractionsList';
 import Attraction from './page/attraction/Attraction';
 import SearchPage from './page/searchPage/SearchPage';
+import Map from './page/map/Map'
 
 function App() {
 
@@ -20,6 +21,7 @@ function App() {
           <Route index element={<Home />} />
 
           <Route path="/:countryPath" element={<Country />} />
+          <Route path="/map" element={<Map />} />
 
           <Route path="/:countryPath/:regionsPath" element={<Regions />} />
 
