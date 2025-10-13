@@ -9,7 +9,7 @@ const datas = [
         cityPath: "koln",
         fotoCard: "Germany/nrw/koln/koln-city/koln-cathedral/023.jpg",
         location: "Кёльн, Германия",
-        address: [ {bold: "Адресс:", text: " Domkloster 4, 50667 Köln, Deutschland"} ],
+        address: [{ bold: "Адрес:", text: " Domkloster 4, 50667 Köln, Deutschland" }],
         officialSite: [
             { bold: 'Официальный сайт Кёльнского собора', link: 'https://www.koelner-dom.de/' }
         ],
@@ -82,7 +82,7 @@ const datas = [
         cityPath: "bruhl",
         fotoCard: "Germany/nrw/koln/Rhein-Erft-Kreis/bruhl/bruhel_palaces/001.jpg",
         location: "Брюль, Германия",
-        address: [ {bold: "Адресс:", text: " Schloss Augustusburg — Max-Ernst-Allee, 50321 Brühl, Deutschland <br>Schloss Falkenlust — An Schloss Falkenlust 1, 50321 Brühl, Deutschland"} ],
+        address: [{ bold: "Адрес:", text: " Schloss Augustusburg — Max-Ernst-Allee, 50321 Brühl, Deutschland <br>Schloss Falkenlust — An Schloss Falkenlust 1, 50321 Brühl, Deutschland" }],
         officialSite: [
             { bold: 'Официальный сайт дворцов Брюля', link: 'https://www.schlossbruehl.de/en/' },
         ],
@@ -145,7 +145,7 @@ const datas = [
         cityPath: "bruhl",
         fotoCard: "Germany/nrw/koln/Rhein-Erft-Kreis/bruhl/max_ernst_museum/Max-Ernst-Museum.jpg",
         location: "Брюль, Германия",
-        address: [ {bold: "Адресс:", text: " Comesstraße 42 / Max-Ernst-Allee 1, 50321 Brühl, Deutschland"} ],
+        address: [{ bold: "Адрес:", text: " Comesstraße 42 / Max-Ernst-Allee 1, 50321 Brühl, Deutschland" }],
         officialSite: [
             { bold: 'Официальный сайт Музея Макса Эрнста', link: 'https://maxernstmuseum.lvr.de/en/startseite_1.html' }
         ],
@@ -197,7 +197,7 @@ const datas = [
         cityPath: "frechen",
         fotoCard: "Germany/nrw/koln/Rhein-Erft-Kreis/frechen/keramion/frechen_keramion.jpg",
         location: "Фрехен, Германия",
-        address: [ {bold: "Адресс:", text: " Bonnstraße 12, 50226 Frechen, Deutschland"} ],
+        address: [{ bold: "Адрес:", text: " Bonnstraße 12, 50226 Frechen, Deutschland" }],
         officialSite: [
             { bold: 'Официальный сайт KERAMION', link: 'https://keramion.de/' }
         ],
@@ -252,7 +252,7 @@ const datas = [
         cityPath: "frechen",
         fotoCard: "Germany/nrw/koln/Rhein-Erft-Kreis/frechen/burg-bachem/Burg-Bachem_3.jpg",
         location: "Фрехен, Германия",
-        address: [ {bold: "Адресс:", text: " Schloßstraße 8, 50226 Frechen, Deutschland"} ],
+        address: [{ bold: "Адрес:", text: " Schloßstraße 8, 50226 Frechen, Deutschland" }],
         officialSite: [
             { bold: "Официальный сайт Burg Bachem", link: "https://www.burg-bachem.de/" }
         ],
@@ -305,7 +305,7 @@ const datas = [
         cityPath: "bruhl",
         fotoCard: "Germany/nrw/koln/Rhein-Erft-Kreis/bruhl/phantasialand/001.jpg",
         location: "Брюль, Германия",
-        address: [ {bold: "Адресс:", text: " Berggeiststraße 31–41, 50321 Brühl, Deutschland"} ],
+        address: [{ bold: "Адрес:", text: " Berggeiststraße 31–41, 50321 Brühl, Deutschland" }],
         officialSite: [
             { bold: 'Официальный сайт Phantasialand', link: 'https://www.phantasialand.de/en/' }
         ],
@@ -345,9 +345,8 @@ const datas = [
                 { bold: "Black Mamba", text: " – инвертированная горка через африканскую джунгли" },
             ]
         },
-        theme_zones: [{ bold: "Тематические зоны:", text: ' "Berlin", "Africa", "Mexico", "China Town", "Fantasy", "Mystery"' }],
         construction_period: "1967 – настоящее время",
-        founder: "открыт в 1967 году, основатели – Готлиба Лёффельхардт и Рихард Шмидт", 
+        founder: "открыт в 1967 году, основатели – Готлиба Лёффельхардт и Рихард Шмидт",
         meta: {
             title: "Phantasialand в Брюле: тематический парк с аттракционами и отелями",
             description: "Phantasialand – один из самых посещаемых парков Европы с более чем 30 аттракционами, тематическими зонами и уникальными отелями.",
@@ -366,7 +365,7 @@ const datas = [
         cityPath: "koln",
         fotoCard: "Germany/nrw/koln/koln-city/rathaus-koeln/Rathaus-Köln.jpg",
         location: "Кёльн, Германия",
-        address: [ {bold: "Адресс Кёльнской ратуши:", text: " Rathausplatz 2, 50667 Köln, Deutschland "}, {bold: "<br>Адресс MiQua:", text: " Augustiner Straße 10–12, 50667 Köln, Deutschland "} ],
+        address: [{ bold: "Адрес Кёльнской ратуши:", text: " Rathausplatz 2, 50667 Köln, Deutschland " }, { bold: "<br>Адрес MiQua:", text: " Augustiner Straße 10–12, 50667 Köln, Deutschland " }],
         officialSite: [
             { bold: "Официальный сайт", link: "https://www.stadt-koeln.de/", text: ' города Кёльна (ратуша)' },
             { bold: "<br> Проект MiQua", link: "https://miqua.lvr.de/", text: ' – археологический музей' }
@@ -482,6 +481,60 @@ const datas = [
             ogDescription: "Музей античной Колонии: мозаика Диониса, римское стекло и археология Кёльна. Узнайте, как античность сохранилась под современным городом.",
             ogImage: "Germany/nrw/koln/koln-city/roemisch-germanisches-museum/001.jpg"
         }
+    },
+    {
+        id: "farina_duftmuseum",
+        name: "Музей духов в доме Фарина",
+        type: ["museum"],
+        path: "farina-duftmuseum",
+        regionsPath: "nrw",
+        districtPath: "city",
+        cityPath: "koln",
+        fotoCard: "Germany/nrw/koln/koln-city/farina-duftmuseum/001.jpg",
+        location: "Кёльн, Германия",
+        officialSite: [
+            { bold: "Официальный сайт музея Фарина", link: "https://farina.org/de/duftmuseum/" }
+        ],
+        construction_period: "1709 (год основания фабрики Фарина)",
+        founder: "Иоганн Мария Фарина (Johann Maria Farina)",
+        short_description: "Музей духов в доме Фарина, известный также как «Дом одеколона», – старейший музей ароматов в мире и родина знаменитого Eau de Cologne, или «кёльнской воды». Именно здесь в 1709 году Иоганн Мария Фарина создал первый одеколон, который стал символом города и прославил Кёльн на весь мир.",
+        full_description: {
+            title: "Описание и история",
+            items: [
+                { bold: "О музее.", text: "Музей духов в доме Фарина (Duftmuseum im Farina-Haus) расположен в самом сердце старого Кёльна, напротив Ратуши. Он посвящён истории создания и производства знаменитого одеколона – Eau de Cologne, что буквально переводится как «кёльнская вода». Здесь посетители узнают о трёхвековой истории одной из старейших парфюмерных фабрик Европы." },
+                { bold: "История и основатель.", text: "Фабрика духов была основана в 1709 году итальянцем Иоганном Марией Фариной (Johann Maria Farina). Он создал первый в мире свежий цитрусово-цветочный аромат, который назвал в честь города, где жил – «Eau de Cologne». Этот аромат быстро стал символом роскоши и чистоты, покорил европейские дворы и положил начало мировой парфюмерной традиции." },
+                { bold: "Экспозиция музея.", text: "В музее представлена богатая коллекция, включающая старинные флаконы и сосуды для духов, оригинальные рецепты и оборудование для перегонки эфирных масел. В залах можно увидеть мебель и картины XVIII века, документы и письма, подтверждающие международные связи семьи Фарина." },
+                { bold: "«Камера ароматов».", text: "Особая часть экспозиции – так называемая «камера ароматов», где посетители знакомятся с технологией создания духов и могут почувствовать запахи различных эссенций. Здесь рассказывают о том, как натуральные ингредиенты – бергамот, лимон, розмарин и лаванда – превращаются в изысканные композиции." },
+                { bold: "Фабрика и преемственность.", text: "Компания Farina продолжает работать до сих пор и находится в управлении восьмого поколения семьи. Продукция под маркой «Farina Gegenüber» по-прежнему изготавливается по оригинальному рецепту и экспортируется по всему миру." },
+            ]
+        },
+        tickets_and_entry: {
+            title: "Практическая информация",
+            items: [
+                { bold: "Адрес:", text: "Obenmarspforten 21, 50667 Köln, Deutschland" },
+                { bold: "Часы работы:", text: "ежедневно, с 10:00 до 18:00 (экскурсии проводятся по расписанию)" },
+                { bold: "Стоимость билета (2025 г.):", text: "взрослый – 8 €, льготный – 5 €, дети до 10 лет – бесплатно" },
+                { bold: "Экскурсии:", text: "Музей открыт для посетителей только в составе экскурсии, которые проводятся на нескольких языках. Тур длится около 45 минут и завершается в фирменном магазине, где можно приобрести оригинальный Eau de Cologne, изготовленный по рецепту Фарины." }
+            ]
+        },
+        interestingFacts: {
+            title: "Интересные факты",
+            items: [
+                { text: "Именно здесь в 1709 году был создан первый в мире одеколон – Eau de Cologne, ставший родоначальником категории лёгких цитрусовых ароматов." },
+                { text: "Название «одеколон» (eau de cologne) буквально означает «кёльнская вода» и появилось благодаря Фарине." },
+                { text: "Фарина выбирал аромат, который напоминал ему свежесть итальянского утра после дождя – именно так он описывал своё творение." },
+                { text: "В музее до сих пор можно увидеть оригинальные флаконы XVIII века и письма клиентов из европейских королевских домов." },
+                { text: "Музей расположен напротив Кёльнской Ратуши и считается старейшим парфюмерным музеем в мире." }
+            ]
+        },
+        meta: {
+            title: "Музей духов в доме Фарина — Дом одеколона",
+            description: "Музей духов в доме Фарина, известный также как Дом одеколона, — старейший музей ароматов в Кёльне и родина знаменитого Eau de Cologne. Именно здесь в 1709 году Иоганн Мария Фарина создал первый одеколон.",
+            ogTitle: "Дом Фарина в Кёльне — Дом одеколона и музей Eau de Cologne",
+            ogDescription: "Посетите Музей духов в доме Фарина, также известный как Дом одеколона — родину легендарного Eau de Cologne. История, ароматы и трёхвековая традиция создания кёльнской воды.",
+            ogImage: "Germany/nrw/koln/koln-city/farina-duftmuseum/001.jpg"
+        }
     }
+
 ];
 export default datas;
