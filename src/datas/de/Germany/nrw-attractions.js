@@ -2,7 +2,7 @@ const datas = [
     {
         id: "cologne_cathedral",
         name: "Kölner Dom",
-        type: "Dom",
+        type: ["cathedral"],
         path: "cologne-cathedral",
         regionsPath: "nrw",
         districtPath: "city",
@@ -20,7 +20,7 @@ const datas = [
         architects: ["Konrad von Hochstaden, ", "Werkstätten der Baumeister XIII–XIX Jh."],
         founder: "Reinald von Dassel",
         historical_figures: ["Reinald von Dassel", "Wilhelm von Gennep", "Otto IV", "Maria de’ Medici", "Stephan Lochner"],
-        short_description: "Der Kölner Dom ist ein majestätisches gotisches Meisterwerk, Symbol der Stadt und ganz Deutschlands. Seine beiden Türme erreichen 157 Meter, und der Bau dauerte über sechs Jahrhunderte. Der Dom beherbergt Heiligtümer, Kunstwerke und einzigartige Glasfenster. Er ist nicht nur ein religiöses Zentrum, sondern auch eine architektonische Legende, die Millionen von Touristen anzieht und mit ihrer Größe und Geschichte beeindruckt. Der Dom ist in die UNESCO-Welterbeliste aufgenommen und bleibt ein beliebtes touristisches und spirituelles Zentrum.",
+        short_description: "Der Kölner Dom ist ein majestätisches gotisches Meisterwerk, Symbol der Stadt und ganz Deutschlands. Seine beiden Türme erreichen 157 Meter, und der Bau dauerte über sechs Jahrhunderte. Der Dom beherbergt Heiligtümer, Kunstwerke und einzigartige Glasfenster. Er ist nicht nur ein religiöses Zentrum, sondern auch eine architektonische Legende, die Millionen von Touristen anzieht und mit ihrer Größe und Geschichte beeindruckt. ",
         full_description: {
             title: "Beschreibung und Geschichte",
             items: [
@@ -75,7 +75,7 @@ const datas = [
     {
         id: "bruhel_palaces",
         name: "Brühler Schlösser: Ensemble Augustusburg und Falkenlust",
-        type: "Schloss",
+        type: ['palace', 'museum'],
         path: 'bruhl-palaces',
         regionsPath: "nrw",
         districtPath: "koln",
@@ -141,7 +141,7 @@ const datas = [
     {
         id: "max_ernst_museum",
         name: "Max-Ernst-Museum",
-        type: "Museum",
+        type: ['museum'],
         path: "max-ernst-museum",
         regionsPath: "nrw",
         districtPath: "koln",
@@ -193,7 +193,7 @@ const datas = [
     {
         id: "keramion_frechen",
         name: "KERAMION – Zentrum für moderne und historische Keramik",
-        type: "Museum",
+        type: ['museum'],
         path: "keramion",
         regionsPath: "nrw",
         districtPath: "koln",
@@ -254,12 +254,12 @@ const datas = [
     {
         id: "burg_bachem_frechen",
         name: "Burg Bachem – historische Wasserburg in Frechen",
-        type: "Schloss",
+        type: ['castle'],
         path: "burg-bachem",
         regionsPath: "nrw",
         districtPath: "koln",
         cityPath: "frechen",
-        fotoCard: "../../Gallery/Germany/Frechen/Burg-Bachem_3.jpg",
+        fotoCard: "Germany/nrw/koln/Rhein-Erft-Kreis/frechen/burg-bachem/Burg-Bachem_3.jpg",
         location: "Frechen, Deutschland",
         officialSite: [
             { bold: "Offizielle Website Burg Bachem", link: "https://www.burg-bachem.de/" }
@@ -307,13 +307,13 @@ const datas = [
             description: "Burg Bachem: Geschichte, Wassergräben, Spazierbereiche und Erholung am kleinen See in Frechen.",
             ogTitle: "Burg Bachem – Frechen, Deutschland",
             ogDescription: "Entdecken Sie die historische Wasserburg Burg Bachem und den See mit Spazierwegen in Frechen.",
-            ogImage: "../../Gallery/Germany/Frechen/Burg-Bachem_3.jpg"
+            ogImage: "Germany/nrw/koln/Rhein-Erft-Kreis/frechen/burg-bachem/Burg-Bachem_3.jpg"
         }
     },
     {
         id: "phantasialand",
         name: "Phantasialand",
-        type: "Freizeitpark",
+        type: ['amusement_park'],
         path: "phantasialand",
         regionsPath: "nrw",
         districtPath: "koln",
@@ -374,7 +374,7 @@ const datas = [
     {
         id: "rathaus_koln_miqua",
         name: "Kölner Rathaus und archäologisches Quartier MiQua",
-        type: "Historisches Gebäude",
+       type: ['historical_building', 'museum'],
         path: "rathaus-koln",
         regionsPath: "nrw",
         districtPath: "city",

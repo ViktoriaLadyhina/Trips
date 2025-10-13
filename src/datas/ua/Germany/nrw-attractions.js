@@ -2,7 +2,7 @@ const datas = [
     {
         id: "cologne_cathedral",
         name: "Кельнський собор",
-        type: "собор",
+        type: ["cathedral"],
         path: "cologne-cathedral",
         regionsPath: "nrw",
         districtPath: "city",
@@ -20,7 +20,7 @@ const datas = [
         architects: ["Конрад фон Гохштаден, ", "Майстерні будівельників XIII–XIX ст."],
         founder: "Райнальд фон Дассель",
         historical_figures: ["Райнальд фон Дассель", "Вільгельм фон Геннеп", "Отто IV", "Марія Медичі", "Стефан Лохнер"],
-        short_description: "Кельнський собор — величний готичний шедевр, символ міста та всієї Німеччини. Його дві вежі досягають 157 метрів, а будівництво тривало понад шість століть. Собор зберігає святині, твори мистецтва та унікальні вітражі. Це не лише релігійний центр, а й архітектурна легенда, яка приваблює мільйони туристів, вражаючи своєю грандіозністю та історією. Собор внесено до списку Світової спадщини ЮНЕСКО і він залишається популярним туристичним та духовним центром.",
+        short_description: "Кельнський собор — величний готичний шедевр, символ міста та всієї Німеччини. Його дві вежі досягають 157 метрів, а будівництво тривало понад шість століть. Собор зберігає святині, твори мистецтва та унікальні вітражі. Це не лише релігійний центр, а й архітектурна легенда, яка приваблює мільйони туристів, вражаючи своєю грандіозністю та історією. ",
         full_description: {
             title: "Опис та історія",
             items: [
@@ -75,7 +75,7 @@ const datas = [
     {
         id: "bruhel_palaces",
         name: "Палаци Брюля: ансамбль Аугустусбург і Фалькенлюст",
-        type: "палац",
+        type: ['palace', 'museum'],
         path: 'bruhl-palaces',
         regionsPath: "nrw",
         districtPath: "koln",
@@ -141,7 +141,7 @@ const datas = [
     {
         id: "max_ernst_museum",
         name: "Музей Макса Ернста",
-        type: "музей",
+        type: ['museum'],
         path: "max-ernst-museum",
         regionsPath: "nrw",
         districtPath: "koln",
@@ -193,7 +193,7 @@ const datas = [
     {
         id: "keramion_frechen",
         name: "KERAMION – Центр сучасної та історичної кераміки",
-        type: "музей",
+        type: ['museum'],
         path: "keramion",
         regionsPath: "nrw",
         districtPath: "koln",
@@ -254,12 +254,12 @@ const datas = [
     {
         id: "burg_bachem_frechen",
         name: "Burg Bachem – історична водяна фортеця у Фрехені",
-        type: "Schloss",
+        type: ['castle'],
         path: "burg-bachem",
         regionsPath: "nrw",
         districtPath: "koln",
         cityPath: "frechen",
-        fotoCard: "../../Gallery/Germany/Frechen/Burg-Bachem_3.jpg",
+        fotoCard: "Germany/nrw/koln/Rhein-Erft-Kreis/frechen/burg-bachem/Burg-Bachem_3.jpg",
         location: "Фрехен, Німеччина",
         officialSite: [
             { bold: "Офіційний сайт Burg Bachem", link: "https://www.burg-bachem.de/" }
@@ -307,13 +307,13 @@ const datas = [
             description: "Burg Bachem: історія, водяні рови, прогулянкові зони та відпочинок біля невеликого озера у Фрехені.",
             ogTitle: "Burg Bachem – Frechen, Deutschland",
             ogDescription: "Відкрийте для себе історичну водяну фортецю Burg Bachem та озеро з прогулянковими алеями у Фрехені.",
-            ogImage: "../../Gallery/Germany/Frechen/Burg-Bachem_3.jpg"
+            ogImage: "Germany/nrw/koln/Rhein-Erft-Kreis/frechen/burg-bachem/Burg-Bachem_3.jpg"
         }
     },
     {
         id: "phantasialand",
         name: "Phantasialand",
-        type: "парк розваг",
+        type: ['amusement_park'],
         path: "phantasialand",
         regionsPath: "nrw",
         districtPath: "koln",
@@ -374,7 +374,7 @@ const datas = [
     {
         id: "rathaus_koln_miqua",
         name: "Кельнська ратуша та археологічний квартал MiQua",
-        type: "Історична будівля",
+        type: ['historical_building', 'museum'],
         path: "rathaus-koln",
         regionsPath: "nrw",
         districtPath: "city",

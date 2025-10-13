@@ -36,7 +36,7 @@ const NRWKolnMap = ({ regions }) => {
 
   // 2️⃣ Берём города
   const freeCities = useMemo(() => {
-    return ["koeln", "leverkusen", "bonn", "aachen"]
+    return ["koln", "leverkusen", "bonn", "aachen"]
       .map(slug => regions?.discriptRegions?.[1]?.items?.find(city => city.path === slug))
       .filter(Boolean);
   }, [regions]);
