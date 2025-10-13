@@ -1,0 +1,14 @@
+@use '../../styles/variables' as *;
+
+.map {
+
+    ul {
+        text-align: left;
+        list-style: none;
+    }
+
+    a {
+        text-decoration: none;
+        @include body-text;
+    }
+}

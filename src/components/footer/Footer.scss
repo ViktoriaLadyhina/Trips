@@ -1,0 +1,12 @@
+@use '../../styles/variables' as *;
+
+.footer {
+    background-color: var(--color-sidebar-bg);
+    display: flex;
+    justify-content: space-between;
+
+        a {
+        text-decoration: none;
+        @include body-text;
+    }
+}
