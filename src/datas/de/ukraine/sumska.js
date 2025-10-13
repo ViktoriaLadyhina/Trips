@@ -1,6 +1,7 @@
 const datas = {
     id: 11,
     name: 'Oblast Sumy',
+    country: "Ukraine",
     hasInfo: true,
     path: 'sumska',
     desc: {

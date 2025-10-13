@@ -45,7 +45,7 @@ const District = () => {
 
   const crumbs = [
     { label: lang === "ru" ? "Главная" : lang === "de" ? "Startseite" : "Головна", path: "/" },
-    { label: country.countryName, path: `/${country.path}` },
+    { label: region.country, path: `/${country.path}` },
     { label: region.name, path: `/${country.path}/${region.path}` },
     { label: district.name || district.title }
   ];

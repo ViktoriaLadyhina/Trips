@@ -25,6 +25,9 @@ export const Fotos = {
         { path: "Germany/nrw/koln/koln-city/koln-cathedral/026.jpg", title: { ru: "Кёльнский собор. Распятие Геро", ua: "Кельнський собор. Розп’яття Геро", de: "Kölner Dom. Gero-Kreuz" } },
         { path: "Germany/nrw/koln/koln-city/koln-cathedral/024.jpg", title: { ru: "Кёльнский собор. Ларь с мощами трёх волхвов", ua: "Кельнський собор. Лар з мощами трьох волхвів", de: "Kölner Dom. Schrein der Heiligen Drei Könige" } },
       ],
+      'roemisch-germanisches-museum': [
+        { path: "Germany/nrw/koln/koln-city/roemisch-germanisches-museum/001.jpg", title: { ru: "Римско-германский музей (фото взято с википедии)", ua: "Римсько-германський музей (фото взято з Вікіпедії)", de: "Römisch-Germanisches Museum (Foto von Wikipedia entnommen)" } }
+      ],
     },
     bruhl: {
       'phantasialand': [

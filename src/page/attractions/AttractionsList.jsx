@@ -62,7 +62,7 @@ const AttractionsList = () => {
     // Хлебные крошки
     const crumbs = [
         { label: lang === "ru" ? "Главная" : lang === "de" ? "Startseite" : "Головна", path: "/" },
-        country ? { label: country.countryName, path: `/${country.path}` } : null,
+        country ? { label: region.country, path: `/${country.path}` } : null,
         region ? { label: region.name, path: `/${country?.path}/${region.path}` } : null,
         district ? { label: district.name, path: `/${country?.path}/${region?.path}/${district.path}` } : null,
         parentSubRegion ? { label: parentSubRegion.name } : null,

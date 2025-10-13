@@ -1,4 +1,4 @@
-@import './styles/_variables.scss';
+@use './styles/_variables.scss' as *;
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&family=Roboto:wght@400;700&family=Lato:wght@400;700&family=Open+Sans:wght@400;700&display=swap');
 
 body {

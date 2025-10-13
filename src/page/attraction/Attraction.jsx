@@ -33,7 +33,7 @@ const Attraction = () => {
     // Хлебные крошки
     const crumbs = [
         { label: lang === "ru" ? "Главная" : lang === "de" ? "Startseite" : "Головна", path: "/" },
-        country ? { label: country.countryName, path: `/${country.path}` } : null,
+        country ? { label: region.country, path: `/${country.path}` } : null,
         region ? { label: region.name, path: `/${country.path}/${region.path}` } : null,
         district ? { label: district.name, path: `/${country.path}/${region.path}/${district.path}` } : null,
         parentSubRegion ? { label: parentSubRegion.name } : null,
@@ -48,6 +48,7 @@ const Attraction = () => {
     const construction_periodTitle = { ru: "Период строительства", ua: "Період будівництва", de: "Bauzeit" }
     const founderTitle = { ru: "Основатель", ua: "Засновник", de: "Gründer" }
     const architects = { ru: "Архитекторы", ua: "Архітектори", de: "Architekten" };
+
 
     return (
         <div className="attraction">
@@ -78,6 +79,7 @@ const Attraction = () => {
                 </div>
 
                 {attraction.tickets_and_entry && (<InfoBlock data={attraction.tickets_and_entry} className="attraction__desc-tickets_and_entry" />)}
+                {attraction.address && (<InfoBlock data={attraction.address} className="attraction__desc-address" />)}
                 {attraction.full_description && (<InfoBlock data={attraction.full_description} className="attraction__desc-full_description" />)}
                 {attraction.theme_zones && (<InfoBlock data={attraction.theme_zones} className="attraction__desc-theme_zones" />)}
                 {attraction.sub_objects && (<InfoBlock data={attraction.sub_objects} className="attraction__desc-sub_objects" />)}

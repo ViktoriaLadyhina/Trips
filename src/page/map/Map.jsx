@@ -6,7 +6,7 @@ import BreadCrumbs from '../../components/breadCrumbs/BreadCrumbs';
 const Map = () => {
   const { lang } = useSelector((state) => state.language);
 
-  // Простейший словарь для перевода
+  // словарь для перевода
   const t = {
     countries: {
       germany: { ru: 'Германия', de: 'Deutschland', ua: 'Німеччина' },
@@ -31,7 +31,8 @@ const Map = () => {
       burgBachem: { ru: 'Burg Bachem – историческая водяная крепость во Фрехене', de: 'Burg Bachem – historische Wasserburg in Frechen', ua: 'Burg Bachem – історична водяна фортеця у Фрехені' },
       keramion: { ru: 'KERAMION – Центр современной и исторической керамики', de: 'KERAMION – Zentrum für moderne und historische Keramik', ua: 'KERAMION – Центр сучасної та історичної кераміки' },
       cologneCathedral: { ru: 'Кёльнский собор', de: 'Kölner Dom', ua: 'Кельнський собор' },
-      cologneRathaus: { ru: 'Кёльнская ратуша и археологический квартал MiQua', de: 'Kölner Rathaus und archäologisches Viertel MiQua', ua: 'Кельнська ратуша та археологічний квартал MiQua' }
+      cologneRathaus: { ru: 'Кёльнская ратуша и археологический квартал MiQua', de: 'Kölner Rathaus und archäologisches Viertel MiQua', ua: 'Кельнська ратуша та археологічний квартал MiQua' },
+      roemischGermanischesMuseum: { ru: 'Римско-германский музей', de: 'Römisch-Germanisches Museum', ua: 'Римсько-германський музей' }
     }
   };
 
@@ -112,6 +113,11 @@ const Map = () => {
                           <li>
                             <Link to="/germany/nrw/city/koln/attractions/rathaus-koln">
                               {t.attractions.cologneRathaus[lang]}
+                            </Link>
+                          </li>
+                          <li>
+                            <Link to="/germany/nrw/city/koln/attractions/roemisch-germanisches-museum">
+                              {t.attractions.roemischGermanischesMuseum[lang]}
                             </Link>
                           </li>
                         </ul>
