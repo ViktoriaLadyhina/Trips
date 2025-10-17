@@ -73,15 +73,17 @@ const Attraction = () => {
                     <span className='attraction__desc-construction_period-bold'>{construction_periodTitle[lang]}: </span>
                     <span className='attraction__desc-construction_period-text'>{attraction.construction_period && (attraction.construction_period)}</span>
                 </div>
-                <div className='attraction__desc-architects'>
+                {attraction.architects &&
+                (                <div className='attraction__desc-architects'>
                     <span className='attraction__desc-architects-bold'>{architects[lang]}: </span>
                     <span className='attraction__desc-architects-text'>{attraction.architects && (attraction.architects)}</span>
-                </div>
+                </div>)
+                }
+
 
                 {attraction.tickets_and_entry && (<InfoBlock data={attraction.tickets_and_entry} className="attraction__desc-tickets_and_entry" />)}
                 {attraction.address && (<InfoBlock data={attraction.address} className="attraction__desc-address" />)}
                 {attraction.full_description && (<InfoBlock data={attraction.full_description} className="attraction__desc-full_description" />)}
-                {attraction.theme_zones && (<InfoBlock data={attraction.theme_zones} className="attraction__desc-theme_zones" />)}
                 {attraction.sub_objects && (<InfoBlock data={attraction.sub_objects} className="attraction__desc-sub_objects" />)}
                 {attraction.relics && (<InfoBlock data={attraction.relics} className="attraction__desc-relics" />)}
                 {attraction.hotels && (<InfoBlock data={attraction.hotels} className="attraction__desc-hotels" />)}

@@ -9,7 +9,7 @@ const datas = [
         cityPath: "koln",
         fotoCard: "Germany/nrw/koln/koln-city/koln-cathedral/023.jpg",
         location: "Köln, Deutschland",
-        address: [ {bold: "Adresse:", text: " Domkloster 4, 50667 Köln, Deutschland"} ],
+        address: [{ bold: "Adresse:", text: " Domkloster 4, 50667 Köln, Deutschland" }],
         officialSite: [
             { bold: 'Offizielle Webseite des Kölner Doms', link: 'https://www.koelner-dom.de/' }
         ],
@@ -82,7 +82,7 @@ const datas = [
         cityPath: "bruhl",
         fotoCard: "Germany/nrw/koln/Rhein-Erft-Kreis/bruhl/bruhel_palaces/001.jpg",
         location: "Brühl, Deutschland",
-        address: [ {bold: "Adresse:", text: " Schloss Augustusburg — Max-Ernst-Allee, 50321 Brühl, Deutschland <br>Schloss Falkenlust — An Schloss Falkenlust 1, 50321 Brühl, Deutschland"} ],
+        address: [{ bold: "Adresse:", text: " Schloss Augustusburg — Max-Ernst-Allee, 50321 Brühl, Deutschland <br>Schloss Falkenlust — An Schloss Falkenlust 1, 50321 Brühl, Deutschland" }],
         officialSite: [
             { bold: 'Offizielle Website der Brühler Schlösser', link: 'https://www.schlossbruehl.de/en/' },
         ],
@@ -145,7 +145,7 @@ const datas = [
         cityPath: "bruhl",
         fotoCard: "Germany/nrw/koln/Rhein-Erft-Kreis/bruhl/max_ernst_museum/Max-Ernst-Museum.jpg",
         location: "Brühl, Deutschland",
-        address: [ {bold: "Adresse:", text: " Comesstraße 42 / Max-Ernst-Allee 1, 50321 Brühl, Deutschland"} ],
+        address: [{ bold: "Adresse:", text: " Comesstraße 42 / Max-Ernst-Allee 1, 50321 Brühl, Deutschland" }],
         officialSite: [
             { bold: 'Offizielle Webseite des Max-Ernst-Museums', link: 'https://maxernstmuseum.lvr.de/en/startseite_1.html' }
         ],
@@ -197,7 +197,7 @@ const datas = [
         cityPath: "frechen",
         fotoCard: "Germany/nrw/koln/Rhein-Erft-Kreis/frechen/keramion/frechen_keramion.jpg",
         location: "Frechen, Deutschland",
-        address: [ {bold: "Adresse:", text: " Bonnstraße 12, 50226 Frechen, Deutschland"} ],
+        address: [{ bold: "Adresse:", text: " Bonnstraße 12, 50226 Frechen, Deutschland" }],
         officialSite: [
             { bold: 'Offizielle Website von KERAMION', link: 'https://keramion.de/' }
         ],
@@ -252,7 +252,7 @@ const datas = [
         cityPath: "frechen",
         fotoCard: "Germany/nrw/koln/Rhein-Erft-Kreis/frechen/burg-bachem/Burg-Bachem_3.jpg",
         location: "Frechen, Deutschland",
-        address: [ {bold: "Adresse:", text: " Schloßstraße 8, 50226 Frechen, Deutschland"} ],
+        address: [{ bold: "Adresse:", text: " Schloßstraße 8, 50226 Frechen, Deutschland" }],
         officialSite: [
             { bold: "Offizielle Website Burg Bachem", link: "https://www.burg-bachem.de/" }
         ],
@@ -305,7 +305,7 @@ const datas = [
         cityPath: "bruhl",
         fotoCard: "../../Gallery/Germany/Bruhl/Full/001.jpg",
         location: "Brühl, Deutschland",
-        address: [ {bold: "Adresse:", text: " Berggeiststraße 31–41, 50321 Brühl, Deutschland"} ],
+        address: [{ bold: "Adresse:", text: " Berggeiststraße 31–41, 50321 Brühl, Deutschland" }],
         officialSite: [
             { bold: 'Offizielle Website von Phantasialand', link: 'https://www.phantasialand.de/en/' }
         ],
@@ -345,7 +345,6 @@ const datas = [
                 { bold: "Black Mamba", text: " – invertierte Achterbahn durch den afrikanischen Dschungel" },
             ]
         },
-        theme_zones: [{ bold: "Themenbereiche:", text: ' "Berlin", "Africa", "Mexico", "China Town", "Fantasy", "Mystery"' }],
         construction_period: "1967 – heute",
         founder: "eröffnet 1967, Gründer – Gottlieb Löffelhardt und Richard Schmidt",
         meta: {
@@ -366,7 +365,7 @@ const datas = [
         cityPath: "koln",
         fotoCard: "Germany/nrw/koln/koln-city/rathaus-koeln/Rathaus-Köln.jpg",
         location: "Köln, Deutschland",
-        address: [ {bold: "Adresse Kölner Rathaus:", text: " Rathausplatz 2, 50667 Köln, Deutschland "}, {bold: "<br>Adresse MiQua:", text: " Augustiner Straße 10–12, 50667 Köln, Deutschland "} ],
+        address: [{ bold: "Adresse Kölner Rathaus:", text: " Rathausplatz 2, 50667 Köln, Deutschland " }, { bold: "<br>Adresse MiQua:", text: " Augustiner Straße 10–12, 50667 Köln, Deutschland " }],
         officialSite: [
             { bold: "Offizielle Website", link: "https://www.stadt-koeln.de/", text: ' der Stadt Köln (Rathaus)' },
             { bold: "<br> Projekt MiQua", link: "https://miqua.lvr.de/", text: ' – archäologisches Museum' }
@@ -429,59 +428,167 @@ const datas = [
         }
     },
     {
-    id: "roemisch_germanisches_museum",
-    name: "Römisch-Germanisches Museum",
-    type: ["museum"],
-    path: "roemisch-germanisches-museum",
-    regionsPath: "nrw",
-    districtPath: "city",
-    cityPath: "koln",
-    fotoCard: "Germany/nrw/koln/koln-city/roemisch-germanisches-museum/001.jpg",
-    location: "Köln, Deutschland",
-    officialSite: [
-        { bold: "Offizielle Webseite des Römisch-Germanischen Museums", link: "https://museenkoeln.de/portal/Roemisch-Germanisches-Museum" }
-    ],
-    construction_period: "1974 (gegründet 1946, Renovierung seit 2019)",
-    architects: ["Heinz Röcke, ", "Klaus Renner"],
-    founder: "Archäologischer Dienst Köln (als Reaktion auf die Entdeckung der römischen Villa mit Dionysosmosaik, 1941)",
-    short_description: "Das Römisch-Germanische Museum in Köln bewahrt einzigartige archäologische Funde aus der römischen Zeit. Es wurde direkt über den Ruinen einer antiken Villa mit dem Dionysosmosaik errichtet und bildet eine Brücke zwischen Antike und Moderne. Hier werden Mosaike, Glas, Schmuck und Artefakte präsentiert, die die Geschichte von Köln als antike Kolonie Colonia Claudia Ara Agrippinensium erzählen.",
-    full_description: {
-        title: "Beschreibung und Geschichte",
-        items: [
-            { bold: "Über das Museum.", text: "Das Römisch-Germanische Museum bewahrt umfangreiche archäologische Funde, die die Geschichte Kölns – der römischen Kolonie Colonia Claudia Ara Agrippinensium – erzählen. In der Sammlung finden sich Kunstwerke und Alltagsgegenstände der römischen Zeit: Schmuck, Glasgefäße, Marmorgrabsteine, Keramik und Münzen." },
-            { bold: "Hauptattraktion", text: " – das Dionysosmosaik (Dionysosmosaik), datiert auf ca. 220–230 n. Chr. Es bedeckte den Boden einer römischen Villa, auf deren Ruinen das erste Museumsgebäude errichtet wurde. Neben dem Mosaik kann man hier eine große Sammlung römischen Glases, weiblichen Schmucks und Alltagsgegenständen sehen, die bei archäologischen Ausgrabungen in Köln gefunden wurden." },
-            { bold: "Ausstellung und Bedeutung.", text: "Neben dem Mosaik ist das Museum bekannt für seine Sammlung römischen und germanischen Glases, weiblichen Schmucks, Amphoren, Alltagsgegenstände und Münzen. Es erzählt die Geschichte der Stadt Köln, die zur Zeit des Römischen Reiches Colonia Claudia Ara Agrippinensium hieß. Das Museum erfüllt auch wissenschaftliche und archäologische Funktionen – es beteiligt sich an Ausgrabungen und am Erhalt des antiken Erbes der Region." },
-            { bold: "Museumsgründung.", text: "Das Museum wurde 1946 kurz nach dem Zweiten Weltkrieg gegründet. Anlass für die Gründung war ein Zufallsfund – 1941, während Bauarbeiten am Kölner Dom, entdeckten Archäologen die Ruinen eines römischen Hauses mit dem prächtigen Dionysosmosaik. Um den Fund vor Ort (in situ) zu bewahren, wurde beschlossen, das Museum direkt über diesen Ruinen zu errichten." },
-            { bold: "Gebäude und Architektur.", text: "Das moderne Museumsgebäude am Roncalliplatz 4 wurde von den Architekten Heinz Röcke und Klaus Renner entworfen. Es wurde 1974 eröffnet. Die Architektur ist streng und funktional, im Geist des Modernismus der 1970er Jahre. Klare geometrische Formen und große Panoramafenster unterstreichen den wissenschaftlichen Charakter des Museums und erzeugen den Eindruck ruhiger Monumentalität. Im alten Gebäude war das Mosaik sogar von außen sichtbar – durch ein großes Fenster zur Platzseite am Kölner Dom." },
-            { bold: "Renovierung.", text: "Heute befindet sich das Museumsgebäude in einer umfassenden Renovierung (seit 2019, Fertigstellung geplant für 2027). Die Hauptausstellung ist vorübergehend im Belgischen Haus in der Cäcilienstraße untergebracht. Trotz des Umzugs arbeitet das Museum weiterhin und empfängt Besucher." },
-        ]
+        id: "roemisch_germanisches_museum",
+        name: "Römisch-Germanisches Museum",
+        type: ["museum"],
+        path: "roemisch-germanisches-museum",
+        regionsPath: "nrw",
+        districtPath: "city",
+        cityPath: "koln",
+        fotoCard: "Germany/nrw/koln/koln-city/roemisch-germanisches-museum/001.jpg",
+        location: "Köln, Deutschland",
+        officialSite: [
+            { bold: "Offizielle Webseite des Römisch-Germanischen Museums", link: "https://museenkoeln.de/portal/Roemisch-Germanisches-Museum" }
+        ],
+        construction_period: "1974 (gegründet 1946, Renovierung seit 2019)",
+        architects: ["Heinz Röcke, ", "Klaus Renner"],
+        founder: "Archäologischer Dienst Köln (als Reaktion auf die Entdeckung der römischen Villa mit Dionysosmosaik, 1941)",
+        short_description: "Das Römisch-Germanische Museum in Köln bewahrt einzigartige archäologische Funde aus der römischen Zeit. Es wurde direkt über den Ruinen einer antiken Villa mit dem Dionysosmosaik errichtet und bildet eine Brücke zwischen Antike und Moderne. Hier werden Mosaike, Glas, Schmuck und Artefakte präsentiert, die die Geschichte von Köln als antike Kolonie Colonia Claudia Ara Agrippinensium erzählen.",
+        full_description: {
+            title: "Beschreibung und Geschichte",
+            items: [
+                { bold: "Über das Museum.", text: "Das Römisch-Germanische Museum bewahrt umfangreiche archäologische Funde, die die Geschichte Kölns – der römischen Kolonie Colonia Claudia Ara Agrippinensium – erzählen. In der Sammlung finden sich Kunstwerke und Alltagsgegenstände der römischen Zeit: Schmuck, Glasgefäße, Marmorgrabsteine, Keramik und Münzen." },
+                { bold: "Hauptattraktion", text: " – das Dionysosmosaik (Dionysosmosaik), datiert auf ca. 220–230 n. Chr. Es bedeckte den Boden einer römischen Villa, auf deren Ruinen das erste Museumsgebäude errichtet wurde. Neben dem Mosaik kann man hier eine große Sammlung römischen Glases, weiblichen Schmucks und Alltagsgegenständen sehen, die bei archäologischen Ausgrabungen in Köln gefunden wurden." },
+                { bold: "Ausstellung und Bedeutung.", text: "Neben dem Mosaik ist das Museum bekannt für seine Sammlung römischen und germanischen Glases, weiblichen Schmucks, Amphoren, Alltagsgegenstände und Münzen. Es erzählt die Geschichte der Stadt Köln, die zur Zeit des Römischen Reiches Colonia Claudia Ara Agrippinensium hieß. Das Museum erfüllt auch wissenschaftliche und archäologische Funktionen – es beteiligt sich an Ausgrabungen und am Erhalt des antiken Erbes der Region." },
+                { bold: "Museumsgründung.", text: "Das Museum wurde 1946 kurz nach dem Zweiten Weltkrieg gegründet. Anlass für die Gründung war ein Zufallsfund – 1941, während Bauarbeiten am Kölner Dom, entdeckten Archäologen die Ruinen eines römischen Hauses mit dem prächtigen Dionysosmosaik. Um den Fund vor Ort (in situ) zu bewahren, wurde beschlossen, das Museum direkt über diesen Ruinen zu errichten." },
+                { bold: "Gebäude und Architektur.", text: "Das moderne Museumsgebäude am Roncalliplatz 4 wurde von den Architekten Heinz Röcke und Klaus Renner entworfen. Es wurde 1974 eröffnet. Die Architektur ist streng und funktional, im Geist des Modernismus der 1970er Jahre. Klare geometrische Formen und große Panoramafenster unterstreichen den wissenschaftlichen Charakter des Museums und erzeugen den Eindruck ruhiger Monumentalität. Im alten Gebäude war das Mosaik sogar von außen sichtbar – durch ein großes Fenster zur Platzseite am Kölner Dom." },
+                { bold: "Renovierung.", text: "Heute befindet sich das Museumsgebäude in einer umfassenden Renovierung (seit 2019, Fertigstellung geplant für 2027). Die Hauptausstellung ist vorübergehend im Belgischen Haus in der Cäcilienstraße untergebracht. Trotz des Umzugs arbeitet das Museum weiterhin und empfängt Besucher." },
+            ]
+        },
+        tickets_and_entry: {
+            title: "Praktische Informationen",
+            items: [
+                { bold: "Adresse (temporäre Ausstellung):", text: "Belgisches Haus, Cäcilienstraße 46, 50667 Köln" },
+                { bold: "Altes Gebäude:", text: "Roncalliplatz 4, neben dem Kölner Dom" },
+                { bold: "Öffnungszeiten:", text: "Mittwoch bis Montag, 10:00 – 18:00, Dienstag geschlossen" },
+                { bold: "Eintrittspreise (2025):", text: "Erwachsene – 6 €, ermäßigt – 3 €" },
+            ]
+        },
+        interestingFacts: {
+            title: "Interessante Fakten",
+            items: [
+                { text: "Das Museum wurde nach der zufälligen Entdeckung einer römischen Villa im Jahr 1941 gegründet – direkt unter dem zukünftigen Platz beim Kölner Dom." },
+                { text: "Das Dionysosmosaik gilt als eines der schönsten römischen Mosaike nördlich der Alpen." },
+                { text: "Das erste Museumsgebäude wurde direkt über den Originalruinen errichtet – ein seltenes Beispiel für eine In-situ-Ausstellung." },
+                { text: "Die Sammlung römischen Glases des Museums ist eine der größten der Welt." },
+                { text: "Seit 2019 befindet sich das Museum in Renovierung; die Eröffnung des modernisierten Gebäudes ist für 2027 geplant." }
+            ]
+        },
+        meta: {
+            title: "Römisch-Germanisches Museum in Köln: Antike unter dem Dom",
+            description: "Das Römisch-Germanische Museum ist ein einzigartiges archäologisches Museum in Köln, errichtet über einer römischen Villa. Dionysosmosaik, Glas, Schmuck und Geschichte der Stadt Colonia.",
+            ogTitle: "Römisch-Germanisches Museum Köln — Geschichte und Dionysosmosaik",
+            ogDescription: "Museum der antiken Colonia: Dionysosmosaik, römisches Glas und Archäologie in Köln. Erfahren Sie, wie die Antike unter der modernen Stadt erhalten blieb.",
+            ogImage: "Germany/nrw/koln/koln-city/roemisch-germanisches-museum/001.jpg"
+        }
     },
-    tickets_and_entry: {
-        title: "Praktische Informationen",
-        items: [
-            { bold: "Adresse (temporäre Ausstellung):", text: "Belgisches Haus, Cäcilienstraße 46, 50667 Köln" },
-            { bold: "Altes Gebäude:", text: "Roncalliplatz 4, neben dem Kölner Dom" },
-            { bold: "Öffnungszeiten:", text: "Mittwoch bis Montag, 10:00 – 18:00, Dienstag geschlossen" },
-            { bold: "Eintrittspreise (2025):", text: "Erwachsene – 6 €, ermäßigt – 3 €" },
-        ]
+    {
+        id: "farina_duftmuseum",
+        name: "Duftmuseum im Farina-Haus",
+        type: ["museum"],
+        path: "farina-duftmuseum",
+        regionsPath: "nrw",
+        districtPath: "city",
+        cityPath: "koln",
+        fotoCard: "Germany/nrw/koln/koln-city/farina-duftmuseum/001.jpg",
+        location: "Köln, Deutschland",
+        officialSite: [
+            { "bold": "Offizielle Website des Farina-Museums", "link": "https://farina.org/de/duftmuseum/" }
+        ],
+        construction_period: "1709 (Gründungsjahr der Farina-Fabrik)",
+        founder: "Johann Maria Farina",
+        short_description_de: "Das Duftmuseum im Farina-Haus, auch bekannt als „Haus des Kölnisch Wassers“, ist das älteste Duftmuseum der Welt und die Geburtsstätte des berühmten Eau de Cologne, oder „Kölner Wasser“. Hier schuf Johann Maria Farina 1709 das erste Eau de Cologne, das zu einem Symbol der Stadt wurde und Köln weltberühmt machte.",
+        full_description: {
+            title: "Beschreibung und Geschichte",
+            items: [
+                { "bold": "Über das Museum.", "text": "Das Duftmuseum im Farina-Haus befindet sich im Herzen der Altstadt von Köln, direkt gegenüber dem Rathaus. Es widmet sich der Geschichte der Schaffung und Herstellung des berühmten Eau de Cologne, was wörtlich „Kölner Wasser“ bedeutet. Besucher erfahren hier die dreihundertjährige Geschichte einer der ältesten Parfümfabriken Europas." },
+                { "bold": "Geschichte und Gründer.", "text": "Die Parfümfabrik wurde 1709 vom Italiener Johann Maria Farina gegründet. Er kreierte den weltweit ersten frischen, zitrus-blumigen Duft, den er nach der Stadt, in der er lebte, „Eau de Cologne“ nannte. Dieser Duft wurde schnell zum Symbol von Luxus und Reinheit, eroberte die europäischen Höfe und begründete die weltweite Parfümtradition." },
+                { "bold": "Museums-Ausstellung.", "text": "Das Museum zeigt eine reichhaltige Sammlung, darunter alte Flakons und Duftbehälter, originale Rezepte und Destillationsgeräte für ätherische Öle. In den Räumen sind Möbel und Gemälde des 18. Jahrhunderts zu sehen, sowie Dokumente und Briefe, die die internationalen Kontakte der Familie Farina belegen." },
+                { "bold": "„Duftkammer“.", "text": "Ein besonderer Teil der Ausstellung ist die sogenannte „Duftkammer“, in der Besucher die Parfümherstellung kennenlernen und die Düfte verschiedener Essenzen riechen können. Hier wird erklärt, wie natürliche Zutaten – Bergamotte, Zitrone, Rosmarin und Lavendel – zu raffinierten Duftkompositionen verarbeitet werden." },
+                { "bold": "Fabrik und Kontinuität.", "text": "Die Firma Farina ist bis heute in Betrieb und wird von der achten Generation der Familie geführt. Produkte unter der Marke „Farina Gegenüber“ werden weiterhin nach dem Originalrezept hergestellt und weltweit exportiert." }
+            ]
+        },
+        tickets_and_entry: {
+            title: "Praktische Informationen",
+            items: [
+                { "bold": "Adresse:", "text": "Obenmarspforten 21, 50667 Köln, Deutschland" },
+                { "bold": "Öffnungszeiten:", "text": "täglich von 10:00 bis 18:00 Uhr (Führungen nach Plan)" },
+                { "bold": "Ticketpreise (2025):", "text": "Erwachsene – 8 €, ermäßigt – 5 €, Kinder bis 10 Jahre – kostenlos" },
+                { "bold": "Führungen:", "text": "Das Museum ist nur im Rahmen von Führungen zugänglich, die in mehreren Sprachen angeboten werden. Die Tour dauert ca. 45 Minuten und endet im Museumsshop, wo das originale Eau de Cologne nach Farinas Rezept gekauft werden kann." }
+            ]
+        },
+        interestingFacts: {
+            title: "Interessante Fakten",
+            items: [
+                { "text": "Hier wurde 1709 das weltweit erste Eau de Cologne geschaffen, der Begründer der Kategorie leichter Zitrusdüfte." },
+                { "text": "Der Name „Eau de Cologne“ bedeutet wörtlich „Kölner Wasser“ und entstand dank Farina." },
+                { "text": "Farina wählte einen Duft, der ihn an die Frische eines italienischen Morgens nach dem Regen erinnerte – so beschrieb er seine Kreation." },
+                { "text": "Im Museum sind noch originale Flakons aus dem 18. Jahrhundert und Briefe von Kunden aus europäischen Königshäusern zu sehen." },
+                { "text": "Das Museum liegt gegenüber dem Kölner Rathaus und gilt als das älteste Parfümmuseum der Welt." }
+            ]
+        },
+        meta: {
+            title: "Duftmuseum im Farina-Haus – auch bekannt als Haus des Kölnisch Wassers",
+            description: "Das Duftmuseum im Farina-Haus, auch bekannt als Haus des Kölnisch Wassers, ist das älteste Duftmuseum in Köln und die Geburtsstätte des berühmten Eau de Cologne. Hier schuf Johann Maria Farina 1709 das erste Eau de Cologne.",
+            ogTitle: "Farina-Haus in Köln – Haus des Kölnisch Wassers und Museum des Eau de Cologne",
+            ogDescription: "Besuchen Sie das Duftmuseum im Farina-Haus, das auch als Haus des Kölnisch Wassers bekannt ist – die Heimat des legendären Eau de Cologne. Erleben Sie Geschichte, Düfte und die dreihundertjährige Tradition des Eau de Cologne.",
+            ogImage: "Germany/nrw/koln/koln-city/farina-duftmuseum/001.jpg"
+        }
     },
-    interestingFacts: {
-        title: "Interessante Fakten",
-        items: [
-            { text: "Das Museum wurde nach der zufälligen Entdeckung einer römischen Villa im Jahr 1941 gegründet – direkt unter dem zukünftigen Platz beim Kölner Dom." },
-            { text: "Das Dionysosmosaik gilt als eines der schönsten römischen Mosaike nördlich der Alpen." },
-            { text: "Das erste Museumsgebäude wurde direkt über den Originalruinen errichtet – ein seltenes Beispiel für eine In-situ-Ausstellung." },
-            { text: "Die Sammlung römischen Glases des Museums ist eine der größten der Welt." },
-            { text: "Seit 2019 befindet sich das Museum in Renovierung; die Eröffnung des modernisierten Gebäudes ist für 2027 geplant." }
-        ]
-    },
-    meta: {
-        title: "Römisch-Germanisches Museum in Köln: Antike unter dem Dom",
-        description: "Das Römisch-Germanische Museum ist ein einzigartiges archäologisches Museum in Köln, errichtet über einer römischen Villa. Dionysosmosaik, Glas, Schmuck und Geschichte der Stadt Colonia.",
-        ogTitle: "Römisch-Germanisches Museum Köln — Geschichte und Dionysosmosaik",
-        ogDescription: "Museum der antiken Colonia: Dionysosmosaik, römisches Glas und Archäologie in Köln. Erfahren Sie, wie die Antike unter der modernen Stadt erhalten blieb.",
-        ogImage: "Germany/nrw/koln/koln-city/roemisch-germanisches-museum/001.jpg"
+    {
+        id: "museum_ludwig",
+        name: "Museum Ludwig",
+        type: ["museum"],
+        path: "museum-ludwig",
+        regionsPath: "nrw",
+        districtPath: "city",
+        cityPath: "koln",
+        fotoCard: "Germany/nrw/koln/koln-city/museum-ludwig/001.jpg",
+        location: "Köln, Deutschland",
+        officialSite: [
+            { bold: "Offizielle Website des Museum Ludwig", link: "https://www.museum-ludwig.de" }
+        ],
+        construction_period: "1986",
+        founder: "Peter und Irene Ludwig",
+        architects: ["Peter Busmann, ", "Gottfried Haberer"],
+        short_description: "Das Museum Ludwig in Köln ist eine der führenden Sammlungen zeitgenössischer Kunst weltweit, gegründet auf der Sammlung des deutschen Industriellen Peter Ludwig und seiner Frau Irene.",
+        full_description: {
+            title: "Beschreibung und Geschichte",
+            items: [
+                { bold: "Architektur und Geschichte des Museums", text: "Am 5. Februar 1976 unterzeichneten Peter und Irene Ludwig sowie die Stadt Köln einen Schenkungsvertrag zur Gründung des Museum Ludwig. Der Vertrag sah vor, dass das Ehepaar 350 Werke moderner Kunst spendete und die Stadt Köln im Gegenzug ein eigenständiges 'Museum Ludwig' für diese Werke nach 1900 errichtete." },
+                { text: "1986 wurde das neue Museumsgebäude eröffnet, entworfen von den Architekten Peter Busmann und Gottfried Haberer. Das Gebäude befindet sich zwischen dem Kölner Dom und dem Hauptbahnhof und war ursprünglich für zwei Museen vorgesehen: das Museum Ludwig und das Wallraf-Richartz-Museum." },
+                { text: "1994 wurde die Sammlung Picasso dem Museum übergeben." },
+                { text: "Im Jahr 2001, nach der Trennung der beiden Museen, wurde das Gebäude umgebaut und ist nun vollständig dem Museum Ludwig gewidmet. Die Innenrenovierungen, einschließlich zusätzlicher Treppen und verbesserter Zugänge zu den Ausstellungen, wurden 2003–2004 vom Architekturbüro Busmann + Haberer durchgeführt." },
+                { bold: "<br>Sammlungen:", text: "Das Museum Ludwig in Köln präsentiert eine der größten und vielfältigsten Sammlungen zeitgenössischer Kunst in Europa. Hier sind Werke bedeutender Künstler des 20. und 21. Jahrhunderts zu sehen, die verschiedene Richtungen von Expressionismus und russischem Avantgarde bis Surrealismus, Pop-Art und Fotografie abdecken. Unter den reichhaltigen Sammlungen des Museums sind besonders bemerkenswert die folgenden Sammlungen:" },
+                { bold: "Picasso-Sammlung", text: " – Das Museum besitzt die drittgrößte Sammlung von Werken Pablo Picassos weltweit, mit etwa 900 Werken, darunter Keramik, Skulpturen und Grafiken. Die Sammlung deckt alle kreativen Perioden des Künstlers ab, einschließlich drei großer Zyklen von Drucken." },
+                { bold: "Fotografie-Sammlung", text: " – Das Museum verfügt über eine der größten Fotosammlungen der Welt mit etwa 70.000 Werken vom 19. Jahrhundert bis heute. Ein Teil dieser Sammlung wird in der speziellen Abteilung „Agfa Foto-Historama“ zur Geschichte der Fotografie präsentiert." },
+                { bold: "Russische Avantgarde-Sammlung", text: " – Das Museum bewahrt eine der bedeutendsten Sammlungen der russischen Avantgarde außerhalb Russlands. Sie umfasst etwa 600 Werke von Künstlern wie Kasimir Malewitsch, Ljubow Popowa, Natalja Gontscharowa, Michail Larionow und Alexander Rodtschenko aus der Zeit von 1905 bis 1935." },
+                { bold: "Pop-Art-Sammlung", text: " – Das Museum besitzt eine der größten Pop-Art-Sammlungen Europas, darunter Werke von Andy Warhol, Roy Lichtenstein, James Rosenquist und Robert Rauschenberg." }
+            ]
+        },
+        tickets_and_entry: {
+            title: "Praktische Informationen",
+            items: [
+                { bold: "Adresse:", text: "Bischofsgartenstr. 1, 50667 Köln, Deutschland" },
+                { bold: "Öffnungszeiten:", text: "Dienstag–Sonntag, 10:00–18:00; jeden ersten Freitag im Monat 10:00–22:00" },
+                { bold: "Eintrittspreise (2025):", text: "Erwachsene: 12 €. Ermäßigt: 8 € (für Studierende, Schüler, Rentner). Kinder bis 18 Jahre: frei. Gruppen (ab 20 Personen): 8,70 € pro Person" }
+            ]
+        },
+        interestingFacts: {
+            title: "Interessante Fakten",
+            items: [
+                { text: "Das Museum Ludwig ist eine der führenden Sammlungen zeitgenössischer Kunst weltweit." },
+                { text: "Die Sammlung des Museums umfasst über 700 Werke von Pablo Picasso." },
+                { text: "In einem separaten Bereich des Museums befindet sich die Sammlung „Agfa Historama“, die der Geschichte der Fotografie gewidmet ist." }
+            ]
+        },
+        meta: {
+            title: "Museum Ludwig — Zeitgenössische Kunst in Köln",
+            description: "Das Museum Ludwig in Köln ist eine der führenden Sammlungen zeitgenössischer Kunst weltweit, gegründet auf der Sammlung des deutschen Industriellen Peter Ludwig und seiner Frau Irene.",
+            ogTitle: "Museum Ludwig — Zeitgenössische Kunst in Köln",
+            ogDescription: "Besuchen Sie das Museum Ludwig in Köln, eine der führenden Sammlungen zeitgenössischer Kunst weltweit, gegründet auf der Sammlung des deutschen Industriellen Peter Ludwig und seiner Frau Irene.",
+            ogImage: "Germany/nrw/koln/koln-city/museum-ludwig/001.jpg"
+        }
     }
-}
 ];
 export default datas;

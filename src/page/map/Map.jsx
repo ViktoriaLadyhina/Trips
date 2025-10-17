@@ -13,7 +13,8 @@ const Map = () => {
       ukraine: { ru: 'Украина', de: 'Ukraine', ua: 'Україна' }
     },
     regions: {
-      nrw: { ru: 'Северный Рейн-Вестфалия', de: 'Nordrhein-Westfalen', ua: 'Північний Рейн-Вестфалія' }
+      nrw: { ru: 'Северный Рейн-Вестфалия', de: 'Nordrhein-Westfalen', ua: 'Північний Рейн-Вестфалія' },
+      sumska: { ru: 'Сумская область', de: 'Sumska Oblast', ua: 'Сумська область' }
     },
     districts: {
       arnsberg: { ru: 'Административный округ Арнсберг', de: 'Regierungsbezirk Arnsberg', ua: 'Адміністративний округ Арнсберг' },
@@ -32,7 +33,9 @@ const Map = () => {
       keramion: { ru: 'KERAMION – Центр современной и исторической керамики', de: 'KERAMION – Zentrum für moderne und historische Keramik', ua: 'KERAMION – Центр сучасної та історичної кераміки' },
       cologneCathedral: { ru: 'Кёльнский собор', de: 'Kölner Dom', ua: 'Кельнський собор' },
       cologneRathaus: { ru: 'Кёльнская ратуша и археологический квартал MiQua', de: 'Kölner Rathaus und archäologisches Viertel MiQua', ua: 'Кельнська ратуша та археологічний квартал MiQua' },
-      roemischGermanischesMuseum: { ru: 'Римско-германский музей', de: 'Römisch-Germanisches Museum', ua: 'Римсько-германський музей' }
+      roemischGermanischesMuseum: { ru: 'Римско-германский музей', de: 'Römisch-Germanisches Museum', ua: 'Римсько-германський музей' },
+      farinaDuftmuseum: { ru: 'Музей духов в доме Фарина', de: 'Duftmuseum im Farina-Haus', ua: 'Музей парфумів у домі Фаріна' },
+      museumLudwig: { ru: 'Музей Людвига', de: 'Museum Ludwig', ua: 'Музей Людвіга' },
     }
   };
 
@@ -42,7 +45,7 @@ const Map = () => {
       label: lang === 'ru' ? 'Главная' : lang === 'de' ? 'Startseite' : 'Головна',
       path: '/'
     },
-    { label: 'Карта' }
+    { label: lang === 'ru' ? 'Карта сайта' : lang === 'de' ? 'Sitemap' : 'Мапа сайту' }
   ];
 
   return (
@@ -50,76 +53,37 @@ const Map = () => {
       <BreadCrumbs crumbs={crumbs} />
       <div className='map__pages'>
         <ul>
-          <li>
-            <Link to="/germany">{t.countries.germany[lang]}</Link>
+          <li><Link to="/germany">{t.countries.germany[lang]}</Link>
             <ul>
-              <li>
-                <Link to="/germany/nrw">{t.regions.nrw[lang]}</Link>
+              <li><Link to="/germany/nrw">{t.regions.nrw[lang]}</Link>
                 <ul>
-                  <li>
-                    <Link to="/germany/nrw/arnsberg">{t.districts.arnsberg[lang]}</Link>
-                  </li>
-                  <li>
-                    <Link to="/germany/nrw/koln">{t.districts.koln[lang]}</Link>
+                  <li><Link to="/germany/nrw/arnsberg">{t.districts.arnsberg[lang]}</Link></li>
+                  <li><Link to="/germany/nrw/koln">{t.districts.koln[lang]}</Link>
                     <ul>
-                      <li>
-                        <span>Рейн-Эрфт</span>
+                      <li><span>Рейн-Эрфт</span>
                         <ul>
-                          <li>
-                            <Link to="/germany/nrw/koln/bruhl">{t.cities.bruhl[lang]}</Link>
+                          <li><Link to="/germany/nrw/koln/bruhl">{t.cities.bruhl[lang]}</Link>
                             <ul>
-                              <li>
-                                <Link to="/germany/nrw/koln/bruhl/attractions/bruhl-palaces">
-                                  {t.attractions.bruhlPalaces[lang]}
-                                </Link>
-                              </li>
-                              <li>
-                                <Link to="/germany/nrw/koln/bruhl/attractions/max-ernst-museum">
-                                  {t.attractions.maxErnst[lang]}
-                                </Link>
-                              </li>
-                              <li>
-                                <Link to="/germany/nrw/koln/bruhl/attractions/phantasialand">
-                                  {t.attractions.phantasialand[lang]}
-                                </Link>
-                              </li>
+                              <li><Link to="/germany/nrw/koln/bruhl/attractions/bruhl-palaces">{t.attractions.bruhlPalaces[lang]}</Link></li>
+                              <li><Link to="/germany/nrw/koln/bruhl/attractions/max-ernst-museum">{t.attractions.maxErnst[lang]}</Link></li>
+                              <li><Link to="/germany/nrw/koln/bruhl/attractions/phantasialand">{t.attractions.phantasialand[lang]}</Link></li>
                             </ul>
                           </li>
-                          <li>
-                            <Link to="/germany/nrw/koln/frechen">{t.cities.frechen[lang]}</Link>
+                          <li><Link to="/germany/nrw/koln/frechen">{t.cities.frechen[lang]}</Link>
                             <ul>
-                              <li>
-                                <Link to="/germany/nrw/koln/frechen/attractions/burg-bachem">
-                                  {t.attractions.burgBachem[lang]}
-                                </Link>
-                              </li>
-                              <li>
-                                <Link to="/germany/nrw/koln/frechen/attractions/keramion">
-                                  {t.attractions.keramion[lang]}
-                                </Link>
-                              </li>
+                              <li><Link to="/germany/nrw/koln/frechen/attractions/burg-bachem">{t.attractions.burgBachem[lang]}</Link></li>
+                              <li><Link to="/germany/nrw/koln/frechen/attractions/keramion">{t.attractions.keramion[lang]}</Link></li>
                             </ul>
                           </li>
                         </ul>
                       </li>
-                      <li>
-                        <Link to="/germany/nrw/city/koln">{t.cities.koln[lang]}</Link>
-                        <ul>
-                          <li>
-                            <Link to="/germany/nrw/city/koln/attractions/cologne-cathedral">
-                              {t.attractions.cologneCathedral[lang]}
-                            </Link>
-                          </li>
-                          <li>
-                            <Link to="/germany/nrw/city/koln/attractions/rathaus-koln">
-                              {t.attractions.cologneRathaus[lang]}
-                            </Link>
-                          </li>
-                          <li>
-                            <Link to="/germany/nrw/city/koln/attractions/roemisch-germanisches-museum">
-                              {t.attractions.roemischGermanischesMuseum[lang]}
-                            </Link>
-                          </li>
+                      <li><Link to="/germany/nrw/city/koln">{t.cities.koln[lang]}</Link>
+                         <ul>
+                          <li><Link to="/germany/nrw/city/koln/attractions/cologne-cathedral">{t.attractions.cologneCathedral[lang]}</Link></li>
+                          <li><Link to="/germany/nrw/city/koln/attractions/rathaus-koln">{t.attractions.cologneRathaus[lang]}</Link></li>
+                          <li><Link to="/germany/nrw/city/koln/attractions/roemisch-germanisches-museum">{t.attractions.roemischGermanischesMuseum[lang]}</Link></li>
+                          <li><Link to="/germany/nrw/city/koln/attractions/farina-duftmuseum">{t.attractions.farinaDuftmuseum[lang]}</Link></li>
+                          <li><Link to="/germany/nrw/city/koln/attractions/museum-ludwig">{t.attractions.museumLudwig[lang]}</Link></li>
                         </ul>
                       </li>
                     </ul>
@@ -132,9 +96,7 @@ const Map = () => {
           <li>
             <Link to="/ukraine">{t.countries.ukraine[lang]}</Link>
             <ul>
-              <li>
-                <Link to="/ukraine/sumska">{lang === 'ru' ? 'Сумская область' : lang === 'de' ? 'Sumska Oblast' : 'Сумська область'}</Link>
-              </li>
+              <li><Link to="/ukraine/sumska">{t.regions.sumska[lang]}</Link></li>
             </ul>
           </li>
         </ul>

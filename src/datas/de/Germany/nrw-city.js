@@ -215,10 +215,11 @@ const datas = [
             title: 'Geschichte',
             items: [
                 { text: 'Frechen wurde erstmals im Jahr 877 urkundlich erwähnt und ist damit einer der ältesten Orte der Region.' },
+                { text: 'Im Mittelalter, im Jahr 1257, fand in Frechen eine Schlacht zwischen Konrad von Hochstaden (Erzbischof von Köln) und den Bewohnern der Stadt statt. Dies zeigt, dass Frechen schon damals ein wichtiger Ort mit politischer und strategischer Bedeutung war.' },
                 { text: 'Seit dem 16. Jahrhundert ist die Stadt für ihre Töpferproduktion bekannt – insbesondere für die Herstellung der „Bartmannskrüge“, die in ganz Europa exportiert wurden.' },
                 { text: 'Im 18. und 19. Jahrhundert begann der Braunkohleabbau in der Umgebung, wodurch Frechen zu einem industriellen Zentrum wurde.' },
                 { text: 'Nach dem Zweiten Weltkrieg entwickelte sich Frechen zu einem wichtigen Industrie- und Wohnvorort von Köln.' },
-                { text: 'Am 2. September 1951 erhielt Frechen das Stadtrecht.' },
+                { text: 'Am 2. September 1951 erhielt Frechen das offizielle Stadtrecht, woraufhin die Dörfer Bachem, Hücheln und Buschbell eingemeindet wurden.' },
                 { text: 'Im Jahr 1975 wurden im Zuge der kommunalen Neugliederung die Ortsteile Grefrath, Habbelrath, Königsdorf und Neufreimersdorf eingemeindet.' },
                 { text: 'Heute ist Frechen eine moderne Stadt mit historischem Stadtkern, Keramikmuseum und guter Infrastruktur – ein beliebter Wohnort für Kölner.' }
             ]

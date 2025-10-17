@@ -34,7 +34,6 @@
     &__tourism,
     &__cuisine,
     &__entry,
-    &__history,
     &__symbols,
     &__holidays {
         text-align: justify;
@@ -58,11 +57,25 @@
             display: flex;
             align-items: flex-start;
             gap: 5px;
-            margin-bottom: 5px;
+            margin-bottom: 10px;
         }
 
         img {
             max-width: 250px;
+        }
+    }
+
+    &__history {
+        text-align: justify;
+
+        &-title {
+            @include h3();
+            padding: 20px;
+            text-align: center;
+        }
+
+        &_-text {
+            @include body-text;
         }
     }
 
