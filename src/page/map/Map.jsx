@@ -34,7 +34,8 @@ const Map = () => {
       cologneCathedral: { ru: 'Кёльнский собор', de: 'Kölner Dom', ua: 'Кельнський собор' },
       cologneRathaus: { ru: 'Кёльнская ратуша и археологический квартал MiQua', de: 'Kölner Rathaus und archäologisches Viertel MiQua', ua: 'Кельнська ратуша та археологічний квартал MiQua' },
       roemischGermanischesMuseum: { ru: 'Римско-германский музей', de: 'Römisch-Germanisches Museum', ua: 'Римсько-германський музей' },
-      farinaDuftmuseum: { ru: 'Музей духов в доме Фарина', de: 'Duftmuseum im Farina-Haus', ua: 'Музей парфумів у домі Фаріна' }
+      farinaDuftmuseum: { ru: 'Музей духов в доме Фарина', de: 'Duftmuseum im Farina-Haus', ua: 'Музей парфумів у домі Фаріна' },
+      museumLudwig: { ru: 'Музей Людвига', de: 'Museum Ludwig', ua: 'Музей Людвіга' },
     }
   };
 
@@ -82,6 +83,7 @@ const Map = () => {
                           <li><Link to="/germany/nrw/city/koln/attractions/rathaus-koln">{t.attractions.cologneRathaus[lang]}</Link></li>
                           <li><Link to="/germany/nrw/city/koln/attractions/roemisch-germanisches-museum">{t.attractions.roemischGermanischesMuseum[lang]}</Link></li>
                           <li><Link to="/germany/nrw/city/koln/attractions/farina-duftmuseum">{t.attractions.farinaDuftmuseum[lang]}</Link></li>
+                          <li><Link to="/germany/nrw/city/koln/attractions/museum-ludwig">{t.attractions.museumLudwig[lang]}</Link></li>
                         </ul>
                       </li>
                     </ul>

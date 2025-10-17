@@ -60,7 +60,6 @@ const Home = () => {
       <p className="home__desc">{homeData?.description_6}</p>
       <p className="home__desc">{homeData?.description_7}</p>
       <p className="home__desc2">{homeData?.description_8}</p>
-      <h3 className="home__section">{homeData?.subtitle_3}</h3>
     </div>
   )
 }

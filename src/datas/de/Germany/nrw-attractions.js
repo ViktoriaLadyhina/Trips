@@ -534,6 +534,61 @@ const datas = [
             ogDescription: "Besuchen Sie das Duftmuseum im Farina-Haus, das auch als Haus des Kölnisch Wassers bekannt ist – die Heimat des legendären Eau de Cologne. Erleben Sie Geschichte, Düfte und die dreihundertjährige Tradition des Eau de Cologne.",
             ogImage: "Germany/nrw/koln/koln-city/farina-duftmuseum/001.jpg"
         }
+    },
+    {
+        id: "museum_ludwig",
+        name: "Museum Ludwig",
+        type: ["museum"],
+        path: "museum-ludwig",
+        regionsPath: "nrw",
+        districtPath: "city",
+        cityPath: "koln",
+        fotoCard: "Germany/nrw/koln/koln-city/museum-ludwig/001.jpg",
+        location: "Köln, Deutschland",
+        officialSite: [
+            { bold: "Offizielle Website des Museum Ludwig", link: "https://www.museum-ludwig.de" }
+        ],
+        construction_period: "1986",
+        founder: "Peter und Irene Ludwig",
+        architects: ["Peter Busmann, ", "Gottfried Haberer"],
+        short_description: "Das Museum Ludwig in Köln ist eine der führenden Sammlungen zeitgenössischer Kunst weltweit, gegründet auf der Sammlung des deutschen Industriellen Peter Ludwig und seiner Frau Irene.",
+        full_description: {
+            title: "Beschreibung und Geschichte",
+            items: [
+                { bold: "Architektur und Geschichte des Museums", text: "Am 5. Februar 1976 unterzeichneten Peter und Irene Ludwig sowie die Stadt Köln einen Schenkungsvertrag zur Gründung des Museum Ludwig. Der Vertrag sah vor, dass das Ehepaar 350 Werke moderner Kunst spendete und die Stadt Köln im Gegenzug ein eigenständiges 'Museum Ludwig' für diese Werke nach 1900 errichtete." },
+                { text: "1986 wurde das neue Museumsgebäude eröffnet, entworfen von den Architekten Peter Busmann und Gottfried Haberer. Das Gebäude befindet sich zwischen dem Kölner Dom und dem Hauptbahnhof und war ursprünglich für zwei Museen vorgesehen: das Museum Ludwig und das Wallraf-Richartz-Museum." },
+                { text: "1994 wurde die Sammlung Picasso dem Museum übergeben." },
+                { text: "Im Jahr 2001, nach der Trennung der beiden Museen, wurde das Gebäude umgebaut und ist nun vollständig dem Museum Ludwig gewidmet. Die Innenrenovierungen, einschließlich zusätzlicher Treppen und verbesserter Zugänge zu den Ausstellungen, wurden 2003–2004 vom Architekturbüro Busmann + Haberer durchgeführt." },
+                { bold: "<br>Sammlungen:", text: "Das Museum Ludwig in Köln präsentiert eine der größten und vielfältigsten Sammlungen zeitgenössischer Kunst in Europa. Hier sind Werke bedeutender Künstler des 20. und 21. Jahrhunderts zu sehen, die verschiedene Richtungen von Expressionismus und russischem Avantgarde bis Surrealismus, Pop-Art und Fotografie abdecken. Unter den reichhaltigen Sammlungen des Museums sind besonders bemerkenswert die folgenden Sammlungen:" },
+                { bold: "Picasso-Sammlung", text: " – Das Museum besitzt die drittgrößte Sammlung von Werken Pablo Picassos weltweit, mit etwa 900 Werken, darunter Keramik, Skulpturen und Grafiken. Die Sammlung deckt alle kreativen Perioden des Künstlers ab, einschließlich drei großer Zyklen von Drucken." },
+                { bold: "Fotografie-Sammlung", text: " – Das Museum verfügt über eine der größten Fotosammlungen der Welt mit etwa 70.000 Werken vom 19. Jahrhundert bis heute. Ein Teil dieser Sammlung wird in der speziellen Abteilung „Agfa Foto-Historama“ zur Geschichte der Fotografie präsentiert." },
+                { bold: "Russische Avantgarde-Sammlung", text: " – Das Museum bewahrt eine der bedeutendsten Sammlungen der russischen Avantgarde außerhalb Russlands. Sie umfasst etwa 600 Werke von Künstlern wie Kasimir Malewitsch, Ljubow Popowa, Natalja Gontscharowa, Michail Larionow und Alexander Rodtschenko aus der Zeit von 1905 bis 1935." },
+                { bold: "Pop-Art-Sammlung", text: " – Das Museum besitzt eine der größten Pop-Art-Sammlungen Europas, darunter Werke von Andy Warhol, Roy Lichtenstein, James Rosenquist und Robert Rauschenberg." }
+            ]
+        },
+        tickets_and_entry: {
+            title: "Praktische Informationen",
+            items: [
+                { bold: "Adresse:", text: "Bischofsgartenstr. 1, 50667 Köln, Deutschland" },
+                { bold: "Öffnungszeiten:", text: "Dienstag–Sonntag, 10:00–18:00; jeden ersten Freitag im Monat 10:00–22:00" },
+                { bold: "Eintrittspreise (2025):", text: "Erwachsene: 12 €. Ermäßigt: 8 € (für Studierende, Schüler, Rentner). Kinder bis 18 Jahre: frei. Gruppen (ab 20 Personen): 8,70 € pro Person" }
+            ]
+        },
+        interestingFacts: {
+            title: "Interessante Fakten",
+            items: [
+                { text: "Das Museum Ludwig ist eine der führenden Sammlungen zeitgenössischer Kunst weltweit." },
+                { text: "Die Sammlung des Museums umfasst über 700 Werke von Pablo Picasso." },
+                { text: "In einem separaten Bereich des Museums befindet sich die Sammlung „Agfa Historama“, die der Geschichte der Fotografie gewidmet ist." }
+            ]
+        },
+        meta: {
+            title: "Museum Ludwig — Zeitgenössische Kunst in Köln",
+            description: "Das Museum Ludwig in Köln ist eine der führenden Sammlungen zeitgenössischer Kunst weltweit, gegründet auf der Sammlung des deutschen Industriellen Peter Ludwig und seiner Frau Irene.",
+            ogTitle: "Museum Ludwig — Zeitgenössische Kunst in Köln",
+            ogDescription: "Besuchen Sie das Museum Ludwig in Köln, eine der führenden Sammlungen zeitgenössischer Kunst weltweit, gegründet auf der Sammlung des deutschen Industriellen Peter Ludwig und seiner Frau Irene.",
+            ogImage: "Germany/nrw/koln/koln-city/museum-ludwig/001.jpg"
+        }
     }
 ];
 export default datas;

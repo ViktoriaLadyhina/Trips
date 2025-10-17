@@ -31,6 +31,9 @@ export const Fotos = {
       'farina-duftmuseum': [
         { path: "Germany/nrw/koln/koln-city/farina-duftmuseum/001.jpg", title: { ru: "Музей духов в доме Фарина (фото взято с википедии)", ua: "Музей парфумів у домі Фаріна (фото взято з Вікіпедії)", de: "Duftmuseum im Farina-Haus (Foto von Wikipedia entnommen)" } }
       ],
+      'museum-ludwig': [
+        { path: "Germany/nrw/koln/koln-city/museum-ludwig/001.jpg", title: { ru: "Музей Людвига (фото взято с википедии)", ua: "Музей Людвіга (фото взято з Вікіпедії)", de: "Museum Ludwig (Foto von Wikipedia entnommen)" } }
+      ],
     },
     bruhl: {
       'phantasialand': [
