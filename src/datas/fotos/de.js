@@ -20,19 +20,40 @@ export const Fotos = {
         { path: "Germany/nrw/koln/koln-city/rathaus-koeln/Rathaus-Köln.jpg", title: { ru: "Кёльнская ратуша (фото взято с википедии)", ua: "Кельнська ратуша (фото взято з Вікіпедії)", de: "Kölner Rathaus (Foto von Wikipedia entnommen)" } }
       ],
       'cologne-cathedral': [
-        { path: "Germany/nrw/koln/koln-city/koln-cathedral/023.jpg", title: { ru: "Кёльнский собор (фото взято с Интернета)", ua: "Кельнський собор (фото взято з Інтернету)", de: "Kölner Dom (Foto aus dem Internet)" } },
-        { path: "Germany/nrw/koln/koln-city/koln-cathedral/027.jpg", title: { ru: "Кёльнский собор. Портал Святого Петра", ua: "Кельнський собор. Портал Святого Петра", de: "Kölner Dom. Portal des Heiligen Petrus" } },
-        { path: "Germany/nrw/koln/koln-city/koln-cathedral/026.jpg", title: { ru: "Кёльнский собор. Распятие Геро", ua: "Кельнський собор. Розп’яття Геро", de: "Kölner Dom. Gero-Kreuz" } },
-        { path: "Germany/nrw/koln/koln-city/koln-cathedral/024.jpg", title: { ru: "Кёльнский собор. Ларь с мощами трёх волхвов", ua: "Кельнський собор. Лар з мощами трьох волхвів", de: "Kölner Dom. Schrein der Heiligen Drei Könige" } },
+        { path: "Germany/nrw/koln/koln-city/koln-cathedral/001.jpg", title: { ru: "Кёльнский собор - 2025", ua: "Кельнський собор - 2025", de: "Kölner Dom - 2025" } },
+
+        { path: "Germany/nrw/koln/koln-city/koln-cathedral/022.jpg", title: { ru: "Кёльнский собор. Реликвии", ua: "Кельнський собор. Реліквії", de: "Kölner Dom. Reliquien" } },
+        { path: "Germany/nrw/koln/koln-city/koln-cathedral/027.jpg", title: { ru: "Кёльнский собор. Реликвии - 1. Портал Святого Петра - 2025", ua: "Кельнський собор. Реліквії - 1. Портал Святого Петра - 2025", de: "Kölner Dom. Reliquien - 1. Portal des Heiligen Petrus - 2025" } },
+        { path: "Germany/nrw/koln/koln-city/koln-cathedral/026.jpg", title: { ru: "Кёльнский собор. Реликвии - 4. Распятие Геро", ua: "Кельнський собор. Реліквії - 4. Розп’яття Геро", de: "Kölner Dom. Reliquien - 4. Gero-Kreuz" } },
+        { path: "Germany/nrw/koln/koln-city/koln-cathedral/024.jpg", title: { ru: "Кёльнский собор. Реликвии - 6. Ларь с мощами трёх волхвов (фото взято с википедии)", ua: "Кельнський собор. Реліквії - 6. Лар з мощами трьох волхвів (фото взято з Вікіпедії)", de: "Kölner Dom. Reliquien - 6. Schrein der Heiligen Drei Könige (Foto von Wikipedia entnommen)" } },
+        { path: "Germany/nrw/koln/koln-city/koln-cathedral/010.jpg", title: { ru: "Кёльнский собор. Реликвии - 7. Хоры - 2025", ua: "Кельнський собор. Реліквії - 7. Хори - 2025", de: "Kölner Dom. Reliquien - 7. Chöre - 2025" } },
+        { path: "Germany/nrw/koln/koln-city/koln-cathedral/013.jpg", title: { ru: "Кёльнский собор. Реликвии - 10. Триптих Стефана Лохнера - 2025", ua: "Кельнський собор. Реліквії - 10. Триптих Стефана Лохнера - 2025", de: "Kölner Dom. Reliquien - 10. Stephan Lochner Triptychon - 2025" } },
+        { path: "Germany/nrw/koln/koln-city/koln-cathedral/021.jpg", title: { ru: "Кёльнский собор. Миланская Мадонна (фото взято с интернета)", ua: "Кельнський собор. Міланська Мадонна (фото взято з Інтернету)", de: "Kölner Dom. Mailänder Madonna (Foto aus dem Internet)" } },
+
+        { path: "Germany/nrw/koln/koln-city/koln-cathedral/011.jpg", title: { ru: "Кёльнский собор. Антверпенский ретабло: алтарь Агилольфа шириной 6,80 метра (1520 г.) - 2025", ua: "Кельнський собор. Антверпенський ретабль: вівтар Агілольфа завширшки 6,80 метра (1520) - 2025", de: "Kölner Dom. Antwerpener Retabel: Der 6,80 Meter breite Agilolphusaltar (1520) - 2025" } },
+        { path: "Germany/nrw/koln/koln-city/koln-cathedral/012.jpg", title: { ru: "Кёльнский собор - 2025", ua: "Кельнський собор - 2025", de: "Kölner Dom - 2025" } },
+        { path: "Germany/nrw/koln/koln-city/koln-cathedral/014.jpg", title: { ru: "Кёльнский собор - 2025", ua: "Кельнський собор - 2025", de: "Kölner Dom - 2025" } },
+        { path: "Germany/nrw/koln/koln-city/koln-cathedral/015.jpg", title: { ru: "Кёльнский собор - 2025", ua: "Кельнський собор - 2025", de: "Kölner Dom - 2025" } },
+        { path: "Germany/nrw/koln/koln-city/koln-cathedral/016.jpg", title: { ru: "Кёльнский собор - 2025", ua: "Кельнський собор - 2025", de: "Kölner Dom - 2025" } },
+        { path: "Germany/nrw/koln/koln-city/koln-cathedral/017.jpg", title: { ru: "Кёльнский собор - 2025", ua: "Кельнський собор - 2025", de: "Kölner Dom - 2025" } },
+        { path: "Germany/nrw/koln/koln-city/koln-cathedral/018.jpg", title: { ru: "Кёльнский собор - 2025", ua: "Кельнський собор - 2025", de: "Kölner Dom - 2025" } },
+        { path: "Germany/nrw/koln/koln-city/koln-cathedral/019.jpg", title: { ru: "Кёльнский собор. Святилище Агилольфа - 2025", ua: "Кельнський собор. Святилище Агілолфуса - 2025", de: "Kölner Dom. Agilolphusschrein - 2025" } },
+        { path: "Germany/nrw/koln/koln-city/koln-cathedral/020.jpg", title: { ru: "Кёльнский собор - 2025", ua: "Кельнський собор - 2025", de: "Kölner Dom - 2025" } },
+
+        { path: "Germany/nrw/koln/koln-city/koln-cathedral/002.jpg", title: { ru: "Кёльнский собор - 2025", ua: "Кельнський собор - 2025", de: "Kölner Dom - 2025" } },
+        { path: "Germany/nrw/koln/koln-city/koln-cathedral/003.jpg", title: { ru: "Кёльнский собор - 2025", ua: "Кельнський собор - 2025", de: "Kölner Dom - 2025" } },
+        { path: "Germany/nrw/koln/koln-city/koln-cathedral/004.jpg", title: { ru: "Кёльнский собор - 2025", ua: "Кельнський собор - 2025", de: "Kölner Dom - 2025" } },
+        { path: "Germany/nrw/koln/koln-city/koln-cathedral/005.jpg", title: { ru: "Кёльнский собор - 2025", ua: "Кельнський собор - 2025", de: "Kölner Dom - 2025" } },
       ],
       'roemisch-germanisches-museum': [
-        { path: "Germany/nrw/koln/koln-city/roemisch-germanisches-museum/001.jpg", title: { ru: "Римско-германский музей (фото взято с википедии)", ua: "Римсько-германський музей (фото взято з Вікіпедії)", de: "Römisch-Germanisches Museum (Foto von Wikipedia entnommen)" } }
+        { path: "Germany/nrw/koln/koln-city/roemisch-germanisches-museum/001.jpg", title: { ru: "Римско-германский музей - 2025", ua: "Римсько-германський музей - 2025", de: "Römisch-Germanisches Museum - 2025" } }
       ],
       'farina-duftmuseum': [
-        { path: "Germany/nrw/koln/koln-city/farina-duftmuseum/001.jpg", title: { ru: "Музей духов в доме Фарина (фото взято с википедии)", ua: "Музей парфумів у домі Фаріна (фото взято з Вікіпедії)", de: "Duftmuseum im Farina-Haus (Foto von Wikipedia entnommen)" } }
+        { path: "Germany/nrw/koln/koln-city/farina-duftmuseum/001.jpg", title: { ru: "Музей духов в доме Фарина - 2025", ua: "Музей парфумів у домі Фаріна - 2025", de: "Duftmuseum im Farina-Haus - 2025" } }
       ],
       'museum-ludwig': [
-        { path: "Germany/nrw/koln/koln-city/museum-ludwig/001.jpg", title: { ru: "Музей Людвига (фото взято с википедии)", ua: "Музей Людвіга (фото взято з Вікіпедії)", de: "Museum Ludwig (Foto von Wikipedia entnommen)" } }
+        { path: "Germany/nrw/koln/koln-city/museum-ludwig/001.jpg", title: { ru: "Музей Людвига - 2025", ua: "Музей Людвіга - 2025", de: "Museum Ludwig - 2025" } },
+        { path: "Germany/nrw/koln/koln-city/museum-ludwig/002.jpg", title: { ru: "Музей Людвига - 2025", ua: "Музей Людвіга - 2025", de: "Museum Ludwig - 2025" } }
       ],
     },
     bruhl: {
