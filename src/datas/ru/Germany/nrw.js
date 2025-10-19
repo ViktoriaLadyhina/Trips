@@ -202,7 +202,7 @@ const datas = {
                         {
                             id: 3,
                             name: "Меркиш",
-                            fullName: "Kreis Märkischer Kreis",
+                            fullName: "Märkischer Kreis",
                             parentDistrict: "Арнсберг",
                             center: [
                                 { bold: "Центр района:" },
