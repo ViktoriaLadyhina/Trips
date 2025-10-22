@@ -18,12 +18,16 @@ const Map = () => {
     },
     districts: {
       arnsberg: { ru: 'Административный округ Арнсберг', de: 'Regierungsbezirk Arnsberg', ua: 'Адміністративний округ Арнсберг' },
-      koln: { ru: 'Административный округ Кёльн', de: 'Regierungsbezirk Köln', ua: 'Адміністративний округ Кельн' }
+      merkischer: { ru: 'Район Меркиш', de: 'Märkischer Kreis', ua: 'Район Меркіш' },
+
+      koln: { ru: 'Административный округ Кёльн', de: 'Regierungsbezirk Köln', ua: 'Адміністративний округ Кельн' },
+      rheinErft: { ru: 'Район Рейн-Эрфт', de: 'Rhein-Erft-Kreis', ua: 'Район Рейн-Ерфт' }
     },
     cities: {
       bruhl: { ru: 'Город Брюль', de: 'Stadt Brühl', ua: 'Місто Брюль' },
       frechen: { ru: 'Город Фрехен', de: 'Stadt Frechen', ua: 'Місто Фрехен' },
-      koln: { ru: 'Город Кёльн', de: 'Stadt Köln', ua: 'Місто Кельн' }
+      koln: { ru: 'Город Кёльн', de: 'Stadt Köln', ua: 'Місто Кельн' },
+      luedenscheid: { ru: 'Город Люденшайд', de: 'Stadt Lüdenscheid', ua: 'Місто Люденшайд' }
     },
     attractions: {
       bruhlPalaces: { ru: 'Дворцы Брюля: ансамбль Аугустусбург и Фалькенлюст', de: 'Schlösser Brühl: Augustusburg & Falkenlust', ua: 'Палаци Брюля: ансамбль Аугустусбург і Фалькенлюст' },
@@ -57,10 +61,18 @@ const Map = () => {
             <ul>
               <li><Link to="/germany/nrw">{t.regions.nrw[lang]}</Link>
                 <ul>
-                  <li><Link to="/germany/nrw/arnsberg">{t.districts.arnsberg[lang]}</Link></li>
+                  <li><Link to="/germany/nrw/arnsberg">{t.districts.arnsberg[lang]}</Link>
+                    <ul>
+                      <li><span>{t.districts.merkischer[lang]}</span>
+                        <ul>
+                          <li><Link to="/germany/nrw/arnsberg/luedenscheid">{t.cities.luedenscheid[lang]}</Link></li>
+                        </ul>
+                      </li>
+                    </ul>
+                  </li>
                   <li><Link to="/germany/nrw/koln">{t.districts.koln[lang]}</Link>
                     <ul>
-                      <li><span>Рейн-Эрфт</span>
+                      <li><span>{t.districts.rheinErft[lang]}</span>
                         <ul>
                           <li><Link to="/germany/nrw/koln/bruhl">{t.cities.bruhl[lang]}</Link>
                             <ul>
@@ -78,7 +90,7 @@ const Map = () => {
                         </ul>
                       </li>
                       <li><Link to="/germany/nrw/city/koln">{t.cities.koln[lang]}</Link>
-                         <ul>
+                        <ul>
                           <li><Link to="/germany/nrw/city/koln/attractions/cologne-cathedral">{t.attractions.cologneCathedral[lang]}</Link></li>
                           <li><Link to="/germany/nrw/city/koln/attractions/rathaus-koln">{t.attractions.cologneRathaus[lang]}</Link></li>
                           <li><Link to="/germany/nrw/city/koln/attractions/roemisch-germanisches-museum">{t.attractions.roemischGermanischesMuseum[lang]}</Link></li>

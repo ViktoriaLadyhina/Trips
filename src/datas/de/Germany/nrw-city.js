@@ -231,7 +231,103 @@ const datas = [
             ogDescription: "Detaillierte Informationen über Frechen: Kultur, Geschichte, bekannte Persönlichkeiten und interessante Fakten.",
             ogImage: "/nrw/frechen.jpg"
         }
-    }
+    },
+    {
+        id: 4,
+        name: 'Lüdenscheid',
+        path: "luedenscheid",
+        district: "arnsberg",
+        desc: {
+            general: [
+                { text: 'Lüdenscheid liegt im Nordwesten des Sauerlandes im Bundesland Nordrhein-Westfalen. Administrativ gehört die Stadt zur Region Arnsberg und untersteht dem Märkischen Kreis.' },
+            ],
+            population: [
+                { bold: 'Einwohnerzahl:' },
+                { text: ' Die Stadt zählt 71.212 Einwohner (Stand: 31. Dezember 2024).' }
+            ],
+            area: [
+                { bold: 'Fläche:' },
+                { text: ' Die Fläche der Kommune beträgt rund 86,7 km². Ein großer Teil davon ist von Park- und Waldflächen sowie Grünzonen bedeckt; danach folgen landwirtschaftliche Flächen, bebaute Gebiete, Straßen, Gewässer und sonstige Flächen.' },
+                { text: ' Die Stadt ist in 16 statistische Bezirke unterteilt.' }
+            ],
+            postalCode: [
+                { bold: 'Postleitzahlen:' },
+                { text: ' 58507–58515' }
+            ],
+            phone: [
+                { bold: 'Telefonvorwahl:' },
+                { text: ' +49 2351' }
+            ],
+            officialSite: [
+                { bold: 'Offizielle Website der Stadt Lüdenscheid', link: 'www.luedenscheid.de' }
+            ],
+            education: [
+                { bold: 'Bildungssystem' },
+                { text: ' in der Stadt ist vielfältig: Innerhalb der Kommune gibt es zahlreiche Grundschulen, mehrere Förder- und Sonderschulen, Realschulen, Berufsschulen sowie drei Gymnasien. <b>Zeppelin-Gymnasium</b> ist eines der ältesten Bildungseinrichtungen der Region: Seine Ursprünge reichen bis ins späte Mittelalter (ca. 1450) zurück, während das heutige Hauptgebäude aus dem späten 19. Jahrhundert (ca. 1890) stammt.' },
+                { text: ' Neben den Gymnasien gibt es in der Stadt Berufsfachschulen für Techniker, Pflegeschulen, ein Abendgymnasium, Musikschulen sowie Zweigstellen von Hochschulen (z. B. Fachhochschule Südwestfalen). Außerdem befindet sich in Lüdenscheid das Deutsche Institut für angewandte Lichttechnik.' }
+            ],
+            culture: [
+                { bold: 'Kulturelles Leben' },
+                { text: ' – In der Stadt finden zahlreiche Festivals, Ausstellungen, Licht-Routen und andere Veranstaltungen statt: Laternenwanderungen, Lichtinstallationen und vieles mehr.' }
+            ],
+        },
+        geography: {
+            title: 'Relief und Höhenlage',
+            items: [
+                { text: 'In der städtischen und touristischen Kommunikation wird der Beiname „Bergstadt“ häufig verwendet – eine historische Bezeichnung für die hügelige Landschaft und die handwerkliche Tradition. Lüdenscheid ist tatsächlich eine „Bergstadt“: Sie liegt auf einer Wasserscheide zwischen den Flüssen Lenne und Volme mit tief eingeschnittenen Tälern. Das Gelände ist stark gegliedert, Straßen verlaufen häufig bergauf und bergab. Die durchschnittliche Höhe der Stadt liegt bei etwa 380–425 m über dem Meeresspiegel.' },
+                { bold: 'Geologie und Alter der Gesteine.', text: ' Die Böden der Region stammen aus dem Devon (spätes Paläozoikum, vor mehreren hundert Millionen Jahren): In den Gesteinsschichten findet man Fossilien von Meeresorganismen (Muscheln, Seelilien), was mit geologischen Erkenntnissen übereinstimmt, dass dieses Gebiet in früheren Erdzeitaltern Meeresboden war und sich später durch tektonische bzw. vulkanische Prozesse hob. Die heutige Landschaft entstand im Verlauf langwieriger geologischer Prozesse, einschließlich glazialer und postglazialer Veränderungen.' },
+            ]
+        },
+        notablePeople: {
+            title: 'Bekannte Persönlichkeiten aus Lüdenscheid',
+            items: [
+                { bold: 'Marianne Rosenberg (geb. 1955)', text: ' – Deutsche Sängerin, Songwriterin und Ikone der Pop- und Schlagerszene der 1970er–2000er Jahre. Geboren in Lüdenscheid. Bekannt durch Hits wie „Er gehört zu mir“, „Marleen“ u. a.' },
+                { bold: 'Peter Schweitzer (geb. 1942)', text: ' – Deutscher Industrieller, der mit der Entwicklung der Lichttechnikindustrie in der Region verbunden ist, einer der Pioniere der LED-Beleuchtung.' },
+                { bold: 'Rolf Fitschner (geb. 1949)', text: ' – Deutscher Ingenieur und Erfinder auf dem Gebiet der Lichttechnologien, Mitbegründer der Bildungsinitiativen von PHÄNOMENTA.' },
+                { bold: 'Felix Schütz (geb. 1987)', text: ' – Deutscher Eishockeyspieler, Stürmer der deutschen Nationalmannschaft, Teilnehmer an Olympischen Spielen und Weltmeisterschaften, geboren in Lüdenscheid.' },
+                { bold: 'Karl Josef Thiel (1918–2001)', text: ' – Deutscher Bildhauer und Künstler, Schöpfer zahlreicher öffentlicher Skulpturen und Denkmäler in der Region Sauerland.' },
+                { bold: 'Friedrich Hellwig (1870–1950)', text: ' – Historiker und Heimatforscher, einer der ersten, die die industrielle Entwicklung des Sauerlandes erforschten; lebte und arbeitete in Lüdenscheid.' },
+                { bold: 'Gerd Josten (1939–2006)', text: ' – Deutscher Architekt und Stadtplaner, beteiligte sich am Wiederaufbau des historischen Stadtkerns von Lüdenscheid nach dem Zweiten Weltkrieg.' },
+                { bold: 'Anneliese Ebert (1924–2010)', text: ' – Schriftstellerin und Pädagogin, Autorin von Büchern über Alltagsleben und Traditionen der Region Mecklenburg–Sauerland, lebte über 40 Jahre in Lüdenscheid.' },
+                { bold: 'Werner Kowalski (1901–1943)', text: ' – Deutscher Kommunist, Widerstandskämpfer gegen das NS-Regime und Publizist. Geboren am 28. Dezember 1901 in Lüdenscheid, gestorben am 1. Juli 1943 in Frankreich. An seinem Wohnhaus in Lüdenscheid sind Stolpersteine angebracht.' },
+                { bold: 'Carl Berg (1851–1906)', text: ' – Einer der Pioniere der Aluminiumindustrie; lieferte Aluminiumteile für die ersten „Zeppelin“-Luftschiffe. Geboren am 4. Februar 1851 in Lüdenscheid.' },
+            ]
+        },
+        interestingFacts: {
+            title: 'Interessante Fakten',
+            items: [
+                { bold: '„Stadt des Lichts“', text: ' – Lüdenscheid trägt den Beinamen „Stadt des Lichts“ aufgrund seiner stark entwickelten Licht- und Beleuchtungsindustrie. Charakteristisch für die Stadt sind Lichtinstallationen, die „Lichtrouten“ und künstlerische Beleuchtung von Gebäuden.' },
+                { bold: 'Wissenschaft, Technik und Interaktivität', text: ' – Eine der bekanntesten Sehenswürdigkeiten ist der Wissenschafts- und Erlebnispark PHÄNOMENTA mit rund 200 interaktiven Stationen und einem markanten Turm mit Foucaults Pendel.' },
+                { bold: '„Knopfstädten“', text: ' – Früher war Lüdenscheid ein wichtiges Zentrum der Herstellung von Metallknöpfen, Medaillen und anderen kleinen Metallwaren. Im Stadtmuseum sind Sammlungen historischer Knöpfe ausgestellt.' },
+                { bold: 'Einzigartige Stadtarchitektur', text: ' – Der historische Stadtgrundriss mit ringförmigen Straßen um die alte Erlöserkirche (Erlöserkirche) ist aus der Luft noch gut erkennbar.' },
+                { bold: 'Industrielle Transformation', text: ' – Das Gebiet von Lüdenscheid war seit jeher industriell geprägt: zunächst durch Metallurgie und Osmund-Produktion (eine spezielle Eisenart) für Draht, später durch Knopfherstellung, danach Lichttechnik, Kunststoffe und moderne Metallverarbeitung.' },
+                { bold: 'Technikdenkmäler', text: ' – Zum Beispiel der Bremecker Hammer – ein historisches Hammerwerk und Schmiedemuseum, in dem bis heute Vorführungen mit Wasserrad und Schmiedetechniken aus dem 18.–19. Jahrhundert stattfinden.' },
+                { bold: 'Viel Wald und Natur', text: ' – Trotz seiner industriellen und technologischen Prägung ist die Stadt von Wäldern und den Bergen des Sauerlandes umgeben und bietet zahlreiche Wanderwege und Erholungsgebiete.' },
+            ]
+        },
+        briefHistory: {
+            title: 'Geschichte',
+            items: [
+                { text: 'Das Gebiet war bereits seit dem Mesolithikum besiedelt; archäologische Funde belegen zahlreiche Siedlungsplätze (z. B. die Fundstätte Brockhausen mit Tausenden Feuersteinwerkzeugen). In verschiedenen Teilen wurden Spuren neolithischer Siedlungen gefunden; Funde aus der Bronzezeit sind seltener.' },
+                { text: 'Frühe Eisenzeit: Um 800–1000 v. Chr. gab es in der Region Schmieden und Metallverarbeitung; eine ständige Besiedlung ist ab dem 1. Jahrtausend v. Chr. nachweisbar.' },
+                { text: 'Lüdenscheid wird bereits im 9. Jahrhundert als sächsische Siedlung erwähnt, gelegen an der Straße von Köln zu den heutigen Orten Wipperfürth, Halver, Werdohl und Arnsberg; in dieser Zeit entstand auch die erste Kirche. Erstmals urkundlich erwähnt wurde Lüdenscheid im Jahr 1067.' },
+                { text: 'Im 11.–13. Jahrhundert wurden hier Befestigungsanlagen errichtet; 1114–1115 wird eine Burg erwähnt, die mit Kaiser Heinrich V. und Konflikten mit den Grafen von Arnsberg und den Kölner Erzbischöfen in Verbindung steht. 1268 wird Lüdenscheid als Stadt erwähnt, 1425 erhielt es Marktprivilegien und 1533 das Recht, Jahrmärkte abzuhalten.' },
+                { text: 'Im Mittelalter befand sich auf dem Stadtgebiet ein sogenanntes Femegericht (Veme) mit regionaler Bedeutung.' },
+                { text: 'Im 17.–18. Jahrhundert erlebte die Stadt mehrere Brände (1656, 1723 u. a.), Besetzungen und Machtwechsel (Siebenjähriger Krieg, napoleonische Zeit). Nach dem Wiener Kongress wurde Lüdenscheid endgültig Teil des preußischen Verwaltungssystems.' },
+                { text: 'Die Industrialisierung im 19. Jahrhundert führte zu einem starken Bevölkerungswachstum und industriellen Aufschwung: Ende des 19. und Anfang des 20. Jahrhunderts expandierte die Stadt. 1898 wurden in der Fabrik von Carl Berg Aluminiumteile für die „Zeppelin“-Luftschiffe gefertigt – ein bedeutendes Kapitel der Stadtgeschichte.' },
+                { text: 'Im 20. Jahrhundert war Lüdenscheid in die Ereignisse beider Weltkriege involviert, erlebte nach 1945 Zuwanderung von Flüchtlingen und den wirtschaftlichen Aufschwung der jungen Bundesrepublik Deutschland.' },
+                { text: 'Mit der Eingemeindung umliegender Orte (z. B. 1969) stieg die Bevölkerungszahl deutlich an. In den 1970er Jahren war die Stadt Austragungsort der Internationalen Kunststoffausstellung IKA (1971–1973), was die industrielle und kulturelle Bedeutung der Region stärkte.' },
+                { text: '1975 wurde Lüdenscheid Sitz des neu gebildeten Märkischen Kreises (Ergebnis der Verwaltungsreformen). In dieser Phase des wirtschaftlichen Wohlstands entstanden zahlreiche öffentliche und kulturelle Gebäude: Kulturhaus, neues Stadtmuseum, Bibliothek. Im Stadtzentrum wurde ein großes Wellenbad gebaut.' },
+            ]
+        },
+        meta: {
+            title: "Lüdenscheid – Stadt des Lichts und der Technologie im Herzen des Sauerlandes",
+            description: "Lüdenscheid: Geschichte, Geografie, bekannte Persönlichkeiten und interessante Fakten über die „Stadt des Lichts“ in Nordrhein-Westfalen.",
+            ogTitle: "Lüdenscheid – Informationen über die Stadt",
+            ogDescription: "Detaillierte Informationen über Lüdenscheid: Kultur, Geschichte, bedeutende Persönlichkeiten und spannende Fakten über die Stadt des Lichts und der Innovation.",
+            ogImage: "/nrw/luedenscheid.jpg"
+        }
+    },
 ]
 
 export default datas
