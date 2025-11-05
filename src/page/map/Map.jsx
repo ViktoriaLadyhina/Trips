@@ -36,10 +36,12 @@ const Map = () => {
       burgBachem: { ru: 'Burg Bachem – историческая водяная крепость во Фрехене', de: 'Burg Bachem – historische Wasserburg in Frechen', ua: 'Burg Bachem – історична водяна фортеця у Фрехені' },
       keramion: { ru: 'KERAMION – Центр современной и исторической керамики', de: 'KERAMION – Zentrum für moderne und historische Keramik', ua: 'KERAMION – Центр сучасної та історичної кераміки' },
       cologneCathedral: { ru: 'Кёльнский собор', de: 'Kölner Dom', ua: 'Кельнський собор' },
-      cologneRathaus: { ru: 'Кёльнская ратуша и археологический квартал MiQua', de: 'Kölner Rathaus und archäologisches Viertel MiQua', ua: 'Кельнська ратуша та археологічний квартал MiQua' },
+      cologneRathaus: { ru: 'Кёльнская ратуша', de: 'Kölner Rathaus', ua: 'Кельнська ратуша' },
       roemischGermanischesMuseum: { ru: 'Римско-германский музей', de: 'Römisch-Germanisches Museum', ua: 'Римсько-германський музей' },
       farinaDuftmuseum: { ru: 'Музей духов в доме Фарина', de: 'Duftmuseum im Farina-Haus', ua: 'Музей парфумів у домі Фаріна' },
       museumLudwig: { ru: 'Музей Людвига', de: 'Museum Ludwig', ua: 'Музей Людвіга' },
+      schokoladenmuseum: { ru: 'Музей шоколада', de: 'Schokoladenmuseum', ua: 'Музей шоколаду' },
+      miqua: { ru: 'Музей в археологическом квартале Кёльна – MiQua', de: 'Museum im archäologischen Viertel Köln – MiQua', ua: 'Музей в археологічному кварталі Кельна – MiQua' },
     }
   };
 
@@ -92,10 +94,12 @@ const Map = () => {
                       <li><Link to="/germany/nrw/city/koln">{t.cities.koln[lang]}</Link>
                         <ul>
                           <li><Link to="/germany/nrw/city/koln/attractions/cologne-cathedral">{t.attractions.cologneCathedral[lang]}</Link></li>
-                          <li><Link to="/germany/nrw/city/koln/attractions/rathaus-koln">{t.attractions.cologneRathaus[lang]}</Link></li>
+                          <li><Link to="/germany/nrw/city/koln/attractions/rathaus">{t.attractions.cologneRathaus[lang]}</Link></li>
+                          <li><Link to="/germany/nrw/city/koln/attractions/miqua">{t.attractions.miqua[lang]}</Link></li>
                           <li><Link to="/germany/nrw/city/koln/attractions/roemisch-germanisches-museum">{t.attractions.roemischGermanischesMuseum[lang]}</Link></li>
                           <li><Link to="/germany/nrw/city/koln/attractions/farina-duftmuseum">{t.attractions.farinaDuftmuseum[lang]}</Link></li>
                           <li><Link to="/germany/nrw/city/koln/attractions/museum-ludwig">{t.attractions.museumLudwig[lang]}</Link></li>
+                          <li><Link to="/germany/nrw/city/koln/attractions/schokoladenmuseum">{t.attractions.schokoladenmuseum[lang]}</Link></li>
                         </ul>
                       </li>
                     </ul>

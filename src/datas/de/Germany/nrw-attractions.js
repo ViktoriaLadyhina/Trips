@@ -356,74 +356,61 @@ const datas = [
         },
     },
     {
-        id: "rathaus_koln_miqua",
-        name: "Kölner Rathaus und archäologisches Quartier MiQua",
-        type: ['historical_building', 'museum'],
-        path: "rathaus-koln",
+        id: "rathaus",
+        name: "Kölner Rathaus",
+        type: ['historical_building'],
+        path: "rathaus",
         regionsPath: "nrw",
         districtPath: "city",
         cityPath: "koln",
         fotoCard: "Germany/nrw/koln/koln-city/rathaus-koeln/Rathaus-Köln.jpg",
         location: "Köln, Deutschland",
-        address: [{ bold: "Adresse Kölner Rathaus:", text: " Rathausplatz 2, 50667 Köln, Deutschland " }, { bold: "<br>Adresse MiQua:", text: " Augustiner Straße 10–12, 50667 Köln, Deutschland " }],
+        address: [{ bold: "Adresse des Kölner Rathauses:", text: "Rathausplatz 2, 50667 Köln, Deutschland" },],
         officialSite: [
-            { bold: "Offizielle Website", link: "https://www.stadt-koeln.de/", text: ' der Stadt Köln (Rathaus)' },
-            { bold: "<br> Projekt MiQua", link: "https://miqua.lvr.de/", text: ' – archäologisches Museum' }
+            { bold: "Offizielle Website", link: "https://www.stadt-koeln.de/", text: " der Stadt Köln (Rathaus)" },
         ],
-        unesco_status: {
-            included: false
-        },
+        unesco_status: { included: false },
         tickets_and_entry: {
             title: "Eintritt und Zugang",
             items: [
-                { bold: "Zugang:", text: "Das Rathaus ist ein aktives Gebäude des Stadtrats. Der Zugang zu den Verwaltungsräumen ist eingeschränkt, jedoch sind Teile der Säle und der Turm im Rahmen von Führungen zugänglich. Führungen durch das Rathaus finden nach Zeitplan statt und werden auf der Website der Stadt Köln angegeben." },
-                { bold: "MiQua:", text: "Der Besuch des archäologischen Quartiers ist im Rahmen von Führungen mit einem Guide möglich. Nach Abschluss der Bauarbeiten wird das Museum für den freien Besuch geöffnet." }
+                { bold: "Zugang:", text: "Das Rathaus ist ein aktives Verwaltungsgebäude der Stadt Köln. Der Zugang zu den Verwaltungsräumen ist eingeschränkt, jedoch sind Teile der Säle und der Turm im Rahmen von Führungen zugänglich. Führungen finden nach Zeitplan statt, Details auf der Website der Stadt Köln." },
             ]
         },
-        short_description: "Das Kölner Rathaus ist das älteste Verwaltungsgebäude Deutschlands, das einen gotischen Turm, eine Renaissance-Loggia und den historischen Hansasaal kombiniert. Unter ihm befindet sich der einzigartige archäologische Museumskomplex MiQua mit Überresten des römischen Praetoriums und des jüdischen Viertels.",
+        short_description: "Das Kölner Rathaus – das älteste Verwaltungsgebäude Deutschlands, vereint einen gotischen Turm, eine Renaissance-Loggia und den historischen Hansasaal.",
         full_description: {
             title: "Beschreibung und Geschichte",
             items: [
-                { text: "Das Kölner Rathaus (Kölner Rathaus) ist eines der wichtigsten Symbole der Stadt und das älteste Gebäude der kommunalen Verwaltung in Deutschland. Es vereint architektonische Elemente der Gotik, Renaissance und moderner Restaurierungen." },
-                { text: "Die ersten Erwähnungen des Gebäudes, in dem sich die Bürger versammelten, stammen aus dem 12. Jahrhundert (1135-1152). Im 14. Jahrhundert begann der Bau des neuen Komplexes, einschließlich des <b>Hansasaals</b>, in dem 1367 Vertreter der Hanse tagten." },
-                { text: "Anfang des 15. Jahrhunderts (1407-1414) wurde der Komplex um den imposanten <b>Rathaus-Turm (Ratsturm)</b> mit einer Höhe von etwa 61 Metern erweitert – ein Beispiel für die Spätgotik. Seine Fassade wird von über hundert Steinfiguren geschmückt, darunter nicht nur historische Persönlichkeiten, sondern auch moderne Kölner Helden – z. B. der Schriftsteller Heinrich Böll und Karnevalsfiguren." },
-                { text: "Im 16. Jahrhundert (1569-1573) errichtete der Architekt Wilhelm Vernukken aus Kalkar die elegante <b>Renaissance-Loggia (Laube)</b>, inspiriert von der Architektur Antwerpens. Ihre Arkaden und reich verzierte Steinschnitzerei verleihen dem Gebäude ein feierliches Aussehen." },
-                { text: "In der Nähe befand sich der <b>Spanischer Bau</b>, in dem Gerichts- und Verwaltungsbehörden untergebracht waren." },
-                { text: "Während des Zweiten Weltkriegs wurde das Rathaus stark durch Bomben beschädigt: Dach, Fassaden und ein großer Teil des Interieurs wurden zerstört. Nach dem Krieg, ab Ende der 1940er Jahre, begann eine umfangreiche Restaurierung. Die Wiederherstellung dauerte Jahrzehnte, einschließlich der vollständigen Rekonstruktion des Hansasaals und des Turms." },
-                { text: "Bis in die 1970er Jahre waren die Hauptarbeiten abgeschlossen, und das Gebäude wurde wieder zur Residenz des Stadtrats." },
-                { text: "In der Nähe des Rathauses entdeckten Archäologen Überreste des mittelalterlichen jüdischen Viertels, einschließlich der <b>Mikwe – rituelles Bad aus dem 12. Jahrhundert</b>, das in etwa 10 Metern Tiefe erhalten geblieben ist." },
-                { text: "Heute entsteht unter dem Rathaus und den umliegenden Quartieren das <b>MiQua – Museum im Quartier</b>, ein archäologisches Museum mit einer Fläche von etwa 6000 m²." },
-                { text: "Das Museum wird Exponate aus drei historischen Epochen vereinen: <b>römisch</b> (Reste des Praetoriums – Palast des Statthalters der römischen Provinz Niedergermanien), <b>jüdisch-mittelalterlich</b> (Wohnhäuser, Mikwe, Synagoge), <b>mittelalterlich-christlich</b> (Gebäude der Zünfte und Fundamente des Rathauses)." },
-                { text: "MiQua wird als unterirdischer Rundgang von etwa 700 Metern Länge gebaut, bei dem die Besucher durch verschiedene historische Schichten der Stadt gehen können." },
-                { text: "Das Projekt ist ingenieurtechnisch einzigartig: Das Museum ruht auf einer massiven Betonplatte von etwa 50 cm Dicke, die auf Hunderten Pfählen bis zu 36 Metern in die Erde reichen. Der Bau ist durch die Notwendigkeit erschwert, archäologische Funde in ihrem ursprünglichen Zustand zu erhalten." },
-                { text: "Die offizielle Eröffnung von MiQua wurde mehrfach verschoben, jedoch kann bereits jetzt ein Teil der unterirdischen Ausgrabungen im Rahmen von Führungen besichtigt werden." }
+                { text: "Das Kölner Rathaus (Kölner Rathaus) ist eines der wichtigsten Symbole der Stadt und das älteste Gebäude der kommunalen Verwaltung in Deutschland. Es vereint architektonische Elemente der Gotik, Renaissance und modernen Restaurierungen. Das Rathaus diente und dient weiterhin als Symbol der städtischen Macht und Selbstverwaltung." },
+                { text: "Die ersten Erwähnungen des Gebäudes, in dem sich die Bürger versammelten, stammen aus dem 12. Jahrhundert (1135–1152). Im 14. Jahrhundert begann der Bau eines neuen Komplexes, einschließlich des <b>Hansasaals</b>, in dem 1367 Vertreter der Hanse tagten." },
+                { text: "Anfang des 15. Jahrhunderts (1407–1414) wurde dem Komplex der imposante <b>Rathaus-Turm (Ratsturm)</b> mit einer Höhe von etwa 61 Metern hinzugefügt – ein Beispiel der Spätgotik. Seine Fassade ist mit über hundert Steinfiguren geschmückt, darunter nicht nur historische Persönlichkeiten, sondern auch moderne Kölner Helden – z. B. der Schriftsteller Heinrich Böll und Karnevalsfiguren." },
+                { text: "Im 16. Jahrhundert (1569–1573) errichtete der Architekt Wilhelm Vernukken aus Kalkar die kunstvolle <b>Renaissance-Loggia (Laube)</b>, inspiriert von der Architektur Antwerpens. Ihre Arkaden und reich verzierte Steinmetzarbeiten verleihen dem Gebäude ein feierliches Aussehen." },
+                { text: "In der Nähe befand sich das <b>Spanischer Bau</b>, in dem Gerichts- und Verwaltungsorgane untergebracht waren." },
+                { text: "Während des Zweiten Weltkriegs wurde das Rathaus stark durch Bombenangriffe beschädigt: Dach, Fassaden und ein Großteil des Interieurs wurden zerstört. Nach dem Krieg, ab Ende der 1940er Jahre, begann eine umfassende Restaurierung. Die Wiederherstellung dauerte Jahrzehnte, einschließlich der vollständigen Rekonstruktion von Hansasaal und Turm." },
+                { text: "Bis in die 1970er Jahre waren die Hauptarbeiten abgeschlossen, und das Gebäude wurde wieder Sitz des Stadtrats." },
             ]
         },
         interestingFacts: {
             title: "Interessante Fakten",
             items: [
-                { text: "Auf dem Rathaus-Turm ist der hölzerne Kopf Platzjabbeck angebracht, der jede Stunde die Zunge herausstreckt – ein Symbol der Spott über die Macht." },
+                { text: "Auf dem Turm des Rathauses befindet sich der hölzerne Kopf Platzjabbeck, der jede Stunde die Zunge herausstreckt – ein Symbol der Verspottung der Macht." },
                 { text: "Der Hansasaal ist mit der Skulpturenkomposition 'Neun tapfere Helden' geschmückt, die Figuren aus heidnischer, jüdischer und christlicher Tradition vereint." },
-                { text: "Die Fundamente des Rathauses ruhen teilweise auf Überresten der antiken römischen Stadtmauer." },
-                { text: "MiQua vereint drei historische Schichten: römisch, jüdisch und mittelalterlich-christlich, und schafft einen kontinuierlichen Rundgang durch 2000 Jahre Kölner Geschichte." },
-                { text: "Das MiQua-Projekt ist für seine komplexen Ingenieurlösungen bekannt – das Museum ist praktisch 'über' den archäologischen Ruinen aufgehängt." }
+                { text: "Die Fundamente des Rathauses ruhen teilweise auf den Überresten der römischen Stadtmauer." },
             ]
         },
-        construction_period: "12.-16. Jahrhundert, mit anschließenden Restaurierungen nach dem Zweiten Weltkrieg",
-        founder: "Stadt Köln unter Beteiligung der Architekten Wilhelm Vernukken und Meister der gotischen Schule",
+        construction_period: "12.–16. Jahrhundert, mit anschließenden Restaurierungen nach dem Zweiten Weltkrieg",
+        founder: "Stadt Köln, unter Mitwirkung des Architekten Wilhelm Vernukken und der Meister der gotischen Schule",
         sub_objects: {
-            title: "Objekte des Rathauses und des archäologischen Quartiers",
+            title: "Objekte des Rathauses",
             items: [
-                { bold: "Hansasaal", text: " – Hauptsaal des Rathauses aus dem 14. Jahrhundert, Sitzungen der Hanse, geschmückt mit Skulpturen der Neun Helden." },
-                { bold: "Ratsturm", text: " – Turm mit einer Höhe von 61 Metern und Hunderten von Figuren, Symbol der Macht und des Stolzes der Stadt." },
-                { bold: "MiQua", text: " – Unterirdisches archäologisches Museum mit 6000 m² Fläche, Ruinen des römischen Praetoriums und des jüdischen Viertels." }
+                { bold: "Hansasaal", text: " – Hauptsaal des Rathauses aus dem 14. Jahrhundert, Sitz der Hanse, geschmückt mit Skulpturen der Neun Helden." },
+                { bold: "Ratsturm", text: " – Turm mit 61 Metern Höhe und Hunderten von Figuren, Symbol der Macht und des Stolzes der Stadt." },
             ]
         },
         meta: {
-            title: "Kölner Rathaus und archäologisches Quartier MiQua – Geschichte Kölns unter der Stadt",
-            description: "Kölner Rathaus: gotischer Turm, Renaissance-Loggia und unterirdisches Museum MiQua mit römischen und jüdischen Artefakten.",
-            ogTitle: "Rathaus Köln und MiQua – Geschichte unter der Stadt",
-            ogDescription: "Erkunden Sie das Kölner Rathaus und das unterirdische Museum MiQua, wo das antike Rom auf das Mittelalter trifft.",
+            title: "Kölner Rathaus",
+            description: "Kölner Rathaus: gotischer Turm, Renaissance-Loggia",
+            ogTitle: "Kölner Rathaus: gotischer Turm, Renaissance-Loggia",
+            ogDescription: "Das Kölner Rathaus – das älteste Verwaltungsgebäude Deutschlands, vereint gotischen Turm, Renaissance-Loggia und den historischen Hansasaal.",
             ogImage: "Germany/nrw/koln/koln-city/rathaus-koeln/Rathaus-Köln.jpg"
         }
     },
@@ -588,6 +575,137 @@ const datas = [
             ogTitle: "Museum Ludwig — Zeitgenössische Kunst in Köln",
             ogDescription: "Besuchen Sie das Museum Ludwig in Köln, eine der führenden Sammlungen zeitgenössischer Kunst weltweit, gegründet auf der Sammlung des deutschen Industriellen Peter Ludwig und seiner Frau Irene.",
             ogImage: "Germany/nrw/koln/koln-city/museum-ludwig/001.jpg"
+        }
+    },
+    {
+        id: "schokoladenmuseum",
+        name: "Schokoladenmuseum",
+        type: ["museum"],
+        path: "schokoladenmuseum",
+        regionsPath: "nrw",
+        districtPath: "city",
+        cityPath: "koln",
+        fotoCard: "Germany/nrw/koeln/koeln-city/schokoladenmuseum/001.jpg",
+        location: "Köln, Deutschland",
+        officialSite: [
+            {
+                bold: "Offizielle Website des Schokoladenmuseums Köln",
+                link: "https://www.schokoladenmuseum.de/"
+            }
+        ],
+        construction_period: "1992–1993 (eröffnet am 31. Oktober 1993)",
+        architects: ["Fritz Eller"],
+        founder: "Hans Imhoff – Gründer des Museums, deutscher Schokoladenunternehmer",
+        short_description: "Das Schokoladenmuseum Köln präsentiert 5000 Jahre Kakaokultur und Schokoladenproduktion – von alten Zivilisationen bis zur modernen Fabrik, mit einem beeindruckenden Schokoladenbrunnen und einer gläsernen „Schokoladenfabrik“.",
+        full_description: {
+            title: "Beschreibung und Geschichte",
+            items: [
+                { bold: "Über das Museum.", text: "Das Museum befindet sich auf der Halbinsel Rheinauhafen in Köln und bietet den Besuchern eine Reise durch die Geschichte des Kakaos und der Schokolade bis hin zur modernen Industrie." },
+                { bold: "Hauptattraktion", text: " – ein drei Meter hoher Schokoladenbrunnen mit rund 200 kg flüssiger Schokoladenmasse, der zum Symbol des Museums wurde." },
+                { bold: "Ausstellung und Bedeutung.", text: "Auf über 4000 m² und mit mehr als 2500 Exponaten erzählt das Museum von der Kulturgeschichte des Kakaos, der Industrialisierung der Schokoladenproduktion und der modernen Konsumgesellschaft." },
+                { bold: "Gebäude und Architektur.", text: "Das Gebäude kombiniert das alte Zollamtsgebäude (Hauptzollamt) mit einem neuen Glas-Aluminium-Anbau im postmodernen Stil am Rheinufer. Architekt – Fritz Eller." },
+                { bold: "Weitere Besonderheiten.", text: "Im Museum befindet sich eine „gläserne Schokoladenfabrik“, in der Besucher den gesamten Herstellungsprozess von der Röstung der Kakaobohnen bis zur fertigen Tafel beobachten können." }
+            ]
+        },
+        tickets_and_entry: {
+            title: "Praktische Informationen",
+            items: [
+                { bold: "Adresse:", text: "Am Schokoladenmuseum 1a, 50678 Köln" },
+                { bold: "Öffnungszeiten:", text: "Täglich 10:00 – 18:00. Letzter Einlass eine Stunde vor Schließung." },
+                { bold: "Eintrittspreise (ca. 2025):", text: "Erwachsene ~16,50 €, Kinder/Schüler ~9,50 € u.a." },
+                { bold: "Parken und Verkehr:", text: "Parkhaus „Rheinauhafen“ in der Nähe; fußläufig vom Stadtzentrum Kölns erreichbar." }
+            ]
+        },
+        interestingFacts: {
+            title: "Interessante Fakten",
+            items: [
+                { text: "Das Museum finanziert sich vollständig selbst und erhält keine Zuschüsse – eine Seltenheit in der Museumswelt." },
+                { text: "Die Ausstellung umfasst 5000 Jahre Kakaogeschichte – von den Maya und Azteken bis heute." },
+                { text: "In der gläsernen Schokoladenfabrik kann man beobachten, wie Schokoladenfiguren – etwa Hasen, Herzen oder Pandas – von Hand hergestellt werden." },
+                { text: "Das Museum wurde am 31. Oktober 1993 eröffnet und zählt zu den meistbesuchten Museen Kölns." }
+            ]
+        },
+        meta: {
+            title: "Schokoladenmuseum Köln: Eine Reise in die Welt des Kakaos und der Süßigkeiten",
+            description: "Das Schokoladenmuseum in Köln zeigt den Weg des Kakaos von der tropischen Plantage bis zur Schokoladentafel. Besuchen Sie die gläserne Fabrik, den 200-kg-Schokoladenbrunnen und entdecken Sie die Geschichte der süßen Versuchung.",
+            ogTitle: "Schokoladenmuseum Köln – Das süßeste Museum Deutschlands",
+            ogDescription: "Tauchen Sie ein in die Welt von Kakao und Schokolade in Köln: von alten Zivilisationen bis zur modernen Fabrik und dem berühmten Schokoladenbrunnen.",
+            ogImage: "Germany/nrw/koeln/koeln-city/schokoladenmuseum/001.jpg"
+        }
+    },
+    {
+        id: "miqua",
+        name: "Museum im archäologischen Viertel Köln – MiQua",
+        type: ["museum"],
+        path: "miqua",
+        regionsPath: "nrw",
+        districtPath: "city",
+        cityPath: "koln",
+        fotoCard: "Germany/nrw/koeln/koeln-city/miqua/001.jpg",
+        location: "Köln, Deutschland",
+        officialSite: [
+            {
+                bold: "Offizielle Website des Museums im archäologischen Viertel Köln – MiQua",
+                link: "https://miqua.lvr.de/de/index.html"
+            }
+        ],
+        construction_period: "2012 – heute (Bau läuft noch)",
+        architects: ["Architekturbüro Staab, Berlin"],
+        founder: "Landschaftsverband Rheinland (LVR)",
+        short_description: "MiQua – ein modernes unterirdisches Museum im Zentrum von Köln, das archäologische Schichten der Stadt von der Römerzeit bis zum Mittelalter zeigt, einschließlich des jüdischen Viertels und mittelalterlicher christlicher Bauten.",
+        full_description: {
+            title: "Beschreibung und Geschichte",
+            items: [
+                { bold: "Über das Museum", text: "MiQua – ein modernes unterirdisches Museum, das die archäologischen Schichten Kölns eröffnet, von der Römerzeit über das mittelalterliche jüdische Viertel bis zu mittelalterlichen christlichen Bauten. Das Museum befindet sich direkt unter dem historischen Stadtzentrum und ermöglicht den Besuchern, „2000 Jahre Kölner Geschichte zu durchschreiten“." },
+                { text: "Das Projekt ist einzigartig durch seine ingenieurtechnischen Lösungen: Die unterirdischen Ausstellungen sind durch Bohrpfahlkonstruktionen und große Betonbauwerke geschützt, was die Erhaltung der archäologischen Objekte in ihrem ursprünglichen Zustand ermöglicht." },
+                { text: "MiQua vereint das archäologische Erbe Kölns mit modernen Museumserfahrungen. Besucher können durch die unterirdischen Schichten der Stadtgeschichte gehen, die römische, jüdische und mittelalterliche Kultur kennenlernen und sehen, wie moderne Ingenieurlösungen die historischen Funde schützen." },
+            ]
+        },
+        sub_objects: {
+            title: "Exponate und archäologische Objekte",
+            items: [
+                { bold: "Römische Epoche:" },
+                { bold: "- Praetorium", text: " – Überreste des Palastes der römischen Statthalter der Provinz Niedergermanien." },
+                { bold: "- Römischer Abwasserkanal", text: " unter der Grosse Budengasse." },
+                { bold: "- Stadtbefestigungen und Elemente der städtischen Infrastruktur,", text: " einschließlich des vermuteten Bereichs römischer Gräber (Portikus, geplant zur Eröffnung)." },
+                { bold: "Mittelalterliches jüdisches Viertel:" },
+                { text: "- Wohnhäuser und Synagoge." },
+                { bold: "- Mikwe", text: " – rituelles Bad aus dem 12. Jahrhundert, erhalten in etwa 10 m Tiefe." },
+                { text: "- Das Viertel war einst die größte jüdische Siedlung Europas." },
+                { bold: "Mittelalterliche christliche Epoche:" },
+                { text: "- Zunfthäuser (z. B. das Viertel der Handwerker und Juweliere – Goldschmiedeviertel)." },
+                { text: "- Fundamente des alten Rathauses und angrenzender Gebäude." },
+                { bold: "Ingenieurtechnische Besonderheiten:" },
+                { text: "- Der unterirdische Rundgang verläuft mehrere Meter unter dem historischen Zentrum." },
+                { text: "- Das Museum wurde unter Einsatz von Bohrpfählen und Betonbauwerken zum Schutz der archäologischen Schichten errichtet." },
+                { text: "- Die architektonische Lösung ermöglicht die Darstellung der Schichten verschiedener Epochen ohne Beeinträchtigung der Objekte." },
+                { text: "- Die Konstruktion sieht keine inneren Stützpfeiler vor, was einen freien Durchgang und eine anschauliche Präsentation der historischen Schichten ermöglicht." }
+            ]
+        },
+        tickets_and_entry: {
+            title: "Praktische Informationen",
+            items: [
+                { bold: "Adresse:", text: "Rathausplatz 2, 50667 Köln, Deutschland" },
+                { bold: "Status des Museums:", text: "Das Museum ist nicht vollständig eröffnet: Der offizielle Abschluss des Projekts ist für die kommenden Jahre geplant. Teile des Rundgangs und der Ausstellungen sind bereits im Rahmen von Führungen zugänglich. Zukünftig ist die Erweiterung der Präsentationsflächen geplant, einschließlich Portikus und weiterer archäologischer Objekte." },
+                { bold: "Öffnungszeiten:", text: "Täglich 10:00–18:00 Uhr (kann je nach Führungen und Sonderausstellungen variieren)" },
+                { bold: "Eintrittspreise (ca. 2025):", text: "Erwachsene – ca. 6–8 €, Kinder/Schüler – kostenlos oder ermäßigt, Führungen gesondert zu bezahlen." }
+            ]
+        },
+        interestingFacts: {
+            title: "Interessante Fakten",
+            items: [
+                { text: "MiQua liegt unter dem Rathausplatz und teilweise unter dem Rathausgebäude." },
+                { text: "Mikwe – ein rituelles Bad aus dem 12. Jahrhundert – befindet sich in etwa 10 m Tiefe." },
+                { text: "Der Museumsrundgang ermöglicht das Durchschreiten von 2000 Jahren Stadtgeschichte." },
+                { text: "Der Bau des MiQua-Projekts läuft seit 2012 und ist ingenieurtechnisch einzigartig." }
+            ]
+        },
+        meta: {
+            title: "MiQua – Museum im archäologischen Viertel Köln",
+            description: "MiQua – ein unterirdisches Museum im Zentrum von Köln, das römische, jüdische und mittelalterliche archäologische Schichten der Stadt zeigt.",
+            ogTitle: "MiQua – Museum im archäologischen Viertel Köln",
+            ogDescription: "Das unterirdische Museum MiQua ermöglicht das Durchschreiten von 2000 Jahren Kölner Geschichte, einschließlich Praetorium, Mikwe und mittelalterlicher Bauten.",
+            ogImage: "Germany/nrw/koeln/koeln-city/miqua/001.jpg"
         }
     }
 ];
