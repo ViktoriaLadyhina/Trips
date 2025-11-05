@@ -585,7 +585,7 @@ const datas = [
         regionsPath: "nrw",
         districtPath: "city",
         cityPath: "koln",
-        fotoCard: "Germany/nrw/koeln/koeln-city/schokoladenmuseum/001.jpg",
+        fotoCard: "Germany/nrw/koln/koln-city/schokoladenmuseum/001.jpg",
         location: "Köln, Deutschland",
         officialSite: [
             {
@@ -630,7 +630,7 @@ const datas = [
             description: "Das Schokoladenmuseum in Köln zeigt den Weg des Kakaos von der tropischen Plantage bis zur Schokoladentafel. Besuchen Sie die gläserne Fabrik, den 200-kg-Schokoladenbrunnen und entdecken Sie die Geschichte der süßen Versuchung.",
             ogTitle: "Schokoladenmuseum Köln – Das süßeste Museum Deutschlands",
             ogDescription: "Tauchen Sie ein in die Welt von Kakao und Schokolade in Köln: von alten Zivilisationen bis zur modernen Fabrik und dem berühmten Schokoladenbrunnen.",
-            ogImage: "Germany/nrw/koeln/koeln-city/schokoladenmuseum/001.jpg"
+            ogImage: "Germany/nrw/koln/koln-city/schokoladenmuseum/001.jpg"
         }
     },
     {
@@ -641,7 +641,7 @@ const datas = [
         regionsPath: "nrw",
         districtPath: "city",
         cityPath: "koln",
-        fotoCard: "Germany/nrw/koeln/koeln-city/miqua/001.jpg",
+        fotoCard: "Germany/nrw/koln/koln-city/miqua/001.jpg",
         location: "Köln, Deutschland",
         officialSite: [
             {
@@ -705,7 +705,7 @@ const datas = [
             description: "MiQua – ein unterirdisches Museum im Zentrum von Köln, das römische, jüdische und mittelalterliche archäologische Schichten der Stadt zeigt.",
             ogTitle: "MiQua – Museum im archäologischen Viertel Köln",
             ogDescription: "Das unterirdische Museum MiQua ermöglicht das Durchschreiten von 2000 Jahren Kölner Geschichte, einschließlich Praetorium, Mikwe und mittelalterlicher Bauten.",
-            ogImage: "Germany/nrw/koeln/koeln-city/miqua/001.jpg"
+            ogImage: "Germany/nrw/koln/koln-city/miqua/001.jpg"
         }
     }
 ];

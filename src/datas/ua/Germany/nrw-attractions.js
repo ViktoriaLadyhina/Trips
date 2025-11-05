@@ -585,7 +585,7 @@ const datas = [
         regionsPath: "nrw",
         districtPath: "city",
         cityPath: "koln",
-        fotoCard: "Germany/nrw/koeln/koeln-city/schokoladenmuseum/001.jpg",
+        fotoCard: "Germany/nrw/koln/koln-city/schokoladenmuseum/001.jpg",
         location: "Кельн, Німеччина",
         officialSite: [
             {
@@ -630,7 +630,7 @@ const datas = [
             description: "Музей шоколаду — унікальний музей у Кельні, який показує шлях какао від тропічної плантації до шоколадної плитки. Відвідайте скляну фабрику, фонтан із 200 кг шоколаду й зануртеся в історію солодкого задоволення.",
             ogTitle: "Schokoladenmuseum Köln – музей шоколаду в Кельні",
             ogDescription: "Пориньте у світ какао та шоколаду в Кельні: від стародавніх цивілізацій до сучасної фабрики та шоколадного фонтану.",
-            ogImage: "Germany/nrw/koeln/koeln-city/schokoladenmuseum/001.jpg"
+            ogImage: "Germany/nrw/koln/koln-city/schokoladenmuseum/001.jpg"
         }
     },
     {
@@ -641,7 +641,7 @@ const datas = [
         regionsPath: "nrw",
         districtPath: "city",
         cityPath: "koln",
-        fotoCard: "Germany/nrw/koeln/koeln-city/miqua/001.jpg",
+        fotoCard: "Germany/nrw/koln/koln-city/miqua/001.jpg",
         location: "Кельн, Німеччина",
         officialSite: [
             {
@@ -705,7 +705,7 @@ const datas = [
             description: "MiQua – підземний музей у центрі Кельна, що показує римські, єврейські та середньовічні археологічні шари міста.",
             ogTitle: "MiQua – Музей в археологічному кварталі Кельна",
             ogDescription: "Підземний музей MiQua дозволяє пройти через 2000 років історії Кельна, включно з Praetorium, Mikwe та середньовічними будівлями.",
-            ogImage: "Germany/nrw/koeln/koeln-city/miqua/001.jpg"
+            ogImage: "Germany/nrw/koln/koln-city/miqua/001.jpg"
         }
     }
 ]

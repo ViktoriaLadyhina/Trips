@@ -76,7 +76,7 @@ const datas = [
         id: "bruhel_palaces",
         name: "Дворцы Брюля: ансамбль Аугустусбург и Фалькенлюст",
         type: ['palace', 'museum'],
-        path: 'bruhl-palaces',
+        path: 'bruhl_palaces',
         regionsPath: "nrw",
         districtPath: "koln",
         cityPath: "bruhl",
@@ -586,7 +586,7 @@ const datas = [
         regionsPath: "nrw",
         districtPath: "city",
         cityPath: "koln",
-        fotoCard: "Germany/nrw/koeln/koeln-city/schokoladenmuseum/001.jpg",
+        fotoCard: "Germany/nrw/koln/koln-city/schokoladenmuseum/001.jpg",
         location: "Кёльн, Германия",
         officialSite: [
             {
@@ -631,7 +631,7 @@ const datas = [
             description: "Музей шоколада – уникальный музей в Кёльне, который показывает путь какао от тропической плантации до плитки шоколада. Посетите стеклянную фабрику, фонтан из 200 кг шоколада и окунитесь в историю сладкого удовольствия.",
             ogTitle: "Schokoladenmuseum Köln – музей шоколада в Кёльне",
             ogDescription: "Погрузитесь в сладкий мир какао и шоколада в Кёльне: от древних цивилизаций до современной фабрики и шоколадного фонтана.",
-            ogImage: "Germany/nrw/koeln/koeln-city/schokoladenmuseum/001.jpg"
+            ogImage: "Germany/nrw/koln/koln-city/schokoladenmuseum/001.jpg"
         }
     },
     {
@@ -642,7 +642,7 @@ const datas = [
         regionsPath: "nrw",
         districtPath: "city",
         cityPath: "koln",
-        fotoCard: "Germany/nrw/koeln/koeln-city/miqua/001.jpg",
+        fotoCard: "Germany/nrw/koln/koln-city/miqua/001.jpg",
         location: "Кёльн, Германия",
         officialSite: [
             {
@@ -706,7 +706,7 @@ const datas = [
             description: "MiQua – подземный музей в центре Кёльна, показывающий римские, еврейские и средневековые археологические слои города.",
             ogTitle: "MiQua – Музей в археологическом квартале Кёльна",
             ogDescription: "Подземный музей MiQua позволяет пройти сквозь 2000 лет истории Кёльна, включая Praetorium, Mikwe и средневековые постройки.",
-            ogImage: "Germany/nrw/koeln/koeln-city/miqua/001.jpg"
+            ogImage: "Germany/nrw/koln/koln-city/miqua/001.jpg"
         }
     }
 ];

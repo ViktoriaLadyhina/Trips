@@ -78,7 +78,7 @@ const Map = () => {
                         <ul>
                           <li><Link to="/germany/nrw/koln/bruhl">{t.cities.bruhl[lang]}</Link>
                             <ul>
-                              <li><Link to="/germany/nrw/koln/bruhl/attractions/bruhl-palaces">{t.attractions.bruhlPalaces[lang]}</Link></li>
+                              <li><Link to="/germany/nrw/koln/bruhl/attractions/bruhl_palaces">{t.attractions.bruhlPalaces[lang]}</Link></li>
                               <li><Link to="/germany/nrw/koln/bruhl/attractions/max-ernst-museum">{t.attractions.maxErnst[lang]}</Link></li>
                               <li><Link to="/germany/nrw/koln/bruhl/attractions/phantasialand">{t.attractions.phantasialand[lang]}</Link></li>
                             </ul>
