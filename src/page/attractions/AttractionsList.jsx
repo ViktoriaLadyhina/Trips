@@ -72,7 +72,7 @@ const AttractionsList = () => {
 
 
     const attractionsTitle = { ru: "Достопримечательности", ua: "Пам'ятки", de: "Sehenswürdigkeiten" }
-    const NoAttractions = { ru: "Нет достопримечательностей", ua: "Достопримечательностей немає", de: "SKeine Sehenswürdigkeiten" }
+    const NoAttractions = { ru: "Нет достопримечательностей", ua: "Достопримечательностей немає", de: "Keine Sehenswürdigkeiten" }
 
     return (
         <div className="attractions">

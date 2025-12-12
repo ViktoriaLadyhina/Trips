@@ -44,6 +44,7 @@ const Map = () => {
       museumLudwig: { ru: 'Музей Людвига', de: 'Museum Ludwig', ua: 'Музей Людвіга' },
       schokoladenmuseum: { ru: 'Музей шоколада', de: 'Schokoladenmuseum', ua: 'Музей шоколаду' },
       miqua: { ru: 'Музей в археологическом квартале Кёльна – MiQua', de: 'Museum im archäologischen Viertel Köln – MiQua', ua: 'Музей в археологічному кварталі Кельна – MiQua' },
+      koeln_bridges: { ru: 'Мосты Кёльна через Рейн', de: 'Kölner Rheinbrücken', ua: 'Мости Кельна через Рейн' },
 
       sumySpasoPreobrazhensky: { ru: 'Спасо-Преображенский собор', de: 'Spaso-Preobraschenski-Kathedrale', ua: 'Спасо-Преображенський собор' },
     }
@@ -104,6 +105,7 @@ const Map = () => {
                           <li><Link to="/germany/nrw/city/koln/attractions/farina-duftmuseum">{t.attractions.farinaDuftmuseum[lang]}</Link></li>
                           <li><Link to="/germany/nrw/city/koln/attractions/museum-ludwig">{t.attractions.museumLudwig[lang]}</Link></li>
                           <li><Link to="/germany/nrw/city/koln/attractions/schokoladenmuseum">{t.attractions.schokoladenmuseum[lang]}</Link></li>
+                          <li><Link to="/germany/nrw/city/koln/attractions/koeln_bridges">{t.attractions.koeln_bridges[lang]}</Link></li>
                         </ul>
                       </li>
                     </ul>
