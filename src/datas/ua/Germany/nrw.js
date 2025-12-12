@@ -210,7 +210,7 @@ const datas = {
                         {
                             id: 3,
                             name: "Меркіш",
-                            fullName: "Kreis Märkischer Kreis",
+                            fullName: "Märkischer Kreis",
                             parentDistrict: "Арнсберг",
                             center: [
                                 { bold: "Центр району:" },
@@ -245,7 +245,7 @@ const datas = {
                                 { id: 3, name: "Вердоль", hasInfo: false },
                                 { id: 4, name: "Ізерлон", hasInfo: false },
                                 { id: 5, name: "Кірспе", hasInfo: false },
-                                { id: 6, name: "Люденшайд", hasInfo: false },
+                                { id: 6, name: "Люденшайд", hasInfo: true, path: 'luedenscheid' },
                                 { id: 7, name: "Майнерцхаген", hasInfo: false },
                                 { id: 8, name: "Менден", hasInfo: false },
                                 { id: 9, name: "Нахродт-Віблінгверде", hasInfo: false },

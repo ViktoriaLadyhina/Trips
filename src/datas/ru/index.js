@@ -4,7 +4,8 @@ import nrwCity from './germany/nrw-city';
 import nrwAttractions from './germany/nrw-attractions'
 
 // Украина
-import sumska from './ukraine/sumska'
+import sumska from './ukraine/sumska';
+import sumskaAttractions from './ukraine/sumska-attractions'
 
 
 export const regions = {
@@ -17,6 +18,7 @@ export const regions = {
   ukraine: {
     countryName: "Украина",
     sumska,
+    'sumska-attractions': sumskaAttractions
   },
 };
 
@@ -43,6 +45,6 @@ export const attractionsSearch = {
     'nrw-attractions': nrwAttractions
   },
   ukraine: {
-
+    'sumska-attractions': sumskaAttractions
   },
 }

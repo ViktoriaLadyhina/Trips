@@ -7,7 +7,7 @@ const datas = [
         regionsPath: "nrw",
         districtPath: "city",
         cityPath: "koln",
-        fotoCard: "Germany/nrw/koln/koln-city/koln-cathedral/023.jpg",
+        fotoCard: "Germany/nrw/koln/koln-city/koln-cathedral/001.jpg",
         location: "Köln, Deutschland",
         address: [{ bold: "Adresse:", text: " Domkloster 4, 50667 Köln, Deutschland" }],
         officialSite: [
@@ -47,11 +47,11 @@ const datas = [
                 { img: "Germany/nrw/koln/koln-city/koln-cathedral/026.jpg", bold: "4. Kreuzigung Gero.", text: "In der Kapelle des Heiligen Abendmahls befindet sich eines der ältesten und ausdrucksvollsten Kreuzigungen Europas – die Gero-Kreuzigung (um 976). Christus ist mit geschlossenen Augen dargestellt – das Bild des leidenden Christus patiens. Die Figur ist 1,88 m hoch. Sein Körper ist nach vorne geneigt, Schmerz und Spannung sind darin zu erkennen, und das Gesicht wirkt vom letzten Atemzug gezeichnet. Dies ist nicht nur ein Glaubenssymbol, sondern ein echtes Drama im Holz. <br>Der barocke Altar um das Kreuz wurde 1683 vom Kanoniker Heinrich Mering gestiftet." },
                 { bold: "5. Hochaltar.", text: "Etwa 1320 aus einem einzigen Block schwarzem Marmor geschaffen, gilt dieser Altar als einer der größten in der christlichen Welt. Geschenkt vom Erzbischof Wilhelm von Gennep, symbolisiert er den Triumph von Licht und Glaubenskraft." },
                 { img: "Germany/nrw/koln/koln-city/koln-cathedral/024.jpg", bold: "6. Schrein der Heiligen Drei Könige.", text: "Die Hauptreliquie des Kölner Doms – der Schrein der Heiligen Drei Könige (Dreikönigenschrein), geschaffen von Meister Nikolaus aus Verden und seinen Schülern Ende 12. – Anfang 13. Jh. <br>Dieses Meisterwerk ist 2,20 m lang, 1,53 m hoch und 1,10 m breit, mit vergoldeten Silberplatten bezogen und mit Tausenden von Edelsteinen, Perlen und antiken Gemmen geschmückt. Die Reliefs zeigen Szenen aus Altem und Neuem Testament und unterstreichen die Idee der Kontinuität des Glaubens. <br>Auf der Vorderseite ist die Madonna mit dem Kind dargestellt, vor der die drei Könige – Kaspar, Melchior und Balthasar – knien. Ihnen schloss sich ein vierter an – der deutsche König Otto IV., der ewig bei ihnen sein wollte. <br>Am 6. Januar, am Fest der Epiphanie, wird die Vorderseite des Schreins entfernt – und Gläubige sehen die drei Schädel der Könige, gekrönt mit goldenen Kronen. Laut Legende wurden diese Reliquien 1164 von Erzbischof Reinald von Dassel aus Mailand gebracht – genau dafür wurde der Dom errichtet." },
-                { bold: "7. Chöre", text: " – eines der ersten fertiggestellten Teile des Doms. Zwischen 1308–1311 wurden die Holzelemente fein geschnitzt, und ein Jahrzehnt später mit Fresken und Glasfenstern mit biblischen Königen verziert. Das Licht durch diese Fenster verleiht dem Innenraum den Eindruck eines ewigen Morgens." },
+                { img: "Germany/nrw/koln/koln-city/koln-cathedral/010.jpg", bold: "7. Chöre", text: " – eines der ersten fertiggestellten Teile des Doms. Zwischen 1308–1311 wurden die Holzelemente fein geschnitzt, und ein Jahrzehnt später mit Fresken und Glasfenstern mit biblischen Königen verziert. Das Licht durch diese Fenster verleiht dem Innenraum den Eindruck eines ewigen Morgens." },
                 { bold: "8. Königs-Kapelle.", text: "In der Königs-Kapelle sind Glasfenster des frühen 14. Jahrhunderts zu sehen, die Szenen der Anbetung des Jesuskindes darstellen. Hier ruht auch das Herz von <b>Maria de’ Medici</b>, der französischen Königin, die 1642 in Köln starb. Die weiße Marmorplatte über dem Grab erinnert an ihr bewegtes Leben und daran, dass diese Kirche auch Zuflucht für vertriebene Monarchen war." },
                 { bold: "9. Innen Galerie.", text: "Der breite Umgehungsgang hinter dem Altar wurde speziell für Pilger entworfen, damit sie ungehindert den Schrein der Könige erreichen konnten. In diesem architektonischen Konzept zeigt sich Fürsorge für die Menschen – die Verbindung von Geistlichem und Praktischem." },
-                { bold: "10. Stephan Lochner Triptychon.", text: "Im Marienkapelle befindet sich das Meisterwerk der deutschen Malerei des 15. Jahrhunderts – das Triptychon von Stephan Lochner. Auf der Mitteltafel ist die Anbetung der Könige dargestellt, auf den Seitenheften die Heiligen Ursula und Gereon, Schutzpatrone Kölns. Wenn die Flügel geschlossen sind, erscheint die Verkündigungsszene. <br>Dies ist eines jener Werke, vor denen man schweigen möchte – denn das Licht, das von den Gesichtern der Könige ausgeht, wirkt lebendig." },
-                { bold: "Mailänder Madonna.", text: "Erzbischof Reinald von Dassel brachte aus Mailand die geschnitzte Darstellung der Madonna, die als wundertätig verehrt wurde. Nach dem Brand 1248 ging das Original verloren, aber um 1290 wurde eine neue Statue geschaffen, bekannt als Mailänder Madonna. <br>Ihre Eleganz und Sanftheit der Linien machen sie zu einem der schönsten Beispiele gotischer Skulptur. Im 19. Jh. wurde sie auf ein neues Podest gesetzt und mit Krone und Zepter gekrönt. Noch Jahrhunderte später bleibt sie ein Symbol der Zärtlichkeit und mütterlichen Schutzes." },
+                { img: "Germany/nrw/koln/koln-city/koln-cathedral/013.jpg", bold: "10. Stephan Lochner Triptychon.", text: "Im Marienkapelle befindet sich das Meisterwerk der deutschen Malerei des 15. Jahrhunderts – das Triptychon von Stephan Lochner. Auf der Mitteltafel ist die Anbetung der Könige dargestellt, auf den Seitenheften die Heiligen Ursula und Gereon, Schutzpatrone Kölns. Wenn die Flügel geschlossen sind, erscheint die Verkündigungsszene. <br>Dies ist eines jener Werke, vor denen man schweigen möchte – denn das Licht, das von den Gesichtern der Könige ausgeht, wirkt lebendig." },
+                { img: "Germany/nrw/koln/koln-city/koln-cathedral/021.jpg", bold: "Mailänder Madonna.", text: "Erzbischof Reinald von Dassel brachte aus Mailand die geschnitzte Darstellung der Madonna, die als wundertätig verehrt wurde. Nach dem Brand 1248 ging das Original verloren, aber um 1290 wurde eine neue Statue geschaffen, bekannt als Mailänder Madonna. <br>Ihre Eleganz und Sanftheit der Linien machen sie zu einem der schönsten Beispiele gotischer Skulptur. Im 19. Jh. wurde sie auf ein neues Podest gesetzt und mit Krone und Zepter gekrönt. Noch Jahrhunderte später bleibt sie ein Symbol der Zärtlichkeit und mütterlichen Schutzes." },
                 { bold: "Archäologische Funde / Lapidarium", text: " – Funde unter dem Fundament: Sarkophage, Reliquien aus dem 7.–6. Jh., sowie Sarkophage von Erzbischöfen (z. B. der Sarkophag der Heiligen Irmgardis), ausgestellt in unterirdischen Räumen/Lapidarium." }
             ]
         },
@@ -69,7 +69,7 @@ const datas = [
             description: "Der Kölner Dom – Symbol der Stadt und Meisterwerk gotischer Architektur. Baugeschichte, Reliquien, Glasfenster, Glocken und Geheimnisse des Doms.",
             ogTitle: "Kölner Dom: Geschichte, Architektur und Reliquien",
             ogDescription: "Tauchen Sie ein in die Geschichte des Kölner Doms – Größe, Reliquien, Architektur und Intrigen des gotischen Meisterwerks.",
-            ogImage: "Germany/nrw/koln/koln-city/koln-cathedral/023.jpg"
+            ogImage: "Germany/nrw/koln/koln-city/koln-cathedral/001.jpg"
         }
     },
     {
@@ -356,74 +356,61 @@ const datas = [
         },
     },
     {
-        id: "rathaus_koln_miqua",
-        name: "Kölner Rathaus und archäologisches Quartier MiQua",
-        type: ['historical_building', 'museum'],
-        path: "rathaus-koln",
+        id: "rathaus",
+        name: "Kölner Rathaus",
+        type: ['historical_building'],
+        path: "rathaus",
         regionsPath: "nrw",
         districtPath: "city",
         cityPath: "koln",
         fotoCard: "Germany/nrw/koln/koln-city/rathaus-koeln/Rathaus-Köln.jpg",
         location: "Köln, Deutschland",
-        address: [{ bold: "Adresse Kölner Rathaus:", text: " Rathausplatz 2, 50667 Köln, Deutschland " }, { bold: "<br>Adresse MiQua:", text: " Augustiner Straße 10–12, 50667 Köln, Deutschland " }],
+        address: [{ bold: "Adresse des Kölner Rathauses:", text: "Rathausplatz 2, 50667 Köln, Deutschland" },],
         officialSite: [
-            { bold: "Offizielle Website", link: "https://www.stadt-koeln.de/", text: ' der Stadt Köln (Rathaus)' },
-            { bold: "<br> Projekt MiQua", link: "https://miqua.lvr.de/", text: ' – archäologisches Museum' }
+            { bold: "Offizielle Website", link: "https://www.stadt-koeln.de/", text: " der Stadt Köln (Rathaus)" },
         ],
-        unesco_status: {
-            included: false
-        },
+        unesco_status: { included: false },
         tickets_and_entry: {
             title: "Eintritt und Zugang",
             items: [
-                { bold: "Zugang:", text: "Das Rathaus ist ein aktives Gebäude des Stadtrats. Der Zugang zu den Verwaltungsräumen ist eingeschränkt, jedoch sind Teile der Säle und der Turm im Rahmen von Führungen zugänglich. Führungen durch das Rathaus finden nach Zeitplan statt und werden auf der Website der Stadt Köln angegeben." },
-                { bold: "MiQua:", text: "Der Besuch des archäologischen Quartiers ist im Rahmen von Führungen mit einem Guide möglich. Nach Abschluss der Bauarbeiten wird das Museum für den freien Besuch geöffnet." }
+                { bold: "Zugang:", text: "Das Rathaus ist ein aktives Verwaltungsgebäude der Stadt Köln. Der Zugang zu den Verwaltungsräumen ist eingeschränkt, jedoch sind Teile der Säle und der Turm im Rahmen von Führungen zugänglich. Führungen finden nach Zeitplan statt, Details auf der Website der Stadt Köln." },
             ]
         },
-        short_description: "Das Kölner Rathaus ist das älteste Verwaltungsgebäude Deutschlands, das einen gotischen Turm, eine Renaissance-Loggia und den historischen Hansasaal kombiniert. Unter ihm befindet sich der einzigartige archäologische Museumskomplex MiQua mit Überresten des römischen Praetoriums und des jüdischen Viertels.",
+        short_description: "Das Kölner Rathaus – das älteste Verwaltungsgebäude Deutschlands, vereint einen gotischen Turm, eine Renaissance-Loggia und den historischen Hansasaal.",
         full_description: {
             title: "Beschreibung und Geschichte",
             items: [
-                { text: "Das Kölner Rathaus (Kölner Rathaus) ist eines der wichtigsten Symbole der Stadt und das älteste Gebäude der kommunalen Verwaltung in Deutschland. Es vereint architektonische Elemente der Gotik, Renaissance und moderner Restaurierungen." },
-                { text: "Die ersten Erwähnungen des Gebäudes, in dem sich die Bürger versammelten, stammen aus dem 12. Jahrhundert (1135-1152). Im 14. Jahrhundert begann der Bau des neuen Komplexes, einschließlich des <b>Hansasaals</b>, in dem 1367 Vertreter der Hanse tagten." },
-                { text: "Anfang des 15. Jahrhunderts (1407-1414) wurde der Komplex um den imposanten <b>Rathaus-Turm (Ratsturm)</b> mit einer Höhe von etwa 61 Metern erweitert – ein Beispiel für die Spätgotik. Seine Fassade wird von über hundert Steinfiguren geschmückt, darunter nicht nur historische Persönlichkeiten, sondern auch moderne Kölner Helden – z. B. der Schriftsteller Heinrich Böll und Karnevalsfiguren." },
-                { text: "Im 16. Jahrhundert (1569-1573) errichtete der Architekt Wilhelm Vernukken aus Kalkar die elegante <b>Renaissance-Loggia (Laube)</b>, inspiriert von der Architektur Antwerpens. Ihre Arkaden und reich verzierte Steinschnitzerei verleihen dem Gebäude ein feierliches Aussehen." },
-                { text: "In der Nähe befand sich der <b>Spanischer Bau</b>, in dem Gerichts- und Verwaltungsbehörden untergebracht waren." },
-                { text: "Während des Zweiten Weltkriegs wurde das Rathaus stark durch Bomben beschädigt: Dach, Fassaden und ein großer Teil des Interieurs wurden zerstört. Nach dem Krieg, ab Ende der 1940er Jahre, begann eine umfangreiche Restaurierung. Die Wiederherstellung dauerte Jahrzehnte, einschließlich der vollständigen Rekonstruktion des Hansasaals und des Turms." },
-                { text: "Bis in die 1970er Jahre waren die Hauptarbeiten abgeschlossen, und das Gebäude wurde wieder zur Residenz des Stadtrats." },
-                { text: "In der Nähe des Rathauses entdeckten Archäologen Überreste des mittelalterlichen jüdischen Viertels, einschließlich der <b>Mikwe – rituelles Bad aus dem 12. Jahrhundert</b>, das in etwa 10 Metern Tiefe erhalten geblieben ist." },
-                { text: "Heute entsteht unter dem Rathaus und den umliegenden Quartieren das <b>MiQua – Museum im Quartier</b>, ein archäologisches Museum mit einer Fläche von etwa 6000 m²." },
-                { text: "Das Museum wird Exponate aus drei historischen Epochen vereinen: <b>römisch</b> (Reste des Praetoriums – Palast des Statthalters der römischen Provinz Niedergermanien), <b>jüdisch-mittelalterlich</b> (Wohnhäuser, Mikwe, Synagoge), <b>mittelalterlich-christlich</b> (Gebäude der Zünfte und Fundamente des Rathauses)." },
-                { text: "MiQua wird als unterirdischer Rundgang von etwa 700 Metern Länge gebaut, bei dem die Besucher durch verschiedene historische Schichten der Stadt gehen können." },
-                { text: "Das Projekt ist ingenieurtechnisch einzigartig: Das Museum ruht auf einer massiven Betonplatte von etwa 50 cm Dicke, die auf Hunderten Pfählen bis zu 36 Metern in die Erde reichen. Der Bau ist durch die Notwendigkeit erschwert, archäologische Funde in ihrem ursprünglichen Zustand zu erhalten." },
-                { text: "Die offizielle Eröffnung von MiQua wurde mehrfach verschoben, jedoch kann bereits jetzt ein Teil der unterirdischen Ausgrabungen im Rahmen von Führungen besichtigt werden." }
+                { text: "Das Kölner Rathaus (Kölner Rathaus) ist eines der wichtigsten Symbole der Stadt und das älteste Gebäude der kommunalen Verwaltung in Deutschland. Es vereint architektonische Elemente der Gotik, Renaissance und modernen Restaurierungen. Das Rathaus diente und dient weiterhin als Symbol der städtischen Macht und Selbstverwaltung." },
+                { text: "Die ersten Erwähnungen des Gebäudes, in dem sich die Bürger versammelten, stammen aus dem 12. Jahrhundert (1135–1152). Im 14. Jahrhundert begann der Bau eines neuen Komplexes, einschließlich des <b>Hansasaals</b>, in dem 1367 Vertreter der Hanse tagten." },
+                { text: "Anfang des 15. Jahrhunderts (1407–1414) wurde dem Komplex der imposante <b>Rathaus-Turm (Ratsturm)</b> mit einer Höhe von etwa 61 Metern hinzugefügt – ein Beispiel der Spätgotik. Seine Fassade ist mit über hundert Steinfiguren geschmückt, darunter nicht nur historische Persönlichkeiten, sondern auch moderne Kölner Helden – z. B. der Schriftsteller Heinrich Böll und Karnevalsfiguren." },
+                { text: "Im 16. Jahrhundert (1569–1573) errichtete der Architekt Wilhelm Vernukken aus Kalkar die kunstvolle <b>Renaissance-Loggia (Laube)</b>, inspiriert von der Architektur Antwerpens. Ihre Arkaden und reich verzierte Steinmetzarbeiten verleihen dem Gebäude ein feierliches Aussehen." },
+                { text: "In der Nähe befand sich das <b>Spanischer Bau</b>, in dem Gerichts- und Verwaltungsorgane untergebracht waren." },
+                { text: "Während des Zweiten Weltkriegs wurde das Rathaus stark durch Bombenangriffe beschädigt: Dach, Fassaden und ein Großteil des Interieurs wurden zerstört. Nach dem Krieg, ab Ende der 1940er Jahre, begann eine umfassende Restaurierung. Die Wiederherstellung dauerte Jahrzehnte, einschließlich der vollständigen Rekonstruktion von Hansasaal und Turm." },
+                { text: "Bis in die 1970er Jahre waren die Hauptarbeiten abgeschlossen, und das Gebäude wurde wieder Sitz des Stadtrats." },
             ]
         },
         interestingFacts: {
             title: "Interessante Fakten",
             items: [
-                { text: "Auf dem Rathaus-Turm ist der hölzerne Kopf Platzjabbeck angebracht, der jede Stunde die Zunge herausstreckt – ein Symbol der Spott über die Macht." },
+                { text: "Auf dem Turm des Rathauses befindet sich der hölzerne Kopf Platzjabbeck, der jede Stunde die Zunge herausstreckt – ein Symbol der Verspottung der Macht." },
                 { text: "Der Hansasaal ist mit der Skulpturenkomposition 'Neun tapfere Helden' geschmückt, die Figuren aus heidnischer, jüdischer und christlicher Tradition vereint." },
-                { text: "Die Fundamente des Rathauses ruhen teilweise auf Überresten der antiken römischen Stadtmauer." },
-                { text: "MiQua vereint drei historische Schichten: römisch, jüdisch und mittelalterlich-christlich, und schafft einen kontinuierlichen Rundgang durch 2000 Jahre Kölner Geschichte." },
-                { text: "Das MiQua-Projekt ist für seine komplexen Ingenieurlösungen bekannt – das Museum ist praktisch 'über' den archäologischen Ruinen aufgehängt." }
+                { text: "Die Fundamente des Rathauses ruhen teilweise auf den Überresten der römischen Stadtmauer." },
             ]
         },
-        construction_period: "12.-16. Jahrhundert, mit anschließenden Restaurierungen nach dem Zweiten Weltkrieg",
-        founder: "Stadt Köln unter Beteiligung der Architekten Wilhelm Vernukken und Meister der gotischen Schule",
+        construction_period: "12.–16. Jahrhundert, mit anschließenden Restaurierungen nach dem Zweiten Weltkrieg",
+        founder: "Stadt Köln, unter Mitwirkung des Architekten Wilhelm Vernukken und der Meister der gotischen Schule",
         sub_objects: {
-            title: "Objekte des Rathauses und des archäologischen Quartiers",
+            title: "Objekte des Rathauses",
             items: [
-                { bold: "Hansasaal", text: " – Hauptsaal des Rathauses aus dem 14. Jahrhundert, Sitzungen der Hanse, geschmückt mit Skulpturen der Neun Helden." },
-                { bold: "Ratsturm", text: " – Turm mit einer Höhe von 61 Metern und Hunderten von Figuren, Symbol der Macht und des Stolzes der Stadt." },
-                { bold: "MiQua", text: " – Unterirdisches archäologisches Museum mit 6000 m² Fläche, Ruinen des römischen Praetoriums und des jüdischen Viertels." }
+                { bold: "Hansasaal", text: " – Hauptsaal des Rathauses aus dem 14. Jahrhundert, Sitz der Hanse, geschmückt mit Skulpturen der Neun Helden." },
+                { bold: "Ratsturm", text: " – Turm mit 61 Metern Höhe und Hunderten von Figuren, Symbol der Macht und des Stolzes der Stadt." },
             ]
         },
         meta: {
-            title: "Kölner Rathaus und archäologisches Quartier MiQua – Geschichte Kölns unter der Stadt",
-            description: "Kölner Rathaus: gotischer Turm, Renaissance-Loggia und unterirdisches Museum MiQua mit römischen und jüdischen Artefakten.",
-            ogTitle: "Rathaus Köln und MiQua – Geschichte unter der Stadt",
-            ogDescription: "Erkunden Sie das Kölner Rathaus und das unterirdische Museum MiQua, wo das antike Rom auf das Mittelalter trifft.",
+            title: "Kölner Rathaus",
+            description: "Kölner Rathaus: gotischer Turm, Renaissance-Loggia",
+            ogTitle: "Kölner Rathaus: gotischer Turm, Renaissance-Loggia",
+            ogDescription: "Das Kölner Rathaus – das älteste Verwaltungsgebäude Deutschlands, vereint gotischen Turm, Renaissance-Loggia und den historischen Hansasaal.",
             ogImage: "Germany/nrw/koln/koln-city/rathaus-koeln/Rathaus-Köln.jpg"
         }
     },
@@ -497,7 +484,7 @@ const datas = [
         ],
         construction_period: "1709 (Gründungsjahr der Farina-Fabrik)",
         founder: "Johann Maria Farina",
-        short_description_de: "Das Duftmuseum im Farina-Haus, auch bekannt als „Haus des Kölnisch Wassers“, ist das älteste Duftmuseum der Welt und die Geburtsstätte des berühmten Eau de Cologne, oder „Kölner Wasser“. Hier schuf Johann Maria Farina 1709 das erste Eau de Cologne, das zu einem Symbol der Stadt wurde und Köln weltberühmt machte.",
+        short_description: "Das Duftmuseum im Farina-Haus, auch bekannt als „Haus des Kölnisch Wassers“, ist das älteste Duftmuseum der Welt und die Geburtsstätte des berühmten Eau de Cologne, oder „Kölner Wasser“. Hier schuf Johann Maria Farina 1709 das erste Eau de Cologne, das zu einem Symbol der Stadt wurde und Köln weltberühmt machte.",
         full_description: {
             title: "Beschreibung und Geschichte",
             items: [
@@ -589,6 +576,197 @@ const datas = [
             ogDescription: "Besuchen Sie das Museum Ludwig in Köln, eine der führenden Sammlungen zeitgenössischer Kunst weltweit, gegründet auf der Sammlung des deutschen Industriellen Peter Ludwig und seiner Frau Irene.",
             ogImage: "Germany/nrw/koln/koln-city/museum-ludwig/001.jpg"
         }
+    },
+    {
+        id: "schokoladenmuseum",
+        name: "Schokoladenmuseum",
+        type: ["museum"],
+        path: "schokoladenmuseum",
+        regionsPath: "nrw",
+        districtPath: "city",
+        cityPath: "koln",
+        fotoCard: "Germany/nrw/koln/koln-city/schokoladenmuseum/001.jpg",
+        location: "Köln, Deutschland",
+        officialSite: [
+            {
+                bold: "Offizielle Website des Schokoladenmuseums Köln",
+                link: "https://www.schokoladenmuseum.de/"
+            }
+        ],
+        construction_period: "1992–1993 (eröffnet am 31. Oktober 1993)",
+        architects: ["Fritz Eller"],
+        founder: "Hans Imhoff – Gründer des Museums, deutscher Schokoladenunternehmer",
+        short_description: "Das Schokoladenmuseum Köln präsentiert 5000 Jahre Kakaokultur und Schokoladenproduktion – von alten Zivilisationen bis zur modernen Fabrik, mit einem beeindruckenden Schokoladenbrunnen und einer gläsernen „Schokoladenfabrik“.",
+        full_description: {
+            title: "Beschreibung und Geschichte",
+            items: [
+                { bold: "Über das Museum.", text: "Das Museum befindet sich auf der Halbinsel Rheinauhafen in Köln und bietet den Besuchern eine Reise durch die Geschichte des Kakaos und der Schokolade bis hin zur modernen Industrie." },
+                { bold: "Hauptattraktion", text: " – ein drei Meter hoher Schokoladenbrunnen mit rund 200 kg flüssiger Schokoladenmasse, der zum Symbol des Museums wurde." },
+                { bold: "Ausstellung und Bedeutung.", text: "Auf über 4000 m² und mit mehr als 2500 Exponaten erzählt das Museum von der Kulturgeschichte des Kakaos, der Industrialisierung der Schokoladenproduktion und der modernen Konsumgesellschaft." },
+                { bold: "Gebäude und Architektur.", text: "Das Gebäude kombiniert das alte Zollamtsgebäude (Hauptzollamt) mit einem neuen Glas-Aluminium-Anbau im postmodernen Stil am Rheinufer. Architekt – Fritz Eller." },
+                { bold: "Weitere Besonderheiten.", text: "Im Museum befindet sich eine „gläserne Schokoladenfabrik“, in der Besucher den gesamten Herstellungsprozess von der Röstung der Kakaobohnen bis zur fertigen Tafel beobachten können." }
+            ]
+        },
+        tickets_and_entry: {
+            title: "Praktische Informationen",
+            items: [
+                { bold: "Adresse:", text: "Am Schokoladenmuseum 1a, 50678 Köln" },
+                { bold: "Öffnungszeiten:", text: "Täglich 10:00 – 18:00. Letzter Einlass eine Stunde vor Schließung." },
+                { bold: "Eintrittspreise (ca. 2025):", text: "Erwachsene ~16,50 €, Kinder/Schüler ~9,50 € u.a." },
+                { bold: "Parken und Verkehr:", text: "Parkhaus „Rheinauhafen“ in der Nähe; fußläufig vom Stadtzentrum Kölns erreichbar." }
+            ]
+        },
+        interestingFacts: {
+            title: "Interessante Fakten",
+            items: [
+                { text: "Das Museum finanziert sich vollständig selbst und erhält keine Zuschüsse – eine Seltenheit in der Museumswelt." },
+                { text: "Die Ausstellung umfasst 5000 Jahre Kakaogeschichte – von den Maya und Azteken bis heute." },
+                { text: "In der gläsernen Schokoladenfabrik kann man beobachten, wie Schokoladenfiguren – etwa Hasen, Herzen oder Pandas – von Hand hergestellt werden." },
+                { text: "Das Museum wurde am 31. Oktober 1993 eröffnet und zählt zu den meistbesuchten Museen Kölns." }
+            ]
+        },
+        meta: {
+            title: "Schokoladenmuseum Köln: Eine Reise in die Welt des Kakaos und der Süßigkeiten",
+            description: "Das Schokoladenmuseum in Köln zeigt den Weg des Kakaos von der tropischen Plantage bis zur Schokoladentafel. Besuchen Sie die gläserne Fabrik, den 200-kg-Schokoladenbrunnen und entdecken Sie die Geschichte der süßen Versuchung.",
+            ogTitle: "Schokoladenmuseum Köln – Das süßeste Museum Deutschlands",
+            ogDescription: "Tauchen Sie ein in die Welt von Kakao und Schokolade in Köln: von alten Zivilisationen bis zur modernen Fabrik und dem berühmten Schokoladenbrunnen.",
+            ogImage: "Germany/nrw/koln/koln-city/schokoladenmuseum/001.jpg"
+        }
+    },
+    {
+        id: "miqua",
+        name: "Museum im archäologischen Viertel Köln – MiQua",
+        type: ["museum"],
+        path: "miqua",
+        regionsPath: "nrw",
+        districtPath: "city",
+        cityPath: "koln",
+        fotoCard: "Germany/nrw/koln/koln-city/miqua/001.jpg",
+        location: "Köln, Deutschland",
+        officialSite: [
+            {
+                bold: "Offizielle Website des Museums im archäologischen Viertel Köln – MiQua",
+                link: "https://miqua.lvr.de/de/index.html"
+            }
+        ],
+        construction_period: "2012 – heute (Bau läuft noch)",
+        architects: ["Architekturbüro Staab, Berlin"],
+        founder: "Landschaftsverband Rheinland (LVR)",
+        short_description: "MiQua – ein modernes unterirdisches Museum im Zentrum von Köln, das archäologische Schichten der Stadt von der Römerzeit bis zum Mittelalter zeigt, einschließlich des jüdischen Viertels und mittelalterlicher christlicher Bauten.",
+        full_description: {
+            title: "Beschreibung und Geschichte",
+            items: [
+                { bold: "Über das Museum", text: "MiQua – ein modernes unterirdisches Museum, das die archäologischen Schichten Kölns eröffnet, von der Römerzeit über das mittelalterliche jüdische Viertel bis zu mittelalterlichen christlichen Bauten. Das Museum befindet sich direkt unter dem historischen Stadtzentrum und ermöglicht den Besuchern, „2000 Jahre Kölner Geschichte zu durchschreiten“." },
+                { text: "Das Projekt ist einzigartig durch seine ingenieurtechnischen Lösungen: Die unterirdischen Ausstellungen sind durch Bohrpfahlkonstruktionen und große Betonbauwerke geschützt, was die Erhaltung der archäologischen Objekte in ihrem ursprünglichen Zustand ermöglicht." },
+                { text: "MiQua vereint das archäologische Erbe Kölns mit modernen Museumserfahrungen. Besucher können durch die unterirdischen Schichten der Stadtgeschichte gehen, die römische, jüdische und mittelalterliche Kultur kennenlernen und sehen, wie moderne Ingenieurlösungen die historischen Funde schützen." },
+            ]
+        },
+        sub_objects: {
+            title: "Exponate und archäologische Objekte",
+            items: [
+                { bold: "Römische Epoche:" },
+                { bold: "- Praetorium", text: " – Überreste des Palastes der römischen Statthalter der Provinz Niedergermanien." },
+                { bold: "- Römischer Abwasserkanal", text: " unter der Grosse Budengasse." },
+                { bold: "- Stadtbefestigungen und Elemente der städtischen Infrastruktur,", text: " einschließlich des vermuteten Bereichs römischer Gräber (Portikus, geplant zur Eröffnung)." },
+                { bold: "Mittelalterliches jüdisches Viertel:" },
+                { text: "- Wohnhäuser und Synagoge." },
+                { bold: "- Mikwe", text: " – rituelles Bad aus dem 12. Jahrhundert, erhalten in etwa 10 m Tiefe." },
+                { text: "- Das Viertel war einst die größte jüdische Siedlung Europas." },
+                { bold: "Mittelalterliche christliche Epoche:" },
+                { text: "- Zunfthäuser (z. B. das Viertel der Handwerker und Juweliere – Goldschmiedeviertel)." },
+                { text: "- Fundamente des alten Rathauses und angrenzender Gebäude." },
+                { bold: "Ingenieurtechnische Besonderheiten:" },
+                { text: "- Der unterirdische Rundgang verläuft mehrere Meter unter dem historischen Zentrum." },
+                { text: "- Das Museum wurde unter Einsatz von Bohrpfählen und Betonbauwerken zum Schutz der archäologischen Schichten errichtet." },
+                { text: "- Die architektonische Lösung ermöglicht die Darstellung der Schichten verschiedener Epochen ohne Beeinträchtigung der Objekte." },
+                { text: "- Die Konstruktion sieht keine inneren Stützpfeiler vor, was einen freien Durchgang und eine anschauliche Präsentation der historischen Schichten ermöglicht." }
+            ]
+        },
+        tickets_and_entry: {
+            title: "Praktische Informationen",
+            items: [
+                { bold: "Adresse:", text: "Rathausplatz 2, 50667 Köln, Deutschland" },
+                { bold: "Status des Museums:", text: "Das Museum ist nicht vollständig eröffnet: Der offizielle Abschluss des Projekts ist für die kommenden Jahre geplant. Teile des Rundgangs und der Ausstellungen sind bereits im Rahmen von Führungen zugänglich. Zukünftig ist die Erweiterung der Präsentationsflächen geplant, einschließlich Portikus und weiterer archäologischer Objekte." },
+                { bold: "Öffnungszeiten:", text: "Täglich 10:00–18:00 Uhr (kann je nach Führungen und Sonderausstellungen variieren)" },
+                { bold: "Eintrittspreise (ca. 2025):", text: "Erwachsene – ca. 6–8 €, Kinder/Schüler – kostenlos oder ermäßigt, Führungen gesondert zu bezahlen." }
+            ]
+        },
+        interestingFacts: {
+            title: "Interessante Fakten",
+            items: [
+                { text: "MiQua liegt unter dem Rathausplatz und teilweise unter dem Rathausgebäude." },
+                { text: "Mikwe – ein rituelles Bad aus dem 12. Jahrhundert – befindet sich in etwa 10 m Tiefe." },
+                { text: "Der Museumsrundgang ermöglicht das Durchschreiten von 2000 Jahren Stadtgeschichte." },
+                { text: "Der Bau des MiQua-Projekts läuft seit 2012 und ist ingenieurtechnisch einzigartig." }
+            ]
+        },
+        meta: {
+            title: "MiQua – Museum im archäologischen Viertel Köln",
+            description: "MiQua – ein unterirdisches Museum im Zentrum von Köln, das römische, jüdische und mittelalterliche archäologische Schichten der Stadt zeigt.",
+            ogTitle: "MiQua – Museum im archäologischen Viertel Köln",
+            ogDescription: "Das unterirdische Museum MiQua ermöglicht das Durchschreiten von 2000 Jahren Kölner Geschichte, einschließlich Praetorium, Mikwe und mittelalterlicher Bauten.",
+            ogImage: "Germany/nrw/koln/koln-city/miqua/001.jpg"
+        }
+    },
+    {
+    "id": "koeln_bridges",
+    "name": "Kölner Rheinbrücken",
+    "type": ["architecture", "bridges"],
+    "path": "koeln_bridges",
+    "regionsPath": "nrw",
+    "districtPath": "city",
+    "cityPath": "koln",
+    "fotoCard": "Germany/nrw/koeln/koeln-city/bridges/hohenzollern/001.jpg",
+    "location": "Köln, Deutschland",
+    "construction_period": "Verschiedene Bauphasen, 20.–21. Jahrhundert",
+    "founder": "Stadt Köln und die bundesweiten Verkehrsdienste",
+    "short_description": "Im Stadtgebiet Köln überqueren acht Brücken den Rhein. Jede von ihnen besitzt eine eigene Geschichte, Architektur und funktionale Bedeutung. Einige dieser Brücken gelten als Wahrzeichen der Stadt, sichern Verkehrsströme, bieten Fußwege und eröffnen panoramische Ausblicke auf den Kölner Dom und die Rheinufer.",
+    "full_description": {
+        "title": "Beschreibung und Geschichte",
+        "items": [
+            { "bold": "Allgemeine Informationen:", "text": "In Köln befinden sich acht Rheinbrücken. Sie bilden ein wichtiges Verkehrssystem der Stadt und verbinden Wohngebiete, Industrieareale, die Altstadt und zentrale kulturelle Objekte. Die Brücken prägen das Stadtbild Kölns und sind ein bedeutender Teil seiner urbanen Struktur." },
+            { "text": "Einige von ihnen sind zu eigenen Sehenswürdigkeiten geworden — die bekannteste darunter ist die Hohenzollernbrücke, geschmückt mit Hunderttausenden von Liebesschlössern und mit einem der ikonischsten Ausblicke auf den Kölner Dom." },
+            { "bold": "Nachfolgend sind alle acht Brücken aufgeführt, von Norden nach Süden:" }
+        ]
+    },
+    "sub_objects": {
+        "title": "Kölner Brücken",
+        "items": [
+            { "bold": "1. Leverkusener Brücke:", "text": "Die nördlichste Brücke Kölns, Teil der Autobahn A1. Sie wurde in den 1960er Jahren gebaut und dient als zentrale Strecke zwischen dem Ruhrgebiet und der Kölner Region. Aufgrund der Belastung mehrfach saniert." },
+            { "bold": "Interessante Tatsache:", "text": "Wegen des enormen LKW-Aufkommens musste die Brücke mehrfach komplett für Sanierungsarbeiten gesperrt werden, was regelmäßig Gegenstand regionaler Nachrichten war. <br><br>" },
+            { "bold": "2. Rheinbrücke Merkenich:", "text": "Verbindet die Stadtteile Merkenich und Flittard und bedient die nördlichen Industriegebiete. Erbaut in den 1970er Jahren. Die Konstruktion ist speziell auf das industrielle Umfeld ausgelegt." },
+            { "bold": "Interessante Tatsache:", "text": "Diese Brücke wurde mit besonders strengen Umweltauflagen geplant — wegen der Nähe großer Chemiewerke. <br><br>" },
+            { "bold": "3. Niehler Hafenbrücke:", "text": "Eine Arbeitsbrücke und die Haupteinfahrt zum Hafen Niehler Hafen. Wird überwiegend vom Güterverkehr genutzt." },
+            { "bold": "Interessante Tatsache:", "text": "Der Hafen gehört zu den modernsten Binnenhäfen Deutschlands, und diese Brücke ist für seine Logistik von entscheidender Bedeutung. <br><br>" },
+            { "bold": "4. Mülheimer Brücke:", "text": "Eine große Hängebrücke, die Mülheim und Riehl verbindet. Eröffnet im Jahr 1929, nach dem Krieg wiederaufgebaut. Sie führt sowohl Autos als auch Straßenbahnen." },
+            { "bold": "Interessante Tatsache:", "text": "Von 2014 bis 2024 wurde die Brücke einer der umfangreichsten Sanierungen in der Stadtgeschichte unterzogen. <br><br>" },
+            { "bold": "5. Zoobrücke:", "text": "Eine breite Autobrücke und Teil des Kölner Rings (Innerer Ring). Eröffnet in den 1960er Jahren, mit charakteristischer bogenförmiger Struktur." },
+            { "bold": "Interessante Tatsache:", "text": "Ganz in der Nähe befindet sich die einzige Seilbahn Deutschlands, die einen großen Fluss überquert — die Kölner Seilbahn. <br><br>" },
+            { "bold": "6. Hohenzollernbrücke:", "text": "Eine Eisenbahn- und Fußgängerbrücke — eines der Wahrzeichen Kölns. Täglich passieren bis zu 1200 Züge, was sie zu einer der meistbefahrenen Brücken Europas macht." },
+            { "bold": "Interessante Tatsache:", "text": "Dies ist die berühmte „Liebesbrücke“: Paare aus verschiedenen Ländern befestigen Liebesschlösser am Geländer und werfen die Schlüssel in den Rhein. Ihre Anzahl geht in die Hunderttausende, das Gewicht in mehrere Tonnen." },
+            { "text": "Von der Brücke bietet sich der beste Blick auf den Kölner Dom, besonders abends, wenn die Beleuchtung eingeschaltet wird. <br><br>" },
+            { "bold": "7. Deutzer Brücke:", "text": "Verbindet die Kölner Innenstadt mit dem Stadtteil Deutz, wo sich die KölnMesse und die Lanxess Arena befinden. Eine der Hauptbrücken der Stadt." },
+            { "bold": "Interessante Tatsache:", "text": "In der Nähe finden große städtische Veranstaltungen statt, darunter Marathonläufe und Teile der Karnevalsroute. <br><br>" },
+            { "bold": "8. Südbrücke:", "text": "Eine Eisenbahnbrücke aus dem frühen 20. Jahrhundert, die Güter- und Personenzüge führt. Sie hat einen ausgeprägt industriellen Architekturstil." },
+            { "bold": "Interessante Tatsache:", "text": "Ein beliebter Ort für Fotografen: Von hier hat man einen seltenen Blick auf den Süden der Altstadt." }
+        ]
+    },
+    "interestingFacts": {
+        "title": "Interessante Fakten",
+        "items": [
+            { "text": "Die Hohenzollernbrücke ist mit Hunderttausenden Liebesschlössern geschmückt und gilt als einer der romantischsten Orte der Stadt." },
+            { "text": "Von der Hohenzollernbrücke eröffnet sich ein ikonisches Panorama des Kölner Doms — eines der meistfotografierten Motive Deutschlands." },
+            { "text": "Neben der Zoobrücke befindet sich die einzige deutsche Seilbahn, die den Rhein überquert." },
+            { "text": "Die Kölner Brücken sind ein fester Bestandteil vieler Rheintouren, darunter „Unter den sieben Brücken“." }
+        ]
+    },
+    "meta": {
+        "title": "Kölner Rheinbrücken",
+        "description": "Beschreibung der acht Kölner Brücken: Geschichte, Besonderheiten, interessante Fakten, inklusive der Liebesbrücke Hohenzollernbrücke.",
+        "ogTitle": "Kölner Rheinbrücken",
+        "ogDescription": "Vollständige Beschreibung aller acht Kölner Rheinbrücken mit Fakten, Geschichte und Architektur.",
+        "ogImage": "Germany/nrw/koeln/koeln-city/bridges/hohenzollern/001.jpg"
     }
+}
 ];
 export default datas;

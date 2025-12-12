@@ -202,7 +202,7 @@ const datas = {
                         {
                             id: 3,
                             name: "Märkischer Kreis",
-                            fullName: "Kreis Märkischer Kreis",
+                            fullName: "Märkischer Kreis",
                             parentDistrict: "Arnsberg",
                             center: [
                                 { bold: "Kreisstadt:" },
@@ -237,7 +237,7 @@ const datas = {
                                 { id: 3, name: "Werdohl", hasInfo: false },
                                 { id: 4, name: "Iserlohn", hasInfo: false },
                                 { id: 5, name: "Kierspe", hasInfo: false },
-                                { id: 6, name: "Lüdenscheid", hasInfo: false },
+                                { id: 6, name: "Lüdenscheid", hasInfo: true, path: 'luedenscheid' },
                                 { id: 7, name: "Meinerzhagen", hasInfo: false },
                                 { id: 8, name: "Menden", hasInfo: false },
                                 { id: 9, name: "Nachrodt-Wiblingwerde", hasInfo: false },

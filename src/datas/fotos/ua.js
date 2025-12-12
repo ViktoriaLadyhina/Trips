@@ -1,3 +1,4 @@
+
 export const Fotos = {
   country: "Ukraine",
   gallery: [
@@ -5,18 +6,14 @@ export const Fotos = {
     { path: "Ukraine/Flag.svg", title: { ru: "Флаг Украины", ua: "Прапор України", de: "Ukraine-Flagge" } },
     { path: "Ukraine/i.jpeg", title: { ru: "Киев", ua: "Киів", de: "Kiew" } },
     { path: "Ukraine/i2.jpeg", title: { ru: "Киев", ua: "Киів", de: "Kiew" } },   
-  ]
-}
-
-export const Photos = {
-  country: "Ukraine",
-  countries: [
-    { path: "Ukraine/i.jpeg", title: "Київ" },
-    null,
-    { path: "Ukraine/i2.jpeg", title: "Київ2" },
   ],
   sumska: {
-    sumy: {},
+    sumy: {
+      "sumy_spaso_preobrazhensky": [
+        { path: "Ukraine/sumska/sumy-city/spaso-preobrazhensky/004.jpg", title: { ru: "Спасо-Преображенский собор, 2010", ua: "Спасо-Преображенський собор, 2010", de: "Spaso-Preobraschenski-Kathedrale, 2010" } },
+      ]
+
+    },
     romny: {}
   }
 };

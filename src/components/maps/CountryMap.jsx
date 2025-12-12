@@ -3,6 +3,7 @@ import SumskaMap from "./ukraine/SumskaMap";
 import UkraineMap from './ukraine/Ukraine';
 import NRWMap from './germany/NRWMap';
 import NRWKolnMap from './germany/NRWKolnMap';
+import NRWArnsbergMap from './germany/NRWArnsbergMap'
 
 const maps = {
   germany: {
@@ -10,6 +11,7 @@ const maps = {
     nrw: {
       region: NRWMap,
       koln: NRWKolnMap,
+      arnsberg: NRWArnsbergMap,
     },
   },
   ukraine: {
