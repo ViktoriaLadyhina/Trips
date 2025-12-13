@@ -118,7 +118,7 @@ const datas = {
         {
             title: "Города с областным подчинением",
             items: [
-                { id: 1, name: "Сумы", hasInfo: false, path: "sumy" },
+                { id: 1, name: "Сумы", hasInfo: true, path: "sumy" },
                 { id: 2, name: "Лебедин", hasInfo: false, path: "lebedyn" },
                 { id: 3, name: "Ромны", hasInfo: false, path: "romny" },
                 { id: 4, name: "Шостка", hasInfo: false, path: "shostka" },

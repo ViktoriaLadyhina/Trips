@@ -120,7 +120,7 @@ const Map = () => {
             <ul>
               <li><Link to="/ukraine/sumska">{t.regions.sumska[lang]}</Link></li>
               <ul>
-                <li>{t.cities.sumy[lang]}</li>
+                <li><Link to="/ukraine/sumska/city/sumy">{t.cities.sumy[lang]}</Link></li>
                 <ul>
                   <li><Link to="/ukraine/sumska/city/sumy/attractions/sumy_spaso_preobrazhensky">{t.attractions.sumySpasoPreobrazhensky[lang]}</Link></li>
                 </ul>
