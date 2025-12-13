@@ -709,64 +709,132 @@ const datas = [
         }
     },
     {
-    "id": "koeln_bridges",
-    "name": "Kölner Rheinbrücken",
-    "type": ["technical_structure"],
-    "path": "koeln_bridges",
-    "regionsPath": "nrw",
-    "districtPath": "city",
-    "cityPath": "koln",
-    "fotoCard": "Germany/nrw/koeln/koeln-city/bridges/hohenzollern/001.jpg",
-    "location": "Köln, Deutschland",
-    "construction_period": "Verschiedene Bauphasen, 20.–21. Jahrhundert",
-    "founder": "Stadt Köln und die bundesweiten Verkehrsdienste",
-    "short_description": "Im Stadtgebiet Köln überqueren acht Brücken den Rhein. Jede von ihnen besitzt eine eigene Geschichte, Architektur und funktionale Bedeutung. Einige dieser Brücken gelten als Wahrzeichen der Stadt, sichern Verkehrsströme, bieten Fußwege und eröffnen panoramische Ausblicke auf den Kölner Dom und die Rheinufer.",
-    "full_description": {
-        "title": "Beschreibung und Geschichte",
-        "items": [
-            { "bold": "Allgemeine Informationen:", "text": "In Köln befinden sich acht Rheinbrücken. Sie bilden ein wichtiges Verkehrssystem der Stadt und verbinden Wohngebiete, Industrieareale, die Altstadt und zentrale kulturelle Objekte. Die Brücken prägen das Stadtbild Kölns und sind ein bedeutender Teil seiner urbanen Struktur." },
-            { "text": "Einige von ihnen sind zu eigenen Sehenswürdigkeiten geworden — die bekannteste darunter ist die Hohenzollernbrücke, geschmückt mit Hunderttausenden von Liebesschlössern und mit einem der ikonischsten Ausblicke auf den Kölner Dom." },
-            { "bold": "Nachfolgend sind alle acht Brücken aufgeführt, von Norden nach Süden:" }
-        ]
+        "id": "koeln_bridges",
+        "name": "Kölner Rheinbrücken",
+        "type": ["technical_structure"],
+        "path": "koeln_bridges",
+        "regionsPath": "nrw",
+        "districtPath": "city",
+        "cityPath": "koln",
+        "fotoCard": "Germany/nrw/koeln/koeln-city/bridges/hohenzollern/001.jpg",
+        "location": "Köln, Deutschland",
+        "construction_period": "Verschiedene Bauphasen, 20.–21. Jahrhundert",
+        "founder": "Stadt Köln und die bundesweiten Verkehrsdienste",
+        "short_description": "Im Stadtgebiet Köln überqueren acht Brücken den Rhein. Jede von ihnen besitzt eine eigene Geschichte, Architektur und funktionale Bedeutung. Einige dieser Brücken gelten als Wahrzeichen der Stadt, sichern Verkehrsströme, bieten Fußwege und eröffnen panoramische Ausblicke auf den Kölner Dom und die Rheinufer.",
+        "full_description": {
+            "title": "Beschreibung und Geschichte",
+            "items": [
+                { "bold": "Allgemeine Informationen:", "text": "In Köln befinden sich acht Rheinbrücken. Sie bilden ein wichtiges Verkehrssystem der Stadt und verbinden Wohngebiete, Industrieareale, die Altstadt und zentrale kulturelle Objekte. Die Brücken prägen das Stadtbild Kölns und sind ein bedeutender Teil seiner urbanen Struktur." },
+                { "text": "Einige von ihnen sind zu eigenen Sehenswürdigkeiten geworden — die bekannteste darunter ist die Hohenzollernbrücke, geschmückt mit Hunderttausenden von Liebesschlössern und mit einem der ikonischsten Ausblicke auf den Kölner Dom." },
+                { "bold": "Nachfolgend sind alle acht Brücken aufgeführt, von Norden nach Süden:" }
+            ]
+        },
+        "sub_objects": {
+            "title": "Kölner Brücken",
+            "items": [
+                { "bold": "1. Leverkusener Brücke:", "text": "Die nördlichste Brücke Kölns, Teil der Autobahn A1. Sie wurde in den 1960er Jahren gebaut und dient als zentrale Strecke zwischen dem Ruhrgebiet und der Kölner Region. Aufgrund der Belastung mehrfach saniert." },
+                { "bold": "Interessante Tatsache:", "text": "Wegen des enormen LKW-Aufkommens musste die Brücke mehrfach komplett für Sanierungsarbeiten gesperrt werden, was regelmäßig Gegenstand regionaler Nachrichten war. <br><br>" },
+                { "bold": "2. Rheinbrücke Merkenich:", "text": "Verbindet die Stadtteile Merkenich und Flittard und bedient die nördlichen Industriegebiete. Erbaut in den 1970er Jahren. Die Konstruktion ist speziell auf das industrielle Umfeld ausgelegt." },
+                { "bold": "Interessante Tatsache:", "text": "Diese Brücke wurde mit besonders strengen Umweltauflagen geplant — wegen der Nähe großer Chemiewerke. <br><br>" },
+                { "bold": "3. Niehler Hafenbrücke:", "text": "Eine Arbeitsbrücke und die Haupteinfahrt zum Hafen Niehler Hafen. Wird überwiegend vom Güterverkehr genutzt." },
+                { "bold": "Interessante Tatsache:", "text": "Der Hafen gehört zu den modernsten Binnenhäfen Deutschlands, und diese Brücke ist für seine Logistik von entscheidender Bedeutung. <br><br>" },
+                { "bold": "4. Mülheimer Brücke:", "text": "Eine große Hängebrücke, die Mülheim und Riehl verbindet. Eröffnet im Jahr 1929, nach dem Krieg wiederaufgebaut. Sie führt sowohl Autos als auch Straßenbahnen." },
+                { "bold": "Interessante Tatsache:", "text": "Von 2014 bis 2024 wurde die Brücke einer der umfangreichsten Sanierungen in der Stadtgeschichte unterzogen. <br><br>" },
+                { "bold": "5. Zoobrücke:", "text": "Eine breite Autobrücke und Teil des Kölner Rings (Innerer Ring). Eröffnet in den 1960er Jahren, mit charakteristischer bogenförmiger Struktur." },
+                { "bold": "Interessante Tatsache:", "text": "Ganz in der Nähe befindet sich die einzige Seilbahn Deutschlands, die einen großen Fluss überquert — die Kölner Seilbahn. <br><br>" },
+                { "bold": "6. Hohenzollernbrücke:", "text": "Eine Eisenbahn- und Fußgängerbrücke — eines der Wahrzeichen Kölns. Täglich passieren bis zu 1200 Züge, was sie zu einer der meistbefahrenen Brücken Europas macht." },
+                { "bold": "Interessante Tatsache:", "text": "Dies ist die berühmte „Liebesbrücke“: Paare aus verschiedenen Ländern befestigen Liebesschlösser am Geländer und werfen die Schlüssel in den Rhein. Ihre Anzahl geht in die Hunderttausende, das Gewicht in mehrere Tonnen." },
+                { "text": "Von der Brücke bietet sich der beste Blick auf den Kölner Dom, besonders abends, wenn die Beleuchtung eingeschaltet wird. <br><br>" },
+                { "bold": "7. Deutzer Brücke:", "text": "Verbindet die Kölner Innenstadt mit dem Stadtteil Deutz, wo sich die KölnMesse und die Lanxess Arena befinden. Eine der Hauptbrücken der Stadt." },
+                { "bold": "Interessante Tatsache:", "text": "In der Nähe finden große städtische Veranstaltungen statt, darunter Marathonläufe und Teile der Karnevalsroute. <br><br>" },
+                { "bold": "8. Südbrücke:", "text": "Eine Eisenbahnbrücke aus dem frühen 20. Jahrhundert, die Güter- und Personenzüge führt. Sie hat einen ausgeprägt industriellen Architekturstil." },
+                { "bold": "Interessante Tatsache:", "text": "Ein beliebter Ort für Fotografen: Von hier hat man einen seltenen Blick auf den Süden der Altstadt." }
+            ]
+        },
+        "interestingFacts": {
+            "title": "Interessante Fakten",
+            "items": [
+                { "text": "Die Hohenzollernbrücke ist mit Hunderttausenden Liebesschlössern geschmückt und gilt als einer der romantischsten Orte der Stadt." },
+                { "text": "Von der Hohenzollernbrücke eröffnet sich ein ikonisches Panorama des Kölner Doms — eines der meistfotografierten Motive Deutschlands." },
+                { "text": "Neben der Zoobrücke befindet sich die einzige deutsche Seilbahn, die den Rhein überquert." },
+                { "text": "Die Kölner Brücken sind ein fester Bestandteil vieler Rheintouren, darunter „Unter den sieben Brücken“." }
+            ]
+        },
+        "meta": {
+            "title": "Kölner Rheinbrücken",
+            "description": "Beschreibung der acht Kölner Brücken: Geschichte, Besonderheiten, interessante Fakten, inklusive der Liebesbrücke Hohenzollernbrücke.",
+            "ogTitle": "Kölner Rheinbrücken",
+            "ogDescription": "Vollständige Beschreibung aller acht Kölner Rheinbrücken mit Fakten, Geschichte und Architektur.",
+            "ogImage": "Germany/nrw/koeln/koeln-city/bridges/hohenzollern/001.jpg"
+        }
     },
-    "sub_objects": {
-        "title": "Kölner Brücken",
-        "items": [
-            { "bold": "1. Leverkusener Brücke:", "text": "Die nördlichste Brücke Kölns, Teil der Autobahn A1. Sie wurde in den 1960er Jahren gebaut und dient als zentrale Strecke zwischen dem Ruhrgebiet und der Kölner Region. Aufgrund der Belastung mehrfach saniert." },
-            { "bold": "Interessante Tatsache:", "text": "Wegen des enormen LKW-Aufkommens musste die Brücke mehrfach komplett für Sanierungsarbeiten gesperrt werden, was regelmäßig Gegenstand regionaler Nachrichten war. <br><br>" },
-            { "bold": "2. Rheinbrücke Merkenich:", "text": "Verbindet die Stadtteile Merkenich und Flittard und bedient die nördlichen Industriegebiete. Erbaut in den 1970er Jahren. Die Konstruktion ist speziell auf das industrielle Umfeld ausgelegt." },
-            { "bold": "Interessante Tatsache:", "text": "Diese Brücke wurde mit besonders strengen Umweltauflagen geplant — wegen der Nähe großer Chemiewerke. <br><br>" },
-            { "bold": "3. Niehler Hafenbrücke:", "text": "Eine Arbeitsbrücke und die Haupteinfahrt zum Hafen Niehler Hafen. Wird überwiegend vom Güterverkehr genutzt." },
-            { "bold": "Interessante Tatsache:", "text": "Der Hafen gehört zu den modernsten Binnenhäfen Deutschlands, und diese Brücke ist für seine Logistik von entscheidender Bedeutung. <br><br>" },
-            { "bold": "4. Mülheimer Brücke:", "text": "Eine große Hängebrücke, die Mülheim und Riehl verbindet. Eröffnet im Jahr 1929, nach dem Krieg wiederaufgebaut. Sie führt sowohl Autos als auch Straßenbahnen." },
-            { "bold": "Interessante Tatsache:", "text": "Von 2014 bis 2024 wurde die Brücke einer der umfangreichsten Sanierungen in der Stadtgeschichte unterzogen. <br><br>" },
-            { "bold": "5. Zoobrücke:", "text": "Eine breite Autobrücke und Teil des Kölner Rings (Innerer Ring). Eröffnet in den 1960er Jahren, mit charakteristischer bogenförmiger Struktur." },
-            { "bold": "Interessante Tatsache:", "text": "Ganz in der Nähe befindet sich die einzige Seilbahn Deutschlands, die einen großen Fluss überquert — die Kölner Seilbahn. <br><br>" },
-            { "bold": "6. Hohenzollernbrücke:", "text": "Eine Eisenbahn- und Fußgängerbrücke — eines der Wahrzeichen Kölns. Täglich passieren bis zu 1200 Züge, was sie zu einer der meistbefahrenen Brücken Europas macht." },
-            { "bold": "Interessante Tatsache:", "text": "Dies ist die berühmte „Liebesbrücke“: Paare aus verschiedenen Ländern befestigen Liebesschlösser am Geländer und werfen die Schlüssel in den Rhein. Ihre Anzahl geht in die Hunderttausende, das Gewicht in mehrere Tonnen." },
-            { "text": "Von der Brücke bietet sich der beste Blick auf den Kölner Dom, besonders abends, wenn die Beleuchtung eingeschaltet wird. <br><br>" },
-            { "bold": "7. Deutzer Brücke:", "text": "Verbindet die Kölner Innenstadt mit dem Stadtteil Deutz, wo sich die KölnMesse und die Lanxess Arena befinden. Eine der Hauptbrücken der Stadt." },
-            { "bold": "Interessante Tatsache:", "text": "In der Nähe finden große städtische Veranstaltungen statt, darunter Marathonläufe und Teile der Karnevalsroute. <br><br>" },
-            { "bold": "8. Südbrücke:", "text": "Eine Eisenbahnbrücke aus dem frühen 20. Jahrhundert, die Güter- und Personenzüge führt. Sie hat einen ausgeprägt industriellen Architekturstil." },
-            { "bold": "Interessante Tatsache:", "text": "Ein beliebter Ort für Fotografen: Von hier hat man einen seltenen Blick auf den Süden der Altstadt." }
-        ]
-    },
-    "interestingFacts": {
-        "title": "Interessante Fakten",
-        "items": [
-            { "text": "Die Hohenzollernbrücke ist mit Hunderttausenden Liebesschlössern geschmückt und gilt als einer der romantischsten Orte der Stadt." },
-            { "text": "Von der Hohenzollernbrücke eröffnet sich ein ikonisches Panorama des Kölner Doms — eines der meistfotografierten Motive Deutschlands." },
-            { "text": "Neben der Zoobrücke befindet sich die einzige deutsche Seilbahn, die den Rhein überquert." },
-            { "text": "Die Kölner Brücken sind ein fester Bestandteil vieler Rheintouren, darunter „Unter den sieben Brücken“." }
-        ]
-    },
-    "meta": {
-        "title": "Kölner Rheinbrücken",
-        "description": "Beschreibung der acht Kölner Brücken: Geschichte, Besonderheiten, interessante Fakten, inklusive der Liebesbrücke Hohenzollernbrücke.",
-        "ogTitle": "Kölner Rheinbrücken",
-        "ogDescription": "Vollständige Beschreibung aller acht Kölner Rheinbrücken mit Fakten, Geschichte und Architektur.",
-        "ogImage": "Germany/nrw/koeln/koeln-city/bridges/hohenzollern/001.jpg"
+    {
+        id: "forstbotanischer_garten",
+        name: "Botanischer Garten und Forstpark – Forstbotanischer Garten",
+        type: ["nature"],
+        path: "forstbotanischer-garten",
+        regionsPath: "nrw",
+        districtPath: "city",
+        cityPath: "koln",
+        fotoCard: "Germany/nrw/koln/koln-city/forstbotanischer-garten/001.jpg",
+        location: "Köln, Deutschland",
+        officialSite: [
+            {
+                bold: "Offizielle Webseite des Forstbotanischer Gartens",
+                link: "https://www.stadt-koeln.de/leben-in-koeln/freizeit-natur-sport/parks/forstbotanischer-garten"
+            }
+        ],
+        construction_period: "1962 – heute",
+        founder: "Stadt Köln",
+        architects: ["Städtischer Grünflächenbetrieb Köln"],
+        short_description: "Der Botanische Garten und Forstpark Köln mit einer Vielzahl von Pflanzen aus aller Welt, einschließlich thematischer Zonen: Rhododendron-Ravine, Heidewiese, Japanischer Garten und Friedenswald.",
+        full_description: {
+            title: "Beschreibung und Geschichte",
+            items: [
+                { bold: "Anlage des Gartens", text: "Der Garten wurde Anfang der 1960er Jahre (1962–1964) auf dem Gelände eines ehemaligen Militärobjekts im Rahmen der Begrünung der städtischen Grünflächen angelegt." },
+                { bold: "Historische Elemente", text: "Die Ruinen des alten Festungssystems von Köln sind in die Gestaltung des Gartenreliefs integriert (z. B. in der „Rhododendron-Ravine“)." },
+                { bold: "Friedenswald", text: "In den 1980er Jahren wurde neben dem Garten der Friedenswald angelegt – Bepflanzungen mit Bäumen und Sträuchern aus Ländern, mit denen die BRD zum Zeitpunkt der Anlage diplomatische Beziehungen unterhielt." },
+                { text: "Der Garten verbindet eine botanische Sammlung mit einem Waldgebiet und ermöglicht den Besuchern, das ganze Jahr über Natur zu erleben." },
+                { text: "Im Garten gibt es thematische Zonen, die zu verschiedenen Jahreszeiten besonders interessant sind: Rhododendron-Ravine, Heidewiese, Rosengarten, Japanischer Garten mit Kirschen und Azaleen. Im Herbst färben Ahorn, Berberitze und Bambus den Park bunt. Im Waldteil sind nordamerikanische Bäume vertreten: Riesen-Sequoia, Gelb-Kiefer, Fluss-Zeder und Colorado-Fichte." }
+            ]
+        },
+        sub_objects: {
+            title: "Hauptbereiche und thematische Abschnitte",
+            items: [
+                { bold: "Rhododendron-Ravine", text: "Steinkompositionen mit Rhododendren und anderen Sträuchern, einschließlich historischer Elemente des Festungssystems." },
+                { bold: "Heidewiese", text: "Offene Fläche mit Heidekraut und mehrjährigen Gräsern." },
+                { bold: "Rosengarten", text: "Sammlung von Rosen und blühenden Sträuchern." },
+                { bold: "Japanischer Garten", text: "Japanischer Garten mit Ahornbäumen, Azaleen und Zierkirschen." },
+                { bold: "Waldgebiet mit nordamerikanischen Bäumen", text: "Umfasst Riesen-Sequoia, Gelb-Kiefer, Fluss-Zeder und Colorado-Fichte." },
+                { bold: "Friedenswald", text: "Symbolische Pflanzungen von Bäumen und Sträuchern aus Ländern der ganzen Welt, die die diplomatischen Beziehungen der BRD zum Zeitpunkt der Anlage widerspiegeln." }
+            ]
+        },
+        tickets_and_entry: {
+            title: "Praktische Informationen",
+            items: [
+                { bold: "Adresse:", text: "Schillingsrotter Straße 100, 50996 Köln, Deutschland" },
+                { bold: "Eintritt:", text: "Kostenlos" },
+                { bold: "Öffnungszeiten:", text: "November – Februar: 09:00–16:00; März, September – Oktober: 09:00–18:00; April – August: 09:00–20:00" },
+                { bold: "Parken:", text: "Kostenlos, in der Nähe des Friedenswaldes" },
+                { bold: "Barrierefreiheit:", text: "Bänke, Wege; Toiletten nicht überall; Hunde in der Regel nicht erlaubt." },
+                { bold: "Führungen:", text: "Erster Mittwoch des Monats um 14:30, dritter Samstag des Monats um 15:00, Anmeldung für Samstag-Gruppen erforderlich." }
+            ]
+        },
+        interestingFacts: {
+            title: "Interessante Fakten",
+            items: [
+                { text: "Der Garten verbindet botanische Sammlung und Waldgebiet." },
+                { text: "Der Friedenswald repräsentiert symbolisch die Vegetation vieler Länder der Welt." },
+                { text: "Im Herbst ist der Garten besonders schön durch das bunte Laub und Bambus." }
+            ]
+        },
+        meta: {
+            title: "Forstbotanischer Garten – Botanischer Garten und Forstpark Köln",
+            description: "Botanischer Garten und Forstpark Köln mit Pflanzen aus aller Welt und thematischen Zonen, einschließlich Friedenswald.",
+            ogTitle: "Forstbotanischer Garten – Botanischer Garten und Forstpark Köln",
+            ogDescription: "Der Garten und Forstpark Köln bieten Spaziergänge durch die Rhododendron-Ravine, den Japanischen Garten, die Heidewiese und den Friedenswald.",
+            ogImage: "Germany/nrw/koln/koln-city/forstbotanischer-garten/001.jpg"
+        }
     }
-}
 ];
 export default datas;
