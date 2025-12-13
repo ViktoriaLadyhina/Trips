@@ -711,7 +711,7 @@ const datas = [
     {
         "id": "koeln_bridges",
         "name": "Мости Кельна через Рейн",
-        "type": ["architecture", "bridges"],
+        "type": ["technical_structure"],
         "path": "koeln_bridges",
         "regionsPath": "nrw",
         "districtPath": "city",
