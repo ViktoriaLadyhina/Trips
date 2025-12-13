@@ -835,6 +835,67 @@ const datas = [
             ogDescription: "Der Garten und Forstpark Köln bieten Spaziergänge durch die Rhododendron-Ravine, den Japanischen Garten, die Heidewiese und den Friedenswald.",
             ogImage: "Germany/nrw/koln/koln-city/forstbotanischer-garten/001.jpg"
         }
+    },
+    {
+    id: "wallraf_richartz_museum",
+    name: "Wallraf-Richartz-Museum",
+    type: ["museum"],
+    path: "wallraf_richartz_museum",
+    regionsPath: "nrw",
+    districtPath: "city",
+    cityPath: "koln",
+    fotoCard: "Germany/nrw/koln/koln-city/wallraf_richartz_museum/001.jpg",
+    location: "Köln, Deutschland",
+    officialSite: [
+        { bold: "Offizielle Webseite des Museums", link: "http://www.wallraf.museum/en" }
+    ],
+    construction_period: "Das erste Museum wurde 1861 eröffnet, basierend auf einer Sammlung mittelalterlicher Kunst. Das moderne Gebäude, entworfen vom Architekten Oswald Matthias Ungers, wurde 2001 eröffnet.",
+    founder: "Die Sammlung begann mit den Sammlungen von Ferdinand Franz Wallraf, die der Stadt Köln im 19. Jh. übergeben wurden. Dank Spenden wohlhabender Mäzene entwickelte sich das Museum über viele Jahre weiter. 2001 übergab der Schweizer Sammler Gérard Corboud eine große Sammlung impressionistischer und neoimpressionistischer Kunst, weshalb der Name um Fondation Corboud ergänzt wurde.",
+    architects: ["Oswald Matthias Ungers"],
+    short_description: "Das älteste Museum Kölns mit Sammlungen von Malerei, Skulptur und Grafik vom Mittelalter bis zum frühen 20. Jh. Gezeigt werden Werke der Kölner Schule, des Barock sowie Impressionisten und Postimpressionisten aus dem Corboud-Fonds. Die Gesamtzahl der Grafiken beträgt etwa 75.000. Das Museum liegt im Stadtzentrum, in der Nähe des Rathauses und des Kölner Doms.",
+    full_description: {
+        title: "Beschreibung und Geschichte",
+        items: [
+            { bold: "Architektur und Geschichte des Museums", text: "Das Wallraf‑Richartz-Museum ist eines der ältesten und bedeutendsten Museen Kölns, das der europäischen Kunst vom Mittelalter bis zum frühen 20. Jh. gewidmet ist." },
+            { text: "Das moderne Museumsgebäude ist ein speziell entworfener architektonischer Raum, der 2001 nach den Plänen des bekannten Architekten Oswald Matthias Ungers eröffnet wurde. Es befindet sich im historischen Zentrum Kölns, nur wenige Minuten vom Rathaus und dem Kölner Dom entfernt." },
+            { bold: "Veränderungen und Verluste in der Geschichte", text: "Im Laufe der Geschichte erlebte das Museum Verluste von Kunstwerken – zum Beispiel wurden während der NS-Zeit viele Werke als „entartete Kunst“ konfisziert, darunter Arbeiten von Picasso, Munch und anderen." }
+        ]
+    },
+    sub_objects: {
+        title: "Sammlungen",
+        items: [
+            { text: "Die Museumssammlung begann mit Ferdinand Franz Wallraf (1748–1824) – Professor, Sammler und Gelehrter, der viele Kunstwerke aus Kölner Kirchen während der Säkularisation rettete. Er vermachte der Stadt fast 10.000 Gemälde, Zeichnungen, Bücher und andere Artefakte, um sie der Öffentlichkeit zugänglich zu machen." },
+            { bold: "Mittelalterliche Kunst: ", text: "Das Museum besitzt eine der weltweit größten Sammlungen mittelalterlicher Malerei, besonders vertreten durch Werke der Kölner Schule des 13.–15. Jahrhunderts. Unter den mittelalterlichen Werken ist eines der bekanntesten <b>„Madonna in der Rosenlaube“</b> (Stefan Lochner, ca. 1440–1442). Dieses Gemälde gilt als eines der bedeutendsten Werke der Spätgotik und wird oft mit der „Kölner Mona Lisa“ verglichen." },
+            { bold: "Barock: ", text: "Werke von Rubens, Rembrandt und anderen Meistern." },
+            { bold: "Impressionismus und Neoimpressionismus: ", text: "Seit 2001 heißt das Museum Wallraf‑Richartz‑Museum & Fondation Corboud, da die Schweizer Sammler Gérard und Marisol Corboud etwa 170 herausragende Werke von Impressionisten und Postimpressionisten als „Leihgabe auf Lebenszeit“ übergaben. Es ist die größte Sammlung impressionistischer und neoimpressionistischer Malerei in Deutschland mit Werken von Renoir, Monet, Sisley, Morisot, Signac und anderen." },
+            { bold: "Grafik: ", text: "Neben Malerei bewahrt das Museum etwa 75.000 grafische Arbeiten (Zeichnungen, Drucke, Aquarelle) vom Mittelalter bis zum 20. Jh. – eine einzigartige Ressource zur Erforschung der europäischen Kunstentwicklung." }
+        ]
+    },
+    tickets_and_entry: {
+        title: "Praktische Informationen",
+        items: [
+            { bold: "Adresse:", text: "Obenmarspforten 40, 50667 Köln, Deutschland" },
+            { bold: "Öffnungszeiten:", text: "Dienstag–Sonntag: 10:00–18:00. Jeder 1. und 3. Donnerstag im Monat: 10:00–22:00. Montag: geschlossen (besondere Feiertags- und Saisonzeiten können abweichen)" },
+            { bold: "Eintrittspreise (2025):", text: "Erwachsene: ca. 10–13 €. Ermäßigt: ca. 7–8 € (Studenten, Senioren, Sozialvergünstigungen). Kinder bis 18 Jahre: frei. Familien-, Gruppen- und Kombitickets mit anderen Museen der Stadt verfügbar." }
+        ]
+    },
+    interestingFacts: {
+        title: "Interessante Fakten",
+        items: [
+            { text: "Die Museumsammlung umfasst Werke aus über 700 Jahren Kunstgeschichte – vom Mittelalter bis zum Jugendstil." },
+            { text: "Der Sammlungsgründer Ferdinand Franz Wallraf sammelte lange Kunst aus Kirchen, Häusern und Privatbesitz, um sie für zukünftige Generationen zu bewahren." },
+            { text: "Die im Museumstitel enthaltene Fondation Corboud repräsentiert eine bedeutende Sammlung von Impressionisten und Postimpressionisten, viele Werke wurden im Rahmen von Ausstellungen weltweit gezeigt." },
+            { text: "Es gibt eine virtuelle 360°-Tour durch das Museum, die es ermöglicht, die Sammlung online zu erkunden." }
+        ]
+    },
+    meta: {
+        title: "Wallraf-Richartz-Museum — Kunst vom Mittelalter bis zum Impressionismus",
+        description: "Das Wallraf-Richartz-Museum in Köln ist das älteste Museum der Stadt mit Sammlungen von Malerei, Skulptur und Grafik vom Mittelalter bis zum frühen 20. Jh., einschließlich des Fonds Fondation Corboud mit Impressionisten.",
+        ogTitle: "Wallraf-Richartz-Museum — Kunst vom Mittelalter bis zum Impressionismus",
+        ogDescription: "Entdecken Sie das Wallraf-Richartz-Museum in Köln: Mittelalterliche und barocke Kunst sowie die Impressionisten-Sammlung Fondation Corboud.",
+        ogImage: "Germany/nrw/koln/koln-city/wallraf_richartz_museum/001.jpg"
     }
+}
+
 ];
 export default datas;
