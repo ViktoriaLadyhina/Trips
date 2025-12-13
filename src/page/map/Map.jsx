@@ -45,6 +45,7 @@ const Map = () => {
       schokoladenmuseum: { ru: 'Музей шоколада', de: 'Schokoladenmuseum', ua: 'Музей шоколаду' },
       miqua: { ru: 'Музей в археологическом квартале Кёльна – MiQua', de: 'Museum im archäologischen Viertel Köln – MiQua', ua: 'Музей в археологічному кварталі Кельна – MiQua' },
       koeln_bridges: { ru: 'Мосты Кёльна через Рейн', de: 'Kölner Rheinbrücken', ua: 'Мости Кельна через Рейн' },
+      forstbotanischer_garten: { ru: 'Ботанический сад и лесопарк', de: 'Forstbotanischer Garten', ua: 'Ботанічний сад і лісопарк' },
 
       sumySpasoPreobrazhensky: { ru: 'Спасо-Преображенский собор', de: 'Spaso-Preobraschenski-Kathedrale', ua: 'Спасо-Преображенський собор' },
     }
@@ -106,6 +107,7 @@ const Map = () => {
                           <li><Link to="/germany/nrw/city/koln/attractions/museum-ludwig">{t.attractions.museumLudwig[lang]}</Link></li>
                           <li><Link to="/germany/nrw/city/koln/attractions/schokoladenmuseum">{t.attractions.schokoladenmuseum[lang]}</Link></li>
                           <li><Link to="/germany/nrw/city/koln/attractions/koeln_bridges">{t.attractions.koeln_bridges[lang]}</Link></li>
+                          <li><Link to="/germany/nrw/city/koln/attractions/forstbotanischer-garten">{t.attractions.forstbotanischer_garten[lang]}</Link></li>
                         </ul>
                       </li>
                     </ul>
@@ -120,7 +122,7 @@ const Map = () => {
             <ul>
               <li><Link to="/ukraine/sumska">{t.regions.sumska[lang]}</Link></li>
               <ul>
-                <li>{t.cities.sumy[lang]}</li>
+                <li><Link to="/ukraine/sumska/city/sumy">{t.cities.sumy[lang]}</Link></li>
                 <ul>
                   <li><Link to="/ukraine/sumska/city/sumy/attractions/sumy_spaso_preobrazhensky">{t.attractions.sumySpasoPreobrazhensky[lang]}</Link></li>
                 </ul>
