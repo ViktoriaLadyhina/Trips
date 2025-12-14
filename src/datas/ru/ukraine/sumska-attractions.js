@@ -60,7 +60,7 @@ const datas = [
         id: "sumy_altanka",
         name: "Альтанка",
         type: ["historical_building"],
-        path: "ssumy_altanka",
+        path: "sumy_altanka",
         regionsPath: "sumska",
         districtPath: "city",
         cityPath: "sumy",
