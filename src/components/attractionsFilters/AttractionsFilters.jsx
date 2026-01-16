@@ -8,7 +8,7 @@ const attractionTypes = [
   { value: 'palace_or_castle', ru: 'Дворцы и замки', ua: 'Палаци та замки', de: 'Schlösser und Burgen' },
   { value: 'amusement_park', ru: 'Парки развлечений', ua: 'Парки розваг', de: 'Freizeitparks' },
   { value: 'historical_building', ru: 'Исторические здания', ua: 'Ісоричні будівлі', de: 'Historische Gebäude' },
-  { value: 'technical_structure', ru: 'Технические здания', ua: 'Технічні споруди', de: 'Technische Bauwerke' },
+  { value: 'technical_structure', ru: 'Технические сооружения', ua: 'Технічні споруди', de: 'Technische Bauwerke' },
   { value: 'nature', ru: 'Природа', ua: 'Природа', de: 'Natur' },
 ];
 

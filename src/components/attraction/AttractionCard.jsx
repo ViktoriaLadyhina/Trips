@@ -3,7 +3,7 @@ import { Link, useParams } from 'react-router';
 
 const BASE_PHOTO_URL = import.meta.env.VITE_BASE_PHOTO_URL;
 
-const Attraction = ({ attr, lang }) => {
+const AttractionCard = ({ attr, lang }) => {
     const params = useParams();
     const countryPath = params.countryPath || attr.countryPath || 'germany';
     const regionsPath = params.regionsPath || attr.regionsPath;
@@ -25,25 +25,33 @@ const Attraction = ({ attr, lang }) => {
         <div className='attrCard'>
             <div className='attrCard__title'>{attr.name}</div>
             <div className='attrCard__desc'>
-                <div className='attrCard__desc-foto'>
-                    <img src={`${BASE_PHOTO_URL}${attr.fotoCard}`} alt={attr.name} />
-                </div>
-                <div className='attrCard__desc-info'>
-                    <div className='attrCard__desc-info-text'>{attr.short_description}</div>
-
-{attr.unesco_status?.included && <span className='attrCard__desc-info-text'>UNESCO {attr.unesco_status.year}</span>}
-
-                    <div className='attrCard__desc-info-text'>{location[lang]}: {attr.location}</div>
-
-                    <div className='attrCard__desc-info-more'>
-                        <Link to={detailPath}>
-                            {more[lang]}
-                        </Link>
+                {attr.fotoCard && (
+                    <div className='attrCard__desc-foto'>
+                        <img src={`${BASE_PHOTO_URL}${attr.fotoCard}`} alt={attr.name} />
                     </div>
+                )}
+                <div className='attrCard__desc-info'>
+                    {attr.short_description && (
+                        <div className='attrCard__desc-info-text'>{attr.short_description}</div>
+                    )}
+                    {attr.unesco_status?.included && (
+                        <span className='attrCard__desc-info-text'>
+                            UNESCO {attr.unesco_status.year}
+                        </span>
+                    )}
+                    {attr.location && (
+                        <div className='attrCard__desc-info-text'>{location[lang]}: {attr.location}</div>
+                    )}
+                    {detailPath && (
+                        <div className='attrCard__desc-info-more'>
+                            <Link to={detailPath}>{more[lang]}</Link>
+                        </div>
+                    )}
                 </div>
             </div>
         </div>
     );
+
 };
 
-export default Attraction;
+export default AttractionCard;

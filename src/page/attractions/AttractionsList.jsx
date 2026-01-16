@@ -2,7 +2,7 @@ import { useParams } from 'react-router';
 import { useState } from 'react';
 
 import BreadCrumbs from '../../components/breadCrumbs/BreadCrumbs.jsx';
-import Attraction from '../../components/attraction/Attraction.jsx';
+import AttractionCard from '../../components/attraction/AttractionCard.jsx';
 import AttractionsFilters from '../../components/attractionsFilters/AttractionsFilters.jsx';
 import useCityFullData from '../../hooks/useCityFullData.js';
 
@@ -22,29 +22,35 @@ const AttractionsList = () => {
     if (!country || !region) return <p>Loading...</p>;
     if (!attractions) return <p>Loading...</p>
 
-    // Фильтруем по URL
-    // const filteredAttractions = attractions?.filter(attr => {
-    //     if (cityPath) return attr.cityPath === cityPath;
-    //     if (districtPath) return attr.districtPath === districtPath;
-    //     return true;
-    // }) || [];
-
     const filteredAttractions = attractions?.filter(attr => {
         // Фильтр по URL
         if (cityPath && attr.cityPath !== cityPath) return false;
         if (districtPath && attr.districtPath !== districtPath) return false;
 
+            // Тип: добавляем type саб-объектов
+    let allTypes = [...attr.type];
+
+    if (attr.subObjects?.length > 0) {
+        attr.subObjects.forEach(subId => {
+            const subAttr = attractions.find(a => a.id === subId);
+            if (subAttr) allTypes.push(...subAttr.type);
+        });
+    }
+
         // Фильтр по типу
-        if (filters.type === 'palace_or_castle') {
-            if (!attr.type.includes('palace') && !attr.type.includes('castle')) return false;
-        } else if (filters.type !== 'all' && !attr.type.includes(filters.type)) {
-            return false;
-        }
+    if (filters.type === 'palace_or_castle') {
+        if (!allTypes.includes('palace') && !allTypes.includes('castle')) return false;
+    } else if (filters.type !== 'all' && !allTypes.includes(filters.type)) {
+        return false;
+    }
 
         // Фильтр по ЮНЕСКО
         if (filters.unesco === 'yes' && !attr.unesco_status?.included) return false;
         if (filters.unesco === 'no' && attr.unesco_status?.included) return false;
 
+        // не показывать сабобъекты
+        if (attr.hiddenFromList) return false;
+        
         return true;
     }) || [];
 
@@ -88,7 +94,7 @@ const AttractionsList = () => {
                 ) : (
                     sortedAttractions.map(attr => (
                         <div key={attr.path} className="attractions__card">
-                            <Attraction attr={attr} lang={lang} />
+                            <AttractionCard attr={attr} lang={lang} />
                         </div>
                     ))
                 )}
