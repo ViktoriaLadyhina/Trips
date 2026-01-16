@@ -12,7 +12,7 @@
 
         &-foto {
             float: left;
-            width: 350px;
+            max-width: 350px;
             margin: 0 15px 15px 0;
             border-radius: 8px;
 
@@ -84,7 +84,7 @@
                 img {
                     max-width: 300px;
                     max-height: 300px;
-                    flex-shrink: 0;
+                    width: 100%;
                     margin-right: 15px;
                     display: block;
                     border-radius: 8px;
@@ -131,9 +131,3 @@
         }
     }
 }
-
-// @media (max-width: 500px) {
-//     .attrCard__desc {
-//         flex-wrap: wrap;
-//     }
-// }
