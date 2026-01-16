@@ -4,7 +4,9 @@ import nrwCity from './germany/nrw-city';
 import nrwAttractions from './germany/nrw-attractions'
 
 // Украина
-import sumska from './ukraine/sumska'
+import sumska from './ukraine/sumska';
+import sumskaCity from './ukraine/sumska-city';
+import sumskaAttractions from './ukraine/sumska-attractions'
 
 
 export const regions = {
@@ -17,11 +19,13 @@ export const regions = {
   ukraine: {
     countryName: "Украина",
     sumska,
+    'sumska-city': sumskaCity,
+    'sumska-attractions': sumskaAttractions
   },
 };
 
 export const regionsSearch = {
-    germany: {
+  germany: {
     nrw,
   },
   ukraine: {
@@ -30,19 +34,19 @@ export const regionsSearch = {
 }
 
 export const citySearch = {
-    germany: {
+  germany: {
     'nrw-city': nrwCity,
   },
   ukraine: {
-
+    'sumska-city': sumskaCity,
   },
 }
 
 export const attractionsSearch = {
-    germany: {
+  germany: {
     'nrw-attractions': nrwAttractions
   },
   ukraine: {
-
+    'sumska-attractions': sumskaAttractions
   },
 }

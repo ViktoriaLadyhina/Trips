@@ -27,7 +27,9 @@ const Map = () => {
       bruhl: { ru: 'Город Брюль', de: 'Stadt Brühl', ua: 'Місто Брюль' },
       frechen: { ru: 'Город Фрехен', de: 'Stadt Frechen', ua: 'Місто Фрехен' },
       koln: { ru: 'Город Кёльн', de: 'Stadt Köln', ua: 'Місто Кельн' },
-      luedenscheid: { ru: 'Город Люденшайд', de: 'Stadt Lüdenscheid', ua: 'Місто Люденшайд' }
+      luedenscheid: { ru: 'Город Люденшайд', de: 'Stadt Lüdenscheid', ua: 'Місто Люденшайд' },
+
+      sumy: { ru: 'Город Сумы', de: 'Stadt Sumy', ua: 'Місто Суми' }
     },
     attractions: {
       bruhlPalaces: { ru: 'Дворцы Брюля: ансамбль Аугустусбург и Фалькенлюст', de: 'Schlösser Brühl: Augustusburg & Falkenlust', ua: 'Палаци Брюля: ансамбль Аугустусбург і Фалькенлюст' },
@@ -42,6 +44,11 @@ const Map = () => {
       museumLudwig: { ru: 'Музей Людвига', de: 'Museum Ludwig', ua: 'Музей Людвіга' },
       schokoladenmuseum: { ru: 'Музей шоколада', de: 'Schokoladenmuseum', ua: 'Музей шоколаду' },
       miqua: { ru: 'Музей в археологическом квартале Кёльна – MiQua', de: 'Museum im archäologischen Viertel Köln – MiQua', ua: 'Музей в археологічному кварталі Кельна – MiQua' },
+      wallraf_richartz_museum: { ru: 'Музей Вальрафа-Рихарца', de: 'Wallraf-Richartz-Museum', ua: 'Музей Вальрафа-Ріхарцa' },
+      koeln_bridges: { ru: 'Мосты Кёльна через Рейн', de: 'Kölner Rheinbrücken', ua: 'Мости Кельна через Рейн' },
+      forstbotanischer_garten: { ru: 'Ботанический сад и лесопарк', de: 'Forstbotanischer Garten', ua: 'Ботанічний сад і лісопарк' },
+
+      sumySpasoPreobrazhensky: { ru: 'Спасо-Преображенский собор', de: 'Spaso-Preobraschenski-Kathedrale', ua: 'Спасо-Преображенський собор' },
     }
   };
 
@@ -98,8 +105,11 @@ const Map = () => {
                           <li><Link to="/germany/nrw/city/koln/attractions/miqua">{t.attractions.miqua[lang]}</Link></li>
                           <li><Link to="/germany/nrw/city/koln/attractions/roemisch-germanisches-museum">{t.attractions.roemischGermanischesMuseum[lang]}</Link></li>
                           <li><Link to="/germany/nrw/city/koln/attractions/farina-duftmuseum">{t.attractions.farinaDuftmuseum[lang]}</Link></li>
-                          <li><Link to="/germany/nrw/city/koln/attractions/museum-ludwig">{t.attractions.museumLudwig[lang]}</Link></li>
                           <li><Link to="/germany/nrw/city/koln/attractions/schokoladenmuseum">{t.attractions.schokoladenmuseum[lang]}</Link></li>
+                          <li><Link to="/germany/nrw/city/koln/attractions/wallraf_richartz_museum">{t.attractions.wallraf_richartz_museum[lang]}</Link></li>
+                          <li><Link to="/germany/nrw/city/koln/attractions/museum-ludwig">{t.attractions.museumLudwig[lang]}</Link></li>
+                          <li><Link to="/germany/nrw/city/koln/attractions/koeln_bridges">{t.attractions.koeln_bridges[lang]}</Link></li>
+                          <li><Link to="/germany/nrw/city/koln/attractions/forstbotanischer-garten">{t.attractions.forstbotanischer_garten[lang]}</Link></li>
                         </ul>
                       </li>
                     </ul>
@@ -113,6 +123,12 @@ const Map = () => {
             <Link to="/ukraine">{t.countries.ukraine[lang]}</Link>
             <ul>
               <li><Link to="/ukraine/sumska">{t.regions.sumska[lang]}</Link></li>
+              <ul>
+                <li><Link to="/ukraine/sumska/city/sumy">{t.cities.sumy[lang]}</Link></li>
+                <ul>
+                  <li><Link to="/ukraine/sumska/city/sumy/attractions/sumy_spaso_preobrazhensky">{t.attractions.sumySpasoPreobrazhensky[lang]}</Link></li>
+                </ul>
+              </ul>
             </ul>
           </li>
         </ul>
