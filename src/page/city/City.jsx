@@ -50,7 +50,7 @@ const City = () => {
                                 <img
                                     src={`${BASE_PHOTO_URL}${photos[regionsPath][cityPath].gallery[0].path}`}
                                     alt={photos[regionsPath][cityPath].gallery[0].title.de}
-                                    className='city__foto--right'
+                                    className='city__foto city__foto--right'
                                 />
                             )}
 
