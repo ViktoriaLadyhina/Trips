@@ -106,7 +106,7 @@ export const Fotos = {
         { path: "Germany/nrw/koln/Rhein-Erft-Kreis/bruhl/bruhel_palaces/015.jpg", title: { ru: "Парк дворцов Брюля  - 2022", ua: "Парк палаців Брюля - 2022", de: "Brühlsche Palastgärten - 2022" } },
         { path: "Germany/nrw/koln/Rhein-Erft-Kreis/bruhl/bruhel_palaces/016.jpg", title: { ru: "Парк дворцов Брюля  - 2022", ua: "Парк палаців Брюля - 2022", de: "Brühlsche Palastgärten - 2022" } },
         { path: "Germany/nrw/koln/Rhein-Erft-Kreis/bruhl/bruhel_palaces/017.jpg", title: { ru: "Парк дворцов Брюля  - 2022", ua: "Парк палаців Брюля - 2022", de: "Brühlsche Palastgärten - 2022" } },
-        { path: "Germany/nrw/koln/Rhein-Erft-Kreis/bruhl/bruhel_palaces/018.jpg", title: { ru: "Парк дворцов Брюля  - 2022", ua: "Парк палаців Брюля - 2022", de: "Brühlsche Palastgärten - 2022" } },
+        { path: "Germany/nrw/koln/Rhein-Erft-Kreis/bruhl/bruhel_palaces/018.jpg", title: { ru: "Дворцы Брюля: парк  - 2022", ua: "Парк палаців Брюля - 2022", de: "Brühlsche Palastgärten - 2022" } },
       ]
     },
     frechen: {
@@ -123,5 +123,11 @@ export const Fotos = {
         { path: "Germany/nrw/koln/Rhein-Erft-Kreis/frechen/burg-bachem/Burg-Bachem-lake_2.jpg", title: { ru: "Озерцо возле замка Бахем, 2024", ua: "Озерце біля замку Бахем, 2024", de: "Ein kleiner See in der Nähe von Burg Bachem, 2024" } },
       ]
     },
+    luedenscheid: {
+        gallery: [
+          { path: "Germany/nrw/arnsberg/Märkischer-Kreis/luedenscheid/001.JPG", title: { ru: "Люденшайд 1 - 2006", ua: "Люденшайд 1 - 2006", de: "Luedenscheid 1 - 2006" } },
+          { path: "Germany/nrw/arnsberg/Märkischer-Kreis/luedenscheid/002.JPG", title: { ru: "Люденшайд 2 - 2006", ua: "Люденшайд 2 - 2006", de: "Luedenscheid 1 - 2006" } },
+        ]
+      }
   }
 }
