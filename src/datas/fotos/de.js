@@ -60,6 +60,21 @@ export const Fotos = {
       ],
       schokoladenmuseum: [
         { path: "Germany/nrw/koln/koln-city/schokoladenmuseum/001.jpg", title: { ru: "Музей шоколада (фото взято с википедии)", ua: "Музей шоколаду (фото взято з Вікіпедії)", de: "Schokoladenmuseum (Foto von Wikipedia entnommen)" } },
+      ],
+      wallraf_richartz_museum: [
+        { path: "Germany/nrw/koln/koln-city/wallraf_richartz_museum/001.jpg", title: { ru: "Музей Вальрафа-Рихарца - 2025", ua: "Музей Вальрафа-Ріхарцa - 2025", de: "Wallraf-Richartz-Museum - 2025" } }
+      ],
+      forstbotanischer_garten:[
+        { path: "Germany/nrw/koln/koln-city/forstbotanischer_garten/001.jpg", title: { ru: "Ботанический сад и лесопарк (фото взято с википедии)", ua: "Ботанічний сад і лісопарк (фото взято з Вікіпедії)", de: "Forstbotanischer Garten (Foto von Wikipedia entnommen)" } }
+      ],
+      koln_bridges: [
+        { path: "Germany/nrw/koln/koln-city/koln_bridges/004.jpg", title: { ru: "4. Мост Мюльхаймер (фото взято с интернета)", ua: "4. Міст Мюльхаймер (фото взято з Інтернету)", de: "4. Mülheimer Brücke (Foto aus dem Internet)" } },
+        { path: "Germany/nrw/koln/koln-city/koln_bridges/001.jpg", title: { ru: "6. Мост Гогенцоллернов - 2025", ua: "6. Міст Гогенцоллернів - 2025", de: "6. Hohenzollernbrücke - 2025" } },
+        { path: "Germany/nrw/koln/koln-city/koln_bridges/005.jpg", title: { ru: "6. Мост Гогенцоллернов - 2025", ua: "6. Міст Гогенцоллернів - 2025", de: "6. Hohenzollernbrücke - 2025" } },
+        { path: "Germany/nrw/koln/koln-city/koln_bridges/006.jpg", title: { ru: "7. Мост Дойцер - 2025", ua: "7. Міст Дойцер - 2025", de: "7. Deutzer Brücke - 2025" } },
+        { path: "Germany/nrw/koln/koln-city/koln_bridges/008.jpg", title: { ru: "8. Южный мост (фото взято с интернета)", ua: "8. Південний міст (фото взято з Інтернету)", de: "8. Südbrücke (Foto aus dem Internet)" } },
+        { path: "Germany/nrw/koln/koln-city/koln_bridges/003.jpg", title: { ru: "9. Мост Северинс - 2025", ua: "9. Міст Северинс - 2025", de: "9. Severinsbrücke - 2025" } },
+        { path: "Germany/nrw/koln/koln-city/koln_bridges/002.jpeg", title: { ru: "10. Мост Роденкирхенер (фото взято с интернета)", ua: "10. Міст Роденкірхенер (фото взято з Інтернету)", de: "10. Rodenkirchener Brücke (Foto aus dem Internet)" } }
       ]
     },
     bruhl: {

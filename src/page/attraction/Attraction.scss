@@ -29,8 +29,7 @@
         &-officialSite,
         &-tickets_and_entry,
         &-address,
-        &-theme_zones,
-        &-sub_objects {
+        &-theme_zones {
             padding: 10px;
             flex: 1; // чтобы текст занимал оставшееся место
             text-align: justify;
@@ -52,9 +51,11 @@
                 text-align: justify;
                 display: inline;
             }
+
         }
 
-        &-relics {
+        &-relics,
+        &-sub_objects {
             padding: 10px;
             text-align: left;
 
@@ -64,11 +65,17 @@
                 text-align: center;
             }
 
+            &-bold {
+                @include bold-text;
+                display: inline;
+                text-align: justify;
+            }
+
             &-item {
                 display: flex;
                 align-items: flex-start;
                 flex-wrap: wrap;
-                margin-bottom: 20px; // расстояние между реликвиями
+                margin-bottom: 20px; 
 
                 p {
                     margin: 0;
@@ -76,6 +83,7 @@
 
                 img {
                     max-width: 300px;
+                    max-height: 300px;
                     flex-shrink: 0;
                     margin-right: 15px;
                     display: block;
