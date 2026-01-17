@@ -91,7 +91,7 @@
                     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 
                     &:first-child {
-                        max-width: 400px; 
+                        max-width: 400px;
                     }
                 }
 
@@ -129,5 +129,12 @@
                 @include body-text
             }
         }
+    }
+
+
+    &__sub {
+        @include h3();
+        padding: 10px;
+        text-align: center;
     }
 }
