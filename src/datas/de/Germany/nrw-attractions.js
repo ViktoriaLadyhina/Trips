@@ -709,70 +709,64 @@ const datas = [
         }
     },
     {
-        "id": "koeln_bridges",
-        "name": "Kölner Rheinbrücken",
-        "type": ["technical_structure"],
-        "path": "koeln_bridges",
-        "regionsPath": "nrw",
-        "districtPath": "city",
-        "cityPath": "koln",
-        "fotoCard": "Germany/nrw/koeln/koeln-city/bridges/hohenzollern/001.jpg",
-        "location": "Köln, Deutschland",
-        "construction_period": "Verschiedene Bauphasen, 20.–21. Jahrhundert",
-        "founder": "Stadt Köln und die bundesweiten Verkehrsdienste",
-        "short_description": "Im Stadtgebiet Köln überqueren acht Brücken den Rhein. Jede von ihnen besitzt eine eigene Geschichte, Architektur und funktionale Bedeutung. Einige dieser Brücken gelten als Wahrzeichen der Stadt, sichern Verkehrsströme, bieten Fußwege und eröffnen panoramische Ausblicke auf den Kölner Dom und die Rheinufer.",
-        "full_description": {
-            "title": "Beschreibung und Geschichte",
-            "items": [
-                { "bold": "Allgemeine Informationen:", "text": "In Köln befinden sich acht Rheinbrücken. Sie bilden ein wichtiges Verkehrssystem der Stadt und verbinden Wohngebiete, Industrieareale, die Altstadt und zentrale kulturelle Objekte. Die Brücken prägen das Stadtbild Kölns und sind ein bedeutender Teil seiner urbanen Struktur." },
-                { "text": "Einige von ihnen sind zu eigenen Sehenswürdigkeiten geworden — die bekannteste darunter ist die Hohenzollernbrücke, geschmückt mit Hunderttausenden von Liebesschlössern und mit einem der ikonischsten Ausblicke auf den Kölner Dom." },
-                { "bold": "Nachfolgend sind alle acht Brücken aufgeführt, von Norden nach Süden:" }
+        id: "koln_bridges",
+        name: "Kölner Rheinbrücken",
+        type: ["technical_structure"],
+        path: "koln_bridges",
+        regionsPath: "nrw",
+        districtPath: "city",
+        cityPath: "koln",
+        fotoCard: "Germany/nrw/koln/koln-city/koln_bridges/001.jpg",
+        location: "Köln, Deutschland",
+        construction_period: "Verschiedene Bauphasen, 20.–21. Jahrhundert",
+        founder: "Stadt Köln und die bundesweiten Verkehrsdienste",
+        short_description: "Im Stadtgebiet Köln überqueren etwa zehn Brücken den Rhein. Jede von ihnen besitzt eine eigene Geschichte, Architektur und funktionale Bedeutung. Einige dieser Brücken gelten als Wahrzeichen der Stadt, sichern Verkehrsströme, bieten Fußwege und eröffnen panoramische Ausblicke auf den Kölner Dom und die Rheinufer.",
+        full_description: {
+            title: "Beschreibung und Geschichte",
+            items: [
+                { "bold": "Allgemeine Informationen:", "text": "In Köln befinden sich etwa zehn Rheinbrücken. Sie bilden ein wichtiges Verkehrssystem der Stadt und verbinden Wohngebiete, Industrieareale, die Altstadt und zentrale kulturelle Objekte. Die Brücken prägen das Stadtbild Kölns und sind ein bedeutender Teil seiner urbanen Struktur." },
+                { "text": "Einige von ihnen sind zu eigenen Sehenswürdigkeiten geworden – die bekannteste darunter ist die Hohenzollernbrücke, geschmückt mit Hunderttausenden von Liebesschlössern und mit einem der ikonischsten Ausblicke auf den Kölner Dom." },
+                { "bold": "Nachfolgend sind zehn Brücken aufgeführt:" }
             ]
         },
-        "sub_objects": {
-            "title": "Kölner Brücken",
-            "items": [
-                { "bold": "1. Leverkusener Brücke:", "text": "Die nördlichste Brücke Kölns, Teil der Autobahn A1. Sie wurde in den 1960er Jahren gebaut und dient als zentrale Strecke zwischen dem Ruhrgebiet und der Kölner Region. Aufgrund der Belastung mehrfach saniert." },
-                { "bold": "Interessante Tatsache:", "text": "Wegen des enormen LKW-Aufkommens musste die Brücke mehrfach komplett für Sanierungsarbeiten gesperrt werden, was regelmäßig Gegenstand regionaler Nachrichten war. <br><br>" },
-                { "bold": "2. Rheinbrücke Merkenich:", "text": "Verbindet die Stadtteile Merkenich und Flittard und bedient die nördlichen Industriegebiete. Erbaut in den 1970er Jahren. Die Konstruktion ist speziell auf das industrielle Umfeld ausgelegt." },
-                { "bold": "Interessante Tatsache:", "text": "Diese Brücke wurde mit besonders strengen Umweltauflagen geplant — wegen der Nähe großer Chemiewerke. <br><br>" },
-                { "bold": "3. Niehler Hafenbrücke:", "text": "Eine Arbeitsbrücke und die Haupteinfahrt zum Hafen Niehler Hafen. Wird überwiegend vom Güterverkehr genutzt." },
-                { "bold": "Interessante Tatsache:", "text": "Der Hafen gehört zu den modernsten Binnenhäfen Deutschlands, und diese Brücke ist für seine Logistik von entscheidender Bedeutung. <br><br>" },
-                { "bold": "4. Mülheimer Brücke:", "text": "Eine große Hängebrücke, die Mülheim und Riehl verbindet. Eröffnet im Jahr 1929, nach dem Krieg wiederaufgebaut. Sie führt sowohl Autos als auch Straßenbahnen." },
-                { "bold": "Interessante Tatsache:", "text": "Von 2014 bis 2024 wurde die Brücke einer der umfangreichsten Sanierungen in der Stadtgeschichte unterzogen. <br><br>" },
-                { "bold": "5. Zoobrücke:", "text": "Eine breite Autobrücke und Teil des Kölner Rings (Innerer Ring). Eröffnet in den 1960er Jahren, mit charakteristischer bogenförmiger Struktur." },
-                { "bold": "Interessante Tatsache:", "text": "Ganz in der Nähe befindet sich die einzige Seilbahn Deutschlands, die einen großen Fluss überquert — die Kölner Seilbahn. <br><br>" },
-                { "bold": "6. Hohenzollernbrücke:", "text": "Eine Eisenbahn- und Fußgängerbrücke — eines der Wahrzeichen Kölns. Täglich passieren bis zu 1200 Züge, was sie zu einer der meistbefahrenen Brücken Europas macht." },
-                { "bold": "Interessante Tatsache:", "text": "Dies ist die berühmte „Liebesbrücke“: Paare aus verschiedenen Ländern befestigen Liebesschlösser am Geländer und werfen die Schlüssel in den Rhein. Ihre Anzahl geht in die Hunderttausende, das Gewicht in mehrere Tonnen." },
-                { "text": "Von der Brücke bietet sich der beste Blick auf den Kölner Dom, besonders abends, wenn die Beleuchtung eingeschaltet wird. <br><br>" },
-                { "bold": "7. Deutzer Brücke:", "text": "Verbindet die Kölner Innenstadt mit dem Stadtteil Deutz, wo sich die KölnMesse und die Lanxess Arena befinden. Eine der Hauptbrücken der Stadt." },
-                { "bold": "Interessante Tatsache:", "text": "In der Nähe finden große städtische Veranstaltungen statt, darunter Marathonläufe und Teile der Karnevalsroute. <br><br>" },
-                { "bold": "8. Südbrücke:", "text": "Eine Eisenbahnbrücke aus dem frühen 20. Jahrhundert, die Güter- und Personenzüge führt. Sie hat einen ausgeprägt industriellen Architekturstil." },
-                { "bold": "Interessante Tatsache:", "text": "Ein beliebter Ort für Fotografen: Von hier hat man einen seltenen Blick auf den Süden der Altstadt." }
+        sub_objects: {
+            title: "Kölner Brücken",
+            items: [
+                { "bold": "1. Leverkusener Brücke:", "text": "Die nördlichste Brücke Kölns, Teil der Autobahn A1. Sie wurde in den 1960er Jahren gebaut und dient als zentrale Strecke zwischen dem Ruhrgebiet und der Kölner Region. Aufgrund der Belastung mehrfach saniert. <br><b>Interessante Tatsache:</b> Wegen des enormen LKW-Aufkommens musste die Brücke mehrfach komplett für Sanierungsarbeiten gesperrt werden, was regelmäßig Gegenstand regionaler Nachrichten war." },
+                { "bold": "2. Rheinbrücke Merkenich:", "text": "Verbindet die Stadtteile Merkenich und Flittard und bedient die nördlichen Industriegebiete. Erbaut in den 1970er Jahren. Die Konstruktion ist speziell auf das industrielle Umfeld ausgelegt. <br><b>Interessante Tatsache:</b> Diese Brücke wurde mit besonders strengen Umweltauflagen geplant – wegen der Nähe großer Chemiewerke." },
+                { "bold": "3. Niehler Hafenbrücke:", "text": "Eine Arbeitsbrücke und die Haupteinfahrt zum Hafen Niehler Hafen. Wird überwiegend vom Güterverkehr genutzt. <br><b>Interessante Tatsache:</b> Der Hafen gehört zu den modernsten Binnenhäfen Deutschlands, und diese Brücke ist für seine Logistik von entscheidender Bedeutung." },
+                { img: "Germany/nrw/koln/koln-city/koln_bridges/004.jpg", bold: "4. Mülheimer Brücke:", "text": "Eine große Hängebrücke, die Mülheim und Riehl verbindet. Eröffnet im Jahr 1929, nach dem Krieg wiederaufgebaut. Sie führt sowohl Autos als auch Straßenbahnen.<br><b>Interessante Tatsache:</b> Von 2014 bis 2024 wurde die Brücke einer der umfangreichsten Sanierungen in der Stadtgeschichte unterzogen." },
+                { "bold": "5. Zoobrücke:", "text": "Eine breite Autobrücke und Teil des Kölner Rings (Innerer Ring). Eröffnet in den 1960er Jahren, mit charakteristischer bogenförmiger Struktur.<br><b>Interessante Tatsache:</b> Ganz in der Nähe befindet sich die einzige Seilbahn Deutschlands, die einen großen Fluss überquert – die Kölner Seilbahn." },
+                { img: "Germany/nrw/koln/koln-city/koln_bridges/001.jpg","bold": "6. Hohenzollernbrücke:", "text": "Eine Eisenbahn- und Fußgängerbrücke – eines der Wahrzeichen Kölns. Täglich passieren bis zu 1200 Züge, was sie zu einer der meistbefahrenen Brücken Europas macht." },
+                { img: "Germany/nrw/koln/koln-city/koln_bridges/005.jpg","bold": "Interessante Tatsache:", "text": "Dies ist die berühmte „Liebesbrücke“: Paare aus verschiedenen Ländern befestigen Liebesschlösser am Geländer und werfen die Schlüssel in den Rhein. Ihre Anzahl geht in die Hunderttausende, das Gewicht in mehrere Tonnen. <br>Von der Brücke bietet sich der beste Blick auf den Kölner Dom, besonders abends, wenn die Beleuchtung eingeschaltet wird. " },
+                { img: "Germany/nrw/koln/koln-city/koln_bridges/006.jpg", "bold": "7. Deutzer Brücke:", "text": "Verbindet die Kölner Innenstadt mit dem Stadtteil Deutz, wo sich die KölnMesse und die Lanxess Arena befinden. Eine der Hauptbrücken der Stadt.<br><b>Interessante Tatsache:</b> In der Nähe finden große städtische Veranstaltungen statt, darunter Marathonläufe und Teile der Karnevalsroute." },
+                { img: "Germany/nrw/koln/koln-city/koln_bridges/008.jpg", "bold": "8. Südbrücke:", "text": "Eine Eisenbahnbrücke aus dem frühen 20. Jahrhundert, die Güter- und Personenzüge führt. Sie hat einen ausgeprägt industriellen Architekturstil. <br><b>Interessante Tatsache:</b> Ein beliebter Ort für Fotografen: Von hier hat man einen seltenen Blick auf den Süden der Altstadt." },
+                { img: "Germany/nrw/koln/koln-city/koln_bridges/003.jpg", bold: "9. Severinsbrücke", text: " " },
+                { img: "Germany/nrw/koln/koln-city/koln_bridges/002.jpeg", bold: "10. Rodenkirchener Brücke", text: " " },
             ]
         },
-        "interestingFacts": {
+        interestingFacts: {
             "title": "Interessante Fakten",
             "items": [
                 { "text": "Die Hohenzollernbrücke ist mit Hunderttausenden Liebesschlössern geschmückt und gilt als einer der romantischsten Orte der Stadt." },
-                { "text": "Von der Hohenzollernbrücke eröffnet sich ein ikonisches Panorama des Kölner Doms — eines der meistfotografierten Motive Deutschlands." },
+                { "text": "Von der Hohenzollernbrücke eröffnet sich ein ikonisches Panorama des Kölner Doms – eines der meistfotografierten Motive Deutschlands." },
                 { "text": "Neben der Zoobrücke befindet sich die einzige deutsche Seilbahn, die den Rhein überquert." },
                 { "text": "Die Kölner Brücken sind ein fester Bestandteil vieler Rheintouren, darunter „Unter den sieben Brücken“." }
             ]
         },
-        "meta": {
+        meta: {
             "title": "Kölner Rheinbrücken",
             "description": "Beschreibung der acht Kölner Brücken: Geschichte, Besonderheiten, interessante Fakten, inklusive der Liebesbrücke Hohenzollernbrücke.",
             "ogTitle": "Kölner Rheinbrücken",
             "ogDescription": "Vollständige Beschreibung aller acht Kölner Rheinbrücken mit Fakten, Geschichte und Architektur.",
-            "ogImage": "Germany/nrw/koeln/koeln-city/bridges/hohenzollern/001.jpg"
+            "ogImage": "Germany/nrw/koln/koln-city/koln_bridges/001.jpg"
         }
     },
     {
         id: "forstbotanischer_garten",
-        name: "Botanischer Garten und Forstpark – Forstbotanischer Garten",
+        name: "Forstbotanischer Garten",
         type: ["nature"],
-        path: "forstbotanischer-garten",
+        path: "forstbotanischer_garten",
         regionsPath: "nrw",
         districtPath: "city",
         cityPath: "koln",
@@ -835,6 +829,67 @@ const datas = [
             ogDescription: "Der Garten und Forstpark Köln bieten Spaziergänge durch die Rhododendron-Ravine, den Japanischen Garten, die Heidewiese und den Friedenswald.",
             ogImage: "Germany/nrw/koln/koln-city/forstbotanischer-garten/001.jpg"
         }
+    },
+    {
+    id: "wallraf_richartz_museum",
+    name: "Wallraf-Richartz-Museum",
+    type: ["museum"],
+    path: "wallraf_richartz_museum",
+    regionsPath: "nrw",
+    districtPath: "city",
+    cityPath: "koln",
+    fotoCard: "Germany/nrw/koln/koln-city/wallraf_richartz_museum/001.jpg",
+    location: "Köln, Deutschland",
+    officialSite: [
+        { bold: "Offizielle Webseite des Museums", link: "http://www.wallraf.museum/en" }
+    ],
+    construction_period: "Das erste Museum wurde 1861 eröffnet, basierend auf einer Sammlung mittelalterlicher Kunst. Das moderne Gebäude, entworfen vom Architekten Oswald Matthias Ungers, wurde 2001 eröffnet.",
+    founder: "Die Sammlung begann mit den Sammlungen von Ferdinand Franz Wallraf, die der Stadt Köln im 19. Jh. übergeben wurden. Dank Spenden wohlhabender Mäzene entwickelte sich das Museum über viele Jahre weiter. 2001 übergab der Schweizer Sammler Gérard Corboud eine große Sammlung impressionistischer und neoimpressionistischer Kunst, weshalb der Name um Fondation Corboud ergänzt wurde.",
+    architects: ["Oswald Matthias Ungers"],
+    short_description: "Das älteste Museum Kölns mit Sammlungen von Malerei, Skulptur und Grafik vom Mittelalter bis zum frühen 20. Jh. Gezeigt werden Werke der Kölner Schule, des Barock sowie Impressionisten und Postimpressionisten aus dem Corboud-Fonds. Die Gesamtzahl der Grafiken beträgt etwa 75.000. Das Museum liegt im Stadtzentrum, in der Nähe des Rathauses und des Kölner Doms.",
+    full_description: {
+        title: "Beschreibung und Geschichte",
+        items: [
+            { bold: "Architektur und Geschichte des Museums", text: "Das Wallraf‑Richartz-Museum ist eines der ältesten und bedeutendsten Museen Kölns, das der europäischen Kunst vom Mittelalter bis zum frühen 20. Jh. gewidmet ist." },
+            { text: "Das moderne Museumsgebäude ist ein speziell entworfener architektonischer Raum, der 2001 nach den Plänen des bekannten Architekten Oswald Matthias Ungers eröffnet wurde. Es befindet sich im historischen Zentrum Kölns, nur wenige Minuten vom Rathaus und dem Kölner Dom entfernt." },
+            { bold: "Veränderungen und Verluste in der Geschichte", text: "Im Laufe der Geschichte erlebte das Museum Verluste von Kunstwerken – zum Beispiel wurden während der NS-Zeit viele Werke als „entartete Kunst“ konfisziert, darunter Arbeiten von Picasso, Munch und anderen." }
+        ]
+    },
+    sub_objects: {
+        title: "Sammlungen",
+        items: [
+            { text: "Die Museumssammlung begann mit Ferdinand Franz Wallraf (1748–1824) – Professor, Sammler und Gelehrter, der viele Kunstwerke aus Kölner Kirchen während der Säkularisation rettete. Er vermachte der Stadt fast 10.000 Gemälde, Zeichnungen, Bücher und andere Artefakte, um sie der Öffentlichkeit zugänglich zu machen." },
+            { bold: "Mittelalterliche Kunst: ", text: "Das Museum besitzt eine der weltweit größten Sammlungen mittelalterlicher Malerei, besonders vertreten durch Werke der Kölner Schule des 13.–15. Jahrhunderts. Unter den mittelalterlichen Werken ist eines der bekanntesten <b>„Madonna in der Rosenlaube“</b> (Stefan Lochner, ca. 1440–1442). Dieses Gemälde gilt als eines der bedeutendsten Werke der Spätgotik und wird oft mit der „Kölner Mona Lisa“ verglichen." },
+            { bold: "Barock: ", text: "Werke von Rubens, Rembrandt und anderen Meistern." },
+            { bold: "Impressionismus und Neoimpressionismus: ", text: "Seit 2001 heißt das Museum Wallraf‑Richartz‑Museum & Fondation Corboud, da die Schweizer Sammler Gérard und Marisol Corboud etwa 170 herausragende Werke von Impressionisten und Postimpressionisten als „Leihgabe auf Lebenszeit“ übergaben. Es ist die größte Sammlung impressionistischer und neoimpressionistischer Malerei in Deutschland mit Werken von Renoir, Monet, Sisley, Morisot, Signac und anderen." },
+            { bold: "Grafik: ", text: "Neben Malerei bewahrt das Museum etwa 75.000 grafische Arbeiten (Zeichnungen, Drucke, Aquarelle) vom Mittelalter bis zum 20. Jh. – eine einzigartige Ressource zur Erforschung der europäischen Kunstentwicklung." }
+        ]
+    },
+    tickets_and_entry: {
+        title: "Praktische Informationen",
+        items: [
+            { bold: "Adresse:", text: "Obenmarspforten 40, 50667 Köln, Deutschland" },
+            { bold: "Öffnungszeiten:", text: "Dienstag–Sonntag: 10:00–18:00. Jeder 1. und 3. Donnerstag im Monat: 10:00–22:00. Montag: geschlossen (besondere Feiertags- und Saisonzeiten können abweichen)" },
+            { bold: "Eintrittspreise (2025):", text: "Erwachsene: ca. 10–13 €. Ermäßigt: ca. 7–8 € (Studenten, Senioren, Sozialvergünstigungen). Kinder bis 18 Jahre: frei. Familien-, Gruppen- und Kombitickets mit anderen Museen der Stadt verfügbar." }
+        ]
+    },
+    interestingFacts: {
+        title: "Interessante Fakten",
+        items: [
+            { text: "Die Museumsammlung umfasst Werke aus über 700 Jahren Kunstgeschichte – vom Mittelalter bis zum Jugendstil." },
+            { text: "Der Sammlungsgründer Ferdinand Franz Wallraf sammelte lange Kunst aus Kirchen, Häusern und Privatbesitz, um sie für zukünftige Generationen zu bewahren." },
+            { text: "Die im Museumstitel enthaltene Fondation Corboud repräsentiert eine bedeutende Sammlung von Impressionisten und Postimpressionisten, viele Werke wurden im Rahmen von Ausstellungen weltweit gezeigt." },
+            { text: "Es gibt eine virtuelle 360°-Tour durch das Museum, die es ermöglicht, die Sammlung online zu erkunden." }
+        ]
+    },
+    meta: {
+        title: "Wallraf-Richartz-Museum — Kunst vom Mittelalter bis zum Impressionismus",
+        description: "Das Wallraf-Richartz-Museum in Köln ist das älteste Museum der Stadt mit Sammlungen von Malerei, Skulptur und Grafik vom Mittelalter bis zum frühen 20. Jh., einschließlich des Fonds Fondation Corboud mit Impressionisten.",
+        ogTitle: "Wallraf-Richartz-Museum — Kunst vom Mittelalter bis zum Impressionismus",
+        ogDescription: "Entdecken Sie das Wallraf-Richartz-Museum in Köln: Mittelalterliche und barocke Kunst sowie die Impressionisten-Sammlung Fondation Corboud.",
+        ogImage: "Germany/nrw/koln/koln-city/wallraf_richartz_museum/001.jpg"
     }
+}
+
 ];
 export default datas;

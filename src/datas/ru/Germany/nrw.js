@@ -698,7 +698,7 @@ const datas = {
                                 { id: 5, name: "Вахтберг (Wachtberg)", hasInfo: false },
                                 { id: 6, name: "Виндек (Windeck)", hasInfo: false },
                                 { id: 7, name: "Зигбург (Siegburg)", hasInfo: false },
-                                { id: 8, name: "Кёнигсвинтер (Königswinter)", hasInfo: false },
+                                { id: 8, name: "Кёнигсвинтер", hasInfo: false, path: "konigswinter" },
                                 { id: 9, name: "Ломар (Lohmar)", hasInfo: false },
                                 { id: 10, name: "Меккенхайм (Meckenheim)", hasInfo: false },
                                 { id: 11, name: "Мух (Much)", hasInfo: false },

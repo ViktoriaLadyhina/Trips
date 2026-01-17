@@ -6,6 +6,7 @@ import InfoBlock from '../../components/InfoBlock/InfoBlock.jsx';
 import './Attraction.scss'
 import Gallery from '../../components/gallery/Gallery.jsx';
 import { photosByCountry } from '../../datas/fotos/index.js';
+import AttractionCardSub from '../../components/attraction/AttractionCardSub.jsx'
 
 const BASE_PHOTO_URL = import.meta.env.VITE_BASE_PHOTO_URL;
 
@@ -16,7 +17,7 @@ const Attraction = () => {
     const attraction = attractions.find(a => a.path === attractionsPath);
     const photos = photosByCountry[country?.path];
     const attractionPhotos = photos?.[region?.path]?.[city?.path]?.[attractionsPath] || [];
-   
+
     // Преобразуем в массив для Gallery
     const images = attractionPhotos.map(photo => ({
         src: `${BASE_PHOTO_URL}${photo.path}`,
@@ -29,6 +30,8 @@ const Attraction = () => {
     if (error) return <p>{error}</p>;
     if (!attractions) return <p>Loading...</p>;
     if (!attraction) return <p>Attraction not found</p>;
+
+    const subObjects = attraction.subObjects || [];
 
     // Хлебные крошки
     const crumbs = [
@@ -65,29 +68,50 @@ const Attraction = () => {
                     )}
                 </div>
 
-                <div className='attraction__desc-founder'>
-                    <span className='attraction__desc-founder-bold'>{founderTitle[lang]}: </span>
-                    <span className='attraction__desc-founder-text'>{attraction.founder && (attraction.founder)}</span>
-                </div>
-                <div className='attraction__desc-construction_period'>
-                    <span className='attraction__desc-construction_period-bold'>{construction_periodTitle[lang]}: </span>
-                    <span className='attraction__desc-construction_period-text'>{attraction.construction_period && (attraction.construction_period)}</span>
-                </div>
+                {attraction.founder && (
+                    <div className='attraction__desc-founder'>
+                        <span className='attraction__desc-founder-bold'>{founderTitle[lang]}:</span>
+                        <span className='attraction__desc-founder-text'>{attraction.founder}</span>
+                    </div>
+                )}
+                {attraction.construction_period && (
+                    <div className='attraction__desc-construction_period'>
+                        <span className='attraction__desc-construction_period-bold'>{construction_periodTitle[lang]}: </span>
+                        <span className='attraction__desc-construction_period-text'>{attraction.construction_period && (attraction.construction_period)}</span>
+                    </div>
+                )}
                 {attraction.architects &&
-                (                <div className='attraction__desc-architects'>
-                    <span className='attraction__desc-architects-bold'>{architects[lang]}: </span>
-                    <span className='attraction__desc-architects-text'>{attraction.architects && (attraction.architects)}</span>
-                </div>)
-                }
+                    (<div className='attraction__desc-architects'>
+                        <span className='attraction__desc-architects-bold'>{architects[lang]}: </span>
+                        <span className='attraction__desc-architects-text'>{attraction.architects}</span>
+                    </div>
+                    )}
 
 
                 {attraction.tickets_and_entry && (<InfoBlock data={attraction.tickets_and_entry} className="attraction__desc-tickets_and_entry" />)}
                 {attraction.address && (<InfoBlock data={attraction.address} className="attraction__desc-address" />)}
                 {attraction.full_description && (<InfoBlock data={attraction.full_description} className="attraction__desc-full_description" />)}
+                {attraction.legends && (<InfoBlock data={attraction.legends} className="attraction__desc-full_description" />)}
                 {attraction.sub_objects && (<InfoBlock data={attraction.sub_objects} className="attraction__desc-sub_objects" />)}
                 {attraction.relics && (<InfoBlock data={attraction.relics} className="attraction__desc-relics" />)}
                 {attraction.hotels && (<InfoBlock data={attraction.hotels} className="attraction__desc-hotels" />)}
                 {attraction.interestingFacts && (<InfoBlock data={attraction.interestingFacts} className="attraction__desc-interestingFacts" />)}
+
+                {subObjects.length > 0 && (
+                    <section className="attraction-sub">
+                        <h3>{lang === "ru" ? "Достопримечательности" : "Sehenswürdigkeiten"}</h3>
+
+                        {subObjects.map(subId => {
+                            const attr = attractions.find(a => a.id === subId);
+                            if (!attr) return null; // защита от ошибок
+                            return <AttractionCardSub
+                                key={subId}
+                                attr={attr}
+                                lang={lang}
+                            />;
+                        })}
+                    </section>
+                )}
 
                 {attraction?.officialSite && (<InfoBlock data={attraction.officialSite} className="attraction__desc-officialSite" />)}
 
