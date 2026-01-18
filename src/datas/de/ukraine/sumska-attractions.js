@@ -57,10 +57,10 @@ const datas = [
         }
     },
     {
-        id: "sumy_Der_Pavillon ",
+        id: "sumy_altanka",
         name: "Der Pavillon ",
         type: ["istorical_building"],
-        path: "Sumy_Der_Pavillon",
+        path: "sumy_altanka",
         regionsPath: "sumska",
         districtPath: "city",
         cityPath: "sumy",
@@ -73,7 +73,7 @@ const datas = [
         },
         construction_period: "Ungefähr zu Beginn des 20. Jahrhunderts – etwa 1900–1905",
         architects: ["Matwij Schtschaweljew"],
-        founder: "Nikolai Liščynskyj",
+        founder: " Nikolai Liščynskyj",
         short_description: "Gegen Ende des 19. Jahrhunderts äußerten Petersburger Wissenschaftler die Vermutung, dass es in der Umgebung von Sumy Erdölvorkommen geben könnte. Zu diesem Zweck reisten sie in die Stadt, wandten sich an die Zemstwo-Verwaltung und vereinbarten die Durchführung von Erkundungsarbeiten. Der Bohrplatz wurde direkt auf dem Platz vor dem Gebäude der Zemstwo-Verwaltung ausgewiesen. Eine Bohrung wurde niedergebracht, doch Erdöl konnte nicht nachgewiesen werden. Wahrscheinlich wäre diese Bohrstelle bald in Vergessenheit geraten, wenn nicht der Kaufmann der zweiten Gilde Liščynskyj, ein Verwandter der bekannten Familie Charitonenko, darauf aufmerksam geworden wäre. Ihm gehörte ein Garten, den er später der Stadt schenkte. Heute ist dieses Gelände Teil des Stadtparks. Der Kaufmann fügte dem Garten ein weiteres Grundstück hinzu, auf dem sich die Bohrung befand. Auf seine Anordnung hin wurde die Bohrstelle mit einer Stahlplatte verschlossen, und an dieser Stelle errichtete man einen Pavillon.",
         full_description: {
             title: "Der Pavillon",

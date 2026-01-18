@@ -737,8 +737,8 @@ const datas = [
                 { "bold": "3. Niehler Hafenbrücke:", "text": "Eine Arbeitsbrücke und die Haupteinfahrt zum Hafen Niehler Hafen. Wird überwiegend vom Güterverkehr genutzt. <br><b>Interessante Tatsache:</b> Der Hafen gehört zu den modernsten Binnenhäfen Deutschlands, und diese Brücke ist für seine Logistik von entscheidender Bedeutung." },
                 { img: "Germany/nrw/koln/koln-city/koln_bridges/004.jpg", bold: "4. Mülheimer Brücke:", "text": "Eine große Hängebrücke, die Mülheim und Riehl verbindet. Eröffnet im Jahr 1929, nach dem Krieg wiederaufgebaut. Sie führt sowohl Autos als auch Straßenbahnen.<br><b>Interessante Tatsache:</b> Von 2014 bis 2024 wurde die Brücke einer der umfangreichsten Sanierungen in der Stadtgeschichte unterzogen." },
                 { "bold": "5. Zoobrücke:", "text": "Eine breite Autobrücke und Teil des Kölner Rings (Innerer Ring). Eröffnet in den 1960er Jahren, mit charakteristischer bogenförmiger Struktur.<br><b>Interessante Tatsache:</b> Ganz in der Nähe befindet sich die einzige Seilbahn Deutschlands, die einen großen Fluss überquert – die Kölner Seilbahn." },
-                { img: "Germany/nrw/koln/koln-city/koln_bridges/001.jpg","bold": "6. Hohenzollernbrücke:", "text": "Eine Eisenbahn- und Fußgängerbrücke – eines der Wahrzeichen Kölns. Täglich passieren bis zu 1200 Züge, was sie zu einer der meistbefahrenen Brücken Europas macht." },
-                { img: "Germany/nrw/koln/koln-city/koln_bridges/005.jpg","bold": "Interessante Tatsache:", "text": "Dies ist die berühmte „Liebesbrücke“: Paare aus verschiedenen Ländern befestigen Liebesschlösser am Geländer und werfen die Schlüssel in den Rhein. Ihre Anzahl geht in die Hunderttausende, das Gewicht in mehrere Tonnen. <br>Von der Brücke bietet sich der beste Blick auf den Kölner Dom, besonders abends, wenn die Beleuchtung eingeschaltet wird. " },
+                { img: "Germany/nrw/koln/koln-city/koln_bridges/001.jpg", "bold": "6. Hohenzollernbrücke:", "text": "Eine Eisenbahn- und Fußgängerbrücke – eines der Wahrzeichen Kölns. Täglich passieren bis zu 1200 Züge, was sie zu einer der meistbefahrenen Brücken Europas macht." },
+                { img: "Germany/nrw/koln/koln-city/koln_bridges/005.jpg", "bold": "Interessante Tatsache:", "text": "Dies ist die berühmte „Liebesbrücke“: Paare aus verschiedenen Ländern befestigen Liebesschlösser am Geländer und werfen die Schlüssel in den Rhein. Ihre Anzahl geht in die Hunderttausende, das Gewicht in mehrere Tonnen. <br>Von der Brücke bietet sich der beste Blick auf den Kölner Dom, besonders abends, wenn die Beleuchtung eingeschaltet wird. " },
                 { img: "Germany/nrw/koln/koln-city/koln_bridges/006.jpg", "bold": "7. Deutzer Brücke:", "text": "Verbindet die Kölner Innenstadt mit dem Stadtteil Deutz, wo sich die KölnMesse und die Lanxess Arena befinden. Eine der Hauptbrücken der Stadt.<br><b>Interessante Tatsache:</b> In der Nähe finden große städtische Veranstaltungen statt, darunter Marathonläufe und Teile der Karnevalsroute." },
                 { img: "Germany/nrw/koln/koln-city/koln_bridges/008.jpg", "bold": "8. Südbrücke:", "text": "Eine Eisenbahnbrücke aus dem frühen 20. Jahrhundert, die Güter- und Personenzüge führt. Sie hat einen ausgeprägt industriellen Architekturstil. <br><b>Interessante Tatsache:</b> Ein beliebter Ort für Fotografen: Von hier hat man einen seltenen Blick auf den Süden der Altstadt." },
                 { img: "Germany/nrw/koln/koln-city/koln_bridges/003.jpg", bold: "9. Severinsbrücke", text: " " },
@@ -770,7 +770,7 @@ const datas = [
         regionsPath: "nrw",
         districtPath: "city",
         cityPath: "koln",
-        fotoCard: "Germany/nrw/koln/koln-city/forstbotanischer-garten/001.jpg",
+        fotoCard: "Germany/nrw/koln/koln-city/forstbotanischer_garten/001.jpg",
         location: "Köln, Deutschland",
         officialSite: [
             {
@@ -827,69 +827,382 @@ const datas = [
             description: "Botanischer Garten und Forstpark Köln mit Pflanzen aus aller Welt und thematischen Zonen, einschließlich Friedenswald.",
             ogTitle: "Forstbotanischer Garten – Botanischer Garten und Forstpark Köln",
             ogDescription: "Der Garten und Forstpark Köln bieten Spaziergänge durch die Rhododendron-Ravine, den Japanischen Garten, die Heidewiese und den Friedenswald.",
-            ogImage: "Germany/nrw/koln/koln-city/forstbotanischer-garten/001.jpg"
+            ogImage: "Germany/nrw/koln/koln-city/forstbotanischer_garten/001.jpg"
         }
     },
     {
-    id: "wallraf_richartz_museum",
-    name: "Wallraf-Richartz-Museum",
-    type: ["museum"],
-    path: "wallraf_richartz_museum",
-    regionsPath: "nrw",
-    districtPath: "city",
-    cityPath: "koln",
-    fotoCard: "Germany/nrw/koln/koln-city/wallraf_richartz_museum/001.jpg",
-    location: "Köln, Deutschland",
-    officialSite: [
-        { bold: "Offizielle Webseite des Museums", link: "http://www.wallraf.museum/en" }
-    ],
-    construction_period: "Das erste Museum wurde 1861 eröffnet, basierend auf einer Sammlung mittelalterlicher Kunst. Das moderne Gebäude, entworfen vom Architekten Oswald Matthias Ungers, wurde 2001 eröffnet.",
-    founder: "Die Sammlung begann mit den Sammlungen von Ferdinand Franz Wallraf, die der Stadt Köln im 19. Jh. übergeben wurden. Dank Spenden wohlhabender Mäzene entwickelte sich das Museum über viele Jahre weiter. 2001 übergab der Schweizer Sammler Gérard Corboud eine große Sammlung impressionistischer und neoimpressionistischer Kunst, weshalb der Name um Fondation Corboud ergänzt wurde.",
-    architects: ["Oswald Matthias Ungers"],
-    short_description: "Das älteste Museum Kölns mit Sammlungen von Malerei, Skulptur und Grafik vom Mittelalter bis zum frühen 20. Jh. Gezeigt werden Werke der Kölner Schule, des Barock sowie Impressionisten und Postimpressionisten aus dem Corboud-Fonds. Die Gesamtzahl der Grafiken beträgt etwa 75.000. Das Museum liegt im Stadtzentrum, in der Nähe des Rathauses und des Kölner Doms.",
-    full_description: {
-        title: "Beschreibung und Geschichte",
-        items: [
-            { bold: "Architektur und Geschichte des Museums", text: "Das Wallraf‑Richartz-Museum ist eines der ältesten und bedeutendsten Museen Kölns, das der europäischen Kunst vom Mittelalter bis zum frühen 20. Jh. gewidmet ist." },
-            { text: "Das moderne Museumsgebäude ist ein speziell entworfener architektonischer Raum, der 2001 nach den Plänen des bekannten Architekten Oswald Matthias Ungers eröffnet wurde. Es befindet sich im historischen Zentrum Kölns, nur wenige Minuten vom Rathaus und dem Kölner Dom entfernt." },
-            { bold: "Veränderungen und Verluste in der Geschichte", text: "Im Laufe der Geschichte erlebte das Museum Verluste von Kunstwerken – zum Beispiel wurden während der NS-Zeit viele Werke als „entartete Kunst“ konfisziert, darunter Arbeiten von Picasso, Munch und anderen." }
-        ]
+        id: "wallraf_richartz_museum",
+        name: "Wallraf-Richartz-Museum",
+        type: ["museum"],
+        path: "wallraf_richartz_museum",
+        regionsPath: "nrw",
+        districtPath: "city",
+        cityPath: "koln",
+        fotoCard: "Germany/nrw/koln/koln-city/wallraf_richartz_museum/001.jpg",
+        location: "Köln, Deutschland",
+        officialSite: [
+            { bold: "Offizielle Webseite des Museums", link: "http://www.wallraf.museum/en" }
+        ],
+        construction_period: "Das erste Museum wurde 1861 eröffnet, basierend auf einer Sammlung mittelalterlicher Kunst. Das moderne Gebäude, entworfen vom Architekten Oswald Matthias Ungers, wurde 2001 eröffnet.",
+        founder: "Die Sammlung begann mit den Sammlungen von Ferdinand Franz Wallraf, die der Stadt Köln im 19. Jh. übergeben wurden. Dank Spenden wohlhabender Mäzene entwickelte sich das Museum über viele Jahre weiter. 2001 übergab der Schweizer Sammler Gérard Corboud eine große Sammlung impressionistischer und neoimpressionistischer Kunst, weshalb der Name um Fondation Corboud ergänzt wurde.",
+        architects: ["Oswald Matthias Ungers"],
+        short_description: "Das älteste Museum Kölns mit Sammlungen von Malerei, Skulptur und Grafik vom Mittelalter bis zum frühen 20. Jh. Gezeigt werden Werke der Kölner Schule, des Barock sowie Impressionisten und Postimpressionisten aus dem Corboud-Fonds. Die Gesamtzahl der Grafiken beträgt etwa 75.000. Das Museum liegt im Stadtzentrum, in der Nähe des Rathauses und des Kölner Doms.",
+        full_description: {
+            title: "Beschreibung und Geschichte",
+            items: [
+                { bold: "Architektur und Geschichte des Museums", text: "Das Wallraf‑Richartz-Museum ist eines der ältesten und bedeutendsten Museen Kölns, das der europäischen Kunst vom Mittelalter bis zum frühen 20. Jh. gewidmet ist." },
+                { text: "Das moderne Museumsgebäude ist ein speziell entworfener architektonischer Raum, der 2001 nach den Plänen des bekannten Architekten Oswald Matthias Ungers eröffnet wurde. Es befindet sich im historischen Zentrum Kölns, nur wenige Minuten vom Rathaus und dem Kölner Dom entfernt." },
+                { bold: "Veränderungen und Verluste in der Geschichte", text: "Im Laufe der Geschichte erlebte das Museum Verluste von Kunstwerken – zum Beispiel wurden während der NS-Zeit viele Werke als „entartete Kunst“ konfisziert, darunter Arbeiten von Picasso, Munch und anderen." }
+            ]
+        },
+        sub_objects: {
+            title: "Sammlungen",
+            items: [
+                { text: "Die Museumssammlung begann mit Ferdinand Franz Wallraf (1748–1824) – Professor, Sammler und Gelehrter, der viele Kunstwerke aus Kölner Kirchen während der Säkularisation rettete. Er vermachte der Stadt fast 10.000 Gemälde, Zeichnungen, Bücher und andere Artefakte, um sie der Öffentlichkeit zugänglich zu machen." },
+                { bold: "Mittelalterliche Kunst: ", text: "Das Museum besitzt eine der weltweit größten Sammlungen mittelalterlicher Malerei, besonders vertreten durch Werke der Kölner Schule des 13.–15. Jahrhunderts. Unter den mittelalterlichen Werken ist eines der bekanntesten <b>„Madonna in der Rosenlaube“</b> (Stefan Lochner, ca. 1440–1442). Dieses Gemälde gilt als eines der bedeutendsten Werke der Spätgotik und wird oft mit der „Kölner Mona Lisa“ verglichen." },
+                { bold: "Barock: ", text: "Werke von Rubens, Rembrandt und anderen Meistern." },
+                { bold: "Impressionismus und Neoimpressionismus: ", text: "Seit 2001 heißt das Museum Wallraf‑Richartz‑Museum & Fondation Corboud, da die Schweizer Sammler Gérard und Marisol Corboud etwa 170 herausragende Werke von Impressionisten und Postimpressionisten als „Leihgabe auf Lebenszeit“ übergaben. Es ist die größte Sammlung impressionistischer und neoimpressionistischer Malerei in Deutschland mit Werken von Renoir, Monet, Sisley, Morisot, Signac und anderen." },
+                { bold: "Grafik: ", text: "Neben Malerei bewahrt das Museum etwa 75.000 grafische Arbeiten (Zeichnungen, Drucke, Aquarelle) vom Mittelalter bis zum 20. Jh. – eine einzigartige Ressource zur Erforschung der europäischen Kunstentwicklung." }
+            ]
+        },
+        tickets_and_entry: {
+            title: "Praktische Informationen",
+            items: [
+                { bold: "Adresse:", text: "Obenmarspforten 40, 50667 Köln, Deutschland" },
+                { bold: "Öffnungszeiten:", text: "Dienstag–Sonntag: 10:00–18:00. Jeder 1. und 3. Donnerstag im Monat: 10:00–22:00. Montag: geschlossen (besondere Feiertags- und Saisonzeiten können abweichen)" },
+                { bold: "Eintrittspreise (2025):", text: "Erwachsene: ca. 10–13 €. Ermäßigt: ca. 7–8 € (Studenten, Senioren, Sozialvergünstigungen). Kinder bis 18 Jahre: frei. Familien-, Gruppen- und Kombitickets mit anderen Museen der Stadt verfügbar." }
+            ]
+        },
+        interestingFacts: {
+            title: "Interessante Fakten",
+            items: [
+                { text: "Die Museumsammlung umfasst Werke aus über 700 Jahren Kunstgeschichte – vom Mittelalter bis zum Jugendstil." },
+                { text: "Der Sammlungsgründer Ferdinand Franz Wallraf sammelte lange Kunst aus Kirchen, Häusern und Privatbesitz, um sie für zukünftige Generationen zu bewahren." },
+                { text: "Die im Museumstitel enthaltene Fondation Corboud repräsentiert eine bedeutende Sammlung von Impressionisten und Postimpressionisten, viele Werke wurden im Rahmen von Ausstellungen weltweit gezeigt." },
+                { text: "Es gibt eine virtuelle 360°-Tour durch das Museum, die es ermöglicht, die Sammlung online zu erkunden." }
+            ]
+        },
+        meta: {
+            title: "Wallraf-Richartz-Museum — Kunst vom Mittelalter bis zum Impressionismus",
+            description: "Das Wallraf-Richartz-Museum in Köln ist das älteste Museum der Stadt mit Sammlungen von Malerei, Skulptur und Grafik vom Mittelalter bis zum frühen 20. Jh., einschließlich des Fonds Fondation Corboud mit Impressionisten.",
+            ogTitle: "Wallraf-Richartz-Museum — Kunst vom Mittelalter bis zum Impressionismus",
+            ogDescription: "Entdecken Sie das Wallraf-Richartz-Museum in Köln: Mittelalterliche und barocke Kunst sowie die Impressionisten-Sammlung Fondation Corboud.",
+            ogImage: "Germany/nrw/koln/koln-city/wallraf_richartz_museum/001.jpg"
+        }
     },
-    sub_objects: {
-        title: "Sammlungen",
-        items: [
-            { text: "Die Museumssammlung begann mit Ferdinand Franz Wallraf (1748–1824) – Professor, Sammler und Gelehrter, der viele Kunstwerke aus Kölner Kirchen während der Säkularisation rettete. Er vermachte der Stadt fast 10.000 Gemälde, Zeichnungen, Bücher und andere Artefakte, um sie der Öffentlichkeit zugänglich zu machen." },
-            { bold: "Mittelalterliche Kunst: ", text: "Das Museum besitzt eine der weltweit größten Sammlungen mittelalterlicher Malerei, besonders vertreten durch Werke der Kölner Schule des 13.–15. Jahrhunderts. Unter den mittelalterlichen Werken ist eines der bekanntesten <b>„Madonna in der Rosenlaube“</b> (Stefan Lochner, ca. 1440–1442). Dieses Gemälde gilt als eines der bedeutendsten Werke der Spätgotik und wird oft mit der „Kölner Mona Lisa“ verglichen." },
-            { bold: "Barock: ", text: "Werke von Rubens, Rembrandt und anderen Meistern." },
-            { bold: "Impressionismus und Neoimpressionismus: ", text: "Seit 2001 heißt das Museum Wallraf‑Richartz‑Museum & Fondation Corboud, da die Schweizer Sammler Gérard und Marisol Corboud etwa 170 herausragende Werke von Impressionisten und Postimpressionisten als „Leihgabe auf Lebenszeit“ übergaben. Es ist die größte Sammlung impressionistischer und neoimpressionistischer Malerei in Deutschland mit Werken von Renoir, Monet, Sisley, Morisot, Signac und anderen." },
-            { bold: "Grafik: ", text: "Neben Malerei bewahrt das Museum etwa 75.000 grafische Arbeiten (Zeichnungen, Drucke, Aquarelle) vom Mittelalter bis zum 20. Jh. – eine einzigartige Ressource zur Erforschung der europäischen Kunstentwicklung." }
-        ]
+    {
+        id: "drachenfels",
+        name: "Berg Drachenfels",
+        type: ["nature"],
+        path: "drachenfels",
+        regionsPath: "nrw",
+        districtPath: "koln",
+        cityPath: "konigswinter",
+        fotoCard: "Germany/nrw/koln/Rhein-Sieg-Kreis/konigswinter/drachenfels/001.jpg",
+        location: "zwischen den Städten Königswinter und Bad Honnef, Deutschland",
+        officialSite: [
+            {
+                bold: "Offizielle Website der Zahnradbahn und des touristischen Gesamtprojekts für den Berg",
+                link: "https://www.drachenfelsbahn.de/"
+            }
+        ],
+        short_description: "Der Drachenfels ist ein legendärer Berg im Naturpark Siebengebirge oberhalb des Rheins. Vom Gipfel eröffnen sich weite Panoramablicke über das Rheintal, und der Berg selbst ist eng mit der Sage vom Drachen und dem Helden Siegfried verbunden. Auf dem Berg befinden sich mehrere Sehenswürdigkeiten: die historische Burgruine Drachenfels, Aussichtspunkte, die Drachenfelsbahn sowie Wanderwege, die sich ideal für einen Tagesausflug eignen.",
+        full_description: {
+            title: "Beschreibung und Geschichte",
+            items: [
+                { bold: "Der Drachenfels", text: "ist einer der bekanntesten und sagenumwobensten Berge des Rheintals. Er liegt im Naturpark Siebengebirge am rechten Rheinufer, unweit von Königswinter. Die Höhe des Berges beträgt rund 321 Meter, doch seine kulturelle und historische Bedeutung reicht weit über diese Zahl hinaus." },
+                { text: "Der Ort besitzt seit Jahrhunderten einen geheimnisvollen Ruf und galt als mythologisch aufgeladen und strategisch bedeutsam. Vom Gipfel des Drachenfels eröffnet sich ein weiter Blick über den Rhein, der über viele Jahrhunderte eine der wichtigsten Handels- und Verkehrsachsen Europas war." },
+                { bold: "Herkunft des Namens", text: "Der Name Drachenfels bedeutet wörtlich „Drachenfelsen“. Er leitet sich nicht von der Form des Berges ab, sondern von Legenden, die lange vor den ersten schriftlichen Überlieferungen entstanden. Bereits im frühen Mittelalter galt dieser Ort als Unterschlupf eines Ungeheuers und später als Schauplatz einer heldenhaften Tat." }
+            ]
+        },
+        legends: {
+            title: "Die Sage vom Drachen und Siegfried",
+            items: [
+                { text: "Der bekanntesten Überlieferung zufolge lebte auf dem Drachenfels ein Drache, der die Bewohner des Rheintals in Angst und Schrecken versetzte. Er hauste in den Felsen des Berges, überfiel Reisende und bedrohte die umliegenden Siedlungen." },
+                { text: "Der Held Siegfried, eine zentrale Figur der germanischen Epen und des „Nibelungenliedes“, kam an diesen Ort, um das Ungeheuer zu bekämpfen. Im Zweikampf tötete er den Drachen und badete anschließend in dessen Blut, wodurch er nahezu unverwundbar wurde. Lediglich eine Stelle an seinem Körper blieb verletzlich – dort, wo während des Bades ein Lindenblatt haftete." },
+                { text: "Auch wenn der Ort des Drachenkampfes in den verschiedenen Fassungen des Epos unterschiedlich benannt wird, gilt der Drachenfels in der rheinischen Volkstradition als einer der wichtigsten Kandidaten für den sagenhaften „Drachenberg“." },
+                { bold: "Weitere Überlieferungen", text: "Daneben existieren auch alternative Deutungen:" },
+                { text: "&nbsp;&nbsp;&nbsp; ▪ einer Version zufolge wurde der Drache nicht durch rohe Gewalt, sondern durch List oder Glauben besiegt, indem man ihn blendete und zum Absturz von der Felswand brachte;" },
+                { text: "&nbsp;&nbsp;&nbsp; ▪ in anderen Erzählungen steht der Drache sinnbildlich für Chaos und Gefahr, während der Berg die Grenze zwischen wilder Natur und kultiviertem Land markiert." },
+                { text: "Allen Varianten gemeinsam ist die Vorstellung des Drachenfels als eines Ortes der Macht und der Gefahr, an dem der Mensch mit Kräften konfrontiert wird, die größer sind als er selbst." }
+            ]
+        },
+        interestingFacts: {
+            title: "Der Berg als historischer und natürlicher Raum",
+            items: [
+                { text: "Neben den Mythen hatte der Berg auch eine praktische Bedeutung:" },
+                { text: "&nbsp;&nbsp;&nbsp; ▪ er diente als natürlicher Beobachtungspunkt über dem Rhein;" },
+                { text: "&nbsp;&nbsp;&nbsp; ▪ seine Felsen lieferten Trachyt, ein vulkanisches Gestein, das für den Bau zahlreicher Gebäude in Bonn und Köln verwendet wurde;" },
+                { text: "&nbsp;&nbsp;&nbsp; ▪ aufgrund seiner Lage entwickelte sich der Drachenfels zu einem Zentrum verschiedener Bauwerke und Anlagen mit militärischer, kultureller und touristischer Funktion." },
+                { text: "Aus diesem Grund wird der Drachenfels heute nicht nur als einzelne Bergspitze wahrgenommen, sondern als ein zusammenhängender Komplex mit mehreren historischen und kulturellen Sehenswürdigkeiten." },
+                { bold: "Touristische Bedeutung", text: "Der Drachenfels eignet sich hervorragend für einen Tagesausflug. Besucher können hier Naturerlebnisse, Sagenwelt und Geschichte miteinander verbinden und mehrere Attraktionen erkunden, die sich sowohl auf dem Gipfel als auch an den Hängen des Berges befinden." },
+                { text: "Die Wege erfordern keine besondere Vorbereitung, und dank der kompakten Struktur der Region lässt sich an einem Tag viel entdecken, ohne den Charakter einer entspannten Reise zu verlieren." }
+            ]
+        },
+        subObjects: ["drachenfelsbahn", "schloss_drachenburg", "drachenfels_ruins", "nibelungenhalle", "reptile_zoo"],
+        meta: {
+            title: "Berg Drachenfels — Drachenlegenden und Panoramablicke über das Rheintal",
+            description: "Der Drachenfels bei Königswinter ist ein legendärer Berg des Rheintals, eng verbunden mit der Sage von Siegfried und dem Drachen. Panoramablicke auf den Rhein, Burgruinen, der Naturpark Siebengebirge und beliebte Wanderwege machen ihn zu einem der bekanntesten Ausflugsziele der Region.",
+            ogTitle: "Berg Drachenfels — Legenden und Panoramablicke am Rhein",
+            ogDescription: "Entdecken Sie den Drachenfels: Drachenmythen, Ausblicke über den Rhein, den Naturpark Siebengebirge und die historische Bedeutung eines der bekanntesten Berge der Region.",
+            ogImage: "Germany/nrw/koln/Rhein-Sieg-Kreis/konigswinter/drachenfels/001.jpg"
+        }
     },
-    tickets_and_entry: {
-        title: "Praktische Informationen",
-        items: [
-            { bold: "Adresse:", text: "Obenmarspforten 40, 50667 Köln, Deutschland" },
-            { bold: "Öffnungszeiten:", text: "Dienstag–Sonntag: 10:00–18:00. Jeder 1. und 3. Donnerstag im Monat: 10:00–22:00. Montag: geschlossen (besondere Feiertags- und Saisonzeiten können abweichen)" },
-            { bold: "Eintrittspreise (2025):", text: "Erwachsene: ca. 10–13 €. Ermäßigt: ca. 7–8 € (Studenten, Senioren, Sozialvergünstigungen). Kinder bis 18 Jahre: frei. Familien-, Gruppen- und Kombitickets mit anderen Museen der Stadt verfügbar." }
-        ]
+    {
+        id: "drachenfelsbahn",
+        name: "Drachenfelsbahn",
+        type: ["technical_structure"],
+        slug: "drachenfelsbahn",
+        hiddenFromList: true,
+        path: "drachenfelsbahn",
+        regionsPath: "nrw",
+        districtPath: "koln",
+        cityPath: "konigswinter",
+        countryPath: "germany",
+        fotoCard: "Germany/nrw/koln/Rhein-Sieg-Kreis/konigswinter/drachenfels/002.jpg",
+        officialSite: [
+            {
+                bold: "Offizielle Website der Zahnradbahn und des touristischen Gesamtprojekts für den Berg",
+                link: "https://www.drachenfelsbahn.de/"
+            }
+        ],
+        construction_period: "17. Juli 1883",
+        short_description: "Die Drachenfelsbahn ist die älteste noch in Betrieb befindliche Zahnradbahn Deutschlands. Sie verbindet die Stadt Königswinter mit dem Plateau des Drachenfels oberhalb des Rheintals.",
+        full_description: {
+            title: "Beschreibung und Geschichte",
+            items: [
+                { bold: "Die Drachenfelsbahn", text: "ist die älteste heute noch betriebene Zahnradbahn Deutschlands. Sie führt von der Stadt Königswinter hinauf zum Plateau des Drachenfels über dem Rheintal." },
+                { text: "Während der Fahrt hält der Zug an einer Mittelstation in der Nähe des romantischen Schlosses Drachenburg sowie des Museums Nibelungenhalle (mit der sogenannten „Drachenhöhle“ und einem kleinen Tierpark). An der Bergstation erwarten die Besucher weite Panoramablicke über das Rheintal sowie Restaurants und Cafés." },
+                { bold: "Geschichte", text: "<br>&nbsp;&nbsp;&nbsp; ▪ Das Projekt wurde im Jahr 1881 genehmigt, der Bau erfolgte in den Jahren 1882-1883." },
+                { text: "&nbsp;&nbsp;&nbsp; ▪ Die offizielle Eröffnung der Bahn fand am 17. Juli 1883 statt. Seitdem ist sie ein beliebtes touristisches Verkehrsmittel." },
+                { text: "&nbsp;&nbsp;&nbsp; ▪ Ursprünglich wurde die Strecke mit Dampflokomotiven betrieben, seit 1953 ist sie vollständig elektrifiziert." }
+            ]
+        },
+        tickets_and_entry: {
+            title: "Praktische Informationen",
+            items: [
+                { bold: "Lage:", text: "Talstation Drachenfelsbahn, Drachenfelsstraße 53, 53639 Königswinter, Deutschland" },
+                { bold: "Betriebszeiten:", text: "Ganzjährig in Betrieb mit saisonalen Anpassungen. Winter (Januar-Februar): Mo–Fr 12:00-17:00, Sa-So 11:00-18:00. Frühling und Herbst: ca. 10:00-18:00. Sommer (Mai-September): etwa 09:00-19:00. An Feiertagen und bei Sonderveranstaltungen können die Zeiten abweichen." },
+                { bold: "Fahrpreise (2025):", text: "Erwachsene: ca. 14 € (Berg- und Talfahrt), ca. 12 € (einfache Fahrt). Kinder von 4–13 Jahren: ca. 7 € (Hin- und Rückfahrt). Familienticket (2 Erwachsene + 2 Kinder): ca. 35 €. Gruppen- und Ermäßigungstarife sind verfügbar." }
+            ]
+        },
+        interestingFacts: {
+            title: "Interessante Fakten",
+            items: [
+                { text: "• Ursprünglich wurde die Bahn mit Dampflokomotiven betrieben, seit 1953 ist die Strecke vollständig elektrifiziert." },
+                { text: "• Seit ihrer Eröffnung hat die Bahn mehrere zehn Millionen Fahrgäste befördert." },
+                { text: "• Im Jahr 1958 ereignete sich ein schwerer Unfall, der zu Todesopfern und umfassenden Sicherheitsverbesserungen führte." },
+                { text: "• In der Weihnachtszeit werden Sonderfahrten in Verbindung mit einem Wintermarkt am Schloss Drachenburg angeboten." }
+            ]
+        },
+        meta: {
+            title: "Drachenfelsbahn — älteste Zahnradbahn Deutschlands",
+            description: "Die Drachenfelsbahn ist eine historische Zahnradbahn aus dem Jahr 1883 in Königswinter. Sie verbindet das Rheintal mit dem Plateau des Drachenfels und zählt zu den wichtigsten touristischen Attraktionen der Region.",
+            ogTitle: "Drachenfelsbahn",
+            ogDescription: "Erleben Sie eine Fahrt mit der Drachenfelsbahn — der ältesten noch betriebenen Zahnradbahn Deutschlands mit Panoramablicken auf den Rhein und den Drachenfels.",
+            ogImage: "Germany/nrw/koln/Rhein-Sieg-Kreis/konigswinter/drachenfels/002.jpg"
+        }
     },
-    interestingFacts: {
-        title: "Interessante Fakten",
-        items: [
-            { text: "Die Museumsammlung umfasst Werke aus über 700 Jahren Kunstgeschichte – vom Mittelalter bis zum Jugendstil." },
-            { text: "Der Sammlungsgründer Ferdinand Franz Wallraf sammelte lange Kunst aus Kirchen, Häusern und Privatbesitz, um sie für zukünftige Generationen zu bewahren." },
-            { text: "Die im Museumstitel enthaltene Fondation Corboud repräsentiert eine bedeutende Sammlung von Impressionisten und Postimpressionisten, viele Werke wurden im Rahmen von Ausstellungen weltweit gezeigt." },
-            { text: "Es gibt eine virtuelle 360°-Tour durch das Museum, die es ermöglicht, die Sammlung online zu erkunden." }
-        ]
+    {
+        id: "schloss_drachenburg",
+        name: "Schloss Drachenburg",
+        type: ["palace_or_castle"],
+        slug: "schloss_drachenburg",
+        hiddenFromList: true,
+        path: "schloss_drachenburg",
+        regionsPath: "nrw",
+        districtPath: "koln",
+        cityPath: "konigswinter",
+        countryPath: "germany",
+        fotoCard: "Germany/nrw/koln/Rhein-Sieg-Kreis/konigswinter/drachenfels/001.jpg",
+        officialSite: [
+            { bold: "Offizielle Website von Schloss Drachenburg", link: "https://www.schloss-drachenburg.de" }
+        ],
+        construction_period: "1882-1884 Jahre",
+        founder: "Stefan von Sarter",
+        architects: ["Bernhard Tüshaus, Leo von Abbema (erste Entwürfe) und Wilhelm Hoffmann (Fertigstellung und Überarbeitung)."],
+        short_description: "Schloss Drachenburg – ein romantisches neugotisches Schloss des 19. Jahrhunderts am Hang des Drachenfels. Prunkvolle Innenräume, Glasfenster und Panoramablicke auf den Rhein und den Park machen es zu einer der Hauptattraktionen der Region.",
+        full_description: {
+            title: "Beschreibung und Geschichte",
+            items: [
+                { bold: "Schloss Drachenburg", text: " – ein beeindruckendes neugotisches Schloss des 19. Jahrhunderts, gelegen am unteren Hang des Drachenfels in Königswinter, über dem Rheintal. Das Schloss wurde 1882-1884 im Auftrag des Finanzier Stefan von Sarter als prächtige Residenz mit Panoramablick auf den Fluss erbaut. Trotz seiner prachtvollen Erscheinung hat der Besitzer nie dauerhaft darin gewohnt." },
+                { text: "Im Jahr 1930 wurde das Schloss dem katholischen Orden der Brüder der Christlichen Schulen (De La Salle Brothers) übergeben, und bereits 1931 eröffnete dort eine Internatsschule für Jungen namens St. Michael's. Die Innenräume wurden für die Bedürfnisse der Schule umfunktioniert: ehemalige Wohnräume wurden zu Klassenräumen und Schlafsälen, die neugotische Galerie diente als Kapelle und der ehemalige ‘Bierstube’ wurde zur Sakristei umgebaut." },
+                { text: "Viele Elemente der Inneneinrichtung wurden verändert oder entfernt – zum Beispiel Figuren und Statuen, die als unpassend für die katholische Erziehung angesehen wurden, wurden verdeckt oder abtransportiert." },
+                { text: "Das Internat bestand bis zum Jahr 1938, als die Schule unter dem Druck des nationalsozialistischen Regimes geschlossen werden musste." },
+                { text: "Nach der Schließung des Internats wurde das Schloss nicht sofort wieder in seiner ursprünglichen Funktion genutzt – während des Krieges diente es anderen Bildungs- und ideologischen Einrichtungen (unter anderem als Nationalsozialistenschule) und erlitt Schäden, bevor es nach dem Krieg restauriert und zum Museum wurde." },
+                { text: "Das Schloss besticht durch reich verzierte Säle, Glasfenster, Fresken und dekorative Stuckarbeiten, während Terrassen und Türme einen der malerischsten Blicke ins Rheintal eröffnen. Die Architektur kombiniert Elemente der Neugotik und Romantik des 19. Jahrhunderts und schafft die Atmosphäre einer mittelalterlichen Burg, obwohl es ausschließlich als Repräsentationsschloss erbaut wurde. Viele Glasfenster zeigen Wappen, Legenden und Helden des Rheintals. Sie sind nicht nur Dekor, sondern spiegeln die Interessen und Ambitionen des Bauherrn wider, der seinen Status und Reichtum betonen wollte." },
+                { text: "Im Schloss gibt es kleine geheime Türen, versteckte Schränke und Treppen, die im 19. Jahrhundert für „Romantik und Intrigen“ sorgten. Einige Räume wurden ursprünglich als private Arbeitszimmer oder für vertrauliche Treffen genutzt, was für Schlösser jener Zeit ungewöhnlich war." },
+                { text: "Heute ist Schloss Drachenburg als Museum und kulturelle Einrichtung geöffnet, in dem historische Innenräume, Kunstausstellungen und temporäre Ausstellungen gezeigt werden. Das Schloss ist von einem Park mit Terrassen und Gartenanlagen umgeben, und von seinen Aussichtsplattformen ist der Übergang zum Gipfel des Drachenfels und den Ruinen der mittelalterlichen Burg bequem möglich." },
+                { bold: "Historischer Park und Terrassen. ", text: "Das Schloss ist von einem terrassierten Park umgeben, in dem seltene Pflanzen und Zierbäume wachsen, gestaltet wie ein Landschaftsgarten des 19. Jahrhunderts. Die Terrassen des Schlosses sind so angelegt, dass man von fast jedem Punkt fotografieren kann und verschiedene Perspektiven auf den Rhein erhält. Das zentrale Treppenhaus mit Fenstern sorgt für natürliche Beleuchtung und einen Eindruck von Größe." },
+            ]
+        },
+        tickets_and_entry: {
+            title: "Praktische Informationen",
+            items: [
+                { bold: "Standort:", text: "Schloss Drachenburg, Drachenfelsstraße 118, 53639 Königswinter, Deutschland" },
+                { bold: "Öffnungszeiten:", text: "01.01-31.03: täglich 12:00-17:00. 01.04-01.11: täglich 11:00-18:00. 02.11-30.12: täglich 12:00-17:00. 24.12 und 31.12: geschlossen. Zugang zum Park und zu den Terrassen zu Fuß möglich, ein Teil der Säle ist für Personen mit eingeschränkter Mobilität mit Hilfe des Personals zugänglich." },
+                { bold: "Eintrittspreise (2025):", text: "Erwachsene: ca. 10 €. Kinder 6–17 Jahre, Studenten und Behinderte: ca. 8 €. Kinder unter 6 Jahren: frei. Familienkarte (2 Erwachsene + bis zu 2 Kinder 6-17 Jahre): ca. 25 €. Jahreskarte: für eine Person – 30 €, Familie – 60 €. Führungen gegen Aufpreis möglich." },
+                { bold: "Im Ticket enthalten:", text: "Zugang zu historischen Sälen, Terrassen und Gartenanlagen, ständige Ausstellung über das Schloss, Nordturm mit Panoramablick." },
+                { bold: "Tipps:", text: "Tickets können online oder vor Ort gekauft werden. In der Hochsaison empfiehlt sich ein Besuch zur Öffnungszeit. Der Besuch kann mit einer Besteigung des Drachenfels oder einer Fahrt mit der Drachenfelsbahn kombiniert werden." }
+            ]
+        },
+        interestingFacts: {
+            title: "Interessante Fakten",
+            items: [
+                { bold: "Das Schloss wurde für Schönheit, nicht zum Wohnen gebaut. ", text: "Der Bauherr Stefan von Sarter hat nie im Schloss gewohnt. Er wollte eine repräsentative Residenz schaffen, nutzte sie aber nur episodisch." },
+                { bold: "Neugotik und Romantik des 19. Jahrhunderts. ", text: "Die Architektur ist im Stil einer mittelalterlichen Burg gehalten, alle Elemente sind dekorativ: Türme, Zinnen, Glasfenster – nur zur Schönheit und romantischen Atmosphäre." },
+                { bold: "Einzigartiger Rheinblick. ", text: "Von den Terrassen des Schlosses eröffnet sich ein Panoramablick auf das Rheintal, die Weinberge und die umliegenden Hügel – einer der bekanntesten Ausblicke der Region." },
+                { bold: "Verbindung zur Drachenlegende. ", text: "Obwohl das Schloss im 19. Jahrhundert erbaut wurde, steht es am Hang des Drachenfels, wo die Ruinen der mittelalterlichen Burg Drachenfels liegen, die mit der Legende vom Drachen und Siegfried verbunden sind." },
+                { bold: "Verbindung zur Kultur. ", text: "Das Schloss verkörpert den romantischen Kult des Mittelalters und der deutschen Legenden. Künstler, Schriftsteller und Fotografen kamen, um die Rheinebenen und die Architektur des Schlosses festzuhalten. Schloss Drachenburg wurde auch als Kulisse in Filmen und Serien verwendet, unter anderem in künstlerischen Filmen über das romantische Deutschland des 19. Jahrhunderts." },
+                { bold: "Restaurierung und Museum. ", text: "Im 20. Jahrhundert befand sich das Schloss lange im Verfall, ein Teil der Säle war beschädigt. Restaurierungsarbeiten dauerten Jahrzehnte, und heute sind die meisten Innenräume in historischer Form wiederhergestellt, einschließlich Möbel und Dekorelemente. Das Schloss ist als Museum geöffnet, wo man historische Innenräume und Ausstellungen des 19. Jahrhunderts besichtigen kann." },
+            ]
+        },
+        meta: {
+            title: "Schloss Drachenburg – romantisches neugotisches Schloss des 19. Jahrhunderts am Hang des Drachenfels",
+            description: "Schloss Drachenburg liegt am Hang des Drachenfels in Königswinter. Erbaut 1882-1884, beeindruckt das Schloss durch neugotische Architektur, prächtige Innenräume und Panoramablicke ins Rheintal.",
+            ogTitle: "Schloss Drachenburg",
+            ogDescription: "Besuchen Sie Schloss Drachenburg – ein romantisches neugotisches Schloss des 19. Jahrhunderts mit historischen Sälen, Glasfenstern und Aussichtsterrassen mit Blick auf Rhein und Drachenfels.",
+            ogImage: "Germany/nrw/koln/Rhein-Sieg-Kreis/konigswinter/drachenfels/001.jpg"
+        }
     },
-    meta: {
-        title: "Wallraf-Richartz-Museum — Kunst vom Mittelalter bis zum Impressionismus",
-        description: "Das Wallraf-Richartz-Museum in Köln ist das älteste Museum der Stadt mit Sammlungen von Malerei, Skulptur und Grafik vom Mittelalter bis zum frühen 20. Jh., einschließlich des Fonds Fondation Corboud mit Impressionisten.",
-        ogTitle: "Wallraf-Richartz-Museum — Kunst vom Mittelalter bis zum Impressionismus",
-        ogDescription: "Entdecken Sie das Wallraf-Richartz-Museum in Köln: Mittelalterliche und barocke Kunst sowie die Impressionisten-Sammlung Fondation Corboud.",
-        ogImage: "Germany/nrw/koln/koln-city/wallraf_richartz_museum/001.jpg"
+    {
+        id: "drachenfels_ruins",
+        name: "Ruinen der Burg Drachenfels",
+        type: ["palace_or_castle"],
+        slug: "drachenfels_ruins",
+        hiddenFromList: true,
+        path: "drachenfels_ruins",
+        regionsPath: "nrw",
+        districtPath: "koln",
+        cityPath: "konigswinter",
+        countryPath: "germany",
+        fotoCard: "Germany/nrw/koln/Rhein-Sieg-Kreis/konigswinter/drachenfels/003.jpg",
+        construction_period: "12. Jahrhundert (1138–1167)",
+        founder: "Kölner Erzbischof Arnold von Wied",
+        short_description: "Die Ruinen der Burg Drachenfels sind die Überreste einer mittelalterlichen Burg aus dem 12. Jahrhundert, die sich auf dem Gipfel des gleichnamigen Berges im Siebengebirge befindet. Von der Festung sind Fragmente der Mauern und Fundamente der Türme erhalten geblieben, die direkt in den Felsen integriert sind. Die Burg wurde während des Dreißigjährigen Krieges zerstört und danach nicht wieder aufgebaut, weshalb man hier heute authentische historische Ruinen sehen kann. Vom Gipfel aus eröffnet sich ein panoramischer Blick auf den Rhein und die umliegende Landschaft.",
+        full_description: {
+            title: "Beschreibung und Geschichte",
+            items: [
+                { bold: "Die Ruinen der Burg Drachenfels", text: " befinden sich auf dem Gipfel des gleichnamigen Berges im Siebengebirge und gehören zu den bekanntesten historischen Sehenswürdigkeiten am Rhein. Heute sind Fragmente der Befestigungsmauern, Reste des Hauptturms, Teile der Verteidigungsanlagen sowie eine Aussichtsplattform auf dem Felsen erhalten. Trotz ihres ruinösen Zustands bleibt der Ort ein beliebter Aussichtspunkt mit Panoramablick auf das Rheintal, Königswinter und die Umgebung." },
+                { text: "Die Ruinen sind frei zugänglich und können zu Fuß oder mit der Zahnradbahn Drachenfelsbahn erreicht werden. Die beste Zeit für einen Besuch ist der Zeitraum von Frühling bis Herbst bei klarem Wetter." },
+                { text: "Die Burg wurde im 12. Jahrhundert (1138–1167) im Auftrag des Kölner Erzbischofs Arnold von Wied erbaut. Ihre Hauptfunktion bestand in der militärischen Sicherung und Kontrolle der Schifffahrt auf dem Rhein – einer der wichtigsten Handelsrouten des Mittelalters. Es handelte sich nicht um eine Wohnburg, sondern um eine strategische Festung." },
+                { text: "Architektonische Besonderheiten: Die Burg wurde auf einem Basaltfelsen errichtet, wobei ihre Mauern direkt in das natürliche Relief integriert waren. Es handelte sich um eine typische Höhenburg mit langgestreckter Form, die den Konturen des Felsens folgte. Der Zugang war nur von einer Seite möglich, was die Verteidigung erleichterte." },
+                { text: "Im Jahr 1634 wurde die Festung während des Dreißigjährigen Krieges von schwedischen Truppen zerstört. Danach wurde die Burg nicht wieder aufgebaut, da sie ihre strategische Bedeutung verloren hatte und eine Restaurierung wirtschaftlich nicht sinnvoll war." },
+                { text: "Im Gegensatz zu vielen anderen Burgen der Region blieb Drachenfels in seinem zerstörten Zustand erhalten. Deshalb sieht man hier heute keine Rekonstruktion, sondern authentische Ruinen." }
+            ]
+        },
+        interestingFacts: {
+            title: "Interessante Fakten",
+            items: [
+                { text: "• Die Ruinen befinden sich auf einer Höhe von etwa 321 Metern über dem Meeresspiegel" },
+                { text: "• Es handelt sich um einen der bekanntesten Aussichtspunkte des Mittelrheins" },
+                { text: "• Die Burg diente niemals als Wohnsitz, sondern ausschließlich militärischen Zwecken" },
+                { text: "• Die Zerstörung erfolgte durch Kriegseinwirkungen und nicht durch natürlichen Verfall" },
+                { text: "• Die Ruinen wurden im 19. Jahrhundert zu einem Symbol der Rheinromantik" }
+            ]
+        },
+        meta: {
+            title: "Ruinen der Burg Drachenfels – mittelalterliche Festung auf dem Drachenfels",
+            description: "Die Ruinen der Burg Drachenfels befinden sich auf dem Gipfel des gleichnamigen Berges im Siebengebirge. Erhalten sind Mauerreste und Türme mit Panoramablick auf den Rhein und Königswinter.",
+            ogTitle: "Ruinen der Burg Drachenfels (Burg Drachenfels)",
+            ogDescription: "Besuchen Sie die Ruinen der Burg Drachenfels – eine mittelalterliche Festung aus dem 12. Jahrhundert mit beeindruckendem Blick auf das Rheintal.",
+            ogImage: "Germany/nrw/koln/Rhein-Sieg-Kreis/konigswinter/drachenfels/003.jpg"
+        }
+    },
+    {
+        id: "nibelungenhalle",
+        name: "Nibelungenhalle",
+        type: ["museum"],
+        slug: "nibelungenhalle",
+        hiddenFromList: true,
+        path: "nibelungenhalle",
+        regionsPath: "nrw",
+        districtPath: "koln",
+        cityPath: "konigswinter",
+        countryPath: "germany",
+        officialSite: [
+            { bold: "Offizielle Website der Nibelungenhalle", link: "https://nibelungenhalle.de/" }
+        ],
+        fotoCard: "Germany/nrw/koln/Rhein-Sieg-Kreis/konigswinter/drachenfels/004.jpg",
+        construction_period: "1913",
+        founder: "Initiator des Baus war der deutsche Unternehmer und Heimatforscher Bruno Rüde, der die Nibelungensage bekannt machen und den Drachenfels für Touristen attraktiver gestalten wollte.",
+        tickets_and_entry: {
+            title: "Praktische Informationen",
+            items: [
+                { bold: "Öffnungszeiten:", text: "Vom 15. März bis 31. Oktober täglich von 10:30 bis 18:00 Uhr. Vom 1. November bis 14. März an Wochenenden, Feiertagen und in den Weihnachtsferien von 11:00 bis 16:00 Uhr. Am 24. Dezember geschlossen." },
+                { bold: "Eintrittspreise (2026):", text: "Erwachsene – 6 €. Kinder (4–14 Jahre) – 4 €. Schüler ab 14 Jahren – 5 €. Studenten – 5 €. Menschen mit Behinderung – 5 €. Gruppen ab 10 Personen: Erwachsene – 5 €, Kinder – 3 € pro Person." },
+                { bold: "Zusätzliche Informationen:", text: "Der Besuch wird häufig mit einer Fahrt auf den Drachenfels und dem Besuch der Drachenhöhle kombiniert. Es wird empfohlen, die aktuellen Öffnungszeiten auf der offiziellen Website zu prüfen." }
+            ]
+        },
+        short_description: "Die Nibelungenhalle ist ein 1913 erbautes Museum auf dem Gipfel des Drachenfels, das der deutschen Heldensage von den Nibelungen und den Drachenlegenden gewidmet ist. Das Gebäude wurde im romantischen Stil errichtet und sollte Besuchern die Welt der mittelalterlichen Mythen näherbringen. In unmittelbarer Nähe befindet sich die Drachenhöhle – eine kleine interaktive Ausstellung, die besonders bei Familien mit Kindern beliebt ist. Der Besuch der Nibelungenhalle wird häufig mit einer Wanderung oder einer Fahrt auf den Drachenfels kombiniert.",
+        full_description: {
+            title: "Beschreibung und Geschichte",
+            items: [
+                { bold: "Die Nibelungenhalle", text: " ist ein Museum auf dem Gipfel des Drachenfels, das den Drachenlegenden und der deutschen Nationalepik „Das Nibelungenlied“ gewidmet ist." },
+                { text: "Die Architektur des Gebäudes ist im romantischen Stil gehalten und erinnert an die Burgen des Rheintals, wodurch eine märchenhafte Atmosphäre entsteht. Im Inneren befinden sich Ausstellungen zur mittelalterlichen Kultur, zur Geschichte der Region sowie zu den Figuren der Nibelungensage. Ein besonderer Schwerpunkt liegt auf der Legende des Drachen Fafnir und den mit ihm verbundenen Helden." },
+                { text: "In der Nähe befindet sich die <b>Drachenhöhle</b> – eine kleine interaktive Höhle mit Drachenfiguren, Licht- und Toneffekten, die sie besonders attraktiv für Kinder und Touristen macht, die die Atmosphäre der Legenden erleben möchten." },
+            ]
+        },
+        meta: {
+            title: "Nibelungenhalle – Museum der Legenden und Drachen auf dem Drachenfels",
+            description: "Die Nibelungenhalle ist ein 1913 erbautes Museum auf dem Drachenfels, das der Nibelungensage und Drachenlegenden gewidmet ist. In der Nähe befindet sich die Drachenhöhle.",
+            ogTitle: "Nibelungenhalle auf dem Drachenfels",
+            ogDescription: "Besuchen Sie die Nibelungenhalle – ein Museum der Mythen und Legenden mit Blick auf das Rheintal und die Drachenhöhle.",
+            ogImage: "Germany/nrw/koln/Rhein-Sieg-Kreis/konigswinter/drachenfels/004.jpg"
+        }
+    },
+    {
+        id: "reptile_zoo",
+        name: "Reptilienzoo Drachenfels",
+        type: ["zoo"],
+        slug: "reptile_zoo",
+        hiddenFromList: true,
+        path: "reptile_zoo",
+        regionsPath: "nrw",
+        districtPath: "koln",
+        cityPath: "konigswinter",
+        countryPath: "germany",
+        // officialSite: [ funktioniert nicht überprüfen
+        //     { bold: "Offizielle Website des Zoos", link: "https://www.reptilien-zoo-drachenfels.de" }
+        // ],
+        fotoCard: "Germany/nrw/koln/Rhein-Sieg-Kreis/konigswinter/drachenfels/005.jpg",
+        short_description: "Der Reptilienzoo Drachenfels (dt. Reptilien-Tierpark Drachenfels) ist ein kleiner, aber gut ausgestatteter zoologischer Park auf dem Gelände des Drachenfels, der sich auf Reptilien und exotische Tiere spezialisiert hat. Hier kann man Schlangen, Eidechsen, Schildkröten und andere Tiere sehen sowie an interaktiven Vorführungen und Fütterungen teilnehmen. Der Besuch des Zoos dauert etwa 1–1,5 Stunden und lässt sich ideal mit dem Aufstieg auf den Berg und anderen Sehenswürdigkeiten des Drachenfels kombinieren.",
+        full_description: {
+            title: "Beschreibung und Geschichte",
+            items: [
+                { bold: "Der Reptilienzoo Drachenfels (dt. Reptilien-Tierpark Drachenfels)", text: " befindet sich auf dem Gelände des Drachenfels und ist auf die Haltung von Reptilien und exotischen Tieren spezialisiert. Der Zoo wurde im 20. Jahrhundert gegründet und zieht seitdem Besucher mit seiner kompakten, aber umfangreichen Ausstellung an." },
+                { text: "Der Zoo liegt in der Nähe der Nibelungenhalle und umfasst mehr als 100 Tiere. Dort kann man Schlangen, Eidechsen, Schildkröten und andere Tiere aus aller Welt sehen, einschließlich seltener und geschützter Arten. Besonders interessant sind Fütterungsvorführungen und interaktive Programme, bei denen Besucher das Verhalten der Tiere sicher beobachten können." },
+                { text: "Der Zoo nimmt aktiv an Bildungsprojekten teil, insbesondere für Kinder und Schulgruppen, und vermittelt ihnen die Biologie der Reptilien und die Bedeutung ihres Schutzes. Für kleine Besucher gibt es Bereiche, in denen man kleine Eidechsen und Terrarien mit Schlangen aus nächster Nähe betrachten kann." }
+            ]
+        },
+        tickets_and_entry: {
+            title: "Praktische Informationen",
+            items: [
+                { bold: "Öffnungszeiten:", text: "Täglich geöffnet. Es wird empfohlen, die aktuellen Öffnungszeiten auf der offiziellen Website zu überprüfen." },
+                { text: "Der Besuch des Zoos lässt sich gut mit dem Aufstieg auf den Drachenfels oder dem Besuch der Nibelungenhalle und der Drachenhöhle verbinden. Die beste Besuchszeit ist Frühling–Herbst bei klarem Wetter, um Spaziergang und Bildungs‑Exkursion zu kombinieren." },
+                { bold: "Eintrittspreise:", text: "Der Eintritt ist kostenpflichtig, es gibt Rabatte für Kinder. Die genauen Preise sollten besser auf der Website überprüft werden." },
+                { bold: "Zugang:", text: "Der Zoo ist zu Fuß oder mit der Zahnradbahn Drachenfelsbahn erreichbar." },
+                { bold: "Zusätzlich:", text: "Im Zoo werden interaktive Vorführungen und Tierfütterungen durchgeführt. Kinder lieben besonders Bereiche mit kleinen Eidechsen und Terrarien mit Schlangen." }
+            ]
+        },
+        interestingFacts: {
+            title: "Interessante Fakten",
+            items: [
+                { text: "• Der Zoo ist bekannt für seltene Schlangen‑ und Eidechsenarten aus aller Welt" },
+                { text: "• Es werden Bildungsprogramme für Kinder und Schulgruppen angeboten" },
+                { text: "• Im Zoo finden regelmäßig Fütterungsvorführungen statt" },
+                { text: "• Der Besuch dauert etwa 1–1,5 Stunden und lässt sich gut mit dem Aufstieg auf den Berg und anderen Sehenswürdigkeiten des Drachenfels kombinieren" },
+                { text: "• Der Zoo trägt zur ökologischen Bildung und zur Förderung des Schutzes von Reptilien bei" }
+            ]
+        },
+        meta: {
+            title: "Reptilienzoo Drachenfels – ein Ort zum Kennenlernen seltener Schlangen und exotischer Tiere",
+            description: "Der Reptile Zoo auf dem Drachenfels ist ein zoologischer Park, in dem man Schlangen, Eidechsen, Schildkröten und seltene exotische Tiere sehen sowie an interaktiven Vorführungen und Bildungsprogrammen teilnehmen kann.",
+            ogTitle: "Reptilienzoo Drachenfels",
+            ogDescription: "Besuchen Sie den Reptile Zoo auf dem Drachenfels – ein Zoo mit seltenen Reptilien, interaktiven Fütterungs‑Vorführungen und Bildungsprogrammen für Kinder und Erwachsene.",
+            ogImage: "Germany/nrw/koln/Rhein-Sieg-Kreis/konigswinter/drachenfels/005.jpg"
+        }
     }
-}
-
 ];
+
 export default datas;

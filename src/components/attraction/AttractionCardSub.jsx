@@ -6,7 +6,6 @@ const BASE_PHOTO_URL = import.meta.env.VITE_BASE_PHOTO_URL;
 const AttractionCardSub = ({ attr, lang }) => {
 
     const more = { ru: "Подробнее", ua: "Докладніше", de: "Weitere Details" };
-    const location = { ru: "Месторасположение", ua: "Місце розташування", de: "Standort" };
 
     return (
         <div className='attrCard'>
@@ -26,15 +25,10 @@ const AttractionCardSub = ({ attr, lang }) => {
                             UNESCO {attr.unesco_status.year}
                         </span>
                     )}
+                        <div className='attrCard__desc-info-more'>
+                            <Link to={`/${attr.countryPath}/${attr.regionsPath}/${attr.districtPath}/${attr.cityPath}/attractions/${attr.slug || attr.path}`}>{more[lang]}</Link>
+                        </div>
                 </div>
-
-                <Link
-                    to={`/${attr.countryPath}/${attr.regionsPath}/${attr.districtPath}/${attr.cityPath}/attractions/${attr.slug || attr.path}`}
-                    className="attrCard__link"
-                >
-                    {more[lang]}
-                </Link>
-
             </div>
         </div>
     );
