@@ -53,6 +53,8 @@ const Attraction = () => {
     const architects = { ru: "Архитекторы", ua: "Архітектори", de: "Architekten" };
 
 
+console.log("all attractions:", attractions);
+
     return (
         <div className="attraction">
             <BreadCrumbs crumbs={crumbs} />
@@ -99,7 +101,7 @@ const Attraction = () => {
 
                 {subObjects.length > 0 && (
                     <section className="attraction-sub">
-                        <h3>{lang === "ru" ? "Достопримечательности" : "Sehenswürdigkeiten"}</h3>
+                        <h3>{lang === "ru" ? "Достопримечательности" : lang === "de" ? "Sehenswürdigkeiten" : "Пам'ятки"}</h3>
 
                         {subObjects.map(subId => {
                             const attr = attractions.find(a => a.id === subId);

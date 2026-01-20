@@ -7,10 +7,13 @@ export const Fotos = {
     { path: "Germany/parahod.gif", title: { ru: "Парохід", ua: "Парохід", de: "Steamship" } },
     { path: "Germany/zamok3.jpg", title: { ru: "Замок 2", ua: "Замок 2", de: "Burg 2" } }
   ],
-    nrw: {
+
+  nrw: {
     region: [
       { path: "Germany/nrw/001.jpg", title: { ru: "Замок", ua: "Замок", de: "Burg" } }
     ],
+
+    // köln
     koln: {
       gallery: [
         { path: "Germany/nrw/koln/koln-city/001.jpg", title: { ru: "Кельн 1", ua: "Кельн 1", de: "Köln 1" } },
@@ -64,7 +67,7 @@ export const Fotos = {
       wallraf_richartz_museum: [
         { path: "Germany/nrw/koln/koln-city/wallraf_richartz_museum/001.jpg", title: { ru: "Музей Вальрафа-Рихарца - 2025", ua: "Музей Вальрафа-Ріхарцa - 2025", de: "Wallraf-Richartz-Museum - 2025" } }
       ],
-      forstbotanischer_garten:[
+      forstbotanischer_garten: [
         { path: "Germany/nrw/koln/koln-city/forstbotanischer_garten/001.jpg", title: { ru: "Ботанический сад и лесопарк (фото взято с википедии)", ua: "Ботанічний сад і лісопарк (фото взято з Вікіпедії)", de: "Forstbotanischer Garten (Foto von Wikipedia entnommen)" } }
       ],
       koln_bridges: [
@@ -130,19 +133,63 @@ export const Fotos = {
       ],
       'burg-bachem': [
         { path: "Germany/nrw/koln/Rhein-Erft-Kreis/frechen/burg-bachem/Burg-Bachem_1.jpg", title: { ru: "Замок Бахем, 2024", ua: "Замок Бахем, 2024", de: "Burg Bachem, 2024" } },
+        { path: "Germany/nrw/koln/Rhein-Erft-Kreis/frechen/burg-bachem/001.jpg", title: { ru: "Замок Бахем, 2022", ua: "Замок Бахем, 2022", de: "Burg Bachem, 2022" } },
         { path: "Germany/nrw/koln/Rhein-Erft-Kreis/frechen/burg-bachem/Burg-Bachem_2.jpg", title: { ru: "Замок Бахем, 2024", ua: "Замок Бахем, 2024", de: "Burg Bachem, 2024" } },
         { path: "Germany/nrw/koln/Rhein-Erft-Kreis/frechen/burg-bachem/Burg-Bachem_3.jpg", title: { ru: "Замок Бахем, 2024", ua: "Замок Бахем, 2024", de: "Burg Bachem, 2024" } },
         { path: "Germany/nrw/koln/Rhein-Erft-Kreis/frechen/burg-bachem/Burg-Bachem_4.jpg", title: { ru: "Замок Бахем, 2024", ua: "Замок Бахем, 2024", de: "Burg Bachem, 2024" } },
         { path: "Germany/nrw/koln/Rhein-Erft-Kreis/frechen/burg-bachem/Burg-Bachem_5.jpg", title: { ru: "Замок Бахем, 2024", ua: "Замок Бахем, 2024", de: "Burg Bachem, 2024" } },
+        { path: "Germany/nrw/koln/Rhein-Erft-Kreis/frechen/burg-bachem/002.jpg", title: { ru: "Аллея, ведущая к озерцу возле замка Бахем, 2022", ua: "Озерце біля замку Бахем, 2022", de: "Allee zum kleinen See bei der Burg Bachem, 2024" } },
+        { path: "Germany/nrw/koln/Rhein-Erft-Kreis/frechen/burg-bachem/003.jpg", title: { ru: "Озерцо возле замка Бахем, 2022", ua: "Озерце біля замку Бахем, 2022", de: "Ein kleiner See in der Nähe von Burg Bachem, 2022" } },
         { path: "Germany/nrw/koln/Rhein-Erft-Kreis/frechen/burg-bachem/Burg-Bachem-lake_1.jpg", title: { ru: "Озерцо возле замка Бахем, 2024", ua: "Озерце біля замку Бахем, 2024", de: "Ein kleiner See in der Nähe von Burg Bachem, 2024" } },
         { path: "Germany/nrw/koln/Rhein-Erft-Kreis/frechen/burg-bachem/Burg-Bachem-lake_2.jpg", title: { ru: "Озерцо возле замка Бахем, 2024", ua: "Озерце біля замку Бахем, 2024", de: "Ein kleiner See in der Nähe von Burg Bachem, 2024" } },
+      ],
+      johann_schmitz_platz_frechen: [
+        { path: "Germany/nrw/koln/Rhein-Erft-Kreis/frechen/johann_schmitz_platz_frechen/001.jpg", title: { ru: "Площадь Йоханна Шмитца («площадь Ратуши»), 2022", ua: "Площа Йоганна Шмітца («площа Ратуші»), 2022", de: "Johann-Schmitz-Platz («Rathausplatz»), 2022" } },
+        { path: "Germany/nrw/koln/Rhein-Erft-Kreis/frechen/johann_schmitz_platz_frechen/002.jpg", title: { ru: "Площадь Йоханна Шмитца («площадь Ратуши»), 2022", ua: "Площа Йоганна Шмітца («площа Ратуші»), 2022", de: "Johann-Schmitz-Platz («Rathausplatz»), 2022" } },
+        { path: "Germany/nrw/koln/Rhein-Erft-Kreis/frechen/johann_schmitz_platz_frechen/003.jpg", title: { ru: "Площадь Йоханна Шмитца («площадь Ратуши»), 2022", ua: "Площа Йоганна Шмітца («площа Ратуші»), 2022", de: "Johann-Schmitz-Platz («Rathausplatz»), 2022" } },
+        { path: "Germany/nrw/koln/Rhein-Erft-Kreis/frechen/johann_schmitz_platz_frechen/004.jpg", title: { ru: "Фонтан перед ратушей (фото взято с интернета)", ua: "Фонтан перед ратушею (фото взято з Інтернету)", de: "Brunnen vor dem Rathaus (Foto aus dem Internet)" } },
+        { path: "Germany/nrw/koln/Rhein-Erft-Kreis/frechen/johann_schmitz_platz_frechen/005.jpg", title: { ru: "Фонтан Клюттенбрюннен (фото взято с интернета)", ua: "Фонтан Клюттенбрюннен (фото взято з Інтернету)", de: "Klüttenbrunnen (Foto aus dem Internet)" } },
       ]
     },
+    konigswinter: {
+      drachenfels: [
+        { path: "Germany/nrw/koln/Rhein-Sieg-Kreis/konigswinter/drachenfels/001.jpg", title: { ru: "Дворец Драхенбург (фото взято с интернета)", ua: "Палац Драхенбург (фото взято з Інтернету)", de: "Schloss Drachenburg (Foto aus dem Internet)" } },
+        { path: "Germany/nrw/koln/Rhein-Sieg-Kreis/konigswinter/drachenfels/002.jpg", title: { ru: "Железная дорога Драхенфельс (фото взято с интернета)", ua: "Залізниця Драхенфельса (фото взято з Інтернету)", de: "Drachenfelsbahn (Foto aus dem Internet)" } },
+        { path: "Germany/nrw/koln/Rhein-Sieg-Kreis/konigswinter/drachenfels/003.jpg", title: { ru: "Руины замка Драхенфельс (фото взято с интернета)", ua: "Руїни замку Драхенфельс (фото взято з Інтернету)", de: "Ruinen der Burg Drachenfels (Foto aus dem Internet)" } },
+        { path: "Germany/nrw/koln/Rhein-Sieg-Kreis/konigswinter/drachenfels/004.jpg", title: { ru: "Зал Нибеленгов (фото взято с интернета)", ua: "Зал Нібеленгов (фото взято з Інтернету)", de: "Nibelungenhalle (Foto aus dem Internet)" } },
+        { path: "Germany/nrw/koln/Rhein-Sieg-Kreis/konigswinter/drachenfels/005.jpg", title: { ru: "Зоопарк рептилий Драхенфельс (фото взято с интернета)", ua: "Зоопарк рептилій Драхенфельс (фото взято з Інтернету)", de: "Reptilienzoo Drachenfels (Foto aus dem Internet)" } },
+      ],
+      drachenfelsbahn: [
+        { path: "Germany/nrw/koln/Rhein-Sieg-Kreis/konigswinter/drachenfels/002.jpg", title: { ru: "Железная дорога Драхенфельс (фото взято с интернета)", ua: "Залізниця Драхенфельса (фото взято з Інтернету)", de: "Drachenfelsbahn (Foto aus dem Internet)" } },
+      ],
+      schloss_drachenburg: [
+        { path: "Germany/nrw/koln/Rhein-Sieg-Kreis/konigswinter/drachenfels/001.jpg", title: { ru: "Дворец Драхенбург (фото взято с интернета)", ua: "Палац Драхенбург (фото взято з Інтернету)", de: "Schloss Drachenburg (Foto aus dem Internet)" } },
+      ],
+      drachenfels_ruins: [
+        { path: "Germany/nrw/koln/Rhein-Sieg-Kreis/konigswinter/drachenfels/003.jpg", title: { ru: "Руины замка Драхенфельс (фото взято с интернета)", ua: "Руїни замку Драхенфельс (фото взято з Інтернету)", de: "Ruinen der Burg Drachenfels (Foto aus dem Internet)" } },
+      ],
+      nibelungenhalle: [
+        { path: "Germany/nrw/koln/Rhein-Sieg-Kreis/konigswinter/drachenfels/004.jpg", title: { ru: "Зал Нибеленгов (фото взято с интернета)", ua: "Зал Нібеленгов (фото взято з Інтернету)", de: "Nibelungenhalle (Foto aus dem Internet)" } },
+      ],
+      reptile_zoo: [
+        { path: "Germany/nrw/koln/Rhein-Sieg-Kreis/konigswinter/drachenfels/005.jpg", title: { ru: "Зоопарк рептилий Драхенфельс (фото взято с интернета)", ua: "Зоопарк рептилій Драхенфельс (фото взято з Інтернету)", de: "Reptilienzoo Drachenfels (Foto aus dem Internet)" } },
+      ]
+    },
+
+
+
+    // arnsberg
     luedenscheid: {
-        gallery: [
-          { path: "Germany/nrw/arnsberg/Märkischer-Kreis/luedenscheid/001.JPG", title: { ru: "Люденшайд 1 - 2006", ua: "Люденшайд 1 - 2006", de: "Luedenscheid 1 - 2006" } },
-          { path: "Germany/nrw/arnsberg/Märkischer-Kreis/luedenscheid/002.JPG", title: { ru: "Люденшайд 2 - 2006", ua: "Люденшайд 2 - 2006", de: "Luedenscheid 1 - 2006" } },
-        ]
-      }
+      gallery: [
+        { path: "Germany/nrw/arnsberg/Märkischer-Kreis/luedenscheid/001.JPG", title: { ru: "Люденшайд - 2006", ua: "Люденшайд - 2006", de: "Luedenscheid - 2006" } },
+        { path: "Germany/nrw/arnsberg/Märkischer-Kreis/luedenscheid/002.JPG", title: { ru: "Люденшайд - 2006", ua: "Люденшайд - 2006", de: "Luedenscheid - 2006" } },
+      ],
+      altstadt_luedenscheid: [
+        { path: "Germany/nrw/arnsberg/Märkischer-Kreis/luedenscheid/001.JPG", title: { ru: "Люденшайд - 2006", ua: "Люденшайд - 2006", de: "Luedenscheid - 2006" } },
+        { path: "Germany/nrw/arnsberg/Märkischer-Kreis/luedenscheid/002.JPG", title: { ru: "Люденшайд - 2006", ua: "Люденшайд - 2006", de: "Luedenscheid - 2006" } },
+        { path: "Germany/nrw/arnsberg/Märkischer-Kreis/luedenscheid/003.jpg", title: { ru: "Люденшайд - 2022", ua: "Люденшайд - 2022", de: "Luedenscheid - 2022" } },
+      ]
+    }
+
   }
 }
