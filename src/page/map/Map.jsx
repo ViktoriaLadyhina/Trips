@@ -34,11 +34,7 @@ const Map = () => {
       sumy: { ru: 'Город Сумы', de: 'Stadt Sumy', ua: 'Місто Суми' }
     },
     attractions: {
-      bruhlPalaces: { ru: 'Дворцы Брюля: ансамбль Аугустусбург и Фалькенлюст', de: 'Schlösser Brühl: Augustusburg & Falkenlust', ua: 'Палаци Брюля: ансамбль Аугустусбург і Фалькенлюст' },
-      maxErnst: { ru: 'Музей Макса Эрнста', de: 'Max Ernst Museum', ua: 'Музей Макса Ернста' },
-      phantasialand: { ru: 'Парк развлечений Phantasialand', de: 'Phantasialand', ua: 'Парк розваг Phantasialand' },
-      burgBachem: { ru: 'Крепость Бахем – историческая водяная крепость во Фрехене', de: 'Burg Bachem – historische Wasserburg in Frechen', ua: 'Фортеця Бахем – історична водяна фортеця у Фрехені' },
-      keramion: { ru: 'Керамион – Центр современной и исторической керамики', de: 'KERAMION – Zentrum für moderne und historische Keramik', ua: 'Кераміон – Центр сучасної та історичної кераміки' },
+      //Köln-city
       cologneCathedral: { ru: 'Кёльнский собор', de: 'Kölner Dom', ua: 'Кельнський собор' },
       cologneRathaus: { ru: 'Кёльнская ратуша', de: 'Kölner Rathaus', ua: 'Кельнська ратуша' },
       roemischGermanischesMuseum: { ru: 'Римско-германский музей', de: 'Römisch-Germanisches Museum', ua: 'Римсько-германський музей' },
@@ -49,6 +45,27 @@ const Map = () => {
       wallraf_richartz_museum: { ru: 'Музей Вальрафа-Рихарца', de: 'Wallraf-Richartz-Museum', ua: 'Музей Вальрафа-Ріхарцa' },
       koeln_bridges: { ru: 'Мосты Кёльна через Рейн', de: 'Kölner Rheinbrücken', ua: 'Мости Кельна через Рейн' },
       forstbotanischer_garten: { ru: 'Ботанический сад и лесопарк', de: 'Forstbotanischer Garten', ua: 'Ботанічний сад і лісопарк' },
+
+      // arnsberg округ
+      // Märkischer Kreis
+      // Lüdenscheid
+      altstadt_luedenscheid: { ru: 'Старый город Люденшайда', de: 'Altstadt Lüdenscheid', ua: 'Старе місто Люденшайда' },
+
+      //Köln okrug
+      // Rhein-Erft-Kreis
+      //Brühl
+      bruhlPalaces: { ru: 'Дворцы Брюля: ансамбль Аугустусбург и Фалькенлюст', de: 'Schlösser Brühl: Augustusburg & Falkenlust', ua: 'Палаци Брюля: ансамбль Аугустусбург і Фалькенлюст' },
+      maxErnst: { ru: 'Музей Макса Эрнста', de: 'Max Ernst Museum', ua: 'Музей Макса Ернста' },
+      phantasialand: { ru: 'Парк развлечений Phantasialand', de: 'Phantasialand', ua: 'Парк розваг Phantasialand' },
+
+      //Frechen
+      burgBachem: { ru: 'Крепость Бахем – историческая водяная крепость во Фрехене', de: 'Burg Bachem – historische Wasserburg in Frechen', ua: 'Фортеця Бахем – історична водяна фортеця у Фрехені' },
+      keramion: { ru: 'Керамион – Центр современной и исторической керамики', de: 'KERAMION – Zentrum für moderne und historische Keramik', ua: 'Кераміон – Центр сучасної та історичної кераміки' },
+      johann_schmitz_platz_frechen: { ru: 'Площадь Йоханна Шмитца («площадь Ратуши»)', de: 'Johann-Schmitz-Platz in Frechen', ua: 'Площа Йоханна Шміця («площа Ратуші»)' },
+      altes_rathaus_frechen: { ru: 'Старая ратуша Фрехена', de: 'Altes Rathaus Frechen', ua: 'Стара ратуша Фрехена' },
+
+      //Rhein-Sieg-Kreis
+      // Königswinter
       drachenfels: { ru: 'Гора Драхенфельс', de: 'Drachenfels', ua: 'Гора Драхенфельс' },
       drachenfelsbahn: { ru: 'Железная дорога Драхенфельс', de: 'Drachenfelsbahn', ua: 'Залізниця Драхенфельса' },
       schloss_drachenburg: { ru: 'Дворец Драхенбург', de: 'Schloss Drachenburg', ua: 'Палац Драхенбург' },
@@ -56,6 +73,10 @@ const Map = () => {
       nibelungenhalle: { ru: 'Зал Нибеленгов', de: 'Nibelungenhalle', ua: 'Зал Нібеленгов' },
       reptile_zoo: { ru: 'Зоопарк рептилий Драхенфельс', de: 'Reptilienzoo Drachenfels', ua: 'Зоопарк рептилій Драхенфельс' },
 
+
+      // Ukraine
+      // Sumska oblast
+      // Sumy city
       sumySpasoPreobrazhensky: { ru: 'Спасо-Преображенский собор', de: 'Spaso-Preobraschenski-Kathedrale', ua: 'Спасо-Преображенський собор' },
       sumy_altanka: { ru: 'Альтанка', de: 'Der Pavillon', ua: 'Альтанка' },
     }
@@ -86,7 +107,11 @@ const Map = () => {
                     <ul>
                       <li><span>{t.districts.merkischer[lang]}</span>
                         <ul>
-                          <li><Link to="/germany/nrw/arnsberg/luedenscheid">{t.cities.luedenscheid[lang]}</Link></li>
+                          <li><Link to="/germany/nrw/arnsberg/luedenscheid">{t.cities.luedenscheid[lang]}</Link>
+                            <ul>
+                              <li><Link to="/germany/nrw/arnsberg/luedenscheid/attractions/altstadt_luedenscheid">{t.attractions.altstadt_luedenscheid[lang]}</Link></li>
+                            </ul>
+                          </li>
                         </ul>
                       </li>
                     </ul>
@@ -107,6 +132,11 @@ const Map = () => {
                           </li>
                           <li><Link to="/germany/nrw/koln/frechen">{t.cities.frechen[lang]}</Link>
                             <ul>
+                              <li><Link to="/germany/nrw/koln/frechen/attractions/johann_schmitz_platz_frechen">{t.attractions.johann_schmitz_platz_frechen[lang]}</Link>
+                                <ul>
+                                  <li><Link to="/germany/nrw/koln/frechen/attractions/altes_rathaus_frechen">{t.attractions.altes_rathaus_frechen[lang]}</Link></li>
+                                </ul>
+                              </li>
                               <li><Link to="/germany/nrw/koln/frechen/attractions/burg-bachem">{t.attractions.burgBachem[lang]}</Link></li>
                               <li><Link to="/germany/nrw/koln/frechen/attractions/keramion">{t.attractions.keramion[lang]}</Link></li>
                             </ul>
@@ -136,13 +166,13 @@ const Map = () => {
                           <li> <span>{t.cities.konigswinter[lang]}</span>
                             <ul>
                               <li><Link to="/germany/nrw/koln/konigswinter/attractions/drachenfels">{t.attractions.drachenfels[lang]}</Link>
-                              <ul>
-                                <li><Link to="/germany/nrw/koln/konigswinter/attractions/drachenfelsbahn">{t.attractions.drachenfelsbahn[lang]}</Link></li>
-                                <li><Link to="/germany/nrw/koln/konigswinter/attractions/schloss_drachenburg">{t.attractions.schloss_drachenburg[lang]}</Link></li>
-                                <li><Link to="/germany/nrw/koln/konigswinter/attractions/drachenfels_ruins">{t.attractions.drachenfels_ruins[lang]}</Link></li>
-                                <li><Link to="/germany/nrw/koln/konigswinter/attractions/nibelungenhalle">{t.attractions.nibelungenhalle[lang]}</Link></li>
-                                <li><Link to="/germany/nrw/koln/konigswinter/attractions/reptile_zoo">{t.attractions.reptile_zoo[lang]}</Link></li>
-                              </ul>
+                                <ul>
+                                  <li><Link to="/germany/nrw/koln/konigswinter/attractions/drachenfelsbahn">{t.attractions.drachenfelsbahn[lang]}</Link></li>
+                                  <li><Link to="/germany/nrw/koln/konigswinter/attractions/schloss_drachenburg">{t.attractions.schloss_drachenburg[lang]}</Link></li>
+                                  <li><Link to="/germany/nrw/koln/konigswinter/attractions/drachenfels_ruins">{t.attractions.drachenfels_ruins[lang]}</Link></li>
+                                  <li><Link to="/germany/nrw/koln/konigswinter/attractions/nibelungenhalle">{t.attractions.nibelungenhalle[lang]}</Link></li>
+                                  <li><Link to="/germany/nrw/koln/konigswinter/attractions/reptile_zoo">{t.attractions.reptile_zoo[lang]}</Link></li>
+                                </ul>
                               </li>
                             </ul>
                           </li>

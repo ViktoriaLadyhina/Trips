@@ -32,8 +32,19 @@ const AttractionCard = ({ attr, lang }) => {
                 )}
                 <div className='attrCard__desc-info'>
                     {attr.short_description && (
+
                         <div className='attrCard__desc-info-text'>{attr.short_description}</div>
                     )}
+                    {attr.short_description_subObjects && (
+                        <div className='attrCard__desc-info-text'>{attr.short_description_subObjects.text}
+                            <ul>
+                                {attr.short_description_subObjects.items.map((item, i) => (
+                                    <li key={i}>{item}</li>
+                                ))}
+                            </ul></div>
+                    )}
+
+
                     {attr.unesco_status?.included && (
                         <span className='attrCard__desc-info-text'>
                             UNESCO {attr.unesco_status.year}

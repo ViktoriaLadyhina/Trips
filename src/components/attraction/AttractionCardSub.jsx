@@ -25,9 +25,13 @@ const AttractionCardSub = ({ attr, lang }) => {
                             UNESCO {attr.unesco_status.year}
                         </span>
                     )}
+                    {attr.showMore && (
                         <div className='attrCard__desc-info-more'>
-                            <Link to={`/${attr.countryPath}/${attr.regionsPath}/${attr.districtPath}/${attr.cityPath}/attractions/${attr.slug || attr.path}`}>{more[lang]}</Link>
+                            <Link to={`/${attr.countryPath}/${attr.regionsPath}/${attr.districtPath}/${attr.cityPath}/attractions/${attr.slug || attr.path}`}>
+                                {more[lang]}
+                            </Link>
                         </div>
+                    )}
                 </div>
             </div>
         </div>

@@ -1,4 +1,6 @@
 const datas = [
+
+    // Köln-city
     {
         id: "cologne_cathedral",
         name: "Kölner Dom",
@@ -73,293 +75,10 @@ const datas = [
         }
     },
     {
-        id: "bruhel_palaces",
-        name: "Brühler Schlösser: Ensemble Augustusburg und Falkenlust",
-        type: ['palace', 'museum'],
-        path: 'bruhl-palaces',
-        regionsPath: "nrw",
-        districtPath: "koln",
-        cityPath: "bruhl",
-        fotoCard: "Germany/nrw/koln/Rhein-Erft-Kreis/bruhl/bruhel_palaces/001.jpg",
-        location: "Brühl, Deutschland",
-        address: [{ bold: "Adresse:", text: " Schloss Augustusburg — Max-Ernst-Allee, 50321 Brühl, Deutschland <br>Schloss Falkenlust — An Schloss Falkenlust 1, 50321 Brühl, Deutschland" }],
-        officialSite: [
-            { bold: 'Offizielle Website der Brühler Schlösser', link: 'https://www.schlossbruehl.de/en/' },
-        ],
-        unesco_status: {
-            included: true,
-            year: 1984
-        },
-        tickets_and_entry: {
-            title: "Tickets und Eintritt",
-            items: [
-                { bold: "Der Eintritt in den Park und die Gärten ist", text: " frei, ein Besuch ist das ganze Jahr über möglich." },
-                { bold: "Der Besuch der Schlösser Augustusburg und Falkenlust ist", text: " kostenpflichtig, Führungen finden nach Plan statt." },
-                { bold: "Preise für 2025:", text: " Augustusburg — 11 € für Erwachsene, kostenlos für Besucher bis 25 Jahre; Falkenlust — 8 €; Kombiticket — 17 €." }
-            ]
-        },
-        construction_period: "1723–Mitte des 18. Jahrhunderts",
-        architects: ["Johann Conrad Schlaun", "Balthasar Neumann", "Dominique Girard", "François de Cuvilliés"],
-        founder: "Clemens August von Wittelsbach",
-        short_description: "Die Brühler Schlösser sind ein herausragendes Ensemble des Barock und Rokoko in der Stadt Brühl bei Köln. Sie wurden im Auftrag des Kurfürsten Clemens August errichtet und 1984 in die UNESCO-Welterbeliste aufgenommen. Neben den architektonischen Meisterwerken ist das Ensemble berühmt für seinen französischen Garten mit prächtigem Parterre, Spiegelbecken, Brunnen sowie ausgedehnten Landschaftsgärten im englischen Stil.",
-        full_description: {
-            title: 'Beschreibung und Geschichte',
-            items: [
-                { text: "Im Jahr 1984 wurden die Brühler Schlösser als eines der besten deutschen Beispiele der Rokoko-Architektur und als Ensemble, in dem Architektur und Gartenkunst eine Einheit bilden, in die UNESCO-Welterbeliste aufgenommen." },
-                { text: "Ihr Besitzer, Kurfürst Clemens August, stammte aus dem berühmten Haus Wittelsbach – einer Dynastie, die Deutschland Kurfürsten, Könige, Kaiser und Erzbischöfe gab. Sein Onkel, der Kölner Erzbischof-Kurfürst Joseph Clemens, plante ursprünglich, in Brühl eine Sommerresidenz zu errichten. Diese Idee griff der Neffe auf, als er 1723 sein Amt antrat. Unter der Leitung von Johann Conrad Schlaun begann man auf den Ruinen einer von den Franzosen zerstörten Festung mit dem Bau. Ursprünglich waren ein repräsentatives Schloss für Empfänge und ein kleiner Pavillon für die Falkenjagd vorgesehen, doch sein älterer Bruder Karl Albrecht hielt das Projekt für überholt, und Clemens August ließ sich von seinen Ratschlägen überzeugen." },
-                { text: "Clemens August strebte nach dem Besten und holte führende Architekten, Bildhauer und Gärtner an seinen Hof. Die Arbeiten am Ensemble dauerten sein Leben lang. Schon nach wenigen Jahren konnte Schloss Augustusburg mit den bayerischen Residenzen Karl Albrechts konkurrieren, und das „Jagdschlösschen“ Falkenlust wurde zur Lieblingszuflucht des Kurfürsten." },
-                { text: "Seit dem späten 16. Jahrhundert dominierte in Europa der Barock – ein üppiger, theatralischer Stil mit reicher Stuckdekoration und dekorativen Effekten. Die Monarchen wetteiferten in Pracht und wollten einander übertreffen. In Brühl mündete dieser Wettstreit in einen „kühnen Cocktail“ aus Barock und Rokoko, der später als eines der besten Beispiele deutscher Architektur anerkannt wurde. Besonders berühmt wurde die Prunktreppe des großen Architekten Balthasar Neumann." },
-                { text: "Die Gärten und Parks, die die Brühler Schlösser umgeben, wurden 1728 nach dem Entwurf von Dominique Girard angelegt, einem Schüler von André Le Nôtre – dem Meister der Gartenkunst von Versailles. Das barocke Parterre mit kunstvollen Broderien, Spiegelbecken, Brunnen, akkurat geschnittenen Hecken und Blumenrabatten schmückt das Ensemble jedes Jahr von Mai bis Oktober. Lindenalleen, Boskette und die Wege nach Falkenlust erzeugen eine räumliche Verbindung zwischen Schloss und Jagdpavillon." },
-                { text: "Ab Mitte des 19. Jahrhunderts, etwa ab 1842, wurde der Park teilweise nach englischen Vorbildern der Gartenkunst von Peter Joseph Lenné umgestaltet. Waldbereiche, unterbrochene Wiesen, geschwungene Wege, Inselteiche und natürliche Wasserflächen fügten romantische, naturhafte Elemente hinzu, die mit der formalen Symmetrie des Barocks kontrastierten." },
-                { text: "Die Innenräume des Schlosses beeindrucken durch ihren Reichtum: Säle mit Gemälden, Skulpturen und Antiquitäten. Hier befindet sich auch der Kaiserthron, den Clemens August für seinen älteren Bruder Karl VII. in Auftrag gab, der 1742 gekrönt wurde. Dieser Thron erinnert an die komplexe dynastische Geschichte: Kaiser Karl VI. Habsburg, ohne männlichen Erben, erließ noch zu Lebzeiten die „Pragmatische Sanktion“, die es erlaubte, den Thron an seine Tochter Maria Theresia zu übertragen." },
-                { text: "Das Leben von Clemens August verlief erfolgreich, was zahlreiche Porträts des Schlossherrn zeigen: beim Ball, im Ornat des Kölner Erzbischofs, im Rittergewand des Hochmeisters des Deutschen Ordens oder mit seinem Lieblingsfalken bei der Jagd. Die Nachfolger des Kurfürsten vollendeten das Ensemble. Doch Ende des 18. Jahrhunderts besetzten Truppen der Französischen Revolution das Rheinland. Die Schlösser, Symbole des unabhängigen Absolutismus, wurden geplündert und beschädigt." },
-                { text: "Nach dem Sturz Napoleons fiel Brühl an Preußen. Die Schlösser dienten als königliche und später kaiserliche Residenz am Rhein. Später überstanden sie Kriege, neue Zerstörungen und Restaurierungen im 20. Jahrhundert. Heute ist das Ensemble Augustusburg und Falkenlust als Museum zugänglich und gehört dank der UNESCO zu den deutschen „Wundern der Welt“." }
-            ]
-        },
-        interestingFacts: {
-            title: 'Interessante Fakten',
-            items: [
-                { text: "Falkenlust wurde als Pavillon für die Falkenjagd gebaut." },
-                { text: "Die Prunktreppe von Augustusburg gilt als Meisterwerk von Balthasar Neumann." },
-                { text: "Der Garten erinnert an Versailles und wurde von Dominique Girard entworfen." },
-                { text: "Im Schloss befindet sich der Kaiserthron, der für Karl VII. angefertigt wurde." },
-                { text: "Von der Parkanlage führt eine Lindenallee nach Falkenlust." },
-                { text: "Im 19. Jahrhundert gestaltete Peter Joseph Lenné Teile des Parks im englischen Stil um." }
-            ]
-        },
-        meta: {
-            title: "Die Brühler Schlösser und der prächtige Park: Architektur und Natur des 18. Jahrhunderts",
-            description: "Das Ensemble der Schlösser Augustusburg und Falkenlust in Brühl – ein Meisterwerk des Barock und Rokoko, ergänzt durch französische und englische Gärten, Brunnen, Alleen und Spiegelbecken. Geschichte, Stil, interessante Fakten.",
-            ogTitle: "Brühler Schlösser: Architektur, Gärten und Legenden",
-            ogDescription: "Entdecken Sie die Brühler Schlösser – ihre Pracht, Innenräume, den Park mit Parterre, Alleen und englischem Landschaftsgarten, ihre kulturelle Bedeutung und ihren UNESCO-Status.",
-            ogImage: "Germany/nrw/koln/Rhein-Erft-Kreis/bruhl/bruhel_palaces/001.jpg"
-        }
-    },
-    {
-        id: "max_ernst_museum",
-        name: "Max-Ernst-Museum",
-        type: ['museum'],
-        path: "max-ernst-museum",
-        regionsPath: "nrw",
-        districtPath: "koln",
-        cityPath: "bruhl",
-        fotoCard: "Germany/nrw/koln/Rhein-Erft-Kreis/bruhl/max_ernst_museum/Max-Ernst-Museum.jpg",
-        location: "Brühl, Deutschland",
-        address: [{ bold: "Adresse:", text: " Comesstraße 42 / Max-Ernst-Allee 1, 50321 Brühl, Deutschland" }],
-        officialSite: [
-            { bold: 'Offizielle Webseite des Max-Ernst-Museums', link: 'https://maxernstmuseum.lvr.de/en/startseite_1.html' }
-        ],
-        unesco_status: {
-            included: false
-        },
-        tickets_and_entry: {
-            title: "Tickets und Eintritt",
-            items: [
-                { bold: "Eintritt ins Museum:", text: " Erwachsene — 5 €, Ermäßigungen für Familien mit Kindern vorgesehen." },
-                { bold: "Öffnungszeiten:", text: " Dienstag–Sonntag, 11:00–18:00." }
-            ]
-        },
-        short_description: "Das Max-Ernst-Museum in Brühl ist das einzige Museum weltweit, das dem Leben und Werk des Künstlers Max Ernst (1891–1976) gewidmet ist. Das Museum wurde 2005 eröffnet und befindet sich auf dem Gelände eines Palastkomplexes im Klassizismus des 19. Jahrhunderts.",
-        full_description: {
-            title: "Beschreibung und Geschichte",
-            items: [
-                { text: "Das Max-Ernst-Museum in Brühl (Max Ernst Museum Brühl des LVR) ist das einzige Museum weltweit, das dem Leben und Werk des Künstlers Max Ernst (1891–1976) gewidmet ist. Es befindet sich in einem Gebäude, das von den Architekten Thomas van den Valentijn und Seyed Mohammad Oreizi entworfen wurde, und wurde im September 2005 eröffnet. Das Museum liegt auf dem Gelände eines Palastkomplexes im Klassizismus des 19. Jahrhunderts. maxernstmuseum.lvr.de" },
-                { text: "Die Sammlung des Museums umfasst über 70 Jahre Schaffens von Max Ernst und enthält etwa 2040 Exponate, darunter Gemälde, Skulpturen, Objekte, Fotografien und Papierarbeiten. Besonderes Augenmerk liegt auf seiner dadaistischen und surrealistischen Phase. Das Museum veranstaltet regelmäßig Sonderausstellungen, in denen zeitgenössische Künstler gezeigt werden, die die Traditionen von Dadaismus und Surrealismus fortsetzen." },
-                { text: "Der Bau des Max-Ernst-Museums zog sich lange hin: Die Fertigstellung verzögerte sich um fünf Monate, und für das Projekt wurden 14 Millionen Euro ausgegeben." },
-                { text: "Max Ernst wurde 1891 in Brühl geboren. Er gilt als Pionier des Dadaismus und als einer der Begründer des Surrealismus." },
-                { text: "Früher gab es in Brühl bereits ein Atelier-Museum von Ernst, das in einem Skandal endete: Die Stadt verkaufte eines der vom Künstler geschenkten Gemälde, um die Unterhaltskosten zu decken. Ernst war verärgert, aber der jahrelange Streit endete mit Versöhnung, und das Bild kehrte als Exponat zurück, das vorübergehend vom Kölner Museum Ludwig bereitgestellt wurde." }
-            ]
-        },
-        interestingFacts: {
-            title: "Interessante Fakten",
-            items: [
-                { text: "Das Max-Ernst-Museum ist das einzige Museum weltweit, das vollständig dem Werk von Ernst gewidmet ist." },
-                { text: "Die Finanzierung des Museums erfolgt durch den LVR-Fonds gemeinsam mit den Stadt- und Regionalbehörden." }
-            ]
-        },
-        construction_period: "2000–2005",
-        founder: "LVR-Fonds (Stadt- und Regionalbehörden)",
-        meta: {
-            title: "Max-Ernst-Museum in Brühl: Leben und Werk des Künstlers",
-            description: "Das einzige Museum weltweit, das Max Ernst gewidmet ist. Sammlung, Geschichte, Dadaismus, Surrealismus, Sonderausstellungen.",
-            ogTitle: "Max-Ernst-Museum — Brühl, Deutschland",
-            ogDescription: "Entdecken Sie das Max-Ernst-Museum in Brühl, seine Sammlung und Ausstellungen, die dem Dadaismus und Surrealismus gewidmet sind.",
-            ogImage: "Germany/nrw/koln/Rhein-Erft-Kreis/bruhl/max_ernst_museum/Max-Ernst-Museum.jpg"
-        }
-    },
-    {
-        id: "keramion_frechen",
-        name: "KERAMION – Zentrum für moderne und historische Keramik",
-        type: ['museum'],
-        path: "keramion",
-        regionsPath: "nrw",
-        districtPath: "koln",
-        cityPath: "frechen",
-        fotoCard: "Germany/nrw/koln/Rhein-Erft-Kreis/frechen/keramion/frechen_keramion.jpg",
-        location: "Frechen, Deutschland",
-        address: [{ bold: "Adresse:", text: " Bonnstraße 12, 50226 Frechen, Deutschland" }],
-        officialSite: [
-            { bold: 'Offizielle Website von KERAMION', link: 'https://keramion.de/' }
-        ],
-        unesco_status: {
-            included: false
-        },
-        tickets_and_entry: {
-            title: "Eintrittspreise (gültig für 2025)",
-            items: [
-                { bold: "Eintritt für Erwachsene:", text: " 7,00 €" },
-                { bold: "Ermäßigt:", text: " 5,00 €" },
-                { bold: "Familienkarte:", text: " 14,00 € (2 Erwachsene + bis zu 3 Kinder)" },
-                { bold: "Kinder bis 16 Jahre:", text: " kostenlos" },
-                { bold: "Öffnungszeiten:", text: " Dienstag – Sonntag: 11:00–17:00, Montag: geschlossen" }
-            ]
-        },
-        short_description: "Das KERAMION in Frechen ist ein Museum, das historische und moderne Keramik vereint; es befindet sich in einem futuristisch gestalteten runden Gebäude, das 1971 vom Architekturbüro Peter Neufert im Auftrag des Sammlers Dr. Gottfried Cremer errichtet wurde.",
-        full_description: {
-            title: "Beschreibung und Geschichte",
-            items: [
-                { text: "Das KERAMION in Frechen ist ein Zentrum für moderne und historische Keramik, gegründet im Jahr 2002. Es vereinte die private Sammlung von Dr. Gottfried Cremer mit dem städtischen historischen Keramikmuseum." },
-                { text: "Das Museumsgebäude wurde 1970–1971 nach Plänen des Architekten Peter Neufert und des Ingenieurs Stefan Polónyi speziell für die Präsentation der einzigartigen Sammlung von Dr. Cremer errichtet. Die Architektur erinnert an eine Töpferscheibe mit einer kuppelförmigen Lichtkuppel." },
-                { text: "Die Sammlung umfasst etwa 5.000 Werke – von historischer Keramik aus Frechen (einschließlich der berühmten Bartmannkrüge aus dem 16.–19. Jahrhundert) bis hin zu modernen Arbeiten von über 500 Künstlern aus Deutschland und dem Ausland." },
-                { text: "Neben der Dauerausstellung organisiert das Museum regelmäßig Sonderausstellungen, kreative Projekte, Workshops und Bildungsprogramme." }
-            ]
-        },
-        interestingFacts: {
-            title: "Interessante Fakten",
-            items: [
-                { text: "Das KERAMION-Gebäude gilt als architektonisches Wahrzeichen: die runde Form mit kuppelförmiger Lichtkuppel, Glassegmenten und Fassadenverkleidung macht das Museum leicht erkennbar." },
-                { text: "In der historischen Ausstellung sind die berühmten Bartmannkrüge vertreten – bärtige Krüge, die zum Symbol der Keramikproduktion in Frechen wurden." },
-                { text: "Die Sammlung von Cremer ist eine der größten privaten Sammlungen zeitgenössischer Keramik in Deutschland." }
-            ]
-        },
-        construction_period: "Das Museumsgebäude wurde 1970–1971 errichtet. Das Museum wurde 2002 eröffnet.",
-        founder: "Dr. Gottfried Cremer und die Stadt Frechen",
-        meta: {
-            title: "KERAMION – moderne und historische Keramik in Frechen",
-            description: "KERAMION: Dauerausstellung und Sonderausstellungen von Keramik, Geschichte der Produktion und zeitgenössische künstlerische Perspektiven.",
-            ogTitle: "KERAMION – Zentrum für moderne und historische Keramik, Frechen",
-            ogDescription: "Erfahren Sie mehr über die Sammlung von Cremer, die historische Keramik aus Frechen und die Ausstellungen im KERAMION.",
-            ogImage: "Germany/nrw/koln/Rhein-Erft-Kreis/frechen/keramion/frechen_keramion.jpg"
-        }
-    },
-    {
-        id: "burg_bachem_frechen",
-        name: "Burg Bachem – historische Wasserburg in Frechen",
-        type: ['castle'],
-        path: "burg-bachem",
-        regionsPath: "nrw",
-        districtPath: "koln",
-        cityPath: "frechen",
-        fotoCard: "Germany/nrw/koln/Rhein-Erft-Kreis/frechen/burg-bachem/Burg-Bachem_3.jpg",
-        location: "Frechen, Deutschland",
-        address: [{ bold: "Adresse:", text: " Schloßstraße 8, 50226 Frechen, Deutschland" }],
-        officialSite: [
-            { bold: "Offizielle Website Burg Bachem", link: "https://www.burg-bachem.de/" }
-        ],
-        unesco_status: {
-            included: false
-        },
-        tickets_and_entry: {
-            title: "Eintritt und Zugang",
-            items: [
-                { bold: "Zugang:", text: "Das Schloss ist eine private Residenz, das Schlossgelände und der See sind für Spaziergänge zugänglich." },
-                { bold: "Besuchszeiten:", text: "Das Betreten des Sees und der Alleen ist tagsüber möglich." }
-            ]
-        },
-        short_description: "Burg Bachem in Frechen – der größte und am besten erhaltene Schlosskomplex der Stadt, umgeben von einem Graben mit steinerner Brücke. Das Schloss ist ein bedeutendes Denkmal der Geschichte und Architektur des Stadtteils Bachem.",
-        full_description: {
-            title: "Beschreibung und Geschichte",
-            items: [
-                { text: "Burg Bachem wird erstmals im 13. Jahrhundert in Dokumenten erwähnt. Im Laufe der Jahrhunderte wurde der Komplex mehrfach umgebaut und modernisiert, besonders bis zum 18. Jahrhundert, um den Anforderungen der Zeit gerecht zu werden." },
-                { text: "Im 19. und 20. Jahrhundert verursachte der Braunkohletagebau in unmittelbarer Nähe des Schlosses erhebliche strukturelle Schäden, und verschiedene zeitweilige Nutzungen mit zerstörerischen Eingriffen verschlechterten den Zustand des Gebäudes weiter." },
-                { text: "Mitte der 1970er Jahre führte der derzeitige Eigentümer eine umfassende Restaurierung des Schlosskomplexes durch, brachte ihn wieder in Nutzung und stoppte den weiteren Verfall." },
-                { text: "Fast vierzig Jahre später wurde das Hauptgebäude erneut unter Berücksichtigung moderner Anforderungen an Komfort und Sicherheit rekonstruiert. Heute verfügt das Schloss über sieben Wohnräume: sechs werden vorübergehend komplett möbliert vermietet, und einer dient dem Eigentümer als Wohnraum." },
-                { text: "Der Bachemer Bach, der in der Nähe fließt, versorgte das Schloss früher mit Wasser für die Schutzgräben. Der See und die Alleen werden von den Einheimischen aktiv für Spaziergänge, Hundespaziergänge und Erholung in der Natur genutzt und verbinden historischen Wert mit moderner Funktionalität." }
-            ]
-        },
-        interestingFacts: {
-            title: "Interessante Fakten",
-            items: [
-                { text: "Das Schloss ist ein historisches Denkmal und ein wichtiger Teil der Stadtarchitektur von Frechen." },
-                { text: "Der See und die Alleen rund um das Schloss sind ein beliebter Ort für Spaziergänge bei den Einheimischen." },
-                { text: "Der Bachemer Bach versorgte das Schloss früher mit Wasser für die Schutzgräben." }
-            ]
-        },
-        construction_period: "Vermutlich Anfang des 13. Jahrhunderts, mit späteren Umbauten und umfassender Restaurierung in den 1970er Jahren",
-        founder: "Ursprünglich im Besitz lokaler Adelsfamilien",
-        meta: {
-            title: "Burg Bachem in Frechen – historische Wasserburg und See",
-            description: "Burg Bachem: Geschichte, Wassergräben, Spazierbereiche und Erholung am kleinen See in Frechen.",
-            ogTitle: "Burg Bachem – Frechen, Deutschland",
-            ogDescription: "Entdecken Sie die historische Wasserburg Burg Bachem und den See mit Spazierwegen in Frechen.",
-            ogImage: "Germany/nrw/koln/Rhein-Erft-Kreis/frechen/burg-bachem/Burg-Bachem_3.jpg"
-        }
-    },
-    {
-        id: "phantasialand",
-        name: "Phantasialand",
-        type: ['amusement_park'],
-        path: "phantasialand",
-        regionsPath: "nrw",
-        districtPath: "koln",
-        cityPath: "bruhl",
-        fotoCard: "../../Gallery/Germany/Bruhl/Full/001.jpg",
-        location: "Brühl, Deutschland",
-        address: [{ bold: "Adresse:", text: " Berggeiststraße 31–41, 50321 Brühl, Deutschland" }],
-        officialSite: [
-            { bold: 'Offizielle Website von Phantasialand', link: 'https://www.phantasialand.de/en/' }
-        ],
-        unesco_status: {
-            included: false
-        },
-        tickets_and_entry: {
-            title: "Tickets und Eintritt",
-            items: [
-                { bold: "Ticketpreise:", text: " abhängig von Saison und Alter der Besucher. Es wird empfohlen, Tickets im Voraus über die offizielle Website zu kaufen." },
-                { bold: "Öffnungszeiten:", text: " Hauptsaison (28. März – 15. November) von 9:00 bis 18:00 Uhr, Attraktionen öffnen um 10:00 Uhr. Sommerzeit (Juli – August) bis 19:00 Uhr. Wintersaison Wintertraum (16. November – 26. Januar) von 11:00 bis 20:00 Uhr. Geschlossen am 24., 25. Dezember und 1. Januar." }
-            ]
-        },
-        short_description: "Phantasialand in Brühl ist einer der meistbesuchten Themenparks Europas mit über 30 Attraktionen und 6 einzigartigen Themenbereichen. Geöffnet seit 1967, empfängt jährlich etwa 2 Millionen Besucher. Der Park ist bekannt für seine beeindruckenden Achterbahnen und Wasserfahrgeschäfte sowie die Liebe zum Detail in der Gestaltung jeder Zone, was unvergessliche Erlebnisse für Besucher jeden Alters schafft.",
-        full_description: {
-            title: "Beschreibung und Geschichte",
-            items: [
-                { text: "Phantasialand, eröffnet am 30. April 1967, liegt in Brühl, etwa 20 km südwestlich von Köln, Nordrhein-Westfalen." },
-                { text: "Der Park ist in sechs Themenbereiche unterteilt: Berlin, Africa, Mexico, China Town, Fantasy und Mystery. Im Park gibt es über 30 Attraktionen, darunter 8 Achterbahnen und 4 Wasserfahrgeschäfte." },
-                { text: "Phantasialand bietet zwei Themenhotels: Hotel Matamba (Afrika) und Hotel Ling Bao (China), die ein einzigartiges Übernachtungserlebnis und einfachen Zugang zum Park bieten." }
-            ]
-        },
-        interestingFacts: {
-            title: "Interessante Fakten",
-            items: [
-                { text: "Phantasialand aktualisiert regelmäßig seine Attraktionen, um den Besuchern neue Erlebnisse zu bieten." },
-                { text: "Der Park ist bekannt für seine Liebe zum Detail in der Gestaltung der Themenbereiche und schafft eine einzigartige Atmosphäre in jedem von ihnen." },
-                { text: "Phantasialand entwickelt aktiv die Infrastruktur weiter, einschließlich neuer Hotels, Theater und Konzertsäle." }
-            ]
-        },
-        sub_objects: {
-            title: "Beliebte Attraktionen",
-            items: [
-                { bold: "Taron", text: " – leistungsstarke Stahlachterbahn (2016)" },
-                { bold: "F.L.Y.", text: " – erste fliegende Achterbahn der Welt" },
-                { bold: "Chiapas", text: " – Wasserachterbahn mit 53° Neigungswinkel und 76 km/h Geschwindigkeit" },
-                { bold: "Black Mamba", text: " – invertierte Achterbahn durch den afrikanischen Dschungel" },
-            ]
-        },
-        construction_period: "1967 – heute",
-        founder: "eröffnet 1967, Gründer – Gottlieb Löffelhardt und Richard Schmidt",
-        meta: {
-            title: "Phantasialand in Brühl: Themenpark mit Attraktionen und Hotels",
-            description: "Phantasialand – einer der meistbesuchten Parks Europas mit über 30 Attraktionen, Themenbereichen und einzigartigen Hotels.",
-            ogTitle: "Phantasialand – Brühl, Deutschland",
-            ogDescription: "Entdecken Sie Phantasialand in Brühl: Attraktionen, Themenbereiche, Hotels und Unterhaltung für die ganze Familie.",
-            ogImage: "../../Gallery/Germany/Bruhl/Full/001.jpg"
-        },
-    },
-    {
-        id: "rathaus",
+        id: "rathaus_koln",
         name: "Kölner Rathaus",
         type: ['historical_building'],
-        path: "rathaus",
+        path: "rathaus_koln",
         regionsPath: "nrw",
         districtPath: "city",
         cityPath: "koln",
@@ -890,6 +609,429 @@ const datas = [
             ogImage: "Germany/nrw/koln/koln-city/wallraf_richartz_museum/001.jpg"
         }
     },
+
+    // Köln округ
+
+    // Rhein-Erft-Kreis
+
+    // Brühl
+    {
+        id: "bruhel_palaces",
+        name: "Brühler Schlösser: Ensemble Augustusburg und Falkenlust",
+        type: ['palace', 'museum'],
+        path: 'bruhl-palaces',
+        regionsPath: "nrw",
+        districtPath: "koln",
+        cityPath: "bruhl",
+        fotoCard: "Germany/nrw/koln/Rhein-Erft-Kreis/bruhl/bruhel_palaces/001.jpg",
+        location: "Brühl, Deutschland",
+        address: [{ bold: "Adresse:", text: " Schloss Augustusburg — Max-Ernst-Allee, 50321 Brühl, Deutschland <br>Schloss Falkenlust — An Schloss Falkenlust 1, 50321 Brühl, Deutschland" }],
+        officialSite: [
+            { bold: 'Offizielle Website der Brühler Schlösser', link: 'https://www.schlossbruehl.de/en/' },
+        ],
+        unesco_status: {
+            included: true,
+            year: 1984
+        },
+        tickets_and_entry: {
+            title: "Tickets und Eintritt",
+            items: [
+                { bold: "Der Eintritt in den Park und die Gärten ist", text: " frei, ein Besuch ist das ganze Jahr über möglich." },
+                { bold: "Der Besuch der Schlösser Augustusburg und Falkenlust ist", text: " kostenpflichtig, Führungen finden nach Plan statt." },
+                { bold: "Preise für 2025:", text: " Augustusburg — 11 € für Erwachsene, kostenlos für Besucher bis 25 Jahre; Falkenlust — 8 €; Kombiticket — 17 €." }
+            ]
+        },
+        construction_period: "1723–Mitte des 18. Jahrhunderts",
+        architects: ["Johann Conrad Schlaun", "Balthasar Neumann", "Dominique Girard", "François de Cuvilliés"],
+        founder: "Clemens August von Wittelsbach",
+        short_description: "Die Brühler Schlösser sind ein herausragendes Ensemble des Barock und Rokoko in der Stadt Brühl bei Köln. Sie wurden im Auftrag des Kurfürsten Clemens August errichtet und 1984 in die UNESCO-Welterbeliste aufgenommen. Neben den architektonischen Meisterwerken ist das Ensemble berühmt für seinen französischen Garten mit prächtigem Parterre, Spiegelbecken, Brunnen sowie ausgedehnten Landschaftsgärten im englischen Stil.",
+        full_description: {
+            title: 'Beschreibung und Geschichte',
+            items: [
+                { text: "Im Jahr 1984 wurden die Brühler Schlösser als eines der besten deutschen Beispiele der Rokoko-Architektur und als Ensemble, in dem Architektur und Gartenkunst eine Einheit bilden, in die UNESCO-Welterbeliste aufgenommen." },
+                { text: "Ihr Besitzer, Kurfürst Clemens August, stammte aus dem berühmten Haus Wittelsbach – einer Dynastie, die Deutschland Kurfürsten, Könige, Kaiser und Erzbischöfe gab. Sein Onkel, der Kölner Erzbischof-Kurfürst Joseph Clemens, plante ursprünglich, in Brühl eine Sommerresidenz zu errichten. Diese Idee griff der Neffe auf, als er 1723 sein Amt antrat. Unter der Leitung von Johann Conrad Schlaun begann man auf den Ruinen einer von den Franzosen zerstörten Festung mit dem Bau. Ursprünglich waren ein repräsentatives Schloss für Empfänge und ein kleiner Pavillon für die Falkenjagd vorgesehen, doch sein älterer Bruder Karl Albrecht hielt das Projekt für überholt, und Clemens August ließ sich von seinen Ratschlägen überzeugen." },
+                { text: "Clemens August strebte nach dem Besten und holte führende Architekten, Bildhauer und Gärtner an seinen Hof. Die Arbeiten am Ensemble dauerten sein Leben lang. Schon nach wenigen Jahren konnte Schloss Augustusburg mit den bayerischen Residenzen Karl Albrechts konkurrieren, und das „Jagdschlösschen“ Falkenlust wurde zur Lieblingszuflucht des Kurfürsten." },
+                { text: "Seit dem späten 16. Jahrhundert dominierte in Europa der Barock – ein üppiger, theatralischer Stil mit reicher Stuckdekoration und dekorativen Effekten. Die Monarchen wetteiferten in Pracht und wollten einander übertreffen. In Brühl mündete dieser Wettstreit in einen „kühnen Cocktail“ aus Barock und Rokoko, der später als eines der besten Beispiele deutscher Architektur anerkannt wurde. Besonders berühmt wurde die Prunktreppe des großen Architekten Balthasar Neumann." },
+                { text: "Die Gärten und Parks, die die Brühler Schlösser umgeben, wurden 1728 nach dem Entwurf von Dominique Girard angelegt, einem Schüler von André Le Nôtre – dem Meister der Gartenkunst von Versailles. Das barocke Parterre mit kunstvollen Broderien, Spiegelbecken, Brunnen, akkurat geschnittenen Hecken und Blumenrabatten schmückt das Ensemble jedes Jahr von Mai bis Oktober. Lindenalleen, Boskette und die Wege nach Falkenlust erzeugen eine räumliche Verbindung zwischen Schloss und Jagdpavillon." },
+                { text: "Ab Mitte des 19. Jahrhunderts, etwa ab 1842, wurde der Park teilweise nach englischen Vorbildern der Gartenkunst von Peter Joseph Lenné umgestaltet. Waldbereiche, unterbrochene Wiesen, geschwungene Wege, Inselteiche und natürliche Wasserflächen fügten romantische, naturhafte Elemente hinzu, die mit der formalen Symmetrie des Barocks kontrastierten." },
+                { text: "Die Innenräume des Schlosses beeindrucken durch ihren Reichtum: Säle mit Gemälden, Skulpturen und Antiquitäten. Hier befindet sich auch der Kaiserthron, den Clemens August für seinen älteren Bruder Karl VII. in Auftrag gab, der 1742 gekrönt wurde. Dieser Thron erinnert an die komplexe dynastische Geschichte: Kaiser Karl VI. Habsburg, ohne männlichen Erben, erließ noch zu Lebzeiten die „Pragmatische Sanktion“, die es erlaubte, den Thron an seine Tochter Maria Theresia zu übertragen." },
+                { text: "Das Leben von Clemens August verlief erfolgreich, was zahlreiche Porträts des Schlossherrn zeigen: beim Ball, im Ornat des Kölner Erzbischofs, im Rittergewand des Hochmeisters des Deutschen Ordens oder mit seinem Lieblingsfalken bei der Jagd. Die Nachfolger des Kurfürsten vollendeten das Ensemble. Doch Ende des 18. Jahrhunderts besetzten Truppen der Französischen Revolution das Rheinland. Die Schlösser, Symbole des unabhängigen Absolutismus, wurden geplündert und beschädigt." },
+                { text: "Nach dem Sturz Napoleons fiel Brühl an Preußen. Die Schlösser dienten als königliche und später kaiserliche Residenz am Rhein. Später überstanden sie Kriege, neue Zerstörungen und Restaurierungen im 20. Jahrhundert. Heute ist das Ensemble Augustusburg und Falkenlust als Museum zugänglich und gehört dank der UNESCO zu den deutschen „Wundern der Welt“." }
+            ]
+        },
+        interestingFacts: {
+            title: 'Interessante Fakten',
+            items: [
+                { text: "Falkenlust wurde als Pavillon für die Falkenjagd gebaut." },
+                { text: "Die Prunktreppe von Augustusburg gilt als Meisterwerk von Balthasar Neumann." },
+                { text: "Der Garten erinnert an Versailles und wurde von Dominique Girard entworfen." },
+                { text: "Im Schloss befindet sich der Kaiserthron, der für Karl VII. angefertigt wurde." },
+                { text: "Von der Parkanlage führt eine Lindenallee nach Falkenlust." },
+                { text: "Im 19. Jahrhundert gestaltete Peter Joseph Lenné Teile des Parks im englischen Stil um." }
+            ]
+        },
+        meta: {
+            title: "Die Brühler Schlösser und der prächtige Park: Architektur und Natur des 18. Jahrhunderts",
+            description: "Das Ensemble der Schlösser Augustusburg und Falkenlust in Brühl – ein Meisterwerk des Barock und Rokoko, ergänzt durch französische und englische Gärten, Brunnen, Alleen und Spiegelbecken. Geschichte, Stil, interessante Fakten.",
+            ogTitle: "Brühler Schlösser: Architektur, Gärten und Legenden",
+            ogDescription: "Entdecken Sie die Brühler Schlösser – ihre Pracht, Innenräume, den Park mit Parterre, Alleen und englischem Landschaftsgarten, ihre kulturelle Bedeutung und ihren UNESCO-Status.",
+            ogImage: "Germany/nrw/koln/Rhein-Erft-Kreis/bruhl/bruhel_palaces/001.jpg"
+        }
+    },
+    {
+        id: "max_ernst_museum",
+        name: "Max-Ernst-Museum",
+        type: ['museum'],
+        path: "max-ernst-museum",
+        regionsPath: "nrw",
+        districtPath: "koln",
+        cityPath: "bruhl",
+        fotoCard: "Germany/nrw/koln/Rhein-Erft-Kreis/bruhl/max_ernst_museum/Max-Ernst-Museum.jpg",
+        location: "Brühl, Deutschland",
+        address: [{ bold: "Adresse:", text: " Comesstraße 42 / Max-Ernst-Allee 1, 50321 Brühl, Deutschland" }],
+        officialSite: [
+            { bold: 'Offizielle Webseite des Max-Ernst-Museums', link: 'https://maxernstmuseum.lvr.de/en/startseite_1.html' }
+        ],
+        unesco_status: {
+            included: false
+        },
+        tickets_and_entry: {
+            title: "Tickets und Eintritt",
+            items: [
+                { bold: "Eintritt ins Museum:", text: " Erwachsene — 5 €, Ermäßigungen für Familien mit Kindern vorgesehen." },
+                { bold: "Öffnungszeiten:", text: " Dienstag–Sonntag, 11:00–18:00." }
+            ]
+        },
+        short_description: "Das Max-Ernst-Museum in Brühl ist das einzige Museum weltweit, das dem Leben und Werk des Künstlers Max Ernst (1891–1976) gewidmet ist. Das Museum wurde 2005 eröffnet und befindet sich auf dem Gelände eines Palastkomplexes im Klassizismus des 19. Jahrhunderts.",
+        full_description: {
+            title: "Beschreibung und Geschichte",
+            items: [
+                { text: "Das Max-Ernst-Museum in Brühl (Max Ernst Museum Brühl des LVR) ist das einzige Museum weltweit, das dem Leben und Werk des Künstlers Max Ernst (1891–1976) gewidmet ist. Es befindet sich in einem Gebäude, das von den Architekten Thomas van den Valentijn und Seyed Mohammad Oreizi entworfen wurde, und wurde im September 2005 eröffnet. Das Museum liegt auf dem Gelände eines Palastkomplexes im Klassizismus des 19. Jahrhunderts. maxernstmuseum.lvr.de" },
+                { text: "Die Sammlung des Museums umfasst über 70 Jahre Schaffens von Max Ernst und enthält etwa 2040 Exponate, darunter Gemälde, Skulpturen, Objekte, Fotografien und Papierarbeiten. Besonderes Augenmerk liegt auf seiner dadaistischen und surrealistischen Phase. Das Museum veranstaltet regelmäßig Sonderausstellungen, in denen zeitgenössische Künstler gezeigt werden, die die Traditionen von Dadaismus und Surrealismus fortsetzen." },
+                { text: "Der Bau des Max-Ernst-Museums zog sich lange hin: Die Fertigstellung verzögerte sich um fünf Monate, und für das Projekt wurden 14 Millionen Euro ausgegeben." },
+                { text: "Max Ernst wurde 1891 in Brühl geboren. Er gilt als Pionier des Dadaismus und als einer der Begründer des Surrealismus." },
+                { text: "Früher gab es in Brühl bereits ein Atelier-Museum von Ernst, das in einem Skandal endete: Die Stadt verkaufte eines der vom Künstler geschenkten Gemälde, um die Unterhaltskosten zu decken. Ernst war verärgert, aber der jahrelange Streit endete mit Versöhnung, und das Bild kehrte als Exponat zurück, das vorübergehend vom Kölner Museum Ludwig bereitgestellt wurde." }
+            ]
+        },
+        interestingFacts: {
+            title: "Interessante Fakten",
+            items: [
+                { text: "Das Max-Ernst-Museum ist das einzige Museum weltweit, das vollständig dem Werk von Ernst gewidmet ist." },
+                { text: "Die Finanzierung des Museums erfolgt durch den LVR-Fonds gemeinsam mit den Stadt- und Regionalbehörden." }
+            ]
+        },
+        construction_period: "2000–2005",
+        founder: "LVR-Fonds (Stadt- und Regionalbehörden)",
+        meta: {
+            title: "Max-Ernst-Museum in Brühl: Leben und Werk des Künstlers",
+            description: "Das einzige Museum weltweit, das Max Ernst gewidmet ist. Sammlung, Geschichte, Dadaismus, Surrealismus, Sonderausstellungen.",
+            ogTitle: "Max-Ernst-Museum — Brühl, Deutschland",
+            ogDescription: "Entdecken Sie das Max-Ernst-Museum in Brühl, seine Sammlung und Ausstellungen, die dem Dadaismus und Surrealismus gewidmet sind.",
+            ogImage: "Germany/nrw/koln/Rhein-Erft-Kreis/bruhl/max_ernst_museum/Max-Ernst-Museum.jpg"
+        }
+    },
+        {
+        id: "phantasialand",
+        name: "Phantasialand",
+        type: ['amusement_park'],
+        path: "phantasialand",
+        regionsPath: "nrw",
+        districtPath: "koln",
+        cityPath: "bruhl",
+        fotoCard: "../../Gallery/Germany/Bruhl/Full/001.jpg",
+        location: "Brühl, Deutschland",
+        address: [{ bold: "Adresse:", text: " Berggeiststraße 31–41, 50321 Brühl, Deutschland" }],
+        officialSite: [
+            { bold: 'Offizielle Website von Phantasialand', link: 'https://www.phantasialand.de/en/' }
+        ],
+        unesco_status: {
+            included: false
+        },
+        tickets_and_entry: {
+            title: "Tickets und Eintritt",
+            items: [
+                { bold: "Ticketpreise:", text: " abhängig von Saison und Alter der Besucher. Es wird empfohlen, Tickets im Voraus über die offizielle Website zu kaufen." },
+                { bold: "Öffnungszeiten:", text: " Hauptsaison (28. März – 15. November) von 9:00 bis 18:00 Uhr, Attraktionen öffnen um 10:00 Uhr. Sommerzeit (Juli – August) bis 19:00 Uhr. Wintersaison Wintertraum (16. November – 26. Januar) von 11:00 bis 20:00 Uhr. Geschlossen am 24., 25. Dezember und 1. Januar." }
+            ]
+        },
+        short_description: "Phantasialand in Brühl ist einer der meistbesuchten Themenparks Europas mit über 30 Attraktionen und 6 einzigartigen Themenbereichen. Geöffnet seit 1967, empfängt jährlich etwa 2 Millionen Besucher. Der Park ist bekannt für seine beeindruckenden Achterbahnen und Wasserfahrgeschäfte sowie die Liebe zum Detail in der Gestaltung jeder Zone, was unvergessliche Erlebnisse für Besucher jeden Alters schafft.",
+        full_description: {
+            title: "Beschreibung und Geschichte",
+            items: [
+                { text: "Phantasialand, eröffnet am 30. April 1967, liegt in Brühl, etwa 20 km südwestlich von Köln, Nordrhein-Westfalen." },
+                { text: "Der Park ist in sechs Themenbereiche unterteilt: Berlin, Africa, Mexico, China Town, Fantasy und Mystery. Im Park gibt es über 30 Attraktionen, darunter 8 Achterbahnen und 4 Wasserfahrgeschäfte." },
+                { text: "Phantasialand bietet zwei Themenhotels: Hotel Matamba (Afrika) und Hotel Ling Bao (China), die ein einzigartiges Übernachtungserlebnis und einfachen Zugang zum Park bieten." }
+            ]
+        },
+        interestingFacts: {
+            title: "Interessante Fakten",
+            items: [
+                { text: "Phantasialand aktualisiert regelmäßig seine Attraktionen, um den Besuchern neue Erlebnisse zu bieten." },
+                { text: "Der Park ist bekannt für seine Liebe zum Detail in der Gestaltung der Themenbereiche und schafft eine einzigartige Atmosphäre in jedem von ihnen." },
+                { text: "Phantasialand entwickelt aktiv die Infrastruktur weiter, einschließlich neuer Hotels, Theater und Konzertsäle." }
+            ]
+        },
+        sub_objects: {
+            title: "Beliebte Attraktionen",
+            items: [
+                { bold: "Taron", text: " – leistungsstarke Stahlachterbahn (2016)" },
+                { bold: "F.L.Y.", text: " – erste fliegende Achterbahn der Welt" },
+                { bold: "Chiapas", text: " – Wasserachterbahn mit 53° Neigungswinkel und 76 km/h Geschwindigkeit" },
+                { bold: "Black Mamba", text: " – invertierte Achterbahn durch den afrikanischen Dschungel" },
+            ]
+        },
+        construction_period: "1967 – heute",
+        founder: "eröffnet 1967, Gründer – Gottlieb Löffelhardt und Richard Schmidt",
+        meta: {
+            title: "Phantasialand in Brühl: Themenpark mit Attraktionen und Hotels",
+            description: "Phantasialand – einer der meistbesuchten Parks Europas mit über 30 Attraktionen, Themenbereichen und einzigartigen Hotels.",
+            ogTitle: "Phantasialand – Brühl, Deutschland",
+            ogDescription: "Entdecken Sie Phantasialand in Brühl: Attraktionen, Themenbereiche, Hotels und Unterhaltung für die ganze Familie.",
+            ogImage: "../../Gallery/Germany/Bruhl/Full/001.jpg"
+        },
+    },
+
+    // Frechen
+    {
+        id: "keramion_frechen",
+        name: "KERAMION – Zentrum für moderne und historische Keramik",
+        type: ['museum'],
+        path: "keramion",
+        regionsPath: "nrw",
+        districtPath: "koln",
+        cityPath: "frechen",
+        fotoCard: "Germany/nrw/koln/Rhein-Erft-Kreis/frechen/keramion/frechen_keramion.jpg",
+        location: "Frechen, Deutschland",
+        address: [{ bold: "Adresse:", text: " Bonnstraße 12, 50226 Frechen, Deutschland" }],
+        officialSite: [
+            { bold: 'Offizielle Website von KERAMION', link: 'https://keramion.de/' }
+        ],
+        unesco_status: {
+            included: false
+        },
+        tickets_and_entry: {
+            title: "Eintrittspreise (gültig für 2025)",
+            items: [
+                { bold: "Eintritt für Erwachsene:", text: " 7,00 €" },
+                { bold: "Ermäßigt:", text: " 5,00 €" },
+                { bold: "Familienkarte:", text: " 14,00 € (2 Erwachsene + bis zu 3 Kinder)" },
+                { bold: "Kinder bis 16 Jahre:", text: " kostenlos" },
+                { bold: "Öffnungszeiten:", text: " Dienstag – Sonntag: 11:00–17:00, Montag: geschlossen" }
+            ]
+        },
+        short_description: "Das KERAMION in Frechen ist ein Museum, das historische und moderne Keramik vereint; es befindet sich in einem futuristisch gestalteten runden Gebäude, das 1971 vom Architekturbüro Peter Neufert im Auftrag des Sammlers Dr. Gottfried Cremer errichtet wurde.",
+        full_description: {
+            title: "Beschreibung und Geschichte",
+            items: [
+                { text: "Das KERAMION in Frechen ist ein Zentrum für moderne und historische Keramik, gegründet im Jahr 2002. Es vereinte die private Sammlung von Dr. Gottfried Cremer mit dem städtischen historischen Keramikmuseum." },
+                { text: "Das Museumsgebäude wurde 1970–1971 nach Plänen des Architekten Peter Neufert und des Ingenieurs Stefan Polónyi speziell für die Präsentation der einzigartigen Sammlung von Dr. Cremer errichtet. Die Architektur erinnert an eine Töpferscheibe mit einer kuppelförmigen Lichtkuppel." },
+                { text: "Die Sammlung umfasst etwa 5.000 Werke – von historischer Keramik aus Frechen (einschließlich der berühmten Bartmannkrüge aus dem 16.–19. Jahrhundert) bis hin zu modernen Arbeiten von über 500 Künstlern aus Deutschland und dem Ausland." },
+                { text: "Neben der Dauerausstellung organisiert das Museum regelmäßig Sonderausstellungen, kreative Projekte, Workshops und Bildungsprogramme." }
+            ]
+        },
+        interestingFacts: {
+            title: "Interessante Fakten",
+            items: [
+                { text: "Das KERAMION-Gebäude gilt als architektonisches Wahrzeichen: die runde Form mit kuppelförmiger Lichtkuppel, Glassegmenten und Fassadenverkleidung macht das Museum leicht erkennbar." },
+                { text: "In der historischen Ausstellung sind die berühmten Bartmannkrüge vertreten – bärtige Krüge, die zum Symbol der Keramikproduktion in Frechen wurden." },
+                { text: "Die Sammlung von Cremer ist eine der größten privaten Sammlungen zeitgenössischer Keramik in Deutschland." }
+            ]
+        },
+        construction_period: "Das Museumsgebäude wurde 1970–1971 errichtet. Das Museum wurde 2002 eröffnet.",
+        founder: "Dr. Gottfried Cremer und die Stadt Frechen",
+        meta: {
+            title: "KERAMION – moderne und historische Keramik in Frechen",
+            description: "KERAMION: Dauerausstellung und Sonderausstellungen von Keramik, Geschichte der Produktion und zeitgenössische künstlerische Perspektiven.",
+            ogTitle: "KERAMION – Zentrum für moderne und historische Keramik, Frechen",
+            ogDescription: "Erfahren Sie mehr über die Sammlung von Cremer, die historische Keramik aus Frechen und die Ausstellungen im KERAMION.",
+            ogImage: "Germany/nrw/koln/Rhein-Erft-Kreis/frechen/keramion/frechen_keramion.jpg"
+        }
+    },
+    {
+        id: "burg_bachem_frechen",
+        name: "Burg Bachem – historische Wasserburg in Frechen",
+        type: ['castle'],
+        path: "burg-bachem",
+        regionsPath: "nrw",
+        districtPath: "koln",
+        cityPath: "frechen",
+        fotoCard: "Germany/nrw/koln/Rhein-Erft-Kreis/frechen/burg-bachem/Burg-Bachem_3.jpg",
+        location: "Frechen, Deutschland",
+        address: [{ bold: "Adresse:", text: " Schloßstraße 8, 50226 Frechen, Deutschland" }],
+        officialSite: [
+            { bold: "Offizielle Website Burg Bachem", link: "https://www.burg-bachem.de/" }
+        ],
+        unesco_status: {
+            included: false
+        },
+        tickets_and_entry: {
+            title: "Eintritt und Zugang",
+            items: [
+                { bold: "Zugang:", text: "Das Schloss ist eine private Residenz, das Schlossgelände und der See sind für Spaziergänge zugänglich." },
+                { bold: "Besuchszeiten:", text: "Das Betreten des Sees und der Alleen ist tagsüber möglich." }
+            ]
+        },
+        short_description: "Burg Bachem in Frechen – der größte und am besten erhaltene Schlosskomplex der Stadt, umgeben von einem Graben mit steinerner Brücke. Das Schloss ist ein bedeutendes Denkmal der Geschichte und Architektur des Stadtteils Bachem.",
+        full_description: {
+            title: "Beschreibung und Geschichte",
+            items: [
+                { text: "Burg Bachem wird erstmals im 13. Jahrhundert in Dokumenten erwähnt. Im Laufe der Jahrhunderte wurde der Komplex mehrfach umgebaut und modernisiert, besonders bis zum 18. Jahrhundert, um den Anforderungen der Zeit gerecht zu werden." },
+                { text: "Im 19. und 20. Jahrhundert verursachte der Braunkohletagebau in unmittelbarer Nähe des Schlosses erhebliche strukturelle Schäden, und verschiedene zeitweilige Nutzungen mit zerstörerischen Eingriffen verschlechterten den Zustand des Gebäudes weiter." },
+                { text: "Mitte der 1970er Jahre führte der derzeitige Eigentümer eine umfassende Restaurierung des Schlosskomplexes durch, brachte ihn wieder in Nutzung und stoppte den weiteren Verfall." },
+                { text: "Fast vierzig Jahre später wurde das Hauptgebäude erneut unter Berücksichtigung moderner Anforderungen an Komfort und Sicherheit rekonstruiert. Heute verfügt das Schloss über sieben Wohnräume: sechs werden vorübergehend komplett möbliert vermietet, und einer dient dem Eigentümer als Wohnraum." },
+                { text: "Der Bachemer Bach, der in der Nähe fließt, versorgte das Schloss früher mit Wasser für die Schutzgräben. Der See und die Alleen werden von den Einheimischen aktiv für Spaziergänge, Hundespaziergänge und Erholung in der Natur genutzt und verbinden historischen Wert mit moderner Funktionalität." }
+            ]
+        },
+        interestingFacts: {
+            title: "Interessante Fakten",
+            items: [
+                { text: "Das Schloss ist ein historisches Denkmal und ein wichtiger Teil der Stadtarchitektur von Frechen." },
+                { text: "Der See und die Alleen rund um das Schloss sind ein beliebter Ort für Spaziergänge bei den Einheimischen." },
+                { text: "Der Bachemer Bach versorgte das Schloss früher mit Wasser für die Schutzgräben." }
+            ]
+        },
+        construction_period: "Vermutlich Anfang des 13. Jahrhunderts, mit späteren Umbauten und umfassender Restaurierung in den 1970er Jahren",
+        founder: "Ursprünglich im Besitz lokaler Adelsfamilien",
+        meta: {
+            title: "Burg Bachem in Frechen – historische Wasserburg und See",
+            description: "Burg Bachem: Geschichte, Wassergräben, Spazierbereiche und Erholung am kleinen See in Frechen.",
+            ogTitle: "Burg Bachem – Frechen, Deutschland",
+            ogDescription: "Entdecken Sie die historische Wasserburg Burg Bachem und den See mit Spazierwegen in Frechen.",
+            ogImage: "Germany/nrw/koln/Rhein-Erft-Kreis/frechen/burg-bachem/Burg-Bachem_3.jpg"
+        }
+    },
+    {
+    id: "johann_schmitz_platz_frechen",
+    name: "Johann-Schmitz-Platz («Rathausplatz»)",
+    type: ['historical_building'],
+    path: "johann_schmitz_platz_frechen",
+    regionsPath: "nrw",
+    districtPath: "koln",
+    cityPath: "frechen",
+    fotoCard: "Germany/nrw/koln/Rhein-Erft-Kreis/frechen/johann_schmitz_platz_frechen/001.jpg",
+    location: "Frechen, Deutschland",
+    address: [{ bold: "Adresse:", text: " Johann-Schmitz-Platz, 50226 Frechen, Deutschland" }],
+    unesco_status: {
+        included: false
+    },
+    subObjects: ["altes_rathaus_frechen", "rathausbrunnen_frechen", "klüttenbrunnen_frechen"],
+    tickets_and_entry: {
+        title: "Zugang",
+        items: [
+            { bold: "Zugang:", text: "Der Platz ist für alle Besucher frei zugänglich: Hier kann man spazieren gehen, auf Bänken sitzen, das Stadtleben beobachten, Märkte besuchen oder den Platz als Ausgangspunkt zu anderen Sehenswürdigkeiten nutzen – zum Beispiel zum Alten Rathaus und zu anderen historischen Gebäuden des Zentrums. Seine zentrale Lage macht ihn zu einem logischen Startpunkt für einen Rundgang durch Frechen." },
+        ]
+    },
+    short_description: "Der Johann-Schmitz-Platz ist der zentrale Stadtplatz von Frechen, ein Ort für Märkte, städtische Veranstaltungen und Ausgangspunkt, um das Alte Rathaus zu entdecken.",
+    full_description: {
+        title: "Beschreibung und Geschichte",
+        items: [
+            { bold: "Beschreibung", text: "Der Johann-Schmitz-Platz (auch Rathausplatz genannt) ist der zentrale Stadtplatz von Frechen. Hier konzentrieren sich wichtige Verwaltungsgebäude und öffentliche Räume. Der Platz ist eines der Haupttreffpunkte für Einheimische und Besucher: Er ist offen, fußgängerfreundlich und wird häufig für Spaziergänge, Treffen und städtische Veranstaltungen genutzt." },
+            { text: "Der Rathausplatz ist von einer Reihe historischer Gebäude umgeben, darunter Wohnhäuser mit Elementen der Frechener Keramik und dekorativer Architektur des frühen 20. Jahrhunderts, die Teil einer geschützten Zone des historischen Zentrums sind. Diese Gebäude und die Fassaden rund um den Platz schaffen eine einzigartige städtische Atmosphäre, in der Vergangenheit und Gegenwart harmonisch verschmelzen." },
+            { bold: "Geschichte", text: "Der Platz ist nach Johann Schmitz benannt, dem Bürgermeister von Frechen; sein Name trägt das moderne Zentrum. Rund um den Platz konzentrieren sich historische Gebäude, Wohnhäuser und Verwaltungsbauten, die zusammen eine geschützte Zone bilden. Dieses Gebiet wurde als Denkmal anerkannt, um die historische Stadtstruktur und das architektonische Erscheinungsbild zu erhalten; seine Architektur spiegelt sowohl die moderne als auch die historische Gestalt Frechens wider." },
+            { text: "In den 1970er Jahren wurde der Platz im Rahmen der Stadtzentrumsgestaltung modernisiert, wobei ein Teil der Bäume erhalten und Elemente der Skulptur und städtischen Umgebung hinzugefügt wurden." },
+            { bold: "Funktionen und Leben auf dem Platz", text: "Der Johann-Schmitz-Platz ist nicht nur eine architektonische Dominante, sondern auch ein lebendiger Raum für öffentliche Aktivitäten. Hier finden regelmäßig statt:" },
+            { text: "&nbsp;&nbsp;&nbsp; • Wochenmarkt (Wochenmarkt) mit lokalen Produkten, Bauernprodukten und saisonalen Angeboten, wo man die regionale Kultur kennenlernen und frische Produkte probieren kann." },
+            { text: "&nbsp;&nbsp;&nbsp; • städtische Veranstaltungen wie Festivals, kulturelle Aktionen, Kindertage und Thementage (z. B. während der Kulturwoche oder Weltkindertag)." },
+            { text: "&nbsp;&nbsp;&nbsp; • spezielle saisonale Ereignisse — von Weihnachts- und Vorweihnachtsmärkten bis hin zu Stoff- und Handwerksmärkten, bei denen lokale Handwerker und Händler beteiligt sind." },
+            { text: "Der Platz dient auch als wichtiger Treffpunkt für Einheimische und Besucher, besonders freitags während des Marktes, wenn der Platz belebt ist und sich in einen Ort für Kommunikation, Handel und Erfahrungsaustausch verwandelt." },
+        ]
+    },
+    construction_period: "Ende 19. – Anfang 20. Jahrhundert",
+    meta: {
+        title: "Johann-Schmitz-Platz in Frechen – zentraler Platz und Rathaus",
+        description: "Der Johann-Schmitz-Platz ist der zentrale Stadtplatz von Frechen mit Märkten, Veranstaltungen und historischem Rathaus.",
+        ogTitle: "Johann-Schmitz-Platz – Frechen, Deutschland",
+        ogDescription: "Entdecken Sie den zentralen Platz von Frechen – Johann-Schmitz-Platz mit historischem Rathaus, Märkten und städtischer Atmosphäre.",
+        ogImage: "Germany/nrw/koln/Rhein-Erft-Kreis/frechen/johann_schmitz_platz_frechen/001.jpg"
+    }
+},
+{
+    id: "altes_rathaus_frechen",
+    name: "Altes Rathaus Frechen",
+    type: ['historical_building'],
+    path: "altes_rathaus_frechen",
+    slug: "altes_rathaus_frechen",
+    hiddenFromList: true,
+    showMore: true,
+    regionsPath: "nrw",
+    districtPath: "koln",
+    cityPath: "frechen",
+    countryPath: "germany",
+    fotoCard: "Germany/nrw/koln/Rhein-Erft-Kreis/frechen/johann_schmitz_platz_frechen/001.jpg",
+    location: "Frechen, Deutschland",
+    address: [{ bold: "Adresse:", text: " Johann-Schmitz-Platz, 50226 Frechen, Deutschland" }],
+    unesco_status: {
+        included: false
+    },
+    tickets_and_entry: {
+        title: "Zugang",
+        items: [
+            { bold: "Eingang und Zugang:", text: "Der Zugang zum Gebäude ist nicht immer für freie Besichtigungen geöffnet – ein Zugang ist während spezieller Veranstaltungen oder Führungen möglich. Der Rathausturm ist für Touristen geöffnet, von dem aus man einen Blick auf das historische Zentrum von Frechen hat." },
+        ]
+    },
+    short_description: "Das Alte Rathaus Frechen – ein historisches Verwaltungsgebäude am Johann-Schmitz-Platz, architektonisches Zentrum des Stadtzentrums und ein beliebter touristischer Ort.",
+    full_description: {
+        title: "Beschreibung und Geschichte",
+        items: [
+            { text: "Das Alte Rathaus – ein historisches Gebäude des Rathauses auf dem Johann-Schmitz-Platz im Zentrum von Frechen. Das Gebäude fällt durch seine Fassade im neobarocken Stil mit dekorativer Steinverkleidung, Giebel und kleinem Turm auf. Heute ist für Touristen hauptsächlich der Rathausturm zugänglich, der als Symbol des historischen Stadtzentrums dient." },
+            { text: "Das Rathaus wurde in den Jahren 1907-1909 nach einem Entwurf des Architekten Carl Moritz (Carl Moritz) erbaut. Davor wurden die kommunalen Aufgaben in alten Gebäuden bei der Kirche St. Audomar wahrgenommen, was unpraktisch geworden war. Das neue Gebäude ermöglichte die Zentralisierung der Verwaltung und die Schaffung eines repräsentativen Verwaltungsgebäudes." },
+            { text: "Das Gebäude spiegelt nicht nur die architektonischen Tendenzen des frühen 20. Jahrhunderts wider – es symbolisiert auch das selbstbewusste Wachstum und die Bedeutung von Frechen in der Vorkriegszeit. Der Initiator des Projekts war der hoch angesehene Architekt Carl Moritz, der das Rathaus so entwarf, dass es den wachsenden administrativen Anforderungen gewachsen ist und ein repräsentatives Zentrum der Stadtverwaltung darstellt." },
+            { text: "Während des Baus gab es Debatten über die Kosten und Zweckmäßigkeit des Projekts, aber das Bevölkerungswachstum und die Bedeutung der Stadt für die Region überzeugten die Behörden, das Bauwerk zu vollenden." },
+            { text: "Bei der inneren Planung umfasste das Rathaus nicht nur offizielle Räume und einen Sitzungssaal, sondern auch Dienstzimmer, und im Keller befanden sich zeitweilige Arrestzellen." },
+            { text: "Ende der 1970er Jahre wurde ein neuer Verwaltungstrakt an das historische Gebäude angebaut, der durch einen Übergang mit dem alten Gebäude verbunden ist, wodurch das Rathaus weiterhin den städtischen Anforderungen dient." },
+            { text: "Neben dem Eingang befinden sich Gedenktafeln, die wichtigen historischen Ereignissen und Persönlichkeiten von Frechen gewidmet sind, was die kulturelle Bedeutung des Gebäudes unterstreicht." },
+        ]
+    },
+    construction_period: "1907-1909 Jahre",
+    architects: "Carl Moritz (Carl Moritz, 1863-1944) – Architekt, der das Rathaus entwarf. Er ist bekannt für seine Projekte öffentlicher Gebäude in der Rheinregion, die Funktionalität und dekorativen Stil vereinten.",
+    interestingFacts: {
+        title: "Interessante Fakten",
+        items: [
+            { text: "Der Rathausturm ist ein wiedererkennbares Symbol von Frechen und ein beliebter Fotopunkt." },
+            { text: "Das Gebäude steht unter Denkmalschutz." },
+        ]
+    },
+    meta: {
+        title: "Altes Rathaus Frechen – historisches Gebäude und Turm auf dem Johann-Schmitz-Platz",
+        description: "Das Alte Rathaus Frechen – ein historisches Verwaltungsgebäude mit Turm auf dem Johann-Schmitz-Platz im Zentrum der Stadt, Nordrhein-Westfalen.",
+        ogTitle: "Altes Rathaus Frechen – Frechen, Deutschland",
+        ogDescription: "Entdecken Sie das Alte Rathaus Frechen mit seinem charakteristischen Turm und der neobarocken Architektur auf dem Johann-Schmitz-Platz.",
+        ogImage: "Germany/nrw/koln/Rhein-Erft-Kreis/frechen/altes_rathaus_frechen/001.jpg"
+    }
+},
+{
+    "id": "rathausbrunnen_frechen",
+    "name": "Brunnen vor dem Rathaus",
+    "type": ["historical_building"],
+    "path": "rathausbrunnen_frechen",
+    "slug": "rathausbrunnen_frechen",
+    "hiddenFromList": true,
+    "regionsPath": "nrw",
+    "districtPath": "koln",
+    "cityPath": "frechen",
+    "countryPath": "germany",
+    "fotoCard": "Germany/nrw/koln/Rhein-Erft-Kreis/frechen/johann_schmitz_platz_frechen/005.jpg",
+    "short_description": "Auf dem Platz vor dem alten Rathaus befindet sich ein dekorativer Bezirksbrunnen, der 1981 vom Keramikkünstler Wim Mühlendyck geschaffen wurde. Er ist mit keramischen Platten verkleidet, die Reliefdarstellungen von Szenen zeigen, die die Entwicklung des Handwerks und der Keramikindustrie in Frechen widerspiegeln – von traditionellen Handwerkern bis zur Fabrikproduktion, während die verschiedenen Maskarone (Gesichter) charakteristische Wasserstrahlen des Brunnens bilden."
+},
+{
+    "id": "klüttenbrunnen_frechen",
+    "name": "Klüttenbrunnen",
+    "type": ["historical_building"],
+    "path": "klüttenbrunnen_frechen",
+    "slug": "klüttenbrunnen_frechen",
+    "hiddenFromList": true,
+    "regionsPath": "nrw",
+    "districtPath": "koln",
+    "cityPath": "frechen",
+    "countryPath": "germany",
+    "fotoCard": "Germany/nrw/koln/Rhein-Erft-Kreis/frechen/johann_schmitz_platz_frechen/004.jpg",
+    "short_description": "In der Fußgängerzone wurde 1986 der skulpturale Brunnen Klüttenbrunnen vom deutschen Bildhauer Olaf Höhnen errichtet. Er befindet sich in der Nähe des Johann-Schmitz-Platz und spiegelt die industrielle und handwerkliche Geschichte Frechens wider, insbesondere den Abbau und die Verarbeitung von lokalem Ton. Der Brunnen ist als künstlerische Komposition mit Steinelementen und Wasserstrahlen gestaltet, fügt sich harmonisch in das Stadtbild ein und dient als visueller Orientierungspunkt für Besucher."
+},
+
+//Rhein-Sieg-Kreis
+
+// Кёнигсвинтер
+
     {
         id: "drachenfels",
         name: "Berg Drachenfels",
@@ -906,7 +1048,17 @@ const datas = [
                 link: "https://www.drachenfelsbahn.de/"
             }
         ],
-        short_description: "Der Drachenfels ist ein legendärer Berg im Naturpark Siebengebirge oberhalb des Rheins. Vom Gipfel eröffnen sich weite Panoramablicke über das Rheintal, und der Berg selbst ist eng mit der Sage vom Drachen und dem Helden Siegfried verbunden. Auf dem Berg befinden sich mehrere Sehenswürdigkeiten: die historische Burgruine Drachenfels, Aussichtspunkte, die Drachenfelsbahn sowie Wanderwege, die sich ideal für einen Tagesausflug eignen.",
+        short_description: "Der Drachenfels ist ein legendärer Berg im Naturpark Siebengebirge oberhalb des Rheins. Vom Gipfel eröffnen sich weite Panoramablicke über das Rheintal, und der Berg selbst ist eng mit der Sage vom Drachen und dem Helden Siegfried verbunden. ",
+        short_description_subObjects: {
+            text: "Auf dem Drachenfels befinden sich folgende Sehenswürdigkeiten: ",
+            items: [
+                "Drachenfelsbahn",
+                "Schloss Drachenburg",
+                "Ruinen der Burg Drachenfels",
+                "Nibelungenhalle",
+                "Reptilien-Zoo"
+            ]
+        },
         full_description: {
             title: "Beschreibung und Geschichte",
             items: [
@@ -954,6 +1106,7 @@ const datas = [
         type: ["technical_structure"],
         slug: "drachenfelsbahn",
         hiddenFromList: true,
+        showMore: true,
         path: "drachenfelsbahn",
         regionsPath: "nrw",
         districtPath: "koln",
@@ -1009,6 +1162,7 @@ const datas = [
         type: ["palace_or_castle"],
         slug: "schloss_drachenburg",
         hiddenFromList: true,
+        showMore: true,
         path: "schloss_drachenburg",
         regionsPath: "nrw",
         districtPath: "koln",
@@ -1071,6 +1225,7 @@ const datas = [
         type: ["palace_or_castle"],
         slug: "drachenfels_ruins",
         hiddenFromList: true,
+        showMore: true,
         path: "drachenfels_ruins",
         regionsPath: "nrw",
         districtPath: "koln",
@@ -1115,6 +1270,7 @@ const datas = [
         type: ["museum"],
         slug: "nibelungenhalle",
         hiddenFromList: true,
+        showMore: true,
         path: "nibelungenhalle",
         regionsPath: "nrw",
         districtPath: "koln",
@@ -1154,9 +1310,10 @@ const datas = [
     {
         id: "reptile_zoo",
         name: "Reptilienzoo Drachenfels",
-        type: ["zoo"],
+        type: ["nature"],
         slug: "reptile_zoo",
         hiddenFromList: true,
+        showMore: true,
         path: "reptile_zoo",
         regionsPath: "nrw",
         districtPath: "koln",
@@ -1202,7 +1359,54 @@ const datas = [
             ogDescription: "Besuchen Sie den Reptile Zoo auf dem Drachenfels – ein Zoo mit seltenen Reptilien, interaktiven Fütterungs‑Vorführungen und Bildungsprogrammen für Kinder und Erwachsene.",
             ogImage: "Germany/nrw/koln/Rhein-Sieg-Kreis/konigswinter/drachenfels/005.jpg"
         }
+    },
+
+    // arnsberg округ
+
+    // Märkischer Kreis
+
+    // Lüdenscheid    
+
+    {
+        id: "altstadt_luedenscheid",
+        name: "Altstadt von Lüdenscheid",
+        type: ["historical_building"],
+        path: "altstadt_luedenscheid",
+        regionsPath: "nrw",
+        districtPath: "arnsberg",
+        cityPath: "luedenscheid",
+        countryPath: "germany",
+        fotoCard: "Germany/nrw/arnsberg/Märkischer-Kreis/luedenscheid/001.JPG",
+        short_description: "Die Altstadt von Lüdenscheid ist das historische Herz der Stadt mit engen Straßen und einem ringförmigen Straßennetz um die Erlöserkirche. Hier sind Gebäude aus dem 18.–19. Jahrhundert, Reste der Stadtmauer und das historische Museum erhalten geblieben, und die gemütlichen Gassen verbinden Vergangenheit mit dem modernen Stadtleben.",
+        full_description: {
+            title: "Beschreibung und Geschichte",
+            items: [
+                { bold: "Die Altstadt von Lüdenscheid", text: " – das historische Herz der Stadt, das die mittelalterliche Planung mit ringförmig angeordneten Straßen um die Erlöserkirche bewahrt hat. Die Hauptachse der Altstadt verläuft entlang der Wilhelmstraße, wo bis ins 19. Jahrhundert das städtische Leben, Handel und Handwerk konzentriert waren." },
+                { text: "Obwohl die alten Straßen an die mittelalterliche Herkunft der Stadt erinnern, wurden die meisten erhaltenen Gebäude nach 1723, nach einem großen Brand, errichtet. Strenge Bauvorschriften jener Zeit verliehen den Hausfassaden den charakteristischen einheitlichen Stil des 18. Jahrhunderts. Später, in der Zeit von Wilhelm II., entstanden Neubauten mit Elementen des Historismus und der Ekletik, die das Gesamtbild der Altstadt leicht veränderten." },
+                { text: "Im 20. Jahrhundert sah sich die Altstadt ernsthaften Problemen gegenüber: In den 1960er–1970er Jahren begannen viele Gebäude aufgrund von Rissen und Vernachlässigung zu zerfallen. Restaurierungen wurden durchgeführt, um einen Teil des architektonischen Erbes zu erhalten, doch leider gingen einige historische Denkmäler, wie das alte Pastorat in der Loherstraße, verloren." },
+                { text: "Besondere Aufmerksamkeit verdienen die Reste der mittelalterlichen Stadtmauer. Der letzte erhaltene Teil war bis in die 1980er Jahre nicht wiederherstellbar, und an seiner Stelle wurde eine neue Stützmauer errichtet, die mit alten Bruchsteinen verkleidet und als Turm mit halbrundem Auslad gestaltet wurde. Heute erinnert sie an die ehemalige Stadtbefestigung." },
+                { text: "Die Altstadt von Lüdenscheid lebt auch heute: Enge, gemütliche Gassen verbinden historische Atmosphäre mit modernen Cafés, Geschäften und kulturellen Veranstaltungen. Hier finden Führungen und mittelalterliche Festivals statt, und die Architektur des 18.–19. Jahrhunderts ermöglicht es, die Entwicklung der Stadt über die Jahrhunderte nachzuvollziehen." },
+                { text: "Heute ist die Altstadt nicht nur ein historisches Objekt, sondern auch ein lebendiger Ort, an dem man spazieren gehen, die Atmosphäre vergangener Jahrhunderte spüren und gleichzeitig das moderne Stadtleben genießen kann." },
+            ]
+        },
+        interestingFacts: {
+            title: "Interessante Fakten",
+            items: [
+                { text: "• Die ersten Siedlungen an der Stelle der heutigen Stadt entstanden bereits im 9. Jahrhundert, und Lüdenscheid erhielt 1268 das Stadtrecht." },
+                { text: "• Im Mittelalter war Lüdenscheid Mitglied der Hanse – einem großen Handelsnetz nord-europäischer Städte." },
+                { text: "• Trotz zahlreicher Brände hat sich die mittelalterliche Straßenführung bis heute erhalten." },
+                { text: "• Zu den Denkmälern gehören die Erlöserkirche mit ihrem Turm aus dem 11. Jahrhundert, der Selve-Brunnen und die Mausoleen der Familie Selve sowie das historische Stadtmuseum mit Exponaten aus der Industrieepoche." },
+            ]
+        },
+        meta: {
+            title: "Altstadt von Lüdenscheid – historisches Herz der Stadt mit engen Straßen und Denkmälern",
+            description: "Die Altstadt von Lüdenscheid ist der mittelalterliche Teil der Stadt mit historischen Gebäuden des 18.–19. Jahrhunderts, der Erlöserkirche, Resten der Stadtmauer und dem historischen Museum. Schlendern Sie durch die gemütlichen Gassen und spüren Sie die Atmosphäre vergangener Jahrhunderte.",
+            ogTitle: "Altstadt von Lüdenscheid",
+            ogDescription: "Besuchen Sie die Altstadt von Lüdenscheid – den historischen Teil der Stadt mit barocken Häusern, der Erlöserkirche, dem historischen Museum und den Resten der mittelalterlichen Stadtmauer.",
+            ogImage: "Germany/nrw/arnsberg/Märkischer-Kreis/luedenscheid/001.JPG"
+        }
     }
+
 ];
 
 export default datas;
