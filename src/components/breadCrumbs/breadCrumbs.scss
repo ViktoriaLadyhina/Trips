@@ -95,27 +95,32 @@
 
 @media (max-width: 768px) {
   .breadCrumbs {
-    font-size: 14px; // чуть меньше текста
+    font-size: 14px; 
   }
 }
 
 @media (max-width: 500px) {
   .breadCrumbs {
-    font-size: 12px; // минимальный размер текста
-    padding-top: 20px; // меньше отступ сверху
+    padding-top: 60px; 
+
+    a,
+    span {
+      font-size: 12px;
+    }
 
     ul, li {
-      display: block; // перенос на новую строку
-      width: 100%; // растягиваем под блок
-      margin-bottom: 5px; // отступ между крошками
+      display: block; 
+      margin-bottom: 5px; 
+      
     }
 
     li {
-      padding: 4px 10px; // уменьшаем внутренние отступы
+      padding: 4px 10px; 
+      box-sizing: border-box;
     }
 
     .arrow {
-      font-size: 14px; // уменьшаем стрелки
+      font-size: 14px; 
       margin: 0 1px;
     }
   }

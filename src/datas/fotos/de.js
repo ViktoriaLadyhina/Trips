@@ -181,13 +181,13 @@ export const Fotos = {
     // arnsberg
     luedenscheid: {
       gallery: [
-        { path: "Germany/nrw/arnsberg/Märkischer-Kreis/luedenscheid/001.JPG", title: { ru: "Люденшайд - 2006", ua: "Люденшайд - 2006", de: "Luedenscheid - 2006" } },
-        { path: "Germany/nrw/arnsberg/Märkischer-Kreis/luedenscheid/002.JPG", title: { ru: "Люденшайд - 2006", ua: "Люденшайд - 2006", de: "Luedenscheid - 2006" } },
+        { path: "Germany/nrw/arnsberg/Märkischer-Kreis/luedenscheid/001.JPG", title: { ru: "Люденшайд - 2006", ua: "Люденшайд - 2006", de: "Lüdenscheid - 2006" } },
+        { path: "Germany/nrw/arnsberg/Märkischer-Kreis/luedenscheid/002.JPG", title: { ru: "Люденшайд - 2006", ua: "Люденшайд - 2006", de: "Lüdenscheid - 2006" } },
       ],
       altstadt_luedenscheid: [
-        { path: "Germany/nrw/arnsberg/Märkischer-Kreis/luedenscheid/001.JPG", title: { ru: "Люденшайд - 2006", ua: "Люденшайд - 2006", de: "Luedenscheid - 2006" } },
-        { path: "Germany/nrw/arnsberg/Märkischer-Kreis/luedenscheid/002.JPG", title: { ru: "Люденшайд - 2006", ua: "Люденшайд - 2006", de: "Luedenscheid - 2006" } },
-        { path: "Germany/nrw/arnsberg/Märkischer-Kreis/luedenscheid/003.jpg", title: { ru: "Люденшайд - 2022", ua: "Люденшайд - 2022", de: "Luedenscheid - 2022" } },
+        { path: "Germany/nrw/arnsberg/Märkischer-Kreis/luedenscheid/001.JPG", title: { ru: "Люденшайд - 2006", ua: "Люденшайд - 2006", de: "Lüdenscheid - 2006" } },
+        { path: "Germany/nrw/arnsberg/Märkischer-Kreis/luedenscheid/002.JPG", title: { ru: "Люденшайд - 2006", ua: "Люденшайд - 2006", de: "Lüdenscheid - 2006" } },
+        { path: "Germany/nrw/arnsberg/Märkischer-Kreis/luedenscheid/003.jpg", title: { ru: "Люденшайд - 2022", ua: "Люденшайд - 2022", de: "Lüdenscheid - 2022" } },
       ]
     }
 
