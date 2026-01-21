@@ -730,7 +730,7 @@ const datas = [
             ogImage: "Germany/nrw/koln/Rhein-Erft-Kreis/bruhl/max_ernst_museum/Max-Ernst-Museum.jpg"
         }
     },
-        {
+    {
         id: "phantasialand",
         name: "Phantasialand",
         type: ['amusement_park'],
@@ -901,136 +901,144 @@ const datas = [
         }
     },
     {
-    id: "johann_schmitz_platz_frechen",
-    name: "Johann-Schmitz-Platz («Rathausplatz»)",
-    type: ['historical_building'],
-    path: "johann_schmitz_platz_frechen",
-    regionsPath: "nrw",
-    districtPath: "koln",
-    cityPath: "frechen",
-    fotoCard: "Germany/nrw/koln/Rhein-Erft-Kreis/frechen/johann_schmitz_platz_frechen/001.jpg",
-    location: "Frechen, Deutschland",
-    address: [{ bold: "Adresse:", text: " Johann-Schmitz-Platz, 50226 Frechen, Deutschland" }],
-    unesco_status: {
-        included: false
+        id: "johann_schmitz_platz_frechen",
+        name: "Johann-Schmitz-Platz («Rathausplatz»)",
+        type: ['historical_building'],
+        path: "johann_schmitz_platz_frechen",
+        regionsPath: "nrw",
+        districtPath: "koln",
+        cityPath: "frechen",
+        fotoCard: "Germany/nrw/koln/Rhein-Erft-Kreis/frechen/johann_schmitz_platz_frechen/001.jpg",
+        location: "Frechen, Deutschland",
+        address: [{ bold: "Adresse:", text: " Johann-Schmitz-Platz, 50226 Frechen, Deutschland" }],
+        unesco_status: {
+            included: false
+        },
+        subObjects: ["altes_rathaus_frechen", "rathausbrunnen_frechen", "klüttenbrunnen_frechen"],
+        short_description_subObjects: {
+            text: "Auf dem Johann-Schmitz-Platz befinden sich folgende Sehenswürdigkeiten:",
+            items: [
+                "Altes Rathaus Frechen",
+                "Brunnen vor dem Rathaus",
+                "Klüttenbrunnen",
+            ]
+        },
+        tickets_and_entry: {
+            title: "Zugang",
+            items: [
+                { bold: "Zugang:", text: "Der Platz ist für alle Besucher frei zugänglich: Hier kann man spazieren gehen, auf Bänken sitzen, das Stadtleben beobachten, Märkte besuchen oder den Platz als Ausgangspunkt zu anderen Sehenswürdigkeiten nutzen – zum Beispiel zum Alten Rathaus und zu anderen historischen Gebäuden des Zentrums. Seine zentrale Lage macht ihn zu einem logischen Startpunkt für einen Rundgang durch Frechen." },
+            ]
+        },
+        short_description: "Der Johann-Schmitz-Platz ist der zentrale Stadtplatz von Frechen, ein Ort für Märkte, städtische Veranstaltungen und Ausgangspunkt, um das Alte Rathaus zu entdecken.",
+        full_description: {
+            title: "Beschreibung und Geschichte",
+            items: [
+                { bold: "Beschreibung", text: "Der Johann-Schmitz-Platz (auch Rathausplatz genannt) ist der zentrale Stadtplatz von Frechen. Hier konzentrieren sich wichtige Verwaltungsgebäude und öffentliche Räume. Der Platz ist eines der Haupttreffpunkte für Einheimische und Besucher: Er ist offen, fußgängerfreundlich und wird häufig für Spaziergänge, Treffen und städtische Veranstaltungen genutzt." },
+                { text: "Der Rathausplatz ist von einer Reihe historischer Gebäude umgeben, darunter Wohnhäuser mit Elementen der Frechener Keramik und dekorativer Architektur des frühen 20. Jahrhunderts, die Teil einer geschützten Zone des historischen Zentrums sind. Diese Gebäude und die Fassaden rund um den Platz schaffen eine einzigartige städtische Atmosphäre, in der Vergangenheit und Gegenwart harmonisch verschmelzen." },
+                { bold: "Geschichte", text: "Der Platz ist nach Johann Schmitz benannt, dem Bürgermeister von Frechen; sein Name trägt das moderne Zentrum. Rund um den Platz konzentrieren sich historische Gebäude, Wohnhäuser und Verwaltungsbauten, die zusammen eine geschützte Zone bilden. Dieses Gebiet wurde als Denkmal anerkannt, um die historische Stadtstruktur und das architektonische Erscheinungsbild zu erhalten; seine Architektur spiegelt sowohl die moderne als auch die historische Gestalt Frechens wider." },
+                { text: "In den 1970er Jahren wurde der Platz im Rahmen der Stadtzentrumsgestaltung modernisiert, wobei ein Teil der Bäume erhalten und Elemente der Skulptur und städtischen Umgebung hinzugefügt wurden." },
+                { bold: "Funktionen und Leben auf dem Platz", text: "Der Johann-Schmitz-Platz ist nicht nur eine architektonische Dominante, sondern auch ein lebendiger Raum für öffentliche Aktivitäten. Hier finden regelmäßig statt:" },
+                { text: "&nbsp;&nbsp;&nbsp; • Wochenmarkt (Wochenmarkt) mit lokalen Produkten, Bauernprodukten und saisonalen Angeboten, wo man die regionale Kultur kennenlernen und frische Produkte probieren kann." },
+                { text: "&nbsp;&nbsp;&nbsp; • städtische Veranstaltungen wie Festivals, kulturelle Aktionen, Kindertage und Thementage (z. B. während der Kulturwoche oder Weltkindertag)." },
+                { text: "&nbsp;&nbsp;&nbsp; • spezielle saisonale Ereignisse — von Weihnachts- und Vorweihnachtsmärkten bis hin zu Stoff- und Handwerksmärkten, bei denen lokale Handwerker und Händler beteiligt sind." },
+                { text: "Der Platz dient auch als wichtiger Treffpunkt für Einheimische und Besucher, besonders freitags während des Marktes, wenn der Platz belebt ist und sich in einen Ort für Kommunikation, Handel und Erfahrungsaustausch verwandelt." },
+            ]
+        },
+        construction_period: "Ende 19. – Anfang 20. Jahrhundert",
+        meta: {
+            title: "Johann-Schmitz-Platz in Frechen – zentraler Platz und Rathaus",
+            description: "Der Johann-Schmitz-Platz ist der zentrale Stadtplatz von Frechen mit Märkten, Veranstaltungen und historischem Rathaus.",
+            ogTitle: "Johann-Schmitz-Platz – Frechen, Deutschland",
+            ogDescription: "Entdecken Sie den zentralen Platz von Frechen – Johann-Schmitz-Platz mit historischem Rathaus, Märkten und städtischer Atmosphäre.",
+            ogImage: "Germany/nrw/koln/Rhein-Erft-Kreis/frechen/johann_schmitz_platz_frechen/001.jpg"
+        }
     },
-    subObjects: ["altes_rathaus_frechen", "rathausbrunnen_frechen", "klüttenbrunnen_frechen"],
-    tickets_and_entry: {
-        title: "Zugang",
-        items: [
-            { bold: "Zugang:", text: "Der Platz ist für alle Besucher frei zugänglich: Hier kann man spazieren gehen, auf Bänken sitzen, das Stadtleben beobachten, Märkte besuchen oder den Platz als Ausgangspunkt zu anderen Sehenswürdigkeiten nutzen – zum Beispiel zum Alten Rathaus und zu anderen historischen Gebäuden des Zentrums. Seine zentrale Lage macht ihn zu einem logischen Startpunkt für einen Rundgang durch Frechen." },
-        ]
+    {
+        id: "altes_rathaus_frechen",
+        name: "Altes Rathaus Frechen",
+        type: ['historical_building'],
+        path: "altes_rathaus_frechen",
+        slug: "altes_rathaus_frechen",
+        hiddenFromList: true,
+        showMore: true,
+        regionsPath: "nrw",
+        districtPath: "koln",
+        cityPath: "frechen",
+        countryPath: "germany",
+        fotoCard: "Germany/nrw/koln/Rhein-Erft-Kreis/frechen/johann_schmitz_platz_frechen/001.jpg",
+        location: "Frechen, Deutschland",
+        address: [{ bold: "Adresse:", text: " Johann-Schmitz-Platz, 50226 Frechen, Deutschland" }],
+        unesco_status: {
+            included: false
+        },
+        tickets_and_entry: {
+            title: "Zugang",
+            items: [
+                { bold: "Eingang und Zugang:", text: "Der Zugang zum Gebäude ist nicht immer für freie Besichtigungen geöffnet – ein Zugang ist während spezieller Veranstaltungen oder Führungen möglich. Der Rathausturm ist für Touristen geöffnet, von dem aus man einen Blick auf das historische Zentrum von Frechen hat." },
+            ]
+        },
+        short_description: "Das Alte Rathaus Frechen – ein historisches Verwaltungsgebäude am Johann-Schmitz-Platz, architektonisches Zentrum des Stadtzentrums und ein beliebter touristischer Ort.",
+        full_description: {
+            title: "Beschreibung und Geschichte",
+            items: [
+                { text: "Das Alte Rathaus – ein historisches Gebäude des Rathauses auf dem Johann-Schmitz-Platz im Zentrum von Frechen. Das Gebäude fällt durch seine Fassade im neobarocken Stil mit dekorativer Steinverkleidung, Giebel und kleinem Turm auf. Heute ist für Touristen hauptsächlich der Rathausturm zugänglich, der als Symbol des historischen Stadtzentrums dient." },
+                { text: "Das Rathaus wurde in den Jahren 1907-1909 nach einem Entwurf des Architekten Carl Moritz (Carl Moritz) erbaut. Davor wurden die kommunalen Aufgaben in alten Gebäuden bei der Kirche St. Audomar wahrgenommen, was unpraktisch geworden war. Das neue Gebäude ermöglichte die Zentralisierung der Verwaltung und die Schaffung eines repräsentativen Verwaltungsgebäudes." },
+                { text: "Das Gebäude spiegelt nicht nur die architektonischen Tendenzen des frühen 20. Jahrhunderts wider – es symbolisiert auch das selbstbewusste Wachstum und die Bedeutung von Frechen in der Vorkriegszeit. Der Initiator des Projekts war der hoch angesehene Architekt Carl Moritz, der das Rathaus so entwarf, dass es den wachsenden administrativen Anforderungen gewachsen ist und ein repräsentatives Zentrum der Stadtverwaltung darstellt." },
+                { text: "Während des Baus gab es Debatten über die Kosten und Zweckmäßigkeit des Projekts, aber das Bevölkerungswachstum und die Bedeutung der Stadt für die Region überzeugten die Behörden, das Bauwerk zu vollenden." },
+                { text: "Bei der inneren Planung umfasste das Rathaus nicht nur offizielle Räume und einen Sitzungssaal, sondern auch Dienstzimmer, und im Keller befanden sich zeitweilige Arrestzellen." },
+                { text: "Ende der 1970er Jahre wurde ein neuer Verwaltungstrakt an das historische Gebäude angebaut, der durch einen Übergang mit dem alten Gebäude verbunden ist, wodurch das Rathaus weiterhin den städtischen Anforderungen dient." },
+                { text: "Neben dem Eingang befinden sich Gedenktafeln, die wichtigen historischen Ereignissen und Persönlichkeiten von Frechen gewidmet sind, was die kulturelle Bedeutung des Gebäudes unterstreicht." },
+            ]
+        },
+        construction_period: "1907-1909 Jahre",
+        architects: "Carl Moritz (Carl Moritz, 1863-1944) – Architekt, der das Rathaus entwarf. Er ist bekannt für seine Projekte öffentlicher Gebäude in der Rheinregion, die Funktionalität und dekorativen Stil vereinten.",
+        interestingFacts: {
+            title: "Interessante Fakten",
+            items: [
+                { text: "Der Rathausturm ist ein wiedererkennbares Symbol von Frechen und ein beliebter Fotopunkt." },
+                { text: "Das Gebäude steht unter Denkmalschutz." },
+            ]
+        },
+        meta: {
+            title: "Altes Rathaus Frechen – historisches Gebäude und Turm auf dem Johann-Schmitz-Platz",
+            description: "Das Alte Rathaus Frechen – ein historisches Verwaltungsgebäude mit Turm auf dem Johann-Schmitz-Platz im Zentrum der Stadt, Nordrhein-Westfalen.",
+            ogTitle: "Altes Rathaus Frechen – Frechen, Deutschland",
+            ogDescription: "Entdecken Sie das Alte Rathaus Frechen mit seinem charakteristischen Turm und der neobarocken Architektur auf dem Johann-Schmitz-Platz.",
+            ogImage: "Germany/nrw/koln/Rhein-Erft-Kreis/frechen/altes_rathaus_frechen/001.jpg"
+        }
     },
-    short_description: "Der Johann-Schmitz-Platz ist der zentrale Stadtplatz von Frechen, ein Ort für Märkte, städtische Veranstaltungen und Ausgangspunkt, um das Alte Rathaus zu entdecken.",
-    full_description: {
-        title: "Beschreibung und Geschichte",
-        items: [
-            { bold: "Beschreibung", text: "Der Johann-Schmitz-Platz (auch Rathausplatz genannt) ist der zentrale Stadtplatz von Frechen. Hier konzentrieren sich wichtige Verwaltungsgebäude und öffentliche Räume. Der Platz ist eines der Haupttreffpunkte für Einheimische und Besucher: Er ist offen, fußgängerfreundlich und wird häufig für Spaziergänge, Treffen und städtische Veranstaltungen genutzt." },
-            { text: "Der Rathausplatz ist von einer Reihe historischer Gebäude umgeben, darunter Wohnhäuser mit Elementen der Frechener Keramik und dekorativer Architektur des frühen 20. Jahrhunderts, die Teil einer geschützten Zone des historischen Zentrums sind. Diese Gebäude und die Fassaden rund um den Platz schaffen eine einzigartige städtische Atmosphäre, in der Vergangenheit und Gegenwart harmonisch verschmelzen." },
-            { bold: "Geschichte", text: "Der Platz ist nach Johann Schmitz benannt, dem Bürgermeister von Frechen; sein Name trägt das moderne Zentrum. Rund um den Platz konzentrieren sich historische Gebäude, Wohnhäuser und Verwaltungsbauten, die zusammen eine geschützte Zone bilden. Dieses Gebiet wurde als Denkmal anerkannt, um die historische Stadtstruktur und das architektonische Erscheinungsbild zu erhalten; seine Architektur spiegelt sowohl die moderne als auch die historische Gestalt Frechens wider." },
-            { text: "In den 1970er Jahren wurde der Platz im Rahmen der Stadtzentrumsgestaltung modernisiert, wobei ein Teil der Bäume erhalten und Elemente der Skulptur und städtischen Umgebung hinzugefügt wurden." },
-            { bold: "Funktionen und Leben auf dem Platz", text: "Der Johann-Schmitz-Platz ist nicht nur eine architektonische Dominante, sondern auch ein lebendiger Raum für öffentliche Aktivitäten. Hier finden regelmäßig statt:" },
-            { text: "&nbsp;&nbsp;&nbsp; • Wochenmarkt (Wochenmarkt) mit lokalen Produkten, Bauernprodukten und saisonalen Angeboten, wo man die regionale Kultur kennenlernen und frische Produkte probieren kann." },
-            { text: "&nbsp;&nbsp;&nbsp; • städtische Veranstaltungen wie Festivals, kulturelle Aktionen, Kindertage und Thementage (z. B. während der Kulturwoche oder Weltkindertag)." },
-            { text: "&nbsp;&nbsp;&nbsp; • spezielle saisonale Ereignisse — von Weihnachts- und Vorweihnachtsmärkten bis hin zu Stoff- und Handwerksmärkten, bei denen lokale Handwerker und Händler beteiligt sind." },
-            { text: "Der Platz dient auch als wichtiger Treffpunkt für Einheimische und Besucher, besonders freitags während des Marktes, wenn der Platz belebt ist und sich in einen Ort für Kommunikation, Handel und Erfahrungsaustausch verwandelt." },
-        ]
+    {
+        "id": "rathausbrunnen_frechen",
+        "name": "Brunnen vor dem Rathaus",
+        "type": ["historical_building"],
+        "path": "rathausbrunnen_frechen",
+        "slug": "rathausbrunnen_frechen",
+        "hiddenFromList": true,
+        "regionsPath": "nrw",
+        "districtPath": "koln",
+        "cityPath": "frechen",
+        "countryPath": "germany",
+        "fotoCard": "Germany/nrw/koln/Rhein-Erft-Kreis/frechen/johann_schmitz_platz_frechen/005.jpg",
+        "short_description": "Auf dem Platz vor dem alten Rathaus befindet sich ein dekorativer Bezirksbrunnen, der 1981 vom Keramikkünstler Wim Mühlendyck geschaffen wurde. Er ist mit keramischen Platten verkleidet, die Reliefdarstellungen von Szenen zeigen, die die Entwicklung des Handwerks und der Keramikindustrie in Frechen widerspiegeln – von traditionellen Handwerkern bis zur Fabrikproduktion, während die verschiedenen Maskarone (Gesichter) charakteristische Wasserstrahlen des Brunnens bilden."
     },
-    construction_period: "Ende 19. – Anfang 20. Jahrhundert",
-    meta: {
-        title: "Johann-Schmitz-Platz in Frechen – zentraler Platz und Rathaus",
-        description: "Der Johann-Schmitz-Platz ist der zentrale Stadtplatz von Frechen mit Märkten, Veranstaltungen und historischem Rathaus.",
-        ogTitle: "Johann-Schmitz-Platz – Frechen, Deutschland",
-        ogDescription: "Entdecken Sie den zentralen Platz von Frechen – Johann-Schmitz-Platz mit historischem Rathaus, Märkten und städtischer Atmosphäre.",
-        ogImage: "Germany/nrw/koln/Rhein-Erft-Kreis/frechen/johann_schmitz_platz_frechen/001.jpg"
-    }
-},
-{
-    id: "altes_rathaus_frechen",
-    name: "Altes Rathaus Frechen",
-    type: ['historical_building'],
-    path: "altes_rathaus_frechen",
-    slug: "altes_rathaus_frechen",
-    hiddenFromList: true,
-    showMore: true,
-    regionsPath: "nrw",
-    districtPath: "koln",
-    cityPath: "frechen",
-    countryPath: "germany",
-    fotoCard: "Germany/nrw/koln/Rhein-Erft-Kreis/frechen/johann_schmitz_platz_frechen/001.jpg",
-    location: "Frechen, Deutschland",
-    address: [{ bold: "Adresse:", text: " Johann-Schmitz-Platz, 50226 Frechen, Deutschland" }],
-    unesco_status: {
-        included: false
+    {
+        "id": "klüttenbrunnen_frechen",
+        "name": "Klüttenbrunnen",
+        "type": ["historical_building"],
+        "path": "klüttenbrunnen_frechen",
+        "slug": "klüttenbrunnen_frechen",
+        "hiddenFromList": true,
+        "regionsPath": "nrw",
+        "districtPath": "koln",
+        "cityPath": "frechen",
+        "countryPath": "germany",
+        "fotoCard": "Germany/nrw/koln/Rhein-Erft-Kreis/frechen/johann_schmitz_platz_frechen/004.jpg",
+        "short_description": "In der Fußgängerzone wurde 1986 der skulpturale Brunnen Klüttenbrunnen vom deutschen Bildhauer Olaf Höhnen errichtet. Er befindet sich in der Nähe des Johann-Schmitz-Platz und spiegelt die industrielle und handwerkliche Geschichte Frechens wider, insbesondere den Abbau und die Verarbeitung von lokalem Ton. Der Brunnen ist als künstlerische Komposition mit Steinelementen und Wasserstrahlen gestaltet, fügt sich harmonisch in das Stadtbild ein und dient als visueller Orientierungspunkt für Besucher."
     },
-    tickets_and_entry: {
-        title: "Zugang",
-        items: [
-            { bold: "Eingang und Zugang:", text: "Der Zugang zum Gebäude ist nicht immer für freie Besichtigungen geöffnet – ein Zugang ist während spezieller Veranstaltungen oder Führungen möglich. Der Rathausturm ist für Touristen geöffnet, von dem aus man einen Blick auf das historische Zentrum von Frechen hat." },
-        ]
-    },
-    short_description: "Das Alte Rathaus Frechen – ein historisches Verwaltungsgebäude am Johann-Schmitz-Platz, architektonisches Zentrum des Stadtzentrums und ein beliebter touristischer Ort.",
-    full_description: {
-        title: "Beschreibung und Geschichte",
-        items: [
-            { text: "Das Alte Rathaus – ein historisches Gebäude des Rathauses auf dem Johann-Schmitz-Platz im Zentrum von Frechen. Das Gebäude fällt durch seine Fassade im neobarocken Stil mit dekorativer Steinverkleidung, Giebel und kleinem Turm auf. Heute ist für Touristen hauptsächlich der Rathausturm zugänglich, der als Symbol des historischen Stadtzentrums dient." },
-            { text: "Das Rathaus wurde in den Jahren 1907-1909 nach einem Entwurf des Architekten Carl Moritz (Carl Moritz) erbaut. Davor wurden die kommunalen Aufgaben in alten Gebäuden bei der Kirche St. Audomar wahrgenommen, was unpraktisch geworden war. Das neue Gebäude ermöglichte die Zentralisierung der Verwaltung und die Schaffung eines repräsentativen Verwaltungsgebäudes." },
-            { text: "Das Gebäude spiegelt nicht nur die architektonischen Tendenzen des frühen 20. Jahrhunderts wider – es symbolisiert auch das selbstbewusste Wachstum und die Bedeutung von Frechen in der Vorkriegszeit. Der Initiator des Projekts war der hoch angesehene Architekt Carl Moritz, der das Rathaus so entwarf, dass es den wachsenden administrativen Anforderungen gewachsen ist und ein repräsentatives Zentrum der Stadtverwaltung darstellt." },
-            { text: "Während des Baus gab es Debatten über die Kosten und Zweckmäßigkeit des Projekts, aber das Bevölkerungswachstum und die Bedeutung der Stadt für die Region überzeugten die Behörden, das Bauwerk zu vollenden." },
-            { text: "Bei der inneren Planung umfasste das Rathaus nicht nur offizielle Räume und einen Sitzungssaal, sondern auch Dienstzimmer, und im Keller befanden sich zeitweilige Arrestzellen." },
-            { text: "Ende der 1970er Jahre wurde ein neuer Verwaltungstrakt an das historische Gebäude angebaut, der durch einen Übergang mit dem alten Gebäude verbunden ist, wodurch das Rathaus weiterhin den städtischen Anforderungen dient." },
-            { text: "Neben dem Eingang befinden sich Gedenktafeln, die wichtigen historischen Ereignissen und Persönlichkeiten von Frechen gewidmet sind, was die kulturelle Bedeutung des Gebäudes unterstreicht." },
-        ]
-    },
-    construction_period: "1907-1909 Jahre",
-    architects: "Carl Moritz (Carl Moritz, 1863-1944) – Architekt, der das Rathaus entwarf. Er ist bekannt für seine Projekte öffentlicher Gebäude in der Rheinregion, die Funktionalität und dekorativen Stil vereinten.",
-    interestingFacts: {
-        title: "Interessante Fakten",
-        items: [
-            { text: "Der Rathausturm ist ein wiedererkennbares Symbol von Frechen und ein beliebter Fotopunkt." },
-            { text: "Das Gebäude steht unter Denkmalschutz." },
-        ]
-    },
-    meta: {
-        title: "Altes Rathaus Frechen – historisches Gebäude und Turm auf dem Johann-Schmitz-Platz",
-        description: "Das Alte Rathaus Frechen – ein historisches Verwaltungsgebäude mit Turm auf dem Johann-Schmitz-Platz im Zentrum der Stadt, Nordrhein-Westfalen.",
-        ogTitle: "Altes Rathaus Frechen – Frechen, Deutschland",
-        ogDescription: "Entdecken Sie das Alte Rathaus Frechen mit seinem charakteristischen Turm und der neobarocken Architektur auf dem Johann-Schmitz-Platz.",
-        ogImage: "Germany/nrw/koln/Rhein-Erft-Kreis/frechen/altes_rathaus_frechen/001.jpg"
-    }
-},
-{
-    "id": "rathausbrunnen_frechen",
-    "name": "Brunnen vor dem Rathaus",
-    "type": ["historical_building"],
-    "path": "rathausbrunnen_frechen",
-    "slug": "rathausbrunnen_frechen",
-    "hiddenFromList": true,
-    "regionsPath": "nrw",
-    "districtPath": "koln",
-    "cityPath": "frechen",
-    "countryPath": "germany",
-    "fotoCard": "Germany/nrw/koln/Rhein-Erft-Kreis/frechen/johann_schmitz_platz_frechen/005.jpg",
-    "short_description": "Auf dem Platz vor dem alten Rathaus befindet sich ein dekorativer Bezirksbrunnen, der 1981 vom Keramikkünstler Wim Mühlendyck geschaffen wurde. Er ist mit keramischen Platten verkleidet, die Reliefdarstellungen von Szenen zeigen, die die Entwicklung des Handwerks und der Keramikindustrie in Frechen widerspiegeln – von traditionellen Handwerkern bis zur Fabrikproduktion, während die verschiedenen Maskarone (Gesichter) charakteristische Wasserstrahlen des Brunnens bilden."
-},
-{
-    "id": "klüttenbrunnen_frechen",
-    "name": "Klüttenbrunnen",
-    "type": ["historical_building"],
-    "path": "klüttenbrunnen_frechen",
-    "slug": "klüttenbrunnen_frechen",
-    "hiddenFromList": true,
-    "regionsPath": "nrw",
-    "districtPath": "koln",
-    "cityPath": "frechen",
-    "countryPath": "germany",
-    "fotoCard": "Germany/nrw/koln/Rhein-Erft-Kreis/frechen/johann_schmitz_platz_frechen/004.jpg",
-    "short_description": "In der Fußgängerzone wurde 1986 der skulpturale Brunnen Klüttenbrunnen vom deutschen Bildhauer Olaf Höhnen errichtet. Er befindet sich in der Nähe des Johann-Schmitz-Platz und spiegelt die industrielle und handwerkliche Geschichte Frechens wider, insbesondere den Abbau und die Verarbeitung von lokalem Ton. Der Brunnen ist als künstlerische Komposition mit Steinelementen und Wasserstrahlen gestaltet, fügt sich harmonisch in das Stadtbild ein und dient als visueller Orientierungspunkt für Besucher."
-},
 
-//Rhein-Sieg-Kreis
+    //Rhein-Sieg-Kreis
 
-// Кёнигсвинтер
+    // Кёнигсвинтер
 
     {
         id: "drachenfels",
@@ -1377,7 +1385,14 @@ const datas = [
         cityPath: "luedenscheid",
         countryPath: "germany",
         fotoCard: "Germany/nrw/arnsberg/Märkischer-Kreis/luedenscheid/001.JPG",
+        subObjects: ["erloeserkirche_luedenscheid",],
         short_description: "Die Altstadt von Lüdenscheid ist das historische Herz der Stadt mit engen Straßen und einem ringförmigen Straßennetz um die Erlöserkirche. Hier sind Gebäude aus dem 18.–19. Jahrhundert, Reste der Stadtmauer und das historische Museum erhalten geblieben, und die gemütlichen Gassen verbinden Vergangenheit mit dem modernen Stadtleben.",
+        short_description_subObjects: {
+            text: "In der Altstadt von Lüdenscheid befinden sich folgende Sehenswürdigkeiten: ",
+            items: [
+                "Erlöserkirche",
+            ]
+        },
         full_description: {
             title: "Beschreibung und Geschichte",
             items: [
@@ -1404,6 +1419,64 @@ const datas = [
             ogTitle: "Altstadt von Lüdenscheid",
             ogDescription: "Besuchen Sie die Altstadt von Lüdenscheid – den historischen Teil der Stadt mit barocken Häusern, der Erlöserkirche, dem historischen Museum und den Resten der mittelalterlichen Stadtmauer.",
             ogImage: "Germany/nrw/arnsberg/Märkischer-Kreis/luedenscheid/001.JPG"
+        }
+    },
+    {
+        id: "erloeserkirche_luedenscheid",
+        name: "Erlöserkirche",
+        type: ["cathedral"],
+        path: "erloeserkirche_luedenscheid",
+        regionsPath: "nrw",
+        districtPath: "arnsberg",
+        cityPath: "luedenscheid",
+        countryPath: "germany",
+        slug: "erloeserkirche_luedenscheid",
+        hiddenFromList: true,
+        showMore: true,
+        fotoCard: "Germany/nrw/arnsberg/Märkischer-Kreis/luedenscheid/erloeserkirche_luedenscheid/001.JPG",
+        short_description: "Die Erlöserkirche – die älteste Kirche Lüdenscheids mit klassizistischer Fassade, Emporen und lutherischem Altar. Im Zentrum der Altstadt, architektonisches Wahrzeichen und kulturelles Zentrum mit Konzerten und Ausstellungen.",
+        full_description: {
+            title: "Beschreibung und Geschichte",
+            items: [
+                { bold: "Erlöserkirche", text: " – die älteste Kirche Lüdenscheids und ein bedeutendes architektonisches Wahrzeichen der Altstadt. Heute ist das Gebäude im klassizistischen Stil mit Rundbogenfenstern und einem Fassadenfries aus Pilastern ausgeführt. Im Inneren sind Emporen und ein lutherischer Altar erhalten, die eine einladende Atmosphäre für Gemeindemitglieder und Besucher schaffen." },
+                { text: "Die erste dokumentierte Erwähnung der Kirche datiert aus dem Jahr 1067, was sie zum ältesten kultischen Bauwerk der Stadt macht." },
+                { text: "An der Stelle der mittelalterlichen Kirche entstand im 12. Jahrhundert eine spätromanische zweijochige Basilika mit gotischem Chor; dieser Bau wurde bis auf den Turm im Jahr 1822 wegen Baufälligkeit weitgehend abgerissen, aber Reste des romanischen Turmschafts haben sich erhalten und gelten als älteste erhaltene Bauten der Stadt." },
+                { text: "Im 12.–17. Jahrhundert hatte die Kirche eine romanische und gotische Form, einschließlich Turm und Fassade." },
+                { text: "Im Jahr 1785 erhielt der Turm ein barockes Dach, was ihn von verschiedenen Punkten der Altstadt aus sichtbar machte." },
+                { text: "In den Jahren 1822–1826 wurde die Kirche im klassizistischen Stil umgebaut: Es wurde ein Schiff mit Rundbogenfenstern und einer Fassadenfront aus Pilastern errichtet. An der Ausgestaltung war ein Schüler des berühmten Architekten Karl Friedrich Schinkel beteiligt, was den historischen Wert der Kirche für die Region unterstreicht." },
+                { text: "Im Jahr 2026 befindet sich der Kirchturm in Restaurationsarbeiten und ist von Gerüsten umgeben, da im Jahr 2022 Dachschindeln abgetragen wurden und die Arbeiten noch andauern – aus Sicherheitsgründen stehen Absperrungen um den Turm." },
+            ]
+        },
+        tickets_and_entry: {
+            title: "Praktische Informationen",
+            items: [
+                { bold: "Adresse:", text: "Kirchplatz 11, 58511 Lüdenscheid, Deutschland" },
+                { bold: "Zugang. ", text: "Die Kirche befindet sich im Zentrum der Altstadt und ist bequem zu Fuß von den Hauptplätzen und Haltestellen des öffentlichen Verkehrs erreichbar. Sie ist während der Öffnungszeiten der Gemeinde für Besucher offen." },
+            ]
+        },
+        interestingFacts: {
+            title: "Interessante Fakten",
+            items: [
+                { text: "• Der Kirchturm ist von verschiedenen Ecken der Altstadt aus sichtbar und war lange Zeit ihre dominante Landmarke." },
+                { text: "• Die Kirche hat mehrere architektonische Stile überdauert: vom Romanischen bis zum Klassizismus." },
+                { text: "• Bis 1902 hieß sie Medarduskirche und gehörte zum Kurfürstentum Brandenburg und Preußen." },
+                { text: "• Heute bleibt die Kirche ein Ort kultureller Veranstaltungen, einschließlich Orgelkonzerte und Ausstellungen, was sie zu einem lebendigen Zentrum der Altstadt macht." },
+            ]
+        },
+        relics: {
+            title: "Reliquien",
+            items: [
+                { bold: "• Lutherischer Altar", text: " – Hauptelement der Innenausstattung" },
+                { bold: "• Emporen", text: " – historische Galerien für Gemeindemitglieder" },
+                { text: "• Überreste romanischer und gotischer Elemente im Turm und Fundament." },
+            ]
+        },
+        meta: {
+            title: "Erlöserkirche in Lüdenscheid – ältester Kirchenbau der Stadt mit reicher Geschichte",
+            description: "Die Erlöserkirche (Erlöserkirche) ist die älteste Kirche Lüdenscheids, errichtet im 12. Jahrhundert mit klassizistischer Fassade, Emporen und lutherischem Altar. Besuchen Sie dieses historische Gotteshaus im Zentrum der Altstadt und spüren Sie die Atmosphäre vergangener Jahrhunderte.",
+            ogTitle: "Erlöserkirche, Lüdenscheid",
+            ogDescription: "Entdecken Sie die Erlöserkirche in Lüdenscheid – ein historisches Gotteshaus mit Turm, Emporen und lutherischem Altar, ein architektonisches Wahrzeichen der Altstadt.",
+            ogImage: "Germany/nrw/arnsberg/Märkischer-Kreis/luedenscheid/erloeserkirche_luedenscheid/001.JPG"
         }
     }
 

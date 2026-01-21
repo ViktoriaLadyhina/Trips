@@ -4,7 +4,7 @@ import './AttractionsFilters.scss';
 const attractionTypes = [
   { value: 'all', ru: 'Все типы', ua: 'Усі типи', de: 'Alle Typen' },
   { value: 'museum', ru: 'Музеи', ua: 'Музеї', de: 'Museen' },
-  { value: 'cathedral', ru: 'Соборы', ua: 'Собори', de: 'Kathedralen' },
+  { value: 'cathedral', ru: 'Соборы и церкви', ua: 'Собори та церкви', de: 'Kathedralen und Kirchen' },
   { value: 'palace_or_castle', ru: 'Дворцы и замки', ua: 'Палаци та замки', de: 'Schlösser und Burgen' },
   { value: 'amusement_park', ru: 'Парки развлечений', ua: 'Парки розваг', de: 'Freizeitparks' },
   { value: 'historical_building', ru: 'Исторические здания', ua: 'Ісоричні будівлі', de: 'Historische Gebäude' },

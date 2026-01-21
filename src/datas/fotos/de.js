@@ -188,6 +188,10 @@ export const Fotos = {
         { path: "Germany/nrw/arnsberg/Märkischer-Kreis/luedenscheid/001.JPG", title: { ru: "Люденшайд - 2006", ua: "Люденшайд - 2006", de: "Lüdenscheid - 2006" } },
         { path: "Germany/nrw/arnsberg/Märkischer-Kreis/luedenscheid/002.JPG", title: { ru: "Люденшайд - 2006", ua: "Люденшайд - 2006", de: "Lüdenscheid - 2006" } },
         { path: "Germany/nrw/arnsberg/Märkischer-Kreis/luedenscheid/003.jpg", title: { ru: "Люденшайд - 2022", ua: "Люденшайд - 2022", de: "Lüdenscheid - 2022" } },
+        { path: "Germany/nrw/arnsberg/Märkischer-Kreis/luedenscheid/erloeserkirche_luedenscheid/001.JPG", title: { ru: "Церковь Спасителя в Люденшайде, 2006", ua: "Церква Спасителя в Люденшайді, 2006", de: "Die Erlöserkirche in Lüdenscheid, 2006" } },
+      ],
+      erloeserkirche_luedenscheid: [
+        { path: "Germany/nrw/arnsberg/Märkischer-Kreis/luedenscheid/erloeserkirche_luedenscheid/001.JPG", title: { ru: "Церковь Спасителя в Люденшайде, 2006", ua: "Церква Спасителя в Люденшайді, 2006", de: "Die Erlöserkirche in Lüdenscheid, 2006" } },
       ]
     }
 
