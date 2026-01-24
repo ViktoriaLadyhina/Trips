@@ -51,6 +51,8 @@ const Map = () => {
       // Lüdenscheid
       altstadt_luedenscheid: { ru: 'Старый город Люденшайда', de: 'Altstadt Lüdenscheid', ua: 'Старе місто Люденшайда' },
       erloeserkirche_luedenscheid: { ru: 'Церковь Спасителя', de: 'Erlöserkirche', ua: 'Церква Спасителя' },
+      rathausplatz_luedenscheid: { ru: 'Центральная площадь Люденшайда', de: 'Rathausplatz von Lüdenscheid', ua: 'Центральна площа Люденшайда' },
+      brunnen_altstadt_luedenscheid: { ru: 'Фонтан в старом городе', de: 'Brunnen in der Altstadt', ua: 'Фонтан у старому місті' },
 
       //Köln okrug
       // Rhein-Erft-Kreis
@@ -114,8 +116,10 @@ const Map = () => {
                               <li><Link to="/germany/nrw/arnsberg/luedenscheid/attractions/altstadt_luedenscheid">{t.attractions.altstadt_luedenscheid[lang]}</Link>
                                 <ul>
                                   <li><Link to="/germany/nrw/arnsberg/luedenscheid/attractions/erloeserkirche_luedenscheid">{t.attractions.erloeserkirche_luedenscheid[lang]}</Link></li>
+                                  <li><Link to="/germany/nrw/arnsberg/luedenscheid/attractions/brunnen_altstadt_luedenscheid">{t.attractions.brunnen_altstadt_luedenscheid[lang]}</Link></li>
                                 </ul>
                               </li>
+                              <li><Link to="/germany/nrw/arnsberg/luedenscheid/attractions/rathausplatz_luedenscheid">{t.attractions.rathausplatz_luedenscheid[lang]}</Link></li>
                             </ul>
                           </li>
                         </ul>

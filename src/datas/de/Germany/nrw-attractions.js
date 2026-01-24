@@ -1010,7 +1010,7 @@ const datas = [
     {
         "id": "rathausbrunnen_frechen",
         "name": "Brunnen vor dem Rathaus",
-        "type": ["historical_building"],
+        "type": ["monument_or_fountain"],
         "path": "rathausbrunnen_frechen",
         "slug": "rathausbrunnen_frechen",
         "hiddenFromList": true,
@@ -1024,7 +1024,7 @@ const datas = [
     {
         "id": "klüttenbrunnen_frechen",
         "name": "Klüttenbrunnen",
-        "type": ["historical_building"],
+        "type": ["monument_or_fountain"],
         "path": "klüttenbrunnen_frechen",
         "slug": "klüttenbrunnen_frechen",
         "hiddenFromList": true,
@@ -1385,12 +1385,13 @@ const datas = [
         cityPath: "luedenscheid",
         countryPath: "germany",
         fotoCard: "Germany/nrw/arnsberg/Märkischer-Kreis/luedenscheid/001.JPG",
-        subObjects: ["erloeserkirche_luedenscheid",],
+        subObjects: ["erloeserkirche_luedenscheid", "brunnen_altstadt_luedenscheid"],
         short_description: "Die Altstadt von Lüdenscheid ist das historische Herz der Stadt mit engen Straßen und einem ringförmigen Straßennetz um die Erlöserkirche. Hier sind Gebäude aus dem 18.–19. Jahrhundert, Reste der Stadtmauer und das historische Museum erhalten geblieben, und die gemütlichen Gassen verbinden Vergangenheit mit dem modernen Stadtleben.",
         short_description_subObjects: {
             text: "In der Altstadt von Lüdenscheid befinden sich folgende Sehenswürdigkeiten: ",
             items: [
                 "Erlöserkirche",
+                "Brunnen in der Altstadt"
             ]
         },
         full_description: {
@@ -1430,7 +1431,6 @@ const datas = [
         districtPath: "arnsberg",
         cityPath: "luedenscheid",
         countryPath: "germany",
-        slug: "erloeserkirche_luedenscheid",
         hiddenFromList: true,
         showMore: true,
         fotoCard: "Germany/nrw/arnsberg/Märkischer-Kreis/luedenscheid/erloeserkirche_luedenscheid/001.JPG",
@@ -1478,7 +1478,76 @@ const datas = [
             ogDescription: "Entdecken Sie die Erlöserkirche in Lüdenscheid – ein historisches Gotteshaus mit Turm, Emporen und lutherischem Altar, ein architektonisches Wahrzeichen der Altstadt.",
             ogImage: "Germany/nrw/arnsberg/Märkischer-Kreis/luedenscheid/erloeserkirche_luedenscheid/001.JPG"
         }
+    },
+{
+    id: "brunnen_altstadt_luedenscheid",
+    name: "Brunnen in der Altstadt",
+    type: "monument_or_fountain",
+    path: "brunnen_altstadt_luedenscheid",
+    countryPath: "germany",
+    regionsPath: "nrw",
+    districtPath: "arnsberg",
+    cityPath: "luedenscheid",
+    fotoCard: "Germany/nrw/arnsberg/Märkischer-Kreis/luedenscheid/altstadt_luedenscheid/001.JPG",
+    hiddenFromList: true,
+    short_description: "Der Brunnen befindet sich in der historischen Altstadt auf dem Graf-Engelbert-Platz – einem Platz, der dem Stadtgründer gewidmet ist. Er wurde im Jahr 1982 eröffnet und der Stadt von ihren Bürgern im Zuge der Altstadtsanierung gestiftet und wurde zu einem der Symbole der erneuerten historischen Zone. Bei der feierlichen Eröffnung betonten die örtlichen Behörden den Wunsch, den Brunnen zum „Herz des bürgerlichen Lebens“ der Altstadt zu machen. Seitdem zählt er zu den bedeutenden öffentlichen und kulturellen Objekten Lüdenscheids.",
+    short_description2: "Der Brunnen wurde vom Künstler und Metallgestalter K. T. Neumann (Kurt Toni Neumann) geschaffen, der in Lüdenscheid lebte und arbeitete und einen bedeutenden Beitrag zur plastischen Gestaltung der Stadt leistete. In der Gestaltung wird die Figur eines Herolds verwendet, die symbolisch den historischen Moment der Verleihung der Stadtrechte durch Graf Engelbert I., den Gründer Lüdenscheids, darstellt. Dieses Motiv spiegelt sich in den Reliefs und im gesamten thematischen Konzept der Anlage wider.",
+    full_description: {
+        title: "Beschreibung und Geschichte",
+        items: []
+    },
+    construction_period: "1982",
+    architects: "Der Brunnen wurde vom Künstler und Metallgestalter K. T. Neumann (Kurt Toni Neumann) geschaffen",
+    meta: {
+        title: "Brunnen am Graf-Engelbert-Platz – historischer Brunnen in der Altstadt von Lüdenscheid",
+        description: "Der Brunnen am Graf-Engelbert-Platz entstand 1982 im Zuge der Altstadtsanierung. Er gilt als eines der Wahrzeichen des historischen Zentrums von Lüdenscheid und ist mit der Figur eines Herolds geschmückt, die auf die Stadtgründung durch Graf Engelbert I. verweist.",
+        ogTitle: "Brunnen am Graf-Engelbert-Platz, Lüdenscheid",
+        ogDescription: "Besuchen Sie den Brunnen am Graf-Engelbert-Platz in Lüdenscheid – ein historisches Objekt der Altstadt, das mit der Stadtgründung und der Erneuerung des historischen Zentrums verbunden ist.",
+        ogImage: "Germany/nrw/arnsberg/Märkischer-Kreis/luedenscheid/altstadt_luedenscheid/001.JPG"
     }
+},
+    {
+	id: "rathausplatz_luedenscheid",
+	name: "Rathausplatz von Lüdenscheid",
+	type: "historical_building",
+	path: "rathausplatz_luedenscheid",
+	countryPath: "germany",
+	regionsPath: "nrw",
+	districtPath: "arnsberg",
+	cityPath: "luedenscheid",
+	fotoCard: "Germany/nrw/arnsberg/Märkischer-Kreis/luedenscheid/rathausplatz_lüdenscheid/001.JPG",
+	location: "Lüdenscheid, Deutschland",
+	short_description: "Der zentrale Platz von Lüdenscheid (Rathausplatz) ist das Herz der Stadt und ein wichtiger öffentlicher Raum in der Nähe des Rathauses und der Fußgängerzone. Hier finden Märkte, städtische Veranstaltungen und Treffen der Bewohner statt, und der Platz dient als Ausgangspunkt, um das historische Stadtzentrum zu erkunden.",
+	full_description: {
+		title: "Beschreibung und Geschichte",
+		items: [
+			{ bold: "Der zentrale Platz (Rathausplatz)", text: "– der zentrale Stadtplatz von Lüdenscheid, gelegen im historischen und administrativen Zentrum der Stadt. Funktional ähnelt dieser Raum einem klassischen Markt- oder Stadtplatz: Hier finden Fußgänger-Spaziergänge, Treffen, Veranstaltungen und ein Markt statt. Der Platz grenzt an die Gebäude der Stadtverwaltung (Neues Rathaus) und das Alte Rathaus sowie an das Hauptgeschäftsviertel, Cafés und bedeutende Gebäude des Zentrums." },
+			{ text: "Der zentrale Bereich des Platzes dient als logisches „Herz“ der Fußgängerzone und ist verbunden mit der Fußgängerstraße und Plätzen wie dem Sternplatz. Das architektonische Ensemble umfasst historische Gebäude sowie Bauten aus der Mitte des 20. Jahrhunderts, was eine Atmosphäre von Alt und relativ modernem Stadtzentrum schafft." },
+			{ bold: "Geschichte.", text: "Das Gebiet rund um den Rathausplatz bildet den historischen Kern von Lüdenscheid: die Altstadt mit engen Straßen und städtischen Bauten stammt aus dem Mittelalter, hat jedoch im Laufe der Jahrhunderte Brände und Rekonstruktionen erlebt. Die intensive Entwicklung der städtischen Infrastruktur begann im 19.–20. Jahrhundert, als sich rund um das historische Zentrum Handels- und Verwaltungsviertel bildeten. Dies führte zur Entstehung eines Ensembles aus Stadtverwaltung, Fußgängerzonen und moderner Planung des zentralen Raumes." },
+            { text: "Die moderne Gestaltung des Platzes hängt eng mit dem neuen Rathausgebäude zusammen, dessen Bau 1956 begann, und die Verwaltung 1964 dorthin zog. Dies ist das neue Stadtzentrum, um das heute der Raum des zentralen Stadtplatzes von Lüdenscheid gebildet wird." },
+			{ bold: "Funktionen und Leben des Platzes.", text: "Auf dem Platz findet täglich und regelmäßig der Wochenmarkt mittwochs und samstags statt, bei dem frische Produkte, Handwerkswaren und saisonale Produkte angeboten werden." },
+			{ text: "Jährlich findet im Zentrum das Stadtfest mit Zelten, Musik und Jahrmarkt statt, das den Platz in einen lebendigen Raum für Feierlichkeiten und Begegnungen verwandelt." },
+			{ text: "In der Wintersaison werden auf dem Rathausplatz und dem benachbarten Sternplatz oft Weihnachtsmarkt und Eisbahn organisiert." },
+			{ text: "Der Platz dient als wichtiger Treffpunkt für Bewohner und Besucher der Stadt, er liegt in der Fußgängerzone mit Geschäften, Cafés, Dienstleistungs- und Kultureinrichtungen, was ihn zum logischen Zentrum städtischer Aktivität und Ausgangspunkt für die Erkundung von Lüdenscheid macht." },
+		]
+	},
+	interesting_facts: {
+		title: "Interessante Fakten",
+		items: [
+			{ bold: "Der zentrale Platz sah nicht immer so aus wie heute:", text: "nach dem Zweiten Weltkrieg wurde das Stadtzentrum stark umgebaut, und die heutige Planung ist das Ergebnis der Nachkriegsrekonstruktion." },
+			{ bold: "Der zentrale Platz ist nicht nur ein Platz, sondern ein Knotenpunkt von Fußgängerwegen,", text: "der die Altstadt, das Geschäftsviertel und das Verwaltungszentrum verbindet." },
+			{ bold: "Während städtischer Feste wird der Platz vollständig gesperrt,", text: "und hier finden die größten Veranstaltungen in Lüdenscheid statt – vom Weihnachtsmarkt bis zu Sommerfesten." }
+		]
+	},
+	meta: {
+		title: "Zentraler Platz von Lüdenscheid – Rathausplatz und Herz der Stadt",
+		description: "Der zentrale Platz von Lüdenscheid (Rathausplatz) ist der wichtigste öffentliche Raum der Stadt neben dem Rathaus. Hier finden Märkte, städtische Veranstaltungen und Treffen der Bewohner statt, und der Platz dient als Ausgangspunkt für Spaziergänge im Zentrum.",
+		ogTitle: "Zentraler Platz von Lüdenscheid",
+		ogDescription: "Der zentrale Platz von Lüdenscheid (Rathausplatz) ist der zentrale Stadtplatz neben dem Rathaus, ein Ort für Märkte, Feste und wichtige städtische Veranstaltungen.",
+		ogImage: "Germany/nrw/arnsberg/Märkischer-Kreis/luedenscheid/rathausplatz_lüdenscheid/001.JPG"
+	}
+}
+
 
 ];
 

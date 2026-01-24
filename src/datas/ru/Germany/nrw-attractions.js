@@ -909,7 +909,7 @@ const datas = [
         regionsPath: "nrw",
         districtPath: "koln",
         cityPath: "frechen",
-        fotoCard: "Germany/nrw/koln/Rhein-Erft-Kreis/frechen/johann_schmitz_platz_frechen/001.jpg",
+        fotoCard: "Germany/nrw/koln/Rhein-Erft-Kreis/frechen/johann_schmitz_platz_frechen/006.jpg",
         location: "Фрехен, Германия",
         address: [{ bold: "Адрес:", text: " Johann-Schmitz-Platz, 50226 Frechen, Deutschland" }],
         unesco_status: {
@@ -950,7 +950,7 @@ const datas = [
             description: "Площадь Йоханна Шмитца – центральная городская площадь Фрехена с рынками, мероприятиями и исторической ратушей.",
             ogTitle: "Johann-Schmitz-Platz – Frechen, Deutschland",
             ogDescription: "Откройте для себя центральную площадь Фрехена — Johann-Schmitz-Platz с исторической ратушей, рынками и городской атмосферой.",
-            ogImage: "Germany/nrw/koln/Rhein-Erft-Kreis/frechen/johann_schmitz_platz_frechen/001.jpg"
+            ogImage: "Germany/nrw/koln/Rhein-Erft-Kreis/frechen/johann_schmitz_platz_frechen/006.jpg"
         }
     },
     {
@@ -965,7 +965,7 @@ const datas = [
         districtPath: "koln",
         cityPath: "frechen",
         countryPath: "germany",
-        fotoCard: "Germany/nrw/koln/Rhein-Erft-Kreis/frechen/johann_schmitz_platz_frechen/001.jpg",
+        fotoCard: "Germany/nrw/koln/Rhein-Erft-Kreis/frechen/johann_schmitz_platz_frechen/008.jpg",
         location: "Фрехен, Германия",
         address: [{ bold: "Адрес:", text: " Johann-Schmitz-Platz, 50226 Frechen, Deutschland" }],
         unesco_status: {
@@ -1004,13 +1004,13 @@ const datas = [
             description: "Старая ратуша Фрехена – историческое здание городской администрации с башней на площади Йоханна Шмитца в центре города, Северный Рейн‑Вестфалия.",
             ogTitle: "Старая ратуша Фрехена – Фрехен, Германия",
             ogDescription: "Откройте для себя старую ратушу Фрехена с характерной башней и архитектурой в стиле необарокко на площади Йоханна Шмитца.",
-            ogImage: "Germany/nrw/koln/Rhein-Erft-Kreis/frechen/altes_rathaus_frechen/001.jpg"
+            ogImage: "Germany/nrw/koln/Rhein-Erft-Kreis/frechen/altes_rathaus_frechen/008.jpg"
         }
     },
     {
         id: "rathausbrunnen_frechen",
         name: "Фонтан перед ратушей",
-        type: ['historical_building'],
+        type: ['monument_or_fountain'],
         path: "rathausbrunnen_frechen",
         slug: "rathausbrunnen_frechen",
         hiddenFromList: true,
@@ -1024,7 +1024,7 @@ const datas = [
     {
         id: "klüttenbrunnen_frechen",
         name: "Фонтан Клюттенбрюннен",
-        type: ['historical_building'],
+        type: ['monument_or_fountain'],
         path: "klüttenbrunnen_frechen",
         slug: "klüttenbrunnen_frechen",
         hiddenFromList: true,
@@ -1375,12 +1375,13 @@ const datas = [
         cityPath: "luedenscheid",
         countryPath: "germany",
         fotoCard: "Germany/nrw/arnsberg/Märkischer-Kreis/luedenscheid/001.JPG",
-        subObjects: ["erloeserkirche_luedenscheid",],
+        subObjects: ["erloeserkirche_luedenscheid", "brunnen_altstadt_luedenscheid"],
         short_description: "Старый город Люденшайда – историческое сердце города с узкими улицами и кольцевой планировкой вокруг церкви Спасителя. Здесь сохранились здания XVIII–XIX веков, остатки крепостной стены и исторический музей, а уютные улочки сочетают прошлое с современной городской жизнью.",
         short_description_subObjects: {
             text: "В старом городе Люденшайда расположены такие достопримечательности: ",
             items: [
                 "Церковь Спасителя",
+                "Фонтан в старом городе"
             ]
         },
         full_description: {
@@ -1467,7 +1468,75 @@ const datas = [
             ogDescription: "Откройте для себя Церковь Спасителя в Люденшайде – исторический храм с башней, эмпорами и лютеранским алтарем, архитектурная доминанта старого города.",
             ogImage: "Germany/nrw/arnsberg/Märkischer-Kreis/luedenscheid/erloeserkirche_luedenscheid/001.JPG"
         }
-    }
+    },
+    {
+        id: "brunnen_altstadt_luedenscheid",
+        name: "Фонтан в старом городе",
+        type: "monument_or_fountain",
+        path: "brunnen_altstadt_luedenscheid",
+        countryPath: "germany",
+        regionsPath: "nrw",
+        districtPath: "arnsberg",
+        cityPath: "luedenscheid",
+        fotoCard: "Germany/nrw/arnsberg/Märkischer-Kreis/luedenscheid/altstadt_luedenscheid/001.JPG",
+        hiddenFromList: true,
+        short_description: "Фонтан расположен в историческом Старом городе, на Graf Engelbert Platz – площади, посвящённой первому основателю города. Он был открыт в 1982 году и подарен городу жителями в ходе реконструкции старого города, став одним из символов обновлённой исторической зоны. На торжественном открытии местные власти подчеркнули желание сделать фонтан «сердцем гражданской жизни» старого города. С тех пор он входит в число значимых общественных и культурных объектов Люденшайда. ",
+        short_description2: "Фонтан был создан художником и металлистом К.Т.Нойманн, который работал и жил в Люденшайде и внёс значительный вклад в скульптурное оформление города. В дизайне используется фигура герольда (глашатая), символически подчёркивающая исторический момент – объявление городских прав графом Энгельбертом I, основателем Люденшайда. Этот мотив отражён в рельефах и общей тематике композиции.",
+        full_description: {
+            title: "Описание и история",
+            items: []
+        },
+        construction_period: "1982 год",
+        architects: "Фонтан был создан художником и металлистом К.Т.Нойманн",
+        meta: {
+            title: "Фонтан на площади Графа Энгельберта – исторический фонтан в старом городе Люденшайда",
+            description: "Фонтан на площади Графа Энгельберта был создан в 1982 году в ходе реконструкции старого города. Он является одним из символов исторического центра Люденшайда и украшен фигурой герольда, отсылающей к основанию города графом Энгельбертом I.",
+            ogTitle: "Фонтан на площади Графа Энгельберта, Люденшайд",
+            ogDescription: "Посетите фонтан на площади Графа Энгельберта в Люденшайде – исторический объект старого города, связанный с основанием города и реконструкцией исторического центра.",
+            ogImage: "Germany/nrw/arnsberg/Märkischer-Kreis/luedenscheid/altstadt_luedenscheid/001.JPG"
+        }
+    },
+    {
+        id: "rathausplatz_luedenscheid",
+        name: "Центральная площадь Люденшайда",
+        type: "historical_building",
+        path: "rathausplatz_luedenscheid",
+        countryPath: "germany",
+        regionsPath: "nrw",
+        districtPath: "arnsberg",
+        cityPath: "luedenscheid",
+        fotoCard: "Germany/nrw/arnsberg/Märkischer-Kreis/luedenscheid/rathausplatz_lüdenscheid/001.JPG",
+        location: "Люденшайд, Германия",
+        short_description: "Центральная площадь Люденшайда (Rathausplatz) — это сердце города и важное общественное пространство, расположенное рядом с ратушей и пешеходной зоной. Здесь проходят рынки, городские мероприятия и встречи жителей, а сама площадь служит отправной точкой для знакомства с историческим центром города.",
+        full_description: {
+            title: "Описание и история",
+            items: [
+                { bold: "Центральная площадь (Rathausplatz)", text: "– центральная городская площадь Люденшайда, находящаяся в историческом и административном центре города. Это пространство по функционалу близко к классическому рыночному или городской площади: здесь проходят пешеходные прогулки, встречи, мероприятия и рынок. Площадь примыкает к зданиям городской администрации (новая ратуша) и Старой ратуше, а также соседствует с главным торговым кварталом, кафе и культовыми зданиями центра." },
+                { text: "Центральная часть площади служит логической «сердцевиной» пешеходной зоны и связана с пешеходной улицей и площадями вроде Sternplatz. Архитектурный ансамбль включает и исторические постройки, и здания из середины XX века, что формирует атмосферу сочетания старого и относительно современного городского центра." },
+                { bold: "История.", text: "Район вокруг Rathausplatz представляет собой историческое ядро Люденшайда: старый город (Altstadt) с узкими улицами и городскими постройками датируется средними веками, но за много веков пережил пожары и реконструкции. Интенсивное развитие городской инфраструктуры началось в XIX-XX вв., когда вокруг исторического центра формировались торговые и административные кварталы. Это привело к появлению ансамбля городской администрации, пешеходных зон и современной планировки центрального пространства." },
+                { text: "Современное оформление площади тесно связано с новым зданием ратуши, строительство которого началось в 1956 году, а администрация переехала туда в 1964 году. Это новый городской центр, вокруг которого сегодня и формируется пространство центральная городская площадь Люденшайда." },
+                { bold: "Функции и жизнь площади.", text: "На площади ежедневно и регулярно проходит Wochenmarkt (еженедельный рынок) по средам и субботам, где представлены свежие продукты, товары ремесленников и сезонные товары." },
+                { text: "Ежегодно в центре проходит городской фестиваль (Stadtfest) с палатками, музыкой и ярмаркой, который превращает площадь в живое пространство праздника и общения." },
+                { text: "В зимний сезон на Rathausplatz и соседнем Sternplatz часто организуются рождественский рынок и ледовая площадка." },
+                { text: "Площадь служит важной точкой встречи жителей и гостей города, она находится в пешеходной зоне с магазинами, кафе, службами и культурными объектами, что делает её логичным центром городской активности и базой для знакомства с Люденшайдом." },
+            ]
+        },
+        interesting_facts: {
+            title: "Интересные факты",
+            items: [
+                { bold: "Центральная площадь не всегда выглядела так, как сейчас:", text: "после Второй мировой войны центр города сильно перестраивался, и современная планировка — результат послевоенной реконструкции." },
+                { bold: "Центральная площадь – не просто площадь, а узел пешеходных маршрутов,", text: "связывающий старый город, торговую зону и административный центр." },
+                { bold: "Во время городских праздников площадь полностью перекрывается,", text: "и здесь проходят самые крупные мероприятия Люденшайда – от рождественского рынка до летних фестивалей." }
+            ]
+        },
+        meta: {
+            title: "Центральная площадь Люденшайда – Rathausplatz и сердце города",
+            description: "Центральная площадь Люденшайда (Rathausplatz) – главное общественное пространство города рядом с ратушей. Здесь проходят рынки, городские мероприятия и встречи жителей, а сама площадь служит отправной точкой для прогулок по центру.",
+            ogTitle: "Центральная площадь Люденшайда",
+            ogDescription: "Центральная площадь Люденшайда (Rathausplatz) – центральная городская площадь рядом с ратушей, место проведения рынков, праздников и важных городских событий.",
+            ogImage: "Germany/nrw/arnsberg/Märkischer-Kreis/luedenscheid/rathausplatz_lüdenscheid/001.JPG"
+        }
+    },
 ];
 
 export default datas;

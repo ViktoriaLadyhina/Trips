@@ -23,6 +23,8 @@ const AttractionForm = () => {
     const [isChildAttraction, setIsChildAttraction] = useState(false);
     const [needsShowMore, setNeedsShowMore] = useState(false);
     const [shortDescription, setShortDescription] = useState("");
+    const [shortDescription2, setShortDescription2] = useState("");
+    const [showSecondDescription, setShowSecondDescription] = useState(false);
     const [sections, setSections] = useState({
         description: [{ bold: "", text: "" }],
         tickets: [{ bold: "", text: "" }],
@@ -90,7 +92,7 @@ const AttractionForm = () => {
         type,
         path: path,
         countryPath: country,
-        regionPath: region,
+        regionsPath: region,
         districtPath: district,
         cityPath: city,
         fotoCard: foto,
@@ -113,15 +115,16 @@ const AttractionForm = () => {
         ...(isChildAttraction && { hiddenFromList: true }),
         ...(isChildAttraction && needsShowMore && { showMore: true }),
         short_description: shortDescription,
-// ...(sections.shortDescriptionSubObjects.some(i => i.name || i.text) && {
-//     short_description_subObjects: {
-//         text:
-//             sections.shortDescriptionSubObjects.find(i => i.text)?.text || "",
-//         items: sections.shortDescriptionSubObjects
-//             .map(i => i.name)
-//             .filter(Boolean),
-//     },
-// }),
+        ...(shortDescription2 && {short_description2: shortDescription2 }),
+...(sections.shortDescriptionSubObjects.some(i => i.name || i.text) && {
+    short_description_subObjects: {
+        text:
+            sections.shortDescriptionSubObjects.find(i => i.text)?.text || "",
+        items: sections.shortDescriptionSubObjects
+            .map(i => i.name)
+            .filter(Boolean),
+    },
+}),
         full_description: {
             title: "Описание и история",
             items: sections.description
@@ -284,7 +287,6 @@ const requiredFields = [
     { key: "district", label: "Патч - Район", value: district },
     { key: "city", label: "Патч - Город", value: city },
     { key: "shortDescription", label: "Короткое описание", value: shortDescription },
-    { key: "description", label: "Описание и история", value: sections.description.some(i => i.text?.trim()) },
     // мета
     { key: "meta_title", label: "Мета-наименование для поисковиков", value: meta.title },
     { key: "meta_description", label: "Мета-описание для поисковиков", value: meta.description },
@@ -380,6 +382,7 @@ return (
                     <option value="historical_building">Исторические здания</option>
                     <option value="technical_structure">Технические сооружения</option>
                     <option value="nature">Природа</option>
+                    <option value="monument_or_fountain">Памятники и фонтаны</option>
                 </select>
                 <p className='note'>Если ничего не подходит, а надо, то добавляем в файл src/components/AttractionsFilters (в объекте attractionTypes). И не забываем обновить форму</p>
             </div>
@@ -614,6 +617,16 @@ return (
                     onChange={(e) => setShortDescription(e.target.value)}
                     rows={4}
                 />
+                <button onClick={() => setShowSecondDescription(true)}>Добавить поле</button>
+                {showSecondDescription && (
+    <textarea
+        className='short_description-textarea'
+        value={shortDescription2}
+        onChange={(e) => setShortDescription2(e.target.value)}
+        rows={3}
+        placeholder="Дополнительное описание"
+    />
+)}
             </div>
 
             <div className='description'>

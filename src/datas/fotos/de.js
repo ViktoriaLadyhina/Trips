@@ -144,11 +144,19 @@ export const Fotos = {
         { path: "Germany/nrw/koln/Rhein-Erft-Kreis/frechen/burg-bachem/Burg-Bachem-lake_2.jpg", title: { ru: "Озерцо возле замка Бахем, 2024", ua: "Озерце біля замку Бахем, 2024", de: "Ein kleiner See in der Nähe von Burg Bachem, 2024" } },
       ],
       johann_schmitz_platz_frechen: [
+        { path: "Germany/nrw/koln/Rhein-Erft-Kreis/frechen/johann_schmitz_platz_frechen/006.jpg", title: { ru: "Площадь Йоханна Шмитца («площадь Ратуши»), 2026", ua: "Площа Йоганна Шмітца («площа Ратуші»), 2026", de: "Johann-Schmitz-Platz («Rathausplatz»), 2026" } },
         { path: "Germany/nrw/koln/Rhein-Erft-Kreis/frechen/johann_schmitz_platz_frechen/001.jpg", title: { ru: "Площадь Йоханна Шмитца («площадь Ратуши»), 2022", ua: "Площа Йоганна Шмітца («площа Ратуші»), 2022", de: "Johann-Schmitz-Platz («Rathausplatz»), 2022" } },
         { path: "Germany/nrw/koln/Rhein-Erft-Kreis/frechen/johann_schmitz_platz_frechen/002.jpg", title: { ru: "Площадь Йоханна Шмитца («площадь Ратуши»), 2022", ua: "Площа Йоганна Шмітца («площа Ратуші»), 2022", de: "Johann-Schmitz-Platz («Rathausplatz»), 2022" } },
         { path: "Germany/nrw/koln/Rhein-Erft-Kreis/frechen/johann_schmitz_platz_frechen/003.jpg", title: { ru: "Площадь Йоханна Шмитца («площадь Ратуши»), 2022", ua: "Площа Йоганна Шмітца («площа Ратуші»), 2022", de: "Johann-Schmitz-Platz («Rathausplatz»), 2022" } },
-        { path: "Germany/nrw/koln/Rhein-Erft-Kreis/frechen/johann_schmitz_platz_frechen/004.jpg", title: { ru: "Фонтан перед ратушей (фото взято с интернета)", ua: "Фонтан перед ратушею (фото взято з Інтернету)", de: "Brunnen vor dem Rathaus (Foto aus dem Internet)" } },
-        { path: "Germany/nrw/koln/Rhein-Erft-Kreis/frechen/johann_schmitz_platz_frechen/005.jpg", title: { ru: "Фонтан Клюттенбрюннен (фото взято с интернета)", ua: "Фонтан Клюттенбрюннен (фото взято з Інтернету)", de: "Klüttenbrunnen (Foto aus dem Internet)" } },
+        { path: "Germany/nrw/koln/Rhein-Erft-Kreis/frechen/johann_schmitz_platz_frechen/007.jpg", title: { ru: "Площадь Йоханна Шмитца («площадь Ратуши»), 2026", ua: "Площа Йоганна Шмітца («площа Ратуші»), 2026", de: "Johann-Schmitz-Platz («Rathausplatz»), 2026" } },
+        { path: "Germany/nrw/koln/Rhein-Erft-Kreis/frechen/johann_schmitz_platz_frechen/008.jpg", title: { ru: "Старая ратуша Фрехена, 2026", ua: "Стара ратуша Фрехена, 2026", de: "Altes Rathaus Frechen, 2026" } },
+        { path: "Germany/nrw/koln/Rhein-Erft-Kreis/frechen/johann_schmitz_platz_frechen/009.jpg", title: { ru: "Старая ратуша Фрехена, 2026", ua: "Стара ратуша Фрехена, 2026", de: "Altes Rathaus Frechen, 2026" } },
+        { path: "Germany/nrw/koln/Rhein-Erft-Kreis/frechen/johann_schmitz_platz_frechen/005.jpg", title: { ru: "Фонтан перед ратушей, 2026", ua: "Фонтан перед ратушею, 2026", de: "Brunnen vor dem Rathaus, 2026" } },
+        { path: "Germany/nrw/koln/Rhein-Erft-Kreis/frechen/johann_schmitz_platz_frechen/004.jpg", title: { ru: "Фонтан Клюттенбрюннен, 2026", ua: "Фонтан Клюттенбрюннен, 2026", de: "Klüttenbrunnen, 2026" } },
+      ],
+      rathausbrunnen_frechen: [
+        { path: "Germany/nrw/koln/Rhein-Erft-Kreis/frechen/johann_schmitz_platz_frechen/008.jpg", title: { ru: "Старая ратуша Фрехена, 2026", ua: "Стара ратуша Фрехена, 2026", de: "Altes Rathaus Frechen, 2026" } },
+        { path: "Germany/nrw/koln/Rhein-Erft-Kreis/frechen/johann_schmitz_platz_frechen/009.jpg", title: { ru: "Старая ратуша Фрехена, 2026", ua: "Стара ратуша Фрехена, 2026", de: "Altes Rathaus Frechen, 2026" } },
       ]
     },
     konigswinter: {
@@ -186,12 +194,16 @@ export const Fotos = {
       ],
       altstadt_luedenscheid: [
         { path: "Germany/nrw/arnsberg/Märkischer-Kreis/luedenscheid/001.JPG", title: { ru: "Люденшайд - 2006", ua: "Люденшайд - 2006", de: "Lüdenscheid - 2006" } },
-        { path: "Germany/nrw/arnsberg/Märkischer-Kreis/luedenscheid/002.JPG", title: { ru: "Люденшайд - 2006", ua: "Люденшайд - 2006", de: "Lüdenscheid - 2006" } },
-        { path: "Germany/nrw/arnsberg/Märkischer-Kreis/luedenscheid/003.jpg", title: { ru: "Люденшайд - 2022", ua: "Люденшайд - 2022", de: "Lüdenscheid - 2022" } },
         { path: "Germany/nrw/arnsberg/Märkischer-Kreis/luedenscheid/erloeserkirche_luedenscheid/001.JPG", title: { ru: "Церковь Спасителя в Люденшайде, 2006", ua: "Церква Спасителя в Люденшайді, 2006", de: "Die Erlöserkirche in Lüdenscheid, 2006" } },
+        { path: "Germany/nrw/arnsberg/Märkischer-Kreis/luedenscheid/altstadt_luedenscheid/001.JPG", title: { ru: "Фонтан в старом городе, 2006", ua: "Фонтан у старому місті, 2006", de: "Brunnen in der Altstadt, 2006" } },
       ],
       erloeserkirche_luedenscheid: [
         { path: "Germany/nrw/arnsberg/Märkischer-Kreis/luedenscheid/erloeserkirche_luedenscheid/001.JPG", title: { ru: "Церковь Спасителя в Люденшайде, 2006", ua: "Церква Спасителя в Люденшайді, 2006", de: "Die Erlöserkirche in Lüdenscheid, 2006" } },
+      ],
+      rathausplatz_luedenscheid: [
+        { path: "Germany/nrw/arnsberg/Märkischer-Kreis/luedenscheid/rathausplatz_lüdenscheid/001.JPG", title: { ru: "Центральная площадь Люденшайда, 2006", ua: "Центральна площа Люденшайда, 2006", de: "Rathausplatz, 2006" } },
+        { path: "Germany/nrw/arnsberg/Märkischer-Kreis/luedenscheid/rathausplatz_lüdenscheid/002.JPG", title: { ru: "Центральная площадь Люденшайда, 2006", ua: "Центральна площа Люденшайда, 2006", de: "Rathausplatz, 2006" } },
+        { path: "Germany/nrw/arnsberg/Märkischer-Kreis/luedenscheid/002.JPG", title: { ru: "Центральная площадь Люденшайда, 2006", ua: "Центральна площа Люденшайда - 2006", de: "Rathausplatz, 2006" } },
       ]
     }
 
