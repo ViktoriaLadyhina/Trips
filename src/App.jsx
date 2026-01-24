@@ -9,6 +9,7 @@ import City from './page/city/City'
 import AttractionsList from './page/attractions/AttractionsList';
 import Attraction from './page/attraction/Attraction';
 import SearchPage from './page/searchPage/SearchPage';
+import AttractionForm from './components/forma/AttractionForm';
 import Map from './page/map/Map'
 
 function App() {
@@ -19,6 +20,7 @@ function App() {
       <Routes>
         <Route path='/' element={<Layout />}>
           <Route index element={<Home />} />
+          <Route path="/admin" element={<AttractionForm />} />
 
           <Route path="/:countryPath" element={<Country />} />
           <Route path="/map" element={<Map />} />
