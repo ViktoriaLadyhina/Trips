@@ -20,6 +20,9 @@ const AttractionCardSub = ({ attr, lang }) => {
                     {attr.short_description && (
                         <div className='attrCard__desc-info-text'>{attr.short_description}</div>
                     )}
+                    {attr.short_description2 && (
+                        <div className='attrCard__desc-info-text'>{attr.short_description2}</div>
+                    )}
                     {attr.unesco_status?.included && (
                         <span className='attrCard__desc-info-text'>
                             UNESCO {attr.unesco_status.year}

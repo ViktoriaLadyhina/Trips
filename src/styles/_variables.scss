@@ -76,7 +76,7 @@
 }
 
 @mixin body-text() {
-  @include text(16px, --color-text, 400, 1.5);
+  @include text(1em, --color-text, 400, 1.5);
 }
 
 @mixin small-text() {
@@ -92,5 +92,5 @@
 }
 
 @mixin bold-text() {
-  @include text(16px, --color-text, 700, 1.5);
+  @include text(1em, --color-text, 700, 1.5);
 }

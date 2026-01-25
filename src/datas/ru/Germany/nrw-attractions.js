@@ -71,7 +71,7 @@ const datas = [
             description: "Кёльнский собор – символ города и шедевр готической архитектуры. История строительства, реликвии, витражи, колокола и тайны собора.",
             ogTitle: "Кёльнский собор: история, архитектура и реликвии",
             ogDescription: "Погрузитесь в историю Кёльнского собора – величие, реликвии, архитектура и интриги готического шедевра.",
-            ogImage: "Germany/nrw/koln/koln-city/koln-cathedral/001.jpg"
+            ogImage: "https://our-travels.info/new/foto/Germany/nrw/koln/koln-city/koln-cathedral/001.jpg"
         }
     },
     {
@@ -130,7 +130,7 @@ const datas = [
             description: "Кёльнская ратуша: готическая башня, ренессансная лоджия ",
             ogTitle: "Кёльнская ратуша: готическая башня, ренессансная лоджия",
             ogDescription: "Кёльнская ратуша – старейшее административное здание Германии, сочетающее готическую башню, ренессансную лоджию и исторический зал Ганзы.",
-            ogImage: "Germany/nrw/koln/koln-city/rathaus-koeln/Rathaus-Köln.jpg"
+            ogImage: "https://our-travels.info/new/foto/Germany/nrw/koln/koln-city/rathaus-koeln/Rathaus-Köln.jpg"
         }
     },
     {
@@ -185,7 +185,7 @@ const datas = [
             description: "Римско-германский музей — уникальный археологический музей Кёльна, построенный над древнеримской виллой. Мозаика Диониса, стекло, украшения и история города Колония.",
             ogTitle: "Римско-германский музей Кёльна — история и мозаика Диониса",
             ogDescription: "Музей античной Колонии: мозаика Диониса, римское стекло и археология Кёльна. Узнайте, как античность сохранилась под современным городом.",
-            ogImage: "Germany/nrw/koln/koln-city/roemisch-germanisches-museum/001.jpg"
+            ogImage: "https://our-travels.info/new/foto/Germany/nrw/koln/koln-city/roemisch-germanisches-museum/001.jpg"
         }
     },
     {
@@ -238,7 +238,7 @@ const datas = [
             description: "Музей духов в доме Фарина, известный также как Дом одеколона, – старейший музей ароматов в Кёльне и родина знаменитого Eau de Cologne. Именно здесь в 1709 году Иоганн Мария Фарина создал первый одеколон.",
             ogTitle: "Дом Фарина в Кёльне – Дом одеколона и музей Eau de Cologne",
             ogDescription: "Посетите Музей духов в доме Фарина, также известный как Дом одеколона – родину легендарного Eau de Cologne. История, ароматы и трёхвековая традиция создания кёльнской воды.",
-            ogImage: "Germany/nrw/koln/koln-city/farina-duftmuseum/001.jpg"
+            ogImage: "https://our-travels.info/new/foto/Germany/nrw/koln/koln-city/farina-duftmuseum/001.jpg"
         }
     },
     {
@@ -294,7 +294,7 @@ const datas = [
             "description": "Музей Людвига в Кёльне — одно из ведущих мировых собраний современного искусства, основанное на коллекции немецкого промышленника Петера Людвига и его супруги Ирэны.",
             "ogTitle": "Музей Людвига — Современное искусство в Кёльне",
             "ogDescription": "Музей Людвига в Кёльне — одно из ведущих мировых собраний современного искусства, основанное на коллекции немецкого промышленника Петера Людвига и его супруги Ирэны.",
-            "ogImage": "Germany/nrw/koln/koln-city/museum-ludwig/001.jpg"
+            "ogImage": "https://our-travels.info/new/foto/Germany/nrw/koln/koln-city/museum-ludwig/001.jpg"
         }
     },
     {
@@ -350,7 +350,7 @@ const datas = [
             description: "Музей шоколада – уникальный музей в Кёльне, который показывает путь какао от тропической плантации до плитки шоколада. Посетите стеклянную фабрику, фонтан из 200 кг шоколада и окунитесь в историю сладкого удовольствия.",
             ogTitle: "Schokoladenmuseum Köln – музей шоколада в Кёльне",
             ogDescription: "Погрузитесь в сладкий мир какао и шоколада в Кёльне: от древних цивилизаций до современной фабрики и шоколадного фонтана.",
-            ogImage: "Germany/nrw/koln/koln-city/schokoladenmuseum/001.jpg"
+            ogImage: "https://our-travels.info/new/foto/Germany/nrw/koln/koln-city/schokoladenmuseum/001.jpg"
         }
     },
     {
@@ -425,7 +425,7 @@ const datas = [
             description: "MiQua – подземный музей в центре Кёльна, показывающий римские, еврейские и средневековые археологические слои города.",
             ogTitle: "MiQua – Музей в археологическом квартале Кёльна",
             ogDescription: "Подземный музей MiQua позволяет пройти сквозь 2000 лет истории Кёльна, включая Praetorium, Mikwe и средневековые постройки.",
-            ogImage: "Germany/nrw/koln/koln-city/miqua/001.jpg"
+            ogImage: "https://our-travels.info/new/foto/Germany/nrw/koln/koln-city/miqua/001.jpg"
         }
     },
     {
@@ -479,7 +479,7 @@ const datas = [
             description: "Описание восьми мостов Кёльна: история, особенности, интересные факты, включая мост любви Hohenzollernbrücke.",
             ogTitle: "Мосты Кёльна через Рейн",
             ogDescription: "Полное описание всех восьми мостов Кёльна с фактами, историей и архитектурой.",
-            ogImage: "Germany/nrw/koln/koln-city/koln_bridges/001.jpg"
+            ogImage: "https://our-travels.info/new/foto/Germany/nrw/koln/koln-city/koln_bridges/001.jpg"
         }
     },
     {
@@ -547,7 +547,7 @@ const datas = [
             description: "Ботанический сад и лесопарк Кёльна с растениями со всего мира и тематическими зонами, включая Friedenswald – Лес мира.",
             ogTitle: "Forstbotanischer Garten – Ботанический сад и лесопарк Кёльна",
             ogDescription: "Сад и лесопарк Кёльна предлагают прогулки по рододендроновому оврагу, японскому саду, вересковому лугу и Лесу мира.",
-            ogImage: "Germany/nrw/koln/koln-city/forstbotanischer_garten/001.jpg"
+            ogImage: "https://our-travels.info/new/foto/Germany/nrw/koln/koln-city/forstbotanischer_garten/001.jpg"
         }
     },
     {
@@ -607,7 +607,7 @@ const datas = [
             "description": "Музей Вальрафа-Рихарца в Кёльне — старейший музей города с коллекциями живописи, скульптуры и графики от Средневековья до начала XX века, включая фонд Fondation Corboud с импрессионистами.",
             "ogTitle": "Музей Вальрафа-Рихарца — Искусство от Средневековья до Импрессионизма",
             "ogDescription": "Откройте для себя музей Вальрафа-Рихарца в Кёльне: средневековое и барочное искусство, а также коллекция импрессионистов Fondation Corboud.",
-            "ogImage": "Germany/nrw/koln/koln-city/wallraf_richartz_museum/001.jpg"
+            "ogImage": "https://our-travels.info/new/foto/Germany/nrw/koln/koln-city/wallraf_richartz_museum/001.jpg"
         }
     },
 
@@ -676,7 +676,7 @@ const datas = [
             description: "Ансамбль дворцов Аугустусбург и Фалькенлюст в Брюле – шедевр барокко и рококо, дополненный французскими и английскими садами, фонтанами, аллеями и зеркальными бассейнами. История, стиль, интересные факты.",
             ogTitle: "Дворцы Брюля: архитектура, сады и легенды",
             ogDescription: "Познайте Дворцы Брюля – их величие, интерьеры, парк с партером, аллеями и английским лесопарком, культурное значение и ЮНЕСКО-статус.",
-            ogImage: "Germany/nrw/koln/Rhein-Erft-Kreis/bruhl/bruhel_palaces/001.jpg"
+            ogImage: "https://our-travels.info/new/foto/Germany/nrw/koln/Rhein-Erft-Kreis/bruhl/bruhel_palaces/001.jpg"
         }
     },
     {
@@ -728,7 +728,7 @@ const datas = [
             description: "Единственный в мире музей, посвящённый Максу Эрнсту. Коллекция, история, дадаизм, сюрреализм, временные выставки.",
             ogTitle: "Музей Макса Эрнста – Брюль, Германия",
             ogDescription: "Познакомьтесь с музеем Макса Эрнста в Брюле, его коллекцией и выставками, посвящёнными дадаизму и сюрреализму.",
-            ogImage: "Germany/nrw/koln/Rhein-Erft-Kreis/bruhl/max_ernst_museum/Max-Ernst-Museum.jpg"
+            ogImage: "https://our-travels.info/new/foto/Germany/nrw/koln/Rhein-Erft-Kreis/bruhl/max_ernst_museum/Max-Ernst-Museum.jpg"
         }
     },
     {
@@ -788,7 +788,7 @@ const datas = [
             description: "Phantasialand – один из самых посещаемых парков Европы с более чем 30 аттракционами, тематическими зонами и уникальными отелями.",
             ogTitle: "Phantasialand – Брюль, Германия",
             ogDescription: "Познакомьтесь с Phantasialand в Брюле: аттракционы, тематические зоны, отели и развлечения для всей семьи.",
-            ogImage: "Germany/nrw/koln/Rhein-Erft-Kreis/bruhl/phantasialand/001.jpg"
+            ogImage: "https://our-travels.info/new/foto/Germany/nrw/koln/Rhein-Erft-Kreis/bruhl/phantasialand/001.jpg"
         },
     },
 
@@ -845,7 +845,7 @@ const datas = [
             description: "KERAMION: постоянная коллекция и временные выставки керамики, история производства и современное художественное видение.",
             ogTitle: "KERAMION – Центр современной и исторической керамики, Frechen",
             ogDescription: "Узнайте о коллекции Cremer, исторической керамике Фрехена и выставках в KERAMION.",
-            ogImage: "Germany/nrw/koln/Rhein-Erft-Kreis/frechen/keramion/frechen_keramion.jpg"
+            ogImage: "https://our-travels.info/new/foto/Germany/nrw/koln/Rhein-Erft-Kreis/frechen/keramion/frechen_keramion.jpg"
         }
     },
     {
@@ -898,24 +898,32 @@ const datas = [
             description: "Burg Bachem: история, водяные рвы, прогулочные зоны и отдых у небольшого озера в Фрехене.",
             ogTitle: "Burg Bachem – Frechen, Deutschland",
             ogDescription: "Откройте для себя историческую водяную крепость Burg Bachem и озеро с прогулочными аллеями во Фрехене.",
-            ogImage: "Germany/nrw/koln/Rhein-Erft-Kreis/frechen/burg-bachem/Burg-Bachem_3.jpg"
+            ogImage: "https://our-travels.info/new/foto/Germany/nrw/koln/Rhein-Erft-Kreis/frechen/burg-bachem/Burg-Bachem_3.jpg"
         }
     },
     {
         id: "johann_schmitz_platz_frechen",
         name: "Площадь Йоханна Шмитца («площадь Ратуши»)",
-        type: ['historical_building'],
+        type: ['square'],
         path: "johann_schmitz_platz_frechen",
         regionsPath: "nrw",
         districtPath: "koln",
         cityPath: "frechen",
-        fotoCard: "Germany/nrw/koln/Rhein-Erft-Kreis/frechen/johann_schmitz_platz_frechen/001.jpg",
+        fotoCard: "Germany/nrw/koln/Rhein-Erft-Kreis/frechen/johann_schmitz_platz_frechen/006.jpg",
         location: "Фрехен, Германия",
         address: [{ bold: "Адрес:", text: " Johann-Schmitz-Platz, 50226 Frechen, Deutschland" }],
         unesco_status: {
             included: false
         },
         subObjects: ["altes_rathaus_frechen", "rathausbrunnen_frechen", "klüttenbrunnen_frechen"],
+        short_description_subObjects: {
+            text: "На горе площади Йоханна Шмитца расположены такие достопримечательности: ",
+            items: [
+                "Старая ратуша Фрехена",
+                "Фонтан перед ратушей",
+                "Фонтан Клюттенбрюннен",
+            ]
+        },
         tickets_and_entry: {
             title: "Доступ",
             items: [
@@ -942,7 +950,7 @@ const datas = [
             description: "Площадь Йоханна Шмитца – центральная городская площадь Фрехена с рынками, мероприятиями и исторической ратушей.",
             ogTitle: "Johann-Schmitz-Platz – Frechen, Deutschland",
             ogDescription: "Откройте для себя центральную площадь Фрехена — Johann-Schmitz-Platz с исторической ратушей, рынками и городской атмосферой.",
-            ogImage: "Germany/nrw/koln/Rhein-Erft-Kreis/frechen/johann_schmitz_platz_frechen/001.jpg"
+            ogImage: "https://our-travels.info/new/foto/Germany/nrw/koln/Rhein-Erft-Kreis/frechen/johann_schmitz_platz_frechen/006.jpg"
         }
     },
     {
@@ -957,7 +965,7 @@ const datas = [
         districtPath: "koln",
         cityPath: "frechen",
         countryPath: "germany",
-        fotoCard: "Germany/nrw/koln/Rhein-Erft-Kreis/frechen/johann_schmitz_platz_frechen/001.jpg",
+        fotoCard: "Germany/nrw/koln/Rhein-Erft-Kreis/frechen/johann_schmitz_platz_frechen/008.jpg",
         location: "Фрехен, Германия",
         address: [{ bold: "Адрес:", text: " Johann-Schmitz-Platz, 50226 Frechen, Deutschland" }],
         unesco_status: {
@@ -996,15 +1004,14 @@ const datas = [
             description: "Старая ратуша Фрехена – историческое здание городской администрации с башней на площади Йоханна Шмитца в центре города, Северный Рейн‑Вестфалия.",
             ogTitle: "Старая ратуша Фрехена – Фрехен, Германия",
             ogDescription: "Откройте для себя старую ратушу Фрехена с характерной башней и архитектурой в стиле необарокко на площади Йоханна Шмитца.",
-            ogImage: "Germany/nrw/koln/Rhein-Erft-Kreis/frechen/altes_rathaus_frechen/001.jpg"
+            ogImage: "https://our-travels.info/new/foto/Germany/nrw/koln/Rhein-Erft-Kreis/frechen/altes_rathaus_frechen/008.jpg"
         }
     },
     {
         id: "rathausbrunnen_frechen",
         name: "Фонтан перед ратушей",
-        type: ['historical_building'],
+        type: ['monument_or_fountain'],
         path: "rathausbrunnen_frechen",
-        slug: "rathausbrunnen_frechen",
         hiddenFromList: true,
         regionsPath: "nrw",
         districtPath: "koln",
@@ -1012,13 +1019,26 @@ const datas = [
         countryPath: "germany",
         fotoCard: "Germany/nrw/koln/Rhein-Erft-Kreis/frechen/johann_schmitz_platz_frechen/005.jpg",
         short_description: "На площади перед старой ратушей находится декоративный районный фонтан, созданный в 1981 году художником керамистом Вим Мюлендик (Wim Mühlendyck). Он облицован керамическими плитами с рельефными изображениями сцен, отражающими развитие ремесел и керамической промышленности Фрехена – от традиционных мастеров до заводского производства, а разнообразные маскароны (лица) служат характерными водными струями фонтана.",
+        full_description: {
+            title: "Описание и история",
+            items: [
+                { text: "На площади перед старой ратушей находится декоративный районный фонтан, созданный в 1981 году художником керамистом Вим Мюлендик (Wim Mühlendyck). Он облицован керамическими плитами с рельефными изображениями сцен, отражающими развитие ремесел и керамической промышленности Фрехена – от традиционных мастеров до заводского производства, а разнообразные маскароны (лица) служат характерными водными струями фонтана." }
+            ]
+        },
+        meta: {
+            title: "Декоративный районный фонтан – исторический объект перед старой ратушей Фрехена",
+            description: "На площади перед старой ратушей находится декоративный районный фонтан, созданный в 1981 году художником керамистом Вимом Мюлендиком (Wim Mühlendyck). Он облицован керамическими плитами с рельефными изображениями сцен, отражающими развитие ремесел и керамической промышленности Фрехена – от традиционных мастеров до заводского производства, а разнообразные маскароны (лица) служат характерными водными струями фонтана.",
+            ogTitle: "Декоративный районный фонтан перед старой ратушей Фрехена",
+            ogDescription: "Фонтан на площади перед старой ратушей во Фрехене, созданный художником керамистом Вимом Мюлендиком в 1981 году, оформлен керамическими плитами с рельефами сцен ремесел и керамической промышленности и маскаронами с водными струями.",
+            ogImage: "https://our-travels.info/new/Germany/nrw/koln/Rhein-Erft-Kreis/frechen/johann_schmitz_platz_frechen/005.jpg"
+        }
+
     },
-        {
+    {
         id: "klüttenbrunnen_frechen",
         name: "Фонтан Клюттенбрюннен",
-        type: ['historical_building'],
+        type: ['monument_or_fountain'],
         path: "klüttenbrunnen_frechen",
-        slug: "klüttenbrunnen_frechen",
         hiddenFromList: true,
         regionsPath: "nrw",
         districtPath: "koln",
@@ -1026,6 +1046,19 @@ const datas = [
         countryPath: "germany",
         fotoCard: "Germany/nrw/koln/Rhein-Erft-Kreis/frechen/johann_schmitz_platz_frechen/004.jpg",
         short_description: "В пешеходной зоне в 1986 году установлен скульптурный фонтан Клюттенбрюннен (Klüttenbrunnen), авторства немецкого скульптора Олафа Хёнена. Он расположен в пешеходной зоне рядом с площадью Йоханна Шмитца и отражает промышленную и ремесленную историю Фрехена, в частности добычу и обработку местной глины. Фонтан оформлен как художественная композиция с каменными элементами и водными струями, гармонируя с городской средой и служа визуальным ориентиром для туристов.",
+        full_description: {
+            title: "Описание и история",
+            items: [
+                { text: "В пешеходной зоне в 1986 году установлен скульптурный фонтан Клюттенбрюннен (Klüttenbrunnen), авторства немецкого скульптора Олафа Хёнена. Он расположен в пешеходной зоне рядом с площадью Йоханна Шмитца и отражает промышленную и ремесленную историю Фрехена, в частности добычу и обработку местной глины. Фонтан оформлен как художественная композиция с каменными элементами и водными струями, гармонируя с городской средой и служа визуальным ориентиром для туристов." }
+            ]
+        },
+        meta: {
+            title: "Фонтан Клюттенбрюннен (Klüttenbrunnen) – исторический скульптурный объект",
+            description: "В пешеходной зоне в 1986 году установлен скульптурный фонтан Клюттенбрюннен (Klüttenbrunnen), авторства немецкого скульптора Олафа Хёнена. Он расположен рядом с площадью Йоханна Шмитца и отражает промышленную и ремесленную историю Фрехена, в частности добычу и обработку местной глины. Фонтан оформлен как художественная композиция с каменными элементами и водными струями, гармонируя с городской средой и служа визуальным ориентиром для туристов.",
+            ogTitle: "Фонтан Клюттенбрюннен (Klüttenbrunnen) во Фрехене",
+            ogDescription: "Скульптурный фонтан Клюттенбрюннен (Klüttenbrunnen) в пешеходной зоне рядом с площадью Йоханна Шмитца отражает промышленную и ремесленную историю Фрехена, оформлен как художественная композиция с каменными элементами и водными струями.",
+            ogImage: "https://our-travels.info/new/foto/Germany/nrw/koln/Rhein-Erft-Kreis/frechen/johann_schmitz_platz_frechen/004.jpg"
+        }
     },
 
 
@@ -1094,14 +1127,13 @@ const datas = [
             description: "Гора Драхенфельс в Кёнигсвинтере – легендарное место Рейнской долины, связанное с мифом о драконе и Зигфриде. Панорамные виды на Рейн, руины замка, природный парк Зибенгебирге и популярные туристические маршруты.",
             ogTitle: "Гора Драхенфельс – легенды и панорамы над Рейном",
             ogDescription: "Откройте для себя гору Драхенфельс: мифы о драконе, виды на Рейн, природный парк Зибенгебирге и историческое значение одной из самых известных гор региона.",
-            ogImage: "Germany/nrw/koln/Rhein-Sieg-Kreis/konigswinter/drachenfels/001.jpg"
+            ogImage: "https://our-travels.info/new/foto/Germany/nrw/koln/Rhein-Sieg-Kreis/konigswinter/drachenfels/001.jpg"
         }
     },
     {
         id: "drachenfelsbahn",
         name: "Железная дорога Драхенфельс",
         type: ["technical_structure"],
-        slug: "drachenfelsbahn",
         hiddenFromList: true,
         showMore: true,
         path: "drachenfelsbahn",
@@ -1120,9 +1152,7 @@ const datas = [
             items: [
                 { bold: "Железная дорога Драхенфельса", text: " – это самая старая действующая зубчатая железная дорога Германии. Она ведёт с городка Кёнигсвинтера к плато горы Драхенфельс над долиной Рейна." },
                 { text: "По пути поезд останавливается у средней станции, рядом с романтичным Замком Драхенбургом и музеем Нибелунгенхалле (с «Пещерой дракона» и небольшим зоопарком). На верхней станции – панорамные виды на долину Рейна и рестораны/кафе. " },
-                {
-                    bold: "История", text: "<br>&nbsp;&nbsp;&nbsp; ▪ Проект одобрили в 1881 году, строительство велось в 1882–1883 годах."
-                },
+                { bold: "История", text: "<br>&nbsp;&nbsp;&nbsp; ▪ Проект одобрили в 1881 году, строительство велось в 1882–1883 годах." },
                 { text: "&nbsp;&nbsp;&nbsp; ▪ Официально железная дорога открылась 17 июля 1883 года. С тех пор она стала популярным туристическим маршрутом." },
                 { text: "&nbsp;&nbsp;&nbsp; ▪ Первоначально использовались паровозы, но с 1953 года линия полностью электрифицирована. " },
             ]
@@ -1130,9 +1160,7 @@ const datas = [
         tickets_and_entry: {
             title: "Практическая информация",
             items: [
-                {
-                    bold: "Местоположение:", text: "Talstation Drachenfelsbahn, Drachenfelsstraße 53, 53639 Königswinter, Deutschland"
-                },
+                { bold: "Местоположение:", text: "Talstation Drachenfelsbahn, Drachenfelsstraße 53, 53639 Königswinter, Deutschland" },
                 { bold: "Режим работы:", text: "Работает почти круглый год. Зимой (январь-февраль): пн-пт 12:00-17:00, сб-вс 11:00-18:00. Весна и осень: примерно 10:00-18:00. Лето (май-сентябрь): около 09:00-19:00. В праздничные дни и на специальных мероприятиях расписание может меняться.", },
                 { bold: "Стоимость билетов (2025 г.):", text: "Взрослые: около 14 € (подъём + спуск), около 12 € (только в одну сторону). Дети 4-13 лет: около 7 € (туда-обратно). Семейный билет (2 взрослых + 2 детей): около 35 €. Есть групповые и льготные тарифы." }
             ]
@@ -1151,14 +1179,13 @@ const datas = [
             description: "Железная дорога Драхенфельса (Drachenfelsbahn) – историческая зубчатая железная дорога 1883 года в Кёнигсвинтере. Соединяет долину Рейна с плато горы Драхенфельс и является одной из главных туристических достопримечательностей региона.",
             ogTitle: "Железная дорога Драхенфельса (Drachenfelsbahn)",
             ogDescription: "Прокатитесь на Drachenfelsbahn – самой старой действующей зубчатой железной дороге Германии с панорамными видами на Рейн и гору Драхенфельс.",
-            ogImage: "Germany/nrw/koln/Rhein-Sieg-Kreis/konigswinter/drachenfels/002.jpg"
+            ogImage: "https://our-travels.info/new/foto/Germany/nrw/koln/Rhein-Sieg-Kreis/konigswinter/drachenfels/002.jpg"
         }
     },
     {
         id: "schloss_drachenburg",
         name: "Дворец Драхенбург",
         type: ["palace_or_castle"],
-        slug: "schloss_drachenburg",
         hiddenFromList: true,
         showMore: true,
         path: "schloss_drachenburg",
@@ -1216,14 +1243,13 @@ const datas = [
             description: "Дворец Драхенбург (Schloss Drachenburg) расположен на склоне горы Drachenfels в Кёнигсвинтере. Построенный в 1882-1884 годах, замок впечатляет неоготической архитектурой, богатыми интерьерами и панорамными видами на долину Рейна.",
             ogTitle: "Дворец Драхенбург (Schloss Drachenburg)",
             ogDescription: "Посетите дворец Драхенбург – романтический неоготический замок XIX века с историческими залами, витражами и смотровыми террасами с видом на Рейн и гору Drachenfels.",
-            ogImage: "Germany/nrw/koln/Rhein-Sieg-Kreis/konigswinter/drachenfels/001.jpg"
+            ogImage: "https://our-travels.info/new/foto/Germany/nrw/koln/Rhein-Sieg-Kreis/konigswinter/drachenfels/001.jpg"
         }
     },
     {
         id: "drachenfels_ruins",
         name: "Руины замка Драхенфельс",
         type: ["palace_or_castle"],
-        slug: "drachenfels_ruins",
         hiddenFromList: true,
         showMore: true,
         path: "drachenfels_ruins",
@@ -1261,14 +1287,13 @@ const datas = [
             description: "Руины замка Drachenfels расположены на вершине одноимённой горы в регионе Siebengebirge. Сохранились фрагменты стен и башен, а с вершины открываются панорамные виды на Рейн и Кёнигсвинтер.",
             ogTitle: "Руины замка Драхенфельс (Burg Drachenfels)",
             ogDescription: "Посетите руины замка Drachenfels – средневековой крепости XII века с сохранившимися стенами и башнями, открытыми для посещения и с панорамными видами на долину Рейна.",
-            ogImage: "Germany/nrw/koln/Rhein-Sieg-Kreis/konigswinter/drachenfels/003.jpg"
+            ogImage: "https://our-travels.info/new/foto/Germany/nrw/koln/Rhein-Sieg-Kreis/konigswinter/drachenfels/003.jpg"
         }
     },
     {
         id: "nibelungenhalle",
         name: "Зал Нибеленгов",
         type: ["museum"],
-        slug: "nibelungenhalle",
         hiddenFromList: true,
         showMore: true,
         path: "nibelungenhalle",
@@ -1304,14 +1329,13 @@ const datas = [
             description: "Зал Нибеленгов – музей, построенный в 1913 году на вершине горы Драхенфельс, посвящённый германскому эпосу «Песнь о Нибелунгах» и легендам о драконах. Рядом расположена интерактивная Драконья пещера.",
             ogTitle: "Зал Нибеленгов (Nibelungenhalle) на горе Драхенфельс",
             ogDescription: "Посетите Зал Нибеленгов – музей мифов и легенд Германии на вершине Драхенфельса. Экспозиции о Нибелунгах, драконах и интерактивная Драконья пещера с видами на долину Рейна.",
-            ogImage: "Germany/nrw/koln/Rhein-Sieg-Kreis/konigswinter/drachenfels/004.jpg"
+            ogImage: "https://our-travels.info/new/foto/Germany/nrw/koln/Rhein-Sieg-Kreis/konigswinter/drachenfels/004.jpg"
         }
     },
     {
         id: "reptile_zoo",
         name: "Зоопарк рептилий Драхенфельс",
         type: ["nature"],
-        slug: "reptile_zoo",
         hiddenFromList: true,
         showMore: true,
         path: "reptile_zoo",
@@ -1357,7 +1381,7 @@ const datas = [
             description: "Reptile Zoo на горе Драхенфельс – зоологический парк, где можно увидеть змей, ящериц, черепах и редких экзотических животных, а также принять участие в интерактивных демонстрациях и образовательных программах.",
             ogTitle: "Зоопарк рептилий Драхенфельс",
             ogDescription: "Посетите Reptile Zoo на горе Драхенфельс – зоопарк с редкими рептилиями, интерактивными демонстрациями кормления и образовательными программами для детей и взрослых.",
-            ogImage: "Germany/nrw/koln/Rhein-Sieg-Kreis/konigswinter/drachenfels/005.jpg"
+            ogImage: "https://our-travels.info/new/foto/Germany/nrw/koln/Rhein-Sieg-Kreis/konigswinter/drachenfels/005.jpg"
         }
     },
 
@@ -1376,7 +1400,15 @@ const datas = [
         cityPath: "luedenscheid",
         countryPath: "germany",
         fotoCard: "Germany/nrw/arnsberg/Märkischer-Kreis/luedenscheid/001.JPG",
+        subObjects: ["erloeserkirche_luedenscheid", "brunnen_altstadt_luedenscheid"],
         short_description: "Старый город Люденшайда – историческое сердце города с узкими улицами и кольцевой планировкой вокруг церкви Спасителя. Здесь сохранились здания XVIII–XIX веков, остатки крепостной стены и исторический музей, а уютные улочки сочетают прошлое с современной городской жизнью.",
+        short_description_subObjects: {
+            text: "В старом городе Люденшайда расположены такие достопримечательности: ",
+            items: [
+                "Церковь Спасителя",
+                "Фонтан в старом городе"
+            ]
+        },
         full_description: {
             title: "Описание и история",
             items: [
@@ -1402,9 +1434,304 @@ const datas = [
             description: "Старый город Люденшайда – средневековая часть города с историческими зданиями XVIII–XIX веков, церковью Спасителя, остатками крепостной стены и историческим музеем. Прогуляйтесь по уютным улочкам, чтобы почувствовать атмосферу прошлых веков.",
             ogTitle: "Старый город Люденшайда",
             ogDescription: "Посетите старый город Люденшайда – историческую часть города с барочными домами, Церковью Спасителя, историческим музеем и остатками средневековой крепостной стены.",
-            ogImage: "Germany/nrw/arnsberg/Märkischer-Kreis/luedenscheid/001.JPG"
+            ogImage: "https://our-travels.info/new/foto/Germany/nrw/arnsberg/Märkischer-Kreis/luedenscheid/001.JPG"
         }
-    }
+    },
+    {
+        id: "erloeserkirche_luedenscheid",
+        name: "Церковь Спасителя ",
+        type: ["cathedral"],
+        path: "erloeserkirche_luedenscheid",
+        regionsPath: "nrw",
+        districtPath: "arnsberg",
+        cityPath: "luedenscheid",
+        countryPath: "germany",
+        hiddenFromList: true,
+        showMore: true,
+        fotoCard: "Germany/nrw/arnsberg/Märkischer-Kreis/luedenscheid/erloeserkirche_luedenscheid/001.JPG",
+        short_description: "Церковь Спасителя (Erlöserkirche) – старейшая церковь Люденшайда с классицистическим фасадом, эмпорами и лютеранским алтарем. В центре старого города, архитектурная доминанта и культурный центр с концертами и выставками.",
+        full_description: {
+            title: "Описание и история",
+            items: [
+                { bold: "Церковь Спасителя (Erlöserkirche)", text: " – старейшая церковь Люденшайда и важная архитектурная доминанта старого города. Сегодня здание выполнено в классицистическом стиле с полукруглыми окнами и фасадом с пилястрами. Внутри сохранились эмпоры и лютеранский алтарь, которые создают уютную атмосферу для прихожан и туристов." },
+                { text: "Первое документальное упоминание церкви относится к 1067 году, что делает её самым древним культовым зданием города." },
+                { text: "На месте средневековой церкви в XII веке возникла позднероманская двухнефная базилика с готическим хором; эта постройка в основном разобрана в 1822 году из за аварийного состояния, но имеются остатки романского башенного ядра, которые считаются самым старым сохранившимся элементом зданий города." },
+                { text: "В XII-XVII веках церковь имела романское и готическое оформление, включая башню и фасад." },
+                { text: "В 1785 году башня получила барочную кровлю, что сделало её заметной с разных точек старого города." },
+                { text: "В 1822-1826 годах церковь была перестроена в классицистическом стиле: построена нефа с полукруглыми окнами и фасад с пилястрами. В оформлении участвовал ученик знаменитого архитектора Карла Фридриха Шинкеля, что подчёркивает историческую ценность церкви для региона." },
+                { text: "В 2026 году башня церкви находится в реставрации и окружена строительным лесом, потому что в 2022 году с неё сорвало черепицу, а работы до сих пор продолжаются – вокруг башни стоят ограждения по соображениям безопасности." },
+            ]
+        },
+        tickets_and_entry: {
+            title: "Практическая информация",
+            items: [
+                { bold: "Адрес:", text: "Kirchplatz 11, 58511 Lüdenscheid, Германия" },
+                { bold: "Доступ. ", text: "Церковь расположена в центре старого города и легко доступна пешком с главных площадей и остановок общественного транспорта. Она открыта для посещения в часы работы прихода." },
+            ]
+        },
+        interestingFacts: {
+            title: "Интересные факты",
+            items: [
+                { text: "• Башня церкви видна с разных уголков старого города и долгое время была его доминантой." },
+                { text: "• Церковь пережила несколько архитектурных стилей: от романского до классицизма." },
+                { text: "• До 1902 года называлась Церковь святого Медарда (Medarduskirche) и принадлежала к курфюршеству Бранденбург и Пруссии." },
+                { text: "• Сегодня церковь остаётся местом культурных мероприятий, включая концерты органной музыки и выставки, что делает её живым центром старого города." },
+            ]
+        },
+        relics: {
+            title: "Реликвии",
+            items: [
+                { bold: "• Лютеранский алтарь", text: " – главный элемент внутреннего убранства" },
+                { bold: "•	Эмпоры", text: " – исторические галереи для прихожан" },
+                { text: "•	Остатки романских и готических элементов в башне и фундаменте." },
+            ]
+        },
+        meta: {
+            title: "Церковь Спасителя в Люденшайде – старейший храм города с богатой историей",
+            description: "Церковь Спасителя (Erlöserkirche) – старейшая церковь Люденшайда, построенная в XII веке, с классицистическим фасадом, эмпорами и лютеранским алтарем. Посетите этот исторический храм в центре старого города и почувствуйте атмосферу прошлых веков.",
+            ogTitle: "Церковь Спасителя, Люденшайда",
+            ogDescription: "Откройте для себя Церковь Спасителя в Люденшайде – исторический храм с башней, эмпорами и лютеранским алтарем, архитектурная доминанта старого города.",
+            ogImage: "https://our-travels.info/new/foto/Germany/nrw/arnsberg/Märkischer-Kreis/luedenscheid/erloeserkirche_luedenscheid/001.JPG"
+        }
+    },
+    {
+        id: "brunnen_altstadt_luedenscheid",
+        name: "Фонтан в старом городе",
+        type: ["monument_or_fountain"],
+        path: "brunnen_altstadt_luedenscheid",
+        countryPath: "germany",
+        regionsPath: "nrw",
+        districtPath: "arnsberg",
+        cityPath: "luedenscheid",
+        fotoCard: "Germany/nrw/arnsberg/Märkischer-Kreis/luedenscheid/altstadt_luedenscheid/001.JPG",
+        hiddenFromList: true,
+        short_description: "Фонтан расположен в историческом Старом городе, на Graf Engelbert Platz – площади, посвящённой первому основателю города. Он был открыт в 1982 году и подарен городу жителями в ходе реконструкции старого города, став одним из символов обновлённой исторической зоны. На торжественном открытии местные власти подчеркнули желание сделать фонтан «сердцем гражданской жизни» старого города. С тех пор он входит в число значимых общественных и культурных объектов Люденшайда. ",
+        short_description2: "Фонтан был создан художником и металлистом К.Т.Нойманн, который работал и жил в Люденшайде и внёс значительный вклад в скульптурное оформление города. В дизайне используется фигура герольда (глашатая), символически подчёркивающая исторический момент – объявление городских прав графом Энгельбертом I, основателем Люденшайда. Этот мотив отражён в рельефах и общей тематике композиции.",
+        full_description: {
+            title: "Описание и история",
+            items: [
+                { bold: "Фонтан", text: " расположен в историческом Старом городе, на Graf Engelbert Platz – площади, посвящённой первому основателю города. Он был открыт в 1982 году и подарен городу жителями в ходе реконструкции старого города, став одним из символов обновлённой исторической зоны. На торжественном открытии местные власти подчеркнули желание сделать фонтан «сердцем гражданской жизни» старого города. С тех пор он входит в число значимых общественных и культурных объектов Люденшайда." },
+                { text: "Фонтан был создан художником и металлистом К.Т.Нойманн, который работал и жил в Люденшайде и внёс значительный вклад в скульптурное оформление города. В дизайне используется фигура герольда (глашатая), символически подчёркивающая исторический момент – объявление городских прав графом Энгельбертом I, основателем Люденшайда. Этот мотив отражён в рельефах и общей тематике композиции." },
+            ]
+        },
+        construction_period: "1982 год",
+        architects: "Фонтан был создан художником и металлистом К.Т.Нойманн",
+        meta: {
+            title: "Фонтан на площади Графа Энгельберта – исторический фонтан в старом городе Люденшайда",
+            description: "Фонтан на площади Графа Энгельберта был создан в 1982 году в ходе реконструкции старого города. Он является одним из символов исторического центра Люденшайда и украшен фигурой герольда, отсылающей к основанию города графом Энгельбертом I.",
+            ogTitle: "Фонтан на площади Графа Энгельберта, Люденшайд",
+            ogDescription: "Посетите фонтан на площади Графа Энгельберта в Люденшайде – исторический объект старого города, связанный с основанием города и реконструкцией исторического центра.",
+            ogImage: "https://our-travels.info/new/foto/Germany/nrw/arnsberg/Märkischer-Kreis/luedenscheid/altstadt_luedenscheid/001.JPG"
+        }
+    },
+    {
+        id: "rathausplatz_luedenscheid",
+        name: "Центральная площадь Люденшайда",
+        type: ["square"],
+        path: "rathausplatz_luedenscheid",
+        countryPath: "germany",
+        regionsPath: "nrw",
+        districtPath: "arnsberg",
+        cityPath: "luedenscheid",
+        fotoCard: "Germany/nrw/arnsberg/Märkischer-Kreis/luedenscheid/rathausplatz_lüdenscheid/001.JPG",
+        location: "Люденшайд, Германия",
+        short_description: "Центральная площадь Люденшайда (Rathausplatz) — это сердце города и важное общественное пространство, расположенное рядом с ратушей и пешеходной зоной. Здесь проходят рынки, городские мероприятия и встречи жителей, а сама площадь служит отправной точкой для знакомства с историческим центром города.",
+        full_description: {
+            title: "Описание и история",
+            items: [
+                { bold: "Центральная площадь (Rathausplatz)", text: "– центральная городская площадь Люденшайда, находящаяся в историческом и административном центре города. Это пространство по функционалу близко к классическому рыночному или городской площади: здесь проходят пешеходные прогулки, встречи, мероприятия и рынок. Площадь примыкает к зданиям городской администрации (новая ратуша) и Старой ратуше, а также соседствует с главным торговым кварталом, кафе и культовыми зданиями центра." },
+                { text: "Центральная часть площади служит логической «сердцевиной» пешеходной зоны и связана с пешеходной улицей и площадями вроде Sternplatz. Архитектурный ансамбль включает и исторические постройки, и здания из середины XX века, что формирует атмосферу сочетания старого и относительно современного городского центра." },
+                { bold: "История.", text: "Район вокруг Rathausplatz представляет собой историческое ядро Люденшайда: старый город (Altstadt) с узкими улицами и городскими постройками датируется средними веками, но за много веков пережил пожары и реконструкции. Интенсивное развитие городской инфраструктуры началось в XIX-XX вв., когда вокруг исторического центра формировались торговые и административные кварталы. Это привело к появлению ансамбля городской администрации, пешеходных зон и современной планировки центрального пространства." },
+                { text: "Современное оформление площади тесно связано с новым зданием ратуши, строительство которого началось в 1956 году, а администрация переехала туда в 1964 году. Это новый городской центр, вокруг которого сегодня и формируется пространство центральная городская площадь Люденшайда." },
+                { bold: "Функции и жизнь площади.", text: "На площади ежедневно и регулярно проходит Wochenmarkt (еженедельный рынок) по средам и субботам, где представлены свежие продукты, товары ремесленников и сезонные товары." },
+                { text: "Ежегодно в центре проходит городской фестиваль (Stadtfest) с палатками, музыкой и ярмаркой, который превращает площадь в живое пространство праздника и общения." },
+                { text: "В зимний сезон на Rathausplatz и соседнем Sternplatz часто организуются рождественский рынок и ледовая площадка." },
+                { text: "Площадь служит важной точкой встречи жителей и гостей города, она находится в пешеходной зоне с магазинами, кафе, службами и культурными объектами, что делает её логичным центром городской активности и базой для знакомства с Люденшайдом." },
+            ]
+        },
+        interesting_facts: {
+            title: "Интересные факты",
+            items: [
+                { bold: "Центральная площадь не всегда выглядела так, как сейчас:", text: "после Второй мировой войны центр города сильно перестраивался, и современная планировка — результат послевоенной реконструкции." },
+                { bold: "Центральная площадь – не просто площадь, а узел пешеходных маршрутов,", text: "связывающий старый город, торговую зону и административный центр." },
+                { bold: "Во время городских праздников площадь полностью перекрывается,", text: "и здесь проходят самые крупные мероприятия Люденшайда – от рождественского рынка до летних фестивалей." }
+            ]
+        },
+        meta: {
+            title: "Центральная площадь Люденшайда – Rathausplatz и сердце города",
+            description: "Центральная площадь Люденшайда (Rathausplatz) – главное общественное пространство города рядом с ратушей. Здесь проходят рынки, городские мероприятия и встречи жителей, а сама площадь служит отправной точкой для прогулок по центру.",
+            ogTitle: "Центральная площадь Люденшайда",
+            ogDescription: "Центральная площадь Люденшайда (Rathausplatz) – центральная городская площадь рядом с ратушей, место проведения рынков, праздников и важных городских событий.",
+            ogImage: "https://our-travels.info/new/foto/Germany/nrw/arnsberg/Märkischer-Kreis/luedenscheid/rathausplatz_lüdenscheid/001.JPG"
+        }
+    },
+    {
+        id: "sternplatz",
+        name: "Площадь Штернплац",
+        type: ["square"],
+        path: "sternplatz",
+        countryPath: "germany",
+        regionsPath: "nrw",
+        districtPath: "arnsberg",
+        cityPath: "luedenscheid",
+        fotoCard: "Germany/nrw/arnsberg/Märkischer-Kreis/luedenscheid/sternplatz/003.jpg",
+        location: "Люденшайд, Германия",
+        subObjects: ["onkel_willi_denkmal_sternplatz_luedenscheid", "fontain_sternplatz_luedenscheid"],
+        short_description: "Площадь Штернплац (Sternplatz) – центральная площадь Люденшайда, расположенная в пешеходной зоне исторического центра и являющаяся важной точкой городской жизни и встреч.",
+        short_description_subObjects: {
+            text: "На площади Штернплац расположены такие достопримечательности:",
+            items: ["Памятник дяде Вили", "Фонтан Нойманна "]
+        },
+        full_description: {
+            title: "Описание и история",
+            items: [
+                { bold: "Штернплац (Sternplatz)", text: "–  одна из ключевых городских площадей Люденшайда, расположенная в историческом центре города и являющаяся важным узлом пешеходной зоны. Площадь выполняет функцию общественного пространства, где пересекаются торговые улицы, маршруты пешеходов и туристические направления старого города." },
+                { text: "Штернплац находится в непосредственной близости от площади ратуши (Rathausplatz) и является частью единого пешеходного пространства центра Люденшайда. Благодаря этому площадь логично вписывается в маршрут городских прогулок и осмотра достопримечательностей." },
+                { bold: "Архитектура и окружение. ", text: "Архитектурный облик Штернплац формировался постепенно. Здесь сочетаются здания разного времени – от исторической застройки старого города до более современных городских построек второй половины XX века. Площадь открытая, хорошо просматриваемая, с удобными проходами к соседним улицам, кафе и магазинам." },
+                { bold: "История и значение. ", text: "Район вокруг площади относится к историческому ядру города. Старый Люденшайд на протяжении веков развивался именно в этой части, переживая пожары, перестройки и расширение городской инфраструктуры." },
+                { bold: "Современное использование. ", text: "Сегодня Sternplatz выполняет несколько функций:" },
+                { text: "&nbsp;&nbsp;&nbsp; ▪ служит пешеходной и общественной зоной;" },
+                { text: "&nbsp;&nbsp;&nbsp; ▪ является точкой встречи жителей и гостей города;" },
+                { text: "&nbsp;&nbsp;&nbsp; ▪ используется во время городских праздников, ярмарок и мероприятий;" },
+                { text: "&nbsp;&nbsp;&nbsp; ▪ входит в маршрут рождественских и сезонных городских событий;" },
+                { text: "&nbsp;&nbsp;&nbsp; ▪ соединяет торговые улицы и соседние площади центра." }
+            ]
+        },
+        meta: {
+            title: "Штернплац (Sternplatz) –  центральная площадь исторического центра Люденшайда",
+            description: "Штернплац (Sternplatz) –   одна из центральных площадей Люденшайда, расположенная в пешеходной зоне исторического центра. Площадь служит важной точкой городской жизни, прогулок и проведения мероприятий.",
+            ogTitle: "Штернплац (Sternplatz) в Люденшайде",
+            ogDescription: "Штернплац (Sternplatz) –  центральная городская площадь в историческом центре Люденшайда, часть пешеходной зоны и важное общественное пространство города.",
+            ogImage: "https://our-travels.info/new/foto/Germany/nrw/arnsberg/Märkischer-Kreis/luedenscheid/sternplatz/003.jpg"
+        }
+    },
+    {
+        id: "onkel_willi_denkmal_sternplatz_luedenscheid",
+        name: "Памятник дяде Вилли",
+        type: ["monument_or_fountain"],
+        path: "onkel_willi_denkmal_sternplatz_luedenscheid",
+        countryPath: "germany",
+        regionsPath: "nrw",
+        districtPath: "arnsberg",
+        cityPath: "luedenscheid",
+        fotoCard: "Germany/nrw/arnsberg/Märkischer-Kreis/luedenscheid/sternplatz/001.JPG",
+        hiddenFromList: true,
+        showMore: true,
+        short_description: "Памятник дяде Вилли – бронзовая скульптура на Sternplatz, изображающая типичного жителя Люденшайда с собакой. Является неофициальным символом города и отражает его повседневную, «живую» атмосферу.",
+        full_description: {
+            title: "Описание и история",
+            items: [
+                { bold: "Памятник дяде Вилли ", text: "– одна из самых узнаваемых городских скульптур Люденшайда, расположенная на площади Штернплац в историческом центре города. Бронзовая фигура изображает типичного жителя Люденшайда с собакой и символизирует простоту, открытость и повседневную городскую жизнь." },
+                { bold: "Автором скульптуры ", text: "является Вальдемар Винн (Waldemar Winn). Образ дяди Вилли не связан с официальной исторической личностью – это собирательный образ «настоящего люденшайдца», близкий и понятный жителям города." },
+                { bold: "Легенды. ", text: "Согласно одной из городских легенд, прототипом скульптуры стал человек, который часто гулял по центру города со своей собакой и был хорошо знаком местным жителям. По другой версии, скульптор вдохновлялся образом своего дяди, который действительно позировал для создания фигуры. Так или иначе, памятник олицетворяет характер старого Люденшайда – спокойный, доброжелательный и немного ироничный." },
+                { text: "Со временем дядя Вилли стал неофициальным символом города. Местные жители и туристы часто останавливаются рядом со скульптурой, фотографируются и воспринимают её как часть живой городской среды, а не как классический монумент." },
+                { text: "Памятник органично вписан в пространство Sternplatz и является одной из точек притяжения в пешеходной зоне исторического центра." }
+            ]
+        },
+        meta: {
+            title: "Памятник дяде Вилли – символ Люденшайда на площади Штернплац ",
+            description: "Памятник дяде Вилли на площади Штернплац в Люденшайде – бронзовая скульптура, изображающая типичного жителя города с собакой. Скульптура стала неофициальным символом города и популярной точкой для встреч и фотографий.",
+            ogTitle: "Памятник дяде Вилли в Люденшайде",
+            ogDescription: "Бронзовая скульптура дяди Вилли на площади Штернплац в историческом центре Люденшайда олицетворяет доброжелательность и повседневную жизнь жителей города. Популярное место среди туристов и горожан.",
+            ogImage: "https://our-travels.info/new/foto/Germany/nrw/arnsberg/Märkischer-Kreis/luedenscheid/sternplatz/001.JPG"
+        }
+    },
+    {
+        id: "fontain_sternplatz_luedenscheid",
+        name: "Фонтан на площади Штернплац",
+        type: ["monument_or_fountain"],
+        path: "fontain_sternplatz_luedenscheid",
+        countryPath: "germany",
+        regionsPath: "nrw",
+        districtPath: "arnsberg",
+        cityPath: "luedenscheid",
+        fotoCard: "Germany/nrw/arnsberg/Märkischer-Kreis/luedenscheid/sternplatz/003.jpg",
+        hiddenFromList: true,
+        showMore: true,
+        short_description: "Фонтан на площади Штернплац – декоративный водоём в центре площади, созданный в конце 1970 х годов скульптором Куртом Тони Нейманом. Он стал значимым городским объектом и местом отдыха в пешеходной зоне Люденшайда.",
+        full_description: {
+            title: "Описание и история",
+            items: [
+                { text: "На площади Штернплац в историческом центре Люденшайда находится городской фонтан, выполненный в виде низкого декоративного водоёма, который входит в число характерных объектов площади. Этот фонтан был создан в конце 1970 х годов немецким скульптором Куртом Тони Нойманом (Kurt Toni Neumann) и с тех пор стал популярным местом для отдыха и встреч на площади. " },
+                { text: "Фонтан представляет собой нижний бассейн с центральным водным элементом, вокруг которого размещены скамейки и пространство для прогулок. Он органично вписан в пешеходную зону Штернплац и служит как визуальный фокус площади." },
+                { text: "В старые времена на этом месте ранее существовал другой фонтан (барочный четырёхведерный), связанный с рыночной историей площади, но он был снесён в XIX веке." },
+                { text: "С 2009 года вокруг фонтана размещены таблички с названиями партнёрских городов Люденшайда (Брайхаус, Таганрог, Ден-Хелдер, Лёвен, Мышленице и Ромийи сюр Сен) и указанием расстояний до них, что делает фонтан также своего рода символом международных связей города." },
+                { text: "Фонтан не только декоративный, но и служит местом отдыха для жителей и гостей города, особенно в тёплое время года." }
+            ]
+        },
+        meta: {
+            title: "Фонтан на площади Штернплац – городской водоём Люденшайда",
+            description: "Фонтан на площади Штернплац в Люденшайде – декоративный водоём, созданный в конце 1970-х годов скульптором Куртом Тони Нойманом. Вокруг фонтана расположены таблички с названиями партнёрских городов: Брайхаус, Таганрог, Ден-Хелдер, Лёвен, Мышленице и Ромийи‑сюр‑Сен. Фонтан стал популярным местом отдыха и прогулок на площади.",
+            ogTitle: "Фонтан на площади Штернплац в Люденшайде",
+            ogDescription: "Декоративный фонтан на площади Штернплац в историческом центре Люденшайда, окружённый табличками с названиями партнёрских городов. Место встреч и отдыха жителей и гостей города.",
+            ogImage: "https://our-travels.info/new/foto/Germany/nrw/arnsberg/Märkischer-Kreis/luedenscheid/sternplatz/003.jpg"
+        }
+    },
+    {
+        id: "history_museum_luedenscheid",
+        name: "Исторический музей Люденшайда",
+        type: ["museum"],
+        path: "history_museum_luedenscheid",
+        countryPath: "germany",
+        regionsPath: "nrw",
+        districtPath: "arnsberg",
+        cityPath: "luedenscheid",
+        fotoCard: "Germany/nrw/arnsberg/Märkischer-Kreis/luedenscheid/history_museum_luedenscheid/001.JPG",
+        location: "Люденшайд, Германия",
+        officialSite: [
+            { "bold": "Официальный сайт", "link": "https://www.luedenscheid.de/freizeit-und-kultur/kultur/museen-der-stadt-luedenscheid/geschichtsmuseum" }
+        ],
+        short_description: "Исторический музей Люденшайда – городской музей, посвящённый промышленной и технической истории региона, уникальным коллекциям карт и артефактов, включая узкоколейный поезд и модели дирижаблей. Музей объединён с городской галереей, старым административным зданием и кафе в современном комплексе.",
+        full_description: {
+            title: "Описание и история",
+            items: [
+                { bold: "Исторический музей Люденшайда ", text: "объединяет историческое административное здание и старую банковскую постройку, соединённые современным стеклянным переходом. В этом комплексе размещаются как постоянные экспозиции, так и крупные объекты, такие как узкоколейный поезд, модели дирижаблей и техника пожарной охраны." },
+                { bold: "История. ", text: "Музей существует с конца 1980-х годов и является частью культурного комплекса города. Здания, входящие в музейный комплекс, были построены в 1910 году (административное) и раньше (банк). Комплекс объединяет архитектуру разных эпох и позволяет одновременно показывать исторические здания и современные выставочные решения." },
+                { bold: "Дополнительные возможности. ", text: "В современном стеклянном переходе между зданиями находится популярное музейное кафе, где можно отдохнуть после осмотра экспонатов. " },
+                { text: "Там же проводятся сменные выставки, художественные события и культурные мероприятия, которые делают музейной площадкой не только исторический центр, но и культурно‑общественное пространство." }
+            ]
+        },
+        sub_objects: {
+            title: "Экспозиции",
+            items: [
+                { bold: "Узкоколейный поезд „Schnurre“ ", text: "(исторический поезд, бывший на линии Kreis Altenaer Eisenbahn AG) – один из самых впечатляющих экспонатов, который можно не только увидеть, но и осмотреть изнутри." },
+                { bold: "Двигатели и техника индустриальной эпохи, ", text: "такие как старые паровые установки и генерирующее оборудование, иллюстрируют развитие энергетики и техники." },
+                { bold: "Модели дирижаблей,", text: "включая Zeppelin – это не только технические миниатюры, но и часть истории авиации, связанную с местными промышленниками, которые поставляли материалы для первых дирижаблей." },
+                { bold: "Техника пожарной охраны ", text: "– исторические пожарные двигатели и устройства, отражающие развитие городских служб безопасности." },
+                { bold: "Огромная коллекция кнопок и пряжек,", text: "охватывающая период с бронзового века до современности. Это уникальная коллекция, связанная с тем, что Люденшайд долго считался важным центром производства кнопок в Германии." },
+                { bold: "Исторические географические карты ", text: "региона Графства Марк – дают наглядное представление о территориальных изменениях и развитии региона." },
+                { text: "Музей проходил модернизацию: основная постоянная выставка временно закрыта на реконструкцию и будет открыта под названием „Innovatia“ в 2026 году. Эта новая экспозиция будет ещё глубже рассказывать о технологической и инновационной истории Люденшайда с использованием мультимедиа и интерактивных элементов." }
+            ]
+        },
+        tickets_and_entry: {
+            title: "Практическая информация",
+            items: [
+                { bold: "Адрес:", text: "Sauerfelder Str. 14, 58511 Lüdenscheid, Германия" },
+                { bold: "Часы работы:", text: "среда-воскресенье, 11:00-18:00 (возможны изменения по сезонам)" },
+                { bold: "Вход:", text: "платный, есть скидки для студентов и пенсионеров" },
+                { bold: "Доступ:", text: "полностью открыто для посетителей, доступно для людей с ограниченной мобильностью" }
+            ]
+        },
+        interesting_facts: {
+            title: "Интересные факты",
+            items: [
+                { text: "Коллекция застежек и кнопок музея считается уникальной в Германии." },
+                { text: "Современный стеклянный переход соединяет два исторических здания и позволяет разместить самые крупные экспонаты." },
+                { text: "Музейное кафе находится прямо в переходе и популярно среди местных жителей и туристов." },
+                { text: "Музей сочетает в себе городскую галерею и исторические коллекции в одном комплексе." }
+            ]
+        },
+        construction_period: "в конце 1980-х годов",
+        architects: "Первоначальные здания: местные архитекторы начала XX века (1910 год – административное здание)",
+        founder: " Музей был основан городской администрацией Люденшайда",
+        meta: {
+            title: "Исторический музей Люденшайда – промышленная и техническая история города",
+            description: "Откройте для себя Исторический музей Люденшайда: узкоколейный поезд, модели дирижаблей, техника пожарной охраны, коллекция карт и артефактов с бронзового века. Посетите музей и музейное кафе в современном комплексе города.",
+            ogTitle: "Исторический музей Люденшайда – уникальные экспонаты и коллекции",
+            ogDescription: "Посетите Исторический музей Люденшайда: от узкоколейного поезда до коллекции бронзовых застежек, исторических карт и макетов города. Музей и музейное кафе ждут вас в культурном комплексе города.",
+            ogImage: "https://our-travels.info/new/foto/Germany/nrw/arnsberg/Märkischer-Kreis/luedenscheid/history_museum_luedenscheid/001.JPG"
+        }
+    },
 ];
 
 export default datas;
