@@ -550,6 +550,65 @@ const datas = [
         }
     },
     {
+        id: "flora_garten_koln",
+        name: "Botanischer Garten Flora",
+        type: ["nature"],
+        path: "flora_garten_koln",
+        countryPath: "germany",
+        regionsPath: "nrw",
+        districtPath: "city",
+        cityPath: "koln",
+        fotoCard: "Germany/nrw/koln/koln-city/flora_garten_koln/001.jpg",
+        location: "Köln, Deutschland",
+        short_description: "Flora und Botanischer Garten in Köln vereint historischen Park und wissenschaftlichen botanischen Garten. Hier können Besucher über 10.000 Pflanzen aus aller Welt sehen, thematische Alleen entlangschlendern und die Gewächshäuser genießen. Ein idealer Ort zur Erholung und zur Erforschung der Pflanzenvielfalt.",
+        full_description: {
+            title: "Beschreibung und Geschichte",
+            items: [
+                { bold: "Flora und Botanischer Garten ", text: "– ein historisches Gartenensemble und botanischer Garten im Norden Kölns. Er verbindet die Schönheit klassischer Parkkunst mit dem wissenschaftlichen Wert der Botanik. Besucher können über 10.000 Pflanzenarten aus aller Welt sehen, darunter Blumenbeete, seltene und exotische Pflanzen sowie Ziersträucher und alpines Grün. Der Garten bietet den Besuchern eine Weltreise, ohne die Stadt zu verlassen." },
+                { bold: "Geschichte:", text: "Das Ensemble wurde 1864 nach der Schließung des alten botanischen Gartens im Stadtzentrum von Köln (nahe dem Kölner Dom) aufgrund des Baus des Bahnhofs gegründet. 1914 wurde nördlich des Parks ein botanischer Garten angelegt, der eine „Enzyklopädie der Botanik“ mit Pflanzen aus allen Klimazonen darstellt. 1920 wurden die beiden zuvor unabhängigen Komplexe zu einem modernen botanischen Garten und Park zusammengeführt." }
+            ]
+        },
+        sub_objects: {
+            title: "Hauptbereiche und thematische Abschnitte:",
+            items: [
+                { text: "Blumenbeete im französischen Barockstil" },
+                { text: "Locker stehende Bäume des englischen Gartens" },
+                { text: "Italienische Renaissancegärten mit Alleen, Wasserfällen und dem „Flora-Tempel“" },
+                { text: "Heidewiese" },
+                { text: "Farnbestände" },
+                { text: "„Duftgarten“" },
+                { text: "Mittelmeer-Garten" },
+                { text: "Großer Teich" },
+                { text: "Botanischer Garten: „Bauernhofgarten“, „Alpinum“ (Gebirgsflora), Blumenbeete mit Iris, Lilien und Sommerblumen" }
+            ]
+        },
+        tickets_and_entry: {
+            title: "Praktische Informationen",
+            items: [
+                { bold: "Adresse: ", text: "Amsterdamer Straße 34, 50735 Köln" },
+                { bold: "Öffnungszeiten: ", text: "Park: von 8:00 Uhr bis Einbruch der Dunkelheit. Gewächshäuser: Oktober–März 10:00–16:00, April–September 10:00–18:00" }
+            ]
+        },
+        interesting_facts: {
+            title: "Interessante Fakten",
+            items: [
+                { text: "Über 10.000 Pflanzenarten aus aller Welt unter freiem Himmel und in Gewächshäusern" },
+                { text: "Das Gelände vereint die künstlerische Schönheit der Gärten mit der wissenschaftlichen Funktion der Erhaltung biologischer Ressourcen" },
+                { text: "Besucher können Pflanzen aus verschiedenen Klimazonen erkunden, ohne die Stadt zu verlassen" }
+            ]
+        },
+        construction_period: "Parkbereich: 1864. Botanischer Garten: 1914. Zusammenschluss der Ensembles: 1920",
+        architects: "P. J. Lenné (Peter Joseph Lenné) – Landschaftsarchitekt des Gartenensembles",
+        founder: " Der Garten wurde auf Initiative der städtischen Behörden Kölns gegründet",
+        meta: {
+            title: "Botanischer Garten Flora, Köln – Park und Gewächshäuser mit Pflanzen aus aller Welt",
+            description: "Besuchen Sie den Botanischen Garten Flora in Köln: über 10.000 Pflanzenarten aus aller Welt, historische Alleen, thematische Gärten, Gewächshäuser und Erholung im Freien.",
+            ogTitle: "Flora – Botanischer Garten und Park in Köln",
+            ogDescription: "Entdecken Sie die Flora in Köln: Weltreise unter 10.000 Pflanzenarten, historische Gärten, Gewächshäuser und gemütliche Alleen zum Spazierengehen.",
+            ogImage: "https://our-travels.info/new/Germany/nrw/koln/koln-city/flora_garten_koln/001.jpg"
+        }
+    },
+    {
         id: "wallraf_richartz_museum",
         name: "Wallraf-Richartz-Museum",
         type: ["museum"],
