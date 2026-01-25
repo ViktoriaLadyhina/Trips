@@ -53,21 +53,27 @@ const Map = () => {
       erloeserkirche_luedenscheid: { ru: 'Церковь Спасителя', de: 'Erlöserkirche', ua: 'Церква Спасителя' },
       rathausplatz_luedenscheid: { ru: 'Центральная площадь Люденшайда', de: 'Rathausplatz von Lüdenscheid', ua: 'Центральна площа Люденшайда' },
       brunnen_altstadt_luedenscheid: { ru: 'Фонтан в старом городе', de: 'Brunnen in der Altstadt', ua: 'Фонтан у старому місті' },
+      sternplatz: { ru: 'Площадь Штернплац', de: 'Sternplatz', ua: 'Площа Штернплац' },
+      onkel_willi_denkmal_sternplatz_luedenscheid: { ru: 'Памятник дяде Вилли', de: 'Denkmal von Onkel Willi', ua: 'Памятник дядьку Віллі' },
+      fontain_sternplatz_luedenscheid: { ru: 'Фонтан на площади Штернплац', de: 'Brunnen auf dem Sternplatz', ua: 'Фонтан на площі Штернплац' },
+      history_museum_luedenscheid: { ru: 'Исторический музей Люденшайда', de: 'Geschichtsmuseum Lüdenscheid', ua: 'Історичний музей Люденшайда' },
 
-      //Köln okrug
+      // Köln okrug
       // Rhein-Erft-Kreis
-      //Brühl
+      // Brühl
       bruhlPalaces: { ru: 'Дворцы Брюля: ансамбль Аугустусбург и Фалькенлюст', de: 'Schlösser Brühl: Augustusburg & Falkenlust', ua: 'Палаци Брюля: ансамбль Аугустусбург і Фалькенлюст' },
       maxErnst: { ru: 'Музей Макса Эрнста', de: 'Max Ernst Museum', ua: 'Музей Макса Ернста' },
       phantasialand: { ru: 'Парк развлечений Phantasialand', de: 'Phantasialand', ua: 'Парк розваг Phantasialand' },
 
-      //Frechen
+      // Frechen
       burgBachem: { ru: 'Крепость Бахем – историческая водяная крепость во Фрехене', de: 'Burg Bachem – historische Wasserburg in Frechen', ua: 'Фортеця Бахем – історична водяна фортеця у Фрехені' },
       keramion: { ru: 'Керамион – Центр современной и исторической керамики', de: 'KERAMION – Zentrum für moderne und historische Keramik', ua: 'Кераміон – Центр сучасної та історичної кераміки' },
       johann_schmitz_platz_frechen: { ru: 'Площадь Йоханна Шмитца («площадь Ратуши»)', de: 'Johann-Schmitz-Platz in Frechen', ua: 'Площа Йоханна Шміця («площа Ратуші»)' },
       altes_rathaus_frechen: { ru: 'Старая ратуша Фрехена', de: 'Altes Rathaus Frechen', ua: 'Стара ратуша Фрехена' },
+      rathausbrunnen_frechen: { ru: 'Фонтан перед ратушей', de: 'Brunnen vor dem Rathaus', ua: 'Фонтан перед ратушею' },
+      klüttenbrunnen_frechen: { ru: 'Фонтан Клюттенбрюннен', de: 'Klüttenbrunnen', ua: 'Фонтан Клюттенбрюннен' },
 
-      //Rhein-Sieg-Kreis
+      // Rhein-Sieg-Kreis
       // Königswinter
       drachenfels: { ru: 'Гора Драхенфельс', de: 'Drachenfels', ua: 'Гора Драхенфельс' },
       drachenfelsbahn: { ru: 'Железная дорога Драхенфельс', de: 'Drachenfelsbahn', ua: 'Залізниця Драхенфельса' },
@@ -120,6 +126,13 @@ const Map = () => {
                                 </ul>
                               </li>
                               <li><Link to="/germany/nrw/arnsberg/luedenscheid/attractions/rathausplatz_luedenscheid">{t.attractions.rathausplatz_luedenscheid[lang]}</Link></li>
+                              <li><Link to="/germany/nrw/arnsberg/luedenscheid/attractions/sternplatz">{t.attractions.sternplatz[lang]}</Link>
+                                <ul>
+                                  <li><Link to="/germany/nrw/arnsberg/luedenscheid/attractions/onkel_willi_denkmal_sternplatz_luedenscheid">{t.attractions.onkel_willi_denkmal_sternplatz_luedenscheid[lang]}</Link></li>
+                                  <li><Link to="/germany/nrw/arnsberg/luedenscheid/attractions/fontain_sternplatz_luedenscheid">{t.attractions.fontain_sternplatz_luedenscheid[lang]}</Link></li>
+                                </ul>                              
+                              </li>
+                              <li><Link to="/germany/nrw/arnsberg/luedenscheid/attractions/history_museum_luedenscheid">{t.attractions.history_museum_luedenscheid[lang]}</Link></li>
                             </ul>
                           </li>
                         </ul>
@@ -145,6 +158,8 @@ const Map = () => {
                               <li><Link to="/germany/nrw/koln/frechen/attractions/johann_schmitz_platz_frechen">{t.attractions.johann_schmitz_platz_frechen[lang]}</Link>
                                 <ul>
                                   <li><Link to="/germany/nrw/koln/frechen/attractions/altes_rathaus_frechen">{t.attractions.altes_rathaus_frechen[lang]}</Link></li>
+                                  <li><Link to="/germany/nrw/koln/frechen/attractions/rathausbrunnen_frechen">{t.attractions.rathausbrunnen_frechen[lang]}</Link></li>
+                                  <li><Link to="/germany/nrw/koln/frechen/attractions/klüttenbrunnen_frechen">{t.attractions.klüttenbrunnen_frechen[lang]}</Link></li>
                                 </ul>
                               </li>
                               <li><Link to="/germany/nrw/koln/frechen/attractions/burg-bachem">{t.attractions.burgBachem[lang]}</Link></li>

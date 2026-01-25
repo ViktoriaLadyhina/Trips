@@ -154,9 +154,15 @@ export const Fotos = {
         { path: "Germany/nrw/koln/Rhein-Erft-Kreis/frechen/johann_schmitz_platz_frechen/005.jpg", title: { ru: "Фонтан перед ратушей, 2026", ua: "Фонтан перед ратушею, 2026", de: "Brunnen vor dem Rathaus, 2026" } },
         { path: "Germany/nrw/koln/Rhein-Erft-Kreis/frechen/johann_schmitz_platz_frechen/004.jpg", title: { ru: "Фонтан Клюттенбрюннен, 2026", ua: "Фонтан Клюттенбрюннен, 2026", de: "Klüttenbrunnen, 2026" } },
       ],
-      rathausbrunnen_frechen: [
+      altes_rathaus_frechen: [
         { path: "Germany/nrw/koln/Rhein-Erft-Kreis/frechen/johann_schmitz_platz_frechen/008.jpg", title: { ru: "Старая ратуша Фрехена, 2026", ua: "Стара ратуша Фрехена, 2026", de: "Altes Rathaus Frechen, 2026" } },
         { path: "Germany/nrw/koln/Rhein-Erft-Kreis/frechen/johann_schmitz_platz_frechen/009.jpg", title: { ru: "Старая ратуша Фрехена, 2026", ua: "Стара ратуша Фрехена, 2026", de: "Altes Rathaus Frechen, 2026" } },
+      ],
+      klüttenbrunnen_frechen: [
+        { path: "Germany/nrw/koln/Rhein-Erft-Kreis/frechen/johann_schmitz_platz_frechen/004.jpg", title: { ru: "Фонтан Клюттенбрюннен, 2026", ua: "Фонтан Клюттенбрюннен, 2026", de: "Klüttenbrunnen, 2026" } },
+      ],
+      rathausbrunnen_frechen: [
+        { path: "Germany/nrw/koln/Rhein-Erft-Kreis/frechen/johann_schmitz_platz_frechen/005.jpg", title: { ru: "Фонтан перед ратушей, 2026", ua: "Фонтан перед ратушею, 2026", de: "Brunnen vor dem Rathaus, 2026" } },
       ]
     },
     konigswinter: {
@@ -200,10 +206,26 @@ export const Fotos = {
       erloeserkirche_luedenscheid: [
         { path: "Germany/nrw/arnsberg/Märkischer-Kreis/luedenscheid/erloeserkirche_luedenscheid/001.JPG", title: { ru: "Церковь Спасителя в Люденшайде, 2006", ua: "Церква Спасителя в Люденшайді, 2006", de: "Die Erlöserkirche in Lüdenscheid, 2006" } },
       ],
+      brunnen_altstadt_luedenscheid:[
+        { path: "Germany/nrw/arnsberg/Märkischer-Kreis/luedenscheid/altstadt_luedenscheid/001.JPG", title: { ru: "Фонтан в старом городе, 2006", ua: "Фонтан у старому місті, 2006", de: "Brunnen in der Altstadt, 2006" } },
+      ],
       rathausplatz_luedenscheid: [
         { path: "Germany/nrw/arnsberg/Märkischer-Kreis/luedenscheid/rathausplatz_lüdenscheid/001.JPG", title: { ru: "Центральная площадь Люденшайда, 2006", ua: "Центральна площа Люденшайда, 2006", de: "Rathausplatz, 2006" } },
         { path: "Germany/nrw/arnsberg/Märkischer-Kreis/luedenscheid/rathausplatz_lüdenscheid/002.JPG", title: { ru: "Центральная площадь Люденшайда, 2006", ua: "Центральна площа Люденшайда, 2006", de: "Rathausplatz, 2006" } },
         { path: "Germany/nrw/arnsberg/Märkischer-Kreis/luedenscheid/002.JPG", title: { ru: "Центральная площадь Люденшайда, 2006", ua: "Центральна площа Люденшайда - 2006", de: "Rathausplatz, 2006" } },
+      ],
+      sternplatz: [
+        { path: "Germany/nrw/arnsberg/Märkischer-Kreis/luedenscheid/sternplatz/003.jpg", title: { ru: "Площадь Штернплац, 2006", ua: "Площа Штернплац, 2006", de: "Sternplatz, 2006" } },
+        { path: "Germany/nrw/arnsberg/Märkischer-Kreis/luedenscheid/sternplatz/001.JPG", title: { ru: "Памятник дяде Вилли, 2006", ua: "Пам'ятник дядьку Віллі, 2006", de: "Denkmal von Onkel Willi, 2006" } },
+      ],
+      onkel_willi_denkmal_sternplatz_luedenscheid: [
+        { path: "Germany/nrw/arnsberg/Märkischer-Kreis/luedenscheid/sternplatz/001.JPG", title: { ru: "Памятник дяде Вилли, 2006", ua: "Пам'ятник дядьку Віллі, 2006", de: "Denkmal von Onkel Willi, 2006" } },
+      ],
+      fontain_sternplatz_luedenscheid: [
+        { path: "Germany/nrw/arnsberg/Märkischer-Kreis/luedenscheid/sternplatz/003.jpg", title: { ru: "Фонтан на площади Штернплац, 2006", ua: "Фонтан на площі Штернплац, 2006", de: "Brunnen auf dem Sternplatz, 2006" } },
+      ],
+      history_museum_luedenscheid: [
+        { path: "Germany/nrw/arnsberg/Märkischer-Kreis/luedenscheid/history_museum_luedenscheid/001.JPG", title: { ru: "Исторический музей Люденшайда (фото взято с интернета)", ua: "Історичний музей Люденшайда (фото взято з Інтернету)", de: "Geschichtsmuseum Lüdenscheid (Foto aus dem Internet)" } },
       ]
     }
 

@@ -71,7 +71,7 @@ const datas = [
             description: "Der Kölner Dom – Symbol der Stadt und Meisterwerk gotischer Architektur. Baugeschichte, Reliquien, Glasfenster, Glocken und Geheimnisse des Doms.",
             ogTitle: "Kölner Dom: Geschichte, Architektur und Reliquien",
             ogDescription: "Tauchen Sie ein in die Geschichte des Kölner Doms – Größe, Reliquien, Architektur und Intrigen des gotischen Meisterwerks.",
-            ogImage: "Germany/nrw/koln/koln-city/koln-cathedral/001.jpg"
+            ogImage: "https://our-travels.info/new/foto/Germany/nrw/koln/koln-city/koln-cathedral/001.jpg"
         }
     },
     {
@@ -130,7 +130,7 @@ const datas = [
             description: "Kölner Rathaus: gotischer Turm, Renaissance-Loggia",
             ogTitle: "Kölner Rathaus: gotischer Turm, Renaissance-Loggia",
             ogDescription: "Das Kölner Rathaus – das älteste Verwaltungsgebäude Deutschlands, vereint gotischen Turm, Renaissance-Loggia und den historischen Hansasaal.",
-            ogImage: "Germany/nrw/koln/koln-city/rathaus-koeln/Rathaus-Köln.jpg"
+            ogImage: "https://our-travels.info/new/foto/Germany/nrw/koln/koln-city/rathaus-koeln/Rathaus-Köln.jpg"
         }
     },
     {
@@ -185,7 +185,7 @@ const datas = [
             description: "Das Römisch-Germanische Museum ist ein einzigartiges archäologisches Museum in Köln, errichtet über einer römischen Villa. Dionysosmosaik, Glas, Schmuck und Geschichte der Stadt Colonia.",
             ogTitle: "Römisch-Germanisches Museum Köln — Geschichte und Dionysosmosaik",
             ogDescription: "Museum der antiken Colonia: Dionysosmosaik, römisches Glas und Archäologie in Köln. Erfahren Sie, wie die Antike unter der modernen Stadt erhalten blieb.",
-            ogImage: "Germany/nrw/koln/koln-city/roemisch-germanisches-museum/001.jpg"
+            ogImage: "https://our-travels.info/new/foto/Germany/nrw/koln/koln-city/roemisch-germanisches-museum/001.jpg"
         }
     },
     {
@@ -238,7 +238,7 @@ const datas = [
             description: "Das Duftmuseum im Farina-Haus, auch bekannt als Haus des Kölnisch Wassers, ist das älteste Duftmuseum in Köln und die Geburtsstätte des berühmten Eau de Cologne. Hier schuf Johann Maria Farina 1709 das erste Eau de Cologne.",
             ogTitle: "Farina-Haus in Köln – Haus des Kölnisch Wassers und Museum des Eau de Cologne",
             ogDescription: "Besuchen Sie das Duftmuseum im Farina-Haus, das auch als Haus des Kölnisch Wassers bekannt ist – die Heimat des legendären Eau de Cologne. Erleben Sie Geschichte, Düfte und die dreihundertjährige Tradition des Eau de Cologne.",
-            ogImage: "Germany/nrw/koln/koln-city/farina-duftmuseum/001.jpg"
+            ogImage: "https://our-travels.info/new/foto/Germany/nrw/koln/koln-city/farina-duftmuseum/001.jpg"
         }
     },
     {
@@ -293,7 +293,7 @@ const datas = [
             description: "Das Museum Ludwig in Köln ist eine der führenden Sammlungen zeitgenössischer Kunst weltweit, gegründet auf der Sammlung des deutschen Industriellen Peter Ludwig und seiner Frau Irene.",
             ogTitle: "Museum Ludwig — Zeitgenössische Kunst in Köln",
             ogDescription: "Besuchen Sie das Museum Ludwig in Köln, eine der führenden Sammlungen zeitgenössischer Kunst weltweit, gegründet auf der Sammlung des deutschen Industriellen Peter Ludwig und seiner Frau Irene.",
-            ogImage: "Germany/nrw/koln/koln-city/museum-ludwig/001.jpg"
+            ogImage: "https://our-travels.info/new/foto/Germany/nrw/koln/koln-city/museum-ludwig/001.jpg"
         }
     },
     {
@@ -349,7 +349,7 @@ const datas = [
             description: "Das Schokoladenmuseum in Köln zeigt den Weg des Kakaos von der tropischen Plantage bis zur Schokoladentafel. Besuchen Sie die gläserne Fabrik, den 200-kg-Schokoladenbrunnen und entdecken Sie die Geschichte der süßen Versuchung.",
             ogTitle: "Schokoladenmuseum Köln – Das süßeste Museum Deutschlands",
             ogDescription: "Tauchen Sie ein in die Welt von Kakao und Schokolade in Köln: von alten Zivilisationen bis zur modernen Fabrik und dem berühmten Schokoladenbrunnen.",
-            ogImage: "Germany/nrw/koln/koln-city/schokoladenmuseum/001.jpg"
+            ogImage: "https://our-travels.info/new/foto/Germany/nrw/koln/koln-city/schokoladenmuseum/001.jpg"
         }
     },
     {
@@ -424,7 +424,7 @@ const datas = [
             description: "MiQua – ein unterirdisches Museum im Zentrum von Köln, das römische, jüdische und mittelalterliche archäologische Schichten der Stadt zeigt.",
             ogTitle: "MiQua – Museum im archäologischen Viertel Köln",
             ogDescription: "Das unterirdische Museum MiQua ermöglicht das Durchschreiten von 2000 Jahren Kölner Geschichte, einschließlich Praetorium, Mikwe und mittelalterlicher Bauten.",
-            ogImage: "Germany/nrw/koln/koln-city/miqua/001.jpg"
+            ogImage: "https://our-travels.info/new/foto/Germany/nrw/koln/koln-city/miqua/001.jpg"
         }
     },
     {
@@ -478,7 +478,7 @@ const datas = [
             "description": "Beschreibung der acht Kölner Brücken: Geschichte, Besonderheiten, interessante Fakten, inklusive der Liebesbrücke Hohenzollernbrücke.",
             "ogTitle": "Kölner Rheinbrücken",
             "ogDescription": "Vollständige Beschreibung aller acht Kölner Rheinbrücken mit Fakten, Geschichte und Architektur.",
-            "ogImage": "Germany/nrw/koln/koln-city/koln_bridges/001.jpg"
+            "ogImage": "https://our-travels.info/new/foto/Germany/nrw/koln/koln-city/koln_bridges/001.jpg"
         }
     },
     {
@@ -546,7 +546,7 @@ const datas = [
             description: "Botanischer Garten und Forstpark Köln mit Pflanzen aus aller Welt und thematischen Zonen, einschließlich Friedenswald.",
             ogTitle: "Forstbotanischer Garten – Botanischer Garten und Forstpark Köln",
             ogDescription: "Der Garten und Forstpark Köln bieten Spaziergänge durch die Rhododendron-Ravine, den Japanischen Garten, die Heidewiese und den Friedenswald.",
-            ogImage: "Germany/nrw/koln/koln-city/forstbotanischer_garten/001.jpg"
+            ogImage: "https://our-travels.info/new/foto/Germany/nrw/koln/koln-city/forstbotanischer_garten/001.jpg"
         }
     },
     {
@@ -606,7 +606,7 @@ const datas = [
             description: "Das Wallraf-Richartz-Museum in Köln ist das älteste Museum der Stadt mit Sammlungen von Malerei, Skulptur und Grafik vom Mittelalter bis zum frühen 20. Jh., einschließlich des Fonds Fondation Corboud mit Impressionisten.",
             ogTitle: "Wallraf-Richartz-Museum — Kunst vom Mittelalter bis zum Impressionismus",
             ogDescription: "Entdecken Sie das Wallraf-Richartz-Museum in Köln: Mittelalterliche und barocke Kunst sowie die Impressionisten-Sammlung Fondation Corboud.",
-            ogImage: "Germany/nrw/koln/koln-city/wallraf_richartz_museum/001.jpg"
+            ogImage: "https://our-travels.info/new/foto/Germany/nrw/koln/koln-city/wallraf_richartz_museum/001.jpg"
         }
     },
 
@@ -675,7 +675,7 @@ const datas = [
             description: "Das Ensemble der Schlösser Augustusburg und Falkenlust in Brühl – ein Meisterwerk des Barock und Rokoko, ergänzt durch französische und englische Gärten, Brunnen, Alleen und Spiegelbecken. Geschichte, Stil, interessante Fakten.",
             ogTitle: "Brühler Schlösser: Architektur, Gärten und Legenden",
             ogDescription: "Entdecken Sie die Brühler Schlösser – ihre Pracht, Innenräume, den Park mit Parterre, Alleen und englischem Landschaftsgarten, ihre kulturelle Bedeutung und ihren UNESCO-Status.",
-            ogImage: "Germany/nrw/koln/Rhein-Erft-Kreis/bruhl/bruhel_palaces/001.jpg"
+            ogImage: "https://our-travels.info/new/foto/Germany/nrw/koln/Rhein-Erft-Kreis/bruhl/bruhel_palaces/001.jpg"
         }
     },
     {
@@ -727,7 +727,7 @@ const datas = [
             description: "Das einzige Museum weltweit, das Max Ernst gewidmet ist. Sammlung, Geschichte, Dadaismus, Surrealismus, Sonderausstellungen.",
             ogTitle: "Max-Ernst-Museum — Brühl, Deutschland",
             ogDescription: "Entdecken Sie das Max-Ernst-Museum in Brühl, seine Sammlung und Ausstellungen, die dem Dadaismus und Surrealismus gewidmet sind.",
-            ogImage: "Germany/nrw/koln/Rhein-Erft-Kreis/bruhl/max_ernst_museum/Max-Ernst-Museum.jpg"
+            ogImage: "https://our-travels.info/new/foto/Germany/nrw/koln/Rhein-Erft-Kreis/bruhl/max_ernst_museum/Max-Ernst-Museum.jpg"
         }
     },
     {
@@ -738,7 +738,7 @@ const datas = [
         regionsPath: "nrw",
         districtPath: "koln",
         cityPath: "bruhl",
-        fotoCard: "../../Gallery/Germany/Bruhl/Full/001.jpg",
+        fotoCard: "Germany/nrw/koln/Rhein-Erft-Kreis/bruhl/phantasialand/001.jpg",
         location: "Brühl, Deutschland",
         address: [{ bold: "Adresse:", text: " Berggeiststraße 31–41, 50321 Brühl, Deutschland" }],
         officialSite: [
@@ -787,7 +787,7 @@ const datas = [
             description: "Phantasialand – einer der meistbesuchten Parks Europas mit über 30 Attraktionen, Themenbereichen und einzigartigen Hotels.",
             ogTitle: "Phantasialand – Brühl, Deutschland",
             ogDescription: "Entdecken Sie Phantasialand in Brühl: Attraktionen, Themenbereiche, Hotels und Unterhaltung für die ganze Familie.",
-            ogImage: "../../Gallery/Germany/Bruhl/Full/001.jpg"
+            ogImage: "https://our-travels.info/new/foto/Germany/nrw/koln/Rhein-Erft-Kreis/bruhl/phantasialand/001.jpg"
         },
     },
 
@@ -844,7 +844,7 @@ const datas = [
             description: "KERAMION: Dauerausstellung und Sonderausstellungen von Keramik, Geschichte der Produktion und zeitgenössische künstlerische Perspektiven.",
             ogTitle: "KERAMION – Zentrum für moderne und historische Keramik, Frechen",
             ogDescription: "Erfahren Sie mehr über die Sammlung von Cremer, die historische Keramik aus Frechen und die Ausstellungen im KERAMION.",
-            ogImage: "Germany/nrw/koln/Rhein-Erft-Kreis/frechen/keramion/frechen_keramion.jpg"
+            ogImage: "https://our-travels.info/new/foto/Germany/nrw/koln/Rhein-Erft-Kreis/frechen/keramion/frechen_keramion.jpg"
         }
     },
     {
@@ -897,13 +897,13 @@ const datas = [
             description: "Burg Bachem: Geschichte, Wassergräben, Spazierbereiche und Erholung am kleinen See in Frechen.",
             ogTitle: "Burg Bachem – Frechen, Deutschland",
             ogDescription: "Entdecken Sie die historische Wasserburg Burg Bachem und den See mit Spazierwegen in Frechen.",
-            ogImage: "Germany/nrw/koln/Rhein-Erft-Kreis/frechen/burg-bachem/Burg-Bachem_3.jpg"
+            ogImage: "https://our-travels.info/new/foto/Germany/nrw/koln/Rhein-Erft-Kreis/frechen/burg-bachem/Burg-Bachem_3.jpg"
         }
     },
     {
         id: "johann_schmitz_platz_frechen",
         name: "Johann-Schmitz-Platz («Rathausplatz»)",
-        type: ['historical_building'],
+        type: ['square'],
         path: "johann_schmitz_platz_frechen",
         regionsPath: "nrw",
         districtPath: "koln",
@@ -950,7 +950,7 @@ const datas = [
             description: "Der Johann-Schmitz-Platz ist der zentrale Stadtplatz von Frechen mit Märkten, Veranstaltungen und historischem Rathaus.",
             ogTitle: "Johann-Schmitz-Platz – Frechen, Deutschland",
             ogDescription: "Entdecken Sie den zentralen Platz von Frechen – Johann-Schmitz-Platz mit historischem Rathaus, Märkten und städtischer Atmosphäre.",
-            ogImage: "Germany/nrw/koln/Rhein-Erft-Kreis/frechen/johann_schmitz_platz_frechen/001.jpg"
+            ogImage: "https://our-travels.info/new/foto/Germany/nrw/koln/Rhein-Erft-Kreis/frechen/johann_schmitz_platz_frechen/001.jpg"
         }
     },
     {
@@ -1004,7 +1004,7 @@ const datas = [
             description: "Das Alte Rathaus Frechen – ein historisches Verwaltungsgebäude mit Turm auf dem Johann-Schmitz-Platz im Zentrum der Stadt, Nordrhein-Westfalen.",
             ogTitle: "Altes Rathaus Frechen – Frechen, Deutschland",
             ogDescription: "Entdecken Sie das Alte Rathaus Frechen mit seinem charakteristischen Turm und der neobarocken Architektur auf dem Johann-Schmitz-Platz.",
-            ogImage: "Germany/nrw/koln/Rhein-Erft-Kreis/frechen/altes_rathaus_frechen/001.jpg"
+            ogImage: "https://our-travels.info/new/foto/Germany/nrw/koln/Rhein-Erft-Kreis/frechen/altes_rathaus_frechen/001.jpg"
         }
     },
     {
@@ -1012,28 +1012,52 @@ const datas = [
         "name": "Brunnen vor dem Rathaus",
         "type": ["monument_or_fountain"],
         "path": "rathausbrunnen_frechen",
-        "slug": "rathausbrunnen_frechen",
         "hiddenFromList": true,
         "regionsPath": "nrw",
         "districtPath": "koln",
         "cityPath": "frechen",
         "countryPath": "germany",
         "fotoCard": "Germany/nrw/koln/Rhein-Erft-Kreis/frechen/johann_schmitz_platz_frechen/005.jpg",
-        "short_description": "Auf dem Platz vor dem alten Rathaus befindet sich ein dekorativer Bezirksbrunnen, der 1981 vom Keramikkünstler Wim Mühlendyck geschaffen wurde. Er ist mit keramischen Platten verkleidet, die Reliefdarstellungen von Szenen zeigen, die die Entwicklung des Handwerks und der Keramikindustrie in Frechen widerspiegeln – von traditionellen Handwerkern bis zur Fabrikproduktion, während die verschiedenen Maskarone (Gesichter) charakteristische Wasserstrahlen des Brunnens bilden."
+        short_description: "Auf dem Platz vor dem alten Rathaus befindet sich ein dekorativer Bezirksbrunnen, der 1981 vom Keramikkünstler Wim Mühlendyck geschaffen wurde. Er ist mit keramischen Platten verkleidet, die Reliefdarstellungen von Szenen zeigen, die die Entwicklung des Handwerks und der Keramikindustrie in Frechen widerspiegeln – von traditionellen Handwerkern bis zur Fabrikproduktion, während die verschiedenen Maskarone (Gesichter) charakteristische Wasserstrahlen des Brunnens bilden.",
+        full_description: {
+            title: "Beschreibung und Geschichte",
+            items: [
+                { text: "Auf dem Platz vor dem alten Rathaus befindet sich ein dekorativer Bezirksbrunnen, der 1981 vom Keramikkünstler Wim Mühlendyck geschaffen wurde. Er ist mit keramischen Platten verkleidet, die Reliefdarstellungen von Szenen zeigen, die die Entwicklung des Handwerks und der Keramikindustrie in Frechen widerspiegeln – von traditionellen Handwerkern bis zur Fabrikproduktion, während die verschiedenen Maskarone (Gesichter) charakteristische Wasserstrahlen des Brunnens bilden." }
+            ]
+        },
+        meta: {
+            title: "Dekorativer Bezirksbrunnen – historisches Objekt vor dem alten Rathaus von Frechen",
+            description: "Auf dem Platz vor dem alten Rathaus befindet sich ein dekorativer Bezirksbrunnen, der 1981 vom Keramikkünstler Wim Mühlendyck geschaffen wurde. Er ist mit Keramikplatten mit Reliefszenen bedeckt, die die Entwicklung des Handwerks und der Keramikindustrie in Frechen zeigen – von traditionellen Handwerkern bis zur Fabrikproduktion, und verschiedene Maskarone (Gesichter) dienen als charakteristische Wasserstrahlen des Brunnens.",
+            ogTitle: "Dekorativer Bezirksbrunnen vor dem alten Rathaus von Frechen",
+            ogDescription: "Der Brunnen auf dem Platz vor dem alten Rathaus in Frechen, 1981 vom Keramikkünstler Wim Mühlendyck geschaffen, ist mit Keramikplatten mit Reliefszenen des Handwerks und der Keramikindustrie sowie Maskaronen mit Wasserstrahlen gestaltet.",
+            ogImage: "https://our-travels.info/new/Germany/nrw/koln/Rhein-Erft-Kreis/frechen/johann_schmitz_platz_frechen/005.jpg"
+        }
     },
     {
         "id": "klüttenbrunnen_frechen",
         "name": "Klüttenbrunnen",
         "type": ["monument_or_fountain"],
         "path": "klüttenbrunnen_frechen",
-        "slug": "klüttenbrunnen_frechen",
         "hiddenFromList": true,
         "regionsPath": "nrw",
         "districtPath": "koln",
         "cityPath": "frechen",
         "countryPath": "germany",
         "fotoCard": "Germany/nrw/koln/Rhein-Erft-Kreis/frechen/johann_schmitz_platz_frechen/004.jpg",
-        "short_description": "In der Fußgängerzone wurde 1986 der skulpturale Brunnen Klüttenbrunnen vom deutschen Bildhauer Olaf Höhnen errichtet. Er befindet sich in der Nähe des Johann-Schmitz-Platz und spiegelt die industrielle und handwerkliche Geschichte Frechens wider, insbesondere den Abbau und die Verarbeitung von lokalem Ton. Der Brunnen ist als künstlerische Komposition mit Steinelementen und Wasserstrahlen gestaltet, fügt sich harmonisch in das Stadtbild ein und dient als visueller Orientierungspunkt für Besucher."
+        short_description: "In der Fußgängerzone wurde 1986 der skulpturale Brunnen Klüttenbrunnen vom deutschen Bildhauer Olaf Höhnen errichtet. Er befindet sich in der Nähe des Johann-Schmitz-Platz und spiegelt die industrielle und handwerkliche Geschichte Frechens wider, insbesondere den Abbau und die Verarbeitung von lokalem Ton. Der Brunnen ist als künstlerische Komposition mit Steinelementen und Wasserstrahlen gestaltet, fügt sich harmonisch in das Stadtbild ein und dient als visueller Orientierungspunkt für Besucher.",
+        full_description: {
+            title: "Beschreibung und Geschichte",
+            items: [
+                { text: "In der Fußgängerzone wurde 1986 der skulpturale Brunnen Klüttenbrunnen vom deutschen Bildhauer Olaf Höhnen errichtet. Er befindet sich in der Nähe des Johann-Schmitz-Platz und spiegelt die industrielle und handwerkliche Geschichte Frechens wider, insbesondere den Abbau und die Verarbeitung von lokalem Ton. Der Brunnen ist als künstlerische Komposition mit Steinelementen und Wasserstrahlen gestaltet, fügt sich harmonisch in das Stadtbild ein und dient als visueller Orientierungspunkt für Besucher." }
+            ]
+        },
+        meta: {
+            title: "Klüttenbrunnen – historisches Skulpturenobjekt",
+            description: "In der Fußgängerzone wurde 1986 der Skulpturenbrunnen Klüttenbrunnen (Klüttenbrunnen) des deutschen Bildhauers Olaf Hönen errichtet. Er befindet sich in der Nähe des Johann-Schmitz-Platzes und spiegelt die industrielle und handwerkliche Geschichte Frechens wider, insbesondere den Abbau und die Verarbeitung des lokalen Tons. Der Brunnen ist als künstlerische Komposition mit Steinelementen und Wasserstrahlen gestaltet, harmoniert mit der städtischen Umgebung und dient als visueller Orientierungspunkt für Touristen.",
+            ogTitle: "Klüttenbrunnen in Frechen",
+            ogDescription: "Der Skulpturenbrunnen Klüttenbrunnen (Klüttenbrunnen) in der Fußgängerzone nahe dem Johann-Schmitz-Platz spiegelt die industrielle und handwerkliche Geschichte Frechens wider und ist als künstlerische Komposition mit Steinelementen und Wasserstrahlen gestaltet.",
+            ogImage: "https://our-travels.info/new/foto/Germany/nrw/koln/Rhein-Erft-Kreis/frechen/johann_schmitz_platz_frechen/004.jpg"
+        }
     },
 
     //Rhein-Sieg-Kreis
@@ -1105,7 +1129,7 @@ const datas = [
             description: "Der Drachenfels bei Königswinter ist ein legendärer Berg des Rheintals, eng verbunden mit der Sage von Siegfried und dem Drachen. Panoramablicke auf den Rhein, Burgruinen, der Naturpark Siebengebirge und beliebte Wanderwege machen ihn zu einem der bekanntesten Ausflugsziele der Region.",
             ogTitle: "Berg Drachenfels — Legenden und Panoramablicke am Rhein",
             ogDescription: "Entdecken Sie den Drachenfels: Drachenmythen, Ausblicke über den Rhein, den Naturpark Siebengebirge und die historische Bedeutung eines der bekanntesten Berge der Region.",
-            ogImage: "Germany/nrw/koln/Rhein-Sieg-Kreis/konigswinter/drachenfels/001.jpg"
+            ogImage: "https://our-travels.info/new/foto/Germany/nrw/koln/Rhein-Sieg-Kreis/konigswinter/drachenfels/001.jpg"
         }
     },
     {
@@ -1161,7 +1185,7 @@ const datas = [
             description: "Die Drachenfelsbahn ist eine historische Zahnradbahn aus dem Jahr 1883 in Königswinter. Sie verbindet das Rheintal mit dem Plateau des Drachenfels und zählt zu den wichtigsten touristischen Attraktionen der Region.",
             ogTitle: "Drachenfelsbahn",
             ogDescription: "Erleben Sie eine Fahrt mit der Drachenfelsbahn — der ältesten noch betriebenen Zahnradbahn Deutschlands mit Panoramablicken auf den Rhein und den Drachenfels.",
-            ogImage: "Germany/nrw/koln/Rhein-Sieg-Kreis/konigswinter/drachenfels/002.jpg"
+            ogImage: "https://our-travels.info/new/foto/Germany/nrw/koln/Rhein-Sieg-Kreis/konigswinter/drachenfels/002.jpg"
         }
     },
     {
@@ -1224,7 +1248,7 @@ const datas = [
             description: "Schloss Drachenburg liegt am Hang des Drachenfels in Königswinter. Erbaut 1882-1884, beeindruckt das Schloss durch neugotische Architektur, prächtige Innenräume und Panoramablicke ins Rheintal.",
             ogTitle: "Schloss Drachenburg",
             ogDescription: "Besuchen Sie Schloss Drachenburg – ein romantisches neugotisches Schloss des 19. Jahrhunderts mit historischen Sälen, Glasfenstern und Aussichtsterrassen mit Blick auf Rhein und Drachenfels.",
-            ogImage: "Germany/nrw/koln/Rhein-Sieg-Kreis/konigswinter/drachenfels/001.jpg"
+            ogImage: "https://our-travels.info/new/foto/Germany/nrw/koln/Rhein-Sieg-Kreis/konigswinter/drachenfels/001.jpg"
         }
     },
     {
@@ -1269,7 +1293,7 @@ const datas = [
             description: "Die Ruinen der Burg Drachenfels befinden sich auf dem Gipfel des gleichnamigen Berges im Siebengebirge. Erhalten sind Mauerreste und Türme mit Panoramablick auf den Rhein und Königswinter.",
             ogTitle: "Ruinen der Burg Drachenfels (Burg Drachenfels)",
             ogDescription: "Besuchen Sie die Ruinen der Burg Drachenfels – eine mittelalterliche Festung aus dem 12. Jahrhundert mit beeindruckendem Blick auf das Rheintal.",
-            ogImage: "Germany/nrw/koln/Rhein-Sieg-Kreis/konigswinter/drachenfels/003.jpg"
+            ogImage: "https://our-travels.info/new/foto/Germany/nrw/koln/Rhein-Sieg-Kreis/konigswinter/drachenfels/003.jpg"
         }
     },
     {
@@ -1312,7 +1336,7 @@ const datas = [
             description: "Die Nibelungenhalle ist ein 1913 erbautes Museum auf dem Drachenfels, das der Nibelungensage und Drachenlegenden gewidmet ist. In der Nähe befindet sich die Drachenhöhle.",
             ogTitle: "Nibelungenhalle auf dem Drachenfels",
             ogDescription: "Besuchen Sie die Nibelungenhalle – ein Museum der Mythen und Legenden mit Blick auf das Rheintal und die Drachenhöhle.",
-            ogImage: "Germany/nrw/koln/Rhein-Sieg-Kreis/konigswinter/drachenfels/004.jpg"
+            ogImage: "https://our-travels.info/new/foto/Germany/nrw/koln/Rhein-Sieg-Kreis/konigswinter/drachenfels/004.jpg"
         }
     },
     {
@@ -1365,7 +1389,7 @@ const datas = [
             description: "Der Reptile Zoo auf dem Drachenfels ist ein zoologischer Park, in dem man Schlangen, Eidechsen, Schildkröten und seltene exotische Tiere sehen sowie an interaktiven Vorführungen und Bildungsprogrammen teilnehmen kann.",
             ogTitle: "Reptilienzoo Drachenfels",
             ogDescription: "Besuchen Sie den Reptile Zoo auf dem Drachenfels – ein Zoo mit seltenen Reptilien, interaktiven Fütterungs‑Vorführungen und Bildungsprogrammen für Kinder und Erwachsene.",
-            ogImage: "Germany/nrw/koln/Rhein-Sieg-Kreis/konigswinter/drachenfels/005.jpg"
+            ogImage: "https://our-travels.info/new/foto/Germany/nrw/koln/Rhein-Sieg-Kreis/konigswinter/drachenfels/005.jpg"
         }
     },
 
@@ -1374,7 +1398,6 @@ const datas = [
     // Märkischer Kreis
 
     // Lüdenscheid    
-
     {
         id: "altstadt_luedenscheid",
         name: "Altstadt von Lüdenscheid",
@@ -1419,7 +1442,7 @@ const datas = [
             description: "Die Altstadt von Lüdenscheid ist der mittelalterliche Teil der Stadt mit historischen Gebäuden des 18.–19. Jahrhunderts, der Erlöserkirche, Resten der Stadtmauer und dem historischen Museum. Schlendern Sie durch die gemütlichen Gassen und spüren Sie die Atmosphäre vergangener Jahrhunderte.",
             ogTitle: "Altstadt von Lüdenscheid",
             ogDescription: "Besuchen Sie die Altstadt von Lüdenscheid – den historischen Teil der Stadt mit barocken Häusern, der Erlöserkirche, dem historischen Museum und den Resten der mittelalterlichen Stadtmauer.",
-            ogImage: "Germany/nrw/arnsberg/Märkischer-Kreis/luedenscheid/001.JPG"
+            ogImage: "https://our-travels.info/new/foto/Germany/nrw/arnsberg/Märkischer-Kreis/luedenscheid/001.JPG"
         }
     },
     {
@@ -1476,78 +1499,247 @@ const datas = [
             description: "Die Erlöserkirche (Erlöserkirche) ist die älteste Kirche Lüdenscheids, errichtet im 12. Jahrhundert mit klassizistischer Fassade, Emporen und lutherischem Altar. Besuchen Sie dieses historische Gotteshaus im Zentrum der Altstadt und spüren Sie die Atmosphäre vergangener Jahrhunderte.",
             ogTitle: "Erlöserkirche, Lüdenscheid",
             ogDescription: "Entdecken Sie die Erlöserkirche in Lüdenscheid – ein historisches Gotteshaus mit Turm, Emporen und lutherischem Altar, ein architektonisches Wahrzeichen der Altstadt.",
-            ogImage: "Germany/nrw/arnsberg/Märkischer-Kreis/luedenscheid/erloeserkirche_luedenscheid/001.JPG"
+            ogImage: "https://our-travels.info/new/foto/Germany/nrw/arnsberg/Märkischer-Kreis/luedenscheid/erloeserkirche_luedenscheid/001.JPG"
         }
     },
-{
-    id: "brunnen_altstadt_luedenscheid",
-    name: "Brunnen in der Altstadt",
-    type: "monument_or_fountain",
-    path: "brunnen_altstadt_luedenscheid",
-    countryPath: "germany",
-    regionsPath: "nrw",
-    districtPath: "arnsberg",
-    cityPath: "luedenscheid",
-    fotoCard: "Germany/nrw/arnsberg/Märkischer-Kreis/luedenscheid/altstadt_luedenscheid/001.JPG",
-    hiddenFromList: true,
-    short_description: "Der Brunnen befindet sich in der historischen Altstadt auf dem Graf-Engelbert-Platz – einem Platz, der dem Stadtgründer gewidmet ist. Er wurde im Jahr 1982 eröffnet und der Stadt von ihren Bürgern im Zuge der Altstadtsanierung gestiftet und wurde zu einem der Symbole der erneuerten historischen Zone. Bei der feierlichen Eröffnung betonten die örtlichen Behörden den Wunsch, den Brunnen zum „Herz des bürgerlichen Lebens“ der Altstadt zu machen. Seitdem zählt er zu den bedeutenden öffentlichen und kulturellen Objekten Lüdenscheids.",
-    short_description2: "Der Brunnen wurde vom Künstler und Metallgestalter K. T. Neumann (Kurt Toni Neumann) geschaffen, der in Lüdenscheid lebte und arbeitete und einen bedeutenden Beitrag zur plastischen Gestaltung der Stadt leistete. In der Gestaltung wird die Figur eines Herolds verwendet, die symbolisch den historischen Moment der Verleihung der Stadtrechte durch Graf Engelbert I., den Gründer Lüdenscheids, darstellt. Dieses Motiv spiegelt sich in den Reliefs und im gesamten thematischen Konzept der Anlage wider.",
-    full_description: {
-        title: "Beschreibung und Geschichte",
-        items: []
-    },
-    construction_period: "1982",
-    architects: "Der Brunnen wurde vom Künstler und Metallgestalter K. T. Neumann (Kurt Toni Neumann) geschaffen",
-    meta: {
-        title: "Brunnen am Graf-Engelbert-Platz – historischer Brunnen in der Altstadt von Lüdenscheid",
-        description: "Der Brunnen am Graf-Engelbert-Platz entstand 1982 im Zuge der Altstadtsanierung. Er gilt als eines der Wahrzeichen des historischen Zentrums von Lüdenscheid und ist mit der Figur eines Herolds geschmückt, die auf die Stadtgründung durch Graf Engelbert I. verweist.",
-        ogTitle: "Brunnen am Graf-Engelbert-Platz, Lüdenscheid",
-        ogDescription: "Besuchen Sie den Brunnen am Graf-Engelbert-Platz in Lüdenscheid – ein historisches Objekt der Altstadt, das mit der Stadtgründung und der Erneuerung des historischen Zentrums verbunden ist.",
-        ogImage: "Germany/nrw/arnsberg/Märkischer-Kreis/luedenscheid/altstadt_luedenscheid/001.JPG"
-    }
-},
     {
-	id: "rathausplatz_luedenscheid",
-	name: "Rathausplatz von Lüdenscheid",
-	type: "historical_building",
-	path: "rathausplatz_luedenscheid",
-	countryPath: "germany",
-	regionsPath: "nrw",
-	districtPath: "arnsberg",
-	cityPath: "luedenscheid",
-	fotoCard: "Germany/nrw/arnsberg/Märkischer-Kreis/luedenscheid/rathausplatz_lüdenscheid/001.JPG",
-	location: "Lüdenscheid, Deutschland",
-	short_description: "Der zentrale Platz von Lüdenscheid (Rathausplatz) ist das Herz der Stadt und ein wichtiger öffentlicher Raum in der Nähe des Rathauses und der Fußgängerzone. Hier finden Märkte, städtische Veranstaltungen und Treffen der Bewohner statt, und der Platz dient als Ausgangspunkt, um das historische Stadtzentrum zu erkunden.",
-	full_description: {
-		title: "Beschreibung und Geschichte",
-		items: [
-			{ bold: "Der zentrale Platz (Rathausplatz)", text: "– der zentrale Stadtplatz von Lüdenscheid, gelegen im historischen und administrativen Zentrum der Stadt. Funktional ähnelt dieser Raum einem klassischen Markt- oder Stadtplatz: Hier finden Fußgänger-Spaziergänge, Treffen, Veranstaltungen und ein Markt statt. Der Platz grenzt an die Gebäude der Stadtverwaltung (Neues Rathaus) und das Alte Rathaus sowie an das Hauptgeschäftsviertel, Cafés und bedeutende Gebäude des Zentrums." },
-			{ text: "Der zentrale Bereich des Platzes dient als logisches „Herz“ der Fußgängerzone und ist verbunden mit der Fußgängerstraße und Plätzen wie dem Sternplatz. Das architektonische Ensemble umfasst historische Gebäude sowie Bauten aus der Mitte des 20. Jahrhunderts, was eine Atmosphäre von Alt und relativ modernem Stadtzentrum schafft." },
-			{ bold: "Geschichte.", text: "Das Gebiet rund um den Rathausplatz bildet den historischen Kern von Lüdenscheid: die Altstadt mit engen Straßen und städtischen Bauten stammt aus dem Mittelalter, hat jedoch im Laufe der Jahrhunderte Brände und Rekonstruktionen erlebt. Die intensive Entwicklung der städtischen Infrastruktur begann im 19.–20. Jahrhundert, als sich rund um das historische Zentrum Handels- und Verwaltungsviertel bildeten. Dies führte zur Entstehung eines Ensembles aus Stadtverwaltung, Fußgängerzonen und moderner Planung des zentralen Raumes." },
-            { text: "Die moderne Gestaltung des Platzes hängt eng mit dem neuen Rathausgebäude zusammen, dessen Bau 1956 begann, und die Verwaltung 1964 dorthin zog. Dies ist das neue Stadtzentrum, um das heute der Raum des zentralen Stadtplatzes von Lüdenscheid gebildet wird." },
-			{ bold: "Funktionen und Leben des Platzes.", text: "Auf dem Platz findet täglich und regelmäßig der Wochenmarkt mittwochs und samstags statt, bei dem frische Produkte, Handwerkswaren und saisonale Produkte angeboten werden." },
-			{ text: "Jährlich findet im Zentrum das Stadtfest mit Zelten, Musik und Jahrmarkt statt, das den Platz in einen lebendigen Raum für Feierlichkeiten und Begegnungen verwandelt." },
-			{ text: "In der Wintersaison werden auf dem Rathausplatz und dem benachbarten Sternplatz oft Weihnachtsmarkt und Eisbahn organisiert." },
-			{ text: "Der Platz dient als wichtiger Treffpunkt für Bewohner und Besucher der Stadt, er liegt in der Fußgängerzone mit Geschäften, Cafés, Dienstleistungs- und Kultureinrichtungen, was ihn zum logischen Zentrum städtischer Aktivität und Ausgangspunkt für die Erkundung von Lüdenscheid macht." },
-		]
-	},
-	interesting_facts: {
-		title: "Interessante Fakten",
-		items: [
-			{ bold: "Der zentrale Platz sah nicht immer so aus wie heute:", text: "nach dem Zweiten Weltkrieg wurde das Stadtzentrum stark umgebaut, und die heutige Planung ist das Ergebnis der Nachkriegsrekonstruktion." },
-			{ bold: "Der zentrale Platz ist nicht nur ein Platz, sondern ein Knotenpunkt von Fußgängerwegen,", text: "der die Altstadt, das Geschäftsviertel und das Verwaltungszentrum verbindet." },
-			{ bold: "Während städtischer Feste wird der Platz vollständig gesperrt,", text: "und hier finden die größten Veranstaltungen in Lüdenscheid statt – vom Weihnachtsmarkt bis zu Sommerfesten." }
-		]
-	},
-	meta: {
-		title: "Zentraler Platz von Lüdenscheid – Rathausplatz und Herz der Stadt",
-		description: "Der zentrale Platz von Lüdenscheid (Rathausplatz) ist der wichtigste öffentliche Raum der Stadt neben dem Rathaus. Hier finden Märkte, städtische Veranstaltungen und Treffen der Bewohner statt, und der Platz dient als Ausgangspunkt für Spaziergänge im Zentrum.",
-		ogTitle: "Zentraler Platz von Lüdenscheid",
-		ogDescription: "Der zentrale Platz von Lüdenscheid (Rathausplatz) ist der zentrale Stadtplatz neben dem Rathaus, ein Ort für Märkte, Feste und wichtige städtische Veranstaltungen.",
-		ogImage: "Germany/nrw/arnsberg/Märkischer-Kreis/luedenscheid/rathausplatz_lüdenscheid/001.JPG"
-	}
-}
-
+        id: "brunnen_altstadt_luedenscheid",
+        name: "Brunnen in der Altstadt",
+        type: ["monument_or_fountain"],
+        path: "brunnen_altstadt_luedenscheid",
+        countryPath: "germany",
+        regionsPath: "nrw",
+        districtPath: "arnsberg",
+        cityPath: "luedenscheid",
+        fotoCard: "Germany/nrw/arnsberg/Märkischer-Kreis/luedenscheid/altstadt_luedenscheid/001.JPG",
+        hiddenFromList: true,
+        short_description: "Der Brunnen befindet sich in der historischen Altstadt auf dem Graf-Engelbert-Platz – einem Platz, der dem Stadtgründer gewidmet ist. Er wurde im Jahr 1982 eröffnet und der Stadt von ihren Bürgern im Zuge der Altstadtsanierung gestiftet und wurde zu einem der Symbole der erneuerten historischen Zone. Bei der feierlichen Eröffnung betonten die örtlichen Behörden den Wunsch, den Brunnen zum „Herz des bürgerlichen Lebens“ der Altstadt zu machen. Seitdem zählt er zu den bedeutenden öffentlichen und kulturellen Objekten Lüdenscheids.",
+        short_description2: "Der Brunnen wurde vom Künstler und Metallgestalter K. T. Neumann (Kurt Toni Neumann) geschaffen, der in Lüdenscheid lebte und arbeitete und einen bedeutenden Beitrag zur plastischen Gestaltung der Stadt leistete. In der Gestaltung wird die Figur eines Herolds verwendet, die symbolisch den historischen Moment der Verleihung der Stadtrechte durch Graf Engelbert I., den Gründer Lüdenscheids, darstellt. Dieses Motiv spiegelt sich in den Reliefs und im gesamten thematischen Konzept der Anlage wider.",
+        full_description: {
+            title: "Beschreibung und Geschichte",
+            items: [
+                { bold: "Brunnen", text: " befindet sich in der historischen Altstadt, auf dem Graf-Engelbert-Platz – einem Platz, der dem ersten Gründer der Stadt gewidmet ist. Er wurde 1982 eröffnet und den Bürgern der Stadt von den Einwohnern während der Sanierung der Altstadt geschenkt, und wurde zu einem der Symbole der erneuerten historischen Zone. Bei der feierlichen Eröffnung betonte die Stadtverwaltung den Wunsch, den Brunnen zum „Herzen des bürgerlichen Lebens“ der Altstadt zu machen. Seitdem gehört er zu den bedeutenden öffentlichen und kulturellen Einrichtungen von Lüdenscheid." },
+                { text: "Der Brunnen wurde vom Künstler und Metallgestalter K.T. Neumann geschaffen, der in Lüdenscheid lebte und arbeitete und einen bedeutenden Beitrag zur skulpturalen Gestaltung der Stadt leistete. Im Design wird die Figur eines Herolds verwendet, die symbolisch den historischen Moment – die Verkündung der Stadtrechte durch Graf Engelbert I., den Gründer von Lüdenscheid – hervorhebt. Dieses Motiv spiegelt sich in den Reliefs und der gesamten thematischen Komposition wider." }
+            ]
+        },
+        construction_period: "1982",
+        architects: "Der Brunnen wurde vom Künstler und Metallgestalter K. T. Neumann (Kurt Toni Neumann) geschaffen",
+        meta: {
+            title: "Brunnen am Graf-Engelbert-Platz – historischer Brunnen in der Altstadt von Lüdenscheid",
+            description: "Der Brunnen am Graf-Engelbert-Platz entstand 1982 im Zuge der Altstadtsanierung. Er gilt als eines der Wahrzeichen des historischen Zentrums von Lüdenscheid und ist mit der Figur eines Herolds geschmückt, die auf die Stadtgründung durch Graf Engelbert I. verweist.",
+            ogTitle: "Brunnen am Graf-Engelbert-Platz, Lüdenscheid",
+            ogDescription: "Besuchen Sie den Brunnen am Graf-Engelbert-Platz in Lüdenscheid – ein historisches Objekt der Altstadt, das mit der Stadtgründung und der Erneuerung des historischen Zentrums verbunden ist.",
+            ogImage: "https://our-travels.info/new/foto/Germany/nrw/arnsberg/Märkischer-Kreis/luedenscheid/altstadt_luedenscheid/001.JPG"
+        }
+    },
+    {
+        id: "rathausplatz_luedenscheid",
+        name: "Rathausplatz von Lüdenscheid",
+        type: ["square"],
+        path: "rathausplatz_luedenscheid",
+        countryPath: "germany",
+        regionsPath: "nrw",
+        districtPath: "arnsberg",
+        cityPath: "luedenscheid",
+        fotoCard: "Germany/nrw/arnsberg/Märkischer-Kreis/luedenscheid/rathausplatz_lüdenscheid/001.JPG",
+        location: "Lüdenscheid, Deutschland",
+        short_description: "Der zentrale Platz von Lüdenscheid (Rathausplatz) ist das Herz der Stadt und ein wichtiger öffentlicher Raum in der Nähe des Rathauses und der Fußgängerzone. Hier finden Märkte, städtische Veranstaltungen und Treffen der Bewohner statt, und der Platz dient als Ausgangspunkt, um das historische Stadtzentrum zu erkunden.",
+        full_description: {
+            title: "Beschreibung und Geschichte",
+            items: [
+                { bold: "Der zentrale Platz (Rathausplatz)", text: "– der zentrale Stadtplatz von Lüdenscheid, gelegen im historischen und administrativen Zentrum der Stadt. Funktional ähnelt dieser Raum einem klassischen Markt- oder Stadtplatz: Hier finden Fußgänger-Spaziergänge, Treffen, Veranstaltungen und ein Markt statt. Der Platz grenzt an die Gebäude der Stadtverwaltung (Neues Rathaus) und das Alte Rathaus sowie an das Hauptgeschäftsviertel, Cafés und bedeutende Gebäude des Zentrums." },
+                { text: "Der zentrale Bereich des Platzes dient als logisches „Herz“ der Fußgängerzone und ist verbunden mit der Fußgängerstraße und Plätzen wie dem Sternplatz. Das architektonische Ensemble umfasst historische Gebäude sowie Bauten aus der Mitte des 20. Jahrhunderts, was eine Atmosphäre von Alt und relativ modernem Stadtzentrum schafft." },
+                { bold: "Geschichte.", text: "Das Gebiet rund um den Rathausplatz bildet den historischen Kern von Lüdenscheid: die Altstadt mit engen Straßen und städtischen Bauten stammt aus dem Mittelalter, hat jedoch im Laufe der Jahrhunderte Brände und Rekonstruktionen erlebt. Die intensive Entwicklung der städtischen Infrastruktur begann im 19.–20. Jahrhundert, als sich rund um das historische Zentrum Handels- und Verwaltungsviertel bildeten. Dies führte zur Entstehung eines Ensembles aus Stadtverwaltung, Fußgängerzonen und moderner Planung des zentralen Raumes." },
+                { text: "Die moderne Gestaltung des Platzes hängt eng mit dem neuen Rathausgebäude zusammen, dessen Bau 1956 begann, und die Verwaltung 1964 dorthin zog. Dies ist das neue Stadtzentrum, um das heute der Raum des zentralen Stadtplatzes von Lüdenscheid gebildet wird." },
+                { bold: "Funktionen und Leben des Platzes.", text: "Auf dem Platz findet täglich und regelmäßig der Wochenmarkt mittwochs und samstags statt, bei dem frische Produkte, Handwerkswaren und saisonale Produkte angeboten werden." },
+                { text: "Jährlich findet im Zentrum das Stadtfest mit Zelten, Musik und Jahrmarkt statt, das den Platz in einen lebendigen Raum für Feierlichkeiten und Begegnungen verwandelt." },
+                { text: "In der Wintersaison werden auf dem Rathausplatz und dem benachbarten Sternplatz oft Weihnachtsmarkt und Eisbahn organisiert." },
+                { text: "Der Platz dient als wichtiger Treffpunkt für Bewohner und Besucher der Stadt, er liegt in der Fußgängerzone mit Geschäften, Cafés, Dienstleistungs- und Kultureinrichtungen, was ihn zum logischen Zentrum städtischer Aktivität und Ausgangspunkt für die Erkundung von Lüdenscheid macht." },
+            ]
+        },
+        interesting_facts: {
+            title: "Interessante Fakten",
+            items: [
+                { bold: "Der zentrale Platz sah nicht immer so aus wie heute:", text: "nach dem Zweiten Weltkrieg wurde das Stadtzentrum stark umgebaut, und die heutige Planung ist das Ergebnis der Nachkriegsrekonstruktion." },
+                { bold: "Der zentrale Platz ist nicht nur ein Platz, sondern ein Knotenpunkt von Fußgängerwegen,", text: "der die Altstadt, das Geschäftsviertel und das Verwaltungszentrum verbindet." },
+                { bold: "Während städtischer Feste wird der Platz vollständig gesperrt,", text: "und hier finden die größten Veranstaltungen in Lüdenscheid statt – vom Weihnachtsmarkt bis zu Sommerfesten." }
+            ]
+        },
+        meta: {
+            title: "Zentraler Platz von Lüdenscheid – Rathausplatz und Herz der Stadt",
+            description: "Der zentrale Platz von Lüdenscheid (Rathausplatz) ist der wichtigste öffentliche Raum der Stadt neben dem Rathaus. Hier finden Märkte, städtische Veranstaltungen und Treffen der Bewohner statt, und der Platz dient als Ausgangspunkt für Spaziergänge im Zentrum.",
+            ogTitle: "Zentraler Platz von Lüdenscheid",
+            ogDescription: "Der zentrale Platz von Lüdenscheid (Rathausplatz) ist der zentrale Stadtplatz neben dem Rathaus, ein Ort für Märkte, Feste und wichtige städtische Veranstaltungen.",
+            ogImage: "https://our-travels.info/new/foto/Germany/nrw/arnsberg/Märkischer-Kreis/luedenscheid/rathausplatz_lüdenscheid/001.JPG"
+        }
+    },
+    {
+        id: "sternplatz",
+        name: "Sternplatz",
+        type: ["square"],
+        path: "sternplatz",
+        countryPath: "germany",
+        regionsPath: "nrw",
+        districtPath: "arnsberg",
+        cityPath: "luedenscheid",
+        fotoCard: "Germany/nrw/arnsberg/Märkischer-Kreis/luedenscheid/sternplatz/003.jpg",
+        location: "Lüdenscheid, Deutschland",
+        subObjects: ["onkel_willi_denkmal_sternplatz_luedenscheid", "fontain_sternplatz_luedenscheid"],
+        short_description: "Der Sternplatz ist der zentrale Platz von Lüdenscheid, gelegen in der Fußgängerzone des historischen Zentrums und ein wichtiger Treffpunkt des städtischen Lebens.",
+        short_description_subObjects: {
+            text: "Auf dem Sternplatz befinden sich folgende Sehenswürdigkeiten:",
+            items: ["Denkmal von Onkel Willi", "Neumann-Brunnen"]
+        },
+        full_description: {
+            title: "Beschreibung und Geschichte",
+            items: [
+                { bold: "Sternplatz", text: "– einer der zentralen Plätze von Lüdenscheid, gelegen im historischen Zentrum der Stadt und ein wichtiger Knotenpunkt der Fußgängerzone. Der Platz dient als öffentlicher Raum, an dem sich Einkaufsstraßen, Fußgängerwege und touristische Routen der Altstadt kreuzen." },
+                { text: "Der Sternplatz liegt in unmittelbarer Nähe zum Rathausplatz und ist Teil des zusammenhängenden Fußgängerbereichs im Zentrum von Lüdenscheid. Dadurch fügt sich der Platz logisch in die Route von Stadtspaziergängen und Besichtigungen ein." },
+                { bold: "Architektur und Umgebung. ", text: "Das architektonische Erscheinungsbild des Sternplatzes entwickelte sich allmählich. Hier verbinden sich Gebäude verschiedener Epochen – von historischen Altstadtbauten bis zu moderneren städtischen Bauten der zweiten Hälfte des 20. Jahrhunderts. Der Platz ist offen, gut einsehbar, mit bequemen Zugängen zu den angrenzenden Straßen, Cafés und Geschäften." },
+                { bold: "Geschichte und Bedeutung. ", text: "Das Viertel rund um den Platz gehört zum historischen Kern der Stadt. Das alte Lüdenscheid entwickelte sich über Jahrhunderte hinweg in diesem Bereich, erlebte Brände, Umgestaltungen und den Ausbau der städtischen Infrastruktur." },
+                { bold: "Gegenwärtige Nutzung. ", text: "Heute erfüllt der Sternplatz mehrere Funktionen:" },
+                { text: "&nbsp;&nbsp;&nbsp; ▪ dient als Fußgänger- und öffentlicher Bereich;" },
+                { text: "&nbsp;&nbsp;&nbsp; ▪ ist Treffpunkt für Einwohner und Besucher;" },
+                { text: "&nbsp;&nbsp;&nbsp; ▪ wird bei städtischen Festen, Märkten und Veranstaltungen genutzt;" },
+                { text: "&nbsp;&nbsp;&nbsp; ▪ ist Bestandteil von Weihnachts- und saisonalen Stadtveranstaltungen;" },
+                { text: "&nbsp;&nbsp;&nbsp; ▪ verbindet Einkaufsstraßen und benachbarte Plätze des Zentrums." }
+            ]
+        },
+        meta: {
+            title: "Sternplatz – zentraler Platz des historischen Zentrums von Lüdenscheid",
+            description: "Der Sternplatz ist einer der zentralen Plätze von Lüdenscheid, gelegen in der Fußgängerzone des historischen Zentrums. Der Platz ist ein wichtiger Treffpunkt für das städtische Leben, Spaziergänge und Veranstaltungen.",
+            ogTitle: "Sternplatz in Lüdenscheid",
+            ogDescription: "Der Sternplatz ist der zentrale Stadtplatz im historischen Zentrum von Lüdenscheid, Teil der Fußgängerzone und ein wichtiger öffentlicher Raum der Stadt.",
+            ogImage: "https://our-travels.info/new/foto/Germany/nrw/arnsberg/Märkischer-Kreis/luedenscheid/sternplatz/003.jpg"
+        }
+    },
+    {
+        id: "onkel_willi_denkmal_sternplatz_luedenscheid",
+        name: "Denkmal von Onkel Willi",
+        type: ["monument_or_fountain"],
+        path: "onkel_willi_denkmal_sternplatz_luedenscheid",
+        countryPath: "germany",
+        regionsPath: "nrw",
+        districtPath: "arnsberg",
+        cityPath: "luedenscheid",
+        fotoCard: "Germany/nrw/arnsberg/Märkischer-Kreis/luedenscheid/sternplatz/001.JPG",
+        hiddenFromList: true,
+        showMore: true,
+        short_description: "Das Denkmal von Onkel Willi ist eine Bronzeskulptur auf dem Sternplatz, die einen typischen Bewohner von Lüdenscheid mit Hund darstellt. Es ist ein inoffizielles Wahrzeichen der Stadt und spiegelt die alltägliche, „lebendige“ Atmosphäre wider.",
+        full_description: {
+            title: "Beschreibung und Geschichte",
+            items: [
+                { bold: "Denkmal von Onkel Willi ", text: "– eine der bekanntesten städtischen Skulpturen von Lüdenscheid, gelegen auf dem Sternplatz im historischen Zentrum der Stadt. Die Bronzefigur zeigt einen typischen Lüdenscheider mit Hund und symbolisiert Einfachheit, Offenheit und das alltägliche Stadtleben." },
+                { bold: "Autor der Skulptur ", text: "ist Waldemar Winn. Die Figur des Onkel Willi ist nicht mit einer historischen Persönlichkeit verbunden – es handelt sich um ein Sammelbild des „echten Lüdenscheiders“, verständlich und nah für die Einwohner." },
+                { bold: "Legenden. ", text: "Einer städtischen Legende zufolge diente ein Mann, der häufig mit seinem Hund durch die Innenstadt ging und den Einheimischen gut bekannt war, als Vorbild für die Skulptur. Einer anderen Version nach ließ sich der Bildhauer von seinem Onkel inspirieren, der tatsächlich für die Figur Modell stand. So oder so verkörpert das Denkmal den Charakter des alten Lüdenscheids – ruhig, freundlich und etwas ironisch." },
+                { text: "Mit der Zeit wurde Onkel Willi zum inoffiziellen Symbol der Stadt. Einwohner und Touristen halten oft neben der Skulptur, fotografieren und sehen sie als Teil der lebendigen städtischen Umgebung und nicht als klassisches Monument." },
+                { text: "Das Denkmal fügt sich harmonisch in den Raum des Sternplatzes ein und ist ein Anziehungspunkt in der Fußgängerzone des historischen Zentrums." }
+            ]
+        },
+        meta: {
+            title: "Denkmal von Onkel Willi – Symbol von Lüdenscheid auf dem Sternplatz",
+            description: "Das Denkmal von Onkel Willi auf dem Sternplatz in Lüdenscheid ist eine Bronzeskulptur, die einen typischen Einwohner der Stadt mit Hund darstellt. Die Skulptur ist ein inoffizielles Wahrzeichen der Stadt und ein beliebter Treffpunkt für Fotos und Begegnungen.",
+            ogTitle: "Denkmal von Onkel Willi in Lüdenscheid",
+            ogDescription: "Die Bronzeskulptur von Onkel Willi auf dem Sternplatz im historischen Zentrum von Lüdenscheid verkörpert Freundlichkeit und das alltägliche Leben der Stadtbewohner. Beliebter Ort bei Touristen und Einwohnern.",
+            ogImage: "https://our-travels.info/new/foto/Germany/nrw/arnsberg/Märkischer-Kreis/luedenscheid/sternplatz/001.JPG"
+        }
+    },
+    {
+        id: "fontain_sternplatz_luedenscheid",
+        name: "Brunnen auf dem Sternplatz",
+        type: ["monument_or_fountain"],
+        path: "fontain_sternplatz_luedenscheid",
+        countryPath: "germany",
+        regionsPath: "nrw",
+        districtPath: "arnsberg",
+        cityPath: "luedenscheid",
+        fotoCard: "Germany/nrw/arnsberg/Märkischer-Kreis/luedenscheid/sternplatz/003.jpg",
+        hiddenFromList: true,
+        showMore: true,
+        short_description: "Der Brunnen auf dem Sternplatz ist ein dekoratives Wasserbecken im Zentrum des Platzes, geschaffen Ende der 1970er Jahre vom Bildhauer Kurt Toni Neumann. Er ist ein bedeutendes städtisches Objekt und ein Ort der Erholung in der Fußgängerzone von Lüdenscheid.",
+        full_description: {
+            title: "Beschreibung und Geschichte",
+            items: [
+                { text: "Auf dem Sternplatz im historischen Zentrum von Lüdenscheid befindet sich ein städtischer Brunnen in Form eines niedrigen dekorativen Wasserbeckens, das zu den charakteristischen Objekten des Platzes gehört. Der Brunnen wurde Ende der 1970er Jahre vom deutschen Bildhauer Kurt Toni Neumann geschaffen und ist seitdem ein beliebter Treff- und Erholungsort auf dem Platz." },
+                { text: "Der Brunnen besteht aus einem unteren Becken mit einem zentralen Wasserelement, um das herum Bänke und Spazierbereiche angeordnet sind. Er fügt sich harmonisch in die Fußgängerzone des Sternplatzes ein und dient als visueller Mittelpunkt des Platzes." },
+                { text: "Früher befand sich an dieser Stelle ein anderer Brunnen (barocker Vier-Eimer-Brunnen), der mit der Marktgeschichte des Platzes verbunden war, aber im 19. Jahrhundert abgerissen wurde." },
+                { text: "Seit 2009 sind um den Brunnen Tafeln mit den Namen der Partnerstädte von Lüdenscheid (Brayhaus, Taganrog, Den Helder, Löwen, Mysłowice und Romilly-sur-Seine) mit Angabe der Entfernungen zu ihnen angebracht, was den Brunnen zu einem Symbol der internationalen Beziehungen der Stadt macht." },
+                { text: "Der Brunnen ist nicht nur dekorativ, sondern dient auch als Erholungsort für Einwohner und Besucher, besonders in der warmen Jahreszeit." }
+            ]
+        },
+        meta: {
+            title: "Brunnen auf dem Sternplatz – städtisches Wasserbecken von Lüdenscheid",
+            description: "Der Brunnen auf dem Sternplatz in Lüdenscheid ist ein dekoratives Wasserbecken, geschaffen Ende der 1970er Jahre vom Bildhauer Kurt Toni Neumann. Um den Brunnen befinden sich Tafeln mit den Namen der Partnerstädte: Brayhaus, Taganrog, Den Helder, Löwen, Mysłowice und Romilly-sur-Seine. Der Brunnen ist ein beliebter Ort für Erholung und Spaziergänge auf dem Platz.",
+            ogTitle: "Brunnen auf dem Sternplatz in Lüdenscheid",
+            ogDescription: "Dekorativer Brunnen auf dem Sternplatz im historischen Zentrum von Lüdenscheid, umgeben von Tafeln mit den Namen der Partnerstädte. Treffpunkt und Erholungsort für Einwohner und Besucher.",
+            ogImage: "https://our-travels.info/new/foto/Germany/nrw/arnsberg/Märkischer-Kreis/luedenscheid/sternplatz/003.jpg"
+        }
+    },
+    {
+        id: "history_museum_luedenscheid",
+        name: "Geschichtsmuseum Lüdenscheid",
+        type: ["museum"],
+        path: "history_museum_luedenscheid",
+        countryPath: "germany",
+        regionsPath: "nrw",
+        districtPath: "arnsberg",
+        cityPath: "luedenscheid",
+        fotoCard: "Germany/nrw/arnsberg/Märkischer-Kreis/luedenscheid/history_museum_luedenscheid/001.JPG",
+        location: "Lüdenscheid, Deutschland",
+        officialSite: [
+            { "bold": "Offizielle Webseite", "link": "https://www.luedenscheid.de/freizeit-und-kultur/kultur/museen-der-stadt-luedenscheid/geschichtsmuseum" }
+        ],
+        short_description: "Das Geschichtsmuseum Lüdenscheid ist ein städtisches Museum, das der Industrie- und Technikgeschichte der Region gewidmet ist und einzigartige Sammlungen von Karten und Artefakten präsentiert, einschließlich einer Schmalspurbahn und Zeppelin-Modellen. Das Museum ist mit der städtischen Galerie, dem alten Verwaltungsgebäude und einem Café in einem modernen Komplex verbunden. ",
+        full_description: {
+            title: "Beschreibung und Geschichte",
+            items: [
+                { bold: "Das Geschichtsmuseum Lüdenscheid ", text: "verbindet das historische Verwaltungsgebäude und ein altes Bankgebäude durch einen modernen Glasbau. In diesem Komplex befinden sich sowohl Dauerausstellungen als auch große Objekte wie die Schmalspurbahn, Zeppelin-Modelle und Feuerwehrtechnik." },
+                { bold: "Geschichte. ", text: "Das Museum besteht seit Ende der 1980er Jahre und gehört zum kulturellen Zentrum der Stadt. Die Gebäude im Museumsensemble wurden 1910 (Verwaltungsgebäude) bzw. früher (Bank) errichtet. Der Komplex verbindet Architektur verschiedener Epochen und ermöglicht es, historische Bauten und moderne Ausstellungskonzepte zu vereinen. " },
+                { bold: "Zusätzliche Möglichkeiten. ", text: "Im modernen Glasbau zwischen den Gebäuden befindet sich ein beliebtes Museumscafé, wo Besucher sich nach dem Rundgang erholen können. " },
+                { text: "Dort finden auch wechselnde Ausstellungen, künstlerische Veranstaltungen und Kulturprogramme statt, die das Museum nicht nur zu einem historischen Zentrum, sondern auch zu einem kulturellen Treffpunkt machen. " }
+            ]
+        },
+        sub_objects: {
+            title: "Exponate",
+            items: [
+                { bold: "Schmalspurzug „Schnurre“ ", text: "(historischer Zug, der einst auf der Strecke der Kreis Altenaer Eisenbahn AG fuhr) – eines der beeindruckendsten Exponate, das nicht nur von außen, sondern auch von innen angeschaut werden kann. " },
+                { bold: "Motoren und Technik der Industrieepoche, ", text: "wie alte Dampfmaschinen und Generatoren, die die Entwicklung von Energie und Technik veranschaulichen. " },
+                { bold: "Zeppelin-Modelle,", text: "einschließlich Zeppelin – sie sind nicht nur technische Miniaturen, sondern auch Teil der Luftfahrtgeschichte, verbunden mit lokalen Industrieunternehmern. " },
+                { bold: "Feuerwehrtechnik ", text: "– historische Feuerwehrmotoren und Geräte, die die Entwicklung der städtischen Sicherheitsdienste zeigen. " },
+                { bold: "Große Sammlung von Knöpfen und Schnallen,", text: "die vom Bronzezeitalter bis zur Gegenwart reicht. Diese einzigartige Sammlung spiegelt wider, warum Lüdenscheid im 19. Jahrhundert als „Knopfstadt“ galt. " },
+                { bold: "Historische geografische Karten ", text: "der Grafschaft Mark – sie vermitteln ein anschauliches Bild von territorialen Veränderungen und der Entwicklung der Region. " },
+                { text: "Das Museum wird derzeit modernisiert: Die Hauptausstellung ist vorübergehend wegen Umbauarbeiten geschlossen und wird im Jahr 2026 unter dem Titel „Innovatia“ eröffnet. Die neue Ausstellung wird die technologische und innovative Geschichte Lüdenscheids mit multimedialen und interaktiven Elementen vertieft darstellen. " }
+            ]
+        },
+        tickets_and_entry: {
+            title: "Praktische Informationen",
+            items: [
+                { bold: "Adresse:", text: "Sauerfelder Str. 14, 58511 Lüdenscheid, Deutschland" },
+                { bold: "Öffnungszeiten:", text: "Mittwoch–Sonntag, 11:00–18:00 (saisonale Änderungen möglich) " },
+                { bold: "Eintritt:", text: "gegen Gebühr, Ermäßigungen für Studierende und Rentner vorhanden. " },
+                { bold: "Zugang:", text: "vollständig für Besucher zugänglich, barrierefrei für Menschen mit eingeschränkter Mobilität. " }
+            ]
+        },
+        interesting_facts: {
+            title: "Interessante Fakten",
+            items: [
+                { text: "Die Sammlung von Knöpfen und Schnallen des Museums gilt als einzigartig in Deutschland. " },
+                { text: "Der moderne Glasbau verbindet zwei historische Gebäude und ermöglicht es, große Exponate unterzubringen. " },
+                { text: "Das Museumscafé befindet sich direkt im Übergangsbereich und ist bei Einheimischen und Touristen beliebt. " },
+                { text: "Das Museum vereint städtische Galerie und historische Sammlungen in einem Komplex. " }
+            ]
+        },
+        construction_period: "Ende der 1980er Jahre. ",
+        architects: "Ursprüngliche Gebäude: lokale Architekten Anfang des 20. Jahrhunderts (1910 – Verwaltungsgebäude). ",
+        founder: " Das Museum wurde von der Stadtverwaltung Lüdenscheids gegründet. ",
+        meta: {
+            title: "Geschichtsmuseum Lüdenscheid – Industrie‑ und Technikgeschichte der Stadt",
+            description: "Entdecken Sie das Geschichtsmuseum Lüdenscheid: Schmalspurzug, Zeppelin‑Modelle, Feuerwehrtechnik, Sammlung historischer Karten und Artefakte. Besuchen Sie das Museum und das Museumscafé im modernen Stadtkomplex.",
+            ogTitle: "Geschichtsmuseum Lüdenscheid – einzigartige Exponate und Sammlungen",
+            ogDescription: "Besuchen Sie das Geschichtsmuseum Lüdenscheid: vom Schmalspurzug bis zur Sammlung historischer Knöpfe, Karten und Stadtmodelle. Das Museum und das Museumscafé erwarten Sie im kulturellen Komplex der Stadt.",
+            ogImage: "https://our-travels.info/new/foto/Germany/nrw/arnsberg/Märkischer-Kreis/luedenscheid/history_museum_luedenscheid/001.JPG"
+        }
+    },
 
 ];
 

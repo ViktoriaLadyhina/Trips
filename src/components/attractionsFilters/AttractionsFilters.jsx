@@ -10,7 +10,8 @@ const attractionTypes = [
   { value: 'historical_building', ru: 'Исторические здания', ua: 'Ісоричні будівлі', de: 'Historische Gebäude' },
   { value: 'technical_structure', ru: 'Технические сооружения', ua: 'Технічні споруди', de: 'Technische Bauwerke' },
   { value: 'nature', ru: 'Природа', ua: 'Природа', de: 'Natur' },
-  { value: 'monument_or_fountain', ru: 'Памятники и фонтаны', ua: 'Пам’ятники та фонтани', de: 'Denkmäler und Brunnen' }
+  { value: 'monument_or_fountain', ru: 'Памятники и фонтаны', ua: 'Пам’ятники та фонтани', de: 'Denkmäler und Brunnen' },
+  { value: 'square', ru: 'Площадь', ua: 'Площа', de: 'Platz' },
 ];
 
 // === ЮНЕСКО фильтр ===
