@@ -11,8 +11,13 @@ export const Fotos = {
     sumy: {
       "sumy_spaso_preobrazhensky": [
         { path: "Ukraine/sumska/sumy-city/spaso-preobrazhensky/004.jpg", title: { ru: "Спасо-Преображенский собор, 2010", ua: "Спасо-Преображенський собор, 2010", de: "Spaso-Preobraschenski-Kathedrale, 2010" } },
-      ]
-
+      ],
+      pokrovska_square_sumy: [
+        { path: "Ukraine/sumska/sumy-city/altanka/009.jpg", title: { ru: "Альтанка, 2008", ua: "Альтанка, 2008", de: "Der Pavillon, 2008" } },
+      ],
+      sumy_altanka: [
+        { path: "Ukraine/sumska/sumy-city/altanka/009.jpg", title: { ru: "Альтанка, 2008", ua: "Альтанка, 2008", de: "Der Pavillon, 2008" } },
+      ],
     },
     romny: {}
   }

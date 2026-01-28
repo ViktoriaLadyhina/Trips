@@ -78,6 +78,10 @@ export const Fotos = {
         { path: "Germany/nrw/koln/koln-city/koln_bridges/008.jpg", title: { ru: "8. Южный мост (фото взято с интернета)", ua: "8. Південний міст (фото взято з Інтернету)", de: "8. Südbrücke (Foto aus dem Internet)" } },
         { path: "Germany/nrw/koln/koln-city/koln_bridges/003.jpg", title: { ru: "9. Мост Северинс - 2025", ua: "9. Міст Северинс - 2025", de: "9. Severinsbrücke - 2025" } },
         { path: "Germany/nrw/koln/koln-city/koln_bridges/002.jpeg", title: { ru: "10. Мост Роденкирхенер (фото взято с интернета)", ua: "10. Міст Роденкірхенер (фото взято з Інтернету)", de: "10. Rodenkirchener Brücke (Foto aus dem Internet)" } }
+      ],
+      flora_garten_koln: [
+       { path: "Germany/nrw/koln/koln-city/flora_garten_koln/001.jpg", title: { ru: "Ботанический сад Флора, 2025", ua: "Ботанічний сад Флора, 2025", de: "4. Mülheimer Brücke (Foto aus dem Internet)" } }, 
+       { path: "Germany/nrw/koln/koln-city/flora_garten_koln/002.jpg", title: { ru: "Ботанический сад Флора, 2025", ua: "Ботанічний сад Флора, 2025", de: "4. Mülheimer Brücke (Foto aus dem Internet)" } }, 
       ]
     },
     bruhl: {

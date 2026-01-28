@@ -57,17 +57,67 @@ const datas = [
         }
     },
     {
+        id: "pokrovska_square_sumy",
+        name: "Pokrowska-Platz",
+        type: ["square"],
+        path: "pokrovska_square_sumy",
+        countryPath: "ukraine",
+        regionsPath: "sumska",
+        districtPath: "city",
+        cityPath: "sumy",
+        fotoCard: "Ukraine/sumska/sumy-city/altanka/009.jpg",
+        location: "Sumy, Ukraine",
+        subObjects: ["sumy_altanka"],
+        short_description: "Der Pokrowska-Platz ist der Ort, an dem die Geschichte der Stadt Sumy begann. Hier verbinden sich tragische Ereignisse der Vergangenheit mit dem ruhigen heutigen Stadtleben. Bis heute bewahrt der Platz eine besondere Atmosphäre von Erinnerung und Ruhe.",
+        short_description_subObjects: {
+            text: "Auf dem Pokrowska-Platz befinden sich folgende Sehenswürdigkeiten:",
+            items: ["Altanka"]
+        },
+        full_description: {
+            title: "Beschreibung und Geschichte",
+            items: [
+                { bold: "Der Pokrowska-Platz", text: "ist einer der ältesten und bedeutendsten Plätze der Stadt Sumy. Hier nahm die Stadtgeschichte ihren Anfang, und über Jahrhunderte hinweg fanden an diesem Ort wichtige Ereignisse statt, die das Stadtbild prägten. Wer diesen Platz besucht, kann die Atmosphäre des alten Sumy spüren und die Entwicklung der Stadt nachvollziehen." },
+                { text: "Der Platz liegt im historischen Zentrum der Stadt und erfüllte lange Zeit die Funktion des wichtigsten öffentlichen Raums – als Ort für Treffen, Handel, Bekanntmachungen und städtische Veranstaltungen." },
+                { bold: "Geschichte. ", text: "Die Geschichte des Pokrowska-Platzes ist eng mit dem religiösen und gesellschaftlichen Leben der Stadt verbunden. Seinen Namen erhielt er von der Pokrowski-Kirche, die sich hier seit dem Ende des 18. Jahrhunderts befand. In verschiedenen Epochen trug der Platz auch andere Namen, darunter ‚Roter Platz‘, was der sowjetischen Umbenennungstradition entsprach." },
+                { text: "In der ersten Hälfte des 20. Jahrhunderts wurde der Platz Zeuge tragischer Ereignisse. Während der deutschen Besatzung wurden hier Befehle der Besatzungsmacht verlesen und öffentliche Hinrichtungen durchgeführt. Auf eigens errichteten Galgen wurden Widerstandskämpfer, Partisanen sowie Personen hingerichtet, die der Zusammenarbeit oder anderer Vergehen beschuldigt wurden. An den Leichen befestigte man Schilder mit der angegebenen ‚Schuld‘." },
+                { text: "Bereits zuvor, während des Bürgerkriegs, fanden auf dem Platz Erschießungen statt. An der Stelle eines der heutigen Brunnen befand sich lange Zeit ein Massengrab, das später auf den Zentralfriedhof umgebettet wurde." },
+                { text: "Nach dem Ende des Zweiten Weltkriegs versuchten die Stadtbehörden, das Erscheinungsbild des Platzes vollständig zu verändern – die Spuren der Tragödien zu beseitigen und ihn in einen ruhigen, hellen öffentlichen Raum zu verwandeln." },
+                { bold: " ", text: "In der Nachkriegszeit wurde der Pokrowska-Platz grundlegend umgestaltet. Es entstanden Brunnen, Blumenbeete und mit Muschelkalk gepflasterte Wege. Viele Einwohner erinnern sich noch heute daran, wie sie in diesen Wegen echte Muscheln fanden." },
+                { bold: "Heutige Nutzung.", text: "Heute ist der Platz kein administratives Zentrum mehr, bleibt jedoch ein wichtiger kultureller und Erholungsort. Hier finden Spaziergänge, Treffen, städtische Veranstaltungen und Fotoshootings statt. Die Atmosphäre ist ruhig und besinnlich — eher zum Verweilen als zur Hektik geeignet." }
+            ]
+        },
+        interesting_facts: {
+            title: "Interessante Fakten",
+            items: [
+                { text: "Der Pokrowska-Platz gilt als einer der ältesten öffentlichen Orte in Sumy." },
+                { text: "Im Laufe seiner Geschichte änderte er mehrfach seinen Namen und seine Funktion." },
+                { text: "In der Sowjetzeit befanden sich hier mehrere Lenin-Denkmäler, die später entfernt wurden." },
+                { text: "Der Platz war zeitweise als zentrales Mahnmal der Stadt geplant." },
+                { text: "Trotz seiner tragischen Vergangenheit gilt er heute als einer der ruhigsten und angenehmsten Orte im Stadtzentrum." }
+            ]
+        },
+        meta: {
+            title: "Pokrowska-Platz — historisches Zentrum von Sumy",
+            description: "Der Pokrowska-Platz ist einer der ältesten Plätze von Sumy mit einer reichen Geschichte. Erfahren Sie mehr über seine Vergangenheit, Kriegsjahre und heutige Bedeutung.",
+            ogTitle: "Pokrowska-Platz — das Herz des historischen Sumy",
+            ogDescription: "Der Pokrowska-Platz ist einer der ältesten Orte in Sumy und eng mit der Geschichte der Stadt verbunden.",
+            ogImage: "https://our-travels.info/new/foto/Ukraine/sumska/sumy-city/altanka/009.jpg"
+        }
+    },
+    {
         id: "sumy_altanka",
         name: "Der Pavillon ",
         type: ["istorical_building"],
         path: "sumy_altanka",
+        countryPath: "ukraine",
         regionsPath: "sumska",
         districtPath: "city",
         cityPath: "sumy",
         fotoCard: "Ukraine/sumska/sumy-city/altanka/009.jpg",
         location: "Sumy, Ukraine",
         address: [{ bold: "Adresse:", text: " Pokrowskyj-Platz" }],
-
+        hiddenFromList: true,
+        showMore: true,
         unesco_status: {
             included: false,
         },
@@ -86,7 +136,6 @@ const datas = [
                 { bold: "Der Pavillon heute", text: "Die Spaso-Preobraschenski-Kathedrale bleibt das spirituelle und architektonische Zentrum von Sumy. Sie vereint Gläubige, dient als Ort großer religiöser Feiertage und ist zugleich eine der wichtigsten touristischen Attraktionen der Stadt.Trotz seiner bescheidenen Größe gilt der Pavillon als eine der wichtigsten architektonischen Sehenswürdigkeiten der Stadt und schmückt den Park auf dem Pokrowskyj-Platz (ehemals Roter Platz)." },
             ]
         },
-        
         meta: {
             title: "Der Pavillon in Sumy",
             description: "Die Spaso-Preobraschenski-Kathedrale ist der Haupttempel von Sumy, ein architektonisches Denkmal des 18.–19. Jahrhunderts mit Marmor-Malachit-Ikonostase und 56 Meter hohem Glockenturm.",
