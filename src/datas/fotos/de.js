@@ -80,9 +80,16 @@ export const Fotos = {
         { path: "Germany/nrw/koln/koln-city/koln_bridges/002.jpeg", title: { ru: "10. Мост Роденкирхенер (фото взято с интернета)", ua: "10. Міст Роденкірхенер (фото взято з Інтернету)", de: "10. Rodenkirchener Brücke (Foto aus dem Internet)" } }
       ],
       flora_garten_koln: [
-       { path: "Germany/nrw/koln/koln-city/flora_garten_koln/001.jpg", title: { ru: "Ботанический сад Флора, 2025", ua: "Ботанічний сад Флора, 2025", de: "4. Mülheimer Brücke (Foto aus dem Internet)" } }, 
-       { path: "Germany/nrw/koln/koln-city/flora_garten_koln/002.jpg", title: { ru: "Ботанический сад Флора, 2025", ua: "Ботанічний сад Флора, 2025", de: "4. Mülheimer Brücke (Foto aus dem Internet)" } }, 
-      ]
+       { path: "Germany/nrw/koln/koln-city/flora_garten_koln/001.jpg", title: { ru: "Ботанический сад Флора, 2025", ua: "Ботанічний сад Флора, 2025", de: "Botanischer Garten Flora, 2025" } }, 
+       { path: "Germany/nrw/koln/koln-city/flora_garten_koln/002.jpg", title: { ru: "Ботанический сад Флора, 2025", ua: "Ботанічний сад Флора, 2025", de: "Botanischer Garten Flora, 2025" } }, 
+      ],
+rheinpark_koln: [
+  { path: "Germany/nrw/koln/koln-city/rheinpark_koln/001.jpg", title: { ru: "Рейнский парк (фото взято с википедии)", ua: "Рейнський парк (фото взято з Вікіпедії)", de: "Rheinpark (Foto von Wikipedia entnommen)" } }, 
+  { path: "Germany/nrw/koln/koln-city/rheinpark_koln/002.jpg", title: { ru: "Танцующий фонтан (фото взято с википедии)", ua: "Танцюючий фонтан (фото взято з Вікіпедії)", de: "Tanzbrunnen (Foto von Wikipedia entnommen)" } }, 
+],
+tanzbrunnen: [
+  { path: "Germany/nrw/koln/koln-city/rheinpark_koln/002.jpg", title: { ru: "Танцующий фонтан (фото взято с википедии)", ua: "Танцюючий фонтан (фото взято з Вікіпедії)", de: "Tanzbrunnen (Foto von Wikipedia entnommen)" } }, 
+]
     },
     bruhl: {
       'phantasialand': [

@@ -60,18 +60,18 @@ const AttractionForm = () => {
 
   // перезаписываем короткое описание в полное при условиях - пользователь сам не запонил полное, стоит выбрано, что подробнее не нужно
   const isFullDescriptionEmpty =
-  !watchedFields.full_description?.some(
-    item => item?.bold || item?.text
-  );
+    !watchedFields.full_description?.some(
+      item => item?.bold || item?.text
+    );
   const shouldAutoFillDescription =
-  watchedFields.showMore === "false" &&
-  watchedFields.short_description?.trim() &&
-  isFullDescriptionEmpty;
+    watchedFields.showMore === "false" &&
+    watchedFields.short_description?.trim() &&
+    isFullDescriptionEmpty;
 
   const previewObject = {
     id: watchedFields.id,
     name: watchedFields.name,
-    type: watchedFields.type,
+    type: [watchedFields.type],
     path: watchedFields.id,
     countryPath: watchedFields.country,
     regionsPath: watchedFields.region,
@@ -106,41 +106,45 @@ const AttractionForm = () => {
     ...(watchedFields.showMore === "true" && { showMore: true }),
     short_description: watchedFields.short_description,
     ...(watchedFields.short_description2.length > 0 && { short_description2: watchedFields.short_description2 }),
-full_description: {
-    title: "Описание и история",
-    items: shouldAutoFillDescription
-      ? [
+    full_description: {
+      title: "Описание и история",
+      items: shouldAutoFillDescription
+        ? [
           {
             text: watchedFields.short_description
           }
         ]
-      : watchedFields.full_description
+        : watchedFields.full_description
           .filter(item => item.bold?.trim() || item.text?.trim())
           .map(item => ({
             ...(item.bold?.trim() && { bold: item.bold }),
             ...(item.text?.trim() && { text: item.text })
           }))
-  },
-    ticketItems: {
-      title: "Практическая информация",
-      items: watchedFields.ticketItems
-        ?.filter(item => item.bold.trim() || item.text.trim())
-        .map(item => ({
-          ...(item.bold.trim() && { bold: item.bold }),
-          ...(item.text.trim() && { text: item.text })
-        }))
     },
-    relics: {
-      title: "Реликвии и ценности",
-      items: watchedFields.relics
-        ?.filter(item => item.bold.trim() || item.text.trim())
-        .map(item => ({
-          ...(item.bold.trim() && { bold: item.bold }),
-          ...(item.text.trim() && { text: item.text })
-        }))
-    },
+    ...(watchedFields.ticketItems?.some(item => item.bold.trim() || item.text.trim()) && {
+      ticketItems: {
+        title: "Практическая информация",
+        items: watchedFields.ticketItems
+          ?.filter(item => item.bold.trim() || item.text.trim())
+          .map(item => ({
+            ...(item.bold.trim() && { bold: item.bold }),
+            ...(item.text.trim() && { text: item.text })
+          }))
+      }
+    }),
+    ...(watchedFields.relics?.some(item => item.bold.trim() || item.text.trim()) && {
+      relics: {
+        title: "Реликвии и ценности",
+        items: watchedFields.relics
+          ?.filter(item => item.bold.trim() || item.text.trim())
+          .map(item => ({
+            ...(item.bold.trim() && { bold: item.bold }),
+            ...(item.text.trim() && { text: item.text })
+          }))
+      }
+    }),
     ...(watchedFields.subObjectsTitle.title.length > 0 && {
-      subObjectsTitle: {
+      sub_objects: {
         title: watchedFields.subObjectsTitle.title || "Экспозиции",
         items: watchedFields.subObjectsTitle.items
           .filter(item => item?.bold?.trim() || item?.text?.trim())
@@ -170,7 +174,7 @@ full_description: {
       ogTitle: watchedFields.meta.ogTitle,
       ogDescription: watchedFields.meta.ogDescription,
       ogImage: watchedFields.meta.ogImage,
-    },
+    }
   };
 
   const clearAll = () => {
@@ -179,44 +183,44 @@ full_description: {
   };
 
   // функции копирования и валидации незаполненных обязательных полей
-const collectErrors = (obj, parentKey = "") => {
-  let result = [];
+  const collectErrors = (obj, parentKey = "") => {
+    let result = [];
 
-  for (const [key, value] of Object.entries(obj)) {
-    const fullKey = parentKey ? `${parentKey}.${key}` : key;
+    for (const [key, value] of Object.entries(obj)) {
+      const fullKey = parentKey ? `${parentKey}.${key}` : key;
 
-    if (value?.message) {
-      result.push(`${fullKey}: ${value.message}`);
-    } else if (Array.isArray(value)) {
-      value.forEach((item, index) => {
-        if (item) {
-          result.push(
-            ...collectErrors(item, `${fullKey}[${index}]`)
-          );
-        }
-      });
-    } else if (typeof value === "object" && value !== null) {
-      result.push(...collectErrors(value, fullKey));
+      if (value?.message) {
+        result.push(`${fullKey}: ${value.message}`);
+      } else if (Array.isArray(value)) {
+        value.forEach((item, index) => {
+          if (item) {
+            result.push(
+              ...collectErrors(item, `${fullKey}[${index}]`)
+            );
+          }
+        });
+      } else if (typeof value === "object" && value !== null) {
+        result.push(...collectErrors(value, fullKey));
+      }
     }
-  }
 
-  return result;
-};
+    return result;
+  };
 
-const handleCopy = async () => {
-  const valid = await trigger();
+  const handleCopy = async () => {
+    const valid = await trigger();
 
-  if (!valid) {
-    const allErrors = collectErrors(errors).join("\n");
+    if (!valid) {
+      const allErrors = collectErrors(errors).join("\n");
 
-    alert(`Пожалуйста, заполните обязательные поля:\n${allErrors}`);
-    return;
-  }
+      alert(`Пожалуйста, заполните обязательные поля:\n${allErrors}`);
+      return;
+    }
 
-  navigator.clipboard.writeText(toJsModuleString(previewObject));
-  setCopied(true);
-  setTimeout(() => setCopied(false), 2000);
-};
+    navigator.clipboard.writeText(toJsModuleString(previewObject));
+    setCopied(true);
+    setTimeout(() => setCopied(false), 2000);
+  };
 
 
   // Правильный вывод объекта
@@ -547,7 +551,7 @@ const handleCopy = async () => {
 
       {/* // -------------- Основатель */}
       <div className='id'>
-        <label>Архитектор</label>
+        <label>Основатель</label>
         <input type="text" {...register("founder")} />
       </div>
 
@@ -570,7 +574,7 @@ const handleCopy = async () => {
       </div>
       <div className='meta'>
         <label><span className="required">*</span>Мета-фото для соцсетей</label>
-        <input type="text" {...register("meta.ogImage", { required: "Поле Мета-фото для соцсетей обязательно" })} placeholder="Полный путь к фото - https://our-travels.info/new/foto/Germany/nrw/koln/Rhein-Erft-Kreis/frechen/burg-bachem/Burg-Bachem_3.jpg"/>
+        <input type="text" {...register("meta.ogImage", { required: "Поле Мета-фото для соцсетей обязательно" })} placeholder="Полный путь к фото - https://our-travels.info/new/foto/Germany/nrw/koln/Rhein-Erft-Kreis/frechen/burg-bachem/Burg-Bachem_3.jpg" />
       </div>
 
 

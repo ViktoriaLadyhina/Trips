@@ -609,6 +609,100 @@ const datas = [
         }
     },
     {
+        id: "rheinpark_koln",
+        name: "Rheinpark",
+        type: ["nature"],
+        path: "rheinpark_koln",
+        countryPath: "germany",
+        regionsPath: "nrw",
+        districtPath: "city",
+        cityPath: "koln",
+        fotoCard: "Germany/nrw/koln/koln-city/rheinpark_koln/001.jpg",
+        location: "Köln, Deutschland",
+        subObjects: ["tanzbrunnen"],
+        short_description: "Der Rheinpark ist ein großer öffentlicher Park entlang des rechten Rheinufers im Stadtteil Deutz der Stadt Köln. Er stellt eine historisch und architektonisch bedeutende Grünanlage dar, bekannt für seine weitläufigen Rasenflächen, Blumenbeete, Spazierwege und den herrlichen Blick auf das Stadtzentrum mit dem Kölner Dom.",
+        short_description_subObjects: {
+            text: "Im Rheinpark befinden sich folgende Sehenswürdigkeiten:",
+            items: ["Tanzbrunnen"]
+        },
+        full_description: {
+            title: "Beschreibung und Geschichte",
+            items: [
+                { bold: "Rheinpark ", text: "– ein großer öffentlicher Park entlang des rechten Rheinufers im Stadtteil Deutz der Stadt Köln. Er stellt eine historisch und architektonisch bedeutende Grünanlage dar, bekannt für seine weitläufigen Rasenflächen, Blumenbeete, Spazierwege und den herrlichen Blick auf das Stadtzentrum mit dem Kölner Dom." },
+                { text: "Vom Park aus eröffnen sich herrliche Panoramablicke auf das Zentrum von Köln, einschließlich des berühmten Kölner Doms, besonders von der Uferpromenade und den angrenzenden Punkten." },
+                { bold: "Geschichte. ", text: "Das Gebiet wurde nach dem Zweiten Weltkrieg transformiert: bis 1957 handelte es sich um Trümmer und Berge von Baumaterialien." },
+                { text: "Der neue Park wurde im Rahmen der Bundesgartenschau 1957 angelegt, und genau in dieser Zeit entstand die heutige Parkanlage." },
+                { text: "Im Jahr 1971 fand hier erneut die Bundesgartenschau statt, was ebenfalls das Erscheinungsbild des Parks beeinflusste und neue Elemente hinzufügte." },
+                { text: "Der Park gilt als ein herausragendes Beispiel für Landschaftsarchitektur der 1950er Jahre und als Symbol für die Wiederherstellung städtischen Raums nach dem Krieg." }
+            ]
+        },
+        ticketItems: {
+            title: "Praktische Informationen",
+            items: [
+                { bold: "Saison und Besuchszeiten. ", text: "Der Park ist das ganze Jahr über geöffnet, viele Attraktionen (Kinderschmalspurbahn und Seilbahn) sind jedoch saisonal in den warmen Monaten in Betrieb." }
+            ]
+        },
+        sub_objects: {
+            title: "Was es hier gibt:",
+            items: [
+                { bold: "Offene Flächen und Landschaft. ", text: "Dank der durchdachten Planung, dem Wegenetz, Pavillons, Skulpturen und Springbrunnen ist der Park ein beliebter Ort für Erholung und Spaziergänge für Kölner und Touristen." },
+                { bold: "Kinderschmalspurbahn. ", text: "Durch den Park verläuft eine etwa 2 km lange Kinderschmalspurbahn. Im Sommer fahren kleine Züge mit drei Haltestellen, die besonders bei Kindern und Familien beliebt sind." },
+                { bold: "Kölner Seilbahn (Cologne Cable Car). ", text: "Über den Rhein führt eine berühmte Seilbahn, die den Park mit dem Zoo auf der anderen Seite verbindet. Dies ist eine der ikonischen städtischen Sehenswürdigkeiten. Die Linie ist etwa 935 m lang, die Fahrt dauert einige Minuten. Betrieben wird sie in der warmen Jahreszeit (in der Regel von März bis Oktober)." },
+                { text: "Auf dem Gelände gibt es außerdem: Restaurants und Cafés, eine Erholungszone am Wasser, einen Sommer-„Beach Club“." }
+            ]
+        },
+        constructionPeriod: "1957",
+        architects: "Landschaftsprojekt unter der Leitung von Hermann Mattern",
+        meta: {
+            title: "Rheinpark (Rheinpark)",
+            description: "Der Rheinpark ist ein großer öffentlicher Park entlang des rechten Rheinufers im Stadtteil Deutz der Stadt Köln. Er stellt eine historisch und architektonisch bedeutende Grünanlage dar, bekannt für seine weitläufigen Rasenflächen, Blumenbeete, Spazierwege und den herrlichen Blick auf das Stadtzentrum mit dem Kölner Dom.",
+            ogTitle: "Rheinpark (Rheinpark)",
+            ogDescription: "Der Rheinpark ist ein großer öffentlicher Park entlang des rechten Rheinufers im Stadtteil Deutz der Stadt Köln. Er stellt eine historisch und architektonisch bedeutende Grünanlage dar, bekannt für seine weitläufigen Rasenflächen, Blumenbeete, Spazierwege und den herrlichen Blick auf das Stadtzentrum mit dem Kölner Dom.",
+            ogImage: "https://our-travels.info/new/foto/Germany/nrw/koln/koln-city/rheinpark_koln/001.jpg"
+        }
+    },
+    {
+        id: "tanzbrunnen",
+        name: "Tanzbrunnen",
+        type: ["monument_or_fountain"],
+        path: "tanzbrunnen",
+        countryPath: "germany",
+        regionsPath: "nrw",
+        districtPath: "city",
+        cityPath: "koln",
+        fotoCard: "Germany/nrw/koln/koln-city/rheinpark_koln/002.jpg",
+        location: "Köln, Deutschland",
+        hiddenFromList: true,
+        showMore: true,
+        short_description: "Am südlichen Rand des Rheinparks befindet sich der Tanzbrunnen – eines der bekanntesten Kulturobjekte Kölns. Der Komplex umfasst eine offene Fläche, ein Amphitheater, überdachte Bereiche und Grünanlagen und schafft so einen idealen Raum für Konzerte, Festivals, Tanzpartys und andere kulturelle Veranstaltungen.",
+        full_description: {
+            title: "Beschreibung und Geschichte",
+            items: [
+                { text: "Am südlichen Rand des Rheinparks befindet sich der Tanzbrunnen – eines der bekanntesten Kulturobjekte Kölns. Der Komplex umfasst eine offene Fläche, ein Amphitheater, überdachte Bereiche und Grünanlagen und schafft so einen idealen Raum für Konzerte, Festivals, Tanzpartys und andere kulturelle Veranstaltungen." },
+                { text: "Der Komplex trägt den Namen „Tanzbrunnen“, weil sich im Zentrum ursprünglich ein Brunnen mit Beleuchtung und Wassereffekten befand, zu denen Tanzveranstaltungen und Aufführungen stattfanden. Die Fläche wurde 1928 angelegt – lange vor der Bundesgartenschau und dem heutigen Rheinpark. Während des Zweiten Weltkriegs wurde das Gelände stark beschädigt, und sein heutiges Erscheinungsbild erhielt der Tanzbrunnen nach den Rekonstruktionen 1957 und in den 1970er Jahren, wobei die kulturelle Funktion fast ein Jahrhundert lang erhalten blieb." },
+                { text: "Heute wird der Tanzbrunnen aktiv für Sommerkonzerte, Festivals sowie Familien- und Firmenevents genutzt. Der Komplex liegt am Rheinufer, was eine malerische Kulisse schafft und den Besuch besonders angenehm für Spaziergänge macht. Der Tanzbrunnen bleibt bei Einheimischen und Touristen beliebt und symbolisiert das lebhafte Kulturleben Kölns." },
+                { text: "Der Ort ist bei Einheimischen und Touristen beliebt: Die Kombination aus kulturellen Veranstaltungen und Spaziergängen entlang des Rheins wird oft als Symbol des „Sommerlebens“ der Stadt am Rhein genutzt." }
+            ]
+        },
+        interestingFacts: {
+            title: "Interessante Fakten",
+            items: [
+                { bold: "Alter und Geschichte: ", text: "Die Fläche besteht seit fast 100 Jahren – gegründet 1928 und den Zweiten Weltkrieg überstanden, wobei die kulturelle Funktion fast ein Jahrhundert lang erhalten blieb." },
+                { bold: "Die ersten „tanzenden Brunnen“: ", text: "Der ursprüngliche Brunnen war mit Beleuchtung und Wassereffekten ausgestattet, zu denen Tanzveranstaltungen stattfanden – eines der ersten Projekte dieser Art in Köln." },
+                { bold: "Multifunktionalität: ", text: "Der Komplex vereint offene Flächen, ein Amphitheater, überdachte Bereiche und Grünanlagen, was sowohl Massenkonzerte als auch intimere kulturelle Veranstaltungen ermöglicht." }
+            ]
+        },
+        constructionPeriod: "1928",
+        architects: "Das architektonische Erscheinungsbild des Tanzbrunnens entwickelte sich in mehreren Phasen: Zunächst wurde der Brunnen mit Tanzfläche vom Architekten Josef Op Gen Orth 1950 geschaffen, und 1957 entwarf der herausragende Membranarchitekt Frei Otto für den Komplex das leichte „Sternwellenzelt“ – ein wellenförmiges Dach mit vom Zentrum ausstrahlenden Strahlen, das zu einer architektonischen Besonderheit des Tanzbrunnens wurde.",
+        meta: {
+            title: "Tanzbrunnen in Köln – Konzerte, Festivals, kulturelle Veranstaltungen",
+            description: "Besuchen Sie den Tanzbrunnen – den historischen „Tanzenden Brunnen“ am Rhein in Köln. Konzerte, Festivals, kulturelle Events und malerische Ausblicke auf den Fluss. Erfahren Sie mehr über Geschichte und Architektur des Komplexes.",
+            ogTitle: "Tanzbrunnen in Köln – Konzerte und kulturelle Veranstaltungen am Rhein",
+            ogDescription: "Der Tanzbrunnen ist ein bekannter Kulturkomplex in Köln mit einer Geschichte von fast 100 Jahren. Konzerte, Festivals, Spaziergänge entlang des Rheins und das einzigartige „Sternwellenzelt“.",
+            ogImage: "https://our-travels.info/new/foto/Germany/nrw/koln/koln-city/rheinpark_koln/002.jpg"
+        }
+    },
+    {
         id: "wallraf_richartz_museum",
         name: "Wallraf-Richartz-Museum",
         type: ["museum"],

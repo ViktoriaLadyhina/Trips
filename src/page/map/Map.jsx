@@ -46,6 +46,8 @@ const Map = () => {
       koeln_bridges: { ru: 'Мосты Кёльна через Рейн', de: 'Kölner Rheinbrücken', ua: 'Мости Кельна через Рейн' },
       forstbotanischer_garten: { ru: 'Ботанический сад и лесопарк', de: 'Forstbotanischer Garten', ua: 'Ботанічний сад і лісопарк' },
       flora_garten_koln: { ru: 'Ботанический сад Флора', de: 'Botanischer Garten Flora', ua: 'Ботанічний сад Флора' },
+      rheinpark_koln: { ru: 'Рейнский парк', de: 'Rheinpark', ua: 'Рейнський парк' },
+      tanzbrunnen: { ru: 'Танцующий фонтан', de: 'Tanzbrunnen', ua: 'Танцюючий фонтан' },
 
       // arnsberg округ
       // Märkischer Kreis
@@ -185,6 +187,11 @@ const Map = () => {
                           <li><Link to="/germany/nrw/city/koln/attractions/koln_bridges">{t.attractions.koeln_bridges[lang]}</Link></li>
                           <li><Link to="/germany/nrw/city/koln/attractions/forstbotanischer_garten">{t.attractions.forstbotanischer_garten[lang]}</Link></li>
                           <li><Link to="/germany/nrw/city/koln/attractions/flora_garten_koln">{t.attractions.flora_garten_koln[lang]}</Link></li>
+                          <li><Link to="/germany/nrw/city/koln/attractions/rheinpark_koln">{t.attractions.rheinpark_koln[lang]}</Link>
+                            <ul>
+                              <li><Link to="/germany/nrw/city/koln/attractions/tanzbrunnen">{t.attractions.tanzbrunnen[lang]}</Link></li>
+                            </ul>
+                          </li>
                         </ul>
                       </li>
 
