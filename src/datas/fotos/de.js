@@ -86,9 +86,13 @@ export const Fotos = {
 rheinpark_koln: [
   { path: "Germany/nrw/koln/koln-city/rheinpark_koln/001.jpg", title: { ru: "Рейнский парк (фото взято с википедии)", ua: "Рейнський парк (фото взято з Вікіпедії)", de: "Rheinpark (Foto von Wikipedia entnommen)" } }, 
   { path: "Germany/nrw/koln/koln-city/rheinpark_koln/002.jpg", title: { ru: "Танцующий фонтан (фото взято с википедии)", ua: "Танцюючий фонтан (фото взято з Вікіпедії)", de: "Tanzbrunnen (Foto von Wikipedia entnommen)" } }, 
+  { path: "Germany/nrw/koln/koln-city/rheinpark_koln/003.jpg", title: { ru: "Кёльнская канатная дорога (фото взято с википедии)", ua: "Кельнська канатна дорога (фото взято з Вікіпедії)", de: "Kölner Seilbahn (Foto von Wikipedia entnommen)" } }
 ],
 tanzbrunnen: [
   { path: "Germany/nrw/koln/koln-city/rheinpark_koln/002.jpg", title: { ru: "Танцующий фонтан (фото взято с википедии)", ua: "Танцюючий фонтан (фото взято з Вікіпедії)", de: "Tanzbrunnen (Foto von Wikipedia entnommen)" } }, 
+],
+koln_seilbahn: [
+  { path: "Germany/nrw/koln/koln-city/rheinpark_koln/003.jpg", title: { ru: "Кёльнская канатная дорога (фото взято с википедии)", ua: "Кельнська канатна дорога (фото взято з Вікіпедії)", de: "Kölner Seilbahn (Foto von Wikipedia entnommen)" } }
 ]
     },
     bruhl: {

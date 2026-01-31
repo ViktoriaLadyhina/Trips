@@ -48,6 +48,7 @@ const Map = () => {
       flora_garten_koln: { ru: 'Ботанический сад Флора', de: 'Botanischer Garten Flora', ua: 'Ботанічний сад Флора' },
       rheinpark_koln: { ru: 'Рейнский парк', de: 'Rheinpark', ua: 'Рейнський парк' },
       tanzbrunnen: { ru: 'Танцующий фонтан', de: 'Tanzbrunnen', ua: 'Танцюючий фонтан' },
+      koln_seilbahn: { ru: 'Кёльнская канатная дорога', de: 'Kölner Seilbahn', ua: 'Кельнська канатна дорога' },
 
       // arnsberg округ
       // Märkischer Kreis
@@ -173,7 +174,7 @@ const Map = () => {
                         </ul>
                       </li>
 
-                      {/* Köln город */}
+                      {/* Köln город */}koln_seilbahn
                       <li><Link to="/germany/nrw/city/koln">{t.cities.koln[lang]}</Link>
                         <ul>
                           <li><Link to="/germany/nrw/city/koln/attractions/cologne-cathedral">{t.attractions.cologneCathedral[lang]}</Link></li>
@@ -190,6 +191,7 @@ const Map = () => {
                           <li><Link to="/germany/nrw/city/koln/attractions/rheinpark_koln">{t.attractions.rheinpark_koln[lang]}</Link>
                             <ul>
                               <li><Link to="/germany/nrw/city/koln/attractions/tanzbrunnen">{t.attractions.tanzbrunnen[lang]}</Link></li>
+                              <li><Link to="/germany/nrw/city/koln/attractions/koln_seilbahn">{t.attractions.koln_seilbahn[lang]}</Link></li>
                             </ul>
                           </li>
                         </ul>

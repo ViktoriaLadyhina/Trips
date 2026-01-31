@@ -428,6 +428,66 @@ const datas = [
         }
     },
     {
+        id: "wallraf_richartz_museum",
+        name: "Wallraf-Richartz-Museum",
+        type: ["museum"],
+        path: "wallraf_richartz_museum",
+        regionsPath: "nrw",
+        districtPath: "city",
+        cityPath: "koln",
+        fotoCard: "Germany/nrw/koln/koln-city/wallraf_richartz_museum/001.jpg",
+        location: "Köln, Deutschland",
+        officialSite: [
+            { bold: "Offizielle Webseite des Museums", link: "http://www.wallraf.museum/en" }
+        ],
+        construction_period: "Das erste Museum wurde 1861 eröffnet, basierend auf einer Sammlung mittelalterlicher Kunst. Das moderne Gebäude, entworfen vom Architekten Oswald Matthias Ungers, wurde 2001 eröffnet.",
+        founder: "Die Sammlung begann mit den Sammlungen von Ferdinand Franz Wallraf, die der Stadt Köln im 19. Jh. übergeben wurden. Dank Spenden wohlhabender Mäzene entwickelte sich das Museum über viele Jahre weiter. 2001 übergab der Schweizer Sammler Gérard Corboud eine große Sammlung impressionistischer und neoimpressionistischer Kunst, weshalb der Name um Fondation Corboud ergänzt wurde.",
+        architects: ["Oswald Matthias Ungers"],
+        short_description: "Das älteste Museum Kölns mit Sammlungen von Malerei, Skulptur und Grafik vom Mittelalter bis zum frühen 20. Jh. Gezeigt werden Werke der Kölner Schule, des Barock sowie Impressionisten und Postimpressionisten aus dem Corboud-Fonds. Die Gesamtzahl der Grafiken beträgt etwa 75.000. Das Museum liegt im Stadtzentrum, in der Nähe des Rathauses und des Kölner Doms.",
+        full_description: {
+            title: "Beschreibung und Geschichte",
+            items: [
+                { bold: "Architektur und Geschichte des Museums", text: "Das Wallraf‑Richartz-Museum ist eines der ältesten und bedeutendsten Museen Kölns, das der europäischen Kunst vom Mittelalter bis zum frühen 20. Jh. gewidmet ist." },
+                { text: "Das moderne Museumsgebäude ist ein speziell entworfener architektonischer Raum, der 2001 nach den Plänen des bekannten Architekten Oswald Matthias Ungers eröffnet wurde. Es befindet sich im historischen Zentrum Kölns, nur wenige Minuten vom Rathaus und dem Kölner Dom entfernt." },
+                { bold: "Veränderungen und Verluste in der Geschichte", text: "Im Laufe der Geschichte erlebte das Museum Verluste von Kunstwerken – zum Beispiel wurden während der NS-Zeit viele Werke als „entartete Kunst“ konfisziert, darunter Arbeiten von Picasso, Munch und anderen." }
+            ]
+        },
+        sub_objects: {
+            title: "Sammlungen",
+            items: [
+                { text: "Die Museumssammlung begann mit Ferdinand Franz Wallraf (1748–1824) – Professor, Sammler und Gelehrter, der viele Kunstwerke aus Kölner Kirchen während der Säkularisation rettete. Er vermachte der Stadt fast 10.000 Gemälde, Zeichnungen, Bücher und andere Artefakte, um sie der Öffentlichkeit zugänglich zu machen." },
+                { bold: "Mittelalterliche Kunst: ", text: "Das Museum besitzt eine der weltweit größten Sammlungen mittelalterlicher Malerei, besonders vertreten durch Werke der Kölner Schule des 13.–15. Jahrhunderts. Unter den mittelalterlichen Werken ist eines der bekanntesten <b>„Madonna in der Rosenlaube“</b> (Stefan Lochner, ca. 1440–1442). Dieses Gemälde gilt als eines der bedeutendsten Werke der Spätgotik und wird oft mit der „Kölner Mona Lisa“ verglichen." },
+                { bold: "Barock: ", text: "Werke von Rubens, Rembrandt und anderen Meistern." },
+                { bold: "Impressionismus und Neoimpressionismus: ", text: "Seit 2001 heißt das Museum Wallraf‑Richartz‑Museum & Fondation Corboud, da die Schweizer Sammler Gérard und Marisol Corboud etwa 170 herausragende Werke von Impressionisten und Postimpressionisten als „Leihgabe auf Lebenszeit“ übergaben. Es ist die größte Sammlung impressionistischer und neoimpressionistischer Malerei in Deutschland mit Werken von Renoir, Monet, Sisley, Morisot, Signac und anderen." },
+                { bold: "Grafik: ", text: "Neben Malerei bewahrt das Museum etwa 75.000 grafische Arbeiten (Zeichnungen, Drucke, Aquarelle) vom Mittelalter bis zum 20. Jh. – eine einzigartige Ressource zur Erforschung der europäischen Kunstentwicklung." }
+            ]
+        },
+        tickets_and_entry: {
+            title: "Praktische Informationen",
+            items: [
+                { bold: "Adresse:", text: "Obenmarspforten 40, 50667 Köln, Deutschland" },
+                { bold: "Öffnungszeiten:", text: "Dienstag–Sonntag: 10:00–18:00. Jeder 1. und 3. Donnerstag im Monat: 10:00–22:00. Montag: geschlossen (besondere Feiertags- und Saisonzeiten können abweichen)" },
+                { bold: "Eintrittspreise (2025):", text: "Erwachsene: ca. 10–13 €. Ermäßigt: ca. 7–8 € (Studenten, Senioren, Sozialvergünstigungen). Kinder bis 18 Jahre: frei. Familien-, Gruppen- und Kombitickets mit anderen Museen der Stadt verfügbar." }
+            ]
+        },
+        interestingFacts: {
+            title: "Interessante Fakten",
+            items: [
+                { text: "Die Museumsammlung umfasst Werke aus über 700 Jahren Kunstgeschichte – vom Mittelalter bis zum Jugendstil." },
+                { text: "Der Sammlungsgründer Ferdinand Franz Wallraf sammelte lange Kunst aus Kirchen, Häusern und Privatbesitz, um sie für zukünftige Generationen zu bewahren." },
+                { text: "Die im Museumstitel enthaltene Fondation Corboud repräsentiert eine bedeutende Sammlung von Impressionisten und Postimpressionisten, viele Werke wurden im Rahmen von Ausstellungen weltweit gezeigt." },
+                { text: "Es gibt eine virtuelle 360°-Tour durch das Museum, die es ermöglicht, die Sammlung online zu erkunden." }
+            ]
+        },
+        meta: {
+            title: "Wallraf-Richartz-Museum — Kunst vom Mittelalter bis zum Impressionismus",
+            description: "Das Wallraf-Richartz-Museum in Köln ist das älteste Museum der Stadt mit Sammlungen von Malerei, Skulptur und Grafik vom Mittelalter bis zum frühen 20. Jh., einschließlich des Fonds Fondation Corboud mit Impressionisten.",
+            ogTitle: "Wallraf-Richartz-Museum — Kunst vom Mittelalter bis zum Impressionismus",
+            ogDescription: "Entdecken Sie das Wallraf-Richartz-Museum in Köln: Mittelalterliche und barocke Kunst sowie die Impressionisten-Sammlung Fondation Corboud.",
+            ogImage: "https://our-travels.info/new/foto/Germany/nrw/koln/koln-city/wallraf_richartz_museum/001.jpg"
+        }
+    },
+    {
         id: "koln_bridges",
         name: "Kölner Rheinbrücken",
         type: ["technical_structure"],
@@ -619,11 +679,11 @@ const datas = [
         cityPath: "koln",
         fotoCard: "Germany/nrw/koln/koln-city/rheinpark_koln/001.jpg",
         location: "Köln, Deutschland",
-        subObjects: ["tanzbrunnen"],
+        subObjects: ["tanzbrunnen", "koln_seilbahn"],
         short_description: "Der Rheinpark ist ein großer öffentlicher Park entlang des rechten Rheinufers im Stadtteil Deutz der Stadt Köln. Er stellt eine historisch und architektonisch bedeutende Grünanlage dar, bekannt für seine weitläufigen Rasenflächen, Blumenbeete, Spazierwege und den herrlichen Blick auf das Stadtzentrum mit dem Kölner Dom.",
         short_description_subObjects: {
             text: "Im Rheinpark befinden sich folgende Sehenswürdigkeiten:",
-            items: ["Tanzbrunnen"]
+            items: ["Tanzbrunnen", "Kölner Seilbahn"]
         },
         full_description: {
             title: "Beschreibung und Geschichte",
@@ -651,7 +711,7 @@ const datas = [
                 { text: "Auf dem Gelände gibt es außerdem: Restaurants und Cafés, eine Erholungszone am Wasser, einen Sommer-„Beach Club“." }
             ]
         },
-        constructionPeriod: "1957",
+        construction_period: "1957",
         architects: "Landschaftsprojekt unter der Leitung von Hermann Mattern",
         meta: {
             title: "Rheinpark (Rheinpark)",
@@ -692,7 +752,7 @@ const datas = [
                 { bold: "Multifunktionalität: ", text: "Der Komplex vereint offene Flächen, ein Amphitheater, überdachte Bereiche und Grünanlagen, was sowohl Massenkonzerte als auch intimere kulturelle Veranstaltungen ermöglicht." }
             ]
         },
-        constructionPeriod: "1928",
+        construction_period: "1928",
         architects: "Das architektonische Erscheinungsbild des Tanzbrunnens entwickelte sich in mehreren Phasen: Zunächst wurde der Brunnen mit Tanzfläche vom Architekten Josef Op Gen Orth 1950 geschaffen, und 1957 entwarf der herausragende Membranarchitekt Frei Otto für den Komplex das leichte „Sternwellenzelt“ – ein wellenförmiges Dach mit vom Zentrum ausstrahlenden Strahlen, das zu einer architektonischen Besonderheit des Tanzbrunnens wurde.",
         meta: {
             title: "Tanzbrunnen in Köln – Konzerte, Festivals, kulturelle Veranstaltungen",
@@ -703,63 +763,61 @@ const datas = [
         }
     },
     {
-        id: "wallraf_richartz_museum",
-        name: "Wallraf-Richartz-Museum",
-        type: ["museum"],
-        path: "wallraf_richartz_museum",
+        id: "koln_seilbahn",
+        name: "Kölner Seilbahn",
+        type: ["technical_structure"],
+        path: "koln_seilbahn",
+        countryPath: "germany",
         regionsPath: "nrw",
         districtPath: "city",
         cityPath: "koln",
-        fotoCard: "Germany/nrw/koln/koln-city/wallraf_richartz_museum/001.jpg",
+        fotoCard: "Germany/nrw/koln/koln-city/rheinpark_koln/003.jpg",
         location: "Köln, Deutschland",
         officialSite: [
-            { bold: "Offizielle Webseite des Museums", link: "http://www.wallraf.museum/en" }
+            { bold: "Offizielle Website", link: "https://www.koelner-seilbahn.de/index.html" }
         ],
-        construction_period: "Das erste Museum wurde 1861 eröffnet, basierend auf einer Sammlung mittelalterlicher Kunst. Das moderne Gebäude, entworfen vom Architekten Oswald Matthias Ungers, wurde 2001 eröffnet.",
-        founder: "Die Sammlung begann mit den Sammlungen von Ferdinand Franz Wallraf, die der Stadt Köln im 19. Jh. übergeben wurden. Dank Spenden wohlhabender Mäzene entwickelte sich das Museum über viele Jahre weiter. 2001 übergab der Schweizer Sammler Gérard Corboud eine große Sammlung impressionistischer und neoimpressionistischer Kunst, weshalb der Name um Fondation Corboud ergänzt wurde.",
-        architects: ["Oswald Matthias Ungers"],
-        short_description: "Das älteste Museum Kölns mit Sammlungen von Malerei, Skulptur und Grafik vom Mittelalter bis zum frühen 20. Jh. Gezeigt werden Werke der Kölner Schule, des Barock sowie Impressionisten und Postimpressionisten aus dem Corboud-Fonds. Die Gesamtzahl der Grafiken beträgt etwa 75.000. Das Museum liegt im Stadtzentrum, in der Nähe des Rathauses und des Kölner Doms.",
+        hiddenFromList: true,
+        showMore: true,
+        short_description: "Die Kölner Seilbahn ist eine panoramische Seilbahn über den Rhein, die den Zoo und den Rheinpark in Köln verbindet. Sie bietet einen der besten Ausblicke auf die Stadt, den Kölner Dom und die Rheinufer. Sie ist saisonal in Betrieb und gilt als eine der bekanntesten touristischen Attraktionen der Stadt.",
         full_description: {
             title: "Beschreibung und Geschichte",
             items: [
-                { bold: "Architektur und Geschichte des Museums", text: "Das Wallraf‑Richartz-Museum ist eines der ältesten und bedeutendsten Museen Kölns, das der europäischen Kunst vom Mittelalter bis zum frühen 20. Jh. gewidmet ist." },
-                { text: "Das moderne Museumsgebäude ist ein speziell entworfener architektonischer Raum, der 2001 nach den Plänen des bekannten Architekten Oswald Matthias Ungers eröffnet wurde. Es befindet sich im historischen Zentrum Kölns, nur wenige Minuten vom Rathaus und dem Kölner Dom entfernt." },
-                { bold: "Veränderungen und Verluste in der Geschichte", text: "Im Laufe der Geschichte erlebte das Museum Verluste von Kunstwerken – zum Beispiel wurden während der NS-Zeit viele Werke als „entartete Kunst“ konfisziert, darunter Arbeiten von Picasso, Munch und anderen." }
+                { bold: "Der Kölner Seilbahn ", text: "ist eine Gondel-Seilbahn in der Stadt Köln, die die Rheinufer im Bereich des Zoos und des Rheinparks verbindet (südliches/rechtes Ufer mit nördlichem/linkem). " },
+                { text: "&nbsp;&nbsp;&nbsp; ▪ Streckenlänge: etwa 935 m. " },
+                { text: "&nbsp;&nbsp;&nbsp; ▪ Höhe: rund 50 m über dem Boden an der höchsten Stelle. " },
+                { text: "&nbsp;&nbsp;&nbsp; ▪ 44–50 Kabinen (vier Sitzplätze), die in regelmäßigen Abständen verkehren (etwa alle ~18 Sekunden). " },
+                { text: "&nbsp;&nbsp;&nbsp; ▪ Fahrgeschwindigkeit: etwa 10 km/h (ruhige Panoramafahrt). " },
+                { text: "&nbsp;&nbsp;&nbsp; ▪ Förderleistung: bis zu ca. 1600–2000 Personen pro Stunde. " },
+                { text: "Diese Streckenführung macht sie nicht nur zu einem Verkehrsmittel, sondern zu einer echten Panoramafahrt über den Rhein. " },
+                { bold: "Geschichte. ", text: "Eröffnet am 26. April 1957 anlässlich der Bundesgartenschau. Sie war die erste Seilbahn in Europa, die einen Fluss überquerte. " },
+                { text: "1963 wurde sie aufgrund des Baus der Zoobrücke geschlossen und umgebaut, wobei die Strecke leicht verändert wurde. Seitdem ist sie jedes Jahr im Sommer in Betrieb und befördert rund 500.000 Fahrgäste pro Jahr. " },
+                { text: "Seit 1998 wird der Betrieb von einem Tochterunternehmen des städtischen Verkehrsunternehmens (Kölner Verkehrs-Betriebe) durchgeführt. " },
+                { bold: "Sehenswertes: ", text: "Während der Fahrt eröffnen sich Ausblicke auf die Silhouette des Kölner Doms (Kölner Dom) und die historische Altstadt, den Rhein, die Stadtlandschaft, die Grünflächen des Rheinparks sowie Bereiche des Zoos, des Botanischen Gartens und der Claudius Therme unter der Trasse. Sie gilt als einer der besten Orte für Fotos bei Sonnenuntergang oder in den Abendstunden (Nachtfahrten zu besonderen Anlässen). " }
             ]
         },
-        sub_objects: {
-            title: "Sammlungen",
-            items: [
-                { text: "Die Museumssammlung begann mit Ferdinand Franz Wallraf (1748–1824) – Professor, Sammler und Gelehrter, der viele Kunstwerke aus Kölner Kirchen während der Säkularisation rettete. Er vermachte der Stadt fast 10.000 Gemälde, Zeichnungen, Bücher und andere Artefakte, um sie der Öffentlichkeit zugänglich zu machen." },
-                { bold: "Mittelalterliche Kunst: ", text: "Das Museum besitzt eine der weltweit größten Sammlungen mittelalterlicher Malerei, besonders vertreten durch Werke der Kölner Schule des 13.–15. Jahrhunderts. Unter den mittelalterlichen Werken ist eines der bekanntesten <b>„Madonna in der Rosenlaube“</b> (Stefan Lochner, ca. 1440–1442). Dieses Gemälde gilt als eines der bedeutendsten Werke der Spätgotik und wird oft mit der „Kölner Mona Lisa“ verglichen." },
-                { bold: "Barock: ", text: "Werke von Rubens, Rembrandt und anderen Meistern." },
-                { bold: "Impressionismus und Neoimpressionismus: ", text: "Seit 2001 heißt das Museum Wallraf‑Richartz‑Museum & Fondation Corboud, da die Schweizer Sammler Gérard und Marisol Corboud etwa 170 herausragende Werke von Impressionisten und Postimpressionisten als „Leihgabe auf Lebenszeit“ übergaben. Es ist die größte Sammlung impressionistischer und neoimpressionistischer Malerei in Deutschland mit Werken von Renoir, Monet, Sisley, Morisot, Signac und anderen." },
-                { bold: "Grafik: ", text: "Neben Malerei bewahrt das Museum etwa 75.000 grafische Arbeiten (Zeichnungen, Drucke, Aquarelle) vom Mittelalter bis zum 20. Jh. – eine einzigartige Ressource zur Erforschung der europäischen Kunstentwicklung." }
-            ]
-        },
-        tickets_and_entry: {
+        ticketItems: {
             title: "Praktische Informationen",
             items: [
-                { bold: "Adresse:", text: "Obenmarspforten 40, 50667 Köln, Deutschland" },
-                { bold: "Öffnungszeiten:", text: "Dienstag–Sonntag: 10:00–18:00. Jeder 1. und 3. Donnerstag im Monat: 10:00–22:00. Montag: geschlossen (besondere Feiertags- und Saisonzeiten können abweichen)" },
-                { bold: "Eintrittspreise (2025):", text: "Erwachsene: ca. 10–13 €. Ermäßigt: ca. 7–8 € (Studenten, Senioren, Sozialvergünstigungen). Kinder bis 18 Jahre: frei. Familien-, Gruppen- und Kombitickets mit anderen Museen der Stadt verfügbar." }
+                { bold: "Saison: ", text: "in der Regel von April bis Oktober täglich." },
+                { bold: "Öffnungszeiten: ", text: "meist von 10:00 bis 18:00 Uhr (letzte Fahrt gegen 17:45–18:00 Uhr)." },
+                { bold: "Tickets: ", text: "Erwachsene: etwa 4,80 €–7,00 € für ein Hin- und Rückfahrticket, Kinder (meist bis ca. 12 Jahre) günstiger. Preise können variieren, Ermäßigungen mit KölnCard oder anderen Karten sind möglich." }
             ]
         },
         interestingFacts: {
             title: "Interessante Fakten",
             items: [
-                { text: "Die Museumsammlung umfasst Werke aus über 700 Jahren Kunstgeschichte – vom Mittelalter bis zum Jugendstil." },
-                { text: "Der Sammlungsgründer Ferdinand Franz Wallraf sammelte lange Kunst aus Kirchen, Häusern und Privatbesitz, um sie für zukünftige Generationen zu bewahren." },
-                { text: "Die im Museumstitel enthaltene Fondation Corboud repräsentiert eine bedeutende Sammlung von Impressionisten und Postimpressionisten, viele Werke wurden im Rahmen von Ausstellungen weltweit gezeigt." },
-                { text: "Es gibt eine virtuelle 360°-Tour durch das Museum, die es ermöglicht, die Sammlung online zu erkunden." }
+                { text: "Es ist sogar möglich, sich während der Überfahrt in einer speziellen Hochzeitskabine offiziell trauen zu lassen." },
+                { text: "Sie gilt als eine der sichersten Seilbahnkonstruktionen dieser Art in Europa (Millionen Fahrten ohne schwerwiegende Zwischenfälle)." },
+                { text: "Es handelt sich nicht um eine reguläre städtische Verkehrslinie, sondern um eine Erlebnis- und Ausflugsattraktion für Touristen und Einheimische." }
             ]
         },
+        construction_period: "26. April 1957",
         meta: {
-            title: "Wallraf-Richartz-Museum — Kunst vom Mittelalter bis zum Impressionismus",
-            description: "Das Wallraf-Richartz-Museum in Köln ist das älteste Museum der Stadt mit Sammlungen von Malerei, Skulptur und Grafik vom Mittelalter bis zum frühen 20. Jh., einschließlich des Fonds Fondation Corboud mit Impressionisten.",
-            ogTitle: "Wallraf-Richartz-Museum — Kunst vom Mittelalter bis zum Impressionismus",
-            ogDescription: "Entdecken Sie das Wallraf-Richartz-Museum in Köln: Mittelalterliche und barocke Kunst sowie die Impressionisten-Sammlung Fondation Corboud.",
-            ogImage: "https://our-travels.info/new/foto/Germany/nrw/koln/koln-city/wallraf_richartz_museum/001.jpg"
+            title: "Kölner Seilbahn – Seilbahn über den Rhein in Köln",
+            description: "Die Cologne Cable Car ist eine panoramische Seilbahn über den Rhein in Köln. Geschichte, Lage, Ausblicke auf den Kölner Dom, den Rheinpark und nützliche Informationen für Besucher.",
+            ogTitle: "Cologne Cable Car – Panoramablick auf Köln aus der Höhe",
+            ogDescription: "Die Cologne Cable Car verbindet die Rheinufer und bietet einen der schönsten Panoramablicke auf Köln, den Kölner Dom und den Rheinpark. Eine beliebte Sehenswürdigkeit und ein Wahrzeichen der Stadt.",
+            ogImage: "https://our-travels.info/new/foto/Germany/nrw/koln/koln-city/rheinpark_koln/003.jpg"
         }
     },
 

@@ -165,7 +165,7 @@ const AttractionForm = () => {
           }))
       }
     }),
-    ...(watchedFields.constructionPeriod.length > 0 && { constructionPeriod: watchedFields.constructionPeriod }),
+    ...(watchedFields.constructionPeriod.length > 0 && { construction_period: watchedFields.constructionPeriod }),
     ...(watchedFields.architects.length > 0 && { architects: watchedFields.architects }),
     ...(watchedFields.founder.length > 0 && { founder: watchedFields.founder }),
     meta: {
@@ -224,28 +224,46 @@ const AttractionForm = () => {
 
 
   // Правильный вывод объекта
-  const toJsModuleString = (obj, indent = 0) => {
-    const space = "  ".repeat(indent);
+const toJsModuleString = (obj, indent = 0) => {
+  const space = "  ".repeat(indent);
 
-    if (Array.isArray(obj)) {
-      if (obj.every(v => typeof v === "string")) {
-        return `[${obj.map(v => `"${v}"`).join(", ")}]`;
+  if (Array.isArray(obj)) {
+    // Если все элементы строки
+    if (obj.every(v => typeof v === "string")) {
+      return `[${obj.map(v => `"${v}"`).join(", ")}]`;
+    }
+
+    const arrayItems = obj.map(item => {
+      // Если элемент — "простой объект", вывести в одну строку
+      if (
+        typeof item === "object" &&
+        item !== null &&
+        Object.values(item).every(v => typeof v === "string" || typeof v === "number")
+      ) {
+        const inner = Object.entries(item)
+          .map(([k, v]) => `${k}: "${v}"`)
+          .join(", ");
+        return `${space}  { ${inner} }`;
       }
-      return `[\n${obj.map(item => `${space}  ${toJsModuleString(item, indent + 1)}`).join(",\n")}\n${space}]`;
-    }
+      return `${space}  ${toJsModuleString(item, indent + 1)}`;
+    });
 
-    if (typeof obj === "object" && obj !== null) {
-      const entries = Object.entries(obj)
-        .filter(([, value]) => value !== undefined && value !== null)
-        .map(([key, value]) => {
-          if (typeof value === "string") return `${key}: "${value}"`;
-          return `${key}: ${toJsModuleString(value, indent + 1)}`;
-        });
-      return `{\n${space}  ${entries.join(`,\n${space}  `)}\n${space}}`;
-    }
+    return `[\n${arrayItems.join(",\n")}\n${space}]`;
+  }
 
-    return obj;
-  };
+  if (typeof obj === "object" && obj !== null) {
+    const entries = Object.entries(obj)
+      .filter(([, value]) => value !== undefined && value !== null)
+      .map(([key, value]) => {
+        if (typeof value === "string") return `${key}: "${value}"`;
+        return `${key}: ${toJsModuleString(value, indent + 1)}`;
+      });
+    return `{\n${space}  ${entries.join(`,\n${space}  `)}\n${space}}`;
+  }
+
+  return obj;
+};
+
 
 
 
@@ -581,7 +599,7 @@ const AttractionForm = () => {
       {/* // -------------- Предпросмотр и кнопки */}
       <div className='prev'>
         <h4>Предпросмотр:</h4>
-        <pre>{toJsModuleString(previewObject)}</pre>
+        <pre>{toJsModuleString(previewObject)+","}</pre>
       </div>
 
       <div className='clear-copy'>
