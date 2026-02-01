@@ -679,11 +679,11 @@ const datas = [
         cityPath: "koln",
         fotoCard: "Germany/nrw/koln/koln-city/rheinpark_koln/001.jpg",
         location: "Köln, Deutschland",
-        subObjects: ["tanzbrunnen", "koln_seilbahn"],
+        subObjects: ["tanzbrunnen", "koln_seilbahn", "divitia_koln"],
         short_description: "Der Rheinpark ist ein großer öffentlicher Park entlang des rechten Rheinufers im Stadtteil Deutz der Stadt Köln. Er stellt eine historisch und architektonisch bedeutende Grünanlage dar, bekannt für seine weitläufigen Rasenflächen, Blumenbeete, Spazierwege und den herrlichen Blick auf das Stadtzentrum mit dem Kölner Dom.",
         short_description_subObjects: {
             text: "Im Rheinpark befinden sich folgende Sehenswürdigkeiten:",
-            items: ["Tanzbrunnen", "Kölner Seilbahn"]
+            items: ["Tanzbrunnen", "Kölner Seilbahn", "Ruinen des römischen Forts Divitia in Köln"]
         },
         full_description: {
             title: "Beschreibung und Geschichte",
@@ -707,7 +707,6 @@ const datas = [
             items: [
                 { bold: "Offene Flächen und Landschaft. ", text: "Dank der durchdachten Planung, dem Wegenetz, Pavillons, Skulpturen und Springbrunnen ist der Park ein beliebter Ort für Erholung und Spaziergänge für Kölner und Touristen." },
                 { bold: "Kinderschmalspurbahn. ", text: "Durch den Park verläuft eine etwa 2 km lange Kinderschmalspurbahn. Im Sommer fahren kleine Züge mit drei Haltestellen, die besonders bei Kindern und Familien beliebt sind." },
-                { bold: "Kölner Seilbahn (Cologne Cable Car). ", text: "Über den Rhein führt eine berühmte Seilbahn, die den Park mit dem Zoo auf der anderen Seite verbindet. Dies ist eine der ikonischen städtischen Sehenswürdigkeiten. Die Linie ist etwa 935 m lang, die Fahrt dauert einige Minuten. Betrieben wird sie in der warmen Jahreszeit (in der Regel von März bis Oktober)." },
                 { text: "Auf dem Gelände gibt es außerdem: Restaurants und Cafés, eine Erholungszone am Wasser, einen Sommer-„Beach Club“." }
             ]
         },
@@ -818,6 +817,64 @@ const datas = [
             ogTitle: "Cologne Cable Car – Panoramablick auf Köln aus der Höhe",
             ogDescription: "Die Cologne Cable Car verbindet die Rheinufer und bietet einen der schönsten Panoramablicke auf Köln, den Kölner Dom und den Rheinpark. Eine beliebte Sehenswürdigkeit und ein Wahrzeichen der Stadt.",
             ogImage: "https://our-travels.info/new/foto/Germany/nrw/koln/koln-city/rheinpark_koln/003.jpg"
+        }
+    },
+    {
+        id: "divitia_koln",
+        name: "Ruinen des römischen Forts Divitia in Köln",
+        type: ["historical_building"],
+        path: "divitia_koln",
+        countryPath: "germany",
+        regionsPath: "nrw",
+        districtPath: "city",
+        cityPath: "koln",
+        fotoCard: "Germany/nrw/koln/koln-city/rheinpark_koln/004.jpg",
+        location: "Köln, Deutschland",
+        hiddenFromList: true,
+        showMore: true,
+        short_description: "Die Ruinen des römischen Forts Divitia sind Überreste einer spätantiken Befestigung aus dem 4. Jahrhundert n. Chr. am rechten Rheinufer in Köln. Erhalten sind Teile des Turms, römische Mauerreste und Fundamentreste. Die Anlage ist frei zugänglich im Fußgängerbereich des Rheinparks.",
+        full_description: {
+            title: "Beschreibung und Geschichte",
+            items: [
+                { bold: "Ruinen des römischen Forts Divitia", text: "– dies sind die Überreste einer spätantiken Befestigung aus dem 4. Jahrhundert n. Chr. am rechten Rheinufer. Heute sind Fragmente des runden Wachturms, Mauerreste und Fundamentreste sichtbar. Besonders ist, dass es sich um originale archäologische Überreste handelt, nicht um eine Rekonstruktion. Das Fort ist in den modernen Fußgängerbereich des Rheinparks integriert, sodass Touristen und Besucher es frei besichtigen können." },
+                { bold: "Geschichte. ", text: "Das Fort wurde etwa 310–315 n. Chr. auf Befehl von Kaiser Konstantin dem Großen errichtet. Es hatte eine doppelte Funktion: Es schützte das rechte Rheinufer und kontrollierte die Flussüberquerung, um die Sicherheit der antiken Stadt Colonia Claudia Ara Agrippinensium (das alte Köln) zu gewährleisten." },
+                { text: "Divitia war Teil des Befestigungssystems am Rhein, das strategische Bedeutung für die Verteidigung der nördlichen Grenzen des Römischen Reiches hatte. Das Fort war Teil einer Beobachtungslinie und unterhielt Verbindung zu anderen römischen Militäranlagen, um schnell auf Bedrohungen durch germanische Stämme reagieren zu können." }
+            ]
+        },
+        ticketItems: {
+            title: "Praktische Informationen",
+            items: [
+                { bold: "Lage:", text: "westliche Grenze des Rheinparks, in der Nähe des Rheinuferwegs, unweit der Hohenzollernbrücke." },
+                { bold: "Zugang:", text: "freie Besichtigung, Fußgängerbereich." },
+                { bold: "Empfehlungen:", text: "gut kombinierbar mit einem Spaziergang am Rhein oder dem Besuch anderer Objekte im Rheinpark." },
+                { bold: "Ausstattung:", text: "Informationstafeln auf Deutsch und Englisch." }
+            ]
+        },
+        sub_objects: {
+            title: "Heutiger Erhaltungszustand",
+            items: [
+                { bold: "Fragmente des runden Wachturms: ", text: "teilweise erhalten, vermutlich als Aussichtspunkt und für Verteidigungszwecke genutzt." },
+                { bold: "Römische Mauerreste:", text: "Fragmentierte Mauern zeigen die römische Mauertechnik und die Verwendung von lokalem Stein." },
+                { bold: "Fundamentreste: ", text: "erlauben die Vorstellung von Größe und Konfiguration der Befestigung." }
+            ]
+        },
+        interestingFacts: {
+            title: "Interessante Fakten",
+            items: [
+                { text: "Divitia ist eines der wenigen erhaltenen römischen Befestigungsobjekte am rechten Rheinufer." },
+                { text: "Das Fort existierte gleichzeitig mit dem Bau der römischen Rheinbrücke, die strategische Bedeutung für Handel und militärische Zwecke hatte." },
+                { text: "Archäologische Ausgrabungen zeigten, dass die Mauern verstärkt wurden, um vor möglichen Überschwemmungen des Flusses zu schützen." },
+                { text: "Im 19. und 20. Jahrhundert wurden Teile des Forts als „Bausteine“ für andere städtische Gebäude verwendet, aber ein Teil konnte erhalten bleiben." }
+            ]
+        },
+        construction_period: " ca. 310–315 n. Chr.",
+        founder: " Kaiser Konstantin der Große.",
+        meta: {
+            title: "Ruinen des römischen Forts Divitia in Köln – Überreste einer römischen Befestigung",
+            description: "Überreste des römischen Forts Divitia aus dem 4. Jahrhundert n. Chr. am rechten Rheinufer in Köln. Erhalten sind Turm, Mauerreste und Fundamentreste. Frei zugänglich im Rheinpark.",
+            ogTitle: "Ruinen des römischen Forts Divitia in Köln – Überreste einer römischen Befestigung",
+            ogDescription: "Entdecken Sie die Überreste des römischen Forts Divitia im Rheinpark, Köln. Originale Mauern, Turm und Fundamentreste stehen für Spaziergänge und Besichtigungen offen.",
+            ogImage: "https://our-travels.info/new/foto/Germany/nrw/koln/koln-city/rheinpark_koln/004.jpg"
         }
     },
 

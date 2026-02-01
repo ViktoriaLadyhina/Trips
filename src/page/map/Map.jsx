@@ -34,6 +34,18 @@ const Map = () => {
       sumy: { ru: 'Город Сумы', de: 'Stadt Sumy', ua: 'Місто Суми' }
     },
     attractions: {
+            // arnsberg округ
+      // Märkischer Kreis
+      // Lüdenscheid
+      altstadt_luedenscheid: { ru: 'Старый город Люденшайда', de: 'Altstadt Lüdenscheid', ua: 'Старе місто Люденшайда' },
+      erloeserkirche_luedenscheid: { ru: 'Церковь Спасителя', de: 'Erlöserkirche', ua: 'Церква Спасителя' },
+      rathausplatz_luedenscheid: { ru: 'Центральная площадь Люденшайда', de: 'Rathausplatz von Lüdenscheid', ua: 'Центральна площа Люденшайда' },
+      brunnen_altstadt_luedenscheid: { ru: 'Фонтан в старом городе', de: 'Brunnen in der Altstadt', ua: 'Фонтан у старому місті' },
+      sternplatz: { ru: 'Площадь Штернплац', de: 'Sternplatz', ua: 'Площа Штернплац' },
+      onkel_willi_denkmal_sternplatz_luedenscheid: { ru: 'Памятник дяде Вилли', de: 'Denkmal von Onkel Willi', ua: 'Памятник дядьку Віллі' },
+      fontain_sternplatz_luedenscheid: { ru: 'Фонтан на площади Штернплац', de: 'Brunnen auf dem Sternplatz', ua: 'Фонтан на площі Штернплац' },
+      history_museum_luedenscheid: { ru: 'Исторический музей Люденшайда', de: 'Geschichtsmuseum Lüdenscheid', ua: 'Історичний музей Люденшайда' },
+
       //Köln-city
       cologneCathedral: { ru: 'Кёльнский собор', de: 'Kölner Dom', ua: 'Кельнський собор' },
       cologneRathaus: { ru: 'Кёльнская ратуша', de: 'Kölner Rathaus', ua: 'Кельнська ратуша' },
@@ -49,18 +61,7 @@ const Map = () => {
       rheinpark_koln: { ru: 'Рейнский парк', de: 'Rheinpark', ua: 'Рейнський парк' },
       tanzbrunnen: { ru: 'Танцующий фонтан', de: 'Tanzbrunnen', ua: 'Танцюючий фонтан' },
       koln_seilbahn: { ru: 'Кёльнская канатная дорога', de: 'Kölner Seilbahn', ua: 'Кельнська канатна дорога' },
-
-      // arnsberg округ
-      // Märkischer Kreis
-      // Lüdenscheid
-      altstadt_luedenscheid: { ru: 'Старый город Люденшайда', de: 'Altstadt Lüdenscheid', ua: 'Старе місто Люденшайда' },
-      erloeserkirche_luedenscheid: { ru: 'Церковь Спасителя', de: 'Erlöserkirche', ua: 'Церква Спасителя' },
-      rathausplatz_luedenscheid: { ru: 'Центральная площадь Люденшайда', de: 'Rathausplatz von Lüdenscheid', ua: 'Центральна площа Люденшайда' },
-      brunnen_altstadt_luedenscheid: { ru: 'Фонтан в старом городе', de: 'Brunnen in der Altstadt', ua: 'Фонтан у старому місті' },
-      sternplatz: { ru: 'Площадь Штернплац', de: 'Sternplatz', ua: 'Площа Штернплац' },
-      onkel_willi_denkmal_sternplatz_luedenscheid: { ru: 'Памятник дяде Вилли', de: 'Denkmal von Onkel Willi', ua: 'Памятник дядьку Віллі' },
-      fontain_sternplatz_luedenscheid: { ru: 'Фонтан на площади Штернплац', de: 'Brunnen auf dem Sternplatz', ua: 'Фонтан на площі Штернплац' },
-      history_museum_luedenscheid: { ru: 'Исторический музей Люденшайда', de: 'Geschichtsmuseum Lüdenscheid', ua: 'Історичний музей Люденшайда' },
+      divitia_koln: { ru: 'Руины римского форта Дивития в Кёльне', de: 'Ruinen des römischen Forts Divitia in Köln', ua: 'Руїни римського форту Дивітія в Кельні' },
 
       // Köln okrug
       // Rhein-Erft-Kreis
@@ -174,7 +175,7 @@ const Map = () => {
                         </ul>
                       </li>
 
-                      {/* Köln город */}koln_seilbahn
+                      {/* Köln город */}
                       <li><Link to="/germany/nrw/city/koln">{t.cities.koln[lang]}</Link>
                         <ul>
                           <li><Link to="/germany/nrw/city/koln/attractions/cologne-cathedral">{t.attractions.cologneCathedral[lang]}</Link></li>
@@ -192,6 +193,7 @@ const Map = () => {
                             <ul>
                               <li><Link to="/germany/nrw/city/koln/attractions/tanzbrunnen">{t.attractions.tanzbrunnen[lang]}</Link></li>
                               <li><Link to="/germany/nrw/city/koln/attractions/koln_seilbahn">{t.attractions.koln_seilbahn[lang]}</Link></li>
+                              <li><Link to="/germany/nrw/city/koln/attractions/divitia_koln">{t.attractions.divitia_koln[lang]}</Link></li>
                             </ul>
                           </li>
                         </ul>
