@@ -48,6 +48,9 @@ export const Fotos = {
         { path: "Germany/nrw/koln/koln-city/koln-cathedral/004.jpg", title: { ru: "Кёльнский собор - 2025", ua: "Кельнський собор - 2025", de: "Kölner Dom - 2025" } },
         { path: "Germany/nrw/koln/koln-city/koln-cathedral/005.jpg", title: { ru: "Кёльнский собор - 2025", ua: "Кельнський собор - 2025", de: "Kölner Dom - 2025" } },
       ],
+      guerzenich_koln: [
+        { path: "Germany/nrw/koln/koln-city/guerzenich_koln/001.jpg", title: { ru: "Гюрцених (фото взято с интернета)", ua: "Гюрценіх (фото взято з Інтернету)", de: "Gürzenich (Foto aus dem Internet)" } },
+      ],
       'roemisch-germanisches-museum': [
         { path: "Germany/nrw/koln/koln-city/roemisch-germanisches-museum/001.jpg", title: { ru: "Римско-германский музей - 2025", ua: "Римсько-германський музей - 2025", de: "Römisch-Germanisches Museum - 2025" } }
       ],

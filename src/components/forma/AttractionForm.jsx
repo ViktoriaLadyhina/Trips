@@ -122,7 +122,7 @@ const AttractionForm = () => {
           }))
     },
     ...(watchedFields.ticketItems?.some(item => item.bold.trim() || item.text.trim()) && {
-      ticketItems: {
+      tickets_and_entry: {
         title: "Практическая информация",
         items: watchedFields.ticketItems
           ?.filter(item => item.bold.trim() || item.text.trim())

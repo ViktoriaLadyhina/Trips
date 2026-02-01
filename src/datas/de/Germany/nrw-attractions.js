@@ -88,7 +88,6 @@ const datas = [
         officialSite: [
             { bold: "Offizielle Website", link: "https://www.stadt-koeln.de/", text: " der Stadt Köln (Rathaus)" },
         ],
-        unesco_status: { included: false },
         tickets_and_entry: {
             title: "Eintritt und Zugang",
             items: [
@@ -131,6 +130,68 @@ const datas = [
             ogTitle: "Kölner Rathaus: gotischer Turm, Renaissance-Loggia",
             ogDescription: "Das Kölner Rathaus – das älteste Verwaltungsgebäude Deutschlands, vereint gotischen Turm, Renaissance-Loggia und den historischen Hansasaal.",
             ogImage: "https://our-travels.info/new/foto/Germany/nrw/koln/koln-city/rathaus-koeln/Rathaus-Köln.jpg"
+        }
+    },
+    {
+        id: "guerzenich_koln",
+        name: "Gürzenich – historischer Konzertsaal und Zunfthaus in Köln",
+        type: ["historical_building"],
+        path: "guerzenich_koln",
+        countryPath: "germany",
+        regionsPath: "nrw",
+        districtPath: "city",
+        cityPath: "koln",
+        fotoCard: "Germany/nrw/koln/koln-city/guerzenich_koln/001.jpg",
+        location: "Köln, Deutschland",
+        officialSite: [
+            { bold: "Offizielle Website", link: "https://koelncongress.de/locations/guerzenich-koeln/" }
+        ],
+        short_description: "Der Gürzenich ist ein historisches Gebäude im Zentrum von Köln, das in den Jahren 1441-1452 für städtische Feste und feierliche Anlässe errichtet wurde. Nach der Zerstörung im Krieg wurde es wiederaufgebaut und dient heute als Veranstaltungsort für Konzerte, Bankette und offizielle Empfänge. Die Fassade ist mit Figuren historischer Schutzpatrone der Stadt geschmückt, während die Türgriffe des Haupteingangs die volkstümlichen Kölner Figuren Tünnes und Schäl zeigen.",
+        full_description: {
+            title: "Beschreibung und Geschichte",
+            items: [
+                { bold: "Der Gürzenich", text: "ist eines der bekanntesten weltlichen Gebäude der Kölner Altstadt und wurde Mitte des 15. Jahrhunderts im spätgotischen Stil errichtet. Seit jeher diente er als städtisches „Wohnzimmer“ – als repräsentativer Festsaal für Feiern, Empfänge, Bälle, offizielle Bankette und bedeutende Veranstaltungen." },
+                { bold: "Architektur: ", text: "Das Gebäude ist ein rechteckiger Steinbau mit typischen architektonischen Elementen der Spätgotik, darunter zinnenartige Mauern, kleine Ecktürmchen und hohe, schmale Fenster, die die Innenräume mit Tageslicht durchfluten. Trotz der Zerstörungen im Zweiten Weltkrieg wurde ein Teil der Fassade originalgetreu wiederhergestellt." },
+                { bold: "Geschichte.", text: "Der Bau entstand im 15. Jahrhundert, etwa zwischen 1441 und 1446. Der Name „Gürzenich“ geht auf den Namen einer der früheren Besitzerfamilien oder einer Kaufmannszunft zurück, die mit Handel und städtischen Angelegenheiten verbunden war." },
+                { text: "Ursprünglich war der Gürzenich für prächtige städtische Feste, Bälle und offizielle Empfänge bestimmt. Hier wurden hochrangige Gäste empfangen, darunter Kaiser und andere Würdenträger. Im 16. Jahrhundert fanden im Großen Saal Versammlungen und Reichstage statt." },
+                { text: "Im 17. und 18. Jahrhundert wurde der Gürzenich überwiegend als Lager- und Handelsgebäude genutzt und verlor zeitweise einen Teil seiner repräsentativen Bedeutung." },
+                { text: "Während des Zweiten Weltkriegs wurde das Gebäude schwer beschädigt – erhalten blieben im Wesentlichen nur die Außenmauern. Der Wiederaufbau begann Anfang der 1950er-Jahre: Die Fassade wurde im gotischen Stil rekonstruiert, während die Innenräume im Stil der 1950er-Jahre gestaltet wurden. Die Architekten der Rekonstruktion waren Rudolf Schwarz und Karl Band." },
+                { bold: "Heutige Nutzung: ", text: "Heute dient der Gürzenich als Konzertsaal, Veranstaltungsort für kulturelle Ereignisse und offizielle Empfänge. Er ist bekannt für seine hervorragende Akustik und seine historische Atmosphäre. Der Gürzenich vereint Geschichte, Kultur und das städtische Leben Kölns und gilt als Denkmal der kaufmännischen und musikalischen Tradition." }
+            ]
+        },
+        tickets_and_entry: {
+            title: "Praktische Informationen",
+            items: [
+                { bold: "Adresse: ", text: "Martinstrasse 29-37, 50667 Köln, Deutschland. Von der Haltestelle Heumarkt (Straßenbahn) weniger als 250 m entfernt." },
+                { bold: "Zugang:", text: "Das Gebäude ist kein Museum – der Zutritt ist nur im Rahmen von Veranstaltungen, Konzerten, Festivals oder Karnevalssitzungen möglich." }
+            ]
+        },
+        sub_objects: {
+            title: "Heute verfügt das Gebäude über mehrere Säle unterschiedlicher Größe, darunter:",
+            items: [
+                { bold: "Großer Saal ", text: "– 23×53 m, hauptsächlich für große festliche Anlässe." },
+                { bold: "Marsiliussaal, Isabella-Hall,", text: "Sitzungs- und Empfangssäle – genutzt für Bankette, Versammlungen und Konzerte." },
+                { text: "Die ursprünglichen gotischen Innenausstattungen sind verloren gegangen, doch der mittelalterliche Charakter ist durch die Proportionen und die Architektur des oberen Saals weiterhin spürbar." }
+            ]
+        },
+        interestingFacts: {
+            title: "Interessante Fakten",
+            items: [
+                { text: "Der Gürzenich wird oft als das „Wohnzimmer Kölns“ (Cologne’s parlor) bezeichnet, da er traditionell als Ort für Empfänge und Feierlichkeiten dient." },
+                { text: "Hier fanden bedeutende Karnevalssitzungen statt, die weit über Köln hinaus bekannt sind." },
+                { text: "Die Fassade ist mit den Figuren der legendären Schutzpatrone der Stadt — Agrippa und Marsilius – geschmückt, während die Türgriffe des Haupteingangs die kölnischen Volksfiguren Tünnes und Schäl darstellen." },
+                { text: "Der Name Gürzenich wurde auch auf das berühmte Gürzenich-Orchester Köln übertragen, das ursprünglich als musikalisches Ensemble für Auftritte in diesen Sälen entstand." }
+            ]
+        },
+        construction_period: " ursprünglich im 15. Jahrhundert erbaut, etwa zwischen 1441 und 1446.",
+        architects: " Die Architekten der Rekonstruktion waren Rudolf Schwarz und Karl Band.",
+        founder: " die Stadt Köln auf einem Grundstück der Familie Gürzenich.",
+        meta: {
+            title: "Gürzenich in Köln – historisches Gebäude und Zentrum der Festlichkeiten",
+            description: "Der Gürzenich in Köln wurde in den Jahren 1441–1452 als Gebäude für städtische Feierlichkeiten errichtet. Heute finden hier Konzerte, Bankette und offizielle Empfänge statt.",
+            ogTitle: "Gürzenich, Köln – historisches Gebäude und Veranstaltungszentrum",
+            ogDescription: "Entdecken Sie den Gürzenich in Köln – ein historisches Bauwerk aus dem 15. Jahrhundert, das nach dem Krieg wiederaufgebaut wurde und heute Konzerte, Karnevalssitzungen und festliche Empfänge beherbergt.",
+            ogImage: "https://our-travels.info/new/foto/Germany/Germany/nrw/koln/koln-city/guerzenich_koln/001.jpg"
         }
     },
     {
@@ -679,6 +740,10 @@ const datas = [
         cityPath: "koln",
         fotoCard: "Germany/nrw/koln/koln-city/rheinpark_koln/001.jpg",
         location: "Köln, Deutschland",
+        officialSite: [
+            { bold: "Parkseite auf der Website der Stadt Köln", link: "https://www.stadt-koeln.de/leben-in-koeln/freizeit-natur-sport/parks/rheinpark" },
+            { bold: "<br>Offizielle Website der Kleinbahn im Rheinpark", link: "http://kleinbahn.koeln/" }
+        ],
         subObjects: ["tanzbrunnen", "koln_seilbahn", "divitia_koln"],
         short_description: "Der Rheinpark ist ein großer öffentlicher Park entlang des rechten Rheinufers im Stadtteil Deutz der Stadt Köln. Er stellt eine historisch und architektonisch bedeutende Grünanlage dar, bekannt für seine weitläufigen Rasenflächen, Blumenbeete, Spazierwege und den herrlichen Blick auf das Stadtzentrum mit dem Kölner Dom.",
         short_description_subObjects: {
@@ -696,7 +761,7 @@ const datas = [
                 { text: "Der Park gilt als ein herausragendes Beispiel für Landschaftsarchitektur der 1950er Jahre und als Symbol für die Wiederherstellung städtischen Raums nach dem Krieg." }
             ]
         },
-        ticketItems: {
+        tickets_and_entry: {
             title: "Praktische Informationen",
             items: [
                 { bold: "Saison und Besuchszeiten. ", text: "Der Park ist das ganze Jahr über geöffnet, viele Attraktionen (Kinderschmalspurbahn und Seilbahn) sind jedoch saisonal in den warmen Monaten in Betrieb." }
@@ -731,6 +796,9 @@ const datas = [
         cityPath: "koln",
         fotoCard: "Germany/nrw/koln/koln-city/rheinpark_koln/002.jpg",
         location: "Köln, Deutschland",
+        officialSite: [
+            { bold: "Offizielle Seite des Tanzbrunnen (über KölnKongress)", link: "https://koelncongress.de/locations/tanzbrunnen-koeln/" }
+        ],
         hiddenFromList: true,
         showMore: true,
         short_description: "Am südlichen Rand des Rheinparks befindet sich der Tanzbrunnen – eines der bekanntesten Kulturobjekte Kölns. Der Komplex umfasst eine offene Fläche, ein Amphitheater, überdachte Bereiche und Grünanlagen und schafft so einen idealen Raum für Konzerte, Festivals, Tanzpartys und andere kulturelle Veranstaltungen.",
@@ -794,7 +862,7 @@ const datas = [
                 { bold: "Sehenswertes: ", text: "Während der Fahrt eröffnen sich Ausblicke auf die Silhouette des Kölner Doms (Kölner Dom) und die historische Altstadt, den Rhein, die Stadtlandschaft, die Grünflächen des Rheinparks sowie Bereiche des Zoos, des Botanischen Gartens und der Claudius Therme unter der Trasse. Sie gilt als einer der besten Orte für Fotos bei Sonnenuntergang oder in den Abendstunden (Nachtfahrten zu besonderen Anlässen). " }
             ]
         },
-        ticketItems: {
+        tickets_and_entry: {
             title: "Praktische Informationen",
             items: [
                 { bold: "Saison: ", text: "in der Regel von April bis Oktober täglich." },
@@ -841,7 +909,7 @@ const datas = [
                 { text: "Divitia war Teil des Befestigungssystems am Rhein, das strategische Bedeutung für die Verteidigung der nördlichen Grenzen des Römischen Reiches hatte. Das Fort war Teil einer Beobachtungslinie und unterhielt Verbindung zu anderen römischen Militäranlagen, um schnell auf Bedrohungen durch germanische Stämme reagieren zu können." }
             ]
         },
-        ticketItems: {
+        tickets_and_entry: {
             title: "Praktische Informationen",
             items: [
                 { bold: "Lage:", text: "westliche Grenze des Rheinparks, in der Nähe des Rheinuferwegs, unweit der Hohenzollernbrücke." },
@@ -960,9 +1028,6 @@ const datas = [
         officialSite: [
             { bold: 'Offizielle Webseite des Max-Ernst-Museums', link: 'https://maxernstmuseum.lvr.de/en/startseite_1.html' }
         ],
-        unesco_status: {
-            included: false
-        },
         tickets_and_entry: {
             title: "Tickets und Eintritt",
             items: [
@@ -1012,9 +1077,6 @@ const datas = [
         officialSite: [
             { bold: 'Offizielle Website von Phantasialand', link: 'https://www.phantasialand.de/en/' }
         ],
-        unesco_status: {
-            included: false
-        },
         tickets_and_entry: {
             title: "Tickets und Eintritt",
             items: [
@@ -1074,9 +1136,6 @@ const datas = [
         officialSite: [
             { bold: 'Offizielle Website von KERAMION', link: 'https://keramion.de/' }
         ],
-        unesco_status: {
-            included: false
-        },
         tickets_and_entry: {
             title: "Eintrittspreise (gültig für 2025)",
             items: [
@@ -1129,9 +1188,6 @@ const datas = [
         officialSite: [
             { bold: "Offizielle Website Burg Bachem", link: "https://www.burg-bachem.de/" }
         ],
-        unesco_status: {
-            included: false
-        },
         tickets_and_entry: {
             title: "Eintritt und Zugang",
             items: [
@@ -1179,9 +1235,6 @@ const datas = [
         fotoCard: "Germany/nrw/koln/Rhein-Erft-Kreis/frechen/johann_schmitz_platz_frechen/001.jpg",
         location: "Frechen, Deutschland",
         address: [{ bold: "Adresse:", text: " Johann-Schmitz-Platz, 50226 Frechen, Deutschland" }],
-        unesco_status: {
-            included: false
-        },
         subObjects: ["altes_rathaus_frechen", "rathausbrunnen_frechen", "klüttenbrunnen_frechen"],
         short_description_subObjects: {
             text: "Auf dem Johann-Schmitz-Platz befinden sich folgende Sehenswürdigkeiten:",
@@ -1236,9 +1289,6 @@ const datas = [
         fotoCard: "Germany/nrw/koln/Rhein-Erft-Kreis/frechen/johann_schmitz_platz_frechen/001.jpg",
         location: "Frechen, Deutschland",
         address: [{ bold: "Adresse:", text: " Johann-Schmitz-Platz, 50226 Frechen, Deutschland" }],
-        unesco_status: {
-            included: false
-        },
         tickets_and_entry: {
             title: "Zugang",
             items: [
