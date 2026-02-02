@@ -209,7 +209,7 @@ export const datas = [
         { id: 8, name: 'Мекленбург-Передня Померанія', hasInfo: false, path: 'mecklenburg-vorpommern', svgId: 'mv' },
         { id: 9, name: 'Нижня Саксонія', hasInfo: false, path: 'lower-saxony', svgId: 'ni' },
         { id: 10, name: 'Північний Рейн-Вестфалія', hasInfo: true, path: 'nrw', svgId: 'nw' },
-        { id: 11, name: 'Рейнланд-Пфальц', hasInfo: false, path: 'rhineland-pfalz', svgId: 'rp' },
+        { id: 11, name: 'Рейнланд-Пфальц', hasInfo: true, path: 'rhineland-pfalz', svgId: 'rp' },
         { id: 12, name: 'Саар', hasInfo: false, path: 'saarland', svgId: 'sl' },
         { id: 13, name: 'Саксонія', hasInfo: false, path: 'saxony', svgId: 'sn' },
         { id: 14, name: 'Саксонія-Ангальт', hasInfo: false, path: 'saxony-anhalt', svgId: 'st' },

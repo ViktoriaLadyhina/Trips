@@ -23,7 +23,7 @@ const Regions = () => {
 
     const photos = photosByCountry[countryPath];
     console.log(country);
-    
+
 
     if (error) return <p>{error}</p>;
     if (!country) return <p>Loading...</p>;
@@ -96,7 +96,7 @@ const Regions = () => {
 
                 <h1 className="regions__title">{region.name}</h1>
 
-<BtnAttr lang={lang} path={`/${countryPath}/${regionsPath}/attractions`}/>
+                <BtnAttr lang={lang} path={`/${countryPath}/${regionsPath}/attractions`} />
 
                 <div className='regions__map'>
                     <CountryMap

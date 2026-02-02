@@ -2,6 +2,7 @@
 import nrw from './germany/nrw';
 import nrwCity from './germany/nrw-city';
 import nrwAttractions from './germany/nrw-attractions'
+import rheinlandPfalz from './germany/rhineland-pfalz'
 
 // Украина
 import sumska from './ukraine/sumska';
@@ -14,7 +15,8 @@ export const regions = {
     countryName: "Германия",
     nrw,
     'nrw-city': nrwCity,
-    'nrw-attractions': nrwAttractions
+    'nrw-attractions': nrwAttractions,
+    'rhineland-pfalz': rheinlandPfalz
   },
   ukraine: {
     countryName: "Украина",
@@ -27,6 +29,7 @@ export const regions = {
 export const regionsSearch = {
   germany: {
     nrw,
+    'rhineland-pfalz': rheinlandPfalz
   },
   ukraine: {
     sumska,

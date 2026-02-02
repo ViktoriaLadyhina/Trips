@@ -14,6 +14,7 @@ const Map = () => {
     },
     regions: {
       nrw: { ru: 'Северный Рейн-Вестфалия', de: 'Nordrhein-Westfalen', ua: 'Північний Рейн-Вестфалія' },
+      rhineland_pfalz: { ru: 'Рейнланд-Пфальц', de: 'Rheinland-Pfalz', ua: 'Рейнланд-Пфальц' },
       sumska: { ru: 'Сумская область', de: 'Sumska Oblast', ua: 'Сумська область' }
     },
     districts: {
@@ -224,6 +225,7 @@ const Map = () => {
                   </li>
                 </ul>
               </li>
+              <li><Link to="/germany/rhineland-pfalz">{t.regions.rhineland_pfalz[lang]}</Link></li>
             </ul>
           </li>
 
