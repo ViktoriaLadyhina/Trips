@@ -1,4 +1,4 @@
-import React, { useState, useMemo } from "react";
+import { useState, useMemo } from "react";
 import { useNavigate } from "react-router-dom";
 import { districtsRlp as districts } from "./maps/districtsRlp";
 import "../Maps.scss";
@@ -20,11 +20,11 @@ const RPMap = ({ regions }) => {
   );
 
   const handleDistrictClick = (district) => {
-    if (district.hasInfo) navigate(`/germany/rhineland-pfalz/${district.path}`);
+    if (district.hasInfo) navigate(`/germany/rheinland-pfalz/${district.path}`);
   };
 
   const handleCityClick = (city) => {
-    if (city.hasInfo) navigate(`/germany/rhineland-pfalz/city/${city.path}`);
+    if (city.hasInfo) navigate(`/germany/rheinland-pfalz/city/${city.path}`);
   };
 
   // Координаты подписей (x, y) + смещения dx, dy
@@ -136,6 +136,7 @@ const RPMap = ({ regions }) => {
 
             return (
               <text
+              key={district.path}
                 x={center.x + center.dx}
                 y={center.y + center.dy}
                 textAnchor="middle"
@@ -143,7 +144,7 @@ const RPMap = ({ regions }) => {
               >
                 {parts.map((part, i) => (
                   <tspan
-                    key={i}
+                    key={`${district.path}-${i}`}
                     x={center.x + center.dx}
                     dy={i === 0 ? 0 : "1.2em"}
                   >

@@ -1,8 +1,8 @@
 const datas = {
-    id: 10,
+    id: 11,
     name: 'Рейнланд-Пфальц',
     hasInfo: true,
-    path: 'rhineland-pfalz',
+    path: 'rheinland-pfalz',
     country: "Німеччина",
     desc: {
         capital: [
@@ -104,7 +104,7 @@ const datas = {
                 { id: 25, name: 'Майнц', hasInfo: false, path: "mainz" },
                 { id: 26, name: 'Кобленц', hasInfo: false, path: "koblenz" },
                 { id: 27, name: 'Людвігсгафен', hasInfo: false, path: "ludwigshafen" },
-                { id: 28, name: 'Трір', hasInfo: false, path: "trier" },
+                { id: 28, name: 'Трір', hasInfo: true, path: "trier" },
                 { id: 29, name: 'Кайзерслаутерн', hasInfo: false, path: "kaiserslautern-city" },
                 { id: 30, name: 'Вормс', hasInfo: false, path: "worms" },
                 { id: 31, name: 'Шпаєр', hasInfo: false, path: "speyer" },

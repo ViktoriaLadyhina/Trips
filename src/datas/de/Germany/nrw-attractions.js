@@ -1286,7 +1286,7 @@ const datas = [
         districtPath: "koln",
         cityPath: "frechen",
         countryPath: "germany",
-        fotoCard: "Germany/nrw/koln/Rhein-Erft-Kreis/frechen/johann_schmitz_platz_frechen/001.jpg",
+        fotoCard: "Germany/nrw/koln/Rhein-Erft-Kreis/frechen/johann_schmitz_platz_frechen/008.jpg",
         location: "Frechen, Deutschland",
         address: [{ bold: "Adresse:", text: " Johann-Schmitz-Platz, 50226 Frechen, Deutschland" }],
         tickets_and_entry: {
@@ -1322,7 +1322,7 @@ const datas = [
             description: "Das Alte Rathaus Frechen – ein historisches Verwaltungsgebäude mit Turm auf dem Johann-Schmitz-Platz im Zentrum der Stadt, Nordrhein-Westfalen.",
             ogTitle: "Altes Rathaus Frechen – Frechen, Deutschland",
             ogDescription: "Entdecken Sie das Alte Rathaus Frechen mit seinem charakteristischen Turm und der neobarocken Architektur auf dem Johann-Schmitz-Platz.",
-            ogImage: "https://our-travels.info/new/foto/Germany/nrw/koln/Rhein-Erft-Kreis/frechen/altes_rathaus_frechen/001.jpg"
+            ogImage: "https://our-travels.info/new/foto/Germany/nrw/koln/Rhein-Erft-Kreis/frechen/johann_schmitz_platz_frechen/008.jpg"
         }
     },
     {

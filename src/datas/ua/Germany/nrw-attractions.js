@@ -1286,7 +1286,7 @@ const datas = [
         districtPath: "koln",
         cityPath: "frechen",
         countryPath: "germany",
-        fotoCard: "Germany/nrw/koln/Rhein-Erft-Kreis/frechen/johann_schmitz_platz_frechen/001.jpg",
+        fotoCard: "Germany/nrw/koln/Rhein-Erft-Kreis/frechen/johann_schmitz_platz_frechen/008.jpg",
         location: "Фрехен, Німеччина",
         address: [{ bold: "Адреса:", text: " Johann-Schmitz-Platz, 50226 Frechen, Deutschland" }],
         tickets_and_entry: {
@@ -1322,7 +1322,7 @@ const datas = [
             description: "Стара ратуша Фрехена – історична адміністративна будівля з вежею на площі Йоганна Шмітца в центрі міста, Північний Рейн‑Вестфалія.",
             ogTitle: "Стара ратуша Фрехена – Фрехен, Німеччина",
             ogDescription: "Відкрийте для себе стару ратушу Фрехена з характерною вежею та архітектурою в стилі необароко на площі Йоганна Шмітца.",
-            ogImage: "https://our-travels.info/new/foto/Germany/nrw/koln/Rhein-Erft-Kreis/frechen/altes_rathaus_frechen/001.jpg"
+            ogImage: "https://our-travels.info/new/foto/Germany/nrw/koln/Rhein-Erft-Kreis/frechen/johann_schmitz_platz_frechen/008.jpg"
         }
     },
     {

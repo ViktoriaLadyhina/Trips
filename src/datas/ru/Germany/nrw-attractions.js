@@ -1330,7 +1330,7 @@ const datas = [
             description: "Старая ратуша Фрехена – историческое здание городской администрации с башней на площади Йоханна Шмитца в центре города, Северный Рейн‑Вестфалия.",
             ogTitle: "Старая ратуша Фрехена – Фрехен, Германия",
             ogDescription: "Откройте для себя старую ратушу Фрехена с характерной башней и архитектурой в стиле необарокко на площади Йоханна Шмитца.",
-            ogImage: "https://our-travels.info/new/foto/Germany/nrw/koln/Rhein-Erft-Kreis/frechen/altes_rathaus_frechen/008.jpg"
+            ogImage: "https://our-travels.info/new/foto/Germany/nrw/koln/Rhein-Erft-Kreis/frechen/johann_schmitz_platz_frechen/008.jpg"
         }
     },
     {

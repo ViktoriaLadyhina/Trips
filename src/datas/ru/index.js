@@ -2,7 +2,9 @@
 import nrw from './germany/nrw';
 import nrwCity from './germany/nrw-city';
 import nrwAttractions from './germany/nrw-attractions'
-import rheinlandPfalz from './germany/rhineland-pfalz'
+import rheinlandPfalz from './germany/rheinland-pfalz'
+import rheinlandPfalzCity from './germany/rheinland-pfalz-city'
+import rheinlandPfalzAttractions from './germany/rheinland-pfalz-attractions'
 
 // Украина
 import sumska from './ukraine/sumska';
@@ -16,7 +18,8 @@ export const regions = {
     nrw,
     'nrw-city': nrwCity,
     'nrw-attractions': nrwAttractions,
-    'rhineland-pfalz': rheinlandPfalz
+    'rheinland-pfalz': rheinlandPfalz,
+    'rheinland-pfalz-city': rheinlandPfalzCity
   },
   ukraine: {
     countryName: "Украина",
@@ -29,7 +32,7 @@ export const regions = {
 export const regionsSearch = {
   germany: {
     nrw,
-    'rhineland-pfalz': rheinlandPfalz
+    'rheinland-pfalz': rheinlandPfalz
   },
   ukraine: {
     sumska,
@@ -39,6 +42,7 @@ export const regionsSearch = {
 export const citySearch = {
   germany: {
     'nrw-city': nrwCity,
+    'rheinland-pfalz-city': rheinlandPfalzCity
   },
   ukraine: {
     'sumska-city': sumskaCity,
@@ -47,7 +51,8 @@ export const citySearch = {
 
 export const attractionsSearch = {
   germany: {
-    'nrw-attractions': nrwAttractions
+    'nrw-attractions': nrwAttractions,
+    'rheinland-pfalz-attractions': rheinlandPfalzAttractions
   },
   ukraine: {
     'sumska-attractions': sumskaAttractions

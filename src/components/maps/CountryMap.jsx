@@ -14,7 +14,7 @@ const maps = {
       koln: NRWKolnMap,
       arnsberg: NRWArnsbergMap,
     },
-    'rhineland-pfalz': {
+    'rheinland-pfalz': {
       region: RheinlandPfalzMap
     },
   },
@@ -48,6 +48,7 @@ export default function CountryMap({ countryKey, regionKey, regions, districtKey
 
   if (!MapComponent) return null;
 
+  
   return (
     <MapComponent
       regions={regions}

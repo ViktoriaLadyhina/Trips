@@ -323,6 +323,7 @@ const toJsModuleString = (obj, indent = 0) => {
             {watchedFields.country === "germany" && (
               <>
                 <option value="nrw">Северный Рейн-Вестфалия</option>
+                <option value="rheinland-pfalz">Рейнланд-Пфальц</option>
               </>
             )}
             {watchedFields.country === "ukraine" && (
@@ -342,6 +343,11 @@ const toJsModuleString = (obj, indent = 0) => {
               <>
                 <option value="arnsberg">Арнсберг</option>
                 <option value="koln">Кельн</option>
+                <option value="city">Город обласного значения</option>
+              </>
+            )}
+            {watchedFields.country === "germany" && watchedFields.region === "rheinland-pfalz" && (
+              <>
                 <option value="city">Город обласного значения</option>
               </>
             )}
@@ -373,6 +379,7 @@ const toJsModuleString = (obj, indent = 0) => {
             {watchedFields.country === "germany" && watchedFields.district === "city" && (
               <>
                 <option value="koln">Кельн</option>
+                <option value="trier">Трир</option>
               </>
             )}
             {watchedFields.country === "ukraine" && watchedFields.district === "city" && (

@@ -1,8 +1,8 @@
 const datas = {
-    id: 10,
+    id: 11,
     name: 'Рейнланд-Пфальц',
     hasInfo: true,
-    path: 'rhineland-pfalz',
+    path: 'rheinland-pfalz',
     country: "Германия",
     desc: {
         capital: [
@@ -68,54 +68,54 @@ const datas = {
             { text: "С момента образования земли Рейнланд-Пфальц стала важным культурным, экономическим и политическим регионом Германии, сохранившим богатое историческое наследие и уникальные природные ландшафты. Сегодня Рейнланд-Пфальц известна своими замками, виноградниками, римскими памятниками и историческими городами." },
         ]
     },
-discriptRegions: [
-  {
-    title: "Административные округа в Рейнланд-Пфальц",
-    items: [
-      { id: 1, name: 'Арвайлер', hasInfo: false, path: "ahrweiler" },
-      { id: 2, name: 'Альтенкирхен', hasInfo: false, path: "altenkirchen" },
-      { id: 3, name: 'Альцай-Вормс', hasInfo: false, path: "alzey-worms" },
-      { id: 4, name: 'Бад-Дюркхайм', hasInfo: false, path: "bad-duerkheim" },
-      { id: 5, name: 'Бад-Кройцнах', hasInfo: false, path: "bad-kreuznach" },
-      { id: 6, name: 'Бернкастель-Виттлих', hasInfo: false, path: "bernkastel-wittlich" },
-      { id: 7, name: 'Биркенфельд', hasInfo: false, path: "birkenfeld" },
-      { id: 8, name: 'Кохем-Целль', hasInfo: false, path: "cochem-zell" },
-      { id: 9, name: 'Доннерсберг', hasInfo: false, path: "donnersbergkreis" },
-      { id: 10, name: 'Айфелькрейс Битбург-Прюм', hasInfo: false, path: "eifelkreis-bitburg-pruem" },
-      { id: 11, name: 'Гермерсхайм', hasInfo: false, path: "germersheim" },
-      { id: 12, name: 'Кайзерслаутерн', hasInfo: false, path: "kaiserslautern" },
-      { id: 13, name: 'Кузель', hasInfo: false, path: "kusel" },
-      { id: 14, name: 'Майнц-Бинген', hasInfo: false, path: "mainz-bingen" },
-      { id: 15, name: 'Майен-Кобленц', hasInfo: false, path: "mayen-koblenz" },
-      { id: 16, name: 'Нойвид', hasInfo: false, path: "neuwied" },
-      { id: 17, name: 'Райн-Хунсрюк', hasInfo: false, path: "rhein-hunsrueck-kreis" },
-      { id: 18, name: 'Райн-Лан', hasInfo: false, path: "rhein-lahn-kreis" },
-      { id: 19, name: 'Райн-Пфальц', hasInfo: false, path: "rhein-pfalz-kreis" },
-      { id: 20, name: 'Южный Вайнштрассе', hasInfo: false, path: "suedliche-weinstrasse" },
-      { id: 21, name: 'Юго-западный Пфальц', hasInfo: false, path: "suedwestpfalz" },
-      { id: 22, name: 'Трир-Саарбург', hasInfo: false, path: "trier-saarburg" },
-      { id: 23, name: 'Вулканайфель', hasInfo: false, path: "vulkaneifel" },
-      { id: 24, name: 'Вестервальд', hasInfo: false, path: "westerwaldkreis" },
-    ]
-  },
-  {
-    title: "Свободные города в Рейнланд-Пфальц",
-    items: [
-      { id: 25, name: 'Майнц', hasInfo: false, path: "mainz" },
-      { id: 26, name: 'Кобленц', hasInfo: false, path: "koblenz" },
-      { id: 27, name: 'Людвигсхафен', hasInfo: false, path: "ludwigshafen" },
-      { id: 28, name: 'Трир', hasInfo: false, path: "trier" },
-      { id: 29, name: 'Кайзерслаутерн', hasInfo: false, path: "kaiserslautern-city" },
-      { id: 30, name: 'Вормс', hasInfo: false, path: "worms" },
-      { id: 31, name: 'Шпайер', hasInfo: false, path: "speyer" },
-      { id: 32, name: 'Франкенталь', hasInfo: false, path: "frankenthal" },
-      { id: 33, name: 'Ландау-ин-дер-Пфальц', hasInfo: false, path: "landau" },
-      { id: 34, name: 'Нойштадт', hasInfo: false, path: "neustadt" },
-      { id: 35, name: 'Пирмазенс', hasInfo: false, path: "pirmasens" },
-      { id: 36, name: 'Цвайбрюккен', hasInfo: false, path: "zweibruecken" }
-    ]
-  }
-],
+    discriptRegions: [
+        {
+            title: "Административные округа в Рейнланд-Пфальц",
+            items: [
+                { id: 1, name: 'Арвайлер', hasInfo: false, path: "ahrweiler" },
+                { id: 2, name: 'Альтенкирхен', hasInfo: false, path: "altenkirchen" },
+                { id: 3, name: 'Альцай-Вормс', hasInfo: false, path: "alzey-worms" },
+                { id: 4, name: 'Бад-Дюркхайм', hasInfo: false, path: "bad-duerkheim" },
+                { id: 5, name: 'Бад-Кройцнах', hasInfo: false, path: "bad-kreuznach" },
+                { id: 6, name: 'Бернкастель-Виттлих', hasInfo: false, path: "bernkastel-wittlich" },
+                { id: 7, name: 'Биркенфельд', hasInfo: false, path: "birkenfeld" },
+                { id: 8, name: 'Кохем-Целль', hasInfo: false, path: "cochem-zell" },
+                { id: 9, name: 'Доннерсберг', hasInfo: false, path: "donnersbergkreis" },
+                { id: 10, name: 'Айфелькрейс Битбург-Прюм', hasInfo: false, path: "eifelkreis-bitburg-pruem" },
+                { id: 11, name: 'Гермерсхайм', hasInfo: false, path: "germersheim" },
+                { id: 12, name: 'Кайзерслаутерн', hasInfo: false, path: "kaiserslautern" },
+                { id: 13, name: 'Кузель', hasInfo: false, path: "kusel" },
+                { id: 14, name: 'Майнц-Бинген', hasInfo: false, path: "mainz-bingen" },
+                { id: 15, name: 'Майен-Кобленц', hasInfo: false, path: "mayen-koblenz" },
+                { id: 16, name: 'Нойвид', hasInfo: false, path: "neuwied" },
+                { id: 17, name: 'Райн-Хунсрюк', hasInfo: false, path: "rhein-hunsrueck-kreis" },
+                { id: 18, name: 'Райн-Лан', hasInfo: false, path: "rhein-lahn-kreis" },
+                { id: 19, name: 'Райн-Пфальц', hasInfo: false, path: "rhein-pfalz-kreis" },
+                { id: 20, name: 'Южный Вайнштрассе', hasInfo: false, path: "suedliche-weinstrasse" },
+                { id: 21, name: 'Юго-западный Пфальц', hasInfo: false, path: "suedwestpfalz" },
+                { id: 22, name: 'Трир-Саарбург', hasInfo: false, path: "trier-saarburg" },
+                { id: 23, name: 'Вулканайфель', hasInfo: false, path: "vulkaneifel" },
+                { id: 24, name: 'Вестервальд', hasInfo: false, path: "westerwaldkreis" },
+            ]
+        },
+        {
+            title: "Свободные города в Рейнланд-Пфальц",
+            items: [
+                { id: 25, name: 'Майнц', hasInfo: false, path: "mainz" },
+                { id: 26, name: 'Кобленц', hasInfo: false, path: "koblenz" },
+                { id: 27, name: 'Людвигсхафен', hasInfo: false, path: "ludwigshafen" },
+                { id: 28, name: 'Трир', hasInfo: true, path: "trier" },
+                { id: 29, name: 'Кайзерслаутерн', hasInfo: false, path: "kaiserslautern-city" },
+                { id: 30, name: 'Вормс', hasInfo: false, path: "worms" },
+                { id: 31, name: 'Шпайер', hasInfo: false, path: "speyer" },
+                { id: 32, name: 'Франкенталь', hasInfo: false, path: "frankenthal" },
+                { id: 33, name: 'Ландау-ин-дер-Пфальц', hasInfo: false, path: "landau" },
+                { id: 34, name: 'Нойштадт', hasInfo: false, path: "neustadt" },
+                { id: 35, name: 'Пирмазенс', hasInfo: false, path: "pirmasens" },
+                { id: 36, name: 'Цвайбрюккен', hasInfo: false, path: "zweibruecken" }
+            ]
+        }
+    ],
     meta: {
         title: "Северный Рейн-Вестфалия — информация о регионе",
         description: "Северный Рейн-Вестфалия: города, округа, культура и достопримечательности.",

@@ -56,7 +56,7 @@ const datas = [
             description: "Брюль: история, достопримечательности, известные люди и интересные факты города.",
             ogTitle: "Брюль – информация о городе",
             ogDescription: "Подробная информация о Брюле: культура, история, знаменитые жители и интересные факты.",
-            ogImage: "/nrw/bruehl.jpg"
+            ogImage: "https://our-travels.info/new/foto/Germany/nrw/koln/Rhein-Erft-Kreis/bruhl/bruhel_palaces/001.jpg"
         }
     },
     {
@@ -147,7 +147,7 @@ const datas = [
             description: "Кёльн: история, география, достопримечательности, знаменитые жители и интересные факты о крупнейшем городе Северного Рейна-Вестфалии.",
             ogTitle: "Кёльн – информация о городе",
             ogDescription: "Подробная информация о Кёльне: культура, история, знаменитые жители и интересные факты.",
-            ogImage: "/nrw/koeln.jpg"
+            ogImage: "https://our-travels.info/new/foto/Germany/nrw/koln/koln-city/rathaus-koeln/Rathaus-Köln.jpg"
         }
     },
     {
@@ -229,7 +229,7 @@ const datas = [
             description: "Фрехен: история, география, знаменитые жители и интересные факты о городе керамики в земле Северный Рейн-Вестфалия.",
             ogTitle: "Фрехен – информация о городе",
             ogDescription: "Подробная информация о Фрехене: культура, история, знаменитые жители и интересные факты.",
-            ogImage: "/nrw/frechen.jpg"
+            ogImage: "https://our-travels.info/new/foto/Germany/nrw/koln/Rhein-Erft-Kreis/frechen/johann_schmitz_platz_frechen/008.jpg"
         }
     },
     {
@@ -325,7 +325,7 @@ const datas = [
             description: "Люденшайд: история, география, знаменитые жители и интересные факты о «городе света» в земле Северный Рейн-Вестфалия.",
             ogTitle: "Люденшайд – информация о городе",
             ogDescription: "Подробная информация о Люденшайде: культура, история, выдающиеся личности и удивительные факты о городе света и инноваций.",
-            ogImage: "/nrw/luedenscheid.jpg"
+            ogImage: "https://our-travels.info/new/foto/Germany/nrw/arnsberg/Märkischer-Kreis/luedenscheid/rathausplatz_lüdenscheid/001.JPG"
         }
     }
 ]

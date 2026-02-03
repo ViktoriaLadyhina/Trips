@@ -2,7 +2,7 @@ const datas = {
     id: 10,
     name: 'Rheinland-Pfalz',
     hasInfo: true,
-    path: 'rhineland-pfalz',
+    path: 'rheinland-pfalz',
     country: "Deutschland",
     desc: {
         capital: [
@@ -104,7 +104,7 @@ const datas = {
                 { id: 25, name: 'Mainz', hasInfo: false, path: "mainz" },
                 { id: 26, name: 'Koblenz', hasInfo: false, path: "koblenz" },
                 { id: 27, name: 'Ludwigshafen', hasInfo: false, path: "ludwigshafen" },
-                { id: 28, name: 'Trier', hasInfo: false, path: "trier" },
+                { id: 28, name: 'Trier', hasInfo: true, path: "trier" },
                 { id: 29, name: 'Kaiserslautern', hasInfo: false, path: "kaiserslautern-city" },
                 { id: 30, name: 'Worms', hasInfo: false, path: "worms" },
                 { id: 31, name: 'Speyer', hasInfo: false, path: "speyer" },
@@ -121,7 +121,7 @@ const datas = {
         description: "Rheinland-Pfalz: Städte, Landkreise, Kultur und Sehenswürdigkeiten.",
         ogTitle: "Rheinland-Pfalz — Informationen zur Region und zu den Landkreisen",
         ogDescription: "Detaillierte Informationen zu Rheinland-Pfalz: Städte, Landkreise, Geschichte und interessante Fakten.",
-        ogImage: "/rhineland-pfalz/rp-map.jpg"
+        ogImage: "https://our-travels.info/new/foto/Germany/rheinland-pfalz/trier-city/portaNigra_trier/001.JPG"
     }
 }
 

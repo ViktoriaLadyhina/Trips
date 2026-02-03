@@ -22,7 +22,6 @@ const Regions = () => {
     useMeta(region?.meta || {});
 
     const photos = photosByCountry[countryPath];
-    console.log(country);
 
 
     if (error) return <p>{error}</p>;

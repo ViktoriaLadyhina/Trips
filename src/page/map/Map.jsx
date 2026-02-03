@@ -14,7 +14,7 @@ const Map = () => {
     },
     regions: {
       nrw: { ru: 'Северный Рейн-Вестфалия', de: 'Nordrhein-Westfalen', ua: 'Північний Рейн-Вестфалія' },
-      rhineland_pfalz: { ru: 'Рейнланд-Пфальц', de: 'Rheinland-Pfalz', ua: 'Рейнланд-Пфальц' },
+      rheinlandPfalz: { ru: 'Рейнланд-Пфальц', de: 'Rheinland-Pfalz', ua: 'Рейнланд-Пфальц' },
       sumska: { ru: 'Сумская область', de: 'Sumska Oblast', ua: 'Сумська область' }
     },
     districts: {
@@ -31,11 +31,12 @@ const Map = () => {
       koln: { ru: 'Город Кёльн', de: 'Stadt Köln', ua: 'Місто Кельн' },
       luedenscheid: { ru: 'Город Люденшайд', de: 'Stadt Lüdenscheid', ua: 'Місто Люденшайд' },
       konigswinter: { ru: 'Город Кёнигсвинтер', de: 'Stadt Königswinter', ua: 'Місто Кенігсвінтер' },
+      trier: { ru: 'Город Трир', de: 'Stadt Trier', ua: 'Місто Трір' },
 
       sumy: { ru: 'Город Сумы', de: 'Stadt Sumy', ua: 'Місто Суми' }
     },
     attractions: {
-            // arnsberg округ
+      // arnsberg округ
       // Märkischer Kreis
       // Lüdenscheid
       altstadt_luedenscheid: { ru: 'Старый город Люденшайда', de: 'Altstadt Lüdenscheid', ua: 'Старе місто Люденшайда' },
@@ -89,6 +90,9 @@ const Map = () => {
       nibelungenhalle: { ru: 'Зал Нибеленгов', de: 'Nibelungenhalle', ua: 'Зал Нібеленгов' },
       reptile_zoo: { ru: 'Зоопарк рептилий Драхенфельс', de: 'Reptilienzoo Drachenfels', ua: 'Зоопарк рептилій Драхенфельс' },
 
+      // rheinland-pfalz
+      // Trier
+      portaNigra_trier: { ru: 'Порта Нигра («Чёрные ворота»)', de: 'Porta Nigra', ua: 'Порта Нігра («Чорні ворота»)' },
 
       // Ukraine
       // Sumska oblast
@@ -117,6 +121,8 @@ const Map = () => {
           <li>
             <Link to="/germany">{t.countries.germany[lang]}</Link>
             <ul>
+
+              {/* НРВ */}
               <li><Link to="/germany/nrw">{t.regions.nrw[lang]}</Link>
                 <ul>
 
@@ -225,7 +231,17 @@ const Map = () => {
                   </li>
                 </ul>
               </li>
-              <li><Link to="/germany/rhineland-pfalz">{t.regions.rhineland_pfalz[lang]}</Link></li>
+
+              {/* Рейнланд-Пфальц */}
+              <li><Link to="/germany/rheinland-pfalz">{t.regions.rheinlandPfalz[lang]}</Link>
+                <ul>
+                  <li><Link to="/germany/rheinland-pfalz/city/trier">{t.cities.trier[lang]}</Link>
+                  <ul>
+                    <li><Link to="/germany/rheinland-pfalz/city/trier/attractions/portaNigra_trier">{t.attractions.portaNigra_trier[lang]}</Link></li>
+                  </ul>
+                  </li>
+                </ul>
+              </li>
             </ul>
           </li>
 
