@@ -121,7 +121,7 @@ const datas = {
         description: "Рейнланд-Пфальц: міста, округи, культура та пам’ятки.",
         ogTitle: "Рейнланд-Пфальц — інформація про регіон і округи",
         ogDescription: "Детальна інформація про Рейнланд-Пфальц: міста, округи, історія та цікаві факти.",
-        ogImage: "/rhineland-pfalz/rp-map.jpg"
+        ogImage: "https://our-travels.info/new/foto/Germany/rheinland-pfalz/trier-city/portaNigra_trier/001.JPG"
     }
 }
 

@@ -147,7 +147,7 @@ const datas = [
             description: "Кёльн: история, география, достопримечательности, знаменитые жители и интересные факты о крупнейшем городе Северного Рейна-Вестфалии.",
             ogTitle: "Кёльн – информация о городе",
             ogDescription: "Подробная информация о Кёльне: культура, история, знаменитые жители и интересные факты.",
-            ogImage: "https://our-travels.info/new/foto/Germany/nrw/koln/koln-city/rathaus-koeln/Rathaus-Köln.jpg"
+            ogImage: "https://our-travels.info/new/foto/Germany/nrw/koln/koln-city/koln-cathedral/001.jpg"
         }
     },
     {
@@ -229,7 +229,7 @@ const datas = [
             description: "Фрехен: история, география, знаменитые жители и интересные факты о городе керамики в земле Северный Рейн-Вестфалия.",
             ogTitle: "Фрехен – информация о городе",
             ogDescription: "Подробная информация о Фрехене: культура, история, знаменитые жители и интересные факты.",
-            ogImage: "https://our-travels.info/new/foto/Germany/nrw/koln/Rhein-Erft-Kreis/frechen/johann_schmitz_platz_frechen/008.jpg"
+            ogImage: "https://our-travels.info/new/foto/Germany/nrw/koln/Rhein-Erft-Kreis/frechen/johann_schmitz_platz_frechen/006.jpg"
         }
     },
     {

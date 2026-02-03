@@ -56,7 +56,7 @@ const datas = [
             description: "Брюль: історія, визначні місця, відомі люди та цікаві факти міста.",
             ogTitle: "Брюль – інформація про місто",
             ogDescription: "Детальна інформація про Брюль: культура, історія, відомі мешканці та цікаві факти.",
-            ogImage: "/nrw/bruehl.jpg"
+            ogImage: "https://our-travels.info/new/foto/Germany/nrw/koln/Rhein-Erft-Kreis/bruhl/bruhel_palaces/001.jpg"
         }
     },
     {
@@ -147,7 +147,7 @@ const datas = [
             description: "Кельн: історія, географія, пам’ятки, відомі жителі та цікаві факти про найбільше місто Північного Рейну-Вестфалії.",
             ogTitle: "Кельн – інформація про місто",
             ogDescription: "Докладна інформація про Кельн: культура, історія, відомі жителі та цікаві факти.",
-            ogImage: "/nrw/koeln.jpg"
+            ogImage: "https://our-travels.info/new/foto/Germany/nrw/koln/koln-city/koln-cathedral/001.jpg"
         }
     },
     {
@@ -229,7 +229,7 @@ const datas = [
             description: "Фрехен: історія, географія, відомі мешканці та цікаві факти про місто кераміки в землі Північний Рейн-Вестфалія.",
             ogTitle: "Фрехен – інформація про місто",
             ogDescription: "Детальна інформація про Фрехен: культура, історія, відомі жителі та цікаві факти.",
-            ogImage: "/nrw/frechen.jpg"
+            ogImage: "https://our-travels.info/new/foto/Germany/nrw/koln/Rhein-Erft-Kreis/frechen/johann_schmitz_platz_frechen/006.jpg"
         }
     },
     {
@@ -325,7 +325,7 @@ const datas = [
             description: "Люденшайд: історія, географія, відомі мешканці та цікаві факти про «місто світла» у землі Північний Рейн-Вестфалія.",
             ogTitle: "Люденшайд – інформація про місто",
             ogDescription: "Докладна інформація про Люденшайд: культура, історія, визначні особистості та вражаючі факти про місто світла та інновацій.",
-            ogImage: "/nrw/luedenscheid.jpg"
+            ogImage: "https://our-travels.info/new/foto/Germany/nrw/arnsberg/Märkischer-Kreis/luedenscheid/rathausplatz_lüdenscheid/001.JPG"
         }
     }
 ]

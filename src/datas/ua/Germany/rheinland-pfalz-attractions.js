@@ -13,10 +13,7 @@ const datas = [
     officialSite: [
       { bold: "Офіційний сайт", link: "https://www.zentrum-der-antike.de/monumente/porta-nigra?utm_source=chatgpt.com" }
     ],
-    unesco_status: {
-      included: true,
-      year: 1986
-    },
+    unesco_status: { included: true, year: 1986 },
     short_description: "Порта Нігра – найбільші збережені римські міські ворота на північ від Альп, розташовані в центрі Тріра. Побудовані близько 170 р. н.е., вони вражають масивними пісковиковими блоками та історією, яка налічує майже дві тисячі років. Сьогодні це символ міста.",
     full_description: {
       title: "Опис та історія",

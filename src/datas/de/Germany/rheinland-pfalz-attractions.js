@@ -14,10 +14,7 @@ const datas = [
     officialSite: [
       { bold: "Offizielle Webseite", link: "https://www.zentrum-der-antike.de/monumente/porta-nigra?utm_source=chatgpt.com" }
     ],
-    unesco_status: {
-      included: true,
-      year: 1986
-    },
+    unesco_status: { included: true, year: 1986 },
     short_description: "Die Porta Nigra ist das größte erhaltene römische Stadttor nördlich der Alpen, im Zentrum von Trier gelegen. Errichtet um 170 n. Chr., beeindruckt es durch massive Sandsteinblöcke und eine fast zweitausendjährige Geschichte. Heute ist es ein Symbol der Stadt.",
     full_description: {
       title: "Beschreibung und Geschichte",

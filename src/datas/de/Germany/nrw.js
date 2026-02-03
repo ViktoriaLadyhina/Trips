@@ -896,7 +896,7 @@ const datas = {
         description: "Nordrhein-Westfalen: Städte, Bezirke, Kultur und Sehenswürdigkeiten.",
         ogTitle: "Nordrhein-Westfalen — Informationen über die Region und Bezirke",
         ogDescription: "Detaillierte Informationen über Nordrhein-Westfalen: Städte, Bezirke, Geschichte und interessante Fakten.",
-        ogImage: "/nrw/nrw-map.jpg"
+        ogImage: "https://our-travels.info/new/foto/Germany/nrw/koln/koln-city/koln-cathedral/001.jpg"
     }
 }
 export default datas
