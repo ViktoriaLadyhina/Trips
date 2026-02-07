@@ -49,12 +49,12 @@ const datas = {
             {
                 bold: "Герб:",
                 text: " На гербі Рейнланд-Пфальц поєднані символи історичних територій: червоний лев на білому тлі (Пфальц), срібний хрест на червоному (Майнц), золотий орел на чорному (Рейнська провінція).",
-                img: "Germany/rhineland-pfalz/gerb.png"
+                img: "Germany/rheinland-pfalz/gerb.png"
             },
             {
                 bold: "Прапор:",
                 text: " Прапор Рейнланд-Пфальц складається з трьох горизонтальних смуг: чорної, червоної та золотої.",
-                img: "Germany/rhineland-pfalz/flag.png"
+                img: "Germany/rheinland-pfalz/flag.png"
             }
         ]
     },

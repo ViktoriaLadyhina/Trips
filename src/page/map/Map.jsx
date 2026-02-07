@@ -65,6 +65,7 @@ const Map = () => {
       koln_seilbahn: { ru: 'Кёльнская канатная дорога', de: 'Kölner Seilbahn', ua: 'Кельнська канатна дорога' },
       divitia_koln: { ru: 'Руины римского форта Дивития в Кёльне', de: 'Ruinen des römischen Forts Divitia in Köln', ua: 'Руїни римського форту Дивітія в Кельні' },
       guerzenich_koln: { ru: 'Гюрцених – исторический концертный зал и гильдейский дом в Кёльне', de: 'Gürzenich – historischer Konzertsaal und Zunfthaus in Köln', ua: 'Гюрценіх – історичний концертний зал і гільдійний дім у Кельні' },
+      ostasiatische_kunst_koln: { ru: 'Музей восточно‑азиатского искусства', de: 'Museum für Ostasiatische Kunst', ua: 'Музей східноазіатського мистецтва' },
 
       // Köln okrug
       // Rhein-Erft-Kreis
@@ -89,6 +90,8 @@ const Map = () => {
       drachenfels_ruins: { ru: 'Руины замка Драхенфельс', de: 'Ruinen der Burg Drachenfels', ua: 'Руїни замку Драхенфельс' },
       nibelungenhalle: { ru: 'Зал Нибеленгов', de: 'Nibelungenhalle', ua: 'Зал Нібеленгов' },
       reptile_zoo: { ru: 'Зоопарк рептилий Драхенфельс', de: 'Reptilienzoo Drachenfels', ua: 'Зоопарк рептилій Драхенфельс' },
+      heisterbach_konigswinter: { ru: 'Аббатство Хайстербах', de: 'Abtei Heisterbach', ua: 'Абатство Гайстербах' },
+      chorruine_heisterbach_konigswinter: { ru: 'Руины хора бывшей монастырской церкви', de: 'Ruinen des Chors der ehemaligen Klosterkirche', ua: 'Руїни хору колишньої монастирської церкви' },
 
       // rheinland-pfalz
       // Trier
@@ -195,6 +198,7 @@ const Map = () => {
                           <li><Link to="/germany/nrw/city/koln/attractions/schokoladenmuseum">{t.attractions.schokoladenmuseum[lang]}</Link></li>
                           <li><Link to="/germany/nrw/city/koln/attractions/wallraf_richartz_museum">{t.attractions.wallraf_richartz_museum[lang]}</Link></li>
                           <li><Link to="/germany/nrw/city/koln/attractions/museum-ludwig">{t.attractions.museumLudwig[lang]}</Link></li>
+                          <li><Link to="/germany/nrw/city/koln/attractions/ostasiatische_kunst_koln">{t.attractions.ostasiatische_kunst_koln[lang]}</Link></li>
                           <li><Link to="/germany/nrw/city/koln/attractions/koln_bridges">{t.attractions.koeln_bridges[lang]}</Link></li>
                           <li><Link to="/germany/nrw/city/koln/attractions/forstbotanischer_garten">{t.attractions.forstbotanischer_garten[lang]}</Link></li>
                           <li><Link to="/germany/nrw/city/koln/attractions/flora_garten_koln">{t.attractions.flora_garten_koln[lang]}</Link></li>
@@ -220,6 +224,11 @@ const Map = () => {
                                   <li><Link to="/germany/nrw/koln/konigswinter/attractions/drachenfels_ruins">{t.attractions.drachenfels_ruins[lang]}</Link></li>
                                   <li><Link to="/germany/nrw/koln/konigswinter/attractions/nibelungenhalle">{t.attractions.nibelungenhalle[lang]}</Link></li>
                                   <li><Link to="/germany/nrw/koln/konigswinter/attractions/reptile_zoo">{t.attractions.reptile_zoo[lang]}</Link></li>
+                                </ul>
+                              </li>
+                              <li><Link to="/germany/nrw/koln/konigswinter/attractions/heisterbach_konigswinter">{t.attractions.heisterbach_konigswinter[lang]}</Link>
+                                                              <ul>
+                                  <li><Link to="/germany/nrw/koln/konigswinter/attractions/chorruine_heisterbach_konigswinter">{t.attractions.chorruine_heisterbach_konigswinter[lang]}</Link></li>
                                 </ul>
                               </li>
                             </ul>

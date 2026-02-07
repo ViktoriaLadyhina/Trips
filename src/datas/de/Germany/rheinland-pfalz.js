@@ -49,12 +49,12 @@ const datas = {
             {
                 bold: "Wappen:",
                 text: " Im Wappen von Rheinland-Pfalz sind die Symbole historischer Territorien vereint: der rote Löwe auf weißem Grund (Pfalz), das silberne Kreuz auf rotem Grund (Mainz) sowie der goldene Adler auf schwarzem Grund (Rheinprovinz).",
-                img: "Germany/rhineland-pfalz/gerb.png"
+                img: "Germany/rheinland-pfalz/gerb.png"
             },
             {
                 bold: "Flagge:",
                 text: " Die Flagge von Rheinland-Pfalz besteht aus drei horizontalen Streifen: Schwarz, Rot und Gold.",
-                img: "Germany/rhineland-pfalz/flag.png"
+                img: "Germany/rheinland-pfalz/flag.png"
             }
         ]
     },

@@ -95,9 +95,9 @@ const AttractionForm = () => {
         .map(o => o.value)
     }),
     ...(watchedFields.shortDescriptionSubObjects?.some(f => f.text?.trim() || f.name?.trim()) && {
-      shortDescriptionSubObjects: {
+      short_description_subObjects: {
         text: watchedFields.shortDescriptionSubObjects[0].text?.trim() || "",
-        names: watchedFields.shortDescriptionSubObjects
+        items: watchedFields.shortDescriptionSubObjects
           .map(f => f.name?.trim())
           .filter(n => n) // убираем пустые
       }

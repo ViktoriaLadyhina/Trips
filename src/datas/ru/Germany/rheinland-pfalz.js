@@ -49,12 +49,12 @@ const datas = {
             {
                 bold: "Герб:",
                 text: " На гербе Рейнланд-Пфальц объединены символы исторических территорий: красный лев на белом фоне (Пфальц), серебряный крест на красном (Майнц), золотой орел на черном (Рейнская провинция).",
-                img: "Germany/rhineland-pfalz/gerb.png"
+                img: "Germany/rheinland-pfalz/gerb.png"
             },
             {
                 bold: "Флаг:",
                 text: " Флаг Рейнланд-Пфальц состоит из трёх горизонтальных полос: черной, красной и золотой.",
-                img: "Germany/rhineland-pfalz/flag.png"
+                img: "Germany/rheinland-pfalz/flag.png"
             }
         ]
     },
