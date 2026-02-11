@@ -1,66 +1,7 @@
 const datas = [
+    // Köln-city
     {
         id: 1,
-        name: 'Brühl',
-        path: "bruhl",
-        district: "koln",
-        desc: {
-            general: [
-                { text: 'Stadt im Bundesland Nordrhein-Westfalen' }
-            ],
-            population: [
-                { bold: 'Einwohnerzahl:' },
-                { text: ' 44.260 Menschen (2010)' }
-            ],
-            area: [
-                { bold: 'Fläche:' },
-                { text: ' 36,12 km²' }
-            ],
-            postalCode: [
-                { bold: 'Postleitzahl:' },
-                { text: ' 50321' }
-            ],
-            phone: [
-                { bold: 'Telefonvorwahl:' },
-                { text: ' +49 2232' }
-            ],
-            officialSite: [
-                { bold: 'Offizielle Website von Brühl', link: 'https://www.bruehl.de' }
-            ],
-        },
-        interestingFacts: {
-            title: 'Interessante Fakten',
-            items: [
-                { text: 'Brühl wird „Brühl bei Köln“ genannt, da die Stadt nur 15 km von Köln entfernt liegt.' },
-                { text: 'Gute Erreichbarkeit: Die Straßenbahn Nr. 18 und Regionalzüge verbinden Brühl mit Köln und Bonn.' },
-                { text: 'Phantasialand – einer der größten Freizeitparks Deutschlands, befindet sich in Brühl.' }
-            ]
-        },
-        notablePeople: {
-            title: 'Bekannte Persönlichkeiten',
-            items: [
-                { bold: 'Steffi Graf', text: ' berühmte Tennisspielerin, geboren in Brühl. 1988 wurde sie Ehrenbürgerin der Stadt.' },
-                { bold: 'Max Ernst', text: ' surrealistischer Maler, der in Brühl geboren wurde.' }
-            ]
-        },
-        briefHistory: {
-            title: 'Kurze Geschichte',
-            items: [
-                { text: 'Die erste Erwähnung von Brühl stammt aus dem Jahr 1180, als der Kölner Erzbischof Philipp von Heinsberg ein Herrenhaus errichtete.' },
-                { text: 'Im Jahr 1285 erhielt die Stadt Stadtrechte vom Erzbischof Siegfried von Westerburg.' },
-                { text: 'Ab 1469 wurde Brühl für mehr als 150 Jahre zur offiziellen Residenz der Kölner Erzbischöfe.' }
-            ]
-        },
-        meta: {
-            title: "Brühl – Stadt in Nordrhein-Westfalen",
-            description: "Brühl: Geschichte, Sehenswürdigkeiten, berühmte Persönlichkeiten und interessante Fakten der Stadt.",
-            ogTitle: "Brühl – Informationen zur Stadt",
-            ogDescription: "Detaillierte Informationen über Brühl: Kultur, Geschichte, berühmte Einwohner und interessante Fakten.",
-            ogImage: "https://our-travels.info/new/foto/Germany/nrw/koln/Rhein-Erft-Kreis/bruhl/bruhel_palaces/001.jpg"
-        }
-    },
-    {
-        id: 2,
         name: 'Köln',
         path: "koln",
         district: "city",
@@ -150,6 +91,69 @@ const datas = [
             ogImage: "https://our-travels.info/new/foto/Germany/nrw/koln/koln-city/koln-cathedral/001.jpg"
         }
     },
+
+    // Köln округ
+    // Rhein-Erft-Kreis
+    {
+        id: 2,
+        name: 'Brühl',
+        path: "bruhl",
+        district: "koln",
+        desc: {
+            general: [
+                { text: 'Stadt im Bundesland Nordrhein-Westfalen' }
+            ],
+            population: [
+                { bold: 'Einwohnerzahl:' },
+                { text: ' 44.260 Menschen (2010)' }
+            ],
+            area: [
+                { bold: 'Fläche:' },
+                { text: ' 36,12 km²' }
+            ],
+            postalCode: [
+                { bold: 'Postleitzahl:' },
+                { text: ' 50321' }
+            ],
+            phone: [
+                { bold: 'Telefonvorwahl:' },
+                { text: ' +49 2232' }
+            ],
+            officialSite: [
+                { bold: 'Offizielle Website von Brühl', link: 'https://www.bruehl.de' }
+            ],
+        },
+        interestingFacts: {
+            title: 'Interessante Fakten',
+            items: [
+                { text: 'Brühl wird „Brühl bei Köln“ genannt, da die Stadt nur 15 km von Köln entfernt liegt.' },
+                { text: 'Gute Erreichbarkeit: Die Straßenbahn Nr. 18 und Regionalzüge verbinden Brühl mit Köln und Bonn.' },
+                { text: 'Phantasialand – einer der größten Freizeitparks Deutschlands, befindet sich in Brühl.' }
+            ]
+        },
+        notablePeople: {
+            title: 'Bekannte Persönlichkeiten',
+            items: [
+                { bold: 'Steffi Graf', text: ' berühmte Tennisspielerin, geboren in Brühl. 1988 wurde sie Ehrenbürgerin der Stadt.' },
+                { bold: 'Max Ernst', text: ' surrealistischer Maler, der in Brühl geboren wurde.' }
+            ]
+        },
+        briefHistory: {
+            title: 'Kurze Geschichte',
+            items: [
+                { text: 'Die erste Erwähnung von Brühl stammt aus dem Jahr 1180, als der Kölner Erzbischof Philipp von Heinsberg ein Herrenhaus errichtete.' },
+                { text: 'Im Jahr 1285 erhielt die Stadt Stadtrechte vom Erzbischof Siegfried von Westerburg.' },
+                { text: 'Ab 1469 wurde Brühl für mehr als 150 Jahre zur offiziellen Residenz der Kölner Erzbischöfe.' }
+            ]
+        },
+        meta: {
+            title: "Brühl – Stadt in Nordrhein-Westfalen",
+            description: "Brühl: Geschichte, Sehenswürdigkeiten, berühmte Persönlichkeiten und interessante Fakten der Stadt.",
+            ogTitle: "Brühl – Informationen zur Stadt",
+            ogDescription: "Detaillierte Informationen über Brühl: Kultur, Geschichte, berühmte Einwohner und interessante Fakten.",
+            ogImage: "https://our-travels.info/new/foto/Germany/nrw/koln/Rhein-Erft-Kreis/bruhl/bruhel_palaces/001.jpg"
+        }
+    },
     {
         id: 3,
         name: 'Frechen',
@@ -232,8 +236,91 @@ const datas = [
             ogImage: "https://our-travels.info/new/foto/Germany/nrw/koln/Rhein-Erft-Kreis/frechen/johann_schmitz_platz_frechen/006.jpg"
         }
     },
+
+    //Rhein-Sieg-Kreis
     {
         id: 4,
+        name: 'Königswinter',
+        path: "konigswinter",
+        district: "rhein-sieg-kreis",
+        desc: {
+            general: [
+                { text: 'Königswinter ist eine Stadt im Bundesland Nordrhein-Westfalen, die zum Rhein-Sieg-Kreis gehört und am rechten Rheinufer gegenüber von Bonn liegt.' },
+                { text: ' Die Stadt ist bekannt für die malerische Landschaft des Siebengebirges, das Schloss Drachenburg und den Drachenfels – eines der meistbesuchten Naturziele Deutschlands.' }
+            ],
+            population: [
+                { bold: 'Einwohnerzahl:' },
+                { text: ' etwa 41.000 Menschen (2025)' }
+            ],
+            area: [
+                { bold: 'Fläche:' },
+                { text: ' ca. 76,2 km²' }
+            ],
+            postalCode: [
+                { bold: 'Postleitzahl:' },
+                { text: ' 53639' }
+            ],
+            phone: [
+                { bold: 'Telefonvorwahl:' },
+                { text: ' +49 02223' }
+            ],
+            officialSite: [
+                { bold: 'Offizielle Website von Königswinter', link: 'https://www.koenigswinter.de/' }
+            ]
+        },
+        geography: {
+            title: 'Geographie',
+            items: [
+                { text: 'Königswinter liegt am rechten Rheinufer am Fuße des Siebengebirges und ist Teil der Agglomeration Bonn.' },
+                { text: 'Die Höhe über dem Meeresspiegel variiert zwischen etwa 60 und 461 Metern; der höchste Punkt ist der Ölberg.' },
+                { text: 'Durch die Stadt verlaufen die Bundesstraße B42 und die Eisenbahnlinie am Rhein, die eine gute Verbindung nach Bonn, Köln und Koblenz gewährleisten.' },
+                { text: 'Das Stadtgebiet umfasst Wälder, Weinberge, Rheinpromenaden und den Naturpark Siebengebirge – einen der ältesten Naturparks Deutschlands.' }
+            ]
+        },
+        notablePeople: {
+            title: 'Berühmte Persönlichkeiten aus Königswinter',
+            items: [
+                { bold: 'Konrad Adenauer', text: ' – erster Bundeskanzler Deutschlands, lebte im Stadtteil Rüngsdorf; sein Haus ist heute ein Museum.' },
+                { bold: 'Peter Scholl-Latour', text: ' – bekannter deutscher Journalist und Publizist, lebte lange Zeit in der Stadt.' },
+                { bold: 'Wolfgang Overath', text: ' – legendärer Fußballspieler der deutschen Nationalmannschaft und von „Köln“, wohnte in Königswinter.' },
+                { bold: 'Ferdinand Freiligrath', text: ' – deutscher Dichter der Romantik, lebte zeitweise in der Umgebung der Stadt.' }
+            ]
+        },
+        interestingFacts: {
+            title: 'Interessante Fakten',
+            items: [
+                { text: 'Der Drachenfels ist einer der bekanntesten touristischen Punkte am Rhein und mit der Legende des von Siegfried besiegten Drachen verbunden.' },
+                { text: 'Schloss Drachenburg ist keine mittelalterliche Burg, sondern eine luxuriöse Villa des 19. Jahrhunderts im Historismus-Stil, die an ein Märchenschloss erinnert.' },
+                { text: 'Das Hotel Petersberg in Königswinter diente lange Zeit als offizielle Residenz für staatliche Gäste Deutschlands.' },
+                { text: 'Das Siebengebirge gilt als eines der ältesten geschützten Naturgebiete des Landes und ist ein beliebtes Ziel für Wanderungen.' },
+                { text: 'Die Stadt wird oft als „Tor zum romantischen Rhein“ bezeichnet, dank der Panoramablicke auf den Fluss und das Tal.' }
+            ]
+        },
+        briefHistory: {
+            title: 'Geschichte',
+            items: [
+                { text: 'Die Siedlung an der Stelle des heutigen Königswinter wird erstmals um 1015 unter dem Namen Winetre erwähnt.' },
+                { text: 'Im Mittelalter entwickelte sich die Region durch Weinbau, Steinabbau im Siebengebirge und den Handel am Rhein.' },
+                { text: 'Im 19. Jahrhundert wurde die Stadt zu einem beliebten Kur- und Reiseziel der Romantik, das Künstler und Reisende anzog.' },
+                { text: '1889 erhielt Königswinter die offiziellen Stadtrechte.' },
+                { text: 'Nach dem Zweiten Weltkrieg spielte der Petersberg eine wichtige diplomatische Rolle: Hier waren staatliche Delegationen untergebracht und internationale Treffen fanden statt.' },
+                { text: '1969 wurden im Rahmen einer Verwaltungsreform mehrere umliegende Orte in die Stadt eingegliedert, wodurch sich das Stadtgebiet erheblich vergrößerte.' },
+                { text: 'Heute ist Königswinter ein beliebtes Touristenzentrum im Rhein-Sieg-Kreis, das Naturattraktionen, historische Sehenswürdigkeiten und eine gut ausgebaute Infrastruktur für Erholung verbindet.' }
+            ]
+        },
+        meta: {
+            title: "Königswinter – Stadt am Fuße des Drachenfels am Rhein",
+            description: "Königswinter: Geschichte, Geographie, berühmte Persönlichkeiten und interessante Fakten über die malerische Stadt im Rhein-Sieg-Kreis.",
+            ogTitle: "Königswinter – Informationen über die Stadt",
+            ogDescription: "Detaillierte Informationen über Königswinter: Sehenswürdigkeiten, Natur, Geschichte und bekannte Persönlichkeiten.",
+            ogImage: "https://our-travels.info/new/foto/Germany/nrw/koln/Rhein-Sieg-Kreis/konigswinter/drachenfels/007.jpg"
+        }
+    },
+
+    // arnsberg округ
+    // Märkischer Kreis
+    {
+        id: 5,
         name: 'Lüdenscheid',
         path: "luedenscheid",
         district: "arnsberg",

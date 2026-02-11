@@ -1034,9 +1034,9 @@ const datas = [
                 { bold: "Preise für 2025:", text: " Augustusburg — 11 € für Erwachsene, kostenlos für Besucher bis 25 Jahre; Falkenlust — 8 €; Kombiticket — 17 €." }
             ]
         },
-        construction_period: "1723–Mitte des 18. Jahrhunderts",
+        construction_period: "1723 – Mitte des 18. Jahrhunderts",
         architects: ["Johann Conrad Schlaun", "Balthasar Neumann", "Dominique Girard", "François de Cuvilliés"],
-        founder: "Clemens August von Wittelsbach",
+        founder: " Clemens August von Wittelsbach",
         short_description: "Die Brühler Schlösser sind ein herausragendes Ensemble des Barock und Rokoko in der Stadt Brühl bei Köln. Sie wurden im Auftrag des Kurfürsten Clemens August errichtet und 1984 in die UNESCO-Welterbeliste aufgenommen. Neben den architektonischen Meisterwerken ist das Ensemble berühmt für seinen französischen Garten mit prächtigem Parterre, Spiegelbecken, Brunnen sowie ausgedehnten Landschaftsgärten im englischen Stil.",
         full_description: {
             title: 'Beschreibung und Geschichte',
@@ -1781,7 +1781,7 @@ const datas = [
         officialSite: [
             { bold: "Offizielle Website", link: "https://www.klosterlandschaft-heisterbach.de" }
         ],
-        subObjects: ["chorruine_heisterbach_konigswinter"],
+        subObjects: ["chorruine_heisterbach_konigswinter", "st_peter_heisterbach_konigswinter"],
         short_description_subObjects: {
             text: "In der Abtei befinden sich außerdem folgende Sehenswürdigkeiten",
             items: ["Ruinen des Chors der ehemaligen Klosterkirche", "St.-Peter-Kirche"]
@@ -1868,6 +1868,50 @@ const datas = [
             ogImage: "https://our-travels.info/new/foto/Germany/nrw/koln/Rhein-Sieg-Kreis/konigswinter/heisterbach/001.jpg"
         }
     },
+    {
+    id: "st_peter_heisterbach_konigswinter",
+    name: "Kirche St. Peter in Heisterbach",
+    type: ["cathedral"],
+    path: "st_peter_heisterbach_konigswinter",
+    countryPath: "germany",
+    regionsPath: "nrw",
+    districtPath: "koln",
+    cityPath: "konigswinter",
+    fotoCard: "Germany/nrw/koln/Rhein-Sieg-Kreis/konigswinter/heisterbach/005.jpg",
+    location: "Königswinter, Deutschland",
+    hiddenFromList: true,
+    showMore: true,
+    short_description: "Die Kirche St. Peter in Heisterbach ist eine aktive katholische Kirche, die nach der Säkularisation des Klosters auf dem Gelände der ehemaligen Abtei erbaut wurde. Sie zeichnet sich durch eine zurückhaltende Architektur und eine ruhige Atmosphäre aus und bewahrt das geistige Erbe der Zisterzienser. Die Kirche ist für Gottesdienste, Besucher und kulturelle Veranstaltungen geöffnet und ergänzt die historischen Ruinen des Komplexes.",
+    full_description: {
+        title: "Beschreibung und Geschichte",
+        items: [
+            { bold: "Die Kirche St. Peter in Heisterbach", text: " – ist eine aktive katholische Kirche auf dem Gelände der ehemaligen Abtei Heisterbach unweit von Königswinter. Heute bildet sie das geistige und architektonische Zentrum der Anlage Klosterlandschaft Heisterbach." },
+            { bold: "Historischer Kontext. ", text: "Die neue Klosterkirche wurde in den Jahren 1953–1956 nach der Säkularisation der Abtei an der Stelle verlorener Klostergebäude errichtet. Trotz der Zerstörung eines großen Teils der Anlage zu Beginn des 19. Jahrhunderts blieb das geistliche Leben an diesem Ort erhalten und erhielt eine neue architektonische Form." },
+            { text: "Die Kirche St. Peter symbolisiert die Kontinuität des geistigen Erbes der Zisterzienser und verbindet den modernen Bau mit der jahrhundertealten Geschichte des ehemaligen Klosters Heisterbach." },
+            { bold: "Architektur und Innenraum. ", text: "Das Gebäude zeichnet sich durch schlichte Formen und eine intime Atmosphäre aus, was den Traditionen des zisterziensischen geistigen Erbes der Region entspricht. Im Gegensatz zu den monumentalen Ruinen des Chores der mittelalterlichen Klosterkirche besitzt die Kirche St. Peter ein zurückhaltendes und harmonisches Erscheinungsbild." },
+            { text: "Von besonderem historischen Wert ist das Tympanon von 1237 mit der Darstellung des Osterlammes Gottes, das aus der zerstörten Abteikirche übernommen und als Sturz des Eingangsportals verwendet wurde. Am Eingang befinden sich außerdem zwei Grabplatten ehemaliger Äbte von Heisterbach." },
+            { text: "Der Innenraum ist hell und schlicht mit minimaler Dekoration. Besonders auffällig sind die beeindruckenden Glasfenster des deutschen Kirchenkunstlers Ernst Johann Jansen-Winkeln 1904-1992 sowie der zentrale Altar und die Orgel, die für Gottesdienste und Konzerte genutzt wird." },
+            { bold: "Heutige Nutzung. ", text: "Heute wird die Kirche für regelmäßige katholische Gottesdienste genutzt, ist tagsüber für Besucher geöffnet und dient als Ort für geistliche und musikalische Veranstaltungen. Die Heilige Messe wird werktags zu unterschiedlichen Zeiten sowie sonntags und an Feiertagen um 9:45 gefeiert." },
+            { text: "Die Kirche St. Peter in Heisterbach ist ein lebendiges geistliches Zentrum der Anlage und ergänzt die historischen Ruinen der Abtei zu einem ganzheitlichen Eindruck dieses einzigartigen Ortes." }
+        ]
+    },
+    interestingFacts: {
+        title: "Interessante Fakten",
+        items: [
+            { text: "Trotz des Verlusts der Klostergebäude bewahrt die Kirche Elemente der alten Anlage wie Steinportale, Teile von Malereien und dekorative Details." },
+            { text: "Innenraumgestaltung und Architektur unterstreichen die Kontinuität der geistlichen Tradition der Zisterzienser in der Region." }
+        ]
+    },
+    construction_period: "1953-1956 Bau der neuen Klosterkirche",
+    founder: " Katholische Kirchengemeinde Heisterbach",
+    meta: {
+        title: "Kirche St. Peter in Heisterbach – aktive Kirche der Abtei Heisterbach",
+        description: "Die Kirche St. Peter in Heisterbach ist eine katholische Kirche von 1953–1956 auf dem Gelände der ehemaligen Abtei. Geschichte, Architektur, Glasfenster und Besuch in Heisterbach, Königswinter.",
+        ogTitle: "Kirche St. Peter in Heisterbach",
+        ogDescription: "Aktive katholische Kirche auf dem Gelände der ehemaligen Abtei Heisterbach. Erbaut 1953-1956 mit einem einzigartigen Tympanon aus dem 13. Jahrhundert und beeindruckenden Glasfenstern.",
+        ogImage: "https://our-travels.info/new/foto/Germany/nrw/koln/Rhein-Sieg-Kreis/konigswinter/heisterbach/005.jpg"
+    }
+},
 
     // arnsberg округ
 

@@ -109,6 +109,9 @@ export const Fotos = {
       ]
     },
     bruhl: {
+      gallery: [
+        { path: "Germany/nrw/koln/Rhein-Erft-Kreis/bruhl/bruhel_palaces/013.jpg", title: { ru: "Дворцы Брюля: Аугустусбург  - 2022", ua: "Палаци Брюля: Аугустусбург - 2022", de: "Brühler Schlösser: Augustusburg - 2022" } },
+      ],
       'phantasialand': [
         { path: "Germany/nrw/koln/Rhein-Erft-Kreis/bruhl/phantasialand/001.jpg", title: { ru: "Парк атракционов «Фантазия Ленд» - 2006", ua: "Парк атракціонів «Фантазія Ленд» - 2006", de: "Freizeitpark «Fantasia Land» - 2006" } },
         { path: "Germany/nrw/koln/Rhein-Erft-Kreis/bruhl/phantasialand/002.jpg", title: { ru: "Скала-череп - 2006", ua: "Скеля-череп - 2006", de: "Schädel-Felsen - 2006" } },
@@ -156,6 +159,9 @@ export const Fotos = {
       ]
     },
     frechen: {
+      gallery: [
+        { path: "Germany/nrw/koln/Rhein-Erft-Kreis/frechen/johann_schmitz_platz_frechen/008.jpg", title: { ru: "Старая ратуша Фрехена, 2026", ua: "Стара ратуша Фрехена, 2026", de: "Altes Rathaus Frechen, 2026" } },
+      ],
       'keramion': [
         { path: "Germany/nrw/koln/Rhein-Erft-Kreis/frechen/keramion/frechen_keramion.jpg", title: { ru: "KERAMION – Центр современной и исторической керамики (фото взято с интернета)", ua: "KERAMION – Центр сучасної та історичної кераміки (фото взято з Інтернету)", de: "KERAMION – Zentrum für zeitgenössische und historische Keramik (Foto aus dem Internet)" } },
       ],
@@ -196,6 +202,9 @@ export const Fotos = {
       ]
     },
     konigswinter: {
+      gallery: [
+        { path: "Germany/nrw/koln/Rhein-Sieg-Kreis/konigswinter/drachenfels/001.jpg", title: { ru: "Руины замка Драхенфельс, 2026", ua: "Руїни замку Драхенфельс, 2026", de: "Ruinen der Burg Drachenfels, 2026" } },
+      ],
       drachenfels: [
         { path: "Germany/nrw/koln/Rhein-Sieg-Kreis/konigswinter/drachenfels/001.jpg", title: { ru: "Дворец Драхенбург, 2026", ua: "Палац Драхенбург, 2026", de: "Schloss Drachenburg, 2026" } },
         { path: "Germany/nrw/koln/Rhein-Sieg-Kreis/konigswinter/drachenfels/007.jpg", title: { ru: "Дворец Драхенбург, 2026", ua: "Палац Драхенбург, 2026", de: "Schloss Drachenburg, 2026" } },
@@ -247,10 +256,16 @@ export const Fotos = {
         { path: "Germany/nrw/koln/Rhein-Sieg-Kreis/konigswinter/heisterbach/003.jpg", title: { ru: "Аббатство Хайстербах, 2026", ua: "Абатство Гайстербах, 2026", de: "Abtei Heisterbach, 2026" } },
         { path: "Germany/nrw/koln/Rhein-Sieg-Kreis/konigswinter/heisterbach/004.jpg", title: { ru: "Аббатство Хайстербах, 2026", ua: "Абатство Гайстербах, 2026", de: "Abtei Heisterbach, 2026" } },
         { path: "Germany/nrw/koln/Rhein-Sieg-Kreis/konigswinter/heisterbach/001.jpg", title: { ru: "Руины хора бывшей монастырской церкви, 2026", ua: "Руїни хору колишньої монастирської церкви, 2026", de: "Ruinen des Chors der ehemaligen Klosterkirche, 2026" } },
-        { path: "Germany/nrw/koln/Rhein-Sieg-Kreis/konigswinter/heisterbach/002.jpg", title: { ru: "Аббатство Хайстербах, 2026", ua: "Абатство Гайстербах, 2026", de: "Abtei Heisterbach, 2026" } },
+        { path: "Germany/nrw/koln/Rhein-Sieg-Kreis/konigswinter/heisterbach/002.jpg", title: { ru: "Небольшая капелла (часовня) на территории монастырского комплекса Хайстербах, 2026", ua: "Невелика капела на території монастирського комплексу Гайстербах, 2026", de: "Kleine Kapelle auf dem Gelände des Klosterkomplexes Heisterbach, 2026" } },
+        { path: "Germany/nrw/koln/Rhein-Sieg-Kreis/konigswinter/heisterbach/005.jpg", title: { ru: "Церковь Святого Петра в Хайстербахе, 2026", ua: "Церква Святого Петра в Гайстербасі, 2026", de: "Kirche St. Peter in Heisterbach, 2026" } },
       ],
       chorruine_heisterbach_konigswinter: [
         { path: "Germany/nrw/koln/Rhein-Sieg-Kreis/konigswinter/heisterbach/001.jpg", title: { ru: "Руины хора бывшей монастырской церкви, 2026", ua: "Руїни хору колишньої монастирської церкви, 2026", de: "Ruinen des Chors der ehemaligen Klosterkirche, 2026" } },
+      ],
+      st_peter_heisterbach_konigswinter: [
+        { path: "Germany/nrw/koln/Rhein-Sieg-Kreis/konigswinter/heisterbach/005.jpg", title: { ru: "Церковь Святого Петра в Хайстербахе, 2026", ua: "Церква Святого Петра в Гайстербасі, 2026", de: "Kirche St. Peter in Heisterbach, 2026" } },
+        { path: "Germany/nrw/koln/Rhein-Sieg-Kreis/konigswinter/heisterbach/006.jpg", title: { ru: "Церковь Святого Петра в Хайстербахе, 2026", ua: "Церква Святого Петра в Гайстербасі, 2026", de: "Kirche St. Peter in Heisterbach, 2026" } },
+        { path: "Germany/nrw/koln/Rhein-Sieg-Kreis/konigswinter/heisterbach/007.jpg", title: { ru: "Церковь Святого Петра в Хайстербахе, 2026", ua: "Церква Святого Петра в Гайстербасі, 2026", de: "Kirche St. Peter in Heisterbach, 2026" } },
       ]
     },
 
@@ -297,6 +312,9 @@ export const Fotos = {
 
   "rheinland-pfalz": {
     trier: {
+      gallery: [
+        { path: "Germany/rheinland-pfalz/trier-city/portaNigra_trier/001.JPG", title: { ru: "Порта Нигра, 2024", ua: "Порта Нігра («Чорні ворота»), 2024", de: "Porta Nigra, 2024" } },
+      ],
       portaNigra_trier: [
         { path: "Germany/rheinland-pfalz/trier-city/portaNigra_trier/001.JPG", title: { ru: "Порта Нигра, 2024", ua: "Порта Нігра («Чорні ворота»), 2024", de: "Porta Nigra, 2024" } },
         { path: "Germany/rheinland-pfalz/trier-city/portaNigra_trier/002.JPG", title: { ru: "Порта Нигра, 2024", ua: "Порта Нігра («Чорні ворота»), 2024", de: "Porta Nigra, 2024" } },

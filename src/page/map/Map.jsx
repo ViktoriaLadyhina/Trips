@@ -92,6 +92,7 @@ const Map = () => {
       reptile_zoo: { ru: 'Зоопарк рептилий Драхенфельс', de: 'Reptilienzoo Drachenfels', ua: 'Зоопарк рептилій Драхенфельс' },
       heisterbach_konigswinter: { ru: 'Аббатство Хайстербах', de: 'Abtei Heisterbach', ua: 'Абатство Гайстербах' },
       chorruine_heisterbach_konigswinter: { ru: 'Руины хора бывшей монастырской церкви', de: 'Ruinen des Chors der ehemaligen Klosterkirche', ua: 'Руїни хору колишньої монастирської церкви' },
+      st_peter_heisterbach_konigswinter: { ru: 'Церковь Святого Петра в Хайстербахе', de: 'Kirche St. Peter in Heisterbach', ua: 'Церковь Святого Петра в Хайстербахе' },
 
       // rheinland-pfalz
       // Trier
@@ -227,8 +228,9 @@ const Map = () => {
                                 </ul>
                               </li>
                               <li><Link to="/germany/nrw/koln/konigswinter/attractions/heisterbach_konigswinter">{t.attractions.heisterbach_konigswinter[lang]}</Link>
-                                                              <ul>
+                                <ul>
                                   <li><Link to="/germany/nrw/koln/konigswinter/attractions/chorruine_heisterbach_konigswinter">{t.attractions.chorruine_heisterbach_konigswinter[lang]}</Link></li>
+                                  <li><Link to="/germany/nrw/koln/konigswinter/attractions/st_peter_heisterbach_konigswinter">{t.attractions.st_peter_heisterbach_konigswinter[lang]}</Link></li>
                                 </ul>
                               </li>
                             </ul>
@@ -245,9 +247,9 @@ const Map = () => {
               <li><Link to="/germany/rheinland-pfalz">{t.regions.rheinlandPfalz[lang]}</Link>
                 <ul>
                   <li><Link to="/germany/rheinland-pfalz/city/trier">{t.cities.trier[lang]}</Link>
-                  <ul>
-                    <li><Link to="/germany/rheinland-pfalz/city/trier/attractions/portaNigra_trier">{t.attractions.portaNigra_trier[lang]}</Link></li>
-                  </ul>
+                    <ul>
+                      <li><Link to="/germany/rheinland-pfalz/city/trier/attractions/portaNigra_trier">{t.attractions.portaNigra_trier[lang]}</Link></li>
+                    </ul>
                   </li>
                 </ul>
               </li>
