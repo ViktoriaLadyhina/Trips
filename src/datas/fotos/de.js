@@ -106,6 +106,9 @@ export const Fotos = {
         { path: "Germany/nrw/koln/koln-city/rheinpark_koln/005.jpg", title: { ru: "Руины римского форта Дивития в Кёльне, 2025", ua: "Руїни римського форту Дивітія в Кельні, 2025", de: "Ruinen des römischen Forts Divitia in Köln, 2025" } },
         { path: "Germany/nrw/koln/koln-city/rheinpark_koln/006.jpg", title: { ru: "Руины римского форта Дивития в Кёльне, 2025", ua: "Руїни римського форту Дивітія в Кельні, 2025", de: "Ruinen des römischen Forts Divitia in Köln, 2025" } },
         { path: "Germany/nrw/koln/koln-city/rheinpark_koln/007.jpg", title: { ru: "Руины римского форта Дивития в Кёльне, 2025", ua: "Руїни римського форту Дивітія в Кельні, 2025", de: "Ruinen des römischen Forts Divitia in Köln, 2025" } },
+      ],
+      museum_schnuetgen_koln: [
+        { path: "Germany/nrw/koln/koln-city/schnuetgen/001.jpg", title: { ru: "Музей Шнютгена (фото взято с интернета)", ua: "Музей Шнютгена (фото взято з Інтернету)", de: "Museum Schnütgen (Foto aus dem Internet)" } },
       ]
     },
     bruhl: {

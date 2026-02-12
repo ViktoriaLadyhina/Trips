@@ -706,7 +706,7 @@ const datas = {
                                 { id: 5, name: "Вахтберг", hasInfo: false },
                                 { id: 6, name: "Виндецк", hasInfo: false },
                                 { id: 7, name: "Зігбург", hasInfo: false },
-                                { id: 8, name: "Кенігсвінтер", hasInfo: false, path: "konigswinter" },
+                                { id: 8, name: "Кенігсвінтер", hasInfo: true, path: "konigswinter" },
                                 { id: 9, name: "Ломмар", hasInfo: false },
                                 { id: 10, name: "Меккенхайм", hasInfo: false },
                                 { id: 11, name: "Мух", hasInfo: false },

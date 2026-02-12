@@ -606,6 +606,71 @@ const datas = [
         }
     },
     {
+        id: "museum_schnuetgen_koln",
+        name: "Museum Schnütgen",
+        type: ["museum"],
+        path: "museum_schnuetgen_koln",
+        countryPath: "germany",
+        regionsPath: "nrw",
+        districtPath: "city",
+        cityPath: "koln",
+        fotoCard: "Germany/nrw/koln/koln-city/schnuetgen/001.jpg",
+        location: "Köln, Deutschland",
+        officialSite: [
+            { bold: "Offizielle Webseite", link: "https://museum-schnuetgen.de/" }
+        ],
+        short_description: "Das Museum Schnütgen in Köln befindet sich in dem Gebäude der ehemaligen romanischen Kirche St. Cäcilien aus dem 12. Jahrhundert und ist dem mittelalterlichen religiösen Kunsthandwerk gewidmet. Die Sammlung umfasst Skulpturen, Reliquiare, Textilien, Glasfenster sowie Objekte aus Edelmetallen und Elfenbein. Die Einzigartigkeit des Museums liegt darin, dass die Exponate direkt im historischen Kircheninterieur präsentiert werden, wodurch die Atmosphäre der Entstehungszeit der Kunstwerke lebendig wird.",
+        full_description: {
+            title: "Beschreibung und Geschichte",
+            items: [
+                { bold: "Das Museum Schnütgen in Köln", text: "– eine der bedeutendsten Sammlungen mittelalterlicher kirchlicher Kunst in Europa. Es befindet sich in der romanischen Kirche St. Cäcilien (St. Cäcilien), einem historischen Gebäude aus dem 12. Jahrhundert, das eine besondere Atmosphäre für die Präsentation der Exponate schafft." },
+                { text: "Die Sammlung umfasst Werke vom frühen Mittelalter bis zur Spätgotik: Skulpturen, Goldschmiedearbeiten, Textilien, Glasfenster und seltene Elfenbeinarbeiten." },
+                { text: "Die Sammlung begann sich Ende des 19. Jahrhunderts dank Alexander Schnütgen (1843-1918) zu formieren – einem Kölner Kanoniker und leidenschaftlichen Sammler sakraler Kunst. Schnütgen sammelte über 2000 Werke, die der christlichen spirituellen Tradition und Handwerkskunst des 11.–16. Jahrhunderts gewidmet sind, und schenkte seine Sammlung 1906 der Stadt Köln. Das Museum öffnete wenige Jahre später erstmals seine Türen, und seit 1956 befindet es sich im Gebäude des ehemaligen Frauenklosters und der Kirche St. Cäcilien." },
+                { text: "Die Kirche St. Cäcilien, in der sich heute das Museum Schnütgen befindet, ist eines der ältesten erhaltenen Gebäude Kölns. Sie wurde etwa zwischen 1130 und 1160 als romanische Kirche eines Frauenklosters errichtet. Die Architektur ist typisch für den frühromanischen Stil der Rheinregion: klare Formen, dreischiffige Struktur, keine Türme und nahezu klösterliche Schlichtheit, die eine ruhige, kontemplative Atmosphäre schafft." },
+                { text: "Heute ist dies kein aktiver Kirchenraum mehr. Nach der Säkularisation Anfang des 19. Jahrhunderts verlor die Kirche ihre religiöse Funktion und wurde lange Zeit für verschiedene Zwecke genutzt. Seit 1956 nimmt das Museum Schnütgen den gesamten Raum ein – hier befindet sich eine der größten Sammlungen mittelalterlicher kirchlicher Kunst in Europa. Die Ausstellungen sind direkt im ehemaligen Kircheninterieur untergebracht, ohne Trennung in „Kirchen-“ und „Museumsbereiche“: die Kirche selbst wurde somit zum Ausstellungsraum." },
+                { text: "Diese Platzierung ist kein Zufall. Der Museumsgründer, Sammler Alexander Schnütgen, übergab der Stadt seine Sammlung religiöser Kunstwerke, wofür ein Raum erforderlich war, der dem Geist der Kollektion entspricht. Die romanische Kirche erwies sich als ideales Umfeld: Die Werke wirken hier fast so, wie zu ihrer Entstehungszeit – in einer Architektur, die ihrem historischen Kontext nahekommt. Dadurch wird der Museumsbesuch oft nicht nur als Ausstellung angesehen, sondern als Eintauchen in die Atmosphäre mittelalterlicher geistlicher Kultur." }
+            ]
+        },
+        tickets_and_entry: {
+            title: "Praktische Informationen",
+            items: [
+                { bold: "Adresse:", text: "Cäcilienstraße 29-33, 50667 Köln, Deutschland." },
+                { bold: "Anreise:", text: "Die nächste Haltestelle des öffentlichen Verkehrs ist Neumarkt (5 Minuten zu Fuß)." },
+                { bold: "Öffnungszeiten:", text: "Mo – geschlossen, Di-So: 10:00–18:00, Do: 10:00–20:00. Am ersten Donnerstag jedes Monats: 10:00–22:00 (Sonderveranstaltung «CologneTag»)." },
+                { bold: "Eintrittspreise (ca. 2025–2026):", text: "Erwachsene: 6 €, ermäßigt: 3,50 € (Studenten, Rentner etc.), Kombiticket mit dem Rautenstrauch-Joest-Museum: 10 €, Kinder bis 6 Jahre – frei. Saisonale Änderungen möglich, bitte auf der offiziellen Webseite vor Besuch prüfen." },
+                { bold: "Besuchertipps:", text: "Im Museum werden Führungen, Vorträge und Bildungsprogramme angeboten (oft im Eintrittspreis enthalten oder gegen Aufpreis)." }
+            ]
+        },
+        relics: {
+            title: "Reliquien und Schätze",
+            items: [
+                { bold: "Skulpturen:", text: "Holz- und Steinskulpturen von Heiligen und biblischen Szenen. Darstellung der Entwicklung von Formen und Stilen vom Romanik bis zur Spätgotik." },
+                { bold: "Kostbare Gegenstände:", text: "Objekte aus Bronze, Silber und Gold – liturgische Gegenstände, Reliquiare. Feine Elemente der dekorativen Kunst." },
+                { bold: "Elfenbeinarbeiten:", text: "Seltene geschnitzte Tafeln und Reliefs, die das hohe Niveau mittelalterlicher Handwerkskunst zeigen." },
+                { bold: "Textilien:", text: "Mittelalterliche Kirchenstoffe, liturgische Gewänder und dekorative Textilien." },
+                { bold: "Glasfenster:", text: "Fragmente mittelalterlicher Glasfenster, die Aufschluss über Lichtwirkung und religiöse Symbolik geben." },
+                { text: "Neben der ständigen Sammlung finden regelmäßig Sonderausstellungen statt, wie z.B. «Licht in dunklen Zeiten» – mittelalterliche Glasmalerei aus dem Museum in Kiew (bis 12.04.2026)." }
+            ]
+        },
+        interestingFacts: {
+            title: "Interessante Fakten",
+            items: [
+                { text: "Das Museum befindet sich nahezu im Originalraum der romanischen Kirche aus dem 12. Jahrhundert, was seine Ausstellung einzigartig in der Atmosphäre macht." },
+                { text: "Regelmäßig werden temporäre Ausstellungen und ungewöhnliche Projekte gezeigt, die mittelalterliche Kunst in einem neuen Kontext präsentieren." },
+                { text: "Es gibt eine 360°-virtuelle Tour durch die Sammlung, die online verfügbar ist." }
+            ]
+        },
+        construction_period: "1906 – Sammlung an die Stadt übergeben (Gründung des Museums als Institution), 1910 – Museum für die Öffentlichkeit geöffnet (erste Ausstellung), 1956 – Umzug in die Kirche St. Cäcilien (heutiger Standort)",
+        founder: " Alexander Schnütgen – katholischer Theologe und Sammler, der christliche Kunstwerke in ganz Europa zusammengetragen hat. Seine private Sammlung bildete die Grundlage des Museums",
+        meta: {
+            title: "Museum Schnütgen in Köln — mittelalterliche Kunst",
+            description: "Das Museum Schnütgen in Köln – ein einzigartiges Museum für mittelalterliche Kunst im Gebäude der romanischen Kirche aus dem 12. Jahrhundert. Skulpturen, Reliquiare, Glasfenster und kirchliche Schätze.",
+            ogTitle: "Museum Schnütgen — mittelalterliche Kunst in einer alten Kirche",
+            ogDescription: "Besuchen Sie das Museum Schnütgen – eines der atmosphärischsten Museen Kölns, untergebracht in der romanischen Kirche des 12. Jahrhunderts mit einer Sammlung seltener mittelalterlicher Kunst.",
+            ogImage: "https://our-travels.info/new/foto/Germany/nrw/koln/koln-city/schnuetgen/001.jpg"
+        }
+    },
+    {
         id: "koln_bridges",
         name: "Kölner Rheinbrücken",
         type: ["technical_structure"],
@@ -1869,49 +1934,49 @@ const datas = [
         }
     },
     {
-    id: "st_peter_heisterbach_konigswinter",
-    name: "Kirche St. Peter in Heisterbach",
-    type: ["cathedral"],
-    path: "st_peter_heisterbach_konigswinter",
-    countryPath: "germany",
-    regionsPath: "nrw",
-    districtPath: "koln",
-    cityPath: "konigswinter",
-    fotoCard: "Germany/nrw/koln/Rhein-Sieg-Kreis/konigswinter/heisterbach/005.jpg",
-    location: "Königswinter, Deutschland",
-    hiddenFromList: true,
-    showMore: true,
-    short_description: "Die Kirche St. Peter in Heisterbach ist eine aktive katholische Kirche, die nach der Säkularisation des Klosters auf dem Gelände der ehemaligen Abtei erbaut wurde. Sie zeichnet sich durch eine zurückhaltende Architektur und eine ruhige Atmosphäre aus und bewahrt das geistige Erbe der Zisterzienser. Die Kirche ist für Gottesdienste, Besucher und kulturelle Veranstaltungen geöffnet und ergänzt die historischen Ruinen des Komplexes.",
-    full_description: {
-        title: "Beschreibung und Geschichte",
-        items: [
-            { bold: "Die Kirche St. Peter in Heisterbach", text: " – ist eine aktive katholische Kirche auf dem Gelände der ehemaligen Abtei Heisterbach unweit von Königswinter. Heute bildet sie das geistige und architektonische Zentrum der Anlage Klosterlandschaft Heisterbach." },
-            { bold: "Historischer Kontext. ", text: "Die neue Klosterkirche wurde in den Jahren 1953–1956 nach der Säkularisation der Abtei an der Stelle verlorener Klostergebäude errichtet. Trotz der Zerstörung eines großen Teils der Anlage zu Beginn des 19. Jahrhunderts blieb das geistliche Leben an diesem Ort erhalten und erhielt eine neue architektonische Form." },
-            { text: "Die Kirche St. Peter symbolisiert die Kontinuität des geistigen Erbes der Zisterzienser und verbindet den modernen Bau mit der jahrhundertealten Geschichte des ehemaligen Klosters Heisterbach." },
-            { bold: "Architektur und Innenraum. ", text: "Das Gebäude zeichnet sich durch schlichte Formen und eine intime Atmosphäre aus, was den Traditionen des zisterziensischen geistigen Erbes der Region entspricht. Im Gegensatz zu den monumentalen Ruinen des Chores der mittelalterlichen Klosterkirche besitzt die Kirche St. Peter ein zurückhaltendes und harmonisches Erscheinungsbild." },
-            { text: "Von besonderem historischen Wert ist das Tympanon von 1237 mit der Darstellung des Osterlammes Gottes, das aus der zerstörten Abteikirche übernommen und als Sturz des Eingangsportals verwendet wurde. Am Eingang befinden sich außerdem zwei Grabplatten ehemaliger Äbte von Heisterbach." },
-            { text: "Der Innenraum ist hell und schlicht mit minimaler Dekoration. Besonders auffällig sind die beeindruckenden Glasfenster des deutschen Kirchenkunstlers Ernst Johann Jansen-Winkeln 1904-1992 sowie der zentrale Altar und die Orgel, die für Gottesdienste und Konzerte genutzt wird." },
-            { bold: "Heutige Nutzung. ", text: "Heute wird die Kirche für regelmäßige katholische Gottesdienste genutzt, ist tagsüber für Besucher geöffnet und dient als Ort für geistliche und musikalische Veranstaltungen. Die Heilige Messe wird werktags zu unterschiedlichen Zeiten sowie sonntags und an Feiertagen um 9:45 gefeiert." },
-            { text: "Die Kirche St. Peter in Heisterbach ist ein lebendiges geistliches Zentrum der Anlage und ergänzt die historischen Ruinen der Abtei zu einem ganzheitlichen Eindruck dieses einzigartigen Ortes." }
-        ]
+        id: "st_peter_heisterbach_konigswinter",
+        name: "Kirche St. Peter in Heisterbach",
+        type: ["cathedral"],
+        path: "st_peter_heisterbach_konigswinter",
+        countryPath: "germany",
+        regionsPath: "nrw",
+        districtPath: "koln",
+        cityPath: "konigswinter",
+        fotoCard: "Germany/nrw/koln/Rhein-Sieg-Kreis/konigswinter/heisterbach/005.jpg",
+        location: "Königswinter, Deutschland",
+        hiddenFromList: true,
+        showMore: true,
+        short_description: "Die Kirche St. Peter in Heisterbach ist eine aktive katholische Kirche, die nach der Säkularisation des Klosters auf dem Gelände der ehemaligen Abtei erbaut wurde. Sie zeichnet sich durch eine zurückhaltende Architektur und eine ruhige Atmosphäre aus und bewahrt das geistige Erbe der Zisterzienser. Die Kirche ist für Gottesdienste, Besucher und kulturelle Veranstaltungen geöffnet und ergänzt die historischen Ruinen des Komplexes.",
+        full_description: {
+            title: "Beschreibung und Geschichte",
+            items: [
+                { bold: "Die Kirche St. Peter in Heisterbach", text: " – ist eine aktive katholische Kirche auf dem Gelände der ehemaligen Abtei Heisterbach unweit von Königswinter. Heute bildet sie das geistige und architektonische Zentrum der Anlage Klosterlandschaft Heisterbach." },
+                { bold: "Historischer Kontext. ", text: "Die neue Klosterkirche wurde in den Jahren 1953–1956 nach der Säkularisation der Abtei an der Stelle verlorener Klostergebäude errichtet. Trotz der Zerstörung eines großen Teils der Anlage zu Beginn des 19. Jahrhunderts blieb das geistliche Leben an diesem Ort erhalten und erhielt eine neue architektonische Form." },
+                { text: "Die Kirche St. Peter symbolisiert die Kontinuität des geistigen Erbes der Zisterzienser und verbindet den modernen Bau mit der jahrhundertealten Geschichte des ehemaligen Klosters Heisterbach." },
+                { bold: "Architektur und Innenraum. ", text: "Das Gebäude zeichnet sich durch schlichte Formen und eine intime Atmosphäre aus, was den Traditionen des zisterziensischen geistigen Erbes der Region entspricht. Im Gegensatz zu den monumentalen Ruinen des Chores der mittelalterlichen Klosterkirche besitzt die Kirche St. Peter ein zurückhaltendes und harmonisches Erscheinungsbild." },
+                { text: "Von besonderem historischen Wert ist das Tympanon von 1237 mit der Darstellung des Osterlammes Gottes, das aus der zerstörten Abteikirche übernommen und als Sturz des Eingangsportals verwendet wurde. Am Eingang befinden sich außerdem zwei Grabplatten ehemaliger Äbte von Heisterbach." },
+                { text: "Der Innenraum ist hell und schlicht mit minimaler Dekoration. Besonders auffällig sind die beeindruckenden Glasfenster des deutschen Kirchenkunstlers Ernst Johann Jansen-Winkeln 1904-1992 sowie der zentrale Altar und die Orgel, die für Gottesdienste und Konzerte genutzt wird." },
+                { bold: "Heutige Nutzung. ", text: "Heute wird die Kirche für regelmäßige katholische Gottesdienste genutzt, ist tagsüber für Besucher geöffnet und dient als Ort für geistliche und musikalische Veranstaltungen. Die Heilige Messe wird werktags zu unterschiedlichen Zeiten sowie sonntags und an Feiertagen um 9:45 gefeiert." },
+                { text: "Die Kirche St. Peter in Heisterbach ist ein lebendiges geistliches Zentrum der Anlage und ergänzt die historischen Ruinen der Abtei zu einem ganzheitlichen Eindruck dieses einzigartigen Ortes." }
+            ]
+        },
+        interestingFacts: {
+            title: "Interessante Fakten",
+            items: [
+                { text: "Trotz des Verlusts der Klostergebäude bewahrt die Kirche Elemente der alten Anlage wie Steinportale, Teile von Malereien und dekorative Details." },
+                { text: "Innenraumgestaltung und Architektur unterstreichen die Kontinuität der geistlichen Tradition der Zisterzienser in der Region." }
+            ]
+        },
+        construction_period: "1953-1956 Bau der neuen Klosterkirche",
+        founder: " Katholische Kirchengemeinde Heisterbach",
+        meta: {
+            title: "Kirche St. Peter in Heisterbach – aktive Kirche der Abtei Heisterbach",
+            description: "Die Kirche St. Peter in Heisterbach ist eine katholische Kirche von 1953–1956 auf dem Gelände der ehemaligen Abtei. Geschichte, Architektur, Glasfenster und Besuch in Heisterbach, Königswinter.",
+            ogTitle: "Kirche St. Peter in Heisterbach",
+            ogDescription: "Aktive katholische Kirche auf dem Gelände der ehemaligen Abtei Heisterbach. Erbaut 1953-1956 mit einem einzigartigen Tympanon aus dem 13. Jahrhundert und beeindruckenden Glasfenstern.",
+            ogImage: "https://our-travels.info/new/foto/Germany/nrw/koln/Rhein-Sieg-Kreis/konigswinter/heisterbach/005.jpg"
+        }
     },
-    interestingFacts: {
-        title: "Interessante Fakten",
-        items: [
-            { text: "Trotz des Verlusts der Klostergebäude bewahrt die Kirche Elemente der alten Anlage wie Steinportale, Teile von Malereien und dekorative Details." },
-            { text: "Innenraumgestaltung und Architektur unterstreichen die Kontinuität der geistlichen Tradition der Zisterzienser in der Region." }
-        ]
-    },
-    construction_period: "1953-1956 Bau der neuen Klosterkirche",
-    founder: " Katholische Kirchengemeinde Heisterbach",
-    meta: {
-        title: "Kirche St. Peter in Heisterbach – aktive Kirche der Abtei Heisterbach",
-        description: "Die Kirche St. Peter in Heisterbach ist eine katholische Kirche von 1953–1956 auf dem Gelände der ehemaligen Abtei. Geschichte, Architektur, Glasfenster und Besuch in Heisterbach, Königswinter.",
-        ogTitle: "Kirche St. Peter in Heisterbach",
-        ogDescription: "Aktive katholische Kirche auf dem Gelände der ehemaligen Abtei Heisterbach. Erbaut 1953-1956 mit einem einzigartigen Tympanon aus dem 13. Jahrhundert und beeindruckenden Glasfenstern.",
-        ogImage: "https://our-travels.info/new/foto/Germany/nrw/koln/Rhein-Sieg-Kreis/konigswinter/heisterbach/005.jpg"
-    }
-},
 
     // arnsberg округ
 
