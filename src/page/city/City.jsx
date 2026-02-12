@@ -17,7 +17,8 @@ const City = () => {
     useMeta(cityData?.meta);
 
     if (error) return <p>{error}</p>;
-    if (!cityData) return <p>Loading...</p>;    
+    if (!cityData) return <p>Loading...</p>;   
+    console.log(cityPath); 
 
     const photos = photosByCountry[countryPath];
 
@@ -30,8 +31,6 @@ const City = () => {
         ...(parentSubRegion ? [{ label: parentSubRegion.name }] : []),
         { label: city.name }
     ];
-
-    
     return (
         <div className='city'>
             {cityData && (

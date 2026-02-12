@@ -60,18 +60,18 @@ const AttractionForm = () => {
 
   // перезаписываем короткое описание в полное при условиях - пользователь сам не запонил полное, стоит выбрано, что подробнее не нужно
   const isFullDescriptionEmpty =
-  !watchedFields.full_description?.some(
-    item => item?.bold || item?.text
-  );
+    !watchedFields.full_description?.some(
+      item => item?.bold || item?.text
+    );
   const shouldAutoFillDescription =
-  watchedFields.showMore === "false" &&
-  watchedFields.short_description?.trim() &&
-  isFullDescriptionEmpty;
+    watchedFields.showMore === "false" &&
+    watchedFields.short_description?.trim() &&
+    isFullDescriptionEmpty;
 
   const previewObject = {
     id: watchedFields.id,
     name: watchedFields.name,
-    type: watchedFields.type,
+    type: [watchedFields.type],
     path: watchedFields.id,
     countryPath: watchedFields.country,
     regionsPath: watchedFields.region,
@@ -95,9 +95,9 @@ const AttractionForm = () => {
         .map(o => o.value)
     }),
     ...(watchedFields.shortDescriptionSubObjects?.some(f => f.text?.trim() || f.name?.trim()) && {
-      shortDescriptionSubObjects: {
+      short_description_subObjects: {
         text: watchedFields.shortDescriptionSubObjects[0].text?.trim() || "",
-        names: watchedFields.shortDescriptionSubObjects
+        items: watchedFields.shortDescriptionSubObjects
           .map(f => f.name?.trim())
           .filter(n => n) // убираем пустые
       }
@@ -106,41 +106,45 @@ const AttractionForm = () => {
     ...(watchedFields.showMore === "true" && { showMore: true }),
     short_description: watchedFields.short_description,
     ...(watchedFields.short_description2.length > 0 && { short_description2: watchedFields.short_description2 }),
-full_description: {
-    title: "Описание и история",
-    items: shouldAutoFillDescription
-      ? [
+    full_description: {
+      title: "Описание и история",
+      items: shouldAutoFillDescription
+        ? [
           {
             text: watchedFields.short_description
           }
         ]
-      : watchedFields.full_description
+        : watchedFields.full_description
           .filter(item => item.bold?.trim() || item.text?.trim())
           .map(item => ({
             ...(item.bold?.trim() && { bold: item.bold }),
             ...(item.text?.trim() && { text: item.text })
           }))
-  },
-    ticketItems: {
-      title: "Практическая информация",
-      items: watchedFields.ticketItems
-        ?.filter(item => item.bold.trim() || item.text.trim())
-        .map(item => ({
-          ...(item.bold.trim() && { bold: item.bold }),
-          ...(item.text.trim() && { text: item.text })
-        }))
     },
-    relics: {
-      title: "Реликвии и ценности",
-      items: watchedFields.relics
-        ?.filter(item => item.bold.trim() || item.text.trim())
-        .map(item => ({
-          ...(item.bold.trim() && { bold: item.bold }),
-          ...(item.text.trim() && { text: item.text })
-        }))
-    },
+    ...(watchedFields.ticketItems?.some(item => item.bold.trim() || item.text.trim()) && {
+      tickets_and_entry: {
+        title: "Практическая информация",
+        items: watchedFields.ticketItems
+          ?.filter(item => item.bold.trim() || item.text.trim())
+          .map(item => ({
+            ...(item.bold.trim() && { bold: item.bold }),
+            ...(item.text.trim() && { text: item.text })
+          }))
+      }
+    }),
+    ...(watchedFields.relics?.some(item => item.bold.trim() || item.text.trim()) && {
+      relics: {
+        title: "Реликвии и ценности",
+        items: watchedFields.relics
+          ?.filter(item => item.bold.trim() || item.text.trim())
+          .map(item => ({
+            ...(item.bold.trim() && { bold: item.bold }),
+            ...(item.text.trim() && { text: item.text })
+          }))
+      }
+    }),
     ...(watchedFields.subObjectsTitle.title.length > 0 && {
-      subObjectsTitle: {
+      sub_objects: {
         title: watchedFields.subObjectsTitle.title || "Экспозиции",
         items: watchedFields.subObjectsTitle.items
           .filter(item => item?.bold?.trim() || item?.text?.trim())
@@ -161,7 +165,7 @@ full_description: {
           }))
       }
     }),
-    ...(watchedFields.constructionPeriod.length > 0 && { constructionPeriod: watchedFields.constructionPeriod }),
+    ...(watchedFields.constructionPeriod.length > 0 && { construction_period: watchedFields.constructionPeriod }),
     ...(watchedFields.architects.length > 0 && { architects: watchedFields.architects }),
     ...(watchedFields.founder.length > 0 && { founder: watchedFields.founder }),
     meta: {
@@ -170,7 +174,7 @@ full_description: {
       ogTitle: watchedFields.meta.ogTitle,
       ogDescription: watchedFields.meta.ogDescription,
       ogImage: watchedFields.meta.ogImage,
-    },
+    }
   };
 
   const clearAll = () => {
@@ -179,69 +183,87 @@ full_description: {
   };
 
   // функции копирования и валидации незаполненных обязательных полей
-const collectErrors = (obj, parentKey = "") => {
-  let result = [];
+  const collectErrors = (obj, parentKey = "") => {
+    let result = [];
 
-  for (const [key, value] of Object.entries(obj)) {
-    const fullKey = parentKey ? `${parentKey}.${key}` : key;
+    for (const [key, value] of Object.entries(obj)) {
+      const fullKey = parentKey ? `${parentKey}.${key}` : key;
 
-    if (value?.message) {
-      result.push(`${fullKey}: ${value.message}`);
-    } else if (Array.isArray(value)) {
-      value.forEach((item, index) => {
-        if (item) {
-          result.push(
-            ...collectErrors(item, `${fullKey}[${index}]`)
-          );
-        }
-      });
-    } else if (typeof value === "object" && value !== null) {
-      result.push(...collectErrors(value, fullKey));
+      if (value?.message) {
+        result.push(`${fullKey}: ${value.message}`);
+      } else if (Array.isArray(value)) {
+        value.forEach((item, index) => {
+          if (item) {
+            result.push(
+              ...collectErrors(item, `${fullKey}[${index}]`)
+            );
+          }
+        });
+      } else if (typeof value === "object" && value !== null) {
+        result.push(...collectErrors(value, fullKey));
+      }
     }
-  }
 
-  return result;
-};
+    return result;
+  };
 
-const handleCopy = async () => {
-  const valid = await trigger();
+  const handleCopy = async () => {
+    const valid = await trigger();
 
-  if (!valid) {
-    const allErrors = collectErrors(errors).join("\n");
+    if (!valid) {
+      const allErrors = collectErrors(errors).join("\n");
 
-    alert(`Пожалуйста, заполните обязательные поля:\n${allErrors}`);
-    return;
-  }
+      alert(`Пожалуйста, заполните обязательные поля:\n${allErrors}`);
+      return;
+    }
 
-  navigator.clipboard.writeText(toJsModuleString(previewObject));
-  setCopied(true);
-  setTimeout(() => setCopied(false), 2000);
-};
+    navigator.clipboard.writeText(toJsModuleString(previewObject));
+    setCopied(true);
+    setTimeout(() => setCopied(false), 2000);
+  };
 
 
   // Правильный вывод объекта
-  const toJsModuleString = (obj, indent = 0) => {
-    const space = "  ".repeat(indent);
+const toJsModuleString = (obj, indent = 0) => {
+  const space = "  ".repeat(indent);
 
-    if (Array.isArray(obj)) {
-      if (obj.every(v => typeof v === "string")) {
-        return `[${obj.map(v => `"${v}"`).join(", ")}]`;
+  if (Array.isArray(obj)) {
+    // Если все элементы строки
+    if (obj.every(v => typeof v === "string")) {
+      return `[${obj.map(v => `"${v}"`).join(", ")}]`;
+    }
+
+    const arrayItems = obj.map(item => {
+      // Если элемент — "простой объект", вывести в одну строку
+      if (
+        typeof item === "object" &&
+        item !== null &&
+        Object.values(item).every(v => typeof v === "string" || typeof v === "number")
+      ) {
+        const inner = Object.entries(item)
+          .map(([k, v]) => `${k}: "${v}"`)
+          .join(", ");
+        return `${space}  { ${inner} }`;
       }
-      return `[\n${obj.map(item => `${space}  ${toJsModuleString(item, indent + 1)}`).join(",\n")}\n${space}]`;
-    }
+      return `${space}  ${toJsModuleString(item, indent + 1)}`;
+    });
 
-    if (typeof obj === "object" && obj !== null) {
-      const entries = Object.entries(obj)
-        .filter(([, value]) => value !== undefined && value !== null)
-        .map(([key, value]) => {
-          if (typeof value === "string") return `${key}: "${value}"`;
-          return `${key}: ${toJsModuleString(value, indent + 1)}`;
-        });
-      return `{\n${space}  ${entries.join(`,\n${space}  `)}\n${space}}`;
-    }
+    return `[\n${arrayItems.join(",\n")}\n${space}]`;
+  }
 
-    return obj;
-  };
+  if (typeof obj === "object" && obj !== null) {
+    const entries = Object.entries(obj)
+      .filter(([, value]) => value !== undefined && value !== null)
+      .map(([key, value]) => {
+        if (typeof value === "string") return `${key}: "${value}"`;
+        return `${key}: ${toJsModuleString(value, indent + 1)}`;
+      });
+    return `{\n${space}  ${entries.join(`,\n${space}  `)}\n${space}}`;
+  }
+
+  return obj;
+};
+
 
 
 
@@ -301,6 +323,7 @@ const handleCopy = async () => {
             {watchedFields.country === "germany" && (
               <>
                 <option value="nrw">Северный Рейн-Вестфалия</option>
+                <option value="rheinland-pfalz">Рейнланд-Пфальц</option>
               </>
             )}
             {watchedFields.country === "ukraine" && (
@@ -320,6 +343,11 @@ const handleCopy = async () => {
               <>
                 <option value="arnsberg">Арнсберг</option>
                 <option value="koln">Кельн</option>
+                <option value="city">Город обласного значения</option>
+              </>
+            )}
+            {watchedFields.country === "germany" && watchedFields.region === "rheinland-pfalz" && (
+              <>
                 <option value="city">Город обласного значения</option>
               </>
             )}
@@ -351,6 +379,7 @@ const handleCopy = async () => {
             {watchedFields.country === "germany" && watchedFields.district === "city" && (
               <>
                 <option value="koln">Кельн</option>
+                <option value="trier">Трир</option>
               </>
             )}
             {watchedFields.country === "ukraine" && watchedFields.district === "city" && (
@@ -547,7 +576,7 @@ const handleCopy = async () => {
 
       {/* // -------------- Основатель */}
       <div className='id'>
-        <label>Архитектор</label>
+        <label>Основатель</label>
         <input type="text" {...register("founder")} />
       </div>
 
@@ -570,14 +599,14 @@ const handleCopy = async () => {
       </div>
       <div className='meta'>
         <label><span className="required">*</span>Мета-фото для соцсетей</label>
-        <input type="text" {...register("meta.ogImage", { required: "Поле Мета-фото для соцсетей обязательно" })} placeholder="Полный путь к фото - https://our-travels.info/new/foto/Germany/nrw/koln/Rhein-Erft-Kreis/frechen/burg-bachem/Burg-Bachem_3.jpg"/>
+        <input type="text" {...register("meta.ogImage", { required: "Поле Мета-фото для соцсетей обязательно" })} placeholder="Полный путь к фото - https://our-travels.info/new/foto/Germany/nrw/koln/Rhein-Erft-Kreis/frechen/burg-bachem/Burg-Bachem_3.jpg" />
       </div>
 
 
       {/* // -------------- Предпросмотр и кнопки */}
       <div className='prev'>
         <h4>Предпросмотр:</h4>
-        <pre>{toJsModuleString(previewObject)}</pre>
+        <pre>{toJsModuleString(previewObject)+","}</pre>
       </div>
 
       <div className='clear-copy'>

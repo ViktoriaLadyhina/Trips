@@ -4,6 +4,7 @@ import UkraineMap from './ukraine/Ukraine';
 import NRWMap from './germany/NRWMap';
 import NRWKolnMap from './germany/NRWKolnMap';
 import NRWArnsbergMap from './germany/NRWArnsbergMap'
+import RheinlandPfalzMap from './germany/RPMap';
 
 const maps = {
   germany: {
@@ -12,6 +13,9 @@ const maps = {
       region: NRWMap,
       koln: NRWKolnMap,
       arnsberg: NRWArnsbergMap,
+    },
+    'rheinland-pfalz': {
+      region: RheinlandPfalzMap
     },
   },
   ukraine: {
@@ -44,6 +48,7 @@ export default function CountryMap({ countryKey, regionKey, regions, districtKey
 
   if (!MapComponent) return null;
 
+  
   return (
     <MapComponent
       regions={regions}

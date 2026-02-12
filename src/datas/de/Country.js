@@ -208,7 +208,7 @@ export const datas = [
         { id: 8, name: 'Mecklenburg-Vorpommern', hasInfo: false, path: 'mecklenburg-vorpommern', svgId: 'mv' },
         { id: 9, name: 'Niedersachsen', hasInfo: false, path: 'lower-saxony', svgId: 'ni' },
         { id: 10, name: 'Nordrhein-Westfalen', hasInfo: true, path: 'nrw', svgId: 'nw' },
-        { id: 11, name: 'Rheinland-Pfalz', hasInfo: false, path: 'rhineland-pfalz', svgId: 'rp' },
+        { id: 11, name: 'Rheinland-Pfalz', hasInfo: true, path: 'rheinland-pfalz', svgId: 'rp' },
         { id: 12, name: 'Saarland', hasInfo: false, path: 'saarland', svgId: 'sl' },
         { id: 13, name: 'Sachsen', hasInfo: false, path: 'saxony', svgId: 'sn' },
         { id: 14, name: 'Sachsen-Anhalt', hasInfo: false, path: 'saxony-anhalt', svgId: 'st' },

@@ -88,7 +88,6 @@ const datas = [
         officialSite: [
             { bold: "Offizielle Website", link: "https://www.stadt-koeln.de/", text: " der Stadt Köln (Rathaus)" },
         ],
-        unesco_status: { included: false },
         tickets_and_entry: {
             title: "Eintritt und Zugang",
             items: [
@@ -131,6 +130,68 @@ const datas = [
             ogTitle: "Kölner Rathaus: gotischer Turm, Renaissance-Loggia",
             ogDescription: "Das Kölner Rathaus – das älteste Verwaltungsgebäude Deutschlands, vereint gotischen Turm, Renaissance-Loggia und den historischen Hansasaal.",
             ogImage: "https://our-travels.info/new/foto/Germany/nrw/koln/koln-city/rathaus-koeln/Rathaus-Köln.jpg"
+        }
+    },
+    {
+        id: "guerzenich_koln",
+        name: "Gürzenich – historischer Konzertsaal und Zunfthaus in Köln",
+        type: ["historical_building"],
+        path: "guerzenich_koln",
+        countryPath: "germany",
+        regionsPath: "nrw",
+        districtPath: "city",
+        cityPath: "koln",
+        fotoCard: "Germany/nrw/koln/koln-city/guerzenich_koln/001.jpg",
+        location: "Köln, Deutschland",
+        officialSite: [
+            { bold: "Offizielle Website", link: "https://koelncongress.de/locations/guerzenich-koeln/" }
+        ],
+        short_description: "Der Gürzenich ist ein historisches Gebäude im Zentrum von Köln, das in den Jahren 1441-1452 für städtische Feste und feierliche Anlässe errichtet wurde. Nach der Zerstörung im Krieg wurde es wiederaufgebaut und dient heute als Veranstaltungsort für Konzerte, Bankette und offizielle Empfänge. Die Fassade ist mit Figuren historischer Schutzpatrone der Stadt geschmückt, während die Türgriffe des Haupteingangs die volkstümlichen Kölner Figuren Tünnes und Schäl zeigen.",
+        full_description: {
+            title: "Beschreibung und Geschichte",
+            items: [
+                { bold: "Der Gürzenich", text: "ist eines der bekanntesten weltlichen Gebäude der Kölner Altstadt und wurde Mitte des 15. Jahrhunderts im spätgotischen Stil errichtet. Seit jeher diente er als städtisches „Wohnzimmer“ – als repräsentativer Festsaal für Feiern, Empfänge, Bälle, offizielle Bankette und bedeutende Veranstaltungen." },
+                { bold: "Architektur: ", text: "Das Gebäude ist ein rechteckiger Steinbau mit typischen architektonischen Elementen der Spätgotik, darunter zinnenartige Mauern, kleine Ecktürmchen und hohe, schmale Fenster, die die Innenräume mit Tageslicht durchfluten. Trotz der Zerstörungen im Zweiten Weltkrieg wurde ein Teil der Fassade originalgetreu wiederhergestellt." },
+                { bold: "Geschichte.", text: "Der Bau entstand im 15. Jahrhundert, etwa zwischen 1441 und 1446. Der Name „Gürzenich“ geht auf den Namen einer der früheren Besitzerfamilien oder einer Kaufmannszunft zurück, die mit Handel und städtischen Angelegenheiten verbunden war." },
+                { text: "Ursprünglich war der Gürzenich für prächtige städtische Feste, Bälle und offizielle Empfänge bestimmt. Hier wurden hochrangige Gäste empfangen, darunter Kaiser und andere Würdenträger. Im 16. Jahrhundert fanden im Großen Saal Versammlungen und Reichstage statt." },
+                { text: "Im 17. und 18. Jahrhundert wurde der Gürzenich überwiegend als Lager- und Handelsgebäude genutzt und verlor zeitweise einen Teil seiner repräsentativen Bedeutung." },
+                { text: "Während des Zweiten Weltkriegs wurde das Gebäude schwer beschädigt – erhalten blieben im Wesentlichen nur die Außenmauern. Der Wiederaufbau begann Anfang der 1950er-Jahre: Die Fassade wurde im gotischen Stil rekonstruiert, während die Innenräume im Stil der 1950er-Jahre gestaltet wurden. Die Architekten der Rekonstruktion waren Rudolf Schwarz und Karl Band." },
+                { bold: "Heutige Nutzung: ", text: "Heute dient der Gürzenich als Konzertsaal, Veranstaltungsort für kulturelle Ereignisse und offizielle Empfänge. Er ist bekannt für seine hervorragende Akustik und seine historische Atmosphäre. Der Gürzenich vereint Geschichte, Kultur und das städtische Leben Kölns und gilt als Denkmal der kaufmännischen und musikalischen Tradition." }
+            ]
+        },
+        tickets_and_entry: {
+            title: "Praktische Informationen",
+            items: [
+                { bold: "Adresse: ", text: "Martinstrasse 29-37, 50667 Köln, Deutschland. Von der Haltestelle Heumarkt (Straßenbahn) weniger als 250 m entfernt." },
+                { bold: "Zugang:", text: "Das Gebäude ist kein Museum – der Zutritt ist nur im Rahmen von Veranstaltungen, Konzerten, Festivals oder Karnevalssitzungen möglich." }
+            ]
+        },
+        sub_objects: {
+            title: "Heute verfügt das Gebäude über mehrere Säle unterschiedlicher Größe, darunter:",
+            items: [
+                { bold: "Großer Saal ", text: "– 23×53 m, hauptsächlich für große festliche Anlässe." },
+                { bold: "Marsiliussaal, Isabella-Hall,", text: "Sitzungs- und Empfangssäle – genutzt für Bankette, Versammlungen und Konzerte." },
+                { text: "Die ursprünglichen gotischen Innenausstattungen sind verloren gegangen, doch der mittelalterliche Charakter ist durch die Proportionen und die Architektur des oberen Saals weiterhin spürbar." }
+            ]
+        },
+        interestingFacts: {
+            title: "Interessante Fakten",
+            items: [
+                { text: "Der Gürzenich wird oft als das „Wohnzimmer Kölns“ (Cologne’s parlor) bezeichnet, da er traditionell als Ort für Empfänge und Feierlichkeiten dient." },
+                { text: "Hier fanden bedeutende Karnevalssitzungen statt, die weit über Köln hinaus bekannt sind." },
+                { text: "Die Fassade ist mit den Figuren der legendären Schutzpatrone der Stadt — Agrippa und Marsilius – geschmückt, während die Türgriffe des Haupteingangs die kölnischen Volksfiguren Tünnes und Schäl darstellen." },
+                { text: "Der Name Gürzenich wurde auch auf das berühmte Gürzenich-Orchester Köln übertragen, das ursprünglich als musikalisches Ensemble für Auftritte in diesen Sälen entstand." }
+            ]
+        },
+        construction_period: " ursprünglich im 15. Jahrhundert erbaut, etwa zwischen 1441 und 1446.",
+        architects: " Die Architekten der Rekonstruktion waren Rudolf Schwarz und Karl Band.",
+        founder: " die Stadt Köln auf einem Grundstück der Familie Gürzenich.",
+        meta: {
+            title: "Gürzenich in Köln – historisches Gebäude und Zentrum der Festlichkeiten",
+            description: "Der Gürzenich in Köln wurde in den Jahren 1441–1452 als Gebäude für städtische Feierlichkeiten errichtet. Heute finden hier Konzerte, Bankette und offizielle Empfänge statt.",
+            ogTitle: "Gürzenich, Köln – historisches Gebäude und Veranstaltungszentrum",
+            ogDescription: "Entdecken Sie den Gürzenich in Köln – ein historisches Bauwerk aus dem 15. Jahrhundert, das nach dem Krieg wiederaufgebaut wurde und heute Konzerte, Karnevalssitzungen und festliche Empfänge beherbergt.",
+            ogImage: "https://our-travels.info/new/foto/Germany/nrw/koln/koln-city/guerzenich_koln/001.jpg"
         }
     },
     {
@@ -428,6 +489,188 @@ const datas = [
         }
     },
     {
+        id: "wallraf_richartz_museum",
+        name: "Wallraf-Richartz-Museum",
+        type: ["museum"],
+        path: "wallraf_richartz_museum",
+        regionsPath: "nrw",
+        districtPath: "city",
+        cityPath: "koln",
+        fotoCard: "Germany/nrw/koln/koln-city/wallraf_richartz_museum/001.jpg",
+        location: "Köln, Deutschland",
+        officialSite: [
+            { bold: "Offizielle Webseite des Museums", link: "http://www.wallraf.museum/en" }
+        ],
+        construction_period: "Das erste Museum wurde 1861 eröffnet, basierend auf einer Sammlung mittelalterlicher Kunst. Das moderne Gebäude, entworfen vom Architekten Oswald Matthias Ungers, wurde 2001 eröffnet.",
+        founder: "Die Sammlung begann mit den Sammlungen von Ferdinand Franz Wallraf, die der Stadt Köln im 19. Jh. übergeben wurden. Dank Spenden wohlhabender Mäzene entwickelte sich das Museum über viele Jahre weiter. 2001 übergab der Schweizer Sammler Gérard Corboud eine große Sammlung impressionistischer und neoimpressionistischer Kunst, weshalb der Name um Fondation Corboud ergänzt wurde.",
+        architects: ["Oswald Matthias Ungers"],
+        short_description: "Das älteste Museum Kölns mit Sammlungen von Malerei, Skulptur und Grafik vom Mittelalter bis zum frühen 20. Jh. Gezeigt werden Werke der Kölner Schule, des Barock sowie Impressionisten und Postimpressionisten aus dem Corboud-Fonds. Die Gesamtzahl der Grafiken beträgt etwa 75.000. Das Museum liegt im Stadtzentrum, in der Nähe des Rathauses und des Kölner Doms.",
+        full_description: {
+            title: "Beschreibung und Geschichte",
+            items: [
+                { bold: "Architektur und Geschichte des Museums", text: "Das Wallraf‑Richartz-Museum ist eines der ältesten und bedeutendsten Museen Kölns, das der europäischen Kunst vom Mittelalter bis zum frühen 20. Jh. gewidmet ist." },
+                { text: "Das moderne Museumsgebäude ist ein speziell entworfener architektonischer Raum, der 2001 nach den Plänen des bekannten Architekten Oswald Matthias Ungers eröffnet wurde. Es befindet sich im historischen Zentrum Kölns, nur wenige Minuten vom Rathaus und dem Kölner Dom entfernt." },
+                { bold: "Veränderungen und Verluste in der Geschichte", text: "Im Laufe der Geschichte erlebte das Museum Verluste von Kunstwerken – zum Beispiel wurden während der NS-Zeit viele Werke als „entartete Kunst“ konfisziert, darunter Arbeiten von Picasso, Munch und anderen." }
+            ]
+        },
+        sub_objects: {
+            title: "Sammlungen",
+            items: [
+                { text: "Die Museumssammlung begann mit Ferdinand Franz Wallraf (1748–1824) – Professor, Sammler und Gelehrter, der viele Kunstwerke aus Kölner Kirchen während der Säkularisation rettete. Er vermachte der Stadt fast 10.000 Gemälde, Zeichnungen, Bücher und andere Artefakte, um sie der Öffentlichkeit zugänglich zu machen." },
+                { bold: "Mittelalterliche Kunst: ", text: "Das Museum besitzt eine der weltweit größten Sammlungen mittelalterlicher Malerei, besonders vertreten durch Werke der Kölner Schule des 13.–15. Jahrhunderts. Unter den mittelalterlichen Werken ist eines der bekanntesten <b>„Madonna in der Rosenlaube“</b> (Stefan Lochner, ca. 1440–1442). Dieses Gemälde gilt als eines der bedeutendsten Werke der Spätgotik und wird oft mit der „Kölner Mona Lisa“ verglichen." },
+                { bold: "Barock: ", text: "Werke von Rubens, Rembrandt und anderen Meistern." },
+                { bold: "Impressionismus und Neoimpressionismus: ", text: "Seit 2001 heißt das Museum Wallraf‑Richartz‑Museum & Fondation Corboud, da die Schweizer Sammler Gérard und Marisol Corboud etwa 170 herausragende Werke von Impressionisten und Postimpressionisten als „Leihgabe auf Lebenszeit“ übergaben. Es ist die größte Sammlung impressionistischer und neoimpressionistischer Malerei in Deutschland mit Werken von Renoir, Monet, Sisley, Morisot, Signac und anderen." },
+                { bold: "Grafik: ", text: "Neben Malerei bewahrt das Museum etwa 75.000 grafische Arbeiten (Zeichnungen, Drucke, Aquarelle) vom Mittelalter bis zum 20. Jh. – eine einzigartige Ressource zur Erforschung der europäischen Kunstentwicklung." }
+            ]
+        },
+        tickets_and_entry: {
+            title: "Praktische Informationen",
+            items: [
+                { bold: "Adresse:", text: "Obenmarspforten 40, 50667 Köln, Deutschland" },
+                { bold: "Öffnungszeiten:", text: "Dienstag–Sonntag: 10:00–18:00. Jeder 1. und 3. Donnerstag im Monat: 10:00–22:00. Montag: geschlossen (besondere Feiertags- und Saisonzeiten können abweichen)" },
+                { bold: "Eintrittspreise (2025):", text: "Erwachsene: ca. 10–13 €. Ermäßigt: ca. 7–8 € (Studenten, Senioren, Sozialvergünstigungen). Kinder bis 18 Jahre: frei. Familien-, Gruppen- und Kombitickets mit anderen Museen der Stadt verfügbar." }
+            ]
+        },
+        interestingFacts: {
+            title: "Interessante Fakten",
+            items: [
+                { text: "Die Museumsammlung umfasst Werke aus über 700 Jahren Kunstgeschichte – vom Mittelalter bis zum Jugendstil." },
+                { text: "Der Sammlungsgründer Ferdinand Franz Wallraf sammelte lange Kunst aus Kirchen, Häusern und Privatbesitz, um sie für zukünftige Generationen zu bewahren." },
+                { text: "Die im Museumstitel enthaltene Fondation Corboud repräsentiert eine bedeutende Sammlung von Impressionisten und Postimpressionisten, viele Werke wurden im Rahmen von Ausstellungen weltweit gezeigt." },
+                { text: "Es gibt eine virtuelle 360°-Tour durch das Museum, die es ermöglicht, die Sammlung online zu erkunden." }
+            ]
+        },
+        meta: {
+            title: "Wallraf-Richartz-Museum — Kunst vom Mittelalter bis zum Impressionismus",
+            description: "Das Wallraf-Richartz-Museum in Köln ist das älteste Museum der Stadt mit Sammlungen von Malerei, Skulptur und Grafik vom Mittelalter bis zum frühen 20. Jh., einschließlich des Fonds Fondation Corboud mit Impressionisten.",
+            ogTitle: "Wallraf-Richartz-Museum — Kunst vom Mittelalter bis zum Impressionismus",
+            ogDescription: "Entdecken Sie das Wallraf-Richartz-Museum in Köln: Mittelalterliche und barocke Kunst sowie die Impressionisten-Sammlung Fondation Corboud.",
+            ogImage: "https://our-travels.info/new/foto/Germany/nrw/koln/koln-city/wallraf_richartz_museum/001.jpg"
+        }
+    },
+    {
+        id: "ostasiatische_kunst_koln",
+        name: "Museum für Ostasiatische Kunst",
+        type: ["museum"],
+        path: "ostasiatische_kunst_koln",
+        countryPath: "germany",
+        regionsPath: "nrw",
+        districtPath: "city",
+        cityPath: "koln",
+        fotoCard: "Germany/nrw/koln/koln-city/ostasiatische_kunst_koln/001.jpg",
+        location: "Köln, Deutschland",
+        officialSite: [
+            { bold: "Offizielle Webseite", link: "https://museum-fuer-ostasiatische-kunst.de/Information_e?utm_source=chatgpt.com" }
+        ],
+        short_description: "Das Museum für Ostasiatische Kunst ist ein Museum, das der Kunst Chinas, Koreas und Japans gewidmet ist. Die Sammlung umfasst buddhistische Malerei, Holzskulpturen, japanische bemalte Schirme, Keramik und Lackarbeiten. Das Museumgebäude im Jugendstil mit japanischen Elementen wird von einem traditionellen japanischen Garten umgeben.",
+        full_description: {
+            title: "Beschreibung und Geschichte",
+            items: [
+                { text: "Das Museum ist eines der größten und ältesten Museen für ostasiatische Kunst in Europa. Es wurde Anfang des 20. Jahrhunderts gegründet, um das europäische Publikum mit der Kultur Chinas, Koreas und Japans vertraut zu machen. Die ursprüngliche Sammlung entstand auf Grundlage privater Sammlungen, insbesondere der Sammlung von Adolf und Frieda Fischer, und umfasste sowohl Kunstgegenstände als auch wissenschaftliche Literatur." },
+                { text: "Das heutige Museumsgebäude, erbaut 1977 nach den Plänen des japanischen Architekten Kunio Maekawa mit Beteiligung des deutschen Architekten Joachim Jacobs, vereint Elemente des Modernismus mit japanischer Ästhetik. Das Gebäude wird von einem traditionellen japanischen Garten umgeben, der eine Atmosphäre von Ruhe und Harmonie schafft und die Philosophie der ostasiatischen Kunst unterstreicht." }
+            ]
+        },
+        tickets_and_entry: {
+            title: "Praktische Informationen",
+            items: [
+                { bold: "Adresse:", text: "Universitätsstraße 100, 50674 Köln, Deutschland" },
+                { bold: "Öffnungszeiten:", text: "Dienstag–Sonntag: 11:00–17:00. Jeden ersten Donnerstag im Monat: 11:00–22:00. Montag: geschlossen" },
+                { bold: "Eintritt (2025-2026):", text: "Der Eintritt kostet etwa 9,50 € für Erwachsene und ca. 5,50 € für ermäßigte Besucher." },
+                { bold: "Barrierefreiheit:", text: "Vollständig barrierefrei, Rampen, Aufzug, Toiletten für Menschen mit eingeschränkter Mobilität." }
+            ]
+        },
+        sub_objects: {
+            title: "Ausstellungen und Sammlungen",
+            items: [
+                { text: "Das Museum verfügt über eine der bedeutendsten Sammlungen ostasiatischer Kunst in Deutschland: <br>&nbsp;&nbsp;&nbsp; ▪ buddhistische Malerei und Holzskulpturen, <br>&nbsp;&nbsp;&nbsp; ▪ japanische Schirme und Farbholzschnitte, <br>&nbsp;&nbsp;&nbsp; ▪ koreanische Keramik und Lackarbeiten aus China, Korea und Japan, <br>&nbsp;&nbsp;&nbsp; ▪ Möbel und Alltagsgegenstände, die Kultur und Alltag Ostasiens widerspiegeln." },
+                { text: "Das Museum veranstaltet regelmäßig Sonderausstellungen zu klassischer und zeitgenössischer ostasiatischer Kunst und schafft so einen Dialog zwischen Tradition und Moderne." }
+            ]
+        },
+        interestingFacts: {
+            title: "Interessante Fakten",
+            items: [
+                { text: "Die Bibliothek des Museums wurde 1909 auf Basis der privaten Büchersammlung des Gründers Adolf Fischer gegründet und umfasst heute über 30 000 Bände zur ostasiatischen Kunst." },
+                { text: "Die Architektur des Gebäudes ist ein Beispiel für klassischen Modernismus mit japanischen Einflüssen und gilt als architektonisches Denkmal." },
+                { text: "Das Museum beteiligt sich am jährlichen KölnTag – einem Tag, an dem die Einwohner die Dauerausstellung kostenlos besuchen können." }
+            ]
+        },
+        construction_period: "Das erste Museumsgebäude wurde 1913 eröffnet, aber während des Zweiten Weltkriegs zerstört. Das heutige Gebäude am Aachener Weiher wurde 1977 errichtet und eröffnet.",
+        architects: "Erstes Gebäude (1913): Architekt Franz Brantzky. Heutiges Gebäude (1977): japanischer Architekt Kunio Maekawa (Schüler von Le Corbusier). Den inneren japanischen Garten entwarf der Bildhauer Masayuki Nagare. Umsetzung des Maekawa-Plans in Köln – deutscher Architekt Joachim Jacobs.",
+        founder: " Die Hauptsammlungen wurden von Adolf und Frieda Fischer gebildet.",
+        meta: {
+            title: "Museum für Ostasiatische Kunst in Köln",
+            description: "Entdecken Sie die Kunst Chinas, Koreas und Japans in Köln: buddhistische Malerei, Holzskulpturen, japanische Schirme und traditioneller japanischer Garten.",
+            ogTitle: "Museum für Ostasiatische Kunst (Köln)",
+            ogDescription: "Besuchen Sie das Museum in Köln mit einer einzigartigen Sammlung ostasiatischer Kunst: Malerei, Skulpturen, japanische Schirme und ein schöner japanischer Garten.",
+            ogImage: "https://our-travels.info/new/foto/Germany/nrw/koln/koln-city/ostasiatische_kunst_koln/001.jpg"
+        }
+    },
+    {
+        id: "museum_schnuetgen_koln",
+        name: "Museum Schnütgen",
+        type: ["museum"],
+        path: "museum_schnuetgen_koln",
+        countryPath: "germany",
+        regionsPath: "nrw",
+        districtPath: "city",
+        cityPath: "koln",
+        fotoCard: "Germany/nrw/koln/koln-city/schnuetgen/001.jpg",
+        location: "Köln, Deutschland",
+        officialSite: [
+            { bold: "Offizielle Webseite", link: "https://museum-schnuetgen.de/" }
+        ],
+        short_description: "Das Museum Schnütgen in Köln befindet sich in dem Gebäude der ehemaligen romanischen Kirche St. Cäcilien aus dem 12. Jahrhundert und ist dem mittelalterlichen religiösen Kunsthandwerk gewidmet. Die Sammlung umfasst Skulpturen, Reliquiare, Textilien, Glasfenster sowie Objekte aus Edelmetallen und Elfenbein. Die Einzigartigkeit des Museums liegt darin, dass die Exponate direkt im historischen Kircheninterieur präsentiert werden, wodurch die Atmosphäre der Entstehungszeit der Kunstwerke lebendig wird.",
+        full_description: {
+            title: "Beschreibung und Geschichte",
+            items: [
+                { bold: "Das Museum Schnütgen in Köln", text: "– eine der bedeutendsten Sammlungen mittelalterlicher kirchlicher Kunst in Europa. Es befindet sich in der romanischen Kirche St. Cäcilien (St. Cäcilien), einem historischen Gebäude aus dem 12. Jahrhundert, das eine besondere Atmosphäre für die Präsentation der Exponate schafft." },
+                { text: "Die Sammlung umfasst Werke vom frühen Mittelalter bis zur Spätgotik: Skulpturen, Goldschmiedearbeiten, Textilien, Glasfenster und seltene Elfenbeinarbeiten." },
+                { text: "Die Sammlung begann sich Ende des 19. Jahrhunderts dank Alexander Schnütgen (1843-1918) zu formieren – einem Kölner Kanoniker und leidenschaftlichen Sammler sakraler Kunst. Schnütgen sammelte über 2000 Werke, die der christlichen spirituellen Tradition und Handwerkskunst des 11.–16. Jahrhunderts gewidmet sind, und schenkte seine Sammlung 1906 der Stadt Köln. Das Museum öffnete wenige Jahre später erstmals seine Türen, und seit 1956 befindet es sich im Gebäude des ehemaligen Frauenklosters und der Kirche St. Cäcilien." },
+                { text: "Die Kirche St. Cäcilien, in der sich heute das Museum Schnütgen befindet, ist eines der ältesten erhaltenen Gebäude Kölns. Sie wurde etwa zwischen 1130 und 1160 als romanische Kirche eines Frauenklosters errichtet. Die Architektur ist typisch für den frühromanischen Stil der Rheinregion: klare Formen, dreischiffige Struktur, keine Türme und nahezu klösterliche Schlichtheit, die eine ruhige, kontemplative Atmosphäre schafft." },
+                { text: "Heute ist dies kein aktiver Kirchenraum mehr. Nach der Säkularisation Anfang des 19. Jahrhunderts verlor die Kirche ihre religiöse Funktion und wurde lange Zeit für verschiedene Zwecke genutzt. Seit 1956 nimmt das Museum Schnütgen den gesamten Raum ein – hier befindet sich eine der größten Sammlungen mittelalterlicher kirchlicher Kunst in Europa. Die Ausstellungen sind direkt im ehemaligen Kircheninterieur untergebracht, ohne Trennung in „Kirchen-“ und „Museumsbereiche“: die Kirche selbst wurde somit zum Ausstellungsraum." },
+                { text: "Diese Platzierung ist kein Zufall. Der Museumsgründer, Sammler Alexander Schnütgen, übergab der Stadt seine Sammlung religiöser Kunstwerke, wofür ein Raum erforderlich war, der dem Geist der Kollektion entspricht. Die romanische Kirche erwies sich als ideales Umfeld: Die Werke wirken hier fast so, wie zu ihrer Entstehungszeit – in einer Architektur, die ihrem historischen Kontext nahekommt. Dadurch wird der Museumsbesuch oft nicht nur als Ausstellung angesehen, sondern als Eintauchen in die Atmosphäre mittelalterlicher geistlicher Kultur." }
+            ]
+        },
+        tickets_and_entry: {
+            title: "Praktische Informationen",
+            items: [
+                { bold: "Adresse:", text: "Cäcilienstraße 29-33, 50667 Köln, Deutschland." },
+                { bold: "Anreise:", text: "Die nächste Haltestelle des öffentlichen Verkehrs ist Neumarkt (5 Minuten zu Fuß)." },
+                { bold: "Öffnungszeiten:", text: "Mo – geschlossen, Di-So: 10:00–18:00, Do: 10:00–20:00. Am ersten Donnerstag jedes Monats: 10:00–22:00 (Sonderveranstaltung «CologneTag»)." },
+                { bold: "Eintrittspreise (ca. 2025–2026):", text: "Erwachsene: 6 €, ermäßigt: 3,50 € (Studenten, Rentner etc.), Kombiticket mit dem Rautenstrauch-Joest-Museum: 10 €, Kinder bis 6 Jahre – frei. Saisonale Änderungen möglich, bitte auf der offiziellen Webseite vor Besuch prüfen." },
+                { bold: "Besuchertipps:", text: "Im Museum werden Führungen, Vorträge und Bildungsprogramme angeboten (oft im Eintrittspreis enthalten oder gegen Aufpreis)." }
+            ]
+        },
+        relics: {
+            title: "Reliquien und Schätze",
+            items: [
+                { bold: "Skulpturen:", text: "Holz- und Steinskulpturen von Heiligen und biblischen Szenen. Darstellung der Entwicklung von Formen und Stilen vom Romanik bis zur Spätgotik." },
+                { bold: "Kostbare Gegenstände:", text: "Objekte aus Bronze, Silber und Gold – liturgische Gegenstände, Reliquiare. Feine Elemente der dekorativen Kunst." },
+                { bold: "Elfenbeinarbeiten:", text: "Seltene geschnitzte Tafeln und Reliefs, die das hohe Niveau mittelalterlicher Handwerkskunst zeigen." },
+                { bold: "Textilien:", text: "Mittelalterliche Kirchenstoffe, liturgische Gewänder und dekorative Textilien." },
+                { bold: "Glasfenster:", text: "Fragmente mittelalterlicher Glasfenster, die Aufschluss über Lichtwirkung und religiöse Symbolik geben." },
+                { text: "Neben der ständigen Sammlung finden regelmäßig Sonderausstellungen statt, wie z.B. «Licht in dunklen Zeiten» – mittelalterliche Glasmalerei aus dem Museum in Kiew (bis 12.04.2026)." }
+            ]
+        },
+        interestingFacts: {
+            title: "Interessante Fakten",
+            items: [
+                { text: "Das Museum befindet sich nahezu im Originalraum der romanischen Kirche aus dem 12. Jahrhundert, was seine Ausstellung einzigartig in der Atmosphäre macht." },
+                { text: "Regelmäßig werden temporäre Ausstellungen und ungewöhnliche Projekte gezeigt, die mittelalterliche Kunst in einem neuen Kontext präsentieren." },
+                { text: "Es gibt eine 360°-virtuelle Tour durch die Sammlung, die online verfügbar ist." }
+            ]
+        },
+        construction_period: "1906 – Sammlung an die Stadt übergeben (Gründung des Museums als Institution), 1910 – Museum für die Öffentlichkeit geöffnet (erste Ausstellung), 1956 – Umzug in die Kirche St. Cäcilien (heutiger Standort)",
+        founder: " Alexander Schnütgen – katholischer Theologe und Sammler, der christliche Kunstwerke in ganz Europa zusammengetragen hat. Seine private Sammlung bildete die Grundlage des Museums",
+        meta: {
+            title: "Museum Schnütgen in Köln — mittelalterliche Kunst",
+            description: "Das Museum Schnütgen in Köln – ein einzigartiges Museum für mittelalterliche Kunst im Gebäude der romanischen Kirche aus dem 12. Jahrhundert. Skulpturen, Reliquiare, Glasfenster und kirchliche Schätze.",
+            ogTitle: "Museum Schnütgen — mittelalterliche Kunst in einer alten Kirche",
+            ogDescription: "Besuchen Sie das Museum Schnütgen – eines der atmosphärischsten Museen Kölns, untergebracht in der romanischen Kirche des 12. Jahrhunderts mit einer Sammlung seltener mittelalterlicher Kunst.",
+            ogImage: "https://our-travels.info/new/foto/Germany/nrw/koln/koln-city/schnuetgen/001.jpg"
+        }
+    },
+    {
         id: "koln_bridges",
         name: "Kölner Rheinbrücken",
         type: ["technical_structure"],
@@ -605,67 +848,223 @@ const datas = [
             description: "Besuchen Sie den Botanischen Garten Flora in Köln: über 10.000 Pflanzenarten aus aller Welt, historische Alleen, thematische Gärten, Gewächshäuser und Erholung im Freien.",
             ogTitle: "Flora – Botanischer Garten und Park in Köln",
             ogDescription: "Entdecken Sie die Flora in Köln: Weltreise unter 10.000 Pflanzenarten, historische Gärten, Gewächshäuser und gemütliche Alleen zum Spazierengehen.",
-            ogImage: "https://our-travels.info/new/Germany/nrw/koln/koln-city/flora_garten_koln/001.jpg"
+            ogImage: "https://our-travels.info/new/foto/Germany/nrw/koln/koln-city/flora_garten_koln/001.jpg"
         }
     },
     {
-        id: "wallraf_richartz_museum",
-        name: "Wallraf-Richartz-Museum",
-        type: ["museum"],
-        path: "wallraf_richartz_museum",
+        id: "rheinpark_koln",
+        name: "Rheinpark",
+        type: ["nature"],
+        path: "rheinpark_koln",
+        countryPath: "germany",
         regionsPath: "nrw",
         districtPath: "city",
         cityPath: "koln",
-        fotoCard: "Germany/nrw/koln/koln-city/wallraf_richartz_museum/001.jpg",
+        fotoCard: "Germany/nrw/koln/koln-city/rheinpark_koln/001.jpg",
         location: "Köln, Deutschland",
         officialSite: [
-            { bold: "Offizielle Webseite des Museums", link: "http://www.wallraf.museum/en" }
+            { bold: "Parkseite auf der Website der Stadt Köln", link: "https://www.stadt-koeln.de/leben-in-koeln/freizeit-natur-sport/parks/rheinpark" },
+            { bold: "<br>Offizielle Website der Kleinbahn im Rheinpark", link: "http://kleinbahn.koeln/" }
         ],
-        construction_period: "Das erste Museum wurde 1861 eröffnet, basierend auf einer Sammlung mittelalterlicher Kunst. Das moderne Gebäude, entworfen vom Architekten Oswald Matthias Ungers, wurde 2001 eröffnet.",
-        founder: "Die Sammlung begann mit den Sammlungen von Ferdinand Franz Wallraf, die der Stadt Köln im 19. Jh. übergeben wurden. Dank Spenden wohlhabender Mäzene entwickelte sich das Museum über viele Jahre weiter. 2001 übergab der Schweizer Sammler Gérard Corboud eine große Sammlung impressionistischer und neoimpressionistischer Kunst, weshalb der Name um Fondation Corboud ergänzt wurde.",
-        architects: ["Oswald Matthias Ungers"],
-        short_description: "Das älteste Museum Kölns mit Sammlungen von Malerei, Skulptur und Grafik vom Mittelalter bis zum frühen 20. Jh. Gezeigt werden Werke der Kölner Schule, des Barock sowie Impressionisten und Postimpressionisten aus dem Corboud-Fonds. Die Gesamtzahl der Grafiken beträgt etwa 75.000. Das Museum liegt im Stadtzentrum, in der Nähe des Rathauses und des Kölner Doms.",
+        subObjects: ["tanzbrunnen", "koln_seilbahn", "divitia_koln"],
+        short_description: "Der Rheinpark ist ein großer öffentlicher Park entlang des rechten Rheinufers im Stadtteil Deutz der Stadt Köln. Er stellt eine historisch und architektonisch bedeutende Grünanlage dar, bekannt für seine weitläufigen Rasenflächen, Blumenbeete, Spazierwege und den herrlichen Blick auf das Stadtzentrum mit dem Kölner Dom.",
+        short_description_subObjects: {
+            text: "Im Rheinpark befinden sich folgende Sehenswürdigkeiten:",
+            items: ["Tanzbrunnen", "Kölner Seilbahn", "Ruinen des römischen Forts Divitia in Köln"]
+        },
         full_description: {
             title: "Beschreibung und Geschichte",
             items: [
-                { bold: "Architektur und Geschichte des Museums", text: "Das Wallraf‑Richartz-Museum ist eines der ältesten und bedeutendsten Museen Kölns, das der europäischen Kunst vom Mittelalter bis zum frühen 20. Jh. gewidmet ist." },
-                { text: "Das moderne Museumsgebäude ist ein speziell entworfener architektonischer Raum, der 2001 nach den Plänen des bekannten Architekten Oswald Matthias Ungers eröffnet wurde. Es befindet sich im historischen Zentrum Kölns, nur wenige Minuten vom Rathaus und dem Kölner Dom entfernt." },
-                { bold: "Veränderungen und Verluste in der Geschichte", text: "Im Laufe der Geschichte erlebte das Museum Verluste von Kunstwerken – zum Beispiel wurden während der NS-Zeit viele Werke als „entartete Kunst“ konfisziert, darunter Arbeiten von Picasso, Munch und anderen." }
-            ]
-        },
-        sub_objects: {
-            title: "Sammlungen",
-            items: [
-                { text: "Die Museumssammlung begann mit Ferdinand Franz Wallraf (1748–1824) – Professor, Sammler und Gelehrter, der viele Kunstwerke aus Kölner Kirchen während der Säkularisation rettete. Er vermachte der Stadt fast 10.000 Gemälde, Zeichnungen, Bücher und andere Artefakte, um sie der Öffentlichkeit zugänglich zu machen." },
-                { bold: "Mittelalterliche Kunst: ", text: "Das Museum besitzt eine der weltweit größten Sammlungen mittelalterlicher Malerei, besonders vertreten durch Werke der Kölner Schule des 13.–15. Jahrhunderts. Unter den mittelalterlichen Werken ist eines der bekanntesten <b>„Madonna in der Rosenlaube“</b> (Stefan Lochner, ca. 1440–1442). Dieses Gemälde gilt als eines der bedeutendsten Werke der Spätgotik und wird oft mit der „Kölner Mona Lisa“ verglichen." },
-                { bold: "Barock: ", text: "Werke von Rubens, Rembrandt und anderen Meistern." },
-                { bold: "Impressionismus und Neoimpressionismus: ", text: "Seit 2001 heißt das Museum Wallraf‑Richartz‑Museum & Fondation Corboud, da die Schweizer Sammler Gérard und Marisol Corboud etwa 170 herausragende Werke von Impressionisten und Postimpressionisten als „Leihgabe auf Lebenszeit“ übergaben. Es ist die größte Sammlung impressionistischer und neoimpressionistischer Malerei in Deutschland mit Werken von Renoir, Monet, Sisley, Morisot, Signac und anderen." },
-                { bold: "Grafik: ", text: "Neben Malerei bewahrt das Museum etwa 75.000 grafische Arbeiten (Zeichnungen, Drucke, Aquarelle) vom Mittelalter bis zum 20. Jh. – eine einzigartige Ressource zur Erforschung der europäischen Kunstentwicklung." }
+                { bold: "Rheinpark ", text: "– ein großer öffentlicher Park entlang des rechten Rheinufers im Stadtteil Deutz der Stadt Köln. Er stellt eine historisch und architektonisch bedeutende Grünanlage dar, bekannt für seine weitläufigen Rasenflächen, Blumenbeete, Spazierwege und den herrlichen Blick auf das Stadtzentrum mit dem Kölner Dom." },
+                { text: "Vom Park aus eröffnen sich herrliche Panoramablicke auf das Zentrum von Köln, einschließlich des berühmten Kölner Doms, besonders von der Uferpromenade und den angrenzenden Punkten." },
+                { bold: "Geschichte. ", text: "Das Gebiet wurde nach dem Zweiten Weltkrieg transformiert: bis 1957 handelte es sich um Trümmer und Berge von Baumaterialien." },
+                { text: "Der neue Park wurde im Rahmen der Bundesgartenschau 1957 angelegt, und genau in dieser Zeit entstand die heutige Parkanlage." },
+                { text: "Im Jahr 1971 fand hier erneut die Bundesgartenschau statt, was ebenfalls das Erscheinungsbild des Parks beeinflusste und neue Elemente hinzufügte." },
+                { text: "Der Park gilt als ein herausragendes Beispiel für Landschaftsarchitektur der 1950er Jahre und als Symbol für die Wiederherstellung städtischen Raums nach dem Krieg." }
             ]
         },
         tickets_and_entry: {
             title: "Praktische Informationen",
             items: [
-                { bold: "Adresse:", text: "Obenmarspforten 40, 50667 Köln, Deutschland" },
-                { bold: "Öffnungszeiten:", text: "Dienstag–Sonntag: 10:00–18:00. Jeder 1. und 3. Donnerstag im Monat: 10:00–22:00. Montag: geschlossen (besondere Feiertags- und Saisonzeiten können abweichen)" },
-                { bold: "Eintrittspreise (2025):", text: "Erwachsene: ca. 10–13 €. Ermäßigt: ca. 7–8 € (Studenten, Senioren, Sozialvergünstigungen). Kinder bis 18 Jahre: frei. Familien-, Gruppen- und Kombitickets mit anderen Museen der Stadt verfügbar." }
+                { bold: "Saison und Besuchszeiten. ", text: "Der Park ist das ganze Jahr über geöffnet, viele Attraktionen (Kinderschmalspurbahn und Seilbahn) sind jedoch saisonal in den warmen Monaten in Betrieb." }
+            ]
+        },
+        sub_objects: {
+            title: "Was es hier gibt:",
+            items: [
+                { bold: "Offene Flächen und Landschaft. ", text: "Dank der durchdachten Planung, dem Wegenetz, Pavillons, Skulpturen und Springbrunnen ist der Park ein beliebter Ort für Erholung und Spaziergänge für Kölner und Touristen." },
+                { bold: "Kinderschmalspurbahn. ", text: "Durch den Park verläuft eine etwa 2 km lange Kinderschmalspurbahn. Im Sommer fahren kleine Züge mit drei Haltestellen, die besonders bei Kindern und Familien beliebt sind." },
+                { text: "Auf dem Gelände gibt es außerdem: Restaurants und Cafés, eine Erholungszone am Wasser, einen Sommer-„Beach Club“." }
+            ]
+        },
+        construction_period: "1957",
+        architects: "Landschaftsprojekt unter der Leitung von Hermann Mattern",
+        meta: {
+            title: "Rheinpark (Rheinpark)",
+            description: "Der Rheinpark ist ein großer öffentlicher Park entlang des rechten Rheinufers im Stadtteil Deutz der Stadt Köln. Er stellt eine historisch und architektonisch bedeutende Grünanlage dar, bekannt für seine weitläufigen Rasenflächen, Blumenbeete, Spazierwege und den herrlichen Blick auf das Stadtzentrum mit dem Kölner Dom.",
+            ogTitle: "Rheinpark (Rheinpark)",
+            ogDescription: "Der Rheinpark ist ein großer öffentlicher Park entlang des rechten Rheinufers im Stadtteil Deutz der Stadt Köln. Er stellt eine historisch und architektonisch bedeutende Grünanlage dar, bekannt für seine weitläufigen Rasenflächen, Blumenbeete, Spazierwege und den herrlichen Blick auf das Stadtzentrum mit dem Kölner Dom.",
+            ogImage: "https://our-travels.info/new/foto/Germany/nrw/koln/koln-city/rheinpark_koln/001.jpg"
+        }
+    },
+    {
+        id: "tanzbrunnen",
+        name: "Tanzbrunnen",
+        type: ["monument_or_fountain"],
+        path: "tanzbrunnen",
+        countryPath: "germany",
+        regionsPath: "nrw",
+        districtPath: "city",
+        cityPath: "koln",
+        fotoCard: "Germany/nrw/koln/koln-city/rheinpark_koln/002.jpg",
+        location: "Köln, Deutschland",
+        officialSite: [
+            { bold: "Offizielle Seite des Tanzbrunnen (über KölnKongress)", link: "https://koelncongress.de/locations/tanzbrunnen-koeln/" }
+        ],
+        hiddenFromList: true,
+        showMore: true,
+        short_description: "Am südlichen Rand des Rheinparks befindet sich der Tanzbrunnen – eines der bekanntesten Kulturobjekte Kölns. Der Komplex umfasst eine offene Fläche, ein Amphitheater, überdachte Bereiche und Grünanlagen und schafft so einen idealen Raum für Konzerte, Festivals, Tanzpartys und andere kulturelle Veranstaltungen.",
+        full_description: {
+            title: "Beschreibung und Geschichte",
+            items: [
+                { text: "Am südlichen Rand des Rheinparks befindet sich der Tanzbrunnen – eines der bekanntesten Kulturobjekte Kölns. Der Komplex umfasst eine offene Fläche, ein Amphitheater, überdachte Bereiche und Grünanlagen und schafft so einen idealen Raum für Konzerte, Festivals, Tanzpartys und andere kulturelle Veranstaltungen." },
+                { text: "Der Komplex trägt den Namen „Tanzbrunnen“, weil sich im Zentrum ursprünglich ein Brunnen mit Beleuchtung und Wassereffekten befand, zu denen Tanzveranstaltungen und Aufführungen stattfanden. Die Fläche wurde 1928 angelegt – lange vor der Bundesgartenschau und dem heutigen Rheinpark. Während des Zweiten Weltkriegs wurde das Gelände stark beschädigt, und sein heutiges Erscheinungsbild erhielt der Tanzbrunnen nach den Rekonstruktionen 1957 und in den 1970er Jahren, wobei die kulturelle Funktion fast ein Jahrhundert lang erhalten blieb." },
+                { text: "Heute wird der Tanzbrunnen aktiv für Sommerkonzerte, Festivals sowie Familien- und Firmenevents genutzt. Der Komplex liegt am Rheinufer, was eine malerische Kulisse schafft und den Besuch besonders angenehm für Spaziergänge macht. Der Tanzbrunnen bleibt bei Einheimischen und Touristen beliebt und symbolisiert das lebhafte Kulturleben Kölns." },
+                { text: "Der Ort ist bei Einheimischen und Touristen beliebt: Die Kombination aus kulturellen Veranstaltungen und Spaziergängen entlang des Rheins wird oft als Symbol des „Sommerlebens“ der Stadt am Rhein genutzt." }
             ]
         },
         interestingFacts: {
             title: "Interessante Fakten",
             items: [
-                { text: "Die Museumsammlung umfasst Werke aus über 700 Jahren Kunstgeschichte – vom Mittelalter bis zum Jugendstil." },
-                { text: "Der Sammlungsgründer Ferdinand Franz Wallraf sammelte lange Kunst aus Kirchen, Häusern und Privatbesitz, um sie für zukünftige Generationen zu bewahren." },
-                { text: "Die im Museumstitel enthaltene Fondation Corboud repräsentiert eine bedeutende Sammlung von Impressionisten und Postimpressionisten, viele Werke wurden im Rahmen von Ausstellungen weltweit gezeigt." },
-                { text: "Es gibt eine virtuelle 360°-Tour durch das Museum, die es ermöglicht, die Sammlung online zu erkunden." }
+                { bold: "Alter und Geschichte: ", text: "Die Fläche besteht seit fast 100 Jahren – gegründet 1928 und den Zweiten Weltkrieg überstanden, wobei die kulturelle Funktion fast ein Jahrhundert lang erhalten blieb." },
+                { bold: "Die ersten „tanzenden Brunnen“: ", text: "Der ursprüngliche Brunnen war mit Beleuchtung und Wassereffekten ausgestattet, zu denen Tanzveranstaltungen stattfanden – eines der ersten Projekte dieser Art in Köln." },
+                { bold: "Multifunktionalität: ", text: "Der Komplex vereint offene Flächen, ein Amphitheater, überdachte Bereiche und Grünanlagen, was sowohl Massenkonzerte als auch intimere kulturelle Veranstaltungen ermöglicht." }
             ]
         },
+        construction_period: "1928",
+        architects: "Das architektonische Erscheinungsbild des Tanzbrunnens entwickelte sich in mehreren Phasen: Zunächst wurde der Brunnen mit Tanzfläche vom Architekten Josef Op Gen Orth 1950 geschaffen, und 1957 entwarf der herausragende Membranarchitekt Frei Otto für den Komplex das leichte „Sternwellenzelt“ – ein wellenförmiges Dach mit vom Zentrum ausstrahlenden Strahlen, das zu einer architektonischen Besonderheit des Tanzbrunnens wurde.",
         meta: {
-            title: "Wallraf-Richartz-Museum — Kunst vom Mittelalter bis zum Impressionismus",
-            description: "Das Wallraf-Richartz-Museum in Köln ist das älteste Museum der Stadt mit Sammlungen von Malerei, Skulptur und Grafik vom Mittelalter bis zum frühen 20. Jh., einschließlich des Fonds Fondation Corboud mit Impressionisten.",
-            ogTitle: "Wallraf-Richartz-Museum — Kunst vom Mittelalter bis zum Impressionismus",
-            ogDescription: "Entdecken Sie das Wallraf-Richartz-Museum in Köln: Mittelalterliche und barocke Kunst sowie die Impressionisten-Sammlung Fondation Corboud.",
-            ogImage: "https://our-travels.info/new/foto/Germany/nrw/koln/koln-city/wallraf_richartz_museum/001.jpg"
+            title: "Tanzbrunnen in Köln – Konzerte, Festivals, kulturelle Veranstaltungen",
+            description: "Besuchen Sie den Tanzbrunnen – den historischen „Tanzenden Brunnen“ am Rhein in Köln. Konzerte, Festivals, kulturelle Events und malerische Ausblicke auf den Fluss. Erfahren Sie mehr über Geschichte und Architektur des Komplexes.",
+            ogTitle: "Tanzbrunnen in Köln – Konzerte und kulturelle Veranstaltungen am Rhein",
+            ogDescription: "Der Tanzbrunnen ist ein bekannter Kulturkomplex in Köln mit einer Geschichte von fast 100 Jahren. Konzerte, Festivals, Spaziergänge entlang des Rheins und das einzigartige „Sternwellenzelt“.",
+            ogImage: "https://our-travels.info/new/foto/Germany/nrw/koln/koln-city/rheinpark_koln/002.jpg"
+        }
+    },
+    {
+        id: "koln_seilbahn",
+        name: "Kölner Seilbahn",
+        type: ["technical_structure"],
+        path: "koln_seilbahn",
+        countryPath: "germany",
+        regionsPath: "nrw",
+        districtPath: "city",
+        cityPath: "koln",
+        fotoCard: "Germany/nrw/koln/koln-city/rheinpark_koln/003.jpg",
+        location: "Köln, Deutschland",
+        officialSite: [
+            { bold: "Offizielle Website", link: "https://www.koelner-seilbahn.de/index.html" }
+        ],
+        hiddenFromList: true,
+        showMore: true,
+        short_description: "Die Kölner Seilbahn ist eine panoramische Seilbahn über den Rhein, die den Zoo und den Rheinpark in Köln verbindet. Sie bietet einen der besten Ausblicke auf die Stadt, den Kölner Dom und die Rheinufer. Sie ist saisonal in Betrieb und gilt als eine der bekanntesten touristischen Attraktionen der Stadt.",
+        full_description: {
+            title: "Beschreibung und Geschichte",
+            items: [
+                { bold: "Der Kölner Seilbahn ", text: "ist eine Gondel-Seilbahn in der Stadt Köln, die die Rheinufer im Bereich des Zoos und des Rheinparks verbindet (südliches/rechtes Ufer mit nördlichem/linkem). " },
+                { text: "&nbsp;&nbsp;&nbsp; ▪ Streckenlänge: etwa 935 m. " },
+                { text: "&nbsp;&nbsp;&nbsp; ▪ Höhe: rund 50 m über dem Boden an der höchsten Stelle. " },
+                { text: "&nbsp;&nbsp;&nbsp; ▪ 44–50 Kabinen (vier Sitzplätze), die in regelmäßigen Abständen verkehren (etwa alle ~18 Sekunden). " },
+                { text: "&nbsp;&nbsp;&nbsp; ▪ Fahrgeschwindigkeit: etwa 10 km/h (ruhige Panoramafahrt). " },
+                { text: "&nbsp;&nbsp;&nbsp; ▪ Förderleistung: bis zu ca. 1600–2000 Personen pro Stunde. " },
+                { text: "Diese Streckenführung macht sie nicht nur zu einem Verkehrsmittel, sondern zu einer echten Panoramafahrt über den Rhein. " },
+                { bold: "Geschichte. ", text: "Eröffnet am 26. April 1957 anlässlich der Bundesgartenschau. Sie war die erste Seilbahn in Europa, die einen Fluss überquerte. " },
+                { text: "1963 wurde sie aufgrund des Baus der Zoobrücke geschlossen und umgebaut, wobei die Strecke leicht verändert wurde. Seitdem ist sie jedes Jahr im Sommer in Betrieb und befördert rund 500.000 Fahrgäste pro Jahr. " },
+                { text: "Seit 1998 wird der Betrieb von einem Tochterunternehmen des städtischen Verkehrsunternehmens (Kölner Verkehrs-Betriebe) durchgeführt. " },
+                { bold: "Sehenswertes: ", text: "Während der Fahrt eröffnen sich Ausblicke auf die Silhouette des Kölner Doms (Kölner Dom) und die historische Altstadt, den Rhein, die Stadtlandschaft, die Grünflächen des Rheinparks sowie Bereiche des Zoos, des Botanischen Gartens und der Claudius Therme unter der Trasse. Sie gilt als einer der besten Orte für Fotos bei Sonnenuntergang oder in den Abendstunden (Nachtfahrten zu besonderen Anlässen). " }
+            ]
+        },
+        tickets_and_entry: {
+            title: "Praktische Informationen",
+            items: [
+                { bold: "Saison: ", text: "in der Regel von April bis Oktober täglich." },
+                { bold: "Öffnungszeiten: ", text: "meist von 10:00 bis 18:00 Uhr (letzte Fahrt gegen 17:45–18:00 Uhr)." },
+                { bold: "Tickets: ", text: "Erwachsene: etwa 4,80 €–7,00 € für ein Hin- und Rückfahrticket, Kinder (meist bis ca. 12 Jahre) günstiger. Preise können variieren, Ermäßigungen mit KölnCard oder anderen Karten sind möglich." }
+            ]
+        },
+        interestingFacts: {
+            title: "Interessante Fakten",
+            items: [
+                { text: "Es ist sogar möglich, sich während der Überfahrt in einer speziellen Hochzeitskabine offiziell trauen zu lassen." },
+                { text: "Sie gilt als eine der sichersten Seilbahnkonstruktionen dieser Art in Europa (Millionen Fahrten ohne schwerwiegende Zwischenfälle)." },
+                { text: "Es handelt sich nicht um eine reguläre städtische Verkehrslinie, sondern um eine Erlebnis- und Ausflugsattraktion für Touristen und Einheimische." }
+            ]
+        },
+        construction_period: "26. April 1957",
+        meta: {
+            title: "Kölner Seilbahn – Seilbahn über den Rhein in Köln",
+            description: "Die Cologne Cable Car ist eine panoramische Seilbahn über den Rhein in Köln. Geschichte, Lage, Ausblicke auf den Kölner Dom, den Rheinpark und nützliche Informationen für Besucher.",
+            ogTitle: "Cologne Cable Car – Panoramablick auf Köln aus der Höhe",
+            ogDescription: "Die Cologne Cable Car verbindet die Rheinufer und bietet einen der schönsten Panoramablicke auf Köln, den Kölner Dom und den Rheinpark. Eine beliebte Sehenswürdigkeit und ein Wahrzeichen der Stadt.",
+            ogImage: "https://our-travels.info/new/foto/Germany/nrw/koln/koln-city/rheinpark_koln/003.jpg"
+        }
+    },
+    {
+        id: "divitia_koln",
+        name: "Ruinen des römischen Forts Divitia in Köln",
+        type: ["historical_building"],
+        path: "divitia_koln",
+        countryPath: "germany",
+        regionsPath: "nrw",
+        districtPath: "city",
+        cityPath: "koln",
+        fotoCard: "Germany/nrw/koln/koln-city/rheinpark_koln/004.jpg",
+        location: "Köln, Deutschland",
+        hiddenFromList: true,
+        showMore: true,
+        short_description: "Die Ruinen des römischen Forts Divitia sind Überreste einer spätantiken Befestigung aus dem 4. Jahrhundert n. Chr. am rechten Rheinufer in Köln. Erhalten sind Teile des Turms, römische Mauerreste und Fundamentreste. Die Anlage ist frei zugänglich im Fußgängerbereich des Rheinparks.",
+        full_description: {
+            title: "Beschreibung und Geschichte",
+            items: [
+                { bold: "Ruinen des römischen Forts Divitia", text: "– dies sind die Überreste einer spätantiken Befestigung aus dem 4. Jahrhundert n. Chr. am rechten Rheinufer. Heute sind Fragmente des runden Wachturms, Mauerreste und Fundamentreste sichtbar. Besonders ist, dass es sich um originale archäologische Überreste handelt, nicht um eine Rekonstruktion. Das Fort ist in den modernen Fußgängerbereich des Rheinparks integriert, sodass Touristen und Besucher es frei besichtigen können." },
+                { bold: "Geschichte. ", text: "Das Fort wurde etwa 310–315 n. Chr. auf Befehl von Kaiser Konstantin dem Großen errichtet. Es hatte eine doppelte Funktion: Es schützte das rechte Rheinufer und kontrollierte die Flussüberquerung, um die Sicherheit der antiken Stadt Colonia Claudia Ara Agrippinensium (das alte Köln) zu gewährleisten." },
+                { text: "Divitia war Teil des Befestigungssystems am Rhein, das strategische Bedeutung für die Verteidigung der nördlichen Grenzen des Römischen Reiches hatte. Das Fort war Teil einer Beobachtungslinie und unterhielt Verbindung zu anderen römischen Militäranlagen, um schnell auf Bedrohungen durch germanische Stämme reagieren zu können." }
+            ]
+        },
+        tickets_and_entry: {
+            title: "Praktische Informationen",
+            items: [
+                { bold: "Lage:", text: "westliche Grenze des Rheinparks, in der Nähe des Rheinuferwegs, unweit der Hohenzollernbrücke." },
+                { bold: "Zugang:", text: "freie Besichtigung, Fußgängerbereich." },
+                { bold: "Empfehlungen:", text: "gut kombinierbar mit einem Spaziergang am Rhein oder dem Besuch anderer Objekte im Rheinpark." },
+                { bold: "Ausstattung:", text: "Informationstafeln auf Deutsch und Englisch." }
+            ]
+        },
+        sub_objects: {
+            title: "Heutiger Erhaltungszustand",
+            items: [
+                { bold: "Fragmente des runden Wachturms: ", text: "teilweise erhalten, vermutlich als Aussichtspunkt und für Verteidigungszwecke genutzt." },
+                { bold: "Römische Mauerreste:", text: "Fragmentierte Mauern zeigen die römische Mauertechnik und die Verwendung von lokalem Stein." },
+                { bold: "Fundamentreste: ", text: "erlauben die Vorstellung von Größe und Konfiguration der Befestigung." }
+            ]
+        },
+        interestingFacts: {
+            title: "Interessante Fakten",
+            items: [
+                { text: "Divitia ist eines der wenigen erhaltenen römischen Befestigungsobjekte am rechten Rheinufer." },
+                { text: "Das Fort existierte gleichzeitig mit dem Bau der römischen Rheinbrücke, die strategische Bedeutung für Handel und militärische Zwecke hatte." },
+                { text: "Archäologische Ausgrabungen zeigten, dass die Mauern verstärkt wurden, um vor möglichen Überschwemmungen des Flusses zu schützen." },
+                { text: "Im 19. und 20. Jahrhundert wurden Teile des Forts als „Bausteine“ für andere städtische Gebäude verwendet, aber ein Teil konnte erhalten bleiben." }
+            ]
+        },
+        construction_period: " ca. 310–315 n. Chr.",
+        founder: " Kaiser Konstantin der Große.",
+        meta: {
+            title: "Ruinen des römischen Forts Divitia in Köln – Überreste einer römischen Befestigung",
+            description: "Überreste des römischen Forts Divitia aus dem 4. Jahrhundert n. Chr. am rechten Rheinufer in Köln. Erhalten sind Turm, Mauerreste und Fundamentreste. Frei zugänglich im Rheinpark.",
+            ogTitle: "Ruinen des römischen Forts Divitia in Köln – Überreste einer römischen Befestigung",
+            ogDescription: "Entdecken Sie die Überreste des römischen Forts Divitia im Rheinpark, Köln. Originale Mauern, Turm und Fundamentreste stehen für Spaziergänge und Besichtigungen offen.",
+            ogImage: "https://our-travels.info/new/foto/Germany/nrw/koln/koln-city/rheinpark_koln/004.jpg"
         }
     },
 
@@ -700,9 +1099,9 @@ const datas = [
                 { bold: "Preise für 2025:", text: " Augustusburg — 11 € für Erwachsene, kostenlos für Besucher bis 25 Jahre; Falkenlust — 8 €; Kombiticket — 17 €." }
             ]
         },
-        construction_period: "1723–Mitte des 18. Jahrhunderts",
+        construction_period: "1723 – Mitte des 18. Jahrhunderts",
         architects: ["Johann Conrad Schlaun", "Balthasar Neumann", "Dominique Girard", "François de Cuvilliés"],
-        founder: "Clemens August von Wittelsbach",
+        founder: " Clemens August von Wittelsbach",
         short_description: "Die Brühler Schlösser sind ein herausragendes Ensemble des Barock und Rokoko in der Stadt Brühl bei Köln. Sie wurden im Auftrag des Kurfürsten Clemens August errichtet und 1984 in die UNESCO-Welterbeliste aufgenommen. Neben den architektonischen Meisterwerken ist das Ensemble berühmt für seinen französischen Garten mit prächtigem Parterre, Spiegelbecken, Brunnen sowie ausgedehnten Landschaftsgärten im englischen Stil.",
         full_description: {
             title: 'Beschreibung und Geschichte',
@@ -751,9 +1150,6 @@ const datas = [
         officialSite: [
             { bold: 'Offizielle Webseite des Max-Ernst-Museums', link: 'https://maxernstmuseum.lvr.de/en/startseite_1.html' }
         ],
-        unesco_status: {
-            included: false
-        },
         tickets_and_entry: {
             title: "Tickets und Eintritt",
             items: [
@@ -803,9 +1199,6 @@ const datas = [
         officialSite: [
             { bold: 'Offizielle Website von Phantasialand', link: 'https://www.phantasialand.de/en/' }
         ],
-        unesco_status: {
-            included: false
-        },
         tickets_and_entry: {
             title: "Tickets und Eintritt",
             items: [
@@ -865,9 +1258,6 @@ const datas = [
         officialSite: [
             { bold: 'Offizielle Website von KERAMION', link: 'https://keramion.de/' }
         ],
-        unesco_status: {
-            included: false
-        },
         tickets_and_entry: {
             title: "Eintrittspreise (gültig für 2025)",
             items: [
@@ -920,9 +1310,6 @@ const datas = [
         officialSite: [
             { bold: "Offizielle Website Burg Bachem", link: "https://www.burg-bachem.de/" }
         ],
-        unesco_status: {
-            included: false
-        },
         tickets_and_entry: {
             title: "Eintritt und Zugang",
             items: [
@@ -970,9 +1357,6 @@ const datas = [
         fotoCard: "Germany/nrw/koln/Rhein-Erft-Kreis/frechen/johann_schmitz_platz_frechen/001.jpg",
         location: "Frechen, Deutschland",
         address: [{ bold: "Adresse:", text: " Johann-Schmitz-Platz, 50226 Frechen, Deutschland" }],
-        unesco_status: {
-            included: false
-        },
         subObjects: ["altes_rathaus_frechen", "rathausbrunnen_frechen", "klüttenbrunnen_frechen"],
         short_description_subObjects: {
             text: "Auf dem Johann-Schmitz-Platz befinden sich folgende Sehenswürdigkeiten:",
@@ -1024,12 +1408,9 @@ const datas = [
         districtPath: "koln",
         cityPath: "frechen",
         countryPath: "germany",
-        fotoCard: "Germany/nrw/koln/Rhein-Erft-Kreis/frechen/johann_schmitz_platz_frechen/001.jpg",
+        fotoCard: "Germany/nrw/koln/Rhein-Erft-Kreis/frechen/johann_schmitz_platz_frechen/008.jpg",
         location: "Frechen, Deutschland",
         address: [{ bold: "Adresse:", text: " Johann-Schmitz-Platz, 50226 Frechen, Deutschland" }],
-        unesco_status: {
-            included: false
-        },
         tickets_and_entry: {
             title: "Zugang",
             items: [
@@ -1063,7 +1444,7 @@ const datas = [
             description: "Das Alte Rathaus Frechen – ein historisches Verwaltungsgebäude mit Turm auf dem Johann-Schmitz-Platz im Zentrum der Stadt, Nordrhein-Westfalen.",
             ogTitle: "Altes Rathaus Frechen – Frechen, Deutschland",
             ogDescription: "Entdecken Sie das Alte Rathaus Frechen mit seinem charakteristischen Turm und der neobarocken Architektur auf dem Johann-Schmitz-Platz.",
-            ogImage: "https://our-travels.info/new/foto/Germany/nrw/koln/Rhein-Erft-Kreis/frechen/altes_rathaus_frechen/001.jpg"
+            ogImage: "https://our-travels.info/new/foto/Germany/nrw/koln/Rhein-Erft-Kreis/frechen/johann_schmitz_platz_frechen/008.jpg"
         }
     },
     {
@@ -1089,7 +1470,7 @@ const datas = [
             description: "Auf dem Platz vor dem alten Rathaus befindet sich ein dekorativer Bezirksbrunnen, der 1981 vom Keramikkünstler Wim Mühlendyck geschaffen wurde. Er ist mit Keramikplatten mit Reliefszenen bedeckt, die die Entwicklung des Handwerks und der Keramikindustrie in Frechen zeigen – von traditionellen Handwerkern bis zur Fabrikproduktion, und verschiedene Maskarone (Gesichter) dienen als charakteristische Wasserstrahlen des Brunnens.",
             ogTitle: "Dekorativer Bezirksbrunnen vor dem alten Rathaus von Frechen",
             ogDescription: "Der Brunnen auf dem Platz vor dem alten Rathaus in Frechen, 1981 vom Keramikkünstler Wim Mühlendyck geschaffen, ist mit Keramikplatten mit Reliefszenen des Handwerks und der Keramikindustrie sowie Maskaronen mit Wasserstrahlen gestaltet.",
-            ogImage: "https://our-travels.info/new/Germany/nrw/koln/Rhein-Erft-Kreis/frechen/johann_schmitz_platz_frechen/005.jpg"
+            ogImage: "https://our-travels.info/new/foto/Germany/nrw/koln/Rhein-Erft-Kreis/frechen/johann_schmitz_platz_frechen/005.jpg"
         }
     },
     {
@@ -1449,6 +1830,151 @@ const datas = [
             ogTitle: "Reptilienzoo Drachenfels",
             ogDescription: "Besuchen Sie den Reptile Zoo auf dem Drachenfels – ein Zoo mit seltenen Reptilien, interaktiven Fütterungs‑Vorführungen und Bildungsprogrammen für Kinder und Erwachsene.",
             ogImage: "https://our-travels.info/new/foto/Germany/nrw/koln/Rhein-Sieg-Kreis/konigswinter/drachenfels/005.jpg"
+        }
+    },
+    {
+        id: "heisterbach_konigswinter",
+        name: "Abtei Heisterbach",
+        type: ["historical_building"],
+        path: "heisterbach_konigswinter",
+        countryPath: "germany",
+        regionsPath: "nrw",
+        districtPath: "koln",
+        cityPath: "konigswinter",
+        fotoCard: "Germany/nrw/koln/Rhein-Sieg-Kreis/konigswinter/heisterbach/001.jpg",
+        location: "Königswinter, Deutschland",
+        officialSite: [
+            { bold: "Offizielle Website", link: "https://www.klosterlandschaft-heisterbach.de" }
+        ],
+        subObjects: ["chorruine_heisterbach_konigswinter", "st_peter_heisterbach_konigswinter"],
+        short_description_subObjects: {
+            text: "In der Abtei befinden sich außerdem folgende Sehenswürdigkeiten",
+            items: ["Ruinen des Chors der ehemaligen Klosterkirche", "St.-Peter-Kirche"]
+        },
+        short_description: "Die Abtei Heisterbach ist ein ehemaliges Zisterzienserkloster aus dem 12. Jahrhundert, gelegen im Heisterbachtal unweit von Königswinter. Nach der Säkularisation Anfang des 19. Jahrhunderts wurde das Kloster aufgehoben, und sein Gelände entwickelte sich mit der Zeit zu einem historisch-kulturellen Raum. Heute gilt Heisterbach als eines der bedeutendsten Zeugnisse der mittelalterlichen Klostergeschichte der Region Siebengebirge.",
+        full_description: {
+            title: "Beschreibung und Geschichte",
+            items: [
+                { bold: "Abtei Heisterbach ", text: "– ein historischer Klosterkomplex des Zisterzienserordens, gelegen im malerischen Heisterbachtal bei der Stadt Königswinter. Heute stellen die erhaltenen Gebäude des Komplexes, die Kirche und architektonische Fragmente ein kulturelles und touristisches Ziel dar, das mit einem Park und Spazierbereichen verbunden ist. Dieser Ort ist bei Liebhabern von Geschichte, Architektur und Natur beliebt." },
+                { bold: "Geschichte. ", text: "Die Abtei Heisterbach (deutsch: Kloster Heisterbach) wurde Ende des 12. Jahrhunderts als Zisterzienserkloster auf Initiative des Kölner Erzbischofs Philipp I. von Heinsberg gegründet. 1189 kamen 12 Mönche aus der Abtei Himmerod in der Eifel unter der Leitung von Abt Hermann hierher, die zunächst im ehemaligen Augustinerkloster auf dem Petersberg lebten." },
+                { text: "1202 verlegte die Gemeinschaft ihre Niederlassung hinunter ins Heisterbachtal, wo ein neuer Komplex gegründet wurde – so entstand die eigentliche Abtei Heisterbach." },
+                { text: "Eine Hauptrolle beim Bau der Klosterkirche spielten die ersten Äbte: Herrer (1195–1208) begann den Bau, Heinrich (1208–1244) vollendete ihn und weihte die Basilika 1237. Diese Kirche wurde zu einer der größten Kathedralen am Rhein im Mittelalter und übertraf in der Größe alle Kirchen der Region, außer dem Kölner Dom. In der Architektur wurden Elemente der Romanik und Gotik kombiniert, was die Übergangszeit im Bauwesen des 13. Jahrhunderts widerspiegelt." },
+                { text: "Die Abtei entwickelte sich schnell zu einem wichtigen Zentrum des geistlichen und wirtschaftlichen Lebens der Region: Die Mönche betrieben Landwirtschaft, verwalteten umfangreiche Ländereien, beteiligten sich an religiösen und gesellschaftlichen Angelegenheiten und hatten Einfluss auf die umliegenden Siedlungen." },
+                { text: "Fast 600 Jahre lang blühte das Kloster, doch sein Schicksal änderte sich Anfang des 19. Jahrhunderts. Im Zuge der Säkularisation 1803 – einer Welle von Reformen, initiiert in der Zeit der Napoleonischen Kriege und der Veränderung der politischen Struktur Deutschlands – wurde die Abtei offiziell aufgelöst. Viele Klostergebäude und Ländereien wurden verkauft, die Kirche wurde als Baumaterial verwendet (z. B. Steine für große Infrastrukturprojekte wie den Nordkanal). Bald blieben von der prächtigen Basilika nur die Apsis und die Chorruinen erhalten, die wir heute sehen." },
+                { bold: "Legende:", text: "Es gibt eine lokale Legende, dass eine der größten Kirchenglocken unter dem Fundament des Chors vergraben wurde, um sie während der Kriege nicht zu konfiszieren – und dass man nachts ihr „undeutliches“ Läuten hören kann… wobei dies eher eine romantische Geschichte als ein historischer Fakt ist." }
+            ]
+        },
+        tickets_and_entry: {
+            title: "Praktische Informationen",
+            items: [
+                { bold: "Adresse:", text: "Heisterbacher Tal, 53639 Königswinter, Deutschland" },
+                { bold: "Besuchszeit:", text: "Ganzjährig, am besten bei klarem Wetter" },
+                { bold: "Eintritt:", text: "Der Zugang zum Gelände ist frei, einzelne Veranstaltungen können kostenpflichtig sein" }
+            ]
+        },
+        interestingFacts: {
+            title: "Interessante Fakten",
+            items: [
+                { text: "Im 19. Jahrhundert wurde das Kloster nach der Säkularisation teilweise zerstört, doch seine Ruinen blieben erhalten und wurden zu einer historischen Sehenswürdigkeit." },
+                { text: "Das Gelände der Abtei ist von Wäldern und Hügeln des Siebengebirges umgeben – ein idealer Ort für Spaziergänge und Picknicks." },
+                { text: "In den ehemaligen Klostergebäuden befinden sich heute Cafés und Ausstellungsräume." },
+                { text: "In der Kirche finden gelegentlich Orgelkonzerte und kulturelle Veranstaltungen statt." }
+            ]
+        },
+        construction_period: "1189",
+        founder: " Die Zisterziensermönchsgemeinschaft aus der Abtei Himmerod",
+        meta: {
+            title: "Abtei Heisterbach – Geschichte und Ruinen des Klosters bei Königswinter",
+            description: "Die Abtei Heisterbach – ehemaliges Zisterzienserkloster aus dem 12. Jahrhundert im Heisterbachtal nahe Königswinter. Geschichte, Bedeutung und Besuch des historischen Komplexes.",
+            ogTitle: "Abtei Heisterbach – mittelalterliches Kloster im Heisterbachtal",
+            ogDescription: "Die historische Abtei Heisterbach – eines der atmosphärischsten Zeugnisse mittelalterlicher Klosterarchitektur in der Region Siebengebirge, unweit von Königswinter.",
+            ogImage: "https://our-travels.info/new/foto/Germany/nrw/koln/Rhein-Sieg-Kreis/konigswinter/heisterbach/001.jpg"
+        }
+    },
+    {
+        id: "chorruine_heisterbach_konigswinter",
+        name: "Ruinen des Chors der ehemaligen Klosterkirche",
+        type: ["historical_building"],
+        path: "chorruine_heisterbach_konigswinter",
+        countryPath: "germany",
+        regionsPath: "nrw",
+        districtPath: "koln",
+        cityPath: "konigswinter",
+        fotoCard: "Germany/nrw/koln/Rhein-Sieg-Kreis/konigswinter/heisterbach/001.jpg",
+        location: "Königswinter, Deutschland",
+        officialSite: [
+            { bold: "Offizielle Website", link: "https://www.klosterlandschaft-heisterbach.de" }
+        ],
+        hiddenFromList: true,
+        showMore: true,
+        short_description: "Die Ruinen des Chors der ehemaligen Klosterkirche sind der beeindruckendste und bekannteste Teil der Abtei Heisterbach. Sie sind das einzige Fragment der riesigen gotischen Basilika, das nach der Zerstörung des Klosters im 19. Jahrhundert fast vollständig erhalten geblieben ist.",
+        full_description: {
+            title: "Beschreibung und Geschichte",
+            items: [
+                { bold: "Ruinen des Chors der ehemaligen Klosterkirche", text: " – der beeindruckendste und bekannteste Teil der Abtei Heisterbach. Sie sind das einzige Fragment der riesigen gotischen Basilika, das nach der Zerstörung des Klosters im 19. Jahrhundert fast vollständig erhalten geblieben ist." },
+                { text: "Der Chor wurde Anfang des 13. Jahrhunderts gebaut und 1237 geweiht. Er stellt ein hohes gotisches Bauvolumen mit massiven spitzbogigen Arkaden und schlanken Säulen dar, typisch für die Architektur des Zisterzienserordens, der eine strenge, asketische Ästhetik ohne überflüssige Dekoration verfolgte." },
+                { text: "Heute sind die Ruinen des Chors unter freiem Himmel zugänglich und erzeugen einen starken visuellen und emotionalen Eindruck: Die hohe steinerne Apsis unterstreicht das Ausmaß der verlorenen Kathedrale, die spitzbogigen Arkaden bilden eine ausdrucksstarke Perspektive. Der Raum wird häufig für Fotografie, Konzerte und kulturelle Veranstaltungen genutzt." },
+                { text: "Die Ruinen des Chors gelten als eine der schönsten Klosterruinen in Nordrhein-Westfalen und als Symbol des gesamten Komplexes „Klosterlandschaft Heisterbach“." }
+            ]
+        },
+        tickets_and_entry: {
+            title: "Praktische Informationen",
+            items: [
+                { bold: "Adresse:", text: "Heisterbacher Tal, 53639 Königswinter, Deutschland" },
+                { bold: "Beste Besuchszeit", text: "– morgens oder gegen Abend, wenn das Licht durch die Arkaden fällt und die Struktur des Steins betont." }
+            ]
+        },
+        construction_period: "Anfang des 13. Jahrhunderts",
+        meta: {
+            title: "Ruinen des Chors der Abtei Heisterbach – historische Sehenswürdigkeit",
+            description: "Entdecken Sie die beeindruckenden Ruinen des Chors der Abtei Heisterbach: Geschichte, Architektur und einzigartige Überreste des mittelalterlichen Klosters im Siebengebirge.",
+            ogTitle: "Ruinen des Chors der Abtei Heisterbach",
+            ogDescription: "Besuchen Sie die Ruinen des Chors der Abtei Heisterbach und tauchen Sie ein in die Atmosphäre der mittelalterlichen Klostergeschichte im Herzen des Siebengebirges.",
+            ogImage: "https://our-travels.info/new/foto/Germany/nrw/koln/Rhein-Sieg-Kreis/konigswinter/heisterbach/001.jpg"
+        }
+    },
+    {
+        id: "st_peter_heisterbach_konigswinter",
+        name: "Kirche St. Peter in Heisterbach",
+        type: ["cathedral"],
+        path: "st_peter_heisterbach_konigswinter",
+        countryPath: "germany",
+        regionsPath: "nrw",
+        districtPath: "koln",
+        cityPath: "konigswinter",
+        fotoCard: "Germany/nrw/koln/Rhein-Sieg-Kreis/konigswinter/heisterbach/005.jpg",
+        location: "Königswinter, Deutschland",
+        hiddenFromList: true,
+        showMore: true,
+        short_description: "Die Kirche St. Peter in Heisterbach ist eine aktive katholische Kirche, die nach der Säkularisation des Klosters auf dem Gelände der ehemaligen Abtei erbaut wurde. Sie zeichnet sich durch eine zurückhaltende Architektur und eine ruhige Atmosphäre aus und bewahrt das geistige Erbe der Zisterzienser. Die Kirche ist für Gottesdienste, Besucher und kulturelle Veranstaltungen geöffnet und ergänzt die historischen Ruinen des Komplexes.",
+        full_description: {
+            title: "Beschreibung und Geschichte",
+            items: [
+                { bold: "Die Kirche St. Peter in Heisterbach", text: " – ist eine aktive katholische Kirche auf dem Gelände der ehemaligen Abtei Heisterbach unweit von Königswinter. Heute bildet sie das geistige und architektonische Zentrum der Anlage Klosterlandschaft Heisterbach." },
+                { bold: "Historischer Kontext. ", text: "Die neue Klosterkirche wurde in den Jahren 1953–1956 nach der Säkularisation der Abtei an der Stelle verlorener Klostergebäude errichtet. Trotz der Zerstörung eines großen Teils der Anlage zu Beginn des 19. Jahrhunderts blieb das geistliche Leben an diesem Ort erhalten und erhielt eine neue architektonische Form." },
+                { text: "Die Kirche St. Peter symbolisiert die Kontinuität des geistigen Erbes der Zisterzienser und verbindet den modernen Bau mit der jahrhundertealten Geschichte des ehemaligen Klosters Heisterbach." },
+                { bold: "Architektur und Innenraum. ", text: "Das Gebäude zeichnet sich durch schlichte Formen und eine intime Atmosphäre aus, was den Traditionen des zisterziensischen geistigen Erbes der Region entspricht. Im Gegensatz zu den monumentalen Ruinen des Chores der mittelalterlichen Klosterkirche besitzt die Kirche St. Peter ein zurückhaltendes und harmonisches Erscheinungsbild." },
+                { text: "Von besonderem historischen Wert ist das Tympanon von 1237 mit der Darstellung des Osterlammes Gottes, das aus der zerstörten Abteikirche übernommen und als Sturz des Eingangsportals verwendet wurde. Am Eingang befinden sich außerdem zwei Grabplatten ehemaliger Äbte von Heisterbach." },
+                { text: "Der Innenraum ist hell und schlicht mit minimaler Dekoration. Besonders auffällig sind die beeindruckenden Glasfenster des deutschen Kirchenkunstlers Ernst Johann Jansen-Winkeln 1904-1992 sowie der zentrale Altar und die Orgel, die für Gottesdienste und Konzerte genutzt wird." },
+                { bold: "Heutige Nutzung. ", text: "Heute wird die Kirche für regelmäßige katholische Gottesdienste genutzt, ist tagsüber für Besucher geöffnet und dient als Ort für geistliche und musikalische Veranstaltungen. Die Heilige Messe wird werktags zu unterschiedlichen Zeiten sowie sonntags und an Feiertagen um 9:45 gefeiert." },
+                { text: "Die Kirche St. Peter in Heisterbach ist ein lebendiges geistliches Zentrum der Anlage und ergänzt die historischen Ruinen der Abtei zu einem ganzheitlichen Eindruck dieses einzigartigen Ortes." }
+            ]
+        },
+        interestingFacts: {
+            title: "Interessante Fakten",
+            items: [
+                { text: "Trotz des Verlusts der Klostergebäude bewahrt die Kirche Elemente der alten Anlage wie Steinportale, Teile von Malereien und dekorative Details." },
+                { text: "Innenraumgestaltung und Architektur unterstreichen die Kontinuität der geistlichen Tradition der Zisterzienser in der Region." }
+            ]
+        },
+        construction_period: "1953-1956 Bau der neuen Klosterkirche",
+        founder: " Katholische Kirchengemeinde Heisterbach",
+        meta: {
+            title: "Kirche St. Peter in Heisterbach – aktive Kirche der Abtei Heisterbach",
+            description: "Die Kirche St. Peter in Heisterbach ist eine katholische Kirche von 1953–1956 auf dem Gelände der ehemaligen Abtei. Geschichte, Architektur, Glasfenster und Besuch in Heisterbach, Königswinter.",
+            ogTitle: "Kirche St. Peter in Heisterbach",
+            ogDescription: "Aktive katholische Kirche auf dem Gelände der ehemaligen Abtei Heisterbach. Erbaut 1953-1956 mit einem einzigartigen Tympanon aus dem 13. Jahrhundert und beeindruckenden Glasfenstern.",
+            ogImage: "https://our-travels.info/new/foto/Germany/nrw/koln/Rhein-Sieg-Kreis/konigswinter/heisterbach/005.jpg"
         }
     },
 

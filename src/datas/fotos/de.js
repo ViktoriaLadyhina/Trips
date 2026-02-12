@@ -48,6 +48,9 @@ export const Fotos = {
         { path: "Germany/nrw/koln/koln-city/koln-cathedral/004.jpg", title: { ru: "Кёльнский собор - 2025", ua: "Кельнський собор - 2025", de: "Kölner Dom - 2025" } },
         { path: "Germany/nrw/koln/koln-city/koln-cathedral/005.jpg", title: { ru: "Кёльнский собор - 2025", ua: "Кельнський собор - 2025", de: "Kölner Dom - 2025" } },
       ],
+      guerzenich_koln: [
+        { path: "Germany/nrw/koln/koln-city/guerzenich_koln/001.jpg", title: { ru: "Гюрцених (фото взято с интернета)", ua: "Гюрценіх (фото взято з Інтернету)", de: "Gürzenich (Foto aus dem Internet)" } },
+      ],
       'roemisch-germanisches-museum': [
         { path: "Germany/nrw/koln/koln-city/roemisch-germanisches-museum/001.jpg", title: { ru: "Римско-германский музей - 2025", ua: "Римсько-германський музей - 2025", de: "Römisch-Germanisches Museum - 2025" } }
       ],
@@ -80,11 +83,38 @@ export const Fotos = {
         { path: "Germany/nrw/koln/koln-city/koln_bridges/002.jpeg", title: { ru: "10. Мост Роденкирхенер (фото взято с интернета)", ua: "10. Міст Роденкірхенер (фото взято з Інтернету)", de: "10. Rodenkirchener Brücke (Foto aus dem Internet)" } }
       ],
       flora_garten_koln: [
-       { path: "Germany/nrw/koln/koln-city/flora_garten_koln/001.jpg", title: { ru: "Ботанический сад Флора, 2025", ua: "Ботанічний сад Флора, 2025", de: "4. Mülheimer Brücke (Foto aus dem Internet)" } }, 
-       { path: "Germany/nrw/koln/koln-city/flora_garten_koln/002.jpg", title: { ru: "Ботанический сад Флора, 2025", ua: "Ботанічний сад Флора, 2025", de: "4. Mülheimer Brücke (Foto aus dem Internet)" } }, 
+        { path: "Germany/nrw/koln/koln-city/flora_garten_koln/001.jpg", title: { ru: "Ботанический сад Флора, 2025", ua: "Ботанічний сад Флора, 2025", de: "Botanischer Garten Flora, 2025" } },
+        { path: "Germany/nrw/koln/koln-city/flora_garten_koln/002.jpg", title: { ru: "Ботанический сад Флора, 2025", ua: "Ботанічний сад Флора, 2025", de: "Botanischer Garten Flora, 2025" } },
+      ],
+      rheinpark_koln: [
+        { path: "Germany/nrw/koln/koln-city/rheinpark_koln/001.jpg", title: { ru: "Рейнский парк (фото взято с википедии)", ua: "Рейнський парк (фото взято з Вікіпедії)", de: "Rheinpark (Foto von Wikipedia entnommen)" } },
+        { path: "Germany/nrw/koln/koln-city/rheinpark_koln/002.jpg", title: { ru: "Танцующий фонтан (фото взято с википедии)", ua: "Танцюючий фонтан (фото взято з Вікіпедії)", de: "Tanzbrunnen (Foto von Wikipedia entnommen)" } },
+        { path: "Germany/nrw/koln/koln-city/rheinpark_koln/003.jpg", title: { ru: "Кёльнская канатная дорога (фото взято с википедии)", ua: "Кельнська канатна дорога (фото взято з Вікіпедії)", de: "Kölner Seilbahn (Foto von Wikipedia entnommen)" } },
+        { path: "Germany/nrw/koln/koln-city/rheinpark_koln/004.jpg", title: { ru: "Руины римского форта Дивития в Кёльне, 2025", ua: "Руїни римського форту Дивітія в Кельні, 2025", de: "Ruinen des römischen Forts Divitia in Köln, 2025" } },
+        { path: "Germany/nrw/koln/koln-city/rheinpark_koln/005.jpg", title: { ru: "Руины римского форта Дивития в Кёльне, 2025", ua: "Руїни римського форту Дивітія в Кельні, 2025", de: "Ruinen des römischen Forts Divitia in Köln, 2025" } },
+        { path: "Germany/nrw/koln/koln-city/rheinpark_koln/006.jpg", title: { ru: "Руины римского форта Дивития в Кёльне, 2025", ua: "Руїни римського форту Дивітія в Кельні, 2025", de: "Ruinen des römischen Forts Divitia in Köln, 2025" } },
+        { path: "Germany/nrw/koln/koln-city/rheinpark_koln/007.jpg", title: { ru: "Руины римского форта Дивития в Кёльне, 2025", ua: "Руїни римського форту Дивітія в Кельні, 2025", de: "Ruinen des römischen Forts Divitia in Köln, 2025" } },
+      ],
+      tanzbrunnen: [
+        { path: "Germany/nrw/koln/koln-city/rheinpark_koln/002.jpg", title: { ru: "Танцующий фонтан (фото взято с википедии)", ua: "Танцюючий фонтан (фото взято з Вікіпедії)", de: "Tanzbrunnen (Foto von Wikipedia entnommen)" } },
+      ],
+      koln_seilbahn: [
+        { path: "Germany/nrw/koln/koln-city/rheinpark_koln/003.jpg", title: { ru: "Кёльнская канатная дорога (фото взято с википедии)", ua: "Кельнська канатна дорога (фото взято з Вікіпедії)", de: "Kölner Seilbahn (Foto von Wikipedia entnommen)" } }
+      ],
+      divitia_koln: [
+        { path: "Germany/nrw/koln/koln-city/rheinpark_koln/004.jpg", title: { ru: "Руины римского форта Дивития в Кёльне, 2025", ua: "Руїни римського форту Дивітія в Кельні, 2025", de: "Ruinen des römischen Forts Divitia in Köln, 2025" } },
+        { path: "Germany/nrw/koln/koln-city/rheinpark_koln/005.jpg", title: { ru: "Руины римского форта Дивития в Кёльне, 2025", ua: "Руїни римського форту Дивітія в Кельні, 2025", de: "Ruinen des römischen Forts Divitia in Köln, 2025" } },
+        { path: "Germany/nrw/koln/koln-city/rheinpark_koln/006.jpg", title: { ru: "Руины римского форта Дивития в Кёльне, 2025", ua: "Руїни римського форту Дивітія в Кельні, 2025", de: "Ruinen des römischen Forts Divitia in Köln, 2025" } },
+        { path: "Germany/nrw/koln/koln-city/rheinpark_koln/007.jpg", title: { ru: "Руины римского форта Дивития в Кёльне, 2025", ua: "Руїни римського форту Дивітія в Кельні, 2025", de: "Ruinen des römischen Forts Divitia in Köln, 2025" } },
+      ],
+      museum_schnuetgen_koln: [
+        { path: "Germany/nrw/koln/koln-city/schnuetgen/001.jpg", title: { ru: "Музей Шнютгена (фото взято с интернета)", ua: "Музей Шнютгена (фото взято з Інтернету)", de: "Museum Schnütgen (Foto aus dem Internet)" } },
       ]
     },
     bruhl: {
+      gallery: [
+        { path: "Germany/nrw/koln/Rhein-Erft-Kreis/bruhl/bruhel_palaces/013.jpg", title: { ru: "Дворцы Брюля: Аугустусбург  - 2022", ua: "Палаци Брюля: Аугустусбург - 2022", de: "Brühler Schlösser: Augustusburg - 2022" } },
+      ],
       'phantasialand': [
         { path: "Germany/nrw/koln/Rhein-Erft-Kreis/bruhl/phantasialand/001.jpg", title: { ru: "Парк атракционов «Фантазия Ленд» - 2006", ua: "Парк атракціонів «Фантазія Ленд» - 2006", de: "Freizeitpark «Fantasia Land» - 2006" } },
         { path: "Germany/nrw/koln/Rhein-Erft-Kreis/bruhl/phantasialand/002.jpg", title: { ru: "Скала-череп - 2006", ua: "Скеля-череп - 2006", de: "Schädel-Felsen - 2006" } },
@@ -132,6 +162,9 @@ export const Fotos = {
       ]
     },
     frechen: {
+      gallery: [
+        { path: "Germany/nrw/koln/Rhein-Erft-Kreis/frechen/johann_schmitz_platz_frechen/008.jpg", title: { ru: "Старая ратуша Фрехена, 2026", ua: "Стара ратуша Фрехена, 2026", de: "Altes Rathaus Frechen, 2026" } },
+      ],
       'keramion': [
         { path: "Germany/nrw/koln/Rhein-Erft-Kreis/frechen/keramion/frechen_keramion.jpg", title: { ru: "KERAMION – Центр современной и исторической керамики (фото взято с интернета)", ua: "KERAMION – Центр сучасної та історичної кераміки (фото взято з Інтернету)", de: "KERAMION – Zentrum für zeitgenössische und historische Keramik (Foto aus dem Internet)" } },
       ],
@@ -150,8 +183,10 @@ export const Fotos = {
       johann_schmitz_platz_frechen: [
         { path: "Germany/nrw/koln/Rhein-Erft-Kreis/frechen/johann_schmitz_platz_frechen/006.jpg", title: { ru: "Площадь Йоханна Шмитца («площадь Ратуши»), 2026", ua: "Площа Йоганна Шмітца («площа Ратуші»), 2026", de: "Johann-Schmitz-Platz («Rathausplatz»), 2026" } },
         { path: "Germany/nrw/koln/Rhein-Erft-Kreis/frechen/johann_schmitz_platz_frechen/001.jpg", title: { ru: "Площадь Йоханна Шмитца («площадь Ратуши»), 2022", ua: "Площа Йоганна Шмітца («площа Ратуші»), 2022", de: "Johann-Schmitz-Platz («Rathausplatz»), 2022" } },
-        { path: "Germany/nrw/koln/Rhein-Erft-Kreis/frechen/johann_schmitz_platz_frechen/002.jpg", title: { ru: "Площадь Йоханна Шмитца («площадь Ратуши»), 2022", ua: "Площа Йоганна Шмітца («площа Ратуші»), 2022", de: "Johann-Schmitz-Platz («Rathausplatz»), 2022" } },
-        { path: "Germany/nrw/koln/Rhein-Erft-Kreis/frechen/johann_schmitz_platz_frechen/003.jpg", title: { ru: "Площадь Йоханна Шмитца («площадь Ратуши»), 2022", ua: "Площа Йоганна Шмітца («площа Ратуші»), 2022", de: "Johann-Schmitz-Platz («Rathausplatz»), 2022" } },
+        { path: "Germany/nrw/koln/Rhein-Erft-Kreis/frechen/johann_schmitz_platz_frechen/002.jpg", title: { ru: "Площадь Йоханна Шмитца («площадь Ратуши»), 2026", ua: "Площа Йоганна Шмітца («площа Ратуші»), 2026", de: "Johann-Schmitz-Platz («Rathausplatz»), 2026" } },
+        { path: "Germany/nrw/koln/Rhein-Erft-Kreis/frechen/johann_schmitz_platz_frechen/003.jpg", title: { ru: "Площадь Йоханна Шмитца («площадь Ратуши»), 2026", ua: "Площа Йоганна Шмітца («площа Ратуші»), 2026", de: "Johann-Schmitz-Platz («Rathausplatz»), 2026" } },
+        { path: "Germany/nrw/koln/Rhein-Erft-Kreis/frechen/johann_schmitz_platz_frechen/010.jpg", title: { ru: "Площадь Йоханна Шмитца («площадь Ратуши»), 2026", ua: "Площа Йоганна Шмітца («площа Ратуші»), 2026", de: "Johann-Schmitz-Platz («Rathausplatz»), 2026" } },
+        { path: "Germany/nrw/koln/Rhein-Erft-Kreis/frechen/johann_schmitz_platz_frechen/011.jpg", title: { ru: "Площадь Йоханна Шмитца («площадь Ратуши»), 2026", ua: "Площа Йоганна Шмітца («площа Ратуші»), 2026", de: "Johann-Schmitz-Platz («Rathausplatz»), 2026" } },
         { path: "Germany/nrw/koln/Rhein-Erft-Kreis/frechen/johann_schmitz_platz_frechen/007.jpg", title: { ru: "Площадь Йоханна Шмитца («площадь Ратуши»), 2026", ua: "Площа Йоганна Шмітца («площа Ратуші»), 2026", de: "Johann-Schmitz-Platz («Rathausplatz»), 2026" } },
         { path: "Germany/nrw/koln/Rhein-Erft-Kreis/frechen/johann_schmitz_platz_frechen/008.jpg", title: { ru: "Старая ратуша Фрехена, 2026", ua: "Стара ратуша Фрехена, 2026", de: "Altes Rathaus Frechen, 2026" } },
         { path: "Germany/nrw/koln/Rhein-Erft-Kreis/frechen/johann_schmitz_platz_frechen/009.jpg", title: { ru: "Старая ратуша Фрехена, 2026", ua: "Стара ратуша Фрехена, 2026", de: "Altes Rathaus Frechen, 2026" } },
@@ -170,27 +205,70 @@ export const Fotos = {
       ]
     },
     konigswinter: {
+      gallery: [
+        { path: "Germany/nrw/koln/Rhein-Sieg-Kreis/konigswinter/drachenfels/001.jpg", title: { ru: "Руины замка Драхенфельс, 2026", ua: "Руїни замку Драхенфельс, 2026", de: "Ruinen der Burg Drachenfels, 2026" } },
+      ],
       drachenfels: [
-        { path: "Germany/nrw/koln/Rhein-Sieg-Kreis/konigswinter/drachenfels/001.jpg", title: { ru: "Дворец Драхенбург (фото взято с интернета)", ua: "Палац Драхенбург (фото взято з Інтернету)", de: "Schloss Drachenburg (Foto aus dem Internet)" } },
-        { path: "Germany/nrw/koln/Rhein-Sieg-Kreis/konigswinter/drachenfels/002.jpg", title: { ru: "Железная дорога Драхенфельс (фото взято с интернета)", ua: "Залізниця Драхенфельса (фото взято з Інтернету)", de: "Drachenfelsbahn (Foto aus dem Internet)" } },
-        { path: "Germany/nrw/koln/Rhein-Sieg-Kreis/konigswinter/drachenfels/003.jpg", title: { ru: "Руины замка Драхенфельс (фото взято с интернета)", ua: "Руїни замку Драхенфельс (фото взято з Інтернету)", de: "Ruinen der Burg Drachenfels (Foto aus dem Internet)" } },
-        { path: "Germany/nrw/koln/Rhein-Sieg-Kreis/konigswinter/drachenfels/004.jpg", title: { ru: "Зал Нибеленгов (фото взято с интернета)", ua: "Зал Нібеленгов (фото взято з Інтернету)", de: "Nibelungenhalle (Foto aus dem Internet)" } },
+        { path: "Germany/nrw/koln/Rhein-Sieg-Kreis/konigswinter/drachenfels/001.jpg", title: { ru: "Дворец Драхенбург, 2026", ua: "Палац Драхенбург, 2026", de: "Schloss Drachenburg, 2026" } },
+        { path: "Germany/nrw/koln/Rhein-Sieg-Kreis/konigswinter/drachenfels/007.jpg", title: { ru: "Дворец Драхенбург, 2026", ua: "Палац Драхенбург, 2026", de: "Schloss Drachenburg, 2026" } },
+        { path: "Germany/nrw/koln/Rhein-Sieg-Kreis/konigswinter/drachenfels/002.jpg", title: { ru: "Железная дорога Драхенфельс, 2026", ua: "Залізниця Драхенфельса, 2026", de: "Drachenfelsbahn, 2026" } },
+        { path: "Germany/nrw/koln/Rhein-Sieg-Kreis/konigswinter/drachenfels/006.jpg", title: { ru: "Железная дорога Драхенфельс, 2026", ua: "Залізниця Драхенфельса, 2026", de: "Drachenfelsbahn, 2026" } },
+        { path: "Germany/nrw/koln/Rhein-Sieg-Kreis/konigswinter/drachenfels/003.jpg", title: { ru: "Руины замка Драхенфельс, 2026", ua: "Руїни замку Драхенфельс, 2026", de: "Ruinen der Burg Drachenfels, 2026" } },
+        { path: "Germany/nrw/koln/Rhein-Sieg-Kreis/konigswinter/drachenfels/004.jpg", title: { ru: "Зал Нибеленгов, 2026", ua: "Зал Нібеленгов, 20269", de: "Nibelungenhalle, 2026" } },
         { path: "Germany/nrw/koln/Rhein-Sieg-Kreis/konigswinter/drachenfels/005.jpg", title: { ru: "Зоопарк рептилий Драхенфельс (фото взято с интернета)", ua: "Зоопарк рептилій Драхенфельс (фото взято з Інтернету)", de: "Reptilienzoo Drachenfels (Foto aus dem Internet)" } },
       ],
       drachenfelsbahn: [
-        { path: "Germany/nrw/koln/Rhein-Sieg-Kreis/konigswinter/drachenfels/002.jpg", title: { ru: "Железная дорога Драхенфельс (фото взято с интернета)", ua: "Залізниця Драхенфельса (фото взято з Інтернету)", de: "Drachenfelsbahn (Foto aus dem Internet)" } },
+        { path: "Germany/nrw/koln/Rhein-Sieg-Kreis/konigswinter/drachenfels/002.jpg", title: { ru: "Железная дорога Драхенфельс, 2026", ua: "Залізниця Драхенфельса, 2026", de: "Drachenfelsbahn, 2026" } },
+        { path: "Germany/nrw/koln/Rhein-Sieg-Kreis/konigswinter/drachenfels/006.jpg", title: { ru: "Железная дорога Драхенфельс, 2026", ua: "Залізниця Драхенфельса, 2026", de: "Drachenfelsbahn, 2026" } },
       ],
       schloss_drachenburg: [
-        { path: "Germany/nrw/koln/Rhein-Sieg-Kreis/konigswinter/drachenfels/001.jpg", title: { ru: "Дворец Драхенбург (фото взято с интернета)", ua: "Палац Драхенбург (фото взято з Інтернету)", de: "Schloss Drachenburg (Foto aus dem Internet)" } },
+        { path: "Germany/nrw/koln/Rhein-Sieg-Kreis/konigswinter/drachenfels/001.jpg", title: { ru: "Дворец Драхенбург, 2026", ua: "Палац Драхенбург, 2026", de: "Schloss Drachenburg, 2026" } },
+        { path: "Germany/nrw/koln/Rhein-Sieg-Kreis/konigswinter/drachenfels/007.jpg", title: { ru: "Дворец Драхенбург, 2026", ua: "Палац Драхенбург, 2026", de: "Schloss Drachenburg, 2026" } },
+        { path: "Germany/nrw/koln/Rhein-Sieg-Kreis/konigswinter/drachenfels/019.jpg", title: { ru: "Дворец Драхенбург - Столовая, 2026", ua: "Палац Драхенбург - Їдальня, 2026", de: "Schloss Drachenburg - Speisezimmer, 2026" } },
+        { path: "Germany/nrw/koln/Rhein-Sieg-Kreis/konigswinter/drachenfels/020.jpg", title: { ru: "Дворец Драхенбург - Столовая, 2026", ua: "Палац Драхенбург - Їдальня, 2026", de: "Schloss Drachenburg - Speisezimmer, 2026" } },
+        { path: "Germany/nrw/koln/Rhein-Sieg-Kreis/konigswinter/drachenfels/013.jpg", title: { ru: "Дворец Драхенбург - Зал искусства, 2026", ua: "Палац Драхенбург - Зала мистецтва, 2026", de: "Schloss Drachenburg - Kunsthalle, 2026" } },
+        { path: "Germany/nrw/koln/Rhein-Sieg-Kreis/konigswinter/drachenfels/021.jpg", title: { ru: "Дворец Драхенбург - Зал искусства, 2026", ua: "Палац Драхенбург - Зала мистецтва, 2026", de: "Schloss Drachenburg - Kunsthalle, 2026" } },
+        { path: "Germany/nrw/koln/Rhein-Sieg-Kreis/konigswinter/drachenfels/015.jpg", title: { ru: "Дворец Драхенбург - Пивной зал, 2026", ua: "Палац Драхенбург - Пивна зала, 2026", de: "Schloss Drachenburg - Kneipzimmer, 2026" } },
+        { path: "Germany/nrw/koln/Rhein-Sieg-Kreis/konigswinter/drachenfels/014.jpg", title: { ru: "Дворец Драхенбург - Охотничий и бильярдный зал, 2026", ua: "Палац Драхенбург - Мисливський та більярдний зал, 2026", de: "Schloss Drachenburg - Jagd- und Billardzimmer, 2026" } },
+        { path: "Germany/nrw/koln/Rhein-Sieg-Kreis/konigswinter/drachenfels/022.jpg", title: { ru: "Дворец Драхенбург - Охотничий и бильярдный зал, 2026", ua: "Палац Драхенбург - Мисливський та більярдний зал, 2026", de: "Schloss Drachenburg - Jagd- und Billardzimmer, 2026" } },
+        { path: "Germany/nrw/koln/Rhein-Sieg-Kreis/konigswinter/drachenfels/023.jpg", title: { ru: "Дворец Драхенбург - Библиотека, 2026", ua: "Палац Драхенбург - Бібліотека, 2026", de: "Schloss Drachenburg - Bibliothek, 2026" } },
+        { path: "Germany/nrw/koln/Rhein-Sieg-Kreis/konigswinter/drachenfels/024.jpg", title: { ru: "Дворец Драхенбург - Библиотека, 2026", ua: "Палац Драхенбург - Бібліотека, 2026", de: "Schloss Drachenburg - Bibliothek, 2026" } },
+        { path: "Germany/nrw/koln/Rhein-Sieg-Kreis/konigswinter/drachenfels/025.jpg", title: { ru: "Дворец Драхенбург - Библиотека, 2026", ua: "Палац Драхенбург - Бібліотека, 2026", de: "Schloss Drachenburg - Bibliothek, 2026" } },
+        { path: "Germany/nrw/koln/Rhein-Sieg-Kreis/konigswinter/drachenfels/016.jpg", title: { ru: "Дворец Драхенбург - Парадная лестница, 2026", ua: "Палац Драхенбург - Парадні сходи, 2026", de: "Schloss Drachenburg - Repräsentative Treppe, 2026" } },
+        { path: "Germany/nrw/koln/Rhein-Sieg-Kreis/konigswinter/drachenfels/017.jpg", title: { ru: "Дворец Драхенбург - Парадная лестница, 2026", ua: "Палац Драхенбург - Парадні сходи, 2026", de: "Schloss Drachenburg - Repräsentative Treppe, 2026" } },
+        { path: "Germany/nrw/koln/Rhein-Sieg-Kreis/konigswinter/drachenfels/026.jpg", title: { ru: "Дворец Драхенбург - Апартаменты почётных гостей, 2026", ua: "Палац Драхенбург - Апартаменти почесних гостей, 2026", de: "Schloss Drachenburg - Ehrenfremden-Appartement, 2026" } },
+        { path: "Germany/nrw/koln/Rhein-Sieg-Kreis/konigswinter/drachenfels/027.jpg", title: { ru: "Дворец Драхенбург - Апартаменты почётных гостей, 2026", ua: "Палац Драхенбург - Апартаменти почесних гостей, 2026", de: "Schloss Drachenburg - Ehrenfremden-Appartement, 2026" } },
+        { path: "Germany/nrw/koln/Rhein-Sieg-Kreis/konigswinter/drachenfels/028.jpg", title: { ru: "Дворец Драхенбург - Музыкальный зал, 2026", ua: "Палац Драхенбург - Музичний зал, 2026", de: "Schloss Drachenburg - Musiksaal, 2026" } },
+        { path: "Germany/nrw/koln/Rhein-Sieg-Kreis/konigswinter/drachenfels/018.jpg", title: { ru: "Дворец Драхенбург, 2026", ua: "Палац Драхенбург, 2026", de: "Schloss Drachenburg, 2026" } },
       ],
       drachenfels_ruins: [
-        { path: "Germany/nrw/koln/Rhein-Sieg-Kreis/konigswinter/drachenfels/003.jpg", title: { ru: "Руины замка Драхенфельс (фото взято с интернета)", ua: "Руїни замку Драхенфельс (фото взято з Інтернету)", de: "Ruinen der Burg Drachenfels (Foto aus dem Internet)" } },
+        { path: "Germany/nrw/koln/Rhein-Sieg-Kreis/konigswinter/drachenfels/003.jpg", title: { ru: "Руины замка Драхенфельс, 2026", ua: "Руїни замку Драхенфельс, 2026", de: "Ruinen der Burg Drachenfels, 2026" } },
+        { path: "Germany/nrw/koln/Rhein-Sieg-Kreis/konigswinter/drachenfels/008.jpg", title: { ru: "Руины замка Драхенфельс, 2026", ua: "Руїни замку Драхенфельс, 2026", de: "Ruinen der Burg Drachenfels, 2026" } },
+        { path: "Germany/nrw/koln/Rhein-Sieg-Kreis/konigswinter/drachenfels/009.jpg", title: { ru: "Руины замка Драхенфельс, 2026", ua: "Руїни замку Драхенфельс, 2026", de: "Ruinen der Burg Drachenfels, 2026" } },
+        { path: "Germany/nrw/koln/Rhein-Sieg-Kreis/konigswinter/drachenfels/010.jpg", title: { ru: "Руины замка Драхенфельс, 2026", ua: "Руїни замку Драхенфельс, 2026", de: "Ruinen der Burg Drachenfels, 2026" } },
+        { path: "Germany/nrw/koln/Rhein-Sieg-Kreis/konigswinter/drachenfels/011.jpg", title: { ru: "Руины замка Драхенфельс, 2026", ua: "Руїни замку Драхенфельс, 2026", de: "Ruinen der Burg Drachenfels, 2026" } },
+        { path: "Germany/nrw/koln/Rhein-Sieg-Kreis/konigswinter/drachenfels/012.jpg", title: { ru: "Руины замка Драхенфельс, 2026", ua: "Руїни замку Драхенфельс, 2026", de: "Ruinen der Burg Drachenfels, 2026" } },
       ],
       nibelungenhalle: [
-        { path: "Germany/nrw/koln/Rhein-Sieg-Kreis/konigswinter/drachenfels/004.jpg", title: { ru: "Зал Нибеленгов (фото взято с интернета)", ua: "Зал Нібеленгов (фото взято з Інтернету)", de: "Nibelungenhalle (Foto aus dem Internet)" } },
+        { path: "Germany/nrw/koln/Rhein-Sieg-Kreis/konigswinter/drachenfels/004.jpg", title: { ru: "Зал Нибеленгов, 2026", ua: "Зал Нібеленгов, 20269", de: "Nibelungenhalle, 2026" } },
       ],
       reptile_zoo: [
         { path: "Germany/nrw/koln/Rhein-Sieg-Kreis/konigswinter/drachenfels/005.jpg", title: { ru: "Зоопарк рептилий Драхенфельс (фото взято с интернета)", ua: "Зоопарк рептилій Драхенфельс (фото взято з Інтернету)", de: "Reptilienzoo Drachenfels (Foto aus dem Internet)" } },
+      ],
+      heisterbach_konigswinter: [
+        { path: "Germany/nrw/koln/Rhein-Sieg-Kreis/konigswinter/heisterbach/003.jpg", title: { ru: "Аббатство Хайстербах, 2026", ua: "Абатство Гайстербах, 2026", de: "Abtei Heisterbach, 2026" } },
+        { path: "Germany/nrw/koln/Rhein-Sieg-Kreis/konigswinter/heisterbach/004.jpg", title: { ru: "Аббатство Хайстербах, 2026", ua: "Абатство Гайстербах, 2026", de: "Abtei Heisterbach, 2026" } },
+        { path: "Germany/nrw/koln/Rhein-Sieg-Kreis/konigswinter/heisterbach/001.jpg", title: { ru: "Руины хора бывшей монастырской церкви, 2026", ua: "Руїни хору колишньої монастирської церкви, 2026", de: "Ruinen des Chors der ehemaligen Klosterkirche, 2026" } },
+        { path: "Germany/nrw/koln/Rhein-Sieg-Kreis/konigswinter/heisterbach/002.jpg", title: { ru: "Небольшая капелла (часовня) на территории монастырского комплекса Хайстербах, 2026", ua: "Невелика капела на території монастирського комплексу Гайстербах, 2026", de: "Kleine Kapelle auf dem Gelände des Klosterkomplexes Heisterbach, 2026" } },
+        { path: "Germany/nrw/koln/Rhein-Sieg-Kreis/konigswinter/heisterbach/005.jpg", title: { ru: "Церковь Святого Петра в Хайстербахе, 2026", ua: "Церква Святого Петра в Гайстербасі, 2026", de: "Kirche St. Peter in Heisterbach, 2026" } },
+      ],
+      chorruine_heisterbach_konigswinter: [
+        { path: "Germany/nrw/koln/Rhein-Sieg-Kreis/konigswinter/heisterbach/001.jpg", title: { ru: "Руины хора бывшей монастырской церкви, 2026", ua: "Руїни хору колишньої монастирської церкви, 2026", de: "Ruinen des Chors der ehemaligen Klosterkirche, 2026" } },
+      ],
+      st_peter_heisterbach_konigswinter: [
+        { path: "Germany/nrw/koln/Rhein-Sieg-Kreis/konigswinter/heisterbach/005.jpg", title: { ru: "Церковь Святого Петра в Хайстербахе, 2026", ua: "Церква Святого Петра в Гайстербасі, 2026", de: "Kirche St. Peter in Heisterbach, 2026" } },
+        { path: "Germany/nrw/koln/Rhein-Sieg-Kreis/konigswinter/heisterbach/006.jpg", title: { ru: "Церковь Святого Петра в Хайстербахе, 2026", ua: "Церква Святого Петра в Гайстербасі, 2026", de: "Kirche St. Peter in Heisterbach, 2026" } },
+        { path: "Germany/nrw/koln/Rhein-Sieg-Kreis/konigswinter/heisterbach/007.jpg", title: { ru: "Церковь Святого Петра в Хайстербахе, 2026", ua: "Церква Святого Петра в Гайстербасі, 2026", de: "Kirche St. Peter in Heisterbach, 2026" } },
       ]
     },
 
@@ -210,7 +288,7 @@ export const Fotos = {
       erloeserkirche_luedenscheid: [
         { path: "Germany/nrw/arnsberg/Märkischer-Kreis/luedenscheid/erloeserkirche_luedenscheid/001.JPG", title: { ru: "Церковь Спасителя в Люденшайде, 2006", ua: "Церква Спасителя в Люденшайді, 2006", de: "Die Erlöserkirche in Lüdenscheid, 2006" } },
       ],
-      brunnen_altstadt_luedenscheid:[
+      brunnen_altstadt_luedenscheid: [
         { path: "Germany/nrw/arnsberg/Märkischer-Kreis/luedenscheid/altstadt_luedenscheid/001.JPG", title: { ru: "Фонтан в старом городе, 2006", ua: "Фонтан у старому місті, 2006", de: "Brunnen in der Altstadt, 2006" } },
       ],
       rathausplatz_luedenscheid: [
@@ -233,5 +311,17 @@ export const Fotos = {
       ]
     }
 
+  },
+
+  "rheinland-pfalz": {
+    trier: {
+      gallery: [
+        { path: "Germany/rheinland-pfalz/trier-city/portaNigra_trier/001.JPG", title: { ru: "Порта Нигра, 2024", ua: "Порта Нігра («Чорні ворота»), 2024", de: "Porta Nigra, 2024" } },
+      ],
+      portaNigra_trier: [
+        { path: "Germany/rheinland-pfalz/trier-city/portaNigra_trier/001.JPG", title: { ru: "Порта Нигра, 2024", ua: "Порта Нігра («Чорні ворота»), 2024", de: "Porta Nigra, 2024" } },
+        { path: "Germany/rheinland-pfalz/trier-city/portaNigra_trier/002.JPG", title: { ru: "Порта Нигра, 2024", ua: "Порта Нігра («Чорні ворота»), 2024", de: "Porta Nigra, 2024" } },
+      ]
+    }
   }
 }

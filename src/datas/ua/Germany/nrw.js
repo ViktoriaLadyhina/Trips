@@ -706,7 +706,7 @@ const datas = {
                                 { id: 5, name: "Вахтберг", hasInfo: false },
                                 { id: 6, name: "Виндецк", hasInfo: false },
                                 { id: 7, name: "Зігбург", hasInfo: false },
-                                { id: 8, name: "Кенігсвінтер", hasInfo: false, path: "konigswinter" },
+                                { id: 8, name: "Кенігсвінтер", hasInfo: true, path: "konigswinter" },
                                 { id: 9, name: "Ломмар", hasInfo: false },
                                 { id: 10, name: "Меккенхайм", hasInfo: false },
                                 { id: 11, name: "Мух", hasInfo: false },
@@ -904,7 +904,7 @@ const datas = {
         description: "Північний Рейн-Вестфалія: міста, округи, культура та визначні місця.",
         ogTitle: "Північний Рейн-Вестфалія — інформація про регіон та округи",
         ogDescription: "Детальна інформація про Північний Рейн-Вестфалія: міста, округи, історія та цікаві факти.",
-        ogImage: "/nrw/nrw-map.jpg"
+        ogImage: "https://our-travels.info/new/foto/Germany/nrw/koln/koln-city/koln-cathedral/001.jpg"
     }
 }
 export default datas

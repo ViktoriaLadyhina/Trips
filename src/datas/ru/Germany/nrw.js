@@ -698,7 +698,7 @@ const datas = {
                                 { id: 5, name: "Вахтберг", hasInfo: false },
                                 { id: 6, name: "Виндек", hasInfo: false },
                                 { id: 7, name: "Зигбург", hasInfo: false },
-                                { id: 8, name: "Кёнигсвинтер", hasInfo: false, path: "konigswinter" },
+                                { id: 8, name: "Кёнигсвинтер", hasInfo: true, path: "konigswinter" },
                                 { id: 9, name: "Ломар", hasInfo: false },
                                 { id: 10, name: "Меккенхайм", hasInfo: false },
                                 { id: 11, name: "Мух", hasInfo: false },
@@ -896,7 +896,7 @@ const datas = {
         description: "Северный Рейн-Вестфалия: города, округа, культура и достопримечательности.",
         ogTitle: "Северный Рейн-Вестфалия — информация о регионе и округах",
         ogDescription: "Подробная информация о Северном Рейне-Вестфалии: города, округа, история и интересные факты.",
-        ogImage: "/nrw/nrw-map.jpg"
+        ogImage: "https://our-travels.info/new/foto/Germany/nrw/koln/koln-city/koln-cathedral/001.jpg"
     }
 
 }
