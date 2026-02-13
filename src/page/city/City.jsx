@@ -1,4 +1,4 @@
-import { useParams } from 'react-router';
+import { Link, useParams } from 'react-router';
 import { photosByCountry } from "../../datas/fotos/index.js";
 
 import BreadCrumbs from '../../components/breadCrumbs/BreadCrumbs.jsx';
@@ -91,7 +91,7 @@ const City = () => {
                                         {events.map(ev => (
                                             <tr key={ev.id}>
                                                 <td data-label={lang === "ru" ? "Название" : lang === "de" ? "Name" : "Назва"}>
-                                                    <a href={`/${countryPath}/${regionsPath}/${districtPath}/${cityPath}/events/${ev.path}`}>{ev.name}</a>
+                                                    <Link to={`/${countryPath}/${regionsPath}/${districtPath}/${cityPath}/events/${ev.path}`}>{ev.name}</Link>
                                                 </td>
                                                 <td data-label={lang === "ru" ? "Короткое описание" : lang === "de" ? "Kurze Beschreibung" : "Короткий опис"}>{ev.short_description}</td>
                                                 <td data-label={lang === "ru" ? "Даты" : lang === "de" ? "Datum" : "Дати"}>{ev.date}</td>
