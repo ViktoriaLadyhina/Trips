@@ -346,7 +346,7 @@ const datas = [
                 { text: ' +49 2351' }
             ],
             officialSite: [
-                { bold: 'Offizielle Website der Stadt Lüdenscheid', link: 'www.luedenscheid.de' }
+                { bold: 'Offizielle Website der Stadt Lüdenscheid', link: 'https://www.luedenscheid.de/' }
             ],
             education: [
                 { bold: 'Bildungssystem' },

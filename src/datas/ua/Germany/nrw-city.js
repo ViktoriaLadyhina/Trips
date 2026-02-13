@@ -346,7 +346,7 @@ const datas = [
                 { text: ' +49 02351' }
             ],
             officialSite: [
-                { bold: 'Офіційний сайт Люденшайда', link: 'www.luedenscheid.de' }
+                { bold: 'Офіційний сайт Люденшайда', link: 'https://www.luedenscheid.de/' }
             ],
             education: [
                 { bold: 'Освітня система' },

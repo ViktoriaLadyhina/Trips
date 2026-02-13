@@ -5,6 +5,15 @@ const safeText = (value) => (typeof value === "string" ? value : "");
 const InfoBlock = ({ data = [], className }) => {
   if (!data) return null;
 
+  if (typeof data === "string") {
+    return (
+      <div 
+        className={className}
+        dangerouslySetInnerHTML={{ __html: safeText(data) }}
+      />
+    );
+  }
+
   // 🔹 Обработка блоков с title и items (например, symbols, facts)
   if (data.title && data.items) {
     return (

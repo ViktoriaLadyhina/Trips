@@ -12,13 +12,12 @@ const BASE_PHOTO_URL = import.meta.env.VITE_BASE_PHOTO_URL;
 
 const City = () => {
     const { countryPath, regionsPath, districtPath, cityPath } = useParams();
-    const { region, district, parentSubRegion, city, cityData, lang, error } = useCityFullData();
+    const { region, district, parentSubRegion, city, cityData, lang, events, error } = useCityFullData();
 
     useMeta(cityData?.meta);
 
     if (error) return <p>{error}</p>;
     if (!cityData) return <p>Loading...</p>;   
-    console.log(cityPath); 
 
     const photos = photosByCountry[countryPath];
 
@@ -31,6 +30,7 @@ const City = () => {
         ...(parentSubRegion ? [{ label: parentSubRegion.name }] : []),
         { label: city.name }
     ];
+    
     return (
         <div className='city'>
             {cityData && (
@@ -75,6 +75,33 @@ const City = () => {
                             {cityData.briefHistory && (<InfoBlock data={cityData.briefHistory} className="city__desc-history" />)}
                         </div>
 
+                        {/* ------------------- Раздел мероприятий ------------------- */}
+                        {events && events.length > 0 && (
+                            <div className="city__events">
+                                <h2>{lang === "ru" ? "Мероприятия" : lang === "de" ? "Veranstaltungen" : "Заходи"}</h2>
+                                <table className="city__events-table">
+                                    <thead>
+                                        <tr>
+                                            <th>{lang === "ru" ? "Название" : lang === "de" ? "Name" : "Назва"}</th>
+                                            <th>{lang === "ru" ? "Короткое описание" : lang === "de" ? "Kurze Beschreibung" : "Короткий опис"}</th>
+                                            <th>{lang === "ru" ? "Даты" : lang === "de" ? "Datum" : "Дати"}</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        {events.map(ev => (
+                                            <tr key={ev.id}>
+                                                <td data-label={lang === "ru" ? "Название" : lang === "de" ? "Name" : "Назва"}>
+                                                    <a href={`/${countryPath}/${regionsPath}/${districtPath}/${cityPath}/events/${ev.path}`}>{ev.name}</a>
+                                                </td>
+                                                <td data-label={lang === "ru" ? "Короткое описание" : lang === "de" ? "Kurze Beschreibung" : "Короткий опис"}>{ev.short_description}</td>
+                                                <td data-label={lang === "ru" ? "Даты" : lang === "de" ? "Datum" : "Дати"}>{ev.date}</td>
+                                            </tr>
+                                        ))}
+                                    </tbody>
+                                </table>
+                            </div>
+                        )}
+                        {/* ---------------------------------------------------------- */}
 
                     </div>
                 </>
