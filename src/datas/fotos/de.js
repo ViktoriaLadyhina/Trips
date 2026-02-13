@@ -111,7 +111,7 @@ export const Fotos = {
         { path: "Germany/nrw/koln/koln-city/schnuetgen/001.jpg", title: { ru: "Музей Шнютгена (фото взято с интернета)", ua: "Музей Шнютгена (фото взято з Інтернету)", de: "Museum Schnütgen (Foto aus dem Internet)" } },
       ],
       karneval_koln: [
-        { path: "Germany/nrw/koln/koln-city/karneval/001.jpg", title: { ru: "Кёльнский карнавал (фото взято с интернета)", ua: "Музей Шнютгена (фото взято з Інтернету)", de: "Museum Schnütgen (Foto aus dem Internet)" } },
+        { path: "Germany/nrw/koln/koln-city/karneval/001.jpg", title: { ru: "Кёльнский карнавал (фото взято с интернета)", ua: "Кельнський карнавал (фото взято з Інтернету)", de: "Kölner Karneval (Foto aus dem Internet)" } },
       ]
     },
     bruhl: {

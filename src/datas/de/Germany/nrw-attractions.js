@@ -724,6 +724,69 @@ const datas = [
             "ogImage": "https://our-travels.info/new/foto/Germany/nrw/koln/koln-city/koln_bridges/001.jpg"
         }
     },
+        {
+        id: "zoo_koln",
+        name: "Kölner Zoo",
+        type: ["nature"],
+        path: "zoo_koln",
+        countryPath: "germany",
+        regionsPath: "nrw",
+        districtPath: "city",
+        cityPath: "koln",
+        fotoCard: "Germany/nrw/koln/koln-city/zoo/001.jpg",
+        location: "Köln, Deutschland",
+        officialSite: [
+            { bold: "Offizielle Website", link: "https://koelnerzoo.de/" }
+        ],
+        short_description: "Der Kölner Zoo in Deutschland ist einer der ältesten Zoos des Landes, gegründet 1860. Heute ist er eine große Naturattraktion mit vielfältigen Tieren und einem Aquarium, wo man einen ganzen Tag verbringen kann, um die Bewohner aus aller Welt zu beobachten.",
+        full_description: {
+            title: "Beschreibung und Geschichte",
+            items: [
+                { bold: "Kölner Zoo", text: "– einer der ältesten Zoos Deutschlands, gegründet 1860. Ursprünglich ein beliebter Ort für Unterhaltung im 19. Jahrhundert, entwickelte er sich über die Zeit zu einem modernen Zentrum für Naturschutz und Artenerhaltung." },
+                { text: "Der Zoo hat große Herausforderungen überstanden: Während des Zweiten Weltkriegs starb ein Großteil der Tiere, und der Zoo musste fast von Grund auf wiederaufgebaut werden. Heute existieren historische Gebäude wie das Elefantenhaus im maurischen Stil (1863) und der „Affenfelsen“ (1914) harmonisch neben modernen, großzügigen Gehegen, die den natürlichen Lebensräumen der Tiere so nahe wie möglich kommen." },
+                { text: "Auf einer Fläche von etwa 20 ha leben heute über 10 000 Tiere aus ca. 850 Arten von allen Kontinenten, darunter seltene Säugetiere, Vögel, Reptilien und Fische. Besonderes Augenmerk liegt auf dem Regenwald Südostasiens und dem Elefantenpark, wo die Tiere in natürlichen sozialen Gruppen leben." },
+                { text: "Der Kölner Zoo verbindet reiche Geschichte, moderne Tierhaltung und Bildungsprogramme, wodurch der Besuch für die ganze Familie interessant wird." }
+            ]
+        },
+        tickets_and_entry: {
+            title: "Praktische Informationen",
+            items: [
+                { bold: "Adresse:", text: "Riehler Straße 173, 50735 Köln, Deutschland. Der Zoo befindet sich im Stadtteil Riehl in Köln. Leicht mit öffentlichen Verkehrsmitteln vom Stadtzentrum erreichbar." },
+                { bold: "Öffnungszeiten:", text: "Der Zoo ist 365 Tage im Jahr geöffnet: Frühling/Herbst (1. März – 31. Oktober): 9:00–18:00, letzter Einlass und Kasse bis 17:30. Winter (1. November – 28. Februar): 9:00–17:00, letzter Einlass und Kasse bis 16:30. Aquarium und alle Tierhäuser schließen 30 Minuten vor Gesamtschluss. Besondere Tage: 24. und 31. Dezember normalerweise bis 14:00 Uhr geöffnet (letzter Einlass früher)." },
+                { bold: "Aktuelle Preise (ungefähr):", text: "Die Preise können je nach Saison und Ticketart variieren. Etwa: Erwachsene: ~23 €, Kinder (4–12 Jahre): ~11 €, Schüler/Studenten: ~17 €, Gruppen: Ermäßigungen ab 15 Personen. Tickets können auch online über die offizielle Website gekauft werden, was die Planung erleichtert." }
+            ]
+        },
+        sub_objects: {
+            title: "Zoo-Bereiche",
+            items: [
+                { bold: "Elephant Park", text: "Dies ist einer der beeindruckendsten Bereiche – ein großes Gelände für asiatische Elefanten von etwa 2 ha. Hier kann man die Tiere unter möglichst naturnahen Bedingungen beobachten, mit Wasserstellen, Unterständen und Sozialzonen innerhalb der Herde." },
+                { bold: "Rainforest House", text: "Ein feuchtes tropisches Haus Südostasiens – warme und feuchte Zone, in der Vögel frei fliegen, Reptilien kriechen, Säugetiere laufen und exotische Vögel über den Köpfen hinwegziehen." },
+                { bold: "Hippodom – Afrikanischer Fluss", text: "– rekonstruierte afrikanische Wasserlandschaft, in der man Flusspferde, Krokodile, Schlangen und andere Bewohner von Flusslandschaften durch große Panoramascheiben beobachten kann." },
+                { bold: "Reichert Jungle House", text: "In diesem Bereich werden Tiere Südamerikas gezeigt – Affen, Faultiere, Tukane, Gürteltierarten usw. Man läuft über Stege und beobachtet die Tiere auf Höhe der Baumkronen." },
+                { bold: "Baboon Rock", text: "Historische Exposition, wo eine lebhafte Pavangruppe fast wie in der Natur agiert: spielt, kämpft und kommuniziert, während Besucher das Verhalten der Affen ohne sichtbare Zäune beobachten – nur Schutzgräben und Räume." },
+                { bold: "Aquarium und Terrarium", text: "Ein separates Gebäude mit eigener Ausstellung: große Aquarien mit Korallenriffen und tropischen Fischen, Tanganjikasee-Becken, Insektarium mit einer Vielfalt von Insekten, Fischen, Schlangen, Echsen und Reptilien aus aller Welt." },
+                { bold: "Haustier- und Kontaktzone", text: "In diesem Bereich gibt es einen traditionellen Kontaktbereich („Petting-Zone“), wo Kinder und Familien Haus- und Nutztiere (Kaninchen, Ziegen usw.) hautnah kennenlernen können." }
+            ]
+        },
+        interestingFacts: {
+            title: "Interessante Fakten",
+            items: [
+                { text: "Der Zoo beherbergt über 10 000 Tiere aus mehr als 800 Arten." },
+                { text: "Einer der größten Elefantenparks Europas für asiatische Elefanten befindet sich hier auf über 2 ha." },
+                { text: "Der Zoo verfügt über ein Aquarium mit Korallenriff, Insektarium und Rheinpanorama mit heimischen Fischarten." },
+                { text: "Die ältesten architektonischen Objekte harmonieren mit modernen Expositionen, z. B. der Südostasien-Dschungel im Tropenhaus." }
+            ]
+        },
+        construction_period: "22. Juli 1860 – offizielles Eröffnungsdatum des Zoos nach etwa 10-monatiger Vorbereitung und Bauzeit.",
+        founder: " Der Zoo wurde als Aktiengesellschaft lokaler Bürger auf Initiative des Lehrers Dr. Caspar (Casper) Garthe gegründet, der Organisator und Hauptinitiator des Projekts war. Der erste bei der Gründung ernannte Direktor war Dr. Heinrich Bodinus (Biologe), der die Leitung übernahm und die erste Tierausstellung organisierte.",
+        meta: {
+            title: "Kölner Zoo – Geschichte, Expositionen und praktische Informationen für den Besuch",
+            description: "Entdecken Sie den Kölner Zoo, einen der ältesten Zoos Deutschlands. Erfahren Sie mehr über seine Geschichte, thematischen Expositionen, den Regenwald, den Elefantenpark und praktische Besuchsinformationen.",
+            ogTitle: "Besuchen Sie den Kölner Zoo – über 10 000 Tiere und einzigartige Expositionen",
+            ogDescription: "Erkunden Sie den Kölner Zoo: historische Gebäude, Südostasien-Regenwald, Elefantenpark und Aquarium. Perfekter Ort für Familien und Bildungsbesuche.",
+            ogImage: "https://our-travels.info/new/foto/Germany/nrw/koln/koln-city/zoo/001.jpg"
+        }
+    },
     {
         id: "forstbotanischer_garten",
         name: "Forstbotanischer Garten",

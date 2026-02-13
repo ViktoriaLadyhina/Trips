@@ -67,6 +67,7 @@ const Map = () => {
       guerzenich_koln: { ru: 'Гюрцених – исторический концертный зал и гильдейский дом в Кёльне', de: 'Gürzenich – historischer Konzertsaal und Zunfthaus in Köln', ua: 'Гюрценіх – історичний концертний зал і гільдійний дім у Кельні' },
       ostasiatische_kunst_koln: { ru: 'Музей восточно‑азиатского искусства', de: 'Museum für Ostasiatische Kunst', ua: 'Музей східноазіатського мистецтва' },
       museum_schnuetgen_koln: { ru: 'Музей Шнютгена', de: 'Museum Schnütgen', ua: 'Музей Шнютгена' },
+      zoo_koln: { ru: 'Кёльнский зоопарк', de: 'Kölner Zoo', ua: 'Кельнський зоопарк' },
 
       // Köln okrug
       // Rhein-Erft-Kreis
@@ -126,6 +127,11 @@ const Map = () => {
           <li>
             <Link to="/germany">{t.countries.germany[lang]}</Link>
             <ul>
+              <li>{ lang === 'ru' ? 'Мероприятия/События' : lang === 'de' ? 'Veranstaltungen' : 'Заходи' }
+                <ul>
+                  <li><Link to="/germany/nrw/city/koln/events/karneval_koln">{ lang === 'ru' ? 'Кельнский карнавал' : lang === 'de' ? 'Kölner Karneval' : 'Кельнський карнавал' }</Link></li>
+                </ul>
+              </li>
 
               {/* НРВ */}
               <li><Link to="/germany/nrw">{t.regions.nrw[lang]}</Link>
@@ -203,6 +209,7 @@ const Map = () => {
                           <li><Link to="/germany/nrw/city/koln/attractions/ostasiatische_kunst_koln">{t.attractions.ostasiatische_kunst_koln[lang]}</Link></li>
                           <li><Link to="/germany/nrw/city/koln/attractions/museum_schnuetgen_koln">{t.attractions.museum_schnuetgen_koln[lang]}</Link></li>
                           <li><Link to="/germany/nrw/city/koln/attractions/koln_bridges">{t.attractions.koeln_bridges[lang]}</Link></li>
+                          <li><Link to="/germany/nrw/city/koln/attractions/zoo_koln">{t.attractions.zoo_koln[lang]}</Link></li>
                           <li><Link to="/germany/nrw/city/koln/attractions/forstbotanischer_garten">{t.attractions.forstbotanischer_garten[lang]}</Link></li>
                           <li><Link to="/germany/nrw/city/koln/attractions/flora_garten_koln">{t.attractions.flora_garten_koln[lang]}</Link></li>
                           <li><Link to="/germany/nrw/city/koln/attractions/rheinpark_koln">{t.attractions.rheinpark_koln[lang]}</Link>
