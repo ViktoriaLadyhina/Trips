@@ -71,7 +71,7 @@ const datas = [
             description: "Кельнський собор – символ міста та шедевр готичної архітектури. Історія будівництва, реліквії, вітражі, дзвони та таємниці собору.",
             ogTitle: "Кельнський собор: історія, архітектура та реліквії",
             ogDescription: "Пориньте в історію Кельнського собору – велич, реліквії, архітектура та інтриги готичного шедевра.",
-            ogImage: "https://our-travels.info/new/foto/Germany/nrw/koln/koln-city/koln-cathedral/001.jpg"
+            ogImage: "https://our-travels.info/foto/Germany/nrw/koln/koln-city/koln-cathedral/001.jpg"
         }
     },
     {
@@ -129,7 +129,7 @@ const datas = [
             description: "Кельнська ратуша: готична вежа, ренесансна лоджія",
             ogTitle: "Кельнська ратуша: готична вежа, ренесансна лоджія",
             ogDescription: "Кельнська ратуша – найстаріша адміністративна будівля Німеччини, що поєднує готичну вежу, ренесансну лоджію та історичний зал Ганзи.",
-            ogImage: "https://our-travels.info/new/foto/Germany/nrw/koln/koln-city/rathaus-koeln/Rathaus-Köln.jpg"
+            ogImage: "https://our-travels.info/foto/Germany/nrw/koln/koln-city/rathaus-koeln/Rathaus-Köln.jpg"
         }
     },
     {
@@ -191,7 +191,7 @@ const datas = [
             description: "Гюрценіх у Кельні – будівля, зведена у 1441–1452 роках для міських святкувань. Сьогодні тут проходять концерти, банкетні заходи та офіційні прийоми.",
             ogTitle: "Гюрценіх, Кельн – історична будівля та центр подій",
             ogDescription: "Відкрийте Гюрценіх у Кельні – історичну будівлю XV століття, відновлену після війни, де проходять концерти, карнавальні сесії та банкетні прийоми.",
-            ogImage: "https://our-travels.info/new/foto/Germany/nrw/koln/koln-city/guerzenich_koln/001.jpg"
+            ogImage: "https://our-travels.info/foto/Germany/nrw/koln/koln-city/guerzenich_koln/001.jpg"
         }
     },
     {
@@ -246,7 +246,7 @@ const datas = [
             description: "Римсько-германський музей — унікальний археологічний музей Кельна, побудований над давньоримською віллою. Мозаїка Діоніса, скло, прикраси та історія міста Колонія.",
             ogTitle: "Римсько-германський музей Кельна — історія та мозаїка Діоніса",
             ogDescription: "Музей античної Колонії: мозаїка Діоніса, римське скло та археологія Кельна. Дізнайтесь, як античність збереглася під сучасним містом.",
-            ogImage: "https://our-travels.info/new/foto/Germany/nrw/koln/koln-city/roemisch-germanisches-museum/001.jpg"
+            ogImage: "https://our-travels.info/foto/Germany/nrw/koln/koln-city/roemisch-germanisches-museum/001.jpg"
         }
     },
     {
@@ -299,7 +299,7 @@ const datas = [
             description: "Музей духів у будинку Фаріна, відомий також як Дім одеколону, — найстаріший музей ароматів у Кельні та батьківщина знаменитого Eau de Cologne. Саме тут у 1709 році Йоганн Марія Фаріна створив перший одеколон.",
             ogTitle: "Будинок Фаріна в Кельні — Дім одеколону та музей Eau de Cologne",
             ogDescription: "Відвідайте Музей духів у будинку Фаріна, також відомий як Дім одеколону — батьківщину легендарного Eau de Cologne. Історія, аромати та трьохсотрічна традиція створення кельнської води.",
-            ogImage: "https://our-travels.info/new/foto/Germany/nrw/koln/koln-city/farina-duftmuseum/001.jpg"
+            ogImage: "https://our-travels.info/foto/Germany/nrw/koln/koln-city/farina-duftmuseum/001.jpg"
         }
     },
     {
@@ -354,7 +354,7 @@ const datas = [
             description: "Музей Людвіга у Кельні – одне з провідних світових зібрань сучасного мистецтва, засноване на колекції німецького промисловця Петера Людвіга та його дружини Ірени.",
             ogTitle: "Музей Людвіга – Сучасне мистецтво у Кельні",
             ogDescription: "Музей Людвіга у Кельні – одне з провідних світових зібрань сучасного мистецтва, засноване на колекції німецького промисловця Петера Людвіга та його дружини Ірени.",
-            ogImage: "https://our-travels.info/new/foto/Germany/nrw/koln/koln-city/museum-ludwig/001.jpg"
+            ogImage: "https://our-travels.info/foto/Germany/nrw/koln/koln-city/museum-ludwig/001.jpg"
         }
     },
     {
@@ -410,7 +410,7 @@ const datas = [
             description: "Музей шоколаду — унікальний музей у Кельні, який показує шлях какао від тропічної плантації до шоколадної плитки. Відвідайте скляну фабрику, фонтан із 200 кг шоколаду й зануртеся в історію солодкого задоволення.",
             ogTitle: "Schokoladenmuseum Köln – музей шоколаду в Кельні",
             ogDescription: "Пориньте у світ какао та шоколаду в Кельні: від стародавніх цивілізацій до сучасної фабрики та шоколадного фонтану.",
-            ogImage: "https://our-travels.info/new/foto/Germany/nrw/koln/koln-city/schokoladenmuseum/001.jpg"
+            ogImage: "https://our-travels.info/foto/Germany/nrw/koln/koln-city/schokoladenmuseum/001.jpg"
         }
     },
     {
@@ -485,7 +485,7 @@ const datas = [
             description: "MiQua – підземний музей у центрі Кельна, що показує римські, єврейські та середньовічні археологічні шари міста.",
             ogTitle: "MiQua – Музей в археологічному кварталі Кельна",
             ogDescription: "Підземний музей MiQua дозволяє пройти через 2000 років історії Кельна, включно з Praetorium, Mikwe та середньовічними будівлями.",
-            ogImage: "https://our-travels.info/new/foto/Germany/nrw/koln/koln-city/miqua/001.jpg"
+            ogImage: "https://our-travels.info/foto/Germany/nrw/koln/koln-city/miqua/001.jpg"
         }
     },
     {
@@ -545,7 +545,7 @@ const datas = [
             description: "Музей Вальрафа-Ріхарцa в Кельні — найстаріший музей міста з колекціями живопису, скульптури та графіки від Середньовіччя до початку XX століття, включно з фондом Fondation Corboud з імпресіоністами.",
             ogTitle: "Музей Вальрафа-Ріхарцa — Мистецтво від Середньовіччя до Імпресіонізму",
             ogDescription: "Відкрийте для себе музей Вальрафа-Ріхарцa в Кельні: середньовічне та барокове мистецтво, а також колекція імпресіоністів Fondation Corboud.",
-            ogImage: "https://our-travels.info/new/foto/Germany/nrw/koln/koln-city/wallraf_richartz_museum/001.jpg"
+            ogImage: "https://our-travels.info/foto/Germany/nrw/koln/koln-city/wallraf_richartz_museum/001.jpg"
         }
     },
     {
@@ -602,7 +602,7 @@ const datas = [
             description: "Відкрийте для себе мистецтво Китаю, Кореї та Японії в Кельні: буддійський живопис, дерев'яні скульптури, японські ширми та традиційний японський сад.",
             ogTitle: "Музей східно-азіатського мистецтва (Кельн)",
             ogDescription: "Відвідайте музей у Кельні з унікальною колекцією східно-азіатського мистецтва: живопис, скульптури, японські ширми та красивий японський сад.",
-            ogImage: "https://our-travels.info/new/foto/Germany/nrw/koln/koln-city/ostasiatische_kunst_koln/001.jpg"
+            ogImage: "https://our-travels.info/foto/Germany/nrw/koln/koln-city/ostasiatische_kunst_koln/001.jpg"
         }
     },
     {
@@ -667,7 +667,7 @@ const datas = [
             description: "Музей Шнютгена в Кельні – унікальний музей середньовічного мистецтва в будівлі романської церкви XII століття. Скульптури, релікварії, вітражі та церковні скарби.",
             ogTitle: "Музей Шнютгена — середньовічне мистецтво в давній церкві",
             ogDescription: "Відвідайте музей Шнютгена – один з найатмосферніших музеїв Кельна, розташований у романській церкві XII століття з колекцією рідкісного середньовічного мистецтва.",
-            ogImage: "https://our-travels.info/new/foto/Germany/nrw/koln/koln-city/schnuetgen/001.jpg"
+            ogImage: "https://our-travels.info/foto/Germany/nrw/koln/koln-city/schnuetgen/001.jpg"
         }
     },
     {
@@ -721,7 +721,7 @@ const datas = [
             "description": "Опис восьми мостів Кельна: історія, особливості, цікаві факти, включаючи міст кохання Hohenzollernbrücke.",
             "ogTitle": "Мости Кельна через Рейн",
             "ogDescription": "Повний опис усіх восьми мостів Кельна з фактами, історією та архітектурою.",
-            "ogImage": "https://our-travels.info/new/foto/Germany/nrw/koln/koln-city/koln_bridges/001.jpg"
+            "ogImage": "https://our-travels.info/foto/Germany/nrw/koln/koln-city/koln_bridges/001.jpg"
         }
     },
         {
@@ -784,7 +784,7 @@ const datas = [
             description: "Відкрийте для себе Кельнський зоопарк, один з найстаріших зоопарків Німеччини. Дізнайтеся про його історію, тематичні експозиції, тропічний ліс, парк слонів та практичну інформацію для відвідування.",
             ogTitle: "Відвідайте Кельнський зоопарк – понад 10 000 тварин та унікальні експозиції",
             ogDescription: "Дослідіть Кельнський зоопарк: історичні споруди, тропічний ліс Південно-Східної Азії, парк слонів та акваріум. Ідеальне місце для сімейного відпочинку та освітніх відвідувань.",
-            ogImage: "https://our-travels.info/new/foto/Germany/nrw/koln/koln-city/zoo/001.jpg"
+            ogImage: "https://our-travels.info/foto/Germany/nrw/koln/koln-city/zoo/001.jpg"
         }
     },
     {
@@ -852,7 +852,7 @@ const datas = [
             description: "Ботанічний сад і лісопарк Кельна з рослинами з усього світу та тематичними зонами, включаючи Friedenswald – Ліс миру.",
             ogTitle: "Forstbotanischer Garten – Ботанічний сад і лісопарк Кельна",
             ogDescription: "Сад і лісопарк Кельна пропонують прогулянки рододендроновою балкою, японським садом, вересовим лугом та Лісом миру.",
-            ogImage: "https://our-travels.info/new/foto/Germany/nrw/koln/koln-city/forstbotanischer_garten/001.jpg"
+            ogImage: "https://our-travels.info/foto/Germany/nrw/koln/koln-city/forstbotanischer_garten/001.jpg"
         }
     },
     {
@@ -911,7 +911,7 @@ const datas = [
             description: "Відвідайте ботанічний сад Флора у Кельні: понад 10 000 рослин з усього світу, історичні алеї, тематичні сади, оранжереї та відпочинок на свіжому повітрі.",
             ogTitle: "Флора – ботанічний сад і парк у Кельні",
             ogDescription: "Відкрийте для себе Флору в Кельні: кругосвітня подорож серед 10 000 видів рослин, історичні сади, оранжереї та затишні алеї для прогулянок.",
-            ogImage: "https://our-travels.info/new/foto/Germany/nrw/koln/koln-city/flora_garten_koln/001.jpg"
+            ogImage: "https://our-travels.info/foto/Germany/nrw/koln/koln-city/flora_garten_koln/001.jpg"
         }
     },
     {
@@ -967,7 +967,7 @@ const datas = [
             description: "Рейнський парк – великий громадський парк уздовж правого берега Рейну в районі Дойц (Deutz) міста Кельн. Це історично та архітектурно значуща зелена зона, відома своїми просторими газонами, клумбами, прогулянковими алеями та чудовим видом на центр міста з Кельнським собором.",
             ogTitle: "Рейнський парк (Rheinpark)",
             ogDescription: "Рейнський парк – великий громадський парк уздовж правого берега Рейну в районі Дойц (Deutz) міста Кельн. Це історично та архітектурно значуща зелена зона, відома своїми просторими газонами, клумбами, прогулянковими алеями та чудовим видом на центр міста з Кельнським собором.",
-            ogImage: "https://our-travels.info/new/foto/Germany/nrw/koln/koln-city/rheinpark_koln/001.jpg"
+            ogImage: "https://our-travels.info/foto/Germany/nrw/koln/koln-city/rheinpark_koln/001.jpg"
         }
     },
     {
@@ -1011,7 +1011,7 @@ const datas = [
             description: "Відвідайте Tanzbrunnen – історичний «Танцюючий фонтан» на Рейні в Кельні. Концерти, фестивалі, культурні заходи та мальовничий вид на річку. Дізнайтеся історію та архітектуру комплексу.",
             ogTitle: "Танцюючий фонтан в Кельні – концерти та культурні заходи на Рейні",
             ogDescription: "Tanzbrunnen – відомий культурний комплекс Кельна з історією майже 100 років. Концерти, фестивалі, прогулянки вздовж Рейну та унікальний «зірково-хвильовий шатер».",
-            ogImage: "https://our-travels.info/new/foto/Germany/nrw/koln/koln-city/rheinpark_koln/002.jpg"
+            ogImage: "https://our-travels.info/foto/Germany/nrw/koln/koln-city/rheinpark_koln/002.jpg"
         }
     },
     {
@@ -1069,7 +1069,7 @@ const datas = [
             description: "Cologne Cable Car – панорамна канатна дорога над річкою Рейн у Кельні. Історія, розташування, види на Кельнський собор, Rheinpark та корисна інформація для відвідувачів.",
             ogTitle: "Cologne Cable Car – панорамний вид на Кельн з висоти",
             ogDescription: "Канатна дорога Cologne Cable Car з’єднує береги Рейну та відкриває один із найкращих панорамних видів на Кельн, Кельнський собор і Rheinpark. Популярна пам’ятка та символ міста.",
-            ogImage: "https://our-travels.info/new/foto/Germany/nrw/koln/koln-city/rheinpark_koln/003.jpg"
+            ogImage: "https://our-travels.info/foto/Germany/nrw/koln/koln-city/rheinpark_koln/003.jpg"
         }
     },
     {
@@ -1127,7 +1127,7 @@ const datas = [
             description: "Залишки римського форту Дивітія IV століття н.е. на правому березі Рейну в Кельні. Збереглися башта, кам'яна кладка та основи стін. Доступно для огляду в Рейнському парку.",
             ogTitle: "Руїни римського форту Дивітія в Кельні – залишки римського укріплення",
             ogDescription: "Познайомтеся з залишками римського форту Дивітія в Рейнському парку, Кельн. Оригінальні стіни, башта та основи відкриті для прогулянок та огляду.",
-            ogImage: "https://our-travels.info/new/foto/Germany/nrw/koln/koln-city/rheinpark_koln/004.jpg"
+            ogImage: "https://our-travels.info/foto/Germany/nrw/koln/koln-city/rheinpark_koln/004.jpg"
         }
     },
 
@@ -1196,7 +1196,7 @@ const datas = [
             description: "Ансамбль палаців Аугустусбург і Фалькенлюст у Брюлі — шедевр бароко і рококо, доповнений французькими та англійськими садами, фонтанами, алеями і дзеркальними басейнами. Історія, стиль, цікаві факти.",
             ogTitle: "Палаци Брюля: архітектура, сади та легенди",
             ogDescription: "Дізнайтеся про Палаци Брюля — їхню велич, інтер’єри, парк із партером, алеями та англійським лісопарком, культурне значення і статус ЮНЕСКО.",
-            ogImage: "https://our-travels.info/new/foto/Germany/nrw/koln/Rhein-Erft-Kreis/bruhl/bruhel_palaces/001.jpg"
+            ogImage: "https://our-travels.info/foto/Germany/nrw/koln/Rhein-Erft-Kreis/bruhl/bruhel_palaces/001.jpg"
         }
     },
     {
@@ -1245,7 +1245,7 @@ const datas = [
             description: "Єдиний у світі музей, присвячений Максу Ернсту. Колекція, історія, дадаїзм, сюрреалізм, тимчасові виставки.",
             ogTitle: "Музей Макса Ернста — Брюль, Німеччина",
             ogDescription: "Познайомтеся з музеєм Макса Ернста в Брюлі, його колекцією та виставками, присвяченими дадаїзму та сюрреалізму.",
-            ogImage: "https://our-travels.info/new/foto/Germany/nrw/koln/Rhein-Erft-Kreis/bruhl/max_ernst_museum/Max-Ernst-Museum.jpg"
+            ogImage: "https://our-travels.info/foto/Germany/nrw/koln/Rhein-Erft-Kreis/bruhl/max_ernst_museum/Max-Ernst-Museum.jpg"
         }
     },
     {
@@ -1302,7 +1302,7 @@ const datas = [
             description: "Phantasialand – один із найвідвідуваніших парків Європи з більш ніж 30 атракціонами, тематичними зонами та унікальними готелями.",
             ogTitle: "Phantasialand – Брюль, Німеччина",
             ogDescription: "Познайомтеся з Phantasialand у Брюлі: атракціони, тематичні зони, готелі та розваги для всієї родини.",
-            ogImage: "https://our-travels.info/new/foto/Germany/nrw/koln/Rhein-Erft-Kreis/bruhl/phantasialand/001.jpg"
+            ogImage: "https://our-travels.info/foto/Germany/nrw/koln/Rhein-Erft-Kreis/bruhl/phantasialand/001.jpg"
         }
     },
 
@@ -1356,7 +1356,7 @@ const datas = [
             description: "KERAMION: постійна колекція та тимчасові виставки кераміки, історія виробництва та сучасне художнє бачення.",
             ogTitle: "KERAMION – Центр сучасної та історичної кераміки, Frechen",
             ogDescription: "Дізнайтеся про колекцію Кремера, історичну кераміку Фрехена та виставки в KERAMION.",
-            ogImage: "https://our-travels.info/new/foto/Germany/nrw/koln/Rhein-Erft-Kreis/frechen/keramion/frechen_keramion.jpg"
+            ogImage: "https://our-travels.info/foto/Germany/nrw/koln/Rhein-Erft-Kreis/frechen/keramion/frechen_keramion.jpg"
         }
     },
     {
@@ -1406,7 +1406,7 @@ const datas = [
             description: "Burg Bachem: історія, водяні рови, прогулянкові зони та відпочинок біля невеликого озера у Фрехені.",
             ogTitle: "Burg Bachem – Frechen, Deutschland",
             ogDescription: "Відкрийте для себе історичну водяну фортецю Burg Bachem та озеро з прогулянковими алеями у Фрехені.",
-            ogImage: "https://our-travels.info/new/foto/Germany/nrw/koln/Rhein-Erft-Kreis/frechen/burg-bachem/Burg-Bachem_3.jpg"
+            ogImage: "https://our-travels.info/foto/Germany/nrw/koln/Rhein-Erft-Kreis/frechen/burg-bachem/Burg-Bachem_3.jpg"
         }
     },
     {
@@ -1456,7 +1456,7 @@ const datas = [
             description: "Площа Йоганна Шмітца – центральна міська площа Фрехена з ринками, заходами та історичною ратушею.",
             ogTitle: "Johann-Schmitz-Platz – Frechen, Deutschland",
             ogDescription: "Відкрийте для себе центральну площу Фрехена – Johann-Schmitz-Platz з історичною ратушею, ринками та міською атмосферою.",
-            ogImage: "https://our-travels.info/new/foto/Germany/nrw/koln/Rhein-Erft-Kreis/frechen/johann_schmitz_platz_frechen/001.jpg"
+            ogImage: "https://our-travels.info/foto/Germany/nrw/koln/Rhein-Erft-Kreis/frechen/johann_schmitz_platz_frechen/001.jpg"
         }
     },
     {
@@ -1507,7 +1507,7 @@ const datas = [
             description: "Стара ратуша Фрехена – історична адміністративна будівля з вежею на площі Йоганна Шмітца в центрі міста, Північний Рейн‑Вестфалія.",
             ogTitle: "Стара ратуша Фрехена – Фрехен, Німеччина",
             ogDescription: "Відкрийте для себе стару ратушу Фрехена з характерною вежею та архітектурою в стилі необароко на площі Йоганна Шмітца.",
-            ogImage: "https://our-travels.info/new/foto/Germany/nrw/koln/Rhein-Erft-Kreis/frechen/johann_schmitz_platz_frechen/008.jpg"
+            ogImage: "https://our-travels.info/foto/Germany/nrw/koln/Rhein-Erft-Kreis/frechen/johann_schmitz_platz_frechen/008.jpg"
         }
     },
     {
@@ -1533,7 +1533,7 @@ const datas = [
             description: "На площі перед старою ратушею знаходиться декоративний районний фонтан, створений у 1981 році художником-керамістом Вімом Мюлендиком (Wim Mühlendyck). Він облицьований керамічними плитами з рельєфними зображеннями сцен, що відображають розвиток ремесел та керамічної промисловості Фрехена – від традиційних майстрів до заводського виробництва, а різноманітні маскарони (обличчя) слугують характерними водними струменями фонтану.",
             ogTitle: "Декоративний районний фонтан перед старою ратушею Фрехена",
             ogDescription: "Фонтан на площі перед старою ратушею у Фрехені, створений художником-керамістом Вімом Мюлендиком у 1981 році, оформлений керамічними плитами з рельєфами сцен ремесел та керамічної промисловості та маскаронами з водними струменями.",
-            ogImage: "https://our-travels.info/new/foto/Germany/nrw/koln/Rhein-Erft-Kreis/frechen/johann_schmitz_platz_frechen/005.jpg"
+            ogImage: "https://our-travels.info/foto/Germany/nrw/koln/Rhein-Erft-Kreis/frechen/johann_schmitz_platz_frechen/005.jpg"
         }
     },
     {
@@ -1559,7 +1559,7 @@ const datas = [
             description: "У пішохідній зоні в 1986 році встановлено скульптурний фонтан Клюттенбрюннен (Klüttenbrunnen), авторства німецького скульптора Олафа Хьонена. Він розташований поруч із площею Йоганна Шмітца та відображає промислову та ремісничу історію Фрехена, зокрема видобуток та обробку місцевої глини. Фонтан оформлений як художня композиція з кам’яними елементами та водними струменями, гармоніюючи з міським середовищем і слугуючи візуальним орієнтиром для туристів.",
             ogTitle: "Фонтан Клюттенбрюннен (Klüttenbrunnen) у Фрехені",
             ogDescription: "Скульптурний фонтан Клюттенбрюннен (Klüttenbrunnen) у пішохідній зоні поруч із площею Йоганна Шмітца відображає промислову та ремісничу історію Фрехена, оформлений як художня композиція з кам’яними елементами та водними струменями.",
-            ogImage: "https://our-travels.info/new/foto/Germany/nrw/koln/Rhein-Erft-Kreis/frechen/johann_schmitz_platz_frechen/004.jpg"
+            ogImage: "https://our-travels.info/foto/Germany/nrw/koln/Rhein-Erft-Kreis/frechen/johann_schmitz_platz_frechen/004.jpg"
         }
     },
     {
@@ -1618,7 +1618,7 @@ const datas = [
             description: "Абатство Гайстербах – колишній цистерціанський монастир XII століття у долині Гайстербах поруч із Кенігсвінтером. Історія, значення та відвідування історичного комплексу.",
             ogTitle: "Абатство Гайстербах – середньовічний монастир у долині Гайстербах",
             ogDescription: "Історичне абатство Гайстербах – одна з найатмосферніших пам’яток середньовічної монастирської архітектури в регіоні Зібенгебірге, неподалік від Кенігсвінтера.",
-            ogImage: "https://our-travels.info/new/foto/Germany/nrw/koln/Rhein-Sieg-Kreis/konigswinter/heisterbach/001.jpg"
+            ogImage: "https://our-travels.info/foto/Germany/nrw/koln/Rhein-Sieg-Kreis/konigswinter/heisterbach/001.jpg"
         }
     },
     {
@@ -1660,7 +1660,7 @@ const datas = [
             description: "Відкрийте для себе вражаючі руїни хору абатства Гайстербах: історія, архітектура та унікальні залишки середньовічного монастиря в Зібенгебірге.",
             ogTitle: "Руїни хору абатства Гайстербах",
             ogDescription: "Відвідайте руїни хору абатства Гайстербах та пориньте в атмосферу історії середньовічного монастиря в серці Сівенбергу.",
-            ogImage: "https://our-travels.info/new/foto/Germany/nrw/koln/Rhein-Sieg-Kreis/konigswinter/heisterbach/001.jpg"
+            ogImage: "https://our-travels.info/foto/Germany/nrw/koln/Rhein-Sieg-Kreis/konigswinter/heisterbach/001.jpg"
         }
     },
     {
@@ -1704,7 +1704,7 @@ const datas = [
             description: "Церква Святого Петра в Гайстербасі – католицька церква 1953–1956 років на території колишнього абатства. Історія, архітектура, вітражі та відвідування в Гайстербасі, Кенігсвінтер.",
             ogTitle: "Церква Святого Петра в Гайстербасі",
             ogDescription: "Діюча католицька церква на території колишнього абатства Гайстербах. Збудована у 1953-1956 роках, з унікальним тимпаном XIII століття та вражаючими вітражами.",
-            ogImage: "https://our-travels.info/new/foto/Germany/nrw/koln/Rhein-Sieg-Kreis/konigswinter/heisterbach/005.jpg"
+            ogImage: "https://our-travels.info/foto/Germany/nrw/koln/Rhein-Sieg-Kreis/konigswinter/heisterbach/005.jpg"
         }
     },
 
@@ -1778,7 +1778,7 @@ const datas = [
             description: "Гора Драхенфельс у Кенігсвінтері – легендарне місце Рейнської долини, пов’язане з міфом про дракона та Зиґфріда. Панорамні краєвиди на Рейн, руїни замку, природний парк Зібенґебірґе та популярні туристичні маршрути.",
             ogTitle: "Гора Драхенфельс – легенди та панорами над Рейном",
             ogDescription: "Відкрийте для себе гору Драхенфельс: міфи про дракона, краєвиди Рейну, природний парк Зібенґебірґе та історичне значення однієї з найвідоміших гір регіону.",
-            ogImage: "https://our-travels.info/new/foto/Germany/nrw/koln/Rhein-Sieg-Kreis/konigswinter/drachenfels/001.jpg"
+            ogImage: "https://our-travels.info/foto/Germany/nrw/koln/Rhein-Sieg-Kreis/konigswinter/drachenfels/001.jpg"
         }
     },
     {
@@ -1834,7 +1834,7 @@ const datas = [
             description: "Залізниця Драхенфельса (Drachenfelsbahn) – історична зубчаста залізниця 1883 року в Кенігсвінтері. Вона з’єднує долину Рейну з плато гори Драхенфельс і є однією з головних туристичних атракцій регіону.",
             ogTitle: "Залізниця Драхенфельса (Drachenfelsbahn)",
             ogDescription: "Проїдьтеся Drachenfelsbahn — найстарішою діючою зубчастою залізницею Німеччини з панорамними краєвидами на Рейн і гору Драхенфельс.",
-            ogImage: "https://our-travels.info/new/foto/Germany/nrw/koln/Rhein-Sieg-Kreis/konigswinter/drachenfels/002.jpg"
+            ogImage: "https://our-travels.info/foto/Germany/nrw/koln/Rhein-Sieg-Kreis/konigswinter/drachenfels/002.jpg"
         }
     },
     {
@@ -1897,7 +1897,7 @@ const datas = [
             description: "Палац Драхенбург (Schloss Drachenburg) розташований на схилі гори Drachenfels у Кенігсвінтері. Побудований у 1882-1884 роках, замок вражає неоготичною архітектурою, розкішними інтер’єрами та панорамними видами на долину Рейну.",
             ogTitle: "Палац Драхенбург (Schloss Drachenburg)",
             ogDescription: "Відвідайте палац Драхенбург – романтичний неоготичний замок XIX століття з історичними залами, вітражами та оглядовими терасами з видом на Рейн та гору Drachenfels.",
-            ogImage: "https://our-travels.info/new/foto/Germany/nrw/koln/Rhein-Sieg-Kreis/konigswinter/drachenfels/001.jpg"
+            ogImage: "https://our-travels.info/foto/Germany/nrw/koln/Rhein-Sieg-Kreis/konigswinter/drachenfels/001.jpg"
         }
     },
     {
@@ -1942,7 +1942,7 @@ const datas = [
             description: "Руїни замку Drachenfels розташовані на вершині однойменної гори в регіоні Зібенгебірге. Збереглися фрагменти стін і веж, а з вершини відкриваються панорамні види на Рейн і Кенігсвінтер.",
             ogTitle: "Руїни замку Драхенфельс (Burg Drachenfels)",
             ogDescription: "Відвідайте руїни замку Drachenfels – середньовічної фортеці XII століття із збереженими стінами та вежами, відкритими для відвідування з панорамними видами на долину Рейну.",
-            ogImage: "https://our-travels.info/new/foto/Germany/nrw/koln/Rhein-Sieg-Kreis/konigswinter/drachenfels/003.jpg"
+            ogImage: "https://our-travels.info/foto/Germany/nrw/koln/Rhein-Sieg-Kreis/konigswinter/drachenfels/003.jpg"
         }
     },
     {
@@ -1985,7 +1985,7 @@ const datas = [
             description: "Зал Нібеленгов – музей, побудований у 1913 році на вершині гори Драхенфельс, присвячений німецькому епосові «Пісня про Нібелунгів» та легендам про драконів. Поруч розташована інтерактивна Драконя печера.",
             ogTitle: "Зал Нібеленгов (Nibelungenhalle) на горі Драхенфельс",
             ogDescription: "Відвідайте Зал Нібеленгов – музей міфів і легенд Німеччини на вершині Драхенфельса. Експозиції про Нібелунгів, драконів і інтерактивна Драконя печера з видами на долину Рейну.",
-            ogImage: "https://our-travels.info/new/foto/Germany/nrw/koln/Rhein-Sieg-Kreis/konigswinter/drachenfels/004.jpg"
+            ogImage: "https://our-travels.info/foto/Germany/nrw/koln/Rhein-Sieg-Kreis/konigswinter/drachenfels/004.jpg"
         }
     },
     {
@@ -2038,7 +2038,7 @@ const datas = [
             description: "Reptile Zoo на горі Драхенфельс – зоологічний парк, де можна побачити змій, ящірок, черепах та рідкісних екзотичних тварин, а також взяти участь в інтерактивних демонстраціях та освітніх програмах.",
             ogTitle: "Зоопарк рептилій Драхенфельс",
             ogDescription: "Відвідайте Reptile Zoo на горі Драхенфельс – зоопарк з рідкісними рептиліями, інтерактивними демонстраціями годування та освітніми програмами для дітей і дорослих.",
-            ogImage: "https://our-travels.info/new/foto/Germany/nrw/koln/Rhein-Sieg-Kreis/konigswinter/drachenfels/005.jpg"
+            ogImage: "https://our-travels.info/foto/Germany/nrw/koln/Rhein-Sieg-Kreis/konigswinter/drachenfels/005.jpg"
         }
     },
 
@@ -2091,7 +2091,7 @@ const datas = [
             description: "Старе місто Люденшайда – середньовічна частина міста з історичними будівлями XVIII–XIX століть, церквою Спасителя, залишками міської стіни та історичним музеєм. Прогуляйтеся затишними вуличками та відчуйте атмосферу минулих століть.",
             ogTitle: "Старе місто Люденшайда",
             ogDescription: "Відвідайте старе місто Люденшайда – історичну частину міста з бароковими будинками, церквою Спасителя, історичним музеєм та залишками середньовічної міської стіни.",
-            ogImage: "https://our-travels.info/new/foto/Germany/nrw/arnsberg/Märkischer-Kreis/luedenscheid/001.JPG"
+            ogImage: "https://our-travels.info/foto/Germany/nrw/arnsberg/Märkischer-Kreis/luedenscheid/001.JPG"
         }
     },
     {
@@ -2148,7 +2148,7 @@ const datas = [
             description: "Церква Спасителя (Erlöserkirche) – найдавніша церква Люденшайда, побудована в XII столітті, з класицистичним фасадом, емпорами та лютеранським вівтарем. Відвідайте цей історичний храм у центрі старого міста й відчуйте атмосферу минулих століть.",
             ogTitle: "Церква Спасителя, Люденшайда",
             ogDescription: "Відкрийте для себе Церкву Спасителя в Люденшайді – історичний храм з вежею, емпорами та лютеранським вівтарем, архітектурна домінанта старого міста.",
-            ogImage: "https://our-travels.info/new/foto/Germany/nrw/arnsberg/Märkischer-Kreis/luedenscheid/erloeserkirche_luedenscheid/001.JPG"
+            ogImage: "https://our-travels.info/foto/Germany/nrw/arnsberg/Märkischer-Kreis/luedenscheid/erloeserkirche_luedenscheid/001.JPG"
         }
     },
     {
@@ -2178,7 +2178,7 @@ const datas = [
             description: "Фонтан на площі Графа Енгельберта був створений у 1982 році під час реконструкції старого міста. Він є одним із символів історичного центру Люденшайда та прикрашений фігурою герольда, що відсилає до заснування міста графом Енгельбертом I.",
             ogTitle: "Фонтан на площі Графа Енгельберта, Люденшайд",
             ogDescription: "Відвідайте фонтан на площі Графа Енгельберта в Люденшайді – історичний об’єкт старого міста, пов’язаний із заснуванням міста та реконструкцією історичного центру.",
-            ogImage: "https://our-travels.info/new/foto/Germany/nrw/arnsberg/Märkischer-Kreis/luedenscheid/altstadt_luedenscheid/001.JPG"
+            ogImage: "https://our-travels.info/foto/Germany/nrw/arnsberg/Märkischer-Kreis/luedenscheid/altstadt_luedenscheid/001.JPG"
         }
     },
     {
@@ -2219,7 +2219,7 @@ const datas = [
             description: "Центральна площа Люденшайда (Rathausplatz) – головний громадський простір міста поруч з ратушею. Тут проходять ринки, міські заходи та зустрічі мешканців, а сама площа слугує відправною точкою для прогулянок по центру.",
             ogTitle: "Центральна площа Люденшайда",
             ogDescription: "Центральна площа Люденшайда (Rathausplatz) – центральна міська площа поруч з ратушею, місце проведення ринків, свят та важливих міських подій.",
-            ogImage: "https://our-travels.info/new/foto/Germany/nrw/arnsberg/Märkischer-Kreis/luedenscheid/rathausplatz_lüdenscheid/001.JPG"
+            ogImage: "https://our-travels.info/foto/Germany/nrw/arnsberg/Märkischer-Kreis/luedenscheid/rathausplatz_lüdenscheid/001.JPG"
         }
     },
     {
@@ -2259,7 +2259,7 @@ const datas = [
             description: "Штернплац (Sternplatz) – одна з центральних площ Люденшайда, розташована в пішохідній зоні історичного центру. Площа служить важливою точкою міського життя, прогулянок та проведення заходів.",
             ogTitle: "Штернплац (Sternplatz) у Люденшайді",
             ogDescription: "Штернплац (Sternplatz) – центральна міська площа в історичному центрі Люденшайда, частина пішохідної зони та важливий громадський простір міста.",
-            ogImage: "https://our-travels.info/new/foto/Germany/nrw/arnsberg/Märkischer-Kreis/luedenscheid/sternplatz/003.jpg"
+            ogImage: "https://our-travels.info/foto/Germany/nrw/arnsberg/Märkischer-Kreis/luedenscheid/sternplatz/003.jpg"
         }
     },
     {
@@ -2290,7 +2290,7 @@ const datas = [
             description: "Пам'ятник дядьку Віллі на площі Штернплац в Люденшайді – бронзова скульптура, що зображує типового мешканця міста з собакою. Скульптура стала неофіційним символом міста та популярним місцем для зустрічей і фотографій.",
             ogTitle: "Пам'ятник дядьку Віллі в Люденшайді",
             ogDescription: "Бронзова скульптура дядька Віллі на площі Штернплац в історичному центрі Люденшайда відображає доброзичливість та повсякденне життя мешканців міста. Популярне місце серед туристів та городян.",
-            ogImage: "https://our-travels.info/new/foto/Germany/nrw/arnsberg/Märkischer-Kreis/luedenscheid/sternplatz/001.JPG"
+            ogImage: "https://our-travels.info/foto/Germany/nrw/arnsberg/Märkischer-Kreis/luedenscheid/sternplatz/001.JPG"
         }
     },
     {
@@ -2321,7 +2321,7 @@ const datas = [
             description: "Фонтан на площі Штернплац в Люденшайді – декоративний водоймище, створений наприкінці 1970-х років скульптором Куртом Тоні Нойманом. Навколо фонтану розташовані таблички з назвами міст-партнерів: Брайхаус, Таганрог, Ден-Хелдер, Льовен, Мшленіце та Ромійі‑сюр‑Сен. Фонтан став популярним місцем відпочинку та прогулянок на площі.",
             ogTitle: "Фонтан на площі Штернплац в Люденшайді",
             ogDescription: "Декоративний фонтан на площі Штернплац в історичному центрі Люденшайда, оточений табличками з назвами міст-партнерів. Місце зустрічей та відпочинку мешканців і гостей міста.",
-            ogImage: "https://our-travels.info/new/foto/Germany/nrw/arnsberg/Märkischer-Kreis/luedenscheid/sternplatz/003.jpg"
+            ogImage: "https://our-travels.info/foto/Germany/nrw/arnsberg/Märkischer-Kreis/luedenscheid/sternplatz/003.jpg"
         }
     },
     {
@@ -2386,7 +2386,7 @@ const datas = [
             description: "Відкрийте для себе Історичний музей Люденшайда: вузькоколійний потяг, моделі дирижаблів, техніка пожежної охорони, колекція карт і артефактів з бронзової доби. Відвідайте музей і музейне кафе в сучасному комплексі міста.",
             ogTitle: "Історичний музей Люденшайда – унікальні експонати і колекції",
             ogDescription: "Відвідайте Історичний музей Люденшайда: від вузькоколійного поїзда до колекції бронзових застібок, історичних карт і моделей міста. Музей та музейне кафе чекають вас у культурному комплексі міста.",
-            ogImage: "https://our-travels.info/new/foto/Germany/nrw/arnsberg/Märkischer-Kreis/luedenscheid/history_museum_luedenscheid/001.JPG"
+            ogImage: "https://our-travels.info/foto/Germany/nrw/arnsberg/Märkischer-Kreis/luedenscheid/history_museum_luedenscheid/001.JPG"
         }
     },
 ]

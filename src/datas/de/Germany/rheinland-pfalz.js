@@ -121,7 +121,7 @@ const datas = {
         description: "Rheinland-Pfalz: Städte, Landkreise, Kultur und Sehenswürdigkeiten.",
         ogTitle: "Rheinland-Pfalz — Informationen zur Region und zu den Landkreisen",
         ogDescription: "Detaillierte Informationen zu Rheinland-Pfalz: Städte, Landkreise, Geschichte und interessante Fakten.",
-        ogImage: "https://our-travels.info/new/foto/Germany/rheinland-pfalz/trier-city/portaNigra_trier/001.JPG"
+        ogImage: "https://our-travels.info/foto/Germany/rheinland-pfalz/trier-city/portaNigra_trier/001.JPG"
     }
 }
 

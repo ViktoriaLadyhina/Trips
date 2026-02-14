@@ -46,7 +46,7 @@ const datas = [
             description: "Der Kölner Karneval ist ein bekanntes Fest mit Paraden, Maskeraden und Musikdarbietungen, das jährlich im Zentrum von Köln stattfindet.",
             ogTitle: "Kölner Karneval – größtes Festival Deutschlands",
             ogDescription: "Der Hauptkarnevalsumzug Rosenmontag und die Weiberfastnacht machen den Kölner Karneval zu einem einzigartigen Ereignis in Deutschland.",
-            ogImage: "https://our-travels.info/new/foto/Germany/nrw/koln/koln-city/karneval/001.jpg"
+            ogImage: "https://our-travels.info/foto/Germany/nrw/koln/koln-city/karneval/001.jpg"
         }
     }
 ];

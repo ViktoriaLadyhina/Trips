@@ -49,7 +49,7 @@ const datas = [
       description: "Entdecken Sie die Porta Nigra in Trier – das größte erhaltene römische Stadttor nördlich der Alpen. Geschichte, interessante Fakten, praktische Informationen für Touristen und Legenden.",
       ogTitle: "Porta Nigra, Trier – historisches römisches Stadttor in Deutschland",
       ogDescription: "Besuchen Sie die Porta Nigra – beeindruckendes römisches Tor im Zentrum von Trier. Erfahren Sie Geschichte, Legenden und praktische Informationen für Touristen. Perfekt für Liebhaber von Geschichte und Architektur.",
-      ogImage: "https://our-travels.info/new/foto/Germany/rheinland-pfalz/trier-city/portaNigra_trier/001.JPG"
+      ogImage: "https://our-travels.info/foto/Germany/rheinland-pfalz/trier-city/portaNigra_trier/001.JPG"
     }
   }
 

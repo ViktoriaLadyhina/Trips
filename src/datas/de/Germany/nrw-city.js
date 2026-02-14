@@ -88,7 +88,7 @@ const datas = [
             description: "Köln: Geschichte, Geographie, Sehenswürdigkeiten, berühmte Persönlichkeiten und interessante Fakten der größten Stadt Nordrhein-Westfalens.",
             ogTitle: "Köln – Stadtinformation",
             ogDescription: "Detaillierte Informationen über Köln: Kultur, Geschichte, berühmte Einwohner und interessante Fakten.",
-            ogImage: "https://our-travels.info/new/foto/Germany/nrw/koln/koln-city/koln-cathedral/001.jpg"
+            ogImage: "https://our-travels.info/foto/Germany/nrw/koln/koln-city/koln-cathedral/001.jpg"
         }
     },
 
@@ -151,7 +151,7 @@ const datas = [
             description: "Brühl: Geschichte, Sehenswürdigkeiten, berühmte Persönlichkeiten und interessante Fakten der Stadt.",
             ogTitle: "Brühl – Informationen zur Stadt",
             ogDescription: "Detaillierte Informationen über Brühl: Kultur, Geschichte, berühmte Einwohner und interessante Fakten.",
-            ogImage: "https://our-travels.info/new/foto/Germany/nrw/koln/Rhein-Erft-Kreis/bruhl/bruhel_palaces/001.jpg"
+            ogImage: "https://our-travels.info/foto/Germany/nrw/koln/Rhein-Erft-Kreis/bruhl/bruhel_palaces/001.jpg"
         }
     },
     {
@@ -233,7 +233,7 @@ const datas = [
             description: "Frechen: Geschichte, Geografie, bekannte Persönlichkeiten und interessante Fakten über die Keramikstadt in Nordrhein-Westfalen.",
             ogTitle: "Frechen – Stadtinformationen",
             ogDescription: "Detaillierte Informationen über Frechen: Kultur, Geschichte, bekannte Persönlichkeiten und interessante Fakten.",
-            ogImage: "https://our-travels.info/new/foto/Germany/nrw/koln/Rhein-Erft-Kreis/frechen/johann_schmitz_platz_frechen/006.jpg"
+            ogImage: "https://our-travels.info/foto/Germany/nrw/koln/Rhein-Erft-Kreis/frechen/johann_schmitz_platz_frechen/006.jpg"
         }
     },
 
@@ -313,7 +313,7 @@ const datas = [
             description: "Königswinter: Geschichte, Geographie, berühmte Persönlichkeiten und interessante Fakten über die malerische Stadt im Rhein-Sieg-Kreis.",
             ogTitle: "Königswinter – Informationen über die Stadt",
             ogDescription: "Detaillierte Informationen über Königswinter: Sehenswürdigkeiten, Natur, Geschichte und bekannte Persönlichkeiten.",
-            ogImage: "https://our-travels.info/new/foto/Germany/nrw/koln/Rhein-Sieg-Kreis/konigswinter/drachenfels/007.jpg"
+            ogImage: "https://our-travels.info/foto/Germany/nrw/koln/Rhein-Sieg-Kreis/konigswinter/drachenfels/007.jpg"
         }
     },
 
@@ -412,7 +412,7 @@ const datas = [
             description: "Lüdenscheid: Geschichte, Geografie, bekannte Persönlichkeiten und interessante Fakten über die „Stadt des Lichts“ in Nordrhein-Westfalen.",
             ogTitle: "Lüdenscheid – Informationen über die Stadt",
             ogDescription: "Detaillierte Informationen über Lüdenscheid: Kultur, Geschichte, bedeutende Persönlichkeiten und spannende Fakten über die Stadt des Lichts und der Innovation.",
-            ogImage: "https://our-travels.info/new/foto/Germany/nrw/arnsberg/Märkischer-Kreis/luedenscheid/rathausplatz_lüdenscheid/001.JPG"
+            ogImage: "https://our-travels.info/foto/Germany/nrw/arnsberg/Märkischer-Kreis/luedenscheid/rathausplatz_lüdenscheid/001.JPG"
         }
     },
 ]

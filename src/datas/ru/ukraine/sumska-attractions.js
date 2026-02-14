@@ -13,9 +13,6 @@ const datas = [
         officialSite: [
             { bold: 'Официальный сайт собора', link: 'https://sumy-sob.church.ua/' }
         ],
-        unesco_status: {
-            included: false,
-        },
         construction_period: "1776–1788 (реконструкция 1882–1892)",
         architects: ["Михаил Ловцов (реконструкция)"],
         founder: "Сумские меценаты XVIII века; реконструкция — Д.И. Суханов",
@@ -53,7 +50,7 @@ const datas = [
             description: "Спасо-Преображенский собор — главный храм Сум, архитектурный памятник XVIII–XIX веков с мраморно-малахитовым иконостасом и 56-метровой колокольней.",
             ogTitle: "Спасо-Преображенский собор — главная святыня Сум",
             ogDescription: "Исторический кафедральный собор Сум: уникальная архитектура, чудотворные иконы, малахитовый иконостас и знаменитые куранты, заводящиеся раз в три дня.",
-            ogImage: "https://our-travels.info/new/foto/Ukraine/sumska/sumy-city/spaso-preobrazhensky/004.jpg"
+            ogImage: "https://our-travels.info/foto/Ukraine/sumska/sumy-city/spaso-preobrazhensky/004.jpg"
         }
     },
     {
@@ -101,7 +98,7 @@ const datas = [
             description: "Покровская площадь – одна из старейших площадей Сум с богатой историей. Узнайте о её прошлом, военных событиях и современном облике.",
             ogTitle: "Покровская площадь – сердце исторических Сум",
             ogDescription: "Покровская площадь – одна из старейших площадей Сум, связанная с ключевыми событиями в истории города.",
-            ogImage: "https://our-travels.info/new/foto/Ukraine/sumska/sumy-city/altanka/009.jpg"
+            ogImage: "https://our-travels.info/foto/Ukraine/sumska/sumy-city/altanka/009.jpg"
         }
     },
     {
@@ -118,9 +115,6 @@ const datas = [
         address: [{ bold: "Адрес:", text: " Покровская площадь" }],
         hiddenFromList: true,
         showMore: true,
-        unesco_status: {
-            included: false,
-        },
         construction_period: "примерно в начале XX века – около 1900–1905 годов",
         architects: ["Матвей Щавелеев "],
         founder: " Н.И. Лещинский",
@@ -141,7 +135,7 @@ const datas = [
             description: "Den ausdrucksstarken Silhouette bilden elegante profilierte Säulen, geschnitzte Gesimsverzierungen, dekorative Dachspitzen und zahlreiche weitere Details.",
             ogTitle: "Pavillon – die Visitenkarte von Sumy",
             ogDescription: "Den ausdrucksstarken Silhouette bilden elegante profilierte Säulen, geschnitzte Gesimsverzierungen, dekorative Dachspitzen und zahlreiche weitere Details.",
-            ogImage: "https://our-travels.info/new/foto/Ukraine/sumska/sumy-city/altanka/009.jpg"
+            ogImage: "https://our-travels.info/foto/Ukraine/sumska/sumy-city/altanka/009.jpg"
         }
     }
 ]

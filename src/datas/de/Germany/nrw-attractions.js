@@ -71,7 +71,7 @@ const datas = [
             description: "Der Kölner Dom – Symbol der Stadt und Meisterwerk gotischer Architektur. Baugeschichte, Reliquien, Glasfenster, Glocken und Geheimnisse des Doms.",
             ogTitle: "Kölner Dom: Geschichte, Architektur und Reliquien",
             ogDescription: "Tauchen Sie ein in die Geschichte des Kölner Doms – Größe, Reliquien, Architektur und Intrigen des gotischen Meisterwerks.",
-            ogImage: "https://our-travels.info/new/foto/Germany/nrw/koln/koln-city/koln-cathedral/001.jpg"
+            ogImage: "https://our-travels.info/foto/Germany/nrw/koln/koln-city/koln-cathedral/001.jpg"
         }
     },
     {
@@ -129,7 +129,7 @@ const datas = [
             description: "Kölner Rathaus: gotischer Turm, Renaissance-Loggia",
             ogTitle: "Kölner Rathaus: gotischer Turm, Renaissance-Loggia",
             ogDescription: "Das Kölner Rathaus – das älteste Verwaltungsgebäude Deutschlands, vereint gotischen Turm, Renaissance-Loggia und den historischen Hansasaal.",
-            ogImage: "https://our-travels.info/new/foto/Germany/nrw/koln/koln-city/rathaus-koeln/Rathaus-Köln.jpg"
+            ogImage: "https://our-travels.info/foto/Germany/nrw/koln/koln-city/rathaus-koeln/Rathaus-Köln.jpg"
         }
     },
     {
@@ -191,7 +191,7 @@ const datas = [
             description: "Der Gürzenich in Köln wurde in den Jahren 1441–1452 als Gebäude für städtische Feierlichkeiten errichtet. Heute finden hier Konzerte, Bankette und offizielle Empfänge statt.",
             ogTitle: "Gürzenich, Köln – historisches Gebäude und Veranstaltungszentrum",
             ogDescription: "Entdecken Sie den Gürzenich in Köln – ein historisches Bauwerk aus dem 15. Jahrhundert, das nach dem Krieg wiederaufgebaut wurde und heute Konzerte, Karnevalssitzungen und festliche Empfänge beherbergt.",
-            ogImage: "https://our-travels.info/new/foto/Germany/nrw/koln/koln-city/guerzenich_koln/001.jpg"
+            ogImage: "https://our-travels.info/foto/Germany/nrw/koln/koln-city/guerzenich_koln/001.jpg"
         }
     },
     {
@@ -246,7 +246,7 @@ const datas = [
             description: "Das Römisch-Germanische Museum ist ein einzigartiges archäologisches Museum in Köln, errichtet über einer römischen Villa. Dionysosmosaik, Glas, Schmuck und Geschichte der Stadt Colonia.",
             ogTitle: "Römisch-Germanisches Museum Köln — Geschichte und Dionysosmosaik",
             ogDescription: "Museum der antiken Colonia: Dionysosmosaik, römisches Glas und Archäologie in Köln. Erfahren Sie, wie die Antike unter der modernen Stadt erhalten blieb.",
-            ogImage: "https://our-travels.info/new/foto/Germany/nrw/koln/koln-city/roemisch-germanisches-museum/001.jpg"
+            ogImage: "https://our-travels.info/foto/Germany/nrw/koln/koln-city/roemisch-germanisches-museum/001.jpg"
         }
     },
     {
@@ -299,7 +299,7 @@ const datas = [
             description: "Das Duftmuseum im Farina-Haus, auch bekannt als Haus des Kölnisch Wassers, ist das älteste Duftmuseum in Köln und die Geburtsstätte des berühmten Eau de Cologne. Hier schuf Johann Maria Farina 1709 das erste Eau de Cologne.",
             ogTitle: "Farina-Haus in Köln – Haus des Kölnisch Wassers und Museum des Eau de Cologne",
             ogDescription: "Besuchen Sie das Duftmuseum im Farina-Haus, das auch als Haus des Kölnisch Wassers bekannt ist – die Heimat des legendären Eau de Cologne. Erleben Sie Geschichte, Düfte und die dreihundertjährige Tradition des Eau de Cologne.",
-            ogImage: "https://our-travels.info/new/foto/Germany/nrw/koln/koln-city/farina-duftmuseum/001.jpg"
+            ogImage: "https://our-travels.info/foto/Germany/nrw/koln/koln-city/farina-duftmuseum/001.jpg"
         }
     },
     {
@@ -354,7 +354,7 @@ const datas = [
             description: "Das Museum Ludwig in Köln ist eine der führenden Sammlungen zeitgenössischer Kunst weltweit, gegründet auf der Sammlung des deutschen Industriellen Peter Ludwig und seiner Frau Irene.",
             ogTitle: "Museum Ludwig — Zeitgenössische Kunst in Köln",
             ogDescription: "Besuchen Sie das Museum Ludwig in Köln, eine der führenden Sammlungen zeitgenössischer Kunst weltweit, gegründet auf der Sammlung des deutschen Industriellen Peter Ludwig und seiner Frau Irene.",
-            ogImage: "https://our-travels.info/new/foto/Germany/nrw/koln/koln-city/museum-ludwig/001.jpg"
+            ogImage: "https://our-travels.info/foto/Germany/nrw/koln/koln-city/museum-ludwig/001.jpg"
         }
     },
     {
@@ -410,7 +410,7 @@ const datas = [
             description: "Das Schokoladenmuseum in Köln zeigt den Weg des Kakaos von der tropischen Plantage bis zur Schokoladentafel. Besuchen Sie die gläserne Fabrik, den 200-kg-Schokoladenbrunnen und entdecken Sie die Geschichte der süßen Versuchung.",
             ogTitle: "Schokoladenmuseum Köln – Das süßeste Museum Deutschlands",
             ogDescription: "Tauchen Sie ein in die Welt von Kakao und Schokolade in Köln: von alten Zivilisationen bis zur modernen Fabrik und dem berühmten Schokoladenbrunnen.",
-            ogImage: "https://our-travels.info/new/foto/Germany/nrw/koln/koln-city/schokoladenmuseum/001.jpg"
+            ogImage: "https://our-travels.info/foto/Germany/nrw/koln/koln-city/schokoladenmuseum/001.jpg"
         }
     },
     {
@@ -485,7 +485,7 @@ const datas = [
             description: "MiQua – ein unterirdisches Museum im Zentrum von Köln, das römische, jüdische und mittelalterliche archäologische Schichten der Stadt zeigt.",
             ogTitle: "MiQua – Museum im archäologischen Viertel Köln",
             ogDescription: "Das unterirdische Museum MiQua ermöglicht das Durchschreiten von 2000 Jahren Kölner Geschichte, einschließlich Praetorium, Mikwe und mittelalterlicher Bauten.",
-            ogImage: "https://our-travels.info/new/foto/Germany/nrw/koln/koln-city/miqua/001.jpg"
+            ogImage: "https://our-travels.info/foto/Germany/nrw/koln/koln-city/miqua/001.jpg"
         }
     },
     {
@@ -545,7 +545,7 @@ const datas = [
             description: "Das Wallraf-Richartz-Museum in Köln ist das älteste Museum der Stadt mit Sammlungen von Malerei, Skulptur und Grafik vom Mittelalter bis zum frühen 20. Jh., einschließlich des Fonds Fondation Corboud mit Impressionisten.",
             ogTitle: "Wallraf-Richartz-Museum — Kunst vom Mittelalter bis zum Impressionismus",
             ogDescription: "Entdecken Sie das Wallraf-Richartz-Museum in Köln: Mittelalterliche und barocke Kunst sowie die Impressionisten-Sammlung Fondation Corboud.",
-            ogImage: "https://our-travels.info/new/foto/Germany/nrw/koln/koln-city/wallraf_richartz_museum/001.jpg"
+            ogImage: "https://our-travels.info/foto/Germany/nrw/koln/koln-city/wallraf_richartz_museum/001.jpg"
         }
     },
     {
@@ -602,7 +602,7 @@ const datas = [
             description: "Entdecken Sie die Kunst Chinas, Koreas und Japans in Köln: buddhistische Malerei, Holzskulpturen, japanische Schirme und traditioneller japanischer Garten.",
             ogTitle: "Museum für Ostasiatische Kunst (Köln)",
             ogDescription: "Besuchen Sie das Museum in Köln mit einer einzigartigen Sammlung ostasiatischer Kunst: Malerei, Skulpturen, japanische Schirme und ein schöner japanischer Garten.",
-            ogImage: "https://our-travels.info/new/foto/Germany/nrw/koln/koln-city/ostasiatische_kunst_koln/001.jpg"
+            ogImage: "https://our-travels.info/foto/Germany/nrw/koln/koln-city/ostasiatische_kunst_koln/001.jpg"
         }
     },
     {
@@ -667,7 +667,7 @@ const datas = [
             description: "Das Museum Schnütgen in Köln – ein einzigartiges Museum für mittelalterliche Kunst im Gebäude der romanischen Kirche aus dem 12. Jahrhundert. Skulpturen, Reliquiare, Glasfenster und kirchliche Schätze.",
             ogTitle: "Museum Schnütgen — mittelalterliche Kunst in einer alten Kirche",
             ogDescription: "Besuchen Sie das Museum Schnütgen – eines der atmosphärischsten Museen Kölns, untergebracht in der romanischen Kirche des 12. Jahrhunderts mit einer Sammlung seltener mittelalterlicher Kunst.",
-            ogImage: "https://our-travels.info/new/foto/Germany/nrw/koln/koln-city/schnuetgen/001.jpg"
+            ogImage: "https://our-travels.info/foto/Germany/nrw/koln/koln-city/schnuetgen/001.jpg"
         }
     },
     {
@@ -721,7 +721,7 @@ const datas = [
             "description": "Beschreibung der acht Kölner Brücken: Geschichte, Besonderheiten, interessante Fakten, inklusive der Liebesbrücke Hohenzollernbrücke.",
             "ogTitle": "Kölner Rheinbrücken",
             "ogDescription": "Vollständige Beschreibung aller acht Kölner Rheinbrücken mit Fakten, Geschichte und Architektur.",
-            "ogImage": "https://our-travels.info/new/foto/Germany/nrw/koln/koln-city/koln_bridges/001.jpg"
+            "ogImage": "https://our-travels.info/foto/Germany/nrw/koln/koln-city/koln_bridges/001.jpg"
         }
     },
         {
@@ -784,7 +784,7 @@ const datas = [
             description: "Entdecken Sie den Kölner Zoo, einen der ältesten Zoos Deutschlands. Erfahren Sie mehr über seine Geschichte, thematischen Expositionen, den Regenwald, den Elefantenpark und praktische Besuchsinformationen.",
             ogTitle: "Besuchen Sie den Kölner Zoo – über 10 000 Tiere und einzigartige Expositionen",
             ogDescription: "Erkunden Sie den Kölner Zoo: historische Gebäude, Südostasien-Regenwald, Elefantenpark und Aquarium. Perfekter Ort für Familien und Bildungsbesuche.",
-            ogImage: "https://our-travels.info/new/foto/Germany/nrw/koln/koln-city/zoo/001.jpg"
+            ogImage: "https://our-travels.info/foto/Germany/nrw/koln/koln-city/zoo/001.jpg"
         }
     },
     {
@@ -852,7 +852,7 @@ const datas = [
             description: "Botanischer Garten und Forstpark Köln mit Pflanzen aus aller Welt und thematischen Zonen, einschließlich Friedenswald.",
             ogTitle: "Forstbotanischer Garten – Botanischer Garten und Forstpark Köln",
             ogDescription: "Der Garten und Forstpark Köln bieten Spaziergänge durch die Rhododendron-Ravine, den Japanischen Garten, die Heidewiese und den Friedenswald.",
-            ogImage: "https://our-travels.info/new/foto/Germany/nrw/koln/koln-city/forstbotanischer_garten/001.jpg"
+            ogImage: "https://our-travels.info/foto/Germany/nrw/koln/koln-city/forstbotanischer_garten/001.jpg"
         }
     },
     {
@@ -911,7 +911,7 @@ const datas = [
             description: "Besuchen Sie den Botanischen Garten Flora in Köln: über 10.000 Pflanzenarten aus aller Welt, historische Alleen, thematische Gärten, Gewächshäuser und Erholung im Freien.",
             ogTitle: "Flora – Botanischer Garten und Park in Köln",
             ogDescription: "Entdecken Sie die Flora in Köln: Weltreise unter 10.000 Pflanzenarten, historische Gärten, Gewächshäuser und gemütliche Alleen zum Spazierengehen.",
-            ogImage: "https://our-travels.info/new/foto/Germany/nrw/koln/koln-city/flora_garten_koln/001.jpg"
+            ogImage: "https://our-travels.info/foto/Germany/nrw/koln/koln-city/flora_garten_koln/001.jpg"
         }
     },
     {
@@ -967,7 +967,7 @@ const datas = [
             description: "Der Rheinpark ist ein großer öffentlicher Park entlang des rechten Rheinufers im Stadtteil Deutz der Stadt Köln. Er stellt eine historisch und architektonisch bedeutende Grünanlage dar, bekannt für seine weitläufigen Rasenflächen, Blumenbeete, Spazierwege und den herrlichen Blick auf das Stadtzentrum mit dem Kölner Dom.",
             ogTitle: "Rheinpark (Rheinpark)",
             ogDescription: "Der Rheinpark ist ein großer öffentlicher Park entlang des rechten Rheinufers im Stadtteil Deutz der Stadt Köln. Er stellt eine historisch und architektonisch bedeutende Grünanlage dar, bekannt für seine weitläufigen Rasenflächen, Blumenbeete, Spazierwege und den herrlichen Blick auf das Stadtzentrum mit dem Kölner Dom.",
-            ogImage: "https://our-travels.info/new/foto/Germany/nrw/koln/koln-city/rheinpark_koln/001.jpg"
+            ogImage: "https://our-travels.info/foto/Germany/nrw/koln/koln-city/rheinpark_koln/001.jpg"
         }
     },
     {
@@ -1011,7 +1011,7 @@ const datas = [
             description: "Besuchen Sie den Tanzbrunnen – den historischen „Tanzenden Brunnen“ am Rhein in Köln. Konzerte, Festivals, kulturelle Events und malerische Ausblicke auf den Fluss. Erfahren Sie mehr über Geschichte und Architektur des Komplexes.",
             ogTitle: "Tanzbrunnen in Köln – Konzerte und kulturelle Veranstaltungen am Rhein",
             ogDescription: "Der Tanzbrunnen ist ein bekannter Kulturkomplex in Köln mit einer Geschichte von fast 100 Jahren. Konzerte, Festivals, Spaziergänge entlang des Rheins und das einzigartige „Sternwellenzelt“.",
-            ogImage: "https://our-travels.info/new/foto/Germany/nrw/koln/koln-city/rheinpark_koln/002.jpg"
+            ogImage: "https://our-travels.info/foto/Germany/nrw/koln/koln-city/rheinpark_koln/002.jpg"
         }
     },
     {
@@ -1069,7 +1069,7 @@ const datas = [
             description: "Die Cologne Cable Car ist eine panoramische Seilbahn über den Rhein in Köln. Geschichte, Lage, Ausblicke auf den Kölner Dom, den Rheinpark und nützliche Informationen für Besucher.",
             ogTitle: "Cologne Cable Car – Panoramablick auf Köln aus der Höhe",
             ogDescription: "Die Cologne Cable Car verbindet die Rheinufer und bietet einen der schönsten Panoramablicke auf Köln, den Kölner Dom und den Rheinpark. Eine beliebte Sehenswürdigkeit und ein Wahrzeichen der Stadt.",
-            ogImage: "https://our-travels.info/new/foto/Germany/nrw/koln/koln-city/rheinpark_koln/003.jpg"
+            ogImage: "https://our-travels.info/foto/Germany/nrw/koln/koln-city/rheinpark_koln/003.jpg"
         }
     },
     {
@@ -1127,7 +1127,7 @@ const datas = [
             description: "Überreste des römischen Forts Divitia aus dem 4. Jahrhundert n. Chr. am rechten Rheinufer in Köln. Erhalten sind Turm, Mauerreste und Fundamentreste. Frei zugänglich im Rheinpark.",
             ogTitle: "Ruinen des römischen Forts Divitia in Köln – Überreste einer römischen Befestigung",
             ogDescription: "Entdecken Sie die Überreste des römischen Forts Divitia im Rheinpark, Köln. Originale Mauern, Turm und Fundamentreste stehen für Spaziergänge und Besichtigungen offen.",
-            ogImage: "https://our-travels.info/new/foto/Germany/nrw/koln/koln-city/rheinpark_koln/004.jpg"
+            ogImage: "https://our-travels.info/foto/Germany/nrw/koln/koln-city/rheinpark_koln/004.jpg"
         }
     },
 
@@ -1196,7 +1196,7 @@ const datas = [
             description: "Das Ensemble der Schlösser Augustusburg und Falkenlust in Brühl – ein Meisterwerk des Barock und Rokoko, ergänzt durch französische und englische Gärten, Brunnen, Alleen und Spiegelbecken. Geschichte, Stil, interessante Fakten.",
             ogTitle: "Brühler Schlösser: Architektur, Gärten und Legenden",
             ogDescription: "Entdecken Sie die Brühler Schlösser – ihre Pracht, Innenräume, den Park mit Parterre, Alleen und englischem Landschaftsgarten, ihre kulturelle Bedeutung und ihren UNESCO-Status.",
-            ogImage: "https://our-travels.info/new/foto/Germany/nrw/koln/Rhein-Erft-Kreis/bruhl/bruhel_palaces/001.jpg"
+            ogImage: "https://our-travels.info/foto/Germany/nrw/koln/Rhein-Erft-Kreis/bruhl/bruhel_palaces/001.jpg"
         }
     },
     {
@@ -1245,7 +1245,7 @@ const datas = [
             description: "Das einzige Museum weltweit, das Max Ernst gewidmet ist. Sammlung, Geschichte, Dadaismus, Surrealismus, Sonderausstellungen.",
             ogTitle: "Max-Ernst-Museum — Brühl, Deutschland",
             ogDescription: "Entdecken Sie das Max-Ernst-Museum in Brühl, seine Sammlung und Ausstellungen, die dem Dadaismus und Surrealismus gewidmet sind.",
-            ogImage: "https://our-travels.info/new/foto/Germany/nrw/koln/Rhein-Erft-Kreis/bruhl/max_ernst_museum/Max-Ernst-Museum.jpg"
+            ogImage: "https://our-travels.info/foto/Germany/nrw/koln/Rhein-Erft-Kreis/bruhl/max_ernst_museum/Max-Ernst-Museum.jpg"
         }
     },
     {
@@ -1302,7 +1302,7 @@ const datas = [
             description: "Phantasialand – einer der meistbesuchten Parks Europas mit über 30 Attraktionen, Themenbereichen und einzigartigen Hotels.",
             ogTitle: "Phantasialand – Brühl, Deutschland",
             ogDescription: "Entdecken Sie Phantasialand in Brühl: Attraktionen, Themenbereiche, Hotels und Unterhaltung für die ganze Familie.",
-            ogImage: "https://our-travels.info/new/foto/Germany/nrw/koln/Rhein-Erft-Kreis/bruhl/phantasialand/001.jpg"
+            ogImage: "https://our-travels.info/foto/Germany/nrw/koln/Rhein-Erft-Kreis/bruhl/phantasialand/001.jpg"
         },
     },
 
@@ -1356,7 +1356,7 @@ const datas = [
             description: "KERAMION: Dauerausstellung und Sonderausstellungen von Keramik, Geschichte der Produktion und zeitgenössische künstlerische Perspektiven.",
             ogTitle: "KERAMION – Zentrum für moderne und historische Keramik, Frechen",
             ogDescription: "Erfahren Sie mehr über die Sammlung von Cremer, die historische Keramik aus Frechen und die Ausstellungen im KERAMION.",
-            ogImage: "https://our-travels.info/new/foto/Germany/nrw/koln/Rhein-Erft-Kreis/frechen/keramion/frechen_keramion.jpg"
+            ogImage: "https://our-travels.info/foto/Germany/nrw/koln/Rhein-Erft-Kreis/frechen/keramion/frechen_keramion.jpg"
         }
     },
     {
@@ -1406,7 +1406,7 @@ const datas = [
             description: "Burg Bachem: Geschichte, Wassergräben, Spazierbereiche und Erholung am kleinen See in Frechen.",
             ogTitle: "Burg Bachem – Frechen, Deutschland",
             ogDescription: "Entdecken Sie die historische Wasserburg Burg Bachem und den See mit Spazierwegen in Frechen.",
-            ogImage: "https://our-travels.info/new/foto/Germany/nrw/koln/Rhein-Erft-Kreis/frechen/burg-bachem/Burg-Bachem_3.jpg"
+            ogImage: "https://our-travels.info/foto/Germany/nrw/koln/Rhein-Erft-Kreis/frechen/burg-bachem/Burg-Bachem_3.jpg"
         }
     },
     {
@@ -1456,7 +1456,7 @@ const datas = [
             description: "Der Johann-Schmitz-Platz ist der zentrale Stadtplatz von Frechen mit Märkten, Veranstaltungen und historischem Rathaus.",
             ogTitle: "Johann-Schmitz-Platz – Frechen, Deutschland",
             ogDescription: "Entdecken Sie den zentralen Platz von Frechen – Johann-Schmitz-Platz mit historischem Rathaus, Märkten und städtischer Atmosphäre.",
-            ogImage: "https://our-travels.info/new/foto/Germany/nrw/koln/Rhein-Erft-Kreis/frechen/johann_schmitz_platz_frechen/001.jpg"
+            ogImage: "https://our-travels.info/foto/Germany/nrw/koln/Rhein-Erft-Kreis/frechen/johann_schmitz_platz_frechen/001.jpg"
         }
     },
     {
@@ -1507,7 +1507,7 @@ const datas = [
             description: "Das Alte Rathaus Frechen – ein historisches Verwaltungsgebäude mit Turm auf dem Johann-Schmitz-Platz im Zentrum der Stadt, Nordrhein-Westfalen.",
             ogTitle: "Altes Rathaus Frechen – Frechen, Deutschland",
             ogDescription: "Entdecken Sie das Alte Rathaus Frechen mit seinem charakteristischen Turm und der neobarocken Architektur auf dem Johann-Schmitz-Platz.",
-            ogImage: "https://our-travels.info/new/foto/Germany/nrw/koln/Rhein-Erft-Kreis/frechen/johann_schmitz_platz_frechen/008.jpg"
+            ogImage: "https://our-travels.info/foto/Germany/nrw/koln/Rhein-Erft-Kreis/frechen/johann_schmitz_platz_frechen/008.jpg"
         }
     },
     {
@@ -1533,7 +1533,7 @@ const datas = [
             description: "Auf dem Platz vor dem alten Rathaus befindet sich ein dekorativer Bezirksbrunnen, der 1981 vom Keramikkünstler Wim Mühlendyck geschaffen wurde. Er ist mit Keramikplatten mit Reliefszenen bedeckt, die die Entwicklung des Handwerks und der Keramikindustrie in Frechen zeigen – von traditionellen Handwerkern bis zur Fabrikproduktion, und verschiedene Maskarone (Gesichter) dienen als charakteristische Wasserstrahlen des Brunnens.",
             ogTitle: "Dekorativer Bezirksbrunnen vor dem alten Rathaus von Frechen",
             ogDescription: "Der Brunnen auf dem Platz vor dem alten Rathaus in Frechen, 1981 vom Keramikkünstler Wim Mühlendyck geschaffen, ist mit Keramikplatten mit Reliefszenen des Handwerks und der Keramikindustrie sowie Maskaronen mit Wasserstrahlen gestaltet.",
-            ogImage: "https://our-travels.info/new/foto/Germany/nrw/koln/Rhein-Erft-Kreis/frechen/johann_schmitz_platz_frechen/005.jpg"
+            ogImage: "https://our-travels.info/foto/Germany/nrw/koln/Rhein-Erft-Kreis/frechen/johann_schmitz_platz_frechen/005.jpg"
         }
     },
     {
@@ -1559,7 +1559,7 @@ const datas = [
             description: "In der Fußgängerzone wurde 1986 der Skulpturenbrunnen Klüttenbrunnen (Klüttenbrunnen) des deutschen Bildhauers Olaf Hönen errichtet. Er befindet sich in der Nähe des Johann-Schmitz-Platzes und spiegelt die industrielle und handwerkliche Geschichte Frechens wider, insbesondere den Abbau und die Verarbeitung des lokalen Tons. Der Brunnen ist als künstlerische Komposition mit Steinelementen und Wasserstrahlen gestaltet, harmoniert mit der städtischen Umgebung und dient als visueller Orientierungspunkt für Touristen.",
             ogTitle: "Klüttenbrunnen in Frechen",
             ogDescription: "Der Skulpturenbrunnen Klüttenbrunnen (Klüttenbrunnen) in der Fußgängerzone nahe dem Johann-Schmitz-Platz spiegelt die industrielle und handwerkliche Geschichte Frechens wider und ist als künstlerische Komposition mit Steinelementen und Wasserstrahlen gestaltet.",
-            ogImage: "https://our-travels.info/new/foto/Germany/nrw/koln/Rhein-Erft-Kreis/frechen/johann_schmitz_platz_frechen/004.jpg"
+            ogImage: "https://our-travels.info/foto/Germany/nrw/koln/Rhein-Erft-Kreis/frechen/johann_schmitz_platz_frechen/004.jpg"
         }
     },
 
@@ -1632,7 +1632,7 @@ const datas = [
             description: "Der Drachenfels bei Königswinter ist ein legendärer Berg des Rheintals, eng verbunden mit der Sage von Siegfried und dem Drachen. Panoramablicke auf den Rhein, Burgruinen, der Naturpark Siebengebirge und beliebte Wanderwege machen ihn zu einem der bekanntesten Ausflugsziele der Region.",
             ogTitle: "Berg Drachenfels — Legenden und Panoramablicke am Rhein",
             ogDescription: "Entdecken Sie den Drachenfels: Drachenmythen, Ausblicke über den Rhein, den Naturpark Siebengebirge und die historische Bedeutung eines der bekanntesten Berge der Region.",
-            ogImage: "https://our-travels.info/new/foto/Germany/nrw/koln/Rhein-Sieg-Kreis/konigswinter/drachenfels/001.jpg"
+            ogImage: "https://our-travels.info/foto/Germany/nrw/koln/Rhein-Sieg-Kreis/konigswinter/drachenfels/001.jpg"
         }
     },
     {
@@ -1688,7 +1688,7 @@ const datas = [
             description: "Die Drachenfelsbahn ist eine historische Zahnradbahn aus dem Jahr 1883 in Königswinter. Sie verbindet das Rheintal mit dem Plateau des Drachenfels und zählt zu den wichtigsten touristischen Attraktionen der Region.",
             ogTitle: "Drachenfelsbahn",
             ogDescription: "Erleben Sie eine Fahrt mit der Drachenfelsbahn — der ältesten noch betriebenen Zahnradbahn Deutschlands mit Panoramablicken auf den Rhein und den Drachenfels.",
-            ogImage: "https://our-travels.info/new/foto/Germany/nrw/koln/Rhein-Sieg-Kreis/konigswinter/drachenfels/002.jpg"
+            ogImage: "https://our-travels.info/foto/Germany/nrw/koln/Rhein-Sieg-Kreis/konigswinter/drachenfels/002.jpg"
         }
     },
     {
@@ -1751,7 +1751,7 @@ const datas = [
             description: "Schloss Drachenburg liegt am Hang des Drachenfels in Königswinter. Erbaut 1882-1884, beeindruckt das Schloss durch neugotische Architektur, prächtige Innenräume und Panoramablicke ins Rheintal.",
             ogTitle: "Schloss Drachenburg",
             ogDescription: "Besuchen Sie Schloss Drachenburg – ein romantisches neugotisches Schloss des 19. Jahrhunderts mit historischen Sälen, Glasfenstern und Aussichtsterrassen mit Blick auf Rhein und Drachenfels.",
-            ogImage: "https://our-travels.info/new/foto/Germany/nrw/koln/Rhein-Sieg-Kreis/konigswinter/drachenfels/001.jpg"
+            ogImage: "https://our-travels.info/foto/Germany/nrw/koln/Rhein-Sieg-Kreis/konigswinter/drachenfels/001.jpg"
         }
     },
     {
@@ -1796,7 +1796,7 @@ const datas = [
             description: "Die Ruinen der Burg Drachenfels befinden sich auf dem Gipfel des gleichnamigen Berges im Siebengebirge. Erhalten sind Mauerreste und Türme mit Panoramablick auf den Rhein und Königswinter.",
             ogTitle: "Ruinen der Burg Drachenfels (Burg Drachenfels)",
             ogDescription: "Besuchen Sie die Ruinen der Burg Drachenfels – eine mittelalterliche Festung aus dem 12. Jahrhundert mit beeindruckendem Blick auf das Rheintal.",
-            ogImage: "https://our-travels.info/new/foto/Germany/nrw/koln/Rhein-Sieg-Kreis/konigswinter/drachenfels/003.jpg"
+            ogImage: "https://our-travels.info/foto/Germany/nrw/koln/Rhein-Sieg-Kreis/konigswinter/drachenfels/003.jpg"
         }
     },
     {
@@ -1839,7 +1839,7 @@ const datas = [
             description: "Die Nibelungenhalle ist ein 1913 erbautes Museum auf dem Drachenfels, das der Nibelungensage und Drachenlegenden gewidmet ist. In der Nähe befindet sich die Drachenhöhle.",
             ogTitle: "Nibelungenhalle auf dem Drachenfels",
             ogDescription: "Besuchen Sie die Nibelungenhalle – ein Museum der Mythen und Legenden mit Blick auf das Rheintal und die Drachenhöhle.",
-            ogImage: "https://our-travels.info/new/foto/Germany/nrw/koln/Rhein-Sieg-Kreis/konigswinter/drachenfels/004.jpg"
+            ogImage: "https://our-travels.info/foto/Germany/nrw/koln/Rhein-Sieg-Kreis/konigswinter/drachenfels/004.jpg"
         }
     },
     {
@@ -1892,7 +1892,7 @@ const datas = [
             description: "Der Reptile Zoo auf dem Drachenfels ist ein zoologischer Park, in dem man Schlangen, Eidechsen, Schildkröten und seltene exotische Tiere sehen sowie an interaktiven Vorführungen und Bildungsprogrammen teilnehmen kann.",
             ogTitle: "Reptilienzoo Drachenfels",
             ogDescription: "Besuchen Sie den Reptile Zoo auf dem Drachenfels – ein Zoo mit seltenen Reptilien, interaktiven Fütterungs‑Vorführungen und Bildungsprogrammen für Kinder und Erwachsene.",
-            ogImage: "https://our-travels.info/new/foto/Germany/nrw/koln/Rhein-Sieg-Kreis/konigswinter/drachenfels/005.jpg"
+            ogImage: "https://our-travels.info/foto/Germany/nrw/koln/Rhein-Sieg-Kreis/konigswinter/drachenfels/005.jpg"
         }
     },
     {
@@ -1951,7 +1951,7 @@ const datas = [
             description: "Die Abtei Heisterbach – ehemaliges Zisterzienserkloster aus dem 12. Jahrhundert im Heisterbachtal nahe Königswinter. Geschichte, Bedeutung und Besuch des historischen Komplexes.",
             ogTitle: "Abtei Heisterbach – mittelalterliches Kloster im Heisterbachtal",
             ogDescription: "Die historische Abtei Heisterbach – eines der atmosphärischsten Zeugnisse mittelalterlicher Klosterarchitektur in der Region Siebengebirge, unweit von Königswinter.",
-            ogImage: "https://our-travels.info/new/foto/Germany/nrw/koln/Rhein-Sieg-Kreis/konigswinter/heisterbach/001.jpg"
+            ogImage: "https://our-travels.info/foto/Germany/nrw/koln/Rhein-Sieg-Kreis/konigswinter/heisterbach/001.jpg"
         }
     },
     {
@@ -1993,7 +1993,7 @@ const datas = [
             description: "Entdecken Sie die beeindruckenden Ruinen des Chors der Abtei Heisterbach: Geschichte, Architektur und einzigartige Überreste des mittelalterlichen Klosters im Siebengebirge.",
             ogTitle: "Ruinen des Chors der Abtei Heisterbach",
             ogDescription: "Besuchen Sie die Ruinen des Chors der Abtei Heisterbach und tauchen Sie ein in die Atmosphäre der mittelalterlichen Klostergeschichte im Herzen des Siebengebirges.",
-            ogImage: "https://our-travels.info/new/foto/Germany/nrw/koln/Rhein-Sieg-Kreis/konigswinter/heisterbach/001.jpg"
+            ogImage: "https://our-travels.info/foto/Germany/nrw/koln/Rhein-Sieg-Kreis/konigswinter/heisterbach/001.jpg"
         }
     },
     {
@@ -2037,7 +2037,7 @@ const datas = [
             description: "Die Kirche St. Peter in Heisterbach ist eine katholische Kirche von 1953–1956 auf dem Gelände der ehemaligen Abtei. Geschichte, Architektur, Glasfenster und Besuch in Heisterbach, Königswinter.",
             ogTitle: "Kirche St. Peter in Heisterbach",
             ogDescription: "Aktive katholische Kirche auf dem Gelände der ehemaligen Abtei Heisterbach. Erbaut 1953-1956 mit einem einzigartigen Tympanon aus dem 13. Jahrhundert und beeindruckenden Glasfenstern.",
-            ogImage: "https://our-travels.info/new/foto/Germany/nrw/koln/Rhein-Sieg-Kreis/konigswinter/heisterbach/005.jpg"
+            ogImage: "https://our-travels.info/foto/Germany/nrw/koln/Rhein-Sieg-Kreis/konigswinter/heisterbach/005.jpg"
         }
     },
 
@@ -2090,7 +2090,7 @@ const datas = [
             description: "Die Altstadt von Lüdenscheid ist der mittelalterliche Teil der Stadt mit historischen Gebäuden des 18.–19. Jahrhunderts, der Erlöserkirche, Resten der Stadtmauer und dem historischen Museum. Schlendern Sie durch die gemütlichen Gassen und spüren Sie die Atmosphäre vergangener Jahrhunderte.",
             ogTitle: "Altstadt von Lüdenscheid",
             ogDescription: "Besuchen Sie die Altstadt von Lüdenscheid – den historischen Teil der Stadt mit barocken Häusern, der Erlöserkirche, dem historischen Museum und den Resten der mittelalterlichen Stadtmauer.",
-            ogImage: "https://our-travels.info/new/foto/Germany/nrw/arnsberg/Märkischer-Kreis/luedenscheid/001.JPG"
+            ogImage: "https://our-travels.info/foto/Germany/nrw/arnsberg/Märkischer-Kreis/luedenscheid/001.JPG"
         }
     },
     {
@@ -2147,7 +2147,7 @@ const datas = [
             description: "Die Erlöserkirche (Erlöserkirche) ist die älteste Kirche Lüdenscheids, errichtet im 12. Jahrhundert mit klassizistischer Fassade, Emporen und lutherischem Altar. Besuchen Sie dieses historische Gotteshaus im Zentrum der Altstadt und spüren Sie die Atmosphäre vergangener Jahrhunderte.",
             ogTitle: "Erlöserkirche, Lüdenscheid",
             ogDescription: "Entdecken Sie die Erlöserkirche in Lüdenscheid – ein historisches Gotteshaus mit Turm, Emporen und lutherischem Altar, ein architektonisches Wahrzeichen der Altstadt.",
-            ogImage: "https://our-travels.info/new/foto/Germany/nrw/arnsberg/Märkischer-Kreis/luedenscheid/erloeserkirche_luedenscheid/001.JPG"
+            ogImage: "https://our-travels.info/foto/Germany/nrw/arnsberg/Märkischer-Kreis/luedenscheid/erloeserkirche_luedenscheid/001.JPG"
         }
     },
     {
@@ -2177,7 +2177,7 @@ const datas = [
             description: "Der Brunnen am Graf-Engelbert-Platz entstand 1982 im Zuge der Altstadtsanierung. Er gilt als eines der Wahrzeichen des historischen Zentrums von Lüdenscheid und ist mit der Figur eines Herolds geschmückt, die auf die Stadtgründung durch Graf Engelbert I. verweist.",
             ogTitle: "Brunnen am Graf-Engelbert-Platz, Lüdenscheid",
             ogDescription: "Besuchen Sie den Brunnen am Graf-Engelbert-Platz in Lüdenscheid – ein historisches Objekt der Altstadt, das mit der Stadtgründung und der Erneuerung des historischen Zentrums verbunden ist.",
-            ogImage: "https://our-travels.info/new/foto/Germany/nrw/arnsberg/Märkischer-Kreis/luedenscheid/altstadt_luedenscheid/001.JPG"
+            ogImage: "https://our-travels.info/foto/Germany/nrw/arnsberg/Märkischer-Kreis/luedenscheid/altstadt_luedenscheid/001.JPG"
         }
     },
     {
@@ -2218,7 +2218,7 @@ const datas = [
             description: "Der zentrale Platz von Lüdenscheid (Rathausplatz) ist der wichtigste öffentliche Raum der Stadt neben dem Rathaus. Hier finden Märkte, städtische Veranstaltungen und Treffen der Bewohner statt, und der Platz dient als Ausgangspunkt für Spaziergänge im Zentrum.",
             ogTitle: "Zentraler Platz von Lüdenscheid",
             ogDescription: "Der zentrale Platz von Lüdenscheid (Rathausplatz) ist der zentrale Stadtplatz neben dem Rathaus, ein Ort für Märkte, Feste und wichtige städtische Veranstaltungen.",
-            ogImage: "https://our-travels.info/new/foto/Germany/nrw/arnsberg/Märkischer-Kreis/luedenscheid/rathausplatz_lüdenscheid/001.JPG"
+            ogImage: "https://our-travels.info/foto/Germany/nrw/arnsberg/Märkischer-Kreis/luedenscheid/rathausplatz_lüdenscheid/001.JPG"
         }
     },
     {
@@ -2258,7 +2258,7 @@ const datas = [
             description: "Der Sternplatz ist einer der zentralen Plätze von Lüdenscheid, gelegen in der Fußgängerzone des historischen Zentrums. Der Platz ist ein wichtiger Treffpunkt für das städtische Leben, Spaziergänge und Veranstaltungen.",
             ogTitle: "Sternplatz in Lüdenscheid",
             ogDescription: "Der Sternplatz ist der zentrale Stadtplatz im historischen Zentrum von Lüdenscheid, Teil der Fußgängerzone und ein wichtiger öffentlicher Raum der Stadt.",
-            ogImage: "https://our-travels.info/new/foto/Germany/nrw/arnsberg/Märkischer-Kreis/luedenscheid/sternplatz/003.jpg"
+            ogImage: "https://our-travels.info/foto/Germany/nrw/arnsberg/Märkischer-Kreis/luedenscheid/sternplatz/003.jpg"
         }
     },
     {
@@ -2289,7 +2289,7 @@ const datas = [
             description: "Das Denkmal von Onkel Willi auf dem Sternplatz in Lüdenscheid ist eine Bronzeskulptur, die einen typischen Einwohner der Stadt mit Hund darstellt. Die Skulptur ist ein inoffizielles Wahrzeichen der Stadt und ein beliebter Treffpunkt für Fotos und Begegnungen.",
             ogTitle: "Denkmal von Onkel Willi in Lüdenscheid",
             ogDescription: "Die Bronzeskulptur von Onkel Willi auf dem Sternplatz im historischen Zentrum von Lüdenscheid verkörpert Freundlichkeit und das alltägliche Leben der Stadtbewohner. Beliebter Ort bei Touristen und Einwohnern.",
-            ogImage: "https://our-travels.info/new/foto/Germany/nrw/arnsberg/Märkischer-Kreis/luedenscheid/sternplatz/001.JPG"
+            ogImage: "https://our-travels.info/foto/Germany/nrw/arnsberg/Märkischer-Kreis/luedenscheid/sternplatz/001.JPG"
         }
     },
     {
@@ -2320,7 +2320,7 @@ const datas = [
             description: "Der Brunnen auf dem Sternplatz in Lüdenscheid ist ein dekoratives Wasserbecken, geschaffen Ende der 1970er Jahre vom Bildhauer Kurt Toni Neumann. Um den Brunnen befinden sich Tafeln mit den Namen der Partnerstädte: Brayhaus, Taganrog, Den Helder, Löwen, Mysłowice und Romilly-sur-Seine. Der Brunnen ist ein beliebter Ort für Erholung und Spaziergänge auf dem Platz.",
             ogTitle: "Brunnen auf dem Sternplatz in Lüdenscheid",
             ogDescription: "Dekorativer Brunnen auf dem Sternplatz im historischen Zentrum von Lüdenscheid, umgeben von Tafeln mit den Namen der Partnerstädte. Treffpunkt und Erholungsort für Einwohner und Besucher.",
-            ogImage: "https://our-travels.info/new/foto/Germany/nrw/arnsberg/Märkischer-Kreis/luedenscheid/sternplatz/003.jpg"
+            ogImage: "https://our-travels.info/foto/Germany/nrw/arnsberg/Märkischer-Kreis/luedenscheid/sternplatz/003.jpg"
         }
     },
     {
@@ -2385,7 +2385,7 @@ const datas = [
             description: "Entdecken Sie das Geschichtsmuseum Lüdenscheid: Schmalspurzug, Zeppelin‑Modelle, Feuerwehrtechnik, Sammlung historischer Karten und Artefakte. Besuchen Sie das Museum und das Museumscafé im modernen Stadtkomplex.",
             ogTitle: "Geschichtsmuseum Lüdenscheid – einzigartige Exponate und Sammlungen",
             ogDescription: "Besuchen Sie das Geschichtsmuseum Lüdenscheid: vom Schmalspurzug bis zur Sammlung historischer Knöpfe, Karten und Stadtmodelle. Das Museum und das Museumscafé erwarten Sie im kulturellen Komplex der Stadt.",
-            ogImage: "https://our-travels.info/new/foto/Germany/nrw/arnsberg/Märkischer-Kreis/luedenscheid/history_museum_luedenscheid/001.JPG"
+            ogImage: "https://our-travels.info/foto/Germany/nrw/arnsberg/Märkischer-Kreis/luedenscheid/history_museum_luedenscheid/001.JPG"
         }
     },
 

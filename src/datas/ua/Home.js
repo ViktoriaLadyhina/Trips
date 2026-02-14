@@ -28,7 +28,7 @@ export const datas =
         description: "Ми розповідаємо про подорожі, кращі маршрути та враження.",
         ogTitle: "Наші подорожі — сайт про подорожі",
         ogDescription: "Найкращі подорожі та поради для туристів.",
-        ogImage: "https://site.com/preview.jpg",
+        ogImage: "https://our-travels.info/",
     }
 
 }

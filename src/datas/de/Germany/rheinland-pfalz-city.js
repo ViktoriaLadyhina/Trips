@@ -75,7 +75,7 @@ const datas = [
             description: "Trier: Geschichte, Geographie, Sehenswürdigkeiten, berühmte Einwohner und interessante Fakten über die älteste Stadt Deutschlands.",
             ogTitle: "Trier – Informationen über die Stadt",
             ogDescription: "Detaillierte Informationen über Trier: Kultur, Geschichte, berühmte Einwohner und interessante Fakten.",
-            ogImage: "https://our-travels.info/new/foto/Germany/rheinland-pfalz/trier-city/portaNigra_trier/001.JPG"
+            ogImage: "https://our-travels.info/foto/Germany/rheinland-pfalz/trier-city/portaNigra_trier/001.JPG"
         }
     },
 ]

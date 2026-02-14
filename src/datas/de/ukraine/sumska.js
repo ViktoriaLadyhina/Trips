@@ -131,7 +131,7 @@ const datas = {
         description: "Oblast Sumy: Städte, Geschichte, Kultur, Wirtschaft und interessante Fakten.",
         ogTitle: "Oblast Sumy — Informationen über die Region",
         ogDescription: "Detaillierte Informationen über die Oblast Sumy: Geschichte, Kultur, Städte und Sehenswürdigkeiten.",
-        ogImage: "/Ukraine/Sumy/sumy-map.jpg"
+        ogImage: "https://our-travels.info/foto/Ukraine/Sumy/sumy-map.jpg"
     }
 }
 

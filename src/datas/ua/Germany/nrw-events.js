@@ -46,7 +46,7 @@ const datas = [
             description: "Кельнський карнавал – відоме свято з парадами, маскарадами та музичними виступами, що проходить щороку в центрі Кельна.",
             ogTitle: "Кельнський карнавал – найбільший фестиваль Німеччини",
             ogDescription: "Головний карнавальний парад Rosenmontag та Weiberfastnacht роблять Кельнський карнавал унікальною подією в Німеччині.",
-            ogImage: "https://our-travels.info/new/foto/Germany/nrw/koln/koln-city/karneval/001.jpg"
+            ogImage: "https://our-travels.info/foto/Germany/nrw/koln/koln-city/karneval/001.jpg"
         }
     }
 ];

@@ -896,7 +896,7 @@ const datas = {
         description: "Северный Рейн-Вестфалия: города, округа, культура и достопримечательности.",
         ogTitle: "Северный Рейн-Вестфалия — информация о регионе и округах",
         ogDescription: "Подробная информация о Северном Рейне-Вестфалии: города, округа, история и интересные факты.",
-        ogImage: "https://our-travels.info/new/foto/Germany/nrw/koln/koln-city/koln-cathedral/001.jpg"
+        ogImage: "https://our-travels.info/foto/Germany/nrw/koln/koln-city/koln-cathedral/001.jpg"
     }
 
 }

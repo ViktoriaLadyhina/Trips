@@ -48,7 +48,7 @@ const datas = [
       description: "Відкрийте для себе Порта Нігра в Трірі – найбільші збережені римські міські ворота на північ від Альп. Історія, цікаві факти, практична інформація для туристів та легенди.",
       ogTitle: "Порта Нігра, Трір – історичні римські ворота Німеччини",
       ogDescription: "Відвідайте Порта Нігра – величні римські ворота в центрі Тріра. Дізнайтеся історію, легенди та практичну інформацію для туристів. Ідеальне місце для любителів історії та архітектури.",
-      ogImage: "https://our-travels.info/new/foto/Germany/rheinland-pfalz/trier-city/portaNigra_trier/001.JPG"
+      ogImage: "https://our-travels.info/foto/Germany/rheinland-pfalz/trier-city/portaNigra_trier/001.JPG"
     }
   }
 ];

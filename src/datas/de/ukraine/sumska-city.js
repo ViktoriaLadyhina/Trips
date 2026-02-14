@@ -75,7 +75,7 @@ const datas = [
             description: "Sumy: Geschichte, Legende zur Namensherkunft, Industrie, Kultur und interessante Fakten.",
             ogTitle: "Sumy – Informationen über die Stadt",
             ogDescription: "Detaillierte Informationen über Sumy: Geschichte, Legenden, bekannte Persönlichkeiten, Kultur und Wirtschaft.",
-            ogImage: "/ukraine/sumy/sumy.jpg"
+            ogImage: "https://our-travels.info/foto/Ukraine/sumy/sumy.jpg"
         }
     },
 ]

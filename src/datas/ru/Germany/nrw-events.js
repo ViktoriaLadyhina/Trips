@@ -46,7 +46,7 @@ const datas = [
             description: "Кёльнский карнавал – известный праздник с парадами, маскарадами и музыкальными выступлениями, проходящий ежегодно в центре Кёльна.",
             ogTitle: "Кёльнский карнавал – крупнейший фестиваль Германии",
             ogDescription: "Главный карнавальный парад Rosenmontag и Weiberfastnacht делают Кёльнский карнавал уникальным событием в Германии.",
-            ogImage: "https://our-travels.info/new/foto/Germany/nrw/koln/koln-city/karneval/001.jpg"
+            ogImage: "https://our-travels.info/foto/Germany/nrw/koln/koln-city/karneval/001.jpg"
         }
     }
 ];

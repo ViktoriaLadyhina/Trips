@@ -88,7 +88,7 @@ const datas = [
             description: "Кёльн: история, география, достопримечательности, знаменитые жители и интересные факты о крупнейшем городе Северного Рейна-Вестфалии.",
             ogTitle: "Кёльн – информация о городе",
             ogDescription: "Подробная информация о Кёльне: культура, история, знаменитые жители и интересные факты.",
-            ogImage: "https://our-travels.info/new/foto/Germany/nrw/koln/koln-city/koln-cathedral/001.jpg"
+            ogImage: "https://our-travels.info/foto/Germany/nrw/koln/koln-city/koln-cathedral/001.jpg"
         }
     },
 
@@ -151,7 +151,7 @@ const datas = [
             description: "Брюль: история, достопримечательности, известные люди и интересные факты города.",
             ogTitle: "Брюль – информация о городе",
             ogDescription: "Подробная информация о Брюле: культура, история, знаменитые жители и интересные факты.",
-            ogImage: "https://our-travels.info/new/foto/Germany/nrw/koln/Rhein-Erft-Kreis/bruhl/bruhel_palaces/001.jpg"
+            ogImage: "https://our-travels.info/foto/Germany/nrw/koln/Rhein-Erft-Kreis/bruhl/bruhel_palaces/001.jpg"
         }
     },
     {
@@ -233,7 +233,7 @@ const datas = [
             description: "Фрехен: история, география, знаменитые жители и интересные факты о городе керамики в земле Северный Рейн-Вестфалия.",
             ogTitle: "Фрехен – информация о городе",
             ogDescription: "Подробная информация о Фрехене: культура, история, знаменитые жители и интересные факты.",
-            ogImage: "https://our-travels.info/new/foto/Germany/nrw/koln/Rhein-Erft-Kreis/frechen/johann_schmitz_platz_frechen/006.jpg"
+            ogImage: "https://our-travels.info/foto/Germany/nrw/koln/Rhein-Erft-Kreis/frechen/johann_schmitz_platz_frechen/006.jpg"
         }
     },
 
@@ -313,7 +313,7 @@ const datas = [
             description: "Кёнигсвинтер: история, география, знаменитые жители и интересные факты о живописном городе региона Рейн-Зиг.",
             ogTitle: "Кёнигсвинтер – информация о городе",
             ogDescription: "Подробная информация о Кёнигсвинтере: достопримечательности, природа, история и известные жители.",
-            ogImage: "https://our-travels.info/new/foto/Germany/nrw/koln/Rhein-Sieg-Kreis/konigswinter/drachenfels/007.jpg"
+            ogImage: "https://our-travels.info/foto/Germany/nrw/koln/Rhein-Sieg-Kreis/konigswinter/drachenfels/007.jpg"
         }
     },
 
@@ -412,7 +412,7 @@ const datas = [
             description: "Люденшайд: история, география, знаменитые жители и интересные факты о «городе света» в земле Северный Рейн-Вестфалия.",
             ogTitle: "Люденшайд – информация о городе",
             ogDescription: "Подробная информация о Люденшайде: культура, история, выдающиеся личности и удивительные факты о городе света и инноваций.",
-            ogImage: "https://our-travels.info/new/foto/Germany/nrw/arnsberg/Märkischer-Kreis/luedenscheid/rathausplatz_lüdenscheid/001.JPG"
+            ogImage: "https://our-travels.info/foto/Germany/nrw/arnsberg/Märkischer-Kreis/luedenscheid/rathausplatz_lüdenscheid/001.JPG"
         }
     }
 ]

@@ -75,7 +75,7 @@ const datas = [
             description: "Суми: історія, легенда про назву, промисловість, культура та цікаві факти міста.",
             ogTitle: "Суми — інформація про місто",
             ogDescription: "Детальна інформація про Суми: історія, легенди, відомі мешканці, культура та економіка.",
-            ogImage: "/ukraine/sumy/sumy.jpg"
+            ogImage: "https://our-travels.info/foto/Ukraine/sumy/sumy.jpg"
         }
     },
 ]

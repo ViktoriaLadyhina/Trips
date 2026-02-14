@@ -13,9 +13,6 @@ const datas = [
         officialSite: [
             { bold: 'Офіційний сайт собору', link: 'https://sumy-sob.church.ua/' }
         ],
-        unesco_status: {
-            included: false,
-        },
         construction_period: "1776–1788 (реконструкція 1882–1892)",
         architects: ["Михайло Ловцов (реконструкція)"],
         founder: "Сумські меценати XVIII століття; реконструкція — Д.І. Суханов",
@@ -53,7 +50,7 @@ const datas = [
             description: "Спасо-Преображенський собор — головний храм Сум, архітектурна пам’ятка XVIII–XIX століть з мармурово-малахітовим іконостасом та 56-метровою дзвіницею.",
             ogTitle: "Спасо-Преображенський собор — головна святиня Сум",
             ogDescription: "Історичний кафедральний собор Сум: унікальна архітектура, чудотворні ікони, малахітовий іконостас та відомі куранти, які заводяться раз на три дні.",
-            ogImage: "Ukraine/sumska/sumy-city/spaso-preobrazhensky/004.jpg"
+            ogImage: "https://our-travels.info/foto/Ukraine/sumska/sumy-city/spaso-preobrazhensky/004.jpg"
         }
     },
     {
@@ -101,7 +98,7 @@ const datas = [
             description: "Покровська площа – одна з найстаріших площ Сум із багатою історією. Дізнайтеся про її минуле, воєнні події та сучасний вигляд.",
             ogTitle: "Покровська площа – серце історичних Сум",
             ogDescription: "Покровська площа – одна з найстаріших площ Сум, пов’язана з ключовими подіями в історії міста.",
-            ogImage: "https://our-travels.info/new/foto/Ukraine/sumska/sumy-city/altanka/009.jpg"
+            ogImage: "https://our-travels.info/foto/Ukraine/sumska/sumy-city/altanka/009.jpg"
         }
     },
     {
@@ -118,9 +115,6 @@ const datas = [
         address: [{ bold: "Адреса:", text: "Покровська площа" }],
         hiddenFromList: true,
         showMore: true,
-        unesco_status: {
-            included: false,
-        },
         construction_period: "На початку XX століття – у період близько 1900–1905 років",
         architects: ["Матвій Щавелєєв "],
         founder: " М.І. Ліщинський",
@@ -141,7 +135,7 @@ const datas = [
             description: "Виразний силует споруди створюють витончені профільовані колонки, різьблене мереживо карнизів, декоративні шпилі та безліч інших деталей.",
             ogTitle: "Альтанка - візітна картка Сум",
             ogDescription: "Виразний силует споруди створюють витончені профільовані колонки, різьблене мереживо карнизів, декоративні шпилі та безліч інших деталей.",
-            ogImage: "Ukraine/sumska/sumy-city/altanka/009.jpg"
+            ogImage: "https://our-travels.info/foto/Ukraine/sumska/sumy-city/altanka/009.jpg"
         }
     }
 ]

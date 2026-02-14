@@ -121,7 +121,7 @@ const datas = {
         description: "Рейнланд-Пфальц: города, округа, культура и достопримечательности.",
         ogTitle: "Рейнланд-Пфальц — информация о регионе и округах",
         ogDescription: "Подробная информация о Рейнланд-Пфальц: города, округа, история и интересные факты.",
-        ogImage: "https://our-travels.info/new/foto/Germany/rheinland-pfalz/trier-city/portaNigra_trier/001.JPG"
+        ogImage: "https://our-travels.info/foto/Germany/rheinland-pfalz/trier-city/portaNigra_trier/001.JPG"
     }
 }
 
