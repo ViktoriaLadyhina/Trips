@@ -112,6 +112,9 @@ export const Fotos = {
       ],
       karneval_koln: [
         { path: "Germany/nrw/koln/koln-city/karneval/001.jpg", title: { ru: "Кёльнский карнавал (фото взято с интернета)", ua: "Кельнський карнавал (фото взято з Інтернету)", de: "Kölner Karneval (Foto aus dem Internet)" } },
+      ],
+      dufthaus_4711_koln: [
+        { path: "Germany/nrw/koln/koln-city/dufthaus_4711/001.jpg", title: { ru: "Дом ароматов 4711 (фото взято с интернета)", ua: "Будинок одеколону 4711 (фото взято з Інтернету)", de: "Duft-Haus 4711 (Foto aus dem Internet)" } },
       ]
     },
     bruhl: {
@@ -168,7 +171,7 @@ export const Fotos = {
       gallery: [
         { path: "Germany/nrw/koln/Rhein-Erft-Kreis/frechen/johann_schmitz_platz_frechen/008.jpg", title: { ru: "Старая ратуша Фрехена, 2026", ua: "Стара ратуша Фрехена, 2026", de: "Altes Rathaus Frechen, 2026" } },
       ],
-      'keramion': [
+      keramion: [
         { path: "Germany/nrw/koln/Rhein-Erft-Kreis/frechen/keramion/frechen_keramion.jpg", title: { ru: "KERAMION – Центр современной и исторической керамики (фото взято с интернета)", ua: "KERAMION – Центр сучасної та історичної кераміки (фото взято з Інтернету)", de: "KERAMION – Zentrum für zeitgenössische und historische Keramik (Foto aus dem Internet)" } },
       ],
       'burg-bachem': [

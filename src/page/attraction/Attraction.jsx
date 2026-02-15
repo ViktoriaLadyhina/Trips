@@ -53,8 +53,6 @@ const Attraction = () => {
     const architects = { ru: "Архитекторы", ua: "Архітектори", de: "Architekten" };
 
 
-console.log("all attractions:", attractions);
-
     return (
         <div className="attraction">
             <BreadCrumbs crumbs={crumbs} />
