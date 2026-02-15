@@ -788,6 +788,59 @@ const datas = [
         }
     },
     {
+        id: "skulpturenpark_koln",
+        name: "Skulpturenpark in Köln",
+        type: ["museum", "nature", "monument_or_fountain"],
+        path: "skulpturenpark_koln",
+        countryPath: "germany",
+        regionsPath: "nrw",
+        districtPath: "city",
+        cityPath: "koln",
+        fotoCard: "Germany/nrw/koln/koln-city/skulpturenpark/001.jpg",
+        location: "Köln, Deutschland",
+        officialSite: [
+            { bold: "Offizielle Webseite", link: "https://skulpturenparkkoeln.de/" }
+        ],
+        short_description: "Der Skulpturenpark Köln ist ein Freilichtmuseum für moderne Skulpturen im Stadtteil Riehl, in der Nähe der Zoobrücke und des Rheins. Auf einer Fläche von etwa 35 000–40 000 m² werden Werke internationaler Künstler präsentiert, während alte Bäume eine ruhige Umgebung für Spaziergänge und die Genießung von Kunst und Natur schaffen.",
+        full_description: {
+            title: "Beschreibung und Geschichte",
+            items: [
+                { bold: "Skulpturenpark", text: "– ist ein Freilichtmuseum für moderne Skulpturen im Stadtteil Riehl (Riehler Straße / Ecke Konrad Adenauer Ufer) im nördlichen Köln (im Dreieck zwischen der Zoobrücke, dem Rhein und der Riehler Straße). Er erstreckt sich über etwa 35 000–40 000 m² und ist eine ruhige Oase für Kunst und Grünflächen inmitten der Stadt." },
+                { text: "Der Park wurde 1997 auf private Initiative der Sammler Michael und Eleonore Stoffel (Stoffel) gegründet und genießt seitdem Anerkennung in Deutschland und international. Aufgrund der fehlenden ständigen Sammlung werden die Skulpturen regelmäßig erneuert – die Ausstellungen finden im Rahmen der Reihe KölnSkulptur statt und präsentieren Werke von Künstlern aus aller Welt." },
+                { text: "Besucher können zwischen den Kunstwerken, die in die Natur integriert sind, spazieren gehen; es werden Werke verschiedener Strömungen moderner Skulptur von internationalen Künstlern gezeigt (zum Beispiel von Anish Kapoor bis Heimo Zobernig)." },
+                { text: "Der Skulpturenpark Köln ist ein einzigartiger städtischer Park, in dem Kunst und Natur zu einem ruhigen Raum für Spaziergänge und das Betrachten moderner Skulpturen im Freien verschmelzen." }
+            ]
+        },
+        tickets_and_entry: {
+            title: "Praktische Informationen",
+            items: [
+                { bold: "Adresse:", text: "Riehler Straße (in der Nähe der Zoobrücke), 50668 Köln, Deutschland." },
+                { bold: "Eintritt:", text: "frei für alle." },
+                { bold: "Öffnungszeiten (2026):", text: "April–September: täglich von 10:30 bis 19:00. Oktober–März: täglich von 10:30 bis 17:00. Der Park ist ganzjährig für Spaziergänge geöffnet." },
+                { text: "Öffentliche Führungen finden in der Regel am ersten Sonntag jedes Monats um 15:00 Uhr statt (kostenpflichtig für Erwachsene und Studenten; kostenlos für Kinder bis 10 Jahre). Führungen für Gruppen sind auf Anfrage möglich." }
+            ]
+        },
+        interestingFacts: {
+            title: "Interessante Fakten",
+            items: [
+                { bold: "Private Initiative", text: "– der Park wurde 1997 auf Initiative der Sammler Michael und Eleonore Stoffel gegründet. Er bleibt eine private Sammlung, ist aber für alle zugänglich." },
+                { bold: "KölnSkulptur", text: "– der Park nimmt an einem Kulturprojekt teil, bei dem die Skulpturenausstellung alle paar Jahre erneuert wird und Werke internationaler Künstler präsentiert." },
+                { bold: "36 Werke auf 35 000–40 000 m²", text: "– die Skulpturen sind zwischen alten Bäumen aufgestellt und vermitteln das Gefühl eines «Museums im Wald»." },
+                { text: "Auf den Ausstellungen des Parks werden Werke von Künstlern aus mehr als 10 Ländern präsentiert." },
+                { bold: "Moderne Kunst im Freien", text: "– Besucher können zwischen den Kunstwerken spazieren und die Integration von Kunst und Natur erleben." }
+            ]
+        },
+        construction_period: "1997",
+        founder: " Michael und Eleonore Stoffel (Stoffel)",
+        meta: {
+            title: "Skulpturenpark Köln – Skulpturenpark und Freilichtmuseum moderner Skulpturen in Köln",
+            description: "Besuchen Sie den Skulpturenpark Köln – ein einzigartiger Freilicht-Skulpturenpark in der Nähe des Rheins und des Kölner Zoos. Moderne Skulpturen internationaler Künstler, freier Eintritt, Spaziergänge zwischen Kunst und Natur.",
+            ogTitle: "Skulpturenpark Köln – Freilichtmuseum für Skulpturen",
+            ogDescription: "Entdecken Sie den Skulpturenpark Köln: moderne Kunst im Freien, Skulpturen internationaler Künstler, Spaziergänge durch grüne Alleen und freier Eintritt täglich.",
+            ogImage: "https://our-travels.info/foto/Germany/nrw/koln/koln-city/skulpturenpark/001.jpg"
+        }
+    },
+    {
         id: "zoo_koln",
         name: "Kölner Zoo",
         type: ["nature"],

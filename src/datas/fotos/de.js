@@ -115,6 +115,9 @@ export const Fotos = {
       ],
       dufthaus_4711_koln: [
         { path: "Germany/nrw/koln/koln-city/dufthaus_4711/001.jpg", title: { ru: "Дом ароматов 4711 (фото взято с интернета)", ua: "Будинок одеколону 4711 (фото взято з Інтернету)", de: "Duft-Haus 4711 (Foto aus dem Internet)" } },
+      ],
+      skulpturenpark_koln: [
+        { path: "Germany/nrw/koln/koln-city/skulpturenpark/001.jpg", title: { ru: "Парк скульптур в Кёльне (фото взято с интернета)", ua: "Парк скульптур у Кельні (фото взято з Інтернету)", de: "Skulpturenpark in Köln (Foto aus dem Internet)" } },
       ]
     },
     bruhl: {
