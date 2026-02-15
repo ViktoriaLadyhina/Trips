@@ -23,7 +23,9 @@ const Map = () => {
 
       koln: { ru: 'Административный округ Кёльн', de: 'Regierungsbezirk Köln', ua: 'Адміністративний округ Кельн' },
       rheinErft: { ru: 'Район Рейн-Эрфт', de: 'Rhein-Erft-Kreis', ua: 'Район Рейн-Ерфт' },
-      rhein_sieg: { ru: 'Район Рейн-Зиг', de: 'Rhein-Sieg-Kreis', ua: 'Район Рейн-Зиг' }
+      rhein_sieg: { ru: 'Район Рейн-Зиг', de: 'Rhein-Sieg-Kreis', ua: 'Район Рейн-Зиг' },
+
+      mayen_koblenz: { ru: 'Район Майен‑Кобленц', de: 'Landkreis Mayen-Koblenz', ua: 'Район Маєн-Кобленц' }
     },
     cities: {
       bruhl: { ru: 'Город Брюль', de: 'Stadt Brühl', ua: 'Місто Брюль' },
@@ -259,6 +261,7 @@ const Map = () => {
               {/* Рейнланд-Пфальц */}
               <li><Link to="/germany/rheinland-pfalz">{t.regions.rheinlandPfalz[lang]}</Link>
                 <ul>
+                  <li><Link to="/germany/rheinland-pfalz/mayen-koblenz">{t.districts.mayen_koblenz[lang]}</Link></li>
                   <li><Link to="/germany/rheinland-pfalz/city/trier">{t.cities.trier[lang]}</Link>
                     <ul>
                       <li><Link to="/germany/rheinland-pfalz/city/trier/attractions/portaNigra_trier">{t.attractions.portaNigra_trier[lang]}</Link></li>
