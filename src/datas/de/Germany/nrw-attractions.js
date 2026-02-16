@@ -671,6 +671,68 @@ const datas = [
         }
     },
     {
+        id: "rautenstrauch_joest_museum_koln",
+        name: "Rautenstrauch-Joest-Museum – Kulturen der Welt",
+        type: ["museum"],
+        path: "rautenstrauch_joest_museum_koln",
+        countryPath: "germany",
+        regionsPath: "nrw",
+        districtPath: "city",
+        cityPath: "koln",
+        fotoCard: "Germany/nrw/koln/koln-city/rautenstrauch_joest_museum/001.jpg",
+        location: "Köln, Deutschland",
+        officialSite: [
+            { bold: "Offizielle Website", link: "https://www.rautenstrauch-joest-museum.de/Startseite" }
+        ],
+        short_description: "Das Rautenstrauch-Joest-Museum ist eines der größten ethnologischen Museen Deutschlands und den Kulturen der Welt gewidmet. In den Ausstellungen werden zehntausende Artefakte, Fotografien und thematische Installationen präsentiert, die Traditionen, Glaubensvorstellungen und Lebensweisen verschiedener Zivilisationen zeigen.",
+        full_description: {
+            title: "Beschreibung und Geschichte",
+            items: [
+                { bold: "Rautenstrauch-Joest-Museum – Kulturen der Welt", text: "– eines der größten ethnologischen Museen Deutschlands mit Schwerpunkt auf den Kulturen der Welt. Es ist in Nordrhein-Westfalen aufgrund seines Umfangs und seiner thematischen Ausrichtung einzigartig." },
+                { bold: "Geschichte. ", text: "Das Museum geht auf die private Sammlung des Reisenden und Sammlers Wilhelm Joest zurück, die seine Schwester Adele Rautenstrauch der Stadt Köln Ende des 19. – Anfang des 20. Jahrhunderts übergab. Die Sammlung wuchs stetig, und 1906 wurde das Museum offiziell eröffnet. Nach zahlreichen Umzügen und Umbauten befindet es sich heute in einem modernen Gebäude im Zentrum von Köln neben dem Museum Schnütgen. " },
+                { bold: "Konzept. ", text: "Das Museum erzählt von den Kulturen der Welt durch Alltagsgegenstände, Kunstobjekte, Fotografien und multimediale Präsentationen. Im Mittelpunkt steht kein rein geografischer Ansatz, sondern thematische Bereiche, die zeigen, wie Menschen verschiedener Kulturen die Welt wahrnehmen und welche sozialen Praktiken, Rituale und Vorstellungen sie haben." },
+                { bold: "Architektur. ", text: "Das moderne Museumsgebäude ist gezielt für die Präsentation großer Objekte und multimedialer Installationen konzipiert. Besonderes Augenmerk gilt dem natürlichen Licht und der räumlichen Orientierung der Besucher (Foyer, Themenbereiche, interaktive Zonen). Das historische Gebäude, in dem sich das Museum lange befand, wurde durch einen großzügigeren modernen Komplex im Stadtzentrum ersetzt." }
+            ]
+        },
+        tickets_and_entry: {
+            title: "Praktische Informationen",
+            items: [
+                { bold: "Adresse:", text: "Cäcilienstraße 29-33, 50667 Köln, Deutschland. Anreise: U-Bahn/Straßenbahn Haltestelle Neumarkt (ca. 2–5 Minuten zu Fuß)." },
+                { bold: "Öffnungszeiten:", text: "Dienstag – Sonntag: 10:00 – 18:00, Donnerstag: 10:00 – 20:00, erster Donnerstag im Monat: 10:00 – 22:00, Montag: geschlossen. An Feiertagen gelten die Sonntagszeiten." },
+                { bold: "Tickets: ", text: "Dauerausstellung: ca. €7.00 (Erwachsene), €4.50 (ermäßigt). Kombiticket Dauer- und Sonderausstellungen: ca. €18 (Erwachsene), €15 (ermäßigt). Kombiticket mit Museum Schnütgen: ca. €10 / €7 (ermäßigt). Es gibt zusätzliche Ermäßigungen für Gruppen, Menschen mit Behinderung sowie freien Eintritt für Geflüchtete mit Begleitung." }
+            ]
+        },
+        sub_objects: {
+            title: "Ausstellungen und Themenbereiche",
+            items: [
+                { text: "Die Dauerausstellung zeigt kulturelle Praktiken anhand globaler Themen – etwa Mensch und Natur, Rituale, Wohnarchitektur, soziale Strukturen, Musik und Instrumente sowie Weltbilder und Mythologie." },
+                { text: "Darüber hinaus organisiert das Museum regelmäßig internationale Sonderausstellungen zu Themen wie Kultur, Umwelt, Fotografie und zeitgenössischer Kunst." },
+                { bold: "Sammlungen: ", text: "<br>&nbsp;&nbsp;&nbsp; ▪ Über 60.000 Objekte materieller Kultur aus Afrika, Asien, Amerika, Ozeanien und Europa. " },
+                { text: "&nbsp;&nbsp;&nbsp; ▪ Mehr als 100.000 Fotografien aus verschiedenen Regionen der Welt. " },
+                { text: "&nbsp;&nbsp;&nbsp; ▪ Wissenschaftliche Bibliothek mit tausenden Bänden zur Ethnologie und Kulturwissenschaft (bis zu ~48.000 Quellen laut Stadt Köln)." },
+                { text: "Die Sammlung beteiligt sich aktiv an modernen Forschungsprojekten zur Herkunft der Objekte und zu dekolonialen Ansätzen." }
+            ]
+        },
+        interestingFacts: {
+            title: "Interessante Fakten",
+            items: [
+                { text: "Das Museum erhielt den Museumspreis des Europarates." },
+                { text: "Die Ausstellungen sind so konzipiert, dass Kultur nicht über nationale Grenzen, sondern über universelle Lebensthemen vermittelt wird." },
+                { text: "Regelmäßig finden Bildungsprogramme, Führungen und Veranstaltungen für alle Altersgruppen statt." }
+            ]
+        },
+        construction_period: "Museum gegründet 1906, modernes Gebäude eröffnet 2010",
+        architects: "Hauptgebäude entworfen von Peter Kulka",
+        founder: " Sammlung von Wilhelm Joest, Museum gegründet mit Unterstützung von Adele Rautenstrauch",
+        meta: {
+            title: "Rautenstrauch-Joest-Museum in Köln – ethnologisches Museum der Weltkulturen",
+            description: "Das Rautenstrauch-Joest-Museum in Köln ist eines der größten ethnologischen Museen Deutschlands. Ausstellungen zu Weltkulturen, Sammlungen, Geschichte, Öffnungszeiten und Preise.",
+            ogTitle: "Rautenstrauch-Joest-Museum – Weltkulturen im Zentrum von Köln",
+            ogDescription: "Modernes ethnologisches Museum mit einzigartigen Sammlungen der Kulturen der Welt, interaktiven Ausstellungen und Sonderprojekten in Köln.",
+            ogImage: "https://our-travels.info/foto/Germany/nrw/koln/koln-city/rautenstrauch_joest_museum/001.jpg"
+        }
+    },
+    {
         id: "dufthaus_4711_koln",
         name: "Duft-Haus 4711",
         type: ["museum"],

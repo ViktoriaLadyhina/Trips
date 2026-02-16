@@ -118,6 +118,9 @@ export const Fotos = {
       ],
       skulpturenpark_koln: [
         { path: "Germany/nrw/koln/koln-city/skulpturenpark/001.jpg", title: { ru: "Парк скульптур в Кёльне (фото взято с интернета)", ua: "Парк скульптур у Кельні (фото взято з Інтернету)", de: "Skulpturenpark in Köln (Foto aus dem Internet)" } },
+      ],
+      rautenstrauch_joest_museum_koln: [
+        { path: "Germany/nrw/koln/koln-city/rautenstrauch_joest_museum/001.jpg", title: { ru: "Музей Раутенштраух-Йоста – Культуры мира (фото взято с интернета)", ua: "Музей Раутенштраух-Йост – Культури світу (фото взято з Інтернету)", de: "Rautenstrauch-Joest-Museum – Kulturen der Welt (Foto aus dem Internet)" } },
       ]
     },
     bruhl: {
