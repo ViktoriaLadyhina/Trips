@@ -104,6 +104,7 @@ const Map = () => {
       // rheinland-pfalz
       // Trier
       portaNigra_trier: { ru: 'Порта Нигра («Чёрные ворота»)', de: 'Porta Nigra', ua: 'Порта Нігра («Чорні ворота»)' },
+      amphitheater_trier: { ru: 'Римский амфитеатр', de: 'Römisches Amphitheater', ua: 'Римський амфітеатр' },
 
       // Ukraine
       // Sumska oblast
@@ -263,10 +264,15 @@ const Map = () => {
               {/* Рейнланд-Пфальц */}
               <li><Link to="/germany/rheinland-pfalz">{t.regions.rheinlandPfalz[lang]}</Link>
                 <ul>
+
+                  {/* Район Майен‑Кобленц */}
                   <li><Link to="/germany/rheinland-pfalz/mayen-koblenz">{t.districts.mayen_koblenz[lang]}</Link></li>
+
+                  {/* Трир - город */}
                   <li><Link to="/germany/rheinland-pfalz/city/trier">{t.cities.trier[lang]}</Link>
                     <ul>
                       <li><Link to="/germany/rheinland-pfalz/city/trier/attractions/portaNigra_trier">{t.attractions.portaNigra_trier[lang]}</Link></li>
+                      <li><Link to="/germany/rheinland-pfalz/city/trier/attractions/amphitheater_trier">{t.attractions.amphitheater_trier[lang]}</Link></li>
                     </ul>
                   </li>
                 </ul>

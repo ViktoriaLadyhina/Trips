@@ -11,7 +11,7 @@ const Region = ({ data, countryPath, regionsPath, districtPath, id }) => {
     <div className='region' id={id}>
       {(data?.name || data?.fullName) && (
         <div className='region__title'>
-          {data.name} {data.fullName ? `(${data.fullName})` : ''}
+          {data.name} {data.fullName && data.fullName !== data.name ? `(${data.fullName})` : ''}
         </div>
       )}
 

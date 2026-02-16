@@ -63,7 +63,7 @@ const datas = {
                         {
                             id: 1,
                             name: "Зиген-Виттгенштайн",
-                            fullName: "Kreis Siegen-Wittgenstein",
+                            fullName: "Siegen-Wittgenstein",
                             parentDistrict: "Арнсберг",
                             center: [ { bold: "Центр района:", text: " город Зиген." } ],
                             area: [ { bold: "Площадь:", text: " 1 132,9 кв. км (по состоянию на 2023 г.)" } ],
@@ -95,7 +95,7 @@ const datas = {
                         {
                             id: 2,
                             name: "Зост",
-                            fullName: "Kreis Soest",
+                            fullName: "Soest",
                             parentDistrict: "Арнсберг",
                             center: [
                                 { bold: "Центр района:" },
@@ -145,7 +145,7 @@ const datas = {
                         {
                             id: 3,
                             name: "Меркиш",
-                            fullName: "Märkischer Kreis",
+                            fullName: "Märkischer",
                             parentDistrict: "Арнсберг",
                             center: [
                                 { bold: "Центр района:" },
@@ -196,7 +196,7 @@ const datas = {
                         {
                             id: 4,
                             name: "Ольпе",
-                            fullName: "Kreis Olpe",
+                            fullName: "Olpe",
                             parentDistrict: "Арнсберг",
                             center: [
                                 { bold: "Центр района:" },
@@ -239,7 +239,7 @@ const datas = {
                         {
                             id: 5,
                             name: "Унна",
-                            fullName: "Kreis Unna",
+                            fullName: "Unna",
                             parentDistrict: "Арнсберг",
                             center: [
                                 { bold: "Центр района:" },
@@ -285,7 +285,7 @@ const datas = {
                         {
                             id: 6,
                             name: "Хохзауэрланд",
-                            fullName: "Hochsauerlandkreis",
+                            fullName: "Hochsauerland",
                             parentDistrict: "Арнсберг",
                             center: [
                                 { bold: "Центр района:" },
@@ -333,7 +333,7 @@ const datas = {
                         {
                             id: 7,
                             name: "Эннепе-Рур",
-                            fullName: "Ennepe-Ruhr-Kreis",
+                            fullName: "Ennepe-Ruhr",
                             parentDistrict: "Арнсберг",
                             center: [
                                 { bold: "Центр района:" },
@@ -399,7 +399,7 @@ const datas = {
                         {
                             id: 1,
                             name: "Аахен",
-                            fullName: "Kreis Aachen",
+                            fullName: "Aachen",
                             parentDistrict: "Кёльн",
                             center: [{ bold: "Центр района:", text: " город Аахен." }],
                             area: [ { bold: "Площадь:", text: " 707,15 кв. км (по состоянию на 2023 г.)" }],
@@ -427,7 +427,7 @@ const datas = {
                         {
                             id: 2,
                             name: "Дюрен",
-                            fullName: "Kreis Düren",
+                            fullName: "Düren",
                             parentDistrict: "Кёльн",
                             center: [
                                 { bold: "Центр района:" },
@@ -478,7 +478,7 @@ const datas = {
                         {
                             id: 3,
                             name: "Обербергиш",
-                            fullName: "Oberbergischer Kreis",
+                            fullName: "Oberbergischer",
                             parentDistrict: "Кёльн",
                             center: [
                                 { bold: "Центр района:" },
@@ -527,7 +527,7 @@ const datas = {
                         {
                             id: 4,
                             name: "Ойскирхен",
-                            fullName: "Kreis Euskirchen",
+                            fullName: "Euskirchen",
                             parentDistrict: "Кёльн",
                             center: [
                                 { bold: "Центр района:" },
@@ -574,7 +574,7 @@ const datas = {
                         {
                             id: 5,
                             name: "Рейн-Зиг",
-                            fullName: "Rhein-Sieg-Kreis",
+                            fullName: "Rhein-Sieg",
                             parentDistrict: "Кёльн",
                             center: [
                                 { bold: "Центр района:" },
@@ -629,7 +629,7 @@ const datas = {
                         {
                             id: 6,
                             name: "Рейн-Эрфт",
-                            fullName: "Rhein-Erft-Kreis",
+                            fullName: "Rhein-Erft",
                             parentDistrict: "Кёльн",
                             center: [
                                 { bold: "Центр района:" },
@@ -675,7 +675,7 @@ const datas = {
                         {
                             id: 7,
                             name: "Рейниш-Бергиш",
-                            fullName: "Rheinisch-Bergischer Kreis",
+                            fullName: "Rheinisch-Bergischer",
                             parentDistrict: "Кёльн",
                             center: [
                                 { bold: "Центр района:" },
@@ -719,7 +719,7 @@ const datas = {
                         {
                             id: 8,
                             name: "Хайнсберг",
-                            fullName: "Kreis Heinsberg",
+                            fullName: "Heinsberg",
                             parentDistrict: "Кёльн",
                             center: [
                                 { bold: "Центр района:" },

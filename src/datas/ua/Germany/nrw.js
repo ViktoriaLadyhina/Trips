@@ -113,7 +113,7 @@ const datas = {
                         {
                             id: 1,
                             name: "Зіген-Віттгенштайн",
-                            fullName: "Kreis Siegen-Wittgenstein",
+                            fullName: "Siegen-Wittgenstein",
                             parentDistrict: "Арнсберг",
                             center: [
                                 { bold: "Центр району:" },
@@ -160,7 +160,7 @@ const datas = {
                         {
                             id: 2,
                             name: "Зост",
-                            fullName: "Kreis Soest",
+                            fullName: "Soest",
                             parentDistrict: "Арнсберг",
                             center: [
                                 { bold: "Центр району:" },
@@ -210,7 +210,7 @@ const datas = {
                         {
                             id: 3,
                             name: "Меркіш",
-                            fullName: "Märkischer Kreis",
+                            fullName: "Märkischer",
                             parentDistrict: "Арнсберг",
                             center: [
                                 { bold: "Центр району:" },
@@ -261,7 +261,7 @@ const datas = {
                         {
                             id: 4,
                             name: "Ольпе",
-                            fullName: "Kreis Olpe",
+                            fullName: "Olpe",
                             parentDistrict: "Арнсберг",
                             center: [
                                 { bold: "Центр району:" },
@@ -279,10 +279,7 @@ const datas = {
                                 { bold: "Щільність населення:" },
                                 { text: " 188,8 осіб/км²." }
                             ],
-                            code: [
-                                { bold: "Офіційний код району:" },
-                                { text: " 05 9 66." }
-                            ],
+                            code: [ { bold: "Офіційний код району:", text: " 05 9 66." }  ],
                             description: [
                                 { text: "Район Ольпе входить до землі Північний Рейн-Вестфалія, підпорядкований адміністративному округу Арнсберг." }
                             ],
@@ -304,7 +301,7 @@ const datas = {
                         {
                             id: 5,
                             name: "Унна",
-                            fullName: "Kreis Unna",
+                            fullName: "Unna",
                             parentDistrict: "Арнсберг",
                             center: [
                                 { bold: "Центр району:" },
@@ -350,7 +347,7 @@ const datas = {
                         {
                             id: 6,
                             name: "Хохзауерланд",
-                            fullName: "Hochsauerlandkreis",
+                            fullName: "Hochsauerland",
                             parentDistrict: "Арнсберг",
                             center: [
                                 { bold: "Центр району:" },
@@ -398,7 +395,7 @@ const datas = {
                         {
                             id: 7,
                             name: "Еннепе-Рур",
-                            fullName: "Ennepe-Ruhr-Kreis",
+                            fullName: "Ennepe-Ruhr",
                             parentDistrict: "Арнсберг",
                             center: [
                                 { bold: "Центр району:" },
@@ -476,7 +473,7 @@ const datas = {
                         {
                             id: 1,
                             name: "Аахен",
-                            fullName: "Kreis Aachen",
+                            fullName: "Aachen",
                             parentDistrict: "Кельн",
                             center: [
                                 { bold: "Центр району:" },
@@ -522,7 +519,7 @@ const datas = {
                         {
                             id: 2,
                             name: "Дюрен",
-                            fullName: "Kreis Düren",
+                            fullName: "Düren",
                             parentDistrict: "Кельн",
                             center: [
                                 { bold: "Центр району:" },
@@ -573,7 +570,7 @@ const datas = {
                         {
                             id: 3,
                             name: "Обербергіш",
-                            fullName: "Oberbergischer Kreis",
+                            fullName: "Oberbergischer",
                             parentDistrict: "Кельн",
                             center: [
                                 { bold: "Центр району:" },
@@ -622,7 +619,7 @@ const datas = {
                         {
                             id: 4,
                             name: "Ойскирхен",
-                            fullName: "Kreis Euskirchen",
+                            fullName: "Euskirchen",
                             parentDistrict: "Кельн",
                             center: [
                                 { bold: "Центр району:" },
@@ -669,7 +666,7 @@ const datas = {
                         {
                             id: 5,
                             name: "Рейн-Зіг",
-                            fullName: "Rhein-Sieg-Kreis",
+                            fullName: "Rhein-Sieg",
                             parentDistrict: "Кельн",
                             center: [
                                 { bold: "Центр району:" },
@@ -724,7 +721,7 @@ const datas = {
                         {
                             id: 6,
                             name: "Рейн-Ерфт",
-                            fullName: "Rhein-Erft-Kreis",
+                            fullName: "Rhein-Erft",
                             parentDistrict: "Кельн",
                             center: [
                                 { bold: "Центр району:" },
@@ -770,7 +767,7 @@ const datas = {
                         {
                             id: 7,
                             name: "Рейнiш-Бергiш",
-                            fullName: "Rheinisch-Bergischer Kreis",
+                            fullName: "Rheinisch-Bergischer",
                             parentDistrict: "Кельн",
                             center: [
                                 { bold: "Центр району:" },
@@ -814,7 +811,7 @@ const datas = {
                         {
                             id: 8,
                             name: "Хайнсберг",
-                            fullName: "Kreis Heinsberg",
+                            fullName: "Heinsberg",
                             parentDistrict: "Кельн",
                             center: [
                                 { bold: "Центр району:" },

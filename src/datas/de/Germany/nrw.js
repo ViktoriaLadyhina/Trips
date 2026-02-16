@@ -105,7 +105,7 @@ const datas = {
                         {
                             id: 1,
                             name: "Siegen-Wittgenstein",
-                            fullName: "Kreis Siegen-Wittgenstein",
+                            fullName: "Siegen-Wittgenstein",
                             parentDistrict: "Arnsberg",
                             center: [
                                 { bold: "Kreisstadt:" },
@@ -152,7 +152,7 @@ const datas = {
                         {
                             id: 2,
                             name: "Soest",
-                            fullName: "Kreis Soest",
+                            fullName: "Soest",
                             parentDistrict: "Arnsberg",
                             center: [
                                 { bold: "Kreisstadt:" },
@@ -201,8 +201,8 @@ const datas = {
                         },
                         {
                             id: 3,
-                            name: "Märkischer Kreis",
-                            fullName: "Märkischer Kreis",
+                            name: "Märkischer",
+                            fullName: "Märkischer",
                             parentDistrict: "Arnsberg",
                             center: [
                                 { bold: "Kreisstadt:" },
@@ -253,7 +253,7 @@ const datas = {
                         {
                             id: 4,
                             name: "Olpe",
-                            fullName: "Kreis Olpe",
+                            fullName: "Olpe",
                             parentDistrict: "Arnsberg",
                             center: [
                                 { bold: "Kreisstadt:" },
@@ -296,7 +296,7 @@ const datas = {
                         {
                             id: 5,
                             name: "Unna",
-                            fullName: "Kreis Unna",
+                            fullName: "Unna",
                             parentDistrict: "Arnsberg",
                             center: [
                                 { bold: "Kreisstadt:" },
@@ -341,8 +341,8 @@ const datas = {
                         },
                         {
                             id: 6,
-                            name: "Hochsauerlandkreis",
-                            fullName: "Hochsauerlandkreis",
+                            name: "Hochsauerland",
+                            fullName: "Hochsauerland",
                             parentDistrict: "Arnsberg",
                             center: [
                                 { bold: "Kreisstadt:" },
@@ -389,8 +389,8 @@ const datas = {
                         },
                         {
                             id: 7,
-                            name: "Ennepe-Ruhr-Kreis",
-                            fullName: "Ennepe-Ruhr-Kreis",
+                            name: "Ennepe-Ruhr",
+                            fullName: "Ennepe-Ruhr",
                             parentDistrict: "Arnsberg",
                             center: [
                                 { bold: "Kreisstadt:" },
@@ -468,7 +468,7 @@ const datas = {
                         {
                             id: 1,
                             name: "Aachen",
-                            fullName: "Kreis Aachen",
+                            fullName: "Aachen",
                             parentDistrict: "Köln",
                             center: [
                                 { bold: "Zentrum des Bezirks:" },
@@ -514,7 +514,7 @@ const datas = {
                         {
                             id: 2,
                             name: "Düren",
-                            fullName: "Kreis Düren",
+                            fullName: "Düren",
                             parentDistrict: "Köln",
                             center: [
                                 { bold: "Zentrum des Bezirks:" },
@@ -564,8 +564,8 @@ const datas = {
                         },
                         {
                             id: 3,
-                            name: "Oberbergischer Kreis",
-                            fullName: "Oberbergischer Kreis",
+                            name: "Oberbergischer",
+                            fullName: "Oberbergischer",
                             parentDistrict: "Köln",
                             center: [
                                 { bold: "Kreisstadt:" },
@@ -614,7 +614,7 @@ const datas = {
                         {
                             id: 4,
                             name: "Euskirchen",
-                            fullName: "Kreis Euskirchen",
+                            fullName: "Euskirchen",
                             parentDistrict: "Köln",
                             center: [
                                 { bold: "Zentrum des Bezirks:" },
@@ -660,8 +660,8 @@ const datas = {
                         },
                         {
                             id: 5,
-                            name: "Rhein-Sieg-Kreis",
-                            fullName: "Rhein-Sieg-Kreis",
+                            name: "Rhein-Sieg",
+                            fullName: "Rhein-Sieg",
                             parentDistrict: "Köln",
                             center: [
                                 { bold: "Kreisstadt:" },
@@ -715,8 +715,8 @@ const datas = {
                         },
                         {
                             id: 6,
-                            name: "Rhein-Erft-Kreis",
-                            fullName: "Rhein-Erft-Kreis",
+                            name: "Rhein-Erft",
+                            fullName: "Rhein-Erft",
                             parentDistrict: "Köln",
                             center: [
                                 { bold: "Kreisstadt:" },
@@ -761,8 +761,8 @@ const datas = {
                         },
                         {
                             id: 7,
-                            name: "Rheinisch-Bergischer Kreis",
-                            fullName: "Rheinisch-Bergischer Kreis",
+                            name: "Rheinisch-Bergischer",
+                            fullName: "Rheinisch-Bergischer",
                             parentDistrict: "Köln",
                             center: [
                                 { bold: "Kreisstadt:" },
@@ -805,8 +805,8 @@ const datas = {
                         },
                         {
                             id: 8,
-                            name: "Kreis Heinsberg",
-                            fullName: "Kreis Heinsberg",
+                            name: "Heinsberg",
+                            fullName: "Heinsberg",
                             parentDistrict: "Köln",
                             center: [
                                 { bold: "Kreisstadt:" },

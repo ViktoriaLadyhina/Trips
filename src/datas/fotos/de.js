@@ -333,6 +333,15 @@ export const Fotos = {
       portaNigra_trier: [
         { path: "Germany/rheinland-pfalz/trier-city/portaNigra_trier/001.JPG", title: { ru: "Порта Нигра, 2024", ua: "Порта Нігра («Чорні ворота»), 2024", de: "Porta Nigra, 2024" } },
         { path: "Germany/rheinland-pfalz/trier-city/portaNigra_trier/002.JPG", title: { ru: "Порта Нигра, 2024", ua: "Порта Нігра («Чорні ворота»), 2024", de: "Porta Nigra, 2024" } },
+      ],
+      amphitheater_trier: [
+        { path: "Germany/rheinland-pfalz/trier-city/amphitheater/001.JPG", title: { ru: "Римский амфитеатр в Трире, 2024", ua: "Римський амфітеатр у Трірі, 2024", de: "Römischer Amphitheater in Trier, 2024" } },
+        { path: "Germany/rheinland-pfalz/trier-city/amphitheater/002.JPG", title: { ru: "Римский амфитеатр в Трире, 2024", ua: "Римський амфітеатр у Трірі, 2024", de: "Römischer Amphitheater in Trier, 2024" } },
+        { path: "Germany/rheinland-pfalz/trier-city/amphitheater/003.JPG", title: { ru: "Римский амфитеатр в Трире, 2024", ua: "Римський амфітеатр у Трірі, 2024", de: "Römischer Amphitheater in Trier, 2024" } },
+        { path: "Germany/rheinland-pfalz/trier-city/amphitheater/004.JPG", title: { ru: "Римский амфитеатр в Трире, 2024", ua: "Римський амфітеатр у Трірі, 2024", de: "Römischer Amphitheater in Trier, 2024" } },
+        { path: "Germany/rheinland-pfalz/trier-city/amphitheater/005.JPG", title: { ru: "Римский амфитеатр в Трире, 2024", ua: "Римський амфітеатр у Трірі, 2024", de: "Römischer Amphitheater in Trier, 2024" } },
+        { path: "Germany/rheinland-pfalz/trier-city/amphitheater/006.JPG", title: { ru: "Римский амфитеатр в Трире, 2024", ua: "Римський амфітеатр у Трірі, 2024", de: "Römischer Amphitheater in Trier, 2024" } },
+        { path: "Germany/rheinland-pfalz/trier-city/amphitheater/007.JPG", title: { ru: "Римский амфитеатр в Трире, 2024", ua: "Римський амфітеатр у Трірі, 2024", de: "Römischer Amphitheater in Trier, 2024" } },
       ]
     }
   }
