@@ -49,7 +49,7 @@ export const Fotos = {
         { path: "Germany/nrw/koln/koln-city/koln-cathedral/005.jpg", title: { ru: "Кёльнский собор - 2025", ua: "Кельнський собор - 2025", de: "Kölner Dom - 2025" } },
       ],
       guerzenich_koln: [
-        { path: "Germany/nrw/koln/koln-city/guerzenich_koln/001.jpg", title: { ru: "Гюрцених (фото взято с интернета)", ua: "Гюрценіх (фото взято з Інтернету)", de: "Gürzenich (Foto aus dem Internet)" } },
+        { path: "Germany/nrw/koln/koln-city/guerzenich_koln/001.jpg", title: { ru: "Гюрцених, 2026", ua: "Гюрценіх, 2026", de: "Gürzenich, 2026" } },
       ],
       'roemisch-germanisches-museum': [
         { path: "Germany/nrw/koln/koln-city/roemisch-germanisches-museum/001.jpg", title: { ru: "Римско-германский музей - 2025", ua: "Римсько-германський музей - 2025", de: "Römisch-Germanisches Museum - 2025" } }
@@ -85,6 +85,12 @@ export const Fotos = {
       flora_garten_koln: [
         { path: "Germany/nrw/koln/koln-city/flora_garten_koln/001.jpg", title: { ru: "Ботанический сад Флора, 2025", ua: "Ботанічний сад Флора, 2025", de: "Botanischer Garten Flora, 2025" } },
         { path: "Germany/nrw/koln/koln-city/flora_garten_koln/002.jpg", title: { ru: "Ботанический сад Флора, 2025", ua: "Ботанічний сад Флора, 2025", de: "Botanischer Garten Flora, 2025" } },
+        { path: "Germany/nrw/koln/koln-city/flora_garten_koln/003.jpg", title: { ru: "Ботанический сад Флора, 2025", ua: "Ботанічний сад Флора, 2025", de: "Botanischer Garten Flora, 2025" } },
+        { path: "Germany/nrw/koln/koln-city/flora_garten_koln/004.jpg", title: { ru: "Ботанический сад Флора, 2025", ua: "Ботанічний сад Флора, 2025", de: "Botanischer Garten Flora, 2025" } },
+        { path: "Germany/nrw/koln/koln-city/flora_garten_koln/005.jpg", title: { ru: "Ботанический сад Флора, 2025", ua: "Ботанічний сад Флора, 2025", de: "Botanischer Garten Flora, 2025" } },
+        { path: "Germany/nrw/koln/koln-city/flora_garten_koln/006.jpg", title: { ru: "Ботанический сад Флора, 2025", ua: "Ботанічний сад Флора, 2025", de: "Botanischer Garten Flora, 2025" } },
+        { path: "Germany/nrw/koln/koln-city/flora_garten_koln/007.jpg", title: { ru: "Ботанический сад Флора, 2025", ua: "Ботанічний сад Флора, 2025", de: "Botanischer Garten Flora, 2025" } },
+        { path: "Germany/nrw/koln/koln-city/flora_garten_koln/008.jpg", title: { ru: "Ботанический сад Флора, 2025", ua: "Ботанічний сад Флора, 2025", de: "Botanischer Garten Flora, 2025" } },
       ],
       rheinpark_koln: [
         { path: "Germany/nrw/koln/koln-city/rheinpark_koln/001.jpg", title: { ru: "Рейнский парк (фото взято с википедии)", ua: "Рейнський парк (фото взято з Вікіпедії)", de: "Rheinpark (Foto von Wikipedia entnommen)" } },
@@ -108,7 +114,9 @@ export const Fotos = {
         { path: "Germany/nrw/koln/koln-city/rheinpark_koln/007.jpg", title: { ru: "Руины римского форта Дивития в Кёльне, 2025", ua: "Руїни римського форту Дивітія в Кельні, 2025", de: "Ruinen des römischen Forts Divitia in Köln, 2025" } },
       ],
       museum_schnuetgen_koln: [
-        { path: "Germany/nrw/koln/koln-city/schnuetgen/001.jpg", title: { ru: "Музей Шнютгена (фото взято с интернета)", ua: "Музей Шнютгена (фото взято з Інтернету)", de: "Museum Schnütgen (Foto aus dem Internet)" } },
+        { path: "Germany/nrw/koln/koln-city/schnuetgen/001.jpg", title: { ru: "Музей Шнютгена, 2026", ua: "Музей Шнютгена, 2026", de: "Museum Schnütgen, 2026" } },
+        { path: "Germany/nrw/koln/koln-city/schnuetgen/002.jpg", title: { ru: "Музей Шнютгена, 2026", ua: "Музей Шнютгена, 2026", de: "Museum Schnütgen, 2026" } },
+        { path: "Germany/nrw/koln/koln-city/schnuetgen/003.jpg", title: { ru: "Музей Шнютгена, 2026", ua: "Музей Шнютгена, 2026", de: "Museum Schnütgen, 2026" } },
       ],
       karneval_koln: [
         { path: "Germany/nrw/koln/koln-city/karneval/001.jpg", title: { ru: "Кёльнский карнавал (фото взято с интернета)", ua: "Кельнський карнавал (фото взято з Інтернету)", de: "Kölner Karneval (Foto aus dem Internet)" } },
@@ -120,7 +128,7 @@ export const Fotos = {
         { path: "Germany/nrw/koln/koln-city/skulpturenpark/001.jpg", title: { ru: "Парк скульптур в Кёльне (фото взято с интернета)", ua: "Парк скульптур у Кельні (фото взято з Інтернету)", de: "Skulpturenpark in Köln (Foto aus dem Internet)" } },
       ],
       rautenstrauch_joest_museum_koln: [
-        { path: "Germany/nrw/koln/koln-city/rautenstrauch_joest_museum/001.jpg", title: { ru: "Музей Раутенштраух-Йоста – Культуры мира (фото взято с интернета)", ua: "Музей Раутенштраух-Йост – Культури світу (фото взято з Інтернету)", de: "Rautenstrauch-Joest-Museum – Kulturen der Welt (Foto aus dem Internet)" } },
+        { path: "Germany/nrw/koln/koln-city/rautenstrauch_joest_museum/001.jpg", title: { ru: "Музей Раутенштраух-Йоста, 2026", ua: "Музей Раутенштраух-Йост, 2026", de: "Rautenstrauch-Joest-Museum, 2026" } },
       ]
     },
     bruhl: {
