@@ -40,6 +40,12 @@ const District = () => {
     }
   }, [location.search]);
 
+     useEffect(() => {
+    if (district?.name) {
+        document.title = district.name;
+    }
+}, [district?.name]);
+
   if (error) return <p>{error}</p>;
   if (!district) return <p>District not found</p>;
 
@@ -57,7 +63,7 @@ const District = () => {
       <div className='district__container'>
         {district?.title && <div className='district__title'>{district.title}</div>}
 
-<BtnAttr lang={lang} path={`/${countryPath}/${regionsPath}/${districtPath}/attractions`}/>
+        <BtnAttr lang={lang} path={`/${countryPath}/${regionsPath}/${districtPath}/attractions`} />
 
         <div className='district__map'>
           <CountryMap

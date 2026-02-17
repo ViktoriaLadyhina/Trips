@@ -7,6 +7,7 @@ import { useMeta } from '../../hooks/useMeta.js';
 import './City.scss'
 import useCityFullData from '../../hooks/useCityFullData.js';
 import BtnAttr from '../../components/btn-attr/BtnAttr.jsx';
+import { useEffect } from 'react';
 
 const BASE_PHOTO_URL = import.meta.env.VITE_BASE_PHOTO_URL;
 
@@ -15,6 +16,12 @@ const City = () => {
     const { region, district, parentSubRegion, city, cityData, lang, events, error } = useCityFullData();
 
     useMeta(cityData?.meta);
+
+    useEffect(() => {
+    if (cityData?.name) {
+        document.title = cityData.name;
+    }
+}, [cityData?.name]);
 
     if (error) return <p>{error}</p>;
     if (!cityData) return <p>Loading...</p>;   

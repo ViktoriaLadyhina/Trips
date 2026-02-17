@@ -7,7 +7,7 @@ import InfoBlock from '../../components/InfoBlock/InfoBlock';
 import BreadCrumbs from '../../components/breadCrumbs/BreadCrumbs';
 import { useMeta } from '../../hooks/useMeta';
 import './Regions.scss'
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import CountryMap from '../../components/maps/CountryMap';
 import useCityFullData from '../../hooks/useCityFullData';
 import BtnAttr from "../../components/btn-attr/BtnAttr";
@@ -20,6 +20,12 @@ const Regions = () => {
     const [sidebarOpen, setSidebarOpen] = useState(false);
 
     useMeta(region?.meta || {});
+    
+    useEffect(() => {
+        if (region?.name) {
+            document.title = region.name;
+        }
+    }, [region?.name]);
 
     const photos = photosByCountry[countryPath];
 

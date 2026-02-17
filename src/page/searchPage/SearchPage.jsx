@@ -15,6 +15,14 @@ import { searchAll } from "../../components/search/searchUtils.js";
 import BreadCrumbs from '../../components/breadCrumbs/BreadCrumbs';
 import './SearchPage.scss';
 
+const searchResults = { ru: "Результаты поиска", ua: "Результати пошуку", de: "Suchergebnisse" };
+const searchByCountries = { ru: "Поиск по странам", ua: "Пошук за країнами", de: "Suche nach Ländern" };
+const searchByRegions = { ru: "Поиск по землям/областям", ua: "Пошук за землями/областями", de: "Suche nach Bundesländern/Regionen" };
+const searchByDistricts = { ru: "Поиск по краям/районам", ua: "Пошук за краями/районами", de: "Suche nach Kreisen/Bezirken" };
+const searchByCities = { ru: "Поиск по городам", ua: "Пошук за містами", de: "Suche nach Städten" };
+const searchByAttractions = { ru: "Поиск по достопримечательностям", ua: "Пошук за пам’ятками", de: "Suche nach Sehenswürdigkeiten" };
+
+
 const SearchPage = () => {
   const { lang } = useSelector(state => state.language);
   const location = useLocation();
@@ -49,12 +57,9 @@ const SearchPage = () => {
     setResultAttraction(attractionsResult);
   }, [query, lang, allCountries, allRegions, allCities, allAttractions]);
 
-  const searchResults = { ru: "Результаты поиска", ua: "Результати пошуку", de: "Suchergebnisse" };
-  const searchByCountries = { ru: "Поиск по странам", ua: "Пошук за країнами", de: "Suche nach Ländern" };
-  const searchByRegions = { ru: "Поиск по землям/областям", ua: "Пошук за землями/областями", de: "Suche nach Bundesländern/Regionen" };
-  const searchByDistricts = { ru: "Поиск по краям/районам", ua: "Пошук за краями/районами", de: "Suche nach Kreisen/Bezirken" };
-  const searchByCities = { ru: "Поиск по городам", ua: "Пошук за містами", de: "Suche nach Städten" };
-  const searchByAttractions = { ru: "Поиск по достопримечательностям", ua: "Пошук за пам’ятками", de: "Suche nach Sehenswürdigkeiten" };
+  useEffect(() => {
+    document.title = searchResults[lang];
+  }, [lang]);
 
   const crumbs = [
     {

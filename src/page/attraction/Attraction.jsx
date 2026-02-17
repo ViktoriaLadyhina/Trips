@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import useCityFullData from '../../hooks/useCityFullData.js';
 import { useParams } from 'react-router';
 import BreadCrumbs from '../../components/breadCrumbs/BreadCrumbs.jsx';
@@ -17,6 +17,12 @@ const Attraction = () => {
     const attraction = attractions.find(a => a.path === attractionsPath);
     const photos = photosByCountry[country?.path];
     const attractionPhotos = photos?.[region?.path]?.[city?.path]?.[attractionsPath] || [];
+
+    useEffect(() => {
+    if (attraction?.name) {
+        document.title = attraction.name;
+    }
+}, [attraction, lang]);
 
     // Преобразуем в массив для Gallery
     const images = attractionPhotos.map(photo => ({
