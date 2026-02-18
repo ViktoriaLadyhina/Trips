@@ -73,6 +73,7 @@ const Map = () => {
       dufthaus_4711_koln: { ru: 'Дом одеколона 4711', de: 'Duft-Haus 4711', ua: 'Будинок одеколону 4711' },
       skulpturenpark_koln: { ru: 'Парк скульптур в Кёльне', de: 'Skulpturenpark in Köln', ua: 'Парк скульптур у Кельні' },
       rautenstrauch_joest_museum_koln : { ru: 'Музей Раутенштраух-Йост', de: 'Rautenstrauch-Joest-Museum', ua: 'Музей Раутенштраух-Йост' },
+      finkens_garten_koln : { ru: 'Экологический сад Финкенсгартен', de: 'Finkens Garten', ua: 'Екологічний сад Фінкенсгартен' },
 
       // Köln okrug
       // Rhein-Erft-Kreis
@@ -200,7 +201,7 @@ const Map = () => {
                         </ul>
                       </li>
 
-                      {/* Köln город */}
+                      {/* Köln город */}finkens_garten_koln
                       <li><Link to="/germany/nrw/city/koln">{t.cities.koln[lang]}</Link>
                         <ul>
                           <li><Link to="/germany/nrw/city/koln/attractions/cologne-cathedral">{t.attractions.cologneCathedral[lang]}</Link></li>
@@ -228,6 +229,7 @@ const Map = () => {
                               <li><Link to="/germany/nrw/city/koln/attractions/divitia_koln">{t.attractions.divitia_koln[lang]}</Link></li>
                             </ul>
                           </li>
+                          <li><Link to="/germany/nrw/city/koln/attractions/finkens_garten_koln">{t.attractions.finkens_garten_koln[lang]}</Link></li>
                         </ul>
                       </li>
 

@@ -1308,6 +1308,61 @@ const datas = [
             ogImage: "https://our-travels.info/foto/Germany/nrw/koln/koln-city/rheinpark_koln/004.jpg"
         }
     },
+    {
+        id: "finkens_garten_koln",
+        name: "Finkens Garten",
+        type: ["nature"],
+        path: "finkens_garten_koln",
+        countryPath: "germany",
+        regionsPath: "nrw",
+        districtPath: "city",
+        cityPath: "koln",
+        fotoCard: "Germany/nrw/koln/koln-city/finkens_garten/001.jpg",
+        location: "Köln, Deutschland",
+        officialSite: [
+            { bold: "Offizielle Website", link: "http://www.finkensgarten.org/" }
+        ],
+        short_description: "Finkens Garten ist ein naturpädagogisches Gelände im Stadtteil Rodenkirchen im Süden von Köln. Hier können Besucher die Natur kennenlernen, Tiere und Pflanzen in ihrer natürlichen Umgebung beobachten und an Umweltprogrammen teilnehmen.",
+        full_description: {
+            title: "Beschreibung und Geschichte",
+            items: [
+                { bold: "Finkens Garten", text: " – ist ein Naturpark im Stadtteil Rodenkirchen im Süden von Köln, der als offener Bildungsraum über die Natur geschaffen wurde. Er dient als Ort für praktische Naturerfahrungen, besonders für Kinder im Vorschul- und Schulalter, ist jedoch für alle Altersgruppen interessant. " },
+                { text: "Finkens Garten ist ein Beispiel für einen natürlichen Lebensraum, in dem Besucher:" },
+                { text: "• die Vielfalt von Flora und Fauna beobachten und erforschen können;" },
+                { text: "• verschiedene Biotoptypen untersuchen können (Wiesen, Blumenflächen, Obstgärten, Teiche und andere);" },
+                { text: "• an Programmen zur Beobachtung von Vögeln, Insekten und anderen Tieren teilnehmen können;" },
+                { text: "• einen großen Kräutergarten, Obstbäume und anderes besuchen können;" },
+                { text: "• das Bienenhaus besuchen können, wo man mehr über das Leben der Bienen erfährt und lokalen Honig probieren kann. " },
+                { bold: "Geschichte. ", text: "Der Park besteht seit mehreren Jahrzehnten als Naturgarten für Bildungs- und Gemeinschaftszwecke. " },
+                { bold: "Zweck.", text: "Die Hauptaufgabe besteht darin, die Natur praktisch erfahrbar zu machen, den Respekt vor der Umwelt zu fördern und die biologische Vielfalt zu bewahren." }
+            ]
+        },
+        tickets_and_entry: {
+            title: "Praktische Informationen",
+            items: [
+                { bold: "Adresse: ", text: "Friedrich-Ebert-Straße 49, 50996 Köln-Rodenkirchen. Straßenbahn- und Bushaltestellen befinden sich in der Nähe des Eingangs (Linien 16, 17, 130, 131). " },
+                { bold: "Geöffnet: ", text: "täglich von 9:00 Uhr bis Sonnenuntergang (abhängig von Jahreszeit und Wetter). " },
+                { bold: "Besondere Zeiten:", text: "Das Bienenhaus mit Honigverkostung und Präsentationen ist jeden 2. und 4. Sonntag im Monat geöffnet (11:00–16:00 Uhr, saisonabhängig). " },
+                { bold: "Eintritt", text: "kostenlos. " },
+                { bold: "Wichtig:", text: "Hunde und Fahrräder sind im Garten nicht erlaubt (zum Schutz der Natur). " }
+            ]
+        },
+        interestingFacts: {
+            title: "Interessante Fakten",
+            items: [
+                { text: "Der Park wird häufig als Bildungsort für Kinder aller Altersgruppen genutzt. " },
+                { text: "Hier finden regelmäßig Naturführungen, thematische Veranstaltungen und Workshops statt (zum Beispiel über Vögel, Insekten und Pflanzen)." },
+                { text: "Der Park wird von Freiwilligen und der lokalen Gemeinschaft unterstützt und nicht nur von städtischen Diensten. " }
+            ]
+        },
+        meta: {
+            title: "Finkens Garten – Naturgarten und Naturpark, Rodenkirchen",
+            description: "Finkens Garten in Köln ist ein kostenloser Naturpark mit Biotopen, Bienenhaus und Bildungsprogrammen für Kinder und Erwachsene.",
+            ogTitle: "Finkens Garten – Natur und Erlebnisse im Herzen der Stadt",
+            ogDescription: "Verbringen Sie einen Tag im Finkens Garten: Entdecken Sie natürliche Landschaften, lernen Sie die Natur kennen und besuchen Sie das Bienenhaus und Bildungsangebote.",
+            ogImage: "https://our-travels.info/foto/Germany/nrw/koln/koln-city/finkens_garten/001.jpg"
+        }
+    },
 
     // Köln округ
 

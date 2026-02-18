@@ -129,6 +129,9 @@ export const Fotos = {
       ],
       rautenstrauch_joest_museum_koln: [
         { path: "Germany/nrw/koln/koln-city/rautenstrauch_joest_museum/001.jpg", title: { ru: "Музей Раутенштраух-Йоста, 2026", ua: "Музей Раутенштраух-Йост, 2026", de: "Rautenstrauch-Joest-Museum, 2026" } },
+      ],
+      finkens_garten_koln: [
+        { path: "Germany/nrw/koln/koln-city/finkens_garten/001.jpg", title: { ru: "Экологический сад Финкенсгартен (фото взято с интернета)", ua: "Екологічний сад Фінкенсгартен (фото взято з Інтернету)", de: "Finkens Garten (Foto aus dem Internet)" } },
       ]
     },
     bruhl: {
