@@ -75,7 +75,7 @@ const datas = [
             description: "Трир: история, география, достопримечательности, знаменитые жители и интересные факты о старейшем городе Германии.",
             ogTitle: "Трир – информация о городе",
             ogDescription: "Подробная информация о Трире: культура, история, знаменитые жители и интересные факты.",
-            ogImage: "https://our-travels.info/new/foto/Germany/rheinland-pfalz/trier-city/portaNigra_trier/001.JPG"
+            ogImage: "https://our-travels.info/foto/Germany/rheinland-pfalz/trier-city/portaNigra_trier/001.JPG"
         }
     },
 

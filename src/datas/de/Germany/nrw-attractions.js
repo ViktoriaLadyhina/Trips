@@ -71,7 +71,7 @@ const datas = [
             description: "Der Kölner Dom – Symbol der Stadt und Meisterwerk gotischer Architektur. Baugeschichte, Reliquien, Glasfenster, Glocken und Geheimnisse des Doms.",
             ogTitle: "Kölner Dom: Geschichte, Architektur und Reliquien",
             ogDescription: "Tauchen Sie ein in die Geschichte des Kölner Doms – Größe, Reliquien, Architektur und Intrigen des gotischen Meisterwerks.",
-            ogImage: "https://our-travels.info/new/foto/Germany/nrw/koln/koln-city/koln-cathedral/001.jpg"
+            ogImage: "https://our-travels.info/foto/Germany/nrw/koln/koln-city/koln-cathedral/001.jpg"
         }
     },
     {
@@ -129,7 +129,7 @@ const datas = [
             description: "Kölner Rathaus: gotischer Turm, Renaissance-Loggia",
             ogTitle: "Kölner Rathaus: gotischer Turm, Renaissance-Loggia",
             ogDescription: "Das Kölner Rathaus – das älteste Verwaltungsgebäude Deutschlands, vereint gotischen Turm, Renaissance-Loggia und den historischen Hansasaal.",
-            ogImage: "https://our-travels.info/new/foto/Germany/nrw/koln/koln-city/rathaus-koeln/Rathaus-Köln.jpg"
+            ogImage: "https://our-travels.info/foto/Germany/nrw/koln/koln-city/rathaus-koeln/Rathaus-Köln.jpg"
         }
     },
     {
@@ -191,7 +191,7 @@ const datas = [
             description: "Der Gürzenich in Köln wurde in den Jahren 1441–1452 als Gebäude für städtische Feierlichkeiten errichtet. Heute finden hier Konzerte, Bankette und offizielle Empfänge statt.",
             ogTitle: "Gürzenich, Köln – historisches Gebäude und Veranstaltungszentrum",
             ogDescription: "Entdecken Sie den Gürzenich in Köln – ein historisches Bauwerk aus dem 15. Jahrhundert, das nach dem Krieg wiederaufgebaut wurde und heute Konzerte, Karnevalssitzungen und festliche Empfänge beherbergt.",
-            ogImage: "https://our-travels.info/new/foto/Germany/nrw/koln/koln-city/guerzenich_koln/001.jpg"
+            ogImage: "https://our-travels.info/foto/Germany/nrw/koln/koln-city/guerzenich_koln/001.jpg"
         }
     },
     {
@@ -227,8 +227,8 @@ const datas = [
             items: [
                 { bold: "Adresse (temporäre Ausstellung):", text: "Belgisches Haus, Cäcilienstraße 46, 50667 Köln" },
                 { bold: "Altes Gebäude:", text: "Roncalliplatz 4, neben dem Kölner Dom" },
-                { bold: "Öffnungszeiten:", text: "Mittwoch bis Montag, 10:00 – 18:00, Dienstag geschlossen" },
-                { bold: "Eintrittspreise (2025):", text: "Erwachsene – 6 €, ermäßigt – 3 €" },
+                { bold: "Öffnungszeiten:", text: "<br>Mittwoch bis Montag, 10:00 – 18:00, <br>Dienstag geschlossen" },
+                { bold: "Eintrittspreise (2025):", text: "<br>Erwachsene – 6 €, <br>ermäßigt – 3 €" },
             ]
         },
         interestingFacts: {
@@ -246,7 +246,7 @@ const datas = [
             description: "Das Römisch-Germanische Museum ist ein einzigartiges archäologisches Museum in Köln, errichtet über einer römischen Villa. Dionysosmosaik, Glas, Schmuck und Geschichte der Stadt Colonia.",
             ogTitle: "Römisch-Germanisches Museum Köln — Geschichte und Dionysosmosaik",
             ogDescription: "Museum der antiken Colonia: Dionysosmosaik, römisches Glas und Archäologie in Köln. Erfahren Sie, wie die Antike unter der modernen Stadt erhalten blieb.",
-            ogImage: "https://our-travels.info/new/foto/Germany/nrw/koln/koln-city/roemisch-germanisches-museum/001.jpg"
+            ogImage: "https://our-travels.info/foto/Germany/nrw/koln/koln-city/roemisch-germanisches-museum/001.jpg"
         }
     },
     {
@@ -263,7 +263,7 @@ const datas = [
             { "bold": "Offizielle Website des Farina-Museums", "link": "https://farina.org/de/duftmuseum/" }
         ],
         construction_period: "1709 (Gründungsjahr der Farina-Fabrik)",
-        founder: "Johann Maria Farina",
+        founder: " Johann Maria Farina",
         short_description: "Das Duftmuseum im Farina-Haus, auch bekannt als „Haus des Kölnisch Wassers“, ist das älteste Duftmuseum der Welt und die Geburtsstätte des berühmten Eau de Cologne, oder „Kölner Wasser“. Hier schuf Johann Maria Farina 1709 das erste Eau de Cologne, das zu einem Symbol der Stadt wurde und Köln weltberühmt machte.",
         full_description: {
             title: "Beschreibung und Geschichte",
@@ -280,7 +280,7 @@ const datas = [
             items: [
                 { "bold": "Adresse:", "text": "Obenmarspforten 21, 50667 Köln, Deutschland" },
                 { "bold": "Öffnungszeiten:", "text": "täglich von 10:00 bis 18:00 Uhr (Führungen nach Plan)" },
-                { "bold": "Ticketpreise (2025):", "text": "Erwachsene – 8 €, ermäßigt – 5 €, Kinder bis 10 Jahre – kostenlos" },
+                { "bold": "Ticketpreise (2025):", "text": "<br>Erwachsene – 8 €, <br>ermäßigt – 5 €, <br>Kinder bis 10 Jahre – kostenlos" },
                 { "bold": "Führungen:", "text": "Das Museum ist nur im Rahmen von Führungen zugänglich, die in mehreren Sprachen angeboten werden. Die Tour dauert ca. 45 Minuten und endet im Museumsshop, wo das originale Eau de Cologne nach Farinas Rezept gekauft werden kann." }
             ]
         },
@@ -299,7 +299,7 @@ const datas = [
             description: "Das Duftmuseum im Farina-Haus, auch bekannt als Haus des Kölnisch Wassers, ist das älteste Duftmuseum in Köln und die Geburtsstätte des berühmten Eau de Cologne. Hier schuf Johann Maria Farina 1709 das erste Eau de Cologne.",
             ogTitle: "Farina-Haus in Köln – Haus des Kölnisch Wassers und Museum des Eau de Cologne",
             ogDescription: "Besuchen Sie das Duftmuseum im Farina-Haus, das auch als Haus des Kölnisch Wassers bekannt ist – die Heimat des legendären Eau de Cologne. Erleben Sie Geschichte, Düfte und die dreihundertjährige Tradition des Eau de Cologne.",
-            ogImage: "https://our-travels.info/new/foto/Germany/nrw/koln/koln-city/farina-duftmuseum/001.jpg"
+            ogImage: "https://our-travels.info/foto/Germany/nrw/koln/koln-city/farina-duftmuseum/001.jpg"
         }
     },
     {
@@ -337,8 +337,8 @@ const datas = [
             title: "Praktische Informationen",
             items: [
                 { bold: "Adresse:", text: "Bischofsgartenstr. 1, 50667 Köln, Deutschland" },
-                { bold: "Öffnungszeiten:", text: "Dienstag–Sonntag, 10:00–18:00; jeden ersten Freitag im Monat 10:00–22:00" },
-                { bold: "Eintrittspreise (2025):", text: "Erwachsene: 12 €. Ermäßigt: 8 € (für Studierende, Schüler, Rentner). Kinder bis 18 Jahre: frei. Gruppen (ab 20 Personen): 8,70 € pro Person" }
+                { bold: "Öffnungszeiten:", text: "<br>Dienstag–Sonntag, 10:00–18:00; <br>jeden ersten Freitag im Monat 10:00–22:00" },
+                { bold: "Eintrittspreise (2025):", text: "<br>Erwachsene: 12 €. <br>Ermäßigt: 8 € (für Studierende, Schüler, Rentner). <br>Kinder bis 18 Jahre: frei. <br>Gruppen (ab 20 Personen): 8,70 € pro Person" }
             ]
         },
         interestingFacts: {
@@ -354,7 +354,7 @@ const datas = [
             description: "Das Museum Ludwig in Köln ist eine der führenden Sammlungen zeitgenössischer Kunst weltweit, gegründet auf der Sammlung des deutschen Industriellen Peter Ludwig und seiner Frau Irene.",
             ogTitle: "Museum Ludwig — Zeitgenössische Kunst in Köln",
             ogDescription: "Besuchen Sie das Museum Ludwig in Köln, eine der führenden Sammlungen zeitgenössischer Kunst weltweit, gegründet auf der Sammlung des deutschen Industriellen Peter Ludwig und seiner Frau Irene.",
-            ogImage: "https://our-travels.info/new/foto/Germany/nrw/koln/koln-city/museum-ludwig/001.jpg"
+            ogImage: "https://our-travels.info/foto/Germany/nrw/koln/koln-city/museum-ludwig/001.jpg"
         }
     },
     {
@@ -392,7 +392,7 @@ const datas = [
             items: [
                 { bold: "Adresse:", text: "Am Schokoladenmuseum 1a, 50678 Köln" },
                 { bold: "Öffnungszeiten:", text: "Täglich 10:00 – 18:00. Letzter Einlass eine Stunde vor Schließung." },
-                { bold: "Eintrittspreise (ca. 2025):", text: "Erwachsene ~16,50 €, Kinder/Schüler ~9,50 € u.a." },
+                { bold: "Eintrittspreise (ca. 2025):", text: "<br>Erwachsene ~16,50 €, <br>Kinder/Schüler ~9,50 € u.a." },
                 { bold: "Parken und Verkehr:", text: "Parkhaus „Rheinauhafen“ in der Nähe; fußläufig vom Stadtzentrum Kölns erreichbar." }
             ]
         },
@@ -410,7 +410,7 @@ const datas = [
             description: "Das Schokoladenmuseum in Köln zeigt den Weg des Kakaos von der tropischen Plantage bis zur Schokoladentafel. Besuchen Sie die gläserne Fabrik, den 200-kg-Schokoladenbrunnen und entdecken Sie die Geschichte der süßen Versuchung.",
             ogTitle: "Schokoladenmuseum Köln – Das süßeste Museum Deutschlands",
             ogDescription: "Tauchen Sie ein in die Welt von Kakao und Schokolade in Köln: von alten Zivilisationen bis zur modernen Fabrik und dem berühmten Schokoladenbrunnen.",
-            ogImage: "https://our-travels.info/new/foto/Germany/nrw/koln/koln-city/schokoladenmuseum/001.jpg"
+            ogImage: "https://our-travels.info/foto/Germany/nrw/koln/koln-city/schokoladenmuseum/001.jpg"
         }
     },
     {
@@ -468,7 +468,7 @@ const datas = [
                 { bold: "Adresse:", text: "Rathausplatz 2, 50667 Köln, Deutschland" },
                 { bold: "Status des Museums:", text: "Das Museum ist nicht vollständig eröffnet: Der offizielle Abschluss des Projekts ist für die kommenden Jahre geplant. Teile des Rundgangs und der Ausstellungen sind bereits im Rahmen von Führungen zugänglich. Zukünftig ist die Erweiterung der Präsentationsflächen geplant, einschließlich Portikus und weiterer archäologischer Objekte." },
                 { bold: "Öffnungszeiten:", text: "Täglich 10:00–18:00 Uhr (kann je nach Führungen und Sonderausstellungen variieren)" },
-                { bold: "Eintrittspreise (ca. 2025):", text: "Erwachsene – ca. 6–8 €, Kinder/Schüler – kostenlos oder ermäßigt, Führungen gesondert zu bezahlen." }
+                { bold: "Eintrittspreise (ca. 2025):", text: "<br>Erwachsene – ca. 6–8 €, <br>Kinder/Schüler – kostenlos oder ermäßigt, <br>Führungen gesondert zu bezahlen." }
             ]
         },
         interestingFacts: {
@@ -485,7 +485,7 @@ const datas = [
             description: "MiQua – ein unterirdisches Museum im Zentrum von Köln, das römische, jüdische und mittelalterliche archäologische Schichten der Stadt zeigt.",
             ogTitle: "MiQua – Museum im archäologischen Viertel Köln",
             ogDescription: "Das unterirdische Museum MiQua ermöglicht das Durchschreiten von 2000 Jahren Kölner Geschichte, einschließlich Praetorium, Mikwe und mittelalterlicher Bauten.",
-            ogImage: "https://our-travels.info/new/foto/Germany/nrw/koln/koln-city/miqua/001.jpg"
+            ogImage: "https://our-travels.info/foto/Germany/nrw/koln/koln-city/miqua/001.jpg"
         }
     },
     {
@@ -527,8 +527,8 @@ const datas = [
             title: "Praktische Informationen",
             items: [
                 { bold: "Adresse:", text: "Obenmarspforten 40, 50667 Köln, Deutschland" },
-                { bold: "Öffnungszeiten:", text: "Dienstag–Sonntag: 10:00–18:00. Jeder 1. und 3. Donnerstag im Monat: 10:00–22:00. Montag: geschlossen (besondere Feiertags- und Saisonzeiten können abweichen)" },
-                { bold: "Eintrittspreise (2025):", text: "Erwachsene: ca. 10–13 €. Ermäßigt: ca. 7–8 € (Studenten, Senioren, Sozialvergünstigungen). Kinder bis 18 Jahre: frei. Familien-, Gruppen- und Kombitickets mit anderen Museen der Stadt verfügbar." }
+                { bold: "Öffnungszeiten:", text: "<br>Dienstag–Sonntag: 10:00–18:00. <br>Jeder 1. und 3. Donnerstag im Monat: 10:00–22:00. <br>Montag: geschlossen (besondere Feiertags- und Saisonzeiten können abweichen)" },
+                { bold: "Eintrittspreise (2025):", text: "<br>Erwachsene: ca. 10–13 €. <br>Ermäßigt: ca. 7–8 € (Studenten, Senioren, Sozialvergünstigungen). <br>Kinder bis 18 Jahre: frei. <br>Familien-, Gruppen- und Kombitickets mit anderen Museen der Stadt verfügbar." }
             ]
         },
         interestingFacts: {
@@ -545,7 +545,7 @@ const datas = [
             description: "Das Wallraf-Richartz-Museum in Köln ist das älteste Museum der Stadt mit Sammlungen von Malerei, Skulptur und Grafik vom Mittelalter bis zum frühen 20. Jh., einschließlich des Fonds Fondation Corboud mit Impressionisten.",
             ogTitle: "Wallraf-Richartz-Museum — Kunst vom Mittelalter bis zum Impressionismus",
             ogDescription: "Entdecken Sie das Wallraf-Richartz-Museum in Köln: Mittelalterliche und barocke Kunst sowie die Impressionisten-Sammlung Fondation Corboud.",
-            ogImage: "https://our-travels.info/new/foto/Germany/nrw/koln/koln-city/wallraf_richartz_museum/001.jpg"
+            ogImage: "https://our-travels.info/foto/Germany/nrw/koln/koln-city/wallraf_richartz_museum/001.jpg"
         }
     },
     {
@@ -574,8 +574,8 @@ const datas = [
             title: "Praktische Informationen",
             items: [
                 { bold: "Adresse:", text: "Universitätsstraße 100, 50674 Köln, Deutschland" },
-                { bold: "Öffnungszeiten:", text: "Dienstag–Sonntag: 11:00–17:00. Jeden ersten Donnerstag im Monat: 11:00–22:00. Montag: geschlossen" },
-                { bold: "Eintritt (2025-2026):", text: "Der Eintritt kostet etwa 9,50 € für Erwachsene und ca. 5,50 € für ermäßigte Besucher." },
+                { bold: "Öffnungszeiten:", text: "<br>Dienstag–Sonntag: 11:00–17:00. <br>Jeden ersten Donnerstag im Monat: 11:00–22:00. <br>Montag: geschlossen" },
+                { bold: "Eintritt (2025-2026):", text: "Der Eintritt kostet etwa 9,50 € für Erwachsene und ca. 5,50 € für ermäßigte Besucher." },
                 { bold: "Barrierefreiheit:", text: "Vollständig barrierefrei, Rampen, Aufzug, Toiletten für Menschen mit eingeschränkter Mobilität." }
             ]
         },
@@ -602,7 +602,7 @@ const datas = [
             description: "Entdecken Sie die Kunst Chinas, Koreas und Japans in Köln: buddhistische Malerei, Holzskulpturen, japanische Schirme und traditioneller japanischer Garten.",
             ogTitle: "Museum für Ostasiatische Kunst (Köln)",
             ogDescription: "Besuchen Sie das Museum in Köln mit einer einzigartigen Sammlung ostasiatischer Kunst: Malerei, Skulpturen, japanische Schirme und ein schöner japanischer Garten.",
-            ogImage: "https://our-travels.info/new/foto/Germany/nrw/koln/koln-city/ostasiatische_kunst_koln/001.jpg"
+            ogImage: "https://our-travels.info/foto/Germany/nrw/koln/koln-city/ostasiatische_kunst_koln/001.jpg"
         }
     },
     {
@@ -636,8 +636,8 @@ const datas = [
             items: [
                 { bold: "Adresse:", text: "Cäcilienstraße 29-33, 50667 Köln, Deutschland." },
                 { bold: "Anreise:", text: "Die nächste Haltestelle des öffentlichen Verkehrs ist Neumarkt (5 Minuten zu Fuß)." },
-                { bold: "Öffnungszeiten:", text: "Mo – geschlossen, Di-So: 10:00–18:00, Do: 10:00–20:00. Am ersten Donnerstag jedes Monats: 10:00–22:00 (Sonderveranstaltung «CologneTag»)." },
-                { bold: "Eintrittspreise (ca. 2025–2026):", text: "Erwachsene: 6 €, ermäßigt: 3,50 € (Studenten, Rentner etc.), Kombiticket mit dem Rautenstrauch-Joest-Museum: 10 €, Kinder bis 6 Jahre – frei. Saisonale Änderungen möglich, bitte auf der offiziellen Webseite vor Besuch prüfen." },
+                { bold: "Öffnungszeiten:", text: "<br>Mo – geschlossen, Di-So: 10:00-18:00, <br>Do: 10:00-20:00. <br>Am ersten Donnerstag jedes Monats: 10:00-22:00 (Sonderveranstaltung «CologneTag»)." },
+                { bold: "Eintrittspreise (ca. 2025–2026):", text: "<br>Erwachsene: 6 €, <br>ermäßigt: 3,50 € (Studenten, Rentner etc.), <br>Kombiticket mit dem Rautenstrauch-Joest-Museum: 10 €, <br>Kinder bis 6 Jahre – frei. <br>Saisonale Änderungen möglich, bitte auf der offiziellen Webseite vor Besuch prüfen." },
                 { bold: "Besuchertipps:", text: "Im Museum werden Führungen, Vorträge und Bildungsprogramme angeboten (oft im Eintrittspreis enthalten oder gegen Aufpreis)." }
             ]
         },
@@ -667,7 +667,192 @@ const datas = [
             description: "Das Museum Schnütgen in Köln – ein einzigartiges Museum für mittelalterliche Kunst im Gebäude der romanischen Kirche aus dem 12. Jahrhundert. Skulpturen, Reliquiare, Glasfenster und kirchliche Schätze.",
             ogTitle: "Museum Schnütgen — mittelalterliche Kunst in einer alten Kirche",
             ogDescription: "Besuchen Sie das Museum Schnütgen – eines der atmosphärischsten Museen Kölns, untergebracht in der romanischen Kirche des 12. Jahrhunderts mit einer Sammlung seltener mittelalterlicher Kunst.",
-            ogImage: "https://our-travels.info/new/foto/Germany/nrw/koln/koln-city/schnuetgen/001.jpg"
+            ogImage: "https://our-travels.info/foto/Germany/nrw/koln/koln-city/schnuetgen/001.jpg"
+        }
+    },
+    {
+        id: "rautenstrauch_joest_museum_koln",
+        name: "Rautenstrauch-Joest-Museum – Kulturen der Welt",
+        type: ["museum"],
+        path: "rautenstrauch_joest_museum_koln",
+        countryPath: "germany",
+        regionsPath: "nrw",
+        districtPath: "city",
+        cityPath: "koln",
+        fotoCard: "Germany/nrw/koln/koln-city/rautenstrauch_joest_museum/001.jpg",
+        location: "Köln, Deutschland",
+        officialSite: [
+            { bold: "Offizielle Website", link: "https://www.rautenstrauch-joest-museum.de/Startseite" }
+        ],
+        short_description: "Das Rautenstrauch-Joest-Museum ist eines der größten ethnologischen Museen Deutschlands und den Kulturen der Welt gewidmet. In den Ausstellungen werden zehntausende Artefakte, Fotografien und thematische Installationen präsentiert, die Traditionen, Glaubensvorstellungen und Lebensweisen verschiedener Zivilisationen zeigen.",
+        full_description: {
+            title: "Beschreibung und Geschichte",
+            items: [
+                { bold: "Rautenstrauch-Joest-Museum – Kulturen der Welt", text: "– eines der größten ethnologischen Museen Deutschlands mit Schwerpunkt auf den Kulturen der Welt. Es ist in Nordrhein-Westfalen aufgrund seines Umfangs und seiner thematischen Ausrichtung einzigartig." },
+                { bold: "Geschichte. ", text: "Das Museum geht auf die private Sammlung des Reisenden und Sammlers Wilhelm Joest zurück, die seine Schwester Adele Rautenstrauch der Stadt Köln Ende des 19. – Anfang des 20. Jahrhunderts übergab. Die Sammlung wuchs stetig, und 1906 wurde das Museum offiziell eröffnet. Nach zahlreichen Umzügen und Umbauten befindet es sich heute in einem modernen Gebäude im Zentrum von Köln neben dem Museum Schnütgen. " },
+                { bold: "Konzept. ", text: "Das Museum erzählt von den Kulturen der Welt durch Alltagsgegenstände, Kunstobjekte, Fotografien und multimediale Präsentationen. Im Mittelpunkt steht kein rein geografischer Ansatz, sondern thematische Bereiche, die zeigen, wie Menschen verschiedener Kulturen die Welt wahrnehmen und welche sozialen Praktiken, Rituale und Vorstellungen sie haben." },
+                { bold: "Architektur. ", text: "Das moderne Museumsgebäude ist gezielt für die Präsentation großer Objekte und multimedialer Installationen konzipiert. Besonderes Augenmerk gilt dem natürlichen Licht und der räumlichen Orientierung der Besucher (Foyer, Themenbereiche, interaktive Zonen). Das historische Gebäude, in dem sich das Museum lange befand, wurde durch einen großzügigeren modernen Komplex im Stadtzentrum ersetzt." }
+            ]
+        },
+        tickets_and_entry: {
+            title: "Praktische Informationen",
+            items: [
+                { bold: "Adresse:", text: "Cäcilienstraße 29-33, 50667 Köln, Deutschland. <br>Anreise: U-Bahn/Straßenbahn Haltestelle Neumarkt (ca. 2–5 Minuten zu Fuß)." },
+                { bold: "Öffnungszeiten:", text: "<br>Dienstag – Sonntag: 10:00-18:00, <br>Donnerstag: 10:00-20:00, <br>erster Donnerstag im Monat: 10:00-22:00, <br>Montag: geschlossen. <br>An Feiertagen gelten die Sonntagszeiten." },
+                { bold: "Tickets: ", text: "<br>Dauerausstellung: ca. €7.00 (Erwachsene), €4.50 (ermäßigt). <br>Kombiticket Dauer- und Sonderausstellungen: ca. €18 (Erwachsene), €15 (ermäßigt). <br>Kombiticket mit Museum Schnütgen: ca. €10 / €7 (ermäßigt). <br>Es gibt zusätzliche Ermäßigungen für Gruppen, Menschen mit Behinderung sowie freien Eintritt für Geflüchtete mit Begleitung." }
+            ]
+        },
+        sub_objects: {
+            title: "Ausstellungen und Themenbereiche",
+            items: [
+                { text: "Die Dauerausstellung zeigt kulturelle Praktiken anhand globaler Themen – etwa Mensch und Natur, Rituale, Wohnarchitektur, soziale Strukturen, Musik und Instrumente sowie Weltbilder und Mythologie." },
+                { text: "Darüber hinaus organisiert das Museum regelmäßig internationale Sonderausstellungen zu Themen wie Kultur, Umwelt, Fotografie und zeitgenössischer Kunst." },
+                { bold: "Sammlungen: ", text: "<br>&nbsp;&nbsp;&nbsp; ▪ Über 60.000 Objekte materieller Kultur aus Afrika, Asien, Amerika, Ozeanien und Europa. " },
+                { text: "&nbsp;&nbsp;&nbsp; ▪ Mehr als 100.000 Fotografien aus verschiedenen Regionen der Welt. " },
+                { text: "&nbsp;&nbsp;&nbsp; ▪ Wissenschaftliche Bibliothek mit tausenden Bänden zur Ethnologie und Kulturwissenschaft (bis zu ~48.000 Quellen laut Stadt Köln)." },
+                { text: "Die Sammlung beteiligt sich aktiv an modernen Forschungsprojekten zur Herkunft der Objekte und zu dekolonialen Ansätzen." }
+            ]
+        },
+        interestingFacts: {
+            title: "Interessante Fakten",
+            items: [
+                { text: "Das Museum erhielt den Museumspreis des Europarates." },
+                { text: "Die Ausstellungen sind so konzipiert, dass Kultur nicht über nationale Grenzen, sondern über universelle Lebensthemen vermittelt wird." },
+                { text: "Regelmäßig finden Bildungsprogramme, Führungen und Veranstaltungen für alle Altersgruppen statt." }
+            ]
+        },
+        construction_period: "Museum gegründet 1906, modernes Gebäude eröffnet 2010",
+        architects: "Hauptgebäude entworfen von Peter Kulka",
+        founder: " Sammlung von Wilhelm Joest, Museum gegründet mit Unterstützung von Adele Rautenstrauch",
+        meta: {
+            title: "Rautenstrauch-Joest-Museum in Köln – ethnologisches Museum der Weltkulturen",
+            description: "Das Rautenstrauch-Joest-Museum in Köln ist eines der größten ethnologischen Museen Deutschlands. Ausstellungen zu Weltkulturen, Sammlungen, Geschichte, Öffnungszeiten und Preise.",
+            ogTitle: "Rautenstrauch-Joest-Museum – Weltkulturen im Zentrum von Köln",
+            ogDescription: "Modernes ethnologisches Museum mit einzigartigen Sammlungen der Kulturen der Welt, interaktiven Ausstellungen und Sonderprojekten in Köln.",
+            ogImage: "https://our-travels.info/foto/Germany/nrw/koln/koln-city/rautenstrauch_joest_museum/001.jpg"
+        }
+    },
+    {
+        id: "dufthaus_4711_koln",
+        name: "Duft-Haus 4711",
+        type: ["museum"],
+        path: "dufthaus_4711_koln",
+        countryPath: "germany",
+        regionsPath: "nrw",
+        districtPath: "city",
+        cityPath: "koln",
+        fotoCard: "Germany/nrw/koln/koln-city/dufthaus_4711/001.jpg",
+        location: "Köln, Deutschland",
+        officialSite: [
+            { bold: "Offizielle Website", link: "https://4711.com/" }
+        ],
+        short_description: "Das Duft-Haus 4711 ist ein historisches Gebäude im Zentrum von Köln, verbunden mit dem legendären 4711 Kölnisch Wasser. Hier befindet sich der Flagship-Store der Marke, eine kleine historische Ausstellung und es werden thematische Führungen und Workshops angeboten, die sich mit der Geschichte und den Traditionen des berühmten Eau de Cologne beschäftigen.",
+        full_description: {
+            title: "Beschreibung und Geschichte",
+            items: [
+                { bold: "Duft-Haus 4711 ", text: "– historisches Gebäude im Zentrum von Köln, verbunden mit dem legendären 4711 Kölnisch Wasser. Hier befindet sich der Flagship-Store der Marke, eine kleine historische Ausstellung und es werden thematische Führungen und Workshops angeboten, die sich mit der Geschichte und den Traditionen des berühmten Eau de Cologne beschäftigen." },
+                { bold: "Geschichte der Marke 4711 ", text: "beginnt Ende des 18. Jahrhunderts. Der Legende nach erhielt 1792 der Kaufmann Wilhelm Mülhens von einem Kartäusermönch anlässlich seiner Hochzeit das Rezept für das duftende „Wunderwasser“. Dieses Wasser (aqua mirabilis) bildete die Grundlage für das, was später als Eau de Cologne (Kölnisch Wasser) bekannt wurde." },
+                { text: "Der genaue Grund für die Wahl des Namens „4711“ hängt mit der vorübergehenden französischen Besetzung von Köln Ende des 18. Jahrhunderts zusammen: Die Stadt wurde neu vermessen und dem Gebäude in der Glockengasse (Glockengasse) wurde die Nummer 4711 zugewiesen – genau diese Zahl wurde zum Markennamen." },
+                { text: "Das Gebäude 4711 in seiner neugotischen Form wurde Mitte des 19. Jahrhunderts (ca. 1852–1854) für Peter Joseph Mülhens, einen der Mitglieder der Unternehmerfamilie, erbaut. Der Architekt laut historischen Quellen war Johann Jakob Claassen. Das Gebäude wurde im Zweiten Weltkrieg zerstört und teilweise in seiner heutigen Form wieder aufgebaut." },
+                { text: "Die Marke 4711 wurde zu einem der bekanntesten Symbole Kölns und zu einem der weltweit bekanntesten Düfte, mit Export in Dutzende Länder und großem Einfluss auf die Parfümindustrie." }
+            ]
+        },
+        tickets_and_entry: {
+            title: "Praktische Informationen",
+            items: [
+                { bold: "Adresse:", text: "Glockengasse 4, 50667 Köln, Deutschland (in der Nähe der Oper und ca. 10 Gehminuten vom Hauptbahnhof entfernt)." },
+                { bold: "Öffnungszeiten:", text: "in der Regel täglich von morgens bis abends (bitte auf der offiziellen Website die aktuellen Zeiten prüfen)." }
+            ]
+        },
+        sub_objects: {
+            title: "Ausstellungen und Veranstaltungen",
+            items: [
+                { bold: "Museum und historische Ausstellung.", text: "Im Gebäude gibt es eine kleine Ausstellungsecke, in der alte Werbeplakate, Flakons und Artefakte gezeigt werden, die die Geschichte der Marke 4711 von der Legende ihrer Entstehung bis zur Gegenwart erzählen." },
+                { bold: "Flagship-Store.", text: "Im Erdgeschoss befindet sich der moderne Flagship-Store, in dem originale Kölnisch Wasser, Neuheiten und Souvenirs angeboten werden." },
+                { bold: "4711 Duftbrunnen.", text: "Auf dem Gelände gibt es einen Brunnen, an dem Besucher den klassischen 4711-Duft erleben und ihre Lieblingsnoten auswählen können." },
+                { bold: "Historische Führungen.", text: "Es werden Führungen zur Geschichte von 4711 angeboten, die über die Marke, ihre Bedeutung in Kultur und Parfümerie berichten." },
+                { bold: "Duft-Workshops.", text: "Interaktive Veranstaltungen, bei denen die Teilnehmer erfahren, wie Parfüms hergestellt werden, und ihren eigenen Duft kreieren können." },
+                { bold: "„Duft-Menü“.", text: "Besondere Events, bei denen das klassische Eau de Cologne mit einem Vier-Gänge-Menü kombiniert wird und eine sensorische Reise entsteht." }
+            ]
+        },
+        interestingFacts: {
+            title: "Interessante Fakten",
+            items: [
+                { text: "Die Glockengasse 4711-Uhr spielt jede Stunde zwischen 09:00 und 19:00 die Melodien „La Marseillaise“ und „Der treue Husar“." },
+                { text: "Die Marke 4711 verkaufte den Duft ursprünglich nicht nur als Parfüm, sondern auch als universelles Mittel zur Linderung von Beschwerden." },
+                { text: "Heute ist 4711 nicht nur das originale Cologne, sondern auch eine ganze Linie von Düften, Pflegeprodukten und Souvenirs." },
+                { text: "Jedes Jahr besuchen Zehntausende Touristen das Haus 4711." }
+            ]
+        },
+        construction_period: "ca. 1852–1854 (Bau des Gebäudes im neugotischen Stil); Marke gegründet 1792",
+        architects: "Johann Jakob Claassen – Architekt des Gebäudes",
+        founder: " Wilhelm Mülhens spielte eine Schlüsselrolle bei der Entwicklung der Marke 4711 und deren weltweiter Bekanntheit Ende des 18. bis Anfang des 19. Jahrhunderts; die Familie Mülhens erweiterte die Produktion und vertrieb die Produkte weltweit.",
+        meta: {
+            title: "Duft-Haus 4711 in Köln – Geschichte des legendären Eau de Cologne",
+            description: "Besuchen Sie das historische Duft-Haus 4711 im Zentrum von Köln: Flagship-Store, Ausstellung über das berühmte Eau de Cologne, Führungen und Duft-Workshops.",
+            ogTitle: "Duft-Haus 4711 – Legende von Köln und originaler Duft",
+            ogDescription: "Entdecken Sie das Duft-Haus 4711: historisches Gebäude, Markenstore, Ausstellung und Führungen über das berühmte Kölnisch Wasser. Ideal für Touristen und Duftliebhaber.",
+            ogImage: "https://our-travels.info/foto/Germany/nrw/koln/koln-city/dufthaus_4711/001.jpg"
+        }
+    },
+    {
+        id: "makk_museum_koln",
+        name: "Museum für Angewandte Kunst",
+        type: ["museum"],
+        path: "makk_museum_koln",
+        countryPath: "germany",
+        regionsPath: "nrw",
+        districtPath: "city",
+        cityPath: "koln",
+        fotoCard: "Germany/nrw/koln/koln-city/makk_museum/001.JPG",
+        location: "Köln, Deutschland",
+        officialSite: [
+            { bold: "Offizielle Website", link: "https://makk.de/" }
+        ],
+        short_description: "Das Museum für Angewandte Kunst Köln (oft als MAKK abgekürzt) ist eines der führenden Museen für Kunsthandwerk und Design in Deutschland. Hier werden Objekte des europäischen Designs und Kunsthandwerks vom Mittelalter bis zur Gegenwart präsentiert: Möbel, Geschirr, Schmuck, Textilien, Designobjekte und vieles mehr.",
+        full_description: {
+            title: "Beschreibung und Geschichte",
+            items: [
+                { bold: "Das Museum für Angewandte Kunst", text: " ist eines der führenden Museen Deutschlands für Kunsthandwerk und Design. Seine Sammlung umfasst mehr als 100.000 Objekte und deckt nahezu tausend Jahre europäischer Kulturgeschichte ab – von mittelalterlichen Handwerksarbeiten bis zu Werken zeitgenössischer Designer. Die Ausstellung ist chronologisch aufgebaut und ermöglicht es Besuchern, die Entwicklung von Stilen, Technologien und Geschmäckern verschiedener Epochen nachzuvollziehen. Gezeigt werden Möbel, Glas, Porzellan, Textilien, Schmuck sowie Grafik- und Industriedesign." },
+                { text: "Eine Besonderheit des Museums ist die Kombination historischer Objekte mit modernen Arbeiten, wodurch sichtbar wird, wie traditionelle Formen das heutige Design beeinflussen. Neben der Dauerausstellung finden regelmäßig Sonderausstellungen statt, die einzelnen Kunstrichtungen, Mode oder bekannten Designern gewidmet sind." },
+                { bold: "Geschichte. ", text: "Das Museum wurde 1888 unter dem Namen Kunstgewerbemuseum Köln als Bildungs- und Kulturprojekt gegründet, das Handwerker und Künstler durch Beispiele hoher Meisterschaft inspirieren sollte." },
+                { text: "Ende des 19. Jahrhunderts wurden ähnliche Museen in ganz Europa gegründet, da man davon ausging, dass das Studium historischer Vorbilder die Qualität moderner Produktion und künstlerischer Ausbildung verbessert." },
+                { text: "Die ursprüngliche Sammlung entstand durch Schenkungen, Ankäufe und Übernahmen privater Sammlungen. Nach dem Zweiten Weltkrieg wurde das Museum umfassend wiederaufgebaut und erweiterte seine Bestände um Werke des modernen und zeitgenössischen Designs." },
+                { text: "Das heutige Museumsgebäude wurde 1957 eröffnet und zählt zu den ersten Museumsbauten der Nachkriegszeit in Deutschland im Stil der Moderne." },
+                { text: "Heute wächst die Sammlung weiterhin und das Museum bleibt ein bedeutendes kulturelles Zentrum Kölns, das Handwerksgeschichte, Kunst und Industriedesign vereint." },
+            ]
+        },
+        tickets_and_entry: {
+            title: "Praktische Informationen",
+            items: [
+                { bold: "Adresse: ", text: "An der Rechtschule 7, 50667 Köln, Deutschland." },
+                { bold: "Öffnungszeiten:", text: "<br>Di-So: 10:00-18:00 <br>Mo: geschlossen (außer an Feiertagen) <br>Erster Donnerstag im Monat: bis 22:00 geöffnet." },
+                { bold: "Eintritt (2026):", text: "<br>Erwachsene: ca. 6 € <br>Ermäßigt: ca. 3,50 € <br>Kostenlos für Kinder unter 6 Jahren und junge Kölner bis 18 Jahre an bestimmten Tagen." },
+                { bold: "Anreise:", text: "10 Minuten zu Fuß vom Kölner Hauptbahnhof oder von den Haltestellen Dom/Hauptbahnhof." }
+            ]
+        },
+        sub_objects: {
+            title: "Ausstellungen",
+            items: [
+                { bold: "Dauerausstellung – das Herz des Museums:", text: "<br>• Europäisches Kunsthandwerk vom 10. Jahrhundert bis heute – Möbel, Geschirr, Glas, Schmuck, Textilien und dekorative Objekte. <br>• Design im Dialog mit Kunst: Kunstwerke und Designobjekte in thematischen Präsentationen." },
+                { bold: "Wechsel- und Sonderausstellungen (2025-2026):", text: "<br>• Von Louise Bourgeois bis Yoko Ono – Jewellery by Female Artists – Schmuckarbeiten von Künstlerinnen des 20.–21. Jahrhunderts (bis 26. April 2026). <br>• Weitere thematische Sonderausstellungen zu Design und angewandter Kunst." },
+            ]
+        },
+        interestingFacts: {
+            title: "Interessante Fakten",
+            items: [
+                { text: "Das Museum ist bekannt für den Dialog zwischen Design und Kunst – Designobjekte werden zusammen mit Gemälden und Skulpturen präsentiert." },
+                { text: "An jedem ersten Donnerstag im Monat findet der sogenannte „KölnTag“ statt, an dem viele städtische Museen bis spät abends kostenlos geöffnet sind." },
+                { text: "Im MAKK werden regelmäßig Sonderausstellungen, Vorträge und Bildungsprogramme veranstaltet." }
+            ]
+        },
+        construction_period: "1888 (gegründet als Kunstgewerbemuseum Köln).",
+        meta: {
+            title: "Museum für Angewandte Kunst Köln – Design- und Handwerkskollektionen",
+            description: "Museum für Angewandte Kunst Köln: Möbel, Textilien, Schmuck und Design vom Mittelalter bis heute. Adresse, Öffnungszeiten, Eintritt und Ausstellungen.",
+            ogTitle: "Museum für Angewandte Kunst Köln – Sammlungen und Ausstellungen",
+            ogDescription: "Entdecken Sie einzigartige Objekte des Designs und Kunsthandwerks verschiedener Epochen im Museum für Angewandte Kunst Köln. Besucherinformationen und Details.",
+            ogImage: "https://our-travels.info/foto/Germany/nrw/koln/koln-city/makk_museum/001.JPG"
         }
     },
     {
@@ -721,7 +906,123 @@ const datas = [
             "description": "Beschreibung der acht Kölner Brücken: Geschichte, Besonderheiten, interessante Fakten, inklusive der Liebesbrücke Hohenzollernbrücke.",
             "ogTitle": "Kölner Rheinbrücken",
             "ogDescription": "Vollständige Beschreibung aller acht Kölner Rheinbrücken mit Fakten, Geschichte und Architektur.",
-            "ogImage": "https://our-travels.info/new/foto/Germany/nrw/koln/koln-city/koln_bridges/001.jpg"
+            "ogImage": "https://our-travels.info/foto/Germany/nrw/koln/koln-city/koln_bridges/001.jpg"
+        }
+    },
+    {
+        id: "skulpturenpark_koln",
+        name: "Skulpturenpark in Köln",
+        type: ["museum", "nature", "monument_or_fountain"],
+        path: "skulpturenpark_koln",
+        countryPath: "germany",
+        regionsPath: "nrw",
+        districtPath: "city",
+        cityPath: "koln",
+        fotoCard: "Germany/nrw/koln/koln-city/skulpturenpark/001.jpg",
+        location: "Köln, Deutschland",
+        officialSite: [
+            { bold: "Offizielle Webseite", link: "https://skulpturenparkkoeln.de/" }
+        ],
+        short_description: "Der Skulpturenpark Köln ist ein Freilichtmuseum für moderne Skulpturen im Stadtteil Riehl, in der Nähe der Zoobrücke und des Rheins. Auf einer Fläche von etwa 35 000–40 000 m² werden Werke internationaler Künstler präsentiert, während alte Bäume eine ruhige Umgebung für Spaziergänge und die Genießung von Kunst und Natur schaffen.",
+        full_description: {
+            title: "Beschreibung und Geschichte",
+            items: [
+                { bold: "Skulpturenpark", text: "– ist ein Freilichtmuseum für moderne Skulpturen im Stadtteil Riehl (Riehler Straße / Ecke Konrad Adenauer Ufer) im nördlichen Köln (im Dreieck zwischen der Zoobrücke, dem Rhein und der Riehler Straße). Er erstreckt sich über etwa 35 000–40 000 m² und ist eine ruhige Oase für Kunst und Grünflächen inmitten der Stadt." },
+                { text: "Der Park wurde 1997 auf private Initiative der Sammler Michael und Eleonore Stoffel (Stoffel) gegründet und genießt seitdem Anerkennung in Deutschland und international. Aufgrund der fehlenden ständigen Sammlung werden die Skulpturen regelmäßig erneuert – die Ausstellungen finden im Rahmen der Reihe KölnSkulptur statt und präsentieren Werke von Künstlern aus aller Welt." },
+                { text: "Besucher können zwischen den Kunstwerken, die in die Natur integriert sind, spazieren gehen; es werden Werke verschiedener Strömungen moderner Skulptur von internationalen Künstlern gezeigt (zum Beispiel von Anish Kapoor bis Heimo Zobernig)." },
+                { text: "Der Skulpturenpark Köln ist ein einzigartiger städtischer Park, in dem Kunst und Natur zu einem ruhigen Raum für Spaziergänge und das Betrachten moderner Skulpturen im Freien verschmelzen." }
+            ]
+        },
+        tickets_and_entry: {
+            title: "Praktische Informationen",
+            items: [
+                { bold: "Adresse:", text: "Riehler Straße (in der Nähe der Zoobrücke), 50668 Köln, Deutschland." },
+                { bold: "Eintritt:", text: "frei für alle." },
+                { bold: "Öffnungszeiten (2026):", text: "<br>April–September: täglich von 10:30 bis 19:00. <br>Oktober–März: täglich von 10:30 bis 17:00. <br>Der Park ist ganzjährig für Spaziergänge geöffnet." },
+                { text: "Öffentliche Führungen finden in der Regel am ersten Sonntag jedes Monats um 15:00 Uhr statt (kostenpflichtig für Erwachsene und Studenten; kostenlos für Kinder bis 10 Jahre). Führungen für Gruppen sind auf Anfrage möglich." }
+            ]
+        },
+        interestingFacts: {
+            title: "Interessante Fakten",
+            items: [
+                { bold: "Private Initiative", text: "– der Park wurde 1997 auf Initiative der Sammler Michael und Eleonore Stoffel gegründet. Er bleibt eine private Sammlung, ist aber für alle zugänglich." },
+                { bold: "KölnSkulptur", text: "– der Park nimmt an einem Kulturprojekt teil, bei dem die Skulpturenausstellung alle paar Jahre erneuert wird und Werke internationaler Künstler präsentiert." },
+                { bold: "36 Werke auf 35 000–40 000 m²", text: "– die Skulpturen sind zwischen alten Bäumen aufgestellt und vermitteln das Gefühl eines «Museums im Wald»." },
+                { text: "Auf den Ausstellungen des Parks werden Werke von Künstlern aus mehr als 10 Ländern präsentiert." },
+                { bold: "Moderne Kunst im Freien", text: "– Besucher können zwischen den Kunstwerken spazieren und die Integration von Kunst und Natur erleben." }
+            ]
+        },
+        construction_period: "1997",
+        founder: " Michael und Eleonore Stoffel (Stoffel)",
+        meta: {
+            title: "Skulpturenpark Köln – Skulpturenpark und Freilichtmuseum moderner Skulpturen in Köln",
+            description: "Besuchen Sie den Skulpturenpark Köln – ein einzigartiger Freilicht-Skulpturenpark in der Nähe des Rheins und des Kölner Zoos. Moderne Skulpturen internationaler Künstler, freier Eintritt, Spaziergänge zwischen Kunst und Natur.",
+            ogTitle: "Skulpturenpark Köln – Freilichtmuseum für Skulpturen",
+            ogDescription: "Entdecken Sie den Skulpturenpark Köln: moderne Kunst im Freien, Skulpturen internationaler Künstler, Spaziergänge durch grüne Alleen und freier Eintritt täglich.",
+            ogImage: "https://our-travels.info/foto/Germany/nrw/koln/koln-city/skulpturenpark/001.jpg"
+        }
+    },
+    {
+        id: "zoo_koln",
+        name: "Kölner Zoo",
+        type: ["nature"],
+        path: "zoo_koln",
+        countryPath: "germany",
+        regionsPath: "nrw",
+        districtPath: "city",
+        cityPath: "koln",
+        fotoCard: "Germany/nrw/koln/koln-city/zoo/001.jpg",
+        location: "Köln, Deutschland",
+        officialSite: [
+            { bold: "Offizielle Website", link: "https://koelnerzoo.de/" }
+        ],
+        short_description: "Der Kölner Zoo in Deutschland ist einer der ältesten Zoos des Landes, gegründet 1860. Heute ist er eine große Naturattraktion mit vielfältigen Tieren und einem Aquarium, wo man einen ganzen Tag verbringen kann, um die Bewohner aus aller Welt zu beobachten.",
+        full_description: {
+            title: "Beschreibung und Geschichte",
+            items: [
+                { bold: "Kölner Zoo", text: "– einer der ältesten Zoos Deutschlands, gegründet 1860. Ursprünglich ein beliebter Ort für Unterhaltung im 19. Jahrhundert, entwickelte er sich über die Zeit zu einem modernen Zentrum für Naturschutz und Artenerhaltung." },
+                { text: "Der Zoo hat große Herausforderungen überstanden: Während des Zweiten Weltkriegs starb ein Großteil der Tiere, und der Zoo musste fast von Grund auf wiederaufgebaut werden. Heute existieren historische Gebäude wie das Elefantenhaus im maurischen Stil (1863) und der „Affenfelsen“ (1914) harmonisch neben modernen, großzügigen Gehegen, die den natürlichen Lebensräumen der Tiere so nahe wie möglich kommen." },
+                { text: "Auf einer Fläche von etwa 20 ha leben heute über 10 000 Tiere aus ca. 850 Arten von allen Kontinenten, darunter seltene Säugetiere, Vögel, Reptilien und Fische. Besonderes Augenmerk liegt auf dem Regenwald Südostasiens und dem Elefantenpark, wo die Tiere in natürlichen sozialen Gruppen leben." },
+                { text: "Der Kölner Zoo verbindet reiche Geschichte, moderne Tierhaltung und Bildungsprogramme, wodurch der Besuch für die ganze Familie interessant wird." }
+            ]
+        },
+        tickets_and_entry: {
+            title: "Praktische Informationen",
+            items: [
+                { bold: "Adresse:", text: "Riehler Straße 173, 50735 Köln, Deutschland. Der Zoo befindet sich im Stadtteil Riehl in Köln. Leicht mit öffentlichen Verkehrsmitteln vom Stadtzentrum erreichbar." },
+                { bold: "Öffnungszeiten:", text: "Der Zoo ist 365 Tage im Jahr geöffnet: <br>Frühling/Herbst (1. März – 31. Oktober): 9:00–18:00, letzter Einlass und Kasse bis 17:30. <br>Winter (1. November – 28. Februar): 9:00–17:00, letzter Einlass und Kasse bis 16:30. <br>Aquarium und alle Tierhäuser schließen 30 Minuten vor Gesamtschluss. <br>Besondere Tage: 24. und 31. Dezember normalerweise bis 14:00 Uhr geöffnet (letzter Einlass früher)." },
+                { bold: "Aktuelle Preise (ungefähr):", text: "<br>Die Preise können je nach Saison und Ticketart variieren. Etwa: <br>Erwachsene: ~23 €, <br>Kinder (4–12 Jahre): ~11 €, <br>Schüler/Studenten: ~17 €, <br>Gruppen: Ermäßigungen ab 15 Personen. <br>Tickets können auch online über die offizielle Website gekauft werden, was die Planung erleichtert." }
+            ]
+        },
+        sub_objects: {
+            title: "Zoo-Bereiche",
+            items: [
+                { bold: "Elephant Park", text: "Dies ist einer der beeindruckendsten Bereiche – ein großes Gelände für asiatische Elefanten von etwa 2 ha. Hier kann man die Tiere unter möglichst naturnahen Bedingungen beobachten, mit Wasserstellen, Unterständen und Sozialzonen innerhalb der Herde." },
+                { bold: "Rainforest House", text: "Ein feuchtes tropisches Haus Südostasiens – warme und feuchte Zone, in der Vögel frei fliegen, Reptilien kriechen, Säugetiere laufen und exotische Vögel über den Köpfen hinwegziehen." },
+                { bold: "Hippodom – Afrikanischer Fluss", text: "– rekonstruierte afrikanische Wasserlandschaft, in der man Flusspferde, Krokodile, Schlangen und andere Bewohner von Flusslandschaften durch große Panoramascheiben beobachten kann." },
+                { bold: "Reichert Jungle House", text: "In diesem Bereich werden Tiere Südamerikas gezeigt – Affen, Faultiere, Tukane, Gürteltierarten usw. Man läuft über Stege und beobachtet die Tiere auf Höhe der Baumkronen." },
+                { bold: "Baboon Rock", text: "Historische Exposition, wo eine lebhafte Pavangruppe fast wie in der Natur agiert: spielt, kämpft und kommuniziert, während Besucher das Verhalten der Affen ohne sichtbare Zäune beobachten – nur Schutzgräben und Räume." },
+                { bold: "Aquarium und Terrarium", text: "Ein separates Gebäude mit eigener Ausstellung: große Aquarien mit Korallenriffen und tropischen Fischen, Tanganjikasee-Becken, Insektarium mit einer Vielfalt von Insekten, Fischen, Schlangen, Echsen und Reptilien aus aller Welt." },
+                { bold: "Haustier- und Kontaktzone", text: "In diesem Bereich gibt es einen traditionellen Kontaktbereich („Petting-Zone“), wo Kinder und Familien Haus- und Nutztiere (Kaninchen, Ziegen usw.) hautnah kennenlernen können." }
+            ]
+        },
+        interestingFacts: {
+            title: "Interessante Fakten",
+            items: [
+                { text: "Der Zoo beherbergt über 10 000 Tiere aus mehr als 800 Arten." },
+                { text: "Einer der größten Elefantenparks Europas für asiatische Elefanten befindet sich hier auf über 2 ha." },
+                { text: "Der Zoo verfügt über ein Aquarium mit Korallenriff, Insektarium und Rheinpanorama mit heimischen Fischarten." },
+                { text: "Die ältesten architektonischen Objekte harmonieren mit modernen Expositionen, z. B. der Südostasien-Dschungel im Tropenhaus." }
+            ]
+        },
+        construction_period: "22. Juli 1860 – offizielles Eröffnungsdatum des Zoos nach etwa 10-monatiger Vorbereitung und Bauzeit.",
+        founder: " Der Zoo wurde als Aktiengesellschaft lokaler Bürger auf Initiative des Lehrers Dr. Caspar (Casper) Garthe gegründet, der Organisator und Hauptinitiator des Projekts war. Der erste bei der Gründung ernannte Direktor war Dr. Heinrich Bodinus (Biologe), der die Leitung übernahm und die erste Tierausstellung organisierte.",
+        meta: {
+            title: "Kölner Zoo – Geschichte, Expositionen und praktische Informationen für den Besuch",
+            description: "Entdecken Sie den Kölner Zoo, einen der ältesten Zoos Deutschlands. Erfahren Sie mehr über seine Geschichte, thematischen Expositionen, den Regenwald, den Elefantenpark und praktische Besuchsinformationen.",
+            ogTitle: "Besuchen Sie den Kölner Zoo – über 10 000 Tiere und einzigartige Expositionen",
+            ogDescription: "Erkunden Sie den Kölner Zoo: historische Gebäude, Südostasien-Regenwald, Elefantenpark und Aquarium. Perfekter Ort für Familien und Bildungsbesuche.",
+            ogImage: "https://our-travels.info/foto/Germany/nrw/koln/koln-city/zoo/001.jpg"
         }
     },
     {
@@ -770,7 +1071,7 @@ const datas = [
             items: [
                 { bold: "Adresse:", text: "Schillingsrotter Straße 100, 50996 Köln, Deutschland" },
                 { bold: "Eintritt:", text: "Kostenlos" },
-                { bold: "Öffnungszeiten:", text: "November – Februar: 09:00–16:00; März, September – Oktober: 09:00–18:00; April – August: 09:00–20:00" },
+                { bold: "Öffnungszeiten:", text: "<br>November – Februar: 09:00–16:00; <br>März, September – Oktober: 09:00–18:00; <br>April – August: 09:00–20:00" },
                 { bold: "Parken:", text: "Kostenlos, in der Nähe des Friedenswaldes" },
                 { bold: "Barrierefreiheit:", text: "Bänke, Wege; Toiletten nicht überall; Hunde in der Regel nicht erlaubt." },
                 { bold: "Führungen:", text: "Erster Mittwoch des Monats um 14:30, dritter Samstag des Monats um 15:00, Anmeldung für Samstag-Gruppen erforderlich." }
@@ -789,7 +1090,7 @@ const datas = [
             description: "Botanischer Garten und Forstpark Köln mit Pflanzen aus aller Welt und thematischen Zonen, einschließlich Friedenswald.",
             ogTitle: "Forstbotanischer Garten – Botanischer Garten und Forstpark Köln",
             ogDescription: "Der Garten und Forstpark Köln bieten Spaziergänge durch die Rhododendron-Ravine, den Japanischen Garten, die Heidewiese und den Friedenswald.",
-            ogImage: "https://our-travels.info/new/foto/Germany/nrw/koln/koln-city/forstbotanischer_garten/001.jpg"
+            ogImage: "https://our-travels.info/foto/Germany/nrw/koln/koln-city/forstbotanischer_garten/001.jpg"
         }
     },
     {
@@ -829,7 +1130,7 @@ const datas = [
             title: "Praktische Informationen",
             items: [
                 { bold: "Adresse: ", text: "Amsterdamer Straße 34, 50735 Köln" },
-                { bold: "Öffnungszeiten: ", text: "Park: von 8:00 Uhr bis Einbruch der Dunkelheit. Gewächshäuser: Oktober–März 10:00–16:00, April–September 10:00–18:00" }
+                { bold: "Öffnungszeiten: ", text: "<br>Park: von 8:00 Uhr bis Einbruch der Dunkelheit. <br>Gewächshäuser: Oktober–März 10:00–16:00, April–September 10:00–18:00" }
             ]
         },
         interesting_facts: {
@@ -848,7 +1149,7 @@ const datas = [
             description: "Besuchen Sie den Botanischen Garten Flora in Köln: über 10.000 Pflanzenarten aus aller Welt, historische Alleen, thematische Gärten, Gewächshäuser und Erholung im Freien.",
             ogTitle: "Flora – Botanischer Garten und Park in Köln",
             ogDescription: "Entdecken Sie die Flora in Köln: Weltreise unter 10.000 Pflanzenarten, historische Gärten, Gewächshäuser und gemütliche Alleen zum Spazierengehen.",
-            ogImage: "https://our-travels.info/new/foto/Germany/nrw/koln/koln-city/flora_garten_koln/001.jpg"
+            ogImage: "https://our-travels.info/foto/Germany/nrw/koln/koln-city/flora_garten_koln/001.jpg"
         }
     },
     {
@@ -904,7 +1205,7 @@ const datas = [
             description: "Der Rheinpark ist ein großer öffentlicher Park entlang des rechten Rheinufers im Stadtteil Deutz der Stadt Köln. Er stellt eine historisch und architektonisch bedeutende Grünanlage dar, bekannt für seine weitläufigen Rasenflächen, Blumenbeete, Spazierwege und den herrlichen Blick auf das Stadtzentrum mit dem Kölner Dom.",
             ogTitle: "Rheinpark (Rheinpark)",
             ogDescription: "Der Rheinpark ist ein großer öffentlicher Park entlang des rechten Rheinufers im Stadtteil Deutz der Stadt Köln. Er stellt eine historisch und architektonisch bedeutende Grünanlage dar, bekannt für seine weitläufigen Rasenflächen, Blumenbeete, Spazierwege und den herrlichen Blick auf das Stadtzentrum mit dem Kölner Dom.",
-            ogImage: "https://our-travels.info/new/foto/Germany/nrw/koln/koln-city/rheinpark_koln/001.jpg"
+            ogImage: "https://our-travels.info/foto/Germany/nrw/koln/koln-city/rheinpark_koln/001.jpg"
         }
     },
     {
@@ -948,7 +1249,7 @@ const datas = [
             description: "Besuchen Sie den Tanzbrunnen – den historischen „Tanzenden Brunnen“ am Rhein in Köln. Konzerte, Festivals, kulturelle Events und malerische Ausblicke auf den Fluss. Erfahren Sie mehr über Geschichte und Architektur des Komplexes.",
             ogTitle: "Tanzbrunnen in Köln – Konzerte und kulturelle Veranstaltungen am Rhein",
             ogDescription: "Der Tanzbrunnen ist ein bekannter Kulturkomplex in Köln mit einer Geschichte von fast 100 Jahren. Konzerte, Festivals, Spaziergänge entlang des Rheins und das einzigartige „Sternwellenzelt“.",
-            ogImage: "https://our-travels.info/new/foto/Germany/nrw/koln/koln-city/rheinpark_koln/002.jpg"
+            ogImage: "https://our-travels.info/foto/Germany/nrw/koln/koln-city/rheinpark_koln/002.jpg"
         }
     },
     {
@@ -989,7 +1290,7 @@ const datas = [
             items: [
                 { bold: "Saison: ", text: "in der Regel von April bis Oktober täglich." },
                 { bold: "Öffnungszeiten: ", text: "meist von 10:00 bis 18:00 Uhr (letzte Fahrt gegen 17:45–18:00 Uhr)." },
-                { bold: "Tickets: ", text: "Erwachsene: etwa 4,80 €–7,00 € für ein Hin- und Rückfahrticket, Kinder (meist bis ca. 12 Jahre) günstiger. Preise können variieren, Ermäßigungen mit KölnCard oder anderen Karten sind möglich." }
+                { bold: "Tickets: ", text: "<br>Erwachsene: etwa 4,80 €–7,00 € für ein Hin- und Rückfahrticket, <br>Kinder (meist bis ca. 12 Jahre) günstiger. <br>Preise können variieren, Ermäßigungen mit KölnCard oder anderen Karten sind möglich." }
             ]
         },
         interestingFacts: {
@@ -1006,7 +1307,7 @@ const datas = [
             description: "Die Cologne Cable Car ist eine panoramische Seilbahn über den Rhein in Köln. Geschichte, Lage, Ausblicke auf den Kölner Dom, den Rheinpark und nützliche Informationen für Besucher.",
             ogTitle: "Cologne Cable Car – Panoramablick auf Köln aus der Höhe",
             ogDescription: "Die Cologne Cable Car verbindet die Rheinufer und bietet einen der schönsten Panoramablicke auf Köln, den Kölner Dom und den Rheinpark. Eine beliebte Sehenswürdigkeit und ein Wahrzeichen der Stadt.",
-            ogImage: "https://our-travels.info/new/foto/Germany/nrw/koln/koln-city/rheinpark_koln/003.jpg"
+            ogImage: "https://our-travels.info/foto/Germany/nrw/koln/koln-city/rheinpark_koln/003.jpg"
         }
     },
     {
@@ -1064,11 +1365,110 @@ const datas = [
             description: "Überreste des römischen Forts Divitia aus dem 4. Jahrhundert n. Chr. am rechten Rheinufer in Köln. Erhalten sind Turm, Mauerreste und Fundamentreste. Frei zugänglich im Rheinpark.",
             ogTitle: "Ruinen des römischen Forts Divitia in Köln – Überreste einer römischen Befestigung",
             ogDescription: "Entdecken Sie die Überreste des römischen Forts Divitia im Rheinpark, Köln. Originale Mauern, Turm und Fundamentreste stehen für Spaziergänge und Besichtigungen offen.",
-            ogImage: "https://our-travels.info/new/foto/Germany/nrw/koln/koln-city/rheinpark_koln/004.jpg"
+            ogImage: "https://our-travels.info/foto/Germany/nrw/koln/koln-city/rheinpark_koln/004.jpg"
+        }
+    },
+    {
+        id: "finkens_garten_koln",
+        name: "Finkens Garten",
+        type: ["nature"],
+        path: "finkens_garten_koln",
+        countryPath: "germany",
+        regionsPath: "nrw",
+        districtPath: "city",
+        cityPath: "koln",
+        fotoCard: "Germany/nrw/koln/koln-city/finkens_garten/001.jpg",
+        location: "Köln, Deutschland",
+        officialSite: [
+            { bold: "Offizielle Website", link: "http://www.finkensgarten.org/" }
+        ],
+        short_description: "Finkens Garten ist ein naturpädagogisches Gelände im Stadtteil Rodenkirchen im Süden von Köln. Hier können Besucher die Natur kennenlernen, Tiere und Pflanzen in ihrer natürlichen Umgebung beobachten und an Umweltprogrammen teilnehmen.",
+        full_description: {
+            title: "Beschreibung und Geschichte",
+            items: [
+                { bold: "Finkens Garten", text: " – ist ein Naturpark im Stadtteil Rodenkirchen im Süden von Köln, der als offener Bildungsraum über die Natur geschaffen wurde. Er dient als Ort für praktische Naturerfahrungen, besonders für Kinder im Vorschul- und Schulalter, ist jedoch für alle Altersgruppen interessant. " },
+                { text: "Finkens Garten ist ein Beispiel für einen natürlichen Lebensraum, in dem Besucher:" },
+                { text: "• die Vielfalt von Flora und Fauna beobachten und erforschen können;" },
+                { text: "• verschiedene Biotoptypen untersuchen können (Wiesen, Blumenflächen, Obstgärten, Teiche und andere);" },
+                { text: "• an Programmen zur Beobachtung von Vögeln, Insekten und anderen Tieren teilnehmen können;" },
+                { text: "• einen großen Kräutergarten, Obstbäume und anderes besuchen können;" },
+                { text: "• das Bienenhaus besuchen können, wo man mehr über das Leben der Bienen erfährt und lokalen Honig probieren kann. " },
+                { bold: "Geschichte. ", text: "Der Park besteht seit mehreren Jahrzehnten als Naturgarten für Bildungs- und Gemeinschaftszwecke. " },
+                { bold: "Zweck.", text: "Die Hauptaufgabe besteht darin, die Natur praktisch erfahrbar zu machen, den Respekt vor der Umwelt zu fördern und die biologische Vielfalt zu bewahren." }
+            ]
+        },
+        tickets_and_entry: {
+            title: "Praktische Informationen",
+            items: [
+                { bold: "Adresse: ", text: "Friedrich-Ebert-Straße 49, 50996 Köln-Rodenkirchen. Straßenbahn- und Bushaltestellen befinden sich in der Nähe des Eingangs (Linien 16, 17, 130, 131). " },
+                { bold: "Geöffnet: ", text: "täglich von 9:00 Uhr bis Sonnenuntergang (abhängig von Jahreszeit und Wetter). " },
+                { bold: "Besondere Zeiten:", text: "Das Bienenhaus mit Honigverkostung und Präsentationen ist jeden 2. und 4. Sonntag im Monat geöffnet (11:00–16:00 Uhr, saisonabhängig). " },
+                { bold: "Eintritt", text: "kostenlos. " },
+                { bold: "Wichtig:", text: "Hunde und Fahrräder sind im Garten nicht erlaubt (zum Schutz der Natur). " }
+            ]
+        },
+        interestingFacts: {
+            title: "Interessante Fakten",
+            items: [
+                { text: "Der Park wird häufig als Bildungsort für Kinder aller Altersgruppen genutzt. " },
+                { text: "Hier finden regelmäßig Naturführungen, thematische Veranstaltungen und Workshops statt (zum Beispiel über Vögel, Insekten und Pflanzen)." },
+                { text: "Der Park wird von Freiwilligen und der lokalen Gemeinschaft unterstützt und nicht nur von städtischen Diensten. " }
+            ]
+        },
+        meta: {
+            title: "Finkens Garten – Naturgarten und Naturpark, Rodenkirchen",
+            description: "Finkens Garten in Köln ist ein kostenloser Naturpark mit Biotopen, Bienenhaus und Bildungsprogrammen für Kinder und Erwachsene.",
+            ogTitle: "Finkens Garten – Natur und Erlebnisse im Herzen der Stadt",
+            ogDescription: "Verbringen Sie einen Tag im Finkens Garten: Entdecken Sie natürliche Landschaften, lernen Sie die Natur kennen und besuchen Sie das Bienenhaus und Bildungsangebote.",
+            ogImage: "https://our-travels.info/foto/Germany/nrw/koln/koln-city/finkens_garten/001.jpg"
         }
     },
 
     // Köln округ
+    
+// aachen kreis
+    {
+    id: "historic_center_monschau",
+    name: "Altstadt Monschau",
+    type: ["historical_building"],
+    path: "historic_center_monschau",
+    countryPath: "germany",
+    regionsPath: "nrw",
+    districtPath: "koln",
+    cityPath: "monschau",
+    fotoCard: "Germany/nrw/koln/Aachen/monschau/001.jpg",
+    location: "Monschau, Deutschland",
+    short_description: "Die Altstadt von Monschau ist ein hervorragend erhaltenes historisches Zentrum mit Fachwerkhäusern aus dem 17.–18. Jahrhundert, engen gepflasterten Gassen und einer malerischen Uferpromenade entlang des Flusses Rur. Sie liegt in der Naturregion Eifel im Bundesland Nordrhein-Westfalen. Die Bebauung hat sich seit dem späten Mittelalter kaum verändert und vermittelt den Eindruck eines „lebendigen Museums“.",
+    full_description: {
+        title: "Beschreibung und Geschichte",
+        items: [
+            { bold: "Altstadt Monschau", text: " – wirkt wie eine lebendig gewordene Illustration aus einem alten europäischen Märchen. Enge gepflasterte Gassen schlängeln sich zwischen Fachwerkhäusern, deren dunkle Balken und weißen Wände Jahrhunderte Geschichte erlebt haben, während sich über dem ruhigen Wasser des Flusses Balkone mit Blumenschmuck neigen. Die Stadt scheint tief in einem Tal zwischen Hügeln verborgen zu liegen, sodass jede Biegung einen neuen malerischen Ausblick eröffnet – eine Brücke, einen Turm, ein altes Dach oder einen gemütlichen Innenhof. Hier ist die Moderne kaum spürbar: Der Lärm der Autos verschwindet, die Zeit verlangsamt sich, und ein Spaziergang wird nicht nur zur Besichtigung, sondern zu einer echten Reise in die Vergangenheit." },
+            { bold: "Geschichte", text: "Die Siedlung entstand im 13. Jahrhundert rund um die Burg Monschau. Im 18. Jahrhundert erlebte die Stadt durch die Textilproduktion einen wirtschaftlichen Aufschwung. Wohlhabende Fabrikanten errichteten prächtige Häuser, von denen viele bis heute erhalten sind. Nach dem Niedergang der Industrie im 19. Jahrhundert wurde die Stadt kaum umgebaut – genau das ermöglichte den Erhalt ihres historischen Erscheinungsbildes." }
+        ]
+    },
+    interestingFacts: {
+        title: "Interessante Fakten",
+        items: [
+            { text: "Im historischen Zentrum ist moderne Bebauung verboten." },
+            { text: "Viele Häuser stehen auf Fundamenten aus dem 14.–15. Jahrhundert." },
+            { text: "Die Altstadt von Monschau blieb im Zweiten Weltkrieg weitgehend unbeschädigt und bewahrte deshalb ihre ursprüngliche Stadtstruktur." },
+            { text: "Die engen Straßen entstanden nicht aus romantischen Gründen, sondern wegen Platzmangels im schmalen Tal des Flusses Rur." },
+            { text: "Im 18. Jahrhundert war die Stadt ein wohlhabendes Zentrum der Textilindustrie – sichtbar an den prächtigen Häusern der Fabrikanten, besonders am Gebäude Rotes Haus." },
+            { text: "Über der Stadt erhebt sich die Burg Monschau, die bereits im 13. Jahrhundert zur Kontrolle der Handelswege erbaut wurde." },
+            { text: "Monschau wird oft als das „fotogenste Städtchen der Eifelregion“ bezeichnet, dank der Kombination aus Fachwerk, Bergen und Wasser." },
+            { text: "Hier wurden mehrere historische Filme und deutsche Fernsehserien gedreht – die Stadt dient als fertige Kulisse ohne aufwendige Studiobauten." },
+            { text: "Im Winter findet einer der stimmungsvollsten Weihnachtsmärkte Deutschlands statt, und viele Häuser werden mit traditionellen Kerzen in den Fenstern geschmückt." }
+        ]
+    },
+    construction_period: "13. Jahrhundert (Entstehung der Siedlung um die Burg)",
+    meta: {
+        title: "Altstadt Monschau — Mittelalterliches Zentrum in der Eifel | Deutschland",
+        description: "Die Altstadt von Monschau ist eines der schönsten historischen Zentren Deutschlands mit Fachwerkhäusern, dem Fluss Rur und mittelalterlicher Atmosphäre.",
+        ogTitle: "Altstadt Monschau — Märchenhaftes Deutschland",
+        ogDescription: "Ein Spaziergang durch die Altstadt von Monschau ist eine Reise in die Vergangenheit: enge Gassen, historische Häuser und die Romantik der Eifel.",
+        ogImage: "https://our-travels.info/foto/Germany/nrw/koln/Aachen/monschau/002.jpg"
+    }
+},
 
     // Rhein-Erft-Kreis
 
@@ -1077,26 +1477,23 @@ const datas = [
         id: "bruhel_palaces",
         name: "Brühler Schlösser: Ensemble Augustusburg und Falkenlust",
         type: ['palace', 'museum'],
-        path: 'bruhl-palaces',
+        path: 'bruhl_palaces',
         regionsPath: "nrw",
         districtPath: "koln",
         cityPath: "bruhl",
-        fotoCard: "Germany/nrw/koln/Rhein-Erft-Kreis/bruhl/bruhel_palaces/001.jpg",
+        fotoCard: "Germany/nrw/koln/Rhein-Erft-Kreis/bruhl/bruhl_palaces/001.jpg",
         location: "Brühl, Deutschland",
         address: [{ bold: "Adresse:", text: " Schloss Augustusburg — Max-Ernst-Allee, 50321 Brühl, Deutschland <br>Schloss Falkenlust — An Schloss Falkenlust 1, 50321 Brühl, Deutschland" }],
         officialSite: [
             { bold: 'Offizielle Website der Brühler Schlösser', link: 'https://www.schlossbruehl.de/en/' },
         ],
-        unesco_status: {
-            included: true,
-            year: 1984
-        },
+        unesco_status: {included: true, year: 1984},
         tickets_and_entry: {
             title: "Tickets und Eintritt",
             items: [
                 { bold: "Der Eintritt in den Park und die Gärten ist", text: " frei, ein Besuch ist das ganze Jahr über möglich." },
                 { bold: "Der Besuch der Schlösser Augustusburg und Falkenlust ist", text: " kostenpflichtig, Führungen finden nach Plan statt." },
-                { bold: "Preise für 2025:", text: " Augustusburg — 11 € für Erwachsene, kostenlos für Besucher bis 25 Jahre; Falkenlust — 8 €; Kombiticket — 17 €." }
+                { bold: "Preise für 2025:", text: " <br>Augustusburg — 11 € für Erwachsene, kostenlos für Besucher bis 25 Jahre; <br>Falkenlust — 8 €; Kombiticket — 17 €." }
             ]
         },
         construction_period: "1723 – Mitte des 18. Jahrhunderts",
@@ -1133,7 +1530,7 @@ const datas = [
             description: "Das Ensemble der Schlösser Augustusburg und Falkenlust in Brühl – ein Meisterwerk des Barock und Rokoko, ergänzt durch französische und englische Gärten, Brunnen, Alleen und Spiegelbecken. Geschichte, Stil, interessante Fakten.",
             ogTitle: "Brühler Schlösser: Architektur, Gärten und Legenden",
             ogDescription: "Entdecken Sie die Brühler Schlösser – ihre Pracht, Innenräume, den Park mit Parterre, Alleen und englischem Landschaftsgarten, ihre kulturelle Bedeutung und ihren UNESCO-Status.",
-            ogImage: "https://our-travels.info/new/foto/Germany/nrw/koln/Rhein-Erft-Kreis/bruhl/bruhel_palaces/001.jpg"
+            ogImage: "https://our-travels.info/foto/Germany/nrw/koln/Rhein-Erft-Kreis/bruhl/bruhl_palaces/001.jpg"
         }
     },
     {
@@ -1182,7 +1579,7 @@ const datas = [
             description: "Das einzige Museum weltweit, das Max Ernst gewidmet ist. Sammlung, Geschichte, Dadaismus, Surrealismus, Sonderausstellungen.",
             ogTitle: "Max-Ernst-Museum — Brühl, Deutschland",
             ogDescription: "Entdecken Sie das Max-Ernst-Museum in Brühl, seine Sammlung und Ausstellungen, die dem Dadaismus und Surrealismus gewidmet sind.",
-            ogImage: "https://our-travels.info/new/foto/Germany/nrw/koln/Rhein-Erft-Kreis/bruhl/max_ernst_museum/Max-Ernst-Museum.jpg"
+            ogImage: "https://our-travels.info/foto/Germany/nrw/koln/Rhein-Erft-Kreis/bruhl/max_ernst_museum/Max-Ernst-Museum.jpg"
         }
     },
     {
@@ -1202,8 +1599,8 @@ const datas = [
         tickets_and_entry: {
             title: "Tickets und Eintritt",
             items: [
-                { bold: "Ticketpreise:", text: " abhängig von Saison und Alter der Besucher. Es wird empfohlen, Tickets im Voraus über die offizielle Website zu kaufen." },
-                { bold: "Öffnungszeiten:", text: " Hauptsaison (28. März – 15. November) von 9:00 bis 18:00 Uhr, Attraktionen öffnen um 10:00 Uhr. Sommerzeit (Juli – August) bis 19:00 Uhr. Wintersaison Wintertraum (16. November – 26. Januar) von 11:00 bis 20:00 Uhr. Geschlossen am 24., 25. Dezember und 1. Januar." }
+                { bold: "Ticketpreise:", text: " abhängig von Saison und Alter der Besucher. <br>Es wird empfohlen, Tickets im Voraus über die offizielle Website zu kaufen." },
+                { bold: "Öffnungszeiten:", text: " <br>Hauptsaison (28. März – 15. November) von 9:00 bis 18:00 Uhr, Attraktionen öffnen um 10:00 Uhr. <br>Sommerzeit (Juli – August) bis 19:00 Uhr. <br>Wintersaison Wintertraum (16. November – 26. Januar) von 11:00 bis 20:00 Uhr. <br>Geschlossen am 24., 25. Dezember und 1. Januar." }
             ]
         },
         short_description: "Phantasialand in Brühl ist einer der meistbesuchten Themenparks Europas mit über 30 Attraktionen und 6 einzigartigen Themenbereichen. Geöffnet seit 1967, empfängt jährlich etwa 2 Millionen Besucher. Der Park ist bekannt für seine beeindruckenden Achterbahnen und Wasserfahrgeschäfte sowie die Liebe zum Detail in der Gestaltung jeder Zone, was unvergessliche Erlebnisse für Besucher jeden Alters schafft.",
@@ -1232,14 +1629,14 @@ const datas = [
                 { bold: "Black Mamba", text: " – invertierte Achterbahn durch den afrikanischen Dschungel" },
             ]
         },
-        construction_period: "1967 – heute",
-        founder: "eröffnet 1967, Gründer – Gottlieb Löffelhardt und Richard Schmidt",
+        construction_period: "1967",
+        founder: " Gottlieb Löffelhardt und Richard Schmidt",
         meta: {
             title: "Phantasialand in Brühl: Themenpark mit Attraktionen und Hotels",
             description: "Phantasialand – einer der meistbesuchten Parks Europas mit über 30 Attraktionen, Themenbereichen und einzigartigen Hotels.",
             ogTitle: "Phantasialand – Brühl, Deutschland",
             ogDescription: "Entdecken Sie Phantasialand in Brühl: Attraktionen, Themenbereiche, Hotels und Unterhaltung für die ganze Familie.",
-            ogImage: "https://our-travels.info/new/foto/Germany/nrw/koln/Rhein-Erft-Kreis/bruhl/phantasialand/001.jpg"
+            ogImage: "https://our-travels.info/foto/Germany/nrw/koln/Rhein-Erft-Kreis/bruhl/phantasialand/001.jpg"
         },
     },
 
@@ -1265,7 +1662,7 @@ const datas = [
                 { bold: "Ermäßigt:", text: " 5,00 €" },
                 { bold: "Familienkarte:", text: " 14,00 € (2 Erwachsene + bis zu 3 Kinder)" },
                 { bold: "Kinder bis 16 Jahre:", text: " kostenlos" },
-                { bold: "Öffnungszeiten:", text: " Dienstag – Sonntag: 11:00–17:00, Montag: geschlossen" }
+                { bold: "Öffnungszeiten:", text: " <br>Dienstag – Sonntag: 11:00–17:00, <br>Montag: geschlossen" }
             ]
         },
         short_description: "Das KERAMION in Frechen ist ein Museum, das historische und moderne Keramik vereint; es befindet sich in einem futuristisch gestalteten runden Gebäude, das 1971 vom Architekturbüro Peter Neufert im Auftrag des Sammlers Dr. Gottfried Cremer errichtet wurde.",
@@ -1287,13 +1684,13 @@ const datas = [
             ]
         },
         construction_period: "Das Museumsgebäude wurde 1970–1971 errichtet. Das Museum wurde 2002 eröffnet.",
-        founder: "Dr. Gottfried Cremer und die Stadt Frechen",
+        founder: " Dr. Gottfried Cremer und die Stadt Frechen",
         meta: {
             title: "KERAMION – moderne und historische Keramik in Frechen",
             description: "KERAMION: Dauerausstellung und Sonderausstellungen von Keramik, Geschichte der Produktion und zeitgenössische künstlerische Perspektiven.",
             ogTitle: "KERAMION – Zentrum für moderne und historische Keramik, Frechen",
             ogDescription: "Erfahren Sie mehr über die Sammlung von Cremer, die historische Keramik aus Frechen und die Ausstellungen im KERAMION.",
-            ogImage: "https://our-travels.info/new/foto/Germany/nrw/koln/Rhein-Erft-Kreis/frechen/keramion/frechen_keramion.jpg"
+            ogImage: "https://our-travels.info/foto/Germany/nrw/koln/Rhein-Erft-Kreis/frechen/keramion/frechen_keramion.jpg"
         }
     },
     {
@@ -1313,8 +1710,8 @@ const datas = [
         tickets_and_entry: {
             title: "Eintritt und Zugang",
             items: [
-                { bold: "Zugang:", text: "Das Schloss ist eine private Residenz, das Schlossgelände und der See sind für Spaziergänge zugänglich." },
-                { bold: "Besuchszeiten:", text: "Das Betreten des Sees und der Alleen ist tagsüber möglich." }
+                { bold: "Zugang:", text: " das Schloss ist eine private Residenz, das Schlossgelände und der See sind für Spaziergänge zugänglich." },
+                { bold: "Besuchszeiten:", text: " das Betreten des Sees und der Alleen ist tagsüber möglich." }
             ]
         },
         short_description: "Burg Bachem in Frechen – der größte und am besten erhaltene Schlosskomplex der Stadt, umgeben von einem Graben mit steinerner Brücke. Das Schloss ist ein bedeutendes Denkmal der Geschichte und Architektur des Stadtteils Bachem.",
@@ -1336,14 +1733,14 @@ const datas = [
                 { text: "Der Bachemer Bach versorgte das Schloss früher mit Wasser für die Schutzgräben." }
             ]
         },
-        construction_period: "Vermutlich Anfang des 13. Jahrhunderts, mit späteren Umbauten und umfassender Restaurierung in den 1970er Jahren",
-        founder: "Ursprünglich im Besitz lokaler Adelsfamilien",
+        construction_period: " Vermutlich Anfang des 13. Jahrhunderts, mit späteren Umbauten und umfassender Restaurierung in den 1970er Jahren",
+        founder: " Ursprünglich im Besitz lokaler Adelsfamilien",
         meta: {
             title: "Burg Bachem in Frechen – historische Wasserburg und See",
             description: "Burg Bachem: Geschichte, Wassergräben, Spazierbereiche und Erholung am kleinen See in Frechen.",
             ogTitle: "Burg Bachem – Frechen, Deutschland",
             ogDescription: "Entdecken Sie die historische Wasserburg Burg Bachem und den See mit Spazierwegen in Frechen.",
-            ogImage: "https://our-travels.info/new/foto/Germany/nrw/koln/Rhein-Erft-Kreis/frechen/burg-bachem/Burg-Bachem_3.jpg"
+            ogImage: "https://our-travels.info/foto/Germany/nrw/koln/Rhein-Erft-Kreis/frechen/burg-bachem/Burg-Bachem_3.jpg"
         }
     },
     {
@@ -1369,7 +1766,7 @@ const datas = [
         tickets_and_entry: {
             title: "Zugang",
             items: [
-                { bold: "Zugang:", text: "Der Platz ist für alle Besucher frei zugänglich: Hier kann man spazieren gehen, auf Bänken sitzen, das Stadtleben beobachten, Märkte besuchen oder den Platz als Ausgangspunkt zu anderen Sehenswürdigkeiten nutzen – zum Beispiel zum Alten Rathaus und zu anderen historischen Gebäuden des Zentrums. Seine zentrale Lage macht ihn zu einem logischen Startpunkt für einen Rundgang durch Frechen." },
+                { bold: "Zugang:", text: " der Platz ist für alle Besucher frei zugänglich: Hier kann man spazieren gehen, auf Bänken sitzen, das Stadtleben beobachten, Märkte besuchen oder den Platz als Ausgangspunkt zu anderen Sehenswürdigkeiten nutzen – zum Beispiel zum Alten Rathaus und zu anderen historischen Gebäuden des Zentrums. Seine zentrale Lage macht ihn zu einem logischen Startpunkt für einen Rundgang durch Frechen." },
             ]
         },
         short_description: "Der Johann-Schmitz-Platz ist der zentrale Stadtplatz von Frechen, ein Ort für Märkte, städtische Veranstaltungen und Ausgangspunkt, um das Alte Rathaus zu entdecken.",
@@ -1387,13 +1784,13 @@ const datas = [
                 { text: "Der Platz dient auch als wichtiger Treffpunkt für Einheimische und Besucher, besonders freitags während des Marktes, wenn der Platz belebt ist und sich in einen Ort für Kommunikation, Handel und Erfahrungsaustausch verwandelt." },
             ]
         },
-        construction_period: "Ende 19. – Anfang 20. Jahrhundert",
+        construction_period: " Ende 19. – Anfang 20. Jahrhundert",
         meta: {
             title: "Johann-Schmitz-Platz in Frechen – zentraler Platz und Rathaus",
             description: "Der Johann-Schmitz-Platz ist der zentrale Stadtplatz von Frechen mit Märkten, Veranstaltungen und historischem Rathaus.",
             ogTitle: "Johann-Schmitz-Platz – Frechen, Deutschland",
             ogDescription: "Entdecken Sie den zentralen Platz von Frechen – Johann-Schmitz-Platz mit historischem Rathaus, Märkten und städtischer Atmosphäre.",
-            ogImage: "https://our-travels.info/new/foto/Germany/nrw/koln/Rhein-Erft-Kreis/frechen/johann_schmitz_platz_frechen/001.jpg"
+            ogImage: "https://our-travels.info/foto/Germany/nrw/koln/Rhein-Erft-Kreis/frechen/johann_schmitz_platz_frechen/001.jpg"
         }
     },
     {
@@ -1414,7 +1811,7 @@ const datas = [
         tickets_and_entry: {
             title: "Zugang",
             items: [
-                { bold: "Eingang und Zugang:", text: "Der Zugang zum Gebäude ist nicht immer für freie Besichtigungen geöffnet – ein Zugang ist während spezieller Veranstaltungen oder Führungen möglich. Der Rathausturm ist für Touristen geöffnet, von dem aus man einen Blick auf das historische Zentrum von Frechen hat." },
+                { bold: "Eingang und Zugang:", text: "der Zugang zum Gebäude ist nicht immer für freie Besichtigungen geöffnet – ein Zugang ist während spezieller Veranstaltungen oder Führungen möglich. <br>Der Rathausturm ist für Touristen geöffnet, von dem aus man einen Blick auf das historische Zentrum von Frechen hat." },
             ]
         },
         short_description: "Das Alte Rathaus Frechen – ein historisches Verwaltungsgebäude am Johann-Schmitz-Platz, architektonisches Zentrum des Stadtzentrums und ein beliebter touristischer Ort.",
@@ -1444,7 +1841,7 @@ const datas = [
             description: "Das Alte Rathaus Frechen – ein historisches Verwaltungsgebäude mit Turm auf dem Johann-Schmitz-Platz im Zentrum der Stadt, Nordrhein-Westfalen.",
             ogTitle: "Altes Rathaus Frechen – Frechen, Deutschland",
             ogDescription: "Entdecken Sie das Alte Rathaus Frechen mit seinem charakteristischen Turm und der neobarocken Architektur auf dem Johann-Schmitz-Platz.",
-            ogImage: "https://our-travels.info/new/foto/Germany/nrw/koln/Rhein-Erft-Kreis/frechen/johann_schmitz_platz_frechen/008.jpg"
+            ogImage: "https://our-travels.info/foto/Germany/nrw/koln/Rhein-Erft-Kreis/frechen/johann_schmitz_platz_frechen/008.jpg"
         }
     },
     {
@@ -1470,7 +1867,7 @@ const datas = [
             description: "Auf dem Platz vor dem alten Rathaus befindet sich ein dekorativer Bezirksbrunnen, der 1981 vom Keramikkünstler Wim Mühlendyck geschaffen wurde. Er ist mit Keramikplatten mit Reliefszenen bedeckt, die die Entwicklung des Handwerks und der Keramikindustrie in Frechen zeigen – von traditionellen Handwerkern bis zur Fabrikproduktion, und verschiedene Maskarone (Gesichter) dienen als charakteristische Wasserstrahlen des Brunnens.",
             ogTitle: "Dekorativer Bezirksbrunnen vor dem alten Rathaus von Frechen",
             ogDescription: "Der Brunnen auf dem Platz vor dem alten Rathaus in Frechen, 1981 vom Keramikkünstler Wim Mühlendyck geschaffen, ist mit Keramikplatten mit Reliefszenen des Handwerks und der Keramikindustrie sowie Maskaronen mit Wasserstrahlen gestaltet.",
-            ogImage: "https://our-travels.info/new/foto/Germany/nrw/koln/Rhein-Erft-Kreis/frechen/johann_schmitz_platz_frechen/005.jpg"
+            ogImage: "https://our-travels.info/foto/Germany/nrw/koln/Rhein-Erft-Kreis/frechen/johann_schmitz_platz_frechen/005.jpg"
         }
     },
     {
@@ -1496,7 +1893,7 @@ const datas = [
             description: "In der Fußgängerzone wurde 1986 der Skulpturenbrunnen Klüttenbrunnen (Klüttenbrunnen) des deutschen Bildhauers Olaf Hönen errichtet. Er befindet sich in der Nähe des Johann-Schmitz-Platzes und spiegelt die industrielle und handwerkliche Geschichte Frechens wider, insbesondere den Abbau und die Verarbeitung des lokalen Tons. Der Brunnen ist als künstlerische Komposition mit Steinelementen und Wasserstrahlen gestaltet, harmoniert mit der städtischen Umgebung und dient als visueller Orientierungspunkt für Touristen.",
             ogTitle: "Klüttenbrunnen in Frechen",
             ogDescription: "Der Skulpturenbrunnen Klüttenbrunnen (Klüttenbrunnen) in der Fußgängerzone nahe dem Johann-Schmitz-Platz spiegelt die industrielle und handwerkliche Geschichte Frechens wider und ist als künstlerische Komposition mit Steinelementen und Wasserstrahlen gestaltet.",
-            ogImage: "https://our-travels.info/new/foto/Germany/nrw/koln/Rhein-Erft-Kreis/frechen/johann_schmitz_platz_frechen/004.jpg"
+            ogImage: "https://our-travels.info/foto/Germany/nrw/koln/Rhein-Erft-Kreis/frechen/johann_schmitz_platz_frechen/004.jpg"
         }
     },
 
@@ -1569,7 +1966,7 @@ const datas = [
             description: "Der Drachenfels bei Königswinter ist ein legendärer Berg des Rheintals, eng verbunden mit der Sage von Siegfried und dem Drachen. Panoramablicke auf den Rhein, Burgruinen, der Naturpark Siebengebirge und beliebte Wanderwege machen ihn zu einem der bekanntesten Ausflugsziele der Region.",
             ogTitle: "Berg Drachenfels — Legenden und Panoramablicke am Rhein",
             ogDescription: "Entdecken Sie den Drachenfels: Drachenmythen, Ausblicke über den Rhein, den Naturpark Siebengebirge und die historische Bedeutung eines der bekanntesten Berge der Region.",
-            ogImage: "https://our-travels.info/new/foto/Germany/nrw/koln/Rhein-Sieg-Kreis/konigswinter/drachenfels/001.jpg"
+            ogImage: "https://our-travels.info/foto/Germany/nrw/koln/Rhein-Sieg-Kreis/konigswinter/drachenfels/001.jpg"
         }
     },
     {
@@ -1607,8 +2004,8 @@ const datas = [
             title: "Praktische Informationen",
             items: [
                 { bold: "Lage:", text: "Talstation Drachenfelsbahn, Drachenfelsstraße 53, 53639 Königswinter, Deutschland" },
-                { bold: "Betriebszeiten:", text: "Ganzjährig in Betrieb mit saisonalen Anpassungen. Winter (Januar-Februar): Mo–Fr 12:00-17:00, Sa-So 11:00-18:00. Frühling und Herbst: ca. 10:00-18:00. Sommer (Mai-September): etwa 09:00-19:00. An Feiertagen und bei Sonderveranstaltungen können die Zeiten abweichen." },
-                { bold: "Fahrpreise (2025):", text: "Erwachsene: ca. 14 € (Berg- und Talfahrt), ca. 12 € (einfache Fahrt). Kinder von 4–13 Jahren: ca. 7 € (Hin- und Rückfahrt). Familienticket (2 Erwachsene + 2 Kinder): ca. 35 €. Gruppen- und Ermäßigungstarife sind verfügbar." }
+                { bold: "Betriebszeiten:", text: "<br>Ganzjährig in Betrieb mit saisonalen Anpassungen. <br>Winter (Januar-Februar): Mo–Fr 12:00-17:00, Sa-So 11:00-18:00. <br>Frühling und Herbst: ca. 10:00-18:00. <br>Sommer (Mai-September): etwa 09:00-19:00. <br>An Feiertagen und bei Sonderveranstaltungen können die Zeiten abweichen." },
+                { bold: "Fahrpreise (2025):", text: "<br>Erwachsene: ca. 14 € (Berg- und Talfahrt), ca. 12 € (einfache Fahrt). <br>Kinder von 4–13 Jahren: ca. 7 € (Hin- und Rückfahrt). <br>Familienticket (2 Erwachsene + 2 Kinder): ca. 35 €. <br>Gruppen- und Ermäßigungstarife sind verfügbar." }
             ]
         },
         interestingFacts: {
@@ -1625,7 +2022,7 @@ const datas = [
             description: "Die Drachenfelsbahn ist eine historische Zahnradbahn aus dem Jahr 1883 in Königswinter. Sie verbindet das Rheintal mit dem Plateau des Drachenfels und zählt zu den wichtigsten touristischen Attraktionen der Region.",
             ogTitle: "Drachenfelsbahn",
             ogDescription: "Erleben Sie eine Fahrt mit der Drachenfelsbahn — der ältesten noch betriebenen Zahnradbahn Deutschlands mit Panoramablicken auf den Rhein und den Drachenfels.",
-            ogImage: "https://our-travels.info/new/foto/Germany/nrw/koln/Rhein-Sieg-Kreis/konigswinter/drachenfels/002.jpg"
+            ogImage: "https://our-travels.info/foto/Germany/nrw/koln/Rhein-Sieg-Kreis/konigswinter/drachenfels/002.jpg"
         }
     },
     {
@@ -1645,7 +2042,7 @@ const datas = [
             { bold: "Offizielle Website von Schloss Drachenburg", link: "https://www.schloss-drachenburg.de" }
         ],
         construction_period: "1882-1884 Jahre",
-        founder: "Stefan von Sarter",
+        founder: " Stefan von Sarter",
         architects: ["Bernhard Tüshaus, Leo von Abbema (erste Entwürfe) und Wilhelm Hoffmann (Fertigstellung und Überarbeitung)."],
         short_description: "Schloss Drachenburg – ein romantisches neugotisches Schloss des 19. Jahrhunderts am Hang des Drachenfels. Prunkvolle Innenräume, Glasfenster und Panoramablicke auf den Rhein und den Park machen es zu einer der Hauptattraktionen der Region.",
         full_description: {
@@ -1666,8 +2063,8 @@ const datas = [
             title: "Praktische Informationen",
             items: [
                 { bold: "Standort:", text: "Schloss Drachenburg, Drachenfelsstraße 118, 53639 Königswinter, Deutschland" },
-                { bold: "Öffnungszeiten:", text: "01.01-31.03: täglich 12:00-17:00. 01.04-01.11: täglich 11:00-18:00. 02.11-30.12: täglich 12:00-17:00. 24.12 und 31.12: geschlossen. Zugang zum Park und zu den Terrassen zu Fuß möglich, ein Teil der Säle ist für Personen mit eingeschränkter Mobilität mit Hilfe des Personals zugänglich." },
-                { bold: "Eintrittspreise (2025):", text: "Erwachsene: ca. 10 €. Kinder 6–17 Jahre, Studenten und Behinderte: ca. 8 €. Kinder unter 6 Jahren: frei. Familienkarte (2 Erwachsene + bis zu 2 Kinder 6-17 Jahre): ca. 25 €. Jahreskarte: für eine Person – 30 €, Familie – 60 €. Führungen gegen Aufpreis möglich." },
+                { bold: "Öffnungszeiten:", text: "<br>01.01-31.03: täglich 12:00-17:00. <br>01.04-01.11: täglich 11:00-18:00. <br>02.11-30.12: täglich 12:00-17:00. <br>24.12 und 31.12: geschlossen. <br>Zugang zum Park und zu den Terrassen zu Fuß möglich, ein Teil der Säle ist für Personen mit eingeschränkter Mobilität mit Hilfe des Personals zugänglich." },
+                { bold: "Eintrittspreise (2025):", text: "<br>Erwachsene: ca. 10 €. <br>Kinder 6–17 Jahre, Studenten und Behinderte: ca. 8 €. <br>Kinder unter 6 Jahren: frei. <br>Familienkarte (2 Erwachsene + bis zu 2 Kinder 6-17 Jahre): ca. 25 €. <br>Jahreskarte: für eine Person – 30 €, Familie – 60 €. <br>Führungen gegen Aufpreis möglich." },
                 { bold: "Im Ticket enthalten:", text: "Zugang zu historischen Sälen, Terrassen und Gartenanlagen, ständige Ausstellung über das Schloss, Nordturm mit Panoramablick." },
                 { bold: "Tipps:", text: "Tickets können online oder vor Ort gekauft werden. In der Hochsaison empfiehlt sich ein Besuch zur Öffnungszeit. Der Besuch kann mit einer Besteigung des Drachenfels oder einer Fahrt mit der Drachenfelsbahn kombiniert werden." }
             ]
@@ -1688,7 +2085,7 @@ const datas = [
             description: "Schloss Drachenburg liegt am Hang des Drachenfels in Königswinter. Erbaut 1882-1884, beeindruckt das Schloss durch neugotische Architektur, prächtige Innenräume und Panoramablicke ins Rheintal.",
             ogTitle: "Schloss Drachenburg",
             ogDescription: "Besuchen Sie Schloss Drachenburg – ein romantisches neugotisches Schloss des 19. Jahrhunderts mit historischen Sälen, Glasfenstern und Aussichtsterrassen mit Blick auf Rhein und Drachenfels.",
-            ogImage: "https://our-travels.info/new/foto/Germany/nrw/koln/Rhein-Sieg-Kreis/konigswinter/drachenfels/001.jpg"
+            ogImage: "https://our-travels.info/foto/Germany/nrw/koln/Rhein-Sieg-Kreis/konigswinter/drachenfels/001.jpg"
         }
     },
     {
@@ -1705,7 +2102,7 @@ const datas = [
         countryPath: "germany",
         fotoCard: "Germany/nrw/koln/Rhein-Sieg-Kreis/konigswinter/drachenfels/003.jpg",
         construction_period: "12. Jahrhundert (1138–1167)",
-        founder: "Kölner Erzbischof Arnold von Wied",
+        founder: " Kölner Erzbischof Arnold von Wied",
         short_description: "Die Ruinen der Burg Drachenfels sind die Überreste einer mittelalterlichen Burg aus dem 12. Jahrhundert, die sich auf dem Gipfel des gleichnamigen Berges im Siebengebirge befindet. Von der Festung sind Fragmente der Mauern und Fundamente der Türme erhalten geblieben, die direkt in den Felsen integriert sind. Die Burg wurde während des Dreißigjährigen Krieges zerstört und danach nicht wieder aufgebaut, weshalb man hier heute authentische historische Ruinen sehen kann. Vom Gipfel aus eröffnet sich ein panoramischer Blick auf den Rhein und die umliegende Landschaft.",
         full_description: {
             title: "Beschreibung und Geschichte",
@@ -1733,7 +2130,7 @@ const datas = [
             description: "Die Ruinen der Burg Drachenfels befinden sich auf dem Gipfel des gleichnamigen Berges im Siebengebirge. Erhalten sind Mauerreste und Türme mit Panoramablick auf den Rhein und Königswinter.",
             ogTitle: "Ruinen der Burg Drachenfels (Burg Drachenfels)",
             ogDescription: "Besuchen Sie die Ruinen der Burg Drachenfels – eine mittelalterliche Festung aus dem 12. Jahrhundert mit beeindruckendem Blick auf das Rheintal.",
-            ogImage: "https://our-travels.info/new/foto/Germany/nrw/koln/Rhein-Sieg-Kreis/konigswinter/drachenfels/003.jpg"
+            ogImage: "https://our-travels.info/foto/Germany/nrw/koln/Rhein-Sieg-Kreis/konigswinter/drachenfels/003.jpg"
         }
     },
     {
@@ -1753,13 +2150,13 @@ const datas = [
         ],
         fotoCard: "Germany/nrw/koln/Rhein-Sieg-Kreis/konigswinter/drachenfels/004.jpg",
         construction_period: "1913",
-        founder: "Initiator des Baus war der deutsche Unternehmer und Heimatforscher Bruno Rüde, der die Nibelungensage bekannt machen und den Drachenfels für Touristen attraktiver gestalten wollte.",
+        founder: " Initiator des Baus war der deutsche Unternehmer und Heimatforscher Bruno Rüde, der die Nibelungensage bekannt machen und den Drachenfels für Touristen attraktiver gestalten wollte.",
         tickets_and_entry: {
             title: "Praktische Informationen",
             items: [
-                { bold: "Öffnungszeiten:", text: "Vom 15. März bis 31. Oktober täglich von 10:30 bis 18:00 Uhr. Vom 1. November bis 14. März an Wochenenden, Feiertagen und in den Weihnachtsferien von 11:00 bis 16:00 Uhr. Am 24. Dezember geschlossen." },
-                { bold: "Eintrittspreise (2026):", text: "Erwachsene – 6 €. Kinder (4–14 Jahre) – 4 €. Schüler ab 14 Jahren – 5 €. Studenten – 5 €. Menschen mit Behinderung – 5 €. Gruppen ab 10 Personen: Erwachsene – 5 €, Kinder – 3 € pro Person." },
-                { bold: "Zusätzliche Informationen:", text: "Der Besuch wird häufig mit einer Fahrt auf den Drachenfels und dem Besuch der Drachenhöhle kombiniert. Es wird empfohlen, die aktuellen Öffnungszeiten auf der offiziellen Website zu prüfen." }
+                { bold: "Öffnungszeiten:", text: "<br>Vom 15. März bis 31. <br>Oktober täglich von 10:30 bis 18:00 Uhr. <br>Vom 1. November bis 14. März an Wochenenden, <br>Feiertagen und in den Weihnachtsferien von 11:00 bis 16:00 Uhr. <br>Am 24. Dezember geschlossen." },
+                { bold: "Eintrittspreise (2026):", text: "<br>Erwachsene – 6 €. <br>Kinder (4–14 Jahre) – 4 €. <br>Schüler ab 14 Jahren – 5 €. <br>Studenten – 5 €. <br>Menschen mit Behinderung – 5 €. <br>Gruppen ab 10 Personen: Erwachsene – 5 €, Kinder – 3 € pro Person." },
+                { bold: "Zusätzliche Informationen:", text: "der Besuch wird häufig mit einer Fahrt auf den Drachenfels und dem Besuch der Drachenhöhle kombiniert. Es wird empfohlen, die aktuellen Öffnungszeiten auf der offiziellen Website zu prüfen." }
             ]
         },
         short_description: "Die Nibelungenhalle ist ein 1913 erbautes Museum auf dem Gipfel des Drachenfels, das der deutschen Heldensage von den Nibelungen und den Drachenlegenden gewidmet ist. Das Gebäude wurde im romantischen Stil errichtet und sollte Besuchern die Welt der mittelalterlichen Mythen näherbringen. In unmittelbarer Nähe befindet sich die Drachenhöhle – eine kleine interaktive Ausstellung, die besonders bei Familien mit Kindern beliebt ist. Der Besuch der Nibelungenhalle wird häufig mit einer Wanderung oder einer Fahrt auf den Drachenfels kombiniert.",
@@ -1776,7 +2173,7 @@ const datas = [
             description: "Die Nibelungenhalle ist ein 1913 erbautes Museum auf dem Drachenfels, das der Nibelungensage und Drachenlegenden gewidmet ist. In der Nähe befindet sich die Drachenhöhle.",
             ogTitle: "Nibelungenhalle auf dem Drachenfels",
             ogDescription: "Besuchen Sie die Nibelungenhalle – ein Museum der Mythen und Legenden mit Blick auf das Rheintal und die Drachenhöhle.",
-            ogImage: "https://our-travels.info/new/foto/Germany/nrw/koln/Rhein-Sieg-Kreis/konigswinter/drachenfels/004.jpg"
+            ogImage: "https://our-travels.info/foto/Germany/nrw/koln/Rhein-Sieg-Kreis/konigswinter/drachenfels/004.jpg"
         }
     },
     {
@@ -1829,7 +2226,7 @@ const datas = [
             description: "Der Reptile Zoo auf dem Drachenfels ist ein zoologischer Park, in dem man Schlangen, Eidechsen, Schildkröten und seltene exotische Tiere sehen sowie an interaktiven Vorführungen und Bildungsprogrammen teilnehmen kann.",
             ogTitle: "Reptilienzoo Drachenfels",
             ogDescription: "Besuchen Sie den Reptile Zoo auf dem Drachenfels – ein Zoo mit seltenen Reptilien, interaktiven Fütterungs‑Vorführungen und Bildungsprogrammen für Kinder und Erwachsene.",
-            ogImage: "https://our-travels.info/new/foto/Germany/nrw/koln/Rhein-Sieg-Kreis/konigswinter/drachenfels/005.jpg"
+            ogImage: "https://our-travels.info/foto/Germany/nrw/koln/Rhein-Sieg-Kreis/konigswinter/drachenfels/005.jpg"
         }
     },
     {
@@ -1888,7 +2285,7 @@ const datas = [
             description: "Die Abtei Heisterbach – ehemaliges Zisterzienserkloster aus dem 12. Jahrhundert im Heisterbachtal nahe Königswinter. Geschichte, Bedeutung und Besuch des historischen Komplexes.",
             ogTitle: "Abtei Heisterbach – mittelalterliches Kloster im Heisterbachtal",
             ogDescription: "Die historische Abtei Heisterbach – eines der atmosphärischsten Zeugnisse mittelalterlicher Klosterarchitektur in der Region Siebengebirge, unweit von Königswinter.",
-            ogImage: "https://our-travels.info/new/foto/Germany/nrw/koln/Rhein-Sieg-Kreis/konigswinter/heisterbach/001.jpg"
+            ogImage: "https://our-travels.info/foto/Germany/nrw/koln/Rhein-Sieg-Kreis/konigswinter/heisterbach/001.jpg"
         }
     },
     {
@@ -1930,7 +2327,7 @@ const datas = [
             description: "Entdecken Sie die beeindruckenden Ruinen des Chors der Abtei Heisterbach: Geschichte, Architektur und einzigartige Überreste des mittelalterlichen Klosters im Siebengebirge.",
             ogTitle: "Ruinen des Chors der Abtei Heisterbach",
             ogDescription: "Besuchen Sie die Ruinen des Chors der Abtei Heisterbach und tauchen Sie ein in die Atmosphäre der mittelalterlichen Klostergeschichte im Herzen des Siebengebirges.",
-            ogImage: "https://our-travels.info/new/foto/Germany/nrw/koln/Rhein-Sieg-Kreis/konigswinter/heisterbach/001.jpg"
+            ogImage: "https://our-travels.info/foto/Germany/nrw/koln/Rhein-Sieg-Kreis/konigswinter/heisterbach/001.jpg"
         }
     },
     {
@@ -1974,7 +2371,7 @@ const datas = [
             description: "Die Kirche St. Peter in Heisterbach ist eine katholische Kirche von 1953–1956 auf dem Gelände der ehemaligen Abtei. Geschichte, Architektur, Glasfenster und Besuch in Heisterbach, Königswinter.",
             ogTitle: "Kirche St. Peter in Heisterbach",
             ogDescription: "Aktive katholische Kirche auf dem Gelände der ehemaligen Abtei Heisterbach. Erbaut 1953-1956 mit einem einzigartigen Tympanon aus dem 13. Jahrhundert und beeindruckenden Glasfenstern.",
-            ogImage: "https://our-travels.info/new/foto/Germany/nrw/koln/Rhein-Sieg-Kreis/konigswinter/heisterbach/005.jpg"
+            ogImage: "https://our-travels.info/foto/Germany/nrw/koln/Rhein-Sieg-Kreis/konigswinter/heisterbach/005.jpg"
         }
     },
 
@@ -2027,7 +2424,7 @@ const datas = [
             description: "Die Altstadt von Lüdenscheid ist der mittelalterliche Teil der Stadt mit historischen Gebäuden des 18.–19. Jahrhunderts, der Erlöserkirche, Resten der Stadtmauer und dem historischen Museum. Schlendern Sie durch die gemütlichen Gassen und spüren Sie die Atmosphäre vergangener Jahrhunderte.",
             ogTitle: "Altstadt von Lüdenscheid",
             ogDescription: "Besuchen Sie die Altstadt von Lüdenscheid – den historischen Teil der Stadt mit barocken Häusern, der Erlöserkirche, dem historischen Museum und den Resten der mittelalterlichen Stadtmauer.",
-            ogImage: "https://our-travels.info/new/foto/Germany/nrw/arnsberg/Märkischer-Kreis/luedenscheid/001.JPG"
+            ogImage: "https://our-travels.info/foto/Germany/nrw/arnsberg/Märkischer-Kreis/luedenscheid/001.JPG"
         }
     },
     {
@@ -2084,7 +2481,7 @@ const datas = [
             description: "Die Erlöserkirche (Erlöserkirche) ist die älteste Kirche Lüdenscheids, errichtet im 12. Jahrhundert mit klassizistischer Fassade, Emporen und lutherischem Altar. Besuchen Sie dieses historische Gotteshaus im Zentrum der Altstadt und spüren Sie die Atmosphäre vergangener Jahrhunderte.",
             ogTitle: "Erlöserkirche, Lüdenscheid",
             ogDescription: "Entdecken Sie die Erlöserkirche in Lüdenscheid – ein historisches Gotteshaus mit Turm, Emporen und lutherischem Altar, ein architektonisches Wahrzeichen der Altstadt.",
-            ogImage: "https://our-travels.info/new/foto/Germany/nrw/arnsberg/Märkischer-Kreis/luedenscheid/erloeserkirche_luedenscheid/001.JPG"
+            ogImage: "https://our-travels.info/foto/Germany/nrw/arnsberg/Märkischer-Kreis/luedenscheid/erloeserkirche_luedenscheid/001.JPG"
         }
     },
     {
@@ -2114,7 +2511,7 @@ const datas = [
             description: "Der Brunnen am Graf-Engelbert-Platz entstand 1982 im Zuge der Altstadtsanierung. Er gilt als eines der Wahrzeichen des historischen Zentrums von Lüdenscheid und ist mit der Figur eines Herolds geschmückt, die auf die Stadtgründung durch Graf Engelbert I. verweist.",
             ogTitle: "Brunnen am Graf-Engelbert-Platz, Lüdenscheid",
             ogDescription: "Besuchen Sie den Brunnen am Graf-Engelbert-Platz in Lüdenscheid – ein historisches Objekt der Altstadt, das mit der Stadtgründung und der Erneuerung des historischen Zentrums verbunden ist.",
-            ogImage: "https://our-travels.info/new/foto/Germany/nrw/arnsberg/Märkischer-Kreis/luedenscheid/altstadt_luedenscheid/001.JPG"
+            ogImage: "https://our-travels.info/foto/Germany/nrw/arnsberg/Märkischer-Kreis/luedenscheid/altstadt_luedenscheid/001.JPG"
         }
     },
     {
@@ -2155,7 +2552,7 @@ const datas = [
             description: "Der zentrale Platz von Lüdenscheid (Rathausplatz) ist der wichtigste öffentliche Raum der Stadt neben dem Rathaus. Hier finden Märkte, städtische Veranstaltungen und Treffen der Bewohner statt, und der Platz dient als Ausgangspunkt für Spaziergänge im Zentrum.",
             ogTitle: "Zentraler Platz von Lüdenscheid",
             ogDescription: "Der zentrale Platz von Lüdenscheid (Rathausplatz) ist der zentrale Stadtplatz neben dem Rathaus, ein Ort für Märkte, Feste und wichtige städtische Veranstaltungen.",
-            ogImage: "https://our-travels.info/new/foto/Germany/nrw/arnsberg/Märkischer-Kreis/luedenscheid/rathausplatz_lüdenscheid/001.JPG"
+            ogImage: "https://our-travels.info/foto/Germany/nrw/arnsberg/Märkischer-Kreis/luedenscheid/rathausplatz_lüdenscheid/001.JPG"
         }
     },
     {
@@ -2195,7 +2592,7 @@ const datas = [
             description: "Der Sternplatz ist einer der zentralen Plätze von Lüdenscheid, gelegen in der Fußgängerzone des historischen Zentrums. Der Platz ist ein wichtiger Treffpunkt für das städtische Leben, Spaziergänge und Veranstaltungen.",
             ogTitle: "Sternplatz in Lüdenscheid",
             ogDescription: "Der Sternplatz ist der zentrale Stadtplatz im historischen Zentrum von Lüdenscheid, Teil der Fußgängerzone und ein wichtiger öffentlicher Raum der Stadt.",
-            ogImage: "https://our-travels.info/new/foto/Germany/nrw/arnsberg/Märkischer-Kreis/luedenscheid/sternplatz/003.jpg"
+            ogImage: "https://our-travels.info/foto/Germany/nrw/arnsberg/Märkischer-Kreis/luedenscheid/sternplatz/003.jpg"
         }
     },
     {
@@ -2226,7 +2623,7 @@ const datas = [
             description: "Das Denkmal von Onkel Willi auf dem Sternplatz in Lüdenscheid ist eine Bronzeskulptur, die einen typischen Einwohner der Stadt mit Hund darstellt. Die Skulptur ist ein inoffizielles Wahrzeichen der Stadt und ein beliebter Treffpunkt für Fotos und Begegnungen.",
             ogTitle: "Denkmal von Onkel Willi in Lüdenscheid",
             ogDescription: "Die Bronzeskulptur von Onkel Willi auf dem Sternplatz im historischen Zentrum von Lüdenscheid verkörpert Freundlichkeit und das alltägliche Leben der Stadtbewohner. Beliebter Ort bei Touristen und Einwohnern.",
-            ogImage: "https://our-travels.info/new/foto/Germany/nrw/arnsberg/Märkischer-Kreis/luedenscheid/sternplatz/001.JPG"
+            ogImage: "https://our-travels.info/foto/Germany/nrw/arnsberg/Märkischer-Kreis/luedenscheid/sternplatz/001.JPG"
         }
     },
     {
@@ -2257,7 +2654,7 @@ const datas = [
             description: "Der Brunnen auf dem Sternplatz in Lüdenscheid ist ein dekoratives Wasserbecken, geschaffen Ende der 1970er Jahre vom Bildhauer Kurt Toni Neumann. Um den Brunnen befinden sich Tafeln mit den Namen der Partnerstädte: Brayhaus, Taganrog, Den Helder, Löwen, Mysłowice und Romilly-sur-Seine. Der Brunnen ist ein beliebter Ort für Erholung und Spaziergänge auf dem Platz.",
             ogTitle: "Brunnen auf dem Sternplatz in Lüdenscheid",
             ogDescription: "Dekorativer Brunnen auf dem Sternplatz im historischen Zentrum von Lüdenscheid, umgeben von Tafeln mit den Namen der Partnerstädte. Treffpunkt und Erholungsort für Einwohner und Besucher.",
-            ogImage: "https://our-travels.info/new/foto/Germany/nrw/arnsberg/Märkischer-Kreis/luedenscheid/sternplatz/003.jpg"
+            ogImage: "https://our-travels.info/foto/Germany/nrw/arnsberg/Märkischer-Kreis/luedenscheid/sternplatz/003.jpg"
         }
     },
     {
@@ -2315,14 +2712,14 @@ const datas = [
             ]
         },
         construction_period: "Ende der 1980er Jahre. ",
-        architects: "Ursprüngliche Gebäude: lokale Architekten Anfang des 20. Jahrhunderts (1910 – Verwaltungsgebäude). ",
-        founder: " Das Museum wurde von der Stadtverwaltung Lüdenscheids gegründet. ",
+        architects: " Ursprüngliche Gebäude: lokale Architekten Anfang des 20. Jahrhunderts (1910 – Verwaltungsgebäude). ",
+        founder: " das Museum wurde von der Stadtverwaltung Lüdenscheids gegründet. ",
         meta: {
             title: "Geschichtsmuseum Lüdenscheid – Industrie‑ und Technikgeschichte der Stadt",
             description: "Entdecken Sie das Geschichtsmuseum Lüdenscheid: Schmalspurzug, Zeppelin‑Modelle, Feuerwehrtechnik, Sammlung historischer Karten und Artefakte. Besuchen Sie das Museum und das Museumscafé im modernen Stadtkomplex.",
             ogTitle: "Geschichtsmuseum Lüdenscheid – einzigartige Exponate und Sammlungen",
             ogDescription: "Besuchen Sie das Geschichtsmuseum Lüdenscheid: vom Schmalspurzug bis zur Sammlung historischer Knöpfe, Karten und Stadtmodelle. Das Museum und das Museumscafé erwarten Sie im kulturellen Komplex der Stadt.",
-            ogImage: "https://our-travels.info/new/foto/Germany/nrw/arnsberg/Märkischer-Kreis/luedenscheid/history_museum_luedenscheid/001.JPG"
+            ogImage: "https://our-travels.info/foto/Germany/nrw/arnsberg/Märkischer-Kreis/luedenscheid/history_museum_luedenscheid/001.JPG"
         }
     },
 

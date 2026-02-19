@@ -75,7 +75,7 @@ const datas = [
             description: "Трір: історія, географія, пам’ятки, відомі жителі та цікаві факти про найстаріше місто Німеччини.",
             ogTitle: "Трір – інформація про місто",
             ogDescription: "Детальна інформація про Трір: культура, історія, відомі жителі та цікаві факти.",
-            ogImage: "https://our-travels.info/new/foto/Germany/rheinland-pfalz/trier-city/portaNigra_trier/001.JPG"
+            ogImage: "https://our-travels.info/foto/Germany/rheinland-pfalz/trier-city/portaNigra_trier/001.JPG"
         }
     },
 

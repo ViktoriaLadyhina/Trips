@@ -27,6 +27,6 @@ export const datas = {
                 description: "Wir berichten über Reisen, die besten Routen und Erlebnisse.",
                 ogTitle: "Unsere Reisen – Webseite über Reisen",
                 ogDescription: "Die besten Reisen und Tipps für Touristen.",
-                ogImage: "https://site.com/preview.jpg",
+                ogImage: "https://our-travels.info/",
         }
 }

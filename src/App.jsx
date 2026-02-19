@@ -10,6 +10,7 @@ import AttractionsList from './page/attractions/AttractionsList';
 import Attraction from './page/attraction/Attraction';
 import SearchPage from './page/searchPage/SearchPage';
 import AttractionForm from './components/forma/AttractionForm';
+import Event from './page/events/Events'
 import Map from './page/map/Map'
 
 function App() {
@@ -36,6 +37,8 @@ function App() {
           <Route path="/:countryPath/:regionsPath/:districtPath/:cityPath/attractions" element={<AttractionsList />} />
 
           <Route path="/:countryPath/:regionsPath/:districtPath/:cityPath/attractions/:attractionsPath" element={<Attraction />} />
+
+          <Route path="/:countryPath/:regionsPath/:districtPath/:cityPath/events/:eventPath" element={<Event />} />
 
           <Route path="/search" element={<SearchPage />} />
         </Route>

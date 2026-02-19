@@ -20,6 +20,8 @@ function useCityFullData() {
   const [attractions, setAttractions] = useState([]);
   const [city, setCity] = useState(null);
 
+  const [events, setEvents] = useState([]);
+
   useEffect(() => {
     if (!lang) return; // ждем язык
 
@@ -111,6 +113,31 @@ function useCityFullData() {
         .catch(() => console.warn("Attractions data file not found"));
     }
 
+  // --- мероприятия ---
+const modulesEvents = import.meta.glob("../datas/*/*/*-events.js");
+const keyEvents = Object.keys(modulesEvents).find(path =>
+  path.toLowerCase().includes(`${lang}/${countryPath}/${regionsPath}-events.js`)
+);
+
+if (keyEvents) {
+  modulesEvents[keyEvents]()
+    .then(module => {
+
+      let filteredEvents = [];
+
+      if (cityPath) {
+        filteredEvents = module.default.filter(e => e.cities?.includes(cityPath));
+      } else if (districtPath) {
+        filteredEvents = module.default.filter(e => e.districtPath === districtPath);
+      } else if (regionsPath) {
+        filteredEvents = module.default.filter(e => e.regionsPath === regionsPath);
+      }
+
+      setEvents(filteredEvents);
+    })
+    .catch(() => console.warn("Events data file not found"));
+}
+
     setCountry(foundCountry);
     setRegion(foundRegion);
     setDistrict(foundDistrict);
@@ -119,6 +146,8 @@ function useCityFullData() {
     setError(null);
 
   }, [lang, countryPath, regionsPath, districtPath, cityPath]);
+
+
 
   return {
     lang,
@@ -129,6 +158,7 @@ function useCityFullData() {
     city,
     cityData,
     attractions,
+    events, 
     error
   };
 }

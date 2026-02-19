@@ -49,7 +49,7 @@ export const Fotos = {
         { path: "Germany/nrw/koln/koln-city/koln-cathedral/005.jpg", title: { ru: "Кёльнский собор - 2025", ua: "Кельнський собор - 2025", de: "Kölner Dom - 2025" } },
       ],
       guerzenich_koln: [
-        { path: "Germany/nrw/koln/koln-city/guerzenich_koln/001.jpg", title: { ru: "Гюрцених (фото взято с интернета)", ua: "Гюрценіх (фото взято з Інтернету)", de: "Gürzenich (Foto aus dem Internet)" } },
+        { path: "Germany/nrw/koln/koln-city/guerzenich_koln/001.jpg", title: { ru: "Гюрцених, 2026", ua: "Гюрценіх, 2026", de: "Gürzenich, 2026" } },
       ],
       'roemisch-germanisches-museum': [
         { path: "Germany/nrw/koln/koln-city/roemisch-germanisches-museum/001.jpg", title: { ru: "Римско-германский музей - 2025", ua: "Римсько-германський музей - 2025", de: "Römisch-Germanisches Museum - 2025" } }
@@ -85,6 +85,12 @@ export const Fotos = {
       flora_garten_koln: [
         { path: "Germany/nrw/koln/koln-city/flora_garten_koln/001.jpg", title: { ru: "Ботанический сад Флора, 2025", ua: "Ботанічний сад Флора, 2025", de: "Botanischer Garten Flora, 2025" } },
         { path: "Germany/nrw/koln/koln-city/flora_garten_koln/002.jpg", title: { ru: "Ботанический сад Флора, 2025", ua: "Ботанічний сад Флора, 2025", de: "Botanischer Garten Flora, 2025" } },
+        { path: "Germany/nrw/koln/koln-city/flora_garten_koln/003.jpg", title: { ru: "Ботанический сад Флора, 2025", ua: "Ботанічний сад Флора, 2025", de: "Botanischer Garten Flora, 2025" } },
+        { path: "Germany/nrw/koln/koln-city/flora_garten_koln/004.jpg", title: { ru: "Ботанический сад Флора, 2025", ua: "Ботанічний сад Флора, 2025", de: "Botanischer Garten Flora, 2025" } },
+        { path: "Germany/nrw/koln/koln-city/flora_garten_koln/005.jpg", title: { ru: "Ботанический сад Флора, 2025", ua: "Ботанічний сад Флора, 2025", de: "Botanischer Garten Flora, 2025" } },
+        { path: "Germany/nrw/koln/koln-city/flora_garten_koln/006.jpg", title: { ru: "Ботанический сад Флора, 2025", ua: "Ботанічний сад Флора, 2025", de: "Botanischer Garten Flora, 2025" } },
+        { path: "Germany/nrw/koln/koln-city/flora_garten_koln/007.jpg", title: { ru: "Ботанический сад Флора, 2025", ua: "Ботанічний сад Флора, 2025", de: "Botanischer Garten Flora, 2025" } },
+        { path: "Germany/nrw/koln/koln-city/flora_garten_koln/008.jpg", title: { ru: "Ботанический сад Флора, 2025", ua: "Ботанічний сад Флора, 2025", de: "Botanischer Garten Flora, 2025" } },
       ],
       rheinpark_koln: [
         { path: "Germany/nrw/koln/koln-city/rheinpark_koln/001.jpg", title: { ru: "Рейнский парк (фото взято с википедии)", ua: "Рейнський парк (фото взято з Вікіпедії)", de: "Rheinpark (Foto von Wikipedia entnommen)" } },
@@ -108,7 +114,27 @@ export const Fotos = {
         { path: "Germany/nrw/koln/koln-city/rheinpark_koln/007.jpg", title: { ru: "Руины римского форта Дивития в Кёльне, 2025", ua: "Руїни римського форту Дивітія в Кельні, 2025", de: "Ruinen des römischen Forts Divitia in Köln, 2025" } },
       ],
       museum_schnuetgen_koln: [
-        { path: "Germany/nrw/koln/koln-city/schnuetgen/001.jpg", title: { ru: "Музей Шнютгена (фото взято с интернета)", ua: "Музей Шнютгена (фото взято з Інтернету)", de: "Museum Schnütgen (Foto aus dem Internet)" } },
+        { path: "Germany/nrw/koln/koln-city/schnuetgen/001.jpg", title: { ru: "Музей Шнютгена, 2026", ua: "Музей Шнютгена, 2026", de: "Museum Schnütgen, 2026" } },
+        { path: "Germany/nrw/koln/koln-city/schnuetgen/002.jpg", title: { ru: "Музей Шнютгена, 2026", ua: "Музей Шнютгена, 2026", de: "Museum Schnütgen, 2026" } },
+        { path: "Germany/nrw/koln/koln-city/schnuetgen/003.jpg", title: { ru: "Музей Шнютгена, 2026", ua: "Музей Шнютгена, 2026", de: "Museum Schnütgen, 2026" } },
+      ],
+      karneval_koln: [
+        { path: "Germany/nrw/koln/koln-city/karneval/001.jpg", title: { ru: "Кёльнский карнавал (фото взято с интернета)", ua: "Кельнський карнавал (фото взято з Інтернету)", de: "Kölner Karneval (Foto aus dem Internet)" } },
+      ],
+      dufthaus_4711_koln: [
+        { path: "Germany/nrw/koln/koln-city/dufthaus_4711/001.jpg", title: { ru: "Дом ароматов 4711 (фото взято с интернета)", ua: "Будинок одеколону 4711 (фото взято з Інтернету)", de: "Duft-Haus 4711 (Foto aus dem Internet)" } },
+      ],
+      skulpturenpark_koln: [
+        { path: "Germany/nrw/koln/koln-city/skulpturenpark/001.jpg", title: { ru: "Парк скульптур в Кёльне (фото взято с интернета)", ua: "Парк скульптур у Кельні (фото взято з Інтернету)", de: "Skulpturenpark in Köln (Foto aus dem Internet)" } },
+      ],
+      rautenstrauch_joest_museum_koln: [
+        { path: "Germany/nrw/koln/koln-city/rautenstrauch_joest_museum/001.jpg", title: { ru: "Музей Раутенштраух-Йоста, 2026", ua: "Музей Раутенштраух-Йост, 2026", de: "Rautenstrauch-Joest-Museum, 2026" } },
+      ],
+      finkens_garten_koln: [
+        { path: "Germany/nrw/koln/koln-city/finkens_garten/001.jpg", title: { ru: "Экологический сад Финкенсгартен (фото взято с интернета)", ua: "Екологічний сад Фінкенсгартен (фото взято з Інтернету)", de: "Finkens Garten (Foto aus dem Internet)" } },
+      ],
+      makk_museum_koln: [
+        { path: "Germany/nrw/koln/koln-city/makk_museum/001.JPG", title: { ru: "Музей прикладного искусства (фото взято с интернета)", ua: "Музей прикладного мистецтва (фото взято з Інтернету)", de: "Museum für angewandte Kunst (Foto aus dem Internet)" } },
       ]
     },
     bruhl: {
@@ -141,31 +167,31 @@ export const Fotos = {
         { path: "Germany/nrw/koln/Rhein-Erft-Kreis/bruhl/max_ernst_museum/Max-Ernst-Museum.jpg", title: { ru: "Музей Макса Эрнста (фото взято с интернета)", ua: "Музей Макса Ернста (фото взято з Інтернету)", de: "Max Ernst Museum (Foto aus dem Internet)" } }
       ],
       bruhl_palaces: [
-        { path: "Germany/nrw/koln/Rhein-Erft-Kreis/bruhl/bruhel_palaces/001.jpg", title: { ru: "Дворцы Брюля: Аугустусбург  - 2023", ua: "Палаци Брюля: Аугустусбург - 2023", de: "Brühler Schlösser: Augustusburg - 2023" } },
-        { path: "Germany/nrw/koln/Rhein-Erft-Kreis/bruhl/bruhel_palaces/013.jpg", title: { ru: "Дворцы Брюля: Аугустусбург  - 2022", ua: "Палаци Брюля: Аугустусбург - 2022", de: "Brühler Schlösser: Augustusburg - 2022" } },
-        { path: "Germany/nrw/koln/Rhein-Erft-Kreis/bruhl/bruhel_palaces/014.jpg", title: { ru: "Дворцы Брюля: Аугустусбург  - 2022", ua: "Палаци Брюля: Аугустусбург - 2022", de: "Brühler Schlösser: Augustusburg - 2022" } },
-        { path: "Germany/nrw/koln/Rhein-Erft-Kreis/bruhl/bruhel_palaces/002.jpg", title: { ru: "Дворцы Брюля: Аугустусбург  - 2023", ua: "Палаци Брюля: Аугустусбург - 2023", de: "Brühler Schlösser: Augustusburg - 2023" } },
-        { path: "Germany/nrw/koln/Rhein-Erft-Kreis/bruhl/bruhel_palaces/003.jpg", title: { ru: "Дворцы Брюля: Аугустусбург  - 2023", ua: "Палаци Брюля: Аугустусбург - 2023", de: "Brühler Schlösser: Augustusburg - 2023" } },
-        { path: "Germany/nrw/koln/Rhein-Erft-Kreis/bruhl/bruhel_palaces/004.jpg", title: { ru: "Дворцы Брюля: Аугустусбург  - 2023", ua: "Палаци Брюля: Аугустусбург - 2023", de: "Brühler Schlösser: Augustusburg - 2023" } },
-        { path: "Germany/nrw/koln/Rhein-Erft-Kreis/bruhl/bruhel_palaces/005.jpg", title: { ru: "Дворцы Брюля: Аугустусбург  - 2023", ua: "Палаци Брюля: Аугустусбург - 2023", de: "Brühler Schlösser: Augustusburg - 2023" } },
-        { path: "Germany/nrw/koln/Rhein-Erft-Kreis/bruhl/bruhel_palaces/006.jpg", title: { ru: "Дворцы Брюля: Аугустусбург  - 2023", ua: "Палаци Брюля: Аугустусбург - 2023", de: "Brühler Schlösser: Augustusburg - 2023" } },
-        { path: "Germany/nrw/koln/Rhein-Erft-Kreis/bruhl/bruhel_palaces/007.jpg", title: { ru: "Дворцы Брюля: Аугустусбург  - 2023", ua: "Палаци Брюля: Аугустусбург - 2023", de: "Brühler Schlösser: Augustusburg - 2023" } },
-        { path: "Germany/nrw/koln/Rhein-Erft-Kreis/bruhl/bruhel_palaces/008.jpg", title: { ru: "Дворцы Брюля: Аугустусбург  - 2023", ua: "Палаци Брюля: Аугустусбург - 2023", de: "Brühler Schlösser: Augustusburg - 2023" } },
-        { path: "Germany/nrw/koln/Rhein-Erft-Kreis/bruhl/bruhel_palaces/009.jpg", title: { ru: "Дворцы Брюля: Аугустусбург  - 2023", ua: "Палаци Брюля: Аугустусбург - 2023", de: "Brühler Schlösser: Augustusburg - 2023" } },
-        { path: "Germany/nrw/koln/Rhein-Erft-Kreis/bruhl/bruhel_palaces/010.jpg", title: { ru: "Дворцы Брюля: Фалькенлюст  - 2023", ua: "Палаци Брюля: Фалькенлюст - 2023", de: "Brühler Schlösser: Falkenlust - 2023" } },
-        { path: "Germany/nrw/koln/Rhein-Erft-Kreis/bruhl/bruhel_palaces/011.jpg", title: { ru: "Дворцы Брюля: Фалькенлюст  - 2023", ua: "Палаци Брюля: Фалькенлюст - 2023", de: "Brühler Schlösser: Falkenlust - 2023" } },
-        { path: "Germany/nrw/koln/Rhein-Erft-Kreis/bruhl/bruhel_palaces/012.jpg", title: { ru: "Дворцы Брюля: Фалькенлюст  - 2023", ua: "Палаци Брюля: Фалькенлюст - 2023", de: "Brühler Schlösser: Falkenlust - 2023" } },
-        { path: "Germany/nrw/koln/Rhein-Erft-Kreis/bruhl/bruhel_palaces/015.jpg", title: { ru: "Парк дворцов Брюля  - 2022", ua: "Парк палаців Брюля - 2022", de: "Brühlsche Palastgärten - 2022" } },
-        { path: "Germany/nrw/koln/Rhein-Erft-Kreis/bruhl/bruhel_palaces/016.jpg", title: { ru: "Парк дворцов Брюля  - 2022", ua: "Парк палаців Брюля - 2022", de: "Brühlsche Palastgärten - 2022" } },
-        { path: "Germany/nrw/koln/Rhein-Erft-Kreis/bruhl/bruhel_palaces/017.jpg", title: { ru: "Парк дворцов Брюля  - 2022", ua: "Парк палаців Брюля - 2022", de: "Brühlsche Palastgärten - 2022" } },
-        { path: "Germany/nrw/koln/Rhein-Erft-Kreis/bruhl/bruhel_palaces/018.jpg", title: { ru: "Дворцы Брюля: парк  - 2022", ua: "Парк палаців Брюля - 2022", de: "Brühlsche Palastgärten - 2022" } },
+        { path: "Germany/nrw/koln/Rhein-Erft-Kreis/bruhl/bruhl_palaces/001.jpg", title: { ru: "Дворцы Брюля: Аугустусбург  - 2023", ua: "Палаци Брюля: Аугустусбург - 2023", de: "Brühler Schlösser: Augustusburg - 2023" } },
+        { path: "Germany/nrw/koln/Rhein-Erft-Kreis/bruhl/bruhl_palaces/013.jpg", title: { ru: "Дворцы Брюля: Аугустусбург  - 2022", ua: "Палаци Брюля: Аугустусбург - 2022", de: "Brühler Schlösser: Augustusburg - 2022" } },
+        { path: "Germany/nrw/koln/Rhein-Erft-Kreis/bruhl/bruhl_palaces/014.jpg", title: { ru: "Дворцы Брюля: Аугустусбург  - 2022", ua: "Палаци Брюля: Аугустусбург - 2022", de: "Brühler Schlösser: Augustusburg - 2022" } },
+        { path: "Germany/nrw/koln/Rhein-Erft-Kreis/bruhl/bruhl_palaces/002.jpg", title: { ru: "Дворцы Брюля: Аугустусбург  - 2023", ua: "Палаци Брюля: Аугустусбург - 2023", de: "Brühler Schlösser: Augustusburg - 2023" } },
+        { path: "Germany/nrw/koln/Rhein-Erft-Kreis/bruhl/bruhl_palaces/003.jpg", title: { ru: "Дворцы Брюля: Аугустусбург  - 2023", ua: "Палаци Брюля: Аугустусбург - 2023", de: "Brühler Schlösser: Augustusburg - 2023" } },
+        { path: "Germany/nrw/koln/Rhein-Erft-Kreis/bruhl/bruhl_palaces/004.jpg", title: { ru: "Дворцы Брюля: Аугустусбург  - 2023", ua: "Палаци Брюля: Аугустусбург - 2023", de: "Brühler Schlösser: Augustusburg - 2023" } },
+        { path: "Germany/nrw/koln/Rhein-Erft-Kreis/bruhl/bruhl_palaces/005.jpg", title: { ru: "Дворцы Брюля: Аугустусбург  - 2023", ua: "Палаци Брюля: Аугустусбург - 2023", de: "Brühler Schlösser: Augustusburg - 2023" } },
+        { path: "Germany/nrw/koln/Rhein-Erft-Kreis/bruhl/bruhl_palaces/006.jpg", title: { ru: "Дворцы Брюля: Аугустусбург  - 2023", ua: "Палаци Брюля: Аугустусбург - 2023", de: "Brühler Schlösser: Augustusburg - 2023" } },
+        { path: "Germany/nrw/koln/Rhein-Erft-Kreis/bruhl/bruhl_palaces/007.jpg", title: { ru: "Дворцы Брюля: Аугустусбург  - 2023", ua: "Палаци Брюля: Аугустусбург - 2023", de: "Brühler Schlösser: Augustusburg - 2023" } },
+        { path: "Germany/nrw/koln/Rhein-Erft-Kreis/bruhl/bruhl_palaces/008.jpg", title: { ru: "Дворцы Брюля: Аугустусбург  - 2023", ua: "Палаци Брюля: Аугустусбург - 2023", de: "Brühler Schlösser: Augustusburg - 2023" } },
+        { path: "Germany/nrw/koln/Rhein-Erft-Kreis/bruhl/bruhl_palaces/009.jpg", title: { ru: "Дворцы Брюля: Аугустусбург  - 2023", ua: "Палаци Брюля: Аугустусбург - 2023", de: "Brühler Schlösser: Augustusburg - 2023" } },
+        { path: "Germany/nrw/koln/Rhein-Erft-Kreis/bruhl/bruhl_palaces/010.jpg", title: { ru: "Дворцы Брюля: Фалькенлюст  - 2023", ua: "Палаци Брюля: Фалькенлюст - 2023", de: "Brühler Schlösser: Falkenlust - 2023" } },
+        { path: "Germany/nrw/koln/Rhein-Erft-Kreis/bruhl/bruhl_palaces/011.jpg", title: { ru: "Дворцы Брюля: Фалькенлюст  - 2023", ua: "Палаци Брюля: Фалькенлюст - 2023", de: "Brühler Schlösser: Falkenlust - 2023" } },
+        { path: "Germany/nrw/koln/Rhein-Erft-Kreis/bruhl/bruhl_palaces/012.jpg", title: { ru: "Дворцы Брюля: Фалькенлюст  - 2023", ua: "Палаци Брюля: Фалькенлюст - 2023", de: "Brühler Schlösser: Falkenlust - 2023" } },
+        { path: "Germany/nrw/koln/Rhein-Erft-Kreis/bruhl/bruhl_palaces/015.jpg", title: { ru: "Парк дворцов Брюля  - 2022", ua: "Парк палаців Брюля - 2022", de: "Brühlsche Palastgärten - 2022" } },
+        { path: "Germany/nrw/koln/Rhein-Erft-Kreis/bruhl/bruhl_palaces/016.jpg", title: { ru: "Парк дворцов Брюля  - 2022", ua: "Парк палаців Брюля - 2022", de: "Brühlsche Palastgärten - 2022" } },
+        { path: "Germany/nrw/koln/Rhein-Erft-Kreis/bruhl/bruhl_palaces/017.jpg", title: { ru: "Парк дворцов Брюля  - 2022", ua: "Парк палаців Брюля - 2022", de: "Brühlsche Palastgärten - 2022" } },
+        { path: "Germany/nrw/koln/Rhein-Erft-Kreis/bruhl/bruhl_palaces/018.jpg", title: { ru: "Дворцы Брюля: парк  - 2022", ua: "Парк палаців Брюля - 2022", de: "Brühlsche Palastgärten - 2022" } },
       ]
     },
     frechen: {
       gallery: [
         { path: "Germany/nrw/koln/Rhein-Erft-Kreis/frechen/johann_schmitz_platz_frechen/008.jpg", title: { ru: "Старая ратуша Фрехена, 2026", ua: "Стара ратуша Фрехена, 2026", de: "Altes Rathaus Frechen, 2026" } },
       ],
-      'keramion': [
+      keramion: [
         { path: "Germany/nrw/koln/Rhein-Erft-Kreis/frechen/keramion/frechen_keramion.jpg", title: { ru: "KERAMION – Центр современной и исторической керамики (фото взято с интернета)", ua: "KERAMION – Центр сучасної та історичної кераміки (фото взято з Інтернету)", de: "KERAMION – Zentrum für zeitgenössische und historische Keramik (Foto aus dem Internet)" } },
       ],
       'burg-bachem': [
@@ -271,7 +297,21 @@ export const Fotos = {
         { path: "Germany/nrw/koln/Rhein-Sieg-Kreis/konigswinter/heisterbach/007.jpg", title: { ru: "Церковь Святого Петра в Хайстербахе, 2026", ua: "Церква Святого Петра в Гайстербасі, 2026", de: "Kirche St. Peter in Heisterbach, 2026" } },
       ]
     },
-
+    monschau: {
+      gallery: [
+        { path: "Germany/nrw/koln/Aachen/monschau/002.jpg", title: { ru: "Моншау, 2025", ua: "Моншау, 2025", de: "Monschau, 2025" } },
+        { path: "Germany/nrw/koln/Aachen/monschau/001.jpg", title: { ru: "Моншау, 2025", ua: "Моншау, 2025", de: "Monschau, 2025" } },
+      ],
+      historic_center_monschau: [
+        { path: "Germany/nrw/koln/Aachen/monschau/001.jpg", title: { ru: "Старый город Моншау, 2025", ua: "Старе місто Моншау, 2025", de: "Altstadt Monschau, 2025" } },
+        { path: "Germany/nrw/koln/Aachen/monschau/002.jpg", title: { ru: "Старый город Моншау, 2025", ua: "Старе місто Моншау, 2025", de: "Altstadt Monschau, 2025" } },
+        { path: "Germany/nrw/koln/Aachen/monschau/003.jpg", title: { ru: "Старый город Моншау, 2025", ua: "Старе місто Моншау, 2025", de: "Altstadt Monschau, 2025" } },
+        { path: "Germany/nrw/koln/Aachen/monschau/004.jpg", title: { ru: "Старый город Моншау, 2025", ua: "Старе місто Моншау, 2025", de: "Altstadt Monschau, 2025" } },
+        { path: "Germany/nrw/koln/Aachen/monschau/005.jpg", title: { ru: "Старый город Моншау, 2025", ua: "Старе місто Моншау, 2025", de: "Altstadt Monschau, 2025" } },
+        { path: "Germany/nrw/koln/Aachen/monschau/006.jpg", title: { ru: "Старый город Моншау, 2025", ua: "Старе місто Моншау, 2025", de: "Altstadt Monschau, 2025" } },
+        { path: "Germany/nrw/koln/Aachen/monschau/007.jpg", title: { ru: "Старый город Моншау, 2025", ua: "Старе місто Моншау, 2025", de: "Altstadt Monschau, 2025" } },
+      ],
+    },
 
 
     // arnsberg
@@ -321,6 +361,15 @@ export const Fotos = {
       portaNigra_trier: [
         { path: "Germany/rheinland-pfalz/trier-city/portaNigra_trier/001.JPG", title: { ru: "Порта Нигра, 2024", ua: "Порта Нігра («Чорні ворота»), 2024", de: "Porta Nigra, 2024" } },
         { path: "Germany/rheinland-pfalz/trier-city/portaNigra_trier/002.JPG", title: { ru: "Порта Нигра, 2024", ua: "Порта Нігра («Чорні ворота»), 2024", de: "Porta Nigra, 2024" } },
+      ],
+      amphitheater_trier: [
+        { path: "Germany/rheinland-pfalz/trier-city/amphitheater/001.JPG", title: { ru: "Римский амфитеатр в Трире, 2024", ua: "Римський амфітеатр у Трірі, 2024", de: "Römischer Amphitheater in Trier, 2024" } },
+        { path: "Germany/rheinland-pfalz/trier-city/amphitheater/002.JPG", title: { ru: "Римский амфитеатр в Трире, 2024", ua: "Римський амфітеатр у Трірі, 2024", de: "Römischer Amphitheater in Trier, 2024" } },
+        { path: "Germany/rheinland-pfalz/trier-city/amphitheater/003.JPG", title: { ru: "Римский амфитеатр в Трире, 2024", ua: "Римський амфітеатр у Трірі, 2024", de: "Römischer Amphitheater in Trier, 2024" } },
+        { path: "Germany/rheinland-pfalz/trier-city/amphitheater/004.JPG", title: { ru: "Римский амфитеатр в Трире, 2024", ua: "Римський амфітеатр у Трірі, 2024", de: "Römischer Amphitheater in Trier, 2024" } },
+        { path: "Germany/rheinland-pfalz/trier-city/amphitheater/005.JPG", title: { ru: "Римский амфитеатр в Трире, 2024", ua: "Римський амфітеатр у Трірі, 2024", de: "Römischer Amphitheater in Trier, 2024" } },
+        { path: "Germany/rheinland-pfalz/trier-city/amphitheater/006.JPG", title: { ru: "Римский амфитеатр в Трире, 2024", ua: "Римський амфітеатр у Трірі, 2024", de: "Römischer Amphitheater in Trier, 2024" } },
+        { path: "Germany/rheinland-pfalz/trier-city/amphitheater/007.JPG", title: { ru: "Римский амфитеатр в Трире, 2024", ua: "Римський амфітеатр у Трірі, 2024", de: "Römischer Amphitheater in Trier, 2024" } },
       ]
     }
   }

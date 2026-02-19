@@ -1,6 +1,6 @@
 import { useSelector } from 'react-redux';
 import { Link, useParams } from 'react-router';
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 
 import { datas as countriesUa } from '../../datas/ua/country';
 import { datas as countriesRu } from '../../datas/ru/country';
@@ -27,10 +27,16 @@ const Country = () => {
     // ищем нужную страну
     const country = countries.find(c => c.path === countryPath);
     useMeta(country?.meta);
+
+    useEffect(() => {
+        if (country?.country) {
+            document.title = country.country;
+        }
+    }, [country?.country]);
+
     if (!country) return <p>Country not found</p>;
 
     const photos = photosByCountry[countryPath];
-    
 
     // BreadCrumbs
     const crumbs = [
@@ -52,7 +58,7 @@ const Country = () => {
                 <h2 className="country__sidebar-title">{country.regions.title}</h2>
                 <ul className={`country__sidebar-list ${sidebarOpen ? "active" : ""}`}>
                     {country.regions.items?.map((state) => (
-                        <li key={state.id} className="country__sidebar-item">                           
+                        <li key={state.id} className="country__sidebar-item">
                             {state.hasInfo ? (
                                 <Link
                                     to={`/${countryPath}/${state.path}`}

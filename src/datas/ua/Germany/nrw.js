@@ -113,7 +113,7 @@ const datas = {
                         {
                             id: 1,
                             name: "Зіген-Віттгенштайн",
-                            fullName: "Kreis Siegen-Wittgenstein",
+                            fullName: "Siegen-Wittgenstein",
                             parentDistrict: "Арнсберг",
                             center: [
                                 { bold: "Центр району:" },
@@ -160,7 +160,7 @@ const datas = {
                         {
                             id: 2,
                             name: "Зост",
-                            fullName: "Kreis Soest",
+                            fullName: "Soest",
                             parentDistrict: "Арнсберг",
                             center: [
                                 { bold: "Центр району:" },
@@ -210,7 +210,7 @@ const datas = {
                         {
                             id: 3,
                             name: "Меркіш",
-                            fullName: "Märkischer Kreis",
+                            fullName: "Märkischer",
                             parentDistrict: "Арнсберг",
                             center: [
                                 { bold: "Центр району:" },
@@ -261,7 +261,7 @@ const datas = {
                         {
                             id: 4,
                             name: "Ольпе",
-                            fullName: "Kreis Olpe",
+                            fullName: "Olpe",
                             parentDistrict: "Арнсберг",
                             center: [
                                 { bold: "Центр району:" },
@@ -279,10 +279,7 @@ const datas = {
                                 { bold: "Щільність населення:" },
                                 { text: " 188,8 осіб/км²." }
                             ],
-                            code: [
-                                { bold: "Офіційний код району:" },
-                                { text: " 05 9 66." }
-                            ],
+                            code: [ { bold: "Офіційний код району:", text: " 05 9 66." }  ],
                             description: [
                                 { text: "Район Ольпе входить до землі Північний Рейн-Вестфалія, підпорядкований адміністративному округу Арнсберг." }
                             ],
@@ -304,7 +301,7 @@ const datas = {
                         {
                             id: 5,
                             name: "Унна",
-                            fullName: "Kreis Unna",
+                            fullName: "Unna",
                             parentDistrict: "Арнсберг",
                             center: [
                                 { bold: "Центр району:" },
@@ -350,7 +347,7 @@ const datas = {
                         {
                             id: 6,
                             name: "Хохзауерланд",
-                            fullName: "Hochsauerlandkreis",
+                            fullName: "Hochsauerland",
                             parentDistrict: "Арнсберг",
                             center: [
                                 { bold: "Центр району:" },
@@ -398,7 +395,7 @@ const datas = {
                         {
                             id: 7,
                             name: "Еннепе-Рур",
-                            fullName: "Ennepe-Ruhr-Kreis",
+                            fullName: "Ennepe-Ruhr",
                             parentDistrict: "Арнсберг",
                             center: [
                                 { bold: "Центр району:" },
@@ -476,42 +473,22 @@ const datas = {
                         {
                             id: 1,
                             name: "Аахен",
-                            fullName: "Kreis Aachen",
+                            fullName: "Aachen",
                             parentDistrict: "Кельн",
-                            center: [
-                                { bold: "Центр району:" },
-                                { text: " місто Аахен." }
-                            ],
-                            area: [
-                                { bold: "Площа:" },
-                                { text: " 707,15 кв. км (на 2023 р.)" }
-                            ],
-                            population: [
-                                { bold: "Населення:" },
-                                { text: " 564 444 осіб (на 2023 р.)" }
-                            ],
-                            density: [
-                                { bold: "Щільність населення:" },
-                                { text: " 800 осіб/кв.км (2023 р.)" }
-                            ],
-                            code: [
-                                { bold: "Офіційний код району:" },
-                                { text: " 05 3 34." }
-                            ],
-                            description: [
-                                { text: "Район Аахен входить до складу землі Північний Рейн-Вестфалія, підпорядкований адміністративному округу Кельн." }
-                            ],
-                            com: [
-                                { text: "Район поділяється на " },
-                                { bold: "10 громад:" }
-                            ],
+                            center: [ { bold: "Центр району:", text: " місто Аахен." } ],
+                            area: [ { bold: "Площа:", text: " 707,15 кв. км (на 2023 р.)" } ],
+                            population: [{ bold: "Населення:", text: " 564 444 осіб (на 2023 р.)" }],
+                            density: [{ bold: "Щільність населення:", text: " 800 осіб/кв.км (2023 р.)" }],
+                            code: [{ bold: "Офіційний код району:", text: " 05 3 34." }],
+                            description: [ { text: "Район Аахен входить до складу землі Північний Рейн-Вестфалія, підпорядкований адміністративному округу Кельн." }                            ],
+                            com: [ { text: "Район поділяється на " },  { bold: "10 громад:" } ],
                             communities: [
                                 { id: 1, name: "Альсдорф", hasInfo: false },
                                 { id: 2, name: "Аахен", hasInfo: false },
                                 { id: 3, name: "Бесвайлер", hasInfo: false },
                                 { id: 4, name: "Вюрцелен", hasInfo: false },
                                 { id: 5, name: "Циммеррат", hasInfo: false },
-                                { id: 6, name: "Моншау", hasInfo: false },
+                                { id: 6, name: "Моншау", hasInfo: true, path: 'monschau' },
                                 { id: 7, name: "Рьотген", hasInfo: false },
                                 { id: 8, name: "Херцогенрат", hasInfo: false },
                                 { id: 9, name: "Штольберг", hasInfo: false },
@@ -522,7 +499,7 @@ const datas = {
                         {
                             id: 2,
                             name: "Дюрен",
-                            fullName: "Kreis Düren",
+                            fullName: "Düren",
                             parentDistrict: "Кельн",
                             center: [
                                 { bold: "Центр району:" },
@@ -573,7 +550,7 @@ const datas = {
                         {
                             id: 3,
                             name: "Обербергіш",
-                            fullName: "Oberbergischer Kreis",
+                            fullName: "Oberbergischer",
                             parentDistrict: "Кельн",
                             center: [
                                 { bold: "Центр району:" },
@@ -622,7 +599,7 @@ const datas = {
                         {
                             id: 4,
                             name: "Ойскирхен",
-                            fullName: "Kreis Euskirchen",
+                            fullName: "Euskirchen",
                             parentDistrict: "Кельн",
                             center: [
                                 { bold: "Центр району:" },
@@ -669,35 +646,17 @@ const datas = {
                         {
                             id: 5,
                             name: "Рейн-Зіг",
-                            fullName: "Rhein-Sieg-Kreis",
+                            fullName: "Rhein-Sieg",
                             parentDistrict: "Кельн",
-                            center: [
-                                { bold: "Центр району:" },
-                                { text: " місто Зігбург (Siegburg)." }
-                            ],
-                            area: [
-                                { bold: "Площа:" },
-                                { text: " 1 153,00 кв. км (на 2023 р.)" }
-                            ],
-                            population: [
-                                { bold: "Населення:" },
-                                { text: " ≈ 620 000 осіб (на 2023 р.)" }
-                            ],
-                            density: [
-                                { bold: "Щільність населення:" },
-                                { text: " близько 538 осіб/кв.км (2023 р.)" }
-                            ],
-                            code: [
-                                { bold: "Офіційний код району:" },
-                                { text: " 05 3 82." }
-                            ],
+                            center: [{ bold: "Центр району:", text: " місто Зігбург (Siegburg)." } ],
+                            area: [{ bold: "Площа:", text: " 1 153,00 кв. км (на 2023 р.)" } ],
+                            population: [{ bold: "Населення:", text: " ≈ 620 000 осіб (на 2023 р.)" }],
+                            density: [{ bold: "Щільність населення:", text: " близько 538 осіб/кв.км (2023 р.)" } ],
+                            code: [{ bold: "Офіційний код району:", text: " 05 3 82." }],
                             description: [
                                 { text: "Район Рейн-Зіг входить до складу землі Північний Рейн-Вестфалія, підпорядкований адміністративному округу Кельн." }
                             ],
-                            com: [
-                                { text: "Район поділяється на " },
-                                { bold: "19 громад:" }
-                            ],
+                            com: [ { text: "Район поділяється на " }, { bold: "19 громад:" } ],
                             communities: [
                                 { id: 1, name: "Айторф", hasInfo: false },
                                 { id: 2, name: "Альфтер", hasInfo: false },
@@ -724,35 +683,20 @@ const datas = {
                         {
                             id: 6,
                             name: "Рейн-Ерфт",
-                            fullName: "Rhein-Erft-Kreis",
+                            fullName: "Rhein-Erft",
                             parentDistrict: "Кельн",
-                            center: [
-                                { bold: "Центр району:" },
-                                { text: " місто Бергхайм (Bergheim)." }
-                            ],
-                            area: [
-                                { bold: "Площа:" },
-                                { text: " 704,70 кв. км (на 2023 р.)" }
-                            ],
-                            population: [
-                                { bold: "Населення:" },
-                                { text: " 480 989 осіб (на 2023 р.)" }
-                            ],
+                            center: [{ bold: "Центр району:", text: " місто Бергхайм (Bergheim)." }],
+                            area: [{ bold: "Площа:", text: " 704,70 кв. км (на 2023 р.)" }],
+                            population: [{ bold: "Населення:", text: " 480 989 осіб (на 2023 р.)" }],
                             density: [
                                 { bold: "Щільність населення:" },
                                 { text: " близько 679 осіб/кв.км (2022–2023 рр.)" }
                             ],
-                            code: [
-                                { bold: "Офіційний код району:" },
-                                { text: " 05 3 62." }
-                            ],
+                            code: [{ bold: "Офіційний код району:", text: " 05 3 62." }],
                             description: [
                                 { text: "Район Рейн-Ерфт входить до складу землі Північний Рейн-Вестфалия, підпорядкований адміністративному округу Кёльн." }
                             ],
-                            com: [
-                                { text: "Район поділяється на " },
-                                { bold: "10 громад:" }
-                            ],
+                            com: [ { text: "Район поділяється на " }, { bold: "10 громад:" }],
                             communities: [
                                 { id: 1, name: "Бедбург", hasInfo: false },
                                 { id: 2, name: "Бергхайм", hasInfo: false },
@@ -770,7 +714,7 @@ const datas = {
                         {
                             id: 7,
                             name: "Рейнiш-Бергiш",
-                            fullName: "Rheinisch-Bergischer Kreis",
+                            fullName: "Rheinisch-Bergischer",
                             parentDistrict: "Кельн",
                             center: [
                                 { bold: "Центр району:" },
@@ -814,7 +758,7 @@ const datas = {
                         {
                             id: 8,
                             name: "Хайнсберг",
-                            fullName: "Kreis Heinsberg",
+                            fullName: "Heinsberg",
                             parentDistrict: "Кельн",
                             center: [
                                 { bold: "Центр району:" },
@@ -904,7 +848,7 @@ const datas = {
         description: "Північний Рейн-Вестфалія: міста, округи, культура та визначні місця.",
         ogTitle: "Північний Рейн-Вестфалія — інформація про регіон та округи",
         ogDescription: "Детальна інформація про Північний Рейн-Вестфалія: міста, округи, історія та цікаві факти.",
-        ogImage: "https://our-travels.info/new/foto/Germany/nrw/koln/koln-city/koln-cathedral/001.jpg"
+        ogImage: "https://our-travels.info/foto/Germany/nrw/koln/koln-city/koln-cathedral/001.jpg"
     }
 }
 export default datas

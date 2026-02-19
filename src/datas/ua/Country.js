@@ -106,7 +106,7 @@ export const datas = [
       description: "Усе про країну Україна: столиця Київ, географія, населення, мови, кухня, свята та коротка історія.",
       ogTitle: "Україна — інформація про країну та визначні місця",
       ogDescription: "Детальна інформація про Україну: культура, символи, історія, регіони та цікаві факти.",
-      ogImage: "Ukraine/Flag.svg"
+      ogImage: "https://our-travels.info/foto/Ukraine/Flag.svg"
     }
   },
 
@@ -222,7 +222,7 @@ export const datas = [
       description: "Усе про країну Німеччина: столиця Берлін, географія, населення, мови, кухня, символи, історія та регіони.",
       ogTitle: "Німеччина — інформація про країну та визначні місця",
       ogDescription: "Детальна інформація про Німеччину: культура, символи, історія, регіони та цікаві факти.",
-      ogImage: "Germany/Flag.jpg"
+      ogImage: "https://our-travels.info/foto/Germany/Flag.jpg"
     }
   }
 ];

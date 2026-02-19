@@ -118,7 +118,7 @@ const datas = {
         {
             title: "Міста обласного підпорядкування",
             items: [
-                { id: 1, name: "Суми", hasInfo: false, path: "sumy" },
+                { id: 1, name: "Суми", hasInfo: true, path: "sumy" },
                 { id: 2, name: "Лебедин", hasInfo: false, path: "lebedyn" },
                 { id: 3, name: "Ромни", hasInfo: false, path: "romny" },
                 { id: 4, name: "Шостка", hasInfo: false, path: "shostka" },
@@ -133,7 +133,7 @@ const datas = {
         description: "Сумська область: міста, історія, культура, економіка та цікаві факти.",
         ogTitle: "Сумська область — інформація про регіон",
         ogDescription: "Детальна інформація про Сумську область: історія, культура, міста та визначні місця.",
-        ogImage: "/Ukraine/Sumy/sumy-map.jpg"
+        ogImage: "https://our-travels.info/foto/Ukraine/Sumy/sumy-map.jpg"
     }
 }
 

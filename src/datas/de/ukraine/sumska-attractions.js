@@ -53,7 +53,7 @@ const datas = [
             description: "Die Spaso-Preobraschenski-Kathedrale ist der Haupttempel von Sumy, ein architektonisches Denkmal des 18.–19. Jahrhunderts mit Marmor-Malachit-Ikonostase und 56 Meter hohem Glockenturm.",
             ogTitle: "Spaso-Preobraschenski-Kathedrale — das wichtigste Heiligtum von Sumy",
             ogDescription: "Historische Kathedrale von Sumy: einzigartige Architektur, wundertätige Ikonen, malachitene Ikonostase und berühmte Glockenuhren, die alle drei Tage aufgezogen werden.",
-            ogImage: "Ukraine/sumska/sumy-city/spaso-preobrazhensky/004.jpg"
+            ogImage: "https://our-travels.info/foto/Ukraine/sumska/sumy-city/spaso-preobrazhensky/004.jpg"
         }
     },
     {
@@ -101,7 +101,7 @@ const datas = [
             description: "Der Pokrowska-Platz ist einer der ältesten Plätze von Sumy mit einer reichen Geschichte. Erfahren Sie mehr über seine Vergangenheit, Kriegsjahre und heutige Bedeutung.",
             ogTitle: "Pokrowska-Platz — das Herz des historischen Sumy",
             ogDescription: "Der Pokrowska-Platz ist einer der ältesten Orte in Sumy und eng mit der Geschichte der Stadt verbunden.",
-            ogImage: "https://our-travels.info/new/foto/Ukraine/sumska/sumy-city/altanka/009.jpg"
+            ogImage: "https://our-travels.info/foto/Ukraine/sumska/sumy-city/altanka/009.jpg"
         }
     },
     {
@@ -141,7 +141,7 @@ const datas = [
             description: "Die Spaso-Preobraschenski-Kathedrale ist der Haupttempel von Sumy, ein architektonisches Denkmal des 18.–19. Jahrhunderts mit Marmor-Malachit-Ikonostase und 56 Meter hohem Glockenturm.",
             ogTitle: "Spaso-Preobraschenski-Kathedrale — das wichtigste Heiligtum von Sumy",
             ogDescription: "Historische Kathedrale von Sumy: einzigartige Architektur, wundertätige Ikonen, malachitene Ikonostase und berühmte Glockenuhren, die alle drei Tage aufgezogen werden.",
-            ogImage: "Ukraine/sumska/sumy-city/altanka/009.jpg"
+            ogImage: "https://our-travels.info/foto/Ukraine/sumska/sumy-city/altanka/009.jpg"
         }
     }
 

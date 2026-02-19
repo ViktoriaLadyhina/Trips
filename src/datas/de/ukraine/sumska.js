@@ -116,7 +116,7 @@ const datas = {
         {
             title: "Städte mit regionaler Unterstellung",
             items: [
-                { id: 1, name: "Sumy", hasInfo: false, path: "sumy" },
+                { id: 1, name: "Sumy", hasInfo: true, path: "sumy" },
                 { id: 2, name: "Lebedyn", hasInfo: false, path: "lebedyn" },
                 { id: 3, name: "Romny", hasInfo: false, path: "romny" },
                 { id: 4, name: "Shostka", hasInfo: false, path: "shostka" },
@@ -131,7 +131,7 @@ const datas = {
         description: "Oblast Sumy: Städte, Geschichte, Kultur, Wirtschaft und interessante Fakten.",
         ogTitle: "Oblast Sumy — Informationen über die Region",
         ogDescription: "Detaillierte Informationen über die Oblast Sumy: Geschichte, Kultur, Städte und Sehenswürdigkeiten.",
-        ogImage: "/Ukraine/Sumy/sumy-map.jpg"
+        ogImage: "https://our-travels.info/foto/Ukraine/Sumy/sumy-map.jpg"
     }
 }
 

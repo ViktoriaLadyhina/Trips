@@ -105,7 +105,7 @@ export const datas = [
       description: "Alles über das Land Ukraine: Hauptstadt Kiew, Geografie, Bevölkerung, Sprachen, Küche, Feiertage und kurze Geschichte.",
       ogTitle: "Ukraine — Informationen über das Land und Sehenswürdigkeiten",
       ogDescription: "Detaillierte Informationen über die Ukraine: Kultur, Symbole, Geschichte, Regionen und interessante Fakten.",
-      ogImage: "Ukraine/Flag.svg"
+      ogImage: "https://our-travels.info/foto/Ukraine/Flag.svg"
     }
 
   },
@@ -221,7 +221,7 @@ export const datas = [
       description: "Alles über Deutschland: Hauptstadt Berlin, Geografie, Bevölkerung, Sprachen, Küche, Symbole, Geschichte und Regionen.",
       ogTitle: "Deutschland — Informationen über das Land und Sehenswürdigkeiten",
       ogDescription: "Detaillierte Informationen über Deutschland: Kultur, Symbole, Geschichte, Regionen und interessante Fakten.",
-      ogImage: "Germany/Flag.jpg"
+      ogImage: "https://our-travels.info/foto/Germany/Flag.jpg"
     }
   }
 

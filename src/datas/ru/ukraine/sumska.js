@@ -133,7 +133,7 @@ const datas = {
         description: "Сумская область: города, история, культура, экономика и интересные факты.",
         ogTitle: "Сумская область — информация о регионе",
         ogDescription: "Подробная информация о Сумской области: история, культура, города и достопримечательности.",
-        ogImage: "/Ukraine/Sumy/sumy-map.jpg"
+        ogImage: "https://our-travels.info/foto/Ukraine/Sumy/sumy-map.jpg"
     }
 }
 export default datas

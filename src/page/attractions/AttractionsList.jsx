@@ -1,5 +1,5 @@
 import { useParams } from 'react-router';
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 
 import BreadCrumbs from '../../components/breadCrumbs/BreadCrumbs.jsx';
 import AttractionCard from '../../components/attraction/AttractionCard.jsx';
@@ -7,6 +7,9 @@ import AttractionsFilters from '../../components/attractionsFilters/AttractionsF
 import useCityFullData from '../../hooks/useCityFullData.js';
 
 import './Attractions.scss'
+
+const attractionsTitle = { ru: "Достопримечательности", ua: "Пам'ятки", de: "Sehenswürdigkeiten" }
+const NoAttractions = { ru: "Нет достопримечательностей", ua: "Достопримечательностей немає", de: "Keine Sehenswürdigkeiten" }
 
 const AttractionsList = () => {
     const { districtPath, cityPath } = useParams();
@@ -17,6 +20,24 @@ const AttractionsList = () => {
         unesco: 'all',
         sort: 'name-asc',
     });
+
+
+    useEffect(() => {
+    const base = attractionsTitle[lang];
+
+    const locationName =
+        city?.name ||
+        district?.name ||
+        parentSubRegion?.name ||
+        region?.name ||
+        country?.name ||
+        '';
+
+    document.title = locationName
+        ? `${base} – ${locationName}`
+        : base;
+
+}, [city, district, parentSubRegion, region, country, lang]);
 
     if (error) return <p>{error}</p>;
     if (!country || !region) return <p>Loading...</p>;
@@ -75,10 +96,6 @@ const AttractionsList = () => {
         city ? { label: city.name, path: `/${country?.path}/${region?.path}/${districtPath ? districtPath + '/' : ''}${city.path}` } : null,
         { label: lang === "ru" ? "Достопримечательности" : lang === "de" ? "Sehenswürdigkeiten" : "Пам'ятки" }
     ].filter(Boolean);
-
-
-    const attractionsTitle = { ru: "Достопримечательности", ua: "Пам'ятки", de: "Sehenswürdigkeiten" }
-    const NoAttractions = { ru: "Нет достопримечательностей", ua: "Достопримечательностей немає", de: "Keine Sehenswürdigkeiten" }
 
     return (
         <div className="attractions">

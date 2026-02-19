@@ -105,7 +105,7 @@ const datas = {
                         {
                             id: 1,
                             name: "Siegen-Wittgenstein",
-                            fullName: "Kreis Siegen-Wittgenstein",
+                            fullName: "Siegen-Wittgenstein",
                             parentDistrict: "Arnsberg",
                             center: [
                                 { bold: "Kreisstadt:" },
@@ -152,7 +152,7 @@ const datas = {
                         {
                             id: 2,
                             name: "Soest",
-                            fullName: "Kreis Soest",
+                            fullName: "Soest",
                             parentDistrict: "Arnsberg",
                             center: [
                                 { bold: "Kreisstadt:" },
@@ -201,8 +201,8 @@ const datas = {
                         },
                         {
                             id: 3,
-                            name: "Märkischer Kreis",
-                            fullName: "Märkischer Kreis",
+                            name: "Märkischer",
+                            fullName: "Märkischer",
                             parentDistrict: "Arnsberg",
                             center: [
                                 { bold: "Kreisstadt:" },
@@ -253,7 +253,7 @@ const datas = {
                         {
                             id: 4,
                             name: "Olpe",
-                            fullName: "Kreis Olpe",
+                            fullName: "Olpe",
                             parentDistrict: "Arnsberg",
                             center: [
                                 { bold: "Kreisstadt:" },
@@ -296,7 +296,7 @@ const datas = {
                         {
                             id: 5,
                             name: "Unna",
-                            fullName: "Kreis Unna",
+                            fullName: "Unna",
                             parentDistrict: "Arnsberg",
                             center: [
                                 { bold: "Kreisstadt:" },
@@ -341,8 +341,8 @@ const datas = {
                         },
                         {
                             id: 6,
-                            name: "Hochsauerlandkreis",
-                            fullName: "Hochsauerlandkreis",
+                            name: "Hochsauerland",
+                            fullName: "Hochsauerland",
                             parentDistrict: "Arnsberg",
                             center: [
                                 { bold: "Kreisstadt:" },
@@ -389,8 +389,8 @@ const datas = {
                         },
                         {
                             id: 7,
-                            name: "Ennepe-Ruhr-Kreis",
-                            fullName: "Ennepe-Ruhr-Kreis",
+                            name: "Ennepe-Ruhr",
+                            fullName: "Ennepe-Ruhr",
                             parentDistrict: "Arnsberg",
                             center: [
                                 { bold: "Kreisstadt:" },
@@ -468,42 +468,22 @@ const datas = {
                         {
                             id: 1,
                             name: "Aachen",
-                            fullName: "Kreis Aachen",
+                            fullName: "Aachen",
                             parentDistrict: "Köln",
-                            center: [
-                                { bold: "Zentrum des Bezirks:" },
-                                { text: " Stadt Aachen." }
-                            ],
-                            area: [
-                                { bold: "Fläche:" },
-                                { text: " 707,15 km² (Stand 2023)" }
-                            ],
-                            population: [
-                                { bold: "Bevölkerung:" },
-                                { text: " 564 444 Einwohner (Stand 2023)" }
-                            ],
-                            density: [
-                                { bold: "Bevölkerungsdichte:" },
-                                { text: " 800 Einwohner/km² (2023)" }
-                            ],
-                            code: [
-                                { bold: "Offizieller Bezirkscode:" },
-                                { text: " 05 3 34." }
-                            ],
-                            description: [
-                                { text: "Der Bezirk Aachen gehört zum Bundesland Nordrhein-Westfalen und untersteht dem Regierungsbezirk Köln." }
-                            ],
-                            com: [
-                                { text: "Der Bezirk ist unterteilt in " },
-                                { bold: "10 Gemeinden:" }
-                            ],
+                            center: [{ bold: "Zentrum des Bezirks:", text: " Stadt Aachen." }  ],
+                            area: [{ bold: "Fläche:", text: " 707,15 km² (Stand 2023)" } ],
+                            population: [{ bold: "Bevölkerung:", text: " 564 444 Einwohner (Stand 2023)" }],
+                            density: [ { bold: "Bevölkerungsdichte:", text: " 800 Einwohner/km² (2023)" }                            ],
+                            code: [{ bold: "Offizieller Bezirkscode:", text: " 05 3 34." }   ],
+                            description: [ { text: "Der Bezirk Aachen gehört zum Bundesland Nordrhein-Westfalen und untersteht dem Regierungsbezirk Köln." }                            ],
+                            com: [ { text: "Der Bezirk ist unterteilt in " }, { bold: "10 Gemeinden:" }    ],
                             communities: [
                                 { id: 1, name: "Alsdorf", hasInfo: false },
                                 { id: 2, name: "Aachen", hasInfo: false },
                                 { id: 3, name: "Baesweiler", hasInfo: false },
                                 { id: 4, name: "Würselen", hasInfo: false },
                                 { id: 5, name: "Simmerath", hasInfo: false },
-                                { id: 6, name: "Monschau", hasInfo: false },
+                                { id: 6, name: "Monschau", hasInfo: true, path: 'monschau' },
                                 { id: 7, name: "Roetgen", hasInfo: false },
                                 { id: 8, name: "Herzogenrath", hasInfo: false },
                                 { id: 9, name: "Stolberg", hasInfo: false },
@@ -514,7 +494,7 @@ const datas = {
                         {
                             id: 2,
                             name: "Düren",
-                            fullName: "Kreis Düren",
+                            fullName: "Düren",
                             parentDistrict: "Köln",
                             center: [
                                 { bold: "Zentrum des Bezirks:" },
@@ -564,8 +544,8 @@ const datas = {
                         },
                         {
                             id: 3,
-                            name: "Oberbergischer Kreis",
-                            fullName: "Oberbergischer Kreis",
+                            name: "Oberbergischer",
+                            fullName: "Oberbergischer",
                             parentDistrict: "Köln",
                             center: [
                                 { bold: "Kreisstadt:" },
@@ -614,7 +594,7 @@ const datas = {
                         {
                             id: 4,
                             name: "Euskirchen",
-                            fullName: "Kreis Euskirchen",
+                            fullName: "Euskirchen",
                             parentDistrict: "Köln",
                             center: [
                                 { bold: "Zentrum des Bezirks:" },
@@ -660,36 +640,16 @@ const datas = {
                         },
                         {
                             id: 5,
-                            name: "Rhein-Sieg-Kreis",
-                            fullName: "Rhein-Sieg-Kreis",
+                            name: "Rhein-Sieg",
+                            fullName: "Rhein-Sieg",
                             parentDistrict: "Köln",
-                            center: [
-                                { bold: "Kreisstadt:" },
-                                { text: " Siegburg." }
-                            ],
-                            area: [
-                                { bold: "Fläche:" },
-                                { text: " 1.153,00 km² (Stand 2023)" }
-                            ],
-                            population: [
-                                { bold: "Einwohner:" },
-                                { text: " ca. 620.000 (Stand 2023)" }
-                            ],
-                            density: [
-                                { bold: "Bevölkerungsdichte:" },
-                                { text: " ca. 538 Einwohner/km² (2023)" }
-                            ],
-                            code: [
-                                { bold: "Amtlicher Kreisschlüssel:" },
-                                { text: " 05 3 82." }
-                            ],
-                            description: [
-                                { text: "Rhein-Sieg-Kreis gehört zum Bundesland Nordrhein-Westfalen und untersteht dem Regierungsbezirk Köln." }
-                            ],
-                            com: [
-                                { text: "Der Kreis gliedert sich in " },
-                                { bold: "19 Städte und Gemeinden:" }
-                            ],
+                            center: [{ bold: "Kreisstadt:", text: " Siegburg." } ],
+                            area: [{bold: "Fläche:", text: " 1.153,00 km² (Stand 2023)" } ],
+                            population: [{ bold: "Einwohner:", text: " ca. 620.000 (Stand 2023)" }],
+                            density: [{ bold: "Bevölkerungsdichte:", text: " ca. 538 Einwohner/km² (2023)" }],
+                            code: [{ bold: "Amtlicher Kreisschlüssel:", text: " 05 3 82." }],
+                            description: [{ text: "Rhein-Sieg-Kreis gehört zum Bundesland Nordrhein-Westfalen und untersteht dem Regierungsbezirk Köln." }],
+                            com: [  { text: "Der Kreis gliedert sich in " }, { bold: "19 Städte und Gemeinden:" } ],
                             communities: [
                                 { id: 1, name: "Eitorf", hasInfo: false },
                                 { id: 2, name: "Alfter", hasInfo: false },
@@ -715,36 +675,18 @@ const datas = {
                         },
                         {
                             id: 6,
-                            name: "Rhein-Erft-Kreis",
-                            fullName: "Rhein-Erft-Kreis",
+                            name: "Rhein-Erft",
+                            fullName: "Rhein-Erft",
                             parentDistrict: "Köln",
-                            center: [
-                                { bold: "Kreisstadt:" },
-                                { text: " Bergheim." }
-                            ],
-                            area: [
-                                { bold: "Fläche:" },
-                                { text: " 704,70 km² (Stand 2023)" }
-                            ],
-                            population: [
-                                { bold: "Einwohner:" },
-                                { text: " 480.989 Einwohner (Stand 2023)" }
-                            ],
-                            density: [
-                                { bold: "Bevölkerungsdichte:" },
-                                { text: " ca. 679 Einwohner/km² (2022–2023)" }
-                            ],
-                            code: [
-                                { bold: "Amtlicher Kreisschlüssel:" },
-                                { text: " 05 3 62." }
-                            ],
+                            center: [{ bold: "Kreisstadt:", text: " Bergheim." } ],
+                            area: [{ bold: "Fläche:", text: " 704,70 km² (Stand 2023)" } ],
+                            population: [{ bold: "Einwohner:", text: " 480.989 Einwohner (Stand 2023)" }                            ],
+                            density: [{ bold: "Bevölkerungsdichte:", text: " ca. 679 Einwohner/km² (2022–2023)" }],
+                            code: [{ bold: "Amtlicher Kreisschlüssel:", text: " 05 3 62." }],
                             description: [
                                 { text: "Rhein-Erft-Kreis gehört zum Land Nordrhein-Westfalen und untersteht dem Regierungsbezirk Köln." }
                             ],
-                            com: [
-                                { text: "Der Kreis gliedert sich in " },
-                                { bold: "10 Städte / Gemeinden:" }
-                            ],
+                            com: [ { text: "Der Kreis gliedert sich in " }, { bold: "10 Städte / Gemeinden:" }                            ],
                             communities: [
                                 { id: 1, name: "Bedburg", hasInfo: false },
                                 { id: 2, name: "Bergheim", hasInfo: false },
@@ -761,8 +703,8 @@ const datas = {
                         },
                         {
                             id: 7,
-                            name: "Rheinisch-Bergischer Kreis",
-                            fullName: "Rheinisch-Bergischer Kreis",
+                            name: "Rheinisch-Bergischer",
+                            fullName: "Rheinisch-Bergischer",
                             parentDistrict: "Köln",
                             center: [
                                 { bold: "Kreisstadt:" },
@@ -805,8 +747,8 @@ const datas = {
                         },
                         {
                             id: 8,
-                            name: "Kreis Heinsberg",
-                            fullName: "Kreis Heinsberg",
+                            name: "Heinsberg",
+                            fullName: "Heinsberg",
                             parentDistrict: "Köln",
                             center: [
                                 { bold: "Kreisstadt:" },
@@ -896,7 +838,7 @@ const datas = {
         description: "Nordrhein-Westfalen: Städte, Bezirke, Kultur und Sehenswürdigkeiten.",
         ogTitle: "Nordrhein-Westfalen — Informationen über die Region und Bezirke",
         ogDescription: "Detaillierte Informationen über Nordrhein-Westfalen: Städte, Bezirke, Geschichte und interessante Fakten.",
-        ogImage: "https://our-travels.info/new/foto/Germany/nrw/koln/koln-city/koln-cathedral/001.jpg"
+        ogImage: "https://our-travels.info/foto/Germany/nrw/koln/koln-city/koln-cathedral/001.jpg"
     }
 }
 export default datas

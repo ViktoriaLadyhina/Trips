@@ -1,0 +1,117 @@
+@use '../../styles//variables' as *;
+
+.event {
+
+    &__title {
+        @include h3();
+        margin: 40px;
+    }
+
+    &__desc {
+        overflow: hidden;
+
+        &-foto {
+            float: left;
+            max-width: 350px;
+            margin: 0 15px 15px 0;
+            border-radius: 8px;
+
+            img {
+                width: 100%;
+                height: auto;
+                border-radius: 8px;
+                box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            }
+        }
+
+        &-full_description,
+        &-interestingFacts,
+        &-officialSite,
+        &-date,
+        &-theme_zones {
+            padding: 10px;
+            flex: 1; // чтобы текст занимал оставшееся место
+            text-align: justify;
+
+            &-title {
+                @include h3();
+                padding: 10px;
+                text-align: center;
+            }
+
+            &-bold {
+                @include bold-text;
+                display: inline;
+                text-align: justify;
+            }
+
+            &-text {
+                @include body-text;
+                text-align: justify;
+                display: inline;
+            }
+
+        }
+
+        &-sub_objects {
+            padding: 10px;
+            text-align: left;
+
+            &-title {
+                @include h3();
+                padding: 10px;
+                text-align: center;
+            }
+
+            &-bold {
+                @include bold-text;
+                display: inline;
+                text-align: justify;
+            }
+
+            &-item {
+                display: flex;
+                align-items: flex-start;
+                flex-wrap: wrap;
+                margin-bottom: 20px; 
+
+                p {
+                    margin: 0;
+                }
+
+                img {
+                    max-width: 300px;
+                    max-height: 300px;
+                    width: 100%;
+                    margin-right: 15px;
+                    display: block;
+                    border-radius: 8px;
+                    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+
+                    &:first-child {
+                        max-width: 400px;
+                    }
+                }
+
+                .content {
+                    flex: 1;
+                    display: flex;
+                    flex-direction: column;
+                }
+
+
+            }
+        }
+
+    }
+
+
+    &__sub {
+        @include h3();
+        padding: 10px;
+        text-align: center;
+    }
+
+
+
+}
