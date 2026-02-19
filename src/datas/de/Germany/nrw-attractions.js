@@ -1425,6 +1425,50 @@ const datas = [
     },
 
     // Köln округ
+    
+// aachen kreis
+    {
+    id: "historic_center_monschau",
+    name: "Altstadt Monschau",
+    type: ["historical_building"],
+    path: "historic_center_monschau",
+    countryPath: "germany",
+    regionsPath: "nrw",
+    districtPath: "koln",
+    cityPath: "monschau",
+    fotoCard: "Germany/nrw/koln/Aachen/monschau/001.jpg",
+    location: "Monschau, Deutschland",
+    short_description: "Die Altstadt von Monschau ist ein hervorragend erhaltenes historisches Zentrum mit Fachwerkhäusern aus dem 17.–18. Jahrhundert, engen gepflasterten Gassen und einer malerischen Uferpromenade entlang des Flusses Rur. Sie liegt in der Naturregion Eifel im Bundesland Nordrhein-Westfalen. Die Bebauung hat sich seit dem späten Mittelalter kaum verändert und vermittelt den Eindruck eines „lebendigen Museums“.",
+    full_description: {
+        title: "Beschreibung und Geschichte",
+        items: [
+            { bold: "Altstadt Monschau", text: " – wirkt wie eine lebendig gewordene Illustration aus einem alten europäischen Märchen. Enge gepflasterte Gassen schlängeln sich zwischen Fachwerkhäusern, deren dunkle Balken und weißen Wände Jahrhunderte Geschichte erlebt haben, während sich über dem ruhigen Wasser des Flusses Balkone mit Blumenschmuck neigen. Die Stadt scheint tief in einem Tal zwischen Hügeln verborgen zu liegen, sodass jede Biegung einen neuen malerischen Ausblick eröffnet – eine Brücke, einen Turm, ein altes Dach oder einen gemütlichen Innenhof. Hier ist die Moderne kaum spürbar: Der Lärm der Autos verschwindet, die Zeit verlangsamt sich, und ein Spaziergang wird nicht nur zur Besichtigung, sondern zu einer echten Reise in die Vergangenheit." },
+            { bold: "Geschichte", text: "Die Siedlung entstand im 13. Jahrhundert rund um die Burg Monschau. Im 18. Jahrhundert erlebte die Stadt durch die Textilproduktion einen wirtschaftlichen Aufschwung. Wohlhabende Fabrikanten errichteten prächtige Häuser, von denen viele bis heute erhalten sind. Nach dem Niedergang der Industrie im 19. Jahrhundert wurde die Stadt kaum umgebaut – genau das ermöglichte den Erhalt ihres historischen Erscheinungsbildes." }
+        ]
+    },
+    interestingFacts: {
+        title: "Interessante Fakten",
+        items: [
+            { text: "Im historischen Zentrum ist moderne Bebauung verboten." },
+            { text: "Viele Häuser stehen auf Fundamenten aus dem 14.–15. Jahrhundert." },
+            { text: "Die Altstadt von Monschau blieb im Zweiten Weltkrieg weitgehend unbeschädigt und bewahrte deshalb ihre ursprüngliche Stadtstruktur." },
+            { text: "Die engen Straßen entstanden nicht aus romantischen Gründen, sondern wegen Platzmangels im schmalen Tal des Flusses Rur." },
+            { text: "Im 18. Jahrhundert war die Stadt ein wohlhabendes Zentrum der Textilindustrie – sichtbar an den prächtigen Häusern der Fabrikanten, besonders am Gebäude Rotes Haus." },
+            { text: "Über der Stadt erhebt sich die Burg Monschau, die bereits im 13. Jahrhundert zur Kontrolle der Handelswege erbaut wurde." },
+            { text: "Monschau wird oft als das „fotogenste Städtchen der Eifelregion“ bezeichnet, dank der Kombination aus Fachwerk, Bergen und Wasser." },
+            { text: "Hier wurden mehrere historische Filme und deutsche Fernsehserien gedreht – die Stadt dient als fertige Kulisse ohne aufwendige Studiobauten." },
+            { text: "Im Winter findet einer der stimmungsvollsten Weihnachtsmärkte Deutschlands statt, und viele Häuser werden mit traditionellen Kerzen in den Fenstern geschmückt." }
+        ]
+    },
+    construction_period: "13. Jahrhundert (Entstehung der Siedlung um die Burg)",
+    meta: {
+        title: "Altstadt Monschau — Mittelalterliches Zentrum in der Eifel | Deutschland",
+        description: "Die Altstadt von Monschau ist eines der schönsten historischen Zentren Deutschlands mit Fachwerkhäusern, dem Fluss Rur und mittelalterlicher Atmosphäre.",
+        ogTitle: "Altstadt Monschau — Märchenhaftes Deutschland",
+        ogDescription: "Ein Spaziergang durch die Altstadt von Monschau ist eine Reise in die Vergangenheit: enge Gassen, historische Häuser und die Romantik der Eifel.",
+        ogImage: "https://our-travels.info/foto/Germany/nrw/koln/Aachen/monschau/002.jpg"
+    }
+},
 
     // Rhein-Erft-Kreis
 
@@ -1443,10 +1487,7 @@ const datas = [
         officialSite: [
             { bold: 'Offizielle Website der Brühler Schlösser', link: 'https://www.schlossbruehl.de/en/' },
         ],
-        unesco_status: {
-            included: true,
-            year: 1984
-        },
+        unesco_status: {included: true, year: 1984},
         tickets_and_entry: {
             title: "Tickets und Eintritt",
             items: [

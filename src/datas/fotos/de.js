@@ -302,6 +302,15 @@ export const Fotos = {
         { path: "Germany/nrw/koln/Aachen/monschau/002.jpg", title: { ru: "Моншау, 2025", ua: "Моншау, 2025", de: "Monschau, 2025" } },
         { path: "Germany/nrw/koln/Aachen/monschau/001.jpg", title: { ru: "Моншау, 2025", ua: "Моншау, 2025", de: "Monschau, 2025" } },
       ],
+      historic_center_monschau: [
+        { path: "Germany/nrw/koln/Aachen/monschau/001.jpg", title: { ru: "Старый город Моншау, 2025", ua: "Старе місто Моншау, 2025", de: "Altstadt Monschau, 2025" } },
+        { path: "Germany/nrw/koln/Aachen/monschau/002.jpg", title: { ru: "Старый город Моншау, 2025", ua: "Старе місто Моншау, 2025", de: "Altstadt Monschau, 2025" } },
+        { path: "Germany/nrw/koln/Aachen/monschau/003.jpg", title: { ru: "Старый город Моншау, 2025", ua: "Старе місто Моншау, 2025", de: "Altstadt Monschau, 2025" } },
+        { path: "Germany/nrw/koln/Aachen/monschau/004.jpg", title: { ru: "Старый город Моншау, 2025", ua: "Старе місто Моншау, 2025", de: "Altstadt Monschau, 2025" } },
+        { path: "Germany/nrw/koln/Aachen/monschau/005.jpg", title: { ru: "Старый город Моншау, 2025", ua: "Старе місто Моншау, 2025", de: "Altstadt Monschau, 2025" } },
+        { path: "Germany/nrw/koln/Aachen/monschau/006.jpg", title: { ru: "Старый город Моншау, 2025", ua: "Старе місто Моншау, 2025", de: "Altstadt Monschau, 2025" } },
+        { path: "Germany/nrw/koln/Aachen/monschau/007.jpg", title: { ru: "Старый город Моншау, 2025", ua: "Старе місто Моншау, 2025", de: "Altstadt Monschau, 2025" } },
+      ],
     },
 
 
