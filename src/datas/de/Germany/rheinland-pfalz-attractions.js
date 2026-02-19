@@ -66,7 +66,7 @@ const datas = [
     officialSite: [
       { bold: "Offizielle Webseite", link: "https://www.zentrum-der-antike.de/monumente/amphitheater" }
     ],
-    unesco_status: {included: true, year: 1986 },
+    unesco_status: { included: true, year: 1986 },
     short_description: "Das römische Amphitheater in Trier ist eine der größten römischen Arenen außerhalb Italiens. Es wurde Ende des 2. Jahrhunderts n. Chr. erbaut und konnte bis zu 20.000 Zuschauer fassen. Hier fanden Gladiatorenkämpfe, Tierdarstellungen und Massenveranstaltungen statt. Heute ist das Amphitheater für Besucher geöffnet; erhalten sind die Arena, die Tribünen und unterirdischen Gänge.",
     full_description: {
       title: "Beschreibung und Geschichte",
@@ -125,7 +125,71 @@ const datas = [
       ogDescription: "Erfahren Sie mehr über das antike Amphitheater in Trier: Nutzung in der Römerzeit, heutige Sehenswürdigkeiten, Lage und Besuchsmöglichkeiten.",
       ogImage: "https://our-travels.info/foto/Germany/rheinland-pfalz/trier-city/amphitheater/001.JPG"
     }
-},
+  },
+  {
+    id: "kaiserthermen_trier",
+    name: "Römische Kaiserthermen",
+    type: ["historical_building", "museum", "monument_or_fountain"],
+    path: "kaiserthermen_trier",
+    countryPath: "germany",
+    regionsPath: "rheinland-pfalz",
+    districtPath: "city",
+    cityPath: "trier",
+    fotoCard: "Germany/rheinland-pfalz/trier-city/kaiserthermen/01.JPG",
+    location: "Trier, Deutschland",
+    unesco_status: { included: true, year: 1986 },
+    short_description: "Die Kaiserthermen gehören zu den größten römischen Badeanlagen nördlich der Alpen, erbaut Ende des 3. bis Anfang des 4. Jahrhunderts n. Chr. in der Stadt Trier (früher Augusta Treverorum). Heute sind vom Komplex mächtige Ruinen erhalten, die sowohl oberirdisch als auch unterirdisch besichtigt werden können, mit Zugang zu den unterirdischen Dienstgalerien und den Überresten der Ingenieursysteme.",
+    full_description: {
+      title: "Beschreibung und Geschichte",
+      items: [
+        { bold: "Kaiserthermen ", text: "waren Teil eines großen Palastviertels des spätantiken Trier und dienten nicht nur der Körperpflege, sondern auch als Zentrum des gesellschaftlichen Lebens: für Erholung, Spiele, Treffen und Kommunikation. Besucher können Fragmente von Mauern, Arkaden, unterirdische Versorgungsgänge und Ingenieurbauten besichtigen." },
+        { bold: "Geschichte. ", text: "Der Bau der Thermen in Trier begann Ende des 3. Jahrhunderts n. Chr., als die Stadt, in der Antike bekannt als Augusta Treverorum, eine der wichtigsten kaiserlichen Residenzen des Weströmischen Reiches war. Zu dieser Zeit fungierte Trier faktisch als Hauptstadt der westlichen Provinzen, und die umfangreichen Bauprojekte sollten die Macht des Staates demonstrieren. Die Thermen waren als Teil eines riesigen Palastkomplexes geplant und sollten ein Symbol für Reichtum und Prestige der Stadt werden. Vermutlich hängt der Bau mit der Regierungszeit Konstantins des Großen oder seiner unmittelbaren Nachfolger zusammen, als Trier seine politische Blütezeit erlebte." },
+        { text: "Der Komplex wurde jedoch nie in seiner ursprünglichen Form vollendet. Bereits im 4. Jahrhundert verlagerte sich das politische Zentrum des Reiches, und der Bedarf an so prächtigen Bädern entfiel. Unfertige Gebäude wurden zweckentfremdet: Räume in Kasernen und Lager umgewandelt, massive Mauern in Verteidigungsanlagen integriert. Im frühen Mittelalter wurde ein Teil des Komplexes in das städtische Befestigungssystem aufgenommen, wodurch ein erheblicher Teil der Konstruktionen erhalten blieb. In den folgenden Jahrhunderten dienten die Ruinen als Steinbruch – die Bevölkerung nutzte die Gebäude als Baumaterial." },
+        { text: "Das Interesse an der Stätte kehrte erst im 19. Jahrhundert mit der Entwicklung der Archäologie zurück. Ausgrabungen begannen, unterirdische Galerien wurden freigelegt und die römischen Ingenieursysteme – Heizung, Wasserversorgung und Abwasser – wissenschaftlich untersucht. Im 20. Jahrhundert wurde das Objekt als einzigartiges Zeugnis spätantiker Architektur anerkannt und als Teil des Trierer Römischen Denkmälerensembles in die UNESCO-Liste aufgenommen. Heute gelten die Thermen als eines der beeindruckendsten Beispiele römischer Infrastruktur nördlich der Alpen und als wichtige Quelle für Wissen über das städtische Leben der Spätantike." },
+        { bold: "Architektur und Ingenieurtechnik. ", text: "Die Kaiserthermen in Trier sind ein herausragendes Beispiel spätantiker monumentaler Architektur der Römischen Kaiserzeit, das das Ingenieursdenken der Spätantike demonstriert. Der Komplex wurde nach dem klassischen Schema kaiserlicher Thermen entworfen, jedoch in deutlich größerem Maßstab: die zentrale Achse beinhaltete eine Abfolge von Räumen mit unterschiedlichen Temperaturen – kalt, warm und heiß – verbunden durch symmetrische Übergänge und umgeben von Nebengebäuden." },
+        { text: "Die Hauptarchitekturmerkmale sind die Massivität der Konstruktionen. Mauern von mehreren Metern Dicke wurden aus römischem Beton (opus caementicium) errichtet und mit Stein und Ziegel verkleidet. Die Höhe einiger Räume überstieg 20 Meter, und die Gewölbe wurden durch ein komplexes Arkadensystem getragen, das die Last gleichmäßig verteilte. Selbst heute hinterlassen die erhaltenen Mauerfragmente den Eindruck einer Festung und nicht nur eines Badekomplexes." },
+        { text: "Der Ingenieurteil war noch beeindruckender. Unter den Böden verlief ein Netzwerk unterirdischer Korridore, durch die Sklaven und Personal die Funktion des Heizsystems aufrechterhielten. Heiße Luft zirkulierte unter den Böden und innerhalb der Mauern und erwärmte die Räume – diese Technik erlaubte eine präzise Steuerung der Temperatur in den verschiedenen Hallen. Wasser wurde über Aquädukte geleitet, in Reservoirs und Becken verteilt und anschließend durch ein komplexes Kanalisationssystem abgeführt, das auf enorme Mengen ausgelegt war." },
+        { text: "Besondere Bedeutung haben die heute für Besucher zugänglichen unterirdischen Galerien. Sie zeigen, dass die Thermen nicht nur ein Ort der Erholung waren, sondern ein echter technischer Komplex – eine Kombination aus Architektur, Hydraulik und Heiztechnik. Gerade dank der Stabilität dieser Ingenieurslösungen ist ein großer Teil der Struktur bis heute erhalten geblieben, trotz Kriegen, Umbauten und Abbruchmaßnahmen im Mittelalter." }
+      ]
+    },
+    tickets_and_entry: {
+      title: "Praktische Informationen",
+      items: [
+        { bold: "Adresse:", text: "Weberbach 41, 54290 Trier, Deutschland" },
+        { bold: "Öffnungszeiten (ungefähr):", text: "<br>April-September: täglich 09:00-18:00 <br>Oktober: 09:00-17:00 <br>November-März: 09:00-16:00 <br> (letzter Einlass 30 Minuten vor Schließung)" },
+        { bold: "Eintrittspreise (2026):", text: "<br>Erwachsene: 6,00 € <br>Erwachsene ermäßigt (Studenten, Rentner usw.): 5,00 € <br>Kinder und Jugendliche (6–17 Jahre): 3,00 € <br>Kinder unter 6 Jahren: kostenlos <br>Familientickets: 1 Erwachsener + Kinder: 6,00 €, 2 Erwachsene + Kinder: 12,00 € <br>Gruppentickets (10+): Erwachsene: 5,00 € Kinder/Jugendliche: 3,00 € <br><b>Tipps:</b> Tickets können vor Ort gekauft werden oder kombinierte Pässe genutzt werden (z. B. „AntikenCard“ für mehrere römische Denkmäler in Trier)." }
+      ]
+    },
+    sub_objects: {
+      title: "Sehenswürdigkeiten",
+      items: [
+        { bold: "Thermen", text: "heute stellen sie keinen herkömmlichen Museum dar, sondern einen archäologischen Komplex, in dem Ruinen und interaktive Elemente kombiniert sind, um ein umfassendes Bild vom Leben der Römer zu vermitteln." },
+        { bold: "Unterirdische Dienstgalerien und Kanäle", text: "– Besucher können in das Labyrinth der Untergeschosse hinabsteigen, wo gezeigt wird, wie Sklaven Heizung, Zirkulation von Warmwasser und Wasserversorgung betrieben haben. Diese Korridore vermitteln das Gefühl der Arbeit des „Herzens“ des Komplexes und zeigen die Ingenieurskunst der Antike." },
+        { bold: "Überirdische Ruinen", text: "– massive Arkaden, Mauern und Fundamente sind erhalten, die die Dimensionen des Komplexes verdeutlichen: große Hallen, hohe Gewölbe, symmetrische Grundrisse. Hier kann man sich leicht vorstellen, wie luxuriös die Thermen für die Erholung der kaiserlichen Elite und der Stadtbewohner gewesen sind." },
+        { bold: "Multimediale Führungen und Animationen", text: "– moderne Technik ermöglicht es, die Ruinen „zum Leben zu erwecken“: Auf Bildschirmen und via Audioguide kann man die Rekonstruktion der Innenräume, Bewegungen der Besucher, Wasserbecken und Heizsystem sehen, was die Besichtigung anschaulicher und unterhaltsamer macht." },
+        { bold: "Aussichtsplattform", text: "– offener Balkon mit Blick auf das gesamte Gelände und die Umgebung des Palastviertels. Aus der Höhe werden besonders die Dimensionen des Baus und die Verbindung der Thermen mit anderen Denkmälern des spätantiken Trier sichtbar." },
+        { bold: "Wechselnde Ausstellungen und Veranstaltungen", text: "– gelegentlich dient der Komplex als Bühne für historische Nachstellungen, kulturelle Veranstaltungen und Bildungsprogramme, darunter das Festival „Bread and Games“, das die römischen Traditionen durch Spiele, Kostüme und Handwerk vermittelt." },
+        { bold: "Selbstgeführter Rundgang", text: "– angelegte Wege und Informationstafeln ermöglichen es den Besuchern, den gesamten Komplex zu erkunden, sowohl Architektur als auch Ingenieursysteme zu studieren und die Nutzung der verschiedenen Thermenräume in der Antike nachzuvollziehen." }
+      ]
+    },
+    interestingFacts: {
+      title: "Interessante Fakten",
+      items: [
+        { text: "Der Komplex wurde teilweise entsprechend seiner Bestimmung genutzt, aber niemals vollständig fertiggestellt." },
+        { text: "Die Thermen mit ihren Kanälen und unterirdischen Galerien bieten einzigartiges Material zum Verständnis der Ingenieurslösungen der alten Römer." },
+        { text: "Das Bad war nicht nur ein Ort der Körperpflege, sondern auch des gesellschaftlichen, kulturellen und geschäftlichen Lebens – die Römer trafen sich dort und entspannten gemeinsam." },
+        { text: "Die Thermen nehmen häufig an kulturellen Veranstaltungen teil, beispielsweise beim Festival „Bread and Games“ als Schauplatz für das Leben in der Antike." }
+      ]
+    },
+    construction_period: "Ende 3. bis Anfang 4. Jahrhundert n. Chr.",
+    meta: {
+      title: "Römische Kaiserthermen in Trier – Geschichte, Fotos, Öffnungszeiten",
+      description: "Erfahren Sie mehr über die Geschichte, Führungen und praktische Informationen zu den römischen Kaiserthermen (Kaiserthermen) in Trier – einer der größten antiken Badeanlagen nördlich der Alpen, die in die UNESCO-Liste aufgenommen wurden.",
+      ogTitle: "Kaiserthermen Trier – Römische Antike Bäder",
+      ogDescription: "Entdecken Sie die Kaiserthermen in Trier: antike Ruinen der imposanten römischen Bäder mit unterirdischen Galerien, multimedialen Ausstellungen und reicher Geschichte.",
+      ogImage: "https://our-travels.info/foto/Germany/rheinland-pfalz/trier-city/kaiserthermen/01.JPG"
+    }
+  },
 ];
 
 export default datas;

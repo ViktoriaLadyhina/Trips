@@ -109,6 +109,7 @@ import BreadCrumbs from '../../components/breadCrumbs/BreadCrumbs';
       // Trier
       portaNigra_trier: { ru: 'Порта Нигра («Чёрные ворота»)', de: 'Porta Nigra', ua: 'Порта Нігра («Чорні ворота»)' },
       amphitheater_trier: { ru: 'Римский амфитеатр', de: 'Römisches Amphitheater', ua: 'Римський амфітеатр' },
+      kaiserthermen_trier: { ru: 'Римские императорские бани', de: 'Römische Kaiserthermen', ua: 'Римські імператорські терми' },
 
       // Ukraine
       // Sumska oblast
@@ -158,6 +159,7 @@ const Map = () => {
                   <li><Link to="/germany/rheinland-pfalz/city/trier">{t.cities.trier[lang]}</Link>
                     <ul>
                       <li><Link to="/germany/rheinland-pfalz/city/trier/attractions/portaNigra_trier">{t.attractions.portaNigra_trier[lang]}</Link></li>
+                      <li><Link to="/germany/rheinland-pfalz/city/trier/attractions/kaiserthermen_trier">{t.attractions.kaiserthermen_trier[lang]}</Link></li>
                       <li><Link to="/germany/rheinland-pfalz/city/trier/attractions/amphitheater_trier">{t.attractions.amphitheater_trier[lang]}</Link></li>
                     </ul>
                   </li>

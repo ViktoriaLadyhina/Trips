@@ -370,7 +370,14 @@ export const Fotos = {
         { path: "Germany/rheinland-pfalz/trier-city/amphitheater/005.JPG", title: { ru: "Римский амфитеатр в Трире, 2024", ua: "Римський амфітеатр у Трірі, 2024", de: "Römischer Amphitheater in Trier, 2024" } },
         { path: "Germany/rheinland-pfalz/trier-city/amphitheater/006.JPG", title: { ru: "Римский амфитеатр в Трире, 2024", ua: "Римський амфітеатр у Трірі, 2024", de: "Römischer Amphitheater in Trier, 2024" } },
         { path: "Germany/rheinland-pfalz/trier-city/amphitheater/007.JPG", title: { ru: "Римский амфитеатр в Трире, 2024", ua: "Римський амфітеатр у Трірі, 2024", de: "Römischer Amphitheater in Trier, 2024" } },
-      ]
+      ],
+      kaiserthermen_trier: [
+        { path: "Germany/rheinland-pfalz/trier-city/kaiserthermen/01.JPG", title: { ru: "Римские императорские бани, 2024", ua: "Римські імператорські терми, 2024", de: "Römische Kaiserthermen, 2024" } },
+        { path: "Germany/rheinland-pfalz/trier-city/kaiserthermen/02.JPG", title: { ru: "Римские императорские бани, 2024", ua: "Римські імператорські терми, 2024", de: "Römische Kaiserthermen, 2024" } },
+        { path: "Germany/rheinland-pfalz/trier-city/kaiserthermen/03.JPG", title: { ru: "Римские императорские бани, 2024", ua: "Римські імператорські терми, 2024", de: "Römische Kaiserthermen, 2024" } },
+        { path: "Germany/rheinland-pfalz/trier-city/kaiserthermen/04.JPG", title: { ru: "Римские императорские бани, 2024", ua: "Римські імператорські терми, 2024", de: "Römische Kaiserthermen, 2024" } },
+        { path: "Germany/rheinland-pfalz/trier-city/kaiserthermen/05.JPG", title: { ru: "Римские императорские бани, 2024", ua: "Римські імператорські терми, 2024", de: "Römische Kaiserthermen, 2024" } },
+      ],
     }
   }
 }
