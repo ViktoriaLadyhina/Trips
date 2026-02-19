@@ -132,6 +132,9 @@ export const Fotos = {
       ],
       finkens_garten_koln: [
         { path: "Germany/nrw/koln/koln-city/finkens_garten/001.jpg", title: { ru: "Экологический сад Финкенсгартен (фото взято с интернета)", ua: "Екологічний сад Фінкенсгартен (фото взято з Інтернету)", de: "Finkens Garten (Foto aus dem Internet)" } },
+      ],
+      makk_museum_koln: [
+        { path: "Germany/nrw/koln/koln-city/makk_museum/001.JPG", title: { ru: "Музей прикладного искусства (фото взято с интернета)", ua: "Музей прикладного мистецтва (фото взято з Інтернету)", de: "Museum für angewandte Kunst (Foto aus dem Internet)" } },
       ]
     },
     bruhl: {
@@ -164,24 +167,24 @@ export const Fotos = {
         { path: "Germany/nrw/koln/Rhein-Erft-Kreis/bruhl/max_ernst_museum/Max-Ernst-Museum.jpg", title: { ru: "Музей Макса Эрнста (фото взято с интернета)", ua: "Музей Макса Ернста (фото взято з Інтернету)", de: "Max Ernst Museum (Foto aus dem Internet)" } }
       ],
       bruhl_palaces: [
-        { path: "Germany/nrw/koln/Rhein-Erft-Kreis/bruhl/bruhel_palaces/001.jpg", title: { ru: "Дворцы Брюля: Аугустусбург  - 2023", ua: "Палаци Брюля: Аугустусбург - 2023", de: "Brühler Schlösser: Augustusburg - 2023" } },
-        { path: "Germany/nrw/koln/Rhein-Erft-Kreis/bruhl/bruhel_palaces/013.jpg", title: { ru: "Дворцы Брюля: Аугустусбург  - 2022", ua: "Палаци Брюля: Аугустусбург - 2022", de: "Brühler Schlösser: Augustusburg - 2022" } },
-        { path: "Germany/nrw/koln/Rhein-Erft-Kreis/bruhl/bruhel_palaces/014.jpg", title: { ru: "Дворцы Брюля: Аугустусбург  - 2022", ua: "Палаци Брюля: Аугустусбург - 2022", de: "Brühler Schlösser: Augustusburg - 2022" } },
-        { path: "Germany/nrw/koln/Rhein-Erft-Kreis/bruhl/bruhel_palaces/002.jpg", title: { ru: "Дворцы Брюля: Аугустусбург  - 2023", ua: "Палаци Брюля: Аугустусбург - 2023", de: "Brühler Schlösser: Augustusburg - 2023" } },
-        { path: "Germany/nrw/koln/Rhein-Erft-Kreis/bruhl/bruhel_palaces/003.jpg", title: { ru: "Дворцы Брюля: Аугустусбург  - 2023", ua: "Палаци Брюля: Аугустусбург - 2023", de: "Brühler Schlösser: Augustusburg - 2023" } },
-        { path: "Germany/nrw/koln/Rhein-Erft-Kreis/bruhl/bruhel_palaces/004.jpg", title: { ru: "Дворцы Брюля: Аугустусбург  - 2023", ua: "Палаци Брюля: Аугустусбург - 2023", de: "Brühler Schlösser: Augustusburg - 2023" } },
-        { path: "Germany/nrw/koln/Rhein-Erft-Kreis/bruhl/bruhel_palaces/005.jpg", title: { ru: "Дворцы Брюля: Аугустусбург  - 2023", ua: "Палаци Брюля: Аугустусбург - 2023", de: "Brühler Schlösser: Augustusburg - 2023" } },
-        { path: "Germany/nrw/koln/Rhein-Erft-Kreis/bruhl/bruhel_palaces/006.jpg", title: { ru: "Дворцы Брюля: Аугустусбург  - 2023", ua: "Палаци Брюля: Аугустусбург - 2023", de: "Brühler Schlösser: Augustusburg - 2023" } },
-        { path: "Germany/nrw/koln/Rhein-Erft-Kreis/bruhl/bruhel_palaces/007.jpg", title: { ru: "Дворцы Брюля: Аугустусбург  - 2023", ua: "Палаци Брюля: Аугустусбург - 2023", de: "Brühler Schlösser: Augustusburg - 2023" } },
-        { path: "Germany/nrw/koln/Rhein-Erft-Kreis/bruhl/bruhel_palaces/008.jpg", title: { ru: "Дворцы Брюля: Аугустусбург  - 2023", ua: "Палаци Брюля: Аугустусбург - 2023", de: "Brühler Schlösser: Augustusburg - 2023" } },
-        { path: "Germany/nrw/koln/Rhein-Erft-Kreis/bruhl/bruhel_palaces/009.jpg", title: { ru: "Дворцы Брюля: Аугустусбург  - 2023", ua: "Палаци Брюля: Аугустусбург - 2023", de: "Brühler Schlösser: Augustusburg - 2023" } },
-        { path: "Germany/nrw/koln/Rhein-Erft-Kreis/bruhl/bruhel_palaces/010.jpg", title: { ru: "Дворцы Брюля: Фалькенлюст  - 2023", ua: "Палаци Брюля: Фалькенлюст - 2023", de: "Brühler Schlösser: Falkenlust - 2023" } },
-        { path: "Germany/nrw/koln/Rhein-Erft-Kreis/bruhl/bruhel_palaces/011.jpg", title: { ru: "Дворцы Брюля: Фалькенлюст  - 2023", ua: "Палаци Брюля: Фалькенлюст - 2023", de: "Brühler Schlösser: Falkenlust - 2023" } },
-        { path: "Germany/nrw/koln/Rhein-Erft-Kreis/bruhl/bruhel_palaces/012.jpg", title: { ru: "Дворцы Брюля: Фалькенлюст  - 2023", ua: "Палаци Брюля: Фалькенлюст - 2023", de: "Brühler Schlösser: Falkenlust - 2023" } },
-        { path: "Germany/nrw/koln/Rhein-Erft-Kreis/bruhl/bruhel_palaces/015.jpg", title: { ru: "Парк дворцов Брюля  - 2022", ua: "Парк палаців Брюля - 2022", de: "Brühlsche Palastgärten - 2022" } },
-        { path: "Germany/nrw/koln/Rhein-Erft-Kreis/bruhl/bruhel_palaces/016.jpg", title: { ru: "Парк дворцов Брюля  - 2022", ua: "Парк палаців Брюля - 2022", de: "Brühlsche Palastgärten - 2022" } },
-        { path: "Germany/nrw/koln/Rhein-Erft-Kreis/bruhl/bruhel_palaces/017.jpg", title: { ru: "Парк дворцов Брюля  - 2022", ua: "Парк палаців Брюля - 2022", de: "Brühlsche Palastgärten - 2022" } },
-        { path: "Germany/nrw/koln/Rhein-Erft-Kreis/bruhl/bruhel_palaces/018.jpg", title: { ru: "Дворцы Брюля: парк  - 2022", ua: "Парк палаців Брюля - 2022", de: "Brühlsche Palastgärten - 2022" } },
+        { path: "Germany/nrw/koln/Rhein-Erft-Kreis/bruhl/bruhl_palaces/001.jpg", title: { ru: "Дворцы Брюля: Аугустусбург  - 2023", ua: "Палаци Брюля: Аугустусбург - 2023", de: "Brühler Schlösser: Augustusburg - 2023" } },
+        { path: "Germany/nrw/koln/Rhein-Erft-Kreis/bruhl/bruhl_palaces/013.jpg", title: { ru: "Дворцы Брюля: Аугустусбург  - 2022", ua: "Палаци Брюля: Аугустусбург - 2022", de: "Brühler Schlösser: Augustusburg - 2022" } },
+        { path: "Germany/nrw/koln/Rhein-Erft-Kreis/bruhl/bruhl_palaces/014.jpg", title: { ru: "Дворцы Брюля: Аугустусбург  - 2022", ua: "Палаци Брюля: Аугустусбург - 2022", de: "Brühler Schlösser: Augustusburg - 2022" } },
+        { path: "Germany/nrw/koln/Rhein-Erft-Kreis/bruhl/bruhl_palaces/002.jpg", title: { ru: "Дворцы Брюля: Аугустусбург  - 2023", ua: "Палаци Брюля: Аугустусбург - 2023", de: "Brühler Schlösser: Augustusburg - 2023" } },
+        { path: "Germany/nrw/koln/Rhein-Erft-Kreis/bruhl/bruhl_palaces/003.jpg", title: { ru: "Дворцы Брюля: Аугустусбург  - 2023", ua: "Палаци Брюля: Аугустусбург - 2023", de: "Brühler Schlösser: Augustusburg - 2023" } },
+        { path: "Germany/nrw/koln/Rhein-Erft-Kreis/bruhl/bruhl_palaces/004.jpg", title: { ru: "Дворцы Брюля: Аугустусбург  - 2023", ua: "Палаци Брюля: Аугустусбург - 2023", de: "Brühler Schlösser: Augustusburg - 2023" } },
+        { path: "Germany/nrw/koln/Rhein-Erft-Kreis/bruhl/bruhl_palaces/005.jpg", title: { ru: "Дворцы Брюля: Аугустусбург  - 2023", ua: "Палаци Брюля: Аугустусбург - 2023", de: "Brühler Schlösser: Augustusburg - 2023" } },
+        { path: "Germany/nrw/koln/Rhein-Erft-Kreis/bruhl/bruhl_palaces/006.jpg", title: { ru: "Дворцы Брюля: Аугустусбург  - 2023", ua: "Палаци Брюля: Аугустусбург - 2023", de: "Brühler Schlösser: Augustusburg - 2023" } },
+        { path: "Germany/nrw/koln/Rhein-Erft-Kreis/bruhl/bruhl_palaces/007.jpg", title: { ru: "Дворцы Брюля: Аугустусбург  - 2023", ua: "Палаци Брюля: Аугустусбург - 2023", de: "Brühler Schlösser: Augustusburg - 2023" } },
+        { path: "Germany/nrw/koln/Rhein-Erft-Kreis/bruhl/bruhl_palaces/008.jpg", title: { ru: "Дворцы Брюля: Аугустусбург  - 2023", ua: "Палаци Брюля: Аугустусбург - 2023", de: "Brühler Schlösser: Augustusburg - 2023" } },
+        { path: "Germany/nrw/koln/Rhein-Erft-Kreis/bruhl/bruhl_palaces/009.jpg", title: { ru: "Дворцы Брюля: Аугустусбург  - 2023", ua: "Палаци Брюля: Аугустусбург - 2023", de: "Brühler Schlösser: Augustusburg - 2023" } },
+        { path: "Germany/nrw/koln/Rhein-Erft-Kreis/bruhl/bruhl_palaces/010.jpg", title: { ru: "Дворцы Брюля: Фалькенлюст  - 2023", ua: "Палаци Брюля: Фалькенлюст - 2023", de: "Brühler Schlösser: Falkenlust - 2023" } },
+        { path: "Germany/nrw/koln/Rhein-Erft-Kreis/bruhl/bruhl_palaces/011.jpg", title: { ru: "Дворцы Брюля: Фалькенлюст  - 2023", ua: "Палаци Брюля: Фалькенлюст - 2023", de: "Brühler Schlösser: Falkenlust - 2023" } },
+        { path: "Germany/nrw/koln/Rhein-Erft-Kreis/bruhl/bruhl_palaces/012.jpg", title: { ru: "Дворцы Брюля: Фалькенлюст  - 2023", ua: "Палаци Брюля: Фалькенлюст - 2023", de: "Brühler Schlösser: Falkenlust - 2023" } },
+        { path: "Germany/nrw/koln/Rhein-Erft-Kreis/bruhl/bruhl_palaces/015.jpg", title: { ru: "Парк дворцов Брюля  - 2022", ua: "Парк палаців Брюля - 2022", de: "Brühlsche Palastgärten - 2022" } },
+        { path: "Germany/nrw/koln/Rhein-Erft-Kreis/bruhl/bruhl_palaces/016.jpg", title: { ru: "Парк дворцов Брюля  - 2022", ua: "Парк палаців Брюля - 2022", de: "Brühlsche Palastgärten - 2022" } },
+        { path: "Germany/nrw/koln/Rhein-Erft-Kreis/bruhl/bruhl_palaces/017.jpg", title: { ru: "Парк дворцов Брюля  - 2022", ua: "Парк палаців Брюля - 2022", de: "Brühlsche Palastgärten - 2022" } },
+        { path: "Germany/nrw/koln/Rhein-Erft-Kreis/bruhl/bruhl_palaces/018.jpg", title: { ru: "Дворцы Брюля: парк  - 2022", ua: "Парк палаців Брюля - 2022", de: "Brühlsche Palastgärten - 2022" } },
       ]
     },
     frechen: {

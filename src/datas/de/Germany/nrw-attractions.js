@@ -227,8 +227,8 @@ const datas = [
             items: [
                 { bold: "Adresse (temporäre Ausstellung):", text: "Belgisches Haus, Cäcilienstraße 46, 50667 Köln" },
                 { bold: "Altes Gebäude:", text: "Roncalliplatz 4, neben dem Kölner Dom" },
-                { bold: "Öffnungszeiten:", text: "Mittwoch bis Montag, 10:00 – 18:00, Dienstag geschlossen" },
-                { bold: "Eintrittspreise (2025):", text: "Erwachsene – 6 €, ermäßigt – 3 €" },
+                { bold: "Öffnungszeiten:", text: "<br>Mittwoch bis Montag, 10:00 – 18:00, <br>Dienstag geschlossen" },
+                { bold: "Eintrittspreise (2025):", text: "<br>Erwachsene – 6 €, <br>ermäßigt – 3 €" },
             ]
         },
         interestingFacts: {
@@ -280,7 +280,7 @@ const datas = [
             items: [
                 { "bold": "Adresse:", "text": "Obenmarspforten 21, 50667 Köln, Deutschland" },
                 { "bold": "Öffnungszeiten:", "text": "täglich von 10:00 bis 18:00 Uhr (Führungen nach Plan)" },
-                { "bold": "Ticketpreise (2025):", "text": "Erwachsene – 8 €, ermäßigt – 5 €, Kinder bis 10 Jahre – kostenlos" },
+                { "bold": "Ticketpreise (2025):", "text": "<br>Erwachsene – 8 €, <br>ermäßigt – 5 €, <br>Kinder bis 10 Jahre – kostenlos" },
                 { "bold": "Führungen:", "text": "Das Museum ist nur im Rahmen von Führungen zugänglich, die in mehreren Sprachen angeboten werden. Die Tour dauert ca. 45 Minuten und endet im Museumsshop, wo das originale Eau de Cologne nach Farinas Rezept gekauft werden kann." }
             ]
         },
@@ -337,8 +337,8 @@ const datas = [
             title: "Praktische Informationen",
             items: [
                 { bold: "Adresse:", text: "Bischofsgartenstr. 1, 50667 Köln, Deutschland" },
-                { bold: "Öffnungszeiten:", text: "Dienstag–Sonntag, 10:00–18:00; jeden ersten Freitag im Monat 10:00–22:00" },
-                { bold: "Eintrittspreise (2025):", text: "Erwachsene: 12 €. Ermäßigt: 8 € (für Studierende, Schüler, Rentner). Kinder bis 18 Jahre: frei. Gruppen (ab 20 Personen): 8,70 € pro Person" }
+                { bold: "Öffnungszeiten:", text: "<br>Dienstag–Sonntag, 10:00–18:00; <br>jeden ersten Freitag im Monat 10:00–22:00" },
+                { bold: "Eintrittspreise (2025):", text: "<br>Erwachsene: 12 €. <br>Ermäßigt: 8 € (für Studierende, Schüler, Rentner). <br>Kinder bis 18 Jahre: frei. <br>Gruppen (ab 20 Personen): 8,70 € pro Person" }
             ]
         },
         interestingFacts: {
@@ -392,7 +392,7 @@ const datas = [
             items: [
                 { bold: "Adresse:", text: "Am Schokoladenmuseum 1a, 50678 Köln" },
                 { bold: "Öffnungszeiten:", text: "Täglich 10:00 – 18:00. Letzter Einlass eine Stunde vor Schließung." },
-                { bold: "Eintrittspreise (ca. 2025):", text: "Erwachsene ~16,50 €, Kinder/Schüler ~9,50 € u.a." },
+                { bold: "Eintrittspreise (ca. 2025):", text: "<br>Erwachsene ~16,50 €, <br>Kinder/Schüler ~9,50 € u.a." },
                 { bold: "Parken und Verkehr:", text: "Parkhaus „Rheinauhafen“ in der Nähe; fußläufig vom Stadtzentrum Kölns erreichbar." }
             ]
         },
@@ -468,7 +468,7 @@ const datas = [
                 { bold: "Adresse:", text: "Rathausplatz 2, 50667 Köln, Deutschland" },
                 { bold: "Status des Museums:", text: "Das Museum ist nicht vollständig eröffnet: Der offizielle Abschluss des Projekts ist für die kommenden Jahre geplant. Teile des Rundgangs und der Ausstellungen sind bereits im Rahmen von Führungen zugänglich. Zukünftig ist die Erweiterung der Präsentationsflächen geplant, einschließlich Portikus und weiterer archäologischer Objekte." },
                 { bold: "Öffnungszeiten:", text: "Täglich 10:00–18:00 Uhr (kann je nach Führungen und Sonderausstellungen variieren)" },
-                { bold: "Eintrittspreise (ca. 2025):", text: "Erwachsene – ca. 6–8 €, Kinder/Schüler – kostenlos oder ermäßigt, Führungen gesondert zu bezahlen." }
+                { bold: "Eintrittspreise (ca. 2025):", text: "<br>Erwachsene – ca. 6–8 €, <br>Kinder/Schüler – kostenlos oder ermäßigt, <br>Führungen gesondert zu bezahlen." }
             ]
         },
         interestingFacts: {
@@ -527,8 +527,8 @@ const datas = [
             title: "Praktische Informationen",
             items: [
                 { bold: "Adresse:", text: "Obenmarspforten 40, 50667 Köln, Deutschland" },
-                { bold: "Öffnungszeiten:", text: "Dienstag–Sonntag: 10:00–18:00. Jeder 1. und 3. Donnerstag im Monat: 10:00–22:00. Montag: geschlossen (besondere Feiertags- und Saisonzeiten können abweichen)" },
-                { bold: "Eintrittspreise (2025):", text: "Erwachsene: ca. 10–13 €. Ermäßigt: ca. 7–8 € (Studenten, Senioren, Sozialvergünstigungen). Kinder bis 18 Jahre: frei. Familien-, Gruppen- und Kombitickets mit anderen Museen der Stadt verfügbar." }
+                { bold: "Öffnungszeiten:", text: "<br>Dienstag–Sonntag: 10:00–18:00. <br>Jeder 1. und 3. Donnerstag im Monat: 10:00–22:00. <br>Montag: geschlossen (besondere Feiertags- und Saisonzeiten können abweichen)" },
+                { bold: "Eintrittspreise (2025):", text: "<br>Erwachsene: ca. 10–13 €. <br>Ermäßigt: ca. 7–8 € (Studenten, Senioren, Sozialvergünstigungen). <br>Kinder bis 18 Jahre: frei. <br>Familien-, Gruppen- und Kombitickets mit anderen Museen der Stadt verfügbar." }
             ]
         },
         interestingFacts: {
@@ -574,8 +574,8 @@ const datas = [
             title: "Praktische Informationen",
             items: [
                 { bold: "Adresse:", text: "Universitätsstraße 100, 50674 Köln, Deutschland" },
-                { bold: "Öffnungszeiten:", text: "Dienstag–Sonntag: 11:00–17:00. Jeden ersten Donnerstag im Monat: 11:00–22:00. Montag: geschlossen" },
-                { bold: "Eintritt (2025-2026):", text: "Der Eintritt kostet etwa 9,50 € für Erwachsene und ca. 5,50 € für ermäßigte Besucher." },
+                { bold: "Öffnungszeiten:", text: "<br>Dienstag–Sonntag: 11:00–17:00. <br>Jeden ersten Donnerstag im Monat: 11:00–22:00. <br>Montag: geschlossen" },
+                { bold: "Eintritt (2025-2026):", text: "Der Eintritt kostet etwa 9,50 € für Erwachsene und ca. 5,50 € für ermäßigte Besucher." },
                 { bold: "Barrierefreiheit:", text: "Vollständig barrierefrei, Rampen, Aufzug, Toiletten für Menschen mit eingeschränkter Mobilität." }
             ]
         },
@@ -636,8 +636,8 @@ const datas = [
             items: [
                 { bold: "Adresse:", text: "Cäcilienstraße 29-33, 50667 Köln, Deutschland." },
                 { bold: "Anreise:", text: "Die nächste Haltestelle des öffentlichen Verkehrs ist Neumarkt (5 Minuten zu Fuß)." },
-                { bold: "Öffnungszeiten:", text: "Mo – geschlossen, Di-So: 10:00–18:00, Do: 10:00–20:00. Am ersten Donnerstag jedes Monats: 10:00–22:00 (Sonderveranstaltung «CologneTag»)." },
-                { bold: "Eintrittspreise (ca. 2025–2026):", text: "Erwachsene: 6 €, ermäßigt: 3,50 € (Studenten, Rentner etc.), Kombiticket mit dem Rautenstrauch-Joest-Museum: 10 €, Kinder bis 6 Jahre – frei. Saisonale Änderungen möglich, bitte auf der offiziellen Webseite vor Besuch prüfen." },
+                { bold: "Öffnungszeiten:", text: "<br>Mo – geschlossen, Di-So: 10:00-18:00, <br>Do: 10:00-20:00. <br>Am ersten Donnerstag jedes Monats: 10:00-22:00 (Sonderveranstaltung «CologneTag»)." },
+                { bold: "Eintrittspreise (ca. 2025–2026):", text: "<br>Erwachsene: 6 €, <br>ermäßigt: 3,50 € (Studenten, Rentner etc.), <br>Kombiticket mit dem Rautenstrauch-Joest-Museum: 10 €, <br>Kinder bis 6 Jahre – frei. <br>Saisonale Änderungen möglich, bitte auf der offiziellen Webseite vor Besuch prüfen." },
                 { bold: "Besuchertipps:", text: "Im Museum werden Führungen, Vorträge und Bildungsprogramme angeboten (oft im Eintrittspreis enthalten oder gegen Aufpreis)." }
             ]
         },
@@ -697,9 +697,9 @@ const datas = [
         tickets_and_entry: {
             title: "Praktische Informationen",
             items: [
-                { bold: "Adresse:", text: "Cäcilienstraße 29-33, 50667 Köln, Deutschland. Anreise: U-Bahn/Straßenbahn Haltestelle Neumarkt (ca. 2–5 Minuten zu Fuß)." },
-                { bold: "Öffnungszeiten:", text: "Dienstag – Sonntag: 10:00 – 18:00, Donnerstag: 10:00 – 20:00, erster Donnerstag im Monat: 10:00 – 22:00, Montag: geschlossen. An Feiertagen gelten die Sonntagszeiten." },
-                { bold: "Tickets: ", text: "Dauerausstellung: ca. €7.00 (Erwachsene), €4.50 (ermäßigt). Kombiticket Dauer- und Sonderausstellungen: ca. €18 (Erwachsene), €15 (ermäßigt). Kombiticket mit Museum Schnütgen: ca. €10 / €7 (ermäßigt). Es gibt zusätzliche Ermäßigungen für Gruppen, Menschen mit Behinderung sowie freien Eintritt für Geflüchtete mit Begleitung." }
+                { bold: "Adresse:", text: "Cäcilienstraße 29-33, 50667 Köln, Deutschland. <br>Anreise: U-Bahn/Straßenbahn Haltestelle Neumarkt (ca. 2–5 Minuten zu Fuß)." },
+                { bold: "Öffnungszeiten:", text: "<br>Dienstag – Sonntag: 10:00-18:00, <br>Donnerstag: 10:00-20:00, <br>erster Donnerstag im Monat: 10:00-22:00, <br>Montag: geschlossen. <br>An Feiertagen gelten die Sonntagszeiten." },
+                { bold: "Tickets: ", text: "<br>Dauerausstellung: ca. €7.00 (Erwachsene), €4.50 (ermäßigt). <br>Kombiticket Dauer- und Sonderausstellungen: ca. €18 (Erwachsene), €15 (ermäßigt). <br>Kombiticket mit Museum Schnütgen: ca. €10 / €7 (ermäßigt). <br>Es gibt zusätzliche Ermäßigungen für Gruppen, Menschen mit Behinderung sowie freien Eintritt für Geflüchtete mit Begleitung." }
             ]
         },
         sub_objects: {
@@ -796,6 +796,66 @@ const datas = [
         }
     },
     {
+        id: "makk_museum_koln",
+        name: "Museum für Angewandte Kunst",
+        type: ["museum"],
+        path: "makk_museum_koln",
+        countryPath: "germany",
+        regionsPath: "nrw",
+        districtPath: "city",
+        cityPath: "koln",
+        fotoCard: "Germany/nrw/koln/koln-city/makk_museum/001.JPG",
+        location: "Köln, Deutschland",
+        officialSite: [
+            { bold: "Offizielle Website", link: "https://makk.de/" }
+        ],
+        short_description: "Das Museum für Angewandte Kunst Köln (oft als MAKK abgekürzt) ist eines der führenden Museen für Kunsthandwerk und Design in Deutschland. Hier werden Objekte des europäischen Designs und Kunsthandwerks vom Mittelalter bis zur Gegenwart präsentiert: Möbel, Geschirr, Schmuck, Textilien, Designobjekte und vieles mehr.",
+        full_description: {
+            title: "Beschreibung und Geschichte",
+            items: [
+                { bold: "Das Museum für Angewandte Kunst", text: " ist eines der führenden Museen Deutschlands für Kunsthandwerk und Design. Seine Sammlung umfasst mehr als 100.000 Objekte und deckt nahezu tausend Jahre europäischer Kulturgeschichte ab – von mittelalterlichen Handwerksarbeiten bis zu Werken zeitgenössischer Designer. Die Ausstellung ist chronologisch aufgebaut und ermöglicht es Besuchern, die Entwicklung von Stilen, Technologien und Geschmäckern verschiedener Epochen nachzuvollziehen. Gezeigt werden Möbel, Glas, Porzellan, Textilien, Schmuck sowie Grafik- und Industriedesign." },
+                { text: "Eine Besonderheit des Museums ist die Kombination historischer Objekte mit modernen Arbeiten, wodurch sichtbar wird, wie traditionelle Formen das heutige Design beeinflussen. Neben der Dauerausstellung finden regelmäßig Sonderausstellungen statt, die einzelnen Kunstrichtungen, Mode oder bekannten Designern gewidmet sind." },
+                { bold: "Geschichte. ", text: "Das Museum wurde 1888 unter dem Namen Kunstgewerbemuseum Köln als Bildungs- und Kulturprojekt gegründet, das Handwerker und Künstler durch Beispiele hoher Meisterschaft inspirieren sollte." },
+                { text: "Ende des 19. Jahrhunderts wurden ähnliche Museen in ganz Europa gegründet, da man davon ausging, dass das Studium historischer Vorbilder die Qualität moderner Produktion und künstlerischer Ausbildung verbessert." },
+                { text: "Die ursprüngliche Sammlung entstand durch Schenkungen, Ankäufe und Übernahmen privater Sammlungen. Nach dem Zweiten Weltkrieg wurde das Museum umfassend wiederaufgebaut und erweiterte seine Bestände um Werke des modernen und zeitgenössischen Designs." },
+                { text: "Das heutige Museumsgebäude wurde 1957 eröffnet und zählt zu den ersten Museumsbauten der Nachkriegszeit in Deutschland im Stil der Moderne." },
+                { text: "Heute wächst die Sammlung weiterhin und das Museum bleibt ein bedeutendes kulturelles Zentrum Kölns, das Handwerksgeschichte, Kunst und Industriedesign vereint." },
+            ]
+        },
+        tickets_and_entry: {
+            title: "Praktische Informationen",
+            items: [
+                { bold: "Adresse: ", text: "An der Rechtschule 7, 50667 Köln, Deutschland." },
+                { bold: "Öffnungszeiten:", text: "<br>Di-So: 10:00-18:00 <br>Mo: geschlossen (außer an Feiertagen) <br>Erster Donnerstag im Monat: bis 22:00 geöffnet." },
+                { bold: "Eintritt (2026):", text: "<br>Erwachsene: ca. 6 € <br>Ermäßigt: ca. 3,50 € <br>Kostenlos für Kinder unter 6 Jahren und junge Kölner bis 18 Jahre an bestimmten Tagen." },
+                { bold: "Anreise:", text: "10 Minuten zu Fuß vom Kölner Hauptbahnhof oder von den Haltestellen Dom/Hauptbahnhof." }
+            ]
+        },
+        sub_objects: {
+            title: "Ausstellungen",
+            items: [
+                { bold: "Dauerausstellung – das Herz des Museums:", text: "<br>• Europäisches Kunsthandwerk vom 10. Jahrhundert bis heute – Möbel, Geschirr, Glas, Schmuck, Textilien und dekorative Objekte. <br>• Design im Dialog mit Kunst: Kunstwerke und Designobjekte in thematischen Präsentationen." },
+                { bold: "Wechsel- und Sonderausstellungen (2025-2026):", text: "<br>• Von Louise Bourgeois bis Yoko Ono – Jewellery by Female Artists – Schmuckarbeiten von Künstlerinnen des 20.–21. Jahrhunderts (bis 26. April 2026). <br>• Weitere thematische Sonderausstellungen zu Design und angewandter Kunst." },
+            ]
+        },
+        interestingFacts: {
+            title: "Interessante Fakten",
+            items: [
+                { text: "Das Museum ist bekannt für den Dialog zwischen Design und Kunst – Designobjekte werden zusammen mit Gemälden und Skulpturen präsentiert." },
+                { text: "An jedem ersten Donnerstag im Monat findet der sogenannte „KölnTag“ statt, an dem viele städtische Museen bis spät abends kostenlos geöffnet sind." },
+                { text: "Im MAKK werden regelmäßig Sonderausstellungen, Vorträge und Bildungsprogramme veranstaltet." }
+            ]
+        },
+        construction_period: "1888 (gegründet als Kunstgewerbemuseum Köln).",
+        meta: {
+            title: "Museum für Angewandte Kunst Köln – Design- und Handwerkskollektionen",
+            description: "Museum für Angewandte Kunst Köln: Möbel, Textilien, Schmuck und Design vom Mittelalter bis heute. Adresse, Öffnungszeiten, Eintritt und Ausstellungen.",
+            ogTitle: "Museum für Angewandte Kunst Köln – Sammlungen und Ausstellungen",
+            ogDescription: "Entdecken Sie einzigartige Objekte des Designs und Kunsthandwerks verschiedener Epochen im Museum für Angewandte Kunst Köln. Besucherinformationen und Details.",
+            ogImage: "https://our-travels.info/foto/Germany/nrw/koln/koln-city/makk_museum/001.JPG"
+        }
+    },
+    {
         id: "koln_bridges",
         name: "Kölner Rheinbrücken",
         type: ["technical_structure"],
@@ -878,7 +938,7 @@ const datas = [
             items: [
                 { bold: "Adresse:", text: "Riehler Straße (in der Nähe der Zoobrücke), 50668 Köln, Deutschland." },
                 { bold: "Eintritt:", text: "frei für alle." },
-                { bold: "Öffnungszeiten (2026):", text: "April–September: täglich von 10:30 bis 19:00. Oktober–März: täglich von 10:30 bis 17:00. Der Park ist ganzjährig für Spaziergänge geöffnet." },
+                { bold: "Öffnungszeiten (2026):", text: "<br>April–September: täglich von 10:30 bis 19:00. <br>Oktober–März: täglich von 10:30 bis 17:00. <br>Der Park ist ganzjährig für Spaziergänge geöffnet." },
                 { text: "Öffentliche Führungen finden in der Regel am ersten Sonntag jedes Monats um 15:00 Uhr statt (kostenpflichtig für Erwachsene und Studenten; kostenlos für Kinder bis 10 Jahre). Führungen für Gruppen sind auf Anfrage möglich." }
             ]
         },
@@ -930,8 +990,8 @@ const datas = [
             title: "Praktische Informationen",
             items: [
                 { bold: "Adresse:", text: "Riehler Straße 173, 50735 Köln, Deutschland. Der Zoo befindet sich im Stadtteil Riehl in Köln. Leicht mit öffentlichen Verkehrsmitteln vom Stadtzentrum erreichbar." },
-                { bold: "Öffnungszeiten:", text: "Der Zoo ist 365 Tage im Jahr geöffnet: Frühling/Herbst (1. März – 31. Oktober): 9:00–18:00, letzter Einlass und Kasse bis 17:30. Winter (1. November – 28. Februar): 9:00–17:00, letzter Einlass und Kasse bis 16:30. Aquarium und alle Tierhäuser schließen 30 Minuten vor Gesamtschluss. Besondere Tage: 24. und 31. Dezember normalerweise bis 14:00 Uhr geöffnet (letzter Einlass früher)." },
-                { bold: "Aktuelle Preise (ungefähr):", text: "Die Preise können je nach Saison und Ticketart variieren. Etwa: Erwachsene: ~23 €, Kinder (4–12 Jahre): ~11 €, Schüler/Studenten: ~17 €, Gruppen: Ermäßigungen ab 15 Personen. Tickets können auch online über die offizielle Website gekauft werden, was die Planung erleichtert." }
+                { bold: "Öffnungszeiten:", text: "Der Zoo ist 365 Tage im Jahr geöffnet: <br>Frühling/Herbst (1. März – 31. Oktober): 9:00–18:00, letzter Einlass und Kasse bis 17:30. <br>Winter (1. November – 28. Februar): 9:00–17:00, letzter Einlass und Kasse bis 16:30. <br>Aquarium und alle Tierhäuser schließen 30 Minuten vor Gesamtschluss. <br>Besondere Tage: 24. und 31. Dezember normalerweise bis 14:00 Uhr geöffnet (letzter Einlass früher)." },
+                { bold: "Aktuelle Preise (ungefähr):", text: "<br>Die Preise können je nach Saison und Ticketart variieren. Etwa: <br>Erwachsene: ~23 €, <br>Kinder (4–12 Jahre): ~11 €, <br>Schüler/Studenten: ~17 €, <br>Gruppen: Ermäßigungen ab 15 Personen. <br>Tickets können auch online über die offizielle Website gekauft werden, was die Planung erleichtert." }
             ]
         },
         sub_objects: {
@@ -1011,7 +1071,7 @@ const datas = [
             items: [
                 { bold: "Adresse:", text: "Schillingsrotter Straße 100, 50996 Köln, Deutschland" },
                 { bold: "Eintritt:", text: "Kostenlos" },
-                { bold: "Öffnungszeiten:", text: "November – Februar: 09:00–16:00; März, September – Oktober: 09:00–18:00; April – August: 09:00–20:00" },
+                { bold: "Öffnungszeiten:", text: "<br>November – Februar: 09:00–16:00; <br>März, September – Oktober: 09:00–18:00; <br>April – August: 09:00–20:00" },
                 { bold: "Parken:", text: "Kostenlos, in der Nähe des Friedenswaldes" },
                 { bold: "Barrierefreiheit:", text: "Bänke, Wege; Toiletten nicht überall; Hunde in der Regel nicht erlaubt." },
                 { bold: "Führungen:", text: "Erster Mittwoch des Monats um 14:30, dritter Samstag des Monats um 15:00, Anmeldung für Samstag-Gruppen erforderlich." }
@@ -1070,7 +1130,7 @@ const datas = [
             title: "Praktische Informationen",
             items: [
                 { bold: "Adresse: ", text: "Amsterdamer Straße 34, 50735 Köln" },
-                { bold: "Öffnungszeiten: ", text: "Park: von 8:00 Uhr bis Einbruch der Dunkelheit. Gewächshäuser: Oktober–März 10:00–16:00, April–September 10:00–18:00" }
+                { bold: "Öffnungszeiten: ", text: "<br>Park: von 8:00 Uhr bis Einbruch der Dunkelheit. <br>Gewächshäuser: Oktober–März 10:00–16:00, April–September 10:00–18:00" }
             ]
         },
         interesting_facts: {
@@ -1230,7 +1290,7 @@ const datas = [
             items: [
                 { bold: "Saison: ", text: "in der Regel von April bis Oktober täglich." },
                 { bold: "Öffnungszeiten: ", text: "meist von 10:00 bis 18:00 Uhr (letzte Fahrt gegen 17:45–18:00 Uhr)." },
-                { bold: "Tickets: ", text: "Erwachsene: etwa 4,80 €–7,00 € für ein Hin- und Rückfahrticket, Kinder (meist bis ca. 12 Jahre) günstiger. Preise können variieren, Ermäßigungen mit KölnCard oder anderen Karten sind möglich." }
+                { bold: "Tickets: ", text: "<br>Erwachsene: etwa 4,80 €–7,00 € für ein Hin- und Rückfahrticket, <br>Kinder (meist bis ca. 12 Jahre) günstiger. <br>Preise können variieren, Ermäßigungen mit KölnCard oder anderen Karten sind möglich." }
             ]
         },
         interestingFacts: {
@@ -1373,11 +1433,11 @@ const datas = [
         id: "bruhel_palaces",
         name: "Brühler Schlösser: Ensemble Augustusburg und Falkenlust",
         type: ['palace', 'museum'],
-        path: 'bruhl-palaces',
+        path: 'bruhl_palaces',
         regionsPath: "nrw",
         districtPath: "koln",
         cityPath: "bruhl",
-        fotoCard: "Germany/nrw/koln/Rhein-Erft-Kreis/bruhl/bruhel_palaces/001.jpg",
+        fotoCard: "Germany/nrw/koln/Rhein-Erft-Kreis/bruhl/bruhl_palaces/001.jpg",
         location: "Brühl, Deutschland",
         address: [{ bold: "Adresse:", text: " Schloss Augustusburg — Max-Ernst-Allee, 50321 Brühl, Deutschland <br>Schloss Falkenlust — An Schloss Falkenlust 1, 50321 Brühl, Deutschland" }],
         officialSite: [
@@ -1392,7 +1452,7 @@ const datas = [
             items: [
                 { bold: "Der Eintritt in den Park und die Gärten ist", text: " frei, ein Besuch ist das ganze Jahr über möglich." },
                 { bold: "Der Besuch der Schlösser Augustusburg und Falkenlust ist", text: " kostenpflichtig, Führungen finden nach Plan statt." },
-                { bold: "Preise für 2025:", text: " Augustusburg — 11 € für Erwachsene, kostenlos für Besucher bis 25 Jahre; Falkenlust — 8 €; Kombiticket — 17 €." }
+                { bold: "Preise für 2025:", text: " <br>Augustusburg — 11 € für Erwachsene, kostenlos für Besucher bis 25 Jahre; <br>Falkenlust — 8 €; Kombiticket — 17 €." }
             ]
         },
         construction_period: "1723 – Mitte des 18. Jahrhunderts",
@@ -1429,7 +1489,7 @@ const datas = [
             description: "Das Ensemble der Schlösser Augustusburg und Falkenlust in Brühl – ein Meisterwerk des Barock und Rokoko, ergänzt durch französische und englische Gärten, Brunnen, Alleen und Spiegelbecken. Geschichte, Stil, interessante Fakten.",
             ogTitle: "Brühler Schlösser: Architektur, Gärten und Legenden",
             ogDescription: "Entdecken Sie die Brühler Schlösser – ihre Pracht, Innenräume, den Park mit Parterre, Alleen und englischem Landschaftsgarten, ihre kulturelle Bedeutung und ihren UNESCO-Status.",
-            ogImage: "https://our-travels.info/foto/Germany/nrw/koln/Rhein-Erft-Kreis/bruhl/bruhel_palaces/001.jpg"
+            ogImage: "https://our-travels.info/foto/Germany/nrw/koln/Rhein-Erft-Kreis/bruhl/bruhl_palaces/001.jpg"
         }
     },
     {
@@ -1498,8 +1558,8 @@ const datas = [
         tickets_and_entry: {
             title: "Tickets und Eintritt",
             items: [
-                { bold: "Ticketpreise:", text: " abhängig von Saison und Alter der Besucher. Es wird empfohlen, Tickets im Voraus über die offizielle Website zu kaufen." },
-                { bold: "Öffnungszeiten:", text: " Hauptsaison (28. März – 15. November) von 9:00 bis 18:00 Uhr, Attraktionen öffnen um 10:00 Uhr. Sommerzeit (Juli – August) bis 19:00 Uhr. Wintersaison Wintertraum (16. November – 26. Januar) von 11:00 bis 20:00 Uhr. Geschlossen am 24., 25. Dezember und 1. Januar." }
+                { bold: "Ticketpreise:", text: " abhängig von Saison und Alter der Besucher. <br>Es wird empfohlen, Tickets im Voraus über die offizielle Website zu kaufen." },
+                { bold: "Öffnungszeiten:", text: " <br>Hauptsaison (28. März – 15. November) von 9:00 bis 18:00 Uhr, Attraktionen öffnen um 10:00 Uhr. <br>Sommerzeit (Juli – August) bis 19:00 Uhr. <br>Wintersaison Wintertraum (16. November – 26. Januar) von 11:00 bis 20:00 Uhr. <br>Geschlossen am 24., 25. Dezember und 1. Januar." }
             ]
         },
         short_description: "Phantasialand in Brühl ist einer der meistbesuchten Themenparks Europas mit über 30 Attraktionen und 6 einzigartigen Themenbereichen. Geöffnet seit 1967, empfängt jährlich etwa 2 Millionen Besucher. Der Park ist bekannt für seine beeindruckenden Achterbahnen und Wasserfahrgeschäfte sowie die Liebe zum Detail in der Gestaltung jeder Zone, was unvergessliche Erlebnisse für Besucher jeden Alters schafft.",
@@ -1528,8 +1588,8 @@ const datas = [
                 { bold: "Black Mamba", text: " – invertierte Achterbahn durch den afrikanischen Dschungel" },
             ]
         },
-        construction_period: "1967 – heute",
-        founder: "eröffnet 1967, Gründer – Gottlieb Löffelhardt und Richard Schmidt",
+        construction_period: "1967",
+        founder: " Gottlieb Löffelhardt und Richard Schmidt",
         meta: {
             title: "Phantasialand in Brühl: Themenpark mit Attraktionen und Hotels",
             description: "Phantasialand – einer der meistbesuchten Parks Europas mit über 30 Attraktionen, Themenbereichen und einzigartigen Hotels.",
@@ -1561,7 +1621,7 @@ const datas = [
                 { bold: "Ermäßigt:", text: " 5,00 €" },
                 { bold: "Familienkarte:", text: " 14,00 € (2 Erwachsene + bis zu 3 Kinder)" },
                 { bold: "Kinder bis 16 Jahre:", text: " kostenlos" },
-                { bold: "Öffnungszeiten:", text: " Dienstag – Sonntag: 11:00–17:00, Montag: geschlossen" }
+                { bold: "Öffnungszeiten:", text: " <br>Dienstag – Sonntag: 11:00–17:00, <br>Montag: geschlossen" }
             ]
         },
         short_description: "Das KERAMION in Frechen ist ein Museum, das historische und moderne Keramik vereint; es befindet sich in einem futuristisch gestalteten runden Gebäude, das 1971 vom Architekturbüro Peter Neufert im Auftrag des Sammlers Dr. Gottfried Cremer errichtet wurde.",
@@ -1583,7 +1643,7 @@ const datas = [
             ]
         },
         construction_period: "Das Museumsgebäude wurde 1970–1971 errichtet. Das Museum wurde 2002 eröffnet.",
-        founder: "Dr. Gottfried Cremer und die Stadt Frechen",
+        founder: " Dr. Gottfried Cremer und die Stadt Frechen",
         meta: {
             title: "KERAMION – moderne und historische Keramik in Frechen",
             description: "KERAMION: Dauerausstellung und Sonderausstellungen von Keramik, Geschichte der Produktion und zeitgenössische künstlerische Perspektiven.",
@@ -1609,8 +1669,8 @@ const datas = [
         tickets_and_entry: {
             title: "Eintritt und Zugang",
             items: [
-                { bold: "Zugang:", text: "Das Schloss ist eine private Residenz, das Schlossgelände und der See sind für Spaziergänge zugänglich." },
-                { bold: "Besuchszeiten:", text: "Das Betreten des Sees und der Alleen ist tagsüber möglich." }
+                { bold: "Zugang:", text: " das Schloss ist eine private Residenz, das Schlossgelände und der See sind für Spaziergänge zugänglich." },
+                { bold: "Besuchszeiten:", text: " das Betreten des Sees und der Alleen ist tagsüber möglich." }
             ]
         },
         short_description: "Burg Bachem in Frechen – der größte und am besten erhaltene Schlosskomplex der Stadt, umgeben von einem Graben mit steinerner Brücke. Das Schloss ist ein bedeutendes Denkmal der Geschichte und Architektur des Stadtteils Bachem.",
@@ -1632,8 +1692,8 @@ const datas = [
                 { text: "Der Bachemer Bach versorgte das Schloss früher mit Wasser für die Schutzgräben." }
             ]
         },
-        construction_period: "Vermutlich Anfang des 13. Jahrhunderts, mit späteren Umbauten und umfassender Restaurierung in den 1970er Jahren",
-        founder: "Ursprünglich im Besitz lokaler Adelsfamilien",
+        construction_period: " Vermutlich Anfang des 13. Jahrhunderts, mit späteren Umbauten und umfassender Restaurierung in den 1970er Jahren",
+        founder: " Ursprünglich im Besitz lokaler Adelsfamilien",
         meta: {
             title: "Burg Bachem in Frechen – historische Wasserburg und See",
             description: "Burg Bachem: Geschichte, Wassergräben, Spazierbereiche und Erholung am kleinen See in Frechen.",
@@ -1665,7 +1725,7 @@ const datas = [
         tickets_and_entry: {
             title: "Zugang",
             items: [
-                { bold: "Zugang:", text: "Der Platz ist für alle Besucher frei zugänglich: Hier kann man spazieren gehen, auf Bänken sitzen, das Stadtleben beobachten, Märkte besuchen oder den Platz als Ausgangspunkt zu anderen Sehenswürdigkeiten nutzen – zum Beispiel zum Alten Rathaus und zu anderen historischen Gebäuden des Zentrums. Seine zentrale Lage macht ihn zu einem logischen Startpunkt für einen Rundgang durch Frechen." },
+                { bold: "Zugang:", text: " der Platz ist für alle Besucher frei zugänglich: Hier kann man spazieren gehen, auf Bänken sitzen, das Stadtleben beobachten, Märkte besuchen oder den Platz als Ausgangspunkt zu anderen Sehenswürdigkeiten nutzen – zum Beispiel zum Alten Rathaus und zu anderen historischen Gebäuden des Zentrums. Seine zentrale Lage macht ihn zu einem logischen Startpunkt für einen Rundgang durch Frechen." },
             ]
         },
         short_description: "Der Johann-Schmitz-Platz ist der zentrale Stadtplatz von Frechen, ein Ort für Märkte, städtische Veranstaltungen und Ausgangspunkt, um das Alte Rathaus zu entdecken.",
@@ -1683,7 +1743,7 @@ const datas = [
                 { text: "Der Platz dient auch als wichtiger Treffpunkt für Einheimische und Besucher, besonders freitags während des Marktes, wenn der Platz belebt ist und sich in einen Ort für Kommunikation, Handel und Erfahrungsaustausch verwandelt." },
             ]
         },
-        construction_period: "Ende 19. – Anfang 20. Jahrhundert",
+        construction_period: " Ende 19. – Anfang 20. Jahrhundert",
         meta: {
             title: "Johann-Schmitz-Platz in Frechen – zentraler Platz und Rathaus",
             description: "Der Johann-Schmitz-Platz ist der zentrale Stadtplatz von Frechen mit Märkten, Veranstaltungen und historischem Rathaus.",
@@ -1710,7 +1770,7 @@ const datas = [
         tickets_and_entry: {
             title: "Zugang",
             items: [
-                { bold: "Eingang und Zugang:", text: "Der Zugang zum Gebäude ist nicht immer für freie Besichtigungen geöffnet – ein Zugang ist während spezieller Veranstaltungen oder Führungen möglich. Der Rathausturm ist für Touristen geöffnet, von dem aus man einen Blick auf das historische Zentrum von Frechen hat." },
+                { bold: "Eingang und Zugang:", text: "der Zugang zum Gebäude ist nicht immer für freie Besichtigungen geöffnet – ein Zugang ist während spezieller Veranstaltungen oder Führungen möglich. <br>Der Rathausturm ist für Touristen geöffnet, von dem aus man einen Blick auf das historische Zentrum von Frechen hat." },
             ]
         },
         short_description: "Das Alte Rathaus Frechen – ein historisches Verwaltungsgebäude am Johann-Schmitz-Platz, architektonisches Zentrum des Stadtzentrums und ein beliebter touristischer Ort.",
@@ -1903,8 +1963,8 @@ const datas = [
             title: "Praktische Informationen",
             items: [
                 { bold: "Lage:", text: "Talstation Drachenfelsbahn, Drachenfelsstraße 53, 53639 Königswinter, Deutschland" },
-                { bold: "Betriebszeiten:", text: "Ganzjährig in Betrieb mit saisonalen Anpassungen. Winter (Januar-Februar): Mo–Fr 12:00-17:00, Sa-So 11:00-18:00. Frühling und Herbst: ca. 10:00-18:00. Sommer (Mai-September): etwa 09:00-19:00. An Feiertagen und bei Sonderveranstaltungen können die Zeiten abweichen." },
-                { bold: "Fahrpreise (2025):", text: "Erwachsene: ca. 14 € (Berg- und Talfahrt), ca. 12 € (einfache Fahrt). Kinder von 4–13 Jahren: ca. 7 € (Hin- und Rückfahrt). Familienticket (2 Erwachsene + 2 Kinder): ca. 35 €. Gruppen- und Ermäßigungstarife sind verfügbar." }
+                { bold: "Betriebszeiten:", text: "<br>Ganzjährig in Betrieb mit saisonalen Anpassungen. <br>Winter (Januar-Februar): Mo–Fr 12:00-17:00, Sa-So 11:00-18:00. <br>Frühling und Herbst: ca. 10:00-18:00. <br>Sommer (Mai-September): etwa 09:00-19:00. <br>An Feiertagen und bei Sonderveranstaltungen können die Zeiten abweichen." },
+                { bold: "Fahrpreise (2025):", text: "<br>Erwachsene: ca. 14 € (Berg- und Talfahrt), ca. 12 € (einfache Fahrt). <br>Kinder von 4–13 Jahren: ca. 7 € (Hin- und Rückfahrt). <br>Familienticket (2 Erwachsene + 2 Kinder): ca. 35 €. <br>Gruppen- und Ermäßigungstarife sind verfügbar." }
             ]
         },
         interestingFacts: {
@@ -1941,7 +2001,7 @@ const datas = [
             { bold: "Offizielle Website von Schloss Drachenburg", link: "https://www.schloss-drachenburg.de" }
         ],
         construction_period: "1882-1884 Jahre",
-        founder: "Stefan von Sarter",
+        founder: " Stefan von Sarter",
         architects: ["Bernhard Tüshaus, Leo von Abbema (erste Entwürfe) und Wilhelm Hoffmann (Fertigstellung und Überarbeitung)."],
         short_description: "Schloss Drachenburg – ein romantisches neugotisches Schloss des 19. Jahrhunderts am Hang des Drachenfels. Prunkvolle Innenräume, Glasfenster und Panoramablicke auf den Rhein und den Park machen es zu einer der Hauptattraktionen der Region.",
         full_description: {
@@ -1962,8 +2022,8 @@ const datas = [
             title: "Praktische Informationen",
             items: [
                 { bold: "Standort:", text: "Schloss Drachenburg, Drachenfelsstraße 118, 53639 Königswinter, Deutschland" },
-                { bold: "Öffnungszeiten:", text: "01.01-31.03: täglich 12:00-17:00. 01.04-01.11: täglich 11:00-18:00. 02.11-30.12: täglich 12:00-17:00. 24.12 und 31.12: geschlossen. Zugang zum Park und zu den Terrassen zu Fuß möglich, ein Teil der Säle ist für Personen mit eingeschränkter Mobilität mit Hilfe des Personals zugänglich." },
-                { bold: "Eintrittspreise (2025):", text: "Erwachsene: ca. 10 €. Kinder 6–17 Jahre, Studenten und Behinderte: ca. 8 €. Kinder unter 6 Jahren: frei. Familienkarte (2 Erwachsene + bis zu 2 Kinder 6-17 Jahre): ca. 25 €. Jahreskarte: für eine Person – 30 €, Familie – 60 €. Führungen gegen Aufpreis möglich." },
+                { bold: "Öffnungszeiten:", text: "<br>01.01-31.03: täglich 12:00-17:00. <br>01.04-01.11: täglich 11:00-18:00. <br>02.11-30.12: täglich 12:00-17:00. <br>24.12 und 31.12: geschlossen. <br>Zugang zum Park und zu den Terrassen zu Fuß möglich, ein Teil der Säle ist für Personen mit eingeschränkter Mobilität mit Hilfe des Personals zugänglich." },
+                { bold: "Eintrittspreise (2025):", text: "<br>Erwachsene: ca. 10 €. <br>Kinder 6–17 Jahre, Studenten und Behinderte: ca. 8 €. <br>Kinder unter 6 Jahren: frei. <br>Familienkarte (2 Erwachsene + bis zu 2 Kinder 6-17 Jahre): ca. 25 €. <br>Jahreskarte: für eine Person – 30 €, Familie – 60 €. <br>Führungen gegen Aufpreis möglich." },
                 { bold: "Im Ticket enthalten:", text: "Zugang zu historischen Sälen, Terrassen und Gartenanlagen, ständige Ausstellung über das Schloss, Nordturm mit Panoramablick." },
                 { bold: "Tipps:", text: "Tickets können online oder vor Ort gekauft werden. In der Hochsaison empfiehlt sich ein Besuch zur Öffnungszeit. Der Besuch kann mit einer Besteigung des Drachenfels oder einer Fahrt mit der Drachenfelsbahn kombiniert werden." }
             ]
@@ -2001,7 +2061,7 @@ const datas = [
         countryPath: "germany",
         fotoCard: "Germany/nrw/koln/Rhein-Sieg-Kreis/konigswinter/drachenfels/003.jpg",
         construction_period: "12. Jahrhundert (1138–1167)",
-        founder: "Kölner Erzbischof Arnold von Wied",
+        founder: " Kölner Erzbischof Arnold von Wied",
         short_description: "Die Ruinen der Burg Drachenfels sind die Überreste einer mittelalterlichen Burg aus dem 12. Jahrhundert, die sich auf dem Gipfel des gleichnamigen Berges im Siebengebirge befindet. Von der Festung sind Fragmente der Mauern und Fundamente der Türme erhalten geblieben, die direkt in den Felsen integriert sind. Die Burg wurde während des Dreißigjährigen Krieges zerstört und danach nicht wieder aufgebaut, weshalb man hier heute authentische historische Ruinen sehen kann. Vom Gipfel aus eröffnet sich ein panoramischer Blick auf den Rhein und die umliegende Landschaft.",
         full_description: {
             title: "Beschreibung und Geschichte",
@@ -2049,13 +2109,13 @@ const datas = [
         ],
         fotoCard: "Germany/nrw/koln/Rhein-Sieg-Kreis/konigswinter/drachenfels/004.jpg",
         construction_period: "1913",
-        founder: "Initiator des Baus war der deutsche Unternehmer und Heimatforscher Bruno Rüde, der die Nibelungensage bekannt machen und den Drachenfels für Touristen attraktiver gestalten wollte.",
+        founder: " Initiator des Baus war der deutsche Unternehmer und Heimatforscher Bruno Rüde, der die Nibelungensage bekannt machen und den Drachenfels für Touristen attraktiver gestalten wollte.",
         tickets_and_entry: {
             title: "Praktische Informationen",
             items: [
-                { bold: "Öffnungszeiten:", text: "Vom 15. März bis 31. Oktober täglich von 10:30 bis 18:00 Uhr. Vom 1. November bis 14. März an Wochenenden, Feiertagen und in den Weihnachtsferien von 11:00 bis 16:00 Uhr. Am 24. Dezember geschlossen." },
-                { bold: "Eintrittspreise (2026):", text: "Erwachsene – 6 €. Kinder (4–14 Jahre) – 4 €. Schüler ab 14 Jahren – 5 €. Studenten – 5 €. Menschen mit Behinderung – 5 €. Gruppen ab 10 Personen: Erwachsene – 5 €, Kinder – 3 € pro Person." },
-                { bold: "Zusätzliche Informationen:", text: "Der Besuch wird häufig mit einer Fahrt auf den Drachenfels und dem Besuch der Drachenhöhle kombiniert. Es wird empfohlen, die aktuellen Öffnungszeiten auf der offiziellen Website zu prüfen." }
+                { bold: "Öffnungszeiten:", text: "<br>Vom 15. März bis 31. <br>Oktober täglich von 10:30 bis 18:00 Uhr. <br>Vom 1. November bis 14. März an Wochenenden, <br>Feiertagen und in den Weihnachtsferien von 11:00 bis 16:00 Uhr. <br>Am 24. Dezember geschlossen." },
+                { bold: "Eintrittspreise (2026):", text: "<br>Erwachsene – 6 €. <br>Kinder (4–14 Jahre) – 4 €. <br>Schüler ab 14 Jahren – 5 €. <br>Studenten – 5 €. <br>Menschen mit Behinderung – 5 €. <br>Gruppen ab 10 Personen: Erwachsene – 5 €, Kinder – 3 € pro Person." },
+                { bold: "Zusätzliche Informationen:", text: "der Besuch wird häufig mit einer Fahrt auf den Drachenfels und dem Besuch der Drachenhöhle kombiniert. Es wird empfohlen, die aktuellen Öffnungszeiten auf der offiziellen Website zu prüfen." }
             ]
         },
         short_description: "Die Nibelungenhalle ist ein 1913 erbautes Museum auf dem Gipfel des Drachenfels, das der deutschen Heldensage von den Nibelungen und den Drachenlegenden gewidmet ist. Das Gebäude wurde im romantischen Stil errichtet und sollte Besuchern die Welt der mittelalterlichen Mythen näherbringen. In unmittelbarer Nähe befindet sich die Drachenhöhle – eine kleine interaktive Ausstellung, die besonders bei Familien mit Kindern beliebt ist. Der Besuch der Nibelungenhalle wird häufig mit einer Wanderung oder einer Fahrt auf den Drachenfels kombiniert.",
@@ -2611,8 +2671,8 @@ const datas = [
             ]
         },
         construction_period: "Ende der 1980er Jahre. ",
-        architects: "Ursprüngliche Gebäude: lokale Architekten Anfang des 20. Jahrhunderts (1910 – Verwaltungsgebäude). ",
-        founder: " Das Museum wurde von der Stadtverwaltung Lüdenscheids gegründet. ",
+        architects: " Ursprüngliche Gebäude: lokale Architekten Anfang des 20. Jahrhunderts (1910 – Verwaltungsgebäude). ",
+        founder: " das Museum wurde von der Stadtverwaltung Lüdenscheids gegründet. ",
         meta: {
             title: "Geschichtsmuseum Lüdenscheid – Industrie‑ und Technikgeschichte der Stadt",
             description: "Entdecken Sie das Geschichtsmuseum Lüdenscheid: Schmalspurzug, Zeppelin‑Modelle, Feuerwehrtechnik, Sammlung historischer Karten und Artefakte. Besuchen Sie das Museum und das Museumscafé im modernen Stadtkomplex.",

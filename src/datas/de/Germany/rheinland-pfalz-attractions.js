@@ -66,10 +66,7 @@ const datas = [
     officialSite: [
       { bold: "Offizielle Webseite", link: "https://www.zentrum-der-antike.de/monumente/amphitheater" }
     ],
-    unesco_status: {
-      included: true,
-      year: 1986
-    },
+    unesco_status: {included: true, year: 1986 },
     short_description: "Das römische Amphitheater in Trier ist eine der größten römischen Arenen außerhalb Italiens. Es wurde Ende des 2. Jahrhunderts n. Chr. erbaut und konnte bis zu 20.000 Zuschauer fassen. Hier fanden Gladiatorenkämpfe, Tierdarstellungen und Massenveranstaltungen statt. Heute ist das Amphitheater für Besucher geöffnet; erhalten sind die Arena, die Tribünen und unterirdischen Gänge.",
     full_description: {
       title: "Beschreibung und Geschichte",
@@ -97,8 +94,8 @@ const datas = [
       title: "Praktische Informationen",
       items: [
         { bold: "Adresse: ", text: "Olewiger Str. 25, 54295 Trier, Deutschland" },
-        { bold: "Öffnungszeiten (Beispiel, siehe aktuelle Angaben auf der Webseite): ", text: "April–September: 09:00–18:00, Oktober: 09:00–17:00, November–Februar: 09:00–16:00, März: 09:00–17:00. Letzter Einlass 30 Minuten vor Schließung." },
-        { bold: "Tickets (vorläufig für 2025–2026):", text: "<br>Erwachsene: 6,00 €, Erwachsene ermäßigt: 5,00 €, Kinder und Jugendliche (6–17/18 Jahre): 3,00 €, Kinder bis 6 Jahre: kostenlos. <br>Familienticket 1 (1 Erwachsener + bis zu 4 Kinder): 6,00 €, Familienticket 2 (2 Erwachsene + bis zu 4 Kinder): 12,00 €, <br>Gruppen (ab 10 Personen): Erwachsene 5,00 €, Kinder 3,00 €" },
+        { bold: "Öffnungszeiten (Beispiel, siehe aktuelle Angaben auf der Webseite): ", text: "<br>April–September: 09:00–18:00, <br>Oktober: 09:00–17:00, <br>November–Februar: 09:00–16:00, <br>März: 09:00–17:00. Letzter Einlass 30 Minuten vor Schließung." },
+        { bold: "Tickets (vorläufig für 2025–2026):", text: "<br>Erwachsene: 6,00 €, <br>Erwachsene ermäßigt: 5,00 €, <br>Kinder und Jugendliche (6–17/18 Jahre): 3,00 €, <br>Kinder bis 6 Jahre: kostenlos. <br>Familienticket 1 (1 Erwachsener + bis zu 4 Kinder): 6,00 €, Familienticket 2 (2 Erwachsene + bis zu 4 Kinder): 12,00 €, <br>Gruppen (ab 10 Personen): Erwachsene 5,00 €, Kinder 3,00 €" },
         { text: "Es wird empfohlen, auch die AntikenCard Trier zu erwerben – ein Kombiticket für mehrere Denkmäler des antiken Trier mit Vorteilspreis." }
       ]
     },
