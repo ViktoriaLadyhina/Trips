@@ -297,7 +297,12 @@ export const Fotos = {
         { path: "Germany/nrw/koln/Rhein-Sieg-Kreis/konigswinter/heisterbach/007.jpg", title: { ru: "Церковь Святого Петра в Хайстербахе, 2026", ua: "Церква Святого Петра в Гайстербасі, 2026", de: "Kirche St. Peter in Heisterbach, 2026" } },
       ]
     },
-
+    monschau: {
+      gallery: [
+        { path: "Germany/nrw/koln/Aachen/monschau/002.jpg", title: { ru: "Моншау, 2025", ua: "Моншау, 2025", de: "Monschau, 2025" } },
+        { path: "Germany/nrw/koln/Aachen/monschau/001.jpg", title: { ru: "Моншау, 2025", ua: "Моншау, 2025", de: "Monschau, 2025" } },
+      ],
+    },
 
 
     // arnsberg

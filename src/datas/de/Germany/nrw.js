@@ -470,40 +470,20 @@ const datas = {
                             name: "Aachen",
                             fullName: "Aachen",
                             parentDistrict: "Köln",
-                            center: [
-                                { bold: "Zentrum des Bezirks:" },
-                                { text: " Stadt Aachen." }
-                            ],
-                            area: [
-                                { bold: "Fläche:" },
-                                { text: " 707,15 km² (Stand 2023)" }
-                            ],
-                            population: [
-                                { bold: "Bevölkerung:" },
-                                { text: " 564 444 Einwohner (Stand 2023)" }
-                            ],
-                            density: [
-                                { bold: "Bevölkerungsdichte:" },
-                                { text: " 800 Einwohner/km² (2023)" }
-                            ],
-                            code: [
-                                { bold: "Offizieller Bezirkscode:" },
-                                { text: " 05 3 34." }
-                            ],
-                            description: [
-                                { text: "Der Bezirk Aachen gehört zum Bundesland Nordrhein-Westfalen und untersteht dem Regierungsbezirk Köln." }
-                            ],
-                            com: [
-                                { text: "Der Bezirk ist unterteilt in " },
-                                { bold: "10 Gemeinden:" }
-                            ],
+                            center: [{ bold: "Zentrum des Bezirks:", text: " Stadt Aachen." }  ],
+                            area: [{ bold: "Fläche:", text: " 707,15 km² (Stand 2023)" } ],
+                            population: [{ bold: "Bevölkerung:", text: " 564 444 Einwohner (Stand 2023)" }],
+                            density: [ { bold: "Bevölkerungsdichte:", text: " 800 Einwohner/km² (2023)" }                            ],
+                            code: [{ bold: "Offizieller Bezirkscode:", text: " 05 3 34." }   ],
+                            description: [ { text: "Der Bezirk Aachen gehört zum Bundesland Nordrhein-Westfalen und untersteht dem Regierungsbezirk Köln." }                            ],
+                            com: [ { text: "Der Bezirk ist unterteilt in " }, { bold: "10 Gemeinden:" }    ],
                             communities: [
                                 { id: 1, name: "Alsdorf", hasInfo: false },
                                 { id: 2, name: "Aachen", hasInfo: false },
                                 { id: 3, name: "Baesweiler", hasInfo: false },
                                 { id: 4, name: "Würselen", hasInfo: false },
                                 { id: 5, name: "Simmerath", hasInfo: false },
-                                { id: 6, name: "Monschau", hasInfo: false },
+                                { id: 6, name: "Monschau", hasInfo: true, path: 'monschau' },
                                 { id: 7, name: "Roetgen", hasInfo: false },
                                 { id: 8, name: "Herzogenrath", hasInfo: false },
                                 { id: 9, name: "Stolberg", hasInfo: false },
@@ -663,33 +643,13 @@ const datas = {
                             name: "Rhein-Sieg",
                             fullName: "Rhein-Sieg",
                             parentDistrict: "Köln",
-                            center: [
-                                { bold: "Kreisstadt:" },
-                                { text: " Siegburg." }
-                            ],
-                            area: [
-                                { bold: "Fläche:" },
-                                { text: " 1.153,00 km² (Stand 2023)" }
-                            ],
-                            population: [
-                                { bold: "Einwohner:" },
-                                { text: " ca. 620.000 (Stand 2023)" }
-                            ],
-                            density: [
-                                { bold: "Bevölkerungsdichte:" },
-                                { text: " ca. 538 Einwohner/km² (2023)" }
-                            ],
-                            code: [
-                                { bold: "Amtlicher Kreisschlüssel:" },
-                                { text: " 05 3 82." }
-                            ],
-                            description: [
-                                { text: "Rhein-Sieg-Kreis gehört zum Bundesland Nordrhein-Westfalen und untersteht dem Regierungsbezirk Köln." }
-                            ],
-                            com: [
-                                { text: "Der Kreis gliedert sich in " },
-                                { bold: "19 Städte und Gemeinden:" }
-                            ],
+                            center: [{ bold: "Kreisstadt:", text: " Siegburg." } ],
+                            area: [{bold: "Fläche:", text: " 1.153,00 km² (Stand 2023)" } ],
+                            population: [{ bold: "Einwohner:", text: " ca. 620.000 (Stand 2023)" }],
+                            density: [{ bold: "Bevölkerungsdichte:", text: " ca. 538 Einwohner/km² (2023)" }],
+                            code: [{ bold: "Amtlicher Kreisschlüssel:", text: " 05 3 82." }],
+                            description: [{ text: "Rhein-Sieg-Kreis gehört zum Bundesland Nordrhein-Westfalen und untersteht dem Regierungsbezirk Köln." }],
+                            com: [  { text: "Der Kreis gliedert sich in " }, { bold: "19 Städte und Gemeinden:" } ],
                             communities: [
                                 { id: 1, name: "Eitorf", hasInfo: false },
                                 { id: 2, name: "Alfter", hasInfo: false },
@@ -718,33 +678,15 @@ const datas = {
                             name: "Rhein-Erft",
                             fullName: "Rhein-Erft",
                             parentDistrict: "Köln",
-                            center: [
-                                { bold: "Kreisstadt:" },
-                                { text: " Bergheim." }
-                            ],
-                            area: [
-                                { bold: "Fläche:" },
-                                { text: " 704,70 km² (Stand 2023)" }
-                            ],
-                            population: [
-                                { bold: "Einwohner:" },
-                                { text: " 480.989 Einwohner (Stand 2023)" }
-                            ],
-                            density: [
-                                { bold: "Bevölkerungsdichte:" },
-                                { text: " ca. 679 Einwohner/km² (2022–2023)" }
-                            ],
-                            code: [
-                                { bold: "Amtlicher Kreisschlüssel:" },
-                                { text: " 05 3 62." }
-                            ],
+                            center: [{ bold: "Kreisstadt:", text: " Bergheim." } ],
+                            area: [{ bold: "Fläche:", text: " 704,70 km² (Stand 2023)" } ],
+                            population: [{ bold: "Einwohner:", text: " 480.989 Einwohner (Stand 2023)" }                            ],
+                            density: [{ bold: "Bevölkerungsdichte:", text: " ca. 679 Einwohner/km² (2022–2023)" }],
+                            code: [{ bold: "Amtlicher Kreisschlüssel:", text: " 05 3 62." }],
                             description: [
                                 { text: "Rhein-Erft-Kreis gehört zum Land Nordrhein-Westfalen und untersteht dem Regierungsbezirk Köln." }
                             ],
-                            com: [
-                                { text: "Der Kreis gliedert sich in " },
-                                { bold: "10 Städte / Gemeinden:" }
-                            ],
+                            com: [ { text: "Der Kreis gliedert sich in " }, { bold: "10 Städte / Gemeinden:" }                            ],
                             communities: [
                                 { id: 1, name: "Bedburg", hasInfo: false },
                                 { id: 2, name: "Bergheim", hasInfo: false },

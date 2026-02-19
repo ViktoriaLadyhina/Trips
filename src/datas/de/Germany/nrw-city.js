@@ -93,6 +93,69 @@ const datas = [
     },
 
     // Köln округ
+    // аахен
+    {
+        id: 6,
+        name: 'Monschau',
+        path: "monschau",
+        district: "koln",
+        desc: {
+            general: [{ text: 'Monschau (dt. Monschau) liegt im Westen Deutschlands, in der Region Eifel des Bundeslandes Nordrhein-Westfalen, in der Nähe der Grenze zu Belgien. Die Stadt ist bekannt für ihre historische Architektur, gemütliche Straßen mit Fachwerkhäusern und malerische Ausblicke auf die Rur.' }],
+            population: [{ bold: 'Einwohnerzahl', text: ' der Stadt beträgt etwa 13.000 Personen (Stand 31. Dezember 2024).' }],
+            area: [{ bold: 'Fläche:', text: ' der Gemeinde beträgt etwa 110 km². Ein großer Teil der Fläche ist von Wäldern, Naturparks und Flüssen bedeckt.' }],
+            postalCode: [{ bold: 'Postleitzahlen:', text: ' 52156' }],
+            phone: [{ bold: 'Telefonvorwahl:', text: ' +49 2472' }],
+            officialSite: [{ bold: 'Offizielle Webseite von Monschau', link: 'https://www.monschau.de/' }],
+            education: [{ bold: 'Bildungssystem', text: ' – In der Stadt gibt es Grundschulen, eine Gesamtschule und spezialisierte Bildungseinrichtungen im Kreis. Für ein Hochschulstudium wenden sich die Bewohner in der Regel an Universitäten und Fachhochschulen der Nachbarstädte.' }],
+            culture: [{ bold: 'Kulturelle Aktivitäten', text: ' – Monschau ist bekannt für Festivals, Weihnachtsmärkte, Ausstellungen und Veranstaltungen im Freien. Touristen werden von Handwerkswerkstätten, Museen und Spaziergängen durch die historischen Straßen angezogen.' }],
+        },
+        geography: {
+            title: 'Geografie',
+            items: [
+                { text: 'Monschau liegt im Tal der Rur und ist von den Hügeln der Eifel umgeben. Das Gelände ist hügelig, die Straßen sind verwinkelt, und die Höhenunterschiede im historischen Zentrum sind deutlich sichtbar. Die durchschnittliche Höhe der Stadt beträgt etwa 300 m über dem Meeresspiegel.' },
+                { bold: 'Natur und Geologie', text: 'Die Region ist durch Gesteine des Devon-Zeitalters, zahlreiche Waldgebiete und Flüsse geprägt, die eine malerische Landschaft bilden. Das Gebiet ist reich an Naturpfaden und Wanderwegen.' },
+                { bold: 'Grenznähe', text: 'Monschau liegt in unmittelbarer Nähe zur Grenze zu Belgien, was historisch den Handel und kulturelle Verbindungen beeinflusste. Touristen können leicht Ausflüge und Wanderungen in die benachbarten belgischen Städte und Waldgebiete der Eifel unternehmen.' }
+            ]
+        },
+        notablePeople: {
+            title: 'Berühmte Persönlichkeiten aus Monschau',
+            items: [
+                { bold: 'Anna Wirtz (1901-1985)', text: ' – lokale Künstlerin, die im Stil des Naturalismus arbeitete und deren Werke oft Landschaften der Eifel darstellen.' },
+                { bold: 'Johannes Koch (1942-2010)', text: ' – Regionalhistoriker, Autor von Büchern über die Kultur und das Handwerk von Monschau.' },
+                { bold: 'Heinrich Stein (1870-1952)', text: ' – Fachwerkarchitekt, der an der Restaurierung historischer Häuser in Monschau beteiligt war.' },
+                { bold: 'Maria Klein (1912-1990)', text: ' – lokale Künstlerin und Handwerkerin, bekannt für Holzarbeiten und traditionelle Fassadenmalerei an Fachwerkhäusern.' }
+            ]
+        },
+        interestingFacts: {
+            title: 'Interessante Fakten',
+            items: [
+                { bold: 'Fachwerkhäuser', text: ' – Das historische Zentrum von Monschau ist bekannt für seine hölzernen Fachwerkhäuser aus dem 17.–18. Jahrhundert, die bis heute erhalten sind.' },
+                { bold: 'Weihnachtsmarkt', text: ' – Jährliches Ereignis, das Touristen aus ganz Deutschland und den Nachbarländern anzieht.' },
+                { bold: 'Kleine, aber touristisch bedeutende Stadt', text: ' – Trotz der geringen Einwohnerzahl zieht Monschau viele Touristen durch seine malerische Architektur, Museen und Naturwege an.' },
+                { bold: 'Naturpfade', text: ' – Monschau ist Ausgangspunkt zahlreicher Wander- und Radwege durch die Hügel der Eifel, einschließlich malerischer Pfade entlang der Rur und Waldwege, die Naturliebhaber anziehen.' },
+                { bold: 'Naturschutzgebiete', text: ' – In der Nähe der Stadt befinden sich Naturparks und geschützte Gebiete, in denen man die lokale Flora und Fauna beobachten, Picknicks veranstalten und kurze Spaziergänge an der frischen Luft unternehmen kann.' }
+            ]
+        },
+        briefHistory: {
+            title: 'Geschichte',
+            items: [
+                { text: 'Monschau wird erstmals im 11. Jahrhundert als kleines sächsisches Dorf im Rurtal erwähnt. Aufgrund der günstigen Lage an Handelswegen zwischen dem Rhein und den Regionen der Eifel entwickelte sich die Stadt allmählich zum Zentrum des lokalen Handels und Handwerks.' },
+                { text: 'Im Mittelalter war Monschau für seine Weberei und Wollproduktion bekannt: Die städtischen Werkstätten lieferten Textilien in ganz Westdeutschland. Zur Unterstützung des Handels wurden Lagerhäuser, Brücken und enge gepflasterte Straßen gebaut, die bis heute erhalten sind.' },
+                { text: 'Die Jahrhunderte XVII–XVIII waren schwierig: Die Stadt erlebte militärische Konflikte und Epidemien, aber die historische Bebauung im Zentrum blieb nahezu unversehrt. Viele Fachwerkhäuser aus dieser Zeit werden noch aktiv genutzt, und ihre Ziegeldächer und geschnitzten Fassaden sind ein Symbol für Monschau.' },
+                { text: 'Ab dem 19. Jahrhundert verwandelt sich die Stadt allmählich in ein Touristenzentrum: malerische Gassen, alte Brücken und die Nähe zu Naturpfaden der Eifel zogen Urlauber an. In dieser Zeit eröffneten Hotels, Cafés und Handwerkswerkstätten, wodurch die touristische Infrastruktur entstand.' },
+                { text: 'Im 20. Jahrhundert erlebte Monschau die Ereignisse des Zweiten Weltkriegs. Obwohl die Stadt kein bedeutendes Industriezentrum war, führten Truppenrückzüge der deutschen Armee und das Vorrücken der Alliierten durch die Region. Die Stadt wurde Luftangriffen und Artilleriebeschuss ausgesetzt, aber die meisten historischen Gebäude blieben unbeschädigt. Nach dem Krieg erholte sich Monschau schnell und entwickelte sich als Touristenzentrum weiter, wobei das kulturelle Erbe und die historische Architektur erhalten blieben.' },
+                { text: 'Heute verbindet Monschau reiche Geschichte mit natürlicher Schönheit: historische Architektur, Museen, Handwerkswerkstätten und die umliegenden Wälder machen die Stadt zu einem einzigartigen Beispiel für die Harmonie von Kultur und Natur in der Eifel. Weihnachtsmärkte, Festivals und Wanderwege ziehen das ganze Jahr über Besucher an.' }
+            ]
+        },
+        meta: {
+            title: "Monschau – historische Stadt mit Fachwerkhäusern und Natur der Eifel",
+            description: "Monschau: Geschichte, Geografie, bekannte Bewohner und interessante Fakten über die malerische Stadt in der Eifel, Bundesland Nordrhein-Westfalen.",
+            ogTitle: "Monschau – Informationen über die Stadt",
+            ogDescription: "Detaillierte Informationen über Monschau: Kultur, Geschichte, herausragende Persönlichkeiten und die einzigartige Architektur des historischen Zentrums.",
+            ogImage: "https://our-travels.info/foto/Germany/nrw/koln/Aachen/monschau/002.jpg"
+        }
+    },
+
     // Rhein-Erft-Kreis
     {
         id: 2,
