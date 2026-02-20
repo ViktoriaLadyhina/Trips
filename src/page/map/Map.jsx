@@ -80,6 +80,8 @@ import BreadCrumbs from '../../components/breadCrumbs/BreadCrumbs';
       // Aachen Kreis
       // Monschau
       historic_center_monschau: { ru: 'Старый город Моншау', de: 'Altstadt Monschau', ua: 'Старе місто Моншау' },
+      burg_monschau: { ru: 'Замок Моншау', de: 'Burg Monschau', ua: 'Замок Моншау' },
+
       // Rhein-Erft-Kreis
       // Brühl
       bruhlPalaces: { ru: 'Дворцы Брюля: ансамбль Аугустусбург и Фалькенлюст', de: 'Schlösser Brühl: Augustusburg & Falkenlust', ua: 'Палаци Брюля: ансамбль Аугустусбург і Фалькенлюст' },
@@ -203,7 +205,7 @@ const Map = () => {
                   <li><Link to="/germany/nrw/koln">{t.districts.koln[lang]}</Link>
                     <ul>
 
-                      {/* Köln город */}stadtmuseum_koln
+                      {/* Köln город */}
                       <li><Link to="/germany/nrw/city/koln">{t.cities.koln[lang]}</Link>
                         <ul>
                           <li><Link to="/germany/nrw/city/koln/attractions/cologne-cathedral">{t.attractions.cologneCathedral[lang]}</Link></li>
@@ -243,6 +245,7 @@ const Map = () => {
                           <li><Link to="/germany/nrw/koln/monschau">{t.cities.monschau[lang]}</Link>
                           <ul>
                             <li><Link to="/germany/nrw/koln/monschau/attractions/historic_center_monschau">{t.attractions.historic_center_monschau[lang]}</Link></li>
+                            <li><Link to="/germany/nrw/koln/monschau/attractions/burg_monschau">{t.attractions.burg_monschau[lang]}</Link></li>
                           </ul>
                           </li>
                         </ul>

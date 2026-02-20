@@ -314,6 +314,16 @@ export const Fotos = {
         { path: "Germany/nrw/koln/Aachen/monschau/006.jpg", title: { ru: "Старый город Моншау, 2025", ua: "Старе місто Моншау, 2025", de: "Altstadt Monschau, 2025" } },
         { path: "Germany/nrw/koln/Aachen/monschau/007.jpg", title: { ru: "Старый город Моншау, 2025", ua: "Старе місто Моншау, 2025", de: "Altstadt Monschau, 2025" } },
       ],
+      burg_monschau: [
+        { path: "Germany/nrw/koln/Aachen/monschau/burg/001.jpg", title: { ru: "Замок Моншау (фото взято с интернета)", ua: "Замок Моншау (фото взято з Інтернету)", de: "Burg Monschau (Foto aus dem Internet)" } },
+        { path: "Germany/nrw/koln/Aachen/monschau/burg/002.jpg", title: { ru: "Замок Моншау, 2025", ua: "Замок Моншау, 2025", de: "Burg Monschau, 2025" } },
+        { path: "Germany/nrw/koln/Aachen/monschau/burg/003.jpg", title: { ru: "Замок Моншау, 2025", ua: "Замок Моншау, 2025", de: "Burg Monschau, 2025" } },
+        { path: "Germany/nrw/koln/Aachen/monschau/burg/004.jpg", title: { ru: "Замок Моншау, 2025", ua: "Замок Моншау, 2025", de: "Burg Monschau, 2025" } },
+        { path: "Germany/nrw/koln/Aachen/monschau/burg/005.jpg", title: { ru: "Замок Моншау, 2025", ua: "Замок Моншау, 2025", de: "Burg Monschau, 2025" } },
+        { path: "Germany/nrw/koln/Aachen/monschau/burg/006.jpg", title: { ru: "Замок Моншау, 2025", ua: "Замок Моншау, 2025", de: "Burg Monschau, 2025" } },
+        { path: "Germany/nrw/koln/Aachen/monschau/burg/007.jpg", title: { ru: "Вид со смотровой площадки замка Моншау, 2025", ua: "Вид з оглядового майданчика замку Моншау, 2025", de: "Aussicht von der Aussichtsplattform der Burg Monschau, 2025" } },
+        { path: "Germany/nrw/koln/Aachen/monschau/burg/008.jpg", title: { ru: "Вид со смотровой площадки замка Моншау, 2025", ua: "Вид з оглядового майданчика замку Моншау, 2025", de: "Aussicht von der Aussichtsplattform der Burg Monschau, 2025" } },
+      ],
     },
 
 

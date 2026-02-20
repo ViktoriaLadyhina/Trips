@@ -1528,6 +1528,54 @@ const datas = [
             ogImage: "https://our-travels.info/foto/Germany/nrw/koln/Aachen/monschau/002.jpg"
         }
     },
+    {
+        id: "burg_monschau",
+        name: "Burg Monschau",
+        type: ["palace_or_castle"],
+        path: "burg_monschau",
+        countryPath: "germany",
+        regionsPath: "nrw",
+        districtPath: "koln",
+        cityPath: "monschau",
+        fotoCard: "Germany/nrw/koln/Aachen/monschau/burg/001.jpg",
+        location: "Monschau, Deutschland",
+        short_description: "Die Burg Monschau ist eine mittelalterliche Burg auf einem Hügel in Monschau (Nordrhein‑Westfalen, Deutschland). Teilweise ruinös mit erhaltenen Türmen und Mauern ist sie eine historische und kulturelle Sehenswürdigkeit mit Panoramablick auf die Altstadt.",
+        full_description: {
+            title: "Beschreibung und Geschichte",
+            items: [
+                { bold: "Die Burg Monschau", text: "ist eine mittelalterliche Burg auf einem Hügel über der Stadt Monschau, mit erhaltenen Türmen und Mauern. Sie ist teilweise ruinös, bleibt jedoch ein Zentrum des kulturellen Lebens: Hier befindet sich eine Jugendherberge, und im Sommer finden Konzerte und Festivals statt. Die Burg Monschau ist nicht nur ein historisches Denkmal, sondern auch ein Ort, an dem man die Atmosphäre einer mittelalterlichen Stadt spüren, die erhaltenen Befestigungsanlagen sehen und die Aussicht auf den Eifelraum genießen kann." },
+                { bold: "Geschichte. " },
+                { text: "Die Burg Monschau wurde im frühen 13. Jahrhundert auf einem Hügel über der Stadt Monschau erbaut, um Handelswege zu kontrollieren und die Sicherheit der Eifelregion zu gewährleisten. Sie diente als Residenz lokaler Herrscher und verband Wohnräume mit Befestigungsanlagen, einschließlich Türmen und Stadtmauern." },
+                { text: "Im 14. Jahrhundert wurde die Burg erweitert: Es wurden neue Befestigungen, Mauern und Türme errichtet, was sie zu einer mächtigen Verteidigungsanlage machte. Die Burg spielte eine Schlüsselrolle beim Schutz des Gebiets und der Kontrolle wichtiger Handelsrouten." },
+                { text: "Im Jahr 1543 belagerten und eroberten die Truppen des Kaisers Karl V. die Burg und zerstörten einen Teil der Befestigungen. Danach verlor die Burg allmählich ihre strategische Bedeutung, wurde aber weiterhin von lokalen Herrschern genutzt." },
+                { text: "Ende des 18. Jahrhunderts, während der französischen Herrschaft, wurde die Burg verstaatlicht und viele Gebäude begannen zu verfallen. Im 19. Jahrhundert wurden Dächer und Innenbauten teilweise abgetragen, um Steuern zu vermeiden, was den Verfall beschleunigte." },
+                { text: "Nach dem Ersten Weltkrieg wurde im westlichen Flügel der Burg eine Jugendherberge (Jugendherberge) eröffnet, die bis heute in Betrieb ist und dazu beigetragen hat, dass Teile der Räumlichkeiten erhalten geblieben sind und heute von Touristen genutzt werden. Im 20. Jahrhundert wurden außerdem Maßnahmen zur Konservierung der Ruinen durchgeführt, was den Erhalt der Burg als historisches Denkmal und kulturellen Raum mit Panoramablick auf die Altstadt ermöglichte." }
+            ]
+        },
+        tickets_and_entry: {
+            title: "Praktische Informationen",
+            items: [
+                { bold: "Adresse: ", text: "Auf dem Schloß 4, 52156 Monschau, Deutschland. " },
+                { bold: "Zugang: ", text: "Der Innenhof ist ganzjährig für Besuche geöffnet. Der Zugang zum Gebäude ist aufgrund des Betriebs der Jugendherberge eingeschränkt; Innenräume sind nur für Übernachtungsgäste zugänglich." }
+            ]
+        },
+        interestingFacts: {
+            title: "Interessante Fakten",
+            items: [
+                { text: "Die Burg wurde 1971 vom Künstler Christo im Rahmen eines Kunstprojekts verhüllt." },
+                { text: "Rund um die Burg führen Wanderwege, von denen aus sich malerische Ausblicke auf die Altstadt Monschau und die umliegenden Täler bieten." },
+                { text: "Die Burg bleibt ein aktiver kultureller Raum: Im Innenhof finden im Sommer Konzerte und Festivals statt, darunter auch Teile des Monschau Festivals." }
+            ]
+        },
+        construction_period: "Anfang des 13. Jahrhunderts (um 1217).",
+        meta: {
+            title: "Burg Monschau – Geschichte, Besuch, Führungen",
+            description: "Die mittelalterliche Burg Monschau (Burg Monschau) auf einem Hügel über Monschau in Deutschland. Geschichte seit dem 13. Jahrhundert, Panoramablicke, Jugendherberge und kulturelle Veranstaltungen im Herzen der Eifel.",
+            ogTitle: "Burg Monschau – Mittelalterliche Burg über Monschau",
+            ogDescription: "Entdecken Sie die Burg Monschau: eine mittelalterliche Festung mit malerischen Ausblicken auf die Stadt, sommerlichen Kulturveranstaltungen und der einzigartigen Atmosphäre der historischen Eifel.",
+            ogImage: "https://our-travels.info/foto/Germany/nrw/koln/Aachen/monschau/burg/001.jpg"
+        }
+    },
 
     // Rhein-Erft-Kreis
 
