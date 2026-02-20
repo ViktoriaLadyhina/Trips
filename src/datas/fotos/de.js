@@ -135,7 +135,10 @@ export const Fotos = {
       ],
       makk_museum_koln: [
         { path: "Germany/nrw/koln/koln-city/makk_museum/001.JPG", title: { ru: "Музей прикладного искусства (фото взято с интернета)", ua: "Музей прикладного мистецтва (фото взято з Інтернету)", de: "Museum für angewandte Kunst (Foto aus dem Internet)" } },
-      ]
+      ],
+      stadtmuseum_koln: [
+        { path: "Germany/nrw/koln/koln-city/stadtmuseum/001.jpg", title: { ru: "Кельнский городской музей (фото взято с интернета)", ua: "Кельнський міський музей (фото взято з Інтернету)", de: "Kölnisches Stadtmuseum (Foto aus dem Internet)" } },
+      ],
     },
     bruhl: {
       gallery: [

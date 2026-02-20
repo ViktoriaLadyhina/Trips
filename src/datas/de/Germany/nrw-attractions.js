@@ -856,6 +856,65 @@ const datas = [
         }
     },
     {
+        id: "stadtmuseum_koln",
+        name: "Kölnisches Stadtmuseum",
+        type: ["museum"],
+        path: "stadtmuseum_koln",
+        countryPath: "germany",
+        regionsPath: "nrw",
+        districtPath: "city",
+        cityPath: "koln",
+        fotoCard: "Germany/nrw/koln/koln-city/stadtmuseum/001.jpg",
+        location: "Köln, Deutschland",
+        officialSite: [
+            { bold: "Offizielle Website", link: "https://www.koelnisches-stadtmuseum.de" }
+        ],
+        short_description: "Das Museum erzählt die Entwicklung von Köln vom Mittelalter bis zur Gegenwart anhand von Objekten, Dokumenten und interaktiven Ausstellungen. Besucher lernen Kultur und Alltag der Stadt kennen – einschließlich Karneval, Kölsch und Eau de Cologne – in einem modernen Format mit einem ungewöhnlichen historischen Ansatz.",
+        full_description: {
+            title: "Beschreibung und Geschichte",
+            items: [
+                { bold: "Kölnisches Stadtmuseum", text: "wurde 1888 als historische Einrichtung zur Erforschung und Bewahrung der Entwicklung der Stadt Köln gegründet. Ursprünglich wurde das Museum als Ort geschaffen, an dem Objekte, Dokumente und Artefakte gesammelt und aufbewahrt werden, die mit dem politischen, wirtschaftlichen und kulturellen Leben der Stadt sowie dem Alltag ihrer Bewohner verbunden sind. Bereits in den ersten Jahren seines Bestehens wurde es zu einem wichtigen Zentrum des kulturellen Gedächtnisses, das die vielfältigen Schichten der Geschichte Kölns – von mittelalterlichen Handwerken bis zu den Ereignissen der jüngeren Vergangenheit – widerspiegelt." },
+                { bold: "Die ersten Jahrzehnte:", text: "In den ersten Jahrzehnten existierte das Museum unter verschiedenen Namen und befand sich in verschiedenen städtischen Gebäuden. Die Grundlage seiner Sammlung bildeten Objekte, die aus dem historischen Archiv und anderen städtischen Sammlungen übergeben wurden – zum Beispiel Siegel der Stadt aus dem 13. Jahrhundert, das Stadtwappen, Alltagsgegenstände und Handwerksprodukte. Der Aufbau der Sammlung erfolgte nicht nur durch offizielle Schenkungen, sondern auch durch private Spenden und Käufe, was im Laufe der Zeit die Sammlung von Hunderttausenden einzigartigen Objekten ermöglichte." },
+                { bold: "20. Jahrhundert und Zweiter Weltkrieg:", text: "Im 20. Jahrhundert erlebte das Museum schwerwiegende Herausforderungen: Während des Zweiten Weltkriegs wurde Köln massiv bombardiert und die Stadt nahezu zerstört. Viele Objekte, Archive und kulturelle Schichten waren der Zerstörung ausgesetzt. Dank der Bemühungen von Kuratoren, Bewahrern und Freiwilligen konnte ein Teil der Sammlung gerettet und in sichere Depots gebracht werden, was es dem Museum nach dem Krieg ermöglichte, einen bedeutenden Teil des historischen Erbes wieder zusammenzuführen. In den Nachkriegsjahren wurde das Museum zu einem wichtigen Zentrum für den Wiederaufbau des städtischen Geistes und des historischen Gedächtnisses, indem es darüber berichtete, wie der Krieg die Stadt, ihre Bewohner und die soziale Struktur verändert hat. In dieser Zeit wurde nicht nur den Materialien der Vorkriegszeit Aufmerksamkeit geschenkt, sondern auch der Dokumentation der Geschichte des Lebens und Überlebens der Stadt in den Jahren der Zerstörung und des Wiederaufbaus." },
+                { bold: "Zeughaus‑Periode (1958–2017):", text: "Ab 1958 befand sich das Museum im ehemaligen städtischen Zeughaus (Zeughaus), wo die Ausstellungen über Jahrzehnte der Öffentlichkeit zugänglich waren. Dieser Ort wurde zu einem symbolischen Zuhause für die Stadtgeschichte: Hier wurden Themen des Alltags, der wirtschaftlichen Entwicklung, der Kunst und der kulturellen Traditionen Kölns präsentiert. Aufgrund erheblicher struktureller Probleme und Bauschäden musste das Gebäude jedoch 2017 stillgelegt und das Museum vorübergehend geschlossen werden." },
+                { bold: "Moderner Raum (2024):", text: "Nach jahrelangen Plänen zur Rekonstruktion und Neugestaltung der Ausstellungen zog das Museum ins Zentrum von Köln in das ehemalige Modehaus Franz Sauer um und eröffnete dort 2024 einen neuen Raum und ein neues Ausstellungskonzept. Das neue Museumskonzept macht es nicht nur zu einem Aufbewahrungsort von Objekten, sondern auch zu einer interaktiven Plattform für den Dialog mit den Besuchern: Die Geschichte der Stadt wird hier durch Emotionen, Fragen und persönliche Verbindungen zwischen Vergangenheit und Gegenwart vermittelt. Das neue Kölnische Stadtmuseum vereint die Tradition des Sammlers mit einem modernen Blick auf die Geschichtsvermittlung." }
+            ]
+        },
+        tickets_and_entry: {
+            title: "Praktische Informationen",
+            items: [
+                { bold: "Adresse:", text: "Minoritenstraße 13, 50667 Köln, Deutschland" },
+                { bold: "Öffnungszeiten (2026):", text: "<br>Dienstag-Sonntag: 10:00-17:00 <br>Jeden ersten Donnerstag im Monat: 10:00-22:00 (das ist «KölnTag» – dann gibt es manchmal freien Eintritt für Kölner) <br>Montag: normalerweise geschlossen <br>An Feiertagen gelten normalerweise die regulären Öffnungszeiten (10:00-17:00), aber während des Karnevals ist das Museum im Zeitraum der wichtigsten Karnevalstage (ungefähr 12.-17. Februar) geschlossen." },
+                { bold: "Preise für Eintrittskarten (2026):", text: "<br>Erwachsene: €5 <br>Ermäßigt: €3 (Studierende, Jugendliche usw.) <br>Kinder bis 7 Jahre: kostenlos <br>Kinder und Jugendliche mit Wohnsitz vor Ort (bis 18 Jahre): kostenlos <br>Spezielle Fälle von kostenlosem Eintritt: Kölner an ihrem Geburtstag oder am «KölnTag» (1. Donnerstag im Monat) und Inhaber eines Köln‑Pass. <br>Es gibt Museumskarten (Museumscard) für mehrere Kölner Museen (Option mit Kombinationen für mehrere Tage)." }
+            ]
+        },
+        sub_objects: {
+            title: "Ausstellungen:",
+            items: [
+                { bold: "Dauerausstellung:", text: "<br>Geschichte der Stadt vom Mittelalter bis zur Gegenwart <br>Themen: Kultur, Wirtschaft, Gesellschaft und Alltag <br>Interaktive Elemente und moderne Präsentationen von Objekten " },
+                { bold: "Wechselnde Ausstellungen:", text: "<br>Im Museum finden regelmäßig thematische Ausstellungen und Sonderprojekte statt (Zeitraum variiert je nach Saison). " }
+            ]
+        },
+        interestingFacts: {
+            title: "Interessante Fakten",
+            items: [
+                { text: "Das Museum zog 2024 von seinem alten Standort in einen neuen Raum mit modernem Design im Zentrum der Stadt um." },
+                { text: "Während des Zweiten Weltkriegs wurde ein bedeutender Teil der Sammlung gerettet und in sichere Depots gebracht." },
+                { text: "Die Ausstellung ist in Form von Fragen‑Emotionen aufgebaut, damit der Besucher selbst die Verbindung der Geschichte mit persönlichen Erfahrungen erkennt." },
+                { text: "Das Museum bietet öffentliche und buchbare Führungen in mehreren Sprachen an, darunter Englisch und Französisch." }
+            ]
+        },
+        construction_period: "1888 Jahr",
+        founder: " gegründet vom Kommunalverwaltung der Stadt Köln",
+        meta: {
+            title: "Kölnisches Stadtmuseum | Geschichte von Köln vom Mittelalter bis heute",
+            description: "Besuchen Sie das Kölnische Stadtmuseum in Köln – ein modernes Stadtmuseum mit einer reichen Dauerausstellung und wechselnden Ausstellungen, die Kultur, Gesellschaft und Traditionen Kölns offenbaren. Adresse, Eintritt, Öffnungszeiten.",
+            ogTitle: "Kölnisches Stadtmuseum – Geschichte von Köln",
+            ogDescription: "Erfahren Sie die Geschichte von Köln durch einzigartige Objekte, interaktive Ausstellungen und moderne Präsentationen im Kölnischen Stadtmuseum.",
+            ogImage: "https://our-travels.info/foto/Germany/nrw/koln/koln-city/stadtmuseum/001.jpg"
+        }
+    },
+    {
         id: "koln_bridges",
         name: "Kölner Rheinbrücken",
         type: ["technical_structure"],
@@ -1425,50 +1484,50 @@ const datas = [
     },
 
     // Köln округ
-    
-// aachen kreis
+
+    // aachen kreis
     {
-    id: "historic_center_monschau",
-    name: "Altstadt Monschau",
-    type: ["historical_building"],
-    path: "historic_center_monschau",
-    countryPath: "germany",
-    regionsPath: "nrw",
-    districtPath: "koln",
-    cityPath: "monschau",
-    fotoCard: "Germany/nrw/koln/Aachen/monschau/001.jpg",
-    location: "Monschau, Deutschland",
-    short_description: "Die Altstadt von Monschau ist ein hervorragend erhaltenes historisches Zentrum mit Fachwerkhäusern aus dem 17.–18. Jahrhundert, engen gepflasterten Gassen und einer malerischen Uferpromenade entlang des Flusses Rur. Sie liegt in der Naturregion Eifel im Bundesland Nordrhein-Westfalen. Die Bebauung hat sich seit dem späten Mittelalter kaum verändert und vermittelt den Eindruck eines „lebendigen Museums“.",
-    full_description: {
-        title: "Beschreibung und Geschichte",
-        items: [
-            { bold: "Altstadt Monschau", text: " – wirkt wie eine lebendig gewordene Illustration aus einem alten europäischen Märchen. Enge gepflasterte Gassen schlängeln sich zwischen Fachwerkhäusern, deren dunkle Balken und weißen Wände Jahrhunderte Geschichte erlebt haben, während sich über dem ruhigen Wasser des Flusses Balkone mit Blumenschmuck neigen. Die Stadt scheint tief in einem Tal zwischen Hügeln verborgen zu liegen, sodass jede Biegung einen neuen malerischen Ausblick eröffnet – eine Brücke, einen Turm, ein altes Dach oder einen gemütlichen Innenhof. Hier ist die Moderne kaum spürbar: Der Lärm der Autos verschwindet, die Zeit verlangsamt sich, und ein Spaziergang wird nicht nur zur Besichtigung, sondern zu einer echten Reise in die Vergangenheit." },
-            { bold: "Geschichte", text: "Die Siedlung entstand im 13. Jahrhundert rund um die Burg Monschau. Im 18. Jahrhundert erlebte die Stadt durch die Textilproduktion einen wirtschaftlichen Aufschwung. Wohlhabende Fabrikanten errichteten prächtige Häuser, von denen viele bis heute erhalten sind. Nach dem Niedergang der Industrie im 19. Jahrhundert wurde die Stadt kaum umgebaut – genau das ermöglichte den Erhalt ihres historischen Erscheinungsbildes." }
-        ]
+        id: "historic_center_monschau",
+        name: "Altstadt Monschau",
+        type: ["historical_building"],
+        path: "historic_center_monschau",
+        countryPath: "germany",
+        regionsPath: "nrw",
+        districtPath: "koln",
+        cityPath: "monschau",
+        fotoCard: "Germany/nrw/koln/Aachen/monschau/001.jpg",
+        location: "Monschau, Deutschland",
+        short_description: "Die Altstadt von Monschau ist ein hervorragend erhaltenes historisches Zentrum mit Fachwerkhäusern aus dem 17.–18. Jahrhundert, engen gepflasterten Gassen und einer malerischen Uferpromenade entlang des Flusses Rur. Sie liegt in der Naturregion Eifel im Bundesland Nordrhein-Westfalen. Die Bebauung hat sich seit dem späten Mittelalter kaum verändert und vermittelt den Eindruck eines „lebendigen Museums“.",
+        full_description: {
+            title: "Beschreibung und Geschichte",
+            items: [
+                { bold: "Altstadt Monschau", text: " – wirkt wie eine lebendig gewordene Illustration aus einem alten europäischen Märchen. Enge gepflasterte Gassen schlängeln sich zwischen Fachwerkhäusern, deren dunkle Balken und weißen Wände Jahrhunderte Geschichte erlebt haben, während sich über dem ruhigen Wasser des Flusses Balkone mit Blumenschmuck neigen. Die Stadt scheint tief in einem Tal zwischen Hügeln verborgen zu liegen, sodass jede Biegung einen neuen malerischen Ausblick eröffnet – eine Brücke, einen Turm, ein altes Dach oder einen gemütlichen Innenhof. Hier ist die Moderne kaum spürbar: Der Lärm der Autos verschwindet, die Zeit verlangsamt sich, und ein Spaziergang wird nicht nur zur Besichtigung, sondern zu einer echten Reise in die Vergangenheit." },
+                { bold: "Geschichte", text: "Die Siedlung entstand im 13. Jahrhundert rund um die Burg Monschau. Im 18. Jahrhundert erlebte die Stadt durch die Textilproduktion einen wirtschaftlichen Aufschwung. Wohlhabende Fabrikanten errichteten prächtige Häuser, von denen viele bis heute erhalten sind. Nach dem Niedergang der Industrie im 19. Jahrhundert wurde die Stadt kaum umgebaut – genau das ermöglichte den Erhalt ihres historischen Erscheinungsbildes." }
+            ]
+        },
+        interestingFacts: {
+            title: "Interessante Fakten",
+            items: [
+                { text: "Im historischen Zentrum ist moderne Bebauung verboten." },
+                { text: "Viele Häuser stehen auf Fundamenten aus dem 14.–15. Jahrhundert." },
+                { text: "Die Altstadt von Monschau blieb im Zweiten Weltkrieg weitgehend unbeschädigt und bewahrte deshalb ihre ursprüngliche Stadtstruktur." },
+                { text: "Die engen Straßen entstanden nicht aus romantischen Gründen, sondern wegen Platzmangels im schmalen Tal des Flusses Rur." },
+                { text: "Im 18. Jahrhundert war die Stadt ein wohlhabendes Zentrum der Textilindustrie – sichtbar an den prächtigen Häusern der Fabrikanten, besonders am Gebäude Rotes Haus." },
+                { text: "Über der Stadt erhebt sich die Burg Monschau, die bereits im 13. Jahrhundert zur Kontrolle der Handelswege erbaut wurde." },
+                { text: "Monschau wird oft als das „fotogenste Städtchen der Eifelregion“ bezeichnet, dank der Kombination aus Fachwerk, Bergen und Wasser." },
+                { text: "Hier wurden mehrere historische Filme und deutsche Fernsehserien gedreht – die Stadt dient als fertige Kulisse ohne aufwendige Studiobauten." },
+                { text: "Im Winter findet einer der stimmungsvollsten Weihnachtsmärkte Deutschlands statt, und viele Häuser werden mit traditionellen Kerzen in den Fenstern geschmückt." }
+            ]
+        },
+        construction_period: "13. Jahrhundert (Entstehung der Siedlung um die Burg)",
+        meta: {
+            title: "Altstadt Monschau — Mittelalterliches Zentrum in der Eifel | Deutschland",
+            description: "Die Altstadt von Monschau ist eines der schönsten historischen Zentren Deutschlands mit Fachwerkhäusern, dem Fluss Rur und mittelalterlicher Atmosphäre.",
+            ogTitle: "Altstadt Monschau — Märchenhaftes Deutschland",
+            ogDescription: "Ein Spaziergang durch die Altstadt von Monschau ist eine Reise in die Vergangenheit: enge Gassen, historische Häuser und die Romantik der Eifel.",
+            ogImage: "https://our-travels.info/foto/Germany/nrw/koln/Aachen/monschau/002.jpg"
+        }
     },
-    interestingFacts: {
-        title: "Interessante Fakten",
-        items: [
-            { text: "Im historischen Zentrum ist moderne Bebauung verboten." },
-            { text: "Viele Häuser stehen auf Fundamenten aus dem 14.–15. Jahrhundert." },
-            { text: "Die Altstadt von Monschau blieb im Zweiten Weltkrieg weitgehend unbeschädigt und bewahrte deshalb ihre ursprüngliche Stadtstruktur." },
-            { text: "Die engen Straßen entstanden nicht aus romantischen Gründen, sondern wegen Platzmangels im schmalen Tal des Flusses Rur." },
-            { text: "Im 18. Jahrhundert war die Stadt ein wohlhabendes Zentrum der Textilindustrie – sichtbar an den prächtigen Häusern der Fabrikanten, besonders am Gebäude Rotes Haus." },
-            { text: "Über der Stadt erhebt sich die Burg Monschau, die bereits im 13. Jahrhundert zur Kontrolle der Handelswege erbaut wurde." },
-            { text: "Monschau wird oft als das „fotogenste Städtchen der Eifelregion“ bezeichnet, dank der Kombination aus Fachwerk, Bergen und Wasser." },
-            { text: "Hier wurden mehrere historische Filme und deutsche Fernsehserien gedreht – die Stadt dient als fertige Kulisse ohne aufwendige Studiobauten." },
-            { text: "Im Winter findet einer der stimmungsvollsten Weihnachtsmärkte Deutschlands statt, und viele Häuser werden mit traditionellen Kerzen in den Fenstern geschmückt." }
-        ]
-    },
-    construction_period: "13. Jahrhundert (Entstehung der Siedlung um die Burg)",
-    meta: {
-        title: "Altstadt Monschau — Mittelalterliches Zentrum in der Eifel | Deutschland",
-        description: "Die Altstadt von Monschau ist eines der schönsten historischen Zentren Deutschlands mit Fachwerkhäusern, dem Fluss Rur und mittelalterlicher Atmosphäre.",
-        ogTitle: "Altstadt Monschau — Märchenhaftes Deutschland",
-        ogDescription: "Ein Spaziergang durch die Altstadt von Monschau ist eine Reise in die Vergangenheit: enge Gassen, historische Häuser und die Romantik der Eifel.",
-        ogImage: "https://our-travels.info/foto/Germany/nrw/koln/Aachen/monschau/002.jpg"
-    }
-},
 
     // Rhein-Erft-Kreis
 
@@ -1487,7 +1546,7 @@ const datas = [
         officialSite: [
             { bold: 'Offizielle Website der Brühler Schlösser', link: 'https://www.schlossbruehl.de/en/' },
         ],
-        unesco_status: {included: true, year: 1984},
+        unesco_status: { included: true, year: 1984 },
         tickets_and_entry: {
             title: "Tickets und Eintritt",
             items: [
