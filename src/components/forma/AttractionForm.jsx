@@ -289,14 +289,14 @@ const toJsModuleString = (obj, indent = 0) => {
         <select {...register("type", { required: "Выберите тип" })}>
           <option value="">Выберите тип</option>
           <option value="museum">Музеи</option>
-          <option value="cathedral">Соборы и церкви</option>
+          <option value="cathedral">Соборы, церкви и монастыри</option>
           <option value="palace_or_castle">Дворцы и замки</option>
           <option value="amusement_park">Парки развлечений</option>
-          <option value="historical_building">Исторические здания</option>
+          <option value="historical_building">Исторические сооружения</option>
           <option value="technical_structure">Технические сооружения</option>
           <option value="nature">Природа</option>
           <option value="monument_or_fountain">Памятники и фонтаны</option>
-          <option value="square">Площадь</option>
+          <option value="square">Площади</option>
         </select>
         <p className='note'>Если ничего не подходит, а надо, то добавляем в файл src/components/AttractionsFilters (в объекте attractionTypes). И не забываем обновить форму</p>
       </div>
@@ -348,6 +348,7 @@ const toJsModuleString = (obj, indent = 0) => {
             )}
             {watchedFields.country === "germany" && watchedFields.region === "rheinland-pfalz" && (
               <>
+                <option value="mayen-koblenz">Майен‑Кобленц</option>
                 <option value="city">Город обласного значения</option>
               </>
             )}

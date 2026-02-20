@@ -610,7 +610,7 @@ const datas = [
     {
         id: "museum_schnuetgen_koln",
         name: "Музей Шнютгена",
-        type: ["museum"],
+        type: ["museum", 'cathedral'],
         path: "museum_schnuetgen_koln",
         countryPath: "germany",
         regionsPath: "nrw",

@@ -369,27 +369,32 @@ export const Fotos = {
   "rheinland-pfalz": {
     trier: {
       gallery: [
-        { path: "Germany/rheinland-pfalz/trier-city/portaNigra_trier/001.JPG", title: { ru: "Порта Нигра, 2024", ua: "Порта Нігра («Чорні ворота»), 2024", de: "Porta Nigra, 2024" } },
+        { path: "Germany/rheinland-pfalz/trier-city/portaNigra_trier/001.jpg", title: { ru: "Порта Нигра, 2024", ua: "Порта Нігра («Чорні ворота»), 2024", de: "Porta Nigra, 2024" } },
       ],
       portaNigra_trier: [
-        { path: "Germany/rheinland-pfalz/trier-city/portaNigra_trier/001.JPG", title: { ru: "Порта Нигра, 2024", ua: "Порта Нігра («Чорні ворота»), 2024", de: "Porta Nigra, 2024" } },
-        { path: "Germany/rheinland-pfalz/trier-city/portaNigra_trier/002.JPG", title: { ru: "Порта Нигра, 2024", ua: "Порта Нігра («Чорні ворота»), 2024", de: "Porta Nigra, 2024" } },
+        { path: "Germany/rheinland-pfalz/trier-city/portaNigra_trier/001.jpg", title: { ru: "Порта Нигра, 2024", ua: "Порта Нігра («Чорні ворота»), 2024", de: "Porta Nigra, 2024" } },
+        { path: "Germany/rheinland-pfalz/trier-city/portaNigra_trier/002.jpg", title: { ru: "Порта Нигра, 2024", ua: "Порта Нігра («Чорні ворота»), 2024", de: "Porta Nigra, 2024" } },
       ],
       amphitheater_trier: [
-        { path: "Germany/rheinland-pfalz/trier-city/amphitheater/001.JPG", title: { ru: "Римский амфитеатр в Трире, 2024", ua: "Римський амфітеатр у Трірі, 2024", de: "Römischer Amphitheater in Trier, 2024" } },
-        { path: "Germany/rheinland-pfalz/trier-city/amphitheater/002.JPG", title: { ru: "Римский амфитеатр в Трире, 2024", ua: "Римський амфітеатр у Трірі, 2024", de: "Römischer Amphitheater in Trier, 2024" } },
-        { path: "Germany/rheinland-pfalz/trier-city/amphitheater/003.JPG", title: { ru: "Римский амфитеатр в Трире, 2024", ua: "Римський амфітеатр у Трірі, 2024", de: "Römischer Amphitheater in Trier, 2024" } },
-        { path: "Germany/rheinland-pfalz/trier-city/amphitheater/004.JPG", title: { ru: "Римский амфитеатр в Трире, 2024", ua: "Римський амфітеатр у Трірі, 2024", de: "Römischer Amphitheater in Trier, 2024" } },
-        { path: "Germany/rheinland-pfalz/trier-city/amphitheater/005.JPG", title: { ru: "Римский амфитеатр в Трире, 2024", ua: "Римський амфітеатр у Трірі, 2024", de: "Römischer Amphitheater in Trier, 2024" } },
-        { path: "Germany/rheinland-pfalz/trier-city/amphitheater/006.JPG", title: { ru: "Римский амфитеатр в Трире, 2024", ua: "Римський амфітеатр у Трірі, 2024", de: "Römischer Amphitheater in Trier, 2024" } },
-        { path: "Germany/rheinland-pfalz/trier-city/amphitheater/007.JPG", title: { ru: "Римский амфитеатр в Трире, 2024", ua: "Римський амфітеатр у Трірі, 2024", de: "Römischer Amphitheater in Trier, 2024" } },
+        { path: "Germany/rheinland-pfalz/trier-city/amphitheater/001.jpg", title: { ru: "Римский амфитеатр в Трире, 2024", ua: "Римський амфітеатр у Трірі, 2024", de: "Römischer Amphitheater in Trier, 2024" } },
+        { path: "Germany/rheinland-pfalz/trier-city/amphitheater/002.jpg", title: { ru: "Римский амфитеатр в Трире, 2024", ua: "Римський амфітеатр у Трірі, 2024", de: "Römischer Amphitheater in Trier, 2024" } },
+        { path: "Germany/rheinland-pfalz/trier-city/amphitheater/003.jpg", title: { ru: "Римский амфитеатр в Трире, 2024", ua: "Римський амфітеатр у Трірі, 2024", de: "Römischer Amphitheater in Trier, 2024" } },
+        { path: "Germany/rheinland-pfalz/trier-city/amphitheater/004.jpg", title: { ru: "Римский амфитеатр в Трире, 2024", ua: "Римський амфітеатр у Трірі, 2024", de: "Römischer Amphitheater in Trier, 2024" } },
+        { path: "Germany/rheinland-pfalz/trier-city/amphitheater/005.jpg", title: { ru: "Римский амфитеатр в Трире, 2024", ua: "Римський амфітеатр у Трірі, 2024", de: "Römischer Amphitheater in Trier, 2024" } },
+        { path: "Germany/rheinland-pfalz/trier-city/amphitheater/006.jpg", title: { ru: "Римский амфитеатр в Трире, 2024", ua: "Римський амфітеатр у Трірі, 2024", de: "Römischer Amphitheater in Trier, 2024" } },
+        { path: "Germany/rheinland-pfalz/trier-city/amphitheater/007.jpg", title: { ru: "Римский амфитеатр в Трире, 2024", ua: "Римський амфітеатр у Трірі, 2024", de: "Römischer Amphitheater in Trier, 2024" } },
       ],
       kaiserthermen_trier: [
-        { path: "Germany/rheinland-pfalz/trier-city/kaiserthermen/01.JPG", title: { ru: "Римские императорские бани, 2024", ua: "Римські імператорські терми, 2024", de: "Römische Kaiserthermen, 2024" } },
-        { path: "Germany/rheinland-pfalz/trier-city/kaiserthermen/02.JPG", title: { ru: "Римские императорские бани, 2024", ua: "Римські імператорські терми, 2024", de: "Römische Kaiserthermen, 2024" } },
-        { path: "Germany/rheinland-pfalz/trier-city/kaiserthermen/03.JPG", title: { ru: "Римские императорские бани, 2024", ua: "Римські імператорські терми, 2024", de: "Römische Kaiserthermen, 2024" } },
-        { path: "Germany/rheinland-pfalz/trier-city/kaiserthermen/04.JPG", title: { ru: "Римские императорские бани, 2024", ua: "Римські імператорські терми, 2024", de: "Römische Kaiserthermen, 2024" } },
-        { path: "Germany/rheinland-pfalz/trier-city/kaiserthermen/05.JPG", title: { ru: "Римские императорские бани, 2024", ua: "Римські імператорські терми, 2024", de: "Römische Kaiserthermen, 2024" } },
+        { path: "Germany/rheinland-pfalz/trier-city/kaiserthermen/01.jpg", title: { ru: "Римские императорские бани, 2024", ua: "Римські імператорські терми, 2024", de: "Römische Kaiserthermen, 2024" } },
+        { path: "Germany/rheinland-pfalz/trier-city/kaiserthermen/02.jpg", title: { ru: "Римские императорские бани, 2024", ua: "Римські імператорські терми, 2024", de: "Römische Kaiserthermen, 2024" } },
+        { path: "Germany/rheinland-pfalz/trier-city/kaiserthermen/03.jpg", title: { ru: "Римские императорские бани, 2024", ua: "Римські імператорські терми, 2024", de: "Römische Kaiserthermen, 2024" } },
+        { path: "Germany/rheinland-pfalz/trier-city/kaiserthermen/04.jpg", title: { ru: "Римские императорские бани, 2024", ua: "Римські імператорські терми, 2024", de: "Römische Kaiserthermen, 2024" } },
+        { path: "Germany/rheinland-pfalz/trier-city/kaiserthermen/05.jpg", title: { ru: "Римские императорские бани, 2024", ua: "Римські імператорські терми, 2024", de: "Römische Kaiserthermen, 2024" } },
+      ],
+      basilica_of_constantine_trier: [
+        { path: "Germany/rheinland-pfalz/trier-city/basilica_of_constantine/001.jpg", title: { ru: "Базилика Константина (фото взято с интернета)", ua: "Базиліка Константина (фото взято з Інтернету)", de: "Konstantin-Basilika (Foto aus dem Internet)" } },
+        { path: "Germany/rheinland-pfalz/trier-city/basilica_of_constantine/002.jpg", title: { ru: "Базилика Константина, 2024", ua: "Базиліка Константина, 2024", de: "Konstantin-Basilika, 2024" } },
+        { path: "Germany/rheinland-pfalz/trier-city/basilica_of_constantine/003.jpg", title: { ru: "Базилика Константина, 2024", ua: "Базиліка Константина, 2024", de: "Konstantin-Basilika, 2024" } },
       ],
     }
   }

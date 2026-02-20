@@ -8,7 +8,7 @@ const datas = [
     regionsPath: "rheinland-pfalz",
     districtPath: "city",
     cityPath: "trier",
-    fotoCard: "Germany/rheinland-pfalz/trier-city/portaNigra_trier/001.JPG",
+    fotoCard: "Germany/rheinland-pfalz/trier-city/portaNigra_trier/001.jpg",
     location: "Трір, Німеччина",
     officialSite: [
       { bold: "Офіційний сайт", link: "https://www.zentrum-der-antike.de/monumente/porta-nigra?utm_source=chatgpt.com" }
@@ -48,7 +48,7 @@ const datas = [
       description: "Відкрийте для себе Порта Нігра в Трірі – найбільші збережені римські міські ворота на північ від Альп. Історія, цікаві факти, практична інформація для туристів та легенди.",
       ogTitle: "Порта Нігра, Трір – історичні римські ворота Німеччини",
       ogDescription: "Відвідайте Порта Нігра – величні римські ворота в центрі Тріра. Дізнайтеся історію, легенди та практичну інформацію для туристів. Ідеальне місце для любителів історії та архітектури.",
-      ogImage: "https://our-travels.info/foto/Germany/rheinland-pfalz/trier-city/portaNigra_trier/001.JPG"
+      ogImage: "https://our-travels.info/foto/Germany/rheinland-pfalz/trier-city/portaNigra_trier/001.jpg"
     }
   },
   {
@@ -60,7 +60,7 @@ const datas = [
     regionsPath: "rheinland-pfalz",
     districtPath: "city",
     cityPath: "trier",
-    fotoCard: "Germany/rheinland-pfalz/trier-city/amphitheater/001.JPG",
+    fotoCard: "Germany/rheinland-pfalz/trier-city/amphitheater/001.jpg",
     location: "Трір, Німеччина",
     officialSite: [
       { bold: "Офіційний сайт", link: "https://www.zentrum-der-antike.de/monumente/amphitheater" }
@@ -122,7 +122,7 @@ const datas = [
       description: "Інформація про Римський амфітеатр Тріра (Німеччина): історія II ст. н.е., години роботи, квитки, цікаві факти та екскурсії.",
       ogTitle: "Римський амфітеатр Тріра – один із найбільших римських амфітеатрів Європи",
       ogDescription: "Дізнайтеся про давній амфітеатр Тріра: як він використовувався в римську епоху, що можна побачити сьогодні, де знаходиться та як відвідати.",
-      ogImage: "https://our-travels.info/foto/Germany/rheinland-pfalz/trier-city/amphitheater/001.JPG"
+      ogImage: "https://our-travels.info/foto/Germany/rheinland-pfalz/trier-city/amphitheater/001.jpg"
     }
   },
   {
@@ -134,7 +134,7 @@ const datas = [
     regionsPath: "rheinland-pfalz",
     districtPath: "city",
     cityPath: "trier",
-    fotoCard: "Germany/rheinland-pfalz/trier-city/kaiserthermen/01.JPG",
+    fotoCard: "Germany/rheinland-pfalz/trier-city/kaiserthermen/01.jpg",
     location: "Трір, Німеччина",
     unesco_status: { included: true, year: 1986 },
     short_description: "Кайзертерми (Kaiserthermen) – це один з найбільших римських банних комплексів північніше Альп, збудований наприкінці III – на початку IV століття н.е. у місті Трір (раніше Augusta Treverorum). Сьогодні від комплексу збереглися потужні руїни, які можна оглядати як над землею, так і під землею, з доступом до підземних службових галерей та залишків інженерних систем.",
@@ -186,9 +186,60 @@ const datas = [
       description: "Дізнайтеся історію, екскурсії та практичну інформацію про римські імператорські терми (Kaiserthermen) у Трірі – один з найбільших античних банних комплексів північніше Альп, включений до списку ЮНЕСКО.",
       ogTitle: "Імператорські терми Трір – Давні римські бані",
       ogDescription: "Відкрийте для себе Kaiserthermen у Трірі: давні руїни грандіозних римських бань з підземними галереями, мультимедійними експозиціями та багатою історією.",
-      ogImage: "https://our-travels.info/foto/Germany/rheinland-pfalz/trier-city/kaiserthermen/01.JPG"
+      ogImage: "https://our-travels.info/foto/Germany/rheinland-pfalz/trier-city/kaiserthermen/01.jpg"
     }
   },
+  {
+    id: "basilica_of_constantine_trier",
+    name: "Базиліка Константина",
+    type: ["cathedral", "historical_building"],
+    path: "basilica_of_constantine_trier",
+    countryPath: "germany",
+    regionsPath: "rheinland-pfalz",
+    districtPath: "city",
+    cityPath: "trier",
+    fotoCard: "Germany/rheinland-pfalz/trier-city/basilica_of_constantine/001.jpg",
+    location: "Трір, Німеччина",
+    officialSite: [
+      { bold: "Офіційний сайт", link: "https://trier.ekir.de/inhalt/konstantin-basilika?utm_source=chatgpt.com" }
+    ],
+    unesco_status: { included: true, year: 1986 },
+    short_description: "Монументальна римська будівля IV століття, що слугувала тронним залом імператора Костянтина. Сьогодні це одна з найбільших збережених античних зал-базилік у світі та протестантська церква.",
+    full_description: {
+      title: "Опис і історія",
+      items: [
+        { bold: "Базиліка Константина (Aula Palatina) ", text: "– унікальний зразок пізньоримської палацової архітектури. Великий прямокутний зал довжиною близько 67 м та висотою понад 30 м вражає масштабом та суворою монументальністю. Всередині немає колон – простір повністю відкритий, що було технічним досягненням свого часу. Нині будівля використовується як євангелічна церква та історична пам’ятка." },
+        { bold: "Історія. ", text: "Базиліка Константина (Aula Palatina) була побудована близько 310 року н. е. за указом імператора Костянтина Великого, коли Трір слугував однією з столиць Римської імперії. Будівля призначалася як тронний зал імператорського палацу, де проходили офіційні прийоми та аудієнції. Архітектурне рішення вражало масштабом: величезний прямокутний зал довжиною близько 67 метрів та висотою понад 30 метрів створював відчуття монументальної відкритості, а масивні стіни та високі вікна дозволяли природному світлу рівномірно освітлювати інтер’єр." },
+        { text: "Після падіння Римської імперії базиліка втратила своє первісне значення. У середні віки її використовували як фортецю та резиденцію архієпископа Тріра. У цей час будівля зазнала значних перебудов: внутрішні приміщення були розділені, а частина архітектурних деталей втрачена. Незважаючи на це, основна структура збереглася, що дозволило оцінити інженерне майстерство римських будівельників." },
+        { text: "У XIX столітті баварська влада розпочала масштабну реставрацію базиліки, прагнучи повернути їй первісний античний вигляд. Було відновлено інтер’єри, очищено фасади, зміцнено стіни, а арочні вікна реконструйовано за збереженими кресленнями та аналогами. Відтоді будівля використовується як протестантська церква, одночасно залишаючись важливою історичною пам’яткою." },
+        { text: "Під час Другої світової війни базиліка зазнала незначних пошкоджень, які були усунуті у повоєнні роки. Сьогодні Aula Palatina входить до складу об’єкта Світової спадщини ЮНЕСКО «Давньоримські пам’ятки, кафедральний собор Святого Петра та церква Богоматері у Трірі». Вона приваблює туристів з усього світу не лише як релігійна споруда, але й як видатний зразок римської архітектури Північної Європи." }
+      ]
+    },
+    tickets_and_entry: {
+      title: "Практична інформація",
+      items: [
+        { bold: "Доступ:", text: "відкрито для відвідування, вхід зазвичай безкоштовний" }
+      ]
+    },
+    interestingFacts: {
+      title: "Цікаві факти",
+      items: [
+        { text: "Це найбільший повністю збережений внутрішній зал античності на північ від Альп." },
+        { text: "Стіни завтовшки до 2,7 м." },
+        { text: "У римський час інтер’єр був облицьований мармуром і прикрашений мозаїками." },
+        { text: "Споруду спочатку опалювали системою гіпокаусту (римське центральне опалення)." }
+      ]
+    },
+    construction_period: "IV століття н. е., близько 310 року",
+    founder: " Імператор Костянтин Великий",
+    meta: {
+      title: "Базиліка Константина у Трірі – римський тронний зал IV століття",
+      description: "Базиліка Константина (Aula Palatina) – античний палацовий зал імператора Костянтина у Трірі. Історія, факти, архітектура та інформація для відвідування.",
+      ogTitle: "Базиліка Константина – римська архітектура Тріра",
+      ogDescription: "Великий тронний зал імператора Костянтина IV століття – один із найвражаючих пам’яток римської епохи у Німеччині.",
+      ogImage: "https://our-travels.info/foto/Germany/rheinland-pfalz/trier-city/basilica_of_constantine/001.jpg"
+    }
+  }
 ];
 
 export default datas;
