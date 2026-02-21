@@ -915,6 +915,124 @@ const datas = [
         }
     },
     {
+        id: "sport_olympia_museum_koln",
+        name: "Deutsches Sport & Olympia Museum",
+        type: ["museum"],
+        path: "sport_olympia_museum_koln",
+        countryPath: "germany",
+        regionsPath: "nrw",
+        districtPath: "city",
+        cityPath: "koln",
+        fotoCard: "Germany/nrw/koln/koln-city/sport_olympia_museum/001.jpg",
+        location: "Köln, Deutschland",
+        officialSite: [
+            { bold: "Offizielle Website", link: "https://sportmuseum.de/" }
+        ],
+        short_description: "Ein Museum, das der 2.500-jährigen Geschichte des Sports und der Olympischen Spiele von der Antike bis zur Gegenwart gewidmet ist, mit interaktiven Exponaten, Sportobjekten und der Möglichkeit, selbst aktiv zu werden.",
+        full_description: {
+            title: "Beschreibung und Geschichte",
+            items: [
+                { bold: "Deutsches Sport & Olympia Museum ", text: "– ein Museum im Herzen von Köln (Hafenviertel Rheinauhafen), in dem auf über 2.000 m² anhand von Exponaten, Multimedia-Stationen und interaktiven Bereichen die Geschichte des Sports erzählt wird: von der antiken griechischen Athletik bis zu Fußball, Olympischen Spielen, Wintersportarten und modernem Profisport." },
+                { bold: "Geschichte ", text: "des Museums beginnt lange vor seiner Eröffnung. Die Idee eines nationalen Sportmuseums entstand in Deutschland Anfang der 1980er Jahre vor dem Hintergrund des wachsenden Interesses an der Bewahrung des sportlichen Erbes des Landes. 1982 beschlossen führende Sportverbände, Föderationen und Vertreter der olympischen Bewegung, eine zentrale Ausstellung zu schaffen, die die Entwicklung des Sports von der Antike bis zur Gegenwart dokumentieren und zugleich als Bildungs- und Kulturzentrum dienen sollte." },
+                { text: "Als Standort wurde Köln gewählt – eine Stadt mit reichen Traditionen internationaler Veranstaltungen und gut entwickelter Infrastruktur. Für das Museum wurde ein historisches Hafengebäude genutzt – ein alter Zollspeicher (Zollhalle 10), erbaut im Jahr 1898. Diese Entscheidung ermöglichte es, industrielles architektonisches Erbe mit modernem Museumsraum zu verbinden." },
+                { text: "Der Umbau des Gebäudes dauerte mehrere Jahre. Die Architekten bewahrten die originale Backsteinfassade und den industriellen Charakter des Bauwerks, modernisierten jedoch die Innenräume vollständig – moderne Elemente sind organisch in die Architektur integriert – darunter eine Glastreppe und eine Dachterrasse mit Sportflächen. So wurde aus dem alten Speicher ein moderner Ausstellungskomplex mit großzügigen Hallen, Multimediazonen und offenem Dach für sportliche Aktivitäten." },
+                { text: "Die offizielle Eröffnung des Museums fand 1999 statt. Seitdem zählt es zu den größten spezialisierten Sportmuseen Europas, und seine Sammlung wächst kontinuierlich durch die Zusammenarbeit mit Sportlern, Verbänden und privaten Sammlern. Heute erfüllt das Museum auch eine wissenschaftlich-pädagogische Funktion und veranstaltet Events, Vorträge und thematische Programme zur Geschichte und Kultur des Sports." }
+            ]
+        },
+        tickets_and_entry: {
+            title: "Praktische Informationen",
+            items: [
+                { bold: "Adresse:", text: "Im Zollhafen 1, 50678 Köln, Deutschland – das Museum befindet sich direkt im Kölner Rheinauhafen." },
+                { bold: "Öffnungszeiten:", text: "in der Regel Dienstag bis Sonntag von 10:00 bis 18:00 Uhr geöffnet (Montag geschlossen)." },
+                { bold: "Eintrittspreise:", text: "<br>Erwachsene – ca. 10,50 € <br>Studierende, Schüler – ca. 7,50 € <br>Senioren und Menschen mit Behinderung – ca. 9,50 € <br>Kinder unter 6 Jahren und Begleitpersonen bestimmter Kategorien – frei <br>Es gibt Familien- und Gruppentickets sowie Ermäßigungen mit KölnCard und Köln-Pass." },
+                { text: "An Feiertagen, in Schulferien oder saisonal können besondere Öffnungszeiten gelten – prüfen Sie diese immer vor dem Besuch auf der offiziellen Website." }
+            ]
+        },
+        sub_objects: {
+            title: "Ausstellungen",
+            items: [
+                { bold: "Dauerausstellung:", text: "<br>Geschichte der Sportarten von der Antike bis zum 21. Jahrhundert <br>Olympische Spiele und ihre Entwicklung <br>Deutsche Turn- und Athletiktradition <br>Fußball, Boxen, Radsport, Wintersport <br>Sportbekleidung, Medaillen, Plakate und Fotografien <br>Interaktive Bereiche mit Möglichkeiten zur körperlichen Aktivität und spielerischen Elementen" },
+                { bold: "Sonderausstellungen:", text: "<br>Regelmäßig finden thematische Sportausstellungen statt, die im Laufe des Jahres wechseln – Programme und Termine werden auf der offiziellen Website veröffentlicht." }
+            ]
+        },
+        interestingFacts: {
+            title: "Interessante Fakten",
+            items: [
+                { text: "Auf dem Dach des Museums befinden sich Sportplätze (Fußball, Tennis, Basketball) mit Blick auf den Kölner Dom und den Rhein – eine der ungewöhnlichsten Museumszonen in Köln." },
+                { text: "Das Museum besitzt eine umfangreiche Sammlung von über 120.000 Objekten, von denen rund 2.000 in der Dauerausstellung gezeigt werden." },
+                { text: "Die Ausstellung enthält originale Exponate legendärer Sportler, zum Beispiel Fußballschuhe des berühmten Franz Beckenbauer." }
+            ]
+        },
+        construction_period: "1999",
+        architects: " der Rekonstruktion – Walter von Lom",
+        founder: " das Museum wurde nicht von einem privaten Sammler gegründet, sondern von der gemeinnützigen Organisation „Verein Deutsches Sportmuseum“, an der große Sportverbände Deutschlands, das Olympische Komitee, die Stadt Köln und weitere Partner beteiligt waren.",
+        meta: {
+            title: "Deutsches Sport & Olympia Museum in Köln – Sportgeschichte von der Antike bis heute",
+            description: "Entdecken Sie 2.500 Jahre Sport- und Olympiageschichte im Museum in Köln: Exponate, interaktive Ausstellungen, Dach-Sportflächen und Sonderausstellungen.",
+            ogTitle: "Deutsches Sport & Olympia Museum – Sportmuseum in Köln",
+            ogDescription: "Tauchen Sie ein in die Geschichte des Sports von der Antike bis heute: über 2.000 Exponate, olympische Medaillen, interaktive Zonen und einzigartige Sportflächen auf dem Dach.",
+            ogImage: "https://our-travels.info/foto/Germany/nrw/koln/koln-city/sport_olympia_museum/001.jpg"
+        }
+    },
+    {
+        id: "photographische_sammlung_sk_stiftung_kultur_koln",
+        name: "Photographische Sammlung des SK Kulturfonds",
+        type: ["museum"],
+        path: "photographische_sammlung_sk_stiftung_kultur_koln",
+        countryPath: "germany",
+        regionsPath: "nrw",
+        districtPath: "city",
+        cityPath: "koln",
+        fotoCard: "Germany/nrw/koln/koln-city/photographische_sammlung_sk_stiftung_kultur/001.jpg",
+        location: "Köln, Deutschland",
+        officialSite: [
+            { bold: "Offizielle Webseite", link: "https://www.photographie-sk-kultur.de/" }
+        ],
+        short_description: "Eine Museumsammlung, die sich der dokumentarischen und konzeptuellen Fotografie widmet, mit umfangreichem Archiv historischer und zeitgenössischer Fotografien, einschließlich der größten Sammlung von Werken von August Sander.",
+        full_description: {
+            title: "Beschreibung und Geschichte",
+            items: [
+                { bold: "Die Photographische Sammlung / SK Stiftung Kultur", text: " – ein Museum und Ausstellungsraum in Köln (Im Mediapark 7), der der Geschichte und dem aktuellen Stand der künstlerischen Fotografie gewidmet ist. Der Fokus liegt auf dokumentarischer und konzeptioneller Fotografie, kombiniert mit wissenschaftlicher Erforschung des gesammelten Materials." },
+                { bold: "Die Sammlung", text: " umfasst mehr als 30 000 Arbeiten historischer und zeitgenössischer Fotografen aus verschiedenen Ländern, darunter besonders das Archiv von August Sander mit über 10 000 Negativen und 6 000 Originalabzügen – die weltweit größte Sammlung dieser Art. Darüber hinaus enthält die Sammlung Werke von bekannten Fotografen wie Bernd und Hilla Becher, Karl Blossfeldt, Jim Dine und anderen." },
+                { text: "Der Ausstellungsbereich des Museums umfasst ca. 450 m². Die Ausstellungen sind nicht permanent: sie wechseln zwei- bis dreimal im Jahr und umfassen sowohl Präsentationen aus dem eigenen Fundus als auch Projekte, die mit ihm in Dialog stehen. Regelmäßig werden Führungen, Seminare und Bildungsprogramme angeboten." },
+                { text: "Die Sammlung entstand Anfang der 1990er Jahre auf Basis des Erwerbs des Archivs von August Sander und wurde im Rahmen der kulturellen Aktivitäten der Stiftung Kultur – des Kulturfonds der Sparkasse KölnBonn – entwickelt, der Projekte in Kunst und Kultur unterstützt." }
+            ]
+        },
+        tickets_and_entry: {
+            title: "Praktische Informationen",
+            items: [
+                { bold: "Adresse:", text: "Im Mediapark 7, 50670 Köln, Deutschland – das Museum befindet sich im MediaPark, dem Kulturzentrum von Köln." },
+                { bold: "Öffnungszeiten:", text: "<br>in der Regel täglich von 14:00 bis 19:00 Uhr, <br>Mittwoch geschlossen; <br>am ersten Donnerstag jedes Monats freier Eintritt bis 21:00 Uhr." },
+                { bold: "Eintritt und Preise:", text: "<br>Eintritt ca. 6,50 €; <br>ermäßigt ca. 4,00 €; <br>am ersten Donnerstag jedes Monats kostenlos." },
+                { text: "Aktuelle Öffnungszeiten und Preise können je nach Ausstellung variieren – bitte vorher auf der offiziellen Website prüfen." }
+            ]
+        },
+        sub_objects: {
+            title: "Ausstellungen",
+            items: [
+                { bold: "Aktuelle Ausstellungen:", text: "<br>Die Ausstellungen wechseln zwei- bis dreimal im Jahr und zeigen sowohl Werke aus der Museumsammlung als auch thematische Projekte, die sich mit der Geschichte und der zeitgenössischen Fotografie beschäftigen." }
+            ]
+        },
+        interestingFacts: {
+            title: "Interessante Fakten",
+            items: [
+                { text: "Das Archiv von August Sander in dieser Sammlung gilt als das größte der Welt nach Anzahl der Originalnegative und Abzüge." },
+                { text: "Die Sammlung umfasst Werke international bekannter Fotografen wie Bernd und Hilla Becher, Karl Blossfeldt und Jim Dine." },
+                { text: "Die Ausstellungen werden regelmäßig von Vorträgen, Seminaren und Führungen für Erwachsene und Kinder begleitet." }
+            ]
+        },
+        construction_period: "1992",
+        architects: "",
+        founder: " gegründet auf Basis der kulturellen Stiftung SK Stiftung Kultur, die in Köln zur Unterstützung von Kunst und Kultur gegründet wurde, einschließlich Fotografie, Tanz und Literatur.",
+        meta: {
+            title: "Photographische Sammlung des SK Kulturfonds in Köln — Museum für Fotografie und Archiv von August Sander",
+            description: "Erfahren Sie mehr über dokumentarische und konzeptionelle Fotografie in Köln: größtes Archiv von August Sander, Ausstellungen klassischer und zeitgenössischer Fotografen.",
+            ogTitle: "Photographische Sammlung des SK Kulturfonds — Museum für Fotografie in Köln",
+            ogDescription: "Tauchen Sie ein in die Welt der dokumentarischen und konzeptionellen Fotografie: Archiv von August Sander, internationale Projekte, wechselnde Ausstellungen und Bildungsprogramme.",
+            ogImage: "https://our-travels.info/foto/Germany/nrw/koln/koln-city/photographische_sammlung_sk_stiftung_kultur/001.jpg"
+        }
+    },
+    {
         id: "koln_bridges",
         name: "Kölner Rheinbrücken",
         type: ["technical_structure"],

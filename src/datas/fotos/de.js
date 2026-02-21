@@ -139,6 +139,12 @@ export const Fotos = {
       stadtmuseum_koln: [
         { path: "Germany/nrw/koln/koln-city/stadtmuseum/001.jpg", title: { ru: "Кельнский городской музей (фото взято с интернета)", ua: "Кельнський міський музей (фото взято з Інтернету)", de: "Kölnisches Stadtmuseum (Foto aus dem Internet)" } },
       ],
+      sport_olympia_museum_koln: [
+        { path: "Germany/nrw/koln/koln-city/sport_olympia_museum/001.jpg", title: { ru: "Немецкий музей спорта и Олимпийских игр (фото взято с интернета)", ua: "Німецький музей спорту та Олімпійських ігор (фото взято з Інтернету)", de: "Deutsches Sport & Olympia Museum (Foto aus dem Internet)" } },
+      ],
+      photographische_sammlung_sk_stiftung_kultur_koln: [
+        { path: "Germany/nrw/koln/koln-city/photographische_sammlung_sk_stiftung_kultur/001.jpg", title: { ru: "Фотографическая коллекция культурного фонда SK (фото взято с интернета)", ua: "Фотографічна колекція культурного фонду SK (фото взято з Інтернету)", de: "Photographische Sammlung des SK Kulturfonds (Foto aus dem Internet)" } },
+      ]
     },
     bruhl: {
       gallery: [

@@ -75,6 +75,9 @@ import BreadCrumbs from '../../components/breadCrumbs/BreadCrumbs';
       finkens_garten_koln: { ru: 'Экологический сад Финкенсгартен', de: 'Finkens Garten', ua: 'Екологічний сад Фінкенсгартен' },
       makk_museum_koln: { ru: 'Музей прикладного искусства', de: 'Museum für angewandte Kunst', ua: 'Музей прикладного мистецтва' },
       stadtmuseum_koln: { ru: 'Кельнский городской музей', de: 'Kölnisches Stadtmuseum', ua: 'Кельнський міський музей' },
+      sport_olympia_museum_koln: { ru: 'Немецкий музей спорта и Олимпийских игр', de: 'Deutsches Sport & Olympia Museum', ua: 'Німецький музей спорту та Олімпійських ігор' },
+      photographische_sammlung_sk_stiftung_kultur: { ru: 'Фотографическая коллекция культурного фонда SK', de: 'Photographische Sammlung des SK Kulturfonds', ua: 'Фотографічна колекція культурного фонду SK' },
+      
 
       // Köln okrug
       // Aachen Kreis
@@ -225,6 +228,8 @@ const Map = () => {
                           <li><Link to="/germany/nrw/city/koln/attractions/makk_museum_koln">{t.attractions.makk_museum_koln[lang]}</Link></li>
                           <li><Link to="/germany/nrw/city/koln/attractions/rautenstrauch_joest_museum_koln">{t.attractions.rautenstrauch_joest_museum_koln[lang]}</Link></li>
                           <li><Link to="/germany/nrw/city/koln/attractions/stadtmuseum_koln">{t.attractions.stadtmuseum_koln[lang]}</Link></li>
+                          <li><Link to="/germany/nrw/city/koln/attractions/sport_olympia_museum_koln">{t.attractions.sport_olympia_museum_koln[lang]}</Link></li>
+                          <li><Link to="/germany/nrw/city/koln/attractions/photographische_sammlung_sk_stiftung_kultur_koln">{t.attractions.photographische_sammlung_sk_stiftung_kultur[lang]}</Link></li>
                           <li><Link to="/germany/nrw/city/koln/attractions/koln_bridges">{t.attractions.koeln_bridges[lang]}</Link></li>
                           <li><Link to="/germany/nrw/city/koln/attractions/skulpturenpark_koln">{t.attractions.skulpturenpark_koln[lang]}</Link></li>
                           <li><Link to="/germany/nrw/city/koln/attractions/zoo_koln">{t.attractions.zoo_koln[lang]}</Link></li>
