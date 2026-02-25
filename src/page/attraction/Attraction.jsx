@@ -93,8 +93,8 @@ const Attraction = () => {
                     </div>
                     )}
 
-
-                {attraction.tickets_and_entry && (<InfoBlock data={attraction.tickets_and_entry} className="attraction__desc-tickets_and_entry" />)}
+{attraction.tickets_and_entry && (<InfoBlock data={attraction.tickets_and_entry} className="attraction__desc-tickets_and_entry" />)}
+                
                 {attraction.address && (<InfoBlock data={attraction.address} className="attraction__desc-address" />)}
                 {attraction.full_description && (<InfoBlock data={attraction.full_description} className="attraction__desc-full_description" />)}
                 {attraction.legends && (<InfoBlock data={attraction.legends} className="attraction__desc-full_description" />)}

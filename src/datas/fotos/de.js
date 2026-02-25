@@ -144,6 +144,19 @@ export const Fotos = {
       ],
       photographische_sammlung_sk_stiftung_kultur_koln: [
         { path: "Germany/nrw/koln/koln-city/photographische_sammlung_sk_stiftung_kultur/001.jpg", title: { ru: "Фотографическая коллекция культурного фонда SK (фото взято с интернета)", ua: "Фотографічна колекція культурного фонду SK (фото взято з Інтернету)", de: "Photographische Sammlung des SK Kulturfonds (Foto aus dem Internet)" } },
+      ],
+      altstadt_koln: [
+        { path: "Germany/nrw/koln/koln-city/altstadt/001.jpg", title: { ru: "Старый город Кёльна, 2026", ua: "Старе місто Кельна, 2026", de: "Altstadt Köln, 2026" } },
+        { path: "Germany/nrw/koln/koln-city/altstadt/002.jpg", title: { ru: "Старый город Кёльна, 2025", ua: "Старе місто Кельна, 2025", de: "Altstadt Köln, 2025" } },
+        { path: "Germany/nrw/koln/koln-city/altstadt/003.jpg", title: { ru: "Старый город Кёльна, 2025", ua: "Старе місто Кельна, 2025", de: "Altstadt Köln, 2025" } },
+        { path: "Germany/nrw/koln/koln-city/altstadt/004.jpg", title: { ru: "Старый город Кёльна, 2024", ua: "Старе місто Кельна, 2024", de: "Altstadt Köln, 2024" } },
+        { path: "Germany/nrw/koln/koln-city/altstadt/005.jpg", title: { ru: "Старый город Кёльна, 2024", ua: "Старе місто Кельна, 2024", de: "Altstadt Köln, 2024" } },
+        { path: "Germany/nrw/koln/koln-city/koln-cathedral/001.jpg", title: { ru: "Кёльнский собор - 2025", ua: "Кельнський собор - 2025", de: "Kölner Dom - 2025" } },
+        { path: "Germany/nrw/koln/koln-city/guerzenich_koln/001.jpg", title: { ru: "Гюрцених, 2026", ua: "Гюрценіх, 2026", de: "Gürzenich, 2026" } },
+        { path: "Germany/nrw/koln/koln-city/roemisch-germanisches-museum/001.jpg", title: { ru: "Римско-германский музей - 2025", ua: "Римсько-германський музей - 2025", de: "Römisch-Germanisches Museum - 2025" } },
+        { path: "Germany/nrw/koln/koln-city/farina-duftmuseum/001.jpg", title: { ru: "Музей духов в доме Фарина - 2025", ua: "Музей парфумів у домі Фаріна - 2025", de: "Duftmuseum im Farina-Haus - 2025" } },
+        { path: "Germany/nrw/koln/koln-city/museum-ludwig/001.jpg", title: { ru: "Музей Людвига - 2025", ua: "Музей Людвіга - 2025", de: "Museum Ludwig - 2025" } },
+        { path: "Germany/nrw/koln/koln-city/wallraf_richartz_museum/001.jpg", title: { ru: "Музей Вальрафа-Рихарца - 2025", ua: "Музей Вальрафа-Ріхарцa - 2025", de: "Wallraf-Richartz-Museum - 2025" } },
       ]
     },
     bruhl: {

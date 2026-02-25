@@ -293,6 +293,7 @@ const toJsModuleString = (obj, indent = 0) => {
           <option value="palace_or_castle">Дворцы и замки</option>
           <option value="amusement_park">Парки развлечений</option>
           <option value="historical_building">Исторические сооружения</option>
+          <option value="historical_area">Исторические районы</option>
           <option value="technical_structure">Технические сооружения</option>
           <option value="nature">Природа</option>
           <option value="monument_or_fountain">Памятники и фонтаны</option>

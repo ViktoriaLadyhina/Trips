@@ -1,3 +1,4 @@
+import InfoBlock from '../InfoBlock/InfoBlock';
 import './Attraction.scss';
 import { Link, useParams } from 'react-router';
 
@@ -35,11 +36,12 @@ const AttractionCard = ({ attr, lang }) => {
 
                         <div className='attrCard__desc-info-text'>{attr.short_description}</div>
                     )}
-                    {attr.short_description_subObjects && (
+
+                      {attr.short_description_subObjects && (
                         <div className='attrCard__desc-info-text'>{attr.short_description_subObjects.text}
                             <ul>
                                 {attr.short_description_subObjects.items.map((item, i) => (
-                                    <li key={i}>{item}</li>
+                                    <li key={i}>{<InfoBlock data={item} />}</li>
                                 ))}
                             </ul></div>
                     )}
