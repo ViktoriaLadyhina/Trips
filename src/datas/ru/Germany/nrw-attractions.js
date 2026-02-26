@@ -5,23 +5,24 @@ const datas = [
         id: "altstadt_koln",
         name: "Старый город Кёльна",
         type: ["historical_area"], top: "top",
-        path: "altstadt_koln",        
+        path: "altstadt_koln",
         countryPath: "germany", regionsPath: "nrw", districtPath: "city", cityPath: "koln",
         fotoCard: "Germany/nrw/koln/koln-city/altstadt/001.jpg",
         location: "Кёльн, Германия",
         subObjects: ["cologne_cathedral", "rathaus_koln", "guerzenich_koln", "miqua", "wallraf_richartz_museum", "roemisch_germanisches_museum", "farina_duftmuseum", "museum_ludwig", "stadtmuseum_koln", "dufthaus_4711_koln"],
         short_description_subObjects: {
             text: "В старом городе Кельна расположены такие достопримечательности:",
-            items: ["<b>Кёльнский собор</b> – величественный готический собор, сердце Старого города, на площади у главного вокзала.", 
-                "<b>Кёльнская ратуша</b> – историческая городская ратуша в центре Старого города. ", 
-                "<b>Гюрцених</b> – исторический гильдейский дом и зал рядом с Кёльнским собором.", 
-                "<b>Музей в археологическом квартале Кёльна – MiQua</b> – археологический и еврейский музей на Marktplatz в центре Старого города.",
-                "<b>Римско-германский музей</b> – музей античности рядом с Кёльнским собором и MiQua.",
-                "<b>Музей Вальрафа-Рихарца</b> – музей живописи и искусства, недалеко от ратуши и собора.",
-                "<b>Музей духов в доме Фарина</b> – музей ароматов и парфюмерии в историческом квартале у ратуши.",
-                "<b>Дом одеколона 4711</b> – историческое здание в пешеходной зоне вокруг Hohe Straße и Schildergasse.",
-                "<b>Музей Людвига</b> – музей современного искусства рядом с Кёльнским собором.",
-                "<b>Кельнский городской музей</b> – музей истории города в центре (Zeughaus).",
+            items: [
+                { bold: "Кёльнский собор", text: "– величественный готический собор, сердце Старого города, на площади у главного вокзала." },
+                { bold: "Кёльнская ратуша", text: "– историческая городская ратуша в центре Старого города." },
+                { bold: "Гюрцених", text: "– исторический гильдейский дом и зал рядом с Кёльнским собором." },
+                { bold: "Музей в археологическом квартале Кёльна – MiQua", text: "– археологический и еврейский музей на Marktplatz в центре Старого города." },
+                { bold: "Римско-германский музей", text: "– музей античности рядом с Кёльнским собором и MiQua." },
+                { bold: "Музей Вальрафа-Рихарца", text: "– музей живописи и искусства, недалеко от ратуши и собора." },
+                { bold: "Музей духов в доме Фарина", text: "– музей ароматов и парфюмерии в историческом квартале у ратуши." },
+                { bold: "Дом одеколона 4711", text: "– историческое здание в пешеходной зоне вокруг Hohe Straße и Schildergasse." },
+                { bold: "Музей Людвига", text: "– музей современного искусства рядом с Кёльнским собором." },
+                { bold: "Кельнский городской музей", text: "– музей истории города в центре (Zeughaus)." },
             ]
         },
         short_description: "Старый город Кёльна – это историческое сердце города с узкими мощёными улочками, традиционными домами, уютными пивными и кафе на берегу Рейна. Он сочетает в себе культура, архитектура и повседневная жизнь: от готических соборов до музеев и рынков, которые отражают многослойную историю города.",
@@ -55,8 +56,8 @@ const datas = [
         id: "cologne_cathedral",
         name: "Кёльнский собор",
         type: ["cathedral"], top: "top",
-        path: "cologne-cathedral",        
-        countryPath: "germany", regionsPath: "nrw", districtPath: "city",  cityPath: "koln",
+        path: "cologne-cathedral",
+        countryPath: "germany", regionsPath: "nrw", districtPath: "city", cityPath: "koln",
         showMore: true, hiddenFromList: true,
         fotoCard: "Germany/nrw/koln/koln-city/koln-cathedral/001.jpg",
         location: "Кёльн, Германия",
@@ -64,10 +65,7 @@ const datas = [
         officialSite: [
             { bold: 'Официальный сайт Кёльнского собора', link: 'https://www.koelner-dom.de/' }
         ],
-        unesco_status: {
-            included: true,
-            year: 1996
-        },
+        unesco_status: { included: true, year: 1996 },
         construction_period: "1248–1880",
         architects: ["Конрад фон Гохштаден, ", "Мастерские строителей XIII–XIX вв."],
         founder: "Райнальд фон Дассель",
@@ -127,7 +125,7 @@ const datas = [
         id: "rathaus_koln",
         name: "Кёльнская ратуша",
         type: ['historical_building'], top: "popular",
-        path: "rathaus_koln",        
+        path: "rathaus_koln",
         countryPath: "germany", regionsPath: "nrw", districtPath: "city", cityPath: "koln",
         showMore: true, hiddenFromList: true,
         fotoCard: "Germany/nrw/koln/koln-city/rathaus-koeln/Rathaus-Köln.jpg",
@@ -184,7 +182,7 @@ const datas = [
         id: "guerzenich_koln",
         name: "Гюрцених – исторический концертный зал и гильдейский дом в Кёльне",
         type: ["historical_building"], top: "popular",
-        path: "guerzenich_koln",        
+        path: "guerzenich_koln",
         countryPath: "germany", regionsPath: "nrw", districtPath: "city", cityPath: "koln",
         showMore: true, hiddenFromList: true,
         fotoCard: "Germany/nrw/koln/koln-city/guerzenich_koln/001.jpg",
@@ -244,7 +242,7 @@ const datas = [
         id: "roemisch_germanisches_museum",
         name: "Римско-германский музей",
         type: ["museum"], top: "popular",
-        path: "roemisch-germanisches-museum",        
+        path: "roemisch-germanisches-museum",
         countryPath: "germany", regionsPath: "nrw", districtPath: "city", cityPath: "koln",
         showMore: true, hiddenFromList: true,
         fotoCard: "Germany/nrw/koln/koln-city/roemisch-germanisches-museum/001.jpg",
@@ -298,7 +296,7 @@ const datas = [
         id: "farina_duftmuseum",
         name: "Музей духов в доме Фарина",
         type: ["museum"], top: "popular",
-        path: "farina-duftmuseum",        
+        path: "farina-duftmuseum",
         countryPath: "germany", regionsPath: "nrw", districtPath: "city", cityPath: "koln",
         showMore: true, hiddenFromList: true,
         fotoCard: "Germany/nrw/koln/koln-city/farina-duftmuseum/001.jpg",
@@ -350,7 +348,7 @@ const datas = [
         id: "museum_ludwig",
         name: "Музей Людвига",
         type: ["museum"], top: "popular",
-        path: "museum-ludwig",        
+        path: "museum-ludwig",
         countryPath: "germany", regionsPath: "nrw", districtPath: "city", cityPath: "koln",
         showMore: true, hiddenFromList: true,
         fotoCard: "Germany/nrw/koln/koln-city/museum-ludwig/001.jpg",
@@ -459,7 +457,7 @@ const datas = [
         id: "miqua",
         name: "Музей в археологическом квартале Кёльна – MiQua",
         type: ["museum"], top: "popular",
-        path: "miqua",        
+        path: "miqua",
         countryPath: "germany", regionsPath: "nrw", districtPath: "city", cityPath: "koln",
         showMore: true, hiddenFromList: true,
         fotoCard: "Germany/nrw/koln/koln-city/miqua/001.jpg",
@@ -885,7 +883,7 @@ const datas = [
         id: "stadtmuseum_koln",
         name: "Кельнский городской музей",
         type: ["museum"], top: "popular",
-        path: "stadtmuseum_koln",        
+        path: "stadtmuseum_koln",
         countryPath: "germany", regionsPath: "nrw", districtPath: "city", cityPath: "koln",
         showMore: true, hiddenFromList: true,
         fotoCard: "Germany/nrw/koln/koln-city/stadtmuseum/001.jpg",
@@ -1349,8 +1347,12 @@ const datas = [
         subObjects: ["tanzbrunnen", "koln_seilbahn", "divitia_koln"],
         short_description: "Рейнский парк (Rheinpark) – крупный общественный парк вдоль правого берега Рейна в районе Дойц (Deutz) города Кёльн. Он представляет собой исторически и архитектурно значимую зелёную зону, известную своими просторными лужайками, цветниками, прогулочными аллеями и великолепным видом на центр города с Кёльнским собором.",
         short_description_subObjects: {
-            text: "В Рейнском парке расположены такие достопримечательности:",
-            items: ["Танцующий фонтан", "Кёльнская канатная дорога", "Римский форт Дивития"]
+            text: "В Рейнском парке Кёльна расположены следующие интересные места и аттракционы:",
+            items: [
+                { bold: "Танцующий фонтан", text: "– красивое зрелищное сооружение с музыкой и подсветкой, привлекает туристов и жителей города." },
+                { bold: "Кёльнская канатная дорога", text: "– поднимает посетителей над Рейном, открывая панорамные виды на город и реку." },
+                { bold: "Римский форт Дивития", text: "– историческая крепость времен Римской империи, сохранившаяся на территории парка и доступная для осмотра." },
+            ]
         },
         full_description: {
             title: "Описание и история",
@@ -1393,12 +1395,12 @@ const datas = [
         type: ["monument_or_fountain"], top: "popular",
         path: "tanzbrunnen",
         countryPath: "germany", regionsPath: "nrw", districtPath: "city", cityPath: "koln",
+        hiddenFromList: true, showMore: true,
         fotoCard: "Germany/nrw/koln/koln-city/rheinpark_koln/002.jpg",
         location: "Кёльн, Германия",
         officialSite: [
             { bold: "Официальная страница Tanzbrunnen (через KölnKongress)", link: "https://koelncongress.de/locations/tanzbrunnen-koeln/" }
         ],
-        hiddenFromList: true, showMore: true,
         short_description: "На южной окраине Рейнского парка расположен Танцующий фонтан – один из самых известных культурных объектов Кёльна. Комплекс включает открытую площадку, амфитеатр, крытые зоны и зелёные насаждения, создавая удобное пространство для концертов, фестивалей, танцевальных вечеринок и других культурных мероприятий.",
         full_description: {
             title: "Описание и история",
@@ -1433,13 +1435,12 @@ const datas = [
         type: ["technical_structure"], top: "popular",
         path: "koln_seilbahn",
         countryPath: "germany", regionsPath: "nrw", districtPath: "city", cityPath: "koln",
+        hiddenFromList: true, showMore: true,
         fotoCard: "Germany/nrw/koln/koln-city/rheinpark_koln/003.jpg",
         location: "Кёльн, Германия",
         officialSite: [
             { bold: "Официальный сайт", link: "https://www.koelner-seilbahn.de/index.html" }
         ],
-        hiddenFromList: true,
-        showMore: true,
         short_description: "Кёльнская канатная дорога (Kölner Seilbahn) – панорамная канатная дорога над Рейном, соединяющая зоопарк и Rheinpark в Кёльне. Она предлагает один из лучших видов на город, Кёльнский собор и набережные реки. Работает сезонно и считается одной из самых узнаваемых туристических достопримечательностей города.",
         full_description: {
             title: "Описание и история",
@@ -1488,9 +1489,9 @@ const datas = [
         type: ["historical_building"], top: "local",
         path: "divitia_koln",
         countryPath: "germany", regionsPath: "nrw", districtPath: "city", cityPath: "koln",
+        hiddenFromList: true, showMore: true,
         fotoCard: "Germany/nrw/koln/koln-city/rheinpark_koln/004.jpg",
         location: "Кёльн, Германия",
-        hiddenFromList: true, showMore: true,
         short_description: "Руины римского форта Дивития это остатки позднеримского укрепления IV века н.э. на правом берегу Рейна в Кёльне. Сохранились фрагменты башни, каменная кладка и основания стен. Доступен для свободного осмотра в пешеходной зоне Рейнского парка.",
         full_description: {
             title: "Описание и история",
@@ -1699,10 +1700,7 @@ const datas = [
         officialSite: [
             { bold: 'Официальный сайт дворцов Брюля', link: 'https://www.schlossbruehl.de/en/' },
         ],
-        unesco_status: {
-            included: true,
-            year: 1984
-        },
+        unesco_status: { included: true, year: 1984 },
         tickets_and_entry: {
             title: "Билеты и вход",
             items: [
@@ -1961,11 +1959,11 @@ const datas = [
         address: [{ bold: "Адрес:", text: " Johann-Schmitz-Platz, 50226 Frechen, Deutschland" }],
         subObjects: ["altes_rathaus_frechen", "rathausbrunnen_frechen", "klüttenbrunnen_frechen"],
         short_description_subObjects: {
-            text: "На горе площади Йоханна Шмитца расположены такие достопримечательности: ",
+            text: "На горе площади Йоханна Шмитца расположены следующие достопримечательности:",
             items: [
-                "Старая ратуша Фрехена",
-                "Фонтан перед ратушей",
-                "Фонтан Клюттенбрюннен",
+                { bold: "Старая ратуша Фрехена", text: "– историческое здание ратуши с традиционной архитектурой, символ города Фрехен." },
+                { bold: "Фонтан перед ратушей", text: "– декоративный фонтан, создающий живописную атмосферу на площади." },
+                { bold: "Фонтан Клюттенбрюннен", text: "– известный фонтан с историческим значением, популярное место для прогулок и фотографий." },
             ]
         },
         tickets_and_entry: {
@@ -2004,7 +2002,7 @@ const datas = [
         type: ['historical_building'], top: "local",
         path: "altes_rathaus_frechen",
         countryPath: "germany", regionsPath: "nrw", districtPath: "koln", cityPath: "frechen",
-        hiddenFromList: true,  showMore: true,
+        hiddenFromList: true, showMore: true,
         fotoCard: "Germany/nrw/koln/Rhein-Erft-Kreis/frechen/johann_schmitz_platz_frechen/008.jpg",
         location: "Фрехен, Германия",
         address: [{ bold: "Адрес:", text: " Johann-Schmitz-Platz, 50226 Frechen, Deutschland" }],
@@ -2074,7 +2072,7 @@ const datas = [
         type: ['monument_or_fountain'], top: "local",
         path: "klüttenbrunnen_frechen",
         countryPath: "germany", regionsPath: "nrw", districtPath: "koln", cityPath: "frechen",
-        hiddenFromList: true,  
+        hiddenFromList: true,
         fotoCard: "Germany/nrw/koln/Rhein-Erft-Kreis/frechen/johann_schmitz_platz_frechen/004.jpg",
         short_description: "В пешеходной зоне в 1986 году установлен скульптурный фонтан Клюттенбрюннен (Klüttenbrunnen), авторства немецкого скульптора Олафа Хёнена. Он расположен в пешеходной зоне рядом с площадью Йоханна Шмитца и отражает промышленную и ремесленную историю Фрехена, в частности добычу и обработку местной глины. Фонтан оформлен как художественная композиция с каменными элементами и водными струями, гармонируя с городской средой и служа визуальным ориентиром для туристов.",
         full_description: {
@@ -2109,13 +2107,13 @@ const datas = [
         ],
         short_description: "Драхенфельс – легендарная гора в природном парке Зибенгебирге над Рейном. С вершины открываются панорамные виды на долину Рейна, а сама гора связана с легендой о драконе и герое Зигфриде. ",
         short_description_subObjects: {
-            text: "На горе Драхенфельс расположены такие достопримечательности: ",
+            text: "На горе Драхенфельс расположены следующие достопримечательности:",
             items: [
-                "<b>Железная дорога Драхенфельс</b> – историческая железная дорога, соединяющая долину Рейна с вершиной горы, открывающая панорамные виды.",
-                "<b>Дворец Драхенбург</b> – живописный неоготический дворец, построенный в XIX веке, с богатыми интерьерами и садами.",
-                "<b>Руины замка Драхенфельс</b> – средневековые остатки крепости, возвышающиеся над Рейном.",
-                "<b>Зал Нибелунгов</b> – выставочный зал с экспозицией, посвящённой легенде о Нибелунгах.",
-                "<b>Зоопарк рептилий Драхенфельс</b> – небольшой зоопарк с коллекцией экзотических рептилий на склоне горы."
+                { bold: "Железная дорога Драхенфельс", text: "– историческая железная дорога, соединяющая долину Рейна с вершиной горы, открывающая панорамные виды." },
+                { bold: "Дворец Драхенбург", text: "– живописный неоготический дворец XIX века с богатыми интерьерами и садами." },
+                { bold: "Руины замка Драхенфельс", text: "– средневековые остатки крепости, возвышающиеся над Рейном." },
+                { bold: "Зал Нибелунгов", text: "– выставочный зал с экспозицией, посвящённой легенде о Нибелунгах." },
+                { bold: "Зоопарк рептилий Драхенфельс", text: "– небольшой зоопарк с коллекцией экзотических рептилий на склоне горы." },
             ]
         },
         full_description: {
@@ -2163,10 +2161,9 @@ const datas = [
         id: "drachenfelsbahn",
         name: "Железная дорога Драхенфельс",
         type: ["technical_structure"], top: "popular",
-        hiddenFromList: true,
-        showMore: true,
         path: "drachenfelsbahn",
-        countryPath: "germany", regionsPath: "nrw", districtPath: "koln", cityPath: "konigswinter",        
+        countryPath: "germany", regionsPath: "nrw", districtPath: "koln", cityPath: "konigswinter",
+        hiddenFromList: true, showMore: true,
         fotoCard: "Germany/nrw/koln/Rhein-Sieg-Kreis/konigswinter/drachenfels/002.jpg",
         officialSite: [
             { bold: "Официальный сайт железной дороги и общего тур-информационного проекта для горы", link: "https://www.drachenfelsbahn.de/" }
@@ -2212,9 +2209,9 @@ const datas = [
         id: "schloss_drachenburg",
         name: "Дворец Драхенбург",
         type: ["palace_or_castle"], top: "popular",
-        hiddenFromList: true, showMore: true,
         path: "schloss_drachenburg",
         countryPath: "germany", regionsPath: "nrw", districtPath: "koln", cityPath: "konigswinter",
+        hiddenFromList: true, showMore: true,
         fotoCard: "Germany/nrw/koln/Rhein-Sieg-Kreis/konigswinter/drachenfels/001.jpg",
         officialSite: [
             { bold: "Официальный сайт дворца Драхенбург", link: "https://www.schloss-drachenburg.de" }
@@ -2270,9 +2267,9 @@ const datas = [
         id: "drachenfels_ruins",
         name: "Руины замка Драхенфельс",
         type: ["palace_or_castle"], top: "popular",
-        hiddenFromList: true,  showMore: true,
         path: "drachenfels_ruins",
-        countryPath: "germany", regionsPath: "nrw", districtPath: "koln", cityPath: "konigswinter",        
+        countryPath: "germany", regionsPath: "nrw", districtPath: "koln", cityPath: "konigswinter",
+        hiddenFromList: true, showMore: true,
         fotoCard: "Germany/nrw/koln/Rhein-Sieg-Kreis/konigswinter/drachenfels/003.jpg",
         construction_period: "XII век (1138–1167) ",
         founder: " кёльнский архиепископ Арнольд фон Вид",
@@ -2310,9 +2307,9 @@ const datas = [
         id: "nibelungenhalle",
         name: "Зал Нибеленгов",
         type: ["museum"], top: "local",
-        hiddenFromList: true, showMore: true,
         path: "nibelungenhalle",
         countryPath: "germany", regionsPath: "nrw", districtPath: "koln", cityPath: "konigswinter",
+        hiddenFromList: true, showMore: true,
         officialSite: [
             { bold: "Официальный сайт зала Нибеленгов", link: "https://nibelungenhalle.de/" }
         ],
@@ -2348,9 +2345,9 @@ const datas = [
         id: "reptile_zoo",
         name: "Зоопарк рептилий Драхенфельс",
         type: ["nature"], top: "local",
-        hiddenFromList: true, showMore: true,
         path: "reptile_zoo",
-        countryPath: "germany", regionsPath: "nrw", districtPath: "koln", cityPath: "konigswinter",        
+        countryPath: "germany", regionsPath: "nrw", districtPath: "koln", cityPath: "konigswinter",
+        hiddenFromList: true, showMore: true,
         // officialSite: [ не рабоает проверить
         //     { bold: "Официальный сайт зоопарка", link: "https://www.reptilien-zoo-drachenfels.de" }
         // ],
@@ -2394,7 +2391,7 @@ const datas = [
     },
     {
         id: "heisterbach_konigswinter",
-        name: "Аббатство Хайстербах", 
+        name: "Аббатство Хайстербах",
         type: ["historical_building"], top: "popular",
         path: "heisterbach_konigswinter",
         countryPath: "germany", regionsPath: "nrw", districtPath: "koln", cityPath: "konigswinter",
@@ -2404,13 +2401,13 @@ const datas = [
             { bold: "Официальный сайт", link: "https://www.klosterlandschaft-heisterbach.de" }
         ],
         subObjects: ["chorruine_heisterbach_konigswinter", "st_peter_heisterbach_konigswinter"],
-short_description_subObjects: {
-    text: "В аббатстве расположены такие достопримечательности: ",
-    items: [
-        "<b>Руины хора бывшей монастырской церкви</b> – остатки средневековой церкви, где раньше находился монастырский хор.",
-        "<b>Церковь Святого Петра</b> – историческая церковь с характерной архитектурой и значением для аббатства."
-    ]
-},
+        short_description_subObjects: {
+            text: "В аббатстве расположены следующие достопримечательности:",
+            items: [
+                { bold: "Руины хора бывшей монастырской церкви", text: "– остатки средневековой церкви, где раньше находился монастырский хор." },
+                { bold: "Церковь Святого Петра", text: "– историческая церковь с характерной архитектурой и значением для аббатства." },
+            ]
+        },
         short_description: "Аббатство Хайстербах – бывший цистерцианский монастырь XII века, расположенный в долине Хайстербах недалеко от Кёнигсвинтера. После секуляризации в начале XIX века монастырь был упразднён, а его территория со временем превратилась в историко-культурное пространство. Сегодня Хайстербах считается одним из значимых памятников средневековой монастырской истории региона Зибенгебирге.",
         full_description: {
             title: "Описание и история",
@@ -2456,7 +2453,7 @@ short_description_subObjects: {
         name: "Руины хора бывшей монастырской церкви",
         type: ["historical_building"], top: "local",
         path: "chorruine_heisterbach_konigswinter",
-        countryPath: "germany", regionsPath: "nrw",  districtPath: "koln", cityPath: "konigswinter", 
+        countryPath: "germany", regionsPath: "nrw", districtPath: "koln", cityPath: "konigswinter",
         hiddenFromList: true, showMore: true,
         fotoCard: "Germany/nrw/koln/Rhein-Sieg-Kreis/konigswinter/heisterbach/001.jpg",
         location: "Кенигсвинтер, Германия",
@@ -2540,15 +2537,15 @@ short_description_subObjects: {
         name: "Старый город Люденшайда",
         type: ["historical_area"], top: "popular",
         path: "altstadt_luedenscheid",
-        countryPath: "germany", regionsPath: "nrw", districtPath: "arnsberg", cityPath: "luedenscheid",        
+        countryPath: "germany", regionsPath: "nrw", districtPath: "arnsberg", cityPath: "luedenscheid",
         fotoCard: "Germany/nrw/arnsberg/Märkischer-Kreis/luedenscheid/001.JPG",
         subObjects: ["erloeserkirche_luedenscheid", "brunnen_altstadt_luedenscheid"],
         short_description: "Старый город Люденшайда – историческое сердце города с узкими улицами и кольцевой планировкой вокруг церкви Спасителя. Здесь сохранились здания XVIII–XIX веков, остатки крепостной стены и исторический музей, а уютные улочки сочетают прошлое с современной городской жизнью.",
         short_description_subObjects: {
-            text: "В старом городе Люденшайда расположены такие достопримечательности: ",
+            text: "В старом городе Люденшайда расположены следующие достопримечательности:",
             items: [
-                "Церковь Спасителя",
-                "Фонтан в старом городе"
+                { bold: "Церковь Спасителя", text: "– историческая церковь с характерной архитектурой, важный культурный объект города." },
+                { bold: "Фонтан в старом городе", text: "– декоративный фонтан на главной площади, популярное место для прогулок и фотографий." },
             ]
         },
         full_description: {
@@ -2585,7 +2582,7 @@ short_description_subObjects: {
         type: ["cathedral"], top: "popular",
         path: "erloeserkirche_luedenscheid",
         countryPath: "germany", regionsPath: "nrw", districtPath: "arnsberg", cityPath: "luedenscheid",
-        hiddenFromList: true,  showMore: true,
+        hiddenFromList: true, showMore: true,
         fotoCard: "Germany/nrw/arnsberg/Märkischer-Kreis/luedenscheid/erloeserkirche_luedenscheid/001.JPG",
         short_description: "Церковь Спасителя (Erlöserkirche) – старейшая церковь Люденшайда с классицистическим фасадом, эмпорами и лютеранским алтарем. В центре старого города, архитектурная доминанта и культурный центр с концертами и выставками.",
         full_description: {
@@ -2664,7 +2661,7 @@ short_description_subObjects: {
         name: "Центральная площадь Люденшайда",
         type: ["square"], top: "local",
         path: "rathausplatz_luedenscheid",
-        countryPath: "germany", regionsPath: "nrw", districtPath: "arnsberg",   cityPath: "luedenscheid",
+        countryPath: "germany", regionsPath: "nrw", districtPath: "arnsberg", cityPath: "luedenscheid",
         fotoCard: "Germany/nrw/arnsberg/Märkischer-Kreis/luedenscheid/rathausplatz_lüdenscheid/001.JPG",
         location: "Люденшайд, Германия",
         short_description: "Центральная площадь Люденшайда (Rathausplatz) — это сердце города и важное общественное пространство, расположенное рядом с ратушей и пешеходной зоной. Здесь проходят рынки, городские мероприятия и встречи жителей, а сама площадь служит отправной точкой для знакомства с историческим центром города.",
@@ -2707,13 +2704,13 @@ short_description_subObjects: {
         location: "Люденшайд, Германия",
         subObjects: ["onkel_willi_denkmal_sternplatz_luedenscheid", "fontain_sternplatz_luedenscheid"],
         short_description: "Площадь Штернплац (Sternplatz) – центральная площадь Люденшайда, расположенная в пешеходной зоне исторического центра и являющаяся важной точкой городской жизни и встреч.",
-short_description_subObjects: {
-    text: "На площади Штернплац расположены такие достопримечательности:",
-    items: [
-        "<b>Памятник дяде Вилли</b> – бронзовая скульптура типичного жителя Люденшайда с собакой.",
-        "<b>Фонтан Нойманна</b> – декоративный фонтан, созданный скульптором Куртом Тони Нейманом."
-    ]
-},
+        short_description_subObjects: {
+            text: "На площади Штернплац расположены следующие достопримечательности:",
+            items: [
+                { bold: "Памятник дяде Вилли", text: "– бронзовая скульптура типичного жителя Люденшайда с собакой." },
+                { bold: "Фонтан Нойманна", text: "– декоративный фонтан, созданный скульптором Куртом Тони Нейманом." },
+            ]
+        },
         full_description: {
             title: "Описание и история",
             items: [
@@ -2743,8 +2740,8 @@ short_description_subObjects: {
         type: ["monument_or_fountain"], top: "local",
         path: "onkel_willi_denkmal_sternplatz_luedenscheid",
         countryPath: "germany", regionsPath: "nrw", districtPath: "arnsberg", cityPath: "luedenscheid",
-        fotoCard: "Germany/nrw/arnsberg/Märkischer-Kreis/luedenscheid/sternplatz/001.JPG",
         hiddenFromList: true, showMore: true,
+        fotoCard: "Germany/nrw/arnsberg/Märkischer-Kreis/luedenscheid/sternplatz/001.JPG",
         short_description: "Памятник дяде Вилли – бронзовая скульптура на Sternplatz, изображающая типичного жителя Люденшайда с собакой. Является неофициальным символом города и отражает его повседневную, «живую» атмосферу.",
         full_description: {
             title: "Описание и история",
@@ -2770,8 +2767,8 @@ short_description_subObjects: {
         type: ["monument_or_fountain"], top: "local",
         path: "fontain_sternplatz_luedenscheid",
         countryPath: "germany", regionsPath: "nrw", districtPath: "arnsberg", cityPath: "luedenscheid",
-        fotoCard: "Germany/nrw/arnsberg/Märkischer-Kreis/luedenscheid/sternplatz/003.jpg",
         hiddenFromList: true, showMore: true,
+        fotoCard: "Germany/nrw/arnsberg/Märkischer-Kreis/luedenscheid/sternplatz/003.jpg",
         short_description: "Фонтан на площади Штернплац – декоративный водоём в центре площади, созданный в конце 1970 х годов скульптором Куртом Тони Нейманом. Он стал значимым городским объектом и местом отдыха в пешеходной зоне Люденшайда.",
         full_description: {
             title: "Описание и история",

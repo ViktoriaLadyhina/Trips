@@ -13,16 +13,16 @@ const datas = [
         short_description_subObjects: {
             text: "У Старому місті Кельна розташовані такі визначні пам'ятки:",
             items: [
-                "<b>Кельнський собор</b> – величний готичний собор, серце Старого міста, на площі біля головного вокзалу.",
-                "<b>Кельнська ратуша</b> – історична міська ратуша в центрі Старого міста.",
-                "<b>Гюрценіх – історичний цеховий будинок і зал поруч із Кельнським собором.",
-                "<b>Музей у археологічному кварталі Кельна – MiQua – археологічний та єврейський музей на Marktplatz у центрі Старого міста.",
-                "<b>Римсько-германський музей</b> – музей античності поруч із Кельнським собором та MiQua.",
-                "<b>Музей Вальрафа-Ріхарца</b> – музей живопису та мистецтва, недалеко від ратуші та собору.",
-                "<b>Музей духів у будинку Фаріна</b> – музей ароматів та парфумерії в історичному кварталі біля ратуші.",
-                "<b>Будинок одеколону 4711</b> – історична будівля у пішохідній зоні навколо Hohe Straße та Schildergasse.",
-                "<b>Музей Людвіга</b> – музей сучасного мистецтва поруч із Кельнським собором.",
-                "<b>Кельнський міський музей</b> – музей історії міста в центрі (Zeughaus)."
+                { bold: "Кельнський собор", text: "– величний готичний собор, серце Старого міста, на площі біля головного вокзалу." },
+                { bold: "Кельнська ратуша", text: "– історична міська ратуша в центрі Старого міста." },
+                { bold: "Гюрценіх", text: "– історичний цеховий будинок і зал поруч із Кельнським собором." },
+                { bold: "Музей у археологічному кварталі Кельна – MiQua", text: "– археологічний та єврейський музей на Marktplatz у центрі Старого міста." },
+                { bold: "Римсько-германський музей", text: "– музей античності поруч із Кельнським собором та MiQua." },
+                { bold: "Музей Вальрафа-Ріхарца", text: "– музей живопису та мистецтва, недалеко від ратуші та собору." },
+                { bold: "Музей духів у будинку Фаріна", text: "– музей ароматів та парфумерії в історичному кварталі біля ратуші." },
+                { bold: "Будинок одеколону 4711", text: "– історична будівля у пішохідній зоні навколо Hohe Straße та Schildergasse." },
+                { bold: "Музей Людвіга", text: "– музей сучасного мистецтва поруч із Кельнським собором." },
+                { bold: "Кельнський міський музей", text: "– музей історії міста в центрі (Zeughaus)." },
             ]
         },
         short_description: "Старе місто Кельна – це історичне серце міста з вузькими брукованими вулицями, традиційними будинками, затишними пивними та кафе на березі Рейну. Він поєднує культуру, архітектуру та повсякденне життя: від готичних соборів до музеїв і ринків, що відображають багатошарову історію міста.",
@@ -65,10 +65,7 @@ const datas = [
         officialSite: [
             { bold: 'Офіційний сайт Кельнського собору', link: 'https://www.koelner-dom.de/' }
         ],
-        unesco_status: {
-            included: true,
-            year: 1996
-        },
+        unesco_status: { included: true, year: 1996 },
         construction_period: "1248–1880",
         architects: ["Конрад фон Гохштаден, ", "Майстерні будівельників XIII–XIX ст."],
         founder: "Райнальд фон Дассель",
@@ -1349,8 +1346,12 @@ const datas = [
         subObjects: ["tanzbrunnen", "koln_seilbahn", "divitia_koln"],
         short_description: "Рейнський парк (Rheinpark) – великий громадський парк уздовж правого берега Рейну в районі Дойц (Deutz) міста Кельн. Це історично та архітектурно значуща зелена зона, відома своїми просторими газонами, клумбами, прогулянковими алеями та чудовим видом на центр міста з Кельнським собором.",
         short_description_subObjects: {
-            text: "У Рейнському парку розташовані такі пам'ятки:",
-            items: ["Танцюючий фонтан", "Кельнська канатна дорога", "Руїни римського форту Дивітія в Кельні"]
+            text: "У Рейнському парку Кельна розташовані такі цікаві місця та атракціони:",
+            items: [
+                { bold: "Танцюючий фонтан", text: "– красиве видовищне спорудження з музикою та підсвіткою, приваблює туристів та мешканців міста." },
+                { bold: "Кельнська канатна дорога", text: "– піднімає відвідувачів над Рейном, відкриваючи панорамні види на місто та річку." },
+                { bold: "Римський форт Дівітія", text: "– історична фортеця часів Римської імперії, збережена на території парку та доступна для огляду." },
+            ]
         },
         full_description: {
             title: "Опис та історія",
@@ -1393,12 +1394,12 @@ const datas = [
         type: ["monument_or_fountain"], top: "popular",
         path: "tanzbrunnen",
         countryPath: "germany", regionsPath: "nrw", districtPath: "city", cityPath: "koln",
+        hiddenFromList: true, showMore: true,
         fotoCard: "Germany/nrw/koln/koln-city/rheinpark_koln/002.jpg",
         location: "Кельн, Німеччина",
         officialSite: [
             { bold: "Офіційна сторінка Tanzbrunnen (через KölnKongress)", link: "https://koelncongress.de/locations/tanzbrunnen-koeln/" }
         ],
-        hiddenFromList: true, showMore: true,
         short_description: "На південній околиці Рейнського парку розташований Танцюючий фонтан – одна з найвідоміших культурних об'єктів Кельна. Комплекс включає відкриту площу, амфітеатр, криті зони та зелені насадження, створюючи зручний простір для концертів, фестивалів, танцювальних вечірок та інших культурних заходів.",
         full_description: {
             title: "Опис та історія",
@@ -1433,12 +1434,12 @@ const datas = [
         type: ["technical_structure"], top: "popular",
         path: "koln_seilbahn",
         countryPath: "germany", regionsPath: "nrw", districtPath: "city", cityPath: "koln",
+        hiddenFromList: true, showMore: true,
         fotoCard: "Germany/nrw/koln/koln-city/rheinpark_koln/003.jpg",
         location: "Кельн, Німеччина",
         officialSite: [
             { bold: "Офіційний сайт", link: "https://www.koelner-seilbahn.de/index.html" }
         ],
-        hiddenFromList: true, showMore: true,
         short_description: "Кельнська канатна дорога (Kölner Seilbahn) – панорамна канатна дорога над Рейном, що з’єднує зоопарк і Rheinpark у Кельні. Вона пропонує один із найкращих видів на місто, Кельнський собор і набережні річки. Працює сезонно та вважається однією з найвідоміших туристичних пам’яток міста.",
         full_description: {
             title: "Опис та історія",
@@ -1487,9 +1488,9 @@ const datas = [
         type: ["historical_building"], top: "local",
         path: "divitia_koln",
         countryPath: "germany", regionsPath: "nrw", districtPath: "city", cityPath: "koln",
+        hiddenFromList: true, showMore: true,
         fotoCard: "Germany/nrw/koln/koln-city/rheinpark_koln/004.jpg",
         location: "Кельн, Німеччина",
-        hiddenFromList: true, showMore: true,
         short_description: "Руїни римського форту Дивітія – це залишки пізньоримського укріплення IV століття н.е. на правому березі Рейну в Кельні. Збереглися фрагменти вежі, кам'яна кладка та основи стін. Доступно для вільного огляду у пішохідній зоні Рейнського парку.",
         full_description: {
             title: "Опис та історія",
@@ -1694,10 +1695,7 @@ const datas = [
         officialSite: [
             { bold: 'Офіційний сайт палаців Брюля', link: 'https://www.schlossbruehl.de/en/' },
         ],
-        unesco_status: {
-            included: true,
-            year: 1984
-        },
+        unesco_status: { included: true, year: 1984 },
         tickets_and_entry: {
             title: "Квитки та вхід",
             items: [
@@ -1953,11 +1951,11 @@ const datas = [
         regionsPath: "nrw", districtPath: "koln", cityPath: "frechen",
         subObjects: ["altes_rathaus_frechen", "rathausbrunnen_frechen", "klüttenbrunnen_frechen"],
         short_description_subObjects: {
-            text: "На площі Йоганна Шмітца розташовані такі пам’ятки:",
+            text: "На горі площі Йоганна Шмітца розташовані такі пам’ятки:",
             items: [
-                "Стара ратуша Фрехена",
-                "Фонтан перед ратушею",
-                "Фонтан Клюттенбрюннен",
+                { bold: "Стара ратуша Фрехена", text: "– історична будівля ратуші з традиційною архітектурою, символ міста Фрехен." },
+                { bold: "Фонтан перед ратушею", text: "– декоративний фонтан, що створює мальовничу атмосферу на площі." },
+                { bold: "Фонтан Клюттенбрюннен", text: "– відомий фонтан із історичною цінністю, популярне місце для прогулянок та фотографій." },
             ]
         },
         fotoCard: "Germany/nrw/koln/Rhein-Erft-Kreis/frechen/johann_schmitz_platz_frechen/001.jpg",
@@ -2105,13 +2103,13 @@ const datas = [
         ],
         short_description: "Драхенфельс – легендарна гора в природному парку Зібенґебірґе над Рейном. З вершини відкриваються панорамні краєвиди на долину Рейну, а сама гора пов’язана з легендою про дракона та героя Зиґфріда. ",
         short_description_subObjects: {
-            text: "На горі Драхенфельс розташовані такі визначні місця: ",
+            text: "На горі Драхенфельс розташовані такі пам’ятки:",
             items: [
-                "<b>Залізниця Драхенфельс</b> – історична залізниця, що з’єднує долину Рейну з вершиною гори, відкриваючи панорамні види.",
-                "<b>Палац Драхенбург</b> – мальовничий неоготичний палац, збудований у XIX столітті, з розкішними інтер’єрами та садами.",
-                "<b>Руїни замку Драхенфельс</b> – середньовічні залишки фортеці, що височіють над Рейном.",
-                "<b>Зал Нібелунгів</b> – виставковий зал з експозицією, присвяченою легенді про Нібелунгів.",
-                "<b>Зоопарк рептилій Драхенфельс</b> – невеликий зоопарк з колекцією екзотичних рептилій на схилі гори."
+                { bold: "Залізниця Драхенфельс", text: "– історична залізниця, що з’єднує долину Рейну з вершиною гори та відкриває панорамні види." },
+                { bold: "Палац Драхенбург", text: "– мальовничий неоготичний палац XIX століття з багатими інтер’єрами та садами." },
+                { bold: "Руїни замку Драхенфельс", text: "– середньовічні залишки фортеці, що височіють над Рейном." },
+                { bold: "Зала Нібелунгів", text: "– виставкова зала з експозицією, присвяченою легенді про Нібелунгів." },
+                { bold: "Рептилійний зоопарк Драхенфельс", text: "– невеликий зоопарк з колекцією екзотичних рептилій на схилі гори." },
             ]
         },
         full_description: {
@@ -2159,10 +2157,9 @@ const datas = [
         id: "drachenfelsbahn",
         name: "Залізниця Драхенфельса",
         type: ["technical_structure"], top: "popular",
-        slug: "drachenfelsbahn",
-        hiddenFromList: true, showMore: true,
         path: "drachenfelsbahn",
         countryPath: "germany", regionsPath: "nrw", districtPath: "koln", cityPath: "konigswinter",
+        hiddenFromList: true, showMore: true,
         fotoCard: "Germany/nrw/koln/Rhein-Sieg-Kreis/konigswinter/drachenfels/002.jpg",
         officialSite: [
             {
@@ -2211,10 +2208,9 @@ const datas = [
         id: "schloss_drachenburg",
         name: "Палац Драхенбург",
         type: ["palace_or_castle"], top: "popular",
-        slug: "schloss_drachenburg",
-        hiddenFromList: true, showMore: true,
         path: "schloss_drachenburg",
         countryPath: "germany", regionsPath: "nrw", districtPath: "koln", cityPath: "konigswinter",
+        hiddenFromList: true, showMore: true,
         fotoCard: "Germany/nrw/koln/Rhein-Sieg-Kreis/konigswinter/drachenfels/001.jpg",
         officialSite: [
             { bold: "Офіційний сайт палацу Драхенбург", link: "https://www.schloss-drachenburg.de" }
@@ -2270,10 +2266,9 @@ const datas = [
         id: "drachenfels_ruins",
         name: "Руїни замку Драхенфельс",
         type: ["palace_or_castle"], top: "popular",
-        slug: "drachenfels_ruins",
-        hiddenFromList: true, showMore: true,
         path: "drachenfels_ruins",
         countryPath: "germany", regionsPath: "nrw", districtPath: "koln", cityPath: "konigswinter",
+        hiddenFromList: true, showMore: true,
         fotoCard: "Germany/nrw/koln/Rhein-Sieg-Kreis/konigswinter/drachenfels/003.jpg",
         construction_period: "XII століття (1138–1167)",
         founder: " кельнський архієпископ Арнольд фон Від",
@@ -2311,10 +2306,9 @@ const datas = [
         id: "nibelungenhalle",
         name: "Зал Нібеленгов",
         type: ["museum"], top: "local",
-        slug: "nibelungenhalle",
-        hiddenFromList: true, showMore: true,
         path: "nibelungenhalle",
         countryPath: "germany", regionsPath: "nrw", districtPath: "koln", cityPath: "konigswinter",
+        hiddenFromList: true, showMore: true,
         officialSite: [
             { bold: "Офіційний сайт Залу Нібеленгов", link: "https://nibelungenhalle.de/" }
         ],
@@ -2350,10 +2344,9 @@ const datas = [
         id: "reptile_zoo",
         name: "Зоопарк рептилій Драхенфельс",
         type: ["nature"], top: "local",
-        slug: "reptile_zoo",
-        hiddenFromList: true, showMore: true,
         path: "reptile_zoo",
         countryPath: "germany", regionsPath: "nrw", districtPath: "koln", cityPath: "konigswinter",
+        hiddenFromList: true, showMore: true,
         // officialSite: [ не працює перевірити
         //     { bold: "Офіційний сайт зоопарку", link: "https://www.reptilien-zoo-drachenfels.de" }
         // ],
@@ -2408,10 +2401,10 @@ const datas = [
         ],
         subObjects: ["chorruine_heisterbach_konigswinter", "st_peter_heisterbach_konigswinter"],
         short_description_subObjects: {
-            text: "В абатстві розташовані такі пам’ятки: ",
+            text: "В абатстві розташовані такі пам’ятки:",
             items: [
-                "<b>Руїни хора колишньої монастирської церкви</b> – залишки середньовічної церкви, де раніше знаходився монастирський хор.",
-                "<b>Церква Святого Петра</b> – історична церква з характерною архітектурою та значенням для абатства."
+                { bold: "Руїни хору колишньої монастирської церкви", text: "– залишки середньовічної церкви, де раніше знаходився монастирський хор." },
+                { bold: "Церква Святого Петра", text: "– історична церква з характерною архітектурою та значенням для абатства." },
             ]
         },
         short_description: "Абатство Гайстербах – колишній цистерціанський монастир XII століття, розташований у долині Гайстербах неподалік від Кенігсвінтера. Після секуляризації на початку XIX століття монастир було ліквідовано, а його територія з часом перетворилася на історико-культурний простір. Сьогодні Гайстербах вважається одним із значущих пам’яток середньовічної монастирської історії регіону Зібенгебірге.",
@@ -2548,10 +2541,10 @@ const datas = [
         subObjects: ["erloeserkirche_luedenscheid", "brunnen_altstadt_luedenscheid"],
         short_description: "Старе місто Люденшайда – історичне серце міста з вузькими вулицями та кільцевим плануванням навколо церкви Спасителя. Тут збереглися будівлі XVIII–XIX століть, залишки міської стіни та історичний музей, а затишні вулички поєднують минуле з сучасним міським життям.",
         short_description_subObjects: {
-            text: "У старому місті Люденшайда розташовані такі пам'ятки: ",
+            text: "У старому місті Люденшайда розташовані такі пам’ятки:",
             items: [
-                "Церква Спасителя",
-                "Фонтан у старому місті"
+                { bold: "Церква Спасителя", text: "– історична церква з характерною архітектурою, важливий культурний об’єкт міста." },
+                { bold: "Фонтан у старому місті", text: "– декоративний фонтан на головній площі, популярне місце для прогулянок та фотографій." },
             ]
         },
         full_description: {
@@ -2713,8 +2706,8 @@ const datas = [
         short_description_subObjects: {
             text: "На площі Штернплац розташовані такі пам’ятки:",
             items: [
-                "<b>Пам’ятник дядькові Віллі</b> – бронзова скульптура типового жителя Люденшайда з собакою.",
-                "<b>Фонтан Нойманна</b> – декоративний фонтан, створений скульптором Куртом Тоні Нейманом."
+                { bold: "Пам’ятник дядькові Віллі", text: "– бронзова скульптура типової мешканця Люденшайда з собакою." },
+                { bold: "Фонтан Ноймана", text: "– декоративний фонтан, створений скульптором Куртом Тоні Нойманом." },
             ]
         },
         full_description: {
@@ -2773,8 +2766,8 @@ const datas = [
         type: ["monument_or_fountain"], top: "local",
         path: "fontain_sternplatz_luedenscheid",
         countryPath: "germany", regionsPath: "nrw", districtPath: "arnsberg", cityPath: "luedenscheid",
-        fotoCard: "Germany/nrw/arnsberg/Märkischer-Kreis/luedenscheid/sternplatz/003.jpg",
         hiddenFromList: true, showMore: true,
+        fotoCard: "Germany/nrw/arnsberg/Märkischer-Kreis/luedenscheid/sternplatz/003.jpg",
         short_description: "Фонтан на площі Штернплац – декоративний водоймище в центрі площі, створений наприкінці 1970-х років скульптором Куртом Тоні Нойманом. Став значущим міським об’єктом та місцем відпочинку в пішохідній зоні Люденшайда.",
         full_description: {
             title: "Опис та історія",

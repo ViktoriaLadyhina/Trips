@@ -19,7 +19,7 @@ const AttractionForm = () => {
       isUnesco: false,
       unescoYear: "",
       isChildAttraction: false,
-      shortDescriptionSubObjects: [{ text: "", name: "" }],
+      shortDescriptionSubObjects: { title: "", items: [{ bold: "", text: "" }] },
       showMore: false,
       short_description: "",
       short_description2: "",
@@ -94,15 +94,18 @@ const AttractionForm = () => {
         .filter(o => o.value?.trim())
         .map(o => o.value)
     }),
-    ...(watchedFields.shortDescriptionSubObjects?.some(f => f.text?.trim() || f.name?.trim()) && {
-      short_description_subObjects: {
-        text: watchedFields.shortDescriptionSubObjects[0].text?.trim() || "",
-        items: watchedFields.shortDescriptionSubObjects
-          .map(f => f.name?.trim())
-          .filter(n => n) // убираем пустые
-      }
-    }),
-    ...(watchedFields.isChildAttraction === "true" && { hiddenFromList: true }),
+...(watchedFields.shortDescriptionSubObjects?.items?.some(item => item.bold?.trim() || item.text?.trim()) && {
+  short_description_subObjects: {
+    title: watchedFields.shortDescriptionSubObjects.title?.trim() || "",
+    items: watchedFields.shortDescriptionSubObjects.items
+      .filter(item => item.bold?.trim() || item.text?.trim())
+      .map(item => ({
+        bold: item.bold?.trim() || "",
+        text: item.text?.trim() || ""
+      }))
+  }
+}),
+    ...(watchedFields.isChildAttraction === "true" && { hiddenFromList: true }), 
     ...(watchedFields.showMore === "true" && { showMore: true }),
     short_description: watchedFields.short_description,
     ...(watchedFields.short_description2.length > 0 && { short_description2: watchedFields.short_description2 }),
@@ -395,7 +398,56 @@ const toJsModuleString = (obj, indent = 0) => {
         </div>
       </div>
 
-      {/* // -------------- Фото  */}
+      {/* // -------------- Вложенные достопримечательности */}
+      <div className='subObjects'>
+        <label><span className="note">Заполняем только, если есть вложенные достопримечательности</span>. Это связь с дочерними дост-тями</label>
+        {sabInputFields.map((field, index) => (
+          <input key={field.id} type="text" {...register(`subObjectsInputs.${index}.value`)} placeholder="вставляем id вложенной достопримечательности" />
+        ))}
+        <button type="button" onClick={() => append_sabInput("")}> Добавить абзац</button>
+        <span className='note'>(если вложенных достопримечательностей больше, чем одна)</span>
+      </div>
+
+      {/* // -------------- Перечень дочерних достопримечательностей */}
+<div className='description'>
+  <label><span className="note">Заполняем только, если есть вложенные достопримечательности.</span>Перечень дочерних достопримечательностей</label>
+  {sabDickripInputFields.map((item, i) => (
+    <div key={item.id} className='subobject-item'>
+      {i === 0 && (
+        <textarea className='description-textarea' {...register(`shortDescriptionSubObjects.title`)} rows={2} placeholder="Пример: В старом городе Люденшайда расположены такие достопримечательности:" />
+      )}
+      <input type="text" {...register(`shortDescriptionSubObjects.items.${i}.bold`)} placeholder="Название достопримечательности, например: Церковь Спасителя" />
+      <input type="text" {...register(`shortDescriptionSubObjects.items.${i}.text`)} placeholder="Краткое описание достопримечательности" />
+    </div>
+  ))}
+
+  <button type="button" onClick={() => append_sabDiscripInput({ bold: "", text: "" })}>
+    Добавить достопримечательность
+  </button>
+</div>
+
+      {/* // -------------- Является ли эта достопримечательность дочерней? */}
+      <div className='unesco'>
+        <label>Является ли эта достопримечательность дочерней?</label>
+        <div>
+          <label><input type="radio" value="true" {...register("isChildAttraction")} /> Да </label>
+          <label><input type="radio" value="false" {...register("isChildAttraction")} /> Нет </label>
+        </div>
+      </div>
+
+      {/* кнопка "Подробнее" - показываем только если дочерняя */}
+      {watchedFields.isChildAttraction === "true" && (
+        <div className="show-more-question">
+          <label><span className="required">*</span>Нужна ли кнопка "Подробнее"?</label>
+          <p className='note'>в том смысле, что нужен ли переход на отдельную страницу. Если описания мало, то можно описать прямо в карточке</p>
+          <div>
+            <label> <input type="radio" value="true" {...register("showMore")} /> Да </label>
+            <label> <input type="radio" value="false" {...register("showMore")} /> Нет </label>
+          </div>
+        </div>
+      )}
+
+            {/* // -------------- Фото  */}
       <div className='foto'>
         <label><span className="required">*</span>Фотография</label>
         <input type="text" {...register("foto", { required: "Поле Фотография обязательно" })} placeholder="Путь к фото в формате Country/region/city/attraction/001.jpg" />
@@ -422,49 +474,6 @@ const toJsModuleString = (obj, indent = 0) => {
           <label><input type="Number" {...register("unescoYear")} /></label>
         </div>
       </div>
-
-      {/* // -------------- Вложенные достопримечательности */}
-      <div className='subObjects'>
-        <label><span className="note">Заполняем только, если есть вложенные достопримечательности</span>. Это связь с дочерними дост-тями</label>
-        {sabInputFields.map((field, index) => (
-          <input key={field.id} type="text" {...register(`subObjectsInputs.${index}.value`)} placeholder="вставляем id вложенной достопримечательности" />
-        ))}
-        <button type="button" onClick={() => append_sabInput("")}> Добавить абзац</button>
-        <span className='note'>(если вложенных достопримечательностей больше, чем одна)</span>
-      </div>
-
-      {/* // -------------- Перечень дочерних достопримечательностей */}
-      <div className='description'>
-        <label><span className="note"> Заполняем только, если есть вложенные достопримечательности.</span> Перечень дочерних достопримечательностей</label>
-        {sabDickripInputFields.map((item, i) => (
-          <div key={item.id} className='subobject-item'>
-            {i === 0 && (<textarea className='description-textarea' type="text" {...register(`shortDescriptionSubObjects.${i}.text`)} rows={2} placeholder="Пример: В старом городе Люденшайда расположены такие достопримечательности:" />)}
-            <input type="text" {...register(`shortDescriptionSubObjects.${i}.name`)} placeholder="Вставлять только названия, например: Церковь Спасителя" />
-          </div>
-        ))}
-        <button type="button" onClick={() => append_sabDiscripInput({ name: "" })}> Добавить название</button>
-      </div>
-
-      {/* // -------------- Является ли эта достопримечательность дочерней? */}
-      <div className='unesco'>
-        <label>Является ли эта достопримечательность дочерней?</label>
-        <div>
-          <label><input type="radio" value="true" {...register("isChildAttraction")} /> Да </label>
-          <label><input type="radio" value="false" {...register("isChildAttraction")} /> Нет </label>
-        </div>
-      </div>
-
-      {/* кнопка "Подробнее" - показываем только если дочерняя */}
-      {watchedFields.isChildAttraction === "true" && (
-        <div className="show-more-question">
-          <label><span className="required">*</span>Нужна ли кнопка "Подробнее"?</label>
-          <p className='note'>в том смысле, что нужен ли переход на отдельную страницу. Если описания мало, то можно описать прямо в карточке</p>
-          <div>
-            <label> <input type="radio" value="true" {...register("showMore")} /> Да </label>
-            <label> <input type="radio" value="false" {...register("showMore")} /> Нет </label>
-          </div>
-        </div>
-      )}
 
       {/* // -------------- Короткое описание */}
       <div className='short_description'>

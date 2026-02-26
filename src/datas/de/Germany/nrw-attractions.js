@@ -13,16 +13,16 @@ const datas = [
         short_description_subObjects: {
             text: "In der Altstadt von Köln befinden sich folgende Sehenswürdigkeiten:",
             items: [
-                "<b>Kölner Dom</b> – majestätische gotische Kathedrale, das Herz der Altstadt, am Platz vor dem Hauptbahnhof.",
-                "<b>Kölner Rathaus</b> – historisches Stadthaus im Zentrum der Altstadt.",
-                "<b>Gürzenich</b> – historisches Zunfthaus und Saal in der Nähe des Kölner Doms.",
-                "<b>Museum im archäologischen Viertel Köln – MiQua</b> – archäologisches und jüdisches Museum am Marktplatz im Zentrum der Altstadt.",
-                "<b>Römisch-Germanisches Museum</b> – Museum der Antike in der Nähe des Kölner Doms und des MiQua.",
-                "<b>Wallraf-Richartz-Museum</b> – Museum für Malerei und Kunst, unweit von Rathaus und Dom.",
-                "<b>Duftmuseum im Farina-Haus</b> – Museum für Düfte und Parfum im historischen Viertel beim Rathaus.",
-                "<b>Dufthaus 4711</b> – historisches Gebäude in der Fußgängerzone um die Hohe Straße und Schildergasse.",
-                "<b>Museum Ludwig</b> – Museum für moderne Kunst in der Nähe des Kölner Doms.",
-                "<b>Kölner Stadtmuseum</b> – Museum für Stadtgeschichte im Zentrum (Zeughaus)."
+                { bold: "Kölner Dom", text: "– majestätische gotische Kathedrale, das Herz der Altstadt, am Platz vor dem Hauptbahnhof." },
+                { bold: "Kölner Rathaus", text: "– historisches Stadthaus im Zentrum der Altstadt." },
+                { bold: "Gürzenich", text: "– historisches Zunfthaus und Saal in der Nähe des Kölner Doms." },
+                { bold: "Museum im archäologischen Viertel Köln – MiQua", text: "– archäologisches und jüdisches Museum am Marktplatz im Zentrum der Altstadt." },
+                { bold: "Römisch-Germanisches Museum", text: "– Museum der Antike in der Nähe des Kölner Doms und des MiQua." },
+                { bold: "Wallraf-Richartz-Museum", text: "– Museum für Malerei und Kunst, unweit von Rathaus und Dom." },
+                { bold: "Duftmuseum im Farina-Haus", text: "– Museum für Düfte und Parfum im historischen Viertel beim Rathaus." },
+                { bold: "Dufthaus 4711", text: "– historisches Gebäude in der Fußgängerzone um die Hohe Straße und Schildergasse." },
+                { bold: "Museum Ludwig", text: "– Museum für moderne Kunst in der Nähe des Kölner Doms." },
+                { bold: "Kölner Stadtmuseum", text: "– Museum für Stadtgeschichte im Zentrum (Zeughaus)." },
             ]
         },
         short_description: "Die Altstadt von Köln ist das historische Herz der Stadt mit engen gepflasterten Gassen, traditionellen Häusern, gemütlichen Brauhäusern und Cafés am Rheinufer. Sie vereint Kultur, Architektur und alltägliches Leben: von gotischen Kathedralen bis zu Museen und Märkten, die die vielschichtige Geschichte der Stadt widerspiegeln.",
@@ -65,10 +65,7 @@ const datas = [
         officialSite: [
             { bold: 'Offizielle Webseite des Kölner Doms', link: 'https://www.koelner-dom.de/' }
         ],
-        unesco_status: {
-            included: true,
-            year: 1996
-        },
+        unesco_status: { included: true, year: 1996 },
         construction_period: "1248–1880",
         architects: ["Konrad von Hochstaden, ", "Werkstätten der Baumeister XIII–XIX Jh."],
         founder: "Reinald von Dassel",
@@ -1349,8 +1346,12 @@ const datas = [
         subObjects: ["tanzbrunnen", "koln_seilbahn", "divitia_koln"],
         short_description: "Der Rheinpark ist ein großer öffentlicher Park entlang des rechten Rheinufers im Stadtteil Deutz der Stadt Köln. Er stellt eine historisch und architektonisch bedeutende Grünanlage dar, bekannt für seine weitläufigen Rasenflächen, Blumenbeete, Spazierwege und den herrlichen Blick auf das Stadtzentrum mit dem Kölner Dom.",
         short_description_subObjects: {
-            text: "Im Rheinpark befinden sich folgende Sehenswürdigkeiten:",
-            items: ["Tanzbrunnen", "Kölner Seilbahn", "Ruinen des römischen Forts Divitia in Köln"]
+            text: "Im Rheinpark Köln befinden sich folgende interessante Orte und Attraktionen:",
+            items: [
+                { bold: "Tanzender Brunnen", text: "– ein schönes, beeindruckendes Bauwerk mit Musik und Beleuchtung, das Touristen und Einheimische anzieht." },
+                { bold: "Kölner Seilbahn", text: "– hebt Besucher über den Rhein und bietet Panoramablicke auf die Stadt und den Fluss." },
+                { bold: "Römisches Fort Divitia", text: "– eine historische Festung aus der Römerzeit, erhalten im Park und für Besichtigungen zugänglich." },
+            ]
         },
         full_description: {
             title: "Beschreibung und Geschichte",
@@ -1393,12 +1394,12 @@ const datas = [
         type: ["monument_or_fountain"], top: "popular",
         path: "tanzbrunnen",
         countryPath: "germany", regionsPath: "nrw", districtPath: "city", cityPath: "koln",
+        hiddenFromList: true, showMore: true,
         fotoCard: "Germany/nrw/koln/koln-city/rheinpark_koln/002.jpg",
         location: "Köln, Deutschland",
         officialSite: [
             { bold: "Offizielle Seite des Tanzbrunnen (über KölnKongress)", link: "https://koelncongress.de/locations/tanzbrunnen-koeln/" }
         ],
-        hiddenFromList: true, showMore: true,
         short_description: "Am südlichen Rand des Rheinparks befindet sich der Tanzbrunnen – eines der bekanntesten Kulturobjekte Kölns. Der Komplex umfasst eine offene Fläche, ein Amphitheater, überdachte Bereiche und Grünanlagen und schafft so einen idealen Raum für Konzerte, Festivals, Tanzpartys und andere kulturelle Veranstaltungen.",
         full_description: {
             title: "Beschreibung und Geschichte",
@@ -1433,12 +1434,12 @@ const datas = [
         type: ["technical_structure"], top: "popular",
         path: "koln_seilbahn",
         countryPath: "germany", regionsPath: "nrw", districtPath: "city", cityPath: "koln",
+        hiddenFromList: true, showMore: true,
         fotoCard: "Germany/nrw/koln/koln-city/rheinpark_koln/003.jpg",
         location: "Köln, Deutschland",
         officialSite: [
             { bold: "Offizielle Website", link: "https://www.koelner-seilbahn.de/index.html" }
         ],
-        hiddenFromList: true, showMore: true,
         short_description: "Die Kölner Seilbahn ist eine panoramische Seilbahn über den Rhein, die den Zoo und den Rheinpark in Köln verbindet. Sie bietet einen der besten Ausblicke auf die Stadt, den Kölner Dom und die Rheinufer. Sie ist saisonal in Betrieb und gilt als eine der bekanntesten touristischen Attraktionen der Stadt.",
         full_description: {
             title: "Beschreibung und Geschichte",
@@ -1487,9 +1488,9 @@ const datas = [
         type: ["historical_building"], top: "local",
         path: "divitia_koln",
         countryPath: "germany", regionsPath: "nrw", districtPath: "city", cityPath: "koln",
+        hiddenFromList: true, showMore: true,
         fotoCard: "Germany/nrw/koln/koln-city/rheinpark_koln/004.jpg",
         location: "Köln, Deutschland",
-        hiddenFromList: true, showMore: true,
         short_description: "Die Ruinen des römischen Forts Divitia sind Überreste einer spätantiken Befestigung aus dem 4. Jahrhundert n. Chr. am rechten Rheinufer in Köln. Erhalten sind Teile des Turms, römische Mauerreste und Fundamentreste. Die Anlage ist frei zugänglich im Fußgängerbereich des Rheinparks.",
         full_description: {
             title: "Beschreibung und Geschichte",
@@ -1955,9 +1956,9 @@ const datas = [
         short_description_subObjects: {
             text: "Auf dem Johann-Schmitz-Platz befinden sich folgende Sehenswürdigkeiten:",
             items: [
-                "Altes Rathaus Frechen",
-                "Brunnen vor dem Rathaus",
-                "Klüttenbrunnen",
+                { bold: "Altes Rathaus Frechen", text: "– historisches Rathausgebäude mit traditioneller Architektur, ein Wahrzeichen der Stadt Frechen." },
+                { bold: "Brunnen vor dem Rathaus", text: "– dekorativer Brunnen, der dem Platz eine malerische Atmosphäre verleiht." },
+                { bold: "Kluttenbrunnen", text: "– bekannter Brunnen mit historischem Wert, ein beliebter Ort für Spaziergänge und Fotos." },
             ]
         },
         tickets_and_entry: {
@@ -2103,13 +2104,13 @@ const datas = [
         ],
         short_description: "Der Drachenfels ist ein legendärer Berg im Naturpark Siebengebirge oberhalb des Rheins. Vom Gipfel eröffnen sich weite Panoramablicke über das Rheintal, und der Berg selbst ist eng mit der Sage vom Drachen und dem Helden Siegfried verbunden. ",
         short_description_subObjects: {
-            text: "Auf dem Drachenfels befinden sich folgende Sehenswürdigkeiten: ",
+            text: "Auf dem Drachenfels befinden sich folgende Sehenswürdigkeiten:",
             items: [
-                "<b>Drachenfelsbahn</b> – historische Zahnradbahn, die das Rheintal mit dem Gipfel des Drachenfelses verbindet und Panoramablicke eröffnet.",
-                "<b>Schloss Drachenburg</b> – malerisches neugotisches Schloss, im 19. Jahrhundert erbaut, mit prächtigen Innenräumen und Gärten.",
-                "<b>Ruinen der Burg Drachenfels</b> – mittelalterliche Überreste der Festung, die über dem Rhein thronen.",
-                "<b>Nibelungenhalle</b> – Ausstellungsraum mit Exposition zur Legende der Nibelungen.",
-                "<b>Reptilien-Zoo</b> – kleiner Zoo mit Sammlung exotischer Reptilien am Hang des Drachenfels."
+                { bold: "Drachenfelsbahn", text: "– historische Zahnradbahn, die das Rheintal mit dem Gipfel verbindet und Panoramablicke bietet." },
+                { bold: "Schloss Drachenburg", text: "– malerisches neugotisches Schloss aus dem 19. Jahrhundert mit prächtigen Innenräumen und Gärten." },
+                { bold: "Ruinen der Drachenfelsburg", text: "– mittelalterliche Überreste der Festung, die über dem Rhein thronen." },
+                { bold: "Nibelungenhalle", text: "– Ausstellungshalle mit Exponaten zur Legende der Nibelungen." },
+                { bold: "Reptilienzoo Drachenfels", text: "– kleiner Zoo mit exotischen Reptilien am Hang des Berges." },
             ]
         },
         full_description: {
@@ -2157,10 +2158,9 @@ const datas = [
         id: "drachenfelsbahn",
         name: "Drachenfelsbahn",
         type: ["technical_structure"], top: "popular",
-        slug: "drachenfelsbahn",
-        hiddenFromList: true, showMore: true,
         path: "drachenfelsbahn",
         countryPath: "germany", regionsPath: "nrw", districtPath: "koln", cityPath: "konigswinter",
+        hiddenFromList: true, showMore: true,
         fotoCard: "Germany/nrw/koln/Rhein-Sieg-Kreis/konigswinter/drachenfels/002.jpg",
         officialSite: [
             {
@@ -2209,10 +2209,9 @@ const datas = [
         id: "schloss_drachenburg",
         name: "Schloss Drachenburg",
         type: ["palace_or_castle"], top: "popular",
-        slug: "schloss_drachenburg",
-        hiddenFromList: true, showMore: true,
         path: "schloss_drachenburg",
         countryPath: "germany", regionsPath: "nrw", districtPath: "koln", cityPath: "konigswinter",
+        hiddenFromList: true, showMore: true,
         fotoCard: "Germany/nrw/koln/Rhein-Sieg-Kreis/konigswinter/drachenfels/001.jpg",
         officialSite: [
             { bold: "Offizielle Website von Schloss Drachenburg", link: "https://www.schloss-drachenburg.de" }
@@ -2268,10 +2267,9 @@ const datas = [
         id: "drachenfels_ruins",
         name: "Ruinen der Burg Drachenfels",
         type: ["palace_or_castle"], top: "popular",
-        slug: "drachenfels_ruins",
-        hiddenFromList: true, showMore: true,
         path: "drachenfels_ruins",
         countryPath: "germany", regionsPath: "nrw", districtPath: "koln", cityPath: "konigswinter",
+        hiddenFromList: true, showMore: true,
         fotoCard: "Germany/nrw/koln/Rhein-Sieg-Kreis/konigswinter/drachenfels/003.jpg",
         construction_period: "12. Jahrhundert (1138–1167)",
         founder: " Kölner Erzbischof Arnold von Wied",
@@ -2309,11 +2307,9 @@ const datas = [
         id: "nibelungenhalle",
         name: "Nibelungenhalle",
         type: ["museum"], top: "local",
-        slug: "nibelungenhalle",
-        hiddenFromList: true,
-        showMore: true,
         path: "nibelungenhalle",
         countryPath: "germany", regionsPath: "nrw", districtPath: "koln", cityPath: "konigswinter",
+        hiddenFromList: true, showMore: true,
         officialSite: [
             { bold: "Offizielle Website der Nibelungenhalle", link: "https://nibelungenhalle.de/" }
         ],
@@ -2349,10 +2345,9 @@ const datas = [
         id: "reptile_zoo",
         name: "Reptilienzoo Drachenfels",
         type: ["nature"], top: "local",
-        slug: "reptile_zoo",
-        hiddenFromList: true, showMore: true,
         path: "reptile_zoo",
         countryPath: "germany", regionsPath: "nrw", districtPath: "koln", cityPath: "konigswinter",
+        hiddenFromList: true, showMore: true,
         // officialSite: [ funktioniert nicht überprüfen
         //     { bold: "Offizielle Website des Zoos", link: "https://www.reptilien-zoo-drachenfels.de" }
         // ],
@@ -2407,10 +2402,10 @@ const datas = [
         ],
         subObjects: ["chorruine_heisterbach_konigswinter", "st_peter_heisterbach_konigswinter"],
         short_description_subObjects: {
-            text: "Im Kloster befinden sich folgende Sehenswürdigkeiten: ",
+            text: "In der Abtei befinden sich folgende Sehenswürdigkeiten:",
             items: [
-                "<b>Ruinen des Chors der ehemaligen Klosterkirche</b> – Überreste der mittelalterlichen Kirche, in der sich früher der Klosterchor befand.",
-                "<b>Kirche St. Peter</b> – historische Kirche mit charakteristischer Architektur und Bedeutung für das Kloster."
+                { bold: "Ruinen des Chors der ehemaligen Klosterkirche", text: "– Überreste einer mittelalterlichen Kirche, in der früher der Klosterchor untergebracht war." },
+                { bold: "Kirche St. Peter", text: "– historische Kirche mit charakteristischer Architektur und Bedeutung für die Abtei." },
             ]
         },
         short_description: "Die Abtei Heisterbach ist ein ehemaliges Zisterzienserkloster aus dem 12. Jahrhundert, gelegen im Heisterbachtal unweit von Königswinter. Nach der Säkularisation Anfang des 19. Jahrhunderts wurde das Kloster aufgehoben, und sein Gelände entwickelte sich mit der Zeit zu einem historisch-kulturellen Raum. Heute gilt Heisterbach als eines der bedeutendsten Zeugnisse der mittelalterlichen Klostergeschichte der Region Siebengebirge.",
@@ -2547,10 +2542,10 @@ const datas = [
         subObjects: ["erloeserkirche_luedenscheid", "brunnen_altstadt_luedenscheid"],
         short_description: "Die Altstadt von Lüdenscheid ist das historische Herz der Stadt mit engen Straßen und einem ringförmigen Straßennetz um die Erlöserkirche. Hier sind Gebäude aus dem 18.–19. Jahrhundert, Reste der Stadtmauer und das historische Museum erhalten geblieben, und die gemütlichen Gassen verbinden Vergangenheit mit dem modernen Stadtleben.",
         short_description_subObjects: {
-            text: "In der Altstadt von Lüdenscheid befinden sich folgende Sehenswürdigkeiten: ",
+            text: "In der Altstadt von Lüdenscheid befinden sich folgende Sehenswürdigkeiten:",
             items: [
-                "Erlöserkirche",
-                "Brunnen in der Altstadt"
+                { bold: "Erlöserkirche", text: "– historische Kirche mit charakteristischer Architektur, ein wichtiger kultureller Ort der Stadt." },
+                { bold: "Brunnen in der Altstadt", text: "– dekorativer Brunnen auf dem Hauptplatz, ein beliebter Ort für Spaziergänge und Fotos." },
             ]
         },
         full_description: {
@@ -2713,8 +2708,8 @@ const datas = [
         short_description_subObjects: {
             text: "Auf dem Sternplatz befinden sich folgende Sehenswürdigkeiten:",
             items: [
-                "<b>Denkmal für Onkel Willi</b> – Bronze-Skulptur eines typischen Bewohners von Lüdenscheid mit Hund.",
-                "<b>Neumann-Brunnen</b> – dekorativer Brunnen, geschaffen vom Bildhauer Kurt Tony Neumann."
+                { bold: "Denkmal Onkel Willi", text: "– Bronzeskulptur eines typischen Bewohners von Lüdenscheid mit Hund." },
+                { bold: "Neumann-Brunnen", text: "– dekorativer Brunnen, geschaffen vom Bildhauer Kurt Toni Neumann." },
             ]
         },
         full_description: {
@@ -2746,8 +2741,8 @@ const datas = [
         type: ["monument_or_fountain"], top: "local",
         path: "onkel_willi_denkmal_sternplatz_luedenscheid",
         countryPath: "germany", regionsPath: "nrw", districtPath: "arnsberg", cityPath: "luedenscheid",
-        fotoCard: "Germany/nrw/arnsberg/Märkischer-Kreis/luedenscheid/sternplatz/001.JPG",
         hiddenFromList: true, showMore: true,
+        fotoCard: "Germany/nrw/arnsberg/Märkischer-Kreis/luedenscheid/sternplatz/001.JPG",
         short_description: "Das Denkmal von Onkel Willi ist eine Bronzeskulptur auf dem Sternplatz, die einen typischen Bewohner von Lüdenscheid mit Hund darstellt. Es ist ein inoffizielles Wahrzeichen der Stadt und spiegelt die alltägliche, „lebendige“ Atmosphäre wider.",
         full_description: {
             title: "Beschreibung und Geschichte",
@@ -2773,8 +2768,8 @@ const datas = [
         type: ["monument_or_fountain"], top: "local",
         path: "fontain_sternplatz_luedenscheid",
         countryPath: "germany", regionsPath: "nrw", districtPath: "arnsberg", cityPath: "luedenscheid",
-        fotoCard: "Germany/nrw/arnsberg/Märkischer-Kreis/luedenscheid/sternplatz/003.jpg",
         hiddenFromList: true, showMore: true,
+        fotoCard: "Germany/nrw/arnsberg/Märkischer-Kreis/luedenscheid/sternplatz/003.jpg",
         short_description: "Der Brunnen auf dem Sternplatz ist ein dekoratives Wasserbecken im Zentrum des Platzes, geschaffen Ende der 1970er Jahre vom Bildhauer Kurt Toni Neumann. Er ist ein bedeutendes städtisches Objekt und ein Ort der Erholung in der Fußgängerzone von Lüdenscheid.",
         full_description: {
             title: "Beschreibung und Geschichte",
