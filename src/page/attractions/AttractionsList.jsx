@@ -21,7 +21,6 @@ const AttractionsList = () => {
         sort: 'rating',
     });
 
-
     useEffect(() => {
         const base = attractionsTitle[lang];
 
@@ -59,9 +58,7 @@ const AttractionsList = () => {
         }
 
         // Фильтр по типу
-        if (filters.type === 'palace_or_castle') {
-            if (!allTypes.includes('palace') && !allTypes.includes('castle')) return false;
-        } else if (filters.type !== 'all' && !allTypes.includes(filters.type)) {
+        if (filters.type !== 'all' && !allTypes.includes(filters.type)) {
             return false;
         }
 
@@ -82,25 +79,25 @@ const AttractionsList = () => {
     }) || [];
 
     // Сортировка
-const sortedAttractions = [...filteredAttractions].sort((a, b) => {
-    if (filters.sort === 'name-asc') {
+    const sortedAttractions = [...filteredAttractions].sort((a, b) => {
+        if (filters.sort === 'name-asc') {
+            return (a?.name || '').localeCompare(b?.name || '');
+        }
+        if (filters.sort === 'name-desc') {
+            return (b?.name || '').localeCompare(a?.name || '');
+        }
+
+        const ratingOrder = { top: 3, popular: 2, local: 1 };
+
+        const aRating = ratingOrder[a.top] || 0;
+        const bRating = ratingOrder[b.top] || 0;
+
+        if (bRating !== aRating) {
+            return bRating - aRating;
+        }
+
         return (a?.name || '').localeCompare(b?.name || '');
-    }
-    if (filters.sort === 'name-desc') {
-        return (b?.name || '').localeCompare(a?.name || '');
-    }
-
-    const ratingOrder = { top: 3, popular: 2, local: 1 };
-
-    const aRating = ratingOrder[a.top] || 0;
-    const bRating = ratingOrder[b.top] || 0;
-
-    if (bRating !== aRating) {
-        return bRating - aRating; 
-    }
-
-    return (a?.name || '').localeCompare(b?.name || '');
-});
+    });
 
     // Хлебные крошки
     const crumbs = [

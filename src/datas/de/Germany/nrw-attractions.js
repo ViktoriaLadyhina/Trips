@@ -7,22 +7,23 @@ const datas = [
         type: ["historical_area"], top: "top",
         path: "altstadt_koln",
         countryPath: "germany", regionsPath: "nrw", districtPath: "city", cityPath: "koln",
-        fotoCard: "Germany/nrw/koln/koln-city/altstadt/001.jpg",
+        fotoCard: "Germany/nrw/koln/koln-city/altstadt/005.jpg",
         location: "Köln, Deutschland",
-        subObjects: ["cologne_cathedral", "rathaus_koln", "guerzenich_koln", "miqua", "wallraf_richartz_museum", "roemisch_germanisches_museum", "farina_duftmuseum", "museum_ludwig", "stadtmuseum_koln", "dufthaus_4711_koln"],
+        subObjects: ["cologne_cathedral", "rathaus_koln", "guerzenich_koln", "miqua", "wallraf_richartz_museum", "roemisch_germanisches_museum", "farina_duftmuseum", "museum_ludwig", "stadtmuseum_koln", "dufthaus_4711_koln", "gross_st_martin_koln"],
         short_description_subObjects: {
             text: "In der Altstadt von Köln befinden sich folgende Sehenswürdigkeiten:",
             items: [
                 { bold: "Kölner Dom", text: "– majestätische gotische Kathedrale, das Herz der Altstadt, am Platz vor dem Hauptbahnhof." },
-                { bold: "Kölner Rathaus", text: "– historisches Stadthaus im Zentrum der Altstadt." },
+                { bold: "Dufthaus 4711", text: "– historisches Gebäude in der Fußgängerzone um die Hohe Straße und Schildergasse." },
+                { bold: "Duftmuseum im Farina-Haus", text: "– Museum für Düfte und Parfum im historischen Viertel beim Rathaus." },
+                { bold: "Groß St. Martin", text: "– eine der bekanntesten romanischen Kirchen Kölns mit einem massiven Trikonchen-Turm, der über dem Rheinufer emporragt. Symbol der Silhouette der Altstadt." },
                 { bold: "Gürzenich", text: "– historisches Zunfthaus und Saal in der Nähe des Kölner Doms." },
+                { bold: "Kölner Rathaus", text: "– historisches Stadthaus im Zentrum der Altstadt." },
+                { bold: "Kölnisches Stadtmuseum", text: "– Museum für Stadtgeschichte im Zentrum (Zeughaus)." },
                 { bold: "Museum im archäologischen Viertel Köln – MiQua", text: "– archäologisches und jüdisches Museum am Marktplatz im Zentrum der Altstadt." },
+                { bold: "Museum Ludwig", text: "– Museum für moderne Kunst in der Nähe des Kölner Doms." },
                 { bold: "Römisch-Germanisches Museum", text: "– Museum der Antike in der Nähe des Kölner Doms und des MiQua." },
                 { bold: "Wallraf-Richartz-Museum", text: "– Museum für Malerei und Kunst, unweit von Rathaus und Dom." },
-                { bold: "Duftmuseum im Farina-Haus", text: "– Museum für Düfte und Parfum im historischen Viertel beim Rathaus." },
-                { bold: "Dufthaus 4711", text: "– historisches Gebäude in der Fußgängerzone um die Hohe Straße und Schildergasse." },
-                { bold: "Museum Ludwig", text: "– Museum für moderne Kunst in der Nähe des Kölner Doms." },
-                { bold: "Kölner Stadtmuseum", text: "– Museum für Stadtgeschichte im Zentrum (Zeughaus)." },
             ]
         },
         short_description: "Die Altstadt von Köln ist das historische Herz der Stadt mit engen gepflasterten Gassen, traditionellen Häusern, gemütlichen Brauhäusern und Cafés am Rheinufer. Sie vereint Kultur, Architektur und alltägliches Leben: von gotischen Kathedralen bis zu Museen und Märkten, die die vielschichtige Geschichte der Stadt widerspiegeln.",
@@ -49,7 +50,7 @@ const datas = [
             description: "Entdecken Sie die Altstadt von Köln: enge Gassen, gotische Kathedralen, historische Plätze, Museen und die Rheinuferpromenade. Ein nützlicher Reiseführer für Spaziergänge und Besuchsplanung.",
             ogTitle: "Altstadt Köln – Herz der Geschichte und Kultur der Stadt",
             ogDescription: "Spazieren Sie durch die Altstadt von Köln: historische Gebäude, Museen, Plätze, Brauhäuser und die malerische Rheinuferpromenade. Perfekt für Touristen und Geschichtsinteressierte.",
-            ogImage: "https://our-travels.info/foto/Germany/nrw/koln/koln-city/altstadt/001.jpg"
+            ogImage: "https://our-travels.info/foto/Germany/nrw/koln/koln-city/altstadt/005.jpg"
         }
     },
     {
@@ -58,7 +59,7 @@ const datas = [
         type: ["cathedral"], top: "top",
         path: "cologne-cathedral",
         countryPath: "germany", regionsPath: "nrw", districtPath: "city", cityPath: "koln",
-        howMore: true, hiddenFromList: true,
+        showMore: true, hiddenFromList: true,
         fotoCard: "Germany/nrw/koln/koln-city/koln-cathedral/001.jpg",
         location: "Köln, Deutschland",
         address: [{ bold: "Adresse:", text: " Domkloster 4, 50667 Köln, Deutschland" }],
@@ -127,7 +128,7 @@ const datas = [
         type: ['historical_building'], top: "popular",
         path: "rathaus_koln",
         countryPath: "germany", regionsPath: "nrw", districtPath: "city", cityPath: "koln",
-        howMore: true, hiddenFromList: true,
+        showMore: true, hiddenFromList: true,
         fotoCard: "Germany/nrw/koln/koln-city/rathaus-koeln/Rathaus-Köln.jpg",
         location: "Köln, Deutschland",
         address: [{ bold: "Adresse des Kölner Rathauses:", text: "Rathausplatz 2, 50667 Köln, Deutschland" },],
@@ -179,12 +180,55 @@ const datas = [
         }
     },
     {
+        id: "gross_st_martin_koln",
+        name: "Groß St. Martin",
+        type: ["cathedral"], top: "popular",
+        path: "gross_st_martin_koln",
+        countryPath: "germany", regionsPath: "nrw", districtPath: "city", cityPath: "koln",
+        hiddenFromList: true, showMore: true,
+        fotoCard: "Germany/nrw/koln/koln-city/gross_st_martin/001.jpg",
+        location: "Köln, Deutschland",
+        officialSite: [
+            { bold: "Offizielle Webseite", link: "https://www.romanische-kirchen-koeln.de/willkommen/willkommen" }
+        ],
+        short_description: "Die romanische Kirche aus dem 12. Jahrhundert befindet sich im historischen Zentrum in der Nähe des Flusses und wurde im charakteristischen Stil der Rheinromanik erbaut. Besonderes Merkmal ist der mächtige zentrale Turm und die drei halbrunden Apsiden, die eine seltene architektonische Komposition bilden. Heute ist die Kirche in Betrieb und für Besucher geöffnet.",
+        full_description: {
+            title: "Beschreibung und Geschichte",
+            items: [
+                { bold: "Groß St. Martin", text: "– eine der markantesten romanischen Kirchen Kölns, die die erkennbare Silhouette des historischen Stadtzentrums prägt. Die Kirche liegt in der Nähe des Rheinufers und erhebt sich über die umgebende Bebauung mit einem mächtigen Turm mit vier Ecktürmchen. Dank ihrer Lage und ausdrucksstarken Architektur ist die Kirche ein wichtiges visuelles Wahrzeichen der Altstadt." },
+                { text: "Die Geschichte dieses Ortes reicht bis in die römische Epoche zurück. In der Antike befand sich hier eine Insel im Rheinarm, auf der Lagerhäuser und Hafenanlagen standen. Archäologische Ausgrabungen bestätigten die Existenz massiver steinerner Fundamente römischer Bauwerke, von denen ein Teil später als Basis für das mittelalterliche Kloster genutzt wurde." },
+                { text: "Im 10. Jahrhundert gründete Erzbischof Bruno der Große hier ein Benediktinerkloster, das zum religiösen und wirtschaftlichen Zentrum des Bezirks wurde. Mit der Zeit verfielen die alten Gebäude, und im 12. Jahrhundert begann der Bau einer neuen monumentalen Kirche im romanischen Stil. Die Hauptbauarbeiten dauerten bis etwa zur Mitte des 13. Jahrhunderts und prägten das Aussehen, das im Wesentlichen bis heute erhalten geblieben ist." },
+                { text: "Architektonisch stellt die Kirche ein typisches Beispiel der Rheinromanik mit einer Trikonche dar – einer seltenen Bauform, bei der drei halbrunde Apsiden eine kleeblattartige Form im östlichen Teil des Gebäudes bilden. Der zentrale Turm erhebt sich über dem Schnittpunkt der Langhäuser und dient seit vielen Jahrhunderten als Orientierungspunkt für die Bewohner und Reisenden." },
+                { text: "Während des Zweiten Weltkriegs wurde die Kirche durch Bomben fast vollständig zerstört. Von dem Gebäude blieben nur Teile der Wände und Fundamente erhalten. Lange Zeit standen die Ruinen als Mahnmal für den Krieg, und erst in der zweiten Hälfte des 20. Jahrhunderts begann eine umfassende Restaurierung. Die vollständige Wiederherstellung wurde in den 1980er Jahren abgeschlossen, wobei die historischen Formen maximal erhalten wurden." },
+                { text: "Heute dient die Kirche wieder als Pfarrkirche und ist gleichzeitig ein wichtiges historisches Denkmal. Sie gehört zu den zwölf großen romanischen Kirchen Kölns und gilt als einer der wichtigsten Punkte auf der touristischen Route durch die Altstadt, da sie geistliche Bedeutung, architektonischen Wert und jahrhundertealte Geschichte der Stadt vereint." }
+            ]
+        },
+        interestingFacts: {
+            title: "Interessante Fakten",
+            items: [
+                { text: "Steht auf dem Gelände ehemaliger römischer Hafenanlagen." },
+                { text: "Im Mittelalter war das Kloster eines der reichsten in der Region." },
+                { text: "Der Turm dient als wichtiger Orientierungspunkt in der Stadtansicht." },
+                { text: "Nach dem Krieg stand die Kirche jahrzehntelang in Trümmern und wurde zum Symbol für den Wiederaufbau Kölns." }
+            ]
+        },
+        construction_period: "Kloster – ca. 960 n. Chr., heutige Kirche – 12.–13. Jahrhundert",
+        founder: "Das Kloster wurde auf Initiative des Erzbischofs von Köln, Bruno der Große, gegründet.",
+        meta: {
+            title: "Groß St. Martin in Köln – Geschichte, Architektur und Fakten",
+            description: "Groß St. Martin – romanische Kirche in der Altstadt von Köln am Rhein. Geschichte, Architektur, Fakten und Besuchsinformationen.",
+            ogTitle: "Groß St. Martin – Symbol der romanischen Kirchen Kölns",
+            ogDescription: "Erfahren Sie die Geschichte einer der markantesten Kirchen Kölns mit mächtigem Turm und mittelalterlicher Vergangenheit.",
+            ogImage: "https://our-travels.info/foto/Germany/nrw/koln/koln-city/gross_st_martin/001.jpg"
+        }
+    },
+    {
         id: "guerzenich_koln",
         name: "Gürzenich – historischer Konzertsaal und Zunfthaus in Köln",
         type: ["historical_building"], top: "popular",
         path: "guerzenich_koln",
         countryPath: "germany", regionsPath: "nrw", districtPath: "city", cityPath: "koln",
-        howMore: true, hiddenFromList: true,
+        showMore: true, hiddenFromList: true,
         fotoCard: "Germany/nrw/koln/koln-city/guerzenich_koln/001.jpg",
         location: "Köln, Deutschland",
         officialSite: [
@@ -244,7 +288,7 @@ const datas = [
         type: ["museum"], top: "popular",
         path: "roemisch-germanisches-museum",
         countryPath: "germany", regionsPath: "nrw", districtPath: "city", cityPath: "koln",
-        howMore: true, hiddenFromList: true,
+        showMore: true, hiddenFromList: true,
         fotoCard: "Germany/nrw/koln/koln-city/roemisch-germanisches-museum/001.jpg",
         location: "Köln, Deutschland",
         officialSite: [
@@ -298,7 +342,7 @@ const datas = [
         type: ["museum"], top: "popular",
         path: "farina-duftmuseum",
         countryPath: "germany", regionsPath: "nrw", districtPath: "city", cityPath: "koln",
-        howMore: true, hiddenFromList: true,
+        showMore: true, hiddenFromList: true,
         fotoCard: "Germany/nrw/koln/koln-city/farina-duftmuseum/001.jpg",
         location: "Köln, Deutschland",
         officialSite: [
@@ -350,7 +394,7 @@ const datas = [
         type: ["museum"], top: "popular",
         path: "museum-ludwig",
         countryPath: "germany", regionsPath: "nrw", districtPath: "city", cityPath: "koln",
-        howMore: true, hiddenFromList: true,
+        showMore: true, hiddenFromList: true,
         fotoCard: "Germany/nrw/koln/koln-city/museum-ludwig/001.jpg",
         location: "Köln, Deutschland",
         officialSite: [
@@ -458,7 +502,7 @@ const datas = [
         type: ["museum"], top: "popular",
         path: "miqua",
         countryPath: "germany", regionsPath: "nrw", districtPath: "city", cityPath: "koln",
-        howMore: true, hiddenFromList: true,
+        showMore: true, hiddenFromList: true,
         fotoCard: "Germany/nrw/koln/koln-city/miqua/001.jpg",
         location: "Köln, Deutschland",
         officialSite: [
@@ -532,7 +576,7 @@ const datas = [
         type: ["museum"], top: "popular",
         path: "wallraf_richartz_museum",
         countryPath: "germany", regionsPath: "nrw", districtPath: "city", cityPath: "koln",
-        howMore: true, hiddenFromList: true,
+        showMore: true, hiddenFromList: true,
         fotoCard: "Germany/nrw/koln/koln-city/wallraf_richartz_museum/001.jpg",
         location: "Köln, Deutschland",
         officialSite: [
@@ -766,7 +810,7 @@ const datas = [
         type: ["museum"], top: "popular",
         path: "dufthaus_4711_koln",
         countryPath: "germany", regionsPath: "nrw", districtPath: "city", cityPath: "koln",
-        howMore: true, hiddenFromList: true,
+        showMore: true, hiddenFromList: true,
         fotoCard: "Germany/nrw/koln/koln-city/dufthaus_4711/001.jpg",
         location: "Köln, Deutschland",
         officialSite: [
@@ -884,7 +928,7 @@ const datas = [
         type: ["museum"], top: "popular",
         path: "stadtmuseum_koln",
         countryPath: "germany", regionsPath: "nrw", districtPath: "city", cityPath: "koln",
-        howMore: true, hiddenFromList: true,
+        showMore: true, hiddenFromList: true,
         fotoCard: "Germany/nrw/koln/koln-city/stadtmuseum/001.jpg",
         location: "Köln, Deutschland",
         officialSite: [
@@ -1686,7 +1730,7 @@ const datas = [
     {
         id: "bruhel_palaces",
         name: "Brühler Schlösser: Ensemble Augustusburg und Falkenlust",
-        type: ['palace', 'museum'], top: "top",
+        type: ['palace_or_castle', 'museum'], top: "top",
         path: 'bruhl_palaces',
         regionsPath: "nrw", districtPath: "koln", cityPath: "bruhl",
         fotoCard: "Germany/nrw/koln/Rhein-Erft-Kreis/bruhl/bruhl_palaces/001.jpg",
@@ -1898,7 +1942,7 @@ const datas = [
     {
         id: "burg_bachem_frechen",
         name: "Burg Bachem – historische Wasserburg in Frechen",
-        type: ['castle'], top: "local",
+        type: ['palace_or_castle'], top: "local",
         path: "burg-bachem",
         regionsPath: "nrw", districtPath: "koln", cityPath: "frechen",
         fotoCard: "Germany/nrw/koln/Rhein-Erft-Kreis/frechen/burg-bachem/Burg-Bachem_3.jpg",

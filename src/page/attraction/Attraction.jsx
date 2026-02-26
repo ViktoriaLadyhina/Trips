@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react'
+import React, { useEffect, useState } from 'react'
 import useCityFullData from '../../hooks/useCityFullData.js';
 import { useParams } from 'react-router';
 import BreadCrumbs from '../../components/breadCrumbs/BreadCrumbs.jsx';
@@ -7,8 +7,13 @@ import './Attraction.scss'
 import Gallery from '../../components/gallery/Gallery.jsx';
 import { photosByCountry } from '../../datas/fotos/index.js';
 import AttractionCardSub from '../../components/attraction/AttractionCardSub.jsx'
+import AttractionsFilters from '../../components/attractionsFilters/AttractionsFilters.jsx';
 
 const BASE_PHOTO_URL = import.meta.env.VITE_BASE_PHOTO_URL;
+
+const construction_periodTitle = { ru: "Период строительства", ua: "Період будівництва", de: "Bauzeit" }
+const founderTitle = { ru: "Основатель", ua: "Засновник", de: "Gründer" }
+const architects = { ru: "Архитекторы", ua: "Архітектори", de: "Architekten" };
 
 const Attraction = () => {
     const { districtPath, attractionsPath } = useParams();
@@ -17,6 +22,12 @@ const Attraction = () => {
     const attraction = attractions.find(a => a.path === attractionsPath);
     const photos = photosByCountry[country?.path];
     const attractionPhotos = photos?.[region?.path]?.[city?.path]?.[attractionsPath] || [];
+
+    const [filters, setFilters] = useState({
+        type: 'all',
+        unesco: 'all',
+        sort: 'rating',
+    });
 
     useEffect(() => {
         if (attraction?.name) {
@@ -39,6 +50,46 @@ const Attraction = () => {
 
     const subObjects = attraction.subObjects || [];
 
+    const filteredAttractions = attractions?.filter(attr => {
+
+        let allTypes = [...attr.type];
+
+        if (attr.subObjects?.length > 0) {
+            attr.subObjects.forEach(subId => {
+                const subAttr = attractions.find(a => a.id === subId);
+                if (subAttr) allTypes.push(...subAttr.type);
+            });
+        }
+
+        if (filters.type !== 'all' && !allTypes.includes(filters.type)) { return false; }
+        if (filters.top === 'top' && attr.top !== 'top') return false;
+        if (filters.top === 'popular' && attr.top !== 'popular') return false;
+        if (filters.top === 'local' && attr.top !== 'local') return false;
+        if (filters.unesco === 'yes' && !attr.unesco_status?.included) return false;
+        if (filters.unesco === 'no' && attr.unesco_status?.included) return false;
+
+        return true;
+    }) || [];
+
+    // --- Сортировка ---
+    const sortByFilters = (a, b) => {
+        if (filters.sort === 'name-asc') return (a?.name || '').localeCompare(b?.name || '');
+        if (filters.sort === 'name-desc') return (b?.name || '').localeCompare(a?.name || '');
+        const ratingOrder = { top: 3, popular: 2, local: 1 };
+        const aRating = ratingOrder[a.top] || 0;
+        const bRating = ratingOrder[b.top] || 0;
+        if (bRating !== aRating) return bRating - aRating;
+        return (a?.name || '').localeCompare(b?.name || '');
+    };
+
+    const sortedAttractions = [...filteredAttractions].sort(sortByFilters);
+
+    // --- Саб-объекты ---
+    const sortedSubObjects = subObjects
+        .map(subId => sortedAttractions.find(a => a.id === subId))
+        .filter(Boolean)
+        .sort(sortByFilters);
+
     // Хлебные крошки
     const crumbs = [
         { label: lang === "ru" ? "Главная" : lang === "de" ? "Startseite" : "Головна", path: "/" },
@@ -53,11 +104,6 @@ const Attraction = () => {
         },
         attraction ? { label: attraction.name } : null
     ].filter(Boolean);
-
-    const construction_periodTitle = { ru: "Период строительства", ua: "Період будівництва", de: "Bauzeit" }
-    const founderTitle = { ru: "Основатель", ua: "Засновник", de: "Gründer" }
-    const architects = { ru: "Архитекторы", ua: "Архітектори", de: "Architekten" };
-
 
     return (
         <div className="attraction">
@@ -77,7 +123,7 @@ const Attraction = () => {
                 {attraction.founder && (
                     <div className='attraction__desc-founder'>
                         <span className='attraction__desc-founder-bold'>{founderTitle[lang]}:</span>
-                        <span className='attraction__desc-founder-text'>{attraction.founder}</span>
+                        <span className='attraction__desc-founder-text'>{" "}{attraction.founder}</span>
                     </div>
                 )}
                 {attraction.construction_period && (
@@ -106,16 +152,11 @@ const Attraction = () => {
                 {subObjects.length > 0 && (
                     <section className="attraction-sub">
                         <h3>{lang === "ru" ? "Достопримечательности" : lang === "de" ? "Sehenswürdigkeiten" : "Пам'ятки"}</h3>
+                        {subObjects.length > 5 && <AttractionsFilters lang={lang} filters={filters} setFilters={setFilters} />}
 
-                        {subObjects.map(subId => {
-                            const attr = attractions.find(a => a.id === subId);
-                            if (!attr) return null; // защита от ошибок
-                            return <AttractionCardSub
-                                key={subId}
-                                attr={attr}
-                                lang={lang}
-                            />;
-                        })}
+                        {sortedSubObjects.map(attr => (
+                            <AttractionCardSub key={attr.id} attr={attr} lang={lang} />
+                        ))}
                     </section>
                 )}
 

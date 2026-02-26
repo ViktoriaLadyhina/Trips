@@ -8,6 +8,7 @@ const AttractionForm = () => {
       id: "",
       name: "",
       type: "",
+      rating: "",
       country: "",
       region: "",
       district: "",
@@ -72,6 +73,7 @@ const AttractionForm = () => {
     id: watchedFields.id,
     name: watchedFields.name,
     type: [watchedFields.type],
+    top: watchedFields.rating,
     path: watchedFields.id,
     countryPath: watchedFields.country,
     regionsPath: watchedFields.region,
@@ -303,6 +305,18 @@ const toJsModuleString = (obj, indent = 0) => {
           <option value="square">Площади</option>
         </select>
         <p className='note'>Если ничего не подходит, а надо, то добавляем в файл src/components/AttractionsFilters (в объекте attractionTypes). И не забываем обновить форму</p>
+      </div>
+
+            {/* // -------------- Рейтинг */}
+      <div className="type">
+        <label><span className="required">*</span>Рейтинг</label>
+        <select {...register("rating", { required: "Выберите рейтинг" })}>
+          <option value="">Выберите рейтинг</option>
+          <option value="top">Топовый</option>
+          <option value="popular">Популярный</option>
+          <option value="local">Локальный</option>
+        </select>
+        <p className='note'>Рейтинг выбирается строго по таблице</p>
       </div>
 
 

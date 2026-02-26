@@ -22,64 +22,69 @@ export const Fotos = {
       'rathaus-koeln': [
         { path: "Germany/nrw/koln/koln-city/rathaus-koeln/Rathaus-Köln.jpg", title: { ru: "Кёльнская ратуша (фото взято с википедии)", ua: "Кельнська ратуша (фото взято з Вікіпедії)", de: "Kölner Rathaus (Foto von Wikipedia entnommen)" } }
       ],
+      gross_st_martin_koln: [
+        { path: "Germany/nrw/koln/koln-city/gross_st_martin/001.jpg", title: { ru: "Большой Святой Мартин (фото взято с википедии)", ua: "Великий Святий Мартін (фото взято з Вікіпедії)", de: "Groß St. Martin (Foto von Wikipedia entnommen)" } },
+        { path: "Germany/nrw/koln/koln-city/gross_st_martin/002.jpg", title: { ru: "Большой Святой Мартин, 2025", ua: "Великий Святий Мартін, 2025", de: "Groß St. Martin, 2025" } }
+      ],
       'cologne-cathedral': [
-        { path: "Germany/nrw/koln/koln-city/koln-cathedral/001.jpg", title: { ru: "Кёльнский собор - 2025", ua: "Кельнський собор - 2025", de: "Kölner Dom - 2025" } },
+        { path: "Germany/nrw/koln/koln-city/koln-cathedral/001.jpg", title: { ru: "Кёльнский собор, 2025", ua: "Кельнський собор, 2025", de: "Kölner Dom, 2025" } },
 
         { path: "Germany/nrw/koln/koln-city/koln-cathedral/022.jpg", title: { ru: "Кёльнский собор. Реликвии", ua: "Кельнський собор. Реліквії", de: "Kölner Dom. Reliquien" } },
-        { path: "Germany/nrw/koln/koln-city/koln-cathedral/027.jpg", title: { ru: "Кёльнский собор. Реликвии - 1. Портал Святого Петра - 2025", ua: "Кельнський собор. Реліквії - 1. Портал Святого Петра - 2025", de: "Kölner Dom. Reliquien - 1. Portal des Heiligen Petrus - 2025" } },
-        { path: "Germany/nrw/koln/koln-city/koln-cathedral/026.jpg", title: { ru: "Кёльнский собор. Реликвии - 4. Распятие Геро", ua: "Кельнський собор. Реліквії - 4. Розп’яття Геро", de: "Kölner Dom. Reliquien - 4. Gero-Kreuz" } },
+        { path: "Germany/nrw/koln/koln-city/koln-cathedral/027.jpg", title: { ru: "Кёльнский собор. Реликвии - 1. Портал Святого Петра, 2025", ua: "Кельнський собор. Реліквії - 1. Портал Святого Петра, 2025", de: "Kölner Dom. Reliquien - 1. Portal des Heiligen Petrus, 2025" } },
+        { path: "Germany/nrw/koln/koln-city/koln-cathedral/026.jpg", title: { ru: "Кёльнский собор. Реликвии - 4. Распятие Геро, 2006", ua: "Кельнський собор. Реліквії - 4. Розп’яття Геро, 2006", de: "Kölner Dom. Reliquien - 4. Gero-Kreuz, 2006" } },
         { path: "Germany/nrw/koln/koln-city/koln-cathedral/024.jpg", title: { ru: "Кёльнский собор. Реликвии - 6. Ларь с мощами трёх волхвов (фото взято с википедии)", ua: "Кельнський собор. Реліквії - 6. Лар з мощами трьох волхвів (фото взято з Вікіпедії)", de: "Kölner Dom. Reliquien - 6. Schrein der Heiligen Drei Könige (Foto von Wikipedia entnommen)" } },
-        { path: "Germany/nrw/koln/koln-city/koln-cathedral/010.jpg", title: { ru: "Кёльнский собор. Реликвии - 7. Хоры - 2025", ua: "Кельнський собор. Реліквії - 7. Хори - 2025", de: "Kölner Dom. Reliquien - 7. Chöre - 2025" } },
-        { path: "Germany/nrw/koln/koln-city/koln-cathedral/013.jpg", title: { ru: "Кёльнский собор. Реликвии - 10. Триптих Стефана Лохнера - 2025", ua: "Кельнський собор. Реліквії - 10. Триптих Стефана Лохнера - 2025", de: "Kölner Dom. Reliquien - 10. Stephan Lochner Triptychon - 2025" } },
+        { path: "Germany/nrw/koln/koln-city/koln-cathedral/010.jpg", title: { ru: "Кёльнский собор. Реликвии - 7. Хоры, 2025", ua: "Кельнський собор. Реліквії - 7. Хори, 2025", de: "Kölner Dom. Reliquien - 7. Chöre, 2025" } },
+        { path: "Germany/nrw/koln/koln-city/koln-cathedral/013.jpg", title: { ru: "Кёльнский собор. Реликвии - 10. Триптих Стефана Лохнера, 2025", ua: "Кельнський собор. Реліквії - 10. Триптих Стефана Лохнера, 2025", de: "Kölner Dom. Reliquien - 10. Stephan Lochner Triptychon, 2025" } },
         { path: "Germany/nrw/koln/koln-city/koln-cathedral/021.jpg", title: { ru: "Кёльнский собор. Миланская Мадонна (фото взято с интернета)", ua: "Кельнський собор. Міланська Мадонна (фото взято з Інтернету)", de: "Kölner Dom. Mailänder Madonna (Foto aus dem Internet)" } },
 
-        { path: "Germany/nrw/koln/koln-city/koln-cathedral/011.jpg", title: { ru: "Кёльнский собор. Антверпенский ретабло: алтарь Агилольфа шириной 6,80 метра (1520 г.) - 2025", ua: "Кельнський собор. Антверпенський ретабль: вівтар Агілольфа завширшки 6,80 метра (1520) - 2025", de: "Kölner Dom. Antwerpener Retabel: Der 6,80 Meter breite Agilolphusaltar (1520) - 2025" } },
-        { path: "Germany/nrw/koln/koln-city/koln-cathedral/012.jpg", title: { ru: "Кёльнский собор - 2025", ua: "Кельнський собор - 2025", de: "Kölner Dom - 2025" } },
-        { path: "Germany/nrw/koln/koln-city/koln-cathedral/014.jpg", title: { ru: "Кёльнский собор - 2025", ua: "Кельнський собор - 2025", de: "Kölner Dom - 2025" } },
-        { path: "Germany/nrw/koln/koln-city/koln-cathedral/015.jpg", title: { ru: "Кёльнский собор - 2025", ua: "Кельнський собор - 2025", de: "Kölner Dom - 2025" } },
-        { path: "Germany/nrw/koln/koln-city/koln-cathedral/016.jpg", title: { ru: "Кёльнский собор - 2025", ua: "Кельнський собор - 2025", de: "Kölner Dom - 2025" } },
-        { path: "Germany/nrw/koln/koln-city/koln-cathedral/017.jpg", title: { ru: "Кёльнский собор - 2025", ua: "Кельнський собор - 2025", de: "Kölner Dom - 2025" } },
-        { path: "Germany/nrw/koln/koln-city/koln-cathedral/018.jpg", title: { ru: "Кёльнский собор - 2025", ua: "Кельнський собор - 2025", de: "Kölner Dom - 2025" } },
-        { path: "Germany/nrw/koln/koln-city/koln-cathedral/019.jpg", title: { ru: "Кёльнский собор. Святилище Агилольфа - 2025", ua: "Кельнський собор. Святилище Агілолфуса - 2025", de: "Kölner Dom. Agilolphusschrein - 2025" } },
-        { path: "Germany/nrw/koln/koln-city/koln-cathedral/020.jpg", title: { ru: "Кёльнский собор - 2025", ua: "Кельнський собор - 2025", de: "Kölner Dom - 2025" } },
+        { path: "Germany/nrw/koln/koln-city/koln-cathedral/011.jpg", title: { ru: "Кёльнский собор. Антверпенский ретабло: алтарь Агилольфа шириной 6,80 метра (1520 г.), 2025", ua: "Кельнський собор. Антверпенський ретабль: вівтар Агілольфа завширшки 6,80 метра (1520), 2025", de: "Kölner Dom. Antwerpener Retabel: Der 6,80 Meter breite Agilolphusaltar (1520), 2025" } },
+        { path: "Germany/nrw/koln/koln-city/koln-cathedral/012.jpg", title: { ru: "Кёльнский собор, 2025", ua: "Кельнський собор, 2025", de: "Kölner Dom, 2025" } },
+        { path: "Germany/nrw/koln/koln-city/koln-cathedral/014.jpg", title: { ru: "Кёльнский собор, 2025", ua: "Кельнський собор, 2025", de: "Kölner Dom, 2025" } },
+        { path: "Germany/nrw/koln/koln-city/koln-cathedral/015.jpg", title: { ru: "Кёльнский собор, 2025", ua: "Кельнський собор, 2025", de: "Kölner Dom, 2025" } },
+        { path: "Germany/nrw/koln/koln-city/koln-cathedral/016.jpg", title: { ru: "Кёльнский собор, 2025", ua: "Кельнський собор, 2025", de: "Kölner Dom, 2025" } },
+        { path: "Germany/nrw/koln/koln-city/koln-cathedral/017.jpg", title: { ru: "Кёльнский собор, 2025", ua: "Кельнський собор, 2025", de: "Kölner Dom, 2025" } },
+        { path: "Germany/nrw/koln/koln-city/koln-cathedral/018.jpg", title: { ru: "Кёльнский собор, 2025", ua: "Кельнський собор, 2025", de: "Kölner Dom, 2025" } },
+        { path: "Germany/nrw/koln/koln-city/koln-cathedral/019.jpg", title: { ru: "Кёльнский собор. Святилище Агилольфа, 2025", ua: "Кельнський собор. Святилище Агілолфуса, 2025", de: "Kölner Dom. Agilolphusschrein, 2025" } },
+        { path: "Germany/nrw/koln/koln-city/koln-cathedral/020.jpg", title: { ru: "Кёльнский собор, 2025", ua: "Кельнський собор, 2025", de: "Kölner Dom, 2025" } },
 
-        { path: "Germany/nrw/koln/koln-city/koln-cathedral/002.jpg", title: { ru: "Кёльнский собор - 2025", ua: "Кельнський собор - 2025", de: "Kölner Dom - 2025" } },
-        { path: "Germany/nrw/koln/koln-city/koln-cathedral/003.jpg", title: { ru: "Кёльнский собор - 2025", ua: "Кельнський собор - 2025", de: "Kölner Dom - 2025" } },
-        { path: "Germany/nrw/koln/koln-city/koln-cathedral/004.jpg", title: { ru: "Кёльнский собор - 2025", ua: "Кельнський собор - 2025", de: "Kölner Dom - 2025" } },
-        { path: "Germany/nrw/koln/koln-city/koln-cathedral/005.jpg", title: { ru: "Кёльнский собор - 2025", ua: "Кельнський собор - 2025", de: "Kölner Dom - 2025" } },
+        { path: "Germany/nrw/koln/koln-city/koln-cathedral/002.jpg", title: { ru: "Кёльнский собор, 2025", ua: "Кельнський собор, 2025", de: "Kölner Dom, 2025" } },
+        { path: "Germany/nrw/koln/koln-city/koln-cathedral/003.jpg", title: { ru: "Кёльнский собор, 2025", ua: "Кельнський собор, 2025", de: "Kölner Dom, 2025" } },
+        { path: "Germany/nrw/koln/koln-city/koln-cathedral/004.jpg", title: { ru: "Кёльнский собор, 2025", ua: "Кельнський собор, 2025", de: "Kölner Dom, 2025" } },
+        { path: "Germany/nrw/koln/koln-city/koln-cathedral/005.jpg", title: { ru: "Кёльнский собор, 2025", ua: "Кельнський собор, 2025", de: "Kölner Dom, 2025" } },
       ],
       guerzenich_koln: [
         { path: "Germany/nrw/koln/koln-city/guerzenich_koln/001.jpg", title: { ru: "Гюрцених, 2026", ua: "Гюрценіх, 2026", de: "Gürzenich, 2026" } },
       ],
       'roemisch-germanisches-museum': [
-        { path: "Germany/nrw/koln/koln-city/roemisch-germanisches-museum/001.jpg", title: { ru: "Римско-германский музей - 2025", ua: "Римсько-германський музей - 2025", de: "Römisch-Germanisches Museum - 2025" } }
+        { path: "Germany/nrw/koln/koln-city/roemisch-germanisches-museum/001.jpg", title: { ru: "Римско-германский музей, 2025", ua: "Римсько-германський музей, 2025", de: "Römisch-Germanisches Museum, 2025" } }
       ],
       'farina-duftmuseum': [
-        { path: "Germany/nrw/koln/koln-city/farina-duftmuseum/001.jpg", title: { ru: "Музей духов в доме Фарина - 2025", ua: "Музей парфумів у домі Фаріна - 2025", de: "Duftmuseum im Farina-Haus - 2025" } }
+        { path: "Germany/nrw/koln/koln-city/farina-duftmuseum/001.jpg", title: { ru: "Музей духов в доме Фарина, 2025", ua: "Музей парфумів у домі Фаріна, 2025", de: "Duftmuseum im Farina-Haus, 2025" } }
       ],
       'museum-ludwig': [
-        { path: "Germany/nrw/koln/koln-city/museum-ludwig/001.jpg", title: { ru: "Музей Людвига - 2025", ua: "Музей Людвіга - 2025", de: "Museum Ludwig - 2025" } },
-        { path: "Germany/nrw/koln/koln-city/museum-ludwig/002.jpg", title: { ru: "Музей Людвига - 2025", ua: "Музей Людвіга - 2025", de: "Museum Ludwig - 2025" } }
+        { path: "Germany/nrw/koln/koln-city/museum-ludwig/001.jpg", title: { ru: "Музей Людвига, 2025", ua: "Музей Людвіга, 2025", de: "Museum Ludwig, 2025" } },
+        { path: "Germany/nrw/koln/koln-city/museum-ludwig/002.jpg", title: { ru: "Музей Людвига, 2025", ua: "Музей Людвіга, 2025", de: "Museum Ludwig, 2025" } }
       ],
       miqua: [
         { path: "Germany/nrw/koln/koln-city/miqua/001.jpg", title: { ru: "Музей в археологическом квартале Кёльна – MiQua (фото взято с интернета)", ua: "Музей в археологічному кварталі Кельна – MiQua (фото взято з Інтернету)", de: "Museum im archäologischen Viertel Köln – MiQua (Foto aus dem Internet)" } },
       ],
       schokoladenmuseum: [
         { path: "Germany/nrw/koln/koln-city/schokoladenmuseum/001.jpg", title: { ru: "Музей шоколада (фото взято с википедии)", ua: "Музей шоколаду (фото взято з Вікіпедії)", de: "Schokoladenmuseum (Foto von Wikipedia entnommen)" } },
+        { path: "Germany/nrw/koln/koln-city/schokoladenmuseum/002.jpg", title: { ru: "Музей шоколада, 2026", ua: "Музей шоколаду, 2026", de: "Schokoladenmuseum, 2026" } },
       ],
       wallraf_richartz_museum: [
-        { path: "Germany/nrw/koln/koln-city/wallraf_richartz_museum/001.jpg", title: { ru: "Музей Вальрафа-Рихарца - 2025", ua: "Музей Вальрафа-Ріхарцa - 2025", de: "Wallraf-Richartz-Museum - 2025" } }
+        { path: "Germany/nrw/koln/koln-city/wallraf_richartz_museum/001.jpg", title: { ru: "Музей Вальрафа-Рихарца, 2025", ua: "Музей Вальрафа-Ріхарцa, 2025", de: "Wallraf-Richartz-Museum, 2025" } }
       ],
       forstbotanischer_garten: [
         { path: "Germany/nrw/koln/koln-city/forstbotanischer_garten/001.jpg", title: { ru: "Ботанический сад и лесопарк (фото взято с википедии)", ua: "Ботанічний сад і лісопарк (фото взято з Вікіпедії)", de: "Forstbotanischer Garten (Foto von Wikipedia entnommen)" } }
       ],
       koln_bridges: [
         { path: "Germany/nrw/koln/koln-city/koln_bridges/004.jpg", title: { ru: "4. Мост Мюльхаймер (фото взято с интернета)", ua: "4. Міст Мюльхаймер (фото взято з Інтернету)", de: "4. Mülheimer Brücke (Foto aus dem Internet)" } },
-        { path: "Germany/nrw/koln/koln-city/koln_bridges/001.jpg", title: { ru: "6. Мост Гогенцоллернов - 2025", ua: "6. Міст Гогенцоллернів - 2025", de: "6. Hohenzollernbrücke - 2025" } },
-        { path: "Germany/nrw/koln/koln-city/koln_bridges/005.jpg", title: { ru: "6. Мост Гогенцоллернов - 2025", ua: "6. Міст Гогенцоллернів - 2025", de: "6. Hohenzollernbrücke - 2025" } },
-        { path: "Germany/nrw/koln/koln-city/koln_bridges/006.jpg", title: { ru: "7. Мост Дойцер - 2025", ua: "7. Міст Дойцер - 2025", de: "7. Deutzer Brücke - 2025" } },
+        { path: "Germany/nrw/koln/koln-city/koln_bridges/001.jpg", title: { ru: "6. Мост Гогенцоллернов, 2025", ua: "6. Міст Гогенцоллернів, 2025", de: "6. Hohenzollernbrücke, 2025" } },
+        { path: "Germany/nrw/koln/koln-city/koln_bridges/005.jpg", title: { ru: "6. Мост Гогенцоллернов, 2025", ua: "6. Міст Гогенцоллернів, 2025", de: "6. Hohenzollernbrücke, 2025" } },
+        { path: "Germany/nrw/koln/koln-city/koln_bridges/006.jpg", title: { ru: "7. Мост Дойцер, 2025", ua: "7. Міст Дойцер, 2025", de: "7. Deutzer Brücke, 2025" } },
         { path: "Germany/nrw/koln/koln-city/koln_bridges/008.jpg", title: { ru: "8. Южный мост (фото взято с интернета)", ua: "8. Південний міст (фото взято з Інтернету)", de: "8. Südbrücke (Foto aus dem Internet)" } },
-        { path: "Germany/nrw/koln/koln-city/koln_bridges/003.jpg", title: { ru: "9. Мост Северинс - 2025", ua: "9. Міст Северинс - 2025", de: "9. Severinsbrücke - 2025" } },
+        { path: "Germany/nrw/koln/koln-city/koln_bridges/003.jpg", title: { ru: "9. Мост Северинс, 2025", ua: "9. Міст Северинс, 2025", de: "9. Severinsbrücke, 2025" } },
         { path: "Germany/nrw/koln/koln-city/koln_bridges/002.jpeg", title: { ru: "10. Мост Роденкирхенер (фото взято с интернета)", ua: "10. Міст Роденкірхенер (фото взято з Інтернету)", de: "10. Rodenkirchener Brücke (Foto aus dem Internet)" } }
       ],
       flora_garten_koln: [
@@ -147,66 +152,70 @@ export const Fotos = {
       ],
       altstadt_koln: [
         { path: "Germany/nrw/koln/koln-city/altstadt/001.jpg", title: { ru: "Старый город Кёльна, 2026", ua: "Старе місто Кельна, 2026", de: "Altstadt Köln, 2026" } },
-        { path: "Germany/nrw/koln/koln-city/altstadt/002.jpg", title: { ru: "Старый город Кёльна, 2025", ua: "Старе місто Кельна, 2025", de: "Altstadt Köln, 2025" } },
+        { path: "Germany/nrw/koln/koln-city/altstadt/002.jpg", title: { ru: "Старый город Кёльна, 2026", ua: "Старе місто Кельна, 2026", de: "Altstadt Köln, 2026" } },
         { path: "Germany/nrw/koln/koln-city/altstadt/003.jpg", title: { ru: "Старый город Кёльна, 2025", ua: "Старе місто Кельна, 2025", de: "Altstadt Köln, 2025" } },
         { path: "Germany/nrw/koln/koln-city/altstadt/004.jpg", title: { ru: "Старый город Кёльна, 2024", ua: "Старе місто Кельна, 2024", de: "Altstadt Köln, 2024" } },
         { path: "Germany/nrw/koln/koln-city/altstadt/005.jpg", title: { ru: "Старый город Кёльна, 2024", ua: "Старе місто Кельна, 2024", de: "Altstadt Köln, 2024" } },
-        { path: "Germany/nrw/koln/koln-city/koln-cathedral/001.jpg", title: { ru: "Кёльнский собор - 2025", ua: "Кельнський собор - 2025", de: "Kölner Dom - 2025" } },
+        { path: "Germany/nrw/koln/koln-city/altstadt/006.jpg", title: { ru: "Старый город Кёльна, 2022", ua: "Старе місто Кельна, 2022", de: "Altstadt Köln, 2022" } },
+        { path: "Germany/nrw/koln/koln-city/altstadt/007.jpg", title: { ru: "Старый город Кёльна, 2022", ua: "Старе місто Кельна, 2022", de: "Altstadt Köln, 2022" } },
+        { path: "Germany/nrw/koln/koln-city/altstadt/008.jpg", title: { ru: "Старый город Кёльна, 2022", ua: "Старе місто Кельна, 2022", de: "Altstadt Köln, 2022" } },
+        { path: "Germany/nrw/koln/koln-city/koln-cathedral/001.jpg", title: { ru: "Кёльнский собор, 2025", ua: "Кельнський собор, 2025", de: "Kölner Dom, 2025" } },
         { path: "Germany/nrw/koln/koln-city/guerzenich_koln/001.jpg", title: { ru: "Гюрцених, 2026", ua: "Гюрценіх, 2026", de: "Gürzenich, 2026" } },
-        { path: "Germany/nrw/koln/koln-city/roemisch-germanisches-museum/001.jpg", title: { ru: "Римско-германский музей - 2025", ua: "Римсько-германський музей - 2025", de: "Römisch-Germanisches Museum - 2025" } },
-        { path: "Germany/nrw/koln/koln-city/farina-duftmuseum/001.jpg", title: { ru: "Музей духов в доме Фарина - 2025", ua: "Музей парфумів у домі Фаріна - 2025", de: "Duftmuseum im Farina-Haus - 2025" } },
-        { path: "Germany/nrw/koln/koln-city/museum-ludwig/001.jpg", title: { ru: "Музей Людвига - 2025", ua: "Музей Людвіга - 2025", de: "Museum Ludwig - 2025" } },
-        { path: "Germany/nrw/koln/koln-city/wallraf_richartz_museum/001.jpg", title: { ru: "Музей Вальрафа-Рихарца - 2025", ua: "Музей Вальрафа-Ріхарцa - 2025", de: "Wallraf-Richartz-Museum - 2025" } },
+        { path: "Germany/nrw/koln/koln-city/roemisch-germanisches-museum/001.jpg", title: { ru: "Римско-германский музей, 2025", ua: "Римсько-германський музей, 2025", de: "Römisch-Germanisches Museum, 2025" } },
+        { path: "Germany/nrw/koln/koln-city/farina-duftmuseum/001.jpg", title: { ru: "Музей духов в доме Фарина, 2025", ua: "Музей парфумів у домі Фаріна, 2025", de: "Duftmuseum im Farina-Haus, 2025" } },
+        { path: "Germany/nrw/koln/koln-city/museum-ludwig/001.jpg", title: { ru: "Музей Людвига, 2025", ua: "Музей Людвіга, 2025", de: "Museum Ludwig, 2025" } },
+        { path: "Germany/nrw/koln/koln-city/wallraf_richartz_museum/001.jpg", title: { ru: "Музей Вальрафа-Рихарца, 2025", ua: "Музей Вальрафа-Ріхарцa, 2025", de: "Wallraf-Richartz-Museum, 2025" } },
+        { path: "Germany/nrw/koln/koln-city/gross_st_martin/002.jpg", title: { ru: "Большой Святой Мартин, 2025", ua: "Великий Святий Мартін, 2025", de: "Groß St. Martin, 2025" } },
       ]
     },
     bruhl: {
       gallery: [
-        { path: "Germany/nrw/koln/Rhein-Erft-Kreis/bruhl/bruhel_palaces/013.jpg", title: { ru: "Дворцы Брюля: Аугустусбург  - 2022", ua: "Палаци Брюля: Аугустусбург - 2022", de: "Brühler Schlösser: Augustusburg - 2022" } },
+        { path: "Germany/nrw/koln/Rhein-Erft-Kreis/bruhl/bruhel_palaces/013.jpg", title: { ru: "Дворцы Брюля: Аугустусбург, 2022", ua: "Палаци Брюля: Аугустусбург, 2022", de: "Brühler Schlösser: Augustusburg, 2022" } },
       ],
       'phantasialand': [
-        { path: "Germany/nrw/koln/Rhein-Erft-Kreis/bruhl/phantasialand/001.jpg", title: { ru: "Парк атракционов «Фантазия Ленд» - 2006", ua: "Парк атракціонів «Фантазія Ленд» - 2006", de: "Freizeitpark «Fantasia Land» - 2006" } },
-        { path: "Germany/nrw/koln/Rhein-Erft-Kreis/bruhl/phantasialand/002.jpg", title: { ru: "Скала-череп - 2006", ua: "Скеля-череп - 2006", de: "Schädel-Felsen - 2006" } },
-        { path: "Germany/nrw/koln/Rhein-Erft-Kreis/bruhl/phantasialand/003.jpg", title: { ru: "Зал с Кинг-конгом - 2006", ua: "Зала з Кінг-Конгом - 2006", de: "Halle mit King Kong - 2006" } },
-        { path: "Germany/nrw/koln/Rhein-Erft-Kreis/bruhl/phantasialand/004.jpg", title: { ru: "Бременские музыканты - 2006", ua: "Бременські музиканти - 2006", de: "Bremer Stadtmusikanten - 2006" } },
-        { path: "Germany/nrw/koln/Rhein-Erft-Kreis/bruhl/phantasialand/005.jpg", title: { ru: "Экспозиция китайский дворик - 2006", ua: "Експозиція китайський двір - 2006", de: "Ausstellung Chinesischer Hof - 2006" } },
-        { path: "Germany/nrw/koln/Rhein-Erft-Kreis/bruhl/phantasialand/006.jpg", title: { ru: "Атракцион «Лотос» - 2006", ua: "Атракціон «Лотос» - 2006", de: "Attraktion «Lotus» - 2006" } },
-        { path: "Germany/nrw/koln/Rhein-Erft-Kreis/bruhl/phantasialand/007.jpg", title: { ru: "Центральная площадь - 2006", ua: "Центральна площа - 2006", de: "Zentraler Platz - 2006" } },
-        { path: "Germany/nrw/koln/Rhein-Erft-Kreis/bruhl/phantasialand/008.jpg", title: { ru: "Атракцион «Летучая мышь» - 2006", ua: "Атракціон «Летюча миша» - 2006", de: "Attraktion «Fledermaus» - 2006" } },
-        { path: "Germany/nrw/koln/Rhein-Erft-Kreis/bruhl/phantasialand/009.jpg", title: { ru: "Башня «Свободное падение» - 2006", ua: "Вежа «Вільне падіння» - 2006", de: "Turm «Freier Fall» - 2006" } },
-        { path: "Germany/nrw/koln/Rhein-Erft-Kreis/bruhl/phantasialand/010.jpg", title: { ru: "Экспозиция каменоломня - 2006", ua: "Експозиція кар'єру - 2006", de: "Ausstellung Steinbruch - 2006" } },
-        { path: "Germany/nrw/koln/Rhein-Erft-Kreis/bruhl/phantasialand/011.jpg", title: { ru: "Экспозиция петушинные бои - 2006", ua: "Експозиція півнячі бої - 2006", de: "Ausstellung Hahnenkämpfe - 2006" } },
-        { path: "Germany/nrw/koln/Rhein-Erft-Kreis/bruhl/phantasialand/012.jpg", title: { ru: "Экспозиция салун - 2006", ua: "Експозиція салун - 2006", de: "Ausstellung Saloon - 2006" } },
-        { path: "Germany/nrw/koln/Rhein-Erft-Kreis/bruhl/phantasialand/013.jpg", title: { ru: "Наша «Орбита» - отдыхает - 2006", ua: "Наша «Орбіта» - відпочиває - 2006", de: "Unsere «Orbita» - entspannt - 2006" } },
-        { path: "Germany/nrw/koln/Rhein-Erft-Kreis/bruhl/phantasialand/014.jpg", title: { ru: "Экспозиция корабль-призрак - 2006", ua: "Експозиція корабель-привид - 2006", de: "Ausstellung Geisterschiff - 2006" } },
-        { path: "Germany/nrw/koln/Rhein-Erft-Kreis/bruhl/phantasialand/015.jpg", title: { ru: "Экспозиция китайская императрица - 2006", ua: "Експозиція китайська імператриця - 2006", de: "Ausstellung Chinesische Kaiserin - 2006" } },
-        { path: "Germany/nrw/koln/Rhein-Erft-Kreis/bruhl/phantasialand/016.jpg", title: { ru: "Экспозиция китайский император - 2006", ua: "Експозиція китайський імператор - 2006", de: "Ausstellung Chinesischer Kaiser - 2006" } },
-        { path: "Germany/nrw/koln/Rhein-Erft-Kreis/bruhl/phantasialand/017.jpg", title: { ru: "Китайский квартал парка - 2006", ua: "Китайський квартал парку - 2006", de: "Chinesisches Viertel im Park - 2006" } },
-        { path: "Germany/nrw/koln/Rhein-Erft-Kreis/bruhl/phantasialand/018.jpg", title: { ru: "Инсталляция панда - 2006", ua: "Інсталяція панда - 2006", de: "Installation Panda - 2006" } },
-        { path: "Germany/nrw/koln/Rhein-Erft-Kreis/bruhl/phantasialand/019.jpg", title: { ru: "Американские горки - 2006", ua: "Американські гірки - 2006", de: "Achterbahn - 2006" } },
-        { path: "Germany/nrw/koln/Rhein-Erft-Kreis/bruhl/phantasialand/020.jpg", title: { ru: "Пруд с утками и карпами - 2006", ua: "Став з качками та коропами - 2006", de: "Teich mit Enten und Karpfen - 2006" } }
+        { path: "Germany/nrw/koln/Rhein-Erft-Kreis/bruhl/phantasialand/001.jpg", title: { ru: "Парк атракционов «Фантазия Ленд», 2006", ua: "Парк атракціонів «Фантазія Ленд», 2006", de: "Freizeitpark «Fantasia Land», 2006" } },
+        { path: "Germany/nrw/koln/Rhein-Erft-Kreis/bruhl/phantasialand/002.jpg", title: { ru: "Скала-череп, 2006", ua: "Скеля-череп, 2006", de: "Schädel-Felsen, 2006" } },
+        { path: "Germany/nrw/koln/Rhein-Erft-Kreis/bruhl/phantasialand/003.jpg", title: { ru: "Зал с Кинг-конгом, 2006", ua: "Зала з Кінг-Конгом, 2006", de: "Halle mit King Kong, 2006" } },
+        { path: "Germany/nrw/koln/Rhein-Erft-Kreis/bruhl/phantasialand/004.jpg", title: { ru: "Бременские музыканты, 2006", ua: "Бременські музиканти, 2006", de: "Bremer Stadtmusikanten, 2006" } },
+        { path: "Germany/nrw/koln/Rhein-Erft-Kreis/bruhl/phantasialand/005.jpg", title: { ru: "Экспозиция китайский дворик, 2006", ua: "Експозиція китайський двір, 2006", de: "Ausstellung Chinesischer Hof, 2006" } },
+        { path: "Germany/nrw/koln/Rhein-Erft-Kreis/bruhl/phantasialand/006.jpg", title: { ru: "Атракцион «Лотос», 2006", ua: "Атракціон «Лотос», 2006", de: "Attraktion «Lotus», 2006" } },
+        { path: "Germany/nrw/koln/Rhein-Erft-Kreis/bruhl/phantasialand/007.jpg", title: { ru: "Центральная площадь, 2006", ua: "Центральна площа, 2006", de: "Zentraler Platz, 2006" } },
+        { path: "Germany/nrw/koln/Rhein-Erft-Kreis/bruhl/phantasialand/008.jpg", title: { ru: "Атракцион «Летучая мышь», 2006", ua: "Атракціон «Летюча миша», 2006", de: "Attraktion «Fledermaus», 2006" } },
+        { path: "Germany/nrw/koln/Rhein-Erft-Kreis/bruhl/phantasialand/009.jpg", title: { ru: "Башня «Свободное падение», 2006", ua: "Вежа «Вільне падіння», 2006", de: "Turm «Freier Fall», 2006" } },
+        { path: "Germany/nrw/koln/Rhein-Erft-Kreis/bruhl/phantasialand/010.jpg", title: { ru: "Экспозиция каменоломня, 2006", ua: "Експозиція кар'єру, 2006", de: "Ausstellung Steinbruch, 2006" } },
+        { path: "Germany/nrw/koln/Rhein-Erft-Kreis/bruhl/phantasialand/011.jpg", title: { ru: "Экспозиция петушинные бои, 2006", ua: "Експозиція півнячі бої, 2006", de: "Ausstellung Hahnenkämpfe, 2006" } },
+        { path: "Germany/nrw/koln/Rhein-Erft-Kreis/bruhl/phantasialand/012.jpg", title: { ru: "Экспозиция салун, 2006", ua: "Експозиція салун, 2006", de: "Ausstellung Saloon, 2006" } },
+        { path: "Germany/nrw/koln/Rhein-Erft-Kreis/bruhl/phantasialand/013.jpg", title: { ru: "Наша «Орбита» - отдыхает, 2006", ua: "Наша «Орбіта» - відпочиває, 2006", de: "Unsere «Orbita» - entspannt, 2006" } },
+        { path: "Germany/nrw/koln/Rhein-Erft-Kreis/bruhl/phantasialand/014.jpg", title: { ru: "Экспозиция корабль-призрак, 2006", ua: "Експозиція корабель-привид, 2006", de: "Ausstellung Geisterschiff, 2006" } },
+        { path: "Germany/nrw/koln/Rhein-Erft-Kreis/bruhl/phantasialand/015.jpg", title: { ru: "Экспозиция китайская императрица, 2006", ua: "Експозиція китайська імператриця,  2006", de: "Ausstellung Chinesische Kaiserin, 2006" } },
+        { path: "Germany/nrw/koln/Rhein-Erft-Kreis/bruhl/phantasialand/016.jpg", title: { ru: "Экспозиция китайский император, 2006", ua: "Експозиція китайський імператор, 2006", de: "Ausstellung Chinesischer Kaiser, 2006" } },
+        { path: "Germany/nrw/koln/Rhein-Erft-Kreis/bruhl/phantasialand/017.jpg", title: { ru: "Китайский квартал парка, 2006", ua: "Китайський квартал парку, 2006", de: "Chinesisches Viertel im Park, 2006" } },
+        { path: "Germany/nrw/koln/Rhein-Erft-Kreis/bruhl/phantasialand/018.jpg", title: { ru: "Инсталляция панда, 2006", ua: "Інсталяція панда, 2006", de: "Installation Panda, 2006" } },
+        { path: "Germany/nrw/koln/Rhein-Erft-Kreis/bruhl/phantasialand/019.jpg", title: { ru: "Американские горки, 2006", ua: "Американські гірки, 2006", de: "Achterbahn, 2006" } },
+        { path: "Germany/nrw/koln/Rhein-Erft-Kreis/bruhl/phantasialand/020.jpg", title: { ru: "Пруд с утками и карпами, 2006", ua: "Став з качками та коропами, 2006", de: "Teich mit Enten und Karpfen, 2006" } }
       ],
       "max-ernst-museum": [
         { path: "Germany/nrw/koln/Rhein-Erft-Kreis/bruhl/max_ernst_museum/Max-Ernst-Museum.jpg", title: { ru: "Музей Макса Эрнста (фото взято с интернета)", ua: "Музей Макса Ернста (фото взято з Інтернету)", de: "Max Ernst Museum (Foto aus dem Internet)" } }
       ],
       bruhl_palaces: [
-        { path: "Germany/nrw/koln/Rhein-Erft-Kreis/bruhl/bruhl_palaces/001.jpg", title: { ru: "Дворцы Брюля: Аугустусбург  - 2023", ua: "Палаци Брюля: Аугустусбург - 2023", de: "Brühler Schlösser: Augustusburg - 2023" } },
-        { path: "Germany/nrw/koln/Rhein-Erft-Kreis/bruhl/bruhl_palaces/013.jpg", title: { ru: "Дворцы Брюля: Аугустусбург  - 2022", ua: "Палаци Брюля: Аугустусбург - 2022", de: "Brühler Schlösser: Augustusburg - 2022" } },
-        { path: "Germany/nrw/koln/Rhein-Erft-Kreis/bruhl/bruhl_palaces/014.jpg", title: { ru: "Дворцы Брюля: Аугустусбург  - 2022", ua: "Палаци Брюля: Аугустусбург - 2022", de: "Brühler Schlösser: Augustusburg - 2022" } },
-        { path: "Germany/nrw/koln/Rhein-Erft-Kreis/bruhl/bruhl_palaces/002.jpg", title: { ru: "Дворцы Брюля: Аугустусбург  - 2023", ua: "Палаци Брюля: Аугустусбург - 2023", de: "Brühler Schlösser: Augustusburg - 2023" } },
-        { path: "Germany/nrw/koln/Rhein-Erft-Kreis/bruhl/bruhl_palaces/003.jpg", title: { ru: "Дворцы Брюля: Аугустусбург  - 2023", ua: "Палаци Брюля: Аугустусбург - 2023", de: "Brühler Schlösser: Augustusburg - 2023" } },
-        { path: "Germany/nrw/koln/Rhein-Erft-Kreis/bruhl/bruhl_palaces/004.jpg", title: { ru: "Дворцы Брюля: Аугустусбург  - 2023", ua: "Палаци Брюля: Аугустусбург - 2023", de: "Brühler Schlösser: Augustusburg - 2023" } },
-        { path: "Germany/nrw/koln/Rhein-Erft-Kreis/bruhl/bruhl_palaces/005.jpg", title: { ru: "Дворцы Брюля: Аугустусбург  - 2023", ua: "Палаци Брюля: Аугустусбург - 2023", de: "Brühler Schlösser: Augustusburg - 2023" } },
-        { path: "Germany/nrw/koln/Rhein-Erft-Kreis/bruhl/bruhl_palaces/006.jpg", title: { ru: "Дворцы Брюля: Аугустусбург  - 2023", ua: "Палаци Брюля: Аугустусбург - 2023", de: "Brühler Schlösser: Augustusburg - 2023" } },
-        { path: "Germany/nrw/koln/Rhein-Erft-Kreis/bruhl/bruhl_palaces/007.jpg", title: { ru: "Дворцы Брюля: Аугустусбург  - 2023", ua: "Палаци Брюля: Аугустусбург - 2023", de: "Brühler Schlösser: Augustusburg - 2023" } },
-        { path: "Germany/nrw/koln/Rhein-Erft-Kreis/bruhl/bruhl_palaces/008.jpg", title: { ru: "Дворцы Брюля: Аугустусбург  - 2023", ua: "Палаци Брюля: Аугустусбург - 2023", de: "Brühler Schlösser: Augustusburg - 2023" } },
-        { path: "Germany/nrw/koln/Rhein-Erft-Kreis/bruhl/bruhl_palaces/009.jpg", title: { ru: "Дворцы Брюля: Аугустусбург  - 2023", ua: "Палаци Брюля: Аугустусбург - 2023", de: "Brühler Schlösser: Augustusburg - 2023" } },
-        { path: "Germany/nrw/koln/Rhein-Erft-Kreis/bruhl/bruhl_palaces/010.jpg", title: { ru: "Дворцы Брюля: Фалькенлюст  - 2023", ua: "Палаци Брюля: Фалькенлюст - 2023", de: "Brühler Schlösser: Falkenlust - 2023" } },
-        { path: "Germany/nrw/koln/Rhein-Erft-Kreis/bruhl/bruhl_palaces/011.jpg", title: { ru: "Дворцы Брюля: Фалькенлюст  - 2023", ua: "Палаци Брюля: Фалькенлюст - 2023", de: "Brühler Schlösser: Falkenlust - 2023" } },
-        { path: "Germany/nrw/koln/Rhein-Erft-Kreis/bruhl/bruhl_palaces/012.jpg", title: { ru: "Дворцы Брюля: Фалькенлюст  - 2023", ua: "Палаци Брюля: Фалькенлюст - 2023", de: "Brühler Schlösser: Falkenlust - 2023" } },
-        { path: "Germany/nrw/koln/Rhein-Erft-Kreis/bruhl/bruhl_palaces/015.jpg", title: { ru: "Парк дворцов Брюля  - 2022", ua: "Парк палаців Брюля - 2022", de: "Brühlsche Palastgärten - 2022" } },
-        { path: "Germany/nrw/koln/Rhein-Erft-Kreis/bruhl/bruhl_palaces/016.jpg", title: { ru: "Парк дворцов Брюля  - 2022", ua: "Парк палаців Брюля - 2022", de: "Brühlsche Palastgärten - 2022" } },
-        { path: "Germany/nrw/koln/Rhein-Erft-Kreis/bruhl/bruhl_palaces/017.jpg", title: { ru: "Парк дворцов Брюля  - 2022", ua: "Парк палаців Брюля - 2022", de: "Brühlsche Palastgärten - 2022" } },
-        { path: "Germany/nrw/koln/Rhein-Erft-Kreis/bruhl/bruhl_palaces/018.jpg", title: { ru: "Дворцы Брюля: парк  - 2022", ua: "Парк палаців Брюля - 2022", de: "Brühlsche Palastgärten - 2022" } },
+        { path: "Germany/nrw/koln/Rhein-Erft-Kreis/bruhl/bruhl_palaces/001.jpg", title: { ru: "Дворцы Брюля: Аугустусбург, 2023", ua: "Палаци Брюля: Аугустусбург, 2023", de: "Brühler Schlösser: Augustusburg, 2023" } },
+        { path: "Germany/nrw/koln/Rhein-Erft-Kreis/bruhl/bruhl_palaces/013.jpg", title: { ru: "Дворцы Брюля: Аугустусбург, 2022", ua: "Палаци Брюля: Аугустусбург, 2022", de: "Brühler Schlösser: Augustusburg, 2022" } },
+        { path: "Germany/nrw/koln/Rhein-Erft-Kreis/bruhl/bruhl_palaces/014.jpg", title: { ru: "Дворцы Брюля: Аугустусбург, 2022", ua: "Палаци Брюля: Аугустусбург, 2022", de: "Brühler Schlösser: Augustusburg, 2022" } },
+        { path: "Germany/nrw/koln/Rhein-Erft-Kreis/bruhl/bruhl_palaces/002.jpg", title: { ru: "Дворцы Брюля: Аугустусбург, 2023", ua: "Палаци Брюля: Аугустусбург, 2023", de: "Brühler Schlösser: Augustusburg, 2023" } },
+        { path: "Germany/nrw/koln/Rhein-Erft-Kreis/bruhl/bruhl_palaces/003.jpg", title: { ru: "Дворцы Брюля: Аугустусбург, 2023", ua: "Палаци Брюля: Аугустусбург, 2023", de: "Brühler Schlösser: Augustusburg, 2023" } },
+        { path: "Germany/nrw/koln/Rhein-Erft-Kreis/bruhl/bruhl_palaces/004.jpg", title: { ru: "Дворцы Брюля: Аугустусбург, 2023", ua: "Палаци Брюля: Аугустусбург, 2023", de: "Brühler Schlösser: Augustusburg, 2023" } },
+        { path: "Germany/nrw/koln/Rhein-Erft-Kreis/bruhl/bruhl_palaces/005.jpg", title: { ru: "Дворцы Брюля: Аугустусбург, 2023", ua: "Палаци Брюля: Аугустусбург, 2023", de: "Brühler Schlösser: Augustusburg, 2023" } },
+        { path: "Germany/nrw/koln/Rhein-Erft-Kreis/bruhl/bruhl_palaces/006.jpg", title: { ru: "Дворцы Брюля: Аугустусбург, 2023", ua: "Палаци Брюля: Аугустусбург, 2023", de: "Brühler Schlösser: Augustusburg, 2023" } },
+        { path: "Germany/nrw/koln/Rhein-Erft-Kreis/bruhl/bruhl_palaces/007.jpg", title: { ru: "Дворцы Брюля: Аугустусбург, 2023", ua: "Палаци Брюля: Аугустусбург, 2023", de: "Brühler Schlösser: Augustusburg, 2023" } },
+        { path: "Germany/nrw/koln/Rhein-Erft-Kreis/bruhl/bruhl_palaces/008.jpg", title: { ru: "Дворцы Брюля: Аугустусбург, 2023", ua: "Палаци Брюля: Аугустусбург, 2023", de: "Brühler Schlösser: Augustusburg, 2023" } },
+        { path: "Germany/nrw/koln/Rhein-Erft-Kreis/bruhl/bruhl_palaces/009.jpg", title: { ru: "Дворцы Брюля: Аугустусбург, 2023", ua: "Палаци Брюля: Аугустусбург, 2023", de: "Brühler Schlösser: Augustusburg, 2023" } },
+        { path: "Germany/nrw/koln/Rhein-Erft-Kreis/bruhl/bruhl_palaces/010.jpg", title: { ru: "Дворцы Брюля: Фалькенлюст, 2023", ua: "Палаци Брюля: Фалькенлюст, 2023", de: "Brühler Schlösser: Falkenlust, 2023" } },
+        { path: "Germany/nrw/koln/Rhein-Erft-Kreis/bruhl/bruhl_palaces/011.jpg", title: { ru: "Дворцы Брюля: Фалькенлюст, 2023", ua: "Палаци Брюля: Фалькенлюст, 2023", de:"Brühler Schlösser:Falkenlust, 2023" } },
+        { path: "Germany/nrw/koln/Rhein-Erft-Kreis/bruhl/bruhl_palaces/012.jpg", title: { ru: "Дворцы Брюля: Фалькенлюст, 2023", ua: "Палаци Брюля: Фалькенлюст, 2023", de: "Brühler Schlösser: Falkenlust, 2023" } },
+        { path: "Germany/nrw/koln/Rhein-Erft-Kreis/bruhl/bruhl_palaces/015.jpg", title: { ru: "Парк дворцов Брюля, 2022", ua: "Парк палаців Брюля, 2022", de: "Brühlsche Palastgärten, 2022" } },
+        { path: "Germany/nrw/koln/Rhein-Erft-Kreis/bruhl/bruhl_palaces/016.jpg", title: { ru: "Парк дворцов Брюля, 2022", ua: "Парк палаців Брюля, 2022", de: "Brühlsche Palastgärten, 2022" } },
+        { path: "Germany/nrw/koln/Rhein-Erft-Kreis/bruhl/bruhl_palaces/017.jpg", title: { ru: "Парк дворцов Брюля, 2022", ua: "Парк палаців Брюля, 2022", de: "Brühlsche Palastgärten, 2022" } },
+        { path: "Germany/nrw/koln/Rhein-Erft-Kreis/bruhl/bruhl_palaces/018.jpg", title: { ru: "Дворцы Брюля: парк, 2023", ua: "Парк палаців Брюля, 2023", de: "Brühlsche Palastgärten, 2023" } },
       ]
     },
     frechen: {
@@ -349,11 +358,11 @@ export const Fotos = {
     // arnsberg
     luedenscheid: {
       gallery: [
-        { path: "Germany/nrw/arnsberg/Märkischer-Kreis/luedenscheid/001.JPG", title: { ru: "Люденшайд - 2006", ua: "Люденшайд - 2006", de: "Lüdenscheid - 2006" } },
-        { path: "Germany/nrw/arnsberg/Märkischer-Kreis/luedenscheid/002.JPG", title: { ru: "Люденшайд - 2006", ua: "Люденшайд - 2006", de: "Lüdenscheid - 2006" } },
+        { path: "Germany/nrw/arnsberg/Märkischer-Kreis/luedenscheid/001.JPG", title: { ru: "Люденшайд, 2006", ua: "Люденшайд, 2006", de: "Lüdenscheid, 2006" } },
+        { path: "Germany/nrw/arnsberg/Märkischer-Kreis/luedenscheid/002.JPG", title: { ru: "Люденшайд, 2006", ua: "Люденшайд, 2006", de: "Lüdenscheid, 2006" } },
       ],
       altstadt_luedenscheid: [
-        { path: "Germany/nrw/arnsberg/Märkischer-Kreis/luedenscheid/001.JPG", title: { ru: "Люденшайд - 2006", ua: "Люденшайд - 2006", de: "Lüdenscheid - 2006" } },
+        { path: "Germany/nrw/arnsberg/Märkischer-Kreis/luedenscheid/001.JPG", title: { ru: "Люденшайд, 2006", ua: "Люденшайд, 2006", de: "Lüdenscheid, 2006" } },
         { path: "Germany/nrw/arnsberg/Märkischer-Kreis/luedenscheid/erloeserkirche_luedenscheid/001.JPG", title: { ru: "Церковь Спасителя в Люденшайде, 2006", ua: "Церква Спасителя в Люденшайді, 2006", de: "Die Erlöserkirche in Lüdenscheid, 2006" } },
         { path: "Germany/nrw/arnsberg/Märkischer-Kreis/luedenscheid/altstadt_luedenscheid/001.JPG", title: { ru: "Фонтан в старом городе, 2006", ua: "Фонтан у старому місті, 2006", de: "Brunnen in der Altstadt, 2006" } },
       ],
@@ -366,7 +375,7 @@ export const Fotos = {
       rathausplatz_luedenscheid: [
         { path: "Germany/nrw/arnsberg/Märkischer-Kreis/luedenscheid/rathausplatz_lüdenscheid/001.JPG", title: { ru: "Центральная площадь Люденшайда, 2006", ua: "Центральна площа Люденшайда, 2006", de: "Rathausplatz, 2006" } },
         { path: "Germany/nrw/arnsberg/Märkischer-Kreis/luedenscheid/rathausplatz_lüdenscheid/002.JPG", title: { ru: "Центральная площадь Люденшайда, 2006", ua: "Центральна площа Люденшайда, 2006", de: "Rathausplatz, 2006" } },
-        { path: "Germany/nrw/arnsberg/Märkischer-Kreis/luedenscheid/002.JPG", title: { ru: "Центральная площадь Люденшайда, 2006", ua: "Центральна площа Люденшайда - 2006", de: "Rathausplatz, 2006" } },
+        { path: "Germany/nrw/arnsberg/Märkischer-Kreis/luedenscheid/002.JPG", title: { ru: "Центральная площадь Люденшайда, 2006", ua: "Центральна площа Люденшайда, 2006", de: "Rathausplatz, 2006" } },
       ],
       sternplatz: [
         { path: "Germany/nrw/arnsberg/Märkischer-Kreis/luedenscheid/sternplatz/003.jpg", title: { ru: "Площадь Штернплац, 2006", ua: "Площа Штернплац, 2006", de: "Sternplatz, 2006" } },
