@@ -415,6 +415,9 @@ export const Fotos = {
         { path: "Germany/rheinland-pfalz/trier-city/basilica_of_constantine/002.jpg", title: { ru: "Базилика Константина, 2024", ua: "Базиліка Константина, 2024", de: "Konstantin-Basilika, 2024" } },
         { path: "Germany/rheinland-pfalz/trier-city/basilica_of_constantine/003.jpg", title: { ru: "Базилика Константина, 2024", ua: "Базиліка Константина, 2024", de: "Konstantin-Basilika, 2024" } },
       ],
+      barbarathermen_trier: [
+        { path: "Germany/rheinland-pfalz/trier-city/barbarathermen/001.jpg", title: { ru: "Барбарские термы (фото взято с интернета)", ua: "Барбарські терми (фото взято з Інтернету)", de: "Barbarathermen (Foto aus dem Internet)" } },
+      ],
     }
   }
 }

@@ -240,7 +240,54 @@ const datas = [
       ogDescription: "Der große Thronsaal von Kaiser Konstantin aus dem 4. Jahrhundert – eines der beeindruckendsten Denkmäler der römischen Epoche in Deutschland.",
       ogImage: "https://our-travels.info/foto/Germany/rheinland-pfalz/trier-city/basilica_of_constantine/001.jpg"
     }
-  }
+  },
+  {
+    id: "barbarathermen_trier",
+    name: "Barbarathermen",
+    type: ["historical_building"], top: "popular",
+    path: "barbarathermen_trier",
+    countryPath: "germany", regionsPath: "rheinland-pfalz", districtPath: "city", cityPath: "trier",
+    fotoCard: "Germany/rheinland-pfalz/trier-city/barbarathermen/001.jpg",
+    location: "Trier, Deutschland",
+    short_description: "Der Komplex Barbarathermen ist ein riesiger römischer Badekomplex im nördlichen Teil des antiken Trier. Er umfasste Bäder für verschiedene soziale Schichten: von einfachen Bürgern bis zum Adel und gehörte zu den größten nördlich der Alpen. Bis heute sind Reste von Mauern, Becken und Kanalisationsanlagen erhalten, die die Dimensionen des Bauwerks und das ingenieurtechnische Können der Römer verdeutlichen.",
+    full_description: {
+      title: "Beschreibung und Geschichte",
+      items: [
+        { bold: "Der Komplex Barbarathermen (Barbarathermen)", text: "– ist einer der größten römischen Badekomplexe nördlich der Alpen, im nördlichen Teil des antiken Trier gelegen. Die Thermen erstreckten sich über eine große Fläche und waren für verschiedene soziale Schichten bestimmt: von einfachen Bürgern bis zum Adel und römischen Beamten. Heute sind nur noch Fragmente von Mauern, Becken und Kanalisationsanlagen erhalten, doch selbst diese Ruinen vermitteln einen Eindruck vom Umfang des Komplexes und der hohen Ingenieurskunst der Römer." },
+        { text: "Der Bau des Komplexes datiert in das 2.–3. Jahrhundert n. Chr., in der Blütezeit des römischen Trier als wichtiges Verwaltungs- und Wirtschaftszentrum an der nördlichen Grenze des Reiches. Die Thermen erfüllten nicht nur hygienische Funktionen, sondern dienten auch als Treffpunkt, Erholungsort und sozialer Mittelpunkt der Stadtbewohner." },
+        { text: "Die Architektur des Komplexes war typisch für römische Bäder dieser Zeit: separate Räume für heiße, warme und kalte Bäder (Caldarium, Tepidarium, Frigidarium), Nebenräume für die Wassererwärmung, Lagerung von Brennstoff und Öl. Ein komplexes Wasser- und Kanalisationssystem ermöglichte die konstante Wassertemperatur und komfortable Bedingungen für die Besucher." },
+        { text: "Nach dem Untergang des Römischen Reiches verfiel der Komplex allmählich. Das Gelände wurde verlassen, und ein Großteil der Gebäude zerfiel durch die Einflüsse der Zeit und der Natur. Archäologische Ausgrabungen, die im 19.–20. Jahrhundert begannen, ermöglichten die Bestimmung des Komplexplans, die Identifizierung einzelner Räume und die Rekonstruktion des historischen Kontexts." },
+        { text: "Heute sind die Barbarathermen für Besucher als Ruinen unter freiem Himmel zugänglich. Man kann die Überreste von Mauern, Becken und Ingenieurbauten sehen und den Umfang und die Anlage des Komplexes einschätzen. Trotz des Fehlens eines vollwertigen Museums ist dieser Ort ein wichtiger Teil des kulturellen und historischen Erbes von Trier und zeigt das Niveau der römischen Zivilisation im Norden des Reiches." },
+        { text: "Der Komplex wird oft mit den Kaiserthermen in Trier verglichen, jedoch waren die Barbarathermen für ein breites Publikum ausgelegt und nahmen ein eigenes Gelände ein, was sie zu einer eigenständigen und einzigartigen Sehenswürdigkeit der Stadt macht." },
+        { text: "Der Komplex steht unter staatlichem Schutz und ist als Kulturerbe von Trier registriert." }
+      ]
+    },
+    tickets_and_entry: {
+      title: "Praktische Informationen",
+      items: [
+        { bold: "Adresse:", text: "Südallee, 54290 Trier, Deutschland" },
+        { bold: "Besuchszeiten:", text: "im Freien zugänglich (kein vollwertiges Museum im Inneren)" },
+        { bold: "Eintritt:", text: "kostenlos (Zugang zu den Ruinen im Freien)" }
+      ]
+    },
+    interestingFacts: {
+      title: "Interessante Fakten",
+      items: [
+        { text: "Der Komplex war seinerzeit der größte nördlich der Alpen." },
+        { text: "Auf dem Gelände wurden Reste des Kanalisationssystems und der Becken entdeckt." },
+        { text: "Die Thermen erhielten ihren Namen „Barbarathermen“ nach ihrem historischen Standort im antiken Trier." },
+        { text: "Das Kanalisations- und Wasserversorgungssystem des Komplexes beeindruckt selbst moderne Ingenieure." }
+      ]
+    },
+    construction_period: "2.–3. Jahrhundert n. Chr.",
+    meta: {
+      title: "Barbarathermen Trier – größter römischer Badekomplex",
+      description: "Erfahren Sie mehr über die Barbarathermen in Trier – den größten römischen Badekomplex nördlich der Alpen, erhalten als Ruinen.",
+      ogTitle: "Barbarathermen Trier – Antike römische Bäder",
+      ogDescription: "Entdecken Sie die Barbarathermen in Trier: einer der größten römischen Badekomplexe nördlich der Alpen.",
+      ogImage: "https://our-travels.info/foto/Germany/rheinland-pfalz/trier-city/barbarathermen/001.jpg"
+    }
+  },
 ];
 
 export default datas;
