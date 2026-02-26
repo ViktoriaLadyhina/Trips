@@ -2,7 +2,7 @@ const datas = [
   {
     id: "portaNigra_trier",
     name: "Порта Нігра («Чорні ворота»)",
-    type: ["historical_building"],
+    type: ["historical_building"], top: "top",
     path: "portaNigra_trier",
     countryPath: "germany",
     regionsPath: "rheinland-pfalz",
@@ -54,7 +54,7 @@ const datas = [
   {
     id: "amphitheater_trier",
     name: "Римський амфітеатр",
-    type: ["historical_building", "museum", "monument_or_fountain"],
+    type: ["historical_building", "museum", "monument_or_fountain"], top: "popular",
     path: "amphitheater_trier",
     countryPath: "germany",
     regionsPath: "rheinland-pfalz",
@@ -128,7 +128,7 @@ const datas = [
   {
     id: "kaiserthermen_trier",
     name: "Римські імператорські терми",
-    type: ["historical_building", "museum", "monument_or_fountain"],
+    type: ["historical_building", "museum", "monument_or_fountain"], top: "popular",
     path: "kaiserthermen_trier",
     countryPath: "germany",
     regionsPath: "rheinland-pfalz",
@@ -192,7 +192,7 @@ const datas = [
   {
     id: "basilica_of_constantine_trier",
     name: "Базиліка Константина",
-    type: ["cathedral", "historical_building"],
+    type: ["cathedral", "historical_building"], top: "popular",
     path: "basilica_of_constantine_trier",
     countryPath: "germany",
     regionsPath: "rheinland-pfalz",

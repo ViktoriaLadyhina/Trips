@@ -12,7 +12,22 @@
     &__title {
         @include h3();
         margin: 10px;
-        font-size: 1.5rem; // базовый размер
+        font-size: 1.5rem;
+    }
+
+    &__rating {
+        @include body-text;
+        margin: 10px;
+        font-size: 15px;
+        text-align: right;
+
+        &-label {
+            color: black;
+        }
+
+        &-value {
+            color: red;
+        }
     }
 
     &__desc {
@@ -77,12 +92,12 @@
 
     .attrCard__desc-foto {
         max-width: 100%; // убрали фиксированное ограничение
-        width: 100%;     // изображение под размер контейнера
+        width: 100%; // изображение под размер контейнера
     }
 
     .attrCard__desc-foto img {
-        width: 100%;    // обязательно подстраиваем img
-        height: auto;   // сохраняем пропорции
+        width: 100%; // обязательно подстраиваем img
+        height: auto; // сохраняем пропорции
     }
 
     .attrCard__desc-info-text {

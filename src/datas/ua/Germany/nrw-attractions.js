@@ -4,7 +4,7 @@ const datas = [
     {
         id: "altstadt_koln",
         name: "Старе місто Кельна",
-        type: ["historical_area"],
+        type: ["historical_area"], top: "top",
         path: "altstadt_koln",
         countryPath: "germany", regionsPath: "nrw", districtPath: "city", cityPath: "koln",
         fotoCard: "Germany/nrw/koln/koln-city/altstadt/001.jpg",
@@ -13,16 +13,16 @@ const datas = [
         short_description_subObjects: {
             text: "У Старому місті Кельна розташовані такі визначні пам'ятки:",
             items: [
-                "Кельнський собор – величний готичний собор, серце Старого міста, на площі біля головного вокзалу.",
-                "Кельнська ратуша – історична міська ратуша в центрі Старого міста.",
-                "Гюрценіх – історичний цеховий будинок і зал поруч із Кельнським собором.",
-                "Музей у археологічному кварталі Кельна – MiQua – археологічний та єврейський музей на Marktplatz у центрі Старого міста.",
-                "Римсько-германський музей – музей античності поруч із Кельнським собором та MiQua.",
-                "Музей Вальрафа-Ріхарца – музей живопису та мистецтва, недалеко від ратуші та собору.",
-                "Музей духів у будинку Фаріна – музей ароматів та парфумерії в історичному кварталі біля ратуші.",
-                "Будинок одеколону 4711 – історична будівля у пішохідній зоні навколо Hohe Straße та Schildergasse.",
-                "Музей Людвіга – музей сучасного мистецтва поруч із Кельнським собором.",
-                "Кельнський міський музей – музей історії міста в центрі (Zeughaus)."
+                "<b>Кельнський собор</b> – величний готичний собор, серце Старого міста, на площі біля головного вокзалу.",
+                "<b>Кельнська ратуша</b> – історична міська ратуша в центрі Старого міста.",
+                "<b>Гюрценіх – історичний цеховий будинок і зал поруч із Кельнським собором.",
+                "<b>Музей у археологічному кварталі Кельна – MiQua – археологічний та єврейський музей на Marktplatz у центрі Старого міста.",
+                "<b>Римсько-германський музей</b> – музей античності поруч із Кельнським собором та MiQua.",
+                "<b>Музей Вальрафа-Ріхарца</b> – музей живопису та мистецтва, недалеко від ратуші та собору.",
+                "<b>Музей духів у будинку Фаріна</b> – музей ароматів та парфумерії в історичному кварталі біля ратуші.",
+                "<b>Будинок одеколону 4711</b> – історична будівля у пішохідній зоні навколо Hohe Straße та Schildergasse.",
+                "<b>Музей Людвіга</b> – музей сучасного мистецтва поруч із Кельнським собором.",
+                "<b>Кельнський міський музей</b> – музей історії міста в центрі (Zeughaus)."
             ]
         },
         short_description: "Старе місто Кельна – це історичне серце міста з вузькими брукованими вулицями, традиційними будинками, затишними пивними та кафе на березі Рейну. Він поєднує культуру, архітектуру та повсякденне життя: від готичних соборів до музеїв і ринків, що відображають багатошарову історію міста.",
@@ -55,7 +55,7 @@ const datas = [
     {
         id: "cologne_cathedral",
         name: "Кельнський собор",
-        type: ["cathedral"],
+        type: ["cathedral"], top: "top",
         path: "cologne-cathedral",
         countryPath: "germany", regionsPath: "nrw", districtPath: "city", cityPath: "koln",
         showMore: true, hiddenFromList: true,
@@ -127,7 +127,7 @@ const datas = [
     {
         id: "rathaus_koln",
         name: "Кельнська ратуша",
-        type: ['historical_building'],
+        type: ['historical_building'], top: "popular",
         path: "rathaus_koln",
         countryPath: "germany", regionsPath: "nrw", districtPath: "city", cityPath: "koln",
         showMore: true, hiddenFromList: true,
@@ -184,7 +184,7 @@ const datas = [
     {
         id: "guerzenich_koln",
         name: "Гюрценіх – історичний концертний зал і гільдійний дім у Кельні",
-        type: ["historical_building"],
+        type: ["historical_building"], top: "popular",
         path: "guerzenich_koln",
         countryPath: "germany", regionsPath: "nrw", districtPath: "city", cityPath: "koln",
         showMore: true, hiddenFromList: true,
@@ -244,7 +244,7 @@ const datas = [
     {
         id: "roemisch_germanisches_museum",
         name: "Римсько-германський музей",
-        type: ["museum"],
+        type: ["museum"], top: "popular",
         path: "roemisch-germanisches-museum",
         countryPath: "germany", regionsPath: "nrw", districtPath: "city", cityPath: "koln",
         showMore: true, hiddenFromList: true,
@@ -298,7 +298,7 @@ const datas = [
     {
         id: "farina_duftmuseum",
         name: "Музей парфумів у домі Фаріна",
-        type: ["museum"],
+        type: ["museum"], top: "popular",
         path: "farina-duftmuseum",
         countryPath: "germany", regionsPath: "nrw", districtPath: "city", cityPath: "koln",
         showMore: true, hiddenFromList: true,
@@ -350,7 +350,7 @@ const datas = [
     {
         id: "museum_ludwig",
         name: "Музей Людвіга",
-        type: ["museum"],
+        type: ["museum"], top: "popular",
         path: "museum-ludwig",
         countryPath: "germany", regionsPath: "nrw", districtPath: "city", cityPath: "koln",
         showMore: true, hiddenFromList: true,
@@ -404,7 +404,7 @@ const datas = [
     {
         id: "schokoladenmuseum",
         name: "Музей шоколаду",
-        type: ["museum"],
+        type: ["museum"], top: "popular",
         path: "schokoladenmuseum",
         countryPath: "germany", regionsPath: "nrw", districtPath: "city", cityPath: "koln",
         fotoCard: "Germany/nrw/koln/koln-city/schokoladenmuseum/001.jpg",
@@ -458,7 +458,7 @@ const datas = [
     {
         id: "miqua",
         name: "Музей в археологічному кварталі Кельна – MiQua",
-        type: ["museum"],
+        type: ["museum"], top: "popular",
         path: "miqua",
         countryPath: "germany", regionsPath: "nrw", districtPath: "city", cityPath: "koln",
         showMore: true, hiddenFromList: true,
@@ -532,7 +532,7 @@ const datas = [
     {
         id: "wallraf_richartz_museum",
         name: "Музей Вальрафа-Ріхарцa",
-        type: ["museum"],
+        type: ["museum"], top: "popular",
         path: "wallraf_richartz_museum",
         countryPath: "germany", regionsPath: "nrw", districtPath: "city", cityPath: "koln",
         showMore: true, hiddenFromList: true,
@@ -591,7 +591,7 @@ const datas = [
     {
         id: "ostasiatische_kunst_koln",
         name: "Музей східноазіатського мистецтва",
-        type: ["museum"],
+        type: ["museum"], top: "popular",
         path: "ostasiatische_kunst_koln",
         countryPath: "germany", regionsPath: "nrw", districtPath: "city", cityPath: "koln",
         fotoCard: "Germany/nrw/koln/koln-city/ostasiatische_kunst_koln/001.jpg",
@@ -645,7 +645,7 @@ const datas = [
     {
         id: "museum_schnuetgen_koln",
         name: "Музей Шнютгена",
-        type: ["museum", 'cathedral'],
+        type: ["museum", 'cathedral'], top: "popular",
         path: "museum_schnuetgen_koln",
         countryPath: "germany", regionsPath: "nrw", districtPath: "city", cityPath: "koln",
         fotoCard: "Germany/nrw/koln/koln-city/schnuetgen/001.jpg",
@@ -707,7 +707,7 @@ const datas = [
     {
         id: "rautenstrauch_joest_museum_koln",
         name: "Музей Раутенштраух-Йост – Культури світу",
-        type: ["museum"],
+        type: ["museum"], top: "popular",
         path: "rautenstrauch_joest_museum_koln",
         countryPath: "germany", regionsPath: "nrw", districtPath: "city", cityPath: "koln",
         fotoCard: "Germany/nrw/koln/koln-city/rautenstrauch_joest_museum/001.jpg",
@@ -766,7 +766,7 @@ const datas = [
     {
         id: "dufthaus_4711_koln",
         name: "Будинок одеколону 4711",
-        type: ["museum"],
+        type: ["museum"], top: "popular",
         path: "dufthaus_4711_koln",
         countryPath: "germany", regionsPath: "nrw", districtPath: "city", cityPath: "koln",
         showMore: true, hiddenFromList: true,
@@ -827,7 +827,7 @@ const datas = [
     {
         id: "makk_museum_koln",
         name: "Музей прикладного мистецтва",
-        type: ["museum"],
+        type: ["museum"], top: "popular",
         path: "makk_museum_koln",
         countryPath: "germany", regionsPath: "nrw", districtPath: "city", cityPath: "koln",
         fotoCard: "Germany/nrw/koln/koln-city/makk_museum/001.JPG",
@@ -884,7 +884,7 @@ const datas = [
     {
         id: "stadtmuseum_koln",
         name: "Кельнський міський музей",
-        type: ["museum"],
+        type: ["museum"], top: "popular",
         path: "stadtmuseum_koln",
         countryPath: "germany", regionsPath: "nrw", districtPath: "city", cityPath: "koln",
         showMore: true, hiddenFromList: true,
@@ -941,7 +941,7 @@ const datas = [
     {
         id: "sport_olympia_museum_koln",
         name: "Німецький музей спорту та Олімпійських ігор",
-        type: ["museum"],
+        type: ["museum"], top: "popular",
         path: "sport_olympia_museum_koln",
         countryPath: "germany", regionsPath: "nrw", districtPath: "city", cityPath: "koln",
         fotoCard: "Germany/nrw/koln/koln-city/sport_olympia_museum/001.jpg",
@@ -998,7 +998,7 @@ const datas = [
     {
         id: "photographische_sammlung_sk_stiftung_kultur_koln",
         name: "Фотографічна колекція культурного фонду SK",
-        type: ["museum"],
+        type: ["museum"], top: "local",
         path: "photographische_sammlung_sk_stiftung_kultur_koln",
         countryPath: "germany", regionsPath: "nrw", districtPath: "city", cityPath: "koln",
         fotoCard: "Germany/nrw/koln/koln-city/photographische_sammlung_sk_stiftung_kultur/001.jpg",
@@ -1053,7 +1053,7 @@ const datas = [
     {
         id: "koln_bridges",
         name: "Мости Кельна через Рейн",
-        type: ["technical_structure"],
+        type: ["technical_structure"], top: "popular",
         path: "koln_bridges",
         countryPath: "germany", regionsPath: "nrw", districtPath: "city", cityPath: "koln",
         fotoCard: "Germany/nrw/koln/koln-city/koln_bridges/001.jpg",
@@ -1105,7 +1105,7 @@ const datas = [
     {
         id: "skulpturenpark_koln",
         name: "Парк скульптур у Кельні",
-        type: ["museum", "nature", "monument_or_fountain"],
+        type: ["museum", "nature", "monument_or_fountain"], top: "local",
         path: "skulpturenpark_koln",
         countryPath: "germany", regionsPath: "nrw", districtPath: "city", cityPath: "koln",
         fotoCard: "Germany/nrw/koln/koln-city/skulpturenpark/001.jpg",
@@ -1155,7 +1155,7 @@ const datas = [
     {
         id: "zoo_koln",
         name: "Кельнський зоопарк",
-        type: ["nature"],
+        type: ["nature"], top: "popular",
         path: "zoo_koln",
         countryPath: "germany", regionsPath: "nrw", districtPath: "city", cityPath: "koln",
         fotoCard: "Germany/nrw/koln/koln-city/zoo/001.jpg",
@@ -1215,7 +1215,7 @@ const datas = [
     {
         id: "forstbotanischer_garten",
         name: "Ботанічний сад і лісопарк",
-        type: ["nature"],
+        type: ["nature"], top: "popular",
         path: "forstbotanischer_garten",
         countryPath: "germany", regionsPath: "nrw", districtPath: "city", cityPath: "koln",
         fotoCard: "Germany/nrw/koln/koln-city/forstbotanischer_garten/001.jpg",
@@ -1281,7 +1281,7 @@ const datas = [
     {
         id: "flora_garten_koln",
         name: "Ботанічний сад Флора",
-        type: ["nature"],
+        type: ["nature"], top: "popular",
         path: "flora_garten_koln",
         countryPath: "germany", regionsPath: "nrw", districtPath: "city", cityPath: "koln",
         fotoCard: "Germany/nrw/koln/koln-city/flora_garten_koln/001.jpg",
@@ -1337,7 +1337,7 @@ const datas = [
     {
         id: "rheinpark_koln",
         name: "Рейнський парк",
-        type: ["nature"],
+        type: ["nature"], top: "popular",
         path: "rheinpark_koln",
         countryPath: "germany", regionsPath: "nrw", districtPath: "city", cityPath: "koln",
         fotoCard: "Germany/nrw/koln/koln-city/rheinpark_koln/001.jpg",
@@ -1390,7 +1390,7 @@ const datas = [
     {
         id: "tanzbrunnen",
         name: "Танцюючий фонтан",
-        type: ["monument_or_fountain"],
+        type: ["monument_or_fountain"], top: "popular",
         path: "tanzbrunnen",
         countryPath: "germany", regionsPath: "nrw", districtPath: "city", cityPath: "koln",
         fotoCard: "Germany/nrw/koln/koln-city/rheinpark_koln/002.jpg",
@@ -1430,7 +1430,7 @@ const datas = [
     {
         id: "koln_seilbahn",
         name: "Кельнська канатна дорога",
-        type: ["technical_structure"],
+        type: ["technical_structure"], top: "popular",
         path: "koln_seilbahn",
         countryPath: "germany", regionsPath: "nrw", districtPath: "city", cityPath: "koln",
         fotoCard: "Germany/nrw/koln/koln-city/rheinpark_koln/003.jpg",
@@ -1484,12 +1484,12 @@ const datas = [
     {
         id: "divitia_koln",
         name: "Руїни римського форту Дивітія в Кельні",
-        type: ["historical_building"],
+        type: ["historical_building"], top: "local",
         path: "divitia_koln",
         countryPath: "germany", regionsPath: "nrw", districtPath: "city", cityPath: "koln",
         fotoCard: "Germany/nrw/koln/koln-city/rheinpark_koln/004.jpg",
         location: "Кельн, Німеччина",
-        hiddenFromList: true,  showMore: true,
+        hiddenFromList: true, showMore: true,
         short_description: "Руїни римського форту Дивітія – це залишки пізньоримського укріплення IV століття н.е. на правому березі Рейну в Кельні. Збереглися фрагменти вежі, кам'яна кладка та основи стін. Доступно для вільного огляду у пішохідній зоні Рейнського парку.",
         full_description: {
             title: "Опис та історія",
@@ -1538,7 +1538,7 @@ const datas = [
     {
         id: "finkens_garten_koln",
         name: "Екологічний сад Фінкенсгартен",
-        type: ["nature"],
+        type: ["nature"], top: "local",
         path: "finkens_garten_koln",
         countryPath: "germany", regionsPath: "nrw", districtPath: "city", cityPath: "koln",
         fotoCard: "Germany/nrw/koln/koln-city/finkens_garten/001.jpg",
@@ -1594,7 +1594,7 @@ const datas = [
     {
         id: "historic_center_monschau",
         name: "Старе місто Моншау",
-        type: ["historical_area"],
+        type: ["historical_area"], top: "popular",
         path: "historic_center_monschau",
         countryPath: "germany", regionsPath: "nrw", districtPath: "koln", cityPath: "monschau",
         fotoCard: "Germany/nrw/koln/Aachen/monschau/001.jpg",
@@ -1633,7 +1633,7 @@ const datas = [
     {
         id: "burg_monschau",
         name: "Замок Моншау",
-        type: ["palace_or_castle"],
+        type: ["palace_or_castle"], top: "local",
         path: "burg_monschau",
         countryPath: "germany",
         regionsPath: "nrw",
@@ -1685,11 +1685,9 @@ const datas = [
     {
         id: "bruhel_palaces",
         name: "Палаци Брюля: ансамбль Аугустусбург і Фалькенлюст",
-        type: ['palace', 'museum'],
+        type: ['palace', 'museum'], top: "top",
         path: 'bruhl_palaces',
-        regionsPath: "nrw",
-        districtPath: "koln",
-        cityPath: "bruhl",
+        regionsPath: "nrw", districtPath: "koln", cityPath: "bruhl",
         fotoCard: "Germany/nrw/koln/Rhein-Erft-Kreis/bruhl/bruhl_palaces/001.jpg",
         location: "Брюль, Німеччина",
         address: [{ bold: "Адреса:", text: " Schloss Augustusburg — Max-Ernst-Allee, 50321 Brühl, Deutschland <br>Schloss Falkenlust — An Schloss Falkenlust 1, 50321 Brühl, Deutschland" }],
@@ -1748,11 +1746,9 @@ const datas = [
     {
         id: "max_ernst_museum",
         name: "Музей Макса Ернста",
-        type: ['museum'],
+        type: ['museum'], top: "popular",
         path: "max-ernst-museum",
-        regionsPath: "nrw",
-        districtPath: "koln",
-        cityPath: "bruhl",
+        regionsPath: "nrw", districtPath: "koln", cityPath: "bruhl",
         fotoCard: "Germany/nrw/koln/Rhein-Erft-Kreis/bruhl/max_ernst_museum/Max-Ernst-Museum.jpg",
         location: "Брюль, Німеччина",
         address: [{ bold: "Адреса:", text: " Comesstraße 42 / Max-Ernst-Allee 1, 50321 Brühl, Deutschland" }],
@@ -1797,11 +1793,9 @@ const datas = [
     {
         id: "phantasialand",
         name: "Парк розваг Phantasialand",
-        type: ['amusement_park'],
+        type: ['amusement_park'], top: "popular",
         path: "phantasialand",
-        regionsPath: "nrw",
-        districtPath: "koln",
-        cityPath: "bruhl",
+        regionsPath: "nrw", districtPath: "koln", cityPath: "bruhl",
         fotoCard: "Germany/nrw/koln/Rhein-Erft-Kreis/bruhl/phantasialand/001.jpg",
         location: "Брюль, Німеччина",
         address: [{ bold: "Адреса:", text: " Berggeiststraße 31–41, 50321 Brühl, Deutschland" }],
@@ -1856,11 +1850,9 @@ const datas = [
     {
         id: "keramion_frechen",
         name: "Кераміон – Центр сучасної та історичної кераміки",
-        type: ['museum'],
+        type: ['museum'], top: "local",
         path: "keramion",
-        regionsPath: "nrw",
-        districtPath: "koln",
-        cityPath: "frechen",
+        regionsPath: "nrw", districtPath: "koln", cityPath: "frechen",
         fotoCard: "Germany/nrw/koln/Rhein-Erft-Kreis/frechen/keramion/frechen_keramion.jpg",
         location: "Фрехен, Німеччина",
         address: [{ bold: "Адреса:", text: " Bonnstraße 12, 50226 Frechen, Deutschland" }],
@@ -1908,11 +1900,9 @@ const datas = [
     {
         id: "burg_bachem_frechen",
         name: "Фортеця Бахем – історична водяна фортеця у Фрехені",
-        type: ['castle'],
+        type: ['castle'], top: "local",
         path: "burg-bachem",
-        regionsPath: "nrw",
-        districtPath: "koln",
-        cityPath: "frechen",
+        regionsPath: "nrw", districtPath: "koln", cityPath: "frechen",
         fotoCard: "Germany/nrw/koln/Rhein-Erft-Kreis/frechen/burg-bachem/Burg-Bachem_3.jpg",
         location: "Фрехен, Німеччина",
         address: [{ bold: "Адреса:", text: " Schloßstraße 8, 50226 Frechen, Deutschland" }],
@@ -1958,11 +1948,9 @@ const datas = [
     {
         id: "johann_schmitz_platz_frechen",
         name: "Площа Йоганна Шмітца («площа Ратуші»)",
-        type: ['square'],
+        type: ['square'], top: "local",
         path: "johann_schmitz_platz_frechen",
-        regionsPath: "nrw",
-        districtPath: "koln",
-        cityPath: "frechen",
+        regionsPath: "nrw", districtPath: "koln", cityPath: "frechen",
         subObjects: ["altes_rathaus_frechen", "rathausbrunnen_frechen", "klüttenbrunnen_frechen"],
         short_description_subObjects: {
             text: "На площі Йоганна Шмітца розташовані такі пам’ятки:",
@@ -2008,14 +1996,10 @@ const datas = [
     {
         id: "altes_rathaus_frechen",
         name: "Стара ратуша Фрехена",
-        type: ['historical_building'],
+        type: ['historical_building'], top: "local",
         path: "altes_rathaus_frechen",
-        slug: "altes_rathaus_frechen",
+        countryPath: "germany", regionsPath: "nrw", districtPath: "koln", cityPath: "frechen",
         hiddenFromList: true, showMore: true,
-        regionsPath: "nrw",
-        districtPath: "koln",
-        cityPath: "frechen",
-        countryPath: "germany",
         fotoCard: "Germany/nrw/koln/Rhein-Erft-Kreis/frechen/johann_schmitz_platz_frechen/008.jpg",
         location: "Фрехен, Німеччина",
         address: [{ bold: "Адреса:", text: " Johann-Schmitz-Platz, 50226 Frechen, Deutschland" }],
@@ -2056,16 +2040,13 @@ const datas = [
         }
     },
     {
-        "id": "rathausbrunnen_frechen",
-        "name": "Фонтан перед ратушею",
-        "type": ["monument_or_fountain"],
-        "path": "rathausbrunnen_frechen",
+        id: "rathausbrunnen_frechen",
+        name: "Фонтан перед ратушею",
+        type: ["monument_or_fountain"], top: "local",
+        path: "rathausbrunnen_frechen",
+        countryPath: "germany", regionsPath: "nrw", districtPath: "koln", cityPath: "frechen",
         hiddenFromList: true,
-        "regionsPath": "nrw",
-        "districtPath": "koln",
-        "cityPath": "frechen",
-        "countryPath": "germany",
-        "fotoCard": "Germany/nrw/koln/Rhein-Erft-Kreis/frechen/johann_schmitz_platz_frechen/005.jpg",
+        fotoCard: "Germany/nrw/koln/Rhein-Erft-Kreis/frechen/johann_schmitz_platz_frechen/005.jpg",
         short_description: "На площі перед старою ратушею знаходиться декоративний районний фонтан, створений у 1981 році художником-керамістом Вімом Мюлендиком (Wim Mühlendyck). Він облицьований керамічними плитами з рельєфними зображеннями сцен, що відображають розвиток ремесел та керамічної промисловості Фрехена – від традиційних майстрів до заводського виробництва, а різноманітні маскарони (обличчя) слугують характерними водними струменями фонтану.",
         full_description: {
             title: "Опис та історія",
@@ -2082,15 +2063,12 @@ const datas = [
         }
     },
     {
-        "id": "klüttenbrunnen_frechen",
-        "name": "Фонтан Клюттенбрюннен",
-        "type": ["monument_or_fountain"],
-        "path": "klüttenbrunnen_frechen",
+        id: "klüttenbrunnen_frechen",
+        name: "Фонтан Клюттенбрюннен",
+        type: ["monument_or_fountain"], top: "local",
+        path: "klüttenbrunnen_frechen",
+        countryPath: "germany", regionsPath: "nrw", districtPath: "koln", cityPath: "frechen",
         hiddenFromList: true,
-        "regionsPath": "nrw",
-        "districtPath": "koln",
-        "cityPath": "frechen",
-        "countryPath": "germany",
         fotoCard: "Germany/nrw/koln/Rhein-Erft-Kreis/frechen/johann_schmitz_platz_frechen/004.jpg",
         short_description: "У пішохідній зоні у 1986 році встановлено скульптурний фонтан Клюттенбрюннен (Klüttenbrunnen), авторства німецького скульптора Олафа Хёнена. Він розташований поруч із площею Йоганна Шмітца та відображає промислову і ремісничу історію Фрехена, зокрема видобуток і обробку місцевої глини. Фонтан виконаний як художня композиція з кам’яними елементами та водними струменями, гармонійно вписується в міське середовище і слугує візуальним орієнтиром для туристів.",
         full_description: {
@@ -2107,150 +2085,6 @@ const datas = [
             ogImage: "https://our-travels.info/foto/Germany/nrw/koln/Rhein-Erft-Kreis/frechen/johann_schmitz_platz_frechen/004.jpg"
         }
     },
-    {
-        id: "heisterbach_konigswinter",
-        name: "Абатство Гайстербах",
-        type: ["historical_building"],
-        path: "heisterbach_konigswinter",
-        countryPath: "germany",
-        regionsPath: "nrw",
-        districtPath: "koln",
-        cityPath: "konigswinter",
-        fotoCard: "Germany/nrw/koln/Rhein-Sieg-Kreis/konigswinter/heisterbach/001.jpg",
-        location: "Кенігсвінтер, Німеччина",
-        officialSite: [
-            { bold: "Офіційний сайт", link: "https://www.klosterlandschaft-heisterbach.de" }
-        ],
-        subObjects: ["chorruine_heisterbach_konigswinter", "st_peter_heisterbach_konigswinter"],
-        short_description_subObjects: {
-            text: "В абатстві також знаходяться такі пам’ятки",
-            items: ["Руїни хору колишньої монастирської церкви", "Церква Святого Петра"]
-        },
-        short_description: "Абатство Гайстербах – колишній цистерціанський монастир XII століття, розташований у долині Гайстербах неподалік від Кенігсвінтера. Після секуляризації на початку XIX століття монастир було ліквідовано, а його територія з часом перетворилася на історико-культурний простір. Сьогодні Гайстербах вважається одним із значущих пам’яток середньовічної монастирської історії регіону Зібенгебірге.",
-        full_description: {
-            title: "Опис та історія",
-            items: [
-                { bold: "Абатство Гайстербах ", text: "– історичний монастирський комплекс цистерціанського ордену, розташований у мальовничій долині Гайстербах біля міста Кенігсвінтер. Сьогодні збережені будівлі комплексу, церква та архітектурні фрагменти є культурним та туристичним об’єктом, об’єднаним із парком та простором для прогулянок. Це місце популярне серед любителів історії, архітектури та природи." },
-                { bold: "Історія. ", text: "Абатство Гайстербах (нім. Kloster Heisterbach) було засноване як цистерціанський монастир наприкінці XII століття за ініціативою архієпископа Кельна Філіпа I фон Гайнсберга. У 1189 році сюди прибули 12 монахів із абатства Гіммерод в Ейфелі під керівництвом абата Германа, які спочатку поселилися у колишньому августинському монастирі на вершині гори Пітерсберг." },
-                { text: "У 1202 році громада перенесла свою обитель вниз у долину Святого Петра (Heisterbachtal), де було закладено новий комплекс – так виникло власне абатство Гайстербах." },
-                { text: "Важливу роль у будівництві монастирської церкви відіграли перші абати: Геррер (1195-1208) почав будівництво, а Генріх (1208-1244) завершив і освятив базиліку у 1237 році. Цей храм став одним із найбільших соборів Рейну епохи середньовіччя, перевищуючи за розмірами всі церкви регіону, крім Кельнського собору. В архітектурі поєднувалися елементи романського та готичного стилів, що відображало перехідний період у будівельному мистецтві XIII століття." },
-                { text: "Абатство швидко стало важливим центром духовного та економічного життя регіону: монахи вели фермерське господарство, управляли значними земельними володіннями, брали участь у релігійних та громадських справах, а також впливали на навколишні поселення." },
-                { text: "Протягом майже 600 років монастир процвітав, але його доля змінилася на початку XIX століття. Внаслідок секуляризації 1803 року – хвилі реформ, ініційованої в період наполеонівських війн та зміни політичної структури Німеччини – абатство було офіційно закрите. Багато монастирських земель та будівель були продані, а церква розібрана на будівельний матеріал (наприклад, камені використовували для великих інфраструктурних проєктів того часу, таких як Північний канал). Незабаром від грандіозної базиліки залишилися лише апсида та руїни хору, які ми бачимо сьогодні." },
-                { bold: "Легенда:", text: "існує місцева легенда про те, що один із найбільших дзвонів монастиря був захований під основою хору, щоб його не конфіскували під час війн – і що вночі можна почути його «нечіткий» дзвін… хоча це радше романтична історія, ніж історичний факт." }
-            ]
-        },
-        tickets_and_entry: {
-            title: "Практична інформація",
-            items: [
-                { bold: "Адреса:", text: "Heisterbacher Tal, 53639 Königswinter, Німеччина" },
-                { bold: "Час відвідування:", text: "цілий рік, краще у ясну погоду" },
-                { bold: "Вхід:", text: "безкоштовно на територію, окремі заходи можуть бути платними" }
-            ]
-        },
-        interestingFacts: {
-            title: "Цікаві факти",
-            items: [
-                { text: "У XIX столітті після секуляризації монастир частково зруйнували, але його руїни збереглися і стали історичною пам’яткою." },
-                { text: "Територія абатства оточена лісами та пагорбами Зібенгебірге – відмінне місце для прогулянок та пікніків." },
-                { text: "У колишніх монастирських будівлях зараз працюють кафе та виставкові простори." },
-                { text: "Іноді у церкві проходять концерти органної музики та культурні заходи." }
-            ]
-        },
-        construction_period: "1189 рік",
-        founder: " монастирська громада цистерціанців з абатства Гіммерод",
-        meta: {
-            title: "Абатство Гайстербах – історія та руїни монастиря у Кенігсвінтері",
-            description: "Абатство Гайстербах – колишній цистерціанський монастир XII століття у долині Гайстербах поруч із Кенігсвінтером. Історія, значення та відвідування історичного комплексу.",
-            ogTitle: "Абатство Гайстербах – середньовічний монастир у долині Гайстербах",
-            ogDescription: "Історичне абатство Гайстербах – одна з найатмосферніших пам’яток середньовічної монастирської архітектури в регіоні Зібенгебірге, неподалік від Кенігсвінтера.",
-            ogImage: "https://our-travels.info/foto/Germany/nrw/koln/Rhein-Sieg-Kreis/konigswinter/heisterbach/001.jpg"
-        }
-    },
-    {
-        id: "chorruine_heisterbach_konigswinter",
-        name: "Руїни хору колишньої монастирської церкви",
-        type: ["historical_building"],
-        path: "chorruine_heisterbach_konigswinter",
-        countryPath: "germany",
-        regionsPath: "nrw",
-        districtPath: "koln",
-        cityPath: "konigswinter",
-        fotoCard: "Germany/nrw/koln/Rhein-Sieg-Kreis/konigswinter/heisterbach/001.jpg",
-        location: "Кенігсвінтер, Німеччина",
-        officialSite: [
-            { bold: "Офіційний сайт", link: "https://www.klosterlandschaft-heisterbach.de" }
-        ],
-        hiddenFromList: true, showMore: true,
-        short_description: "Руїни хору колишньої монастирської церкви – найвражаюча та впізнавана частина Абатства Гайстербах. Це єдиний фрагмент величезної готичної базиліки, що зберігся майже в повному обсязі після руйнування монастиря в XIX столітті.",
-        full_description: {
-            title: "Опис та історія",
-            items: [
-                { bold: "Руїни хору колишньої монастирської церкви", text: " – найвражаюча та впізнавана частина Абатства Гайстербах. Це єдиний фрагмент величезної готичної базиліки, що зберігся майже в повному обсязі після руйнування монастиря в XIX столітті." },
-                { text: "Хор був побудований на початку XIII століття та освячений у 1237 році. Він являє собою високий готичний об’єм із масивними стрілчастими арками та тонкими колонами, характерними для архітектури цистерціанського ордену, який дотримувався суворої, аскетичної естетики без надмірного декору." },
-                { text: "Сьогодні руїни хору відкриті під небом і створюють сильне візуальне та емоційне враження: висока кам’яна апсида підкреслює масштаб втраченого собору, стрілчасті арки формують виразну перспективу. Простір часто використовується для фотозйомки, концертів та культурних заходів." },
-                { text: "Руїни хору вважаються одними з найкрасивіших монастирських руїн у Північному Рейні-Вестфалії та символом всього комплексу «Монастирський ландшафт Гайстербах»." }
-            ]
-        },
-        tickets_and_entry: {
-            title: "Практична інформація",
-            items: [
-                { bold: "Адреса:", text: "Heisterbacher Tal, 53639 Königswinter, Німеччина" },
-                { bold: "Найкращий час для відвідування", text: "– ранок або ближче до заходу, коли світло проходить крізь арки та підкреслює структуру каменю." }
-            ]
-        },
-        construction_period: "початок XIII століття",
-        meta: {
-            title: "Руїни хору абатства Гайстербах – історична пам’ятка",
-            description: "Відкрийте для себе вражаючі руїни хору абатства Гайстербах: історія, архітектура та унікальні залишки середньовічного монастиря в Зібенгебірге.",
-            ogTitle: "Руїни хору абатства Гайстербах",
-            ogDescription: "Відвідайте руїни хору абатства Гайстербах та пориньте в атмосферу історії середньовічного монастиря в серці Сівенбергу.",
-            ogImage: "https://our-travels.info/foto/Germany/nrw/koln/Rhein-Sieg-Kreis/konigswinter/heisterbach/001.jpg"
-        }
-    },
-    {
-        id: "st_peter_heisterbach_konigswinter",
-        name: "Церковь Святого Петра в Хайстербахе",
-        type: ["cathedral"],
-        path: "st_peter_heisterbach_konigswinter",
-        countryPath: "germany",
-        regionsPath: "nrw",
-        districtPath: "koln",
-        cityPath: "konigswinter",
-        fotoCard: "Germany/nrw/koln/Rhein-Sieg-Kreis/konigswinter/heisterbach/005.jpg",
-        location: "Кенігсвінтер, Німеччина",
-        hiddenFromList: true, showMore: true,
-        short_description: "Церква Святого Петра в Гайстербасі – діюча католицька церква, збудована після секуляризації монастиря на території колишнього абатства. Вона вирізняється камерною архітектурою та спокійною атмосферою, зберігаючи духовну спадщину цистерціанців. Церква відкрита для богослужінь, туристів і культурних заходів, доповнюючи історичні руїни комплексу.",
-        full_description: {
-            title: "Опис та історія",
-            items: [
-                { bold: "Церква Святого Петра в Гайстербасі", text: " – діюча католицька церква, розташована на території колишнього абатства Гайстербах, неподалік від Кенігсвінтера. Сьогодні вона є духовним і архітектурним центром комплексу Монастирський ландшафт Гайстербах." },
-                { bold: "Історичний контекст. ", text: "Нова монастирська церква була збудована у 1953-1956 роках після секуляризації абатства, на місці втрачених монастирських споруд. Попри руйнування більшої частини комплексу на початку XIX століття, духовне життя на цьому місці було збережене та отримало нове архітектурне втілення." },
-                { text: "Церква Святого Петра символізує спадкоємність духовної спадщини цистерціанців, поєднуючи сучасну будівлю з багатовіковою історією колишнього монастиря Гайстербах." },
-                { bold: "Архітектура та інтер’єр. ", text: "Будівля вирізняється простотою форм і камерною атмосферою, що відповідає традиціям цистерціанської духовної спадщини регіону. На відміну від монументальних руїн хору середньовічної монастирської церкви, Церква Святого Петра має стриманий і гармонійний вигляд." },
-                { text: "Особливу історичну цінність має тимпан 1237 року із зображенням пасхального Агнця Божого, перенесений зі зруйнованої абатської церкви та використаний як перемичка вхідного порталу. Біля входу також встановлено два надгробні камені колишніх абатів Гайстербаху." },
-                { text: "Внутрішній простір світлий і лаконічний, з мінімальним декором. Увагу привертають вражаючі вітражі німецького церковного художника Ернста Йоганна Янсена-Вінкеля 1904-1992, а також центральний вівтар і орган, що використовується для богослужінь і концертів." },
-                { bold: "Сучасне використання. ", text: "Сьогодні церква використовується для регулярних католицьких богослужінь, відкрита для відвідувачів протягом дня і слугує майданчиком для духовних та музичних заходів. Свята Меса відправляється у будні в різний час, а також у неділі та святкові дні о 9:45." },
-                { text: "Церква Святого Петра в Гайстербасі є живим духовним центром комплексу і органічно доповнює історичні руїни абатства, створюючи цілісне сприйняття цього унікального місця." }
-            ]
-        },
-        interestingFacts: {
-            title: "Цікаві факти",
-            items: [
-                { text: "Попри втрату монастирських споруд, церква зберігає елементи старого комплексу: кам’яні портали, частини розписів і декоративні елементи." },
-                { text: "Внутрішнє оформлення та архітектура підкреслюють спадкоємність духовної традиції цистерціанців у регіоні." }
-            ]
-        },
-        construction_period: "1953-1956 роки будівництво нової монастирської церкви",
-        founder: " Католицька церковна громада Гайстербаху",
-        meta: {
-            title: "Церква Святого Петра в Гайстербасі – діюча церква абатства Гайстербах",
-            description: "Церква Святого Петра в Гайстербасі – католицька церква 1953–1956 років на території колишнього абатства. Історія, архітектура, вітражі та відвідування в Гайстербасі, Кенігсвінтер.",
-            ogTitle: "Церква Святого Петра в Гайстербасі",
-            ogDescription: "Діюча католицька церква на території колишнього абатства Гайстербах. Збудована у 1953-1956 роках, з унікальним тимпаном XIII століття та вражаючими вітражами.",
-            ogImage: "https://our-travels.info/foto/Germany/nrw/koln/Rhein-Sieg-Kreis/konigswinter/heisterbach/005.jpg"
-        }
-    },
-
 
     //Rhein-Sieg-Kreis
 
@@ -2258,11 +2092,9 @@ const datas = [
     {
         id: "drachenfels",
         name: "Гора Драхенфельс",
-        type: ["nature"],
+        type: ["nature"], top: "top",
         path: "drachenfels",
-        regionsPath: "nrw",
-        districtPath: "koln",
-        cityPath: "konigswinter",
+        regionsPath: "nrw", districtPath: "koln", cityPath: "konigswinter",
         fotoCard: "Germany/nrw/koln/Rhein-Sieg-Kreis/konigswinter/drachenfels/001.jpg",
         location: "між містами Кенігсвінтер і Бад-Хоннеф, Німеччина",
         officialSite: [
@@ -2275,11 +2107,11 @@ const datas = [
         short_description_subObjects: {
             text: "На горі Драхенфельс розташовані такі визначні місця: ",
             items: [
-                "Залізниця Драхенфельс",
-                "Палац Драхенбург",
-                "Руїни замку Драхенфельс",
-                "Зал Нібелунгів",
-                "Зоопарк рептилій"
+                "<b>Залізниця Драхенфельс</b> – історична залізниця, що з’єднує долину Рейну з вершиною гори, відкриваючи панорамні види.",
+                "<b>Палац Драхенбург</b> – мальовничий неоготичний палац, збудований у XIX столітті, з розкішними інтер’єрами та садами.",
+                "<b>Руїни замку Драхенфельс</b> – середньовічні залишки фортеці, що височіють над Рейном.",
+                "<b>Зал Нібелунгів</b> – виставковий зал з експозицією, присвяченою легенді про Нібелунгів.",
+                "<b>Зоопарк рептилій Драхенфельс</b> – невеликий зоопарк з колекцією екзотичних рептилій на схилі гори."
             ]
         },
         full_description: {
@@ -2326,14 +2158,11 @@ const datas = [
     {
         id: "drachenfelsbahn",
         name: "Залізниця Драхенфельса",
-        type: ["technical_structure"],
+        type: ["technical_structure"], top: "popular",
         slug: "drachenfelsbahn",
         hiddenFromList: true, showMore: true,
         path: "drachenfelsbahn",
-        regionsPath: "nrw",
-        districtPath: "koln",
-        cityPath: "konigswinter",
-        countryPath: "germany",
+        countryPath: "germany", regionsPath: "nrw", districtPath: "koln", cityPath: "konigswinter",
         fotoCard: "Germany/nrw/koln/Rhein-Sieg-Kreis/konigswinter/drachenfels/002.jpg",
         officialSite: [
             {
@@ -2381,14 +2210,11 @@ const datas = [
     {
         id: "schloss_drachenburg",
         name: "Палац Драхенбург",
-        type: ["palace_or_castle"],
+        type: ["palace_or_castle"], top: "popular",
         slug: "schloss_drachenburg",
         hiddenFromList: true, showMore: true,
         path: "schloss_drachenburg",
-        regionsPath: "nrw",
-        districtPath: "koln",
-        cityPath: "konigswinter",
-        countryPath: "germany",
+        countryPath: "germany", regionsPath: "nrw", districtPath: "koln", cityPath: "konigswinter",
         fotoCard: "Germany/nrw/koln/Rhein-Sieg-Kreis/konigswinter/drachenfels/001.jpg",
         officialSite: [
             { bold: "Офіційний сайт палацу Драхенбург", link: "https://www.schloss-drachenburg.de" }
@@ -2443,14 +2269,11 @@ const datas = [
     {
         id: "drachenfels_ruins",
         name: "Руїни замку Драхенфельс",
-        type: ["palace_or_castle"],
+        type: ["palace_or_castle"], top: "popular",
         slug: "drachenfels_ruins",
         hiddenFromList: true, showMore: true,
         path: "drachenfels_ruins",
-        regionsPath: "nrw",
-        districtPath: "koln",
-        cityPath: "konigswinter",
-        countryPath: "germany",
+        countryPath: "germany", regionsPath: "nrw", districtPath: "koln", cityPath: "konigswinter",
         fotoCard: "Germany/nrw/koln/Rhein-Sieg-Kreis/konigswinter/drachenfels/003.jpg",
         construction_period: "XII століття (1138–1167)",
         founder: " кельнський архієпископ Арнольд фон Від",
@@ -2487,14 +2310,11 @@ const datas = [
     {
         id: "nibelungenhalle",
         name: "Зал Нібеленгов",
-        type: ["museum"],
+        type: ["museum"], top: "local",
         slug: "nibelungenhalle",
         hiddenFromList: true, showMore: true,
         path: "nibelungenhalle",
-        regionsPath: "nrw",
-        districtPath: "koln",
-        cityPath: "konigswinter",
-        countryPath: "germany",
+        countryPath: "germany", regionsPath: "nrw", districtPath: "koln", cityPath: "konigswinter",
         officialSite: [
             { bold: "Офіційний сайт Залу Нібеленгов", link: "https://nibelungenhalle.de/" }
         ],
@@ -2529,14 +2349,11 @@ const datas = [
     {
         id: "reptile_zoo",
         name: "Зоопарк рептилій Драхенфельс",
-        type: ["nature"],
+        type: ["nature"], top: "local",
         slug: "reptile_zoo",
         hiddenFromList: true, showMore: true,
         path: "reptile_zoo",
-        regionsPath: "nrw",
-        districtPath: "koln",
-        cityPath: "konigswinter",
-        countryPath: "germany",
+        countryPath: "germany", regionsPath: "nrw", districtPath: "koln", cityPath: "konigswinter",
         // officialSite: [ не працює перевірити
         //     { bold: "Офіційний сайт зоопарку", link: "https://www.reptilien-zoo-drachenfels.de" }
         // ],
@@ -2578,6 +2395,143 @@ const datas = [
             ogImage: "https://our-travels.info/foto/Germany/nrw/koln/Rhein-Sieg-Kreis/konigswinter/drachenfels/005.jpg"
         }
     },
+    {
+        id: "heisterbach_konigswinter",
+        name: "Абатство Гайстербах",
+        type: ["historical_building"], top: "popular",
+        path: "heisterbach_konigswinter",
+        countryPath: "germany", regionsPath: "nrw", districtPath: "koln", cityPath: "konigswinter",
+        fotoCard: "Germany/nrw/koln/Rhein-Sieg-Kreis/konigswinter/heisterbach/001.jpg",
+        location: "Кенігсвінтер, Німеччина",
+        officialSite: [
+            { bold: "Офіційний сайт", link: "https://www.klosterlandschaft-heisterbach.de" }
+        ],
+        subObjects: ["chorruine_heisterbach_konigswinter", "st_peter_heisterbach_konigswinter"],
+        short_description_subObjects: {
+            text: "В абатстві розташовані такі пам’ятки: ",
+            items: [
+                "<b>Руїни хора колишньої монастирської церкви</b> – залишки середньовічної церкви, де раніше знаходився монастирський хор.",
+                "<b>Церква Святого Петра</b> – історична церква з характерною архітектурою та значенням для абатства."
+            ]
+        },
+        short_description: "Абатство Гайстербах – колишній цистерціанський монастир XII століття, розташований у долині Гайстербах неподалік від Кенігсвінтера. Після секуляризації на початку XIX століття монастир було ліквідовано, а його територія з часом перетворилася на історико-культурний простір. Сьогодні Гайстербах вважається одним із значущих пам’яток середньовічної монастирської історії регіону Зібенгебірге.",
+        full_description: {
+            title: "Опис та історія",
+            items: [
+                { bold: "Абатство Гайстербах ", text: "– історичний монастирський комплекс цистерціанського ордену, розташований у мальовничій долині Гайстербах біля міста Кенігсвінтер. Сьогодні збережені будівлі комплексу, церква та архітектурні фрагменти є культурним та туристичним об’єктом, об’єднаним із парком та простором для прогулянок. Це місце популярне серед любителів історії, архітектури та природи." },
+                { bold: "Історія. ", text: "Абатство Гайстербах (нім. Kloster Heisterbach) було засноване як цистерціанський монастир наприкінці XII століття за ініціативою архієпископа Кельна Філіпа I фон Гайнсберга. У 1189 році сюди прибули 12 монахів із абатства Гіммерод в Ейфелі під керівництвом абата Германа, які спочатку поселилися у колишньому августинському монастирі на вершині гори Пітерсберг." },
+                { text: "У 1202 році громада перенесла свою обитель вниз у долину Святого Петра (Heisterbachtal), де було закладено новий комплекс – так виникло власне абатство Гайстербах." },
+                { text: "Важливу роль у будівництві монастирської церкви відіграли перші абати: Геррер (1195-1208) почав будівництво, а Генріх (1208-1244) завершив і освятив базиліку у 1237 році. Цей храм став одним із найбільших соборів Рейну епохи середньовіччя, перевищуючи за розмірами всі церкви регіону, крім Кельнського собору. В архітектурі поєднувалися елементи романського та готичного стилів, що відображало перехідний період у будівельному мистецтві XIII століття." },
+                { text: "Абатство швидко стало важливим центром духовного та економічного життя регіону: монахи вели фермерське господарство, управляли значними земельними володіннями, брали участь у релігійних та громадських справах, а також впливали на навколишні поселення." },
+                { text: "Протягом майже 600 років монастир процвітав, але його доля змінилася на початку XIX століття. Внаслідок секуляризації 1803 року – хвилі реформ, ініційованої в період наполеонівських війн та зміни політичної структури Німеччини – абатство було офіційно закрите. Багато монастирських земель та будівель були продані, а церква розібрана на будівельний матеріал (наприклад, камені використовували для великих інфраструктурних проєктів того часу, таких як Північний канал). Незабаром від грандіозної базиліки залишилися лише апсида та руїни хору, які ми бачимо сьогодні." },
+                { bold: "Легенда:", text: "існує місцева легенда про те, що один із найбільших дзвонів монастиря був захований під основою хору, щоб його не конфіскували під час війн – і що вночі можна почути його «нечіткий» дзвін… хоча це радше романтична історія, ніж історичний факт." }
+            ]
+        },
+        tickets_and_entry: {
+            title: "Практична інформація",
+            items: [
+                { bold: "Адреса:", text: "Heisterbacher Tal, 53639 Königswinter, Німеччина" },
+                { bold: "Час відвідування:", text: "цілий рік, краще у ясну погоду" },
+                { bold: "Вхід:", text: "безкоштовно на територію, окремі заходи можуть бути платними" }
+            ]
+        },
+        interestingFacts: {
+            title: "Цікаві факти",
+            items: [
+                { text: "У XIX столітті після секуляризації монастир частково зруйнували, але його руїни збереглися і стали історичною пам’яткою." },
+                { text: "Територія абатства оточена лісами та пагорбами Зібенгебірге – відмінне місце для прогулянок та пікніків." },
+                { text: "У колишніх монастирських будівлях зараз працюють кафе та виставкові простори." },
+                { text: "Іноді у церкві проходять концерти органної музики та культурні заходи." }
+            ]
+        },
+        construction_period: "1189 рік",
+        founder: " монастирська громада цистерціанців з абатства Гіммерод",
+        meta: {
+            title: "Абатство Гайстербах – історія та руїни монастиря у Кенігсвінтері",
+            description: "Абатство Гайстербах – колишній цистерціанський монастир XII століття у долині Гайстербах поруч із Кенігсвінтером. Історія, значення та відвідування історичного комплексу.",
+            ogTitle: "Абатство Гайстербах – середньовічний монастир у долині Гайстербах",
+            ogDescription: "Історичне абатство Гайстербах – одна з найатмосферніших пам’яток середньовічної монастирської архітектури в регіоні Зібенгебірге, неподалік від Кенігсвінтера.",
+            ogImage: "https://our-travels.info/foto/Germany/nrw/koln/Rhein-Sieg-Kreis/konigswinter/heisterbach/001.jpg"
+        }
+    },
+    {
+        id: "chorruine_heisterbach_konigswinter",
+        name: "Руїни хору колишньої монастирської церкви",
+        type: ["historical_building"], top: "local",
+        path: "chorruine_heisterbach_konigswinter",
+        countryPath: "germany", regionsPath: "nrw", districtPath: "koln", cityPath: "konigswinter",
+        hiddenFromList: true, showMore: true,
+        fotoCard: "Germany/nrw/koln/Rhein-Sieg-Kreis/konigswinter/heisterbach/001.jpg",
+        location: "Кенігсвінтер, Німеччина",
+        officialSite: [
+            { bold: "Офіційний сайт", link: "https://www.klosterlandschaft-heisterbach.de" }
+        ],
+        short_description: "Руїни хору колишньої монастирської церкви – найвражаюча та впізнавана частина Абатства Гайстербах. Це єдиний фрагмент величезної готичної базиліки, що зберігся майже в повному обсязі після руйнування монастиря в XIX столітті.",
+        full_description: {
+            title: "Опис та історія",
+            items: [
+                { bold: "Руїни хору колишньої монастирської церкви", text: " – найвражаюча та впізнавана частина Абатства Гайстербах. Це єдиний фрагмент величезної готичної базиліки, що зберігся майже в повному обсязі після руйнування монастиря в XIX столітті." },
+                { text: "Хор був побудований на початку XIII століття та освячений у 1237 році. Він являє собою високий готичний об’єм із масивними стрілчастими арками та тонкими колонами, характерними для архітектури цистерціанського ордену, який дотримувався суворої, аскетичної естетики без надмірного декору." },
+                { text: "Сьогодні руїни хору відкриті під небом і створюють сильне візуальне та емоційне враження: висока кам’яна апсида підкреслює масштаб втраченого собору, стрілчасті арки формують виразну перспективу. Простір часто використовується для фотозйомки, концертів та культурних заходів." },
+                { text: "Руїни хору вважаються одними з найкрасивіших монастирських руїн у Північному Рейні-Вестфалії та символом всього комплексу «Монастирський ландшафт Гайстербах»." }
+            ]
+        },
+        tickets_and_entry: {
+            title: "Практична інформація",
+            items: [
+                { bold: "Адреса:", text: "Heisterbacher Tal, 53639 Königswinter, Німеччина" },
+                { bold: "Найкращий час для відвідування", text: "– ранок або ближче до заходу, коли світло проходить крізь арки та підкреслює структуру каменю." }
+            ]
+        },
+        construction_period: "початок XIII століття",
+        meta: {
+            title: "Руїни хору абатства Гайстербах – історична пам’ятка",
+            description: "Відкрийте для себе вражаючі руїни хору абатства Гайстербах: історія, архітектура та унікальні залишки середньовічного монастиря в Зібенгебірге.",
+            ogTitle: "Руїни хору абатства Гайстербах",
+            ogDescription: "Відвідайте руїни хору абатства Гайстербах та пориньте в атмосферу історії середньовічного монастиря в серці Сівенбергу.",
+            ogImage: "https://our-travels.info/foto/Germany/nrw/koln/Rhein-Sieg-Kreis/konigswinter/heisterbach/001.jpg"
+        }
+    },
+    {
+        id: "st_peter_heisterbach_konigswinter",
+        name: "Церковь Святого Петра в Хайстербахе",
+        type: ["cathedral"], top: "local",
+        path: "st_peter_heisterbach_konigswinter",
+        countryPath: "germany", regionsPath: "nrw", districtPath: "koln", cityPath: "konigswinter",
+        hiddenFromList: true, showMore: true,
+        fotoCard: "Germany/nrw/koln/Rhein-Sieg-Kreis/konigswinter/heisterbach/005.jpg",
+        location: "Кенігсвінтер, Німеччина",
+        short_description: "Церква Святого Петра в Гайстербасі – діюча католицька церква, збудована після секуляризації монастиря на території колишнього абатства. Вона вирізняється камерною архітектурою та спокійною атмосферою, зберігаючи духовну спадщину цистерціанців. Церква відкрита для богослужінь, туристів і культурних заходів, доповнюючи історичні руїни комплексу.",
+        full_description: {
+            title: "Опис та історія",
+            items: [
+                { bold: "Церква Святого Петра в Гайстербасі", text: " – діюча католицька церква, розташована на території колишнього абатства Гайстербах, неподалік від Кенігсвінтера. Сьогодні вона є духовним і архітектурним центром комплексу Монастирський ландшафт Гайстербах." },
+                { bold: "Історичний контекст. ", text: "Нова монастирська церква була збудована у 1953-1956 роках після секуляризації абатства, на місці втрачених монастирських споруд. Попри руйнування більшої частини комплексу на початку XIX століття, духовне життя на цьому місці було збережене та отримало нове архітектурне втілення." },
+                { text: "Церква Святого Петра символізує спадкоємність духовної спадщини цистерціанців, поєднуючи сучасну будівлю з багатовіковою історією колишнього монастиря Гайстербах." },
+                { bold: "Архітектура та інтер’єр. ", text: "Будівля вирізняється простотою форм і камерною атмосферою, що відповідає традиціям цистерціанської духовної спадщини регіону. На відміну від монументальних руїн хору середньовічної монастирської церкви, Церква Святого Петра має стриманий і гармонійний вигляд." },
+                { text: "Особливу історичну цінність має тимпан 1237 року із зображенням пасхального Агнця Божого, перенесений зі зруйнованої абатської церкви та використаний як перемичка вхідного порталу. Біля входу також встановлено два надгробні камені колишніх абатів Гайстербаху." },
+                { text: "Внутрішній простір світлий і лаконічний, з мінімальним декором. Увагу привертають вражаючі вітражі німецького церковного художника Ернста Йоганна Янсена-Вінкеля 1904-1992, а також центральний вівтар і орган, що використовується для богослужінь і концертів." },
+                { bold: "Сучасне використання. ", text: "Сьогодні церква використовується для регулярних католицьких богослужінь, відкрита для відвідувачів протягом дня і слугує майданчиком для духовних та музичних заходів. Свята Меса відправляється у будні в різний час, а також у неділі та святкові дні о 9:45." },
+                { text: "Церква Святого Петра в Гайстербасі є живим духовним центром комплексу і органічно доповнює історичні руїни абатства, створюючи цілісне сприйняття цього унікального місця." }
+            ]
+        },
+        interestingFacts: {
+            title: "Цікаві факти",
+            items: [
+                { text: "Попри втрату монастирських споруд, церква зберігає елементи старого комплексу: кам’яні портали, частини розписів і декоративні елементи." },
+                { text: "Внутрішнє оформлення та архітектура підкреслюють спадкоємність духовної традиції цистерціанців у регіоні." }
+            ]
+        },
+        construction_period: "1953-1956 роки будівництво нової монастирської церкви",
+        founder: " Католицька церковна громада Гайстербаху",
+        meta: {
+            title: "Церква Святого Петра в Гайстербасі – діюча церква абатства Гайстербах",
+            description: "Церква Святого Петра в Гайстербасі – католицька церква 1953–1956 років на території колишнього абатства. Історія, архітектура, вітражі та відвідування в Гайстербасі, Кенігсвінтер.",
+            ogTitle: "Церква Святого Петра в Гайстербасі",
+            ogDescription: "Діюча католицька церква на території колишнього абатства Гайстербах. Збудована у 1953-1956 роках, з унікальним тимпаном XIII століття та вражаючими вітражами.",
+            ogImage: "https://our-travels.info/foto/Germany/nrw/koln/Rhein-Sieg-Kreis/konigswinter/heisterbach/005.jpg"
+        }
+    },
 
     // arnsberg округ
 
@@ -2587,10 +2541,9 @@ const datas = [
     {
         id: "altstadt_luedenscheid",
         name: "Старе місто Люденшайда",
-        type: ["historical_area"],
+        type: ["historical_area"], top: "popular",
         path: "altstadt_luedenscheid",
         countryPath: "germany", regionsPath: "nrw", districtPath: "arnsberg", cityPath: "luedenscheid",
-        
         fotoCard: "Germany/nrw/arnsberg/Märkischer-Kreis/luedenscheid/001.JPG",
         subObjects: ["erloeserkirche_luedenscheid", "brunnen_altstadt_luedenscheid"],
         short_description: "Старе місто Люденшайда – історичне серце міста з вузькими вулицями та кільцевим плануванням навколо церкви Спасителя. Тут збереглися будівлі XVIII–XIX століть, залишки міської стіни та історичний музей, а затишні вулички поєднують минуле з сучасним міським життям.",
@@ -2632,14 +2585,10 @@ const datas = [
     {
         id: "erloeserkirche_luedenscheid",
         name: "Церква Спасителя",
-        type: ["cathedral"],
+        type: ["cathedral"], top: "popular",
         path: "erloeserkirche_luedenscheid",
-        regionsPath: "nrw",
-        districtPath: "arnsberg",
-        cityPath: "luedenscheid",
-        countryPath: "germany",
-        hiddenFromList: true,
-        showMore: true,
+        countryPath: "germany", regionsPath: "nrw", districtPath: "arnsberg", cityPath: "luedenscheid",
+        hiddenFromList: true, showMore: true,
         fotoCard: "Germany/nrw/arnsberg/Märkischer-Kreis/luedenscheid/erloeserkirche_luedenscheid/001.JPG",
         short_description: "Церква Спасителя (Erlöserkirche) – найдавніша церква Люденшайда з класицистичним фасадом, емпорами та лютеранським вівтарем. У центрі старого міста, архітектурна домінанта та культурний центр з концертами й виставками.",
         full_description: {
@@ -2689,14 +2638,11 @@ const datas = [
     {
         id: "brunnen_altstadt_luedenscheid",
         name: "Фонтан у старому місті",
-        type: ["monument_or_fountain"],
+        type: ["monument_or_fountain"], top: "local",
         path: "brunnen_altstadt_luedenscheid",
-        countryPath: "germany",
-        regionsPath: "nrw",
-        districtPath: "arnsberg",
-        cityPath: "luedenscheid",
-        fotoCard: "Germany/nrw/arnsberg/Märkischer-Kreis/luedenscheid/altstadt_luedenscheid/001.JPG",
+        countryPath: "germany", regionsPath: "nrw", districtPath: "arnsberg", cityPath: "luedenscheid",
         hiddenFromList: true,
+        fotoCard: "Germany/nrw/arnsberg/Märkischer-Kreis/luedenscheid/altstadt_luedenscheid/001.JPG",
         short_description: "Фонтан розташований в історичному Старому місті, на площі Graf Engelbert Platz – площі, присвяченій першому засновнику міста. Він був відкритий у 1982 році та подарований місту мешканцями під час реконструкції старого міста, ставши одним із символів оновленої історичної зони. Під час урочистого відкриття місцева влада підкреслила прагнення зробити фонтан «серцем громадського життя» старого міста. Відтоді він входить до числа значущих громадських і культурних об’єктів Люденшайда.",
         short_description2: "Фонтан був створений художником і металургом К.Т. Нойманн, який працював і мешкав у Люденшайді та зробив значний внесок у скульптурне оформлення міста. У дизайні використано фігуру герольда (глашатая), яка символічно підкреслює історичний момент – проголошення міських прав графом Енгельбертом I, засновником Люденшайда. Цей мотив відображений у рельєфах і загальній тематиці композиції.",
         full_description: {
@@ -2719,12 +2665,9 @@ const datas = [
     {
         id: "rathausplatz_luedenscheid",
         name: "Центральна площа Люденшайда",
-        type: ["square"],
+        type: ["square"], top: "local",
         path: "rathausplatz_luedenscheid",
-        countryPath: "germany",
-        regionsPath: "nrw",
-        districtPath: "arnsberg",
-        cityPath: "luedenscheid",
+        countryPath: "germany", regionsPath: "nrw", districtPath: "arnsberg", cityPath: "luedenscheid",
         fotoCard: "Germany/nrw/arnsberg/Märkischer-Kreis/luedenscheid/rathausplatz_lüdenscheid/001.JPG",
         location: "Люденшайд, Німеччина",
         short_description: "Центральна площа Люденшайда (Rathausplatz) – це серце міста та важливий громадський простір, розташований поруч з ратушею та пішохідною зоною. Тут проходять ринки, міські заходи та зустрічі мешканців, а сама площа слугує відправною точкою для ознайомлення з історичним центром міста.",
@@ -2760,19 +2703,19 @@ const datas = [
     {
         id: "sternplatz",
         name: "Площа Штернплац",
-        type: ["square"],
+        type: ["square"], top: "local",
         path: "sternplatz",
-        countryPath: "germany",
-        regionsPath: "nrw",
-        districtPath: "arnsberg",
-        cityPath: "luedenscheid",
+        countryPath: "germany", regionsPath: "nrw", districtPath: "arnsberg", cityPath: "luedenscheid",
         fotoCard: "Germany/nrw/arnsberg/Märkischer-Kreis/luedenscheid/sternplatz/003.jpg",
         location: "Люденшайд, Німеччина",
         subObjects: ["onkel_willi_denkmal_sternplatz_luedenscheid", "fontain_sternplatz_luedenscheid"],
         short_description: "Площа Штернплац (Sternplatz) – центральна площа Люденшайда, розташована в пішохідній зоні історичного центру та є важливою точкою міського життя та зустрічей.",
         short_description_subObjects: {
-            text: "На площі Штернплац розташовані такі пам'ятки:",
-            items: ["Пам'ятник дядьку Віллі", "Фонтан Нойманна"]
+            text: "На площі Штернплац розташовані такі пам’ятки:",
+            items: [
+                "<b>Пам’ятник дядькові Віллі</b> – бронзова скульптура типового жителя Люденшайда з собакою.",
+                "<b>Фонтан Нойманна</b> – декоративний фонтан, створений скульптором Куртом Тоні Нейманом."
+            ]
         },
         full_description: {
             title: "Опис та історія",
@@ -2800,15 +2743,11 @@ const datas = [
     {
         id: "onkel_willi_denkmal_sternplatz_luedenscheid",
         name: "Пам'ятник дядьку Віллі",
-        type: ["monument_or_fountain"],
+        type: ["monument_or_fountain"], top: "local",
         path: "onkel_willi_denkmal_sternplatz_luedenscheid",
-        countryPath: "germany",
-        regionsPath: "nrw",
-        districtPath: "arnsberg",
-        cityPath: "luedenscheid",
+        countryPath: "germany", regionsPath: "nrw", districtPath: "arnsberg", cityPath: "luedenscheid",
         fotoCard: "Germany/nrw/arnsberg/Märkischer-Kreis/luedenscheid/sternplatz/001.JPG",
-        hiddenFromList: true,
-        showMore: true,
+        hiddenFromList: true, showMore: true,
         short_description: "Пам'ятник дядьку Віллі – бронзова скульптура на Sternplatz, що зображує типового мешканця Люденшайда з собакою. Є неофіційним символом міста та відображає його повсякденну, «живу» атмосферу.",
         full_description: {
             title: "Опис та історія",
@@ -2831,15 +2770,11 @@ const datas = [
     {
         id: "fontain_sternplatz_luedenscheid",
         name: "Фонтан на площі Штернплац",
-        type: ["monument_or_fountain"],
+        type: ["monument_or_fountain"], top: "local",
         path: "fontain_sternplatz_luedenscheid",
-        countryPath: "germany",
-        regionsPath: "nrw",
-        districtPath: "arnsberg",
-        cityPath: "luedenscheid",
+        countryPath: "germany", regionsPath: "nrw", districtPath: "arnsberg", cityPath: "luedenscheid",
         fotoCard: "Germany/nrw/arnsberg/Märkischer-Kreis/luedenscheid/sternplatz/003.jpg",
-        hiddenFromList: true,
-        showMore: true,
+        hiddenFromList: true, showMore: true,
         short_description: "Фонтан на площі Штернплац – декоративний водоймище в центрі площі, створений наприкінці 1970-х років скульптором Куртом Тоні Нойманом. Став значущим міським об’єктом та місцем відпочинку в пішохідній зоні Люденшайда.",
         full_description: {
             title: "Опис та історія",
@@ -2862,12 +2797,9 @@ const datas = [
     {
         id: "history_museum_luedenscheid",
         name: "Історичний музей Люденшайда",
-        type: ["museum"],
+        type: ["museum"], top: "local",
         path: "history_museum_luedenscheid",
-        countryPath: "germany",
-        regionsPath: "nrw",
-        districtPath: "arnsberg",
-        cityPath: "luedenscheid",
+        countryPath: "germany", regionsPath: "nrw", districtPath: "arnsberg", cityPath: "luedenscheid",
         fotoCard: "Germany/nrw/arnsberg/Märkischer-Kreis/luedenscheid/history_museum_luedenscheid/001.JPG",
         location: "Люденшайд, Німеччина",
         officialSite: [

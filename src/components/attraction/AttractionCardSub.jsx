@@ -3,13 +3,25 @@ import { Link } from 'react-router';
 
 const BASE_PHOTO_URL = import.meta.env.VITE_BASE_PHOTO_URL;
 
-const AttractionCardSub = ({ attr, lang }) => {
+const more = { ru: "Подробнее", ua: "Докладніше", de: "Weitere Details" };
+const ratingLabel = { ru: "Рейтинг", ua: "Рейтинг", de: "Bewertung" };
+const topOptionLabel = { top: { ru: "Топовый", ua: "Топовий", de: "Top" }, popular: { ru: "Популярный", ua: "Популярний", de: "Beliebt" }, local: { ru: "Локальный", ua: "Локальний", de: "Lokal" } };
 
-    const more = { ru: "Подробнее", ua: "Докладніше", de: "Weitere Details" };
+const AttractionCardSub = ({ attr, lang }) => {
 
     return (
         <div className='attrCard'>
             <div className='attrCard__title'>{attr.name}</div>
+
+            <div className='attrCard__rating'>
+                {attr.top && (
+                    <span>
+                        <span className='attrCard__rating-label'>{ratingLabel[lang]}:</span>{' '}
+                        <span className='attrCard__rating-value'>{topOptionLabel[attr.top][lang]}</span>
+                    </span>
+                )}
+            </div>
+
             <div className='attrCard__desc'>
                 {attr.fotoCard && (
                     <div className='attrCard__desc-foto'>

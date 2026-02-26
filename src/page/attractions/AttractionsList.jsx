@@ -18,26 +18,26 @@ const AttractionsList = () => {
     const [filters, setFilters] = useState({
         type: 'all',
         unesco: 'all',
-        sort: 'name-asc',
+        sort: 'rating',
     });
 
 
     useEffect(() => {
-    const base = attractionsTitle[lang];
+        const base = attractionsTitle[lang];
 
-    const locationName =
-        city?.name ||
-        district?.name ||
-        parentSubRegion?.name ||
-        region?.name ||
-        country?.name ||
-        '';
+        const locationName =
+            city?.name ||
+            district?.name ||
+            parentSubRegion?.name ||
+            region?.name ||
+            country?.name ||
+            '';
 
-    document.title = locationName
-        ? `${base} – ${locationName}`
-        : base;
+        document.title = locationName
+            ? `${base} – ${locationName}`
+            : base;
 
-}, [city, district, parentSubRegion, region, country, lang]);
+    }, [city, district, parentSubRegion, region, country, lang]);
 
     if (error) return <p>{error}</p>;
     if (!country || !region) return <p>Loading...</p>;
@@ -48,22 +48,28 @@ const AttractionsList = () => {
         if (cityPath && attr.cityPath !== cityPath) return false;
         if (districtPath && attr.districtPath !== districtPath) return false;
 
-            // Тип: добавляем type саб-объектов
-    let allTypes = [...attr.type];
+        // Тип: добавляем type саб-объектов
+        let allTypes = [...attr.type];
 
-    if (attr.subObjects?.length > 0) {
-        attr.subObjects.forEach(subId => {
-            const subAttr = attractions.find(a => a.id === subId);
-            if (subAttr) allTypes.push(...subAttr.type);
-        });
-    }
+        if (attr.subObjects?.length > 0) {
+            attr.subObjects.forEach(subId => {
+                const subAttr = attractions.find(a => a.id === subId);
+                if (subAttr) allTypes.push(...subAttr.type);
+            });
+        }
 
         // Фильтр по типу
-    if (filters.type === 'palace_or_castle') {
-        if (!allTypes.includes('palace') && !allTypes.includes('castle')) return false;
-    } else if (filters.type !== 'all' && !allTypes.includes(filters.type)) {
-        return false;
-    }
+        if (filters.type === 'palace_or_castle') {
+            if (!allTypes.includes('palace') && !allTypes.includes('castle')) return false;
+        } else if (filters.type !== 'all' && !allTypes.includes(filters.type)) {
+            return false;
+        }
+
+        // Фильтр по рейтингу
+        if (filters.top === 'top' && attr.top !== 'top') return false;
+        if (filters.top === 'popular' && attr.top !== 'popular') return false;
+        if (filters.top === 'local' && attr.top !== 'local') return false;
+
 
         // Фильтр по ЮНЕСКО
         if (filters.unesco === 'yes' && !attr.unesco_status?.included) return false;
@@ -71,20 +77,30 @@ const AttractionsList = () => {
 
         // не показывать сабобъекты
         if (attr.hiddenFromList) return false;
-        
+
         return true;
     }) || [];
 
     // Сортировка
-    const sortedAttractions = [...filteredAttractions].sort((a, b) => {
-        if (filters.sort === 'name-asc') {
-            return (a?.name || '').localeCompare(b?.name || '');
-        }
-        if (filters.sort === 'name-desc') {
-            return (b?.name || '').localeCompare(a?.name || '');
-        }
-        return 0;
-    });
+const sortedAttractions = [...filteredAttractions].sort((a, b) => {
+    if (filters.sort === 'name-asc') {
+        return (a?.name || '').localeCompare(b?.name || '');
+    }
+    if (filters.sort === 'name-desc') {
+        return (b?.name || '').localeCompare(a?.name || '');
+    }
+
+    const ratingOrder = { top: 3, popular: 2, local: 1 };
+
+    const aRating = ratingOrder[a.top] || 0;
+    const bRating = ratingOrder[b.top] || 0;
+
+    if (bRating !== aRating) {
+        return bRating - aRating; 
+    }
+
+    return (a?.name || '').localeCompare(b?.name || '');
+});
 
     // Хлебные крошки
     const crumbs = [

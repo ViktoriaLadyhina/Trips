@@ -15,6 +15,14 @@ const attractionTypes = [
   { value: 'square', ru: 'Площадь', ua: 'Площа', de: 'Platz' },
 ];
 
+// === Топовость фильтр ===
+const topOptions = [
+  { value: 'all', ru: 'Все достопримечательности', ua: 'Усі пам’ятки', de: 'Alle Sehenswürdigkeiten' },
+  { value: 'top', ru: 'Топовые', ua: 'Топові', de: 'Top' },
+  { value: 'popular', ru: 'Популярные', ua: 'Популярні', de: 'Beliebt' },
+  { value: 'local', ru: 'Локальные', ua: 'Локальні', de: 'Lokal' },
+];
+
 // === ЮНЕСКО фильтр ===
 const unescoOptions = [
   { value: 'all', ru: 'Все достопримечательности', ua: 'Усі пам’ятки', de: 'Alle Sehenswürdigkeiten' },
@@ -24,6 +32,7 @@ const unescoOptions = [
 
 // === Сортировка ===
 const sortOptions = [
+  { value: 'rating', ru: 'По рейтингу', ua: 'За рейтингом', de: 'Nach Bewertung' },
   { value: 'name-asc', ru: 'По названию A–Z', ua: 'За назвою A–Z', de: 'Nach Name A–Z' },
   { value: 'name-desc', ru: 'По названию Z–A', ua: 'За назвою Z–A', de: 'Nach Name Z–A' }
 ];
@@ -42,6 +51,18 @@ const AttractionsFilters = ({ lang, filters, setFilters }) => {
         onChange={e => handleChange('type', e.target.value)}
       >
         {attractionTypes.map(opt => (
+          <option key={opt.value} value={opt.value}>
+            {opt[lang]}
+          </option>
+        ))}
+      </select>
+
+      {/* Топовость */}
+      <select
+        value={filters.top}
+        onChange={e => handleChange('top', e.target.value)}
+      >
+        {topOptions.map(opt => (
           <option key={opt.value} value={opt.value}>
             {opt[lang]}
           </option>

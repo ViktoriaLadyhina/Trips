@@ -4,8 +4,8 @@ const datas = [
     {
         id: "altstadt_koln",
         name: "Старый город Кёльна",
-        type: ["historical_area"],
-        path: "altstadt_koln",
+        type: ["historical_area"], top: "top",
+        path: "altstadt_koln",        
         countryPath: "germany", regionsPath: "nrw", districtPath: "city", cityPath: "koln",
         fotoCard: "Germany/nrw/koln/koln-city/altstadt/001.jpg",
         location: "Кёльн, Германия",
@@ -54,8 +54,8 @@ const datas = [
     {
         id: "cologne_cathedral",
         name: "Кёльнский собор",
-        type: ["cathedral"],
-        path: "cologne-cathedral",
+        type: ["cathedral"], top: "top",
+        path: "cologne-cathedral",        
         countryPath: "germany", regionsPath: "nrw", districtPath: "city",  cityPath: "koln",
         showMore: true, hiddenFromList: true,
         fotoCard: "Germany/nrw/koln/koln-city/koln-cathedral/001.jpg",
@@ -126,8 +126,8 @@ const datas = [
     {
         id: "rathaus_koln",
         name: "Кёльнская ратуша",
-        type: ['historical_building'],
-        path: "rathaus_koln",
+        type: ['historical_building'], top: "popular",
+        path: "rathaus_koln",        
         countryPath: "germany", regionsPath: "nrw", districtPath: "city", cityPath: "koln",
         showMore: true, hiddenFromList: true,
         fotoCard: "Germany/nrw/koln/koln-city/rathaus-koeln/Rathaus-Köln.jpg",
@@ -183,8 +183,8 @@ const datas = [
     {
         id: "guerzenich_koln",
         name: "Гюрцених – исторический концертный зал и гильдейский дом в Кёльне",
-        type: ["historical_building"],
-        path: "guerzenich_koln",
+        type: ["historical_building"], top: "popular",
+        path: "guerzenich_koln",        
         countryPath: "germany", regionsPath: "nrw", districtPath: "city", cityPath: "koln",
         showMore: true, hiddenFromList: true,
         fotoCard: "Germany/nrw/koln/koln-city/guerzenich_koln/001.jpg",
@@ -243,8 +243,8 @@ const datas = [
     {
         id: "roemisch_germanisches_museum",
         name: "Римско-германский музей",
-        type: ["museum"],
-        path: "roemisch-germanisches-museum",
+        type: ["museum"], top: "popular",
+        path: "roemisch-germanisches-museum",        
         countryPath: "germany", regionsPath: "nrw", districtPath: "city", cityPath: "koln",
         showMore: true, hiddenFromList: true,
         fotoCard: "Germany/nrw/koln/koln-city/roemisch-germanisches-museum/001.jpg",
@@ -297,8 +297,8 @@ const datas = [
     {
         id: "farina_duftmuseum",
         name: "Музей духов в доме Фарина",
-        type: ["museum"],
-        path: "farina-duftmuseum",
+        type: ["museum"], top: "popular",
+        path: "farina-duftmuseum",        
         countryPath: "germany", regionsPath: "nrw", districtPath: "city", cityPath: "koln",
         showMore: true, hiddenFromList: true,
         fotoCard: "Germany/nrw/koln/koln-city/farina-duftmuseum/001.jpg",
@@ -349,8 +349,8 @@ const datas = [
     {
         id: "museum_ludwig",
         name: "Музей Людвига",
-        type: ["museum"],
-        path: "museum-ludwig",
+        type: ["museum"], top: "popular",
+        path: "museum-ludwig",        
         countryPath: "germany", regionsPath: "nrw", districtPath: "city", cityPath: "koln",
         showMore: true, hiddenFromList: true,
         fotoCard: "Germany/nrw/koln/koln-city/museum-ludwig/001.jpg",
@@ -404,7 +404,7 @@ const datas = [
     {
         id: "schokoladenmuseum",
         name: "Музей шоколада",
-        type: ["museum"],
+        type: ["museum"], top: "popular",
         path: "schokoladenmuseum",
         countryPath: "germany", regionsPath: "nrw", districtPath: "city", cityPath: "koln",
         fotoCard: "Germany/nrw/koln/koln-city/schokoladenmuseum/001.jpg",
@@ -458,8 +458,8 @@ const datas = [
     {
         id: "miqua",
         name: "Музей в археологическом квартале Кёльна – MiQua",
-        type: ["museum"],
-        path: "miqua",
+        type: ["museum"], top: "popular",
+        path: "miqua",        
         countryPath: "germany", regionsPath: "nrw", districtPath: "city", cityPath: "koln",
         showMore: true, hiddenFromList: true,
         fotoCard: "Germany/nrw/koln/koln-city/miqua/001.jpg",
@@ -532,7 +532,7 @@ const datas = [
     {
         id: "wallraf_richartz_museum",
         name: "Музей Вальрафа-Рихарца",
-        type: ["museum"],
+        type: ["museum"], top: "popular",
         path: "wallraf_richartz_museum",
         countryPath: "germany", regionsPath: "nrw", districtPath: "city", cityPath: "koln",
         showMore: true, hiddenFromList: true,
@@ -591,7 +591,7 @@ const datas = [
     {
         id: "ostasiatische_kunst_koln",
         name: "Музей восточно‑азиатского искусства",
-        type: ["museum"],
+        type: ["museum"], top: "popular",
         path: "ostasiatische_kunst_koln",
         countryPath: "germany", regionsPath: "nrw", districtPath: "city", cityPath: "koln",
         fotoCard: "Germany/nrw/koln/koln-city/ostasiatische_kunst_koln/001.jpg",
@@ -645,7 +645,7 @@ const datas = [
     {
         id: "museum_schnuetgen_koln",
         name: "Музей Шнютгена",
-        type: ["museum", 'cathedral'],
+        type: ["museum", 'cathedral'], top: "popular",
         path: "museum_schnuetgen_koln",
         countryPath: "germany", regionsPath: "nrw", districtPath: "city", cityPath: "koln",
         fotoCard: "Germany/nrw/koln/koln-city/schnuetgen/001.jpg",
@@ -707,7 +707,7 @@ const datas = [
     {
         id: "rautenstrauch_joest_museum_koln",
         name: "Музей Раутенштраух-Йост – Культуры мира",
-        type: ["museum"],
+        type: ["museum"], top: "popular",
         path: "rautenstrauch_joest_museum_koln",
         countryPath: "germany", regionsPath: "nrw", districtPath: "city", cityPath: "koln",
         fotoCard: "Germany/nrw/koln/koln-city/rautenstrauch_joest_museum/001.jpg",
@@ -766,7 +766,7 @@ const datas = [
     {
         id: "dufthaus_4711_koln",
         name: "Дом одеколона 4711",
-        type: ["museum"],
+        type: ["museum"], top: "popular",
         path: "dufthaus_4711_koln",
         countryPath: "germany", regionsPath: "nrw", districtPath: "city", cityPath: "koln",
         showMore: true, hiddenFromList: true,
@@ -827,7 +827,7 @@ const datas = [
     {
         id: "makk_museum_koln",
         name: "Музей прикладного искусства",
-        type: ["museum"],
+        type: ["museum"], top: "popular",
         path: "makk_museum_koln",
         countryPath: "germany", regionsPath: "nrw", districtPath: "city", cityPath: "koln",
         fotoCard: "Germany/nrw/koln/koln-city/makk_museum/001.JPG",
@@ -884,8 +884,8 @@ const datas = [
     {
         id: "stadtmuseum_koln",
         name: "Кельнский городской музей",
-        type: ["museum"],
-        path: "stadtmuseum_koln",
+        type: ["museum"], top: "popular",
+        path: "stadtmuseum_koln",        
         countryPath: "germany", regionsPath: "nrw", districtPath: "city", cityPath: "koln",
         showMore: true, hiddenFromList: true,
         fotoCard: "Germany/nrw/koln/koln-city/stadtmuseum/001.jpg",
@@ -941,7 +941,7 @@ const datas = [
     {
         id: "sport_olympia_museum_koln",
         name: "Немецкий музей спорта и Олимпийских игр",
-        type: ["museum"],
+        type: ["museum"], top: "popular",
         path: "sport_olympia_museum_koln",
         countryPath: "germany", regionsPath: "nrw", districtPath: "city", cityPath: "koln",
         fotoCard: "Germany/nrw/koln/koln-city/sport_olympia_museum/001.jpg",
@@ -998,7 +998,7 @@ const datas = [
     {
         id: "photographische_sammlung_sk_stiftung_kultur_koln",
         name: "Фотографическая коллекция культурного фонда SK",
-        type: ["museum"],
+        type: ["museum"], top: "local",
         path: "photographische_sammlung_sk_stiftung_kultur_koln",
         countryPath: "germany", regionsPath: "nrw", districtPath: "city", cityPath: "koln",
         fotoCard: "Germany/nrw/koln/koln-city/photographische_sammlung_sk_stiftung_kultur/001.jpg",
@@ -1053,7 +1053,7 @@ const datas = [
     {
         id: "koln_bridges",
         name: "Мосты Кёльна через Рейн",
-        type: ["technical_structure"],
+        type: ["technical_structure"], top: "popular",
         path: "koln_bridges",
         countryPath: "germany", regionsPath: "nrw", districtPath: "city", cityPath: "koln",
         fotoCard: "Germany/nrw/koln/koln-city/koln_bridges/001.jpg",
@@ -1105,7 +1105,7 @@ const datas = [
     {
         id: "skulpturenpark_koln",
         name: "Парк скульптур в Кёльне",
-        type: ["museum", 'nature', 'monument_or_fountain'],
+        type: ["museum", 'nature', 'monument_or_fountain'], top: "local",
         path: "skulpturenpark_koln",
         countryPath: "germany", regionsPath: "nrw", districtPath: "city", cityPath: "koln",
         fotoCard: "Germany/nrw/koln/koln-city/skulpturenpark/001.jpg",
@@ -1155,7 +1155,7 @@ const datas = [
     {
         id: "zoo_koln",
         name: "Кёльнский зоопарк",
-        type: ["nature"],
+        type: ["nature"], top: "popular",
         path: "zoo_koln",
         countryPath: "germany", regionsPath: "nrw", districtPath: "city", cityPath: "koln",
         fotoCard: "Germany/nrw/koln/koln-city/zoo/001.jpg",
@@ -1215,7 +1215,7 @@ const datas = [
     {
         id: "forstbotanischer_garten",
         name: "Ботанический сад и лесопарк",
-        type: ["nature"],
+        type: ["nature"], top: "popular",
         path: "forstbotanischer_garten",
         countryPath: "germany", regionsPath: "nrw", districtPath: "city", cityPath: "koln",
         fotoCard: "Germany/nrw/koln/koln-city/forstbotanischer_garten/001.jpg",
@@ -1281,7 +1281,7 @@ const datas = [
     {
         id: "flora_garten_koln",
         name: "Ботанический сад Флора",
-        type: ["nature"],
+        type: ["nature"], top: "popular",
         path: "flora_garten_koln",
         countryPath: "germany", regionsPath: "nrw", districtPath: "city", cityPath: "koln",
         fotoCard: "Germany/nrw/koln/koln-city/flora_garten_koln/001.jpg",
@@ -1337,7 +1337,7 @@ const datas = [
     {
         id: "rheinpark_koln",
         name: "Рейнский парк",
-        type: ["nature"],
+        type: ["nature"], top: "popular",
         path: "rheinpark_koln",
         countryPath: "germany", regionsPath: "nrw", districtPath: "city", cityPath: "koln",
         fotoCard: "Germany/nrw/koln/koln-city/rheinpark_koln/001.jpg",
@@ -1390,7 +1390,7 @@ const datas = [
     {
         id: "tanzbrunnen",
         name: "Танцующий фонтан",
-        type: ["monument_or_fountain"],
+        type: ["monument_or_fountain"], top: "popular",
         path: "tanzbrunnen",
         countryPath: "germany", regionsPath: "nrw", districtPath: "city", cityPath: "koln",
         fotoCard: "Germany/nrw/koln/koln-city/rheinpark_koln/002.jpg",
@@ -1398,8 +1398,7 @@ const datas = [
         officialSite: [
             { bold: "Официальная страница Tanzbrunnen (через KölnKongress)", link: "https://koelncongress.de/locations/tanzbrunnen-koeln/" }
         ],
-        hiddenFromList: true,
-        showMore: true,
+        hiddenFromList: true, showMore: true,
         short_description: "На южной окраине Рейнского парка расположен Танцующий фонтан – один из самых известных культурных объектов Кёльна. Комплекс включает открытую площадку, амфитеатр, крытые зоны и зелёные насаждения, создавая удобное пространство для концертов, фестивалей, танцевальных вечеринок и других культурных мероприятий.",
         full_description: {
             title: "Описание и история",
@@ -1431,7 +1430,7 @@ const datas = [
     {
         id: "koln_seilbahn",
         name: "Кёльнская канатная дорога",
-        type: ["technical_structure"],
+        type: ["technical_structure"], top: "popular",
         path: "koln_seilbahn",
         countryPath: "germany", regionsPath: "nrw", districtPath: "city", cityPath: "koln",
         fotoCard: "Germany/nrw/koln/koln-city/rheinpark_koln/003.jpg",
@@ -1486,7 +1485,7 @@ const datas = [
     {
         id: "divitia_koln",
         name: "Руины римского форта Дивития в Кёльне",
-        type: ["historical_building"],
+        type: ["historical_building"], top: "local",
         path: "divitia_koln",
         countryPath: "germany", regionsPath: "nrw", districtPath: "city", cityPath: "koln",
         fotoCard: "Germany/nrw/koln/koln-city/rheinpark_koln/004.jpg",
@@ -1540,7 +1539,7 @@ const datas = [
     {
         id: "finkens_garten_koln",
         name: "Экологический сад Финкенсгартен",
-        type: ["nature"],
+        type: ["nature"], top: "local",
         path: "finkens_garten_koln",
         countryPath: "germany", regionsPath: "nrw", districtPath: "city", cityPath: "koln",
         fotoCard: "Germany/nrw/koln/koln-city/finkens_garten/001.jpg",
@@ -1597,7 +1596,7 @@ const datas = [
     {
         id: "historic_center_monschau",
         name: "Старый город Моншау",
-        type: ["historical_area"],
+        type: ["historical_area"], top: "popular",
         path: "historic_center_monschau",
         countryPath: "germany",
         regionsPath: "nrw",
@@ -1639,7 +1638,7 @@ const datas = [
     {
         id: "burg_monschau",
         name: "Замок Моншау ",
-        type: ["palace_or_castle"],
+        type: ["palace_or_castle"], top: "local",
         path: "burg_monschau",
         countryPath: "germany",
         regionsPath: "nrw",
@@ -1691,11 +1690,9 @@ const datas = [
     {
         id: "bruhel_palaces",
         name: "Дворцы Брюля: ансамбль Аугустусбург и Фалькенлюст",
-        type: ['palace', 'museum'],
+        type: ['palace', 'museum'], top: "top",
         path: 'bruhl_palaces',
-        regionsPath: "nrw",
-        districtPath: "koln",
-        cityPath: "bruhl",
+        regionsPath: "nrw", districtPath: "koln", cityPath: "bruhl",
         fotoCard: "Germany/nrw/koln/Rhein-Erft-Kreis/bruhl/bruhl_palaces/001.jpg",
         location: "Брюль, Германия",
         address: [{ bold: "Адрес:", text: " Schloss Augustusburg — Max-Ernst-Allee, 50321 Brühl, Deutschland <br>Schloss Falkenlust — An Schloss Falkenlust 1, 50321 Brühl, Deutschland" }],
@@ -1754,11 +1751,9 @@ const datas = [
     {
         id: "max_ernst_museum",
         name: "Музей Макса Эрнста",
-        type: ['museum'],
+        type: ['museum'], top: "popular",
         path: "max-ernst-museum",
-        regionsPath: "nrw",
-        districtPath: "koln",
-        cityPath: "bruhl",
+        regionsPath: "nrw", districtPath: "koln", cityPath: "bruhl",
         fotoCard: "Germany/nrw/koln/Rhein-Erft-Kreis/bruhl/max_ernst_museum/Max-Ernst-Museum.jpg",
         location: "Брюль, Германия",
         address: [{ bold: "Адрес:", text: " Comesstraße 42 / Max-Ernst-Allee 1, 50321 Brühl, Deutschland" }],
@@ -1803,11 +1798,9 @@ const datas = [
     {
         id: "phantasialand",
         name: "Парк развлечений Phantasialand",
-        type: ['amusement_park'],
+        type: ['amusement_park'], top: "popular",
         path: "phantasialand",
-        regionsPath: "nrw",
-        districtPath: "koln",
-        cityPath: "bruhl",
+        regionsPath: "nrw", districtPath: "koln", cityPath: "bruhl",
         fotoCard: "Germany/nrw/koln/Rhein-Erft-Kreis/bruhl/phantasialand/001.jpg",
         location: "Брюль, Германия",
         address: [{ bold: "Адрес:", text: " Berggeiststraße 31–41, 50321 Brühl, Deutschland" }],
@@ -1862,11 +1855,9 @@ const datas = [
     {
         id: "keramion_frechen",
         name: "Керамион – центр современной и исторической керамики",
-        type: ['museum'],
+        type: ['museum'], top: "local",
         path: "keramion",
-        regionsPath: "nrw",
-        districtPath: "koln",
-        cityPath: "frechen",
+        regionsPath: "nrw", districtPath: "koln", cityPath: "frechen",
         fotoCard: "Germany/nrw/koln/Rhein-Erft-Kreis/frechen/keramion/frechen_keramion.jpg",
         location: "Фрехен, Германия",
         address: [{ bold: "Адрес:", text: " Bonnstraße 12, 50226 Frechen, Deutschland" }],
@@ -1914,11 +1905,9 @@ const datas = [
     {
         id: "burg_bachem_frechen",
         name: "Крепость Бахем – историческая водяная крепость во Фрехене",
-        type: ['castle'],
+        type: ['castle'], top: "local",
         path: "burg-bachem",
-        regionsPath: "nrw",
-        districtPath: "koln",
-        cityPath: "frechen",
+        regionsPath: "nrw", districtPath: "koln", cityPath: "frechen",
         fotoCard: "Germany/nrw/koln/Rhein-Erft-Kreis/frechen/burg-bachem/Burg-Bachem_3.jpg",
         location: "Фрехен, Германия",
         address: [{ bold: "Адрес:", text: " Schloßstraße 8, 50226 Frechen, Deutschland" }],
@@ -1964,11 +1953,9 @@ const datas = [
     {
         id: "johann_schmitz_platz_frechen",
         name: "Площадь Йоханна Шмитца («площадь Ратуши»)",
-        type: ['square'],
+        type: ['square'], top: "local",
         path: "johann_schmitz_platz_frechen",
-        regionsPath: "nrw",
-        districtPath: "koln",
-        cityPath: "frechen",
+        regionsPath: "nrw", districtPath: "koln", cityPath: "frechen",
         fotoCard: "Germany/nrw/koln/Rhein-Erft-Kreis/frechen/johann_schmitz_platz_frechen/006.jpg",
         location: "Фрехен, Германия",
         address: [{ bold: "Адрес:", text: " Johann-Schmitz-Platz, 50226 Frechen, Deutschland" }],
@@ -2014,15 +2001,10 @@ const datas = [
     {
         id: "altes_rathaus_frechen",
         name: "Старая ратуша Фрехена",
-        type: ['historical_building'],
+        type: ['historical_building'], top: "local",
         path: "altes_rathaus_frechen",
-        slug: "altes_rathaus_frechen",
-        hiddenFromList: true,
-        showMore: true,
-        regionsPath: "nrw",
-        districtPath: "koln",
-        cityPath: "frechen",
-        countryPath: "germany",
+        countryPath: "germany", regionsPath: "nrw", districtPath: "koln", cityPath: "frechen",
+        hiddenFromList: true,  showMore: true,
         fotoCard: "Germany/nrw/koln/Rhein-Erft-Kreis/frechen/johann_schmitz_platz_frechen/008.jpg",
         location: "Фрехен, Германия",
         address: [{ bold: "Адрес:", text: " Johann-Schmitz-Platz, 50226 Frechen, Deutschland" }],
@@ -2065,13 +2047,10 @@ const datas = [
     {
         id: "rathausbrunnen_frechen",
         name: "Фонтан перед ратушей",
-        type: ['monument_or_fountain'],
+        type: ['monument_or_fountain'], top: "local",
         path: "rathausbrunnen_frechen",
+        countryPath: "germany", regionsPath: "nrw", districtPath: "koln", cityPath: "frechen",
         hiddenFromList: true,
-        regionsPath: "nrw",
-        districtPath: "koln",
-        cityPath: "frechen",
-        countryPath: "germany",
         fotoCard: "Germany/nrw/koln/Rhein-Erft-Kreis/frechen/johann_schmitz_platz_frechen/005.jpg",
         short_description: "На площади перед старой ратушей находится декоративный районный фонтан, созданный в 1981 году художником керамистом Вим Мюлендик (Wim Mühlendyck). Он облицован керамическими плитами с рельефными изображениями сцен, отражающими развитие ремесел и керамической промышленности Фрехена – от традиционных мастеров до заводского производства, а разнообразные маскароны (лица) служат характерными водными струями фонтана.",
         full_description: {
@@ -2092,13 +2071,10 @@ const datas = [
     {
         id: "klüttenbrunnen_frechen",
         name: "Фонтан Клюттенбрюннен",
-        type: ['monument_or_fountain'],
+        type: ['monument_or_fountain'], top: "local",
         path: "klüttenbrunnen_frechen",
-        hiddenFromList: true,
-        regionsPath: "nrw",
-        districtPath: "koln",
-        cityPath: "frechen",
-        countryPath: "germany",
+        countryPath: "germany", regionsPath: "nrw", districtPath: "koln", cityPath: "frechen",
+        hiddenFromList: true,  
         fotoCard: "Germany/nrw/koln/Rhein-Erft-Kreis/frechen/johann_schmitz_platz_frechen/004.jpg",
         short_description: "В пешеходной зоне в 1986 году установлен скульптурный фонтан Клюттенбрюннен (Klüttenbrunnen), авторства немецкого скульптора Олафа Хёнена. Он расположен в пешеходной зоне рядом с площадью Йоханна Шмитца и отражает промышленную и ремесленную историю Фрехена, в частности добычу и обработку местной глины. Фонтан оформлен как художественная композиция с каменными элементами и водными струями, гармонируя с городской средой и служа визуальным ориентиром для туристов.",
         full_description: {
@@ -2123,11 +2099,9 @@ const datas = [
     {
         id: "drachenfels",
         name: "Гора Драхенфельс",
-        type: ["nature"],
+        type: ["nature"], top: "top",
         path: "drachenfels",
-        regionsPath: "nrw",
-        districtPath: "koln",
-        cityPath: "konigswinter",
+        regionsPath: "nrw", districtPath: "koln", cityPath: "konigswinter",
         fotoCard: "Germany/nrw/koln/Rhein-Sieg-Kreis/konigswinter/drachenfels/001.jpg",
         location: "между городами Кёнигсвинтер и Бад-Хоннеф, Германия",
         officialSite: [
@@ -2137,11 +2111,11 @@ const datas = [
         short_description_subObjects: {
             text: "На горе Драхенфельс расположены такие достопримечательности: ",
             items: [
-                "Железная дорога Драхенфельс",
-                "Дворец Драхенбург",
-                "Руины замка Драхенфельс",
-                "Зал Нибелунгов",
-                "Зоопарк рептилий Драхенфельс"
+                "<b>Железная дорога Драхенфельс</b> – историческая железная дорога, соединяющая долину Рейна с вершиной горы, открывающая панорамные виды.",
+                "<b>Дворец Драхенбург</b> – живописный неоготический дворец, построенный в XIX веке, с богатыми интерьерами и садами.",
+                "<b>Руины замка Драхенфельс</b> – средневековые остатки крепости, возвышающиеся над Рейном.",
+                "<b>Зал Нибелунгов</b> – выставочный зал с экспозицией, посвящённой легенде о Нибелунгах.",
+                "<b>Зоопарк рептилий Драхенфельс</b> – небольшой зоопарк с коллекцией экзотических рептилий на склоне горы."
             ]
         },
         full_description: {
@@ -2188,14 +2162,11 @@ const datas = [
     {
         id: "drachenfelsbahn",
         name: "Железная дорога Драхенфельс",
-        type: ["technical_structure"],
+        type: ["technical_structure"], top: "popular",
         hiddenFromList: true,
         showMore: true,
         path: "drachenfelsbahn",
-        regionsPath: "nrw",
-        districtPath: "koln",
-        cityPath: "konigswinter",
-        countryPath: "germany",
+        countryPath: "germany", regionsPath: "nrw", districtPath: "koln", cityPath: "konigswinter",        
         fotoCard: "Germany/nrw/koln/Rhein-Sieg-Kreis/konigswinter/drachenfels/002.jpg",
         officialSite: [
             { bold: "Официальный сайт железной дороги и общего тур-информационного проекта для горы", link: "https://www.drachenfelsbahn.de/" }
@@ -2240,14 +2211,10 @@ const datas = [
     {
         id: "schloss_drachenburg",
         name: "Дворец Драхенбург",
-        type: ["palace_or_castle"],
-        hiddenFromList: true,
-        showMore: true,
+        type: ["palace_or_castle"], top: "popular",
+        hiddenFromList: true, showMore: true,
         path: "schloss_drachenburg",
-        regionsPath: "nrw",
-        districtPath: "koln",
-        cityPath: "konigswinter",
-        countryPath: "germany",
+        countryPath: "germany", regionsPath: "nrw", districtPath: "koln", cityPath: "konigswinter",
         fotoCard: "Germany/nrw/koln/Rhein-Sieg-Kreis/konigswinter/drachenfels/001.jpg",
         officialSite: [
             { bold: "Официальный сайт дворца Драхенбург", link: "https://www.schloss-drachenburg.de" }
@@ -2302,14 +2269,10 @@ const datas = [
     {
         id: "drachenfels_ruins",
         name: "Руины замка Драхенфельс",
-        type: ["palace_or_castle"],
-        hiddenFromList: true,
-        showMore: true,
+        type: ["palace_or_castle"], top: "popular",
+        hiddenFromList: true,  showMore: true,
         path: "drachenfels_ruins",
-        regionsPath: "nrw",
-        districtPath: "koln",
-        cityPath: "konigswinter",
-        countryPath: "germany",
+        countryPath: "germany", regionsPath: "nrw", districtPath: "koln", cityPath: "konigswinter",        
         fotoCard: "Germany/nrw/koln/Rhein-Sieg-Kreis/konigswinter/drachenfels/003.jpg",
         construction_period: "XII век (1138–1167) ",
         founder: " кёльнский архиепископ Арнольд фон Вид",
@@ -2346,14 +2309,10 @@ const datas = [
     {
         id: "nibelungenhalle",
         name: "Зал Нибеленгов",
-        type: ["museum"],
-        hiddenFromList: true,
-        showMore: true,
+        type: ["museum"], top: "local",
+        hiddenFromList: true, showMore: true,
         path: "nibelungenhalle",
-        regionsPath: "nrw",
-        districtPath: "koln",
-        cityPath: "konigswinter",
-        countryPath: "germany",
+        countryPath: "germany", regionsPath: "nrw", districtPath: "koln", cityPath: "konigswinter",
         officialSite: [
             { bold: "Официальный сайт зала Нибеленгов", link: "https://nibelungenhalle.de/" }
         ],
@@ -2388,14 +2347,10 @@ const datas = [
     {
         id: "reptile_zoo",
         name: "Зоопарк рептилий Драхенфельс",
-        type: ["nature"],
-        hiddenFromList: true,
-        showMore: true,
+        type: ["nature"], top: "local",
+        hiddenFromList: true, showMore: true,
         path: "reptile_zoo",
-        regionsPath: "nrw",
-        districtPath: "koln",
-        cityPath: "konigswinter",
-        countryPath: "germany",
+        countryPath: "germany", regionsPath: "nrw", districtPath: "koln", cityPath: "konigswinter",        
         // officialSite: [ не рабоает проверить
         //     { bold: "Официальный сайт зоопарка", link: "https://www.reptilien-zoo-drachenfels.de" }
         // ],
@@ -2439,23 +2394,23 @@ const datas = [
     },
     {
         id: "heisterbach_konigswinter",
-        name: "Аббатство Хайстербах",
-        type: ["historical_building"],
+        name: "Аббатство Хайстербах", 
+        type: ["historical_building"], top: "popular",
         path: "heisterbach_konigswinter",
-        countryPath: "germany",
-        regionsPath: "nrw",
-        districtPath: "koln",
-        cityPath: "konigswinter",
+        countryPath: "germany", regionsPath: "nrw", districtPath: "koln", cityPath: "konigswinter",
         fotoCard: "Germany/nrw/koln/Rhein-Sieg-Kreis/konigswinter/heisterbach/001.jpg",
         location: "Кёнигсвинтер, Германия",
         officialSite: [
             { bold: "Официальный сайт", link: "https://www.klosterlandschaft-heisterbach.de" }
         ],
         subObjects: ["chorruine_heisterbach_konigswinter", "st_peter_heisterbach_konigswinter"],
-        short_description_subObjects: {
-            text: "В аббатстве так же находятся такие достопримечательности",
-            items: ["Руины хора бывшей монастырской церкви", "Церковь Святого Петра"]
-        },
+short_description_subObjects: {
+    text: "В аббатстве расположены такие достопримечательности: ",
+    items: [
+        "<b>Руины хора бывшей монастырской церкви</b> – остатки средневековой церкви, где раньше находился монастырский хор.",
+        "<b>Церковь Святого Петра</b> – историческая церковь с характерной архитектурой и значением для аббатства."
+    ]
+},
         short_description: "Аббатство Хайстербах – бывший цистерцианский монастырь XII века, расположенный в долине Хайстербах недалеко от Кёнигсвинтера. После секуляризации в начале XIX века монастырь был упразднён, а его территория со временем превратилась в историко-культурное пространство. Сегодня Хайстербах считается одним из значимых памятников средневековой монастырской истории региона Зибенгебирге.",
         full_description: {
             title: "Описание и история",
@@ -2499,19 +2454,15 @@ const datas = [
     {
         id: "chorruine_heisterbach_konigswinter",
         name: "Руины хора бывшей монастырской церкви",
-        type: ["historical_building"],
+        type: ["historical_building"], top: "local",
         path: "chorruine_heisterbach_konigswinter",
-        countryPath: "germany",
-        regionsPath: "nrw",
-        districtPath: "koln",
-        cityPath: "konigswinter",
+        countryPath: "germany", regionsPath: "nrw",  districtPath: "koln", cityPath: "konigswinter", 
+        hiddenFromList: true, showMore: true,
         fotoCard: "Germany/nrw/koln/Rhein-Sieg-Kreis/konigswinter/heisterbach/001.jpg",
         location: "Кенигсвинтер, Германия",
         officialSite: [
             { bold: "Официальный сайт", link: "https://www.klosterlandschaft-heisterbach.de" }
         ],
-        hiddenFromList: true,
-        showMore: true,
         short_description: "Руины хора бывшей монастырской церкви – самая впечатляющая и узнаваемая часть Аббатства Хайстербах. Это единственный фрагмент огромной готической базилики, сохранившийся почти в полном объёме после разрушения монастыря в XIX веке.",
         full_description: {
             title: "Описание и история",
@@ -2541,16 +2492,12 @@ const datas = [
     {
         id: "st_peter_heisterbach_konigswinter",
         name: "Церковь Святого Петра в Хайстербахе",
-        type: ["cathedral"],
+        type: ["cathedral"], top: "local",
         path: "st_peter_heisterbach_konigswinter",
-        countryPath: "germany",
-        regionsPath: "nrw",
-        districtPath: "koln",
-        cityPath: "konigswinter",
+        countryPath: "germany", regionsPath: "nrw", districtPath: "koln", cityPath: "konigswinter",
+        hiddenFromList: true, showMore: true,
         fotoCard: "Germany/nrw/koln/Rhein-Sieg-Kreis/konigswinter/heisterbach/005.jpg",
         location: "Кёнигсвинтер, Германия",
-        hiddenFromList: true,
-        showMore: true,
         short_description: "Церковь Святого Петра в Хайстербахе – действующая католическая церковь, построенная после секуляризации монастыря на территории бывшего аббатства. Она отличается камерной архитектурой и спокойной атмосферой, сохраняя духовное наследие цистерцианцев. Церковь открыта для богослужений, туристов и культурных мероприятий, дополняя исторические руины комплекса.",
         full_description: {
             title: "Описание и история",
@@ -2591,12 +2538,9 @@ const datas = [
     {
         id: "altstadt_luedenscheid",
         name: "Старый город Люденшайда",
-        type: ["historical_area"],
+        type: ["historical_area"], top: "popular",
         path: "altstadt_luedenscheid",
-        regionsPath: "nrw",
-        districtPath: "arnsberg",
-        cityPath: "luedenscheid",
-        countryPath: "germany",
+        countryPath: "germany", regionsPath: "nrw", districtPath: "arnsberg", cityPath: "luedenscheid",        
         fotoCard: "Germany/nrw/arnsberg/Märkischer-Kreis/luedenscheid/001.JPG",
         subObjects: ["erloeserkirche_luedenscheid", "brunnen_altstadt_luedenscheid"],
         short_description: "Старый город Люденшайда – историческое сердце города с узкими улицами и кольцевой планировкой вокруг церкви Спасителя. Здесь сохранились здания XVIII–XIX веков, остатки крепостной стены и исторический музей, а уютные улочки сочетают прошлое с современной городской жизнью.",
@@ -2638,14 +2582,10 @@ const datas = [
     {
         id: "erloeserkirche_luedenscheid",
         name: "Церковь Спасителя ",
-        type: ["cathedral"],
+        type: ["cathedral"], top: "popular",
         path: "erloeserkirche_luedenscheid",
-        regionsPath: "nrw",
-        districtPath: "arnsberg",
-        cityPath: "luedenscheid",
-        countryPath: "germany",
-        hiddenFromList: true,
-        showMore: true,
+        countryPath: "germany", regionsPath: "nrw", districtPath: "arnsberg", cityPath: "luedenscheid",
+        hiddenFromList: true,  showMore: true,
         fotoCard: "Germany/nrw/arnsberg/Märkischer-Kreis/luedenscheid/erloeserkirche_luedenscheid/001.JPG",
         short_description: "Церковь Спасителя (Erlöserkirche) – старейшая церковь Люденшайда с классицистическим фасадом, эмпорами и лютеранским алтарем. В центре старого города, архитектурная доминанта и культурный центр с концертами и выставками.",
         full_description: {
@@ -2695,12 +2635,9 @@ const datas = [
     {
         id: "brunnen_altstadt_luedenscheid",
         name: "Фонтан в старом городе",
-        type: ["monument_or_fountain"],
+        type: ["monument_or_fountain"], top: "local",
         path: "brunnen_altstadt_luedenscheid",
-        countryPath: "germany",
-        regionsPath: "nrw",
-        districtPath: "arnsberg",
-        cityPath: "luedenscheid",
+        countryPath: "germany", regionsPath: "nrw", districtPath: "arnsberg", cityPath: "luedenscheid",
         fotoCard: "Germany/nrw/arnsberg/Märkischer-Kreis/luedenscheid/altstadt_luedenscheid/001.JPG",
         hiddenFromList: true,
         short_description: "Фонтан расположен в историческом Старом городе, на Graf Engelbert Platz – площади, посвящённой первому основателю города. Он был открыт в 1982 году и подарен городу жителями в ходе реконструкции старого города, став одним из символов обновлённой исторической зоны. На торжественном открытии местные власти подчеркнули желание сделать фонтан «сердцем гражданской жизни» старого города. С тех пор он входит в число значимых общественных и культурных объектов Люденшайда. ",
@@ -2725,12 +2662,9 @@ const datas = [
     {
         id: "rathausplatz_luedenscheid",
         name: "Центральная площадь Люденшайда",
-        type: ["square"],
+        type: ["square"], top: "local",
         path: "rathausplatz_luedenscheid",
-        countryPath: "germany",
-        regionsPath: "nrw",
-        districtPath: "arnsberg",
-        cityPath: "luedenscheid",
+        countryPath: "germany", regionsPath: "nrw", districtPath: "arnsberg",   cityPath: "luedenscheid",
         fotoCard: "Germany/nrw/arnsberg/Märkischer-Kreis/luedenscheid/rathausplatz_lüdenscheid/001.JPG",
         location: "Люденшайд, Германия",
         short_description: "Центральная площадь Люденшайда (Rathausplatz) — это сердце города и важное общественное пространство, расположенное рядом с ратушей и пешеходной зоной. Здесь проходят рынки, городские мероприятия и встречи жителей, а сама площадь служит отправной точкой для знакомства с историческим центром города.",
@@ -2766,20 +2700,20 @@ const datas = [
     {
         id: "sternplatz",
         name: "Площадь Штернплац",
-        type: ["square"],
+        type: ["square"], top: "local",
         path: "sternplatz",
-        countryPath: "germany",
-        regionsPath: "nrw",
-        districtPath: "arnsberg",
-        cityPath: "luedenscheid",
+        countryPath: "germany", regionsPath: "nrw", districtPath: "arnsberg", cityPath: "luedenscheid",
         fotoCard: "Germany/nrw/arnsberg/Märkischer-Kreis/luedenscheid/sternplatz/003.jpg",
         location: "Люденшайд, Германия",
         subObjects: ["onkel_willi_denkmal_sternplatz_luedenscheid", "fontain_sternplatz_luedenscheid"],
         short_description: "Площадь Штернплац (Sternplatz) – центральная площадь Люденшайда, расположенная в пешеходной зоне исторического центра и являющаяся важной точкой городской жизни и встреч.",
-        short_description_subObjects: {
-            text: "На площади Штернплац расположены такие достопримечательности:",
-            items: ["Памятник дяде Вили", "Фонтан Нойманна "]
-        },
+short_description_subObjects: {
+    text: "На площади Штернплац расположены такие достопримечательности:",
+    items: [
+        "<b>Памятник дяде Вилли</b> – бронзовая скульптура типичного жителя Люденшайда с собакой.",
+        "<b>Фонтан Нойманна</b> – декоративный фонтан, созданный скульптором Куртом Тони Нейманом."
+    ]
+},
         full_description: {
             title: "Описание и история",
             items: [
@@ -2806,15 +2740,11 @@ const datas = [
     {
         id: "onkel_willi_denkmal_sternplatz_luedenscheid",
         name: "Памятник дяде Вилли",
-        type: ["monument_or_fountain"],
+        type: ["monument_or_fountain"], top: "local",
         path: "onkel_willi_denkmal_sternplatz_luedenscheid",
-        countryPath: "germany",
-        regionsPath: "nrw",
-        districtPath: "arnsberg",
-        cityPath: "luedenscheid",
+        countryPath: "germany", regionsPath: "nrw", districtPath: "arnsberg", cityPath: "luedenscheid",
         fotoCard: "Germany/nrw/arnsberg/Märkischer-Kreis/luedenscheid/sternplatz/001.JPG",
-        hiddenFromList: true,
-        showMore: true,
+        hiddenFromList: true, showMore: true,
         short_description: "Памятник дяде Вилли – бронзовая скульптура на Sternplatz, изображающая типичного жителя Люденшайда с собакой. Является неофициальным символом города и отражает его повседневную, «живую» атмосферу.",
         full_description: {
             title: "Описание и история",
@@ -2837,15 +2767,11 @@ const datas = [
     {
         id: "fontain_sternplatz_luedenscheid",
         name: "Фонтан на площади Штернплац",
-        type: ["monument_or_fountain"],
+        type: ["monument_or_fountain"], top: "local",
         path: "fontain_sternplatz_luedenscheid",
-        countryPath: "germany",
-        regionsPath: "nrw",
-        districtPath: "arnsberg",
-        cityPath: "luedenscheid",
+        countryPath: "germany", regionsPath: "nrw", districtPath: "arnsberg", cityPath: "luedenscheid",
         fotoCard: "Germany/nrw/arnsberg/Märkischer-Kreis/luedenscheid/sternplatz/003.jpg",
-        hiddenFromList: true,
-        showMore: true,
+        hiddenFromList: true, showMore: true,
         short_description: "Фонтан на площади Штернплац – декоративный водоём в центре площади, созданный в конце 1970 х годов скульптором Куртом Тони Нейманом. Он стал значимым городским объектом и местом отдыха в пешеходной зоне Люденшайда.",
         full_description: {
             title: "Описание и история",
@@ -2868,12 +2794,9 @@ const datas = [
     {
         id: "history_museum_luedenscheid",
         name: "Исторический музей Люденшайда",
-        type: ["museum"],
+        type: ["museum"], top: "local",
         path: "history_museum_luedenscheid",
-        countryPath: "germany",
-        regionsPath: "nrw",
-        districtPath: "arnsberg",
-        cityPath: "luedenscheid",
+        countryPath: "germany", regionsPath: "nrw", districtPath: "arnsberg", cityPath: "luedenscheid",
         fotoCard: "Germany/nrw/arnsberg/Märkischer-Kreis/luedenscheid/history_museum_luedenscheid/001.JPG",
         location: "Люденшайд, Германия",
         officialSite: [

@@ -4,7 +4,7 @@ const datas = [
     {
         id: "altstadt_koln",
         name: "Altstadt Köln",
-        type: ["historical_area"],
+        type: ["historical_area"], top: "top",
         path: "altstadt_koln",
         countryPath: "germany", regionsPath: "nrw", districtPath: "city", cityPath: "koln",
         fotoCard: "Germany/nrw/koln/koln-city/altstadt/001.jpg",
@@ -13,16 +13,16 @@ const datas = [
         short_description_subObjects: {
             text: "In der Altstadt von Köln befinden sich folgende Sehenswürdigkeiten:",
             items: [
-                "Kölner Dom – majestätische gotische Kathedrale, das Herz der Altstadt, am Platz vor dem Hauptbahnhof.",
-                "Kölner Rathaus – historisches Stadthaus im Zentrum der Altstadt.",
-                "Gürzenich – historisches Zunfthaus und Saal in der Nähe des Kölner Doms.",
-                "Museum im archäologischen Viertel Köln – MiQua – archäologisches und jüdisches Museum am Marktplatz im Zentrum der Altstadt.",
-                "Römisch-Germanisches Museum – Museum der Antike in der Nähe des Kölner Doms und des MiQua.",
-                "Wallraf-Richartz-Museum – Museum für Malerei und Kunst, unweit von Rathaus und Dom.",
-                "Duftmuseum im Farina-Haus – Museum für Düfte und Parfum im historischen Viertel beim Rathaus.",
-                "Dufthaus 4711 – historisches Gebäude in der Fußgängerzone um die Hohe Straße und Schildergasse.",
-                "Museum Ludwig – Museum für moderne Kunst in der Nähe des Kölner Doms.",
-                "Kölner Stadtmuseum – Museum für Stadtgeschichte im Zentrum (Zeughaus)."
+                "<b>Kölner Dom</b> – majestätische gotische Kathedrale, das Herz der Altstadt, am Platz vor dem Hauptbahnhof.",
+                "<b>Kölner Rathaus</b> – historisches Stadthaus im Zentrum der Altstadt.",
+                "<b>Gürzenich</b> – historisches Zunfthaus und Saal in der Nähe des Kölner Doms.",
+                "<b>Museum im archäologischen Viertel Köln – MiQua</b> – archäologisches und jüdisches Museum am Marktplatz im Zentrum der Altstadt.",
+                "<b>Römisch-Germanisches Museum</b> – Museum der Antike in der Nähe des Kölner Doms und des MiQua.",
+                "<b>Wallraf-Richartz-Museum</b> – Museum für Malerei und Kunst, unweit von Rathaus und Dom.",
+                "<b>Duftmuseum im Farina-Haus</b> – Museum für Düfte und Parfum im historischen Viertel beim Rathaus.",
+                "<b>Dufthaus 4711</b> – historisches Gebäude in der Fußgängerzone um die Hohe Straße und Schildergasse.",
+                "<b>Museum Ludwig</b> – Museum für moderne Kunst in der Nähe des Kölner Doms.",
+                "<b>Kölner Stadtmuseum</b> – Museum für Stadtgeschichte im Zentrum (Zeughaus)."
             ]
         },
         short_description: "Die Altstadt von Köln ist das historische Herz der Stadt mit engen gepflasterten Gassen, traditionellen Häusern, gemütlichen Brauhäusern und Cafés am Rheinufer. Sie vereint Kultur, Architektur und alltägliches Leben: von gotischen Kathedralen bis zu Museen und Märkten, die die vielschichtige Geschichte der Stadt widerspiegeln.",
@@ -55,7 +55,7 @@ const datas = [
     {
         id: "cologne_cathedral",
         name: "Kölner Dom",
-        type: ["cathedral"],
+        type: ["cathedral"], top: "top",
         path: "cologne-cathedral",
         countryPath: "germany", regionsPath: "nrw", districtPath: "city", cityPath: "koln",
         howMore: true, hiddenFromList: true,
@@ -127,7 +127,7 @@ const datas = [
     {
         id: "rathaus_koln",
         name: "Kölner Rathaus",
-        type: ['historical_building'],
+        type: ['historical_building'], top: "popular",
         path: "rathaus_koln",
         countryPath: "germany", regionsPath: "nrw", districtPath: "city", cityPath: "koln",
         howMore: true, hiddenFromList: true,
@@ -184,7 +184,7 @@ const datas = [
     {
         id: "guerzenich_koln",
         name: "Gürzenich – historischer Konzertsaal und Zunfthaus in Köln",
-        type: ["historical_building"],
+        type: ["historical_building"], top: "popular",
         path: "guerzenich_koln",
         countryPath: "germany", regionsPath: "nrw", districtPath: "city", cityPath: "koln",
         howMore: true, hiddenFromList: true,
@@ -244,7 +244,7 @@ const datas = [
     {
         id: "roemisch_germanisches_museum",
         name: "Römisch-Germanisches Museum",
-        type: ["museum"],
+        type: ["museum"], top: "popular",
         path: "roemisch-germanisches-museum",
         countryPath: "germany", regionsPath: "nrw", districtPath: "city", cityPath: "koln",
         howMore: true, hiddenFromList: true,
@@ -298,7 +298,7 @@ const datas = [
     {
         id: "farina_duftmuseum",
         name: "Duftmuseum im Farina-Haus",
-        type: ["museum"],
+        type: ["museum"], top: "popular",
         path: "farina-duftmuseum",
         countryPath: "germany", regionsPath: "nrw", districtPath: "city", cityPath: "koln",
         howMore: true, hiddenFromList: true,
@@ -350,7 +350,7 @@ const datas = [
     {
         id: "museum_ludwig",
         name: "Museum Ludwig",
-        type: ["museum"],
+        type: ["museum"], top: "popular",
         path: "museum-ludwig",
         countryPath: "germany", regionsPath: "nrw", districtPath: "city", cityPath: "koln",
         howMore: true, hiddenFromList: true,
@@ -404,7 +404,7 @@ const datas = [
     {
         id: "schokoladenmuseum",
         name: "Schokoladenmuseum",
-        type: ["museum"],
+        type: ["museum"], top: "popular",
         path: "schokoladenmuseum",
         countryPath: "germany", regionsPath: "nrw", districtPath: "city", cityPath: "koln",
         fotoCard: "Germany/nrw/koln/koln-city/schokoladenmuseum/001.jpg",
@@ -458,7 +458,7 @@ const datas = [
     {
         id: "miqua",
         name: "Museum im archäologischen Viertel Köln – MiQua",
-        type: ["museum"],
+        type: ["museum"], top: "popular",
         path: "miqua",
         countryPath: "germany", regionsPath: "nrw", districtPath: "city", cityPath: "koln",
         howMore: true, hiddenFromList: true,
@@ -532,7 +532,7 @@ const datas = [
     {
         id: "wallraf_richartz_museum",
         name: "Wallraf-Richartz-Museum",
-        type: ["museum"],
+        type: ["museum"], top: "popular",
         path: "wallraf_richartz_museum",
         countryPath: "germany", regionsPath: "nrw", districtPath: "city", cityPath: "koln",
         howMore: true, hiddenFromList: true,
@@ -591,7 +591,7 @@ const datas = [
     {
         id: "ostasiatische_kunst_koln",
         name: "Museum für Ostasiatische Kunst",
-        type: ["museum"],
+        type: ["museum"], top: "popular",
         path: "ostasiatische_kunst_koln",
         countryPath: "germany", regionsPath: "nrw", districtPath: "city", cityPath: "koln",
         fotoCard: "Germany/nrw/koln/koln-city/ostasiatische_kunst_koln/001.jpg",
@@ -645,7 +645,7 @@ const datas = [
     {
         id: "museum_schnuetgen_koln",
         name: "Museum Schnütgen",
-        type: ["museum", 'cathedral'],
+        type: ["museum", 'cathedral'], top: "popular",
         path: "museum_schnuetgen_koln",
         countryPath: "germany", regionsPath: "nrw", districtPath: "city", cityPath: "koln",
         fotoCard: "Germany/nrw/koln/koln-city/schnuetgen/001.jpg",
@@ -707,7 +707,7 @@ const datas = [
     {
         id: "rautenstrauch_joest_museum_koln",
         name: "Rautenstrauch-Joest-Museum – Kulturen der Welt",
-        type: ["museum"],
+        type: ["museum"], top: "popular",
         path: "rautenstrauch_joest_museum_koln",
         countryPath: "germany", regionsPath: "nrw", districtPath: "city", cityPath: "koln",
         fotoCard: "Germany/nrw/koln/koln-city/rautenstrauch_joest_museum/001.jpg",
@@ -766,7 +766,7 @@ const datas = [
     {
         id: "dufthaus_4711_koln",
         name: "Duft-Haus 4711",
-        type: ["museum"],
+        type: ["museum"], top: "popular",
         path: "dufthaus_4711_koln",
         countryPath: "germany", regionsPath: "nrw", districtPath: "city", cityPath: "koln",
         howMore: true, hiddenFromList: true,
@@ -827,7 +827,7 @@ const datas = [
     {
         id: "makk_museum_koln",
         name: "Museum für Angewandte Kunst",
-        type: ["museum"],
+        type: ["museum"], top: "popular",
         path: "makk_museum_koln",
         countryPath: "germany", regionsPath: "nrw", districtPath: "city", cityPath: "koln",
         fotoCard: "Germany/nrw/koln/koln-city/makk_museum/001.JPG",
@@ -884,7 +884,7 @@ const datas = [
     {
         id: "stadtmuseum_koln",
         name: "Kölnisches Stadtmuseum",
-        type: ["museum"],
+        type: ["museum"], top: "popular",
         path: "stadtmuseum_koln",
         countryPath: "germany", regionsPath: "nrw", districtPath: "city", cityPath: "koln",
         howMore: true, hiddenFromList: true,
@@ -941,7 +941,7 @@ const datas = [
     {
         id: "sport_olympia_museum_koln",
         name: "Deutsches Sport & Olympia Museum",
-        type: ["museum"],
+        type: ["museum"], top: "popular",
         path: "sport_olympia_museum_koln",
         countryPath: "germany", regionsPath: "nrw", districtPath: "city", cityPath: "koln",
         fotoCard: "Germany/nrw/koln/koln-city/sport_olympia_museum/001.jpg",
@@ -998,7 +998,7 @@ const datas = [
     {
         id: "photographische_sammlung_sk_stiftung_kultur_koln",
         name: "Photographische Sammlung des SK Kulturfonds",
-        type: ["museum"],
+        type: ["museum"], top: "local",
         path: "photographische_sammlung_sk_stiftung_kultur_koln",
         countryPath: "germany", regionsPath: "nrw", districtPath: "city", cityPath: "koln",
         fotoCard: "Germany/nrw/koln/koln-city/photographische_sammlung_sk_stiftung_kultur/001.jpg",
@@ -1053,7 +1053,7 @@ const datas = [
     {
         id: "koln_bridges",
         name: "Kölner Rheinbrücken",
-        type: ["technical_structure"],
+        type: ["technical_structure"], top: "popular",
         path: "koln_bridges",
         countryPath: "germany", regionsPath: "nrw", districtPath: "city", cityPath: "koln",
         fotoCard: "Germany/nrw/koln/koln-city/koln_bridges/001.jpg",
@@ -1105,7 +1105,7 @@ const datas = [
     {
         id: "skulpturenpark_koln",
         name: "Skulpturenpark in Köln",
-        type: ["museum", "nature", "monument_or_fountain"],
+        type: ["museum", "nature", "monument_or_fountain"], top: "local",
         path: "skulpturenpark_koln",
         countryPath: "germany", regionsPath: "nrw", districtPath: "city", cityPath: "koln",
         fotoCard: "Germany/nrw/koln/koln-city/skulpturenpark/001.jpg",
@@ -1155,7 +1155,7 @@ const datas = [
     {
         id: "zoo_koln",
         name: "Kölner Zoo",
-        type: ["nature"],
+        type: ["nature"], top: "popular",
         path: "zoo_koln",
         countryPath: "germany", regionsPath: "nrw", districtPath: "city", cityPath: "koln",
         fotoCard: "Germany/nrw/koln/koln-city/zoo/001.jpg",
@@ -1215,7 +1215,7 @@ const datas = [
     {
         id: "forstbotanischer_garten",
         name: "Forstbotanischer Garten",
-        type: ["nature"],
+        type: ["nature"], top: "popular",
         path: "forstbotanischer_garten",
         countryPath: "germany", regionsPath: "nrw", districtPath: "city", cityPath: "koln",
         fotoCard: "Germany/nrw/koln/koln-city/forstbotanischer_garten/001.jpg",
@@ -1281,7 +1281,7 @@ const datas = [
     {
         id: "flora_garten_koln",
         name: "Botanischer Garten Flora",
-        type: ["nature"],
+        type: ["nature"], top: "popular",
         path: "flora_garten_koln",
         countryPath: "germany", regionsPath: "nrw", districtPath: "city", cityPath: "koln",
         fotoCard: "Germany/nrw/koln/koln-city/flora_garten_koln/001.jpg",
@@ -1337,7 +1337,7 @@ const datas = [
     {
         id: "rheinpark_koln",
         name: "Rheinpark",
-        type: ["nature"],
+        type: ["nature"], top: "popular",
         path: "rheinpark_koln",
         countryPath: "germany", regionsPath: "nrw", districtPath: "city", cityPath: "koln",
         fotoCard: "Germany/nrw/koln/koln-city/rheinpark_koln/001.jpg",
@@ -1390,7 +1390,7 @@ const datas = [
     {
         id: "tanzbrunnen",
         name: "Tanzbrunnen",
-        type: ["monument_or_fountain"],
+        type: ["monument_or_fountain"], top: "popular",
         path: "tanzbrunnen",
         countryPath: "germany", regionsPath: "nrw", districtPath: "city", cityPath: "koln",
         fotoCard: "Germany/nrw/koln/koln-city/rheinpark_koln/002.jpg",
@@ -1430,7 +1430,7 @@ const datas = [
     {
         id: "koln_seilbahn",
         name: "Kölner Seilbahn",
-        type: ["technical_structure"],
+        type: ["technical_structure"], top: "popular",
         path: "koln_seilbahn",
         countryPath: "germany", regionsPath: "nrw", districtPath: "city", cityPath: "koln",
         fotoCard: "Germany/nrw/koln/koln-city/rheinpark_koln/003.jpg",
@@ -1484,7 +1484,7 @@ const datas = [
     {
         id: "divitia_koln",
         name: "Ruinen des römischen Forts Divitia in Köln",
-        type: ["historical_building"],
+        type: ["historical_building"], top: "local",
         path: "divitia_koln",
         countryPath: "germany", regionsPath: "nrw", districtPath: "city", cityPath: "koln",
         fotoCard: "Germany/nrw/koln/koln-city/rheinpark_koln/004.jpg",
@@ -1538,7 +1538,7 @@ const datas = [
     {
         id: "finkens_garten_koln",
         name: "Finkens Garten",
-        type: ["nature"],
+        type: ["nature"], top: "local",
         path: "finkens_garten_koln",
         countryPath: "germany", regionsPath: "nrw", districtPath: "city", cityPath: "koln",
         fotoCard: "Germany/nrw/koln/koln-city/finkens_garten/001.jpg",
@@ -1594,7 +1594,7 @@ const datas = [
     {
         id: "historic_center_monschau",
         name: "Altstadt Monschau",
-        type: ["historical_area"],
+        type: ["historical_area"], top: "popular",
         path: "historic_center_monschau",
         countryPath: "germany", regionsPath: "nrw", districtPath: "koln", cityPath: "monschau",
         fotoCard: "Germany/nrw/koln/Aachen/monschau/001.jpg",
@@ -1633,7 +1633,7 @@ const datas = [
     {
         id: "burg_monschau",
         name: "Burg Monschau",
-        type: ["palace_or_castle"],
+        type: ["palace_or_castle"], top: "local",
         path: "burg_monschau",
         countryPath: "germany",
         regionsPath: "nrw",
@@ -1685,11 +1685,9 @@ const datas = [
     {
         id: "bruhel_palaces",
         name: "Brühler Schlösser: Ensemble Augustusburg und Falkenlust",
-        type: ['palace', 'museum'],
+        type: ['palace', 'museum'], top: "top",
         path: 'bruhl_palaces',
-        regionsPath: "nrw",
-        districtPath: "koln",
-        cityPath: "bruhl",
+        regionsPath: "nrw", districtPath: "koln", cityPath: "bruhl",
         fotoCard: "Germany/nrw/koln/Rhein-Erft-Kreis/bruhl/bruhl_palaces/001.jpg",
         location: "Brühl, Deutschland",
         address: [{ bold: "Adresse:", text: " Schloss Augustusburg — Max-Ernst-Allee, 50321 Brühl, Deutschland <br>Schloss Falkenlust — An Schloss Falkenlust 1, 50321 Brühl, Deutschland" }],
@@ -1745,11 +1743,9 @@ const datas = [
     {
         id: "max_ernst_museum",
         name: "Max-Ernst-Museum",
-        type: ['museum'],
+        type: ['museum'], top: "popular",
         path: "max-ernst-museum",
-        regionsPath: "nrw",
-        districtPath: "koln",
-        cityPath: "bruhl",
+        regionsPath: "nrw", districtPath: "koln", cityPath: "bruhl",
         fotoCard: "Germany/nrw/koln/Rhein-Erft-Kreis/bruhl/max_ernst_museum/Max-Ernst-Museum.jpg",
         location: "Brühl, Deutschland",
         address: [{ bold: "Adresse:", text: " Comesstraße 42 / Max-Ernst-Allee 1, 50321 Brühl, Deutschland" }],
@@ -1794,11 +1790,9 @@ const datas = [
     {
         id: "phantasialand",
         name: "Phantasialand",
-        type: ['amusement_park'],
+        type: ['amusement_park'], top: "popular",
         path: "phantasialand",
-        regionsPath: "nrw",
-        districtPath: "koln",
-        cityPath: "bruhl",
+        regionsPath: "nrw", districtPath: "koln", cityPath: "bruhl",
         fotoCard: "Germany/nrw/koln/Rhein-Erft-Kreis/bruhl/phantasialand/001.jpg",
         location: "Brühl, Deutschland",
         address: [{ bold: "Adresse:", text: " Berggeiststraße 31–41, 50321 Brühl, Deutschland" }],
@@ -1853,11 +1847,9 @@ const datas = [
     {
         id: "keramion_frechen",
         name: "KERAMION – Zentrum für moderne und historische Keramik",
-        type: ['museum'],
+        type: ['museum'], top: "local",
         path: "keramion",
-        regionsPath: "nrw",
-        districtPath: "koln",
-        cityPath: "frechen",
+        regionsPath: "nrw", districtPath: "koln", cityPath: "frechen",
         fotoCard: "Germany/nrw/koln/Rhein-Erft-Kreis/frechen/keramion/frechen_keramion.jpg",
         location: "Frechen, Deutschland",
         address: [{ bold: "Adresse:", text: " Bonnstraße 12, 50226 Frechen, Deutschland" }],
@@ -1905,11 +1897,9 @@ const datas = [
     {
         id: "burg_bachem_frechen",
         name: "Burg Bachem – historische Wasserburg in Frechen",
-        type: ['castle'],
+        type: ['castle'], top: "local",
         path: "burg-bachem",
-        regionsPath: "nrw",
-        districtPath: "koln",
-        cityPath: "frechen",
+        regionsPath: "nrw", districtPath: "koln", cityPath: "frechen",
         fotoCard: "Germany/nrw/koln/Rhein-Erft-Kreis/frechen/burg-bachem/Burg-Bachem_3.jpg",
         location: "Frechen, Deutschland",
         address: [{ bold: "Adresse:", text: " Schloßstraße 8, 50226 Frechen, Deutschland" }],
@@ -1955,11 +1945,9 @@ const datas = [
     {
         id: "johann_schmitz_platz_frechen",
         name: "Johann-Schmitz-Platz («Rathausplatz»)",
-        type: ['square'],
+        type: ['square'], top: "local",
         path: "johann_schmitz_platz_frechen",
-        regionsPath: "nrw",
-        districtPath: "koln",
-        cityPath: "frechen",
+        regionsPath: "nrw", districtPath: "koln", cityPath: "frechen",
         fotoCard: "Germany/nrw/koln/Rhein-Erft-Kreis/frechen/johann_schmitz_platz_frechen/001.jpg",
         location: "Frechen, Deutschland",
         address: [{ bold: "Adresse:", text: " Johann-Schmitz-Platz, 50226 Frechen, Deutschland" }],
@@ -2005,15 +1993,10 @@ const datas = [
     {
         id: "altes_rathaus_frechen",
         name: "Altes Rathaus Frechen",
-        type: ['historical_building'],
+        type: ['historical_building'], top: "local",
         path: "altes_rathaus_frechen",
-        slug: "altes_rathaus_frechen",
-        hiddenFromList: true,
-        showMore: true,
-        regionsPath: "nrw",
-        districtPath: "koln",
-        cityPath: "frechen",
-        countryPath: "germany",
+        countryPath: "germany", regionsPath: "nrw", districtPath: "koln", cityPath: "frechen",
+        hiddenFromList: true, showMore: true,
         fotoCard: "Germany/nrw/koln/Rhein-Erft-Kreis/frechen/johann_schmitz_platz_frechen/008.jpg",
         location: "Frechen, Deutschland",
         address: [{ bold: "Adresse:", text: " Johann-Schmitz-Platz, 50226 Frechen, Deutschland" }],
@@ -2054,16 +2037,13 @@ const datas = [
         }
     },
     {
-        "id": "rathausbrunnen_frechen",
-        "name": "Brunnen vor dem Rathaus",
-        "type": ["monument_or_fountain"],
-        "path": "rathausbrunnen_frechen",
-        "hiddenFromList": true,
-        "regionsPath": "nrw",
-        "districtPath": "koln",
-        "cityPath": "frechen",
-        "countryPath": "germany",
-        "fotoCard": "Germany/nrw/koln/Rhein-Erft-Kreis/frechen/johann_schmitz_platz_frechen/005.jpg",
+        id: "rathausbrunnen_frechen",
+        name: "Brunnen vor dem Rathaus",
+        type: ["monument_or_fountain"], top: "local",
+        path: "rathausbrunnen_frechen",
+        countryPath: "germany", regionsPath: "nrw", districtPath: "koln", cityPath: "frechen",
+        hiddenFromList: true,
+        fotoCard: "Germany/nrw/koln/Rhein-Erft-Kreis/frechen/johann_schmitz_platz_frechen/005.jpg",
         short_description: "Auf dem Platz vor dem alten Rathaus befindet sich ein dekorativer Bezirksbrunnen, der 1981 vom Keramikkünstler Wim Mühlendyck geschaffen wurde. Er ist mit keramischen Platten verkleidet, die Reliefdarstellungen von Szenen zeigen, die die Entwicklung des Handwerks und der Keramikindustrie in Frechen widerspiegeln – von traditionellen Handwerkern bis zur Fabrikproduktion, während die verschiedenen Maskarone (Gesichter) charakteristische Wasserstrahlen des Brunnens bilden.",
         full_description: {
             title: "Beschreibung und Geschichte",
@@ -2080,16 +2060,14 @@ const datas = [
         }
     },
     {
-        "id": "klüttenbrunnen_frechen",
-        "name": "Klüttenbrunnen",
-        "type": ["monument_or_fountain"],
-        "path": "klüttenbrunnen_frechen",
-        "hiddenFromList": true,
-        "regionsPath": "nrw",
-        "districtPath": "koln",
-        "cityPath": "frechen",
-        "countryPath": "germany",
-        "fotoCard": "Germany/nrw/koln/Rhein-Erft-Kreis/frechen/johann_schmitz_platz_frechen/004.jpg",
+        id: "klüttenbrunnen_frechen",
+        name: "Klüttenbrunnen",
+        type: ["monument_or_fountain"], top: "local",
+        path: "klüttenbrunnen_frechen",
+
+        countryPath: "germany", regionsPath: "nrw", districtPath: "koln", cityPath: "frechen",
+        hiddenFromList: true,
+        fotoCard: "Germany/nrw/koln/Rhein-Erft-Kreis/frechen/johann_schmitz_platz_frechen/004.jpg",
         short_description: "In der Fußgängerzone wurde 1986 der skulpturale Brunnen Klüttenbrunnen vom deutschen Bildhauer Olaf Höhnen errichtet. Er befindet sich in der Nähe des Johann-Schmitz-Platz und spiegelt die industrielle und handwerkliche Geschichte Frechens wider, insbesondere den Abbau und die Verarbeitung von lokalem Ton. Der Brunnen ist als künstlerische Komposition mit Steinelementen und Wasserstrahlen gestaltet, fügt sich harmonisch in das Stadtbild ein und dient als visueller Orientierungspunkt für Besucher.",
         full_description: {
             title: "Beschreibung und Geschichte",
@@ -2109,15 +2087,12 @@ const datas = [
     //Rhein-Sieg-Kreis
 
     // Кёнигсвинтер
-
     {
         id: "drachenfels",
         name: "Berg Drachenfels",
-        type: ["nature"],
+        type: ["nature"], top: "top",
         path: "drachenfels",
-        regionsPath: "nrw",
-        districtPath: "koln",
-        cityPath: "konigswinter",
+        regionsPath: "nrw", districtPath: "koln", cityPath: "konigswinter",
         fotoCard: "Germany/nrw/koln/Rhein-Sieg-Kreis/konigswinter/drachenfels/001.jpg",
         location: "zwischen den Städten Königswinter und Bad Honnef, Deutschland",
         officialSite: [
@@ -2130,11 +2105,11 @@ const datas = [
         short_description_subObjects: {
             text: "Auf dem Drachenfels befinden sich folgende Sehenswürdigkeiten: ",
             items: [
-                "Drachenfelsbahn",
-                "Schloss Drachenburg",
-                "Ruinen der Burg Drachenfels",
-                "Nibelungenhalle",
-                "Reptilien-Zoo"
+                "<b>Drachenfelsbahn</b> – historische Zahnradbahn, die das Rheintal mit dem Gipfel des Drachenfelses verbindet und Panoramablicke eröffnet.",
+                "<b>Schloss Drachenburg</b> – malerisches neugotisches Schloss, im 19. Jahrhundert erbaut, mit prächtigen Innenräumen und Gärten.",
+                "<b>Ruinen der Burg Drachenfels</b> – mittelalterliche Überreste der Festung, die über dem Rhein thronen.",
+                "<b>Nibelungenhalle</b> – Ausstellungsraum mit Exposition zur Legende der Nibelungen.",
+                "<b>Reptilien-Zoo</b> – kleiner Zoo mit Sammlung exotischer Reptilien am Hang des Drachenfels."
             ]
         },
         full_description: {
@@ -2181,15 +2156,11 @@ const datas = [
     {
         id: "drachenfelsbahn",
         name: "Drachenfelsbahn",
-        type: ["technical_structure"],
+        type: ["technical_structure"], top: "popular",
         slug: "drachenfelsbahn",
-        hiddenFromList: true,
-        showMore: true,
+        hiddenFromList: true, showMore: true,
         path: "drachenfelsbahn",
-        regionsPath: "nrw",
-        districtPath: "koln",
-        cityPath: "konigswinter",
-        countryPath: "germany",
+        countryPath: "germany", regionsPath: "nrw", districtPath: "koln", cityPath: "konigswinter",
         fotoCard: "Germany/nrw/koln/Rhein-Sieg-Kreis/konigswinter/drachenfels/002.jpg",
         officialSite: [
             {
@@ -2237,15 +2208,11 @@ const datas = [
     {
         id: "schloss_drachenburg",
         name: "Schloss Drachenburg",
-        type: ["palace_or_castle"],
+        type: ["palace_or_castle"], top: "popular",
         slug: "schloss_drachenburg",
-        hiddenFromList: true,
-        showMore: true,
+        hiddenFromList: true, showMore: true,
         path: "schloss_drachenburg",
-        regionsPath: "nrw",
-        districtPath: "koln",
-        cityPath: "konigswinter",
-        countryPath: "germany",
+        countryPath: "germany", regionsPath: "nrw", districtPath: "koln", cityPath: "konigswinter",
         fotoCard: "Germany/nrw/koln/Rhein-Sieg-Kreis/konigswinter/drachenfels/001.jpg",
         officialSite: [
             { bold: "Offizielle Website von Schloss Drachenburg", link: "https://www.schloss-drachenburg.de" }
@@ -2300,15 +2267,11 @@ const datas = [
     {
         id: "drachenfels_ruins",
         name: "Ruinen der Burg Drachenfels",
-        type: ["palace_or_castle"],
+        type: ["palace_or_castle"], top: "popular",
         slug: "drachenfels_ruins",
-        hiddenFromList: true,
-        showMore: true,
+        hiddenFromList: true, showMore: true,
         path: "drachenfels_ruins",
-        regionsPath: "nrw",
-        districtPath: "koln",
-        cityPath: "konigswinter",
-        countryPath: "germany",
+        countryPath: "germany", regionsPath: "nrw", districtPath: "koln", cityPath: "konigswinter",
         fotoCard: "Germany/nrw/koln/Rhein-Sieg-Kreis/konigswinter/drachenfels/003.jpg",
         construction_period: "12. Jahrhundert (1138–1167)",
         founder: " Kölner Erzbischof Arnold von Wied",
@@ -2345,15 +2308,12 @@ const datas = [
     {
         id: "nibelungenhalle",
         name: "Nibelungenhalle",
-        type: ["museum"],
+        type: ["museum"], top: "local",
         slug: "nibelungenhalle",
         hiddenFromList: true,
         showMore: true,
         path: "nibelungenhalle",
-        regionsPath: "nrw",
-        districtPath: "koln",
-        cityPath: "konigswinter",
-        countryPath: "germany",
+        countryPath: "germany", regionsPath: "nrw", districtPath: "koln", cityPath: "konigswinter",
         officialSite: [
             { bold: "Offizielle Website der Nibelungenhalle", link: "https://nibelungenhalle.de/" }
         ],
@@ -2388,15 +2348,11 @@ const datas = [
     {
         id: "reptile_zoo",
         name: "Reptilienzoo Drachenfels",
-        type: ["nature"],
+        type: ["nature"], top: "local",
         slug: "reptile_zoo",
-        hiddenFromList: true,
-        showMore: true,
+        hiddenFromList: true, showMore: true,
         path: "reptile_zoo",
-        regionsPath: "nrw",
-        districtPath: "koln",
-        cityPath: "konigswinter",
-        countryPath: "germany",
+        countryPath: "germany", regionsPath: "nrw", districtPath: "koln", cityPath: "konigswinter",
         // officialSite: [ funktioniert nicht überprüfen
         //     { bold: "Offizielle Website des Zoos", link: "https://www.reptilien-zoo-drachenfels.de" }
         // ],
@@ -2441,12 +2397,9 @@ const datas = [
     {
         id: "heisterbach_konigswinter",
         name: "Abtei Heisterbach",
-        type: ["historical_building"],
+        type: ["historical_building"], top: "popular",
         path: "heisterbach_konigswinter",
-        countryPath: "germany",
-        regionsPath: "nrw",
-        districtPath: "koln",
-        cityPath: "konigswinter",
+        countryPath: "germany", regionsPath: "nrw", districtPath: "koln", cityPath: "konigswinter",
         fotoCard: "Germany/nrw/koln/Rhein-Sieg-Kreis/konigswinter/heisterbach/001.jpg",
         location: "Königswinter, Deutschland",
         officialSite: [
@@ -2454,8 +2407,11 @@ const datas = [
         ],
         subObjects: ["chorruine_heisterbach_konigswinter", "st_peter_heisterbach_konigswinter"],
         short_description_subObjects: {
-            text: "In der Abtei befinden sich außerdem folgende Sehenswürdigkeiten",
-            items: ["Ruinen des Chors der ehemaligen Klosterkirche", "St.-Peter-Kirche"]
+            text: "Im Kloster befinden sich folgende Sehenswürdigkeiten: ",
+            items: [
+                "<b>Ruinen des Chors der ehemaligen Klosterkirche</b> – Überreste der mittelalterlichen Kirche, in der sich früher der Klosterchor befand.",
+                "<b>Kirche St. Peter</b> – historische Kirche mit charakteristischer Architektur und Bedeutung für das Kloster."
+            ]
         },
         short_description: "Die Abtei Heisterbach ist ein ehemaliges Zisterzienserkloster aus dem 12. Jahrhundert, gelegen im Heisterbachtal unweit von Königswinter. Nach der Säkularisation Anfang des 19. Jahrhunderts wurde das Kloster aufgehoben, und sein Gelände entwickelte sich mit der Zeit zu einem historisch-kulturellen Raum. Heute gilt Heisterbach als eines der bedeutendsten Zeugnisse der mittelalterlichen Klostergeschichte der Region Siebengebirge.",
         full_description: {
@@ -2500,18 +2456,15 @@ const datas = [
     {
         id: "chorruine_heisterbach_konigswinter",
         name: "Ruinen des Chors der ehemaligen Klosterkirche",
-        type: ["historical_building"],
+        type: ["historical_building"], top: "local",
         path: "chorruine_heisterbach_konigswinter",
-        countryPath: "germany",
-        regionsPath: "nrw",
-        districtPath: "koln",
-        cityPath: "konigswinter",
+        countryPath: "germany", regionsPath: "nrw", districtPath: "koln", cityPath: "konigswinter",
+        hiddenFromList: true, showMore: true,
         fotoCard: "Germany/nrw/koln/Rhein-Sieg-Kreis/konigswinter/heisterbach/001.jpg",
         location: "Königswinter, Deutschland",
         officialSite: [
             { bold: "Offizielle Website", link: "https://www.klosterlandschaft-heisterbach.de" }
         ],
-        hiddenFromList: true, showMore: true,
         short_description: "Die Ruinen des Chors der ehemaligen Klosterkirche sind der beeindruckendste und bekannteste Teil der Abtei Heisterbach. Sie sind das einzige Fragment der riesigen gotischen Basilika, das nach der Zerstörung des Klosters im 19. Jahrhundert fast vollständig erhalten geblieben ist.",
         full_description: {
             title: "Beschreibung und Geschichte",
@@ -2541,15 +2494,12 @@ const datas = [
     {
         id: "st_peter_heisterbach_konigswinter",
         name: "Kirche St. Peter in Heisterbach",
-        type: ["cathedral"],
+        type: ["cathedral"], top: "local",
         path: "st_peter_heisterbach_konigswinter",
-        countryPath: "germany",
-        regionsPath: "nrw",
-        districtPath: "koln",
-        cityPath: "konigswinter",
+        countryPath: "germany", regionsPath: "nrw", districtPath: "koln", cityPath: "konigswinter",
+        hiddenFromList: true, showMore: true,
         fotoCard: "Germany/nrw/koln/Rhein-Sieg-Kreis/konigswinter/heisterbach/005.jpg",
         location: "Königswinter, Deutschland",
-        hiddenFromList: true, showMore: true,
         short_description: "Die Kirche St. Peter in Heisterbach ist eine aktive katholische Kirche, die nach der Säkularisation des Klosters auf dem Gelände der ehemaligen Abtei erbaut wurde. Sie zeichnet sich durch eine zurückhaltende Architektur und eine ruhige Atmosphäre aus und bewahrt das geistige Erbe der Zisterzienser. Die Kirche ist für Gottesdienste, Besucher und kulturelle Veranstaltungen geöffnet und ergänzt die historischen Ruinen des Komplexes.",
         full_description: {
             title: "Beschreibung und Geschichte",
@@ -2590,10 +2540,9 @@ const datas = [
     {
         id: "altstadt_luedenscheid",
         name: "Altstadt von Lüdenscheid",
-        type: ["historical_area"],
+        type: ["historical_area"], top: "popular",
         path: "altstadt_luedenscheid",
         countryPath: "germany", regionsPath: "nrw", districtPath: "arnsberg", cityPath: "luedenscheid",
-        
         fotoCard: "Germany/nrw/arnsberg/Märkischer-Kreis/luedenscheid/001.JPG",
         subObjects: ["erloeserkirche_luedenscheid", "brunnen_altstadt_luedenscheid"],
         short_description: "Die Altstadt von Lüdenscheid ist das historische Herz der Stadt mit engen Straßen und einem ringförmigen Straßennetz um die Erlöserkirche. Hier sind Gebäude aus dem 18.–19. Jahrhundert, Reste der Stadtmauer und das historische Museum erhalten geblieben, und die gemütlichen Gassen verbinden Vergangenheit mit dem modernen Stadtleben.",
@@ -2635,14 +2584,10 @@ const datas = [
     {
         id: "erloeserkirche_luedenscheid",
         name: "Erlöserkirche",
-        type: ["cathedral"],
+        type: ["cathedral"], top: "popular",
         path: "erloeserkirche_luedenscheid",
-        regionsPath: "nrw",
-        districtPath: "arnsberg",
-        cityPath: "luedenscheid",
-        countryPath: "germany",
-        hiddenFromList: true,
-        showMore: true,
+        countryPath: "germany", regionsPath: "nrw", districtPath: "arnsberg", cityPath: "luedenscheid",
+        hiddenFromList: true, showMore: true,
         fotoCard: "Germany/nrw/arnsberg/Märkischer-Kreis/luedenscheid/erloeserkirche_luedenscheid/001.JPG",
         short_description: "Die Erlöserkirche – die älteste Kirche Lüdenscheids mit klassizistischer Fassade, Emporen und lutherischem Altar. Im Zentrum der Altstadt, architektonisches Wahrzeichen und kulturelles Zentrum mit Konzerten und Ausstellungen.",
         full_description: {
@@ -2692,14 +2637,12 @@ const datas = [
     {
         id: "brunnen_altstadt_luedenscheid",
         name: "Brunnen in der Altstadt",
-        type: ["monument_or_fountain"],
+        type: ["monument_or_fountain"], top: "local",
         path: "brunnen_altstadt_luedenscheid",
-        countryPath: "germany",
-        regionsPath: "nrw",
-        districtPath: "arnsberg",
-        cityPath: "luedenscheid",
-        fotoCard: "Germany/nrw/arnsberg/Märkischer-Kreis/luedenscheid/altstadt_luedenscheid/001.JPG",
+        countryPath: "germany", regionsPath: "nrw",
+        districtPath: "arnsberg", cityPath: "luedenscheid",
         hiddenFromList: true,
+        fotoCard: "Germany/nrw/arnsberg/Märkischer-Kreis/luedenscheid/altstadt_luedenscheid/001.JPG",
         short_description: "Der Brunnen befindet sich in der historischen Altstadt auf dem Graf-Engelbert-Platz – einem Platz, der dem Stadtgründer gewidmet ist. Er wurde im Jahr 1982 eröffnet und der Stadt von ihren Bürgern im Zuge der Altstadtsanierung gestiftet und wurde zu einem der Symbole der erneuerten historischen Zone. Bei der feierlichen Eröffnung betonten die örtlichen Behörden den Wunsch, den Brunnen zum „Herz des bürgerlichen Lebens“ der Altstadt zu machen. Seitdem zählt er zu den bedeutenden öffentlichen und kulturellen Objekten Lüdenscheids.",
         short_description2: "Der Brunnen wurde vom Künstler und Metallgestalter K. T. Neumann (Kurt Toni Neumann) geschaffen, der in Lüdenscheid lebte und arbeitete und einen bedeutenden Beitrag zur plastischen Gestaltung der Stadt leistete. In der Gestaltung wird die Figur eines Herolds verwendet, die symbolisch den historischen Moment der Verleihung der Stadtrechte durch Graf Engelbert I., den Gründer Lüdenscheids, darstellt. Dieses Motiv spiegelt sich in den Reliefs und im gesamten thematischen Konzept der Anlage wider.",
         full_description: {
@@ -2722,12 +2665,9 @@ const datas = [
     {
         id: "rathausplatz_luedenscheid",
         name: "Rathausplatz von Lüdenscheid",
-        type: ["square"],
+        type: ["square"], top: "local",
         path: "rathausplatz_luedenscheid",
-        countryPath: "germany",
-        regionsPath: "nrw",
-        districtPath: "arnsberg",
-        cityPath: "luedenscheid",
+        countryPath: "germany", regionsPath: "nrw", districtPath: "arnsberg", cityPath: "luedenscheid",
         fotoCard: "Germany/nrw/arnsberg/Märkischer-Kreis/luedenscheid/rathausplatz_lüdenscheid/001.JPG",
         location: "Lüdenscheid, Deutschland",
         short_description: "Der zentrale Platz von Lüdenscheid (Rathausplatz) ist das Herz der Stadt und ein wichtiger öffentlicher Raum in der Nähe des Rathauses und der Fußgängerzone. Hier finden Märkte, städtische Veranstaltungen und Treffen der Bewohner statt, und der Platz dient als Ausgangspunkt, um das historische Stadtzentrum zu erkunden.",
@@ -2763,19 +2703,19 @@ const datas = [
     {
         id: "sternplatz",
         name: "Sternplatz",
-        type: ["square"],
+        type: ["square"], top: "local",
         path: "sternplatz",
-        countryPath: "germany",
-        regionsPath: "nrw",
-        districtPath: "arnsberg",
-        cityPath: "luedenscheid",
+        countryPath: "germany", regionsPath: "nrw", districtPath: "arnsberg", cityPath: "luedenscheid",
         fotoCard: "Germany/nrw/arnsberg/Märkischer-Kreis/luedenscheid/sternplatz/003.jpg",
         location: "Lüdenscheid, Deutschland",
         subObjects: ["onkel_willi_denkmal_sternplatz_luedenscheid", "fontain_sternplatz_luedenscheid"],
         short_description: "Der Sternplatz ist der zentrale Platz von Lüdenscheid, gelegen in der Fußgängerzone des historischen Zentrums und ein wichtiger Treffpunkt des städtischen Lebens.",
         short_description_subObjects: {
             text: "Auf dem Sternplatz befinden sich folgende Sehenswürdigkeiten:",
-            items: ["Denkmal von Onkel Willi", "Neumann-Brunnen"]
+            items: [
+                "<b>Denkmal für Onkel Willi</b> – Bronze-Skulptur eines typischen Bewohners von Lüdenscheid mit Hund.",
+                "<b>Neumann-Brunnen</b> – dekorativer Brunnen, geschaffen vom Bildhauer Kurt Tony Neumann."
+            ]
         },
         full_description: {
             title: "Beschreibung und Geschichte",
@@ -2803,15 +2743,11 @@ const datas = [
     {
         id: "onkel_willi_denkmal_sternplatz_luedenscheid",
         name: "Denkmal von Onkel Willi",
-        type: ["monument_or_fountain"],
+        type: ["monument_or_fountain"], top: "local",
         path: "onkel_willi_denkmal_sternplatz_luedenscheid",
-        countryPath: "germany",
-        regionsPath: "nrw",
-        districtPath: "arnsberg",
-        cityPath: "luedenscheid",
+        countryPath: "germany", regionsPath: "nrw", districtPath: "arnsberg", cityPath: "luedenscheid",
         fotoCard: "Germany/nrw/arnsberg/Märkischer-Kreis/luedenscheid/sternplatz/001.JPG",
-        hiddenFromList: true,
-        showMore: true,
+        hiddenFromList: true, showMore: true,
         short_description: "Das Denkmal von Onkel Willi ist eine Bronzeskulptur auf dem Sternplatz, die einen typischen Bewohner von Lüdenscheid mit Hund darstellt. Es ist ein inoffizielles Wahrzeichen der Stadt und spiegelt die alltägliche, „lebendige“ Atmosphäre wider.",
         full_description: {
             title: "Beschreibung und Geschichte",
@@ -2834,15 +2770,11 @@ const datas = [
     {
         id: "fontain_sternplatz_luedenscheid",
         name: "Brunnen auf dem Sternplatz",
-        type: ["monument_or_fountain"],
+        type: ["monument_or_fountain"], top: "local",
         path: "fontain_sternplatz_luedenscheid",
-        countryPath: "germany",
-        regionsPath: "nrw",
-        districtPath: "arnsberg",
-        cityPath: "luedenscheid",
+        countryPath: "germany", regionsPath: "nrw", districtPath: "arnsberg", cityPath: "luedenscheid",
         fotoCard: "Germany/nrw/arnsberg/Märkischer-Kreis/luedenscheid/sternplatz/003.jpg",
-        hiddenFromList: true,
-        showMore: true,
+        hiddenFromList: true, showMore: true,
         short_description: "Der Brunnen auf dem Sternplatz ist ein dekoratives Wasserbecken im Zentrum des Platzes, geschaffen Ende der 1970er Jahre vom Bildhauer Kurt Toni Neumann. Er ist ein bedeutendes städtisches Objekt und ein Ort der Erholung in der Fußgängerzone von Lüdenscheid.",
         full_description: {
             title: "Beschreibung und Geschichte",
@@ -2865,12 +2797,9 @@ const datas = [
     {
         id: "history_museum_luedenscheid",
         name: "Geschichtsmuseum Lüdenscheid",
-        type: ["museum"],
+        type: ["museum"], top: "local",
         path: "history_museum_luedenscheid",
-        countryPath: "germany",
-        regionsPath: "nrw",
-        districtPath: "arnsberg",
-        cityPath: "luedenscheid",
+        countryPath: "germany", regionsPath: "nrw", districtPath: "arnsberg", cityPath: "luedenscheid",
         fotoCard: "Germany/nrw/arnsberg/Märkischer-Kreis/luedenscheid/history_museum_luedenscheid/001.JPG",
         location: "Lüdenscheid, Deutschland",
         officialSite: [
