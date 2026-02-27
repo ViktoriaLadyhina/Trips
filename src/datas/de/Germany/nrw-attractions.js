@@ -1642,6 +1642,13 @@ const datas = [
         type: ["historical_area"], top: "popular",
         path: "historic_center_monschau",
         countryPath: "germany", regionsPath: "nrw", districtPath: "koln", cityPath: "monschau",
+        subObjects: ["rotes_haus_monschau"],
+        short_description_subObjects: {
+            text: "In der Altstadt von Monschau befindet sich folgende Sehenswürdigkeit:",
+            items: [
+                { bold: "Rotes Haus", text: "– ein herausragendes historisches Hausmuseum im Zentrum der Altstadt von Monschau" }
+            ]
+        },
         fotoCard: "Germany/nrw/koln/Aachen/monschau/001.jpg",
         location: "Monschau, Deutschland",
         short_description: "Die Altstadt von Monschau ist ein hervorragend erhaltenes historisches Zentrum mit Fachwerkhäusern aus dem 17.–18. Jahrhundert, engen gepflasterten Gassen und einer malerischen Uferpromenade entlang des Flusses Rur. Sie liegt in der Naturregion Eifel im Bundesland Nordrhein-Westfalen. Die Bebauung hat sich seit dem späten Mittelalter kaum verändert und vermittelt den Eindruck eines „lebendigen Museums“.",
@@ -1673,6 +1680,64 @@ const datas = [
             ogTitle: "Altstadt Monschau — Märchenhaftes Deutschland",
             ogDescription: "Ein Spaziergang durch die Altstadt von Monschau ist eine Reise in die Vergangenheit: enge Gassen, historische Häuser und die Romantik der Eifel.",
             ogImage: "https://our-travels.info/foto/Germany/nrw/koln/Aachen/monschau/002.jpg"
+        }
+    },
+    {
+        id: "rotes_haus_monschau",
+        name: "Rotes Haus",
+        type: ["museum", "historical_house"], top: "popular",
+        path: "rotes_haus_monschau",
+        countryPath: "germany", regionsPath: "nrw", districtPath: "koln", cityPath: "monschau",
+        hiddenFromList: true, showMore: true,
+        fotoCard: "Germany/nrw/koln/Aachen/monschau/rotes_haus/001.jpg",
+        location: "Monschau, Deutschland",
+        officialSite: [
+            { bold: "Offizielle Website", link: "https://rotes-haus-monschau.de" }
+        ],
+        short_description: "Das Rote Haus – ein herausragendes historisches Hausmuseum im Zentrum der Altstadt von Monschau. Es wurde um 1760 vom wohlhabenden Tuchmacher und Textilhändler Johann Heinrich Scheibler erbaut und vereint Wohnräume und Arbeitsbereiche unter einem Dach. Es veranschaulicht das Leben und den Handel während der Blütezeit der Textilproduktion in der Region. ",
+        full_description: {
+            title: "Beschreibung und Geschichte",
+            items: [
+                { bold: "Das Rote Haus", text: "– eines der eindrucksvollsten architektonischen Denkmäler der Stadt Monschau, das einen direkten Einblick in den Alltag einer wohlhabenden europäischen Familie des 18. Jahrhunderts ermöglicht. Es wurde gleichzeitig als Wohnhaus und Handelshaus errichtet und spiegelt eine Epoche wider, in der die lokale Textilindustrie die wichtigste Wohlstandsquelle der Region war und das Stadtbild prägte." },
+                { text: "Das Haus wurde um 1760 vom Industriellen und Kaufmann Johann Heinrich Scheibler errichtet, einem Vertreter einer einflussreichen Tuchmacherfamilie. Seine Familie verwandelte eine kleine handwerkliche Produktion in ein erfolgreiches Handelsunternehmen von europäischem Rang. Das Gebäude wurde zum Symbol ihres Status und ihres finanziellen Erfolgs, weshalb die Innenräume besonders prunkvoll gestaltet wurden – mit teuren Möbeln, dekorativen Wandverkleidungen und kunstvollen Details." },
+                { text: "Die Architektur des Hauses verbindet Funktionalität mit repräsentativem Luxus. Die unteren Stockwerke dienten dem Handel und der Geschäftsführung, während die oberen als Wohnräume der Familie genutzt wurden. Diese Funktionskombination war für wohlhabende Kaufmannshäuser jener Zeit typisch, ist jedoch nur selten so vollständig erhalten geblieben. Besonders bekannt ist die innere Holztreppe mit geschnitzten Szenen, die die einzelnen Schritte der Tuchherstellung darstellen – ein künstlerisches Manifest des Berufs der Besitzer." },
+                { text: "Mehr als zwei Jahrhunderte lang blieb das Haus im Besitz der Familie Scheibler und wurde von Generation zu Generation weitergegeben. In dieser Zeit wurde es kaum umgebaut, wodurch die originale Raumaufteilung und ein großer Teil der authentischen Ausstattung erhalten blieben. Es ist ein seltener Fall, in dem ein historisches Interieur ohne wesentliche Verluste bis heute überdauert hat, was das Gebäude zu einer wertvollen Quelle für das Verständnis des Lebens wohlhabender Bürger im 18. und 19. Jahrhundert macht." },
+                { text: "In der zweiten Hälfte des 20. Jahrhunderts beschlossen die Nachfahren der Besitzer, das Haus als historisches Kulturerbe zu bewahren und übergaben es einer Stiftung, die gemeinsam mit regionalen Kulturorganisationen gegründet wurde. Nach einer Restaurierung wurde das Gebäude als Museum für Besucher geöffnet. Heute zeigen die Ausstellungen nicht nur das Leben der Familie, sondern auch den gesamten Produktionszyklus der Textilherstellung – von der Verarbeitung der Wolle bis zum Verkauf des fertigen Stoffes." },
+                { text: "Heute gilt das Rote Haus als eine der wichtigsten kulturellen Sehenswürdigkeiten der Stadt. Es beeindruckt Besucher nicht durch Größe oder weltweite Bekanntheit, sondern durch seine authentische Atmosphäre: Hier gibt es keine Rekonstruktionen im historischen Stil, denn fast alles ist original. Gerade das macht es besonders wertvoll für Reisende, die sich für Handwerksgeschichte, Stadtkultur und das Alltagsleben Europas in der frühen Neuzeit interessieren." }
+            ]
+        },
+        tickets_and_entry: {
+            title: "Praktische Informationen",
+            items: [
+                { bold: "Adresse:", text: "Laufenstraße 10, 52156 Monschau, Nordrhein-Westfalen, Deutschland. " },
+                { bold: "Eintrittskarten (2025): ", text: "<br>Erwachsene – 6 €, <br>Studierende und ermäßigte Kategorien – 4 €, <br>Kinder und Jugendliche bis 18 Jahre – kostenlos gegen Nachweis." }
+            ]
+        },
+        sub_objects: {
+            title: "Ausstellungen:",
+            items: [
+                { bold: "Wohnräume.", text: "Einrichtungen im Stil des Rokoko, Louis-Seize und Empire, darunter prunkvolle Salons, Schlafzimmer und Speisezimmer, zeigen die Wohnkultur einer wohlhabenden Familie des 18. und 19. Jahrhunderts. " },
+                { bold: "Produktion und Handel. ", text: "Vier Themenräume widmen sich dem komplexen Prozess der Herstellung und Vermarktung von Monschauer Tuchen – von der Wolle bis zum fertigen Produkt, unter Verwendung von Mustern, Modellen und Multimedia. " },
+                { bold: "Familiengeschichte.", text: "Persönliche Gegenstände, Porträts und Dokumente erzählen vom wirtschaftlichen und gesellschaftlichen Status der Familie Scheibler und ihrer Rolle im europäischen Handel. " },
+                { bold: "Wasserkeller.", text: "Ein spezieller Bereich im Keller zeigt die Bedeutung von Wasser bei der Wollverarbeitung und lässt Besucher in die Produktionsatmosphäre eintauchen. " }
+            ]
+        },
+        interestingFacts: {
+            title: "Interessante Fakten",
+            items: [
+                { text: "Im Inneren des Hauses befindet sich eine einzigartige freistehende Holztreppe mit geschnitzten Szenen der Tuchherstellung. " },
+                { text: "In der Ausstellung sind originale Stoffmuster und Bücher mit Tausenden von Musterzeichnungen zu sehen. " },
+                { text: "Das Haus vereint Wohnräume und Produktionsbereiche unter einem Dach – eine seltene Besonderheit für jene Zeit." }
+            ]
+        },
+        construction_period: "1760",
+        founder: "Johann Heinrich Scheibler – Tuchmacher, Kaufmann und Besitzer eines Textilunternehmens, der den wirtschaftlichen Erfolg der Familie begründete und das Haus errichten ließ. ",
+        meta: {
+            title: "Rotes Haus Monschau – Museum für Geschichte und Textilien in Deutschland",
+            description: "Das historische Museum Rotes Haus in Monschau ist ein prachtvolles Wohn- und Handelshaus des 18. Jahrhunderts der Tuchmacherfamilie Scheibler. Ausstellungen über Leben, Handwerk und Textilhandel in ganz Europa. Praktische Besucherinformationen.",
+            ogTitle: "Rotes Haus Monschau – Geschichte, Stoffe und Leben des 18. Jahrhunderts",
+            ogDescription: "Besuchen Sie das Rote Haus in Monschau: ein einzigartiges Museum zur Geschichte des Familienhandels mit Textilien, prunkvollen Innenräumen und Handwerksausstellungen im Herzen der Altstadt. ",
+            ogImage: "https://our-travels.info/foto/Germany/nrw/koln/Aachen/monschau/rotes_haus/001.jpg"
         }
     },
     {

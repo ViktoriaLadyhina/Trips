@@ -60,8 +60,8 @@ const Gallery = ({ images }) => {
 
                 <div className="gallery__image-container">
                     <img
-                        src={images[current].src}
-                        alt={images[current].alt}
+                        src={images[current]?.src}
+                        alt={images[current]?.alt}
                         className="gallery__image"
                     />
                     <div className="gallery__caption">{images[current].alt}</div>

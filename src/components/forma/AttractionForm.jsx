@@ -79,6 +79,8 @@ const AttractionForm = () => {
     regionsPath: watchedFields.region,
     districtPath: watchedFields.district,
     cityPath: watchedFields.city,
+    ...(watchedFields.isChildAttraction === "true" && { hiddenFromList: true }), 
+    ...(watchedFields.showMore === "true" && { showMore: true }),
     fotoCard: watchedFields.foto,
     ...(watchedFields.location.length > 0 && { location: watchedFields.location }),
     ...(watchedFields.hasOfficialSite && watchedFields.officialSiteLink && {
@@ -98,7 +100,7 @@ const AttractionForm = () => {
     }),
 ...(watchedFields.shortDescriptionSubObjects?.items?.some(item => item.bold?.trim() || item.text?.trim()) && {
   short_description_subObjects: {
-    title: watchedFields.shortDescriptionSubObjects.title?.trim() || "",
+    text: watchedFields.shortDescriptionSubObjects.title?.trim() || "",
     items: watchedFields.shortDescriptionSubObjects.items
       .filter(item => item.bold?.trim() || item.text?.trim())
       .map(item => ({
@@ -107,8 +109,6 @@ const AttractionForm = () => {
       }))
   }
 }),
-    ...(watchedFields.isChildAttraction === "true" && { hiddenFromList: true }), 
-    ...(watchedFields.showMore === "true" && { showMore: true }),
     short_description: watchedFields.short_description,
     ...(watchedFields.short_description2.length > 0 && { short_description2: watchedFields.short_description2 }),
     full_description: {

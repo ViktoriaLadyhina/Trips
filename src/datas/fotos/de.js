@@ -341,6 +341,7 @@ export const Fotos = {
         { path: "Germany/nrw/koln/Aachen/monschau/005.jpg", title: { ru: "Старый город Моншау, 2025", ua: "Старе місто Моншау, 2025", de: "Altstadt Monschau, 2025" } },
         { path: "Germany/nrw/koln/Aachen/monschau/006.jpg", title: { ru: "Старый город Моншау, 2025", ua: "Старе місто Моншау, 2025", de: "Altstadt Monschau, 2025" } },
         { path: "Germany/nrw/koln/Aachen/monschau/007.jpg", title: { ru: "Старый город Моншау, 2025", ua: "Старе місто Моншау, 2025", de: "Altstadt Monschau, 2025" } },
+        { path: "Germany/nrw/koln/Aachen/monschau/rotes_haus/001.jpg", title: { ru: "Красный дом, 2024", ua: "Червоний будинок, 2024", de: "Rotes Haus, 2024" } },
       ],
       burg_monschau: [
         { path: "Germany/nrw/koln/Aachen/monschau/burg/001.jpg", title: { ru: "Замок Моншау (фото взято с интернета)", ua: "Замок Моншау (фото взято з Інтернету)", de: "Burg Monschau (Foto aus dem Internet)" } },
@@ -351,6 +352,10 @@ export const Fotos = {
         { path: "Germany/nrw/koln/Aachen/monschau/burg/006.jpg", title: { ru: "Замок Моншау, 2025", ua: "Замок Моншау, 2025", de: "Burg Monschau, 2025" } },
         { path: "Germany/nrw/koln/Aachen/monschau/burg/007.jpg", title: { ru: "Вид со смотровой площадки замка Моншау, 2025", ua: "Вид з оглядового майданчика замку Моншау, 2025", de: "Aussicht von der Aussichtsplattform der Burg Monschau, 2025" } },
         { path: "Germany/nrw/koln/Aachen/monschau/burg/008.jpg", title: { ru: "Вид со смотровой площадки замка Моншау, 2025", ua: "Вид з оглядового майданчика замку Моншау, 2025", de: "Aussicht von der Aussichtsplattform der Burg Monschau, 2025" } },
+      ],
+      rotes_haus_monschau: [
+        { path: "Germany/nrw/koln/Aachen/monschau/rotes_haus/001.jpg", title: { ru: "Красный дом, 2024", ua: "Червоний будинок, 2024", de: "Rotes Haus, 2024" } },
+        { path: "Germany/nrw/koln/Aachen/monschau/rotes_haus/002.jpg", title: { ru: "Красный дом (фото взято с интернета)", ua: "Червоний будинок (фото взято з Інтернету)", de: "Rotes Haus (Foto aus dem Internet)" } },
       ],
     },
 
