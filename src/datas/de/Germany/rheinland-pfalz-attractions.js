@@ -5,10 +5,7 @@ const datas = [
     name: "Porta Nigra",
     type: ["historical_building"], top: "top",
     path: "portaNigra_trier",
-    countryPath: "germany",
-    regionsPath: "rheinland-pfalz",
-    districtPath: "city",
-    cityPath: "trier",
+    countryPath: "germany", regionsPath: "rheinland-pfalz", districtPath: "city", cityPath: "trier",
     fotoCard: "Germany/rheinland-pfalz/trier-city/portaNigra_trier/001.jpg",
     location: "Trier, Deutschland",
     officialSite: [
@@ -44,6 +41,7 @@ const datas = [
       ]
     },
     construction_period: "um 170 n. Chr., Beginn des Baus der nördlichen Tore der Stadt Augusta Treverorum.",
+    coord: { lat: 49.75967, lng: 6.64400 },
     meta: {
       title: "Porta Nigra in Trier – größtes römisches Stadttor in Deutschland",
       description: "Entdecken Sie die Porta Nigra in Trier – das größte erhaltene römische Stadttor nördlich der Alpen. Geschichte, interessante Fakten, praktische Informationen für Touristen und Legenden.",
@@ -57,10 +55,7 @@ const datas = [
     name: "Römisches Amphitheater",
     type: ["historical_building", "museum", "monument_or_fountain"], top: "popular",
     path: "amphitheater_trier",
-    countryPath: "germany",
-    regionsPath: "rheinland-pfalz",
-    districtPath: "city",
-    cityPath: "trier",
+    countryPath: "germany", regionsPath: "rheinland-pfalz", districtPath: "city", cityPath: "trier",
     fotoCard: "Germany/rheinland-pfalz/trier-city/amphitheater/001.jpg",
     location: "Trier, Deutschland",
     officialSite: [
@@ -118,6 +113,7 @@ const datas = [
       ]
     },
     construction_period: "ca. 180–200 n. Chr.",
+    coord: { lat: 49.74702, lng: 6.64905 },
     meta: {
       title: "Römisches Amphitheater Trier – antikes Kolosseum und UNESCO-Denkmal",
       description: "Informationen zum Römischen Amphitheater Trier (Deutschland): Geschichte im 2. Jh. n. Chr., Öffnungszeiten, Tickets, interessante Fakten und Führungen.",
@@ -131,10 +127,7 @@ const datas = [
     name: "Römische Kaiserthermen",
     type: ["historical_building", "museum", "monument_or_fountain"], top: "popular",
     path: "kaiserthermen_trier",
-    countryPath: "germany",
-    regionsPath: "rheinland-pfalz",
-    districtPath: "city",
-    cityPath: "trier",
+    countryPath: "germany", regionsPath: "rheinland-pfalz", districtPath: "city", cityPath: "trier",
     fotoCard: "Germany/rheinland-pfalz/trier-city/kaiserthermen/01.jpg",
     location: "Trier, Deutschland",
     unesco_status: { included: true, year: 1986 },
@@ -182,6 +175,7 @@ const datas = [
       ]
     },
     construction_period: "Ende 3. bis Anfang 4. Jahrhundert n. Chr.",
+    coord: { lat: 49.750406, lng: 6.641575 },
     meta: {
       title: "Römische Kaiserthermen in Trier – Geschichte, Fotos, Öffnungszeiten",
       description: "Erfahren Sie mehr über die Geschichte, Führungen und praktische Informationen zu den römischen Kaiserthermen (Kaiserthermen) in Trier – einer der größten antiken Badeanlagen nördlich der Alpen, die in die UNESCO-Liste aufgenommen wurden.",
@@ -195,10 +189,7 @@ const datas = [
     name: "Konstantin-Basilika",
     type: ["cathedral", "historical_building"], top: "popular",
     path: "basilica_of_constantine_trier",
-    countryPath: "germany",
-    regionsPath: "rheinland-pfalz",
-    districtPath: "city",
-    cityPath: "trier",
+    countryPath: "germany", regionsPath: "rheinland-pfalz", districtPath: "city", cityPath: "trier",
     fotoCard: "Germany/rheinland-pfalz/trier-city/basilica_of_constantine/001.jpg",
     location: "Trier, Deutschland",
     officialSite: [
@@ -232,7 +223,8 @@ const datas = [
       ]
     },
     construction_period: "4. Jahrhundert n. Chr., ca. 310",
-    founder: " Kaiser Konstantin der Große",
+    founder: "Kaiser Konstantin der Große",
+    coord: { lat: 49.75352, lng: 6.64342 },
     meta: {
       title: "Konstantin-Basilika in Trier – römischer Thronsaal des 4. Jahrhunderts",
       description: "Die Konstantin-Basilika (Aula Palatina) – antiker Palastsaal von Kaiser Konstantin in Trier. Geschichte, Fakten, Architektur und Besuchsinformationen.",
@@ -280,6 +272,7 @@ const datas = [
       ]
     },
     construction_period: "2.–3. Jahrhundert n. Chr.",
+    coord: { lat: 49.75024, lng: 6.63080 },
     meta: {
       title: "Barbarathermen Trier – größter römischer Badekomplex",
       description: "Erfahren Sie mehr über die Barbarathermen in Trier – den größten römischen Badekomplex nördlich der Alpen, erhalten als Ruinen.",

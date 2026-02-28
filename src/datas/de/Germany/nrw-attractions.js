@@ -45,6 +45,7 @@ const datas = [
                 { text: "Hier befinden sich einige der ältesten Brauhäuser Kölns, in denen das traditionelle Bier Kölsch serviert wird." }
             ]
         },
+        coord: { lat: 50.9413, lng: 6.9583 },
         meta: {
             title: "Altstadt Köln – Sehenswürdigkeiten, Museen, Spaziergänge entlang des Rheins",
             description: "Entdecken Sie die Altstadt von Köln: enge Gassen, gotische Kathedralen, historische Plätze, Museen und die Rheinuferpromenade. Ein nützlicher Reiseführer für Spaziergänge und Besuchsplanung.",
@@ -114,6 +115,7 @@ const datas = [
                 { text: "Zur Aussichtsplattform führen 509 Stufen." }
             ]
         },
+        coord: { lat: 50.941364, lng: 6.958107 },
         meta: {
             title: "Kölner Dom: Gotische Legende des Rheins",
             description: "Der Kölner Dom – Symbol der Stadt und Meisterwerk gotischer Architektur. Baugeschichte, Reliquien, Glasfenster, Glocken und Geheimnisse des Doms.",
@@ -171,6 +173,7 @@ const datas = [
                 { bold: "Ratsturm", text: " – Turm mit 61 Metern Höhe und Hunderten von Figuren, Symbol der Macht und des Stolzes der Stadt." },
             ]
         },
+        coord: { lat: 50.938020, lng: 6.959260 },
         meta: {
             title: "Kölner Rathaus",
             description: "Kölner Rathaus: gotischer Turm, Renaissance-Loggia",
@@ -214,6 +217,7 @@ const datas = [
         },
         construction_period: "Kloster – ca. 960 n. Chr., heutige Kirche – 12.–13. Jahrhundert",
         founder: "Das Kloster wurde auf Initiative des Erzbischofs von Köln, Bruno der Große, gegründet.",
+        coord: { lat: 50.93858, lng: 6.96127 },
         meta: {
             title: "Groß St. Martin in Köln – Geschichte, Architektur und Fakten",
             description: "Groß St. Martin – romanische Kirche in der Altstadt von Köln am Rhein. Geschichte, Architektur, Fakten und Besuchsinformationen.",
@@ -274,6 +278,7 @@ const datas = [
         construction_period: " ursprünglich im 15. Jahrhundert erbaut, etwa zwischen 1441 und 1446.",
         architects: " Die Architekten der Rekonstruktion waren Rudolf Schwarz und Karl Band.",
         founder: " die Stadt Köln auf einem Grundstück der Familie Gürzenich.",
+        coord: { lat: 50.93674, lng: 6.95843 },
         meta: {
             title: "Gürzenich in Köln – historisches Gebäude und Zentrum der Festlichkeiten",
             description: "Der Gürzenich in Köln wurde in den Jahren 1441–1452 als Gebäude für städtische Feierlichkeiten errichtet. Heute finden hier Konzerte, Bankette und offizielle Empfänge statt.",
@@ -328,6 +333,7 @@ const datas = [
                 { text: "Seit 2019 befindet sich das Museum in Renovierung; die Eröffnung des modernisierten Gebäudes ist für 2027 geplant." }
             ]
         },
+        coord: { lat: 50.940556, lng: 6.959028 },
         meta: {
             title: "Römisch-Germanisches Museum in Köln: Antike unter dem Dom",
             description: "Das Römisch-Germanische Museum ist ein einzigartiges archäologisches Museum in Köln, errichtet über einer römischen Villa. Dionysosmosaik, Glas, Schmuck und Geschichte der Stadt Colonia.",
@@ -380,6 +386,7 @@ const datas = [
                 { "text": "Das Museum liegt gegenüber dem Kölner Rathaus und gilt als das älteste Parfümmuseum der Welt." }
             ]
         },
+        coord: { lat: 50.93774963688874, lng: 6.957929134368896 },
         meta: {
             title: "Duftmuseum im Farina-Haus – auch bekannt als Haus des Kölnisch Wassers",
             description: "Das Duftmuseum im Farina-Haus, auch bekannt als Haus des Kölnisch Wassers, ist das älteste Duftmuseum in Köln und die Geburtsstätte des berühmten Eau de Cologne. Hier schuf Johann Maria Farina 1709 das erste Eau de Cologne.",
@@ -434,6 +441,7 @@ const datas = [
                 { text: "In einem separaten Bereich des Museums befindet sich die Sammlung „Agfa Historama“, die der Geschichte der Fotografie gewidmet ist." }
             ]
         },
+        coord: { lat: 50.940951, lng: 6.960385 },
         meta: {
             title: "Museum Ludwig — Zeitgenössische Kunst in Köln",
             description: "Das Museum Ludwig in Köln ist eine der führenden Sammlungen zeitgenössischer Kunst weltweit, gegründet auf der Sammlung des deutschen Industriellen Peter Ludwig und seiner Frau Irene.",
@@ -488,6 +496,7 @@ const datas = [
                 { text: "Das Museum wurde am 31. Oktober 1993 eröffnet und zählt zu den meistbesuchten Museen Kölns." }
             ]
         },
+        coord: { lat: 50.93204, lng: 6.96444 },
         meta: {
             title: "Schokoladenmuseum Köln: Eine Reise in die Welt des Kakaos und der Süßigkeiten",
             description: "Das Schokoladenmuseum in Köln zeigt den Weg des Kakaos von der tropischen Plantage bis zur Schokoladentafel. Besuchen Sie die gläserne Fabrik, den 200-kg-Schokoladenbrunnen und entdecken Sie die Geschichte der süßen Versuchung.",
@@ -562,6 +571,7 @@ const datas = [
                 { text: "Der Bau des MiQua-Projekts läuft seit 2012 und ist ingenieurtechnisch einzigartig." }
             ]
         },
+        coord: { lat: 50.93788, lng: 6.95851 },
         meta: {
             title: "MiQua – Museum im archäologischen Viertel Köln",
             description: "MiQua – ein unterirdisches Museum im Zentrum von Köln, das römische, jüdische und mittelalterliche archäologische Schichten der Stadt zeigt.",
@@ -621,6 +631,7 @@ const datas = [
                 { text: "Es gibt eine virtuelle 360°-Tour durch das Museum, die es ermöglicht, die Sammlung online zu erkunden." }
             ]
         },
+        coord: { lat: 50.93729, lng: 6.95837 },
         meta: {
             title: "Wallraf-Richartz-Museum — Kunst vom Mittelalter bis zum Impressionismus",
             description: "Das Wallraf-Richartz-Museum in Köln ist das älteste Museum der Stadt mit Sammlungen von Malerei, Skulptur und Grafik vom Mittelalter bis zum frühen 20. Jh., einschließlich des Fonds Fondation Corboud mit Impressionisten.",
@@ -675,6 +686,7 @@ const datas = [
         construction_period: "Das erste Museumsgebäude wurde 1913 eröffnet, aber während des Zweiten Weltkriegs zerstört. Das heutige Gebäude am Aachener Weiher wurde 1977 errichtet und eröffnet.",
         architects: "Erstes Gebäude (1913): Architekt Franz Brantzky. Heutiges Gebäude (1977): japanischer Architekt Kunio Maekawa (Schüler von Le Corbusier). Den inneren japanischen Garten entwarf der Bildhauer Masayuki Nagare. Umsetzung des Maekawa-Plans in Köln – deutscher Architekt Joachim Jacobs.",
         founder: " Die Hauptsammlungen wurden von Adolf und Frieda Fischer gebildet.",
+        coord: { lat: 50.93514, lng: 6.92554 },
         meta: {
             title: "Museum für Ostasiatische Kunst in Köln",
             description: "Entdecken Sie die Kunst Chinas, Koreas und Japans in Köln: buddhistische Malerei, Holzskulpturen, japanische Schirme und traditioneller japanischer Garten.",
@@ -736,7 +748,8 @@ const datas = [
             ]
         },
         construction_period: "1906 – Sammlung an die Stadt übergeben (Gründung des Museums als Institution), 1910 – Museum für die Öffentlichkeit geöffnet (erste Ausstellung), 1956 – Umzug in die Kirche St. Cäcilien (heutiger Standort)",
-        founder: " Alexander Schnütgen – katholischer Theologe und Sammler, der christliche Kunstwerke in ganz Europa zusammengetragen hat. Seine private Sammlung bildete die Grundlage des Museums",
+        founder: "Alexander Schnütgen – katholischer Theologe und Sammler, der christliche Kunstwerke in ganz Europa zusammengetragen hat. Seine private Sammlung bildete die Grundlage des Museums",
+        coord: { lat: 50.93472, lng: 6.95144 },
         meta: {
             title: "Museum Schnütgen in Köln — mittelalterliche Kunst",
             description: "Das Museum Schnütgen in Köln – ein einzigartiges Museum für mittelalterliche Kunst im Gebäude der romanischen Kirche aus dem 12. Jahrhundert. Skulpturen, Reliquiare, Glasfenster und kirchliche Schätze.",
@@ -747,7 +760,7 @@ const datas = [
     },
     {
         id: "rautenstrauch_joest_museum_koln",
-        name: "Rautenstrauch-Joest-Museum – Kulturen der Welt",
+        name: "Rautenstrauch-Joest-Museum",
         type: ["museum"], top: "popular",
         path: "rautenstrauch_joest_museum_koln",
         countryPath: "germany", regionsPath: "nrw", districtPath: "city", cityPath: "koln",
@@ -795,7 +808,8 @@ const datas = [
         },
         construction_period: "Museum gegründet 1906, modernes Gebäude eröffnet 2010",
         architects: "Hauptgebäude entworfen von Peter Kulka",
-        founder: " Sammlung von Wilhelm Joest, Museum gegründet mit Unterstützung von Adele Rautenstrauch",
+        founder: "Sammlung von Wilhelm Joest, Museum gegründet mit Unterstützung von Adele Rautenstrauch",
+        coord: { lat: 50.93452, lng: 6.95044 },
         meta: {
             title: "Rautenstrauch-Joest-Museum in Köln – ethnologisches Museum der Weltkulturen",
             description: "Das Rautenstrauch-Joest-Museum in Köln ist eines der größten ethnologischen Museen Deutschlands. Ausstellungen zu Weltkulturen, Sammlungen, Geschichte, Öffnungszeiten und Preise.",
@@ -856,7 +870,8 @@ const datas = [
         },
         construction_period: "ca. 1852–1854 (Bau des Gebäudes im neugotischen Stil); Marke gegründet 1792",
         architects: "Johann Jakob Claassen – Architekt des Gebäudes",
-        founder: " Wilhelm Mülhens spielte eine Schlüsselrolle bei der Entwicklung der Marke 4711 und deren weltweiter Bekanntheit Ende des 18. bis Anfang des 19. Jahrhunderts; die Familie Mülhens erweiterte die Produktion und vertrieb die Produkte weltweit.",
+        founder: "Wilhelm Mülhens spielte eine Schlüsselrolle bei der Entwicklung der Marke 4711 und deren weltweiter Bekanntheit Ende des 18. bis Anfang des 19. Jahrhunderts; die Familie Mülhens erweiterte die Produktion und vertrieb die Produkte weltweit.",
+        coord: { lat: 50.93848, lng: 6.95225 },
         meta: {
             title: "Duft-Haus 4711 in Köln – Geschichte des legendären Eau de Cologne",
             description: "Besuchen Sie das historische Duft-Haus 4711 im Zentrum von Köln: Flagship-Store, Ausstellung über das berühmte Eau de Cologne, Führungen und Duft-Workshops.",
@@ -914,6 +929,7 @@ const datas = [
             ]
         },
         construction_period: "1888 (gegründet als Kunstgewerbemuseum Köln).",
+        coord: { lat: 50.93983, lng: 6.95479 },
         meta: {
             title: "Museum für Angewandte Kunst Köln – Design- und Handwerkskollektionen",
             description: "Museum für Angewandte Kunst Köln: Möbel, Textilien, Schmuck und Design vom Mittelalter bis heute. Adresse, Öffnungszeiten, Eintritt und Ausstellungen.",
@@ -970,7 +986,8 @@ const datas = [
             ]
         },
         construction_period: "1888 Jahr",
-        founder: " gegründet vom Kommunalverwaltung der Stadt Köln",
+        founder: "gegründet vom Kommunalverwaltung der Stadt Köln",
+        coord: { lat: 50.93902, lng: 6.95427 },
         meta: {
             title: "Kölnisches Stadtmuseum | Geschichte von Köln vom Mittelalter bis heute",
             description: "Besuchen Sie das Kölnische Stadtmuseum in Köln – ein modernes Stadtmuseum mit einer reichen Dauerausstellung und wechselnden Ausstellungen, die Kultur, Gesellschaft und Traditionen Kölns offenbaren. Adresse, Eintritt, Öffnungszeiten.",
@@ -1027,7 +1044,8 @@ const datas = [
         },
         construction_period: "1999",
         architects: " der Rekonstruktion – Walter von Lom",
-        founder: " das Museum wurde nicht von einem privaten Sammler gegründet, sondern von der gemeinnützigen Organisation „Verein Deutsches Sportmuseum“, an der große Sportverbände Deutschlands, das Olympische Komitee, die Stadt Köln und weitere Partner beteiligt waren.",
+        founder: "das Museum wurde nicht von einem privaten Sammler gegründet, sondern von der gemeinnützigen Organisation „Verein Deutsches Sportmuseum“, an der große Sportverbände Deutschlands, das Olympische Komitee, die Stadt Köln und weitere Partner beteiligt waren.",
+        coord: { lat: 50.93114, lng: 6.96463 },
         meta: {
             title: "Deutsches Sport & Olympia Museum in Köln – Sportgeschichte von der Antike bis heute",
             description: "Entdecken Sie 2.500 Jahre Sport- und Olympiageschichte im Museum in Köln: Exponate, interaktive Ausstellungen, Dach-Sportflächen und Sonderausstellungen.",
@@ -1082,7 +1100,8 @@ const datas = [
         },
         construction_period: "1992",
         architects: "",
-        founder: " gegründet auf Basis der kulturellen Stiftung SK Stiftung Kultur, die in Köln zur Unterstützung von Kunst und Kultur gegründet wurde, einschließlich Fotografie, Tanz und Literatur.",
+        founder: "gegründet auf Basis der kulturellen Stiftung SK Stiftung Kultur, die in Köln zur Unterstützung von Kunst und Kultur gegründet wurde, einschließlich Fotografie, Tanz und Literatur.",
+        coord: { lat: 50.94855, lng: 6.94358 },
         meta: {
             title: "Photographische Sammlung des SK Kulturfonds in Köln — Museum für Fotografie und Archiv von August Sander",
             description: "Erfahren Sie mehr über dokumentarische und konzeptionelle Fotografie in Köln: größtes Archiv von August Sander, Ausstellungen klassischer und zeitgenössischer Fotografen.",
@@ -1185,6 +1204,7 @@ const datas = [
         },
         construction_period: "1997",
         founder: " Michael und Eleonore Stoffel (Stoffel)",
+        coord: { lat: 50.95550, lng: 6.97104 },
         meta: {
             title: "Skulpturenpark Köln – Skulpturenpark und Freilichtmuseum moderner Skulpturen in Köln",
             description: "Besuchen Sie den Skulpturenpark Köln – ein einzigartiger Freilicht-Skulpturenpark in der Nähe des Rheins und des Kölner Zoos. Moderne Skulpturen internationaler Künstler, freier Eintritt, Spaziergänge zwischen Kunst und Natur.",
@@ -1244,7 +1264,8 @@ const datas = [
             ]
         },
         construction_period: "22. Juli 1860 – offizielles Eröffnungsdatum des Zoos nach etwa 10-monatiger Vorbereitung und Bauzeit.",
-        founder: " Der Zoo wurde als Aktiengesellschaft lokaler Bürger auf Initiative des Lehrers Dr. Caspar (Casper) Garthe gegründet, der Organisator und Hauptinitiator des Projekts war. Der erste bei der Gründung ernannte Direktor war Dr. Heinrich Bodinus (Biologe), der die Leitung übernahm und die erste Tierausstellung organisierte.",
+        founder: "Der Zoo wurde als Aktiengesellschaft lokaler Bürger auf Initiative des Lehrers Dr. Caspar (Casper) Garthe gegründet, der Organisator und Hauptinitiator des Projekts war. Der erste bei der Gründung ernannte Direktor war Dr. Heinrich Bodinus (Biologe), der die Leitung übernahm und die erste Tierausstellung organisierte.",
+        coord: { lat: 50.95832, lng: 6.97302 },
         meta: {
             title: "Kölner Zoo – Geschichte, Expositionen und praktische Informationen für den Besuch",
             description: "Entdecken Sie den Kölner Zoo, einen der ältesten Zoos Deutschlands. Erfahren Sie mehr über seine Geschichte, thematischen Expositionen, den Regenwald, den Elefantenpark und praktische Besuchsinformationen.",
@@ -1311,6 +1332,7 @@ const datas = [
                 { text: "Im Herbst ist der Garten besonders schön durch das bunte Laub und Bambus." }
             ]
         },
+        coord: { lat: 50.88393, lng: 6.97936 },
         meta: {
             title: "Forstbotanischer Garten – Botanischer Garten und Forstpark Köln",
             description: "Botanischer Garten und Forstpark Köln mit Pflanzen aus aller Welt und thematischen Zonen, einschließlich Friedenswald.",
@@ -1366,7 +1388,8 @@ const datas = [
         },
         construction_period: "Parkbereich: 1864. Botanischer Garten: 1914. Zusammenschluss der Ensembles: 1920",
         architects: "P. J. Lenné (Peter Joseph Lenné) – Landschaftsarchitekt des Gartenensembles",
-        founder: " Der Garten wurde auf Initiative der städtischen Behörden Kölns gegründet",
+        founder: "Der Garten wurde auf Initiative der städtischen Behörden Kölns gegründet",
+        coord: { lat: 50.96084, lng: 6.96829 },
         meta: {
             title: "Botanischer Garten Flora, Köln – Park und Gewächshäuser mit Pflanzen aus aller Welt",
             description: "Besuchen Sie den Botanischen Garten Flora in Köln: über 10.000 Pflanzenarten aus aller Welt, historische Alleen, thematische Gärten, Gewächshäuser und Erholung im Freien.",
@@ -1424,6 +1447,7 @@ const datas = [
         },
         construction_period: "1957",
         architects: "Landschaftsprojekt unter der Leitung von Hermann Mattern",
+        coord: { lat: 50.94952, lng: 6.97598 },
         meta: {
             title: "Rheinpark (Rheinpark)",
             description: "Der Rheinpark ist ein großer öffentlicher Park entlang des rechten Rheinufers im Stadtteil Deutz der Stadt Köln. Er stellt eine historisch und architektonisch bedeutende Grünanlage dar, bekannt für seine weitläufigen Rasenflächen, Blumenbeete, Spazierwege und den herrlichen Blick auf das Stadtzentrum mit dem Kölner Dom.",
@@ -1464,6 +1488,7 @@ const datas = [
         },
         construction_period: "1928",
         architects: "Das architektonische Erscheinungsbild des Tanzbrunnens entwickelte sich in mehreren Phasen: Zunächst wurde der Brunnen mit Tanzfläche vom Architekten Josef Op Gen Orth 1950 geschaffen, und 1957 entwarf der herausragende Membranarchitekt Frei Otto für den Komplex das leichte „Sternwellenzelt“ – ein wellenförmiges Dach mit vom Zentrum ausstrahlenden Strahlen, das zu einer architektonischen Besonderheit des Tanzbrunnens wurde.",
+        coord: { lat: 50.94644, lng: 6.97183 },
         meta: {
             title: "Tanzbrunnen in Köln – Konzerte, Festivals, kulturelle Veranstaltungen",
             description: "Besuchen Sie den Tanzbrunnen – den historischen „Tanzenden Brunnen“ am Rhein in Köln. Konzerte, Festivals, kulturelle Events und malerische Ausblicke auf den Fluss. Erfahren Sie mehr über Geschichte und Architektur des Komplexes.",
@@ -1518,6 +1543,7 @@ const datas = [
             ]
         },
         construction_period: "26. April 1957",
+        coord: { lat: 50.94424, lng: 6.97374 },
         meta: {
             title: "Kölner Seilbahn – Seilbahn über den Rhein in Köln",
             description: "Die Cologne Cable Car ist eine panoramische Seilbahn über den Rhein in Köln. Geschichte, Lage, Ausblicke auf den Kölner Dom, den Rheinpark und nützliche Informationen für Besucher.",
@@ -1528,55 +1554,56 @@ const datas = [
     },
     {
         id: "divitia_koln",
-        name: "Ruinen des römischen Forts Divitia in Köln",
+        name: "Ruinen des römischen Forts Divitia in Köln (Historischer Park Deutz)",
         type: ["historical_building"], top: "local",
         path: "divitia_koln",
         countryPath: "germany", regionsPath: "nrw", districtPath: "city", cityPath: "koln",
         hiddenFromList: true, showMore: true,
         fotoCard: "Germany/nrw/koln/koln-city/rheinpark_koln/004.jpg",
         location: "Köln, Deutschland",
-        short_description: "Die Ruinen des römischen Forts Divitia sind Überreste einer spätantiken Befestigung aus dem 4. Jahrhundert n. Chr. am rechten Rheinufer in Köln. Erhalten sind Teile des Turms, römische Mauerreste und Fundamentreste. Die Anlage ist frei zugänglich im Fußgängerbereich des Rheinparks.",
+        short_description: "Die Ruinen des römischen Forts Divitia, auch bekannt als Historischer Park Deutz, sind Überreste einer spätantiken Befestigung aus dem 4. Jahrhundert n. Chr. am rechten Rheinufer in Köln. Erhalten sind Turmfragmente, Mauerwerk und Fundamentreste. Sie sind für die freie Besichtigung in der Fußgängerzone des Rheinparks zugänglich.",
         full_description: {
             title: "Beschreibung und Geschichte",
             items: [
-                { bold: "Ruinen des römischen Forts Divitia", text: "– dies sind die Überreste einer spätantiken Befestigung aus dem 4. Jahrhundert n. Chr. am rechten Rheinufer. Heute sind Fragmente des runden Wachturms, Mauerreste und Fundamentreste sichtbar. Besonders ist, dass es sich um originale archäologische Überreste handelt, nicht um eine Rekonstruktion. Das Fort ist in den modernen Fußgängerbereich des Rheinparks integriert, sodass Touristen und Besucher es frei besichtigen können." },
-                { bold: "Geschichte. ", text: "Das Fort wurde etwa 310–315 n. Chr. auf Befehl von Kaiser Konstantin dem Großen errichtet. Es hatte eine doppelte Funktion: Es schützte das rechte Rheinufer und kontrollierte die Flussüberquerung, um die Sicherheit der antiken Stadt Colonia Claudia Ara Agrippinensium (das alte Köln) zu gewährleisten." },
-                { text: "Divitia war Teil des Befestigungssystems am Rhein, das strategische Bedeutung für die Verteidigung der nördlichen Grenzen des Römischen Reiches hatte. Das Fort war Teil einer Beobachtungslinie und unterhielt Verbindung zu anderen römischen Militäranlagen, um schnell auf Bedrohungen durch germanische Stämme reagieren zu können." }
+                { bold: "Ruinen des römischen Forts Divitia (Historischer Park Deutz)", text: "– sind Überreste einer spätantiken Befestigung aus dem 4. Jahrhundert n. Chr., die am rechten Rheinufer liegt. Heute sind Fragmente eines runden Verteidigungsturms, Mauerwerk und Fundamentreste sichtbar. Besonderheit des Objekts ist, dass es sich um originale archäologische Überreste handelt, nicht um eine Rekonstruktion. Das Fort ist in die moderne Fußgängerzone des Rheinparks integriert, sodass Touristen und Einwohner es frei ohne Barrieren besichtigen können." },
+                { bold: "Geschichte. ", text: "Das Fort wurde um 310–315 n. Chr. auf Befehl von Kaiser Konstantin dem Großen erbaut. Es hatte eine doppelte Funktion: das rechte Rheinufer zu schützen und die Rheinfähre zu kontrollieren, um die Sicherheit der antiken Stadt Colonia Claudia Ara Agrippinensium (altes Köln) zu gewährleisten." },
+                { text: "Divitia war Teil des Rheinsicherungssystems, das strategische Bedeutung für die Verteidigung der nördlichen Grenzen des Römischen Reiches hatte. Das Fort war Teil einer Beobachtungslinie und hielt Kontakt zu anderen römischen Militäranlagen, was eine schnelle Reaktion auf Bedrohungen durch germanische Stämme ermöglichte." }
             ]
         },
         tickets_and_entry: {
             title: "Praktische Informationen",
             items: [
-                { bold: "Lage:", text: "westliche Grenze des Rheinparks, in der Nähe des Rheinuferwegs, unweit der Hohenzollernbrücke." },
-                { bold: "Zugang:", text: "freie Besichtigung, Fußgängerbereich." },
-                { bold: "Empfehlungen:", text: "gut kombinierbar mit einem Spaziergang am Rhein oder dem Besuch anderer Objekte im Rheinpark." },
+                { bold: "Lage:", text: "westliche Grenze des Rheinparks, in der Nähe des Rheins, unweit der Hohenzollernbrücke." },
+                { bold: "Zugang:", text: "freie Besichtigung, Fußgängerzone." },
+                { bold: "Empfehlungen:", text: "praktisch kombinierbar mit einem Spaziergang entlang des Rheins oder dem Besuch anderer Objekte des Rheinparks." },
                 { bold: "Ausstattung:", text: "Informationstafeln auf Deutsch und Englisch." }
             ]
         },
         sub_objects: {
-            title: "Heutiger Erhaltungszustand",
+            title: "Erhaltene Teile heute",
             items: [
-                { bold: "Fragmente des runden Wachturms: ", text: "teilweise erhalten, vermutlich als Aussichtspunkt und für Verteidigungszwecke genutzt." },
-                { bold: "Römische Mauerreste:", text: "Fragmentierte Mauern zeigen die römische Mauertechnik und die Verwendung von lokalem Stein." },
-                { bold: "Fundamentreste: ", text: "erlauben die Vorstellung von Größe und Konfiguration der Befestigung." }
+                { bold: "Fragmente des runden Verteidigungsturms: ", text: "teilweise erhalten, vermutlich als Aussichtspunkt und für Verteidigungsartillerie genutzt." },
+                { bold: "Römisches Mauerwerk:", text: "Fragmentierte Mauern zeigen die römische Technik und die Nutzung von lokalem Stein." },
+                { bold: "Fundamentreste der Mauern: ", text: "ermöglichen eine Vorstellung von Größe und Aufbau der Befestigung." }
             ]
         },
         interestingFacts: {
             title: "Interessante Fakten",
             items: [
-                { text: "Divitia ist eines der wenigen erhaltenen römischen Befestigungsobjekte am rechten Rheinufer." },
-                { text: "Das Fort existierte gleichzeitig mit dem Bau der römischen Rheinbrücke, die strategische Bedeutung für Handel und militärische Zwecke hatte." },
-                { text: "Archäologische Ausgrabungen zeigten, dass die Mauern verstärkt wurden, um vor möglichen Überschwemmungen des Flusses zu schützen." },
-                { text: "Im 19. und 20. Jahrhundert wurden Teile des Forts als „Bausteine“ für andere städtische Gebäude verwendet, aber ein Teil konnte erhalten bleiben." }
+                { text: "Divitia ist eines der wenigen erhaltenen römischen Befestigungsbauwerke am rechten Rheinufer." },
+                { text: "Das Fort existierte gleichzeitig mit dem Bau der römischen Brücke über den Rhein, die strategische Bedeutung für Handel und militärische Zwecke hatte." },
+                { text: "Archäologische Ausgrabungen zeigten, dass die Mauern verstärkt wurden, um Schutz vor möglichen Hochwassern zu bieten." },
+                { text: "Im 19. und 20. Jahrhundert wurden Teile des Forts als „Bausteine“ für andere städtische Bauwerke genutzt, aber ein Teil konnte erhalten werden." }
             ]
         },
-        construction_period: " ca. 310–315 n. Chr.",
-        founder: " Kaiser Konstantin der Große.",
+        construction_period: "Baubeginn: etwa 310–315 n. Chr.",
+        founder: "Kaiser Konstantin der Große.",
+        coord: { lat: 50.93768, lng: 6.96867 },
         meta: {
-            title: "Ruinen des römischen Forts Divitia in Köln – Überreste einer römischen Befestigung",
-            description: "Überreste des römischen Forts Divitia aus dem 4. Jahrhundert n. Chr. am rechten Rheinufer in Köln. Erhalten sind Turm, Mauerreste und Fundamentreste. Frei zugänglich im Rheinpark.",
-            ogTitle: "Ruinen des römischen Forts Divitia in Köln – Überreste einer römischen Befestigung",
-            ogDescription: "Entdecken Sie die Überreste des römischen Forts Divitia im Rheinpark, Köln. Originale Mauern, Turm und Fundamentreste stehen für Spaziergänge und Besichtigungen offen.",
+            title: "Ruinen des römischen Forts Divitia in Köln – Historischer Park Deutz, römische Befestigungsruinen",
+            description: "Überreste des römischen Forts Divitia aus dem 4. Jahrhundert n. Chr., auch bekannt als Historischer Park Deutz, am rechten Rheinufer in Köln. Erhalten sind Turm, Mauerwerk und Fundamentreste. Für Besichtigungen im Rheinpark zugänglich.",
+            ogTitle: "Ruinen des römischen Forts Divitia in Köln – Historischer Park Deutz, römische Befestigungsruinen",
+            ogDescription: "Erkunden Sie die Überreste des römischen Forts Divitia, bekannt als Historischer Park Deutz, im Rheinpark Köln. Originale Mauern, Turm und Fundament sind für Spaziergänge und Besichtigungen geöffnet.",
             ogImage: "https://our-travels.info/foto/Germany/nrw/koln/koln-city/rheinpark_koln/004.jpg"
         }
     },
@@ -1674,6 +1701,7 @@ const datas = [
             ]
         },
         construction_period: "13. Jahrhundert (Entstehung der Siedlung um die Burg)",
+        coord: { lat: 50.55522, lng: 6.24241 },
         meta: {
             title: "Altstadt Monschau — Mittelalterliches Zentrum in der Eifel | Deutschland",
             description: "Die Altstadt von Monschau ist eines der schönsten historischen Zentren Deutschlands mit Fachwerkhäusern, dem Fluss Rur und mittelalterlicher Atmosphäre.",
@@ -1732,6 +1760,7 @@ const datas = [
         },
         construction_period: "1760",
         founder: "Johann Heinrich Scheibler – Tuchmacher, Kaufmann und Besitzer eines Textilunternehmens, der den wirtschaftlichen Erfolg der Familie begründete und das Haus errichten ließ. ",
+        coord: { lat: 50.55485, lng: 6.24095 },
         meta: {
             title: "Rotes Haus Monschau – Museum für Geschichte und Textilien in Deutschland",
             description: "Das historische Museum Rotes Haus in Monschau ist ein prachtvolles Wohn- und Handelshaus des 18. Jahrhunderts der Tuchmacherfamilie Scheibler. Ausstellungen über Leben, Handwerk und Textilhandel in ganz Europa. Praktische Besucherinformationen.",
@@ -1780,6 +1809,7 @@ const datas = [
             ]
         },
         construction_period: "Anfang des 13. Jahrhunderts (um 1217).",
+        coord: { lat: 50.55323, lng: 6.23973 },
         meta: {
             title: "Burg Monschau – Geschichte, Besuch, Führungen",
             description: "Die mittelalterliche Burg Monschau (Burg Monschau) auf einem Hügel über Monschau in Deutschland. Geschichte seit dem 13. Jahrhundert, Panoramablicke, Jugendherberge und kulturelle Veranstaltungen im Herzen der Eifel.",
@@ -1851,6 +1881,32 @@ const datas = [
         }
     },
     {
+        id: "bruehl_augustusburg",
+        name: "Schloss Augustusburg",
+        type: ['Palast oder Schloss', 'Museum'],
+        path: 'bruhl_palaces',
+        countryPath: "germany", regionsPath: "nrw", districtPath: "koln", cityPath: "bruhl",
+        hiddenFromList: true,
+        coord: { lat: 50.82750, lng: 6.90806 },
+        meta: {
+            description: "Schloss Augustusburg – Hauptschloss des Ensembles, Residenz der Kölner Erzbischöfe, Teil des UNESCO-Welterbes",
+            ogImage: "https://our-travels.info/foto/Germany/nrw/koln/Rhein-Erft-Kreis/bruhl/bruhl_palaces/001.jpg"
+        }
+    },
+    {
+        id: "bruehl_falkenlust",
+        name: "Schloss Falkenlust",
+        type: ['Palast oder Schloss'],
+        path: 'bruhl_palaces',
+        countryPath: "germany", regionsPath: "nrw", districtPath: "koln", cityPath: "bruhl",
+        hiddenFromList: true,
+        coord: { lat: 50.82320, lng: 6.90478 },
+        meta: {
+            description: "Schloss Falkenlust – Jagdschloss, südöstlicher Bestandteil des UNESCO-Ensembles",
+            ogImage: "https://our-travels.info/foto/Germany/nrw/koln/Rhein-Erft-Kreis/bruhl/bruhl_palaces/010.jpg"
+        }
+    },
+    {
         id: "max_ernst_museum",
         name: "Max-Ernst-Museum",
         type: ['museum'], top: "popular",
@@ -1889,6 +1945,7 @@ const datas = [
         },
         construction_period: "2000–2005",
         founder: "LVR-Fonds (Stadt- und Regionalbehörden)",
+        coord: { lat: 50.83029, lng: 6.90980 },
         meta: {
             title: "Max-Ernst-Museum in Brühl: Leben und Werk des Künstlers",
             description: "Das einzige Museum weltweit, das Max Ernst gewidmet ist. Sammlung, Geschichte, Dadaismus, Surrealismus, Sonderausstellungen.",
@@ -1943,7 +2000,8 @@ const datas = [
             ]
         },
         construction_period: "1967",
-        founder: " Gottlieb Löffelhardt und Richard Schmidt",
+        founder: "Gottlieb Löffelhardt und Richard Schmidt",
+        coord: { lat: 50.80147, lng: 6.87636 },
         meta: {
             title: "Phantasialand in Brühl: Themenpark mit Attraktionen und Hotels",
             description: "Phantasialand – einer der meistbesuchten Parks Europas mit über 30 Attraktionen, Themenbereichen und einzigartigen Hotels.",
@@ -1959,7 +2017,7 @@ const datas = [
         name: "KERAMION – Zentrum für moderne und historische Keramik",
         type: ['museum'], top: "local",
         path: "keramion",
-        regionsPath: "nrw", districtPath: "koln", cityPath: "frechen",
+        countryPath: "germany", regionsPath: "nrw", districtPath: "koln", cityPath: "frechen",
         fotoCard: "Germany/nrw/koln/Rhein-Erft-Kreis/frechen/keramion/frechen_keramion.jpg",
         location: "Frechen, Deutschland",
         address: [{ bold: "Adresse:", text: " Bonnstraße 12, 50226 Frechen, Deutschland" }],
@@ -1996,6 +2054,7 @@ const datas = [
         },
         construction_period: "Das Museumsgebäude wurde 1970–1971 errichtet. Das Museum wurde 2002 eröffnet.",
         founder: " Dr. Gottfried Cremer und die Stadt Frechen",
+        coord: { lat: 50.91037, lng: 6.82952 },
         meta: {
             title: "KERAMION – moderne und historische Keramik in Frechen",
             description: "KERAMION: Dauerausstellung und Sonderausstellungen von Keramik, Geschichte der Produktion und zeitgenössische künstlerische Perspektiven.",
@@ -2009,7 +2068,7 @@ const datas = [
         name: "Burg Bachem – historische Wasserburg in Frechen",
         type: ['palace_or_castle'], top: "local",
         path: "burg-bachem",
-        regionsPath: "nrw", districtPath: "koln", cityPath: "frechen",
+        countryPath: "germany", regionsPath: "nrw", districtPath: "koln", cityPath: "frechen",
         fotoCard: "Germany/nrw/koln/Rhein-Erft-Kreis/frechen/burg-bachem/Burg-Bachem_3.jpg",
         location: "Frechen, Deutschland",
         address: [{ bold: "Adresse:", text: " Schloßstraße 8, 50226 Frechen, Deutschland" }],
@@ -2044,6 +2103,7 @@ const datas = [
         },
         construction_period: " Vermutlich Anfang des 13. Jahrhunderts, mit späteren Umbauten und umfassender Restaurierung in den 1970er Jahren",
         founder: " Ursprünglich im Besitz lokaler Adelsfamilien",
+        coord: { lat: 50.89368, lng: 6.81316 },
         meta: {
             title: "Burg Bachem in Frechen – historische Wasserburg und See",
             description: "Burg Bachem: Geschichte, Wassergräben, Spazierbereiche und Erholung am kleinen See in Frechen.",
@@ -2057,7 +2117,7 @@ const datas = [
         name: "Johann-Schmitz-Platz («Rathausplatz»)",
         type: ['square'], top: "local",
         path: "johann_schmitz_platz_frechen",
-        regionsPath: "nrw", districtPath: "koln", cityPath: "frechen",
+        countryPath: "germany", regionsPath: "nrw", districtPath: "koln", cityPath: "frechen",
         fotoCard: "Germany/nrw/koln/Rhein-Erft-Kreis/frechen/johann_schmitz_platz_frechen/001.jpg",
         location: "Frechen, Deutschland",
         address: [{ bold: "Adresse:", text: " Johann-Schmitz-Platz, 50226 Frechen, Deutschland" }],
@@ -2092,6 +2152,7 @@ const datas = [
             ]
         },
         construction_period: " Ende 19. – Anfang 20. Jahrhundert",
+        coord: { lat: 50.909176769839256, lng: 6.808603230541844 },
         meta: {
             title: "Johann-Schmitz-Platz in Frechen – zentraler Platz und Rathaus",
             description: "Der Johann-Schmitz-Platz ist der zentrale Stadtplatz von Frechen mit Märkten, Veranstaltungen und historischem Rathaus.",
@@ -2138,6 +2199,7 @@ const datas = [
                 { text: "Das Gebäude steht unter Denkmalschutz." },
             ]
         },
+        coord: { lat: 50.90884, lng: 6.80860 },
         meta: {
             title: "Altes Rathaus Frechen – historisches Gebäude und Turm auf dem Johann-Schmitz-Platz",
             description: "Das Alte Rathaus Frechen – ein historisches Verwaltungsgebäude mit Turm auf dem Johann-Schmitz-Platz im Zentrum der Stadt, Nordrhein-Westfalen.",
@@ -2174,7 +2236,6 @@ const datas = [
         name: "Klüttenbrunnen",
         type: ["monument_or_fountain"], top: "local",
         path: "klüttenbrunnen_frechen",
-
         countryPath: "germany", regionsPath: "nrw", districtPath: "koln", cityPath: "frechen",
         hiddenFromList: true,
         fotoCard: "Germany/nrw/koln/Rhein-Erft-Kreis/frechen/johann_schmitz_platz_frechen/004.jpg",
@@ -2185,6 +2246,7 @@ const datas = [
                 { text: "In der Fußgängerzone wurde 1986 der skulpturale Brunnen Klüttenbrunnen vom deutschen Bildhauer Olaf Höhnen errichtet. Er befindet sich in der Nähe des Johann-Schmitz-Platz und spiegelt die industrielle und handwerkliche Geschichte Frechens wider, insbesondere den Abbau und die Verarbeitung von lokalem Ton. Der Brunnen ist als künstlerische Komposition mit Steinelementen und Wasserstrahlen gestaltet, fügt sich harmonisch in das Stadtbild ein und dient als visueller Orientierungspunkt für Besucher." }
             ]
         },
+        coord: { lat: 50.90960, lng: 6.80869 },
         meta: {
             title: "Klüttenbrunnen – historisches Skulpturenobjekt",
             description: "In der Fußgängerzone wurde 1986 der Skulpturenbrunnen Klüttenbrunnen (Klüttenbrunnen) des deutschen Bildhauers Olaf Hönen errichtet. Er befindet sich in der Nähe des Johann-Schmitz-Platzes und spiegelt die industrielle und handwerkliche Geschichte Frechens wider, insbesondere den Abbau und die Verarbeitung des lokalen Tons. Der Brunnen ist als künstlerische Komposition mit Steinelementen und Wasserstrahlen gestaltet, harmoniert mit der städtischen Umgebung und dient als visueller Orientierungspunkt für Touristen.",
@@ -2255,6 +2317,7 @@ const datas = [
             ]
         },
         subObjects: ["drachenfelsbahn", "schloss_drachenburg", "drachenfels_ruins", "nibelungenhalle", "reptile_zoo"],
+        coord: { lat: 50.66750, lng: 7.20750 },
         meta: {
             title: "Berg Drachenfels — Drachenlegenden und Panoramablicke über das Rheintal",
             description: "Der Drachenfels bei Königswinter ist ein legendärer Berg des Rheintals, eng verbunden mit der Sage von Siegfried und dem Drachen. Panoramablicke auf den Rhein, Burgruinen, der Naturpark Siebengebirge und beliebte Wanderwege machen ihn zu einem der bekanntesten Ausflugsziele der Region.",
@@ -2306,6 +2369,7 @@ const datas = [
                 { text: "• In der Weihnachtszeit werden Sonderfahrten in Verbindung mit einem Wintermarkt am Schloss Drachenburg angeboten." }
             ]
         },
+        coord: { lat: 50.67451626214134, lng: 7.198391871316192 },
         meta: {
             title: "Drachenfelsbahn — älteste Zahnradbahn Deutschlands",
             description: "Die Drachenfelsbahn ist eine historische Zahnradbahn aus dem Jahr 1883 in Königswinter. Sie verbindet das Rheintal mit dem Plateau des Drachenfels und zählt zu den wichtigsten touristischen Attraktionen der Region.",
@@ -2364,6 +2428,7 @@ const datas = [
                 { bold: "Restaurierung und Museum. ", text: "Im 20. Jahrhundert befand sich das Schloss lange im Verfall, ein Teil der Säle war beschädigt. Restaurierungsarbeiten dauerten Jahrzehnte, und heute sind die meisten Innenräume in historischer Form wiederhergestellt, einschließlich Möbel und Dekorelemente. Das Schloss ist als Museum geöffnet, wo man historische Innenräume und Ausstellungen des 19. Jahrhunderts besichtigen kann." },
             ]
         },
+        coord: { lat: 50.66870638172516, lng: 7.2063712141622895 },
         meta: {
             title: "Schloss Drachenburg – romantisches neugotisches Schloss des 19. Jahrhunderts am Hang des Drachenfels",
             description: "Schloss Drachenburg liegt am Hang des Drachenfels in Königswinter. Erbaut 1882-1884, beeindruckt das Schloss durch neugotische Architektur, prächtige Innenräume und Panoramablicke ins Rheintal.",
@@ -2404,6 +2469,7 @@ const datas = [
                 { text: "• Die Ruinen wurden im 19. Jahrhundert zu einem Symbol der Rheinromantik" }
             ]
         },
+        coord: { lat: 50.6653248477779, lng: 7.210093521770351 },
         meta: {
             title: "Ruinen der Burg Drachenfels – mittelalterliche Festung auf dem Drachenfels",
             description: "Die Ruinen der Burg Drachenfels befinden sich auf dem Gipfel des gleichnamigen Berges im Siebengebirge. Erhalten sind Mauerreste und Türme mit Panoramablick auf den Rhein und Königswinter.",
@@ -2442,6 +2508,7 @@ const datas = [
                 { text: "In der Nähe befindet sich die <b>Drachenhöhle</b> – eine kleine interaktive Höhle mit Drachenfiguren, Licht- und Toneffekten, die sie besonders attraktiv für Kinder und Touristen macht, die die Atmosphäre der Legenden erleben möchten." },
             ]
         },
+        coord: { lat: 50.67090, lng: 7.20390 },
         meta: {
             title: "Nibelungenhalle – Museum der Legenden und Drachen auf dem Drachenfels",
             description: "Die Nibelungenhalle ist ein 1913 erbautes Museum auf dem Drachenfels, das der Nibelungensage und Drachenlegenden gewidmet ist. In der Nähe befindet sich die Drachenhöhle.",
@@ -2490,6 +2557,7 @@ const datas = [
                 { text: "• Der Zoo trägt zur ökologischen Bildung und zur Förderung des Schutzes von Reptilien bei" }
             ]
         },
+        coord: { lat: 50.67065, lng: 7.20400 },
         meta: {
             title: "Reptilienzoo Drachenfels – ein Ort zum Kennenlernen seltener Schlangen und exotischer Tiere",
             description: "Der Reptile Zoo auf dem Drachenfels ist ein zoologischer Park, in dem man Schlangen, Eidechsen, Schildkröten und seltene exotische Tiere sehen sowie an interaktiven Vorführungen und Bildungsprogrammen teilnehmen kann.",
@@ -2548,7 +2616,8 @@ const datas = [
             ]
         },
         construction_period: "1189",
-        founder: " Die Zisterziensermönchsgemeinschaft aus der Abtei Himmerod",
+        founder: "Die Zisterziensermönchsgemeinschaft aus der Abtei Himmerod",
+        coord: { lat: 50.69474, lng: 7.21333 },
         meta: {
             title: "Abtei Heisterbach – Geschichte und Ruinen des Klosters bei Königswinter",
             description: "Die Abtei Heisterbach – ehemaliges Zisterzienserkloster aus dem 12. Jahrhundert im Heisterbachtal nahe Königswinter. Geschichte, Bedeutung und Besuch des historischen Komplexes.",
@@ -2587,6 +2656,7 @@ const datas = [
             ]
         },
         construction_period: "Anfang des 13. Jahrhunderts",
+        coord: { lat: 50.695283557416126, lng: 7.214092255947281 },
         meta: {
             title: "Ruinen des Chors der Abtei Heisterbach – historische Sehenswürdigkeit",
             description: "Entdecken Sie die beeindruckenden Ruinen des Chors der Abtei Heisterbach: Geschichte, Architektur und einzigartige Überreste des mittelalterlichen Klosters im Siebengebirge.",
@@ -2627,6 +2697,7 @@ const datas = [
         },
         construction_period: "1953-1956 Bau der neuen Klosterkirche",
         founder: " Katholische Kirchengemeinde Heisterbach",
+        coord: { lat: 50.694451935920775, lng: 7.212124185627223 },
         meta: {
             title: "Kirche St. Peter in Heisterbach – aktive Kirche der Abtei Heisterbach",
             description: "Die Kirche St. Peter in Heisterbach ist eine katholische Kirche von 1953–1956 auf dem Gelände der ehemaligen Abtei. Geschichte, Architektur, Glasfenster und Besuch in Heisterbach, Königswinter.",
@@ -2677,6 +2748,7 @@ const datas = [
                 { text: "• Zu den Denkmälern gehören die Erlöserkirche mit ihrem Turm aus dem 11. Jahrhundert, der Selve-Brunnen und die Mausoleen der Familie Selve sowie das historische Stadtmuseum mit Exponaten aus der Industrieepoche." },
             ]
         },
+        coord: { lat: 51.2198, lng: 7.6273 },
         meta: {
             title: "Altstadt von Lüdenscheid – historisches Herz der Stadt mit engen Straßen und Denkmälern",
             description: "Die Altstadt von Lüdenscheid ist der mittelalterliche Teil der Stadt mit historischen Gebäuden des 18.–19. Jahrhunderts, der Erlöserkirche, Resten der Stadtmauer und dem historischen Museum. Schlendern Sie durch die gemütlichen Gassen und spüren Sie die Atmosphäre vergangener Jahrhunderte.",
@@ -2730,6 +2802,7 @@ const datas = [
                 { text: "• Überreste romanischer und gotischer Elemente im Turm und Fundament." },
             ]
         },
+        coord: { lat: 51.21612, lng: 7.63366 },
         meta: {
             title: "Erlöserkirche in Lüdenscheid – ältester Kirchenbau der Stadt mit reicher Geschichte",
             description: "Die Erlöserkirche (Erlöserkirche) ist die älteste Kirche Lüdenscheids, errichtet im 12. Jahrhundert mit klassizistischer Fassade, Emporen und lutherischem Altar. Besuchen Sie dieses historische Gotteshaus im Zentrum der Altstadt und spüren Sie die Atmosphäre vergangener Jahrhunderte.",
@@ -2758,6 +2831,7 @@ const datas = [
         },
         construction_period: "1982",
         architects: "Der Brunnen wurde vom Künstler und Metallgestalter K. T. Neumann (Kurt Toni Neumann) geschaffen",
+        coord: { lat: 51.21631, lng: 7.63425 },
         meta: {
             title: "Brunnen am Graf-Engelbert-Platz – historischer Brunnen in der Altstadt von Lüdenscheid",
             description: "Der Brunnen am Graf-Engelbert-Platz entstand 1982 im Zuge der Altstadtsanierung. Er gilt als eines der Wahrzeichen des historischen Zentrums von Lüdenscheid und ist mit der Figur eines Herolds geschmückt, die auf die Stadtgründung durch Graf Engelbert I. verweist.",
@@ -2796,6 +2870,7 @@ const datas = [
                 { bold: "Während städtischer Feste wird der Platz vollständig gesperrt,", text: "und hier finden die größten Veranstaltungen in Lüdenscheid statt – vom Weihnachtsmarkt bis zu Sommerfesten." }
             ]
         },
+        coord: { lat: 51.21700, lng: 7.62870 },
         meta: {
             title: "Zentraler Platz von Lüdenscheid – Rathausplatz und Herz der Stadt",
             description: "Der zentrale Platz von Lüdenscheid (Rathausplatz) ist der wichtigste öffentliche Raum der Stadt neben dem Rathaus. Hier finden Märkte, städtische Veranstaltungen und Treffen der Bewohner statt, und der Platz dient als Ausgangspunkt für Spaziergänge im Zentrum.",
@@ -2836,6 +2911,7 @@ const datas = [
                 { text: "&nbsp;&nbsp;&nbsp; ▪ verbindet Einkaufsstraßen und benachbarte Plätze des Zentrums." }
             ]
         },
+        coord: { lat: 51.21620, lng: 7.62920 },
         meta: {
             title: "Sternplatz – zentraler Platz des historischen Zentrums von Lüdenscheid",
             description: "Der Sternplatz ist einer der zentralen Plätze von Lüdenscheid, gelegen in der Fußgängerzone des historischen Zentrums. Der Platz ist ein wichtiger Treffpunkt für das städtische Leben, Spaziergänge und Veranstaltungen.",
@@ -2863,6 +2939,7 @@ const datas = [
                 { text: "Das Denkmal fügt sich harmonisch in den Raum des Sternplatzes ein und ist ein Anziehungspunkt in der Fußgängerzone des historischen Zentrums." }
             ]
         },
+        coord: { lat: 51.21639, lng: 7.62917 },
         meta: {
             title: "Denkmal von Onkel Willi – Symbol von Lüdenscheid auf dem Sternplatz",
             description: "Das Denkmal von Onkel Willi auf dem Sternplatz in Lüdenscheid ist eine Bronzeskulptur, die einen typischen Einwohner der Stadt mit Hund darstellt. Die Skulptur ist ein inoffizielles Wahrzeichen der Stadt und ein beliebter Treffpunkt für Fotos und Begegnungen.",
@@ -2890,6 +2967,7 @@ const datas = [
                 { text: "Der Brunnen ist nicht nur dekorativ, sondern dient auch als Erholungsort für Einwohner und Besucher, besonders in der warmen Jahreszeit." }
             ]
         },
+        coord: { lat: 51.21620, lng: 7.62942 },
         meta: {
             title: "Brunnen auf dem Sternplatz – städtisches Wasserbecken von Lüdenscheid",
             description: "Der Brunnen auf dem Sternplatz in Lüdenscheid ist ein dekoratives Wasserbecken, geschaffen Ende der 1970er Jahre vom Bildhauer Kurt Toni Neumann. Um den Brunnen befinden sich Tafeln mit den Namen der Partnerstädte: Brayhaus, Taganrog, Den Helder, Löwen, Mysłowice und Romilly-sur-Seine. Der Brunnen ist ein beliebter Ort für Erholung und Spaziergänge auf dem Platz.",
@@ -2951,7 +3029,8 @@ const datas = [
         },
         construction_period: "Ende der 1980er Jahre. ",
         architects: " Ursprüngliche Gebäude: lokale Architekten Anfang des 20. Jahrhunderts (1910 – Verwaltungsgebäude). ",
-        founder: " das Museum wurde von der Stadtverwaltung Lüdenscheids gegründet. ",
+        founder: "das Museum wurde von der Stadtverwaltung Lüdenscheids gegründet. ",
+        coord: { lat: 51.21350, lng: 7.63174 },
         meta: {
             title: "Geschichtsmuseum Lüdenscheid – Industrie‑ und Technikgeschichte der Stadt",
             description: "Entdecken Sie das Geschichtsmuseum Lüdenscheid: Schmalspurzug, Zeppelin‑Modelle, Feuerwehrtechnik, Sammlung historischer Karten und Artefakte. Besuchen Sie das Museum und das Museumscafé im modernen Stadtkomplex.",

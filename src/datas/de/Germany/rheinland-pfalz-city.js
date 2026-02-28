@@ -70,6 +70,7 @@ const datas = [
                 { bold: 'Trier heute.', text: 'Heute ist Trier eine Stadt, in der römisches, mittelalterliches und modernes Erbe in einem Raum koexistieren. Das historische Zentrum und die römischen Denkmäler ziehen Touristen aus aller Welt an, und der Status einer Universitätsstadt verleiht der Stadt eine lebendige und internationale Atmosphäre.' },
             ]
         },
+        coord: { lat: 49.75565, lng: 6.63935 },
         meta: {
             title: "Trier – älteste Stadt Deutschlands mit reicher Geschichte",
             description: "Trier: Geschichte, Geographie, Sehenswürdigkeiten, berühmte Einwohner und interessante Fakten über die älteste Stadt Deutschlands.",

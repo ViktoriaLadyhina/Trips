@@ -4,10 +4,7 @@ const datas = [
     name: "Порта Нігра («Чорні ворота»)",
     type: ["historical_building"], top: "top",
     path: "portaNigra_trier",
-    countryPath: "germany",
-    regionsPath: "rheinland-pfalz",
-    districtPath: "city",
-    cityPath: "trier",
+    countryPath: "germany", regionsPath: "rheinland-pfalz", districtPath: "city", cityPath: "trier",
     fotoCard: "Germany/rheinland-pfalz/trier-city/portaNigra_trier/001.jpg",
     location: "Трір, Німеччина",
     officialSite: [
@@ -43,6 +40,7 @@ const datas = [
       ]
     },
     construction_period: "близько 170 р. н.е., початок будівництва північних воріт міста Augusta Treverorum.",
+    coord: { lat: 49.75967, lng: 6.64400 },
     meta: {
       title: "Порта Нігра (Porta Nigra) в Трірі – найбільші римські міські ворота в Німеччині",
       description: "Відкрийте для себе Порта Нігра в Трірі – найбільші збережені римські міські ворота на північ від Альп. Історія, цікаві факти, практична інформація для туристів та легенди.",
@@ -56,10 +54,7 @@ const datas = [
     name: "Римський амфітеатр",
     type: ["historical_building", "museum", "monument_or_fountain"], top: "popular",
     path: "amphitheater_trier",
-    countryPath: "germany",
-    regionsPath: "rheinland-pfalz",
-    districtPath: "city",
-    cityPath: "trier",
+    countryPath: "germany", regionsPath: "rheinland-pfalz", districtPath: "city", cityPath: "trier",
     fotoCard: "Germany/rheinland-pfalz/trier-city/amphitheater/001.jpg",
     location: "Трір, Німеччина",
     officialSite: [
@@ -117,6 +112,7 @@ const datas = [
       ]
     },
     construction_period: "близько 180–200 рр. н.е.",
+    coord: { lat: 49.74702, lng: 6.64905 },
     meta: {
       title: "Римський амфітеатр Тріра – давній Колізей та пам’ятка ЮНЕСКО",
       description: "Інформація про Римський амфітеатр Тріра (Німеччина): історія II ст. н.е., години роботи, квитки, цікаві факти та екскурсії.",
@@ -130,10 +126,7 @@ const datas = [
     name: "Римські імператорські терми",
     type: ["historical_building", "museum", "monument_or_fountain"], top: "popular",
     path: "kaiserthermen_trier",
-    countryPath: "germany",
-    regionsPath: "rheinland-pfalz",
-    districtPath: "city",
-    cityPath: "trier",
+    countryPath: "germany", regionsPath: "rheinland-pfalz", districtPath: "city", cityPath: "trier",
     fotoCard: "Germany/rheinland-pfalz/trier-city/kaiserthermen/01.jpg",
     location: "Трір, Німеччина",
     unesco_status: { included: true, year: 1986 },
@@ -181,6 +174,7 @@ const datas = [
       ]
     },
     construction_period: "кінець III – початок IV століття н.е.",
+    coord: { lat: 49.750406, lng: 6.641575 },
     meta: {
       title: "Римські імператорські терми в Трірі – Історія, Фото, Години роботи",
       description: "Дізнайтеся історію, екскурсії та практичну інформацію про римські імператорські терми (Kaiserthermen) у Трірі – один з найбільших античних банних комплексів північніше Альп, включений до списку ЮНЕСКО.",
@@ -194,10 +188,7 @@ const datas = [
     name: "Базиліка Константина",
     type: ["cathedral", "historical_building"], top: "popular",
     path: "basilica_of_constantine_trier",
-    countryPath: "germany",
-    regionsPath: "rheinland-pfalz",
-    districtPath: "city",
-    cityPath: "trier",
+    countryPath: "germany", regionsPath: "rheinland-pfalz", districtPath: "city", cityPath: "trier",
     fotoCard: "Germany/rheinland-pfalz/trier-city/basilica_of_constantine/001.jpg",
     location: "Трір, Німеччина",
     officialSite: [
@@ -231,7 +222,8 @@ const datas = [
       ]
     },
     construction_period: "IV століття н. е., близько 310 року",
-    founder: " Імператор Костянтин Великий",
+    founder: "Імператор Костянтин Великий",
+    coord: { lat: 49.75352, lng: 6.64342 },
     meta: {
       title: "Базиліка Константина у Трірі – римський тронний зал IV століття",
       description: "Базиліка Константина (Aula Palatina) – античний палацовий зал імператора Костянтина у Трірі. Історія, факти, архітектура та інформація для відвідування.",
@@ -279,6 +271,7 @@ const datas = [
       ]
     },
     construction_period: "II–III століття н.е.",
+    coord: { lat: 49.75024, lng: 6.63080 },
     meta: {
       title: "Барбарські терми Трір – найбільший римський банний комплекс",
       description: "Дізнайтеся про Барбарські терми у Трірі – найбільший римський банний комплекс північніше Альп, що зберігся у вигляді руїн.",

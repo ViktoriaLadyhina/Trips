@@ -1,0 +1,31 @@
+.leaflet-tooltip.custom-popup {
+    padding: 0;
+}
+
+.leaflet-tooltip.custom-popup .custom-popup-content {
+    max-width: 300px;
+    font-size: 12px;
+    line-height: 1.4;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    padding: 4px;
+
+    img {
+        width: 100%;
+        height: auto;
+        display: block;
+        margin-bottom: 6px;
+        border-radius: 4px;
+        padding: 4px;
+    }
+
+    a {
+        color: #050505;
+        text-decoration: none;
+    }
+
+    a:hover {
+        text-decoration: underline;
+    }
+}

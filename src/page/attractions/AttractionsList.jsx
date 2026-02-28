@@ -5,6 +5,7 @@ import BreadCrumbs from '../../components/breadCrumbs/BreadCrumbs.jsx';
 import AttractionCard from '../../components/attraction/AttractionCard.jsx';
 import AttractionsFilters from '../../components/attractionsFilters/AttractionsFilters.jsx';
 import useCityFullData from '../../hooks/useCityFullData.js';
+import CityMap from '../../components/maps/germany/maps/CityMap.jsx';
 
 import './Attractions.scss'
 
@@ -13,7 +14,7 @@ const NoAttractions = { ru: "Нет достопримечательностей
 
 const AttractionsList = () => {
     const { districtPath, cityPath } = useParams();
-    const { country, region, district, parentSubRegion, city, attractions, lang, error } = useCityFullData();
+    const { country, region, district, parentSubRegion, city, cityData, attractions, lang, error } = useCityFullData();
 
     const [filters, setFilters] = useState({
         type: 'all',
@@ -109,12 +110,14 @@ const AttractionsList = () => {
         city ? { label: city.name, path: `/${country?.path}/${region?.path}/${districtPath ? districtPath + '/' : ''}${city.path}` } : null,
         { label: lang === "ru" ? "Достопримечательности" : lang === "de" ? "Sehenswürdigkeiten" : "Пам'ятки" }
     ].filter(Boolean);
-
+    
     return (
         <div className="attractions">
             <BreadCrumbs crumbs={crumbs} />
 
             <div className='attractions__title'>{attractionsTitle[lang]}</div>
+
+            <CityMap cityData={cityData} attractions={attractions} />
 
             <AttractionsFilters lang={lang} filters={filters} setFilters={setFilters} />
 
