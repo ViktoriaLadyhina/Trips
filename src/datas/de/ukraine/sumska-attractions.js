@@ -60,14 +60,16 @@ const datas = [
         name: "Pokrowska-Platz",
         type: ["square"], top: "local",
         path: "pokrovska_square_sumy",
-        countryPath: "ukraine",  regionsPath: "sumska", districtPath: "city", cityPath: "sumy",
+        countryPath: "ukraine", regionsPath: "sumska", districtPath: "city", cityPath: "sumy",
         fotoCard: "Ukraine/sumska/sumy-city/altanka/009.jpg",
         location: "Sumy, Ukraine",
         subObjects: ["sumy_altanka"],
         short_description: "Der Pokrowska-Platz ist der Ort, an dem die Geschichte der Stadt Sumy begann. Hier verbinden sich tragische Ereignisse der Vergangenheit mit dem ruhigen heutigen Stadtleben. Bis heute bewahrt der Platz eine besondere Atmosphäre von Erinnerung und Ruhe.",
         short_description_subObjects: {
-            text: "Auf dem Pokrowska-Platz befinden sich folgende Sehenswürdigkeiten:",
-            items: ["Altanka"]
+            text: "Auf dem Pokrovskaja-Platz befinden sich folgende Sehenswürdigkeiten:",
+            items: [
+                { bold: "Pavillon", text: "– der Pavillon gilt zu Recht als eines der wichtigsten architektonischen Wahrzeichen der Stadt" },
+            ]
         },
         full_description: {
             title: "Beschreibung und Geschichte",
@@ -114,7 +116,7 @@ const datas = [
         construction_period: "Ungefähr zu Beginn des 20. Jahrhunderts – etwa 1900–1905",
         architects: ["Matwij Schtschaweljew"],
         founder: " Nikolai Liščynskyj",
-        short_description: "Gegen Ende des 19. Jahrhunderts äußerten Petersburger Wissenschaftler die Vermutung, dass es in der Umgebung von Sumy Erdölvorkommen geben könnte. Zu diesem Zweck reisten sie in die Stadt, wandten sich an die Zemstwo-Verwaltung und vereinbarten die Durchführung von Erkundungsarbeiten. Der Bohrplatz wurde direkt auf dem Platz vor dem Gebäude der Zemstwo-Verwaltung ausgewiesen. Eine Bohrung wurde niedergebracht, doch Erdöl konnte nicht nachgewiesen werden. Wahrscheinlich wäre diese Bohrstelle bald in Vergessenheit geraten, wenn nicht der Kaufmann der zweiten Gilde Liščynskyj, ein Verwandter der bekannten Familie Charitonenko, darauf aufmerksam geworden wäre. Ihm gehörte ein Garten, den er später der Stadt schenkte. Heute ist dieses Gelände Teil des Stadtparks. Der Kaufmann fügte dem Garten ein weiteres Grundstück hinzu, auf dem sich die Bohrung befand. Auf seine Anordnung hin wurde die Bohrstelle mit einer Stahlplatte verschlossen, und an dieser Stelle errichtete man einen Pavillon.",
+        short_description: "Der Pavillon in Sumy ist ein achteckiger Holzpavillon mit einem kreuzförmigen Dach und einer hohen facettierten Kuppel, der ohne Nägel gebaut wurde. Er ist mit eleganten profilierten Säulen, geschnitzten Gesimsverzierungen und dekorativen Dachspitzen geschmückt. Das Bauwerk wurde an der Stelle eines ehemaligen Ölförderbrunnens errichtet und ist Teil des Stadtparks am Pokrovskaja-Platz. Trotz seiner bescheidenen Größe zählt der Pavillon zu den wichtigsten architektonischen Sehenswürdigkeiten der Stadt.",
         full_description: {
             title: "Der Pavillon",
             items: [
