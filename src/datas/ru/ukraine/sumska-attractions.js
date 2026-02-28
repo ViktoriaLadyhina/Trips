@@ -43,6 +43,7 @@ const datas = [
                 { text: "Праздничные богослужения транслируются наружу, чтобы прихожане могли участвовать в службе, находясь на площади перед храмом." },
             ]
         },
+        coord: { lat: 50.90927, lng: 34.80038 },
         meta: {
             title: "Спасо-Преображенский собор в Сумах",
             description: "Спасо-Преображенский собор — главный храм Сум, архитектурный памятник XVIII–XIX веков с мраморно-малахитовым иконостасом и 56-метровой колокольней.",
@@ -88,6 +89,7 @@ const datas = [
                 { text: "Несмотря на трагичную историю, сегодня она воспринимается как одно из самых спокойных и светлых мест в центре Сум." }
             ]
         },
+        coord: { lat: 50.9078, lng: 34.7972 },
         meta: {
             title: "Покровская площадь – исторический центр Сум",
             description: "Покровская площадь – одна из старейших площадей Сум с богатой историей. Узнайте о её прошлом, военных событиях и современном облике.",
@@ -101,7 +103,7 @@ const datas = [
         name: "Альтанка",
         type: ["historical_building"], top: "popular",
         path: "sumy_altanka",
-        countryPath: "ukraine",  regionsPath: "sumska",  districtPath: "city", cityPath: "sumy",
+        countryPath: "ukraine", regionsPath: "sumska", districtPath: "city", cityPath: "sumy",
         hiddenFromList: true, showMore: true,
         fotoCard: "Ukraine/sumska/sumy-city/altanka/009.jpg",
         location: "Сумы, Украина",
@@ -121,11 +123,12 @@ const datas = [
                 { bold: "Альтанка сегодня", text: "Несмотря на скромные размеры, беседка по праву считается одной из главных архитектурных достопримечательностей города и украшает сквер на Покровской (бывшей Красной) площади." },
             ]
         },
+        coord: { lat: 50.9068, lng: 34.7992 },
         meta: {
             title: "Альтанка в Сумах",
-            description: "Den ausdrucksstarken Silhouette bilden elegante profilierte Säulen, geschnitzte Gesimsverzierungen, dekorative Dachspitzen und zahlreiche weitere Details.",
-            ogTitle: "Pavillon – die Visitenkarte von Sumy",
-            ogDescription: "Den ausdrucksstarken Silhouette bilden elegante profilierte Säulen, geschnitzte Gesimsverzierungen, dekorative Dachspitzen und zahlreiche weitere Details.",
+            description: "Выразительный силуэт формируют элегантные профилированные колонны, резные карнизные украшения, декоративные шпили на крыше и множество других деталей.",
+            ogTitle: "Павильон – визитная карточка Сум",
+            ogDescription: "Выразительный силуэт формируют элегантные профилированные колонны, резные карнизные украшения, декоративные шпили на крыше и множество других деталей.",
             ogImage: "https://our-travels.info/foto/Ukraine/sumska/sumy-city/altanka/009.jpg"
         }
     }

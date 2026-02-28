@@ -70,6 +70,7 @@ const datas = [
                 { text: 'Das 20. Jahrhundert war geprägt vom Wachstum von Kultur und Bildung: Theater, Philharmonie, Musik- und Kunstschulen sowie Parks wurden eröffnet. Dank der Initiativen lokaler Mäzene und der Stadtverwaltung wurde Sumy zur „Stadt der Parks“.' }
             ]
         },
+        coord: { lat: 50.9216, lng: 34.8003 },
         meta: {
             title: "Sumy – Stadt in der Oblast Sumy",
             description: "Sumy: Geschichte, Legende zur Namensherkunft, Industrie, Kultur und interessante Fakten.",

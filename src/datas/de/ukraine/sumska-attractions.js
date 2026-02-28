@@ -46,6 +46,7 @@ const datas = [
                 { text: "Festliche Gottesdienste werden nach außen übertragen, damit die Gläubigen am Gottesdienst teilnehmen können, während sie sich auf dem Platz vor der Kirche befinden." },
             ]
         },
+        coord: { lat: 50.90927, lng: 34.80038 },
         meta: {
             title: "Spaso-Preobraschenski-Kathedrale in Sumy",
             description: "Die Spaso-Preobraschenski-Kathedrale ist der Haupttempel von Sumy, ein architektonisches Denkmal des 18.–19. Jahrhunderts mit Marmor-Malachit-Ikonostase und 56 Meter hohem Glockenturm.",
@@ -91,6 +92,7 @@ const datas = [
                 { text: "Trotz seiner tragischen Vergangenheit gilt er heute als einer der ruhigsten und angenehmsten Orte im Stadtzentrum." }
             ]
         },
+        coord: { lat: 50.9078, lng: 34.7972 },
         meta: {
             title: "Pokrowska-Platz — historisches Zentrum von Sumy",
             description: "Der Pokrowska-Platz ist einer der ältesten Plätze von Sumy mit einer reichen Geschichte. Erfahren Sie mehr über seine Vergangenheit, Kriegsjahre und heutige Bedeutung.",
@@ -124,6 +126,7 @@ const datas = [
                 { bold: "Der Pavillon heute", text: "Die Spaso-Preobraschenski-Kathedrale bleibt das spirituelle und architektonische Zentrum von Sumy. Sie vereint Gläubige, dient als Ort großer religiöser Feiertage und ist zugleich eine der wichtigsten touristischen Attraktionen der Stadt.Trotz seiner bescheidenen Größe gilt der Pavillon als eine der wichtigsten architektonischen Sehenswürdigkeiten der Stadt und schmückt den Park auf dem Pokrowskyj-Platz (ehemals Roter Platz)." },
             ]
         },
+        coord: { lat: 50.9068, lng: 34.7992 },
         meta: {
             title: "Der Pavillon in Sumy",
             description: "Die Spaso-Preobraschenski-Kathedrale ist der Haupttempel von Sumy, ein architektonisches Denkmal des 18.–19. Jahrhunderts mit Marmor-Malachit-Ikonostase und 56 Meter hohem Glockenturm.",
