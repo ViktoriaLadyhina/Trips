@@ -28,10 +28,10 @@ const AttractionCard = ({ attr, lang }) => {
             <div className='attrCard__title'>{attr.name}</div>
 
             <div className='attrCard__rating'>
-                {attr.top && (
+                {attr.rating && (
                     <span>
                         <span className='attrCard__rating-label'>{ratingLabel[lang]}:</span>{' '}
-                        <span className='attrCard__rating-value'>{topOptionLabel[attr.top][lang]}</span>
+                        <span className='attrCard__rating-value'>{topOptionLabel[attr.rating][lang]}</span>
                     </span>
                 )}
             </div>

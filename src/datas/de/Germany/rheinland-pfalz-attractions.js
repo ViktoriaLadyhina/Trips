@@ -3,7 +3,7 @@ const datas = [
   {
     id: "portaNigra_trier",
     name: "Porta Nigra",
-    type: ["historical_building"], top: "top",
+    type: ["historical_building"], rating: "top",
     path: "portaNigra_trier",
     countryPath: "germany", regionsPath: "rheinland-pfalz", districtPath: "city", cityPath: "trier",
     fotoCard: "Germany/rheinland-pfalz/trier-city/portaNigra_trier/001.jpg",
@@ -53,7 +53,7 @@ const datas = [
   {
     id: "amphitheater_trier",
     name: "Römisches Amphitheater",
-    type: ["historical_building", "museum", "monument_or_fountain"], top: "popular",
+    type: ["historical_building", "museum", "monument_or_fountain"], rating: "popular",
     path: "amphitheater_trier",
     countryPath: "germany", regionsPath: "rheinland-pfalz", districtPath: "city", cityPath: "trier",
     fotoCard: "Germany/rheinland-pfalz/trier-city/amphitheater/001.jpg",
@@ -125,7 +125,7 @@ const datas = [
   {
     id: "kaiserthermen_trier",
     name: "Römische Kaiserthermen",
-    type: ["historical_building", "museum", "monument_or_fountain"], top: "popular",
+    type: ["historical_building", "museum", "monument_or_fountain"], rating: "popular",
     path: "kaiserthermen_trier",
     countryPath: "germany", regionsPath: "rheinland-pfalz", districtPath: "city", cityPath: "trier",
     fotoCard: "Germany/rheinland-pfalz/trier-city/kaiserthermen/01.jpg",
@@ -187,7 +187,7 @@ const datas = [
   {
     id: "basilica_of_constantine_trier",
     name: "Konstantin-Basilika",
-    type: ["cathedral", "historical_building"], top: "popular",
+    type: ["cathedral", "historical_building"], rating: "popular",
     path: "basilica_of_constantine_trier",
     countryPath: "germany", regionsPath: "rheinland-pfalz", districtPath: "city", cityPath: "trier",
     fotoCard: "Germany/rheinland-pfalz/trier-city/basilica_of_constantine/001.jpg",
@@ -236,7 +236,7 @@ const datas = [
   {
     id: "barbarathermen_trier",
     name: "Barbarathermen",
-    type: ["historical_building"], top: "popular",
+    type: ["historical_building"], rating: "popular",
     path: "barbarathermen_trier",
     countryPath: "germany", regionsPath: "rheinland-pfalz", districtPath: "city", cityPath: "trier",
     fotoCard: "Germany/rheinland-pfalz/trier-city/barbarathermen/001.jpg",
@@ -279,6 +279,54 @@ const datas = [
       ogTitle: "Barbarathermen Trier – Antike römische Bäder",
       ogDescription: "Entdecken Sie die Barbarathermen in Trier: einer der größten römischen Badekomplexe nördlich der Alpen.",
       ogImage: "https://our-travels.info/foto/Germany/rheinland-pfalz/trier-city/barbarathermen/001.jpg"
+    }
+  },
+  {
+    id: "roman_bridge_trier",
+    name: "Römerbrücke",
+    type: ["technical_structure", "historical_building"], rating: "top",
+    path: "roman_bridge_trier",
+    countryPath: "germany", regionsPath: "rheinland-pfalz", districtPath: "city", cityPath: "trier",
+    fotoCard: "Germany/rheinland-pfalz/trier-city/roman_bridge/001.jpg",
+    location: "Trier, Deutschland",
+    officialSite: [
+      { bold: "Offizielle Webseite", link: "https://www.trier-info.de/sehenswuerdigkeiten/roemerbruecke" }
+    ],
+    unesco_status: { included: true, year: 1986 },
+    short_description: "Die Römische Brücke – eine antike römische Brücke über die Mosel in Trier, erbaut im 2. Jahrhundert n. Chr. Sie ist die älteste Brücke Deutschlands, deren originale römische Basaltpfeiler teilweise erhalten geblieben sind. Das Bauwerk wird bis heute für den Verkehr und Fußgänger genutzt.",
+    full_description: {
+      title: "Beschreibung und Geschichte",
+      items: [
+        { bold: "Römerbrücke", text: "– ein herausragendes Beispiel römischer Ingenieurskunst, das sich über die Mosel in der Stadt Trier spannt. Sie gilt als älteste Brücke Deutschlands und eine der ältesten noch genutzten Brücken Europas. Auch nach fast zweitausend Jahren erfüllt das Bauwerk weiterhin seine ursprüngliche Funktion, verbindet die Ufer und bleibt ein wichtiger Bestandteil der städtischen Infrastruktur." },
+        { text: "Die Geschichte der Furt an dieser Stelle beginnt bereits im 1. Jahrhundert v. Chr., als die Römer die Stadt Augusta Treverorum gründeten. Zunächst existierten hier Holzbrücken, die wiederholt durch Hochwasser und Zeit zerstört wurden. Im 2. Jahrhundert n. Chr. errichteten römische Ingenieure steinerne Pfeiler aus massiven Basaltblöcken – diese sind bis heute erhalten und bilden den ältesten Teil der Konstruktion." },
+        { text: "Im Mittelalter und in der Neuzeit wurde die Brücke mehrfach umgebaut. Die oberen Bögen wurden nach Zerstörungen durch Kriege und Naturkatastrophen verändert, doch die römischen Fundamente erwiesen sich als so stabil, dass sie nicht ersetzt werden mussten. Besonders starke Schäden erlitt die Brücke im 17. Jahrhundert während militärischer Konflikte, danach wurde sie Anfang des 18. Jahrhunderts wiederhergestellt." },
+        { text: "Im 19. Jahrhundert wurden die Verteidigungstore der Brücke entfernt, um den Verkehr zu erleichtern, und im 20. Jahrhundert wurde die Konstruktion für moderne Belastungen erweitert und verstärkt. Trotz Modernisierungen ist das historische Aussehen erhalten geblieben, und heute ist die Grenze zwischen den antiken Steinsäulen und den späteren Aufbauten deutlich erkennbar." },
+        { text: "Heute dient die Brücke nicht nur als Verkehrsverbindung, sondern ist auch eine bedeutende Sehenswürdigkeit, die Teil des Komplexes römischer Monumente von Trier ist, der zum UNESCO-Weltkulturerbe gehört. Sie ist ein anschauliches Zeugnis der Ingenieurskunst des Römischen Reiches und erinnert an eine Zeit, als Trier eine der größten Städte nördlich der Alpen war." }
+      ]
+    },
+    tickets_and_entry: {
+      title: "Praktische Informationen",
+      items: [
+        { bold: "Adresse: ", text: "Trier, Rheinland-Pfalz, Deutschland." }
+      ]
+    },
+    interestingFacts: {
+      title: "Interessante Fakten",
+      items: [
+        { text: "Es ist die älteste Brücke Deutschlands, die teilweise aus römischer Zeit erhalten geblieben ist." },
+        { text: "In römischer Zeit warfen Menschen Münzen in die Mosel als Opfergabe für die Flussgöttin – Schätzungen zufolge könnten es bis zu einer Million auf dem Grund sein." },
+        { text: "Auf einem der Pfeiler wurde im 18. Jahrhundert eine Statue des Hl. Nikolaus sowie ein Kreuz aufgestellt (Geschichte und Legenden rund um dieses lokale Symbol)." },
+        { text: "Jeden Juni findet das kulturelle Ereignis BrückenGlück statt: Die Brücke wird für den Verkehr gesperrt, die Menschen versammeln sich für Picknicks, Live-Musik und Spaziergänge direkt auf der Brücke." }
+      ]
+    },
+    construction_period: "2. Jahrhundert n. Chr. (≈144–152) – Steinsäulen.",
+    coord: { lat: 49.7518886046633, lng: 6.62641205412341 },
+    meta: {
+      title: "Römerbrücke in Trier – älteste römische Brücke Deutschlands (UNESCO)",
+      description: "Erfahren Sie die Geschichte der antiken Römerbrücke über die Mosel in Trier – von den römischen Pfeilern des 2. Jahrhunderts bis zu modernen Rekonstruktionen. Kostenloser Zugang, UNESCO-Denkmal.",
+      ogTitle: "Römische Brücke in Trier – antike Perle der Mosel",
+      ogDescription: "Entdecken Sie die über 1800 Jahre alte Römische Brücke (Römerbrücke): Architektur, Geschichte und Entwicklung des Brückenbaus. Teil des UNESCO-Weltkulturerbes.",
+      ogImage: "https://our-travels.info/foto/Germany/rheinland-pfalz/trier-city/roman_bridge/001.jpg"
     }
   },
 ];

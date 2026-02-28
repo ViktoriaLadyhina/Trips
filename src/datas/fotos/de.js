@@ -432,6 +432,9 @@ export const Fotos = {
       barbarathermen_trier: [
         { path: "Germany/rheinland-pfalz/trier-city/barbarathermen/001.jpg", title: { ru: "Барбарские термы (фото взято с интернета)", ua: "Барбарські терми (фото взято з Інтернету)", de: "Barbarathermen (Foto aus dem Internet)" } },
       ],
+      roman_bridge_trier: [
+        { path: "Germany/rheinland-pfalz/trier-city/roman_bridge/001.jpg", title: { ru: "Римский мост (фото взято с интернета)", ua: "Римський міст (фото взято з Інтернету)", de: "Römerbrücke (Foto aus dem Internet)" } },
+      ],
     }
   }
 }

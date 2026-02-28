@@ -3,7 +3,7 @@ const datas = [
   {
     id: "portaNigra_trier",
     name: "Порта Нигра («Чёрные ворота»)",
-    type: ["historical_building"], top: "top",
+    type: ["historical_building"], rating: "top",
     path: "portaNigra_trier",
     countryPath: "germany", regionsPath: "rheinland-pfalz", districtPath: "city", cityPath: "trier",
     fotoCard: "Germany/rheinland-pfalz/trier-city/portaNigra_trier/001.jpg",
@@ -53,7 +53,7 @@ const datas = [
   {
     id: "amphitheater_trier",
     name: "Римский амфитеатр",
-    type: ["historical_building", "museum", 'monument_or_fountain'], top: "popular",
+    type: ["historical_building", "museum", 'monument_or_fountain'], rating: "popular",
     path: "amphitheater_trier",
     countryPath: "germany", regionsPath: "rheinland-pfalz", districtPath: "city", cityPath: "trier",
     fotoCard: "Germany/rheinland-pfalz/trier-city/amphitheater/001.jpg",
@@ -125,7 +125,7 @@ const datas = [
   {
     id: "kaiserthermen_trier",
     name: "Римские императорские бани",
-    type: ["historical_building", "museum", 'monument_or_fountain'], top: "popular",
+    type: ["historical_building", "museum", 'monument_or_fountain'], rating: "popular",
     path: "kaiserthermen_trier",
     countryPath: "germany", regionsPath: "rheinland-pfalz", districtPath: "city", cityPath: "trier",
     fotoCard: "Germany/rheinland-pfalz/trier-city/kaiserthermen/01.jpg",
@@ -187,7 +187,7 @@ const datas = [
   {
     id: "basilica_of_constantine_trier",
     name: "Базилика Константина",
-    type: ["cathedral", "historical_building"], top: "popular",
+    type: ["cathedral", "historical_building"], rating: "popular",
     path: "basilica_of_constantine_trier",
     countryPath: "germany", regionsPath: "rheinland-pfalz", districtPath: "city", cityPath: "trier",
     fotoCard: "Germany/rheinland-pfalz/trier-city/basilica_of_constantine/001.jpg",
@@ -236,7 +236,7 @@ const datas = [
   {
     id: "barbarathermen_trier",
     name: "Барбарские термы",
-    type: ["historical_building"], top: "popular",
+    type: ["historical_building"], rating: "popular",
     path: "barbarathermen_trier",
     countryPath: "germany", regionsPath: "rheinland-pfalz", districtPath: "city", cityPath: "trier",
     fotoCard: "Germany/rheinland-pfalz/trier-city/barbarathermen/001.jpg",
@@ -280,7 +280,55 @@ const datas = [
       ogDescription: "Откройте для себя Барбарские термы в Трире: один из крупнейших римских банных комплексов севернее Альп.",
       ogImage: "https://our-travels.info/foto/Germany/rheinland-pfalz/trier-city/barbarathermen/001.jpg"
     }
-  }
+  },
+  {
+    id: "roman_bridge_trier",
+    name: "Римский мост",
+    type: ["technical_structure", 'historical_building'], rating: "top",
+    path: "roman_bridge_trier",
+    countryPath: "germany", regionsPath: "rheinland-pfalz", districtPath: "city", cityPath: "trier",
+    fotoCard: "Germany/rheinland-pfalz/trier-city/roman_bridge/001.jpg",
+    location: "Трир, Германия",
+    officialSite: [
+      { bold: "Официальный сайт", link: "https://www.trier-info.de/sehenswuerdigkeiten/roemerbruecke" }
+    ],
+    unesco_status: { included: true, year: 1986 },
+    short_description: "Римский мост – древнеримский мост через реку Мозель в Трире, построенный во II веке н. э. Это старейший мост Германии, частично сохранивший оригинальные римские опоры из базальта. Сооружение до сих пор используется для транспорта и пешеходов.",
+    full_description: {
+      title: "Описание и история",
+      items: [
+        { bold: "Римский мост (Römerbrücke)", text: "– выдающийся памятник римской инженерии, перекинутый через реку Мозель в городе Трир. Он считается старейшим мостом Германии и одним из древнейших действующих мостов Европы. Даже спустя почти две тысячи лет сооружение продолжает выполнять свою первоначальную функцию, соединяя берега реки и оставаясь важной частью городской инфраструктуры." },
+        { text: "История переправы на этом месте начинается ещё в I веке до н. э., когда римляне основали город Augusta Treverorum. Сначала здесь существовали деревянные мосты, которые неоднократно разрушались паводками и временем. Во II веке н. э. римские инженеры возвели каменные опоры из массивных базальтовых блоков – именно они сохранились до наших дней и являются древнейшей частью конструкции. " },
+        { text: "На протяжении Средневековья и Нового времени мост неоднократно перестраивался. Верхние пролёты меняли после разрушений войнами и природными катастрофами, но римские основания оказались настолько прочными, что их не пришлось заменять. Особенно серьёзные повреждения мост получил в XVII веке во время военных действий, после чего его восстановили уже в начале XVIII столетия." },
+        { text: "В XIX веке с моста убрали оборонительные ворота, чтобы облегчить движение транспорта, а в XX веке конструкцию расширили и укрепили для современной нагрузки. Несмотря на модернизации, исторический облик сооружения сохранился, и сегодня можно ясно увидеть границу между античными каменными опорами и более поздними надстройками." },
+        { text: "Сегодня мост является не только транспортной артерией, но и важной достопримечательностью, входящей в комплекс римских памятников Трира, признанных объектом Всемирного наследия. Он служит наглядным свидетельством инженерного мастерства Римской империи и напоминает о времени, когда Трир был одним из крупнейших городов к северу от Альп." }
+      ]
+    },
+    tickets_and_entry: {
+      title: "Практическая информация",
+      items: [
+        { bold: "Адрес: ", text: "Trier, Rheinland-Pfalz, Германия." }
+      ]
+    },
+    interestingFacts: {
+      title: "Интересные факты",
+      items: [
+        { text: "Это самый старый мост Германии, сохранившийся частично с римских времён. " },
+        { text: "В римские времена люди бросали монеты в Мозель как приношение богине реки – специалисты считают, что их может быть до миллиона на дне. " },
+        { text: "На одном из опор в XVIII веке установили статую св. Николая, а также крест (история и легенды вокруг этого местного символа). " },
+        { text: "Каждый июнь проводится культурное событие «BrückenGlück – праздник на Римском мосту»: мост закрывают для транспорта, люди собираются на пикники, живую музыку и гуляния прямо на мосту." }
+      ]
+    },
+    construction_period: "2-е век н.э. (≈144-152 годы) – каменные опоры.",
+    coord: { lat: 49.7518886046633, lng: 6.62641205412341 },
+    meta: {
+      title: "Римский мост (Römerbrücke) в Трире – старейший римский мост Германии (ЮНЕСКО)",
+      description: "Узнайте историю древнего Римского моста (Römerbrücke) через реку Мозель в Трире – от римских опор II века до современных реконструкций. Бесплатный доступ, памятник ЮНЕСКО.",
+      ogTitle: "Римский мост в Трире – древняя жемчужина Мозеля",
+      ogDescription: "Откройте для себя более 1800-летний Римский мост (Römerbrücke): архитектура, история и развитие мостостроения. Часть Всемирного наследия ЮНЕСКО. ",
+      ogImage: "https://our-travels.info/foto/Germany/rheinland-pfalz/trier-city/roman_bridge/001.jpg"
+    }
+  },
 ];
 
 export default datas;

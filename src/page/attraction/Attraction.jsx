@@ -26,6 +26,7 @@ const Attraction = () => {
     const [filters, setFilters] = useState({
         type: 'all',
         unesco: 'all',
+        rating: 'all',
         sort: 'rating',
     });
 
@@ -62,9 +63,9 @@ const Attraction = () => {
         }
 
         if (filters.type !== 'all' && !allTypes.includes(filters.type)) { return false; }
-        if (filters.top === 'top' && attr.top !== 'top') return false;
-        if (filters.top === 'popular' && attr.top !== 'popular') return false;
-        if (filters.top === 'local' && attr.top !== 'local') return false;
+        if (filters.rating === 'top' && attr.rating !== 'top') return false;
+        if (filters.rating === 'popular' && attr.rating !== 'popular') return false;
+        if (filters.rating === 'local' && attr.rating !== 'local') return false;
         if (filters.unesco === 'yes' && !attr.unesco_status?.included) return false;
         if (filters.unesco === 'no' && attr.unesco_status?.included) return false;
 
@@ -76,8 +77,8 @@ const Attraction = () => {
         if (filters.sort === 'name-asc') return (a?.name || '').localeCompare(b?.name || '');
         if (filters.sort === 'name-desc') return (b?.name || '').localeCompare(a?.name || '');
         const ratingOrder = { top: 3, popular: 2, local: 1 };
-        const aRating = ratingOrder[a.top] || 0;
-        const bRating = ratingOrder[b.top] || 0;
+        const aRating = ratingOrder[a.rating] || 0;
+        const bRating = ratingOrder[b.rating] || 0;
         if (bRating !== aRating) return bRating - aRating;
         return (a?.name || '').localeCompare(b?.name || '');
     };

@@ -23,7 +23,7 @@ function useCityFullData() {
   const [events, setEvents] = useState([]);
 
   useEffect(() => {
-    if (!lang) return; // ждем язык
+    if (!lang) return; 
 
     const allRegions = lang === "ua" ? uaRegions : lang === "de" ? deRegions : ruRegions;
 

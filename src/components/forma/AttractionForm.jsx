@@ -73,7 +73,7 @@ const AttractionForm = () => {
     id: watchedFields.id,
     name: watchedFields.name,
     type: [watchedFields.type],
-    top: watchedFields.rating,
+    rating: watchedFields.rating,
     path: watchedFields.id,
     countryPath: watchedFields.country,
     regionsPath: watchedFields.region,

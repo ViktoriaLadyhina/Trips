@@ -2,7 +2,7 @@ const datas = [
   {
     id: "portaNigra_trier",
     name: "Порта Нігра («Чорні ворота»)",
-    type: ["historical_building"], top: "top",
+    type: ["historical_building"], rating: "top",
     path: "portaNigra_trier",
     countryPath: "germany", regionsPath: "rheinland-pfalz", districtPath: "city", cityPath: "trier",
     fotoCard: "Germany/rheinland-pfalz/trier-city/portaNigra_trier/001.jpg",
@@ -52,7 +52,7 @@ const datas = [
   {
     id: "amphitheater_trier",
     name: "Римський амфітеатр",
-    type: ["historical_building", "museum", "monument_or_fountain"], top: "popular",
+    type: ["historical_building", "museum", "monument_or_fountain"], rating: "popular",
     path: "amphitheater_trier",
     countryPath: "germany", regionsPath: "rheinland-pfalz", districtPath: "city", cityPath: "trier",
     fotoCard: "Germany/rheinland-pfalz/trier-city/amphitheater/001.jpg",
@@ -124,7 +124,7 @@ const datas = [
   {
     id: "kaiserthermen_trier",
     name: "Римські імператорські терми",
-    type: ["historical_building", "museum", "monument_or_fountain"], top: "popular",
+    type: ["historical_building", "museum", "monument_or_fountain"], rating: "popular",
     path: "kaiserthermen_trier",
     countryPath: "germany", regionsPath: "rheinland-pfalz", districtPath: "city", cityPath: "trier",
     fotoCard: "Germany/rheinland-pfalz/trier-city/kaiserthermen/01.jpg",
@@ -186,7 +186,7 @@ const datas = [
   {
     id: "basilica_of_constantine_trier",
     name: "Базиліка Константина",
-    type: ["cathedral", "historical_building"], top: "popular",
+    type: ["cathedral", "historical_building"], rating: "popular",
     path: "basilica_of_constantine_trier",
     countryPath: "germany", regionsPath: "rheinland-pfalz", districtPath: "city", cityPath: "trier",
     fotoCard: "Germany/rheinland-pfalz/trier-city/basilica_of_constantine/001.jpg",
@@ -235,7 +235,7 @@ const datas = [
   {
     id: "barbarathermen_trier",
     name: "Барбарські терми",
-    type: ["historical_building"], top: "popular",
+    type: ["historical_building"], rating: "popular",
     path: "barbarathermen_trier",
     countryPath: "germany", regionsPath: "rheinland-pfalz", districtPath: "city", cityPath: "trier",
     fotoCard: "Germany/rheinland-pfalz/trier-city/barbarathermen/001.jpg",
@@ -279,7 +279,55 @@ const datas = [
       ogDescription: "Відкрийте для себе Барбарські терми у Трірі: один із найбільших римських банних комплексів північніше Альп.",
       ogImage: "https://our-travels.info/foto/Germany/rheinland-pfalz/trier-city/barbarathermen/001.jpg"
     }
-  }
+  },
+  {
+    id: "roman_bridge_trier",
+    name: "Римський міст",
+    type: ["technical_structure", "historical_building"], rating: "top",
+    path: "roman_bridge_trier",
+    countryPath: "germany", regionsPath: "rheinland-pfalz", districtPath: "city", cityPath: "trier",
+    fotoCard: "Germany/rheinland-pfalz/trier-city/roman_bridge/001.jpg",
+    location: "Трір, Німеччина",
+    officialSite: [
+      { bold: "Офіційний сайт", link: "https://www.trier-info.de/sehenswuerdigkeiten/roemerbruecke" }
+    ],
+    unesco_status: { included: true, year: 1986 },
+    short_description: "Римський міст – древній римський міст через річку Мозель у місті Трір, побудований у II столітті н. е. Це найстаріший міст Німеччини, частково збережений із оригінальних римських базальтових опор. Споруда досі використовується для транспорту і пішоходів.",
+    full_description: {
+      title: "Опис та історія",
+      items: [
+        { bold: "Римський міст (Römerbrücke)", text: "– видатний пам’ятник римської інженерії, перекинутий через річку Мозель у місті Трір. Він вважається найстарішим мостом Німеччини та одним із найдавніших діючих мостів Європи. Навіть через майже дві тисячі років споруда продовжує виконувати свою первісну функцію, з’єднуючи береги річки та залишаючись важливою частиною міської інфраструктури." },
+        { text: "Історія переправи на цьому місці починається ще у I столітті до н. е., коли римляни заснували місто Augusta Treverorum. Спочатку тут існували дерев’яні мости, які неодноразово руйнувалися паводками та часом. У II столітті н. е. римські інженери збудували кам’яні опори з масивних базальтових блоків – саме вони збереглися до наших днів і є найдавнішою частиною конструкції." },
+        { text: "Протягом Середньовіччя та Нового часу міст неодноразово перебудовувався. Верхні прольоти змінювали після руйнувань війнами та природними катастрофами, але римські основи виявилися настільки міцними, що їх не довелося замінювати. Особливо серйозні пошкодження міст отримав у XVII столітті під час військових дій, після чого його відновили вже на початку XVIII століття." },
+        { text: "У XIX столітті з мосту прибрали оборонні ворота, щоб полегшити рух транспорту, а у XX столітті конструкцію розширили та укріпили для сучасного навантаження. Незважаючи на модернізації, історичний вигляд споруди зберігся, і сьогодні можна чітко побачити межу між античними кам’яними опорами та більш пізніми надбудовами." },
+        { text: "Сьогодні міст є не лише транспортною артерією, а й важливою визначною пам’яткою, що входить до комплексу римських пам’яток Тріра, визнаних об’єктом Світової спадщини ЮНЕСКО. Він слугує наочним свідченням інженерного мистецтва Римської імперії та нагадує про часи, коли Трір був одним із найбільших міст на північ від Альп." }
+      ]
+    },
+    tickets_and_entry: {
+      title: "Практична інформація",
+      items: [
+        { bold: "Адреса: ", text: "Трір, Рейнланд-Пфальц, Німеччина." }
+      ]
+    },
+    interestingFacts: {
+      title: "Цікаві факти",
+      items: [
+        { text: "Це найстаріший міст Німеччини, частково збережений із римських часів." },
+        { text: "У римські часи люди кидали монети у Мозель як приношення богині річки – за оцінками фахівців їх може бути до мільйона на дні." },
+        { text: "На одній із опор у XVIII столітті встановили статую св. Миколая, а також хрест (історія та легенди навколо цього місцевого символу)." },
+        { text: "Щороку у червні проводиться культурна подія «BrückenGlück – свято на Римському мосту»: міст закривають для транспорту, люди збираються на пікніки, живу музику та прогулянки прямо на мосту." }
+      ]
+    },
+    construction_period: "II століття н. е. (≈144–152 роки) – кам’яні опори.",
+    coord: { lat: 49.7518886046633, lng: 6.62641205412341 },
+    meta: {
+      title: "Римський міст (Römerbrücke) у Трірі – найстаріший римський міст Німеччини (ЮНЕСКО)",
+      description: "Дізнайтеся історію древнього Римського мосту (Römerbrücke) через річку Мозель у Трірі – від римських опор II століття до сучасних реконструкцій. Безкоштовний доступ, пам’ятка ЮНЕСКО.",
+      ogTitle: "Римський міст у Трірі – древня перлина Мозеля",
+      ogDescription: "Відкрийте для себе понад 1800-річний Римський міст (Römerbrücke): архітектура, історія та розвиток мостобудування. Частина Світової спадщини ЮНЕСКО.",
+      ogImage: "https://our-travels.info/foto/Germany/rheinland-pfalz/trier-city/roman_bridge/001.jpg"
+    }
+  },
 ];
 
 export default datas;

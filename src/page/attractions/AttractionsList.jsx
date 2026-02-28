@@ -19,6 +19,7 @@ const AttractionsList = () => {
     const [filters, setFilters] = useState({
         type: 'all',
         unesco: 'all',
+
         sort: 'rating',
     });
 
@@ -64,9 +65,9 @@ const AttractionsList = () => {
         }
 
         // Фильтр по рейтингу
-        if (filters.top === 'top' && attr.top !== 'top') return false;
-        if (filters.top === 'popular' && attr.top !== 'popular') return false;
-        if (filters.top === 'local' && attr.top !== 'local') return false;
+        if (filters.rating === 'top' && attr.rating !== 'top') return false;
+        if (filters.rating === 'popular' && attr.rating !== 'popular') return false;
+        if (filters.rating === 'local' && attr.rating !== 'local') return false;
 
 
         // Фильтр по ЮНЕСКО
@@ -90,8 +91,8 @@ const AttractionsList = () => {
 
         const ratingOrder = { top: 3, popular: 2, local: 1 };
 
-        const aRating = ratingOrder[a.top] || 0;
-        const bRating = ratingOrder[b.top] || 0;
+        const aRating = ratingOrder[a.rating] || 0;
+        const bRating = ratingOrder[b.rating] || 0;
 
         if (bRating !== aRating) {
             return bRating - aRating;

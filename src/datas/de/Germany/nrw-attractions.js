@@ -4,7 +4,7 @@ const datas = [
     {
         id: "altstadt_koln",
         name: "Altstadt Köln",
-        type: ["historical_area"], top: "top",
+        type: ["historical_area"], rating: "top",
         path: "altstadt_koln",
         countryPath: "germany", regionsPath: "nrw", districtPath: "city", cityPath: "koln",
         fotoCard: "Germany/nrw/koln/koln-city/altstadt/005.jpg",
@@ -57,7 +57,7 @@ const datas = [
     {
         id: "cologne_cathedral",
         name: "Kölner Dom",
-        type: ["cathedral"], top: "top",
+        type: ["cathedral"], rating: "top",
         path: "cologne-cathedral",
         countryPath: "germany", regionsPath: "nrw", districtPath: "city", cityPath: "koln",
         showMore: true, hiddenFromList: true,
@@ -127,7 +127,7 @@ const datas = [
     {
         id: "rathaus_koln",
         name: "Kölner Rathaus",
-        type: ['historical_building'], top: "popular",
+        type: ['historical_building'], rating: "popular",
         path: "rathaus_koln",
         countryPath: "germany", regionsPath: "nrw", districtPath: "city", cityPath: "koln",
         showMore: true, hiddenFromList: true,
@@ -185,7 +185,7 @@ const datas = [
     {
         id: "gross_st_martin_koln",
         name: "Groß St. Martin",
-        type: ["cathedral"], top: "popular",
+        type: ["cathedral"], rating: "popular",
         path: "gross_st_martin_koln",
         countryPath: "germany", regionsPath: "nrw", districtPath: "city", cityPath: "koln",
         hiddenFromList: true, showMore: true,
@@ -229,7 +229,7 @@ const datas = [
     {
         id: "guerzenich_koln",
         name: "Gürzenich – historischer Konzertsaal und Zunfthaus in Köln",
-        type: ["historical_building"], top: "popular",
+        type: ["historical_building"], rating: "popular",
         path: "guerzenich_koln",
         countryPath: "germany", regionsPath: "nrw", districtPath: "city", cityPath: "koln",
         showMore: true, hiddenFromList: true,
@@ -290,7 +290,7 @@ const datas = [
     {
         id: "roemisch_germanisches_museum",
         name: "Römisch-Germanisches Museum",
-        type: ["museum"], top: "popular",
+        type: ["museum"], rating: "popular",
         path: "roemisch-germanisches-museum",
         countryPath: "germany", regionsPath: "nrw", districtPath: "city", cityPath: "koln",
         showMore: true, hiddenFromList: true,
@@ -345,7 +345,7 @@ const datas = [
     {
         id: "farina_duftmuseum",
         name: "Duftmuseum im Farina-Haus",
-        type: ["museum"], top: "popular",
+        type: ["museum"], rating: "popular",
         path: "farina-duftmuseum",
         countryPath: "germany", regionsPath: "nrw", districtPath: "city", cityPath: "koln",
         showMore: true, hiddenFromList: true,
@@ -398,7 +398,7 @@ const datas = [
     {
         id: "museum_ludwig",
         name: "Museum Ludwig",
-        type: ["museum"], top: "popular",
+        type: ["museum"], rating: "popular",
         path: "museum-ludwig",
         countryPath: "germany", regionsPath: "nrw", districtPath: "city", cityPath: "koln",
         showMore: true, hiddenFromList: true,
@@ -453,7 +453,7 @@ const datas = [
     {
         id: "schokoladenmuseum",
         name: "Schokoladenmuseum",
-        type: ["museum"], top: "popular",
+        type: ["museum"], rating: "popular",
         path: "schokoladenmuseum",
         countryPath: "germany", regionsPath: "nrw", districtPath: "city", cityPath: "koln",
         fotoCard: "Germany/nrw/koln/koln-city/schokoladenmuseum/001.jpg",
@@ -508,7 +508,7 @@ const datas = [
     {
         id: "miqua",
         name: "Museum im archäologischen Viertel Köln – MiQua",
-        type: ["museum"], top: "popular",
+        type: ["museum"], rating: "popular",
         path: "miqua",
         countryPath: "germany", regionsPath: "nrw", districtPath: "city", cityPath: "koln",
         showMore: true, hiddenFromList: true,
@@ -583,7 +583,7 @@ const datas = [
     {
         id: "wallraf_richartz_museum",
         name: "Wallraf-Richartz-Museum",
-        type: ["museum"], top: "popular",
+        type: ["museum"], rating: "popular",
         path: "wallraf_richartz_museum",
         countryPath: "germany", regionsPath: "nrw", districtPath: "city", cityPath: "koln",
         showMore: true, hiddenFromList: true,
@@ -643,7 +643,7 @@ const datas = [
     {
         id: "ostasiatische_kunst_koln",
         name: "Museum für Ostasiatische Kunst",
-        type: ["museum"], top: "popular",
+        type: ["museum"], rating: "popular",
         path: "ostasiatische_kunst_koln",
         countryPath: "germany", regionsPath: "nrw", districtPath: "city", cityPath: "koln",
         fotoCard: "Germany/nrw/koln/koln-city/ostasiatische_kunst_koln/001.jpg",
@@ -698,7 +698,7 @@ const datas = [
     {
         id: "museum_schnuetgen_koln",
         name: "Museum Schnütgen",
-        type: ["museum", 'cathedral'], top: "popular",
+        type: ["museum", 'cathedral'], rating: "popular",
         path: "museum_schnuetgen_koln",
         countryPath: "germany", regionsPath: "nrw", districtPath: "city", cityPath: "koln",
         fotoCard: "Germany/nrw/koln/koln-city/schnuetgen/001.jpg",
@@ -761,7 +761,7 @@ const datas = [
     {
         id: "rautenstrauch_joest_museum_koln",
         name: "Rautenstrauch-Joest-Museum",
-        type: ["museum"], top: "popular",
+        type: ["museum"], rating: "popular",
         path: "rautenstrauch_joest_museum_koln",
         countryPath: "germany", regionsPath: "nrw", districtPath: "city", cityPath: "koln",
         fotoCard: "Germany/nrw/koln/koln-city/rautenstrauch_joest_museum/001.jpg",
@@ -821,7 +821,7 @@ const datas = [
     {
         id: "dufthaus_4711_koln",
         name: "Duft-Haus 4711",
-        type: ["museum"], top: "popular",
+        type: ["museum"], rating: "popular",
         path: "dufthaus_4711_koln",
         countryPath: "germany", regionsPath: "nrw", districtPath: "city", cityPath: "koln",
         showMore: true, hiddenFromList: true,
@@ -883,7 +883,7 @@ const datas = [
     {
         id: "makk_museum_koln",
         name: "Museum für Angewandte Kunst",
-        type: ["museum"], top: "popular",
+        type: ["museum"], rating: "popular",
         path: "makk_museum_koln",
         countryPath: "germany", regionsPath: "nrw", districtPath: "city", cityPath: "koln",
         fotoCard: "Germany/nrw/koln/koln-city/makk_museum/001.JPG",
@@ -941,7 +941,7 @@ const datas = [
     {
         id: "stadtmuseum_koln",
         name: "Kölnisches Stadtmuseum",
-        type: ["museum"], top: "popular",
+        type: ["museum"], rating: "popular",
         path: "stadtmuseum_koln",
         countryPath: "germany", regionsPath: "nrw", districtPath: "city", cityPath: "koln",
         showMore: true, hiddenFromList: true,
@@ -999,7 +999,7 @@ const datas = [
     {
         id: "sport_olympia_museum_koln",
         name: "Deutsches Sport & Olympia Museum",
-        type: ["museum"], top: "popular",
+        type: ["museum"], rating: "popular",
         path: "sport_olympia_museum_koln",
         countryPath: "germany", regionsPath: "nrw", districtPath: "city", cityPath: "koln",
         fotoCard: "Germany/nrw/koln/koln-city/sport_olympia_museum/001.jpg",
@@ -1057,7 +1057,7 @@ const datas = [
     {
         id: "photographische_sammlung_sk_stiftung_kultur_koln",
         name: "Photographische Sammlung des SK Kulturfonds",
-        type: ["museum"], top: "local",
+        type: ["museum"], rating: "local",
         path: "photographische_sammlung_sk_stiftung_kultur_koln",
         countryPath: "germany", regionsPath: "nrw", districtPath: "city", cityPath: "koln",
         fotoCard: "Germany/nrw/koln/koln-city/photographische_sammlung_sk_stiftung_kultur/001.jpg",
@@ -1113,7 +1113,7 @@ const datas = [
     {
         id: "koln_bridges",
         name: "Kölner Rheinbrücken",
-        type: ["technical_structure"], top: "popular",
+        type: ["technical_structure"], rating: "popular",
         path: "koln_bridges",
         countryPath: "germany", regionsPath: "nrw", districtPath: "city", cityPath: "koln",
         fotoCard: "Germany/nrw/koln/koln-city/koln_bridges/001.jpg",
@@ -1165,7 +1165,7 @@ const datas = [
     {
         id: "skulpturenpark_koln",
         name: "Skulpturenpark in Köln",
-        type: ["museum", "nature", "monument_or_fountain"], top: "local",
+        type: ["museum", "nature", "monument_or_fountain"], rating: "local",
         path: "skulpturenpark_koln",
         countryPath: "germany", regionsPath: "nrw", districtPath: "city", cityPath: "koln",
         fotoCard: "Germany/nrw/koln/koln-city/skulpturenpark/001.jpg",
@@ -1216,7 +1216,7 @@ const datas = [
     {
         id: "zoo_koln",
         name: "Kölner Zoo",
-        type: ["nature"], top: "popular",
+        type: ["nature"], rating: "popular",
         path: "zoo_koln",
         countryPath: "germany", regionsPath: "nrw", districtPath: "city", cityPath: "koln",
         fotoCard: "Germany/nrw/koln/koln-city/zoo/001.jpg",
@@ -1277,7 +1277,7 @@ const datas = [
     {
         id: "forstbotanischer_garten",
         name: "Forstbotanischer Garten",
-        type: ["nature"], top: "popular",
+        type: ["nature"], rating: "popular",
         path: "forstbotanischer_garten",
         countryPath: "germany", regionsPath: "nrw", districtPath: "city", cityPath: "koln",
         fotoCard: "Germany/nrw/koln/koln-city/forstbotanischer_garten/001.jpg",
@@ -1344,7 +1344,7 @@ const datas = [
     {
         id: "flora_garten_koln",
         name: "Botanischer Garten Flora",
-        type: ["nature"], top: "popular",
+        type: ["nature"], rating: "popular",
         path: "flora_garten_koln",
         countryPath: "germany", regionsPath: "nrw", districtPath: "city", cityPath: "koln",
         fotoCard: "Germany/nrw/koln/koln-city/flora_garten_koln/001.jpg",
@@ -1401,7 +1401,7 @@ const datas = [
     {
         id: "rheinpark_koln",
         name: "Rheinpark",
-        type: ["nature"], top: "popular",
+        type: ["nature"], rating: "popular",
         path: "rheinpark_koln",
         countryPath: "germany", regionsPath: "nrw", districtPath: "city", cityPath: "koln",
         fotoCard: "Germany/nrw/koln/koln-city/rheinpark_koln/001.jpg",
@@ -1459,7 +1459,7 @@ const datas = [
     {
         id: "tanzbrunnen",
         name: "Tanzbrunnen",
-        type: ["monument_or_fountain"], top: "popular",
+        type: ["monument_or_fountain"], rating: "popular",
         path: "tanzbrunnen",
         countryPath: "germany", regionsPath: "nrw", districtPath: "city", cityPath: "koln",
         hiddenFromList: true, showMore: true,
@@ -1500,7 +1500,7 @@ const datas = [
     {
         id: "koln_seilbahn",
         name: "Kölner Seilbahn",
-        type: ["technical_structure"], top: "popular",
+        type: ["technical_structure"], rating: "popular",
         path: "koln_seilbahn",
         countryPath: "germany", regionsPath: "nrw", districtPath: "city", cityPath: "koln",
         hiddenFromList: true, showMore: true,
@@ -1555,7 +1555,7 @@ const datas = [
     {
         id: "divitia_koln",
         name: "Ruinen des römischen Forts Divitia in Köln (Historischer Park Deutz)",
-        type: ["historical_building"], top: "local",
+        type: ["historical_building"], rating: "local",
         path: "divitia_koln",
         countryPath: "germany", regionsPath: "nrw", districtPath: "city", cityPath: "koln",
         hiddenFromList: true, showMore: true,
@@ -1610,7 +1610,7 @@ const datas = [
     {
         id: "finkens_garten_koln",
         name: "Finkens Garten",
-        type: ["nature"], top: "local",
+        type: ["nature"], rating: "local",
         path: "finkens_garten_koln",
         countryPath: "germany", regionsPath: "nrw", districtPath: "city", cityPath: "koln",
         fotoCard: "Germany/nrw/koln/koln-city/finkens_garten/001.jpg",
@@ -1666,7 +1666,7 @@ const datas = [
     {
         id: "historic_center_monschau",
         name: "Altstadt Monschau",
-        type: ["historical_area"], top: "popular",
+        type: ["historical_area"], rating: "popular",
         path: "historic_center_monschau",
         countryPath: "germany", regionsPath: "nrw", districtPath: "koln", cityPath: "monschau",
         subObjects: ["rotes_haus_monschau"],
@@ -1713,7 +1713,7 @@ const datas = [
     {
         id: "rotes_haus_monschau",
         name: "Rotes Haus",
-        type: ["museum", "historical_house"], top: "popular",
+        type: ["museum", "historical_house"], rating: "popular",
         path: "rotes_haus_monschau",
         countryPath: "germany", regionsPath: "nrw", districtPath: "koln", cityPath: "monschau",
         hiddenFromList: true, showMore: true,
@@ -1772,12 +1772,9 @@ const datas = [
     {
         id: "burg_monschau",
         name: "Burg Monschau",
-        type: ["palace_or_castle"], top: "local",
+        type: ["palace_or_castle"], rating: "local",
         path: "burg_monschau",
-        countryPath: "germany",
-        regionsPath: "nrw",
-        districtPath: "koln",
-        cityPath: "monschau",
+        countryPath: "germany", regionsPath: "nrw", districtPath: "koln", cityPath: "monschau",
         fotoCard: "Germany/nrw/koln/Aachen/monschau/burg/001.jpg",
         location: "Monschau, Deutschland",
         short_description: "Die Burg Monschau ist eine mittelalterliche Burg auf einem Hügel in Monschau (Nordrhein‑Westfalen, Deutschland). Teilweise ruinös mit erhaltenen Türmen und Mauern ist sie eine historische und kulturelle Sehenswürdigkeit mit Panoramablick auf die Altstadt.",
@@ -1825,9 +1822,9 @@ const datas = [
     {
         id: "bruhel_palaces",
         name: "Brühler Schlösser: Ensemble Augustusburg und Falkenlust",
-        type: ['palace_or_castle', 'museum'], top: "top",
+        type: ['palace_or_castle', 'museum'], rating: "top",
         path: 'bruhl_palaces',
-        regionsPath: "nrw", districtPath: "koln", cityPath: "bruhl",
+        countryPath: "germany", regionsPath: "nrw", districtPath: "koln", cityPath: "bruhl",
         fotoCard: "Germany/nrw/koln/Rhein-Erft-Kreis/bruhl/bruhl_palaces/001.jpg",
         location: "Brühl, Deutschland",
         address: [{ bold: "Adresse:", text: " Schloss Augustusburg — Max-Ernst-Allee, 50321 Brühl, Deutschland <br>Schloss Falkenlust — An Schloss Falkenlust 1, 50321 Brühl, Deutschland" }],
@@ -1909,9 +1906,9 @@ const datas = [
     {
         id: "max_ernst_museum",
         name: "Max-Ernst-Museum",
-        type: ['museum'], top: "popular",
+        type: ['museum'], rating: "popular",
         path: "max-ernst-museum",
-        regionsPath: "nrw", districtPath: "koln", cityPath: "bruhl",
+        countryPath: "germany", regionsPath: "nrw", districtPath: "koln", cityPath: "bruhl",
         fotoCard: "Germany/nrw/koln/Rhein-Erft-Kreis/bruhl/max_ernst_museum/Max-Ernst-Museum.jpg",
         location: "Brühl, Deutschland",
         address: [{ bold: "Adresse:", text: " Comesstraße 42 / Max-Ernst-Allee 1, 50321 Brühl, Deutschland" }],
@@ -1957,9 +1954,9 @@ const datas = [
     {
         id: "phantasialand",
         name: "Phantasialand",
-        type: ['amusement_park'], top: "popular",
+        type: ['amusement_park'], rating: "popular",
         path: "phantasialand",
-        regionsPath: "nrw", districtPath: "koln", cityPath: "bruhl",
+        countryPath: "germany", regionsPath: "nrw", districtPath: "koln", cityPath: "bruhl",
         fotoCard: "Germany/nrw/koln/Rhein-Erft-Kreis/bruhl/phantasialand/001.jpg",
         location: "Brühl, Deutschland",
         address: [{ bold: "Adresse:", text: " Berggeiststraße 31–41, 50321 Brühl, Deutschland" }],
@@ -2015,7 +2012,7 @@ const datas = [
     {
         id: "keramion_frechen",
         name: "KERAMION – Zentrum für moderne und historische Keramik",
-        type: ['museum'], top: "local",
+        type: ['museum'], rating: "local",
         path: "keramion",
         countryPath: "germany", regionsPath: "nrw", districtPath: "koln", cityPath: "frechen",
         fotoCard: "Germany/nrw/koln/Rhein-Erft-Kreis/frechen/keramion/frechen_keramion.jpg",
@@ -2066,7 +2063,7 @@ const datas = [
     {
         id: "burg_bachem_frechen",
         name: "Burg Bachem – historische Wasserburg in Frechen",
-        type: ['palace_or_castle'], top: "local",
+        type: ['palace_or_castle'], rating: "local",
         path: "burg-bachem",
         countryPath: "germany", regionsPath: "nrw", districtPath: "koln", cityPath: "frechen",
         fotoCard: "Germany/nrw/koln/Rhein-Erft-Kreis/frechen/burg-bachem/Burg-Bachem_3.jpg",
@@ -2115,7 +2112,7 @@ const datas = [
     {
         id: "johann_schmitz_platz_frechen",
         name: "Johann-Schmitz-Platz («Rathausplatz»)",
-        type: ['square'], top: "local",
+        type: ['square'], rating: "local",
         path: "johann_schmitz_platz_frechen",
         countryPath: "germany", regionsPath: "nrw", districtPath: "koln", cityPath: "frechen",
         fotoCard: "Germany/nrw/koln/Rhein-Erft-Kreis/frechen/johann_schmitz_platz_frechen/001.jpg",
@@ -2164,7 +2161,7 @@ const datas = [
     {
         id: "altes_rathaus_frechen",
         name: "Altes Rathaus Frechen",
-        type: ['historical_building'], top: "local",
+        type: ['historical_building'], rating: "local",
         path: "altes_rathaus_frechen",
         countryPath: "germany", regionsPath: "nrw", districtPath: "koln", cityPath: "frechen",
         hiddenFromList: true, showMore: true,
@@ -2211,7 +2208,7 @@ const datas = [
     {
         id: "rathausbrunnen_frechen",
         name: "Brunnen vor dem Rathaus",
-        type: ["monument_or_fountain"], top: "local",
+        type: ["monument_or_fountain"], rating: "local",
         path: "rathausbrunnen_frechen",
         countryPath: "germany", regionsPath: "nrw", districtPath: "koln", cityPath: "frechen",
         hiddenFromList: true,
@@ -2234,7 +2231,7 @@ const datas = [
     {
         id: "klüttenbrunnen_frechen",
         name: "Klüttenbrunnen",
-        type: ["monument_or_fountain"], top: "local",
+        type: ["monument_or_fountain"], rating: "local",
         path: "klüttenbrunnen_frechen",
         countryPath: "germany", regionsPath: "nrw", districtPath: "koln", cityPath: "frechen",
         hiddenFromList: true,
@@ -2262,9 +2259,9 @@ const datas = [
     {
         id: "drachenfels",
         name: "Berg Drachenfels",
-        type: ["nature"], top: "top",
+        type: ["nature"], rating: "top",
         path: "drachenfels",
-        regionsPath: "nrw", districtPath: "koln", cityPath: "konigswinter",
+        countryPath: "germany", regionsPath: "nrw", districtPath: "koln", cityPath: "konigswinter",
         fotoCard: "Germany/nrw/koln/Rhein-Sieg-Kreis/konigswinter/drachenfels/001.jpg",
         location: "zwischen den Städten Königswinter und Bad Honnef, Deutschland",
         officialSite: [
@@ -2329,7 +2326,7 @@ const datas = [
     {
         id: "drachenfelsbahn",
         name: "Drachenfelsbahn",
-        type: ["technical_structure"], top: "popular",
+        type: ["technical_structure"], rating: "popular",
         path: "drachenfelsbahn",
         countryPath: "germany", regionsPath: "nrw", districtPath: "koln", cityPath: "konigswinter",
         hiddenFromList: true, showMore: true,
@@ -2381,7 +2378,7 @@ const datas = [
     {
         id: "schloss_drachenburg",
         name: "Schloss Drachenburg",
-        type: ["palace_or_castle"], top: "popular",
+        type: ["palace_or_castle"], rating: "popular",
         path: "schloss_drachenburg",
         countryPath: "germany", regionsPath: "nrw", districtPath: "koln", cityPath: "konigswinter",
         hiddenFromList: true, showMore: true,
@@ -2440,7 +2437,7 @@ const datas = [
     {
         id: "drachenfels_ruins",
         name: "Ruinen der Burg Drachenfels",
-        type: ["palace_or_castle"], top: "popular",
+        type: ["palace_or_castle"], rating: "popular",
         path: "drachenfels_ruins",
         countryPath: "germany", regionsPath: "nrw", districtPath: "koln", cityPath: "konigswinter",
         hiddenFromList: true, showMore: true,
@@ -2481,7 +2478,7 @@ const datas = [
     {
         id: "nibelungenhalle",
         name: "Nibelungenhalle",
-        type: ["museum"], top: "local",
+        type: ["museum"], rating: "local",
         path: "nibelungenhalle",
         countryPath: "germany", regionsPath: "nrw", districtPath: "koln", cityPath: "konigswinter",
         hiddenFromList: true, showMore: true,
@@ -2520,7 +2517,7 @@ const datas = [
     {
         id: "reptile_zoo",
         name: "Reptilienzoo Drachenfels",
-        type: ["nature"], top: "local",
+        type: ["nature"], rating: "local",
         path: "reptile_zoo",
         countryPath: "germany", regionsPath: "nrw", districtPath: "koln", cityPath: "konigswinter",
         hiddenFromList: true, showMore: true,
@@ -2569,7 +2566,7 @@ const datas = [
     {
         id: "heisterbach_konigswinter",
         name: "Abtei Heisterbach",
-        type: ["historical_building"], top: "popular",
+        type: ["historical_building"], rating: "popular",
         path: "heisterbach_konigswinter",
         countryPath: "germany", regionsPath: "nrw", districtPath: "koln", cityPath: "konigswinter",
         fotoCard: "Germany/nrw/koln/Rhein-Sieg-Kreis/konigswinter/heisterbach/001.jpg",
@@ -2629,7 +2626,7 @@ const datas = [
     {
         id: "chorruine_heisterbach_konigswinter",
         name: "Ruinen des Chors der ehemaligen Klosterkirche",
-        type: ["historical_building"], top: "local",
+        type: ["historical_building"], rating: "local",
         path: "chorruine_heisterbach_konigswinter",
         countryPath: "germany", regionsPath: "nrw", districtPath: "koln", cityPath: "konigswinter",
         hiddenFromList: true, showMore: true,
@@ -2668,7 +2665,7 @@ const datas = [
     {
         id: "st_peter_heisterbach_konigswinter",
         name: "Kirche St. Peter in Heisterbach",
-        type: ["cathedral"], top: "local",
+        type: ["cathedral"], rating: "local",
         path: "st_peter_heisterbach_konigswinter",
         countryPath: "germany", regionsPath: "nrw", districtPath: "koln", cityPath: "konigswinter",
         hiddenFromList: true, showMore: true,
@@ -2715,7 +2712,7 @@ const datas = [
     {
         id: "altstadt_luedenscheid",
         name: "Altstadt von Lüdenscheid",
-        type: ["historical_area"], top: "popular",
+        type: ["historical_area"], rating: "popular",
         path: "altstadt_luedenscheid",
         countryPath: "germany", regionsPath: "nrw", districtPath: "arnsberg", cityPath: "luedenscheid",
         fotoCard: "Germany/nrw/arnsberg/Märkischer-Kreis/luedenscheid/001.JPG",
@@ -2760,7 +2757,7 @@ const datas = [
     {
         id: "erloeserkirche_luedenscheid",
         name: "Erlöserkirche",
-        type: ["cathedral"], top: "popular",
+        type: ["cathedral"], rating: "popular",
         path: "erloeserkirche_luedenscheid",
         countryPath: "germany", regionsPath: "nrw", districtPath: "arnsberg", cityPath: "luedenscheid",
         hiddenFromList: true, showMore: true,
@@ -2814,7 +2811,7 @@ const datas = [
     {
         id: "brunnen_altstadt_luedenscheid",
         name: "Brunnen in der Altstadt",
-        type: ["monument_or_fountain"], top: "local",
+        type: ["monument_or_fountain"], rating: "local",
         path: "brunnen_altstadt_luedenscheid",
         countryPath: "germany", regionsPath: "nrw",
         districtPath: "arnsberg", cityPath: "luedenscheid",
@@ -2843,7 +2840,7 @@ const datas = [
     {
         id: "rathausplatz_luedenscheid",
         name: "Rathausplatz von Lüdenscheid",
-        type: ["square"], top: "local",
+        type: ["square"], rating: "local",
         path: "rathausplatz_luedenscheid",
         countryPath: "germany", regionsPath: "nrw", districtPath: "arnsberg", cityPath: "luedenscheid",
         fotoCard: "Germany/nrw/arnsberg/Märkischer-Kreis/luedenscheid/rathausplatz_lüdenscheid/001.JPG",
@@ -2882,7 +2879,7 @@ const datas = [
     {
         id: "sternplatz",
         name: "Sternplatz",
-        type: ["square"], top: "local",
+        type: ["square"], rating: "local",
         path: "sternplatz",
         countryPath: "germany", regionsPath: "nrw", districtPath: "arnsberg", cityPath: "luedenscheid",
         fotoCard: "Germany/nrw/arnsberg/Märkischer-Kreis/luedenscheid/sternplatz/003.jpg",
@@ -2923,7 +2920,7 @@ const datas = [
     {
         id: "onkel_willi_denkmal_sternplatz_luedenscheid",
         name: "Denkmal von Onkel Willi",
-        type: ["monument_or_fountain"], top: "local",
+        type: ["monument_or_fountain"], rating: "local",
         path: "onkel_willi_denkmal_sternplatz_luedenscheid",
         countryPath: "germany", regionsPath: "nrw", districtPath: "arnsberg", cityPath: "luedenscheid",
         hiddenFromList: true, showMore: true,
@@ -2951,7 +2948,7 @@ const datas = [
     {
         id: "fontain_sternplatz_luedenscheid",
         name: "Brunnen auf dem Sternplatz",
-        type: ["monument_or_fountain"], top: "local",
+        type: ["monument_or_fountain"], rating: "local",
         path: "fontain_sternplatz_luedenscheid",
         countryPath: "germany", regionsPath: "nrw", districtPath: "arnsberg", cityPath: "luedenscheid",
         hiddenFromList: true, showMore: true,
@@ -2979,7 +2976,7 @@ const datas = [
     {
         id: "history_museum_luedenscheid",
         name: "Geschichtsmuseum Lüdenscheid",
-        type: ["museum"], top: "local",
+        type: ["museum"], rating: "local",
         path: "history_museum_luedenscheid",
         countryPath: "germany", regionsPath: "nrw", districtPath: "arnsberg", cityPath: "luedenscheid",
         fotoCard: "Germany/nrw/arnsberg/Märkischer-Kreis/luedenscheid/history_museum_luedenscheid/001.JPG",

@@ -2,7 +2,7 @@ const datas = [
     {
         id: "sumy_spaso_preobrazhensky",
         name: "Spaso-Preobraschenski-Kathedrale",
-        type: ["cathedral"], top: "popular",
+        type: ["cathedral"], rating: "popular",
         path: "sumy_spaso_preobrazhensky",
         regionsPath: "sumska", districtPath: "city", cityPath: "sumy",
         fotoCard: "Ukraine/sumska/sumy-city/spaso-preobrazhensky/004.jpg",
@@ -58,7 +58,7 @@ const datas = [
     {
         id: "pokrovska_square_sumy",
         name: "Pokrowska-Platz",
-        type: ["square"], top: "local",
+        type: ["square"], rating: "local",
         path: "pokrovska_square_sumy",
         countryPath: "ukraine", regionsPath: "sumska", districtPath: "city", cityPath: "sumy",
         fotoCard: "Ukraine/sumska/sumy-city/altanka/009.jpg",
@@ -106,7 +106,7 @@ const datas = [
     {
         id: "sumy_altanka",
         name: "Der Pavillon ",
-        type: ["istorical_building"], top: "popular",
+        type: ["historical_building"], rating: "popular",
         path: "sumy_altanka",
         countryPath: "ukraine", regionsPath: "sumska", districtPath: "city", cityPath: "sumy",
         hiddenFromList: true, showMore: true,
@@ -130,10 +130,10 @@ const datas = [
         },
         coord: { lat: 50.9068, lng: 34.7992 },
         meta: {
-            title: "Der Pavillon in Sumy",
-            description: "Die Spaso-Preobraschenski-Kathedrale ist der Haupttempel von Sumy, ein architektonisches Denkmal des 18.–19. Jahrhunderts mit Marmor-Malachit-Ikonostase und 56 Meter hohem Glockenturm.",
-            ogTitle: "Spaso-Preobraschenski-Kathedrale — das wichtigste Heiligtum von Sumy",
-            ogDescription: "Historische Kathedrale von Sumy: einzigartige Architektur, wundertätige Ikonen, malachitene Ikonostase und berühmte Glockenuhren, die alle drei Tage aufgezogen werden.",
+            title: "Pavillon in Sumy",
+            description: "Der Pavillon gilt zu Recht als eines der wichtigsten architektonischen Wahrzeichen der Stadt",
+            ogTitle: "Pavillon – die Visitenkarte von Sumy",
+            ogDescription: "Der Pavillon gilt zu Recht als eines der wichtigsten architektonischen Wahrzeichen der Stadt",
             ogImage: "https://our-travels.info/foto/Ukraine/sumska/sumy-city/altanka/009.jpg"
         }
     }

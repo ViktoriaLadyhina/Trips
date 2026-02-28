@@ -2,7 +2,7 @@ const datas = [
     {
         id: "sumy_spaso_preobrazhensky",
         name: "Спасо-Преображенский собор",
-        type: ["cathedral"], top: "popular",
+        type: ["cathedral"], rating: "popular",
         path: "sumy_spaso_preobrazhensky",
         regionsPath: "sumska", districtPath: "city", cityPath: "sumy",
         fotoCard: "Ukraine/sumska/sumy-city/spaso-preobrazhensky/004.jpg",
@@ -55,7 +55,7 @@ const datas = [
     {
         id: "pokrovska_square_sumy",
         name: "Покровская площадь",
-        type: ["square"], top: "local",
+        type: ["square"], rating: "local",
         path: "pokrovska_square_sumy",
         countryPath: "ukraine", regionsPath: "sumska", districtPath: "city", cityPath: "sumy",
         fotoCard: "Ukraine/sumska/sumy-city/altanka/009.jpg",
@@ -103,7 +103,7 @@ const datas = [
     {
         id: "sumy_altanka",
         name: "Альтанка",
-        type: ["historical_building"], top: "popular",
+        type: ["historical_building"], rating: "popular",
         path: "sumy_altanka",
         countryPath: "ukraine", regionsPath: "sumska", districtPath: "city", cityPath: "sumy",
         hiddenFromList: true, showMore: true,
@@ -128,9 +128,9 @@ const datas = [
         coord: { lat: 50.9068, lng: 34.7992 },
         meta: {
             title: "Альтанка в Сумах",
-            description: "Выразительный силуэт формируют элегантные профилированные колонны, резные карнизные украшения, декоративные шпили на крыше и множество других деталей.",
-            ogTitle: "Павильон – визитная карточка Сум",
-            ogDescription: "Выразительный силуэт формируют элегантные профилированные колонны, резные карнизные украшения, декоративные шпили на крыше и множество других деталей.",
+            description: "Альтанка – беседка по праву считается одной из главных архитектурных достопримечательностей города",
+            ogTitle: "Альтанка – визитная карточка Сум",
+            ogDescription: "Альтанка – беседка по праву считается одной из главных архитектурных достопримечательностей города",
             ogImage: "https://our-travels.info/foto/Ukraine/sumska/sumy-city/altanka/009.jpg"
         }
     }

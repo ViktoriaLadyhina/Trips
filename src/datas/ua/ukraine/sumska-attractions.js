@@ -2,7 +2,7 @@ const datas = [
     {
         id: "sumy_spaso_preobrazhensky",
         name: "Спасо-Преображенський собор",
-        type: ["cathedral"], top: "popular",
+        type: ["cathedral"], rating: "popular",
         path: "sumy_spaso_preobrazhensky",
         regionsPath: "sumska", districtPath: "city", cityPath: "sumy",
         fotoCard: "Ukraine/sumska/sumy-city/spaso-preobrazhensky/004.jpg",
@@ -55,7 +55,7 @@ const datas = [
     {
         id: "pokrovska_square_sumy",
         name: "Покровська площа",
-        type: ["square"], top: "local",
+        type: ["square"], rating: "local",
         path: "pokrovska_square_sumy",
         countryPath: "ukraine", regionsPath: "sumska", districtPath: "city", cityPath: "sumy",
         fotoCard: "Ukraine/sumska/sumy-city/altanka/009.jpg",
@@ -103,7 +103,7 @@ const datas = [
     {
         id: "sumy_altanka",
         name: "Альтанка",
-        type: ["istorical_building"], top: "popular",
+        type: ["historical_building"], rating: "popular",
         path: "sumy_altanka",
         countryPath: "ukraine", regionsPath: "sumska", districtPath: "city", cityPath: "sumy",
         hiddenFromList: true, showMore: true,
@@ -113,7 +113,7 @@ const datas = [
         construction_period: "На початку XX століття – у період близько 1900–1905 років",
         architects: ["Матвій Щавелєєв "],
         founder: " М.І. Ліщинський",
-        short_description: "Альтанка в Сумах — восьмикутна дерев’яна бесідка з хрестоподібним дахом і високим гранованим куполом, збудована без цвяхів. Вона прикрашена витонченими профільованими колонами, різьбою карнизів та декоративними шпилями. Споруда зведена на місці колишньої нафтової свердловини і входить до складу міського парку на Покровській площі. Незважаючи на скромні розміри, альтанка є однією з головних архітектурних пам’яток міста.",
+        short_description: "Альтанка в Сумах – восьмикутна дерев’яна бесідка з хрестоподібним дахом і високим гранованим куполом, збудована без цвяхів. Вона прикрашена витонченими профільованими колонами, різьбою карнизів та декоративними шпилями. Споруда зведена на місці колишньої нафтової свердловини і входить до складу міського парку на Покровській площі. Незважаючи на скромні розміри, альтанка є однією з головних архітектурних пам’яток міста.",
         full_description: {
             title: "Опис та історія",
             items: [
@@ -127,10 +127,10 @@ const datas = [
         },
         coord: { lat: 50.9068, lng: 34.7992 },
         meta: {
-            title: "Альтанка у Сумах",
-            description: "Виразний силует споруди створюють витончені профільовані колонки, різьблене мереживо карнизів, декоративні шпилі та безліч інших деталей.",
-            ogTitle: "Альтанка - візітна картка Сум",
-            ogDescription: "Виразний силует споруди створюють витончені профільовані колонки, різьблене мереживо карнизів, декоративні шпилі та безліч інших деталей.",
+            title: "Альтанка в Сумах",
+            description: "Альтанка – бесідка по праву вважається однією з головних архітектурних пам’яток міста",
+            ogTitle: "Альтанка – візитна картка Сум",
+            ogDescription: "Альтанка – бесідка по праву вважається однією з головних архітектурних пам’яток міста",
             ogImage: "https://our-travels.info/foto/Ukraine/sumska/sumy-city/altanka/009.jpg"
         }
     }
