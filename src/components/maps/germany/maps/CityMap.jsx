@@ -42,7 +42,7 @@ const CityMap = ({ cityData, attractions }) => {
             >
               <div className="custom-popup-content">
                 {attr.meta.ogImage && <img src={attr.meta.ogImage} alt={attr.name} />}
-                <p>{attr.meta.description}</p>
+                <p>{attr.meta.title}</p>
               </div>
             </Tooltip>
           </Marker>
