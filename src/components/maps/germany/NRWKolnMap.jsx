@@ -42,7 +42,7 @@ const NRWKolnMap = ({ regions, subRegion }) => {
 
   // Функция клика по субрегиону
   const scrollToSubRegion = (reg) => {
-    const slug = slugify(reg.fullName);
+    const slug = slugify(reg.path);
     if (location.pathname.startsWith(districtPagePath)) {
       document.getElementById(`subregion-${slug}`)?.scrollIntoView({ behavior: "smooth" });
     } else {
@@ -102,32 +102,32 @@ const NRWKolnMap = ({ regions, subRegion }) => {
 
             const center = kolnDistrictCenters[loc.id] || { x: 0, y: 0, dx: 0, dy: 0 };
             return (
-<text
-  key={`${loc.id}-label`}
-  x={center.x + (center.dx || 0)}
-  y={center.y + (center.dy || 0)}
-  textAnchor="middle"
-  dominantBaseline="middle"
-  style={{ fontSize: "4px" }}
-  fill="#000"
-  pointerEvents="none"
->
-  {reg.fullName.includes("-")
-    ? reg.name.split("-").map((part, i) => (
-        <tspan
-          key={i}
-          x={center.x + (center.dx || 0)}
-          dy={i === 0 ? "0" : "1.2em"} // первая строка без смещения, остальные снизу
-        >
-          {i === 0 ? part.trim() + "-" : part.trim()}
-        </tspan>
-      ))
-    : (
-        <tspan x={center.x + (center.dx || 0)} dy="0">
-          {reg.name}
-        </tspan>
-      )}
-</text>
+              <text
+                key={`${loc.id}-label`}
+                x={center.x + (center.dx || 0)}
+                y={center.y + (center.dy || 0)}
+                textAnchor="middle"
+                dominantBaseline="middle"
+                style={{ fontSize: "4px" }}
+                fill="#000"
+                pointerEvents="none"
+              >
+                {reg.path.includes("-")
+                  ? reg.name.split("-").map((part, i) => (
+                    <tspan
+                      key={i}
+                      x={center.x + (center.dx || 0)}
+                      dy={i === 0 ? "0" : "1.2em"} // первая строка без смещения, остальные снизу
+                    >
+                      {i === 0 ? part.trim() + "-" : part.trim()}
+                    </tspan>
+                  ))
+                  : (
+                    <tspan x={center.x + (center.dx || 0)} dy="0">
+                      {reg.name}
+                    </tspan>
+                  )}
+              </text>
             );
           })}
 

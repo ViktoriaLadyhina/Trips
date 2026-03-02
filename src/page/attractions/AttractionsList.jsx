@@ -14,14 +14,14 @@ const NoAttractions = { ru: "Нет достопримечательностей
 
 const AttractionsList = () => {
     const { districtPath, cityPath } = useParams();
-    const { country, region, district, parentSubRegion, city, cityData, attractions, lang, error } = useCityFullData();
+    const { country, region, district, parentSubRegion, city, attractions, lang, error } = useCityFullData();
 
     const [filters, setFilters] = useState({
         type: 'all',
         unesco: 'all',
-
         sort: 'rating',
     });
+    
 
     useEffect(() => {
         const base = attractionsTitle[lang];
@@ -118,7 +118,7 @@ const AttractionsList = () => {
 
             <div className='attractions__title'>{attractionsTitle[lang]}</div>
 
-            <CityMap cityData={cityData} attractions={attractions} />
+            <CityMap city={city} attractions={attractions} />
 
             <AttractionsFilters lang={lang} filters={filters} setFilters={setFilters} />
 

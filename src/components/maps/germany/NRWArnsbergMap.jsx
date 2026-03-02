@@ -21,7 +21,7 @@ const arnsbergDistrictCenters = {
     ksw: { x: 35, y: 220, dx: 350, dy: 260 }, //Kreis Siegen-Wittgenstein
 };
 
-const NRWArnsbergMap = ({ regions }) => {
+const NRWArnsbergMap = ({ regions, subRegion }) => {
     const navigate = useNavigate();
     const location = useLocation();
     const [hoverRegion, setHoverRegion] = useState(null);
@@ -30,9 +30,7 @@ const NRWArnsbergMap = ({ regions }) => {
     const districtPagePath = "/germany/nrw/arnsberg";
 
     // 1️⃣ Берём субрегионы Köln
-    const kolnSubRegions = useMemo(() => {
-        return regions?.discriptRegions?.[0]?.items?.find(r => r.path === "arnsberg")?.subRegion || [];
-    }, [regions]);
+    const kolnSubRegions = useMemo(() => subRegion || [], [subRegion]);
 
     // 2️⃣ Берём города
     const freeCities = useMemo(() => {
@@ -43,7 +41,7 @@ const NRWArnsbergMap = ({ regions }) => {
 
     // Функция клика по субрегиону
     const scrollToSubRegion = (reg) => {
-        const slug = slugify(reg.fullName);
+        const slug = slugify(reg.path);
         if (location.pathname.startsWith(districtPagePath)) {
             document.getElementById(`subregion-${slug}`)?.scrollIntoView({ behavior: "smooth" });
         } else {
@@ -62,7 +60,7 @@ const NRWArnsbergMap = ({ regions }) => {
                 <g className="map-shape">
                     {/* 1️⃣ Субрегионы */}
                     {kolnSubRegions.map((reg) => {
-                        const loc = districts.find(d => d.name === reg.fullName);
+                        const loc = districts.find(d => d.name === reg.path);
                         if (!loc) return null;
 
                         return (
@@ -98,7 +96,7 @@ const NRWArnsbergMap = ({ regions }) => {
 
                     {/* 3️⃣ Подписи субрегионов */}
                     {kolnSubRegions.map((reg) => {
-                        const loc = districts.find(d => d.name === reg.fullName);
+                        const loc = districts.find(d => d.name === reg.path);
                         if (!loc) return null;
 
                         const center = arnsbergDistrictCenters[loc.id] || { x: 0, y: 0, dx: 0, dy: 0 };
@@ -113,7 +111,7 @@ const NRWArnsbergMap = ({ regions }) => {
                                 pointerEvents="none"
                             >
                                 
-                                {reg.fullName.includes("-")
+                                {reg.path.includes("-")
                                     ? reg.name.split("-").map((part, i) => (
                                         <tspan
                                             key={i}

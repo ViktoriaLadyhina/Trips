@@ -2,7 +2,6 @@ const datas = [
     {
         id: 1_1,
         name: "Зиген-Виттгенштайн",
-        fullName: "Siegen-Wittgenstein",
         path: "siegen_Wittgenstein",
         districtPath: "arnsberg",
         center: [{ bold: "Центр района:", text: " город Зиген." }],
@@ -33,7 +32,6 @@ const datas = [
     {
         id: 1_2,
         name: "Зост",
-        fullName: "Soest",
         path: "soest",
         districtPath: "arnsberg",
         center: [ { bold: "Центр района:", text: " город Зост." }],
@@ -66,7 +64,6 @@ const datas = [
     {
         id: 1_3,
         name: "Меркиш",
-        fullName: "Märkischer",
         districtPath: "arnsberg",
         path: "merkischer",
         center: [ { bold: "Центр района:", text: " город Люденшайд." } ],
@@ -100,7 +97,6 @@ const datas = [
     {
         id: 1_4,
         name: "Ольпе",
-        fullName: "Olpe",
         path: "olpe",
         districtPath: "arnsberg",
         center: [ { bold: "Центр района:", text: " город Ольпе." } ],
@@ -126,7 +122,6 @@ const datas = [
     {
         id: 1_5,
         name: "Унна",
-        fullName: "Unna",
         path: "unna",
         districtPath: "arnsberg",
         center: [ { bold: "Центр района:", text: " город Унна." } ],
@@ -164,7 +159,6 @@ const datas = [
     {
         id: 1_6,
         name: "Хохзауэрланд",
-        fullName: "Hochsauerland",
         districtPath: "arnsberg",
         path: "hochsauerland",
         center: [
@@ -213,7 +207,6 @@ const datas = [
     {
         id: 1_7,
         name: "Эннепе-Рур",
-        fullName: "Ennepe-Ruhr",
         path: "ennepe_ruhr",
         districtPath: "arnsberg",
         center: [
@@ -259,7 +252,6 @@ const datas = [
     {
         id: 4_1,
         name: "Аахен",
-        fullName: "Aachen",
         path: "aachen",
         districtPath: "koln",
         center: [{ bold: "Центр района:", text: " город Аахен." }],
@@ -288,7 +280,6 @@ const datas = [
     {
         id: 4_2,
         name: "Дюрен",
-        fullName: "Düren",
         path: "duren",
         districtPath: "koln",
         center: [
@@ -340,7 +331,6 @@ const datas = [
     {
         id: 4_3,
         name: "Обербергиш",
-        fullName: "Oberbergischer",
         path: "oberbergischer",
         districtPath: "koln",
         center: [
@@ -390,7 +380,6 @@ const datas = [
     {
         id: 4_4,
         name: "Ойскирхен",
-        fullName: "Euskirchen",
         path: "euskirchen",
         districtPath: "koln",
         center: [
@@ -438,7 +427,6 @@ const datas = [
     {
         id: 4_5,
         name: "Рейн-Зиг",
-        fullName: "Rhein-Sieg",
         path: "rhein_sieg",
         districtPath: "koln",
         center: [{ bold: "Центр района:", text: " город Зигбург (Siegburg)." }],
@@ -476,7 +464,6 @@ const datas = [
     {
         id: 4_6,
         name: "Рейн-Эрфт",
-        fullName: "Rhein-Erft",
         path: "rhein_erft",
         districtPath: "koln",
         center: [{ bold: "Центр района:", text: " город Бергхайм (Bergheim)." }],
@@ -503,7 +490,6 @@ const datas = [
     {
         id: 4_7,
         name: "Рейниш-Бергиш",
-        fullName: "Rheinisch-Bergischer",
         path: "rheinisch_bergischer",
         districtPath: "koln",
         center: [
@@ -548,7 +534,6 @@ const datas = [
     {
         id: 4_8,
         name: "Хайнсберг",
-        fullName: "Heinsberg",
         path: "heinsberg",
         districtPath: "koln",
         center: [

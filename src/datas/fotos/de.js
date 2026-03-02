@@ -2,7 +2,7 @@ export const Fotos = {
   country: "Germany",
   gallery: [
     { path: "Germany/Gerb.gif", title: { ru: "Герб Германии", ua: "Герб Німеччини", de: "Deutchland-Wappen" } },
-    { path: "Germany/Flag.svg.png", title: { ru: "Флаг Германии", ua: "Прапор Німеччини", de: "Deutchland-Flagge" } },
+    { path: "Germany/flag.jpg", title: { ru: "Флаг Германии", ua: "Прапор Німеччини", de: "Deutchland-Flagge" } },
     { path: "Germany/zamok1.jpg", title: { ru: "Замок 1", ua: "Замок 1", de: "Burg 1" } },
     { path: "Germany/parahod.gif", title: { ru: "Парохід", ua: "Парохід", de: "Steamship" } },
     { path: "Germany/zamok3.jpg", title: { ru: "Замок 2", ua: "Замок 2", de: "Burg 2" } }

@@ -11,12 +11,12 @@ L.Icon.Default.mergeOptions({
   shadowUrl: 'https://unpkg.com/leaflet@1.9.4/dist/images/marker-shadow.png',
 });
 
-const CityMap = ({ cityData, attractions }) => {
+const CityMap = ({ city, attractions }) => {
   const navigate = useNavigate();
-  if (!cityData) return null;
+  if (!city) return null;
 
   // Центр карты: либо координаты города, либо первая достопримечательность
-  const mapCenter = [cityData.coord.lat, cityData.coord.lng];
+  const mapCenter = [city.coord.lat, city.coord.lng];
 
   return (
     <MapContainer center={mapCenter} zoom={13} style={{ height: "450px", width: "100%", marginBottom: "20px" }}>
