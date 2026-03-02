@@ -4,7 +4,7 @@ const datas = [
         id: 1,
         name: 'Кёльн',
         path: "koln",
-        district: "city",
+        countryPath: "germany", regionsPath: "nrw", districtPath: "city",
         desc: {
             general: [
                 { text: 'Кёльн – крупнейший город земли Северный Рейн-Вестфалия и четвёртый по численности город Германии.' },
@@ -99,7 +99,7 @@ const datas = [
         id: 6,
         name: 'Моншау',
         path: "monschau",
-        district: "koln",
+        countryPath: "germany", regionsPath: "nrw", districtPath: "koln", subRegionPath: "aachen",
         desc: {
             general: [{ text: 'Моншау (нем. Monschau) расположен в западной части Германии, в регионе Айфель земли Северный Рейн-Вестфалия, недалеко от границы с Бельгией. Город известен своей исторической архитектурой, уютными улочками с фахверковыми домами и живописными видами на реку Рур.' },],
             population: [{ bold: 'Население', text: ' города составляет около 13 000 человек (по состоянию на 31 декабря 2024 года).' }],
@@ -163,7 +163,7 @@ const datas = [
         id: 2,
         name: 'Брюль',
         path: "bruhl",
-        district: "koln",
+        countryPath: "germany", regionsPath: "nrw", districtPath: "koln", subRegionPath: "rhein_erft",
         desc: {
             general: [
                 { text: 'Город в земле Северный Рейн-Вестфалия' }
@@ -224,7 +224,7 @@ const datas = [
         id: 3,
         name: 'Фрехен',
         path: "frechen",
-        district: "koln",
+        countryPath: "germany", regionsPath: "nrw", districtPath: "koln", subRegionPath: "rhein_erft",
         desc: {
             general: [
                 { text: 'Фрехен – город в земле Северный Рейн-Вестфалия, входящий в район Рейн-Эрфт и расположенный всего в 10 км к западу от Кёльна.' },
@@ -309,6 +309,7 @@ const datas = [
         id: 4,
         name: 'Кёнигсвинтер',
         path: "konigswinter",
+        countryPath: "germany", regionsPath: "nrw", districtPath: "koln", subRegionPath: "rhein_sieg",
         district: "rhein-sieg-kreis",
         desc: {
             general: [
@@ -391,7 +392,7 @@ const datas = [
         id: 5,
         name: 'Люденшайд',
         path: "luedenscheid",
-        district: "arnsberg",
+        countryPath: "germany", regionsPath: "nrw", districtPath: "arnsberg", subRegionPath: "merkischer",
         desc: {
             general: [
                 { text: 'Люденшайд (нем. Lüdenscheid) расположен в северо-западной части Зауэрланда в земле Северный Рейн-Вестфалия. Административно город входит в состав региона Арнсберг и подчинён округу Меркиш.' },

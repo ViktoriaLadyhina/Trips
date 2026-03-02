@@ -2,165 +2,184 @@ import { useState, useEffect } from "react";
 import { useParams } from "react-router";
 import { useSelector } from "react-redux";
 
-import { regions as ruRegions } from "../datas/ru";
-import { regions as uaRegions } from "../datas/ua";
-import { regions as deRegions } from "../datas/de";
-
+/**
+ * Хук для загрузки полной информации о городе/районе/регионе/стране.
+ * Структура данных:
+ * - Все страны в одном файле Country.js
+ * - Все земли (например Германия) в land.js
+ * - На каждом уровне объекты имеют уникальный path
+ */
 function useCityFullData() {
-  const { countryPath, regionsPath, districtPath, cityPath } = useParams();
-  const { lang } = useSelector((state) => state.language);
+  // Параметры из URL
+  const { countryPath, regionPath, districtPath, cityPath, attractionsPath } = useParams();
 
-  const [cityData, setCityData] = useState(null);
-  const [error, setError] = useState(null);
+  // Язык из Redux
+  const { lang } = useSelector(state => state.language);
 
+  // Состояния для разных уровней
   const [country, setCountry] = useState(null);
   const [region, setRegion] = useState(null);
   const [district, setDistrict] = useState(null);
+  const [subRegion, setsubRegion] = useState(null);
   const [parentSubRegion, setParentSubRegion] = useState(null);
-  const [attractions, setAttractions] = useState([]);
   const [city, setCity] = useState(null);
-
+  const [attractions, setAttractions] = useState([]);
   const [events, setEvents] = useState([]);
+  const [error, setError] = useState(null);
 
   useEffect(() => {
-    if (!lang) return; 
+    if (!lang) return; // Если язык не выбран, не делаем ничего
 
-    const allRegions = lang === "ua" ? uaRegions : lang === "de" ? deRegions : ruRegions;
+    const loadData = async () => {
+      try {
+        // =============================
+        // 1️⃣ Загружаем все страны
+        // =============================
+        // import.meta.glob ищет все файлы Country.js в папках langs (ua, de, ru и т.д.)
+        const modulesCountry = import.meta.glob("../datas/*/Country.js");
 
-    const foundCountry = allRegions[countryPath];
-    if (!foundCountry) {
-      setError("Country not found");
-      return;
-    }
-    foundCountry.path = countryPath;
+        // Находим файл для текущего языка
+        const keyCountry = Object.keys(modulesCountry).find(path =>
+          path.includes(`${lang}/Country.js`)
+        );
+        if (!keyCountry) throw new Error("Country data file not found");
 
-    const foundRegion = foundCountry[regionsPath];
-    if (!foundRegion) {
-      setError("Region not found");
-      return;
-    }
+        // Загружаем модуль страны
+        const countryModule = await modulesCountry[keyCountry]();
+        const countries = countryModule.datas;
 
-    let foundDistrict = null;
-    let subRegions = [];
-    let foundCity = null;
-    let foundParentSubRegion = null;
+        // Находим страну по path
+        const foundCountry = countries.find(c => c.path === countryPath);
+        if (!foundCountry) throw new Error("Country not found");
+        setCountry(foundCountry);
 
-    // --- 1. Свободный город ---
-    if (districtPath === "city" && cityPath) {
-      const freeCities = foundRegion.discriptRegions?.[1]?.items || [];
-      foundCity = freeCities.find(c => c.path === cityPath);
-    } 
-    // --- 2. Город через дистрикт ---
-    else {
-      const districtItems = foundRegion.discriptRegions?.[0]?.items || [];
-      if (districtPath) {
-        foundDistrict = districtItems.find(d => d.path === districtPath);
+        // =============================
+        // 2️⃣ Загружаем регион / землю
+        // =============================
+        const modulesLand = import.meta.glob("../datas/*/*/lands.js");
 
-        if (!foundDistrict) {
-          setError("District not found");
-          return;
+        const keyLand = Object.keys(modulesLand).find(path =>
+          path.includes(`${lang}/${countryPath}/lands.js`)
+        );
+        if (!keyLand) throw new Error("Lands data file not found");
+
+        const landModule = await modulesLand[keyLand]();
+
+        const lands = landModule.default || [];
+        const foundRegion = lands.find(l => l.path === regionPath);
+        if (!foundRegion) throw new Error("Region not found");
+        setRegion(foundRegion);
+
+        // =============================
+        // 3️⃣ Находим district (если есть)
+        // =============================
+        let foundDistrict = null;
+
+        if (districtPath) {
+          const modulesDistricts = import.meta.glob("../datas/*/*/*-districts.js");
+          const keyDistricts = Object.keys(modulesDistricts).find(path =>
+            path.includes(`${lang}/${countryPath}/${regionPath}-districts.js`)
+          );
+
+          if (!keyDistricts) throw new Error("District data file not found");
+
+          const districtModule = await modulesDistricts[keyDistricts]();
+          const districts = districtModule.default || [];
+
+          foundDistrict = districts.find(d => d.path === districtPath);
+
+          if (!foundDistrict) throw new Error("District not found");
         }
+        setDistrict(foundDistrict);
 
-        if (foundDistrict?.subRegion?.length > 0 && cityPath) {
-          subRegions = foundDistrict.subRegion;
-          foundCity = subRegions.flatMap(s => s.communities || []).find(c => c.path === cityPath);
-          foundParentSubRegion = subRegions.find(sub => sub.communities.some(c => c.path === cityPath));
-        }
-      }
+        // =============================
+        // 3️⃣ Находим sub-regions (если есть)
+        // =============================
+        let subRegions = [];
 
-      // Если districtPath нет, но есть cityPath (город без района)
-      if (!districtPath && cityPath) {
-        const freeCities = foundRegion.discriptRegions?.[1]?.items || [];
-        foundCity = freeCities.find(c => c.path === cityPath);
-      }
-    }
+        if (foundDistrict) {
+          const modulesSubRegions = import.meta.glob("../datas/*/*/*-subRegions.js");
+          const keySubRegions = Object.keys(modulesSubRegions).find(path =>
+            path.includes(`${lang}/${countryPath}/${regionPath}-subRegions.js`)
+          );
 
-    // Загружаем cityData только если есть city
-    if (foundCity) {
-      const modules = import.meta.glob("../datas/*/*/*-city.js");
-      const key = Object.keys(modules).find(path =>
-        path.toLowerCase().endsWith(`${lang}/${countryPath}/${regionsPath}-city.js`)
-      );
+          if (keySubRegions) {
+            const subRegionModule = await modulesSubRegions[keySubRegions]();
+            const allSubRegions = subRegionModule.default || [];
 
-      if (key) {
-        modules[key]().then(module => {
-          const cityFull = module.default.find(c => c.path === foundCity.path);
-          if (cityFull) setCityData(cityFull);
-        }).catch(() => setError("City data file not found"));
-      }
-    }
-
-    // Загружаем достопримечательности
-    const modulesAttr = import.meta.glob("../datas/*/*/*-attractions.js");
-    const keyAttr = Object.keys(modulesAttr).find(path =>
-      path.toLowerCase().includes(`${lang}/${countryPath}/${regionsPath}-attractions.js`)
-    );
-    if (keyAttr) {
-      modulesAttr[keyAttr]()
-        .then(module => {
-          let filteredAttractions = [];
-
-          if (cityPath) {
-            filteredAttractions = module.default.filter(a => a.cityPath === cityPath);
-          } else if (districtPath) {
-            filteredAttractions = module.default.filter(a => a.districtPath === districtPath);
-          } else if (regionsPath) {
-            filteredAttractions = module.default.filter(a => a.regionsPath === regionsPath);
+            subRegions = allSubRegions.filter(
+              sr => sr.districtPath === foundDistrict.path
+            );
           }
+        }
 
-          setAttractions(filteredAttractions);
-        })
-        .catch(() => console.warn("Attractions data file not found"));
-    }
+        setsubRegion(subRegions);
 
-  // --- мероприятия ---
-const modulesEvents = import.meta.glob("../datas/*/*/*-events.js");
-const keyEvents = Object.keys(modulesEvents).find(path =>
-  path.toLowerCase().includes(`${lang}/${countryPath}/${regionsPath}-events.js`)
-);
+        // =============================
+        // 4️⃣ Находим город (если есть)
+        // =============================
+        let foundCity = null;
 
-if (keyEvents) {
-  modulesEvents[keyEvents]()
-    .then(module => {
+        if (cityPath) {
+          try {
+            const cityModule = await import(`../datas/${lang}/${countryPath}/${regionPath}-city.js`);
+            const cities = cityModule.default || [];
 
-      let filteredEvents = [];
+            foundCity = cities.find(c => c.path === cityPath && c.districtPath === districtPath);
 
-      if (cityPath) {
-        filteredEvents = module.default.filter(e => e.cities?.includes(cityPath));
-      } else if (districtPath) {
-        filteredEvents = module.default.filter(e => e.districtPath === districtPath);
-      } else if (regionsPath) {
-        filteredEvents = module.default.filter(e => e.regionsPath === regionsPath);
+            if (!foundCity) {
+              console.warn(`City not found: ${cityPath} в district ${districtPath}`);
+            }
+          } catch (err) {
+            console.error(`Ошибка при загрузке городов: ${err.message}`);
+          }
+        }
+        const fountparentSubRegion = subRegions.find(sr => sr.path === foundCity?.subRegionPath) || null;
+
+        setCity(foundCity);
+        setParentSubRegion(fountparentSubRegion)
+
+        // =============================
+        // 6️⃣ Загружаем достопримечательности
+        // =============================
+        let allAttractions = [];
+
+        try {
+          const attrModule = await import(`../datas/${lang}/${countryPath}/${regionPath}-attractions.js`);
+          allAttractions = attrModule.default || [];
+        } catch (err) {
+          console.error(`Ошибка при загрузке достопримечательностей: ${err.message}`);
+        }
+
+        setAttractions(allAttractions);
+
+        // =============================
+        // 7️⃣ Загружаем события
+        // =============================
+        let allEvents = [];
+
+        try {
+          const eventsModule = await import(`../datas/${lang}/${countryPath}/${regionPath}-events.js`);
+          allEvents = eventsModule.default || [];
+        } catch (err) {
+          console.error(`Ошибка при загрузке мероприятий: ${err.message}`);
+        }
+
+        setEvents(allEvents);
+
+// Всё прошло успешно
+        setError(null); 
+      } catch (err) {
+        console.error(err);
+        setError(err.message);
       }
+    };
 
-      setEvents(filteredEvents);
-    })
-    .catch(() => console.warn("Events data file not found"));
-}
+    loadData();
+  }, [lang, countryPath, regionPath, districtPath, cityPath, attractionsPath]);
 
-    setCountry(foundCountry);
-    setRegion(foundRegion);
-    setDistrict(foundDistrict);
-    setParentSubRegion(foundParentSubRegion);
-    setCity(foundCity);
-    setError(null);
-
-  }, [lang, countryPath, regionsPath, districtPath, cityPath]);
-
-
-
-  return {
-    lang,
-    country,
-    region,
-    district,
-    parentSubRegion,
-    city,
-    cityData,
-    attractions,
-    events, 
-    error
-  };
+  // Возвращаем все данные, чтобы компонент мог их использовать
+  return { lang, country, region, district, subRegion, parentSubRegion, city, attractions, events, error };
 }
 
 export default useCityFullData;

@@ -91,7 +91,7 @@ const datas = {
                     name: 'Майен-Кобленц',
                     title: "Район Майен‑Кобленц",
                     hasInfo: true,
-                    path: "mayen-koblenz",
+                    path: "mayen_koblenz",
                     desc: {
                         history: [
                             { text: 'Район Майен‑Кобленц (Landkreis Mayen‑Koblenz) – административный район (Kreis) в Германии, входит в землю Рейнланд‑Пфальц. Он расположен в северной части земли вдоль средних течений рек Рейн и Мозель.' },
