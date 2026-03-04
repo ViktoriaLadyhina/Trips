@@ -1669,11 +1669,12 @@ const datas = [
         type: ["historical_area"], rating: "popular",
         path: "historic_center_monschau",
         countryPath: "germany", regionsPath: "nrw", districtPath: "koln", cityPath: "monschau",
-        subObjects: ["rotes_haus_monschau"],
+        subObjects: ["rotes_haus_monschau", "senfmuehle_monschau"],
         short_description_subObjects: {
             text: "In der Altstadt von Monschau befindet sich folgende Sehenswürdigkeit:",
             items: [
-                { bold: "Rotes Haus", text: "– ein herausragendes historisches Hausmuseum im Zentrum der Altstadt von Monschau" }
+                { bold: "Rotes Haus", text: "– ein herausragendes historisches Hausmuseum im Zentrum der Altstadt von Monschau" },
+                { bold: "Historische Senfmühle", text: "– historischer Senfmühle in der Altstadt von Monschau mit aktiver Produktion und Senfverkostung" }
             ]
         },
         fotoCard: "Germany/nrw/koln/Aachen/monschau/001.jpg",
@@ -1719,9 +1720,7 @@ const datas = [
         hiddenFromList: true, showMore: true,
         fotoCard: "Germany/nrw/koln/Aachen/monschau/rotes_haus/001.jpg",
         location: "Monschau, Deutschland",
-        officialSite: [
-            { bold: "Offizielle Website", link: "https://rotes-haus-monschau.de" }
-        ],
+        officialSite: [{ bold: "Offizielle Website", link: "https://rotes-haus-monschau.de" }],
         short_description: "Das Rote Haus – ein herausragendes historisches Hausmuseum im Zentrum der Altstadt von Monschau. Es wurde um 1760 vom wohlhabenden Tuchmacher und Textilhändler Johann Heinrich Scheibler erbaut und vereint Wohnräume und Arbeitsbereiche unter einem Dach. Es veranschaulicht das Leben und den Handel während der Blütezeit der Textilproduktion in der Region. ",
         full_description: {
             title: "Beschreibung und Geschichte",
@@ -1769,6 +1768,64 @@ const datas = [
             ogImage: "https://our-travels.info/foto/Germany/nrw/koln/Aachen/monschau/rotes_haus/001.jpg"
         }
     },
+    {
+    id: "senfmuehle_monschau",
+    name: "Historische Senfmühle",
+    type: ["museum"], rating: "local",
+    path: "senfmuehle_monschau",
+    countryPath: "germany", regionsPath: "nrw", districtPath: "koln", cityPath: "monschau",
+    hiddenFromList: true, showMore: true,
+    fotoCard: "Germany/nrw/koln/Aachen/monschau/senfmuehle/001.jpg",
+    location: "Monschau, Deutschland",
+    officialSite: [{ bold: "Offizielle Webseite", link: "http://www.senfmuehle.de/start/ " }],
+    short_description: "Die Historische Senfmühle in Monschau ist ein Familienunternehmen mit über 100-jähriger Geschichte, in dem traditionelle deutsche Senfsaucen auf historischen mechanischen Anlagen mit Wasserantrieb hergestellt werden. Besucher können den Produktionsprozess beobachten, verschiedene Sorten probieren und die Produkte im Laden vor Ort erwerben.",
+    full_description: {
+        title: "Beschreibung und Geschichte",
+        items: [
+            { bold: "Historische Senfmühle Monschau", text: "– eine der authentischsten und beliebtesten Sehenswürdigkeiten der Altstadt von Monschau. Die Mühle liegt zwischen malerischen Fachwerkhäusern in der Laufenstraße, im Herzen der Altstadt, und ist ein Pflichtbesuch für Touristen, die sich für die traditionelle deutsche Küche und Kultur der Region interessieren. Hier kann man den einzigartigen Herstellungsprozess von Senf sehen, der Methoden aus dem frühen 20. Jahrhundert bewahrt." },
+            { bold: "Geschichte.", text: "Die Geschichte der Mühle reicht über 100 Jahre zurück. Ursprünglich diente der Komplex als Teil der Textilindustrie der Region. Mitte des 20. Jahrhunderts, 1952, wurde das Unternehmen von der Familie Breuer übernommen, die hier begann, traditionellen Senf herzustellen. Seitdem ist die Produktion ein Familienbetrieb, und die Rezepte sowie die Methoden der Senfverarbeitung werden von Generation zu Generation weitergegeben." },
+            { bold: "Ausstattung und Produktion.", text: "In der Mühle wird das originale Wasserantriebs-Equipment verwendet, das seit der Gründung erhalten geblieben ist. Dies macht den Senfherstellungsprozess nicht nur einzigartig, sondern verwandelt ihn auch in eine anschauliche historische Ausstellung. Besucher können beobachten, wie die Senfkörner zerkleinert und zu fertigem Produkt verarbeitet werden, sowie verschiedene Sorten probieren, von klassischen bis zu aromatisierten Varianten mit Feige, Honig oder Riesling." },
+            { bold: "Laden und Verkostung.", text: "Heute vereint die Mühle Museum, Produktionsbetrieb und Laden. Die Gäste können nicht nur den Herstellungsprozess beobachten, sondern auch Produkte vor Ort erwerben. Besonderes Augenmerk liegt auf Qualität und Authentizität: Jede Senfcharge wird von Hand nach traditioneller Technik hergestellt, wodurch Geschmack und Aroma einzigartig bleiben." },
+            { bold: "Bedeutung für die Stadt.", text: "Die Historische Senfmühle ist ein Symbol des kulturellen Erbes von Monschau. Sie zieht Touristen durch ihre Authentizität an und ermöglicht es, in die Atmosphäre der Altstadt einzutauchen, regionale Traditionen kennenzulernen und zu sehen, wie Geschichte Teil der modernen Gastronomie sein kann." }
+        ]
+    },
+    tickets_and_entry: {
+        title: "Praktische Informationen",
+        items: [
+            { bold: "Adresse:", text: "Laufenstraße 116–124, 52156 Monschau (NRW, Deutschland)", link: "https://goo.gl/maps/XYZ123" },
+            { bold: "Öffnungszeiten: ", text: "täglich ungefähr 08:30-18:00, an Wochenenden etwas kürzer; <br>Führungen nach Vereinbarung oder in der Saison nach Plan möglich." }
+        ]
+    },
+    sub_objects: {
+        title: "Ausstellungen",
+        items: [
+            { bold: "Produktionsprozess: ", text: "Besucher können beobachten, wie die Senfkörner zerkleinert und mit Hilfe des originalen Equipments zu fertigem Produkt verarbeitet werden." },
+            { bold: "Sortenausstellung:", text: "Über 20 Senfsorten – von klassischen bis zu aromatisierten Varianten (Honig, Mohn, Riesling, Feige, Curry etc.)." },
+            { bold: "Boutique-Laden:", text: "Vor Ort können Produkte als Souvenir oder Geschenk erworben werden." }
+        ]
+    },
+    interestingFacts: {
+        title: "Interessante Fakten",
+        items: [
+            { bold: "Das Wasserrad funktioniert noch", text: "– die Mühle nutzt den originalen Antrieb aus dem Fluss, der alle Mechanismen zur Zerkleinerung der Senfkörner in Bewegung setzt." },
+            { bold: "Familiäre Tradition", text: "– die Senfproduktion befindet sich seit 1952 im Besitz der Familie Breuer, die Rezepte werden von Generation zu Generation weitergegeben." },
+            { bold: "Über 20 Senfsorten", text: "– vor Ort kann man klassische, scharfe, süße und aromatisierte Varianten (Feige, Riesling, Honig, Curry) probieren." },
+            { bold: "Live-Demonstration der Produktion", text: "– Touristen können den gesamten Prozess vom Samen bis zum fertigen Produkt beobachten, was den Besuch interaktiv und lehrreich macht." },
+            { bold: "Senf als Geschenk", text: "– der Laden der Mühle bietet Souvenir-Sets an, was den Ort bei Touristen beliebt macht, die lokale Geschenke suchen." },
+            { bold: "Einzigartige Kombination aus Museum und aktiver Produktion", text: "– solche lebendigen 'Fabrikmuseen' sind in Deutschland selten, besonders in kleinen Städten wie Monschau." }
+        ]
+    },
+    construction_period: "Das Alter der Fabrik beträgt über 100 Jahre, und die Familienproduktion von Senf besteht seit Anfang des 20. Jahrhunderts (seit den 1950er Jahren unter der Leitung der Familie Breuer).",
+    founder: "Historisch entwickelte sich das Objekt als Produktionskomplex; die Senfproduktion erhielt neues Leben mit der Übernahme in Familienbesitz der Familie Breuer im Jahr 1952.",
+    coord: { lat: 50.56250, lng: 6.23828 },
+    meta: {
+        title: "Historische Senfmühle Monschau – Museum und Senfverkostung",
+        description: "Besuchen Sie die Senfmühle in Monschau mit über 100-jähriger Geschichte. Beobachten Sie die Herstellung, probieren Sie über 20 Sorten und kaufen Sie Produkte vor Ort.",
+        ogTitle: "Historische Senfmühle – traditionelles deutsches Senfparadies",
+        ogDescription: "Erfahren Sie, wie im Herzen von Monschau legendärer deutscher Senf nach alten Rezepten hergestellt wird! Mehr als 20 Geschmacksrichtungen, Live-Herstellung und ein gemütlicher Laden direkt im historischen Zentrum.",
+        ogImage: "https://our-travels.info/foto/Germany/nrw/koln/Aachen/monschau/senfmuehle/001.jpg"
+    }
+},
     {
         id: "burg_monschau",
         name: "Burg Monschau",

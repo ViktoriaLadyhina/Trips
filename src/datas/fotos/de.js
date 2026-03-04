@@ -357,6 +357,10 @@ export const Fotos = {
         { path: "Germany/nrw/koln/Aachen/monschau/rotes_haus/001.jpg", title: { ru: "Красный дом, 2024", ua: "Червоний будинок, 2024", de: "Rotes Haus, 2024" } },
         { path: "Germany/nrw/koln/Aachen/monschau/rotes_haus/002.jpg", title: { ru: "Красный дом (фото взято с интернета)", ua: "Червоний будинок (фото взято з Інтернету)", de: "Rotes Haus (Foto aus dem Internet)" } },
       ],
+      senfmuehle_monschau: [
+        { path: "Germany/nrw/koln/Aachen/monschau/senfmuehle/001.jpg", title: { ru: "Историческая горчичная мельница (фото взято с интернета)", ua: "Історичний гірчичний млин (фото взято з Інтернету)", de: "Historische Senfmühle (Foto aus dem Internet)" } },
+        { path: "Germany/nrw/koln/Aachen/monschau/senfmuehle/002.jpg", title: { ru: "Историческая горчичная мельница, 2025", ua: "Історичний гірчичний млин, 2025", de: "Historische Senfmühle, 2025" } },
+      ]
     },
 
 

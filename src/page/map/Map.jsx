@@ -86,6 +86,7 @@ const t = {
     historic_center_monschau: { ru: 'Старый город Моншау', de: 'Altstadt Monschau', ua: 'Старе місто Моншау' },
     burg_monschau: { ru: 'Замок Моншау', de: 'Burg Monschau', ua: 'Замок Моншау' },
     rotes_haus_monschau: { ru: 'Красный дом', de: 'Rotes Haus', ua: 'Червоний будинок' },
+    senfmuehle_monschau: { ru: 'Историческая горчичная мельница', de: 'Historische Senfmühle', ua: 'Історичний гірчичний млин' },
 
     // Rhein-Erft-Kreis
     // Brühl
@@ -265,6 +266,7 @@ const Map = () => {
                               <li><Link to="/germany/nrw/koln/monschau/attractions/historic_center_monschau">{t.attractions.historic_center_monschau[lang]}</Link>
                                 <ul>
                                   <li><Link to="/germany/nrw/koln/monschau/attractions/rotes_haus_monschau">{t.attractions.rotes_haus_monschau[lang]}</Link></li>
+                                  <li><Link to="/germany/nrw/koln/monschau/attractions/senfmuehle_monschau">{t.attractions.senfmuehle_monschau[lang]}</Link></li>
                                 </ul>
                               </li>
                               <li><Link to="/germany/nrw/koln/monschau/attractions/burg_monschau">{t.attractions.burg_monschau[lang]}</Link></li>
