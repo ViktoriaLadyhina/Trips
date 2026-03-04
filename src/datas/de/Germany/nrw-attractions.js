@@ -9,7 +9,7 @@ const datas = [
         countryPath: "germany", regionsPath: "nrw", districtPath: "city", cityPath: "koln",
         fotoCard: "Germany/nrw/koln/koln-city/altstadt/005.jpg",
         location: "Köln, Deutschland",
-        subObjects: ["cologne_cathedral", "rathaus_koln", "guerzenich_koln", "miqua", "wallraf_richartz_museum", "roemisch_germanisches_museum", "farina_duftmuseum", "museum_ludwig", "stadtmuseum_koln", "dufthaus_4711_koln", "gross_st_martin_koln"],
+        subObjects: ["cologne_cathedral", "rathaus_koln", "guerzenich_koln", "miqua", "wallraf_richartz_museum", "roemisch_germanisches_museum", "farina_duftmuseum", "museum_ludwig", "stadtmuseum_koln", "dufthaus_4711_koln", "gross_st_martin_koln", "st_maria_himmelfahrt_koln"],
         short_description_subObjects: {
             text: "In der Altstadt von Köln befinden sich folgende Sehenswürdigkeiten:",
             items: [
@@ -17,6 +17,7 @@ const datas = [
                 { bold: "Dufthaus 4711", text: "– historisches Gebäude in der Fußgängerzone um die Hohe Straße und Schildergasse." },
                 { bold: "Duftmuseum im Farina-Haus", text: "– Museum für Düfte und Parfum im historischen Viertel beim Rathaus." },
                 { bold: "Groß St. Martin", text: "– eine der bekanntesten romanischen Kirchen Kölns mit einem massiven Trikonchen-Turm, der über dem Rheinufer emporragt. Symbol der Silhouette der Altstadt." },
+                { bold: "St. Mariä Himmelfahrt", text: "– die wichtigste Barockkirche Kölns aus dem 17. Jahrhundert, eine ehemalige Jesuitenkirche in der Nähe des Hauptbahnhofs und des Kölner Doms."},
                 { bold: "Gürzenich", text: "– historisches Zunfthaus und Saal in der Nähe des Kölner Doms." },
                 { bold: "Kölner Rathaus", text: "– historisches Stadthaus im Zentrum der Altstadt." },
                 { bold: "Kölnisches Stadtmuseum", text: "– Museum für Stadtgeschichte im Zentrum (Zeughaus)." },
@@ -224,6 +225,52 @@ const datas = [
             ogTitle: "Groß St. Martin – Symbol der romanischen Kirchen Kölns",
             ogDescription: "Erfahren Sie die Geschichte einer der markantesten Kirchen Kölns mit mächtigem Turm und mittelalterlicher Vergangenheit.",
             ogImage: "https://our-travels.info/foto/Germany/nrw/koln/koln-city/gross_st_martin/001.jpg"
+        }
+    },
+    {
+        id: "st_maria_himmelfahrt_koln",
+        name: "St. Mariä Himmelfahrt",
+        type: ["cathedral"], rating: "popular",
+        path: "st_maria_himmelfahrt_koln",
+        countryPath: "germany", regionsPath: "nrw", districtPath: "city", cityPath: "koln",
+        hiddenFromList: true, showMore: true,
+        fotoCard: "Germany/nrw/koln/koln-city/st_maria_himmelfahrt/001.jpg",
+        location: "Köln, Deutschland",
+        short_description: "St. Mariä Himmelfahrt ist eine bedeutende katholische Kirche der Aufnahme Mariens in der Kölner Altstadt. Sie wurde im Barockstil als Jesuitenkirche errichtet, war lange Zeit die zweitgrößte Kirche nach dem Kölner Dom und gehört bis heute zu den wenigen erhaltenen barocken Baudenkmälern der Stadt.",
+        full_description: {
+            title: "Beschreibung und Geschichte",
+            items: [
+                { bold: "St. Mariä Himmelfahrt", text: "– eine der bedeutendsten historischen Kirchen Kölns, gelegen im Zentrum der Altstadt. Es handelt sich um eine katholische Pfarrkirche, die der Aufnahme Mariens in den Himmel gewidmet ist und im 17. Jahrhundert im Barockstil erbaut wurde. Ihr monumentales Gebäude mit zwei Türmen prägt das Stadtbild und ist ein wichtiger Bestandteil des architektonischen Erbes Kölns. " },
+                { text: "Der Bau der Kirche begann 1618 auf Initiative der Jesuiten während der Gegenreformation – einer Zeit, in der die katholische Kirche Architektur und Kunst gezielt zur Stärkung ihres religiösen Einflusses einsetzte. Der ursprüngliche Entwurf stammt vom Architekten Christoph Wamser, später führte Valentin Boltz die Arbeiten fort. Die barocke Architektur des Bauwerks betont Dynamik der Formen, Monumentalität und dekorative Gestaltung, die für diese Epoche typisch sind. Die Kirche wurde 1678 endgültig fertiggestellt und geweiht." },
+                { text: "Ursprünglich war die Kirche als eines der größten religiösen Bauwerke der Stadt geplant, und lange Zeit war sie tatsächlich die zweitgrößte Kirche Kölns nach dem berühmten Kölner Dom. Der Innenraum ist als dreischiffige Anlage mit Emporen gestaltet, was ein Gefühl von Weite und Feierlichkeit vermittelt, während die helle Beleuchtung die Details der Innenausstattung hervorhebt." },
+                { text: "Die Geschichte des Gebäudes verlief nicht ohne Einschnitte: Ende des 18. Jahrhunderts wurde die Kirche während der französischen Besatzung säkularisiert, verlor einen Teil ihrer ursprünglichen Funktion und diente zeitweise weltlichen Zwecken. Bereits zu Beginn des 19. Jahrhunderts wurde sie jedoch wieder als Pfarrkirche genutzt. Diese Veränderungen spiegeln die komplexen historischen Prozesse wider, die Köln im Laufe der Jahrhunderte durchlebte." },
+                { text: "Während des Zweiten Weltkriegs wurde das Bauwerk durch Bombardierungen schwer beschädigt: Die Außenmauern blieben erhalten, doch das Innere wurde nahezu vollständig zerstört. Eine lange Phase der Restaurierung nach dem Krieg – von den späten 1940er- bis in die 1970er-Jahre – ermöglichte es, die Kirche nahezu in ihrem ursprünglichen Zustand wiederherzustellen und ihre barocke künstlerische Ausdruckskraft sowie architektonischen Proportionen zurückzugeben." },
+                { text: "Heute ist St. Mariä Himmelfahrt eine aktive Pfarrkirche und zugleich ein beliebtes touristisches Ziel in Köln. Architektur und Geschichte vermitteln den Besuchern einen Eindruck vom religiösen Leben der Stadt in verschiedenen Epochen und verbinden kulturelles Erbe, barocke Kunstformen und die historisch geprägte Atmosphäre der Altstadt." }
+            ]
+        },
+        tickets_and_entry: {
+            title: "Praktische Informationen",
+            items: [
+                { bold: "Adresse:", text: "Marzellenstraße 30, 50668 Köln, Nordrhein-Westfalen, Deutschland." }
+            ]
+        },
+        interestingFacts: {
+            title: "Interessante Fakten",
+            items: [
+                { text: "Sie ist eine der wenigen vollständig barocken Kirchen Kölns." },
+                { text: "Sie wurde von den Jesuiten während der Gegenreformation errichtet." },
+                { text: "Sie befindet sich nur wenige Minuten vom Kölner Hauptbahnhof entfernt." }
+            ]
+        },
+        construction_period: "1618-1678",
+        architects: "Christoph Wamser; Valentin Boltz",
+        coord: { lat: 50.94306, lng: 6.95680 },
+        meta: {
+            title: "St. Mariä Himmelfahrt – Barockkirche des 17. Jahrhunderts",
+            description: "Die historische Barockkirche St. Mariä Himmelfahrt im Zentrum von Köln – eine ehemalige Jesuitenkirche des 17. Jahrhunderts mit reicher Architektur, die nach dem Krieg restauriert wurde. Erfahren Sie mehr über Geschichte, Architektur und interessante Fakten.",
+            ogTitle: "St. Mariä Himmelfahrt – historische Barockkirche in Köln",
+            ogDescription: "Tauchen Sie ein in die Atmosphäre barocker Architektur im Herzen Kölns! St. Mariä Himmelfahrt ist ein bedeutendes religiöses Bauwerk der Altstadt mit reicher Geschichte und beeindruckendem Innenraum.",
+            ogImage: "https://our-travels.info/foto/Germany/nrw/koln/koln-city/st_maria_himmelfahrt/001.jpg"
         }
     },
     {
@@ -1651,6 +1698,7 @@ const datas = [
                 { text: "Der Park wird von Freiwilligen und der lokalen Gemeinschaft unterstützt und nicht nur von städtischen Diensten. " }
             ]
         },
+        coord: { lat: 50.88993, lng: 6.98483 },
         meta: {
             title: "Finkens Garten – Naturgarten und Naturpark, Rodenkirchen",
             description: "Finkens Garten in Köln ist ein kostenloser Naturpark mit Biotopen, Bienenhaus und Bildungsprogrammen für Kinder und Erwachsene.",
@@ -1769,63 +1817,63 @@ const datas = [
         }
     },
     {
-    id: "senfmuehle_monschau",
-    name: "Historische Senfmühle",
-    type: ["museum"], rating: "local",
-    path: "senfmuehle_monschau",
-    countryPath: "germany", regionsPath: "nrw", districtPath: "koln", cityPath: "monschau",
-    hiddenFromList: true, showMore: true,
-    fotoCard: "Germany/nrw/koln/Aachen/monschau/senfmuehle/001.jpg",
-    location: "Monschau, Deutschland",
-    officialSite: [{ bold: "Offizielle Webseite", link: "http://www.senfmuehle.de/start/ " }],
-    short_description: "Die Historische Senfmühle in Monschau ist ein Familienunternehmen mit über 100-jähriger Geschichte, in dem traditionelle deutsche Senfsaucen auf historischen mechanischen Anlagen mit Wasserantrieb hergestellt werden. Besucher können den Produktionsprozess beobachten, verschiedene Sorten probieren und die Produkte im Laden vor Ort erwerben.",
-    full_description: {
-        title: "Beschreibung und Geschichte",
-        items: [
-            { bold: "Historische Senfmühle Monschau", text: "– eine der authentischsten und beliebtesten Sehenswürdigkeiten der Altstadt von Monschau. Die Mühle liegt zwischen malerischen Fachwerkhäusern in der Laufenstraße, im Herzen der Altstadt, und ist ein Pflichtbesuch für Touristen, die sich für die traditionelle deutsche Küche und Kultur der Region interessieren. Hier kann man den einzigartigen Herstellungsprozess von Senf sehen, der Methoden aus dem frühen 20. Jahrhundert bewahrt." },
-            { bold: "Geschichte.", text: "Die Geschichte der Mühle reicht über 100 Jahre zurück. Ursprünglich diente der Komplex als Teil der Textilindustrie der Region. Mitte des 20. Jahrhunderts, 1952, wurde das Unternehmen von der Familie Breuer übernommen, die hier begann, traditionellen Senf herzustellen. Seitdem ist die Produktion ein Familienbetrieb, und die Rezepte sowie die Methoden der Senfverarbeitung werden von Generation zu Generation weitergegeben." },
-            { bold: "Ausstattung und Produktion.", text: "In der Mühle wird das originale Wasserantriebs-Equipment verwendet, das seit der Gründung erhalten geblieben ist. Dies macht den Senfherstellungsprozess nicht nur einzigartig, sondern verwandelt ihn auch in eine anschauliche historische Ausstellung. Besucher können beobachten, wie die Senfkörner zerkleinert und zu fertigem Produkt verarbeitet werden, sowie verschiedene Sorten probieren, von klassischen bis zu aromatisierten Varianten mit Feige, Honig oder Riesling." },
-            { bold: "Laden und Verkostung.", text: "Heute vereint die Mühle Museum, Produktionsbetrieb und Laden. Die Gäste können nicht nur den Herstellungsprozess beobachten, sondern auch Produkte vor Ort erwerben. Besonderes Augenmerk liegt auf Qualität und Authentizität: Jede Senfcharge wird von Hand nach traditioneller Technik hergestellt, wodurch Geschmack und Aroma einzigartig bleiben." },
-            { bold: "Bedeutung für die Stadt.", text: "Die Historische Senfmühle ist ein Symbol des kulturellen Erbes von Monschau. Sie zieht Touristen durch ihre Authentizität an und ermöglicht es, in die Atmosphäre der Altstadt einzutauchen, regionale Traditionen kennenzulernen und zu sehen, wie Geschichte Teil der modernen Gastronomie sein kann." }
-        ]
+        id: "senfmuehle_monschau",
+        name: "Historische Senfmühle",
+        type: ["museum"], rating: "local",
+        path: "senfmuehle_monschau",
+        countryPath: "germany", regionsPath: "nrw", districtPath: "koln", cityPath: "monschau",
+        hiddenFromList: true, showMore: true,
+        fotoCard: "Germany/nrw/koln/Aachen/monschau/senfmuehle/001.jpg",
+        location: "Monschau, Deutschland",
+        officialSite: [{ bold: "Offizielle Webseite", link: "http://www.senfmuehle.de/start/ " }],
+        short_description: "Die Historische Senfmühle in Monschau ist ein Familienunternehmen mit über 100-jähriger Geschichte, in dem traditionelle deutsche Senfsaucen auf historischen mechanischen Anlagen mit Wasserantrieb hergestellt werden. Besucher können den Produktionsprozess beobachten, verschiedene Sorten probieren und die Produkte im Laden vor Ort erwerben.",
+        full_description: {
+            title: "Beschreibung und Geschichte",
+            items: [
+                { bold: "Historische Senfmühle Monschau", text: "– eine der authentischsten und beliebtesten Sehenswürdigkeiten der Altstadt von Monschau. Die Mühle liegt zwischen malerischen Fachwerkhäusern in der Laufenstraße, im Herzen der Altstadt, und ist ein Pflichtbesuch für Touristen, die sich für die traditionelle deutsche Küche und Kultur der Region interessieren. Hier kann man den einzigartigen Herstellungsprozess von Senf sehen, der Methoden aus dem frühen 20. Jahrhundert bewahrt." },
+                { bold: "Geschichte.", text: "Die Geschichte der Mühle reicht über 100 Jahre zurück. Ursprünglich diente der Komplex als Teil der Textilindustrie der Region. Mitte des 20. Jahrhunderts, 1952, wurde das Unternehmen von der Familie Breuer übernommen, die hier begann, traditionellen Senf herzustellen. Seitdem ist die Produktion ein Familienbetrieb, und die Rezepte sowie die Methoden der Senfverarbeitung werden von Generation zu Generation weitergegeben." },
+                { bold: "Ausstattung und Produktion.", text: "In der Mühle wird das originale Wasserantriebs-Equipment verwendet, das seit der Gründung erhalten geblieben ist. Dies macht den Senfherstellungsprozess nicht nur einzigartig, sondern verwandelt ihn auch in eine anschauliche historische Ausstellung. Besucher können beobachten, wie die Senfkörner zerkleinert und zu fertigem Produkt verarbeitet werden, sowie verschiedene Sorten probieren, von klassischen bis zu aromatisierten Varianten mit Feige, Honig oder Riesling." },
+                { bold: "Laden und Verkostung.", text: "Heute vereint die Mühle Museum, Produktionsbetrieb und Laden. Die Gäste können nicht nur den Herstellungsprozess beobachten, sondern auch Produkte vor Ort erwerben. Besonderes Augenmerk liegt auf Qualität und Authentizität: Jede Senfcharge wird von Hand nach traditioneller Technik hergestellt, wodurch Geschmack und Aroma einzigartig bleiben." },
+                { bold: "Bedeutung für die Stadt.", text: "Die Historische Senfmühle ist ein Symbol des kulturellen Erbes von Monschau. Sie zieht Touristen durch ihre Authentizität an und ermöglicht es, in die Atmosphäre der Altstadt einzutauchen, regionale Traditionen kennenzulernen und zu sehen, wie Geschichte Teil der modernen Gastronomie sein kann." }
+            ]
+        },
+        tickets_and_entry: {
+            title: "Praktische Informationen",
+            items: [
+                { bold: "Adresse:", text: "Laufenstraße 116–124, 52156 Monschau (NRW, Deutschland)", link: "https://goo.gl/maps/XYZ123" },
+                { bold: "Öffnungszeiten: ", text: "täglich ungefähr 08:30-18:00, an Wochenenden etwas kürzer; <br>Führungen nach Vereinbarung oder in der Saison nach Plan möglich." }
+            ]
+        },
+        sub_objects: {
+            title: "Ausstellungen",
+            items: [
+                { bold: "Produktionsprozess: ", text: "Besucher können beobachten, wie die Senfkörner zerkleinert und mit Hilfe des originalen Equipments zu fertigem Produkt verarbeitet werden." },
+                { bold: "Sortenausstellung:", text: "Über 20 Senfsorten – von klassischen bis zu aromatisierten Varianten (Honig, Mohn, Riesling, Feige, Curry etc.)." },
+                { bold: "Boutique-Laden:", text: "Vor Ort können Produkte als Souvenir oder Geschenk erworben werden." }
+            ]
+        },
+        interestingFacts: {
+            title: "Interessante Fakten",
+            items: [
+                { bold: "Das Wasserrad funktioniert noch", text: "– die Mühle nutzt den originalen Antrieb aus dem Fluss, der alle Mechanismen zur Zerkleinerung der Senfkörner in Bewegung setzt." },
+                { bold: "Familiäre Tradition", text: "– die Senfproduktion befindet sich seit 1952 im Besitz der Familie Breuer, die Rezepte werden von Generation zu Generation weitergegeben." },
+                { bold: "Über 20 Senfsorten", text: "– vor Ort kann man klassische, scharfe, süße und aromatisierte Varianten (Feige, Riesling, Honig, Curry) probieren." },
+                { bold: "Live-Demonstration der Produktion", text: "– Touristen können den gesamten Prozess vom Samen bis zum fertigen Produkt beobachten, was den Besuch interaktiv und lehrreich macht." },
+                { bold: "Senf als Geschenk", text: "– der Laden der Mühle bietet Souvenir-Sets an, was den Ort bei Touristen beliebt macht, die lokale Geschenke suchen." },
+                { bold: "Einzigartige Kombination aus Museum und aktiver Produktion", text: "– solche lebendigen 'Fabrikmuseen' sind in Deutschland selten, besonders in kleinen Städten wie Monschau." }
+            ]
+        },
+        construction_period: "Das Alter der Fabrik beträgt über 100 Jahre, und die Familienproduktion von Senf besteht seit Anfang des 20. Jahrhunderts (seit den 1950er Jahren unter der Leitung der Familie Breuer).",
+        founder: "Historisch entwickelte sich das Objekt als Produktionskomplex; die Senfproduktion erhielt neues Leben mit der Übernahme in Familienbesitz der Familie Breuer im Jahr 1952.",
+        coord: { lat: 50.56250, lng: 6.23828 },
+        meta: {
+            title: "Historische Senfmühle Monschau – Museum und Senfverkostung",
+            description: "Besuchen Sie die Senfmühle in Monschau mit über 100-jähriger Geschichte. Beobachten Sie die Herstellung, probieren Sie über 20 Sorten und kaufen Sie Produkte vor Ort.",
+            ogTitle: "Historische Senfmühle – traditionelles deutsches Senfparadies",
+            ogDescription: "Erfahren Sie, wie im Herzen von Monschau legendärer deutscher Senf nach alten Rezepten hergestellt wird! Mehr als 20 Geschmacksrichtungen, Live-Herstellung und ein gemütlicher Laden direkt im historischen Zentrum.",
+            ogImage: "https://our-travels.info/foto/Germany/nrw/koln/Aachen/monschau/senfmuehle/001.jpg"
+        }
     },
-    tickets_and_entry: {
-        title: "Praktische Informationen",
-        items: [
-            { bold: "Adresse:", text: "Laufenstraße 116–124, 52156 Monschau (NRW, Deutschland)", link: "https://goo.gl/maps/XYZ123" },
-            { bold: "Öffnungszeiten: ", text: "täglich ungefähr 08:30-18:00, an Wochenenden etwas kürzer; <br>Führungen nach Vereinbarung oder in der Saison nach Plan möglich." }
-        ]
-    },
-    sub_objects: {
-        title: "Ausstellungen",
-        items: [
-            { bold: "Produktionsprozess: ", text: "Besucher können beobachten, wie die Senfkörner zerkleinert und mit Hilfe des originalen Equipments zu fertigem Produkt verarbeitet werden." },
-            { bold: "Sortenausstellung:", text: "Über 20 Senfsorten – von klassischen bis zu aromatisierten Varianten (Honig, Mohn, Riesling, Feige, Curry etc.)." },
-            { bold: "Boutique-Laden:", text: "Vor Ort können Produkte als Souvenir oder Geschenk erworben werden." }
-        ]
-    },
-    interestingFacts: {
-        title: "Interessante Fakten",
-        items: [
-            { bold: "Das Wasserrad funktioniert noch", text: "– die Mühle nutzt den originalen Antrieb aus dem Fluss, der alle Mechanismen zur Zerkleinerung der Senfkörner in Bewegung setzt." },
-            { bold: "Familiäre Tradition", text: "– die Senfproduktion befindet sich seit 1952 im Besitz der Familie Breuer, die Rezepte werden von Generation zu Generation weitergegeben." },
-            { bold: "Über 20 Senfsorten", text: "– vor Ort kann man klassische, scharfe, süße und aromatisierte Varianten (Feige, Riesling, Honig, Curry) probieren." },
-            { bold: "Live-Demonstration der Produktion", text: "– Touristen können den gesamten Prozess vom Samen bis zum fertigen Produkt beobachten, was den Besuch interaktiv und lehrreich macht." },
-            { bold: "Senf als Geschenk", text: "– der Laden der Mühle bietet Souvenir-Sets an, was den Ort bei Touristen beliebt macht, die lokale Geschenke suchen." },
-            { bold: "Einzigartige Kombination aus Museum und aktiver Produktion", text: "– solche lebendigen 'Fabrikmuseen' sind in Deutschland selten, besonders in kleinen Städten wie Monschau." }
-        ]
-    },
-    construction_period: "Das Alter der Fabrik beträgt über 100 Jahre, und die Familienproduktion von Senf besteht seit Anfang des 20. Jahrhunderts (seit den 1950er Jahren unter der Leitung der Familie Breuer).",
-    founder: "Historisch entwickelte sich das Objekt als Produktionskomplex; die Senfproduktion erhielt neues Leben mit der Übernahme in Familienbesitz der Familie Breuer im Jahr 1952.",
-    coord: { lat: 50.56250, lng: 6.23828 },
-    meta: {
-        title: "Historische Senfmühle Monschau – Museum und Senfverkostung",
-        description: "Besuchen Sie die Senfmühle in Monschau mit über 100-jähriger Geschichte. Beobachten Sie die Herstellung, probieren Sie über 20 Sorten und kaufen Sie Produkte vor Ort.",
-        ogTitle: "Historische Senfmühle – traditionelles deutsches Senfparadies",
-        ogDescription: "Erfahren Sie, wie im Herzen von Monschau legendärer deutscher Senf nach alten Rezepten hergestellt wird! Mehr als 20 Geschmacksrichtungen, Live-Herstellung und ein gemütlicher Laden direkt im historischen Zentrum.",
-        ogImage: "https://our-travels.info/foto/Germany/nrw/koln/Aachen/monschau/senfmuehle/001.jpg"
-    }
-},
     {
         id: "burg_monschau",
         name: "Burg Monschau",

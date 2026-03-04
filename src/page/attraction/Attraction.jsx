@@ -96,7 +96,7 @@ const Attraction = () => {
         { label: lang === "ru" ? "Главная" : lang === "de" ? "Startseite" : "Головна", path: "/" },
         country ? { label: region.country, path: `/${country.path}` } : null,
         region ? { label: region.name, path: `/${country.path}/${region.path}` } : null,
-        district ? { label: district.name, path: `/${country.path}/${region.path}/${district.path}` } : null,
+        district && district.id !== 0 ? { label: district.name, path: `/${country.path}/${region.path}/${district.path}` } : null,
         parentSubRegion ? { label: parentSubRegion.name } : null,
         city ? { label: city.name, path: `/${country.path}/${region.path}/${districtPath ? districtPath + '/' : ''}${city.path}` } : null,
         {

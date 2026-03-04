@@ -79,6 +79,7 @@ const t = {
     photographische_sammlung_sk_stiftung_kultur: { ru: 'Фотографическая коллекция культурного фонда SK', de: 'Photographische Sammlung des SK Kulturfonds', ua: 'Фотографічна колекція культурного фонду SK' },
     altstadt_koln: { ru: 'Старый город Кёльна', de: 'Altstadt Köln', ua: 'Старе місто Кельна' },
     gross_st_martin_koln: { ru: 'Большой Святой Мартин', de: 'Groß St. Martin', ua: 'Великий Святий Мартін' },
+    st_maria_himmelfahrt_koln: { ru: 'Церковь Успения Пресвятой Девы Марии', de: 'St. Mariä Himmelfahrt', ua: 'Церква Успіння Пресвятої Діви Марії' },
 
     // Köln okrug
     // Aachen Kreis
@@ -225,6 +226,7 @@ const Map = () => {
                               <li><Link to="/germany/nrw/city/koln/attractions/cologne-cathedral">{t.attractions.cologneCathedral[lang]}</Link></li>
                               <li><Link to="/germany/nrw/city/koln/attractions/rathaus">{t.attractions.cologneRathaus[lang]}</Link></li>
                               <li><Link to="/germany/nrw/city/koln/attractions/gross_st_martin_koln">{t.attractions.gross_st_martin_koln[lang]}</Link></li>
+                              <li><Link to="/germany/nrw/city/koln/attractions/st_maria_himmelfahrt_koln">{t.attractions.st_maria_himmelfahrt_koln[lang]}</Link></li>
                               <li><Link to="/germany/nrw/city/koln/attractions/guerzenich_koln">{t.attractions.guerzenich_koln[lang]}</Link></li>
                               <li><Link to="/germany/nrw/city/koln/attractions/miqua">{t.attractions.miqua[lang]}</Link></li>
                               <li><Link to="/germany/nrw/city/koln/attractions/roemisch-germanisches-museum">{t.attractions.roemischGermanischesMuseum[lang]}</Link></li>

@@ -19,9 +19,8 @@ function normalize(str) {
 }
 
 function extractText(obj) {
+  if (!obj) return "";
   let result = "";
-
-  if (!obj) return result;
 
   if (typeof obj === "string") {
     return obj + " ";
@@ -35,8 +34,13 @@ function extractText(obj) {
   }
 
   if (typeof obj === "object") {
+    if (obj.text) result += obj.text + " ";
+    if (obj.bold) result += obj.bold + " ";
+
     Object.values(obj).forEach(value => {
-      result += extractText(value);
+      if (value !== obj.text && value !== obj.bold) {
+        result += extractText(value);
+      }
     });
   }
 

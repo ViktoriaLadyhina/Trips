@@ -166,6 +166,11 @@ export const Fotos = {
         { path: "Germany/nrw/koln/koln-city/museum-ludwig/001.jpg", title: { ru: "Музей Людвига, 2025", ua: "Музей Людвіга, 2025", de: "Museum Ludwig, 2025" } },
         { path: "Germany/nrw/koln/koln-city/wallraf_richartz_museum/001.jpg", title: { ru: "Музей Вальрафа-Рихарца, 2025", ua: "Музей Вальрафа-Ріхарцa, 2025", de: "Wallraf-Richartz-Museum, 2025" } },
         { path: "Germany/nrw/koln/koln-city/gross_st_martin/002.jpg", title: { ru: "Большой Святой Мартин, 2025", ua: "Великий Святий Мартін, 2025", de: "Groß St. Martin, 2025" } },
+      ],
+      st_maria_himmelfahrt_koln: [
+        { path: "Germany/nrw/koln/koln-city/st_maria_himmelfahrt/001.jpg", title: { ru: "Сент-Мария Химмельфарт (фото взято с интернета)", ua: "Церква Успіння Пресвятої Діви Марії (фото взято з Інтернету)", de: "St. Mariä Himmelfahrt (Foto aus dem Internet)" } },
+        { path: "Germany/nrw/koln/koln-city/st_maria_himmelfahrt/002.jpg", title: { ru: "Сент-Мария Химмельфарт (фото взято с интернета)", ua: "Церква Успіння Пресвятої Діви Марії (фото взято з Інтернету)", de: "St. Mariä Himmelfahrt (Foto aus dem Internet)" } },
+        { path: "Germany/nrw/koln/koln-city/st_maria_himmelfahrt/003.jpg", title: { ru: "Сент-Мария Химмельфарт (фото взято с интернета)", ua: "Церква Успіння Пресвятої Діви Марії (фото взято з Інтернету)", de: "St. Mariä Himmelfahrt (Foto aus dem Internet)" } },
       ]
     },
     bruhl: {
@@ -223,7 +228,13 @@ export const Fotos = {
         { path: "Germany/nrw/koln/Rhein-Erft-Kreis/frechen/johann_schmitz_platz_frechen/008.jpg", title: { ru: "Старая ратуша Фрехена, 2026", ua: "Стара ратуша Фрехена, 2026", de: "Altes Rathaus Frechen, 2026" } },
       ],
       keramion: [
-        { path: "Germany/nrw/koln/Rhein-Erft-Kreis/frechen/keramion/frechen_keramion.jpg", title: { ru: "KERAMION – Центр современной и исторической керамики (фото взято с интернета)", ua: "KERAMION – Центр сучасної та історичної кераміки (фото взято з Інтернету)", de: "KERAMION – Zentrum für zeitgenössische und historische Keramik (Foto aus dem Internet)" } },
+        { path: "Germany/nrw/koln/Rhein-Erft-Kreis/frechen/keramion/001.jpg", title: { ru: "KERAMION – Центр современной и исторической керамики, 2026", ua: "KERAMION – Центр сучасної та історичної кераміки, 2026", de: "KERAMION – Zentrum für zeitgenössische und historische Keramik, 2026" } },
+        { path: "Germany/nrw/koln/Rhein-Erft-Kreis/frechen/keramion/002.jpg", title: { ru: "KERAMION – Центр современной и исторической керамики, 2026", ua: "KERAMION – Центр сучасної та історичної кераміки, 2026", de: "KERAMION – Zentrum für zeitgenössische und historische Keramik, 2026" } },
+        { path: "Germany/nrw/koln/Rhein-Erft-Kreis/frechen/keramion/003.jpg", title: { ru: "KERAMION – Центр современной и исторической керамики, 2026", ua: "KERAMION – Центр сучасної та історичної кераміки, 2026", de: "KERAMION – Zentrum für zeitgenössische und historische Keramik, 2026" } },
+        { path: "Germany/nrw/koln/Rhein-Erft-Kreis/frechen/keramion/004.jpg", title: { ru: "KERAMION – Центр современной и исторической керамики, 2026", ua: "KERAMION – Центр сучасної та історичної кераміки, 2026", de: "KERAMION – Zentrum für zeitgenössische und historische Keramik, 2026" } },
+        { path: "Germany/nrw/koln/Rhein-Erft-Kreis/frechen/keramion/005.jpg", title: { ru: "KERAMION – Центр современной и исторической керамики, 2026", ua: "KERAMION – Центр сучасної та історичної кераміки, 2026", de: "KERAMION – Zentrum für zeitgenössische und historische Keramik, 2026" } },
+        { path: "Germany/nrw/koln/Rhein-Erft-Kreis/frechen/keramion/006.jpg", title: { ru: "KERAMION – Центр современной и исторической керамики, 2026", ua: "KERAMION – Центр сучасної та історичної кераміки, 2026", de: "KERAMION – Zentrum für zeitgenössische und historische Keramik, 2026" } },
+        { path: "Germany/nrw/koln/Rhein-Erft-Kreis/frechen/keramion/007.jpg", title: { ru: "KERAMION – Центр современной и исторической керамики, 2026", ua: "KERAMION – Центр сучасної та історичної кераміки, 2026", de: "KERAMION – Zentrum für zeitgenössische und historische Keramik, 2026" } },
       ],
       'burg-bachem': [
         { path: "Germany/nrw/koln/Rhein-Erft-Kreis/frechen/burg-bachem/Burg-Bachem_1.jpg", title: { ru: "Замок Бахем, 2024", ua: "Замок Бахем, 2024", de: "Burg Bachem, 2024" } },
