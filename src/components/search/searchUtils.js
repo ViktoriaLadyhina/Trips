@@ -19,12 +19,11 @@ function normalize(str) {
 }
 
 function extractText(obj) {
-  if (!obj) return "";
   let result = "";
 
-  if (typeof obj === "string") {
-    return obj + " ";
-  }
+  if (!obj) return result;
+
+  if (typeof obj === "string") return obj + " ";
 
   if (Array.isArray(obj)) {
     obj.forEach(item => {
@@ -34,11 +33,11 @@ function extractText(obj) {
   }
 
   if (typeof obj === "object") {
-    if (obj.text) result += obj.text + " ";
-    if (obj.bold) result += obj.bold + " ";
-
     Object.values(obj).forEach(value => {
-      if (value !== obj.text && value !== obj.bold) {
+      if (typeof value === "object" && value !== null && "ru" in value && "ua" in value && "de" in value) {
+        // поле с языковыми вариантами
+        result += Object.values(value).join(" ") + " ";
+      } else {
         result += extractText(value);
       }
     });
