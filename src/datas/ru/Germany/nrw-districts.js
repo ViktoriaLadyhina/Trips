@@ -1,9 +1,5 @@
 const datas = [
-    {
-        id: 0,
-        name: "Город обласного значения",
-        path: "city"
-    },
+    { id: 0, name: "Город областного значения", path: "city"},
     {
         id: 1,
         title: "Административный округ Арнсберг",
@@ -21,21 +17,12 @@ const datas = [
             districts: [{ bold: 'Округа-районы (Kreise):', text: 'Эннепе-Рур (Ennepe-Ruhr-Kreis), Меркиш (Märkischer Kreis), Хохзауэрланд (Hochsauerlandkreis), Ольпе (Olpe), Зиген-Виттгенштайн (Siegen-Wittgenstein), Зост (Soest), Унна (Unna)' }],
             cities: [{ bold: 'Города, не принадлежащие районам (kreisfreie Städte):', text: 'Бохум (Bochum), Дортмунд (Dortmund), Хаген (Hagen), Хамм (Hamm), Херне (Herne)' }]
         },
-        subRegion: [
-            { id: 1_1, name: "Зиген-Виттгенштайн", fullName: "Siegen-Wittgenstein" },
-            { id: 1_2, name: "Зост", fullName: "Soest" },
-            { id: 1_3, name: "Меркиш", fullName: "Märkischer" },
-            { id: 1_4, name: "Ольпе", fullName: "Olpe" },
-            { id: 1_5, name: "Унна", fullName: "Unna" },
-            { id: 1_6, name: "Хохзауэрланд", fullName: "Hochsauerland" },
-            { id: 1_7, name: "Эннепе-Рур", fullName: "Ennepe-Ruhr" }
-        ],
         meta: {
-            title: "Кёльн — административный округ Северного Рейна-Вестфалия",
-            description: "Подробная информация о Кёльне: культура, история, достопримечательности округа.",
-            ogTitle: "Кёльн — административный округ Северного Рейна-Вестфалия",
+            title: "Арнсберг — административный округ Северного Рейна-Вестфалия",
+            description: "Подробная информация об Арнсберге: культура, история, достопримечательности округа.",
+            ogTitle: "Арнсберг — административный округ Северного Рейна-Вестфалия",
             ogDescription: "Кёльн: административный округ Северного Рейна-Вестфалии, города, история и интересные факты.",
-            ogImage: "/nrw/koeln.jpg"
+            ogImage: "/nrw/arnsberg.jpg"
         }
     },
     { id: 2, name: 'Детмольд', hasInfo: false, path: "detmold" },
@@ -57,16 +44,6 @@ const datas = [
             districts: [{ bold: 'Округа-районы (Kreise):', text: 'Аахен (Aachen), Дюрен (Düren), Ойскирхен (Euskirchen), Хайнсберг (Heinsberg), Обербергиш (Oberbergischer Kreis), Рейн-Эрфт (Rhein-Erft-Kreis), Рейн-Зиг (Rhein-Sieg-Kreis), Рейниш-Бергиш (Rheinisch-Bergischer Kreis)' }],
             cities: [{ bold: 'Города, не принадлежащие районам (kreisfreie Städte):', text: 'Аахен (Aachen), Бонн (Bonn), Кёльн (Köln), Леверкузен (Leverkusen)' }]
         },
-        subRegion: [
-            { id: 4_1, name: "Аахен", fullName: "Aachen" },
-            { id: 4_2, name: "Дюрен", fullName: "Düren" },
-            { id: 4_3, name: "Обербергиш", fullName: "Oberbergischer" },
-            { id: 4_4, name: "Ойскирхен", fullName: "Euskirchen" },
-            { id: 4_5, name: "Рейн-Зиг", fullName: "Rhein-Sieg" },
-            { id: 4_6, name: "Рейн-Эрфт", fullName: "Rhein-Erft" },
-            { id: 4_7, name: "Рейниш-Бергиш", fullName: "Rheinisch-Bergischer" },
-            { id: 4_8, name: "Хайнсберг", fullName: "Heinsberg" }
-        ],
         meta: {
             title: "Кёльн — административный округ Северного Рейна-Вестфалия",
             description: "Подробная информация о Кёльне: культура, история, достопримечательности округа.",

@@ -99,8 +99,7 @@ export const datas = [
         { id: 26, name: 'Севастополь', path: 'sevastopol', hasInfo: false, svgId: "sevastopol" },
         { id: 27, name: 'Автономная Республика Крым', path: 'crimea', hasInfo: false, svgId: "crimea" }
       ]
-    }
-    ,
+    },
     meta: {
       title: "Украина — информация о стране, достопримечательности и культура",
       description: "Все о стране Украина: столица Киев, география, население, языки, кухня, праздники и краткая история.",

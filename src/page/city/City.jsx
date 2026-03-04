@@ -35,7 +35,7 @@ const City = () => {
         { label: lang === "ru" ? "Главная" : lang === "de" ? "Startseite" : "Головна", path: "/" },
         { label: region.country, path: `/${countryPath}` },
         { label: region.name, path: `/${countryPath}/${regionPath}` },
-        ...(district ? [{ label: district.name, path: `/${countryPath}/${regionPath}/${districtPath}` }] : []),
+        ...(district && district.id !== 0 ? [{ label: district.name, path: `/${countryPath}/${regionPath}/${districtPath}` }] : []),
         ...(parentSubRegion ? [{ label: parentSubRegion.name }] : []),
         { label: city.name }
     ];
@@ -57,7 +57,7 @@ const City = () => {
                             {photos?.[regionPath]?.[cityPath]?.gallery?.[0] && (
                                 <img
                                     src={`${BASE_PHOTO_URL}${photos[regionPath][cityPath].gallery[0].path}`}
-                                    alt={photos[regionPath][cityPath].gallery[0].title.de}
+                                    alt={photos[regionPath][cityPath].gallery[0].title?.[lang]}
                                     className='city__foto city__foto--right'
                                 />
                             )}
@@ -74,7 +74,7 @@ const City = () => {
                             {photos?.[regionPath]?.[cityPath]?.gallery?.[1] && (
                                 <img
                                     src={`${BASE_PHOTO_URL}${photos?.[regionPath]?.[cityPath]?.gallery?.[1].path}`}
-                                    alt={photos?.[regionPath]?.[cityPath]?.gallery?.[1].title}
+                                    alt={photos?.[regionPath]?.[cityPath]?.gallery?.[1].title?.[lang]}
                                     className='city__foto'
                                 />
                             )}

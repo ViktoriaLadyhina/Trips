@@ -310,7 +310,6 @@ const datas = [
         name: 'Кёнигсвинтер',
         path: "konigswinter",
         countryPath: "germany", regionsPath: "nrw", districtPath: "koln", subRegionPath: "rhein_sieg",
-        district: "rhein-sieg-kreis",
         desc: {
             general: [
                 { text: 'Кёнигсвинтер – город в земле Северный Рейн-Вестфалия, входящий в район Рейн-Зиг и расположенный на правом берегу Рейна напротив Бонна.' },

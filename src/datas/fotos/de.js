@@ -170,7 +170,7 @@ export const Fotos = {
     },
     bruhl: {
       gallery: [
-        { path: "Germany/nrw/koln/Rhein-Erft-Kreis/bruhl/bruhel_palaces/013.jpg", title: { ru: "Дворцы Брюля: Аугустусбург, 2022", ua: "Палаци Брюля: Аугустусбург, 2022", de: "Brühler Schlösser: Augustusburg, 2022" } },
+        { path: "Germany/nrw/koln/Rhein-Erft-Kreis/bruhl/bruhl_palaces/013.jpg", title: { ru: "Дворцы Брюля: Аугустусбург, 2022", ua: "Палаци Брюля: Аугустусбург, 2022", de: "Brühler Schlösser: Augustusburg, 2022" } },
       ],
       'phantasialand': [
         { path: "Germany/nrw/koln/Rhein-Erft-Kreis/bruhl/phantasialand/001.jpg", title: { ru: "Парк атракционов «Фантазия Ленд», 2006", ua: "Парк атракціонів «Фантазія Ленд», 2006", de: "Freizeitpark «Fantasia Land», 2006" } },

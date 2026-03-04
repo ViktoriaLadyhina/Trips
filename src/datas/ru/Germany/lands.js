@@ -95,14 +95,8 @@ const datas = [
         path: 'rheinland-pfalz',
         country: "Германия",
         desc: {
-            capital: [
-                { bold: 'Столица:' },
-                { text: ' Майнц' }
-            ],
-            population: [
-                { bold: 'Население (2024):' },
-                { text: ' Население: около 4,1 млн человек. Иностранцев – около 500 тыс. человек.' }
-            ],
+            capital: [{ bold: 'Столица:', text: ' Майнц' }],
+            population: [{ bold: 'Население (2024):', text: ' Население: около 4,1 млн человек. Иностранцев – около 500 тыс. человек.' }],
             area: [
                 { bold: 'Площадь:' },
                 { text: ' 19 854 км². Плотность населения – около 206 человек на 1 км².' }
@@ -179,7 +173,7 @@ const datas = [
                     { id: 15, name: 'Майен-Кобленц', hasInfo: true, path: "mayen_koblenz" },
                     { id: 16, name: 'Нойвид', hasInfo: false, path: "neuwied" },
                     { id: 17, name: 'Райн-Хунсрюк', hasInfo: false, path: "rhein_hunsrueck_kreis" },
-                    { id: 18, name: 'Райн-Лан', hasInfo: false, path: "rhein-lahn-kreis" },
+                    { id: 18, name: 'Райн-Лан', hasInfo: false, path: "rhein_lahn_kreis" },
                     { id: 19, name: 'Райн-Пфальц', hasInfo: false, path: "rhein_pfalz_kreis" },
                     { id: 20, name: 'Южный Вайнштрассе', hasInfo: false, path: "suedliche_weinstrasse" },
                     { id: 21, name: 'Юго-западный Пфальц', hasInfo: false, path: "suedwestpfalz" },

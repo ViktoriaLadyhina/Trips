@@ -4,7 +4,7 @@ const datas = [
         id: 1,
         name: 'Köln',
         path: "koln",
-        countryPath: "germany", regionsPath: "nrw", district: "city",
+        countryPath: "germany", regionsPath: "nrw", districtPath: "city",
         desc: {
             general: [
                 { text: 'Köln ist die größte Stadt des Bundeslandes Nordrhein-Westfalen und die viertgrößte Stadt Deutschlands.' },
@@ -99,7 +99,7 @@ const datas = [
         id: 6,
         name: 'Monschau',
         path: "monschau",
-        countryPath: "germany", regionsPath: "nrw", district: "koln",
+        countryPath: "germany", regionsPath: "nrw", districtPath: "koln", subRegionPath: "aachen",
         desc: {
             general: [{ text: 'Monschau (dt. Monschau) liegt im Westen Deutschlands, in der Region Eifel des Bundeslandes Nordrhein-Westfalen, in der Nähe der Grenze zu Belgien. Die Stadt ist bekannt für ihre historische Architektur, gemütliche Straßen mit Fachwerkhäusern und malerische Ausblicke auf die Rur.' }],
             population: [{ bold: 'Einwohnerzahl', text: ' der Stadt beträgt etwa 13.000 Personen (Stand 31. Dezember 2024).' }],
@@ -163,7 +163,7 @@ const datas = [
         id: 2,
         name: 'Brühl',
         path: "bruhl",
-        countryPath: "germany", regionsPath: "nrw", district: "koln",
+        countryPath: "germany", regionsPath: "nrw", districtPath: "koln", subRegionPath: "rhein_erft",
         desc: {
             general: [
                 { text: 'Stadt im Bundesland Nordrhein-Westfalen' }
@@ -224,7 +224,7 @@ const datas = [
         id: 3,
         name: 'Frechen',
         path: "frechen",
-        countryPath: "germany", regionsPath: "nrw", district: "koln",
+        countryPath: "germany", regionsPath: "nrw", districtPath: "koln", subRegionPath: "rhein_erft",
         desc: {
             general: [
                 { text: 'Frechen ist eine Stadt im Bundesland Nordrhein-Westfalen, die zum Rhein-Erft-Kreis gehört und nur etwa 10 km westlich von Köln liegt.' },
@@ -309,7 +309,7 @@ const datas = [
         id: 4,
         name: 'Königswinter',
         path: "konigswinter",
-        countryPath: "germany", regionsPath: "nrw", district: "rhein-sieg-kreis",
+        countryPath: "germany", regionsPath: "nrw", districtPath: "koln", subRegionPath: "rhein_sieg",
         desc: {
             general: [
                 { text: 'Königswinter ist eine Stadt im Bundesland Nordrhein-Westfalen, die zum Rhein-Sieg-Kreis gehört und am rechten Rheinufer gegenüber von Bonn liegt.' },
@@ -391,7 +391,7 @@ const datas = [
         id: 5,
         name: 'Lüdenscheid',
         path: "luedenscheid",
-        countryPath: "germany", regionsPath: "nrw", district: "arnsberg",
+        countryPath: "germany", regionsPath: "nrw", districtPath: "arnsberg", subRegionPath: "merkischer",
         desc: {
             general: [
                 { text: 'Lüdenscheid liegt im Nordwesten des Sauerlandes im Bundesland Nordrhein-Westfalen. Administrativ gehört die Stadt zur Region Arnsberg und untersteht dem Märkischen Kreis.' },

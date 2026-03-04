@@ -17,7 +17,6 @@ const datas =
         {
             id: 15_1,
             name: "Мендиг",
-            fullName: "Mendig",
             path: "mendig",
             districtPath: "mayen_koblenz",
             center: [{ bold: "Административный центр:", text: " город Мендиг." }],
@@ -38,7 +37,6 @@ const datas =
         {
             id: 15_2,
             name: "Пелленц",
-            fullName: "Pellenz",
             path: "pellenz",
             districtPath: "mayen_koblenz",
             center: [{ bold: "Административный центр:", text: " город Плайдт." }],
@@ -59,7 +57,6 @@ const datas =
         {
             id: 15_3,
             name: "Валлендар",
-            fullName: "Vallendar",
             path: "vallendar",
             districtPath: "mayen_koblenz",
             center: [{ bold: "Административный центр:", text: " Валлендар." }],
@@ -79,7 +76,6 @@ const datas =
         {
             id: 15_4,
             name: "Вайсентурм",
-            fullName: "Weißenthurm",
             path: "weisenthurm",
             districtPath: "mayen_koblenz",
             center: [{ bold: "Административный центр:", text: " Вайсентурм." }],
@@ -102,7 +98,6 @@ const datas =
         {
             id: 15_5,
             name: "Майфельд",
-            fullName: "Maifeld",
             path: "maifeld",
             districtPath: "mayen_koblenz",
             center: [{ bold: "Административный центр:", text: " Полх (Polch)." }],
@@ -136,7 +131,6 @@ const datas =
         {
             id: 15_6,
             name: "Райн-Мозель",
-            fullName: "Rhein-Mosel",
             path: "rhein_mosel",
             districtPath: "mayen_koblenz",
             center: [{ bold: "Административный центр:", text: " Коберн-Гондорф (Kobern-Gondorf)." }],
@@ -169,7 +163,6 @@ const datas =
         {
             id: 15_7,
             name: "Фордерайфель",
-            fullName: "Vordereifel",
             path: "vordereifel",
             districtPath: "mayen_koblenz",
             center: [{ bold: "Административный центр:", text: " Монреаль (Monreal)." }],

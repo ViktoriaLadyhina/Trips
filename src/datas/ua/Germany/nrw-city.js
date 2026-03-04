@@ -4,7 +4,7 @@ const datas = [
         id: 1,
         name: 'Кельн',
         path: "koln",
-        district: "city",
+        countryPath: "germany", regionsPath: "nrw", districtPath: "city",
         desc: {
             general: [
                 { text: 'Кельн – найбільше місто землі Північний Рейн-Вестфалія та четверте за чисельністю населення місто Німеччини.' },
@@ -99,7 +99,7 @@ const datas = [
         id: 3,
         name: 'Моншау',
         path: "monschau",
-        district: "koln",
+        countryPath: "germany", regionsPath: "nrw", districtPath: "koln", subRegionPath: "aachen",
         desc: {
             general: [{ text: 'Моншау (нім. Monschau) розташований у західній частині Німеччини, у регіоні Айфель землі Північний Рейн-Вестфалія, недалеко від кордону з Бельгією. Місто відоме своєю історичною архітектурою, затишними вуличками з фахверковими будинками та мальовничими видами на річку Рур.' }],
             population: [{ bold: 'Населення', text: ' міста становить близько 13 000 осіб (станом на 31 грудня 2024 року).' }],
@@ -163,7 +163,7 @@ const datas = [
         id: 2,
         name: 'Брюль',
         path: "bruhl",
-        district: "koln",
+        countryPath: "germany", regionsPath: "nrw", districtPath: "koln", subRegionPath: "rhein_erft",
         desc: {
             general: [
                 { text: 'Місто в землі Північний Рейн-Вестфалія' }
@@ -224,7 +224,7 @@ const datas = [
         id: 3,
         name: 'Фрехен',
         path: "frechen",
-        district: "koln",
+        countryPath: "germany", regionsPath: "nrw", districtPath: "koln", subRegionPath: "rhein_erft",
         desc: {
             general: [
                 { text: 'Фрехен – місто в землі Північний Рейн-Вестфалія, що входить до району Рейн-Ерфт і розташоване всього за 10 км на захід від Кельна.' },
@@ -309,7 +309,7 @@ const datas = [
         id: 4,
         name: 'Кенігсвінтер',
         path: "konigswinter",
-        district: "rhein-sieg-kreis",
+        countryPath: "germany", regionsPath: "nrw", districtPath: "koln", subRegionPath: "rhein_sieg",
         desc: {
             general: [
                 { text: 'Кенігсвінтер – місто в землі Північний Рейн-Вестфалія, що входить до району Рейн-Зіг і розташоване на правому березі Рейну навпроти Бонна.' },
@@ -391,7 +391,7 @@ const datas = [
         id: 5,
         name: 'Люденшайд',
         path: "luedenscheid",
-        district: "arnsberg",
+        countryPath: "germany", regionsPath: "nrw", district: "arnsberg",
         desc: {
             general: [
                 { text: 'Люденшайд (нім. Lüdenscheid) розташований у північно-західній частині Заурланду в землі Північний Рейн-Вестфалія. Адміністративно місто входить до регіону Арнсберг і підпорядковується округу Меркіш.' },

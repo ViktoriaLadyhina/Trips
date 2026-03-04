@@ -809,7 +809,6 @@ const datas = {
                         ogDescription: "Кельн: адміністративний округ Північного Рейну-Вестфалія, міста, історія та цікаві факти.",
                         ogImage: "/nrw/koeln.jpg"
                     }
-
                 },
                 { id: 5, name: 'Мюнстер', hasInfo: false, path: "munster" }
             ]

@@ -3,7 +3,7 @@ const datas = [
         id: 1,
         name: 'Sumy',
         path: "sumy",
-        district: "sumska",
+        countryPath: "ukraine", regionsPath: "sumska", districtPath: "city",
         desc: {
             general: [
                 { text: 'Sumy ist eine Stadt von regionaler Bedeutung sowie das administrative, wirtschaftliche und kulturelle Zentrum der Oblast Sumy. Die Stadt wurde am 26. Juli 1655 gegründet. Sie liegt an den Ufern des Flusses Psel und seiner Nebenflüsse Sumka und Strilka. Administrativ ist die Stadt in zwei Bezirke gegliedert – Kowpakiwskyj und Saritschnyj, die 1973 gegründet wurden.' },

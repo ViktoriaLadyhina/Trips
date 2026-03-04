@@ -3,7 +3,7 @@ const datas = [
         id: 1,
         name: "Trier",
         path: "trier",
-        district: "city",
+        countryPath: "germany", regionsPath: "rheinland-pfalz", districtPath: "city",
         desc: {
             general: [
                 { text: 'Trier ist die älteste Stadt Deutschlands, im Westen des Landes im Bundesland Rheinland-Pfalz gelegen, nahe der Grenze zu Luxemburg. Die Stadt wurde vor über 2000 Jahren von den Römern gegründet und gilt als eines der wichtigsten Zentren des antiken Erbes in Europa.' },

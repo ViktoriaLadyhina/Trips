@@ -4,7 +4,7 @@ const datas = [
         name: "Спасо-Преображенский собор",
         type: ["cathedral"], rating: "popular",
         path: "sumy_spaso_preobrazhensky",
-        regionsPath: "sumska", districtPath: "city", cityPath: "sumy",
+        countryPath: "ukraine", regionsPath: "sumska", districtPath: "city", cityPath: "sumy",
         fotoCard: "Ukraine/sumska/sumy-city/spaso-preobrazhensky/004.jpg",
         location: "Сумы, Украина",
         address: [{ bold: "Адрес:", text: " ул. Соборная, 31, Сумы, Украина" }],
