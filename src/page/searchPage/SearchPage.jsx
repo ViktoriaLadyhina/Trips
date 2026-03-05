@@ -1,12 +1,16 @@
-import { useEffect, useState } from "react";
+import { useState, useEffect } from "react";
 import { Link, useLocation } from "react-router-dom";
 import { useSelector } from "react-redux";
-
-import { searchStructure } from "../../components/search/searchUtils"; // твоя функция поиска
+import { buildStaticSearchIndex, searchStatic } from "../../components/search/searchUtils";
 import BreadCrumbs from '../../components/breadCrumbs/BreadCrumbs';
 import './SearchPage.scss';
 
-const searchResultsText = { ru: "Результаты поиска", ua: "Результати пошуку", de: "Suchergebnisse" };
+const searchResultsText = {
+  ru: "Результаты поиска",
+  ua: "Результати пошуку",
+  de: "Suchergebnisse"
+};
+
 const noResultsText = { ru: "По вашему запросу ничего не найдено.", ua: "За вашим запитом нічого не знайдено.", de: "Für Ihre Suche wurden keine Ergebnisse gefunden." };
 
 const SearchPage = () => {
@@ -14,43 +18,48 @@ const SearchPage = () => {
   const location = useLocation();
   const query = new URLSearchParams(location.search).get("query") || "";
 
+  const [index, setIndex] = useState(null);
   const [results, setResults] = useState([]);
 
-  // --- 1. Выполняем поиск при изменении query или lang ---
+  // строим индекс
   useEffect(() => {
-    if (!query) {
-      setResults([]);
-      return;
-    }
+    const idx = buildStaticSearchIndex(lang);
+    setIndex(idx);
+  }, [lang]);
 
-    const res = searchStructure({ lang, query });
-    // Преобразуем результат в формат { title, url } для списка
-const formatted = res.map(r => ({
-  title: r.item.bold || r.item.text || "—",
-  url: r.item.url || "#"
-}));
-setResults(formatted);
+  // поиск
+  useEffect(() => {
+    if (!query || !index) return;
+    const res = searchStatic(query, lang, index);
+    setResults(res);
+  }, [query, lang, index]);
 
-    document.title = `${searchResultsText[lang]}: "${query}"`;
-  }, [query, lang]);
+  // обновляем title
+  useEffect(() => {
+    document.title = searchResultsText[lang];
+  }, [lang]);
 
   const crumbs = [
     { label: lang === 'ru' ? 'Главная' : lang === 'de' ? 'Startseite' : 'Головна', path: '/' },
     { label: searchResultsText[lang] }
   ];
 
-    return (
+  return (
     <div className="search-results">
       <BreadCrumbs crumbs={crumbs} />
-      <h2 className="search-results__title">{searchResultsText[lang]}: '{query}'</h2>
+      <h2 className="search-results__title">
+        {searchResultsText[lang]}: '{query}'
+      </h2>
 
       {results.length === 0 ? (
-        <p className="search-results__empty">{noResultsText[lang]}</p>
+ <p className="search-results__empty">{noResultsText[lang]}</p>
       ) : (
-        <ul>
+        <ul className="search-results__list">
           {results.map((item, i) => (
-            <li key={i}>
-              <Link to={item.url}>{item.title}</Link>
+            <li key={i} className="search-results__item">
+              <Link to={item.url || "#"} className="search-results__link">
+                {item.title}
+              </Link>
             </li>
           ))}
         </ul>

@@ -1,25 +1,5 @@
 import searchIndex from './index'
 
-// Рекурсивное извлечение текста из объекта
-function extractText(obj) {
-  if (!obj) return '';
-  let result = '';
-
-  if (typeof obj === 'string') return obj + ' ';
-  if (Array.isArray(obj)) {
-    obj.forEach(i => { result += extractText(i); });
-    return result;
-  }
-  if (typeof obj === 'object') {
-    if (obj.text) result += obj.text + ' ';
-    if (obj.bold) result += obj.bold + ' ';
-    Object.values(obj).forEach(v => {
-      if (v !== obj.text && v !== obj.bold) result += extractText(v);
-    });
-  }
-  return result;
-}
-
 // нормализация текста
 export const normalize = str => str
   .toLowerCase()
@@ -32,52 +12,122 @@ export const normalize = str => str
   .replace(/['’]/g, "")
   .trim();
 
-// основной поиск
-export function searchStructure({ lang = 'ru', query = '', country = null, region = null, type = null }) {
-  if (!query) return [];
+// Рекурсивное извлечение текста из объекта
+function extractText(obj) {
+  if (!obj) return "";
+  if (typeof obj === "string") return obj + " ";
+  if (Array.isArray(obj)) return obj.map(extractText).join(" ");
+  if (typeof obj === "object") return Object.values(obj).map(extractText).join(" ");
+  return "";
+}
 
-  const results = [];
-  const langData = searchIndex[lang];
-  if (!langData) return results;
+// добавляем searchText для всех объектов
+export function buildStaticSearchIndex(lang = "ru") {
+  const idx = JSON.parse(JSON.stringify(searchIndex[lang]));
 
-  const normalizedQuery = normalize(query);
-
-  const countriesToSearch = country ? { [country]: langData[country] } : langData;
-
-  function searchObj(obj, path = []) {
-    if (!obj) return;
-
-    if (Array.isArray(obj)) {
-      obj.forEach((item, index) => {
-        searchObj(item, [...path, index]);
-      });
-    } else if (typeof obj === 'object') {
-      const text = normalize(extractText(obj));
-      if (text.includes(normalizedQuery)) {
-        results.push({ path, item: obj });
-      }
-
-      Object.entries(obj).forEach(([key, value]) => {
-        searchObj(value, [...path, key]);
-      });
+  function addSearchText(node) {
+    if (!node) return;
+    if (Array.isArray(node)) {
+      node.forEach(item => item.searchText = normalize(extractText(item)));
+    } else if (typeof node === "object") {
+      Object.values(node).forEach(v => addSearchText(v));
+      node.searchText = normalize(extractText(node));
     }
   }
 
-  for (const cKey in countriesToSearch) {
-    const countryData = countriesToSearch[cKey];
-    if (!countryData) continue;
+  addSearchText(idx);
+  return idx;
+}
 
-    if (region) {
-      const regionData = countryData[region];
-      if (!regionData) continue;
+// поиск по конкретному индексу
+export function searchStatic(query, lang, index) {
+  if (!query || !index) return [];
+  const lowerQuery = normalize(query);
+  const results = [];
 
-      if (type && regionData[type]) {
-        searchObj(regionData[type], [lang, cKey, region, type]);
-      } else {
-        searchObj(regionData, [lang, cKey, region]);
+  for (const countryKey in index) {
+    const country = index[countryKey];
+
+    // поиск по стране
+    if (country.country?.searchText?.includes(lowerQuery)) {
+      results.push({
+        title: country.country.name || countryKey,
+        type: "country",
+        url: `/${countryKey}`
+      });
+    }
+
+    for (const regionKey in country) {
+      if (regionKey === "country") continue;
+      const region = country[regionKey];
+
+      // регион
+      if (region.land?.searchText?.includes(lowerQuery)) {
+        results.push({
+          title: region.land.name || regionKey,
+          type: "region",
+          url: `/${countryKey}/${regionKey}`
+        });
       }
-    } else {
-      searchObj(countryData, [lang, cKey]);
+
+      // города
+      (region.city || []).forEach(city => {
+        if (city.searchText?.includes(lowerQuery)) {
+          const cityUrl = city.districtPath
+            ? `/${countryKey}/${regionKey}/${city.districtPath}/${city.path}` // города в округах
+            : `/${countryKey}/${regionKey}/city/${city.path}`;               // города областного значения
+
+          results.push({
+            title: city.name || city.title,
+            type: "city",
+            url: cityUrl
+          });
+        }
+      });
+
+      // округа
+      (region.districts || []).forEach(district => {
+        if (district.searchText?.includes(lowerQuery)) {
+          results.push({
+            title: district.name || district.title,
+            type: "district",
+            url: `/${countryKey}/${regionKey}/${district.path}`
+          });
+        }
+      });
+
+      // субрегионы
+      (region.subRegions || []).forEach(sub => {
+        if (sub.searchText?.includes(lowerQuery)) {
+          results.push({
+            title: sub.name || sub.title,
+            type: "district",
+            url: `/${countryKey}/${regionKey}/${sub.districtPath}`
+          });
+        }
+      });
+
+      // достопримечательности
+      (region.attractions || []).forEach(attraction => {
+        if (attraction.searchText?.includes(lowerQuery)) {
+          results.push({
+            title: attraction.name || "Достопримечательность",
+            type: "attraction",
+            url: `/${countryKey}/${regionKey}/${attraction.districtPath}/${attraction.cityPath}/attractions/${attraction.path}`
+          });
+        }
+      });
+
+      // мероприятия
+      (region.events || []).forEach(event => {
+        if (event.searchText?.includes(lowerQuery)) {
+          results.push({
+            title: event.name || "Событие",
+            type: "event",
+            url: `/${countryKey}/${regionKey}/${event.districtPath}/${event.cityPath}/events/${event.path}`
+          });
+        }
+      });
     }
   }
 

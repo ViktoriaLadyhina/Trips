@@ -46,7 +46,7 @@ function useCityFullData() {
 
         // Загружаем модуль страны
         const countryModule = await modulesCountry[keyCountry]();
-        const countries = countryModule.datas;
+        const countries = countryModule.default;
 
         // Находим страну по path
         const foundCountry = countries.find(c => c.path === countryPath);
