@@ -13,6 +13,7 @@
     "@reduxjs/toolkit": "^2.9.0",
     "@svg-maps/germany": "^1.0.1",
     "@svg-maps/ukraine": "^1.0.0",
+    "fuse.js": "^7.1.0",
     "leaflet": "^1.9.4",
     "react": "^19.1.1",
     "react-dom": "^19.1.1",

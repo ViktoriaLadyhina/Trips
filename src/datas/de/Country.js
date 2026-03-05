@@ -1,4 +1,4 @@
-export const datas = [
+const datas = [
   {
     id: 1,
     path: 'ukraine',
@@ -226,3 +226,4 @@ export const datas = [
   }
 
 ];
+export default datas;

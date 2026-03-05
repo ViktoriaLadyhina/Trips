@@ -1,4 +1,4 @@
-export const datas = [
+const datas = [
   {
     id: 1,
     path: 'ukraine',
@@ -225,4 +225,5 @@ export const datas = [
       ogImage: "https://our-travels.info/foto/Germany/Flag.jpg"
     }
   }
-];
+]
+export default datas;
