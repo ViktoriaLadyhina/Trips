@@ -329,6 +329,63 @@ const datas = [
       ogImage: "https://our-travels.info/foto/Germany/rheinland-pfalz/trier-city/roman_bridge/001.jpg"
     }
   },
+  {
+    id: "cathedral_trier",
+    name: "Trierer Dom",
+    type: ["cathedral"],rating: "top",
+    path: "cathedral_trier", 
+    countryPath: "germany", regionsPath: "rheinland-pfalz", districtPath: "city", cityPath: "trier",
+    fotoCard: "Germany/rheinland-pfalz/trier-city/cathedral/001.jpg",
+    location: "Trier, Deutschland",
+    officialSite: [{ bold: "Offizielle Website", link: "https://www.trierer-dom.de" }],
+    unesco_status: { included: true, year: 1986 },
+    short_description: "Der Trierer Dom ist die älteste Kirche Deutschlands, gegründet im 4. Jahrhundert. Die imposante Kirche mit romanischer Architektur und reicher Geschichte bewahrt den berühmten Heiligen Rock und ein Schatzkammer-Museum mit seltenen christlichen Reliquien.",
+    full_description: {
+      title: "Beschreibung und Geschichte",
+      items: [
+        { bold: "Trierer Dom", text: "– ist ein beeindruckender historischer Komplex im Zentrum von Trier, der Elemente der romanischen und gotischen Architektur vereint. Er ist die älteste Kathedrale Deutschlands und dient noch heute als aktive Kirche. Der Dom ist bekannt für seine imposanten Gewölbe, massiven Säulen und schönen Glasfenster." },
+        { bold: "Architektur und Rekonstruktionen.", text: "Der Dom wurde auf den Fundamenten einer frühchristlichen Basilika aus dem 4. Jahrhundert errichtet, und seine Architektur spiegelt die Jahrhunderte lange Geschichte wider. Er vereint Elemente spätantiker, romanischer, gotischer und barocker Baukunst. Die romanische Grundstruktur stammt aus dem 12. Jahrhundert, gotische Elemente wurden im 13.–14. Jahrhundert hinzugefügt. Im Inneren sind einzigartige Marmordetails, Skulpturen und Malereien verschiedener Epochen zu sehen." },
+        { bold: "Schatzkammer des Doms (Trier Cathedral Treasury)", text: "bewahrt wertvolle kirchliche Reliquien, darunter Reliquiare, liturgische Gefäße und Textilien. Viele Exponate stammen aus dem Mittelalter und gelten als Meisterwerke der sakralen Kunst. Die Sammlung ermöglicht es, die religiöse und künstlerische Tradition der Region nachzuvollziehen." },
+        { bold: "Religiöse und kulturelle Bedeutung.", text: "Der Dom war stets das Zentrum des christlichen Lebens in Trier und ein Ort der Pilgerfahrt. Kathedrale und Schatzkammer gehören zu den bedeutenden historisch-kulturellen Objekten und sind Teil der touristischen Routen der Stadt."},
+        { bold: "Moderne Nutzung.", text: "Heute zieht der Trierer Dom jährlich Tausende von Touristen und Pilgern an. Hier finden Gottesdienste, Orgelkonzerte und spezielle Führungen durch die Schatzkammer statt, was ihn zu einem der wichtigsten touristischen und religiösen Zentren von Trier macht." }
+      ]
+    },
+    tickets_and_entry: {
+      title: "Praktische Informationen",
+      items: [
+        { bold: "Adresse:", text: "Domfreihof 1, 54290 Trier, Deutschland" },
+        { bold: "Öffnungszeiten:", text: "täglich von 10:00 bis 18:00 Uhr (Dom), <br>Schatzkammer von 10:00 bis 17:30 Uhr" },
+        { bold: "Eintritt:", text: "Eintritt in den Dom frei, Museum kostenpflichtig (~5-7 €)" }
+      ]
+    },
+    sub_objects: {
+      title: "Reliquien",
+      items: [
+        { bold: "Heiliger Rock,", text: "bekannt als Trierer Heiliger Rock, gilt als eine der am meisten verehrten christlichen Reliquien des Doms. Nach kirchlicher Überlieferung handelt es sich um ein nahtloses Kleidungsstück, das Jesus Christus vor der Kreuzigung getragen haben soll. Die Reliquie wird in einem speziellen Reliquienschrein im Dom aufbewahrt und ist normalerweise nicht dauerhaft ausgestellt; sie wird nur zu seltenen Pilgerausstellungen öffentlich gezeigt, die Tausende von Gläubigen aus aller Welt anziehen. Historiker vermuten, dass die Reliquie im 4. Jahrhundert zur Zeit von Kaiser Konstantin I. nach Trier gelangte, doch ihre genaue Herkunft bleibt wissenschaftlich umstritten." },
+        { bold: "Metternich-Altar", text: "– ein mittelalterlicher Holzaltar, verziert mit Szenen aus dem Leben Christi und der Heiligen. Er wurde von der Familie Metternich, einem einflussreichen Adelsgeschlecht der Region, in Auftrag gegeben oder mit ihr in Verbindung gebracht. Der Altar zeigt meisterhafte Holzschnitzkunst und Malerei der damaligen Zeit und hat trotz der Jahrhunderte seine lebendigen Farben und Goldverzierungen bewahrt."},
+        { bold: "Bischofskreuz, 4.–5. Jahrhundert", text: "– eines der ältesten christlichen Kreuze, das mit der Geschichte des Trierer Doms verbunden ist. Dieses kleine Kreuz, verziert mit Edelsteinen und dekorativen Elementen, wurde als Symbol der bischöflichen Autorität und geistlichen Leitung in der frühchristlichen Zeit verwendet. Es stammt aus der Zeit des Spätromischen Reiches, als Trier ein bedeutendes religiöses und politisches Zentrum war. Heute wird das Kreuz in der Schatzkammer aufbewahrt und gilt als wertvolles Zeugnis frühchristlicher Kunst und kirchlicher Tradition." },
+        { bold: "Schätze der mittelalterlichen Liturgie", text: "– Gefäße, Reliquiare und Textilien, die im Gottesdienst verwendet wurden." }
+      ]
+    },
+    interestingFacts: {
+      title: "Interessante Fakten",
+      items: [
+        { text: "Der Trierer Dom gilt als die älteste noch aktive Kathedrale Deutschlands, und das Bischofsamt in der Stadt besteht seit über 1600 Jahren." },
+        { text: "Der erste christliche Tempel an dieser Stelle wurde im 4. Jahrhundert zur Zeit des Römischen Reiches errichtet, als Trier eine der kaiserlichen Residenzen war." },
+        { text: "Die Mauern des Doms sind an einigen Stellen über 4 Meter dick, da beim Bau Steine aus römischen Bauwerken verwendet wurden." },
+        { text: "Neben dem Dom befindet sich die Kirche Liebfrauenkirche – eine der frühesten gotischen Kirchen Deutschlands." }
+      ]
+    },
+    construction_period: "IV-XII Jahrhundert",
+    coord: { lat: 49.75625, lng: 6.64366 },
+    meta: {
+      title: "Trierer Dom (Trier Cathedral) und Schatzkammer",
+      description: "Entdecken Sie den Trierer Dom aus dem 12. Jahrhundert mit einzigartigen Reliquien und der Schatzkammer des Doms. Geschichte, Architektur und wertvolle Artefakte christlicher Kunst in Trier.",
+      ogTitle: "Trierer Dom und Schatzkammer – Geschichte und Reliquien",
+      ogDescription: "Tauchen Sie ein in die Geschichte des Trierer Doms aus dem 12. Jahrhundert und entdecken Sie die Schatzkammer mit seltenen kirchlichen Artefakten.",
+      ogImage: "https://our-travels.info/foto/Germany/rheinland-pfalz/trier-city/cathedral/001.jpg"
+    }
+  },
 ];
 
 export default datas;

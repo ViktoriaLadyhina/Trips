@@ -18,21 +18,10 @@ const SearchPage = () => {
   const location = useLocation();
   const query = new URLSearchParams(location.search).get("query") || "";
 
-  const [index, setIndex] = useState(null);
-  const [results, setResults] = useState([]);
 
-  // строим индекс
-  useEffect(() => {
-    const idx = buildStaticSearchIndex(lang);
-    setIndex(idx);
-  }, [lang]);
 
-  // поиск
-  useEffect(() => {
-    if (!query || !index) return;
-    const res = searchStatic(query, lang, index);
-    setResults(res);
-  }, [query, lang, index]);
+const index = buildStaticSearchIndex(lang);
+const results = query ? searchStatic(query, lang, index) : [];
 
   // обновляем title
   useEffect(() => {

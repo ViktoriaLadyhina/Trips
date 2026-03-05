@@ -450,6 +450,19 @@ export const Fotos = {
       roman_bridge_trier: [
         { path: "Germany/rheinland-pfalz/trier-city/roman_bridge/001.jpg", title: { ru: "Римский мост (фото взято с интернета)", ua: "Римський міст (фото взято з Інтернету)", de: "Römerbrücke (Foto aus dem Internet)" } },
       ],
+      cathedral_trier: [
+        { path: "Germany/rheinland-pfalz/trier-city/cathedral/001.jpg", title: { ru: "Кафедральный собор, 2024", ua: "Кафедральний собор, 2024", de: "Trierer Dom, 2024" } },
+        { path: "Germany/rheinland-pfalz/trier-city/cathedral/002.jpg", title: { ru: "Кафедральный собор, 2024", ua: "Кафедральний собор, 2024", de: "Trierer Dom, 2024" } },
+        { path: "Germany/rheinland-pfalz/trier-city/cathedral/003.jpg", title: { ru: "Кафедральный собор - Барочный купол, 2024", ua: "Кафедральний собор - Бароковий купол, 2024", de: "Trierer Dom - Barocke Kuppel, 2024" } },
+        { path: "Germany/rheinland-pfalz/trier-city/cathedral/004.jpg", title: { ru: "Кафедральный собор, 2024", ua: "Кафедральний собор, 2024", de: "Trierer Dom, 2024" } },
+        { path: "Germany/rheinland-pfalz/trier-city/cathedral/005.jpg", title: { ru: "Кафедральный собор, 2024", ua: "Кафедральний собор, 2024", de: "Trierer Dom, 2024" } },
+        { path: "Germany/rheinland-pfalz/trier-city/cathedral/006.jpg", title: { ru: "Кафедральный собор, 2024", ua: "Кафедральний собор, 2024", de: "Trierer Dom, 2024" } },
+        { path: "Germany/rheinland-pfalz/trier-city/cathedral/007.jpg", title: { ru: "Кафедральный собор, 2024", ua: "Кафедральний собор, 2024", de: "Trierer Dom, 2024" } },
+        { path: "Germany/rheinland-pfalz/trier-city/cathedral/008.jpg", title: { ru: "Кафедральный собор, 2024", ua: "Кафедральний собор, 2024", de: "Trierer Dom, 2024" } },
+        { path: "Germany/rheinland-pfalz/trier-city/cathedral/009.jpg", title: { ru: "Кафедральный собор, 2024", ua: "Кафедральний собор, 2024", de: "Trierer Dom, 2024" } },
+        { path: "Germany/rheinland-pfalz/trier-city/cathedral/010.jpg", title: { ru: "Кафедральный собор, 2024", ua: "Кафедральний собор, 2024", de: "Trierer Dom, 2024" } },
+        { path: "Germany/rheinland-pfalz/trier-city/cathedral/011.jpg", title: { ru: "Кафедральный собор - Алтарь Меттерниху, 2024", ua: "Кафедральний собор - Вівтар Меттерніха, 2024", de: "Trierer Dom - Metternich-Altar, 2024" } },
+      ]
     }
   }
 }
