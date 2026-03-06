@@ -21,7 +21,7 @@ const kolnDistrictCenters = {
   A: { x: 35, y: 220, dx: -12, dy: 2 },
 };
 
-const NRWKolnMap = ({ regions }) => {
+const NRWKolnMap = ({ regions, subRegion }) => {
   const navigate = useNavigate();
   const location = useLocation();
   const [hoverRegion, setHoverRegion] = useState(null);
@@ -29,21 +29,20 @@ const NRWKolnMap = ({ regions }) => {
 
   const districtPagePath = "/germany/nrw/koln";
 
+
   // 1️⃣ Берём субрегионы Köln
-  const kolnSubRegions = useMemo(() => {
-    return regions?.discriptRegions?.[0]?.items?.find(r => r.path === "koln")?.subRegion || [];
-  }, [regions]);
+  const kolnSubRegions = useMemo(() => subRegion || [], [subRegion]);
 
   // 2️⃣ Берём города
   const freeCities = useMemo(() => {
-    return ["koln", "leverkusen", "bonn", "aachen"]
+    return ["koln", "leverkusen", "bonn", "aachen-city"]
       .map(slug => regions?.discriptRegions?.[1]?.items?.find(city => city.path === slug))
       .filter(Boolean);
   }, [regions]);
 
   // Функция клика по субрегиону
   const scrollToSubRegion = (reg) => {
-    const slug = slugify(reg.fullName);
+    const slug = slugify(reg.path);
     if (location.pathname.startsWith(districtPagePath)) {
       document.getElementById(`subregion-${slug}`)?.scrollIntoView({ behavior: "smooth" });
     } else {
@@ -62,7 +61,7 @@ const NRWKolnMap = ({ regions }) => {
         <g className="map-shape">
           {/* 1️⃣ Субрегионы */}
           {kolnSubRegions.map((reg) => {
-            const loc = districts.find(d => d.name === reg.fullName);
+            const loc = districts.find(d => d.name === reg.path);
             if (!loc) return null;
 
             return (
@@ -98,37 +97,37 @@ const NRWKolnMap = ({ regions }) => {
 
           {/* 3️⃣ Подписи субрегионов */}
           {kolnSubRegions.map((reg) => {
-            const loc = districts.find(d => d.name === reg.fullName);
+            const loc = districts.find(d => d.name === reg.path);
             if (!loc) return null;
 
             const center = kolnDistrictCenters[loc.id] || { x: 0, y: 0, dx: 0, dy: 0 };
             return (
-<text
-  key={`${loc.id}-label`}
-  x={center.x + (center.dx || 0)}
-  y={center.y + (center.dy || 0)}
-  textAnchor="middle"
-  dominantBaseline="middle"
-  style={{ fontSize: "4px" }}
-  fill="#000"
-  pointerEvents="none"
->
-  {reg.fullName.includes("-")
-    ? reg.name.split("-").map((part, i) => (
-        <tspan
-          key={i}
-          x={center.x + (center.dx || 0)}
-          dy={i === 0 ? "0" : "1.2em"} // первая строка без смещения, остальные снизу
-        >
-          {i === 0 ? part.trim() + "-" : part.trim()}
-        </tspan>
-      ))
-    : (
-        <tspan x={center.x + (center.dx || 0)} dy="0">
-          {reg.name}
-        </tspan>
-      )}
-</text>
+              <text
+                key={`${loc.id}-label`}
+                x={center.x + (center.dx || 0)}
+                y={center.y + (center.dy || 0)}
+                textAnchor="middle"
+                dominantBaseline="middle"
+                style={{ fontSize: "4px" }}
+                fill="#000"
+                pointerEvents="none"
+              >
+                {reg.path.includes("-")
+                  ? reg.name.split("-").map((part, i) => (
+                    <tspan
+                      key={i}
+                      x={center.x + (center.dx || 0)}
+                      dy={i === 0 ? "0" : "1.2em"} // первая строка без смещения, остальные снизу
+                    >
+                      {i === 0 ? part.trim() + "-" : part.trim()}
+                    </tspan>
+                  ))
+                  : (
+                    <tspan x={center.x + (center.dx || 0)} dy="0">
+                      {reg.name}
+                    </tspan>
+                  )}
+              </text>
             );
           })}
 

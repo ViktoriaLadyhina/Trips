@@ -32,26 +32,26 @@ const RPMap = ({ regions }) => {
     // ---------------- Округа (Landkreise)
     Rahrweiler: { x: 10000, y: 10000, dx: -1000, dy: -3000 },
     Raltenkirchen: { x: 10000, y: 10000, dx: 4000, dy: -5900 },
-    "Ralzey-worms": { x: 10000, y: 10000, dx: 6000, dy: 4900 },
-    "Rbad-duerkheim": { x: 10000, y: 10000, dx: 6300, dy: 7800 },
-    "Rbad-kreuznach": { x: 10000, y: 10000, dx: 3000, dy: 4200 },
-    "Rbernkastel-wittlich": { x: 10000, y: 10000, dx: -2000, dy: 2800 },
+    Ralzey_worms: { x: 10000, y: 10000, dx: 6000, dy: 4900 },
+    Rbad_duerkheim: { x: 10000, y: 10000, dx: 6300, dy: 7800 },
+    Rbad_kreuznach: { x: 10000, y: 10000, dx: 3000, dy: 4200 },
+    Rbernkastel_wittlich: { x: 10000, y: 10000, dx: -2000, dy: 2800 },
     Rbirkenfeld: { x: 10000, y: 10000, dx: 100, dy: 5800 },
-    "Rcochem-zell": { x: 10000, y: 10000, dx: -400, dy: 800 },
+    Rcochem_zell: { x: 10000, y: 10000, dx: -400, dy: 800 },
     Rdonnersbergkreis: { x: 10000, y: 10000, dx: 4700, dy: 6500 },
-    "Reifelkreis-bitburg-pruem": { x: 10000, y: 10000, dx: -5600, dy: 1700 },
+    Reifelkreis_bitburg_pruem: { x: 10000, y: 10000, dx: -5600, dy: 1700 },
     Rgermersheim: { x: 10000, y: 10000, dx: 7600, dy: 12700 },
     Rkaiserslautern: { x: 10000, y: 10000, dx: 3300, dy: 8000 },
     Rkusel: { x: 10000, y: 10000, dx: 1800, dy: 7300 },
-    "Rmainz-bingen": { x: 10000, y: 10000, dx: 5400, dy: 3000 },
-    "Rmayen-koblenz": { x: 10000, y: 10000, dx: 300, dy: -1400 },
+    Rmainz_bingen: { x: 10000, y: 10000, dx: 5400, dy: 3000 },
+    Rmayen_koblenz: { x: 10000, y: 10000, dx: 300, dy: -1400 },
     Rneuwied: { x: 10000, y: 10000, dx: 1400, dy: -3200 },
-    "Rrhein-hunsrueck-kreis": { x: 10000, y: 10000, dx: 1900, dy: 1700 },
-    "Rrhein-lahn-kreis": { x: 10000, y: 10000, dx: 4000, dy: -600 },
-    "Rrhein-pfalz-kreis": { x: 10000, y: 10000, dx: 8600, dy: 8900 },
-    "Rsuedliche-weinstrasse": { x: 10000, y: 10000, dx: 7500, dy: 10500 },
+    Rrhein_hunsrueck_kreis: { x: 10000, y: 10000, dx: 1900, dy: 1700 },
+    Rrhein_lahn_kreis: { x: 10000, y: 10000, dx: 4000, dy: -600 },
+    Rrhein_pfalz_kreis: { x: 10000, y: 10000, dx: 8600, dy: 8900 },
+    Rsuedliche_weinstrasse: { x: 10000, y: 10000, dx: 7500, dy: 10500 },
     Rsuedwestpfalz: { x: 10000, y: 10000, dx: 2500, dy: 9850 },
-    "Rtrier-saarburg": { x: 10000, y: 10000, dx: -3500, dy: 6000 },
+    Rtrier_saarburg: { x: 10000, y: 10000, dx: -3500, dy: 6000 },
     Rvulkaneifel: { x: 10000, y: 10000, dx: -3200, dy: -300 },
     Rwesterwaldkreis: { x: 10000, y: 10000, dx: 4500, dy: -3800 },
 
@@ -71,7 +71,6 @@ const RPMap = ({ regions }) => {
   };
 
 
-
   return (
 
     <div className="map-container">
@@ -82,7 +81,7 @@ const RPMap = ({ regions }) => {
           {rlpDistricts.map((district) => {
             const loc = districts.find((d) => d.id === `R${district.path}`);
             if (!loc) return null;
-
+            
             return (
               <path
                 key={loc.id}

@@ -2,9 +2,9 @@ import { useSelector } from 'react-redux';
 import { Link, useParams } from 'react-router';
 import { useEffect, useState } from 'react';
 
-import { datas as countriesUa } from '../../datas/ua/country';
-import { datas as countriesRu } from '../../datas/ru/country';
-import { datas as countriesDe } from '../../datas/de/country';
+import countriesUa from '../../datas/ua/Country';
+import countriesRu from '../../datas/ru/Country';
+import countriesDe from '../../datas/de/Country';
 
 import BreadCrumbs from '../../components/breadCrumbs/BreadCrumbs';
 import InfoBlock from '../../components/InfoBlock/InfoBlock';

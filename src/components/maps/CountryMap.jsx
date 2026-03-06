@@ -24,7 +24,7 @@ const maps = {
   },
 };
 
-export default function CountryMap({ countryKey, regionKey, regions, districtKey }) {
+export default function CountryMap({ countryKey, regionKey, regions, subRegion, districtKey }) {
   const country = maps[countryKey];
   if (!country) return null;
 
@@ -55,6 +55,7 @@ export default function CountryMap({ countryKey, regionKey, regions, districtKey
       countryPath={countryKey}
       regionPath={regionKey}
       districtPath={districtKey}
+      subRegion={subRegion}
     />
   );
 }

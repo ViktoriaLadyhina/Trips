@@ -1,4 +1,4 @@
-export const datas = [
+const datas = [
   {
     id: 1,
     path: 'ukraine',
@@ -99,8 +99,7 @@ export const datas = [
         { id: 26, name: 'Севастополь', path: 'sevastopol', hasInfo: false, svgId: "sevastopol" },
         { id: 27, name: 'Автономная Республика Крым', path: 'crimea', hasInfo: false, svgId: "crimea" }
       ]
-    }
-    ,
+    },
     meta: {
       title: "Украина — информация о стране, достопримечательности и культура",
       description: "Все о стране Украина: столица Киев, география, население, языки, кухня, праздники и краткая история.",
@@ -168,7 +167,7 @@ export const datas = [
         {
           bold: "Флаг:",
           text: " национальный флаг Германии представляет собой прямоугольное полотнище с тремя равными горизонтальными полосами: верхняя – черная, средняя – красная, нижняя – золотая. Эти цвета имеют историческое значение и связаны с национально-освободительными движениями XIX века, символизируя единство и свободу страны.",
-          img: "Germany/Flag.jpg"
+          img: "Germany/flag.jpg"
         }
       ]
     },
@@ -224,4 +223,5 @@ export const datas = [
       ogImage: "https://our-travels.info/foto/Germany/Flag.jpg"
     }
   }
-];
+]
+export default datas;

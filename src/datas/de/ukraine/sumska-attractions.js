@@ -2,11 +2,9 @@ const datas = [
     {
         id: "sumy_spaso_preobrazhensky",
         name: "Spaso-Preobraschenski-Kathedrale",
-        type: ["cathedral"],
+        type: ["cathedral"], rating: "popular",
         path: "sumy_spaso_preobrazhensky",
-        regionsPath: "sumska",
-        districtPath: "city",
-        cityPath: "sumy",
+        countryPath: "ukraine", regionsPath: "sumska", districtPath: "city", cityPath: "sumy",
         fotoCard: "Ukraine/sumska/sumy-city/spaso-preobrazhensky/004.jpg",
         location: "Sumy, Ukraine",
         address: [{ bold: "Adresse:", text: " Sobornaya Str. 31, Sumy, Ukraine" }],
@@ -48,6 +46,7 @@ const datas = [
                 { text: "Festliche Gottesdienste werden nach außen übertragen, damit die Gläubigen am Gottesdienst teilnehmen können, während sie sich auf dem Platz vor der Kirche befinden." },
             ]
         },
+        coord: { lat: 50.90927, lng: 34.80038 },
         meta: {
             title: "Spaso-Preobraschenski-Kathedrale in Sumy",
             description: "Die Spaso-Preobraschenski-Kathedrale ist der Haupttempel von Sumy, ein architektonisches Denkmal des 18.–19. Jahrhunderts mit Marmor-Malachit-Ikonostase und 56 Meter hohem Glockenturm.",
@@ -59,19 +58,18 @@ const datas = [
     {
         id: "pokrovska_square_sumy",
         name: "Pokrowska-Platz",
-        type: ["square"],
+        type: ["square"], rating: "local",
         path: "pokrovska_square_sumy",
-        countryPath: "ukraine",
-        regionsPath: "sumska",
-        districtPath: "city",
-        cityPath: "sumy",
+        countryPath: "ukraine", regionsPath: "sumska", districtPath: "city", cityPath: "sumy",
         fotoCard: "Ukraine/sumska/sumy-city/altanka/009.jpg",
         location: "Sumy, Ukraine",
         subObjects: ["sumy_altanka"],
         short_description: "Der Pokrowska-Platz ist der Ort, an dem die Geschichte der Stadt Sumy begann. Hier verbinden sich tragische Ereignisse der Vergangenheit mit dem ruhigen heutigen Stadtleben. Bis heute bewahrt der Platz eine besondere Atmosphäre von Erinnerung und Ruhe.",
         short_description_subObjects: {
-            text: "Auf dem Pokrowska-Platz befinden sich folgende Sehenswürdigkeiten:",
-            items: ["Altanka"]
+            text: "Auf dem Pokrovskaja-Platz befinden sich folgende Sehenswürdigkeiten:",
+            items: [
+                { bold: "Pavillon", text: "– der Pavillon gilt zu Recht als eines der wichtigsten architektonischen Wahrzeichen der Stadt" },
+            ]
         },
         full_description: {
             title: "Beschreibung und Geschichte",
@@ -96,6 +94,7 @@ const datas = [
                 { text: "Trotz seiner tragischen Vergangenheit gilt er heute als einer der ruhigsten und angenehmsten Orte im Stadtzentrum." }
             ]
         },
+        coord: { lat: 50.9078, lng: 34.7972 },
         meta: {
             title: "Pokrowska-Platz — historisches Zentrum von Sumy",
             description: "Der Pokrowska-Platz ist einer der ältesten Plätze von Sumy mit einer reichen Geschichte. Erfahren Sie mehr über seine Vergangenheit, Kriegsjahre und heutige Bedeutung.",
@@ -107,24 +106,17 @@ const datas = [
     {
         id: "sumy_altanka",
         name: "Der Pavillon ",
-        type: ["istorical_building"],
+        type: ["historical_building"], rating: "popular",
         path: "sumy_altanka",
-        countryPath: "ukraine",
-        regionsPath: "sumska",
-        districtPath: "city",
-        cityPath: "sumy",
+        countryPath: "ukraine", regionsPath: "sumska", districtPath: "city", cityPath: "sumy",
+        hiddenFromList: true, showMore: true,
         fotoCard: "Ukraine/sumska/sumy-city/altanka/009.jpg",
         location: "Sumy, Ukraine",
         address: [{ bold: "Adresse:", text: " Pokrowskyj-Platz" }],
-        hiddenFromList: true,
-        showMore: true,
-        unesco_status: {
-            included: false,
-        },
         construction_period: "Ungefähr zu Beginn des 20. Jahrhunderts – etwa 1900–1905",
         architects: ["Matwij Schtschaweljew"],
         founder: " Nikolai Liščynskyj",
-        short_description: "Gegen Ende des 19. Jahrhunderts äußerten Petersburger Wissenschaftler die Vermutung, dass es in der Umgebung von Sumy Erdölvorkommen geben könnte. Zu diesem Zweck reisten sie in die Stadt, wandten sich an die Zemstwo-Verwaltung und vereinbarten die Durchführung von Erkundungsarbeiten. Der Bohrplatz wurde direkt auf dem Platz vor dem Gebäude der Zemstwo-Verwaltung ausgewiesen. Eine Bohrung wurde niedergebracht, doch Erdöl konnte nicht nachgewiesen werden. Wahrscheinlich wäre diese Bohrstelle bald in Vergessenheit geraten, wenn nicht der Kaufmann der zweiten Gilde Liščynskyj, ein Verwandter der bekannten Familie Charitonenko, darauf aufmerksam geworden wäre. Ihm gehörte ein Garten, den er später der Stadt schenkte. Heute ist dieses Gelände Teil des Stadtparks. Der Kaufmann fügte dem Garten ein weiteres Grundstück hinzu, auf dem sich die Bohrung befand. Auf seine Anordnung hin wurde die Bohrstelle mit einer Stahlplatte verschlossen, und an dieser Stelle errichtete man einen Pavillon.",
+        short_description: "Der Pavillon in Sumy ist ein achteckiger Holzpavillon mit einem kreuzförmigen Dach und einer hohen facettierten Kuppel, der ohne Nägel gebaut wurde. Er ist mit eleganten profilierten Säulen, geschnitzten Gesimsverzierungen und dekorativen Dachspitzen geschmückt. Das Bauwerk wurde an der Stelle eines ehemaligen Ölförderbrunnens errichtet und ist Teil des Stadtparks am Pokrovskaja-Platz. Trotz seiner bescheidenen Größe zählt der Pavillon zu den wichtigsten architektonischen Sehenswürdigkeiten der Stadt.",
         full_description: {
             title: "Der Pavillon",
             items: [
@@ -136,11 +128,12 @@ const datas = [
                 { bold: "Der Pavillon heute", text: "Die Spaso-Preobraschenski-Kathedrale bleibt das spirituelle und architektonische Zentrum von Sumy. Sie vereint Gläubige, dient als Ort großer religiöser Feiertage und ist zugleich eine der wichtigsten touristischen Attraktionen der Stadt.Trotz seiner bescheidenen Größe gilt der Pavillon als eine der wichtigsten architektonischen Sehenswürdigkeiten der Stadt und schmückt den Park auf dem Pokrowskyj-Platz (ehemals Roter Platz)." },
             ]
         },
+        coord: { lat: 50.9068, lng: 34.7992 },
         meta: {
-            title: "Der Pavillon in Sumy",
-            description: "Die Spaso-Preobraschenski-Kathedrale ist der Haupttempel von Sumy, ein architektonisches Denkmal des 18.–19. Jahrhunderts mit Marmor-Malachit-Ikonostase und 56 Meter hohem Glockenturm.",
-            ogTitle: "Spaso-Preobraschenski-Kathedrale — das wichtigste Heiligtum von Sumy",
-            ogDescription: "Historische Kathedrale von Sumy: einzigartige Architektur, wundertätige Ikonen, malachitene Ikonostase und berühmte Glockenuhren, die alle drei Tage aufgezogen werden.",
+            title: "Pavillon in Sumy",
+            description: "Der Pavillon gilt zu Recht als eines der wichtigsten architektonischen Wahrzeichen der Stadt",
+            ogTitle: "Pavillon – die Visitenkarte von Sumy",
+            ogDescription: "Der Pavillon gilt zu Recht als eines der wichtigsten architektonischen Wahrzeichen der Stadt",
             ogImage: "https://our-travels.info/foto/Ukraine/sumska/sumy-city/altanka/009.jpg"
         }
     }

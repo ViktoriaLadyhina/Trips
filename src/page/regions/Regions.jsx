@@ -15,7 +15,7 @@ import BtnAttr from "../../components/btn-attr/BtnAttr";
 const BASE_PHOTO_URL = import.meta.env.VITE_BASE_PHOTO_URL;
 
 const Regions = () => {
-    const { countryPath, regionsPath } = useParams();
+    const { countryPath, regionPath } = useParams();
     const { lang, country, region, error } = useCityFullData();
     const [sidebarOpen, setSidebarOpen] = useState(false);
 
@@ -29,9 +29,9 @@ const Regions = () => {
 
     const photos = photosByCountry[countryPath];
 
-
     if (error) return <p>{error}</p>;
     if (!country) return <p>Loading...</p>;
+    if (!region) return <div>Загрузка региона...</div>;
 
     const crumbs = [
         { label: lang === 'ru' ? 'Главная' : lang === 'de' ? 'Startseite' : 'Головна', path: '/' },
@@ -54,7 +54,7 @@ const Regions = () => {
                                 <li key={district.id} className="regions__sidebar-item">
                                     {district.hasInfo ? (
                                         <Link
-                                            to={`/${countryPath}/${regionsPath}/${district.path}`}
+                                            to={`/${countryPath}/${regionPath}/${district.path}`}
                                             className="regions__sidebar-link"
                                         >
                                             {district.name}
@@ -79,7 +79,7 @@ const Regions = () => {
                                 <li key={city.id} className="regions__sidebar-item">
                                     {city.hasInfo ? (
                                         <Link
-                                            to={`/${countryPath}/${regionsPath}/city/${city.path}`}
+                                            to={`/${countryPath}/${regionPath}/city/${city.path}`}
                                             className="regions__sidebar-link"
                                         >
                                             {city.name}
@@ -101,7 +101,7 @@ const Regions = () => {
 
                 <h1 className="regions__title">{region.name}</h1>
 
-                <BtnAttr lang={lang} path={`/${countryPath}/${regionsPath}/attractions`} />
+                <BtnAttr lang={lang} path={`/${countryPath}/${regionPath}/attractions`} />
 
                 <div className='regions__map'>
                     <CountryMap
@@ -113,10 +113,10 @@ const Regions = () => {
 
                 {region.desc.capital && <InfoBlock data={region.desc.capital} className="regions__capital" />}
                 {region.desc.population && <InfoBlock data={region.desc.population} className="regions__population" />}
-                {photos[regionsPath]?.region?.[0] && (
+                {photos[regionPath]?.region?.[0] && (
                     <img
-                        src={`${BASE_PHOTO_URL}${photos[regionsPath].region[0].path}`}
-                        alt={photos[regionsPath].region[0].title}
+                        src={`${BASE_PHOTO_URL}${photos[regionPath].region[0].path}`}
+                        alt={photos[regionPath].region[0].title}
                         className="regions__foto"
                     />
                 )}

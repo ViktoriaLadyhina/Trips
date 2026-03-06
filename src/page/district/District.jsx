@@ -1,5 +1,5 @@
 import { useEffect } from "react";
-import { useLocation, useNavigate, useParams } from "react-router";
+import { useLocation, useParams } from "react-router";
 import BreadCrumbs from '../../components/breadCrumbs/BreadCrumbs.jsx';
 import Region from '../../components/region/Region.jsx';
 import InfoBlock from '../../components/InfoBlock/InfoBlock.jsx'
@@ -21,8 +21,8 @@ const slugify = (str = "") =>
     .replace(/[^\w\-]/g, "");
 
 const District = () => {
-  const { countryPath, regionsPath, districtPath } = useParams();
-  const { lang, country, region, district, error } = useCityFullData();
+  const { countryPath, regionPath, districtPath } = useParams();
+  const { lang, country, region, district, subRegion, error } = useCityFullData();
   const location = useLocation();
 
   useMeta(district?.meta || {});
@@ -56,6 +56,7 @@ const District = () => {
     { label: district.name || district.title }
   ];
 
+
   return (
     <div className='district'>
       <BreadCrumbs crumbs={crumbs} />
@@ -63,7 +64,7 @@ const District = () => {
       <div className='district__container'>
         {district?.title && <div className='district__title'>{district.title}</div>}
 
-        <BtnAttr lang={lang} path={`/${countryPath}/${regionsPath}/${districtPath}/attractions`} />
+        <BtnAttr lang={lang} path={`/${countryPath}/${regionPath}/${districtPath}/attractions`} />
 
         <div className='district__map'>
           <CountryMap
@@ -71,6 +72,7 @@ const District = () => {
             regionKey={region?.path}
             districtKey={district?.path}
             regions={region}
+            subRegion={subRegion} 
           />
         </div>
 
@@ -82,16 +84,16 @@ const District = () => {
           {district?.desc?.cities && (<InfoBlock data={district.desc.cities} className="district__cities" />)}
         </div>
 
-        {district?.subRegion?.length > 0 && (
+        {subRegion?.length > 0 && (
           <div className="district__list">
-            {district.subRegion.map((subRegion) => (
+            {subRegion.map((sub) => (
               <Region
-                key={subRegion.id}
-                data={subRegion}
-                countryPath={country.path}
-                regionsPath={region.path}
-                districtPath={district.path}
-                id={`subregion-${slugify(subRegion.fullName)}`}
+                key={sub.id}
+                data={sub}
+                countryPath={country?.path}
+                regionsPath={region?.path}
+                districtPath={district?.path}
+                id={`subregion-${slugify(sub.path)}`}
               />
             ))}
           </div>

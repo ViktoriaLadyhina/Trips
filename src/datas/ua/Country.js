@@ -1,4 +1,4 @@
-export const datas = [
+const datas = [
   {
     id: 1,
     path: 'ukraine',
@@ -169,7 +169,7 @@ export const datas = [
         {
           bold: "Прапор:",
           text: " національний прапор Німеччини – прямокутне полотнище з трьома рівними горизонтальними смугами: верхня – чорна, середня – червона, нижня – золота. Ці кольори мають історичне значення і пов’язані з національно-визвольними рухами XIX століття, символізуючи єдність і свободу країни.",
-          img: "Germany/Flag.jpg"
+          img: "Germany/flag.jpg"
         }
       ]
     },
@@ -225,4 +225,5 @@ export const datas = [
       ogImage: "https://our-travels.info/foto/Germany/Flag.jpg"
     }
   }
-];
+]
+export default datas;

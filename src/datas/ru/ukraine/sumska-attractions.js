@@ -2,11 +2,9 @@ const datas = [
     {
         id: "sumy_spaso_preobrazhensky",
         name: "Спасо-Преображенский собор",
-        type: ["cathedral"],
+        type: ["cathedral"], rating: "popular",
         path: "sumy_spaso_preobrazhensky",
-        regionsPath: "sumska",
-        districtPath: "city",
-        cityPath: "sumy",
+        countryPath: "ukraine", regionsPath: "sumska", districtPath: "city", cityPath: "sumy",
         fotoCard: "Ukraine/sumska/sumy-city/spaso-preobrazhensky/004.jpg",
         location: "Сумы, Украина",
         address: [{ bold: "Адрес:", text: " ул. Соборная, 31, Сумы, Украина" }],
@@ -45,6 +43,7 @@ const datas = [
                 { text: "Праздничные богослужения транслируются наружу, чтобы прихожане могли участвовать в службе, находясь на площади перед храмом." },
             ]
         },
+        coord: { lat: 50.90927, lng: 34.80038 },
         meta: {
             title: "Спасо-Преображенский собор в Сумах",
             description: "Спасо-Преображенский собор — главный храм Сум, архитектурный памятник XVIII–XIX веков с мраморно-малахитовым иконостасом и 56-метровой колокольней.",
@@ -56,19 +55,18 @@ const datas = [
     {
         id: "pokrovska_square_sumy",
         name: "Покровская площадь",
-        type: ["square"],
+        type: ["square"], rating: "local",
         path: "pokrovska_square_sumy",
-        countryPath: "ukraine",
-        regionsPath: "sumska",
-        districtPath: "city",
-        cityPath: "sumy",
+        countryPath: "ukraine", regionsPath: "sumska", districtPath: "city", cityPath: "sumy",
         fotoCard: "Ukraine/sumska/sumy-city/altanka/009.jpg",
         location: "Сумы, Украина",
         subObjects: ["sumy_altanka"],
         short_description: "Покровская площадь – место, с которого начиналась история Сум. Здесь переплелись трагические события прошлого и мирная городская жизнь. Сегодня площадь сохраняет особую атмосферу уюта и памяти.",
         short_description_subObjects: {
             text: "На Покровской площади расположены такие достопримечательности:",
-            items: ["Альтанка"]
+            items: [
+                { bold: "Альтанка", text: "– беседка по праву считается одной из главных архитектурных достопримечательностей города" },
+            ]
         },
         full_description: {
             title: "Описание и история",
@@ -93,6 +91,7 @@ const datas = [
                 { text: "Несмотря на трагичную историю, сегодня она воспринимается как одно из самых спокойных и светлых мест в центре Сум." }
             ]
         },
+        coord: { lat: 50.9078, lng: 34.7972 },
         meta: {
             title: "Покровская площадь – исторический центр Сум",
             description: "Покровская площадь – одна из старейших площадей Сум с богатой историей. Узнайте о её прошлом, военных событиях и современном облике.",
@@ -104,21 +103,17 @@ const datas = [
     {
         id: "sumy_altanka",
         name: "Альтанка",
-        type: ["historical_building"],
+        type: ["historical_building"], rating: "popular",
         path: "sumy_altanka",
-        countryPath: "ukraine",
-        regionsPath: "sumska",
-        districtPath: "city",
-        cityPath: "sumy",
+        countryPath: "ukraine", regionsPath: "sumska", districtPath: "city", cityPath: "sumy",
+        hiddenFromList: true, showMore: true,
         fotoCard: "Ukraine/sumska/sumy-city/altanka/009.jpg",
         location: "Сумы, Украина",
         address: [{ bold: "Адрес:", text: " Покровская площадь" }],
-        hiddenFromList: true,
-        showMore: true,
         construction_period: "примерно в начале XX века – около 1900–1905 годов",
         architects: ["Матвей Щавелеев "],
         founder: " Н.И. Лещинский",
-        short_description: "В конце XIX века петербургские учёные высказывали предположение, что в районе Сум могут находиться залежи нефти. С этой целью они прибыли в город, обратились в земскую управу и договорились о проведении поисковых работ. Скважину пробурили, однако нефть обнаружена не была. О ней, вероятно, вскоре забыли бы, если бы не купец второй гильдии Лещинский – родственник известной семьи Харитоненко. Ему принадлежал сад, который он впоследствии подарил городу. Сегодня эта территория является частью городского парка. Купец присоединил к саду дополнительный участок земли, на котором находилась та самая скважина. По его распоряжению скважину закрыли стальной плитой, а на этом месте была возведена беседка.",
+        short_description: "Альтанка в Сумах – восьмигранная деревянная беседка с крестообразной крышей и высоким гранёным куполом, построенная без гвоздей. Она украшена изящными профилированными колонками, резьбой карнизов и декоративными шпилями. Сооружение было возведено на месте бывшей нефтяной скважины и входит в состав городского парка на Покровской площади. Несмотря на скромные размеры, беседка является одной из главных архитектурных достопримечательностей города.",
         full_description: {
             title: "Описание и история",
             items: [
@@ -130,11 +125,12 @@ const datas = [
                 { bold: "Альтанка сегодня", text: "Несмотря на скромные размеры, беседка по праву считается одной из главных архитектурных достопримечательностей города и украшает сквер на Покровской (бывшей Красной) площади." },
             ]
         },
+        coord: { lat: 50.9068, lng: 34.7992 },
         meta: {
             title: "Альтанка в Сумах",
-            description: "Den ausdrucksstarken Silhouette bilden elegante profilierte Säulen, geschnitzte Gesimsverzierungen, dekorative Dachspitzen und zahlreiche weitere Details.",
-            ogTitle: "Pavillon – die Visitenkarte von Sumy",
-            ogDescription: "Den ausdrucksstarken Silhouette bilden elegante profilierte Säulen, geschnitzte Gesimsverzierungen, dekorative Dachspitzen und zahlreiche weitere Details.",
+            description: "Альтанка – беседка по праву считается одной из главных архитектурных достопримечательностей города",
+            ogTitle: "Альтанка – визитная карточка Сум",
+            ogDescription: "Альтанка – беседка по праву считается одной из главных архитектурных достопримечательностей города",
             ogImage: "https://our-travels.info/foto/Ukraine/sumska/sumy-city/altanka/009.jpg"
         }
     }

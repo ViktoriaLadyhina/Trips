@@ -1,4 +1,4 @@
-export const datas = [
+const datas = [
   {
     id: 1,
     path: 'ukraine',
@@ -168,7 +168,7 @@ export const datas = [
         {
           bold: "Flagge:",
           text: " die Nationalflagge Deutschlands ist ein rechteckiges Tuch mit drei gleich breiten horizontalen Streifen: oben – schwarz, Mitte – rot, unten – gold. Diese Farben haben historische Bedeutung und stehen im Zusammenhang mit den nationalen Befreiungsbewegungen des 19. Jahrhunderts und symbolisieren Einheit und Freiheit des Landes.",
-          img: "Germany/Flag.jpg"
+          img: "Germany/flag.jpg"
         }
       ]
     },
@@ -226,3 +226,4 @@ export const datas = [
   }
 
 ];
+export default datas;

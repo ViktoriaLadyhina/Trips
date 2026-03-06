@@ -5,6 +5,7 @@ import BreadCrumbs from '../../components/breadCrumbs/BreadCrumbs.jsx';
 import AttractionCard from '../../components/attraction/AttractionCard.jsx';
 import AttractionsFilters from '../../components/attractionsFilters/AttractionsFilters.jsx';
 import useCityFullData from '../../hooks/useCityFullData.js';
+import CityMap from '../../components/maps/germany/maps/CityMap.jsx';
 
 import './Attractions.scss'
 
@@ -18,26 +19,26 @@ const AttractionsList = () => {
     const [filters, setFilters] = useState({
         type: 'all',
         unesco: 'all',
-        sort: 'name-asc',
+        sort: 'rating',
     });
-
+    
 
     useEffect(() => {
-    const base = attractionsTitle[lang];
+        const base = attractionsTitle[lang];
 
-    const locationName =
-        city?.name ||
-        district?.name ||
-        parentSubRegion?.name ||
-        region?.name ||
-        country?.name ||
-        '';
+        const locationName =
+            city?.name ||
+            district?.name ||
+            parentSubRegion?.name ||
+            region?.name ||
+            country?.name ||
+            '';
 
-    document.title = locationName
-        ? `${base} – ${locationName}`
-        : base;
+        document.title = locationName
+            ? `${base} – ${locationName}`
+            : base;
 
-}, [city, district, parentSubRegion, region, country, lang]);
+    }, [city, district, parentSubRegion, region, country, lang]);
 
     if (error) return <p>{error}</p>;
     if (!country || !region) return <p>Loading...</p>;
@@ -48,22 +49,26 @@ const AttractionsList = () => {
         if (cityPath && attr.cityPath !== cityPath) return false;
         if (districtPath && attr.districtPath !== districtPath) return false;
 
-            // Тип: добавляем type саб-объектов
-    let allTypes = [...attr.type];
+        // Тип: добавляем type саб-объектов
+        let allTypes = [...attr.type];
 
-    if (attr.subObjects?.length > 0) {
-        attr.subObjects.forEach(subId => {
-            const subAttr = attractions.find(a => a.id === subId);
-            if (subAttr) allTypes.push(...subAttr.type);
-        });
-    }
+        if (attr.subObjects?.length > 0) {
+            attr.subObjects.forEach(subId => {
+                const subAttr = attractions.find(a => a.id === subId);
+                if (subAttr) allTypes.push(...subAttr.type);
+            });
+        }
 
         // Фильтр по типу
-    if (filters.type === 'palace_or_castle') {
-        if (!allTypes.includes('palace') && !allTypes.includes('castle')) return false;
-    } else if (filters.type !== 'all' && !allTypes.includes(filters.type)) {
-        return false;
-    }
+        if (filters.type !== 'all' && !allTypes.includes(filters.type)) {
+            return false;
+        }
+
+        // Фильтр по рейтингу
+        if (filters.rating === 'top' && attr.rating !== 'top') return false;
+        if (filters.rating === 'popular' && attr.rating !== 'popular') return false;
+        if (filters.rating === 'local' && attr.rating !== 'local') return false;
+
 
         // Фильтр по ЮНЕСКО
         if (filters.unesco === 'yes' && !attr.unesco_status?.included) return false;
@@ -71,7 +76,7 @@ const AttractionsList = () => {
 
         // не показывать сабобъекты
         if (attr.hiddenFromList) return false;
-        
+
         return true;
     }) || [];
 
@@ -83,7 +88,17 @@ const AttractionsList = () => {
         if (filters.sort === 'name-desc') {
             return (b?.name || '').localeCompare(a?.name || '');
         }
-        return 0;
+
+        const ratingOrder = { top: 3, popular: 2, local: 1 };
+
+        const aRating = ratingOrder[a.rating] || 0;
+        const bRating = ratingOrder[b.rating] || 0;
+
+        if (bRating !== aRating) {
+            return bRating - aRating;
+        }
+
+        return (a?.name || '').localeCompare(b?.name || '');
     });
 
     // Хлебные крошки
@@ -91,17 +106,19 @@ const AttractionsList = () => {
         { label: lang === "ru" ? "Главная" : lang === "de" ? "Startseite" : "Головна", path: "/" },
         country ? { label: region.country, path: `/${country.path}` } : null,
         region ? { label: region.name, path: `/${country?.path}/${region.path}` } : null,
-        district ? { label: district.name, path: `/${country?.path}/${region?.path}/${district.path}` } : null,
+        district && district.id !== 0 ? { label: district.name, path: `/${country?.path}/${region?.path}/${district.path}` } : null,
         parentSubRegion ? { label: parentSubRegion.name } : null,
         city ? { label: city.name, path: `/${country?.path}/${region?.path}/${districtPath ? districtPath + '/' : ''}${city.path}` } : null,
         { label: lang === "ru" ? "Достопримечательности" : lang === "de" ? "Sehenswürdigkeiten" : "Пам'ятки" }
     ].filter(Boolean);
-
+    
     return (
         <div className="attractions">
             <BreadCrumbs crumbs={crumbs} />
 
             <div className='attractions__title'>{attractionsTitle[lang]}</div>
+
+            <CityMap city={city} attractions={attractions} />
 
             <AttractionsFilters lang={lang} filters={filters} setFilters={setFilters} />
 

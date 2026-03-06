@@ -4,7 +4,7 @@ const datas = [
         id: 1,
         name: 'Köln',
         path: "koln",
-        district: "city",
+        countryPath: "germany", regionsPath: "nrw", districtPath: "city",
         desc: {
             general: [
                 { text: 'Köln ist die größte Stadt des Bundeslandes Nordrhein-Westfalen und die viertgrößte Stadt Deutschlands.' },
@@ -83,6 +83,7 @@ const datas = [
                 { text: 'In der zweiten Hälfte des 20. Jahrhunderts festigte Köln endgültig seine Position als Kultur- und Medienzentrum. Internationale Kunst- und Fotomessen wurden veranstaltet, Galerien eröffnet, Fernsehen und Radio florierten. In der Stadt lebten und arbeiteten bedeutende Schriftsteller, Musiker und Künstler, und Köln wurde zu einem Anziehungspunkt für kreative Kräfte aus der ganzen Welt.' }
             ]
         },
+        coord: { lat: 50.9333, lng: 6.95 },
         meta: {
             title: "Köln – größte Stadt Nordrhein-Westfalens",
             description: "Köln: Geschichte, Geographie, Sehenswürdigkeiten, berühmte Persönlichkeiten und interessante Fakten der größten Stadt Nordrhein-Westfalens.",
@@ -98,7 +99,7 @@ const datas = [
         id: 6,
         name: 'Monschau',
         path: "monschau",
-        district: "koln",
+        countryPath: "germany", regionsPath: "nrw", districtPath: "koln", subRegionPath: "aachen",
         desc: {
             general: [{ text: 'Monschau (dt. Monschau) liegt im Westen Deutschlands, in der Region Eifel des Bundeslandes Nordrhein-Westfalen, in der Nähe der Grenze zu Belgien. Die Stadt ist bekannt für ihre historische Architektur, gemütliche Straßen mit Fachwerkhäusern und malerische Ausblicke auf die Rur.' }],
             population: [{ bold: 'Einwohnerzahl', text: ' der Stadt beträgt etwa 13.000 Personen (Stand 31. Dezember 2024).' }],
@@ -147,6 +148,7 @@ const datas = [
                 { text: 'Heute verbindet Monschau reiche Geschichte mit natürlicher Schönheit: historische Architektur, Museen, Handwerkswerkstätten und die umliegenden Wälder machen die Stadt zu einem einzigartigen Beispiel für die Harmonie von Kultur und Natur in der Eifel. Weihnachtsmärkte, Festivals und Wanderwege ziehen das ganze Jahr über Besucher an.' }
             ]
         },
+        coord: { lat: 50.5545, lng: 6.2408 },
         meta: {
             title: "Monschau – historische Stadt mit Fachwerkhäusern und Natur der Eifel",
             description: "Monschau: Geschichte, Geografie, bekannte Bewohner und interessante Fakten über die malerische Stadt in der Eifel, Bundesland Nordrhein-Westfalen.",
@@ -161,7 +163,7 @@ const datas = [
         id: 2,
         name: 'Brühl',
         path: "bruhl",
-        district: "koln",
+        countryPath: "germany", regionsPath: "nrw", districtPath: "koln", subRegionPath: "rhein_erft",
         desc: {
             general: [
                 { text: 'Stadt im Bundesland Nordrhein-Westfalen' }
@@ -209,6 +211,7 @@ const datas = [
                 { text: 'Ab 1469 wurde Brühl für mehr als 150 Jahre zur offiziellen Residenz der Kölner Erzbischöfe.' }
             ]
         },
+        coord: { lat: 50.8293, lng: 6.9050 },
         meta: {
             title: "Brühl – Stadt in Nordrhein-Westfalen",
             description: "Brühl: Geschichte, Sehenswürdigkeiten, berühmte Persönlichkeiten und interessante Fakten der Stadt.",
@@ -221,7 +224,7 @@ const datas = [
         id: 3,
         name: 'Frechen',
         path: "frechen",
-        district: "koln",
+        countryPath: "germany", regionsPath: "nrw", districtPath: "koln", subRegionPath: "rhein_erft",
         desc: {
             general: [
                 { text: 'Frechen ist eine Stadt im Bundesland Nordrhein-Westfalen, die zum Rhein-Erft-Kreis gehört und nur etwa 10 km westlich von Köln liegt.' },
@@ -291,6 +294,7 @@ const datas = [
                 { text: 'Heute ist Frechen eine moderne Stadt mit historischem Stadtkern, Keramikmuseum und guter Infrastruktur – ein beliebter Wohnort für Kölner.' }
             ]
         },
+        coord: { lat: 50.9167, lng: 6.8167 },
         meta: {
             title: "Frechen – die Stadt der Keramik vor den westlichen Toren Kölns",
             description: "Frechen: Geschichte, Geografie, bekannte Persönlichkeiten und interessante Fakten über die Keramikstadt in Nordrhein-Westfalen.",
@@ -305,7 +309,7 @@ const datas = [
         id: 4,
         name: 'Königswinter',
         path: "konigswinter",
-        district: "rhein-sieg-kreis",
+        countryPath: "germany", regionsPath: "nrw", districtPath: "koln", subRegionPath: "rhein_sieg",
         desc: {
             general: [
                 { text: 'Königswinter ist eine Stadt im Bundesland Nordrhein-Westfalen, die zum Rhein-Sieg-Kreis gehört und am rechten Rheinufer gegenüber von Bonn liegt.' },
@@ -371,6 +375,7 @@ const datas = [
                 { text: 'Heute ist Königswinter ein beliebtes Touristenzentrum im Rhein-Sieg-Kreis, das Naturattraktionen, historische Sehenswürdigkeiten und eine gut ausgebaute Infrastruktur für Erholung verbindet.' }
             ]
         },
+        coord: { lat: 50.6838, lng: 7.1868 },
         meta: {
             title: "Königswinter – Stadt am Fuße des Drachenfels am Rhein",
             description: "Königswinter: Geschichte, Geographie, berühmte Persönlichkeiten und interessante Fakten über die malerische Stadt im Rhein-Sieg-Kreis.",
@@ -386,7 +391,7 @@ const datas = [
         id: 5,
         name: 'Lüdenscheid',
         path: "luedenscheid",
-        district: "arnsberg",
+        countryPath: "germany", regionsPath: "nrw", districtPath: "arnsberg", subRegionPath: "merkischer",
         desc: {
             general: [
                 { text: 'Lüdenscheid liegt im Nordwesten des Sauerlandes im Bundesland Nordrhein-Westfalen. Administrativ gehört die Stadt zur Region Arnsberg und untersteht dem Märkischen Kreis.' },
@@ -470,6 +475,7 @@ const datas = [
                 { text: '1975 wurde Lüdenscheid Sitz des neu gebildeten Märkischen Kreises (Ergebnis der Verwaltungsreformen). In dieser Phase des wirtschaftlichen Wohlstands entstanden zahlreiche öffentliche und kulturelle Gebäude: Kulturhaus, neues Stadtmuseum, Bibliothek. Im Stadtzentrum wurde ein großes Wellenbad gebaut.' },
             ]
         },
+        coord: { lat: 51.2198, lng: 7.6273 },
         meta: {
             title: "Lüdenscheid – Stadt des Lichts und der Technologie im Herzen des Sauerlandes",
             description: "Lüdenscheid: Geschichte, Geografie, bekannte Persönlichkeiten und interessante Fakten über die „Stadt des Lichts“ in Nordrhein-Westfalen.",

@@ -14,13 +14,27 @@
 
   &__image {
     width: 100%;
-    max-width: 1600px; // максимальная ширина изображения
+    max-width: 1600px;
+    position: relative;
+    margin: 20px 0;
+
     img {
       width: 100%;
-      height: auto;   // сохраняем пропорции
-      display: block; // убираем лишние отступы снизу
+      height: auto; 
+      display: block;
     }
-    margin: 20px 0;
+    
+    [data-theme='dark'] &::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.4); 
+    pointer-events: none; 
+    border-radius: inherit;
+  }
   }
 
   &__menu {

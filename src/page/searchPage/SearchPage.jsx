@@ -1,148 +1,58 @@
 import { useState, useEffect } from "react";
-import { useSelector } from "react-redux";
 import { Link, useLocation } from "react-router-dom";
-
-import { datas as ruCountries } from "../../datas/ru/Country.js";
-import { datas as uaCountries } from "../../datas/ua/Country.js";
-import { datas as deCountries } from "../../datas/de/Country.js";
-
-import { regionsSearch as ruRegions, citySearch as ruCities, attractionsSearch as ruAttractions } from "../../datas/ru/index.js";
-import { regionsSearch as uaRegions, citySearch as uaCities, attractionsSearch as uaAttractions } from "../../datas/ua/index.js";
-import { regionsSearch as deRegions, citySearch as deCities, attractionsSearch as deAttractions } from "../../datas/de/index.js";
-
-import { searchAll } from "../../components/search/searchUtils.js";
-
+import { useSelector } from "react-redux";
+import { buildStaticSearchIndex, searchStatic } from "../../components/search/searchUtils";
 import BreadCrumbs from '../../components/breadCrumbs/BreadCrumbs';
 import './SearchPage.scss';
 
-const searchResults = { ru: "Результаты поиска", ua: "Результати пошуку", de: "Suchergebnisse" };
-const searchByCountries = { ru: "Поиск по странам", ua: "Пошук за країнами", de: "Suche nach Ländern" };
-const searchByRegions = { ru: "Поиск по землям/областям", ua: "Пошук за землями/областями", de: "Suche nach Bundesländern/Regionen" };
-const searchByDistricts = { ru: "Поиск по краям/районам", ua: "Пошук за краями/районами", de: "Suche nach Kreisen/Bezirken" };
-const searchByCities = { ru: "Поиск по городам", ua: "Пошук за містами", de: "Suche nach Städten" };
-const searchByAttractions = { ru: "Поиск по достопримечательностям", ua: "Пошук за пам’ятками", de: "Suche nach Sehenswürdigkeiten" };
+const searchResultsText = {
+  ru: "Результаты поиска",
+  ua: "Результати пошуку",
+  de: "Suchergebnisse"
+};
 
+const noResultsText = { ru: "По вашему запросу ничего не найдено.", ua: "За вашим запитом нічого не знайдено.", de: "Für Ihre Suche wurden keine Ergebnisse gefunden." };
 
 const SearchPage = () => {
   const { lang } = useSelector(state => state.language);
   const location = useLocation();
   const query = new URLSearchParams(location.search).get("query") || "";
 
-  const [resultCountries, setResultCountries] = useState([]);
-  const [resultRegions, setResultRegions] = useState([]);
-  const [resultDistricts, setResultDistricts] = useState([]);
-  const [resultCity, setResultCity] = useState([]);
-  const [resultAttraction, setResultAttraction] = useState([]);
 
-  const allCountries = lang === "ua" ? uaCountries : lang === "de" ? deCountries : ruCountries;
-  const allRegions = lang === "ua" ? uaRegions : lang === "de" ? deRegions : ruRegions;
-  const allCities = lang === "ua" ? uaCities : lang === "de" ? deCities : ruCities;
-  const allAttractions = lang === "ua" ? uaAttractions : lang === "de" ? deAttractions : ruAttractions;
 
+const index = buildStaticSearchIndex(lang);
+const results = query ? searchStatic(query, lang, index) : [];
+
+  // обновляем title
   useEffect(() => {
-    if (!query) return;
-
-    const {
-      countriesResult,
-      regionsResult,
-      districtsResult,
-      citiesResult,
-      attractionsResult
-    } = searchAll(query, lang, allCountries, allRegions, allCities, allAttractions);
-
-    setResultCountries(countriesResult);
-    setResultRegions(regionsResult);
-    setResultDistricts(districtsResult);
-    setResultCity(citiesResult);
-    setResultAttraction(attractionsResult);
-  }, [query, lang, allCountries, allRegions, allCities, allAttractions]);
-
-  useEffect(() => {
-    document.title = searchResults[lang];
+    document.title = searchResultsText[lang];
   }, [lang]);
 
   const crumbs = [
-    {
-      label: lang === 'ru' ? 'Главная' : lang === 'de' ? 'Startseite' : 'Головна',
-      path: '/'
-    },
-    { label: searchResults[lang] }
+    { label: lang === 'ru' ? 'Главная' : lang === 'de' ? 'Startseite' : 'Головна', path: '/' },
+    { label: searchResultsText[lang] }
   ];
 
   return (
     <div className="search-results">
       <BreadCrumbs crumbs={crumbs} />
-      <h2 className="search-results__title">{searchResults[lang]}: '{query}'</h2>
+      <h2 className="search-results__title">
+        {searchResultsText[lang]}: '{query}'
+      </h2>
 
-      <div>
-        <span>{searchByCountries[lang]}</span>
-        <ul>
-          {resultCountries?.map((c) => (
-            <li key={c.countryPath}>
-              <Link to={`/${c.countryPath}`}>{c.country}</Link>
-              <ul>
-                {c.matches.map((m, j) => <li key={j}>{m}</li>)}
-              </ul>
-            </li>
-          ))}
-        </ul>
-
-        <span>{searchByRegions[lang]}</span>
-        <ul>
-          {resultRegions?.map((r, i) => (
-            <li key={i}>
-              <Link to={`/${r.countryKey}/${r.regionPath}`}>
-                {r.regionName}
+      {results.length === 0 ? (
+ <p className="search-results__empty">{noResultsText[lang]}</p>
+      ) : (
+        <ul className="search-results__list">
+          {results.map((item, i) => (
+            <li key={i} className="search-results__item">
+              <Link to={item.url || "#"} className="search-results__link">
+                {item.title}
               </Link>
-              <ul>
-                {r.matches.map((m, j) => <li key={j}>{m}</li>)}
-              </ul>
             </li>
           ))}
         </ul>
-
-        <span>{searchByDistricts[lang]}</span>
-        <ul>
-          {resultDistricts?.map((d, i) => (
-            <li key={i}>
-              <Link to={`/${d.countryKey}/${d.regionKey}/${d.districtPath}`}>
-                {d.districtFullTitle || d.districtTitle}
-              </Link>
-              <ul>
-                {d.matches.map((m, j) => <li key={j}>{m.text}</li>)}
-              </ul>
-            </li>
-          ))}
-        </ul>
-
-        <span>{searchByCities[lang]}</span>
-        <ul>
-          {resultCity?.map(c => (
-            <li key={c.cityPath}>
-              <Link to={`/${c.countryKey}/${c.regionPath}/${c.district}/${c.cityPath}`}>
-                {c.cityTitle}
-              </Link>
-              <ul>
-                {c.matches.map((m, i) => <li key={i}>{m}</li>)}
-              </ul>
-            </li>
-          ))}
-        </ul>
-
-        <span>{searchByAttractions[lang]}</span>
-        <ul>
-          {resultAttraction?.map(a => (
-            <li key={a.attractionPath}>
-              <Link to={`/${a.countryKey}/${a.regionPath}/${a.district}/${a.cityPath}/attractions/${a.attractionPath}`}>
-                {a.attractionTitle}
-              </Link>
-              <ul>
-                {a.matches.map((m, i) => <li key={i}>{m}</li>)}
-              </ul>
-            </li>
-          ))}
-        </ul>
-      </div>
+      )}
     </div>
   );
 };

@@ -3,8 +3,7 @@ const datas = [
         id: "karneval_koln",
         name: "Kölner Karneval",
         path: "karneval_koln",
-        regionsPath: "nrw",
-        districtPath: "city",
+        countryPath: "germany", regionsPath: "nrw", districtPath: "city",
         cities: ["koln", "frechen", "bruhl"],
         fotoCard: "Germany/nrw/koln/koln-city/karneval/001.jpg",
         location: "Köln, Deutschland",
@@ -49,6 +48,6 @@ const datas = [
             ogImage: "https://our-travels.info/foto/Germany/nrw/koln/koln-city/karneval/001.jpg"
         }
     }
-];
+]; 
 
 export default datas;

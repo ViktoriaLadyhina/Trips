@@ -1,14 +1,26 @@
 @use '../../styles/variables' as *;
 
 .map {
+  ul {
+    list-style: none;
+    padding-left: 16px;
+    text-align: left;
 
-    ul {
-        text-align: left;
-        list-style: none;
+    a {
+      text-decoration: none;
+      @include body-text;
+    }
+  }
+
+  // медиазапрос для экранов ≤400px
+  @media (max-width: 400px) {
+    // выбираем все ul на любых уровнях вложенности внутри .map
+    ul, ul ul, ul ul ul, ul ul ul ul {
+      padding-left: 8px;
     }
 
     a {
-        text-decoration: none;
-        @include body-text;
+      @include small-text; 
     }
+  }
 }

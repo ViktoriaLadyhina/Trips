@@ -7,9 +7,9 @@ import { useMeta } from '../../hooks/useMeta';
 import { datas as datasUa } from '../../datas/ua/home'
 import { datas as datasRu } from '../../datas/ru/home'
 import { datas as datasDe } from '../../datas/de/home'
-import { datas as countriesUa } from '../../datas/ua/country';
-import { datas as countriesRu } from '../../datas/ru/country';
-import { datas as countriesDe } from '../../datas/de/country';
+import countriesUa from '../../datas/ua/Country';
+import countriesRu from '../../datas/ru/Country';
+import countriesDe from '../../datas/de/Country';
 import { photosByCountry } from "../../datas/fotos";
 
 import worldMap from '../../assets/world-map.gif';

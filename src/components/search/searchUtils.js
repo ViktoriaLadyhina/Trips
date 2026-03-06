@@ -1,8 +1,6 @@
-// searchUtils.js
+import searchIndex from './index'
 
-// -----------------------
-// 1️⃣ Нормализация строки
-// -----------------------
+// нормализация текста
 export const normalize = str => str
   .toLowerCase()
   .replace(/<[^>]*>/g, "")
@@ -14,306 +12,124 @@ export const normalize = str => str
   .replace(/['’]/g, "")
   .trim();
 
-export const stripHTML = str => 
-  typeof str === "string" ? str.replace(/<[^>]*>/g, "").trim() : str;
+// Рекурсивное извлечение текста из объекта
+function extractText(obj) {
+  if (!obj) return "";
+  if (typeof obj === "string") return obj + " ";
+  if (Array.isArray(obj)) return obj.map(extractText).join(" ");
+  if (typeof obj === "object") return Object.values(obj).map(extractText).join(" ");
+  return "";
+}
 
-// -----------------------
-// 2️⃣ Глубокий поиск по объекту/массиву
-// -----------------------
-export function deepSearch(obj, predicate, path = '') {
-  let results = [];
+// добавляем searchText для всех объектов
+export function buildStaticSearchIndex(lang = "ru") {
+  const idx = JSON.parse(JSON.stringify(searchIndex[lang]));
 
-  if (Array.isArray(obj)) {
-    obj.forEach((item, index) => {
-      const currentPath = `${path}[${index}]`;
-      results = results.concat(deepSearch(item, predicate, currentPath));
-    });
-  } else if (obj !== null && typeof obj === 'object') {
-    for (const key in obj) {
-      const currentPath = path ? `${path}.${key}` : key;
-      results = results.concat(deepSearch(obj[key], predicate, currentPath));
+  function addSearchText(node) {
+    if (!node) return;
+    if (Array.isArray(node)) {
+      node.forEach(item => item.searchText = normalize(extractText(item)));
+    } else if (typeof node === "object") {
+      Object.values(node).forEach(v => addSearchText(v));
+      node.searchText = normalize(extractText(node));
     }
-  } else {
-    if (predicate(obj)) {
-      results.push({ path, value: obj });
+  }
+
+  addSearchText(idx);
+  return idx;
+}
+
+// поиск по конкретному индексу
+export function searchStatic(query, lang, index) {
+  if (!query || !index) return [];
+  const lowerQuery = normalize(query);
+  const results = [];
+
+  for (const countryKey in index) {
+    const country = index[countryKey];
+
+    // поиск по стране
+    if (country.country?.searchText?.includes(lowerQuery)) {
+      results.push({
+        title: country.country.name || countryKey,
+        type: "country",
+        url: `/${countryKey}`
+      });
+    }
+
+    for (const regionKey in country) {
+      if (regionKey === "country") continue;
+      const region = country[regionKey];
+
+      // регион
+      if (region.land?.searchText?.includes(lowerQuery)) {
+        results.push({
+          title: region.land.name || regionKey,
+          type: "region",
+          url: `/${countryKey}/${regionKey}`
+        });
+      }
+
+      // города
+      (region.city || []).forEach(city => {
+        if (city.searchText?.includes(lowerQuery)) {
+          const cityUrl = city.districtPath
+            ? `/${countryKey}/${regionKey}/${city.districtPath}/${city.path}` // города в округах
+            : `/${countryKey}/${regionKey}/city/${city.path}`;               // города областного значения
+
+          results.push({
+            title: city.name || city.title,
+            type: "city",
+            url: cityUrl
+          });
+        }
+      });
+
+      // округа
+      (region.districts || []).forEach(district => {
+        if (district.searchText?.includes(lowerQuery)) {
+          results.push({
+            title: district.name || district.title,
+            type: "district",
+            url: `/${countryKey}/${regionKey}/${district.path}`
+          });
+        }
+      });
+
+      // субрегионы
+      (region.subRegions || []).forEach(sub => {
+        if (sub.searchText?.includes(lowerQuery)) {
+          results.push({
+            title: sub.name || sub.title,
+            type: "district",
+            url: `/${countryKey}/${regionKey}/${sub.districtPath}`
+          });
+        }
+      });
+
+      // достопримечательности
+      (region.attractions || []).forEach(attraction => {
+        if (attraction.searchText?.includes(lowerQuery)) {
+          results.push({
+            title: attraction.name || "Достопримечательность",
+            type: "attraction",
+            url: `/${countryKey}/${regionKey}/${attraction.districtPath}/${attraction.cityPath}/attractions/${attraction.path}`
+          });
+        }
+      });
+
+      // мероприятия
+      (region.events || []).forEach(event => {
+        if (event.searchText?.includes(lowerQuery)) {
+          results.push({
+            title: event.name || "Событие",
+            type: "event",
+            url: `/${countryKey}/${regionKey}/${event.districtPath}/${event.cityPath}/events/${event.path}`
+          });
+        }
+      });
     }
   }
 
   return results;
 }
-
-// -----------------------
-// 3️⃣ Функции для получения информации по path
-// -----------------------
-export function getCountryInfoByPath(path, allCountries) {
-  const match = path.match(/^\[(\d+)\]/);
-  if (!match) return null;
-
-  const index = parseInt(match[1], 10);
-  const countryObj = allCountries[index];
-  if (!countryObj) return null;
-
-  return {
-    country: countryObj.country,
-    countryPath: countryObj.path
-  };
-}
-
-export function getRegionInfoByPath(path, regionsSearch) {
-  const parts = path.split(".");
-  if (parts.length < 2) return null;
-
-  const countryKey = parts[0];
-  const regionKey = parts[1];
-  const countryObj = regionsSearch[countryKey];
-  if (!countryObj) return null;
-
-  const regionObj = countryObj[regionKey];
-  if (!regionObj) return null;
-
-  return {
-    countryKey,
-    region: regionKey,
-    regionName: regionObj.name || regionKey,
-    regionPath: regionKey
-  };
-}
-
-export function getDistrictInfoByPath(path, allRegions) {
-  if (!path.includes("discriptRegions")) return null;
-
-  const parts = path.split(".");
-  const countryKey = parts[0];
-  const regionKey = parts[1];
-
-  const countryObj = allRegions[countryKey];
-  if (!countryObj) return null;
-
-  const regionObj = countryObj[regionKey];
-  if (!regionObj) return null;
-
-  const matchRegion = path.match(/discriptRegions\[(\d+)\]/);
-  if (!matchRegion) return null;
-  const regionIndex = parseInt(matchRegion[1], 10);
-  const discriptRegion = regionObj.discriptRegions[regionIndex];
-  if (!discriptRegion) return null;
-
-  const matchItem = path.match(/items\[(\d+)\]/);
-  if (!matchItem) return null;
-  const itemIndex = parseInt(matchItem[1], 10);
-  const item = discriptRegion.items[itemIndex];
-  if (!item || !item.hasInfo) return null;
-
-  return {
-    countryKey,
-    regionKey,
-    regionName: regionObj.name,
-    districtPath: item.path,
-    districtTitle: item.name || item.title,
-    districtName: item.name,
-    districtFullTitle: item.title,
-    value: item.name || item.title
-  };
-}
-
-export function getCityInfoByPath(path, allCities, value) {
-  if (!path.includes("-city")) return null;
-
-  const parts = path.split(".");
-  const countryKey = parts[0];
-
-  const regionMatch = parts.find(p => p.includes("-city"));
-  if (!regionMatch) return null;
-
-  const matchIndex = regionMatch.match(/-city\[(\d+)\]/);
-  if (!matchIndex) return null;
-  const cityIndex = parseInt(matchIndex[1], 10);
-
-  const regionKey = regionMatch.replace(/\[\d+\]/, "");
-  const regionPath = regionKey.replace("-city", "");
-
-  const countryObj = allCities[countryKey];
-  if (!countryObj) return null;
-
-  const regionCities = countryObj[regionKey];
-  if (!regionCities) return null;
-
-  const city = regionCities[cityIndex];
-  if (!city) return null;
-
-  return {
-    countryKey,
-    regionKey,
-    regionPath,
-    district: city.district,
-    cityPath: city.path,
-    cityTitle: city.name,
-    value
-  };
-}
-
-export function getAttractionsInfoByPath(path, allAttractions, value) {
-  if (!path.includes("-attractions")) return null;
-
-  const parts = path.split(".");
-  const countryKey = parts[0];
-
-  const regionMatch = parts.find(p => p.includes("-attractions"));
-  if (!regionMatch) return null;
-
-  const matchIndex = regionMatch.match(/-attractions\[(\d+)\]/);
-  if (!matchIndex) return null;
-  const attractionsIndex = parseInt(matchIndex[1], 10);
-
-  const regionKey = regionMatch.replace(/\[\d+\]/, "");
-  const regionPath = regionKey.replace("-attractions", "");
-
-  const countryObj = allAttractions[countryKey];
-  if (!countryObj) return null;
-
-  const regionAttractions = countryObj[regionKey];
-  if (!regionAttractions) return null;
-
-  const attraction = regionAttractions[attractionsIndex];
-  if (!attraction) return null;
-
-  return {
-    countryKey,
-    regionKey,
-    regionPath,
-    district: attraction.districtPath,
-    cityPath: attraction.cityPath,
-    attractionPath: attraction.path,
-    attractionTitle: attraction.name,
-    value
-  };
-}
-
-// -----------------------
-// 4️⃣ Главная функция поиска (handleSearch)
-// -----------------------
-export const searchAll = (value, lang, allCountries, allRegions, allCities, allAttractions) => {
-  const normalizedValue = normalize(value);
-
-  // -----------------------
-  // Поиск по странам
-  // -----------------------
-  const resultsCountriesRaw = deepSearch(allCountries, obj =>
-    typeof obj === "string" && normalize(obj).includes(normalizedValue)
-  );
-
-  const countryGroups = {};
-  resultsCountriesRaw.forEach(r => {
-    const countryInfo = getCountryInfoByPath(r.path, allCountries);
-    if (!countryInfo) return;
-
-    const key = countryInfo.countryPath;
-    if (!countryGroups[key]) countryGroups[key] = { ...countryInfo, matches: [] };
-
-    const cleanValue = stripHTML(r.value);
-    if (cleanValue && !countryGroups[key].matches.includes(cleanValue)) {
-      countryGroups[key].matches.push(cleanValue);
-    }
-  });
-  const countriesResult = Object.values(countryGroups);
-
-  // -----------------------
-  // Поиск по регионам
-  // -----------------------
-  const resultsRegionsRaw = deepSearch(allRegions, obj =>
-    typeof obj === "string" && normalize(obj).includes(normalizedValue)
-  );
-
-  const regionGroups = {};
-  resultsRegionsRaw.forEach(r => {
-    const regionInfo = getRegionInfoByPath(r.path, allRegions);
-    if (!regionInfo) return;
-
-    const key = `${regionInfo.countryKey}|${regionInfo.regionPath}`;
-    if (!regionGroups[key]) regionGroups[key] = { ...regionInfo, matches: [] };
-
-    const cleanValue = stripHTML(r.value);
-    if (cleanValue && !regionGroups[key].matches.includes(cleanValue)) {
-      regionGroups[key].matches.push(cleanValue);
-    }
-  });
-  const regionsResult = Object.values(regionGroups);
-
-  // -----------------------
-  // Поиск по district/районам
-  // -----------------------
-  const resultsDistrictsRaw = resultsRegionsRaw
-    .map(r => getDistrictInfoByPath(r.path, allRegions))
-    .filter(d => d && d.value);
-
-  const districtGroups = {};
-  resultsDistrictsRaw.forEach(d => {
-    const key = `${d.countryKey}|${d.regionKey}|${d.districtPath}`;
-    if (!districtGroups[key]) {
-      districtGroups[key] = { ...d, matches: [] };
-    }
-
-    const matchObj = {
-      text: stripHTML(d.districtFullTitle || d.districtTitle),
-      source: "district",
-      id: d.districtPath
-    };
-
-    if (!districtGroups[key].matches.find(m => m.id === matchObj.id)) {
-      districtGroups[key].matches.push(matchObj);
-    }
-  });
-  const districtsResult = Object.values(districtGroups);
-
-  // -----------------------
-  // Поиск по городам
-  // -----------------------
-  const resultsCitiesRaw = deepSearch(allCities, obj =>
-    typeof obj === "string" && normalize(obj).includes(normalizedValue)
-  );
-
-  const cityGroups = {};
-  resultsCitiesRaw.forEach(r => {
-    const cityInfo = getCityInfoByPath(r.path, allCities, r.value);
-    if (!cityInfo) return;
-
-    const key = `${cityInfo.countryKey}|${cityInfo.regionKey}|${cityInfo.district}|${cityInfo.cityPath}`;
-    if (!cityGroups[key]) cityGroups[key] = { ...cityInfo, matches: [] };
-
-    const cleanValue = stripHTML(r.value);
-    if (cleanValue && !cityGroups[key].matches.includes(cleanValue)) {
-      cityGroups[key].matches.push(cleanValue);
-    }
-  });
-  const citiesResult = Object.values(cityGroups);
-
-  // -----------------------
-  // Поиск по достопримечательностям
-  // -----------------------
-  const resultsAttractionsRaw = deepSearch(allAttractions, obj =>
-    typeof obj === "string" && normalize(obj).includes(normalizedValue)
-  );
-
-  const attractionGroups = {};
-  resultsAttractionsRaw.forEach(r => {
-    const attractionInfo = getAttractionsInfoByPath(r.path, allAttractions, r.value);
-    if (!attractionInfo) return;
-
-    const key = attractionInfo.attractionPath;
-    if (!attractionGroups[key]) attractionGroups[key] = { ...attractionInfo, matches: [] };
-
-    const cleanValue = stripHTML(r.value);
-    if (cleanValue && !attractionGroups[key].matches.includes(cleanValue)) {
-      attractionGroups[key].matches.push(cleanValue);
-    }
-  });
-  const attractionsResult = Object.values(attractionGroups);
-
-  return {
-    countriesResult,
-    regionsResult,
-    districtsResult,
-    citiesResult,
-    attractionsResult
-  };
-};

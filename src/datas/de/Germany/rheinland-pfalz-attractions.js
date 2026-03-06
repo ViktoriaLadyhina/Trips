@@ -3,18 +3,22 @@ const datas = [
   {
     id: "portaNigra_trier",
     name: "Porta Nigra",
-    type: ["historical_building"],
+    type: ["historical_building"], rating: "top",
     path: "portaNigra_trier",
-    countryPath: "germany",
-    regionsPath: "rheinland-pfalz",
-    districtPath: "city",
-    cityPath: "trier",
-    fotoCard: "Germany/rheinland-pfalz/trier-city/portaNigra_trier/001.JPG",
+    countryPath: "germany", regionsPath: "rheinland-pfalz", districtPath: "city", cityPath: "trier",
+    fotoCard: "Germany/rheinland-pfalz/trier-city/portaNigra_trier/001.jpg",
     location: "Trier, Deutschland",
     officialSite: [
       { bold: "Offizielle Webseite", link: "https://www.zentrum-der-antike.de/monumente/porta-nigra?utm_source=chatgpt.com" }
     ],
-    unesco_status: { included: true, year: 1986 },
+    unesco_status: {
+      included: true,
+      year: 1986,
+      type: "Kulturerbe",
+      criteria: "i, iii, iv, vi",
+      epoch: "Römische Epoche",
+      series: "Römische Denkmäler, Dom St. Peter und Liebfrauenkirche in Trier"
+    },
     short_description: "Die Porta Nigra ist das größte erhaltene römische Stadttor nördlich der Alpen, im Zentrum von Trier gelegen. Errichtet um 170 n. Chr., beeindruckt es durch massive Sandsteinblöcke und eine fast zweitausendjährige Geschichte. Heute ist es ein Symbol der Stadt.",
     full_description: {
       title: "Beschreibung und Geschichte",
@@ -44,29 +48,34 @@ const datas = [
       ]
     },
     construction_period: "um 170 n. Chr., Beginn des Baus der nördlichen Tore der Stadt Augusta Treverorum.",
+    coord: { lat: 49.75967, lng: 6.64400 },
     meta: {
       title: "Porta Nigra in Trier – größtes römisches Stadttor in Deutschland",
       description: "Entdecken Sie die Porta Nigra in Trier – das größte erhaltene römische Stadttor nördlich der Alpen. Geschichte, interessante Fakten, praktische Informationen für Touristen und Legenden.",
       ogTitle: "Porta Nigra, Trier – historisches römisches Stadttor in Deutschland",
       ogDescription: "Besuchen Sie die Porta Nigra – beeindruckendes römisches Tor im Zentrum von Trier. Erfahren Sie Geschichte, Legenden und praktische Informationen für Touristen. Perfekt für Liebhaber von Geschichte und Architektur.",
-      ogImage: "https://our-travels.info/foto/Germany/rheinland-pfalz/trier-city/portaNigra_trier/001.JPG"
+      ogImage: "https://our-travels.info/foto/Germany/rheinland-pfalz/trier-city/portaNigra_trier/001.jpg"
     }
   },
   {
     id: "amphitheater_trier",
     name: "Römisches Amphitheater",
-    type: ["historical_building", "museum", "monument_or_fountain"],
+    type: ["historical_building", "museum", "monument_or_fountain"], rating: "popular",
     path: "amphitheater_trier",
-    countryPath: "germany",
-    regionsPath: "rheinland-pfalz",
-    districtPath: "city",
-    cityPath: "trier",
-    fotoCard: "Germany/rheinland-pfalz/trier-city/amphitheater/001.JPG",
+    countryPath: "germany", regionsPath: "rheinland-pfalz", districtPath: "city", cityPath: "trier",
+    fotoCard: "Germany/rheinland-pfalz/trier-city/amphitheater/001.jpg",
     location: "Trier, Deutschland",
     officialSite: [
       { bold: "Offizielle Webseite", link: "https://www.zentrum-der-antike.de/monumente/amphitheater" }
     ],
-    unesco_status: {included: true, year: 1986 },
+    unesco_status: {
+      included: true,
+      year: 1986,
+      type: "Kulturerbe",
+      criteria: "i, iii, iv, vi",
+      epoch: "Römische Epoche",
+      series: "Römische Denkmäler, Dom St. Peter und Liebfrauenkirche in Trier"
+    },
     short_description: "Das römische Amphitheater in Trier ist eine der größten römischen Arenen außerhalb Italiens. Es wurde Ende des 2. Jahrhunderts n. Chr. erbaut und konnte bis zu 20.000 Zuschauer fassen. Hier fanden Gladiatorenkämpfe, Tierdarstellungen und Massenveranstaltungen statt. Heute ist das Amphitheater für Besucher geöffnet; erhalten sind die Arena, die Tribünen und unterirdischen Gänge.",
     full_description: {
       title: "Beschreibung und Geschichte",
@@ -118,14 +127,307 @@ const datas = [
       ]
     },
     construction_period: "ca. 180–200 n. Chr.",
+    coord: { lat: 49.74702, lng: 6.64905 },
     meta: {
       title: "Römisches Amphitheater Trier – antikes Kolosseum und UNESCO-Denkmal",
       description: "Informationen zum Römischen Amphitheater Trier (Deutschland): Geschichte im 2. Jh. n. Chr., Öffnungszeiten, Tickets, interessante Fakten und Führungen.",
       ogTitle: "Römisches Amphitheater Trier – eine der größten römischen Arenen Europas",
       ogDescription: "Erfahren Sie mehr über das antike Amphitheater in Trier: Nutzung in der Römerzeit, heutige Sehenswürdigkeiten, Lage und Besuchsmöglichkeiten.",
-      ogImage: "https://our-travels.info/foto/Germany/rheinland-pfalz/trier-city/amphitheater/001.JPG"
+      ogImage: "https://our-travels.info/foto/Germany/rheinland-pfalz/trier-city/amphitheater/001.jpg"
     }
-},
+  },
+  {
+    id: "kaiserthermen_trier",
+    name: "Römische Kaiserthermen",
+    type: ["historical_building", "museum", "monument_or_fountain"], rating: "popular",
+    path: "kaiserthermen_trier",
+    countryPath: "germany", regionsPath: "rheinland-pfalz", districtPath: "city", cityPath: "trier",
+    fotoCard: "Germany/rheinland-pfalz/trier-city/kaiserthermen/01.jpg",
+    location: "Trier, Deutschland",
+    unesco_status: {
+      included: true,
+      year: 1986,
+      type: "Kulturerbe",
+      criteria: "i, iii, iv, vi",
+      epoch: "Römische Epoche",
+      series: "Römische Denkmäler, Dom St. Peter und Liebfrauenkirche in Trier"
+    },
+    short_description: "Die Kaiserthermen gehören zu den größten römischen Badeanlagen nördlich der Alpen, erbaut Ende des 3. bis Anfang des 4. Jahrhunderts n. Chr. in der Stadt Trier (früher Augusta Treverorum). Heute sind vom Komplex mächtige Ruinen erhalten, die sowohl oberirdisch als auch unterirdisch besichtigt werden können, mit Zugang zu den unterirdischen Dienstgalerien und den Überresten der Ingenieursysteme.",
+    full_description: {
+      title: "Beschreibung und Geschichte",
+      items: [
+        { bold: "Kaiserthermen ", text: "waren Teil eines großen Palastviertels des spätantiken Trier und dienten nicht nur der Körperpflege, sondern auch als Zentrum des gesellschaftlichen Lebens: für Erholung, Spiele, Treffen und Kommunikation. Besucher können Fragmente von Mauern, Arkaden, unterirdische Versorgungsgänge und Ingenieurbauten besichtigen." },
+        { bold: "Geschichte. ", text: "Der Bau der Thermen in Trier begann Ende des 3. Jahrhunderts n. Chr., als die Stadt, in der Antike bekannt als Augusta Treverorum, eine der wichtigsten kaiserlichen Residenzen des Weströmischen Reiches war. Zu dieser Zeit fungierte Trier faktisch als Hauptstadt der westlichen Provinzen, und die umfangreichen Bauprojekte sollten die Macht des Staates demonstrieren. Die Thermen waren als Teil eines riesigen Palastkomplexes geplant und sollten ein Symbol für Reichtum und Prestige der Stadt werden. Vermutlich hängt der Bau mit der Regierungszeit Konstantins des Großen oder seiner unmittelbaren Nachfolger zusammen, als Trier seine politische Blütezeit erlebte." },
+        { text: "Der Komplex wurde jedoch nie in seiner ursprünglichen Form vollendet. Bereits im 4. Jahrhundert verlagerte sich das politische Zentrum des Reiches, und der Bedarf an so prächtigen Bädern entfiel. Unfertige Gebäude wurden zweckentfremdet: Räume in Kasernen und Lager umgewandelt, massive Mauern in Verteidigungsanlagen integriert. Im frühen Mittelalter wurde ein Teil des Komplexes in das städtische Befestigungssystem aufgenommen, wodurch ein erheblicher Teil der Konstruktionen erhalten blieb. In den folgenden Jahrhunderten dienten die Ruinen als Steinbruch – die Bevölkerung nutzte die Gebäude als Baumaterial." },
+        { text: "Das Interesse an der Stätte kehrte erst im 19. Jahrhundert mit der Entwicklung der Archäologie zurück. Ausgrabungen begannen, unterirdische Galerien wurden freigelegt und die römischen Ingenieursysteme – Heizung, Wasserversorgung und Abwasser – wissenschaftlich untersucht. Im 20. Jahrhundert wurde das Objekt als einzigartiges Zeugnis spätantiker Architektur anerkannt und als Teil des Trierer Römischen Denkmälerensembles in die UNESCO-Liste aufgenommen. Heute gelten die Thermen als eines der beeindruckendsten Beispiele römischer Infrastruktur nördlich der Alpen und als wichtige Quelle für Wissen über das städtische Leben der Spätantike." },
+        { bold: "Architektur und Ingenieurtechnik. ", text: "Die Kaiserthermen in Trier sind ein herausragendes Beispiel spätantiker monumentaler Architektur der Römischen Kaiserzeit, das das Ingenieursdenken der Spätantike demonstriert. Der Komplex wurde nach dem klassischen Schema kaiserlicher Thermen entworfen, jedoch in deutlich größerem Maßstab: die zentrale Achse beinhaltete eine Abfolge von Räumen mit unterschiedlichen Temperaturen – kalt, warm und heiß – verbunden durch symmetrische Übergänge und umgeben von Nebengebäuden." },
+        { text: "Die Hauptarchitekturmerkmale sind die Massivität der Konstruktionen. Mauern von mehreren Metern Dicke wurden aus römischem Beton (opus caementicium) errichtet und mit Stein und Ziegel verkleidet. Die Höhe einiger Räume überstieg 20 Meter, und die Gewölbe wurden durch ein komplexes Arkadensystem getragen, das die Last gleichmäßig verteilte. Selbst heute hinterlassen die erhaltenen Mauerfragmente den Eindruck einer Festung und nicht nur eines Badekomplexes." },
+        { text: "Der Ingenieurteil war noch beeindruckender. Unter den Böden verlief ein Netzwerk unterirdischer Korridore, durch die Sklaven und Personal die Funktion des Heizsystems aufrechterhielten. Heiße Luft zirkulierte unter den Böden und innerhalb der Mauern und erwärmte die Räume – diese Technik erlaubte eine präzise Steuerung der Temperatur in den verschiedenen Hallen. Wasser wurde über Aquädukte geleitet, in Reservoirs und Becken verteilt und anschließend durch ein komplexes Kanalisationssystem abgeführt, das auf enorme Mengen ausgelegt war." },
+        { text: "Besondere Bedeutung haben die heute für Besucher zugänglichen unterirdischen Galerien. Sie zeigen, dass die Thermen nicht nur ein Ort der Erholung waren, sondern ein echter technischer Komplex – eine Kombination aus Architektur, Hydraulik und Heiztechnik. Gerade dank der Stabilität dieser Ingenieurslösungen ist ein großer Teil der Struktur bis heute erhalten geblieben, trotz Kriegen, Umbauten und Abbruchmaßnahmen im Mittelalter." }
+      ]
+    },
+    tickets_and_entry: {
+      title: "Praktische Informationen",
+      items: [
+        { bold: "Adresse:", text: "Weberbach 41, 54290 Trier, Deutschland" },
+        { bold: "Öffnungszeiten (ungefähr):", text: "<br>April-September: täglich 09:00-18:00 <br>Oktober: 09:00-17:00 <br>November-März: 09:00-16:00 <br> (letzter Einlass 30 Minuten vor Schließung)" },
+        { bold: "Eintrittspreise (2026):", text: "<br>Erwachsene: 6,00 € <br>Erwachsene ermäßigt (Studenten, Rentner usw.): 5,00 € <br>Kinder und Jugendliche (6–17 Jahre): 3,00 € <br>Kinder unter 6 Jahren: kostenlos <br>Familientickets: 1 Erwachsener + Kinder: 6,00 €, 2 Erwachsene + Kinder: 12,00 € <br>Gruppentickets (10+): Erwachsene: 5,00 € Kinder/Jugendliche: 3,00 € <br><b>Tipps:</b> Tickets können vor Ort gekauft werden oder kombinierte Pässe genutzt werden (z. B. „AntikenCard“ für mehrere römische Denkmäler in Trier)." }
+      ]
+    },
+    sub_objects: {
+      title: "Sehenswürdigkeiten",
+      items: [
+        { bold: "Thermen", text: "heute stellen sie keinen herkömmlichen Museum dar, sondern einen archäologischen Komplex, in dem Ruinen und interaktive Elemente kombiniert sind, um ein umfassendes Bild vom Leben der Römer zu vermitteln." },
+        { bold: "Unterirdische Dienstgalerien und Kanäle", text: "– Besucher können in das Labyrinth der Untergeschosse hinabsteigen, wo gezeigt wird, wie Sklaven Heizung, Zirkulation von Warmwasser und Wasserversorgung betrieben haben. Diese Korridore vermitteln das Gefühl der Arbeit des „Herzens“ des Komplexes und zeigen die Ingenieurskunst der Antike." },
+        { bold: "Überirdische Ruinen", text: "– massive Arkaden, Mauern und Fundamente sind erhalten, die die Dimensionen des Komplexes verdeutlichen: große Hallen, hohe Gewölbe, symmetrische Grundrisse. Hier kann man sich leicht vorstellen, wie luxuriös die Thermen für die Erholung der kaiserlichen Elite und der Stadtbewohner gewesen sind." },
+        { bold: "Multimediale Führungen und Animationen", text: "– moderne Technik ermöglicht es, die Ruinen „zum Leben zu erwecken“: Auf Bildschirmen und via Audioguide kann man die Rekonstruktion der Innenräume, Bewegungen der Besucher, Wasserbecken und Heizsystem sehen, was die Besichtigung anschaulicher und unterhaltsamer macht." },
+        { bold: "Aussichtsplattform", text: "– offener Balkon mit Blick auf das gesamte Gelände und die Umgebung des Palastviertels. Aus der Höhe werden besonders die Dimensionen des Baus und die Verbindung der Thermen mit anderen Denkmälern des spätantiken Trier sichtbar." },
+        { bold: "Wechselnde Ausstellungen und Veranstaltungen", text: "– gelegentlich dient der Komplex als Bühne für historische Nachstellungen, kulturelle Veranstaltungen und Bildungsprogramme, darunter das Festival „Bread and Games“, das die römischen Traditionen durch Spiele, Kostüme und Handwerk vermittelt." },
+        { bold: "Selbstgeführter Rundgang", text: "– angelegte Wege und Informationstafeln ermöglichen es den Besuchern, den gesamten Komplex zu erkunden, sowohl Architektur als auch Ingenieursysteme zu studieren und die Nutzung der verschiedenen Thermenräume in der Antike nachzuvollziehen." }
+      ]
+    },
+    interestingFacts: {
+      title: "Interessante Fakten",
+      items: [
+        { text: "Der Komplex wurde teilweise entsprechend seiner Bestimmung genutzt, aber niemals vollständig fertiggestellt." },
+        { text: "Die Thermen mit ihren Kanälen und unterirdischen Galerien bieten einzigartiges Material zum Verständnis der Ingenieurslösungen der alten Römer." },
+        { text: "Das Bad war nicht nur ein Ort der Körperpflege, sondern auch des gesellschaftlichen, kulturellen und geschäftlichen Lebens – die Römer trafen sich dort und entspannten gemeinsam." },
+        { text: "Die Thermen nehmen häufig an kulturellen Veranstaltungen teil, beispielsweise beim Festival „Bread and Games“ als Schauplatz für das Leben in der Antike." }
+      ]
+    },
+    construction_period: "Ende 3. bis Anfang 4. Jahrhundert n. Chr.",
+    coord: { lat: 49.750406, lng: 6.641575 },
+    meta: {
+      title: "Römische Kaiserthermen in Trier – Geschichte, Fotos, Öffnungszeiten",
+      description: "Erfahren Sie mehr über die Geschichte, Führungen und praktische Informationen zu den römischen Kaiserthermen (Kaiserthermen) in Trier – einer der größten antiken Badeanlagen nördlich der Alpen, die in die UNESCO-Liste aufgenommen wurden.",
+      ogTitle: "Kaiserthermen Trier – Römische Antike Bäder",
+      ogDescription: "Entdecken Sie die Kaiserthermen in Trier: antike Ruinen der imposanten römischen Bäder mit unterirdischen Galerien, multimedialen Ausstellungen und reicher Geschichte.",
+      ogImage: "https://our-travels.info/foto/Germany/rheinland-pfalz/trier-city/kaiserthermen/01.jpg"
+    }
+  },
+  {
+    id: "basilica_of_constantine_trier",
+    name: "Konstantin-Basilika",
+    type: ["cathedral", "historical_building"], rating: "popular",
+    path: "basilica_of_constantine_trier",
+    countryPath: "germany", regionsPath: "rheinland-pfalz", districtPath: "city", cityPath: "trier",
+    fotoCard: "Germany/rheinland-pfalz/trier-city/basilica_of_constantine/001.jpg",
+    location: "Trier, Deutschland",
+    officialSite: [
+      { bold: "Offizielle Webseite", link: "https://trier.ekir.de/inhalt/konstantin-basilika?utm_source=chatgpt.com" }
+    ],
+    unesco_status: {
+      included: true,
+      year: 1986,
+      type: "Kulturerbe",
+      criteria: "i, iii, iv, vi",
+      epoch: "Römische Epoche",
+      series: "Römische Denkmäler, Dom St. Peter und Liebfrauenkirche in Trier"
+    },
+    short_description: "Monumentales römisches Gebäude aus dem 4. Jahrhundert, das als Thronsaal von Kaiser Konstantin diente. Heute ist es eine der größten erhaltenen antiken Saalbasiliken der Welt und eine protestantische Kirche.",
+    full_description: {
+      title: "Beschreibung und Geschichte",
+      items: [
+        { bold: "Konstantin-Basilika (Aula Palatina) ", text: "– ein einzigartiges Beispiel spätantiker Palastarchitektur. Der große rechteckige Saal mit einer Länge von etwa 67 m und einer Höhe von über 30 m beeindruckt durch sein Ausmaß und die strenge Monumentalität. Innen gibt es keine Säulen – der Raum ist vollständig offen, was eine technische Meisterleistung der damaligen Zeit darstellte. Heute wird das Gebäude als evangelische Kirche und historisches Denkmal genutzt." },
+        { bold: "Geschichte. ", text: "Die Konstantinbasilika (Aula Palatina) wurde um 310 n. Chr. auf Anordnung von Kaiser Konstantin dem Großen erbaut, als Trier eine der Hauptstädte des Römischen Reiches war. Das Gebäude diente als Thronsaal des kaiserlichen Palastes, in dem offizielle Empfänge und Audienzen stattfanden. Die architektonische Lösung beeindruckte durch ihre Größe: der enorme rechteckige Saal mit einer Länge von etwa 67 Metern und einer Höhe von über 30 Metern vermittelte ein Gefühl monumentaler Offenheit, und die massiven Wände sowie die hohen Fenster ließen das natürliche Licht gleichmäßig den Innenraum erhellen." },
+        { text: "Nach dem Fall des Römischen Reiches verlor die Basilika ihre ursprüngliche Bedeutung. Im Mittelalter wurde sie als Festung und Residenz des Trierer Erzbischofs genutzt. In dieser Zeit wurde das Gebäude erheblich umgebaut: Innenräume wurden unterteilt und ein Teil der architektonischen Details ging verloren. Dennoch blieb die Hauptstruktur erhalten, was die Ingenieurskunst der römischen Baumeister verdeutlicht." },
+        { text: "Im 19. Jahrhundert begann die bayerische Regierung mit einer umfangreichen Restaurierung der Basilika, um ihr ursprüngliches antikes Aussehen wiederherzustellen. Die Innenräume wurden restauriert, die Fassaden gereinigt, die Mauern verstärkt und die Bogenfenster nach erhaltenen Plänen und Vorbildern rekonstruiert. Seitdem wird das Gebäude als protestantische Kirche genutzt und bleibt gleichzeitig ein bedeutendes historisches Denkmal." },
+        { text: "Während des Zweiten Weltkriegs wurde die Basilika geringfügig beschädigt, die Schäden wurden in den Nachkriegsjahren behoben. Heute gehört die Aula Palatina zum UNESCO-Welterbe „Römische Baudenkmäler, Dom und Liebfrauenkirche in Trier“. Sie zieht Touristen aus der ganzen Welt nicht nur als religiöses Bauwerk, sondern auch als herausragendes Beispiel römischer Architektur in Nordeuropa an." }
+      ]
+    },
+    tickets_and_entry: {
+      title: "Praktische Informationen",
+      items: [
+        { bold: "Zugang:", text: "geöffnet für Besuche, Eintritt in der Regel frei" }
+      ]
+    },
+    interestingFacts: {
+      title: "Interessante Fakten",
+      items: [
+        { text: "Es ist der größte vollständig erhaltene Innenraum der Antike nördlich der Alpen." },
+        { text: "Wände bis zu 2,7 m dick." },
+        { text: "Im römischen Zeitalter war das Innere mit Marmor verkleidet und mit Mosaiken geschmückt." },
+        { text: "Das Gebäude wurde ursprünglich mit einem Hypokaustsystem (römische Zentralheizung) beheizt." }
+      ]
+    },
+    construction_period: "4. Jahrhundert n. Chr., ca. 310",
+    founder: "Kaiser Konstantin der Große",
+    coord: { lat: 49.75352, lng: 6.64342 },
+    meta: {
+      title: "Konstantin-Basilika in Trier – römischer Thronsaal des 4. Jahrhunderts",
+      description: "Die Konstantin-Basilika (Aula Palatina) – antiker Palastsaal von Kaiser Konstantin in Trier. Geschichte, Fakten, Architektur und Besuchsinformationen.",
+      ogTitle: "Konstantin-Basilika – römische Architektur in Trier",
+      ogDescription: "Der große Thronsaal von Kaiser Konstantin aus dem 4. Jahrhundert – eines der beeindruckendsten Denkmäler der römischen Epoche in Deutschland.",
+      ogImage: "https://our-travels.info/foto/Germany/rheinland-pfalz/trier-city/basilica_of_constantine/001.jpg"
+    }
+  },
+  {
+    id: "barbarathermen_trier",
+    name: "Barbarathermen",
+    type: ["historical_building"], rating: "popular",
+    path: "barbarathermen_trier",
+    countryPath: "germany", regionsPath: "rheinland-pfalz", districtPath: "city", cityPath: "trier",
+    fotoCard: "Germany/rheinland-pfalz/trier-city/barbarathermen/001.jpg",
+    location: "Trier, Deutschland",
+    short_description: "Der Komplex Barbarathermen ist ein riesiger römischer Badekomplex im nördlichen Teil des antiken Trier. Er umfasste Bäder für verschiedene soziale Schichten: von einfachen Bürgern bis zum Adel und gehörte zu den größten nördlich der Alpen. Bis heute sind Reste von Mauern, Becken und Kanalisationsanlagen erhalten, die die Dimensionen des Bauwerks und das ingenieurtechnische Können der Römer verdeutlichen.",
+    full_description: {
+      title: "Beschreibung und Geschichte",
+      items: [
+        { bold: "Der Komplex Barbarathermen (Barbarathermen)", text: "– ist einer der größten römischen Badekomplexe nördlich der Alpen, im nördlichen Teil des antiken Trier gelegen. Die Thermen erstreckten sich über eine große Fläche und waren für verschiedene soziale Schichten bestimmt: von einfachen Bürgern bis zum Adel und römischen Beamten. Heute sind nur noch Fragmente von Mauern, Becken und Kanalisationsanlagen erhalten, doch selbst diese Ruinen vermitteln einen Eindruck vom Umfang des Komplexes und der hohen Ingenieurskunst der Römer." },
+        { text: "Der Bau des Komplexes datiert in das 2.–3. Jahrhundert n. Chr., in der Blütezeit des römischen Trier als wichtiges Verwaltungs- und Wirtschaftszentrum an der nördlichen Grenze des Reiches. Die Thermen erfüllten nicht nur hygienische Funktionen, sondern dienten auch als Treffpunkt, Erholungsort und sozialer Mittelpunkt der Stadtbewohner." },
+        { text: "Die Architektur des Komplexes war typisch für römische Bäder dieser Zeit: separate Räume für heiße, warme und kalte Bäder (Caldarium, Tepidarium, Frigidarium), Nebenräume für die Wassererwärmung, Lagerung von Brennstoff und Öl. Ein komplexes Wasser- und Kanalisationssystem ermöglichte die konstante Wassertemperatur und komfortable Bedingungen für die Besucher." },
+        { text: "Nach dem Untergang des Römischen Reiches verfiel der Komplex allmählich. Das Gelände wurde verlassen, und ein Großteil der Gebäude zerfiel durch die Einflüsse der Zeit und der Natur. Archäologische Ausgrabungen, die im 19.–20. Jahrhundert begannen, ermöglichten die Bestimmung des Komplexplans, die Identifizierung einzelner Räume und die Rekonstruktion des historischen Kontexts." },
+        { text: "Heute sind die Barbarathermen für Besucher als Ruinen unter freiem Himmel zugänglich. Man kann die Überreste von Mauern, Becken und Ingenieurbauten sehen und den Umfang und die Anlage des Komplexes einschätzen. Trotz des Fehlens eines vollwertigen Museums ist dieser Ort ein wichtiger Teil des kulturellen und historischen Erbes von Trier und zeigt das Niveau der römischen Zivilisation im Norden des Reiches." },
+        { text: "Der Komplex wird oft mit den Kaiserthermen in Trier verglichen, jedoch waren die Barbarathermen für ein breites Publikum ausgelegt und nahmen ein eigenes Gelände ein, was sie zu einer eigenständigen und einzigartigen Sehenswürdigkeit der Stadt macht." },
+        { text: "Der Komplex steht unter staatlichem Schutz und ist als Kulturerbe von Trier registriert." }
+      ]
+    },
+    tickets_and_entry: {
+      title: "Praktische Informationen",
+      items: [
+        { bold: "Adresse:", text: "Südallee, 54290 Trier, Deutschland" },
+        { bold: "Besuchszeiten:", text: "im Freien zugänglich (kein vollwertiges Museum im Inneren)" },
+        { bold: "Eintritt:", text: "kostenlos (Zugang zu den Ruinen im Freien)" }
+      ]
+    },
+    interestingFacts: {
+      title: "Interessante Fakten",
+      items: [
+        { text: "Der Komplex war seinerzeit der größte nördlich der Alpen." },
+        { text: "Auf dem Gelände wurden Reste des Kanalisationssystems und der Becken entdeckt." },
+        { text: "Die Thermen erhielten ihren Namen „Barbarathermen“ nach ihrem historischen Standort im antiken Trier." },
+        { text: "Das Kanalisations- und Wasserversorgungssystem des Komplexes beeindruckt selbst moderne Ingenieure." }
+      ]
+    },
+    construction_period: "2.–3. Jahrhundert n. Chr.",
+    coord: { lat: 49.75024, lng: 6.63080 },
+    meta: {
+      title: "Barbarathermen Trier – größter römischer Badekomplex",
+      description: "Erfahren Sie mehr über die Barbarathermen in Trier – den größten römischen Badekomplex nördlich der Alpen, erhalten als Ruinen.",
+      ogTitle: "Barbarathermen Trier – Antike römische Bäder",
+      ogDescription: "Entdecken Sie die Barbarathermen in Trier: einer der größten römischen Badekomplexe nördlich der Alpen.",
+      ogImage: "https://our-travels.info/foto/Germany/rheinland-pfalz/trier-city/barbarathermen/001.jpg"
+    }
+  },
+  {
+    id: "roman_bridge_trier",
+    name: "Römerbrücke",
+    type: ["technical_structure", "historical_building"], rating: "top",
+    path: "roman_bridge_trier",
+    countryPath: "germany", regionsPath: "rheinland-pfalz", districtPath: "city", cityPath: "trier",
+    fotoCard: "Germany/rheinland-pfalz/trier-city/roman_bridge/001.jpg",
+    location: "Trier, Deutschland",
+    officialSite: [
+      { bold: "Offizielle Webseite", link: "https://www.trier-info.de/sehenswuerdigkeiten/roemerbruecke" }
+    ],
+    unesco_status: {
+      included: true,
+      year: 1986,
+      type: "Kulturerbe",
+      criteria: "i, iii, iv, vi",
+      epoch: "Römische Epoche",
+      series: "Römische Denkmäler, Dom St. Peter und Liebfrauenkirche in Trier"
+    },
+    short_description: "Die Römische Brücke – eine antike römische Brücke über die Mosel in Trier, erbaut im 2. Jahrhundert n. Chr. Sie ist die älteste Brücke Deutschlands, deren originale römische Basaltpfeiler teilweise erhalten geblieben sind. Das Bauwerk wird bis heute für den Verkehr und Fußgänger genutzt.",
+    full_description: {
+      title: "Beschreibung und Geschichte",
+      items: [
+        { bold: "Römerbrücke", text: "– ein herausragendes Beispiel römischer Ingenieurskunst, das sich über die Mosel in der Stadt Trier spannt. Sie gilt als älteste Brücke Deutschlands und eine der ältesten noch genutzten Brücken Europas. Auch nach fast zweitausend Jahren erfüllt das Bauwerk weiterhin seine ursprüngliche Funktion, verbindet die Ufer und bleibt ein wichtiger Bestandteil der städtischen Infrastruktur." },
+        { text: "Die Geschichte der Furt an dieser Stelle beginnt bereits im 1. Jahrhundert v. Chr., als die Römer die Stadt Augusta Treverorum gründeten. Zunächst existierten hier Holzbrücken, die wiederholt durch Hochwasser und Zeit zerstört wurden. Im 2. Jahrhundert n. Chr. errichteten römische Ingenieure steinerne Pfeiler aus massiven Basaltblöcken – diese sind bis heute erhalten und bilden den ältesten Teil der Konstruktion." },
+        { text: "Im Mittelalter und in der Neuzeit wurde die Brücke mehrfach umgebaut. Die oberen Bögen wurden nach Zerstörungen durch Kriege und Naturkatastrophen verändert, doch die römischen Fundamente erwiesen sich als so stabil, dass sie nicht ersetzt werden mussten. Besonders starke Schäden erlitt die Brücke im 17. Jahrhundert während militärischer Konflikte, danach wurde sie Anfang des 18. Jahrhunderts wiederhergestellt." },
+        { text: "Im 19. Jahrhundert wurden die Verteidigungstore der Brücke entfernt, um den Verkehr zu erleichtern, und im 20. Jahrhundert wurde die Konstruktion für moderne Belastungen erweitert und verstärkt. Trotz Modernisierungen ist das historische Aussehen erhalten geblieben, und heute ist die Grenze zwischen den antiken Steinsäulen und den späteren Aufbauten deutlich erkennbar." },
+        { text: "Heute dient die Brücke nicht nur als Verkehrsverbindung, sondern ist auch eine bedeutende Sehenswürdigkeit, die Teil des Komplexes römischer Monumente von Trier ist, der zum UNESCO-Weltkulturerbe gehört. Sie ist ein anschauliches Zeugnis der Ingenieurskunst des Römischen Reiches und erinnert an eine Zeit, als Trier eine der größten Städte nördlich der Alpen war." }
+      ]
+    },
+    tickets_and_entry: {
+      title: "Praktische Informationen",
+      items: [
+        { bold: "Adresse: ", text: "Trier, Rheinland-Pfalz, Deutschland." }
+      ]
+    },
+    interestingFacts: {
+      title: "Interessante Fakten",
+      items: [
+        { text: "Es ist die älteste Brücke Deutschlands, die teilweise aus römischer Zeit erhalten geblieben ist." },
+        { text: "In römischer Zeit warfen Menschen Münzen in die Mosel als Opfergabe für die Flussgöttin – Schätzungen zufolge könnten es bis zu einer Million auf dem Grund sein." },
+        { text: "Auf einem der Pfeiler wurde im 18. Jahrhundert eine Statue des Hl. Nikolaus sowie ein Kreuz aufgestellt (Geschichte und Legenden rund um dieses lokale Symbol)." },
+        { text: "Jeden Juni findet das kulturelle Ereignis BrückenGlück statt: Die Brücke wird für den Verkehr gesperrt, die Menschen versammeln sich für Picknicks, Live-Musik und Spaziergänge direkt auf der Brücke." }
+      ]
+    },
+    construction_period: "2. Jahrhundert n. Chr. (≈144–152) – Steinsäulen.",
+    coord: { lat: 49.7518886046633, lng: 6.62641205412341 },
+    meta: {
+      title: "Römerbrücke in Trier – älteste römische Brücke Deutschlands (UNESCO)",
+      description: "Erfahren Sie die Geschichte der antiken Römerbrücke über die Mosel in Trier – von den römischen Pfeilern des 2. Jahrhunderts bis zu modernen Rekonstruktionen. Kostenloser Zugang, UNESCO-Denkmal.",
+      ogTitle: "Römische Brücke in Trier – antike Perle der Mosel",
+      ogDescription: "Entdecken Sie die über 1800 Jahre alte Römische Brücke (Römerbrücke): Architektur, Geschichte und Entwicklung des Brückenbaus. Teil des UNESCO-Weltkulturerbes.",
+      ogImage: "https://our-travels.info/foto/Germany/rheinland-pfalz/trier-city/roman_bridge/001.jpg"
+    }
+  },
+  {
+    id: "cathedral_trier",
+    name: "Trierer Dom",
+    type: ["cathedral"], rating: "top",
+    path: "cathedral_trier",
+    countryPath: "germany", regionsPath: "rheinland-pfalz", districtPath: "city", cityPath: "trier",
+    fotoCard: "Germany/rheinland-pfalz/trier-city/cathedral/001.jpg",
+    location: "Trier, Deutschland",
+    officialSite: [{ bold: "Offizielle Website", link: "https://www.trierer-dom.de" }],
+    unesco_status: {
+      included: true,
+      year: 1986,
+      type: "Kulturerbe",
+      criteria: "i, iii, iv, vi",
+      epoch: "Mittelalter",
+      series: "Römische Denkmäler, Dom St. Peter und Liebfrauenkirche in Trier"
+    },
+    short_description: "Der Trierer Dom ist die älteste Kirche Deutschlands, gegründet im 4. Jahrhundert. Die imposante Kirche mit romanischer Architektur und reicher Geschichte bewahrt den berühmten Heiligen Rock und ein Schatzkammer-Museum mit seltenen christlichen Reliquien.",
+    full_description: {
+      title: "Beschreibung und Geschichte",
+      items: [
+        { bold: "Trierer Dom", text: "– ist ein beeindruckender historischer Komplex im Zentrum von Trier, der Elemente der romanischen und gotischen Architektur vereint. Er ist die älteste Kathedrale Deutschlands und dient noch heute als aktive Kirche. Der Dom ist bekannt für seine imposanten Gewölbe, massiven Säulen und schönen Glasfenster." },
+        { bold: "Architektur und Rekonstruktionen.", text: "Der Dom wurde auf den Fundamenten einer frühchristlichen Basilika aus dem 4. Jahrhundert errichtet, und seine Architektur spiegelt die Jahrhunderte lange Geschichte wider. Er vereint Elemente spätantiker, romanischer, gotischer und barocker Baukunst. Die romanische Grundstruktur stammt aus dem 12. Jahrhundert, gotische Elemente wurden im 13.–14. Jahrhundert hinzugefügt. Im Inneren sind einzigartige Marmordetails, Skulpturen und Malereien verschiedener Epochen zu sehen." },
+        { bold: "Schatzkammer des Doms (Trier Cathedral Treasury)", text: "bewahrt wertvolle kirchliche Reliquien, darunter Reliquiare, liturgische Gefäße und Textilien. Viele Exponate stammen aus dem Mittelalter und gelten als Meisterwerke der sakralen Kunst. Die Sammlung ermöglicht es, die religiöse und künstlerische Tradition der Region nachzuvollziehen." },
+        { bold: "Religiöse und kulturelle Bedeutung.", text: "Der Dom war stets das Zentrum des christlichen Lebens in Trier und ein Ort der Pilgerfahrt. Kathedrale und Schatzkammer gehören zu den bedeutenden historisch-kulturellen Objekten und sind Teil der touristischen Routen der Stadt." },
+        { bold: "Moderne Nutzung.", text: "Heute zieht der Trierer Dom jährlich Tausende von Touristen und Pilgern an. Hier finden Gottesdienste, Orgelkonzerte und spezielle Führungen durch die Schatzkammer statt, was ihn zu einem der wichtigsten touristischen und religiösen Zentren von Trier macht." }
+      ]
+    },
+    tickets_and_entry: {
+      title: "Praktische Informationen",
+      items: [
+        { bold: "Adresse:", text: "Domfreihof 1, 54290 Trier, Deutschland" },
+        { bold: "Öffnungszeiten:", text: "täglich von 10:00 bis 18:00 Uhr (Dom), <br>Schatzkammer von 10:00 bis 17:30 Uhr" },
+        { bold: "Eintritt:", text: "Eintritt in den Dom frei, Museum kostenpflichtig (~5-7 €)" }
+      ]
+    },
+    sub_objects: {
+      title: "Reliquien",
+      items: [
+        { bold: "Heiliger Rock,", text: "bekannt als Trierer Heiliger Rock, gilt als eine der am meisten verehrten christlichen Reliquien des Doms. Nach kirchlicher Überlieferung handelt es sich um ein nahtloses Kleidungsstück, das Jesus Christus vor der Kreuzigung getragen haben soll. Die Reliquie wird in einem speziellen Reliquienschrein im Dom aufbewahrt und ist normalerweise nicht dauerhaft ausgestellt; sie wird nur zu seltenen Pilgerausstellungen öffentlich gezeigt, die Tausende von Gläubigen aus aller Welt anziehen. Historiker vermuten, dass die Reliquie im 4. Jahrhundert zur Zeit von Kaiser Konstantin I. nach Trier gelangte, doch ihre genaue Herkunft bleibt wissenschaftlich umstritten." },
+        { bold: "Metternich-Altar", text: "– ein mittelalterlicher Holzaltar, verziert mit Szenen aus dem Leben Christi und der Heiligen. Er wurde von der Familie Metternich, einem einflussreichen Adelsgeschlecht der Region, in Auftrag gegeben oder mit ihr in Verbindung gebracht. Der Altar zeigt meisterhafte Holzschnitzkunst und Malerei der damaligen Zeit und hat trotz der Jahrhunderte seine lebendigen Farben und Goldverzierungen bewahrt." },
+        { bold: "Bischofskreuz, 4.–5. Jahrhundert", text: "– eines der ältesten christlichen Kreuze, das mit der Geschichte des Trierer Doms verbunden ist. Dieses kleine Kreuz, verziert mit Edelsteinen und dekorativen Elementen, wurde als Symbol der bischöflichen Autorität und geistlichen Leitung in der frühchristlichen Zeit verwendet. Es stammt aus der Zeit des Spätromischen Reiches, als Trier ein bedeutendes religiöses und politisches Zentrum war. Heute wird das Kreuz in der Schatzkammer aufbewahrt und gilt als wertvolles Zeugnis frühchristlicher Kunst und kirchlicher Tradition." },
+        { bold: "Schätze der mittelalterlichen Liturgie", text: "– Gefäße, Reliquiare und Textilien, die im Gottesdienst verwendet wurden." }
+      ]
+    },
+    interestingFacts: {
+      title: "Interessante Fakten",
+      items: [
+        { text: "Der Trierer Dom gilt als die älteste noch aktive Kathedrale Deutschlands, und das Bischofsamt in der Stadt besteht seit über 1600 Jahren." },
+        { text: "Der erste christliche Tempel an dieser Stelle wurde im 4. Jahrhundert zur Zeit des Römischen Reiches errichtet, als Trier eine der kaiserlichen Residenzen war." },
+        { text: "Die Mauern des Doms sind an einigen Stellen über 4 Meter dick, da beim Bau Steine aus römischen Bauwerken verwendet wurden." },
+        { text: "Neben dem Dom befindet sich die Kirche Liebfrauenkirche – eine der frühesten gotischen Kirchen Deutschlands." }
+      ]
+    },
+    construction_period: "IV-XII Jahrhundert",
+    coord: { lat: 49.75625, lng: 6.64366 },
+    meta: {
+      title: "Trierer Dom (Trier Cathedral) und Schatzkammer",
+      description: "Entdecken Sie den Trierer Dom aus dem 12. Jahrhundert mit einzigartigen Reliquien und der Schatzkammer des Doms. Geschichte, Architektur und wertvolle Artefakte christlicher Kunst in Trier.",
+      ogTitle: "Trierer Dom und Schatzkammer – Geschichte und Reliquien",
+      ogDescription: "Tauchen Sie ein in die Geschichte des Trierer Doms aus dem 12. Jahrhundert und entdecken Sie die Schatzkammer mit seltenen kirchlichen Artefakten.",
+      ogImage: "https://our-travels.info/foto/Germany/rheinland-pfalz/trier-city/cathedral/001.jpg"
+    }
+  },
 ];
 
 export default datas;

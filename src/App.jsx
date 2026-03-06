@@ -12,6 +12,7 @@ import SearchPage from './page/searchPage/SearchPage';
 import AttractionForm from './components/forma/AttractionForm';
 import Event from './page/events/Events'
 import Map from './page/map/Map'
+import Unesco from './page/unesco/Unesco'
 
 function App() {
 
@@ -25,20 +26,21 @@ function App() {
 
           <Route path="/:countryPath" element={<Country />} />
           <Route path="/map" element={<Map />} />
+          <Route path="/unesco" element={<Unesco />} />
 
-          <Route path="/:countryPath/:regionsPath" element={<Regions />} />
+          <Route path="/:countryPath/:regionPath" element={<Regions />} />
 
-          <Route path="/:countryPath/:regionsPath/:districtPath" element={<District />} />
+          <Route path="/:countryPath/:regionPath/:districtPath" element={<District />} />
 
-          <Route path="/:countryPath/:regionsPath/:districtPath/:cityPath" element={<City />} />
+          <Route path="/:countryPath/:regionPath/:districtPath/:cityPath" element={<City />} />
 
-          <Route path="/:countryPath/:regionsPath/attractions" element={<AttractionsList />} />
-          <Route path="/:countryPath/:regionsPath/:districtPath/attractions" element={<AttractionsList />} />
-          <Route path="/:countryPath/:regionsPath/:districtPath/:cityPath/attractions" element={<AttractionsList />} />
+          <Route path="/:countryPath/:regionPath/attractions" element={<AttractionsList />} />
+          <Route path="/:countryPath/:regionPath/:districtPath/attractions" element={<AttractionsList />} />
+          <Route path="/:countryPath/:regionPath/:districtPath/:cityPath/attractions" element={<AttractionsList />} />
 
-          <Route path="/:countryPath/:regionsPath/:districtPath/:cityPath/attractions/:attractionsPath" element={<Attraction />} />
+          <Route path="/:countryPath/:regionPath/:districtPath/:cityPath/attractions/:attractionsPath" element={<Attraction />} />
 
-          <Route path="/:countryPath/:regionsPath/:districtPath/:cityPath/events/:eventPath" element={<Event />} />
+          <Route path="/:countryPath/:regionPath/:districtPath/:cityPath/events/:eventPath" element={<Event />} />
 
           <Route path="/search" element={<SearchPage />} />
         </Route>

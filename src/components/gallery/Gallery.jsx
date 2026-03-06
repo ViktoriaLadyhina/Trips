@@ -44,8 +44,8 @@ const Gallery = ({ images }) => {
                 {images.map((img, index) => (
                     <img
                         key={index}
-                        src={img.src}
-                        alt={img.alt}
+                        src={img?.src}
+                        alt={img?.alt}
                         className={`gallery__thumb ${index === current ? "active" : ""}`}
                         onClick={() => setCurrent(index)}
                         ref={(el) => (thumbnailsRef.current[index] = el)}
@@ -60,11 +60,11 @@ const Gallery = ({ images }) => {
 
                 <div className="gallery__image-container">
                     <img
-                        src={images[current].src}
-                        alt={images[current].alt}
+                        src={images[current]?.src}
+                        alt={images[current]?.alt}
                         className="gallery__image"
                     />
-                    <div className="gallery__caption">{images[current].alt}</div>
+                    <div className="gallery__caption">{images[current]?.alt}</div>
                 </div>
 
                 <button className="gallery__nav gallery__nav--next" onClick={nextImage}>
