@@ -17,7 +17,7 @@ const datas = [
                 { bold: "Dufthaus 4711", text: "– historisches Gebäude in der Fußgängerzone um die Hohe Straße und Schildergasse." },
                 { bold: "Duftmuseum im Farina-Haus", text: "– Museum für Düfte und Parfum im historischen Viertel beim Rathaus." },
                 { bold: "Groß St. Martin", text: "– eine der bekanntesten romanischen Kirchen Kölns mit einem massiven Trikonchen-Turm, der über dem Rheinufer emporragt. Symbol der Silhouette der Altstadt." },
-                { bold: "St. Mariä Himmelfahrt", text: "– die wichtigste Barockkirche Kölns aus dem 17. Jahrhundert, eine ehemalige Jesuitenkirche in der Nähe des Hauptbahnhofs und des Kölner Doms."},
+                { bold: "St. Mariä Himmelfahrt", text: "– die wichtigste Barockkirche Kölns aus dem 17. Jahrhundert, eine ehemalige Jesuitenkirche in der Nähe des Hauptbahnhofs und des Kölner Doms." },
                 { bold: "Gürzenich", text: "– historisches Zunfthaus und Saal in der Nähe des Kölner Doms." },
                 { bold: "Kölner Rathaus", text: "– historisches Stadthaus im Zentrum der Altstadt." },
                 { bold: "Kölnisches Stadtmuseum", text: "– Museum für Stadtgeschichte im Zentrum (Zeughaus)." },
@@ -68,7 +68,13 @@ const datas = [
         officialSite: [
             { bold: 'Offizielle Webseite des Kölner Doms', link: 'https://www.koelner-dom.de/' }
         ],
-        unesco_status: { included: true, year: 1996 },
+        unesco_status: {
+            included: true,
+            year: 1996,
+            type: "Kulturerbe",
+            criteria: "i, ii, iv",
+            epoch: "Gotik"
+        },
         construction_period: "1248–1880",
         architects: ["Konrad von Hochstaden, ", "Werkstätten der Baumeister XIII–XIX Jh."],
         founder: "Reinald von Dassel",
@@ -1936,7 +1942,14 @@ const datas = [
         officialSite: [
             { bold: 'Offizielle Website der Brühler Schlösser', link: 'https://www.schlossbruehl.de/en/' },
         ],
-        unesco_status: { included: true, year: 1984 },
+        unesco_status: {
+            included: true,
+            year: 1984,
+            type: "Kulturerbe",
+            criteria: "i, ii, iv",
+            series: "Schlösser von Brühl: Augustusburg und Falkenlust",
+            epoch: "Barock"
+        },
         tickets_and_entry: {
             title: "Tickets und Eintritt",
             items: [

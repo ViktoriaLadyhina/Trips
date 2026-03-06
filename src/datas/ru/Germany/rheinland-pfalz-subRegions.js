@@ -12,8 +12,6 @@ const datas =
                 { id: 3, name: "Бендорф", hasInfo: false }
             ],
         },
-
-
         {
             id: 15_1,
             name: "Мендиг",

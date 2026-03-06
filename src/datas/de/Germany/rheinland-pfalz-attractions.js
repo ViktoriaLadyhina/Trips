@@ -11,7 +11,14 @@ const datas = [
     officialSite: [
       { bold: "Offizielle Webseite", link: "https://www.zentrum-der-antike.de/monumente/porta-nigra?utm_source=chatgpt.com" }
     ],
-    unesco_status: { included: true, year: 1986 },
+    unesco_status: {
+      included: true,
+      year: 1986,
+      type: "Kulturerbe",
+      criteria: "i, iii, iv, vi",
+      epoch: "Römische Epoche",
+      series: "Römische Denkmäler, Dom St. Peter und Liebfrauenkirche in Trier"
+    },
     short_description: "Die Porta Nigra ist das größte erhaltene römische Stadttor nördlich der Alpen, im Zentrum von Trier gelegen. Errichtet um 170 n. Chr., beeindruckt es durch massive Sandsteinblöcke und eine fast zweitausendjährige Geschichte. Heute ist es ein Symbol der Stadt.",
     full_description: {
       title: "Beschreibung und Geschichte",
@@ -61,7 +68,14 @@ const datas = [
     officialSite: [
       { bold: "Offizielle Webseite", link: "https://www.zentrum-der-antike.de/monumente/amphitheater" }
     ],
-    unesco_status: { included: true, year: 1986 },
+    unesco_status: {
+      included: true,
+      year: 1986,
+      type: "Kulturerbe",
+      criteria: "i, iii, iv, vi",
+      epoch: "Römische Epoche",
+      series: "Römische Denkmäler, Dom St. Peter und Liebfrauenkirche in Trier"
+    },
     short_description: "Das römische Amphitheater in Trier ist eine der größten römischen Arenen außerhalb Italiens. Es wurde Ende des 2. Jahrhunderts n. Chr. erbaut und konnte bis zu 20.000 Zuschauer fassen. Hier fanden Gladiatorenkämpfe, Tierdarstellungen und Massenveranstaltungen statt. Heute ist das Amphitheater für Besucher geöffnet; erhalten sind die Arena, die Tribünen und unterirdischen Gänge.",
     full_description: {
       title: "Beschreibung und Geschichte",
@@ -130,7 +144,14 @@ const datas = [
     countryPath: "germany", regionsPath: "rheinland-pfalz", districtPath: "city", cityPath: "trier",
     fotoCard: "Germany/rheinland-pfalz/trier-city/kaiserthermen/01.jpg",
     location: "Trier, Deutschland",
-    unesco_status: { included: true, year: 1986 },
+    unesco_status: {
+      included: true,
+      year: 1986,
+      type: "Kulturerbe",
+      criteria: "i, iii, iv, vi",
+      epoch: "Römische Epoche",
+      series: "Römische Denkmäler, Dom St. Peter und Liebfrauenkirche in Trier"
+    },
     short_description: "Die Kaiserthermen gehören zu den größten römischen Badeanlagen nördlich der Alpen, erbaut Ende des 3. bis Anfang des 4. Jahrhunderts n. Chr. in der Stadt Trier (früher Augusta Treverorum). Heute sind vom Komplex mächtige Ruinen erhalten, die sowohl oberirdisch als auch unterirdisch besichtigt werden können, mit Zugang zu den unterirdischen Dienstgalerien und den Überresten der Ingenieursysteme.",
     full_description: {
       title: "Beschreibung und Geschichte",
@@ -195,7 +216,14 @@ const datas = [
     officialSite: [
       { bold: "Offizielle Webseite", link: "https://trier.ekir.de/inhalt/konstantin-basilika?utm_source=chatgpt.com" }
     ],
-    unesco_status: { included: true, year: 1986 },
+    unesco_status: {
+      included: true,
+      year: 1986,
+      type: "Kulturerbe",
+      criteria: "i, iii, iv, vi",
+      epoch: "Römische Epoche",
+      series: "Römische Denkmäler, Dom St. Peter und Liebfrauenkirche in Trier"
+    },
     short_description: "Monumentales römisches Gebäude aus dem 4. Jahrhundert, das als Thronsaal von Kaiser Konstantin diente. Heute ist es eine der größten erhaltenen antiken Saalbasiliken der Welt und eine protestantische Kirche.",
     full_description: {
       title: "Beschreibung und Geschichte",
@@ -292,7 +320,14 @@ const datas = [
     officialSite: [
       { bold: "Offizielle Webseite", link: "https://www.trier-info.de/sehenswuerdigkeiten/roemerbruecke" }
     ],
-    unesco_status: { included: true, year: 1986 },
+    unesco_status: {
+      included: true,
+      year: 1986,
+      type: "Kulturerbe",
+      criteria: "i, iii, iv, vi",
+      epoch: "Römische Epoche",
+      series: "Römische Denkmäler, Dom St. Peter und Liebfrauenkirche in Trier"
+    },
     short_description: "Die Römische Brücke – eine antike römische Brücke über die Mosel in Trier, erbaut im 2. Jahrhundert n. Chr. Sie ist die älteste Brücke Deutschlands, deren originale römische Basaltpfeiler teilweise erhalten geblieben sind. Das Bauwerk wird bis heute für den Verkehr und Fußgänger genutzt.",
     full_description: {
       title: "Beschreibung und Geschichte",
@@ -332,13 +367,20 @@ const datas = [
   {
     id: "cathedral_trier",
     name: "Trierer Dom",
-    type: ["cathedral"],rating: "top",
-    path: "cathedral_trier", 
+    type: ["cathedral"], rating: "top",
+    path: "cathedral_trier",
     countryPath: "germany", regionsPath: "rheinland-pfalz", districtPath: "city", cityPath: "trier",
     fotoCard: "Germany/rheinland-pfalz/trier-city/cathedral/001.jpg",
     location: "Trier, Deutschland",
     officialSite: [{ bold: "Offizielle Website", link: "https://www.trierer-dom.de" }],
-    unesco_status: { included: true, year: 1986 },
+    unesco_status: {
+      included: true,
+      year: 1986,
+      type: "Kulturerbe",
+      criteria: "i, iii, iv, vi",
+      epoch: "Mittelalter",
+      series: "Römische Denkmäler, Dom St. Peter und Liebfrauenkirche in Trier"
+    },
     short_description: "Der Trierer Dom ist die älteste Kirche Deutschlands, gegründet im 4. Jahrhundert. Die imposante Kirche mit romanischer Architektur und reicher Geschichte bewahrt den berühmten Heiligen Rock und ein Schatzkammer-Museum mit seltenen christlichen Reliquien.",
     full_description: {
       title: "Beschreibung und Geschichte",
@@ -346,7 +388,7 @@ const datas = [
         { bold: "Trierer Dom", text: "– ist ein beeindruckender historischer Komplex im Zentrum von Trier, der Elemente der romanischen und gotischen Architektur vereint. Er ist die älteste Kathedrale Deutschlands und dient noch heute als aktive Kirche. Der Dom ist bekannt für seine imposanten Gewölbe, massiven Säulen und schönen Glasfenster." },
         { bold: "Architektur und Rekonstruktionen.", text: "Der Dom wurde auf den Fundamenten einer frühchristlichen Basilika aus dem 4. Jahrhundert errichtet, und seine Architektur spiegelt die Jahrhunderte lange Geschichte wider. Er vereint Elemente spätantiker, romanischer, gotischer und barocker Baukunst. Die romanische Grundstruktur stammt aus dem 12. Jahrhundert, gotische Elemente wurden im 13.–14. Jahrhundert hinzugefügt. Im Inneren sind einzigartige Marmordetails, Skulpturen und Malereien verschiedener Epochen zu sehen." },
         { bold: "Schatzkammer des Doms (Trier Cathedral Treasury)", text: "bewahrt wertvolle kirchliche Reliquien, darunter Reliquiare, liturgische Gefäße und Textilien. Viele Exponate stammen aus dem Mittelalter und gelten als Meisterwerke der sakralen Kunst. Die Sammlung ermöglicht es, die religiöse und künstlerische Tradition der Region nachzuvollziehen." },
-        { bold: "Religiöse und kulturelle Bedeutung.", text: "Der Dom war stets das Zentrum des christlichen Lebens in Trier und ein Ort der Pilgerfahrt. Kathedrale und Schatzkammer gehören zu den bedeutenden historisch-kulturellen Objekten und sind Teil der touristischen Routen der Stadt."},
+        { bold: "Religiöse und kulturelle Bedeutung.", text: "Der Dom war stets das Zentrum des christlichen Lebens in Trier und ein Ort der Pilgerfahrt. Kathedrale und Schatzkammer gehören zu den bedeutenden historisch-kulturellen Objekten und sind Teil der touristischen Routen der Stadt." },
         { bold: "Moderne Nutzung.", text: "Heute zieht der Trierer Dom jährlich Tausende von Touristen und Pilgern an. Hier finden Gottesdienste, Orgelkonzerte und spezielle Führungen durch die Schatzkammer statt, was ihn zu einem der wichtigsten touristischen und religiösen Zentren von Trier macht." }
       ]
     },
@@ -362,7 +404,7 @@ const datas = [
       title: "Reliquien",
       items: [
         { bold: "Heiliger Rock,", text: "bekannt als Trierer Heiliger Rock, gilt als eine der am meisten verehrten christlichen Reliquien des Doms. Nach kirchlicher Überlieferung handelt es sich um ein nahtloses Kleidungsstück, das Jesus Christus vor der Kreuzigung getragen haben soll. Die Reliquie wird in einem speziellen Reliquienschrein im Dom aufbewahrt und ist normalerweise nicht dauerhaft ausgestellt; sie wird nur zu seltenen Pilgerausstellungen öffentlich gezeigt, die Tausende von Gläubigen aus aller Welt anziehen. Historiker vermuten, dass die Reliquie im 4. Jahrhundert zur Zeit von Kaiser Konstantin I. nach Trier gelangte, doch ihre genaue Herkunft bleibt wissenschaftlich umstritten." },
-        { bold: "Metternich-Altar", text: "– ein mittelalterlicher Holzaltar, verziert mit Szenen aus dem Leben Christi und der Heiligen. Er wurde von der Familie Metternich, einem einflussreichen Adelsgeschlecht der Region, in Auftrag gegeben oder mit ihr in Verbindung gebracht. Der Altar zeigt meisterhafte Holzschnitzkunst und Malerei der damaligen Zeit und hat trotz der Jahrhunderte seine lebendigen Farben und Goldverzierungen bewahrt."},
+        { bold: "Metternich-Altar", text: "– ein mittelalterlicher Holzaltar, verziert mit Szenen aus dem Leben Christi und der Heiligen. Er wurde von der Familie Metternich, einem einflussreichen Adelsgeschlecht der Region, in Auftrag gegeben oder mit ihr in Verbindung gebracht. Der Altar zeigt meisterhafte Holzschnitzkunst und Malerei der damaligen Zeit und hat trotz der Jahrhunderte seine lebendigen Farben und Goldverzierungen bewahrt." },
         { bold: "Bischofskreuz, 4.–5. Jahrhundert", text: "– eines der ältesten christlichen Kreuze, das mit der Geschichte des Trierer Doms verbunden ist. Dieses kleine Kreuz, verziert mit Edelsteinen und dekorativen Elementen, wurde als Symbol der bischöflichen Autorität und geistlichen Leitung in der frühchristlichen Zeit verwendet. Es stammt aus der Zeit des Spätromischen Reiches, als Trier ein bedeutendes religiöses und politisches Zentrum war. Heute wird das Kreuz in der Schatzkammer aufbewahrt und gilt als wertvolles Zeugnis frühchristlicher Kunst und kirchlicher Tradition." },
         { bold: "Schätze der mittelalterlichen Liturgie", text: "– Gefäße, Reliquiare und Textilien, die im Gottesdienst verwendet wurden." }
       ]

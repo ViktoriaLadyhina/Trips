@@ -12,6 +12,7 @@ import SearchPage from './page/searchPage/SearchPage';
 import AttractionForm from './components/forma/AttractionForm';
 import Event from './page/events/Events'
 import Map from './page/map/Map'
+import Unesco from './page/unesco/Unesco'
 
 function App() {
 
@@ -25,6 +26,7 @@ function App() {
 
           <Route path="/:countryPath" element={<Country />} />
           <Route path="/map" element={<Map />} />
+          <Route path="/unesco" element={<Unesco />} />
 
           <Route path="/:countryPath/:regionPath" element={<Regions />} />
 

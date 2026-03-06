@@ -12,7 +12,8 @@
     @include body-text;
   }
 
-  .fooer_map {
+  .footer_map,
+  .footer_unesco {
     a {
       text-decoration: none;
       @include body-text;
@@ -28,7 +29,8 @@
       @include small-text;
     }
 
-    .fooer_map a {
+    .footer_map,
+    .footer_unesco a {
       @include small-text;
     }
   }

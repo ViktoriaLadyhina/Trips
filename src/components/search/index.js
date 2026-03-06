@@ -76,7 +76,7 @@ const searchIndex = {
                 attractions: nrw_attrDe,
                 events: nrw_eventsDe
             },
-            rheinland_pfalz: {
+            "rheinland-pfalz": {
                 districts: rp_districtsDe,
                 subRegions: rp_subRegionsDe,
                 city: rp_cityDe,
@@ -106,7 +106,7 @@ const searchIndex = {
                 attractions: nrw_attrRu,
                 events: nrw_eventsRu
             },
-            rheinland_pfalz: {
+            "rheinland-pfalz": {
                 districts: rp_districtsRu,
                 subRegions: rp_subRegionsRu,
                 city: rp_cityRu,
@@ -136,7 +136,7 @@ const searchIndex = {
                 attractions: nrw_attrUa,
                 events: nrw_eventsUa
             },
-            rheinland_pfalz: {
+            "rheinland-pfalz": {
                 districts: rp_districtsUa,
                 subRegions: rp_subRegionsUa,
                 city: rp_cityUa,

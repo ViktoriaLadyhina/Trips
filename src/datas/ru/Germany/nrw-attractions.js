@@ -68,7 +68,13 @@ const datas = [
         officialSite: [
             { bold: 'Официальный сайт Кёльнского собора', link: 'https://www.koelner-dom.de/' }
         ],
-        unesco_status: { included: true, year: 1996 },
+        unesco_status: {
+            included: true,
+            year: 1996,
+            type: "Культурное наследие",
+            criteria: "i, ii, iv",
+            epoch: "Готика"
+        },
         construction_period: "1248–1880",
         architects: ["Конрад фон Гохштаден, ", "Мастерские строителей XIII–XIX вв."],
         founder: "Райнальд фон Дассель",
@@ -1938,7 +1944,14 @@ const datas = [
         officialSite: [
             { bold: 'Официальный сайт дворцов Брюля', link: 'https://www.schlossbruehl.de/en/' },
         ],
-        unesco_status: { included: true, year: 1984 },
+        unesco_status: {
+            included: true,
+            year: 1984,
+            type: "Культурное наследие",
+            criteria: "i, ii, iv",
+            series: "Брюльские дворцы: Аугустусбург и Фалькенлюст",
+            epoch: "Барокко"
+        },
         tickets_and_entry: {
             title: "Билеты и вход",
             items: [

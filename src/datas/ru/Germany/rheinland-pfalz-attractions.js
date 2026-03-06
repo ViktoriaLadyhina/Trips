@@ -11,7 +11,14 @@ const datas = [
     officialSite: [
       { bold: "Официальный сайт", link: "https://www.zentrum-der-antike.de/monumente/porta-nigra?utm_source=chatgpt.com" }
     ],
-    unesco_status: { included: true, year: 1986 },
+    unesco_status: {
+      included: true,
+      year: 1986,
+      type: "Культурное наследие",
+      criteria: "i, iii, iv, vi",
+      epoch: "Римская эпоха",
+      series: "Римские памятники, кафедральный собор Св. Петра и церковь Богоматери в Трире"
+    },
     short_description: "Порта Нигра – крупнейшие сохранившиеся римские городские ворота к северу от Альп, расположенные в центре Трира. Построены около 170 г. н. э., они впечатляют массивными песчаниковыми блоками и историей, которая насчитывает почти два тысячелетия. Сегодня это символ города.",
     full_description: {
       title: "Описание и история",
@@ -61,7 +68,14 @@ const datas = [
     officialSite: [
       { bold: "Официальный сайт", link: "https://www.zentrum-der-antike.de/monumente/amphitheater" }
     ],
-    unesco_status: { included: true, year: 1986 },
+    unesco_status: {
+      included: true,
+      year: 1986,
+      type: "Культурное наследие",
+      criteria: "i, iii, iv, vi",
+      epoch: "Римская эпоха",
+      series: "Римские памятники, кафедральный собор Св. Петра и церковь Богоматери в Трире"
+    },
     short_description: "Римский амфитеатр в Трире – одна из крупнейших римских арен за пределами Италии. Он был построен в конце II века н. э. и мог вмещать до 20 000 зрителей. Здесь проходили гладиаторские бои, представления с животными и массовые зрелища. Сегодня амфитеатр открыт для посещения, сохранились арена, трибуны и подземные галереи.",
     full_description: {
       title: "Описание и история",
@@ -130,7 +144,14 @@ const datas = [
     countryPath: "germany", regionsPath: "rheinland-pfalz", districtPath: "city", cityPath: "trier",
     fotoCard: "Germany/rheinland-pfalz/trier-city/kaiserthermen/01.jpg",
     location: "Трир, Германия",
-    unesco_status: { included: true, year: 1986 },
+    unesco_status: {
+      included: true,
+      year: 1986,
+      type: "Культурное наследие",
+      criteria: "i, iii, iv, vi",
+      epoch: "Римская эпоха",
+      series: "Римские памятники, кафедральный собор Св. Петра и церковь Богоматери в Трире"
+    },
     short_description: "Кайзертермы (Kaiserthermen) – это одна из крупнейших римских банных комплексов севернее Альп, построенная в конце III – начале IV века н.э. в городе Трир (ранее Augusta Treverorum). Сегодня от комплекса сохранились мощные руины, которые можно осматривать как над землёй, так и под землёй, с доступом к подземным служебным галереям и остаткам инженерных систем. ",
     full_description: {
       title: "Описание и история",
@@ -195,7 +216,14 @@ const datas = [
     officialSite: [
       { bold: "Официальный сайт", link: "https://trier.ekir.de/inhalt/konstantin-basilika?utm_source=chatgpt.com" }
     ],
-    unesco_status: { included: true, year: 1986 },
+    unesco_status: {
+      included: true,
+      year: 1986,
+      type: "Культурное наследие",
+      criteria: "i, iii, iv, vi",
+      epoch: "Римская эпоха",
+      series: "Римские памятники, кафедральный собор Св. Петра и церковь Богоматери в Трире"
+    },
     short_description: "Монументальное римское здание IV века, служившее тронным залом императора Константина. Сегодня это одна из крупнейших сохранившихся античных зал-базилик в мире и протестантская церковь.",
     full_description: {
       title: "Описание и история",
@@ -292,7 +320,14 @@ const datas = [
     officialSite: [
       { bold: "Официальный сайт", link: "https://www.trier-info.de/sehenswuerdigkeiten/roemerbruecke" }
     ],
-    unesco_status: { included: true, year: 1986 },
+    unesco_status: {
+      included: true,
+      year: 1986,
+      type: "Культурное наследие",
+      criteria: "i, iii, iv, vi",
+      epoch: "Римская эпоха",
+      series: "Римские памятники, кафедральный собор Св. Петра и церковь Богоматери в Трире"
+    },
     short_description: "Римский мост – древнеримский мост через реку Мозель в Трире, построенный во II веке н. э. Это старейший мост Германии, частично сохранивший оригинальные римские опоры из базальта. Сооружение до сих пор используется для транспорта и пешеходов.",
     full_description: {
       title: "Описание и история",
@@ -333,12 +368,20 @@ const datas = [
     id: "cathedral_trier",
     name: "Кафедральный собор Трира",
     type: ["cathedral"], rating: "top",
-    path: "cathedral_trier", countryPath: "germany", regionsPath: "rheinland-pfalz", districtPath: "city",
+    path: "cathedral_trier",
+    countryPath: "germany", regionsPath: "rheinland-pfalz", districtPath: "city",
     cityPath: "trier",
     fotoCard: "Germany/rheinland-pfalz/trier-city/cathedral/001.jpg",
     location: "Трир, Германия",
     officialSite: [{ bold: "Официальный сайт", link: "https://www.trierer-dom.de" }],
-    unesco_status: { included: true, year: 1986 },
+    unesco_status: {
+      included: true,
+      year: 1986,
+      type: "Культурное наследие",
+      criteria: "i, iii, iv, vi",
+      epoch: "Средневековье",
+      series: "Римские памятники, кафедральный собор Св. Петра и церковь Богоматери в Трире"
+    },
     short_description: "Трирский кафедральный собор – старейшая церковь Германии, основанная в IV веке. Величественный храм с романской архитектурой и богатой историей хранит знаменитую Святую ризу и сокровищницу с редкими христианскими реликвиями.",
     full_description: {
       title: "Описание и история",
