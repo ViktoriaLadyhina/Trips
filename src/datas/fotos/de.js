@@ -273,6 +273,11 @@ export const Fotos = {
       ],
       st_audomar_frechen: [
         { path: "Germany/nrw/koln/Rhein-Erft-Kreis/frechen/st_audomar/001.jpg", title: { ru: "Церковь Святого Одомара (фото взято с интернета)", ua: "Церква Святого Одомара (фото взято з Інтернету)", de: "Kirche St. Audomar (Foto aus dem Internet)" } },
+        { path: "Germany/nrw/koln/Rhein-Erft-Kreis/frechen/st_audomar/002.jpg", title: { ru: "Церковь Святого Одомара (фото взято с интернета)", ua: "Церква Святого Одомара (фото взято з Інтернету)", de: "Kirche St. Audomar (Foto aus dem Internet)" } },
+        { path: "Germany/nrw/koln/Rhein-Erft-Kreis/frechen/st_audomar/003.jpg", title: { ru: "Церковь Святого Одомара (фото взято с интернета)", ua: "Церква Святого Одомара (фото взято з Інтернету)", de: "Kirche St. Audomar (Foto aus dem Internet)" } },
+      ],
+      evangelischeKirche_frechen: [
+        { path: "Germany/nrw/koln/Rhein-Erft-Kreis/frechen/evangelischeKirche/001.jpg", title: { ru: "Евангелическая церковь (фото взято с интернета)", ua: "Євангелічна церква (фото взято з Інтернету)", de: "Evangelische Kirche (Foto aus dem Internet)" } },
       ],
     },
     konigswinter: {

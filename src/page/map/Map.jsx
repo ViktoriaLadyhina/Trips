@@ -103,6 +103,7 @@ const t = {
     rathausbrunnen_frechen: { ru: 'Фонтан перед ратушей', de: 'Brunnen vor dem Rathaus', ua: 'Фонтан перед ратушею' },
     klüttenbrunnen_frechen: { ru: 'Фонтан Клюттенбрюннен', de: 'Klüttenbrunnen', ua: 'Фонтан Клюттенбрюннен' },
     st_audomar_frechen: { ru: 'Церковь Святого Одомара', de: 'Kirche St. Audomar', ua: 'Церква Святого Одомара' },
+    evangelischeKirche_frechen: { ru: 'Евангелическая церковь', de: 'Evangelische Kirche', ua: 'Євангелічна церква' },
 
     // Rhein-Sieg-Kreis
     // Königswinter
@@ -329,6 +330,7 @@ const Map = () => {
                               <li><Link to="/germany/nrw/koln/frechen/attractions/burg-bachem">{t.attractions.burgBachem[lang]}</Link></li>
                               <li><Link to="/germany/nrw/koln/frechen/attractions/keramion">{t.attractions.keramion[lang]}</Link></li>
                               <li><Link to="/germany/nrw/koln/frechen/attractions/st_audomar_frechen">{t.attractions.st_audomar_frechen[lang]}</Link></li>
+                              <li><Link to="/germany/nrw/koln/frechen/attractions/evangelischeKirche_frechen">{t.attractions.evangelischeKirche_frechen[lang]}</Link></li>
                             </ul>
                           </li>
                         </ul>

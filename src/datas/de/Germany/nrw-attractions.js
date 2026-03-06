@@ -2424,6 +2424,63 @@ const datas = [
             ogImage: "https://our-travels.info/foto/Germany/nrw/koln/Rhein-Erft-Kreis/frechen/st_audomar/001.jpg"
         }
     },
+    {
+        id: "evangelischeKirche_frechen",
+        name: "Evangelische Kirche",
+        type: ["cathedral"], rating: "local",
+        path: "evangelischeKirche_frechen",
+        countryPath: "germany", regionsPath: "nrw", districtPath: "koln", cityPath: "frechen",
+        fotoCard: "Germany/nrw/koln/Rhein-Erft-Kreis/frechen/evangelischeKirche/001.jpg",
+        location: "Frechen, Deutschland",
+        officialSite: [{ bold: "Offizielle Website", link: "https://www.kirche-frechen.de/" }],
+        short_description: "Die Evangelische Kirche Frechen ist eine historische protestantische Kirche, die in den Jahren 1716-1717 erbaut wurde. Sie gilt als eine der ältesten evangelischen Kirchen in der Region Köln, die traditionell katholisch geprägt war. Das Gebäude spiegelt die Geschichte der Reformation und die Entwicklung der evangelischen Gemeinde der Stadt wider.",
+        full_description: {
+            title: "Beschreibung und Geschichte",
+            items: [
+                { bold: "Die Evangelische Kirche Frechen", text: "ist die Hauptkirche der protestantischen Gemeinde der Stadt. Sie entstand in einer Region, in der historisch der Katholizismus dominierte, weshalb ihre Entstehung mit wichtigen religiösen und politischen Ereignissen der Reformationszeit verbunden ist." },
+                { text: "Die Geschichte der Gemeinde beginnt bereits im 16. Jahrhundert. Schon um 1543 fanden die Ideen von Martin Luther Anhänger in Frechen, und evangelische Gottesdienste wurden in privaten Häusern abgehalten. Protokolle des Presbyteriums der Gemeinde aus dem Jahr 1544 sind erhalten geblieben und belegen die frühe Entwicklung des protestantischen religiösen Lebens in der Stadt." },
+                { text: "Der Bau einer eigenen Kirche begann erst im Jahr 1716, nachdem die Genehmigung der lokalen Behörden erteilt worden war. Finanzielle Unterstützung kam von Protestanten aus den Niederlanden und aus England. Der Bau stieß jedoch auf Widerstand: Die erste errichtete Kirche wurde während religiöser Auseinandersetzungen von Gegnern des protestantischen Kirchenbaus zerstört. Dennoch baute die Gemeinde das Gebäude schnell wieder auf, und am 18. Juli 1717 wurde die Kirche vom Pfarrer Friedrich C. Heilmann eingeweiht." },
+                { text: "Ursprünglich wurde die Kirche als sogenannte „Hauskirche“ errichtet – das Gebäude vereinte den Gebetsraum und die Wohnung des Pfarrers unter einem gemeinsamen Dach. Anstelle eines traditionellen Turmes durfte nur ein kleiner Dachreiter mit einer Wetterfahne in Form eines Engels mit einer Trompete angebracht werden, der in der Region als „Geusen-Daniel“ bekannt ist." },
+                { text: "Im Laufe der Zeit wurde die Kirche mehrfach umgebaut. Im 19. und 20. Jahrhundert erfolgten Erweiterungen und Rekonstruktionen: In den Jahren 1914-1921 wurden nach dem Projekt des Architekturbüros Schreiterer & Below ein neuer Eingang, ein Glockenturm und ein Gemeindesaal errichtet. 1955 wurde der Gebetsraum erweitert, und 1969 erfolgte eine umfassende Restaurierung des Innenraums." },
+                { text: "Heute ist die Kirche ein architektonisches Denkmal und das Zentrum der evangelischen Gemeinde der Stadt Frechen." }
+            ]
+        },
+        tickets_and_entry: {
+            title: "Praktische Informationen",
+            items: [
+                { bold: "Adresse:", text: "Hauptstraße 209, 50226 Frechen" }
+            ]
+        },
+        relics: {
+            title: "Relikte und Besonderheiten des Innenraums",
+            items: [
+                { text: "Im Innenraum sind drei hölzerne Tafeln mit religiösen Texten aus dem 18. Jahrhundert erhalten geblieben, auf denen das „Vaterunser“, die Zehn Gebote und das Apostolische Glaubensbekenntnis geschrieben sind." },
+                { text: "Die Fenster der Kirche wurden nach Entwürfen des Künstlers Paul Weigmann gestaltet und stammen aus dem 20. Jahrhundert." },
+                { text: "In der Kirche befindet sich eine Orgel aus dem Jahr 1962 aus der Werkstatt von Detlef Kleuker, die bei Gottesdiensten und Konzerten verwendet wird." },
+                { text: "Im Vestibül sind barocke Grabplatten zu sehen, die in die Wände eingelassen wurden." }
+            ]
+        },
+        interestingFacts: {
+            title: "Interessante Fakten",
+            items: [
+                { text: "Die Kirche gilt als eine der ältesten evangelischen Kirchen in der Region Köln, in der lange Zeit der Katholizismus dominierte." },
+                { text: "Die ersten evangelischen Gottesdienste in Frechen fanden in privaten Häusern statt, da offizielle protestantische Kirchen damals verboten waren." },
+                { text: "Auf dem Dach der Kirche befindet sich eine Wetterfahne in Form einer Engelsfigur mit einer Trompete („Geusen-Daniel“) – ein Symbol der protestantischen Bewegung." },
+                { text: "Im Jahr 2017 feierte die Kirche das 300-jährige Jubiläum des Gebäudes, das mit dem 500-jährigen Jubiläum der Reformation zusammenfiel." }
+            ]
+        },
+        construction_period: "Bau 1716-1717; Erweiterungen und Umbauten im 19.-20. Jahrhundert; große Rekonstruktion 1914-1921",
+        architects: "Architekt des ursprünglichen Gebäudes unbekannt; Umbauten: Architekturbüro Schreiterer & Below (1914-1921)",
+        founder: "die evangelische Gemeinde Frechen mit Unterstützung von Protestanten aus den Niederlanden und aus England",
+        coord: { lat: 50.90916, lng: 6.80180 },
+        meta: {
+            title: "Evangelische Kirche Frechen – evangelische Kirche aus dem 18. Jahrhundert",
+            description: "Die Evangelische Kirche Frechen ist eine historische protestantische Kirche aus dem 18. Jahrhundert im Zentrum der Stadt. Erfahren Sie mehr über ihre Geschichte, Architektur und die Entwicklung der Gemeinde.",
+            ogTitle: "Evangelische Kirche Frechen – historische protestantische Kirche in Frechen",
+            ogDescription: "Historische evangelische Kirche in Frechen, erbaut im 18. Jahrhundert. Entdecken Sie die Geschichte der protestantischen Gemeinde und die Architektur dieses Gotteshauses.",
+            ogImage: "https://our-travels.info/foto/Germany/nrw/koln/Rhein-Erft-Kreis/frechen/evangelischeKirche/001.jpg"
+        }
+    },
 
     //Rhein-Sieg-Kreis
 
