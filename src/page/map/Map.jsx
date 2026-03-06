@@ -102,6 +102,7 @@ const t = {
     altes_rathaus_frechen: { ru: 'Старая ратуша Фрехена', de: 'Altes Rathaus Frechen', ua: 'Стара ратуша Фрехена' },
     rathausbrunnen_frechen: { ru: 'Фонтан перед ратушей', de: 'Brunnen vor dem Rathaus', ua: 'Фонтан перед ратушею' },
     klüttenbrunnen_frechen: { ru: 'Фонтан Клюттенбрюннен', de: 'Klüttenbrunnen', ua: 'Фонтан Клюттенбрюннен' },
+    st_audomar_frechen: { ru: 'Церковь Святого Одомара', de: 'Kirche St. Audomar', ua: 'Церква Святого Одомара' },
 
     // Rhein-Sieg-Kreis
     // Königswinter
@@ -131,6 +132,8 @@ const t = {
     sumySpasoPreobrazhensky: { ru: 'Спасо-Преображенский собор', de: 'Spaso-Preobraschenski-Kathedrale', ua: 'Спасо-Преображенський собор' },
     pokrovska_square_sumy: { ru: 'Покровская площадь', de: 'Pokrowska-Platz', ua: 'Покровська площа' },
     sumy_altanka: { ru: 'Альтанка', de: 'Der Pavillon', ua: 'Альтанка' },
+
+    Unesco_Title: { ru: "Достопримечательности ЮНЕСКО", ua: "Пам’ятки ЮНЕСКО", de: "UNESCO-Welterbestätten" }
   }
 };
 
@@ -325,6 +328,7 @@ const Map = () => {
                               </li>
                               <li><Link to="/germany/nrw/koln/frechen/attractions/burg-bachem">{t.attractions.burgBachem[lang]}</Link></li>
                               <li><Link to="/germany/nrw/koln/frechen/attractions/keramion">{t.attractions.keramion[lang]}</Link></li>
+                              <li><Link to="/germany/nrw/koln/frechen/attractions/st_audomar_frechen">{t.attractions.st_audomar_frechen[lang]}</Link></li>
                             </ul>
                           </li>
                         </ul>
@@ -355,6 +359,9 @@ const Map = () => {
               </li>
             </ul>
           </li>
+
+{/* Юнеско */}<br></br><br></br>
+          <li><Link to="/unesco">{t.attractions.Unesco_Title[lang]}</Link></li>
         </ul>
       </div>
     </div>

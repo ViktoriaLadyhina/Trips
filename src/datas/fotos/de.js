@@ -270,7 +270,10 @@ export const Fotos = {
       ],
       rathausbrunnen_frechen: [
         { path: "Germany/nrw/koln/Rhein-Erft-Kreis/frechen/johann_schmitz_platz_frechen/005.jpg", title: { ru: "Фонтан перед ратушей, 2026", ua: "Фонтан перед ратушею, 2026", de: "Brunnen vor dem Rathaus, 2026" } },
-      ]
+      ],
+      st_audomar_frechen: [
+        { path: "Germany/nrw/koln/Rhein-Erft-Kreis/frechen/st_audomar/001.jpg", title: { ru: "Церковь Святого Одомара (фото взято с интернета)", ua: "Церква Святого Одомара (фото взято з Інтернету)", de: "Kirche St. Audomar (Foto aus dem Internet)" } },
+      ],
     },
     konigswinter: {
       gallery: [

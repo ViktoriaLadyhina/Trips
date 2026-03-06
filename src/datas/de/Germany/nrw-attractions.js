@@ -2133,7 +2133,7 @@ const datas = [
         type: ['museum'], rating: "local",
         path: "keramion",
         countryPath: "germany", regionsPath: "nrw", districtPath: "koln", cityPath: "frechen",
-        fotoCard: "Germany/nrw/koln/Rhein-Erft-Kreis/frechen/keramion/frechen_keramion.jpg",
+        fotoCard: "Germany/nrw/koln/Rhein-Erft-Kreis/frechen/keramion/001.jpg",
         location: "Frechen, Deutschland",
         address: [{ bold: "Adresse:", text: " Bonnstraße 12, 50226 Frechen, Deutschland" }],
         officialSite: [
@@ -2175,7 +2175,7 @@ const datas = [
             description: "KERAMION: Dauerausstellung und Sonderausstellungen von Keramik, Geschichte der Produktion und zeitgenössische künstlerische Perspektiven.",
             ogTitle: "KERAMION – Zentrum für moderne und historische Keramik, Frechen",
             ogDescription: "Erfahren Sie mehr über die Sammlung von Cremer, die historische Keramik aus Frechen und die Ausstellungen im KERAMION.",
-            ogImage: "https://our-travels.info/foto/Germany/nrw/koln/Rhein-Erft-Kreis/frechen/keramion/frechen_keramion.jpg"
+            ogImage: "https://our-travels.info/foto/Germany/nrw/koln/Rhein-Erft-Kreis/frechen/keramion/001.jpg"
         }
     },
     {
@@ -2338,6 +2338,7 @@ const datas = [
                 { text: "Auf dem Platz vor dem alten Rathaus befindet sich ein dekorativer Bezirksbrunnen, der 1981 vom Keramikkünstler Wim Mühlendyck geschaffen wurde. Er ist mit keramischen Platten verkleidet, die Reliefdarstellungen von Szenen zeigen, die die Entwicklung des Handwerks und der Keramikindustrie in Frechen widerspiegeln – von traditionellen Handwerkern bis zur Fabrikproduktion, während die verschiedenen Maskarone (Gesichter) charakteristische Wasserstrahlen des Brunnens bilden." }
             ]
         },
+        coord: { lat: 50.90848, lng: 6.80879 },
         meta: {
             title: "Dekorativer Bezirksbrunnen – historisches Objekt vor dem alten Rathaus von Frechen",
             description: "Auf dem Platz vor dem alten Rathaus befindet sich ein dekorativer Bezirksbrunnen, der 1981 vom Keramikkünstler Wim Mühlendyck geschaffen wurde. Er ist mit Keramikplatten mit Reliefszenen bedeckt, die die Entwicklung des Handwerks und der Keramikindustrie in Frechen zeigen – von traditionellen Handwerkern bis zur Fabrikproduktion, und verschiedene Maskarone (Gesichter) dienen als charakteristische Wasserstrahlen des Brunnens.",
@@ -2368,6 +2369,59 @@ const datas = [
             ogTitle: "Klüttenbrunnen in Frechen",
             ogDescription: "Der Skulpturenbrunnen Klüttenbrunnen (Klüttenbrunnen) in der Fußgängerzone nahe dem Johann-Schmitz-Platz spiegelt die industrielle und handwerkliche Geschichte Frechens wider und ist als künstlerische Komposition mit Steinelementen und Wasserstrahlen gestaltet.",
             ogImage: "https://our-travels.info/foto/Germany/nrw/koln/Rhein-Erft-Kreis/frechen/johann_schmitz_platz_frechen/004.jpg"
+        }
+    },
+    {
+        id: "st_audomar_frechen",
+        name: "Kirche St. Audomar",
+        type: ["cathedral"], rating: "local",
+        path: "st_audomar_frechen",
+        countryPath: "germany", regionsPath: "nrw", districtPath: "koln", cityPath: "frechen",
+        fotoCard: "Germany/nrw/koln/Rhein-Erft-Kreis/frechen/st_audomar/001.jpg",
+        location: "Frechen, Deutschland",
+        short_description: "Die Kirche St. Audomar (St. Audomar) in Frechen ist eine historische römisch-katholische Kirche. Sie wurde im 19. Jahrhundert im neuromanischen Stil erbaut, daneben befindet sich der alte Friedhof (Alter Friedhof) mit Gedenksteinen. Sie ist ein kulturelles und spirituelles Zentrum der Stadt und bewahrt die jahrhundertealte Geschichte der Gemeinde.",
+        full_description: {
+            title: "Beschreibung und Geschichte",
+            items: [
+                { bold: "Die Kirche St. Audomar (St. Audomar) ", text: "ist die Hauptkirche der römisch-katholischen Gemeinde der Stadt Frechen. Sie steht an der Kreuzung von Kelnerstraße und Hauptstraße und hat über Jahrhunderte das spirituelle Zentrum der Stadt geprägt. Der Name der Kirche bezieht sich auf den heiligen Audomar (Saint Omer) – einen westrheinischen Bischof, zu dessen Ehren die erste Kirche an diesem Ort errichtet wurde. Informationen über die ersten Kirchenbauten stammen aus Dokumenten des 8.-9. Jahrhunderts, als Frechen erstmals im Zusammenhang mit dem Besitz der Abtei Saint Bertin / Saint Omer im fränkischen Reich erwähnt wird." },
+                { text: "Im Mittelalter wurde die Kirche mehrfach umgebaut; in den Jahren 1583–1588 erlitt sie einen Brand während der Religionskriege in Deutschland Ende des 16. Jahrhunderts (Truchsessischer Krieg), danach wurden Turm und Langhaus wiederhergestellt. Im 19. Jahrhundert wurde die Kirche nach Plänen des berühmten Kölner Architekten Ernst Friedrich Zwirner vollständig im neuromanischen Stil neu erbaut (1849-1859)." },
+                { text: "Im Jahr 1909 wurde das Gebäude erweitert: das Langhaus verlängert, der alte Turm abgerissen und ein neuer Turm errichtet. Im 20. Jahrhundert wurden die Innenräume mehrfach renoviert, und zu Beginn der 2000er Jahre erhielt der Innenraum moderne künstlerische Elemente." },
+                { bold: "Alter Friedhof bei der Kirche St. Audomar (Alter Friedhof) ", text: "– ein kleiner historischer Friedhofsbereich neben der Kirche, auf dem Grabsteine und Gedenkplatten aus dem 17.-19. Jahrhundert erhalten geblieben sind. Hier kann man alte Familiengräber der Gemeindemitglieder von Frechen sehen, dekorative Steinelemente und Symbolik der Handwerkskunst jener Zeit. Besonderheiten des Friedhofs sind Steine mit geschnitzten Kreuzen, Heiligenfiguren und Handwerkeremblemen, die Kultur und Berufe der Einwohner vergangener Jahrhunderte widerspiegeln. Unter den Grabsteinen finden sich Inschriften in Latein und Althochdeutsch, was den Ort für Geschichts- und Lokalarchäologieinteressierte spannend macht. Der Friedhof bewahrt die Atmosphäre von Ruhe und Tradition und ist Teil des spirituellen und kulturellen Erbes der Gemeinde." }
+            ]
+        },
+        tickets_and_entry: {
+            title: "Praktische Informationen",
+            items: [
+                { bold: "Adresse:", text: "Kölner Str. 3, 50226 Frechen, Nordrhein‑Westfalen, Deutschland" }
+            ]
+        },
+        relics: {
+            title: "Reliquien und Besonderheiten des Innenraums",
+            items: [
+                { text: "Der Eingang ist mit historischen Grabsteinen des 16.-17. Jahrhunderts geschmückt, darunter das Denkmal von Hermann Spies von Büllesheim (†1571) und weitere Grabsteine bedeutender Familien." },
+                { text: "Im Inneren der Kirche sind architektonische Elemente des 19.-20. Jahrhunderts erhalten: Glasfenster aus verschiedenen Epochen (1931-2002) und teilweise barocke Heiligenfiguren, die die Phasen historischer Umbauten und dekorativer Traditionen widerspiegeln." },
+                { text: "Im Altarraum befindet sich eine Darstellung des Patrons Audomar und religiöse Symbole, teilweise erhaltene barocke Heiligenfiguren, die aus älteren Innenräumen übernommen wurden." }
+            ]
+        },
+        interestingFacts: {
+            title: "Interessante Fakten",
+            items: [
+                { text: "Die Kirche St. Audomar (St. Audomar) ist die einzige Kirche mit diesem Patrozinium in Deutschland, was ihren ungewöhnlichen Namen für die Region erklärt." },
+                { text: "Die Kirche steht an einem Ort alten christlichen Kultes, dessen Erwähnungen bis ins 9. Jahrhundert zurückreichen – dies macht sie zum ältesten religiösen Zentrum von Frechen." },
+                { text: "Im Inneren der Kirche sind architektonische Elemente des 19. Jahrhunderts erhalten: Glasfenster aus verschiedenen Epochen und teilweise barocke Heiligenfiguren, die die historischen Phasen ihrer Umbauten widerspiegeln." },
+                { text: "An der Kirche befindet sich ein historischer Friedhof (Alter Friedhof) mit Denkmälern aus dem 17.-19. Jahrhundert, auf denen die Spuren von Handwerkstraditionen erhalten sind – auf den Steinen sind Symbole der Weberei und Keramik zu sehen." }
+            ]
+        },
+        construction_period: "erste religiöse Bauten – 8.-9. Jahrhundert, Erwähnung 877. Moderne Gebäude: 1849-1859 umgebaut, Turm 1909",
+        architects: "Ernst Friedrich Zwirner (19. Jahrhundert, Umbauprojekt)",
+        founder: "kirchliche Institutionen der Abtei St. Bertin / St. Omer gemäß Dokumenten des 8. Jahrhunderts",
+        coord: { lat: 50.90962, lng: 6.81578 },
+        meta: {
+            title: "Kirche St. Audomar (St. Audomar) in Frechen – Geschichte und Architektur",
+            description: "Geschichte und Architektur der Kirche St. Audomar in Frechen mit dem angrenzenden alten Friedhof Alter Friedhof.",
+            ogTitle: "Kirche St. Audomar (St. Audomar) – historisches Herz von Frechen",
+            ogDescription: "Tauchen Sie ein in die Geschichte der katholischen Kirche St. Audomar (St. Audomar) in Frechen: alte Traditionen, neuromanische Architektur, alter Friedhof und kulturelle Denkmäler.",
+            ogImage: "https://our-travels.info/foto/Germany/nrw/koln/Rhein-Erft-Kreis/frechen/st_audomar/001.jpg"
         }
     },
 

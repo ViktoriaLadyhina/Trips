@@ -1,5 +1,6 @@
 import { useSelector } from "react-redux";
 import searchIndex from "../../components/search/index";
+import BreadCrumbs from '../../components/breadCrumbs/BreadCrumbs';
 import './Unesco.scss';
 
 const Unesco_Title = { ru: "Достопримечательности ЮНЕСКО", ua: "Пам’ятки ЮНЕСКО", de: "UNESCO-Welterbestätten" }
@@ -60,8 +61,18 @@ export const Unesco = () => {
   const grouped = groupBySeries(unescoData);
   const t = unescoTableHead[lang];
 
+    // BreadCrumbs
+  const crumbs = [
+    {
+      label: lang === 'ru' ? 'Главная' : lang === 'de' ? 'Startseite' : 'Головна',
+      path: '/'
+    },
+    { label: Unesco_Title[lang]} 
+  ];
+
   return (
  <div className="unesco">
+  <BreadCrumbs crumbs={crumbs} />
   <h1 className="unesco__title">🌍 {Unesco_Title[lang]}</h1>
   {Object.entries(grouped).map(([series, items]) => (
     <div key={series} className="unesco__series">
