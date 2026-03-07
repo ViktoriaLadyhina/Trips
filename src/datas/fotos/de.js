@@ -474,6 +474,13 @@ export const Fotos = {
       basilikaStPaulinus_trier: [
         { path: "Germany/rheinland-pfalz/trier-city/basilikaStPaulinus/001.jpg", title: { ru: "Базилика Святого Паулина (фото взято с интернета)", ua: "Базиліка Святого Пауліна (фото взято з Інтернету)", de: "Basilika St. Paulinus (Foto aus dem Internet)" } },
       ],
+      liebfrauenkirche_trier: [
+        { path: "Germany/rheinland-pfalz/trier-city/liebfrauenkirche/001.jpg", title: { ru: "Церковь Богоматери (фото взято с интернета)", ua: "Церква Богородиці (фото взято з Інтернету)", de: "Liebfrauenkirche (Foto aus dem Internet)" } },
+        { path: "Germany/rheinland-pfalz/trier-city/liebfrauenkirche/002.jpg", title: { ru: "Церковь Богоматери (фото взято с интернета)", ua: "Церква Богородиці (фото взято з Інтернету)", de: "Liebfrauenkirche (Foto aus dem Internet)" } },
+        { path: "Germany/rheinland-pfalz/trier-city/liebfrauenkirche/003.jpg", title: { ru: "Церковь Богоматери (фото взято с интернета)", ua: "Церква Богородиці (фото взято з Інтернету)", de: "Liebfrauenkirche (Foto aus dem Internet)" } },
+        { path: "Germany/rheinland-pfalz/trier-city/liebfrauenkirche/004.jpg", title: { ru: "Церковь Богоматери (фото взято с интернета)", ua: "Церква Богородиці (фото взято з Інтернету)", de: "Liebfrauenkirche (Foto aus dem Internet)" } },
+        { path: "Germany/rheinland-pfalz/trier-city/liebfrauenkirche/005.jpg", title: { ru: "Церковь Богоматери - Саркофаговый алтарь Теодора и Теодериха фон Хорста (фото взято с интернета)", ua: "Церква Богородиці - Саркофаговий вівтар Теодора і Теодеріха фон Хорста (фото взято з Інтернету)", de: "Liebfrauenkirche - Grabaltar von Theodor und Theoderich von Horst (Foto aus dem Internet)" } },
+      ],
     }
   }
 }

@@ -60,7 +60,7 @@ const datas = [
   {
     id: "amphitheater_trier",
     name: "Römisches Amphitheater",
-    type: ["historical_building", "museum", "monument_or_fountain"], rating: "popular",
+    type: ["historical_building", "museum", "monument_or_fountain"], rating: "top",
     path: "amphitheater_trier",
     countryPath: "germany", regionsPath: "rheinland-pfalz", districtPath: "city", cityPath: "trier",
     fotoCard: "Germany/rheinland-pfalz/trier-city/amphitheater/001.jpg",
@@ -264,7 +264,7 @@ const datas = [
   {
     id: "barbarathermen_trier",
     name: "Barbarathermen",
-    type: ["historical_building"], rating: "popular",
+    type: ["historical_building"], rating: "local",
     path: "barbarathermen_trier",
     countryPath: "germany", regionsPath: "rheinland-pfalz", districtPath: "city", cityPath: "trier",
     fotoCard: "Germany/rheinland-pfalz/trier-city/barbarathermen/001.jpg",
@@ -320,7 +320,7 @@ const datas = [
   {
     id: "roman_bridge_trier",
     name: "Römerbrücke",
-    type: ["technical_structure", "historical_building"], rating: "top",
+    type: ["technical_structure", "historical_building"], rating: "popular",
     path: "roman_bridge_trier",
     countryPath: "germany", regionsPath: "rheinland-pfalz", districtPath: "city", cityPath: "trier",
     fotoCard: "Germany/rheinland-pfalz/trier-city/roman_bridge/001.jpg",
@@ -501,6 +501,72 @@ const datas = [
       ogImage: "https://our-travels.info/foto/Germany/rheinland-pfalz/trier-city/basilikaStPaulinus/001.jpg"
     }
   },
+  {
+    id: "liebfrauenkirche_trier",
+    name: "Liebfrauenkirche",
+    type: ["cathedral"], rating: "popular",
+    path: "liebfrauenkirche_trier",
+    countryPath: "germany", regionsPath: "rheinland-pfalz", districtPath: "city", cityPath: "trier",
+    fotoCard: "Germany/rheinland-pfalz/trier-city/liebfrauenkirche/001.jpg",
+    location: "Trier, Deutschland",
+    officialSite: [
+      { bold: "Offizielles Tourismusportal der Stadt Trier", link: "https://www.trier-info.de/sehenswuerdigkeiten/liebfrauen-basilika" },
+      { bold: "<br>Offizielle Website der Pfarrgemeinde", link: "http://www.liebfrauen-trier.de/ " }
+    ],
+    unesco_status: {
+      included: true,
+      year: 1986,
+      type: "Kulturerbe",
+      criteria: "i, iii, iv, vi",
+      epoch: "Mittelalter",
+      series: "Römische Denkmäler, Dom St. Peter und Liebfrauenkirche in Trier"
+    },
+    short_description: "Die Liebfrauenkirche in Trier ist ein majestätisches gotisches Bauwerk, das an den Trierer Dom angrenzt. Ihre schlanken Säulen und hohen Spitzbögen erzeugen ein Gefühl von Leichtigkeit und Luftigkeit im Inneren. Der Innenraum wird durch farbige Glasfenster beleuchtet, die weiches Licht einlassen. Die Kirche gilt als eine der architektonischen Perlen der Stadt und als wichtiger Ort der Andacht.",
+    full_description: {
+      title: "Beschreibung und Geschichte",
+      items: [
+        { bold: "Die Liebfrauenkirche in Trier", text: "ist ein herausragendes Beispiel frühgotischer Architektur des 13. Jahrhunderts. An ihrer Stelle befand sich zuvor der südliche Teil einer frühchristlichen Doppelkirche, die auf Initiative von Kaiser Konstantin dem Großen im 4. Jahrhundert gegründet wurde. Als das alte Gebäude verfiel, lud der Erzbischof von Trier Theoderich von Wied Handwerker aus den französischen Regionen Champagne und Île-de-France ein, um eine neue Kirche zu errichten. Der Bau dauerte ungefähr von 1230 bis 1260 (laut Inschrift im Inneren von 1227 bis 1243) und war Mitte des 13. Jahrhunderts fertiggestellt." },
+        { text: "Die Kirche wurde als Zentrum des geistlichen Lebens der Diözese geweiht und von den Domkanonikern für tägliche Gottesdienste genutzt. Im Laufe der Jahrhunderte wurde sie zum Ort zahlreicher Bestattungen und Denkmäler, von denen ein Teil bis heute erhalten ist, was dem Innenraum historische Tiefe und kulturelle Bedeutung verleiht." },
+        { text: "Die Architektur der Kirche kombiniert schlanke Säulen und hohe Spitzbögen, die ein Gefühl von Leichtigkeit und Harmonie erzeugen. Der Innenraum wird von Glasfenstern erleuchtet, die weiches Licht einlassen und die Schönheit der gotischen Baukunst betonen." },
+        { text: "Die Kirche wurde im Zweiten Weltkrieg stark beschädigt, aber in der Nachkriegszeit restauriert. 1951 verlieh Papst Pius XII. ihr den Status einer kleinen Basilika, und 1986 wurde der architektonische Komplex aus Liebfrauenkirche und Dom in die Liste des UNESCO-Welterbes aufgenommen." },
+        { text: "Heute ist die Liebfrauenkirche ein aktiver Gottesdienstraum und zieht sowohl Gläubige als auch Touristen an. Sie gilt als eines der bedeutendsten und ästhetisch wertvollsten Bauwerke des Mittelalters in Trier und demonstriert das Können gotischer Architekten sowie die reiche Kulturgeschichte der Stadt." }
+      ]
+    },
+    tickets_and_entry: {
+      title: "Praktische Informationen",
+      items: [
+        { bold: "Adresse:", text: "Liebfrauenstraße 2, 54290 Trier, Deutschland" },
+        { bold: "Eintritt: ", text: "frei (außer bei Konzerten und Sonderveranstaltungen)." }
+      ]
+    },
+    sub_objects: {
+      title: "Reliquien und Kunstwerke im Inneren",
+      items: [
+        { text: "In der Kirche gibt es keine besonders bekannten Reliquien wie im benachbarten Dom, aber im Inneren kann man sehen:" },
+        { text: "• wichtige Grabdenkmäler früherer Erzbischöfe und kirchlicher Persönlichkeiten, ein Teil wurde später in Museen verlegt." },
+        { text: "• eine Holzskulptur „Madonna mit Kind“ aus dem 14. Jahrhundert in einer der Kapellen – ein interessantes Objekt religiöser Kunst, das Touristen und Gläubige anzieht." }
+      ]
+    },
+    interestingFacts: {
+      title: "Interessante Fakten",
+      items: [
+        { text: "Die Kirche wurde nach einem einzigartigen runden, kreuzförmigen Grundriss erbaut, der Rosa Mystica – die mystische Rose als Bild der Jungfrau Maria – symbolisiert. Der Raum mit zwölf Säulen symbolisiert die zwölf Apostel und die zwölf Artikel des Apostolischen Glaubensbekenntnisses." },
+        { text: "Aufgrund der ungewöhnlichen Form des Gebäudes und der inneren Harmonie des Interieurs wird die Kirche als eines der vollkommensten Beispiele gotischer Zentralbau-Architektur in Europa bezeichnet." },
+        { text: "Auf dem Boden befindet sich ein spezieller Stern, von dem aus man die gesamte Struktur der tragenden Säulen vollständig sehen kann – ein mystischer Effekt, der mit der spirituellen Bedeutung des Raumes verbunden ist." }
+      ]
+    },
+    construction_period: "Baubeginn: etwa 1230 (nach einer Version ab 1227). Fertigstellung: ungefähr 1260",
+    architects: "Das Projekt wurde von einem Team von Handwerkern aus den Regionen Champagne und Île-de-France erstellt und umgesetzt, die den hohen französischen gotischen Stil nach Deutschland brachten.",
+    founder: "Initiator des Baus war Erzbischof Theoderich von Wied – Leiter der Diözese Trier im ersten Drittel des 13. Jahrhunderts",
+    coord: { lat: 49.75585, lng: 6.64317 },
+    meta: {
+      title: "Liebfrauenkirche in Trier | Sehenswürdigkeiten Trier UNESCO",
+      description: "Erfahren Sie die Geschichte, Architektur und Fakten über die Liebfrauenkirche – ein gotisches Meisterwerk des 13. Jahrhunderts und UNESCO-Welterbe in Trier, Deutschland.",
+      ogTitle: "Liebfrauenkirche, Trier – gotisches UNESCO-Wunder",
+      ogDescription: "Tauchen Sie ein in die Geschichte und Geheimnisse der Liebfrauenkirche in Trier – dem ersten gotischen Gebäude französischen Stils außerhalb Frankreichs. Architektur, Symbolik, Geschichte.",
+      ogImage: "https://our-travels.info/foto/Germany/rheinland-pfalz/trier-city/liebfrauenkirche/001.jpg"
+    }
+  }
 ];
 
 export default datas;

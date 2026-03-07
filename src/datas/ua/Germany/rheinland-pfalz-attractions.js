@@ -59,7 +59,7 @@ const datas = [
   {
     id: "amphitheater_trier",
     name: "Римський амфітеатр",
-    type: ["historical_building", "museum", "monument_or_fountain"], rating: "popular",
+    type: ["historical_building", "museum", "monument_or_fountain"], rating: "top",
     path: "amphitheater_trier",
     countryPath: "germany", regionsPath: "rheinland-pfalz", districtPath: "city", cityPath: "trier",
     fotoCard: "Germany/rheinland-pfalz/trier-city/amphitheater/001.jpg",
@@ -263,7 +263,7 @@ const datas = [
   {
     id: "barbarathermen_trier",
     name: "Барбарські терми",
-    type: ["historical_building"], rating: "popular",
+    type: ["historical_building"], rating: "local",
     path: "barbarathermen_trier",
     countryPath: "germany", regionsPath: "rheinland-pfalz", districtPath: "city", cityPath: "trier",
     fotoCard: "Germany/rheinland-pfalz/trier-city/barbarathermen/001.jpg",
@@ -319,7 +319,7 @@ const datas = [
   {
     id: "roman_bridge_trier",
     name: "Римський міст",
-    type: ["technical_structure", "historical_building"], rating: "top",
+    type: ["technical_structure", "historical_building"], rating: "popular",
     path: "roman_bridge_trier",
     countryPath: "germany", regionsPath: "rheinland-pfalz", districtPath: "city", cityPath: "trier",
     fotoCard: "Germany/rheinland-pfalz/trier-city/roman_bridge/001.jpg",
@@ -438,7 +438,7 @@ const datas = [
   {
     id: "basilikaStPaulinus_trier",
     name: "Базиліка Святого Пауліна",
-    type: ["cathedral", "baroque_church"], rating: "popular",
+    type: ["cathedral"], rating: "popular",
     path: "basilikaStPaulinus_trier",
     countryPath: "germany", regionsPath: "rheinland-pfalz", districtPath: "city", cityPath: "trier",
     fotoCard: "Germany/rheinland-pfalz/trier-city/basilikaStPaulinus/001.jpg",
@@ -500,6 +500,72 @@ const datas = [
       ogImage: "https://our-travels.info/foto/Germany/rheinland-pfalz/trier-city/basilikaStPaulinus/001.jpg"
     }
   },
+  {
+    id: "liebfrauenkirche_trier",
+    name: "Церква Богородиці",
+    type: ["cathedral"], rating: "popular",
+    path: "liebfrauenkirche_trier",
+    countryPath: "germany", regionsPath: "rheinland-pfalz", districtPath: "city", cityPath: "trier",
+    fotoCard: "Germany/rheinland-pfalz/trier-city/liebfrauenkirche/001.jpg",
+    location: "Трір, Німеччина",
+    officialSite: [
+      { bold: "Офіційний туристичний портал міста Трір", link: "https://www.trier-info.de/sehenswuerdigkeiten/liebfrauen-basilika" },
+      { bold: "<br>Офіційний сайт парафіяльної громади", link: "http://www.liebfrauen-trier.de/ " }
+    ],
+    unesco_status: {
+      included: true,
+      year: 1986,
+      type: "Культурна спадщина",
+      criteria: "i, iii, iv, vi",
+      epoch: "Середньовіччя",
+      series: "Римські пам'ятки, кафедральний собор Св. Петра та церква Богородиці в Трірі"
+    },
+    short_description: "Церква Богородиці в Трірі – велична готична споруда, що примикає до кафедрального собору. Її стрункі колони та високі стрілчасті вікна створюють відчуття легкості та повітряності всередині. Інтер’єр прикрашений вітражами, що пропускають м’яке кольорове світло. Церква вважається однією з архітектурних перлин міста та важливим місцем поклоніння.",
+    full_description: {
+      title: "Опис та історія",
+      items: [
+        { bold: "Церква Богородиці (Liebfrauenkirche) в Трірі", text: "є видатним зразком ранньоготичної архітектури XIII століття. На її місці раніше знаходилася південна частина ранньохристиянської подвійної церкви, заснованої за ініціативою імператора Костянтина Великого у IV столітті. Коли стара споруда занепала, архієпископ Тріра Теодеріх фон Віда (Theoderich von Wied) запросив майстрів із французьких регіонів Шампань та Іль-де-Франс для будівництва нового храму. Будівництво тривало приблизно з 1230 по 1260 рік (за написом всередині – з 1227 по 1243 рік), і до середини XIII століття церква була завершена." },
+        { text: "Храм був освячений як центр духовного життя єпархії та використовувався каноніками кафедрального собору для щоденних служб. Протягом століть церква стала місцем численних поховань та меморіалів, частина яких збереглася до наших днів, що надає інтер'єру історичної глибини та культурного значення." },
+        { text: "Архітектура церкви поєднує стрункі колони та високі стрілчасті вікна, створюючи відчуття легкості та гармонії. Інтер’єр освітлюють вітражі, що пропускають м’яке кольорове світло, підкреслюючи красу готичного зодчества та роблячи відвідування візуально насиченим." },
+        { text: "Церква постраждала під час Другої світової війни, але була відновлена у післявоєнні роки. У 1951 році Папа Пій XII присвоїв їй статус малої базиліки, а в 1986 році архітектурний комплекс Церкви Богородиці та Кафедрального собору було внесено до списку Всесвітньої спадщини ЮНЕСКО." },
+        { text: "Сьогодні Церква Богородиці залишається діючим храмом, залучаючи як парафіян, так і туристів. Вона вважається однією з найважливіших та естетично цінних середньовічних споруд Тріра, демонструючи майстерність готичних архітекторів та багату культурну історію міста." }
+      ]
+    },
+    tickets_and_entry: {
+      title: "Практична інформація",
+      items: [
+        { bold: "Адреса:", text: "Liebfrauenstraße 2, 54290 Trier, Німеччина" },
+        { bold: "Вхід: ", text: "вільний (крім концертів та спеціальних заходів)." }
+      ]
+    },
+    sub_objects: {
+      title: "Реліквії та мистецтво всередині",
+      items: [
+        { text: "У самій церкві не виділяють особливо відомих реліквій, як у сусідньому соборі, але всередині можна побачити:" },
+        { text: "• важливі пам'ятники поховань колишніх архієпископів та діячів церкви, частину яких пізніше перенесено до музеїв." },
+        { text: "• дерев'яну скульптуру «Мадонна з немовлям» XIV століття в одній із каплиць – цікавий об'єкт релігійного мистецтва, що привертає увагу туристів та віруючих." }
+      ]
+    },
+    interestingFacts: {
+      title: "Цікаві факти",
+      items: [
+        { text: "Церква побудована за унікальним круглим, хрестоподібним планом, що символізує Rosa Mystica – містичну розу як образ Діви Марії. Простір із дванадцятьма колонами символізує дванадцять апостолів та дванадцять статей Апостольського Символу віри." },
+        { text: "Через незвичну форму будівлі та внутрішню гармонію інтер'єру місце називають одним із найдосконаліших прикладів готичної архітектури центрального плану в Європі." },
+        { text: "На підлозі є спеціальна зірка, з якої відкривається повний вид на всі підтримуючі колони – містичний ефект, пов’язаний із духовним сенсом простору." }
+      ]
+    },
+    construction_period: "початок будівництва: близько 1230 року (за однією з версій – з 1227). Завершення: приблизно 1260 року",
+    architects: "проект створено та реалізовано командою майстрів із регіонів Шампань та Іль-де-Франс, які привезли до Німеччини високий французький готичний стиль.",
+    founder: "ініціатором будівництва був архієпископ Теодеріх фон Віда (Theoderich von Wied) – глава єпархії Тріра в першій третині XIII століття",
+    coord: { lat: 49.75585, lng: 6.64317 },
+    meta: {
+      title: "Церква Богородиці в Трірі – Liebfrauenkirche | Пам'ятки Тріра ЮНЕСКО",
+      description: "Дізнайтеся історію, архітектуру та факти про Церкву Богородиці (Liebfrauenkirche) – готичний шедевр XIII століття та об'єкт Всесвітньої спадщини ЮНЕСКО в Трірі, Німеччина.",
+      ogTitle: "Liebfrauenkirche, Трір – готичний шедевр ЮНЕСКО",
+      ogDescription: "Пориньте в історію та таємниці Церкви Богородиці (Liebfrauenkirche) в Трірі – першої готичної будівлі французького стилю за межами Франції. Архітектура, символіка, історія.",
+      ogImage: "https://our-travels.info/foto/Germany/rheinland-pfalz/trier-city/liebfrauenkirche/001.jpg"
+    }
+  }
 ];
 
 export default datas;
