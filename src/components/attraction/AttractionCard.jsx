@@ -64,7 +64,7 @@ const AttractionCard = ({ attr, lang }) => {
 
                     {attr.unesco_status?.included && (
                         <span className='attrCard__desc-info-text'>
-                            UNESCO {attr.unesco_status.year}
+                            🌍UNESCO {attr.unesco_status.year}
                         </span>
                     )}
                     {attr.location && (

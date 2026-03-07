@@ -4,22 +4,22 @@ import germany from "@svg-maps/germany";
 import "../Maps.scss";
 
 const regionCenters = {
-  bw: { x: 180, y: 600, dx: 20, dy: 4 },
-  by: { x: 260, y: 480, dx: 50, dy: 10 },
+  bw: { x: 180, y: 600, dx: 20, dy: 6 },
+  by: { x: 260, y: 480, dx: 50, dy: 15 },
   be: { x: 485, y: 260, dx: 5, dy: 1 },
-  bb: { x: 345, y: 210, dx: 70, dy: 7 },
+  bb: { x: 345, y: 210, dx: 70, dy: 10 },
   hb: { x: 167, y: 199, dx: 20, dy: 0.9 },
   hh: { x: 246, y: 163, dx: 20, dy: 0.2 },
-  he: { x: 228, y: 364, dx: -10, dy: 6.5 },
-  mv: { x: 507, y: 98, dx: -60, dy: 3 },
-  ni: { x: 61, y: 159, dx: 70, dy: 6 },
-  nw: { x: 77, y: 303, dx: 30, dy: 4 },
+  he: { x: 228, y: 364, dx: -10, dy: 10 },
+  mv: { x: 507, y: 98, dx: -60, dy: 5 },
+  ni: { x: 61, y: 159, dx: 70, dy: 8 },
+  nw: { x: 77, y: 303, dx: 25, dy: 6 },
   rp: { x: 35, y: 498, dx: 30, dy: 1 },
   sl: { x: 33, y: 574, dx: 17, dy: 1 },
   sn: { x: 409, y: 421, dx: 40, dy: 0.35 },
   st: { x: 366, y: 219, dx: 5, dy: 7 },
   sh: { x: 181, y: 109, dx: 50, dy: -0.35 },
-  th: { x: 308, y: 364, dx: 10, dy: 5 }
+  th: { x: 308, y: 364, dx: 10, dy: 7.5 }
 };
 
 export default function GermanyMap({ regions, countryPath }) {

@@ -269,6 +269,14 @@ const datas = [
     countryPath: "germany", regionsPath: "rheinland-pfalz", districtPath: "city", cityPath: "trier",
     fotoCard: "Germany/rheinland-pfalz/trier-city/barbarathermen/001.jpg",
     location: "Trier, Deutschland",
+    unesco_status: {
+      included: true,
+      year: 1986,
+      type: "Kulturerbe",
+      criteria: "i, iii, iv, vi",
+      epoch: "Römische Epoche",
+      series: "Römische Denkmäler, Dom St. Peter und Liebfrauenkirche in Trier"
+    },
     short_description: "Der Komplex Barbarathermen ist ein riesiger römischer Badekomplex im nördlichen Teil des antiken Trier. Er umfasste Bäder für verschiedene soziale Schichten: von einfachen Bürgern bis zum Adel und gehörte zu den größten nördlich der Alpen. Bis heute sind Reste von Mauern, Becken und Kanalisationsanlagen erhalten, die die Dimensionen des Bauwerks und das ingenieurtechnische Können der Römer verdeutlichen.",
     full_description: {
       title: "Beschreibung und Geschichte",
@@ -426,6 +434,71 @@ const datas = [
       ogTitle: "Trierer Dom und Schatzkammer – Geschichte und Reliquien",
       ogDescription: "Tauchen Sie ein in die Geschichte des Trierer Doms aus dem 12. Jahrhundert und entdecken Sie die Schatzkammer mit seltenen kirchlichen Artefakten.",
       ogImage: "https://our-travels.info/foto/Germany/rheinland-pfalz/trier-city/cathedral/001.jpg"
+    }
+  },
+  {
+    id: "basilikaStPaulinus_trier",
+    name: "Basilika St. Paulinus",
+    type: ["cathedral", "baroque_church"], rating: "popular",
+    path: "basilikaStPaulinus_trier",
+    countryPath: "germany", regionsPath: "rheinland-pfalz", districtPath: "city", cityPath: "trier",
+    fotoCard: "Germany/rheinland-pfalz/trier-city/basilikaStPaulinus/001.jpg",
+    location: "Trier, Deutschland",
+    officialSite: [
+      { bold: "Offizielles Tourismusportal der Stadt Trier", link: "https://www.trier-info.de/sehenswuerdigkeiten/st-paulin" },
+      { bold: "<br>Offizielle Webseite der Pfarrei", link: "https://www.pfarrei-trier-paulin.de" }
+    ],
+    short_description: "Die Basilika St. Paulinus ist eine der schönsten barocken Kirchen der Stadt Trier. Sie wurde im 18. Jahrhundert erbaut und ist bekannt für ihre prunkvolle Innenausstattung im Barock- und Rokokostil. Besonders beeindruckend ist das große Deckenfresko, das Szenen aus dem Leben des Heiligen Paulinus und das Martyrium der Thebanischen Legion zeigt. Heute ist die Kirche ein aktiver katholischer Gottesdienstraum und besitzt den Status einer kleinen Basilika.",
+    full_description: {
+      title: "Beschreibung und Geschichte",
+      items: [
+        { bold: "Basilika St. Paulinus", text: "liegt im nördlichen Teil von Trier – einer der ältesten Städte Deutschlands. Von außen wirkt die Kirche eher zurückhaltend: die Fassade ist in hellen barocken Formen gestaltet, und über dem Eingang erhebt sich ein schlanker Turm von etwa 53 Metern Höhe." },
+        { bold: "Innenraum und Fresken", text: "Der Innenraum hinterlässt den größten Eindruck. Der Kirchenraum ist mit Stuck, vergoldeten Altären und dekorativen Elementen im Barock- und Rokokostil geschmückt. Im Zentrum befindet sich das große Deckenfresko, gemalt vom Künstler Christoph Thomas Scheffler. Es zeigt Szenen aus dem Leben des Heiligen Paulinus und das Martyrium der Thebanischen Legion – römische Soldaten-Christen, die nach der Legende in der Nähe dieses Ortes hingerichtet wurden." },
+        { bold: "Architektur", text: "Die architektonischen Elemente des Innenraums entwarf der berühmte Barockbaumeister Balthasar Neumann. Seine Entwürfe enthalten komplexe dekorative Details, reichhaltigen Stuck und Altar-Kompositionen. Skulpturen und geschnitzte Elemente stammen vom Bildhauer Ferdinand Titz." },
+        { bold: "Krypta", text: "Unter der Kirche befindet sich die Krypta, in der die alten Gräber frühchristlicher Bischöfe von Trier aufbewahrt werden. Darunter befindet sich das Grab des Heiligen Paulinus, nach dem die Kirche benannt ist." },
+        { bold: "Geschichte" },
+        { text: "Die Geschichte dieses Ortes reicht weit in die Vergangenheit zurück. Bereits im 4. Jahrhundert wurde auf dem Nordfriedhof des römischen Trier die erste Kirche über dem Grab des Bischofs Paulinus errichtet, der im 4. Jahrhundert lebte und aufgrund seines Widerstands gegen die arianische Politik Kaiser Constantius II. ins Exil geschickt wurde." },
+        { text: "Im Laufe der Jahrhunderte existierten an dieser Stelle mehrere Kirchen. Die mittelalterliche Kirche wurde 1674 von französischen Truppen während kriegerischer Auseinandersetzungen zerstört, als die Stadt von der französischen Armee besetzt wurde." },
+        { text: "Einige Jahrzehnte später initiierte der Erzbischof von Trier, Franz Georg von Schönborn, den Bau einer neuen Barockkirche. Der Bau begann 1734 und dauerte bis zur Mitte des 18. Jahrhunderts. An der Gestaltung des Innenraums wirkte einer der bekanntesten Architekten des deutschen Barock, Balthasar Neumann, mit." },
+        { text: "Nach der Säkularisation zu Beginn des 19. Jahrhunderts wurde das Kloster der Kirche geschlossen, und die Kirche selbst wurde zu einer Pfarrkirche. 1958 verlieh Papst Pius XII. ihr den Ehrentitel einer kleinen Basilika." },
+        { text: "Heute bleibt die Basilika ein aktiver Gottesdienstraum und ein beliebtes Touristenziel. Sie wird oft als eine der beeindruckendsten barocken Kirchen der Moselregion bezeichnet." }
+      ]
+    },
+    tickets_and_entry: {
+      title: "Praktische Informationen",
+      items: [
+        { bold: "Adresse:", text: "Palmatiusstraße 4, 54292 Trier, Deutschland" },
+        { bold: "Status:", text: "aktive katholische Kirche" },
+        { bold: "Öffnungszeiten:", text: "<br>März-September: ungefähr 08:00-17:00; <br>Oktober-Februar: ungefähr 09:00-17:00. <br>Besuche sind außerhalb der Gottesdienstzeiten möglich." }
+      ]
+    },
+    relics: {
+      title: "Reliquien und Besonderheiten des Innenraums",
+      items: [
+        { bold: "Reliquien des Heiligen Paulinus von Trier", text: "In der Krypta der Basilika befindet sich das Grab des Heiligen Paulinus – Bischof von Trier im 4. Jahrhundert. Nach der Tradition wurden seine Überreste Ende des 4. Jahrhunderts nach seinem Tod im Exil hierher überführt. Er wird als einer der frühen Verteidiger der orthodoxen Lehre gegen den Arianismus verehrt." },
+        { bold: "Historische Glocken des 19. Jahrhunderts", text: "In der Basilika sind vier Glocken erhalten, die 1821–1822 von den Brüdern Perrin gegossen wurden. Sie stellen ein seltenes Beispiel eines vollständig erhaltenen Geläuts des 19. Jahrhunderts dar." },
+        { bold: "Historische Kirchenausstattung", text: "Im Innenraum der Basilika sind Elemente des Sarkophags, des Altars und dekorative Teile zu sehen, die mit der Geschichte der Kirche und der Verehrung des Heiligen Paulinus verbunden sind." }
+      ]
+    },
+    interestingFacts: {
+      title: "Interessante Fakten",
+      items: [
+        { bold: "Großes Deckenfresko.", text: "Das Fresko nimmt fast die gesamte Decke des zentralen Langhauses ein und gilt als eines der größten barocken Kirchenfresken in der Region." },
+        { bold: "Märtyrer der Thebanischen Legion.", text: "Der christlichen Tradition zufolge könnten an der Stelle der heutigen Kirche Soldaten der Thebanischen Legion – eine römische Einheit – beigesetzt worden sein, die wegen der Weigerung, Christen zu verfolgen, hingerichtet wurden." },
+        { bold: "Barocker Reichtum hinter strengem Fassadenaufbau.", text: "Von außen wirkt die Kirche recht schlicht, doch ihr Innenraum gilt als einer der prunkvollsten barocken Innenräume in Trier." },
+        { bold: "Die dritte Kirche an diesem Ort.", text: "Die heutige Basilika ist bereits die dritte Kirchenanlage, die an diesem Standort seit der Spätantike errichtet wurde." }
+      ]
+    },
+    construction_period: "4. Jahrhundert (erste Kirche an diesem Ort); 1734-1753 – Bau der heutigen barocken Basilika",
+    architects: "Balthasar Neumann (Johann Balthasar Neumann) – Gestaltung und Architektur des Innenraums",
+    founder: "Erzbischof von Trier Franz Georg von Schönborn",
+    coord: { lat: 49.7625, lng: 6.6523 },
+    meta: {
+      title: "Basilika St. Paulinus in Trier – Barockkirche St. Paulin",
+      description: "Die Basilika St. Paulinus in Trier ist eine der schönsten Barockkirchen Deutschlands. Geschichte, Fresken des 18. Jahrhunderts, Krypta des Heiligen Paulinus und praktische Informationen für Besucher.",
+      ogTitle: "Basilika St. Paulinus (St. Paulin) – barockes Juwel von Trier",
+      ogDescription: "Prächtige barocke Kirche des 18. Jahrhunderts in Trier mit großem Deckenfresko und Krypta des Heiligen Paulinus.",
+      ogImage: "https://our-travels.info/foto/Germany/rheinland-pfalz/trier-city/basilikaStPaulinus/001.jpg"
     }
   },
 ];

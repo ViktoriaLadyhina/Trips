@@ -126,6 +126,7 @@ const t = {
     barbarathermen_trier: { ru: 'Барбарские термы', de: 'Barbarathermen', ua: 'Барбарські терми' },
     roman_bridge_trier: { ru: 'Римский мост', de: 'Römerbrücke', ua: 'Римський міст' },
     cathedral_trier: { ru: 'Кафедральний собор', de: 'Trierer Dom', ua: 'Кафедральний собор' },
+    basilikaStPaulinus_trier: { ru: 'Базилика Святого Паулина', de: 'Basilika St. Paulinus', ua: 'Базиліка Святого Пауліна ' },
 
     // Ukraine
     // Sumska oblast
@@ -181,6 +182,7 @@ const Map = () => {
                       <li><Link to="/germany/rheinland-pfalz/city/trier/attractions/kaiserthermen_trier">{t.attractions.kaiserthermen_trier[lang]}</Link></li>
                       <li><Link to="/germany/rheinland-pfalz/city/trier/attractions/amphitheater_trier">{t.attractions.amphitheater_trier[lang]}</Link></li>
                       <li><Link to="/germany/rheinland-pfalz/city/trier/attractions/basilica_of_constantine_trier">{t.attractions.basilica_of_constantine_trier[lang]}</Link></li>
+                      <li><Link to="/germany/rheinland-pfalz/city/trier/attractions/basilikaStPaulinus_trier">{t.attractions.basilikaStPaulinus_trier[lang]}</Link></li>
                       <li><Link to="/germany/rheinland-pfalz/city/trier/attractions/barbarathermen_trier">{t.attractions.barbarathermen_trier[lang]}</Link></li>
                       <li><Link to="/germany/rheinland-pfalz/city/trier/attractions/roman_bridge_trier">{t.attractions.roman_bridge_trier[lang]}</Link></li>
                     </ul>

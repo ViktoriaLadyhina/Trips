@@ -13,7 +13,7 @@ export const Fotos = {
       { path: "Germany/nrw/001.jpg", title: { ru: "Замок", ua: "Замок", de: "Burg" } }
     ],
 
-    // köln
+    // округ Кёльн
     koln: {
       gallery: [
         { path: "Germany/nrw/koln/koln-city/001.jpg", title: { ru: "Кельн 1", ua: "Кельн 1", de: "Köln 1" } },
@@ -383,7 +383,7 @@ export const Fotos = {
     },
 
 
-    // arnsberg
+    // округ Арнсберг
     luedenscheid: {
       gallery: [
         { path: "Germany/nrw/arnsberg/Märkischer-Kreis/luedenscheid/001.JPG", title: { ru: "Люденшайд, 2006", ua: "Люденшайд, 2006", de: "Lüdenscheid, 2006" } },
@@ -470,7 +470,10 @@ export const Fotos = {
         { path: "Germany/rheinland-pfalz/trier-city/cathedral/009.jpg", title: { ru: "Кафедральный собор, 2024", ua: "Кафедральний собор, 2024", de: "Trierer Dom, 2024" } },
         { path: "Germany/rheinland-pfalz/trier-city/cathedral/010.jpg", title: { ru: "Кафедральный собор, 2024", ua: "Кафедральний собор, 2024", de: "Trierer Dom, 2024" } },
         { path: "Germany/rheinland-pfalz/trier-city/cathedral/011.jpg", title: { ru: "Кафедральный собор - Алтарь Меттерниху, 2024", ua: "Кафедральний собор - Вівтар Меттерніха, 2024", de: "Trierer Dom - Metternich-Altar, 2024" } },
-      ]
+      ],
+      basilikaStPaulinus_trier: [
+        { path: "Germany/rheinland-pfalz/trier-city/basilikaStPaulinus/001.jpg", title: { ru: "Базилика Святого Паулина (фото взято с интернета)", ua: "Базиліка Святого Пауліна (фото взято з Інтернету)", de: "Basilika St. Paulinus (Foto aus dem Internet)" } },
+      ],
     }
   }
 }
