@@ -3332,6 +3332,53 @@ const datas = [
             ogImage: "https://our-travels.info/foto/Germany/nrw/arnsberg/Märkischer-Kreis/luedenscheid/history_museum_luedenscheid/001.JPG"
         }
     },
+    {
+        id: "christuskirche_luedenscheid",
+        name: "Pseudogotische Christuskirche",
+        type: ["cathedral"], rating: "popular",
+        path: "christuskirche_luedenscheid",
+        countryPath: "germany", regionsPath: "nrw", districtPath: "arnsberg", cityPath: "luedenscheid",
+        fotoCard: "Germany/nrw/arnsberg/Märkischer-Kreis/luedenscheid/christuskirche/001.jpg",
+        location: "Lüdenscheid, Deutschland",
+        short_description: "Die pseudogotische Christuskirche ist die größte protestantische Kirche der Stadt und ein wichtiger architektonischer Orientierungspunkt. Ihr hoher Turm ist aus verschiedenen Punkten der Stadt sichtbar und prägt das charakteristische Stadtbild. Der Innenraum bietet Platz für etwa 1200 Personen und ist mit Glasfenstern und pseudogotischen Elementen geschmückt. Die Kirche wird aktiv für Gottesdienste und kulturelle Veranstaltungen genutzt.",
+        full_description: {
+            title: "Beschreibung und Geschichte",
+            items: [
+                { bold: "Pseudogotische Christuskirche (Christuskirche)", text: "wurde 1900–1902 nach dem Entwurf des Architekten Gustav Adolf Fischer aus Barmen gebaut. Sie wurde nach der Erlöserkirche die zweite evangelische Kirche der Stadt und ist die größte im Kreis nach Kapazität – etwa 1200 Sitzplätze." },
+                { bold: "Architektur und Innenraum. ", text: "Architektonisch ist das Gebäude im Stil der Neugotik (Historismus mit gotischen Elementen) gestaltet und orientiert sich an den Prinzipien des sogenannten Wiesbadener Programms für protestantische Kirchen, um Sichtbarkeit und Hörbarkeit der Gemeinde während der Gottesdienste zu betonen. Der Kirchturm erreicht 61,5 m und ist ein wichtiger Bestandteil der Stadtansicht." },
+                { text: "Die Grundrissgestaltung entspricht einem griechischen Kreuz, bei dem der zentrale Raum von einer Kuppel mit einer Höhe von etwa 16,5 m überspannt wird. Der Innenraum zeichnet sich durch pseudogotische Elemente und zahlreiche Fenster aus. Im Gottesdienstbereich wird die liturgische Symbolik dargestellt, einschließlich Figuren und Glasfenstern, die die drei Funktionen Jesu Christi (Lehrer, Leidender und Auferstandener) widerspiegeln – zum Beispiel im Altarfenster und an der Außenskulptur." },
+                { text: "Während des Zweiten Weltkriegs im Jahr 1945 wurde das Gebäude durch Bombenangriffe beschädigt, aber bereits 1948 wiederhergestellt und für die Gemeindemitglieder wieder geöffnet." },
+                { text: "1986 erhielt die Christuskirche den Denkmalschutzstatus, und 2018–2019 wurde der Turm umfassend restauriert." },
+                { bold: "Orgel und musikalische Tradition. ", text: "Die Orgel, erbaut von der Firma E.F. Walcker bei der Eröffnung der Kirche, ist eines ihrer herausragenden Merkmale. Sie wurde 1957 verändert und 2008 von der Firma Gebrüder Stockmann in ihrem ursprünglichen Klang wiederhergestellt. Das Instrument verfügt über 36 Register auf drei Manualen und Pedal, was es zu einem wichtigen Objekt für musikalische Veranstaltungen macht." }
+            ]
+        },
+        tickets_and_entry: {
+            title: "Praktische Informationen",
+            items: [
+                { bold: "Adresse:", text: "Bahnhofstraße 59, 58507 Lüdenscheid" },
+                { bold: "Zugehörigkeit:", text: "Evangelische Kirche von Westfalen" },
+                { bold: "Regelmäßige Gottesdienste:", text: "<br>Sonntag um 10:00 Uhr (Christuskirche) <br>Monatliche Veranstaltungen und Konzerte – laut Plan auf der offiziellen Website der Gemeinde" },
+                { bold: "Erreichbarkeit:", text: "Stadtzentrum, bequemer Zugang zu Fuß und mit öffentlichen Verkehrsmitteln." }
+            ]
+        },
+        interestingFacts: {
+            title: "Interessante Fakten",
+            items: [
+                { text: "Der Turm mit 61,5 m Höhe ist einer der höchsten Kirchtürme der Region." },
+                { text: "Bei der Restaurierung 2018–2019 wurde besonders auf die Erhaltung des historischen Charakters der Fassade und des Turms geachtet." }
+            ]
+        },
+        construction_period: "1900-1902",
+        architects: "Gustav Adolf Fischer",
+        coord: { lat: 51.22131, lng: 7.62301 },
+        meta: {
+            title: "Pseudogotische Christuskirche – größte protestantische Kirche",
+            description: "Die größte evangelische Kirche in Lüdenscheid mit einem 61,5 m hohen Turm, gebaut 1902, Walcker-Orgel und markante neugotische Architektur.",
+            ogTitle: "Pseudogotische Christuskirche – architektonisches Wahrzeichen der Stadt",
+            ogDescription: "Historische evangelische Kirche im Herzen von Lüdenscheid: Architektur, Orgel, kulturelle Veranstaltungen.",
+            ogImage: "https://our-travels.info/foto/Germany/nrw/arnsberg/Märkischer-Kreis/luedenscheid/christuskirche/001.jpg"
+        }
+    }
 
 ];
 

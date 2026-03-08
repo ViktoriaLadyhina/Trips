@@ -391,7 +391,7 @@ const datas = [
         id: 5,
         name: 'Люденшайд',
         path: "luedenscheid",
-        countryPath: "germany", regionsPath: "nrw", district: "arnsberg",
+countryPath: "germany", regionsPath: "nrw", districtPath: "arnsberg", subRegionPath: "merkischer",
         desc: {
             general: [
                 { text: 'Люденшайд (нім. Lüdenscheid) розташований у північно-західній частині Заурланду в землі Північний Рейн-Вестфалія. Адміністративно місто входить до регіону Арнсберг і підпорядковується округу Меркіш.' },

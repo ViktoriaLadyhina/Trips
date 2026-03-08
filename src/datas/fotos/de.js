@@ -421,7 +421,10 @@ export const Fotos = {
       ],
       history_museum_luedenscheid: [
         { path: "Germany/nrw/arnsberg/Märkischer-Kreis/luedenscheid/history_museum_luedenscheid/001.JPG", title: { ru: "Исторический музей Люденшайда (фото взято с интернета)", ua: "Історичний музей Люденшайда (фото взято з Інтернету)", de: "Geschichtsmuseum Lüdenscheid (Foto aus dem Internet)" } },
-      ]
+      ],
+      christuskirche_luedenscheid: [
+        { path: "Germany/nrw/arnsberg/Märkischer-Kreis/luedenscheid/christuskirche/001.jpg", title: { ru: "Псевдоготическая церковь Христа (фото взято с интернета)", ua: "Псевдоготична церква Христа (фото взято з Інтернету)", de: "Pseudogotische Christuskirche (Foto aus dem Internet)" } },
+      ],
     }
 
   },
