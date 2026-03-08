@@ -425,6 +425,16 @@ export const Fotos = {
       christuskirche_luedenscheid: [
         { path: "Germany/nrw/arnsberg/Märkischer-Kreis/luedenscheid/christuskirche/001.jpg", title: { ru: "Псевдоготическая церковь Христа (фото взято с интернета)", ua: "Псевдоготична церква Христа (фото взято з Інтернету)", de: "Pseudogotische Christuskirche (Foto aus dem Internet)" } },
       ],
+      versetalsperre_luedenscheid: [
+        { path: "Germany/nrw/arnsberg/Märkischer-Kreis/luedenscheid/versetalsperre/001.jpg", title: { ru: "Водохранилище Верзе, 2025", ua: "Водосховище Верзе, 2025", de: "Versetalsperre, 2025" } },
+        { path: "Germany/nrw/arnsberg/Märkischer-Kreis/luedenscheid/versetalsperre/002.jpg", title: { ru: "Водохранилище Верзе, 2025", ua: "Водосховище Верзе, 2025", de: "Versetalsperre, 2025" } },
+        { path: "Germany/nrw/arnsberg/Märkischer-Kreis/luedenscheid/versetalsperre/003.jpg", title: { ru: "Водохранилище Верзе, 2025", ua: "Водосховище Верзе, 2025", de: "Versetalsperre, 2025" } },
+        { path: "Germany/nrw/arnsberg/Märkischer-Kreis/luedenscheid/versetalsperre/004.jpg", title: { ru: "Водохранилище Верзе, 2025", ua: "Водосховище Верзе, 2025", de: "Versetalsperre, 2025" } },
+        { path: "Germany/nrw/arnsberg/Märkischer-Kreis/luedenscheid/versetalsperre/005.jpg", title: { ru: "Водохранилище Верзе, 2025", ua: "Водосховище Верзе, 2025", de: "Versetalsperre, 2025" } },
+        { path: "Germany/nrw/arnsberg/Märkischer-Kreis/luedenscheid/versetalsperre/006.jpg", title: { ru: "Водохранилище Верзе, 2025", ua: "Водосховище Верзе, 2025", de: "Versetalsperre, 2025" } },
+        { path: "Germany/nrw/arnsberg/Märkischer-Kreis/luedenscheid/versetalsperre/007.jpg", title: { ru: "Водохранилище Верзе, 2025", ua: "Водосховище Верзе, 2025", de: "Versetalsperre, 2025" } },
+        { path: "Germany/nrw/arnsberg/Märkischer-Kreis/luedenscheid/versetalsperre/008.jpg", title: { ru: "Водохранилище Верзе, 2006", ua: "Водосховище Верзе, 2006", de: "Versetalsperre, 2006" } },
+      ],
     }
 
   },

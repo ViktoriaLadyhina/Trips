@@ -3378,7 +3378,56 @@ const datas = [
             ogDescription: "Historische evangelische Kirche im Herzen von Lüdenscheid: Architektur, Orgel, kulturelle Veranstaltungen.",
             ogImage: "https://our-travels.info/foto/Germany/nrw/arnsberg/Märkischer-Kreis/luedenscheid/christuskirche/001.jpg"
         }
-    }
+    },
+    {
+        id: "versetalsperre_luedenscheid",
+        name: "Versetalsperre",
+        type: ["nature"], rating: "local",
+        path: "versetalsperre_luedenscheid",
+        countryPath: "germany", regionsPath: "nrw", districtPath: "arnsberg", cityPath: "luedenscheid",
+        fotoCard: "Germany/nrw/arnsberg/Märkischer-Kreis/luedenscheid/versetalsperre/001.jpg",
+        location: "Lüdenscheid, Deutschland",
+        short_description: "Versetalsperre ist ein großer künstlicher See, der durch einen Staudamm zur Regulierung des Wasserstandes und zur Trinkwasserversorgung geschaffen wurde. Rund um das Gewässer verlaufen Fuß- und Radwege, an den Ufern gibt es Erholungsbereiche. Schwimmen und Wassersport sind verboten, um die Wasserqualität zu erhalten, wodurch der Ort beliebt für Spaziergänge und Naturbeobachtungen ist.",
+        full_description: {
+            title: "Beschreibung und Geschichte",
+            items: [
+                { bold: "Versetalsperre", text: " – ein großer Stausee am Fluss Verse im bewaldeten Südosten von Nordrhein-Westfalen, Deutschland. Die Wasseroberfläche beträgt etwa 170 ha, das Volumen ca. 32,8 Mio. m³. Der Damm, der das Stauwerk bildet, ist 62 m hoch und 393 m lang und prägt die malerische Landschaft mit Wäldern und den Hügeln des Sauerlands." },
+                { text: "Rund um das Gewässer verlaufen Fuß- und Radwege unterschiedlicher Länge, einschließlich eines Rundwegs von etwa 11 km. Die Ufer sind mit Erholungsbereichen und Picknickplätzen ausgestattet, und zum Schutz des Trinkwassers sind Schwimmen und Wassersport verboten." },
+                { text: "Die natürlichen Umgebung des Sees ist reich an Flora und Fauna, und Informationsschilder entlang der Wege informieren über Landschaft, Ökologie und Geschichte der Anlage." },
+                { bold: "Geschichte" },
+                { text: "Der Bau des Stausees begann 1929 auf Initiative des Ruhrverbands, um Trinkwasser bereitzustellen und den Pegel des Flusses Ruhr zu regulieren. Die Anfangsarbeiten wurden in den 1930er Jahren aufgrund wirtschaftlicher Schwierigkeiten unterbrochen und 1938 wieder aufgenommen." },
+                { text: "Während des Zweiten Weltkriegs existierte in Hunswinkel ein Arbeitslager, in dem Gefangene am Bau des Damms beteiligt waren. Viele von ihnen starben, und später wurde am Ufer des Stausees ein Denkmal zu ihren Ehren errichtet." },
+                { text: "Die Arbeiten wurden bis 1951 abgeschlossen, die endgültige Gestaltung und Befüllung des Stausees erfolgte bis 1952. Seitdem dient die Versetalsperre als Trinkwasserspeicher und Regulierung der Flüsse Ruhr und Lenne und ist gleichzeitig ein beliebter Ort für Spaziergänge und Erholung." }
+            ]
+        },
+        tickets_and_entry: {
+            title: "Praktische Informationen",
+            items: [
+                { bold: "Adresse:", text: "Klinkenberg 40a, 58515 Lüdenscheid, Deutschland" },
+                { bold: "Einschränkungen:", text: "Wassersport und Schwimmen sind wegen des Trinkwasserschutzes verboten." },
+                { bold: "Eintritt:", text: "Frei" }
+            ]
+        },
+        interestingFacts: {
+            title: "Interessante Fakten",
+            items: [
+                { text: "Die Versetalsperre ist der größte Staudamm im Märkischen Kreis nach Speichervolumen." },
+                { text: "Sie wird nicht nur für die Trinkwasserversorgung genutzt, sondern auch zur Regulierung der Flüsse Ruhr und Lenne." },
+                { text: "Auf den Wegen rund um das Gewässer gibt es den Natur- und Bildungspfad Knax mit interaktiven Stationen." },
+                { text: "Ein Denkmal für die Arbeitslageropfer in Hunswinkel erinnert an die harte Geschichte des Baus." }
+            ]
+        },
+        construction_period: "1929-1952",
+        founder: "auf Initiative des Ruhrverbands",
+        coord: { lat: 51.18321, lng: 7.68336 },
+        meta: {
+            title: "Versetalsperre – Staudamm und Stausee im Sauerland, Deutschland",
+            description: "Detaillierte Informationen zur Versetalsperre: Geschichte, Wanderwege, Denkmal Hunswinkel und Spaziergänge rund um den größten Staudamm im Märkischen Kreis.",
+            ogTitle: "Versetalsperre – Naturziel und Stausee in Nordrhein-Westfalen",
+            ogDescription: "Erfahren Sie alles über die Versetalsperre: von der Baugeschichte und dem Denkmal bis zu Spaziergängen rund um den See.",
+            ogImage: "https://our-travels.info/foto/Germany/nrw/arnsberg/Märkischer-Kreis/luedenscheid/versetalsperre/001.jpg"
+        }
+    },
 
 ];
 
