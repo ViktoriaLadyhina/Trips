@@ -9,7 +9,7 @@ const datas = [
         countryPath: "germany", regionsPath: "nrw", districtPath: "city", cityPath: "koln",
         fotoCard: "Germany/nrw/koln/koln-city/altstadt/005.jpg",
         location: "Köln, Deutschland",
-        subObjects: ["cologne_cathedral", "rathaus_koln", "guerzenich_koln", "miqua", "wallraf_richartz_museum", "roemisch_germanisches_museum", "farina_duftmuseum", "museum_ludwig", "stadtmuseum_koln", "dufthaus_4711_koln", "gross_st_martin_koln", "st_maria_himmelfahrt_koln"],
+        subObjects: ["cologne_cathedral", "rathaus_koln", "guerzenich_koln", "miqua", "wallraf_richartz_museum", "roemisch_germanisches_museum", "farina_duftmuseum", "museum_ludwig", "stadtmuseum_koln", "dufthaus_4711_koln", "gross_st_martin_koln", "st_maria_himmelfahrt_koln", "st_maria_im_kapitol_koln"],
         short_description_subObjects: {
             text: "In der Altstadt von Köln befinden sich folgende Sehenswürdigkeiten:",
             items: [
@@ -18,6 +18,7 @@ const datas = [
                 { bold: "Duftmuseum im Farina-Haus", text: "– Museum für Düfte und Parfum im historischen Viertel beim Rathaus." },
                 { bold: "Groß St. Martin", text: "– eine der bekanntesten romanischen Kirchen Kölns mit einem massiven Trikonchen-Turm, der über dem Rheinufer emporragt. Symbol der Silhouette der Altstadt." },
                 { bold: "St. Mariä Himmelfahrt", text: "– die wichtigste Barockkirche Kölns aus dem 17. Jahrhundert, eine ehemalige Jesuitenkirche in der Nähe des Hauptbahnhofs und des Kölner Doms." },
+                { bold: "Kirche St. Maria im Kapitol", text: "– die größte romanische Kirche Kölns, erbaut an der Stelle eines römischen Tempels. Ein herausragendes Beispiel romanischer Architektur mit Trikonchos-Plan und historischer Krypta, die Spuren der antiken Vergangenheit bewahrt." },
                 { bold: "Gürzenich", text: "– historisches Zunfthaus und Saal in der Nähe des Kölner Doms." },
                 { bold: "Kölner Rathaus", text: "– historisches Stadthaus im Zentrum der Altstadt." },
                 { bold: "Kölnisches Stadtmuseum", text: "– Museum für Stadtgeschichte im Zentrum (Zeughaus)." },
@@ -277,6 +278,72 @@ const datas = [
             ogTitle: "St. Mariä Himmelfahrt – historische Barockkirche in Köln",
             ogDescription: "Tauchen Sie ein in die Atmosphäre barocker Architektur im Herzen Kölns! St. Mariä Himmelfahrt ist ein bedeutendes religiöses Bauwerk der Altstadt mit reicher Geschichte und beeindruckendem Innenraum.",
             ogImage: "https://our-travels.info/foto/Germany/nrw/koln/koln-city/st_maria_himmelfahrt/001.jpg"
+        }
+    },
+    {
+        id: "st_maria_im_kapitol_koln",
+        name: "Kirche St. Maria im Kapitol",
+        type: ["cathedral"], rating: "popular",
+        path: "st_maria_im_kapitol_koln",
+        countryPath: "germany", regionsPath: "nrw", districtPath: "city", cityPath: "koln",
+        hiddenFromList: true, showMore: true,
+        fotoCard: "Germany/nrw/koln/koln-city/stMariaImKapitol/001.jpg",
+        location: "Köln, Deutschland",
+        officialSite: [{ bold: "Offizielle Webseite", link: "https://www.romanische-kirchen-koeln.de/" }],
+        short_description: "Die Kirche St. Maria im Kapitol – die größte romanische Kirche Kölns und eine der zwölf berühmten romanischen Kirchen der Stadt. Sie wurde im 11. Jahrhundert an der Stelle eines römischen Tempels erbaut, der der kapitolinischen Triade – Jupiter, Juno und Minerva – geweiht war. Heute gilt das Bauwerk als eines der wichtigsten Zeugnisse mittelalterlicher Architektur im Rheinland.",
+        full_description: {
+            title: "Beschreibung und Geschichte",
+            items: [
+                { bold: "Kirche St. Maria im Kapitol", text: "befindet sich in der Altstadt von Köln, unweit des Rheins. Sie ist die größte der zwölf romanischen Kirchen der Stadt und nimmt einen besonderen Platz in der Geschichte der mittelalterlichen Architektur Deutschlands ein. Die Größe des Gebäudes beträgt etwa 100 Meter in der Länge und etwa 40 Meter in der Breite, was es zur geräumigsten romanischen Kirche Kölns macht." },
+                { bold: "Architektur", text: "Die Kirche ist der Heiligen Maria geweiht und wurde im 11. Jahrhundert erbaut. Ihre Architektur gehört zum romanischen Stil – massive Wände, klare Formen und strenge Monumentalität vermitteln ein Gefühl von Kraft und Beständigkeit. Besonders auffällig ist der charakteristische romanische Ostteil mit drei Apsiden, die den sogenannten Trikonchos-Plan bilden." },
+                { bold: "Krypta und Reliquien", text: "Die Kirche wurde an der Stelle eines römischen Tempels errichtet, der einst im Zentrum der römischen Stadt Colonia stand. Überreste dieses Tempels und einer früheren christlichen Kirche sind in der Krypta sichtbar. Dies macht den Ort zu einem einzigartigen archäologischen Denkmal, das Antike und Mittelalter verbindet." },
+                { text: "Im Inneren der Kirche sind wertvolle Werke mittelalterlicher Kunst erhalten, darunter geschnitzte Holztüren aus dem 11. Jahrhundert und mehrere bekannte religiöse Skulpturen. Dank dieser Elemente gilt die Kirche als eines der wichtigsten historischen und künstlerischen Denkmäler Kölns." },
+                { bold: "Geschichte", text: "dieses Ortes beginnt bereits in der römischen Zeit. Im 1.–2. Jahrhundert n. Chr. befand sich hier ein großer Tempel, der der kapitolinischen Triade – Jupiter, Juno und Minerva – geweiht war. Er gehörte zu den bedeutendsten religiösen Bauwerken der römischen Stadt Colonia." },
+                { text: "Nach der Verbreitung des Christentums verfiel der heidnische Tempel allmählich. Vermutlich im 8. Jahrhundert wurde hier die erste christliche Kirche errichtet. Der Überlieferung zufolge gründete sie Plektruda, die Ehefrau des fränkischen Herrschers Pippin von Heristal." },
+                { text: "Das heutige Gebäude der Kirche begann etwa im Jahr 1040 unter der Leitung der Äbtissin Ida – Enkelin Kaiser Ottos II. – gebaut zu werden. Der Bau wurde etwa 1065 abgeschlossen." },
+                { text: "Der Kirchenplan wurde vom Geburtskirchenbau in Bethlehem inspiriert. Die Architektur mit drei Apsiden auf der Ostseite wurde zum Vorbild für viele andere Kirchen in der Rheinregion." },
+                { text: "Während des Zweiten Weltkriegs erlitt die Kirche erhebliche Schäden. Nach dem Krieg wurde sie wiederhergestellt und ist heute erneut für Besucher und Gottesdienste geöffnet." }
+            ]
+        },
+        tickets_and_entry: {
+            title: "Praktische Informationen",
+            items: [
+                { bold: "Adresse: ", text: "Kasinostraße 6, 50676 Köln, Altstadt" },
+                { bold: "Eintritt: ", text: "Kostenlos" },
+                { bold: "Öffnungszeiten: ", text: "Täglich von 9:00 bis 18:00 Uhr geöffnet (kann an Feiertagen variieren)" },
+                { bold: "Barrierefreiheit: ", text: "Teilweise für mobilitätseingeschränkte Besucher zugänglich. Die Krypta hat Stufen" },
+                { bold: "Tipp für Besucher: ", text: "Die beste Zeit für einen Besuch ist morgens oder an Wochentagen, um Menschenmassen zu vermeiden. Achten Sie auf die geschnitzten Türen aus dem 11. Jahrhundert und die Krypta mit Überresten des römischen Tempels." },
+                { bold: "Anreise: ", text: "Zu Fuß von der Station Heumarkt oder über die Deutzer Brücke vom östlichen Rheinufer (ca. 10 Minuten Gehweg)" }
+            ]
+        },
+        sub_objects: {
+            title: "Reliquien und Kunstwerke",
+            items: [
+                { bold: "Holztüren aus dem 11. Jahrhundert", text: "Eines der Hauptschätze der Kirche. Sie sind mit geschnitzten Szenen aus dem Leben Christi verziert und gelten als herausragendes Beispiel romanischer Holzschnitzkunst." },
+                { bold: "Gabelkreuz", text: "Gotisches Kreuz aus dem frühen 14. Jahrhundert, bekannt für die dramatische Darstellung des Leidens Christi." },
+                { bold: "Mittelalterliche Skulpturen der Heiligen Maria", text: "In der Kirche werden mehrere wertvolle Skulpturen und religiöse Kunstwerke aus dem 13.–14. Jahrhundert aufbewahrt." }
+            ]
+        },
+        interestingFacts: {
+            title: "Interessante Fakten",
+            items: [
+                { text: "Es ist die größte romanische Kirche Kölns." },
+                { text: "Sie steht genau auf der Stelle des römischen Tempels, nach dem sie ihren Namen «im Kapitol» erhielt." },
+                { text: "Der Plan des Ostteils des Gebäudes wurde zum architektonischen Vorbild für andere Kirchen in der Rheinregion." },
+                { text: "Die Kirche hat das geräumigste Interieur aller romanischen Kirchen Kölns." },
+                { text: "In der Krypta sind antike Fragmente des römischen Tempels erhalten, was die Kirche für Besucher, die sich für die Geschichte der Stadt interessieren, einzigartig macht." },
+                { text: "Die Kirche gehört zu den zwölf romanischen Kirchen Kölns, die als die wichtigsten Denkmäler mittelalterlicher Architektur der Stadt gelten." }
+            ]
+        },
+        construction_period: "1040-1065 Jahre",
+        founder: "Äbtissin Ida (Ida von Köln). Ebenfalls wird traditionell Plektruda als Gründerin der früheren Kirche erwähnt.",
+        coord: { lat: 50.93459, lng: 6.95847 },
+        meta: {
+            title: "St. Maria im Kapitol in Köln – größte romanische Kirche",
+            description: "St. Maria im Kapitol – die größte romanische Kirche Kölns, erbaut im 11. Jahrhundert auf den Überresten eines römischen Tempels. Geschichte, Architektur und mittelalterliche Reliquien.",
+            ogTitle: "Kirche St. Maria im Kapitol – Altstadt Köln",
+            ogDescription: "St. Maria im Kapitol – eine der ältesten und bedeutendsten Kirchen Kölns, auf den Überresten eines römischen Tempels erbaut, bekannt für ihre geschnitzten Türen aus dem 11. Jahrhundert und die geräumige Krypta.",
+            ogImage: "https://our-travels.info/foto/Germany/nrw/koln/koln-city/stMariaImKapitol/001.jpg"
         }
     },
     {

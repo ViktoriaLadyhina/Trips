@@ -171,7 +171,10 @@ export const Fotos = {
         { path: "Germany/nrw/koln/koln-city/st_maria_himmelfahrt/001.jpg", title: { ru: "Сент-Мария Химмельфарт (фото взято с интернета)", ua: "Церква Успіння Пресвятої Діви Марії (фото взято з Інтернету)", de: "St. Mariä Himmelfahrt (Foto aus dem Internet)" } },
         { path: "Germany/nrw/koln/koln-city/st_maria_himmelfahrt/002.jpg", title: { ru: "Сент-Мария Химмельфарт (фото взято с интернета)", ua: "Церква Успіння Пресвятої Діви Марії (фото взято з Інтернету)", de: "St. Mariä Himmelfahrt (Foto aus dem Internet)" } },
         { path: "Germany/nrw/koln/koln-city/st_maria_himmelfahrt/003.jpg", title: { ru: "Сент-Мария Химмельфарт (фото взято с интернета)", ua: "Церква Успіння Пресвятої Діви Марії (фото взято з Інтернету)", de: "St. Mariä Himmelfahrt (Foto aus dem Internet)" } },
-      ]
+      ],
+      st_maria_im_kapitol_koln: [
+        { path: "Germany/nrw/koln/koln-city/stMariaImKapitol/001.jpg", title: { ru: "Церковь Святой Марии в Капитолии (фото взято с интернета)", ua: "Церква Святої Марії у Капітолії (фото взято з Інтернету)", de: "Kirche St. Maria im Kapitol (Foto aus dem Internet)" } },
+      ],
     },
     bruhl: {
       gallery: [
