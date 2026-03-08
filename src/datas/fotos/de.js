@@ -272,9 +272,10 @@ export const Fotos = {
         { path: "Germany/nrw/koln/Rhein-Erft-Kreis/frechen/johann_schmitz_platz_frechen/005.jpg", title: { ru: "Фонтан перед ратушей, 2026", ua: "Фонтан перед ратушею, 2026", de: "Brunnen vor dem Rathaus, 2026" } },
       ],
       st_audomar_frechen: [
-        { path: "Germany/nrw/koln/Rhein-Erft-Kreis/frechen/st_audomar/001.jpg", title: { ru: "Церковь Святого Одомара (фото взято с интернета)", ua: "Церква Святого Одомара (фото взято з Інтернету)", de: "Kirche St. Audomar (Foto aus dem Internet)" } },
-        { path: "Germany/nrw/koln/Rhein-Erft-Kreis/frechen/st_audomar/002.jpg", title: { ru: "Церковь Святого Одомара (фото взято с интернета)", ua: "Церква Святого Одомара (фото взято з Інтернету)", de: "Kirche St. Audomar (Foto aus dem Internet)" } },
-        { path: "Germany/nrw/koln/Rhein-Erft-Kreis/frechen/st_audomar/003.jpg", title: { ru: "Церковь Святого Одомара (фото взято с интернета)", ua: "Церква Святого Одомара (фото взято з Інтернету)", de: "Kirche St. Audomar (Foto aus dem Internet)" } },
+        { path: "Germany/nrw/koln/Rhein-Erft-Kreis/frechen/st_audomar/001.jpg", title: { ru: "Церковь Святого Одомара, 2026", ua: "Церква Святого Одомара, 2026", de: "Kirche St. Audomar, 2026" } },
+        { path: "Germany/nrw/koln/Rhein-Erft-Kreis/frechen/st_audomar/002.jpg", title: { ru: "Церковь Святого Одомара, 2026", ua: "Церква Святого Одомара, 2026", de: "Kirche St. Audomar, 2026" } },
+        { path: "Germany/nrw/koln/Rhein-Erft-Kreis/frechen/st_audomar/003.jpg", title: { ru: "Церковь Святого Одомара, 2026", ua: "Церква Святого Одомара, 2026", de: "Kirche St. Audomar, 2026" } },
+        { path: "Germany/nrw/koln/Rhein-Erft-Kreis/frechen/st_audomar/004.jpg", title: { ru: "Церковь Святого Одомара, 2026", ua: "Церква Святого Одомара, 2026", de: "Kirche St. Audomar, 2026" } },
       ],
       evangelischeKirche_frechen: [
         { path: "Germany/nrw/koln/Rhein-Erft-Kreis/frechen/evangelischeKirche/001.jpg", title: { ru: "Евангелическая церковь (фото взято с интернета)", ua: "Євангелічна церква (фото взято з Інтернету)", de: "Evangelische Kirche (Foto aus dem Internet)" } },

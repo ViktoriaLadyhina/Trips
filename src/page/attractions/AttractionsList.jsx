@@ -118,7 +118,7 @@ const AttractionsList = () => {
 
             <div className='attractions__title'>{attractionsTitle[lang]}</div>
 
-            <CityMap city={city} attractions={attractions} />
+            <CityMap city={city} attractions={attractions} lang={lang} />
 
             <AttractionsFilters lang={lang} filters={filters} setFilters={setFilters} />
 

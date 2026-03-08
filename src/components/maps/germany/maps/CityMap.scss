@@ -2,8 +2,8 @@
     padding: 0;
 }
 
-.leaflet-tooltip.custom-popup .custom-popup-content {
-width: clamp(180px, 30vw, 250px);
+.leaflet-tooltip.custom-tooltip .custom-tooltip-content {
+    width: clamp(180px, 30vw, 250px);
     font-size: 12px;
     line-height: 1.4;
     overflow: hidden;
@@ -29,4 +29,33 @@ width: clamp(180px, 30vw, 250px);
     a:hover {
         text-decoration: underline;
     }
+}
+
+.custom-popup-content {
+        text-align: center;
+
+    img {
+        width: 100%;
+        max-width: 200px;
+        height: auto;
+        border-radius: 6px;
+    }
+
+    p {
+        font-size: 12px;
+        margin: 6px 0;
+    }
+
+}
+
+.popup-btn {
+    margin-top: 6px;
+    padding: 6px 10px;
+    font-size: 13px;
+    border: none;
+    border-radius: 6px;
+    background: #2a7be4;
+    color: white;
+    cursor: pointer;
+    width: 100%;
 }
