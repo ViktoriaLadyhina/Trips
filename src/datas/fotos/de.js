@@ -391,7 +391,11 @@ export const Fotos = {
       senfmuehle_monschau: [
         { path: "Germany/nrw/koln/Aachen/monschau/senfmuehle/001.jpg", title: { ru: "Историческая горчичная мельница (фото взято с интернета)", ua: "Історичний гірчичний млин (фото взято з Інтернету)", de: "Historische Senfmühle (Foto aus dem Internet)" } },
         { path: "Germany/nrw/koln/Aachen/monschau/senfmuehle/002.jpg", title: { ru: "Историческая горчичная мельница, 2025", ua: "Історичний гірчичний млин, 2025", de: "Historische Senfmühle, 2025" } },
-      ]
+      ],
+      glashuette_monschau: [
+        { path: "Germany/nrw/koln/Aachen/monschau/glashuette/001.jpg", title: { ru: "Стеклодувная мастерская (фото взято с интернета)", ua: "Майстерня скла (фото взято з Інтернету)", de: "Glashütte (Foto aus dem Internet)" } },
+        { path: "Germany/nrw/koln/Aachen/monschau/glashuette/002.jpg", title: { ru: "Стеклодувная мастерская (фото взято с интернета)", ua: "Майстерня скла (фото взято з Інтернету)", de: "Glashütte (Foto aus dem Internet)" } },
+      ],
     },
 
 

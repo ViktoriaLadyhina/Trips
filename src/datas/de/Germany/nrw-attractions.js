@@ -1878,12 +1878,13 @@ const datas = [
         type: ["historical_area"], rating: "popular",
         path: "historic_center_monschau",
         countryPath: "germany", regionsPath: "nrw", districtPath: "koln", cityPath: "monschau",
-        subObjects: ["rotes_haus_monschau", "senfmuehle_monschau"],
+        subObjects: ["rotes_haus_monschau", "senfmuehle_monschau", "glashuette_monschau"],
         short_description_subObjects: {
             text: "In der Altstadt von Monschau befindet sich folgende Sehenswürdigkeit:",
             items: [
                 { bold: "Rotes Haus", text: "– ein herausragendes historisches Hausmuseum im Zentrum der Altstadt von Monschau" },
-                { bold: "Historische Senfmühle", text: "– historischer Senfmühle in der Altstadt von Monschau mit aktiver Produktion und Senfverkostung" }
+                { bold: "Historische Senfmühle", text: "– historischer Senfmühle in der Altstadt von Monschau mit aktiver Produktion und Senfverkostung" },
+                { bold: "Glashütte", text: "– Werkstatt mit Live-Demonstrationen der Glasbläser, bei der man den Herstellungsprozess von Glasprodukten beobachten und Souvenirs kaufen kann" }
             ]
         },
         fotoCard: "Germany/nrw/koln/Aachen/monschau/001.jpg",
@@ -1911,7 +1912,6 @@ const datas = [
             ]
         },
         construction_period: "13. Jahrhundert (Entstehung der Siedlung um die Burg)",
-        coord: { lat: 50.55522, lng: 6.24241 },
         meta: {
             title: "Altstadt Monschau — Mittelalterliches Zentrum in der Eifel | Deutschland",
             description: "Die Altstadt von Monschau ist eines der schönsten historischen Zentren Deutschlands mit Fachwerkhäusern, dem Fluss Rur und mittelalterlicher Atmosphäre.",
@@ -2035,6 +2035,58 @@ const datas = [
             ogImage: "https://our-travels.info/foto/Germany/nrw/koln/Aachen/monschau/senfmuehle/001.jpg"
         }
     },
+    {
+    id: "glashuette_monschau",
+    name: "Glashütte",
+    type: ["museum"], rating: "popular",
+    path: "glashuette_monschau",
+    countryPath: "germany", regionsPath: "nrw", districtPath: "koln", cityPath: "monschau",
+    hiddenFromList: true, showMore: true,
+    fotoCard: "Germany/nrw/koln/Aachen/monschau/glashuette/001.jpg",
+    short_description: "Glashütte Monschau – eine Glasmacherei und Ausstellungszentrum für traditionelles Glasmacherhandwerk in der historischen Stadt Monschau. Besucher können den lebendigen Herstellungsprozess beobachten: vom Schmelzen des Glases bis zur Formung von Flaschen, Gefäßen und dekorativen Figuren durch Glasblasen.",
+    full_description: {
+        title: "Beschreibung und Geschichte",
+        items: [
+            { bold: "Glashütte Monschau", text: "bietet ein einzigartiges Erlebnis zur Einführung in das alte Glasmacherhandwerk. Hier stellt der Meister Glasprodukte direkt vor den Besuchern her und demonstriert Kunstfertigkeit, die auf Techniken zurückgeht, die bereits im Römischen Reich angewendet wurden. Während der Demonstration können Sie sehen, wie aus geschmolzenem Sand, Pottasche und Kalk feine Glasgefäße und Figuren durch die Fähigkeiten des Meisters entstehen." },
+            { text: "Neben der Handwerksdemonstration umfasst die Glashütte auch große Ausstellungs- und Verkaufsbereiche, in denen einzigartige Glasprodukte präsentiert werden. Der Besuch ist nicht nur für Liebhaber von Geschichte und Handwerk interessant, sondern für alle, die die traditionelle Produktion in Aktion erleben möchten – der Eintritt ist das ganze Jahr über frei, und die Produkte können vor Ort erworben werden." },
+            { bold: "Geschichte. ", text: "Die Geschichte des Glasmacherhandwerks reicht bis in die Antike zurück: die Technik des Glasblasens entwickelte sich bereits im Römischen Reich, und ihre Grundlagen sind bis heute erhalten geblieben. In der Glashütte Monschau wird dieses Handwerk von Generation zu Generation weitergegeben und zeigt traditionelle Verfahren der Glasbearbeitung, die über Jahrhunderte verfeinert wurden." },
+            { text: "Der Ort hat sich zu einem beliebten Kulturzentrum in der Region Eifel entwickelt, da er das technische Handwerk vergangener Zeiten lebendig erhält. Heute arbeitet hier ein Team erfahrener Glasmacher, die nicht nur ihr Können demonstrieren, sondern auch das kulturelle Erbe für zukünftige Generationen von Besuchern bewahren." }
+        ]
+    },
+    tickets_and_entry: {
+        title: "Praktische Informationen",
+        items: [
+            { bold: "Adresse:", text: "Burgau 15, 52156 Monschau, Deutschland." },
+            { bold: "Öffnungszeiten: ", text: "in der Regel von 10:00 bis 18:00 an Werktagen und Wochenenden während des gesamten Jahres." },
+            { bold: "Glasbläser-Demonstrationen: ", text: "täglich zu festgelegten Zeiten (10:15, 11:15, 12:15, 13:45, 14:45, 15:45 und 16:45)." },
+            { bold: "Eintritt: ", text: "Die Demonstrationen sind kostenlos; kostenpflichtige Teilnahme an Workshops möglich (je nach Saison)." }
+        ]
+    },
+    sub_objects: {
+        title: "Exponate",
+        items: [
+            { bold: "In der Glashütte gezeigt:", text: "<br><br>• Live-Demonstrationen der Glasmacher" },
+            { text: "• Ausstellung verschiedener Glasprodukte in traditionellem und modernem Stil" },
+            { text: "• Verkaufsbereich mit der Möglichkeit, individuelle Produkte zu kaufen oder zu bestellen." }
+        ]
+    },
+    interestingFacts: {
+        title: "Interessante Fakten",
+        items: [
+            { text: "Die Technik des Glasblasens wird so demonstriert, wie sie vor 2000 Jahren von Meistern angewendet wurde." },
+            { text: "Die Teilnahme an einem Workshop ermöglicht nicht nur das Beobachten, sondern auch das Verstehen der komplexen Schritte bei der Herstellung eines gewöhnlichen Glasgefäßes." },
+            { text: "Die Glashütte Monschau ist Teil des Kulturerbes der Eifelregion und eine beliebte Touristenattraktion." }
+        ]
+    },
+    coord: { lat: 50.552844, lng: 6.236908 },
+    meta: {
+        title: "Glashütte Monschau – Glasmacherei in Monschau",
+        description: "Besuchen Sie die Glashütte Monschau: Live-Demonstrationen der Glasmacher, Ausstellung von Glasprodukten und traditionelles Handwerk für die ganze Familie.",
+        ogTitle: "Glashütte Monschau – lebendige Erfahrung mit Glasmachern im Herzen der Eifel",
+        ogDescription: "Erfahren Sie, wie Meister heißes Glas in Kunstwerke verwandeln. Geschichte, Handwerk und Ausstellungen in historischem Monschau.",
+        ogImage: "https://our-travels.info/foto/Germany/nrw/koln/Aachen/monschau/glashuette/001.jpg"
+    }
+},
     {
         id: "burg_monschau",
         name: "Burg Monschau",
