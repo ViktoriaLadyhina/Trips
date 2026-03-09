@@ -9,18 +9,23 @@ const datas = [
         countryPath: "germany", regionsPath: "nrw", districtPath: "city", cityPath: "koln",
         fotoCard: "Germany/nrw/koln/koln-city/altstadt/005.jpg",
         location: "Köln, Deutschland",
-        subObjects: ["cologne_cathedral", "rathaus_koln", "guerzenich_koln", "miqua", "wallraf_richartz_museum", "roemisch_germanisches_museum", "farina_duftmuseum", "museum_ludwig", "stadtmuseum_koln", "dufthaus_4711_koln", "gross_st_martin_koln", "st_maria_himmelfahrt_koln", "st_maria_im_kapitol_koln"],
+        subObjects: ["cologne_cathedral", "rathaus_koln", "guerzenich_koln", "miqua", "wallraf_richartz_museum", "roemisch_germanisches_museum", "farina_duftmuseum", "museum_ludwig", "stadtmuseum_koln", "dufthaus_4711_koln", "st_maria_himmelfahrt_koln", "romanische_kirchen_altstadt_koln"],
         short_description_subObjects: {
             text: "In der Altstadt von Köln befinden sich folgende Sehenswürdigkeiten:",
             items: [
                 { bold: "Kölner Dom", text: "– majestätische gotische Kathedrale, das Herz der Altstadt, am Platz vor dem Hauptbahnhof." },
-                { bold: "Dufthaus 4711", text: "– historisches Gebäude in der Fußgängerzone um die Hohe Straße und Schildergasse." },
-                { bold: "Duftmuseum im Farina-Haus", text: "– Museum für Düfte und Parfum im historischen Viertel beim Rathaus." },
-                { bold: "Groß St. Martin", text: "– eine der bekanntesten romanischen Kirchen Kölns mit einem massiven Trikonchen-Turm, der über dem Rheinufer emporragt. Symbol der Silhouette der Altstadt." },
+                {
+                    bold: "Romanische Kirchen der Altstadt von Köln:",
+                    text: `<ul>
+                            <li><b>Groß St. Martin</b> – eine der bekanntesten romanischen Kirchen Kölns mit einem massiven Turm in Form einer Trikonche, der über dem Rheinufer aufragt. Ein Symbol der Silhouette der Altstadt.</li>
+                            <li><b>St. Maria im Kapitol</b> – die größte romanische Kirche Kölns, errichtet an der Stelle eines antiken römischen Tempels. Ein herausragendes Beispiel romanischer Architektur mit Trikonchenplan und historischer Krypta, die Spuren der antiken Vergangenheit bewahrt.</li>
+                        </ul>`
+                },
                 { bold: "St. Mariä Himmelfahrt", text: "– die wichtigste Barockkirche Kölns aus dem 17. Jahrhundert, eine ehemalige Jesuitenkirche in der Nähe des Hauptbahnhofs und des Kölner Doms." },
-                { bold: "Kirche St. Maria im Kapitol", text: "– die größte romanische Kirche Kölns, erbaut an der Stelle eines römischen Tempels. Ein herausragendes Beispiel romanischer Architektur mit Trikonchos-Plan und historischer Krypta, die Spuren der antiken Vergangenheit bewahrt." },
                 { bold: "Gürzenich", text: "– historisches Zunfthaus und Saal in der Nähe des Kölner Doms." },
                 { bold: "Kölner Rathaus", text: "– historisches Stadthaus im Zentrum der Altstadt." },
+                { bold: "Dufthaus 4711", text: "– historisches Gebäude in der Fußgängerzone um die Hohe Straße und Schildergasse." },
+                { bold: "Duftmuseum im Farina-Haus", text: "– Museum für Düfte und Parfum im historischen Viertel beim Rathaus." },
                 { bold: "Kölnisches Stadtmuseum", text: "– Museum für Stadtgeschichte im Zentrum (Zeughaus)." },
                 { bold: "Museum im archäologischen Viertel Köln – MiQua", text: "– archäologisches und jüdisches Museum am Marktplatz im Zentrum der Altstadt." },
                 { bold: "Museum Ludwig", text: "– Museum für moderne Kunst in der Nähe des Kölner Doms." },
@@ -47,7 +52,6 @@ const datas = [
                 { text: "Hier befinden sich einige der ältesten Brauhäuser Kölns, in denen das traditionelle Bier Kölsch serviert wird." }
             ]
         },
-        coord: { lat: 50.9413, lng: 6.9583 },
         meta: {
             title: "Altstadt Köln – Sehenswürdigkeiten, Museen, Spaziergänge entlang des Rheins",
             description: "Entdecken Sie die Altstadt von Köln: enge Gassen, gotische Kathedralen, historische Plätze, Museen und die Rheinuferpromenade. Ein nützlicher Reiseführer für Spaziergänge und Besuchsplanung.",
@@ -188,6 +192,41 @@ const datas = [
             ogTitle: "Kölner Rathaus: gotischer Turm, Renaissance-Loggia",
             ogDescription: "Das Kölner Rathaus – das älteste Verwaltungsgebäude Deutschlands, vereint gotischen Turm, Renaissance-Loggia und den historischen Hansasaal.",
             ogImage: "https://our-travels.info/foto/Germany/nrw/koln/koln-city/rathaus-koeln/Rathaus-Köln.jpg"
+        }
+    },
+    {
+        id: "romanische_kirchen_altstadt_koln",
+        name: "Romanische Kirchen der Altstadt von Köln",
+        type: ["cathedral"], rating: "popular",
+        path: "romanische_kirchen_altstadt_koln",
+        countryPath: "germany", regionsPath: "nrw", districtPath: "city", cityPath: "koln",
+        subObjects: ["gross_st_martin_koln", "st_maria_im_kapitol_koln"],
+        short_description_subObjects: {
+            text: "Auf unserer Website werden aus dieser Liste folgende Kirchen beschrieben:",
+            items: [
+                { bold: "Groß St. Martin", text: "– eine der bekanntesten romanischen Kirchen Kölns mit einem massiven Turm-Trikonchos, der über der Rheinpromenade aufragt. Ein Symbol des Silhouetts der Altstadt." },
+                { bold: "St. Maria im Kapitol", text: "– die größte romanische Kirche Kölns, erbaut auf dem Gelände eines antiken römischen Tempels. Ein herausragendes Beispiel romanischer Architektur mit Trikonchos-Plan und historischer Krypta, die Spuren der antiken Vergangenheit bewahrt." }
+            ]
+        },
+        hiddenFromList: true, showMore: true,
+        fotoCard: "Germany/nrw/koln/koln-city/romanische_kirchen/001.jpg",
+        location: "Köln, Deutschland",
+        officialSite: [{ bold: "Offizielle Webseite", link: "https://romanische-kirchen-koeln.de/" }],
+        short_description: "Die Liste der 12 größten romanischen Kirchen der Altstadt von Köln – bedeutende Denkmäler mittelalterlicher Architektur, die die Vielfalt des romanischen Stils und die historische Entwicklung der Stadt demonstrieren.",
+        full_description: {
+            title: "Beschreibung und Geschichte",
+            items: [
+                { bold: "Die Liste der 12 romanischen Kirchen Kölns", text: "ist kein offizielles staatliches Dokument, hat sich jedoch als anerkannter Leitfaden unter Kunsthistorikern, Architekten und Reiseleitern etabliert. Sie vereint die größten romanischen Kirchen im historischen Zentrum der Stadt, die herausragende Baudenkmäler des XI.–XIII. Jahrhunderts darstellen und die Entwicklung des mittelalterlichen Köln widerspiegeln." },
+                { text: "Die Idee, genau zwölf Kirchen hervorzuheben, entstand im 20. Jahrhundert bei der Erstellung von Reiseführern und wissenschaftlichen Veröffentlichungen zum romanischen Erbe Kölns. Experten wollten Touristen und Forschern ein Ensemble von Baudenkmälern zeigen, das verschiedene Aspekte der romanischen Architektur illustriert: Trikonchos-Plan, massive Türme, Holz- und Steinschnitzereien, historische Krypten." },
+                { text: "Die Liste dient als praktisches System zur Erkundung des historischen Zentrums: Besucher können die Altstadt zu Fuß durchqueren und alle wichtigen romanischen Kirchen sehen, von denen jede einzigartig in Stil, Größe und künstlerischen Relikten ist. Dank dieser Liste erhalten Touristen die Möglichkeit, die architektonische Vielfalt und die historische Bedeutung Kölns als Stadt im Rheinland im Mittelalter zu schätzen." }
+            ]
+        },
+        meta: {
+            title: "12 romanische Kirchen der Altstadt von Köln – Geschichte und Beschreibung",
+            description: "Liste der größten romanischen Kirchen Kölns in der Altstadt. Architektur, historische Fakten und kulturelles Erbe der Stadt.",
+            ogTitle: "Romanische Kirchen der Altstadt von Köln",
+            ogDescription: "Entdecken Sie die 12 größten romanischen Kirchen Kölns, ihre Architektur, Geschichte und Relikte aus dem XI.–XIII. Jahrhundert.",
+            ogImage: "https://our-travels.info/foto/Germany/nrw/koln/koln-city/romanische_kirchen/001.jpg"
         }
     },
     {

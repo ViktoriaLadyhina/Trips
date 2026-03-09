@@ -178,6 +178,11 @@ export const Fotos = {
       decksteiner_weiher_koln: [
         { path: "Germany/nrw/koln/koln-city/decksteiner_weiher/001.jpg", title: { ru: "Декштайнер Вайер (фото взято с интернета)", ua: "Декштайнер Вайер (фото взято з Інтернету)", de: "Decksteiner Weiher (Foto aus dem Internet)" } },
       ],
+      romanische_kirchen_altstadt_koln: [
+        { path: "Germany/nrw/koln/koln-city/romanische_kirchen/001.jpg", title: { ru: "Романские церкви Старого города Кёльна (фото взято с интернета)", ua: "Романські церкви Старого міста Кельна (фото взято з Інтернету)", de: "Romanische Kirchen der Altstadt von Köln (Foto aus dem Internet)" } },
+        { path: "Germany/nrw/koln/koln-city/gross_st_martin/002.jpg", title: { ru: "Большой Святой Мартин, 2025", ua: "Великий Святий Мартін, 2025", de: "Groß St. Martin, 2025" } },
+        { path: "Germany/nrw/koln/koln-city/stMariaImKapitol/001.jpg", title: { ru: "Церковь Святой Марии в Капитолии (фото взято с интернета)", ua: "Церква Святої Марії у Капітолії (фото взято з Інтернету)", de: "Kirche St. Maria im Kapitol (Foto aus dem Internet)" } },
+      ],
     },
     bruhl: {
       gallery: [

@@ -1,3 +1,4 @@
+import InfoBlock from '../InfoBlock/InfoBlock';
 import './Attraction.scss';
 import { Link } from 'react-router';
 
@@ -35,9 +36,21 @@ const AttractionCardSub = ({ attr, lang }) => {
                     {attr.short_description2 && (
                         <div className='attrCard__desc-info-text'>{attr.short_description2}</div>
                     )}
+                    {attr.short_description_subObjects && (
+                        <div className='attrCard__desc-subObjects'>
+                            {attr.short_description_subObjects.text}
+                            <ul>
+                                {attr.short_description_subObjects.items.map((item, i) => (
+                                    <li key={i}>
+                                        <InfoBlock data={[item]} className="attrCard__desc-subObjects" />
+                                    </li>
+                                ))}
+                            </ul>
+                        </div>
+                    )}
                     {attr.unesco_status?.included && (
                         <span className='attrCard__desc-info-text'>
-                            UNESCO {attr.unesco_status.year}
+                            🌍UNESCO {attr.unesco_status.year}
                         </span>
                     )}
                     {attr.showMore && (

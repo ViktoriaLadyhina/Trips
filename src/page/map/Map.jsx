@@ -84,6 +84,7 @@ const t = {
     st_maria_himmelfahrt_koln: { ru: 'Церковь Успения Пресвятой Девы Марии', de: 'St. Mariä Himmelfahrt', ua: 'Церква Успіння Пресвятої Діви Марії' },
     st_maria_im_kapitol_koln: { ru: 'Церковь Святой Марии в Капитолии', de: 'Kirche St. Maria im Kapitol', ua: 'Церква Святої Марії у Капітолії' },
     decksteiner_weiher_koln: { ru: 'Декштайнер Вайер', de: 'Decksteiner Weiher', ua: 'Декштайнер Вайер' },
+    romanische_kirchen_altstadt_koln: { ru: 'Романские церкви Старого города Кёльна', de: 'Romanische Kirchen der Altstadt von Köln', ua: 'Романські церкви Старого міста Кельна' },
 
     // Köln okrug
     // Aachen Kreis
@@ -241,9 +242,13 @@ const Map = () => {
                             <ul>
                               <li><Link to="/germany/nrw/city/koln/attractions/cologne-cathedral">{t.attractions.cologneCathedral[lang]}</Link></li>
                               <li><Link to="/germany/nrw/city/koln/attractions/rathaus">{t.attractions.cologneRathaus[lang]}</Link></li>
-                              <li><Link to="/germany/nrw/city/koln/attractions/gross_st_martin_koln">{t.attractions.gross_st_martin_koln[lang]}</Link></li>
+                              <li><Link to="/germany/nrw/city/koln/attractions/romanische_kirchen_altstadt_koln">{t.attractions.romanische_kirchen_altstadt_koln[lang]}:</Link>
+                                <ul>
+                                  <li><Link to="/germany/nrw/city/koln/attractions/gross_st_martin_koln">{t.attractions.gross_st_martin_koln[lang]}</Link></li>
+                                  <li><Link to="/germany/nrw/city/koln/attractions/st_maria_im_kapitol_koln">{t.attractions.st_maria_im_kapitol_koln[lang]}</Link></li>
+                                </ul>
+                              </li>
                               <li><Link to="/germany/nrw/city/koln/attractions/st_maria_himmelfahrt_koln">{t.attractions.st_maria_himmelfahrt_koln[lang]}</Link></li>
-                              <li><Link to="/germany/nrw/city/koln/attractions/st_maria_im_kapitol_koln">{t.attractions.st_maria_im_kapitol_koln[lang]}</Link></li>
                               <li><Link to="/germany/nrw/city/koln/attractions/guerzenich_koln">{t.attractions.guerzenich_koln[lang]}</Link></li>
                               <li><Link to="/germany/nrw/city/koln/attractions/miqua">{t.attractions.miqua[lang]}</Link></li>
                               <li><Link to="/germany/nrw/city/koln/attractions/roemisch-germanisches-museum">{t.attractions.roemischGermanischesMuseum[lang]}</Link></li>
@@ -374,7 +379,7 @@ const Map = () => {
             </ul>
           </li>
 
-{/* Юнеско */}<br></br><br></br>
+          {/* Юнеско */}<br></br><br></br>
           <li><Link to="/unesco">{t.attractions.Unesco_Title[lang]}</Link></li>
         </ul>
       </div>
