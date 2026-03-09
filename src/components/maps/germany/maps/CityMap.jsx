@@ -3,6 +3,7 @@ import L from 'leaflet';
 import 'leaflet/dist/leaflet.css';
 import './CityMap.scss';
 import { Navigate, useNavigate } from 'react-router';
+import searchIndex from '../../../search/index'
 
 delete L.Icon.Default.prototype._getIconUrl;
 L.Icon.Default.mergeOptions({
@@ -13,15 +14,20 @@ L.Icon.Default.mergeOptions({
 
 const moreBtnText = { ru: "Подробнее", de: "Mehr erfahren", ua: "Детальніше" };
 
-const CityMap = ({ city, attractions, lang }) => {
+const CityMap = ({ city, lang }) => {
   const navigate = useNavigate();
   if (!city) return null;
 
   // Центр карты: либо координаты города, либо первая достопримечательность
   const mapCenter = [city.coord.lat, city.coord.lng];
 
+  const attractions = [
+  ...Object.values(searchIndex[lang].germany).flatMap(region => region.attractions || []),
+  ...Object.values(searchIndex[lang].ukraine).flatMap(region => region.attractions || [])
+];
+
   // для мобильных
-  const isTouchDevice =L.Browser.mobile;
+  const isTouchDevice = L.Browser.mobile;
 
   return (
     <MapContainer closePopupOnClick={true} center={mapCenter} zoom={13} style={{ height: "450px", width: "100%", marginBottom: "20px" }}>
@@ -32,17 +38,17 @@ const CityMap = ({ city, attractions, lang }) => {
           <Marker
             key={attr.id}
             position={[attr.coord.lat, attr.coord.lng]}
-  eventHandlers={
-    !isTouchDevice
-      ? {
-          click: () => {
-            navigate(
-              `/${attr.countryPath}/${attr.regionsPath}/${attr.districtPath}/${attr.cityPath}/attractions/${attr.path}`
-            );
-          }
-        }
-      : undefined
-  }
+            eventHandlers={
+              !isTouchDevice
+                ? {
+                  click: () => {
+                    navigate(
+                      `/${attr.countryPath}/${attr.regionsPath}/${attr.districtPath}/${attr.cityPath}/attractions/${attr.path}`
+                    );
+                  }
+                }
+                : undefined
+            }
 
           >
             {!isTouchDevice && (
@@ -59,7 +65,7 @@ const CityMap = ({ city, attractions, lang }) => {
               </Tooltip>
             )}
             {isTouchDevice && (
-              <Popup className="custom-popup"   maxWidth={180}  minWidth={160}>
+              <Popup className="custom-popup" maxWidth={180} minWidth={160}>
                 <div className="custom-popup-content">
                   {attr.meta.ogImage && (
                     <img src={attr.meta.ogImage} alt={attr.name} />

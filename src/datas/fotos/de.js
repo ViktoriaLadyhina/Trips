@@ -175,6 +175,9 @@ export const Fotos = {
       st_maria_im_kapitol_koln: [
         { path: "Germany/nrw/koln/koln-city/stMariaImKapitol/001.jpg", title: { ru: "Церковь Святой Марии в Капитолии (фото взято с интернета)", ua: "Церква Святої Марії у Капітолії (фото взято з Інтернету)", de: "Kirche St. Maria im Kapitol (Foto aus dem Internet)" } },
       ],
+      decksteiner_weiher_koln: [
+        { path: "Germany/nrw/koln/koln-city/decksteiner_weiher/001.jpg", title: { ru: "Декштайнер Вайер (фото взято с интернета)", ua: "Декштайнер Вайер (фото взято з Інтернету)", de: "Decksteiner Weiher (Foto aus dem Internet)" } },
+      ],
     },
     bruhl: {
       gallery: [

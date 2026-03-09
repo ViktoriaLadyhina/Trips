@@ -83,6 +83,7 @@ const t = {
     gross_st_martin_koln: { ru: 'Большой Святой Мартин', de: 'Groß St. Martin', ua: 'Великий Святий Мартін' },
     st_maria_himmelfahrt_koln: { ru: 'Церковь Успения Пресвятой Девы Марии', de: 'St. Mariä Himmelfahrt', ua: 'Церква Успіння Пресвятої Діви Марії' },
     st_maria_im_kapitol_koln: { ru: 'Церковь Святой Марии в Капитолии', de: 'Kirche St. Maria im Kapitol', ua: 'Церква Святої Марії у Капітолії' },
+    decksteiner_weiher_koln: { ru: 'Декштайнер Вайер', de: 'Decksteiner Weiher', ua: 'Декштайнер Вайер' },
 
     // Köln okrug
     // Aachen Kreis
@@ -273,6 +274,7 @@ const Map = () => {
                             </ul>
                           </li>
                           <li><Link to="/germany/nrw/city/koln/attractions/finkens_garten_koln">{t.attractions.finkens_garten_koln[lang]}</Link></li>
+                          <li><Link to="/germany/nrw/city/koln/attractions/decksteiner_weiher_koln">{t.attractions.decksteiner_weiher_koln[lang]}</Link></li>
                         </ul>
                       </li>
 

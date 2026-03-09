@@ -1780,6 +1780,55 @@ const datas = [
             ogImage: "https://our-travels.info/foto/Germany/nrw/koln/koln-city/finkens_garten/001.jpg"
         }
     },
+    {
+        id: "decksteiner_weiher_koln",
+        name: "Decksteiner Weiher",
+        type: ["nature"], rating: "local",
+        path: "decksteiner_weiher_koln",
+        countryPath: "germany", regionsPath: "nrw", districtPath: "city", cityPath: "koln",
+        fotoCard: "Germany/nrw/koln/koln-city/decksteiner_weiher/001.jpg",
+        location: "Köln, Deutschland",
+        short_description: "Der Decksteiner Weiher – der größte künstliche Parkteich Kölns, befindet sich im Westen der Stadt im Bereich des äußeren Grüngürtels. Der Weiher ist von breiten Alleen, Waldflächen und Spazierwegen umgeben. Aufgrund seiner langgestreckten Form, der schattigen Kastanienalleen und der ruhigen Atmosphäre ist er einer der beliebtesten Erholungsorte der Stadtbewohner.",
+        full_description: {
+            title: "Beschreibung und Geschichte",
+            items: [
+                { bold: "Decksteiner Weiher", text: "– ein künstlicher Parkteich im Westen von Köln, der Teil des äußeren Grüngürtels der Stadt ist. Der Weiher hat eine langgestreckte Form und ist von breiten Spazierwegen, grünen Wiesen und schattigen Bäumen umgeben. Er ist ein beliebter Ort zum Spazierengehen, Joggen und Erholen in der Natur." },
+                { text: "Besonderheit des Weihers ist der gerade Kanal, der die beiden Teile des Sees verbindet. Entlang des Kanals verläuft eine malerische Kastanienallee, die eine der bekanntesten Landschaften dieses Parks schafft. In der warmen Jahreszeit kann man hier Boote, Enten und Schwäne beobachten, und rund um den See spazieren oft Einheimische und Touristen." },
+                { text: "Heute ist der Decksteiner Weiher eine wichtige Erholungszone der Stadt. Hier kann man spazieren gehen, Fahrrad fahren, Picknicks veranstalten oder einfach die Natur genießen, nur wenige Kilometer vom Zentrum Kölns entfernt." },
+                { bold: "Geschichte", text: "Der Decksteiner Weiher wurde Ende der 1920er Jahre im Rahmen eines großen Projekts zur Gestaltung des äußeren Grüngürtels von Köln angelegt. Nach dem Abriss der alten preußischen Befestigungen rund um die Stadt wurden große Flächen frei, die zu Parks und Erholungsgebieten umgestaltet wurden." },
+                { text: "Der Bau des Weihers erfolgte in den Jahren 1927–1929. Das Projekt war Teil eines städtischen Programms zur Entwicklung grüner Flächen, das vom damaligen Oberbürgermeister Kölns, Konrad Adenauer, aktiv unterstützt wurde. Der Weiher wurde sowohl als dekoratives als auch als sportliches Objekt konzipiert – seine langgestreckte Form ermöglichte die Nutzung als Trainingsstrecke für Rudersport." },
+                { text: "Der Name des Weihers stammt von der früheren Siedlung Deckstein, die sich in diesem Gebiet befand. Heute ist dieses Viertel Teil des städtischen Grüngürtels und eines der beliebtesten Erholungsgebiete für die Kölner Bevölkerung." }
+            ]
+        },
+        tickets_and_entry: {
+            title: "Praktische Informationen",
+            items: [
+                { bold: "Lage: ", text: "Westen von Köln, Stadtteile Lindenthal und Sülz" },
+                { bold: "Länge des Rundwegs:", text: "etwa 6 km um den Weiher und den Kanal" },
+                { bold: "Tiefe: ", text: "etwa 1–1,6 m" },
+                { text: "In der Nähe des Weihers befinden sich das Restaurant Haus am See, ein Bootsverleih und eine Minigolfanlage. Nicht weit entfernt im Parkgelände liegt das historische Fort VI Deckstein – eine der erhaltenen preußischen Befestigungen der Stadt." }
+            ]
+        },
+        interestingFacts: {
+            title: "Interessante Fakten",
+            items: [
+                { text: "Der Decksteiner Weiher gilt als der größte künstliche Parkteich Kölns und als eines der zentralen Erholungsgebiete im Westen der Stadt." },
+                { text: "Der Weiher wurde speziell als Trainingsstrecke für Rudersport geplant." },
+                { text: "Im nördlichen Teil des Weihers befindet sich eine kleine Insel, die für Besucher gesperrt ist." }
+            ]
+        },
+        construction_period: "1927–1929",
+        architects: "Theodor Nussbaum (Stadtarchitekt und Leiter des Kölner Gartenamts)",
+        founder: "Das Projekt wurde im Rahmen des städtischen Programms zur Entwicklung des Grüngürtels Kölns nach den Ideen von Konrad Adenauer und dem städtebaulichen Plan von Fritz Schumacher realisiert.",
+        coord: { lat: 50.91775, lng: 6.88815 },
+        meta: {
+            title: "Decksteiner Weiher in Köln – der größte Parkteich der Stadt",
+            description: "Der Decksteiner Weiher – ein malerischer künstlicher See im Grüngürtel von Köln. Beliebter Ort zum Spazierengehen, Sport treiben und zur Erholung in der Natur in der Nähe des Stadtzentrums.",
+            ogTitle: "Decksteiner Weiher – grüner See Kölns",
+            ogDescription: "Der Decksteiner Weiher ist einer der schönsten Erholungsorte Kölns. Spazierwege, Boote auf dem Wasser, grüne Parks und eine ruhige Atmosphäre nur wenige Kilometer vom Stadtzentrum entfernt.",
+            ogImage: "https://our-travels.info/foto/Germany/nrw/koln/koln-city/decksteiner_weiher/001.jpg"
+        }
+    },
 
     // Köln округ
 
