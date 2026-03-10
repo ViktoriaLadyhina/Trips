@@ -18,13 +18,13 @@ const City = () => {
     useMeta(city?.meta);
 
     useEffect(() => {
-    if (city?.name) {
-        document.title = city.name;
-    }
-}, [city?.name]);
+        if (city?.name) {
+            document.title = city.name;
+        }
+    }, [city?.name]);
 
     if (error) return <p>{error}</p>;
-    if (!city) return <p>Loading...</p>;   
+    if (!city) return <p>Loading...</p>;
 
     const photos = photosByCountry[countryPath];
     const cityEvents = events?.filter(ev => ev.cities?.includes(cityPath)) || [];
@@ -40,6 +40,9 @@ const City = () => {
         { label: city.name }
     ];
 
+    console.log(city);
+    
+
     return (
         <div className='city'>
             {city && (
@@ -51,7 +54,15 @@ const City = () => {
 
                         <BtnAttr lang={lang} path={`/${countryPath}/${regionPath}/${districtPath}/${cityPath}/attractions`} />
 
+
                         <div className='city__desc'>
+                            {city?.gerb && (
+                                <div className='city__desc-gerb'>
+                                    <img src={`${BASE_PHOTO_URL}${city.gerb}`} alt={city.name} />
+                                </div>
+                            )}
+
+
                             {city.desc?.general && (<InfoBlock data={city.desc.general} className="city__desc-general" />)}
 
                             {photos?.[regionPath]?.[cityPath]?.gallery?.[0] && (

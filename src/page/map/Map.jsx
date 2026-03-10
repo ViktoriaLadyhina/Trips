@@ -33,6 +33,7 @@ const t = {
     konigswinter: { ru: 'Город Кёнигсвинтер', de: 'Stadt Königswinter', ua: 'Місто Кенігсвінтер' },
     monschau: { ru: 'Город Моншау', de: 'Stadt Monschau', ua: 'Місто Моншау' },
     trier: { ru: 'Город Трир', de: 'Stadt Trier', ua: 'Місто Трір' },
+    altena: { ru: 'Город Альтена', de: 'Stadt Altena', ua: 'Місто Альтена' },
 
     sumy: { ru: 'Город Сумы', de: 'Stadt Sumy', ua: 'Місто Суми' }
   },
@@ -227,6 +228,7 @@ const Map = () => {
                               <li><Link to="/germany/nrw/arnsberg/luedenscheid/attractions/versetalsperre_luedenscheid">{t.attractions.versetalsperre_luedenscheid[lang]}</Link></li>
                             </ul>
                           </li>
+                          <li><Link to="/germany/nrw/arnsberg/altena">{t.cities.altena[lang]}</Link></li>
                         </ul>
                       </li>
                     </ul>

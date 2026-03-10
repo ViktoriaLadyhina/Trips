@@ -53,7 +53,7 @@ const Region = ({ data, countryPath, regionsPath, districtPath, id }) => {
 
           {data?.gerb && (
             <div className='region__container_desc-gerb'>
-              <img src={`${BASE_PHOTO_URL}${data.gerb}`} alt={data.fullName} />
+              <img src={`${BASE_PHOTO_URL}${data.gerb}`} alt={data.name} />
             </div>
           )}
         </div>

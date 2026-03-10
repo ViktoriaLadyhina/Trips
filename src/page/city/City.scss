@@ -1,203 +1,219 @@
 @use '../../styles/variables' as *;
 
 .city {
-    margin-top: 40px;
+  margin-top: 40px;
 
-    &__container {
-        padding: 5px;
+  &__container {
+    padding: 5px;
+  }
+
+  &__title {
+    @include h1();
+    margin-bottom: 20px;
+    text-align: center;
+  }
+
+  &__button {
+    display: inline-block;
+    padding: 10px 20px;
+    margin: 10px 0;
+    font-size: 16px;
+    font-family: 'Inter', 'Roboto', 'Lato', 'Open Sans', sans-serif;
+    font-weight: 600;
+    color: var(--color-primary);
+    background-color: var(--color-cart-bg);
+    border: 2px solid var(--color-primary);
+    border-radius: 8px;
+    cursor: pointer;
+    text-decoration: none;
+    transition: all 0.3s ease, box-shadow 0.3s ease;
+
+    &:hover {
+      background-color: var(--color-primary);
+      color: var(--color-body-bg);
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+      transform: translateY(-2px);
     }
 
-    &__title {
-        @include h1();
-        margin-bottom: 20px;
-        text-align: center;
+    /* Поддержка темной темы */
+    [data-theme='dark'] & {
+      background-color: var(--color-sidebar-bg);
+      color: var(--color-primary);
+      border: 2px solid var(--color-primary);
+
+      &:hover {
+        background-color: var(--color-primary);
+        color: var(--color-body-bg);
+        box-shadow: 0 4px 12px rgba(255, 255, 255, 0.2);
+      }
     }
 
-    &__button {
-        display: inline-block;
-        padding: 10px 20px;
-        margin: 10px 0;
-        font-size: 16px;
-        font-family: 'Inter', 'Roboto', 'Lato', 'Open Sans', sans-serif;
-        font-weight: 600;
-        color: var(--color-primary);
-        background-color: var(--color-cart-bg);
-        border: 2px solid var(--color-primary);
-        border-radius: 8px;
-        cursor: pointer;
-        text-decoration: none;
-        transition: all 0.3s ease, box-shadow 0.3s ease;
-
-        &:hover {
-            background-color: var(--color-primary);
-            color: var(--color-body-bg);
-            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
-            transform: translateY(-2px);
-        }
-
-        /* Поддержка темной темы */
-        [data-theme='dark'] & {
-            background-color: var(--color-sidebar-bg);
-            color: var(--color-primary);
-            border: 2px solid var(--color-primary);
-
-            &:hover {
-                background-color: var(--color-primary);
-                color: var(--color-body-bg);
-                box-shadow: 0 4px 12px rgba(255, 255, 255, 0.2);
-            }
-        }
-
-        &--disabled {
-            cursor: default;
-            opacity: 0.6;
-            pointer-events: none;
-        }
+    &--disabled {
+      cursor: default;
+      opacity: 0.6;
+      pointer-events: none;
     }
+  }
 
-    &__desc {
+  &__desc {
 
-        &-general,
-        &-population,
-        &-area,
-        &-postalCode,
-        &-phone,
-        &-officialSite,
-        &-notablePeople,
-        &-geography,
-        &-interestingFacts,
-        &-history {
-            text-align: justify;
-            padding: 3px;
+    &-gerb {
+      max-width: 200px;
+      float: right;
+      padding: 8px;
 
-            &-bold {
-                @include bold-text;
-                display: inline;
-                text-align: justify;
-            }
-
-            &-text {
-                @include body-text;
-                display: inline;
-                text-align: justify;
-            }
-
-            a {
-                text-decoration: none;
-                @include bold-text;
-            }
-
-            &-title {
-                @include h3();
-                padding: 20px;
-                text-align: center;
-            }
-        }
-    }
-
-    &__foto {
-        max-width: 300px;
+      img {
+        width: 100%;
         height: auto;
-        border-radius: 8px;
-        margin: 10px 0 10px 10px;
-        float: right;
-
-        &--right {
-            float: left;
-            margin: 10px 10px 10px 0;
-            // max-width: 300px;
-        }
-    }
-
-       .city__events {
-  margin: 2rem 0;
-
-  h2 {
-    font-size: 1.8rem;
-    margin-bottom: 1rem;
-  }
-
-  &-table {
-    width: 100%;
-    border-collapse: collapse;
-
-    thead {
-      background-color: #f5f5f5;
-
-      th {
-        padding: 0.5rem 1rem;
-        border-bottom: 2px solid #ccc;
+        display: block;
       }
+
     }
 
-    tbody {
-      tr {
-        border-bottom: 1px solid #e0e0e0;
+    &-general,
+    &-population,
+    &-area,
+    &-postalCode,
+    &-phone,
+    &-officialSite,
+    &-notablePeople,
+    &-geography,
+    &-interestingFacts,
+    &-history {
+      text-align: justify;
+      padding: 3px;
 
-        td {
-          padding: 0.5rem 1rem;
-          vertical-align: top;
-          text-align: left;
-        }
-
-        a {
-          color: #007bff;
-          text-decoration: none;
-
-          &:hover {
-            text-decoration: underline;
-          }
-        }
+      &-bold {
+        @include bold-text;
+        display: inline;
+        text-align: justify;
       }
-    }
 
-    // фиксируем ширину столбцов для большого экрана
-    th:first-child, td:first-child {
-      width: 20%; // название
-    }
+      &-text {
+        @include body-text;
+        display: inline;
+        text-align: justify;
+      }
 
-    th:nth-child(2), td:nth-child(2) {
-      width: auto; // короткое описание занимает оставшееся место
-    }
+      a {
+        text-decoration: none;
+        @include bold-text;
+      }
 
-    th:last-child, td:last-child {
-      width: 30%; // дата
-      text-align: left;
+      &-title {
+        @include h3();
+        padding: 20px;
+        text-align: center;
+      }
     }
   }
 
-  // адаптив под маленькие экраны <500px
-  @media (max-width: 500px) {
+  &__foto {
+    max-width: 300px;
+    height: auto;
+    border-radius: 8px;
+    margin: 10px 0 10px 10px;
+    float: right;
+
+    &--right {
+      float: left;
+      margin: 10px 10px 10px 0;
+      // max-width: 300px;
+    }
+  }
+
+  .city__events {
+    margin: 2rem 0;
+
+    h2 {
+      font-size: 1.8rem;
+      margin-bottom: 1rem;
+    }
+
     &-table {
-      display: block;
+      width: 100%;
+      border-collapse: collapse;
 
       thead {
-        display: none;
+        background-color: #f5f5f5;
+
+        th {
+          padding: 0.5rem 1rem;
+          border-bottom: 2px solid #ccc;
+        }
       }
 
       tbody {
         tr {
-          display: flex;
-          flex-direction: column;
-          margin-bottom: 1rem;
-          border-bottom: 2px solid #ccc;
-          padding-bottom: 0.5rem;
+          border-bottom: 1px solid #e0e0e0;
 
           td {
-            width: 100%;
+            padding: 0.5rem 1rem;
+            vertical-align: top;
             text-align: left;
-            padding: 0.25rem 0;
+          }
 
-            &:before {
-              content: attr(data-label);
-              font-weight: bold;
-              display: inline-block;
-              width: 120px; // подставим для визуального выравнивания
+          a {
+            color: #007bff;
+            text-decoration: none;
+
+            &:hover {
+              text-decoration: underline;
+            }
+          }
+        }
+      }
+
+      // фиксируем ширину столбцов для большого экрана
+      th:first-child,
+      td:first-child {
+        width: 20%; // название
+      }
+
+      th:nth-child(2),
+      td:nth-child(2) {
+        width: auto; // короткое описание занимает оставшееся место
+      }
+
+      th:last-child,
+      td:last-child {
+        width: 30%; // дата
+        text-align: left;
+      }
+    }
+
+    // адаптив под маленькие экраны <500px
+    @media (max-width: 500px) {
+      &-table {
+        display: block;
+
+        thead {
+          display: none;
+        }
+
+        tbody {
+          tr {
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 1rem;
+            border-bottom: 2px solid #ccc;
+            padding-bottom: 0.5rem;
+
+            td {
+              width: 100%;
+              text-align: left;
+              padding: 0.25rem 0;
+
+              &:before {
+                content: attr(data-label);
+                font-weight: bold;
+                display: inline-block;
+                width: 120px; // подставим для визуального выравнивания
+              }
             }
           }
         }
       }
     }
   }
-}
 }
