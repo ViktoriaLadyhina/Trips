@@ -447,6 +447,14 @@ export const Fotos = {
         { path: "Germany/nrw/arnsberg/Märkischer-Kreis/luedenscheid/versetalsperre/007.jpg", title: { ru: "Водохранилище Верзе, 2025", ua: "Водосховище Верзе, 2025", de: "Versetalsperre, 2025" } },
         { path: "Germany/nrw/arnsberg/Märkischer-Kreis/luedenscheid/versetalsperre/008.jpg", title: { ru: "Водохранилище Верзе, 2006", ua: "Водосховище Верзе, 2006", de: "Versetalsperre, 2006" } },
       ],
+    },
+    altena: {
+      gallery: [
+        { path: "Germany/nrw/arnsberg/Märkischer-Kreis/altena/001.jpg", title: { ru: "Альтена, 2025", ua: "Альтена, 2025", de: "Altena, 2025" } },
+      ],
+      burg_altena: [
+        { path: "Germany/nrw/arnsberg/Märkischer-Kreis/altena/burg/001.jpg", title: { ru: "Замок Альтена, 2025", ua: "Замок Альтена, 2025", de: "Burg Altena, 2025" } },
+      ]
     }
 
   },

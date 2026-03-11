@@ -52,6 +52,9 @@ const t = {
     christuskirche_luedenscheid: { ru: 'Псевдоготическая церковь Христа', de: 'Pseudogotische Christuskirche', ua: 'Псевдоготична церква Христа' },
     versetalsperre_luedenscheid: { ru: 'Водохранилище Верзе', de: 'Versetalsperre', ua: 'Водосховище Верзе' },
 
+    // Altena
+    burg_altena: { ru: 'Замок Альтена', de: 'Burg Altena', ua: 'Замок Альтена' },
+
     //Köln-city
     cologneCathedral: { ru: 'Кёльнский собор', de: 'Kölner Dom', ua: 'Кельнський собор' },
     cologneRathaus: { ru: 'Кёльнская ратуша', de: 'Kölner Rathaus', ua: 'Кельнська ратуша' },
@@ -228,7 +231,11 @@ const Map = () => {
                               <li><Link to="/germany/nrw/arnsberg/luedenscheid/attractions/versetalsperre_luedenscheid">{t.attractions.versetalsperre_luedenscheid[lang]}</Link></li>
                             </ul>
                           </li>
-                          <li><Link to="/germany/nrw/arnsberg/altena">{t.cities.altena[lang]}</Link></li>
+                          <li><Link to="/germany/nrw/arnsberg/altena">{t.cities.altena[lang]}</Link>
+                                 <ul>
+                                  <li><Link to="/germany/nrw/arnsberg/altena/attractions/burg_altena">{t.attractions.burg_altena[lang]}</Link></li>
+                                </ul>                         
+                          </li>
                         </ul>
                       </li>
                     </ul>

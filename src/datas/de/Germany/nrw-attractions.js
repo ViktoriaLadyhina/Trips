@@ -2036,57 +2036,57 @@ const datas = [
         }
     },
     {
-    id: "glashuette_monschau",
-    name: "Glashütte",
-    type: ["museum"], rating: "popular",
-    path: "glashuette_monschau",
-    countryPath: "germany", regionsPath: "nrw", districtPath: "koln", cityPath: "monschau",
-    hiddenFromList: true, showMore: true,
-    fotoCard: "Germany/nrw/koln/Aachen/monschau/glashuette/001.jpg",
-    short_description: "Glashütte Monschau – eine Glasmacherei und Ausstellungszentrum für traditionelles Glasmacherhandwerk in der historischen Stadt Monschau. Besucher können den lebendigen Herstellungsprozess beobachten: vom Schmelzen des Glases bis zur Formung von Flaschen, Gefäßen und dekorativen Figuren durch Glasblasen.",
-    full_description: {
-        title: "Beschreibung und Geschichte",
-        items: [
-            { bold: "Glashütte Monschau", text: "bietet ein einzigartiges Erlebnis zur Einführung in das alte Glasmacherhandwerk. Hier stellt der Meister Glasprodukte direkt vor den Besuchern her und demonstriert Kunstfertigkeit, die auf Techniken zurückgeht, die bereits im Römischen Reich angewendet wurden. Während der Demonstration können Sie sehen, wie aus geschmolzenem Sand, Pottasche und Kalk feine Glasgefäße und Figuren durch die Fähigkeiten des Meisters entstehen." },
-            { text: "Neben der Handwerksdemonstration umfasst die Glashütte auch große Ausstellungs- und Verkaufsbereiche, in denen einzigartige Glasprodukte präsentiert werden. Der Besuch ist nicht nur für Liebhaber von Geschichte und Handwerk interessant, sondern für alle, die die traditionelle Produktion in Aktion erleben möchten – der Eintritt ist das ganze Jahr über frei, und die Produkte können vor Ort erworben werden." },
-            { bold: "Geschichte. ", text: "Die Geschichte des Glasmacherhandwerks reicht bis in die Antike zurück: die Technik des Glasblasens entwickelte sich bereits im Römischen Reich, und ihre Grundlagen sind bis heute erhalten geblieben. In der Glashütte Monschau wird dieses Handwerk von Generation zu Generation weitergegeben und zeigt traditionelle Verfahren der Glasbearbeitung, die über Jahrhunderte verfeinert wurden." },
-            { text: "Der Ort hat sich zu einem beliebten Kulturzentrum in der Region Eifel entwickelt, da er das technische Handwerk vergangener Zeiten lebendig erhält. Heute arbeitet hier ein Team erfahrener Glasmacher, die nicht nur ihr Können demonstrieren, sondern auch das kulturelle Erbe für zukünftige Generationen von Besuchern bewahren." }
-        ]
+        id: "glashuette_monschau",
+        name: "Glashütte",
+        type: ["museum"], rating: "popular",
+        path: "glashuette_monschau",
+        countryPath: "germany", regionsPath: "nrw", districtPath: "koln", cityPath: "monschau",
+        hiddenFromList: true, showMore: true,
+        fotoCard: "Germany/nrw/koln/Aachen/monschau/glashuette/001.jpg",
+        short_description: "Glashütte Monschau – eine Glasmacherei und Ausstellungszentrum für traditionelles Glasmacherhandwerk in der historischen Stadt Monschau. Besucher können den lebendigen Herstellungsprozess beobachten: vom Schmelzen des Glases bis zur Formung von Flaschen, Gefäßen und dekorativen Figuren durch Glasblasen.",
+        full_description: {
+            title: "Beschreibung und Geschichte",
+            items: [
+                { bold: "Glashütte Monschau", text: "bietet ein einzigartiges Erlebnis zur Einführung in das alte Glasmacherhandwerk. Hier stellt der Meister Glasprodukte direkt vor den Besuchern her und demonstriert Kunstfertigkeit, die auf Techniken zurückgeht, die bereits im Römischen Reich angewendet wurden. Während der Demonstration können Sie sehen, wie aus geschmolzenem Sand, Pottasche und Kalk feine Glasgefäße und Figuren durch die Fähigkeiten des Meisters entstehen." },
+                { text: "Neben der Handwerksdemonstration umfasst die Glashütte auch große Ausstellungs- und Verkaufsbereiche, in denen einzigartige Glasprodukte präsentiert werden. Der Besuch ist nicht nur für Liebhaber von Geschichte und Handwerk interessant, sondern für alle, die die traditionelle Produktion in Aktion erleben möchten – der Eintritt ist das ganze Jahr über frei, und die Produkte können vor Ort erworben werden." },
+                { bold: "Geschichte. ", text: "Die Geschichte des Glasmacherhandwerks reicht bis in die Antike zurück: die Technik des Glasblasens entwickelte sich bereits im Römischen Reich, und ihre Grundlagen sind bis heute erhalten geblieben. In der Glashütte Monschau wird dieses Handwerk von Generation zu Generation weitergegeben und zeigt traditionelle Verfahren der Glasbearbeitung, die über Jahrhunderte verfeinert wurden." },
+                { text: "Der Ort hat sich zu einem beliebten Kulturzentrum in der Region Eifel entwickelt, da er das technische Handwerk vergangener Zeiten lebendig erhält. Heute arbeitet hier ein Team erfahrener Glasmacher, die nicht nur ihr Können demonstrieren, sondern auch das kulturelle Erbe für zukünftige Generationen von Besuchern bewahren." }
+            ]
+        },
+        tickets_and_entry: {
+            title: "Praktische Informationen",
+            items: [
+                { bold: "Adresse:", text: "Burgau 15, 52156 Monschau, Deutschland." },
+                { bold: "Öffnungszeiten: ", text: "in der Regel von 10:00 bis 18:00 an Werktagen und Wochenenden während des gesamten Jahres." },
+                { bold: "Glasbläser-Demonstrationen: ", text: "täglich zu festgelegten Zeiten (10:15, 11:15, 12:15, 13:45, 14:45, 15:45 und 16:45)." },
+                { bold: "Eintritt: ", text: "Die Demonstrationen sind kostenlos; kostenpflichtige Teilnahme an Workshops möglich (je nach Saison)." }
+            ]
+        },
+        sub_objects: {
+            title: "Exponate",
+            items: [
+                { bold: "In der Glashütte gezeigt:", text: "<br><br>• Live-Demonstrationen der Glasmacher" },
+                { text: "• Ausstellung verschiedener Glasprodukte in traditionellem und modernem Stil" },
+                { text: "• Verkaufsbereich mit der Möglichkeit, individuelle Produkte zu kaufen oder zu bestellen." }
+            ]
+        },
+        interestingFacts: {
+            title: "Interessante Fakten",
+            items: [
+                { text: "Die Technik des Glasblasens wird so demonstriert, wie sie vor 2000 Jahren von Meistern angewendet wurde." },
+                { text: "Die Teilnahme an einem Workshop ermöglicht nicht nur das Beobachten, sondern auch das Verstehen der komplexen Schritte bei der Herstellung eines gewöhnlichen Glasgefäßes." },
+                { text: "Die Glashütte Monschau ist Teil des Kulturerbes der Eifelregion und eine beliebte Touristenattraktion." }
+            ]
+        },
+        coord: { lat: 50.552844, lng: 6.236908 },
+        meta: {
+            title: "Glashütte Monschau – Glasmacherei in Monschau",
+            description: "Besuchen Sie die Glashütte Monschau: Live-Demonstrationen der Glasmacher, Ausstellung von Glasprodukten und traditionelles Handwerk für die ganze Familie.",
+            ogTitle: "Glashütte Monschau – lebendige Erfahrung mit Glasmachern im Herzen der Eifel",
+            ogDescription: "Erfahren Sie, wie Meister heißes Glas in Kunstwerke verwandeln. Geschichte, Handwerk und Ausstellungen in historischem Monschau.",
+            ogImage: "https://our-travels.info/foto/Germany/nrw/koln/Aachen/monschau/glashuette/001.jpg"
+        }
     },
-    tickets_and_entry: {
-        title: "Praktische Informationen",
-        items: [
-            { bold: "Adresse:", text: "Burgau 15, 52156 Monschau, Deutschland." },
-            { bold: "Öffnungszeiten: ", text: "in der Regel von 10:00 bis 18:00 an Werktagen und Wochenenden während des gesamten Jahres." },
-            { bold: "Glasbläser-Demonstrationen: ", text: "täglich zu festgelegten Zeiten (10:15, 11:15, 12:15, 13:45, 14:45, 15:45 und 16:45)." },
-            { bold: "Eintritt: ", text: "Die Demonstrationen sind kostenlos; kostenpflichtige Teilnahme an Workshops möglich (je nach Saison)." }
-        ]
-    },
-    sub_objects: {
-        title: "Exponate",
-        items: [
-            { bold: "In der Glashütte gezeigt:", text: "<br><br>• Live-Demonstrationen der Glasmacher" },
-            { text: "• Ausstellung verschiedener Glasprodukte in traditionellem und modernem Stil" },
-            { text: "• Verkaufsbereich mit der Möglichkeit, individuelle Produkte zu kaufen oder zu bestellen." }
-        ]
-    },
-    interestingFacts: {
-        title: "Interessante Fakten",
-        items: [
-            { text: "Die Technik des Glasblasens wird so demonstriert, wie sie vor 2000 Jahren von Meistern angewendet wurde." },
-            { text: "Die Teilnahme an einem Workshop ermöglicht nicht nur das Beobachten, sondern auch das Verstehen der komplexen Schritte bei der Herstellung eines gewöhnlichen Glasgefäßes." },
-            { text: "Die Glashütte Monschau ist Teil des Kulturerbes der Eifelregion und eine beliebte Touristenattraktion." }
-        ]
-    },
-    coord: { lat: 50.552844, lng: 6.236908 },
-    meta: {
-        title: "Glashütte Monschau – Glasmacherei in Monschau",
-        description: "Besuchen Sie die Glashütte Monschau: Live-Demonstrationen der Glasmacher, Ausstellung von Glasprodukten und traditionelles Handwerk für die ganze Familie.",
-        ogTitle: "Glashütte Monschau – lebendige Erfahrung mit Glasmachern im Herzen der Eifel",
-        ogDescription: "Erfahren Sie, wie Meister heißes Glas in Kunstwerke verwandeln. Geschichte, Handwerk und Ausstellungen in historischem Monschau.",
-        ogImage: "https://our-travels.info/foto/Germany/nrw/koln/Aachen/monschau/glashuette/001.jpg"
-    }
-},
     {
         id: "burg_monschau",
         name: "Burg Monschau",
@@ -3568,6 +3568,79 @@ const datas = [
             ogImage: "https://our-travels.info/foto/Germany/nrw/arnsberg/Märkischer-Kreis/luedenscheid/versetalsperre/001.jpg"
         }
     },
+
+    // Альтена
+    {
+        id: "burg_altena",
+        name: "Burg Altena",
+        type: ["palace_or_castle", "museum"], rating: "top",
+        path: "burg_altena",
+        countryPath: "germany", regionsPath: "nrw", districtPath: "arnsberg", cityPath: "altena",
+        fotoCard: "Germany/nrw/arnsberg/Märkischer-Kreis/altena/burg/001.jpg",
+        location: "Altena, Deutschland",
+        officialSite: [{ bold: "Offizielle Website", link: "https://www.burg-altena.de/" }],
+        short_description: "Burg Altena ist eine der schönsten mittelalterlichen Festungen Deutschlands und steht auf einem Hügel über der Stadt Altena in der Region Sauerland im Bundesland Nordrhein-Westfalen. Ihre Geschichte reicht bis in das frühe 12. Jahrhundert zurück, und heute vereint sie eine Burg, Museen und eine einzigartige historische Atmosphäre.",
+        full_description: {
+            title: "Beschreibung und Geschichte",
+            items: [
+                { bold: "Burg Altena", text: "ragt über den Fluss Lenne und die Altstadt empor und bildet eine beeindruckende Landschaft sowie eine der wichtigsten touristischen Sehenswürdigkeiten der gesamten Region. Sie gilt als eine der am besten erhaltenen und eindrucksvollsten mittelalterlichen Befestigungen Deutschlands. Innerhalb der Burgmauern befinden sich Museen, Ausstellungen, Aussichtspunkte und sogar eine funktionierende Jugendherberge – einzigartig auf der Welt." },
+                { text: "Besucher können durch die Museumsräume gehen, mehr über das Leben von Rittern, Handwerkern und gewöhnlichen Bewohnern der Region erfahren sowie historische Innenräume, Waffen und Alltagsgegenstände sehen. Neben dem klassischen Besuch gibt es einen multimedialen Guide in mehreren Sprachen – das macht den Rundgang besonders informativ und modern." },
+                { bold: "Geschichte der Burg Altena" },
+                { bold: "12. Jahrhundert – Gründung und Befestigung", text: "Die Burg wurde zu Beginn des 12. Jahrhunderts (um 1108) errichtet, als die Brüder Adolf und Eberhard von Berg vom Kaiser Heinrich V. Ländereien im Sauerland erhielten und auf dem Berg Wulfsegge eine Befestigung errichteten. Der ursprüngliche Name der Festung war Wulfeshagen, später wurde sie als Altena bekannt. Sie war ein strategischer Außenposten zur Kontrolle des Gebietes und zum Schutz von Handels- und Handwerkswegen." },
+                { bold: "13.-14. Jahrhundert – Zentrum der Grafschaft und Sitz des Drosten", text: "Im 12. Jahrhundert entstand auf der Grundlage der Burg die Grafschaft Altena – ein Zentrum regionaler Macht. Später nannten sich die Grafen Grafen von der Mark und verlegten ihre Hauptresidenz zur Burg Mark bei Hamm, doch Burg Altena blieb ein wichtiges Verwaltungszentrum. Seit 1392 wurde sie als Residenz des lokalen Amtmanns (Drosten) genutzt." },
+                { bold: "1455 – Brand und Wiederaufbau", text: "In der Mitte des 15. Jahrhunderts (um 1455) wurde die Burg durch einen Brand schwer beschädigt. Sie wurde teilweise wieder aufgebaut, verlor jedoch einen großen Teil ihrer früheren Bedeutung und Stärke." },
+                { bold: "17. Jahrhundert – Hospital für Veteranen", text: "Im 17. Jahrhundert (etwa um 1670) wurde ein Teil der Burg als Unterkunft für invalide Soldaten genutzt, die verwundet worden oder nicht mehr dienstfähig waren." },
+                { bold: "18. Jahrhundert – Bedeutungsverlust und zivile Funktionen", text: "Bis zum 18. Jahrhundert hatte die Burg ihre militärische Bedeutung bereits verloren:" },
+                {
+                    text: `<ul><li>1733 – das Gebäude befand sich in starkem Verfall, doch die Finanzierung für eine Reparatur durch den preußischen König Friedrich Wilhelm I. wurde abgelehnt;</li>
+                    <li>1766 wurde in der Burg ein Kriminalgericht und ein Gefängnis für die Grafschaft Mark eingerichtet;</li>
+                    <li>1771 verließ die preußische Armee die Burg, und ein Teil davon wurde an die Stadt Altena verkauft;</li>
+                    <li>In den 1770-er Jahren diente die Festung als Unterkunft für Arme, Waisen und ältere Menschen und wurde weiterhin als Gefängnis und Gericht genutzt.</li></ul>` },
+                { bold: "19. Jahrhundert – Pläne zur Rekonstruktion und langsamer Verfall", text: "Zu Beginn des 19. Jahrhunderts (um 1811) wurden unter dem Einfluss der napoleonischen Reformen Gefängnis und Gericht geschlossen. In den Jahren 1834–1835 wurden Pläne für eine Rekonstruktion im neugotischen Stil vorbereitet, doch sie wurden wegen fehlender finanzieller Mittel nicht umgesetzt. In der Mitte des 19. Jahrhunderts nutzte der Johanniterorden einen Teil der Festung als Krankenhaus (1856–1907)." },
+                {
+                    bold: "20. Jahrhundert – Wiederbelebung und neues Leben", text: `<ul><li>Eine neue Epoche in der Geschichte der Burg begann mit der Rekonstruktion ab 1906 auf Initiative des örtlichen Landrats und des Architekten Georg Frentzen. Bis 1914 wurde die Festung (mit Ausnahme einiger Bereiche) restauriert, und bis 1918 wurden die Bauarbeiten abgeschlossen.</li>
+<li>Das Jahr 1914 wurde zu einem bedeutenden Meilenstein. Innerhalb der Burg wurde die erste dauerhafte Jugendherberge der Welt eröffnet (Jugendherberge), die den internationalen Jugendbewegungen von Reisenden und Studenten den Anfang gab. Die originalen Räume der Herberge sind heute Teil der Museumsausstellung.</li>
+<li>1916 wurde hier auch das Märkische Museum eingerichtet, das später mit anderen Sammlungen zusammengelegt wurde, und die Burg begann als großes Museumszentrum zu funktionieren.</li></ul>` },
+                { bold: "Mitte des 20. Jahrhunderts – Entwicklung des Museumskomplexes", text: "Von den 1930er bis zu den 1980er Jahren wurden die Museen auf dem Gelände der Burg erweitert: eine Sammlung zur Geologie und Archäologie wurde integriert; die originalen Räume der ersten Jugendherberge wurden offiziell als Museum eröffnet; außerdem entstanden Handwerksmuseen und andere thematische Ausstellungen." },
+                { bold: "Ende des 20. Jahrhunderts – modernes Museumskonzept", text: "In den 1990er und 2000er Jahren wurden die Museen der Burg neu organisiert: die Ausstellungen wurden moderner und interaktiver, und das Museum der Grafschaft Mark vereinte viele thematische Bereiche und bietet den Besuchern eine vollständige kulturhistorische Reise von den geologischen Ursprüngen der Region bis zur industriellen Entwicklung." }
+            ]
+        },
+        tickets_and_entry: {
+            title: "Praktische Informationen",
+            items: [
+                { bold: "Adresse:", text: "Fritz-Thomée-Straße 80, 58762 Altena, Deutschland." },
+                { bold: "Öffnungszeiten:", text: "in der Regel täglich von morgens bis abends geöffnet (montags geschlossen, außer an Feiertagen; bitte vor dem Besuch überprüfen)." },
+                { bold: "Eintritt:", text: "der Besuch der Museen der Burg ist häufig kostenlos (Format „Zahle, was du möchtest“ / Spende) mit der Möglichkeit kostenpflichtiger Führungen und Guides." },
+                { bold: "Zugang:", text: "Zur Burg kann man mit dem Erlebnisaufzug gelangen, der durch den Berg vom Tal direkt in den Innenhof führt, oder zu Fuß von den Parkplätzen am Fuß des Hügels." }
+            ]
+        },
+        sub_objects: {
+            title: "Ausstellungen und Museen",
+            items: [
+                { bold: "Dauerausstellung", text: "Die zentrale Museumsausstellung umfasst die gesamte Geschichte der Region – von Geologie und Archäologie bis zum mittelalterlichen Alltag und zur Industrialisierung. Hier werden gezeigt: Ritterrüstungen und Waffen; rekonstruierte Innenräume von Rittersälen; Gegenstände aus Handwerk und Alltag; originale Innenräume der ersten Jugendherberge von 1914." },
+                { bold: "World Youth Hostel Museum", text: "Eine einzigartige Ausstellung bewahrt die Einrichtung der ersten Herbergszimmer mit originalen Betten und Gegenständen und zeigt die Lebensbedingungen der Reisenden vor mehr als hundert Jahren." },
+                { bold: "Sonderausstellungen", text: "In der Burg finden regelmäßig thematische Ausstellungen zu Geschichte, Kultur und Kunst statt – von Handwerken bis zu sozialen Themen, die die Entwicklung der Region und der Museen widerspiegeln." }
+            ]
+        },
+        interestingFacts: {
+            title: "Interessante Fakten",
+            items: [
+                { text: "In Burg Altena wurde 1914 die erste dauerhafte Jugendherberge der Welt eröffnet. Genau hier entstand die internationale Bewegung der Jugendherbergen." },
+                { text: "Heute kann man in der Burg die originalen Räume der ersten Herberge mit Holzbettgestellen und einfacher Einrichtung sehen, die in ein Museum umgewandelt wurden." },
+                { text: "Zur Burg führt ein ungewöhnlicher Erlebnisaufzug, der 2014 eröffnet wurde. Er verläuft durch einen Tunnel im Inneren des Berges und bringt Besucher direkt in den Innenhof der Festung." },
+                { text: "Burg Altena gehört zur European Route of Industrial Heritage, da die Region Sauerland historisch ein wichtiges Zentrum der Metallurgie und der Drahtproduktion war." },
+                { text: "Jedes Jahr während der Adventszeit findet auf der Burg das historische Weihnachtsfestival Winter Spektakulum mit mittelalterlichen Märkten, Handwerk, Musik und Theateraufführungen statt." }
+            ]
+        },
+        coord: { lat: 51.29954, lng: 7.67507 },
+        meta: {
+            title: "Burg Altena – historische Burg und Museen in Deutschland",
+            description: "Reiseführer zur Burg Altena: Geschichte aus dem 12. Jahrhundert, Museen und die erste Jugendherberge der Welt.",
+            ogTitle: "Burg Altena – mittelalterliche Festung in Deutschland",
+            ogDescription: "Entdecken Sie die Geschichte der Burg Altena und ihrer Museen.",
+            ogImage: ""
+        }
+    }
 
 ];
 
