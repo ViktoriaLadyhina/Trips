@@ -3,7 +3,7 @@ import { useLocation, useParams } from "react-router";
 import BreadCrumbs from '../../components/breadCrumbs/BreadCrumbs.jsx';
 import Region from '../../components/region/Region.jsx';
 import InfoBlock from '../../components/InfoBlock/InfoBlock.jsx'
-import { useMeta } from '../../hooks/useMeta';
+import { useMeta } from '../../hooks/useMeta.js';
 
 import './District.scss'
 import useCityFullData from '../../hooks/useCityFullData.js';

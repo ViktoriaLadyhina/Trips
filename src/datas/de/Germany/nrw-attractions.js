@@ -9,22 +9,29 @@ const datas = [
         countryPath: "germany", regionsPath: "nrw", districtPath: "city", cityPath: "koln",
         fotoCard: "Germany/nrw/koln/koln-city/altstadt/005.jpg",
         location: "Köln, Deutschland",
-        subObjects: ["cologne_cathedral", "rathaus_koln", "guerzenich_koln", "miqua", "wallraf_richartz_museum", "roemisch_germanisches_museum", "farina_duftmuseum", "museum_ludwig", "stadtmuseum_koln", "dufthaus_4711_koln", "gross_st_martin_koln", "st_maria_himmelfahrt_koln"],
+        subObjects: ["cologne_cathedral", "rathaus_koln", "guerzenich_koln", "miqua", "wallraf_richartz_museum", "roemisch_germanisches_museum", "farina_duftmuseum", "museum_ludwig", "stadtmuseum_koln", "dufthaus_4711_koln", "st_maria_himmelfahrt_koln", "romanische_kirchen_altstadt_koln", "old_towers_koln"],
         short_description_subObjects: {
             text: "In der Altstadt von Köln befinden sich folgende Sehenswürdigkeiten:",
             items: [
                 { bold: "Kölner Dom", text: "– majestätische gotische Kathedrale, das Herz der Altstadt, am Platz vor dem Hauptbahnhof." },
-                { bold: "Dufthaus 4711", text: "– historisches Gebäude in der Fußgängerzone um die Hohe Straße und Schildergasse." },
-                { bold: "Duftmuseum im Farina-Haus", text: "– Museum für Düfte und Parfum im historischen Viertel beim Rathaus." },
-                { bold: "Groß St. Martin", text: "– eine der bekanntesten romanischen Kirchen Kölns mit einem massiven Trikonchen-Turm, der über dem Rheinufer emporragt. Symbol der Silhouette der Altstadt." },
+                {
+                    bold: "Romanische Kirchen der Altstadt von Köln:",
+                    text: `<ul>
+                            <li><b>Groß St. Martin</b> – eine der bekanntesten romanischen Kirchen Kölns mit einem massiven Turm in Form einer Trikonche, der über dem Rheinufer aufragt. Ein Symbol der Silhouette der Altstadt.</li>
+                            <li><b>St. Maria im Kapitol</b> – die größte romanische Kirche Kölns, errichtet an der Stelle eines antiken römischen Tempels. Ein herausragendes Beispiel romanischer Architektur mit Trikonchenplan und historischer Krypta, die Spuren der antiken Vergangenheit bewahrt.</li>
+                        </ul>`
+                },
                 { bold: "St. Mariä Himmelfahrt", text: "– die wichtigste Barockkirche Kölns aus dem 17. Jahrhundert, eine ehemalige Jesuitenkirche in der Nähe des Hauptbahnhofs und des Kölner Doms." },
                 { bold: "Gürzenich", text: "– historisches Zunfthaus und Saal in der Nähe des Kölner Doms." },
                 { bold: "Kölner Rathaus", text: "– historisches Stadthaus im Zentrum der Altstadt." },
+                { bold: "Dufthaus 4711", text: "– historisches Gebäude in der Fußgängerzone um die Hohe Straße und Schildergasse." },
+                { bold: "Duftmuseum im Farina-Haus", text: "– Museum für Düfte und Parfum im historischen Viertel beim Rathaus." },
                 { bold: "Kölnisches Stadtmuseum", text: "– Museum für Stadtgeschichte im Zentrum (Zeughaus)." },
                 { bold: "Museum im archäologischen Viertel Köln – MiQua", text: "– archäologisches und jüdisches Museum am Marktplatz im Zentrum der Altstadt." },
                 { bold: "Museum Ludwig", text: "– Museum für moderne Kunst in der Nähe des Kölner Doms." },
                 { bold: "Römisch-Germanisches Museum", text: "– Museum der Antike in der Nähe des Kölner Doms und des MiQua." },
                 { bold: "Wallraf-Richartz-Museum", text: "– Museum für Malerei und Kunst, unweit von Rathaus und Dom." },
+                { bold: "Alte Türme und Befestigungen der Altstadt Kölns", text: "– Reste der mittelalterlichen Stadtmauer und Verteidigungstürme, verteilt über die Altstadt, die einen Einblick geben, wie Köln im Mittelalter aussah und das Verteidigungssystem der Stadt nachvollziehbar machen." }
             ]
         },
         short_description: "Die Altstadt von Köln ist das historische Herz der Stadt mit engen gepflasterten Gassen, traditionellen Häusern, gemütlichen Brauhäusern und Cafés am Rheinufer. Sie vereint Kultur, Architektur und alltägliches Leben: von gotischen Kathedralen bis zu Museen und Märkten, die die vielschichtige Geschichte der Stadt widerspiegeln.",
@@ -46,7 +53,6 @@ const datas = [
                 { text: "Hier befinden sich einige der ältesten Brauhäuser Kölns, in denen das traditionelle Bier Kölsch serviert wird." }
             ]
         },
-        coord: { lat: 50.9413, lng: 6.9583 },
         meta: {
             title: "Altstadt Köln – Sehenswürdigkeiten, Museen, Spaziergänge entlang des Rheins",
             description: "Entdecken Sie die Altstadt von Köln: enge Gassen, gotische Kathedralen, historische Plätze, Museen und die Rheinuferpromenade. Ein nützlicher Reiseführer für Spaziergänge und Besuchsplanung.",
@@ -190,13 +196,48 @@ const datas = [
         }
     },
     {
+        id: "romanische_kirchen_altstadt_koln",
+        name: "Romanische Kirchen der Altstadt von Köln",
+        type: ["cathedral"], rating: "popular",
+        path: "romanische_kirchen_altstadt_koln",
+        countryPath: "germany", regionsPath: "nrw", districtPath: "city", cityPath: "koln",
+        subObjects: ["gross_st_martin_koln", "st_maria_im_kapitol_koln"],
+        short_description_subObjects: {
+            text: "Auf unserer Website werden aus dieser Liste folgende Kirchen beschrieben:",
+            items: [
+                { bold: "Groß St. Martin", text: "– eine der bekanntesten romanischen Kirchen Kölns mit einem massiven Turm-Trikonchos, der über der Rheinpromenade aufragt. Ein Symbol des Silhouetts der Altstadt." },
+                { bold: "St. Maria im Kapitol", text: "– die größte romanische Kirche Kölns, erbaut auf dem Gelände eines antiken römischen Tempels. Ein herausragendes Beispiel romanischer Architektur mit Trikonchos-Plan und historischer Krypta, die Spuren der antiken Vergangenheit bewahrt." }
+            ]
+        },
+        hiddenFromList: true, showMore: true,
+        fotoCard: "Germany/nrw/koln/koln-city/altstadt/romanische_kirchen/001.jpg",
+        location: "Köln, Deutschland",
+        officialSite: [{ bold: "Offizielle Webseite", link: "https://romanische-kirchen-koeln.de/" }],
+        short_description: "Die Liste der 12 größten romanischen Kirchen der Altstadt von Köln – bedeutende Denkmäler mittelalterlicher Architektur, die die Vielfalt des romanischen Stils und die historische Entwicklung der Stadt demonstrieren.",
+        full_description: {
+            title: "Beschreibung und Geschichte",
+            items: [
+                { bold: "Die Liste der 12 romanischen Kirchen Kölns", text: "ist kein offizielles staatliches Dokument, hat sich jedoch als anerkannter Leitfaden unter Kunsthistorikern, Architekten und Reiseleitern etabliert. Sie vereint die größten romanischen Kirchen im historischen Zentrum der Stadt, die herausragende Baudenkmäler des XI.–XIII. Jahrhunderts darstellen und die Entwicklung des mittelalterlichen Köln widerspiegeln." },
+                { text: "Die Idee, genau zwölf Kirchen hervorzuheben, entstand im 20. Jahrhundert bei der Erstellung von Reiseführern und wissenschaftlichen Veröffentlichungen zum romanischen Erbe Kölns. Experten wollten Touristen und Forschern ein Ensemble von Baudenkmälern zeigen, das verschiedene Aspekte der romanischen Architektur illustriert: Trikonchos-Plan, massive Türme, Holz- und Steinschnitzereien, historische Krypten." },
+                { text: "Die Liste dient als praktisches System zur Erkundung des historischen Zentrums: Besucher können die Altstadt zu Fuß durchqueren und alle wichtigen romanischen Kirchen sehen, von denen jede einzigartig in Stil, Größe und künstlerischen Relikten ist. Dank dieser Liste erhalten Touristen die Möglichkeit, die architektonische Vielfalt und die historische Bedeutung Kölns als Stadt im Rheinland im Mittelalter zu schätzen." }
+            ]
+        },
+        meta: {
+            title: "12 romanische Kirchen der Altstadt von Köln – Geschichte und Beschreibung",
+            description: "Liste der größten romanischen Kirchen Kölns in der Altstadt. Architektur, historische Fakten und kulturelles Erbe der Stadt.",
+            ogTitle: "Romanische Kirchen der Altstadt von Köln",
+            ogDescription: "Entdecken Sie die 12 größten romanischen Kirchen Kölns, ihre Architektur, Geschichte und Relikte aus dem XI.–XIII. Jahrhundert.",
+            ogImage: "https://our-travels.info/foto/Germany/nrw/koln/koln-city/altstadt/romanische_kirchen/001.jpg"
+        }
+    },
+    {
         id: "gross_st_martin_koln",
         name: "Groß St. Martin",
         type: ["cathedral"], rating: "popular",
         path: "gross_st_martin_koln",
         countryPath: "germany", regionsPath: "nrw", districtPath: "city", cityPath: "koln",
         hiddenFromList: true, showMore: true,
-        fotoCard: "Germany/nrw/koln/koln-city/gross_st_martin/001.jpg",
+        fotoCard: "Germany/nrw/koln/koln-city/altstadt/romanische_kirchen/gross_st_martin/001.jpg",
         location: "Köln, Deutschland",
         officialSite: [
             { bold: "Offizielle Webseite", link: "https://www.romanische-kirchen-koeln.de/willkommen/willkommen" }
@@ -230,7 +271,73 @@ const datas = [
             description: "Groß St. Martin – romanische Kirche in der Altstadt von Köln am Rhein. Geschichte, Architektur, Fakten und Besuchsinformationen.",
             ogTitle: "Groß St. Martin – Symbol der romanischen Kirchen Kölns",
             ogDescription: "Erfahren Sie die Geschichte einer der markantesten Kirchen Kölns mit mächtigem Turm und mittelalterlicher Vergangenheit.",
-            ogImage: "https://our-travels.info/foto/Germany/nrw/koln/koln-city/gross_st_martin/001.jpg"
+            ogImage: "https://our-travels.info/foto/Germany/nrw/koln/koln-city/altstadt/romanische_kirchen/gross_st_martin/001.jpg"
+        }
+    },
+    {
+        id: "st_maria_im_kapitol_koln",
+        name: "Kirche St. Maria im Kapitol",
+        type: ["cathedral"], rating: "popular",
+        path: "st_maria_im_kapitol_koln",
+        countryPath: "germany", regionsPath: "nrw", districtPath: "city", cityPath: "koln",
+        hiddenFromList: true, showMore: true,
+        fotoCard: "Germany/nrw/koln/koln-city/altstadt/romanische_kirchen/stMariaImKapitol/001.jpg",
+        location: "Köln, Deutschland",
+        officialSite: [{ bold: "Offizielle Webseite", link: "https://www.romanische-kirchen-koeln.de/" }],
+        short_description: "Die Kirche St. Maria im Kapitol – die größte romanische Kirche Kölns und eine der zwölf berühmten romanischen Kirchen der Stadt. Sie wurde im 11. Jahrhundert an der Stelle eines römischen Tempels erbaut, der der kapitolinischen Triade – Jupiter, Juno und Minerva – geweiht war. Heute gilt das Bauwerk als eines der wichtigsten Zeugnisse mittelalterlicher Architektur im Rheinland.",
+        full_description: {
+            title: "Beschreibung und Geschichte",
+            items: [
+                { bold: "Kirche St. Maria im Kapitol", text: "befindet sich in der Altstadt von Köln, unweit des Rheins. Sie ist die größte der zwölf romanischen Kirchen der Stadt und nimmt einen besonderen Platz in der Geschichte der mittelalterlichen Architektur Deutschlands ein. Die Größe des Gebäudes beträgt etwa 100 Meter in der Länge und etwa 40 Meter in der Breite, was es zur geräumigsten romanischen Kirche Kölns macht." },
+                { bold: "Architektur", text: "Die Kirche ist der Heiligen Maria geweiht und wurde im 11. Jahrhundert erbaut. Ihre Architektur gehört zum romanischen Stil – massive Wände, klare Formen und strenge Monumentalität vermitteln ein Gefühl von Kraft und Beständigkeit. Besonders auffällig ist der charakteristische romanische Ostteil mit drei Apsiden, die den sogenannten Trikonchos-Plan bilden." },
+                { bold: "Krypta und Reliquien", text: "Die Kirche wurde an der Stelle eines römischen Tempels errichtet, der einst im Zentrum der römischen Stadt Colonia stand. Überreste dieses Tempels und einer früheren christlichen Kirche sind in der Krypta sichtbar. Dies macht den Ort zu einem einzigartigen archäologischen Denkmal, das Antike und Mittelalter verbindet." },
+                { text: "Im Inneren der Kirche sind wertvolle Werke mittelalterlicher Kunst erhalten, darunter geschnitzte Holztüren aus dem 11. Jahrhundert und mehrere bekannte religiöse Skulpturen. Dank dieser Elemente gilt die Kirche als eines der wichtigsten historischen und künstlerischen Denkmäler Kölns." },
+                { bold: "Geschichte", text: "dieses Ortes beginnt bereits in der römischen Zeit. Im 1.–2. Jahrhundert n. Chr. befand sich hier ein großer Tempel, der der kapitolinischen Triade – Jupiter, Juno und Minerva – geweiht war. Er gehörte zu den bedeutendsten religiösen Bauwerken der römischen Stadt Colonia." },
+                { text: "Nach der Verbreitung des Christentums verfiel der heidnische Tempel allmählich. Vermutlich im 8. Jahrhundert wurde hier die erste christliche Kirche errichtet. Der Überlieferung zufolge gründete sie Plektruda, die Ehefrau des fränkischen Herrschers Pippin von Heristal." },
+                { text: "Das heutige Gebäude der Kirche begann etwa im Jahr 1040 unter der Leitung der Äbtissin Ida – Enkelin Kaiser Ottos II. – gebaut zu werden. Der Bau wurde etwa 1065 abgeschlossen." },
+                { text: "Der Kirchenplan wurde vom Geburtskirchenbau in Bethlehem inspiriert. Die Architektur mit drei Apsiden auf der Ostseite wurde zum Vorbild für viele andere Kirchen in der Rheinregion." },
+                { text: "Während des Zweiten Weltkriegs erlitt die Kirche erhebliche Schäden. Nach dem Krieg wurde sie wiederhergestellt und ist heute erneut für Besucher und Gottesdienste geöffnet." }
+            ]
+        },
+        tickets_and_entry: {
+            title: "Praktische Informationen",
+            items: [
+                { bold: "Adresse: ", text: "Kasinostraße 6, 50676 Köln, Altstadt" },
+                { bold: "Eintritt: ", text: "Kostenlos" },
+                { bold: "Öffnungszeiten: ", text: "Täglich von 9:00 bis 18:00 Uhr geöffnet (kann an Feiertagen variieren)" },
+                { bold: "Barrierefreiheit: ", text: "Teilweise für mobilitätseingeschränkte Besucher zugänglich. Die Krypta hat Stufen" },
+                { bold: "Tipp für Besucher: ", text: "Die beste Zeit für einen Besuch ist morgens oder an Wochentagen, um Menschenmassen zu vermeiden. Achten Sie auf die geschnitzten Türen aus dem 11. Jahrhundert und die Krypta mit Überresten des römischen Tempels." },
+                { bold: "Anreise: ", text: "Zu Fuß von der Station Heumarkt oder über die Deutzer Brücke vom östlichen Rheinufer (ca. 10 Minuten Gehweg)" }
+            ]
+        },
+        sub_objects: {
+            title: "Reliquien und Kunstwerke",
+            items: [
+                { bold: "Holztüren aus dem 11. Jahrhundert", text: "Eines der Hauptschätze der Kirche. Sie sind mit geschnitzten Szenen aus dem Leben Christi verziert und gelten als herausragendes Beispiel romanischer Holzschnitzkunst." },
+                { bold: "Gabelkreuz", text: "Gotisches Kreuz aus dem frühen 14. Jahrhundert, bekannt für die dramatische Darstellung des Leidens Christi." },
+                { bold: "Mittelalterliche Skulpturen der Heiligen Maria", text: "In der Kirche werden mehrere wertvolle Skulpturen und religiöse Kunstwerke aus dem 13.–14. Jahrhundert aufbewahrt." }
+            ]
+        },
+        interestingFacts: {
+            title: "Interessante Fakten",
+            items: [
+                { text: "Es ist die größte romanische Kirche Kölns." },
+                { text: "Sie steht genau auf der Stelle des römischen Tempels, nach dem sie ihren Namen «im Kapitol» erhielt." },
+                { text: "Der Plan des Ostteils des Gebäudes wurde zum architektonischen Vorbild für andere Kirchen in der Rheinregion." },
+                { text: "Die Kirche hat das geräumigste Interieur aller romanischen Kirchen Kölns." },
+                { text: "In der Krypta sind antike Fragmente des römischen Tempels erhalten, was die Kirche für Besucher, die sich für die Geschichte der Stadt interessieren, einzigartig macht." },
+                { text: "Die Kirche gehört zu den zwölf romanischen Kirchen Kölns, die als die wichtigsten Denkmäler mittelalterlicher Architektur der Stadt gelten." }
+            ]
+        },
+        construction_period: "1040-1065 Jahre",
+        founder: "Äbtissin Ida (Ida von Köln). Ebenfalls wird traditionell Plektruda als Gründerin der früheren Kirche erwähnt.",
+        coord: { lat: 50.9346, lng: 6.9585 },
+        meta: {
+            title: "St. Maria im Kapitol in Köln – größte romanische Kirche",
+            description: "St. Maria im Kapitol – die größte romanische Kirche Kölns, erbaut im 11. Jahrhundert auf den Überresten eines römischen Tempels. Geschichte, Architektur und mittelalterliche Reliquien.",
+            ogTitle: "Kirche St. Maria im Kapitol – Altstadt Köln",
+            ogDescription: "St. Maria im Kapitol – eine der ältesten und bedeutendsten Kirchen Kölns, auf den Überresten eines römischen Tempels erbaut, bekannt für ihre geschnitzten Türen aus dem 11. Jahrhundert und die geräumige Krypta.",
+            ogImage: "https://our-travels.info/foto/Germany/nrw/koln/koln-city/altstadt/romanische_kirchen/stMariaImKapitol/001.jpg"
         }
     },
     {
@@ -1216,6 +1323,121 @@ const datas = [
         }
     },
     {
+        id: "old_towers_koln",
+        name: "Alte Türme und Befestigungen der Altstadt Kölns",
+        type: ["historical_building"], rating: "popular",
+        path: "old_towers_koln",
+        countryPath: "germany", regionsPath: "nrw", districtPath: "city", cityPath: "koln",
+        hiddenFromList: true, showMore: true,
+        fotoCard: "Germany/nrw/koln/koln-city/altstadt/old_towers/001.jpg",
+        location: "Köln, Deutschland",
+        short_description: "Die alten Türme und Befestigungen der Altstadt Kölns sind Reste der mittelalterlichen Stadtmauer und römischer Verteidigungsanlagen, die einst die Stadt schützten. Heute sind sie über die Altstadt verteilt und dienen als historische Orientierungspunkte für Bewohner und Touristen. Diese Türme vermitteln ein Bild davon, wie Köln im Mittelalter aussah, und zeigen Spuren des Verteidigungssystems. Die Sehenswürdigkeit ist bei Touristen beliebt, stellt jedoch kein weltbekanntes Symbol der Stadt dar.",
+        full_description: {
+            title: "Beschreibung und Geschichte",
+            items: [
+                { text: "Die Altstadt von Köln besteht nicht nur aus engen Gassen, gemütlichen Plätzen und historischen Häusern. Auf ihrem Gebiet finden sich alte Türme und Mauerreste, die den Geist der mittelalterlichen Stadt bewahren und an ihre reiche Geschichte erinnern. Diese Türme waren einst Teil der Stadtmauer, die die Bewohner und Handelswege Kölns schützte, und dienen heute als Architekturdenkmäler und touristische Attraktionen." },
+                { text: "Die Geschichte der Kölner Türme beginnt bereits in der Römerzeit. In der Spätantike war die Stadt Colonia Agrippinensis von einer mächtigen Mauer mit Türmen umgeben – sie hatten die Funktion von Wachtürmen und dienten als Aussichtspunkte über die Umgebung." },
+                { text: "Im Mittelalter entwickelte sich Köln zu einem der größten Handelszentren Nordeuropas. In dieser Zeit wurde die Stadtmauer durch neue Türme und Tore verstärkt, die ein komplexes Verteidigungssystem bildeten. Heute sind nur noch einzelne Objekte dieses Systems erhalten – große Tore mit Türmen sowie Mauerreste mit kleinen Wachtürmen." }
+            ]
+        },
+        sub_objects: {
+            title: "Wichtigste erhaltene Türme und Mauerfragmente",
+            items: [
+                { img: "Germany/nrw/koln/koln-city/altstadt/old_towers/002.jpg", alt: "Römerturm Römerturm", bold: "Römerturm", text: "– Überrest der römischen Stadtmauer (Colonia Agrippinensis), ein Denkmal der antiken Geschichte der Stadt – ein seltenes und sehr altes architektonisches Relikt. Es ist einer der wenigen römischen Türme, die bis heute erhalten sind. Laut römischen Quellen gab es ursprünglich etwa 19 solcher Verteidigungstürme um die Stadt.<br>Der Turm war Teil der spätantiken Befestigung und diente als Wachturm und Aussichtspunkt – heute ist dies das älteste erhaltene Stück der Kölner Befestigungsanlagen.<br><b>Wo:</b> Zeughausstraße – im Nordwesten der Altstadt, fußläufig vom Zentrum entfernt." },
+                { img: "Germany/nrw/koln/koln-city/altstadt/old_towers/001.jpg", alt: "Westtor (Hahnentorburg)", bold: "Westtor (Hahnentorburg)", text: "– eines der vier erhaltenen mittelalterlichen Stadttore mit Türmen der ehemaligen Altstadtmauer. Das Tor wird erstmals 1264 erwähnt; es schützte den westlichen Zugang zum Handelsweg nach Aachen und Jülich. Hier verschmilzt mittelalterliche Architektur förmlich mit dem modernen Platzraum und bewahrt den Geist der Kölner Befestigungsanlagen.<br><b>Wo:</b> Rudolfplatz – westliche Grenze der Altstadt." },
+                { img: "Germany/nrw/koln/koln-city/altstadt/old_towers/003.jpg", alt: "Nordtor (Eigelsteintorburg)", bold: "Nordtor (Eigelsteintorburg)", text: "– gut erhaltene mittelalterliche Festungsarchitektur mit massiven Türmen und Bogenpassage. Große Doppeltore auf der Nordseite der Altstadtmauer. Erbaut während der dritten Stadterweiterung im 13. Jahrhundert; ersetzte den früheren Nordturm und diente der Kontrolle des Zugangs von den nördlichen Handelswegen.<br><b>Wo:</b> Bezirk Eigelstein / Ebertplatz." },
+                { img: "Germany/nrw/koln/koln-city/altstadt/old_towers/004.jpg", alt: "Südtor (Severinstorburg)", bold: "Südtor (Severinstorburg)", text: "– strategisch wichtiger südlicher Eingang – über ihn verliefen die Hauptwege nach Bonn und Süddeutschland, eines der vier Haupttore der Altstadt, das den südlichen Zugang schützte. Errichtet in der ersten Hälfte des 13. Jahrhunderts als Teil einer massiven Steinmauer; später mit Zinnen und Flanken ergänzt.<br><b>Wo:</b> heutiger Chlodwigplatz." },
+                { img: "Germany/nrw/koln/koln-city/altstadt/old_towers/005.jpg", alt: "Südliches Mauerfragment (Ulrepforte)", bold: "Südliches Mauerfragment (Ulrepforte)", text: "– das schmalste und kleinste der Stadttore, diente eher als Hilfsbefestigung. Ein kleiner, aber antiker Stadteingang, Teil der mittelalterlichen Stadtbefestigung. Erbaut Anfang des 13. Jahrhunderts und erstmals 1245 urkundlich erwähnt; eines von zwölf Toren der Mauer, aber von geringer Bedeutung für die Verkehrswege.<br><b>Wo:</b> Sachsenring – südlicher Abschnitt der Altstadt." },
+                { img: "Germany/nrw/koln/koln-city/altstadt/old_towers/006.jpg", alt: "Turm im Süden am Rhein (Bayenturm)", bold: "Turm im Süden am Rhein (Bayenturm)", text: "– Befestigungsturm am südöstlichen Ende der Stadtmauer nahe dem Rhein, Symbol für die Kontrolle des Handelswegs am Rhein. Errichtet ca. 1180–1220 als Teil der Flussbefestigung; im Zweiten Weltkrieg stark beschädigt, später wiederhergestellt.<br><b>Wo:</b> südlicher Teil der Altstadt, nahe Ringstraße." }
+            ]
+        },
+        meta: {
+            title: "Alte Türme und Befestigungen der Altstadt Kölns – historische Sehenswürdigkeiten der Stadt",
+            description: "Entdecken Sie mittelalterliche Türme und Mauerfragmente in Köln. Erfahren Sie die Geschichte der alten Befestigungen der Altstadt und entdecken Sie wichtige historische Orientierungspunkte, die bis heute erhalten sind.",
+            ogTitle: "Alte Türme und Befestigungen der Altstadt Kölns – ein Spaziergang durch die Geschichte der Stadt",
+            ogDescription: "Spazieren Sie durch die Altstadt von Köln und entdecken Sie alte Türme und Befestigungen, die den Geist der mittelalterlichen Stadt bewahren und wichtige historische Denkmäler darstellen.",
+            ogImage: "https://our-travels.info/foto/Germany/nrw/koln/koln-city/altstadt/old_towers/001.jpg"
+        }
+    },
+    {
+        id: "rumerturm_koln",
+        name: "Römerturm",
+        type: ["historical_building"], rating: "popular",
+        path: "old_towers_koln",
+        countryPath: "germany", regionsPath: "nrw", districtPath: "city", cityPath: "koln",
+        hiddenFromList: true,
+        coord: { lat: 50.94093, lng: 6.94663 },
+        meta: {
+            title: "Römerturm – Überrest der römischen Stadtmauer (Colonia Agrippinensis), Denkmal der antiken Geschichte der Stadt",
+            ogImage: "https://our-travels.info/foto/Germany/nrw/koln/koln-city/altstadt/old_towers/002.jpg"
+        }
+    },
+    {
+        id: "hahnentorburg_koln",
+        name: "Westtor (Hahnentorburg)",
+        type: ["historical_building"], rating: "popular",
+        path: "old_towers_koln",
+        countryPath: "germany", regionsPath: "nrw", districtPath: "city", cityPath: "koln",
+        hiddenFromList: true,
+        coord: { lat: 50.93639, lng: 6.94021 },
+        meta: {
+            title: "Westtor (Hahnentorburg) – eines der vier erhaltenen mittelalterlichen Stadttore mit Türmen der ehemaligen Altstadtmauer",
+            ogImage: "https://our-travels.info/foto/Germany/nrw/koln/koln-city/altstadt/old_towers/001.jpg"
+        }
+    },
+    {
+        id: "eigelsteintorburg_koln",
+        name: "Nordtor (Eigelsteintorburg)",
+        type: ["historical_building"], rating: "popular",
+        path: "old_towers_koln",
+        countryPath: "germany", regionsPath: "nrw", districtPath: "city", cityPath: "koln",
+        hiddenFromList: true,
+        coord: { lat: 50.94931, lng: 6.95687 },
+        meta: {
+            title: "Nordtor (Eigelsteintorburg) – gut erhaltene mittelalterliche Festungsarchitektur mit massiven Türmen und einem Torbogen.",
+            ogImage: "https://our-travels.info/foto/Germany/nrw/koln/koln-city/altstadt/old_towers/003.jpg"
+        }
+    },
+    {
+        id: "severinstorburg_koln",
+        name: "Südtor (Severinstorburg)",
+        type: ["historical_building"], rating: "popular",
+        path: "old_towers_koln",
+        countryPath: "germany", regionsPath: "nrw", districtPath: "city", cityPath: "koln",
+        hiddenFromList: true,
+        coord: { lat: 50.92196, lng: 6.95923 },
+        meta: {
+            title: "Südtor (Severinstorburg) – strategisch wichtiger südlicher Zugang – über ihn führten die wichtigsten Wege nach Bonn und in den Süden Deutschlands",
+            ogImage: "https://our-travels.info/foto/Germany/nrw/koln/koln-city/altstadt/old_towers/004.jpg"
+        }
+    },
+    {
+        id: "ulrepforte_koln",
+        name: "Südliches Mauerfragment (Ulrepforte)",
+        type: ["historical_building"], rating: "popular",
+        path: "old_towers_koln",
+        countryPath: "germany", regionsPath: "nrw", districtPath: "city", cityPath: "koln",
+        hiddenFromList: true,
+        coord: { lat: 50.92418, lng: 6.95305 },
+        meta: {
+            title: "Südliches Mauerfragment (Ulrepforte) – das schmalste und kleinste der Stadttore, das eher als zusätzlicher Teil der Verteidigung diente.",
+            ogImage: "https://our-travels.info/foto/Germany/nrw/koln/koln-city/altstadt/old_towers/005.jpg"
+        }
+    },
+    {
+        id: "bayenturm_koln",
+        name: "Turm im Süden am Rhein (Bayenturm)",
+        type: ["historical_building"], rating: "popular",
+        path: "old_towers_koln",
+        countryPath: "germany", regionsPath: "nrw", districtPath: "city", cityPath: "koln",
+        hiddenFromList: true,
+        coord: { lat: 50.92375, lng: 6.96695 },
+        meta: {
+            title: "Turm im Süden am Rhein (Bayenturm) – ein Wehrturm am südöstlichen Ende der Stadtmauer nahe dem Rhein.",
+            ogImage: "https://our-travels.info/foto/Germany/nrw/koln/koln-city/altstadt/old_towers/006.jpg"
+        }
+    },
+    {
         id: "skulpturenpark_koln",
         name: "Skulpturenpark in Köln",
         type: ["museum", "nature", "monument_or_fountain"], rating: "local",
@@ -1713,6 +1935,55 @@ const datas = [
             ogImage: "https://our-travels.info/foto/Germany/nrw/koln/koln-city/finkens_garten/001.jpg"
         }
     },
+    {
+        id: "decksteiner_weiher_koln",
+        name: "Decksteiner Weiher",
+        type: ["nature"], rating: "local",
+        path: "decksteiner_weiher_koln",
+        countryPath: "germany", regionsPath: "nrw", districtPath: "city", cityPath: "koln",
+        fotoCard: "Germany/nrw/koln/koln-city/decksteiner_weiher/001.jpg",
+        location: "Köln, Deutschland",
+        short_description: "Der Decksteiner Weiher – der größte künstliche Parkteich Kölns, befindet sich im Westen der Stadt im Bereich des äußeren Grüngürtels. Der Weiher ist von breiten Alleen, Waldflächen und Spazierwegen umgeben. Aufgrund seiner langgestreckten Form, der schattigen Kastanienalleen und der ruhigen Atmosphäre ist er einer der beliebtesten Erholungsorte der Stadtbewohner.",
+        full_description: {
+            title: "Beschreibung und Geschichte",
+            items: [
+                { bold: "Decksteiner Weiher", text: "– ein künstlicher Parkteich im Westen von Köln, der Teil des äußeren Grüngürtels der Stadt ist. Der Weiher hat eine langgestreckte Form und ist von breiten Spazierwegen, grünen Wiesen und schattigen Bäumen umgeben. Er ist ein beliebter Ort zum Spazierengehen, Joggen und Erholen in der Natur." },
+                { text: "Besonderheit des Weihers ist der gerade Kanal, der die beiden Teile des Sees verbindet. Entlang des Kanals verläuft eine malerische Kastanienallee, die eine der bekanntesten Landschaften dieses Parks schafft. In der warmen Jahreszeit kann man hier Boote, Enten und Schwäne beobachten, und rund um den See spazieren oft Einheimische und Touristen." },
+                { text: "Heute ist der Decksteiner Weiher eine wichtige Erholungszone der Stadt. Hier kann man spazieren gehen, Fahrrad fahren, Picknicks veranstalten oder einfach die Natur genießen, nur wenige Kilometer vom Zentrum Kölns entfernt." },
+                { bold: "Geschichte", text: "Der Decksteiner Weiher wurde Ende der 1920er Jahre im Rahmen eines großen Projekts zur Gestaltung des äußeren Grüngürtels von Köln angelegt. Nach dem Abriss der alten preußischen Befestigungen rund um die Stadt wurden große Flächen frei, die zu Parks und Erholungsgebieten umgestaltet wurden." },
+                { text: "Der Bau des Weihers erfolgte in den Jahren 1927–1929. Das Projekt war Teil eines städtischen Programms zur Entwicklung grüner Flächen, das vom damaligen Oberbürgermeister Kölns, Konrad Adenauer, aktiv unterstützt wurde. Der Weiher wurde sowohl als dekoratives als auch als sportliches Objekt konzipiert – seine langgestreckte Form ermöglichte die Nutzung als Trainingsstrecke für Rudersport." },
+                { text: "Der Name des Weihers stammt von der früheren Siedlung Deckstein, die sich in diesem Gebiet befand. Heute ist dieses Viertel Teil des städtischen Grüngürtels und eines der beliebtesten Erholungsgebiete für die Kölner Bevölkerung." }
+            ]
+        },
+        tickets_and_entry: {
+            title: "Praktische Informationen",
+            items: [
+                { bold: "Lage: ", text: "Westen von Köln, Stadtteile Lindenthal und Sülz" },
+                { bold: "Länge des Rundwegs:", text: "etwa 6 km um den Weiher und den Kanal" },
+                { bold: "Tiefe: ", text: "etwa 1–1,6 m" },
+                { text: "In der Nähe des Weihers befinden sich das Restaurant Haus am See, ein Bootsverleih und eine Minigolfanlage. Nicht weit entfernt im Parkgelände liegt das historische Fort VI Deckstein – eine der erhaltenen preußischen Befestigungen der Stadt." }
+            ]
+        },
+        interestingFacts: {
+            title: "Interessante Fakten",
+            items: [
+                { text: "Der Decksteiner Weiher gilt als der größte künstliche Parkteich Kölns und als eines der zentralen Erholungsgebiete im Westen der Stadt." },
+                { text: "Der Weiher wurde speziell als Trainingsstrecke für Rudersport geplant." },
+                { text: "Im nördlichen Teil des Weihers befindet sich eine kleine Insel, die für Besucher gesperrt ist." }
+            ]
+        },
+        construction_period: "1927–1929",
+        architects: "Theodor Nussbaum (Stadtarchitekt und Leiter des Kölner Gartenamts)",
+        founder: "Das Projekt wurde im Rahmen des städtischen Programms zur Entwicklung des Grüngürtels Kölns nach den Ideen von Konrad Adenauer und dem städtebaulichen Plan von Fritz Schumacher realisiert.",
+        coord: { lat: 50.91775, lng: 6.88815 },
+        meta: {
+            title: "Decksteiner Weiher in Köln – der größte Parkteich der Stadt",
+            description: "Der Decksteiner Weiher – ein malerischer künstlicher See im Grüngürtel von Köln. Beliebter Ort zum Spazierengehen, Sport treiben und zur Erholung in der Natur in der Nähe des Stadtzentrums.",
+            ogTitle: "Decksteiner Weiher – grüner See Kölns",
+            ogDescription: "Der Decksteiner Weiher ist einer der schönsten Erholungsorte Kölns. Spazierwege, Boote auf dem Wasser, grüne Parks und eine ruhige Atmosphäre nur wenige Kilometer vom Stadtzentrum entfernt.",
+            ogImage: "https://our-travels.info/foto/Germany/nrw/koln/koln-city/decksteiner_weiher/001.jpg"
+        }
+    },
 
     // Köln округ
 
@@ -1723,12 +1994,13 @@ const datas = [
         type: ["historical_area"], rating: "popular",
         path: "historic_center_monschau",
         countryPath: "germany", regionsPath: "nrw", districtPath: "koln", cityPath: "monschau",
-        subObjects: ["rotes_haus_monschau", "senfmuehle_monschau"],
+        subObjects: ["rotes_haus_monschau", "senfmuehle_monschau", "glashuette_monschau"],
         short_description_subObjects: {
             text: "In der Altstadt von Monschau befindet sich folgende Sehenswürdigkeit:",
             items: [
                 { bold: "Rotes Haus", text: "– ein herausragendes historisches Hausmuseum im Zentrum der Altstadt von Monschau" },
-                { bold: "Historische Senfmühle", text: "– historischer Senfmühle in der Altstadt von Monschau mit aktiver Produktion und Senfverkostung" }
+                { bold: "Historische Senfmühle", text: "– historischer Senfmühle in der Altstadt von Monschau mit aktiver Produktion und Senfverkostung" },
+                { bold: "Glashütte", text: "– Werkstatt mit Live-Demonstrationen der Glasbläser, bei der man den Herstellungsprozess von Glasprodukten beobachten und Souvenirs kaufen kann" }
             ]
         },
         fotoCard: "Germany/nrw/koln/Aachen/monschau/001.jpg",
@@ -1756,7 +2028,6 @@ const datas = [
             ]
         },
         construction_period: "13. Jahrhundert (Entstehung der Siedlung um die Burg)",
-        coord: { lat: 50.55522, lng: 6.24241 },
         meta: {
             title: "Altstadt Monschau — Mittelalterliches Zentrum in der Eifel | Deutschland",
             description: "Die Altstadt von Monschau ist eines der schönsten historischen Zentren Deutschlands mit Fachwerkhäusern, dem Fluss Rur und mittelalterlicher Atmosphäre.",
@@ -1878,6 +2149,58 @@ const datas = [
             ogTitle: "Historische Senfmühle – traditionelles deutsches Senfparadies",
             ogDescription: "Erfahren Sie, wie im Herzen von Monschau legendärer deutscher Senf nach alten Rezepten hergestellt wird! Mehr als 20 Geschmacksrichtungen, Live-Herstellung und ein gemütlicher Laden direkt im historischen Zentrum.",
             ogImage: "https://our-travels.info/foto/Germany/nrw/koln/Aachen/monschau/senfmuehle/001.jpg"
+        }
+    },
+    {
+        id: "glashuette_monschau",
+        name: "Glashütte",
+        type: ["museum"], rating: "popular",
+        path: "glashuette_monschau",
+        countryPath: "germany", regionsPath: "nrw", districtPath: "koln", cityPath: "monschau",
+        hiddenFromList: true, showMore: true,
+        fotoCard: "Germany/nrw/koln/Aachen/monschau/glashuette/001.jpg",
+        short_description: "Glashütte Monschau – eine Glasmacherei und Ausstellungszentrum für traditionelles Glasmacherhandwerk in der historischen Stadt Monschau. Besucher können den lebendigen Herstellungsprozess beobachten: vom Schmelzen des Glases bis zur Formung von Flaschen, Gefäßen und dekorativen Figuren durch Glasblasen.",
+        full_description: {
+            title: "Beschreibung und Geschichte",
+            items: [
+                { bold: "Glashütte Monschau", text: "bietet ein einzigartiges Erlebnis zur Einführung in das alte Glasmacherhandwerk. Hier stellt der Meister Glasprodukte direkt vor den Besuchern her und demonstriert Kunstfertigkeit, die auf Techniken zurückgeht, die bereits im Römischen Reich angewendet wurden. Während der Demonstration können Sie sehen, wie aus geschmolzenem Sand, Pottasche und Kalk feine Glasgefäße und Figuren durch die Fähigkeiten des Meisters entstehen." },
+                { text: "Neben der Handwerksdemonstration umfasst die Glashütte auch große Ausstellungs- und Verkaufsbereiche, in denen einzigartige Glasprodukte präsentiert werden. Der Besuch ist nicht nur für Liebhaber von Geschichte und Handwerk interessant, sondern für alle, die die traditionelle Produktion in Aktion erleben möchten – der Eintritt ist das ganze Jahr über frei, und die Produkte können vor Ort erworben werden." },
+                { bold: "Geschichte. ", text: "Die Geschichte des Glasmacherhandwerks reicht bis in die Antike zurück: die Technik des Glasblasens entwickelte sich bereits im Römischen Reich, und ihre Grundlagen sind bis heute erhalten geblieben. In der Glashütte Monschau wird dieses Handwerk von Generation zu Generation weitergegeben und zeigt traditionelle Verfahren der Glasbearbeitung, die über Jahrhunderte verfeinert wurden." },
+                { text: "Der Ort hat sich zu einem beliebten Kulturzentrum in der Region Eifel entwickelt, da er das technische Handwerk vergangener Zeiten lebendig erhält. Heute arbeitet hier ein Team erfahrener Glasmacher, die nicht nur ihr Können demonstrieren, sondern auch das kulturelle Erbe für zukünftige Generationen von Besuchern bewahren." }
+            ]
+        },
+        tickets_and_entry: {
+            title: "Praktische Informationen",
+            items: [
+                { bold: "Adresse:", text: "Burgau 15, 52156 Monschau, Deutschland." },
+                { bold: "Öffnungszeiten: ", text: "in der Regel von 10:00 bis 18:00 an Werktagen und Wochenenden während des gesamten Jahres." },
+                { bold: "Glasbläser-Demonstrationen: ", text: "täglich zu festgelegten Zeiten (10:15, 11:15, 12:15, 13:45, 14:45, 15:45 und 16:45)." },
+                { bold: "Eintritt: ", text: "Die Demonstrationen sind kostenlos; kostenpflichtige Teilnahme an Workshops möglich (je nach Saison)." }
+            ]
+        },
+        sub_objects: {
+            title: "Exponate",
+            items: [
+                { bold: "In der Glashütte gezeigt:", text: "<br><br>• Live-Demonstrationen der Glasmacher" },
+                { text: "• Ausstellung verschiedener Glasprodukte in traditionellem und modernem Stil" },
+                { text: "• Verkaufsbereich mit der Möglichkeit, individuelle Produkte zu kaufen oder zu bestellen." }
+            ]
+        },
+        interestingFacts: {
+            title: "Interessante Fakten",
+            items: [
+                { text: "Die Technik des Glasblasens wird so demonstriert, wie sie vor 2000 Jahren von Meistern angewendet wurde." },
+                { text: "Die Teilnahme an einem Workshop ermöglicht nicht nur das Beobachten, sondern auch das Verstehen der komplexen Schritte bei der Herstellung eines gewöhnlichen Glasgefäßes." },
+                { text: "Die Glashütte Monschau ist Teil des Kulturerbes der Eifelregion und eine beliebte Touristenattraktion." }
+            ]
+        },
+        coord: { lat: 50.552844, lng: 6.236908 },
+        meta: {
+            title: "Glashütte Monschau – Glasmacherei in Monschau",
+            description: "Besuchen Sie die Glashütte Monschau: Live-Demonstrationen der Glasmacher, Ausstellung von Glasprodukten und traditionelles Handwerk für die ganze Familie.",
+            ogTitle: "Glashütte Monschau – lebendige Erfahrung mit Glasmachern im Herzen der Eifel",
+            ogDescription: "Erfahren Sie, wie Meister heißes Glas in Kunstwerke verwandeln. Geschichte, Handwerk und Ausstellungen in historischem Monschau.",
+            ogImage: "https://our-travels.info/foto/Germany/nrw/koln/Aachen/monschau/glashuette/001.jpg"
         }
     },
     {
@@ -2974,7 +3297,6 @@ const datas = [
                 { text: "• Zu den Denkmälern gehören die Erlöserkirche mit ihrem Turm aus dem 11. Jahrhundert, der Selve-Brunnen und die Mausoleen der Familie Selve sowie das historische Stadtmuseum mit Exponaten aus der Industrieepoche." },
             ]
         },
-        coord: { lat: 51.2198, lng: 7.6273 },
         meta: {
             title: "Altstadt von Lüdenscheid – historisches Herz der Stadt mit engen Straßen und Denkmälern",
             description: "Die Altstadt von Lüdenscheid ist der mittelalterliche Teil der Stadt mit historischen Gebäuden des 18.–19. Jahrhunderts, der Erlöserkirche, Resten der Stadtmauer und dem historischen Museum. Schlendern Sie durch die gemütlichen Gassen und spüren Sie die Atmosphäre vergangener Jahrhunderte.",
@@ -3265,6 +3587,232 @@ const datas = [
             ogImage: "https://our-travels.info/foto/Germany/nrw/arnsberg/Märkischer-Kreis/luedenscheid/history_museum_luedenscheid/001.JPG"
         }
     },
+    {
+        id: "christuskirche_luedenscheid",
+        name: "Pseudogotische Christuskirche",
+        type: ["cathedral"], rating: "popular",
+        path: "christuskirche_luedenscheid",
+        countryPath: "germany", regionsPath: "nrw", districtPath: "arnsberg", cityPath: "luedenscheid",
+        fotoCard: "Germany/nrw/arnsberg/Märkischer-Kreis/luedenscheid/christuskirche/001.jpg",
+        location: "Lüdenscheid, Deutschland",
+        short_description: "Die pseudogotische Christuskirche ist die größte protestantische Kirche der Stadt und ein wichtiger architektonischer Orientierungspunkt. Ihr hoher Turm ist aus verschiedenen Punkten der Stadt sichtbar und prägt das charakteristische Stadtbild. Der Innenraum bietet Platz für etwa 1200 Personen und ist mit Glasfenstern und pseudogotischen Elementen geschmückt. Die Kirche wird aktiv für Gottesdienste und kulturelle Veranstaltungen genutzt.",
+        full_description: {
+            title: "Beschreibung und Geschichte",
+            items: [
+                { bold: "Pseudogotische Christuskirche (Christuskirche)", text: "wurde 1900–1902 nach dem Entwurf des Architekten Gustav Adolf Fischer aus Barmen gebaut. Sie wurde nach der Erlöserkirche die zweite evangelische Kirche der Stadt und ist die größte im Kreis nach Kapazität – etwa 1200 Sitzplätze." },
+                { bold: "Architektur und Innenraum. ", text: "Architektonisch ist das Gebäude im Stil der Neugotik (Historismus mit gotischen Elementen) gestaltet und orientiert sich an den Prinzipien des sogenannten Wiesbadener Programms für protestantische Kirchen, um Sichtbarkeit und Hörbarkeit der Gemeinde während der Gottesdienste zu betonen. Der Kirchturm erreicht 61,5 m und ist ein wichtiger Bestandteil der Stadtansicht." },
+                { text: "Die Grundrissgestaltung entspricht einem griechischen Kreuz, bei dem der zentrale Raum von einer Kuppel mit einer Höhe von etwa 16,5 m überspannt wird. Der Innenraum zeichnet sich durch pseudogotische Elemente und zahlreiche Fenster aus. Im Gottesdienstbereich wird die liturgische Symbolik dargestellt, einschließlich Figuren und Glasfenstern, die die drei Funktionen Jesu Christi (Lehrer, Leidender und Auferstandener) widerspiegeln – zum Beispiel im Altarfenster und an der Außenskulptur." },
+                { text: "Während des Zweiten Weltkriegs im Jahr 1945 wurde das Gebäude durch Bombenangriffe beschädigt, aber bereits 1948 wiederhergestellt und für die Gemeindemitglieder wieder geöffnet." },
+                { text: "1986 erhielt die Christuskirche den Denkmalschutzstatus, und 2018–2019 wurde der Turm umfassend restauriert." },
+                { bold: "Orgel und musikalische Tradition. ", text: "Die Orgel, erbaut von der Firma E.F. Walcker bei der Eröffnung der Kirche, ist eines ihrer herausragenden Merkmale. Sie wurde 1957 verändert und 2008 von der Firma Gebrüder Stockmann in ihrem ursprünglichen Klang wiederhergestellt. Das Instrument verfügt über 36 Register auf drei Manualen und Pedal, was es zu einem wichtigen Objekt für musikalische Veranstaltungen macht." }
+            ]
+        },
+        tickets_and_entry: {
+            title: "Praktische Informationen",
+            items: [
+                { bold: "Adresse:", text: "Bahnhofstraße 59, 58507 Lüdenscheid" },
+                { bold: "Zugehörigkeit:", text: "Evangelische Kirche von Westfalen" },
+                { bold: "Regelmäßige Gottesdienste:", text: "<br>Sonntag um 10:00 Uhr (Christuskirche) <br>Monatliche Veranstaltungen und Konzerte – laut Plan auf der offiziellen Website der Gemeinde" },
+                { bold: "Erreichbarkeit:", text: "Stadtzentrum, bequemer Zugang zu Fuß und mit öffentlichen Verkehrsmitteln." }
+            ]
+        },
+        interestingFacts: {
+            title: "Interessante Fakten",
+            items: [
+                { text: "Der Turm mit 61,5 m Höhe ist einer der höchsten Kirchtürme der Region." },
+                { text: "Bei der Restaurierung 2018–2019 wurde besonders auf die Erhaltung des historischen Charakters der Fassade und des Turms geachtet." }
+            ]
+        },
+        construction_period: "1900-1902",
+        architects: "Gustav Adolf Fischer",
+        coord: { lat: 51.22131, lng: 7.62301 },
+        meta: {
+            title: "Pseudogotische Christuskirche – größte protestantische Kirche",
+            description: "Die größte evangelische Kirche in Lüdenscheid mit einem 61,5 m hohen Turm, gebaut 1902, Walcker-Orgel und markante neugotische Architektur.",
+            ogTitle: "Pseudogotische Christuskirche – architektonisches Wahrzeichen der Stadt",
+            ogDescription: "Historische evangelische Kirche im Herzen von Lüdenscheid: Architektur, Orgel, kulturelle Veranstaltungen.",
+            ogImage: "https://our-travels.info/foto/Germany/nrw/arnsberg/Märkischer-Kreis/luedenscheid/christuskirche/001.jpg"
+        }
+    },
+    {
+        id: "st_joseph_medardus_luedenscheid",
+        name: "Kirche St. Joseph und Medardus",
+        type: ["church"], rating: "local",
+        path: "st_joseph_medardus",
+        countryPath: "germany", regionsPath: "nrw", districtPath: "arnsberg", cityPath: "luedenscheid",
+        fotoCard: "Germany/nrw/arnsberg/Märkischer-Kreis/luedenscheid/st_joseph_medardus/001.jpg",
+        location: "Lüdenscheid, Deutschland",
+        officialSite: [{ bold: "Offizielle Website", link: "https://www.st-medardus.org" }],
+        short_description: "Die Kirche St. Joseph und Medardus ist die wichtigste katholische Pfarrkirche der Stadt Lüdenscheid. Sie wurde Ende des 19. Jahrhunderts im Stil der norddeutschen Backsteingotik erbaut und ist zu einem wichtigen architektonischen Wahrzeichen der Stadt geworden. Der hohe Turm mit über 54 Metern Höhe und die massiven Backsteinfassaden machen sie zu einem der auffälligsten historischen Gebäude Lüdenscheids.",
+        full_description: {
+            title: "Beschreibung und Geschichte",
+            items: [
+                { bold: "Die Kirche St. Joseph und Medardus", text: "ist die größte katholische Kirche in Lüdenscheid und ein bedeutendes Denkmal der neugotischen Architektur der Region. Das Gebäude wurde aus rotem Backstein im Stil der norddeutschen Backsteingotik errichtet, die für die Kirchenarchitektur des späten 19. Jahrhunderts charakteristisch ist. Das Innere der Kirche zeichnet sich durch ein geräumiges Kirchenschiff mit Kreuzrippengewölben, Chören und Glasfenstern aus, die ein weiches, farbiges Licht im Kircheninneren erzeugen." },
+                { text: "Besonders auffällig ist der mächtige Turm mit einer Höhe von 54,15 Metern, der über dem Stadtzentrum aufragt. Durch seine Silhouette ist die Kirche ein wichtiges Element der Stadtsilhouette von Lüdenscheid geworden und bildet zusammen mit den Türmen anderer Stadtkirchen die wiedererkennbare Stadtlandschaft." },
+                { text: "Heute bleibt die Kirche ein aktives religiöses Zentrum der katholischen Gemeinde. Neben Gottesdiensten finden hier Konzerte, kirchliche Feiertage und verschiedene Veranstaltungen der Pfarrei statt." },
+                { bold: "Geschichte", text: "der katholischen Gemeinde Lüdenscheids geht auf den Beginn des 19. Jahrhunderts zurück. Damals versammelten sich die Katholiken der Stadt in einer kleinen Kreuzkapelle am heutigen Sternplatz. Diese Kapelle bot jedoch nur Platz für etwa 150 Personen und entsprach mit der Zeit nicht mehr den Bedürfnissen der schnell wachsenden Gemeinde." },
+                { text: "Im Jahr 1882 wurde die Entscheidung getroffen, eine neue Pfarrkirche zu bauen. Der Architekt Arnold Güldenpfennig entwarf die Kirche im Stil der norddeutschen Backsteingotik. Der Bau wurde 1885 abgeschlossen, die offizielle Weihe fand 1891 statt." },
+                { text: "Ursprünglich hatte die Kirche nur einen kleinen Dachturm. In den Jahren 1927-1929 wurde nach den Plänen des Architekten Robert Lamm der massive Glockenturm mit einer Höhe von über 54 Metern errichtet. Im Turm wurden vier Glocken untergebracht, die jedoch während des Zweiten Weltkriegs abgenommen und für militärische Zwecke eingeschmolzen wurden. Nach dem Krieg wurden die Glocken neu gegossen und in den Turm zurückgebracht." },
+                { text: "Im Jahr 1986 wurde die Kirche in die Liste der geschützten Baudenkmäler aufgenommen. In den letzten Jahren wurde das Gebäude außerdem restauriert und renoviert." }
+            ]
+        },
+        tickets_and_entry: {
+            title: "Praktische Informationen",
+            items: [
+                { bold: "Adresse: ", text: "Jockuschstraße 12, 58511 Lüdenscheid, Deutschland" },
+                { bold: "Konfession:", text: "römisch-katholische Kirche" }
+            ]
+        },
+        relics: {
+            title: "Reliquien und künstlerische Elemente",
+            items: [
+                { text: "Barocke Kreuzigungsgruppe, aus der alten Kreuzkapelle in die neue Kirche übertragen." },
+                { text: "Historische Chorglasfenster von 1891, die die Schutzheiligen der Kirche – Joseph und Medardus – darstellen." },
+                { text: "Sechseckige Taufkapelle mit eigenem Eingang, Ende der 1920er Jahre erbaut." }
+            ]
+        },
+        interestingFacts: {
+            title: "Interessante Fakten",
+            items: [
+                { bold: "Die Kirche ist nach dem Schutzpatron der Stadt benannt", text: "Der heilige Medard gilt als Schutzpatron von Lüdenscheid. Daher erscheint sein Name im Titel der Hauptkirche der Stadt." },
+                { bold: "Der Turm wurde fast 40 Jahre nach dem Bau errichtet", text: "Ursprünglich hatte die Kirche nur einen kleinen Dachturm. Der massive Turm mit einer Höhe von 54 Metern, der heute die Silhouette des Gebäudes prägt, wurde erst 1927-1929 gebaut." },
+                { bold: "Backsteingotik – ein seltener Stil für die Region", text: "Die Kirche wurde im Stil der norddeutschen Backsteingotik erbaut, der eher für Städte an der Ostseeküste, wie Lübeck oder Rostock, typisch ist. In Südwestfalen ist dieser Stil selten anzutreffen." }
+            ]
+        },
+        construction_period: "1882-1885 (Weihe – 1891)",
+        architects: "Arnold Güldenpfennig, Turm – Robert Lamm",
+        founder: "Katholische Gemeinde Lüdenscheid",
+        coord: { lat: 51.213844, lng: 7.630059 },
+        meta: {
+            title: "Kirche St. Joseph und Medardus in Lüdenscheid – Geschichte und Architektur",
+            description: "Die Kirche St. Joseph und Medardus ist die wichtigste katholische Pfarrkirche von Lüdenscheid, erbaut 1882-1885 im Stil der norddeutschen Backsteingotik. Geschichte, Architektur und interessante Fakten.",
+            ogTitle: "Kirche St. Joseph und Medardus – historische Kirche in Lüdenscheid",
+            ogDescription: "Neugotische Kirche des 19. Jahrhunderts mit Turm über 54 Meter Höhe – eine der wichtigsten historischen Sehenswürdigkeiten Lüdenscheids.",
+            ogImage: "https://our-travels.info/foto/Germany/nrw/arnsberg/Märkischer-Kreis/luedenscheid/st_joseph_medardus/001.jpg"
+        }
+    },
+    {
+        id: "versetalsperre_luedenscheid",
+        name: "Versetalsperre",
+        type: ["nature"], rating: "local",
+        path: "versetalsperre_luedenscheid",
+        countryPath: "germany", regionsPath: "nrw", districtPath: "arnsberg", cityPath: "luedenscheid",
+        fotoCard: "Germany/nrw/arnsberg/Märkischer-Kreis/luedenscheid/versetalsperre/001.jpg",
+        location: "Lüdenscheid, Deutschland",
+        short_description: "Versetalsperre ist ein großer künstlicher See, der durch einen Staudamm zur Regulierung des Wasserstandes und zur Trinkwasserversorgung geschaffen wurde. Rund um das Gewässer verlaufen Fuß- und Radwege, an den Ufern gibt es Erholungsbereiche. Schwimmen und Wassersport sind verboten, um die Wasserqualität zu erhalten, wodurch der Ort beliebt für Spaziergänge und Naturbeobachtungen ist.",
+        full_description: {
+            title: "Beschreibung und Geschichte",
+            items: [
+                { bold: "Versetalsperre", text: " – ein großer Stausee am Fluss Verse im bewaldeten Südosten von Nordrhein-Westfalen, Deutschland. Die Wasseroberfläche beträgt etwa 170 ha, das Volumen ca. 32,8 Mio. m³. Der Damm, der das Stauwerk bildet, ist 62 m hoch und 393 m lang und prägt die malerische Landschaft mit Wäldern und den Hügeln des Sauerlands." },
+                { text: "Rund um das Gewässer verlaufen Fuß- und Radwege unterschiedlicher Länge, einschließlich eines Rundwegs von etwa 11 km. Die Ufer sind mit Erholungsbereichen und Picknickplätzen ausgestattet, und zum Schutz des Trinkwassers sind Schwimmen und Wassersport verboten." },
+                { text: "Die natürlichen Umgebung des Sees ist reich an Flora und Fauna, und Informationsschilder entlang der Wege informieren über Landschaft, Ökologie und Geschichte der Anlage." },
+                { bold: "Geschichte" },
+                { text: "Der Bau des Stausees begann 1929 auf Initiative des Ruhrverbands, um Trinkwasser bereitzustellen und den Pegel des Flusses Ruhr zu regulieren. Die Anfangsarbeiten wurden in den 1930er Jahren aufgrund wirtschaftlicher Schwierigkeiten unterbrochen und 1938 wieder aufgenommen." },
+                { text: "Während des Zweiten Weltkriegs existierte in Hunswinkel ein Arbeitslager, in dem Gefangene am Bau des Damms beteiligt waren. Viele von ihnen starben, und später wurde am Ufer des Stausees ein Denkmal zu ihren Ehren errichtet." },
+                { text: "Die Arbeiten wurden bis 1951 abgeschlossen, die endgültige Gestaltung und Befüllung des Stausees erfolgte bis 1952. Seitdem dient die Versetalsperre als Trinkwasserspeicher und Regulierung der Flüsse Ruhr und Lenne und ist gleichzeitig ein beliebter Ort für Spaziergänge und Erholung." }
+            ]
+        },
+        tickets_and_entry: {
+            title: "Praktische Informationen",
+            items: [
+                { bold: "Adresse:", text: "Klinkenberg 40a, 58515 Lüdenscheid, Deutschland" },
+                { bold: "Einschränkungen:", text: "Wassersport und Schwimmen sind wegen des Trinkwasserschutzes verboten." },
+                { bold: "Eintritt:", text: "Frei" }
+            ]
+        },
+        interestingFacts: {
+            title: "Interessante Fakten",
+            items: [
+                { text: "Die Versetalsperre ist der größte Staudamm im Märkischen Kreis nach Speichervolumen." },
+                { text: "Sie wird nicht nur für die Trinkwasserversorgung genutzt, sondern auch zur Regulierung der Flüsse Ruhr und Lenne." },
+                { text: "Auf den Wegen rund um das Gewässer gibt es den Natur- und Bildungspfad Knax mit interaktiven Stationen." },
+                { text: "Ein Denkmal für die Arbeitslageropfer in Hunswinkel erinnert an die harte Geschichte des Baus." }
+            ]
+        },
+        construction_period: "1929-1952",
+        founder: "auf Initiative des Ruhrverbands",
+        coord: { lat: 51.18321, lng: 7.68336 },
+        meta: {
+            title: "Versetalsperre – Staudamm und Stausee im Sauerland, Deutschland",
+            description: "Detaillierte Informationen zur Versetalsperre: Geschichte, Wanderwege, Denkmal Hunswinkel und Spaziergänge rund um den größten Staudamm im Märkischen Kreis.",
+            ogTitle: "Versetalsperre – Naturziel und Stausee in Nordrhein-Westfalen",
+            ogDescription: "Erfahren Sie alles über die Versetalsperre: von der Baugeschichte und dem Denkmal bis zu Spaziergängen rund um den See.",
+            ogImage: "https://our-travels.info/foto/Germany/nrw/arnsberg/Märkischer-Kreis/luedenscheid/versetalsperre/001.jpg"
+        }
+    },
+
+    // Альтена
+    {
+        id: "burg_altena",
+        name: "Burg Altena",
+        type: ["palace_or_castle", "museum"], rating: "top",
+        path: "burg_altena",
+        countryPath: "germany", regionsPath: "nrw", districtPath: "arnsberg", cityPath: "altena",
+        fotoCard: "Germany/nrw/arnsberg/Märkischer-Kreis/altena/burg/001.jpg",
+        location: "Altena, Deutschland",
+        officialSite: [{ bold: "Offizielle Website", link: "https://www.burg-altena.de/" }],
+        short_description: "Burg Altena ist eine der schönsten mittelalterlichen Festungen Deutschlands und steht auf einem Hügel über der Stadt Altena in der Region Sauerland im Bundesland Nordrhein-Westfalen. Ihre Geschichte reicht bis in das frühe 12. Jahrhundert zurück, und heute vereint sie eine Burg, Museen und eine einzigartige historische Atmosphäre.",
+        full_description: {
+            title: "Beschreibung und Geschichte",
+            items: [
+                { bold: "Burg Altena", text: "ragt über den Fluss Lenne und die Altstadt empor und bildet eine beeindruckende Landschaft sowie eine der wichtigsten touristischen Sehenswürdigkeiten der gesamten Region. Sie gilt als eine der am besten erhaltenen und eindrucksvollsten mittelalterlichen Befestigungen Deutschlands. Innerhalb der Burgmauern befinden sich Museen, Ausstellungen, Aussichtspunkte und sogar eine funktionierende Jugendherberge – einzigartig auf der Welt." },
+                { text: "Besucher können durch die Museumsräume gehen, mehr über das Leben von Rittern, Handwerkern und gewöhnlichen Bewohnern der Region erfahren sowie historische Innenräume, Waffen und Alltagsgegenstände sehen. Neben dem klassischen Besuch gibt es einen multimedialen Guide in mehreren Sprachen – das macht den Rundgang besonders informativ und modern." },
+                { bold: "Geschichte der Burg Altena" },
+                { bold: "12. Jahrhundert – Gründung und Befestigung", text: "Die Burg wurde zu Beginn des 12. Jahrhunderts (um 1108) errichtet, als die Brüder Adolf und Eberhard von Berg vom Kaiser Heinrich V. Ländereien im Sauerland erhielten und auf dem Berg Wulfsegge eine Befestigung errichteten. Der ursprüngliche Name der Festung war Wulfeshagen, später wurde sie als Altena bekannt. Sie war ein strategischer Außenposten zur Kontrolle des Gebietes und zum Schutz von Handels- und Handwerkswegen." },
+                { bold: "13.-14. Jahrhundert – Zentrum der Grafschaft und Sitz des Drosten", text: "Im 12. Jahrhundert entstand auf der Grundlage der Burg die Grafschaft Altena – ein Zentrum regionaler Macht. Später nannten sich die Grafen Grafen von der Mark und verlegten ihre Hauptresidenz zur Burg Mark bei Hamm, doch Burg Altena blieb ein wichtiges Verwaltungszentrum. Seit 1392 wurde sie als Residenz des lokalen Amtmanns (Drosten) genutzt." },
+                { bold: "1455 – Brand und Wiederaufbau", text: "In der Mitte des 15. Jahrhunderts (um 1455) wurde die Burg durch einen Brand schwer beschädigt. Sie wurde teilweise wieder aufgebaut, verlor jedoch einen großen Teil ihrer früheren Bedeutung und Stärke." },
+                { bold: "17. Jahrhundert – Hospital für Veteranen", text: "Im 17. Jahrhundert (etwa um 1670) wurde ein Teil der Burg als Unterkunft für invalide Soldaten genutzt, die verwundet worden oder nicht mehr dienstfähig waren." },
+                { bold: "18. Jahrhundert – Bedeutungsverlust und zivile Funktionen", text: "Bis zum 18. Jahrhundert hatte die Burg ihre militärische Bedeutung bereits verloren:" },
+                {
+                    text: `<ul><li>1733 – das Gebäude befand sich in starkem Verfall, doch die Finanzierung für eine Reparatur durch den preußischen König Friedrich Wilhelm I. wurde abgelehnt;</li>
+                    <li>1766 wurde in der Burg ein Kriminalgericht und ein Gefängnis für die Grafschaft Mark eingerichtet;</li>
+                    <li>1771 verließ die preußische Armee die Burg, und ein Teil davon wurde an die Stadt Altena verkauft;</li>
+                    <li>In den 1770-er Jahren diente die Festung als Unterkunft für Arme, Waisen und ältere Menschen und wurde weiterhin als Gefängnis und Gericht genutzt.</li></ul>` },
+                { bold: "19. Jahrhundert – Pläne zur Rekonstruktion und langsamer Verfall", text: "Zu Beginn des 19. Jahrhunderts (um 1811) wurden unter dem Einfluss der napoleonischen Reformen Gefängnis und Gericht geschlossen. In den Jahren 1834–1835 wurden Pläne für eine Rekonstruktion im neugotischen Stil vorbereitet, doch sie wurden wegen fehlender finanzieller Mittel nicht umgesetzt. In der Mitte des 19. Jahrhunderts nutzte der Johanniterorden einen Teil der Festung als Krankenhaus (1856–1907)." },
+                {
+                    bold: "20. Jahrhundert – Wiederbelebung und neues Leben", text: `<ul><li>Eine neue Epoche in der Geschichte der Burg begann mit der Rekonstruktion ab 1906 auf Initiative des örtlichen Landrats und des Architekten Georg Frentzen. Bis 1914 wurde die Festung (mit Ausnahme einiger Bereiche) restauriert, und bis 1918 wurden die Bauarbeiten abgeschlossen.</li>
+<li>Das Jahr 1914 wurde zu einem bedeutenden Meilenstein. Innerhalb der Burg wurde die erste dauerhafte Jugendherberge der Welt eröffnet (Jugendherberge), die den internationalen Jugendbewegungen von Reisenden und Studenten den Anfang gab. Die originalen Räume der Herberge sind heute Teil der Museumsausstellung.</li>
+<li>1916 wurde hier auch das Märkische Museum eingerichtet, das später mit anderen Sammlungen zusammengelegt wurde, und die Burg begann als großes Museumszentrum zu funktionieren.</li></ul>` },
+                { bold: "Mitte des 20. Jahrhunderts – Entwicklung des Museumskomplexes", text: "Von den 1930er bis zu den 1980er Jahren wurden die Museen auf dem Gelände der Burg erweitert: eine Sammlung zur Geologie und Archäologie wurde integriert; die originalen Räume der ersten Jugendherberge wurden offiziell als Museum eröffnet; außerdem entstanden Handwerksmuseen und andere thematische Ausstellungen." },
+                { bold: "Ende des 20. Jahrhunderts – modernes Museumskonzept", text: "In den 1990er und 2000er Jahren wurden die Museen der Burg neu organisiert: die Ausstellungen wurden moderner und interaktiver, und das Museum der Grafschaft Mark vereinte viele thematische Bereiche und bietet den Besuchern eine vollständige kulturhistorische Reise von den geologischen Ursprüngen der Region bis zur industriellen Entwicklung." }
+            ]
+        },
+        tickets_and_entry: {
+            title: "Praktische Informationen",
+            items: [
+                { bold: "Adresse:", text: "Fritz-Thomée-Straße 80, 58762 Altena, Deutschland." },
+                { bold: "Öffnungszeiten:", text: "in der Regel täglich von morgens bis abends geöffnet (montags geschlossen, außer an Feiertagen; bitte vor dem Besuch überprüfen)." },
+                { bold: "Eintritt:", text: "der Besuch der Museen der Burg ist häufig kostenlos (Format „Zahle, was du möchtest“ / Spende) mit der Möglichkeit kostenpflichtiger Führungen und Guides." },
+                { bold: "Zugang:", text: "Zur Burg kann man mit dem Erlebnisaufzug gelangen, der durch den Berg vom Tal direkt in den Innenhof führt, oder zu Fuß von den Parkplätzen am Fuß des Hügels." }
+            ]
+        },
+        sub_objects: {
+            title: "Ausstellungen und Museen",
+            items: [
+                { bold: "Dauerausstellung", text: "Die zentrale Museumsausstellung umfasst die gesamte Geschichte der Region – von Geologie und Archäologie bis zum mittelalterlichen Alltag und zur Industrialisierung. Hier werden gezeigt: Ritterrüstungen und Waffen; rekonstruierte Innenräume von Rittersälen; Gegenstände aus Handwerk und Alltag; originale Innenräume der ersten Jugendherberge von 1914." },
+                { bold: "World Youth Hostel Museum", text: "Eine einzigartige Ausstellung bewahrt die Einrichtung der ersten Herbergszimmer mit originalen Betten und Gegenständen und zeigt die Lebensbedingungen der Reisenden vor mehr als hundert Jahren." },
+                { bold: "Sonderausstellungen", text: "In der Burg finden regelmäßig thematische Ausstellungen zu Geschichte, Kultur und Kunst statt – von Handwerken bis zu sozialen Themen, die die Entwicklung der Region und der Museen widerspiegeln." }
+            ]
+        },
+        interestingFacts: {
+            title: "Interessante Fakten",
+            items: [
+                { text: "In Burg Altena wurde 1914 die erste dauerhafte Jugendherberge der Welt eröffnet. Genau hier entstand die internationale Bewegung der Jugendherbergen." },
+                { text: "Heute kann man in der Burg die originalen Räume der ersten Herberge mit Holzbettgestellen und einfacher Einrichtung sehen, die in ein Museum umgewandelt wurden." },
+                { text: "Zur Burg führt ein ungewöhnlicher Erlebnisaufzug, der 2014 eröffnet wurde. Er verläuft durch einen Tunnel im Inneren des Berges und bringt Besucher direkt in den Innenhof der Festung." },
+                { text: "Burg Altena gehört zur European Route of Industrial Heritage, da die Region Sauerland historisch ein wichtiges Zentrum der Metallurgie und der Drahtproduktion war." },
+                { text: "Jedes Jahr während der Adventszeit findet auf der Burg das historische Weihnachtsfestival Winter Spektakulum mit mittelalterlichen Märkten, Handwerk, Musik und Theateraufführungen statt." }
+            ]
+        },
+        coord: { lat: 51.29954, lng: 7.67507 },
+        meta: {
+            title: "Burg Altena – historische Burg und Museen in Deutschland",
+            description: "Reiseführer zur Burg Altena: Geschichte aus dem 12. Jahrhundert, Museen und die erste Jugendherberge der Welt.",
+            ogTitle: "Burg Altena – mittelalterliche Festung in Deutschland",
+            ogDescription: "Entdecken Sie die Geschichte der Burg Altena und ihrer Museen.",
+            ogImage: ""
+        }
+    }
 
 ];
 

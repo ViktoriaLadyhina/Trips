@@ -84,6 +84,7 @@ const datas = [
             ]
         },
         coord: { lat: 50.9333, lng: 6.95 },
+        gerb: "Germany/nrw/koln/koln-city/gerb.png",
         meta: {
             title: "Köln – größte Stadt Nordrhein-Westfalens",
             description: "Köln: Geschichte, Geographie, Sehenswürdigkeiten, berühmte Persönlichkeiten und interessante Fakten der größten Stadt Nordrhein-Westfalens.",
@@ -149,6 +150,7 @@ const datas = [
             ]
         },
         coord: { lat: 50.5545, lng: 6.2408 },
+        gerb: "Germany/nrw/koln/Aachen/monschau/gerb.png",
         meta: {
             title: "Monschau – historische Stadt mit Fachwerkhäusern und Natur der Eifel",
             description: "Monschau: Geschichte, Geografie, bekannte Bewohner und interessante Fakten über die malerische Stadt in der Eifel, Bundesland Nordrhein-Westfalen.",
@@ -212,6 +214,7 @@ const datas = [
             ]
         },
         coord: { lat: 50.8293, lng: 6.9050 },
+        gerb: "Germany/nrw/koln/Rhein-Erft-Kreis/bruhl/gerb.png",
         meta: {
             title: "Brühl – Stadt in Nordrhein-Westfalen",
             description: "Brühl: Geschichte, Sehenswürdigkeiten, berühmte Persönlichkeiten und interessante Fakten der Stadt.",
@@ -295,6 +298,7 @@ const datas = [
             ]
         },
         coord: { lat: 50.9167, lng: 6.8167 },
+        gerb: "Germany/nrw/koln/Rhein-Erft-Kreis/frechen/gerb.png",
         meta: {
             title: "Frechen – die Stadt der Keramik vor den westlichen Toren Kölns",
             description: "Frechen: Geschichte, Geografie, bekannte Persönlichkeiten und interessante Fakten über die Keramikstadt in Nordrhein-Westfalen.",
@@ -376,6 +380,7 @@ const datas = [
             ]
         },
         coord: { lat: 50.6838, lng: 7.1868 },
+        gerb: "Germany/nrw/koln/Rhein-Sieg-Kreis/konigswinter/gerb.png",
         meta: {
             title: "Königswinter – Stadt am Fuße des Drachenfels am Rhein",
             description: "Königswinter: Geschichte, Geographie, berühmte Persönlichkeiten und interessante Fakten über die malerische Stadt im Rhein-Sieg-Kreis.",
@@ -396,35 +401,21 @@ const datas = [
             general: [
                 { text: 'Lüdenscheid liegt im Nordwesten des Sauerlandes im Bundesland Nordrhein-Westfalen. Administrativ gehört die Stadt zur Region Arnsberg und untersteht dem Märkischen Kreis.' },
             ],
-            population: [
-                { bold: 'Einwohnerzahl:' },
-                { text: ' Die Stadt zählt 71.212 Einwohner (Stand: 31. Dezember 2024).' }
-            ],
+            population: [{ bold: 'Einwohnerzahl:', text: ' Die Stadt zählt 71.212 Einwohner (Stand: 31. Dezember 2024).' }],
             area: [
                 { bold: 'Fläche:' },
                 { text: ' Die Fläche der Kommune beträgt rund 86,7 km². Ein großer Teil davon ist von Park- und Waldflächen sowie Grünzonen bedeckt; danach folgen landwirtschaftliche Flächen, bebaute Gebiete, Straßen, Gewässer und sonstige Flächen.' },
                 { text: ' Die Stadt ist in 16 statistische Bezirke unterteilt.' }
             ],
-            postalCode: [
-                { bold: 'Postleitzahlen:' },
-                { text: ' 58507–58515' }
-            ],
-            phone: [
-                { bold: 'Telefonvorwahl:' },
-                { text: ' +49 2351' }
-            ],
-            officialSite: [
-                { bold: 'Offizielle Website der Stadt Lüdenscheid', link: 'https://www.luedenscheid.de/' }
-            ],
+            postalCode: [{ bold: 'Postleitzahlen:', text: ' 58507–58515' }],
+            phone: [{ bold: 'Telefonvorwahl:', text: ' +49 2351' }],
+            officialSite: [{ bold: 'Offizielle Website der Stadt Lüdenscheid', link: 'https://www.luedenscheid.de/' }],
             education: [
                 { bold: 'Bildungssystem' },
                 { text: ' in der Stadt ist vielfältig: Innerhalb der Kommune gibt es zahlreiche Grundschulen, mehrere Förder- und Sonderschulen, Realschulen, Berufsschulen sowie drei Gymnasien. <b>Zeppelin-Gymnasium</b> ist eines der ältesten Bildungseinrichtungen der Region: Seine Ursprünge reichen bis ins späte Mittelalter (ca. 1450) zurück, während das heutige Hauptgebäude aus dem späten 19. Jahrhundert (ca. 1890) stammt.' },
                 { text: ' Neben den Gymnasien gibt es in der Stadt Berufsfachschulen für Techniker, Pflegeschulen, ein Abendgymnasium, Musikschulen sowie Zweigstellen von Hochschulen (z. B. Fachhochschule Südwestfalen). Außerdem befindet sich in Lüdenscheid das Deutsche Institut für angewandte Lichttechnik.' }
             ],
-            culture: [
-                { bold: 'Kulturelles Leben' },
-                { text: ' – In der Stadt finden zahlreiche Festivals, Ausstellungen, Licht-Routen und andere Veranstaltungen statt: Laternenwanderungen, Lichtinstallationen und vieles mehr.' }
-            ],
+            culture: [{ bold: 'Kulturelles Leben', text: ' – In der Stadt finden zahlreiche Festivals, Ausstellungen, Licht-Routen und andere Veranstaltungen statt: Laternenwanderungen, Lichtinstallationen und vieles mehr.' }],
         },
         geography: {
             title: 'Relief und Höhenlage',
@@ -476,6 +467,7 @@ const datas = [
             ]
         },
         coord: { lat: 51.2198, lng: 7.6273 },
+        gerb: "Germany/nrw/arnsberg/Märkischer-Kreis/luedenscheid/gerb.png",
         meta: {
             title: "Lüdenscheid – Stadt des Lichts und der Technologie im Herzen des Sauerlandes",
             description: "Lüdenscheid: Geschichte, Geografie, bekannte Persönlichkeiten und interessante Fakten über die „Stadt des Lichts“ in Nordrhein-Westfalen.",
@@ -484,6 +476,68 @@ const datas = [
             ogImage: "https://our-travels.info/foto/Germany/nrw/arnsberg/Märkischer-Kreis/luedenscheid/rathausplatz_lüdenscheid/001.JPG"
         }
     },
+    {
+        id: 7,
+        name: 'Altena',
+        path: "altena",
+        countryPath: "germany", regionsPath: "nrw", districtPath: "arnsberg", subRegionPath: "merkischer",
+        desc: {
+            general: [
+                { text: 'Altena liegt im nördlichen Teil des Sauerlands im Bundesland Nordrhein-Westfalen. Administrativ gehört die Stadt zur Region Arnsberg und untersteht dem Märkischen Kreis.' },
+            ],
+            population: [{ bold: 'Einwohnerzahl', text: ' der Stadt beträgt etwa 18.500 Menschen (Stand 31. Dezember 2024).' }],
+            area: [
+                { bold: 'Fläche:' },
+                { text: ' die Gemeinde erstreckt sich über etwa 81,6 km². Ein Großteil der Fläche besteht aus Wäldern, Grünflächen und hügeliger Landschaft; gefolgt von landwirtschaftlichen Flächen, Wohn- und Industriegebieten, Straßen und Gewässern.' },
+                { text: ' Die Stadt ist in 7 Stadtteile unterteilt.' }
+            ],
+            postalCode: [{ bold: 'Postleitzahlen:', text: ' 58762' }],
+            phone: [{ bold: 'Telefonvorwahl:', text: ' +49 02352' }],
+            officialSite: [{ bold: 'Offizielle Website von Altena', link: 'https://www.altena-notbetrieb.de/' }],
+            education: [{ bold: 'Bildungssystem', text: ' in der Stadt umfasst mehrere Grundschulen, weiterführende Schulen (Haupt- und Realschulen), ein Gymnasium (Städtisches Gymnasium Altena) und berufliche Bildungseinrichtungen. In Altena gibt es außerdem Musik- und Kunstschulen.' }],
+            culture: [{ bold: 'Kulturelle Aktivitäten', text: ' – die Stadt ist bekannt für die Burg Altena, Museen, Festivals, kulturelle Veranstaltungen und Spazierwege entlang der Lenne.' }],
+        },
+        geography: {
+            title: 'Relief und Höhen',
+            items: [
+                { text: 'Altena liegt im Tal der Lenne, umgeben von Hügeln des Sauerlands. Das Relief ist uneben, Straßen und Pfade verlaufen oft auf und ab. Die durchschnittliche Höhe der Stadt beträgt etwa 190-350 m über dem Meeresspiegel.' },
+                { bold: 'Geologie und Natur', text: ' Die Böden der Region sind devonischen und karbonatischen Ursprungs; in der Umgebung gibt es viele Waldgebiete, malerische Täler und Naturschutzgebiete.' },
+            ]
+        },
+        notablePeople: {
+            title: 'Berühmte Persönlichkeiten aus Altena',
+            items: [
+                { bold: 'Walter Fleishmann (1895-1974)', text: ' – deutscher Unternehmer und Ingenieur, beteiligt an der Entwicklung der Industrie im Sauerland.' },
+                { bold: 'Hans Damm (1910-1982)', text: ' – bekannter deutscher Politiker und Mäzen der Region.' },
+            ]
+        },
+        interestingFacts: {
+            title: 'Interessante Fakten',
+            items: [
+                { bold: 'Altena – „Drahthauptstadt Europas“', text: ' die Stadt gilt historisch als eines der Zentren der Drahtproduktion: bereits im Mittelalter wurde hier Draht hergestellt, und im 19. Jahrhundert war die Region eines der wichtigsten Zentren seiner Herstellung in Deutschland und darüber hinaus. Beweise dafür finden sich im spezialisierten Drahtmuseum (Deutsches Drahtmuseum), wo gezeigt wird, wie Draht von der Antike bis zur modernen Technik verwendet wurde.' },
+                { bold: 'Seilproduktion', text: ' – im 19. und 20. Jahrhundert war Altena als Zentrum der Seilproduktion bekannt; das Seilmuseum (Deutsches Drahtmuseum) bewahrt diese Geschichte.' },
+            ]
+        },
+        briefHistory: {
+            title: 'Geschichte',
+            items: [
+                { text: 'Die Stadt Altena entstand ursprünglich als Siedlung im Tal der Lenne unter dem Schutz der Burg aus dem 12. Jahrhundert, um die sich im Mittelalter allmählich die eigentliche Stadt entwickelte. Sie hatte eine wichtige strategische Lage an den Handelswegen zwischen dem Sauerland und dem Ruhrgebiet und erhielt bereits 1367 begrenzte Stadtrechte (Freiheitsrechte), was ihre administrative und wirtschaftliche Bedeutung in der Region stärkte.' },
+                { text: 'Im Spätmittelalter und in der frühen Neuzeit entwickelte sich Altena im Rahmen der Grafschaft Mark und war vom 12. bis 14. Jahrhundert mit lokalen Handels- und Handwerksnetzwerken verbunden. Neben Handwerk bildete sich hier eine wirtschaftliche Spezialisierung: aufgrund der Lage im waldreichen Tal und der Nähe zu Eisenerzvorkommen wurde die Drahtindustrie ein wichtiger Bestandteil der städtischen Wirtschaft. Diese Spezialisierung hielt bis ins 19. Jahrhundert an.' },
+                { text: 'Im 19. Jahrhundert wurde die industrielle Entwicklung zur dominierenden Kraft im Leben Altenas: neben der traditionellen Drahtindustrie entstanden neue Produktionsstätten, die mit Metallbearbeitung und Mechanisierung verbunden waren. Der Stadt half der industrielle Aufschwung, der für das gesamte Nordrhein-Westfalen in der Zeit der Industrialisierung typisch war. In dieser Zeit festigte die Stadt ihr wirtschaftliches Profil als Zentrum für metallverarbeitende und technische Produktion.' },
+                { text: 'Das 20. Jahrhundert brachte Altena sowohl Herausforderungen als auch Veränderungen. In der Zeit zwischen den Weltkriegen erlebte die Stadt, wie der Rest Deutschlands, wirtschaftliche und soziale Krisen im Zusammenhang mit Inflation, Arbeitslosigkeit und Wiederaufbau nach dem Ersten Weltkrieg. Während des Zweiten Weltkriegs war die Stadt selbst kein großes industrielles Zentrum der Schwerindustrie und wurde nicht wie die großen Industriegebiete des Ruhrgebiets stark bombardiert; dennoch spürte die Region die wirtschaftlichen und demografischen Folgen des Krieges. Nach 1945 erfuhren Industrie und Wirtschaft Veränderungen im Zusammenhang mit dem Wiederaufbau und der Umstellung auf zivile Produktion, wobei ein Teil der Unternehmen auf zivile Güter umgestellt wurde.' },
+                { text: 'In der zweiten Hälfte des 20. Jahrhunderts und im 21. Jahrhundert wurde Altena zu einem Beispiel für strukturelle Veränderungen in kleinen Industriestädten Deutschlands: seit Ende der 1960er Jahre nahm die Bevölkerung ab, Unternehmen schlossen oder reduzierten die Produktion, was zu einem wirtschaftlichen Rückgang und Abwanderung der Einwohner führte. Gleichzeitig wurde die Stadt in den 2010er und 2020er Jahren durch Integrationsinitiativen für Migranten bekannt – 2015 nahm die Kommune freiwillig mehr Flüchtlinge auf, als die Quote vorsah, was bundesweites Medieninteresse und öffentliche Anerkennung hervorrief.' },
+            ]
+        },
+        coord: { lat: 51.311, lng: 7.689 },
+        gerb: "Germany/nrw/arnsberg/Märkischer-Kreis/altena/gerb.jpg",
+        meta: {
+            title: "Altena – historische Stadt der Burg und Seile im Sauerland",
+            description: "Altena: Geschichte, Geographie, berühmte Bewohner und interessante Fakten über die Stadt mit Burg und industriellem Erbe.",
+            ogTitle: "Altena – Informationen zur Stadt",
+            ogDescription: "Detaillierte Informationen über Altena: Kultur, Geschichte, berühmte Persönlichkeiten und interessante Fakten über die Burg und die industrielle Vergangenheit der Stadt.",
+            ogImage: "https://upload.wikimedia.org/wikipedia/commons/thumb/3/38/Burg_Altena_2012.jpg/800px-Burg_Altena_2012.jpg"
+        }
+    }
 ]
 
 export default datas

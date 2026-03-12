@@ -88,7 +88,7 @@ export default function UkraineMap({ regions, countryPath }) {
                 y={center.y}
                 textAnchor="middle"
                 dominantBaseline="middle"
-                fontSize="10"
+                fontSize="15"
                 fill="#000"
                 dx={center.dx || 0}
                 pointerEvents="none"
@@ -128,7 +128,7 @@ export default function UkraineMap({ regions, countryPath }) {
             border: "1px solid #333",
             borderRadius: "4px",
             pointerEvents: "none",
-            fontSize: "12px",
+            fontSize: "1412px",
             color: "#000",
             zIndex: 9999,
           }}

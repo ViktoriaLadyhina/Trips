@@ -13,7 +13,7 @@ export const Fotos = {
       { path: "Germany/nrw/001.jpg", title: { ru: "Замок", ua: "Замок", de: "Burg" } }
     ],
 
-    // köln
+    // округ Кёльн
     koln: {
       gallery: [
         { path: "Germany/nrw/koln/koln-city/001.jpg", title: { ru: "Кельн 1", ua: "Кельн 1", de: "Köln 1" } },
@@ -23,8 +23,8 @@ export const Fotos = {
         { path: "Germany/nrw/koln/koln-city/rathaus-koeln/Rathaus-Köln.jpg", title: { ru: "Кёльнская ратуша (фото взято с википедии)", ua: "Кельнська ратуша (фото взято з Вікіпедії)", de: "Kölner Rathaus (Foto von Wikipedia entnommen)" } }
       ],
       gross_st_martin_koln: [
-        { path: "Germany/nrw/koln/koln-city/gross_st_martin/001.jpg", title: { ru: "Большой Святой Мартин (фото взято с википедии)", ua: "Великий Святий Мартін (фото взято з Вікіпедії)", de: "Groß St. Martin (Foto von Wikipedia entnommen)" } },
-        { path: "Germany/nrw/koln/koln-city/gross_st_martin/002.jpg", title: { ru: "Большой Святой Мартин, 2025", ua: "Великий Святий Мартін, 2025", de: "Groß St. Martin, 2025" } }
+        { path: "Germany/nrw/koln/koln-city/altstadt/romanische_kirchen/gross_st_martin/001.jpg", title: { ru: "Большой Святой Мартин (фото взято с википедии)", ua: "Великий Святий Мартін (фото взято з Вікіпедії)", de: "Groß St. Martin (Foto von Wikipedia entnommen)" } },
+        { path: "Germany/nrw/koln/koln-city/altstadt/romanische_kirchen/gross_st_martin/002.jpg", title: { ru: "Большой Святой Мартин, 2025", ua: "Великий Святий Мартін, 2025", de: "Groß St. Martin, 2025" } }
       ],
       'cologne-cathedral': [
         { path: "Germany/nrw/koln/koln-city/koln-cathedral/001.jpg", title: { ru: "Кёльнский собор, 2025", ua: "Кельнський собор, 2025", de: "Kölner Dom, 2025" } },
@@ -160,18 +160,55 @@ export const Fotos = {
         { path: "Germany/nrw/koln/koln-city/altstadt/007.jpg", title: { ru: "Старый город Кёльна, 2022", ua: "Старе місто Кельна, 2022", de: "Altstadt Köln, 2022" } },
         { path: "Germany/nrw/koln/koln-city/altstadt/008.jpg", title: { ru: "Старый город Кёльна, 2022", ua: "Старе місто Кельна, 2022", de: "Altstadt Köln, 2022" } },
         { path: "Germany/nrw/koln/koln-city/koln-cathedral/001.jpg", title: { ru: "Кёльнский собор, 2025", ua: "Кельнський собор, 2025", de: "Kölner Dom, 2025" } },
+        { path: "Germany/nrw/koln/koln-city/altstadt/romanische_kirchen/gross_st_martin/002.jpg", title: { ru: "Большой Святой Мартин, 2025", ua: "Великий Святий Мартін, 2025", de: "Groß St. Martin, 2025" } },
+        { path: "Germany/nrw/koln/koln-city/altstadt/romanische_kirchen/stMariaImKapitol/001.jpg", title: { ru: "Церковь Святой Марии в Капитолии, 2026", ua: "Церква Святої Марії у Капітолії, 2026", de: "Kirche St. Maria im Kapitol, 2026" } },
+        { path: "Germany/nrw/koln/koln-city/st_maria_himmelfahrt/001.jpg", title: { ru: "Сент-Мария Химмельфарт, 2026", ua: "Церква Успіння Пресвятої Діви Марії, 2026", de: "St. Mariä Himmelfahrt, 2026" } },
         { path: "Germany/nrw/koln/koln-city/guerzenich_koln/001.jpg", title: { ru: "Гюрцених, 2026", ua: "Гюрценіх, 2026", de: "Gürzenich, 2026" } },
         { path: "Germany/nrw/koln/koln-city/roemisch-germanisches-museum/001.jpg", title: { ru: "Римско-германский музей, 2025", ua: "Римсько-германський музей, 2025", de: "Römisch-Germanisches Museum, 2025" } },
         { path: "Germany/nrw/koln/koln-city/farina-duftmuseum/001.jpg", title: { ru: "Музей духов в доме Фарина, 2025", ua: "Музей парфумів у домі Фаріна, 2025", de: "Duftmuseum im Farina-Haus, 2025" } },
         { path: "Germany/nrw/koln/koln-city/museum-ludwig/001.jpg", title: { ru: "Музей Людвига, 2025", ua: "Музей Людвіга, 2025", de: "Museum Ludwig, 2025" } },
         { path: "Germany/nrw/koln/koln-city/wallraf_richartz_museum/001.jpg", title: { ru: "Музей Вальрафа-Рихарца, 2025", ua: "Музей Вальрафа-Ріхарцa, 2025", de: "Wallraf-Richartz-Museum, 2025" } },
-        { path: "Germany/nrw/koln/koln-city/gross_st_martin/002.jpg", title: { ru: "Большой Святой Мартин, 2025", ua: "Великий Святий Мартін, 2025", de: "Groß St. Martin, 2025" } },
       ],
       st_maria_himmelfahrt_koln: [
-        { path: "Germany/nrw/koln/koln-city/st_maria_himmelfahrt/001.jpg", title: { ru: "Сент-Мария Химмельфарт (фото взято с интернета)", ua: "Церква Успіння Пресвятої Діви Марії (фото взято з Інтернету)", de: "St. Mariä Himmelfahrt (Foto aus dem Internet)" } },
-        { path: "Germany/nrw/koln/koln-city/st_maria_himmelfahrt/002.jpg", title: { ru: "Сент-Мария Химмельфарт (фото взято с интернета)", ua: "Церква Успіння Пресвятої Діви Марії (фото взято з Інтернету)", de: "St. Mariä Himmelfahrt (Foto aus dem Internet)" } },
+        { path: "Germany/nrw/koln/koln-city/st_maria_himmelfahrt/001.jpg", title: { ru: "Сент-Мария Химмельфарт, 2026", ua: "Церква Успіння Пресвятої Діви Марії, 2026", de: "St. Mariä Himmelfahrt, 2026" } },
+        { path: "Germany/nrw/koln/koln-city/st_maria_himmelfahrt/002.jpg", title: { ru: "Сент-Мария Химмельфарт, 2026", ua: "Церква Успіння Пресвятої Діви Марії, 2026", de: "St. Mariä Himmelfahrt, 2026" } },
         { path: "Germany/nrw/koln/koln-city/st_maria_himmelfahrt/003.jpg", title: { ru: "Сент-Мария Химмельфарт (фото взято с интернета)", ua: "Церква Успіння Пресвятої Діви Марії (фото взято з Інтернету)", de: "St. Mariä Himmelfahrt (Foto aus dem Internet)" } },
-      ]
+      ],
+      st_maria_im_kapitol_koln: [
+        { path: "Germany/nrw/koln/koln-city/altstadt/romanische_kirchen/stMariaImKapitol/001.jpg", title: { ru: "Церковь Святой Марии в Капитолии, 2026", ua: "Церква Святої Марії у Капітолії, 2026", de: "Kirche St. Maria im Kapitol, 2026" } },
+        { path: "Germany/nrw/koln/koln-city/altstadt/romanische_kirchen/stMariaImKapitol/002.jpg", title: { ru: "Церковь Святой Марии в Капитолии, 2026", ua: "Церква Святої Марії у Капітолії, 2026", de: "Kirche St. Maria im Kapitol, 2026" } },
+        { path: "Germany/nrw/koln/koln-city/altstadt/romanische_kirchen/stMariaImKapitol/003.jpg", title: { ru: "Церковь Святой Марии в Капитолии, 2026", ua: "Церква Святої Марії у Капітолії, 2026", de: "Kirche St. Maria im Kapitol, 2026" } },
+        { path: "Germany/nrw/koln/koln-city/altstadt/romanische_kirchen/stMariaImKapitol/004.jpg", title: { ru: "Церковь Святой Марии в Капитолии - Западная сторона с одной стороной пристроенного клуатра (крестового прохода), 2026", ua: "Церква Святої Марії у Капітолії - Західна сторона з однією стороною прибудованого клуатру (хресного проходу), 2026", de: "Kirche St. Maria im Kapitol - Westseite mit einer Seite des vorgebauten Kreuzgangs, 2026" } },
+        { path: "Germany/nrw/koln/koln-city/altstadt/romanische_kirchen/stMariaImKapitol/005.jpg", title: { ru: "Церковь Святой Марии в Капитолии - Неф, вид на восток до хора перед крестовым переходом (в пересечении нефов), 2026", ua: "Церква Святої Марії у Капітолії - Неф, вид на восток до хора перед крестовым переходом (в пересечении нефов), 2026", de: "Kirche St. Maria im Kapitol - Langhaus, Blick nach Osten bis zum Lettner vor der Vierung, 2026" } },
+        { path: "Germany/nrw/koln/koln-city/altstadt/romanische_kirchen/stMariaImKapitol/006.jpg", title: { ru: "Церковь Святой Марии в Капитолии - Положение Христа в гробнице (XVI век), 2026", ua: "Церква Святої Марії у Капітолії - Покладання Христа в гробницю (XVI століття), 2026", de: "Kirche St. Maria im Kapitol - Grablegung Christi (16. Jh.), 2026" } },
+        { path: "Germany/nrw/koln/koln-city/altstadt/romanische_kirchen/stMariaImKapitol/007.jpg", title: { ru: "Церковь Святой Марии в Капитолии - Модель храма капитолийской Триады, 2026", ua: "Церква Святої Марії у Капітолії - Модель храму капітолійської Тріади, 2026", de: "Kirche St. Maria im Kapitol - Modell des Tempels der kapitolinischen Trias, 2026" } },
+        { path: "Germany/nrw/koln/koln-city/altstadt/romanische_kirchen/stMariaImKapitol/018.jpg", title: { ru: "Церковь Святой Марии в Капитолии - Деревянные двери XI века (1049-1065), 2026", ua: "Церква Святої Марії у Капітолії - Дерев’яні двері XI ст. (1049-1065), 2026", de: "Kirche St. Maria im Kapitol - Holztüren aus dem 11. Jahrhundert (1049-1065), 2026" } },
+        { path: "Germany/nrw/koln/koln-city/altstadt/romanische_kirchen/stMariaImKapitol/008.jpg", title: { ru: "Церковь Святой Марии в Капитолии, 2026", ua: "Церква Святої Марії у Капітолії, 2026", de: "Kirche St. Maria im Kapitol, 2026" } },
+        { path: "Germany/nrw/koln/koln-city/altstadt/romanische_kirchen/stMariaImKapitol/009.jpg", title: { ru: "Церковь Святой Марии в Капитолии, 2026", ua: "Церква Святої Марії у Капітолії, 2026", de: "Kirche St. Maria im Kapitol, 2026" } },
+        { path: "Germany/nrw/koln/koln-city/altstadt/romanische_kirchen/stMariaImKapitol/010.jpg", title: { ru: "Церковь Святой Марии в Капитолии, 2026", ua: "Церква Святої Марії у Капітолії, 2026", de: "Kirche St. Maria im Kapitol, 2026" } },
+        { path: "Germany/nrw/koln/koln-city/altstadt/romanische_kirchen/stMariaImKapitol/011.jpg", title: { ru: "Церковь Святой Марии в Капитолии, 2026", ua: "Церква Святої Марії у Капітолії, 2026", de: "Kirche St. Maria im Kapitol, 2026" } },
+        { path: "Germany/nrw/koln/koln-city/altstadt/romanische_kirchen/stMariaImKapitol/012.jpg", title: { ru: "Церковь Святой Марии в Капитолии - Мадонна с жертвователем, перед ней Пьета, 2026", ua: "Церква Святої Марії у Капітолії - Мадонна з жертводавцем, перед нею П’єта, 2026", de: "Kirche St. Maria im Kapitol - Madonna mit Stifter, davor Pietà, 2026" } },
+        { path: "Germany/nrw/koln/koln-city/altstadt/romanische_kirchen/stMariaImKapitol/013.jpg", title: { ru: "Церковь Святой Марии в Капитолии - Капелла Спасителя, 2026", ua: "Церква Святої Марії у Капітолії - Каплиця Спасителя, 2026", de: "Kirche St. Maria im Kapitol - Salvatorkapelle, 2026" } },
+        { path: "Germany/nrw/koln/koln-city/altstadt/romanische_kirchen/stMariaImKapitol/014.jpg", title: { ru: "Церковь Святой Марии в Капитолии, 2026", ua: "Церква Святої Марії у Капітолії, 2026", de: "Kirche St. Maria im Kapitol, 2026" } },
+        { path: "Germany/nrw/koln/koln-city/altstadt/romanische_kirchen/stMariaImKapitol/015.jpg", title: { ru: "Церковь Святой Марии в Капитолии - Крипта, 2026", ua: "Церква Святої Марії у Капітолії - Крипта, 2026", de: "Kirche St. Maria im Kapitol - Krypta, 2026" } },
+        { path: "Germany/nrw/koln/koln-city/altstadt/romanische_kirchen/stMariaImKapitol/017.jpg", title: { ru: "Церковь Святой Марии в Капитолии - Крипта, 2026", ua: "Церква Святої Марії у Капітолії - Крипта, 2026", de: "Kirche St. Maria im Kapitol - Krypta, 2026" } },
+      ],
+      decksteiner_weiher_koln: [
+        { path: "Germany/nrw/koln/koln-city/decksteiner_weiher/001.jpg", title: { ru: "Декштайнер Вайер (фото взято с интернета)", ua: "Декштайнер Вайер (фото взято з Інтернету)", de: "Decksteiner Weiher (Foto aus dem Internet)" } },
+      ],
+      romanische_kirchen_altstadt_koln: [
+        { path: "Germany/nrw/koln/koln-city/altstadt/romanische_kirchen/001.jpg", title: { ru: "Романские церкви Старого города Кёльна (фото взято с интернета)", ua: "Романські церкви Старого міста Кельна (фото взято з Інтернету)", de: "Romanische Kirchen der Altstadt von Köln (Foto aus dem Internet)" } },
+        { path: "Germany/nrw/koln/koln-city/altstadt/romanische_kirchen/gross_st_martin/002.jpg", title: { ru: "Большой Святой Мартин, 2025", ua: "Великий Святий Мартін, 2025", de: "Groß St. Martin, 2025" } },
+        { path: "Germany/nrw/koln/koln-city/stMariaImKapitol/001.jpg", title: { ru: "Церковь Святой Марии в Капитолии (фото взято с интернета)", ua: "Церква Святої Марії у Капітолії (фото взято з Інтернету)", de: "Kirche St. Maria im Kapitol (Foto aus dem Internet)" } },
+      ],
+      old_towers_koln: [
+        { path: "Germany/nrw/koln/koln-city/altstadt/old_towers/001.jpg", title: { ru: "Западные ворота (Hahnentorburg), 2025", ua: "Західні ворота (Hahnentorburg), 2025", de: "Hahnentorburg, 2025" } },
+        { path: "Germany/nrw/koln/koln-city/altstadt/old_towers/002.jpg", title: { ru: "Римская башня (Römerturm) (фото взято с интернета)", ua: "Римська башта (Römerturm) (фото взято з Інтернету)", de: "Römerturm (Foto aus dem Internet)" } },
+        { path: "Germany/nrw/koln/koln-city/altstadt/old_towers/003.jpg", title: { ru: "Северные ворота (Eigelsteintorburg) (фото взято с интернета)", ua: "Північні ворота (Eigelsteintorburg) (фото взято з Інтернету)", de: "Eigelsteintorburg (Foto aus dem Internet)" } },
+        { path: "Germany/nrw/koln/koln-city/altstadt/old_towers/004.jpg", title: { ru: "Южные ворота (Severinstorburg) (фото взято с интернета)", ua: "Південні ворота (Severinstorburg) (фото взято з Інтернету)", de: "Severinstorburg (Foto aus dem Internet)" } },
+        { path: "Germany/nrw/koln/koln-city/altstadt/old_towers/005.jpg", title: { ru: "Южный фрагмент стены (Ulrepforte) (фото взято с интернета)", ua: "Південний фрагмент стіни (Ulrepforte) (фото взято з Інтернету)", de: "Ulrepforte (Foto aus dem Internet)" } },
+        { path: "Germany/nrw/koln/koln-city/altstadt/old_towers/006.jpg", title: { ru: "Башня на юге у Рейна (Bayenturm) (фото взято с интернета)", ua: "Башта на півдні біля Рейну (Bayenturm) (фото взято з Інтернету)", de: "Bayenturm (Foto aus dem Internet)" } },
+      ],
     },
     bruhl: {
       gallery: [
@@ -272,9 +309,10 @@ export const Fotos = {
         { path: "Germany/nrw/koln/Rhein-Erft-Kreis/frechen/johann_schmitz_platz_frechen/005.jpg", title: { ru: "Фонтан перед ратушей, 2026", ua: "Фонтан перед ратушею, 2026", de: "Brunnen vor dem Rathaus, 2026" } },
       ],
       st_audomar_frechen: [
-        { path: "Germany/nrw/koln/Rhein-Erft-Kreis/frechen/st_audomar/001.jpg", title: { ru: "Церковь Святого Одомара (фото взято с интернета)", ua: "Церква Святого Одомара (фото взято з Інтернету)", de: "Kirche St. Audomar (Foto aus dem Internet)" } },
-        { path: "Germany/nrw/koln/Rhein-Erft-Kreis/frechen/st_audomar/002.jpg", title: { ru: "Церковь Святого Одомара (фото взято с интернета)", ua: "Церква Святого Одомара (фото взято з Інтернету)", de: "Kirche St. Audomar (Foto aus dem Internet)" } },
-        { path: "Germany/nrw/koln/Rhein-Erft-Kreis/frechen/st_audomar/003.jpg", title: { ru: "Церковь Святого Одомара (фото взято с интернета)", ua: "Церква Святого Одомара (фото взято з Інтернету)", de: "Kirche St. Audomar (Foto aus dem Internet)" } },
+        { path: "Germany/nrw/koln/Rhein-Erft-Kreis/frechen/st_audomar/001.jpg", title: { ru: "Церковь Святого Одомара, 2026", ua: "Церква Святого Одомара, 2026", de: "Kirche St. Audomar, 2026" } },
+        { path: "Germany/nrw/koln/Rhein-Erft-Kreis/frechen/st_audomar/002.jpg", title: { ru: "Церковь Святого Одомара, 2026", ua: "Церква Святого Одомара, 2026", de: "Kirche St. Audomar, 2026" } },
+        { path: "Germany/nrw/koln/Rhein-Erft-Kreis/frechen/st_audomar/003.jpg", title: { ru: "Церковь Святого Одомара, 2026", ua: "Церква Святого Одомара, 2026", de: "Kirche St. Audomar, 2026" } },
+        { path: "Germany/nrw/koln/Rhein-Erft-Kreis/frechen/st_audomar/004.jpg", title: { ru: "Церковь Святого Одомара, 2026", ua: "Церква Святого Одомара, 2026", de: "Kirche St. Audomar, 2026" } },
       ],
       evangelischeKirche_frechen: [
         { path: "Germany/nrw/koln/Rhein-Erft-Kreis/frechen/evangelischeKirche/001.jpg", title: { ru: "Евангелическая церковь (фото взято с интернета)", ua: "Євангелічна церква (фото взято з Інтернету)", de: "Evangelische Kirche (Foto aus dem Internet)" } },
@@ -379,11 +417,15 @@ export const Fotos = {
       senfmuehle_monschau: [
         { path: "Germany/nrw/koln/Aachen/monschau/senfmuehle/001.jpg", title: { ru: "Историческая горчичная мельница (фото взято с интернета)", ua: "Історичний гірчичний млин (фото взято з Інтернету)", de: "Historische Senfmühle (Foto aus dem Internet)" } },
         { path: "Germany/nrw/koln/Aachen/monschau/senfmuehle/002.jpg", title: { ru: "Историческая горчичная мельница, 2025", ua: "Історичний гірчичний млин, 2025", de: "Historische Senfmühle, 2025" } },
-      ]
+      ],
+      glashuette_monschau: [
+        { path: "Germany/nrw/koln/Aachen/monschau/glashuette/001.jpg", title: { ru: "Стеклодувная мастерская (фото взято с интернета)", ua: "Майстерня скла (фото взято з Інтернету)", de: "Glashütte (Foto aus dem Internet)" } },
+        { path: "Germany/nrw/koln/Aachen/monschau/glashuette/002.jpg", title: { ru: "Стеклодувная мастерская (фото взято с интернета)", ua: "Майстерня скла (фото взято з Інтернету)", de: "Glashütte (Foto aus dem Internet)" } },
+      ],
     },
 
 
-    // arnsberg
+    // округ Арнсберг
     luedenscheid: {
       gallery: [
         { path: "Germany/nrw/arnsberg/Märkischer-Kreis/luedenscheid/001.JPG", title: { ru: "Люденшайд, 2006", ua: "Люденшайд, 2006", de: "Lüdenscheid, 2006" } },
@@ -417,6 +459,31 @@ export const Fotos = {
       ],
       history_museum_luedenscheid: [
         { path: "Germany/nrw/arnsberg/Märkischer-Kreis/luedenscheid/history_museum_luedenscheid/001.JPG", title: { ru: "Исторический музей Люденшайда (фото взято с интернета)", ua: "Історичний музей Люденшайда (фото взято з Інтернету)", de: "Geschichtsmuseum Lüdenscheid (Foto aus dem Internet)" } },
+      ],
+      christuskirche_luedenscheid: [
+        { path: "Germany/nrw/arnsberg/Märkischer-Kreis/luedenscheid/christuskirche/001.jpg", title: { ru: "Псевдоготическая церковь Христа (фото взято с интернета)", ua: "Псевдоготична церква Христа (фото взято з Інтернету)", de: "Pseudogotische Christuskirche (Foto aus dem Internet)" } },
+      ],
+      versetalsperre_luedenscheid: [
+        { path: "Germany/nrw/arnsberg/Märkischer-Kreis/luedenscheid/versetalsperre/001.jpg", title: { ru: "Водохранилище Верзе, 2025", ua: "Водосховище Верзе, 2025", de: "Versetalsperre, 2025" } },
+        { path: "Germany/nrw/arnsberg/Märkischer-Kreis/luedenscheid/versetalsperre/002.jpg", title: { ru: "Водохранилище Верзе, 2025", ua: "Водосховище Верзе, 2025", de: "Versetalsperre, 2025" } },
+        { path: "Germany/nrw/arnsberg/Märkischer-Kreis/luedenscheid/versetalsperre/003.jpg", title: { ru: "Водохранилище Верзе, 2025", ua: "Водосховище Верзе, 2025", de: "Versetalsperre, 2025" } },
+        { path: "Germany/nrw/arnsberg/Märkischer-Kreis/luedenscheid/versetalsperre/004.jpg", title: { ru: "Водохранилище Верзе, 2025", ua: "Водосховище Верзе, 2025", de: "Versetalsperre, 2025" } },
+        { path: "Germany/nrw/arnsberg/Märkischer-Kreis/luedenscheid/versetalsperre/005.jpg", title: { ru: "Водохранилище Верзе, 2025", ua: "Водосховище Верзе, 2025", de: "Versetalsperre, 2025" } },
+        { path: "Germany/nrw/arnsberg/Märkischer-Kreis/luedenscheid/versetalsperre/006.jpg", title: { ru: "Водохранилище Верзе, 2025", ua: "Водосховище Верзе, 2025", de: "Versetalsperre, 2025" } },
+        { path: "Germany/nrw/arnsberg/Märkischer-Kreis/luedenscheid/versetalsperre/007.jpg", title: { ru: "Водохранилище Верзе, 2025", ua: "Водосховище Верзе, 2025", de: "Versetalsperre, 2025" } },
+        { path: "Germany/nrw/arnsberg/Märkischer-Kreis/luedenscheid/versetalsperre/008.jpg", title: { ru: "Водохранилище Верзе, 2006", ua: "Водосховище Верзе, 2006", de: "Versetalsperre, 2006" } },
+      ],
+      st_joseph_medardus: [
+        { path: "Germany/nrw/arnsberg/Märkischer-Kreis/luedenscheid/st_joseph_medardus/001.jpg", title: { ru: "Церковь Святого Йозефа и Медарда (фото взято с интернета)", ua: "Церква Святого Йосипа та Медарда (фото взято з Інтернету)", de: "Kirche St. Joseph und Medardus (Foto aus dem Internet)" } },
+        { path: "Germany/nrw/arnsberg/Märkischer-Kreis/luedenscheid/st_joseph_medardus/002.jpg", title: { ru: "Церковь Святого Йозефа и Медарда (фото взято с интернета)", ua: "Церква Святого Йосипа та Медарда (фото взято з Інтернету)", de: "Kirche St. Joseph und Medardus (Foto aus dem Internet)" } },
+      ],
+    },
+    altena: {
+      gallery: [
+        { path: "Germany/nrw/arnsberg/Märkischer-Kreis/altena/001.jpg", title: { ru: "Альтена, 2025", ua: "Альтена, 2025", de: "Altena, 2025" } },
+      ],
+      burg_altena: [
+        { path: "Germany/nrw/arnsberg/Märkischer-Kreis/altena/burg/001.jpg", title: { ru: "Замок Альтена, 2025", ua: "Замок Альтена, 2025", de: "Burg Altena, 2025" } },
       ]
     }
 
@@ -470,7 +537,17 @@ export const Fotos = {
         { path: "Germany/rheinland-pfalz/trier-city/cathedral/009.jpg", title: { ru: "Кафедральный собор, 2024", ua: "Кафедральний собор, 2024", de: "Trierer Dom, 2024" } },
         { path: "Germany/rheinland-pfalz/trier-city/cathedral/010.jpg", title: { ru: "Кафедральный собор, 2024", ua: "Кафедральний собор, 2024", de: "Trierer Dom, 2024" } },
         { path: "Germany/rheinland-pfalz/trier-city/cathedral/011.jpg", title: { ru: "Кафедральный собор - Алтарь Меттерниху, 2024", ua: "Кафедральний собор - Вівтар Меттерніха, 2024", de: "Trierer Dom - Metternich-Altar, 2024" } },
-      ]
+      ],
+      basilikaStPaulinus_trier: [
+        { path: "Germany/rheinland-pfalz/trier-city/basilikaStPaulinus/001.jpg", title: { ru: "Базилика Святого Паулина (фото взято с интернета)", ua: "Базиліка Святого Пауліна (фото взято з Інтернету)", de: "Basilika St. Paulinus (Foto aus dem Internet)" } },
+      ],
+      liebfrauenkirche_trier: [
+        { path: "Germany/rheinland-pfalz/trier-city/liebfrauenkirche/001.jpg", title: { ru: "Церковь Богоматери (фото взято с интернета)", ua: "Церква Богородиці (фото взято з Інтернету)", de: "Liebfrauenkirche (Foto aus dem Internet)" } },
+        { path: "Germany/rheinland-pfalz/trier-city/liebfrauenkirche/002.jpg", title: { ru: "Церковь Богоматери (фото взято с интернета)", ua: "Церква Богородиці (фото взято з Інтернету)", de: "Liebfrauenkirche (Foto aus dem Internet)" } },
+        { path: "Germany/rheinland-pfalz/trier-city/liebfrauenkirche/003.jpg", title: { ru: "Церковь Богоматери (фото взято с интернета)", ua: "Церква Богородиці (фото взято з Інтернету)", de: "Liebfrauenkirche (Foto aus dem Internet)" } },
+        { path: "Germany/rheinland-pfalz/trier-city/liebfrauenkirche/004.jpg", title: { ru: "Церковь Богоматери (фото взято с интернета)", ua: "Церква Богородиці (фото взято з Інтернету)", de: "Liebfrauenkirche (Foto aus dem Internet)" } },
+        { path: "Germany/rheinland-pfalz/trier-city/liebfrauenkirche/005.jpg", title: { ru: "Церковь Богоматери - Саркофаговый алтарь Теодора и Теодериха фон Хорста (фото взято с интернета)", ua: "Церква Богородиці - Саркофаговий вівтар Теодора і Теодеріха фон Хорста (фото взято з Інтернету)", de: "Liebfrauenkirche - Grabaltar von Theodor und Theoderich von Horst (Foto aus dem Internet)" } },
+      ],
     }
   }
 }

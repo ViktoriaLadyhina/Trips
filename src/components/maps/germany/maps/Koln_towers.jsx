@@ -3,7 +3,9 @@ import L from 'leaflet';
 import 'leaflet/dist/leaflet.css';
 import './CityMap.scss';
 import { Navigate, useNavigate } from 'react-router';
-import searchIndex from '../../../search/index'
+import nrw_attrDe from '../../../../datas/de/germany/nrw-attractions';
+import nrw_attrRu from '../../../../datas/ru/germany/nrw-attractions';
+import nrw_attrUa from '../../../../datas/ua/germany/nrw-attractions';
 
 delete L.Icon.Default.prototype._getIconUrl;
 L.Icon.Default.mergeOptions({
@@ -13,18 +15,29 @@ L.Icon.Default.mergeOptions({
 });
 
 const moreBtnText = { ru: "Подробнее", de: "Mehr erfahren", ua: "Детальніше" };
+const towerIds = [
+  "rumerturm_koln",
+  "hahnentorburg_koln",
+  "eigelsteintorburg_koln",
+  "severinstorburg_koln",
+  "ulrepforte_koln",
+  "bayenturm_koln"
+];
 
-const CityMap = ({ city, lang }) => {
+const KolnTowers = ({ city, lang }) => {
   const navigate = useNavigate();
   if (!city) return null;
 
   // Центр карты: либо координаты города, либо первая достопримечательность
   const mapCenter = [city.coord.lat, city.coord.lng];
 
-  const attractions = [
-  ...Object.values(searchIndex[lang].germany).flatMap(region => region.attractions || []),
-  ...Object.values(searchIndex[lang].ukraine).flatMap(region => region.attractions || [])
-];
+// выбираем нужный массив по языку
+const nrwAttrByLang = lang === 'ru' ? nrw_attrRu
+                  : lang === 'ua' ? nrw_attrUa
+                  : nrw_attrDe;
+
+// фильтруем только башни
+const attractions = nrwAttrByLang.filter(attr => towerIds.includes(attr.id));
 
   // для мобильных
   const isTouchDevice = L.Browser.mobile;
@@ -93,4 +106,4 @@ const CityMap = ({ city, lang }) => {
   );
 };
 
-export default CityMap;
+export default KolnTowers;

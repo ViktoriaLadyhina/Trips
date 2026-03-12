@@ -75,7 +75,7 @@ const datas = [
         ],
         com: [{ text: "Der Kreis ist unterteilt in " }, { bold: "15 Gemeinden:" }],
         communities: [
-            { id: 1, name: "Altena", hasInfo: false },
+            { id: 1, name: "Altena", hasInfo: true, path: "altena" },
             { id: 2, name: "Balve", hasInfo: false },
             { id: 3, name: "Werdohl", hasInfo: false },
             { id: 4, name: "Iserlohn", hasInfo: false },

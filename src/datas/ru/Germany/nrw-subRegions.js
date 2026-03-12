@@ -75,7 +75,7 @@ const datas = [
         ],
         com: [ { text: "Район подразделяется на " }, { bold: "15 общин:" } ],
         communities: [
-            { id: 1, name: "Альтена", hasInfo: false },
+            { id: 1, name: "Альтена", hasInfo: true, path: "altena" },
             { id: 2, name: "Бальфе", hasInfo: false },
             { id: 3, name: "Вердоль", hasInfo: false },
             { id: 4, name: "Изерлон", hasInfo: false },
