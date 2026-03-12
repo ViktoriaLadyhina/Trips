@@ -89,6 +89,7 @@ const t = {
     st_maria_im_kapitol_koln: { ru: 'Церковь Святой Марии в Капитолии', de: 'Kirche St. Maria im Kapitol', ua: 'Церква Святої Марії у Капітолії' },
     decksteiner_weiher_koln: { ru: 'Декштайнер Вайер', de: 'Decksteiner Weiher', ua: 'Декштайнер Вайер' },
     romanische_kirchen_altstadt_koln: { ru: 'Романские церкви Старого города Кёльна', de: 'Romanische Kirchen der Altstadt von Köln', ua: 'Романські церкви Старого міста Кельна' },
+    old_towers_koln: { ru: 'Старые башни и укрепления Старого Кёльна', de: 'Alte Türme und Befestigungen der Altstadt Kölns', ua: 'Старі башти та укріплення Старого Кельна' },
 
     // Köln okrug
     // Aachen Kreis
@@ -267,6 +268,7 @@ const Map = () => {
                               <li><Link to="/germany/nrw/city/koln/attractions/wallraf_richartz_museum">{t.attractions.wallraf_richartz_museum[lang]}</Link></li>
                               <li><Link to="/germany/nrw/city/koln/attractions/museum-ludwig">{t.attractions.museumLudwig[lang]}</Link></li>
                               <li><Link to="/germany/nrw/city/koln/attractions/stadtmuseum_koln">{t.attractions.stadtmuseum_koln[lang]}</Link></li>
+                              <li><Link to="/germany/nrw/city/koln/attractions/old_towers_koln">{t.attractions.old_towers_koln[lang]}</Link></li>
                             </ul>
                           </li>
                           <li><Link to="/germany/nrw/city/koln/attractions/schokoladenmuseum">{t.attractions.schokoladenmuseum[lang]}</Link></li>

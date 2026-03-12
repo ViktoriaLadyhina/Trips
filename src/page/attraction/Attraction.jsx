@@ -8,6 +8,7 @@ import Gallery from '../../components/gallery/Gallery.jsx';
 import { photosByCountry } from '../../datas/fotos/index.js';
 import AttractionCardSub from '../../components/attraction/AttractionCardSub.jsx'
 import AttractionsFilters from '../../components/attractionsFilters/AttractionsFilters.jsx';
+import KolnTowers from '../../components/maps/germany/maps/Koln_towers.jsx';
 
 const BASE_PHOTO_URL = import.meta.env.VITE_BASE_PHOTO_URL;
 
@@ -84,6 +85,7 @@ const Attraction = () => {
     };
 
     const sortedAttractions = [...filteredAttractions].sort(sortByFilters);
+    const showKolnTowers = location.pathname === '/germany/nrw/city/koln/attractions/old_towers_koln';
 
     // --- Саб-объекты ---
     const sortedSubObjects = subObjects
@@ -111,6 +113,9 @@ const Attraction = () => {
             <BreadCrumbs crumbs={crumbs} />
 
             <div className='attraction__title'>{attraction.name && (attraction.name)}</div>
+
+            {showKolnTowers && <KolnTowers city={city} lang={lang} />}
+
             <div className='attraction__desc'>
                 <div className='attraction__desc-foto'>
                     {attraction.fotoCard && (

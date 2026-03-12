@@ -9,7 +9,7 @@ const datas = [
         countryPath: "germany", regionsPath: "nrw", districtPath: "city", cityPath: "koln",
         fotoCard: "Germany/nrw/koln/koln-city/altstadt/005.jpg",
         location: "Köln, Deutschland",
-        subObjects: ["cologne_cathedral", "rathaus_koln", "guerzenich_koln", "miqua", "wallraf_richartz_museum", "roemisch_germanisches_museum", "farina_duftmuseum", "museum_ludwig", "stadtmuseum_koln", "dufthaus_4711_koln", "st_maria_himmelfahrt_koln", "romanische_kirchen_altstadt_koln"],
+        subObjects: ["cologne_cathedral", "rathaus_koln", "guerzenich_koln", "miqua", "wallraf_richartz_museum", "roemisch_germanisches_museum", "farina_duftmuseum", "museum_ludwig", "stadtmuseum_koln", "dufthaus_4711_koln", "st_maria_himmelfahrt_koln", "romanische_kirchen_altstadt_koln", "old_towers_koln"],
         short_description_subObjects: {
             text: "In der Altstadt von Köln befinden sich folgende Sehenswürdigkeiten:",
             items: [
@@ -31,6 +31,7 @@ const datas = [
                 { bold: "Museum Ludwig", text: "– Museum für moderne Kunst in der Nähe des Kölner Doms." },
                 { bold: "Römisch-Germanisches Museum", text: "– Museum der Antike in der Nähe des Kölner Doms und des MiQua." },
                 { bold: "Wallraf-Richartz-Museum", text: "– Museum für Malerei und Kunst, unweit von Rathaus und Dom." },
+                { bold: "Alte Türme und Befestigungen der Altstadt Kölns", text: "– Reste der mittelalterlichen Stadtmauer und Verteidigungstürme, verteilt über die Altstadt, die einen Einblick geben, wie Köln im Mittelalter aussah und das Verteidigungssystem der Stadt nachvollziehbar machen." }
             ]
         },
         short_description: "Die Altstadt von Köln ist das historische Herz der Stadt mit engen gepflasterten Gassen, traditionellen Häusern, gemütlichen Brauhäusern und Cafés am Rheinufer. Sie vereint Kultur, Architektur und alltägliches Leben: von gotischen Kathedralen bis zu Museen und Märkten, die die vielschichtige Geschichte der Stadt widerspiegeln.",
@@ -209,7 +210,7 @@ const datas = [
             ]
         },
         hiddenFromList: true, showMore: true,
-        fotoCard: "Germany/nrw/koln/koln-city/romanische_kirchen/001.jpg",
+        fotoCard: "Germany/nrw/koln/koln-city/altstadt/romanische_kirchen/001.jpg",
         location: "Köln, Deutschland",
         officialSite: [{ bold: "Offizielle Webseite", link: "https://romanische-kirchen-koeln.de/" }],
         short_description: "Die Liste der 12 größten romanischen Kirchen der Altstadt von Köln – bedeutende Denkmäler mittelalterlicher Architektur, die die Vielfalt des romanischen Stils und die historische Entwicklung der Stadt demonstrieren.",
@@ -226,7 +227,7 @@ const datas = [
             description: "Liste der größten romanischen Kirchen Kölns in der Altstadt. Architektur, historische Fakten und kulturelles Erbe der Stadt.",
             ogTitle: "Romanische Kirchen der Altstadt von Köln",
             ogDescription: "Entdecken Sie die 12 größten romanischen Kirchen Kölns, ihre Architektur, Geschichte und Relikte aus dem XI.–XIII. Jahrhundert.",
-            ogImage: "https://our-travels.info/foto/Germany/nrw/koln/koln-city/romanische_kirchen/001.jpg"
+            ogImage: "https://our-travels.info/foto/Germany/nrw/koln/koln-city/altstadt/romanische_kirchen/001.jpg"
         }
     },
     {
@@ -236,7 +237,7 @@ const datas = [
         path: "gross_st_martin_koln",
         countryPath: "germany", regionsPath: "nrw", districtPath: "city", cityPath: "koln",
         hiddenFromList: true, showMore: true,
-        fotoCard: "Germany/nrw/koln/koln-city/gross_st_martin/001.jpg",
+        fotoCard: "Germany/nrw/koln/koln-city/altstadt/romanische_kirchen/gross_st_martin/001.jpg",
         location: "Köln, Deutschland",
         officialSite: [
             { bold: "Offizielle Webseite", link: "https://www.romanische-kirchen-koeln.de/willkommen/willkommen" }
@@ -270,53 +271,7 @@ const datas = [
             description: "Groß St. Martin – romanische Kirche in der Altstadt von Köln am Rhein. Geschichte, Architektur, Fakten und Besuchsinformationen.",
             ogTitle: "Groß St. Martin – Symbol der romanischen Kirchen Kölns",
             ogDescription: "Erfahren Sie die Geschichte einer der markantesten Kirchen Kölns mit mächtigem Turm und mittelalterlicher Vergangenheit.",
-            ogImage: "https://our-travels.info/foto/Germany/nrw/koln/koln-city/gross_st_martin/001.jpg"
-        }
-    },
-    {
-        id: "st_maria_himmelfahrt_koln",
-        name: "St. Mariä Himmelfahrt",
-        type: ["cathedral"], rating: "popular",
-        path: "st_maria_himmelfahrt_koln",
-        countryPath: "germany", regionsPath: "nrw", districtPath: "city", cityPath: "koln",
-        hiddenFromList: true, showMore: true,
-        fotoCard: "Germany/nrw/koln/koln-city/st_maria_himmelfahrt/001.jpg",
-        location: "Köln, Deutschland",
-        short_description: "St. Mariä Himmelfahrt ist eine bedeutende katholische Kirche der Aufnahme Mariens in der Kölner Altstadt. Sie wurde im Barockstil als Jesuitenkirche errichtet, war lange Zeit die zweitgrößte Kirche nach dem Kölner Dom und gehört bis heute zu den wenigen erhaltenen barocken Baudenkmälern der Stadt.",
-        full_description: {
-            title: "Beschreibung und Geschichte",
-            items: [
-                { bold: "St. Mariä Himmelfahrt", text: "– eine der bedeutendsten historischen Kirchen Kölns, gelegen im Zentrum der Altstadt. Es handelt sich um eine katholische Pfarrkirche, die der Aufnahme Mariens in den Himmel gewidmet ist und im 17. Jahrhundert im Barockstil erbaut wurde. Ihr monumentales Gebäude mit zwei Türmen prägt das Stadtbild und ist ein wichtiger Bestandteil des architektonischen Erbes Kölns. " },
-                { text: "Der Bau der Kirche begann 1618 auf Initiative der Jesuiten während der Gegenreformation – einer Zeit, in der die katholische Kirche Architektur und Kunst gezielt zur Stärkung ihres religiösen Einflusses einsetzte. Der ursprüngliche Entwurf stammt vom Architekten Christoph Wamser, später führte Valentin Boltz die Arbeiten fort. Die barocke Architektur des Bauwerks betont Dynamik der Formen, Monumentalität und dekorative Gestaltung, die für diese Epoche typisch sind. Die Kirche wurde 1678 endgültig fertiggestellt und geweiht." },
-                { text: "Ursprünglich war die Kirche als eines der größten religiösen Bauwerke der Stadt geplant, und lange Zeit war sie tatsächlich die zweitgrößte Kirche Kölns nach dem berühmten Kölner Dom. Der Innenraum ist als dreischiffige Anlage mit Emporen gestaltet, was ein Gefühl von Weite und Feierlichkeit vermittelt, während die helle Beleuchtung die Details der Innenausstattung hervorhebt." },
-                { text: "Die Geschichte des Gebäudes verlief nicht ohne Einschnitte: Ende des 18. Jahrhunderts wurde die Kirche während der französischen Besatzung säkularisiert, verlor einen Teil ihrer ursprünglichen Funktion und diente zeitweise weltlichen Zwecken. Bereits zu Beginn des 19. Jahrhunderts wurde sie jedoch wieder als Pfarrkirche genutzt. Diese Veränderungen spiegeln die komplexen historischen Prozesse wider, die Köln im Laufe der Jahrhunderte durchlebte." },
-                { text: "Während des Zweiten Weltkriegs wurde das Bauwerk durch Bombardierungen schwer beschädigt: Die Außenmauern blieben erhalten, doch das Innere wurde nahezu vollständig zerstört. Eine lange Phase der Restaurierung nach dem Krieg – von den späten 1940er- bis in die 1970er-Jahre – ermöglichte es, die Kirche nahezu in ihrem ursprünglichen Zustand wiederherzustellen und ihre barocke künstlerische Ausdruckskraft sowie architektonischen Proportionen zurückzugeben." },
-                { text: "Heute ist St. Mariä Himmelfahrt eine aktive Pfarrkirche und zugleich ein beliebtes touristisches Ziel in Köln. Architektur und Geschichte vermitteln den Besuchern einen Eindruck vom religiösen Leben der Stadt in verschiedenen Epochen und verbinden kulturelles Erbe, barocke Kunstformen und die historisch geprägte Atmosphäre der Altstadt." }
-            ]
-        },
-        tickets_and_entry: {
-            title: "Praktische Informationen",
-            items: [
-                { bold: "Adresse:", text: "Marzellenstraße 30, 50668 Köln, Nordrhein-Westfalen, Deutschland." }
-            ]
-        },
-        interestingFacts: {
-            title: "Interessante Fakten",
-            items: [
-                { text: "Sie ist eine der wenigen vollständig barocken Kirchen Kölns." },
-                { text: "Sie wurde von den Jesuiten während der Gegenreformation errichtet." },
-                { text: "Sie befindet sich nur wenige Minuten vom Kölner Hauptbahnhof entfernt." }
-            ]
-        },
-        construction_period: "1618-1678",
-        architects: "Christoph Wamser; Valentin Boltz",
-        coord: { lat: 50.94306, lng: 6.95680 },
-        meta: {
-            title: "St. Mariä Himmelfahrt – Barockkirche des 17. Jahrhunderts",
-            description: "Die historische Barockkirche St. Mariä Himmelfahrt im Zentrum von Köln – eine ehemalige Jesuitenkirche des 17. Jahrhunderts mit reicher Architektur, die nach dem Krieg restauriert wurde. Erfahren Sie mehr über Geschichte, Architektur und interessante Fakten.",
-            ogTitle: "St. Mariä Himmelfahrt – historische Barockkirche in Köln",
-            ogDescription: "Tauchen Sie ein in die Atmosphäre barocker Architektur im Herzen Kölns! St. Mariä Himmelfahrt ist ein bedeutendes religiöses Bauwerk der Altstadt mit reicher Geschichte und beeindruckendem Innenraum.",
-            ogImage: "https://our-travels.info/foto/Germany/nrw/koln/koln-city/st_maria_himmelfahrt/001.jpg"
+            ogImage: "https://our-travels.info/foto/Germany/nrw/koln/koln-city/altstadt/romanische_kirchen/gross_st_martin/001.jpg"
         }
     },
     {
@@ -376,13 +331,59 @@ const datas = [
         },
         construction_period: "1040-1065 Jahre",
         founder: "Äbtissin Ida (Ida von Köln). Ebenfalls wird traditionell Plektruda als Gründerin der früheren Kirche erwähnt.",
-        coord: { lat: 50.93459, lng: 6.95847 },
+        coord: { lat: 50.9346, lng: 6.9585 },
         meta: {
             title: "St. Maria im Kapitol in Köln – größte romanische Kirche",
             description: "St. Maria im Kapitol – die größte romanische Kirche Kölns, erbaut im 11. Jahrhundert auf den Überresten eines römischen Tempels. Geschichte, Architektur und mittelalterliche Reliquien.",
             ogTitle: "Kirche St. Maria im Kapitol – Altstadt Köln",
             ogDescription: "St. Maria im Kapitol – eine der ältesten und bedeutendsten Kirchen Kölns, auf den Überresten eines römischen Tempels erbaut, bekannt für ihre geschnitzten Türen aus dem 11. Jahrhundert und die geräumige Krypta.",
             ogImage: "https://our-travels.info/foto/Germany/nrw/koln/koln-city/stMariaImKapitol/001.jpg"
+        }
+    },
+    {
+        id: "st_maria_himmelfahrt_koln",
+        name: "St. Mariä Himmelfahrt",
+        type: ["cathedral"], rating: "popular",
+        path: "st_maria_himmelfahrt_koln",
+        countryPath: "germany", regionsPath: "nrw", districtPath: "city", cityPath: "koln",
+        hiddenFromList: true, showMore: true,
+        fotoCard: "Germany/nrw/koln/koln-city/st_maria_himmelfahrt/001.jpg",
+        location: "Köln, Deutschland",
+        short_description: "St. Mariä Himmelfahrt ist eine bedeutende katholische Kirche der Aufnahme Mariens in der Kölner Altstadt. Sie wurde im Barockstil als Jesuitenkirche errichtet, war lange Zeit die zweitgrößte Kirche nach dem Kölner Dom und gehört bis heute zu den wenigen erhaltenen barocken Baudenkmälern der Stadt.",
+        full_description: {
+            title: "Beschreibung und Geschichte",
+            items: [
+                { bold: "St. Mariä Himmelfahrt", text: "– eine der bedeutendsten historischen Kirchen Kölns, gelegen im Zentrum der Altstadt. Es handelt sich um eine katholische Pfarrkirche, die der Aufnahme Mariens in den Himmel gewidmet ist und im 17. Jahrhundert im Barockstil erbaut wurde. Ihr monumentales Gebäude mit zwei Türmen prägt das Stadtbild und ist ein wichtiger Bestandteil des architektonischen Erbes Kölns. " },
+                { text: "Der Bau der Kirche begann 1618 auf Initiative der Jesuiten während der Gegenreformation – einer Zeit, in der die katholische Kirche Architektur und Kunst gezielt zur Stärkung ihres religiösen Einflusses einsetzte. Der ursprüngliche Entwurf stammt vom Architekten Christoph Wamser, später führte Valentin Boltz die Arbeiten fort. Die barocke Architektur des Bauwerks betont Dynamik der Formen, Monumentalität und dekorative Gestaltung, die für diese Epoche typisch sind. Die Kirche wurde 1678 endgültig fertiggestellt und geweiht." },
+                { text: "Ursprünglich war die Kirche als eines der größten religiösen Bauwerke der Stadt geplant, und lange Zeit war sie tatsächlich die zweitgrößte Kirche Kölns nach dem berühmten Kölner Dom. Der Innenraum ist als dreischiffige Anlage mit Emporen gestaltet, was ein Gefühl von Weite und Feierlichkeit vermittelt, während die helle Beleuchtung die Details der Innenausstattung hervorhebt." },
+                { text: "Die Geschichte des Gebäudes verlief nicht ohne Einschnitte: Ende des 18. Jahrhunderts wurde die Kirche während der französischen Besatzung säkularisiert, verlor einen Teil ihrer ursprünglichen Funktion und diente zeitweise weltlichen Zwecken. Bereits zu Beginn des 19. Jahrhunderts wurde sie jedoch wieder als Pfarrkirche genutzt. Diese Veränderungen spiegeln die komplexen historischen Prozesse wider, die Köln im Laufe der Jahrhunderte durchlebte." },
+                { text: "Während des Zweiten Weltkriegs wurde das Bauwerk durch Bombardierungen schwer beschädigt: Die Außenmauern blieben erhalten, doch das Innere wurde nahezu vollständig zerstört. Eine lange Phase der Restaurierung nach dem Krieg – von den späten 1940er- bis in die 1970er-Jahre – ermöglichte es, die Kirche nahezu in ihrem ursprünglichen Zustand wiederherzustellen und ihre barocke künstlerische Ausdruckskraft sowie architektonischen Proportionen zurückzugeben." },
+                { text: "Heute ist St. Mariä Himmelfahrt eine aktive Pfarrkirche und zugleich ein beliebtes touristisches Ziel in Köln. Architektur und Geschichte vermitteln den Besuchern einen Eindruck vom religiösen Leben der Stadt in verschiedenen Epochen und verbinden kulturelles Erbe, barocke Kunstformen und die historisch geprägte Atmosphäre der Altstadt." }
+            ]
+        },
+        tickets_and_entry: {
+            title: "Praktische Informationen",
+            items: [
+                { bold: "Adresse:", text: "Marzellenstraße 30, 50668 Köln, Nordrhein-Westfalen, Deutschland." }
+            ]
+        },
+        interestingFacts: {
+            title: "Interessante Fakten",
+            items: [
+                { text: "Sie ist eine der wenigen vollständig barocken Kirchen Kölns." },
+                { text: "Sie wurde von den Jesuiten während der Gegenreformation errichtet." },
+                { text: "Sie befindet sich nur wenige Minuten vom Kölner Hauptbahnhof entfernt." }
+            ]
+        },
+        construction_period: "1618-1678",
+        architects: "Christoph Wamser; Valentin Boltz",
+        coord: { lat: 50.94306, lng: 6.95680 },
+        meta: {
+            title: "St. Mariä Himmelfahrt – Barockkirche des 17. Jahrhunderts",
+            description: "Die historische Barockkirche St. Mariä Himmelfahrt im Zentrum von Köln – eine ehemalige Jesuitenkirche des 17. Jahrhunderts mit reicher Architektur, die nach dem Krieg restauriert wurde. Erfahren Sie mehr über Geschichte, Architektur und interessante Fakten.",
+            ogTitle: "St. Mariä Himmelfahrt – historische Barockkirche in Köln",
+            ogDescription: "Tauchen Sie ein in die Atmosphäre barocker Architektur im Herzen Kölns! St. Mariä Himmelfahrt ist ein bedeutendes religiöses Bauwerk der Altstadt mit reicher Geschichte und beeindruckendem Innenraum.",
+            ogImage: "https://our-travels.info/foto/Germany/nrw/koln/koln-city/st_maria_himmelfahrt/001.jpg"
         }
     },
     {
@@ -1319,6 +1320,121 @@ const datas = [
             "ogTitle": "Kölner Rheinbrücken",
             "ogDescription": "Vollständige Beschreibung aller acht Kölner Rheinbrücken mit Fakten, Geschichte und Architektur.",
             "ogImage": "https://our-travels.info/foto/Germany/nrw/koln/koln-city/koln_bridges/001.jpg"
+        }
+    },
+    {
+        id: "old_towers_koln",
+        name: "Alte Türme und Befestigungen der Altstadt Kölns",
+        type: ["historical_building"], rating: "popular",
+        path: "old_towers_koln",
+        countryPath: "germany", regionsPath: "nrw", districtPath: "city", cityPath: "koln",
+        hiddenFromList: true, showMore: true,
+        fotoCard: "Germany/nrw/koln/koln-city/altstadt/old_towers/001.jpg",
+        location: "Köln, Deutschland",
+        short_description: "Die alten Türme und Befestigungen der Altstadt Kölns sind Reste der mittelalterlichen Stadtmauer und römischer Verteidigungsanlagen, die einst die Stadt schützten. Heute sind sie über die Altstadt verteilt und dienen als historische Orientierungspunkte für Bewohner und Touristen. Diese Türme vermitteln ein Bild davon, wie Köln im Mittelalter aussah, und zeigen Spuren des Verteidigungssystems. Die Sehenswürdigkeit ist bei Touristen beliebt, stellt jedoch kein weltbekanntes Symbol der Stadt dar.",
+        full_description: {
+            title: "Beschreibung und Geschichte",
+            items: [
+                { text: "Die Altstadt von Köln besteht nicht nur aus engen Gassen, gemütlichen Plätzen und historischen Häusern. Auf ihrem Gebiet finden sich alte Türme und Mauerreste, die den Geist der mittelalterlichen Stadt bewahren und an ihre reiche Geschichte erinnern. Diese Türme waren einst Teil der Stadtmauer, die die Bewohner und Handelswege Kölns schützte, und dienen heute als Architekturdenkmäler und touristische Attraktionen." },
+                { text: "Die Geschichte der Kölner Türme beginnt bereits in der Römerzeit. In der Spätantike war die Stadt Colonia Agrippinensis von einer mächtigen Mauer mit Türmen umgeben – sie hatten die Funktion von Wachtürmen und dienten als Aussichtspunkte über die Umgebung." },
+                { text: "Im Mittelalter entwickelte sich Köln zu einem der größten Handelszentren Nordeuropas. In dieser Zeit wurde die Stadtmauer durch neue Türme und Tore verstärkt, die ein komplexes Verteidigungssystem bildeten. Heute sind nur noch einzelne Objekte dieses Systems erhalten – große Tore mit Türmen sowie Mauerreste mit kleinen Wachtürmen." }
+            ]
+        },
+        sub_objects: {
+            title: "Wichtigste erhaltene Türme und Mauerfragmente",
+            items: [
+                { img: "Germany/nrw/koln/koln-city/altstadt/old_towers/002.jpg", alt: "Römerturm Römerturm", bold: "Römerturm", text: "– Überrest der römischen Stadtmauer (Colonia Agrippinensis), ein Denkmal der antiken Geschichte der Stadt – ein seltenes und sehr altes architektonisches Relikt. Es ist einer der wenigen römischen Türme, die bis heute erhalten sind. Laut römischen Quellen gab es ursprünglich etwa 19 solcher Verteidigungstürme um die Stadt.<br>Der Turm war Teil der spätantiken Befestigung und diente als Wachturm und Aussichtspunkt – heute ist dies das älteste erhaltene Stück der Kölner Befestigungsanlagen.<br><b>Wo:</b> Zeughausstraße – im Nordwesten der Altstadt, fußläufig vom Zentrum entfernt." },
+                { img: "Germany/nrw/koln/koln-city/altstadt/old_towers/001.jpg", alt: "Westtor (Hahnentorburg)", bold: "Westtor (Hahnentorburg)", text: "– eines der vier erhaltenen mittelalterlichen Stadttore mit Türmen der ehemaligen Altstadtmauer. Das Tor wird erstmals 1264 erwähnt; es schützte den westlichen Zugang zum Handelsweg nach Aachen und Jülich. Hier verschmilzt mittelalterliche Architektur förmlich mit dem modernen Platzraum und bewahrt den Geist der Kölner Befestigungsanlagen.<br><b>Wo:</b> Rudolfplatz – westliche Grenze der Altstadt." },
+                { img: "Germany/nrw/koln/koln-city/altstadt/old_towers/003.jpg", alt: "Nordtor (Eigelsteintorburg)", bold: "Nordtor (Eigelsteintorburg)", text: "– gut erhaltene mittelalterliche Festungsarchitektur mit massiven Türmen und Bogenpassage. Große Doppeltore auf der Nordseite der Altstadtmauer. Erbaut während der dritten Stadterweiterung im 13. Jahrhundert; ersetzte den früheren Nordturm und diente der Kontrolle des Zugangs von den nördlichen Handelswegen.<br><b>Wo:</b> Bezirk Eigelstein / Ebertplatz." },
+                { img: "Germany/nrw/koln/koln-city/altstadt/old_towers/004.jpg", alt: "Südtor (Severinstorburg)", bold: "Südtor (Severinstorburg)", text: "– strategisch wichtiger südlicher Eingang – über ihn verliefen die Hauptwege nach Bonn und Süddeutschland, eines der vier Haupttore der Altstadt, das den südlichen Zugang schützte. Errichtet in der ersten Hälfte des 13. Jahrhunderts als Teil einer massiven Steinmauer; später mit Zinnen und Flanken ergänzt.<br><b>Wo:</b> heutiger Chlodwigplatz." },
+                { img: "Germany/nrw/koln/koln-city/altstadt/old_towers/005.jpg", alt: "Südliches Mauerfragment (Ulrepforte)", bold: "Südliches Mauerfragment (Ulrepforte)", text: "– das schmalste und kleinste der Stadttore, diente eher als Hilfsbefestigung. Ein kleiner, aber antiker Stadteingang, Teil der mittelalterlichen Stadtbefestigung. Erbaut Anfang des 13. Jahrhunderts und erstmals 1245 urkundlich erwähnt; eines von zwölf Toren der Mauer, aber von geringer Bedeutung für die Verkehrswege.<br><b>Wo:</b> Sachsenring – südlicher Abschnitt der Altstadt." },
+                { img: "Germany/nrw/koln/koln-city/altstadt/old_towers/006.jpg", alt: "Turm im Süden am Rhein (Bayenturm)", bold: "Turm im Süden am Rhein (Bayenturm)", text: "– Befestigungsturm am südöstlichen Ende der Stadtmauer nahe dem Rhein, Symbol für die Kontrolle des Handelswegs am Rhein. Errichtet ca. 1180–1220 als Teil der Flussbefestigung; im Zweiten Weltkrieg stark beschädigt, später wiederhergestellt.<br><b>Wo:</b> südlicher Teil der Altstadt, nahe Ringstraße." }
+            ]
+        },
+        meta: {
+            title: "Alte Türme und Befestigungen der Altstadt Kölns – historische Sehenswürdigkeiten der Stadt",
+            description: "Entdecken Sie mittelalterliche Türme und Mauerfragmente in Köln. Erfahren Sie die Geschichte der alten Befestigungen der Altstadt und entdecken Sie wichtige historische Orientierungspunkte, die bis heute erhalten sind.",
+            ogTitle: "Alte Türme und Befestigungen der Altstadt Kölns – ein Spaziergang durch die Geschichte der Stadt",
+            ogDescription: "Spazieren Sie durch die Altstadt von Köln und entdecken Sie alte Türme und Befestigungen, die den Geist der mittelalterlichen Stadt bewahren und wichtige historische Denkmäler darstellen.",
+            ogImage: "https://our-travels.info/foto/Germany/nrw/koln/koln-city/altstadt/old_towers/001.jpg"
+        }
+    },
+    {
+        id: "rumerturm_koln",
+        name: "Römerturm",
+        type: ["historical_building"], rating: "popular",
+        path: "old_towers_koln",
+        countryPath: "germany", regionsPath: "nrw", districtPath: "city", cityPath: "koln",
+        hiddenFromList: true,
+        coord: { lat: 50.94093, lng: 6.94663 },
+        meta: {
+            title: "Römerturm – Überrest der römischen Stadtmauer (Colonia Agrippinensis), Denkmal der antiken Geschichte der Stadt",
+            ogImage: "https://our-travels.info/foto/Germany/nrw/koln/koln-city/altstadt/old_towers/002.jpg"
+        }
+    },
+    {
+        id: "hahnentorburg_koln",
+        name: "Westtor (Hahnentorburg)",
+        type: ["historical_building"], rating: "popular",
+        path: "old_towers_koln",
+        countryPath: "germany", regionsPath: "nrw", districtPath: "city", cityPath: "koln",
+        hiddenFromList: true,
+        coord: { lat: 50.93639, lng: 6.94021 },
+        meta: {
+            title: "Westtor (Hahnentorburg) – eines der vier erhaltenen mittelalterlichen Stadttore mit Türmen der ehemaligen Altstadtmauer",
+            ogImage: "https://our-travels.info/foto/Germany/nrw/koln/koln-city/altstadt/old_towers/001.jpg"
+        }
+    },
+    {
+        id: "eigelsteintorburg_koln",
+        name: "Nordtor (Eigelsteintorburg)",
+        type: ["historical_building"], rating: "popular",
+        path: "old_towers_koln",
+        countryPath: "germany", regionsPath: "nrw", districtPath: "city", cityPath: "koln",
+        hiddenFromList: true,
+        coord: { lat: 50.94931, lng: 6.95687 },
+        meta: {
+            title: "Nordtor (Eigelsteintorburg) – gut erhaltene mittelalterliche Festungsarchitektur mit massiven Türmen und einem Torbogen.",
+            ogImage: "https://our-travels.info/foto/Germany/nrw/koln/koln-city/altstadt/old_towers/003.jpg"
+        }
+    },
+    {
+        id: "severinstorburg_koln",
+        name: "Südtor (Severinstorburg)",
+        type: ["historical_building"], rating: "popular",
+        path: "old_towers_koln",
+        countryPath: "germany", regionsPath: "nrw", districtPath: "city", cityPath: "koln",
+        hiddenFromList: true,
+        coord: { lat: 50.92196, lng: 6.95923 },
+        meta: {
+            title: "Südtor (Severinstorburg) – strategisch wichtiger südlicher Zugang – über ihn führten die wichtigsten Wege nach Bonn und in den Süden Deutschlands",
+            ogImage: "https://our-travels.info/foto/Germany/nrw/koln/koln-city/altstadt/old_towers/004.jpg"
+        }
+    },
+    {
+        id: "ulrepforte_koln",
+        name: "Südliches Mauerfragment (Ulrepforte)",
+        type: ["historical_building"], rating: "popular",
+        path: "old_towers_koln",
+        countryPath: "germany", regionsPath: "nrw", districtPath: "city", cityPath: "koln",
+        hiddenFromList: true,
+        coord: { lat: 50.92418, lng: 6.95305 },
+        meta: {
+            title: "Südliches Mauerfragment (Ulrepforte) – das schmalste und kleinste der Stadttore, das eher als zusätzlicher Teil der Verteidigung diente.",
+            ogImage: "https://our-travels.info/foto/Germany/nrw/koln/koln-city/altstadt/old_towers/005.jpg"
+        }
+    },
+    {
+        id: "bayenturm_koln",
+        name: "Turm im Süden am Rhein (Bayenturm)",
+        type: ["historical_building"], rating: "popular",
+        path: "old_towers_koln",
+        countryPath: "germany", regionsPath: "nrw", districtPath: "city", cityPath: "koln",
+        hiddenFromList: true,
+        coord: { lat: 50.92375, lng: 6.96695 },
+        meta: {
+            title: "Turm im Süden am Rhein (Bayenturm) – ein Wehrturm am südöstlichen Ende der Stadtmauer nahe dem Rhein.",
+            ogImage: "https://our-travels.info/foto/Germany/nrw/koln/koln-city/altstadt/old_towers/006.jpg"
         }
     },
     {
