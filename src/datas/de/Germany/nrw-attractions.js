@@ -281,7 +281,7 @@ const datas = [
         path: "st_maria_im_kapitol_koln",
         countryPath: "germany", regionsPath: "nrw", districtPath: "city", cityPath: "koln",
         hiddenFromList: true, showMore: true,
-        fotoCard: "Germany/nrw/koln/koln-city/stMariaImKapitol/001.jpg",
+        fotoCard: "Germany/nrw/koln/koln-city/altstadt/romanische_kirchen/stMariaImKapitol/001.jpg",
         location: "Köln, Deutschland",
         officialSite: [{ bold: "Offizielle Webseite", link: "https://www.romanische-kirchen-koeln.de/" }],
         short_description: "Die Kirche St. Maria im Kapitol – die größte romanische Kirche Kölns und eine der zwölf berühmten romanischen Kirchen der Stadt. Sie wurde im 11. Jahrhundert an der Stelle eines römischen Tempels erbaut, der der kapitolinischen Triade – Jupiter, Juno und Minerva – geweiht war. Heute gilt das Bauwerk als eines der wichtigsten Zeugnisse mittelalterlicher Architektur im Rheinland.",
@@ -337,7 +337,7 @@ const datas = [
             description: "St. Maria im Kapitol – die größte romanische Kirche Kölns, erbaut im 11. Jahrhundert auf den Überresten eines römischen Tempels. Geschichte, Architektur und mittelalterliche Reliquien.",
             ogTitle: "Kirche St. Maria im Kapitol – Altstadt Köln",
             ogDescription: "St. Maria im Kapitol – eine der ältesten und bedeutendsten Kirchen Kölns, auf den Überresten eines römischen Tempels erbaut, bekannt für ihre geschnitzten Türen aus dem 11. Jahrhundert und die geräumige Krypta.",
-            ogImage: "https://our-travels.info/foto/Germany/nrw/koln/koln-city/stMariaImKapitol/001.jpg"
+            ogImage: "https://our-travels.info/foto/Germany/nrw/koln/koln-city/altstadt/romanische_kirchen/stMariaImKapitol/001.jpg"
         }
     },
     {
@@ -3297,7 +3297,6 @@ const datas = [
                 { text: "• Zu den Denkmälern gehören die Erlöserkirche mit ihrem Turm aus dem 11. Jahrhundert, der Selve-Brunnen und die Mausoleen der Familie Selve sowie das historische Stadtmuseum mit Exponaten aus der Industrieepoche." },
             ]
         },
-        coord: { lat: 51.2198, lng: 7.6273 },
         meta: {
             title: "Altstadt von Lüdenscheid – historisches Herz der Stadt mit engen Straßen und Denkmälern",
             description: "Die Altstadt von Lüdenscheid ist der mittelalterliche Teil der Stadt mit historischen Gebäuden des 18.–19. Jahrhunderts, der Erlöserkirche, Resten der Stadtmauer und dem historischen Museum. Schlendern Sie durch die gemütlichen Gassen und spüren Sie die Atmosphäre vergangener Jahrhunderte.",
@@ -3633,6 +3632,63 @@ const datas = [
             ogTitle: "Pseudogotische Christuskirche – architektonisches Wahrzeichen der Stadt",
             ogDescription: "Historische evangelische Kirche im Herzen von Lüdenscheid: Architektur, Orgel, kulturelle Veranstaltungen.",
             ogImage: "https://our-travels.info/foto/Germany/nrw/arnsberg/Märkischer-Kreis/luedenscheid/christuskirche/001.jpg"
+        }
+    },
+    {
+        id: "st_joseph_medardus_luedenscheid",
+        name: "Kirche St. Joseph und Medardus",
+        type: ["church"], rating: "local",
+        path: "st_joseph_medardus",
+        countryPath: "germany", regionsPath: "nrw", districtPath: "arnsberg", cityPath: "luedenscheid",
+        fotoCard: "Germany/nrw/arnsberg/Märkischer-Kreis/luedenscheid/st_joseph_medardus/001.jpg",
+        location: "Lüdenscheid, Deutschland",
+        officialSite: [{ bold: "Offizielle Website", link: "https://www.st-medardus.org" }],
+        short_description: "Die Kirche St. Joseph und Medardus ist die wichtigste katholische Pfarrkirche der Stadt Lüdenscheid. Sie wurde Ende des 19. Jahrhunderts im Stil der norddeutschen Backsteingotik erbaut und ist zu einem wichtigen architektonischen Wahrzeichen der Stadt geworden. Der hohe Turm mit über 54 Metern Höhe und die massiven Backsteinfassaden machen sie zu einem der auffälligsten historischen Gebäude Lüdenscheids.",
+        full_description: {
+            title: "Beschreibung und Geschichte",
+            items: [
+                { bold: "Die Kirche St. Joseph und Medardus", text: "ist die größte katholische Kirche in Lüdenscheid und ein bedeutendes Denkmal der neugotischen Architektur der Region. Das Gebäude wurde aus rotem Backstein im Stil der norddeutschen Backsteingotik errichtet, die für die Kirchenarchitektur des späten 19. Jahrhunderts charakteristisch ist. Das Innere der Kirche zeichnet sich durch ein geräumiges Kirchenschiff mit Kreuzrippengewölben, Chören und Glasfenstern aus, die ein weiches, farbiges Licht im Kircheninneren erzeugen." },
+                { text: "Besonders auffällig ist der mächtige Turm mit einer Höhe von 54,15 Metern, der über dem Stadtzentrum aufragt. Durch seine Silhouette ist die Kirche ein wichtiges Element der Stadtsilhouette von Lüdenscheid geworden und bildet zusammen mit den Türmen anderer Stadtkirchen die wiedererkennbare Stadtlandschaft." },
+                { text: "Heute bleibt die Kirche ein aktives religiöses Zentrum der katholischen Gemeinde. Neben Gottesdiensten finden hier Konzerte, kirchliche Feiertage und verschiedene Veranstaltungen der Pfarrei statt." },
+                { bold: "Geschichte", text: "der katholischen Gemeinde Lüdenscheids geht auf den Beginn des 19. Jahrhunderts zurück. Damals versammelten sich die Katholiken der Stadt in einer kleinen Kreuzkapelle am heutigen Sternplatz. Diese Kapelle bot jedoch nur Platz für etwa 150 Personen und entsprach mit der Zeit nicht mehr den Bedürfnissen der schnell wachsenden Gemeinde." },
+                { text: "Im Jahr 1882 wurde die Entscheidung getroffen, eine neue Pfarrkirche zu bauen. Der Architekt Arnold Güldenpfennig entwarf die Kirche im Stil der norddeutschen Backsteingotik. Der Bau wurde 1885 abgeschlossen, die offizielle Weihe fand 1891 statt." },
+                { text: "Ursprünglich hatte die Kirche nur einen kleinen Dachturm. In den Jahren 1927-1929 wurde nach den Plänen des Architekten Robert Lamm der massive Glockenturm mit einer Höhe von über 54 Metern errichtet. Im Turm wurden vier Glocken untergebracht, die jedoch während des Zweiten Weltkriegs abgenommen und für militärische Zwecke eingeschmolzen wurden. Nach dem Krieg wurden die Glocken neu gegossen und in den Turm zurückgebracht." },
+                { text: "Im Jahr 1986 wurde die Kirche in die Liste der geschützten Baudenkmäler aufgenommen. In den letzten Jahren wurde das Gebäude außerdem restauriert und renoviert." }
+            ]
+        },
+        tickets_and_entry: {
+            title: "Praktische Informationen",
+            items: [
+                { bold: "Adresse: ", text: "Jockuschstraße 12, 58511 Lüdenscheid, Deutschland" },
+                { bold: "Konfession:", text: "römisch-katholische Kirche" }
+            ]
+        },
+        relics: {
+            title: "Reliquien und künstlerische Elemente",
+            items: [
+                { text: "Barocke Kreuzigungsgruppe, aus der alten Kreuzkapelle in die neue Kirche übertragen." },
+                { text: "Historische Chorglasfenster von 1891, die die Schutzheiligen der Kirche – Joseph und Medardus – darstellen." },
+                { text: "Sechseckige Taufkapelle mit eigenem Eingang, Ende der 1920er Jahre erbaut." }
+            ]
+        },
+        interestingFacts: {
+            title: "Interessante Fakten",
+            items: [
+                { bold: "Die Kirche ist nach dem Schutzpatron der Stadt benannt", text: "Der heilige Medard gilt als Schutzpatron von Lüdenscheid. Daher erscheint sein Name im Titel der Hauptkirche der Stadt." },
+                { bold: "Der Turm wurde fast 40 Jahre nach dem Bau errichtet", text: "Ursprünglich hatte die Kirche nur einen kleinen Dachturm. Der massive Turm mit einer Höhe von 54 Metern, der heute die Silhouette des Gebäudes prägt, wurde erst 1927-1929 gebaut." },
+                { bold: "Backsteingotik – ein seltener Stil für die Region", text: "Die Kirche wurde im Stil der norddeutschen Backsteingotik erbaut, der eher für Städte an der Ostseeküste, wie Lübeck oder Rostock, typisch ist. In Südwestfalen ist dieser Stil selten anzutreffen." }
+            ]
+        },
+        construction_period: "1882-1885 (Weihe – 1891)",
+        architects: "Arnold Güldenpfennig, Turm – Robert Lamm",
+        founder: "Katholische Gemeinde Lüdenscheid",
+        coord: { lat: 51.213844, lng: 7.630059 },
+        meta: {
+            title: "Kirche St. Joseph und Medardus in Lüdenscheid – Geschichte und Architektur",
+            description: "Die Kirche St. Joseph und Medardus ist die wichtigste katholische Pfarrkirche von Lüdenscheid, erbaut 1882-1885 im Stil der norddeutschen Backsteingotik. Geschichte, Architektur und interessante Fakten.",
+            ogTitle: "Kirche St. Joseph und Medardus – historische Kirche in Lüdenscheid",
+            ogDescription: "Neugotische Kirche des 19. Jahrhunderts mit Turm über 54 Meter Höhe – eine der wichtigsten historischen Sehenswürdigkeiten Lüdenscheids.",
+            ogImage: "https://our-travels.info/foto/Germany/nrw/arnsberg/Märkischer-Kreis/luedenscheid/st_joseph_medardus/001.jpg"
         }
     },
     {
