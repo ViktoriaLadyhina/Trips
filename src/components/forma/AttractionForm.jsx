@@ -400,6 +400,7 @@ const toJsModuleString = (obj, indent = 0) => {
             {watchedFields.country === "germany" && watchedFields.district === "city" && (
               <>
                 <option value="koln">Кельн</option>
+                <option value="dortmund">Дортмунд</option>
                 <option value="trier">Трир</option>
               </>
             )}

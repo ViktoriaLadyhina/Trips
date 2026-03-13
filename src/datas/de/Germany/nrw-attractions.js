@@ -3258,6 +3258,68 @@ const datas = [
 
     // arnsberg округ
 
+    // Dortmund
+    {
+        id: "westfalenpark",
+        name: "Westfalenpark",
+        type: ["nature"], rating: "popular",
+        path: "westfalenpark",
+        countryPath: "germany", regionsPath: "nrw", districtPath: "city", cityPath: "dortmund",
+        fotoCard: "Germany/nrw/arnsberg/dortmund/westfalenpark/001.jpg",
+        location: "Dortmund, Deutschland",
+        officialSite: [{ bold: "Offizielle Webseite", link: "https://www.dortmund.de/westfalenpark" }],
+        short_description: "Der Westfalenpark ist einer der größten und schönsten Stadtparks Dortmunds. Er ist bekannt für seine weitläufigen grünen Rasenflächen, thematischen Gärten, Seen und den Florianturm, der lange Zeit das höchste Bauwerk der Stadt war. Der Park ist ein beliebter Ort für Erholung, Spaziergänge und kulturelle Veranstaltungen.",
+        full_description: {
+            title: "Beschreibung und Geschichte",
+            items: [
+                { bold: "Westfalenpark", text: "– ist ein großer Stadtpark im Süden von Dortmund, der eine Fläche von etwa 70 Hektar einnimmt. Der Park vereint natürliche Landschaften, Blumengärten, Seen und Erholungszonen. Dank seiner weitläufigen Alleen und gepflegten Rasenflächen ist er ein beliebter Ort für Spaziergänge von Einheimischen und Touristen." },
+                { text: "Besondere Bekanntheit erlangt der Park durch den Fernsehturm Florianturm, von dessen Aussichtsterrasse man einen Panoramablick über ganz Dortmund und die Ruhr-Region hat. Im Park befindet sich der Deutsche Rosengarten mit Tausenden von Rosensorten sowie thematische Gärten, die Parkbahn und die Seilbahn, was ihn für Erwachsene und Kinder interessant macht." },
+                { bold: "Geschichte", text: "Der moderne Westfalenpark wurde zur Bundesgartenschau 1959 angelegt. Für die Ausstellung wurde das Gebiet ehemaliger landwirtschaftlicher Flächen umgestaltet und zu einem einheitlichen Stadtpark zusammengeführt. Das zentrale Element der Ausstellung war der Florianturm, ein Symbol der Modernisierung Dortmunds." },
+                { text: "Nach Ende der Ausstellung wurde der Park erhalten und schrittweise weiterentwickelt. Neue thematische Gärten, Wasserbereiche und Spielplätze für Kinder wurden angelegt. Im Park werden regelmäßig kulturelle Veranstaltungen, Konzerte und Festivals abgehalten, was seine Rolle als kulturelles und Erholungszentrum der Stadt stärkte." },
+                { text: "Heute bleibt der Westfalenpark eines der Wahrzeichen Dortmunds und ein Muss für Touristen. Er vereint Geschichte, Architektur, Natur und Unterhaltung für die ganze Familie und bietet eine einzigartige Kombination aus kulturellen und natürlichen Sehenswürdigkeiten." }
+            ]
+        },
+        tickets_and_entry: {
+            title: "Praktische Informationen",
+            items: [
+                { bold: "Adresse:", text: "An der Buschmühle 3, 44139 Dortmund" },
+                { bold: "Öffnungszeiten", text: "Der Park ist täglich von 9:00 bis 20:00 Uhr (Sommer) und bis 18:00 Uhr (Winter) geöffnet." },
+                { bold: "Eintritt:", text: "gebührenpflichtig (meist symbolischer Betrag)" }
+            ]
+        },
+        sub_objects: {
+            title: "Parkbereiche",
+            items: [
+                { bold: "Seilbahn", text: "Über einen Teil des Parks verläuft die Seilbahn Seilbahn im Westfalenpark. Die Kabinen bewegen sich langsam über die grünen Bereiche des Parks und bieten eine Aussicht aus der Höhe. Während der Fahrt eröffnen sich schöne Blicke auf den Rosengarten, die Seen und den Florianturm. <br>Die Seilbahn ist eine der ungewöhnlichsten Attraktionen des Parks und besonders in den warmen Monaten beliebt." },
+                { bold: "Parkbahn", text: "Im Park verkehrt die kleine Parkbahn Parkbahn im Westfalenpark. Sie verläuft durch das Parkgelände und hält an mehreren Stationen nahe den wichtigsten Erholungsbereichen. Die kleine Bahn ist besonders bei Familien mit Kindern beliebt, wird aber auch von Erwachsenen genutzt, um sich schnell innerhalb des Parks zu bewegen." },
+                { bold: "Deutscher Rosengarten", text: "Einer der größten Rosengärten Deutschlands mit Tausenden von Rosensorten und thematischen Blumenarrangements." },
+                { bold: "Florianturm", text: "Fernseh- und Aussichtsturm mit Restaurant und Aussichtsterrasse." },
+                { bold: "Thematische Gärten", text: "Im Park gibt es mehrere Gärten, die in verschiedenen Stilen gestaltet sind und verschiedenen Pflanzen gewidmet sind." },
+                { bold: "Seen und Wasserbereiche", text: "Im Park befinden sich mehrere künstliche Seen und Wasserbecken, die ein wichtiger Bestandteil der Landschaft sind. Rund um die Seen verlaufen Spazierwege, es gibt Bänke und Aussichtspunkte. Die Seen schaffen eine ruhige Atmosphäre und sind ein beliebter Ort für Erholung und Fotografie." },
+                { bold: "Spielplätze", text: "In verschiedenen Bereichen des Parks befinden sich moderne Spielplätze für Kinder mit Rutschen, Klettergerüsten und interaktiven Elementen." },
+                { bold: "Konzert- und Festivalbereiche", text: "Auf dem Parkgelände gibt es offene Flächen für Konzerte und Großveranstaltungen. Hier finden regelmäßig Festivals, kulturelle Events und Sommerkonzerte im Freien statt." }
+            ]
+        },
+        interestingFacts: {
+            title: "Interessante Fakten",
+            items: [
+                { bold: "Einer der größten Rosengärten Deutschlands", text: "Im Park befindet sich der Deutsche Rosengarten, in dem Tausende Rosensorten gezüchtet werden." },
+                { bold: "Fernsehturm mit Stadtpanorama", text: "Der Florianturm war lange Zeit das höchste Bauwerk Dortmunds." },
+                { bold: "Ort für große Veranstaltungen", text: "Der Westfalenpark beherbergt regelmäßig Konzerte, Festivals und städtische Feierlichkeiten." }
+            ]
+        },
+        construction_period: "1959",
+        architects: "Team der Landschaftsarchitekten der Bundesgartenschau 1959",
+        coord: { lat: 51.49655, lng: 7.47621 },
+        meta: {
+            title: "Westfalenpark in Dortmund – Park, Florianturm und Rosengarten",
+            description: "Der Westfalenpark ist der größte Stadtpark Dortmunds mit dem Florianturm, Rosengarten, Seen, Seilbahn und Parkbahn. Ein idealer Ort für Spaziergänge, Erholung und Veranstaltungen.",
+            ogTitle: "Westfalenpark – grünes Herz Dortmunds",
+            ogDescription: "Großer Park mit Rosengarten, Seen und Florianturm. Einer der besten Orte für Spaziergänge und Erholung in Dortmund.",
+            ogImage: "Germany/nrw/arnsberg/dortmund/westfalenpark/001.jpg"
+        }
+    },
+
     // Märkischer Kreis
 
     // Lüdenscheid    

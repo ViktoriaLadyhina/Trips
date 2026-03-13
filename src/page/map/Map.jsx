@@ -40,6 +40,8 @@ const t = {
   },
   attractions: {
     // arnsberg округ
+    // Dortmund
+    westfalenpark: { ru: 'Вестфаленпарк', de: 'Westfalenpark', ua: 'Вестфаленпарк' },
     // Märkischer Kreis
     // Lüdenscheid
     altstadt_luedenscheid: { ru: 'Старый город Люденшайда', de: 'Altstadt Lüdenscheid', ua: 'Старе місто Люденшайда' },
@@ -214,11 +216,17 @@ const Map = () => {
                     <ul>
 
                       {/* Dortmund город */}
-                      <li><Link to="/germany/nrw/city/dortmund">{t.cities.dortmund[lang]}</Link></li>
+                      <li><Link to="/germany/nrw/city/dortmund">{t.cities.dortmund[lang]}</Link>
+                        <ul>
+                          <li><Link to="/germany/nrw/city/dortmund/attractions/westfalenpark">{t.attractions.westfalenpark[lang]}</Link></li>
+                        </ul>
+                      </li>
                     </ul>
 
                     <ul>
                       <li><span>{t.districts.merkischer[lang]}</span>
+
+                      {/* Lüdenscheid */}
                         <ul>
                           <li><Link to="/germany/nrw/arnsberg/luedenscheid">{t.cities.luedenscheid[lang]}</Link>
                             <ul>
@@ -241,6 +249,7 @@ const Map = () => {
                               <li><Link to="/germany/nrw/arnsberg/luedenscheid/attractions/versetalsperre_luedenscheid">{t.attractions.versetalsperre_luedenscheid[lang]}</Link></li>
                             </ul>
                           </li>
+                          {/* Altena */}
                           <li><Link to="/germany/nrw/arnsberg/altena">{t.cities.altena[lang]}</Link>
                             <ul>
                               <li><Link to="/germany/nrw/arnsberg/altena/attractions/burg_altena">{t.attractions.burg_altena[lang]}</Link></li>

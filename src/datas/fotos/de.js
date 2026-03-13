@@ -252,7 +252,7 @@ export const Fotos = {
         { path: "Germany/nrw/koln/Rhein-Erft-Kreis/bruhl/bruhl_palaces/008.jpg", title: { ru: "Дворцы Брюля: Аугустусбург, 2023", ua: "Палаци Брюля: Аугустусбург, 2023", de: "Brühler Schlösser: Augustusburg, 2023" } },
         { path: "Germany/nrw/koln/Rhein-Erft-Kreis/bruhl/bruhl_palaces/009.jpg", title: { ru: "Дворцы Брюля: Аугустусбург, 2023", ua: "Палаци Брюля: Аугустусбург, 2023", de: "Brühler Schlösser: Augustusburg, 2023" } },
         { path: "Germany/nrw/koln/Rhein-Erft-Kreis/bruhl/bruhl_palaces/010.jpg", title: { ru: "Дворцы Брюля: Фалькенлюст, 2023", ua: "Палаци Брюля: Фалькенлюст, 2023", de: "Brühler Schlösser: Falkenlust, 2023" } },
-        { path: "Germany/nrw/koln/Rhein-Erft-Kreis/bruhl/bruhl_palaces/011.jpg", title: { ru: "Дворцы Брюля: Фалькенлюст, 2023", ua: "Палаци Брюля: Фалькенлюст, 2023", de:"Brühler Schlösser:Falkenlust, 2023" } },
+        { path: "Germany/nrw/koln/Rhein-Erft-Kreis/bruhl/bruhl_palaces/011.jpg", title: { ru: "Дворцы Брюля: Фалькенлюст, 2023", ua: "Палаци Брюля: Фалькенлюст, 2023", de: "Brühler Schlösser:Falkenlust, 2023" } },
         { path: "Germany/nrw/koln/Rhein-Erft-Kreis/bruhl/bruhl_palaces/012.jpg", title: { ru: "Дворцы Брюля: Фалькенлюст, 2023", ua: "Палаци Брюля: Фалькенлюст, 2023", de: "Brühler Schlösser: Falkenlust, 2023" } },
         { path: "Germany/nrw/koln/Rhein-Erft-Kreis/bruhl/bruhl_palaces/015.jpg", title: { ru: "Парк дворцов Брюля, 2022", ua: "Парк палаців Брюля, 2022", de: "Brühlsche Palastgärten, 2022" } },
         { path: "Germany/nrw/koln/Rhein-Erft-Kreis/bruhl/bruhl_palaces/016.jpg", title: { ru: "Парк дворцов Брюля, 2022", ua: "Парк палаців Брюля, 2022", de: "Brühlsche Palastgärten, 2022" } },
@@ -426,6 +426,25 @@ export const Fotos = {
 
 
     // округ Арнсберг
+    dortmund: {
+      westfalenpark: [
+        { path: "Germany/nrw/arnsberg/dortmund/westfalenpark/001.jpg", title: { ru: "Вестфаленпарк, 2023", ua: "Вестфаленпарк, 2023", de: "Westfalenpark, 2023" } },
+        { path: "Germany/nrw/arnsberg/dortmund/westfalenpark/002.jpg", title: { ru: "Вестфаленпарк, 2023", ua: "Вестфаленпарк, 2023", de: "Westfalenpark, 2023" } },
+        { path: "Germany/nrw/arnsberg/dortmund/westfalenpark/003.jpg", title: { ru: "Вестфаленпарк, 2023", ua: "Вестфаленпарк, 2023", de: "Westfalenpark, 2023" } },
+        { path: "Germany/nrw/arnsberg/dortmund/westfalenpark/004.jpg", title: { ru: "Вестфаленпарк, 2023", ua: "Вестфаленпарк, 2023", de: "Westfalenpark, 2023" } },
+        { path: "Germany/nrw/arnsberg/dortmund/westfalenpark/005.jpg", title: { ru: "Вестфаленпарк, 2023", ua: "Вестфаленпарк, 2023", de: "Westfalenpark, 2023" } },
+        { path: "Germany/nrw/arnsberg/dortmund/westfalenpark/006.jpg", title: { ru: "Вестфаленпарк, 2023", ua: "Вестфаленпарк, 2023", de: "Westfalenpark, 2023" } },
+        { path: "Germany/nrw/arnsberg/dortmund/westfalenpark/007.jpg", title: { ru: "Вестфаленпарк, 2023", ua: "Вестфаленпарк, 2023", de: "Westfalenpark, 2023" } },
+        { path: "Germany/nrw/arnsberg/dortmund/westfalenpark/008.jpg", title: { ru: "Вестфаленпарк, 2023", ua: "Вестфаленпарк, 2023", de: "Westfalenpark, 2023" } },
+        { path: "Germany/nrw/arnsberg/dortmund/westfalenpark/009.jpg", title: { ru: "Вестфаленпарк, 2023", ua: "Вестфаленпарк, 2023", de: "Westfalenpark, 2023" } },
+        { path: "Germany/nrw/arnsberg/dortmund/westfalenpark/010.jpg", title: { ru: "Вестфаленпарк, 2023", ua: "Вестфаленпарк, 2023", de: "Westfalenpark, 2023" } },
+        { path: "Germany/nrw/arnsberg/dortmund/westfalenpark/011.jpg", title: { ru: "Вестфаленпарк, 2023", ua: "Вестфаленпарк, 2023", de: "Westfalenpark, 2023" } },
+        { path: "Germany/nrw/arnsberg/dortmund/westfalenpark/012.jpg", title: { ru: "Вестфаленпарк, 2023", ua: "Вестфаленпарк, 2023", de: "Westfalenpark, 2023" } },
+        { path: "Germany/nrw/arnsberg/dortmund/westfalenpark/013.jpg", title: { ru: "Вестфаленпарк, 2023", ua: "Вестфаленпарк, 2023", de: "Westfalenpark, 2023" } },
+        { path: "Germany/nrw/arnsberg/dortmund/westfalenpark/014.jpg", title: { ru: "Вестфаленпарк, 2023", ua: "Вестфаленпарк, 2023", de: "Westfalenpark, 2023" } },
+        { path: "Germany/nrw/arnsberg/dortmund/westfalenpark/015.jpg", title: { ru: "Вестфаленпарк, 2023", ua: "Вестфаленпарк, 2023", de: "Westfalenpark, 2023" } },
+      ]
+    },
     luedenscheid: {
       gallery: [
         { path: "Germany/nrw/arnsberg/Märkischer-Kreis/luedenscheid/001.JPG", title: { ru: "Люденшайд, 2006", ua: "Люденшайд, 2006", de: "Lüdenscheid, 2006" } },
