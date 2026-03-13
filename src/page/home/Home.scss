@@ -20,6 +20,16 @@
     @include h3();
     text-align: center;
     margin: 20px;
+
+    &-map {
+      max-width: 800px;
+      margin: 0 auto;
+
+      img {
+        width: 100%;
+        display: block;
+      }
+    }
   }
 
   &__desc,

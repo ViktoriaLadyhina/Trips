@@ -1,7 +1,8 @@
 const datas = [
+    // свободные города
     // Köln-city
     {
-        id: 1,
+        id: "koln",
         name: 'Köln',
         path: "koln",
         countryPath: "germany", regionsPath: "nrw", districtPath: "city",
@@ -93,11 +94,79 @@ const datas = [
             ogImage: "https://our-travels.info/foto/Germany/nrw/koln/koln-city/koln-cathedral/001.jpg"
         }
     },
+    {
+        id: "dortmund",
+        name: 'Dortmund',
+        path: "dortmund",
+        countryPath: "germany", regionsPath: "nrw", districtPath: "city",
+        desc: {
+            general: [
+                { text: 'Dortmund ist eine der größten Städte des Bundeslandes Nordrhein-Westfalen und eine der größten Städte des Ruhrgebiets (Ruhrgebiet) – der größten Industrieregion Deutschlands.' },
+                { text: 'Die Stadt ist als bedeutendes Industrie-, Technologie- und Logistikzentrum Deutschlands bekannt. Heute verbindet Dortmund sein industrielles Erbe mit der Entwicklung von Wissenschaft, Informationstechnologie und modernen Technologien.' }
+            ],
+            population: [{ bold: 'Einwohnerzahl:', text: ' etwa 595.000 Einwohner (2025)' }],
+            area: [{ bold: 'Fläche:', text: ' etwa 280 km²' }],
+            postalCode: [{ bold: 'Postleitzahl:', text: ' 44135–44388' }],
+            phone: [{ bold: 'Telefonvorwahl:', text: ' +49 0231' }],
+            officialSite: [{ bold: 'Offizielle Website von Dortmund', link: 'https://www.dortmund.de/' }]
+        },
+        geography: {
+            title: 'Geografie',
+            items: [
+                { text: 'Dortmund liegt im Osten des Ruhrgebiets – einer der größten Industrieregionen Europas.' },
+                { text: 'Die Stadt befindet sich zwischen den flachen Landschaften des Ruhrgebiets im Norden und den hügeligen Landschaften der Region Sauerland im Süden.' },
+                { text: 'Durch Dortmund verläuft der Dortmund-Ems-Kanal, der die Stadt mit der Nordsee und den größten Häfen Europas verbindet.' },
+                { text: 'Im Süden der Stadt befindet sich der Phoenix-See – ein künstlicher See und ein modernes Stadtviertel, das auf dem Gelände eines ehemaligen Stahlwerks errichtet wurde.' },
+                { text: 'Dortmund ist für seine Grünflächen bekannt: Es gibt zahlreiche Parks, Wälder und Radwege, besonders beliebt sind der Westfalenpark und der Rombergpark.' }
+            ]
+        },
+        notablePeople: {
+            title: 'Bekannte Persönlichkeiten aus Dortmund',
+            items: [
+                { bold: 'Reinhold Schneider', text: ' – deutscher Schriftsteller und Historiker, wurde in Dortmund geboren.' },
+                { bold: 'Nils-Alexander Seidel', text: ' – deutscher Schauspieler und Fernsehmoderator.' },
+                { bold: 'Mats Hummels', text: ' – deutscher Fußballspieler, Weltmeister von 2014, spielte für Borussia Dortmund.' },
+                { bold: 'Jürgen Klopp', text: ' – bekannter Fußballtrainer, war Cheftrainer des Vereins Borussia Dortmund.' },
+                { bold: 'Hans-Joachim Watzke', text: ' – Fußballmanager und Geschäftsführer von Borussia Dortmund.' }
+            ]
+        },
+        interestingFacts: {
+            title: 'Interessante Fakten',
+            items: [
+                { text: 'Dortmund ist eines der größten Fußballzentren Europas: Hier befindet sich das Stadion Signal Iduna Park – das größte Vereinsfußballstadion Deutschlands und eines der bekanntesten Stadien Europas.' },
+                { text: 'Der Fußballverein Borussia Dortmund gehört zu den bekanntesten und erfolgreichsten Vereinen des Landes.' },
+                { text: 'Im 19. und 20. Jahrhundert war die Stadt eines der Zentren der Kohle- und Stahlindustrie in Deutschland.' },
+                { text: 'Nach der Schließung der Bergwerke und Stahlwerke entwickelte Dortmund aktiv die Bereiche Technologie, Wissenschaft und Logistik.' },
+                { text: 'Die Technische Universität Dortmund (TU Dortmund) gilt als eine der führenden technischen Universitäten Deutschlands.' },
+                { text: 'In der Stadt finden zahlreiche Festivals und kulturelle Veranstaltungen statt, darunter Musikfestivals und große Weihnachtsmärkte.' }
+            ]
+        },
+        briefHistory: {
+            title: 'Geschichte',
+            items: [
+                { text: 'Die Geschichte Dortmunds reicht mehr als tausend Jahre zurück. Die ersten Erwähnungen einer Siedlung stammen aus dem 9. Jahrhundert, als sich hier ein kleiner Handelsplatz an einem wichtigen Handelsweg zwischen dem Rhein und Osteuropa befand.' },
+                { text: 'Im Mittelalter wurde Dortmund eine freie Reichsstadt und ein bedeutendes Handelszentrum des Hansebundes. Dank Handel und Handwerk entwickelte sich die Stadt schnell und wurde wohlhabend.' },
+                { text: 'Im 19. Jahrhundert begann die Industrialisierung. In der Region wurden Bergwerke und Stahlwerke eröffnet, wodurch Dortmund zu einem der größten Industriezentren Deutschlands wurde.' },
+                { text: 'Während des Zweiten Weltkriegs wurde die Stadt stark bombardiert und erheblich zerstört. Nach dem Krieg begann ein umfangreicher Wiederaufbau und eine Modernisierung.' },
+                { text: 'In der zweiten Hälfte des 20. Jahrhunderts geriet die traditionelle Industrie allmählich in den Niedergang, und die Stadt begann den Übergang zu einer wissensbasierten Wirtschaft.' },
+                { text: 'Heute ist Dortmund ein bedeutendes wissenschaftliches und technologisches Zentrum Deutschlands, in dem sich Informationstechnologie, Biotechnologie, Logistik und universitäre Forschung entwickeln.' }
+            ]
+        },
+        coord: { lat: 51.5136, lng: 7.4653 },
+        gerb: "Germany/nrw/arnsberg/dortmund/gerb.png",
+        meta: {
+            title: "Dortmund – große Stadt im Ruhrgebiet",
+            description: "Dortmund ist eine große Stadt im Ruhrgebiet (Ruhrgebiet) in Deutschland: Geschichte, Geografie, bekannte Persönlichkeiten und interessante Fakten.",
+            ogTitle: "Dortmund – Informationen über die Stadt",
+            ogDescription: "Detaillierte Informationen über Dortmund: Geschichte, Kultur, bekannte Persönlichkeiten und interessante Fakten.",
+            ogImage: "https://our-travels.info/foto/Germany/nrw/dortmund/dortmund-city/phoenix-see/001.jpg"
+        }
+    },
 
     // Köln округ
     // аахен
     {
-        id: 6,
+        id: "monschau",
         name: 'Monschau',
         path: "monschau",
         countryPath: "germany", regionsPath: "nrw", districtPath: "koln", subRegionPath: "aachen",
@@ -162,7 +231,7 @@ const datas = [
 
     // Rhein-Erft-Kreis
     {
-        id: 2,
+        id: "bruhl",
         name: 'Brühl',
         path: "bruhl",
         countryPath: "germany", regionsPath: "nrw", districtPath: "koln", subRegionPath: "rhein_erft",
@@ -224,7 +293,7 @@ const datas = [
         }
     },
     {
-        id: 3,
+        id: "frechen",
         name: 'Frechen',
         path: "frechen",
         countryPath: "germany", regionsPath: "nrw", districtPath: "koln", subRegionPath: "rhein_erft",
@@ -310,7 +379,7 @@ const datas = [
 
     //Rhein-Sieg-Kreis
     {
-        id: 4,
+        id: "konigswinter",
         name: 'Königswinter',
         path: "konigswinter",
         countryPath: "germany", regionsPath: "nrw", districtPath: "koln", subRegionPath: "rhein_sieg",
@@ -393,7 +462,7 @@ const datas = [
     // arnsberg округ
     // Märkischer Kreis
     {
-        id: 5,
+        id: "luedenscheid",
         name: 'Lüdenscheid',
         path: "luedenscheid",
         countryPath: "germany", regionsPath: "nrw", districtPath: "arnsberg", subRegionPath: "merkischer",
@@ -477,7 +546,7 @@ const datas = [
         }
     },
     {
-        id: 7,
+        id: "altena",
         name: 'Altena',
         path: "altena",
         countryPath: "germany", regionsPath: "nrw", districtPath: "arnsberg", subRegionPath: "merkischer",

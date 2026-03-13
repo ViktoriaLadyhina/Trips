@@ -51,7 +51,8 @@ const Home = () => {
         })}
       </ul>
       <h3 className="home__section">{homeData?.subtitle_2}</h3>
-      <img src={worldMap} alt="World map" className="home__worldMap" />
+      <div className="home__section-map"><img src={worldMap} alt="World map" className="home__worldMap" /></div>
+      
 
       <p className="home__desc">{homeData?.description_2}</p>
       <p className="home__desc">{homeData?.description_3}</p>

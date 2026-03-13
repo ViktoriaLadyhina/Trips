@@ -34,6 +34,7 @@ const t = {
     monschau: { ru: 'Город Моншау', de: 'Stadt Monschau', ua: 'Місто Моншау' },
     trier: { ru: 'Город Трир', de: 'Stadt Trier', ua: 'Місто Трір' },
     altena: { ru: 'Город Альтена', de: 'Stadt Altena', ua: 'Місто Альтена' },
+    dortmund: { ru: 'Город Дортмунд', de: 'Stadt Dortmund', ua: 'Місто Дортмунд' },
 
     sumy: { ru: 'Город Сумы', de: 'Stadt Sumy', ua: 'Місто Суми' }
   },
@@ -211,6 +212,12 @@ const Map = () => {
                   {/* Arnsberg */}
                   <li><Link to="/germany/nrw/arnsberg">{t.districts.arnsberg[lang]}</Link>
                     <ul>
+
+                      {/* Dortmund город */}
+                      <li><Link to="/germany/nrw/city/dortmund">{t.cities.dortmund[lang]}</Link></li>
+                    </ul>
+
+                    <ul>
                       <li><span>{t.districts.merkischer[lang]}</span>
                         <ul>
                           <li><Link to="/germany/nrw/arnsberg/luedenscheid">{t.cities.luedenscheid[lang]}</Link>
@@ -235,9 +242,9 @@ const Map = () => {
                             </ul>
                           </li>
                           <li><Link to="/germany/nrw/arnsberg/altena">{t.cities.altena[lang]}</Link>
-                                 <ul>
-                                  <li><Link to="/germany/nrw/arnsberg/altena/attractions/burg_altena">{t.attractions.burg_altena[lang]}</Link></li>
-                                </ul>                         
+                            <ul>
+                              <li><Link to="/germany/nrw/arnsberg/altena/attractions/burg_altena">{t.attractions.burg_altena[lang]}</Link></li>
+                            </ul>
                           </li>
                         </ul>
                       </li>

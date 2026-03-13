@@ -88,7 +88,7 @@ const datas = [
                 { id: 9, name: 'Bochum', hasInfo: false, path: "bochum", },
                 { id: 10, name: 'Wuppertal', hasInfo: false, path: "wuppertal", },
                 { id: 11, name: 'Gelsenkirchen', hasInfo: false, path: "gelsenkirchen", },
-                { id: 12, name: 'Dortmund', hasInfo: false, path: "dortmund", },
+                { id: 12, name: 'Dortmund', hasInfo: true, path: "dortmund", },
                 { id: 13, name: 'Duisburg', hasInfo: false, path: "duisburg", },
                 { id: 14, name: 'Düsseldorf', hasInfo: false, path: "duesseldorf", },
                 { id: 15, name: 'Solingen', hasInfo: false, path: "solingen", },

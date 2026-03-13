@@ -61,7 +61,7 @@ const datas = [
                     { id: 9, name: 'Бохум', hasInfo: false, path: "bochum", },
                     { id: 10, name: 'Вупперталь', hasInfo: false, path: "wuppertal", },
                     { id: 11, name: 'Гельзенкирхен', hasInfo: false, path: "gelsenkirchen", },
-                    { id: 12, name: 'Дортмунд', hasInfo: false, path: "dortmund", },
+                    { id: 12, name: 'Дортмунд', hasInfo: true, path: "dortmund", },
                     { id: 13, name: 'Дуйсбург', hasInfo: false, path: "duisburg", },
                     { id: 14, name: 'Дюссельдорф', hasInfo: false, path: "duesseldorf", },
                     { id: 15, name: 'Золинген', hasInfo: false, path: "solingen", },
