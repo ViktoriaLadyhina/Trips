@@ -158,7 +158,8 @@ const t = {
     karneval_koln_city: { ru: "проходит в Кёльне – неофициальной столице карнавала, а также во многих городах Рейнской области", ua: "відбувається в Кельні – неофіційній столиці карнавалу, а також у багатьох містах Рейнської області", de: "Findet in Köln – der inoffiziellen Karnevalshauptstadt – sowie in zahlreichen Städten des Rheinlandes statt" },
     winterleuchten_dortmund: { ru: "Сад света в Вестфаленпарке", ua: "Сад світла у Вестфаленпарку", de: "Winterleuchten im Westfalenpark" },
     winterleuchten_dortmund_city: { ru: "проходит в Дортмунде, в Вестфаленпарке", ua: "відбувається в Дортмунді, у Вестфаленпарку", de: "Findet in Dortmund, im Westfalenpark statt" },
-  }
+    christmas_market_dortmund: { ru: "Рождественская ярмарка и главная рождественская ёлка Дортмунда", ua: "Різдвяний ярмарок і головна різдвяна ялинка Дортмунда", de: "Weihnachtsmarkt und der große Weihnachtsbaum in Dortmund" },
+  }, 
 };
 
 const Map = () => {
@@ -186,6 +187,7 @@ const Map = () => {
               <li>{lang === 'ru' ? 'Мероприятия/События' : lang === 'de' ? 'Veranstaltungen' : 'Заходи'}
                 <ul>
                   <li><Link to="/germany/nrw/city/koln/events/karneval_koln">{t.events.karneval_koln[lang]}</Link> <span className="smaller-text"> ({t.events.karneval_koln_city[lang]})</span></li>
+                  <li><Link to="/germany/nrw/city/dortmund/events/christmas_market_dortmund">{t.events.christmas_market_dortmund[lang]}</Link> </li>
                   <li><Link to="/germany/nrw/city/dortmund/events/winterleuchten_dortmund">{t.events.winterleuchten_dortmund[lang]}</Link> <span className="smaller-text"> ({t.events.winterleuchten_dortmund_city[lang]})</span></li>
                 </ul>
               </li>

@@ -446,6 +446,18 @@ export const Fotos = {
       ],
       winterleuchten_dortmund: [
         { path: "Germany/nrw/arnsberg/dortmund/westfalenpark/winterleuchten/001.jpg", title: { ru: "Сад света в Вестфаленпарке (фото взято с интернета)", ua: "Сад світла у Вестфаленпарку (фото взято з Інтернету)", de: "Lichtergarten im Westfalenpark (Foto aus dem Internet)" } },
+      ],
+      christmas_market_dortmund: [
+        { path: "Germany/nrw/arnsberg/dortmund/christmas/001.jpeg", title: { ru: "Рождественская ярмарка и главная рождественская ёлка Дортмунда, 2025", ua: "Різдвяний ярмарок і головна різдвяна ялинка Дортмунда, 2025", de: "Weihnachtsmarkt und der große Weihnachtsbaum in Dortmund, 2025" } },
+        { path: "Germany/nrw/arnsberg/dortmund/christmas/002.jpeg", title: { ru: "Рождественская ярмарка и главная рождественская ёлка Дортмунда, 2025", ua: "Різдвяний ярмарок і головна різдвяна ялинка Дортмунда, 2025", de: "Weihnachtsmarkt und der große Weihnachtsbaum in Dortmund, 2025" } },
+        { path: "Germany/nrw/arnsberg/dortmund/christmas/003.jpeg", title: { ru: "Рождественская ярмарка и главная рождественская ёлка Дортмунда, 2025", ua: "Різдвяний ярмарок і головна різдвяна ялинка Дортмунда, 2025", de: "Weihnachtsmarkt und der große Weihnachtsbaum in Dortmund, 2025" } },
+        { path: "Germany/nrw/arnsberg/dortmund/christmas/004.jpeg", title: { ru: "Рождественская ярмарка и главная рождественская ёлка Дортмунда, 2025", ua: "Різдвяний ярмарок і головна різдвяна ялинка Дортмунда, 2025", de: "Weihnachtsmarkt und der große Weihnachtsbaum in Dortmund, 2025" } },
+        { path: "Germany/nrw/arnsberg/dortmund/christmas/005.jpeg", title: { ru: "Рождественская ярмарка и главная рождественская ёлка Дортмунда, 2025", ua: "Різдвяний ярмарок і головна різдвяна ялинка Дортмунда, 2025", de: "Weihnachtsmarkt und der große Weihnachtsbaum in Dortmund, 2025" } },
+        { path: "Germany/nrw/arnsberg/dortmund/christmas/006.jpeg", title: { ru: "Рождественская ярмарка и главная рождественская ёлка Дортмунда, 2025", ua: "Різдвяний ярмарок і головна різдвяна ялинка Дортмунда, 2025", de: "Weihnachtsmarkt und der große Weihnachtsbaum in Dortmund, 2025" } },
+        { path: "Germany/nrw/arnsberg/dortmund/christmas/007.jpeg", title: { ru: "Рождественская ярмарка и главная рождественская ёлка Дортмунда, 2025", ua: "Різдвяний ярмарок і головна різдвяна ялинка Дортмунда, 2025", de: "Weihnachtsmarkt und der große Weihnachtsbaum in Dortmund, 2025" } },
+        { path: "Germany/nrw/arnsberg/dortmund/christmas/008.jpeg", title: { ru: "Рождественская ярмарка и главная рождественская ёлка Дортмунда, 2025", ua: "Різдвяний ярмарок і головна різдвяна ялинка Дортмунда, 2025", de: "Weihnachtsmarkt und der große Weihnachtsbaum in Dortmund, 2025" } },
+        { path: "Germany/nrw/arnsberg/dortmund/christmas/009.jpeg", title: { ru: "Рождественская ярмарка и главная рождественская ёлка Дортмунда, 2025", ua: "Різдвяний ярмарок і головна різдвяна ялинка Дортмунда, 2025", de: "Weihnachtsmarkt und der große Weihnachtsbaum in Dortmund, 2025" } },
+        { path: "Germany/nrw/arnsberg/dortmund/christmas/010.jpeg", title: { ru: "Рождественская ярмарка и главная рождественская ёлка Дортмунда, 2025", ua: "Різдвяний ярмарок і головна різдвяна ялинка Дортмунда, 2025", de: "Weihnachtsmarkt und der große Weihnachtsbaum in Dortmund, 2025" } },
       ]
     },
     luedenscheid: {

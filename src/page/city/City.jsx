@@ -95,7 +95,10 @@ const City = () => {
                         {/* ------------------- Раздел мероприятий ------------------- */}
                         {cityEvents && cityEvents.length > 0 && (
                             <div className="city__events">
-                                <h2>{lang === "ru" ? "Мероприятия" : lang === "de" ? "Veranstaltungen" : "Заходи"}</h2>
+
+                                <h2 className="city__events-title"> {lang === "ru" ? "Мероприятия" : lang === "de" ? "Veranstaltungen" : "Заходи"} </h2>
+
+                                {/* ===== TABLE (desktop) ===== */}
                                 <table className="city__events-table">
                                     <thead>
                                         <tr>
@@ -104,18 +107,39 @@ const City = () => {
                                             <th>{lang === "ru" ? "Даты" : lang === "de" ? "Datum" : "Дати"}</th>
                                         </tr>
                                     </thead>
+
                                     <tbody>
                                         {cityEvents.map(ev => (
                                             <tr key={ev.id}>
-                                                <td data-label={lang === "ru" ? "Название" : lang === "de" ? "Name" : "Назва"}>
-                                                    <Link to={`/${countryPath}/${regionPath}/${districtPath}/${cityPath}/events/${ev.path}`}>{ev.name}</Link>
-                                                </td>
-                                                <td data-label={lang === "ru" ? "Короткое описание" : lang === "de" ? "Kurze Beschreibung" : "Короткий опис"}>{ev.short_description}</td>
-                                                <td data-label={lang === "ru" ? "Даты" : lang === "de" ? "Datum" : "Дати"}>{ev.date}</td>
+                                                <td><Link to={`/${countryPath}/${regionPath}/${districtPath}/${cityPath}/events/${ev.path}`}>{ev.name}</Link> </td>
+                                                <td>{ev.short_description}</td>
+                                                <td>{ev.date}</td>
                                             </tr>
                                         ))}
                                     </tbody>
                                 </table>
+
+
+                                {/* ===== CARDS (mobile) ===== */}
+                                <div className="city-events-cards">
+                                    {cityEvents.map(ev => (
+                                        <div key={ev.id} className="city-events-card">
+
+                                            <div className="city-events-row">
+                                                <strong>{lang === "ru" ? "Название:" : lang === "de" ? "Name:" : "Назва:"}</strong>{" "}
+                                                <Link to={`/${countryPath}/${regionPath}/${districtPath}/${cityPath}/events/${ev.path}`}> {ev.name} </Link>
+                                            </div>
+
+                                            <div className="city-events-row">
+                                                {ev.short_description}
+                                            </div>
+
+                                            <div className="city-events-row">
+                                                <strong>{lang === "ru" ? "Даты:" : lang === "de" ? "Datum:" : "Дати:"}</strong>{" "}{ev.date}
+                                            </div>
+                                        </div>
+                                    ))}
+                                </div>
                             </div>
                         )}
                         {/* ---------------------------------------------------------- */}

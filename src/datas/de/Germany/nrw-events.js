@@ -95,6 +95,48 @@ const datas = [
             ogImage: "https://our-travels.info/foto/Germany/nrw/arnsberg/dortmund/westfalenpark/winterleuchten/001.jpg"
         }
     },
+    {
+        id: "christmas_market_dortmund",
+        name: "Weihnachtsmarkt und der große Weihnachtsbaum in Dortmund",
+        path: "christmas_market_dortmund",
+        countryPath: "germany", regionsPath: "nrw", districtPath: "city",
+        cities: ["dortmund"],
+        season: "winter", type: "light_installation",
+        fotoCard: "Germany/nrw/arnsberg/dortmund/christmas/001.jpeg",
+        location: "Dortmund, Deutschland",
+        date: "Jährlich im Dezember",
+        short_description: "Der jährliche Weihnachtsmarkt in Dortmund mit dem hohen Weihnachtsbaum, festlicher Beleuchtung, traditionellen Leckereien, Glühwein und Unterhaltung für die ganze Familie. Für die volle Atmosphäre wird empfohlen, den Markt am Abend zu besuchen, wenn die Lichter ihre magische Wirkung entfalten.",
+        full_description: {
+            title: "Beschreibung und Geschichte",
+            items: [
+                { text: "Jährlich verwandelt der <b>Weihnachtsmarkt Christmas Market Dortmund</b> das Stadtzentrum von Dortmund in ein wahres Wintermärchen. Die Straßen und Plätze sind mit funkelnden Lichtern, Düften von heißem Glühwein und frischem Gebäck erfüllt, während festliche Melodien in der Luft erklingen und eine unvergleichliche Weihnachtsatmosphäre schaffen." },
+                { text: "Die Hauptattraktion des Marktes ist der <b>hohe Weihnachtsbaum</b> auf dem Hansaplatz. Der Baum besteht aus etwa 1 200 Norwegischen Fichten (Norway spruce), die speziell vom Forstbetrieb Schulte‑Brinker in der Waldregion Sauerland und im Rothaargebirge gezüchtet werden. Er wurde erstmals 1996 auf dem Platz aufgestellt und ist seitdem zum Symbol der Weihnachtsstadt geworden. Die Konstruktion wird jährlich modernisiert: Lichter werden erneuert und klassische Dekorationen hinzugefügt, um modernen und traditionellen Stil zu verbinden. Der Baum ist mit etwa 138 000 LED-Lichtern geschmückt, und an seiner Spitze befindet sich ein Engel von etwa 4 Metern Höhe mit animierten Flügelbewegungen. Jeden Abend verwandelt sich das Stadtzentrum durch die Lichtshow in eine zauberhafte Winterlandschaft." },
+                { text: "Rund um den Baum und auf den angrenzenden Plätzen befinden sich über 250 Stände, die dekoratives Kunsthandwerk, Weihnachtsdekorationen, Spielzeug, Souvenirs und festliche Waren anbieten. Besucher können traditionelle Gerichte probieren – Bratwurst vom Grill, westfälischen Schinken, Dortmunder Kartoffeln, frischen Fisch und Käse, und Naschkatzen – geröstete Mandeln, Schokolade und warme Pfannkuchen. Besonders dekorativ sind die Sammlertassen für Glühwein, die jedes Jahr wechseln und von vielen Gästen als Souvenir gesammelt werden." },
+                { text: "Für Kinder verwandelt sich die Weihnachtsstadt in einen zauberhaften Ort: Sie spazieren durch das Weihnachtsdorf, nehmen an Theater- und Märchenshows teil, sehen Aufführungen mit Hohnsteiner Kasper und genießen die festliche Animation." },
+                { text: "Der Markt und der Baum ziehen Tausende von Touristen und Einheimischen an. Licht, Musik, Düfte und die lebhafte Menge schaffen das Gefühl eines echten Weihnachtswunders, das jedem Besucher lange in Erinnerung bleibt." },
+                { text: "Für die volle Weihnachtsatmosphäre wird empfohlen, den Markt nach Einbruch der Dunkelheit zu besuchen. Nur dann entfalten der Baum und die Lichter ihren Zauber, und das Stadtzentrum verwandelt sich in eine echte winterliche Märchenlandschaft." }
+            ]
+        },
+        interestingFacts: {
+            title: "Interessante Fakten",
+            items: [
+                { bold: "Der höchste Weihnachtsbaum Europas", text: "– etwa 45 Meter hoch, zusammengesetzt aus etwa 1 200 Norwegischen Fichten. Die Konstruktion wiegt rund 40 Tonnen." },
+                { bold: "LED-Lichter", text: "– der Baum ist mit etwa 138 000 LED-Lichtern geschmückt, die jeden Abend für die Lichtshow eingeschaltet werden und das Stadtzentrum in eine märchenhafte Winterstadt verwandeln." },
+                { bold: "Engel an der Spitze", text: "– der Engel mit animierten Flügelbewegungen von etwa 4 Metern Höhe ist aus verschiedenen Teilen der Stadt sichtbar." },
+                { bold: "Historische Tradition", text: "– der Baum wurde erstmals 1996 auf dem Hansaplatz aufgestellt und schmückt seitdem jährlich das Stadtzentrum, wobei er jährlich modernisiert wird und klassischen mit modernem Stil kombiniert." },
+                { bold: "Sammlertassen für Glühwein", text: "– jeder Weihnachtsmarkt hat ein einzigartiges Design der Tassen, die von vielen Besuchern als Souvenir gesammelt werden." },
+                { bold: "Ort für Familien", text: "– das Weihnachtsdorf mit dem Puppentheater Hohnsteiner Kasper, Theater- und Märchenshows zieht Tausende Kinder an und schafft eine besondere festliche Atmosphäre." },
+                { bold: "Waldherkunft der Bäume", text: "– alle Bäume werden speziell vom Forstbetrieb Schulte‑Brinker in der Waldregion Sauerland und im Rothaargebirge gezüchtet, was den Markt ökologisch bewusst macht." }
+            ]
+        },
+        meta: {
+            title: "Weihnachtsmarkt in Dortmund – Weihnachtsstadt mit Hauptbaum",
+            description: "Der jährliche Weihnachtsmarkt in Dortmund mit hohem Baum auf dem Hansaplatz, festlicher Beleuchtung, Glühwein, traditionellen Leckereien und Unterhaltung für die ganze Familie.",
+            ogTitle: "Weihnachtsmarkt in Dortmund – Weihnachtsstadt mit Hauptbaum",
+            ogDescription: "Markt mit über 250 Ständen, Weihnachtsbaum von 45 m Höhe und festlicher Atmosphäre im Stadtzentrum.",
+            ogImage: "https://our-travels.info/foto/Germany/nrw/arnsberg/dortmund/christmas/001.jpg"
+        }
+    },
 ];
 
 export default datas;

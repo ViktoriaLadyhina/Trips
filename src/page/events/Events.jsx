@@ -8,6 +8,9 @@ import { photosByCountry } from '../../datas/fotos/index.js';
 
 const BASE_PHOTO_URL = import.meta.env.VITE_BASE_PHOTO_URL;
 
+const period = { ru: "Период", ua: "Період", de: "Zeitraum" }
+const location = { ru: "Место проведения", ua: "Місце проведення", de: "Veranstaltungsort" }
+
 const Event = () => {
     const { districtPath, eventPath } = useParams();
     const { country, region, district, parentSubRegion, city, events, lang, error } = useCityFullData();
@@ -47,9 +50,9 @@ const Event = () => {
         <div className="event">
             <BreadCrumbs crumbs={crumbs} />
 
-            <div className='attraction__title'>{event.name && (event.name)}</div>
-            <div className='attraction__desc'>
-                <div className='attraction__desc-foto'>
+            <div className='event__title'>{event.name && (event.name)}</div>
+            <div className='event__desc'>
+                <div className='event__desc-foto'>
                     {event.fotoCard && (
                         <img
                             src={`${BASE_PHOTO_URL}${event.fotoCard}`}
@@ -58,16 +61,25 @@ const Event = () => {
                     )}
                 </div>
 
-                {event.date && (<InfoBlock data={event.date} className="attraction__desc-date" />)}
-                {event.full_description && (<InfoBlock data={event.full_description} className="attraction__desc-full_description" />)}
-                {/* {attraction.legends && (<InfoBlock data={attraction.legends} className="attraction__desc-full_description" />)} */}
-                {event.sub_objects && (<InfoBlock data={event.sub_objects} className="attraction__desc-sub_objects" />)}
-                {/* {attraction.relics && (<InfoBlock data={attraction.relics} className="attraction__desc-relics" />)} */}
-                {/* {attraction.hotels && (<InfoBlock data={attraction.hotels} className="attraction__desc-hotels" />)} */}
-                {event.interestingFacts && (<InfoBlock data={event.interestingFacts} className="attraction__desc-interestingFacts" />)}
+                {event.date && (
+                    <div className='event__desc-date'>
+                        <span className='event__desc-date-bold'>{period[lang]}:</span>
+                        <span className='event__desc-date-text'>{" "}{event.date}</span>
+                    </div>
+                )}
 
+                {event.location && (
+                    <div className='event__desc-date'>
+                        <span className='event__desc-date-bold'>{location[lang]}:</span>
+                        <span className='event__desc-date-text'>{" "}{event.location}</span>
+                    </div>
+                )}
 
-                {event?.officialSite && (<InfoBlock data={event.officialSite} className="attraction__desc-officialSite" />)} 
+                {event.full_description && (<InfoBlock data={event.full_description} className="event__desc-full_description" />)}
+                {event.sub_objects && (<InfoBlock data={event.sub_objects} className="event__desc-sub_objects" />)}
+                {event.interestingFacts && (<InfoBlock data={event.interestingFacts} className="event__desc-interestingFacts" />)}
+
+                {event?.officialSite && (<InfoBlock data={event.officialSite} className="event__desc-officialSite" />)} 
 
                 {images.length > 0 && <Gallery images={images} />}
             </div>
