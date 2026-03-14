@@ -40,9 +40,6 @@ const City = () => {
         { label: city.name }
     ];
 
-    console.log(city);
-    
-
     return (
         <div className='city'>
             {city && (

@@ -12,15 +12,22 @@
     }
   }
 
+  .smaller-text {
+    font-size: 0.8em; 
+  }
+
   // медиазапрос для экранов ≤400px
   @media (max-width: 400px) {
-    // выбираем все ul на любых уровнях вложенности внутри .map
-    ul, ul ul, ul ul ul, ul ul ul ul {
+
+    ul,
+    ul ul,
+    ul ul ul,
+    ul ul ul ul {
       padding-left: 8px;
     }
 
     a {
-      @include small-text; 
+      @include small-text;
     }
   }
 }

@@ -47,7 +47,54 @@ const datas = [
             ogDescription: "Der Hauptkarnevalsumzug Rosenmontag und die Weiberfastnacht machen den Kölner Karneval zu einem einzigartigen Ereignis in Deutschland.",
             ogImage: "https://our-travels.info/foto/Germany/nrw/koln/koln-city/karneval/001.jpg"
         }
-    }
-]; 
+    },
+    {
+        id: "winterleuchten_dortmund",
+        name: "Winterleuchten im Westfalenpark",
+        path: "winterleuchten_dortmund",
+        countryPath: "germany", regionsPath: "nrw", districtPath: "city",
+        cities: ["dortmund"],
+        season: "winter", type: "light_installation",
+        fotoCard: "Germany/nrw/arnsberg/dortmund/westfalenpark/winterleuchten/001.jpg",
+        location: "Dortmund, Deutschland",
+        date: "Jährlich. Üblicherweise von Anfang Dezember bis Anfang Januar (ca. 6. Dezember – 4. Januar)",
+        short_description: "Das Winterleuchten ist ein jährliches Festival der Lichtinstallationen im Westfalenpark in Dortmund. An Winterabenden verwandelt sich der Park in eine große künstlerische Lichtausstellung mit beleuchteten Bäumen, Wegen, Skulpturen und thematischen Kompositionen.",
+        full_description: {
+            title: "Beschreibung und Geschichte",
+            items: [
+                { bold: "Das Winterleuchten", text: " – ist ein jährliches Festival der Lichtinstallationen, das im Winter im Westfalenpark in Dortmund stattfindet. Nach Einbruch der Dunkelheit verwandelt sich der Park in eine große künstlerische Fläche: Bäume, Alleen, Brücken und Gebäude werden mit hunderten farbigen Scheinwerfern beleuchtet und schaffen die Atmosphäre eines märchenhaften Wintergartens." },
+                { text: "Während des Festivals können Besucher entlang speziell beleuchteter Wege spazieren und zahlreiche Lichtkompositionen entdecken. Dabei werden farbige Scheinwerfer, Projektionen, Lichtfiguren und künstlerische Installationen eingesetzt, die jedes Jahr verändert werden. Dadurch sieht jede Ausgabe des Festivals anders aus." },
+                { bold: "Geschichte", text: "Das Festival Winterleuchten wurde als winterliches Kulturprojekt des Westfalenparks geschaffen. Ziel war es, Besucher auch in der kalten Jahreszeit in den Park zu locken und vertraute Landschaften in einem ungewöhnlichen künstlerischen Licht zu präsentieren." },
+                { text: "Mit der Zeit entwickelte sich das Festival zu einer der bekanntesten Winterveranstaltungen in Dortmund. Jedes Jahr arbeiten Lichtkünstler und Designer an neuen Kompositionen und visuellen Konzepten. Heute zieht Winterleuchten tausende Besucher an und gilt als eines der größten Lichtfestivals der Region." },
+                { text: "Das Festival ist besonders beliebt bei Familien, Fotografen und Liebhabern von Abendspaziergängen. Durch die Kombination von Natur, Kunst und Technologie entsteht eine einzigartige Atmosphäre im winterlichen Park." }
+            ]
+        },
+        sub_objects: {
+            title: "Wichtige Elemente des Festivals",
+            items: [
+                { bold: "Lichtalleen", text: "Die Spazierwege des Parks werden mit farbigen Scheinwerfern und Lichtbögen beleuchtet und erzeugen den Eindruck eines märchenhaften Korridors." },
+                { bold: "Künstlerische Lichtinstallationen", text: "Im Park werden Lichtfiguren, Skulpturen und Projektionen installiert, die thematische Kompositionen bilden." },
+                { bold: "Beleuchtung von Bäumen und Landschaft", text: "Bäume, Sträucher und Wasserflächen werden mit künstlerischem Licht beleuchtet, das die natürliche Struktur des Parks hervorhebt." },
+                { bold: "Aussichtspunkte und Panoramen", text: "Einige Bereiche des Parks sind als besondere Orte für Beobachtung und Fotografie der Lichtinstallationen gestaltet." }
+            ]
+        },
+        interestingFacts: {
+            title: "Interessante Fakten",
+            items: [
+                { text: "Während des Festivals wird ein großer Teil des Parks beleuchtet und es entstehen zahlreiche unterschiedliche Lichtszenerien." },
+                { text: "Jedes Jahr entwickeln Lichtkünstler und Designer neue Kompositionen, sodass sich das Erscheinungsbild des Festivals ständig verändert." },
+                { text: "Besonders beliebt bei Besuchern sind Fotospots und Lichttunnel, die den Eindruck eines Spaziergangs durch einen märchenhaften Lichtergarten vermitteln." },
+                { text: "Das Festival findet am Abend und in der Nacht statt, wenn sich der Park durch die künstlerische Beleuchtung vollständig verwandelt." }
+            ]
+        },
+        meta: {
+            title: "Winterleuchten in Dortmund – Lichtfestival im Westfalenpark",
+            description: "Das Winterleuchten ist ein Winterfestival der Lichtinstallationen im Westfalenpark in Dortmund.",
+            ogTitle: "Winterleuchten in Dortmund",
+            ogDescription: "Das Festival der Lichtinstallationen im Westfalenpark verwandelt den winterlichen Park in eine beeindruckende Lichtausstellung.",
+            ogImage: "https://our-travels.info/foto/Germany/nrw/arnsberg/dortmund/westfalenpark/winterleuchten/001.jpg"
+        }
+    },
+];
 
 export default datas;

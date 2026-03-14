@@ -152,6 +152,12 @@ const t = {
     sumy_altanka: { ru: 'Альтанка', de: 'Der Pavillon', ua: 'Альтанка' },
 
     Unesco_Title: { ru: "Достопримечательности ЮНЕСКО", ua: "Пам’ятки ЮНЕСКО", de: "UNESCO-Welterbestätten" }
+  },
+  events: {
+    karneval_koln: { ru: "Кельнский карнавал", ua: "Кельнський карнавал", de: "Kölner Karneval" },
+    karneval_koln_city: { ru: "проходит в Кёльне – неофициальной столице карнавала, а также во многих городах Рейнской области", ua: "відбувається в Кельні – неофіційній столиці карнавалу, а також у багатьох містах Рейнської області", de: "Findet in Köln – der inoffiziellen Karnevalshauptstadt – sowie in zahlreichen Städten des Rheinlandes statt" },
+    winterleuchten_dortmund: { ru: "Сад света в Вестфаленпарке", ua: "Сад світла у Вестфаленпарку", de: "Winterleuchten im Westfalenpark" },
+    winterleuchten_dortmund_city: { ru: "проходит в Дортмунде, в Вестфаленпарке", ua: "відбувається в Дортмунді, у Вестфаленпарку", de: "Findet in Dortmund, im Westfalenpark statt" },
   }
 };
 
@@ -179,7 +185,8 @@ const Map = () => {
             <ul>
               <li>{lang === 'ru' ? 'Мероприятия/События' : lang === 'de' ? 'Veranstaltungen' : 'Заходи'}
                 <ul>
-                  <li><Link to="/germany/nrw/city/koln/events/karneval_koln">{lang === 'ru' ? 'Кельнский карнавал' : lang === 'de' ? 'Kölner Karneval' : 'Кельнський карнавал'}</Link></li>
+                  <li><Link to="/germany/nrw/city/koln/events/karneval_koln">{t.events.karneval_koln[lang]}</Link> <span className="smaller-text"> ({t.events.karneval_koln_city[lang]})</span></li>
+                  <li><Link to="/germany/nrw/city/dortmund/events/winterleuchten_dortmund">{t.events.winterleuchten_dortmund[lang]}</Link> <span className="smaller-text"> ({t.events.winterleuchten_dortmund_city[lang]})</span></li>
                 </ul>
               </li>
 
@@ -226,7 +233,7 @@ const Map = () => {
                     <ul>
                       <li><span>{t.districts.merkischer[lang]}</span>
 
-                      {/* Lüdenscheid */}
+                        {/* Lüdenscheid */}
                         <ul>
                           <li><Link to="/germany/nrw/arnsberg/luedenscheid">{t.cities.luedenscheid[lang]}</Link>
                             <ul>

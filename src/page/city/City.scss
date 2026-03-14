@@ -127,7 +127,9 @@
 
     h2 {
       font-size: 1.8rem;
-      margin-bottom: 1rem;
+      margin-bottom: 2rem;
+      padding-bottom: 15px;
+      @include h3();
     }
 
     &-table {
@@ -151,6 +153,7 @@
             padding: 0.5rem 1rem;
             vertical-align: top;
             text-align: left;
+            @include body-text;
           }
 
           a {

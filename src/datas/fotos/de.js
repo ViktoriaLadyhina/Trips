@@ -443,6 +443,9 @@ export const Fotos = {
         { path: "Germany/nrw/arnsberg/dortmund/westfalenpark/013.jpg", title: { ru: "Вестфаленпарк, 2023", ua: "Вестфаленпарк, 2023", de: "Westfalenpark, 2023" } },
         { path: "Germany/nrw/arnsberg/dortmund/westfalenpark/014.jpg", title: { ru: "Вестфаленпарк, 2023", ua: "Вестфаленпарк, 2023", de: "Westfalenpark, 2023" } },
         { path: "Germany/nrw/arnsberg/dortmund/westfalenpark/015.jpg", title: { ru: "Вестфаленпарк, 2023", ua: "Вестфаленпарк, 2023", de: "Westfalenpark, 2023" } },
+      ],
+      winterleuchten_dortmund: [
+        { path: "Germany/nrw/arnsberg/dortmund/westfalenpark/winterleuchten/001.jpg", title: { ru: "Сад света в Вестфаленпарке (фото взято с интернета)", ua: "Сад світла у Вестфаленпарку (фото взято з Інтернету)", de: "Lichtergarten im Westfalenpark (Foto aus dem Internet)" } },
       ]
     },
     luedenscheid: {
