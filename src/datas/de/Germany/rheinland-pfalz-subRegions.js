@@ -319,7 +319,7 @@ const datas =
                 { id: 16, name: "Ockfen", hasInfo: false },
                 { id: 17, name: "Palzem", hasInfo: false },
                 { id: 18, name: "Paschel", hasInfo: false },
-                { id: 19, name: "Saarburg", hasInfo: false },
+                { id: 19, name: "Saarburg", hasInfo: true, path: "saarburg", },
                 { id: 20, name: "Schillingen", hasInfo: false },
                 { id: 21, name: "Schoden", hasInfo: false },
                 { id: 22, name: "Schömerich", hasInfo: false },

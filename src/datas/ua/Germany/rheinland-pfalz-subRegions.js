@@ -321,7 +321,7 @@ const datas =
                 { id: 16, name: "Окфен", hasInfo: false },
                 { id: 17, name: "Пальцем", hasInfo: false },
                 { id: 18, name: "Пашель", hasInfo: false },
-                { id: 19, name: "Саарбург", hasInfo: false },
+                { id: 19, name: "Саарбург", hasInfo: true, path: "saarburg" },
                 { id: 20, name: "Шилінген", hasInfo: false },
                 { id: 21, name: "Шоден", hasInfo: false },
                 { id: 22, name: "Шёмеріх", hasInfo: false },

@@ -27,15 +27,17 @@ const t = {
     trier_saarburg: { ru: 'Район Трир-Саарбург', de: 'Landkreis Trier-Saarburg', ua: 'Район Трір-Саарбург' }
   },
   cities: {
+    koln: { ru: 'Город Кёльн', de: 'Stadt Köln', ua: 'Місто Кельн' },
     bruhl: { ru: 'Город Брюль', de: 'Stadt Brühl', ua: 'Місто Брюль' },
     frechen: { ru: 'Город Фрехен', de: 'Stadt Frechen', ua: 'Місто Фрехен' },
-    koln: { ru: 'Город Кёльн', de: 'Stadt Köln', ua: 'Місто Кельн' },
+    dortmund: { ru: 'Город Дортмунд', de: 'Stadt Dortmund', ua: 'Місто Дортмунд' },
     luedenscheid: { ru: 'Город Люденшайд', de: 'Stadt Lüdenscheid', ua: 'Місто Люденшайд' },
+    altena: { ru: 'Город Альтена', de: 'Stadt Altena', ua: 'Місто Альтена' },
     konigswinter: { ru: 'Город Кёнигсвинтер', de: 'Stadt Königswinter', ua: 'Місто Кенігсвінтер' },
     monschau: { ru: 'Город Моншау', de: 'Stadt Monschau', ua: 'Місто Моншау' },
+
     trier: { ru: 'Город Трир', de: 'Stadt Trier', ua: 'Місто Трір' },
-    altena: { ru: 'Город Альтена', de: 'Stadt Altena', ua: 'Місто Альтена' },
-    dortmund: { ru: 'Город Дортмунд', de: 'Stadt Dortmund', ua: 'Місто Дортмунд' },
+    saarburg: { ru: 'Город Саарбург', de: 'Stadt Saarburg', ua: 'Місто Саарбург' },
 
     sumy: { ru: 'Город Сумы', de: 'Stadt Sumy', ua: 'Місто Суми' }
   },
@@ -160,7 +162,7 @@ const t = {
     winterleuchten_dortmund: { ru: "Сад света в Вестфаленпарке", ua: "Сад світла у Вестфаленпарку", de: "Winterleuchten im Westfalenpark" },
     winterleuchten_dortmund_city: { ru: "проходит в Дортмунде, в Вестфаленпарке", ua: "відбувається в Дортмунді, у Вестфаленпарку", de: "Findet in Dortmund, im Westfalenpark statt" },
     christmas_market_dortmund: { ru: "Рождественская ярмарка и главная рождественская ёлка Дортмунда", ua: "Різдвяний ярмарок і головна різдвяна ялинка Дортмунда", de: "Weihnachtsmarkt und der große Weihnachtsbaum in Dortmund" },
-  }, 
+  },
 };
 
 const Map = () => {
@@ -198,11 +200,17 @@ const Map = () => {
                 <ul>
 
                   {/* Район Майен‑Кобленц */}
-                  <li><Link to="/germany/rheinland-pfalz/mayen-koblenz">{t.districts.mayen_koblenz[lang]}</Link></li>
+                  <li><Link to="/germany/rheinland-pfalz/mayen_koblenz">{t.districts.mayen_koblenz[lang]}</Link></li>
 
                   {/* Район Трир-Саарбург */}
-                  <li><Link to="/germany/rheinland-pfalz/trier_saarburg">{t.districts.trier_saarburg[lang]}</Link></li>
+                  <li><Link to="/germany/rheinland-pfalz/trier_saarburg">{t.districts.trier_saarburg[lang]}</Link>
+                    <ul>
 
+                      {/* Саарбург - город */}
+                      <li><Link to="/germany/rheinland-pfalz/trier_saarburg/saarburg">{t.cities.saarburg[lang]}</Link></li>
+                    </ul>
+                  </li>
+                  
                   {/* Трир - город */}
                   <li><Link to="/germany/rheinland-pfalz/city/trier">{t.cities.trier[lang]}</Link>
                     <ul>

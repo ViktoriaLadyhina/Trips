@@ -598,6 +598,12 @@ export const Fotos = {
         { path: "Germany/rheinland-pfalz/trier-city/liebfrauenkirche/004.jpg", title: { ru: "Церковь Богоматери (фото взято с интернета)", ua: "Церква Богородиці (фото взято з Інтернету)", de: "Liebfrauenkirche (Foto aus dem Internet)" } },
         { path: "Germany/rheinland-pfalz/trier-city/liebfrauenkirche/005.jpg", title: { ru: "Церковь Богоматери - Саркофаговый алтарь Теодора и Теодериха фон Хорста (фото взято с интернета)", ua: "Церква Богородиці - Саркофаговий вівтар Теодора і Теодеріха фон Хорста (фото взято з Інтернету)", de: "Liebfrauenkirche - Grabaltar von Theodor und Theoderich von Horst (Foto aus dem Internet)" } },
       ],
+    },
+    saarburg: {
+      gallery: [
+        { path: "Germany/rheinland-pfalz/trier_saarburg/saarburg_kell/saarburg/001.jpg", title: { ru: "Саарбург, 2024", ua: "Саарбург, 2024", de: "Saarburg, 2024" } },
+        { path: "Germany/rheinland-pfalz/trier_saarburg/saarburg_kell/saarburg/002.jpg", title: { ru: "Саарбург, 2024", ua: "Саарбург, 2024", de: "Saarburg, 2024" } },
+      ],
     }
   }
 }
