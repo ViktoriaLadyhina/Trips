@@ -40,11 +40,11 @@ const District = () => {
     }
   }, [location.search]);
 
-     useEffect(() => {
+  useEffect(() => {
     if (district?.name) {
-        document.title = district.name;
+      document.title = district.name;
     }
-}, [district?.name]);
+  }, [district?.name]);
 
   if (error) return <p>{error}</p>;
   if (!district) return <p>District not found</p>;
@@ -72,36 +72,42 @@ const District = () => {
             regionKey={region?.path}
             districtKey={district?.path}
             regions={region}
-            subRegion={subRegion} 
+            subRegion={subRegion}
           />
         </div>
 
         <div className='district__desc'>
-          {district?.desc?.history && (<InfoBlock data={district.desc.history} className="district__history" />)}
-          {district?.desc?.area && (<InfoBlock data={district.desc.area} className="district__area" />)}
-          {district?.desc?.population && (<InfoBlock data={district.desc.population} className="district__population" />)}
-          {district?.desc?.districts && (<InfoBlock data={district.desc.districts} className="district__districts" />)}
-          {district?.desc?.cities && (<InfoBlock data={district.desc.cities} className="district__cities" />)}
-        </div>
+            {district?.gerb && (
+              <div className='district-gerb'>
+                <img src={`${BASE_PHOTO_URL}${district.gerb}`} alt={district.name} />
+              </div>
+            )}
 
-        {subRegion?.length > 0 && (
-          <div className="district__list">
-            {subRegion.map((sub) => (
-              <Region
-                key={sub.id}
-                data={sub}
-                countryPath={country?.path}
-                regionsPath={region?.path}
-                districtPath={district?.path}
-                id={`subregion-${slugify(sub.path)}`}
-              />
-            ))}
+            {district?.desc?.history && (<InfoBlock data={district.desc.history} className="district__history" />)}
+            {district?.desc?.area && (<InfoBlock data={district.desc.area} className="district__area" />)}
+            {district?.desc?.population && (<InfoBlock data={district.desc.population} className="district__population" />)}
+            {district?.desc?.districts && (<InfoBlock data={district.desc.districts} className="district__districts" />)}
+            {district?.desc?.cities && (<InfoBlock data={district.desc.cities} className="district__cities" />)}
           </div>
-        )}
-      </div>
-    </div>
 
-  )
+          {subRegion?.length > 0 && (
+            <div className="district__list">
+              {subRegion.map((sub) => (
+                <Region
+                  key={sub.id}
+                  data={sub}
+                  countryPath={country?.path}
+                  regionsPath={region?.path}
+                  districtPath={district?.path}
+                  id={`subregion-${slugify(sub.path)}`}
+                />
+              ))}
+            </div>
+          )}
+        </div>
+      </div>
+
+      )
 }
 
-export default District
+      export default District

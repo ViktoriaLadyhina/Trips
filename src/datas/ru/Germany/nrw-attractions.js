@@ -356,7 +356,7 @@ const datas = [
         path: "st_maria_himmelfahrt_koln",
         countryPath: "germany", regionsPath: "nrw", districtPath: "city", cityPath: "koln",
         hiddenFromList: true, showMore: true,
-        fotoCard: "Germany/nrw/koln/koln-city/st_maria_himmelfahrt/001.jpg",
+        fotoCard: "Germany/nrw/koln/koln-city/altstadt/st_maria_himmelfahrt/001.jpg",
         location: "Кёльн, Германия",
         short_description: "Санкт-Мария Химмельфарт (St. Mariä Himmelfahrt) – это выдающаяся католическая церковь Успения Пресвятой Девы Марии в старом городе Кёльна. Построенная в стиле барокко как иезуитская церковь, она долгое время была второй по величине после Кёльнского собора и остаётся одним из немногих сохранившихся барочных памятников города.",
         full_description: {
@@ -392,7 +392,7 @@ const datas = [
             description: "Историческая барочная церковь Санкт-Мария Химмельфарт (St. Mariä Himmelfahrt) в центре Кёльна – бывшая иезуитская церковь XVII века с богатой архитектурой, восстановленная после войны. Узнайте историю, архитектуру и интересные факты.",
             ogTitle: "Санкт-Мария Химмельфарт (St. Mariä Himmelfahrt) – историческая барочная церковь Кёльна",
             ogDescription: "Погрузитесь в атмосферу барочной архитектуры в сердце Кёльна! Санкт-Мария Химмельфарт (St. Mariä Himmelfahrt) – главное религиозное сооружение старого города с богатой историей и впечатляющим интерьером.",
-            ogImage: "https://our-travels.info/foto/Germany/nrw/koln/koln-city/st_maria_himmelfahrt/001.jpg"
+            ogImage: "https://our-travels.info/foto/Germany/nrw/koln/koln-city/altstadt/st_maria_himmelfahrt/001.jpg"
         }
     },
     {

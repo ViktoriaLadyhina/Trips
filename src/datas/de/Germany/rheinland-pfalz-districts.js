@@ -45,6 +45,7 @@ const datas = [
                 { text: 'Koblenz (Koblenz)' }
             ]
         },
+        gerb: "Germany/rheinland-pfalz/mayen-koblenz/gerb.png"
     },
     { id: 16, name: 'Neuwied', hasInfo: false, path: "neuwied" },
     { id: 17, name: 'Rhein-Hunsrück-Kreis', hasInfo: false, path: "rhein-hunsrueck-kreis" },
@@ -52,7 +53,40 @@ const datas = [
     { id: 19, name: 'Rhein-Pfalz-Kreis', hasInfo: false, path: "rhein-pfalz-kreis" },
     { id: 20, name: 'Südliche Weinstraße', hasInfo: false, path: "suedliche-weinstrasse" },
     { id: 21, name: 'Südwestpfalz', hasInfo: false, path: "suedwestpfalz" },
-    { id: 22, name: 'Trier-Saarburg', hasInfo: false, path: "trier-saarburg" },
+    {
+        id: 22,
+        name: 'Trier-Saarburg',
+        title: "Landkreis Trier-Saarburg",
+        hasInfo: true,
+        path: "trier_saarburg",
+        country: "Deutschland", regionsPath: "rheinland-pfalz",
+        desc: {
+            history: [
+                { text: 'Der Landkreis Trier-Saarburg liegt im Südwesten Deutschlands in Rheinland-Pfalz, an der Grenze zu Luxemburg. Das Gebiet des Landkreises erstreckt sich über die Täler der Flüsse Mosel, Saar und Ruwer und gilt als eine der ältesten Kulturlandschaften des Landes.' },
+                { text: 'Bereits in der Antike gehörten diese Gebiete zum Römischen Reich. In der Nähe liegt die Stadt Trier – eine der ältesten Städte Deutschlands, von den Römern im 1. Jahrhundert v. Chr. als Augusta Treverorum gegründet. Die Region spielte eine wichtige Rolle als Handels- und Verwaltungszentrum der römischen Provinz Gallien.' },
+                { text: 'Im Mittelalter stand der größte Teil des Gebiets unter der Herrschaft des Kurfürstentums Trier – eines der bedeutendsten geistlichen Fürstentümer im Heiligen Römischen Reich. Aus dieser Zeit sind zahlreiche Burgen, Klöster und historische Weindörfer im Moseltal erhalten geblieben.' },
+                { text: 'Ende des 18. Jahrhunderts wurde die Region während der Revolutionskriege von Frankreich besetzt und gehörte zeitweise zur Französischen Republik. Nach dem Wiener Kongress 1815 ging das Gebiet an Preußen und wurde Teil der Rheinprovinz.' },
+                { text: 'Der heutige Landkreis Trier-Saarburg entstand 1969 im Rahmen der Verwaltungsreform durch die Zusammenlegung der ehemaligen Landkreise Trier und Saarburg.' },
+                { bold: 'Verwaltungssitz:', text: ' die Stadt Trier, die jedoch nicht zum Landkreis gehört und den Status einer kreisfreien Stadt hat (kreisfreie Stadt).' }
+            ],
+            area: [
+                { bold: 'Fläche:', text: ' etwa 1.102 km².' },
+                { bold: 'Geografie:', text: ' Der Landkreis liegt im Südwesten von Rheinland-Pfalz. Die Landschaft wird durch die Täler der Flüsse Mosel, Saar und Ruwer sowie die Höhenzüge Hunsrück, Saargau und Süd-Eifel geprägt. Die Region ist bekannt für ihre Weinbaugebiete entlang der Mosel und der Saar.' }
+            ],
+            population: [
+                { bold: 'Einwohner:', text: ' etwa 149.000–154.000 Personen (2023–2025).' },
+                { bold: 'Bevölkerungsdichte:', text: ' ca. 135–140 Einwohner/km².' }
+            ],
+            districts: [
+                { bold: 'Verbandsgemeinden:', text: 'Hermeskeil, Konz, Ruwer, Saarburg-Kell, Schweich an der Römischen Weinstraße, Trier-Land.' }
+            ],
+            cities: [
+                { bold: 'Größte Städte des Landkreises:', text: 'Saarburg, Konz, Schweich, Hermeskeil.' },
+                { bold: 'Stadt, die nicht zum Landkreis gehört (kreisfreie Stadt):', text: 'Trier.' }
+            ]
+        },
+        gerb: "Germany/rheinland-pfalz/trier_saarburg/gerb.png"
+    },
     { id: 23, name: 'Vulkaneifel', hasInfo: false, path: "vulkaneifel" },
     { id: 24, name: 'Westerwaldkreis', hasInfo: false, path: "westerwaldkreis" },
 

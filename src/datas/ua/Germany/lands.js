@@ -215,7 +215,7 @@ const datas = [
                 { id: 19, name: 'Райн-Пфальц', hasInfo: false, path: "rhein_pfalz_kreis" },
                 { id: 20, name: 'Південна Вайнштрассе', hasInfo: false, path: "suedliche_weinstrasse" },
                 { id: 21, name: 'Південно-Західний Пфальц', hasInfo: false, path: "suedwestpfalz" },
-                { id: 22, name: 'Трір-Саарбург', hasInfo: false, path: "trier_saarburg" },
+                { id: 22, name: 'Трір-Саарбург', hasInfo: true, path: "trier_saarburg" },
                 { id: 23, name: 'Вулканайфель', hasInfo: false, path: "vulkaneifel" },
                 { id: 24, name: 'Вестервальд', hasInfo: false, path: "westerwaldkreis" },
             ]

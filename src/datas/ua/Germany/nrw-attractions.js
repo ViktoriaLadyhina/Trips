@@ -346,7 +346,7 @@ const datas = [
         path: "st_maria_himmelfahrt_koln",
         countryPath: "germany", regionsPath: "nrw", districtPath: "city", cityPath: "koln",
         hiddenFromList: true, showMore: true,
-        fotoCard: "Germany/nrw/koln/koln-city/st_maria_himmelfahrt/001.jpg",
+        fotoCard: "Germany/nrw/koln/koln-city/altstadt/st_maria_himmelfahrt/001.jpg",
         location: "Кельн, Німеччина",
         short_description: "Санкт-Марія Гіммельфарт (St. Mariä Himmelfahrt) – це визначна католицька церква Успіння Пресвятої Діви Марії у старому місті Кельна. Побудована в стилі бароко як єзуїтська церква, вона тривалий час була другою за величиною після Кельнського собору і залишається однією з небагатьох збережених барокових пам’яток міста.",
         full_description: {
@@ -382,7 +382,7 @@ const datas = [
             description: "Історична барокова церква Санкт-Марія Гіммельфарт (St. Mariä Himmelfahrt) у центрі Кельна – колишня єзуїтська церква XVII століття з багатою архітектурою, відновлена після війни. Дізнайтеся історію, архітектуру та цікаві факти.",
             ogTitle: "Санкт-Марія Гіммельфарт (St. Mariä Himmelfahrt) – історична барокова церква Кельна",
             ogDescription: "Пориньте в атмосферу барокової архітектури в серці Кельна! Санкт-Марія Гіммельфарт (St. Mariä Himmelfahrt) – головна релігійна споруда старого міста з багатою історією та вражаючим інтер’єром.",
-            ogImage: "https://our-travels.info/foto/Germany/nrw/koln/koln-city/st_maria_himmelfahrt/001.jpg"
+            ogImage: "https://our-travels.info/foto/Germany/nrw/koln/koln-city/altstadt/st_maria_himmelfahrt/001.jpg"
         }
     },
     {

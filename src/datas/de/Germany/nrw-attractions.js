@@ -347,7 +347,7 @@ const datas = [
         path: "st_maria_himmelfahrt_koln",
         countryPath: "germany", regionsPath: "nrw", districtPath: "city", cityPath: "koln",
         hiddenFromList: true, showMore: true,
-        fotoCard: "Germany/nrw/koln/koln-city/st_maria_himmelfahrt/001.jpg",
+        fotoCard: "Germany/nrw/koln/koln-city/altstadt/st_maria_himmelfahrt/001.jpg",
         location: "Köln, Deutschland",
         short_description: "St. Mariä Himmelfahrt ist eine bedeutende katholische Kirche der Aufnahme Mariens in der Kölner Altstadt. Sie wurde im Barockstil als Jesuitenkirche errichtet, war lange Zeit die zweitgrößte Kirche nach dem Kölner Dom und gehört bis heute zu den wenigen erhaltenen barocken Baudenkmälern der Stadt.",
         full_description: {
@@ -383,7 +383,7 @@ const datas = [
             description: "Die historische Barockkirche St. Mariä Himmelfahrt im Zentrum von Köln – eine ehemalige Jesuitenkirche des 17. Jahrhunderts mit reicher Architektur, die nach dem Krieg restauriert wurde. Erfahren Sie mehr über Geschichte, Architektur und interessante Fakten.",
             ogTitle: "St. Mariä Himmelfahrt – historische Barockkirche in Köln",
             ogDescription: "Tauchen Sie ein in die Atmosphäre barocker Architektur im Herzen Kölns! St. Mariä Himmelfahrt ist ein bedeutendes religiöses Bauwerk der Altstadt mit reicher Geschichte und beeindruckendem Innenraum.",
-            ogImage: "https://our-travels.info/foto/Germany/nrw/koln/koln-city/st_maria_himmelfahrt/001.jpg"
+            ogImage: "https://our-travels.info/foto/Germany/nrw/koln/koln-city/altstadt/st_maria_himmelfahrt/001.jpg"
         }
     },
     {

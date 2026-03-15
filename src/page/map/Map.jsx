@@ -23,7 +23,8 @@ const t = {
     aachen: { ru: 'Район Аахен', de: 'Kreis Aachen', ua: 'Район Аахен' },
     rhein_sieg: { ru: 'Район Рейн-Зиг', de: 'Rhein-Sieg-Kreis', ua: 'Район Рейн-Зиг' },
 
-    mayen_koblenz: { ru: 'Район Майен‑Кобленц', de: 'Landkreis Mayen-Koblenz', ua: 'Район Маєн-Кобленц' }
+    mayen_koblenz: { ru: 'Район Майен‑Кобленц', de: 'Landkreis Mayen-Koblenz', ua: 'Район Маєн-Кобленц' },
+    trier_saarburg: { ru: 'Район Трир-Саарбург', de: 'Landkreis Trier-Saarburg', ua: 'Район Трір-Саарбург' }
   },
   cities: {
     bruhl: { ru: 'Город Брюль', de: 'Stadt Brühl', ua: 'Місто Брюль' },
@@ -198,6 +199,9 @@ const Map = () => {
 
                   {/* Район Майен‑Кобленц */}
                   <li><Link to="/germany/rheinland-pfalz/mayen-koblenz">{t.districts.mayen_koblenz[lang]}</Link></li>
+
+                  {/* Район Трир-Саарбург */}
+                  <li><Link to="/germany/rheinland-pfalz/trier_saarburg">{t.districts.trier_saarburg[lang]}</Link></li>
 
                   {/* Трир - город */}
                   <li><Link to="/germany/rheinland-pfalz/city/trier">{t.cities.trier[lang]}</Link>

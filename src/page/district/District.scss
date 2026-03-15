@@ -15,6 +15,19 @@
         display: block; // чтобы SVG растягивался нормально
     }
 
+    &-gerb {
+      max-width: 200px;
+      float: right;
+      padding: 8px;
+
+      img {
+        width: 100%;
+        height: auto;
+        display: block;
+      }
+
+    }
+
     &__history,
     &__area,
     &__population,

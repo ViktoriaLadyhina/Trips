@@ -204,7 +204,7 @@ const datas = [
                 { id: 19, name: 'Rhein-Pfalz-Kreis', hasInfo: false, path: "rhein_pfalz_kreis" },
                 { id: 20, name: 'Südliche Weinstraße', hasInfo: false, path: "suedliche_weinstrasse" },
                 { id: 21, name: 'Südwestpfalz', hasInfo: false, path: "suedwestpfalz" },
-                { id: 22, name: 'Trier-Saarburg', hasInfo: false, path: "trier_saarburg" },
+                { id: 22, name: 'Trier-Saarburg', hasInfo: true, path: "trier_saarburg" },
                 { id: 23, name: 'Vulkaneifel', hasInfo: false, path: "vulkaneifel" },
                 { id: 24, name: 'Westerwaldkreis', hasInfo: false, path: "westerwaldkreis" },
             ]
