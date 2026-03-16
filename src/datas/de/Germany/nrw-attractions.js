@@ -3325,7 +3325,7 @@ const datas = [
     // Lüdenscheid    
     {
         id: "altstadt_luedenscheid",
-        name: "Altstadt von Lüdenscheid",
+        name: "Altstadt Lüdenscheid",
         type: ["historical_area"], rating: "popular",
         path: "altstadt_luedenscheid",
         countryPath: "germany", regionsPath: "nrw", districtPath: "arnsberg", cityPath: "luedenscheid",

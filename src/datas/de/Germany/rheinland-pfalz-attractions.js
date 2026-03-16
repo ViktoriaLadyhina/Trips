@@ -566,6 +566,49 @@ const datas = [
       ogDescription: "Tauchen Sie ein in die Geschichte und Geheimnisse der Liebfrauenkirche in Trier – dem ersten gotischen Gebäude französischen Stils außerhalb Frankreichs. Architektur, Symbolik, Geschichte.",
       ogImage: "https://our-travels.info/foto/Germany/rheinland-pfalz/trier-city/liebfrauenkirche/001.jpg"
     }
+  },
+
+  // Saarburg
+  {
+    id: "altstadt_saarburg",
+    name: "Altstadt Saarburg",
+    type: ["historical_area"], rating: "popular",
+    path: "altstadt_saarburg",
+    countryPath: "germany", regionsPath: "rheinland-pfalz", districtPath: "trier_saarburg", cityPath: "saarburg",
+    fotoCard: "Germany/rheinland-pfalz/trier_saarburg/saarburg_kell/saarburg/altstadt/001.jpg",
+    location: "Saarburg, Deutschland",
+    officialSite: [{ bold: "Offizielle Website", link: "https://www.saar-obermosel.de" }],
+    short_description: "Die Altstadt von Saarburg ist eines der malerischsten historischen Zentren im Tal der Saar. Enge gepflasterte Gassen, alte Häuser von Fischern und Bootsmännern, kleine Brücken und gemütliche Plätze schaffen die Atmosphäre einer typischen mittelalterlichen Stadt.",
+    short_description2: "Das historische Zentrum liegt am Fuße der Burg und gilt als einer der fotogensten Teile der Stadt. Dank der gut erhaltenen Architektur und der Lage am Fluss zieht die Altstadt Touristen aus ganz Deutschland und aus den Nachbarländern an.",
+    full_description: {
+      title: "Beschreibung und Geschichte",
+      items: [
+        { bold: "Die Altstadt von Saarburg ", text: "liegt am Fuße der mittelalterlichen Burg und entlang der Saar. Sie ist bekannt für ihre engen Gassen, bunten Häuser und kleinen Brücken über den Leukbach, der durch das historische Zentrum fließt. Die meisten Gebäude stammen aus dem 17. und 18. Jahrhundert und haben den traditionellen architektonischen Stil der Region gut bewahrt." },
+        { text: "Besonderen Charme erhält die Altstadt durch die Häuser ehemaliger Fischer und Bootsmänner. An den Fassaden vieler Gebäude sind noch heute alte Handwerkssymbole zu sehen – zum Beispiel Darstellungen von Fischen, Ankern oder Bootshaken. Diese Zeichen erinnern an die Zeit, als der Fluss ein wichtiger Handels- und Transportweg war." },
+        { text: "Heute ist die Altstadt ein beliebter Ort für Spaziergänge. Hier befinden sich kleine Cafés, Restaurants, Museen und historische Plätze. Ein Spaziergang durch die Straßen ermöglicht es, die Atmosphäre einer alten europäischen Stadt zu spüren und Architektur zu sehen, die sich über mehrere Jahrhunderte kaum verändert hat." },
+        { bold: "Geschichte", text: "dieses Stadtteils ist eng mit der Entwicklung der Burg und der Stadt Saarburg verbunden. Die Siedlung entstand am Fuße der Festung, die erstmals im Jahr 964 in schriftlichen Quellen erwähnt wird. Die Burg kontrollierte die Handelswege entlang der Saar, wodurch sich nach und nach eine Stadt um sie herum entwickelte." },
+        { text: "Im Mittelalter spielte der Fluss eine wichtige Rolle im Handel zwischen Trier und anderen Städten der Region. Deshalb ließen sich in der Altstadt Fischer, Bootsmänner und Händler nieder. Viele Straßen und Häuser bewahren noch Spuren dieser Zeit, und die Architektur des historischen Zentrums entstand gerade in der Phase des intensiven Handels auf dem Fluss." },
+        { text: "Im Laufe der Jahrhunderte litt die Stadt mehrfach unter Überschwemmungen, da das alte Zentrum nahe am Fluss liegt. Ende des 20. Jahrhunderts wurde zum Schutz des historischen Bereichs eine spezielle Schutzmauer gebaut, die heute hilft, die Altstadt vor Hochwasser zu bewahren." }
+      ]
+    },
+    interestingFacts: {
+      title: "Interessante Fakten",
+      items: [
+        { text: "Die Altstadt wird oft als eines der schönsten historischen Zentren der Saar-Mosel-Region bezeichnet." },
+        { text: "Einige alte Gebäude wurden auf Holzkonstruktionen errichtet, was in Städten an Flüssen eine verbreitete Bauweise war." },
+        { text: "An den Fassaden der Gebäude kann man alte Handwerkszeichen sehen – eine Art historischer „Logos“ der Häuser." },
+        { text: "Einige Straßen der Altstadt haben sich seit dem Mittelalter kaum verändert." },
+        { text: "Durch die Altstadt führt eine touristische Route mit einer Länge von etwa 2 Kilometern." }
+      ]
+    },
+    construction_period: "10.–11. Jahrhundert (Entstehung der Siedlung am Fuße der Burg)",
+    meta: {
+      title: "Altstadt von Saarburg (Altstadt Saarburg) – mittelalterliches Zentrum der Stadt in Deutschland",
+      description: "Die Altstadt von Saarburg (Altstadt Saarburg) ist das historische Zentrum der Stadt Saarburg mit engen Gassen, Häusern von Fischern und schönen Plätzen. Beschreibung, Geschichte und praktische Informationen für Touristen.",
+      ogTitle: "Altstadt von Saarburg – eine der schönsten historischen Kleinstädte Deutschlands",
+      ogDescription: "Enge Gassen, alte Häuser und die Atmosphäre einer mittelalterlichen Stadt – die Altstadt von Saarburg gilt als eine der malerischsten im Saar-Tal.",
+      ogImage: "https://our-travels.info/foto/Germany/rheinland-pfalz/trier_saarburg/saarburg_kell/saarburg/altstadt/001.jpg"
+    }
   }
 ];
 

@@ -367,6 +367,7 @@ const toJsModuleString = (obj, indent = 0) => {
             {watchedFields.country === "germany" && watchedFields.region === "rheinland-pfalz" && (
               <>
                 <option value="mayen-koblenz">Майен‑Кобленц</option>
+                <option value="trier_saarburg">Трир-Саарбург</option>
                 <option value="city">Город обласного значения</option>
               </>
             )}
@@ -395,6 +396,11 @@ const toJsModuleString = (obj, indent = 0) => {
                 <option value="bruhl">Брюль</option>
                 <option value="frechen">Фрехен</option>
                 <option value="konigswinter">Кёнигсвинтер</option>
+              </>
+            )}
+                        {watchedFields.country === "germany" && watchedFields.district === "trier_saarburg" && (
+              <>
+                <option value="saarburg">Саарбург</option>
               </>
             )}
             {watchedFields.country === "germany" && watchedFields.district === "city" && (

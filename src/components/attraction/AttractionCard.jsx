@@ -47,6 +47,9 @@ const AttractionCard = ({ attr, lang }) => {
                     {attr.short_description && (
                         <div className='attrCard__desc-info-text'>{attr.short_description}</div>
                     )}
+                    {attr.short_description2 && (
+                        <div className='attrCard__desc-info-text'>{attr.short_description2}</div>
+                    )}
 
                     {attr.short_description_subObjects && (
                         <div className='attrCard__desc-subObjects'>

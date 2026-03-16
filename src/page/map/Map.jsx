@@ -147,6 +147,9 @@ const t = {
     basilikaStPaulinus_trier: { ru: 'Базилика Святого Паулина', de: 'Basilika St. Paulinus', ua: 'Базиліка Святого Пауліна' },
     liebfrauenkirche_trier: { ru: 'Церковь Богоматери', de: 'Liebfrauenkirche', ua: 'Церква Богородиці' },
 
+    //Saarburg
+    altstadt_saarburg: { ru: 'Старый город Саарбурга', de: 'Altstadt Saarburg', ua: 'Старе місто Саарбурга' },
+
     // Ukraine
     // Sumska oblast
     // Sumy city
@@ -207,7 +210,11 @@ const Map = () => {
                     <ul>
 
                       {/* Саарбург - город */}
-                      <li><Link to="/germany/rheinland-pfalz/trier_saarburg/saarburg">{t.cities.saarburg[lang]}</Link></li>
+                      <li><Link to="/germany/rheinland-pfalz/trier_saarburg/saarburg">{t.cities.saarburg[lang]}</Link>
+                      <ul>
+                        <li><Link to="/germany/rheinland-pfalz/trier_saarburg/saarburg/attractions/altstadt_saarburg">{t.attractions.altstadt_saarburg[lang]}</Link></li>
+                      </ul>
+                      </li>
                     </ul>
                   </li>
                   
