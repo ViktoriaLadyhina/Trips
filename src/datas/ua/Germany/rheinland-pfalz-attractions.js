@@ -1,11 +1,65 @@
 const datas = [
   {
+    id: "altstadt_trier",
+    name: "Старе місто Тріра",
+    type: ["historical_area"], rating: "top",
+    path: "altstadt_trier",
+    countryPath: "germany", regionsPath: "rheinland-pfalz", districtPath: "city", cityPath: "trier",
+    fotoCard: "Germany/rheinland-pfalz/trier-city/altstadt/001.jpg",
+    subObjects: ["portaNigra_trier", "cathedral_trier", "basilica_of_constantine_trier", "roman_bridge_trier", "basilikaStPaulinus_trier", "liebfrauenkirche_trier"],
+    location: "Трір, Німеччина",
+    officialSite: [{ bold: "Офіційний сайт", link: "https://www.trier.de" }],
+    short_description: "Старе місто Тріра – історичний центр одного з найстаріших міст Німеччини з багатою архітектурою римського та середньовічного періодів. Вузькі вулички, площі з фонтанами та старовинні будинки створюють унікальну атмосферу.",
+    short_description2: "Розташоване вздовж річки Мозель, старе місто приваблює туристів з усієї Німеччини та Європи завдяки поєднанню пам’яток давньоримської та середньовічної архітектури.",
+    short_description_subObjects: {
+      text: "У старому місті Тріра розташовані наступні пам’ятки:",
+      items: [
+        { bold: "🌍Порта Нігро", text: "– найбільші збережені ворота римської епохи північніше Альп, символ міста Тріра." },
+        { bold: "🌍Трірський собор", text: "– головний кафедральний собор Тріра з частинами, що датуються IV століттям, розташований у старому місті." },
+        { bold: "🌍Базиліка Константина", text: "– римська імператорська базиліка IV століття, найбільша збережена римська споруда північніше Альп." },
+        { bold: "🌍Римський міст", text: "– стародавній міст через річку Мозель, побудований римлянами в I столітті та частково використовується й сьогодні. Один із найстаріших збережених мостів у Німеччині, розташований у старому місті Тріра." },
+        { bold: "Базиліка Святого Пауліна", text: "– середньовічна базиліка, розташована у старому місті Тріра. Протягом різних епох служила релігійним центром і прикладом готичної архітектури." },
+        { bold: "🌍Церква Богородиці", text: "– готична церква XIII століття, розташована у старому місті Тріра поруч із Трірським собором. Один із яскравих прикладів середньовічної архітектури міста." }
+      ]
+    },
+    full_description: {
+      title: "Опис та історія",
+      items: [
+        { bold: "Старе місто Тріра", text: "розташоване вздовж річки Мозель і відоме як одне з найстаріших міст Німеччини, засноване римлянами в I столітті до н.е. Тут збереглися пам’ятки античності, середньовічна архітектура та площі з історичною значущістю." },
+        { text: "Особливий шарм старому місту надають вузькі бруковані вулиці, старовинні будинки з фахверковою архітектурою та численні фонтани. Багато будівель прикрашені гербами та історичними символами." },
+        { text: "Сьогодні старе місто – популярне місце для туристичних прогулянок. Тут розташовані музеї, кафе, магазини, а також історичні площі та архітектурні пам’ятки різних епох." },
+        { bold: "Історія", text: "цього району тісно пов’язана з римським періодом та середньовічним розвитком Тріра. Місто було важливим адміністративним центром Римської імперії, а його вулиці і площі формувалися протягом століть, зберігаючи сліди античної та середньовічної архітектури." },
+        { text: "У Середньовіччі Трір був єпископським центром, що сприяло будівництву церков, соборів та громадських будівель. Торгівля та культурне життя процвітали завдяки вигідному розташуванню на річці Мозель." },
+        { text: "Протягом історії старе місто переживало повені, війни та реконструкції, але багато історичних пам’яток вдалося зберегти до наших днів, роблячи центр Тріра унікальним у Німеччині." }
+      ]
+    },
+    interestingFacts: {
+      title: "Цікаві факти",
+      items: [
+        { text: "Старе місто Тріра включене до списку Світової спадщини ЮНЕСКО разом із кількома римськими пам’ятками." },
+        { text: "Порта Нігро – найбільш добре збережені римські міські ворота північніше Альп." },
+        { text: "Трірський собор поєднує архітектурні стилі від римського періоду до бароко." },
+        { text: "Ринкова площа є центром міського життя понад 1000 років." },
+        { text: "Старе місто Тріра щороку приваблює сотні тисяч туристів завдяки своїй історії та архітектурі." }
+      ]
+    },
+    construction_period: "I століття до н.е. – Середньовіччя",
+    meta: {
+      title: "Старе місто Тріра (Altstadt Trier) – історичний центр міста в Німеччині",
+      description: "Старе місто Тріра (Altstadt Trier) – історичний центр міста Трір з античними та середньовічними пам’ятками, вузькими вуличками та площами. Опис, історія та корисна інформація для туристів.",
+      ogTitle: "Старе місто Тріра – історичний центр та пам’ятки римської епохи",
+      ogDescription: "Вузькі вулички, старовинні будинки та римські пам’ятки роблять старе місто Тріра унікальним історичним центром Німеччини.",
+      ogImage: "https://our-travels.info/foto/Germany/rheinland-pfalz/trier_saarburg/trier/altstadt/001.jpg"
+    }
+  },
+  {
     id: "portaNigra_trier",
     name: "Порта Нігра («Чорні ворота»)",
     type: ["historical_building"], rating: "top",
     path: "portaNigra_trier",
     countryPath: "germany", regionsPath: "rheinland-pfalz", districtPath: "city", cityPath: "trier",
     fotoCard: "Germany/rheinland-pfalz/trier-city/portaNigra_trier/001.jpg",
+    hiddenFromList: true, showMore: true,
     location: "Трір, Німеччина",
     officialSite: [{ bold: "Офіційний сайт", link: "https://www.zentrum-der-antike.de/monumente/porta-nigra?utm_source=chatgpt.com" }],
     unesco_status: {
@@ -62,9 +116,7 @@ const datas = [
     countryPath: "germany", regionsPath: "rheinland-pfalz", districtPath: "city", cityPath: "trier",
     fotoCard: "Germany/rheinland-pfalz/trier-city/amphitheater/001.jpg",
     location: "Трір, Німеччина",
-    officialSite: [
-      { bold: "Офіційний сайт", link: "https://www.zentrum-der-antike.de/monumente/amphitheater" }
-    ],
+    officialSite: [{ bold: "Офіційний сайт", link: "https://www.zentrum-der-antike.de/monumente/amphitheater" }],
     unesco_status: {
       included: true,
       year: 1986,
@@ -209,10 +261,9 @@ const datas = [
     path: "basilica_of_constantine_trier",
     countryPath: "germany", regionsPath: "rheinland-pfalz", districtPath: "city", cityPath: "trier",
     fotoCard: "Germany/rheinland-pfalz/trier-city/basilica_of_constantine/001.jpg",
+    hiddenFromList: true, showMore: true,
     location: "Трір, Німеччина",
-    officialSite: [
-      { bold: "Офіційний сайт", link: "https://trier.ekir.de/inhalt/konstantin-basilika?utm_source=chatgpt.com" }
-    ],
+    officialSite: [{ bold: "Офіційний сайт", link: "https://trier.ekir.de/inhalt/konstantin-basilika?utm_source=chatgpt.com" }],
     unesco_status: {
       included: true,
       year: 1986,
@@ -321,10 +372,9 @@ const datas = [
     path: "roman_bridge_trier",
     countryPath: "germany", regionsPath: "rheinland-pfalz", districtPath: "city", cityPath: "trier",
     fotoCard: "Germany/rheinland-pfalz/trier-city/roman_bridge/001.jpg",
+    hiddenFromList: true, showMore: true,
     location: "Трір, Німеччина",
-    officialSite: [
-      { bold: "Офіційний сайт", link: "https://www.trier-info.de/sehenswuerdigkeiten/roemerbruecke" }
-    ],
+    officialSite: [{ bold: "Офіційний сайт", link: "https://www.trier-info.de/sehenswuerdigkeiten/roemerbruecke" }],
     unesco_status: {
       included: true,
       year: 1986,
@@ -376,6 +426,7 @@ const datas = [
     path: "cathedral_trier",
     countryPath: "germany", regionsPath: "rheinland-pfalz", districtPath: "city", cityPath: "trier",
     fotoCard: "Germany/rheinland-pfalz/trier-city/cathedral/001.jpg",
+    hiddenFromList: true, showMore: true,
     location: "Трір, Німеччина",
     officialSite: [{ bold: "Офіційний сайт", link: "https://www.trierer-dom.de" }],
     unesco_status: {
@@ -440,6 +491,7 @@ const datas = [
     path: "basilikaStPaulinus_trier",
     countryPath: "germany", regionsPath: "rheinland-pfalz", districtPath: "city", cityPath: "trier",
     fotoCard: "Germany/rheinland-pfalz/trier-city/basilikaStPaulinus/001.jpg",
+    hiddenFromList: true, showMore: true,
     location: "Трір, Німеччина",
     officialSite: [
       { bold: "Офіційний туристичний портал міста Трір", link: "https://www.trier-info.de/sehenswuerdigkeiten/st-paulin" },
@@ -505,6 +557,7 @@ const datas = [
     path: "liebfrauenkirche_trier",
     countryPath: "germany", regionsPath: "rheinland-pfalz", districtPath: "city", cityPath: "trier",
     fotoCard: "Germany/rheinland-pfalz/trier-city/liebfrauenkirche/001.jpg",
+    hiddenFromList: true, showMore: true,
     location: "Трір, Німеччина",
     officialSite: [
       { bold: "Офіційний туристичний портал міста Трір", link: "https://www.trier-info.de/sehenswuerdigkeiten/liebfrauen-basilika" },

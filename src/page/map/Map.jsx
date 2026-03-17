@@ -147,6 +147,7 @@ const t = {
     cathedral_trier: { ru: 'Кафедральний собор', de: 'Trierer Dom', ua: 'Кафедральний собор' },
     basilikaStPaulinus_trier: { ru: 'Базилика Святого Паулина', de: 'Basilika St. Paulinus', ua: 'Базиліка Святого Пауліна' },
     liebfrauenkirche_trier: { ru: 'Церковь Богоматери', de: 'Liebfrauenkirche', ua: 'Церква Богородиці' },
+    altstadt_trier: { ru: 'Старый город Трира', de: 'Altstadt Trier', ua: 'Старе місто Тріра' },
 
     //Saarburg
     altstadt_saarburg: { ru: 'Старый город Саарбурга', de: 'Altstadt Saarburg', ua: 'Старе місто Саарбурга' },
@@ -227,15 +228,20 @@ const Map = () => {
                   {/* Трир - город */}
                   <li><Link to="/germany/rheinland-pfalz/city/trier">{t.cities.trier[lang]}</Link>
                     <ul>
-                      <li><Link to="/germany/rheinland-pfalz/city/trier/attractions/portaNigra_trier">{t.attractions.portaNigra_trier[lang]}</Link></li>
-                      <li><Link to="/germany/rheinland-pfalz/city/trier/attractions/cathedral_trier">{t.attractions.cathedral_trier[lang]}</Link></li>
-                      <li><Link to="/germany/rheinland-pfalz/city/trier/attractions/liebfrauenkirche_trier">{t.attractions.liebfrauenkirche_trier[lang]}</Link></li>
+                      <li><Link to="/germany/rheinland-pfalz/city/trier/attractions/altstadt_trier">{t.attractions.altstadt_trier[lang]}</Link>
+                        <ul>
+                          <li><Link to="/germany/rheinland-pfalz/city/trier/attractions/portaNigra_trier">{t.attractions.portaNigra_trier[lang]}</Link></li>
+                          <li><Link to="/germany/rheinland-pfalz/city/trier/attractions/cathedral_trier">{t.attractions.cathedral_trier[lang]}</Link></li>
+                          <li><Link to="/germany/rheinland-pfalz/city/trier/attractions/liebfrauenkirche_trier">{t.attractions.liebfrauenkirche_trier[lang]}</Link></li>
+                          <li><Link to="/germany/rheinland-pfalz/city/trier/attractions/basilica_of_constantine_trier">{t.attractions.basilica_of_constantine_trier[lang]}</Link></li>
+                          <li><Link to="/germany/rheinland-pfalz/city/trier/attractions/basilikaStPaulinus_trier">{t.attractions.basilikaStPaulinus_trier[lang]}</Link></li>
+                          <li><Link to="/germany/rheinland-pfalz/city/trier/attractions/roman_bridge_trier">{t.attractions.roman_bridge_trier[lang]}</Link></li>
+                        </ul>
+                      </li>
                       <li><Link to="/germany/rheinland-pfalz/city/trier/attractions/kaiserthermen_trier">{t.attractions.kaiserthermen_trier[lang]}</Link></li>
                       <li><Link to="/germany/rheinland-pfalz/city/trier/attractions/amphitheater_trier">{t.attractions.amphitheater_trier[lang]}</Link></li>
-                      <li><Link to="/germany/rheinland-pfalz/city/trier/attractions/basilica_of_constantine_trier">{t.attractions.basilica_of_constantine_trier[lang]}</Link></li>
-                      <li><Link to="/germany/rheinland-pfalz/city/trier/attractions/basilikaStPaulinus_trier">{t.attractions.basilikaStPaulinus_trier[lang]}</Link></li>
                       <li><Link to="/germany/rheinland-pfalz/city/trier/attractions/barbarathermen_trier">{t.attractions.barbarathermen_trier[lang]}</Link></li>
-                      <li><Link to="/germany/rheinland-pfalz/city/trier/attractions/roman_bridge_trier">{t.attractions.roman_bridge_trier[lang]}</Link></li>
+
                     </ul>
                   </li>
                 </ul>

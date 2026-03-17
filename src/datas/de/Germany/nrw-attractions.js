@@ -13,7 +13,7 @@ const datas = [
         short_description_subObjects: {
             text: "In der Altstadt von Köln befinden sich folgende Sehenswürdigkeiten:",
             items: [
-                { bold: "Kölner Dom", text: "– majestätische gotische Kathedrale, das Herz der Altstadt, am Platz vor dem Hauptbahnhof." },
+                { bold: "🌍Kölner Dom", text: "– majestätische gotische Kathedrale, das Herz der Altstadt, am Platz vor dem Hauptbahnhof." },
                 {
                     bold: "Romanische Kirchen der Altstadt von Köln:",
                     text: `<ul>

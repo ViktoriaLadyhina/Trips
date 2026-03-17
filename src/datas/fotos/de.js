@@ -544,6 +544,18 @@ export const Fotos = {
       gallery: [
         { path: "Germany/rheinland-pfalz/trier-city/portaNigra_trier/001.jpg", title: { ru: "Порта Нигра, 2024", ua: "Порта Нігра («Чорні ворота»), 2024", de: "Porta Nigra, 2024" } },
       ],
+      altstadt_trier: [
+        { path: "Germany/rheinland-pfalz/trier-city/altstadt/001.jpg", title: { ru: "Старый город Трира, 2024", ua: "Старе місто Тріра, 2024", de: "Altstadt Trier, 2024" } },
+        { path: "Germany/rheinland-pfalz/trier-city/altstadt/002.jpg", title: { ru: "Старый город Трира, 2024", ua: "Старе місто Тріра, 2024", de: "Altstadt Trier, 2024" } },
+        { path: "Germany/rheinland-pfalz/trier-city/altstadt/003.jpg", title: { ru: "Старый город Трира, 2024", ua: "Старе місто Тріра, 2024", de: "Altstadt Trier, 2024" } },
+        { path: "Germany/rheinland-pfalz/trier-city/altstadt/004.jpg", title: { ru: "Старый город Трира, 2024", ua: "Старе місто Тріра, 2024", de: "Altstadt Trier, 2024" } },
+        { path: "Germany/rheinland-pfalz/trier-city/altstadt/005.jpg", title: { ru: "Старый город Трира, 2024", ua: "Старе місто Тріра, 2024", de: "Altstadt Trier, 2024" } },
+        { path: "Germany/rheinland-pfalz/trier-city/altstadt/006.jpg", title: { ru: "Старый город Трира, 2024", ua: "Старе місто Тріра, 2024", de: "Altstadt Trier, 2024" } },
+        { path: "Germany/rheinland-pfalz/trier-city/altstadt/007.jpg", title: { ru: "Старый город Трира, 2024", ua: "Старе місто Тріра, 2024", de: "Altstadt Trier, 2024" } },
+        { path: "Germany/rheinland-pfalz/trier-city/altstadt/008.jpg", title: { ru: "Старый город Трира, 2024", ua: "Старе місто Тріра, 2024", de: "Altstadt Trier, 2024" } },
+        { path: "Germany/rheinland-pfalz/trier-city/portaNigra_trier/001.jpg", title: { ru: "Порта Нигра, 2024", ua: "Порта Нігра («Чорні ворота»), 2024", de: "Porta Nigra, 2024" } },
+        { path: "Germany/rheinland-pfalz/trier-city/cathedral/001.jpg", title: { ru: "Кафедральный собор, 2024", ua: "Кафедральний собор, 2024", de: "Trierer Dom, 2024" } },
+      ],
       portaNigra_trier: [
         { path: "Germany/rheinland-pfalz/trier-city/portaNigra_trier/001.jpg", title: { ru: "Порта Нигра, 2024", ua: "Порта Нігра («Чорні ворота»), 2024", de: "Porta Nigra, 2024" } },
         { path: "Germany/rheinland-pfalz/trier-city/portaNigra_trier/002.jpg", title: { ru: "Порта Нигра, 2024", ua: "Порта Нігра («Чорні ворота»), 2024", de: "Porta Nigra, 2024" } },
