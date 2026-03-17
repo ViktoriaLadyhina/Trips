@@ -45,6 +45,7 @@ const t = {
     // arnsberg округ
     // Dortmund
     westfalenpark: { ru: 'Вестфаленпарк', de: 'Westfalenpark', ua: 'Вестфаленпарк' },
+
     // Märkischer Kreis
     // Lüdenscheid
     altstadt_luedenscheid: { ru: 'Старый город Люденшайда', de: 'Altstadt Lüdenscheid', ua: 'Старе місто Люденшайда' },
@@ -149,6 +150,7 @@ const t = {
 
     //Saarburg
     altstadt_saarburg: { ru: 'Старый город Саарбурга', de: 'Altstadt Saarburg', ua: 'Старе місто Саарбурга' },
+    wasserfall_saarburg: { ru: 'Водопад Саарбурга', de: 'Wasserfall von Saarburg', ua: 'Водоспад Саарбурга' },
 
     // Ukraine
     // Sumska oblast
@@ -211,13 +213,17 @@ const Map = () => {
 
                       {/* Саарбург - город */}
                       <li><Link to="/germany/rheinland-pfalz/trier_saarburg/saarburg">{t.cities.saarburg[lang]}</Link>
-                      <ul>
-                        <li><Link to="/germany/rheinland-pfalz/trier_saarburg/saarburg/attractions/altstadt_saarburg">{t.attractions.altstadt_saarburg[lang]}</Link></li>
-                      </ul>
+                        <ul>
+                          <li><Link to="/germany/rheinland-pfalz/trier_saarburg/saarburg/attractions/altstadt_saarburg">{t.attractions.altstadt_saarburg[lang]}</Link>
+                            <ul>
+                              <li><Link to="/germany/rheinland-pfalz/trier_saarburg/saarburg/attractions/wasserfall_saarburg">{t.attractions.wasserfall_saarburg[lang]}</Link></li>
+                            </ul>
+                          </li>
+                        </ul>
                       </li>
                     </ul>
                   </li>
-                  
+
                   {/* Трир - город */}
                   <li><Link to="/germany/rheinland-pfalz/city/trier">{t.cities.trier[lang]}</Link>
                     <ul>

@@ -604,6 +604,16 @@ export const Fotos = {
         { path: "Germany/rheinland-pfalz/trier_saarburg/saarburg_kell/saarburg/001.jpg", title: { ru: "Саарбург, 2024", ua: "Саарбург, 2024", de: "Saarburg, 2024" } },
         { path: "Germany/rheinland-pfalz/trier_saarburg/saarburg_kell/saarburg/002.jpg", title: { ru: "Саарбург, 2024", ua: "Саарбург, 2024", de: "Saarburg, 2024" } },
       ],
+      altstadt_saarburg: [
+        { path: "Germany/rheinland-pfalz/trier_saarburg/saarburg_kell/saarburg/altstadt/001.jpg", title: { ru: "Старый город Саарбурга, 2024", ua: "Старе місто Саарбурга, 2024", de: "Altstadt Saarburg, 2024" } },
+        { path: "Germany/rheinland-pfalz/trier_saarburg/saarburg_kell/saarburg/altstadt/002.jpg", title: { ru: "Старый город Саарбурга, 2024", ua: "Старе місто Саарбурга, 2024", de: "Altstadt Saarburg, 2024" } },
+        { path: "Germany/rheinland-pfalz/trier_saarburg/saarburg_kell/saarburg/altstadt/003.jpg", title: { ru: "Старый город Саарбурга, 2024", ua: "Старе місто Саарбурга, 2024", de: "Altstadt Saarburg, 2024" } },
+      ],
+      wasserfall_saarburg: [
+        { path: "Germany/rheinland-pfalz/trier_saarburg/saarburg_kell/saarburg/altstadt/wasserfall/001.jpg", title: { ru: "Водопад Саарбурга, 2024", ua: "Водоспад Саарбурга, 2024", de: "Wasserfall von Saarburg, 2024" } },
+        { path: "Germany/rheinland-pfalz/trier_saarburg/saarburg_kell/saarburg/altstadt/wasserfall/002.jpg", title: { ru: "Водопад Саарбурга, 2024", ua: "Водоспад Саарбурга, 2024", de: "Wasserfall von Saarburg, 2024" } },
+        { path: "Germany/rheinland-pfalz/trier_saarburg/saarburg_kell/saarburg/altstadt/wasserfall/003.jpg", title: { ru: "Водопад Саарбурга, 2024", ua: "Водоспад Саарбурга, 2024", de: "Wasserfall von Saarburg, 2024" } },
+      ]
     }
   }
 }

@@ -3314,7 +3314,7 @@ const datas = [
             description: "Вестфаленпарк — найбільший міський парк Дортмунда з вежею Florian, розарієм, озерами, канатною дорогою та міні-залізницею. Ідеальне місце для прогулянок, відпочинку та заходів.",
             ogTitle: "Вестфаленпарк – зелене серце Дортмунда",
             ogDescription: "Великий парк з розарієм, озерами та вежею Florian. Одне з найкращих місць для прогулянок та відпочинку в Дортмунді.",
-            ogImage: "Germany/nrw/arnsberg/dortmund/westfalenpark/001.jpg"
+            ogImage: "https://our-travels.info/foto/Germany/nrw/arnsberg/dortmund/westfalenpark/001.jpg"
         }
     },
 
@@ -3869,7 +3869,7 @@ const datas = [
             description: "Путівник по замку Альтена: історія XII століття, музеї та перший у світі молодіжний хостел.",
             ogTitle: "Замок Альтена – середньовічна фортеця в Німеччині",
             ogDescription: "Дізнайтеся історію замку Альтена та його музеїв.",
-            ogImage: ""
+            ogImage: "https://our-travels.info/foto/Germany/nrw/arnsberg/Märkischer-Kreis/altena/burg/001.jpg"
         }
     }
 ]

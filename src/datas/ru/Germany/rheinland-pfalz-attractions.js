@@ -8,9 +8,7 @@ const datas = [
     countryPath: "germany", regionsPath: "rheinland-pfalz", districtPath: "city", cityPath: "trier",
     fotoCard: "Germany/rheinland-pfalz/trier-city/portaNigra_trier/001.jpg",
     location: "Трир, Германия",
-    officialSite: [
-      { bold: "Официальный сайт", link: "https://www.zentrum-der-antike.de/monumente/porta-nigra?utm_source=chatgpt.com" }
-    ],
+    officialSite: [{ bold: "Официальный сайт", link: "https://www.zentrum-der-antike.de/monumente/porta-nigra?utm_source=chatgpt.com" }],
     unesco_status: {
       included: true,
       year: 1986,
@@ -65,9 +63,7 @@ const datas = [
     countryPath: "germany", regionsPath: "rheinland-pfalz", districtPath: "city", cityPath: "trier",
     fotoCard: "Germany/rheinland-pfalz/trier-city/amphitheater/001.jpg",
     location: "Трир, Германия",
-    officialSite: [
-      { bold: "Официальный сайт", link: "https://www.zentrum-der-antike.de/monumente/amphitheater" }
-    ],
+    officialSite: [{ bold: "Официальный сайт", link: "https://www.zentrum-der-antike.de/monumente/amphitheater" }],
     unesco_status: {
       included: true,
       year: 1986,
@@ -577,10 +573,17 @@ const datas = [
     path: "altstadt_saarburg",
     countryPath: "germany", regionsPath: "rheinland-pfalz", districtPath: "trier_saarburg", cityPath: "saarburg",
     fotoCard: "Germany/rheinland-pfalz/trier_saarburg/saarburg_kell/saarburg/altstadt/001.jpg",
+    subObjects: ["wasserfall_saarburg"],
     location: "Саарбург, Германия",
     officialSite: [{ bold: "Официальный сайт", link: "https://www.saar-obermosel.de" }],
     short_description: "Старый город Саарбурга – один из самых живописных исторических центров в долине реки Саар. Узкие мощёные улочки, старинные дома рыбаков и лодочников, маленькие мосты и уютные площади создают атмосферу типичного средневекового города. ",
     short_description2: "Исторический центр расположен у подножия замка и считается одной из самых фотогеничных частей города. Благодаря хорошо сохранившейся архитектуре и расположению на реке старый город привлекает туристов со всей Германии и соседних стран.",
+    short_description_subObjects: {
+      text: "В старом городе Саарбурга расположены следующие достопримечательности:",
+      items: [
+        { bold: "Водопад Саарбурга", text: "– живописный городской водопад в центре старого города, одна из самых узнаваемых и впечатляющих достопримечательностей Саарбурга." },
+      ]
+    },
     full_description: {
       title: "Описание и история",
       items: [
@@ -609,6 +612,46 @@ const datas = [
       ogTitle: "Старый город Саарбурга – один из самых красивых исторических городков Германии",
       ogDescription: "Узкие улочки, старинные дома и атмосфера средневекового города – старый центр Саарбурга считается одним из самых живописных в долине Саар.",
       ogImage: "https://our-travels.info/foto/Germany/rheinland-pfalz/trier_saarburg/saarburg_kell/saarburg/altstadt/001.jpg"
+    }
+  },
+  {
+    id: "wasserfall_saarburg",
+    name: "Водопад Саарбурга",
+    type: ["natural_attraction"], rating: "top",
+    path: "wasserfall_saarburg",
+    countryPath: "germany", regionsPath: "rheinland-pfalz", districtPath: "trier_saarburg", cityPath: "saarburg",
+    fotoCard: "Germany/rheinland-pfalz/trier_saarburg/saarburg_kell/saarburg/altstadt/wasserfall/001.jpg",
+    hiddenFromList: true, showMore: true,
+    short_description: "Водопад Саарбурга – уникальный городской водопад, расположенный прямо в центре старого города. Поток воды ручья Леук (Leukbach) стремительно спускается между домами, создавая необычный и живописный городской пейзаж.",
+    short_description2: "Это одна из самых известных достопримечательностей региона, которая привлекает туристов своей необычной локацией и атмосферой. Водопад окружён историческими зданиями, мостами и уютными кафе.",
+    full_description: {
+      title: "Описание и история",
+      items: [
+        { bold: "Водопад Саарбурга ", text: "расположен в самом центре старого города и является одной из главных природных достопримечательностей региона. Он образован ручьём Леук, который проходит через город и резко спускается вниз, образуя водопад высотой около 20 метров." },
+        { text: "Уникальность этого места заключается в том, что водопад находится прямо среди городской застройки. Поток воды проходит между старинными домами, мостами и террасами, создавая редкое сочетание природы и архитектуры. Это редкий пример городского водопада, расположенного непосредственно в историческом центре среди жилой застройки." },
+        { text: "Сегодня территория вокруг водопада является популярной туристической зоной. Здесь расположены смотровые площадки, кафе и прогулочные маршруты. С площадей и мостов вокруг водопада открываются живописные виды, которые часто используются для фотографий и открыток. Особенно впечатляюще водопад выглядит вечером, когда включается подсветка." },
+        { bold: "История", text: "водопада тесно связана с развитием города и использованием водных ресурсов. В Средние века ручей Леук был частично перенаправлен для работы мельниц, которые играли важную роль в экономике Саарбурга. Благодаря этим изменениям образовался перепад высоты, сформировавший водопад в центре города." },
+        { text: "В районе водопада сохранились старые здания мельниц, некоторые из которых сегодня превращены в музейные и культурные объекты. Вода приводила в движение механизмы, используемые для переработки зерна и других нужд." },
+        { text: "Со временем промышленное значение мельниц снизилось, и водопад стал туристической достопримечательностью. Сегодня он является символом города и одной из самых узнаваемых его локаций." }
+      ]
+    },
+    interestingFacts: {
+      title: "Интересные факты",
+      items: [
+        { text: "Высота водопада составляет около 20 метров." },
+        { text: "Это один из немногих водопадов в Европе, расположенных прямо в центре города." },
+        { text: "Ручей Леук, образующий водопад, впадает в реку Саар." },
+        { text: "Рядом с водопадом находится музей, посвящённый мельничному делу." },
+        { text: "Вечером водопад подсвечивается, создавая особенно атмосферный вид." }
+      ]
+    },
+    coord: { lat: 49.607892, lng: 6.551109 },
+    meta: {
+      title: "Водопад Саарбурга – уникальный городской водопад в Германии",
+      description: "Водопад Саарбурга – живописный водопад в центре города Саарбург (Saarburg). Описание, история и полезная информация для туристов.",
+      ogTitle: "Водопад Саарбурга – самый необычный водопад Германии",
+      ogDescription: "Водопад прямо среди домов – одна из самых впечатляющих достопримечательностей города Саарбург (Saarburg).",
+      ogImage: "https://our-travels.info/foto/Germany/rheinland-pfalz/trier_saarburg/saarburg_kell/saarburg/altstadt/wasserfall/001.jpg"
     }
   }
 ];

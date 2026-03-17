@@ -71,9 +71,7 @@ const datas = [
         fotoCard: "Germany/nrw/koln/koln-city/koln-cathedral/001.jpg",
         location: "Кёльн, Германия",
         address: [{ bold: "Адрес:", text: " Domkloster 4, 50667 Köln, Deutschland" }],
-        officialSite: [
-            { bold: 'Официальный сайт Кёльнского собора', link: 'https://www.koelner-dom.de/' }
-        ],
+        officialSite: [{ bold: 'Официальный сайт Кёльнского собора', link: 'https://www.koelner-dom.de/' }],
         unesco_status: {
             included: true,
             year: 1996,
@@ -3323,7 +3321,7 @@ const datas = [
             description: "Вестфаленпарк — крупнейший городской парк Дортмунда с башней Florian, розарием, озёрами, канатной дорогой и мини-железной дорогой. Идеальное место для прогулок, отдыха и мероприятий.",
             ogTitle: "Вестфаленпарк – зелёное сердце Дортмунда",
             ogDescription: "Большой парк с розарием, озёрами и башней Florian. Одно из лучших мест для прогулок и отдыха в Дортмунде.",
-            ogImage: "Germany/nrw/arnsberg/dortmund/westfalenpark/001.jpg"
+            ogImage: "https://our-travels.info/foto/Germany/nrw/arnsberg/dortmund/westfalenpark/001.jpg"
         }
     },
 
@@ -3876,7 +3874,7 @@ const datas = [
             description: "Путеводитель по замку Альтена (Burg Altena): история XII века, музеи, первая в мире молодежная хостел гостиница, практическая информация для туристов.",
             ogTitle: "Замок Альтена (Burg Altena) – средневековая крепость и музеи в Германии",
             ogDescription: "Узнайте всё о замке Альтена – от истории его основания в XII веке до современных экспозиций и уникальной молодежной хостел гостиницы.",
-            ogImage: ""
+            ogImage: "https://our-travels.info/foto/Germany/nrw/arnsberg/Märkischer-Kreis/altena/burg/001.jpg"
         }
     },
 ];

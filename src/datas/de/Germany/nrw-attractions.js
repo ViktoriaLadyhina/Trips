@@ -3316,7 +3316,7 @@ const datas = [
             description: "Der Westfalenpark ist der größte Stadtpark Dortmunds mit dem Florianturm, Rosengarten, Seen, Seilbahn und Parkbahn. Ein idealer Ort für Spaziergänge, Erholung und Veranstaltungen.",
             ogTitle: "Westfalenpark – grünes Herz Dortmunds",
             ogDescription: "Großer Park mit Rosengarten, Seen und Florianturm. Einer der besten Orte für Spaziergänge und Erholung in Dortmund.",
-            ogImage: "Germany/nrw/arnsberg/dortmund/westfalenpark/001.jpg"
+            ogImage: "https://our-travels.info/foto/Germany/nrw/arnsberg/dortmund/westfalenpark/001.jpg"
         }
     },
 
@@ -3872,7 +3872,7 @@ const datas = [
             description: "Reiseführer zur Burg Altena: Geschichte aus dem 12. Jahrhundert, Museen und die erste Jugendherberge der Welt.",
             ogTitle: "Burg Altena – mittelalterliche Festung in Deutschland",
             ogDescription: "Entdecken Sie die Geschichte der Burg Altena und ihrer Museen.",
-            ogImage: ""
+            ogImage: "https://our-travels.info/foto/Germany/nrw/arnsberg/Märkischer-Kreis/altena/burg/001.jpg"
         }
     }
 
