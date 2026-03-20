@@ -3874,8 +3874,60 @@ const datas = [
             ogDescription: "Entdecken Sie die Geschichte der Burg Altena und ihrer Museen.",
             ogImage: "https://our-travels.info/foto/Germany/nrw/arnsberg/Märkischer-Kreis/altena/burg/001.jpg"
         }
+    },
+    {
+        id: "fuelbecketalsperre_altena",
+        name: "Fuelbecketalsperre",
+        type: ["nature"], rating: "local",
+        path: "fuelbecketalsperre_altena",
+        countryPath: "germany", regionsPath: "nrw", districtPath: "arnsberg", cityPath: "altena",
+        fotoCard: "Germany/nrw/arnsberg/Märkischer-Kreis/luedenscheid/versetalsperre/008.jpg",
+        location: "Altena / Lüdenscheid, Nordrhein-Westfalen, Deutschland",
+        short_description: "Die Fuelbecketalsperre ist ein kleines, malerisches Wasserreservoir im Sauerland, umgeben von Wäldern und Hügeln. Sie wurde Ende des 19. Jahrhunderts erbaut und dient heute der Trinkwasserversorgung. Rund um den See verläuft ein etwa 2 km langer Rundweg, der sich ideal für Spaziergänge und Erholung in der Natur eignet. Baden und Wassersport sind zum Schutz des Trinkwassers verboten.",
+        full_description: {
+            title: "Beschreibung und Geschichte",
+            items: [
+                { bold: "Fuelbecketalsperre", text: "ist ein kleines, aber historisch bedeutendes Wasserreservoir und eine Talsperre am Fluss Fuelbecke im bewaldeten Teil des Sauerlands in Nordrhein-Westfalen, Deutschland." },
+                { bold: "Geschichte.", text: "Sie gehört zu den frühen Talsperren der Region und wurde zwischen 1894 und 1896 zur Wasserversorgung und zur Regulierung des Wasserstands für industrielle Zwecke errichtet. Damals sicherte sie den Betrieb von Wassermühlen und Fabriken in trockenen Perioden. Das Projekt wurde von dem Ingenieur Prof. Otto Intze geleitet, der für den Bau von Talsperren bekannt ist." },
+                { text: "Mit der Zeit änderte sich die Hauptfunktion der Talsperre: Bereits zu Beginn des 20. Jahrhunderts wurde sie überwiegend zur Trinkwasserversorgung genutzt." },
+                { bold: "Natur und Erholung.", text: "Die Umgebung ist von Mischwäldern des Sauerlands geprägt, was die Fuelbecketalsperre zu einem idealen Ort für Spaziergänge, Wanderungen, Jogging oder ruhige Erholung abseits großer Straßen macht. Der Rundweg um den See ist gut begehbar, familienfreundlich und erfordert keine besondere Vorbereitung." },
+                { text: "Der See ist auch bei Anglern beliebt (Angelrechte besitzen in der Regel Mitglieder lokaler Vereine), und Informationstafeln entlang der Wege informieren über Flora und Fauna der Region." }
+            ]
+        },
+        tickets_and_entry: {
+            title: "Praktische Informationen",
+            items: [
+                { bold: "Adresse:", text: "Fuelbecker Straße 60, 58762 Altena (zwischen Altena und Lüdenscheid), Deutschland" },
+                { bold: "Einschränkungen:", text: "Baden und Wassersport sind verboten (Trinkwasserschutzgebiet)" },
+                { bold: "Eintritt:", text: "frei; rund um den See gibt es gut ausgebaute Spazierwege" },
+                { bold: "Talsperrentyp:", text: "Schwere Gewichtsstaumauer (Mauerwerk), gebaut nach dem Intze-Prinzip" },
+                { bold: "Höhe:", text: "ca. 27 m" },
+                { bold: "Kronenlänge:", text: "ca. 145 m" },
+                { bold: "Speicherinhalt:", text: "ca. 0,7 Mio. m³ (die kleinste unter den Haupttalsperren im Märkischen Kreis)" },
+                { bold: "Gewässer:", text: "etwa 450 m lang, maximale Breite ca. 240 m" },
+                { bold: "Rundweg:", text: "über 2 km, Gehzeit etwa 30 Minuten" }
+            ]
+        },
+        interestingFacts: {
+            title: "Interessante Fakten",
+            items: [
+                { text: "Die Fuelbecketalsperre gehört zu den ältesten Talsperren im Sauerland und wurde bereits Ende des 19. Jahrhunderts errichtet." },
+                { text: "Nach der industriellen Nutzung blieb sie als wichtige Quelle für die Trinkwasserversorgung der Region erhalten." },
+                { text: "Rund um den See verlaufen ruhige und landschaftlich reizvolle Wege, ideal für leichte Wanderungen und Familienausflüge." },
+                { text: "Entlang der Wege kann man verschiedene Wasser- und Waldvögel beobachten sowie mehr über die Fischarten im See erfahren." }
+            ]
+        },
+        construction_period: "1894-1896",
+        architects: "Prof. Otto Intze",
+        coord: { lat: 51.24833, lng: 7.66250 },
+        meta: {
+            title: "Fuelbecketalsperre — Spaziergänge im Sauerland",
+            description: "Die Fuelbecketalsperre ist ein malerischer Ort im Sauerland, Deutschland. Waldwege, Rundwanderungen und erholsame Spaziergänge in der Natur.",
+            ogTitle: "Fuelbecketalsperre — Natur und Spaziergänge im Sauerland",
+            ogDescription: "Ein gemütliches Wasserreservoir in den Wäldern des Sauerlands: Wanderwege, Ruhe und schöne Natur. Baden ist aufgrund der Trinkwassernutzung verboten.",
+            ogImage: "https://our-travels.info/foto/Germany/nrw/arnsberg/Märkischer-Kreis/luedenscheid/fuelbecketalsperre/008.jpg"
+        }
     }
-
 ];
 
 export default datas;
