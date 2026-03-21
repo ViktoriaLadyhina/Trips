@@ -153,6 +153,7 @@ const t = {
     //Saarburg
     altstadt_saarburg: { ru: 'Старый город Саарбурга', de: 'Altstadt Saarburg', ua: 'Старе місто Саарбурга' },
     wasserfall_saarburg: { ru: 'Водопад Саарбурга', de: 'Wasserfall von Saarburg', ua: 'Водоспад Саарбурга' },
+    burg_saarburg: { ru: 'Замок Саарбурга', de: 'Burg Saarburg', ua: 'Замок Саарбурга' },
 
     // Ukraine
     // Sumska oblast
@@ -221,6 +222,7 @@ const Map = () => {
                               <li><Link to="/germany/rheinland-pfalz/trier_saarburg/saarburg/attractions/wasserfall_saarburg">{t.attractions.wasserfall_saarburg[lang]}</Link></li>
                             </ul>
                           </li>
+                          <li><Link to="/germany/rheinland-pfalz/trier_saarburg/saarburg/attractions/burg_saarburg">{t.attractions.burg_saarburg[lang]}</Link></li>
                         </ul>
                       </li>
                     </ul>
