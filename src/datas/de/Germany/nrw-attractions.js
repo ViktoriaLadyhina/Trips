@@ -3759,47 +3759,53 @@ const datas = [
         type: ["nature"], rating: "local",
         path: "versetalsperre_luedenscheid",
         countryPath: "germany", regionsPath: "nrw", districtPath: "arnsberg", cityPath: "luedenscheid",
-        fotoCard: "Germany/nrw/arnsberg/Märkischer-Kreis/luedenscheid/versetalsperre/001.jpg",
+        fotoCard: "Germany/nrw/arnsberg/Märkischer-Kreis/luedenscheid/versetalsperre/003_2021.jpg",
         location: "Lüdenscheid, Deutschland",
-        short_description: "Versetalsperre ist ein großer künstlicher See, der durch einen Staudamm zur Regulierung des Wasserstandes und zur Trinkwasserversorgung geschaffen wurde. Rund um das Gewässer verlaufen Fuß- und Radwege, an den Ufern gibt es Erholungsbereiche. Schwimmen und Wassersport sind verboten, um die Wasserqualität zu erhalten, wodurch der Ort beliebt für Spaziergänge und Naturbeobachtungen ist.",
+        short_description: "Die Versetalsperre ist ein großes künstliches Gewässer, das durch eine Staumauer zur Regulierung des Wasserstands und zur Trinkwasserversorgung geschaffen wurde. Rund um den See verlaufen Spazier- und Radwege, und an den Ufern gibt es Erholungsbereiche. Baden und Wassersport sind verboten, was die Wasserqualität erhält und den Ort zu einem beliebten Ziel für Spaziergänge und Naturbeobachtungen macht.",
         full_description: {
             title: "Beschreibung und Geschichte",
             items: [
-                { bold: "Versetalsperre", text: " – ein großer Stausee am Fluss Verse im bewaldeten Südosten von Nordrhein-Westfalen, Deutschland. Die Wasseroberfläche beträgt etwa 170 ha, das Volumen ca. 32,8 Mio. m³. Der Damm, der das Stauwerk bildet, ist 62 m hoch und 393 m lang und prägt die malerische Landschaft mit Wäldern und den Hügeln des Sauerlands." },
-                { text: "Rund um das Gewässer verlaufen Fuß- und Radwege unterschiedlicher Länge, einschließlich eines Rundwegs von etwa 11 km. Die Ufer sind mit Erholungsbereichen und Picknickplätzen ausgestattet, und zum Schutz des Trinkwassers sind Schwimmen und Wassersport verboten." },
-                { text: "Die natürlichen Umgebung des Sees ist reich an Flora und Fauna, und Informationsschilder entlang der Wege informieren über Landschaft, Ökologie und Geschichte der Anlage." },
+                { bold: "Die Versetalsperre ", text: "ist ein großes Gewässer an der Verse im waldreichen südöstlichen Teil von Nordrhein-Westfalen, Deutschland. Die Wasserfläche beträgt etwa 170 Hektar, und das Volumen liegt bei rund 32,8 Millionen Kubikmetern. Die Staumauer, die das Gewässer bildet, ist 62 Meter hoch und 393 Meter lang und schafft eine landschaftlich reizvolle Umgebung mit Wäldern und Hügeln des Sauerlands." },
+                { text: "Rund um den See verlaufen Spazier- und Radwege unterschiedlicher Länge, darunter ein Rundweg von etwa 11 Kilometern. Die Ufer sind mit Erholungs- und Picknickbereichen ausgestattet, und zum Schutz des Trinkwassers sind Baden und Wassersport hier verboten." },
+                { text: "Die natürlichen Umgebung des Gewässers ist reich an Flora und Fauna, und Informationstafeln entlang der Wege informieren über Landschaft, Ökologie und die Geschichte des Bauwerks und machen den Aufenthalt informativ und angenehm." },
                 { bold: "Geschichte" },
-                { text: "Der Bau des Stausees begann 1929 auf Initiative des Ruhrverbands, um Trinkwasser bereitzustellen und den Pegel des Flusses Ruhr zu regulieren. Die Anfangsarbeiten wurden in den 1930er Jahren aufgrund wirtschaftlicher Schwierigkeiten unterbrochen und 1938 wieder aufgenommen." },
-                { text: "Während des Zweiten Weltkriegs existierte in Hunswinkel ein Arbeitslager, in dem Gefangene am Bau des Damms beteiligt waren. Viele von ihnen starben, und später wurde am Ufer des Stausees ein Denkmal zu ihren Ehren errichtet." },
-                { text: "Die Arbeiten wurden bis 1951 abgeschlossen, die endgültige Gestaltung und Befüllung des Stausees erfolgte bis 1952. Seitdem dient die Versetalsperre als Trinkwasserspeicher und Regulierung der Flüsse Ruhr und Lenne und ist gleichzeitig ein beliebter Ort für Spaziergänge und Erholung." }
+                { text: "Der Bau der Talsperre begann im Jahr 1929 auf Initiative des Ruhrverbands, um die Trinkwasserversorgung zu sichern und den Wasserstand der Ruhr zu regulieren. Die ersten Arbeiten wurden in den 1930er Jahren aufgrund wirtschaftlicher Schwierigkeiten unterbrochen und später im Jahr 1938 wieder aufgenommen." },
+                { text: "Die Bauarbeiten wurden bis 1951 abgeschlossen, und die endgültige Fertigstellung und Befüllung der Talsperre dauerte bis 1952. Seitdem dient die Versetalsperre als Trinkwasserspeicher und als Anlage zur Regulierung der Flüsse Ruhr und Lenne sowie als beliebter Ort für Spaziergänge und Erholung." },
+            ]
+        },
+        sub_objects: {
+            title: "Gedenkorte und Bauwerke",
+            items: [
+                { bold: "Mahnmal an der Versetalsperre", text: " ist den Opfern des Lagers Hunswinkel gewidmet – eines nationalsozialistischen Zwangsarbeitslagers, das sich in den Jahren 1940 bis 1945 im Tal der Verse befand. Heute liegt das ehemalige Lagergelände unter Wasser, während das Mahnmal in der Nähe errichtet wurde und an Tausende von Gefangenen erinnert, die beim Bau der Talsperre eingesetzt wurden, von denen mindestens 550 infolge schwerer Bedingungen, Hunger und Gewalt ums Leben kamen." },
+                { img: "Germany/nrw/arnsberg/Märkischer-Kreis/luedenscheid/versetalsperre/001_2020.jpg", bold: "Klamer Brücke", text: " ist eine markante Brücke über die Versetalsperre. Sie wurde noch vor der Flutung des Sees gebaut und diente als wichtiger Verkehrsübergang während des Baus der Talsperre und der Straßen rund um das Tal der Verse. Heute wird die Brücke als Fußgänger- und Straßenübergang genutzt, und in ihrer Nähe befinden sich Parkplätze und touristische маршруты." },
+                { bold: "Vorsperre", text: " ist eine vorgelagerte Staumauer bei der zukünftigen Versetalsperre, die im Jahr 1933 an der Verse in der Nähe der Ortschaft Steinbach errichtet wurde. Sie wurde als temporäres Bauwerk zur ersten Wasseransammlung und zur Vorbereitung des Baus der großen Hauptstaumauer geschaffen, die später zur Versetalsperre wurde. Eine solche Konstruktion spielte eine wichtige Rolle in der frühen Phase der Bauarbeiten: Sie reguliert das Wasser, hält Verunreinigungen und Sedimente zurück und verbessert das Erscheinungsbild des Gebiets bei schwankendem Wasserstand. Letztendlich trug die Vorsperre zu einem stabileren Bau- und Betriebsprozess der Talsperre bei." },
             ]
         },
         tickets_and_entry: {
             title: "Praktische Informationen",
             items: [
                 { bold: "Adresse:", text: "Klinkenberg 40a, 58515 Lüdenscheid, Deutschland" },
-                { bold: "Einschränkungen:", text: "Wassersport und Schwimmen sind wegen des Trinkwasserschutzes verboten." },
-                { bold: "Eintritt:", text: "Frei" }
+                { bold: "Einschränkungen:", text: "Wassersport und Baden sind aufgrund des Trinkwasserschutzes verboten." },
+                { bold: "Eintritt:", text: "Kostenlos" }
             ]
         },
         interestingFacts: {
             title: "Interessante Fakten",
             items: [
-                { text: "Die Versetalsperre ist der größte Staudamm im Märkischen Kreis nach Speichervolumen." },
-                { text: "Sie wird nicht nur für die Trinkwasserversorgung genutzt, sondern auch zur Regulierung der Flüsse Ruhr und Lenne." },
-                { text: "Auf den Wegen rund um das Gewässer gibt es den Natur- und Bildungspfad Knax mit interaktiven Stationen." },
-                { text: "Ein Denkmal für die Arbeitslageropfer in Hunswinkel erinnert an die harte Geschichte des Baus." }
+                { text: "Die Versetalsperre ist die größte Talsperre im Märkischen Kreis nach Speichervolumen." },
+                { text: "Sie wird nicht nur zur Trinkwasserversorgung genutzt, sondern auch zur Regulierung der Flüsse Ruhr und Lenne." },
+                { text: "Entlang der Wege rund um den See gibt es den Naturerlebnispfad Knax mit interaktiven Stationen." },
             ]
         },
         construction_period: "1929-1952",
         founder: "auf Initiative des Ruhrverbands",
         coord: { lat: 51.18321, lng: 7.68336 },
         meta: {
-            title: "Versetalsperre – Staudamm und Stausee im Sauerland, Deutschland",
-            description: "Detaillierte Informationen zur Versetalsperre: Geschichte, Wanderwege, Denkmal Hunswinkel und Spaziergänge rund um den größten Staudamm im Märkischen Kreis.",
+            title: "Versetalsperre – Talsperre und Stausee im Sauerland, Deutschland",
+            description: "Detaillierte Informationen zur Versetalsperre: Baugeschichte, Wanderwege, Mahnmal Hunswinkel und Spaziergänge rund um die größte Talsperre im Märkischen Kreis.",
             ogTitle: "Versetalsperre – Naturziel und Stausee in Nordrhein-Westfalen",
-            ogDescription: "Erfahren Sie alles über die Versetalsperre: von der Baugeschichte und dem Denkmal bis zu Spaziergängen rund um den See.",
-            ogImage: "https://our-travels.info/foto/Germany/nrw/arnsberg/Märkischer-Kreis/luedenscheid/versetalsperre/001.jpg"
+            ogDescription: "Erfahren Sie alles über die Versetalsperre: Geschichte, Mahnmal und Wanderwege rund um den See",
+            ogImage: "https://our-travels.info/foto/Germany/nrw/arnsberg/Märkischer-Kreis/luedenscheid/versetalsperre/003_2021.jpg"
         }
     },
 
@@ -3881,7 +3887,7 @@ const datas = [
         type: ["nature"], rating: "local",
         path: "fuelbecketalsperre_altena",
         countryPath: "germany", regionsPath: "nrw", districtPath: "arnsberg", cityPath: "altena",
-        fotoCard: "Germany/nrw/arnsberg/Märkischer-Kreis/luedenscheid/versetalsperre/008.jpg",
+        fotoCard: "Germany/nrw/arnsberg/Märkischer-Kreis/altena/fuelbecketalsperre/001_2020.jpg",
         location: "Altena / Lüdenscheid, Nordrhein-Westfalen, Deutschland",
         short_description: "Die Fuelbecketalsperre ist ein kleines, malerisches Wasserreservoir im Sauerland, umgeben von Wäldern und Hügeln. Sie wurde Ende des 19. Jahrhunderts erbaut und dient heute der Trinkwasserversorgung. Rund um den See verläuft ein etwa 2 km langer Rundweg, der sich ideal für Spaziergänge und Erholung in der Natur eignet. Baden und Wassersport sind zum Schutz des Trinkwassers verboten.",
         full_description: {
@@ -3925,7 +3931,7 @@ const datas = [
             description: "Die Fuelbecketalsperre ist ein malerischer Ort im Sauerland, Deutschland. Waldwege, Rundwanderungen und erholsame Spaziergänge in der Natur.",
             ogTitle: "Fuelbecketalsperre — Natur und Spaziergänge im Sauerland",
             ogDescription: "Ein gemütliches Wasserreservoir in den Wäldern des Sauerlands: Wanderwege, Ruhe und schöne Natur. Baden ist aufgrund der Trinkwassernutzung verboten.",
-            ogImage: "https://our-travels.info/foto/Germany/nrw/arnsberg/Märkischer-Kreis/luedenscheid/fuelbecketalsperre/008.jpg"
+            ogImage: "https://our-travels.info/foto/Germany/nrw/arnsberg/Märkischer-Kreis/altena/fuelbecketalsperre/001_2020.jpg"
         }
     }
 ];

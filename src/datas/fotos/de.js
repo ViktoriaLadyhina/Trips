@@ -514,7 +514,11 @@ export const Fotos = {
         { path: "Germany/nrw/arnsberg/Märkischer-Kreis/luedenscheid/christuskirche/001.jpg", title: { ru: "Псевдоготическая церковь Христа (фото взято с интернета)", ua: "Псевдоготична церква Христа (фото взято з Інтернету)", de: "Pseudogotische Christuskirche (Foto aus dem Internet)" } },
       ],
       versetalsperre_luedenscheid: [
-        { path: "Germany/nrw/arnsberg/Märkischer-Kreis/luedenscheid/versetalsperre/001.jpg", title: { ru: "Водохранилище Верзе, 2025", ua: "Водосховище Верзе, 2025", de: "Versetalsperre, 2025" } },
+        { path: "Germany/nrw/arnsberg/Märkischer-Kreis/luedenscheid/versetalsperre/001_2020.jpg", title: { ru: "Водохранилище Верзе - Кламер мост, 2020", ua: "Водосховище Верзе - Кламерський міст, 2020", de: "Versetalsperre - Klamer Brücke, 2020" } },
+        { path: "Germany/nrw/arnsberg/Märkischer-Kreis/luedenscheid/versetalsperre/002_2021.jpg", title: { ru: "Водохранилище Верзе, 2021", ua: "Водосховище Верзе, 2021", de: "Versetalsperre, 2021" } },
+        { path: "Germany/nrw/arnsberg/Märkischer-Kreis/luedenscheid/versetalsperre/003_2021.jpg", title: { ru: "Водохранилище Верзе, 2021", ua: "Водосховище Верзе, 2021", de: "Versetalsperre, 2021" } },
+        { path: "Germany/nrw/arnsberg/Märkischer-Kreis/luedenscheid/versetalsperre/004_2024.jpg", title: { ru: "Водохранилище Верзе, 2024", ua: "Водосховище Верзе, 2024", de: "Versetalsperre, 2024" } },
+        { path: "Germany/nrw/arnsberg/Märkischer-Kreis/luedenscheid/versetalsperre/005_2024.jpg", title: { ru: "Водохранилище Верзе, 2024", ua: "Водосховище Верзе, 2024", de: "Versetalsperre, 2024" } },
       ],
       st_joseph_medardus: [
         { path: "Germany/nrw/arnsberg/Märkischer-Kreis/luedenscheid/st_joseph_medardus/001.jpg", title: { ru: "Церковь Святого Йозефа и Медарда (фото взято с интернета)", ua: "Церква Святого Йосипа та Медарда (фото взято з Інтернету)", de: "Kirche St. Joseph und Medardus (Foto aus dem Internet)" } },
@@ -529,14 +533,14 @@ export const Fotos = {
         { path: "Germany/nrw/arnsberg/Märkischer-Kreis/altena/burg/001.jpg", title: { ru: "Замок Альтена, 2025", ua: "Замок Альтена, 2025", de: "Burg Altena, 2025" } },
       ],
       fuelbecketalsperre_altena: [
-        { path: "Germany/nrw/arnsberg/Märkischer-Kreis/luedenscheid/versetalsperre/001.jpg", title: { ru: "Водохранилище Фюльбекке, 2025", ua: "Водосховище Фюльбекке, 2025", de: "Fuelbecketalsperre, 2025" } },
-        { path: "Germany/nrw/arnsberg/Märkischer-Kreis/luedenscheid/versetalsperre/002.jpg", title: { ru: "Водохранилище Фюльбекке, 2025", ua: "Водосховище Фюльбекке, 2025", de: "Fuelbecketalsperre, 2025" } },
-        { path: "Germany/nrw/arnsberg/Märkischer-Kreis/luedenscheid/versetalsperre/003.jpg", title: { ru: "Водохранилище Фюльбекке, 2025", ua: "Водосховище Фюльбекке, 2025", de: "Fuelbecketalsperre, 2025" } },
-        { path: "Germany/nrw/arnsberg/Märkischer-Kreis/luedenscheid/versetalsperre/004.jpg", title: { ru: "Водохранилище Фюльбекке, 2025", ua: "Водосховище Фюльбекке, 2025", de: "Fuelbecketalsperre, 2025" } },
-        { path: "Germany/nrw/arnsberg/Märkischer-Kreis/luedenscheid/versetalsperre/005.jpg", title: { ru: "Водохранилище Фюльбекке, 2025", ua: "Водосховище Фюльбекке, 2025", de: "Fuelbecketalsperre, 2025" } },
-        { path: "Germany/nrw/arnsberg/Märkischer-Kreis/luedenscheid/versetalsperre/006.jpg", title: { ru: "Водохранилище Фюльбекке, 2025", ua: "Водосховище Фюльбекке, 2025", de: "Fuelbecketalsperre, 2025" } },
-        { path: "Germany/nrw/arnsberg/Märkischer-Kreis/luedenscheid/versetalsperre/007.jpg", title: { ru: "Водохранилище Фюльбекке, 2025", ua: "Водосховище Фюльбекке, 2025", de: "Fuelbecketalsperre, 2025" } },
-        { path: "Germany/nrw/arnsberg/Märkischer-Kreis/luedenscheid/versetalsperre/008.jpg", title: { ru: "Водохранилище Фюльбекке, 2006", ua: "Водосховище Фюльбекке, 2006", de: "Fuelbecketalsperre, 2006" } },
+        { path: "Germany/nrw/arnsberg/Märkischer-Kreis/altena/fuelbecketalsperre/001_2020.jpg", title: { ru: "Водохранилище Фюльбекке, 2020", ua: "Водосховище Фюльбекке, 2020", de: "Fuelbecketalsperre, 2020" } },
+        { path: "Germany/nrw/arnsberg/Märkischer-Kreis/altena/fuelbecketalsperre/002.jpg", title: { ru: "Водохранилище Фюльбекке, 2025", ua: "Водосховище Фюльбекке, 2025", de: "Fuelbecketalsperre, 2025" } },
+        { path: "Germany/nrw/arnsberg/Märkischer-Kreis/altena/fuelbecketalsperre/003.jpg", title: { ru: "Водохранилище Фюльбекке, 2025", ua: "Водосховище Фюльбекке, 2025", de: "Fuelbecketalsperre, 2025" } },
+        { path: "Germany/nrw/arnsberg/Märkischer-Kreis/altena/fuelbecketalsperre/004.jpg", title: { ru: "Водохранилище Фюльбекке, 2025", ua: "Водосховище Фюльбекке, 2025", de: "Fuelbecketalsperre, 2025" } },
+        { path: "Germany/nrw/arnsberg/Märkischer-Kreis/altena/fuelbecketalsperre/005.jpg", title: { ru: "Водохранилище Фюльбекке, 2025", ua: "Водосховище Фюльбекке, 2025", de: "Fuelbecketalsperre, 2025" } },
+        { path: "Germany/nrw/arnsberg/Märkischer-Kreis/altena/fuelbecketalsperre/006.jpg", title: { ru: "Водохранилище Фюльбекке, 2025", ua: "Водосховище Фюльбекке, 2025", de: "Fuelbecketalsperre, 2025" } },
+        { path: "Germany/nrw/arnsberg/Märkischer-Kreis/altena/fuelbecketalsperre/007_2020.jpg", title: { ru: "Водохранилище Фюльбекке, 2020", ua: "Водосховище Фюльбекке, 2020", de: "Fuelbecketalsperre, 2020" } },
+        { path: "Germany/nrw/arnsberg/Märkischer-Kreis/altena/fuelbecketalsperre/008_2020.jpg", title: { ru: "Водохранилище Фюльбекке, 2020", ua: "Водосховище Фюльбекке, 2020", de: "Fuelbecketalsperre, 2020" } },
       ],
     }
 

@@ -98,10 +98,11 @@ function useCityFullData() {
         let subRegions = [];
 
         if (foundDistrict) {
-          const modulesSubRegions = import.meta.glob("../datas/*/*/*-subRegions.js");
-          const keySubRegions = Object.keys(modulesSubRegions).find(path =>
-            path.toLowerCase().includes(`${lang}/${countryPath}/${regionPath}-subRegions.js`)
-          );
+          const modulesSubRegions = import.meta.glob("../datas/*/*/*-subRegions.js");          
+const keySubRegions = Object.keys(modulesSubRegions).find(path => {
+  const normalizedPath = path.toLowerCase().replace(/\\/g, "/");
+  return normalizedPath.endsWith(`${lang}/${countryPath}/${regionPath.toLowerCase()}-subregions.js`);
+});
 
           if (keySubRegions) {
             const subRegionModule = await modulesSubRegions[keySubRegions]();

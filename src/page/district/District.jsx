@@ -56,7 +56,6 @@ const District = () => {
     { label: district.name || district.title }
   ];
 
-
   return (
     <div className='district'>
       <BreadCrumbs crumbs={crumbs} />

@@ -5,7 +5,7 @@ const datas = [
     { id: 2, name: 'Altenkirchen', hasInfo: false, path: "altenkirchen" },
     { id: 3, name: 'Alzey-Worms', hasInfo: false, path: "alzey_worms" },
     { id: 4, name: 'Bad Dürkheim', hasInfo: false, path: "bad_duerkheim" },
-    { id: 5, name: 'Bad Kreuznach', hasInfo: false, path: "bad-kreuznach" },
+    { id: 5, name: 'Bad Kreuznach', hasInfo: false, path: "bad_kreuznach" },
     { id: 6, name: 'Bernkastel-Wittlich', hasInfo: false, path: "bernkastel-wittlich" },
     { id: 7, name: 'Birkenfeld', hasInfo: false, path: "birkenfeld" },
     { id: 8, name: 'Cochem-Zell', hasInfo: false, path: "cochem-zell" },
