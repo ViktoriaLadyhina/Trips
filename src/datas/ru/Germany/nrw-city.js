@@ -543,7 +543,7 @@ const datas = [
             description: "Люденшайд: история, география, знаменитые жители и интересные факты о «городе света» в земле Северный Рейн-Вестфалия.",
             ogTitle: "Люденшайд – информация о городе",
             ogDescription: "Подробная информация о Люденшайде: культура, история, выдающиеся личности и удивительные факты о городе света и инноваций.",
-            ogImage: "https://our-travels.info/foto/Germany/nrw/arnsberg/Märkischer-Kreis/luedenscheid/rathausplatz_lüdenscheid/001.JPG"
+            ogImage: "https://our-travels.info/foto/Germany/nrw/arnsberg/Märkischer-Kreis/luedenscheid/altstadt_luedenscheid/004.jpg"
         }
     },
     {

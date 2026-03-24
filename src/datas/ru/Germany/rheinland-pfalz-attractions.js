@@ -714,7 +714,7 @@ const datas = [
     type: ["palace_or_castle"], rating: "popular",
     path: "burg_saarburg",
     countryPath: "germany", regionsPath: "rheinland-pfalz", districtPath: "trier_saarburg", cityPath: "saarburg",
-    fotoCard: "",
+    fotoCard: "Germany/rheinland-pfalz/trier_saarburg/saarburg_kell/saarburg/burg/001.jpg",
     location: "Саарбург, Германия",
     short_description: "Замок Саарбурга (Burg Saarburg) – средневековый замок XI века, возвышающийся над городом Саарбург. Он известен своими живописными руинами и панорамным видом на старый город с уникальным водопадом в центре.",
     full_description: {
@@ -757,7 +757,7 @@ const datas = [
       description: "Замок Саарбурга – средневековые руины XI века в Германии. Панорамные виды, история и практическая информация.",
       ogTitle: "Замок Саарбурга – один из самых красивых замков Германии",
       ogDescription: "Живописные руины замка Саарбурга с видом на город и водопад. Узнай историю и посети одно из самых атмосферных мест региона.",
-      ogImage: ""
+      ogImage: "https://our-travels.info/foto/Germany/rheinland-pfalz/trier_saarburg/saarburg_kell/saarburg/burg/001.jpg"
     }
   },
 ];

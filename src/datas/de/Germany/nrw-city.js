@@ -542,7 +542,7 @@ const datas = [
             description: "Lüdenscheid: Geschichte, Geografie, bekannte Persönlichkeiten und interessante Fakten über die „Stadt des Lichts“ in Nordrhein-Westfalen.",
             ogTitle: "Lüdenscheid – Informationen über die Stadt",
             ogDescription: "Detaillierte Informationen über Lüdenscheid: Kultur, Geschichte, bedeutende Persönlichkeiten und spannende Fakten über die Stadt des Lichts und der Innovation.",
-            ogImage: "https://our-travels.info/foto/Germany/nrw/arnsberg/Märkischer-Kreis/luedenscheid/rathausplatz_lüdenscheid/001.JPG"
+            ogImage: "https://our-travels.info/foto/Germany/nrw/arnsberg/Märkischer-Kreis/luedenscheid/altstadt_luedenscheid/004.jpg"
         }
     },
     {

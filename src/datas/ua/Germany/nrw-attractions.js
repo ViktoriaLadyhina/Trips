@@ -3327,7 +3327,7 @@ const datas = [
         type: ["historical_area"], rating: "popular",
         path: "altstadt_luedenscheid",
         countryPath: "germany", regionsPath: "nrw", districtPath: "arnsberg", cityPath: "luedenscheid",
-        fotoCard: "Germany/nrw/arnsberg/Märkischer-Kreis/luedenscheid/001.JPG",
+        fotoCard: "Germany/nrw/arnsberg/Märkischer-Kreis/luedenscheid/altstadt_luedenscheid/004.jpg",
         subObjects: ["erloeserkirche_luedenscheid", "brunnen_altstadt_luedenscheid"],
         short_description: "Старе місто Люденшайда – історичне серце міста з вузькими вулицями та кільцевим плануванням навколо церкви Спасителя. Тут збереглися будівлі XVIII–XIX століть, залишки міської стіни та історичний музей, а затишні вулички поєднують минуле з сучасним міським життям.",
         short_description_subObjects: {
@@ -3362,7 +3362,7 @@ const datas = [
             description: "Старе місто Люденшайда – середньовічна частина міста з історичними будівлями XVIII–XIX століть, церквою Спасителя, залишками міської стіни та історичним музеєм. Прогуляйтеся затишними вуличками та відчуйте атмосферу минулих століть.",
             ogTitle: "Старе місто Люденшайда",
             ogDescription: "Відвідайте старе місто Люденшайда – історичну частину міста з бароковими будинками, церквою Спасителя, історичним музеєм та залишками середньовічної міської стіни.",
-            ogImage: "https://our-travels.info/foto/Germany/nrw/arnsberg/Märkischer-Kreis/luedenscheid/001.JPG"
+            ogImage: "https://our-travels.info/foto/Germany/nrw/arnsberg/Märkischer-Kreis/luedenscheid/altstadt_luedenscheid/004.jpg"
         }
     },
     {
@@ -3372,7 +3372,7 @@ const datas = [
         path: "erloeserkirche_luedenscheid",
         countryPath: "germany", regionsPath: "nrw", districtPath: "arnsberg", cityPath: "luedenscheid",
         hiddenFromList: true, showMore: true,
-        fotoCard: "Germany/nrw/arnsberg/Märkischer-Kreis/luedenscheid/erloeserkirche_luedenscheid/001.JPG",
+        fotoCard: "Germany/nrw/arnsberg/Märkischer-Kreis/luedenscheid/altstadt_luedenscheid/erloeserkirche_luedenscheid/001.jpg",
         short_description: "Церква Спасителя (Erlöserkirche) – найдавніша церква Люденшайда з класицистичним фасадом, емпорами та лютеранським вівтарем. У центрі старого міста, архітектурна домінанта та культурний центр з концертами й виставками.",
         full_description: {
             title: "Опис та історія",
@@ -3416,7 +3416,7 @@ const datas = [
             description: "Церква Спасителя (Erlöserkirche) – найдавніша церква Люденшайда, побудована в XII столітті, з класицистичним фасадом, емпорами та лютеранським вівтарем. Відвідайте цей історичний храм у центрі старого міста й відчуйте атмосферу минулих століть.",
             ogTitle: "Церква Спасителя, Люденшайда",
             ogDescription: "Відкрийте для себе Церкву Спасителя в Люденшайді – історичний храм з вежею, емпорами та лютеранським вівтарем, архітектурна домінанта старого міста.",
-            ogImage: "https://our-travels.info/foto/Germany/nrw/arnsberg/Märkischer-Kreis/luedenscheid/erloeserkirche_luedenscheid/001.JPG"
+            ogImage: "https://our-travels.info/foto/Germany/nrw/arnsberg/Märkischer-Kreis/luedenscheid/altstadt_luedenscheid/erloeserkirche_luedenscheid/001.jpg"
         }
     },
     {
@@ -3426,7 +3426,7 @@ const datas = [
         path: "brunnen_altstadt_luedenscheid",
         countryPath: "germany", regionsPath: "nrw", districtPath: "arnsberg", cityPath: "luedenscheid",
         hiddenFromList: true,
-        fotoCard: "Germany/nrw/arnsberg/Märkischer-Kreis/luedenscheid/altstadt_luedenscheid/001.JPG",
+        fotoCard: "Germany/nrw/arnsberg/Märkischer-Kreis/luedenscheid/altstadt_luedenscheid/001.jpg",
         short_description: "Фонтан розташований в історичному Старому місті, на площі Graf Engelbert Platz – площі, присвяченій першому засновнику міста. Він був відкритий у 1982 році та подарований місту мешканцями під час реконструкції старого міста, ставши одним із символів оновленої історичної зони. Під час урочистого відкриття місцева влада підкреслила прагнення зробити фонтан «серцем громадського життя» старого міста. Відтоді він входить до числа значущих громадських і культурних об’єктів Люденшайда.",
         short_description2: "Фонтан був створений художником і металургом К.Т. Нойманн, який працював і мешкав у Люденшайді та зробив значний внесок у скульптурне оформлення міста. У дизайні використано фігуру герольда (глашатая), яка символічно підкреслює історичний момент – проголошення міських прав графом Енгельбертом I, засновником Люденшайда. Цей мотив відображений у рельєфах і загальній тематиці композиції.",
         full_description: {
@@ -3444,7 +3444,7 @@ const datas = [
             description: "Фонтан на площі Графа Енгельберта був створений у 1982 році під час реконструкції старого міста. Він є одним із символів історичного центру Люденшайда та прикрашений фігурою герольда, що відсилає до заснування міста графом Енгельбертом I.",
             ogTitle: "Фонтан на площі Графа Енгельберта, Люденшайд",
             ogDescription: "Відвідайте фонтан на площі Графа Енгельберта в Люденшайді – історичний об’єкт старого міста, пов’язаний із заснуванням міста та реконструкцією історичного центру.",
-            ogImage: "https://our-travels.info/foto/Germany/nrw/arnsberg/Märkischer-Kreis/luedenscheid/altstadt_luedenscheid/001.JPG"
+            ogImage: "https://our-travels.info/foto/Germany/nrw/arnsberg/Märkischer-Kreis/luedenscheid/altstadt_luedenscheid/001.jpg"
         }
     },
     {
@@ -3533,7 +3533,7 @@ const datas = [
         type: ["monument_or_fountain"], rating: "local",
         path: "onkel_willi_denkmal_sternplatz_luedenscheid",
         countryPath: "germany", regionsPath: "nrw", districtPath: "arnsberg", cityPath: "luedenscheid",
-        fotoCard: "Germany/nrw/arnsberg/Märkischer-Kreis/luedenscheid/sternplatz/001.JPG",
+        fotoCard: "Germany/nrw/arnsberg/Märkischer-Kreis/luedenscheid/sternplatz/001.jpg",
         hiddenFromList: true, showMore: true,
         short_description: "Пам'ятник дядьку Віллі – бронзова скульптура на Sternplatz, що зображує типового мешканця Люденшайда з собакою. Є неофіційним символом міста та відображає його повсякденну, «живу» атмосферу.",
         full_description: {
@@ -3552,7 +3552,7 @@ const datas = [
             description: "Пам'ятник дядьку Віллі на площі Штернплац в Люденшайді – бронзова скульптура, що зображує типового мешканця міста з собакою. Скульптура стала неофіційним символом міста та популярним місцем для зустрічей і фотографій.",
             ogTitle: "Пам'ятник дядьку Віллі в Люденшайді",
             ogDescription: "Бронзова скульптура дядька Віллі на площі Штернплац в історичному центрі Люденшайда відображає доброзичливість та повсякденне життя мешканців міста. Популярне місце серед туристів та городян.",
-            ogImage: "https://our-travels.info/foto/Germany/nrw/arnsberg/Märkischer-Kreis/luedenscheid/sternplatz/001.JPG"
+            ogImage: "https://our-travels.info/foto/Germany/nrw/arnsberg/Märkischer-Kreis/luedenscheid/sternplatz/001.jpg"
         }
     },
     {
@@ -3775,7 +3775,7 @@ const datas = [
             items: [
                 { bold: "Меморіал біля водосховища Верзе", text: " присвячений жертвам табору Хунсвінкель – нацистського табору примусової праці, який знаходився в долині річки Верзе у 1940–1945 роках. Сьогодні місце табору затоплене водосховищем, а меморіал встановлений поруч і нагадує про тисячі ув’язнених, які використовувалися під час будівництва дамби, з яких щонайменше 550 загинули через важкі умови, голод і насильство." },
                 { img: "Germany/nrw/arnsberg/Märkischer-Kreis/luedenscheid/versetalsperre/001_2020.jpg", bold: "Кламерський міст (Klamer Brücke)", text: " – це помітний міст через водосховище Верзе. Він був побудований ще до наповнення озера і слугував важливим транспортним переходом під час будівництва дамби та доріг навколо долини річки Верзе. Сьогодні міст використовується як пішохідний і автомобільний перехід, а поруч із ним знаходяться парковки та туристичні маршрути." },
-                { bold: "Vorsperre", text: " – це попередня дамба біля майбутнього водосховища Верзе, побудована у 1933 році на річці Верзе поблизу селища Штайнбах. Її створили як тимчасову споруду для початкового накопичення води та підготовки до будівництва великої основної дамби, яка згодом стала Versetalsperre. Така конструкція виконувала важливу роль на ранньому етапі інженерних робіт: вона регулює воду, затримує забруднення та відкладення, а також покращує вигляд території при зміні рівня води. У підсумку Vorsperre допомогла забезпечити більш стабільний процес будівництва та експлуатації водосховища." },
+                { img: "Germany/nrw/arnsberg/Märkischer-Kreis/luedenscheid/versetalsperre/007_2026.jpg", bold: "Vorsperre", text: " – це попередня дамба біля майбутнього водосховища Верзе, побудована у 1933 році на річці Верзе поблизу селища Штайнбах. Її створили як тимчасову споруду для початкового накопичення води та підготовки до будівництва великої основної дамби, яка згодом стала Versetalsperre. Така конструкція виконувала важливу роль на ранньому етапі інженерних робіт: вона регулює воду, затримує забруднення та відкладення, а також покращує вигляд території при зміні рівня води. У підсумку Vorsperre допомогла забезпечити більш стабільний процес будівництва та експлуатації водосховища." },
             ]
         },
         tickets_and_entry: {
@@ -3929,6 +3929,53 @@ const datas = [
             ogTitle: "Водосховище Фюльбекке – природа та прогулянки в Sauerland",
             ogDescription: "Затишне водосховище в лісах Зауерланду: пішохідні маршрути, тиша та красива природа. Купання заборонене через призначення для питної води.",
             ogImage: "https://our-travels.info/foto/Germany/nrw/arnsberg/Märkischer-Kreis/altena/fuelbecketalsperre/001_2020.jpg"
+        }
+    },
+    {
+        id: "dechenhohle_iserlohn",
+        name: "Печера Дехенхёле",
+        type: ["nature"], rating: "popular",
+        path: "dechenhohle_iserlohn",
+        countryPath: "germany", regionsPath: "nrw", districtPath: "arnsberg", cityPath: "altena",
+        fotoCard: "Germany/nrw/arnsberg/Märkischer-Kreis/altena/dechenhohle/001.jpg",
+        location: "Ізерлон, Німеччина",
+        officialSite: [{ bold: "Офіційний сайт", link: "https://www.dechenhoehle.de/" }],
+        short_description: "Печера Дехенхёле (Dechenhöhle) – одна з найкрасивіших та найвідвідуваніших сталактитових печер Німеччини, розташована в північній частині Саарланду в районі Ізерлон-Грюне (Північний Рейн-Вестфалія). Печера вражає багатством сталактитів та сталагмітів і пропонує відвідувачам 400 м спеціально облаштованого маршруту по освітлених залах з унікальними природними утвореннями.",
+        full_description: {
+            title: "Опис та історія",
+            items: [
+                { bold: "Печера Дехенхёле (Dechenhöhle) ", text: "розташована в карстових вапняках Рейнського масиву і є частиною великого підземного комплексу довжиною понад 20 км. Усередині можна побачити складні утворення – від «Органного залу» до «Пальмової колони», висотою близько 3 м. Печера освітлюється електрикою, з 2015 року використовується LED-підсвітка для кращого сприйняття кольору та структури сталактитів." },
+                { text: "Печера доступна лише в складі екскурсії: близько 400 м облаштованого маршруту з поясненнями гіда. Температура всередині стабільна і близько 10 °C, що робить відвідування цікавим у будь-яку пору року." },
+                { text: "З моменту відкриття печера Дехенхёле швидко стала популярною: вже в 1868 році її відвідали тисячі людей. Печера названа на честь геолога Heinrich von Dechen (1800–1889), визнаного за внесок у вивчення геології Рейну та Вестфалії." },
+                { text: "До 1983 року печера перебувала у власності залізничних компаній через її відкриття під час будівництва колій; згодом управління перейшло до регіональних туристичних та муніципальних організацій." }
+            ]
+        },
+        tickets_and_entry: {
+            title: "Практична інформація",
+            items: [
+                { bold: "Адреса: ", text: "Dechenhöhle 5, 58644 Iserlohn Grüne, Німеччина." },
+                { bold: "Як дістатися: ", text: "пішки або автобусом від зупинки Dechenhöhle; є власна залізнична зупинка Letmathe Dechenhöhle на регіональних маршрутах RE16 / RB91." },
+                { bold: "Екскурсії та години роботи: ", text: "екскурсії регулярно з березня по листопад, взимку – у вихідні та святкові дні. Окремі спеціальні заходи доступні за запитом." },
+                { bold: "Вартість: ", text: "<br>дорослі ≈ 10 €, <br>діти 3–15 років ≈ 6,50–6 €, <br>пільгові ціни для груп." }
+            ]
+        },
+        interestingFacts: {
+            title: "Цікаві факти",
+            items: [
+                { text: "Печера розташована в найвідомішому печерному районі Німеччини – Grüner Tal (Грюне Тал)." },
+                { text: "Dechenhöhle – єдина печера в Німеччині з власною залізничною зупинкою." },
+                { text: "Загальна протяжність відомих ходів перевищує 20 км, хоча для відвідувачів відкрито близько 400 м." },
+                { text: "Всередині регулярно проводяться тематичні екскурсії: «Печерні вогні», концерти, різдвяні прогулянки, майстер-класи." }
+            ]
+        },
+        construction_period: "Печеру відкрили 10 червня 1868 року під час робіт з будівництва залізниці. Двоє залізничних робітників, втративши молоток, забралися у вузьку скелясту тріщину, яка привела до простору з унікальними сталактитовими утвореннями.",
+        coord: { lat: 51.36556, lng: 7.64472 },
+        meta: {
+            title: "Печера Дехенхёле (Dechenhöhle), Ізерлон – сталактитові утворення, екскурсії в Німеччині",
+            description: "Відвідайте Dechenhöhle – одну з найкрасивіших сталактитових печер Німеччини в Ізерлоні. Дізнайтеся про історію відкриття, унікальні утворення, музейні експозиції та екскурсії. Чудовий природний туризм для всієї родини.",
+            ogTitle: "Dechenhöhle – підземне диво Sauerland",
+            ogDescription: "Відкрийте для себе містичну Dechenhöhle в Німеччині: сталактити, історії льодовикових тварин, музей та печерні екскурсії для всіх вікових груп.",
+            ogImage: "https://our-travels.info/foto/Germany/nrw/arnsberg/Märkischer-Kreis/altena/dechenhohle/001.jpg"
         }
     }
 ]

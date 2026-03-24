@@ -478,19 +478,25 @@ export const Fotos = {
     },
     luedenscheid: {
       gallery: [
-        { path: "Germany/nrw/arnsberg/Märkischer-Kreis/luedenscheid/001.JPG", title: { ru: "Люденшайд, 2006", ua: "Люденшайд, 2006", de: "Lüdenscheid, 2006" } },
+        { path: "Germany/nrw/arnsberg/Märkischer-Kreis/luedenscheid/altstadt_luedenscheid/004.jpg", title: { ru: "Старый город Люденшайда, 2026", ua: "Старе місто Люденшайда, 2026", de: "Altstadt Lüdenscheid, 2026" } },
         { path: "Germany/nrw/arnsberg/Märkischer-Kreis/luedenscheid/002.JPG", title: { ru: "Люденшайд, 2006", ua: "Люденшайд, 2006", de: "Lüdenscheid, 2006" } },
       ],
       altstadt_luedenscheid: [
-        { path: "Germany/nrw/arnsberg/Märkischer-Kreis/luedenscheid/001.JPG", title: { ru: "Люденшайд, 2006", ua: "Люденшайд, 2006", de: "Lüdenscheid, 2006" } },
-        { path: "Germany/nrw/arnsberg/Märkischer-Kreis/luedenscheid/erloeserkirche_luedenscheid/001.JPG", title: { ru: "Церковь Спасителя в Люденшайде, 2006", ua: "Церква Спасителя в Люденшайді, 2006", de: "Die Erlöserkirche in Lüdenscheid, 2006" } },
-        { path: "Germany/nrw/arnsberg/Märkischer-Kreis/luedenscheid/altstadt_luedenscheid/001.JPG", title: { ru: "Фонтан в старом городе, 2006", ua: "Фонтан у старому місті, 2006", de: "Brunnen in der Altstadt, 2006" } },
+        { path: "Germany/nrw/arnsberg/Märkischer-Kreis/luedenscheid/altstadt_luedenscheid/007.jpg", title: { ru: "Старый город Люденшайда, 2026", ua: "Старе місто Люденшайда, 2026", de: "Altstadt Lüdenscheid, 2026" } },
+        { path: "Germany/nrw/arnsberg/Märkischer-Kreis/luedenscheid/altstadt_luedenscheid/003.jpg", title: { ru: "Старый город Люденшайда, 2026", ua: "Старе місто Люденшайда, 2026", de: "Altstadt Lüdenscheid, 2026" } },
+        { path: "Germany/nrw/arnsberg/Märkischer-Kreis/luedenscheid/altstadt_luedenscheid/004.jpg", title: { ru: "Старый город Люденшайда, 2026", ua: "Старе місто Люденшайда, 2026", de: "Altstadt Lüdenscheid, 2026" } },
+        { path: "Germany/nrw/arnsberg/Märkischer-Kreis/luedenscheid/altstadt_luedenscheid/005.jpg", title: { ru: "Старый город Люденшайда, 2026", ua: "Старе місто Люденшайда, 2026", de: "Altstadt Lüdenscheid, 2026" } },
+        { path: "Germany/nrw/arnsberg/Märkischer-Kreis/luedenscheid/altstadt_luedenscheid/006.jpg", title: { ru: "Старый город Люденшайда, 2026", ua: "Старе місто Люденшайда, 2026", de: "Altstadt Lüdenscheid, 2026" } },
+        { path: "Germany/nrw/arnsberg/Märkischer-Kreis/luedenscheid/altstadt_luedenscheid/002.jpg", title: { ru: "Старый город Люденшайда, 2026", ua: "Старе місто Люденшайда, 2026", de: "Altstadt Lüdenscheid, 2026" } },
+        { path: "Germany/nrw/arnsberg/Märkischer-Kreis/luedenscheid/altstadt_luedenscheid/008.jpg", title: { ru: "Старый город Люденшайда, 2026", ua: "Старе місто Люденшайда, 2026", de: "Altstadt Lüdenscheid, 2026" } },
+        { path: "Germany/nrw/arnsberg/Märkischer-Kreis/luedenscheid/altstadt_luedenscheid/erloeserkirche_luedenscheid/001.jpg", title: { ru: "Церковь Спасителя в Люденшайде, 2006", ua: "Церква Спасителя в Люденшайді, 2006", de: "Die Erlöserkirche in Lüdenscheid, 2006" } },
+        { path: "Germany/nrw/arnsberg/Märkischer-Kreis/luedenscheid/altstadt_luedenscheid/001.jpg", title: { ru: "Фонтан в старом городе, 2026", ua: "Фонтан у старому місті, 2026", de: "Brunnen in der Altstadt, 2026" } },
       ],
       erloeserkirche_luedenscheid: [
-        { path: "Germany/nrw/arnsberg/Märkischer-Kreis/luedenscheid/erloeserkirche_luedenscheid/001.JPG", title: { ru: "Церковь Спасителя в Люденшайде, 2006", ua: "Церква Спасителя в Люденшайді, 2006", de: "Die Erlöserkirche in Lüdenscheid, 2006" } },
+        { path: "Germany/nrw/arnsberg/Märkischer-Kreis/luedenscheid/altstadt_luedenscheid/erloeserkirche_luedenscheid/001.jpg", title: { ru: "Церковь Спасителя в Люденшайде, 2006", ua: "Церква Спасителя в Люденшайді, 2006", de: "Die Erlöserkirche in Lüdenscheid, 2006" } },
       ],
       brunnen_altstadt_luedenscheid: [
-        { path: "Germany/nrw/arnsberg/Märkischer-Kreis/luedenscheid/altstadt_luedenscheid/001.JPG", title: { ru: "Фонтан в старом городе, 2006", ua: "Фонтан у старому місті, 2006", de: "Brunnen in der Altstadt, 2006" } },
+        { path: "Germany/nrw/arnsberg/Märkischer-Kreis/luedenscheid/altstadt_luedenscheid/001.jpg", title: { ru: "Фонтан в старом городе, 2026", ua: "Фонтан у старому місті, 2026", de: "Brunnen in der Altstadt, 2026" } },
       ],
       rathausplatz_luedenscheid: [
         { path: "Germany/nrw/arnsberg/Märkischer-Kreis/luedenscheid/rathausplatz_lüdenscheid/001.JPG", title: { ru: "Центральная площадь Люденшайда, 2006", ua: "Центральна площа Люденшайда, 2006", de: "Rathausplatz, 2006" } },
@@ -502,7 +508,8 @@ export const Fotos = {
         { path: "Germany/nrw/arnsberg/Märkischer-Kreis/luedenscheid/sternplatz/001.JPG", title: { ru: "Памятник дяде Вилли, 2006", ua: "Пам'ятник дядьку Віллі, 2006", de: "Denkmal von Onkel Willi, 2006" } },
       ],
       onkel_willi_denkmal_sternplatz_luedenscheid: [
-        { path: "Germany/nrw/arnsberg/Märkischer-Kreis/luedenscheid/sternplatz/001.JPG", title: { ru: "Памятник дяде Вилли, 2006", ua: "Пам'ятник дядьку Віллі, 2006", de: "Denkmal von Onkel Willi, 2006" } },
+        { path: "Germany/nrw/arnsberg/Märkischer-Kreis/luedenscheid/sternplatz/001.jpg", title: { ru: "Памятник дяде Вилли, 2006", ua: "Пам'ятник дядьку Віллі, 2006", de: "Denkmal von Onkel Willi, 2006" } },
+        { path: "Germany/nrw/arnsberg/Märkischer-Kreis/luedenscheid/sternplatz/002.jpg", title: { ru: "Памятник дяде Вилли, 2026", ua: "Пам'ятник дядьку Віллі, 2026", de: "Denkmal von Onkel Willi, 2026" } },
       ],
       fontain_sternplatz_luedenscheid: [
         { path: "Germany/nrw/arnsberg/Märkischer-Kreis/luedenscheid/sternplatz/003.jpg", title: { ru: "Фонтан на площади Штернплац, 2006", ua: "Фонтан на площі Штернплац, 2006", de: "Brunnen auf dem Sternplatz, 2006" } },
@@ -519,6 +526,11 @@ export const Fotos = {
         { path: "Germany/nrw/arnsberg/Märkischer-Kreis/luedenscheid/versetalsperre/003_2021.jpg", title: { ru: "Водохранилище Верзе, 2021", ua: "Водосховище Верзе, 2021", de: "Versetalsperre, 2021" } },
         { path: "Germany/nrw/arnsberg/Märkischer-Kreis/luedenscheid/versetalsperre/004_2024.jpg", title: { ru: "Водохранилище Верзе, 2024", ua: "Водосховище Верзе, 2024", de: "Versetalsperre, 2024" } },
         { path: "Germany/nrw/arnsberg/Märkischer-Kreis/luedenscheid/versetalsperre/005_2024.jpg", title: { ru: "Водохранилище Верзе, 2024", ua: "Водосховище Верзе, 2024", de: "Versetalsperre, 2024" } },
+        { path: "Germany/nrw/arnsberg/Märkischer-Kreis/luedenscheid/versetalsperre/006_2026.jpg", title: { ru: "Водохранилище Верзе, 2026", ua: "Водосховище Верзе, 2026", de: "Versetalsperre, 2026" } },
+        { path: "Germany/nrw/arnsberg/Märkischer-Kreis/luedenscheid/versetalsperre/007_2026.jpg", title: { ru: "Водохранилище Верзе - Vorsperre, 2026", ua: "Водосховище Верзе - Vorsperre, 2026", de: "Versetalsperre - Vorsperre, 2026" } },
+        { path: "Germany/nrw/arnsberg/Märkischer-Kreis/luedenscheid/versetalsperre/008_2026.jpg", title: { ru: "Водохранилище Верзе - Vorsperre, 2026", ua: "Водосховище Верзе - Vorsperre, 2026", de: "Versetalsperre - Vorsperre, 2026" } },
+        { path: "Germany/nrw/arnsberg/Märkischer-Kreis/luedenscheid/versetalsperre/009_2026.jpg", title: { ru: "Водохранилище Верзе, 2026", ua: "Водосховище Верзе, 2026", de: "Versetalsperre, 2026" } },
+        { path: "Germany/nrw/arnsberg/Märkischer-Kreis/luedenscheid/versetalsperre/010_2026.jpg", title: { ru: "Водохранилище Верзе, 2026", ua: "Водосховище Верзе, 2026", de: "Versetalsperre, 2026" } },
       ],
       st_joseph_medardus: [
         { path: "Germany/nrw/arnsberg/Märkischer-Kreis/luedenscheid/st_joseph_medardus/001.jpg", title: { ru: "Церковь Святого Йозефа и Медарда (фото взято с интернета)", ua: "Церква Святого Йосипа та Медарда (фото взято з Інтернету)", de: "Kirche St. Joseph und Medardus (Foto aus dem Internet)" } },
@@ -632,6 +644,12 @@ export const Fotos = {
         { path: "Germany/rheinland-pfalz/trier_saarburg/saarburg_kell/saarburg/altstadt/wasserfall/001.jpg", title: { ru: "Водопад Саарбурга, 2024", ua: "Водоспад Саарбурга, 2024", de: "Wasserfall von Saarburg, 2024" } },
         { path: "Germany/rheinland-pfalz/trier_saarburg/saarburg_kell/saarburg/altstadt/wasserfall/002.jpg", title: { ru: "Водопад Саарбурга, 2024", ua: "Водоспад Саарбурга, 2024", de: "Wasserfall von Saarburg, 2024" } },
         { path: "Germany/rheinland-pfalz/trier_saarburg/saarburg_kell/saarburg/altstadt/wasserfall/003.jpg", title: { ru: "Водопад Саарбурга, 2024", ua: "Водоспад Саарбурга, 2024", de: "Wasserfall von Saarburg, 2024" } },
+      ],
+      burg_saarburg: [
+        { path: "Germany/rheinland-pfalz/trier_saarburg/saarburg_kell/saarburg/burg/001.jpg", title: { ru: "Замок Саарбурга, 2024", ua: "Замок Саарбурга, 2024", de: "Burg Saarburg, 2024" } },
+        { path: "Germany/rheinland-pfalz/trier_saarburg/saarburg_kell/saarburg/burg/002.jpg", title: { ru: "Замок Саарбурга, 2024", ua: "Замок Саарбурга, 2024", de: "Burg Saarburg, 2024" } },
+        { path: "Germany/rheinland-pfalz/trier_saarburg/saarburg_kell/saarburg/burg/003.jpg", title: { ru: "Замок Саарбурга, 2024", ua: "Замок Саарбурга, 2024", de: "Burg Saarburg, 2024" } },
+        { path: "Germany/rheinland-pfalz/trier_saarburg/saarburg_kell/saarburg/burg/005.jpg", title: { ru: "Замок Саарбурга, 2024", ua: "Замок Саарбурга, 2024", de: "Burg Saarburg, 2024" } },
       ]
     }
   }

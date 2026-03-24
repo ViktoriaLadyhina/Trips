@@ -542,7 +542,7 @@ const datas = [
             description: "Люденшайд: історія, географія, відомі мешканці та цікаві факти про «місто світла» у землі Північний Рейн-Вестфалія.",
             ogTitle: "Люденшайд – інформація про місто",
             ogDescription: "Докладна інформація про Люденшайд: культура, історія, визначні особистості та вражаючі факти про місто світла та інновацій.",
-            ogImage: "https://our-travels.info/foto/Germany/nrw/arnsberg/Märkischer-Kreis/luedenscheid/rathausplatz_lüdenscheid/001.JPG"
+            ogImage: "https://our-travels.info/foto/Germany/nrw/arnsberg/Märkischer-Kreis/luedenscheid/altstadt_luedenscheid/004.jpg"
         }
     },
     {

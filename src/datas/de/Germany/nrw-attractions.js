@@ -3329,7 +3329,7 @@ const datas = [
         type: ["historical_area"], rating: "popular",
         path: "altstadt_luedenscheid",
         countryPath: "germany", regionsPath: "nrw", districtPath: "arnsberg", cityPath: "luedenscheid",
-        fotoCard: "Germany/nrw/arnsberg/Märkischer-Kreis/luedenscheid/001.JPG",
+        fotoCard: "Germany/nrw/arnsberg/Märkischer-Kreis/luedenscheid/altstadt_luedenscheid/004.jpg",
         subObjects: ["erloeserkirche_luedenscheid", "brunnen_altstadt_luedenscheid"],
         short_description: "Die Altstadt von Lüdenscheid ist das historische Herz der Stadt mit engen Straßen und einem ringförmigen Straßennetz um die Erlöserkirche. Hier sind Gebäude aus dem 18.–19. Jahrhundert, Reste der Stadtmauer und das historische Museum erhalten geblieben, und die gemütlichen Gassen verbinden Vergangenheit mit dem modernen Stadtleben.",
         short_description_subObjects: {
@@ -3360,11 +3360,11 @@ const datas = [
             ]
         },
         meta: {
-            title: "Altstadt von Lüdenscheid – historisches Herz der Stadt mit engen Straßen und Denkmälern",
+            title: "Altstadt Lüdenscheid – historisches Herz der Stadt mit engen Straßen und Denkmälern",
             description: "Die Altstadt von Lüdenscheid ist der mittelalterliche Teil der Stadt mit historischen Gebäuden des 18.–19. Jahrhunderts, der Erlöserkirche, Resten der Stadtmauer und dem historischen Museum. Schlendern Sie durch die gemütlichen Gassen und spüren Sie die Atmosphäre vergangener Jahrhunderte.",
-            ogTitle: "Altstadt von Lüdenscheid",
+            ogTitle: "Altstadt Lüdenscheid",
             ogDescription: "Besuchen Sie die Altstadt von Lüdenscheid – den historischen Teil der Stadt mit barocken Häusern, der Erlöserkirche, dem historischen Museum und den Resten der mittelalterlichen Stadtmauer.",
-            ogImage: "https://our-travels.info/foto/Germany/nrw/arnsberg/Märkischer-Kreis/luedenscheid/001.JPG"
+            ogImage: "https://our-travels.info/foto/Germany/nrw/arnsberg/Märkischer-Kreis/luedenscheid/altstadt_luedenscheid/004.jpg"
         }
     },
     {
@@ -3374,7 +3374,7 @@ const datas = [
         path: "erloeserkirche_luedenscheid",
         countryPath: "germany", regionsPath: "nrw", districtPath: "arnsberg", cityPath: "luedenscheid",
         hiddenFromList: true, showMore: true,
-        fotoCard: "Germany/nrw/arnsberg/Märkischer-Kreis/luedenscheid/erloeserkirche_luedenscheid/001.JPG",
+        fotoCard: "Germany/nrw/arnsberg/Märkischer-Kreis/luedenscheid/altstadt_luedenscheid/erloeserkirche_luedenscheid/001.jpg",
         short_description: "Die Erlöserkirche – die älteste Kirche Lüdenscheids mit klassizistischer Fassade, Emporen und lutherischem Altar. Im Zentrum der Altstadt, architektonisches Wahrzeichen und kulturelles Zentrum mit Konzerten und Ausstellungen.",
         full_description: {
             title: "Beschreibung und Geschichte",
@@ -3418,7 +3418,7 @@ const datas = [
             description: "Die Erlöserkirche (Erlöserkirche) ist die älteste Kirche Lüdenscheids, errichtet im 12. Jahrhundert mit klassizistischer Fassade, Emporen und lutherischem Altar. Besuchen Sie dieses historische Gotteshaus im Zentrum der Altstadt und spüren Sie die Atmosphäre vergangener Jahrhunderte.",
             ogTitle: "Erlöserkirche, Lüdenscheid",
             ogDescription: "Entdecken Sie die Erlöserkirche in Lüdenscheid – ein historisches Gotteshaus mit Turm, Emporen und lutherischem Altar, ein architektonisches Wahrzeichen der Altstadt.",
-            ogImage: "https://our-travels.info/foto/Germany/nrw/arnsberg/Märkischer-Kreis/luedenscheid/erloeserkirche_luedenscheid/001.JPG"
+            ogImage: "https://our-travels.info/foto/Germany/nrw/arnsberg/Märkischer-Kreis/luedenscheid/altstadt_luedenscheid/erloeserkirche_luedenscheid/001.jpg"
         }
     },
     {
@@ -3429,7 +3429,7 @@ const datas = [
         countryPath: "germany", regionsPath: "nrw",
         districtPath: "arnsberg", cityPath: "luedenscheid",
         hiddenFromList: true,
-        fotoCard: "Germany/nrw/arnsberg/Märkischer-Kreis/luedenscheid/altstadt_luedenscheid/001.JPG",
+        fotoCard: "Germany/nrw/arnsberg/Märkischer-Kreis/luedenscheid/altstadt_luedenscheid/001.jpg",
         short_description: "Der Brunnen befindet sich in der historischen Altstadt auf dem Graf-Engelbert-Platz – einem Platz, der dem Stadtgründer gewidmet ist. Er wurde im Jahr 1982 eröffnet und der Stadt von ihren Bürgern im Zuge der Altstadtsanierung gestiftet und wurde zu einem der Symbole der erneuerten historischen Zone. Bei der feierlichen Eröffnung betonten die örtlichen Behörden den Wunsch, den Brunnen zum „Herz des bürgerlichen Lebens“ der Altstadt zu machen. Seitdem zählt er zu den bedeutenden öffentlichen und kulturellen Objekten Lüdenscheids.",
         short_description2: "Der Brunnen wurde vom Künstler und Metallgestalter K. T. Neumann (Kurt Toni Neumann) geschaffen, der in Lüdenscheid lebte und arbeitete und einen bedeutenden Beitrag zur plastischen Gestaltung der Stadt leistete. In der Gestaltung wird die Figur eines Herolds verwendet, die symbolisch den historischen Moment der Verleihung der Stadtrechte durch Graf Engelbert I., den Gründer Lüdenscheids, darstellt. Dieses Motiv spiegelt sich in den Reliefs und im gesamten thematischen Konzept der Anlage wider.",
         full_description: {
@@ -3447,7 +3447,7 @@ const datas = [
             description: "Der Brunnen am Graf-Engelbert-Platz entstand 1982 im Zuge der Altstadtsanierung. Er gilt als eines der Wahrzeichen des historischen Zentrums von Lüdenscheid und ist mit der Figur eines Herolds geschmückt, die auf die Stadtgründung durch Graf Engelbert I. verweist.",
             ogTitle: "Brunnen am Graf-Engelbert-Platz, Lüdenscheid",
             ogDescription: "Besuchen Sie den Brunnen am Graf-Engelbert-Platz in Lüdenscheid – ein historisches Objekt der Altstadt, das mit der Stadtgründung und der Erneuerung des historischen Zentrums verbunden ist.",
-            ogImage: "https://our-travels.info/foto/Germany/nrw/arnsberg/Märkischer-Kreis/luedenscheid/altstadt_luedenscheid/001.JPG"
+            ogImage: "https://our-travels.info/foto/Germany/nrw/arnsberg/Märkischer-Kreis/luedenscheid/altstadt_luedenscheid/001.jpg"
         }
     },
     {
@@ -3537,7 +3537,7 @@ const datas = [
         path: "onkel_willi_denkmal_sternplatz_luedenscheid",
         countryPath: "germany", regionsPath: "nrw", districtPath: "arnsberg", cityPath: "luedenscheid",
         hiddenFromList: true, showMore: true,
-        fotoCard: "Germany/nrw/arnsberg/Märkischer-Kreis/luedenscheid/sternplatz/001.JPG",
+        fotoCard: "Germany/nrw/arnsberg/Märkischer-Kreis/luedenscheid/sternplatz/001.jpg",
         short_description: "Das Denkmal von Onkel Willi ist eine Bronzeskulptur auf dem Sternplatz, die einen typischen Bewohner von Lüdenscheid mit Hund darstellt. Es ist ein inoffizielles Wahrzeichen der Stadt und spiegelt die alltägliche, „lebendige“ Atmosphäre wider.",
         full_description: {
             title: "Beschreibung und Geschichte",
@@ -3555,7 +3555,7 @@ const datas = [
             description: "Das Denkmal von Onkel Willi auf dem Sternplatz in Lüdenscheid ist eine Bronzeskulptur, die einen typischen Einwohner der Stadt mit Hund darstellt. Die Skulptur ist ein inoffizielles Wahrzeichen der Stadt und ein beliebter Treffpunkt für Fotos und Begegnungen.",
             ogTitle: "Denkmal von Onkel Willi in Lüdenscheid",
             ogDescription: "Die Bronzeskulptur von Onkel Willi auf dem Sternplatz im historischen Zentrum von Lüdenscheid verkörpert Freundlichkeit und das alltägliche Leben der Stadtbewohner. Beliebter Ort bei Touristen und Einwohnern.",
-            ogImage: "https://our-travels.info/foto/Germany/nrw/arnsberg/Märkischer-Kreis/luedenscheid/sternplatz/001.JPG"
+            ogImage: "https://our-travels.info/foto/Germany/nrw/arnsberg/Märkischer-Kreis/luedenscheid/sternplatz/001.jpg"
         }
     },
     {
@@ -3778,7 +3778,7 @@ const datas = [
             items: [
                 { bold: "Mahnmal an der Versetalsperre", text: " ist den Opfern des Lagers Hunswinkel gewidmet – eines nationalsozialistischen Zwangsarbeitslagers, das sich in den Jahren 1940 bis 1945 im Tal der Verse befand. Heute liegt das ehemalige Lagergelände unter Wasser, während das Mahnmal in der Nähe errichtet wurde und an Tausende von Gefangenen erinnert, die beim Bau der Talsperre eingesetzt wurden, von denen mindestens 550 infolge schwerer Bedingungen, Hunger und Gewalt ums Leben kamen." },
                 { img: "Germany/nrw/arnsberg/Märkischer-Kreis/luedenscheid/versetalsperre/001_2020.jpg", bold: "Klamer Brücke", text: " ist eine markante Brücke über die Versetalsperre. Sie wurde noch vor der Flutung des Sees gebaut und diente als wichtiger Verkehrsübergang während des Baus der Talsperre und der Straßen rund um das Tal der Verse. Heute wird die Brücke als Fußgänger- und Straßenübergang genutzt, und in ihrer Nähe befinden sich Parkplätze und touristische маршруты." },
-                { bold: "Vorsperre", text: " ist eine vorgelagerte Staumauer bei der zukünftigen Versetalsperre, die im Jahr 1933 an der Verse in der Nähe der Ortschaft Steinbach errichtet wurde. Sie wurde als temporäres Bauwerk zur ersten Wasseransammlung und zur Vorbereitung des Baus der großen Hauptstaumauer geschaffen, die später zur Versetalsperre wurde. Eine solche Konstruktion spielte eine wichtige Rolle in der frühen Phase der Bauarbeiten: Sie reguliert das Wasser, hält Verunreinigungen und Sedimente zurück und verbessert das Erscheinungsbild des Gebiets bei schwankendem Wasserstand. Letztendlich trug die Vorsperre zu einem stabileren Bau- und Betriebsprozess der Talsperre bei." },
+                { img: "Germany/nrw/arnsberg/Märkischer-Kreis/luedenscheid/versetalsperre/007_2026.jpg", bold: "Vorsperre", text: " ist eine vorgelagerte Staumauer bei der zukünftigen Versetalsperre, die im Jahr 1933 an der Verse in der Nähe der Ortschaft Steinbach errichtet wurde. Sie wurde als temporäres Bauwerk zur ersten Wasseransammlung und zur Vorbereitung des Baus der großen Hauptstaumauer geschaffen, die später zur Versetalsperre wurde. Eine solche Konstruktion spielte eine wichtige Rolle in der frühen Phase der Bauarbeiten: Sie reguliert das Wasser, hält Verunreinigungen und Sedimente zurück und verbessert das Erscheinungsbild des Gebiets bei schwankendem Wasserstand. Letztendlich trug die Vorsperre zu einem stabileren Bau- und Betriebsprozess der Talsperre bei." },
             ]
         },
         tickets_and_entry: {
@@ -3932,6 +3932,53 @@ const datas = [
             ogTitle: "Fuelbecketalsperre — Natur und Spaziergänge im Sauerland",
             ogDescription: "Ein gemütliches Wasserreservoir in den Wäldern des Sauerlands: Wanderwege, Ruhe und schöne Natur. Baden ist aufgrund der Trinkwassernutzung verboten.",
             ogImage: "https://our-travels.info/foto/Germany/nrw/arnsberg/Märkischer-Kreis/altena/fuelbecketalsperre/001_2020.jpg"
+        }
+    },
+    {
+        id: "dechenhohle_iserlohn",
+        name: "Dechenhöhle",
+        type: ["nature"], rating: "popular",
+        path: "dechenhohle_iserlohn",
+        countryPath: "germany", regionsPath: "nrw", districtPath: "arnsberg", cityPath: "altena",
+        fotoCard: "Germany/nrw/arnsberg/Märkischer-Kreis/altena/dechenhohle/001.jpg",
+        location: "Iserlohn, Deutschland",
+        officialSite: [{ bold: "Offizielle Webseite", link: "https://www.dechenhoehle.de/" }],
+        short_description: "Die Dechenhöhle ist eine der schönsten und meistbesuchten Tropfsteinhöhlen Deutschlands, gelegen im nördlichen Sauerland im Gebiet Iserlohn-Grüne (Nordrhein-Westfalen). Die Höhle beeindruckt durch ihre Vielzahl an Stalaktiten und Stalagmiten und bietet den Besuchern einen 400 m langen, speziell angelegten Rundgang durch beleuchtete Hallen mit einzigartigen Naturformationen.",
+        full_description: {
+            title: "Beschreibung und Geschichte",
+            items: [
+                { bold: "Die Dechenhöhle ", text: "liegt in den Karstkalken des Rheinischen Schiefergebirges und ist Teil eines großen unterirdischen Komplexes von über 20 km Länge. Im Inneren sind komplexe Formationen zu sehen – von der „Orgelhalle“ bis zur „Palmen-Säule“, ca. 3 m hoch. Die Höhle ist elektrisch beleuchtet, seit 2015 wird LED-Beleuchtung verwendet, um Farbe und Struktur der Tropfsteine besser zur Geltung zu bringen." },
+                { text: "Die Höhle ist nur im Rahmen einer Führung zugänglich: etwa 400 m ausgebauter Weg mit Erläuterungen des Guides. Die Temperatur im Inneren ist stabil bei ca. 10 °C, was den Besuch zu jeder Jahreszeit interessant macht." },
+                { text: "Seit ihrer Entdeckung wurde die Dechenhöhle schnell populär: bereits 1868 besuchten Tausende von Menschen die Höhle. Sie ist nach dem Geologen Heinrich von Dechen (1800–1889) benannt, der für seine Beiträge zur Geologie des Rheins und Westfalens anerkannt wurde." },
+                { text: "Bis 1983 gehörte die Höhle den Eisenbahnunternehmen aufgrund ihrer Entdeckung während des Gleisbaus; anschließend ging die Verwaltung an regionale Tourismus- und kommunale Organisationen über." }
+            ]
+        },
+        tickets_and_entry: {
+            title: "Praktische Informationen",
+            items: [
+                { bold: "Adresse: ", text: "Dechenhöhle 5, 58644 Iserlohn Grüne, Deutschland." },
+                { bold: "Anfahrt: ", text: "zu Fuß oder mit dem Bus von der Haltestelle Dechenhöhle; eigene Bahnstation Letmathe Dechenhöhle an den Regionalstrecken RE16 / RB91." },
+                { bold: "Führungen und Öffnungszeiten: ", text: "Führungen regelmäßig von März bis November, im Winter an Wochenenden und Feiertagen. Einzelne Sonderveranstaltungen auf Anfrage." },
+                { bold: "Eintrittspreise: ", text: "<br>Erwachsene ≈ 10 €, <br>Kinder 3–15 Jahre ≈ 6,50–6 €, <br>ermäßigte Preise für Gruppen." }
+            ]
+        },
+        interestingFacts: {
+            title: "Interessante Fakten",
+            items: [
+                { text: "Die Höhle liegt in der bekanntesten Höhlenregion Deutschlands – Grüner Tal." },
+                { text: "Die Dechenhöhle ist die einzige Höhle in Deutschland mit eigenem Bahnanschluss." },
+                { text: "Die Gesamtlänge der bekannten Gänge beträgt über 20 km, für Besucher sind etwa 400 m zugänglich." },
+                { text: "Regelmäßig finden thematische Führungen statt: „Höhlenlichter“, Konzerte, Weihnachtsführungen, Workshops." }
+            ]
+        },
+        construction_period: "Die Höhle wurde am 10. Juni 1868 während des Eisenbahnbaus entdeckt. Zwei Eisenbahnarbeiter, die einen Hammer verloren hatten, kletterten in einen engen Felsenriss, der zu einem Raum mit einzigartigen Tropfsteinformationen führte.",
+        coord: { lat: 51.36556, lng: 7.64472 },
+        meta: {
+            title: "Dechenhöhle, Iserlohn – Tropfsteinformationen, Führungen in Deutschland",
+            description: "Besuchen Sie die Dechenhöhle – eine der schönsten Tropfsteinhöhlen Deutschlands in Iserlohn. Erfahren Sie mehr über die Entdeckungsgeschichte, einzigartige Formationen, Museumsausstellungen und Führungen. Hervorragender Naturtourismus für die ganze Familie.",
+            ogTitle: "Dechenhöhle – unterirdisches Wunder im Sauerland",
+            ogDescription: "Entdecken Sie die mystische Dechenhöhle in Deutschland: Stalaktiten, Geschichten von eiszeitlichen Tieren, Museum und Höhlenführungen für alle Altersgruppen.",
+            ogImage: "https://our-travels.info/foto/Germany/nrw/arnsberg/Märkischer-Kreis/altena/dechenhohle/001.jpg"
         }
     }
 ];

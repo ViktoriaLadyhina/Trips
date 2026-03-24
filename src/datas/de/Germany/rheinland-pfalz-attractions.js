@@ -713,7 +713,7 @@ const datas = [
     type: ["palace_or_castle"], rating: "popular",
     path: "burg_saarburg",
     countryPath: "germany", regionsPath: "rheinland-pfalz", districtPath: "trier_saarburg", cityPath: "saarburg",
-    fotoCard: "",
+    fotoCard: "Germany/rheinland-pfalz/trier_saarburg/saarburg_kell/saarburg/burg/001.jpg",
     location: "Saarburg, Deutschland",
     short_description: "Burg Saarburg ist eine mittelalterliche Burg aus dem 11. Jahrhundert, die über der Stadt Saarburg thront. Sie ist bekannt für ihre malerischen Ruinen und den Panoramablick auf die Altstadt mit dem einzigartigen Wasserfall im Zentrum.",
     full_description: {
@@ -756,7 +756,7 @@ const datas = [
       description: "Die Burg Saarburg – mittelalterliche Ruinen aus dem 11. Jahrhundert in Deutschland. Panoramablicke, Geschichte und praktische Informationen.",
       ogTitle: "Burg Saarburg – eine der schönsten Burgen Deutschlands",
       ogDescription: "Malerische Ruinen der Burg Saarburg mit Blick auf die Stadt und den Wasserfall. Erfahre die Geschichte und besuche einen der stimmungsvollsten Orte der Region.",
-      ogImage: ""
+      ogImage: "https://our-travels.info/foto/Germany/rheinland-pfalz/trier_saarburg/saarburg_kell/saarburg/burg/001.jpg"
     }
   },
 ];
