@@ -76,9 +76,9 @@ const datas = [
         com: [{ text: "Der Kreis ist unterteilt in " }, { bold: "15 Gemeinden:" }],
         communities: [
             { id: 1, name: "Altena", hasInfo: true, path: "altena" },
-            { id: 2, name: "Balve", hasInfo: false },
+            { id: 2, name: "Balve", hasInfo:  false},
             { id: 3, name: "Werdohl", hasInfo: false },
-            { id: 4, name: "Iserlohn", hasInfo: false },
+            { id: 4, name: "Iserlohn", hasInfo: true, path: "iserlohn" },
             { id: 5, name: "Kierspe", hasInfo: false },
             { id: 6, name: "Lüdenscheid", hasInfo: true, path: 'luedenscheid' },
             { id: 7, name: "Meinerzhagen", hasInfo: false },

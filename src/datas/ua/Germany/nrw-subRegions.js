@@ -78,7 +78,7 @@ const datas = [
             { id: 1, name: "Альтена", hasInfo: true, path: "altena" },
             { id: 2, name: "Бальфе", hasInfo: false },
             { id: 3, name: "Вердоль", hasInfo: false },
-            { id: 4, name: "Ізерлон", hasInfo: false },
+            { id: 4, name: "Ізерлон", hasInfo: true, path: "iserlohn" },
             { id: 5, name: "Кірспе", hasInfo: false },
             { id: 6, name: "Люденшайд", hasInfo: true, path: 'luedenscheid' },
             { id: 7, name: "Майнерцхаген", hasInfo: false },

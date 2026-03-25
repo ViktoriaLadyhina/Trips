@@ -537,6 +537,11 @@ export const Fotos = {
         { path: "Germany/nrw/arnsberg/Märkischer-Kreis/luedenscheid/st_joseph_medardus/002.jpg", title: { ru: "Церковь Святого Йозефа и Медарда (фото взято с интернета)", ua: "Церква Святого Йосипа та Медарда (фото взято з Інтернету)", de: "Kirche St. Joseph und Medardus (Foto aus dem Internet)" } },
       ],
     },
+    iserlohn: {
+      gallery: [
+        { path: "Germany/nrw/arnsberg/Märkischer-Kreis/iserlohn/001.jpg", title: { ru: "Изерлон (фото взято с википедии)", ua: "Альтена (фото взято з Вікіпедії)", de: "Iserlohn (Foto von Wikipedia entnommen)" } },
+      ],
+    },
     altena: {
       gallery: [
         { path: "Germany/nrw/arnsberg/Märkischer-Kreis/altena/001.jpg", title: { ru: "Альтена, 2025", ua: "Альтена, 2025", de: "Altena, 2025" } },
@@ -649,7 +654,11 @@ export const Fotos = {
         { path: "Germany/rheinland-pfalz/trier_saarburg/saarburg_kell/saarburg/burg/001.jpg", title: { ru: "Замок Саарбурга, 2024", ua: "Замок Саарбурга, 2024", de: "Burg Saarburg, 2024" } },
         { path: "Germany/rheinland-pfalz/trier_saarburg/saarburg_kell/saarburg/burg/002.jpg", title: { ru: "Замок Саарбурга, 2024", ua: "Замок Саарбурга, 2024", de: "Burg Saarburg, 2024" } },
         { path: "Germany/rheinland-pfalz/trier_saarburg/saarburg_kell/saarburg/burg/003.jpg", title: { ru: "Замок Саарбурга, 2024", ua: "Замок Саарбурга, 2024", de: "Burg Saarburg, 2024" } },
+        { path: "Germany/rheinland-pfalz/trier_saarburg/saarburg_kell/saarburg/burg/004.jpg", title: { ru: "Замок Саарбурга, 2024", ua: "Замок Саарбурга, 2024", de: "Burg Saarburg, 2024" } },
         { path: "Germany/rheinland-pfalz/trier_saarburg/saarburg_kell/saarburg/burg/005.jpg", title: { ru: "Замок Саарбурга, 2024", ua: "Замок Саарбурга, 2024", de: "Burg Saarburg, 2024" } },
+        { path: "Germany/rheinland-pfalz/trier_saarburg/saarburg_kell/saarburg/burg/006.jpg", title: { ru: "Замок Саарбурга, 2024", ua: "Замок Саарбурга, 2024", de: "Burg Saarburg, 2024" } },
+        { path: "Germany/rheinland-pfalz/trier_saarburg/saarburg_kell/saarburg/burg/007.jpg", title: { ru: "Замок Саарбурга, 2024", ua: "Замок Саарбурга, 2024", de: "Burg Saarburg, 2024" } },
+        { path: "Germany/rheinland-pfalz/trier_saarburg/saarburg_kell/saarburg/burg/008.jpg", title: { ru: "Замок Саарбурга, 2024", ua: "Замок Саарбурга, 2024", de: "Burg Saarburg, 2024" } },
       ]
     }
   }

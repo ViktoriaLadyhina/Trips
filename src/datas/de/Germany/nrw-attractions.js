@@ -3939,8 +3939,8 @@ const datas = [
         name: "Dechenhöhle",
         type: ["nature"], rating: "popular",
         path: "dechenhohle_iserlohn",
-        countryPath: "germany", regionsPath: "nrw", districtPath: "arnsberg", cityPath: "altena",
-        fotoCard: "Germany/nrw/arnsberg/Märkischer-Kreis/altena/dechenhohle/001.jpg",
+        countryPath: "germany", regionsPath: "nrw", districtPath: "arnsberg", cityPath: "iserlohn",
+        fotoCard: "Germany/nrw/arnsberg/Märkischer-Kreis/iserlohn/dechenhohle/001.jpg",
         location: "Iserlohn, Deutschland",
         officialSite: [{ bold: "Offizielle Webseite", link: "https://www.dechenhoehle.de/" }],
         short_description: "Die Dechenhöhle ist eine der schönsten und meistbesuchten Tropfsteinhöhlen Deutschlands, gelegen im nördlichen Sauerland im Gebiet Iserlohn-Grüne (Nordrhein-Westfalen). Die Höhle beeindruckt durch ihre Vielzahl an Stalaktiten und Stalagmiten und bietet den Besuchern einen 400 m langen, speziell angelegten Rundgang durch beleuchtete Hallen mit einzigartigen Naturformationen.",
@@ -3978,7 +3978,7 @@ const datas = [
             description: "Besuchen Sie die Dechenhöhle – eine der schönsten Tropfsteinhöhlen Deutschlands in Iserlohn. Erfahren Sie mehr über die Entdeckungsgeschichte, einzigartige Formationen, Museumsausstellungen und Führungen. Hervorragender Naturtourismus für die ganze Familie.",
             ogTitle: "Dechenhöhle – unterirdisches Wunder im Sauerland",
             ogDescription: "Entdecken Sie die mystische Dechenhöhle in Deutschland: Stalaktiten, Geschichten von eiszeitlichen Tieren, Museum und Höhlenführungen für alle Altersgruppen.",
-            ogImage: "https://our-travels.info/foto/Germany/nrw/arnsberg/Märkischer-Kreis/altena/dechenhohle/001.jpg"
+            ogImage: "https://our-travels.info/foto/Germany/nrw/arnsberg/Märkischer-Kreis/iserlohn/dechenhohle/001.jpg"
         }
     }
 ];

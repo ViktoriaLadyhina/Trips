@@ -98,11 +98,11 @@ function useCityFullData() {
         let subRegions = [];
 
         if (foundDistrict) {
-          const modulesSubRegions = import.meta.glob("../datas/*/*/*-subRegions.js");          
-const keySubRegions = Object.keys(modulesSubRegions).find(path => {
-  const normalizedPath = path.toLowerCase().replace(/\\/g, "/");
-  return normalizedPath.endsWith(`${lang}/${countryPath}/${regionPath.toLowerCase()}-subregions.js`);
-});
+          const modulesSubRegions = import.meta.glob("../datas/*/*/*-subRegions.js");
+          const keySubRegions = Object.keys(modulesSubRegions).find(path => {
+            const normalizedPath = path.toLowerCase().replace(/\\/g, "/");
+            return normalizedPath.endsWith(`${lang}/${countryPath}/${regionPath.toLowerCase()}-subregions.js`);
+          });
 
           if (keySubRegions) {
             const subRegionModule = await modulesSubRegions[keySubRegions]();
@@ -116,33 +116,29 @@ const keySubRegions = Object.keys(modulesSubRegions).find(path => {
 
         setsubRegion(subRegions);
 
-        const cityModules = import.meta.glob('../datas/ru/germany/*-city.js');
-
+        // =============================
+        // 3️⃣ Находим города
+        // =============================
         let foundCity = null;
 
         if (cityPath) {
-          const modulePath = `../datas/ru/germany/${regionPath}-city.js`; // строим путь
-          const importFn = cityModules[modulePath];
+          try {
+            const cityModule = await import(`../datas/${lang}/${countryPath}/${regionPath}-city.js`);
+            const cities = cityModule.default || [];
 
-          if (importFn) {
-            try {
-              const cityModule = await importFn();
-              const cities = cityModule.default || [];
-              foundCity = cities.find(c => c.path === cityPath && c.districtPath === districtPath);
+            foundCity = cities.find(c => c.path === cityPath && c.districtPath === districtPath);
 
-              if (!foundCity) console.warn(`City not found: ${cityPath} в district ${districtPath}`);
-            } catch (err) {
-              console.error(`Ошибка при загрузке городов: ${err.message}`);
+            if (!foundCity) {
+              console.warn(`City not found: ${cityPath} в district ${districtPath}`);
             }
-          } else {
-            console.warn(`Файл не найден: ${modulePath}`);
+          } catch (err) {
+            console.error(`Ошибка при загрузке городов: ${err.message}`);
           }
         }
-
-        const foundParentSubRegion = subRegions.find(sr => sr.path === foundCity?.subRegionPath) || null;
+        const fountparentSubRegion = subRegions.find(sr => sr.path === foundCity?.subRegionPath) || null;
 
         setCity(foundCity);
-        setParentSubRegion(foundParentSubRegion);
+        setParentSubRegion(fountparentSubRegion)
 
         // =============================
         // 6️⃣ Загружаем достопримечательности

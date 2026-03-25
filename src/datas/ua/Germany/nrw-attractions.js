@@ -3936,8 +3936,8 @@ const datas = [
         name: "Печера Дехенхёле",
         type: ["nature"], rating: "popular",
         path: "dechenhohle_iserlohn",
-        countryPath: "germany", regionsPath: "nrw", districtPath: "arnsberg", cityPath: "altena",
-        fotoCard: "Germany/nrw/arnsberg/Märkischer-Kreis/altena/dechenhohle/001.jpg",
+        countryPath: "germany", regionsPath: "nrw", districtPath: "arnsberg", cityPath: "iserlohn",
+        fotoCard: "Germany/nrw/arnsberg/Märkischer-Kreis/iserlohn/dechenhohle/001.jpg",
         location: "Ізерлон, Німеччина",
         officialSite: [{ bold: "Офіційний сайт", link: "https://www.dechenhoehle.de/" }],
         short_description: "Печера Дехенхёле (Dechenhöhle) – одна з найкрасивіших та найвідвідуваніших сталактитових печер Німеччини, розташована в північній частині Саарланду в районі Ізерлон-Грюне (Північний Рейн-Вестфалія). Печера вражає багатством сталактитів та сталагмітів і пропонує відвідувачам 400 м спеціально облаштованого маршруту по освітлених залах з унікальними природними утвореннями.",
@@ -3975,7 +3975,7 @@ const datas = [
             description: "Відвідайте Dechenhöhle – одну з найкрасивіших сталактитових печер Німеччини в Ізерлоні. Дізнайтеся про історію відкриття, унікальні утворення, музейні експозиції та екскурсії. Чудовий природний туризм для всієї родини.",
             ogTitle: "Dechenhöhle – підземне диво Sauerland",
             ogDescription: "Відкрийте для себе містичну Dechenhöhle в Німеччині: сталактити, історії льодовикових тварин, музей та печерні екскурсії для всіх вікових груп.",
-            ogImage: "https://our-travels.info/foto/Germany/nrw/arnsberg/Märkischer-Kreis/altena/dechenhohle/001.jpg"
+            ogImage: "https://our-travels.info/foto/Germany/nrw/arnsberg/Märkischer-Kreis/iserlohn/dechenhohle/001.jpg"
         }
     }
 ]

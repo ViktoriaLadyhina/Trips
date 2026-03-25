@@ -28,13 +28,14 @@ const t = {
   },
   cities: {
     koln: { ru: 'Город Кёльн', de: 'Stadt Köln', ua: 'Місто Кельн' },
+    monschau: { ru: 'Город Моншау', de: 'Stadt Monschau', ua: 'Місто Моншау' },
     bruhl: { ru: 'Город Брюль', de: 'Stadt Brühl', ua: 'Місто Брюль' },
     frechen: { ru: 'Город Фрехен', de: 'Stadt Frechen', ua: 'Місто Фрехен' },
+    konigswinter: { ru: 'Город Кёнигсвинтер', de: 'Stadt Königswinter', ua: 'Місто Кенігсвінтер' },
     dortmund: { ru: 'Город Дортмунд', de: 'Stadt Dortmund', ua: 'Місто Дортмунд' },
     luedenscheid: { ru: 'Город Люденшайд', de: 'Stadt Lüdenscheid', ua: 'Місто Люденшайд' },
     altena: { ru: 'Город Альтена', de: 'Stadt Altena', ua: 'Місто Альтена' },
-    konigswinter: { ru: 'Город Кёнигсвинтер', de: 'Stadt Königswinter', ua: 'Місто Кенігсвінтер' },
-    monschau: { ru: 'Город Моншау', de: 'Stadt Monschau', ua: 'Місто Моншау' },
+    iserlohn: { ru: 'Город Изерлон', de: 'Stadt Iserlohn', ua: 'Місто Ізерлон' },
 
     trier: { ru: 'Город Трир', de: 'Stadt Trier', ua: 'Місто Трір' },
     saarburg: { ru: 'Город Саарбург', de: 'Stadt Saarburg', ua: 'Місто Саарбург' },
@@ -47,6 +48,9 @@ const t = {
     westfalenpark: { ru: 'Вестфаленпарк', de: 'Westfalenpark', ua: 'Вестфаленпарк' },
 
     // Märkischer Kreis
+    // Iserlohn
+    dechenhohle: { ru: 'Пещера Дехенхёле', de: 'Dechenhöhle', ua: 'Печера Дехенхёле' },
+
     // Lüdenscheid
     altstadt_luedenscheid: { ru: 'Старый город Люденшайда', de: 'Altstadt Lüdenscheid', ua: 'Старе місто Люденшайда' },
     erloeserkirche_luedenscheid: { ru: 'Церковь Спасителя', de: 'Erlöserkirche', ua: 'Церква Спасителя' },
@@ -271,6 +275,11 @@ const Map = () => {
 
                         {/* Lüdenscheid */}
                         <ul>
+                          <li><Link to="/germany/nrw/arnsberg/iserlohn">{t.cities.iserlohn[lang]}</Link>
+                          <ul>
+                            <li><Link to="/germany/nrw/arnsberg/iserlohn/attractions/dechenhohle_iserlohn">{t.attractions.dechenhohle[lang]}</Link></li>
+                            </ul>
+                            </li>
                           <li><Link to="/germany/nrw/arnsberg/luedenscheid">{t.cities.luedenscheid[lang]}</Link>
                             <ul>
                               <li><Link to="/germany/nrw/arnsberg/luedenscheid/attractions/altstadt_luedenscheid">{t.attractions.altstadt_luedenscheid[lang]}</Link>

@@ -606,7 +606,89 @@ const datas = [
             ogDescription: "Detaillierte Informationen über Altena: Kultur, Geschichte, berühmte Persönlichkeiten und interessante Fakten über die Burg und die industrielle Vergangenheit der Stadt.",
             ogImage: "https://upload.wikimedia.org/wikipedia/commons/thumb/3/38/Burg_Altena_2012.jpg/800px-Burg_Altena_2012.jpg"
         }
-    }
+    },
+    {
+        id: "iserlohn",
+        name: "Iserlohn",
+        path: "iserlohn",
+        countryPath: "germany", regionsPath: "nrw", districtPath: "arnsberg", subRegionPath: "merkischer",
+        desc: {
+            general: [
+                { text: "Iserlohn ist die größte Stadt des Märkischen Kreises im Regierungsbezirk Arnsberg im Bundesland Nordrhein-Westfalen. Die Stadt liegt am nördlichen Rand des Sauerlandes und ist historisch als bedeutendes Zentrum der Metallverarbeitung und Industrie bekannt." }
+            ],
+            population: [
+                { bold: "Einwohnerzahl", text: " beträgt etwa 92.000 Personen (Stand: 2024)." }
+            ],
+            area: [
+                { bold: "Fläche:" },
+                { text: " Das Stadtgebiet umfasst etwa 125,5 km². Ein großer Teil besteht aus Wäldern und Naturflächen, wodurch Iserlohn zu den grünsten Städten der Region zählt." },
+                { text: " Die Stadt gliedert sich in mehrere Stadtteile, darunter die historische Innenstadt sowie ehemals eigenständige Gemeinden." }
+            ],
+            postalCode: [
+                { bold: "Postleitzahlen:", text: " 58636–58644" }
+            ],
+            phone: [
+                { bold: "Vorwahl:", text: " +49 02371" }
+            ],
+            officialSite: [
+                { bold: "Offizielle Website von Iserlohn", link: "https://www.iserlohn.de/" }
+            ],
+            education: [
+                { bold: "Bildungssystem" },
+                { text: " umfasst ein breites Spektrum an Bildungseinrichtungen: Grundschulen, Realschulen, Gesamtschulen, Gymnasien sowie berufliche Schulen." },
+                { text: " Iserlohn ist Teil des Bildungsnetzwerks der Fachhochschule Südwestfalen mit technischen und ingenieurwissenschaftlichen Studiengängen." },
+                { text: " Darüber hinaus gibt es Musikschulen, Weiterbildungseinrichtungen und Zentren für berufliche Qualifizierung." }
+            ],
+            culture: [
+                { bold: "Kulturelle Aktivitäten", text: " – die Stadt bietet Museen, Theater und Veranstaltungsorte. Besonders bekannt ist die Dechenhöhle sowie zahlreiche Wanderwege und Naherholungsgebiete." }
+            ]
+        },
+        geography: {
+            title: "Relief und Höhenlage",
+            items: [
+                { text: "Iserlohn liegt im Übergangsbereich zwischen der flacheren Ruhrregion und dem hügeligen Sauerland." },
+                { text: "Die durchschnittliche Höhe beträgt etwa 250–300 Meter über dem Meeresspiegel, mit teils deutlichen Höhenunterschieden." },
+                { bold: "Geologie.", text: " Die Region ist durch Kalksteinformationen aus dem Devon geprägt, was zur Bildung von Karstlandschaften und Höhlen wie der Dechenhöhle geführt hat." }
+            ]
+        },
+        notablePeople: {
+            title: "Bekannte Persönlichkeiten aus Iserlohn",
+            items: [
+                { bold: "Nikki Adler (*1986)", text: " – deutsche Profiboxerin und Weltmeisterin." },
+                { bold: "Rainer Schaller (1969–2022)", text: " – deutscher Unternehmer und Gründer von McFit." },
+                { bold: "Friedrich Söhn (19. Jahrhundert)", text: " – Industrieller im Bereich Metallverarbeitung." }
+            ]
+        },
+        interestingFacts: {
+            title: "Interessante Fakten",
+            items: [
+                { bold: "Dechenhöhle", text: " – eine der bekanntesten Tropfsteinhöhlen Deutschlands." },
+                { bold: "Drahtindustrie", text: " – Iserlohn war über Jahrhunderte ein bedeutendes Zentrum der Drahtproduktion in Europa." },
+                { bold: "Grüne Stadt", text: " – große Teile des Stadtgebiets sind bewaldet." },
+                { bold: "Geografische Lage", text: " – Übergang zwischen Industriegebiet und Naturregion." }
+            ]
+        },
+        briefHistory: {
+            title: "Geschichte",
+            items: [
+                { text: "Die Region war bereits im frühen Mittelalter besiedelt." },
+                { text: "Im 13. Jahrhundert erhielt Iserlohn Stadtrechte." },
+                { text: "Im Laufe der Zeit entwickelte sich die Stadt zu einem Zentrum der Metallverarbeitung." },
+                { text: "Im 19. Jahrhundert brachte die Industrialisierung wirtschaftliches Wachstum." },
+                { text: "Nach dem Zweiten Weltkrieg wurde die Stadt wieder aufgebaut." },
+                { text: "Seit der Gebietsreform 1975 gehört Iserlohn zu den größten Städten der Region." }
+            ]
+        },
+        coord: { lat: 51.3755, lng: 7.7028 },
+        gerb: "Germany/nrw/arnsberg/Märkischer-Kreis/iserlohn/gerb.png",
+        meta: {
+            title: "Iserlohn – Höhlen, Natur und Industriegeschichte in NRW",
+            description: "Iserlohn: größte Stadt im Märkischen Kreis mit der bekannten Dechenhöhle und einer langen Industriegeschichte.",
+            ogTitle: "Iserlohn – Stadt der Höhlen und Industrie",
+            ogDescription: "Entdecken Sie Iserlohn: Natur, Höhlen und industrielle Entwicklung.",
+            ogImage: "https://our-travels.info/foto/Germany/nrw/arnsberg/Märkischer-Kreis/iserlohn/dechenhoehle/001.jpg"
+        }
+    },
 ]
 
 export default datas
