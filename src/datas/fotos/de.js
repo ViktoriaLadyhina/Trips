@@ -531,6 +531,7 @@ export const Fotos = {
         { path: "Germany/nrw/arnsberg/Märkischer-Kreis/luedenscheid/versetalsperre/008_2026.jpg", title: { ru: "Водохранилище Верзе - Vorsperre, 2026", ua: "Водосховище Верзе - Vorsperre, 2026", de: "Versetalsperre - Vorsperre, 2026" } },
         { path: "Germany/nrw/arnsberg/Märkischer-Kreis/luedenscheid/versetalsperre/009_2026.jpg", title: { ru: "Водохранилище Верзе, 2026", ua: "Водосховище Верзе, 2026", de: "Versetalsperre, 2026" } },
         { path: "Germany/nrw/arnsberg/Märkischer-Kreis/luedenscheid/versetalsperre/010_2026.jpg", title: { ru: "Водохранилище Верзе, 2026", ua: "Водосховище Верзе, 2026", de: "Versetalsperre, 2026" } },
+        { path: "Germany/nrw/arnsberg/Märkischer-Kreis/luedenscheid/versetalsperre/011_2026.jpg", title: { ru: "Водохранилище Верзе - Мемориал, 2026", ua: "Водосховище Верзе - Меморіал, 2026", de: "Versetalsperre - Mahnmal, 2026" } },
       ],
       st_joseph_medardus: [
         { path: "Germany/nrw/arnsberg/Märkischer-Kreis/luedenscheid/st_joseph_medardus/001.jpg", title: { ru: "Церковь Святого Йозефа и Медарда (фото взято с интернета)", ua: "Церква Святого Йосипа та Медарда (фото взято з Інтернету)", de: "Kirche St. Joseph und Medardus (Foto aus dem Internet)" } },
@@ -577,12 +578,12 @@ export const Fotos = {
         { path: "Germany/rheinland-pfalz/trier-city/altstadt/006.jpg", title: { ru: "Старый город Трира, 2024", ua: "Старе місто Тріра, 2024", de: "Altstadt Trier, 2024" } },
         { path: "Germany/rheinland-pfalz/trier-city/altstadt/007.jpg", title: { ru: "Старый город Трира, 2024", ua: "Старе місто Тріра, 2024", de: "Altstadt Trier, 2024" } },
         { path: "Germany/rheinland-pfalz/trier-city/altstadt/008.jpg", title: { ru: "Старый город Трира, 2024", ua: "Старе місто Тріра, 2024", de: "Altstadt Trier, 2024" } },
-        { path: "Germany/rheinland-pfalz/trier-city/portaNigra_trier/001.jpg", title: { ru: "Порта Нигра, 2024", ua: "Порта Нігра («Чорні ворота»), 2024", de: "Porta Nigra, 2024" } },
+        { path: "Germany/rheinland-pfalz/trier-city/altstadt/portaNigra_trier/001.jpg", title: { ru: "Порта Нигра, 2024", ua: "Порта Нігра («Чорні ворота»), 2024", de: "Porta Nigra, 2024" } },
         { path: "Germany/rheinland-pfalz/trier-city/cathedral/001.jpg", title: { ru: "Кафедральный собор, 2024", ua: "Кафедральний собор, 2024", de: "Trierer Dom, 2024" } },
       ],
       portaNigra_trier: [
-        { path: "Germany/rheinland-pfalz/trier-city/portaNigra_trier/001.jpg", title: { ru: "Порта Нигра, 2024", ua: "Порта Нігра («Чорні ворота»), 2024", de: "Porta Nigra, 2024" } },
-        { path: "Germany/rheinland-pfalz/trier-city/portaNigra_trier/002.jpg", title: { ru: "Порта Нигра, 2024", ua: "Порта Нігра («Чорні ворота»), 2024", de: "Porta Nigra, 2024" } },
+        { path: "Germany/rheinland-pfalz/trier-city/altstadt/portaNigra_trier/001.jpg", title: { ru: "Порта Нигра, 2024", ua: "Порта Нігра («Чорні ворота»), 2024", de: "Porta Nigra, 2024" } },
+        { path: "Germany/rheinland-pfalz/trier-city/altstadt/portaNigra_trier/002.jpg", title: { ru: "Порта Нигра, 2024", ua: "Порта Нігра («Чорні ворота»), 2024", de: "Porta Nigra, 2024" } },
       ],
       amphitheater_trier: [
         { path: "Germany/rheinland-pfalz/trier-city/amphitheater/001.jpg", title: { ru: "Римский амфитеатр в Трире, 2024", ua: "Римський амфітеатр у Трірі, 2024", de: "Römischer Amphitheater in Trier, 2024" } },
@@ -649,6 +650,9 @@ export const Fotos = {
         { path: "Germany/rheinland-pfalz/trier_saarburg/saarburg_kell/saarburg/altstadt/wasserfall/001.jpg", title: { ru: "Водопад Саарбурга, 2024", ua: "Водоспад Саарбурга, 2024", de: "Wasserfall von Saarburg, 2024" } },
         { path: "Germany/rheinland-pfalz/trier_saarburg/saarburg_kell/saarburg/altstadt/wasserfall/002.jpg", title: { ru: "Водопад Саарбурга, 2024", ua: "Водоспад Саарбурга, 2024", de: "Wasserfall von Saarburg, 2024" } },
         { path: "Germany/rheinland-pfalz/trier_saarburg/saarburg_kell/saarburg/altstadt/wasserfall/003.jpg", title: { ru: "Водопад Саарбурга, 2024", ua: "Водоспад Саарбурга, 2024", de: "Wasserfall von Saarburg, 2024" } },
+      ],
+      amuseum_saarburg: [
+        { path: "Germany/rheinland-pfalz/trier_saarburg/saarburg_kell/saarburg/altstadt/amuseum/001.jpg", title: { ru: "Амюзеум Саарбург (фото взято с интернета)", ua: "Амюзеум Саарбург (фото взято з Інтернету)", de: "Amüseum Saarburg (Foto aus dem Internet)" } },
       ],
       burg_saarburg: [
         { path: "Germany/rheinland-pfalz/trier_saarburg/saarburg_kell/saarburg/burg/001.jpg", title: { ru: "Замок Саарбурга, 2024", ua: "Замок Саарбурга, 2024", de: "Burg Saarburg, 2024" } },
