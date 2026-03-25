@@ -66,6 +66,7 @@ const t = {
 
     // Altena
     burg_altena: { ru: 'Замок Альтена', de: 'Burg Altena', ua: 'Замок Альтена' },
+    drahtmuseum: { ru: 'Немецкий музей проволоки', de: 'Deutsches Drahtmuseum', ua: 'Німецький музей дроту' },
     fuelbecketalsperre_altena: { ru: 'Водохранилище Фюльбекке', de: 'Fuelbecketalsperre', ua: 'Водосховище Фюльбекке' },
 
     //Köln-city
@@ -307,6 +308,7 @@ const Map = () => {
                           <li><Link to="/germany/nrw/arnsberg/altena">{t.cities.altena[lang]}</Link>
                             <ul>
                               <li><Link to="/germany/nrw/arnsberg/altena/attractions/burg_altena">{t.attractions.burg_altena[lang]}</Link></li>
+                              <li><Link to="/germany/nrw/arnsberg/altena/attractions/drahtmuseum_altena">{t.attractions.drahtmuseum[lang]}</Link></li>
                               <li><Link to="/germany/nrw/arnsberg/altena/attractions/fuelbecketalsperre_altena">{t.attractions.fuelbecketalsperre_altena[lang]}</Link></li>
                             </ul>
                           </li>

@@ -3882,6 +3882,64 @@ const datas = [
         }
     },
     {
+        id: "drahtmuseum_altena",
+        name: "Deutsches Drahtmuseum",
+        type: ["museum"], rating: "local",
+        path: "drahtmuseum_altena",
+        countryPath: "germany", regionsPath: "nrw", districtPath: "arnsberg", cityPath: "altena",
+        fotoCard: "Germany/nrw/arnsberg/Märkischer-Kreis/altena/drahtmuseum/001.jpg",
+        location: "Altena, Deutschland",
+        short_description: "Das Deutsche Drahtmuseum in Altena ist ein einzigartiges technisches Museum, das der Geschichte der Drahtproduktion und ihrer Rolle in der industriellen Entwicklung von mittelalterlichen Technologien bis hin zu modernen Hightech-Materialien gewidmet ist.",
+        full_description: {
+            title: "Beschreibung und Geschichte",
+            items: [
+                { bold: "Das Deutsche Drahtmuseum", text: "befindet sich in der Stadt Altena, nur wenige Gehminuten von der Burg Altena entfernt. Das Museum widmet sich einem der wichtigsten Handwerke der Region – der Drahtproduktion, die über Jahrhunderte eine bedeutende Rolle in der Wirtschaft des Sauerlandes spielte." },
+                { text: "Die Ausstellung zeigt die Entwicklung des Drahtes unter dem Motto „vom Kettenhemd zum Supraleiter“. Besucher können sehen, wie Draht aus Metallrohlingen hergestellt wird und wie er in Industrie, Elektronik und sogar in der Kunst verwendet wird. Besonderes Augenmerk liegt nicht nur auf der Technologie, sondern auch auf den sozialen und wirtschaftlichen Auswirkungen dieser Branche." },
+                { text: "Das Museum nutzt активно interaktive Elemente: Vorführungen, Modelle und Experimentierstationen helfen dabei, die Herstellungsprozesse besser zu verstehen. Dadurch ist der Besuch sowohl für Erwachsene als auch für Kinder interessant." },
+                { bold: "Geschichte.", text: "Die Region rund um Altena war seit dem späten Mittelalter eines der Zentren der Drahtproduktion in Europa. Flüsse und Wassermühlen ermöglichten die Entwicklung mechanisierter Produktionsverfahren, und lokale Handwerker verbesserten die Techniken des Drahtziehens kontinuierlich." },
+                { text: "Das Museum wurde im Jahr 1965 als spezialisierte Einrichtung gegründet. Ziel war es, das industrielle Erbe der Region zu bewahren und die technische Geschichte zu vermitteln." },
+                { text: "Im Laufe der Zeit wurde die Ausstellung erweitert und modernisiert und umfasst heute Themen von der industriellen Produktion bis hin zur Nutzung von Draht in Hochtechnologie und Design. Heute ist das Museum ein bedeutendes kulturelles und Bildungsobjekt der Region." }
+            ]
+        },
+        tickets_and_entry: {
+            title: "Praktische Informationen",
+            items: [
+                { bold: "Adresse: ", text: "Fritz-Thomée-Straße 12, 58762 Altena, Deutschland" },
+                { bold: "Öffnungszeiten: ", text: "<br>Dienstag–Sonntag: 10:00–17:00, <br>Montag – geschlossen (es wird empfohlen, die Zeiten vor dem Besuch zu überprüfen)" },
+                { bold: "Eintritt (2025): ", text: "Der Eintritt ist kostenlos (nach dem Prinzip „Pay what you want“ – freiwillige Spende möglich). Führungen werden separat berechnet" },
+                { bold: "Anreise: ", text: "Zu Fuß von der Burg Altena etwa 5–10 Minuten. Vom Stadtzentrum aus zu Fuß oder mit dem Auto erreichbar. Nächster Bahnhof: Altena (Westf), anschließend etwa 15–20 Minuten zu Fuß" }
+            ]
+        },
+        sub_objects: {
+            title: "Ausstellungen",
+            items: [
+                { text: "Historische Drahtproduktion (manuelle und mechanische Verfahren)" },
+                { text: "Kettenhemden und mittelalterliche Objekte" },
+                { text: "Industrialisierung und technologische Entwicklung" },
+                { text: "Moderne Materialien und Supraleiter" },
+                { text: "Draht in Kunst und Design" }
+            ]
+        },
+        interestingFacts: {
+            title: "Interessante Fakten",
+            items: [
+                { text: "Altena galt historisch als eines der wichtigsten Zentren der Drahtproduktion in Deutschland" },
+                { text: "Draht wurde nicht nur im Handwerk, sondern auch in der frühen Industrie Europas verwendet" },
+                { text: "Das Museum zeigt nicht nur Technik, sondern auch soziale Veränderungen im Zuge der Industrialisierung" },
+                { text: "Die Ausstellung umfasst sowohl originale Maschinen als auch moderne wissenschaftliche Entwicklungen" }
+            ]
+        },
+        construction_period: "1965",
+        coord: { lat: 51.29456, lng: 7.67429 },
+        meta: {
+            title: "Deutsches Drahtmuseum in Altena — Beschreibung, Geschichte und Ausstellungen",
+            description: "Das Deutsche Drahtmuseum in Altena zeigt die Geschichte der Drahtproduktion von mittelalterlichen Kettenhemden bis zu modernen Technologien. Informationen, Ausstellungen und Fakten für Besucher.",
+            ogTitle: "Deutsches Drahtmuseum in Altena – ein ungewöhnliches Museum in Deutschland",
+            ogDescription: "Erfahre, wie Draht die Welt verändert hat – von mittelalterlichen Kettenhemden bis hin zu Hochtechnologien. Interaktives Museum in Altena.",
+            ogImage: "https://our-travels.info/foto/Germany/nrw/arnsberg/Märkischer-Kreis/altena/drahtmuseum/001.jpg"
+        }
+    },
+    {
         id: "fuelbecketalsperre_altena",
         name: "Fuelbecketalsperre",
         type: ["nature"], rating: "local",
@@ -3934,6 +3992,8 @@ const datas = [
             ogImage: "https://our-travels.info/foto/Germany/nrw/arnsberg/Märkischer-Kreis/altena/fuelbecketalsperre/001_2020.jpg"
         }
     },
+
+    //iserlohn
     {
         id: "dechenhohle_iserlohn",
         name: "Dechenhöhle",
