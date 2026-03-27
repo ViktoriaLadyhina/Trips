@@ -549,6 +549,21 @@ export const Fotos = {
       ],
       burg_altena: [
         { path: "Germany/nrw/arnsberg/Märkischer-Kreis/altena/burg/001.jpg", title: { ru: "Замок Альтена, 2025", ua: "Замок Альтена, 2025", de: "Burg Altena, 2025" } },
+        { path: "Germany/nrw/arnsberg/Märkischer-Kreis/altena/burg/002.jpg", title: { ru: "Замок Альтена, 2023", ua: "Замок Альтена, 2023", de: "Burg Altena, 2023" } },
+        { path: "Germany/nrw/arnsberg/Märkischer-Kreis/altena/burg/003.jpg", title: { ru: "Замок Альтена, 2023", ua: "Замок Альтена, 2023", de: "Burg Altena, 2023" } },
+        { path: "Germany/nrw/arnsberg/Märkischer-Kreis/altena/burg/004.jpg", title: { ru: "Замок Альтена, 2023", ua: "Замок Альтена, 2023", de: "Burg Altena, 2023" } },
+        { path: "Germany/nrw/arnsberg/Märkischer-Kreis/altena/burg/005.jpg", title: { ru: "Замок Альтена, 2023", ua: "Замок Альтена, 2023", de: "Burg Altena, 2023" } },
+        { path: "Germany/nrw/arnsberg/Märkischer-Kreis/altena/burg/006.jpg", title: { ru: "Замок Альтена, 2023", ua: "Замок Альтена, 2023", de: "Burg Altena, 2023" } },
+        { path: "Germany/nrw/arnsberg/Märkischer-Kreis/altena/burg/007.jpg", title: { ru: "Замок Альтена, 2023", ua: "Замок Альтена, 2023", de: "Burg Altena, 2023" } },
+        { path: "Germany/nrw/arnsberg/Märkischer-Kreis/altena/burg/008.jpg", title: { ru: "Замок Альтена, 2023", ua: "Замок Альтена, 2023", de: "Burg Altena, 2023" } },
+        { path: "Germany/nrw/arnsberg/Märkischer-Kreis/altena/burg/009.jpg", title: { ru: "Замок Альтена, 2023", ua: "Замок Альтена, 2023", de: "Burg Altena, 2023" } },
+        { path: "Germany/nrw/arnsberg/Märkischer-Kreis/altena/burg/010.jpg", title: { ru: "Замок Альтена, 2023", ua: "Замок Альтена, 2023", de: "Burg Altena, 2023" } },
+        { path: "Germany/nrw/arnsberg/Märkischer-Kreis/altena/burg/011.jpg", title: { ru: "Замок Альтена, 2023", ua: "Замок Альтена, 2023", de: "Burg Altena, 2023" } },
+        { path: "Germany/nrw/arnsberg/Märkischer-Kreis/altena/burg/012.jpg", title: { ru: "Замок Альтена, 2023", ua: "Замок Альтена, 2023", de: "Burg Altena, 2023" } },
+        { path: "Germany/nrw/arnsberg/Märkischer-Kreis/altena/burg/013.jpg", title: { ru: "Замок Альтена, 2023", ua: "Замок Альтена, 2023", de: "Burg Altena, 2023" } },
+        { path: "Germany/nrw/arnsberg/Märkischer-Kreis/altena/burg/014.jpg", title: { ru: "Замок Альтена, 2023", ua: "Замок Альтена, 2023", de: "Burg Altena, 2023" } },
+        { path: "Germany/nrw/arnsberg/Märkischer-Kreis/altena/burg/015.jpg", title: { ru: "Замок Альтена, 2023", ua: "Замок Альтена, 2023", de: "Burg Altena, 2023" } },
+        { path: "Germany/nrw/arnsberg/Märkischer-Kreis/altena/burg/016.jpg", title: { ru: "Замок Альтена, 2023", ua: "Замок Альтена, 2023", de: "Burg Altena, 2023" } },
       ],
       fuelbecketalsperre_altena: [
         { path: "Germany/nrw/arnsberg/Märkischer-Kreis/altena/fuelbecketalsperre/001_2020.jpg", title: { ru: "Водохранилище Фюльбекке, 2020", ua: "Водосховище Фюльбекке, 2020", de: "Fuelbecketalsperre, 2020" } },
@@ -559,6 +574,9 @@ export const Fotos = {
         { path: "Germany/nrw/arnsberg/Märkischer-Kreis/altena/fuelbecketalsperre/006.jpg", title: { ru: "Водохранилище Фюльбекке, 2025", ua: "Водосховище Фюльбекке, 2025", de: "Fuelbecketalsperre, 2025" } },
         { path: "Germany/nrw/arnsberg/Märkischer-Kreis/altena/fuelbecketalsperre/007_2020.jpg", title: { ru: "Водохранилище Фюльбекке, 2020", ua: "Водосховище Фюльбекке, 2020", de: "Fuelbecketalsperre, 2020" } },
         { path: "Germany/nrw/arnsberg/Märkischer-Kreis/altena/fuelbecketalsperre/008_2020.jpg", title: { ru: "Водохранилище Фюльбекке, 2020", ua: "Водосховище Фюльбекке, 2020", de: "Fuelbecketalsperre, 2020" } },
+      ],
+      st_matthaeus_church_altena: [
+        { path: "Germany/nrw/arnsberg/Märkischer-Kreis/altena/st_matthaeus_church/001.jpg", title: { ru: "Приходская церковь Святого Матфея, 2025", ua: "Парафіяльна церква Святого Матвія, 2025", de: "Katholische Pfarrkirche St. Matthäus, 2025" } },
       ],
     }
 

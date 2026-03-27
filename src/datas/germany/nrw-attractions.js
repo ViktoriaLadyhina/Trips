@@ -169,6 +169,170 @@ const datas = [
             },
         }
     },
+    {
+        id: "st_matthaeus_church_altena",
+        type: ["cathedral"],
+        rating: "local",
+        path: "st_matthaeus_church_altena",
+        countryPath: "germany",
+        regionsPath: "nrw",
+        districtPath: "arnsberg",
+        cityPath: "altena",
+        fotoCard: "Germany/nrw/arnsberg/Märkischer-Kreis/altena/st_matthaeus_church/001.jpg",
+        coord: { lat: 51.28883691322431, lng: 7.677972331654175 },
+        translations: {
+            ru: {
+                name: "Приходская церковь Святого Матфея",
+                location: "Альтена, Германия",
+                short_description: "Католическая приходская церковь Святого Матфея — один из заметных архитектурных объектов города Альтена, построенный в конце XIX века. Храм выполнен в неоготическом стиле с элементами романской архитектуры и отличается массивными каменными стенами и высокой башней. Внутри сохранились исторические алтари и декоративные элементы, создающие атмосферу уюта и традиции. Церковь остаётся действующим приходом и важной частью городской жизни.",
+                full_description: {
+                    title: "Описание и история",
+                    items: [
+                        { bold: "Приходская церковь Святого Матфея (Katholische Pfarrkirche St. Matthäus Altena)", text: "в Альтене представляет собой выразительный пример неоготической архитектуры, характерной для Германии конца XIX века. Здание выполнено из кирпича и отличается вертикально устремлёнными формами, стрельчатыми арками и высокой башней, доминирующей в городском силуэте." },
+                        { text: "Внутреннее пространство храма организовано с чёткой симметрией и продуманной структурой. Интерьер украшен резными элементами, витражами и несколькими алтарями, что создаёт цельное художественное пространство и подчёркивает сакральный характер здания." },
+                        { bold: "История.", text: "Церковь была построена в период с 1896 по 1899 годы в связи с ростом католической общины в Альтене. Проект разработал архитектор Иоганнес Францискус Кломп (Johannes Franziskus Klomp), известный своими работами в стиле неоготики." },
+                        { text: "В XX веке церковь пережила несколько этапов реставрации, в ходе которых удалось сохранить исторический облик интерьера. Орган, установленный в конце XX века, был привезён из южной Германии и остаётся важной частью музыкальной жизни прихода." }
+                    ]
+                },
+                tickets_and_entry: {
+                    title: "Практическая информация",
+                    items: [
+                        { bold: "Адрес: ", text: "Lindenstraße 41, 58762 Altena, Германия" },
+                        { bold: "Конфессия:", text: "Римско-католическая " }
+                    ]
+                },
+                sub_objects: {
+                    title: "Реликвии и интерьер",
+                    items: [
+                        { bold: "Главный алтарь", text: " оформлен в неоготическом стиле и представляет страсти Христовы, как центральную тему изображения – сцены из последних дней и смерти Иисуса служат духовным и художественным центром интерьера." },
+                        { bold: "Боковые алтари", text: "Помимо главного, в церкви находятся боковые алтари, в том числе <b>Мариенaltar (алтарь Божией Матери)</b>, который датируется серединой XIX века (ок. 1849) и перенесён из предшествовавшего зданию храма. Так же <b>изображение Девы Марии с младенцем</b> выполнено в классическом стиле, а рамка украшена деревянной резьбой с растительными мотивами – это ценный исторический объект, сохранившийся с прежней церкви." },
+                        { bold: "Резные декоративные элементы", text: "Интерьер церкви оформлен богатой резьбой: резные элементы алтарей имеют фьяли и декоративные шпили, типичные для неоготической стилизации; оформление включает тонкую деревянную резьбу и орнаменты, подчёркивающие вертикальные линии и структуру пространства." },
+                        { bold: "Орган", text: "церкви имеет интересную историю и конструкцию. Первая органная установка появилась в 1924-1926 годах, построенная фирмой Eggerth / Anton Feith из Падерборна. В 1996 году на основе прежних труб было создано новое механическое устройство фирмой Gebr. Link (Giengen). Инструмент имеет 27 регистров, два мануала и педаль, а механические клавиши дополняются электрической системой регистров." },
+                        { bold: "Витражи", text: "Церковь украшена витражами разных периодов: первые витражи храма были созданы ещё в момент постройки в конце XIX века немецкой мастерской Gassen & Blaschke и расположены в хорах; после 1945 года новые витражи для Капеллы воинов создал художник Marius de Leeuw (возможно через мастерскую Derix); витражи боковых окон в нефе датируются сер. 1950 х и были разработаны Walter Klocke из Гельзенкирхена. Эти окна изображают различных святых, включая, например, святую Екатерину и самого святого Матфея как покровителя церкви." }
+                    ]
+                },
+                interestingFacts: {
+                    title: "Интересные факты",
+                    items: [
+                        { text: "Церковь построена в период активного распространения неоготики в Германии. " },
+                        { text: "Архитектор Кломп специализировался именно на церковной архитектуре. " },
+                        { text: "Интерьер частично сохранил оригинальное оформление XIX века. " },
+                        { text: "Орган был установлен значительно позже строительства здания. " }
+                    ]
+                },
+                construction_period: "1896-1899",
+                architects: "Иоганнес Францискус Кломп (Johannes Franziskus Klomp)",
+                founder: "католическая община Альтены ",
+                meta: {
+                    title: "Приходская церковь Святого Матфея в Альтене – история и описание",
+                    description: "Церковь Святого Матфея в Альтене – неоготический храм конца XIX века. История, архитектура, интерьер и интересные факты.",
+                    ogTitle: "Церковь Святого Матфея в Альтене ",
+                    ogDescription: "Неоготическая церковь XIX века в Альтене с историческим интерьером и атмосферой старого города.",
+                    ogImage: "https://our-travels.info/foto/Germany/nrw/arnsberg/Märkischer-Kreis/altena/st_matthaeus_church/001.jpg"
+                }
+            },
+            ua: {
+                name: "Парафіяльна церква Святого Матвія",
+                location: "Альтена, Німеччина",
+                short_description: "Католицька парафіяльна церква Святого Матвія – одна з помітних архітектурних пам'яток міста Альтена, побудована наприкінці XIX століття. Храм виконаний у неоготичному стилі з елементами романської архітектури та вирізняється масивними кам'яними стінами та високою вежею. Всередині збережені історичні вівтарі та декоративні елементи, що створюють атмосферу затишку та традицій. Церква залишається діючою парафією та важливою частиною міського життя.",
+                full_description: {
+                    title: "Опис та історія",
+                    items: [
+                        { bold: "Парафіяльна церква Святого Матвія (Katholische Pfarrkirche St. Matthäus Altena)", text: "в Альтені є виразним прикладом неоготичної архітектури, характерної для Німеччини кінця XIX століття. Будівля виконана з цегли та вирізняється вертикально спрямованими формами, стрілчастими арками та високою вежею, що домінує в міському силуеті." },
+                        { text: "Внутрішній простір храму організований з чіткою симетрією та продуманою структурою. Інтер'єр прикрашений різьбленими елементами, вітражами та кількома вівтарями, що створює цілісне художнє середовище та підкреслює сакральний характер будівлі." },
+                        { bold: "Історія.", text: "Церква була побудована у період з 1896 по 1899 роки у зв'язку з ростом католицької громади Альтени. Проєкт розробив архітектор Йоганнес Францискус Кломп (Johannes Franziskus Klomp), відомий своїми роботами у стилі неоготики." },
+                        { text: "У XX столітті церква пройшла кілька етапів реставрації, під час яких вдалося зберегти історичний вигляд інтер'єру. Орган, встановлений наприкінці XX століття, був привезений з південної Німеччини та залишається важливою частиною музичного життя парафії." }
+                    ]
+                },
+                tickets_and_entry: {
+                    title: "Практична інформація",
+                    items: [
+                        { bold: "Адреса: ", text: "Lindenstraße 41, 58762 Altena, Німеччина" },
+                        { bold: "Конфесія:", text: "Римо-католицька" }
+                    ]
+                },
+                sub_objects: {
+                    title: "Реліквії та інтер'єр",
+                    items: [
+                        { bold: "Головний вівтар", text: "оформлений у неоготичному стилі та представляє Страсті Христові як центральну тему зображень – сцени останніх днів та смерті Ісуса служать духовним і художнім центром інтер'єру." },
+                        { bold: "Бокові вівтарі", text: "Окрім головного, у церкві знаходяться бокові вівтарі, зокрема Мариенальтар (вівтар Божої Матері), датований серединою XIX століття (близько 1849 року) і перенесений з попередньої будівлі храму. Зображення Діви Марії з немовлям виконане у класичному стилі, а рамка прикрашена дерев'яною різьбою з рослинними мотивами – цінний історичний об'єкт, що зберігся з попередньої церкви." },
+                        { bold: "Різьблені декоративні елементи", text: "Інтер'єр церкви оформлений багатою різьбою: різьблені елементи вівтарів мають фіалі та декоративні шпилі, типові для неоготичної стилізації; оформлення включає тонку дерев'яну різьбу та орнаменти, що підкреслюють вертикальні лінії та структуру простору." },
+                        { bold: "Орган", text: "церкви має цікаву історію та конструкцію. Перша органна установка з'явилася у 1924-1926 роках, побудована фірмою Eggerth / Anton Feith з Падерборна. У 1996 році на основі попередніх труб створено новий механічний пристрій фірмою Gebr. Link (Giengen). Інструмент має 27 регістрів, два мануали та педаль, а механічні клавіші доповнені електричною системою регістрів." },
+                        { bold: "Вітражі", text: "Церква прикрашена вітражами різних періодів: перші вітражі храму були створені ще під час будівництва наприкінці XIX століття німецькою майстернею Gassen & Blaschke та розташовані в хорах; після 1945 року нові вітражі для Каплиці воїнів створив художник Marius de Leeuw (можливо через майстерню Derix); вітражі бокових вікон у нефі датуються серединой 1950-х років і були розроблені Walter Klocke з Гельзенкірхена. Ці вікна зображають різних святих, включно зі святою Катериною та самим святим Матвієм як покровителем церкви." }
+                    ]
+                },
+                interestingFacts: {
+                    title: "Цікаві факти",
+                    items: [
+                        { text: "Церква побудована в період активного поширення неоготики в Німеччині." },
+                        { text: "Архітектор Кломп спеціалізувався саме на церковній архітектурі." },
+                        { text: "Інтер'єр частково зберіг оригінальне оформлення XIX століття." },
+                        { text: "Орган був встановлений значно пізніше за будівництво храму." }
+                    ]
+                },
+                construction_period: "1896-1899",
+                architects: "Йоганнес Францискус Кломп (Johannes Franziskus Klomp)",
+                founder: "католицька громада Альтени",
+                meta: {
+                    title: "Парафіяльна церква Святого Матвія в Альтені – історія та опис",
+                    description: "Церква Святого Матвія в Альтені – неоготичний храм кінця XIX століття. Історія, архітектура, інтер'єр та цікаві факти.",
+                    ogTitle: "Церква Святого Матвія в Альтені",
+                    ogDescription: "Неоготична церква XIX століття в Альтені з історичним інтер'єром та атмосферою старого міста.",
+                    ogImage: "https://our-travels.info/foto/Germany/nrw/arnsberg/Märkischer-Kreis/altena/st_matthaeus_church/001.jpg"
+                }
+            },
+            de: {
+                name: "Katholische Pfarrkirche St. Matthäus",
+                location: "Altena, Deutschland",
+                short_description: "Die katholische Pfarrkirche St. Matthäus ist eines der markanten architektonischen Bauwerke der Stadt Altena, erbaut Ende des 19. Jahrhunderts. Die Kirche ist im neugotischen Stil mit Elementen der Romanik gestaltet und zeichnet sich durch massive Steinmauern und einen hohen Turm aus. Im Inneren sind historische Altäre und dekorative Elemente erhalten, die eine Atmosphäre von Gemütlichkeit und Tradition schaffen. Die Kirche bleibt eine aktive Pfarrei und ein wichtiger Bestandteil des städtischen Lebens.",
+                full_description: {
+                    title: "Beschreibung und Geschichte",
+                    items: [
+                        { bold: "Katholische Pfarrkirche St. Matthäus Altena", text: "in Altena ist ein eindrucksvolles Beispiel neugotischer Architektur, typisch für Deutschland Ende des 19. Jahrhunderts. Das Gebäude ist aus Ziegeln gebaut und zeichnet sich durch vertikal ausgerichtete Formen, spitzbogige Fenster und einen hohen Turm aus, der das Stadtbild dominiert." },
+                        { text: "Der Innenraum der Kirche ist klar symmetrisch und strukturiert organisiert. Das Interieur ist mit Schnitzereien, Glasmalereien und mehreren Altären geschmückt, was einen harmonischen künstlerischen Raum schafft und den sakralen Charakter des Gebäudes betont." },
+                        { bold: "Geschichte.", text: "Die Kirche wurde in der Zeit von 1896 bis 1899 aufgrund des Wachstums der katholischen Gemeinde in Altena erbaut. Das Projekt wurde vom Architekten Johannes Franziskus Klomp entworfen, bekannt für seine Arbeiten im neugotischen Stil." },
+                        { text: "Im 20. Jahrhundert durchlief die Kirche mehrere Restaurierungsphasen, in deren Verlauf es gelungen ist, das historische Erscheinungsbild des Interieurs zu bewahren. Die Orgel, die Ende des 20. Jahrhunderts installiert wurde, wurde aus Süddeutschland gebracht und bleibt ein wichtiger Bestandteil des musikalischen Lebens der Pfarrei." }
+                    ]
+                },
+                tickets_and_entry: {
+                    title: "Praktische Informationen",
+                    items: [
+                        { bold: "Adresse: ", text: "Lindenstraße 41, 58762 Altena, Deutschland" },
+                        { bold: "Konfession:", text: "Römisch-katholisch" }
+                    ]
+                },
+                sub_objects: {
+                    title: "Reliquien und Innenraum",
+                    items: [
+                        { bold: "Hauptaltar", text: "ist im neugotischen Stil gestaltet und stellt die Passion Christi als zentrales Motiv dar – Szenen aus den letzten Tagen und dem Tod Jesu dienen als geistiges und künstlerisches Zentrum des Innenraums." },
+                        { bold: "Seitenaltäre", text: "Neben dem Hauptaltar befinden sich in der Kirche Seitenaltäre, darunter der Marienaltar (Altar der Heiligen Maria), datiert auf die Mitte des 19. Jahrhunderts (ca. 1849) und aus der vorherigen Kirchenanlage übernommen. Die Darstellung der Jungfrau Maria mit dem Kind ist im klassischen Stil ausgeführt, der Rahmen ist mit Holzschnitzereien mit Pflanzenmotiven verziert – ein wertvolles historisches Objekt, das aus der vorherigen Kirche erhalten blieb." },
+                        { bold: "Schnitzereien und dekorative Elemente", text: "Der Kircheninnenraum ist reich mit Schnitzereien gestaltet: Die Schnitzereien der Altäre besitzen Fialen und dekorative Spitzen, typisch für die neugotische Stilistik; die Ausstattung umfasst feine Holzschnitzereien und Ornamente, die die vertikalen Linien und die Struktur des Raums betonen." },
+                        { bold: "Orgel", text: "der Kirche hat eine interessante Geschichte und Konstruktion. Die erste Orgelinstallation entstand in den Jahren 1924-1926, gebaut von der Firma Eggerth / Anton Feith aus Paderborn. 1996 wurde auf Grundlage der vorherigen Pfeifen ein neues mechanisches Werk von Gebr. Link (Giengen) erstellt. Das Instrument verfügt über 27 Register, zwei Manuale und ein Pedal, die mechanischen Tasten werden durch ein elektrisches Registersystem ergänzt." },
+                        { bold: "Glasfenster", text: "Die Kirche ist mit Glasfenstern verschiedener Epochen geschmückt: Die ersten Kirchenfenster wurden noch während der Bauzeit Ende des 19. Jahrhunderts von der deutschen Werkstatt Gassen & Blaschke erstellt und befinden sich im Chor; nach 1945 schuf der Künstler Marius de Leeuw neue Fenster für die Kriegerkapelle (möglicherweise über die Werkstatt Derix); die Glasfenster der Seitenschiffe stammen aus den 1950er Jahren und wurden von Walter Klocke aus Gelsenkirchen entworfen. Diese Fenster zeigen verschiedene Heilige, darunter z.B. die Heilige Katharina und den Heiligen Matthäus als Schutzpatron der Kirche." }
+                    ]
+                },
+                interestingFacts: {
+                    title: "Interessante Fakten",
+                    items: [
+                        { text: "Die Kirche wurde in einer Zeit der aktiven Verbreitung der Neugotik in Deutschland erbaut." },
+                        { text: "Der Architekt Klomp spezialisierte sich auf Kirchenarchitektur." },
+                        { text: "Das Interieur hat teilweise die ursprüngliche Ausstattung des 19. Jahrhunderts bewahrt." },
+                        { text: "Die Orgel wurde deutlich später als das Kirchengebäude installiert." }
+                    ]
+                },
+                construction_period: "1896-1899",
+                architects: "Johannes Franziskus Klomp",
+                founder: "katholische Gemeinde Altena",
+                meta: {
+                    title: "Katholische Pfarrkirche St. Matthäus in Altena – Geschichte und Beschreibung",
+                    description: "Die Kirche St. Matthäus in Altena – neugotisches Bauwerk des späten 19. Jahrhunderts. Geschichte, Architektur, Innenraum und interessante Fakten.",
+                    ogTitle: "Katholische Pfarrkirche St. Matthäus in Altena",
+                    ogDescription: "Neugotische Kirche des 19. Jahrhunderts in Altena mit historischem Innenraum und Atmosphäre der Altstadt.",
+                    ogImage: "https://our-travels.info/foto/Germany/nrw/arnsberg/Märkischer-Kreis/altena/st_matthaeus_church/001.jpg"
+                }
+            }
+        }
+    },
 
     //iserlohn
     {
