@@ -4,7 +4,7 @@ import { useEffect, useState } from 'react';
 import BreadCrumbs from '../../components/breadCrumbs/BreadCrumbs.jsx';
 import AttractionCard from '../../components/attraction/AttractionCard.jsx';
 import AttractionsFilters from '../../components/attractionsFilters/AttractionsFilters.jsx';
-import useCityFullData from '../../hooks/useCityFullData.js';
+import useCityFullDataV2 from '../../hooks/useCityFullDataV2.js';
 import CityMap from '../../components/maps/germany/maps/CityMap.jsx';
 
 import './Attractions.scss'
@@ -14,14 +14,13 @@ const NoAttractions = { ru: "Нет достопримечательностей
 
 const AttractionsList = () => {
     const { districtPath, cityPath } = useParams();
-    const { country, region, district, parentSubRegion, city, attractions, lang, error } = useCityFullData();
+    const { country, region, district, parentSubRegion, city, attractions, lang, error } = useCityFullDataV2();
 
     const [filters, setFilters] = useState({
         type: 'all',
         unesco: 'all',
         sort: 'rating',
     });
-    
 
     useEffect(() => {
         const base = attractionsTitle[lang];
@@ -40,78 +39,53 @@ const AttractionsList = () => {
 
     }, [city, district, parentSubRegion, region, country, lang]);
 
+
     if (error) return <p>{error}</p>;
     if (!country || !region) return <p>Loading...</p>;
-    if (!attractions) return <p>Loading...</p>
+    if (!attractions) return <p>Loading...</p>;
 
     const filteredAttractions = attractions?.filter(attr => {
-        // Фильтр по URL
+        if (!attr) return false;
         if (cityPath && attr.cityPath !== cityPath) return false;
         if (districtPath && attr.districtPath !== districtPath) return false;
 
-        // Тип: добавляем type саб-объектов
-        let allTypes = [...attr.type];
+        const allTypes = [
+            ...(attr.type || []),
+            ...(attr.subObjects?.map(subId => attractions.find(a => a.id === subId)?.type || []).flat() || [])
+        ];
 
-        if (attr.subObjects?.length > 0) {
-            attr.subObjects.forEach(subId => {
-                const subAttr = attractions.find(a => a.id === subId);
-                if (subAttr) allTypes.push(...subAttr.type);
-            });
-        }
+        if (filters.type !== 'all' && !allTypes.includes(filters.type)) return false;
+        if (filters.rating && filters.rating !== 'all' && attr.rating !== filters.rating) return false;
 
-        // Фильтр по типу
-        if (filters.type !== 'all' && !allTypes.includes(filters.type)) {
-            return false;
-        }
-
-        // Фильтр по рейтингу
-        if (filters.rating === 'top' && attr.rating !== 'top') return false;
-        if (filters.rating === 'popular' && attr.rating !== 'popular') return false;
-        if (filters.rating === 'local' && attr.rating !== 'local') return false;
-
-
-        // Фильтр по ЮНЕСКО
         if (filters.unesco === 'yes' && !attr.unesco_status?.included) return false;
         if (filters.unesco === 'no' && attr.unesco_status?.included) return false;
 
-        // не показывать сабобъекты
         if (attr.hiddenFromList) return false;
 
         return true;
     }) || [];
 
-    // Сортировка
     const sortedAttractions = [...filteredAttractions].sort((a, b) => {
-        if (filters.sort === 'name-asc') {
-            return (a?.name || '').localeCompare(b?.name || '');
-        }
-        if (filters.sort === 'name-desc') {
-            return (b?.name || '').localeCompare(a?.name || '');
-        }
-
+        if (filters.sort === 'name-asc') return (a?.name || '').localeCompare(b?.name || '');
+        if (filters.sort === 'name-desc') return (b?.name || '').localeCompare(a?.name || '');
         const ratingOrder = { top: 3, popular: 2, local: 1 };
-
         const aRating = ratingOrder[a.rating] || 0;
         const bRating = ratingOrder[b.rating] || 0;
-
-        if (bRating !== aRating) {
-            return bRating - aRating;
-        }
-
+        if (bRating !== aRating) return bRating - aRating;
         return (a?.name || '').localeCompare(b?.name || '');
     });
 
-    // Хлебные крошки
     const crumbs = [
         { label: lang === "ru" ? "Главная" : lang === "de" ? "Startseite" : "Головна", path: "/" },
-        country ? { label: region.country, path: `/${country.path}` } : null,
+        country ? { label: country.country, path: `/${country.path}` } : null,
         region ? { label: region.name, path: `/${country?.path}/${region.path}` } : null,
         district && district.id !== 0 ? { label: district.name, path: `/${country?.path}/${region?.path}/${district.path}` } : null,
         parentSubRegion ? { label: parentSubRegion.name } : null,
-        city ? { label: city.name, path: `/${country?.path}/${region?.path}/${districtPath ? districtPath + '/' : ''}${city.path}` } : null,
-        { label: lang === "ru" ? "Достопримечательности" : lang === "de" ? "Sehenswürdigkeiten" : "Пам'ятки" }
+        city ? { label: city.name, path: `/${country?.path}/${region?.path}${districtPath ? '/' + districtPath : ''}/${city.path}` } : null,
+        { label: attractionsTitle[lang] }
     ].filter(Boolean);
-    
+
+// console.log('cityPath:', cityPath, 'districtPath:', districtPath, "sortedAttractions:", sortedAttractions);
     return (
         <div className="attractions">
             <BreadCrumbs crumbs={crumbs} />
@@ -126,8 +100,8 @@ const AttractionsList = () => {
                 {sortedAttractions.length === 0 ? (
                     <p>{NoAttractions[lang]}</p>
                 ) : (
-                    sortedAttractions.map(attr => (
-                        <div key={attr.path} className="attractions__card">
+                    sortedAttractions.map(attr => (                        
+                        <div key={attr.id} className="attractions__card">
                             <AttractionCard attr={attr} lang={lang} />
                         </div>
                     ))
@@ -137,4 +111,4 @@ const AttractionsList = () => {
     );
 }
 
-export default AttractionsList
+export default AttractionsList;

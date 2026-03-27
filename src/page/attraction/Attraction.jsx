@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react'
-import useCityFullData from '../../hooks/useCityFullData.js';
+import useCityFullDataV2 from '../../hooks/useCityFullDataV2.js';
 import { useParams } from 'react-router';
 import BreadCrumbs from '../../components/breadCrumbs/BreadCrumbs.jsx';
 import InfoBlock from '../../components/InfoBlock/InfoBlock.jsx';
@@ -18,7 +18,7 @@ const architects = { ru: "Архитекторы", ua: "Архітектори",
 
 const Attraction = () => {
     const { districtPath, attractionsPath } = useParams();
-    const { country, region, district, parentSubRegion, city, attractions, lang, error } = useCityFullData();
+    const { country, region, district, parentSubRegion, city, attractions, lang, error } = useCityFullDataV2();
 
     const attraction = attractions.find(a => a.path === attractionsPath);
     const photos = photosByCountry[country?.path];

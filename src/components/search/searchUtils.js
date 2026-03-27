@@ -12,30 +12,68 @@ export const normalize = str => str
   .replace(/['’]/g, "")
   .trim();
 
-// Рекурсивное извлечение текста из объекта
-function extractText(obj) {
-  if (!obj) return "";
-  if (typeof obj === "string") return obj + " ";
-  if (Array.isArray(obj)) return obj.map(extractText).join(" ");
-  if (typeof obj === "object") return Object.values(obj).map(extractText).join(" ");
-  return "";
+// собираем текст для поиска из name и meta.description
+function getSearchText(item, lang = "ru") {
+  let text = "";
+
+  if (item.name) text += item.name + " ";
+  if (item.meta?.description) text += item.meta.description + " ";
+
+  if (item.translations?.[lang]) {
+    const t = item.translations[lang];
+    if (t.name) text += t.name + " ";
+    if (t.meta?.description) text += t.meta.description + " ";
+  }
+
+  return normalize(text);
 }
 
-// добавляем searchText для всех объектов
-export function buildStaticSearchIndex(lang = "ru") {
+// строим индекс поиска
+export function buildStaticSearchIndex(lang) {
   const idx = JSON.parse(JSON.stringify(searchIndex[lang]));
 
-  function addSearchText(node) {
-    if (!node) return;
-    if (Array.isArray(node)) {
-      node.forEach(item => item.searchText = normalize(extractText(item)));
-    } else if (typeof node === "object") {
-      Object.values(node).forEach(v => addSearchText(v));
-      node.searchText = normalize(extractText(node));
+  for (const countryKey in idx) {
+    const country = idx[countryKey];
+
+    for (const regionKey in country) {
+      if (regionKey === "country") continue;
+      const region = country[regionKey];
+
+      // города
+      region.city?.forEach(item => {
+        item.searchText = getSearchText(item, lang);
+      });
+
+      // округа
+      region.districts?.forEach(item => {
+        item.searchText = getSearchText(item, lang);
+      });
+
+      // субрегионы
+      region.subRegions?.forEach(item => {
+        item.searchText = getSearchText(item, lang);
+      });
+
+      // аттракции
+      // старые аттракции
+      region.attractions?.forEach(item => {
+        item.searchText = getSearchText(item, lang);
+      });
+      // новые аттракции из отдельного объекта
+      const newAttr = searchIndex.germany?.nrw?.attractions || [];
+      newAttr.forEach(item => {
+        // добавляем в region.newAttractions или напрямую формируем searchText
+        item.searchText = getSearchText(item, lang);
+        region.attractions = [...(region.attractions || []), item]; // объединяем с существующими
+      });
+
+      // события
+      region.events?.forEach(item => {
+        item.searchText = getSearchText(item, lang);
+      });
     }
   }
 
-  addSearchText(idx);
   return idx;
 }
 
@@ -110,10 +148,15 @@ export function searchStatic(query, lang, index) {
       // достопримечательности
       (region.attractions || []).forEach(attraction => {
         if (attraction.searchText?.includes(lowerQuery)) {
+          const title =
+            attraction.translations?.[lang]?.name ||  // новый формат
+            attraction.name ||                        // старый формат
+            "Достопримечательность";
+
           results.push({
-            title: attraction.name || "Достопримечательность",
+            title,
             type: "attraction",
-            url: `/${countryKey}/${regionKey}/${attraction.districtPath}/${attraction.cityPath}/attractions/${attraction.path}`
+            url: `/${attraction.countryPath}/${attraction.regionsPath}/${attraction.districtPath}/${attraction.cityPath}/attractions/${attraction.path}`
           });
         }
       });
@@ -124,7 +167,7 @@ export function searchStatic(query, lang, index) {
           results.push({
             title: event.name || "Событие",
             type: "event",
-            url: `/${countryKey}/${regionKey}/${event.districtPath}/${event.cityPath}/events/${event.path}`
+            url: `/${event.countryPath}/${event.regionsPath}/${event.districtPath}/${event.cityPath}/events/${event.path}`
           });
         }
       });

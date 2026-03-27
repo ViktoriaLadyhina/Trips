@@ -1,3 +1,6 @@
+// new
+import nrw_attr from '../../datas/germany/nrw-attractions'
+
 //de
 import countryDe from '../../datas/de/Country'
 import germ_landDe from '../../datas/de/germany/lands'
@@ -65,6 +68,11 @@ import sum_attrUa from '../../datas/ua/ukraine/sumska-attractions'
 import sum_eventsUa from '../../datas/ua/ukraine/sumska-events'
 
 const searchIndex = {
+    germany: {
+            nrw: {
+                attractions: nrw_attr,
+            }
+        }, 
     de: {
         country: countryDe,
         germany: {

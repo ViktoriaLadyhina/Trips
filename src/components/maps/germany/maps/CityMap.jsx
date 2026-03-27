@@ -2,7 +2,7 @@ import { MapContainer, TileLayer, Marker, Tooltip, Popup } from 'react-leaflet';
 import L from 'leaflet';
 import 'leaflet/dist/leaflet.css';
 import './CityMap.scss';
-import { Navigate, useNavigate } from 'react-router';
+import { useNavigate } from 'react-router';
 import searchIndex from '../../../search/index'
 
 delete L.Icon.Default.prototype._getIconUrl;
@@ -22,12 +22,19 @@ const CityMap = ({ city, lang }) => {
   const mapCenter = [city.coord.lat, city.coord.lng];
 
   const attractions = [
-  ...Object.values(searchIndex[lang].germany).flatMap(region => region.attractions || []),
-  ...Object.values(searchIndex[lang].ukraine).flatMap(region => region.attractions || [])
-];
+    ...Object.values(searchIndex[lang].germany).flatMap(region => region.attractions || []),
+    ...Object.values(searchIndex[lang].ukraine).flatMap(region => region.attractions || []),
+    ...Object.values(searchIndex.germany).flatMap(region => {
+      if (region.attractions) return region.attractions;
+      return Object.values(region).flatMap(sub => sub.attractions || []);
+    }),
+  ];
 
   // для мобильных
   const isTouchDevice = L.Browser.mobile;
+
+  const getAttrMeta = (attr, lang) => { return attr.translations?.[lang]?.meta || attr.meta || {}; };
+  const getAttrName = (attr, lang) => { return attr.translations?.[lang]?.name || attr.name || ''; };
 
   return (
     <MapContainer closePopupOnClick={true} center={mapCenter} zoom={13} style={{ height: "450px", width: "100%", marginBottom: "20px" }}>
@@ -59,20 +66,20 @@ const CityMap = ({ city, lang }) => {
                 opacity={1}
               >
                 <div className="custom-tooltip-content">
-                  {attr.meta.ogImage && <img src={attr.meta.ogImage} alt={attr.name} />}
-                  <p>{attr.meta.title}</p>
+                  {getAttrMeta(attr, lang).ogImage && (
+                    <img src={getAttrMeta(attr, lang).ogImage} alt={getAttrName(attr, lang)} />
+                  )}
+                  <p>{getAttrMeta(attr, lang).title || getAttrName(attr, lang)}</p>
                 </div>
               </Tooltip>
             )}
             {isTouchDevice && (
               <Popup className="custom-popup" maxWidth={180} minWidth={160}>
                 <div className="custom-popup-content">
-                  {attr.meta.ogImage && (
-                    <img src={attr.meta.ogImage} alt={attr.name} />
+                  {getAttrMeta(attr, lang).ogImage && (
+                    <img src={getAttrMeta(attr, lang).ogImage} alt={getAttrName(attr, lang)} />
                   )}
-
-                  <p>{attr.meta.title}</p>
-
+                  <p>{getAttrMeta(attr, lang).title || getAttrName(attr, lang)}</p>
                   <button
                     className="popup-btn"
                     onClick={() =>
