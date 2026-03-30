@@ -171,20 +171,16 @@ const datas = [
     },
     {
         id: "st_matthaeus_church_altena",
-        type: ["cathedral"],
-        rating: "local",
+        type: ["cathedral"], rating: "local",
         path: "st_matthaeus_church_altena",
-        countryPath: "germany",
-        regionsPath: "nrw",
-        districtPath: "arnsberg",
-        cityPath: "altena",
+        countryPath: "germany", regionsPath: "nrw", districtPath: "arnsberg", cityPath: "altena",
         fotoCard: "Germany/nrw/arnsberg/Märkischer-Kreis/altena/st_matthaeus_church/001.jpg",
         coord: { lat: 51.28883691322431, lng: 7.677972331654175 },
         translations: {
             ru: {
                 name: "Приходская церковь Святого Матфея",
                 location: "Альтена, Германия",
-                short_description: "Католическая приходская церковь Святого Матфея — один из заметных архитектурных объектов города Альтена, построенный в конце XIX века. Храм выполнен в неоготическом стиле с элементами романской архитектуры и отличается массивными каменными стенами и высокой башней. Внутри сохранились исторические алтари и декоративные элементы, создающие атмосферу уюта и традиции. Церковь остаётся действующим приходом и важной частью городской жизни.",
+                short_description: "Католическая приходская церковь Святого Матфея – один из заметных архитектурных объектов города Альтена, построенный в конце XIX века. Храм выполнен в неоготическом стиле с элементами романской архитектуры и отличается массивными каменными стенами и высокой башней. Внутри сохранились исторические алтари и декоративные элементы, создающие атмосферу уюта и традиции. Церковь остаётся действующим приходом и важной частью городской жизни.",
                 full_description: {
                     title: "Описание и история",
                     items: [
@@ -329,6 +325,127 @@ const datas = [
                     ogTitle: "Katholische Pfarrkirche St. Matthäus in Altena",
                     ogDescription: "Neugotische Kirche des 19. Jahrhunderts in Altena mit historischem Innenraum und Atmosphäre der Altstadt.",
                     ogImage: "https://our-travels.info/foto/Germany/nrw/arnsberg/Märkischer-Kreis/altena/st_matthaeus_church/001.jpg"
+                }
+            }
+        }
+    },
+    {
+        id: "gustav_selve_altena",
+        type: ["monument_or_fountain"], rating: "local",
+        path: "gustav_selve_altena",
+        countryPath: "germany", regionsPath: "nrw", districtPath: "arnsberg", cityPath: "altena",
+        fotoCard: "Germany/nrw/arnsberg/Märkischer-Kreis/altena/gustav_selve/001.jpg",
+        coord: { lat: 51.28765, lng: 7.67662 },
+        translations: {
+            ru: {
+                name: "Памятник Густаву Сельве",
+                location: "Альтена, Германия",
+                short_description: "Памятник Густаву Сельве – известному немецкому промышленнику XIX-XX вв. – установлен на возвышении между долинами рек Ленне и Рахмедеталь в городе Альтена. Монумент возвышается над городом и служит музейно памятным объектом, сочетая художественную скульптуру с историческим мемориалом. ",
+                full_description: {
+                    title: "Описание и история",
+                    items: [
+                        { bold: "Памятник Густаву Сельве (Gustav-Selve-Denkmal)", text: "находится на скалистом холме над рекой Ленне и является популярной обзорной точкой с видом на город и окрестности. Композиция включает бронзовую статую Сельве в натуральную величину на высоком каменном постаменте, полукруглую колоннаду позади и декоративные элементы в стиле модерн, в том числе фигуры львов по бокам. На постаменте размещена мемориальная надпись с именем и годами жизни промышленника, а на обратной стороне – его девиз «Treue um Treue» («верность за верность»)." },
+                        { text: "Монумент был создан как дань уважения к деятельности Сельве и его вкладу в развитие города и трудовых отношений. В народе памятник часто называют «Stiller Gustav» («Тихий Густав»). Бесплатный доступ делает его удобным пунктом остановки для туристов и любителей пеших прогулок в окрестностях Альтены." },
+                        { bold: "Густав Сельве", text: "(1842-1909) был одним из наиболее влиятельных предпринимателей Германии конца XIX века. Он развил семейное предприятие Basse & Selve в крупную промышленную компанию с тысячами сотрудников и множеством заводов, в том числе в Альтене. Сельве был известен не только как успешный бизнесмен, но и как новатор социальных практик: он внедрял улучшенные условия труда, строил рабочие дома, школы, учреждения поддержки для своих служащих и направлял существенную часть прибыли на социальные инициативы задолго до официального введения социальных законов." },
+                        { text: "После его смерти в 1909 году коллектив работников и служащих компании собрал средства для установки памятника в его честь. Монумент был открыт в 1911 году, через два года после ухода Сельве, и с тех пор стоит как символ благодарности и исторической памяти о его влиянии на промышленное и социальное развитие региона." }
+                    ]
+                },
+                tickets_and_entry: {
+                    title: "Практическая информация",
+                    items: [
+                        { bold: "Адрес: ", text: "Am Selvedenkmal, 58762 Altena, Nordrhein Westfalen, Германия. " }
+                    ]
+                },
+                interestingFacts: {
+                    title: "Интересные факты",
+                    items: [
+                        { text: "В народе памятник называют «Der stille Gustav» («Тихий Густав»). " },
+                        { text: "Он расположен на месте, откуда был виден как его жилой дом, так и предприятия, которыми он руководил. " },
+                        { text: "Комплекс памятника включает архитектурные элементы, отражающие влияние модерна (Jugendstil). " }
+                    ]
+                },
+                construction_period: "1911 год (открыт через 2 года после смерти Г. Сельве).",
+                architects: "Скульптура: Клеменс Бушер (Clemens Buscher), немецкий скульптор из Дюссельдорфа (1855-1916). Бронзовый отлив: мастерская Бернхард Фёрстер (Bernhard Förster Kunstgewerbliche Werkstätten), Дюссельдорф",
+                meta: {
+                    title: "Памятник Густаву Сельве – исторический мемориал в Альтене",
+                    description: "Узнайте о памятнике Густаву Сельве в Альтене – мемориальном монументе выдающемуся промышленнику XIX-XX вв. с историей, фактами посещения и практической информацией. Бесплатный доступ, виды на Ленне и история социальной индустрии Германии.",
+                    ogTitle: "Памятник Густаву Сельве в Альтене – исторический взгляд",
+                    ogDescription: "Памятник знаменитому промышленнику Густаву Сельве с панорамами Альтены и интересными историческими фактами.",
+                    ogImage: "https://our-travels.info/foto/Germany/nrw/arnsberg/Märkischer-Kreis/altena/gustav_selve/001.jpg"
+                }
+            },
+            ua: {
+                name: "Пам’ятник Густаву Сельве",
+                location: "Альтена, Німеччина",
+                short_description: "Пам’ятник Густаву Сельве – відомому німецькому промисловцю XIX–XX століть – встановлено на підвищенні між долинами річок Ленне та Рахмедеталь у місті Альтена. Монумент височіє над містом і слугує музейно-пам’ятним об’єктом, поєднуючи художню скульптуру з історичним меморіалом.",
+                full_description: {
+                    title: "Опис та історія",
+                    items: [
+                        { bold: "Пам’ятник Густаву Сельве (Gustav-Selve-Denkmal)", text: "розташований на скелястому пагорбі над річкою Ленне та є популярною оглядовою точкою з видом на місто та околиці. Композиція включає бронзову статую Сельве у натуральну величину на високому кам’яному постаменті, півкруглу колоннаду позаду та декоративні елементи у стилі модерн, зокрема фігури левів по боках. На постаменті розміщено меморіальний напис із іменем та роками життя промисловця, а на зворотному боці – його девіз «Treue um Treue» («вірність за вірність»)." },
+                        { text: "Монумент створено як данину поваги до діяльності Сельве та його внеску у розвиток міста та трудові відносини. У народі пам’ятник часто називають «Stiller Gustav» («Тихий Густав»). Вільний доступ робить його зручним пунктом зупинки для туристів та любителів пішохідних прогулянок у околицях Альтени." },
+                        { bold: "Густав Сельве", text: "(1842–1909) був одним із найбільш впливових підприємців Німеччини кінця XIX століття. Він розвинув сімейне підприємство Basse & Selve у велику промислову компанію з тисячами працівників і численними заводами, у тому числі в Альтені. Сельве був відомий не лише як успішний бізнесмен, а й як новатор соціальних практик: він впроваджував покращені умови праці, будував робітничі будинки, школи, заклади підтримки для своїх працівників і направляв значну частину прибутку на соціальні ініціативи задовго до офіційного запровадження соціальних законів." },
+                        { text: "Після його смерті у 1909 році колектив працівників та службовців компанії зібрав кошти для встановлення пам’ятника на його честь. Монумент було відкрито у 1911 році, через два роки після смерті Сельве, і відтоді він стоїть як символ подяки та історичної пам’яті про його вплив на промисловий та соціальний розвиток регіону." }
+                    ]
+                },
+                tickets_and_entry: {
+                    title: "Практична інформація",
+                    items: [
+                        { bold: "Адреса: ", text: "Am Selvedenkmal, 58762 Altena, Nordrhein Westfalen, Німеччина." }
+                    ]
+                },
+                interestingFacts: {
+                    title: "Цікаві факти",
+                    items: [
+                        { text: "У народі пам’ятник називають «Der stille Gustav» («Тихий Густав»)." },
+                        { text: "Він розташований на місці, звідки було видно як його житловий будинок, так і підприємства, якими він керував." },
+                        { text: "Комплекс пам’ятника включає архітектурні елементи, що відображають вплив модерну (Jugendstil)." }
+                    ]
+                },
+                construction_period: "1911 рік (відкрито через 2 роки після смерті Г. Сельве).",
+                architects: "Скульптура: Клеменс Бушер (Clemens Buscher), німецький скульптор із Дюссельдорфа (1855–1916). Бронзовий відлив: майстерня Бернхард Ферстер (Bernhard Förster Kunstgewerbliche Werkstätten), Дюссельдорф",
+                meta: {
+                    title: "Пам’ятник Густаву Сельве – історичний меморіал в Альтені",
+                    description: "Дізнайтеся про пам’ятник Густаву Сельве в Альтені – меморіальний монумент видатному промисловцю XIX–XX ст. з історією, фактами відвідування та практичною інформацією. Вільний доступ, види на Ленне та історія соціальної індустрії Німеччини.",
+                    ogTitle: "Пам’ятник Густаву Сельве в Альтені – історичний погляд",
+                    ogDescription: "Пам’ятник відомому промисловцю Густаву Сельве з панорамами Альтени та цікавими історичними фактами.",
+                    ogImage: "https://our-travels.info/foto/Germany/nrw/arnsberg/Märkischer-Kreis/altena/gustav_selve/001.jpg"
+                }
+            },
+            de: {
+                name: "Gustav-Selve-Denkmal",
+                location: "Altena, Deutschland",
+                short_description: "Das Gustav-Selve-Denkmal, errichtet zu Ehren des bekannten deutschen Industriellen des 19.–20. Jahrhunderts, befindet sich auf einer Anhöhe zwischen den Tälern der Flüsse Lenne und Rahmedetal in Altena. Das Denkmal erhebt sich über die Stadt und dient als museales Gedenkobjekt, das künstlerische Skulptur mit historischem Mahnmal verbindet.",
+                full_description: {
+                    title: "Beschreibung und Geschichte",
+                    items: [
+                        { bold: "Gustav-Selve-Denkmal", text: "liegt auf einem felsigen Hügel über dem Fluss Lenne und ist ein beliebter Aussichtspunkt mit Blick auf die Stadt und Umgebung. Die Komposition umfasst eine bronzene Statue von Selve in Lebensgröße auf einem hohen steinernen Sockel, eine halbkreisförmige Kolonnade dahinter und dekorative Elemente im Jugendstil, darunter Löwenfiguren an den Seiten. Auf dem Sockel befindet sich eine Gedenkinschrift mit Name und Lebensdaten des Industriellen, auf der Rückseite sein Motto «Treue um Treue»." },
+                        { text: "Das Denkmal wurde als Zeichen der Anerkennung für Selves Wirken und seinen Beitrag zur Entwicklung der Stadt und der Arbeitsbeziehungen geschaffen. In der Bevölkerung wird das Denkmal oft «Stiller Gustav» genannt. Der kostenlose Zugang macht es zu einem bequemen Zwischenstopp für Touristen und Spaziergänger in der Umgebung von Altena." },
+                        { bold: "Gustav Selve", text: "(1842–1909) war einer der einflussreichsten Unternehmer Deutschlands Ende des 19. Jahrhunderts. Er entwickelte das Familienunternehmen Basse & Selve zu einem großen Industrieunternehmen mit Tausenden von Mitarbeitern und zahlreichen Fabriken, unter anderem in Altena. Selve war nicht nur als erfolgreicher Geschäftsmann bekannt, sondern auch als Innovator sozialer Praktiken: er führte verbesserte Arbeitsbedingungen ein, errichtete Arbeiterhäuser, Schulen und Unterstützungsinstitutionen für seine Angestellten und leitete einen erheblichen Teil seines Gewinns auf soziale Initiativen lange vor der offiziellen Einführung von Sozialgesetzen." },
+                        { text: "Nach seinem Tod im Jahr 1909 sammelte die Belegschaft des Unternehmens Mittel zur Errichtung des Denkmals zu seinen Ehren. Das Denkmal wurde 1911, zwei Jahre nach Selves Tod, eröffnet und steht seitdem als Symbol des Dankes und des historischen Andenkens an seinen Einfluss auf die industrielle und soziale Entwicklung der Region." }
+                    ]
+                },
+                tickets_and_entry: {
+                    title: "Praktische Informationen",
+                    items: [
+                        { bold: "Adresse: ", text: "Am Selvedenkmal, 58762 Altena, Nordrhein-Westfalen, Deutschland." }
+                    ]
+                },
+                interestingFacts: {
+                    title: "Interessante Fakten",
+                    items: [
+                        { text: "In der Bevölkerung wird das Denkmal «Der stille Gustav» genannt." },
+                        { text: "Es befindet sich an einem Ort, von dem sowohl sein Wohnhaus als auch die von ihm geleiteten Betriebe sichtbar waren." },
+                        { text: "Der Denkmalkomplex umfasst architektonische Elemente, die den Einfluss des Jugendstils widerspiegeln." }
+                    ]
+                },
+                construction_period: "1911 (eröffnet zwei Jahre nach Selves Tod).",
+                architects: "Skulptur: Clemens Buscher (1855–1916), deutscher Bildhauer aus Düsseldorf. Bronzeguss: Werkstatt Bernhard Förster Kunstgewerbliche Werkstätten, Düsseldorf",
+                meta: {
+                    title: "Gustav-Selve-Denkmal – historisches Mahnmal in Altena",
+                    description: "Erfahren Sie mehr über das Gustav-Selve-Denkmal in Altena – ein Gedenkmonument für den herausragenden Industriellen des 19.–20. Jahrhunderts mit Geschichte, Besuchsfakten und praktischen Informationen. Kostenloser Zugang, Ausblicke auf die Lenne und die Geschichte der sozialen Industrie Deutschlands.",
+                    ogTitle: "Gustav-Selve-Denkmal in Altena – historischer Blick",
+                    ogDescription: "Denkmal für den bekannten Industriellen Gustav Selve mit Panoramen von Altena und interessanten historischen Fakten.",
+                    ogImage: "https://our-travels.info/foto/Germany/nrw/arnsberg/Märkischer-Kreis/altena/gustav_selve/001.jpg"
                 }
             }
         }

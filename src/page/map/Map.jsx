@@ -69,6 +69,7 @@ const t = {
     drahtmuseum: { ru: 'Немецкий музей проволоки', de: 'Deutsches Drahtmuseum', ua: 'Німецький музей дроту' },
     fuelbecketalsperre_altena: { ru: 'Водохранилище Фюльбекке', de: 'Fuelbecketalsperre', ua: 'Водосховище Фюльбекке' },
     lutherkirche: { ru: 'Евангелическо-лютеранская церковь Лютера', de: 'Lutherkirche Altena', ua: 'Євангелічно-лютеранська церква Лютера' },
+    gustav_selve: { ru: 'Памятник Густаву Сельве', de: 'Gustav-Selve-Denkmal', ua: 'Пам’ятник Густаву Сельве' },
 
     //Köln-city
     cologneCathedral: { ru: 'Кёльнский собор', de: 'Kölner Dom', ua: 'Кельнський собор' },
@@ -311,6 +312,7 @@ const Map = () => {
                               <li><Link to="/germany/nrw/arnsberg/altena/attractions/burg_altena">{t.attractions.burg_altena[lang]}</Link></li>
                               <li><Link to="/germany/nrw/arnsberg/altena/attractions/drahtmuseum_altena">{t.attractions.drahtmuseum[lang]}</Link></li>
                               <li><Link to="/germany/nrw/arnsberg/altena/attractions/lutherkirche_altena">{t.attractions.lutherkirche[lang]}</Link></li>
+                              <li><Link to="/germany/nrw/arnsberg/altena/attractions/gustav_selve_altena">{t.attractions.gustav_selve[lang]}</Link></li>
                               <li><Link to="/germany/nrw/arnsberg/altena/attractions/fuelbecketalsperre_altena">{t.attractions.fuelbecketalsperre_altena[lang]}</Link></li>
                             </ul>
                           </li>

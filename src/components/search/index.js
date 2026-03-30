@@ -1,8 +1,8 @@
 // new
+import country from '../../datas/country'
 import nrw_attr from '../../datas/germany/nrw-attractions'
 
 //de
-import countryDe from '../../datas/de/Country'
 import germ_landDe from '../../datas/de/germany/lands'
 import nrw_districtsDe from '../../datas/de/germany/nrw-districts'
 import nrw_subRegionsDe from '../../datas/de/germany/nrw-subRegions'
@@ -24,7 +24,6 @@ import sum_attrDe from '../../datas/de/ukraine/sumska-attractions'
 import sum_eventsDe from '../../datas/de/ukraine/sumska-events'
 
 //ru
-import countryRu from '../../datas/ru/Country'
 import germ_landRu from '../../datas/ru/germany/lands'
 import nrw_districtsRu from '../../datas/ru/germany/nrw-districts'
 import nrw_subRegionsRu from '../../datas/ru/germany/nrw-subRegions'
@@ -46,7 +45,6 @@ import sum_attrRu from '../../datas/ru/ukraine/sumska-attractions'
 import sum_eventsRu from '../../datas/ru/ukraine/sumska-events'
 
 //ua
-import countryUa from '../../datas/ua/Country'
 import germ_landUa from '../../datas/ua/germany/lands'
 import nrw_districtsUa from '../../datas/ua/germany/nrw-districts'
 import nrw_subRegionsUa from '../../datas/ua/germany/nrw-subRegions'
@@ -68,13 +66,13 @@ import sum_attrUa from '../../datas/ua/ukraine/sumska-attractions'
 import sum_eventsUa from '../../datas/ua/ukraine/sumska-events'
 
 const searchIndex = {
+    country: country,
     germany: {
             nrw: {
                 attractions: nrw_attr,
             }
         }, 
     de: {
-        country: countryDe,
         germany: {
             land: germ_landDe,
             nrw: {
@@ -104,7 +102,6 @@ const searchIndex = {
         }
     },
     ru: {
-        country: countryRu,
         germany: {
             land: germ_landRu,
             nrw: {
@@ -134,7 +131,6 @@ const searchIndex = {
         }
     },
     ua: {
-        country: countryUa,
         germany: {
             land: germ_landUa,
             nrw: {

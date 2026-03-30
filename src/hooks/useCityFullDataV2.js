@@ -40,18 +40,16 @@ function useCityFullDataV2() {
         // ================================
         // 1️⃣ Страна
         // ================================
-        const modulesCountry = import.meta.glob("../datas/**/Country.js");
-        let keyCountry =
-          Object.keys(modulesCountry).find(path => path.toLowerCase().endsWith("/datas/country.js")) ||
-          Object.keys(modulesCountry).find(path => path.toLowerCase().includes(`${lang}/country.js`));
-
-        if (!keyCountry) throw new Error("Country data file not found");
-
-        const countryModule = await modulesCountry[keyCountry]();
+        const countryModule = await import("../datas/country.js");
         const countries = countryModule.default;
         const foundCountry = countries.find(c => c.path === countryPath);
+
+        if (!foundCountry) throw new Error("Country not found");
+
+        setCountry(localizeItem(foundCountry, lang));
         if (!foundCountry) throw new Error("Country not found");
         setCountry(localizeItem(foundCountry, lang));
+
 
         // ================================
         // 2️⃣ Регион / земля

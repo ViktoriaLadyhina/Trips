@@ -128,7 +128,7 @@ export default function UkraineMap({ regions, countryPath }) {
             border: "1px solid #333",
             borderRadius: "4px",
             pointerEvents: "none",
-            fontSize: "1412px",
+            fontSize: "12px",
             color: "#000",
             zIndex: 9999,
           }}

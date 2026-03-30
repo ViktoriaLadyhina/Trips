@@ -2,9 +2,7 @@ import { useSelector } from 'react-redux';
 import { Link, useParams } from 'react-router';
 import { useEffect, useState } from 'react';
 
-import countriesUa from '../../datas/ua/Country';
-import countriesRu from '../../datas/ru/Country';
-import countriesDe from '../../datas/de/Country';
+import countries from '../../datas/country';
 
 import BreadCrumbs from '../../components/breadCrumbs/BreadCrumbs';
 import InfoBlock from '../../components/InfoBlock/InfoBlock';
@@ -21,18 +19,16 @@ const Country = () => {
     const { lang } = useSelector((state) => state.language);
     const [sidebarOpen, setSidebarOpen] = useState(false);
 
-    // выбираем данные в зависимости от языка
-    const countries = lang === 'ua' ? countriesUa : lang === 'de' ? countriesDe : countriesRu;
-
+   
     // ищем нужную страну
     const country = countries.find(c => c.path === countryPath);
-    useMeta(country?.meta);
+    useMeta(country?.country?.translations?.[lang]?.meta);
 
     useEffect(() => {
-        if (country?.country) {
-            document.title = country.country;
+        if (country?.translations?.[lang]?.country) {
+            document.title = country.translations[lang].country;
         }
-    }, [country?.country]);
+    }, [country, lang]);
 
     if (!country) return <p>Country not found</p>;
 
@@ -44,7 +40,7 @@ const Country = () => {
             label: lang === 'ru' ? 'Главная' : lang === 'de' ? 'Startseite' : 'Головна',
             path: '/'
         },
-        { label: country?.country }
+        { label: country?.translations?.[lang]?.country }
     ];
 
     return (
@@ -55,9 +51,9 @@ const Country = () => {
                 <div className="country__sidebar-toggle" onClick={() => setSidebarOpen(!sidebarOpen)}>☰</div>
 
                 {/* Заголовок и список */}
-                <h2 className="country__sidebar-title">{country.regions.title}</h2>
+                <h2 className="country__sidebar-title">{country?.translations?.[lang]?.country}</h2>
                 <ul className={`country__sidebar-list ${sidebarOpen ? "active" : ""}`}>
-                    {country.regions.items?.map((state) => (
+                    {country.translations?.[lang]?.regions.items?.map((state) => (
                         <li key={state.id} className="country__sidebar-item">
                             {state.hasInfo ? (
                                 <Link
@@ -80,33 +76,33 @@ const Country = () => {
 
             <div className="country__content">
                 <div className="country__breadcrumbs"> <BreadCrumbs crumbs={crumbs} /></div>
-                <h1 className="country__title">{country?.country}</h1>
+                <h1 className="country__title">{country?.translations?.[lang]?.country}</h1>
 
                 <div className='country__map'>
                     <CountryMap
                         countryKey={country.path}
-                        regions={country.regions}
+                        regions={country.translations?.[lang]?.regions}
                     />
                 </div>
 
-                {country.desc?.capital && <InfoBlock data={country.desc.capital} className="country__capital" />}
+                {country.translations?.[lang]?.desc?.capital && <InfoBlock data={country.translations?.[lang]?.desc.capital} className="country__capital" />}
                 {photos.gallery[2] && (<img src={`${BASE_PHOTO_URL}${photos.gallery[2].path}`} alt={photos.gallery[2].title} className="country__photo" />)}
-                {country.desc?.geography && <InfoBlock data={country.desc.geography} className="country__geography" />}
-                {country.desc?.population && <InfoBlock data={country.desc.population} className="country__population" />}
-                {country.desc?.languages && <InfoBlock data={country.desc.languages} className="country__languages" />}
-                {country.desc?.administrative && <InfoBlock data={country.desc.administrative} className="country__administrative" />}
-                {country.desc?.government && <InfoBlock data={country.desc.government} className="country__government" />}
-                {country.desc?.currency && <InfoBlock data={country.desc.currency} className="country__currency" />}
-                {country.desc?.transport && <InfoBlock data={country.desc.transport} className="country__transport" />}
+                {country.translations?.[lang]?.desc?.geography && <InfoBlock data={country.translations?.[lang]?.desc.geography} className="country__geography" />}
+                {country.translations?.[lang]?.desc?.population && <InfoBlock data={country.translations?.[lang]?.desc.population} className="country__population" />}
+                {country.translations?.[lang]?.desc?.languages && <InfoBlock data={country.translations?.[lang]?.desc.languages} className="country__languages" />}
+                {country.translations?.[lang]?.desc?.administrative && <InfoBlock data={country.translations?.[lang]?.desc.administrative} className="country__administrative" />}
+                {country.translations?.[lang]?.desc?.government && <InfoBlock data={country.translations?.[lang]?.desc.government} className="country__government" />}
+                {country.translations?.[lang]?.desc?.currency && <InfoBlock data={country.translations?.[lang]?.desc.currency} className="country__currency" />}
+                {country.translations?.[lang]?.desc?.transport && <InfoBlock data={country.translations?.[lang]?.desc.transport} className="country__transport" />}
                 {photos.gallery[3] && (<img src={`${BASE_PHOTO_URL}${photos.gallery[3].path}`} alt={photos.gallery[3].title} className="country__photo country__photo--right" />)}
-                {country.desc?.climate && <InfoBlock data={country.desc.climate} className="country__climate" />}
-                {country.desc?.tourism && <InfoBlock data={country.desc.tourism} className="country__tourism" />}
-                {country.desc?.cuisine && <InfoBlock data={country.desc.cuisine} className="country__cuisine" />}
-                {country.desc?.entry && <InfoBlock data={country.desc.entry} className="country__entry" />}
-                {country.symbols && <InfoBlock data={country.symbols} className="country__symbols" />}
+                {country.translations?.[lang]?.desc?.climate && <InfoBlock data={country.translations?.[lang]?.desc.climate} className="country__climate" />}
+                {country.translations?.[lang]?.desc?.tourism && <InfoBlock data={country.translations?.[lang]?.desc.tourism} className="country__tourism" />}
+                {country.translations?.[lang]?.desc?.cuisine && <InfoBlock data={country.translations?.[lang]?.desc.cuisine} className="country__cuisine" />}
+                {country.translations?.[lang]?.desc?.entry && <InfoBlock data={country.translations?.[lang]?.desc.entry} className="country__entry" />}
+                {country.translations?.[lang]?.symbols && <InfoBlock data={country.translations?.[lang]?.symbols} className="country__symbols" />}
                 {photos.gallery[4] && (<img src={`${BASE_PHOTO_URL}${photos.gallery[4].path}`} alt={photos.gallery[4].title} className="country__photo country__photo" />)}
-                {country.holidays && <InfoBlock data={country.holidays} className="country__holidays" />}
-                {country.briefHistory && <InfoBlock data={country.briefHistory} className="country__history" />}
+                {country.translations?.[lang]?.holidays && <InfoBlock data={country.translations?.[lang]?.holidays} className="country__holidays" />}
+                {country.translations?.[lang]?.briefHistory && <InfoBlock data={country.translations?.[lang]?.briefHistory} className="country__history" />}
             </div>
         </div>
     );

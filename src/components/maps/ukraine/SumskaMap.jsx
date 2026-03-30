@@ -19,86 +19,86 @@ const sumyRegionCenters = {
 };
 
 const SumskaMap = ({ regions, countryPath }) => {
-   const navigate = useNavigate();
-   const regionItems = regions?.discriptRegions[0]?.items || [];
-   
-   const [hoverRegion, setHoverRegion] = useState(null);
-   const [tooltipPos, setTooltipPos] = useState([0, 0]);
+  const navigate = useNavigate();
+  const regionItems = regions?.discriptRegions[0]?.items || [];
 
-   return (
-     <div className="map-container">
-       <svg
-         viewBox="0 0 500 525"
-         xmlns="http://www.w3.org/2000/svg"
-         preserveAspectRatio="xMidYMid meet"
-       >
-         <g className="map-shape">
-           {districts.map((loc) => {
-             const reg = regionItems?.find(r => r.path.toLowerCase() === loc.id);
-             if (!reg) return null;
- 
-             return (
-               <path
-                 key={loc.id}
-                 d={loc.path}
-                 className={reg.hasInfo ? "interactive" : "disabled"}
-                 onClick={() => reg.hasInfo && navigate(`/${countryPath}/${reg.path}`)}
-                 strokeWidth="1"
-                 onMouseEnter={(e) => {
-                   setHoverRegion(reg.name);
-                   setTooltipPos([e.clientX, e.clientY]);
-                 }}
-                 onMouseMove={(e) => setTooltipPos([e.clientX, e.clientY])}
-                 onMouseLeave={() => setHoverRegion(null)}
-               />
-             );
-           })}
- 
-{districts.map((loc) => {
-  const reg = regionItems.find(r => r.path.toLowerCase() === loc.id);
-  if (!reg) return null;
-
-  const center = sumyRegionCenters[reg.path.toLowerCase()] || { x: 0, y: 0, dx: 0, dy: 0 };
+  const [hoverRegion, setHoverRegion] = useState(null);
+  const [tooltipPos, setTooltipPos] = useState([0, 0]);
 
   return (
-    <text
-      key={`${loc.id}-label`}
-      x={center.x + (center.dx || 0)}
-      y={center.y + (center.dy || 0)}
-      textAnchor="middle"
-      dominantBaseline="middle"
-      fontSize="10"
-      fill="#000"
-      pointerEvents="none"
-    >
-      {reg.name}
-    </text>
+    <div className="map-container">
+      <svg
+        viewBox="0 0 500 525"
+        xmlns="http://www.w3.org/2000/svg"
+        preserveAspectRatio="xMidYMid meet"
+      >
+        <g className="map-shape">
+          {districts.map((loc) => {
+            const reg = regionItems?.find(r => r.path.toLowerCase() === loc.id);
+            if (!reg) return null;
+
+            return (
+              <path
+                key={loc.id}
+                d={loc.path}
+                className={reg.hasInfo ? "interactive" : "disabled"}
+                onClick={() => reg.hasInfo && navigate(`/${countryPath}/${reg.path}`)}
+                strokeWidth="1"
+                onMouseEnter={(e) => {
+                  setHoverRegion(reg.name);
+                  setTooltipPos([e.clientX, e.clientY]);
+                }}
+                onMouseMove={(e) => setTooltipPos([e.clientX, e.clientY])}
+                onMouseLeave={() => setHoverRegion(null)}
+              />
+            );
+          })}
+
+          {districts.map((loc) => {
+            const reg = regionItems.find(r => r.path.toLowerCase() === loc.id);
+            if (!reg) return null;
+
+            const center = sumyRegionCenters[reg.path.toLowerCase()] || { x: 0, y: 0, dx: 0, dy: 0 };
+
+            return (
+              <text
+                key={`${loc.id}-label`}
+                x={center.x + (center.dx || 0)}
+                y={center.y + (center.dy || 0)}
+                textAnchor="middle"
+                dominantBaseline="middle"
+                fontSize="10"
+                fill="#000"
+                pointerEvents="none"
+              >
+                {reg.name}
+              </text>
+            );
+          })}
+        </g>
+      </svg>
+
+      {hoverRegion && (
+        <div
+          style={{
+            position: "fixed",
+            top: tooltipPos[1] + 10,
+            left: tooltipPos[0] + 10,
+            background: "#fff",
+            padding: "2px 6px",
+            border: "1px solid #333",
+            borderRadius: "4px",
+            pointerEvents: "none",
+            fontSize: "12px",
+            color: "#000",
+            zIndex: 9999,
+          }}
+        >
+          {hoverRegion}
+        </div>
+      )}
+    </div>
   );
-})}
-         </g>
-       </svg>
- 
-       {hoverRegion && (
-         <div
-           style={{
-             position: "fixed",
-             top: tooltipPos[1] + 10,
-             left: tooltipPos[0] + 10,
-             background: "#fff",
-             padding: "2px 6px",
-             border: "1px solid #333",
-             borderRadius: "4px",
-             pointerEvents: "none",
-             fontSize: "12px",
-             color: "#000",
-             zIndex: 9999,
-           }}
-         >
-           {hoverRegion}
-         </div>
-       )}
-     </div>
-   );
 }
 
 export default SumskaMap;
