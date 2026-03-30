@@ -291,6 +291,240 @@ const datas = [
     }
   },
   {
+    id: 'lu',
+    path: 'luxembourg',
+    translations: {
+      ru: {
+        country: 'Люксембург',
+        desc: {
+          capital: [{ bold: 'Столица:', text: ' Люксембург' }],
+          geography: [
+            { text: 'Великое Герцогство Люксембург расположено в Западной Европе. Граничит с Бельгией, Францией и Германией.' },
+            { text: 'Территория страны составляет около 2 586 км², протяженность с севера на юг – около 82 км, с запада на восток – около 57 км.' },
+            { text: 'Люксембург является членом Европейского союза, Шенгенской зоны и НАТО.' }
+          ],
+          population: [{ bold: 'Население:', text: ' около 660 тыс. человек. Национальный состав: люксембуржцы, португальцы, французы, итальянцы и другие иностранцы.' }],
+          languages: [{ bold: 'Языки:', text: ' люксембургский (государственный), французский и немецкий (официальные).' }],
+          administrative: [{ bold: 'Административное деление:', text: ' Люксембург делится на 12 кантонов и 102 коммуны.' }],
+          government: [{ bold: 'Государственное устройство:', text: ' Конституционная монархия с парламентской системой. Глава государства – великий герцог. Законодательная власть осуществляется двухпалатным парламентом (Штатсрат и Палата депутатов).' }],
+          currency: [{ bold: 'Валюта:', text: ' евро (EUR), делится на 100 центов.' }],
+          transport: [{ bold: 'Транспорт:', text: ' В Люксембурге развит городской и междугородний транспорт: автобусы, поезда и трамваи. С 2020 года <b>общественный транспорт в Люксембурге стал полностью бесплатным</b> для пассажиров (автобусы, трамваи и поезда 2 класса). Оплата сохраняется только для 1 класса и отдельных международных направлений.' }],
+          climate: [
+            { bold: 'Климат:' },
+            { text: ' умеренный океанический. Зимы мягкие, лето тёплое. Средняя температура января – около 1°С, июля – около 18–20°С. Осадков распределено равномерно в течение года.' }
+          ],
+          tourism: [
+            { bold: 'Туризм и отдых:' },
+            { text: ' Люксембург славится средневековыми замками, историческим центром столицы и живописными долинами рек. Популярны пешие прогулки, велотуризм и экскурсии по винодельческим регионам.' },
+            { text: ' Основным сувениром считаются изделия из кружева, шоколад и вино местного производства.' }
+          ]
+        },
+        symbols: {
+          title: "Геральдика",
+          items: [
+            {
+              bold: "Герб:",
+              text: " Герб Великого Герцогства Люксембург представляет собой красного льва с золотыми когтями и языком на полосатом серебряно-синем фоне. Символизирует государственность и историческую независимость страны.",
+              img: "Luxembourg/gerb.png"
+            },
+            {
+              bold: "Флаг:",
+              text: " Национальный флаг Люксембурга – горизонтальное триколорное полотнище: красная, белая и светло-голубая полосы. Цвета символизируют независимость и историческое наследие герцогства.",
+              img: "Luxembourg/flag.png"
+            }
+          ]
+        },
+        briefHistory: {
+          title: "Краткая история",
+          items: [
+            { text: "Люксембург был основан в 963 году, когда граф Зигфрид Люксембургский приобрёл укрепление Люцилинбург (Lucilinburhuc), вокруг которого постепенно вырос город и государство." },
+            { text: "В Средние века Люксембург превратился в важное графство, а затем герцогство, играя заметную роль в европейской политике. Представители Люксембургской династии занимали престолы Священной Римской империи, включая императора Карл IV." },
+            { text: "В последующие столетия территория Люксембурга неоднократно переходила под контроль крупных держав – Испании, Франции и Австрии, из-за своего стратегического положения в центре Европы. Город Люксембург считался одной из самых мощных крепостей континента и получил прозвище «Северный Гибралтар»." },
+            { text: "В XIX веке после решений Венский конгресс Люксембург стал Великим герцогством. В 1890 году установилась династия Нассау-Вейльбург, которая правит страной до сих пор." },
+            { text: "Во время Первой и Второй мировых войн Люксембург был оккупирован Германией. Во Вторую мировую войну страна была фактически аннексирована нацистской Германией, подвергалась насильственной германизации, а часть населения была депортирована и мобилизована. После освобождения в 1944 году Люксембург окончательно отказался от политики нейтралитета." },
+            { text: "С середины XX века Люксембург стал одним из основателей европейской интеграции, участвуя в создании Европейского союза и других международных структур. Страна активно развивала финансовый сектор и превратилась в один из крупнейших банковских центров мира." },
+            { text: "Сегодня Люксембург – стабильное и экономически развитое государство с высоким уровнем жизни, сильной экономикой и важной ролью в европейской политике." },
+          ]
+        },
+        cities: {
+          title: "Ключевые города",
+          items: [
+            { id: 1, name: 'Дифанж', hasInfo: false, path: 'differdange' },
+            { id: 2, name: 'Эш-сюр-Альзетт', hasInfo: false, path: 'esch-sur-alzette' },
+            { id: 3, name: 'Люксембург', hasInfo: false, path: 'luxembourg-city' },
+            { id: 4, name: 'Дикирх', hasInfo: false, path: 'diekirch' },
+            { id: 5, name: 'Гревенмахер', hasInfo: false, path: 'grevenmacher' },
+            { id: 6, name: 'Вилц', hasInfo: false, path: 'vianden' }
+          ]
+        },
+        routes: {
+          title: "Маршруты",
+          items: [
+            { id: 1, name: "Мюллертальская тропа", type: "hiking", path: "mullerthal-trail" },
+            { id: 2, name: "Долина семи замков", type: "castle-route", path: "valley-seven-castles" }
+          ]
+        },
+        meta: {
+          title: "Люксембург — информация о стране, достопримечательности и культура",
+          description: "Все о стране Люксембург: столица Люксембург, география, население, языки, культура, символы, история и регионы.",
+          ogTitle: "Люксембург — информация о стране и достопримечательности",
+          ogDescription: "Подробная информация о Люксембурге: культура, символы, история, регионы и интересные факты.",
+          ogImage: "https://our-travels.info/foto/Luxembourg/flag.png"
+        }
+      },
+      ua: {
+        country: 'Люксембург',
+        desc: {
+          capital: [{ bold: 'Столиця:', text: ' Люксембург' }],
+          geography: [
+            { text: 'Велике Герцогство Люксембург розташоване у Західній Європі. Межує з Бельгією, Францією та Німеччиною.' },
+            { text: 'Територія країни становить близько 2 586 км², протяжність з півночі на південь – близько 82 км, зі заходу на схід – близько 57 км.' },
+            { text: 'Люксембург є членом Європейського Союзу, Шенгенської зони та НАТО.' }
+          ],
+          population: [{ bold: 'Населення:', text: ' близько 660 тис. осіб. Національний склад: люксембуржці, португальці, французи, італійці та інші іноземці.' }],
+          languages: [{ bold: 'Мови:', text: ' люксембурзька (державна), французька та німецька (офіційні).' }],
+          administrative: [{ bold: 'Адміністративний поділ:', text: ' Люксембург поділяється на 12 кантонів та 102 комуни.' }],
+          government: [{ bold: 'Державний устрій:', text: ' Конституційна монархія з парламентською системою. Голова держави – великий герцог. Законодавча влада здійснюється двопалатним парламентом (Штатсрат і Палата депутатів).' }],
+          currency: [{ bold: 'Валюта:', text: ' євро (EUR), ділиться на 100 центів.' }],
+          transport: [{ bold: 'Транспорт:', text: ' У Люксембурзі розвинений міський та міжміський транспорт: автобуси, потяги та трамваї. З 2020 року громадський транспорт у Люксембурзі став повністю безкоштовним для пасажирів (автобуси, трамваї та потяги 2 класу). Оплата зберігається лише для 1 класу та окремих міжнародних напрямків.' }],
+          climate: [{ bold: 'Клімат:', text: ' помірний океанічний. Зими м’які, літо тепле. Середня температура січня – близько 1°С, липня – близько 18–20°С. Опадів розподілено рівномірно протягом року.' }],
+          tourism: [
+            { bold: 'Туризм та відпочинок:' },
+            { text: ' Люксембург славиться середньовічними замками, історичним центром столиці та мальовничими долинами річок. Популярні піші прогулянки, велотуризм та екскурсії виноробними регіонами.' },
+            { text: ' Основним сувеніром вважаються вироби з мережива, шоколад та вино місцевого виробництва.' }
+          ]
+        },
+        symbols: {
+          title: "Геральдика",
+          items: [
+            {
+              bold: "Герб:",
+              text: " Герб Великого Герцогства Люксембург представляє собою червоного лева з золотими кігтями та язиком на смугастому срібно-синьому тлі. Символізує державність та історичну незалежність країни.",
+              img: "Luxembourg/gerb.png"
+            },
+            {
+              bold: "Прапор:",
+              text: " Національний прапор Люксембургу – горизонтальне триколірне полотно: червона, біла та світло-блакитна смуги. Кольори символізують незалежність та історичну спадщину герцогства.",
+              img: "Luxembourg/flag.png"
+            }
+          ]
+        },
+        briefHistory: {
+          title: "Коротка історія",
+          items: [
+            { text: "Люксембург був заснований у 963 році, коли граф Зігфрід Люксембурзький придбав укріплення Люцилінбург (Lucilinburhuc), навколо якого поступово виріс місто та держава." },
+            { text: "У середні віки Люксембург перетворився на важливе графство, а згодом герцогство, граючи помітну роль у європейській політиці. Представники Люксембурзької династії займали престоли Священної Римської імперії, включно з імператором Карлом IV." },
+            { text: "Протягом наступних століть територія Люксембургу неодноразово переходила під контроль великих держав – Іспанії, Франції та Австрії через своє стратегічне положення в центрі Європи. Місто Люксембург вважалося однією з найпотужніших фортець континенту та отримало прізвисько «Північний Гібралтар»." },
+            { text: "У XIX столітті після рішень Віденського конгресу Люксембург став Великим герцогством. У 1890 році встановилася династія Нассау-Вейльбург, яка править країною до сьогодні." },
+            { text: "Під час Першої та Другої світових воєн Люксембург був окупований Німеччиною. У Другу світову війну країна фактично була анексована нацистською Німеччиною, піддавалася насильницькій германізації, а частина населення була депортована і мобілізована. Після звільнення у 1944 році Люксембург остаточно відмовився від політики нейтралітету." },
+            { text: "З середини XX століття Люксембург став одним з засновників європейської інтеграції, беручи участь у створенні Європейського Союзу та інших міжнародних структур. Країна активно розвивала фінансовий сектор і перетворилася на один із найбільших банківських центрів світу." },
+            { text: "Сьогодні Люксембург – стабільна та економічно розвинена держава з високим рівнем життя, сильною економікою та важливою роллю в європейській політиці." }
+          ]
+        },
+        cities: {
+          title: "Ключові міста",
+          items: [
+            { id: 1, name: 'Діфферданж', hasInfo: false, path: 'differdange' },
+            { id: 2, name: 'Еш-сюр-Альзетт', hasInfo: false, path: 'esch-sur-alzette' },
+            { id: 3, name: 'Люксембург', hasInfo: false, path: 'luxembourg-city' },
+            { id: 4, name: 'Дікріх', hasInfo: false, path: 'diekirch' },
+            { id: 5, name: 'Гревенмахер', hasInfo: false, path: 'grevenmacher' },
+            { id: 6, name: 'Вільц', hasInfo: false, path: 'vianden' }
+          ]
+        },
+        routes: {
+          title: "Маршрути",
+          items: [
+            { id: 1, name: "Мюллертальська стежка", type: "hiking", path: "mullerthal-trail" },
+            { id: 2, name: "Долина семи замків", type: "castle-route", path: "valley-seven-castles" }
+          ]
+        },
+        meta: {
+          title: "Люксембург — інформація про країну, природа та культура",
+          description: "Все про країну Люксембург: столиця Люксембург, географія, населення, мови, культура, символи, історія та ключові міста.",
+          ogTitle: "Люксембург — інформація про країну та цікаві місця",
+          ogDescription: "Детальна інформація про Люксембург: культура, символи, історія, ключові міста та цікаві факти.",
+          ogImage: "https://our-travels.info/foto/Luxembourg/flag.png"
+        }
+      },
+      de: {
+        country: 'Luxemburg',
+        desc: {
+          capital: [{ bold: 'Hauptstadt:', text: ' Luxemburg' }],
+          geography: [
+            { text: 'Das Großherzogtum Luxemburg liegt in Westeuropa. Es grenzt an Belgien, Frankreich und Deutschland.' },
+            { text: 'Die Fläche des Landes beträgt etwa 2.586 km², die Nord-Süd-Ausdehnung ca. 82 km, die West-Ost-Ausdehnung ca. 57 km.' },
+            { text: 'Luxemburg ist Mitglied der Europäischen Union, des Schengen-Raums und der NATO.' }
+          ],
+          population: [{ bold: 'Bevölkerung:', text: ' etwa 660.000 Menschen. Ethnische Zusammensetzung: Luxemburger, Portugiesen, Franzosen, Italiener und andere Ausländer.' }],
+          languages: [{ bold: 'Sprachen:', text: ' Luxemburgisch (staatlich), Französisch und Deutsch (offiziell).' }],
+          administrative: [{ bold: 'Verwaltungsgliederung:', text: ' Luxemburg ist in 12 Kantone und 102 Gemeinden unterteilt.' }],
+          government: [{ bold: 'Staatsform:', text: ' Konstitutionelle Monarchie mit parlamentarischem System. Staatsoberhaupt ist der Großherzog. Die legislative Gewalt wird durch ein Zweikammerparlament (Staatsrat und Abgeordnetenkammer) ausgeübt.' }],
+          currency: [{ bold: 'Währung:', text: ' Euro (EUR), unterteilt in 100 Cent.' }],
+          transport: [{ bold: 'Verkehr:', text: ' In Luxemburg gibt es gut ausgebaute Stadt- und Überlandverkehrsmittel: Busse, Züge und Straßenbahnen. Seit 2020 ist der öffentliche Verkehr in Luxemburg für Fahrgäste vollständig kostenlos (Busse, Straßenbahnen und Züge 2. Klasse). Bezahlt wird nur für die 1. Klasse und bestimmte internationale Strecken.' }],
+          climate: [{ bold: 'Klima:', text: ' gemäßigt ozeanisch. Winter mild, Sommer warm. Durchschnittstemperatur im Januar etwa 1°C, im Juli etwa 18–20°C. Niederschläge sind über das Jahr gleichmäßig verteilt.' }],       
+          tourism: [
+            { bold: 'Tourismus und Freizeit:' },
+            { text: ' Luxemburg ist bekannt für mittelalterliche Schlösser, das historische Stadtzentrum und malerische Flusstäler. Beliebt sind Wandern, Radtourismus und Ausflüge in Weinregionen.' },
+            { text: ' Typische Souvenirs sind Spitzenarbeiten, Schokolade und Wein aus lokaler Produktion.' }
+          ]
+        },
+        symbols: {
+          title: "Heraldik",
+          items: [
+            {
+              bold: "Wappen:",
+              text: " Das Wappen des Großherzogtums Luxemburg zeigt einen roten Löwen mit goldenen Krallen und Zunge auf silber-blau gestreiftem Hintergrund. Es symbolisiert Staatlichkeit und historische Unabhängigkeit des Landes.",
+              img: "Luxembourg/gerb.png"
+            },
+            {
+              bold: "Flagge:",
+              text: " Die Nationalflagge Luxemburgs ist ein horizontales Trikolor-Banner: rot, weiß und hellblau. Die Farben symbolisieren Unabhängigkeit und historisches Erbe des Herzogtums.",
+              img: "Luxembourg/flag.png"
+            }
+          ]
+        },
+        briefHistory: {
+          title: "Kurze Geschichte",
+          items: [
+            { text: "Luxemburg wurde 963 gegründet, als Graf Siegfried von Luxemburg die Befestigung Lucilinburhuc erwarb, um die sich allmählich die Stadt und der Staat entwickelten." },
+            { text: "Im Mittelalter entwickelte sich Luxemburg zu einer wichtigen Grafschaft und später zu einem Herzogtum, das eine bedeutende Rolle in der europäischen Politik spielte. Mitglieder der luxemburgischen Dynastie bestiegen die Throne des Heiligen Römischen Reiches, einschließlich Kaiser Karl IV." },
+            { text: "In den folgenden Jahrhunderten wechselte das Territorium Luxemburgs mehrfach unter die Kontrolle großer Mächte – Spanien, Frankreich und Österreich – aufgrund seiner strategischen Lage im Zentrum Europas. Die Stadt Luxemburg galt als eine der mächtigsten Festungen des Kontinents und erhielt den Spitznamen „Nördliches Gibraltar“." },
+            { text: "Im 19. Jahrhundert wurde Luxemburg nach den Beschlüssen des Wiener Kongresses zum Großherzogtum. 1890 wurde die Dynastie Nassau-Weilburg etabliert, die das Land bis heute regiert." },
+            { text: "Während des Ersten und Zweiten Weltkriegs wurde Luxemburg von Deutschland besetzt. Im Zweiten Weltkrieg wurde das Land de facto von Nazi-Deutschland annektiert, unterlag einer Zwangsgermanisierung, und ein Teil der Bevölkerung wurde deportiert und mobilisiert. Nach der Befreiung 1944 verzichtete Luxemburg endgültig auf die Politik der Neutralität." },
+            { text: "Seit der Mitte des 20. Jahrhunderts ist Luxemburg einer der Gründer der europäischen Integration und beteiligt sich an der Schaffung der Europäischen Union und anderer internationaler Strukturen. Das Land entwickelte aktiv den Finanzsektor und wurde zu einem der größten Finanzzentren der Welt." },
+            { text: "Heute ist Luxemburg ein stabiles und wirtschaftlich entwickeltes Land mit hohem Lebensstandard, starker Wirtschaft und bedeutender Rolle in der europäischen Politik." }
+          ]
+        },
+        cities: {
+          title: "Wichtige Städte",
+          items: [
+            { id: 1, name: 'Differdange', hasInfo: false, path: 'differdange' },
+            { id: 2, name: 'Esch-sur-Alzette', hasInfo: false, path: 'esch-sur-alzette' },
+            { id: 3, name: 'Luxemburg', hasInfo: false, path: 'luxembourg-city' },
+            { id: 4, name: 'Diekirch', hasInfo: false, path: 'diekirch' },
+            { id: 5, name: 'Grevenmacher', hasInfo: false, path: 'grevenmacher' },
+            { id: 6, name: 'Vianden', hasInfo: false, path: 'vianden' }
+          ]
+        },
+        routes: {
+          title: "Routen",
+          items: [
+            { id: 1, name: "Müllerthal-Trail", type: "hiking", path: "mullerthal-trail" },
+            { id: 2, name: "Tal der sieben Schlösser", type: "castle-route", path: "valley-seven-castles" }
+          ]
+        },
+        meta: {
+          title: "Luxemburg — Informationen über das Land, Natur und Kultur",
+          description: "Alles über das Land Luxemburg: Hauptstadt Luxemburg, Geographie, Bevölkerung, Sprachen, Kultur, Symbole, Geschichte und wichtige Städte.",
+          ogTitle: "Luxemburg — Informationen über das Land und Sehenswürdigkeiten",
+          ogDescription: "Detaillierte Informationen über Luxemburg: Kultur, Symbole, Geschichte, wichtige Städte und interessante Fakten.",
+          ogImage: "https://our-travels.info/foto/Luxembourg/flag.png"
+        }
+      }
+    }
+  },
+  {
     id: 'ua',
     path: 'ukraine',
     translations: {
@@ -317,7 +551,7 @@ const datas = [
             {
               bold: "Флаг:",
               text: " 28 января 1992 года Верховный Совет Украины утвердил государственный флаг: прямоугольное полотнище с двумя равными горизонтальными полосами – верхняя синяя, нижняя жёлтая.",
-              img: "Ukraine/Flag.svg"
+              img: "Ukraine/flag.jpg"
             }
           ]
         },
@@ -410,7 +644,7 @@ const datas = [
             {
               bold: 'Прапор:',
               text: ' 28 січня 1992 року Верховна Рада України затвердила державний прапор: прямокутне полотнище з двох рівних горизонтальних смуг – верхня синя, нижня жовта.',
-              img: "Ukraine/Flag.svg"
+              img: "Ukraine/flag.jpg"
             }
           ]
         },
@@ -503,7 +737,7 @@ const datas = [
             {
               bold: 'Flagge:',
               text: ' am 28. Januar 1992 beschloss die Werchowna Rada der Ukraine die nationale Flagge: ein rechteckiges Tuch mit zwei gleich breiten horizontalen Streifen – oben blau, unten gelb.',
-              img: "Ukraine/Flag.svg"
+              img: "Ukraine/flag.jpg"
             }
           ]
         },

@@ -19,7 +19,7 @@ const Country = () => {
     const { lang } = useSelector((state) => state.language);
     const [sidebarOpen, setSidebarOpen] = useState(false);
 
-   
+
     // ищем нужную страну
     const country = countries.find(c => c.path === countryPath);
     useMeta(country?.country?.translations?.[lang]?.meta);
@@ -51,9 +51,9 @@ const Country = () => {
                 <div className="country__sidebar-toggle" onClick={() => setSidebarOpen(!sidebarOpen)}>☰</div>
 
                 {/* Заголовок и список */}
-                <h2 className="country__sidebar-title">{country?.translations?.[lang]?.country}</h2>
+                <h2 className="country__sidebar-title">{country?.translations?.[lang]?.regions?.title}</h2>
                 <ul className={`country__sidebar-list ${sidebarOpen ? "active" : ""}`}>
-                    {country.translations?.[lang]?.regions.items?.map((state) => (
+                    {country.translations?.[lang]?.regions?.items?.map((state) => (
                         <li key={state.id} className="country__sidebar-item">
                             {state.hasInfo ? (
                                 <Link
@@ -70,6 +70,60 @@ const Country = () => {
                         </li>
                     ))}
                 </ul>
+
+                {/* Ключевые города */}
+                {country.translations?.[lang]?.cities?.items?.length > 0 && (
+                    <div className="country__sidebar-section">
+                        <h3 className="country__sidebar-section-title">
+                            {country.translations[lang].cities.title}
+                        </h3>
+                        <ul className={`country__sidebar-list ${sidebarOpen ? "active" : ""}`}>
+                            {country.translations[lang].cities.items.map((city) => (
+                                <li key={city.id} className="country__sidebar-item">
+                                    {city.hasInfo ? (
+                                        <Link
+                                            to={`/${countryPath}/${city.path}`}
+                                            className="country__sidebar-link"
+                                        >
+                                            {city.name}
+                                        </Link>
+                                    ) : (
+                                        <span className="country__sidebar-link country__sidebar-link--disabled">
+                                            {city.name}
+                                        </span>
+                                    )}
+                                </li>
+                            ))}
+                        </ul>
+                    </div>
+                )}
+
+                {/* Маршруты */}
+                {country.translations?.[lang]?.routes?.items?.length > 0 && (
+                    <div className="country__sidebar-section">
+                        <h3 className="country__sidebar-section-title">
+                            {country.translations[lang].routes.title}
+                        </h3>
+                        <ul className={`country__sidebar-list ${sidebarOpen ? "active" : ""}`}>
+                            {country.translations[lang].routes.items.map((route) => (
+                                <li key={route.id} className="country__sidebar-item">
+                                    {route.hasInfo ? (
+                                        <Link
+                                            to={`/${countryPath}/${route.path}`}
+                                            className="country__sidebar-link"
+                                        >
+                                            {route.name}
+                                        </Link>
+                                    ) : (
+                                        <span className="country__sidebar-link country__sidebar-link--disabled">
+                                            {route.name}
+                                        </span>
+                                    )}
+                                </li>
+                            ))}
+                        </ul>
+                    </div>
+                )}
             </aside>
 
             {/* Основной контент */}

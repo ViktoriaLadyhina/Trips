@@ -7,9 +7,10 @@ import { useMeta } from '../../hooks/useMeta';
 import { datas as datasUa } from '../../datas/ua/home'
 import { datas as datasRu } from '../../datas/ru/home'
 import { datas as datasDe } from '../../datas/de/home'
-import countriesUa from '../../datas/ua/Country';
-import countriesRu from '../../datas/ru/Country';
-import countriesDe from '../../datas/de/Country';
+// import countriesUa from '../../datas/ua/Country';
+// import countriesRu from '../../datas/ru/Country';
+// import countriesDe from '../../datas/de/Country';
+import datas from '../../datas/country';
 import { photosByCountry } from "../../datas/fotos";
 
 import worldMap from '../../assets/world-map.gif';
@@ -21,7 +22,7 @@ const Home = () => {
 
   // выбираем данные в зависимости от языка
   const homeData = lang === 'ua' ? datasUa : lang === 'de' ? datasDe : datasRu;
-  const countries = lang === 'ua' ? countriesUa : lang === 'de' ? countriesDe : countriesRu;
+  const countries = datas || [];
   useMeta(homeData.meta);
 
   return (
@@ -44,7 +45,7 @@ const Home = () => {
                     />
                   )}
                 </div>
-                <span className="home__countries-btn-title">{c.country}</span>
+                <span className="home__countries-btn-title">{c.translations[lang]?.country}</span>
               </Link>
             </li>
           );

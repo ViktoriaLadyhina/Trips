@@ -7,7 +7,8 @@ import BreadCrumbs from '../../components/breadCrumbs/BreadCrumbs';
 const t = {
   countries: {
     germany: { ru: 'Германия', de: 'Deutschland', ua: 'Німеччина' },
-    ukraine: { ru: 'Украина', de: 'Ukraine', ua: 'Україна' }
+    ukraine: { ru: 'Украина', de: 'Ukraine', ua: 'Україна' },
+    luxembourg: { ru: 'Люксембург', de: 'Luxemburg', ua: 'Люксембург' }
   },
   regions: {
     nrw: { ru: 'Северный Рейн-Вестфалия', de: 'Nordrhein-Westfalen', ua: 'Північний Рейн-Вестфалія' },
@@ -450,6 +451,9 @@ const Map = () => {
               </li>
             </ul>
           </li>
+
+          {/* Люксембург */}<br></br><br></br>
+          <li><Link to="/luxembourg">{t.countries.luxembourg[lang]}</Link></li>
 
           {/* Украина */}<br></br><br></br>
           <li><Link to="/ukraine">{t.countries.ukraine[lang]}</Link>

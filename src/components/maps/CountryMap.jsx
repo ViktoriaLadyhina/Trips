@@ -6,6 +6,8 @@ import NRWKolnMap from './germany/NRWKolnMap';
 import NRWArnsbergMap from './germany/NRWArnsbergMap'
 import RheinlandPfalzMap from './germany/RPMap';
 
+import luxembourgMap from './luxembourg/luxembourg';
+
 const maps = {
   germany: {
     country: GermanyMap,
@@ -22,6 +24,9 @@ const maps = {
     country: UkraineMap,
     sumska: SumskaMap,
   },
+  luxembourg: {
+    country: luxembourgMap
+  }
 };
 
 export default function CountryMap({ countryKey, regionKey, regions, subRegion, districtKey }) {
