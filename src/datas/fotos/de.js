@@ -53,7 +53,7 @@ export const Fotos = {
         { path: "Germany/nrw/koln/koln-city/koln-cathedral/005.jpg", title: { ru: "Кёльнский собор, 2025", ua: "Кельнський собор, 2025", de: "Kölner Dom, 2025" } },
       ],
       guerzenich_koln: [
-        { path: "Germany/nrw/koln/koln-city/guerzenich_koln/001.jpg", title: { ru: "Гюрцених, 2026", ua: "Гюрценіх, 2026", de: "Gürzenich, 2026" } },
+        { path: "Germany/nrw/koln/koln-city/altstadt/guerzenich_koln/001.jpg", title: { ru: "Гюрцених, 2026", ua: "Гюрценіх, 2026", de: "Gürzenich, 2026" } },
       ],
       'roemisch-germanisches-museum': [
         { path: "Germany/nrw/koln/koln-city/roemisch-germanisches-museum/001.jpg", title: { ru: "Римско-германский музей, 2025", ua: "Римсько-германський музей, 2025", de: "Römisch-Germanisches Museum, 2025" } }
@@ -122,6 +122,8 @@ export const Fotos = {
         { path: "Germany/nrw/koln/koln-city/schnuetgen/001.jpg", title: { ru: "Музей Шнютгена, 2026", ua: "Музей Шнютгена, 2026", de: "Museum Schnütgen, 2026" } },
         { path: "Germany/nrw/koln/koln-city/schnuetgen/002.jpg", title: { ru: "Музей Шнютгена, 2026", ua: "Музей Шнютгена, 2026", de: "Museum Schnütgen, 2026" } },
         { path: "Germany/nrw/koln/koln-city/schnuetgen/003.jpg", title: { ru: "Музей Шнютгена, 2026", ua: "Музей Шнютгена, 2026", de: "Museum Schnütgen, 2026" } },
+        { path: "Germany/nrw/koln/koln-city/schnuetgen/004.jpg", title: { ru: "Музей Шнютгена, 2026", ua: "Музей Шнютгена, 2026", de: "Museum Schnütgen, 2026" } },
+        { path: "Germany/nrw/koln/koln-city/schnuetgen/005.jpg", title: { ru: "Музей Шнютгена, 2026", ua: "Музей Шнютгена, 2026", de: "Museum Schnütgen, 2026" } },
       ],
       karneval_koln: [
         { path: "Germany/nrw/koln/koln-city/karneval/001.jpg", title: { ru: "Кёльнский карнавал (фото взято с интернета)", ua: "Кельнський карнавал (фото взято з Інтернету)", de: "Kölner Karneval (Foto aus dem Internet)" } },
@@ -163,7 +165,7 @@ export const Fotos = {
         { path: "Germany/nrw/koln/koln-city/altstadt/romanische_kirchen/gross_st_martin/002.jpg", title: { ru: "Большой Святой Мартин, 2025", ua: "Великий Святий Мартін, 2025", de: "Groß St. Martin, 2025" } },
         { path: "Germany/nrw/koln/koln-city/altstadt/romanische_kirchen/stMariaImKapitol/001.jpg", title: { ru: "Церковь Святой Марии в Капитолии, 2026", ua: "Церква Святої Марії у Капітолії, 2026", de: "Kirche St. Maria im Kapitol, 2026" } },
         { path: "Germany/nrw/koln/koln-city/altstadt/st_maria_himmelfahrt/001.jpg", title: { ru: "Сент-Мария Химмельфарт, 2026", ua: "Церква Успіння Пресвятої Діви Марії, 2026", de: "St. Mariä Himmelfahrt, 2026" } },
-        { path: "Germany/nrw/koln/koln-city/guerzenich_koln/001.jpg", title: { ru: "Гюрцених, 2026", ua: "Гюрценіх, 2026", de: "Gürzenich, 2026" } },
+        { path: "Germany/nrw/koln/koln-city/altstadt/guerzenich_koln/001.jpg", title: { ru: "Гюрцених, 2026", ua: "Гюрценіх, 2026", de: "Gürzenich, 2026" } },
         { path: "Germany/nrw/koln/koln-city/roemisch-germanisches-museum/001.jpg", title: { ru: "Римско-германский музей, 2025", ua: "Римсько-германський музей, 2025", de: "Römisch-Germanisches Museum, 2025" } },
         { path: "Germany/nrw/koln/koln-city/farina-duftmuseum/001.jpg", title: { ru: "Музей духов в доме Фарина, 2025", ua: "Музей парфумів у домі Фаріна, 2025", de: "Duftmuseum im Farina-Haus, 2025" } },
         { path: "Germany/nrw/koln/koln-city/museum-ludwig/001.jpg", title: { ru: "Музей Людвига, 2025", ua: "Музей Людвіга, 2025", de: "Museum Ludwig, 2025" } },
@@ -194,7 +196,9 @@ export const Fotos = {
         { path: "Germany/nrw/koln/koln-city/altstadt/romanische_kirchen/stMariaImKapitol/017.jpg", title: { ru: "Церковь Святой Марии в Капитолии - Крипта, 2026", ua: "Церква Святої Марії у Капітолії - Крипта, 2026", de: "Kirche St. Maria im Kapitol - Krypta, 2026" } },
       ],
       decksteiner_weiher_koln: [
-        { path: "Germany/nrw/koln/koln-city/decksteiner_weiher/001.jpg", title: { ru: "Декштайнер Вайер (фото взято с интернета)", ua: "Декштайнер Вайер (фото взято з Інтернету)", de: "Decksteiner Weiher (Foto aus dem Internet)" } },
+        { path: "Germany/nrw/koln/koln-city/decksteiner_weiher/001.jpg", title: { ru: "Декштайнер Вайер, 2026", ua: "Декштайнер Вайер, 2026", de: "Decksteiner Weiher, 2026" } },
+        { path: "Germany/nrw/koln/koln-city/decksteiner_weiher/002.jpg", title: { ru: "Декштайнер Вайер, 2026", ua: "Декштайнер Вайер, 2026", de: "Decksteiner Weiher, 2026" } },
+        { path: "Germany/nrw/koln/koln-city/decksteiner_weiher/003.jpg", title: { ru: "Декштайнер Вайер, 2026", ua: "Декштайнер Вайер, 2026", de: "Decksteiner Weiher, 2026" } },
       ],
       romanische_kirchen_altstadt_koln: [
         { path: "Germany/nrw/koln/koln-city/altstadt/romanische_kirchen/001.jpg", title: { ru: "Романские церкви Старого города Кёльна (фото взято с интернета)", ua: "Романські церкви Старого міста Кельна (фото взято з Інтернету)", de: "Romanische Kirchen der Altstadt von Köln (Foto aus dem Internet)" } },

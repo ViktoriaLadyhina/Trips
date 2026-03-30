@@ -393,7 +393,7 @@ const datas = [
         path: "guerzenich_koln",
         countryPath: "germany", regionsPath: "nrw", districtPath: "city", cityPath: "koln",
         showMore: true, hiddenFromList: true,
-        fotoCard: "Germany/nrw/koln/koln-city/guerzenich_koln/001.jpg",
+        fotoCard: "Germany/nrw/koln/koln-city/altstadt/guerzenich_koln/001.jpg",
         location: "Köln, Deutschland",
         officialSite: [
             { bold: "Offizielle Website", link: "https://koelncongress.de/locations/guerzenich-koeln/" }
@@ -444,7 +444,7 @@ const datas = [
             description: "Der Gürzenich in Köln wurde in den Jahren 1441–1452 als Gebäude für städtische Feierlichkeiten errichtet. Heute finden hier Konzerte, Bankette und offizielle Empfänge statt.",
             ogTitle: "Gürzenich, Köln – historisches Gebäude und Veranstaltungszentrum",
             ogDescription: "Entdecken Sie den Gürzenich in Köln – ein historisches Bauwerk aus dem 15. Jahrhundert, das nach dem Krieg wiederaufgebaut wurde und heute Konzerte, Karnevalssitzungen und festliche Empfänge beherbergt.",
-            ogImage: "https://our-travels.info/foto/Germany/nrw/koln/koln-city/guerzenich_koln/001.jpg"
+            ogImage: "https://our-travels.info/foto/Germany/nrw/koln/koln-city/altstadt/guerzenich_koln/001.jpg"
         }
     },
     {
@@ -3991,56 +3991,7 @@ const datas = [
             ogDescription: "Ein gemütliches Wasserreservoir in den Wäldern des Sauerlands: Wanderwege, Ruhe und schöne Natur. Baden ist aufgrund der Trinkwassernutzung verboten.",
             ogImage: "https://our-travels.info/foto/Germany/nrw/arnsberg/Märkischer-Kreis/altena/fuelbecketalsperre/001_2020.jpg"
         }
-    },
-
-    //iserlohn
-    // {
-    //     id: "dechenhohle_iserlohn",
-    //     name: "Dechenhöhle",
-    //     type: ["nature"], rating: "popular",
-    //     path: "dechenhohle_iserlohn",
-    //     countryPath: "germany", regionsPath: "nrw", districtPath: "arnsberg", cityPath: "iserlohn",
-    //     fotoCard: "Germany/nrw/arnsberg/Märkischer-Kreis/iserlohn/dechenhohle/001.jpg",
-    //     location: "Iserlohn, Deutschland",
-    //     officialSite: [{ bold: "Offizielle Webseite", link: "https://www.dechenhoehle.de/" }],
-    //     short_description: "Die Dechenhöhle ist eine der schönsten und meistbesuchten Tropfsteinhöhlen Deutschlands, gelegen im nördlichen Sauerland im Gebiet Iserlohn-Grüne (Nordrhein-Westfalen). Die Höhle beeindruckt durch ihre Vielzahl an Stalaktiten und Stalagmiten und bietet den Besuchern einen 400 m langen, speziell angelegten Rundgang durch beleuchtete Hallen mit einzigartigen Naturformationen.",
-    //     full_description: {
-    //         title: "Beschreibung und Geschichte",
-    //         items: [
-    //             { bold: "Die Dechenhöhle ", text: "liegt in den Karstkalken des Rheinischen Schiefergebirges und ist Teil eines großen unterirdischen Komplexes von über 20 km Länge. Im Inneren sind komplexe Formationen zu sehen – von der „Orgelhalle“ bis zur „Palmen-Säule“, ca. 3 m hoch. Die Höhle ist elektrisch beleuchtet, seit 2015 wird LED-Beleuchtung verwendet, um Farbe und Struktur der Tropfsteine besser zur Geltung zu bringen." },
-    //             { text: "Die Höhle ist nur im Rahmen einer Führung zugänglich: etwa 400 m ausgebauter Weg mit Erläuterungen des Guides. Die Temperatur im Inneren ist stabil bei ca. 10 °C, was den Besuch zu jeder Jahreszeit interessant macht." },
-    //             { text: "Seit ihrer Entdeckung wurde die Dechenhöhle schnell populär: bereits 1868 besuchten Tausende von Menschen die Höhle. Sie ist nach dem Geologen Heinrich von Dechen (1800–1889) benannt, der für seine Beiträge zur Geologie des Rheins und Westfalens anerkannt wurde." },
-    //             { text: "Bis 1983 gehörte die Höhle den Eisenbahnunternehmen aufgrund ihrer Entdeckung während des Gleisbaus; anschließend ging die Verwaltung an regionale Tourismus- und kommunale Organisationen über." }
-    //         ]
-    //     },
-    //     tickets_and_entry: {
-    //         title: "Praktische Informationen",
-    //         items: [
-    //             { bold: "Adresse: ", text: "Dechenhöhle 5, 58644 Iserlohn Grüne, Deutschland." },
-    //             { bold: "Anfahrt: ", text: "zu Fuß oder mit dem Bus von der Haltestelle Dechenhöhle; eigene Bahnstation Letmathe Dechenhöhle an den Regionalstrecken RE16 / RB91." },
-    //             { bold: "Führungen und Öffnungszeiten: ", text: "Führungen regelmäßig von März bis November, im Winter an Wochenenden und Feiertagen. Einzelne Sonderveranstaltungen auf Anfrage." },
-    //             { bold: "Eintrittspreise: ", text: "<br>Erwachsene ≈ 10 €, <br>Kinder 3–15 Jahre ≈ 6,50–6 €, <br>ermäßigte Preise für Gruppen." }
-    //         ]
-    //     },
-    //     interestingFacts: {
-    //         title: "Interessante Fakten",
-    //         items: [
-    //             { text: "Die Höhle liegt in der bekanntesten Höhlenregion Deutschlands – Grüner Tal." },
-    //             { text: "Die Dechenhöhle ist die einzige Höhle in Deutschland mit eigenem Bahnanschluss." },
-    //             { text: "Die Gesamtlänge der bekannten Gänge beträgt über 20 km, für Besucher sind etwa 400 m zugänglich." },
-    //             { text: "Regelmäßig finden thematische Führungen statt: „Höhlenlichter“, Konzerte, Weihnachtsführungen, Workshops." }
-    //         ]
-    //     },
-    //     construction_period: "Die Höhle wurde am 10. Juni 1868 während des Eisenbahnbaus entdeckt. Zwei Eisenbahnarbeiter, die einen Hammer verloren hatten, kletterten in einen engen Felsenriss, der zu einem Raum mit einzigartigen Tropfsteinformationen führte.",
-    //     coord: { lat: 51.36556, lng: 7.64472 },
-    //     meta: {
-    //         title: "Dechenhöhle, Iserlohn – Tropfsteinformationen, Führungen in Deutschland",
-    //         description: "Besuchen Sie die Dechenhöhle – eine der schönsten Tropfsteinhöhlen Deutschlands in Iserlohn. Erfahren Sie mehr über die Entdeckungsgeschichte, einzigartige Formationen, Museumsausstellungen und Führungen. Hervorragender Naturtourismus für die ganze Familie.",
-    //         ogTitle: "Dechenhöhle – unterirdisches Wunder im Sauerland",
-    //         ogDescription: "Entdecken Sie die mystische Dechenhöhle in Deutschland: Stalaktiten, Geschichten von eiszeitlichen Tieren, Museum und Höhlenführungen für alle Altersgruppen.",
-    //         ogImage: "https://our-travels.info/foto/Germany/nrw/arnsberg/Märkischer-Kreis/iserlohn/dechenhohle/001.jpg"
-    //     }
-    // }
+    }
 ];
 
 export default datas;

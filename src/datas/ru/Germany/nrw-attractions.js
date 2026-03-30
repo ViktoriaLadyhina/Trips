@@ -400,7 +400,7 @@ const datas = [
         path: "guerzenich_koln",
         countryPath: "germany", regionsPath: "nrw", districtPath: "city", cityPath: "koln",
         showMore: true, hiddenFromList: true,
-        fotoCard: "Germany/nrw/koln/koln-city/guerzenich_koln/001.jpg",
+        fotoCard: "Germany/nrw/koln/koln-city/altstadt/guerzenich_koln/001.jpg",
         location: "Кёльн, Германия",
         officialSite: [
             { bold: "Официальный сайт", link: "https://koelncongress.de/locations/guerzenich-koeln/" }
@@ -451,7 +451,7 @@ const datas = [
             description: "Гюрцених в Кёльне – построенное в 1441-1452 гг. здание для городских празднеств. Сегодня здесь проходят концерты, банкетные мероприятия и официальные приёмы.",
             ogTitle: "Гюрцених, Кёльн – историческое здание и центр мероприятий",
             ogDescription: "Откройте Гюрцених в Кёльне – историческое здание XV века, восстановленное после войны, где проходят концерты, карнавальные сессии и банкетные приёмы.",
-            ogImage: "https://our-travels.info/foto/Germany/nrw/koln/koln-city/guerzenich_koln/001.jpg"
+            ogImage: "https://our-travels.info/foto/Germany/nrw/koln/koln-city/altstadt/guerzenich_koln/001.jpg"
         }
     },
     {
