@@ -213,6 +213,9 @@ export const Fotos = {
         { path: "Germany/nrw/koln/koln-city/altstadt/old_towers/005.jpg", title: { ru: "Южный фрагмент стены (Ulrepforte) (фото взято с интернета)", ua: "Південний фрагмент стіни (Ulrepforte) (фото взято з Інтернету)", de: "Ulrepforte (Foto aus dem Internet)" } },
         { path: "Germany/nrw/koln/koln-city/altstadt/old_towers/006.jpg", title: { ru: "Башня на юге у Рейна (Bayenturm) (фото взято с интернета)", ua: "Башта на півдні біля Рейну (Bayenturm) (фото взято з Інтернету)", de: "Bayenturm (Foto aus dem Internet)" } },
       ],
+      fischmarkt_koln: [
+        { path: "Germany/nrw/koln/koln-city/altstadt/fischmarkt/001.jpg", title: { ru: "Фишмаркт (фото взято с интернета)", ua: "Фішмаркт (фото взято з Інтернету)", de: "Fischmarkt (Foto aus dem Internet)" } },
+      ]
     },
     bruhl: {
       gallery: [

@@ -1,4 +1,140 @@
 const datas = [
+    // koln
+    {
+        id: "fischmarkt_koln",
+        type: ["square"], rating: "top",
+        path: "fischmarkt_koln",
+        countryPath: "germany", regionsPath: "nrw", districtPath: "city", cityPath: "koln",
+        hiddenFromList: true, showMore: true,
+        fotoCard: "Germany/nrw/koln/koln-city/altstadt/fischmarkt/001.jpg",
+        coord: { lat: 50.93845, lng: 6.96260 },
+        translations: {
+            ru: {
+                name: "Фишмаркт",
+                location: "Кёльн, Германия",
+                short_description: "Фишмаркт – историческая площадь Старого города Кёльна с яркими разноцветными домами и атмосферой средневекового рынка. Популярное место для прогулок, фотосессий, кафе и ярмарок, рядом с Кёльнским собором.",
+                full_description: {
+                    title: "Описание и история",
+                    items: [
+                        { bold: "Фишмаркт (Fischmarkt)", text: "– это оживлённая площадь в Старом городе Кельна, известная своими яркими разноцветными домами, которые делают её одной из самых фотогеничных точек города. Здесь исторически располагались рыбные рынки, и до сих пор площадь сохраняет атмосферу средневекового торгового центра. Фишмаркт часто посещают туристы и местные жители, особенно в тёплое время года, когда на площади проходят ярмарки и фестивали." },
+                        { text: "Площадь окружена узкими улочками Старого города, где можно найти кафе, рестораны и сувенирные магазины. Благодаря живописной архитектуре и историческому окружению, Фишмаркт является популярным местом для фотосессий и прогулок." },
+                        { text: "Это место также удобно как точка старта для пешеходных экскурсий по Старому городу и к знаменитому Кёльнскому собору – всего в нескольких минутах ходьбы." },
+                        { bold: "История", text: "Фишмаркт возник в Средние века как центр торговли рыбой в Кёльне. С XVI века площадь играла важную роль в снабжении города свежими морепродуктами, привозимыми по реке Рейн. Архитектура домов вокруг площади отражает готические и ренессансные элементы, сохранившиеся до наших дней." },
+                        { text: "В XIX веке, с развитием торговли и городской инфраструктуры, Фишмаркт превратился в одно из оживлённых общественных пространств города. После Второй мировой войны площадь была восстановлена, и исторический облик зданий тщательно сохранён." },
+                        { text: "Сегодня Фишмаркт служит местом культурных мероприятий и рынков, продолжая традицию средневекового рыночного центра, но теперь с туристической и развлекательной функцией." }
+                    ]
+                },
+                tickets_and_entry: {
+                    title: "Практическая информация",
+                    items: [
+                        { bold: "Адрес:", text: "Fischmarkt, 50667 Köln, Германия " },
+                        { bold: "Доступность:", text: "пешеходная зона, легко доступна для туристов " },
+                        { bold: "Ближайшая станция метро:", text: "Heumarkt (U-Bahn)" },
+                        { bold: "Часы работы:", text: "открытая площадь, круглосуточно; рынки и ярмарки по расписанию" }
+                    ]
+                },
+                interestingFacts: {
+                    title: "Интересные факты",
+                    items: [
+                        { text: "Фишмаркт часто называют «самой фотогеничной площадью Кёльна» из-за ярких фасадов домов. " },
+                        { text: "Раньше здесь проводились настоящие рыбные аукционы. " },
+                        { text: "На площади регулярно проходят праздничные ярмарки, в том числе рождественская. " }
+                    ]
+                },
+                construction_period: "XIII–XIV век, Средние века",
+                meta: {
+                    title: "Фишмаркт Кельн – историческая площадь и фотогеничные дома",
+                    description: "Фишмаркт в Старом городе Кёльна – живописная площадь с разноцветными домами, историей средневекового рыбного рынка и популярное место для туристов.",
+                    ogTitle: "Фишмаркт Кельн – сердце Старого города",
+                    ogDescription: "Яркая площадь Старого города Кёльна с разноцветными домами, атмосферой средневекового рынка и фотогеничными видами для туристов.",
+                    ogImage: "https://our-travels.info/foto/Germany/nrw/koln/koln-city/altstadt/fischmarkt/001.jpg"
+                }
+            },
+            ua: {
+                name: "Фішмаркт",
+                location: "Кельн, Німеччина",
+                short_description: "Фішмаркт – історична площа Старого міста Кельна з яскравими різнокольоровими будинками та атмосферою середньовічного ринку. Популярне місце для прогулянок, фотосесій, кафе та ярмарків, поруч з Кельнським собором.",
+                full_description: {
+                    title: "Опис та історія",
+                    items: [
+                        { bold: "Фішмаркт (Fischmarkt)", text: "– це жвава площа в Старому місті Кельна, відома своїми яскравими різнокольоровими будинками, що роблять її однією з найбільш фотогенічних точок міста. Тут історично розташовувалися рибні ринки, і до сьогодні площа зберігає атмосферу середньовічного торгового центру. Фішмаркт часто відвідують туристи та місцеві жителі, особливо у теплу пору року, коли на площі проходять ярмарки та фестивалі." },
+                        { text: "Площа оточена вузькими вуличками Старого міста, де можна знайти кафе, ресторани та сувенірні магазини. Завдяки мальовничій архітектурі та історичному оточенню, Фішмаркт є популярним місцем для фотосесій та прогулянок." },
+                        { text: "Це місце також зручно як точка старту для пішохідних екскурсій по Старому місту та до знаменитого Кельнського собору – всього за кілька хвилин ходьби." },
+                        { bold: "Історія", text: "Фішмаркт виник у Середні віки як центр торгівлі рибою в Кельні. З XVI століття площа відігравала важливу роль у забезпеченні міста свіжими морепродуктами, які привозилися річкою Рейн. Архітектура будинків навколо площі відображає готичні та ренесансні елементи, що збереглися до наших днів." },
+                        { text: "У XIX столітті, з розвитком торгівлі та міської інфраструктури, Фішмаркт перетворився на одне з жвавих громадських просторів міста. Після Другої світової війни площа була відновлена, і історичний вигляд будівель ретельно збережено." },
+                        { text: "Сьогодні Фішмаркт слугує місцем культурних заходів та ринків, продовжуючи традицію середньовічного ринкового центру, але тепер з туристичною та розважальною функцією." }
+                    ]
+                },
+                tickets_and_entry: {
+                    title: "Практична інформація",
+                    items: [
+                        { bold: "Адреса:", text: "Fischmarkt, 50667 Köln, Німеччина" },
+                        { bold: "Доступність:", text: "пішохідна зона, легко доступна для туристів" },
+                        { bold: "Найближча станція метро:", text: "Heumarkt (U-Bahn)" },
+                        { bold: "Часи роботи:", text: "відкрита площа, цілодобово; ринки та ярмарки за розкладом" }
+                    ]
+                },
+                interestingFacts: {
+                    title: "Цікаві факти",
+                    items: [
+                        { text: "Фішмаркт часто називають «найфотогенічнішою площею Кельна» через яскраві фасади будинків." },
+                        { text: "Раніше тут проводилися справжні рибні аукціони." },
+                        { text: "На площі регулярно проходять святкові ярмарки, зокрема різдвяні." }
+                    ]
+                },
+                construction_period: "XIII–XIV століття, Середні віки",
+                meta: {
+                    title: "Фішмаркт Кельн – історична площа та фотогенічні будинки",
+                    description: "Фішмаркт у Старому місті Кельна – мальовнича площа з різнокольоровими будинками, історією середньовічного рибного ринку та популярне місце для туристів.",
+                    ogTitle: "Фішмаркт Кельн – серце Старого міста",
+                    ogDescription: "Яскрава площа Старого міста Кельна з різнокольоровими будинками, атмосферою середньовічного ринку та фотогенічними видами для туристів.",
+                    ogImage: "https://our-travels.info/foto/Germany/nrw/koln/koln-city/altstadt/fischmarkt/001.jpg"
+                }
+            },
+            de: {
+                name: "Fischmarkt",
+                location: "Köln, Deutschland",
+                short_description: "Der Fischmarkt ist ein historischer Platz in der Altstadt von Köln mit bunten Häusern und der Atmosphäre eines mittelalterlichen Marktes. Ein beliebter Ort für Spaziergänge, Fotos, Cafés und Märkte, in der Nähe des Kölner Doms.",
+                full_description: {
+                    title: "Beschreibung und Geschichte",
+                    items: [
+                        { bold: "Fischmarkt (Fischmarkt)", text: "– ist ein lebhafter Platz in der Altstadt von Köln, bekannt für seine bunten Häuser, die ihn zu einem der fotogensten Punkte der Stadt machen. Hier befanden sich historisch Fischmärkte, und bis heute bewahrt der Platz die Atmosphäre eines mittelalterlichen Handelszentrums. Der Fischmarkt wird häufig von Touristen und Einheimischen besucht, besonders in der warmen Jahreszeit, wenn auf dem Platz Märkte und Festivals stattfinden." },
+                        { text: "Der Platz ist von engen Gassen der Altstadt umgeben, in denen man Cafés, Restaurants und Souvenirläden finden kann. Dank der malerischen Architektur und der historischen Umgebung ist der Fischmarkt ein beliebter Ort für Fotos und Spaziergänge." },
+                        { text: "Dieser Ort eignet sich auch als Startpunkt für Spaziergänge durch die Altstadt und zum berühmten Kölner Dom – nur wenige Gehminuten entfernt." },
+                        { bold: "Geschichte", text: "Der Fischmarkt entstand im Mittelalter als Zentrum des Fischhandels in Köln. Ab dem 16. Jahrhundert spielte der Platz eine wichtige Rolle bei der Versorgung der Stadt mit frischen Meeresfrüchten, die über den Rhein geliefert wurden. Die Architektur der Häuser rund um den Platz zeigt gotische und Renaissance-Elemente, die bis heute erhalten geblieben sind." },
+                        { text: "Im 19. Jahrhundert, mit der Entwicklung von Handel und städtischer Infrastruktur, wurde der Fischmarkt zu einem der belebten öffentlichen Räume der Stadt. Nach dem Zweiten Weltkrieg wurde der Platz wiederhergestellt und das historische Erscheinungsbild der Gebäude sorgfältig bewahrt." },
+                        { text: "Heute dient der Fischmarkt als Ort für kulturelle Veranstaltungen und Märkte und setzt die Tradition des mittelalterlichen Marktzentrums fort, nun jedoch mit touristischer und unterhaltender Funktion." }
+                    ]
+                },
+                tickets_and_entry: {
+                    title: "Praktische Informationen",
+                    items: [
+                        { bold: "Adresse:", text: "Fischmarkt, 50667 Köln, Deutschland" },
+                        { bold: "Zugang:", text: "Fußgängerzone, leicht für Touristen zugänglich" },
+                        { bold: "Nächste U-Bahn-Station:", text: "Heumarkt (U-Bahn)" },
+                        { bold: "Öffnungszeiten:", text: "offener Platz, rund um die Uhr; Märkte und Festivals nach Plan" }
+                    ]
+                },
+                interestingFacts: {
+                    title: "Interessante Fakten",
+                    items: [
+                        { text: "Der Fischmarkt wird oft als der fotogenste Platz von Köln bezeichnet wegen seiner bunten Hausfassaden." },
+                        { text: "Früher wurden hier echte Fischauktionen abgehalten." },
+                        { text: "Auf dem Platz finden regelmäßig Festmärkte statt, einschließlich Weihnachtsmärkte." }
+                    ]
+                },
+                construction_period: "13.–14. Jahrhundert, Mittelalter",
+                meta: {
+                    title: "Fischmarkt Köln – historischer Platz und fotogene Häuser",
+                    description: "Der Fischmarkt in der Altstadt von Köln – ein malerischer Platz mit bunten Häusern, Geschichte des mittelalterlichen Fischmarktes und ein beliebter Ort für Touristen.",
+                    ogTitle: "Fischmarkt Köln – das Herz der Altstadt",
+                    ogDescription: "Ein lebhafter Platz in der Altstadt von Köln mit bunten Häusern, mittelalterlichem Marktflair und fotogenen Aussichten für Touristen.",
+                    ogImage: "https://our-travels.info/foto/Germany/nrw/koln/koln-city/altstadt/fischmarkt/001.jpg"
+                }
+            }
+        }
+    },
+
     //altena
     {
         id: "lutherkirche_altena",

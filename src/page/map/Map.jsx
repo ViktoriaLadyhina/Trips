@@ -107,6 +107,7 @@ const t = {
     decksteiner_weiher_koln: { ru: 'Декштайнер Вайер', de: 'Decksteiner Weiher', ua: 'Декштайнер Вайер' },
     romanische_kirchen_altstadt_koln: { ru: 'Романские церкви Старого города Кёльна', de: 'Romanische Kirchen der Altstadt von Köln', ua: 'Романські церкви Старого міста Кельна' },
     old_towers_koln: { ru: 'Старые башни и укрепления Старого Кёльна', de: 'Alte Türme und Befestigungen der Altstadt Kölns', ua: 'Старі башти та укріплення Старого Кельна' },
+    fischmarkt: { ru: 'Фишмаркт', de: 'Fischmarkt', ua: 'Фішмаркт' },
 
     // Köln okrug
     // Aachen Kreis
@@ -282,10 +283,10 @@ const Map = () => {
                         {/* Lüdenscheid */}
                         <ul>
                           <li><Link to="/germany/nrw/arnsberg/iserlohn">{t.cities.iserlohn[lang]}</Link>
-                          <ul>
-                            <li><Link to="/germany/nrw/arnsberg/iserlohn/attractions/dechenhohle_iserlohn">{t.attractions.dechenhohle[lang]}</Link></li>
+                            <ul>
+                              <li><Link to="/germany/nrw/arnsberg/iserlohn/attractions/dechenhohle_iserlohn">{t.attractions.dechenhohle[lang]}</Link></li>
                             </ul>
-                            </li>
+                          </li>
                           <li><Link to="/germany/nrw/arnsberg/luedenscheid">{t.cities.luedenscheid[lang]}</Link>
                             <ul>
                               <li><Link to="/germany/nrw/arnsberg/luedenscheid/attractions/altstadt_luedenscheid">{t.attractions.altstadt_luedenscheid[lang]}</Link>
@@ -332,6 +333,7 @@ const Map = () => {
                           <li><Link to="/germany/nrw/city/koln/attractions/altstadt_koln">{t.attractions.altstadt_koln[lang]}</Link>
                             <ul>
                               <li><Link to="/germany/nrw/city/koln/attractions/cologne-cathedral">{t.attractions.cologneCathedral[lang]}</Link></li>
+                              <li><Link to="/germany/nrw/city/koln/attractions/fischmarkt_koln">{t.attractions.fischmarkt[lang]}</Link></li>
                               <li><Link to="/germany/nrw/city/koln/attractions/rathaus">{t.attractions.cologneRathaus[lang]}</Link></li>
                               <li><Link to="/germany/nrw/city/koln/attractions/romanische_kirchen_altstadt_koln">{t.attractions.romanische_kirchen_altstadt_koln[lang]}:</Link>
                                 <ul>

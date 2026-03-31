@@ -9,11 +9,12 @@ const datas = [
         countryPath: "germany", regionsPath: "nrw", districtPath: "city", cityPath: "koln",
         fotoCard: "Germany/nrw/koln/koln-city/altstadt/005.jpg",
         location: "Köln, Deutschland",
-        subObjects: ["cologne_cathedral", "rathaus_koln", "guerzenich_koln", "miqua", "wallraf_richartz_museum", "roemisch_germanisches_museum", "farina_duftmuseum", "museum_ludwig", "stadtmuseum_koln", "dufthaus_4711_koln", "st_maria_himmelfahrt_koln", "romanische_kirchen_altstadt_koln", "old_towers_koln"],
+        subObjects: ["cologne_cathedral", "rathaus_koln", "guerzenich_koln", "miqua", "wallraf_richartz_museum", "roemisch_germanisches_museum", "farina_duftmuseum", "museum_ludwig", "stadtmuseum_koln", "dufthaus_4711_koln", "st_maria_himmelfahrt_koln", "romanische_kirchen_altstadt_koln", "old_towers_koln", "fischmarkt_koln"],
         short_description_subObjects: {
             text: "In der Altstadt von Köln befinden sich folgende Sehenswürdigkeiten:",
             items: [
                 { bold: "🌍Kölner Dom", text: "– majestätische gotische Kathedrale, das Herz der Altstadt, am Platz vor dem Hauptbahnhof." },
+                { bold: "Fischmarkt", text: "– lebhafter historischer Platz in der Altstadt von Köln mit bunten Häusern und der Atmosphäre eines mittelalterlichen Fischmarktes." },
                 {
                     bold: "Romanische Kirchen der Altstadt von Köln:",
                     text: `<ul>

@@ -9,11 +9,12 @@ const datas = [
         countryPath: "germany", regionsPath: "nrw", districtPath: "city", cityPath: "koln",
         fotoCard: "Germany/nrw/koln/koln-city/altstadt/005.jpg",
         location: "Кёльн, Германия",
-        subObjects: ["cologne_cathedral", "rathaus_koln", "guerzenich_koln", "miqua", "wallraf_richartz_museum", "roemisch_germanisches_museum", "farina_duftmuseum", "museum_ludwig", "stadtmuseum_koln", "dufthaus_4711_koln", "st_maria_himmelfahrt_koln", "romanische_kirchen_altstadt_koln", "old_towers_koln"],
+        subObjects: ["cologne_cathedral", "rathaus_koln", "guerzenich_koln", "miqua", "wallraf_richartz_museum", "roemisch_germanisches_museum", "farina_duftmuseum", "museum_ludwig", "stadtmuseum_koln", "dufthaus_4711_koln", "st_maria_himmelfahrt_koln", "romanische_kirchen_altstadt_koln", "old_towers_koln", "fischmarkt_koln"],
         short_description_subObjects: {
             text: "В старом городе Кельна расположены такие достопримечательности:",
             items: [
                 { bold: "🌍Кёльнский собор", text: "– величественный готический собор, сердце Старого города, на площади у главного вокзала." },
+                { bold: "Фишмаркт", text: "– яркая историческая площадь Старого города Кёльна с разноцветными домами и атмосферой средневекового рыбного рынка." },
                 {
                     bold: "Романские церкви Старого города Кёльна:",
                     text: `<ul>
