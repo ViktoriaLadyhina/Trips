@@ -158,9 +158,95 @@
     }
 }
 
+.country__routes {
+  margin: 2rem 0;
+
+  &-title {
+    @include h3();
+    margin-bottom: 20px;
+  }
+
+  &-table {
+    width: 100%;
+    border-collapse: collapse;
+    background: var(--color-cart-bg);
+  }
+
+  th {
+    @include small-text();
+    font-weight: 600;
+    padding: 10px 12px;
+    border-bottom: 2px solid var(--color-primary);
+    text-align: center;
+  }
+
+  td {
+    @include small-text();
+    padding: 10px 12px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.08);
+    vertical-align: top;
+    text-align: left;
+  }
+
+  tr:hover {
+    background: rgba(0, 0, 0, 0.03);
+  }
+
+  a {
+    color: var(--color-primary);
+    text-decoration: none;
+    font-weight: 600;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+
+  &-name {
+    min-width: 220px;
+    text-align: left;
+  }
+}
+
+/* ===== карточки ===== */
+
+.country__routes-cards {
+  display: none;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.country__routes-card {
+  background: var(--color-cart-bg);
+  border: 1px solid #ddd;
+  padding: 12px;
+  border-radius: 8px;
+}
+
+.country__routes-row {
+  margin-bottom: 6px;
+  @include small-text();
+}
+
+.country__routes-card a {
+  color: var(--color-primary);
+  text-decoration: none;
+}
+
+/* ===== адаптив ===== */
 
 @media (max-width: 768px) {
 
+  .country__routes-table {
+    display: none;
+  }
+
+  .country__routes-cards {
+    display: flex;
+  }
+}
+
+@media (max-width: 768px) {
     .country__photo,
     .country__photo--right,
     .country__history-img {

@@ -1,0 +1,75 @@
+@use '../../styles//variables' as *;
+
+.route {
+
+    &__title {
+        @include h3();
+        margin: 40px;
+    }
+
+    &__desc {
+        overflow: hidden;
+
+        &-foto {
+            float: right;
+            max-width: 350px;
+            margin: 0 15px 15px 15px;
+            border-radius: 8px;
+
+            img {
+                width: 100%;
+                height: auto;
+                border-radius: 8px;
+                box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            }
+        }
+
+        &-plan {
+            max-width: 800px;
+            padding-bottom: 20px;
+            border-radius: 8px;
+            margin: 0 auto;
+
+            img {
+                width: 100%;
+                height: auto;
+                border-radius: 8px;
+                box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            }
+        }
+
+        &-full_description,
+        &-features,
+        &-recommendations,
+        &-practicalInfo,
+        &-interestingFacts {
+            padding: 10px;
+            flex: 1;
+            text-align: justify;
+
+            &-title {
+                @include h3();
+                padding: 10px;
+                text-align: center;
+            }
+
+            &-bold {
+                @include bold-text;
+                display: inline;
+                text-align: justify;
+            }
+
+            &-text {
+                @include body-text;
+                text-align: justify;
+                display: inline;
+            }
+
+            &-item {
+                @include body-text;
+            }
+
+        }
+    }
+
+}

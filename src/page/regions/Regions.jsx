@@ -9,14 +9,14 @@ import { useMeta } from '../../hooks/useMeta';
 import './Regions.scss'
 import { useEffect, useState } from 'react';
 import CountryMap from '../../components/maps/CountryMap';
-import useCityFullData from '../../hooks/useCityFullData';
+import useCityFullDataV2 from '../../hooks/useCityFullDataV2';
 import BtnAttr from "../../components/btn-attr/BtnAttr";
 
 const BASE_PHOTO_URL = import.meta.env.VITE_BASE_PHOTO_URL;
 
 const Regions = () => {
     const { countryPath, regionPath } = useParams();
-    const { lang, country, region, error } = useCityFullData();
+    const { lang, country, region, error } = useCityFullDataV2();
     const [sidebarOpen, setSidebarOpen] = useState(false);
 
     useMeta(region?.meta || {});

@@ -5,45 +5,61 @@ const safeText = (value) => (typeof value === "string" ? value : "");
 const InfoBlock = ({ data = [], className }) => {
   if (!data) return null;
 
+  // 🔹 если передана строка, просто выводим текст
   if (typeof data === "string") {
     return (
-      <div 
+      <div
         className={className}
         dangerouslySetInnerHTML={{ __html: safeText(data) }}
       />
     );
   }
 
-  // 🔹 Обработка блоков с title и items (например, symbols, facts)
+  // 🔹 блоки с title и items (symbols, facts, features и т.д.)
   if (data.title && data.items) {
+    const isList = data.isList; // 🔹 ты сама решаешь, будет список или нет
+
     return (
       <div className={className}>
         {data.title && <h2 className={`${className}-title`}>{data.title}</h2>}
-        {data.items.map((item, index) => (
-          <div key={`${className}-${index}`} className={`${className}-item`}>
-            {item.img && (
-              <img
-                src={`${BASE_PHOTO_URL}${safeText(item.img)}`}
-                alt={safeText(item.bold) || "image"}
-                className={`${className}-img`}
-              />
-            )}
-            <div className="content">
-              {/* поддержка HTML внутри текста */}
-              <p
-                className={`${className}-text`}
-                dangerouslySetInnerHTML={{
-                  __html: `${item.bold ? `<span class="${className}-bold">${safeText(item.bold)}</span> ` : ""}${safeText(item.text)}`
-                }}
-              />
+
+        {isList ? (
+          <ul className={`${className}`}>
+            {data.items.map((item, index) => (
+              <li key={`${className}-li-${index}`} className={`${className}-item`}>
+                {item.bold && (
+                  <span className={`${className}-bold`}>{safeText(item.bold)} </span>
+                )}
+                {safeText(item.text)}
+              </li>
+            ))}
+          </ul>
+        ) : (
+          data.items.map((item, index) => (
+            <div key={`${className}-${index}`} className={`${className}-item`}>
+              {item.img && (
+                <img
+                  src={`${BASE_PHOTO_URL}${safeText(item.img)}`}
+                  alt={safeText(item.bold) || "image"}
+                  className={`${className}-img`}
+                />
+              )}
+              <div className="content">
+                <p
+                  className={`${className}-text`}
+                  dangerouslySetInnerHTML={{
+                    __html: `${item.bold ? `<span class="${className}-bold">${safeText(item.bold)}</span> ` : ""}${safeText(item.text)}`,
+                  }}
+                />
+              </div>
             </div>
-          </div>
-        ))}
+          ))
+        )}
       </div>
     );
   }
 
-  // Обработка обычных массивов [{bold, text}, {link, ...}]
+  // 🔹 обычный массив [{bold, text}, {link, ...}]
   const mergedData = [];
   for (let i = 0; i < data.length; i++) {
     if (
@@ -72,7 +88,7 @@ const InfoBlock = ({ data = [], className }) => {
       {mergedData.map((item, index) => {
         const baseKey = `${className}-${index}-${item.text?.slice(0, 10)}`;
 
-        // 🔹 Отображение ссылки
+        // 🔹 если есть ссылка
         if (item.link) {
           return (
             <a
@@ -88,7 +104,7 @@ const InfoBlock = ({ data = [], className }) => {
           );
         }
 
-        // 🔹 Обычный текст
+        // 🔹 обычный текст
         return (
           <div
             key={baseKey}

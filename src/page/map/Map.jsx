@@ -181,6 +181,10 @@ const t = {
     winterleuchten_dortmund_city: { ru: "проходит в Дортмунде, в Вестфаленпарке", ua: "відбувається в Дортмунді, у Вестфаленпарку", de: "Findet in Dortmund, im Westfalenpark statt" },
     christmas_market_dortmund: { ru: "Рождественская ярмарка и главная рождественская ёлка Дортмунда", ua: "Різдвяний ярмарок і головна різдвяна ялинка Дортмунда", de: "Weihnachtsmarkt und der große Weihnachtsbaum in Dortmund" },
   },
+  routes: {
+    mullerthal_trail: { ru: "Мюллертальская тропа", ua: "Мюллертальська стежка", de: "Mullerthal Trail" },
+  }
+
 };
 
 const Map = () => {
@@ -455,7 +459,15 @@ const Map = () => {
           </li>
 
           {/* Люксембург */}<br></br><br></br>
-          <li><Link to="/luxembourg">{t.countries.luxembourg[lang]}</Link></li>
+          <li><Link to="/luxembourg">{t.countries.luxembourg[lang]}</Link>
+            <ul>
+              <li>{lang === 'ru' ? 'Маршруты' : lang === 'de' ? 'Routen' : 'Маршрути'}
+                <ul>
+                  <li><Link to="/luxembourg/routes/mullerthal_trail">{t.routes.mullerthal_trail[lang]}</Link></li>
+                </ul>
+              </li>
+            </ul>
+          </li>
 
           {/* Украина */}<br></br><br></br>
           <li><Link to="/ukraine">{t.countries.ukraine[lang]}</Link>
