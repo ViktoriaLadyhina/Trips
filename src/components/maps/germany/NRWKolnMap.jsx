@@ -2,6 +2,7 @@ import React, { useState, useMemo } from "react";
 import { useNavigate, useLocation } from "react-router-dom";
 import { districtsKoln as districts } from "./maps/nrwDistricts";
 import "./NRWKolnMap.scss";
+import { useSelector } from "react-redux";
 
 const slugify = (str = "") =>
   str.toString().toLowerCase().trim().replace(/\s+/g, "-").replace(/[^\w\-]/g, "");
@@ -26,6 +27,7 @@ const NRWKolnMap = ({ regions, subRegion }) => {
   const location = useLocation();
   const [hoverRegion, setHoverRegion] = useState(null);
   const [tooltipPos, setTooltipPos] = useState([0, 0]);
+const { lang } = useSelector((state) => state.language);
 
   const districtPagePath = "/germany/nrw/koln";
 
@@ -70,7 +72,7 @@ const NRWKolnMap = ({ regions, subRegion }) => {
                 d={loc.path}
                 className="interactive"
                 onClick={() => scrollToSubRegion(reg)}
-                onMouseEnter={(e) => { setHoverRegion(reg.fullName); setTooltipPos([e.clientX, e.clientY]); }}
+                onMouseEnter={(e) => { setHoverRegion(reg.translations[lang].name); setTooltipPos([e.clientX, e.clientY]); }}
                 onMouseMove={(e) => setTooltipPos([e.clientX, e.clientY])}
                 onMouseLeave={() => setHoverRegion(null)}
               />
@@ -112,8 +114,8 @@ const NRWKolnMap = ({ regions, subRegion }) => {
                 fill="#000"
                 pointerEvents="none"
               >
-                {reg.path.includes("-")
-                  ? reg.name.split("-").map((part, i) => (
+                {reg.translations[lang].name.includes("-") || reg.translations[lang].name.includes(" ")
+                  ? reg.translations[lang].name.split("-").map((part, i) => (
                     <tspan
                       key={i}
                       x={center.x + (center.dx || 0)}
@@ -124,7 +126,7 @@ const NRWKolnMap = ({ regions, subRegion }) => {
                   ))
                   : (
                     <tspan x={center.x + (center.dx || 0)} dy="0">
-                      {reg.name}
+                      {reg.translations[lang].name}
                     </tspan>
                   )}
               </text>

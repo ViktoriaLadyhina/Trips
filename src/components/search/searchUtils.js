@@ -15,18 +15,19 @@ export const normalize = str => str
   .trim();
 
 // -------------------------
-// сбор текста для поиска
+// универсальная сборка текста для поиска
 // -------------------------
 function getSearchText(item, lang = "ru") {
   let text = "";
 
   if (item.name) text += item.name + " ";
+  if (item.title) text += item.title + " ";
   if (item.meta?.description) text += item.meta.description + " ";
 
-  if (item.translations?.[lang]) {
-    const t = item.translations[lang];
+  const t = item.translations?.[lang];
+  if (t) {
     if (t.name) text += t.name + " ";
-    if (item.title) text += item.title + " ";
+    if (t.title) text += t.title + " ";
     if (t.meta?.description) text += t.meta.description + " ";
   }
 
@@ -37,68 +38,82 @@ function getSearchText(item, lang = "ru") {
 // строим индекс поиска
 // -------------------------
 export function buildStaticSearchIndex(lang) {
-  // исходный индекс для регионов и аттракций
-  const idx = JSON.parse(JSON.stringify(searchIndex[lang]));
+  // полная копия searchIndex
+  const idx = JSON.parse(JSON.stringify(searchIndex));
 
-  // отдельный индекс для стран – новый формат
-  const countriesIdx = JSON.parse(JSON.stringify(searchIndex.country));
-  Object.values(countriesIdx).forEach(country => {
-    const t = country.translations?.[lang];
-    country.searchText = getSearchText({
-      name: t?.country || country.id,
-      meta: { description: t?.desc || "" }
-    });
+  // -------------------------
+  // страны и land (новый формат)
+  // -------------------------
+  Object.values(idx.country || {}).forEach(country => {
+    country.searchText = getSearchText(country, lang);
   });
-  idx.country = countriesIdx;
 
-  // -------------------------
-  // создаём searchText для регионов, городов, округов, субрегионов, аттракций и событий
-  // -------------------------
-  for (const countryKey in idx) {
-    if (countryKey === "country") continue;
-
-    const countryRegions = idx[countryKey];
-
-    // создаём searchText для land (если есть)
-    countryRegions.land?.forEach(item => {
-      item.searchText = getSearchText(item, lang);
+  // land для каждой страны
+Object.keys(searchIndex).forEach(countryKey => {
+  const lands = searchIndex[countryKey]?.land;
+  if (lands) {
+    lands.forEach(land => {
+      land.searchText = getSearchText(land, lang);
     });
+  }
 
+  // -------------------------
+  // города, округа, субрегионы, аттракции и события
+  // -------------------------
+  for (const countryKey in idx[lang]) {
+    const countryRegions = idx[lang][countryKey];
+
+    // остальные регионы
     for (const regionKey in countryRegions) {
-      if (regionKey === "land") continue; // пропускаем массив land
+      if (regionKey === "land") continue;
 
       const region = countryRegions[regionKey];
-
-      // создаём searchText для самого региона, города, округа, субрегионы
       region.searchText = getSearchText(region, lang);
-      region.city?.forEach(item => { item.searchText = getSearchText(item, lang)});
-      region.districts?.forEach(item => { item.searchText = getSearchText(item, lang)});
-      region.subRegions?.forEach(item => {item.searchText = getSearchText(item, lang)});
 
-      // старые аттракции
-      region.attractions?.forEach(item => {item.searchText = getSearchText(item, lang)});
+      // города
+      (region.city || []).forEach(city => {
+        city.searchText = getSearchText(city, lang);
+      });
 
-      // новые аттракции для germany/nrw из общего объекта (новый формат)
+      // округа
+      (region.districts || []).forEach(d => {
+        d.searchText = getSearchText(d, lang);
+      });
+
+      // субрегионы
+      (region.subRegions || []).forEach(s => {
+        s.searchText = getSearchText(s, lang);
+      });
+
+      // -------------------------
+      // аттракции - объединяем старые и новые (для germany/nrw)
+      // -------------------------
+      const oldAttractions = region.attractions || [];
+      oldAttractions.forEach(a => { a.searchText = getSearchText(a, lang); });
+
+      let newAttractions = [];
       if (countryKey === "germany" && regionKey === "nrw") {
-        // берём новые аттракции вне языковой папки
-        const newAttr = JSON.parse(JSON.stringify(searchIndex.germany.nrw.attractions || []));
+        const rawNew = searchIndex.germany.nrw.attractions || [];
+        const existingPaths = new Set(oldAttractions.map(a => a.path));
 
-        // создаём searchText для новых аттракций
-        const prepared = newAttr.map(item => ({
-          ...item,
-          searchText: getSearchText(item, lang)
-        }));
-
-        region.attractions = [...(region.attractions || []), ...prepared];
+        newAttractions = rawNew
+          .filter(a => !existingPaths.has(a.path))
+          .map(a => ({ ...a, searchText: getSearchText(a, lang) }));
       }
 
+      region.attractions = [...oldAttractions, ...newAttractions];
+
       // события
-      region.events?.forEach(item => {item.searchText = getSearchText(item, lang)});
+      (region.events || []).forEach(e => {
+        e.searchText = getSearchText(e, lang);
+      });
     }
   }
+});
 
   return idx;
 }
+
 
 // -------------------------
 // поиск по индексу
@@ -125,16 +140,15 @@ export function searchStatic(query, lang, index) {
   // -------------------------
   // поиск по регионам и всем объектам внутри
   // -------------------------
-  for (const countryKey in index) {
-    if (countryKey === "country") continue;
-
-    const countryRegions = index[countryKey];
+for (const countryKey in searchIndex[lang]) {
+  const countryRegions = searchIndex[lang][countryKey];
+  if (!countryRegions) continue; 
 
     // проверка land (старый формат)
     countryRegions.land?.forEach(land => {
       if (land.searchText?.includes(lowerQuery)) {
         results.push({
-          title: land.name || land.title || "Land",
+          title: land.translations?.[lang]?.name || land.name || land.title || "Land",
           type: "region",
           url: `/${countryKey}/${land.path || land.id}`
         });
@@ -179,8 +193,8 @@ export function searchStatic(query, lang, index) {
             url: `/${countryKey}/${regionKey}/${district.path}`
           });
         }
-      });      
-      
+      });
+
 
       // субрегионы
       (region.subRegions || []).forEach(sub => {
@@ -216,6 +230,7 @@ export function searchStatic(query, lang, index) {
       });
     }
   }
+console.log("Search results:", results);
 
   return results;
 }

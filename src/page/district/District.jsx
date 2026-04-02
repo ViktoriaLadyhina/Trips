@@ -6,9 +6,12 @@ import InfoBlock from '../../components/InfoBlock/InfoBlock.jsx'
 import { useMeta } from '../../hooks/useMeta.js';
 
 import './District.scss'
-import useCityFullData from '../../hooks/useCityFullData.js';
 import CountryMap from '../../components/maps/CountryMap.jsx';
 import BtnAttr from "../../components/btn-attr/BtnAttr.jsx";
+import { useSelector } from "react-redux";
+import useDistricts from "../../hooks/useDistricts.js";
+import useSabRegions from "../../hooks/useSabRegions.js";
+import useLand from "../../hooks/useLand.js";
 
 const BASE_PHOTO_URL = import.meta.env.VITE_BASE_PHOTO_URL;
 
@@ -22,11 +25,14 @@ const slugify = (str = "") =>
 
 const District = () => {
   const { countryPath, regionPath, districtPath } = useParams();
-  const { lang, country, region, district, subRegion, error } = useCityFullData();
+  const { lang } = useSelector((state) => state.language);
+  const { region } = useLand(countryPath, regionPath);
+  const { district, error } = useDistricts(countryPath, regionPath, districtPath);
+  const { subRegion } = useSabRegions(countryPath, regionPath, districtPath);
   const location = useLocation();
 
   useMeta(district?.meta || {});
-
+  
   useEffect(() => {
     const params = new URLSearchParams(location.search);
     const scrollTo = params.get("scrollTo");
@@ -40,6 +46,7 @@ const District = () => {
     }
   }, [location.search]);
 
+  // Обновляем title при загрузке данных
   useEffect(() => {
     if (district?.name) {
       document.title = district.name;
@@ -51,8 +58,8 @@ const District = () => {
 
   const crumbs = [
     { label: lang === "ru" ? "Главная" : lang === "de" ? "Startseite" : "Головна", path: "/" },
-    { label: region.country, path: `/${country.path}` },
-    { label: region.name, path: `/${country.path}/${region.path}` },
+    { label: district.countryName, path: `/${countryPath}` },
+    { label: district.regionName, path: `/${countryPath}/${regionPath}` },
     { label: district.name || district.title }
   ];
 
@@ -67,9 +74,9 @@ const District = () => {
 
         <div className='district__map'>
           <CountryMap
-            countryKey={country?.path}
-            regionKey={region?.path}
-            districtKey={district?.path}
+            countryKey={countryPath}
+            regionKey={regionPath}
+            districtKey={districtPath}
             regions={region}
             subRegion={subRegion}
           />
@@ -95,9 +102,9 @@ const District = () => {
                 <Region
                   key={sub.id}
                   data={sub}
-                  countryPath={country?.path}
-                  regionsPath={region?.path}
-                  districtPath={district?.path}
+                  countryPath={countryPath}
+                  regionsPath={regionPath}
+                  districtPath={districtPath}
                   id={`subregion-${slugify(sub.path)}`}
                 />
               ))}

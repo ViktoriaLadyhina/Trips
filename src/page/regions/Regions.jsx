@@ -1,24 +1,23 @@
-
 import { photosByCountry } from "../../datas/fotos";
-
 import { Link, useParams } from 'react-router';
-
 import InfoBlock from '../../components/InfoBlock/InfoBlock';
 import BreadCrumbs from '../../components/breadCrumbs/BreadCrumbs';
 import { useMeta } from '../../hooks/useMeta';
 import './Regions.scss'
 import { useEffect, useState } from 'react';
 import CountryMap from '../../components/maps/CountryMap';
-import useCityFullDataV2 from '../../hooks/useCityFullDataV2';
 import BtnAttr from "../../components/btn-attr/BtnAttr";
+import useLand from "../../hooks/useLand";
+import { useSelector } from "react-redux";
 
 const BASE_PHOTO_URL = import.meta.env.VITE_BASE_PHOTO_URL;
 
 const Regions = () => {
     const { countryPath, regionPath } = useParams();
-    const { lang, country, region, error } = useCityFullDataV2();
+    const { region, error } = useLand(countryPath, regionPath);
     const [sidebarOpen, setSidebarOpen] = useState(false);
-
+    const { lang } = useSelector((state) => state.language);
+    
     useMeta(region?.meta || {});
     
     useEffect(() => {
@@ -29,14 +28,13 @@ const Regions = () => {
 
     const photos = photosByCountry[countryPath];
 
-    if (error) return <p>{error}</p>;
-    if (!country) return <p>Loading...</p>;
-    if (!region) return <div>Загрузка региона...</div>;
+if (error) return <p>{error}</p>;
+if (!region) return <div>Загрузка региона...</div>;
 
     const crumbs = [
         { label: lang === 'ru' ? 'Главная' : lang === 'de' ? 'Startseite' : 'Головна', path: '/' },
-        { label: region?.country, path: `/${country.path}` },
-        { label: region?.name }
+        { label: region.countryName, path: `/${countryPath}` },
+        { label: region.name }
     ];
 
 
@@ -105,7 +103,7 @@ const Regions = () => {
 
                 <div className='regions__map'>
                     <CountryMap
-                        countryKey={country?.path}
+                        countryKey={countryPath}
                         regions={region}
                         regionKey={region?.path}
                     />
