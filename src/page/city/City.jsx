@@ -5,15 +5,19 @@ import BreadCrumbs from '../../components/breadCrumbs/BreadCrumbs.jsx';
 import InfoBlock from '../../components/InfoBlock/InfoBlock.jsx';
 import { useMeta } from '../../hooks/useMeta.js';
 import './City.scss'
-import useCityFullData from '../../hooks/useCityFullData.js';
 import BtnAttr from '../../components/btn-attr/BtnAttr.jsx';
 import { useEffect } from 'react';
+import useCity from '../../hooks/useCity.js';
+import { useSelector } from 'react-redux';
+import useEvents from '../../hooks/useEvents.js';
 
 const BASE_PHOTO_URL = import.meta.env.VITE_BASE_PHOTO_URL;
 
 const City = () => {
     const { countryPath, regionPath, districtPath, cityPath } = useParams();
-    const { region, district, parentSubRegion, city, lang, events, error } = useCityFullData();
+    const { lang } = useSelector((state) => state.language);
+    const { city, error } = useCity(countryPath, regionPath, districtPath, cityPath);
+     const { events } = useEvents(countryPath, regionPath, districtPath, cityPath);
 
     useMeta(city?.meta);
 
@@ -33,10 +37,10 @@ const City = () => {
     // Хлебные крошки
     const crumbs = [
         { label: lang === "ru" ? "Главная" : lang === "de" ? "Startseite" : "Головна", path: "/" },
-        { label: region.country, path: `/${countryPath}` },
-        { label: region.name, path: `/${countryPath}/${regionPath}` },
-        ...(district && district.id !== 0 ? [{ label: district.name, path: `/${countryPath}/${regionPath}/${districtPath}` }] : []),
-        ...(parentSubRegion ? [{ label: parentSubRegion.name }] : []),
+        { label: city.countryName, path: `/${countryPath}` },
+        { label: city.regionName, path: `/${countryPath}/${regionPath}` },
+        ...(districtPath !== "city" ? [{ label: city.districtName, path: `/${countryPath}/${regionPath}/${districtPath}` }] : []),
+        ...(districtPath !== "city" ? [{ label: city.subRegionName }] : []),
         { label: city.name }
     ];
 

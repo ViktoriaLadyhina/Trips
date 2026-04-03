@@ -179,7 +179,7 @@ const datas = [
             ua: {
                 name: 'Маєн-Кобленц',
                 title: "Район Маєн-Кобленц",
-                countryName: "Германия",
+                countryName: "Німеччина", regionName: "Рейнланд-Пфальц",
                 desc: {
                     history: [
                         { text: 'Район Маєн-Кобленц (Landkreis Mayen-Koblenz) – адміністративний район (Kreis) у Німеччині, входить до землі Рейнланд-Пфальц. Він розташований у північній частині землі вздовж середніх течій річок Рейн і Мозель.' },
@@ -207,7 +207,7 @@ const datas = [
             de: {
                 name: 'Mayen-Koblenz',
                 title: "Landkreis Mayen-Koblenz",
-                countryName: "Deutschland",
+                countryName: "Deutschland", regionName: "Rheinland-Pfalz",
                 desc: {
                     history: [
                         { text: 'Der Landkreis Mayen-Koblenz (Landkreis Mayen-Koblenz) ist ein Verwaltungsbezirk (Kreis) in Deutschland und gehört zum Bundesland Rheinland-Pfalz. Er liegt im nördlichen Teil des Landes entlang der mittleren Läufe der Flüsse Rhein und Mosel.' },
@@ -334,7 +334,7 @@ const datas = [
             ua: {
                 name: 'Трір-Саарбург',
                 title: "Район Трір-Саарбург",
-                countryName: "Німеччина",
+                countryName: "Німеччина", regionName: "Рейнланд-Пфальц",
                 desc: {
                     history: [
                         { text: 'Район Трір-Саарбург (Landkreis Trier-Saarburg) розташований на південному заході Німеччини в землі Рейнланд-Пфальц, на кордоні з Люксембургом. Територія району лежить у долинах річок Мозель, Саар і Рувер і вважається одним із найстаріших культурних регіонів країни.' },
@@ -364,7 +364,7 @@ const datas = [
             de: {
                 name: 'Trier-Saarburg',
                 title: "Landkreis Trier-Saarburg",
-                countryName: "Deutschland",
+                countryName: "Deutschland", regionName: "Rheinland-Pfalz",
                 desc: {
                     history: [
                         { text: 'Der Landkreis Trier-Saarburg liegt im Südwesten Deutschlands in Rheinland-Pfalz, an der Grenze zu Luxemburg. Das Gebiet des Landkreises erstreckt sich über die Täler der Flüsse Mosel, Saar und Ruwer und gilt als eine der ältesten Kulturlandschaften des Landes.' },

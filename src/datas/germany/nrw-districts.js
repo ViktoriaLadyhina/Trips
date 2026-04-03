@@ -39,7 +39,7 @@ const datas = [
             ua: {
                 title: 'Адміністративний округ Арнсберг',
                 name: 'Арнсберг',
-                countryName: "Германия",
+                countryName: "Германия", regionName: "Північний Рейн-Вестфалія",
                 desc: {
                     history: [
                         { text: 'Адміністративний округ Арнсберг — один із п\'яти адміністративних округів землі Північний Рейн-Вестфалія. Він розташований на південному сході землі.' },
@@ -73,7 +73,7 @@ const datas = [
             de: {
                 title: 'Regierungsbezirk Arnsberg',
                 name: 'Arnsberg',
-                countryName: "Германия",
+                countryName: "Германия", regionName: "Nordrhein-Westfalen",
                 desc: {
                     history: [
                         { text: 'Der Regierungsbezirk Arnsberg ist einer von fünf Regierungsbezirken des Bundeslandes Nordrhein-Westfalen. Er liegt im Südosten des Landes.' },
@@ -157,7 +157,7 @@ const datas = [
             ua: {
                 title: 'Адміністративний округ Кельн',
                 name: 'Кельн',
-                countryName: "Германия",
+                countryName: "Германия", regionName: "Північний Рейн-Вестфалія",
                 desc: {
                     history: [
                         { text: 'Адміністративний округ Кельн — один із п’яти адміністративних округів землі Північний Рейн-Вестфалія. Розташований у південно-західній частині землі.' },
@@ -191,7 +191,7 @@ const datas = [
             de: {
                 title: 'Regierungsbezirk Köln',
                 name: 'Köln',
-                countryName: "Германия",
+                countryName: "Германия", regionName: "Nordrhein-Westfalen",
                 desc: {
                     history: [
                         { text: 'Regierungsbezirk Köln ist einer der fünf Regierungsbezirke in Nordrhein-Westfalen. Er liegt im Südwesten des Bundeslandes.' },
