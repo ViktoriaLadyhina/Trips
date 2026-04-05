@@ -16,7 +16,7 @@ const maps = {
       koln: NRWKolnMap,
       arnsberg: NRWArnsbergMap,
     },
-    'rheinland-pfalz': {
+    rheinland_pfalz: {
       region: RheinlandPfalzMap
     },
   },
@@ -41,7 +41,7 @@ export default function CountryMap({ countryKey, regionKey, regions, subRegion, 
     // Если districtKey задан, но карты для него нет — не показываем карту
     if (districtKey) {
       if (region[districtKey]) {
-        MapComponent = region[districtKey];
+        MapComponent = region[districtKey] || null;
       } else {
         return null; // <-- ничего не рендерим
       }

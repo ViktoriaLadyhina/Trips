@@ -32,7 +32,6 @@ const useCity = (countryPath, regionPath, districtPath, cityPath) => {
             try {
                 // если нет обязательных параметров — сразу выходим
                 if (!countryPath || !regionPath || !districtPath || !cityPath) {
-                    console.warn("Missing required parameters:", { countryPath, regionPath, districtPath, cityPath });
                     setCity(null);
                     return;
                 }

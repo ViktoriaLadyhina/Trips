@@ -20,11 +20,11 @@ const RPMap = ({ regions }) => {
   );
 
   const handleDistrictClick = (district) => {
-    if (district.hasInfo) navigate(`/germany/rheinland-pfalz/${district.path}`);
+    if (district.hasInfo) navigate(`/germany/rheinland_pfalz/${district.path}`);
   };
 
   const handleCityClick = (city) => {
-    if (city.hasInfo) navigate(`/germany/rheinland-pfalz/city/${city.path}`);
+    if (city.hasInfo) navigate(`/germany/rheinland_pfalz/city/${city.path}`);
   };
 
   // Координаты подписей (x, y) + смещения dx, dy

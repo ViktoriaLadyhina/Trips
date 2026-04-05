@@ -12,6 +12,7 @@ import { useSelector } from "react-redux";
 import useDistricts from "../../hooks/useDistricts.js";
 import useSabRegions from "../../hooks/useSabRegions.js";
 import useLand from "../../hooks/useLand.js";
+import datas from '../../datas/minimalIndex'
 
 const BASE_PHOTO_URL = import.meta.env.VITE_BASE_PHOTO_URL;
 
@@ -32,7 +33,7 @@ const District = () => {
   const location = useLocation();
 
   useMeta(district?.meta || {});
-  
+
   useEffect(() => {
     const params = new URLSearchParams(location.search);
     const scrollTo = params.get("scrollTo");
@@ -58,8 +59,8 @@ const District = () => {
 
   const crumbs = [
     { label: lang === "ru" ? "Главная" : lang === "de" ? "Startseite" : "Головна", path: "/" },
-    { label: district.countryName, path: `/${countryPath}` },
-    { label: district.regionName, path: `/${countryPath}/${regionPath}` },
+    { label: datas.countries[countryPath][lang], path: `/${countryPath}` },
+    { label: datas.regions[regionPath][lang], path: `/${countryPath}/${regionPath}` },
     { label: district.name || district.title }
   ];
 
@@ -72,48 +73,50 @@ const District = () => {
 
         <BtnAttr lang={lang} path={`/${countryPath}/${regionPath}/${districtPath}/attractions`} />
 
-        <div className='district__map'>
-          <CountryMap
-            countryKey={countryPath}
-            regionKey={regionPath}
-            districtKey={districtPath}
-            regions={region}
-            subRegion={subRegion}
-          />
-        </div>
+        {districtPath !== "trier_saarburg" && districtPath !== "mayen_koblenz" && (
+          <div className='district__map'>
+            <CountryMap
+              countryKey={countryPath}
+              regionKey={regionPath}
+              districtKey={districtPath}
+              regions={region}
+              subRegion={subRegion}
+            />
+          </div>
+        )}
 
         <div className='district__desc'>
-            {district?.gerb && (
-              <div className='district-gerb'>
-                <img src={`${BASE_PHOTO_URL}${district.gerb}`} alt={district.name} />
-              </div>
-            )}
-
-            {district?.desc?.history && (<InfoBlock data={district.desc.history} className="district__history" />)}
-            {district?.desc?.area && (<InfoBlock data={district.desc.area} className="district__area" />)}
-            {district?.desc?.population && (<InfoBlock data={district.desc.population} className="district__population" />)}
-            {district?.desc?.districts && (<InfoBlock data={district.desc.districts} className="district__districts" />)}
-            {district?.desc?.cities && (<InfoBlock data={district.desc.cities} className="district__cities" />)}
-          </div>
-
-          {subRegion?.length > 0 && (
-            <div className="district__list">
-              {subRegion.map((sub) => (
-                <Region
-                  key={sub.id}
-                  data={sub}
-                  countryPath={countryPath}
-                  regionsPath={regionPath}
-                  districtPath={districtPath}
-                  id={`subregion-${slugify(sub.path)}`}
-                />
-              ))}
+          {district?.gerb && (
+            <div className='district-gerb'>
+              <img src={`${BASE_PHOTO_URL}${district.gerb}`} alt={district.name} />
             </div>
           )}
-        </div>
-      </div>
 
-      )
+          {district?.desc?.history && (<InfoBlock data={district.desc.history} className="district__history" />)}
+          {district?.desc?.area && (<InfoBlock data={district.desc.area} className="district__area" />)}
+          {district?.desc?.population && (<InfoBlock data={district.desc.population} className="district__population" />)}
+          {district?.desc?.districts && (<InfoBlock data={district.desc.districts} className="district__districts" />)}
+          {district?.desc?.cities && (<InfoBlock data={district.desc.cities} className="district__cities" />)}
+        </div>
+
+        {subRegion?.length > 0 && (
+          <div className="district__list">
+            {subRegion.map((sub) => (
+              <Region
+                key={sub.id}
+                data={sub}
+                countryPath={countryPath}
+                regionsPath={regionPath}
+                districtPath={districtPath}
+                id={`subregion-${slugify(sub.path)}`}
+              />
+            ))}
+          </div>
+        )}
+      </div>
+    </div>
+
+  )
 }
 
-      export default District
+export default District

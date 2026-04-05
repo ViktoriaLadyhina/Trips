@@ -10,7 +10,6 @@ const datas = [
         translations: {
             ru: {
                 name: 'Кёльн',
-                countryName: "Германия", regionName: "Северный Рейн-Вестфалия",
                 desc: {
                     general: [
                         { text: 'Кёльн – крупнейший город земли Северный Рейн-Вестфалия и четвёртый по численности город Германии.' },
@@ -99,7 +98,6 @@ const datas = [
             },
             ua: {
                 name: 'Кельн',
-                countryName: "Німеччина", regionName: "Північний Рейн-Вестфалія",
                 desc: {
                     general: [
                         { text: 'Кельн – найбільше місто землі Північний Рейн-Вестфалія та четверте за чисельністю населення місто Німеччини.' },
@@ -188,7 +186,6 @@ const datas = [
             },
             de: {
                 name: 'Köln',
-                countryName: "Deutschland", regionName: "Nordrhein-Westfalen",
                 desc: {
                     general: [
                         { text: 'Köln ist die größte Stadt des Bundeslandes Nordrhein-Westfalen und die viertgrößte Stadt Deutschlands.' },
@@ -286,7 +283,6 @@ const datas = [
         translations: {
             ru: {
                 name: 'Дортмунд',
-                countryName: "Германия", regionName: "Северный Рейн-Вестфалия",
                 desc: {
                     general: [
                         { text: 'Дортмунд – один из крупнейших городов земли Северный Рейн-Вестфалия и один из крупнейших городов Рурской области (Ruhrgebiet) – крупнейшего промышленного региона Германии.' },
@@ -350,7 +346,6 @@ const datas = [
             },
             ua: {
                 name: 'Дортмунд',
-                countryName: "Німеччина", regionName: "Північний Рейн-Вестфалія",
                 desc: {
                     general: [
                         { text: 'Дортмунд – одне з найбільших міст федеральної землі Північний Рейн-Вестфалія та одне з найбільших міст Рурської області (Ruhrgebiet) – найбільшого промислового регіону Німеччини.' },
@@ -414,7 +409,6 @@ const datas = [
             },
             de: {
                 name: 'Dortmund',
-                countryName: "Deutschland", regionName: "Nordrhein-Westfalen",
                 desc: {
                     general: [
                         { text: 'Dortmund ist eine der größten Städte des Bundeslandes Nordrhein-Westfalen und eine der größten Städte des Ruhrgebiets (Ruhrgebiet) – der größten Industrieregion Deutschlands.' },
@@ -492,7 +486,7 @@ const datas = [
         translations: {
             ru: {
                 name: 'Моншау',
-                countryName: "Германия", regionName: "Северный Рейн-Вестфалия", districtName: "Кёльн", subRegionName: "Аахен",
+                subRegionName: "Аахен",
                 desc: {
                     general: [{ text: 'Моншау (нем. Monschau) расположен в западной части Германии, в регионе Айфель земли Северный Рейн-Вестфалия, недалеко от границы с Бельгией. Город известен своей исторической архитектурой, уютными улочками с фахверковыми домами и живописными видами на реку Рур.' },],
                     population: [{ bold: 'Население', text: ' города составляет около 13 000 человек (по состоянию на 31 декабря 2024 года).' }],
@@ -551,7 +545,7 @@ const datas = [
             },
             ua: {
                 name: 'Моншау',
-                countryName: "Німеччина", regionName: "Північний Рейн-Вестфалія", districtName: "Кельн", subRegionName: "Аахен",
+                subRegionName: "Аахен",
                 desc: {
                     general: [{ text: 'Моншау (нім. Monschau) розташований у західній частині Німеччини, у регіоні Айфель землі Північний Рейн-Вестфалія, недалеко від кордону з Бельгією. Місто відоме своєю історичною архітектурою, затишними вуличками з фахверковими будинками та мальовничими видами на річку Рур.' }],
                     population: [{ bold: 'Населення', text: ' міста становить близько 13 000 осіб (станом на 31 грудня 2024 року).' }],
@@ -610,7 +604,7 @@ const datas = [
             },
             de: {
                 name: 'Monschau',
-                countryName: "Deutschland", regionName: "Nordrhein-Westfalen", districtName: "Köln", subRegionName: "Aachen",
+                subRegionName: "Aachen",
                 desc: {
                     general: [{ text: 'Monschau (dt. Monschau) liegt im Westen Deutschlands, in der Region Eifel des Bundeslandes Nordrhein-Westfalen, in der Nähe der Grenze zu Belgien. Die Stadt ist bekannt für ihre historische Architektur, gemütliche Straßen mit Fachwerkhäusern und malerische Ausblicke auf die Rur.' }],
                     population: [{ bold: 'Einwohnerzahl', text: ' der Stadt beträgt etwa 13.000 Personen (Stand 31. Dezember 2024).' }],
@@ -680,7 +674,7 @@ const datas = [
         translations: {
             ru: {
                 name: 'Брюль',
-                countryName: "Германия", regionName: "Северный Рейн-Вестфалия", districtName: "Кёльн", subRegionName: "Рейн-Эрфт",
+                subRegionName: "Рейн-Эрфт",
                 desc: {
                     general: [
                         { text: 'Город в земле Северный Рейн-Вестфалия' }
@@ -738,7 +732,7 @@ const datas = [
             },
             ua: {
                 name: 'Брюль',
-                countryName: "Німеччина", regionName: "Північний Рейн-Вестфалія", districtName: "Кельн", subRegionName: "Рейн-Ерфт",
+                subRegionName: "Рейн-Ерфт",
                 desc: {
                     general: [
                         { text: 'Місто в землі Північний Рейн-Вестфалія' }
@@ -796,7 +790,7 @@ const datas = [
             },
             de: {
                 name: 'Brühl',
-                countryName: "Deutschland", regionName: "Nordrhein-Westfalen", districtName: "Köln", subRegionName: "Rhein-Erft",
+                subRegionName: "Rhein-Erft",
                 desc: {
                     general: [
                         { text: 'Stadt im Bundesland Nordrhein-Westfalen' }
@@ -863,7 +857,7 @@ const datas = [
         translations: {
             ru: {
                 name: 'Фрехен',
-                countryName: "Германия", regionName: "Северный Рейн-Вестфалия", districtName: "Кёльн", subRegionName: "Рейн-Эрфт",
+                subRegionName: "Рейн-Эрфт",
                 desc: {
                     general: [
                         { text: 'Фрехен – город в земле Северный Рейн-Вестфалия, входящий в район Рейн-Эрфт и расположенный всего в 10 км к западу от Кёльна.' },
@@ -943,7 +937,7 @@ const datas = [
             },
             ua: {
                 name: 'Фрехен',
-                countryName: "Німеччина", regionName: "Північний Рейн-Вестфалія", districtName: "Кельн", subRegionName: "Рейн-Ерфт",
+                subRegionName: "Рейн-Ерфт",
                 desc: {
                     general: [
                         { text: 'Фрехен – місто в землі Північний Рейн-Вестфалія, що входить до району Рейн-Ерфт і розташоване всього за 10 км на захід від Кельна.' },
@@ -1023,7 +1017,7 @@ const datas = [
             },
             de: {
                 name: 'Frechen',
-                countryName: "Deutschland", regionName: "Nordrhein-Westfalen", districtName: "Köln", subRegionName: "Rhein-Erft",
+                subRegionName: "Rhein-Erft",
                 desc: {
                     general: [
                         { text: 'Frechen ist eine Stadt im Bundesland Nordrhein-Westfalen, die zum Rhein-Erft-Kreis gehört und nur etwa 10 km westlich von Köln liegt.' },
@@ -1115,7 +1109,7 @@ const datas = [
         translations: {
             ru: {
                 name: 'Кёнигсвинтер',
-                countryName: "Германия", regionName: "Северный Рейн-Вестфалия", districtName: "Кёльн", subRegionName: "Рейн-Зиг",
+                subRegionName: "Рейн-Зиг",
                 desc: {
                     general: [
                         { text: 'Кёнигсвинтер – город в земле Северный Рейн-Вестфалия, входящий в район Рейн-Зиг и расположенный на правом берегу Рейна напротив Бонна.' },
@@ -1191,7 +1185,7 @@ const datas = [
             },
             ua: {
                 name: 'Кенігсвінтер',
-                countryName: "Німеччина", regionName: "Північний Рейн-Вестфалія", districtName: "Кельн", subRegionName: "Рейн-Зіг",
+                subRegionName: "Рейн-Зіг",
                 desc: {
                     general: [
                         { text: 'Кенігсвінтер – місто в землі Північний Рейн-Вестфалія, що входить до району Рейн-Зіг і розташоване на правому березі Рейну навпроти Бонна.' },
@@ -1267,7 +1261,7 @@ const datas = [
             },
             de: {
                 name: 'Königswinter',
-                countryName: "Deutschland", regionName: "Nordrhein-Westfalen", districtName: "Köln", subRegionName: "Rhein-Sieg",
+                subRegionName: "Rhein-Sieg",
                 desc: {
                     general: [
                         { text: 'Königswinter ist eine Stadt im Bundesland Nordrhein-Westfalen, die zum Rhein-Sieg-Kreis gehört und am rechten Rheinufer gegenüber von Bonn liegt.' },
@@ -1355,7 +1349,7 @@ const datas = [
         translations: {
             ru: {
                 name: 'Люденшайд',
-                countryName: "Германия", regionName: "Северный Рейн-Вестфалия", districtName: "Арнсберг", subRegionName: "Меркиш",
+                subRegionName: "Меркиш",
                 desc: {
                     general: [
                         { text: 'Люденшайд (нем. Lüdenscheid) расположен в северо-западной части Зауэрланда в земле Северный Рейн-Вестфалия. Административно город входит в состав региона Арнсберг и подчинён округу Меркиш.' },
@@ -1436,7 +1430,7 @@ const datas = [
             },
             ua: {
                 name: 'Люденшайд',
-                countryName: "Німеччина", regionName: "Північний Рейн-Вестфалія", districtName: "Арнсберг", subRegionName: "Меркіш",
+                subRegionName: "Меркіш",
                 desc: {
                     general: [
                         { text: 'Люденшайд (нім. Lüdenscheid) розташований у північно-західній частині Заурланду в землі Північний Рейн-Вестфалія. Адміністративно місто входить до регіону Арнсберг і підпорядковується округу Меркіш.' },
@@ -1516,7 +1510,7 @@ const datas = [
             },
             de: {
                 name: 'Lüdenscheid',
-                countryName: "Deutschland", regionName: "Nordrhein-Westfalen", districtName: "Arnsberg", subRegionName: "Märkischer",
+                subRegionName: "Märkischer",
                 desc: {
                     general: [
                         { text: 'Lüdenscheid liegt im Nordwesten des Sauerlandes im Bundesland Nordrhein-Westfalen. Administrativ gehört die Stadt zur Region Arnsberg und untersteht dem Märkischen Kreis.' },
@@ -1605,7 +1599,7 @@ const datas = [
         translations: {
             ru: {
                 name: 'Альтена',
-                countryName: "Германия", regionName: "Северный Рейн-Вестфалия", districtName: "Арнсберг", subRegionName: "Меркиш",
+                subRegionName: "Меркиш",
                 desc: {
                     general: [
                         { text: 'Альтена (нем. Altena) расположен в северной части Зауэрланда в земле Северный Рейн-Вестфалия. Административно город входит в состав региона Арнсберг и подчинён округу Меркиш.' },
@@ -1663,7 +1657,7 @@ const datas = [
             },
             ua: {
                 name: 'Альтена',
-                countryName: "Німеччина", regionName: "Північний Рейн-Вестфалія", districtName: "Арнсберг", subRegionName: "Меркіш",
+                subRegionName: "Меркіш",
                 desc: {
                     general: [
                         { text: 'Альтена (нім. Altena) розташована у північній частині Зауерланду в землі Північний Рейн-Вестфалія. Адміністративно місто входить до складу регіону Арнсберг і підпорядковане округу Меркіш.' },
@@ -1721,6 +1715,7 @@ const datas = [
             },
             de: {
                 name: 'Altena',
+                subRegionName: "Märkischer",
                 desc: {
                     general: [
                         { text: 'Altena liegt im nördlichen Teil des Sauerlands im Bundesland Nordrhein-Westfalen. Administrativ gehört die Stadt zur Region Arnsberg und untersteht dem Märkischen Kreis.' },
@@ -1787,7 +1782,7 @@ const datas = [
         translations: {
             ru: {
                 name: "Изерлон",
-                countryName: "Германия", regionName: "Северный Рейн-Вестфалия", districtName: "Арнсберг", subRegionName: "Меркиш",
+                subRegionName: "Меркиш",
                 desc: {
                     general: [
                         { text: "Изерлон (нем. Iserlohn) – крупнейший город округа Меркиш в регионе Арнсберг, федеральная земля Северный Рейн-Вестфалия. Расположен на северной окраине Зауэрланда и исторически известен как важный центр металлургии и обработки металлов." }
@@ -1867,7 +1862,7 @@ const datas = [
             },
             ua: {
                 name: "Ізерлон",
-                countryName: "Німеччина", regionName: "Північний Рейн-Вестфалія", districtName: "Арнсберг", subRegionName: "Меркіш",
+                subRegionName: "Меркіш",
                 desc: {
                     general: [
                         { text: "Ізерлон (нім. Iserlohn) – найбільше місто округу Меркіш у регіоні Арнсберг, федеральна земля Північний Рейн-Вестфалія. Розташоване на північній околиці Зауерланду та історично відоме як важливий центр металургії та обробки металів." }
@@ -1945,7 +1940,7 @@ const datas = [
             },
             de: {
                 name: "Iserlohn",
-                countryName: "Deutschland", regionName: "Nordrhein-Westfalen", districtName: "Arnsberg", subRegionName: "Märkischer",
+                subRegionName: "Märkischer",
                 desc: {
                     general: [
                         { text: "Iserlohn ist die größte Stadt des Märkischen Kreises im Regierungsbezirk Arnsberg im Bundesland Nordrhein-Westfalen. Die Stadt liegt am nördlichen Rand des Sauerlandes und ist historisch als bedeutendes Zentrum der Metallverarbeitung und Industrie bekannt." }

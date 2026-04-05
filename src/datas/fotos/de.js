@@ -589,7 +589,7 @@ export const Fotos = {
 
   },
 
-  "rheinland-pfalz": {
+  rheinland_pfalz: {
     trier: {
       gallery: [
         { path: "Germany/rheinland-pfalz/trier-city/altstadt/portaNigra_trier/001.jpg", title: { ru: "Порта Нигра, 2024", ua: "Порта Нігра («Чорні ворота»), 2024", de: "Porta Nigra, 2024" } },

@@ -6,7 +6,6 @@ const datas = [
         translations: {
             ru: {
                 name: 'Северный Рейн-Вестфалия',
-                countryName: "Германия",
                 desc: {
                     capital: [{ bold: 'Столица:', text: ' Дюссельдорф' }],
                     population: [
@@ -92,7 +91,6 @@ const datas = [
             },
             ua: {
                 name: 'Північний Рейн-Вестфалія',
-                countryName: "Німеччина",
                 desc: {
                     capital: [{ bold: 'Столиця:', text: ' Дюссельдорф' }],
                     population: [
@@ -213,7 +211,6 @@ const datas = [
             },
             de: {
                 name: 'Nordrhein-Westfalen',
-                countryName: "Deutschland",
                 desc: {
                     capital: [{ bold: 'Hauptstadt:', text: ' Düsseldorf' }],
                     population: [
@@ -332,11 +329,10 @@ const datas = [
     {
         id: 11,
         hasInfo: true,
-        path: 'rheinland-pfalz',
+        path: 'rheinland_pfalz',
         translations: {
             ru: {
                 name: 'Рейнланд-Пфальц',
-                countryName: "Германия",
                 desc: {
                     capital: [{ bold: 'Столица:', text: ' Майнц' }],
                     population: [{ bold: 'Население (2024):', text: ' Население: около 4,1 млн человек. Иностранцев – около 500 тыс. человек.' }],
@@ -453,7 +449,6 @@ const datas = [
             },
             ua: {
                 name: 'Рейнланд-Пфальц',
-                countryName: "Німеччина",
                 desc: {
                     capital: [{ bold: 'Столиця:', text: ' Майнц' }],
                     population: [
@@ -573,7 +568,6 @@ const datas = [
             },
             de: {
                 name: 'Rheinland-Pfalz',
-                countryName: "Deutschland",
                 desc: {
                     capital: [{ bold: 'Hauptstadt:', text: ' Mainz' }],
                     population: [{ bold: 'Einwohnerzahl (2024):', text: ' Bevölkerung: etwa 4,1 Millionen Menschen. Ausländer – etwa 500.000 Personen.' }],

@@ -10,6 +10,7 @@ import { useEffect } from 'react';
 import useCity from '../../hooks/useCity.js';
 import { useSelector } from 'react-redux';
 import useEvents from '../../hooks/useEvents.js';
+import datas from '../../datas/minimalIndex'
 
 const BASE_PHOTO_URL = import.meta.env.VITE_BASE_PHOTO_URL;
 
@@ -37,9 +38,9 @@ const City = () => {
     // Хлебные крошки
     const crumbs = [
         { label: lang === "ru" ? "Главная" : lang === "de" ? "Startseite" : "Головна", path: "/" },
-        { label: city.countryName, path: `/${countryPath}` },
-        { label: city.regionName, path: `/${countryPath}/${regionPath}` },
-        ...(districtPath !== "city" ? [{ label: city.districtName, path: `/${countryPath}/${regionPath}/${districtPath}` }] : []),
+        { label: datas.countries[countryPath][lang], path: `/${countryPath}` },
+        { label: datas.regions[regionPath][lang], path: `/${countryPath}/${regionPath}` },
+        ...(districtPath !== "city" ? [{ label: datas.districts[districtPath][lang], path: `/${countryPath}/${regionPath}/${districtPath}` }] : []),
         ...(districtPath !== "city" ? [{ label: city.subRegionName }] : []),
         { label: city.name }
     ];

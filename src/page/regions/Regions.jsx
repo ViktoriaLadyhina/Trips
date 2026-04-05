@@ -9,6 +9,7 @@ import CountryMap from '../../components/maps/CountryMap';
 import BtnAttr from "../../components/btn-attr/BtnAttr";
 import useLand from "../../hooks/useLand";
 import { useSelector } from "react-redux";
+import datas from '../../datas/minimalIndex'
 
 const BASE_PHOTO_URL = import.meta.env.VITE_BASE_PHOTO_URL;
 
@@ -33,7 +34,7 @@ if (!region) return <div>Загрузка региона...</div>;
 
     const crumbs = [
         { label: lang === 'ru' ? 'Главная' : lang === 'de' ? 'Startseite' : 'Головна', path: '/' },
-        { label: region.countryName, path: `/${countryPath}` },
+        { label: datas.countries[countryPath][lang], path: `/${countryPath}` },
         { label: region.name }
     ];
 

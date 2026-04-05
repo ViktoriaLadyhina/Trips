@@ -2,7 +2,7 @@ const datas = [
     {
         id: "trier",
         path: "trier",
-        countryPath: "germany", regionsPath: "rheinland-pfalz", districtPath: "city",
+        countryPath: "germany", regionsPath: "rheinland_pfalz", districtPath: "city",
         gerb: "Germany/rheinland-pfalz/trier-city/gerb.png",
         coord: { lat: 49.75565, lng: 6.63935 },
         translations: {
@@ -201,7 +201,7 @@ const datas = [
     {
         id: "saarburg",
         path: "saarburg",
-        countryPath: "germany", regionsPath: "rheinland-pfalz", districtPath: "trier_saarburg",
+        countryPath: "germany", regionsPath: "rheinland_pfalz", districtPath: "trier_saarburg",
         gerb: "Germany/rheinland-pfalz/trier_saarburg/saarburg_kell/saarburg/gerb.png",
         coord: { lat: 49.6131, lng: 6.5783 },
         translations: {
@@ -319,7 +319,7 @@ const datas = [
             },
             de: {
                 name: 'Saarburg',
-                countryName: "Deutschland", regionName: "Rheinland-Pfalz", districtName: "Trier-Saarburg", subRegionName: "Saarburg-Kell",
+                countryName: "Deutschland", regionName: "rheinland_pfalz", districtName: "Trier-Saarburg", subRegionName: "Saarburg-Kell",
                 desc: {
                     general: [
                         { text: 'Saarburg ist eine kleine malerische Stadt im Westen Deutschlands im Bundesland Rheinland-Pfalz an der Saar. Sie ist bekannt für ihre Altstadt mit engen Gassen, die historische Burg und den Wasserfall im Stadtzentrum.' },

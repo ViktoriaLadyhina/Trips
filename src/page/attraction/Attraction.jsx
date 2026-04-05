@@ -1,14 +1,21 @@
-import React, { useEffect, useState } from 'react'
-import useCityFullDataV2 from '../../hooks/useCityFullDataV2.js';
+import { useEffect, useState } from 'react'
 import { useParams } from 'react-router';
+import { useSelector } from 'react-redux';
+
 import BreadCrumbs from '../../components/breadCrumbs/BreadCrumbs.jsx';
 import InfoBlock from '../../components/InfoBlock/InfoBlock.jsx';
-import './Attraction.scss'
+
 import Gallery from '../../components/gallery/Gallery.jsx';
 import { photosByCountry } from '../../datas/fotos/index.js';
 import AttractionCardSub from '../../components/attraction/AttractionCardSub.jsx'
 import AttractionsFilters from '../../components/attractionsFilters/AttractionsFilters.jsx';
 import KolnTowers from '../../components/maps/germany/maps/Koln_towers.jsx';
+
+import useAttractions from '../../hooks/useAttractions.js';
+import useCity from '../../hooks/useCity.js';
+import datas from '../../datas/minimalIndex'
+
+import './Attraction.scss'
 
 const BASE_PHOTO_URL = import.meta.env.VITE_BASE_PHOTO_URL;
 
@@ -17,12 +24,15 @@ const founderTitle = { ru: "Основатель", ua: "Засновник", de:
 const architects = { ru: "Архитекторы", ua: "Архітектори", de: "Architekten" };
 
 const Attraction = () => {
-    const { districtPath, attractionsPath } = useParams();
-    const { country, region, district, parentSubRegion, city, attractions, lang, error } = useCityFullDataV2();
+    const { lang } = useSelector((state) => state.language);
+    const { countryPath, regionPath, districtPath, cityPath, attractionsPath } = useParams();
+
+    const { city } = useCity(countryPath, regionPath, districtPath, cityPath);
+    const { attractions, error } = useAttractions(countryPath, regionPath, districtPath, cityPath);
 
     const attraction = attractions.find(a => a.path === attractionsPath);
-    const photos = photosByCountry[country?.path];
-    const attractionPhotos = photos?.[region?.path]?.[city?.path]?.[attractionsPath] || [];
+    const photos = photosByCountry[countryPath];
+    const attractionPhotos = photos?.[regionPath]?.[cityPath]?.[attractionsPath] || [];
 
     const [filters, setFilters] = useState({
         type: 'all',
@@ -44,7 +54,7 @@ const Attraction = () => {
     }));
 
     if (error) return <p>{error}</p>;
-    if (!country || !region || !city) return <p>Loading...</p>;
+    if (!countryPath || !regionPath || !city) return <p>Loading...</p>;
 
     if (error) return <p>{error}</p>;
     if (!attractions) return <p>Loading...</p>;
@@ -96,17 +106,20 @@ const Attraction = () => {
     // Хлебные крошки
     const crumbs = [
         { label: lang === "ru" ? "Главная" : lang === "de" ? "Startseite" : "Головна", path: "/" },
-        country ? { label: region.country, path: `/${country.path}` } : null,
-        region ? { label: region.name, path: `/${country.path}/${region.path}` } : null,
-        district && district.id !== 0 ? { label: district.name, path: `/${country.path}/${region.path}/${district.path}` } : null,
-        parentSubRegion ? { label: parentSubRegion.name } : null,
-        city ? { label: city.name, path: `/${country.path}/${region.path}/${districtPath ? districtPath + '/' : ''}${city.path}` } : null,
-        {
-            label: lang === "ru" ? "Достопримечательности" : lang === "de" ? "Sehenswürdigkeiten" : "Пам'ятки",
-            path: `/${country.path}/${region.path}/${districtPath ? districtPath + '/' : ''}${city.path}/attractions`
-        },
-        attraction ? { label: attraction.name } : null
+        countryPath && datas.countries[countryPath]?.[lang] ? { label: datas.countries[countryPath][lang], path: `/${countryPath}` } : null,
+        regionPath && datas.regions[regionPath]?.[lang] ? { label: datas.regions[regionPath][lang], path: `/${countryPath}/${regionPath}` } : null,
+        districtPath && districtPath !== "city" && datas.districts[districtPath]?.[lang]
+            ? { label: datas.districts[districtPath][lang], path: `/${countryPath}/${regionPath}/${districtPath}` }
+            : null,
+        city?.subRegionName ? { label: city.subRegionName } : null,
+        cityPath ? {
+            label: datas.cities[cityPath]?.[lang], path: districtPath === "city"
+                ? `/${countryPath}/${regionPath}/city/${cityPath}`
+                : `/${countryPath}/${regionPath}/${districtPath}/${cityPath}`
+        } : null,
+        { label: datas.attractions[attractionsPath]?.[lang] }
     ].filter(Boolean);
+
 
     return (
         <div className="attraction">

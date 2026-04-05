@@ -1,10 +1,14 @@
-import useCityFullData from '../../hooks/useCityFullData.js';
 import { useParams } from 'react-router';
+import { useSelector } from 'react-redux';
+
 import BreadCrumbs from '../../components/breadCrumbs/BreadCrumbs.jsx';
 import InfoBlock from '../../components/InfoBlock/InfoBlock.jsx';
-import './Events.scss'
 import Gallery from '../../components/gallery/Gallery.jsx';
 import { photosByCountry } from '../../datas/fotos/index.js';
+import useEvents from '../../hooks/useEvents.js';
+import datas from '../../datas/minimalIndex'
+import './Events.scss'
+
 
 const BASE_PHOTO_URL = import.meta.env.VITE_BASE_PHOTO_URL;
 
@@ -12,35 +16,35 @@ const period = { ru: "Период", ua: "Період", de: "Zeitraum" }
 const location = { ru: "Место проведения", ua: "Місце проведення", de: "Veranstaltungsort" }
 
 const Event = () => {
-    const { districtPath, eventPath } = useParams();
-    const { country, region, district, parentSubRegion, city, events, lang, error } = useCityFullData();
+    const { countryPath, regionPath, districtPath, cityPath, eventPath } = useParams();
+    const { events, error } = useEvents(countryPath, regionPath, districtPath, cityPath);
+    const { lang } = useSelector((state) => state.language);
 
     const event = events.find(a => a.path === eventPath);
-    const photos = photosByCountry[country?.path];
-    const eventPhotos = photos?.[region?.path]?.[city?.path]?.[eventPath] || [];
+    const photos = photosByCountry[countryPath];
+    const eventPhotos = photos?.[regionPath]?.[cityPath]?.[eventPath] || [];
 
-    // Преобразуем в массив для Gallery
+    //Преобразуем в массив для Gallery
     const images = eventPhotos.map(photo => ({
         src: `${BASE_PHOTO_URL}${photo.path}`,
         alt: photo.title[lang]
     }));
-
+    
     if (error) return <p>{error}</p>;
-    if (!country || !region || !city) return <p>Loading...</p>;
+    if (!countryPath || !regionPath || !cityPath) return <p>Loading...</p>;
 
     if (error) return <p>{error}</p>;
     if (!events) return <p>Loading...</p>;
     if (!event) return <p>Event not found</p>;
 
-
-    // Хлебные крошки
+    //Хлебные крошки
     const crumbs = [
         { label: lang === "ru" ? "Главная" : lang === "de" ? "Startseite" : "Головна", path: "/" },
-        country ? { label: region.country, path: `/${country.path}` } : null,
-        region ? { label: region.name, path: `/${country.path}/${region.path}` } : null,
-        ...(district && district.id !== 0 ? { label: district.name, path: `/${country.path}/${region.path}/${district.path}` } : []),
-        parentSubRegion ? { label: parentSubRegion.name } : null,
-        city ? { label: city.name, path: `/${country.path}/${region.path}/${districtPath ? districtPath + '/' : ''}${city.path}` } : null,
+        countryPath ? { label: datas.countries[countryPath][lang], path: `/${countryPath}` } : null,
+        regionPath ? { label: datas.regions[regionPath][lang], path: `/${countryPath}/${regionPath}` } : null,
+        ...(districtPath !== "city" ? [{ label: datas.districts[districtPath][lang], path: `/${countryPath}/${regionPath}/${districtPath}` }] : []),
+        ...(districtPath !== "city" ? [{ label: events.subRegionName }] : []),
+        cityPath ? { label: datas.cities[cityPath][lang], path: `/${countryPath}/${regionPath}/${districtPath ? districtPath + '/' : ''}${cityPath}` } : null,
         { label: lang === "ru" ? "Мероприятия" : lang === "de" ? "Veranstaltungen" : "Заходи", },
         event ? { label: event.name } : null
     ].filter(Boolean);

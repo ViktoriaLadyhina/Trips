@@ -351,7 +351,7 @@ const AttractionForm = () => {
             {watchedFields.country === "germany" && (
               <>
                 <option value="nrw">Северный Рейн-Вестфалия</option>
-                <option value="rheinland-pfalz">Рейнланд-Пфальц</option>
+                <option value="rheinland_pfalz">Рейнланд-Пфальц</option>
               </>
             )}
             {watchedFields.country === "ukraine" && (

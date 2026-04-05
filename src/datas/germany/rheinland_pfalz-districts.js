@@ -152,7 +152,7 @@ const datas = [
         id: 15,
         hasInfo: true,
         path: "mayen_koblenz",
-        regionsPath: "rheinland-pfalz",
+        regionsPath: "rheinland_pfalz",
         gerb: "Germany/rheinland-pfalz/mayen-koblenz/gerb.png",
         translations: {
             ru: {
@@ -298,7 +298,7 @@ const datas = [
         id: 22,
         hasInfo: true,
         path: "trier_saarburg",
-        regionsPath: "rheinland-pfalz",
+        regionsPath: "rheinland_pfalz",
         gerb: "Germany/rheinland-pfalz/trier_saarburg/gerb.png",
         translations: {
             ru: {
