@@ -14,6 +14,8 @@ import rp_subRegions from '../../datas/germany/rheinland_pfalz-subRegions'
 import rp_city from '../../datas/germany/rheinland_pfalz-city'
 import rp_events from '../../datas/germany/rheinland_pfalz-events'
 
+import lu_routes from '../../datas/luxembourg/routes'
+
 import ukr_land from '../../datas/ukraine/lands'
 
 import sum_city from '../../datas/ukraine/sumska-city'
@@ -55,6 +57,9 @@ const searchIndex = {
             events: rp_events
         }
     },
+    luxembourg: {
+        routes: lu_routes,
+    },
     ukraine: {
         land: ukr_land,
         sumska: {
@@ -63,8 +68,8 @@ const searchIndex = {
             districts: sum_districts,
             subRegions: sum_subRegions,
         }
-
     },
+    
 
 
     //old

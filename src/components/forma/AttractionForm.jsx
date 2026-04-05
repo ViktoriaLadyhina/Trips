@@ -41,6 +41,7 @@ const AttractionForm = () => {
         description: "",
         ogTitle: "",
         ogDescription: "",
+        keywords: "",
         ogImage: ""
       }
     }
@@ -186,6 +187,7 @@ const AttractionForm = () => {
           description: watchedFields.meta.description,
           ogTitle: watchedFields.meta.ogTitle,
           ogDescription: watchedFields.meta.ogDescription,
+          keywords: watchedFields.meta.keywords,
           ogImage: watchedFields.meta.ogImage,
         }
       }
@@ -644,6 +646,10 @@ const AttractionForm = () => {
       <div className='meta'>
         <label><span className="required">*</span>Мета-описание для соцсетей</label>
         <textarea type="text" {...register("meta.ogDescription", { required: "Поле Мета-описание для соцсетей обязательно" })} className='meta-textarea' />
+      </div>
+      <div className='meta'>
+        <label><span className="required">*</span>Ключевые слова</label>
+        <textarea type="text" {...register("meta.keywords", { required: "Поле Мета-ключевые слова обязательно" })} className='meta-textarea' />
       </div>
       <div className='meta'>
         <label><span className="required">*</span>Мета-фото для соцсетей</label>

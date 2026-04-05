@@ -47,6 +47,7 @@ const datas = [
                     description: "Фишмаркт в Старом городе Кёльна – живописная площадь с разноцветными домами, историей средневекового рыбного рынка и популярное место для туристов.",
                     ogTitle: "Фишмаркт Кельн – сердце Старого города",
                     ogDescription: "Яркая площадь Старого города Кёльна с разноцветными домами, атмосферой средневекового рынка и фотогеничными видами для туристов.",
+                    keywords: "достопримечательности, рынок, историческое место, Кёльн, музей, прогулка, архитектура, история города, туризм, интересные места",
                     ogImage: "https://our-travels.info/foto/Germany/nrw/koln/koln-city/altstadt/fischmarkt/001.jpg"
                 }
             },
@@ -88,6 +89,7 @@ const datas = [
                     description: "Фішмаркт у Старому місті Кельна – мальовнича площа з різнокольоровими будинками, історією середньовічного рибного ринку та популярне місце для туристів.",
                     ogTitle: "Фішмаркт Кельн – серце Старого міста",
                     ogDescription: "Яскрава площа Старого міста Кельна з різнокольоровими будинками, атмосферою середньовічного ринку та фотогенічними видами для туристів.",
+                    keywords: "пам'ятки, ринок, історичне місце, Кельн, музей, прогулянка, архітектура, історія міста, туризм, цікаві місця",
                     ogImage: "https://our-travels.info/foto/Germany/nrw/koln/koln-city/altstadt/fischmarkt/001.jpg"
                 }
             },
@@ -129,6 +131,7 @@ const datas = [
                     description: "Der Fischmarkt in der Altstadt von Köln – ein malerischer Platz mit bunten Häusern, Geschichte des mittelalterlichen Fischmarktes und ein beliebter Ort für Touristen.",
                     ogTitle: "Fischmarkt Köln – das Herz der Altstadt",
                     ogDescription: "Ein lebhafter Platz in der Altstadt von Köln mit bunten Häusern, mittelalterlichem Marktflair und fotogenen Aussichten für Touristen.",
+                    keywords: "Sehenswürdigkeiten, Markt, historischer Ort, Köln, Museum, Spaziergang, Architektur, Stadtgeschichte, Tourismus, interessante Orte",
                     ogImage: "https://our-travels.info/foto/Germany/nrw/koln/koln-city/altstadt/fischmarkt/001.jpg"
                 }
             }
@@ -194,6 +197,7 @@ const datas = [
                     description: "Евангелическо-лютеранская церковь Лютера в Альтена (Lutherkirche Altena) – историческое здание XIV-XVIII веков с уникальным барочным интерьером. Действующая приходская церковь, реставрированная после пожара 2015 года.",
                     ogTitle: "Евангелическо-лютеранская церковь Лютера (Lutherkirche Altena) – барочная городская церковь и центр протестантской общины",
                     ogDescription: "Узнайте историю Евангелическо-лютеранской церкви Лютера (Lutherkirche Altena) – от средневековой церкви Святой Екатерины до барочной лютеранской церкви с богатым интерьером и культурными событиями",
+                    keywords: "церковь, достопримечательность, архитектура, историческое место, туризм, интересные места",
                     ogImage: "https://our-travels.info/foto/Germany/nrw/arnsberg/Märkischer-Kreis/altena/lutherkirche/001.jpg"
                 }
             },
@@ -247,6 +251,7 @@ const datas = [
                     description: "Євангелічно-лютеранська церква Лютера в Альтена (Lutherkirche Altena) – історична будівля XIV–XVIII століть з унікальним бароковим інтер'єром. Діюча парафіяльна церква, відреставрована після пожежі 2015 року.",
                     ogTitle: "Євангелічно-лютеранська церква Лютера (Lutherkirche Altena) – барокова міська церква та центр протестантської громади",
                     ogDescription: "Дізнайтеся історію Євангелічно-лютеранської церкви Лютера (Lutherkirche Altena) – від середньовічної церкви Святої Катерини до барокової лютеранської церкви з багатим інтер'єром та культурними подіями",
+                    keywords: "церква, пам’ятка, архітектура, історичне місце, туризм, цікаві місця",
                     ogImage: "https://our-travels.info/foto/Germany/nrw/arnsberg/Märkischer-Kreis/altena/lutherkirche/001.jpg"
                 }
             },
@@ -300,6 +305,7 @@ const datas = [
                     description: "Die Lutherkirche Altena – historisches Gebäude aus dem 14.–18. Jahrhundert mit einzigartigem barockem Interieur. Aktive Gemeindekirche, restauriert nach dem Brand 2015.",
                     ogTitle: "Lutherkirche Altena – barocke Stadtkirche und Zentrum der protestantischen Gemeinde",
                     ogDescription: "Erfahren Sie die Geschichte der Lutherkirche Altena – von der mittelalterlichen St.-Katharinen-Kirche bis zur barocken lutherischen Kirche mit reichhaltigem Interieur und kulturellen Veranstaltungen",
+                    keywords: "Kirche, Sehenswürdigkeit, Architektur, historischer Ort, Tourismus, interessante Orte",
                     ogImage: "https://our-travels.info/foto/Germany/nrw/arnsberg/Märkischer-Kreis/altena/lutherkirche/001.jpg"
                 }
             },
@@ -360,6 +366,7 @@ const datas = [
                     description: "Церковь Святого Матфея в Альтене – неоготический храм конца XIX века. История, архитектура, интерьер и интересные факты.",
                     ogTitle: "Церковь Святого Матфея в Альтене ",
                     ogDescription: "Неоготическая церковь XIX века в Альтене с историческим интерьером и атмосферой старого города.",
+                    keywords: "церковь, достопримечательность, архитектура, историческое место, туризм, интересные места",
                     ogImage: "https://our-travels.info/foto/Germany/nrw/arnsberg/Märkischer-Kreis/altena/st_matthaeus_church/001.jpg"
                 }
             },
@@ -410,6 +417,7 @@ const datas = [
                     description: "Церква Святого Матвія в Альтені – неоготичний храм кінця XIX століття. Історія, архітектура, інтер'єр та цікаві факти.",
                     ogTitle: "Церква Святого Матвія в Альтені",
                     ogDescription: "Неоготична церква XIX століття в Альтені з історичним інтер'єром та атмосферою старого міста.",
+                    keywords: "церква, пам’ятка, архітектура, історичне місце, туризм, цікаві місця",
                     ogImage: "https://our-travels.info/foto/Germany/nrw/arnsberg/Märkischer-Kreis/altena/st_matthaeus_church/001.jpg"
                 }
             },
@@ -460,6 +468,7 @@ const datas = [
                     description: "Die Kirche St. Matthäus in Altena – neugotisches Bauwerk des späten 19. Jahrhunderts. Geschichte, Architektur, Innenraum und interessante Fakten.",
                     ogTitle: "Katholische Pfarrkirche St. Matthäus in Altena",
                     ogDescription: "Neugotische Kirche des 19. Jahrhunderts in Altena mit historischem Innenraum und Atmosphäre der Altstadt.",
+                    keywords: "Kirche, Sehenswürdigkeit, Architektur, historischer Ort, Tourismus, interessante Orte",
                     ogImage: "https://our-travels.info/foto/Germany/nrw/arnsberg/Märkischer-Kreis/altena/st_matthaeus_church/001.jpg"
                 }
             }
@@ -507,6 +516,7 @@ const datas = [
                     description: "Узнайте о памятнике Густаву Сельве в Альтене – мемориальном монументе выдающемуся промышленнику XIX-XX вв. с историей, фактами посещения и практической информацией. Бесплатный доступ, виды на Ленне и история социальной индустрии Германии.",
                     ogTitle: "Памятник Густаву Сельве в Альтене – исторический взгляд",
                     ogDescription: "Памятник знаменитому промышленнику Густаву Сельве с панорамами Альтены и интересными историческими фактами.",
+                    keywords: "памятник, достопримечательность, скульптура, историческое место, туризм, интересные места",
                     ogImage: "https://our-travels.info/foto/Germany/nrw/arnsberg/Märkischer-Kreis/altena/gustav_selve/001.jpg"
                 }
             },
@@ -544,6 +554,7 @@ const datas = [
                     description: "Дізнайтеся про пам’ятник Густаву Сельве в Альтені – меморіальний монумент видатному промисловцю XIX–XX ст. з історією, фактами відвідування та практичною інформацією. Вільний доступ, види на Ленне та історія соціальної індустрії Німеччини.",
                     ogTitle: "Пам’ятник Густаву Сельве в Альтені – історичний погляд",
                     ogDescription: "Пам’ятник відомому промисловцю Густаву Сельве з панорамами Альтени та цікавими історичними фактами.",
+                    keywords: "пам’ятник, пам’ятка, скульптура, історичне місце, туризм, цікаві місця",
                     ogImage: "https://our-travels.info/foto/Germany/nrw/arnsberg/Märkischer-Kreis/altena/gustav_selve/001.jpg"
                 }
             },
@@ -581,6 +592,7 @@ const datas = [
                     description: "Erfahren Sie mehr über das Gustav-Selve-Denkmal in Altena – ein Gedenkmonument für den herausragenden Industriellen des 19.–20. Jahrhunderts mit Geschichte, Besuchsfakten und praktischen Informationen. Kostenloser Zugang, Ausblicke auf die Lenne und die Geschichte der sozialen Industrie Deutschlands.",
                     ogTitle: "Gustav-Selve-Denkmal in Altena – historischer Blick",
                     ogDescription: "Denkmal für den bekannten Industriellen Gustav Selve mit Panoramen von Altena und interessanten historischen Fakten.",
+                    keywords: "Denkmal, Sehenswürdigkeit, Skulptur, historischer Ort, Tourismus, interessante Orte",
                     ogImage: "https://our-travels.info/foto/Germany/nrw/arnsberg/Märkischer-Kreis/altena/gustav_selve/001.jpg"
                 }
             }
@@ -634,6 +646,7 @@ const datas = [
                     description: "Посетите Dechenhöhle – одну из красивейших сталактитовых пещер Германии в Изерлоне. Узнайте об истории открытия, уникальных образованиях, музейных экспозициях и экскурсиях. Великолепный природный туризм для всей семьи.",
                     ogTitle: "Dechenhöhle – подземное чудо Sauerland",
                     ogDescription: "Откройте для себя мистическую Dechenhöhle в Германии: сталактиты, истории ледниковых животных, музей и пещерные экскурсии для всех возрастов.",
+                    keywords: "пещера, достопримечательность, природное место, геология, туризм, интересные места",
                     ogImage: "https://our-travels.info/foto/Germany/nrw/arnsberg/Märkischer-Kreis/iserlohn/dechenhohle/001.jpg"
                 }
             },
@@ -675,6 +688,7 @@ const datas = [
                     description: "Відвідайте Dechenhöhle – одну з найкрасивіших сталактитових печер Німеччини в Ізерлоні. Дізнайтеся про історію відкриття, унікальні утворення, музейні експозиції та екскурсії. Чудовий природний туризм для всієї родини.",
                     ogTitle: "Dechenhöhle – підземне диво Sauerland",
                     ogDescription: "Відкрийте для себе містичну Dechenhöhle в Німеччині: сталактити, історії льодовикових тварин, музей та печерні екскурсії для всіх вікових груп.",
+                    keywords: "печера, пам’ятка, природне місце, геологія, туризм, цікаві місця",
                     ogImage: "https://our-travels.info/foto/Germany/nrw/arnsberg/Märkischer-Kreis/iserlohn/dechenhohle/001.jpg"
                 }
             },
@@ -716,6 +730,7 @@ const datas = [
                     description: "Besuchen Sie die Dechenhöhle – eine der schönsten Tropfsteinhöhlen Deutschlands in Iserlohn. Erfahren Sie mehr über die Entdeckungsgeschichte, einzigartige Formationen, Museumsausstellungen und Führungen. Hervorragender Naturtourismus für die ganze Familie.",
                     ogTitle: "Dechenhöhle – unterirdisches Wunder im Sauerland",
                     ogDescription: "Entdecken Sie die mystische Dechenhöhle in Deutschland: Stalaktiten, Geschichten von eiszeitlichen Tieren, Museum und Höhlenführungen für alle Altersgruppen.",
+                    keywords: "Höhle, Sehenswürdigkeit, Natur, Geologie, Tourismus, interessante Orte",
                     ogImage: "https://our-travels.info/foto/Germany/nrw/arnsberg/Märkischer-Kreis/iserlohn/dechenhohle/001.jpg"
                 }
             }
