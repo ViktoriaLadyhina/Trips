@@ -1994,13 +1994,14 @@ const datas = [
         type: ["historical_area"], rating: "popular",
         path: "historic_center_monschau",
         countryPath: "germany", regionsPath: "nrw", districtPath: "koln", cityPath: "monschau",
-        subObjects: ["rotes_haus_monschau", "senfmuehle_monschau", "glashuette_monschau"],
+        subObjects: ["rotes_haus_monschau", "senfmuehle_monschau", "glashuette_monschau", "tuchmacherbrunnen_monschau"],
         short_description_subObjects: {
             text: "У старому місті Моншау розташована така пам’ятка:",
             items: [
                 { bold: "Червоний будинок (Rotes Haus)", text: "– видатний історичний будинок-музей у центрі старого міста Моншау" },
                 { bold: "Історичний гірчичний млин (Historische Senfmühle)", text: "– історичний гірчичний млин у старому місті Моншау з діючим виробництвом та дегустацією гірчиці" },
-                { bold: "Майстерня скла (Glashütte)", text: "– майстерня з живими демонстраціями склодувів, де можна побачити процес виготовлення скляних виробів та придбати сувеніри" }
+                { bold: "Майстерня скла (Glashütte)", text: "– майстерня з живими демонстраціями склодувів, де можна побачити процес виготовлення скляних виробів та придбати сувеніри" },
+                { bold: "Фонтан ткачів", text: "– невеликий фонтан у Моншау, присвячений ткацтву та текстильній історії міста" },
             ]
         },
         fotoCard: "Germany/nrw/koln/Aachen/monschau/001.jpg",

@@ -138,6 +138,118 @@ const datas = [
         }
     },
 
+    // моншау
+    {
+        id: "tuchmacherbrunnen_monschau",
+        type: ["monument_or_fountain"], rating: "local",
+        path: "tuchmacherbrunnen_monschau",
+        countryPath: "germany", regionsPath: "nrw", districtPath: "koln", cityPath: "monschau",
+        hiddenFromList: true, showMore: true,
+        fotoCard: "Germany/nrw/koln/Aachen/monschau/tuchmacherbrunnen/001.jpg",
+        coord: { lat: 50.55492, lng: 6.24160 },
+        translations: {
+            ru: {
+                name: "Фонтан ткачей в Моншау",
+                location: "Моншау, Германия",
+                short_description: "Фонтан ткачей – небольшой тематический фонтан в историческом центре Моншау. Фонтан посвящён традициям ткачества и текстильному прошлому города. Скульптурная композиция показывает ремесленный труд, благодаря которому Моншау стал известным центром производства сукна в XVIII веке. Сегодня фонтан – атмосферный элемент старого города и интересная остановка во время прогулки.",
+                full_description: {
+                    title: "Описание и история",
+                    items: [
+                        { bold: "Фонтан ткачей в Моншау (Tuchmacherbrunnen Monschau)", text: "– небольшой тематический фонтан в историческом центре Моншау, отражающий текстильное прошлое города. Он расположен среди фахверковых домов и гармонично вписывается в атмосферу старого города." },
+                        { text: "Композиция фонтана посвящена ремеслу ткачества: скульптурные элементы показывают процесс изготовления тканей и труд ремесленников, благодаря которым Моншау в XVIII веке стал известным центром производства сукна." },
+                        { text: "Фонтан символизирует промышленную историю города и не является музейной экспозицией. Сегодня это атмосферный элемент старого города и интересная остановка во время прогулки." },
+                        { bold: "История", text: "В XVIII веке Моншау переживал экономический расцвет благодаря текстильной промышленности. Производство сукна стало основой благосостояния города, а местные фабриканты и ткачи играли ключевую роль в его развитии." },
+                        { text: "Особо известна деятельность семьи Шайблер, которая превратила Моншау в один из значимых центров текстильной индустрии региона." },
+                        { text: "Фонтан был создан как символ уважения к этому периоду и людям, чьим трудом формировалась экономика города. Он остаётся визуальным напоминанием о ремесленном прошлом Моншау." }
+                    ]
+                },
+                interestingFacts: {
+                    title: "Интересные факты",
+                    isList: true,
+                    items: [
+                        { text: "Фонтан тематически связан с промышленной историей города, а не с религией или политикой, что редкость для старых городов Германии." },
+                        { text: "Композиция показывает сцены ручного ткачества, отражая работу ремесленников XVIII века." },
+                        { text: "Предположительно, фонтан был установлен в XX веке в рамках благоустройства исторического центра Моншау." }
+                    ]
+                },
+                meta: {
+                    title: "Фонтан ткачей в Моншау — текстильная история",
+                    description: "Небольшой фонтан в Моншау, символ текстильного прошлого города.",
+                    ogTitle: "Фонтан ткачей в Моншау – Tuchmacherbrunnen",
+                    ogDescription: "Исторический фонтан в Моншау, посвящённый ткачеству и текстильной индустрии города.",
+                    keywords: "моншау достопримечательности, фонтан ткачей, германия, текстильная история, суконное производство, что посмотреть моншау, старый город моншау, достопримечательности германии, туризм моншау",
+                    ogImage: "https://our-travels.info/foto/Germany/nrw/koln/Aachen/monschau/tuchmacherbrunnen/001.jpg"
+                }
+            },
+            ua: {
+                name: "Фонтан ткачів у Моншау",
+                location: "Моншау, Німеччина",
+                short_description: "Фонтан ткачів – невеликий тематичний фонтан у історичному центрі Моншау. Фонтан присвячений традиціям ткацтва та текстильному минулому міста. Скульптурна композиція показує ремісничу працю, завдяки якій Моншау став відомим центром виробництва сукна у XVIII столітті. Сьогодні фонтан є атмосферним елементом старого міста та цікавою зупинкою під час прогулянки.",
+                full_description: {
+                    title: "Опис та історія",
+                    items: [
+                        { bold: "Фонтан ткачів у Моншау (Tuchmacherbrunnen Monschau)", text: "– невеликий тематичний фонтан у історичному центрі Моншау, що відображає текстильне минуле міста. Він розташований серед фахверкових будинків та гармонійно вписується в атмосферу старого міста." },
+                        { text: "Композиція фонтану присвячена ремеслу ткацтва: скульптурні елементи показують процес виготовлення тканин та працю ремісників, завдяки яким Моншау у XVIII столітті став відомим центром виробництва сукна." },
+                        { text: "Фонтан символізує промислову історію міста і не є музейною експозицією. Сьогодні він слугує атмосферним елементом старого міста та цікавою зупинкою під час прогулянки." },
+                        { bold: "Історія", text: "У XVIII столітті Моншау переживав економічний розквіт завдяки текстильній промисловості. Виробництво сукна стало основою добробуту міста, а місцеві фабриканти та ткачі відігравали ключову роль у його розвитку." },
+                        { text: "Особливо відома діяльність родини Шайблер, яка перетворила Моншау на один із важливих центрів текстильної індустрії регіону." },
+                        { text: "Фонтан було створено як символ пошани до цього періоду та людей, чиєю працею формувалася економіка міста. Він залишається візуальним нагадуванням про ремісниче минуле Моншау." }
+                    ]
+                },
+                interestingFacts: {
+                    title: "Цікаві факти",
+                    isList: true,
+                    items: [
+                        { text: "Фонтан тематично пов'язаний із промисловою історією міста, а не з релігією чи політикою, що є рідкістю для старих міст Німеччини." },
+                        { text: "Композиція показує сцени ручного ткацтва, відображаючи працю ремісників XVIII століття." },
+                        { text: "Ймовірно, фонтан було встановлено у XX столітті в рамках благоустрою історичного центру Моншау. (Факт не перевірено)" }
+                    ]
+                },
+                meta: {
+                    title: "Фонтан ткачів у Моншау — текстильна історія",
+                    description: "Невеликий фонтан у Моншау, символ текстильного минулого міста.",
+                    ogTitle: "Фонтан ткачів у Моншау – Tuchmacherbrunnen",
+                    ogDescription: "Історичний фонтан у Моншау, присвячений ткацтву та текстильній індустрії міста.",
+                    keywords: "моншау визначні місця, фонтан ткачів, німеччина, текстильна історія, виробництво сукна, що подивитися моншау, старе місто моншау, визначні місця німеччини, туризм моншау",
+                    ogImage: "https://our-travels.info/foto/Germany/nrw/koln/Aachen/monschau/tuchmacherbrunnen/001.jpg"
+                }
+            },
+            de: {
+                name: "Tuchmacherbrunnen in Monschau",
+                location: "Monschau, Deutschland",
+                short_description: "Der Tuchmacherbrunnen ist ein kleiner thematischer Brunnen im historischen Zentrum von Monschau. Der Brunnen ist den Traditionen der Weberei und der textilen Vergangenheit der Stadt gewidmet. Die Skulpturkomposition zeigt die handwerkliche Arbeit, durch die Monschau im 18. Jahrhundert zu einem bekannten Zentrum der Tuchproduktion wurde. Heute ist der Brunnen ein atmosphärisches Element der Altstadt und eine interessante Station während eines Spaziergangs.",
+                full_description: {
+                    title: "Beschreibung und Geschichte",
+                    items: [
+                        { bold: "Tuchmacherbrunnen in Monschau (Tuchmacherbrunnen Monschau)", text: "– ein kleiner thematischer Brunnen im historischen Zentrum von Monschau, der die textile Vergangenheit der Stadt widerspiegelt. Er befindet sich zwischen Fachwerkhäusern und fügt sich harmonisch in die Atmosphäre der Altstadt ein." },
+                        { text: "Die Komposition des Brunnens ist dem Handwerk der Weberei gewidmet: Skulpturelemente zeigen den Herstellungsprozess von Stoffen und die Arbeit der Handwerker, durch die Monschau im 18. Jahrhundert zu einem bekannten Zentrum der Tuchproduktion wurde." },
+                        { text: "Der Brunnen symbolisiert die industrielle Geschichte der Stadt und ist keine Museumsausstellung. Heute dient er als atmosphärisches Element der Altstadt und als interessante Station während eines Spaziergangs." },
+                        { bold: "Geschichte", text: "Im 18. Jahrhundert erlebte Monschau dank der Textilindustrie eine wirtschaftliche Blüte. Die Tuchproduktion bildete die Grundlage für den Wohlstand der Stadt, und lokale Fabrikanten und Weber spielten eine Schlüsselrolle in ihrer Entwicklung." },
+                        { text: "Besonders bekannt ist die Tätigkeit der Familie Schäibler, die Monschau zu einem der bedeutendsten Zentren der Textilindustrie der Region machte." },
+                        { text: "Der Brunnen wurde als Symbol der Wertschätzung für diese Periode und die Menschen, deren Arbeit die Wirtschaft der Stadt prägte, geschaffen. Er bleibt eine visuelle Erinnerung an die handwerkliche Vergangenheit Monschaus." }
+                    ]
+                },
+                interestingFacts: {
+                    title: "Interessante Fakten",
+                    isList: true,
+                    items: [
+                        { text: "Der Brunnen ist thematisch mit der Industriegeschichte der Stadt verbunden und nicht mit Religion oder Politik, was für alte deutsche Städte selten ist." },
+                        { text: "Die Komposition zeigt Szenen des Handwebens und reflektiert die Arbeit der Handwerker im 18. Jahrhundert." },
+                        { text: "Vermutlich wurde der Brunnen im 20. Jahrhundert im Rahmen der Gestaltung des historischen Stadtzentrums von Monschau aufgestellt. (Fakt nicht geprüft)" }
+                    ]
+                },
+                meta: {
+                    title: "Tuchmacherbrunnen in Monschau — Textile Geschichte",
+                    description: "Kleiner Brunnen in Monschau, Symbol der textilen Vergangenheit der Stadt.",
+                    ogTitle: "Tuchmacherbrunnen in Monschau – Tuchmacherbrunnen",
+                    ogDescription: "Historischer Brunnen in Monschau, der dem Handwerk der Weberei und der Textilindustrie der Stadt gewidmet ist.",
+                    keywords: "monschau sehenswürdigkeiten, tuchmacherbrunnen, deutschland, textile geschichte, stoffproduktion, was man in monschau sehen kann, altstadt monschau, sehenswürdigkeiten deutschland, tourismus monschau",
+                    ogImage: "https://our-travels.info/foto/Germany/nrw/koln/Aachen/monschau/tuchmacherbrunnen/001.jpg"
+                }
+            }
+        }
+    },
+
     //altena
     {
         id: "lutherkirche_altena",

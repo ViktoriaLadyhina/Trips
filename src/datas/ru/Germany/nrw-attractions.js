@@ -1998,19 +1998,21 @@ const datas = [
     // Köln округ
 
     // aachen kreis
+    // моншау
     {
         id: "historic_center_monschau",
         name: "Старый город Моншау",
         type: ["historical_area"], rating: "popular",
         path: "historic_center_monschau",
         countryPath: "germany", regionsPath: "nrw", districtPath: "koln", cityPath: "monschau",
-        subObjects: ["rotes_haus_monschau", "senfmuehle_monschau", "glashuette_monschau"],
+        subObjects: ["rotes_haus_monschau", "senfmuehle_monschau", "glashuette_monschau", "tuchmacherbrunnen_monschau"],
         short_description_subObjects: {
             text: "В старом городе Моншау находятся такая достопримечательность:",
             items: [
                 { bold: "Красный дом (Rotes Haus)", text: "– выдающийся исторический дом-музей в центре старого города Моншау" },
                 { bold: "Историческая горчичная мельница (Historische Senfmühle)", "text": "– историческая горчичная мельница с живым производством и дегустацией горчицы" },
                 { bold: "Стеклодувная мастерская (Glashütte)", text: "– мастерская с живыми демонстрациями стеклодувов, где можно увидеть процесс изготовления стеклянных изделий и купить сувениры" },
+                { bold: "Фонтан ткачей", text: "– небольшой фонтан в Моншау, посвящённый ткачеству и текстильной истории города" },
             ]
         },
         fotoCard: "Germany/nrw/koln/Aachen/monschau/001.jpg",

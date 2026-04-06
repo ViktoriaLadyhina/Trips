@@ -113,6 +113,7 @@ const datas =
     rotes_haus_monschau: { ru: 'Красный дом', de: 'Rotes Haus', ua: 'Червоний будинок' },
     senfmuehle_monschau: { ru: 'Историческая горчичная мельница', de: 'Historische Senfmühle', ua: 'Історичний гірчичний млин' },
     glashuette_monschau: { ru: 'Стеклодувная мастерская', de: 'Glashütte', ua: 'Майстерня скла' },
+    tuchmacherbrunnen_monschau: { ru: 'Фонтан ткачей в Моншау', de: 'Tuchmacherbrunnen in Monschau', ua: 'Фонтан ткачів у Моншау' },
 
     // Rhein-Erft-Kreis
     // Brühl

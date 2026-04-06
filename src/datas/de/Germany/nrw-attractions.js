@@ -1995,13 +1995,14 @@ const datas = [
         type: ["historical_area"], rating: "popular",
         path: "historic_center_monschau",
         countryPath: "germany", regionsPath: "nrw", districtPath: "koln", cityPath: "monschau",
-        subObjects: ["rotes_haus_monschau", "senfmuehle_monschau", "glashuette_monschau"],
+        subObjects: ["rotes_haus_monschau", "senfmuehle_monschau", "glashuette_monschau", "tuchmacherbrunnen_monschau"],
         short_description_subObjects: {
             text: "In der Altstadt von Monschau befindet sich folgende Sehenswürdigkeit:",
             items: [
                 { bold: "Rotes Haus", text: "– ein herausragendes historisches Hausmuseum im Zentrum der Altstadt von Monschau" },
                 { bold: "Historische Senfmühle", text: "– historischer Senfmühle in der Altstadt von Monschau mit aktiver Produktion und Senfverkostung" },
-                { bold: "Glashütte", text: "– Werkstatt mit Live-Demonstrationen der Glasbläser, bei der man den Herstellungsprozess von Glasprodukten beobachten und Souvenirs kaufen kann" }
+                { bold: "Glashütte", text: "– Werkstatt mit Live-Demonstrationen der Glasbläser, bei der man den Herstellungsprozess von Glasprodukten beobachten und Souvenirs kaufen kann" },
+                { bold: "Tuchmacherbrunnen", text: "– kleiner Brunnen in Monschau, gewidmet der Weberei und der textilen Geschichte der Stadt" },
             ]
         },
         fotoCard: "Germany/nrw/koln/Aachen/monschau/001.jpg",
