@@ -20,15 +20,17 @@ const CityMap = ({ city, lang }) => {
 
   // Центр карты: либо координаты города, либо первая достопримечательность
   const mapCenter = [city.coord.lat, city.coord.lng];
+const countriesNew = Object.keys(searchIndex).filter(key => ['germany','ukraine','luxembourg'].includes(key));
+const attractions = [
+  // старый вариант с языком
+  ...Object.values(searchIndex[lang].germany).flatMap(region => region.attractions || []),
+  ...Object.values(searchIndex[lang].ukraine).flatMap(region => region.attractions || []),
 
-  const attractions = [
-    ...Object.values(searchIndex[lang].germany).flatMap(region => region.attractions || []),
-    ...Object.values(searchIndex[lang].ukraine).flatMap(region => region.attractions || []),
-    ...Object.values(searchIndex.germany).flatMap(region => {
-      if (region.attractions) return region.attractions;
-      return Object.values(region).flatMap(sub => sub.attractions || []);
-    }),
-  ];
+  // новый вариант для всех стран из countriesNew
+  ...countriesNew.flatMap(countryKey => 
+    Object.values(searchIndex[countryKey]).flatMap(region => region.attractions || [])
+  ),
+];
 
   // для мобильных
   const isTouchDevice = L.Browser.mobile;

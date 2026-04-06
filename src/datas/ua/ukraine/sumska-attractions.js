@@ -58,14 +58,15 @@ const datas = [
         type: ["square"], rating: "local",
         path: "pokrovska_square_sumy",
         countryPath: "ukraine", regionsPath: "sumska", districtPath: "city", cityPath: "sumy",
-        fotoCard: "Ukraine/sumska/sumy-city/altanka/009.jpg",
+        fotoCard: "Ukraine/sumska/sumy-city/pokrovska_square/altanka/009.jpg",
         location: "Суми, Україна",
-        subObjects: ["sumy_altanka"],
+        subObjects: ["sumy_altanka", "onatsky_museum_sumy"],
         short_description: "Покровська площа – місце, з якого починалася історія Сум. Тут переплелися трагічні події минулого та мирне міське життя. Сьогодні площа зберігає особливу атмосферу затишку й пам’яті.",
         short_description_subObjects: {
             text: "На Покровській площі розташовані такі пам’ятки:",
             items: [
                 { bold: "Альтанка", text: "– бесідка по праву вважається однією з головних архітектурних пам’яток міста" },
+                { bold: "Сумський обласний художній музей ім. Н. Онацького", text: "– справедливо вважається однією з головних культурних та архітектурних пам’яток Сум" }
             ]
         },
         full_description: {
@@ -91,13 +92,12 @@ const datas = [
                 { text: "Попри трагічну історію, сьогодні вона сприймається як одне з найспокійніших і найсвітліших місць у центрі Сум." }
             ]
         },
-        coord: { lat: 50.9078, lng: 34.7972 },
         meta: {
             title: "Покровська площа – історичний центр Сум",
             description: "Покровська площа – одна з найстаріших площ Сум із багатою історією. Дізнайтеся про її минуле, воєнні події та сучасний вигляд.",
             ogTitle: "Покровська площа – серце історичних Сум",
             ogDescription: "Покровська площа – одна з найстаріших площ Сум, пов’язана з ключовими подіями в історії міста.",
-            ogImage: "https://our-travels.info/foto/Ukraine/sumska/sumy-city/altanka/009.jpg"
+            ogImage: "https://our-travels.info/foto/Ukraine/sumska/sumy-city/pokrovska_square/altanka/009.jpg"
         }
     },
     {
@@ -107,7 +107,7 @@ const datas = [
         path: "sumy_altanka",
         countryPath: "ukraine", regionsPath: "sumska", districtPath: "city", cityPath: "sumy",
         hiddenFromList: true, showMore: true,
-        fotoCard: "Ukraine/sumska/sumy-city/altanka/009.jpg",
+        fotoCard: "Ukraine/sumska/sumy-city/pokrovska_square/altanka/009.jpg",
         location: "Суми, Україна",
         address: [{ bold: "Адреса:", text: "Покровська площа" }],
         construction_period: "На початку XX століття – у період близько 1900–1905 років",
@@ -131,7 +131,7 @@ const datas = [
             description: "Альтанка – бесідка по праву вважається однією з головних архітектурних пам’яток міста",
             ogTitle: "Альтанка – візитна картка Сум",
             ogDescription: "Альтанка – бесідка по праву вважається однією з головних архітектурних пам’яток міста",
-            ogImage: "https://our-travels.info/foto/Ukraine/sumska/sumy-city/altanka/009.jpg"
+            ogImage: "https://our-travels.info/foto/Ukraine/sumska/sumy-city/pokrovska_square/altanka/009.jpg"
         }
     }
 ]

@@ -17,11 +17,11 @@ import rp_events from '../../datas/germany/rheinland_pfalz-events'
 import lu_routes from '../../datas/luxembourg/routes'
 
 import ukr_land from '../../datas/ukraine/lands'
-
 import sum_city from '../../datas/ukraine/sumska-city'
 import sum_events from '../../datas/ukraine/sumska-events'
 import sum_districts from '../../datas/ukraine/sumska-districts'
 import sum_subRegions from '../../datas/ukraine/sumska-subRegions'
+import sum_attr from '../../datas/ukraine/sumska-attractions'
 
 //de
 import nrw_attrDe from '../../datas/de/germany/nrw-attractions'
@@ -67,6 +67,7 @@ const searchIndex = {
             events: sum_events,
             districts: sum_districts,
             subRegions: sum_subRegions,
+            attractions: sum_attr,
         }
     },
     

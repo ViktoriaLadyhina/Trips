@@ -167,6 +167,7 @@ const datas =
     sumy_spaso_preobrazhensky: { ru: 'Спасо-Преображенский собор', de: 'Spaso-Preobraschenski-Kathedrale', ua: 'Спасо-Преображенський собор' },
     pokrovska_square_sumy: { ru: 'Покровская площадь', de: 'Pokrowska-Platz', ua: 'Покровська площа' },
     sumy_altanka: { ru: 'Альтанка', de: 'Der Pavillon', ua: 'Альтанка' },
+    onatsky_museum_sumy: { ru: 'Сумской областной художественный музей им. Н. Онацкого', de: 'Oblastliches Kunstmuseum Sumy N. Onatsky', ua: 'Сумський обласний художній музей ім. Н. Онацького' },
 
     Unesco_Title: { ru: "Достопримечательности ЮНЕСКО", ua: "Пам’ятки ЮНЕСКО", de: "UNESCO-Welterbestätten" }
   },

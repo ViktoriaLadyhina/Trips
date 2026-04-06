@@ -299,6 +299,7 @@ const Map = () => {
                       <li><Link to="/ukraine/sumska/city/sumy/attractions/pokrovska_square_sumy">{t.attractions.pokrovska_square_sumy[lang]}</Link>
                         <ul>
                           <li><Link to="/ukraine/sumska/city/sumy/attractions/sumy_altanka">{t.attractions.sumy_altanka[lang]}</Link></li>
+                          <li><Link to="/ukraine/sumska/city/sumy/attractions/onatsky_museum_sumy">{t.attractions.onatsky_museum_sumy[lang]}</Link></li>
                         </ul>
                       </li>
                     </ul>
