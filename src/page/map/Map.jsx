@@ -162,6 +162,7 @@ const Map = () => {
                                 <ul>
                                   <li><Link to="/germany/nrw/city/koln/attractions/gross_st_martin_koln">{t.attractions.gross_st_martin_koln[lang]}</Link></li>
                                   <li><Link to="/germany/nrw/city/koln/attractions/st_maria_im_kapitol_koln">{t.attractions.st_maria_im_kapitol_koln[lang]}</Link></li>
+                                  <li><Link to="/germany/nrw/city/koln/attractions/st_gereon_koln">{t.attractions.st_gereon_koln[lang]}</Link></li>
                                 </ul>
                               </li>
                               <li><Link to="/germany/nrw/city/koln/attractions/st_maria_himmelfahrt_koln">{t.attractions.st_maria_himmelfahrt_koln[lang]}</Link></li>

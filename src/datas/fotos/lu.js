@@ -14,5 +14,12 @@ export const Fotos = {
     { path: "Luxembourg/mullerthal/007.jpg", title: { ru: "Мюллертальская тропа, 2024", ua: "Мюллертальська стежка, 2024", de: "Mullerthal Trail, 2024" } },
     { path: "Luxembourg/mullerthal/008.jpg", title: { ru: "Мюллертальская тропа, 2024", ua: "Мюллертальська стежка, 2024", de: "Mullerthal Trail, 2024" } },
     { path: "Luxembourg/mullerthal/009.jpg", title: { ru: "Мюллертальская тропа, 2024", ua: "Мюллертальська стежка, 2024", de: "Mullerthal Trail, 2024" } },
+    { path: "Luxembourg/mullerthal/010.jpg", title: { ru: "Мюллертальская тропа, 2024", ua: "Мюллертальська стежка, 2024", de: "Mullerthal Trail, 2024" } },
+    { path: "Luxembourg/mullerthal/011.jpg", title: { ru: "Мюллертальская тропа, 2024", ua: "Мюллертальська стежка, 2024", de: "Mullerthal Trail, 2024" } },
+    { path: "Luxembourg/mullerthal/012.jpg", title: { ru: "Мюллертальская тропа, 2024", ua: "Мюллертальська стежка, 2024", de: "Mullerthal Trail, 2024" } },
+    { path: "Luxembourg/mullerthal/013.jpg", title: { ru: "Мюллертальская тропа, 2024", ua: "Мюллертальська стежка, 2024", de: "Mullerthal Trail, 2024" } },
+    { path: "Luxembourg/mullerthal/014.jpg", title: { ru: "Мюллертальская тропа, 2024", ua: "Мюллертальська стежка, 2024", de: "Mullerthal Trail, 2024" } },
+    { path: "Luxembourg/mullerthal/015.jpg", title: { ru: "Мюллертальская тропа, 2024", ua: "Мюллертальська стежка, 2024", de: "Mullerthal Trail, 2024" } },
+    { path: "Luxembourg/mullerthal/016.jpg", title: { ru: "Мюллертальская тропа, 2024", ua: "Мюллертальська стежка, 2024", de: "Mullerthal Trail, 2024" } },
   ]
 };

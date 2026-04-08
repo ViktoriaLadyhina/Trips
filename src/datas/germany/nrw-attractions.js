@@ -137,6 +137,164 @@ const datas = [
             }
         }
     },
+    {
+        id: "st_gereon_koln",
+        type: ["cathedral"], rating: "popular",
+        path: "st_gereon_koln",
+        countryPath: "germany", regionsPath: "nrw", districtPath: "city", cityPath: "koln",
+        hiddenFromList: true, showMore: true,
+        fotoCard: "Germany/nrw/koln/koln-city/altstadt/romanische_kirchen/st_gereon/001.jpg",
+        coord: { lat: 50.94329, lng: 6.94571 },
+        translations: {
+            ru: {
+                name: "Церковь Святого Гереона",
+                location: "Кёльн, Германия",
+                short_description: "Церковь Святого Гереона (St. Gereon) – одна из знаменитых романских церквей Кёльна, расположенная в Старом городе. Известна своей необычной круглой формой и богатым историческим наследием.",
+                full_description: {
+                    title: "Описание и история",
+                    items: [
+                        { bold: "Церковь Святого Гереона", text: "– романская церковь с двенадцатигранным куполом и старинными витражами, расположенная в Старом городе Кёльна. Известна богатым историческим интерьером и уникальной круглой формой, которая выделяет её среди кёльнских соборов." },
+                        { text: "Главной архитектурной особенностью является двенадцатигранный купол – одна из крупнейших романских ротонд Европы. Стиль сочетает элементы римской и раннеготической архитектуры, создавая гармоничный образ, сохранившийся на протяжении веков." },
+                        { text: "Церковь активно используется для богослужений, концертов и культурных мероприятий, являясь не только памятником архитектуры, но и живым центром религиозной и культурной жизни города." },
+                        { bold: "История", text: "Первая церковь на этом месте появилась в IV–V веках и была посвящена мученику Св. Гереону. Современное здание начали строить в XII веке, завершив к XIII веку. Архитектура отражает переход от романского стиля к ранней готике, что видно в фасаде и куполе." },
+                        { text: "В XVI–XVII веках церковь претерпела реставрации, включая обновление алтаря и внутреннего убранства. Во время Второй мировой войны здание сильно пострадало, но после войны было тщательно восстановлено, включая уникальные витражи и росписи." },
+                        { text: "Сегодня Церковь Святого Гереона входит в маршрут «Романские церкви Кёльна» и охраняется как исторический памятник, привлекая туристов и специалистов по средневековой архитектуре." }
+                    ]
+                },
+                tickets_and_entry: {
+                    title: "Практическая информация",
+                    items: [
+                        { bold: "Адрес:", text: "Gereonsplatz 1, 50670 Köln, Германия" },
+                        { bold: "Время работы: ", text: "ежедневно с 10:00 до 18:00 (может меняться в зависимости от мероприятий) " },
+                        { bold: "Вход:", text: "свободный для посещения, платные экскурсии доступны" }
+                    ]
+                },
+                relics: {
+                    title: "Реликвии и ценности",
+                    items: [
+                        { bold: "Мощи Св. Гереона", text: "– хранятся в главном алтаре. " },
+                        { text: "Античные бронзовые двери с резьбой XIII века. " }
+                    ]
+                },
+                interestingFacts: {
+                    title: "Интересные факты",
+                    isList: true,
+                    items: [
+                        { text: "Купол церкви имеет 12 граней и считается одним из крупнейших романских куполов Европы." },
+                        { text: "Внутри сохранились старинные витражи XIV-XV веков. " },
+                        { text: "Церковь посвящена римским легионерам и мученикам, включая Св. Гереона. " }
+                    ]
+                },
+                construction_period: "IV-V века (первая церковь), современное здание – XII-XIII века",
+                meta: {
+                    title: "Церковь Святого Гереона – романская церковь в Кёльне",
+                    description: "Посетите Церковь Святого Гереона в Кёльне – уникальную романскую церковь с двенадцатигранным куполом, старинными витражами и богатой историей Средневековья.",
+                    ogTitle: "Церковь Святого Гереона – Романская церковь",
+                    ogDescription: "Уникальная романская церковь в Старом городе Кёльна с двенадцатигранным куполом, старинными витражами и многовековой историей.",
+                    keywords: "Кёльн, романская церковь, Церковь Святого Гереона, средневековая архитектура, витражи, купол, исторический памятник, туризм, достопримечательности Кёльна",
+                    ogImage: "https://our-travels.info/foto/Germany/nrw/koln/koln-city/altstadt/romanische_kirchen/st_gereon/001.jpg"
+                }
+            },
+            ua: {
+                name: "Церква Святого Герєона",
+                location: "Кельн, Німеччина",
+                short_description: "Церква Святого Герєона (St. Gereon) – одна з відомих романських церков Кельна, розташована в Старому місті. Відома своєю незвичайною круглою формою та багатою історичною спадщиною.",
+                full_description: {
+                    title: "Опис та історія",
+                    items: [
+                        { bold: "Церква Святого Герєона", text: "– романська церква з дванадцятигранним куполом і старовинними вітражами, розташована в Старому місті Кельна. Відома багатим історичним інтер'єром та унікальною круглою формою, яка виділяє її серед кельнських соборів." },
+                        { text: "Головною архітектурною особливістю є дванадцятигранний купол – одна з найбільших романських ротонд Європи. Стиль поєднує елементи римської та ранньоготичної архітектури, створюючи гармонійний образ, який зберігся протягом століть." },
+                        { text: "Церква активно використовується для богослужінь, концертів та культурних заходів, являючись не лише пам'яткою архітектури, а й живим центром релігійного та культурного життя міста." },
+                        { bold: "Історія", text: "Перша церква на цьому місці з'явилася у IV–V століттях і була присвячена мученику Святому Герєону. Сучасну будівлю почали зводити у XII столітті, завершивши у XIII столітті. Архітектура відображає перехід від романського стилю до ранньої готики, що видно у фасаді та куполі." },
+                        { text: "У XVI–XVII століттях церква зазнала реставрацій, включно з оновленням вівтаря та внутрішнього оздоблення. Під час Другої світової війни будівля зазнала значних пошкоджень, але після війни була ретельно відновлена, включаючи унікальні вітражі та розписи." },
+                        { text: "Сьогодні Церква Святого Герєона входить до маршруту «Романські церкви Кельна» та охороняється як історична пам'ятка, приваблюючи туристів та фахівців зі середньовічної архітектури." }
+                    ]
+                },
+                tickets_and_entry: {
+                    title: "Практична інформація",
+                    items: [
+                        { bold: "Адреса:", text: "Gereonsplatz 1, 50670 Köln, Німеччина" },
+                        { bold: "Час роботи: ", text: "щодня з 10:00 до 18:00 (може змінюватися залежно від заходів)" },
+                        { bold: "Вхід:", text: "вільний для відвідування, платні екскурсії доступні" }
+                    ]
+                },
+                relics: {
+                    title: "Реліквії та цінності",
+                    items: [
+                        { bold: "Мощі Святого Герєона", text: "– зберігаються у головному вівтарі." },
+                        { text: "Античні бронзові двері з різьбленням XIII століття." }
+                    ]
+                },
+                interestingFacts: {
+                    title: "Цікаві факти",
+                    isList: true,
+                    items: [
+                        { text: "Купол церкви має 12 граней і вважається одним із найбільших романських куполів Європи." },
+                        { text: "Всередині збереглися старовинні вітражі XIV–XV століть." },
+                        { text: "Церква присвячена римським легіонерам та мученикам, зокрема Святому Герєону." }
+                    ]
+                },
+                construction_period: "IV–V століття (перша церква), сучасна будівля – XII–XIII століття",
+                meta: {
+                    title: "Церква Святого Герєона – романська церква в Кельні",
+                    description: "Відвідайте Церкву Святого Герєона в Кельні – унікальну романську церкву з дванадцятигранним куполом, старовинними вітражами та багатою історією середньовіччя.",
+                    ogTitle: "Церква Святого Герєона – Романська церква",
+                    ogDescription: "Унікальна романська церква в Старому місті Кельна з дванадцятигранним куполом, старовинними вітражами та багатовіковою історією.",
+                    keywords: "Кельн, романська церква, Церква Святого Герєона, середньовічна архітектура, вітражі, купол, історична пам'ятка, туризм, визначні місця Кельна",
+                    ogImage: "https://our-travels.info/foto/Germany/nrw/koln/koln-city/altstadt/romanische_kirchen/st_gereon/001.jpg"
+                }
+            },
+            de: {
+                name: "St. Gereon Kirche",
+                location: "Köln, Deutschland",
+                short_description: "St. Gereon ist eine der bekannten romanischen Kirchen Kölns und befindet sich in der Altstadt. Sie ist bekannt für ihre ungewöhnliche runde Form und das reiche historische Erbe.",
+                full_description: {
+                    title: "Beschreibung und Geschichte",
+                    items: [
+                        { bold: "St. Gereon Kirche", text: "– eine romanische Kirche mit einem zwölfeckigen Kuppeldach und alten Glasfenstern, gelegen in der Altstadt von Köln. Bekannt für ihr reiches historisches Interieur und die einzigartige runde Form, die sie unter den Kölner Kirchen besonders hervorhebt." },
+                        { text: "Das Hauptmerkmal der Architektur ist die zwölfeckige Kuppel – eine der größten romanischen Rundbauten Europas. Der Stil verbindet Elemente der römischen und frühgotischen Architektur und schafft ein harmonisches Erscheinungsbild, das über Jahrhunderte erhalten blieb." },
+                        { text: "Die Kirche wird aktiv für Gottesdienste, Konzerte und kulturelle Veranstaltungen genutzt und ist nicht nur ein architektonisches Denkmal, sondern auch ein lebendiges Zentrum des religiösen und kulturellen Lebens der Stadt." },
+                        { bold: "Geschichte", text: "Die erste Kirche an diesem Ort entstand im 4.–5. Jahrhundert und war dem Märtyrer St. Gereon gewidmet. Das heutige Gebäude wurde im 12. Jahrhundert begonnen und im 13. Jahrhundert fertiggestellt. Die Architektur zeigt den Übergang vom romanischen Stil zur frühen Gotik, erkennbar an Fassade und Kuppel." },
+                        { text: "Im 16.–17. Jahrhundert wurde die Kirche restauriert, einschließlich der Erneuerung des Altars und der Innenausstattung. Während des Zweiten Weltkriegs wurde das Gebäude stark beschädigt, aber nach dem Krieg sorgfältig wiederhergestellt, einschließlich der einzigartigen Glasfenster und Wandmalereien." },
+                        { text: "Heute gehört die St. Gereon Kirche zur Route der „Romanischen Kirchen Kölns“ und ist als historisches Denkmal geschützt, was sowohl Touristen als auch Fachleute für mittelalterliche Architektur anzieht." }
+                    ]
+                },
+                tickets_and_entry: {
+                    title: "Praktische Informationen",
+                    items: [
+                        { bold: "Adresse:", text: "Gereonsplatz 1, 50670 Köln, Deutschland" },
+                        { bold: "Öffnungszeiten: ", text: "täglich von 10:00 bis 18:00 Uhr (kann je nach Veranstaltung variieren)" },
+                        { bold: "Eintritt:", text: "frei zugänglich, kostenpflichtige Führungen verfügbar" }
+                    ]
+                },
+                relics: {
+                    title: "Reliquien und Werte",
+                    items: [
+                        { bold: "Reliquien des Heiligen Gereon", text: "– befinden sich am Hauptaltar." },
+                        { text: "Antike Bronzetüren mit Schnitzereien aus dem 13. Jahrhundert." }
+                    ]
+                },
+                interestingFacts: {
+                    title: "Interessante Fakten",
+                    isList: true,
+                    items: [
+                        { text: "Die Kuppel der Kirche hat 12 Seiten und gilt als eine der größten romanischen Kuppeln Europas." },
+                        { text: "Im Inneren sind alte Glasfenster aus dem 14.–15. Jahrhundert erhalten." },
+                        { text: "Die Kirche ist den römischen Legionären und Märtyrern, einschließlich St. Gereon, gewidmet." }
+                    ]
+                },
+                construction_period: "4.–5. Jahrhundert (erste Kirche), heutiges Gebäude – 12.–13. Jahrhundert",
+                meta: {
+                    title: "St. Gereon Kirche – romanische Kirche in Köln",
+                    description: "Besuchen Sie die St. Gereon Kirche in Köln – eine einzigartige romanische Kirche mit zwölfeckiger Kuppel, alten Glasfenstern und reichem mittelalterlichen Erbe.",
+                    ogTitle: "St. Gereon Kirche – Romanische Kirche",
+                    ogDescription: "Eine einzigartige romanische Kirche in der Altstadt von Köln mit zwölfeckiger Kuppel, alten Glasfenstern und jahrhundertealter Geschichte.",
+                    keywords: "Köln, romanische Kirche, St. Gereon Kirche, mittelalterliche Architektur, Glasfenster, Kuppel, historisches Denkmal, Tourismus, Sehenswürdigkeiten Kölns",
+                    ogImage: "https://our-travels.info/foto/Germany/nrw/koln/koln-city/altstadt/romanische_kirchen/st_gereon/001.jpg"
+                }
+            }
+        }
+    },
 
     // моншау
     {

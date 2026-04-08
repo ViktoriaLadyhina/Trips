@@ -20,6 +20,7 @@ const datas = [
                     text: `<ul>
                             <li><b>Groß St. Martin</b> – eine der bekanntesten romanischen Kirchen Kölns mit einem massiven Turm in Form einer Trikonche, der über dem Rheinufer aufragt. Ein Symbol der Silhouette der Altstadt.</li>
                             <li><b>St. Maria im Kapitol</b> – die größte romanische Kirche Kölns, errichtet an der Stelle eines antiken römischen Tempels. Ein herausragendes Beispiel romanischer Architektur mit Trikonchenplan und historischer Krypta, die Spuren der antiken Vergangenheit bewahrt.</li>
+                            <li><b>St. Gereon Kirche</b> – eine romanische Kirche mit zwölfeckiger Kuppel, alten Glasfenstern und reichhaltigem historischen Interieur.</li>
                         </ul>`
                 },
                 { bold: "St. Mariä Himmelfahrt", text: "– die wichtigste Barockkirche Kölns aus dem 17. Jahrhundert, eine ehemalige Jesuitenkirche in der Nähe des Hauptbahnhofs und des Kölner Doms." },
@@ -202,12 +203,13 @@ const datas = [
         type: ["cathedral"], rating: "popular",
         path: "romanische_kirchen_altstadt_koln",
         countryPath: "germany", regionsPath: "nrw", districtPath: "city", cityPath: "koln",
-        subObjects: ["gross_st_martin_koln", "st_maria_im_kapitol_koln"],
+        subObjects: ["gross_st_martin_koln", "st_maria_im_kapitol_koln", "st_gereon_koln"],
         short_description_subObjects: {
             text: "Auf unserer Website werden aus dieser Liste folgende Kirchen beschrieben:",
             items: [
                 { bold: "Groß St. Martin", text: "– eine der bekanntesten romanischen Kirchen Kölns mit einem massiven Turm-Trikonchos, der über der Rheinpromenade aufragt. Ein Symbol des Silhouetts der Altstadt." },
-                { bold: "St. Maria im Kapitol", text: "– die größte romanische Kirche Kölns, erbaut auf dem Gelände eines antiken römischen Tempels. Ein herausragendes Beispiel romanischer Architektur mit Trikonchos-Plan und historischer Krypta, die Spuren der antiken Vergangenheit bewahrt." }
+                { bold: "St. Maria im Kapitol", text: "– die größte romanische Kirche Kölns, erbaut auf dem Gelände eines antiken römischen Tempels. Ein herausragendes Beispiel romanischer Architektur mit Trikonchos-Plan und historischer Krypta, die Spuren der antiken Vergangenheit bewahrt." },
+                { bold: "St. Gereon Kirche", text: "– eine romanische Kirche mit zwölfeckiger Kuppel, alten Glasfenstern und reichhaltigem historischen Interieur." },
             ]
         },
         hiddenFromList: true, showMore: true,

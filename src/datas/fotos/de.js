@@ -203,7 +203,8 @@ export const Fotos = {
       romanische_kirchen_altstadt_koln: [
         { path: "Germany/nrw/koln/koln-city/altstadt/romanische_kirchen/001.jpg", title: { ru: "Романские церкви Старого города Кёльна (фото взято с интернета)", ua: "Романські церкви Старого міста Кельна (фото взято з Інтернету)", de: "Romanische Kirchen der Altstadt von Köln (Foto aus dem Internet)" } },
         { path: "Germany/nrw/koln/koln-city/altstadt/romanische_kirchen/gross_st_martin/002.jpg", title: { ru: "Большой Святой Мартин, 2025", ua: "Великий Святий Мартін, 2025", de: "Groß St. Martin, 2025" } },
-        { path: "Germany/nrw/koln/koln-city/stMariaImKapitol/001.jpg", title: { ru: "Церковь Святой Марии в Капитолии (фото взято с интернета)", ua: "Церква Святої Марії у Капітолії (фото взято з Інтернету)", de: "Kirche St. Maria im Kapitol (Foto aus dem Internet)" } },
+        { path: "Germany/nrw/koln/koln-city/altstadt/romanische_kirchen/stMariaImKapitol/001.jpg", title: { ru: "Церковь Святой Марии в Капитолии (фото взято с интернета)", ua: "Церква Святої Марії у Капітолії (фото взято з Інтернету)", de: "Kirche St. Maria im Kapitol (Foto aus dem Internet)" } },
+        { path: "Germany/nrw/koln/koln-city/altstadt/romanische_kirchen/st_gereon/001.jpg", title: { ru: "Церковь Святого Гереона (фото взято с интернета)", ua: "Церква Святого Герєона (фото взято з Інтернету)", de: "St. Gereon Kirche (Foto aus dem Internet)" } },
       ],
       old_towers_koln: [
         { path: "Germany/nrw/koln/koln-city/altstadt/old_towers/001.jpg", title: { ru: "Западные ворота (Hahnentorburg), 2025", ua: "Західні ворота (Hahnentorburg), 2025", de: "Hahnentorburg, 2025" } },
@@ -215,7 +216,11 @@ export const Fotos = {
       ],
       fischmarkt_koln: [
         { path: "Germany/nrw/koln/koln-city/altstadt/fischmarkt/001.jpg", title: { ru: "Фишмаркт (фото взято с интернета)", ua: "Фішмаркт (фото взято з Інтернету)", de: "Fischmarkt (Foto aus dem Internet)" } },
+      ],
+      st_gereon_koln: [
+        { path: "Germany/nrw/koln/koln-city/altstadt/romanische_kirchen/st_gereon/001.jpg", title: { ru: "Церковь Святого Гереона (фото взято с интернета)", ua: "Церква Святого Герєона (фото взято з Інтернету)", de: "St. Gereon Kirche (Foto aus dem Internet)" } },
       ]
+
     },
     bruhl: {
       gallery: [

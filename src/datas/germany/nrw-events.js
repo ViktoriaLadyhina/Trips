@@ -36,6 +36,7 @@ const datas = [
                 },
                 interestingFacts: {
                     title: "Интересные факты",
+                    isList: true,
                     items: [
                         { text: "Кёльнский карнавал считается одним из крупнейших карнавалов Европы и привлекает более миллиона участников каждый год." },
                         { text: "Главный парад Rosenmontag длится несколько часов и проходит через весь центр города." },
@@ -80,6 +81,7 @@ const datas = [
                 },
                 interestingFacts: {
                     title: "Цікаві факти",
+                    isList: true,
                     items: [
                         { text: "Кельнський карнавал вважається одним із найбільших карнавалів Європи і щороку привертає понад мільйон учасників." },
                         { text: "Головний парад Rosenmontag триває кілька годин і проходить через весь центр міста." },
@@ -124,6 +126,7 @@ const datas = [
                 },
                 interestingFacts: {
                     title: "Interessante Fakten",
+                    isList: true,
                     items: [
                         { text: "Der Kölner Karneval gilt als einer der größten Karnevals Europas und zieht jedes Jahr über eine Million Teilnehmer an." },
                         { text: "Der Hauptumzug am Rosenmontag dauert mehrere Stunden und zieht sich durch das gesamte Stadtzentrum." },
@@ -175,6 +178,7 @@ const datas = [
                 },
                 interestingFacts: {
                     title: "Интересные факты",
+                    isList: true,
                     items: [
                         { text: "Во время фестиваля подсветка охватывает большую часть территории парка и создаёт десятки различных световых сцен." },
                         { text: "Каждый год художники и дизайнеры света разрабатывают новые композиции, поэтому оформление фестиваля постоянно меняется." },
@@ -216,6 +220,7 @@ const datas = [
                 },
                 interestingFacts: {
                     title: "Цікаві факти",
+                    isList: true,
                     items: [
                         { text: "Під час фестивалю підсвітка охоплює більшу частину території парку та створює десятки різних світлових сцен." },
                         { text: "Щороку художники та дизайнери світла розробляють нові композиції, тому оформлення фестивалю постійно змінюється." },
@@ -257,6 +262,7 @@ const datas = [
                 },
                 interestingFacts: {
                     title: "Interessante Fakten",
+                    isList: true,
                     items: [
                         { text: "Während des Festivals wird ein großer Teil des Parks beleuchtet und es entstehen zahlreiche unterschiedliche Lichtszenerien." },
                         { text: "Jedes Jahr entwickeln Lichtkünstler und Designer neue Kompositionen, sodass sich das Erscheinungsbild des Festivals ständig verändert." },
@@ -300,6 +306,7 @@ const datas = [
                 },
                 interestingFacts: {
                     title: "Интересные факты",
+                    isList: true,
                     items: [
                         { bold: "Самая высокая рождественская елка в Европе", text: "– около 45 метров, собрана из примерно 1 200 норвежских елей. Её конструкция весит около 40 тонн." },
                         { bold: "LED огни", text: "– елка украшена примерно 138 000 светодиодов, которые включаются каждый вечер для светового шоу, превращая центр города в сказочный зимний город." },
@@ -336,6 +343,7 @@ const datas = [
                 },
                 interestingFacts: {
                     title: "Цікаві факти",
+                    isList: true,
                     items: [
                         { bold: "Найвища різдвяна ялинка в Європі", text: "– близько 45 метрів, зібрана з приблизно 1 200 норвезьких ялинок. Її конструкція важить близько 40 тонн." },
                         { bold: "LED вогні", text: "– ялинка прикрашена приблизно 138 000 світлодіодів, які ввімкнені щовечора для світлового шоу, перетворюючи центр міста на казковий зимовий місто." },
@@ -372,6 +380,7 @@ const datas = [
                 },
                 interestingFacts: {
                     title: "Interessante Fakten",
+                    isList: true,
                     items: [
                         { bold: "Der höchste Weihnachtsbaum Europas", text: "– etwa 45 Meter hoch, zusammengesetzt aus etwa 1 200 Norwegischen Fichten. Die Konstruktion wiegt rund 40 Tonnen." },
                         { bold: "LED-Lichter", text: "– der Baum ist mit etwa 138 000 LED-Lichtern geschmückt, die jeden Abend für die Lichtshow eingeschaltet werden und das Stadtzentrum in eine märchenhafte Winterstadt verwandeln." },

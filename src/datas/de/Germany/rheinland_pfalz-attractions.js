@@ -35,6 +35,7 @@ const datas = [
     },
     interestingFacts: {
       title: "Interessante Fakten",
+      isList: true,
       items: [
         { text: "Die Altstadt von Trier ist zusammen mit mehreren römischen Denkmälern in das UNESCO-Weltkulturerbe aufgenommen." },
         { text: "Porta Nigra – das am besten erhaltene römische Stadttor nördlich der Alpen." },
@@ -90,6 +91,7 @@ const datas = [
     },
     interestingFacts: {
       title: "Interessante Fakten",
+      isList: true,
       items: [
         { text: "Errichtet aus über 7200 Sandsteinblöcken; viele wiegen bis zu 6 Tonnen." },
         { text: "Der Bau war nicht vollständig abgeschlossen – sichtbar an der unvollendeten Ausführung und den hervorstehenden Blöcken." },
@@ -168,6 +170,7 @@ const datas = [
     },
     interestingFacts: {
       title: "Interessante Fakten",
+      isList: true,
       items: [
         { text: "Das Amphitheater von Trier ist eines der zehn größten erhaltenen römischen Amphitheater der Welt." },
         { text: "Die Arena ist in den natürlichen Hang des Petrisbergs eingebaut, was Baumaterial sparte und die Sicht auf die Tribünen verbesserte." },
@@ -237,6 +240,7 @@ const datas = [
     },
     interestingFacts: {
       title: "Interessante Fakten",
+      isList: true,
       items: [
         { text: "Der Komplex wurde teilweise entsprechend seiner Bestimmung genutzt, aber niemals vollständig fertiggestellt." },
         { text: "Die Thermen mit ihren Kanälen und unterirdischen Galerien bieten einzigartiges Material zum Verständnis der Ingenieurslösungen der alten Römer." },
@@ -291,6 +295,7 @@ const datas = [
     },
     interestingFacts: {
       title: "Interessante Fakten",
+      isList: true,
       items: [
         { text: "Es ist der größte vollständig erhaltene Innenraum der Antike nördlich der Alpen." },
         { text: "Wände bis zu 2,7 m dick." },
@@ -348,6 +353,7 @@ const datas = [
     },
     interestingFacts: {
       title: "Interessante Fakten",
+      isList: true,
       items: [
         { text: "Der Komplex war seinerzeit der größte nördlich der Alpen." },
         { text: "Auf dem Gelände wurden Reste des Kanalisationssystems und der Becken entdeckt." },
@@ -402,6 +408,7 @@ const datas = [
     },
     interestingFacts: {
       title: "Interessante Fakten",
+      isList: true,
       items: [
         { text: "Es ist die älteste Brücke Deutschlands, die teilweise aus römischer Zeit erhalten geblieben ist." },
         { text: "In römischer Zeit warfen Menschen Münzen in die Mosel als Opfergabe für die Flussgöttin – Schätzungen zufolge könnten es bis zu einer Million auf dem Grund sein." },
@@ -467,6 +474,7 @@ const datas = [
     },
     interestingFacts: {
       title: "Interessante Fakten",
+      isList: true,
       items: [
         { text: "Der Trierer Dom gilt als die älteste noch aktive Kathedrale Deutschlands, und das Bischofsamt in der Stadt besteht seit über 1600 Jahren." },
         { text: "Der erste christliche Tempel an dieser Stelle wurde im 4. Jahrhundert zur Zeit des Römischen Reiches errichtet, als Trier eine der kaiserlichen Residenzen war." },
@@ -531,6 +539,7 @@ const datas = [
     },
     interestingFacts: {
       title: "Interessante Fakten",
+      isList: true,
       items: [
         { bold: "Großes Deckenfresko.", text: "Das Fresko nimmt fast die gesamte Decke des zentralen Langhauses ein und gilt als eines der größten barocken Kirchenfresken in der Region." },
         { bold: "Märtyrer der Thebanischen Legion.", text: "Der christlichen Tradition zufolge könnten an der Stelle der heutigen Kirche Soldaten der Thebanischen Legion – eine römische Einheit – beigesetzt worden sein, die wegen der Weigerung, Christen zu verfolgen, hingerichtet wurden." },
@@ -599,6 +608,7 @@ const datas = [
     },
     interestingFacts: {
       title: "Interessante Fakten",
+      isList: true,
       items: [
         { text: "Die Kirche wurde nach einem einzigartigen runden, kreuzförmigen Grundriss erbaut, der Rosa Mystica – die mystische Rose als Bild der Jungfrau Maria – symbolisiert. Der Raum mit zwölf Säulen symbolisiert die zwölf Apostel und die zwölf Artikel des Apostolischen Glaubensbekenntnisses." },
         { text: "Aufgrund der ungewöhnlichen Form des Gebäudes und der inneren Harmonie des Interieurs wird die Kirche als eines der vollkommensten Beispiele gotischer Zentralbau-Architektur in Europa bezeichnet." },
@@ -691,6 +701,7 @@ const datas = [
     },
     interestingFacts: {
       title: "Interessante Fakten",
+      isList: true,
       items: [
         { text: "Der Wasserfall ist etwa 20 Meter hoch." },
         { text: "Er gehört zu den wenigen Wasserfällen in Europa, die sich direkt im Stadtzentrum befinden." },
@@ -753,6 +764,7 @@ const datas = [
     },
     interestingFacts: {
       title: "Interessante Fakten",
+      isList: true,
       items: [
         { text: "Das Museum liegt direkt an einem der ungewöhnlichsten städtischen Wasserfälle Deutschlands." },
         { text: "Der Name Amüseum ist ein Wortspiel aus „amüsieren“ (unterhalten) und „Museum“." },
@@ -804,6 +816,7 @@ const datas = [
     },
     interestingFacts: {
       title: "Interessante Fakten",
+      isList: true,
       items: [
         { text: "Die Burg war so positioniert, dass sie als Beobachtungspunkt über das gesamte Tal diente." },
         { text: "Heute werden die Ruinen als Aussichtspunkt mit hervorragender Aussicht genutzt." },

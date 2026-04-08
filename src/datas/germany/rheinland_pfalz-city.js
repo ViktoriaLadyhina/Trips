@@ -29,6 +29,7 @@ const datas = [
                 },
                 notablePeople: {
                     title: 'Знаменитые люди Трира',
+                    isList: true,
                     items: [
                         { bold: 'Карл Маркс', text: ' – философ, экономист и социолог, родился в Трире в 1818 году. Это самый известный уроженец города, его дом сейчас музей' },
                         { bold: 'Антиох Трирский', text: ' – римский государственный деятель поздней античности' },
@@ -37,6 +38,7 @@ const datas = [
                 },
                 interestingFacts: {
                     title: 'Интересные факты',
+                    isList: true,
                     items: [
                         { text: 'Трир официально считается старейшим городом Германии' },
                         { text: 'В городе находится Порта Нигра – крупнейшие сохранившиеся римские городские ворота к северу от Альп' },
@@ -92,6 +94,7 @@ const datas = [
                 },
                 notablePeople: {
                     title: 'Відомі люди Тріра',
+                    isList: true,
                     items: [
                         { bold: 'Карл Маркс', text: ' – філософ, економіст та соціолог, народився в Трірі у 1818 році. Це найвідоміший уродженець міста, його дім зараз музей.' },
                         { bold: 'Антіох Трірський', text: ' – римський державний діяч пізньої античності.' },
@@ -100,6 +103,7 @@ const datas = [
                 },
                 interestingFacts: {
                     title: 'Цікаві факти',
+                    isList: true,
                     items: [
                         { text: 'Трір офіційно вважається найстарішим містом Німеччини.' },
                         { text: 'У місті знаходиться Порта Нігра – найбільші збережені римські міські ворота на північ від Альп.' },
@@ -155,6 +159,7 @@ const datas = [
                 },
                 notablePeople: {
                     title: 'Berühmte Persönlichkeiten aus Trier',
+                    isList: true,
                     items: [
                         { bold: 'Karl Marx', text: ' – Philosoph, Ökonom und Soziologe, geboren 1818 in Trier. Er ist der bekannteste Sohn der Stadt, sein Geburtshaus ist heute ein Museum.' },
                         { bold: 'Antiochus von Trier', text: ' – römischer Staatsmann der Spätantike.' },
@@ -163,6 +168,7 @@ const datas = [
                 },
                 interestingFacts: {
                     title: 'Interessante Fakten',
+                    isList: true,
                     items: [
                         { text: 'Trier gilt offiziell als die älteste Stadt Deutschlands.' },
                         { text: 'In der Stadt befindet sich die Porta Nigra – das größte erhaltene römische Stadttor nördlich der Alpen.' },
@@ -228,6 +234,7 @@ const datas = [
                 },
                 notablePeople: {
                     title: 'Знаменитые люди Саарбурга',
+                    isList: true,
                     items: [
                         { bold: 'Иоганн Генрих Винклер', text: ' – немецкий историк и писатель, родился в Саарбурге, автор работ по региональной истории.' },
                         { bold: 'Йоханнес Шталь', text: ' – известный немецкий инженер и архитектор, участвовал в строительстве нескольких исторических зданий в регионе.' },
@@ -236,6 +243,7 @@ const datas = [
                 },
                 interestingFacts: {
                     title: 'Интересные факты',
+                    isList: true,
                     items: [
                         { text: 'В центре старого города находится небольшой водопад на реке Саар – один из немногих городских водопадов Германии, высотой около 3 метров.' },
                         { text: 'Саарбург известен своей старой крепостью, впервые упомянутой в XI веке, которая доминирует над городским пейзажем.' },

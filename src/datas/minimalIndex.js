@@ -104,6 +104,7 @@ const datas =
     romanische_kirchen_altstadt_koln: { ru: 'Романские церкви Старого города Кёльна', de: 'Romanische Kirchen der Altstadt von Köln', ua: 'Романські церкви Старого міста Кельна' },
     old_towers_koln: { ru: 'Старые башни и укрепления Старого Кёльна', de: 'Alte Türme und Befestigungen der Altstadt Kölns', ua: 'Старі башти та укріплення Старого Кельна' },
     fischmarkt_koln: { ru: 'Фишмаркт', de: 'Fischmarkt', ua: 'Фішмаркт' },
+    st_gereon_koln: { ru: 'Церковь Святого Гереона', de: 'St. Gereon Kirche', ua: 'Церква Святого Герєона' },
 
     // Köln okrug
     // Aachen Kreis
