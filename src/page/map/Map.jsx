@@ -128,6 +128,7 @@ const Map = () => {
                               <li><Link to="/germany/nrw/arnsberg/luedenscheid/attractions/history_museum_luedenscheid">{t.attractions.history_museum_luedenscheid[lang]}</Link></li>
                               <li><Link to="/germany/nrw/arnsberg/luedenscheid/attractions/christuskirche_luedenscheid">{t.attractions.christuskirche_luedenscheid[lang]}</Link></li>
                               <li><Link to="/germany/nrw/arnsberg/luedenscheid/attractions/st_joseph_medardus">{t.attractions.st_joseph_medardus[lang]}</Link></li>
+                              <li><Link to="/germany/nrw/arnsberg/luedenscheid/attractions/schloss_neuenhof_luedenscheid">{t.attractions.schloss_neuenhof_luedenscheid[lang]}</Link></li>
                               <li><Link to="/germany/nrw/arnsberg/luedenscheid/attractions/versetalsperre_luedenscheid">{t.attractions.versetalsperre_luedenscheid[lang]}</Link></li>
                             </ul>
                           </li>
@@ -137,6 +138,7 @@ const Map = () => {
                               <li><Link to="/germany/nrw/arnsberg/altena/attractions/burg_altena">{t.attractions.burg_altena[lang]}</Link></li>
                               <li><Link to="/germany/nrw/arnsberg/altena/attractions/drahtmuseum_altena">{t.attractions.drahtmuseum_altena[lang]}</Link></li>
                               <li><Link to="/germany/nrw/arnsberg/altena/attractions/lutherkirche_altena">{t.attractions.lutherkirche_altena[lang]}</Link></li>
+                              <li><Link to="/germany/nrw/arnsberg/altena/attractions/st_matthaeus_church_altena">{t.attractions.st_matthaeus_church_altena[lang]}</Link></li>
                               <li><Link to="/germany/nrw/arnsberg/altena/attractions/gustav_selve_altena">{t.attractions.gustav_selve_altena[lang]}</Link></li>
                               <li><Link to="/germany/nrw/arnsberg/altena/attractions/fuelbecketalsperre_altena">{t.attractions.fuelbecketalsperre_altena[lang]}</Link></li>
                             </ul>

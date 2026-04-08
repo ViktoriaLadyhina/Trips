@@ -35,6 +35,7 @@ const datas = [
                 },
                 interestingFacts: {
                     title: "Интересные факты",
+                    isList: true,
                     items: [
                         { text: "Фишмаркт часто называют «самой фотогеничной площадью Кёльна» из-за ярких фасадов домов. " },
                         { text: "Раньше здесь проводились настоящие рыбные аукционы. " },
@@ -77,6 +78,7 @@ const datas = [
                 },
                 interestingFacts: {
                     title: "Цікаві факти",
+                    isList: true,
                     items: [
                         { text: "Фішмаркт часто називають «найфотогенічнішою площею Кельна» через яскраві фасади будинків." },
                         { text: "Раніше тут проводилися справжні рибні аукціони." },
@@ -119,6 +121,7 @@ const datas = [
                 },
                 interestingFacts: {
                     title: "Interessante Fakten",
+                    isList: true,
                     items: [
                         { text: "Der Fischmarkt wird oft als der fotogenste Platz von Köln bezeichnet wegen seiner bunten Hausfassaden." },
                         { text: "Früher wurden hier echte Fischauktionen abgehalten." },
@@ -454,6 +457,7 @@ const datas = [
                 },
                 interestingFacts: {
                     title: "Интересные факты",
+                    isList: true,
                     items: [
                         { text: "Башня церкви сохранилась со времён XIV века, даже после перестройки XVIII века." },
                         { text: "В интерьере сохранилась богатая барочная алтарно канзельная композиция, символизирующая связь слова, музыки и литургии." },
@@ -508,6 +512,7 @@ const datas = [
                 },
                 interestingFacts: {
                     title: "Цікаві факти",
+                    isList: true,
                     items: [
                         { text: "Вежа церкви збереглася з XIV століття, навіть після перебудови XVIII століття." },
                         { text: "В інтер'єрі збереглася багата барокова композиція вівтаря та кафедри, символізуючи зв'язок слова, музики та літургії." },
@@ -562,6 +567,7 @@ const datas = [
                 },
                 interestingFacts: {
                     title: "Interessante Fakten",
+                    isList: true,
                     items: [
                         { text: "Der Turm der Kirche ist seit dem 14. Jahrhundert erhalten, selbst nach dem Umbau im 18. Jahrhundert." },
                         { text: "Im Inneren ist die reich ausgestattete barocke Altar-Kanzel-Komposition erhalten, die die Verbindung von Wort, Musik und Liturgie symbolisiert." },
@@ -621,6 +627,7 @@ const datas = [
                 },
                 interestingFacts: {
                     title: "Интересные факты",
+                    isList: true,
                     items: [
                         { text: "Церковь построена в период активного распространения неоготики в Германии. " },
                         { text: "Архитектор Кломп специализировался именно на церковной архитектуре. " },
@@ -672,6 +679,7 @@ const datas = [
                 },
                 interestingFacts: {
                     title: "Цікаві факти",
+                    isList: true,
                     items: [
                         { text: "Церква побудована в період активного поширення неоготики в Німеччині." },
                         { text: "Архітектор Кломп спеціалізувався саме на церковній архітектурі." },
@@ -723,6 +731,7 @@ const datas = [
                 },
                 interestingFacts: {
                     title: "Interessante Fakten",
+                    isList: true,
                     items: [
                         { text: "Die Kirche wurde in einer Zeit der aktiven Verbreitung der Neugotik in Deutschland erbaut." },
                         { text: "Der Architekt Klomp spezialisierte sich auf Kirchenarchitektur." },
@@ -773,6 +782,7 @@ const datas = [
                 },
                 interestingFacts: {
                     title: "Интересные факты",
+                    isList: true,
                     items: [
                         { text: "В народе памятник называют «Der stille Gustav» («Тихий Густав»). " },
                         { text: "Он расположен на месте, откуда был виден как его жилой дом, так и предприятия, которыми он руководил. " },
@@ -811,6 +821,7 @@ const datas = [
                 },
                 interestingFacts: {
                     title: "Цікаві факти",
+                    isList: true,
                     items: [
                         { text: "У народі пам’ятник називають «Der stille Gustav» («Тихий Густав»)." },
                         { text: "Він розташований на місці, звідки було видно як його житловий будинок, так і підприємства, якими він керував." },
@@ -849,6 +860,7 @@ const datas = [
                 },
                 interestingFacts: {
                     title: "Interessante Fakten",
+                    isList: true,
                     items: [
                         { text: "In der Bevölkerung wird das Denkmal «Der stille Gustav» genannt." },
                         { text: "Es befindet sich an einem Ort, von dem sowohl sein Wohnhaus als auch die von ihm geleiteten Betriebe sichtbar waren." },
@@ -864,6 +876,144 @@ const datas = [
                     ogDescription: "Denkmal für den bekannten Industriellen Gustav Selve mit Panoramen von Altena und interessanten historischen Fakten.",
                     keywords: "Denkmal, Sehenswürdigkeit, Skulptur, historischer Ort, Tourismus, interessante Orte",
                     ogImage: "https://our-travels.info/foto/Germany/nrw/arnsberg/Märkischer-Kreis/altena/gustav_selve/001.jpg"
+                }
+            }
+        }
+    },
+
+    //Lüdenscheid
+    {
+        id: "schloss_neuenhof_luedenscheid",
+        type: ["palace_or_castle"], rating: "local",
+        path: "schloss_neuenhof_luedenscheid",
+        countryPath: "germany", regionsPath: "nrw", districtPath: "arnsberg", cityPath: "luedenscheid",
+        fotoCard: "Germany/nrw/arnsberg/Märkischer-Kreis/luedenscheid/neuenhof/001.jpg",
+        coord: { lat: 51.198624, lng: 7.6292577 },
+        translations: {
+            ru: {
+                name: "Замок Нойенхоф",
+                location: "Люденшайд, Германия",
+                short_description: "Окружённый водяным рвом замок Нойенхоф – один из значимых исторических архитектурных памятников города Люденшайд. Комплекс сочетает жилую усадьбу, хозяйственные постройки и оформленный внутренний двор.",
+                full_description: {
+                    title: "Описание и история",
+                    items: [
+                        { bold: "Замок Нойенхоф ", text: "представляет собой трёхэтажное прямоугольное здание с двускатной крышей, расположенное на острове, окружённом рвом с водой. Со стороны внутреннего двора фасад украшен двумя башнями, между которыми находится фонтан с гербом." },
+                        { text: "Перед основным зданием находится хозяйственный двор с постройками XVIII-XIX веков. Восточную часть комплекса украшают декоративные кованые ворота, подчёркивающие статус бывшего дворянского имения." },
+                        { text: "Замок находится в частной собственности и закрыт для посещения. Осмотр возможен только снаружи. Несмотря на закрытый доступ, замок остаётся одним из немногих хорошо сохранившихся водных замков региона Зауэрланд." },
+                        { bold: "История", text: "Первые документальные упоминания о замке Нойенхоф относятся к 1326 году. Изначально он служил укреплённой усадьбой и резиденцией местного дворянского рода." },
+                        { text: "Позднее комплекс неоднократно перестраивался и расширялся, особенно в XVIII-XIX веках, когда были добавлены хозяйственные здания и внутренний двор с декоративным оформлением. Замок оставался жилым имением и не утратил своей функции резиденции." },
+                        { text: "Замок Нойенхоф является родовым гнездом дворянского рода фон Нойхофф, к которому принадлежал Теодор фон Нойхофф — известный как король Корсики." }
+                    ]
+                },
+                tickets_and_entry: {
+                    title: "Практическая информация",
+                    items: [
+                        { bold: "Адрес:", text: "Neuenhofer Straße 54, 58515 Lüdenscheid, Германия" },
+                        { bold: "Доступ: ", text: "только внешний осмотр. Вход закрыт для посещения" }
+                    ]
+                },
+                interestingFacts: {
+                    title: "Интересные факты",
+                    isList: true,
+                    items: [
+                        { text: "Замок относится к типу водных замков (Wasserschloss) – редкий формат для региона." },
+                        { text: "Комплекс сохранил историческую планировку усадьбы." },
+                        { text: "Герб во дворе – копия оригинала." },
+                        { text: "До сих пор используется как частная резиденция." }
+                    ]
+                },
+                construction_period: "примерно 1326 год",
+                meta: {
+                    title: "Замок Нойенхоф в Люденшайде – история, описание, фото",
+                    description: "Замок Нойенхоф – водный замок XIV века в Люденшайде. История, архитектура, интересные факты, фото и практическая информация для туристов.",
+                    ogTitle: "Замок Нойенхоф – средневековая усадьба со рвом в Германии",
+                    ogDescription: "Старинный замок Нойенхоф в Люденшайде: водный ров, дворянская история и атмосферная архитектура.",
+                    keywords: "замок Нойенхоф, Люденшайд, водный замок, Schloss Neuenhof, достопримечательности Германии, замки Германии, исторические здания, архитектура, туризм Германия",
+                    ogImage: "https://our-travels.info/foto/Germany/nrw/arnsberg/Märkischer-Kreis/luedenscheid/neuenhof/001.jpg"
+                }
+            },
+            ua: {
+                name: "Замок Нойенхоф",
+                location: "Люденшайд, Німеччина",
+                short_description: "Оточений водяним ровом замок Нойенхоф — один із значущих історичних архітектурних пам’яток міста Люденшайд. Комплекс поєднує житлову садибу, господарські будівлі та внутрішній двір з декоративним оформленням.",
+                full_description: {
+                    title: "Опис та історія",
+                    items: [
+                        { bold: "Замок Нойенхоф ", text: "є триповерховою прямокутною будівлею з двосхилим дахом, розташованою на острові, оточеному водяним ровом. З боку внутрішнього двору фасад прикрашений двома вежами, між якими розташований фонтан із гербом." },
+                        { text: "Перед основною будівлею знаходиться господарський двір із спорудами XVIII–XIX століть. Східну частину комплексу прикрашають декоративні ковані ворота, що підкреслюють статус колишнього дворянського маєтку." },
+                        { text: "Замок перебуває у приватній власності та закритий для відвідування. Огляд можливий лише ззовні. Незважаючи на обмежений доступ, замок залишається одним із небагатьох добре збережених водних замків регіону Зауерланд." },
+                        { bold: "Історія", text: "Перші документальні згадки про замок Нойенхоф датуються 1326 роком. Спочатку він слугував укріпленою садибою та резиденцією місцевого дворянського роду." },
+                        { text: "Пізніше комплекс неодноразово перебудовувався та розширювався, особливо у XVIII-XIX століттях, коли були додані господарські будівлі та сформований внутрішній двір із декоративним оформленням. Замок залишався житловим маєтком і не втратив своєї функції резиденції." },
+                        { text: "Замок Нойенхоф є родовим гніздом дворянського роду фон Нойхофф, до якого належав Теодор фон Нойхофф – відомий як король Корсики." }
+                    ]
+                },
+                tickets_and_entry: {
+                    title: "Практична інформація",
+                    items: [
+                        { bold: "Адреса:", text: "Neuenhofer Straße 54, 58515 Lüdenscheid, Німеччина" },
+                        { bold: "Доступ: ", text: "лише зовнішній огляд. Вхід закритий для відвідування" }
+                    ]
+                },
+                interestingFacts: {
+                    title: "Цікаві факти",
+                    isList: true,
+                    items: [
+                        { text: "Замок належить до типу водних замків (Wasserschloss) — рідкісний формат для регіону." },
+                        { text: "Комплекс зберіг історичне планування садиби." },
+                        { text: "Герб у дворі – копія оригіналу." },
+                        { text: "Досі використовується як приватна резиденція." }
+                    ]
+                },
+                construction_period: "приблизно 1326 рік",
+                meta: {
+                    title: "Замок Нойенхоф у Люденшайді – історія, опис, фото",
+                    description: "Замок Нойенхоф – водний замок XIV століття у Люденшайді. Історія, архітектура, цікаві факти, фото та практична інформація для туристів.",
+                    ogTitle: "Замок Нойенхоф – середньовічна садиба з ровом у Німеччині",
+                    ogDescription: "Старовинний замок Нойенхоф у Люденшайді: водяний рів, дворянська історія та атмосферна архітектура.",
+                    keywords: "замок Нойенхоф, Люденшайд, водний замок, Schloss Neuenhof, пам’ятки Німеччини, замки Німеччини, історичні будівлі, архітектура, туризм Німеччина",
+                    ogImage: "https://our-travels.info/foto/Germany/nrw/arnsberg/Märkischer-Kreis/luedenscheid/neuenhof/001.jpg"
+                }
+            },
+            de: {
+                name: "Schloss Neuenhof",
+                location: "Lüdenscheid, Deutschland",
+                short_description: "Das von einem Wassergraben umgebene Schloss Neuenhof gehört zu den bedeutenden historischen Architekturdenkmälern der Stadt Lüdenscheid. Die Anlage vereint ein Wohnanwesen, Wirtschaftsgebäude und einen Innenhof mit dekorativer Gestaltung.",
+                full_description: {
+                    title: "Beschreibung und Geschichte",
+                    items: [
+                        { bold: "Schloss Neuenhof ", text: "ist ein dreigeschossiges, rechteckiges Gebäude mit Satteldach, das auf einer von Wasser umgebenen Insel steht. Zur Hofseite hin ist die Fassade mit zwei Türmen geschmückt, zwischen denen sich ein Brunnen mit Wappen befindet." },
+                        { text: "Vor dem Hauptgebäude befindet sich ein Wirtschaftshof mit Bauten aus dem 18. und 19. Jahrhundert. Den östlichen Teil der Anlage schmücken dekorative schmiedeeiserne Tore, die den Status des ehemaligen Adelsgutes unterstreichen." },
+                        { text: "Das Schloss befindet sich in Privatbesitz und ist für Besucher geschlossen. Eine Besichtigung ist nur von außen möglich. Trotz des eingeschränkten Zugangs zählt das Schloss zu den wenigen gut erhaltenen Wasserschlössern der Region Sauerland." },
+                        { bold: "Geschichte", text: "Die erste urkundliche Erwähnung von Schloss Neuenhof stammt aus dem Jahr 1326. Ursprünglich diente es als befestigter Gutshof und Residenz eines lokalen Adelsgeschlechts." },
+                        { text: "Später wurde die Anlage mehrfach umgebaut und erweitert, insbesondere im 18. und 19. Jahrhundert, als Wirtschaftsgebäude hinzugefügt und der Innenhof mit dekorativer Gestaltung ausgebaut wurde. Das Schloss blieb ein Wohnsitz und hat seine Funktion als Residenz bis heute nicht verloren." },
+                        { text: "Schloss Neuenhof ist der Stammsitz des Adelsgeschlechts von Neuhoff, zu dem auch Theodor von Neuhoff gehörte – bekannt als König von Korsika." }
+                    ]
+                },
+                tickets_and_entry: {
+                    title: "Praktische Informationen",
+                    items: [
+                        { bold: "Adresse:", text: "Neuenhofer Straße 54, 58515 Lüdenscheid, Deutschland" },
+                        { bold: "Zugang: ", text: "nur Außenbesichtigung. Der Zutritt ist für Besucher nicht möglich" }
+                    ]
+                },
+                interestingFacts: {
+                    title: "Interessante Fakten",
+                    isList: true,
+                    items: [
+                        { text: "Das Schloss gehört zum Typ der Wasserschlösser (Wasserschloss) – eine eher seltene Bauform in der Region." },
+                        { text: "Die Anlage hat ihre historische Struktur bewahrt." },
+                        { text: "Das Wappen im Innenhof ist eine Kopie des Originals." },
+                        { text: "Bis heute wird das Anwesen als private Residenz genutzt." }
+                    ]
+                },
+                construction_period: "um 1326",
+                meta: {
+                    title: "Schloss Neuenhof in Lüdenscheid – Geschichte, Beschreibung, Fotos",
+                    description: "Schloss Neuenhof ist ein Wasserschloss aus dem 14. Jahrhundert in Lüdenscheid. Geschichte, Architektur, interessante Fakten, Fotos und praktische Informationen für Besucher.",
+                    ogTitle: "Schloss Neuenhof – mittelalterliches Anwesen mit Wassergraben in Deutschland",
+                    ogDescription: "Das historische Schloss Neuenhof in Lüdenscheid: Wassergraben, Adelsgeschichte und eindrucksvolle Architektur.",
+                    keywords: "Schloss Neuenhof, Lüdenscheid, Wasserschloss, Sehenswürdigkeiten Deutschland, Schlösser Deutschland, historische Gebäude, Architektur, Tourismus Deutschland",
+                    ogImage: "https://our-travels.info/foto/Germany/nrw/arnsberg/Märkischer-Kreis/luedenscheid/neuenhof/001.jpg"
                 }
             }
         }
@@ -903,6 +1053,7 @@ const datas = [
                 },
                 interestingFacts: {
                     title: "Интересные факты",
+                    isList: true,
                     items: [
                         { text: "Пещера расположена в самом известном пещерном районе Германии – Grüner Tal (Грюне Тал). " },
                         { text: "Dechenhöhle – единственная пещера в Германии с собственной железнодорожной остановкой. " },
@@ -945,6 +1096,7 @@ const datas = [
                 },
                 interestingFacts: {
                     title: "Цікаві факти",
+                    isList: true,
                     items: [
                         { text: "Печера розташована в найвідомішому печерному районі Німеччини – Grüner Tal (Грюне Тал)." },
                         { text: "Dechenhöhle – єдина печера в Німеччині з власною залізничною зупинкою." },
@@ -987,6 +1139,7 @@ const datas = [
                 },
                 interestingFacts: {
                     title: "Interessante Fakten",
+                    isList: true,
                     items: [
                         { text: "Die Höhle liegt in der bekanntesten Höhlenregion Deutschlands – Grüner Tal." },
                         { text: "Die Dechenhöhle ist die einzige Höhle in Deutschland mit eigenem Bahnanschluss." },

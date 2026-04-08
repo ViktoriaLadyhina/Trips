@@ -549,6 +549,10 @@ export const Fotos = {
         { path: "Germany/nrw/arnsberg/Märkischer-Kreis/luedenscheid/st_joseph_medardus/001.jpg", title: { ru: "Церковь Святого Йозефа и Медарда (фото взято с интернета)", ua: "Церква Святого Йосипа та Медарда (фото взято з Інтернету)", de: "Kirche St. Joseph und Medardus (Foto aus dem Internet)" } },
         { path: "Germany/nrw/arnsberg/Märkischer-Kreis/luedenscheid/st_joseph_medardus/002.jpg", title: { ru: "Церковь Святого Йозефа и Медарда (фото взято с интернета)", ua: "Церква Святого Йосипа та Медарда (фото взято з Інтернету)", de: "Kirche St. Joseph und Medardus (Foto aus dem Internet)" } },
       ],
+      schloss_neuenhof_luedenscheid: [
+        { path: "Germany/nrw/arnsberg/Märkischer-Kreis/luedenscheid/neuenhof/001.jpg", title: { ru: "Замок Нойенхоф, 2006", ua: "Замок Нойенхоф, 2006", de: "Schloss Neuenhof, 2006" } },
+        { path: "Germany/nrw/arnsberg/Märkischer-Kreis/luedenscheid/neuenhof/002.jpg", title: { ru: "Замок Нойенхоф (фото взято с интернета)", ua: "Замок Нойенхоф (фото взято з Інтернету)", de: "Schloss Neuenhof (Foto aus dem Internet)" } },
+      ]
     },
     iserlohn: {
       gallery: [

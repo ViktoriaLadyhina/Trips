@@ -60,6 +60,7 @@ const datas = [
             description: "Entdecken Sie die Altstadt von Köln: enge Gassen, gotische Kathedralen, historische Plätze, Museen und die Rheinuferpromenade. Ein nützlicher Reiseführer für Spaziergänge und Besuchsplanung.",
             ogTitle: "Altstadt Köln – Herz der Geschichte und Kultur der Stadt",
             ogDescription: "Spazieren Sie durch die Altstadt von Köln: historische Gebäude, Museen, Plätze, Brauhäuser und die malerische Rheinuferpromenade. Perfekt für Touristen und Geschichtsinteressierte.",
+            keywords: "Altstadt Köln, Köln, historisches Zentrum, Architektur Köln, touristische Routen, Sehenswürdigkeiten Köln, mittelalterliche Architektur, Stadtrundgang, Kulturerbe, Museen Köln, historische Gebäude, Platz, Türme, Tourismus Deutschland",
             ogImage: "https://our-travels.info/foto/Germany/nrw/koln/koln-city/altstadt/005.jpg"
         }
     },
@@ -136,6 +137,7 @@ const datas = [
             description: "Der Kölner Dom – Symbol der Stadt und Meisterwerk gotischer Architektur. Baugeschichte, Reliquien, Glasfenster, Glocken und Geheimnisse des Doms.",
             ogTitle: "Kölner Dom: Geschichte, Architektur und Reliquien",
             ogDescription: "Tauchen Sie ein in die Geschichte des Kölner Doms – Größe, Reliquien, Architektur und Intrigen des gotischen Meisterwerks.",
+            keywords: "Kölner Dom, Köln, gotische Architektur, historisches Zentrum, touristische Routen, Sehenswürdigkeiten Deutschland, christliche Architektur, religiöse Denkmäler, Türme, Kultstätte, Kulturdenkmal, Tourismus, Führungen, Dom",
             ogImage: "https://our-travels.info/foto/Germany/nrw/koln/koln-city/koln-cathedral/001.jpg"
         }
     },
@@ -194,6 +196,7 @@ const datas = [
             description: "Kölner Rathaus: gotischer Turm, Renaissance-Loggia",
             ogTitle: "Kölner Rathaus: gotischer Turm, Renaissance-Loggia",
             ogDescription: "Das Kölner Rathaus – das älteste Verwaltungsgebäude Deutschlands, vereint gotischen Turm, Renaissance-Loggia und den historischen Hansasaal.",
+            keywords: "Kölner Rathaus, Köln, historisches Zentrum, mittelalterliche Architektur, städtische Architektur, Verwaltungsgebäude, Türme, Sehenswürdigkeiten Köln, Stadtrat, touristische Routen, Kulturerbe, Tourismus Deutschland",
             ogImage: "https://our-travels.info/foto/Germany/nrw/koln/koln-city/rathaus-koeln/Rathaus-Köln.jpg"
         }
     },
@@ -230,6 +233,7 @@ const datas = [
             description: "Liste der größten romanischen Kirchen Kölns in der Altstadt. Architektur, historische Fakten und kulturelles Erbe der Stadt.",
             ogTitle: "Romanische Kirchen der Altstadt von Köln",
             ogDescription: "Entdecken Sie die 12 größten romanischen Kirchen Kölns, ihre Architektur, Geschichte und Relikte aus dem XI.–XIII. Jahrhundert.",
+            keywords: "romanische Kirchen, Köln, Altstadt, religiöse Architektur, mittelalterliche Kirchen, Architektur Deutschland, historische Kirchen, Kulturerbe, Basiliken, Klöster, Sehenswürdigkeiten Köln, Tourismus Deutschland, Kirchenarchitektur",
             ogImage: "https://our-travels.info/foto/Germany/nrw/koln/koln-city/altstadt/romanische_kirchen/001.jpg"
         }
     },
@@ -274,6 +278,7 @@ const datas = [
             description: "Groß St. Martin – romanische Kirche in der Altstadt von Köln am Rhein. Geschichte, Architektur, Fakten und Besuchsinformationen.",
             ogTitle: "Groß St. Martin – Symbol der romanischen Kirchen Kölns",
             ogDescription: "Erfahren Sie die Geschichte einer der markantesten Kirchen Kölns mit mächtigem Turm und mittelalterlicher Vergangenheit.",
+            keywords: "Kirche, romanische Architektur, Köln, Altstadt, religiöse Architektur, historisches Gebäude, Sehenswürdigkeiten Deutschland, Turm, Kloster, Mittelalter, Architektur, Tourismus, Stadtpanorama",
             ogImage: "https://our-travels.info/foto/Germany/nrw/koln/koln-city/altstadt/romanische_kirchen/gross_st_martin/001.jpg"
         }
     },
@@ -340,6 +345,7 @@ const datas = [
             description: "St. Maria im Kapitol – die größte romanische Kirche Kölns, erbaut im 11. Jahrhundert auf den Überresten eines römischen Tempels. Geschichte, Architektur und mittelalterliche Reliquien.",
             ogTitle: "Kirche St. Maria im Kapitol – Altstadt Köln",
             ogDescription: "St. Maria im Kapitol – eine der ältesten und bedeutendsten Kirchen Kölns, auf den Überresten eines römischen Tempels erbaut, bekannt für ihre geschnitzten Türen aus dem 11. Jahrhundert und die geräumige Krypta.",
+            keywords: "Kirche, romanische Architektur, Köln, Altstadt, religiöse Architektur, historisches Gebäude, Mittelalter, Kloster, Basilika, Dreikonchenanlage, Architektur, Sehenswürdigkeiten Deutschland, Tourismus, historische Kirche",
             ogImage: "https://our-travels.info/foto/Germany/nrw/koln/koln-city/altstadt/romanische_kirchen/stMariaImKapitol/001.jpg"
         }
     },
@@ -386,6 +392,7 @@ const datas = [
             description: "Die historische Barockkirche St. Mariä Himmelfahrt im Zentrum von Köln – eine ehemalige Jesuitenkirche des 17. Jahrhunderts mit reicher Architektur, die nach dem Krieg restauriert wurde. Erfahren Sie mehr über Geschichte, Architektur und interessante Fakten.",
             ogTitle: "St. Mariä Himmelfahrt – historische Barockkirche in Köln",
             ogDescription: "Tauchen Sie ein in die Atmosphäre barocker Architektur im Herzen Kölns! St. Mariä Himmelfahrt ist ein bedeutendes religiöses Bauwerk der Altstadt mit reicher Geschichte und beeindruckendem Innenraum.",
+            keywords: "Kirche Mariä Himmelfahrt, Köln, gotische Architektur, historisches Zentrum, religiöse Architektur, Sehenswürdigkeiten Köln, mittelalterliche Kirche, Kloster, Kultstätte, Tourismus Deutschland, Führungen, historische Gebäude",
             ogImage: "https://our-travels.info/foto/Germany/nrw/koln/koln-city/altstadt/st_maria_himmelfahrt/001.jpg"
         }
     },
@@ -447,6 +454,7 @@ const datas = [
             description: "Der Gürzenich in Köln wurde in den Jahren 1441–1452 als Gebäude für städtische Feierlichkeiten errichtet. Heute finden hier Konzerte, Bankette und offizielle Empfänge statt.",
             ogTitle: "Gürzenich, Köln – historisches Gebäude und Veranstaltungszentrum",
             ogDescription: "Entdecken Sie den Gürzenich in Köln – ein historisches Bauwerk aus dem 15. Jahrhundert, das nach dem Krieg wiederaufgebaut wurde und heute Konzerte, Karnevalssitzungen und festliche Empfänge beherbergt.",
+            keywords: "Gürzenich, Köln, historischer Konzertsaal, Zunfthaus, Kulturerbe, historisches Gebäude, Architektur Köln, Musikveranstaltungen, Konzerte, mittelalterliches Gebäude, Sehenswürdigkeiten Köln, Tourismus Deutschland, historische Gebäude, Events",
             ogImage: "https://our-travels.info/foto/Germany/nrw/koln/koln-city/altstadt/guerzenich_koln/001.jpg"
         }
     },
@@ -502,6 +510,7 @@ const datas = [
             description: "Das Römisch-Germanische Museum ist ein einzigartiges archäologisches Museum in Köln, errichtet über einer römischen Villa. Dionysosmosaik, Glas, Schmuck und Geschichte der Stadt Colonia.",
             ogTitle: "Römisch-Germanisches Museum Köln — Geschichte und Dionysosmosaik",
             ogDescription: "Museum der antiken Colonia: Dionysosmosaik, römisches Glas und Archäologie in Köln. Erfahren Sie, wie die Antike unter der modernen Stadt erhalten blieb.",
+            keywords: "Römisch-Germanisches Museum, Köln, Sehenswürdigkeit, Archäologie, römische Geschichte, Antike, historische Exponate, Museum Köln, Kulturerbe, mittelalterliche Archäologie, alte Funde, Sammlungen, Tourismus Deutschland, historische Artefakte, Führungen",
             ogImage: "https://our-travels.info/foto/Germany/nrw/koln/koln-city/roemisch-germanisches-museum/001.jpg"
         }
     },
@@ -555,6 +564,7 @@ const datas = [
             description: "Das Duftmuseum im Farina-Haus, auch bekannt als Haus des Kölnisch Wassers, ist das älteste Duftmuseum in Köln und die Geburtsstätte des berühmten Eau de Cologne. Hier schuf Johann Maria Farina 1709 das erste Eau de Cologne.",
             ogTitle: "Farina-Haus in Köln – Haus des Kölnisch Wassers und Museum des Eau de Cologne",
             ogDescription: "Besuchen Sie das Duftmuseum im Farina-Haus, das auch als Haus des Kölnisch Wassers bekannt ist – die Heimat des legendären Eau de Cologne. Erleben Sie Geschichte, Düfte und die dreihundertjährige Tradition des Eau de Cologne.",
+            keywords: "Farina Duftmuseum, Köln, Sehenswürdigkeit, Parfümerie, historisches Museum, Geschichte der Düfte, Museum Köln, Kulturerbe, Düfte, Ausstellung, Sammlungen, Tourismus Deutschland, Führungen, historisches Gebäude",
             ogImage: "https://our-travels.info/foto/Germany/nrw/koln/koln-city/farina-duftmuseum/001.jpg"
         }
     },
@@ -606,10 +616,11 @@ const datas = [
         },
         coord: { lat: 50.940951, lng: 6.960385 },
         meta: {
-            title: "Museum Ludwig — Zeitgenössische Kunst in Köln",
+            title: "Museum Ludwig – Zeitgenössische Kunst in Köln",
             description: "Das Museum Ludwig in Köln ist eine der führenden Sammlungen zeitgenössischer Kunst weltweit, gegründet auf der Sammlung des deutschen Industriellen Peter Ludwig und seiner Frau Irene.",
-            ogTitle: "Museum Ludwig — Zeitgenössische Kunst in Köln",
+            ogTitle: "Museum Ludwig – Zeitgenössische Kunst in Köln",
             ogDescription: "Besuchen Sie das Museum Ludwig in Köln, eine der führenden Sammlungen zeitgenössischer Kunst weltweit, gegründet auf der Sammlung des deutschen Industriellen Peter Ludwig und seiner Frau Irene.",
+            keywords: "Museum Ludwig, Köln, Sehenswürdigkeit, moderne Kunst, Museum Köln, Kunstsammlungen, Kulturerbe, Ausstellungen, Pop-Art, Malerei, Skulptur, Tourismus Deutschland, Führungen, historisches Gebäude",
             ogImage: "https://our-travels.info/foto/Germany/nrw/koln/koln-city/museum-ludwig/001.jpg"
         }
     },
@@ -665,6 +676,7 @@ const datas = [
             description: "Das Schokoladenmuseum in Köln zeigt den Weg des Kakaos von der tropischen Plantage bis zur Schokoladentafel. Besuchen Sie die gläserne Fabrik, den 200-kg-Schokoladenbrunnen und entdecken Sie die Geschichte der süßen Versuchung.",
             ogTitle: "Schokoladenmuseum Köln – Das süßeste Museum Deutschlands",
             ogDescription: "Tauchen Sie ein in die Welt von Kakao und Schokolade in Köln: von alten Zivilisationen bis zur modernen Fabrik und dem berühmten Schokoladenbrunnen.",
+            keywords: "Schokoladenmuseum, Köln, Sehenswürdigkeit, Schokolade, Konditorkunst, Museum Köln, Ausstellungen, Schokoladenherstellung, Kulturerbe, Verkostungen, Tourismus Deutschland, Führungen, historisches Gebäude",
             ogImage: "https://our-travels.info/foto/Germany/nrw/koln/koln-city/schokoladenmuseum/001.jpg"
         }
     },
@@ -740,6 +752,7 @@ const datas = [
             description: "MiQua – ein unterirdisches Museum im Zentrum von Köln, das römische, jüdische und mittelalterliche archäologische Schichten der Stadt zeigt.",
             ogTitle: "MiQua – Museum im archäologischen Viertel Köln",
             ogDescription: "Das unterirdische Museum MiQua ermöglicht das Durchschreiten von 2000 Jahren Kölner Geschichte, einschließlich Praetorium, Mikwe und mittelalterlicher Bauten.",
+            keywords: "Museum im Archäologischen Quartier Köln, MiQua, Köln, Sehenswürdigkeit, Archäologie, römische Geschichte, Museum Köln, historische Funde, Kulturerbe, Ausstellungen, Führungen, alte Artefakte, Tourismus Deutschland, mittelalterliche Archäologie",
             ogImage: "https://our-travels.info/foto/Germany/nrw/koln/koln-city/miqua/001.jpg"
         }
     },
@@ -796,10 +809,11 @@ const datas = [
         },
         coord: { lat: 50.93729, lng: 6.95837 },
         meta: {
-            title: "Wallraf-Richartz-Museum — Kunst vom Mittelalter bis zum Impressionismus",
+            title: "Wallraf-Richartz-Museum – Kunst vom Mittelalter bis zum Impressionismus",
             description: "Das Wallraf-Richartz-Museum in Köln ist das älteste Museum der Stadt mit Sammlungen von Malerei, Skulptur und Grafik vom Mittelalter bis zum frühen 20. Jh., einschließlich des Fonds Fondation Corboud mit Impressionisten.",
-            ogTitle: "Wallraf-Richartz-Museum — Kunst vom Mittelalter bis zum Impressionismus",
+            ogTitle: "Wallraf-Richartz-Museum – Kunst vom Mittelalter bis zum Impressionismus",
             ogDescription: "Entdecken Sie das Wallraf-Richartz-Museum in Köln: Mittelalterliche und barocke Kunst sowie die Impressionisten-Sammlung Fondation Corboud.",
+            keywords: "Wallraf-Richartz-Museum, Köln, Sehenswürdigkeit, Kunst, Museum Köln, Malerei, Skulptur, Kunstsammlungen, Kulturerbe, Ausstellungen, mittelalterliche Kunst, Tourismus Deutschland, Führungen, historisches Gebäude",
             ogImage: "https://our-travels.info/foto/Germany/nrw/koln/koln-city/wallraf_richartz_museum/001.jpg"
         }
     },
@@ -855,6 +869,7 @@ const datas = [
             description: "Entdecken Sie die Kunst Chinas, Koreas und Japans in Köln: buddhistische Malerei, Holzskulpturen, japanische Schirme und traditioneller japanischer Garten.",
             ogTitle: "Museum für Ostasiatische Kunst (Köln)",
             ogDescription: "Besuchen Sie das Museum in Köln mit einer einzigartigen Sammlung ostasiatischer Kunst: Malerei, Skulpturen, japanische Schirme und ein schöner japanischer Garten.",
+            keywords: "Museum für Ostasiatische Kunst, Köln, Sehenswürdigkeit, ostasiatische Kunst, Museum Köln, asiatische Kultur, Ausstellungen, Kunstsammlungen, Kulturerbe, Skulptur, Malerei, Tourismus Deutschland, Führungen, historisches Gebäude",
             ogImage: "https://our-travels.info/foto/Germany/nrw/koln/koln-city/ostasiatische_kunst_koln/001.jpg"
         }
     },
@@ -914,10 +929,11 @@ const datas = [
         founder: "Alexander Schnütgen – katholischer Theologe und Sammler, der christliche Kunstwerke in ganz Europa zusammengetragen hat. Seine private Sammlung bildete die Grundlage des Museums",
         coord: { lat: 50.93472, lng: 6.95144 },
         meta: {
-            title: "Museum Schnütgen in Köln — mittelalterliche Kunst",
+            title: "Museum Schnütgen in Köln – mittelalterliche Kunst",
             description: "Das Museum Schnütgen in Köln – ein einzigartiges Museum für mittelalterliche Kunst im Gebäude der romanischen Kirche aus dem 12. Jahrhundert. Skulpturen, Reliquiare, Glasfenster und kirchliche Schätze.",
-            ogTitle: "Museum Schnütgen — mittelalterliche Kunst in einer alten Kirche",
+            ogTitle: "Museum Schnütgen – mittelalterliche Kunst in einer alten Kirche",
             ogDescription: "Besuchen Sie das Museum Schnütgen – eines der atmosphärischsten Museen Kölns, untergebracht in der romanischen Kirche des 12. Jahrhunderts mit einer Sammlung seltener mittelalterlicher Kunst.",
+            keywords: "Schnütgen-Museum, Köln, Sehenswürdigkeit, mittelalterliche Kunst, Museum Köln, Kunstsammlungen, Kulturerbe, Skulptur, Reliquien, Ausstellungen, Tourismus Deutschland, Führungen, historisches Gebäude",
             ogImage: "https://our-travels.info/foto/Germany/nrw/koln/koln-city/schnuetgen/001.jpg"
         }
     },
@@ -978,6 +994,7 @@ const datas = [
             description: "Das Rautenstrauch-Joest-Museum in Köln ist eines der größten ethnologischen Museen Deutschlands. Ausstellungen zu Weltkulturen, Sammlungen, Geschichte, Öffnungszeiten und Preise.",
             ogTitle: "Rautenstrauch-Joest-Museum – Weltkulturen im Zentrum von Köln",
             ogDescription: "Modernes ethnologisches Museum mit einzigartigen Sammlungen der Kulturen der Welt, interaktiven Ausstellungen und Sonderprojekten in Köln.",
+            keywords: "Rautenstrauch-Joest-Museum, Köln, Sehenswürdigkeit, Ethnographie, Weltkultur, Museum Köln, Kunstsammlungen, Ausstellungen, Kulturerbe, Tourismus Deutschland, Führungen, historisches Gebäude, Volkskunst",
             ogImage: "https://our-travels.info/foto/Germany/nrw/koln/koln-city/rautenstrauch_joest_museum/001.jpg"
         }
     },
@@ -1040,6 +1057,7 @@ const datas = [
             description: "Besuchen Sie das historische Duft-Haus 4711 im Zentrum von Köln: Flagship-Store, Ausstellung über das berühmte Eau de Cologne, Führungen und Duft-Workshops.",
             ogTitle: "Duft-Haus 4711 – Legende von Köln und originaler Duft",
             ogDescription: "Entdecken Sie das Duft-Haus 4711: historisches Gebäude, Markenstore, Ausstellung und Führungen über das berühmte Kölnisch Wasser. Ideal für Touristen und Duftliebhaber.",
+            keywords: "Haus des Eau de Cologne 4711, Köln, Sehenswürdigkeit, Kölnisch Wasser, Parfümerie, Museum Köln, Parfumgeschichte, Kulturerbe, Ausstellungen, Verkostungen, Tourismus Deutschland, Führungen, historisches Gebäude",
             ogImage: "https://our-travels.info/foto/Germany/nrw/koln/koln-city/dufthaus_4711/001.jpg"
         }
     },
@@ -1098,6 +1116,7 @@ const datas = [
             description: "Museum für Angewandte Kunst Köln: Möbel, Textilien, Schmuck und Design vom Mittelalter bis heute. Adresse, Öffnungszeiten, Eintritt und Ausstellungen.",
             ogTitle: "Museum für Angewandte Kunst Köln – Sammlungen und Ausstellungen",
             ogDescription: "Entdecken Sie einzigartige Objekte des Designs und Kunsthandwerks verschiedener Epochen im Museum für Angewandte Kunst Köln. Besucherinformationen und Details.",
+            keywords: "Museum für Angewandte Kunst, Köln, Sehenswürdigkeit, dekorative Kunst, Museum Köln, Design, Keramik, Textilien, Ausstellungen, Kulturerbe, Tourismus Deutschland, Führungen, historisches Gebäude",
             ogImage: "https://our-travels.info/foto/Germany/nrw/koln/koln-city/makk_museum/001.JPG"
         }
     },
@@ -1156,6 +1175,7 @@ const datas = [
             description: "Besuchen Sie das Kölnische Stadtmuseum in Köln – ein modernes Stadtmuseum mit einer reichen Dauerausstellung und wechselnden Ausstellungen, die Kultur, Gesellschaft und Traditionen Kölns offenbaren. Adresse, Eintritt, Öffnungszeiten.",
             ogTitle: "Kölnisches Stadtmuseum – Geschichte von Köln",
             ogDescription: "Erfahren Sie die Geschichte von Köln durch einzigartige Objekte, interaktive Ausstellungen und moderne Präsentationen im Kölnischen Stadtmuseum.",
+            keywords: "Kölnisches Stadtmuseum, Köln, Sehenswürdigkeit, Stadtgeschichte, Museum Köln, Ausstellungen, Kulturerbe, städtisches Leben, Tourismus Deutschland, Führungen, historisches Gebäude, Archäologie",
             ogImage: "https://our-travels.info/foto/Germany/nrw/koln/koln-city/stadtmuseum/001.jpg"
         }
     },
@@ -1214,6 +1234,7 @@ const datas = [
             description: "Entdecken Sie 2.500 Jahre Sport- und Olympiageschichte im Museum in Köln: Exponate, interaktive Ausstellungen, Dach-Sportflächen und Sonderausstellungen.",
             ogTitle: "Deutsches Sport & Olympia Museum – Sportmuseum in Köln",
             ogDescription: "Tauchen Sie ein in die Geschichte des Sports von der Antike bis heute: über 2.000 Exponate, olympische Medaillen, interaktive Zonen und einzigartige Sportflächen auf dem Dach.",
+            keywords: "Deutsches Sport & Olympia Museum, Köln, Sehenswürdigkeit, Sport, Olympische Spiele, Museum Köln, Sportgeschichte, Ausstellungen, Kulturerbe, Tourismus Deutschland, Führungen, historisches Gebäude",
             ogImage: "https://our-travels.info/foto/Germany/nrw/koln/koln-city/sport_olympia_museum/001.jpg"
         }
     },
@@ -1270,6 +1291,7 @@ const datas = [
             description: "Erfahren Sie mehr über dokumentarische und konzeptionelle Fotografie in Köln: größtes Archiv von August Sander, Ausstellungen klassischer und zeitgenössischer Fotografen.",
             ogTitle: "Photographische Sammlung des SK Kulturfonds — Museum für Fotografie in Köln",
             ogDescription: "Tauchen Sie ein in die Welt der dokumentarischen und konzeptionellen Fotografie: Archiv von August Sander, internationale Projekte, wechselnde Ausstellungen und Bildungsprogramme.",
+            keywords: "Fotografische Sammlung der Kulturstiftung SK, Köln, Sehenswürdigkeit, Fotografie, zeitgenössische Kunst, Museum Köln, Sammlungen, Ausstellungen, Kulturerbe, Tourismus Deutschland, Führungen, historisches Gebäude",
             ogImage: "https://our-travels.info/foto/Germany/nrw/koln/koln-city/photographische_sammlung_sk_stiftung_kultur/001.jpg"
         }
     },
@@ -1322,6 +1344,7 @@ const datas = [
             "description": "Beschreibung der acht Kölner Brücken: Geschichte, Besonderheiten, interessante Fakten, inklusive der Liebesbrücke Hohenzollernbrücke.",
             "ogTitle": "Kölner Rheinbrücken",
             "ogDescription": "Vollständige Beschreibung aller acht Kölner Rheinbrücken mit Fakten, Geschichte und Architektur.",
+            keywords: "Brücken Köln über den Rhein, Köln, Sehenswürdigkeit, Brücken, Architektur, Verkehr, Rhein, Ingenieurbau, historische Brücken, Tourismus Deutschland, Führungen, Fotos, städtische Infrastruktur",
             "ogImage": "https://our-travels.info/foto/Germany/nrw/koln/koln-city/koln_bridges/001.jpg"
         }
     },
@@ -1359,6 +1382,7 @@ const datas = [
             description: "Entdecken Sie mittelalterliche Türme und Mauerfragmente in Köln. Erfahren Sie die Geschichte der alten Befestigungen der Altstadt und entdecken Sie wichtige historische Orientierungspunkte, die bis heute erhalten sind.",
             ogTitle: "Alte Türme und Befestigungen der Altstadt Kölns – ein Spaziergang durch die Geschichte der Stadt",
             ogDescription: "Spazieren Sie durch die Altstadt von Köln und entdecken Sie alte Türme und Befestigungen, die den Geist der mittelalterlichen Stadt bewahren und wichtige historische Denkmäler darstellen.",
+            keywords: "Alte Türme und Befestigungen der Altstadt Köln, Köln, Sehenswürdigkeit, Festungen, mittelalterliche Mauern, Architektur, historische Gebäude, Tourismus Deutschland, Führungen, Altstadt, Befestigungsanlagen, Kulturerbe",
             ogImage: "https://our-travels.info/foto/Germany/nrw/koln/koln-city/altstadt/old_towers/001.jpg"
         }
     },
@@ -1488,6 +1512,7 @@ const datas = [
             description: "Besuchen Sie den Skulpturenpark Köln – ein einzigartiger Freilicht-Skulpturenpark in der Nähe des Rheins und des Kölner Zoos. Moderne Skulpturen internationaler Künstler, freier Eintritt, Spaziergänge zwischen Kunst und Natur.",
             ogTitle: "Skulpturenpark Köln – Freilichtmuseum für Skulpturen",
             ogDescription: "Entdecken Sie den Skulpturenpark Köln: moderne Kunst im Freien, Skulpturen internationaler Künstler, Spaziergänge durch grüne Alleen und freier Eintritt täglich.",
+            keywords: "Skulpturenpark Köln, Köln, Sehenswürdigkeit, Skulpturen, zeitgenössische Kunst, Freilichtmuseum, Ausstellungen im Freien, Kulturerbe, Tourismus Deutschland, Führungen, Kunst im öffentlichen Raum, Stadtpark",
             ogImage: "https://our-travels.info/foto/Germany/nrw/koln/koln-city/skulpturenpark/001.jpg"
         }
     },
@@ -1549,6 +1574,7 @@ const datas = [
             description: "Entdecken Sie den Kölner Zoo, einen der ältesten Zoos Deutschlands. Erfahren Sie mehr über seine Geschichte, thematischen Expositionen, den Regenwald, den Elefantenpark und praktische Besuchsinformationen.",
             ogTitle: "Besuchen Sie den Kölner Zoo – über 10 000 Tiere und einzigartige Expositionen",
             ogDescription: "Erkunden Sie den Kölner Zoo: historische Gebäude, Südostasien-Regenwald, Elefantenpark und Aquarium. Perfekter Ort für Familien und Bildungsbesuche.",
+            keywords: "Kölner Zoo, Köln, Sehenswürdigkeit, Zoo, Tiere, Safari, Familienausflug, Kindertourismus, Führungen, Natur-Ausstellungen, Tourismus Deutschland, Bildungsprogramme, Stadtzoo",
             ogImage: "https://our-travels.info/foto/Germany/nrw/koln/koln-city/zoo/001.jpg"
         }
     },
@@ -1616,6 +1642,7 @@ const datas = [
             description: "Botanischer Garten und Forstpark Köln mit Pflanzen aus aller Welt und thematischen Zonen, einschließlich Friedenswald.",
             ogTitle: "Forstbotanischer Garten – Botanischer Garten und Forstpark Köln",
             ogDescription: "Der Garten und Forstpark Köln bieten Spaziergänge durch die Rhododendron-Ravine, den Japanischen Garten, die Heidewiese und den Friedenswald.",
+            keywords: "Botanischer Garten und Waldpark Köln, Köln, Sehenswürdigkeit, botanischer Garten, Park, Flora, Spaziergänge, Natur, Familienausflug, Führungen, Tourismus Deutschland, Pflanzen, Gartenarchitektur",
             ogImage: "https://our-travels.info/foto/Germany/nrw/koln/koln-city/forstbotanischer_garten/001.jpg"
         }
     },
@@ -1673,6 +1700,7 @@ const datas = [
             description: "Besuchen Sie den Botanischen Garten Flora in Köln: über 10.000 Pflanzenarten aus aller Welt, historische Alleen, thematische Gärten, Gewächshäuser und Erholung im Freien.",
             ogTitle: "Flora – Botanischer Garten und Park in Köln",
             ogDescription: "Entdecken Sie die Flora in Köln: Weltreise unter 10.000 Pflanzenarten, historische Gärten, Gewächshäuser und gemütliche Alleen zum Spazierengehen.",
+            keywords: "Botanischer Garten Flora, Köln, Sehenswürdigkeit, botanischer Garten, Flora, Pflanzen, Blumensammlungen, Kölner Parks, Spaziergänge in der Natur, Familienausflug, Führungen, Tourismus Deutschland, Gartenarchitektur",
             ogImage: "https://our-travels.info/foto/Germany/nrw/koln/koln-city/flora_garten_koln/001.jpg"
         }
     },
@@ -1731,6 +1759,7 @@ const datas = [
             description: "Der Rheinpark ist ein großer öffentlicher Park entlang des rechten Rheinufers im Stadtteil Deutz der Stadt Köln. Er stellt eine historisch und architektonisch bedeutende Grünanlage dar, bekannt für seine weitläufigen Rasenflächen, Blumenbeete, Spazierwege und den herrlichen Blick auf das Stadtzentrum mit dem Kölner Dom.",
             ogTitle: "Rheinpark (Rheinpark)",
             ogDescription: "Der Rheinpark ist ein großer öffentlicher Park entlang des rechten Rheinufers im Stadtteil Deutz der Stadt Köln. Er stellt eine historisch und architektonisch bedeutende Grünanlage dar, bekannt für seine weitläufigen Rasenflächen, Blumenbeete, Spazierwege und den herrlichen Blick auf das Stadtzentrum mit dem Kölner Dom.",
+            keywords: "Rheinpark, Köln, Sehenswürdigkeit, Park, Spaziergänge, Natur, Erholung im Freien, Familienausflug, Grünanlage, Führungen, Tourismus Deutschland, Stadtparks, Landschaftsgestaltung",
             ogImage: "https://our-travels.info/foto/Germany/nrw/koln/koln-city/rheinpark_koln/001.jpg"
         }
     },
@@ -1772,6 +1801,7 @@ const datas = [
             description: "Besuchen Sie den Tanzbrunnen – den historischen „Tanzenden Brunnen“ am Rhein in Köln. Konzerte, Festivals, kulturelle Events und malerische Ausblicke auf den Fluss. Erfahren Sie mehr über Geschichte und Architektur des Komplexes.",
             ogTitle: "Tanzbrunnen in Köln – Konzerte und kulturelle Veranstaltungen am Rhein",
             ogDescription: "Der Tanzbrunnen ist ein bekannter Kulturkomplex in Köln mit einer Geschichte von fast 100 Jahren. Konzerte, Festivals, Spaziergänge entlang des Rheins und das einzigartige „Sternwellenzelt“.",
+            keywords: "Tanzender Brunnen, Rheinpark, Köln, Sehenswürdigkeit, Brunnen, Wassershow, Familienausflug, Spaziergänge, touristische Attraktionen Köln, Unterhaltung, Tourismus Deutschland, Fotos, Führungen",
             ogImage: "https://our-travels.info/foto/Germany/nrw/koln/koln-city/rheinpark_koln/002.jpg"
         }
     },
@@ -1827,6 +1857,7 @@ const datas = [
             description: "Die Cologne Cable Car ist eine panoramische Seilbahn über den Rhein in Köln. Geschichte, Lage, Ausblicke auf den Kölner Dom, den Rheinpark und nützliche Informationen für Besucher.",
             ogTitle: "Cologne Cable Car – Panoramablick auf Köln aus der Höhe",
             ogDescription: "Die Cologne Cable Car verbindet die Rheinufer und bietet einen der schönsten Panoramablicke auf Köln, den Kölner Dom und den Rheinpark. Eine beliebte Sehenswürdigkeit und ein Wahrzeichen der Stadt.",
+            keywords: "Kölner Seilbahn, Köln, Sehenswürdigkeit, Seilbahn, Transport, Panoramablick, Rhein, touristische Attraktionen, Führungen, Städtetourismus, Unterhaltung, Deutschland, Fotos, Spaziergänge",
             ogImage: "https://our-travels.info/foto/Germany/nrw/koln/koln-city/rheinpark_koln/003.jpg"
         }
     },
@@ -1882,6 +1913,7 @@ const datas = [
             description: "Überreste des römischen Forts Divitia aus dem 4. Jahrhundert n. Chr., auch bekannt als Historischer Park Deutz, am rechten Rheinufer in Köln. Erhalten sind Turm, Mauerwerk und Fundamentreste. Für Besichtigungen im Rheinpark zugänglich.",
             ogTitle: "Ruinen des römischen Forts Divitia in Köln – Historischer Park Deutz, römische Befestigungsruinen",
             ogDescription: "Erkunden Sie die Überreste des römischen Forts Divitia, bekannt als Historischer Park Deutz, im Rheinpark Köln. Originale Mauern, Turm und Fundament sind für Spaziergänge und Besichtigungen geöffnet.",
+            keywords: "Ruinen des römischen Forts Divitia, Historischer Park Deutz, Köln, Sehenswürdigkeit, römisches Fort, Archäologie, historischer Park, antike Befestigungen, Tourismus Deutschland, römische Geschichte, Kultur, Fotos",
             ogImage: "https://our-travels.info/foto/Germany/nrw/koln/koln-city/rheinpark_koln/004.jpg"
         }
     },
@@ -1935,6 +1967,7 @@ const datas = [
             description: "Finkens Garten in Köln ist ein kostenloser Naturpark mit Biotopen, Bienenhaus und Bildungsprogrammen für Kinder und Erwachsene.",
             ogTitle: "Finkens Garten – Natur und Erlebnisse im Herzen der Stadt",
             ogDescription: "Verbringen Sie einen Tag im Finkens Garten: Entdecken Sie natürliche Landschaften, lernen Sie die Natur kennen und besuchen Sie das Bienenhaus und Bildungsangebote.",
+            keywords: "Ökologischer Garten Finkensgarten, Köln, Sehenswürdigkeit, ökologischer Garten, Botanischer Garten, Natur, Pflanzen, Spaziergänge, Familienausflug, Führungen, Tourismus Deutschland, Grünanlage, Bildungsprogramme",
             ogImage: "https://our-travels.info/foto/Germany/nrw/koln/koln-city/finkens_garten/001.jpg"
         }
     },
@@ -1984,6 +2017,7 @@ const datas = [
             description: "Der Decksteiner Weiher – ein malerischer künstlicher See im Grüngürtel von Köln. Beliebter Ort zum Spazierengehen, Sport treiben und zur Erholung in der Natur in der Nähe des Stadtzentrums.",
             ogTitle: "Decksteiner Weiher – grüner See Kölns",
             ogDescription: "Der Decksteiner Weiher ist einer der schönsten Erholungsorte Kölns. Spazierwege, Boote auf dem Wasser, grüne Parks und eine ruhige Atmosphäre nur wenige Kilometer vom Stadtzentrum entfernt.",
+            keywords: "Decksteiner Weiher, Köln, Sehenswürdigkeit, See, Teich, Spaziergänge, Natur, Erholung im Freien, Familienausflug, Gewässer, Tourismus Deutschland, Angeln, Park, Grünanlage",
             ogImage: "https://our-travels.info/foto/Germany/nrw/koln/koln-city/decksteiner_weiher/001.jpg"
         }
     },

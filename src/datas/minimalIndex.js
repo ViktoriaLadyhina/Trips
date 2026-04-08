@@ -60,6 +60,7 @@ const datas =
     christuskirche_luedenscheid: { ru: 'Псевдоготическая церковь Христа', de: 'Pseudogotische Christuskirche', ua: 'Псевдоготична церква Христа' },
     versetalsperre_luedenscheid: { ru: 'Водохранилище Верзе', de: 'Versetalsperre', ua: 'Водосховище Верзе' },
     st_joseph_medardus: { ru: 'Церковь Святого Йозефа и Медарда', de: 'Kirche St. Joseph und Medardus', ua: 'Церква Святого Йосипа та Медарда' },
+    schloss_neuenhof_luedenscheid: { ru: 'Замок Нойенхоф', de: 'Schloss Neuenhof', ua: 'Замок Нойенхоф' },
 
     // Altena
     burg_altena: { ru: 'Замок Альтена', de: 'Burg Altena', ua: 'Замок Альтена' },
@@ -67,6 +68,7 @@ const datas =
     fuelbecketalsperre_altena: { ru: 'Водохранилище Фюльбекке', de: 'Fuelbecketalsperre', ua: 'Водосховище Фюльбекке' },
     lutherkirche_altena: { ru: 'Евангелическо-лютеранская церковь Лютера', de: 'Lutherkirche Altena', ua: 'Євангелічно-лютеранська церква Лютера' },
     gustav_selve_altena: { ru: 'Памятник Густаву Сельве', de: 'Gustav-Selve-Denkmal', ua: 'Пам’ятник Густаву Сельве' },
+    st_matthaeus_church_altena: { ru: 'Приходская церковь Святого Матфея', de: 'Katholische Pfarrkirche St. Matthäus', ua: 'Парафіяльна церква Святого Матвія' },
 
     //Köln-city
     cologne_cathedral: { ru: 'Кёльнский собор', de: 'Kölner Dom', ua: 'Кельнський собор' },

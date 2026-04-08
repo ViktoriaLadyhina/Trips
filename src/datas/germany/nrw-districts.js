@@ -147,9 +147,9 @@ const datas = [
                     cities: [{ bold: 'Города, не принадлежащие районам (kreisfreie Städte):', text: 'Аахен (Aachen), Бонн (Bonn), Кёльн (Köln), Леверкузен (Leverkusen)' }]
                 },
                 meta: {
-                    title: "Кёльн — административный округ Северного Рейна-Вестфалия",
+                    title: "Кёльн – административный округ Северного Рейна-Вестфалия",
                     description: "Подробная информация об административном округе Кёльне: культура, история, достопримечательности округа.",
-                    ogTitle: "Кёльн — административный округ Северного Рейна-Вестфалия",
+                    ogTitle: "Кёльн – административный округ Северного Рейна-Вестфалия",
                     ogDescription: "Кёльн: административный округ Северного Рейна-Вестфалии, города, история и интересные факты.",
                     ogImage: "/nrw/koeln.jpg"
                 }
@@ -181,9 +181,9 @@ const datas = [
                     ]
                 },
                 meta: {
-                    title: "Кельн — адміністративний округ Північного Рейну-Вестфалія",
+                    title: "Кельн – адміністративний округ Північного Рейну-Вестфалія",
                     description: "Детальна інформація про Кельн: культура, історія, визначні місця округу.",
-                    ogTitle: "Кельн — адміністративний округ Північного Рейну-Вестфалія",
+                    ogTitle: "Кельн – адміністративний округ Північного Рейну-Вестфалія",
                     ogDescription: "Кельн: адміністративний округ Північного Рейну-Вестфалія, міста, історія та цікаві факти.",
                     ogImage: "/nrw/koeln.jpg"
                 }
@@ -215,9 +215,9 @@ const datas = [
                     ]
                 },
                 meta: {
-                    title: "Köln — Verwaltungsbezirk Nordrhein-Westfalens",
+                    title: "Köln – Verwaltungsbezirk Nordrhein-Westfalens",
                     description: "Detaillierte Informationen über Köln: Kultur, Geschichte, Sehenswürdigkeiten des Bezirks.",
-                    ogTitle: "Köln — Bezirk NRW",
+                    ogTitle: "Köln – Bezirk NRW",
                     ogDescription: "Köln: Verwaltungsbezirk in Nordrhein-Westfalen, Städte, Geschichte und interessante Fakten.",
                     ogImage: "/nrw/koeln.jpg"
                 }

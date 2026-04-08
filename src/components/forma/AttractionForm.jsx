@@ -171,6 +171,7 @@ const AttractionForm = () => {
         ...(watchedFields.interestingFacts?.some(item => item.bold.trim() || item.text.trim()) && {
           interestingFacts: {
             title: "Интересные факты",
+            isList: true,
             items: watchedFields.interestingFacts
               .filter(item => item?.bold?.trim() || item?.text?.trim())
               .map(item => ({
