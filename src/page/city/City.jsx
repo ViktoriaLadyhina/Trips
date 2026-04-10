@@ -1,14 +1,13 @@
 import { Link, useParams } from 'react-router';
+import { useSelector } from 'react-redux';
+import { Helmet } from "react-helmet-async";
 import { photosByCountry } from "../../datas/fotos/index.js";
 
 import BreadCrumbs from '../../components/breadCrumbs/BreadCrumbs.jsx';
 import InfoBlock from '../../components/InfoBlock/InfoBlock.jsx';
-import { useMeta } from '../../hooks/useMeta.js';
 import './City.scss'
 import BtnAttr from '../../components/btn-attr/BtnAttr.jsx';
-import { useEffect } from 'react';
 import useCity from '../../hooks/useCity.js';
-import { useSelector } from 'react-redux';
 import useEvents from '../../hooks/useEvents.js';
 import datas from '../../datas/minimalIndex'
 
@@ -18,22 +17,13 @@ const City = () => {
     const { countryPath, regionPath, districtPath, cityPath } = useParams();
     const { lang } = useSelector((state) => state.language);
     const { city, error } = useCity(countryPath, regionPath, districtPath, cityPath);
-     const { events } = useEvents(countryPath, regionPath, districtPath, cityPath);
-
-    useMeta(city?.meta);
-
-    useEffect(() => {
-        if (city?.name) {
-            document.title = city.name;
-        }
-    }, [city?.name]);
+    const { events } = useEvents(countryPath, regionPath, districtPath, cityPath);
 
     if (error) return <p>{error}</p>;
     if (!city) return <p>Loading...</p>;
 
     const photos = photosByCountry[countryPath];
     const cityEvents = events?.filter(ev => ev.cities?.includes(cityPath)) || [];
-
 
     // Хлебные крошки
     const crumbs = [
@@ -47,6 +37,19 @@ const City = () => {
 
     return (
         <div className='city'>
+
+            {city?.meta && (
+                <Helmet>
+                    <title>{city.meta.title}</title>
+
+                    <meta name="description" content={city.meta.description} />
+
+                    <meta property="og:title" content={city.meta.ogTitle} />
+                    <meta property="og:description" content={city.meta.ogDescription} />
+                    <meta property="og:image" content={city.meta.ogImage} />
+                </Helmet>
+            )}
+            
             {city && (
                 <>
                     <BreadCrumbs crumbs={crumbs} />

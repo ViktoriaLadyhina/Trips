@@ -81,6 +81,12 @@
                 text-align: justify;
             }
 
+                        &-text {
+                @include body-text;
+                text-align: justify;
+                display: inline;
+            }
+
             &-item {
                 display: flex;
                 align-items: flex-start;

@@ -1,6 +1,7 @@
-import { useEffect, useState } from 'react'
+import { useState } from 'react'
 import { useParams } from 'react-router';
 import { useSelector } from 'react-redux';
+import { Helmet } from "react-helmet-async";
 
 import BreadCrumbs from '../../components/breadCrumbs/BreadCrumbs.jsx';
 import InfoBlock from '../../components/InfoBlock/InfoBlock.jsx';
@@ -41,11 +42,11 @@ const Attraction = () => {
         sort: 'rating',
     });
 
-    useEffect(() => {
-        if (attraction?.name) {
-            document.title = attraction.name;
-        }
-    }, [attraction, lang]);
+    <Helmet>
+        <title>{attraction?.name}</title>
+    </Helmet>
+
+    const meta = attraction?.meta;
 
     // Преобразуем в массив для Gallery
     const images = attractionPhotos.map(photo => ({
@@ -122,7 +123,18 @@ const Attraction = () => {
 
 
     return (
+
         <div className="attraction">
+            {meta && (
+                <Helmet>
+                    <title>{meta?.title}</title>
+                    <meta name="description" content={meta?.description} />
+                    {meta?.keywords && (<meta name="keywords" content={meta.keywords} />)}
+                    <meta property="og:title" content={meta?.ogTitle} />
+                    <meta property="og:description" content={meta?.ogDescription} />
+                    <meta property="og:image" content={meta?.ogImage} />
+                </Helmet>
+            )}
             <BreadCrumbs crumbs={crumbs} />
 
             <div className='attraction__title'>{attraction.name && (attraction.name)}</div>

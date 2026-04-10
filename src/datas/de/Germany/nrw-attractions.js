@@ -2067,10 +2067,11 @@ const datas = [
         },
         construction_period: "13. Jahrhundert (Entstehung der Siedlung um die Burg)",
         meta: {
-            title: "Altstadt Monschau — Mittelalterliches Zentrum in der Eifel | Deutschland",
+            title: "Altstadt Monschau – Mittelalterliches Zentrum in der Eifel | Deutschland",
             description: "Die Altstadt von Monschau ist eines der schönsten historischen Zentren Deutschlands mit Fachwerkhäusern, dem Fluss Rur und mittelalterlicher Atmosphäre.",
-            ogTitle: "Altstadt Monschau — Märchenhaftes Deutschland",
+            ogTitle: "Altstadt Monschau – Märchenhaftes Deutschland",
             ogDescription: "Ein Spaziergang durch die Altstadt von Monschau ist eine Reise in die Vergangenheit: enge Gassen, historische Häuser und die Romantik der Eifel.",
+            keywords: "Altstadt Monschau, Monschau, Sehenswürdigkeit, historisches Zentrum, enge Gassen, Fachwerkhäuser, Tourismus Deutschland, Spaziergänge, Kultur, Architektur, Führungen, atmosphärische Stadt, Fotos",
             ogImage: "https://our-travels.info/foto/Germany/nrw/koln/Aachen/monschau/002.jpg"
         }
     },
@@ -2128,6 +2129,7 @@ const datas = [
             description: "Das historische Museum Rotes Haus in Monschau ist ein prachtvolles Wohn- und Handelshaus des 18. Jahrhunderts der Tuchmacherfamilie Scheibler. Ausstellungen über Leben, Handwerk und Textilhandel in ganz Europa. Praktische Besucherinformationen.",
             ogTitle: "Rotes Haus Monschau – Geschichte, Stoffe und Leben des 18. Jahrhunderts",
             ogDescription: "Besuchen Sie das Rote Haus in Monschau: ein einzigartiges Museum zur Geschichte des Familienhandels mit Textilien, prunkvollen Innenräumen und Handwerksausstellungen im Herzen der Altstadt. ",
+            keywords: "Rotes Haus, Monschau, Sehenswürdigkeit, Museum, historisches Haus, Fachwerkhaus, Architektur, Kulturerbe, Führungen, Tourismus Deutschland, Fotos, historische Gebäude, Altstadt Monschau",
             ogImage: "https://our-travels.info/foto/Germany/nrw/koln/Aachen/monschau/rotes_haus/001.jpg"
         }
     },
@@ -2186,6 +2188,7 @@ const datas = [
             description: "Besuchen Sie die Senfmühle in Monschau mit über 100-jähriger Geschichte. Beobachten Sie die Herstellung, probieren Sie über 20 Sorten und kaufen Sie Produkte vor Ort.",
             ogTitle: "Historische Senfmühle – traditionelles deutsches Senfparadies",
             ogDescription: "Erfahren Sie, wie im Herzen von Monschau legendärer deutscher Senf nach alten Rezepten hergestellt wird! Mehr als 20 Geschmacksrichtungen, Live-Herstellung und ein gemütlicher Laden direkt im historischen Zentrum.",
+            keywords: "Historische Senfmühle, Monschau, Sehenswürdigkeit, Mühle, Senf, historische Produktion, Museum, Führungen, Tourismus Deutschland, Traditionen, Kultur, Altstadt Monschau, Fotos",
             ogImage: "https://our-travels.info/foto/Germany/nrw/koln/Aachen/monschau/senfmuehle/001.jpg"
         }
     },
@@ -2238,6 +2241,7 @@ const datas = [
             description: "Besuchen Sie die Glashütte Monschau: Live-Demonstrationen der Glasmacher, Ausstellung von Glasprodukten und traditionelles Handwerk für die ganze Familie.",
             ogTitle: "Glashütte Monschau – lebendige Erfahrung mit Glasmachern im Herzen der Eifel",
             ogDescription: "Erfahren Sie, wie Meister heißes Glas in Kunstwerke verwandeln. Geschichte, Handwerk und Ausstellungen in historischem Monschau.",
+            keywords: "Glasbläserei, Monschau, Sehenswürdigkeit, Glasbläser, handwerkliche Produktion, Museum, Führungen, Tourismus Deutschland, Traditionen, Kultur, Altstadt Monschau, Fotos, Handwerksbetriebe",
             ogImage: "https://our-travels.info/foto/Germany/nrw/koln/Aachen/monschau/glashuette/001.jpg"
         }
     },
@@ -2284,6 +2288,7 @@ const datas = [
             description: "Die mittelalterliche Burg Monschau (Burg Monschau) auf einem Hügel über Monschau in Deutschland. Geschichte seit dem 13. Jahrhundert, Panoramablicke, Jugendherberge und kulturelle Veranstaltungen im Herzen der Eifel.",
             ogTitle: "Burg Monschau – Mittelalterliche Burg über Monschau",
             ogDescription: "Entdecken Sie die Burg Monschau: eine mittelalterliche Festung mit malerischen Ausblicken auf die Stadt, sommerlichen Kulturveranstaltungen und der einzigartigen Atmosphäre der historischen Eifel.",
+            keywords: "Burg Monschau, Monschau, Sehenswürdigkeit, Festung, mittelalterliche Burg, historische Architektur, Führungen, Tourismus Deutschland, Kultur, Altstadt Monschau, Fotos, historische Gebäude",
             ogImage: "https://our-travels.info/foto/Germany/nrw/koln/Aachen/monschau/burg/001.jpg"
         }
     },
@@ -2353,6 +2358,7 @@ const datas = [
             description: "Das Ensemble der Schlösser Augustusburg und Falkenlust in Brühl – ein Meisterwerk des Barock und Rokoko, ergänzt durch französische und englische Gärten, Brunnen, Alleen und Spiegelbecken. Geschichte, Stil, interessante Fakten.",
             ogTitle: "Brühler Schlösser: Architektur, Gärten und Legenden",
             ogDescription: "Entdecken Sie die Brühler Schlösser – ihre Pracht, Innenräume, den Park mit Parterre, Alleen und englischem Landschaftsgarten, ihre kulturelle Bedeutung und ihren UNESCO-Status.",
+            keywords: "Schlösser Brühl, Augustusburg, Falkenlust, Brühl, Sehenswürdigkeit, Schlossanlage, Barockarchitektur, historische Gebäude, Museum, Führungen, Tourismus Deutschland, Kulturerbe, UNESCO, Fotos",
             ogImage: "https://our-travels.info/foto/Germany/nrw/koln/Rhein-Erft-Kreis/bruhl/bruhl_palaces/001.jpg"
         }
     },
@@ -2427,6 +2433,7 @@ const datas = [
             description: "Das einzige Museum weltweit, das Max Ernst gewidmet ist. Sammlung, Geschichte, Dadaismus, Surrealismus, Sonderausstellungen.",
             ogTitle: "Max-Ernst-Museum — Brühl, Deutschland",
             ogDescription: "Entdecken Sie das Max-Ernst-Museum in Brühl, seine Sammlung und Ausstellungen, die dem Dadaismus und Surrealismus gewidmet sind.",
+            keywords: "Max Ernst Museum, Brühl, Sehenswürdigkeit, moderne Kunst, Malerei, Skulptur, Museum, Ausstellungen, Tourismus Deutschland, Kultur, Fotos",
             ogImage: "https://our-travels.info/foto/Germany/nrw/koln/Rhein-Erft-Kreis/bruhl/max_ernst_museum/Max-Ernst-Museum.jpg"
         }
     },
@@ -2483,6 +2490,7 @@ const datas = [
             description: "Phantasialand – einer der meistbesuchten Parks Europas mit über 30 Attraktionen, Themenbereichen und einzigartigen Hotels.",
             ogTitle: "Phantasialand – Brühl, Deutschland",
             ogDescription: "Entdecken Sie Phantasialand in Brühl: Attraktionen, Themenbereiche, Hotels und Unterhaltung für die ganze Familie.",
+            keywords: "Phantasialand, Brühl, Sehenswürdigkeit, Freizeitpark, Attraktionen, Unterhaltung, Familienausflug, Achterbahnen, Shows, Tourismus Deutschland, Kindererholung, Themenpark, Fotos",
             ogImage: "https://our-travels.info/foto/Germany/nrw/koln/Rhein-Erft-Kreis/bruhl/phantasialand/001.jpg"
         },
     },
@@ -2536,6 +2544,7 @@ const datas = [
             description: "KERAMION: Dauerausstellung und Sonderausstellungen von Keramik, Geschichte der Produktion und zeitgenössische künstlerische Perspektiven.",
             ogTitle: "KERAMION – Zentrum für moderne und historische Keramik, Frechen",
             ogDescription: "Erfahren Sie mehr über die Sammlung von Cremer, die historische Keramik aus Frechen und die Ausstellungen im KERAMION.",
+            keywords: "Keramion, Frechen, Sehenswürdigkeit, Keramikmuseum, Keramik, moderne Kunst, Museum, Ausstellungen, Kulturerbe, Tourismus Deutschland, Führungen, Design, angewandte Kunst",
             ogImage: "https://our-travels.info/foto/Germany/nrw/koln/Rhein-Erft-Kreis/frechen/keramion/001.jpg"
         }
     },
@@ -2585,6 +2594,7 @@ const datas = [
             description: "Burg Bachem: Geschichte, Wassergräben, Spazierbereiche und Erholung am kleinen See in Frechen.",
             ogTitle: "Burg Bachem – Frechen, Deutschland",
             ogDescription: "Entdecken Sie die historische Wasserburg Burg Bachem und den See mit Spazierwegen in Frechen.",
+            keywords: "Wasserburg Bachem, Frechen, Sehenswürdigkeit, Wasserburg, Schloss, historische Architektur, Wassergraben, mittelalterliches Bauwerk, Gutshof, Tourismus Deutschland, Führungen, historische Gebäude, Fotos",
             ogImage: "https://our-travels.info/foto/Germany/nrw/koln/Rhein-Erft-Kreis/frechen/burg-bachem/Burg-Bachem_3.jpg"
         }
     },
@@ -2634,6 +2644,7 @@ const datas = [
             description: "Der Johann-Schmitz-Platz ist der zentrale Stadtplatz von Frechen mit Märkten, Veranstaltungen und historischem Rathaus.",
             ogTitle: "Johann-Schmitz-Platz – Frechen, Deutschland",
             ogDescription: "Entdecken Sie den zentralen Platz von Frechen – Johann-Schmitz-Platz mit historischem Rathaus, Märkten und städtischer Atmosphäre.",
+            keywords: "Johann-Schmitz-Platz, Rathausplatz, Frechen, Sehenswürdigkeit, Stadtplatz, Stadtzentrum, Rathaus, Architektur, öffentlicher Raum, Führungen, Tourismus Deutschland, Fotos, Stadtleben",
             ogImage: "https://our-travels.info/foto/Germany/nrw/koln/Rhein-Erft-Kreis/frechen/johann_schmitz_platz_frechen/001.jpg"
         }
     },
@@ -2681,6 +2692,7 @@ const datas = [
             description: "Das Alte Rathaus Frechen – ein historisches Verwaltungsgebäude mit Turm auf dem Johann-Schmitz-Platz im Zentrum der Stadt, Nordrhein-Westfalen.",
             ogTitle: "Altes Rathaus Frechen – Frechen, Deutschland",
             ogDescription: "Entdecken Sie das Alte Rathaus Frechen mit seinem charakteristischen Turm und der neobarocken Architektur auf dem Johann-Schmitz-Platz.",
+            keywords: "Altes Rathaus Frechen, Frechen, Sehenswürdigkeit, Rathaus, historisches Gebäude, Stadtarchitektur, Stadtzentrum, Verwaltungsgebäude, Führungen, Tourismus Deutschland, Fotos, Stadtgeschichte",
             ogImage: "https://our-travels.info/foto/Germany/nrw/koln/Rhein-Erft-Kreis/frechen/johann_schmitz_platz_frechen/008.jpg"
         }
     },
@@ -2705,6 +2717,7 @@ const datas = [
             description: "Auf dem Platz vor dem alten Rathaus befindet sich ein dekorativer Bezirksbrunnen, der 1981 vom Keramikkünstler Wim Mühlendyck geschaffen wurde. Er ist mit Keramikplatten mit Reliefszenen bedeckt, die die Entwicklung des Handwerks und der Keramikindustrie in Frechen zeigen – von traditionellen Handwerkern bis zur Fabrikproduktion, und verschiedene Maskarone (Gesichter) dienen als charakteristische Wasserstrahlen des Brunnens.",
             ogTitle: "Dekorativer Bezirksbrunnen vor dem alten Rathaus von Frechen",
             ogDescription: "Der Brunnen auf dem Platz vor dem alten Rathaus in Frechen, 1981 vom Keramikkünstler Wim Mühlendyck geschaffen, ist mit Keramikplatten mit Reliefszenen des Handwerks und der Keramikindustrie sowie Maskaronen mit Wasserstrahlen gestaltet.",
+            keywords: "Brunnen vor dem Rathaus, Frechen, Sehenswürdigkeit, Stadtplatz, Rathaus, Brunnen, Stadtzentrum, öffentlicher Raum, Spaziergänge, Architektur, Tourismus Deutschland, Fotos, Stadtbild",
             ogImage: "https://our-travels.info/foto/Germany/nrw/koln/Rhein-Erft-Kreis/frechen/johann_schmitz_platz_frechen/005.jpg"
         }
     },
@@ -2729,6 +2742,7 @@ const datas = [
             description: "In der Fußgängerzone wurde 1986 der Skulpturenbrunnen Klüttenbrunnen (Klüttenbrunnen) des deutschen Bildhauers Olaf Hönen errichtet. Er befindet sich in der Nähe des Johann-Schmitz-Platzes und spiegelt die industrielle und handwerkliche Geschichte Frechens wider, insbesondere den Abbau und die Verarbeitung des lokalen Tons. Der Brunnen ist als künstlerische Komposition mit Steinelementen und Wasserstrahlen gestaltet, harmoniert mit der städtischen Umgebung und dient als visueller Orientierungspunkt für Touristen.",
             ogTitle: "Klüttenbrunnen in Frechen",
             ogDescription: "Der Skulpturenbrunnen Klüttenbrunnen (Klüttenbrunnen) in der Fußgängerzone nahe dem Johann-Schmitz-Platz spiegelt die industrielle und handwerkliche Geschichte Frechens wider und ist als künstlerische Komposition mit Steinelementen und Wasserstrahlen gestaltet.",
+            keywords: "Kluttenbrunnen, Frechen, Sehenswürdigkeit, Brunnen, Stadtsymbol, Platz, Stadtzentrum, öffentlicher Raum, Spaziergänge, Architektur, Tourismus Deutschland, Fotos, Stadtbild",
             ogImage: "https://our-travels.info/foto/Germany/nrw/koln/Rhein-Erft-Kreis/frechen/johann_schmitz_platz_frechen/004.jpg"
         }
     },
@@ -2782,6 +2796,7 @@ const datas = [
             description: "Geschichte und Architektur der Kirche St. Audomar in Frechen mit dem angrenzenden alten Friedhof Alter Friedhof.",
             ogTitle: "Kirche St. Audomar (St. Audomar) – historisches Herz von Frechen",
             ogDescription: "Tauchen Sie ein in die Geschichte der katholischen Kirche St. Audomar (St. Audomar) in Frechen: alte Traditionen, neuromanische Architektur, alter Friedhof und kulturelle Denkmäler.",
+            keywords: "St. Audomar Kirche, Frechen, Sehenswürdigkeit, Kirche, Sakralbau, religiöse Architektur, historisches Gebäude, Stadtzentrum, Gotik, katholische Kirche, Tourismus Deutschland, Führungen, Fotos, geistliches Erbe",
             ogImage: "https://our-travels.info/foto/Germany/nrw/koln/Rhein-Erft-Kreis/frechen/st_audomar/001.jpg"
         }
     },
@@ -2839,6 +2854,7 @@ const datas = [
             description: "Die Evangelische Kirche Frechen ist eine historische protestantische Kirche aus dem 18. Jahrhundert im Zentrum der Stadt. Erfahren Sie mehr über ihre Geschichte, Architektur und die Entwicklung der Gemeinde.",
             ogTitle: "Evangelische Kirche Frechen – historische protestantische Kirche in Frechen",
             ogDescription: "Historische evangelische Kirche in Frechen, erbaut im 18. Jahrhundert. Entdecken Sie die Geschichte der protestantischen Gemeinde und die Architektur dieses Gotteshauses.",
+            keywords: "Evangelische Kirche Frechen, Frechen, Sehenswürdigkeit, Kirche, evangelische Kirche, protestantische Kirche, religiöse Architektur, historisches Gebäude, Stadtzentrum, Führungen, Tourismus Deutschland, Fotos, Kulturerbe",
             ogImage: "https://our-travels.info/foto/Germany/nrw/koln/Rhein-Erft-Kreis/frechen/evangelischeKirche/001.jpg"
         }
     },
@@ -2854,12 +2870,7 @@ const datas = [
         countryPath: "germany", regionsPath: "nrw", districtPath: "koln", cityPath: "konigswinter",
         fotoCard: "Germany/nrw/koln/Rhein-Sieg-Kreis/konigswinter/drachenfels/001.jpg",
         location: "zwischen den Städten Königswinter und Bad Honnef, Deutschland",
-        officialSite: [
-            {
-                bold: "Offizielle Website der Zahnradbahn und des touristischen Gesamtprojekts für den Berg",
-                link: "https://www.drachenfelsbahn.de/"
-            }
-        ],
+        officialSite: [ {bold: "Offizielle Website der Zahnradbahn und des touristischen Gesamtprojekts für den Berg", link: "https://www.drachenfelsbahn.de/" } ],
         short_description: "Der Drachenfels ist ein legendärer Berg im Naturpark Siebengebirge oberhalb des Rheins. Vom Gipfel eröffnen sich weite Panoramablicke über das Rheintal, und der Berg selbst ist eng mit der Sage vom Drachen und dem Helden Siegfried verbunden. ",
         short_description_subObjects: {
             text: "Auf dem Drachenfels befinden sich folgende Sehenswürdigkeiten:",
@@ -2910,6 +2921,7 @@ const datas = [
             description: "Der Drachenfels bei Königswinter ist ein legendärer Berg des Rheintals, eng verbunden mit der Sage von Siegfried und dem Drachen. Panoramablicke auf den Rhein, Burgruinen, der Naturpark Siebengebirge und beliebte Wanderwege machen ihn zu einem der bekanntesten Ausflugsziele der Region.",
             ogTitle: "Berg Drachenfels — Legenden und Panoramablicke am Rhein",
             ogDescription: "Entdecken Sie den Drachenfels: Drachenmythen, Ausblicke über den Rhein, den Naturpark Siebengebirge und die historische Bedeutung eines der bekanntesten Berge der Region.",
+            keywords: "Drachenfels, Königswinter, Sehenswürdigkeit, Berg, Aussichtspunkt, Panoramablick, Rhein, Burg Drachenfels, touristische Attraktionen, Spaziergänge, Führungen, Tourismus Deutschland, Natur, Fotos",
             ogImage: "https://our-travels.info/foto/Germany/nrw/koln/Rhein-Sieg-Kreis/konigswinter/drachenfels/001.jpg"
         }
     },
@@ -2962,6 +2974,7 @@ const datas = [
             description: "Die Drachenfelsbahn ist eine historische Zahnradbahn aus dem Jahr 1883 in Königswinter. Sie verbindet das Rheintal mit dem Plateau des Drachenfels und zählt zu den wichtigsten touristischen Attraktionen der Region.",
             ogTitle: "Drachenfelsbahn",
             ogDescription: "Erleben Sie eine Fahrt mit der Drachenfelsbahn — der ältesten noch betriebenen Zahnradbahn Deutschlands mit Panoramablicken auf den Rhein und den Drachenfels.",
+            keywords: "Drachenfelsbahn, Königswinter, Sehenswürdigkeit, Zahnradbahn, Standseilbahn, Bergbahn, Panoramablick, Rhein, Bergauffahrt, touristische Bahn, Führungen, Tourismus Deutschland, Fotos, Reisen",
             ogImage: "https://our-travels.info/foto/Germany/nrw/koln/Rhein-Sieg-Kreis/konigswinter/drachenfels/002.jpg"
         }
     },
@@ -3021,6 +3034,7 @@ const datas = [
             description: "Schloss Drachenburg liegt am Hang des Drachenfels in Königswinter. Erbaut 1882-1884, beeindruckt das Schloss durch neugotische Architektur, prächtige Innenräume und Panoramablicke ins Rheintal.",
             ogTitle: "Schloss Drachenburg",
             ogDescription: "Besuchen Sie Schloss Drachenburg – ein romantisches neugotisches Schloss des 19. Jahrhunderts mit historischen Sälen, Glasfenstern und Aussichtsterrassen mit Blick auf Rhein und Drachenfels.",
+            keywords: "Schloss Drachenburg, Königswinter, Sehenswürdigkeit, Schloss, Burg, Neugotik, historische Architektur, Rhein, Panoramablick, Führungen, Tourismus Deutschland, Museum, Fotos, touristische Attraktion",
             ogImage: "https://our-travels.info/foto/Germany/nrw/koln/Rhein-Sieg-Kreis/konigswinter/drachenfels/001.jpg"
         }
     },
@@ -3062,6 +3076,7 @@ const datas = [
             description: "Die Ruinen der Burg Drachenfels befinden sich auf dem Gipfel des gleichnamigen Berges im Siebengebirge. Erhalten sind Mauerreste und Türme mit Panoramablick auf den Rhein und Königswinter.",
             ogTitle: "Ruinen der Burg Drachenfels (Burg Drachenfels)",
             ogDescription: "Besuchen Sie die Ruinen der Burg Drachenfels – eine mittelalterliche Festung aus dem 12. Jahrhundert mit beeindruckendem Blick auf das Rheintal.",
+            keywords: "Руїни замку Драхенфельс, Драхенфельс, Кьонігсвінтер, пам’ятка, замок, руїни, середньовічний замок, історія, панорамні види, Рейн, туристичні місця, екскурсії, туризм Німеччина, фото, гора Драхенфельс",
             ogImage: "https://our-travels.info/foto/Germany/nrw/koln/Rhein-Sieg-Kreis/konigswinter/drachenfels/003.jpg"
         }
     },
@@ -3101,6 +3116,7 @@ const datas = [
             description: "Die Nibelungenhalle ist ein 1913 erbautes Museum auf dem Drachenfels, das der Nibelungensage und Drachenlegenden gewidmet ist. In der Nähe befindet sich die Drachenhöhle.",
             ogTitle: "Nibelungenhalle auf dem Drachenfels",
             ogDescription: "Besuchen Sie die Nibelungenhalle – ein Museum der Mythen und Legenden mit Blick auf das Rheintal und die Drachenhöhle.",
+            keywords: "Nibelungenhalle, Königswinter, Sehenswürdigkeit, Halle, Museum, Nibelungen, Mythologie, deutsche Sagen, Skulpturen, Führungen, Tourismus Deutschland, Rhein, Fotos, touristische Attraktion",
             ogImage: "https://our-travels.info/foto/Germany/nrw/koln/Rhein-Sieg-Kreis/konigswinter/drachenfels/004.jpg"
         }
     },
@@ -3111,9 +3127,6 @@ const datas = [
         path: "reptile_zoo",
         countryPath: "germany", regionsPath: "nrw", districtPath: "koln", cityPath: "konigswinter",
         hiddenFromList: true, showMore: true,
-        // officialSite: [ funktioniert nicht überprüfen
-        //     { bold: "Offizielle Website des Zoos", link: "https://www.reptilien-zoo-drachenfels.de" }
-        // ],
         fotoCard: "Germany/nrw/koln/Rhein-Sieg-Kreis/konigswinter/drachenfels/005.jpg",
         short_description: "Der Reptilienzoo Drachenfels (dt. Reptilien-Tierpark Drachenfels) ist ein kleiner, aber gut ausgestatteter zoologischer Park auf dem Gelände des Drachenfels, der sich auf Reptilien und exotische Tiere spezialisiert hat. Hier kann man Schlangen, Eidechsen, Schildkröten und andere Tiere sehen sowie an interaktiven Vorführungen und Fütterungen teilnehmen. Der Besuch des Zoos dauert etwa 1–1,5 Stunden und lässt sich ideal mit dem Aufstieg auf den Berg und anderen Sehenswürdigkeiten des Drachenfels kombinieren.",
         full_description: {
@@ -3150,6 +3163,7 @@ const datas = [
             description: "Der Reptile Zoo auf dem Drachenfels ist ein zoologischer Park, in dem man Schlangen, Eidechsen, Schildkröten und seltene exotische Tiere sehen sowie an interaktiven Vorführungen und Bildungsprogrammen teilnehmen kann.",
             ogTitle: "Reptilienzoo Drachenfels",
             ogDescription: "Besuchen Sie den Reptile Zoo auf dem Drachenfels – ein Zoo mit seltenen Reptilien, interaktiven Fütterungs‑Vorführungen und Bildungsprogrammen für Kinder und Erwachsene.",
+            keywords: "Reptilienzoo Drachenfels, Königswinter, Sehenswürdigkeit, Zoo, Reptilien, Schlangen, Echsen, exotische Tiere, Terrarium, lebende Natur, Führungen, Tourismus Deutschland, Familienausflug, Fotos",
             ogImage: "https://our-travels.info/foto/Germany/nrw/koln/Rhein-Sieg-Kreis/konigswinter/drachenfels/005.jpg"
         }
     },
@@ -3210,6 +3224,7 @@ const datas = [
             description: "Die Abtei Heisterbach – ehemaliges Zisterzienserkloster aus dem 12. Jahrhundert im Heisterbachtal nahe Königswinter. Geschichte, Bedeutung und Besuch des historischen Komplexes.",
             ogTitle: "Abtei Heisterbach – mittelalterliches Kloster im Heisterbachtal",
             ogDescription: "Die historische Abtei Heisterbach – eines der atmosphärischsten Zeugnisse mittelalterlicher Klosterarchitektur in der Region Siebengebirge, unweit von Königswinter.",
+            keywords: "Kloster Heisterbach, Abtei Heisterbach, Ruinen, Königswinter, Sehenswürdigkeit, Zisterzienser, Mittelalter, Klosteranlage, historische Stätte, Architektur, Führungen, Tourismus Deutschland, Rhein, Fotos",
             ogImage: "https://our-travels.info/foto/Germany/nrw/koln/Rhein-Sieg-Kreis/konigswinter/heisterbach/001.jpg"
         }
     },
@@ -3249,6 +3264,7 @@ const datas = [
             description: "Entdecken Sie die beeindruckenden Ruinen des Chors der Abtei Heisterbach: Geschichte, Architektur und einzigartige Überreste des mittelalterlichen Klosters im Siebengebirge.",
             ogTitle: "Ruinen des Chors der Abtei Heisterbach",
             ogDescription: "Besuchen Sie die Ruinen des Chors der Abtei Heisterbach und tauchen Sie ein in die Atmosphäre der mittelalterlichen Klostergeschichte im Herzen des Siebengebirges.",
+            keywords: "Chorruine Klosterkirche Heisterbach, Königswinter, Abtei Heisterbach, Sehenswürdigkeit, Ruinen, gotische Architektur, Zisterzienserkloster, Mittelalter, historische Stätte, Deutschland, Rhein, touristisches Ziel, Fotos",
             ogImage: "https://our-travels.info/foto/Germany/nrw/koln/Rhein-Sieg-Kreis/konigswinter/heisterbach/001.jpg"
         }
     },
@@ -3290,6 +3306,7 @@ const datas = [
             description: "Die Kirche St. Peter in Heisterbach ist eine katholische Kirche von 1953–1956 auf dem Gelände der ehemaligen Abtei. Geschichte, Architektur, Glasfenster und Besuch in Heisterbach, Königswinter.",
             ogTitle: "Kirche St. Peter in Heisterbach",
             ogDescription: "Aktive katholische Kirche auf dem Gelände der ehemaligen Abtei Heisterbach. Erbaut 1953-1956 mit einem einzigartigen Tympanon aus dem 13. Jahrhundert und beeindruckenden Glasfenstern.",
+            keywords: "Kirche St. Peter Heisterbach, Königswinter, Abtei Heisterbach, Sehenswürdigkeit, Kirche, Ruine, mittelalterliche Architektur, Klosteranlage, Zisterzienser, Geschichte Deutschland, Rhein, touristisches Ziel, Gotik, Fotos",
             ogImage: "https://our-travels.info/foto/Germany/nrw/koln/Rhein-Sieg-Kreis/konigswinter/heisterbach/005.jpg"
         }
     },
@@ -3354,6 +3371,7 @@ const datas = [
             description: "Der Westfalenpark ist der größte Stadtpark Dortmunds mit dem Florianturm, Rosengarten, Seen, Seilbahn und Parkbahn. Ein idealer Ort für Spaziergänge, Erholung und Veranstaltungen.",
             ogTitle: "Westfalenpark – grünes Herz Dortmunds",
             ogDescription: "Großer Park mit Rosengarten, Seen und Florianturm. Einer der besten Orte für Spaziergänge und Erholung in Dortmund.",
+            keywords: "Westfalenpark Dortmund, Sehenswürdigkeit, Park, Freizeitpark, Ruhrgebiet, Rosarium, Florianturm, Aussichtsturm, Spaziergänge, Natur, Erholung, Familienpark, Deutschland, touristisches Ziel, Fotos",
             ogImage: "https://our-travels.info/foto/Germany/nrw/arnsberg/dortmund/westfalenpark/001.jpg"
         }
     },
@@ -3402,6 +3420,7 @@ const datas = [
             description: "Die Altstadt von Lüdenscheid ist der mittelalterliche Teil der Stadt mit historischen Gebäuden des 18.–19. Jahrhunderts, der Erlöserkirche, Resten der Stadtmauer und dem historischen Museum. Schlendern Sie durch die gemütlichen Gassen und spüren Sie die Atmosphäre vergangener Jahrhunderte.",
             ogTitle: "Altstadt Lüdenscheid",
             ogDescription: "Besuchen Sie die Altstadt von Lüdenscheid – den historischen Teil der Stadt mit barocken Häusern, der Erlöserkirche, dem historischen Museum und den Resten der mittelalterlichen Stadtmauer.",
+            keywords: "Altstadt Lüdenscheid, historisches Zentrum, Sehenswürdigkeit, Deutschland, Nordrhein-Westfalen, Architektur, Altstadt, Spaziergänge, touristische Orte, Fachwerk, Stadtzentrum, Geschichte, Fotos, Sauerland",
             ogImage: "https://our-travels.info/foto/Germany/nrw/arnsberg/Märkischer-Kreis/luedenscheid/altstadt_luedenscheid/004.jpg"
         }
     },
@@ -3456,6 +3475,7 @@ const datas = [
             description: "Die Erlöserkirche (Erlöserkirche) ist die älteste Kirche Lüdenscheids, errichtet im 12. Jahrhundert mit klassizistischer Fassade, Emporen und lutherischem Altar. Besuchen Sie dieses historische Gotteshaus im Zentrum der Altstadt und spüren Sie die Atmosphäre vergangener Jahrhunderte.",
             ogTitle: "Erlöserkirche, Lüdenscheid",
             ogDescription: "Entdecken Sie die Erlöserkirche in Lüdenscheid – ein historisches Gotteshaus mit Turm, Emporen und lutherischem Altar, ein architektonisches Wahrzeichen der Altstadt.",
+            keywords: "Erlöserkirche Lüdenscheid, Christuskirche Lüdenscheid, Sehenswürdigkeit, Kirche, evangelische Kirche, Deutschland, Nordrhein-Westfalen, Architektur, historisches Gebäude, religiöse Stätte, Stadtzentrum, Tourismus, Fotos, Sauerland",
             ogImage: "https://our-travels.info/foto/Germany/nrw/arnsberg/Märkischer-Kreis/luedenscheid/altstadt_luedenscheid/erloeserkirche_luedenscheid/001.jpg"
         }
     },
@@ -3485,6 +3505,7 @@ const datas = [
             description: "Der Brunnen am Graf-Engelbert-Platz entstand 1982 im Zuge der Altstadtsanierung. Er gilt als eines der Wahrzeichen des historischen Zentrums von Lüdenscheid und ist mit der Figur eines Herolds geschmückt, die auf die Stadtgründung durch Graf Engelbert I. verweist.",
             ogTitle: "Brunnen am Graf-Engelbert-Platz, Lüdenscheid",
             ogDescription: "Besuchen Sie den Brunnen am Graf-Engelbert-Platz in Lüdenscheid – ein historisches Objekt der Altstadt, das mit der Stadtgründung und der Erneuerung des historischen Zentrums verbunden ist.",
+            keywords: "Brunnen in der Altstadt Lüdenscheid, historisches Zentrum, Sehenswürdigkeit, Deutschland, Nordrhein-Westfalen, Altstadt, Platz, Stadtbrunnen, Architektur, Spaziergänge, Stadtzentrum, touristische Orte, Fotos, Sauerland",
             ogImage: "https://our-travels.info/foto/Germany/nrw/arnsberg/Märkischer-Kreis/luedenscheid/altstadt_luedenscheid/001.jpg"
         }
     },
@@ -3524,6 +3545,7 @@ const datas = [
             description: "Der zentrale Platz von Lüdenscheid (Rathausplatz) ist der wichtigste öffentliche Raum der Stadt neben dem Rathaus. Hier finden Märkte, städtische Veranstaltungen und Treffen der Bewohner statt, und der Platz dient als Ausgangspunkt für Spaziergänge im Zentrum.",
             ogTitle: "Zentraler Platz von Lüdenscheid",
             ogDescription: "Der zentrale Platz von Lüdenscheid (Rathausplatz) ist der zentrale Stadtplatz neben dem Rathaus, ein Ort für Märkte, Feste und wichtige städtische Veranstaltungen.",
+            keywords: "Rathausplatz Lüdenscheid, Rathaus Lüdenscheid, zentraler Platz, Sehenswürdigkeit, Deutschland, Nordrhein-Westfalen, Stadtplatz, Rathaus, Stadtzentrum, Architektur, Spaziergänge, urbanes Leben, Veranstaltungen, touristische Orte, Fotos, Sauerland",
             ogImage: "https://our-travels.info/foto/Germany/nrw/arnsberg/Märkischer-Kreis/luedenscheid/rathausplatz_lüdenscheid/001.JPG"
         }
     },
@@ -3565,6 +3587,7 @@ const datas = [
             description: "Der Sternplatz ist einer der zentralen Plätze von Lüdenscheid, gelegen in der Fußgängerzone des historischen Zentrums. Der Platz ist ein wichtiger Treffpunkt für das städtische Leben, Spaziergänge und Veranstaltungen.",
             ogTitle: "Sternplatz in Lüdenscheid",
             ogDescription: "Der Sternplatz ist der zentrale Stadtplatz im historischen Zentrum von Lüdenscheid, Teil der Fußgängerzone und ein wichtiger öffentlicher Raum der Stadt.",
+            keywords: "Sternplatz Lüdenscheid, zentraler Platz, Sehenswürdigkeit, Deutschland, Nordrhein-Westfalen, Stadtplatz, Stadtzentrum, urbanes Leben, Architektur, Spaziergänge, Einkaufszentrum der Stadt, Veranstaltungen, touristische Orte, Fotos, Sauerland",
             ogImage: "https://our-travels.info/foto/Germany/nrw/arnsberg/Märkischer-Kreis/luedenscheid/sternplatz/003.jpg"
         }
     },
@@ -3593,6 +3616,7 @@ const datas = [
             description: "Das Denkmal von Onkel Willi auf dem Sternplatz in Lüdenscheid ist eine Bronzeskulptur, die einen typischen Einwohner der Stadt mit Hund darstellt. Die Skulptur ist ein inoffizielles Wahrzeichen der Stadt und ein beliebter Treffpunkt für Fotos und Begegnungen.",
             ogTitle: "Denkmal von Onkel Willi in Lüdenscheid",
             ogDescription: "Die Bronzeskulptur von Onkel Willi auf dem Sternplatz im historischen Zentrum von Lüdenscheid verkörpert Freundlichkeit und das alltägliche Leben der Stadtbewohner. Beliebter Ort bei Touristen und Einwohnern.",
+            keywords: "Denkmal Onkel Willi Lüdenscheid, Sehenswürdigkeit, Deutschland, Nordrhein-Westfalen, Skulptur, Stadtdenkmal, Stadtzentrum, Geschichte der Stadt, Spaziergänge, touristische Orte, Fotos, Sauerland",
             ogImage: "https://our-travels.info/foto/Germany/nrw/arnsberg/Märkischer-Kreis/luedenscheid/sternplatz/001.jpg"
         }
     },
@@ -3621,6 +3645,7 @@ const datas = [
             description: "Der Brunnen auf dem Sternplatz in Lüdenscheid ist ein dekoratives Wasserbecken, geschaffen Ende der 1970er Jahre vom Bildhauer Kurt Toni Neumann. Um den Brunnen befinden sich Tafeln mit den Namen der Partnerstädte: Brayhaus, Taganrog, Den Helder, Löwen, Mysłowice und Romilly-sur-Seine. Der Brunnen ist ein beliebter Ort für Erholung und Spaziergänge auf dem Platz.",
             ogTitle: "Brunnen auf dem Sternplatz in Lüdenscheid",
             ogDescription: "Dekorativer Brunnen auf dem Sternplatz im historischen Zentrum von Lüdenscheid, umgeben von Tafeln mit den Namen der Partnerstädte. Treffpunkt und Erholungsort für Einwohner und Besucher.",
+            keywords: "Brunnen am Sternplatz Lüdenscheid, Sternplatz, Sehenswürdigkeit, Deutschland, Nordrhein-Westfalen, Stadtplatz, Brunnen, Stadtzentrum, Architektur, Spaziergänge, urbanes Leben, Veranstaltungen, touristische Orte, Fotos, Sauerland",
             ogImage: "https://our-travels.info/foto/Germany/nrw/arnsberg/Märkischer-Kreis/luedenscheid/sternplatz/003.jpg"
         }
     },
@@ -3684,6 +3709,7 @@ const datas = [
             description: "Entdecken Sie das Geschichtsmuseum Lüdenscheid: Schmalspurzug, Zeppelin‑Modelle, Feuerwehrtechnik, Sammlung historischer Karten und Artefakte. Besuchen Sie das Museum und das Museumscafé im modernen Stadtkomplex.",
             ogTitle: "Geschichtsmuseum Lüdenscheid – einzigartige Exponate und Sammlungen",
             ogDescription: "Besuchen Sie das Geschichtsmuseum Lüdenscheid: vom Schmalspurzug bis zur Sammlung historischer Knöpfe, Karten und Stadtmodelle. Das Museum und das Museumscafé erwarten Sie im kulturellen Komplex der Stadt.",
+            keywords: "Geschichtsmuseum der Stadt Lüdenscheid, Stadtmuseum Lüdenscheid, Sehenswürdigkeit, Deutschland, Nordrhein-Westfalen, Museum, Stadtgeschichte, Heimatmuseum, Ausstellungen, Kultur, Altstadt, Stadtzentrum, Führungen, Tourismus, Fotos, Sauerland",
             ogImage: "https://our-travels.info/foto/Germany/nrw/arnsberg/Märkischer-Kreis/luedenscheid/history_museum_luedenscheid/001.JPG"
         }
     },
@@ -3731,6 +3757,7 @@ const datas = [
             description: "Die größte evangelische Kirche in Lüdenscheid mit einem 61,5 m hohen Turm, gebaut 1902, Walcker-Orgel und markante neugotische Architektur.",
             ogTitle: "Pseudogotische Christuskirche – architektonisches Wahrzeichen der Stadt",
             ogDescription: "Historische evangelische Kirche im Herzen von Lüdenscheid: Architektur, Orgel, kulturelle Veranstaltungen.",
+            keywords: "Christuskirche Lüdenscheid, Sehenswürdigkeit, Deutschland, Nordrhein-Westfalen, Kirche, Neugotik, Pseudogotik, Architektur, religiöses Gebäude, historische Kirche, Stadtzentrum, Sauerland, Tourismus, Fotos",
             ogImage: "https://our-travels.info/foto/Germany/nrw/arnsberg/Märkischer-Kreis/luedenscheid/christuskirche/001.jpg"
         }
     },
@@ -3788,6 +3815,7 @@ const datas = [
             description: "Die Kirche St. Joseph und Medardus ist die wichtigste katholische Pfarrkirche von Lüdenscheid, erbaut 1882-1885 im Stil der norddeutschen Backsteingotik. Geschichte, Architektur und interessante Fakten.",
             ogTitle: "Kirche St. Joseph und Medardus – historische Kirche in Lüdenscheid",
             ogDescription: "Neugotische Kirche des 19. Jahrhunderts mit Turm über 54 Meter Höhe – eine der wichtigsten historischen Sehenswürdigkeiten Lüdenscheids.",
+            keywords: "Kirche St. Joseph und Medardus Lüdenscheid, Sehenswürdigkeit, Deutschland, Nordrhein-Westfalen, katholische Kirche, Neugotik, Architektur, religiöses Gebäude, historische Kirche, Stadtzentrum, Sauerland, Tourismus, Fotos",
             ogImage: "https://our-travels.info/foto/Germany/nrw/arnsberg/Märkischer-Kreis/luedenscheid/st_joseph_medardus/001.jpg"
         }
     },
@@ -3843,6 +3871,7 @@ const datas = [
             description: "Detaillierte Informationen zur Versetalsperre: Baugeschichte, Wanderwege, Mahnmal Hunswinkel und Spaziergänge rund um die größte Talsperre im Märkischen Kreis.",
             ogTitle: "Versetalsperre – Naturziel und Stausee in Nordrhein-Westfalen",
             ogDescription: "Erfahren Sie alles über die Versetalsperre: Geschichte, Mahnmal und Wanderwege rund um den See",
+            keywords: "Versetalsperre, Lüdenscheid, Stausee, Sehenswürdigkeit, Deutschland, Nordrhein-Westfalen, See, Talsperre, Natur, Spaziergänge, Wasserreservoir, Tourismus, Erholung, Radwege, Fotos, Sauerland",
             ogImage: "https://our-travels.info/foto/Germany/nrw/arnsberg/Märkischer-Kreis/luedenscheid/versetalsperre/003_2021.jpg"
         }
     },
@@ -3916,6 +3945,7 @@ const datas = [
             description: "Reiseführer zur Burg Altena: Geschichte aus dem 12. Jahrhundert, Museen und die erste Jugendherberge der Welt.",
             ogTitle: "Burg Altena – mittelalterliche Festung in Deutschland",
             ogDescription: "Entdecken Sie die Geschichte der Burg Altena und ihrer Museen.",
+            keywords: "Burg Altena, Schloss Altena, Altena Deutschland, Sehenswürdigkeit, Burg, mittelalterliche Burg, Festung, Burgenmuseum, Geschichte Deutschland, Nordrhein-Westfalen, Sauerland, Panoramablick, Führungen, Tourismus, Fotos, historische Burgen",
             ogImage: "https://our-travels.info/foto/Germany/nrw/arnsberg/Märkischer-Kreis/altena/burg/001.jpg"
         }
     },
@@ -3970,10 +4000,11 @@ const datas = [
         construction_period: "1965",
         coord: { lat: 51.29456, lng: 7.67429 },
         meta: {
-            title: "Deutsches Drahtmuseum in Altena — Beschreibung, Geschichte und Ausstellungen",
+            title: "Deutsches Drahtmuseum in Altena – Beschreibung, Geschichte und Ausstellungen",
             description: "Das Deutsche Drahtmuseum in Altena zeigt die Geschichte der Drahtproduktion von mittelalterlichen Kettenhemden bis zu modernen Technologien. Informationen, Ausstellungen und Fakten für Besucher.",
             ogTitle: "Deutsches Drahtmuseum in Altena – ein ungewöhnliches Museum in Deutschland",
             ogDescription: "Erfahre, wie Draht die Welt verändert hat – von mittelalterlichen Kettenhemden bis hin zu Hochtechnologien. Interaktives Museum in Altena.",
+            keywords: "Deutsches Drahtmuseum Altena, Sehenswürdigkeit, Museum, Deutschland, Nordrhein-Westfalen, Industriegeschichte, Draht, Metallverarbeitung, Industriekultur, Sauerland, Führungen, interaktives Museum, Produktion Geschichte, Tourismus, Fotos",
             ogImage: "https://our-travels.info/foto/Germany/nrw/arnsberg/Märkischer-Kreis/altena/drahtmuseum/001.jpg"
         }
     },
@@ -4023,10 +4054,11 @@ const datas = [
         architects: "Prof. Otto Intze",
         coord: { lat: 51.24833, lng: 7.66250 },
         meta: {
-            title: "Fuelbecketalsperre — Spaziergänge im Sauerland",
+            title: "Fuelbecketalsperre – Spaziergänge im Sauerland",
             description: "Die Fuelbecketalsperre ist ein malerischer Ort im Sauerland, Deutschland. Waldwege, Rundwanderungen und erholsame Spaziergänge in der Natur.",
-            ogTitle: "Fuelbecketalsperre — Natur und Spaziergänge im Sauerland",
+            ogTitle: "Fuelbecketalsperre – Natur und Spaziergänge im Sauerland",
             ogDescription: "Ein gemütliches Wasserreservoir in den Wäldern des Sauerlands: Wanderwege, Ruhe und schöne Natur. Baden ist aufgrund der Trinkwassernutzung verboten.",
+            keywords: "Fürwiggetalsperre, Halver, Altena, Stausee, Sehenswürdigkeit, Deutschland, Nordrhein-Westfalen, Talsperre, See, Natur, Spaziergänge, Wasserreservoir, Tourismus, Erholung, Radwege, Sauerland, Fotos",
             ogImage: "https://our-travels.info/foto/Germany/nrw/arnsberg/Märkischer-Kreis/altena/fuelbecketalsperre/001_2020.jpg"
         }
     }

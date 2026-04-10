@@ -1,6 +1,7 @@
 import { useSelector } from 'react-redux';
 import { Link, useParams } from 'react-router';
-import { useEffect, useState } from 'react';
+import { Helmet } from "react-helmet-async";
+import { useState } from 'react';
 
 import countries from '../../datas/country';
 import luxembourgRoutes from '../../datas/luxembourg/routes'
@@ -8,7 +9,6 @@ import luxembourgRoutes from '../../datas/luxembourg/routes'
 import BreadCrumbs from '../../components/breadCrumbs/BreadCrumbs';
 import InfoBlock from '../../components/InfoBlock/InfoBlock';
 import { photosByCountry } from "../../datas/fotos";
-import { useMeta } from '../../hooks/useMeta';
 import CountryMap from '../../components/maps/CountryMap'
 
 import './Country.scss'
@@ -22,13 +22,10 @@ const Country = () => {
 
     // ищем нужную страну
     const country = countries.find(c => c.path === countryPath);
-    useMeta(country?.country?.translations?.[lang]?.meta);
 
-    useEffect(() => {
-        if (country?.translations?.[lang]?.country) {
-            document.title = country.translations[lang].country;
-        }
-    }, [country, lang]);
+    const meta = country?.translations?.[lang]?.meta;
+    const title = country?.translations?.[lang]?.country;
+
 
     if (!country) return <p>Country not found</p>;
 
@@ -46,6 +43,17 @@ const Country = () => {
 
     return (
         <div className="country">
+
+            {meta && (
+                <Helmet>
+                    <title>{meta.title || title}</title>
+                    <meta name="description" content={meta.description} />
+                    <meta property="og:title" content={meta.ogTitle} />
+                    <meta property="og:description" content={meta.ogDescription} />
+                    <meta property="og:image" content={meta.ogImage} />
+                </Helmet>
+            )}
+
             {/* Сайдбар */}
             <aside className={`country__sidebar ${sidebarOpen ? "mobile-open" : ""}`}>
                 {/* Кнопка-гамбургер на мобильных */}
@@ -127,55 +135,55 @@ const Country = () => {
                 {country.translations?.[lang]?.desc?.cuisine && <InfoBlock data={country.translations?.[lang]?.desc.cuisine} className="country__cuisine" />}
                 {country.translations?.[lang]?.desc?.entry && <InfoBlock data={country.translations?.[lang]?.desc.entry} className="country__entry" />}
 
-                        {/* ------------------- Раздел маршрутов------------------- */}
-                        {routes && routes.length > 0 && (
-                            <div className="country__routes">
+                {/* ------------------- Раздел маршрутов------------------- */}
+                {routes && routes.length > 0 && (
+                    <div className="country__routes">
 
-                                <h2 className="country__routes-title"> {lang === "ru" ? "Маршруты" : lang === "de" ? "Routen" : "Маршрути"} </h2>
+                        <h2 className="country__routes-title"> {lang === "ru" ? "Маршруты" : lang === "de" ? "Routen" : "Маршрути"} </h2>
 
-                                {/* ===== TABLE (desktop) ===== */}
-                                <table className="country__routes-table">
-                                    <thead>
-                                        <tr>
-                                            <th>{lang === "ru" ? "Название" : lang === "de" ? "Name" : "Назва"}</th>
-                                            <th>{lang === "ru" ? "Короткое описание" : lang === "de" ? "Kurze Beschreibung" : "Короткий опис"}</th>
-                                            <th>{lang === "ru" ? "Длина маршрута" : lang === "de" ? "Routenlänge" : "Довжина маршруту"}</th>
-                                        </tr>
-                                    </thead>
+                        {/* ===== TABLE (desktop) ===== */}
+                        <table className="country__routes-table">
+                            <thead>
+                                <tr>
+                                    <th>{lang === "ru" ? "Название" : lang === "de" ? "Name" : "Назва"}</th>
+                                    <th>{lang === "ru" ? "Короткое описание" : lang === "de" ? "Kurze Beschreibung" : "Короткий опис"}</th>
+                                    <th>{lang === "ru" ? "Длина маршрута" : lang === "de" ? "Routenlänge" : "Довжина маршруту"}</th>
+                                </tr>
+                            </thead>
 
-                                    <tbody>
-                                        {routes.map(r => (
-                                            <tr key={r.id}>
-                                                <td><Link to={`/${countryPath}/routes/${r.path}`}>{r.translations?.[lang]?.name}</Link> </td>
-                                                <td>{r.translations?.[lang]?.short_description}</td>
-                                                <td>{r.translations?.[lang]?.routeLength}</td>
-                                            </tr>
-                                        ))}
-                                    </tbody>
-                                </table>
+                            <tbody>
+                                {routes.map(r => (
+                                    <tr key={r.id}>
+                                        <td><Link to={`/${countryPath}/routes/${r.path}`}>{r.translations?.[lang]?.name}</Link> </td>
+                                        <td>{r.translations?.[lang]?.short_description}</td>
+                                        <td>{r.translations?.[lang]?.routeLength}</td>
+                                    </tr>
+                                ))}
+                            </tbody>
+                        </table>
 
 
-                                {/* ===== CARDS (mobile) ===== */}
-                                <div className="country__routes-cards">
-                                    {routes.map(r => (
-                                        <div key={r.id} className="country__routes-card">
+                        {/* ===== CARDS (mobile) ===== */}
+                        <div className="country__routes-cards">
+                            {routes.map(r => (
+                                <div key={r.id} className="country__routes-card">
 
-                                            <div className="country__routes-row">
-                                                <strong>{lang === "ru" ? "Название:" : lang === "de" ? "Name:" : "Назва:"}</strong>{" "}
-                                                <Link to={`/${countryPath}/routes/${r.path}`}> {r.translations?.[lang]?.name} </Link>
-                                            </div>
+                                    <div className="country__routes-row">
+                                        <strong>{lang === "ru" ? "Название:" : lang === "de" ? "Name:" : "Назва:"}</strong>{" "}
+                                        <Link to={`/${countryPath}/routes/${r.path}`}> {r.translations?.[lang]?.name} </Link>
+                                    </div>
 
-                                            <div className="country__routes-row">
-                                                {r.translations?.[lang]?.short_description}
-                                            </div>
-                                        </div>
-                                    ))}
+                                    <div className="country__routes-row">
+                                        {r.translations?.[lang]?.short_description}
+                                    </div>
                                 </div>
-                            </div>
-                        )}
-                        {/* ---------------------------------------------------------- */}
+                            ))}
+                        </div>
+                    </div>
+                )}
+                {/* ---------------------------------------------------------- */}
 
-{country.translations?.[lang]?.symbols && <InfoBlock data={country.translations?.[lang]?.symbols} className="country__symbols" />}
+                {country.translations?.[lang]?.symbols && <InfoBlock data={country.translations?.[lang]?.symbols} className="country__symbols" />}
                 {photos.gallery[4] && (<img src={`${BASE_PHOTO_URL}${photos.gallery[4].path}`} alt={photos.gallery[4].title} className="country__photo country__photo" />)}
                 {country.translations?.[lang]?.holidays && <InfoBlock data={country.translations?.[lang]?.holidays} className="country__holidays" />}
                 {country.translations?.[lang]?.briefHistory && <InfoBlock data={country.translations?.[lang]?.briefHistory} className="country__history" />}

@@ -190,6 +190,7 @@ export function buildSearchIndex(data, lang) {
 
   // старые аттракции (de, ru, ua)
   ["de", "ru", "ua"].forEach(langKey => {
+    if (langKey !== lang) return;
     const langData = data[langKey];
     if (!langData) return;
     Object.keys(langData).forEach(countryKey => {

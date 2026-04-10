@@ -2,14 +2,12 @@
 import { useSelector } from "react-redux";
 import './Home.scss'
 import { Link } from "react-router";
-import { useMeta } from '../../hooks/useMeta';
+import { Helmet } from "react-helmet-async";
 
 import { datas as datasUa } from '../../datas/ua/home'
 import { datas as datasRu } from '../../datas/ru/home'
 import { datas as datasDe } from '../../datas/de/home'
-// import countriesUa from '../../datas/ua/Country';
-// import countriesRu from '../../datas/ru/Country';
-// import countriesDe from '../../datas/de/Country';
+
 import datas from '../../datas/country';
 import { photosByCountry } from "../../datas/fotos";
 
@@ -23,10 +21,22 @@ const Home = () => {
   // выбираем данные в зависимости от языка
   const homeData = lang === 'ua' ? datasUa : lang === 'de' ? datasDe : datasRu;
   const countries = datas || [];
-  useMeta(homeData.meta);
 
   return (
     <div className="home">
+
+      {homeData?.meta && (
+        <Helmet>
+          <title>{homeData.meta.title}</title>
+
+          <meta name="description" content={homeData.meta.description} />
+
+          <meta property="og:title" content={homeData.meta.ogTitle} />
+          <meta property="og:description" content={homeData.meta.ogDescription} />
+          <meta property="og:image" content={homeData.meta.ogImage} />
+        </Helmet>
+      )}
+
       <h1 className="home__title">{homeData?.title}</h1>
       <h2 className="home__subtitle">{homeData?.subtitle_1}</h2>
       <p className="home__desc">{homeData?.description_1}</p>
@@ -53,7 +63,7 @@ const Home = () => {
       </ul>
       <h3 className="home__section">{homeData?.subtitle_2}</h3>
       <div className="home__section-map"><img src={worldMap} alt="World map" className="home__worldMap" /></div>
-      
+
 
       <p className="home__desc">{homeData?.description_2}</p>
       <p className="home__desc">{homeData?.description_3}</p>

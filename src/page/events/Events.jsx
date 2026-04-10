@@ -1,5 +1,6 @@
 import { useParams } from 'react-router';
 import { useSelector } from 'react-redux';
+import { Helmet } from "react-helmet-async";
 
 import BreadCrumbs from '../../components/breadCrumbs/BreadCrumbs.jsx';
 import InfoBlock from '../../components/InfoBlock/InfoBlock.jsx';
@@ -8,7 +9,6 @@ import { photosByCountry } from '../../datas/fotos/index.js';
 import useEvents from '../../hooks/useEvents.js';
 import datas from '../../datas/minimalIndex'
 import './Events.scss'
-
 
 const BASE_PHOTO_URL = import.meta.env.VITE_BASE_PHOTO_URL;
 
@@ -23,13 +23,14 @@ const Event = () => {
     const event = events.find(a => a.path === eventPath);
     const photos = photosByCountry[countryPath];
     const eventPhotos = photos?.[regionPath]?.[cityPath]?.[eventPath] || [];
+    const meta = event?.meta;
 
     //Преобразуем в массив для Gallery
     const images = eventPhotos.map(photo => ({
         src: `${BASE_PHOTO_URL}${photo.path}`,
         alt: photo.title[lang]
     }));
-    
+
     if (error) return <p>{error}</p>;
     if (!countryPath || !regionPath || !cityPath) return <p>Loading...</p>;
 
@@ -52,6 +53,19 @@ const Event = () => {
 
     return (
         <div className="event">
+
+            {meta && (
+                <Helmet>
+                    <title>{meta.title}</title>
+
+                    <meta name="description" content={meta.description} />
+
+                    <meta property="og:title" content={meta.ogTitle} />
+                    <meta property="og:description" content={meta.ogDescription} />
+                    <meta property="og:image" content={meta.ogImage} />
+                </Helmet>
+            )}
+
             <BreadCrumbs crumbs={crumbs} />
 
             <div className='event__title'>{event.name && (event.name)}</div>
@@ -83,7 +97,7 @@ const Event = () => {
                 {event.sub_objects && (<InfoBlock data={event.sub_objects} className="event__desc-sub_objects" />)}
                 {event.interestingFacts && (<InfoBlock data={event.interestingFacts} className="event__desc-interestingFacts" />)}
 
-                {event?.officialSite && (<InfoBlock data={event.officialSite} className="event__desc-officialSite" />)} 
+                {event?.officialSite && (<InfoBlock data={event.officialSite} className="event__desc-officialSite" />)}
 
                 {images.length > 0 && <Gallery images={images} />}
             </div>

@@ -1,14 +1,15 @@
-import { photosByCountry } from "../../datas/fotos";
+import { useState } from 'react';
+import { useSelector } from "react-redux";
 import { Link, useParams } from 'react-router';
+import { Helmet } from "react-helmet-async";
+
+import { photosByCountry } from "../../datas/fotos";
 import InfoBlock from '../../components/InfoBlock/InfoBlock';
 import BreadCrumbs from '../../components/breadCrumbs/BreadCrumbs';
-import { useMeta } from '../../hooks/useMeta';
 import './Regions.scss'
-import { useEffect, useState } from 'react';
 import CountryMap from '../../components/maps/CountryMap';
 import BtnAttr from "../../components/btn-attr/BtnAttr";
 import useLand from "../../hooks/useLand";
-import { useSelector } from "react-redux";
 import datas from '../../datas/minimalIndex'
 
 const BASE_PHOTO_URL = import.meta.env.VITE_BASE_PHOTO_URL;
@@ -18,19 +19,14 @@ const Regions = () => {
     const { region, error } = useLand(countryPath, regionPath);
     const [sidebarOpen, setSidebarOpen] = useState(false);
     const { lang } = useSelector((state) => state.language);
-    
-    useMeta(region?.meta || {});
-    
-    useEffect(() => {
-        if (region?.name) {
-            document.title = region.name;
-        }
-    }, [region?.name]);
+
+    const meta = region?.meta;
+    const titleFallback = region?.name;
 
     const photos = photosByCountry[countryPath];
 
-if (error) return <p>{error}</p>;
-if (!region) return <div>Загрузка региона...</div>;
+    if (error) return <p>{error}</p>;
+    if (!region) return <div>Загрузка региона...</div>;
 
     const crumbs = [
         { label: lang === 'ru' ? 'Главная' : lang === 'de' ? 'Startseite' : 'Головна', path: '/' },
@@ -41,6 +37,19 @@ if (!region) return <div>Загрузка региона...</div>;
 
     return (
         <div className='regions'>
+
+            {meta && (
+                <Helmet>
+                    <title>{meta.title || titleFallback}</title>
+
+                    <meta name="description" content={meta.description} />
+
+                    <meta property="og:title" content={meta.ogTitle} />
+                    <meta property="og:description" content={meta.ogDescription} />
+                    <meta property="og:image" content={meta.ogImage} />
+                </Helmet>
+            )}
+
 
             <aside className={`regions__sidebar ${sidebarOpen ? "mobile-open" : ""}`}>
                 <div className="regions__sidebar-toggle" onClick={() => setSidebarOpen(!sidebarOpen)}>☰</div>

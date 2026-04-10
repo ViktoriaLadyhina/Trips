@@ -140,7 +140,7 @@ const datas =
     drachenfelsbahn: { ru: 'Железная дорога Драхенфельс', de: 'Drachenfelsbahn', ua: 'Залізниця Драхенфельса' },
     schloss_drachenburg: { ru: 'Дворец Драхенбург', de: 'Schloss Drachenburg', ua: 'Палац Драхенбург' },
     drachenfels_ruins: { ru: 'Руины замка Драхенфельс', de: 'Ruinen der Burg Drachenfels', ua: 'Руїни замку Драхенфельс' },
-    nibelungenhalle: { ru: 'Зал Нибеленгов', de: 'Nibelungenhalle', ua: 'Зал Нібеленгов' },
+    nibelungenhalle: { ru: 'Зал Нибелунгов', de: 'Nibelungenhalle', ua: 'Зал Нібелунгів' },
     reptile_zoo: { ru: 'Зоопарк рептилий Драхенфельс', de: 'Reptilienzoo Drachenfels', ua: 'Зоопарк рептилій Драхенфельс' },
     heisterbach_konigswinter: { ru: 'Аббатство Хайстербах', de: 'Abtei Heisterbach', ua: 'Абатство Гайстербах' },
     chorruine_heisterbach_konigswinter: { ru: 'Руины хора бывшей монастырской церкви', de: 'Ruinen des Chors der ehemaligen Klosterkirche', ua: 'Руїни хору колишньої монастирської церкви' },

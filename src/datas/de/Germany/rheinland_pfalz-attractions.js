@@ -50,6 +50,7 @@ const datas = [
       description: "Die Altstadt Trier (Altstadt Trier) – historisches Stadtzentrum von Trier mit antiken und mittelalterlichen Denkmälern, engen Gassen und Plätzen. Beschreibung, Geschichte und nützliche Informationen für Touristen.",
       ogTitle: "Altstadt Trier – historisches Zentrum und römische Denkmäler",
       ogDescription: "Enge Gassen, alte Häuser und römische Denkmäler machen die Altstadt von Trier zu einem einzigartigen historischen Zentrum Deutschlands.",
+      keywords: "Altstadt Trier, Trier Deutschland, Sehenswürdigkeit, Altstadt, antike Stadt, römische Geschichte, Rheinland-Pfalz, Architektur, historisches Zentrum, Porta Nigra, Trierer Dom, Spaziergänge, Tourismus, Fotos, UNESCO Weltkulturerbe",
       ogImage: "https://our-travels.info/foto/Germany/rheinland-pfalz/trier_saarburg/trier/altstadt/001.jpg"
     }
   },
@@ -107,6 +108,7 @@ const datas = [
       description: "Entdecken Sie die Porta Nigra in Trier – das größte erhaltene römische Stadttor nördlich der Alpen. Geschichte, interessante Fakten, praktische Informationen für Touristen und Legenden.",
       ogTitle: "Porta Nigra, Trier – historisches römisches Stadttor in Deutschland",
       ogDescription: "Besuchen Sie die Porta Nigra – beeindruckendes römisches Tor im Zentrum von Trier. Erfahren Sie Geschichte, Legenden und praktische Informationen für Touristen. Perfekt für Liebhaber von Geschichte und Architektur.",
+      keywords: "Porta Nigra, Trier, Sehenswürdigkeit, römisches Stadttor, Antike, Römisches Reich, Altstadt Trier, UNESCO Weltkulturerbe, Architektur, Geschichte Deutschland, antikes Denkmal, Tourismus, Führungen, Fotos, Rheinland-Pfalz",
       ogImage: "https://our-travels.info/foto/Germany/rheinland-pfalz/trier-city/altstadt/portaNigra_trier/001.jpg"
     }
   },
@@ -185,6 +187,7 @@ const datas = [
       description: "Informationen zum Römischen Amphitheater Trier (Deutschland): Geschichte im 2. Jh. n. Chr., Öffnungszeiten, Tickets, interessante Fakten und Führungen.",
       ogTitle: "Römisches Amphitheater Trier – eine der größten römischen Arenen Europas",
       ogDescription: "Erfahren Sie mehr über das antike Amphitheater in Trier: Nutzung in der Römerzeit, heutige Sehenswürdigkeiten, Lage und Besuchsmöglichkeiten.",
+      keywords: "Römisches Amphitheater Trier, Trier, Sehenswürdigkeit, Römisches Reich, antikes Amphitheater, Gladiatoren, Antike, UNESCO Weltkulturerbe, Altstadt Trier, Architektur, historische Stätte, Tourismus, Führungen, Fotos, Rheinland-Pfalz",
       ogImage: "https://our-travels.info/foto/Germany/rheinland-pfalz/trier-city/amphitheater/001.jpg"
     }
   },
@@ -255,6 +258,7 @@ const datas = [
       description: "Erfahren Sie mehr über die Geschichte, Führungen und praktische Informationen zu den römischen Kaiserthermen (Kaiserthermen) in Trier – einer der größten antiken Badeanlagen nördlich der Alpen, die in die UNESCO-Liste aufgenommen wurden.",
       ogTitle: "Kaiserthermen Trier – Römische Antike Bäder",
       ogDescription: "Entdecken Sie die Kaiserthermen in Trier: antike Ruinen der imposanten römischen Bäder mit unterirdischen Galerien, multimedialen Ausstellungen und reicher Geschichte.",
+      keywords: "Kaiserthermen Trier, Römische Kaiserthermen, Trier, Sehenswürdigkeit, Römisches Reich, Thermen, antike Bäder, Antike, UNESCO Weltkulturerbe, Altstadt Trier, Architektur, historische Stätte, Tourismus, Führungen, Fotos, Rheinland-Pfalz",
       ogImage: "https://our-travels.info/foto/Germany/rheinland-pfalz/trier-city/kaiserthermen/01.jpg"
     }
   },
@@ -311,6 +315,7 @@ const datas = [
       description: "Die Konstantin-Basilika (Aula Palatina) – antiker Palastsaal von Kaiser Konstantin in Trier. Geschichte, Fakten, Architektur und Besuchsinformationen.",
       ogTitle: "Konstantin-Basilika – römische Architektur in Trier",
       ogDescription: "Der große Thronsaal von Kaiser Konstantin aus dem 4. Jahrhundert – eines der beeindruckendsten Denkmäler der römischen Epoche in Deutschland.",
+      keywords: "Aula Palatina Trier, Konstantinbasilika Trier, Sehenswürdigkeit, Römisches Reich, Basilika, antike Architektur, Konstantin der Große, Altstadt Trier, UNESCO Weltkulturerbe, historische Stätte, Tourismus, Führungen, Fotos, Rheinland-Pfalz",
       ogImage: "https://our-travels.info/foto/Germany/rheinland-pfalz/trier-city/basilica_of_constantine/001.jpg"
     }
   },
@@ -368,6 +373,7 @@ const datas = [
       description: "Erfahren Sie mehr über die Barbarathermen in Trier – den größten römischen Badekomplex nördlich der Alpen, erhalten als Ruinen.",
       ogTitle: "Barbarathermen Trier – Antike römische Bäder",
       ogDescription: "Entdecken Sie die Barbarathermen in Trier: einer der größten römischen Badekomplexe nördlich der Alpen.",
+      keywords: "Barbarathermen Trier, Barbara-Thermen, Trier, Sehenswürdigkeit, Römisches Reich, antike Thermen, römische Bäder, Antike, UNESCO Weltkulturerbe, Altstadt Trier, Archäologie, historische Stätte, Tourismus, Führungen, Fotos, Rheinland-Pfalz",
       ogImage: "https://our-travels.info/foto/Germany/rheinland-pfalz/trier-city/barbarathermen/001.jpg"
     }
   },
@@ -423,6 +429,7 @@ const datas = [
       description: "Erfahren Sie die Geschichte der antiken Römerbrücke über die Mosel in Trier – von den römischen Pfeilern des 2. Jahrhunderts bis zu modernen Rekonstruktionen. Kostenloser Zugang, UNESCO-Denkmal.",
       ogTitle: "Römische Brücke in Trier – antike Perle der Mosel",
       ogDescription: "Entdecken Sie die über 1800 Jahre alte Römische Brücke (Römerbrücke): Architektur, Geschichte und Entwicklung des Brückenbaus. Teil des UNESCO-Weltkulturerbes.",
+      keywords: "Römerbrücke Trier, römische Brücke Trier, Sehenswürdigkeit, Römisches Reich, antike Brücke, antike Architektur, Altstadt Trier, UNESCO Weltkulturerbe, Moselbrücke, Geschichte Deutschland, römische Ingenieurskunst, Tourismus, Spaziergänge, Fotos, Rheinland-Pfalz",
       ogImage: "https://our-travels.info/foto/Germany/rheinland-pfalz/trier-city/roman_bridge/001.jpg"
     }
   },
@@ -489,6 +496,7 @@ const datas = [
       description: "Entdecken Sie den Trierer Dom aus dem 12. Jahrhundert mit einzigartigen Reliquien und der Schatzkammer des Doms. Geschichte, Architektur und wertvolle Artefakte christlicher Kunst in Trier.",
       ogTitle: "Trierer Dom und Schatzkammer – Geschichte und Reliquien",
       ogDescription: "Tauchen Sie ein in die Geschichte des Trierer Doms aus dem 12. Jahrhundert und entdecken Sie die Schatzkammer mit seltenen kirchlichen Artefakten.",
+      keywords: "Trierer Dom, Dom St. Peter Trier, Sehenswürdigkeit, Kathedrale, Deutschland, katholischer Dom, Römisches Reich, Christentum, ältester Dom Deutschlands, Altstadt Trier, UNESCO Weltkulturerbe, Architektur, religiöse Stätte, Tourismus, Führungen, Fotos, Rheinland-Pfalz",
       ogImage: "https://our-travels.info/foto/Germany/rheinland-pfalz/trier-city/cathedral/001.jpg"
     }
   },
@@ -556,6 +564,7 @@ const datas = [
       description: "Die Basilika St. Paulinus in Trier ist eine der schönsten Barockkirchen Deutschlands. Geschichte, Fresken des 18. Jahrhunderts, Krypta des Heiligen Paulinus und praktische Informationen für Besucher.",
       ogTitle: "Basilika St. Paulinus (St. Paulin) – barockes Juwel von Trier",
       ogDescription: "Prächtige barocke Kirche des 18. Jahrhunderts in Trier mit großem Deckenfresko und Krypta des Heiligen Paulinus.",
+      keywords: "Basilika St. Paulin Trier, Kirche St. Paulin Trier, Sehenswürdigkeit, katholische Kirche, Barockarchitektur, Deutschland, Trier, UNESCO Weltkulturerbe, religiöse Stätte, Geschichte, Tourismus, Führungen, Fotos, Rheinland-Pfalz",
       ogImage: "https://our-travels.info/foto/Germany/rheinland-pfalz/trier-city/basilikaStPaulinus/001.jpg"
     }
   },
@@ -624,6 +633,7 @@ const datas = [
       description: "Erfahren Sie die Geschichte, Architektur und Fakten über die Liebfrauenkirche – ein gotisches Meisterwerk des 13. Jahrhunderts und UNESCO-Welterbe in Trier, Deutschland.",
       ogTitle: "Liebfrauenkirche, Trier – gotisches UNESCO-Wunder",
       ogDescription: "Tauchen Sie ein in die Geschichte und Geheimnisse der Liebfrauenkirche in Trier – dem ersten gotischen Gebäude französischen Stils außerhalb Frankreichs. Architektur, Symbolik, Geschichte.",
+      keywords: "Liebfrauenkirche Trier, Kirche Unserer Lieben Frau Trier, Sehenswürdigkeit, gotische Architektur, katholische Kirche, Deutschland, Trier, UNESCO Weltkulturerbe, Mittelalter, religiöse Stätte, Glasfenster, französische Gotik Einflüsse, Tourismus, Führungen, Fotos, Rheinland-Pfalz",
       ogImage: "https://our-travels.info/foto/Germany/rheinland-pfalz/trier-city/liebfrauenkirche/001.jpg"
     }
   },
@@ -675,6 +685,7 @@ const datas = [
       description: "Die Altstadt von Saarburg (Altstadt Saarburg) ist das historische Zentrum der Stadt Saarburg mit engen Gassen, Häusern von Fischern und schönen Plätzen. Beschreibung, Geschichte und praktische Informationen für Touristen.",
       ogTitle: "Altstadt von Saarburg – eine der schönsten historischen Kleinstädte Deutschlands",
       ogDescription: "Enge Gassen, alte Häuser und die Atmosphäre einer mittelalterlichen Stadt – die Altstadt von Saarburg gilt als eine der malerischsten im Saar-Tal.",
+      keywords: "Altstadt Saarburg, Saarburg Deutschland, Sehenswürdigkeit, historisches Zentrum, mittelalterliche Stadt, Fachwerkhäuser, enge Gassen, Wasserfall in der Stadt, Burg Saarburg, Rheinland-Pfalz, Tourismus, Führungen, Fotos, Architektur",
       ogImage: "https://our-travels.info/foto/Germany/rheinland-pfalz/trier_saarburg/saarburg_kell/saarburg/altstadt/001.jpg"
     }
   },
@@ -716,6 +727,7 @@ const datas = [
       description: "Der Wasserfall von Saarburg ist ein malerischer Wasserfall im Zentrum der Stadt Saarburg. Beschreibung, Geschichte und nützliche Informationen für Besucher.",
       ogTitle: "Der Wasserfall von Saarburg – einer der ungewöhnlichsten Wasserfälle Deutschlands",
       ogDescription: "Ein Wasserfall mitten zwischen Häusern – eine der beeindruckendsten Sehenswürdigkeiten von Saarburg.",
+      keywords: "Wasserfall Saarburg, Saarburg Wasserfall, Deutschland, Sehenswürdigkeit, Stadtwasserfall, Fluss Leuk, Altstadt Saarburg, Rheinland-Pfalz, Natur in der Stadt, Tourismus, Führungen, Fotos, historisches Zentrum",
       ogImage: "https://our-travels.info/foto/Germany/rheinland-pfalz/trier_saarburg/saarburg_kell/saarburg/altstadt/wasserfall/001.jpg"
     }
   },
@@ -777,6 +789,7 @@ const datas = [
       description: "Amüseum Saarburg – ein Museum im historischen Zentrum von Saarburg direkt am Wasserfall. Ausstellungen über Handwerk, Weinbau und das Leben in der Region Saar.",
       ogTitle: "Amüseum Saarburg: Museum am Wasserfall",
       ogDescription: "Ein einzigartiges Museum in Saarburg direkt am Wasserfall. Geschichte, Handwerk und Atmosphäre der Altstadt.",
+      keywords: "Amüseum Saarburg, Museum Saarburg, Deutschland, Sehenswürdigkeit, Heimatmuseum, Alltagskultur und Handwerk, Altstadt Saarburg, Rheinland-Pfalz, Ausstellungen, Tourismus, Geschichte der Region, Führungen, Fotos",
       ogImage: "https://our-travels.info/foto/Germany/rheinland-pfalz/trier_saarburg/saarburg_kell/saarburg/altstadt/amuseum/001.jpg"
     }
   },
@@ -830,6 +843,7 @@ const datas = [
       description: "Die Burg Saarburg – mittelalterliche Ruinen aus dem 11. Jahrhundert in Deutschland. Panoramablicke, Geschichte und praktische Informationen.",
       ogTitle: "Burg Saarburg – eine der schönsten Burgen Deutschlands",
       ogDescription: "Malerische Ruinen der Burg Saarburg mit Blick auf die Stadt und den Wasserfall. Erfahre die Geschichte und besuche einen der stimmungsvollsten Orte der Region.",
+      keywords: "Burg Saarburg, Saarburg Burg, Deutschland, Sehenswürdigkeit, mittelalterliche Burg, Festung, Rheinland-Pfalz, Geschichte, Aussichtspunkt, Altstadt Saarburg, Tourismus, Führungen, Fotos, Wehrarchitektur",
       ogImage: "https://our-travels.info/foto/Germany/rheinland-pfalz/trier_saarburg/saarburg_kell/saarburg/burg/001.jpg"
     }
   },

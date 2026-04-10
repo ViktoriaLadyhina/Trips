@@ -334,7 +334,7 @@ const datas = [
                     ]
                 },
                 meta: {
-                    title: "Фонтан ткачей в Моншау — текстильная история",
+                    title: "Фонтан ткачей в Моншау – текстильная история",
                     description: "Небольшой фонтан в Моншау, символ текстильного прошлого города.",
                     ogTitle: "Фонтан ткачей в Моншау – Tuchmacherbrunnen",
                     ogDescription: "Исторический фонтан в Моншау, посвящённый ткачеству и текстильной индустрии города.",
@@ -367,7 +367,7 @@ const datas = [
                     ]
                 },
                 meta: {
-                    title: "Фонтан ткачів у Моншау — текстильна історія",
+                    title: "Фонтан ткачів у Моншау – текстильна історія",
                     description: "Невеликий фонтан у Моншау, символ текстильного минулого міста.",
                     ogTitle: "Фонтан ткачів у Моншау – Tuchmacherbrunnen",
                     ogDescription: "Історичний фонтан у Моншау, присвячений ткацтву та текстильній індустрії міста.",
@@ -400,7 +400,7 @@ const datas = [
                     ]
                 },
                 meta: {
-                    title: "Tuchmacherbrunnen in Monschau — Textile Geschichte",
+                    title: "Tuchmacherbrunnen in Monschau – Textile Geschichte",
                     description: "Kleiner Brunnen in Monschau, Symbol der textilen Vergangenheit der Stadt.",
                     ogTitle: "Tuchmacherbrunnen in Monschau – Tuchmacherbrunnen",
                     ogDescription: "Historischer Brunnen in Monschau, der dem Handwerk der Weberei und der Textilindustrie der Stadt gewidmet ist.",

@@ -1,21 +1,23 @@
 import { useParams } from 'react-router';
+import { Helmet } from "react-helmet-async";
+import { useSelector } from 'react-redux';
+
 import InfoBlock from '../../components/InfoBlock/InfoBlock.jsx';
 import luxembourgRoutes from '../../datas/luxembourg/routes'
 import './Routes.scss'
-import { useSelector } from 'react-redux';
 import BreadCrumbs from '../../components/breadCrumbs/BreadCrumbs';
 import Gallery from '../../components/gallery/Gallery.jsx';
 import { photosByCountry } from '../../datas/fotos/index.js';
 
-
 const BASE_PHOTO_URL = import.meta.env.VITE_BASE_PHOTO_URL;
+const routeNotFound = { ru: "Маршрут не найден", ua: "Маршрут не знайдено", de: "Route nicht gefunden"};
 
 const Routes = () => {
     const { countryPath, routesPath } = useParams();
     const { lang } = useSelector((state) => state.language);
     const route = luxembourgRoutes.find((r) => r.path === routesPath && r.countryPath === countryPath);
 
-    if (!route) return <p>Маршрут не найден</p>;
+    if (!route) return <p>{routeNotFound[lang]}</p>;
 
     const photos = photosByCountry[route?.countryPath];
     const routePhotos = photos?.[route?.path] || [];
@@ -27,7 +29,8 @@ const Routes = () => {
     }));
 
     const t = route.translations?.[lang];
-
+    const meta = t?.meta;
+    
     const crumbs = [
         { label: lang === 'ru' ? 'Главная' : lang === 'de' ? 'Startseite' : 'Головна', path: '/' },
         { label: t?.countryName, path: `/${route?.countryPath}` },
@@ -36,12 +39,23 @@ const Routes = () => {
 
     return (
         <div className="route">
+
+            {meta && (
+                <Helmet>
+                    <title>{meta.title}</title>
+                    <meta name="description" content={meta.description} />
+                    <meta property="og:title" content={meta.ogTitle} />
+                    <meta property="og:description" content={meta.ogDescription} />
+                    <meta property="og:image" content={meta.ogImage} />
+                </Helmet>
+            )}
+
             <BreadCrumbs crumbs={crumbs} />
             <div className='route__title'>{t?.name}</div>
 
-            <div className='route__desc'>   
+            <div className='route__desc'>
                 <div className='route__desc-plan'>
-                    {route.plan&& (
+                    {route.plan && (
                         <img
                             src={`${BASE_PHOTO_URL}${route.plan}`}
                             alt={t?.name}

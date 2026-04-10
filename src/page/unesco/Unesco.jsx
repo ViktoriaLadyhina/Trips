@@ -1,4 +1,5 @@
 import { useSelector } from "react-redux";
+import { Helmet } from "react-helmet-async";
 import searchIndex from "../../components/search/index";
 import BreadCrumbs from '../../components/breadCrumbs/BreadCrumbs';
 import './Unesco.scss';
@@ -10,6 +11,11 @@ const unescoTableHead = {
   ua: { name: "Назва", type: "Тип", location: "Місто, країна", year: "Рік", criteria: "Критерії", epoch: "Епоха" }
 };
 const Unesco_NoSeries = { ru: "Без серии", de: "Ohne Serie", ua: "Без серії" };
+const Unesco_Description = {
+  ru: "Список объектов Всемирного наследия ЮНЕСКО: достопримечательности, города и исторические памятники.",
+  ua: "Список об’єктів Світової спадщини ЮНЕСКО: пам’ятки, міста та історичні місця.",
+  de: "Liste der UNESCO-Welterbestätten: Sehenswürdigkeiten, Städte und historische Orte."
+};
 
 export const Unesco = () => {
   const { lang } = useSelector((state) => state.language);
@@ -61,68 +67,78 @@ export const Unesco = () => {
   const grouped = groupBySeries(unescoData);
   const t = unescoTableHead[lang];
 
-    // BreadCrumbs
+  // BreadCrumbs
   const crumbs = [
     {
       label: lang === 'ru' ? 'Главная' : lang === 'de' ? 'Startseite' : 'Головна',
       path: '/'
     },
-    { label: Unesco_Title[lang]} 
+    { label: Unesco_Title[lang] }
   ];
 
   return (
- <div className="unesco">
-  <BreadCrumbs crumbs={crumbs} />
-  <h1 className="unesco__title">🌍 {Unesco_Title[lang]}</h1>
-  {Object.entries(grouped).map(([series, items]) => (
-    <div key={series} className="unesco__series">
-      <h2 className="unesco__series-title">{series === "no-series" ? Unesco_NoSeries[lang] : `${series} (${items[0].year})`}</h2>
+    <div className="unesco">
 
-      {/* карточки для мобильных */}
-      <div className="unesco-cards">
-        {items.map(item => (
-          <div key={item.id} className="unesco-card">
-            <div className="unesco-card-row"><strong>{t.name}:</strong> <a href={item.url}>{item.name}</a></div>
-            <div className="unesco-card-row"><strong>{t.type}:</strong> {item.type}</div>
-            <div className="unesco-card-row"><strong>{t.location}:</strong> {item.location}</div>
-            {series === "no-series" && (
-              <div className="unesco-card-row"><strong>{t.year}:</strong> {item.year}</div>
-            )}
-            <div className="unesco-card-row"><strong>{t.criteria}:</strong> {item.criteria}</div>
-            <div className="unesco-card-row"><strong>{t.epoch}:</strong> {item.epoch}</div>
+      <Helmet>
+        <title>{Unesco_Title[lang]}</title>
+
+        <meta name="description" content={Unesco_Description[lang]} />
+
+        <meta property="og:title" content={Unesco_Title[lang]} />
+        <meta property="og:description" content={Unesco_Description[lang]} />
+      </Helmet>
+
+      <BreadCrumbs crumbs={crumbs} />
+      <h1 className="unesco__title">🌍 {Unesco_Title[lang]}</h1>
+      {Object.entries(grouped).map(([series, items]) => (
+        <div key={series} className="unesco__series">
+          <h2 className="unesco__series-title">{series === "no-series" ? Unesco_NoSeries[lang] : `${series} (${items[0].year})`}</h2>
+
+          {/* карточки для мобильных */}
+          <div className="unesco-cards">
+            {items.map(item => (
+              <div key={item.id} className="unesco-card">
+                <div className="unesco-card-row"><strong>{t.name}:</strong> <a href={item.url}>{item.name}</a></div>
+                <div className="unesco-card-row"><strong>{t.type}:</strong> {item.type}</div>
+                <div className="unesco-card-row"><strong>{t.location}:</strong> {item.location}</div>
+                {series === "no-series" && (
+                  <div className="unesco-card-row"><strong>{t.year}:</strong> {item.year}</div>
+                )}
+                <div className="unesco-card-row"><strong>{t.criteria}:</strong> {item.criteria}</div>
+                <div className="unesco-card-row"><strong>{t.epoch}:</strong> {item.epoch}</div>
+              </div>
+            ))}
           </div>
-        ))}
-      </div>
 
-      {/* обычная таблица для больших экранов */}
-      <table className="unesco__table">
-        <thead>
-          <tr>
-            <th>{t.name}</th>
-            <th>{t.type}</th>
-            <th>{t.location}</th>
-            {series === "no-series" && <th>{t.year}</th>}
-            <th>{t.criteria}</th>
-            <th>{t.epoch}</th>
-          </tr>
-        </thead>
-        <tbody>
-          {items.map(item => (
-            <tr key={item.id}>
-              <td className="unesco__name"><a href={item.url}>{item.name}</a></td>
-              <td>{item.type}</td>
-              <td>{item.location}</td>
-              {series === "no-series" && <td>{item.year}</td>}
-              <td>{item.criteria}</td>
-              <td>{item.epoch}</td>
-            </tr>
-          ))}
-        </tbody>
-      </table>
+          {/* обычная таблица для больших экранов */}
+          <table className="unesco__table">
+            <thead>
+              <tr>
+                <th>{t.name}</th>
+                <th>{t.type}</th>
+                <th>{t.location}</th>
+                {series === "no-series" && <th>{t.year}</th>}
+                <th>{t.criteria}</th>
+                <th>{t.epoch}</th>
+              </tr>
+            </thead>
+            <tbody>
+              {items.map(item => (
+                <tr key={item.id}>
+                  <td className="unesco__name"><a href={item.url}>{item.name}</a></td>
+                  <td>{item.type}</td>
+                  <td>{item.location}</td>
+                  {series === "no-series" && <td>{item.year}</td>}
+                  <td>{item.criteria}</td>
+                  <td>{item.epoch}</td>
+                </tr>
+              ))}
+            </tbody>
+          </table>
 
+        </div>
+      ))}
     </div>
-  ))}
-</div>
   )
 }
 

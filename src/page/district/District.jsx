@@ -1,9 +1,9 @@
 import { useEffect } from "react";
 import { useLocation, useParams } from "react-router";
+import { Helmet } from "react-helmet-async";
 import BreadCrumbs from '../../components/breadCrumbs/BreadCrumbs.jsx';
 import Region from '../../components/region/Region.jsx';
 import InfoBlock from '../../components/InfoBlock/InfoBlock.jsx'
-import { useMeta } from '../../hooks/useMeta.js';
 
 import './District.scss'
 import CountryMap from '../../components/maps/CountryMap.jsx';
@@ -32,12 +32,9 @@ const District = () => {
   const { subRegion } = useSabRegions(countryPath, regionPath, districtPath);
   const location = useLocation();
 
-  useMeta(district?.meta || {});
-
   useEffect(() => {
     const params = new URLSearchParams(location.search);
     const scrollTo = params.get("scrollTo");
-
     if (scrollTo) {
       // даём компоненту время отрендериться
       setTimeout(() => {
@@ -47,12 +44,8 @@ const District = () => {
     }
   }, [location.search]);
 
-  // Обновляем title при загрузке данных
-  useEffect(() => {
-    if (district?.name) {
-      document.title = district.name;
-    }
-  }, [district?.name]);
+  const meta = district?.meta;
+  const titleFallback = district?.name;
 
   if (error) return <p>{error}</p>;
   if (!district) return <p>District not found</p>;
@@ -66,6 +59,17 @@ const District = () => {
 
   return (
     <div className='district'>
+
+      {meta && (
+        <Helmet>
+          <title>{meta.title || titleFallback}</title>
+          <meta name="description" content={meta.description} />
+          <meta property="og:title" content={meta.ogTitle} />
+          <meta property="og:description" content={meta.ogDescription} />
+          <meta property="og:image" content={meta.ogImage} />
+        </Helmet>
+      )}
+
       <BreadCrumbs crumbs={crumbs} />
 
       <div className='district__container'>
