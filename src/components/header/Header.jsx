@@ -1,8 +1,6 @@
 import { useSelector } from 'react-redux';
 
-import { datas as datasUa } from '../../datas/ua/home'
-import { datas as datasRu } from '../../datas/ru/home'
-import { datas as datasDe } from '../../datas/de/home'
+import {datas as home} from '../../datas/Home'
 
 import LangSelector from '../langSelector/LangSelector'
 import Search from '../search/Search'
@@ -11,7 +9,7 @@ import './Header.scss'
 
 export const Header = () => {
   const { lang } = useSelector((state) => state.language);
-  const homeData = lang === 'ua' ? datasUa : lang === 'de' ? datasDe : datasRu;
+  const homeData = home.translations[lang];
 
   return (
     <div className='header'>

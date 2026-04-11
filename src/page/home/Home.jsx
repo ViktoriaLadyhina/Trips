@@ -1,17 +1,12 @@
-
 import { useSelector } from "react-redux";
 import './Home.scss'
 import { Link } from "react-router";
 import { Helmet } from "react-helmet-async";
 
-import { datas as datasUa } from '../../datas/ua/home'
-import { datas as datasRu } from '../../datas/ru/home'
-import { datas as datasDe } from '../../datas/de/home'
-
+import { datas as home } from '../../datas/Home'
 import datas from '../../datas/country';
+import EuropeMap from "../../components/maps/europe/Europe";
 import { photosByCountry } from "../../datas/fotos";
-
-import worldMap from '../../assets/world-map.gif';
 
 const BASE_PHOTO_URL = import.meta.env.VITE_BASE_PHOTO_URL;
 
@@ -19,7 +14,7 @@ const Home = () => {
   const { lang } = useSelector((state) => state.language);
 
   // выбираем данные в зависимости от языка
-  const homeData = lang === 'ua' ? datasUa : lang === 'de' ? datasDe : datasRu;
+  const homeData = home.translations[lang];
   const countries = datas || [];
 
   return (
@@ -40,6 +35,11 @@ const Home = () => {
       <h1 className="home__title">{homeData?.title}</h1>
       <h2 className="home__subtitle">{homeData?.subtitle_1}</h2>
       <p className="home__desc">{homeData?.description_1}</p>
+
+      <div className="home__section-map">
+        <EuropeMap />
+      </div>
+
       <ul className="home__countries">
         {countries?.map((c) => {
           const photos = photosByCountry[c.path];
@@ -62,9 +62,6 @@ const Home = () => {
         })}
       </ul>
       <h3 className="home__section">{homeData?.subtitle_2}</h3>
-      <div className="home__section-map"><img src={worldMap} alt="World map" className="home__worldMap" /></div>
-
-
       <p className="home__desc">{homeData?.description_2}</p>
       <p className="home__desc">{homeData?.description_3}</p>
       <p className="home__desc">{homeData?.description_4}</p>
