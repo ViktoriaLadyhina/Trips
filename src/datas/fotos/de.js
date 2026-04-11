@@ -552,6 +552,10 @@ export const Fotos = {
       schloss_neuenhof_luedenscheid: [
         { path: "Germany/nrw/arnsberg/Märkischer-Kreis/luedenscheid/neuenhof/001.jpg", title: { ru: "Замок Нойенхоф, 2006", ua: "Замок Нойенхоф, 2006", de: "Schloss Neuenhof, 2006" } },
         { path: "Germany/nrw/arnsberg/Märkischer-Kreis/luedenscheid/neuenhof/002.jpg", title: { ru: "Замок Нойенхоф (фото взято с интернета)", ua: "Замок Нойенхоф (фото взято з Інтернету)", de: "Schloss Neuenhof (Foto aus dem Internet)" } },
+      ],
+      schloss_oedenthal_luedenscheid: [
+        { path: "Germany/nrw/arnsberg/Märkischer-Kreis/luedenscheid/schloss_oedenthal/001.jpg", title: { ru: "Усадьба Оеденталь (фото взято с интернета)", ua: "Садиба Оеденталь (фото взято з Інтернету)", de: "Schloss Oedenthal (Foto aus dem Internet)" } },
+        { path: "Germany/nrw/arnsberg/Märkischer-Kreis/luedenscheid/schloss_oedenthal/002.jpg", title: { ru: "Усадьба Оеденталь (фото взято с интернета)", ua: "Садиба Оеденталь (фото взято з Інтернету)", de: "Schloss Oedenthal (Foto aus dem Internet)" } },
       ]
     },
     iserlohn: {

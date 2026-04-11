@@ -129,6 +129,7 @@ const Map = () => {
                               <li><Link to="/germany/nrw/arnsberg/luedenscheid/attractions/christuskirche_luedenscheid">{t.attractions.christuskirche_luedenscheid[lang]}</Link></li>
                               <li><Link to="/germany/nrw/arnsberg/luedenscheid/attractions/st_joseph_medardus">{t.attractions.st_joseph_medardus[lang]}</Link></li>
                               <li><Link to="/germany/nrw/arnsberg/luedenscheid/attractions/schloss_neuenhof_luedenscheid">{t.attractions.schloss_neuenhof_luedenscheid[lang]}</Link></li>
+                              <li><Link to="/germany/nrw/arnsberg/luedenscheid/attractions/schloss_oedenthal_luedenscheid">{t.attractions.schloss_oedenthal_luedenscheid[lang]}</Link></li>
                               <li><Link to="/germany/nrw/arnsberg/luedenscheid/attractions/versetalsperre_luedenscheid">{t.attractions.versetalsperre_luedenscheid[lang]}</Link></li>
                             </ul>
                           </li>

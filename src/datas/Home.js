@@ -15,9 +15,9 @@ export const datas =
                         description_7: "Это не туристический блог и не подборка маршрутов – это систематизированная база мест, собранная в удобной форме для изучения.",
                         description_8: "Цель проекта – сделать информацию о достопримечательностях и местах более структурированной, доступной и понятной.",
                         meta: {
-                                title: "Каталог достопримечательностей Европы – города и локальные объекты",
+                                title: "Наши путешествия",
                                 description: "Структурированный каталог городов и достопримечательностей Европы с описаниями, фото и картой.",
-                                ogTitle: "Каталог достопримечательностей Европы",
+                                ogTitle: "Наши путешествия",
                                 ogDescription: "Города, регионы и локальные места Европы в удобной структуре с описаниями и фото.",
                                 ogImage: "https://our-travels.info/header.jpg",
                         }
@@ -35,9 +35,9 @@ export const datas =
                         description_7: "Це не туристичний блог і не добірка маршрутів – це систематизована база місць, зібрана у зручному форматі для вивчення.",
                         description_8: "Мета проєкту – зробити інформацію про пам’ятки та місця більш структурованою, доступною та зрозумілою.",
                         meta: {
-                                title: "Каталог пам’яток – міста та локальні об’єкти",
+                                title: "Наші подорожі",
                                 description: "Структурований каталог міст і пам’яток з описами, фото та картою.",
-                                ogTitle: "Каталог пам’яток",
+                                ogTitle: "Наші подорожі",
                                 ogDescription: "Міста, регіони та локальні місця у зручній структурі з описами та фото.",
                                 ogImage: "https://our-travels.info/header.jpg",
                         }
@@ -55,9 +55,9 @@ export const datas =
                         description_7: "Dies ist kein Reiseblog und keine Sammlung von Reiserouten – sondern eine strukturierte Datenbasis von Orten in einem übersichtlichen Format.",
                         description_8: "Ziel des Projekts ist es, Informationen über Sehenswürdigkeiten und Orte strukturierter, zugänglicher und verständlicher zu machen.",
                         meta: {
-                                title: "Sehenswürdigkeiten-Katalog — Städte und lokale Orte",
+                                title: "Unsere Reisen",
                                 description: "Strukturierter Katalog von Städten und Sehenswürdigkeiten mit Beschreibungen, Fotos und Karte.",
-                                ogTitle: "Sehenswürdigkeiten-Katalog",
+                                ogTitle: "Unsere Reisen",
                                 ogDescription: "Städte, Regionen und lokale Orte in einer übersichtlichen Struktur mit Beschreibungen und Fotos.",
                                 ogImage: "https://our-travels.info/header.jpg",
                         }

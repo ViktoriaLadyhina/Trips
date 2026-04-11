@@ -1018,6 +1018,139 @@ const datas = [
             }
         }
     },
+    {
+        id: "schloss_oedenthal_luedenscheid",
+        type: ["palace_or_castle"], rating: "local",
+        path: "schloss_oedenthal_luedenscheid",
+        countryPath: "germany", regionsPath: "nrw", districtPath: "arnsberg", cityPath: "luedenscheid",
+        fotoCard: "Germany/nrw/arnsberg/Märkischer-Kreis/luedenscheid/schloss_oedenthal/001.jpg",
+        coord: { lat: 51.232895, lng: 7.583583 },
+        translations: {
+            ru: {
+                name: "Усадьба Оеденталь",
+                location: "Люденшайд, Германия",
+                short_description: "Историческая усадьба в Люденшайде, перестроенная в XIX веке в неоготическом стиле и сохранившая атмосферу загородного имения.",
+                full_description: {
+                    title: "Описание и история",
+                    items: [
+                        { bold: "Усадьба Оеденталь (Schloss Oedenthal)", text: "находится в северо-западной части Люденшайда, на естественном возвышении между долинами небольших рек. Место отличается живописным ландшафтом и исторической застройкой, формирующей характерный вид района Grebbecketal." },
+                        { text: "Современный облик усадьбы сформировался после пожара около 1865 года, когда прежние постройки были утрачены. В результате реконструкции здание приобрело черты неоготики и английского стиля Tudor: асимметричные корпуса, центральную башню и декоративные архитектурные элементы." },
+                        { text: "Важную роль в истории усадьбы сыграла семья фон Хольцбринк (von Holtzbrinck), владевшая имением на протяжении длительного времени. Представители семьи занимали значимые административные и государственные должности в Пруссии, а само место использовалось как загородная резиденция." },
+                        { bold: "История", text: "Первые упоминания о поселении и владении в этой местности относятся к XII веку (около 1160 года). В последующие столетия усадьба неоднократно переходила между владельцами, сохраняя значение сельского имения региона." },
+                        { text: "Примерно в 1865 году произошёл пожар, уничтоживший старые постройки. После этого был возведён новый комплекс в неоготическом стиле, который сохранился до настоящего времени. С XX века усадьба находится в частной собственности и используется как жилая резиденция, доступ на территорию ограничен." }
+                    ]
+                },
+                tickets_and_entry: {
+                    title: "Практическая информация",
+                    items: [
+                        { bold: "Адрес:", text: "Oedenthaler Straße 105–107, 58515 Lüdenscheid" },
+                        { bold: "Доступ:", text: "ограничен (частная территория). Осмотр возможен только снаружи." }
+                    ]
+                },
+                interestingFacts: {
+                    title: "Интересные факты",
+                    isList: true,
+                    items: [
+                        { text: "История усадьбы насчитывает более 800 лет – первое упоминание относится к XII веку." },
+                        { text: "Несмотря на название Schloss, это не классический замок, а дворянская усадьба (Herrenhaus) без оборонительных функций." },
+                        { text: "Архитектура выполнена в стиле английской неоготики (Tudor), что необычно для региона Зауэрланд." },
+                        { text: "У подножия усадьбы находилась водяная мельница, связанная с хозяйством бывшего поместья." }
+                    ]
+                },
+                construction_period: "Около 1160 года (первое упоминание), современное здание – после 1865 года",
+                meta: {
+                    title: "Усадьба Оеденталь (Schloss Oedenthal) в Люденшайде – история и архитектур",
+                    description: "Историческая усадьба в Люденшайде с корнями в XII веке и архитектурой XIX века в стиле неоготики. Частная территория, доступ ограничен.",
+                    ogTitle: "Усадьба Оеденталь в Люденшайде",
+                    ogDescription: "Неоготическая усадьба с многовековой историей в Люденшайде, расположенная в живописной долине.",
+                    keywords: "усадьба Оеденталь, Schloss Oedenthal, Люденшайд достопримечательности, замки NRW, исторические усадьбы Германия, Sauerland Sehenswürdigkeiten, Oedenthal Lüdenscheid, что посмотреть в Люденшайде, Herrenhaus, Sauerland, Grebbecketal",
+                    ogImage: "https://our-travels.info/foto/Germany/nrw/arnsberg/Märkischer-Kreis/luedenscheid/schloss_oedenthal/001.jpg"
+                }
+            },
+            ua: {
+                name: "Садиба Оеденталь",
+                location: "Люденшайд, Німеччина",
+                short_description: "Історична садиба в Люденшайді, перебудована в XIX столітті в неоготичному стилі та збережена як атмосферне заміське маєткове господарство.",
+                full_description: {
+                    title: "Опис і історія",
+                    items: [
+                        { bold: "Садиба Оеденталь (Schloss Oedenthal)", text: "розташована в північно-західній частині Люденшайда, на природному підвищенні між долинами невеликих річок. Місце вирізняється мальовничим ландшафтом і історичною забудовою, яка формує характерний вигляд району Grebbecketal." },
+                        { text: "Сучасний вигляд садиби сформувався після пожежі приблизно 1865 року, коли попередні споруди були знищені. У результаті реконструкції будівля набула рис неоготики та англійського стилю Tudor: асиметричні корпуси, центральна башта та декоративні архітектурні елементи." },
+                        { text: "Важливу роль в історії садиби відіграла родина фон Хольцбрінк (von Holtzbrinck), яка тривалий час володіла маєтком. Представники родини займали значні адміністративні та державні посади в Пруссії, а саме місце використовувалося як заміська резиденція." },
+                        { bold: "Історія", text: "Перші згадки про поселення та володіння на цій території відносяться до XII століття (приблизно 1160 рік). У наступні століття садиба неодноразово змінювала власників, зберігаючи значення сільського маєтку регіону." },
+                        { text: "Приблизно у 1865 році сталася пожежа, яка знищила старі споруди. Після цього було зведено новий комплекс у неоготичному стилі, який зберігся до сьогодні. З XX століття садиба перебуває у приватній власності та використовується як житлова резиденція, доступ на територію обмежений." }
+                    ]
+                },
+                tickets_and_entry: {
+                    title: "Практична інформація",
+                    items: [
+                        { bold: "Адреса:", text: "Oedenthaler Straße 105–107, 58515 Lüdenscheid" },
+                        { bold: "Доступ:", text: "обмежений (приватна територія). Огляд можливий лише ззовні." }
+                    ]
+                },
+                interestingFacts: {
+                    title: "Цікаві факти",
+                    isList: true,
+                    items: [
+                        { text: "Історія садиби налічує понад 800 років – перша згадка відноситься до XII століття." },
+                        { text: "Попри назву Schloss, це не класичний замок, а дворянська садиба (Herrenhaus) без оборонних функцій." },
+                        { text: "Архітектура виконана в стилі англійської неоготики (Tudor), що є нетиповим для регіону Зауерланд." },
+                        { text: "Під садибою знаходився водяний млин, пов’язаний із господарством колишнього маєтку." }
+                    ]
+                },
+                construction_period: "Близько 1160 року (перша згадка), сучасна будівля – після 1865 року",
+                meta: {
+                    title: "Садиба Оеденталь (Schloss Oedenthal) у Люденшайді – історія та архітектура",
+                    description: "Історична садиба в Люденшайді з корінням у XII столітті та архітектурою XIX століття в неоготичному стилі. Приватна територія, доступ обмежений.",
+                    ogTitle: "Садиба Оеденталь у Люденшайді",
+                    ogDescription: "Неоготична садиба з багатовіковою історією в Люденшайді, розташована в мальовничій долині.",
+                    keywords: "садиба Оеденталь, Schloss Oedenthal, Люденшайд пам’ятки, замки NRW, історичні садиби Німеччина, Sauerland Sehenswürdigkeiten, Oedenthal Lüdenscheid, що подивитися в Люденшайді, Herrenhaus, Sauerland, Grebbecketal",
+                    ogImage: "https://our-travels.info/foto/Germany/nrw/arnsberg/Märkischer-Kreis/luedenscheid/schloss_oedenthal/001.jpg"
+                }
+            },
+            de: {
+                name: "Schloss Oedenthal",
+                location: "Lüdenscheid, Deutschland",
+                short_description: "Historisches Gut in Lüdenscheid, das im 19. Jahrhundert im neugotischen Stil umgebaut wurde und die Atmosphäre eines traditionellen Landguts bewahrt hat.",
+                full_description: {
+                    title: "Beschreibung und Geschichte",
+                    items: [
+                        { bold: "Schloss Oedenthal", text: "liegt im nordwestlichen Teil von Lüdenscheid auf einer natürlichen Anhöhe zwischen den Tälern kleiner Flüsse. Der Ort zeichnet sich durch eine malerische Landschaft und historische Bebauung aus, die das typische Erscheinungsbild der Region Grebbecketal prägt." },
+                        { text: "Das heutige Erscheinungsbild des Gutes entstand nach einem Brand um 1865, bei dem die früheren Gebäude zerstört wurden. Im Zuge des Wiederaufbaus erhielt das Gebäude Merkmale der Neugotik und des englischen Tudorstils: asymmetrische Baukörper, ein zentraler Turm und dekorative architektonische Elemente." },
+                        { text: "Eine wichtige Rolle in der Geschichte des Gutes spielte die Familie von Holtzbrinck, die das Anwesen über einen langen Zeitraum besaß. Mitglieder der Familie hatten bedeutende Verwaltungs- und Staatsämter in Preußen inne, und das Anwesen wurde als Sommerresidenz genutzt." },
+                        { bold: "Geschichte", text: "Die ersten Erwähnungen der Siedlung und des Besitzes in diesem Gebiet gehen auf das 12. Jahrhundert zurück (um 1160). In den folgenden Jahrhunderten wechselte das Gut mehrfach den Besitzer und behielt seine Bedeutung als landwirtschaftliches Anwesen der Region." },
+                        { text: "Um 1865 zerstörte ein Brand die alten Gebäude. Danach wurde ein neuer Komplex im neugotischen Stil errichtet, der bis heute erhalten ist. Seit dem 20. Jahrhundert befindet sich das Gut in Privatbesitz und wird als Wohnsitz genutzt, der Zugang ist eingeschränkt." }
+                    ]
+                },
+                tickets_and_entry: {
+                    title: "Praktische Informationen",
+                    items: [
+                        { bold: "Adresse:", text: "Oedenthaler Straße 105–107, 58515 Lüdenscheid" },
+                        { bold: "Zugang:", text: "eingeschränkt (Privatgelände). Besichtigung nur von außen möglich." }
+                    ]
+                },
+                interestingFacts: {
+                    title: "Interessante Fakten",
+                    isList: true,
+                    items: [
+                        { text: "Die Geschichte des Gutes reicht über 800 Jahre zurück – die erste Erwähnung stammt aus dem 12. Jahrhundert." },
+                        { text: "Trotz des Namens Schloss handelt es sich nicht um eine klassische Burg, sondern um ein Herrenhaus ohne Verteidigungsfunktion." },
+                        { text: "Die Architektur ist im englischen Tudorstil gehalten, was in der Region Sauerland ungewöhnlich ist." },
+                        { text: "Am Fuße des Gutes befand sich eine Wassermühle, die zum wirtschaftlichen Betrieb des ehemaligen Anwesens gehörte." }
+                    ]
+                },
+                construction_period: "Um 1160 (erste Erwähnung), heutiges Gebäude nach 1865",
+                meta: {
+                    title: "Schloss Oedenthal in Lüdenscheid – Geschichte und Architektur",
+                    description: "Historisches Gut in Lüdenscheid mit Wurzeln im 12. Jahrhundert und Architektur des 19. Jahrhunderts im neugotischen Stil. Privatgelände, nicht zugänglich.",
+                    ogTitle: "Schloss Oedenthal in Lüdenscheid",
+                    ogDescription: "Neugotisches Schloss mit jahrhundertealter Geschichte in einer malerischen Talsenke bei Lüdenscheid.",
+                    keywords: "Gut Oedenthal, Schloss Oedenthal, Lüdenscheid Sehenswürdigkeiten, Burgen NRW, historische Güter Deutschland, Sauerland Sehenswürdigkeiten, Oedenthal Lüdenscheid, Herrenhaus, Grebbecketal, Geschichte Lüdenscheid",
+                    ogImage: "https://our-travels.info/foto/Germany/nrw/arnsberg/Märkischer-Kreis/luedenscheid/schloss_oedenthal/001.jpg"
+                }
+            }
+        }
+    },
 
     //iserlohn
     {

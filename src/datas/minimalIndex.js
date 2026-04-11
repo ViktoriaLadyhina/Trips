@@ -61,6 +61,7 @@ const datas =
     versetalsperre_luedenscheid: { ru: 'Водохранилище Верзе', de: 'Versetalsperre', ua: 'Водосховище Верзе' },
     st_joseph_medardus: { ru: 'Церковь Святого Йозефа и Медарда', de: 'Kirche St. Joseph und Medardus', ua: 'Церква Святого Йосипа та Медарда' },
     schloss_neuenhof_luedenscheid: { ru: 'Замок Нойенхоф', de: 'Schloss Neuenhof', ua: 'Замок Нойенхоф' },
+    schloss_oedenthal_luedenscheid: { ru: 'Усадьба Оеденталь', de: 'Schloss Oedenthal', ua: 'Садиба Оеденталь' },
 
     // Altena
     burg_altena: { ru: 'Замок Альтена', de: 'Burg Altena', ua: 'Замок Альтена' },
