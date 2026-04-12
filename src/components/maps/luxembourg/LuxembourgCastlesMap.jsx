@@ -1,7 +1,7 @@
 import { MapContainer, TileLayer, Marker, Tooltip, Popup, Polyline } from "react-leaflet";
 import L from "leaflet";
 import { useNavigate } from "react-router";
-import luxAttractions from "../.././../datas/luxembourg/lux-attractions";
+import luxAttractions from "../.././../datas/luxembourg/mersch-attractions";
 
 const luxCastles = [
     {

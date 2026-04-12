@@ -5,7 +5,7 @@ import { useSelector } from 'react-redux';
 
 const BASE_PHOTO_URL = import.meta.env.VITE_BASE_PHOTO_URL;
 
-const Region = ({ data, countryPath, regionsPath, districtPath, id }) => {
+const Region = ({ data, countryPath, regionPath, districtPath, id }) => {
   const { lang } = useSelector((state) => state.language);
   
 const t = data?.translations[lang] || {};
@@ -28,7 +28,7 @@ const t = data?.translations[lang] || {};
                 <li key={reg.id} className="region__container-list__item">
                   {reg.hasInfo ? (
                     <Link
-                      to={`/${countryPath}/${regionsPath}/${districtPath}/${reg.path}`}
+                      to={`/${countryPath}/${regionPath}/${districtPath}/${reg.path}`}
                       className="region__container-list__link"
                     >
                       {reg.name}

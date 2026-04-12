@@ -79,7 +79,7 @@ const AttractionForm = () => {
     rating: watchedFields.rating,
     path: watchedFields.id,
     countryPath: watchedFields.country,
-    regionsPath: watchedFields.region,
+    regionPath: watchedFields.region,
     districtPath: watchedFields.district,
     cityPath: watchedFields.city,
     ...(watchedFields.isChildAttraction === "true" && { hiddenFromList: true }),
@@ -342,6 +342,7 @@ const AttractionForm = () => {
           <select {...register("country", { required: "Выберите страну" })}>
             <option value="">Выберите страну</option>
             <option value="germany">Германия</option>
+            <option value="luxembourg">Люксембург</option>
             <option value="ukraine">Украина</option>
           </select>
           <p className='note'>Если добавляем новую страну, то вставляем объект с новой страной в src/datas/языки/Country.js. Потом обновляем src/datas/языки/index.js и форму. Так же нужно внести добавления в src/datas/fotos/index.js (чтобы работала фотогалерея)</p>

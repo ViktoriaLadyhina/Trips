@@ -55,7 +55,7 @@ const AttractionCardSub = ({ attr, lang }) => {
                     )}
                     {attr.showMore && (
                         <div className='attrCard__desc-info-more'>
-                            <Link to={`/${attr.countryPath}/${attr.regionsPath}/${attr.districtPath}/${attr.cityPath}/attractions/${attr.slug || attr.path}`}>
+                            <Link to={`/${attr.countryPath}/${attr.regionPath}/${attr.districtPath}/${attr.cityPath}/attractions/${attr.slug || attr.path}`}>
                                 {more[lang]}
                             </Link>
                         </div>

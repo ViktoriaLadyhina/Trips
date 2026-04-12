@@ -110,7 +110,7 @@ const District = () => {
                 key={sub.id}
                 data={sub}
                 countryPath={countryPath}
-                regionsPath={regionPath}
+                regionPath={regionPath}
                 districtPath={districtPath}
                 id={`subregion-${slugify(sub.path)}`}
               />

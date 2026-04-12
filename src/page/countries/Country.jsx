@@ -5,7 +5,7 @@ import { useState } from 'react';
 
 import countries from '../../datas/country';
 import luxembourgRoutes from '../../datas/luxembourg/routes'
-
+import BtnAttr from "../../components/btn-attr/BtnAttr";
 import BreadCrumbs from '../../components/breadCrumbs/BreadCrumbs';
 import InfoBlock from '../../components/InfoBlock/InfoBlock';
 import { photosByCountry } from "../../datas/fotos";
@@ -114,6 +114,7 @@ const Country = () => {
                 <h1 className="country__title">{country?.translations?.[lang]?.country}</h1>
 
                 <div className='country__map'>
+                    <BtnAttr lang={lang} path={`/${countryPath}/attractions`} />
                     <CountryMap
                         countryKey={country.path}
                         regions={country.translations?.[lang]?.regions}

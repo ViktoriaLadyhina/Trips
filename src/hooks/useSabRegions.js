@@ -26,13 +26,17 @@ const useSabRegions = (countryPath, regionPath, districtPath) => {
   useEffect(() => {
     const loadData = async () => {
       try {
+        if (!regionPath || !districtPath ) {
+          setSubRegion(null);
+          return;
+        }
         const modulesSubRegions = import.meta.glob("../datas/*/*-subRegions.js");
         const lowerCountry = countryPath?.toLowerCase();
         const lowerRegion = regionPath?.toLowerCase();
         const lowerDistrict = districtPath?.toLowerCase();
 
         const keySubRegion = Object.keys(modulesSubRegions).find(path => {
-          const p = path.toLowerCase();
+          const p = (path || '').toLowerCase();
 
           return (
             p.includes(`/${lowerCountry}/`) &&

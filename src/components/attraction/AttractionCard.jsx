@@ -12,13 +12,13 @@ const topOptionLabel = { top: { ru: "Топовый", ua: "Топовий", de: 
 const AttractionCard = ({ attr, lang }) => {
     const params = useParams();
     const countryPath = params.countryPath || attr.countryPath || 'germany';
-    const regionsPath = params.regionsPath || attr.regionsPath;
+    const regionPath = params.regionPath || attr.regionPath;
     const districtPath = params.districtPath || attr.districtPath;
     const cityPath = params.cityPath || attr.cityPath;
 
     // Формируем путь корректно
     let detailPath = `/${countryPath}`;
-    if (regionsPath) detailPath += `/${regionsPath}`;
+    if (regionPath) detailPath += `/${regionPath}`;
     if (districtPath) detailPath += `/${districtPath}`;
     if (cityPath) detailPath += `/${cityPath}`;
     detailPath += `/attractions/${attr.path}`;

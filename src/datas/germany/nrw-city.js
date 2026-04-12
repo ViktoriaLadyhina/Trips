@@ -4,7 +4,7 @@ const datas = [
     {
         id: "koln",
         path: "koln",
-        countryPath: "germany", regionsPath: "nrw", districtPath: "city",
+        countryPath: "germany", regionPath: "nrw", districtPath: "city",
         gerb: "Germany/nrw/koln/koln-city/gerb.png",
         coord: { lat: 50.9333, lng: 6.95 },
         translations: {
@@ -277,7 +277,7 @@ const datas = [
     {
         id: "dortmund",
         path: "dortmund",
-        countryPath: "germany", regionsPath: "nrw", districtPath: "city",
+        countryPath: "germany", regionPath: "nrw", districtPath: "city",
         gerb: "Germany/nrw/arnsberg/dortmund/gerb.png",
         coord: { lat: 51.5136, lng: 7.4653 },
         translations: {
@@ -480,7 +480,7 @@ const datas = [
     {
         id: "monschau",
         path: "monschau",
-        countryPath: "germany", regionsPath: "nrw", districtPath: "koln", subRegionPath: "aachen",
+        countryPath: "germany", regionPath: "nrw", districtPath: "koln", subRegionPath: "aachen",
         gerb: "Germany/nrw/koln/Aachen/monschau/gerb.png",
         coord: { lat: 50.5545, lng: 6.2408 },
         translations: {
@@ -668,7 +668,7 @@ const datas = [
     {
         id: "bruhl",
         path: "bruhl",
-        countryPath: "germany", regionsPath: "nrw", districtPath: "koln", subRegionPath: "rhein_erft",
+        countryPath: "germany", regionPath: "nrw", districtPath: "koln", subRegionPath: "rhein_erft",
         gerb: "Germany/nrw/koln/Rhein-Erft-Kreis/bruhl/gerb.png",
         coord: { lat: 50.8293, lng: 6.9050 },
         translations: {
@@ -851,7 +851,7 @@ const datas = [
     {
         id: "frechen",
         path: "frechen",
-        countryPath: "germany", regionsPath: "nrw", districtPath: "koln", subRegionPath: "rhein_erft",
+        countryPath: "germany", regionPath: "nrw", districtPath: "koln", subRegionPath: "rhein_erft",
         gerb: "Germany/nrw/koln/Rhein-Erft-Kreis/frechen/gerb.png",
         coord: { lat: 50.9167, lng: 6.8167 },
         translations: {
@@ -1103,7 +1103,7 @@ const datas = [
     {
         id: "konigswinter",
         path: "konigswinter",
-        countryPath: "germany", regionsPath: "nrw", districtPath: "koln", subRegionPath: "rhein_sieg",
+        countryPath: "germany", regionPath: "nrw", districtPath: "koln", subRegionPath: "rhein_sieg",
         gerb: "Germany/nrw/koln/Rhein-Sieg-Kreis/konigswinter/gerb.png",
         coord: { lat: 50.6838, lng: 7.1868 },
         translations: {
@@ -1343,7 +1343,7 @@ const datas = [
     {
         id: "luedenscheid",
         path: "luedenscheid",
-        countryPath: "germany", regionsPath: "nrw", districtPath: "arnsberg", subRegionPath: "merkischer",
+        countryPath: "germany", regionPath: "nrw", districtPath: "arnsberg", subRegionPath: "merkischer",
         gerb: "Germany/nrw/arnsberg/Märkischer-Kreis/luedenscheid/gerb.png",
         coord: { lat: 51.2198, lng: 7.6273 },
         translations: {
@@ -1593,7 +1593,7 @@ const datas = [
     {
         id: "altena",
         path: "altena",
-        countryPath: "germany", regionsPath: "nrw", districtPath: "arnsberg", subRegionPath: "merkischer",
+        countryPath: "germany", regionPath: "nrw", districtPath: "arnsberg", subRegionPath: "merkischer",
         gerb: "Germany/nrw/arnsberg/Märkischer-Kreis/altena/gerb.jpg",
         coord: { lat: 51.311, lng: 7.689 },
         translations: {
@@ -1776,7 +1776,7 @@ const datas = [
     {
         id: "iserlohn",
         path: "iserlohn",
-        countryPath: "germany", regionsPath: "nrw", districtPath: "arnsberg", subRegionPath: "merkischer",
+        countryPath: "germany", regionPath: "nrw", districtPath: "arnsberg", subRegionPath: "merkischer",
         gerb: "Germany/nrw/arnsberg/Märkischer-Kreis/iserlohn/gerb.png",
         coord: { lat: 51.3755, lng: 7.7028 },
         translations: {

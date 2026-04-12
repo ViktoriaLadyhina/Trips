@@ -170,7 +170,7 @@ export function buildSearchIndex(data, lang) {
         push(attr, "attraction", () => "/" +
           [
             attr.countryPath || countryKey,
-            attr.regionsPath || regionKey,
+            attr.regionPath || regionKey,
             attr.districtPath,
             attr.cityPath,
             "attractions",

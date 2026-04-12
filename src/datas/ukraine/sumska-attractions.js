@@ -3,7 +3,7 @@ const datas = [
         id: "onatsky_museum_sumy",
         type: ["museum"], rating: "local",
         path: "onatsky_museum_sumy",
-        countryPath: "ukraine", regionsPath: "sumska", districtPath: "city", cityPath: "sumy",
+        countryPath: "ukraine", regionPath: "sumska", districtPath: "city", cityPath: "sumy",
         fotoCard: "Ukraine/sumska/sumy-city/pokrovska_square/onatsky_museum/001.jpg",
         hiddenFromList: true, showMore: true,
         coord: { lat: 50.906023, lng: 34.799972 },

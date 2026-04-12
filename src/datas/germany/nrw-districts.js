@@ -12,7 +12,7 @@ const datas = [
         id: 1,
         hasInfo: true,
         path: "arnsberg",
-        regionsPath: "nrw",
+        regionPath: "nrw",
         translations: {
             ru: {
                 title: "Административный округ Арнсберг",
@@ -130,7 +130,7 @@ const datas = [
     {
         id: 4,
         hasInfo: true,
-        path: "koln", regionsPath: "nrw",
+        path: "koln", regionPath: "nrw",
         translations: {
             ru: {
                 title: "Административный округ Кёльн",

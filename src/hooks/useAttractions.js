@@ -2,87 +2,151 @@ import { useEffect, useState } from 'react';
 import { useSelector } from 'react-redux';
 
 function localizeItem(item, lang = 'ru') {
-    if (!item) return null;
-    const translation = item.translations?.[lang] || item.translations?.['ru'];
-    if (!translation) return item;
-    const { translations, ...rest } = item;
-    return { ...rest, ...translation };
+  if (!item) return null;
+
+  const translation =
+    item.translations?.[lang] ||
+    item.translations?.['ru'];
+
+  if (!translation) return item;
+
+  const { translations, ...rest } = item;
+
+  return {
+    ...rest,
+    ...translation,
+  };
 }
 
 const useAttractions = (countryPath, regionPath, districtPath, cityPath) => {
-    const { lang } = useSelector((state) => state.language);
-    const [attractions, setAttractions] = useState([]);
-    const [error, setError] = useState(null);
+  const { lang } = useSelector((state) => state.language);
 
-    const modulesNew = import.meta.glob('../datas/*/*-attractions.js');
-    const modulesOld = import.meta.glob('../datas/*/*/*-attractions.js');
+  const [attractions, setAttractions] = useState([]);
+  const [error, setError] = useState(null);
 
-    useEffect(() => {
-        let isMounted = true;
+  const modulesNew = import.meta.glob('../datas/*/*-attractions.js');
+  const modulesOld = import.meta.glob('../datas/*/*/*-attractions.js');
 
-        const loadData = async () => {
-            try {
-                if (!countryPath || !regionPath) {
-                    setAttractions([]);
-                    return;
-                }
+  useEffect(() => {
+    let isMounted = true;
 
-                const lowerCountry = countryPath.toLowerCase();
-                const lowerRegion = regionPath.toLowerCase();
+    const loadData = async () => {
+      try {
+        if (!countryPath) {
+          setAttractions([]);
+          return;
+        }
 
-                // новый файл
-                const keyNew = Object.keys(modulesNew).find((p) =>
-                    p.toLowerCase().endsWith(`/${lowerCountry}/${lowerRegion}-attractions.js`)
-                );
-                let attractionsNew = [];
-                if (keyNew) {
-                    const modNew = await modulesNew[keyNew]();
-                    attractionsNew = modNew.default || [];
-                }
+        const lowerCountry = countryPath?.toLowerCase();
+        const lowerRegion = regionPath?.toLowerCase();
 
-                // старый файл с языком
-                const keyOld = Object.keys(modulesOld).find((p) =>
-                    p.toLowerCase().endsWith(`/${lang}/${lowerCountry}/${lowerRegion}-attractions.js`)
-                );
-                let attractionsOld = [];
-                if (keyOld) {
-                    const modOld = await modulesOld[keyOld]();
-                    attractionsOld = modOld.default || [];
-                }
+        let attractionsNew = [];
+        let attractionsOld = [];
 
-                // объединяем
-                const allAttractions = [...attractionsNew, ...attractionsOld];
+        // =========================
+        // 🔥 НОВАЯ СТРУКТУРА
+        // =========================
+        if (regionPath) {
+          // конкретный регион
+          const keyNew = Object.keys(modulesNew).find((p) =>
+            p.toLowerCase().endsWith(`/${lowerCountry}/${lowerRegion}-attractions.js`)
+          );
 
-                // фильтруем по городу (и опционально по districtPath)
-                const found = allAttractions.filter((a) => {
-                    if (cityPath) {
-                        return a.cityPath === cityPath;
-                    }
+          if (keyNew) {
+            const mod = await modulesNew[keyNew]();
+            attractionsNew = mod.default || [];
+          }
+        } else {
+          // уровень страны → собрать ВСЕ регионы
+          const countryModules = Object.keys(modulesNew).filter((p) =>
+            p.toLowerCase().includes(`/${lowerCountry}/`)
+          );
 
-                    if (districtPath && districtPath !== "city") {
-                        return a.districtPath === districtPath;
-                    }
+          for (const key of countryModules) {
+            const mod = await modulesNew[key]();
+            attractionsNew.push(...(mod.default || []));
+          }
+        }
 
-                    // уровень региона
-                    return true;
-                });
+        // =========================
+        // 🧓 СТАРАЯ СТРУКТУРА (по языкам)
+        // =========================
+        if (regionPath) {
+          const keyOld = Object.keys(modulesOld).find((p) =>
+            p.toLowerCase().endsWith(`/${lang}/${lowerCountry}/${lowerRegion}-attractions.js`)
+          );
 
-                if (!isMounted) return;
+          if (keyOld) {
+            const mod = await modulesOld[keyOld]();
+            attractionsOld = mod.default || [];
+          }
+        } else {
+          const countryModulesOld = Object.keys(modulesOld).filter((p) =>
+            p.toLowerCase().includes(`/${lang}/${lowerCountry}/`)
+          );
 
-                setAttractions(found.map((a) => localizeItem(a, lang)));
-            } catch (err) {
-                if (isMounted) setError(err.message);
-            }
-        };
+          for (const key of countryModulesOld) {
+            const mod = await modulesOld[key]();
+            attractionsOld.push(...(mod.default || []));
+          }
+        }
 
-        loadData();
+        // =========================
+        // объединение + удаление дублей
+        // =========================
+        const merged = [...attractionsNew, ...attractionsOld];
 
-        return () => {
-            isMounted = false;
-        };
-    }, [countryPath, regionPath, districtPath, cityPath, lang]);
+        const uniqueMap = new Map();
+        merged.forEach((item) => {
+          if (item?.id) {
+            uniqueMap.set(item.id, item);
+          }
+        });
 
-    return { attractions, error };
+        const allAttractions = Array.from(uniqueMap.values());
+
+        // =========================
+        // фильтрация по уровню
+        // =========================
+        const filtered = allAttractions.filter((a) => {
+          if (!a) return false;
+
+          if (cityPath) {
+            return a.cityPath === cityPath;
+          }
+
+          if (districtPath && districtPath !== 'city') {
+            return a.districtPath === districtPath;
+          }
+
+          if (regionPath) {
+            return a.regionPath === regionPath;
+          }
+
+          // уровень страны → всё показываем
+          return true;
+        });
+
+        if (!isMounted) return;
+
+        setAttractions(filtered.map((a) => localizeItem(a, lang)));
+      } catch (err) {
+        if (isMounted) {
+          console.error('useAttractions error:', err);
+          setError(err.message);
+        }
+      }
+    };
+
+    loadData();
+
+    return () => {
+      isMounted = false;
+    };
+  }, [countryPath, regionPath, districtPath, cityPath, lang]);
+
+
+  return { attractions, error };
 };
 
 export default useAttractions;

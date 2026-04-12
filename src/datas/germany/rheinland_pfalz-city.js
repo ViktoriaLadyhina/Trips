@@ -2,7 +2,7 @@ const datas = [
     {
         id: "trier",
         path: "trier",
-        countryPath: "germany", regionsPath: "rheinland_pfalz", districtPath: "city",
+        countryPath: "germany", regionPath: "rheinland_pfalz", districtPath: "city",
         gerb: "Germany/rheinland-pfalz/trier-city/gerb.png",
         coord: { lat: 49.75565, lng: 6.63935 },
         translations: {
@@ -207,7 +207,7 @@ const datas = [
     {
         id: "saarburg",
         path: "saarburg",
-        countryPath: "germany", regionsPath: "rheinland_pfalz", districtPath: "trier_saarburg",
+        countryPath: "germany", regionPath: "rheinland_pfalz", districtPath: "trier_saarburg",
         gerb: "Germany/rheinland-pfalz/trier_saarburg/saarburg_kell/saarburg/gerb.png",
         coord: { lat: 49.6131, lng: 6.5783 },
         translations: {

@@ -55,9 +55,7 @@ const Attraction = () => {
     }));
 
     if (error) return <p>{error}</p>;
-    if (!countryPath || !regionPath || !city) return <p>Loading...</p>;
-
-    if (error) return <p>{error}</p>;
+    if (!countryPath || !regionPath) return <p>Loading...</p>;
     if (!attractions) return <p>Loading...</p>;
     if (!attraction) return <p>Attraction not found</p>;
 
@@ -104,20 +102,40 @@ const Attraction = () => {
         .filter(Boolean)
         .sort(sortByFilters);
 
+    const isLuxembourgLike = countryPath === "luxembourg";
+
     // Хлебные крошки
     const crumbs = [
         { label: lang === "ru" ? "Главная" : lang === "de" ? "Startseite" : "Головна", path: "/" },
-        countryPath && datas.countries[countryPath]?.[lang] ? { label: datas.countries[countryPath][lang], path: `/${countryPath}` } : null,
-        regionPath && datas.regions[regionPath]?.[lang] ? { label: datas.regions[regionPath][lang], path: `/${countryPath}/${regionPath}` } : null,
-        districtPath && districtPath !== "city" && datas.districts[districtPath]?.[lang]
-            ? { label: datas.districts[districtPath][lang], path: `/${countryPath}/${regionPath}/${districtPath}` }
-            : null,
-        city?.subRegionName ? { label: city.subRegionName } : null,
-        cityPath ? {
-            label: datas.cities[cityPath]?.[lang], path: districtPath === "city"
-                ? `/${countryPath}/${regionPath}/city/${cityPath}`
-                : `/${countryPath}/${regionPath}/${districtPath}/${cityPath}`
+
+        countryPath && datas.countries[countryPath]?.[lang] ? {
+            label: datas.countries[countryPath][lang],
+            path: `/${countryPath}`
         } : null,
+
+        regionPath && datas.regions[regionPath]?.[lang] ? {
+            label: datas.regions[regionPath][lang],
+            path: isLuxembourgLike ? undefined : `/${countryPath}/${regionPath}`,
+        } : null,
+
+        districtPath && districtPath !== "city" && datas.districts[districtPath]?.[lang] ? {
+            label: datas.districts[districtPath][lang],
+            path: `/${countryPath}/${regionPath}/${districtPath}`
+        } : null,
+
+        city?.subRegionName ? { label: city.subRegionName } : null,
+
+        cityPath
+            ? {
+                label: datas.cities[cityPath]?.[lang],
+                path: isLuxembourgLike
+                    ? undefined
+                    : districtPath === "city"
+                        ? `/${countryPath}/${regionPath}/city/${cityPath}`
+                        : `/${countryPath}/${regionPath}/${districtPath}/${cityPath}`,
+            }
+            : null,
+
         { label: datas.attractions[attractionsPath]?.[lang] }
     ].filter(Boolean);
 

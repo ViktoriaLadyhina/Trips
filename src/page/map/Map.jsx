@@ -291,6 +291,16 @@ const Map = () => {
                   <li><Link to="/luxembourg/routes/seven_castles">{t.routes.seven_castles[lang]}</Link></li>
                 </ul>
               </li>
+              <li><span>{t.regions.mersch[lang]}</span>
+                <ul>
+                  <li><span>{t.cities.ansembourg[lang]}</span>
+                    <ul>
+                      <li><Link to="/luxembourg/mersch/city/ansembourg/attractions/ansembourg_castle">{t.attractions.ansembourg_castle[lang]}</Link></li>
+                    </ul>
+                  </li>
+                </ul>
+
+              </li>
             </ul>
           </li>
 

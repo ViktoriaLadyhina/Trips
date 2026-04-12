@@ -71,10 +71,25 @@ const AttractionsList = () => {
         if (filters.type !== 'all' && !allTypes.includes(filters.type)) return false;
         if (filters.rating && filters.rating !== 'all' && attr.rating !== filters.rating) return false;
 
-        if (filters.unesco === 'yes' && !attr.unesco_status?.included) return false;
-        if (filters.unesco === 'no' && attr.unesco_status?.included) return false;
+        const attrMap = new Map(attractions.map(a => [a.id, a]));
+        const unescoChildIds = new Set();
 
-        if (attr.hiddenFromList) return false;
+        attractions.forEach(a => {
+            a.subObjects?.forEach(id => {
+                const sub = attrMap.get(id);
+                if (sub?.unesco_status?.included) {
+                    unescoChildIds.add(id);
+                }
+            });
+        });
+        if (filters.unesco === 'yes') {
+            const isDirectUnesco = attr.unesco_status?.included;
+            const isChildUnesco = unescoChildIds.has(attr.id);
+            if (!isDirectUnesco && !isChildUnesco) return false;
+            if (!isDirectUnesco && attr.subObjects?.length > 0) return false;
+        }
+
+        if (attr.hiddenFromList && filters.unesco !== 'yes') return false;;
 
         return true;
     }) || [];

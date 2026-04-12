@@ -1,14 +1,18 @@
 const datas =
 
 {
-    countries: {
+  countries: {
     germany: { ru: 'Германия', de: 'Deutschland', ua: 'Німеччина' },
     ukraine: { ru: 'Украина', de: 'Ukraine', ua: 'Україна' },
     luxembourg: { ru: 'Люксембург', de: 'Luxemburg', ua: 'Люксембург' }
   },
   regions: {
+    // Germany
     nrw: { ru: 'Северный Рейн-Вестфалия', de: 'Nordrhein-Westfalen', ua: 'Північний Рейн-Вестфалія' },
     rheinland_pfalz: { ru: 'Рейнланд-Пфальц', de: 'Rheinland-Pfalz', ua: 'Рейнланд-Пфальц' },
+    //luxembourg
+    mersch: { ru: 'Мерш', de: 'Mersch', ua: 'Мерш' },
+    //Ukraine
     sumska: { ru: 'Сумская область', de: 'Sumska Oblast', ua: 'Сумська область' }
   },
   districts: {
@@ -24,6 +28,7 @@ const datas =
     trier_saarburg: { ru: 'Район Трир-Саарбург', de: 'Landkreis Trier-Saarburg', ua: 'Район Трір-Саарбург' }
   },
   cities: {
+    // Germany
     koln: { ru: 'Город Кёльн', de: 'Stadt Köln', ua: 'Місто Кельн' },
     monschau: { ru: 'Город Моншау', de: 'Stadt Monschau', ua: 'Місто Моншау' },
     bruhl: { ru: 'Город Брюль', de: 'Stadt Brühl', ua: 'Місто Брюль' },
@@ -36,7 +41,9 @@ const datas =
 
     trier: { ru: 'Город Трир', de: 'Stadt Trier', ua: 'Місто Трір' },
     saarburg: { ru: 'Город Саарбург', de: 'Stadt Saarburg', ua: 'Місто Саарбург' },
-
+    //luxembourg
+    ansembourg: { ru: 'Деревня Ансембург', de: 'Dorf Ansembourg', ua: 'Село Ансембург' },
+    //Ukraine
     sumy: { ru: 'Город Сумы', de: 'Stadt Sumy', ua: 'Місто Суми' }
   },
   attractions: {
@@ -165,6 +172,9 @@ const datas =
     wasserfall_saarburg: { ru: 'Водопад Саарбурга', de: 'Wasserfall von Saarburg', ua: 'Водоспад Саарбурга' },
     burg_saarburg: { ru: 'Замок Саарбурга', de: 'Burg Saarburg', ua: 'Замок Саарбурга' },
     amuseum_saarburg: { ru: 'Амюзеум Саарбург', de: 'Amüseum Saarburg', ua: 'Амюзеум Саарбург' },
+
+    //luxembourg
+ansembourg_castle: { ru: 'Замок Ансембург', de: 'Amüseum Saarburg', ua: 'Амюзеум Саарбург' },
 
     // Ukraine
     // Sumska oblast

@@ -2,7 +2,7 @@ const datas = [
     {
         id: "sumy",
         path: "sumy",
-        countryPath: "ukraine", regionsPath: "sumska", districtPath: "city",
+        countryPath: "ukraine", regionPath: "sumska", districtPath: "city",
         coord: { lat: 50.9216, lng: 34.8003 },
         gerb: "Ukraine/sumska/sumy-city/gerb.png",
         translations: {

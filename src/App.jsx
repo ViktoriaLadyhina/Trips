@@ -37,6 +37,7 @@ function App() {
 
           <Route path="/:countryPath/:regionPath/:districtPath/:cityPath" element={<City />} />
 
+          <Route path="/:countryPath/attractions" element={<AttractionsList />} />
           <Route path="/:countryPath/:regionPath/attractions" element={<AttractionsList />} />
           <Route path="/:countryPath/:regionPath/:districtPath/attractions" element={<AttractionsList />} />
           <Route path="/:countryPath/:regionPath/:districtPath/:cityPath/attractions" element={<AttractionsList />} />

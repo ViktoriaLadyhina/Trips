@@ -2,7 +2,7 @@ const datas = [
     {
         id: "karneval_koln",
         path: "karneval_koln",
-        countryPath: "germany", regionsPath: "nrw", districtPath: "city", cityPath: "koln",
+        countryPath: "germany", regionPath: "nrw", districtPath: "city", cityPath: "koln",
         cities: ["koln", "frechen", "bruhl"],
         season: "spring", type: ["festival"],
         fotoCard: "Germany/nrw/koln/koln-city/karneval/001.jpg",
@@ -147,7 +147,7 @@ const datas = [
     {
         id: "winterleuchten_dortmund",
         path: "winterleuchten_dortmund",
-        countryPath: "germany", regionsPath: "nrw", districtPath: "city", cityPath: "dortmund",
+        countryPath: "germany", regionPath: "nrw", districtPath: "city", cityPath: "dortmund",
         cities: ["dortmund"],
         season: "winter", type: "light_installation",
         fotoCard: "Germany/nrw/arnsberg/dortmund/westfalenpark/winterleuchten/001.jpg",
@@ -283,7 +283,7 @@ const datas = [
     {
         id: "christmas_market_dortmund",
         path: "christmas_market_dortmund",
-        countryPath: "germany", regionsPath: "nrw", districtPath: "city", cityPath: "dortmund",
+        countryPath: "germany", regionPath: "nrw", districtPath: "city", cityPath: "dortmund",
         cities: ["dortmund"],
         season: "winter", type: "light_installation",
         fotoCard: "Germany/nrw/arnsberg/dortmund/christmas/001.jpeg",

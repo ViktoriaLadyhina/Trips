@@ -9,6 +9,8 @@ import BreadCrumbs from '../../components/breadCrumbs/BreadCrumbs';
 import Gallery from '../../components/gallery/Gallery.jsx';
 import { photosByCountry } from '../../datas/fotos/index.js';
 import { routeMaps } from "../../components/maps/RouteMap.jsx";
+import useAttractions from '../../hooks/useAttractions.js';
+import AttractionCardSub from '../../components/attraction/AttractionCardSub.jsx';
 
 const BASE_PHOTO_URL = import.meta.env.VITE_BASE_PHOTO_URL;
 const routeNotFound = { ru: "Маршрут не найден", ua: "Маршрут не знайдено", de: "Route nicht gefunden" };
@@ -17,6 +19,10 @@ const Routes = () => {
     const { countryPath, routesPath } = useParams();
     const { lang } = useSelector((state) => state.language);
     const route = luxembourgRoutes.find((r) => r.path === routesPath && r.countryPath === countryPath);
+    const { attractions } = useAttractions(countryPath);
+
+    const attractionRoute = attractions?.filter(r => r?.routes === route.path);
+
 
     if (!route) return <p>{routeNotFound[lang]}</p>;
 
@@ -86,6 +92,21 @@ const Routes = () => {
                 {t?.features?.items?.length > 0 && (<InfoBlock data={t?.features} className="route__desc-features" />)}
                 {t?.recommendations?.items?.length > 0 && (<InfoBlock data={t?.recommendations} className="route__desc-recommendations" />)}
                 {t?.interestingFacts?.items?.length > 0 && (<InfoBlock data={t?.interestingFacts} className="route__desc-interestingFacts" />)}
+
+                {attractionRoute.length > 0 && (
+                    <section className="attraction-sub">
+                        <h3>
+                            {lang === "ru"
+                                ? `Достопримечательности маршрута «${t.name}»`
+                                : lang === "de"
+                                    ? `Sehenswürdigkeiten der Route «${t.name}»`
+                                    : `Пам'ятки маршруту «${t.name}»`}
+                        </h3>
+                        {attractionRoute.map(attr => (
+                            <AttractionCardSub key={attr.id} attr={attr} lang={lang} />
+                        ))}
+                    </section>
+                )}
 
                 {images.length > 0 && <Gallery images={images} />}
             </div>
