@@ -288,6 +288,7 @@ const Map = () => {
               <li>{lang === 'ru' ? 'Маршруты' : lang === 'de' ? 'Routen' : 'Маршрути'}
                 <ul>
                   <li><Link to="/luxembourg/routes/mullerthal_trail">{t.routes.mullerthal_trail[lang]}</Link></li>
+                  <li><Link to="/luxembourg/routes/seven_castles">{t.routes.seven_castles[lang]}</Link></li>
                 </ul>
               </li>
             </ul>

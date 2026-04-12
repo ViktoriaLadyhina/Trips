@@ -8,9 +8,10 @@ import './Routes.scss'
 import BreadCrumbs from '../../components/breadCrumbs/BreadCrumbs';
 import Gallery from '../../components/gallery/Gallery.jsx';
 import { photosByCountry } from '../../datas/fotos/index.js';
+import { routeMaps } from "../../components/maps/RouteMap.jsx";
 
 const BASE_PHOTO_URL = import.meta.env.VITE_BASE_PHOTO_URL;
-const routeNotFound = { ru: "Маршрут не найден", ua: "Маршрут не знайдено", de: "Route nicht gefunden"};
+const routeNotFound = { ru: "Маршрут не найден", ua: "Маршрут не знайдено", de: "Route nicht gefunden" };
 
 const Routes = () => {
     const { countryPath, routesPath } = useParams();
@@ -30,7 +31,9 @@ const Routes = () => {
 
     const t = route.translations?.[lang];
     const meta = t?.meta;
-    
+
+    const MapComponent = route.map ? routeMaps[route.map] : null;
+
     const crumbs = [
         { label: lang === 'ru' ? 'Главная' : lang === 'de' ? 'Startseite' : 'Головна', path: '/' },
         { label: t?.countryName, path: `/${route?.countryPath}` },
@@ -54,12 +57,16 @@ const Routes = () => {
             <div className='route__title'>{t?.name}</div>
 
             <div className='route__desc'>
-                <div className='route__desc-plan'>
-                    {route.plan && (
-                        <img
-                            src={`${BASE_PHOTO_URL}${route.plan}`}
-                            alt={t?.name}
-                        />
+                <div className="route__desc-plan">
+                    {MapComponent ? (
+                        <MapComponent route={route} lang={lang} />
+                    ) : (
+                        route.plan && (
+                            <img
+                                src={`${BASE_PHOTO_URL}${route.plan}`}
+                                alt={t?.name}
+                            />
+                        )
                     )}
                 </div>
             </div>

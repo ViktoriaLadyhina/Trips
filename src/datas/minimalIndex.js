@@ -185,6 +185,7 @@ const datas =
   },
   routes: {
     mullerthal_trail: { ru: "Мюллертальская тропа", ua: "Мюллертальська стежка", de: "Mullerthal Trail" },
+    seven_castles: { ru: "Долина семи замков", ua: "Долина семи замків", de: "Tal der sieben Schlösser" },
   }
 }
 
