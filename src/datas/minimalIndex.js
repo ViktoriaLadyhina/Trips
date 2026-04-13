@@ -12,6 +12,7 @@ const datas =
     rheinland_pfalz: { ru: 'Рейнланд-Пфальц', de: 'Rheinland-Pfalz', ua: 'Рейнланд-Пфальц' },
     //luxembourg
     mersch: { ru: 'Мерш', de: 'Mersch', ua: 'Мерш' },
+    capellen: { ru: 'Капеллен', de: 'Capellen', ua: 'Капеллен' },
     //Ukraine
     sumska: { ru: 'Сумская область', de: 'Sumska Oblast', ua: 'Сумська область' }
   },
@@ -43,6 +44,7 @@ const datas =
     saarburg: { ru: 'Город Саарбург', de: 'Stadt Saarburg', ua: 'Місто Саарбург' },
     //luxembourg
     ansembourg: { ru: 'Деревня Ансембург', de: 'Dorf Ansembourg', ua: 'Село Ансембург' },
+    koerich: { ru: 'Деревня Кёрих', de: 'Dorf Koerich', ua: 'Село Кьоріх' },
     //Ukraine
     sumy: { ru: 'Город Сумы', de: 'Stadt Sumy', ua: 'Місто Суми' }
   },
@@ -174,7 +176,8 @@ const datas =
     amuseum_saarburg: { ru: 'Амюзеум Саарбург', de: 'Amüseum Saarburg', ua: 'Амюзеум Саарбург' },
 
     //luxembourg
-ansembourg_castle: { ru: 'Замок Ансембург', de: 'Amüseum Saarburg', ua: 'Амюзеум Саарбург' },
+    ansembourg_castle: { ru: 'Замок-дворец', de: 'Schloss Ansembourg', ua: 'Палац-замок Ансембурґ' },
+    koerich_castle: { ru: 'Замок Керих', de: 'Burg Koerich', ua: 'Замок Кьоріх' },
 
     // Ukraine
     // Sumska oblast

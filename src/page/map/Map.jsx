@@ -299,7 +299,15 @@ const Map = () => {
                     </ul>
                   </li>
                 </ul>
-
+              </li>
+              <li><span>{t.regions.capellen[lang]}</span>
+                <ul>
+                  <li><span>{t.cities.koerich[lang]}</span>
+                    <ul>
+                      <li><Link to="/luxembourg/capellen/city/koerich/attractions/koerich_castle">{t.attractions.koerich_castle[lang]}</Link></li>
+                    </ul>
+                  </li>
+                </ul>
               </li>
             </ul>
           </li>

@@ -41,15 +41,6 @@ const luxCastles = [
             de: { name: "Ruinen der alten Burg Ansemburg" }
         }
     },
-    // {
-    //     id: "ansembourg_castle",
-    //     coord: { lat: 49.6998, lng: 6.0460 },
-    //     translations: {
-    //         ru: { name: "Замок Ансембург" },
-    //         ua: { name: "Замок Ансембург" },
-    //         de: { name: "Schloss Ansemburg" }
-    //     }
-    // },
     {
         id: "marienthal_castle",
         coord: { lat: 49.7085, lng: 6.0870 },
@@ -57,15 +48,6 @@ const luxCastles = [
             ru: { name: "Замок Мариенталь" },
             ua: { name: "Замок Марієнталь" },
             de: { name: "Schloss Marienthal" }
-        }
-    },
-    {
-        id: "koerich_castle",
-        coord: { lat: 49.6710, lng: 5.9487 },
-        translations: {
-            ru: { name: "Замок Керих" },
-            ua: { name: "Замок Кьоріх" },
-            de: { name: "Burg Koerich" }
         }
     }
 ];
@@ -167,7 +149,7 @@ const LuxembourgCastlesMap = ({ lang }) => {
                                 ? {
                                       click: () => {
                                           navigate(
-                                              `/${item.countryPath}/attractions/${item.path}`
+                                              `/${item.countryPath}/${item.regionPath}/${item.districtPath}/${item.cityPath}/attractions/${item.path}`
                                           );
                                       }
                                   }

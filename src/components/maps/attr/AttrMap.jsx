@@ -70,7 +70,7 @@ const fallbackCenter = city?.coord
                 ? {
                   click: () => {
                     navigate(
-                      `/${attr.countryPath}/${attr.regionsPath}/${attr.districtPath}/${attr.cityPath}/attractions/${attr.path}`
+                      `/${attr.countryPath}/${attr.regionPath}/${attr.districtPath}/${attr.cityPath}/attractions/${attr.path}`
                     );
                   }
                 }

@@ -1,8 +1,7 @@
 const datas = [
     {
         id: "ansembourg_castle",
-        type: ["palace_or_castle"],
-        rating: "popular",
+        type: ["palace_or_castle"], rating: "popular",
         path: "ansembourg_castle",
         countryPath: "luxembourg", regionPath: "mersch", districtPath: "city", cityPath: "ansembourg",
         fotoCard: "Luxembourg/seven_castles/ansembourg_castle/001.jpg",
@@ -10,7 +9,7 @@ const datas = [
         routes: "seven_castles", showMore: true,
         translations: {
             ru: {
-                name: "Замок Ансембург",
+                name: "Замок-дворец Ансембург",
                 location: "Ансембург, Люксембург",
                 short_description: "Замок Ансембург (Château d’Ansembourg) – исторический замок в Люксембурге, расположенный в долине реки Эйш. Комплекс известен своей барочной архитектурой, ухоженными садами и атмосферой загородной аристократической резиденции. Замок часто воспринимается как один из наиболее живописных частных исторических ансамблей страны.",
                 full_description: {
@@ -43,16 +42,16 @@ const datas = [
                 construction_period: "XVII–XVIII века ",
                 founder: "Связан с дворянской семьёй Маршан д’Ансембур  (Marchant d’Ansembourg)",
                 meta: {
-                    title: "Замок Ансембург в Люксембурге – Château d’Ansembourg, барочный замок и сады",
-                    description: "Замок Ансембург в Люксембурге – историческая аристократическая резиденция XVII–XVIII века с барочными садами и живописной долиной реки Эйш. Информация, история и особенности.",
-                    ogTitle: "Замок Ансембург – барочная жемчужина Люксембурга",
+                    title: "Замок-дворец Ансембург в Люксембурге – Château d’Ansembourg, барочный замок и сады",
+                    description: "Замок-дворец Ансембург в Люксембурге – историческая аристократическая резиденция XVII–XVIII века с барочными садами и живописной долиной реки Эйш. Информация, история и особенности.",
+                    ogTitle: "Замок-дворец Ансембург – барочная жемчужина Люксембурга",
                     ogDescription: "Живописный замок Ансембург в долине Эйш: история, барочные сады и атмосфера старинной европейской резиденции.",
-                    keywords: "замок Ансембург, Шато д’Ансембург, Château d’Ansembourg, замки Люксембурга, достопримечательности Люксембурга, барочный замок, барочные сады Люксембург, исторические замки Европы, дворянская резиденция Люксембург, Marchant d’Ansembourg (Маршан д’Ансембур), долина реки Эйш, Ansembourg castle, Luxembourg castles, baroque gardens Luxembourg, historic estates Luxembourg, Luxembourg attractions",
+                    keywords: "замок Ансембург, дворец, замки, дворцы, Шато д’Ансембург, Château d’Ansembourg, замки Люксембурга, достопримечательности Люксембурга, барочный замок, барочные сады Люксембург, исторические замки Европы, дворянская резиденция Люксембург, Marchant d’Ansembourg (Маршан д’Ансембур), долина реки Эйш, Ansembourg castle, Luxembourg castles, baroque gardens Luxembourg, historic estates Luxembourg, Luxembourg attractions",
                     ogImage: "https://our-travels.info/foto/Luxembourg/seven_castles/ansembourg_castle/001.jpg"
                 }
             },
             ua: {
-                name: "Замок Ансембург",
+                name: "Палац-замок Ансембурґ",
                 location: "Ансембург, Люксембург",
                 short_description: "Замок Ансембург (Château d’Ansembourg) – історичний замок у Люксембурзі, розташований у долині річки Ейш. Комплекс відомий своєю бароковою архітектурою, доглянутими садами та атмосферою заміської аристократичної резиденції. Замок часто сприймається як один із наймальовничіших приватних історичних ансамблів країни.",
                 full_description: {
