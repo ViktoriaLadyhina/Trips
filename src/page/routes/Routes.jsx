@@ -65,7 +65,7 @@ const Routes = () => {
             <div className='route__desc'>
                 <div className="route__desc-plan">
                     {MapComponent ? (
-                        <MapComponent route={route} lang={lang} />
+                        <MapComponent lang={lang} />
                     ) : (
                         route.plan && (
                             <img

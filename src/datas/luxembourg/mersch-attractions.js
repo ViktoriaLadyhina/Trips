@@ -6,6 +6,7 @@ const datas = [
         path: "ansembourg_castle",
         countryPath: "luxembourg", regionPath: "mersch", districtPath: "city", cityPath: "ansembourg",
         fotoCard: "Luxembourg/seven_castles/ansembourg_castle/001.jpg",
+        coord: { lat: 49.700543521986624, lng: 6.0462722984064365 },
         routes: "seven_castles", showMore: true,
         translations: {
             ru: {

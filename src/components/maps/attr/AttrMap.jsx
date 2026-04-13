@@ -1,9 +1,11 @@
 import { MapContainer, TileLayer, Marker, Tooltip, Popup } from 'react-leaflet';
 import L from 'leaflet';
 import 'leaflet/dist/leaflet.css';
-import './CityMap.scss';
+import './AttrMap.scss';
 import { useNavigate } from 'react-router';
-import searchIndex from '../../../search/index'
+import { useEffect } from 'react';
+import { useMap } from 'react-leaflet';
+
 
 delete L.Icon.Default.prototype._getIconUrl;
 L.Icon.Default.mergeOptions({
@@ -14,23 +16,38 @@ L.Icon.Default.mergeOptions({
 
 const moreBtnText = { ru: "Подробнее", de: "Mehr erfahren", ua: "Детальніше" };
 
-const CityMap = ({ city, lang }) => {
+const AttrMap = ({ city, attractions, lang }) => {
   const navigate = useNavigate();
-  if (!city) return null;
 
-  // Центр карты: либо координаты города, либо первая достопримечательность
-  const mapCenter = [city.coord.lat, city.coord.lng];
-const countriesNew = Object.keys(searchIndex).filter(key => ['germany','ukraine','luxembourg'].includes(key));
-const attractions = [
-  // старый вариант с языком
-  ...Object.values(searchIndex[lang].germany).flatMap(region => region.attractions || []),
-  ...Object.values(searchIndex[lang].ukraine).flatMap(region => region.attractions || []),
+  const FitBounds = ({ points }) => {
+  const map = useMap();
 
-  // новый вариант для всех стран из countriesNew
-  ...countriesNew.flatMap(countryKey => 
-    Object.values(searchIndex[countryKey]).flatMap(region => region.attractions || [])
-  ),
-];
+  useEffect(() => {
+    if (!points.length) return;
+
+    // 1 точка
+    if (points.length === 1) {
+      map.setView(points[0], 14);
+      return;
+    }
+
+    // много точек
+    const bounds = L.latLngBounds(points);
+    map.fitBounds(bounds, {
+      padding: [50, 50],
+      maxZoom: 14,
+    });
+  }, [points, map]);
+
+  return null;
+};
+
+const points = attractions.filter(attr => attr.coord).map(attr => [attr.coord.lat, attr.coord.lng]);
+
+// запасной центр, если нет достопримечательностей
+const fallbackCenter = city?.coord
+  ? [city.coord.lat, city.coord.lng]
+  : [50.1109, 8.6821];
 
   // для мобильных
   const isTouchDevice = L.Browser.mobile;
@@ -39,8 +56,9 @@ const attractions = [
   const getAttrName = (attr, lang) => { return attr.translations?.[lang]?.name || attr.name || ''; };
 
   return (
-    <MapContainer closePopupOnClick={true} center={mapCenter} zoom={13} style={{ height: "450px", width: "100%", marginBottom: "20px" }}>
+    <MapContainer closePopupOnClick={true} center={fallbackCenter} zoom={6} style={{ height: "450px", width: "100%", marginBottom: "20px" }}>
       <TileLayer url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png" />
+      <FitBounds points={points} />
 
       {attractions.map(attr => (
         attr.coord && (
@@ -102,4 +120,4 @@ const attractions = [
   );
 };
 
-export default CityMap;
+export default AttrMap;

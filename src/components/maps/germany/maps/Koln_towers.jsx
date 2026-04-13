@@ -1,7 +1,7 @@
 import { MapContainer, TileLayer, Marker, Tooltip, Popup } from 'react-leaflet';
 import L from 'leaflet';
 import 'leaflet/dist/leaflet.css';
-import './CityMap.scss';
+import '../../attr/AttrMap.scss';
 import { Navigate, useNavigate } from 'react-router';
 import nrw_attrDe from '../../../../datas/de/germany/nrw-attractions';
 import nrw_attrRu from '../../../../datas/ru/germany/nrw-attractions';

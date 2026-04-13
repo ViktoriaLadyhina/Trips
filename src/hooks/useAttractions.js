@@ -22,6 +22,7 @@ const useAttractions = (countryPath, regionPath, districtPath, cityPath) => {
   const { lang } = useSelector((state) => state.language);
 
   const [attractions, setAttractions] = useState([]);
+  const [allAttractions, setAllAttractions] = useState([]);
   const [error, setError] = useState(null);
 
   const modulesNew = import.meta.glob('../datas/*/*-attractions.js');
@@ -103,12 +104,13 @@ const useAttractions = (countryPath, regionPath, districtPath, cityPath) => {
           }
         });
 
-        const allAttractions = Array.from(uniqueMap.values());
+        const allAttr = Array.from(uniqueMap.values());
+        setAllAttractions(allAttr);
 
         // =========================
         // фильтрация по уровню
         // =========================
-        const filtered = allAttractions.filter((a) => {
+        const filtered = allAttr.filter((a) => {
           if (!a) return false;
 
           if (cityPath) {
@@ -146,7 +148,7 @@ const useAttractions = (countryPath, regionPath, districtPath, cityPath) => {
   }, [countryPath, regionPath, districtPath, cityPath, lang]);
 
 
-  return { attractions, error };
+  return { attractions, allAttractions, error };
 };
 
 export default useAttractions;

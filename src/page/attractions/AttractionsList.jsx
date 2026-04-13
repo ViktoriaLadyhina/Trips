@@ -6,9 +6,10 @@ import { Helmet } from "react-helmet-async";
 import BreadCrumbs from '../../components/breadCrumbs/BreadCrumbs.jsx';
 import AttractionCard from '../../components/attraction/AttractionCard.jsx';
 import AttractionsFilters from '../../components/attractionsFilters/AttractionsFilters.jsx';
-import CityMap from '../../components/maps/germany/maps/CityMap.jsx';
+import AttrMap from '../../components/maps/attr/AttrMap.jsx';
 
 import useAttractions from '../../hooks/useAttractions.js';
+import useAllAttractions from '../../hooks/useAllAttractions,js';
 import useCity from '../../hooks/useCity.js';
 import useSabRegions from '../../hooks/useSabRegions.js';
 import datas from '../../datas/minimalIndex'
@@ -19,7 +20,6 @@ const attractionsTitle = { ru: "Достопримечательности", ua:
 const NoAttractions = { ru: "Нет достопримечательностей", ua: "Достопримечательностей немає", de: "Keine Sehenswürdigkeiten" }
 
 
-
 const AttractionsList = () => {
     const { lang } = useSelector((state) => state.language);
     const { countryPath, regionPath, districtPath, cityPath } = useParams();
@@ -27,6 +27,9 @@ const AttractionsList = () => {
     const { subRegion } = useSabRegions(countryPath, regionPath, districtPath);
     const { city } = useCity(countryPath, regionPath, districtPath, cityPath);
     const { attractions, error } = useAttractions(countryPath, regionPath, districtPath, cityPath);
+    const { attractions: allAttractions } = useAllAttractions();
+
+    const [showAll, setShowAll] = useState(false);
 
     const [filters, setFilters] = useState({
         type: 'all',
@@ -104,6 +107,7 @@ const AttractionsList = () => {
         return (a?.name || '').localeCompare(b?.name || '');
     });
 
+    const visibleAttractions = showAll ? allAttractions : sortedAttractions;
 
     const crumbs = [
         { label: lang === "ru" ? "Главная" : lang === "de" ? "Startseite" : "Головна", path: "/" },
@@ -129,7 +133,16 @@ const AttractionsList = () => {
 
             <div className='attractions__title'>{attractionsTitle[lang]}</div>
 
-            <CityMap city={city} attractions={attractions} lang={lang} />
+<div className="map-wrapper">
+  <AttrMap city={city} attractions={visibleAttractions} lang={lang} />
+
+  <button
+    className="attractions__btn"
+    onClick={() => setShowAll(prev => !prev)}
+  >
+    {showAll ? "Показать только текущее" : "Показать все"}
+  </button>
+</div>
 
             <AttractionsFilters lang={lang} filters={filters} setFilters={setFilters} />
 
