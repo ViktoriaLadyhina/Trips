@@ -1,416 +1,6 @@
 const datas = [
-    // koln
-    {
-        id: "fischmarkt_koln",
-        type: ["square"], rating: "top",
-        path: "fischmarkt_koln",
-        countryPath: "germany", regionPath: "nrw", districtPath: "city", cityPath: "koln",
-        hiddenFromList: true, showMore: true,
-        fotoCard: "Germany/nrw/koln/koln-city/altstadt/fischmarkt/001.jpg",
-        coord: { lat: 50.93845, lng: 6.96260 },
-        translations: {
-            ru: {
-                name: "Фишмаркт",
-                location: "Кёльн, Германия",
-                short_description: "Фишмаркт – историческая площадь Старого города Кёльна с яркими разноцветными домами и атмосферой средневекового рынка. Популярное место для прогулок, фотосессий, кафе и ярмарок, рядом с Кёльнским собором.",
-                full_description: {
-                    title: "Описание и история",
-                    items: [
-                        { bold: "Фишмаркт (Fischmarkt)", text: "– это оживлённая площадь в Старом городе Кельна, известная своими яркими разноцветными домами, которые делают её одной из самых фотогеничных точек города. Здесь исторически располагались рыбные рынки, и до сих пор площадь сохраняет атмосферу средневекового торгового центра. Фишмаркт часто посещают туристы и местные жители, особенно в тёплое время года, когда на площади проходят ярмарки и фестивали." },
-                        { text: "Площадь окружена узкими улочками Старого города, где можно найти кафе, рестораны и сувенирные магазины. Благодаря живописной архитектуре и историческому окружению, Фишмаркт является популярным местом для фотосессий и прогулок." },
-                        { text: "Это место также удобно как точка старта для пешеходных экскурсий по Старому городу и к знаменитому Кёльнскому собору – всего в нескольких минутах ходьбы." },
-                        { bold: "История", text: "Фишмаркт возник в Средние века как центр торговли рыбой в Кёльне. С XVI века площадь играла важную роль в снабжении города свежими морепродуктами, привозимыми по реке Рейн. Архитектура домов вокруг площади отражает готические и ренессансные элементы, сохранившиеся до наших дней." },
-                        { text: "В XIX веке, с развитием торговли и городской инфраструктуры, Фишмаркт превратился в одно из оживлённых общественных пространств города. После Второй мировой войны площадь была восстановлена, и исторический облик зданий тщательно сохранён." },
-                        { text: "Сегодня Фишмаркт служит местом культурных мероприятий и рынков, продолжая традицию средневекового рыночного центра, но теперь с туристической и развлекательной функцией." }
-                    ]
-                },
-                tickets_and_entry: {
-                    title: "Практическая информация",
-                    items: [
-                        { bold: "Адрес:", text: "Fischmarkt, 50667 Köln, Германия " },
-                        { bold: "Доступность:", text: "пешеходная зона, легко доступна для туристов " },
-                        { bold: "Ближайшая станция метро:", text: "Heumarkt (U-Bahn)" },
-                        { bold: "Часы работы:", text: "открытая площадь, круглосуточно; рынки и ярмарки по расписанию" }
-                    ]
-                },
-                interestingFacts: {
-                    title: "Интересные факты",
-                    isList: true,
-                    items: [
-                        { text: "Фишмаркт часто называют «самой фотогеничной площадью Кёльна» из-за ярких фасадов домов. " },
-                        { text: "Раньше здесь проводились настоящие рыбные аукционы. " },
-                        { text: "На площади регулярно проходят праздничные ярмарки, в том числе рождественская. " }
-                    ]
-                },
-                construction_period: "XIII–XIV век, Средние века",
-                meta: {
-                    title: "Фишмаркт Кельн – историческая площадь и фотогеничные дома",
-                    description: "Фишмаркт в Старом городе Кёльна – живописная площадь с разноцветными домами, историей средневекового рыбного рынка и популярное место для туристов.",
-                    ogTitle: "Фишмаркт Кельн – сердце Старого города",
-                    ogDescription: "Яркая площадь Старого города Кёльна с разноцветными домами, атмосферой средневекового рынка и фотогеничными видами для туристов.",
-                    keywords: "достопримечательности, рынок, историческое место, Кёльн, музей, прогулка, архитектура, история города, туризм, интересные места",
-                    ogImage: "https://our-travels.info/foto/Germany/nrw/koln/koln-city/altstadt/fischmarkt/001.jpg"
-                }
-            },
-            ua: {
-                name: "Фішмаркт",
-                location: "Кельн, Німеччина",
-                short_description: "Фішмаркт – історична площа Старого міста Кельна з яскравими різнокольоровими будинками та атмосферою середньовічного ринку. Популярне місце для прогулянок, фотосесій, кафе та ярмарків, поруч з Кельнським собором.",
-                full_description: {
-                    title: "Опис та історія",
-                    items: [
-                        { bold: "Фішмаркт (Fischmarkt)", text: "– це жвава площа в Старому місті Кельна, відома своїми яскравими різнокольоровими будинками, що роблять її однією з найбільш фотогенічних точок міста. Тут історично розташовувалися рибні ринки, і до сьогодні площа зберігає атмосферу середньовічного торгового центру. Фішмаркт часто відвідують туристи та місцеві жителі, особливо у теплу пору року, коли на площі проходять ярмарки та фестивалі." },
-                        { text: "Площа оточена вузькими вуличками Старого міста, де можна знайти кафе, ресторани та сувенірні магазини. Завдяки мальовничій архітектурі та історичному оточенню, Фішмаркт є популярним місцем для фотосесій та прогулянок." },
-                        { text: "Це місце також зручно як точка старту для пішохідних екскурсій по Старому місту та до знаменитого Кельнського собору – всього за кілька хвилин ходьби." },
-                        { bold: "Історія", text: "Фішмаркт виник у Середні віки як центр торгівлі рибою в Кельні. З XVI століття площа відігравала важливу роль у забезпеченні міста свіжими морепродуктами, які привозилися річкою Рейн. Архітектура будинків навколо площі відображає готичні та ренесансні елементи, що збереглися до наших днів." },
-                        { text: "У XIX столітті, з розвитком торгівлі та міської інфраструктури, Фішмаркт перетворився на одне з жвавих громадських просторів міста. Після Другої світової війни площа була відновлена, і історичний вигляд будівель ретельно збережено." },
-                        { text: "Сьогодні Фішмаркт слугує місцем культурних заходів та ринків, продовжуючи традицію середньовічного ринкового центру, але тепер з туристичною та розважальною функцією." }
-                    ]
-                },
-                tickets_and_entry: {
-                    title: "Практична інформація",
-                    items: [
-                        { bold: "Адреса:", text: "Fischmarkt, 50667 Köln, Німеччина" },
-                        { bold: "Доступність:", text: "пішохідна зона, легко доступна для туристів" },
-                        { bold: "Найближча станція метро:", text: "Heumarkt (U-Bahn)" },
-                        { bold: "Часи роботи:", text: "відкрита площа, цілодобово; ринки та ярмарки за розкладом" }
-                    ]
-                },
-                interestingFacts: {
-                    title: "Цікаві факти",
-                    isList: true,
-                    items: [
-                        { text: "Фішмаркт часто називають «найфотогенічнішою площею Кельна» через яскраві фасади будинків." },
-                        { text: "Раніше тут проводилися справжні рибні аукціони." },
-                        { text: "На площі регулярно проходять святкові ярмарки, зокрема різдвяні." }
-                    ]
-                },
-                construction_period: "XIII–XIV століття, Середні віки",
-                meta: {
-                    title: "Фішмаркт Кельн – історична площа та фотогенічні будинки",
-                    description: "Фішмаркт у Старому місті Кельна – мальовнича площа з різнокольоровими будинками, історією середньовічного рибного ринку та популярне місце для туристів.",
-                    ogTitle: "Фішмаркт Кельн – серце Старого міста",
-                    ogDescription: "Яскрава площа Старого міста Кельна з різнокольоровими будинками, атмосферою середньовічного ринку та фотогенічними видами для туристів.",
-                    keywords: "пам'ятки, ринок, історичне місце, Кельн, музей, прогулянка, архітектура, історія міста, туризм, цікаві місця",
-                    ogImage: "https://our-travels.info/foto/Germany/nrw/koln/koln-city/altstadt/fischmarkt/001.jpg"
-                }
-            },
-            de: {
-                name: "Fischmarkt",
-                location: "Köln, Deutschland",
-                short_description: "Der Fischmarkt ist ein historischer Platz in der Altstadt von Köln mit bunten Häusern und der Atmosphäre eines mittelalterlichen Marktes. Ein beliebter Ort für Spaziergänge, Fotos, Cafés und Märkte, in der Nähe des Kölner Doms.",
-                full_description: {
-                    title: "Beschreibung und Geschichte",
-                    items: [
-                        { bold: "Fischmarkt (Fischmarkt)", text: "– ist ein lebhafter Platz in der Altstadt von Köln, bekannt für seine bunten Häuser, die ihn zu einem der fotogensten Punkte der Stadt machen. Hier befanden sich historisch Fischmärkte, und bis heute bewahrt der Platz die Atmosphäre eines mittelalterlichen Handelszentrums. Der Fischmarkt wird häufig von Touristen und Einheimischen besucht, besonders in der warmen Jahreszeit, wenn auf dem Platz Märkte und Festivals stattfinden." },
-                        { text: "Der Platz ist von engen Gassen der Altstadt umgeben, in denen man Cafés, Restaurants und Souvenirläden finden kann. Dank der malerischen Architektur und der historischen Umgebung ist der Fischmarkt ein beliebter Ort für Fotos und Spaziergänge." },
-                        { text: "Dieser Ort eignet sich auch als Startpunkt für Spaziergänge durch die Altstadt und zum berühmten Kölner Dom – nur wenige Gehminuten entfernt." },
-                        { bold: "Geschichte", text: "Der Fischmarkt entstand im Mittelalter als Zentrum des Fischhandels in Köln. Ab dem 16. Jahrhundert spielte der Platz eine wichtige Rolle bei der Versorgung der Stadt mit frischen Meeresfrüchten, die über den Rhein geliefert wurden. Die Architektur der Häuser rund um den Platz zeigt gotische und Renaissance-Elemente, die bis heute erhalten geblieben sind." },
-                        { text: "Im 19. Jahrhundert, mit der Entwicklung von Handel und städtischer Infrastruktur, wurde der Fischmarkt zu einem der belebten öffentlichen Räume der Stadt. Nach dem Zweiten Weltkrieg wurde der Platz wiederhergestellt und das historische Erscheinungsbild der Gebäude sorgfältig bewahrt." },
-                        { text: "Heute dient der Fischmarkt als Ort für kulturelle Veranstaltungen und Märkte und setzt die Tradition des mittelalterlichen Marktzentrums fort, nun jedoch mit touristischer und unterhaltender Funktion." }
-                    ]
-                },
-                tickets_and_entry: {
-                    title: "Praktische Informationen",
-                    items: [
-                        { bold: "Adresse:", text: "Fischmarkt, 50667 Köln, Deutschland" },
-                        { bold: "Zugang:", text: "Fußgängerzone, leicht für Touristen zugänglich" },
-                        { bold: "Nächste U-Bahn-Station:", text: "Heumarkt (U-Bahn)" },
-                        { bold: "Öffnungszeiten:", text: "offener Platz, rund um die Uhr; Märkte und Festivals nach Plan" }
-                    ]
-                },
-                interestingFacts: {
-                    title: "Interessante Fakten",
-                    isList: true,
-                    items: [
-                        { text: "Der Fischmarkt wird oft als der fotogenste Platz von Köln bezeichnet wegen seiner bunten Hausfassaden." },
-                        { text: "Früher wurden hier echte Fischauktionen abgehalten." },
-                        { text: "Auf dem Platz finden regelmäßig Festmärkte statt, einschließlich Weihnachtsmärkte." }
-                    ]
-                },
-                construction_period: "13.–14. Jahrhundert, Mittelalter",
-                meta: {
-                    title: "Fischmarkt Köln – historischer Platz und fotogene Häuser",
-                    description: "Der Fischmarkt in der Altstadt von Köln – ein malerischer Platz mit bunten Häusern, Geschichte des mittelalterlichen Fischmarktes und ein beliebter Ort für Touristen.",
-                    ogTitle: "Fischmarkt Köln – das Herz der Altstadt",
-                    ogDescription: "Ein lebhafter Platz in der Altstadt von Köln mit bunten Häusern, mittelalterlichem Marktflair und fotogenen Aussichten für Touristen.",
-                    keywords: "Sehenswürdigkeiten, Markt, historischer Ort, Köln, Museum, Spaziergang, Architektur, Stadtgeschichte, Tourismus, interessante Orte",
-                    ogImage: "https://our-travels.info/foto/Germany/nrw/koln/koln-city/altstadt/fischmarkt/001.jpg"
-                }
-            }
-        }
-    },
-    {
-        id: "st_gereon_koln",
-        type: ["cathedral"], rating: "popular",
-        path: "st_gereon_koln",
-        countryPath: "germany", regionPath: "nrw", districtPath: "city", cityPath: "koln",
-        hiddenFromList: true, showMore: true,
-        fotoCard: "Germany/nrw/koln/koln-city/altstadt/romanische_kirchen/st_gereon/001.jpg",
-        coord: { lat: 50.94329, lng: 6.94571 },
-        translations: {
-            ru: {
-                name: "Церковь Святого Гереона",
-                location: "Кёльн, Германия",
-                short_description: "Церковь Святого Гереона (St. Gereon) – одна из знаменитых романских церквей Кёльна, расположенная в Старом городе. Известна своей необычной круглой формой и богатым историческим наследием.",
-                full_description: {
-                    title: "Описание и история",
-                    items: [
-                        { bold: "Церковь Святого Гереона", text: "– романская церковь с двенадцатигранным куполом и старинными витражами, расположенная в Старом городе Кёльна. Известна богатым историческим интерьером и уникальной круглой формой, которая выделяет её среди кёльнских соборов." },
-                        { text: "Главной архитектурной особенностью является двенадцатигранный купол – одна из крупнейших романских ротонд Европы. Стиль сочетает элементы римской и раннеготической архитектуры, создавая гармоничный образ, сохранившийся на протяжении веков." },
-                        { text: "Церковь активно используется для богослужений, концертов и культурных мероприятий, являясь не только памятником архитектуры, но и живым центром религиозной и культурной жизни города." },
-                        { bold: "История", text: "Первая церковь на этом месте появилась в IV–V веках и была посвящена мученику Св. Гереону. Современное здание начали строить в XII веке, завершив к XIII веку. Архитектура отражает переход от романского стиля к ранней готике, что видно в фасаде и куполе." },
-                        { text: "В XVI–XVII веках церковь претерпела реставрации, включая обновление алтаря и внутреннего убранства. Во время Второй мировой войны здание сильно пострадало, но после войны было тщательно восстановлено, включая уникальные витражи и росписи." },
-                        { text: "Сегодня Церковь Святого Гереона входит в маршрут «Романские церкви Кёльна» и охраняется как исторический памятник, привлекая туристов и специалистов по средневековой архитектуре." }
-                    ]
-                },
-                tickets_and_entry: {
-                    title: "Практическая информация",
-                    items: [
-                        { bold: "Адрес:", text: "Gereonsplatz 1, 50670 Köln, Германия" },
-                        { bold: "Время работы: ", text: "ежедневно с 10:00 до 18:00 (может меняться в зависимости от мероприятий) " },
-                        { bold: "Вход:", text: "свободный для посещения, платные экскурсии доступны" }
-                    ]
-                },
-                relics: {
-                    title: "Реликвии и ценности",
-                    items: [
-                        { bold: "Мощи Св. Гереона", text: "– хранятся в главном алтаре. " },
-                        { text: "Античные бронзовые двери с резьбой XIII века. " }
-                    ]
-                },
-                interestingFacts: {
-                    title: "Интересные факты",
-                    isList: true,
-                    items: [
-                        { text: "Купол церкви имеет 12 граней и считается одним из крупнейших романских куполов Европы." },
-                        { text: "Внутри сохранились старинные витражи XIV-XV веков. " },
-                        { text: "Церковь посвящена римским легионерам и мученикам, включая Св. Гереона. " }
-                    ]
-                },
-                construction_period: "IV-V века (первая церковь), современное здание – XII-XIII века",
-                meta: {
-                    title: "Церковь Святого Гереона – романская церковь в Кёльне",
-                    description: "Посетите Церковь Святого Гереона в Кёльне – уникальную романскую церковь с двенадцатигранным куполом, старинными витражами и богатой историей Средневековья.",
-                    ogTitle: "Церковь Святого Гереона – Романская церковь",
-                    ogDescription: "Уникальная романская церковь в Старом городе Кёльна с двенадцатигранным куполом, старинными витражами и многовековой историей.",
-                    keywords: "Кёльн, романская церковь, Церковь Святого Гереона, средневековая архитектура, витражи, купол, исторический памятник, туризм, достопримечательности Кёльна",
-                    ogImage: "https://our-travels.info/foto/Germany/nrw/koln/koln-city/altstadt/romanische_kirchen/st_gereon/001.jpg"
-                }
-            },
-            ua: {
-                name: "Церква Святого Герєона",
-                location: "Кельн, Німеччина",
-                short_description: "Церква Святого Герєона (St. Gereon) – одна з відомих романських церков Кельна, розташована в Старому місті. Відома своєю незвичайною круглою формою та багатою історичною спадщиною.",
-                full_description: {
-                    title: "Опис та історія",
-                    items: [
-                        { bold: "Церква Святого Герєона", text: "– романська церква з дванадцятигранним куполом і старовинними вітражами, розташована в Старому місті Кельна. Відома багатим історичним інтер'єром та унікальною круглою формою, яка виділяє її серед кельнських соборів." },
-                        { text: "Головною архітектурною особливістю є дванадцятигранний купол – одна з найбільших романських ротонд Європи. Стиль поєднує елементи римської та ранньоготичної архітектури, створюючи гармонійний образ, який зберігся протягом століть." },
-                        { text: "Церква активно використовується для богослужінь, концертів та культурних заходів, являючись не лише пам'яткою архітектури, а й живим центром релігійного та культурного життя міста." },
-                        { bold: "Історія", text: "Перша церква на цьому місці з'явилася у IV–V століттях і була присвячена мученику Святому Герєону. Сучасну будівлю почали зводити у XII столітті, завершивши у XIII столітті. Архітектура відображає перехід від романського стилю до ранньої готики, що видно у фасаді та куполі." },
-                        { text: "У XVI–XVII століттях церква зазнала реставрацій, включно з оновленням вівтаря та внутрішнього оздоблення. Під час Другої світової війни будівля зазнала значних пошкоджень, але після війни була ретельно відновлена, включаючи унікальні вітражі та розписи." },
-                        { text: "Сьогодні Церква Святого Герєона входить до маршруту «Романські церкви Кельна» та охороняється як історична пам'ятка, приваблюючи туристів та фахівців зі середньовічної архітектури." }
-                    ]
-                },
-                tickets_and_entry: {
-                    title: "Практична інформація",
-                    items: [
-                        { bold: "Адреса:", text: "Gereonsplatz 1, 50670 Köln, Німеччина" },
-                        { bold: "Час роботи: ", text: "щодня з 10:00 до 18:00 (може змінюватися залежно від заходів)" },
-                        { bold: "Вхід:", text: "вільний для відвідування, платні екскурсії доступні" }
-                    ]
-                },
-                relics: {
-                    title: "Реліквії та цінності",
-                    items: [
-                        { bold: "Мощі Святого Герєона", text: "– зберігаються у головному вівтарі." },
-                        { text: "Античні бронзові двері з різьбленням XIII століття." }
-                    ]
-                },
-                interestingFacts: {
-                    title: "Цікаві факти",
-                    isList: true,
-                    items: [
-                        { text: "Купол церкви має 12 граней і вважається одним із найбільших романських куполів Європи." },
-                        { text: "Всередині збереглися старовинні вітражі XIV–XV століть." },
-                        { text: "Церква присвячена римським легіонерам та мученикам, зокрема Святому Герєону." }
-                    ]
-                },
-                construction_period: "IV–V століття (перша церква), сучасна будівля – XII–XIII століття",
-                meta: {
-                    title: "Церква Святого Герєона – романська церква в Кельні",
-                    description: "Відвідайте Церкву Святого Герєона в Кельні – унікальну романську церкву з дванадцятигранним куполом, старовинними вітражами та багатою історією середньовіччя.",
-                    ogTitle: "Церква Святого Герєона – Романська церква",
-                    ogDescription: "Унікальна романська церква в Старому місті Кельна з дванадцятигранним куполом, старовинними вітражами та багатовіковою історією.",
-                    keywords: "Кельн, романська церква, Церква Святого Герєона, середньовічна архітектура, вітражі, купол, історична пам'ятка, туризм, визначні місця Кельна",
-                    ogImage: "https://our-travels.info/foto/Germany/nrw/koln/koln-city/altstadt/romanische_kirchen/st_gereon/001.jpg"
-                }
-            },
-            de: {
-                name: "St. Gereon Kirche",
-                location: "Köln, Deutschland",
-                short_description: "St. Gereon ist eine der bekannten romanischen Kirchen Kölns und befindet sich in der Altstadt. Sie ist bekannt für ihre ungewöhnliche runde Form und das reiche historische Erbe.",
-                full_description: {
-                    title: "Beschreibung und Geschichte",
-                    items: [
-                        { bold: "St. Gereon Kirche", text: "– eine romanische Kirche mit einem zwölfeckigen Kuppeldach und alten Glasfenstern, gelegen in der Altstadt von Köln. Bekannt für ihr reiches historisches Interieur und die einzigartige runde Form, die sie unter den Kölner Kirchen besonders hervorhebt." },
-                        { text: "Das Hauptmerkmal der Architektur ist die zwölfeckige Kuppel – eine der größten romanischen Rundbauten Europas. Der Stil verbindet Elemente der römischen und frühgotischen Architektur und schafft ein harmonisches Erscheinungsbild, das über Jahrhunderte erhalten blieb." },
-                        { text: "Die Kirche wird aktiv für Gottesdienste, Konzerte und kulturelle Veranstaltungen genutzt und ist nicht nur ein architektonisches Denkmal, sondern auch ein lebendiges Zentrum des religiösen und kulturellen Lebens der Stadt." },
-                        { bold: "Geschichte", text: "Die erste Kirche an diesem Ort entstand im 4.–5. Jahrhundert und war dem Märtyrer St. Gereon gewidmet. Das heutige Gebäude wurde im 12. Jahrhundert begonnen und im 13. Jahrhundert fertiggestellt. Die Architektur zeigt den Übergang vom romanischen Stil zur frühen Gotik, erkennbar an Fassade und Kuppel." },
-                        { text: "Im 16.–17. Jahrhundert wurde die Kirche restauriert, einschließlich der Erneuerung des Altars und der Innenausstattung. Während des Zweiten Weltkriegs wurde das Gebäude stark beschädigt, aber nach dem Krieg sorgfältig wiederhergestellt, einschließlich der einzigartigen Glasfenster und Wandmalereien." },
-                        { text: "Heute gehört die St. Gereon Kirche zur Route der „Romanischen Kirchen Kölns“ und ist als historisches Denkmal geschützt, was sowohl Touristen als auch Fachleute für mittelalterliche Architektur anzieht." }
-                    ]
-                },
-                tickets_and_entry: {
-                    title: "Praktische Informationen",
-                    items: [
-                        { bold: "Adresse:", text: "Gereonsplatz 1, 50670 Köln, Deutschland" },
-                        { bold: "Öffnungszeiten: ", text: "täglich von 10:00 bis 18:00 Uhr (kann je nach Veranstaltung variieren)" },
-                        { bold: "Eintritt:", text: "frei zugänglich, kostenpflichtige Führungen verfügbar" }
-                    ]
-                },
-                relics: {
-                    title: "Reliquien und Werte",
-                    items: [
-                        { bold: "Reliquien des Heiligen Gereon", text: "– befinden sich am Hauptaltar." },
-                        { text: "Antike Bronzetüren mit Schnitzereien aus dem 13. Jahrhundert." }
-                    ]
-                },
-                interestingFacts: {
-                    title: "Interessante Fakten",
-                    isList: true,
-                    items: [
-                        { text: "Die Kuppel der Kirche hat 12 Seiten und gilt als eine der größten romanischen Kuppeln Europas." },
-                        { text: "Im Inneren sind alte Glasfenster aus dem 14.–15. Jahrhundert erhalten." },
-                        { text: "Die Kirche ist den römischen Legionären und Märtyrern, einschließlich St. Gereon, gewidmet." }
-                    ]
-                },
-                construction_period: "4.–5. Jahrhundert (erste Kirche), heutiges Gebäude – 12.–13. Jahrhundert",
-                meta: {
-                    title: "St. Gereon Kirche – romanische Kirche in Köln",
-                    description: "Besuchen Sie die St. Gereon Kirche in Köln – eine einzigartige romanische Kirche mit zwölfeckiger Kuppel, alten Glasfenstern und reichem mittelalterlichen Erbe.",
-                    ogTitle: "St. Gereon Kirche – Romanische Kirche",
-                    ogDescription: "Eine einzigartige romanische Kirche in der Altstadt von Köln mit zwölfeckiger Kuppel, alten Glasfenstern und jahrhundertealter Geschichte.",
-                    keywords: "Köln, romanische Kirche, St. Gereon Kirche, mittelalterliche Architektur, Glasfenster, Kuppel, historisches Denkmal, Tourismus, Sehenswürdigkeiten Kölns",
-                    ogImage: "https://our-travels.info/foto/Germany/nrw/koln/koln-city/altstadt/romanische_kirchen/st_gereon/001.jpg"
-                }
-            }
-        }
-    },
-
-    // моншау
-    {
-        id: "tuchmacherbrunnen_monschau",
-        type: ["monument_or_fountain"], rating: "local",
-        path: "tuchmacherbrunnen_monschau",
-        countryPath: "germany", regionPath: "nrw", districtPath: "koln", cityPath: "monschau",
-        hiddenFromList: true, showMore: true,
-        fotoCard: "Germany/nrw/koln/Aachen/monschau/tuchmacherbrunnen/001.jpg",
-        coord: { lat: 50.55492, lng: 6.24160 },
-        translations: {
-            ru: {
-                name: "Фонтан ткачей в Моншау",
-                location: "Моншау, Германия",
-                short_description: "Фонтан ткачей – небольшой тематический фонтан в историческом центре Моншау. Фонтан посвящён традициям ткачества и текстильному прошлому города. Скульптурная композиция показывает ремесленный труд, благодаря которому Моншау стал известным центром производства сукна в XVIII веке. Сегодня фонтан – атмосферный элемент старого города и интересная остановка во время прогулки.",
-                full_description: {
-                    title: "Описание и история",
-                    items: [
-                        { bold: "Фонтан ткачей в Моншау (Tuchmacherbrunnen Monschau)", text: "– небольшой тематический фонтан в историческом центре Моншау, отражающий текстильное прошлое города. Он расположен среди фахверковых домов и гармонично вписывается в атмосферу старого города." },
-                        { text: "Композиция фонтана посвящена ремеслу ткачества: скульптурные элементы показывают процесс изготовления тканей и труд ремесленников, благодаря которым Моншау в XVIII веке стал известным центром производства сукна." },
-                        { text: "Фонтан символизирует промышленную историю города и не является музейной экспозицией. Сегодня это атмосферный элемент старого города и интересная остановка во время прогулки." },
-                        { bold: "История", text: "В XVIII веке Моншау переживал экономический расцвет благодаря текстильной промышленности. Производство сукна стало основой благосостояния города, а местные фабриканты и ткачи играли ключевую роль в его развитии." },
-                        { text: "Особо известна деятельность семьи Шайблер, которая превратила Моншау в один из значимых центров текстильной индустрии региона." },
-                        { text: "Фонтан был создан как символ уважения к этому периоду и людям, чьим трудом формировалась экономика города. Он остаётся визуальным напоминанием о ремесленном прошлом Моншау." }
-                    ]
-                },
-                interestingFacts: {
-                    title: "Интересные факты",
-                    isList: true,
-                    items: [
-                        { text: "Фонтан тематически связан с промышленной историей города, а не с религией или политикой, что редкость для старых городов Германии." },
-                        { text: "Композиция показывает сцены ручного ткачества, отражая работу ремесленников XVIII века." },
-                        { text: "Предположительно, фонтан был установлен в XX веке в рамках благоустройства исторического центра Моншау." }
-                    ]
-                },
-                meta: {
-                    title: "Фонтан ткачей в Моншау – текстильная история",
-                    description: "Небольшой фонтан в Моншау, символ текстильного прошлого города.",
-                    ogTitle: "Фонтан ткачей в Моншау – Tuchmacherbrunnen",
-                    ogDescription: "Исторический фонтан в Моншау, посвящённый ткачеству и текстильной индустрии города.",
-                    keywords: "моншау достопримечательности, фонтан ткачей, германия, текстильная история, суконное производство, что посмотреть моншау, старый город моншау, достопримечательности германии, туризм моншау",
-                    ogImage: "https://our-travels.info/foto/Germany/nrw/koln/Aachen/monschau/tuchmacherbrunnen/001.jpg"
-                }
-            },
-            ua: {
-                name: "Фонтан ткачів у Моншау",
-                location: "Моншау, Німеччина",
-                short_description: "Фонтан ткачів – невеликий тематичний фонтан у історичному центрі Моншау. Фонтан присвячений традиціям ткацтва та текстильному минулому міста. Скульптурна композиція показує ремісничу працю, завдяки якій Моншау став відомим центром виробництва сукна у XVIII столітті. Сьогодні фонтан є атмосферним елементом старого міста та цікавою зупинкою під час прогулянки.",
-                full_description: {
-                    title: "Опис та історія",
-                    items: [
-                        { bold: "Фонтан ткачів у Моншау (Tuchmacherbrunnen Monschau)", text: "– невеликий тематичний фонтан у історичному центрі Моншау, що відображає текстильне минуле міста. Він розташований серед фахверкових будинків та гармонійно вписується в атмосферу старого міста." },
-                        { text: "Композиція фонтану присвячена ремеслу ткацтва: скульптурні елементи показують процес виготовлення тканин та працю ремісників, завдяки яким Моншау у XVIII столітті став відомим центром виробництва сукна." },
-                        { text: "Фонтан символізує промислову історію міста і не є музейною експозицією. Сьогодні він слугує атмосферним елементом старого міста та цікавою зупинкою під час прогулянки." },
-                        { bold: "Історія", text: "У XVIII столітті Моншау переживав економічний розквіт завдяки текстильній промисловості. Виробництво сукна стало основою добробуту міста, а місцеві фабриканти та ткачі відігравали ключову роль у його розвитку." },
-                        { text: "Особливо відома діяльність родини Шайблер, яка перетворила Моншау на один із важливих центрів текстильної індустрії регіону." },
-                        { text: "Фонтан було створено як символ пошани до цього періоду та людей, чиєю працею формувалася економіка міста. Він залишається візуальним нагадуванням про ремісниче минуле Моншау." }
-                    ]
-                },
-                interestingFacts: {
-                    title: "Цікаві факти",
-                    isList: true,
-                    items: [
-                        { text: "Фонтан тематично пов'язаний із промисловою історією міста, а не з релігією чи політикою, що є рідкістю для старих міст Німеччини." },
-                        { text: "Композиція показує сцени ручного ткацтва, відображаючи працю ремісників XVIII століття." },
-                        { text: "Ймовірно, фонтан було встановлено у XX столітті в рамках благоустрою історичного центру Моншау. (Факт не перевірено)" }
-                    ]
-                },
-                meta: {
-                    title: "Фонтан ткачів у Моншау – текстильна історія",
-                    description: "Невеликий фонтан у Моншау, символ текстильного минулого міста.",
-                    ogTitle: "Фонтан ткачів у Моншау – Tuchmacherbrunnen",
-                    ogDescription: "Історичний фонтан у Моншау, присвячений ткацтву та текстильній індустрії міста.",
-                    keywords: "моншау визначні місця, фонтан ткачів, німеччина, текстильна історія, виробництво сукна, що подивитися моншау, старе місто моншау, визначні місця німеччини, туризм моншау",
-                    ogImage: "https://our-travels.info/foto/Germany/nrw/koln/Aachen/monschau/tuchmacherbrunnen/001.jpg"
-                }
-            },
-            de: {
-                name: "Tuchmacherbrunnen in Monschau",
-                location: "Monschau, Deutschland",
-                short_description: "Der Tuchmacherbrunnen ist ein kleiner thematischer Brunnen im historischen Zentrum von Monschau. Der Brunnen ist den Traditionen der Weberei und der textilen Vergangenheit der Stadt gewidmet. Die Skulpturkomposition zeigt die handwerkliche Arbeit, durch die Monschau im 18. Jahrhundert zu einem bekannten Zentrum der Tuchproduktion wurde. Heute ist der Brunnen ein atmosphärisches Element der Altstadt und eine interessante Station während eines Spaziergangs.",
-                full_description: {
-                    title: "Beschreibung und Geschichte",
-                    items: [
-                        { bold: "Tuchmacherbrunnen in Monschau (Tuchmacherbrunnen Monschau)", text: "– ein kleiner thematischer Brunnen im historischen Zentrum von Monschau, der die textile Vergangenheit der Stadt widerspiegelt. Er befindet sich zwischen Fachwerkhäusern und fügt sich harmonisch in die Atmosphäre der Altstadt ein." },
-                        { text: "Die Komposition des Brunnens ist dem Handwerk der Weberei gewidmet: Skulpturelemente zeigen den Herstellungsprozess von Stoffen und die Arbeit der Handwerker, durch die Monschau im 18. Jahrhundert zu einem bekannten Zentrum der Tuchproduktion wurde." },
-                        { text: "Der Brunnen symbolisiert die industrielle Geschichte der Stadt und ist keine Museumsausstellung. Heute dient er als atmosphärisches Element der Altstadt und als interessante Station während eines Spaziergangs." },
-                        { bold: "Geschichte", text: "Im 18. Jahrhundert erlebte Monschau dank der Textilindustrie eine wirtschaftliche Blüte. Die Tuchproduktion bildete die Grundlage für den Wohlstand der Stadt, und lokale Fabrikanten und Weber spielten eine Schlüsselrolle in ihrer Entwicklung." },
-                        { text: "Besonders bekannt ist die Tätigkeit der Familie Schäibler, die Monschau zu einem der bedeutendsten Zentren der Textilindustrie der Region machte." },
-                        { text: "Der Brunnen wurde als Symbol der Wertschätzung für diese Periode und die Menschen, deren Arbeit die Wirtschaft der Stadt prägte, geschaffen. Er bleibt eine visuelle Erinnerung an die handwerkliche Vergangenheit Monschaus." }
-                    ]
-                },
-                interestingFacts: {
-                    title: "Interessante Fakten",
-                    isList: true,
-                    items: [
-                        { text: "Der Brunnen ist thematisch mit der Industriegeschichte der Stadt verbunden und nicht mit Religion oder Politik, was für alte deutsche Städte selten ist." },
-                        { text: "Die Komposition zeigt Szenen des Handwebens und reflektiert die Arbeit der Handwerker im 18. Jahrhundert." },
-                        { text: "Vermutlich wurde der Brunnen im 20. Jahrhundert im Rahmen der Gestaltung des historischen Stadtzentrums von Monschau aufgestellt. (Fakt nicht geprüft)" }
-                    ]
-                },
-                meta: {
-                    title: "Tuchmacherbrunnen in Monschau – Textile Geschichte",
-                    description: "Kleiner Brunnen in Monschau, Symbol der textilen Vergangenheit der Stadt.",
-                    ogTitle: "Tuchmacherbrunnen in Monschau – Tuchmacherbrunnen",
-                    ogDescription: "Historischer Brunnen in Monschau, der dem Handwerk der Weberei und der Textilindustrie der Stadt gewidmet ist.",
-                    keywords: "monschau sehenswürdigkeiten, tuchmacherbrunnen, deutschland, textile geschichte, stoffproduktion, was man in monschau sehen kann, altstadt monschau, sehenswürdigkeiten deutschland, tourismus monschau",
-                    ogImage: "https://our-travels.info/foto/Germany/nrw/koln/Aachen/monschau/tuchmacherbrunnen/001.jpg"
-                }
-            }
-        }
-    },
-
+    // arnsberg округ
+    // Märkischer Kreis
     //altena
     {
         id: "lutherkirche_altena",
@@ -1292,6 +882,543 @@ const datas = [
             }
         }
     },
+
+    // округ dusseldorf 
+    // край mettmann 
+    // velbert
+    {
+        id: "langenberg_altstadt_velbert",
+        type: ["historical_area"], rating: "popular",
+        path: "langenberg_altstadt_velbert",
+        countryPath: "germany", regionPath: "nrw", districtPath: "dusseldorf", cityPath: "velbert",
+        fotoCard: "Germany/nrw/dusseldorf/mettmann/velbert/langenberg_altstadt/007.jpg",
+        translations: {
+            ru: {
+                name: "Старый город Лангенберг",
+                location: "Вельберт-Лангенберг, Германия",
+                short_description: "Старый город Лангенберг – один из наиболее хорошо сохранившихся исторических центров региона, известный фахверковой архитектурой, узкими улочками и атмосферой старинного торгово-ремесленного города.",
+                full_description: {
+                    title: "Описание и история",
+                    items: [
+                        { bold: "Старый город Лангенберг (Velbert-Langenberg Altstadt)", text: "расположен на склоне холма и представляет собой компактный исторический центр с плотной застройкой фахверковых домов. Узкие, извилистые улочки формируют характерный облик, который сохранил планировку и застройку XVII-XIX веков." },
+                        { text: "Главной архитектурной доминантой является старая церковь (Alte Kirche Langenberg) – исторический центр района, вокруг которой формировалось поселение. Благодаря перепадам высот и сохранённой планировке район выглядит особенно живописно и напоминает небольшой старинный город." },
+                        { text: "Сегодня Лангенберг считается одним из самых атмосферных старых городов в южной части Рура и популярен для прогулок и фототуризма." },
+                        { bold: "История", text: "Поселение Лангенберг сформировалось в средние века как торгово-ремесленный центр на пересечении региональных путей. Первые упоминания относятся к XIII веку, когда здесь уже существовала церковная община." },
+                        { text: "В течение последующих столетий город развивался как самостоятельный ремесленный центр, сохраняя компактную структуру. Основное строительство, сформировавшее современный облик старого города, относится к XVII-XIX векам." },
+                        { text: "Несмотря на индустриализацию региона Рура, Лангенберг избежал масштабной перестройки, благодаря чему историческая структура центра сохранилась почти полностью." }
+                    ]
+                },
+                interestingFacts: {
+                    title: "Интересные факты",
+                    isList: true,
+                    items: [
+                        { text: "Лангенберг часто называют “городом на склоне” из-за перепадов высот " },
+                        { text: "Многие дома сохранили оригинальные фахверковые конструкции " },
+                        { text: "Центр визуально почти не менялся более 100 лет " },
+                        { text: "Застройка сочетает фахверк и сланцевые фасады – характерную особенность региона Bergisches Land" },
+                        { text: "Несмотря на “старинный” вид, это живой жилой район " }
+                    ]
+                },
+                construction_period: "XIII век (первые упоминания поселения и церковной общины)",
+                meta: {
+                    title: "Старый город Лангенберг – исторический старый город в Германии",
+                    description: "Старый город Лангенберг – исторический центр Velbert-Langenberg с фахверковыми домами, узкими улочками и церковью, основанной в XIII веке. Один из самых аутентичных старых городов региона Северный Рейн-Вестфалия.",
+                    ogTitle: "Старый город Лангенберг – исторический старый город Германии",
+                    ogDescription: "Фахверковые дома, узкие улочки и атмосфера настоящего старого немецкого города в Velbert-Langenberg.",
+                    keywords: "Velbert Langenberg, Altstadt, старый город Германия, фахверк, NRW, исторический центр, Alte Kirche Langenberg, Ruhrgebiet, historic town Germany, Лангенберг, достопримечательность",
+                    ogImage: "https://our-travels.info/foto/Germany/nrw/dusseldorf/mettmann/velbert/langenberg_altstadt/007.jpg"
+                }
+            },
+            ua: {
+                name: "Старе місто Лангенберг",
+                location: "Вельберт-Лангенберг, Німеччина",
+                short_description: "Старе місто Лангенберг – один із найкраще збережених історичних центрів регіону, відомий фахверковою архітектурою, вузькими вуличками та атмосферою старовинного торговельно-ремісничого міста.",
+                full_description: {
+                    title: "Опис та історія",
+                    items: [
+                        { bold: "Старе місто Лангенберг (Velbert-Langenberg Altstadt)", text: "розташоване на схилі пагорба та являє собою компактний історичний центр із щільною забудовою фахверкових будинків. Вузькі, звивисті вулички формують характерний вигляд, який зберіг планування та забудову XVII–XIX століть." },
+                        { text: "Головною архітектурною домінантою є стара церква (Alte Kirche Langenberg) – історичний центр району, навколо якої формувалося поселення. Завдяки перепадам висот і збереженому плануванню район виглядає особливо мальовничо та нагадує невелике старовинне місто." },
+                        { text: "Сьогодні Лангенберг вважається одним із найатмосферніших старих міст у південній частині Руру та популярний для прогулянок і фототуризму." },
+                        { bold: "Історія", text: "Поселення Лангенберг сформувалося в середні віки як торговельно-ремісничий центр на перетині регіональних шляхів. Перші згадки відносяться до XIII століття, коли тут уже існувала церковна громада." },
+                        { text: "Протягом наступних століть місто розвивалося як самостійний ремісничий центр, зберігаючи компактну структуру. Основна забудова, що сформувала сучасний вигляд старого міста, відноситься до XVII–XIX століть." },
+                        { text: "Незважаючи на індустріалізацію регіону Руру, Лангенберг уникнув масштабної перебудови, завдяки чому історична структура центру збереглася майже повністю." }
+                    ]
+                },
+                interestingFacts: {
+                    title: "Цікаві факти",
+                    isList: true,
+                    items: [
+                        { text: "Лангенберг часто називають “містом на схилі” через перепади висот" },
+                        { text: "Багато будинків зберегли оригінальні фахверкові конструкції" },
+                        { text: "Центр візуально майже не змінювався понад 100 років" },
+                        { text: "Забудова поєднує фахверк і сланцеві фасади – характерну особливість регіону Bergisches Land" },
+                        { text: "Незважаючи на “старовинний” вигляд, це живий житловий район" }
+                    ]
+                },
+                construction_period: "XIII століття (перші згадки про поселення та церковну громаду)",
+                meta: {
+                    title: "Старе місто Лангенберг – історичне старе місто в Німеччині",
+                    description: "Старе місто Лангенберг – історичний центр Velbert-Langenberg із фахверковими будинками, вузькими вуличками та церквою, заснованою у XIII столітті. Один із найавтентичніших старих центрів регіону Північний Рейн-Вестфалія.",
+                    ogTitle: "Старе місто Лангенберг – історичне старе місто Німеччини",
+                    ogDescription: "Фахверкові будинки, вузькі вулички та атмосфера справжнього старого німецького міста у Velbert-Langenberg.",
+                    keywords: "Velbert Langenberg, Altstadt, старе місто Німеччина, фахверк, NRW, історичний центр, Alte Kirche Langenberg, Ruhrgebiet, historic town Germany, Лангенберг, пам’ятка",
+                    ogImage: "https://our-travels.info/foto/Germany/nrw/dusseldorf/mettmann/velbert/langenberg_altstadt/007.jpg"
+                }
+            },
+            de: {
+                name: "Altstadt Langenberg",
+                location: "Velbert-Langenberg, Deutschland",
+                short_description: "Die Altstadt Langenberg gehört zu den am besten erhaltenen historischen Zentren der Region und ist bekannt für ihre Fachwerkarchitektur, engen Gassen und die Atmosphäre einer historischen Handels- und Handwerkerstadt.",
+                full_description: {
+                    title: "Beschreibung und Geschichte",
+                    items: [
+                        { bold: "Altstadt Langenberg (Velbert-Langenberg Altstadt)", text: "liegt an einem Hang und stellt ein kompaktes historisches Zentrum mit dichter Fachwerkbebauung dar. Die engen, verwinkelten Gassen prägen das charakteristische Stadtbild, das die Struktur und Bebauung des 17.–19. Jahrhunderts bewahrt hat." },
+                        { text: "Die wichtigste architektonische Dominante ist die alte Kirche (Alte Kirche Langenberg) – das historische Zentrum des Stadtteils, um die sich die Siedlung entwickelte. Durch die Höhenunterschiede und die erhaltene Struktur wirkt das Viertel besonders malerisch und erinnert an eine kleine historische Stadt." },
+                        { text: "Heute gilt Langenberg als eine der atmosphärischsten Altstädte im südlichen Ruhrgebiet und ist ein beliebtes Ziel für Spaziergänge und Fototourismus." },
+                        { bold: "Geschichte", text: "Die Siedlung Langenberg entstand im Mittelalter als Handels- und Handwerkszentrum an der Kreuzung regionaler Wege. Die ersten Erwähnungen stammen aus dem 13. Jahrhundert, als hier bereits eine kirchliche Gemeinschaft existierte." },
+                        { text: "In den folgenden Jahrhunderten entwickelte sich die Stadt als eigenständiges Handwerkszentrum und bewahrte ihre kompakte Struktur. Die Bebauung, die das heutige Erscheinungsbild prägt, stammt überwiegend aus dem 17.–19. Jahrhundert." },
+                        { text: "Trotz der Industrialisierung des Ruhrgebiets blieb Langenberg von großflächigen Umgestaltungen verschont, sodass die historische Struktur des Zentrums weitgehend erhalten blieb." }
+                    ]
+                },
+                interestingFacts: {
+                    title: "Interessante Fakten",
+                    isList: true,
+                    items: [
+                        { text: "Langenberg wird aufgrund der Höhenunterschiede oft als „Stadt am Hang“ bezeichnet" },
+                        { text: "Viele Häuser haben ihre ursprünglichen Fachwerkkonstruktionen bewahrt" },
+                        { text: "Das Zentrum hat sich optisch seit über 100 Jahren kaum verändert" },
+                        { text: "Die Bebauung kombiniert Fachwerk und Schieferfassaden – ein typisches Merkmal des Bergischen Landes" },
+                        { text: "Trotz seines historischen Erscheinungsbildes ist es ein lebendiges Wohnviertel" }
+                    ]
+                },
+                construction_period: "13. Jahrhundert (erste Erwähnungen der Siedlung und der kirchlichen Gemeinschaft)",
+                meta: {
+                    title: "Altstadt Langenberg – historisches Stadtzentrum in Deutschland",
+                    description: "Die Altstadt Langenberg ist das historische Zentrum von Velbert-Langenberg mit Fachwerkhäusern, engen Gassen und einer im 13. Jahrhundert gegründeten Kirche. Eine der authentischsten Altstädte in Nordrhein-Westfalen.",
+                    ogTitle: "Altstadt Langenberg – historisches Stadtzentrum Deutschlands",
+                    ogDescription: "Fachwerkhäuser, enge Gassen und die Atmosphäre einer echten historischen deutschen Stadt in Velbert-Langenberg.",
+                    keywords: "Velbert Langenberg, Altstadt, historische Stadt Deutschland, Fachwerk, NRW, historisches Zentrum, Alte Kirche Langenberg, Ruhrgebiet, historic town Germany, Langenberg, Sehenswürdigkeit",
+                    ogImage: "https://our-travels.info/foto/Germany/nrw/dusseldorf/mettmann/velbert/langenberg_altstadt/007.jpg"
+                }
+            }
+        }
+    },
+
+    // округ Köln 
+    // koln-city
+    {
+        id: "fischmarkt_koln",
+        type: ["square"], rating: "top",
+        path: "fischmarkt_koln",
+        countryPath: "germany", regionPath: "nrw", districtPath: "city", cityPath: "koln",
+        hiddenFromList: true, showMore: true,
+        fotoCard: "Germany/nrw/koln/koln-city/altstadt/fischmarkt/001.jpg",
+        coord: { lat: 50.93845, lng: 6.96260 },
+        translations: {
+            ru: {
+                name: "Фишмаркт",
+                location: "Кёльн, Германия",
+                short_description: "Фишмаркт – историческая площадь Старого города Кёльна с яркими разноцветными домами и атмосферой средневекового рынка. Популярное место для прогулок, фотосессий, кафе и ярмарок, рядом с Кёльнским собором.",
+                full_description: {
+                    title: "Описание и история",
+                    items: [
+                        { bold: "Фишмаркт (Fischmarkt)", text: "– это оживлённая площадь в Старом городе Кельна, известная своими яркими разноцветными домами, которые делают её одной из самых фотогеничных точек города. Здесь исторически располагались рыбные рынки, и до сих пор площадь сохраняет атмосферу средневекового торгового центра. Фишмаркт часто посещают туристы и местные жители, особенно в тёплое время года, когда на площади проходят ярмарки и фестивали." },
+                        { text: "Площадь окружена узкими улочками Старого города, где можно найти кафе, рестораны и сувенирные магазины. Благодаря живописной архитектуре и историческому окружению, Фишмаркт является популярным местом для фотосессий и прогулок." },
+                        { text: "Это место также удобно как точка старта для пешеходных экскурсий по Старому городу и к знаменитому Кёльнскому собору – всего в нескольких минутах ходьбы." },
+                        { bold: "История", text: "Фишмаркт возник в Средние века как центр торговли рыбой в Кёльне. С XVI века площадь играла важную роль в снабжении города свежими морепродуктами, привозимыми по реке Рейн. Архитектура домов вокруг площади отражает готические и ренессансные элементы, сохранившиеся до наших дней." },
+                        { text: "В XIX веке, с развитием торговли и городской инфраструктуры, Фишмаркт превратился в одно из оживлённых общественных пространств города. После Второй мировой войны площадь была восстановлена, и исторический облик зданий тщательно сохранён." },
+                        { text: "Сегодня Фишмаркт служит местом культурных мероприятий и рынков, продолжая традицию средневекового рыночного центра, но теперь с туристической и развлекательной функцией." }
+                    ]
+                },
+                tickets_and_entry: {
+                    title: "Практическая информация",
+                    items: [
+                        { bold: "Адрес:", text: "Fischmarkt, 50667 Köln, Германия " },
+                        { bold: "Доступность:", text: "пешеходная зона, легко доступна для туристов " },
+                        { bold: "Ближайшая станция метро:", text: "Heumarkt (U-Bahn)" },
+                        { bold: "Часы работы:", text: "открытая площадь, круглосуточно; рынки и ярмарки по расписанию" }
+                    ]
+                },
+                interestingFacts: {
+                    title: "Интересные факты",
+                    isList: true,
+                    items: [
+                        { text: "Фишмаркт часто называют «самой фотогеничной площадью Кёльна» из-за ярких фасадов домов. " },
+                        { text: "Раньше здесь проводились настоящие рыбные аукционы. " },
+                        { text: "На площади регулярно проходят праздничные ярмарки, в том числе рождественская. " }
+                    ]
+                },
+                construction_period: "XIII–XIV век, Средние века",
+                meta: {
+                    title: "Фишмаркт Кельн – историческая площадь и фотогеничные дома",
+                    description: "Фишмаркт в Старом городе Кёльна – живописная площадь с разноцветными домами, историей средневекового рыбного рынка и популярное место для туристов.",
+                    ogTitle: "Фишмаркт Кельн – сердце Старого города",
+                    ogDescription: "Яркая площадь Старого города Кёльна с разноцветными домами, атмосферой средневекового рынка и фотогеничными видами для туристов.",
+                    keywords: "достопримечательности, рынок, историческое место, Кёльн, музей, прогулка, архитектура, история города, туризм, интересные места",
+                    ogImage: "https://our-travels.info/foto/Germany/nrw/koln/koln-city/altstadt/fischmarkt/001.jpg"
+                }
+            },
+            ua: {
+                name: "Фішмаркт",
+                location: "Кельн, Німеччина",
+                short_description: "Фішмаркт – історична площа Старого міста Кельна з яскравими різнокольоровими будинками та атмосферою середньовічного ринку. Популярне місце для прогулянок, фотосесій, кафе та ярмарків, поруч з Кельнським собором.",
+                full_description: {
+                    title: "Опис та історія",
+                    items: [
+                        { bold: "Фішмаркт (Fischmarkt)", text: "– це жвава площа в Старому місті Кельна, відома своїми яскравими різнокольоровими будинками, що роблять її однією з найбільш фотогенічних точок міста. Тут історично розташовувалися рибні ринки, і до сьогодні площа зберігає атмосферу середньовічного торгового центру. Фішмаркт часто відвідують туристи та місцеві жителі, особливо у теплу пору року, коли на площі проходять ярмарки та фестивалі." },
+                        { text: "Площа оточена вузькими вуличками Старого міста, де можна знайти кафе, ресторани та сувенірні магазини. Завдяки мальовничій архітектурі та історичному оточенню, Фішмаркт є популярним місцем для фотосесій та прогулянок." },
+                        { text: "Це місце також зручно як точка старту для пішохідних екскурсій по Старому місту та до знаменитого Кельнського собору – всього за кілька хвилин ходьби." },
+                        { bold: "Історія", text: "Фішмаркт виник у Середні віки як центр торгівлі рибою в Кельні. З XVI століття площа відігравала важливу роль у забезпеченні міста свіжими морепродуктами, які привозилися річкою Рейн. Архітектура будинків навколо площі відображає готичні та ренесансні елементи, що збереглися до наших днів." },
+                        { text: "У XIX столітті, з розвитком торгівлі та міської інфраструктури, Фішмаркт перетворився на одне з жвавих громадських просторів міста. Після Другої світової війни площа була відновлена, і історичний вигляд будівель ретельно збережено." },
+                        { text: "Сьогодні Фішмаркт слугує місцем культурних заходів та ринків, продовжуючи традицію середньовічного ринкового центру, але тепер з туристичною та розважальною функцією." }
+                    ]
+                },
+                tickets_and_entry: {
+                    title: "Практична інформація",
+                    items: [
+                        { bold: "Адреса:", text: "Fischmarkt, 50667 Köln, Німеччина" },
+                        { bold: "Доступність:", text: "пішохідна зона, легко доступна для туристів" },
+                        { bold: "Найближча станція метро:", text: "Heumarkt (U-Bahn)" },
+                        { bold: "Часи роботи:", text: "відкрита площа, цілодобово; ринки та ярмарки за розкладом" }
+                    ]
+                },
+                interestingFacts: {
+                    title: "Цікаві факти",
+                    isList: true,
+                    items: [
+                        { text: "Фішмаркт часто називають «найфотогенічнішою площею Кельна» через яскраві фасади будинків." },
+                        { text: "Раніше тут проводилися справжні рибні аукціони." },
+                        { text: "На площі регулярно проходять святкові ярмарки, зокрема різдвяні." }
+                    ]
+                },
+                construction_period: "XIII–XIV століття, Середні віки",
+                meta: {
+                    title: "Фішмаркт Кельн – історична площа та фотогенічні будинки",
+                    description: "Фішмаркт у Старому місті Кельна – мальовнича площа з різнокольоровими будинками, історією середньовічного рибного ринку та популярне місце для туристів.",
+                    ogTitle: "Фішмаркт Кельн – серце Старого міста",
+                    ogDescription: "Яскрава площа Старого міста Кельна з різнокольоровими будинками, атмосферою середньовічного ринку та фотогенічними видами для туристів.",
+                    keywords: "пам'ятки, ринок, історичне місце, Кельн, музей, прогулянка, архітектура, історія міста, туризм, цікаві місця",
+                    ogImage: "https://our-travels.info/foto/Germany/nrw/koln/koln-city/altstadt/fischmarkt/001.jpg"
+                }
+            },
+            de: {
+                name: "Fischmarkt",
+                location: "Köln, Deutschland",
+                short_description: "Der Fischmarkt ist ein historischer Platz in der Altstadt von Köln mit bunten Häusern und der Atmosphäre eines mittelalterlichen Marktes. Ein beliebter Ort für Spaziergänge, Fotos, Cafés und Märkte, in der Nähe des Kölner Doms.",
+                full_description: {
+                    title: "Beschreibung und Geschichte",
+                    items: [
+                        { bold: "Fischmarkt (Fischmarkt)", text: "– ist ein lebhafter Platz in der Altstadt von Köln, bekannt für seine bunten Häuser, die ihn zu einem der fotogensten Punkte der Stadt machen. Hier befanden sich historisch Fischmärkte, und bis heute bewahrt der Platz die Atmosphäre eines mittelalterlichen Handelszentrums. Der Fischmarkt wird häufig von Touristen und Einheimischen besucht, besonders in der warmen Jahreszeit, wenn auf dem Platz Märkte und Festivals stattfinden." },
+                        { text: "Der Platz ist von engen Gassen der Altstadt umgeben, in denen man Cafés, Restaurants und Souvenirläden finden kann. Dank der malerischen Architektur und der historischen Umgebung ist der Fischmarkt ein beliebter Ort für Fotos und Spaziergänge." },
+                        { text: "Dieser Ort eignet sich auch als Startpunkt für Spaziergänge durch die Altstadt und zum berühmten Kölner Dom – nur wenige Gehminuten entfernt." },
+                        { bold: "Geschichte", text: "Der Fischmarkt entstand im Mittelalter als Zentrum des Fischhandels in Köln. Ab dem 16. Jahrhundert spielte der Platz eine wichtige Rolle bei der Versorgung der Stadt mit frischen Meeresfrüchten, die über den Rhein geliefert wurden. Die Architektur der Häuser rund um den Platz zeigt gotische und Renaissance-Elemente, die bis heute erhalten geblieben sind." },
+                        { text: "Im 19. Jahrhundert, mit der Entwicklung von Handel und städtischer Infrastruktur, wurde der Fischmarkt zu einem der belebten öffentlichen Räume der Stadt. Nach dem Zweiten Weltkrieg wurde der Platz wiederhergestellt und das historische Erscheinungsbild der Gebäude sorgfältig bewahrt." },
+                        { text: "Heute dient der Fischmarkt als Ort für kulturelle Veranstaltungen und Märkte und setzt die Tradition des mittelalterlichen Marktzentrums fort, nun jedoch mit touristischer und unterhaltender Funktion." }
+                    ]
+                },
+                tickets_and_entry: {
+                    title: "Praktische Informationen",
+                    items: [
+                        { bold: "Adresse:", text: "Fischmarkt, 50667 Köln, Deutschland" },
+                        { bold: "Zugang:", text: "Fußgängerzone, leicht für Touristen zugänglich" },
+                        { bold: "Nächste U-Bahn-Station:", text: "Heumarkt (U-Bahn)" },
+                        { bold: "Öffnungszeiten:", text: "offener Platz, rund um die Uhr; Märkte und Festivals nach Plan" }
+                    ]
+                },
+                interestingFacts: {
+                    title: "Interessante Fakten",
+                    isList: true,
+                    items: [
+                        { text: "Der Fischmarkt wird oft als der fotogenste Platz von Köln bezeichnet wegen seiner bunten Hausfassaden." },
+                        { text: "Früher wurden hier echte Fischauktionen abgehalten." },
+                        { text: "Auf dem Platz finden regelmäßig Festmärkte statt, einschließlich Weihnachtsmärkte." }
+                    ]
+                },
+                construction_period: "13.–14. Jahrhundert, Mittelalter",
+                meta: {
+                    title: "Fischmarkt Köln – historischer Platz und fotogene Häuser",
+                    description: "Der Fischmarkt in der Altstadt von Köln – ein malerischer Platz mit bunten Häusern, Geschichte des mittelalterlichen Fischmarktes und ein beliebter Ort für Touristen.",
+                    ogTitle: "Fischmarkt Köln – das Herz der Altstadt",
+                    ogDescription: "Ein lebhafter Platz in der Altstadt von Köln mit bunten Häusern, mittelalterlichem Marktflair und fotogenen Aussichten für Touristen.",
+                    keywords: "Sehenswürdigkeiten, Markt, historischer Ort, Köln, Museum, Spaziergang, Architektur, Stadtgeschichte, Tourismus, interessante Orte",
+                    ogImage: "https://our-travels.info/foto/Germany/nrw/koln/koln-city/altstadt/fischmarkt/001.jpg"
+                }
+            }
+        }
+    },
+    {
+        id: "st_gereon_koln",
+        type: ["cathedral"], rating: "popular",
+        path: "st_gereon_koln",
+        countryPath: "germany", regionPath: "nrw", districtPath: "city", cityPath: "koln",
+        hiddenFromList: true, showMore: true,
+        fotoCard: "Germany/nrw/koln/koln-city/altstadt/romanische_kirchen/st_gereon/001.jpg",
+        coord: { lat: 50.94329, lng: 6.94571 },
+        translations: {
+            ru: {
+                name: "Церковь Святого Гереона",
+                location: "Кёльн, Германия",
+                short_description: "Церковь Святого Гереона (St. Gereon) – одна из знаменитых романских церквей Кёльна, расположенная в Старом городе. Известна своей необычной круглой формой и богатым историческим наследием.",
+                full_description: {
+                    title: "Описание и история",
+                    items: [
+                        { bold: "Церковь Святого Гереона", text: "– романская церковь с двенадцатигранным куполом и старинными витражами, расположенная в Старом городе Кёльна. Известна богатым историческим интерьером и уникальной круглой формой, которая выделяет её среди кёльнских соборов." },
+                        { text: "Главной архитектурной особенностью является двенадцатигранный купол – одна из крупнейших романских ротонд Европы. Стиль сочетает элементы римской и раннеготической архитектуры, создавая гармоничный образ, сохранившийся на протяжении веков." },
+                        { text: "Церковь активно используется для богослужений, концертов и культурных мероприятий, являясь не только памятником архитектуры, но и живым центром религиозной и культурной жизни города." },
+                        { bold: "История", text: "Первая церковь на этом месте появилась в IV–V веках и была посвящена мученику Св. Гереону. Современное здание начали строить в XII веке, завершив к XIII веку. Архитектура отражает переход от романского стиля к ранней готике, что видно в фасаде и куполе." },
+                        { text: "В XVI–XVII веках церковь претерпела реставрации, включая обновление алтаря и внутреннего убранства. Во время Второй мировой войны здание сильно пострадало, но после войны было тщательно восстановлено, включая уникальные витражи и росписи." },
+                        { text: "Сегодня Церковь Святого Гереона входит в маршрут «Романские церкви Кёльна» и охраняется как исторический памятник, привлекая туристов и специалистов по средневековой архитектуре." }
+                    ]
+                },
+                tickets_and_entry: {
+                    title: "Практическая информация",
+                    items: [
+                        { bold: "Адрес:", text: "Gereonsplatz 1, 50670 Köln, Германия" },
+                        { bold: "Время работы: ", text: "ежедневно с 10:00 до 18:00 (может меняться в зависимости от мероприятий) " },
+                        { bold: "Вход:", text: "свободный для посещения, платные экскурсии доступны" }
+                    ]
+                },
+                relics: {
+                    title: "Реликвии и ценности",
+                    items: [
+                        { bold: "Мощи Св. Гереона", text: "– хранятся в главном алтаре. " },
+                        { text: "Античные бронзовые двери с резьбой XIII века. " }
+                    ]
+                },
+                interestingFacts: {
+                    title: "Интересные факты",
+                    isList: true,
+                    items: [
+                        { text: "Купол церкви имеет 12 граней и считается одним из крупнейших романских куполов Европы." },
+                        { text: "Внутри сохранились старинные витражи XIV-XV веков. " },
+                        { text: "Церковь посвящена римским легионерам и мученикам, включая Св. Гереона. " }
+                    ]
+                },
+                construction_period: "IV-V века (первая церковь), современное здание – XII-XIII века",
+                meta: {
+                    title: "Церковь Святого Гереона – романская церковь в Кёльне",
+                    description: "Посетите Церковь Святого Гереона в Кёльне – уникальную романскую церковь с двенадцатигранным куполом, старинными витражами и богатой историей Средневековья.",
+                    ogTitle: "Церковь Святого Гереона – Романская церковь",
+                    ogDescription: "Уникальная романская церковь в Старом городе Кёльна с двенадцатигранным куполом, старинными витражами и многовековой историей.",
+                    keywords: "Кёльн, романская церковь, Церковь Святого Гереона, средневековая архитектура, витражи, купол, исторический памятник, туризм, достопримечательности Кёльна",
+                    ogImage: "https://our-travels.info/foto/Germany/nrw/koln/koln-city/altstadt/romanische_kirchen/st_gereon/001.jpg"
+                }
+            },
+            ua: {
+                name: "Церква Святого Герєона",
+                location: "Кельн, Німеччина",
+                short_description: "Церква Святого Герєона (St. Gereon) – одна з відомих романських церков Кельна, розташована в Старому місті. Відома своєю незвичайною круглою формою та багатою історичною спадщиною.",
+                full_description: {
+                    title: "Опис та історія",
+                    items: [
+                        { bold: "Церква Святого Герєона", text: "– романська церква з дванадцятигранним куполом і старовинними вітражами, розташована в Старому місті Кельна. Відома багатим історичним інтер'єром та унікальною круглою формою, яка виділяє її серед кельнських соборів." },
+                        { text: "Головною архітектурною особливістю є дванадцятигранний купол – одна з найбільших романських ротонд Європи. Стиль поєднує елементи римської та ранньоготичної архітектури, створюючи гармонійний образ, який зберігся протягом століть." },
+                        { text: "Церква активно використовується для богослужінь, концертів та культурних заходів, являючись не лише пам'яткою архітектури, а й живим центром релігійного та культурного життя міста." },
+                        { bold: "Історія", text: "Перша церква на цьому місці з'явилася у IV–V століттях і була присвячена мученику Святому Герєону. Сучасну будівлю почали зводити у XII столітті, завершивши у XIII столітті. Архітектура відображає перехід від романського стилю до ранньої готики, що видно у фасаді та куполі." },
+                        { text: "У XVI–XVII століттях церква зазнала реставрацій, включно з оновленням вівтаря та внутрішнього оздоблення. Під час Другої світової війни будівля зазнала значних пошкоджень, але після війни була ретельно відновлена, включаючи унікальні вітражі та розписи." },
+                        { text: "Сьогодні Церква Святого Герєона входить до маршруту «Романські церкви Кельна» та охороняється як історична пам'ятка, приваблюючи туристів та фахівців зі середньовічної архітектури." }
+                    ]
+                },
+                tickets_and_entry: {
+                    title: "Практична інформація",
+                    items: [
+                        { bold: "Адреса:", text: "Gereonsplatz 1, 50670 Köln, Німеччина" },
+                        { bold: "Час роботи: ", text: "щодня з 10:00 до 18:00 (може змінюватися залежно від заходів)" },
+                        { bold: "Вхід:", text: "вільний для відвідування, платні екскурсії доступні" }
+                    ]
+                },
+                relics: {
+                    title: "Реліквії та цінності",
+                    items: [
+                        { bold: "Мощі Святого Герєона", text: "– зберігаються у головному вівтарі." },
+                        { text: "Античні бронзові двері з різьбленням XIII століття." }
+                    ]
+                },
+                interestingFacts: {
+                    title: "Цікаві факти",
+                    isList: true,
+                    items: [
+                        { text: "Купол церкви має 12 граней і вважається одним із найбільших романських куполів Європи." },
+                        { text: "Всередині збереглися старовинні вітражі XIV–XV століть." },
+                        { text: "Церква присвячена римським легіонерам та мученикам, зокрема Святому Герєону." }
+                    ]
+                },
+                construction_period: "IV–V століття (перша церква), сучасна будівля – XII–XIII століття",
+                meta: {
+                    title: "Церква Святого Герєона – романська церква в Кельні",
+                    description: "Відвідайте Церкву Святого Герєона в Кельні – унікальну романську церкву з дванадцятигранним куполом, старовинними вітражами та багатою історією середньовіччя.",
+                    ogTitle: "Церква Святого Герєона – Романська церква",
+                    ogDescription: "Унікальна романська церква в Старому місті Кельна з дванадцятигранним куполом, старовинними вітражами та багатовіковою історією.",
+                    keywords: "Кельн, романська церква, Церква Святого Герєона, середньовічна архітектура, вітражі, купол, історична пам'ятка, туризм, визначні місця Кельна",
+                    ogImage: "https://our-travels.info/foto/Germany/nrw/koln/koln-city/altstadt/romanische_kirchen/st_gereon/001.jpg"
+                }
+            },
+            de: {
+                name: "St. Gereon Kirche",
+                location: "Köln, Deutschland",
+                short_description: "St. Gereon ist eine der bekannten romanischen Kirchen Kölns und befindet sich in der Altstadt. Sie ist bekannt für ihre ungewöhnliche runde Form und das reiche historische Erbe.",
+                full_description: {
+                    title: "Beschreibung und Geschichte",
+                    items: [
+                        { bold: "St. Gereon Kirche", text: "– eine romanische Kirche mit einem zwölfeckigen Kuppeldach und alten Glasfenstern, gelegen in der Altstadt von Köln. Bekannt für ihr reiches historisches Interieur und die einzigartige runde Form, die sie unter den Kölner Kirchen besonders hervorhebt." },
+                        { text: "Das Hauptmerkmal der Architektur ist die zwölfeckige Kuppel – eine der größten romanischen Rundbauten Europas. Der Stil verbindet Elemente der römischen und frühgotischen Architektur und schafft ein harmonisches Erscheinungsbild, das über Jahrhunderte erhalten blieb." },
+                        { text: "Die Kirche wird aktiv für Gottesdienste, Konzerte und kulturelle Veranstaltungen genutzt und ist nicht nur ein architektonisches Denkmal, sondern auch ein lebendiges Zentrum des religiösen und kulturellen Lebens der Stadt." },
+                        { bold: "Geschichte", text: "Die erste Kirche an diesem Ort entstand im 4.–5. Jahrhundert und war dem Märtyrer St. Gereon gewidmet. Das heutige Gebäude wurde im 12. Jahrhundert begonnen und im 13. Jahrhundert fertiggestellt. Die Architektur zeigt den Übergang vom romanischen Stil zur frühen Gotik, erkennbar an Fassade und Kuppel." },
+                        { text: "Im 16.–17. Jahrhundert wurde die Kirche restauriert, einschließlich der Erneuerung des Altars und der Innenausstattung. Während des Zweiten Weltkriegs wurde das Gebäude stark beschädigt, aber nach dem Krieg sorgfältig wiederhergestellt, einschließlich der einzigartigen Glasfenster und Wandmalereien." },
+                        { text: "Heute gehört die St. Gereon Kirche zur Route der „Romanischen Kirchen Kölns“ und ist als historisches Denkmal geschützt, was sowohl Touristen als auch Fachleute für mittelalterliche Architektur anzieht." }
+                    ]
+                },
+                tickets_and_entry: {
+                    title: "Praktische Informationen",
+                    items: [
+                        { bold: "Adresse:", text: "Gereonsplatz 1, 50670 Köln, Deutschland" },
+                        { bold: "Öffnungszeiten: ", text: "täglich von 10:00 bis 18:00 Uhr (kann je nach Veranstaltung variieren)" },
+                        { bold: "Eintritt:", text: "frei zugänglich, kostenpflichtige Führungen verfügbar" }
+                    ]
+                },
+                relics: {
+                    title: "Reliquien und Werte",
+                    items: [
+                        { bold: "Reliquien des Heiligen Gereon", text: "– befinden sich am Hauptaltar." },
+                        { text: "Antike Bronzetüren mit Schnitzereien aus dem 13. Jahrhundert." }
+                    ]
+                },
+                interestingFacts: {
+                    title: "Interessante Fakten",
+                    isList: true,
+                    items: [
+                        { text: "Die Kuppel der Kirche hat 12 Seiten und gilt als eine der größten romanischen Kuppeln Europas." },
+                        { text: "Im Inneren sind alte Glasfenster aus dem 14.–15. Jahrhundert erhalten." },
+                        { text: "Die Kirche ist den römischen Legionären und Märtyrern, einschließlich St. Gereon, gewidmet." }
+                    ]
+                },
+                construction_period: "4.–5. Jahrhundert (erste Kirche), heutiges Gebäude – 12.–13. Jahrhundert",
+                meta: {
+                    title: "St. Gereon Kirche – romanische Kirche in Köln",
+                    description: "Besuchen Sie die St. Gereon Kirche in Köln – eine einzigartige romanische Kirche mit zwölfeckiger Kuppel, alten Glasfenstern und reichem mittelalterlichen Erbe.",
+                    ogTitle: "St. Gereon Kirche – Romanische Kirche",
+                    ogDescription: "Eine einzigartige romanische Kirche in der Altstadt von Köln mit zwölfeckiger Kuppel, alten Glasfenstern und jahrhundertealter Geschichte.",
+                    keywords: "Köln, romanische Kirche, St. Gereon Kirche, mittelalterliche Architektur, Glasfenster, Kuppel, historisches Denkmal, Tourismus, Sehenswürdigkeiten Kölns",
+                    ogImage: "https://our-travels.info/foto/Germany/nrw/koln/koln-city/altstadt/romanische_kirchen/st_gereon/001.jpg"
+                }
+            }
+        }
+    },
+
+    // край аахен
+    // моншау
+    {
+        id: "tuchmacherbrunnen_monschau",
+        type: ["monument_or_fountain"], rating: "local",
+        path: "tuchmacherbrunnen_monschau",
+        countryPath: "germany", regionPath: "nrw", districtPath: "koln", cityPath: "monschau",
+        hiddenFromList: true, showMore: true,
+        fotoCard: "Germany/nrw/koln/Aachen/monschau/tuchmacherbrunnen/001.jpg",
+        coord: { lat: 50.55492, lng: 6.24160 },
+        translations: {
+            ru: {
+                name: "Фонтан ткачей в Моншау",
+                location: "Моншау, Германия",
+                short_description: "Фонтан ткачей – небольшой тематический фонтан в историческом центре Моншау. Фонтан посвящён традициям ткачества и текстильному прошлому города. Скульптурная композиция показывает ремесленный труд, благодаря которому Моншау стал известным центром производства сукна в XVIII веке. Сегодня фонтан – атмосферный элемент старого города и интересная остановка во время прогулки.",
+                full_description: {
+                    title: "Описание и история",
+                    items: [
+                        { bold: "Фонтан ткачей в Моншау (Tuchmacherbrunnen Monschau)", text: "– небольшой тематический фонтан в историческом центре Моншау, отражающий текстильное прошлое города. Он расположен среди фахверковых домов и гармонично вписывается в атмосферу старого города." },
+                        { text: "Композиция фонтана посвящена ремеслу ткачества: скульптурные элементы показывают процесс изготовления тканей и труд ремесленников, благодаря которым Моншау в XVIII веке стал известным центром производства сукна." },
+                        { text: "Фонтан символизирует промышленную историю города и не является музейной экспозицией. Сегодня это атмосферный элемент старого города и интересная остановка во время прогулки." },
+                        { bold: "История", text: "В XVIII веке Моншау переживал экономический расцвет благодаря текстильной промышленности. Производство сукна стало основой благосостояния города, а местные фабриканты и ткачи играли ключевую роль в его развитии." },
+                        { text: "Особо известна деятельность семьи Шайблер, которая превратила Моншау в один из значимых центров текстильной индустрии региона." },
+                        { text: "Фонтан был создан как символ уважения к этому периоду и людям, чьим трудом формировалась экономика города. Он остаётся визуальным напоминанием о ремесленном прошлом Моншау." }
+                    ]
+                },
+                interestingFacts: {
+                    title: "Интересные факты",
+                    isList: true,
+                    items: [
+                        { text: "Фонтан тематически связан с промышленной историей города, а не с религией или политикой, что редкость для старых городов Германии." },
+                        { text: "Композиция показывает сцены ручного ткачества, отражая работу ремесленников XVIII века." },
+                        { text: "Предположительно, фонтан был установлен в XX веке в рамках благоустройства исторического центра Моншау." }
+                    ]
+                },
+                meta: {
+                    title: "Фонтан ткачей в Моншау – текстильная история",
+                    description: "Небольшой фонтан в Моншау, символ текстильного прошлого города.",
+                    ogTitle: "Фонтан ткачей в Моншау – Tuchmacherbrunnen",
+                    ogDescription: "Исторический фонтан в Моншау, посвящённый ткачеству и текстильной индустрии города.",
+                    keywords: "моншау достопримечательности, фонтан ткачей, германия, текстильная история, суконное производство, что посмотреть моншау, старый город моншау, достопримечательности германии, туризм моншау",
+                    ogImage: "https://our-travels.info/foto/Germany/nrw/koln/Aachen/monschau/tuchmacherbrunnen/001.jpg"
+                }
+            },
+            ua: {
+                name: "Фонтан ткачів у Моншау",
+                location: "Моншау, Німеччина",
+                short_description: "Фонтан ткачів – невеликий тематичний фонтан у історичному центрі Моншау. Фонтан присвячений традиціям ткацтва та текстильному минулому міста. Скульптурна композиція показує ремісничу працю, завдяки якій Моншау став відомим центром виробництва сукна у XVIII столітті. Сьогодні фонтан є атмосферним елементом старого міста та цікавою зупинкою під час прогулянки.",
+                full_description: {
+                    title: "Опис та історія",
+                    items: [
+                        { bold: "Фонтан ткачів у Моншау (Tuchmacherbrunnen Monschau)", text: "– невеликий тематичний фонтан у історичному центрі Моншау, що відображає текстильне минуле міста. Він розташований серед фахверкових будинків та гармонійно вписується в атмосферу старого міста." },
+                        { text: "Композиція фонтану присвячена ремеслу ткацтва: скульптурні елементи показують процес виготовлення тканин та працю ремісників, завдяки яким Моншау у XVIII столітті став відомим центром виробництва сукна." },
+                        { text: "Фонтан символізує промислову історію міста і не є музейною експозицією. Сьогодні він слугує атмосферним елементом старого міста та цікавою зупинкою під час прогулянки." },
+                        { bold: "Історія", text: "У XVIII столітті Моншау переживав економічний розквіт завдяки текстильній промисловості. Виробництво сукна стало основою добробуту міста, а місцеві фабриканти та ткачі відігравали ключову роль у його розвитку." },
+                        { text: "Особливо відома діяльність родини Шайблер, яка перетворила Моншау на один із важливих центрів текстильної індустрії регіону." },
+                        { text: "Фонтан було створено як символ пошани до цього періоду та людей, чиєю працею формувалася економіка міста. Він залишається візуальним нагадуванням про ремісниче минуле Моншау." }
+                    ]
+                },
+                interestingFacts: {
+                    title: "Цікаві факти",
+                    isList: true,
+                    items: [
+                        { text: "Фонтан тематично пов'язаний із промисловою історією міста, а не з релігією чи політикою, що є рідкістю для старих міст Німеччини." },
+                        { text: "Композиція показує сцени ручного ткацтва, відображаючи працю ремісників XVIII століття." },
+                        { text: "Ймовірно, фонтан було встановлено у XX столітті в рамках благоустрою історичного центру Моншау. (Факт не перевірено)" }
+                    ]
+                },
+                meta: {
+                    title: "Фонтан ткачів у Моншау – текстильна історія",
+                    description: "Невеликий фонтан у Моншау, символ текстильного минулого міста.",
+                    ogTitle: "Фонтан ткачів у Моншау – Tuchmacherbrunnen",
+                    ogDescription: "Історичний фонтан у Моншау, присвячений ткацтву та текстильній індустрії міста.",
+                    keywords: "моншау визначні місця, фонтан ткачів, німеччина, текстильна історія, виробництво сукна, що подивитися моншау, старе місто моншау, визначні місця німеччини, туризм моншау",
+                    ogImage: "https://our-travels.info/foto/Germany/nrw/koln/Aachen/monschau/tuchmacherbrunnen/001.jpg"
+                }
+            },
+            de: {
+                name: "Tuchmacherbrunnen in Monschau",
+                location: "Monschau, Deutschland",
+                short_description: "Der Tuchmacherbrunnen ist ein kleiner thematischer Brunnen im historischen Zentrum von Monschau. Der Brunnen ist den Traditionen der Weberei und der textilen Vergangenheit der Stadt gewidmet. Die Skulpturkomposition zeigt die handwerkliche Arbeit, durch die Monschau im 18. Jahrhundert zu einem bekannten Zentrum der Tuchproduktion wurde. Heute ist der Brunnen ein atmosphärisches Element der Altstadt und eine interessante Station während eines Spaziergangs.",
+                full_description: {
+                    title: "Beschreibung und Geschichte",
+                    items: [
+                        { bold: "Tuchmacherbrunnen in Monschau (Tuchmacherbrunnen Monschau)", text: "– ein kleiner thematischer Brunnen im historischen Zentrum von Monschau, der die textile Vergangenheit der Stadt widerspiegelt. Er befindet sich zwischen Fachwerkhäusern und fügt sich harmonisch in die Atmosphäre der Altstadt ein." },
+                        { text: "Die Komposition des Brunnens ist dem Handwerk der Weberei gewidmet: Skulpturelemente zeigen den Herstellungsprozess von Stoffen und die Arbeit der Handwerker, durch die Monschau im 18. Jahrhundert zu einem bekannten Zentrum der Tuchproduktion wurde." },
+                        { text: "Der Brunnen symbolisiert die industrielle Geschichte der Stadt und ist keine Museumsausstellung. Heute dient er als atmosphärisches Element der Altstadt und als interessante Station während eines Spaziergangs." },
+                        { bold: "Geschichte", text: "Im 18. Jahrhundert erlebte Monschau dank der Textilindustrie eine wirtschaftliche Blüte. Die Tuchproduktion bildete die Grundlage für den Wohlstand der Stadt, und lokale Fabrikanten und Weber spielten eine Schlüsselrolle in ihrer Entwicklung." },
+                        { text: "Besonders bekannt ist die Tätigkeit der Familie Schäibler, die Monschau zu einem der bedeutendsten Zentren der Textilindustrie der Region machte." },
+                        { text: "Der Brunnen wurde als Symbol der Wertschätzung für diese Periode und die Menschen, deren Arbeit die Wirtschaft der Stadt prägte, geschaffen. Er bleibt eine visuelle Erinnerung an die handwerkliche Vergangenheit Monschaus." }
+                    ]
+                },
+                interestingFacts: {
+                    title: "Interessante Fakten",
+                    isList: true,
+                    items: [
+                        { text: "Der Brunnen ist thematisch mit der Industriegeschichte der Stadt verbunden und nicht mit Religion oder Politik, was für alte deutsche Städte selten ist." },
+                        { text: "Die Komposition zeigt Szenen des Handwebens und reflektiert die Arbeit der Handwerker im 18. Jahrhundert." },
+                        { text: "Vermutlich wurde der Brunnen im 20. Jahrhundert im Rahmen der Gestaltung des historischen Stadtzentrums von Monschau aufgestellt. (Fakt nicht geprüft)" }
+                    ]
+                },
+                meta: {
+                    title: "Tuchmacherbrunnen in Monschau – Textile Geschichte",
+                    description: "Kleiner Brunnen in Monschau, Symbol der textilen Vergangenheit der Stadt.",
+                    ogTitle: "Tuchmacherbrunnen in Monschau – Tuchmacherbrunnen",
+                    ogDescription: "Historischer Brunnen in Monschau, der dem Handwerk der Weberei und der Textilindustrie der Stadt gewidmet ist.",
+                    keywords: "monschau sehenswürdigkeiten, tuchmacherbrunnen, deutschland, textile geschichte, stoffproduktion, was man in monschau sehen kann, altstadt monschau, sehenswürdigkeiten deutschland, tourismus monschau",
+                    ogImage: "https://our-travels.info/foto/Germany/nrw/koln/Aachen/monschau/tuchmacherbrunnen/001.jpg"
+                }
+            }
+        }
+    },
+
+
 ]
 
 export default datas;

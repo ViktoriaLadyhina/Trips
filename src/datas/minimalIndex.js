@@ -22,7 +22,7 @@ const datas =
 
     dusseldorf: { ru: 'Административный округ Дюссельдорф', de: 'Regierungsbezirk Düsseldorf', ua: 'Адміністративний округ Дюссельдорф' },
     mettmann: { ru: 'Район Меттман', de: 'Kreis Mettmann', ua: 'Район Меттман' },
-    
+
     koln: { ru: 'Административный округ Кёльн', de: 'Regierungsbezirk Köln', ua: 'Адміністративний округ Кельн' },
     rheinErft: { ru: 'Район Рейн-Эрфт', de: 'Rhein-Erft-Kreis', ua: 'Район Рейн-Ерфт' },
     aachen: { ru: 'Район Аахен', de: 'Kreis Aachen', ua: 'Район Аахен' },
@@ -87,6 +87,12 @@ const datas =
     gustav_selve_altena: { ru: 'Памятник Густаву Сельве', de: 'Gustav-Selve-Denkmal', ua: 'Пам’ятник Густаву Сельве' },
     st_matthaeus_church_altena: { ru: 'Приходская церковь Святого Матфея', de: 'Katholische Pfarrkirche St. Matthäus', ua: 'Парафіяльна церква Святого Матвія' },
 
+    // Düsseldorf okrug
+    // край mettmann 
+    // velbert
+    langenberg_altstadt_velbert: { ru: 'Старый город Лангенберг', de: 'Altstadt Langenberg', ua: 'Старе місто Лангенберг' },
+
+    // Köln okrug
     //Köln-city
     cologne_cathedral: { ru: 'Кёльнский собор', de: 'Kölner Dom', ua: 'Кельнський собор' },
     rathaus_koln: { ru: 'Кёльнская ратуша', de: 'Kölner Rathaus', ua: 'Кельнська ратуша' },
@@ -125,7 +131,6 @@ const datas =
     fischmarkt_koln: { ru: 'Фишмаркт', de: 'Fischmarkt', ua: 'Фішмаркт' },
     st_gereon_koln: { ru: 'Церковь Святого Гереона', de: 'St. Gereon Kirche', ua: 'Церква Святого Герєона' },
 
-    // Köln okrug
     // Aachen Kreis
     // Monschau
     historic_center_monschau: { ru: 'Старый город Моншау', de: 'Altstadt Monschau', ua: 'Старе місто Моншау' },

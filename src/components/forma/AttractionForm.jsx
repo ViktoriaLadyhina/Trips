@@ -374,6 +374,7 @@ const AttractionForm = () => {
             {watchedFields.country === "germany" && watchedFields.region === "nrw" && (
               <>
                 <option value="arnsberg">Арнсберг</option>
+                <option value="dusseldorf">Дюссельдорф</option>
                 <option value="koln">Кельн</option>
                 <option value="city">Город обласного значения</option>
               </>
@@ -403,6 +404,11 @@ const AttractionForm = () => {
                 <option value="luedenscheid">Люденшайд</option>
                 <option value="altena">Альтена</option>
                 <option value="iserlohn">Изерлон</option>
+              </>
+            )}
+            {watchedFields.country === "germany" && watchedFields.district === "dusseldorf" && (
+              <>
+                <option value="velbert">Вельберт</option>
               </>
             )}
             {watchedFields.country === "germany" && watchedFields.district === "koln" && (
