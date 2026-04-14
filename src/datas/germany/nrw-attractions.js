@@ -895,7 +895,7 @@ const datas = [
         translations: {
             ru: {
                 name: "Старый город Лангенберг",
-                location: "Вельберт-Лангенберг, Германия",
+                location: "Фельберт-Лангенберг, Германия",
                 short_description: "Старый город Лангенберг – один из наиболее хорошо сохранившихся исторических центров региона, известный фахверковой архитектурой, узкими улочками и атмосферой старинного торгово-ремесленного города.",
                 full_description: {
                     title: "Описание и история",
@@ -931,7 +931,7 @@ const datas = [
             },
             ua: {
                 name: "Старе місто Лангенберг",
-                location: "Вельберт-Лангенберг, Німеччина",
+                location: "Фельберт-Лангенберг, Німеччина",
                 short_description: "Старе місто Лангенберг – один із найкраще збережених історичних центрів регіону, відомий фахверковою архітектурою, вузькими вуличками та атмосферою старовинного торговельно-ремісничого міста.",
                 full_description: {
                     title: "Опис та історія",
@@ -999,6 +999,157 @@ const datas = [
                     ogDescription: "Fachwerkhäuser, enge Gassen und die Atmosphäre einer echten historischen deutschen Stadt in Velbert-Langenberg.",
                     keywords: "Velbert Langenberg, Altstadt, historische Stadt Deutschland, Fachwerk, NRW, historisches Zentrum, Alte Kirche Langenberg, Ruhrgebiet, historic town Germany, Langenberg, Sehenswürdigkeit",
                     ogImage: "https://our-travels.info/foto/Germany/nrw/dusseldorf/mettmann/velbert/langenberg_altstadt/007.jpg"
+                }
+            }
+        }
+    },
+    {
+        id: "langenberg_burgerhaus_velbert",
+        type: ["historical_building"], rating: "local",
+        path: "langenberg_burgerhaus_velbert",
+        countryPath: "germany", regionPath: "nrw", districtPath: "dusseldorf", cityPath: "velbert",
+        fotoCard: "Germany/nrw/dusseldorf/mettmann/velbert/burgerhaus/001.jpg",
+        coord: { lat: 51.351134259738515, lng: 7.119479252760554 },
+        translations: {
+            ru: {
+                name: "Исторический общественный дом Лангенберга ",
+                location: "Фельберт-Лангенберг, Германия",
+                short_description: "Исторический общественный дом Лангенберга – монументальное историческое здание в районе Лангеберг города Фельберт. Оно было построено как общественный дар для жителей и сегодня используется как культурный центр для концертов, мероприятий и общественных встреч.",
+                full_description: {
+                    title: "Описание и история",
+                    items: [
+                        { bold: "Исторический общественный дом Лангенберга (Historisches Bürgerhaus Langenberg)", text: "было задумано как многофункциональное здание для культуры, образования и общественной жизни. Оно расположено в исторической части Лангенберга и является одной из ключевых архитектурных доминант района." },
+                        { text: "Здание было построено в монументальном стиле с элементами позднего историзма и региональной архитектуры. Благодаря сложному рельефу участка архитекторы создали многоуровневую структуру, которая органично вписалась в склон холма." },
+                        { text: "Сегодня общественный дом Лангенберга активно используется для концертов, театральных постановок, выставок и общественных мероприятий. Оно остаётся важным центром культурной жизни района и одной из самых узнаваемых исторических построек Лангенберга." },
+                        { bold: "История", text: "История здания начинается в начале XX века, когда в Лангенберге усилилась роль промышленности и выросло благосостояние местных предпринимателей. В 1913 году супруги Адальберт и Софи Колсман (урождённая Фельдхофф), представители семьи местных фабрикантов, профинансировали строительство здания и передали средства городу с условием создания общественного дома для жителей." },
+                        { text: "Проект был разработан архитектором Арно Эугeном Фриче (Arno Fritsche). Строительство началось в 1913 году и завершилось в 1916 году, несмотря на задержки, связанные с Первой мировой войной." },
+                        { text: "Во время Второй мировой войны здание использовалось временно как лазарет и было частично повреждено. После войны оно было восстановлено и продолжило функционировать как общественное пространство. В 1982 году объект получил статус памятника архитектуры." },
+                        { text: "С 2006 по 2016 год общественный дом Лангенберга находился на масштабной реставрации, после чего было вновь открыто для публики." }
+                    ]
+                },
+                tickets_and_entry: {
+                    title: "Практическая информация",
+                    items: [
+                        { bold: "Адрес:", text: "Hauptstraße 64, Langenberg, Velbert" },
+                        { bold: "Вход:", text: "зависит от события. Посещение доступно во время мероприятий." }
+                    ]
+                },
+                interestingFacts: {
+                    title: "Интересные факты",
+                    isList: true,
+                    items: [
+                        { text: "Здание было подарено городу как акт благотворительности семьи Колсман" },
+                        { text: "С момента основания задумывалось как центр культуры, спорта и образования" },
+                        { text: "Во время войны использовалось как госпиталь" },
+                        { text: "Реставрация 2006–2016 годов длилась около 10 лет" },
+                        { text: "Сегодня здесь проходят концерты с использованием исторического зала и восстановленной архитектуры" },
+                        { text: "Архитектура сочетает монументальный стиль и региональные элементы Рейнской области" }
+                    ]
+                },
+                construction_period: "1913-1916 (строительство) ",
+                architects: "Арно Фриче (Arno Fritsche)",
+                founder: "супруги Адальберт и Софи Колсман (урождённая Фельдхофф)",
+                meta: {
+                    title: "Исторический общественный дом Лангенберга (Historisches Bürgerhaus Langenberg in Velbert) ",
+                    description: "Исторический общественный дом Лангенберга в Фельберте: построен в 1913–1916 годах, культурный центр с мероприятиями, историей и архитектурным наследием.",
+                    ogTitle: "Исторический общественный дом Лангенберга – Фельберт",
+                    ogDescription: "Исторический общественный дом Лангенберга: основан как благотворительный проект семьи Колсман, сегодня культурный центр в сердце Фельберта.",
+                    keywords: "Исторический общественный дом Лангенберга, Фельберт, история Лангенберга, Арно Фритше, фонд Колсман, культурный центр Велберт, исторические здания NRW, Bürgerhaus Лангенберг, достопримечательность",
+                    ogImage: "https://our-travels.info/foto/Germany/nrw/dusseldorf/mettmann/velbert/burgerhaus/001.jpg"
+                }
+            },
+            ua: {
+                name: "Історичний громадський будинок Лангенберга",
+                location: "Фельберт-Лангенберг, Німеччина",
+                short_description: "Історичний громадський будинок Лангенберга – монументальна історична будівля в районі Лангенберг міста Фельберт. Вона була побудована як громадський дар для мешканців і сьогодні використовується як культурний центр для концертів, заходів і громадських зустрічей.",
+                full_description: {
+                    title: "Опис і історія",
+                    items: [
+                        { bold: "Історичний громадський будинок Лангенберга (Historisches Bürgerhaus Langenberg)", text: "був задуманий як багатофункціональна будівля для культури, освіти та громадського життя. Він розташований в історичній частині Лангенберга і є однією з ключових архітектурних домінант району." },
+                        { text: "Будівля була зведена в монументальному стилі з елементами пізнього історизму та регіональної архітектури. Завдяки складному рельєфу ділянки архітектори створили багаторівневу структуру, яка органічно вписалася у схил пагорба." },
+                        { text: "Сьогодні громадський будинок Лангенберга активно використовується для концертів, театральних постановок, виставок і громадських заходів. Він залишається важливим центром культурного життя району і однією з найвпізнаваніших історичних будівель Лангенберга." },
+                        { bold: "Історія", text: "Історія будівлі починається на початку XX століття, коли в Лангенберзі посилилася роль промисловості та зросло добробут місцевих підприємців. У 1913 році подружжя Адальберт і Софі Колсман (уроджена Фельдхофф), представники родини місцевих фабрикантів, профінансували будівництво будівлі та передали кошти місту з умовою створення громадського будинку для мешканців." },
+                        { text: "Проєкт був розроблений архітектором Арно Еугеном Фріче (Arno Fritsche). Будівництво розпочалося у 1913 році та завершилося у 1916 році, попри затримки, пов’язані з Першою світовою війною." },
+                        { text: "Під час Другої світової війни будівля тимчасово використовувалася як лазарет і була частково пошкоджена. Після війни її відновили, і вона продовжила функціонувати як громадський простір. У 1982 році об’єкт отримав статус пам’ятки архітектури." },
+                        { text: "З 2006 по 2016 рік громадський будинок Лангенберга перебував на масштабній реставрації, після чого був знову відкритий для відвідувачів." }
+                    ]
+                },
+                tickets_and_entry: {
+                    title: "Практична інформація",
+                    items: [
+                        { bold: "Адреса:", text: "Hauptstraße 64, Langenberg, Velbert" },
+                        { bold: "Вхід:", text: "залежить від події. Відвідування доступне під час заходів." }
+                    ]
+                },
+                interestingFacts: {
+                    title: "Цікаві факти",
+                    isList: true,
+                    items: [
+                        { text: "Будівлю було подаровано місту як акт благодійності родини Колсман" },
+                        { text: "З моменту заснування вона задумувалася як центр культури, спорту та освіти" },
+                        { text: "Під час війни використовувалася як госпіталь" },
+                        { text: "Реставрація 2006–2016 років тривала близько 10 років" },
+                        { text: "Сьогодні тут проходять концерти з використанням історичної зали та відновленої архітектури" },
+                        { text: "Архітектура поєднує монументальний стиль і регіональні елементи Рейнської області" }
+                    ]
+                },
+                construction_period: "1913-1916 (будівництво)",
+                architects: "Арно Фріче (Arno Fritsche)",
+                founder: "подружжя Адальберт і Софі Колсман (уроджена Фельдхофф)",
+                meta: {
+                    title: "Історичний громадський будинок Лангенберга (Historisches Bürgerhaus Langenberg in Velbert)",
+                    description: "Історичний громадський будинок Лангенберга у Фельберті: побудований у 1913–1916 роках, культурний центр з подіями, історією та архітектурною спадщиною.",
+                    ogTitle: "Історичний громадський будинок Лангенберга – Фельберт",
+                    ogDescription: "Історичний громадський будинок Лангенберга: заснований як благодійний проєкт родини Колсман, сьогодні культурний центр у серці Фельберта.",
+                    keywords: "Історичний громадський будинок Лангенберга, Фельберт, історія Лангенберга, Арно Фріче, фонд Колсман, культурний центр Велберт, історичні будівлі NRW, Bürgerhaus Лангенберг, визначна пам’ятка",
+                    ogImage: "https://our-travels.info/foto/Germany/nrw/dusseldorf/mettmann/velbert/burgerhaus/001.jpg"
+                }
+            },
+            de: {
+                name: "Historisches Bürgerhaus Langenberg",
+                location: "Velbert-Langenberg, Deutschland",
+                short_description: "Das Historische Bürgerhaus Langenberg ist ein monumentales historisches Gebäude im Stadtteil Langenberg der Stadt Velbert. Es wurde als Geschenk für die Bürger errichtet und wird heute als Kulturzentrum für Konzerte, Veranstaltungen und gesellschaftliche Treffen genutzt.",
+                full_description: {
+                    title: "Beschreibung und Geschichte",
+                    items: [
+                        { bold: "Historisches Bürgerhaus Langenberg", text: "wurde als multifunktionales Gebäude für Kultur, Bildung und das gesellschaftliche Leben konzipiert. Es befindet sich im historischen Teil von Langenberg und gehört zu den wichtigsten architektonischen Dominanten des Stadtteils." },
+                        { text: "Das Gebäude wurde im monumentalen Stil mit Elementen des späten Historismus und der regionalen Architektur errichtet. Aufgrund der schwierigen Hanglage entwickelten die Architekten eine mehrstufige Struktur, die sich harmonisch in den Hang einfügt." },
+                        { text: "Heute wird das Bürgerhaus Langenberg aktiv für Konzerte, Theateraufführungen, Ausstellungen und gesellschaftliche Veranstaltungen genutzt. Es bleibt ein wichtiger Mittelpunkt des kulturellen Lebens und eines der bekanntesten historischen Gebäude in Langenberg." },
+                        { bold: "Geschichte", text: "Die Geschichte des Gebäudes beginnt zu Beginn des 20. Jahrhunderts, als in Langenberg die Industrie an Bedeutung gewann und der Wohlstand der lokalen Unternehmer wuchs. Im Jahr 1913 finanzierten die Eheleute Adalbert und Sophie Colsman (geb. Feldhoff), Mitglieder einer lokalen Fabrikantenfamilie, den Bau des Gebäudes und stellten der Stadt Mittel mit der Auflage zur Verfügung, ein Bürgerhaus für die Bevölkerung zu errichten." },
+                        { text: "Der Entwurf wurde vom Architekten Arno Eugen Fritsche (Arno Fritsche) erstellt. Der Bau begann 1913 und wurde 1916 trotz Verzögerungen durch den Ersten Weltkrieg abgeschlossen." },
+                        { text: "Während des Zweiten Weltkriegs wurde das Gebäude zeitweise als Lazarett genutzt und teilweise beschädigt. Nach dem Krieg wurde es wiederhergestellt und weiterhin als öffentlicher Raum genutzt. Im Jahr 1982 erhielt das Gebäude den Status eines Denkmals." },
+                        { text: "Von 2006 bis 2016 wurde das Bürgerhaus Langenberg umfassend restauriert und anschließend wieder für die Öffentlichkeit geöffnet." }
+                    ]
+                },
+                tickets_and_entry: {
+                    title: "Praktische Informationen",
+                    items: [
+                        { bold: "Adresse:", text: "Hauptstraße 64, Langenberg, Velbert" },
+                        { bold: "Eintritt:", text: "abhängig von der Veranstaltung. Besuch während der Events möglich." }
+                    ]
+                },
+                interestingFacts: {
+                    title: "Interessante Fakten",
+                    isList: true,
+                    items: [
+                        { text: "Das Gebäude wurde der Stadt als Wohltätigkeit der Familie Colsman geschenkt" },
+                        { text: "Seit seiner Gründung war es als Zentrum für Kultur, Sport und Bildung geplant" },
+                        { text: "Während des Krieges wurde es als Lazarett genutzt" },
+                        { text: "Die Restaurierung von 2006 bis 2016 dauerte etwa 10 Jahre" },
+                        { text: "Heute finden hier Konzerte im historischen Saal mit restaurierter Architektur statt" },
+                        { text: "Die Architektur verbindet monumentalen Stil mit regionalen Elementen des Rheinlands" }
+                    ]
+                },
+                construction_period: "1913-1916 (Bau)",
+                architects: "Arno Fritsche (Arno Eugen Fritsche)",
+                founder: "Ehepaar Adalbert und Sophie Colsman (geb. Feldhoff)",
+                meta: {
+                    title: "Historisches Bürgerhaus Langenberg (Velbert)",
+                    description: "Historisches Bürgerhaus Langenberg in Velbert: erbaut 1913–1916, Kulturzentrum mit Veranstaltungen, Geschichte und historischer Architektur.",
+                    ogTitle: "Historisches Bürgerhaus Langenberg – Velbert",
+                    ogDescription: "Historisches Bürgerhaus Langenberg: als wohltätiges Projekt der Familie Colsman gegründet, heute Kulturzentrum im Herzen von Velbert.",
+                    keywords: "Historisches Bürgerhaus Langenberg, Velbert, Langenberg Geschichte, Arno Fritsche, Colsman Stiftung, Kulturzentrum Velbert, historische Gebäude NRW, Bürgerhaus Langenberg, Sehenswürdigkeit",
+                    ogImage: "https://our-travels.info/foto/Germany/nrw/dusseldorf/mettmann/velbert/burgerhaus/001.jpg"
                 }
             }
         }

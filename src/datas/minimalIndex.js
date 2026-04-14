@@ -43,7 +43,7 @@ const datas =
     altena: { ru: 'Город Альтена', de: 'Stadt Altena', ua: 'Місто Альтена' },
     iserlohn: { ru: 'Город Изерлон', de: 'Stadt Iserlohn', ua: 'Місто Ізерлон' },
 
-    velbert: { ru: 'Город Вельберт', de: 'Stadt Velbert', ua: 'Місто Вельберт' },
+    velbert: { ru: 'Город Фельберт', de: 'Stadt Velbert', ua: 'Місто Фельберт' },
 
     trier: { ru: 'Город Трир', de: 'Stadt Trier', ua: 'Місто Трір' },
     saarburg: { ru: 'Город Саарбург', de: 'Stadt Saarburg', ua: 'Місто Саарбург' },
@@ -91,6 +91,7 @@ const datas =
     // край mettmann 
     // velbert
     langenberg_altstadt_velbert: { ru: 'Старый город Лангенберг', de: 'Altstadt Langenberg', ua: 'Старе місто Лангенберг' },
+    langenberg_burgerhaus_velbert: { ru: 'Исторический общественный дом Лангенберга', de: 'Historisches Bürgerhaus Langenberg', ua: 'Історичний громадський будинок Лангенберга' },
 
     // Köln okrug
     //Köln-city

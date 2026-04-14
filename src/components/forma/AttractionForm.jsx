@@ -408,7 +408,7 @@ const AttractionForm = () => {
             )}
             {watchedFields.country === "germany" && watchedFields.district === "dusseldorf" && (
               <>
-                <option value="velbert">Вельберт</option>
+                <option value="velbert">Фельберт</option>
               </>
             )}
             {watchedFields.country === "germany" && watchedFields.district === "koln" && (

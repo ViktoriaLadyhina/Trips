@@ -762,7 +762,7 @@ const datas = [
                     { id: 6, name: "Меттман", hasInfo: false },
                     { id: 7, name: "Монхайм-на-Рейне", hasInfo: false },
                     { id: 8, name: "Ратинген", hasInfo: false },
-                    { id: 9, name: "Вельберт", hasInfo: true, path: "velbert" },
+                    { id: 9, name: "Фельберт", hasInfo: true, path: "velbert" },
                     { id: 10, name: "Вюльфрат", hasInfo: false }
                 ]
             },
@@ -786,7 +786,7 @@ const datas = [
                     { id: 6, name: "Меттман", hasInfo: false },
                     { id: 7, name: "Монгайм-на-Рейні", hasInfo: false },
                     { id: 8, name: "Ратінген", hasInfo: false },
-                    { id: 9, name: "Вельберт", hasInfo: true, path: "velbert" },
+                    { id: 9, name: "Фельберт", hasInfo: true, path: "velbert" },
                     { id: 10, name: "Вюльфрат", hasInfo: false }
                 ]
             },
