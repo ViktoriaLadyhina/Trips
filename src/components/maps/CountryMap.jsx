@@ -4,6 +4,7 @@ import UkraineMap from './ukraine/Ukraine';
 import NRWMap from './germany/NRWMap';
 import NRWKolnMap from './germany/NRWKolnMap';
 import NRWArnsbergMap from './germany/NRWArnsbergMap'
+import NRWDusseldorfMap from './germany/NRWDussMap'
 import RheinlandPfalzMap from './germany/RPMap';
 
 import luxembourgMap from './luxembourg/luxembourg';
@@ -15,6 +16,7 @@ const maps = {
       region: NRWMap,
       koln: NRWKolnMap,
       arnsberg: NRWArnsbergMap,
+      dusseldorf: NRWDusseldorfMap,
     },
     rheinland_pfalz: {
       region: RheinlandPfalzMap
