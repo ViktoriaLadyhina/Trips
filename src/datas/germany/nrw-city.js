@@ -274,6 +274,7 @@ const datas = [
             }
         }
     },
+    // Dortmund-city
     {
         id: "dortmund",
         path: "dortmund",
@@ -470,869 +471,6 @@ const datas = [
                     ogTitle: "Dortmund – Informationen über die Stadt",
                     ogDescription: "Detaillierte Informationen über Dortmund: Geschichte, Kultur, bekannte Persönlichkeiten und interessante Fakten.",
                     ogImage: "https://our-travels.info/foto/Germany/nrw/dortmund/dortmund-city/phoenix-see/001.jpg"
-                }
-            }
-        }
-    },
-
-    // Köln округ
-    // аахен
-    {
-        id: "monschau",
-        path: "monschau",
-        countryPath: "germany", regionPath: "nrw", districtPath: "koln", subRegionPath: "aachen",
-        gerb: "Germany/nrw/koln/Aachen/monschau/gerb.png",
-        coord: { lat: 50.5545, lng: 6.2408 },
-        translations: {
-            ru: {
-                name: 'Моншау',
-                subRegionName: "Аахен",
-                desc: {
-                    general: [{ text: 'Моншау (нем. Monschau) расположен в западной части Германии, в регионе Айфель земли Северный Рейн-Вестфалия, недалеко от границы с Бельгией. Город известен своей исторической архитектурой, уютными улочками с фахверковыми домами и живописными видами на реку Рур.' },],
-                    population: [{ bold: 'Население', text: ' города составляет около 13 000 человек (по состоянию на 31 декабря 2024 года).' }],
-                    area: [{ bold: 'Площадь:', text: ' муниципалитета составляет около 110 км². Значительная часть территории занята лесами, природными парками и реками.' }],
-                    postalCode: [{ bold: 'Почтовые индексы:', text: ' 52156' }],
-                    phone: [{ bold: 'Телефонный код:', text: ' +49 2472' }],
-                    officialSite: [{ bold: 'Официальный сайт Моншау', link: 'https://www.monschau.de/' }],
-                    education: [{ bold: 'Система образования', text: ' – в городе есть начальные школы, одна средняя школа (Gesamtschule) и специализированные учебные заведения в округе. Для получения высшего образования жители обычно обращаются в университеты и высшие школы прикладных наук (Fachhochschule) соседних городов.' }],
-                    culture: [{ bold: 'Культурные активности', text: ' – Моншау славится фестивалями, рождественскими ярмарками, выставками и мероприятиями на свежем воздухе. Туристов привлекают мастерские ремесленников, музеи и прогулки вдоль старинных улиц.' }],
-                },
-                geography: {
-                    title: 'География',
-                    items: [
-                        { text: 'Моншау расположен в долине реки Рур и окружён холмами Айфеля. Рельеф пересечённый, улицы извилистые, перепады высот заметны в историческом центре. Средняя отметка города около 300 м над уровнем моря.' },
-                        { bold: 'Природа и геология', text: 'Регион характеризуется породами девонского периода, многочисленными лесными массивами и реками, формирующими живописный ландшафт. Район богат на природные тропы и пешеходные маршруты.' },
-                        { bold: 'Близость к границе', text: 'Моншау находится в непосредственной близости от границы с Бельгией, что исторически влияло на торговлю и культурные связи. Туристы могут легко совершать поездки и походы в соседние бельгийские города и лесные массивы Айфеля.' }
-                    ]
-                },
-                notablePeople: {
-                    title: 'Знаменитые люди Моншау',
-                    items: [
-                        { bold: 'Анна Вирц (Anna Wirtz, 1901-1985)', text: ' – местная художница, работавшая в стиле натурализма, чьи работы часто изображали пейзажи Айфеля.' },
-                        { bold: 'Йоханнес Кох (Johannes Koch, 1942-2010)', text: ' – историк региона, автор книг о культуре и ремёслах Моншау.' },
-                        { bold: 'Генрих Штейн (Heinrich Stein, 1870-1952)', text: ' – мастер фахверковой архитектуры, принимавший участие в реставрации исторических домов Моншау.' },
-                        { bold: 'Мария Кляйн (Maria Klein, 1912-1990)', text: ' – местная художница и ремесленница, известная изделиями из дерева и традиционной росписью фасадов фахверковых домов.' }
-                    ]
-                },
-                interestingFacts: {
-                    title: 'Интересные факты',
-                    items: [
-                        { bold: 'Фахверковые дома', text: ' – исторический центр Моншау известен своими деревянными фахверковыми домами XVII-XVIII веков, которые сохраняются до сих пор.' },
-                        { bold: 'Рождественская ярмарка', text: ' – ежегодное событие, собирающее туристов со всей Германии и соседних стран.' },
-                        { bold: 'Малый, но туристически значимый город', text: ' – несмотря на небольшое население, Моншау привлекает множество туристов благодаря своей живописной архитектуре, музеям и природным маршрутам.' },
-                        { bold: 'Природные маршруты', text: ' – Моншау является отправной точкой для многочисленных пешеходных и велосипедных маршрутов по холмам Айфеля, включая живописные тропы вдоль реки Рур и лесные тропы, которые привлекают любителей активного отдыха.' },
-                        { bold: 'Заповедные зоны', text: ' – рядом с городом находятся природные парки и охраняемые территории, где можно наблюдать местную флору и фауну, устраивать пикники и короткие прогулки на свежем воздухе.' }
-                    ]
-                },
-                briefHistory: {
-                    title: 'История',
-                    items: [
-                        { text: 'Моншау впервые упоминается в XI веке как небольшое саксонское поселение в долине Рура. Благодаря удобному расположению на торговых путях между Рейном и регионами Айфеля, город постепенно стал центром местной торговли и ремёсел.' },
-                        { text: 'В средние века Моншау славился ткацкой промышленностью и производством шерсти: городские мастерские поставляли текстиль по всей Западной Германии. Для поддержки торговли строились складские помещения, мосты и узкие мощёные улицы, которые сохранились до наших дней.' },
-                        { text: 'XVII–XVIII века были непростыми: город переживал военные конфликты и эпидемии, но историческая застройка в центре осталась почти нетронутой. Многие фахверковые дома того времени до сих пор активно используются, а их черепичные крыши и резные фасады стали символом Моншау.' },
-                        { text: 'С XIX века город постепенно превращается в туристический центр: живописные улочки, старинные мосты и близость к природным тропам Айфеля привлекали отдыхающих. В этот период открываются гостиницы, кофейни и мастерские ремесленников, формируя туристическую инфраструктуру.' },
-                        { text: 'В XX веке Моншау пережил события Второй мировой войны. Хотя город не был крупным промышленным центром, через регион проходили пути отступления немецкой армии и продвижения союзников. Город подвергался воздушным налётам и артиллерийским обстрелам, но большинство исторических зданий осталось неповреждённым. После войны Моншау быстро восстановился и развился как туристический центр, сохранив культурное наследие и старинную архитектуру.' },
-                        { text: 'Сегодня Моншау сочетает богатую историю с природной красотой: старинная архитектура, музеи, мастерские ремесленников и окружающие леса делают город уникальным примером гармонии культуры и природы в Айфеле. Рождественские ярмарки, фестивали и туристические маршруты привлекают гостей круглый год.' }
-                    ]
-                },
-                meta: {
-                    title: "Моншау – исторический город с фахверковыми домами и природой Айфеля",
-                    description: "Моншау: история, география, знаменитые жители и интересные факты о живописном городе Айфеля в земле Северный Рейн-Вестфалия.",
-                    ogTitle: "Моншау – информация о городе",
-                    ogDescription: "Подробная информация о Моншау: культура, история, выдающиеся личности и уникальная архитектура исторического центра.",
-                    ogImage: "https://our-travels.info/foto/Germany/nrw/koln/Aachen/monschau/002.jpg"
-                }
-            },
-            ua: {
-                name: 'Моншау',
-                subRegionName: "Аахен",
-                desc: {
-                    general: [{ text: 'Моншау (нім. Monschau) розташований у західній частині Німеччини, у регіоні Айфель землі Північний Рейн-Вестфалія, недалеко від кордону з Бельгією. Місто відоме своєю історичною архітектурою, затишними вуличками з фахверковими будинками та мальовничими видами на річку Рур.' }],
-                    population: [{ bold: 'Населення', text: ' міста становить близько 13 000 осіб (станом на 31 грудня 2024 року).' }],
-                    area: [{ bold: 'Площа:', text: ' муніципалітету становить близько 110 км². Значну частину території займають ліси, природні парки та річки.' }],
-                    postalCode: [{ bold: 'Поштові індекси:', text: ' 52156' }],
-                    phone: [{ bold: 'Телефонний код:', text: ' +49 2472' }],
-                    officialSite: [{ bold: 'Офіційний сайт Моншау', link: 'https://www.monschau.de/' }],
-                    education: [{ bold: 'Освітня система', text: ' – у місті є початкові школи, одна середня школа (Gesamtschule) та спеціалізовані навчальні заклади в окрузі. Для отримання вищої освіти мешканці зазвичай звертаються до університетів та вищих шкіл прикладних наук (Fachhochschule) сусідніх міст.' }],
-                    culture: [{ bold: 'Культурні активності', text: ' – Моншау славиться фестивалями, різдвяними ярмарками, виставками та заходами на свіжому повітрі. Туристів приваблюють майстерні ремісників, музеї та прогулянки старовинними вулицями.' }],
-                },
-                geography: {
-                    title: 'Географія',
-                    items: [
-                        { text: 'Моншау розташований у долині річки Рур та оточений пагорбами Айфеля. Рельєф пересічений, вулиці звивисті, перепади висот помітні в історичному центрі. Середня відмітка міста близько 300 м над рівнем моря.' },
-                        { bold: 'Природа та геологія', text: 'Регіон характеризується породами девонського періоду, численними лісовими масивами та річками, які формують мальовничий ландшафт. Район багатий на природні стежки та пішохідні маршрути.' },
-                        { bold: 'Близькість до кордону', text: 'Моншау знаходиться в безпосередній близькості до кордону з Бельгією, що історично впливало на торгівлю та культурні зв’язки. Туристи можуть легко здійснювати поїздки та походи у сусідні бельгійські міста та лісові масиви Айфеля.' }
-                    ]
-                },
-                notablePeople: {
-                    title: 'Відомі люди Моншау',
-                    items: [
-                        { bold: 'Анна Вірц (Anna Wirtz, 1901-1985)', text: ' – місцева художниця, що працювала у стилі натуралізму, чиї роботи часто зображували пейзажі Айфеля.' },
-                        { bold: 'Йоганнес Кох (Johannes Koch, 1942-2010)', text: ' – історик регіону, автор книг про культуру та ремесла Моншау.' },
-                        { bold: 'Генріх Штайн (Heinrich Stein, 1870-1952)', text: ' – майстер фахверкової архітектури, який брав участь у реставрації історичних будинків Моншау.' },
-                        { bold: 'Марія Кляйн (Maria Klein, 1912-1990)', text: ' – місцева художниця та ремісниця, відома виробами з дерева та традиційним розписом фасадів фахверкових будинків.' }
-                    ]
-                },
-                interestingFacts: {
-                    title: 'Цікаві факти',
-                    items: [
-                        { bold: 'Фахверкові будинки', text: ' – історичний центр Моншау відомий своїми дерев’яними фахверковими будинками XVII-XVIII століть, які збереглися до наших днів.' },
-                        { bold: 'Різдвяний ярмарок', text: ' – щорічна подія, що збирає туристів з усієї Німеччини та сусідніх країн.' },
-                        { bold: 'Малий, але туристично значущий місто', text: ' – незважаючи на невелике населення, Моншау приваблює безліч туристів завдяки мальовничій архітектурі, музеям та природним маршрутам.' },
-                        { bold: 'Природні маршрути', text: ' – Моншау є відправною точкою для численних пішохідних та велосипедних маршрутів по пагорбах Айфеля, включаючи мальовничі стежки вздовж річки Рур та лісові маршрути, що приваблюють любителів активного відпочинку.' },
-                        { bold: 'Заповідні зони', text: ' – поруч із містом розташовані природні парки та охоронювані території, де можна спостерігати місцеву флору та фауну, влаштовувати пікніки та короткі прогулянки на свіжому повітрі.' }
-                    ]
-                },
-                briefHistory: {
-                    title: 'Історія',
-                    items: [
-                        { text: 'Моншау вперше згадується у XI столітті як невелике саксонське поселення в долині Рура. Завдяки зручному розташуванню на торгових шляхах між Рейном та регіонами Айфеля, місто поступово стало центром місцевої торгівлі та ремесел.' },
-                        { text: 'У середні віки Моншау славився ткацькою промисловістю та виробництвом вовни: міські майстерні постачали текстиль по всій Західній Німеччині. Для підтримки торгівлі будувалися складські приміщення, мости та вузькі мощені вулиці, які збереглися до наших днів.' },
-                        { text: 'XVII–XVIII століття були непростими: місто переживало військові конфлікти та епідемії, але історична забудова в центрі залишилася майже непошкодженою. Багато фахверкових будинків того часу досі активно використовуються, а їх черепичні дахи та різьблені фасади стали символом Моншау.' },
-                        { text: 'З XIX століття місто поступово перетворюється на туристичний центр: мальовничі вулички, старовинні мости та близькість до природних стежок Айфеля приваблювали відпочивальників. У цей період відкриваються готелі, кав’ярні та майстерні ремісників, формуючи туристичну інфраструктуру.' },
-                        { text: 'У XX столітті Моншау пережив події Другої світової війни. Хоча місто не було великим промисловим центром, через регіон проходили шляхи відступу німецької армії та просування союзників. Місто піддавалося повітряним нальотам та артилерійським обстрілам, але більшість історичних будівель залишилася неушкодженою. Після війни Моншау швидко відновився та розвинувся як туристичний центр, зберігши культурну спадщину та старовинну архітектуру.' },
-                        { text: 'Сьогодні Моншау поєднує багату історію з природною красою: старовинна архітектура, музеї, майстерні ремісників та навколишні ліси роблять місто унікальним прикладом гармонії культури та природи в Айфелі. Різдвяні ярмарки, фестивалі та туристичні маршрути приваблюють гостей цілий рік.' }
-                    ]
-                },
-                meta: {
-                    title: "Моншау – історичне місто з фахверковими будинками та природою Айфеля",
-                    description: "Моншау: історія, географія, відомі жителі та цікаві факти про мальовниче місто Айфеля в землі Північний Рейн-Вестфалія.",
-                    ogTitle: "Моншау – інформація про місто",
-                    ogDescription: "Детальна інформація про Моншау: культура, історія, видатні особистості та унікальна архітектура історичного центру.",
-                    ogImage: "https://our-travels.info/foto/Germany/nrw/koln/Aachen/monschau/002.jpg"
-                }
-            },
-            de: {
-                name: 'Monschau',
-                subRegionName: "Aachen",
-                desc: {
-                    general: [{ text: 'Monschau (dt. Monschau) liegt im Westen Deutschlands, in der Region Eifel des Bundeslandes Nordrhein-Westfalen, in der Nähe der Grenze zu Belgien. Die Stadt ist bekannt für ihre historische Architektur, gemütliche Straßen mit Fachwerkhäusern und malerische Ausblicke auf die Rur.' }],
-                    population: [{ bold: 'Einwohnerzahl', text: ' der Stadt beträgt etwa 13.000 Personen (Stand 31. Dezember 2024).' }],
-                    area: [{ bold: 'Fläche:', text: ' der Gemeinde beträgt etwa 110 km². Ein großer Teil der Fläche ist von Wäldern, Naturparks und Flüssen bedeckt.' }],
-                    postalCode: [{ bold: 'Postleitzahlen:', text: ' 52156' }],
-                    phone: [{ bold: 'Telefonvorwahl:', text: ' +49 2472' }],
-                    officialSite: [{ bold: 'Offizielle Webseite von Monschau', link: 'https://www.monschau.de/' }],
-                    education: [{ bold: 'Bildungssystem', text: ' – In der Stadt gibt es Grundschulen, eine Gesamtschule und spezialisierte Bildungseinrichtungen im Kreis. Für ein Hochschulstudium wenden sich die Bewohner in der Regel an Universitäten und Fachhochschulen der Nachbarstädte.' }],
-                    culture: [{ bold: 'Kulturelle Aktivitäten', text: ' – Monschau ist bekannt für Festivals, Weihnachtsmärkte, Ausstellungen und Veranstaltungen im Freien. Touristen werden von Handwerkswerkstätten, Museen und Spaziergängen durch die historischen Straßen angezogen.' }],
-                },
-                geography: {
-                    title: 'Geografie',
-                    items: [
-                        { text: 'Monschau liegt im Tal der Rur und ist von den Hügeln der Eifel umgeben. Das Gelände ist hügelig, die Straßen sind verwinkelt, und die Höhenunterschiede im historischen Zentrum sind deutlich sichtbar. Die durchschnittliche Höhe der Stadt beträgt etwa 300 m über dem Meeresspiegel.' },
-                        { bold: 'Natur und Geologie', text: 'Die Region ist durch Gesteine des Devon-Zeitalters, zahlreiche Waldgebiete und Flüsse geprägt, die eine malerische Landschaft bilden. Das Gebiet ist reich an Naturpfaden und Wanderwegen.' },
-                        { bold: 'Grenznähe', text: 'Monschau liegt in unmittelbarer Nähe zur Grenze zu Belgien, was historisch den Handel und kulturelle Verbindungen beeinflusste. Touristen können leicht Ausflüge und Wanderungen in die benachbarten belgischen Städte und Waldgebiete der Eifel unternehmen.' }
-                    ]
-                },
-                notablePeople: {
-                    title: 'Berühmte Persönlichkeiten aus Monschau',
-                    items: [
-                        { bold: 'Anna Wirtz (1901-1985)', text: ' – lokale Künstlerin, die im Stil des Naturalismus arbeitete und deren Werke oft Landschaften der Eifel darstellen.' },
-                        { bold: 'Johannes Koch (1942-2010)', text: ' – Regionalhistoriker, Autor von Büchern über die Kultur und das Handwerk von Monschau.' },
-                        { bold: 'Heinrich Stein (1870-1952)', text: ' – Fachwerkarchitekt, der an der Restaurierung historischer Häuser in Monschau beteiligt war.' },
-                        { bold: 'Maria Klein (1912-1990)', text: ' – lokale Künstlerin und Handwerkerin, bekannt für Holzarbeiten und traditionelle Fassadenmalerei an Fachwerkhäusern.' }
-                    ]
-                },
-                interestingFacts: {
-                    title: 'Interessante Fakten',
-                    items: [
-                        { bold: 'Fachwerkhäuser', text: ' – Das historische Zentrum von Monschau ist bekannt für seine hölzernen Fachwerkhäuser aus dem 17.–18. Jahrhundert, die bis heute erhalten sind.' },
-                        { bold: 'Weihnachtsmarkt', text: ' – Jährliches Ereignis, das Touristen aus ganz Deutschland und den Nachbarländern anzieht.' },
-                        { bold: 'Kleine, aber touristisch bedeutende Stadt', text: ' – Trotz der geringen Einwohnerzahl zieht Monschau viele Touristen durch seine malerische Architektur, Museen und Naturwege an.' },
-                        { bold: 'Naturpfade', text: ' – Monschau ist Ausgangspunkt zahlreicher Wander- und Radwege durch die Hügel der Eifel, einschließlich malerischer Pfade entlang der Rur und Waldwege, die Naturliebhaber anziehen.' },
-                        { bold: 'Naturschutzgebiete', text: ' – In der Nähe der Stadt befinden sich Naturparks und geschützte Gebiete, in denen man die lokale Flora und Fauna beobachten, Picknicks veranstalten und kurze Spaziergänge an der frischen Luft unternehmen kann.' }
-                    ]
-                },
-                briefHistory: {
-                    title: 'Geschichte',
-                    items: [
-                        { text: 'Monschau wird erstmals im 11. Jahrhundert als kleines sächsisches Dorf im Rurtal erwähnt. Aufgrund der günstigen Lage an Handelswegen zwischen dem Rhein und den Regionen der Eifel entwickelte sich die Stadt allmählich zum Zentrum des lokalen Handels und Handwerks.' },
-                        { text: 'Im Mittelalter war Monschau für seine Weberei und Wollproduktion bekannt: Die städtischen Werkstätten lieferten Textilien in ganz Westdeutschland. Zur Unterstützung des Handels wurden Lagerhäuser, Brücken und enge gepflasterte Straßen gebaut, die bis heute erhalten sind.' },
-                        { text: 'Die Jahrhunderte XVII–XVIII waren schwierig: Die Stadt erlebte militärische Konflikte und Epidemien, aber die historische Bebauung im Zentrum blieb nahezu unversehrt. Viele Fachwerkhäuser aus dieser Zeit werden noch aktiv genutzt, und ihre Ziegeldächer und geschnitzten Fassaden sind ein Symbol für Monschau.' },
-                        { text: 'Ab dem 19. Jahrhundert verwandelt sich die Stadt allmählich in ein Touristenzentrum: malerische Gassen, alte Brücken und die Nähe zu Naturpfaden der Eifel zogen Urlauber an. In dieser Zeit eröffneten Hotels, Cafés und Handwerkswerkstätten, wodurch die touristische Infrastruktur entstand.' },
-                        { text: 'Im 20. Jahrhundert erlebte Monschau die Ereignisse des Zweiten Weltkriegs. Obwohl die Stadt kein bedeutendes Industriezentrum war, führten Truppenrückzüge der deutschen Armee und das Vorrücken der Alliierten durch die Region. Die Stadt wurde Luftangriffen und Artilleriebeschuss ausgesetzt, aber die meisten historischen Gebäude blieben unbeschädigt. Nach dem Krieg erholte sich Monschau schnell und entwickelte sich als Touristenzentrum weiter, wobei das kulturelle Erbe und die historische Architektur erhalten blieben.' },
-                        { text: 'Heute verbindet Monschau reiche Geschichte mit natürlicher Schönheit: historische Architektur, Museen, Handwerkswerkstätten und die umliegenden Wälder machen die Stadt zu einem einzigartigen Beispiel für die Harmonie von Kultur und Natur in der Eifel. Weihnachtsmärkte, Festivals und Wanderwege ziehen das ganze Jahr über Besucher an.' }
-                    ]
-                },
-                meta: {
-                    title: "Monschau – historische Stadt mit Fachwerkhäusern und Natur der Eifel",
-                    description: "Monschau: Geschichte, Geografie, bekannte Bewohner und interessante Fakten über die malerische Stadt in der Eifel, Bundesland Nordrhein-Westfalen.",
-                    ogTitle: "Monschau – Informationen über die Stadt",
-                    ogDescription: "Detaillierte Informationen über Monschau: Kultur, Geschichte, herausragende Persönlichkeiten und die einzigartige Architektur des historischen Zentrums.",
-                    ogImage: "https://our-travels.info/foto/Germany/nrw/koln/Aachen/monschau/002.jpg"
-                }
-            }
-        }
-    },
-
-    // Rhein-Erft-Kreis
-    {
-        id: "bruhl",
-        path: "bruhl",
-        countryPath: "germany", regionPath: "nrw", districtPath: "koln", subRegionPath: "rhein_erft",
-        gerb: "Germany/nrw/koln/Rhein-Erft-Kreis/bruhl/gerb.png",
-        coord: { lat: 50.8293, lng: 6.9050 },
-        translations: {
-            ru: {
-                name: 'Брюль',
-                subRegionName: "Рейн-Эрфт",
-                desc: {
-                    general: [
-                        { text: 'Город в земле Северный Рейн-Вестфалия' }
-                    ],
-                    population: [
-                        { bold: 'Население:' },
-                        { text: ' 44 260 человек (2010)' }
-                    ],
-                    area: [
-                        { bold: 'Площадь:' },
-                        { text: ' 36,12 км²' }
-                    ],
-                    postalCode: [
-                        { bold: 'Почтовый индекс:' },
-                        { text: ' 50321' }
-                    ],
-                    phone: [
-                        { bold: 'Телефонный код:' },
-                        { text: ' +49 2232' }
-                    ],
-                    officialSite: [
-                        { bold: 'Официальный сайт Брюля', link: 'https://www.bruehl.de' }
-                    ],
-                },
-                interestingFacts: {
-                    title: 'Интересные факты',
-                    items: [
-                        { text: 'Брюль называют "Bruhl bei Köln", так как город находится всего в 15 км от Кёльна.' },
-                        { text: 'Лёгкая доступность: трамвай №18 и пригородные поезда связывают Брюль с Кёльном и Бонном.' },
-                        { text: 'Фантазиаленд – один из крупнейших парков Германии, расположен в Брюле.' }
-                    ]
-                },
-                notablePeople: {
-                    title: 'Знаменитые люди',
-                    items: [
-                        { bold: 'Штеффи Граф', text: ' знаменитая теннисистка, родилась в Брюле. В 1988 году стала почётным гражданином города.' },
-                        { bold: 'Макс Эрнст', text: ' сюрреалистический художник, родившийся в Брюле.' }
-                    ]
-                },
-                briefHistory: {
-                    title: 'Краткая история',
-                    items: [
-                        { text: 'Первое упоминание о Брюле датируется 1180 годом, когда архиепископ Кёльнский Филипп фон Хайнсберг построил манор.' },
-                        { text: 'В 1285 году город получил права города от архиепископа Зигфрида фон Вестербурга.' },
-                        { text: 'С 1469 года Брюль стал официальной резиденцией архиепископов Кёльнских на более чем 150 лет.' }
-                    ]
-                },
-                meta: {
-                    title: "Брюль – город в земле Северный Рейн-Вестфалия",
-                    description: "Брюль: история, достопримечательности, известные люди и интересные факты города.",
-                    ogTitle: "Брюль – информация о городе",
-                    ogDescription: "Подробная информация о Брюле: культура, история, знаменитые жители и интересные факты.",
-                    ogImage: "https://our-travels.info/foto/Germany/nrw/koln/Rhein-Erft-Kreis/bruhl/bruhel_palaces/001.jpg"
-                }
-            },
-            ua: {
-                name: 'Брюль',
-                subRegionName: "Рейн-Ерфт",
-                desc: {
-                    general: [
-                        { text: 'Місто в землі Північний Рейн-Вестфалія' }
-                    ],
-                    population: [
-                        { bold: 'Населення:' },
-                        { text: ' 44 260 осіб (2010)' }
-                    ],
-                    area: [
-                        { bold: 'Площа:' },
-                        { text: ' 36,12 км²' }
-                    ],
-                    postalCode: [
-                        { bold: 'Поштовий індекс:' },
-                        { text: ' 50321' }
-                    ],
-                    phone: [
-                        { bold: 'Телефонний код:' },
-                        { text: ' +49 2232' }
-                    ],
-                    officialSite: [
-                        { bold: 'Офіційний сайт Брюля', link: 'https://www.bruehl.de' }
-                    ],
-                },
-                interestingFacts: {
-                    title: 'Цікаві факти',
-                    items: [
-                        { text: 'Брюль називають "Bruhl bei Köln", оскільки місто розташоване всього за 15 км від Кельна.' },
-                        { text: 'Зручна доступність: трамвай №18 та приміські потяги з’єднують Брюль із Кельном і Бонном.' },
-                        { text: 'Фантазіяленд – один із найбільших парків Німеччини, розташований у Брюлі.' }
-                    ]
-                },
-                notablePeople: {
-                    title: 'Відомі люди',
-                    items: [
-                        { bold: 'Штеффі Граф', text: ' знаменита тенісистка, народилася у Брюлі. У 1988 році стала почесною громадянкою міста.' },
-                        { bold: 'Макс Ернст', text: ' сюрреалістичний художник, який народився у Брюлі.' }
-                    ]
-                },
-                briefHistory: {
-                    title: 'Коротка історія',
-                    items: [
-                        { text: 'Перша згадка про Брюль датується 1180 роком, коли кельнський архієпископ Філіп фон Хайнсберг збудував маєток.' },
-                        { text: 'У 1285 році місто отримало міські права від архієпископа Зігфріда фон Вестербурга.' },
-                        { text: 'З 1469 року Брюль став офіційною резиденцією кельнських архієпископів більш ніж на 150 років.' }
-                    ]
-                },
-                meta: {
-                    title: "Брюль – місто у землі Північний Рейн-Вестфалія",
-                    description: "Брюль: історія, визначні місця, відомі люди та цікаві факти міста.",
-                    ogTitle: "Брюль – інформація про місто",
-                    ogDescription: "Детальна інформація про Брюль: культура, історія, відомі мешканці та цікаві факти.",
-                    ogImage: "https://our-travels.info/foto/Germany/nrw/koln/Rhein-Erft-Kreis/bruhl/bruhel_palaces/001.jpg"
-                }
-            },
-            de: {
-                name: 'Brühl',
-                subRegionName: "Rhein-Erft",
-                desc: {
-                    general: [
-                        { text: 'Stadt im Bundesland Nordrhein-Westfalen' }
-                    ],
-                    population: [
-                        { bold: 'Einwohnerzahl:' },
-                        { text: ' 44.260 Menschen (2010)' }
-                    ],
-                    area: [
-                        { bold: 'Fläche:' },
-                        { text: ' 36,12 km²' }
-                    ],
-                    postalCode: [
-                        { bold: 'Postleitzahl:' },
-                        { text: ' 50321' }
-                    ],
-                    phone: [
-                        { bold: 'Telefonvorwahl:' },
-                        { text: ' +49 2232' }
-                    ],
-                    officialSite: [
-                        { bold: 'Offizielle Website von Brühl', link: 'https://www.bruehl.de' }
-                    ],
-                },
-                interestingFacts: {
-                    title: 'Interessante Fakten',
-                    items: [
-                        { text: 'Brühl wird „Brühl bei Köln“ genannt, da die Stadt nur 15 km von Köln entfernt liegt.' },
-                        { text: 'Gute Erreichbarkeit: Die Straßenbahn Nr. 18 und Regionalzüge verbinden Brühl mit Köln und Bonn.' },
-                        { text: 'Phantasialand – einer der größten Freizeitparks Deutschlands, befindet sich in Brühl.' }
-                    ]
-                },
-                notablePeople: {
-                    title: 'Bekannte Persönlichkeiten',
-                    items: [
-                        { bold: 'Steffi Graf', text: ' berühmte Tennisspielerin, geboren in Brühl. 1988 wurde sie Ehrenbürgerin der Stadt.' },
-                        { bold: 'Max Ernst', text: ' surrealistischer Maler, der in Brühl geboren wurde.' }
-                    ]
-                },
-                briefHistory: {
-                    title: 'Kurze Geschichte',
-                    items: [
-                        { text: 'Die erste Erwähnung von Brühl stammt aus dem Jahr 1180, als der Kölner Erzbischof Philipp von Heinsberg ein Herrenhaus errichtete.' },
-                        { text: 'Im Jahr 1285 erhielt die Stadt Stadtrechte vom Erzbischof Siegfried von Westerburg.' },
-                        { text: 'Ab 1469 wurde Brühl für mehr als 150 Jahre zur offiziellen Residenz der Kölner Erzbischöfe.' }
-                    ]
-                },
-                meta: {
-                    title: "Brühl – Stadt in Nordrhein-Westfalen",
-                    description: "Brühl: Geschichte, Sehenswürdigkeiten, berühmte Persönlichkeiten und interessante Fakten der Stadt.",
-                    ogTitle: "Brühl – Informationen zur Stadt",
-                    ogDescription: "Detaillierte Informationen über Brühl: Kultur, Geschichte, berühmte Einwohner und interessante Fakten.",
-                    ogImage: "https://our-travels.info/foto/Germany/nrw/koln/Rhein-Erft-Kreis/bruhl/bruhel_palaces/001.jpg"
-                }
-            }
-        }
-    },
-    {
-        id: "frechen",
-        path: "frechen",
-        countryPath: "germany", regionPath: "nrw", districtPath: "koln", subRegionPath: "rhein_erft",
-        gerb: "Germany/nrw/koln/Rhein-Erft-Kreis/frechen/gerb.png",
-        coord: { lat: 50.9167, lng: 6.8167 },
-        translations: {
-            ru: {
-                name: 'Фрехен',
-                subRegionName: "Рейн-Эрфт",
-                desc: {
-                    general: [
-                        { text: 'Фрехен – город в земле Северный Рейн-Вестфалия, входящий в район Рейн-Эрфт и расположенный всего в 10 км к западу от Кёльна.' },
-                        { text: ' Город известен своим историческим гончарным производством, промышленным развитием и близостью к Рейнско-Рурскому региону.' }
-                    ],
-                    population: [
-                        { bold: 'Население:' },
-                        { text: ' около 52 000 человек (2025)' }
-                    ],
-                    area: [
-                        { bold: 'Площадь:' },
-                        { text: ' примерно 45,1 км²' }
-                    ],
-                    postalCode: [
-                        { bold: 'Почтовый индекс:' },
-                        { text: ' 50226' }
-                    ],
-                    phone: [
-                        { bold: 'Телефонный код:' },
-                        { text: ' +49 02234' }
-                    ],
-                    officialSite: [
-                        { bold: 'Официальный сайт Фрехена', link: 'https://www.frechen.de/' }
-                    ]
-                },
-                geography: {
-                    title: 'География',
-                    items: [
-                        { text: 'Фрехен расположен на западной окраине Кёльна и является частью агломерации Рейнско-Рурского региона.' },
-                        { text: 'Высота над уровнем моря варьируется от 58 до 158 метров, город находится на склонах возвышенности Вилле (Ville).' },
-                        { text: 'Через город проходят важные транспортные артерии: автомагистрали A1, A4 и A61, что обеспечивает хорошую связь с Кёльном, Бонном и Аахеном.' },
-                        { text: 'Город окружён зелёными зонами и небольшими лесами, а также старыми промышленными карьерами, некоторые из которых превращены в зоны отдыха.' }
-                    ]
-                },
-                notablePeople: {
-                    title: 'Знаменитые люди Фрехена',
-                    items: [
-                        { bold: 'Айо', text: ' – немецко-нигерийская певица и автор песен, родившаяся во Фрехене.' },
-                        { bold: 'Кирстен Болм', text: ' – легкоатлетка, чемпионка Германии в беге с барьерами.' },
-                        { bold: 'Уэйн Карпендейл', text: ' – актёр и телеведущий.' },
-                        { bold: 'Пьер Фогель', text: ' – известный исламский проповедник, выросший во Фрехене.' },
-                        { bold: 'Ханна Мойль', text: ' – профессиональная скалолазка, представительница Германии на международных соревнованиях.' },
-                        { bold: 'Марсель Хеллер', text: ' – немецкий футболист, игравший в Бундеслиге.' },
-                        { bold: 'Зоня Бертрам', text: ' – актриса театра и телевидения.' }
-                    ]
-                },
-                interestingFacts: {
-                    title: 'Интересные факты',
-                    items: [
-                        { text: 'Фрехен известен как «город керамики»: местные мастера прославились своими глиняными изделиями, особенно кувшинами Bartmannskrug («бородатые кувшины»).' },
-                        { text: 'В музее <a href="http://localhost:5173/germany/nrw/koln/frechen/attractions/keramion" target="_blank" rel="noopener noreferrer">Keramion</a> представлена уникальная коллекция керамики и современного искусства, а само здание музея считается архитектурным шедевром модернизма.' },
-                        { text: 'В Средние века фрехенская керамика экспортировалась по всей Европе, особенно в Англию и Нидерланды.' },
-                        { text: 'Фрехен имеет развитую транспортную инфраструктуру и считается удобным городом для ежедневных поездок в Кёльн.' },
-                        { text: 'Многие карьеры бурого угля, действовавшие ранее вокруг города, сегодня превращены в природные и рекреационные зоны.' }
-                    ]
-                },
-                briefHistory: {
-                    title: 'История',
-                    items: [
-                        { text: 'Фрехен впервые упоминается в документах в 877 году, что делает его одним из старейших населённых пунктов региона.' },
-                        { text: 'В средневековье, в 1257 году, в Фрехене произошло сражение между Конрадом фон Хохштаденом (архиепископом Кёльна) и жителями города. Это показывает, что Фрехен уже тогда был важным местом с политическим и стратегическим значением.' },
-                        { text: 'С XVI века город стал известен благодаря развитию гончарного производства — особенно производству «бородатых кувшинов» (Bartmannskrüge), которые экспортировались по всей Европе.' },
-                        { text: 'В XVIII–XIX веках в окрестностях Фрехена началась добыча бурого угля, что превратило город в промышленный центр.' },
-                        { text: 'После Второй мировой войны Фрехен активно развивался как промышленный и жилой пригород Кёльна.' },
-                        { text: '2 сентября 1951 года Фрехен получил официальный статус города, после чего к нему были присоединены деревни Бахем, Хюхельн и Бушбелль.' },
-                        { text: 'В 1975 году в результате административной реформы к Фрехену были присоединены соседние посёлки Грефрат, Хаббелрат, Кёнигсдорф и Нойфраймерсдорф.' },
-                        { text: 'Сегодня Фрехен — современный город с историческим центром, музеем керамики и развитой инфраструктурой, популярный среди жителей Кёльна как место для жизни и отдыха.' }
-                    ]
-                },
-                meta: {
-                    title: "Фрехен – город керамики у западных ворот Кёльна",
-                    description: "Фрехен: история, география, знаменитые жители и интересные факты о городе керамики в земле Северный Рейн-Вестфалия.",
-                    ogTitle: "Фрехен – информация о городе",
-                    ogDescription: "Подробная информация о Фрехене: культура, история, знаменитые жители и интересные факты.",
-                    ogImage: "https://our-travels.info/foto/Germany/nrw/koln/Rhein-Erft-Kreis/frechen/johann_schmitz_platz_frechen/006.jpg"
-                }
-            },
-            ua: {
-                name: 'Фрехен',
-                subRegionName: "Рейн-Ерфт",
-                desc: {
-                    general: [
-                        { text: 'Фрехен – місто в землі Північний Рейн-Вестфалія, що входить до району Рейн-Ерфт і розташоване всього за 10 км на захід від Кельна.' },
-                        { text: ' Місто відоме своєю історією гончарного виробництва, промисловим розвитком і близькістю до Рейнсько-Рурського регіону.' }
-                    ],
-                    population: [
-                        { bold: 'Населення:' },
-                        { text: ' близько 52 000 осіб (2025)' }
-                    ],
-                    area: [
-                        { bold: 'Площа:' },
-                        { text: ' приблизно 45,1 км²' }
-                    ],
-                    postalCode: [
-                        { bold: 'Поштовий індекс:' },
-                        { text: ' 50226' }
-                    ],
-                    phone: [
-                        { bold: 'Телефонний код:' },
-                        { text: ' +49 02234' }
-                    ],
-                    officialSite: [
-                        { bold: 'Офіційний сайт Фрехена', link: 'https://www.frechen.de/' }
-                    ]
-                },
-                geography: {
-                    title: 'Географія',
-                    items: [
-                        { text: 'Фрехен розташований на західній околиці Кельна і є частиною агломерації Рейнсько-Рурського регіону.' },
-                        { text: 'Висота над рівнем моря коливається від 58 до 158 метрів, місто лежить на схилах височини Вілле (Ville).' },
-                        { text: 'Через місто проходять важливі транспортні магістралі: автомагістралі A1, A4 та A61, що забезпечує добрий зв’язок із Кельном, Бонном і Аахеном.' },
-                        { text: 'Місто оточене зеленими зонами та невеликими лісами, а також колишніми промисловими кар’єрами, деякі з яких перетворено на зони відпочинку.' }
-                    ]
-                },
-                notablePeople: {
-                    title: 'Відомі люди Фрехена',
-                    items: [
-                        { bold: 'Айо', text: ' – німецько-нігерійська співачка та авторка пісень, народжена у Фрехені.' },
-                        { bold: 'Кірстен Болм', text: ' – легкоатлетка, чемпіонка Німеччини з бігу з бар’єрами.' },
-                        { bold: 'Уейн Карпендейл', text: ' – актор і телеведучий.' },
-                        { bold: 'П’єр Фогель', text: ' – відомий ісламський проповідник, який виріс у Фрехені.' },
-                        { bold: 'Ганна Мойль', text: ' – професійна скелелазка, представниця Німеччини на міжнародних змаганнях.' },
-                        { bold: 'Марсель Геллер', text: ' – німецький футболіст, який грав у Бундеслізі.' },
-                        { bold: 'Зоня Бертрам', text: ' – акторка театру та телебачення.' }
-                    ]
-                },
-                interestingFacts: {
-                    title: 'Цікаві факти',
-                    items: [
-                        { text: 'Фрехен відомий як «місто кераміки»: місцеві майстри прославилися своїми глиняними виробами, особливо глечиками Bartmannskrug («бородаті глечики»).' },
-                        { text: 'У музеї Keramion представлена унікальна колекція кераміки та сучасного мистецтва, а сама будівля музею вважається архітектурним шедевром модернізму.' },
-                        { text: 'У Середньовіччі фрехенська кераміка експортувалася по всій Європі, зокрема до Англії та Нідерландів.' },
-                        { text: 'Фрехен має розвинену транспортну інфраструктуру й вважається зручним містом для щоденних поїздок до Кельна.' },
-                        { text: 'Багато колишніх кар’єрів бурого вугілля навколо міста сьогодні перетворено на природні та рекреаційні зони.' }
-                    ]
-                },
-                briefHistory: {
-                    title: 'Історія',
-                    items: [
-                        { text: 'Фрехен уперше згадується в документах у 877 році, що робить його одним із найстаріших населених пунктів регіону.' },
-                        { text: 'У середньовіччі, у 1257 році, у Фрехені відбулася битва між Конрадом фон Хохштаденом (архієпископом Кельна) та мешканцями міста. Це показує, що Фрехен уже тоді був важливим місцем із політичним і стратегічним значенням.' },
-                        { text: 'Із XVI століття місто стало відомим завдяки розвитку гончарного виробництва — особливо виготовленню «бородатих глечиків» (Bartmannskrüge), які експортувалися по всій Європі.' },
-                        { text: 'У XVIII–XIX століттях у передмістях Фрехена почалася розробка бурого вугілля, що перетворило місто на промисловий центр.' },
-                        { text: 'Після Другої світової війни Фрехен активно розвивався як промислове та житлове передмістя Кельна.' },
-                        { text: '2 вересня 1951 року Фрехен отримав офіційний статус міста, після чого до нього були приєднані села Бахем, Хюхельн та Бушбель.' },
-                        { text: 'У 1975 році в результаті адміністративної реформи до Фрехена приєднано сусідні поселення Грефрат, Хаббелрат, Кенігсдорф і Нойфраймерсдорф.' },
-                        { text: 'Сьогодні Фрехен — сучасне місто з історичним центром, музеєм кераміки та розвиненою інфраструктурою, популярне серед мешканців Кельна як місце для життя й відпочинку.' }
-                    ]
-                },
-                meta: {
-                    title: "Фрехен – місто кераміки біля західних воріт Кельна",
-                    description: "Фрехен: історія, географія, відомі мешканці та цікаві факти про місто кераміки в землі Північний Рейн-Вестфалія.",
-                    ogTitle: "Фрехен – інформація про місто",
-                    ogDescription: "Детальна інформація про Фрехен: культура, історія, відомі жителі та цікаві факти.",
-                    ogImage: "https://our-travels.info/foto/Germany/nrw/koln/Rhein-Erft-Kreis/frechen/johann_schmitz_platz_frechen/006.jpg"
-                }
-            },
-            de: {
-                name: 'Frechen',
-                subRegionName: "Rhein-Erft",
-                desc: {
-                    general: [
-                        { text: 'Frechen ist eine Stadt im Bundesland Nordrhein-Westfalen, die zum Rhein-Erft-Kreis gehört und nur etwa 10 km westlich von Köln liegt.' },
-                        { text: 'Die Stadt ist bekannt für ihre historische Töpfertradition, industrielle Entwicklung und ihre Nähe zur Rhein-Ruhr-Region.' }
-                    ],
-                    population: [
-                        { bold: 'Einwohnerzahl:' },
-                        { text: ' etwa 52.000 Menschen (2025)' }
-                    ],
-                    area: [
-                        { bold: 'Fläche:' },
-                        { text: ' ca. 45,1 km²' }
-                    ],
-                    postalCode: [
-                        { bold: 'Postleitzahl:' },
-                        { text: ' 50226' }
-                    ],
-                    phone: [
-                        { bold: 'Telefonvorwahl:' },
-                        { text: ' +49 02234' }
-                    ],
-                    officialSite: [
-                        { bold: 'Offizielle Website der Stadt Frechen', link: 'https://www.frechen.de/' }
-                    ]
-                },
-                geography: {
-                    title: 'Geografie',
-                    items: [
-                        { text: 'Frechen liegt am westlichen Stadtrand von Köln und ist Teil der Metropolregion Rhein-Ruhr.' },
-                        { text: 'Die Höhe über dem Meeresspiegel variiert zwischen 58 und 158 Metern, die Stadt befindet sich an den Hängen der Ville-Höhen.' },
-                        { text: 'Wichtige Verkehrsachsen wie die Autobahnen A1, A4 und A61 verlaufen in der Nähe und verbinden Frechen mit Köln, Bonn und Aachen.' },
-                        { text: 'Die Stadt ist von Grünflächen, kleinen Wäldern und ehemaligen Industriegruben umgeben, die teilweise zu Naherholungsgebieten umgestaltet wurden.' }
-                    ]
-                },
-                notablePeople: {
-                    title: 'Bekannte Persönlichkeiten aus Frechen',
-                    items: [
-                        { bold: 'Ayo', text: ' – deutsch-nigerianische Sängerin und Songwriterin, geboren in Frechen.' },
-                        { bold: 'Kirsten Bolm', text: ' – Leichtathletin und deutsche Meisterin im Hürdenlauf.' },
-                        { bold: 'Wayne Carpendale', text: ' – Schauspieler und Fernsehmoderator.' },
-                        { bold: 'Pierre Vogel', text: ' – bekannter islamischer Prediger, aufgewachsen in Frechen.' },
-                        { bold: 'Hannah Meul', text: ' – Profikletterin und Mitglied des deutschen Nationalteams.' },
-                        { bold: 'Marcel Heller', text: ' – deutscher Fußballspieler, der in der Bundesliga aktiv war.' },
-                        { bold: 'Sonja Bertram', text: ' – Theater- und Fernsehschauspielerin.' }
-                    ]
-                },
-                interestingFacts: {
-                    title: 'Interessante Fakten',
-                    items: [
-                        { text: 'Frechen ist als „Stadt der Keramik“ bekannt: Lokale Handwerker wurden für ihre Tonwaren berühmt, insbesondere für die Bartmannskrüge.' },
-                        { text: 'Das Keramion-Museum beherbergt eine einzigartige Sammlung von Keramiken und moderner Kunst – das Gebäude selbst gilt als architektonisches Meisterwerk des Modernismus.' },
-                        { text: 'Im Mittelalter wurde Frechener Keramik in ganz Europa exportiert, insbesondere nach England und in die Niederlande.' },
-                        { text: 'Frechen verfügt über eine gut ausgebaute Verkehrsinfrastruktur und gilt als attraktiver Wohnort für Pendler nach Köln.' },
-                        { text: 'Viele ehemalige Braunkohletagebaue in der Umgebung wurden in Natur- und Erholungsgebiete umgewandelt.' }
-                    ]
-                },
-                briefHistory: {
-                    title: 'Geschichte',
-                    items: [
-                        { text: 'Frechen wurde erstmals im Jahr 877 urkundlich erwähnt und ist damit einer der ältesten Orte der Region.' },
-                        { text: 'Im Mittelalter, im Jahr 1257, fand in Frechen eine Schlacht zwischen Konrad von Hochstaden (Erzbischof von Köln) und den Bewohnern der Stadt statt. Dies zeigt, dass Frechen schon damals ein wichtiger Ort mit politischer und strategischer Bedeutung war.' },
-                        { text: 'Seit dem 16. Jahrhundert ist die Stadt für ihre Töpferproduktion bekannt – insbesondere für die Herstellung der „Bartmannskrüge“, die in ganz Europa exportiert wurden.' },
-                        { text: 'Im 18. und 19. Jahrhundert begann der Braunkohleabbau in der Umgebung, wodurch Frechen zu einem industriellen Zentrum wurde.' },
-                        { text: 'Nach dem Zweiten Weltkrieg entwickelte sich Frechen zu einem wichtigen Industrie- und Wohnvorort von Köln.' },
-                        { text: 'Am 2. September 1951 erhielt Frechen das offizielle Stadtrecht, woraufhin die Dörfer Bachem, Hücheln und Buschbell eingemeindet wurden.' },
-                        { text: 'Im Jahr 1975 wurden im Zuge der kommunalen Neugliederung die Ortsteile Grefrath, Habbelrath, Königsdorf und Neufreimersdorf eingemeindet.' },
-                        { text: 'Heute ist Frechen eine moderne Stadt mit historischem Stadtkern, Keramikmuseum und guter Infrastruktur – ein beliebter Wohnort für Kölner.' }
-                    ]
-                },
-                meta: {
-                    title: "Frechen – die Stadt der Keramik vor den westlichen Toren Kölns",
-                    description: "Frechen: Geschichte, Geografie, bekannte Persönlichkeiten und interessante Fakten über die Keramikstadt in Nordrhein-Westfalen.",
-                    ogTitle: "Frechen – Stadtinformationen",
-                    ogDescription: "Detaillierte Informationen über Frechen: Kultur, Geschichte, bekannte Persönlichkeiten und interessante Fakten.",
-                    ogImage: "https://our-travels.info/foto/Germany/nrw/koln/Rhein-Erft-Kreis/frechen/johann_schmitz_platz_frechen/006.jpg"
-                }
-            }
-        }
-
-    },
-
-    //Rhein-Sieg-Kreis
-    {
-        id: "konigswinter",
-        path: "konigswinter",
-        countryPath: "germany", regionPath: "nrw", districtPath: "koln", subRegionPath: "rhein_sieg",
-        gerb: "Germany/nrw/koln/Rhein-Sieg-Kreis/konigswinter/gerb.png",
-        coord: { lat: 50.6838, lng: 7.1868 },
-        translations: {
-            ru: {
-                name: 'Кёнигсвинтер',
-                subRegionName: "Рейн-Зиг",
-                desc: {
-                    general: [
-                        { text: 'Кёнигсвинтер – город в земле Северный Рейн-Вестфалия, входящий в район Рейн-Зиг и расположенный на правом берегу Рейна напротив Бонна.' },
-                        { text: ' Город известен живописными пейзажами Семигорья (Siebengebirge), замком Драхенбург и горой Драхенфельс – одним из самых посещаемых природных объектов Германии.' }
-                    ],
-                    population: [
-                        { bold: 'Население:' },
-                        { text: ' около 41 000 человек (2025)' }
-                    ],
-                    area: [
-                        { bold: 'Площадь:' },
-                        { text: ' примерно 76,2 км²' }
-                    ],
-                    postalCode: [
-                        { bold: 'Почтовый индекс:' },
-                        { text: ' 53639' }
-                    ],
-                    phone: [
-                        { bold: 'Телефонный код:' },
-                        { text: ' +49 02223' }
-                    ],
-                    officialSite: [
-                        { bold: 'Официальный сайт Кёнигсвинтера', link: 'https://www.koenigswinter.de/' }
-                    ]
-                },
-                geography: {
-                    title: 'География',
-                    items: [
-                        { text: 'Кёнигсвинтер расположен на правом берегу Рейна у подножия горного массива Зибенгебирге и является частью агломерации Бонна.' },
-                        { text: 'Высота над уровнем моря варьируется примерно от 60 до 461 метров; самая высокая точка – гора Эльберг (Ölberg).' },
-                        { text: 'Через город проходят федеральная трасса B42 и железнодорожная линия вдоль Рейна, обеспечивая удобное сообщение с Бонном, Кёльном и Кобленцем.' },
-                        { text: 'Территория города включает леса, виноградники, речные набережные и природный парк Siebengebirge – один из старейших природных парков Германии.' }
-                    ]
-                },
-                notablePeople: {
-                    title: 'Знаменитые люди Кёнигсвинтера',
-                    items: [
-                        { bold: 'Конрад Аденауэр', text: ' – первый федеральный канцлер Германии, жил в районе Рёндорф; его дом сегодня является музеем.' },
-                        { bold: 'Петер Шолль-Латур', text: ' – известный немецкий журналист и публицист, долгое время жил в городе.' },
-                        { bold: 'Вольфганг Оверат', text: ' – легендарный футболист сборной Германии и «Кёльна», проживал в Кёнигсвинтере.' },
-                        { bold: 'Фердинанд Фрейлиграт', text: ' – немецкий поэт эпохи романтизма, некоторое время жил в окрестностях города.' }
-                    ]
-                },
-                interestingFacts: {
-                    title: 'Интересные факты',
-                    items: [
-                        { text: 'Гора Драхенфельс является одной из самых известных туристических точек на Рейне и связана с легендой о драконе, побеждённом героем Зигфридом.' },
-                        { text: 'Замок Драхенбург – не средневековая крепость, а роскошная вилла XIX века, построенная в стиле историзма и напоминающая сказочный дворец.' },
-                        { text: 'Гостиница Petersberg в Кёнигсвинтере долгое время служила официальной резиденцией для государственных гостей Германии.' },
-                        { text: 'Зибенгебирге считается одним из старейших охраняемых природных регионов страны и популярным местом для хайкинга.' },
-                        { text: 'Город часто называют «воротами в романтический Рейн» благодаря панорамным видам на реку и долину.' }
-                    ]
-                },
-                briefHistory: {
-                    title: 'История',
-                    items: [
-                        { text: 'Поселение на месте современного Кёнигсвинтера впервые упоминается в документах около 1015 года под названием Winetre.' },
-                        { text: 'В Средние века регион развивался благодаря виноделию, добыче камня в горах Зибенгебирге и торговле по Рейну.' },
-                        { text: 'В XIX веке город стал популярным курортом и туристическим направлением эпохи романтизма, привлекая художников и путешественников.' },
-                        { text: 'В 1889 году Кёнигсвинтер получил официальные городские права.' },
-                        { text: 'После Второй мировой войны район Петерсберг играл важную дипломатическую роль: здесь размещались государственные делегации и проходили международные встречи.' },
-                        { text: 'В 1969 году в ходе административной реформы к городу были присоединены несколько окрестных населённых пунктов, что значительно расширило его территорию.' },
-                        { text: 'Сегодня Кёнигсвинтер – популярный туристический центр региона Рейн-Зиг, сочетающий природные достопримечательности, исторические объекты и развитую инфраструктуру отдыха.' }
-                    ]
-                },
-                meta: {
-                    title: "Кёнигсвинтер – город у подножия Драхенфельса на Рейне",
-                    description: "Кёнигсвинтер: история, география, знаменитые жители и интересные факты о живописном городе региона Рейн-Зиг.",
-                    ogTitle: "Кёнигсвинтер – информация о городе",
-                    ogDescription: "Подробная информация о Кёнигсвинтере: достопримечательности, природа, история и известные жители.",
-                    ogImage: "https://our-travels.info/foto/Germany/nrw/koln/Rhein-Sieg-Kreis/konigswinter/drachenfels/007.jpg"
-                }
-            },
-            ua: {
-                name: 'Кенігсвінтер',
-                subRegionName: "Рейн-Зіг",
-                desc: {
-                    general: [
-                        { text: 'Кенігсвінтер – місто в землі Північний Рейн-Вестфалія, що входить до району Рейн-Зіг і розташоване на правому березі Рейну навпроти Бонна.' },
-                        { text: ' Місто відоме мальовничими пейзажами Семигір’я (Siebengebirge), замком Драхенбург та горою Драхенфельс – одним із найвідвідуваніших природних об’єктів Німеччини.' }
-                    ],
-                    population: [
-                        { bold: 'Населення:' },
-                        { text: ' близько 41 000 осіб (2025)' }
-                    ],
-                    area: [
-                        { bold: 'Площа:' },
-                        { text: ' приблизно 76,2 км²' }
-                    ],
-                    postalCode: [
-                        { bold: 'Поштовий індекс:' },
-                        { text: ' 53639' }
-                    ],
-                    phone: [
-                        { bold: 'Телефонний код:' },
-                        { text: ' +49 02223' }
-                    ],
-                    officialSite: [
-                        { bold: 'Офіційний сайт Кенігсвінтера', link: 'https://www.koenigswinter.de/' }
-                    ]
-                },
-                geography: {
-                    title: 'Географія',
-                    items: [
-                        { text: 'Кенігсвінтер розташований на правому березі Рейну біля підніжжя гірського масиву Зібенгебірге і є частиною агломерації Бонна.' },
-                        { text: 'Висота над рівнем моря варіюється приблизно від 60 до 461 метрів; найвища точка – гора Ельберг (Ölberg).' },
-                        { text: 'Через місто проходять федеральна траса B42 і залізнична лінія вздовж Рейну, що забезпечує зручне сполучення з Бонном, Кельном і Кобленцем.' },
-                        { text: 'Територія міста включає ліси, виноградники, річкові набережні та природний парк Siebengebirge – один із найстаріших природних парків Німеччини.' }
-                    ]
-                },
-                notablePeople: {
-                    title: 'Відомі люди Кенігсвінтера',
-                    items: [
-                        { bold: 'Конрад Аденауер', text: ' – перший федеральний канцлер Німеччини, жив у районі Рьондорф; його дім сьогодні є музеєм.' },
-                        { bold: 'Петер Шоль-Латур', text: ' – відомий німецький журналіст і публіцист, тривалий час мешкав у місті.' },
-                        { bold: 'Вольфганг Оверат', text: ' – легендарний футболіст збірної Німеччини та «Кельна», проживав у Кенігсвінтері.' },
-                        { bold: 'Фердинанд Фрейліграт', text: ' – німецький поет епохи романтизму, деякий час жив в околицях міста.' }
-                    ]
-                },
-                interestingFacts: {
-                    title: 'Цікаві факти',
-                    items: [
-                        { text: 'Гора Драхенфельс є однією з найвідоміших туристичних точок на Рейні і пов’язана з легендою про дракона, переможеного героєм Зігфрідом.' },
-                        { text: 'Замок Драхенбург – не середньовічна фортеця, а розкішна вілла XIX століття, побудована в стилі історизму і нагадує казковий палац.' },
-                        { text: 'Готель Petersberg у Кенігсвінтері довгий час слугував офіційною резиденцією для державних гостей Німеччини.' },
-                        { text: 'Зібенгебірге вважається одним із найстаріших охоронюваних природних регіонів країни і популярним місцем для хайкінгу.' },
-                        { text: 'Місто часто називають «воротами в романтичний Рейн» завдяки панорамним видам на річку і долину.' }
-                    ]
-                },
-                briefHistory: {
-                    title: 'Історія',
-                    items: [
-                        { text: 'Поселення на місці сучасного Кенігсвінтера вперше згадується в документах близько 1015 року під назвою Winetre.' },
-                        { text: 'У середні віки регіон розвивався завдяки виноробству, видобутку каменю в горах Зібенгебірге та торгівлі по Рейну.' },
-                        { text: 'У XIX столітті місто стало популярним курортом і туристичним напрямком епохи романтизму, приваблюючи художників і мандрівників.' },
-                        { text: 'У 1889 році Кенігсвінтер отримав офіційні міські права.' },
-                        { text: 'Після Другої світової війни район Петерсберг грав важливу дипломатичну роль: тут розміщувалися державні делегації і проводилися міжнародні зустрічі.' },
-                        { text: 'У 1969 році в ході адміністративної реформи до міста було приєднано кілька навколишніх населених пунктів, що значно розширило його територію.' },
-                        { text: 'Сьогодні Кенігсвінтер – популярний туристичний центр регіону Рейн-Зіг, що поєднує природні пам’ятки, історичні об’єкти та розвинену інфраструктуру відпочинку.' }
-                    ]
-                },
-                meta: {
-                    title: "Кенігсвінтер – місто біля підніжжя Драхенфельса на Рейні",
-                    description: "Кенігсвінтер: історія, географія, відомі мешканці та цікаві факти про мальовниче місто регіону Рейн-Зіг.",
-                    ogTitle: "Кенігсвінтер – інформація про місто",
-                    ogDescription: "Детальна інформація про Кенігсвінтер: визначні пам’ятки, природа, історія та відомі мешканці.",
-                    ogImage: "https://our-travels.info/foto/Germany/nrw/koln/Rhein-Sieg-Kreis/konigswinter/drachenfels/007.jpg"
-                }
-            },
-            de: {
-                name: 'Königswinter',
-                subRegionName: "Rhein-Sieg",
-                desc: {
-                    general: [
-                        { text: 'Königswinter ist eine Stadt im Bundesland Nordrhein-Westfalen, die zum Rhein-Sieg-Kreis gehört und am rechten Rheinufer gegenüber von Bonn liegt.' },
-                        { text: ' Die Stadt ist bekannt für die malerische Landschaft des Siebengebirges, das Schloss Drachenburg und den Drachenfels – eines der meistbesuchten Naturziele Deutschlands.' }
-                    ],
-                    population: [
-                        { bold: 'Einwohnerzahl:' },
-                        { text: ' etwa 41.000 Menschen (2025)' }
-                    ],
-                    area: [
-                        { bold: 'Fläche:' },
-                        { text: ' ca. 76,2 km²' }
-                    ],
-                    postalCode: [
-                        { bold: 'Postleitzahl:' },
-                        { text: ' 53639' }
-                    ],
-                    phone: [
-                        { bold: 'Telefonvorwahl:' },
-                        { text: ' +49 02223' }
-                    ],
-                    officialSite: [
-                        { bold: 'Offizielle Website von Königswinter', link: 'https://www.koenigswinter.de/' }
-                    ]
-                },
-                geography: {
-                    title: 'Geographie',
-                    items: [
-                        { text: 'Königswinter liegt am rechten Rheinufer am Fuße des Siebengebirges und ist Teil der Agglomeration Bonn.' },
-                        { text: 'Die Höhe über dem Meeresspiegel variiert zwischen etwa 60 und 461 Metern; der höchste Punkt ist der Ölberg.' },
-                        { text: 'Durch die Stadt verlaufen die Bundesstraße B42 und die Eisenbahnlinie am Rhein, die eine gute Verbindung nach Bonn, Köln und Koblenz gewährleisten.' },
-                        { text: 'Das Stadtgebiet umfasst Wälder, Weinberge, Rheinpromenaden und den Naturpark Siebengebirge – einen der ältesten Naturparks Deutschlands.' }
-                    ]
-                },
-                notablePeople: {
-                    title: 'Berühmte Persönlichkeiten aus Königswinter',
-                    items: [
-                        { bold: 'Konrad Adenauer', text: ' – erster Bundeskanzler Deutschlands, lebte im Stadtteil Rüngsdorf; sein Haus ist heute ein Museum.' },
-                        { bold: 'Peter Scholl-Latour', text: ' – bekannter deutscher Journalist und Publizist, lebte lange Zeit in der Stadt.' },
-                        { bold: 'Wolfgang Overath', text: ' – legendärer Fußballspieler der deutschen Nationalmannschaft und von „Köln“, wohnte in Königswinter.' },
-                        { bold: 'Ferdinand Freiligrath', text: ' – deutscher Dichter der Romantik, lebte zeitweise in der Umgebung der Stadt.' }
-                    ]
-                },
-                interestingFacts: {
-                    title: 'Interessante Fakten',
-                    items: [
-                        { text: 'Der Drachenfels ist einer der bekanntesten touristischen Punkte am Rhein und mit der Legende des von Siegfried besiegten Drachen verbunden.' },
-                        { text: 'Schloss Drachenburg ist keine mittelalterliche Burg, sondern eine luxuriöse Villa des 19. Jahrhunderts im Historismus-Stil, die an ein Märchenschloss erinnert.' },
-                        { text: 'Das Hotel Petersberg in Königswinter diente lange Zeit als offizielle Residenz für staatliche Gäste Deutschlands.' },
-                        { text: 'Das Siebengebirge gilt als eines der ältesten geschützten Naturgebiete des Landes und ist ein beliebtes Ziel für Wanderungen.' },
-                        { text: 'Die Stadt wird oft als „Tor zum romantischen Rhein“ bezeichnet, dank der Panoramablicke auf den Fluss und das Tal.' }
-                    ]
-                },
-                briefHistory: {
-                    title: 'Geschichte',
-                    items: [
-                        { text: 'Die Siedlung an der Stelle des heutigen Königswinter wird erstmals um 1015 unter dem Namen Winetre erwähnt.' },
-                        { text: 'Im Mittelalter entwickelte sich die Region durch Weinbau, Steinabbau im Siebengebirge und den Handel am Rhein.' },
-                        { text: 'Im 19. Jahrhundert wurde die Stadt zu einem beliebten Kur- und Reiseziel der Romantik, das Künstler und Reisende anzog.' },
-                        { text: '1889 erhielt Königswinter die offiziellen Stadtrechte.' },
-                        { text: 'Nach dem Zweiten Weltkrieg spielte der Petersberg eine wichtige diplomatische Rolle: Hier waren staatliche Delegationen untergebracht und internationale Treffen fanden statt.' },
-                        { text: '1969 wurden im Rahmen einer Verwaltungsreform mehrere umliegende Orte in die Stadt eingegliedert, wodurch sich das Stadtgebiet erheblich vergrößerte.' },
-                        { text: 'Heute ist Königswinter ein beliebtes Touristenzentrum im Rhein-Sieg-Kreis, das Naturattraktionen, historische Sehenswürdigkeiten und eine gut ausgebaute Infrastruktur für Erholung verbindet.' }
-                    ]
-                },
-                meta: {
-                    title: "Königswinter – Stadt am Fuße des Drachenfels am Rhein",
-                    description: "Königswinter: Geschichte, Geographie, berühmte Persönlichkeiten und interessante Fakten über die malerische Stadt im Rhein-Sieg-Kreis.",
-                    ogTitle: "Königswinter – Informationen über die Stadt",
-                    ogDescription: "Detaillierte Informationen über Königswinter: Sehenswürdigkeiten, Natur, Geschichte und bekannte Persönlichkeiten.",
-                    ogImage: "https://our-travels.info/foto/Germany/nrw/koln/Rhein-Sieg-Kreis/konigswinter/drachenfels/007.jpg"
                 }
             }
         }
@@ -2017,7 +1155,1040 @@ const datas = [
                 }
             }
         }
+    },
 
+    // округ dusseldorf 
+    // край mettmann 
+    {
+        id: "velbert",
+        path: "velbert",
+        countryPath: "germany", regionPath: "nrw", districtPath: "dusseldorf", subRegionPath: "mettmann",
+        gerb: "Germany/nrw/dusseldorf/mettmann/velbert/gerb.png",
+        coord: { lat: 51.3387, lng: 7.0436 },
+        translations: {
+            ru: {
+                name: "Вельберт",
+                subRegionName: "Меттман",
+                desc: {
+                    general: [{ text: "Вельберт (нем. Velbert) – крупный город в районе Меттман административного округа Дюссельдорф, федеральная земля Северный Рейн-Вестфалия. Город расположен между Рурской областью и регионом Бергишес-Ланд и исторически известен как центр производства замков и фурнитуры." }],
+                    population: [{ bold: "Население", text: " составляет около 81 000 человек (по состоянию на 2024 год)." }],
+                    area: [
+                        { bold: "Площадь:", text: " около 74,9 км². Город расположен на холмистой местности региона Бергишес-Ланд, значительную часть территории занимают леса и зелёные зоны." },
+                        { text: " Город административно делится на три основных района: Вельберт-Митте (Velbert-Mitte), Невигес (Neviges) и Лангенберг (Langenberg)." }
+                    ],
+                    postalCode: [{ bold: "Почтовые индексы:", text: " 42549–42555" }],
+                    phone: [{ bold: "Телефонный код:", text: " +49 02051" }],
+                    officialSite: [{ bold: "Официальный сайт Вельберта", link: "https://www.velbert.de/" }],
+                    culture: [{ bold: "Культурные особенности", text: " – город известен музеем замков и фурнитуры (Deutsches Schloss- und Beschlägemuseum), который отражает его многовековую промышленную специализацию." }]
+                },
+                geography: {
+                    title: "Рельеф и расположение",
+                    items: [
+                        { text: "Вельберт расположен на юго-востоке округа Меттман в холмистой зоне Бергишес-Ланд." },
+                        { text: "Город имеет выраженный рельеф с перепадами высот и большим количеством лесных массивов." },
+                        { bold: "География.", text: " Вельберт находится в переходной зоне между Рурской агломерацией и природными ландшафтами западной Германии." }
+                    ]
+                },
+                interestingFacts: {
+                    title: "Интересные факты",
+                    isList: true,
+                    items: [
+                        { bold: "Центр производства замков", text: " – Вельберт является одним из ключевых центров производства замков, ключей и систем безопасности в Европе. Здесь исторически сосредоточены десятки предприятий этой отрасли." },
+                        { bold: "Город из трёх частей", text: " – современный Вельберт сформирован в 1975 году путём объединения трёх городов: Velbert, Neviges и Langenberg, каждый из которых сохраняет свою историческую идентичность." },
+                        { bold: "Расположение между регионами", text: " – город находится на границе индустриальной Рурской области и природного региона Бергишес-Ланд, сочетая промышленную историю и зелёные ландшафты." },
+                        { bold: "Зелёная среда", text: " – значительная часть территории города покрыта лесами и холмами, что делает Вельберт менее индустриальным по внешнему виду по сравнению с соседними городами Рура." },
+                        { bold: "Экономика Mittelstand", text: " – экономика города основана преимущественно на средних и семейных предприятиях (так называемый Mittelstand), а не на крупных концернах." },
+                        { bold: "Транспортная особенность", text: " – несмотря на близость к Руру, Вельберт исторически имеет менее развитое железнодорожное сообщение и в большей степени зависит от автобусной сети." }
+                    ]
+                },
+                briefHistory: {
+                    title: "История",
+                    items: [
+                        { text: "Территория современного Вельберта была заселена ещё в раннем Средневековье и входила в состав владений графов Берга, находясь на границе сельских и ремесленных поселений региона Бергишес-Ланд." },
+                        { text: "Первые письменные упоминания отдельных поселений относятся к IX–XII векам, когда здесь существовали небольшие фермерские хозяйства, мельницы и церковные общины." },
+                        { text: "В течение позднего Средневековья регион постепенно развивался как ремесленный центр, особенно в сфере обработки металла, что стало основой будущей экономики города." },
+                        { text: "С XVI–XVIII веков в районе Вельберта активно развивалось производство замков, ключей и металлической фурнитуры, чему способствовали наличие воды для механизмов и доступ к сырью." },
+                        { text: "В XIX веке началась индустриализация, и Вельберт превратился в один из ключевых центров замочной промышленности в Европе, где возникли сотни небольших фабрик и мастерских." },
+                        { text: "Развитие железнодорожной сети во второй половине XIX века ускорило рост города и усилило его экономические связи с Рурской областью и Рейнским регионом." },
+                        { text: "В начале XX века Вельберт уже был плотным индустриальным городом, ориентированным на экспорт металлических изделий и технических компонентов." },
+                        { text: "Во время Второй мировой войны город не был полностью разрушен, однако подвергался авиационным налётам, в результате которых пострадали промышленные предприятия и часть жилой застройки, но разрушения были умеренными по сравнению с крупными городами Рура." },
+                        { text: "После 1945 года Вельберт быстро восстановился благодаря спросу на промышленную продукцию и стал частью экономического восстановления Западной Германии (Wirtschaftswunder)." },
+                        { text: "Современный Вельберт сформировался в 1975 году в результате объединения трёх ранее самостоятельных городов: Velbert, Neviges и Langenberg." },
+                        { text: "Во второй половине XX века город постепенно снизил зависимость от тяжёлой промышленности и перешёл к более диверсифицированной экономике, включая машиностроение и высокоточную механику." },
+                        { text: "Сегодня Вельберт сохраняет индустриальное наследие, но одновременно позиционируется как зелёный жилой город между Руром и Бергишес-Ландом." }
+                    ]
+                },
+                meta: {
+                    title: "Вельберт – город замков и промышленности в Северном Рейне-Вестфалии",
+                    description: "Вельберт: крупный город округа Меттман, известный производством замков, музеем фурнитуры и зелёным ландшафтом Бергишес-Ланд.",
+                    ogTitle: "Вельберт – город замков и металла",
+                    ogDescription: "История и современность Вельберта: промышленность, культура и природа NRW.",
+                    ogImage: "https://upload.wikimedia.org/wikipedia/commons/..."
+                }
+            },
+            ua: {
+                name: "Вельберт",
+                subRegionName: "Меттман",
+                desc: {
+                    general: [{ text: "Вельберт (нім. Velbert) – велике місто в районі Меттман адміністративного округу Дюссельдорф, федеральна земля Північний Рейн-Вестфалія. Місто розташоване між Рурською областю та регіоном Бергішес-Ланд і історично відоме як центр виробництва замків і фурнітури." }],
+                    population: [{ bold: "Населення", text: " становить близько 81 000 жителів (станом на 2024 рік)." }],
+                    area: [
+                        { bold: "Площа:", text: " близько 74,9 км². Місто розташоване на горбистій місцевості регіону Бергішес-Ланд, значну частину території займають ліси та зелені зони." },
+                        { text: " Місто адміністративно поділяється на три основні райони: Вельберт-Мітте (Velbert-Mitte), Невігес (Neviges) та Лангенберг (Langenberg)." }
+                    ],
+                    postalCode: [{ bold: "Поштові індекси:", text: " 42549–42555" }],
+                    phone: [{ bold: "Телефонний код:", text: " +49 02051" }],
+                    officialSite: [{ bold: "Офіційний сайт Вельберта", link: "https://www.velbert.de/" }],
+                    culture: [{ bold: "Культурні особливості", text: " – місто відоме музеєм замків і фурнітури (Deutsches Schloss- und Beschlägemuseum), який відображає його багатовікову промислову спеціалізацію." }]
+                },
+                geography: {
+                    title: "Рельєф і розташування",
+                    items: [
+                        { text: "Вельберт розташований на південному сході округу Меттман у горбистій зоні Бергішес-Ланд." },
+                        { text: "Місто має виражений рельєф із перепадами висот і великою кількістю лісових масивів." },
+                        { bold: "Географія:", text: " Вельберт знаходиться в перехідній зоні між Рурською агломерацією та природними ландшафтами західної Німеччини." }
+                    ]
+                },
+                interestingFacts: {
+                    title: "Цікаві факти",
+                    isList: true,
+                    items: [
+                        { bold: "Центр виробництва замків", text: " – Вельберт є одним із ключових центрів виробництва замків, ключів і систем безпеки в Європі. Тут історично зосереджені десятки підприємств цієї галузі." },
+                        { bold: "Місто з трьох частин", text: " – сучасний Вельберт сформувався у 1975 році шляхом об’єднання трьох міст: Velbert, Neviges і Langenberg, кожне з яких зберігає свою історичну ідентичність." },
+                        { bold: "Розташування між регіонами", text: " – місто знаходиться на межі індустріальної Рурської області та природного регіону Бергішес-Ланд, поєднуючи промислову історію та зелені ландшафти." },
+                        { bold: "Зелене середовище", text: " – значна частина території міста вкрита лісами та пагорбами, що робить Вельберт менш індустріальним за виглядом порівняно з сусідніми містами Рура." },
+                        { bold: "Економіка Mittelstand", text: " – економіка міста базується переважно на середніх і сімейних підприємствах (так званий Mittelstand), а не на великих концернах." },
+                        { bold: "Транспортна особливість", text: " – незважаючи на близькість до Руру, Вельберт історично має менш розвинене залізничне сполучення та більшою мірою залежить від автобусної мережі." }
+                    ]
+                },
+                briefHistory: {
+                    title: "Історія",
+                    items: [
+                        { text: "Територія сучасного Вельберта була заселена ще в ранньому середньовіччі та входила до володінь графів Берга, перебуваючи на межі сільських і ремісничих поселень регіону Бергішес-Ланд." },
+                        { text: "Перші письмові згадки окремих поселень датуються IX–XII століттями, коли тут існували невеликі фермерські господарства, млини та церковні громади." },
+                        { text: "Упродовж пізнього середньовіччя регіон поступово розвивався як ремісничий центр, особливо у сфері обробки металу, що стало основою майбутньої економіки міста." },
+                        { text: "З XVI–XVIII століть у районі Вельберта активно розвивалося виробництво замків, ключів і металевої фурнітури, чому сприяли наявність води для механізмів і доступ до сировини." },
+                        { text: "У XIX столітті розпочалася індустріалізація, і Вельберт перетворився на один із ключових центрів замкової промисловості в Європі, де виникли сотні невеликих фабрик і майстерень." },
+                        { text: "Розвиток залізничної мережі у другій половині XIX століття прискорив зростання міста та посилив його економічні зв’язки з Рурською областю та Рейнським регіоном." },
+                        { text: "На початку XX століття Вельберт уже був щільним індустріальним містом, орієнтованим на експорт металевих виробів і технічних компонентів." },
+                        { text: "Під час Другої світової війни місто не було повністю зруйноване, однак зазнавало авіаційних нальотів, унаслідок яких постраждали промислові підприємства та частина житлової забудови, проте руйнування були помірними порівняно з великими містами Рура." },
+                        { text: "Після 1945 року Вельберт швидко відновився завдяки попиту на промислову продукцію та став частиною економічного відродження Західної Німеччини (Wirtschaftswunder)." },
+                        { text: "Сучасний Вельберт сформувався у 1975 році в результаті об’єднання трьох раніше самостійних міст: Velbert, Neviges і Langenberg." },
+                        { text: "У другій половині XX століття місто поступово зменшило залежність від важкої промисловості та перейшло до більш диверсифікованої економіки, включаючи машинобудування та високоточну механіку." },
+                        { text: "Сьогодні Вельберт зберігає індустріальну спадщину, але водночас позиціонується як зелений житловий місто між Руром і Бергішес-Ландом." }
+                    ]
+                },
+                meta: {
+                    title: "Вельберт – місто замків і промисловості в Північному Рейні-Вестфалії",
+                    description: "Вельберт: велике місто округу Меттман, відоме виробництвом замків, музеєм фурнітури та зеленими ландшафтами Бергішес-Ланд.",
+                    ogTitle: "Вельберт – місто замків і металу",
+                    ogDescription: "Історія та сучасність Вельберта: промисловість, культура і природа NRW.",
+                    ogImage: "https://upload.wikimedia.org/wikipedia/commons/..."
+                }
+            },
+            de: {
+                name: "Velbert",
+                subRegionName: "Mettmann",
+                desc: {
+                    general: [{ text: "Velbert ist eine größere Stadt im Kreis Mettmann im Regierungsbezirk Düsseldorf im Bundesland Nordrhein-Westfalen. Die Stadt liegt zwischen dem Ruhrgebiet und der Region Bergisches Land und ist historisch als Zentrum der Schloss- und Beschlagindustrie bekannt." }],
+                    population: [{ bold: "Einwohnerzahl", text: " beträgt etwa 81.000 Einwohner (Stand: 2024)." }],
+                    area: [
+                        { bold: "Fläche:", text: " etwa 74,9 km². Die Stadt liegt in einer hügeligen Landschaft der Region Bergisches Land, große Teile des Gebiets bestehen aus Wäldern und Grünflächen." },
+                        { text: " Die Stadt ist administrativ in drei Hauptteile gegliedert: Velbert-Mitte, Neviges und Langenberg." }
+                    ],
+                    postalCode: [{ bold: "Postleitzahlen:", text: " 42549–42555" }],
+                    phone: [{ bold: "Vorwahl:", text: " +49 02051" }],
+                    officialSite: [{ bold: "Offizielle Website von Velbert", link: "https://www.velbert.de/" }],
+                    culture: [{ bold: "Kulturelle Besonderheiten", text: " – die Stadt ist bekannt für das Deutsche Schloss- und Beschlägemuseum, das ihre jahrhundertealte industrielle Spezialisierung widerspiegelt." }]
+                },
+                geography: {
+                    title: "Relief und Lage",
+                    items: [
+                        { text: "Velbert liegt im Südosten des Kreises Mettmann in der hügeligen Landschaft des Bergischen Landes." },
+                        { text: "Die Stadt weist ein ausgeprägtes Relief mit Höhenunterschieden und großen Waldflächen auf." },
+                        { bold: "Geografie:", text: " Velbert befindet sich in einer Übergangszone zwischen der Ruhrmetropole und den naturnahen Landschaften Westdeutschlands." }
+                    ]
+                },
+                interestingFacts: {
+                    title: "Interessante Fakten",
+                    isList: true,
+                    items: [
+                        { bold: "Zentrum der Schlossindustrie", text: " – Velbert gehört zu den wichtigsten Standorten für die Herstellung von Schlössern, Schlüsseln und Sicherheitssystemen in Europa." },
+                        { bold: "Stadt aus drei Teilen", text: " – das heutige Velbert entstand 1975 durch den Zusammenschluss der Städte Velbert, Neviges und Langenberg." },
+                        { bold: "Lage zwischen Regionen", text: " – die Stadt liegt zwischen dem industriellen Ruhrgebiet und der naturnahen Region Bergisches Land." },
+                        { bold: "Grüne Umgebung", text: " – große Teile des Stadtgebiets sind bewaldet und von Hügeln geprägt." },
+                        { bold: "Mittelstand geprägt", text: " – die Wirtschaft basiert überwiegend auf mittelständischen und familiengeführten Unternehmen." },
+                        { bold: "Verkehrsstruktur", text: " – trotz der Nähe zum Ruhrgebiet ist die Stadt weniger stark an den Schienenverkehr angebunden und stärker vom Busverkehr abhängig." }
+                    ]
+                },
+                briefHistory: {
+                    title: "Geschichte",
+                    items: [
+                        { text: "Das Gebiet des heutigen Velbert war bereits im frühen Mittelalter besiedelt und gehörte zum Herrschaftsgebiet der Grafen von Berg, an der Grenze zwischen ländlichen und handwerklich geprägten Siedlungen des Bergischen Landes." },
+                        { text: "Erste schriftliche Erwähnungen einzelner Siedlungen stammen aus dem 9. bis 12. Jahrhundert, als hier kleine landwirtschaftliche Betriebe, Mühlen und kirchliche Gemeinschaften existierten." },
+                        { text: "Im Laufe des Spätmittelalters entwickelte sich die Region zunehmend zu einem Zentrum des Handwerks, insbesondere der Metallverarbeitung, was die Grundlage für die spätere wirtschaftliche Entwicklung bildete." },
+                        { text: "Vom 16. bis 18. Jahrhundert entwickelte sich im Raum Velbert intensiv die Herstellung von Schlössern, Schlüsseln und Metallbeschlägen, begünstigt durch Wasserkräfte und den Zugang zu Rohstoffen." },
+                        { text: "Im 19. Jahrhundert setzte die Industrialisierung ein, und Velbert entwickelte sich zu einem der wichtigsten Zentren der Schlossindustrie in Europa, in dem zahlreiche kleine Fabriken und Werkstätten entstanden." },
+                        { text: "Der Ausbau des Eisenbahnnetzes in der zweiten Hälfte des 19. Jahrhunderts beschleunigte das Wachstum der Stadt und stärkte ihre wirtschaftlichen Verbindungen zur Ruhrregion und zum Rheinland." },
+                        { text: "Zu Beginn des 20. Jahrhunderts war Velbert bereits eine dicht besiedelte Industriestadt, die stark auf den Export von Metallwaren und technischen Komponenten ausgerichtet war." },
+                        { text: "Während des Zweiten Weltkriegs wurde die Stadt nicht vollständig zerstört, war jedoch Ziel von Luftangriffen, bei denen Industrieanlagen und Teile der Wohnbebauung beschädigt wurden; die Zerstörungen blieben im Vergleich zu großen Städten des Ruhrgebiets jedoch moderat." },
+                        { text: "Nach 1945 erholte sich Velbert schnell infolge der hohen Nachfrage nach Industrieprodukten und wurde Teil des wirtschaftlichen Aufschwungs der Bundesrepublik Deutschland (Wirtschaftswunder)." },
+                        { text: "Das heutige Velbert entstand im Jahr 1975 durch den Zusammenschluss der zuvor selbstständigen Städte Velbert, Neviges und Langenberg im Zuge der Gebietsreform." },
+                        { text: "In der zweiten Hälfte des 20. Jahrhunderts verringerte die Stadt ihre Abhängigkeit von der Schwerindustrie und entwickelte eine stärker diversifizierte Wirtschaft, unter anderem im Maschinenbau und in der Feinmechanik." },
+                        { text: "Heute verbindet Velbert sein industrielles Erbe mit einer zunehmend als grün wahrgenommenen Wohnlage zwischen dem Ruhrgebiet und dem Bergischen Land." }
+                    ]
+                },
+                meta: {
+                    title: "Velbert – Stadt der Schlösser und Industrie in Nordrhein-Westfalen",
+                    description: "Velbert: eine Stadt im Kreis Mettmann, bekannt für Schlossindustrie, Museum und grüne Landschaften im Bergischen Land.",
+                    ogTitle: "Velbert – Stadt der Schlösser und Metallindustrie",
+                    ogDescription: "Entdecken Sie Velbert: Geschichte, Industrie und Natur.",
+                    ogImage: "https://upload.wikimedia.org/wikipedia/commons/..."
+                }
+            }
+        }
+    },
+
+    // округ Köln 
+    // край аахен
+    {
+        id: "monschau",
+        path: "monschau",
+        countryPath: "germany", regionPath: "nrw", districtPath: "koln", subRegionPath: "aachen",
+        gerb: "Germany/nrw/koln/Aachen/monschau/gerb.png",
+        coord: { lat: 50.5545, lng: 6.2408 },
+        translations: {
+            ru: {
+                name: 'Моншау',
+                subRegionName: "Аахен",
+                desc: {
+                    general: [{ text: 'Моншау (нем. Monschau) расположен в западной части Германии, в регионе Айфель земли Северный Рейн-Вестфалия, недалеко от границы с Бельгией. Город известен своей исторической архитектурой, уютными улочками с фахверковыми домами и живописными видами на реку Рур.' },],
+                    population: [{ bold: 'Население', text: ' города составляет около 13 000 человек (по состоянию на 31 декабря 2024 года).' }],
+                    area: [{ bold: 'Площадь:', text: ' муниципалитета составляет около 110 км². Значительная часть территории занята лесами, природными парками и реками.' }],
+                    postalCode: [{ bold: 'Почтовые индексы:', text: ' 52156' }],
+                    phone: [{ bold: 'Телефонный код:', text: ' +49 2472' }],
+                    officialSite: [{ bold: 'Официальный сайт Моншау', link: 'https://www.monschau.de/' }],
+                    education: [{ bold: 'Система образования', text: ' – в городе есть начальные школы, одна средняя школа (Gesamtschule) и специализированные учебные заведения в округе. Для получения высшего образования жители обычно обращаются в университеты и высшие школы прикладных наук (Fachhochschule) соседних городов.' }],
+                    culture: [{ bold: 'Культурные активности', text: ' – Моншау славится фестивалями, рождественскими ярмарками, выставками и мероприятиями на свежем воздухе. Туристов привлекают мастерские ремесленников, музеи и прогулки вдоль старинных улиц.' }],
+                },
+                geography: {
+                    title: 'География',
+                    items: [
+                        { text: 'Моншау расположен в долине реки Рур и окружён холмами Айфеля. Рельеф пересечённый, улицы извилистые, перепады высот заметны в историческом центре. Средняя отметка города около 300 м над уровнем моря.' },
+                        { bold: 'Природа и геология', text: 'Регион характеризуется породами девонского периода, многочисленными лесными массивами и реками, формирующими живописный ландшафт. Район богат на природные тропы и пешеходные маршруты.' },
+                        { bold: 'Близость к границе', text: 'Моншау находится в непосредственной близости от границы с Бельгией, что исторически влияло на торговлю и культурные связи. Туристы могут легко совершать поездки и походы в соседние бельгийские города и лесные массивы Айфеля.' }
+                    ]
+                },
+                notablePeople: {
+                    title: 'Знаменитые люди Моншау',
+                    items: [
+                        { bold: 'Анна Вирц (Anna Wirtz, 1901-1985)', text: ' – местная художница, работавшая в стиле натурализма, чьи работы часто изображали пейзажи Айфеля.' },
+                        { bold: 'Йоханнес Кох (Johannes Koch, 1942-2010)', text: ' – историк региона, автор книг о культуре и ремёслах Моншау.' },
+                        { bold: 'Генрих Штейн (Heinrich Stein, 1870-1952)', text: ' – мастер фахверковой архитектуры, принимавший участие в реставрации исторических домов Моншау.' },
+                        { bold: 'Мария Кляйн (Maria Klein, 1912-1990)', text: ' – местная художница и ремесленница, известная изделиями из дерева и традиционной росписью фасадов фахверковых домов.' }
+                    ]
+                },
+                interestingFacts: {
+                    title: 'Интересные факты',
+                    items: [
+                        { bold: 'Фахверковые дома', text: ' – исторический центр Моншау известен своими деревянными фахверковыми домами XVII-XVIII веков, которые сохраняются до сих пор.' },
+                        { bold: 'Рождественская ярмарка', text: ' – ежегодное событие, собирающее туристов со всей Германии и соседних стран.' },
+                        { bold: 'Малый, но туристически значимый город', text: ' – несмотря на небольшое население, Моншау привлекает множество туристов благодаря своей живописной архитектуре, музеям и природным маршрутам.' },
+                        { bold: 'Природные маршруты', text: ' – Моншау является отправной точкой для многочисленных пешеходных и велосипедных маршрутов по холмам Айфеля, включая живописные тропы вдоль реки Рур и лесные тропы, которые привлекают любителей активного отдыха.' },
+                        { bold: 'Заповедные зоны', text: ' – рядом с городом находятся природные парки и охраняемые территории, где можно наблюдать местную флору и фауну, устраивать пикники и короткие прогулки на свежем воздухе.' }
+                    ]
+                },
+                briefHistory: {
+                    title: 'История',
+                    items: [
+                        { text: 'Моншау впервые упоминается в XI веке как небольшое саксонское поселение в долине Рура. Благодаря удобному расположению на торговых путях между Рейном и регионами Айфеля, город постепенно стал центром местной торговли и ремёсел.' },
+                        { text: 'В средние века Моншау славился ткацкой промышленностью и производством шерсти: городские мастерские поставляли текстиль по всей Западной Германии. Для поддержки торговли строились складские помещения, мосты и узкие мощёные улицы, которые сохранились до наших дней.' },
+                        { text: 'XVII–XVIII века были непростыми: город переживал военные конфликты и эпидемии, но историческая застройка в центре осталась почти нетронутой. Многие фахверковые дома того времени до сих пор активно используются, а их черепичные крыши и резные фасады стали символом Моншау.' },
+                        { text: 'С XIX века город постепенно превращается в туристический центр: живописные улочки, старинные мосты и близость к природным тропам Айфеля привлекали отдыхающих. В этот период открываются гостиницы, кофейни и мастерские ремесленников, формируя туристическую инфраструктуру.' },
+                        { text: 'В XX веке Моншау пережил события Второй мировой войны. Хотя город не был крупным промышленным центром, через регион проходили пути отступления немецкой армии и продвижения союзников. Город подвергался воздушным налётам и артиллерийским обстрелам, но большинство исторических зданий осталось неповреждённым. После войны Моншау быстро восстановился и развился как туристический центр, сохранив культурное наследие и старинную архитектуру.' },
+                        { text: 'Сегодня Моншау сочетает богатую историю с природной красотой: старинная архитектура, музеи, мастерские ремесленников и окружающие леса делают город уникальным примером гармонии культуры и природы в Айфеле. Рождественские ярмарки, фестивали и туристические маршруты привлекают гостей круглый год.' }
+                    ]
+                },
+                meta: {
+                    title: "Моншау – исторический город с фахверковыми домами и природой Айфеля",
+                    description: "Моншау: история, география, знаменитые жители и интересные факты о живописном городе Айфеля в земле Северный Рейн-Вестфалия.",
+                    ogTitle: "Моншау – информация о городе",
+                    ogDescription: "Подробная информация о Моншау: культура, история, выдающиеся личности и уникальная архитектура исторического центра.",
+                    ogImage: "https://our-travels.info/foto/Germany/nrw/koln/Aachen/monschau/002.jpg"
+                }
+            },
+            ua: {
+                name: 'Моншау',
+                subRegionName: "Аахен",
+                desc: {
+                    general: [{ text: 'Моншау (нім. Monschau) розташований у західній частині Німеччини, у регіоні Айфель землі Північний Рейн-Вестфалія, недалеко від кордону з Бельгією. Місто відоме своєю історичною архітектурою, затишними вуличками з фахверковими будинками та мальовничими видами на річку Рур.' }],
+                    population: [{ bold: 'Населення', text: ' міста становить близько 13 000 осіб (станом на 31 грудня 2024 року).' }],
+                    area: [{ bold: 'Площа:', text: ' муніципалітету становить близько 110 км². Значну частину території займають ліси, природні парки та річки.' }],
+                    postalCode: [{ bold: 'Поштові індекси:', text: ' 52156' }],
+                    phone: [{ bold: 'Телефонний код:', text: ' +49 2472' }],
+                    officialSite: [{ bold: 'Офіційний сайт Моншау', link: 'https://www.monschau.de/' }],
+                    education: [{ bold: 'Освітня система', text: ' – у місті є початкові школи, одна середня школа (Gesamtschule) та спеціалізовані навчальні заклади в окрузі. Для отримання вищої освіти мешканці зазвичай звертаються до університетів та вищих шкіл прикладних наук (Fachhochschule) сусідніх міст.' }],
+                    culture: [{ bold: 'Культурні активності', text: ' – Моншау славиться фестивалями, різдвяними ярмарками, виставками та заходами на свіжому повітрі. Туристів приваблюють майстерні ремісників, музеї та прогулянки старовинними вулицями.' }],
+                },
+                geography: {
+                    title: 'Географія',
+                    items: [
+                        { text: 'Моншау розташований у долині річки Рур та оточений пагорбами Айфеля. Рельєф пересічений, вулиці звивисті, перепади висот помітні в історичному центрі. Середня відмітка міста близько 300 м над рівнем моря.' },
+                        { bold: 'Природа та геологія', text: 'Регіон характеризується породами девонського періоду, численними лісовими масивами та річками, які формують мальовничий ландшафт. Район багатий на природні стежки та пішохідні маршрути.' },
+                        { bold: 'Близькість до кордону', text: 'Моншау знаходиться в безпосередній близькості до кордону з Бельгією, що історично впливало на торгівлю та культурні зв’язки. Туристи можуть легко здійснювати поїздки та походи у сусідні бельгійські міста та лісові масиви Айфеля.' }
+                    ]
+                },
+                notablePeople: {
+                    title: 'Відомі люди Моншау',
+                    items: [
+                        { bold: 'Анна Вірц (Anna Wirtz, 1901-1985)', text: ' – місцева художниця, що працювала у стилі натуралізму, чиї роботи часто зображували пейзажі Айфеля.' },
+                        { bold: 'Йоганнес Кох (Johannes Koch, 1942-2010)', text: ' – історик регіону, автор книг про культуру та ремесла Моншау.' },
+                        { bold: 'Генріх Штайн (Heinrich Stein, 1870-1952)', text: ' – майстер фахверкової архітектури, який брав участь у реставрації історичних будинків Моншау.' },
+                        { bold: 'Марія Кляйн (Maria Klein, 1912-1990)', text: ' – місцева художниця та ремісниця, відома виробами з дерева та традиційним розписом фасадів фахверкових будинків.' }
+                    ]
+                },
+                interestingFacts: {
+                    title: 'Цікаві факти',
+                    items: [
+                        { bold: 'Фахверкові будинки', text: ' – історичний центр Моншау відомий своїми дерев’яними фахверковими будинками XVII-XVIII століть, які збереглися до наших днів.' },
+                        { bold: 'Різдвяний ярмарок', text: ' – щорічна подія, що збирає туристів з усієї Німеччини та сусідніх країн.' },
+                        { bold: 'Малий, але туристично значущий місто', text: ' – незважаючи на невелике населення, Моншау приваблює безліч туристів завдяки мальовничій архітектурі, музеям та природним маршрутам.' },
+                        { bold: 'Природні маршрути', text: ' – Моншау є відправною точкою для численних пішохідних та велосипедних маршрутів по пагорбах Айфеля, включаючи мальовничі стежки вздовж річки Рур та лісові маршрути, що приваблюють любителів активного відпочинку.' },
+                        { bold: 'Заповідні зони', text: ' – поруч із містом розташовані природні парки та охоронювані території, де можна спостерігати місцеву флору та фауну, влаштовувати пікніки та короткі прогулянки на свіжому повітрі.' }
+                    ]
+                },
+                briefHistory: {
+                    title: 'Історія',
+                    items: [
+                        { text: 'Моншау вперше згадується у XI столітті як невелике саксонське поселення в долині Рура. Завдяки зручному розташуванню на торгових шляхах між Рейном та регіонами Айфеля, місто поступово стало центром місцевої торгівлі та ремесел.' },
+                        { text: 'У середні віки Моншау славився ткацькою промисловістю та виробництвом вовни: міські майстерні постачали текстиль по всій Західній Німеччині. Для підтримки торгівлі будувалися складські приміщення, мости та вузькі мощені вулиці, які збереглися до наших днів.' },
+                        { text: 'XVII–XVIII століття були непростими: місто переживало військові конфлікти та епідемії, але історична забудова в центрі залишилася майже непошкодженою. Багато фахверкових будинків того часу досі активно використовуються, а їх черепичні дахи та різьблені фасади стали символом Моншау.' },
+                        { text: 'З XIX століття місто поступово перетворюється на туристичний центр: мальовничі вулички, старовинні мости та близькість до природних стежок Айфеля приваблювали відпочивальників. У цей період відкриваються готелі, кав’ярні та майстерні ремісників, формуючи туристичну інфраструктуру.' },
+                        { text: 'У XX столітті Моншау пережив події Другої світової війни. Хоча місто не було великим промисловим центром, через регіон проходили шляхи відступу німецької армії та просування союзників. Місто піддавалося повітряним нальотам та артилерійським обстрілам, але більшість історичних будівель залишилася неушкодженою. Після війни Моншау швидко відновився та розвинувся як туристичний центр, зберігши культурну спадщину та старовинну архітектуру.' },
+                        { text: 'Сьогодні Моншау поєднує багату історію з природною красою: старовинна архітектура, музеї, майстерні ремісників та навколишні ліси роблять місто унікальним прикладом гармонії культури та природи в Айфелі. Різдвяні ярмарки, фестивалі та туристичні маршрути приваблюють гостей цілий рік.' }
+                    ]
+                },
+                meta: {
+                    title: "Моншау – історичне місто з фахверковими будинками та природою Айфеля",
+                    description: "Моншау: історія, географія, відомі жителі та цікаві факти про мальовниче місто Айфеля в землі Північний Рейн-Вестфалія.",
+                    ogTitle: "Моншау – інформація про місто",
+                    ogDescription: "Детальна інформація про Моншау: культура, історія, видатні особистості та унікальна архітектура історичного центру.",
+                    ogImage: "https://our-travels.info/foto/Germany/nrw/koln/Aachen/monschau/002.jpg"
+                }
+            },
+            de: {
+                name: 'Monschau',
+                subRegionName: "Aachen",
+                desc: {
+                    general: [{ text: 'Monschau (dt. Monschau) liegt im Westen Deutschlands, in der Region Eifel des Bundeslandes Nordrhein-Westfalen, in der Nähe der Grenze zu Belgien. Die Stadt ist bekannt für ihre historische Architektur, gemütliche Straßen mit Fachwerkhäusern und malerische Ausblicke auf die Rur.' }],
+                    population: [{ bold: 'Einwohnerzahl', text: ' der Stadt beträgt etwa 13.000 Personen (Stand 31. Dezember 2024).' }],
+                    area: [{ bold: 'Fläche:', text: ' der Gemeinde beträgt etwa 110 km². Ein großer Teil der Fläche ist von Wäldern, Naturparks und Flüssen bedeckt.' }],
+                    postalCode: [{ bold: 'Postleitzahlen:', text: ' 52156' }],
+                    phone: [{ bold: 'Telefonvorwahl:', text: ' +49 2472' }],
+                    officialSite: [{ bold: 'Offizielle Webseite von Monschau', link: 'https://www.monschau.de/' }],
+                    education: [{ bold: 'Bildungssystem', text: ' – In der Stadt gibt es Grundschulen, eine Gesamtschule und spezialisierte Bildungseinrichtungen im Kreis. Für ein Hochschulstudium wenden sich die Bewohner in der Regel an Universitäten und Fachhochschulen der Nachbarstädte.' }],
+                    culture: [{ bold: 'Kulturelle Aktivitäten', text: ' – Monschau ist bekannt für Festivals, Weihnachtsmärkte, Ausstellungen und Veranstaltungen im Freien. Touristen werden von Handwerkswerkstätten, Museen und Spaziergängen durch die historischen Straßen angezogen.' }],
+                },
+                geography: {
+                    title: 'Geografie',
+                    items: [
+                        { text: 'Monschau liegt im Tal der Rur und ist von den Hügeln der Eifel umgeben. Das Gelände ist hügelig, die Straßen sind verwinkelt, und die Höhenunterschiede im historischen Zentrum sind deutlich sichtbar. Die durchschnittliche Höhe der Stadt beträgt etwa 300 m über dem Meeresspiegel.' },
+                        { bold: 'Natur und Geologie', text: 'Die Region ist durch Gesteine des Devon-Zeitalters, zahlreiche Waldgebiete und Flüsse geprägt, die eine malerische Landschaft bilden. Das Gebiet ist reich an Naturpfaden und Wanderwegen.' },
+                        { bold: 'Grenznähe', text: 'Monschau liegt in unmittelbarer Nähe zur Grenze zu Belgien, was historisch den Handel und kulturelle Verbindungen beeinflusste. Touristen können leicht Ausflüge und Wanderungen in die benachbarten belgischen Städte und Waldgebiete der Eifel unternehmen.' }
+                    ]
+                },
+                notablePeople: {
+                    title: 'Berühmte Persönlichkeiten aus Monschau',
+                    items: [
+                        { bold: 'Anna Wirtz (1901-1985)', text: ' – lokale Künstlerin, die im Stil des Naturalismus arbeitete und deren Werke oft Landschaften der Eifel darstellen.' },
+                        { bold: 'Johannes Koch (1942-2010)', text: ' – Regionalhistoriker, Autor von Büchern über die Kultur und das Handwerk von Monschau.' },
+                        { bold: 'Heinrich Stein (1870-1952)', text: ' – Fachwerkarchitekt, der an der Restaurierung historischer Häuser in Monschau beteiligt war.' },
+                        { bold: 'Maria Klein (1912-1990)', text: ' – lokale Künstlerin und Handwerkerin, bekannt für Holzarbeiten und traditionelle Fassadenmalerei an Fachwerkhäusern.' }
+                    ]
+                },
+                interestingFacts: {
+                    title: 'Interessante Fakten',
+                    items: [
+                        { bold: 'Fachwerkhäuser', text: ' – Das historische Zentrum von Monschau ist bekannt für seine hölzernen Fachwerkhäuser aus dem 17.–18. Jahrhundert, die bis heute erhalten sind.' },
+                        { bold: 'Weihnachtsmarkt', text: ' – Jährliches Ereignis, das Touristen aus ganz Deutschland und den Nachbarländern anzieht.' },
+                        { bold: 'Kleine, aber touristisch bedeutende Stadt', text: ' – Trotz der geringen Einwohnerzahl zieht Monschau viele Touristen durch seine malerische Architektur, Museen und Naturwege an.' },
+                        { bold: 'Naturpfade', text: ' – Monschau ist Ausgangspunkt zahlreicher Wander- und Radwege durch die Hügel der Eifel, einschließlich malerischer Pfade entlang der Rur und Waldwege, die Naturliebhaber anziehen.' },
+                        { bold: 'Naturschutzgebiete', text: ' – In der Nähe der Stadt befinden sich Naturparks und geschützte Gebiete, in denen man die lokale Flora und Fauna beobachten, Picknicks veranstalten und kurze Spaziergänge an der frischen Luft unternehmen kann.' }
+                    ]
+                },
+                briefHistory: {
+                    title: 'Geschichte',
+                    items: [
+                        { text: 'Monschau wird erstmals im 11. Jahrhundert als kleines sächsisches Dorf im Rurtal erwähnt. Aufgrund der günstigen Lage an Handelswegen zwischen dem Rhein und den Regionen der Eifel entwickelte sich die Stadt allmählich zum Zentrum des lokalen Handels und Handwerks.' },
+                        { text: 'Im Mittelalter war Monschau für seine Weberei und Wollproduktion bekannt: Die städtischen Werkstätten lieferten Textilien in ganz Westdeutschland. Zur Unterstützung des Handels wurden Lagerhäuser, Brücken und enge gepflasterte Straßen gebaut, die bis heute erhalten sind.' },
+                        { text: 'Die Jahrhunderte XVII–XVIII waren schwierig: Die Stadt erlebte militärische Konflikte und Epidemien, aber die historische Bebauung im Zentrum blieb nahezu unversehrt. Viele Fachwerkhäuser aus dieser Zeit werden noch aktiv genutzt, und ihre Ziegeldächer und geschnitzten Fassaden sind ein Symbol für Monschau.' },
+                        { text: 'Ab dem 19. Jahrhundert verwandelt sich die Stadt allmählich in ein Touristenzentrum: malerische Gassen, alte Brücken und die Nähe zu Naturpfaden der Eifel zogen Urlauber an. In dieser Zeit eröffneten Hotels, Cafés und Handwerkswerkstätten, wodurch die touristische Infrastruktur entstand.' },
+                        { text: 'Im 20. Jahrhundert erlebte Monschau die Ereignisse des Zweiten Weltkriegs. Obwohl die Stadt kein bedeutendes Industriezentrum war, führten Truppenrückzüge der deutschen Armee und das Vorrücken der Alliierten durch die Region. Die Stadt wurde Luftangriffen und Artilleriebeschuss ausgesetzt, aber die meisten historischen Gebäude blieben unbeschädigt. Nach dem Krieg erholte sich Monschau schnell und entwickelte sich als Touristenzentrum weiter, wobei das kulturelle Erbe und die historische Architektur erhalten blieben.' },
+                        { text: 'Heute verbindet Monschau reiche Geschichte mit natürlicher Schönheit: historische Architektur, Museen, Handwerkswerkstätten und die umliegenden Wälder machen die Stadt zu einem einzigartigen Beispiel für die Harmonie von Kultur und Natur in der Eifel. Weihnachtsmärkte, Festivals und Wanderwege ziehen das ganze Jahr über Besucher an.' }
+                    ]
+                },
+                meta: {
+                    title: "Monschau – historische Stadt mit Fachwerkhäusern und Natur der Eifel",
+                    description: "Monschau: Geschichte, Geografie, bekannte Bewohner und interessante Fakten über die malerische Stadt in der Eifel, Bundesland Nordrhein-Westfalen.",
+                    ogTitle: "Monschau – Informationen über die Stadt",
+                    ogDescription: "Detaillierte Informationen über Monschau: Kultur, Geschichte, herausragende Persönlichkeiten und die einzigartige Architektur des historischen Zentrums.",
+                    ogImage: "https://our-travels.info/foto/Germany/nrw/koln/Aachen/monschau/002.jpg"
+                }
+            }
+        }
+    },
+
+    // Rhein-Erft-Kreis
+    {
+        id: "bruhl",
+        path: "bruhl",
+        countryPath: "germany", regionPath: "nrw", districtPath: "koln", subRegionPath: "rhein_erft",
+        gerb: "Germany/nrw/koln/Rhein-Erft-Kreis/bruhl/gerb.png",
+        coord: { lat: 50.8293, lng: 6.9050 },
+        translations: {
+            ru: {
+                name: 'Брюль',
+                subRegionName: "Рейн-Эрфт",
+                desc: {
+                    general: [
+                        { text: 'Город в земле Северный Рейн-Вестфалия' }
+                    ],
+                    population: [
+                        { bold: 'Население:' },
+                        { text: ' 44 260 человек (2010)' }
+                    ],
+                    area: [
+                        { bold: 'Площадь:' },
+                        { text: ' 36,12 км²' }
+                    ],
+                    postalCode: [
+                        { bold: 'Почтовый индекс:' },
+                        { text: ' 50321' }
+                    ],
+                    phone: [
+                        { bold: 'Телефонный код:' },
+                        { text: ' +49 2232' }
+                    ],
+                    officialSite: [
+                        { bold: 'Официальный сайт Брюля', link: 'https://www.bruehl.de' }
+                    ],
+                },
+                interestingFacts: {
+                    title: 'Интересные факты',
+                    items: [
+                        { text: 'Брюль называют "Bruhl bei Köln", так как город находится всего в 15 км от Кёльна.' },
+                        { text: 'Лёгкая доступность: трамвай №18 и пригородные поезда связывают Брюль с Кёльном и Бонном.' },
+                        { text: 'Фантазиаленд – один из крупнейших парков Германии, расположен в Брюле.' }
+                    ]
+                },
+                notablePeople: {
+                    title: 'Знаменитые люди',
+                    items: [
+                        { bold: 'Штеффи Граф', text: ' знаменитая теннисистка, родилась в Брюле. В 1988 году стала почётным гражданином города.' },
+                        { bold: 'Макс Эрнст', text: ' сюрреалистический художник, родившийся в Брюле.' }
+                    ]
+                },
+                briefHistory: {
+                    title: 'Краткая история',
+                    items: [
+                        { text: 'Первое упоминание о Брюле датируется 1180 годом, когда архиепископ Кёльнский Филипп фон Хайнсберг построил манор.' },
+                        { text: 'В 1285 году город получил права города от архиепископа Зигфрида фон Вестербурга.' },
+                        { text: 'С 1469 года Брюль стал официальной резиденцией архиепископов Кёльнских на более чем 150 лет.' }
+                    ]
+                },
+                meta: {
+                    title: "Брюль – город в земле Северный Рейн-Вестфалия",
+                    description: "Брюль: история, достопримечательности, известные люди и интересные факты города.",
+                    ogTitle: "Брюль – информация о городе",
+                    ogDescription: "Подробная информация о Брюле: культура, история, знаменитые жители и интересные факты.",
+                    ogImage: "https://our-travels.info/foto/Germany/nrw/koln/Rhein-Erft-Kreis/bruhl/bruhel_palaces/001.jpg"
+                }
+            },
+            ua: {
+                name: 'Брюль',
+                subRegionName: "Рейн-Ерфт",
+                desc: {
+                    general: [
+                        { text: 'Місто в землі Північний Рейн-Вестфалія' }
+                    ],
+                    population: [
+                        { bold: 'Населення:' },
+                        { text: ' 44 260 осіб (2010)' }
+                    ],
+                    area: [
+                        { bold: 'Площа:' },
+                        { text: ' 36,12 км²' }
+                    ],
+                    postalCode: [
+                        { bold: 'Поштовий індекс:' },
+                        { text: ' 50321' }
+                    ],
+                    phone: [
+                        { bold: 'Телефонний код:' },
+                        { text: ' +49 2232' }
+                    ],
+                    officialSite: [
+                        { bold: 'Офіційний сайт Брюля', link: 'https://www.bruehl.de' }
+                    ],
+                },
+                interestingFacts: {
+                    title: 'Цікаві факти',
+                    items: [
+                        { text: 'Брюль називають "Bruhl bei Köln", оскільки місто розташоване всього за 15 км від Кельна.' },
+                        { text: 'Зручна доступність: трамвай №18 та приміські потяги з’єднують Брюль із Кельном і Бонном.' },
+                        { text: 'Фантазіяленд – один із найбільших парків Німеччини, розташований у Брюлі.' }
+                    ]
+                },
+                notablePeople: {
+                    title: 'Відомі люди',
+                    items: [
+                        { bold: 'Штеффі Граф', text: ' знаменита тенісистка, народилася у Брюлі. У 1988 році стала почесною громадянкою міста.' },
+                        { bold: 'Макс Ернст', text: ' сюрреалістичний художник, який народився у Брюлі.' }
+                    ]
+                },
+                briefHistory: {
+                    title: 'Коротка історія',
+                    items: [
+                        { text: 'Перша згадка про Брюль датується 1180 роком, коли кельнський архієпископ Філіп фон Хайнсберг збудував маєток.' },
+                        { text: 'У 1285 році місто отримало міські права від архієпископа Зігфріда фон Вестербурга.' },
+                        { text: 'З 1469 року Брюль став офіційною резиденцією кельнських архієпископів більш ніж на 150 років.' }
+                    ]
+                },
+                meta: {
+                    title: "Брюль – місто у землі Північний Рейн-Вестфалія",
+                    description: "Брюль: історія, визначні місця, відомі люди та цікаві факти міста.",
+                    ogTitle: "Брюль – інформація про місто",
+                    ogDescription: "Детальна інформація про Брюль: культура, історія, відомі мешканці та цікаві факти.",
+                    ogImage: "https://our-travels.info/foto/Germany/nrw/koln/Rhein-Erft-Kreis/bruhl/bruhel_palaces/001.jpg"
+                }
+            },
+            de: {
+                name: 'Brühl',
+                subRegionName: "Rhein-Erft",
+                desc: {
+                    general: [
+                        { text: 'Stadt im Bundesland Nordrhein-Westfalen' }
+                    ],
+                    population: [
+                        { bold: 'Einwohnerzahl:' },
+                        { text: ' 44.260 Menschen (2010)' }
+                    ],
+                    area: [
+                        { bold: 'Fläche:' },
+                        { text: ' 36,12 km²' }
+                    ],
+                    postalCode: [
+                        { bold: 'Postleitzahl:' },
+                        { text: ' 50321' }
+                    ],
+                    phone: [
+                        { bold: 'Telefonvorwahl:' },
+                        { text: ' +49 2232' }
+                    ],
+                    officialSite: [
+                        { bold: 'Offizielle Website von Brühl', link: 'https://www.bruehl.de' }
+                    ],
+                },
+                interestingFacts: {
+                    title: 'Interessante Fakten',
+                    items: [
+                        { text: 'Brühl wird „Brühl bei Köln“ genannt, da die Stadt nur 15 km von Köln entfernt liegt.' },
+                        { text: 'Gute Erreichbarkeit: Die Straßenbahn Nr. 18 und Regionalzüge verbinden Brühl mit Köln und Bonn.' },
+                        { text: 'Phantasialand – einer der größten Freizeitparks Deutschlands, befindet sich in Brühl.' }
+                    ]
+                },
+                notablePeople: {
+                    title: 'Bekannte Persönlichkeiten',
+                    items: [
+                        { bold: 'Steffi Graf', text: ' berühmte Tennisspielerin, geboren in Brühl. 1988 wurde sie Ehrenbürgerin der Stadt.' },
+                        { bold: 'Max Ernst', text: ' surrealistischer Maler, der in Brühl geboren wurde.' }
+                    ]
+                },
+                briefHistory: {
+                    title: 'Kurze Geschichte',
+                    items: [
+                        { text: 'Die erste Erwähnung von Brühl stammt aus dem Jahr 1180, als der Kölner Erzbischof Philipp von Heinsberg ein Herrenhaus errichtete.' },
+                        { text: 'Im Jahr 1285 erhielt die Stadt Stadtrechte vom Erzbischof Siegfried von Westerburg.' },
+                        { text: 'Ab 1469 wurde Brühl für mehr als 150 Jahre zur offiziellen Residenz der Kölner Erzbischöfe.' }
+                    ]
+                },
+                meta: {
+                    title: "Brühl – Stadt in Nordrhein-Westfalen",
+                    description: "Brühl: Geschichte, Sehenswürdigkeiten, berühmte Persönlichkeiten und interessante Fakten der Stadt.",
+                    ogTitle: "Brühl – Informationen zur Stadt",
+                    ogDescription: "Detaillierte Informationen über Brühl: Kultur, Geschichte, berühmte Einwohner und interessante Fakten.",
+                    ogImage: "https://our-travels.info/foto/Germany/nrw/koln/Rhein-Erft-Kreis/bruhl/bruhel_palaces/001.jpg"
+                }
+            }
+        }
+    },
+    {
+        id: "frechen",
+        path: "frechen",
+        countryPath: "germany", regionPath: "nrw", districtPath: "koln", subRegionPath: "rhein_erft",
+        gerb: "Germany/nrw/koln/Rhein-Erft-Kreis/frechen/gerb.png",
+        coord: { lat: 50.9167, lng: 6.8167 },
+        translations: {
+            ru: {
+                name: 'Фрехен',
+                subRegionName: "Рейн-Эрфт",
+                desc: {
+                    general: [
+                        { text: 'Фрехен – город в земле Северный Рейн-Вестфалия, входящий в район Рейн-Эрфт и расположенный всего в 10 км к западу от Кёльна.' },
+                        { text: ' Город известен своим историческим гончарным производством, промышленным развитием и близостью к Рейнско-Рурскому региону.' }
+                    ],
+                    population: [{ bold: 'Население:', text: ' около 52 000 человек (2025)' }],
+                    area: [
+                        { bold: 'Площадь:', text: ' примерно 45,1 км²' },
+                        { text: " Город административно делится на следующие районы: Фрехен-центр (Frechen), Бахем (Bachem), Бушбель (Buschbell), Хаббельрат (Habbelrath), Кёнигсдорф (Königsdorf), Грёфрат (Grefrath) и Хюхельн (Hücheln)." }
+                    ],
+                    postalCode: [{ bold: 'Почтовый индекс:', text: ' 50226' }],
+                    phone: [{ bold: 'Телефонный код:', text: ' +49 02234' }],
+                    officialSite: [{ bold: 'Официальный сайт Фрехена', link: 'https://www.frechen.de/' }]
+                },
+                geography: {
+                    title: 'География',
+                    items: [
+                        { text: 'Фрехен расположен на западной окраине Кёльна и является частью агломерации Рейнско-Рурского региона.' },
+                        { text: 'Высота над уровнем моря варьируется от 58 до 158 метров, город находится на склонах возвышенности Вилле (Ville).' },
+                        { text: 'Через город проходят важные транспортные артерии: автомагистрали A1, A4 и A61, что обеспечивает хорошую связь с Кёльном, Бонном и Аахеном.' },
+                        { text: 'Город окружён зелёными зонами и небольшими лесами, а также старыми промышленными карьерами, некоторые из которых превращены в зоны отдыха.' }
+                    ]
+                },
+                notablePeople: {
+                    title: 'Знаменитые люди Фрехена',
+                    isList: true,
+                    items: [
+                        { bold: 'Айо', text: ' – немецко-нигерийская певица и автор песен, родившаяся во Фрехене.' },
+                        { bold: 'Кирстен Болм', text: ' – легкоатлетка, чемпионка Германии в беге с барьерами.' },
+                        { bold: 'Уэйн Карпендейл', text: ' – актёр и телеведущий.' },
+                        { bold: 'Пьер Фогель', text: ' – известный исламский проповедник, выросший во Фрехене.' },
+                        { bold: 'Ханна Мойль', text: ' – профессиональная скалолазка, представительница Германии на международных соревнованиях.' },
+                        { bold: 'Марсель Хеллер', text: ' – немецкий футболист, игравший в Бундеслиге.' },
+                        { bold: 'Зоня Бертрам', text: ' – актриса театра и телевидения.' }
+                    ]
+                },
+                interestingFacts: {
+                    title: "Интересные факты",
+                    isList: true,
+                    items: [
+                        { bold: "Город керамики", text: " – Фрехен исторически известен как один из центров производства керамики и каменной посуды (Steinzeug) в Европе. Изделия из Фрехена экспортировались в разные страны ещё в раннее Новое время." },
+                        { bold: "Бартманские кувшины", text: " – именно здесь производились знаменитые «Bartmannkrüge» (кувшины с лицом бородатого мужчины), которые стали символом рейнской керамики XVI–XVII веков." },
+                        { bold: "Добыча бурого угля", text: " – в XX веке регион активно развивался благодаря добыче бурого угля (Braunkohle), что оказало значительное влияние на экономику и ландшафт города." },
+                        { bold: "Переход к рекультивации", text: " – после сокращения добычи угля бывшие карьеры были частично рекультивированы и превращены в зелёные зоны и места отдыха." },
+                        { bold: "Близость к Кёльну", text: " – Фрехен расположен непосредственно на западной границе Кёльна и фактически входит в его агломерацию, что делает город привлекательным для проживания при работе в мегаполисе." },
+                        { bold: "Транспортная доступность", text: " – город имеет хорошее сообщение с Кёльном благодаря линии Stadtbahn (трамвай-метро), что обеспечивает быстрый доступ к центру города." },
+                        { bold: "Современная экономика", text: " – сегодня Фрехен сочетает промышленное наследие с развитием логистики, торговли и сервисного сектора." }
+                    ]
+                },
+                briefHistory: {
+                    title: 'История',
+                    items: [
+                        { text: 'Фрехен впервые упоминается в документах в 877 году, что делает его одним из старейших населённых пунктов региона.' },
+                        { text: 'В средневековье, в 1257 году, в Фрехене произошло сражение между Конрадом фон Хохштаденом (архиепископом Кёльна) и жителями города. Это показывает, что Фрехен уже тогда был важным местом с политическим и стратегическим значением.' },
+                        { text: 'С XVI века город стал известен благодаря развитию гончарного производства — особенно производству «бородатых кувшинов» (Bartmannskrüge), которые экспортировались по всей Европе.' },
+                        { text: 'В XVIII–XIX веках в окрестностях Фрехена началась добыча бурого угля, что превратило город в промышленный центр.' },
+                        { text: 'После Второй мировой войны Фрехен активно развивался как промышленный и жилой пригород Кёльна.' },
+                        { text: '2 сентября 1951 года Фрехен получил официальный статус города, после чего к нему были присоединены деревни Бахем, Хюхельн и Бушбелль.' },
+                        { text: 'В 1975 году в результате административной реформы к Фрехену были присоединены соседние посёлки Грефрат, Хаббелрат, Кёнигсдорф и Нойфраймерсдорф.' },
+                        { text: 'Сегодня Фрехен – современный город с историческим центром, музеем керамики и развитой инфраструктурой, популярный среди жителей Кёльна как место для жизни и отдыха.' }
+                    ]
+                },
+                meta: {
+                    title: "Фрехен – город керамики у западных ворот Кёльна",
+                    description: "Фрехен: история, география, знаменитые жители и интересные факты о городе керамики в земле Северный Рейн-Вестфалия.",
+                    ogTitle: "Фрехен – информация о городе",
+                    ogDescription: "Подробная информация о Фрехене: культура, история, знаменитые жители и интересные факты.",
+                    ogImage: "https://our-travels.info/foto/Germany/nrw/koln/Rhein-Erft-Kreis/frechen/johann_schmitz_platz_frechen/006.jpg"
+                }
+            },
+            ua: {
+                name: 'Фрехен',
+                subRegionName: "Рейн-Ерфт",
+                desc: {
+                    general: [
+                        { text: 'Фрехен – місто в землі Північний Рейн-Вестфалія, що входить до району Рейн-Ерфт і розташоване всього за 10 км на захід від Кельна.' },
+                        { text: ' Місто відоме своєю історією гончарного виробництва, промисловим розвитком і близькістю до Рейнсько-Рурського регіону.' }
+                    ],
+                    population: [{ bold: 'Населення:', text: ' близько 52 000 осіб (2025)' }],
+                    area: [
+                        { bold: 'Площа:', text: ' приблизно 45,1 км²' },
+                        { text: " Місто адміністративно поділяється на такі райони: центральний Фрехен (Frechen), Бахем (Bachem), Бушбель (Buschbell), Хаббельрат (Habbelrath), Кенігсдорф (Königsdorf), Грефрат (Grefrath) і Хюхельн (Hücheln)." }
+                    ],
+                    postalCode: [{ bold: 'Поштовий індекс:', text: ' 50226' }],
+                    phone: [{ bold: 'Телефонний код:', text: ' +49 02234' }],
+                    officialSite: [{ bold: 'Офіційний сайт Фрехена', link: 'https://www.frechen.de/' }]
+                },
+                geography: {
+                    title: 'Географія',
+                    items: [
+                        { text: 'Фрехен розташований на західній околиці Кельна і є частиною агломерації Рейнсько-Рурського регіону.' },
+                        { text: 'Висота над рівнем моря коливається від 58 до 158 метрів, місто лежить на схилах височини Вілле (Ville).' },
+                        { text: 'Через місто проходять важливі транспортні магістралі: автомагістралі A1, A4 та A61, що забезпечує добрий зв’язок із Кельном, Бонном і Аахеном.' },
+                        { text: 'Місто оточене зеленими зонами та невеликими лісами, а також колишніми промисловими кар’єрами, деякі з яких перетворено на зони відпочинку.' }
+                    ]
+                },
+                notablePeople: {
+                    title: 'Відомі люди Фрехена',
+                    isList: true,
+                    items: [
+                        { bold: 'Айо', text: ' – німецько-нігерійська співачка та авторка пісень, народжена у Фрехені.' },
+                        { bold: 'Кірстен Болм', text: ' – легкоатлетка, чемпіонка Німеччини з бігу з бар’єрами.' },
+                        { bold: 'Уейн Карпендейл', text: ' – актор і телеведучий.' },
+                        { bold: 'П’єр Фогель', text: ' – відомий ісламський проповідник, який виріс у Фрехені.' },
+                        { bold: 'Ганна Мойль', text: ' – професійна скелелазка, представниця Німеччини на міжнародних змаганнях.' },
+                        { bold: 'Марсель Геллер', text: ' – німецький футболіст, який грав у Бундеслізі.' },
+                        { bold: 'Зоня Бертрам', text: ' – акторка театру та телебачення.' }
+                    ]
+                },
+                interestingFacts: {
+                    title: "Цікаві факти",
+                    isList: true,
+                    items: [
+                        { bold: "Місто кераміки", text: " – Фрехен історично відомий як один із центрів виробництва кераміки та кам’яного посуду (Steinzeug) в Європі. Вироби з Фрехена експортувалися до різних країн ще в ранній новий час." },
+                        { bold: "Бартманські глечики", text: " – саме тут виготовляли знамениті «Bartmannkrüge» (глечики з обличчям бородатого чоловіка), які стали символом рейнської кераміки XVI–XVII століть." },
+                        { bold: "Видобуток бурого вугілля", text: " – у XX столітті регіон активно розвивався завдяки видобутку бурого вугілля (Braunkohle), що суттєво вплинуло на економіку та ландшафт міста." },
+                        { bold: "Перехід до рекультивації", text: " – після скорочення видобутку вугілля колишні кар’єри були частково рекультивовані та перетворені на зелені зони і місця відпочинку." },
+                        { bold: "Близькість до Кельна", text: " – Фрехен розташований безпосередньо на західному кордоні Кельна і фактично входить до його агломерації, що робить місто привабливим для проживання при роботі в мегаполісі." },
+                        { bold: "Транспортна доступність", text: " – місто має хороше сполучення з Кельном завдяки лінії міської залізниці (Stadtbahn), що забезпечує швидкий доступ до центру міста." },
+                        { bold: "Сучасна економіка", text: " – сьогодні Фрехен поєднує промислову спадщину з розвитком логістики, торгівлі та сфери послуг." }
+                    ]
+                },
+                briefHistory: {
+                    title: 'Історія',
+                    items: [
+                        { text: 'Фрехен уперше згадується в документах у 877 році, що робить його одним із найстаріших населених пунктів регіону.' },
+                        { text: 'У середньовіччі, у 1257 році, у Фрехені відбулася битва між Конрадом фон Хохштаденом (архієпископом Кельна) та мешканцями міста. Це показує, що Фрехен уже тоді був важливим місцем із політичним і стратегічним значенням.' },
+                        { text: 'Із XVI століття місто стало відомим завдяки розвитку гончарного виробництва — особливо виготовленню «бородатих глечиків» (Bartmannskrüge), які експортувалися по всій Європі.' },
+                        { text: 'У XVIII–XIX століттях у передмістях Фрехена почалася розробка бурого вугілля, що перетворило місто на промисловий центр.' },
+                        { text: 'Після Другої світової війни Фрехен активно розвивався як промислове та житлове передмістя Кельна.' },
+                        { text: '2 вересня 1951 року Фрехен отримав офіційний статус міста, після чого до нього були приєднані села Бахем, Хюхельн та Бушбель.' },
+                        { text: 'У 1975 році в результаті адміністративної реформи до Фрехена приєднано сусідні поселення Грефрат, Хаббелрат, Кенігсдорф і Нойфраймерсдорф.' },
+                        { text: 'Сьогодні Фрехен – сучасне місто з історичним центром, музеєм кераміки та розвиненою інфраструктурою, популярне серед мешканців Кельна як місце для життя й відпочинку.' }
+                    ]
+                },
+                meta: {
+                    title: "Фрехен – місто кераміки біля західних воріт Кельна",
+                    description: "Фрехен: історія, географія, відомі мешканці та цікаві факти про місто кераміки в землі Північний Рейн-Вестфалія.",
+                    ogTitle: "Фрехен – інформація про місто",
+                    ogDescription: "Детальна інформація про Фрехен: культура, історія, відомі жителі та цікаві факти.",
+                    ogImage: "https://our-travels.info/foto/Germany/nrw/koln/Rhein-Erft-Kreis/frechen/johann_schmitz_platz_frechen/006.jpg"
+                }
+            },
+            de: {
+                name: 'Frechen',
+                subRegionName: "Rhein-Erft",
+                desc: {
+                    general: [
+                        { text: 'Frechen ist eine Stadt im Bundesland Nordrhein-Westfalen, die zum Rhein-Erft-Kreis gehört und nur etwa 10 km westlich von Köln liegt.' },
+                        { text: 'Die Stadt ist bekannt für ihre historische Töpfertradition, industrielle Entwicklung und ihre Nähe zur Rhein-Ruhr-Region.' }
+                    ],
+                    population: [{ bold: 'Einwohnerzahl:', text: ' etwa 52.000 Menschen (2025)' }],
+                    area: [
+                        { bold: 'Fläche:', text: ' ca. 45,1 km²' },
+                        { text: " Die Stadt ist administrativ in folgende Stadtteile gegliedert: Frechen-Zentrum (Frechen), Bachem, Buschbell, Habbelrath, Königsdorf, Grefrath und Hücheln." }
+                    ],
+                    postalCode: [{ bold: 'Postleitzahl:', text: ' 50226' }],
+                    phone: [{ bold: 'Telefonvorwahl:', text: ' +49 02234' }],
+                    officialSite: [{ bold: 'Offizielle Website der Stadt Frechen', link: 'https://www.frechen.de/' }]
+                },
+                geography: {
+                    title: 'Geografie',
+                    items: [
+                        { text: 'Frechen liegt am westlichen Stadtrand von Köln und ist Teil der Metropolregion Rhein-Ruhr.' },
+                        { text: 'Die Höhe über dem Meeresspiegel variiert zwischen 58 und 158 Metern, die Stadt befindet sich an den Hängen der Ville-Höhen.' },
+                        { text: 'Wichtige Verkehrsachsen wie die Autobahnen A1, A4 und A61 verlaufen in der Nähe und verbinden Frechen mit Köln, Bonn und Aachen.' },
+                        { text: 'Die Stadt ist von Grünflächen, kleinen Wäldern und ehemaligen Industriegruben umgeben, die teilweise zu Naherholungsgebieten umgestaltet wurden.' }
+                    ]
+                },
+                notablePeople: {
+                    title: 'Bekannte Persönlichkeiten aus Frechen',
+                    isList: true,
+                    items: [
+                        { bold: 'Ayo', text: ' – deutsch-nigerianische Sängerin und Songwriterin, geboren in Frechen.' },
+                        { bold: 'Kirsten Bolm', text: ' – Leichtathletin und deutsche Meisterin im Hürdenlauf.' },
+                        { bold: 'Wayne Carpendale', text: ' – Schauspieler und Fernsehmoderator.' },
+                        { bold: 'Pierre Vogel', text: ' – bekannter islamischer Prediger, aufgewachsen in Frechen.' },
+                        { bold: 'Hannah Meul', text: ' – Profikletterin und Mitglied des deutschen Nationalteams.' },
+                        { bold: 'Marcel Heller', text: ' – deutscher Fußballspieler, der in der Bundesliga aktiv war.' },
+                        { bold: 'Sonja Bertram', text: ' – Theater- und Fernsehschauspielerin.' }
+                    ]
+                },
+                interestingFacts: {
+                    title: "Interessante Fakten",
+                    isList: true,
+                    items: [
+                        { bold: "Stadt der Keramik", text: " – Frechen ist historisch als eines der wichtigsten Zentren der Keramik- und Steinzeugproduktion in Europa bekannt. Produkte aus Frechen wurden bereits in der frühen Neuzeit in viele Länder exportiert." },
+                        { bold: "Bärtmannkrüge", text: " – hier wurden die berühmten „Bartmannkrüge“ hergestellt, Krüge mit einem bärtigen Gesicht, die im 16. und 17. Jahrhundert zu einem Symbol der rheinischen Keramik wurden." },
+                        { bold: "Braunkohleabbau", text: " – im 20. Jahrhundert entwickelte sich die Region stark durch den Braunkohleabbau, der die Wirtschaft und die Landschaft der Stadt erheblich beeinflusste." },
+                        { bold: "Übergang zur Rekultivierung", text: " – nach dem Rückgang des Braunkohleabbaus wurden ehemalige Tagebaue teilweise rekultiviert und in Grünflächen sowie Erholungsgebiete umgewandelt." },
+                        { bold: "Nähe zu Köln", text: " – Frechen liegt direkt an der westlichen Grenze von Köln und gehört faktisch zur Kölner Agglomeration, was die Stadt für Pendler sehr attraktiv macht." },
+                        { bold: "Verkehrsanbindung", text: " – die Stadt ist gut an Köln angebunden durch die Stadtbahnlinie, die eine schnelle Verbindung ins Stadtzentrum ermöglicht." },
+                        { bold: "Moderne Wirtschaft", text: " – heute verbindet Frechen sein industrielles Erbe mit Logistik, Handel und Dienstleistungen." }
+                    ]
+                },
+                briefHistory: {
+                    title: 'Geschichte',
+                    items: [
+                        { text: 'Frechen wurde erstmals im Jahr 877 urkundlich erwähnt und ist damit einer der ältesten Orte der Region.' },
+                        { text: 'Im Mittelalter, im Jahr 1257, fand in Frechen eine Schlacht zwischen Konrad von Hochstaden (Erzbischof von Köln) und den Bewohnern der Stadt statt. Dies zeigt, dass Frechen schon damals ein wichtiger Ort mit politischer und strategischer Bedeutung war.' },
+                        { text: 'Seit dem 16. Jahrhundert ist die Stadt für ihre Töpferproduktion bekannt – insbesondere für die Herstellung der „Bartmannskrüge“, die in ganz Europa exportiert wurden.' },
+                        { text: 'Im 18. und 19. Jahrhundert begann der Braunkohleabbau in der Umgebung, wodurch Frechen zu einem industriellen Zentrum wurde.' },
+                        { text: 'Nach dem Zweiten Weltkrieg entwickelte sich Frechen zu einem wichtigen Industrie- und Wohnvorort von Köln.' },
+                        { text: 'Am 2. September 1951 erhielt Frechen das offizielle Stadtrecht, woraufhin die Dörfer Bachem, Hücheln und Buschbell eingemeindet wurden.' },
+                        { text: 'Im Jahr 1975 wurden im Zuge der kommunalen Neugliederung die Ortsteile Grefrath, Habbelrath, Königsdorf und Neufreimersdorf eingemeindet.' },
+                        { text: 'Heute ist Frechen eine moderne Stadt mit historischem Stadtkern, Keramikmuseum und guter Infrastruktur – ein beliebter Wohnort für Kölner.' }
+                    ]
+                },
+                meta: {
+                    title: "Frechen – die Stadt der Keramik vor den westlichen Toren Kölns",
+                    description: "Frechen: Geschichte, Geografie, bekannte Persönlichkeiten und interessante Fakten über die Keramikstadt in Nordrhein-Westfalen.",
+                    ogTitle: "Frechen – Stadtinformationen",
+                    ogDescription: "Detaillierte Informationen über Frechen: Kultur, Geschichte, bekannte Persönlichkeiten und interessante Fakten.",
+                    ogImage: "https://our-travels.info/foto/Germany/nrw/koln/Rhein-Erft-Kreis/frechen/johann_schmitz_platz_frechen/006.jpg"
+                }
+            }
+        }
+
+    },
+
+    //Rhein-Sieg-Kreis
+    {
+        id: "konigswinter",
+        path: "konigswinter",
+        countryPath: "germany", regionPath: "nrw", districtPath: "koln", subRegionPath: "rhein_sieg",
+        gerb: "Germany/nrw/koln/Rhein-Sieg-Kreis/konigswinter/gerb.png",
+        coord: { lat: 50.6838, lng: 7.1868 },
+        translations: {
+            ru: {
+                name: 'Кёнигсвинтер',
+                subRegionName: "Рейн-Зиг",
+                desc: {
+                    general: [
+                        { text: 'Кёнигсвинтер – город в земле Северный Рейн-Вестфалия, входящий в район Рейн-Зиг и расположенный на правом берегу Рейна напротив Бонна.' },
+                        { text: ' Город известен живописными пейзажами Семигорья (Siebengebirge), замком Драхенбург и горой Драхенфельс – одним из самых посещаемых природных объектов Германии.' }
+                    ],
+                    population: [
+                        { bold: 'Население:' },
+                        { text: ' около 41 000 человек (2025)' }
+                    ],
+                    area: [
+                        { bold: 'Площадь:' },
+                        { text: ' примерно 76,2 км²' }
+                    ],
+                    postalCode: [
+                        { bold: 'Почтовый индекс:' },
+                        { text: ' 53639' }
+                    ],
+                    phone: [
+                        { bold: 'Телефонный код:' },
+                        { text: ' +49 02223' }
+                    ],
+                    officialSite: [
+                        { bold: 'Официальный сайт Кёнигсвинтера', link: 'https://www.koenigswinter.de/' }
+                    ]
+                },
+                geography: {
+                    title: 'География',
+                    items: [
+                        { text: 'Кёнигсвинтер расположен на правом берегу Рейна у подножия горного массива Зибенгебирге и является частью агломерации Бонна.' },
+                        { text: 'Высота над уровнем моря варьируется примерно от 60 до 461 метров; самая высокая точка – гора Эльберг (Ölberg).' },
+                        { text: 'Через город проходят федеральная трасса B42 и железнодорожная линия вдоль Рейна, обеспечивая удобное сообщение с Бонном, Кёльном и Кобленцем.' },
+                        { text: 'Территория города включает леса, виноградники, речные набережные и природный парк Siebengebirge – один из старейших природных парков Германии.' }
+                    ]
+                },
+                notablePeople: {
+                    title: 'Знаменитые люди Кёнигсвинтера',
+                    items: [
+                        { bold: 'Конрад Аденауэр', text: ' – первый федеральный канцлер Германии, жил в районе Рёндорф; его дом сегодня является музеем.' },
+                        { bold: 'Петер Шолль-Латур', text: ' – известный немецкий журналист и публицист, долгое время жил в городе.' },
+                        { bold: 'Вольфганг Оверат', text: ' – легендарный футболист сборной Германии и «Кёльна», проживал в Кёнигсвинтере.' },
+                        { bold: 'Фердинанд Фрейлиграт', text: ' – немецкий поэт эпохи романтизма, некоторое время жил в окрестностях города.' }
+                    ]
+                },
+                interestingFacts: {
+                    title: 'Интересные факты',
+                    items: [
+                        { text: 'Гора Драхенфельс является одной из самых известных туристических точек на Рейне и связана с легендой о драконе, побеждённом героем Зигфридом.' },
+                        { text: 'Замок Драхенбург – не средневековая крепость, а роскошная вилла XIX века, построенная в стиле историзма и напоминающая сказочный дворец.' },
+                        { text: 'Гостиница Petersberg в Кёнигсвинтере долгое время служила официальной резиденцией для государственных гостей Германии.' },
+                        { text: 'Зибенгебирге считается одним из старейших охраняемых природных регионов страны и популярным местом для хайкинга.' },
+                        { text: 'Город часто называют «воротами в романтический Рейн» благодаря панорамным видам на реку и долину.' }
+                    ]
+                },
+                briefHistory: {
+                    title: 'История',
+                    items: [
+                        { text: 'Поселение на месте современного Кёнигсвинтера впервые упоминается в документах около 1015 года под названием Winetre.' },
+                        { text: 'В Средние века регион развивался благодаря виноделию, добыче камня в горах Зибенгебирге и торговле по Рейну.' },
+                        { text: 'В XIX веке город стал популярным курортом и туристическим направлением эпохи романтизма, привлекая художников и путешественников.' },
+                        { text: 'В 1889 году Кёнигсвинтер получил официальные городские права.' },
+                        { text: 'После Второй мировой войны район Петерсберг играл важную дипломатическую роль: здесь размещались государственные делегации и проходили международные встречи.' },
+                        { text: 'В 1969 году в ходе административной реформы к городу были присоединены несколько окрестных населённых пунктов, что значительно расширило его территорию.' },
+                        { text: 'Сегодня Кёнигсвинтер – популярный туристический центр региона Рейн-Зиг, сочетающий природные достопримечательности, исторические объекты и развитую инфраструктуру отдыха.' }
+                    ]
+                },
+                meta: {
+                    title: "Кёнигсвинтер – город у подножия Драхенфельса на Рейне",
+                    description: "Кёнигсвинтер: история, география, знаменитые жители и интересные факты о живописном городе региона Рейн-Зиг.",
+                    ogTitle: "Кёнигсвинтер – информация о городе",
+                    ogDescription: "Подробная информация о Кёнигсвинтере: достопримечательности, природа, история и известные жители.",
+                    ogImage: "https://our-travels.info/foto/Germany/nrw/koln/Rhein-Sieg-Kreis/konigswinter/drachenfels/007.jpg"
+                }
+            },
+            ua: {
+                name: 'Кенігсвінтер',
+                subRegionName: "Рейн-Зіг",
+                desc: {
+                    general: [
+                        { text: 'Кенігсвінтер – місто в землі Північний Рейн-Вестфалія, що входить до району Рейн-Зіг і розташоване на правому березі Рейну навпроти Бонна.' },
+                        { text: ' Місто відоме мальовничими пейзажами Семигір’я (Siebengebirge), замком Драхенбург та горою Драхенфельс – одним із найвідвідуваніших природних об’єктів Німеччини.' }
+                    ],
+                    population: [
+                        { bold: 'Населення:' },
+                        { text: ' близько 41 000 осіб (2025)' }
+                    ],
+                    area: [
+                        { bold: 'Площа:' },
+                        { text: ' приблизно 76,2 км²' }
+                    ],
+                    postalCode: [
+                        { bold: 'Поштовий індекс:' },
+                        { text: ' 53639' }
+                    ],
+                    phone: [
+                        { bold: 'Телефонний код:' },
+                        { text: ' +49 02223' }
+                    ],
+                    officialSite: [
+                        { bold: 'Офіційний сайт Кенігсвінтера', link: 'https://www.koenigswinter.de/' }
+                    ]
+                },
+                geography: {
+                    title: 'Географія',
+                    items: [
+                        { text: 'Кенігсвінтер розташований на правому березі Рейну біля підніжжя гірського масиву Зібенгебірге і є частиною агломерації Бонна.' },
+                        { text: 'Висота над рівнем моря варіюється приблизно від 60 до 461 метрів; найвища точка – гора Ельберг (Ölberg).' },
+                        { text: 'Через місто проходять федеральна траса B42 і залізнична лінія вздовж Рейну, що забезпечує зручне сполучення з Бонном, Кельном і Кобленцем.' },
+                        { text: 'Територія міста включає ліси, виноградники, річкові набережні та природний парк Siebengebirge – один із найстаріших природних парків Німеччини.' }
+                    ]
+                },
+                notablePeople: {
+                    title: 'Відомі люди Кенігсвінтера',
+                    items: [
+                        { bold: 'Конрад Аденауер', text: ' – перший федеральний канцлер Німеччини, жив у районі Рьондорф; його дім сьогодні є музеєм.' },
+                        { bold: 'Петер Шоль-Латур', text: ' – відомий німецький журналіст і публіцист, тривалий час мешкав у місті.' },
+                        { bold: 'Вольфганг Оверат', text: ' – легендарний футболіст збірної Німеччини та «Кельна», проживав у Кенігсвінтері.' },
+                        { bold: 'Фердинанд Фрейліграт', text: ' – німецький поет епохи романтизму, деякий час жив в околицях міста.' }
+                    ]
+                },
+                interestingFacts: {
+                    title: 'Цікаві факти',
+                    items: [
+                        { text: 'Гора Драхенфельс є однією з найвідоміших туристичних точок на Рейні і пов’язана з легендою про дракона, переможеного героєм Зігфрідом.' },
+                        { text: 'Замок Драхенбург – не середньовічна фортеця, а розкішна вілла XIX століття, побудована в стилі історизму і нагадує казковий палац.' },
+                        { text: 'Готель Petersberg у Кенігсвінтері довгий час слугував офіційною резиденцією для державних гостей Німеччини.' },
+                        { text: 'Зібенгебірге вважається одним із найстаріших охоронюваних природних регіонів країни і популярним місцем для хайкінгу.' },
+                        { text: 'Місто часто називають «воротами в романтичний Рейн» завдяки панорамним видам на річку і долину.' }
+                    ]
+                },
+                briefHistory: {
+                    title: 'Історія',
+                    items: [
+                        { text: 'Поселення на місці сучасного Кенігсвінтера вперше згадується в документах близько 1015 року під назвою Winetre.' },
+                        { text: 'У середні віки регіон розвивався завдяки виноробству, видобутку каменю в горах Зібенгебірге та торгівлі по Рейну.' },
+                        { text: 'У XIX столітті місто стало популярним курортом і туристичним напрямком епохи романтизму, приваблюючи художників і мандрівників.' },
+                        { text: 'У 1889 році Кенігсвінтер отримав офіційні міські права.' },
+                        { text: 'Після Другої світової війни район Петерсберг грав важливу дипломатичну роль: тут розміщувалися державні делегації і проводилися міжнародні зустрічі.' },
+                        { text: 'У 1969 році в ході адміністративної реформи до міста було приєднано кілька навколишніх населених пунктів, що значно розширило його територію.' },
+                        { text: 'Сьогодні Кенігсвінтер – популярний туристичний центр регіону Рейн-Зіг, що поєднує природні пам’ятки, історичні об’єкти та розвинену інфраструктуру відпочинку.' }
+                    ]
+                },
+                meta: {
+                    title: "Кенігсвінтер – місто біля підніжжя Драхенфельса на Рейні",
+                    description: "Кенігсвінтер: історія, географія, відомі мешканці та цікаві факти про мальовниче місто регіону Рейн-Зіг.",
+                    ogTitle: "Кенігсвінтер – інформація про місто",
+                    ogDescription: "Детальна інформація про Кенігсвінтер: визначні пам’ятки, природа, історія та відомі мешканці.",
+                    ogImage: "https://our-travels.info/foto/Germany/nrw/koln/Rhein-Sieg-Kreis/konigswinter/drachenfels/007.jpg"
+                }
+            },
+            de: {
+                name: 'Königswinter',
+                subRegionName: "Rhein-Sieg",
+                desc: {
+                    general: [
+                        { text: 'Königswinter ist eine Stadt im Bundesland Nordrhein-Westfalen, die zum Rhein-Sieg-Kreis gehört und am rechten Rheinufer gegenüber von Bonn liegt.' },
+                        { text: ' Die Stadt ist bekannt für die malerische Landschaft des Siebengebirges, das Schloss Drachenburg und den Drachenfels – eines der meistbesuchten Naturziele Deutschlands.' }
+                    ],
+                    population: [
+                        { bold: 'Einwohnerzahl:' },
+                        { text: ' etwa 41.000 Menschen (2025)' }
+                    ],
+                    area: [
+                        { bold: 'Fläche:' },
+                        { text: ' ca. 76,2 km²' }
+                    ],
+                    postalCode: [
+                        { bold: 'Postleitzahl:' },
+                        { text: ' 53639' }
+                    ],
+                    phone: [
+                        { bold: 'Telefonvorwahl:' },
+                        { text: ' +49 02223' }
+                    ],
+                    officialSite: [
+                        { bold: 'Offizielle Website von Königswinter', link: 'https://www.koenigswinter.de/' }
+                    ]
+                },
+                geography: {
+                    title: 'Geographie',
+                    items: [
+                        { text: 'Königswinter liegt am rechten Rheinufer am Fuße des Siebengebirges und ist Teil der Agglomeration Bonn.' },
+                        { text: 'Die Höhe über dem Meeresspiegel variiert zwischen etwa 60 und 461 Metern; der höchste Punkt ist der Ölberg.' },
+                        { text: 'Durch die Stadt verlaufen die Bundesstraße B42 und die Eisenbahnlinie am Rhein, die eine gute Verbindung nach Bonn, Köln und Koblenz gewährleisten.' },
+                        { text: 'Das Stadtgebiet umfasst Wälder, Weinberge, Rheinpromenaden und den Naturpark Siebengebirge – einen der ältesten Naturparks Deutschlands.' }
+                    ]
+                },
+                notablePeople: {
+                    title: 'Berühmte Persönlichkeiten aus Königswinter',
+                    items: [
+                        { bold: 'Konrad Adenauer', text: ' – erster Bundeskanzler Deutschlands, lebte im Stadtteil Rüngsdorf; sein Haus ist heute ein Museum.' },
+                        { bold: 'Peter Scholl-Latour', text: ' – bekannter deutscher Journalist und Publizist, lebte lange Zeit in der Stadt.' },
+                        { bold: 'Wolfgang Overath', text: ' – legendärer Fußballspieler der deutschen Nationalmannschaft und von „Köln“, wohnte in Königswinter.' },
+                        { bold: 'Ferdinand Freiligrath', text: ' – deutscher Dichter der Romantik, lebte zeitweise in der Umgebung der Stadt.' }
+                    ]
+                },
+                interestingFacts: {
+                    title: 'Interessante Fakten',
+                    items: [
+                        { text: 'Der Drachenfels ist einer der bekanntesten touristischen Punkte am Rhein und mit der Legende des von Siegfried besiegten Drachen verbunden.' },
+                        { text: 'Schloss Drachenburg ist keine mittelalterliche Burg, sondern eine luxuriöse Villa des 19. Jahrhunderts im Historismus-Stil, die an ein Märchenschloss erinnert.' },
+                        { text: 'Das Hotel Petersberg in Königswinter diente lange Zeit als offizielle Residenz für staatliche Gäste Deutschlands.' },
+                        { text: 'Das Siebengebirge gilt als eines der ältesten geschützten Naturgebiete des Landes und ist ein beliebtes Ziel für Wanderungen.' },
+                        { text: 'Die Stadt wird oft als „Tor zum romantischen Rhein“ bezeichnet, dank der Panoramablicke auf den Fluss und das Tal.' }
+                    ]
+                },
+                briefHistory: {
+                    title: 'Geschichte',
+                    items: [
+                        { text: 'Die Siedlung an der Stelle des heutigen Königswinter wird erstmals um 1015 unter dem Namen Winetre erwähnt.' },
+                        { text: 'Im Mittelalter entwickelte sich die Region durch Weinbau, Steinabbau im Siebengebirge und den Handel am Rhein.' },
+                        { text: 'Im 19. Jahrhundert wurde die Stadt zu einem beliebten Kur- und Reiseziel der Romantik, das Künstler und Reisende anzog.' },
+                        { text: '1889 erhielt Königswinter die offiziellen Stadtrechte.' },
+                        { text: 'Nach dem Zweiten Weltkrieg spielte der Petersberg eine wichtige diplomatische Rolle: Hier waren staatliche Delegationen untergebracht und internationale Treffen fanden statt.' },
+                        { text: '1969 wurden im Rahmen einer Verwaltungsreform mehrere umliegende Orte in die Stadt eingegliedert, wodurch sich das Stadtgebiet erheblich vergrößerte.' },
+                        { text: 'Heute ist Königswinter ein beliebtes Touristenzentrum im Rhein-Sieg-Kreis, das Naturattraktionen, historische Sehenswürdigkeiten und eine gut ausgebaute Infrastruktur für Erholung verbindet.' }
+                    ]
+                },
+                meta: {
+                    title: "Königswinter – Stadt am Fuße des Drachenfels am Rhein",
+                    description: "Königswinter: Geschichte, Geographie, berühmte Persönlichkeiten und interessante Fakten über die malerische Stadt im Rhein-Sieg-Kreis.",
+                    ogTitle: "Königswinter – Informationen über die Stadt",
+                    ogDescription: "Detaillierte Informationen über Königswinter: Sehenswürdigkeiten, Natur, Geschichte und bekannte Persönlichkeiten.",
+                    ogImage: "https://our-travels.info/foto/Germany/nrw/koln/Rhein-Sieg-Kreis/konigswinter/drachenfels/007.jpg"
+                }
+            }
+        }
     },
 ]
 

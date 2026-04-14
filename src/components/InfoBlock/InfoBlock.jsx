@@ -64,6 +64,7 @@ const InfoBlock = ({ data = [], className }) => {
   for (let i = 0; i < data.length; i++) {
     if (
       data[i].bold &&
+      !data[i].text &&
       i + 1 < data.length &&
       data[i + 1].text &&
       !data[i + 1].bold &&

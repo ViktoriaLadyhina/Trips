@@ -9,8 +9,8 @@ const datas = [
                 desc: {
                     capital: [{ bold: 'Столица:', text: ' Дюссельдорф' }],
                     population: [
-                        { bold: 'Население:', text: ' около 18,1 млн человек. Иностранцев — около 2 млн человек.' }],
-                    area: [{ bold: 'Площадь:', text: ' 34 000 км². Плотность населения — около 525 человек на 1 км².' }],
+                        { bold: 'Население:', text: ' около 18,1 млн человек. Иностранцев – около 2 млн человек.' }],
+                    area: [{ bold: 'Площадь:', text: ' 34 000 км². Плотность населения – около 525 человек на 1 км².' }],
                     geography: [
                         { bold: 'География:', text: ' Северный Рейн-Вестфалия находится на западе Германии и граничит с Бельгией (99 км), Нидерландами (387 км), а также с федеральными землями Нижняя Саксония (583 км), Гессен (269 км) и Рейнланд-Пфальц (307 км).' },
                         { text: ' Земля включает два крупных ландшафтных региона: Северная низменность и немецкое среднегорье, которые подразделяются на северорейнскую и вестфальскую части вдоль Рейна.' },
@@ -28,7 +28,7 @@ const datas = [
                 symbols: {
                     title: "Геральдика",
                     items: [
-                        { bold: "Герб:", text: " на гербе Северной Рейн-Вестфалии объединены символы трёх исторических провинций, из которых была образована земля в 1946–1947 годах. Серебристая полоска Рейна на зелёном фоне символизирует Рейнскую провинцию. Саксонский конь на красном фоне — символ Вестфалии (в вестфальском варианте он вставший на дыбы). Красная роза с золотой сердцевиной и листьями — герб графов фон Липпе, использовавшийся с XIII века.", img: "Germany/nrw/gerb.gif" },
+                        { bold: "Герб:", text: " на гербе Северной Рейн-Вестфалии объединены символы трёх исторических провинций, из которых была образована земля в 1946-1947 годах. Серебристая полоска Рейна на зелёном фоне символизирует Рейнскую провинцию. Саксонский конь на красном фоне – символ Вестфалии (в вестфальском варианте он вставший на дыбы). Красная роза с золотой сердцевиной и листьями – герб графов фон Липпе, использовавшийся с XIII века.", img: "Germany/nrw/gerb.gif" },
                         { bold: "Флаг:", text: " флаг Северного Рейна-Вестфалии состоит из цветов герба: зелёного, белого и красного, расположенных горизонтальными полосами.", img: "Germany/nrw/flag.gif" }
                     ]
                 },
@@ -47,7 +47,7 @@ const datas = [
                         items: [
                             { id: 1, name: 'Арнсберг', hasInfo: true, path: "arnsberg" },
                             { id: 2, name: 'Детмольд', hasInfo: false, path: "detmold" },
-                            { id: 3, name: 'Дюссельдорф', hasInfo: false, path: "dusseldorf" },
+                            { id: 3, name: 'Дюссельдорф', hasInfo: true, path: "dusseldorf" },
                             { id: 4, name: "Кёльн", hasInfo: true, path: "koln" },
                             { id: 5, name: 'Мюнстер', hasInfo: false, path: "munster" }
                         ]
@@ -82,9 +82,9 @@ const datas = [
                     }
                 ],
                 meta: {
-                    title: "Северный Рейн-Вестфалия — информация о регионе",
+                    title: "Северный Рейн-Вестфалия – информация о регионе",
                     description: "Северный Рейн-Вестфалия: города, округа, культура и достопримечательности.",
-                    ogTitle: "Северный Рейн-Вестфалия — информация о регионе и округах",
+                    ogTitle: "Северный Рейн-Вестфалия – информация о регионе и округах",
                     ogDescription: "Подробная информация о Северном Рейне-Вестфалии: города, округа, история и интересные факты.",
                     ogImage: "https://our-travels.info/foto/Germany/nrw/koln/koln-city/koln-cathedral/001.jpg"
                 }
@@ -95,17 +95,17 @@ const datas = [
                     capital: [{ bold: 'Столиця:', text: ' Дюссельдорф' }],
                     population: [
                         { bold: 'Населення:' },
-                        { text: ' близько 18,1 млн осіб. Іноземців — близько 2 млн осіб.' }
+                        { text: ' близько 18,1 млн осіб. Іноземців – близько 2 млн осіб.' }
                     ],
                     area: [
                         { bold: 'Площа:' },
-                        { text: ' 34 000 км². Щільність населення — близько 525 осіб на 1 км².' }
+                        { text: ' 34 000 км². Щільність населення – близько 525 осіб на 1 км².' }
                     ],
                     geography: [
                         { bold: 'Географія:' },
                         { text: 'Північний Рейн-Вестфалія розташований на заході Німеччини і межує з Бельгією (99 км), Нідерландами (387 км), а також з землями Нижня Саксонія (583 км), Гессен (269 км) та Рейнланд-Пфальц (307 км).' },
                         { text: 'Територія включає два великі ландшафтні регіони: Північна низовина та Німецьке середнегір’я, які поділяються на північно-рейнську та вестфальську частини вздовж Рейну.' },
-                        { text: 'На лівому березі Рейну — гори Айфель (Eifel) та передгір’я Vennvorland (Аахенський регіон). На правому березі — Bergisches Land, Зауерланд (Sauerland), Ротхааргебірге (Rothaargebirge), Зігерланд (Siegerland), Сібернгіберге (Siebengebirge) та частини Західного лісу і Везербергланда (Weserbergland). Ліси займають близько 24% території.' }
+                        { text: 'На лівому березі Рейну – гори Айфель (Eifel) та передгір’я Vennvorland (Аахенський регіон). На правому березі – Bergisches Land, Зауерланд (Sauerland), Ротхааргебірге (Rothaargebirge), Зігерланд (Siegerland), Сібернгіберге (Siebengebirge) та частини Західного лісу і Везербергланда (Weserbergland). Ліси займають близько 24% території.' }
                     ],
                     history: [
                         { bold: 'Походження назви:' },
@@ -113,7 +113,7 @@ const datas = [
                     ],
                     economy: [
                         { bold: 'Економіка:' },
-                        { text: ' Північний Рейн-Вестфалія — один із найбільших економічних центрів Німеччини. Історично розвинені вугільна, залізна, металургійна, сталева та текстильна промисловості.' },
+                        { text: ' Північний Рейн-Вестфалія – один із найбільших економічних центрів Німеччини. Історично розвинені вугільна, залізна, металургійна, сталева та текстильна промисловості.' },
                         { text: 'Сільське господарство має допоміжну роль, забезпечуючи продовольством жителів великих міст.' }
                     ],
                     cities: [
@@ -132,16 +132,8 @@ const datas = [
                 symbols: {
                     title: "Геральдика",
                     items: [
-                        {
-                            bold: "Герб:",
-                            text: " на гербі Північного Рейну-Вестфалії об'єднані символи трьох історичних провінцій, з яких була утворена земля у 1946–1947 роках. Срібляста смуга Рейну на зеленому тлі символізує Рейнську провінцію. Саксонський кінь на червоному тлі — символ Вестфалії (у вестфальському варіанті він встав на диби). Червона троянда з золотим серцевиною і листям — герб графів фон Ліппе, що використовувався з XIII століття.",
-                            img: "Germany/nrw/gerb.gif"
-                        },
-                        {
-                            bold: "Прапор:",
-                            text: " прапор Північного Рейну-Вестфалії складається з кольорів герба: зеленого, білого та червоного, розташованих горизонтальними смугами.",
-                            img: "Germany/nrw/flag.gif"
-                        }
+                        { bold: "Герб:", text: " на гербі Північного Рейну-Вестфалії об'єднані символи трьох історичних провінцій, з яких була утворена земля у 1946–1947 роках. Срібляста смуга Рейну на зеленому тлі символізує Рейнську провінцію. Саксонський кінь на червоному тлі – символ Вестфалії (у вестфальському варіанті він встав на диби). Червона троянда з золотим серцевиною і листям – герб графів фон Ліппе, що використовувався з XIII століття.", img: "Germany/nrw/gerb.gif" },
+                        { bold: "Прапор:", text: " прапор Північного Рейну-Вестфалії складається з кольорів герба: зеленого, білого та червоного, розташованих горизонтальними смугами.", img: "Germany/nrw/flag.gif" }
                     ]
                 },
                 briefHistory: {
@@ -167,7 +159,7 @@ const datas = [
                         items: [
                             { id: 1, name: 'Арнсберг', hasInfo: true, path: "arnsberg" },
                             { id: 2, name: 'Детмольд', hasInfo: false, path: "detmold", },
-                            { id: 3, name: 'Дюссельдорф', hasInfo: false, path: "dusseldorf" },
+                            { id: 3, name: 'Дюссельдорф', hasInfo: true, path: "dusseldorf" },
                             { id: 4, name: 'Кельн', hasInfo: true, path: "koln" },
                             { id: 5, name: 'Мюнстер', hasInfo: false, path: "munster" }
                         ]
@@ -202,9 +194,9 @@ const datas = [
                     }
                 ],
                 meta: {
-                    title: "Північний Рейн-Вестфалія — інформація про регіон",
+                    title: "Північний Рейн-Вестфалія – інформація про регіон",
                     description: "Північний Рейн-Вестфалія: міста, округи, культура та визначні місця.",
-                    ogTitle: "Північний Рейн-Вестфалія — інформація про регіон та округи",
+                    ogTitle: "Північний Рейн-Вестфалія – інформація про регіон та округи",
                     ogDescription: "Детальна інформація про Північний Рейн-Вестфалія: міста, округи, історія та цікаві факти.",
                     ogImage: "https://our-travels.info/foto/Germany/nrw/koln/koln-city/koln-cathedral/001.jpg"
                 }
@@ -252,16 +244,8 @@ const datas = [
                 symbols: {
                     title: "Heraldik",
                     items: [
-                        {
-                            bold: "Wappen:",
-                            text: " das Wappen von Nordrhein-Westfalen vereint die Symbole der drei historischen Provinzen, aus denen das Land 1946–1947 gebildet wurde. Der silberne Rheinbalken auf grünem Grund symbolisiert die Rheinprovinz. Das sächsische Pferd auf rotem Grund ist das Symbol Westfalens (im westfälischen Wappen aufbäumend dargestellt). Die rote Rose mit goldenem Herz und Blättern ist das Wappen der Grafen von Lippe, das seit dem 13. Jahrhundert verwendet wird.",
-                            img: "Germany/nrw/gerb.gif"
-                        },
-                        {
-                            bold: "Flagge:",
-                            text: " die Flagge Nordrhein-Westfalens besteht aus den Farben des Wappens: Grün, Weiß und Rot, horizontal angeordnet.",
-                            img: "Germany/nrw/flag.gif"
-                        }
+                        { bold: "Wappen:", text: " das Wappen von Nordrhein-Westfalen vereint die Symbole der drei historischen Provinzen, aus denen das Land 1946–1947 gebildet wurde. Der silberne Rheinbalken auf grünem Grund symbolisiert die Rheinprovinz. Das sächsische Pferd auf rotem Grund ist das Symbol Westfalens (im westfälischen Wappen aufbäumend dargestellt). Die rote Rose mit goldenem Herz und Blättern ist das Wappen der Grafen von Lippe, das seit dem 13. Jahrhundert verwendet wird.", img: "Germany/nrw/gerb.gif" },
+                        { bold: "Flagge:", text: " die Flagge Nordrhein-Westfalens besteht aus den Farben des Wappens: Grün, Weiß und Rot, horizontal angeordnet.", img: "Germany/nrw/flag.gif" }
                     ]
                 },
                 briefHistory: {
@@ -279,7 +263,7 @@ const datas = [
                         items: [
                             { id: 1, name: 'Arnsberg', hasInfo: true, path: "arnsberg" },
                             { id: 2, name: 'Detmold', hasInfo: false, path: "detmold" },
-                            { id: 3, name: 'Düsseldorf', hasInfo: false, path: "dusseldorf" },
+                            { id: 3, name: 'Düsseldorf', hasInfo: true, path: "dusseldorf" },
                             { id: 4, name: 'Köln', hasInfo: true, path: "koln" },
                             { id: 5, name: 'Münster', hasInfo: false, path: "munster" }
                         ]
@@ -314,17 +298,14 @@ const datas = [
                     }
                 ],
                 meta: {
-                    title: "Nordrhein-Westfalen — Informationen über die Region",
+                    title: "Nordrhein-Westfalen – Informationen über die Region",
                     description: "Nordrhein-Westfalen: Städte, Bezirke, Kultur und Sehenswürdigkeiten.",
-                    ogTitle: "Nordrhein-Westfalen — Informationen über die Region und Bezirke",
+                    ogTitle: "Nordrhein-Westfalen – Informationen über die Region und Bezirke",
                     ogDescription: "Detaillierte Informationen über Nordrhein-Westfalen: Städte, Bezirke, Geschichte und interessante Fakten.",
                     ogImage: "https://our-travels.info/foto/Germany/nrw/koln/koln-city/koln-cathedral/001.jpg"
                 }
             }
         },
-
-
-
     },
     {
         id: 11,

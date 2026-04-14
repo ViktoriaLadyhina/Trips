@@ -11,8 +11,8 @@ const datas =
     nrw: { ru: 'Северный Рейн-Вестфалия', de: 'Nordrhein-Westfalen', ua: 'Північний Рейн-Вестфалія' },
     rheinland_pfalz: { ru: 'Рейнланд-Пфальц', de: 'Rheinland-Pfalz', ua: 'Рейнланд-Пфальц' },
     //luxembourg
-    mersch: { ru: 'Мерш', de: 'Mersch', ua: 'Мерш' },
-    capellen: { ru: 'Капеллен', de: 'Capellen', ua: 'Капеллен' },
+    mersch: { ru: 'Кантон Мерш', de: 'Kanton Mersch', ua: 'Кантон Мерш' },
+    capellen: { ru: 'Кантон Капеллен', de: 'Kanton Capellen', ua: 'Кантон Капеллен' },
     //Ukraine
     sumska: { ru: 'Сумская область', de: 'Sumska Oblast', ua: 'Сумська область' }
   },
@@ -20,6 +20,9 @@ const datas =
     arnsberg: { ru: 'Административный округ Арнсберг', de: 'Regierungsbezirk Arnsberg', ua: 'Адміністративний округ Арнсберг' },
     merkischer: { ru: 'Район Меркиш', de: 'Märkischer Kreis', ua: 'Район Меркіш' },
 
+    dusseldorf: { ru: 'Административный округ Дюссельдорф', de: 'Regierungsbezirk Düsseldorf', ua: 'Адміністративний округ Дюссельдорф' },
+    mettmann: { ru: 'Район Меттман', de: 'Kreis Mettmann', ua: 'Район Меттман' },
+    
     koln: { ru: 'Административный округ Кёльн', de: 'Regierungsbezirk Köln', ua: 'Адміністративний округ Кельн' },
     rheinErft: { ru: 'Район Рейн-Эрфт', de: 'Rhein-Erft-Kreis', ua: 'Район Рейн-Ерфт' },
     aachen: { ru: 'Район Аахен', de: 'Kreis Aachen', ua: 'Район Аахен' },
@@ -40,11 +43,15 @@ const datas =
     altena: { ru: 'Город Альтена', de: 'Stadt Altena', ua: 'Місто Альтена' },
     iserlohn: { ru: 'Город Изерлон', de: 'Stadt Iserlohn', ua: 'Місто Ізерлон' },
 
+    velbert: { ru: 'Город Вельберт', de: 'Stadt Velbert', ua: 'Місто Вельберт' },
+
     trier: { ru: 'Город Трир', de: 'Stadt Trier', ua: 'Місто Трір' },
     saarburg: { ru: 'Город Саарбург', de: 'Stadt Saarburg', ua: 'Місто Саарбург' },
+
     //luxembourg
     ansembourg: { ru: 'Деревня Ансембург', de: 'Dorf Ansembourg', ua: 'Село Ансембург' },
     koerich: { ru: 'Деревня Кёрих', de: 'Dorf Koerich', ua: 'Село Кьоріх' },
+
     //Ukraine
     sumy: { ru: 'Город Сумы', de: 'Stadt Sumy', ua: 'Місто Суми' }
   },
@@ -176,7 +183,7 @@ const datas =
     amuseum_saarburg: { ru: 'Амюзеум Саарбург', de: 'Amüseum Saarburg', ua: 'Амюзеум Саарбург' },
 
     //luxembourg
-    ansembourg_castle: { ru: 'Замок-дворец', de: 'Schloss Ansembourg', ua: 'Палац-замок Ансембурґ' },
+    ansembourg_castle: { ru: 'Замок-дворец Ансембург', de: 'Schloss Ansembourg', ua: 'Палац-замок Ансембурґ' },
     koerich_castle: { ru: 'Замок Керих', de: 'Burg Koerich', ua: 'Замок Кьоріх' },
 
     // Ukraine

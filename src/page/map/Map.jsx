@@ -26,7 +26,7 @@ const Map = () => {
         <ul>
           {/* Германия */}
           <li>
-            <Link to="/germany">{t.countries.germany[lang]}</Link>
+            <Link to="/germany"><strong>{t.countries.germany[lang]}</strong></Link>
             <ul>
               <li>{lang === 'ru' ? 'Мероприятия/События' : lang === 'de' ? 'Veranstaltungen' : 'Заходи'}
                 <ul>
@@ -146,6 +146,20 @@ const Map = () => {
                           </li>
                         </ul>
                       </li>
+                    </ul>
+                  </li>
+
+                  {/* Düsseldorf */}
+                  <li><Link to="/germany/nrw/dusseldorf">{t.districts.dusseldorf[lang]}</Link>
+                    <ul>
+                      {/* Mettmann */}
+                      <li><span>{t.districts.mettmann[lang]}</span>
+                        <ul>
+                          {/* Velbert город */}
+                          <li><Link to="/germany/nrw/city/germany/nrw/dusseldorf/velbert">{t.cities.velbert[lang]}</Link></li>
+                        </ul>
+                      </li>
+
                     </ul>
                   </li>
 
@@ -283,7 +297,7 @@ const Map = () => {
           </li>
 
           {/* Люксембург */}<br></br><br></br>
-          <li><Link to="/luxembourg">{t.countries.luxembourg[lang]}</Link>
+          <li><Link to="/luxembourg"><strong>{t.countries.luxembourg[lang]}</strong></Link>
             <ul>
               <li>{lang === 'ru' ? 'Маршруты' : lang === 'de' ? 'Routen' : 'Маршрути'}
                 <ul>
@@ -313,7 +327,7 @@ const Map = () => {
           </li>
 
           {/* Украина */}<br></br><br></br>
-          <li><Link to="/ukraine">{t.countries.ukraine[lang]}</Link>
+          <li><Link to="/ukraine"><strong>{t.countries.ukraine[lang]}</strong></Link>
             <ul>
               <li><Link to="/ukraine/sumska">{t.regions.sumska[lang]}</Link>
                 <ul>

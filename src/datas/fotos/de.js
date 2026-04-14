@@ -220,7 +220,6 @@ export const Fotos = {
       st_gereon_koln: [
         { path: "Germany/nrw/koln/koln-city/altstadt/romanische_kirchen/st_gereon/001.jpg", title: { ru: "Церковь Святого Гереона (фото взято с интернета)", ua: "Церква Святого Герєона (фото взято з Інтернету)", de: "St. Gereon Kirche (Foto aus dem Internet)" } },
       ]
-
     },
     bruhl: {
       gallery: [

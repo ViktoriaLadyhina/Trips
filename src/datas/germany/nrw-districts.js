@@ -33,7 +33,7 @@ const datas = [
                     description: "Подробная информация об административном округе Арнсберге: культура, история, достопримечательности округа.",
                     ogTitle: "Арнсберг — административный округ Северного Рейна-Вестфалия",
                     ogDescription: "Кёльн: административный округ Северного Рейна-Вестфалии, города, история и интересные факты.",
-                    ogImage: "/nrw/arnsberg.jpg"
+                    ogImage: "https://our-travels.info/foto/Germany/nrw/arnsberg/Märkischer-Kreis/altena/burg/001.jpg"
                 }
             },
             ua: {
@@ -67,7 +67,7 @@ const datas = [
                     description: "Детальна інформація про Арнсберг: культура, історія, визначні місця округу.",
                     ogTitle: "Арнсберг — адміністративний округ Північного Рейну-Вестфалія",
                     ogDescription: "Кельн: адміністративний округ Північного Рейну-Вестфалія, міста, історія та цікаві факти.",
-                    ogImage: "/nrw/arnsberg.jpg"
+                    ogImage: "https://our-travels.info/foto/Germany/nrw/arnsberg/Märkischer-Kreis/altena/burg/001.jpg"
                 }
             },
             de: {
@@ -101,7 +101,7 @@ const datas = [
                     description: "Detaillierte Informationen über Arnsberg: Kultur, Geschichte, Sehenswürdigkeiten des Bezirks.",
                     ogTitle: "Arnsberg — Bezirk NRW",
                     ogDescription: "Köln: Verwaltungsbezirk in Nordrhein-Westfalen, Städte, Geschichte und interessante Fakten.",
-                    ogImage: "/nrw/arnsberg.jpg"
+                    ogImage: "https://our-travels.info/foto/Germany/nrw/arnsberg/Märkischer-Kreis/altena/burg/001.jpg"
                 }
             }
         },
@@ -119,12 +119,102 @@ const datas = [
     },
     {
         id: 3,
-        hasInfo: false,
+        hasInfo: true,
         path: "dusseldorf",
+        regionPath: "nrw",
         translations: {
-            ru: { name: 'Дюссельдорф' },
-            ua: { name: 'Дюссельдорф' },
-            de: { name: 'Düsseldorf' }
+            ru: {
+                title: "Административный округ Дюссельдорф",
+                name: "Дюссельдорф",
+                countryName: "Германия", regionName: "Северный Рейн-Вестфалия",
+                desc: {
+                    history: [
+                        { text: "Административный округ Дюссельдорф – один из пяти административных округов земли Северный Рейн-Вестфалия. Он расположен в западной части региона вдоль Рейна." },
+                        { text: "Был создан в 1815 году в ходе административных реформ Пруссии." }
+                    ],
+                    area: [
+                        { bold: "Площадь:", text: " около 5 300 км²." }
+                    ],
+                    population: [
+                        { bold: "Население:", text: " около 5,2 миллиона человек." }
+                    ],
+                    districts: [
+                        { bold: "Округа-районы (Kreise):", text: "Клеве (Kleve), Мёрс / Везель (Kreis Wesel), Вирзен (Viersen), Меттман (Mettmann), Рейн-Нойс (Rhein-Kreis Neuss)." }
+                    ],
+                    cities: [
+                        { bold: "Города, не принадлежащие районам (kreisfreie Städte):", text: "Дюссельдорф (Düsseldorf), Дуйсбург (Duisburg), Эссен (Essen), Крефельд (Krefeld), Мёнхенгладбах (Mönchengladbach), Мюльхайм-ан-дер-Рур (Mülheim an der Ruhr), Оберхаузен (Oberhausen), Ремшайд (Remscheid), Золинген (Solingen), Вупперталь (Wuppertal)." }
+                    ]
+                },
+                meta: {
+                    title: "Дюссельдорф – административный округ Северного Рейна-Вестфалия",
+                    description: "Подробная информация об административном округе Дюссельдорф: структура, города, история и особенности региона.",
+                    ogTitle: "Дюссельдорф – административный округ Северного Рейна-Вестфалия",
+                    ogDescription: "Административный округ Дюссельдорф: крупнейшие города, районы и исторический контекст.",
+                    ogImage: "/nrw/duesseldorf.jpg"
+                }
+            },
+            ua: {
+                title: "Адміністративний округ Дюссельдорф",
+                name: "Дюссельдорф",
+                countryName: "Німеччина",
+                regionName: "Північний Рейн-Вестфалія",
+                desc: {
+                    history: [
+                        { text: "Адміністративний округ Дюссельдорф – один із п’яти адміністративних округів землі Північний Рейн-Вестфалія. Він розташований у західній частині регіону вздовж Рейну." },
+                        { text: "Був створений у 1815 році в ході адміністративних реформ Пруссії." }
+                    ],
+                    area: [
+                        { bold: "Площа:", text: " близько 5 300 км²." }
+                    ],
+                    population: [
+                        { bold: "Населення:", text: " близько 5,2 мільйона осіб." }
+                    ],
+                    districts: [
+                        { bold: "Округи-райони (Kreise):", text: "Клеве (Kleve), Мерс / Везель (Kreis Wesel), Вірзен (Viersen), Меттман (Mettmann), Рейн-Ноєс (Rhein-Kreis Neuss)." }
+                    ],
+                    cities: [
+                        { bold: "Міста, що не належать до районів (kreisfreie Städte):", text: "Дюссельдорф (Düsseldorf), Дуйсбург (Duisburg), Ессен (Essen), Крефельд (Krefeld), Мюнхенгладбах (Mönchengladbach), Мюльгайм-на-Рурі (Mülheim an der Ruhr), Обергаузен (Oberhausen), Ремшайд (Remscheid), Золінген (Solingen), Вупперталь (Wuppertal)." }
+                    ]
+                },
+                meta: {
+                    title: "Дюссельдорф – адміністративний округ Північного Рейну-Вестфалії",
+                    description: "Детальна інформація про адміністративний округ Дюссельдорф: структура, міста, історія та особливості регіону.",
+                    ogTitle: "Дюссельдорф – адміністративний округ Північного Рейну-Вестфалії",
+                    ogDescription: "Адміністративний округ Дюссельдорф: найбільші міста, райони та історичний контекст.",
+                    ogImage: "/nrw/duesseldorf.jpg"
+                }
+            },
+            de: {
+                title: "Regierungsbezirk Düsseldorf",
+                name: "Düsseldorf",
+                countryName: "Deutschland",
+                regionName: "Nordrhein-Westfalen",
+                desc: {
+                    history: [
+                        { text: "Der Regierungsbezirk Düsseldorf ist einer von fünf Regierungsbezirken des Landes Nordrhein-Westfalen. Er liegt im westlichen Teil der Region entlang des Rheins." },
+                        { text: "Er wurde im Jahr 1815 im Rahmen der preußischen Verwaltungsreformen gegründet." }
+                    ],
+                    area: [
+                        { bold: "Fläche:", text: " etwa 5.300 km²." }
+                    ],
+                    population: [
+                        { bold: "Bevölkerung:", text: " etwa 5,2 Millionen Menschen." }
+                    ],
+                    districts: [
+                        { bold: "Kreise:", text: "Kleve, Kreis Wesel (Moers / Wesel), Viersen, Mettmann, Rhein-Kreis Neuss." }
+                    ],
+                    cities: [
+                        { bold: "Kreisfreie Städte:", text: "Düsseldorf, Duisburg, Essen, Krefeld, Mönchengladbach, Mülheim an der Ruhr, Oberhausen, Remscheid, Solingen, Wuppertal." }
+                    ]
+                },
+                meta: {
+                    title: "Regierungsbezirk Düsseldorf – Nordrhein-Westfalen",
+                    description: "Detaillierte Informationen über den Regierungsbezirk Düsseldorf: Struktur, Städte, Geschichte und Besonderheiten der Region.",
+                    ogTitle: "Regierungsbezirk Düsseldorf – Nordrhein-Westfalen",
+                    ogDescription: "Regierungsbezirk Düsseldorf: größte Städte, Kreise und historischer Kontext.",
+                    ogImage: "/nrw/duesseldorf.jpg"
+                }
+            }
         }
     },
     {
@@ -151,7 +241,7 @@ const datas = [
                     description: "Подробная информация об административном округе Кёльне: культура, история, достопримечательности округа.",
                     ogTitle: "Кёльн – административный округ Северного Рейна-Вестфалия",
                     ogDescription: "Кёльн: административный округ Северного Рейна-Вестфалии, города, история и интересные факты.",
-                    ogImage: "/nrw/koeln.jpg"
+                    ogImage: "https://our-travels.info/foto/Germany/nrw/koln/koln-city/001.jpg"
                 }
             },
             ua: {
@@ -185,7 +275,7 @@ const datas = [
                     description: "Детальна інформація про Кельн: культура, історія, визначні місця округу.",
                     ogTitle: "Кельн – адміністративний округ Північного Рейну-Вестфалія",
                     ogDescription: "Кельн: адміністративний округ Північного Рейну-Вестфалія, міста, історія та цікаві факти.",
-                    ogImage: "/nrw/koeln.jpg"
+                    ogImage: "https://our-travels.info/foto/Germany/nrw/koln/koln-city/001.jpg"
                 }
             },
             de: {
@@ -219,13 +309,14 @@ const datas = [
                     description: "Detaillierte Informationen über Köln: Kultur, Geschichte, Sehenswürdigkeiten des Bezirks.",
                     ogTitle: "Köln – Bezirk NRW",
                     ogDescription: "Köln: Verwaltungsbezirk in Nordrhein-Westfalen, Städte, Geschichte und interessante Fakten.",
-                    ogImage: "/nrw/koeln.jpg"
+                    ogImage: "https://our-travels.info/foto/Germany/nrw/koln/koln-city/001.jpg"
                 }
             }
         }
     },
-    { id: 5,  
-        hasInfo: false, 
+    {
+        id: 5,
+        hasInfo: false,
         path: "munster",
         translations: {
             ru: { name: 'Мюнстер' },

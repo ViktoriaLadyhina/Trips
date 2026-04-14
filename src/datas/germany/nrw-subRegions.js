@@ -639,6 +639,424 @@ const datas = [
         }
     },
     {
+        id: 3_1,
+        path: "kleve",
+        districtPath: "dusseldorf",
+        gerb: "Germany/nrw/dusseldorf/kleve/gerb.png",
+        translations: {
+            ru: {
+                name: "Клеве",
+                center: [{ bold: "Центр района:", text: " город Клеве." }],
+                area: [{ bold: "Площадь:", text: " 1 232,99 км² (по состоянию на 2023 г.)" }],
+                population: [{ bold: "Население:", text: " около 310 000 человек (по состоянию на 2023 г.)" }],
+                density: [{ bold: "Плотность населения:", text: " около 250 человек/км²." }],
+                code: [{ bold: "Официальный код района:", text: " 05 1 54." }],
+                description: [
+                    { text: "Район Клеве входит в состав земли Северный Рейн-Вестфалия и подчинён административному округу Дюссельдорф." }
+                ],
+                com: [{ text: "Район подразделяется на " }, { bold: "16 общин:" }],
+                communities: [
+                    { id: 1, name: "Бедбург-Хау", hasInfo: false },
+                    { id: 2, name: "Эммерих-на-Рейне", hasInfo: false },
+                    { id: 3, name: "Гелдерн", hasInfo: false },
+                    { id: 4, name: "Гох", hasInfo: false },
+                    { id: 5, name: "Иссум", hasInfo: false },
+                    { id: 6, name: "Калькар", hasInfo: false },
+                    { id: 7, name: "Керкен", hasInfo: false },
+                    { id: 8, name: "Кевелаер", hasInfo: false },
+                    { id: 9, name: "Клеве", hasInfo: false },
+                    { id: 10, name: "Краненбург", hasInfo: false },
+                    { id: 11, name: "Рейс", hasInfo: false },
+                    { id: 12, name: "Рёрдт", hasInfo: false },
+                    { id: 13, name: "Штрален", hasInfo: false },
+                    { id: 14, name: "Удем", hasInfo: false },
+                    { id: 15, name: "Вахтендонк", hasInfo: false },
+                    { id: 16, name: "Веце", hasInfo: false }
+                ]
+            },
+            ua: {
+                name: "Клеве",
+                center: [{ bold: "Центр району:", text: " місто Клеве." }],
+                area: [{ bold: "Площа:", text: " 1 232,99 км² (станом на 2023 р.)" }],
+                population: [{ bold: "Населення:", text: " близько 310 000 осіб (станом на 2023 р.)" }],
+                density: [{ bold: "Щільність населення:", text: " близько 250 осіб/км²." }],
+                code: [{ bold: "Офіційний код району:", text: " 05 1 54." }],
+                description: [
+                    { text: "Район Клеве входить до складу землі Північний Рейн-Вестфалія та підпорядкований адміністративному округу Дюссельдорф." }
+                ],
+                com: [{ text: "Район поділяється на " }, { bold: "16 громад:" }],
+                communities: [
+                    { id: 1, name: "Бедбург-Хау", hasInfo: false },
+                    { id: 2, name: "Еммеріх-на-Рейні", hasInfo: false },
+                    { id: 3, name: "Гелдерн", hasInfo: false },
+                    { id: 4, name: "Гох", hasInfo: false },
+                    { id: 5, name: "Іссум", hasInfo: false },
+                    { id: 6, name: "Калькар", hasInfo: false },
+                    { id: 7, name: "Керкен", hasInfo: false },
+                    { id: 8, name: "Кевелаер", hasInfo: false },
+                    { id: 9, name: "Клеве", hasInfo: false },
+                    { id: 10, name: "Краненбург", hasInfo: false },
+                    { id: 11, name: "Рейс", hasInfo: false },
+                    { id: 12, name: "Рердт", hasInfo: false },
+                    { id: 13, name: "Штрален", hasInfo: false },
+                    { id: 14, name: "Удем", hasInfo: false },
+                    { id: 15, name: "Вахтендонк", hasInfo: false },
+                    { id: 16, name: "Веце", hasInfo: false }
+                ]
+            },
+            de: {
+                name: "Kreis Kleve",
+                center: [{ bold: "Kreisstadt:", text: " Stadt Kleve." }],
+                area: [{ bold: "Fläche:", text: " 1.232,99 km² (Stand 2023)." }],
+                population: [{ bold: "Einwohnerzahl:", text: " ca. 310.000 (Stand 2023)." }],
+                density: [{ bold: "Bevölkerungsdichte:", text: " ca. 250 Einwohner/km²." }],
+                code: [{ bold: "Amtlicher Regionalschlüssel:", text: " 05 1 54." }],
+                description: [
+                    { text: "Der Kreis Kleve gehört zum Land Nordrhein-Westfalen und untersteht dem Regierungsbezirk Düsseldorf." }
+                ],
+                com: [{ text: "Der Kreis ist unterteilt in " }, { bold: "16 Gemeinden:" }],
+                communities: [
+                    { id: 1, name: "Bedburg-Hau", hasInfo: false },
+                    { id: 2, name: "Emmerich am Rhein", hasInfo: false },
+                    { id: 3, name: "Geldern", hasInfo: false },
+                    { id: 4, name: "Goch", hasInfo: false },
+                    { id: 5, name: "Issum", hasInfo: false },
+                    { id: 6, name: "Kalkar", hasInfo: false },
+                    { id: 7, name: "Kerken", hasInfo: false },
+                    { id: 8, name: "Kevelaer", hasInfo: false },
+                    { id: 9, name: "Kleve", hasInfo: false },
+                    { id: 10, name: "Kranenburg", hasInfo: false },
+                    { id: 11, name: "Rees", hasInfo: false },
+                    { id: 12, name: "Rheurdt", hasInfo: false },
+                    { id: 13, name: "Straelen", hasInfo: false },
+                    { id: 14, name: "Uedem", hasInfo: false },
+                    { id: 15, name: "Wachtendonk", hasInfo: false },
+                    { id: 16, name: "Weeze", hasInfo: false }
+                ]
+            }
+        }
+    },
+    {
+        id: 3_2,
+        path: "mettmann",
+        districtPath: "dusseldorf",
+        gerb: "Germany/nrw/dusseldorf/mettmann/gerb.png",
+        translations: {
+            ru: {
+                name: "Меттман",
+                center: [{ bold: "Центр района:", text: " город Меттман." }],
+                area: [{ bold: "Площадь:", text: " 407,22 км² (по состоянию на 2023 г.)" }],
+                population: [{ bold: "Население:", text: " около 485 000 человек." }],
+                density: [{ bold: "Плотность населения:", text: " около 1 190 человек/км²." }],
+                code: [{ bold: "Официальный код района:", text: " 05 1 58." }],
+                description: [
+                    { text: "Район Меттман расположен в центральной части округа Дюссельдорф." }
+                ],
+                com: [{ text: "Район подразделяется на " }, { bold: "10 общин:" }],
+                communities: [
+                    { id: 1, name: "Эркрат", hasInfo: false },
+                    { id: 2, name: "Хаан", hasInfo: false },
+                    { id: 3, name: "Хайлигенхаус", hasInfo: false },
+                    { id: 4, name: "Хильден", hasInfo: false },
+                    { id: 5, name: "Лангенфельд (Рейнланд)", hasInfo: false },
+                    { id: 6, name: "Меттман", hasInfo: false },
+                    { id: 7, name: "Монхайм-на-Рейне", hasInfo: false },
+                    { id: 8, name: "Ратинген", hasInfo: false },
+                    { id: 9, name: "Вельберт", hasInfo: true, path: "velbert" },
+                    { id: 10, name: "Вюльфрат", hasInfo: false }
+                ]
+            },
+            ua: {
+                name: "Меттман",
+                center: [{ bold: "Центр району:", text: " місто Меттман." }],
+                area: [{ bold: "Площа:", text: " 407,22 км²." }],
+                population: [{ bold: "Населення:", text: " близько 485 000 осіб." }],
+                density: [{ bold: "Щільність населення:", text: " близько 1 190 осіб/км²." }],
+                code: [{ bold: "Офіційний код району:", text: " 05 1 58." }],
+                description: [
+                    { text: "Район Меттман розташований у центральній частині адміністративного округу Дюссельдорф." }
+                ],
+                com: [{ text: "Район поділяється на " }, { bold: "10 громад:" }],
+                communities: [
+                    { id: 1, name: "Еркрат", hasInfo: false },
+                    { id: 2, name: "Хаан", hasInfo: false },
+                    { id: 3, name: "Гайлігенгаус", hasInfo: false },
+                    { id: 4, name: "Гільден", hasInfo: false },
+                    { id: 5, name: "Лангенфельд (Рейнланд)", hasInfo: false },
+                    { id: 6, name: "Меттман", hasInfo: false },
+                    { id: 7, name: "Монгайм-на-Рейні", hasInfo: false },
+                    { id: 8, name: "Ратінген", hasInfo: false },
+                    { id: 9, name: "Вельберт", hasInfo: true, path: "velbert" },
+                    { id: 10, name: "Вюльфрат", hasInfo: false }
+                ]
+            },
+            de: {
+                name: "Kreis Mettmann",
+                center: [{ bold: "Kreisstadt:", text: " Stadt Mettmann." }],
+                area: [{ bold: "Fläche:", text: " 407,22 km²." }],
+                population: [{ bold: "Einwohnerzahl:", text: " ca. 485.000." }],
+                density: [{ bold: "Bevölkerungsdichte:", text: " ca. 1.190 Einwohner/km²." }],
+                code: [{ bold: "Amtlicher Regionalschlüssel:", text: " 05 1 58." }],
+                description: [
+                    { text: "Der Kreis Mettmann liegt im Zentrum des Regierungsbezirks Düsseldorf." }
+                ],
+                com: [{ text: "Der Kreis ist unterteilt in " }, { bold: "10 Gemeinden:" }],
+                communities: [
+                    { id: 1, name: "Erkrath", hasInfo: false },
+                    { id: 2, name: "Haan", hasInfo: false },
+                    { id: 3, name: "Heiligenhaus", hasInfo: false },
+                    { id: 4, name: "Hilden", hasInfo: false },
+                    { id: 5, name: "Langenfeld (Rheinland)", hasInfo: false },
+                    { id: 6, name: "Mettmann", hasInfo: false },
+                    { id: 7, name: "Monheim am Rhein", hasInfo: false },
+                    { id: 8, name: "Ratingen", hasInfo: false },
+                    { id: 9, name: "Velbert", hasInfo: true, path: "velbert" },
+                    { id: 10, name: "Wülfrath", hasInfo: false }
+                ]
+            }
+        }
+    },
+    {
+        id: 3_3,
+        path: "rhein_kreis_neuss",
+        districtPath: "dusseldorf",
+        gerb: "Germany/nrw/dusseldorf/rhein_kreis_neuss/gerb.png",
+        translations: {
+            ru: {
+                name: "Рейн-Нойс",
+                center: [{ bold: "Центр района:", text: " город Нойс." }],
+                area: [{ bold: "Площадь:", text: " 576,52 км² (по состоянию на 2023 г.)" }],
+                population: [{ bold: "Население:", text: " около 451 000 человек." }],
+                density: [{ bold: "Плотность населения:", text: " около 780 человек/км²." }],
+                code: [{ bold: "Официальный код района:", text: " 05 1 62." }],
+                description: [
+                    { text: "Рейн-Нойс расположен на левом берегу Рейна и входит в административный округ Дюссельдорф." }
+                ],
+                com: [{ text: "Район подразделяется на " }, { bold: "8 общин:" }],
+                communities: [
+                    { id: 1, name: "Нойс", hasInfo: false },
+                    { id: 2, name: "Дормаген", hasInfo: false },
+                    { id: 3, name: "Гревенброих", hasInfo: false },
+                    { id: 4, name: "Мербуш", hasInfo: false },
+                    { id: 5, name: "Карст", hasInfo: false },
+                    { id: 6, name: "Коршенброх", hasInfo: false },
+                    { id: 7, name: "Юхен", hasInfo: false },
+                    { id: 8, name: "Роммерскирхен", hasInfo: false }
+                ]
+            },
+            ua: {
+                name: "Рейн-Ноєс",
+                center: [{ bold: "Центр району:", text: " місто Нойс." }],
+                area: [{ bold: "Площа:", text: " 576,52 км²." }],
+                population: [{ bold: "Населення:", text: " близько 451 000 осіб." }],
+                density: [{ bold: "Щільність населення:", text: " близько 780 осіб/км²." }],
+                code: [{ bold: "Офіційний код району:", text: " 05 1 62." }],
+                description: [
+                    { text: "Рейн-Ноєс розташований на лівому березі Рейну та входить до адміністративного округу Дюссельдорф." }
+                ],
+                com: [{ text: "Район поділяється на " }, { bold: "8 громад:" }],
+                communities: [
+                    { id: 1, name: "Нойс", hasInfo: false },
+                    { id: 2, name: "Дормаген", hasInfo: false },
+                    { id: 3, name: "Гревенброїх", hasInfo: false },
+                    { id: 4, name: "Мербуш", hasInfo: false },
+                    { id: 5, name: "Карст", hasInfo: false },
+                    { id: 6, name: "Коршенброх", hasInfo: false },
+                    { id: 7, name: "Юхен", hasInfo: false },
+                    { id: 8, name: "Роммерськірхен", hasInfo: false }
+                ]
+            },
+            de: {
+                name: "Rhein-Kreis Neuss",
+                center: [{ bold: "Kreisstadt:", text: " Stadt Neuss." }],
+                area: [{ bold: "Fläche:", text: " 576,52 km²." }],
+                population: [{ bold: "Einwohnerzahl:", text: " ca. 451.000." }],
+                density: [{ bold: "Bevölkerungsdichte:", text: " ca. 780 Einwohner/km²." }],
+                code: [{ bold: "Amtlicher Regionalschlüssel:", text: " 05 1 62." }],
+                description: [
+                    { text: "Der Rhein-Kreis Neuss liegt am linken Rheinufer im Regierungsbezirk Düsseldorf." }
+                ],
+                com: [{ text: "Der Kreis ist unterteilt in " }, { bold: "8 Gemeinden:" }],
+                communities: [
+                    { id: 1, name: "Neuss", hasInfo: false },
+                    { id: 2, name: "Dormagen", hasInfo: false },
+                    { id: 3, name: "Grevenbroich", hasInfo: false },
+                    { id: 4, name: "Meerbusch", hasInfo: false },
+                    { id: 5, name: "Kaarst", hasInfo: false },
+                    { id: 6, name: "Korschenbroich", hasInfo: false },
+                    { id: 7, name: "Jüchen", hasInfo: false },
+                    { id: 8, name: "Rommerskirchen", hasInfo: false }
+                ]
+            }
+        }
+    },
+    {
+        id: 3_4,
+        path: "viersen",
+        districtPath: "dusseldorf",
+        gerb: "Germany/nrw/dusseldorf/viersen/gerb.png",
+        translations: {
+            ru: {
+                name: "Вирзен",
+                center: [{ bold: "Центр района:", text: " город Вирзен." }],
+                area: [{ bold: "Площадь:", text: " 563,29 км² (2023 г.)" }],
+                population: [{ bold: "Население:", text: " около 298 000 человек." }],
+                density: [{ bold: "Плотность населения:", text: " около 530 человек/км²." }],
+                code: [{ bold: "Официальный код района:", text: " 05 1 66." }],
+                description: [
+                    { text: "Район Вирзен расположен на западе Северного Рейна-Вестфалии, у границы с Нидерландами." }
+                ],
+                com: [{ text: "Район подразделяется на " }, { bold: "8 общин:" }],
+                communities: [
+                    { id: 1, name: "Брюгген", hasInfo: false },
+                    { id: 2, name: "Грефрат", hasInfo: false },
+                    { id: 3, name: "Кемпен", hasInfo: false },
+                    { id: 4, name: "Неттеталь", hasInfo: false },
+                    { id: 5, name: "Нидеркрюхтен", hasInfo: false },
+                    { id: 6, name: "Швальмталь", hasInfo: false },
+                    { id: 7, name: "Тённисфорст", hasInfo: false },
+                    { id: 8, name: "Вирзен", hasInfo: false },
+                    { id: 9, name: "Виллих", hasInfo: false }
+                ]
+            },
+            ua: {
+                name: "Вірзен",
+                center: [{ bold: "Центр району:", text: " місто Вірзен." }],
+                area: [{ bold: "Площа:", text: " 563,29 км²." }],
+                population: [{ bold: "Населення:", text: " близько 298 000 осіб." }],
+                density: [{ bold: "Щільність населення:", text: " близько 530 осіб/км²." }],
+                code: [{ bold: "Офіційний код району:", text: " 05 1 66." }],
+                description: [
+                    { text: "Район Вірзен розташований на заході Північного Рейну-Вестфалії, біля кордону з Нідерландами." }
+                ],
+                com: [{ text: "Район поділяється на " }, { bold: "8 громад:" }],
+                communities: [
+                    { id: 1, name: "Брюгген", hasInfo: false },
+                    { id: 2, name: "Грефрат", hasInfo: false },
+                    { id: 3, name: "Кемпен", hasInfo: false },
+                    { id: 4, name: "Неттеталь", hasInfo: false },
+                    { id: 5, name: "Нідеркрюхтен", hasInfo: false },
+                    { id: 6, name: "Швальмталь", hasInfo: false },
+                    { id: 7, name: "Тьонісфорст", hasInfo: false },
+                    { id: 8, name: "Вірзен", hasInfo: false },
+                    { id: 9, name: "Вілліх", hasInfo: false }
+                ]
+            },
+            de: {
+                name: "Kreis Viersen",
+                center: [{ bold: "Kreisstadt:", text: " Stadt Viersen." }],
+                area: [{ bold: "Fläche:", text: " 563,29 km²." }],
+                population: [{ bold: "Einwohnerzahl:", text: " ca. 298.000." }],
+                density: [{ bold: "Bevölkerungsdichte:", text: " ca. 530 Einwohner/km²." }],
+                code: [{ bold: "Amtlicher Regionalschlüssel:", text: " 05 1 66." }],
+                description: [
+                    { text: "Der Kreis Viersen liegt im Westen Nordrhein-Westfalens an der Grenze zu den Niederlanden." }
+                ],
+                com: [{ text: "Der Kreis ist unterteilt in " }, { bold: "8 Gemeinden:" }],
+                communities: [
+                    { id: 1, name: "Brüggen", hasInfo: false },
+                    { id: 2, name: "Grefrath", hasInfo: false },
+                    { id: 3, name: "Kempen", hasInfo: false },
+                    { id: 4, name: "Nettetal", hasInfo: false },
+                    { id: 5, name: "Niederkrüchten", hasInfo: false },
+                    { id: 6, name: "Schwalmtal", hasInfo: false },
+                    { id: 7, name: "Tönisvorst", hasInfo: false },
+                    { id: 8, name: "Viersen", hasInfo: false },
+                    { id: 9, name: "Willich", hasInfo: false }
+                ]
+            }
+        }
+    },
+    {
+        id: 3_5,
+        path: "wesel",
+        districtPath: "dusseldorf",
+        gerb: "Germany/nrw/dusseldorf/wesel/gerb.png",
+        translations: {
+            ru: {
+                name: "Везель",
+                center: [{ bold: "Центр района:", text: " город Везель." }],
+                area: [{ bold: "Площадь:", text: " 1 042,8 км² (2023 г.)" }],
+                population: [{ bold: "Население:", text: " около 460 000 человек." }],
+                density: [{ bold: "Плотность населения:", text: " около 440 человек/км²." }],
+                code: [{ bold: "Официальный код района:", text: " 05 1 70." }],
+                description: [
+                    { text: "Район Везель расположен на нижнем течении Рейна и входит в округ Дюссельдорф." }
+                ],
+                com: [{ text: "Район подразделяется на " }, { bold: "13 общин:" }],
+                communities: [
+                    { id: 1, name: "Альпен", hasInfo: false },
+                    { id: 2, name: "Динслакен", hasInfo: false },
+                    { id: 3, name: "Хамминкельн", hasInfo: false },
+                    { id: 4, name: "Хюнксе", hasInfo: false },
+                    { id: 5, name: "Камп-Линтфорт", hasInfo: false },
+                    { id: 6, name: "Мёрс", hasInfo: false },
+                    { id: 7, name: "Нойкирхен-Флюйн", hasInfo: false },
+                    { id: 8, name: "Райнберг", hasInfo: false },
+                    { id: 9, name: "Шермбек", hasInfo: false },
+                    { id: 10, name: "Зонсбек", hasInfo: false },
+                    { id: 11, name: "Фёрде", hasInfo: false },
+                    { id: 12, name: "Везель", hasInfo: false },
+                    { id: 13, name: "Ксантен", hasInfo: false }
+                ]
+            },
+            ua: {
+                name: "Везель",
+                center: [{ bold: "Центр району:", text: " місто Везель." }],
+                area: [{ bold: "Площа:", text: " 1 042,8 км²." }],
+                population: [{ bold: "Населення:", text: " близько 460 000 осіб." }],
+                density: [{ bold: "Щільність населення:", text: " близько 440 осіб/км²." }],
+                code: [{ bold: "Офіційний код району:", text: " 05 1 70." }],
+                description: [
+                    { text: "Район Везель розташований у нижній течії Рейну та входить до адміністративного округу Дюссельдорф." }
+                ],
+                com: [{ text: "Район поділяється на " }, { bold: "13 громад:" }],
+                communities: [
+                    { id: 1, name: "Альпен", hasInfo: false },
+                    { id: 2, name: "Дінслакен", hasInfo: false },
+                    { id: 3, name: "Хаммінкельн", hasInfo: false },
+                    { id: 4, name: "Гюнксе", hasInfo: false },
+                    { id: 5, name: "Камп-Лінтфорт", hasInfo: false },
+                    { id: 6, name: "Мерс", hasInfo: false },
+                    { id: 7, name: "Нойкірхен-Флюйн", hasInfo: false },
+                    { id: 8, name: "Райнберг", hasInfo: false },
+                    { id: 9, name: "Шермбек", hasInfo: false },
+                    { id: 10, name: "Зонсбек", hasInfo: false },
+                    { id: 11, name: "Ферде", hasInfo: false },
+                    { id: 12, name: "Везель", hasInfo: false },
+                    { id: 13, name: "Ксантен", hasInfo: false }
+                ]
+            },
+            de: {
+                name: "Kreis Wesel",
+                center: [{ bold: "Kreisstadt:", text: " Stadt Wesel." }],
+                area: [{ bold: "Fläche:", text: " 1.042,8 km²." }],
+                population: [{ bold: "Einwohnerzahl:", text: " ca. 460.000." }],
+                density: [{ bold: "Bevölkerungsdichte:", text: " ca. 440 Einwohner/km²." }],
+                code: [{ bold: "Amtlicher Regionalschlüssel:", text: " 05 1 70." }],
+                description: [
+                    { text: "Der Kreis Wesel liegt am Niederrhein im Regierungsbezirk Düsseldorf." }
+                ],
+                com: [{ text: "Der Kreis ist unterteilt in " }, { bold: "13 Gemeinden:" }],
+                communities: [
+                    { id: 1, name: "Alpen", hasInfo: false },
+                    { id: 2, name: "Dinslaken", hasInfo: false },
+                    { id: 3, name: "Hamminkeln", hasInfo: false },
+                    { id: 4, name: "Hünxe", hasInfo: false },
+                    { id: 5, name: "Kamp-Lintfort", hasInfo: false },
+                    { id: 6, name: "Moers", hasInfo: false },
+                    { id: 7, name: "Neukirchen-Vluyn", hasInfo: false },
+                    { id: 8, name: "Rheinberg", hasInfo: false },
+                    { id: 9, name: "Schermbeck", hasInfo: false },
+                    { id: 10, name: "Sonsbeck", hasInfo: false },
+                    { id: 11, name: "Voerde (Niederrhein)", hasInfo: false },
+                    { id: 12, name: "Wesel", hasInfo: false },
+                    { id: 13, name: "Xanten", hasInfo: false }
+                ]
+            }
+        }
+    },
+    {
         id: 4_1,
         path: "aachen",
         districtPath: "koln",
