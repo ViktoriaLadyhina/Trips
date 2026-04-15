@@ -4,18 +4,18 @@ import { districtsLu as mapLu } from "./districts";
 import { useEffect, useRef, useState } from "react";
 
 const cantonsMap = {
-  "1": { ru: "Клерво", de: "Clervaux", ua: "Клерво" },
-  "2": { ru: "Дикрих", de: "Diekirch", ua: "Дікріх" },
-  "3": { ru: "Эхтернах", de: "Echternach", ua: "Ехтернах" },
-  "4": { ru: "Эш-сюр-Альзетт", de: "Esch-sur-Alzette", ua: "Еш-сюр-Альзетт" },
-  "5": { ru: "Гревенмахер", de: "Grevenmacher", ua: "Гревенмахер" },
-  "6": { ru: "Люксембург", de: "Luxembourg", ua: "Люксембург" },
-  "7": { ru: "Мерш", de: "Mersch", ua: "Мерш" },
-  "8": { ru: "Реданж", de: "Redange", ua: "Реданж" },
-  "9": { ru: "Ремих", de: "Remich", ua: "Реміх" },
-  "10": { ru: "Вьянден", de: "Vianden", ua: "В’янден" },
-  "11": { ru: "Вильц", de: "Wiltz", ua: "Вільц" },
-  "12": { ru: "Капеллен", de: "Capellen", ua: "Капеллен" },
+  "Clervaux": { ru: "Клерво", de: "Clervaux", ua: "Клерво" },
+  "Diekirch": { ru: "Дикрих", de: "Diekirch", ua: "Дікріх" },
+  "Echternach": { ru: "Эхтернах", de: "Echternach", ua: "Ехтернах" },
+  "Esch-Sur-Alzette": { ru: "Эш-сюр-Альзетт", de: "Esch-sur-Alzette", ua: "Еш-сюр-Альзетт" },
+  "Grevenmacher": { ru: "Гревенмахер", de: "Grevenmacher", ua: "Гревенмахер" },
+  "Luxembourg": { ru: "Люксембург", de: "Luxembourg", ua: "Люксембург" },
+  "Mersch": { ru: "Мерш", de: "Mersch", ua: "Мерш" },
+  "Redange": { ru: "Реданж", de: "Redange", ua: "Реданж" },
+  "Remich": { ru: "Ремих", de: "Remich", ua: "Реміх" },
+  "Vianden": { ru: "Вьянден", de: "Vianden", ua: "В’янден" },
+  "Wiltz": { ru: "Вильц", de: "Wiltz", ua: "Вільц" },
+  "Capellen": { ru: "Капеллен", de: "Capellen", ua: "Капеллен" },
 };
 
 export default function LuxembourgMap() {
