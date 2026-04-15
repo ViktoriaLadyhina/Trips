@@ -156,11 +156,15 @@ const Map = () => {
                       <li><span>{t.districts.mettmann[lang]}</span>
                         <ul>
                           {/* Velbert город */}
-                          <li><Link to="/germany/nrw/city/germany/nrw/dusseldorf/velbert">{t.cities.velbert[lang]}</Link>
-                          <ul>
-                            <li><Link to="/germany/nrw/dusseldorf/velbert/attractions/langenberg_altstadt_velbert">{t.attractions.langenberg_altstadt_velbert[lang]}</Link></li>
-                            <li><Link to="/germany/nrw/dusseldorf/velbert/attractions/langenberg_burgerhaus_velbert">{t.attractions.langenberg_burgerhaus_velbert[lang]}</Link></li>
-                          </ul>
+                          <li><Link to="/germany/nrw/dusseldorf/velbert">{t.cities.velbert[lang]}</Link>
+                            <ul>
+                              <li><Link to="/germany/nrw/dusseldorf/velbert/attractions/langenberg_altstadt_velbert">{t.attractions.langenberg_altstadt_velbert[lang]}</Link>
+                                <ul>
+                                  <li><Link to="/germany/nrw/dusseldorf/velbert/attractions/langenberg_alte_kirche_velbert">{t.attractions.langenberg_alte_kirche_velbert[lang]}</Link></li>
+                                </ul>
+                              </li>
+                              <li><Link to="/germany/nrw/dusseldorf/velbert/attractions/langenberg_burgerhaus_velbert">{t.attractions.langenberg_burgerhaus_velbert[lang]}</Link></li>
+                            </ul>
                           </li>
                         </ul>
                       </li>

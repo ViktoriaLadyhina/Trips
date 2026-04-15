@@ -891,12 +891,19 @@ const datas = [
         type: ["historical_area"], rating: "popular",
         path: "langenberg_altstadt_velbert",
         countryPath: "germany", regionPath: "nrw", districtPath: "dusseldorf", cityPath: "velbert",
-        fotoCard: "Germany/nrw/dusseldorf/mettmann/velbert/langenberg_altstadt/007.jpg",
+        subObjects: ["langenberg_alte_kirche_velbert"],
+        fotoCard: "Germany/nrw/dusseldorf/mettmann/velbert/langenberg_altstadt/006.jpg",
         translations: {
             ru: {
                 name: "Старый город Лангенберг",
                 location: "Фельберт-Лангенберг, Германия",
                 short_description: "Старый город Лангенберг – один из наиболее хорошо сохранившихся исторических центров региона, известный фахверковой архитектурой, узкими улочками и атмосферой старинного торгово-ремесленного города.",
+                short_description_subObjects: {
+                    text: "В старом городе Лангенберга расположены такие достопримечательности:",
+                    items: [
+                        { bold: "Старая церковь Лангеберг", text: "– историческая евангелическая церковь XVIII века в районе Лангенберг города Фельберт, сочетающая элементы барочной архитектуры и сохранившиеся части средневекового храма." },
+                    ]
+                },
                 full_description: {
                     title: "Описание и история",
                     items: [
@@ -926,13 +933,19 @@ const datas = [
                     ogTitle: "Старый город Лангенберг – исторический старый город Германии",
                     ogDescription: "Фахверковые дома, узкие улочки и атмосфера настоящего старого немецкого города в Velbert-Langenberg.",
                     keywords: "Velbert Langenberg, Altstadt, старый город Германия, фахверк, NRW, исторический центр, Alte Kirche Langenberg, Ruhrgebiet, historic town Germany, Лангенберг, достопримечательность",
-                    ogImage: "https://our-travels.info/foto/Germany/nrw/dusseldorf/mettmann/velbert/langenberg_altstadt/007.jpg"
+                    ogImage: "https://our-travels.info/foto/Germany/nrw/dusseldorf/mettmann/velbert/langenberg_altstadt/006.jpg"
                 }
             },
             ua: {
                 name: "Старе місто Лангенберг",
                 location: "Фельберт-Лангенберг, Німеччина",
                 short_description: "Старе місто Лангенберг – один із найкраще збережених історичних центрів регіону, відомий фахверковою архітектурою, вузькими вуличками та атмосферою старовинного торговельно-ремісничого міста.",
+                short_description_subObjects: {
+                    text: "У старому місті Лангенберга розташовані такі пам’ятки:",
+                    items: [
+                        { bold: "Стара церква Лангенберг", text: "– історична євангелічна церква XVIII століття в районі Лангенберг міста Фельберт, що поєднує елементи барокової архітектури та збережені частини середньовічного храму." },
+                    ]
+                },
                 full_description: {
                     title: "Опис та історія",
                     items: [
@@ -962,13 +975,19 @@ const datas = [
                     ogTitle: "Старе місто Лангенберг – історичне старе місто Німеччини",
                     ogDescription: "Фахверкові будинки, вузькі вулички та атмосфера справжнього старого німецького міста у Velbert-Langenberg.",
                     keywords: "Velbert Langenberg, Altstadt, старе місто Німеччина, фахверк, NRW, історичний центр, Alte Kirche Langenberg, Ruhrgebiet, historic town Germany, Лангенберг, пам’ятка",
-                    ogImage: "https://our-travels.info/foto/Germany/nrw/dusseldorf/mettmann/velbert/langenberg_altstadt/007.jpg"
+                    ogImage: "https://our-travels.info/foto/Germany/nrw/dusseldorf/mettmann/velbert/langenberg_altstadt/006.jpg"
                 }
             },
             de: {
                 name: "Altstadt Langenberg",
                 location: "Velbert-Langenberg, Deutschland",
                 short_description: "Die Altstadt Langenberg gehört zu den am besten erhaltenen historischen Zentren der Region und ist bekannt für ihre Fachwerkarchitektur, engen Gassen und die Atmosphäre einer historischen Handels- und Handwerkerstadt.",
+                short_description_subObjects: {
+                    text: "In der Altstadt von Langenberg befinden sich folgende Sehenswürdigkeiten:",
+                    items: [
+                        { bold: "Alte Kirche Langenberg", text: "– historische evangelische Kirche aus dem 18. Jahrhundert im Stadtteil Langenberg der Stadt Velbert, die Elemente der barocken Architektur mit erhaltenen Teilen einer mittelalterlichen Kirche verbindet." },
+                    ]
+                },
                 full_description: {
                     title: "Beschreibung und Geschichte",
                     items: [
@@ -998,7 +1017,180 @@ const datas = [
                     ogTitle: "Altstadt Langenberg – historisches Stadtzentrum Deutschlands",
                     ogDescription: "Fachwerkhäuser, enge Gassen und die Atmosphäre einer echten historischen deutschen Stadt in Velbert-Langenberg.",
                     keywords: "Velbert Langenberg, Altstadt, historische Stadt Deutschland, Fachwerk, NRW, historisches Zentrum, Alte Kirche Langenberg, Ruhrgebiet, historic town Germany, Langenberg, Sehenswürdigkeit",
-                    ogImage: "https://our-travels.info/foto/Germany/nrw/dusseldorf/mettmann/velbert/langenberg_altstadt/007.jpg"
+                    ogImage: "https://our-travels.info/foto/Germany/nrw/dusseldorf/mettmann/velbert/langenberg_altstadt/006.jpg"
+                }
+            }
+        }
+    },
+    {
+        id: "langenberg_alte_kirche_velbert",
+        type: ["cathedral"], rating: "local",
+        path: "langenberg_alte_kirche_velbert",
+        countryPath: "germany", regionPath: "nrw", districtPath: "dusseldorf", cityPath: "velbert",
+        hiddenFromList: true, showMore: true,
+        fotoCard: "Germany/nrw/dusseldorf/mettmann/velbert/langenberg_altstadt/alte_kirche/001.jpg",
+        coord: { lat: 51.35185840568045, lng: 7.1216848369537304 },
+        translations: {
+            ru: {
+                name: "Старая церковь Лангеберг",
+                location: "Фельберт-Лангенберг, Германия",
+                officialSite: [
+                    { bold: "Официальный сайт", link: "https://ekgla.de/?utm_source=chatgpt.com" }
+                ],
+                short_description: "Старая церковь Лангеберг – историческая евангелическая церковь в районе Лангенберг города Фельберт, построенная в 1725-1726 годах. Она частично включает элементы более ранней готической постройки и является важным архитектурным акцентом старого города. Сегодня церковь остаётся действующим храмом и значимым памятником региональной истории.",
+                full_description: {
+                    title: "Описание и история",
+                    items: [
+                        { bold: "Старая церковь Лангеберг (Alte Kirche Langenberg)", text: " – историческая евангелическая церковь в районе Лангенберг города Фельберт. Она расположена в центре старого города и формирует одну из ключевых архитектурных доминант района." },
+                        { text: "Здание выполнено в стиле бергского барокко и представляет собой зальную церковь с лаконичным интерьером, характерным для протестантской традиции. Центральным художественным элементом является богато оформленная деревянная кафедра, которая играет важную роль в пространственной композиции интерьера." },
+                        { bold: "История", text: "церкви начинается со средневекового периода: на этом месте существовала более ранняя приходская церковь, связанная с общиной, известной с XIII–XIV веков. Часть готического хора той постройки сохранилась и была включена в современное здание." },
+                        { text: "Современная церковь была построена в 1725-1726 годах по проекту архитектора Иоганна Михаэля Мозера. Новое здание заменило старую постройку из-за её ветхого состояния и роста прихода. Первое богослужение в новой церкви состоялось 22 декабря 1726 года." },
+                        { text: "В XVIII-XIX веках церковь была дополнена ключевыми элементами: в 1731 году была создана кафедра мастером Арнольдом Вильгельмом Бекманном, в 1751 году завершено строительство башни с характерной крышей, а в 1839 году установлен орган." }
+                    ]
+                },
+                tickets_and_entry: {
+                    title: "Практическая информация",
+                    items: [
+                        { bold: "Адрес:", text: "Hauptstraße 64 42555 Velbert Германия" },
+                        { bold: "Конфессия:", text: "Протестантская – Евангелическая" }
+                    ]
+                },
+                relics: {
+                    title: "Реликвии и ценности",
+                    items: [
+                        { text: "Резная кафедра (1731) – ключевой художественный объект" },
+                        { text: "Орган с барочным фасадом (1839, обновлён в 1983) " },
+                        { text: "Сохранившиеся элементы готического хора " }
+                    ]
+                },
+                interestingFacts: {
+                    title: "Интересные факты",
+                    isList: true,
+                    items: [
+                        { text: "Часть стен церкви – это оригинальная кладка средневековой капеллы (~1300 г.) " },
+                        { text: "Кафедра считается настолько выразительной, что её называют «проповедью в дереве» " },
+                        { text: "Церковь отражает переход региона к протестантизму (с конца XVI века) " },
+                        { text: "Расположена в центре одного из лучше всего сохранившихся исторических городских ядер NRW " }
+                    ]
+                },
+                construction_period: "Средневековая предшествующая церковь: до XIV века. Современное здание: 1725-1726",
+                architects: "Иоганн Михаэль Мозера (Johann Michael Moser)",
+                founder: "Евангелическая община Лангенберга. Поддержка: местные власти и пожертвования, включая короля Пруссии Фридриха Вильгельма I",
+                meta: {
+                    title: "Старая церковь Лангеберг (Alte Kirche Langenberg Velbert) – история, описание, фото",
+                    description: "Старая церковь Лангеберг – историческая протестантская церковь в районе Лангенберг. Узнайте историю, архитектуру и интересные факты.",
+                    ogTitle: "Старая церковь Лангеберг (Alte Kirche Langenberg) – историческая церковь в Фельберт",
+                    ogDescription: "Старинная церковь в Лангенберге (Фельберт), важная достопримечательность региона с богатой историей и атмосферной архитектурой.",
+                    keywords: "достопримечательности, евангелическая, протестантская церковь Лангенберг, старый город Фельберт, Северный Рейн Вестфалия церкви Германия, история, старинная церковь Лангенберг, архитектура барокко Германия церкви, что посмотреть в Фельберт, интересные места Северный Рейн Вестфалия, путешествие по Германии церкви, церковь в районе Лангенберг Фельберт",
+                    ogImage: "https://our-travels.info/foto/Germany/nrw/dusseldorf/mettmann/velbert/langenberg_altstadt/alte_kirche/001.jpg"
+                }
+            },
+            ua: {
+                name: "Стара церква Лангенберг",
+                location: "Фельберт-Лангенберг, Німеччина",
+                officialSite: [
+                    { bold: "Офіційний сайт", link: "https://ekgla.de/?utm_source=chatgpt.com" }
+                ],
+                short_description: "Стара церква Лангенберг – історична євангелічна церква в районі Лангенберг міста Фельберт, побудована у 1725–1726 роках. Вона частково включає елементи більш ранньої готичної споруди і є важливим архітектурним акцентом старого міста. Сьогодні церква залишається діючим храмом і значною пам’яткою регіональної історії.",
+                full_description: {
+                    title: "Опис і історія",
+                    items: [
+                        { bold: "Стара церква Лангенберг (Alte Kirche Langenberg)", text: " – історична євангелічна церква в районі Лангенберг міста Фельберт. Вона розташована в центрі старого міста і формує одну з ключових архітектурних домінант району." },
+                        { text: "Будівля виконана в стилі берзького бароко і являє собою зальну церкву з лаконічним інтер’єром, характерним для протестантської традиції. Центральним художнім елементом є багато оздоблена дерев’яна кафедра, яка відіграє важливу роль у просторовій композиції інтер’єру." },
+                        { bold: "Історія", text: "церкви починається із середньовічного періоду: на цьому місці існувала більш рання парафіяльна церква, пов’язана з громадою, відомою щонайменше з XIII–XIV століть. Частина готичного хору тієї споруди збереглася і була включена до сучасної будівлі." },
+                        { text: "Сучасна церква була збудована у 1725–1726 роках за проєктом архітектора Йоганна Міхаеля Мозера. Нова будівля замінила стару через її аварійний стан і зростання парафії. Перше богослужіння в новій церкві відбулося 22 грудня 1726 року." },
+                        { text: "У XVIII–XIX століттях церква була доповнена ключовими елементами: у 1731 році була створена кафедра майстром Арнольдом Вільгельмом Бекманном, у 1751 році завершено будівництво вежі з характерним дахом, а у 1839 році встановлено орган." }
+                    ]
+                },
+                tickets_and_entry: {
+                    title: "Практична інформація",
+                    items: [
+                        { bold: "Адреса:", text: "Hauptstraße 64 42555 Velbert Німеччина" },
+                        { bold: "Конфесія:", text: "Протестантська – Євангелічна" }
+                    ]
+                },
+                relics: {
+                    title: "Реліквії та цінності",
+                    items: [
+                        { text: "Різьблена кафедра (1731) – ключовий художній об’єкт" },
+                        { text: "Орган з бароковим фасадом (1839, оновлений у 1983)" },
+                        { text: "Збережені елементи готичного хору" }
+                    ]
+                },
+                interestingFacts: {
+                    title: "Цікаві факти",
+                    isList: true,
+                    items: [
+                        { text: "Частина стін церкви – це оригінальна кладка середньовічної каплиці (~1300 р.)" },
+                        { text: "Кафедру настільки виразну, що її називають «проповіддю в дереві»" },
+                        { text: "Церква відображає перехід регіону до протестантизму (з кінця XVI століття)" },
+                        { text: "Розташована в центрі одного з найкраще збережених історичних міських ядер NRW" }
+                    ]
+                },
+                construction_period: "Середньовічна попередня церква: до XIV століття. Сучасна будівля: 1725–1726",
+                architects: "Йоганн Міхаель Мозер (Johann Michael Moser)",
+                founder: "Євангелічна громада Лангенберга. Підтримка: місцева влада та пожертви, включаючи короля Пруссії Фрідріха Вільгельма I",
+                meta: {
+                    title: "Стара церква Лангенберг (Alte Kirche Langenberg Velbert) – історія, опис, фото",
+                    description: "Стара церква Лангенберг – історична протестантська церква в районі Лангенберг. Дізнайтеся історію, архітектуру та цікаві факти.",
+                    ogTitle: "Стара церква Лангенберг (Alte Kirche Langenberg) – історична церква у Фельберт",
+                    ogDescription: "Старовинна церква в Лангенберзі (Фельберт), важлива пам’ятка регіону з багатою історією та атмосферною архітектурою.",
+                    keywords: "пам'ятки, євангелічна, протестантська церква Лангенберг, старе місто Фельберт, Північний Рейн Вестфалія церкви Німеччина, історія, старовинна церква Лангенберг, архітектура бароко Німеччина церкви, що подивитися у Фельберт, цікаві місця Північний Рейн Вестфалія, подорож Німеччиною церкви, церква в районі Лангенберг Фельберт",
+                    ogImage: "https://our-travels.info/foto/Germany/nrw/dusseldorf/mettmann/velbert/langenberg_altstadt/alte_kirche/001.jpg"
+                }
+            },
+            de: {
+                name: "Alte Kirche Langenberg",
+                location: "Velbert-Langenberg, Deutschland",
+                officialSite: [
+                    { bold: "Offizielle Website", link: "https://ekgla.de/?utm_source=chatgpt.com" }
+                ],
+                short_description: "Die Alte Kirche Langenberg ist eine historische evangelische Kirche im Stadtteil Langenberg der Stadt Velbert, die 1725–1726 erbaut wurde. Sie enthält teilweise Elemente eines früheren gotischen Bauwerks und ist ein bedeutender architektonischer Akzent der Altstadt. Heute ist die Kirche weiterhin ein aktives Gotteshaus und ein wichtiges Denkmal der regionalen Geschichte.",
+                full_description: {
+                    title: "Beschreibung und Geschichte",
+                    items: [
+                        { bold: "Alte Kirche Langenberg", text: " – historische evangelische Kirche im Stadtteil Langenberg der Stadt Velbert. Sie liegt im Zentrum der Altstadt und bildet eine der wichtigsten architektonischen Dominanten des Viertels." },
+                        { text: "Das Gebäude ist im bergischen Barockstil errichtet und представляет eine Saalkirche mit einem schlichten, für die protestantische Tradition typischen Innenraum. Das zentrale künstlerische Element ist die reich verzierte hölzerne Kanzel, die eine wichtige Rolle in der Raumkomposition spielt." },
+                        { bold: "Geschichte", text: "der Kirche beginnt im Mittelalter: An dieser Stelle befand sich eine frühere Pfarrkirche, die einer Gemeinde zugeordnet war, die mindestens seit dem 13.–14. Jahrhundert bekannt ist. Teile des gotischen Chors dieses Bauwerks sind erhalten geblieben und in das heutige Gebäude integriert worden." },
+                        { text: "Die heutige Kirche wurde 1725–1726 nach Plänen des Architekten Johann Michael Moser errichtet. Der Neubau ersetzte das alte Gebäude aufgrund seines schlechten Zustands und des wachsenden Gemeindebedarfs. Der erste Gottesdienst fand am 22. Dezember 1726 statt." },
+                        { text: "Im 18.–19. Jahrhundert wurde die Kirche erweitert: 1731 entstand die Kanzel durch den Meister Arnold Wilhelm Beckmann, 1751 wurde der Turm mit seiner charakteristischen Haube vollendet und 1839 die Orgel installiert." }
+                    ]
+                },
+                tickets_and_entry: {
+                    title: "Praktische Informationen",
+                    items: [
+                        { bold: "Adresse:", text: "Hauptstraße 64 42555 Velbert Deutschland" },
+                        { bold: "Konfession:", text: "Evangelisch – Protestantisch" }
+                    ]
+                },
+                relics: {
+                    title: "Relikte und Werte",
+                    items: [
+                        { text: "Schnitzkanzel (1731) – zentrales Kunstobjekt" },
+                        { text: "Orgel mit barockem Prospekt (1839, 1983 restauriert)" },
+                        { text: "Erhaltene Teile des gotischen Chors" }
+                    ]
+                },
+                interestingFacts: {
+                    title: "Interessante Fakten",
+                    isList: true,
+                    items: [
+                        { text: "Teile der Mauern stammen aus einer mittelalterlichen Kapelle (~1300)" },
+                        { text: "Die Kanzel wird oft als „Predigt aus Holz“ bezeichnet" },
+                        { text: "Die Kirche spiegelt den Übergang der Region zum Protestantismus wider (seit dem späten 16. Jahrhundert)" },
+                        { text: "Sie liegt im Zentrum eines der am besten erhaltenen historischen Stadtkerne in NRW" }
+                    ]
+                },
+                construction_period: "Mittelalterliche Vorgängerkirche: bis 14. Jahrhundert. Heutiger Bau: 1725–1726",
+                architects: "Johann Michael Moser",
+                founder: "Evangelische Gemeinde Langenberg. Unterstützung durch lokale Behörden und Spenden, einschließlich König Friedrich Wilhelm I. von Preußen",
+                meta: {
+                    title: "Alte Kirche Langenberg (Velbert) – Geschichte, Beschreibung, Fotos",
+                    description: "Die Alte Kirche Langenberg ist eine historische evangelische Kirche im Stadtteil Langenberg. Erfahren Sie mehr über Geschichte, Architektur und Fakten.",
+                    ogTitle: "Alte Kirche Langenberg – historische Kirche in Velbert",
+                    ogDescription: "Historische Kirche in Langenberg (Velbert), ein bedeutendes Denkmal der Region mit reicher Geschichte und Atmosphäre.",
+                    keywords: "Sehenswürdigkeiten, evangelische Kirche Langenberg, Altstadt Velbert, Kirchen Nordrhein-Westfalen, Geschichte, barocke Kirche Deutschland, historische Kirche Langenberg, Architektur Barock Deutschland, Langenberg Kirche, Velbert Sehenswürdigkeiten, Bergisches Land Kirchen, Kirche 18. Jahrhundert Deutschland",
+                    ogImage: "https://our-travels.info/foto/Germany/nrw/dusseldorf/mettmann/velbert/langenberg_altstadt/alte_kirche/001.jpg"
                 }
             }
         }

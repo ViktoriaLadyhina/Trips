@@ -449,7 +449,10 @@ export const Fotos = {
         { path: "Germany/nrw/dusseldorf/mettmann/velbert/langenberg_altstadt/004.jpg", title: { ru: "Старый город Лангенберг, 2025", ua: "Старе місто Лангенберг, 2025", de: "Altstadt Langenberg, 2025" } },
         { path: "Germany/nrw/dusseldorf/mettmann/velbert/langenberg_altstadt/005.jpg", title: { ru: "Старый город Лангенберг, 2025", ua: "Старе місто Лангенберг, 2025", de: "Altstadt Langenberg, 2025" } },
         { path: "Germany/nrw/dusseldorf/mettmann/velbert/langenberg_altstadt/006.jpg", title: { ru: "Старый город Лангенберг, 2025", ua: "Старе місто Лангенберг, 2025", de: "Altstadt Langenberg, 2025" } },
-        { path: "Germany/nrw/dusseldorf/mettmann/velbert/langenberg_altstadt/007.jpg", title: { ru: "Старый город Лангенберг, 2025", ua: "Старе місто Лангенберг, 2025", de: "Altstadt Langenberg, 2025" } },
+        { path: "Germany/nrw/dusseldorf/mettmann/velbert/langenberg_altstadt/alte_kirche/001.jpg", title: { ru: "Старая церковь Лангеберг, 2025", ua: "Стара церква Лангенберг, 2025", de: "Alte Kirche Langenberg, 2025" } },
+      ],
+      langenberg_alte_kirche_velbert: [
+        { path: "Germany/nrw/dusseldorf/mettmann/velbert/langenberg_altstadt/alte_kirche/001.jpg", title: { ru: "Старая церковь Лангеберг, 2025", ua: "Стара церква Лангенберг, 2025", de: "Alte Kirche Langenberg, 2025" } },
       ],
       langenberg_burgerhaus_velbert: [
         { path: "Germany/nrw/dusseldorf/mettmann/velbert/burgerhaus/001.jpg", title: { ru: "Исторический общественный дом Лангенберга, 2025", ua: "Історичний громадський будинок Лангенберга, 2025", de: "Historisches Bürgerhaus Langenberg, 2025" } },

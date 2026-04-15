@@ -91,6 +91,7 @@ const datas =
     // край mettmann 
     // velbert
     langenberg_altstadt_velbert: { ru: 'Старый город Лангенберг', de: 'Altstadt Langenberg', ua: 'Старе місто Лангенберг' },
+    langenberg_alte_kirche_velbert: { ru: 'Старая церковь Лангеберг', de: 'Alte Kirche Langenberg', ua: 'Стара церква Лангенберг' },
     langenberg_burgerhaus_velbert: { ru: 'Исторический общественный дом Лангенберга', de: 'Historisches Bürgerhaus Langenberg', ua: 'Історичний громадський будинок Лангенберга' },
 
     // Köln okrug
