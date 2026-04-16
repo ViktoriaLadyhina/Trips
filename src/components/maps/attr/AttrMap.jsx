@@ -104,7 +104,7 @@ const fallbackCenter = city?.coord
                     className="popup-btn"
                     onClick={() =>
                       navigate(
-                        `/${attr.countryPath}/${attr.regionsPath}/${attr.districtPath}/${attr.cityPath}/attractions/${attr.path}`
+                        `/${attr.countryPath}/${attr.regionPath}/${attr.districtPath}/${attr.cityPath}/attractions/${attr.path}`
                       )
                     }
                   >
