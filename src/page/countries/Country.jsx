@@ -79,33 +79,6 @@ const Country = () => {
                         </li>
                     ))}
                 </ul>
-
-                {/* Ключевые города */}
-                {country.translations?.[lang]?.cities?.items?.length > 0 && (
-                    <div className="country__sidebar-section">
-                        <h3 className="country__sidebar-section-title">
-                            {country.translations[lang].cities.title}
-                        </h3>
-                        <ul className={`country__sidebar-list ${sidebarOpen ? "active" : ""}`}>
-                            {country.translations[lang].cities.items.map((city) => (
-                                <li key={city.id} className="country__sidebar-item">
-                                    {city.hasInfo ? (
-                                        <Link
-                                            to={`/${countryPath}/${city.path}`}
-                                            className="country__sidebar-link"
-                                        >
-                                            {city.name}
-                                        </Link>
-                                    ) : (
-                                        <span className="country__sidebar-link country__sidebar-link--disabled">
-                                            {city.name}
-                                        </span>
-                                    )}
-                                </li>
-                            ))}
-                        </ul>
-                    </div>
-                )}
             </aside>
 
             {/* Основной контент */}

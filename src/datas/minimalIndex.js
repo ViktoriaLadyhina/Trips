@@ -13,6 +13,8 @@ const datas =
     //luxembourg
     mersch: { ru: 'Кантон Мерш', de: 'Kanton Mersch', ua: 'Кантон Мерш' },
     capellen: { ru: 'Кантон Капеллен', de: 'Kanton Capellen', ua: 'Кантон Капеллен' },
+    luxembourg_canton: { ru: 'Кантон Люксембург', de: 'Kanton Luxemburg', ua: 'Кантон Люксембург' },
+
     //Ukraine
     sumska: { ru: 'Сумская область', de: 'Sumska Oblast', ua: 'Сумська область' }
   },
@@ -49,6 +51,7 @@ const datas =
     saarburg: { ru: 'Город Саарбург', de: 'Stadt Saarburg', ua: 'Місто Саарбург' },
 
     //luxembourg
+    luxembourg_city: { ru: 'Город Люксембург', de: 'Stadt Luxemburg', ua: 'Місто Люксембург' },
     ansembourg: { ru: 'Деревня Ансембург', de: 'Dorf Ansembourg', ua: 'Село Ансембург' },
     koerich: { ru: 'Деревня Кёрих', de: 'Dorf Koerich', ua: 'Село Кьоріх' },
 

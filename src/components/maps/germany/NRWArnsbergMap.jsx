@@ -37,7 +37,7 @@ const NRWArnsbergMap = ({ regions, subRegion }) => {
     // 2️⃣ Берём города
     const freeCities = useMemo(() => {
         return ["bochum", "dortmund", "hagen", "hamm", "herne"]
-            .map(slug => regions?.discriptRegions?.[1]?.items?.find(city => city.path === slug))
+            .map(slug => regions?.cities?.items?.find(city => city.path === slug))
             .filter(Boolean);
     }, [regions]);
 

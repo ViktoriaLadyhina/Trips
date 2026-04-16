@@ -9,7 +9,7 @@ import './City.scss'
 import BtnAttr from '../../components/btn-attr/BtnAttr.jsx';
 import useCity from '../../hooks/useCity.js';
 import useEvents from '../../hooks/useEvents.js';
-import datas from '../../datas/minimalIndex'
+import datas from '../../datas/minimalIndex.js'
 
 const BASE_PHOTO_URL = import.meta.env.VITE_BASE_PHOTO_URL;
 

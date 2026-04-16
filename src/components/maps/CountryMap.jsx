@@ -37,8 +37,16 @@ export default function CountryMap({ countryKey, regionKey, regions, subRegion, 
 
   let MapComponent = country.country;
 
-  if (regionKey && country[regionKey]) {
-    const region = country[regionKey];
+  if (!regionKey) {
+  // уровень страны
+  MapComponent = country.country;
+} else {
+  // уровень региона
+  if (!country[regionKey]) {
+    return null; 
+  }
+
+  const region = country[regionKey];
 
     // Если districtKey задан, но карты для него нет — не показываем карту
     if (districtKey) {

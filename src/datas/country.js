@@ -338,23 +338,30 @@ const datas = [
           title: "Краткая история",
           items: [
             { text: "Люксембург был основан в 963 году, когда граф Зигфрид Люксембургский приобрёл укрепление Люцилинбург (Lucilinburhuc), вокруг которого постепенно вырос город и государство." },
-            { text: "В Средние века Люксембург превратился в важное графство, а затем герцогство, играя заметную роль в европейской политике. Представители Люксембургской династии занимали престолы Священной Римской империи, включая императора Карл IV." },
+            { text: "В Средние века Люксембург превратился в важное графство, а затем герцогство, играя заметную роль в европейской политике. Представители Люксембургской династии занимали престолы Священной Римской империи, включая императора Карла IV." },
             { text: "В последующие столетия территория Люксембурга неоднократно переходила под контроль крупных держав – Испании, Франции и Австрии, из-за своего стратегического положения в центре Европы. Город Люксембург считался одной из самых мощных крепостей континента и получил прозвище «Северный Гибралтар»." },
-            { text: "В XIX веке после решений Венский конгресс Люксембург стал Великим герцогством. В 1890 году установилась династия Нассау-Вейльбург, которая правит страной до сих пор." },
+            { text: "Ключевым поворотным моментом стал 1867 год, когда после Люксембургского кризиса был подписан Лондонский договор. Согласно его условиям, крепость Люксембурга была демонтирована, а страна получила статус нейтрального государства, гарантированного международными соглашениями." },
+            { text: "В XIX веке после решений Венского конгресса Люксембург стал Великим герцогством. В 1890 году установилась династия Нассау-Вейльбург, которая правит страной до сих пор." },
             { text: "Во время Первой и Второй мировых войн Люксембург был оккупирован Германией. Во Вторую мировую войну страна была фактически аннексирована нацистской Германией, подвергалась насильственной германизации, а часть населения была депортирована и мобилизована. После освобождения в 1944 году Люксембург окончательно отказался от политики нейтралитета." },
             { text: "С середины XX века Люксембург стал одним из основателей европейской интеграции, участвуя в создании Европейского союза и других международных структур. Страна активно развивала финансовый сектор и превратилась в один из крупнейших банковских центров мира." },
-            { text: "Сегодня Люксембург – стабильное и экономически развитое государство с высоким уровнем жизни, сильной экономикой и важной ролью в европейской политике." },
+            { text: "Сегодня Люксембург – стабильное и экономически развитое государство с высоким уровнем жизни, сильной экономикой и важной ролью в европейской политике." }
           ]
         },
-        cities: {
-          title: "Ключевые города",
+        regions: {
+          title: "Кантоны Люксембурга",
           items: [
-            { id: 1, name: 'Дифанж', hasInfo: false, path: 'differdange' },
-            { id: 2, name: 'Эш-сюр-Альзетт', hasInfo: false, path: 'esch-sur-alzette' },
-            { id: 3, name: 'Люксембург', hasInfo: false, path: 'luxembourg-city' },
-            { id: 4, name: 'Дикирх', hasInfo: false, path: 'diekirch' },
-            { id: 5, name: 'Гревенмахер', hasInfo: false, path: 'grevenmacher' },
-            { id: 6, name: 'Вилц', hasInfo: false, path: 'vianden' }
+            { id: 1, name: 'Капеллен', hasInfo: true, path: 'capellen' },
+            { id: 2, name: 'Клерво', hasInfo: false, path: 'clervaux' },
+            { id: 3, name: 'Дикирх', hasInfo: false, path: 'diekirch' },
+            { id: 4, name: 'Эхтернах', hasInfo: false, path: 'echternach' },
+            { id: 5, name: 'Эш-сюр-Альзетт', hasInfo: false, path: 'esch_sur_alzette' },
+            { id: 6, name: 'Гревенмахер', hasInfo: false, path: 'grevenmacher' },
+            { id: 7, name: 'Люксембург', hasInfo: true, path: 'luxembourg_canton' },
+            { id: 8, name: 'Мерш', hasInfo: false, path: 'mersch' },
+            { id: 9, name: 'Реданж', hasInfo: false, path: 'redange' },
+            { id: 10, name: 'Ремих', hasInfo: false, path: 'remich' },
+            { id: 11, name: 'Вианден', hasInfo: false, path: 'vianden' },
+            { id: 12, name: 'Вильц', hasInfo: false, path: 'wiltz' }
           ]
         },
         routes: {
@@ -412,24 +419,31 @@ const datas = [
         briefHistory: {
           title: "Коротка історія",
           items: [
-            { text: "Люксембург був заснований у 963 році, коли граф Зігфрід Люксембурзький придбав укріплення Люцилінбург (Lucilinburhuc), навколо якого поступово виріс місто та держава." },
-            { text: "У середні віки Люксембург перетворився на важливе графство, а згодом герцогство, граючи помітну роль у європейській політиці. Представники Люксембурзької династії займали престоли Священної Римської імперії, включно з імператором Карлом IV." },
-            { text: "Протягом наступних століть територія Люксембургу неодноразово переходила під контроль великих держав – Іспанії, Франції та Австрії через своє стратегічне положення в центрі Європи. Місто Люксембург вважалося однією з найпотужніших фортець континенту та отримало прізвисько «Північний Гібралтар»." },
-            { text: "У XIX столітті після рішень Віденського конгресу Люксембург став Великим герцогством. У 1890 році встановилася династія Нассау-Вейльбург, яка править країною до сьогодні." },
-            { text: "Під час Першої та Другої світових воєн Люксембург був окупований Німеччиною. У Другу світову війну країна фактично була анексована нацистською Німеччиною, піддавалася насильницькій германізації, а частина населення була депортована і мобілізована. Після звільнення у 1944 році Люксембург остаточно відмовився від політики нейтралітету." },
-            { text: "З середини XX століття Люксембург став одним з засновників європейської інтеграції, беручи участь у створенні Європейського Союзу та інших міжнародних структур. Країна активно розвивала фінансовий сектор і перетворилася на один із найбільших банківських центрів світу." },
+            { text: "Люксембург був заснований у 963 році, коли граф Зиґфрід Люксембурзький придбав укріплення Люцілінбург (Lucilinburhuc), навколо якого поступово виросло місто і держава." },
+            { text: "У Середньовіччі Люксембург перетворився на важливе графство, а згодом герцогство, відіграючи помітну роль в європейській політиці. Представники Люксембурзької династії займали престоли Священної Римської імперії, включаючи імператора Карла IV." },
+            { text: "У наступні століття територія Люксембургу неодноразово переходила під контроль великих держав – Іспанії, Франції та Австрії через своє стратегічне розташування в центрі Європи. Місто Люксембург вважалося однією з найпотужніших фортець континенту і отримало прізвисько «Північний Гібралтар»." },
+            { text: "Ключовим поворотним моментом став 1867 рік, коли після Люксембурзької кризи був підписаний Лондонський договір. Згідно з його умовами, фортецю Люксембурга було демонтовано, а країна отримала статус нейтральної держави, гарантований міжнародними угодами." },
+            { text: "У XIX столітті після рішень Віденського конгресу Люксембург став Великим герцогством. У 1890 році встановилася династія Нассау-Вайльбург, яка править країною до сьогодні." },
+            { text: "Під час Першої та Другої світових воєн Люксембург був окупований Німеччиною. Під час Другої світової війни країна була фактично анексована нацистською Німеччиною, зазнала насильницької германізації, а частину населення було депортовано і мобілізовано. Після звільнення у 1944 році Люксембург остаточно відмовився від політики нейтралітету." },
+            { text: "З середини XX століття Люксембург став одним із засновників європейської інтеграції, беручи участь у створенні Європейського Союзу та інших міжнародних структур. Країна активно розвивала фінансовий сектор і перетворилася на один із найбільших банківських центрів світу." },
             { text: "Сьогодні Люксембург – стабільна та економічно розвинена держава з високим рівнем життя, сильною економікою та важливою роллю в європейській політиці." }
           ]
         },
-        cities: {
-          title: "Ключові міста",
+        regions: {
+          title: "Кантони Люксембургу",
           items: [
-            { id: 1, name: 'Діфферданж', hasInfo: false, path: 'differdange' },
-            { id: 2, name: 'Еш-сюр-Альзетт', hasInfo: false, path: 'esch-sur-alzette' },
-            { id: 3, name: 'Люксембург', hasInfo: false, path: 'luxembourg-city' },
-            { id: 4, name: 'Дікріх', hasInfo: false, path: 'diekirch' },
-            { id: 5, name: 'Гревенмахер', hasInfo: false, path: 'grevenmacher' },
-            { id: 6, name: 'Вільц', hasInfo: false, path: 'vianden' }
+            { id: 1, name: 'Капеллен', hasInfo: true, path: 'capellen' },
+            { id: 2, name: 'Клерво', hasInfo: false, path: 'clervaux' },
+            { id: 3, name: 'Дікріх', hasInfo: false, path: 'diekirch' },
+            { id: 4, name: 'Ехтернах', hasInfo: false, path: 'echternach' },
+            { id: 5, name: 'Еш-сюр-Альзетт', hasInfo: false, path: 'esch_sur_alzette' },
+            { id: 6, name: 'Гревенмахер', hasInfo: false, path: 'grevenmacher' },
+            { id: 7, name: 'Люксембург', hasInfo: true, path: 'luxembourg_canton' },
+            { id: 8, name: 'Мерш', hasInfo: false, path: 'mersch' },
+            { id: 9, name: 'Реданж', hasInfo: false, path: 'redange' },
+            { id: 10, name: 'Реміх', hasInfo: false, path: 'remich' },
+            { id: 11, name: 'Віанден', hasInfo: false, path: 'vianden' },
+            { id: 12, name: 'Вільц', hasInfo: false, path: 'wiltz' }
           ]
         },
         routes: {
@@ -462,7 +476,7 @@ const datas = [
           government: [{ bold: 'Staatsform:', text: ' Konstitutionelle Monarchie mit parlamentarischem System. Staatsoberhaupt ist der Großherzog. Die legislative Gewalt wird durch ein Zweikammerparlament (Staatsrat und Abgeordnetenkammer) ausgeübt.' }],
           currency: [{ bold: 'Währung:', text: ' Euro (EUR), unterteilt in 100 Cent.' }],
           transport: [{ bold: 'Verkehr:', text: ' In Luxemburg gibt es gut ausgebaute Stadt- und Überlandverkehrsmittel: Busse, Züge und Straßenbahnen. Seit 2020 ist der öffentliche Verkehr in Luxemburg für Fahrgäste vollständig kostenlos (Busse, Straßenbahnen und Züge 2. Klasse). Bezahlt wird nur für die 1. Klasse und bestimmte internationale Strecken.' }],
-          climate: [{ bold: 'Klima:', text: ' gemäßigt ozeanisch. Winter mild, Sommer warm. Durchschnittstemperatur im Januar etwa 1°C, im Juli etwa 18–20°C. Niederschläge sind über das Jahr gleichmäßig verteilt.' }],       
+          climate: [{ bold: 'Klima:', text: ' gemäßigt ozeanisch. Winter mild, Sommer warm. Durchschnittstemperatur im Januar etwa 1°C, im Juli etwa 18–20°C. Niederschläge sind über das Jahr gleichmäßig verteilt.' }],
           tourism: [
             { bold: 'Tourismus und Freizeit:' },
             { text: ' Luxemburg ist bekannt für mittelalterliche Schlösser, das historische Stadtzentrum und malerische Flusstäler. Beliebt sind Wandern, Radtourismus und Ausflüge in Weinregionen.' },
@@ -487,24 +501,31 @@ const datas = [
         briefHistory: {
           title: "Kurze Geschichte",
           items: [
-            { text: "Luxemburg wurde 963 gegründet, als Graf Siegfried von Luxemburg die Befestigung Lucilinburhuc erwarb, um die sich allmählich die Stadt und der Staat entwickelten." },
-            { text: "Im Mittelalter entwickelte sich Luxemburg zu einer wichtigen Grafschaft und später zu einem Herzogtum, das eine bedeutende Rolle in der europäischen Politik spielte. Mitglieder der luxemburgischen Dynastie bestiegen die Throne des Heiligen Römischen Reiches, einschließlich Kaiser Karl IV." },
-            { text: "In den folgenden Jahrhunderten wechselte das Territorium Luxemburgs mehrfach unter die Kontrolle großer Mächte – Spanien, Frankreich und Österreich – aufgrund seiner strategischen Lage im Zentrum Europas. Die Stadt Luxemburg galt als eine der mächtigsten Festungen des Kontinents und erhielt den Spitznamen „Nördliches Gibraltar“." },
-            { text: "Im 19. Jahrhundert wurde Luxemburg nach den Beschlüssen des Wiener Kongresses zum Großherzogtum. 1890 wurde die Dynastie Nassau-Weilburg etabliert, die das Land bis heute regiert." },
-            { text: "Während des Ersten und Zweiten Weltkriegs wurde Luxemburg von Deutschland besetzt. Im Zweiten Weltkrieg wurde das Land de facto von Nazi-Deutschland annektiert, unterlag einer Zwangsgermanisierung, und ein Teil der Bevölkerung wurde deportiert und mobilisiert. Nach der Befreiung 1944 verzichtete Luxemburg endgültig auf die Politik der Neutralität." },
-            { text: "Seit der Mitte des 20. Jahrhunderts ist Luxemburg einer der Gründer der europäischen Integration und beteiligt sich an der Schaffung der Europäischen Union und anderer internationaler Strukturen. Das Land entwickelte aktiv den Finanzsektor und wurde zu einem der größten Finanzzentren der Welt." },
-            { text: "Heute ist Luxemburg ein stabiles und wirtschaftlich entwickeltes Land mit hohem Lebensstandard, starker Wirtschaft und bedeutender Rolle in der europäischen Politik." }
+            { text: "Luxemburg wurde im Jahr 963 gegründet, als Graf Siegfried von Luxemburg die Festung Lucilinburhuc erwarb, um die sich nach und nach eine Stadt und ein Staat entwickelten." },
+            { text: "Im Mittelalter entwickelte sich Luxemburg zu einer wichtigen Grafschaft und später zu einem Herzogtum und spielte eine bedeutende Rolle in der europäischen Politik. Vertreter der Luxemburger Dynastie besetzten den Thron des Heiligen Römischen Reiches, darunter Kaiser Karl IV." },
+            { text: "In den folgenden Jahrhunderten stand das Gebiet Luxemburgs aufgrund seiner strategischen Lage im Zentrum Europas mehrfach unter der Kontrolle großer Mächte – Spanien, Frankreich und Österreich. Die Stadt Luxemburg galt als eine der stärksten Festungen des Kontinents und erhielt den Beinamen „Gibraltar des Nordens“." },
+            { text: "Ein entscheidender Wendepunkt war das Jahr 1867, als nach der Luxemburger Krise der Londoner Vertrag unterzeichnet wurde. Die Festung Luxemburg wurde abgebaut, und das Land erhielt den Status eines neutralen Staates, der durch internationale Verträge garantiert wurde." },
+            { text: "Im 19. Jahrhundert wurde Luxemburg nach den Beschlüssen des Wiener Kongresses zum Großherzogtum. Im Jahr 1890 begann die Herrschaft der Dynastie Nassau-Weilburg, die bis heute andauert." },
+            { text: "Während des Ersten und Zweiten Weltkriegs wurde Luxemburg von Deutschland besetzt. Im Zweiten Weltkrieg wurde das Land faktisch vom nationalsozialistischen Deutschland annektiert, zwangsweise germanisiert, und ein Teil der Bevölkerung wurde deportiert und mobilisiert. Nach der Befreiung im Jahr 1944 gab Luxemburg seine Neutralitätspolitik endgültig auf." },
+            { text: "Seit der Mitte des 20. Jahrhunderts gehört Luxemburg zu den Gründungsmitgliedern der europäischen Integration und beteiligte sich an der Entstehung der Europäischen Union und anderer internationaler Organisationen. Das Land entwickelte sich zu einem der größten Finanzzentren der Welt." },
+            { text: "Heute ist Luxemburg ein stabiles und wirtschaftlich stark entwickeltes Land mit hoher Lebensqualität, einer starken Wirtschaft und einer wichtigen Rolle in der europäischen Politik." }
           ]
         },
-        cities: {
-          title: "Wichtige Städte",
+        regions: {
+          title: "Kantone Luxemburgs",
           items: [
-            { id: 1, name: 'Differdange', hasInfo: false, path: 'differdange' },
-            { id: 2, name: 'Esch-sur-Alzette', hasInfo: false, path: 'esch-sur-alzette' },
-            { id: 3, name: 'Luxemburg', hasInfo: false, path: 'luxembourg-city' },
-            { id: 4, name: 'Diekirch', hasInfo: false, path: 'diekirch' },
-            { id: 5, name: 'Grevenmacher', hasInfo: false, path: 'grevenmacher' },
-            { id: 6, name: 'Vianden', hasInfo: false, path: 'vianden' }
+            { id: 1, name: 'Capellen', hasInfo: true, path: 'capellen' },
+            { id: 2, name: 'Clervaux', hasInfo: false, path: 'clervaux' },
+            { id: 3, name: 'Diekirch', hasInfo: false, path: 'diekirch' },
+            { id: 4, name: 'Echternach', hasInfo: false, path: 'echternach' },
+            { id: 5, name: 'Esch-sur-Alzette', hasInfo: false, path: 'esch_sur_alzette' },
+            { id: 6, name: 'Grevenmacher', hasInfo: false, path: 'grevenmacher' },
+            { id: 7, name: 'Luxemburg', hasInfo: true, path: 'luxembourg_canton' },
+            { id: 8, name: 'Mersch', hasInfo: false, path: 'mersch' },
+            { id: 9, name: 'Redange', hasInfo: false, path: 'redange' },
+            { id: 10, name: 'Remich', hasInfo: false, path: 'remich' },
+            { id: 11, name: 'Vianden', hasInfo: false, path: 'vianden' },
+            { id: 12, name: 'Wiltz', hasInfo: false, path: 'wiltz' }
           ]
         },
         routes: {

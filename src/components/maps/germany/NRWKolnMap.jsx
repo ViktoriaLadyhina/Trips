@@ -38,7 +38,7 @@ const { lang } = useSelector((state) => state.language);
   // 2️⃣ Берём города
   const freeCities = useMemo(() => {
     return ["koln", "leverkusen", "bonn", "aachen-city"]
-      .map(slug => regions?.discriptRegions?.[1]?.items?.find(city => city.path === slug))
+      .map(slug => regions?.cities?.items?.find(city => city.path === slug))
       .filter(Boolean);
   }, [regions]);
 

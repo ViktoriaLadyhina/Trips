@@ -10,12 +10,12 @@ const RPMap = ({ regions }) => {
 
   // Все округа Райн-Пфальц
   const rlpDistricts = useMemo(
-    () => regions?.discriptRegions?.[0]?.items || [],
+    () => regions?.discriptRegions?.items || [],
     [regions]
   );
   // Свободные города NRW
   const rlpCities = useMemo(
-    () => regions?.discriptRegions?.[1]?.items || [],
+    () => regions?.cities?.items || [],
     [regions]
   );
 

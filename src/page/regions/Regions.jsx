@@ -33,6 +33,7 @@ const Regions = () => {
         { label: datas.countries[countryPath][lang], path: `/${countryPath}` },
         { label: region.name }
     ];
+console.log("region.cities", region.cities);
 
 
     return (
@@ -54,11 +55,11 @@ const Regions = () => {
             <aside className={`regions__sidebar ${sidebarOpen ? "mobile-open" : ""}`}>
                 <div className="regions__sidebar-toggle" onClick={() => setSidebarOpen(!sidebarOpen)}>☰</div>
                 {/* Административные округа */}
-                {region.discriptRegions[0] && (
+                {region.discriptRegions && (
                     <div>
-                        <h2 className="regions__sidebar-title">{region.discriptRegions[0].title}</h2>
+                        <h2 className="regions__sidebar-title">{region.discriptRegions.title}</h2>
                         <ul className={`regions__sidebar-list ${sidebarOpen ? "active" : ""}`}>
-                            {region.discriptRegions[0]?.items?.map((district) => (
+                            {region.discriptRegions?.items?.map((district) => (
                                 <li key={district.id} className="regions__sidebar-item">
                                     {district.hasInfo ? (
                                         <Link
@@ -79,11 +80,11 @@ const Regions = () => {
                 )}
 
                 {/* Свободные города */}
-                {region.discriptRegions[1] && (
+                {region.cities && (
                     <div>
-                        <h2 className="regions__sidebar-title">{region.discriptRegions[1].title}</h2>
+                        <h2 className="regions__sidebar-title">{region.cities.title}</h2>
                         <ul className="regions__sidebar-list">
-                            {region.discriptRegions[1]?.items?.map((city) => (
+                            {region.cities?.items?.map((city) => (
                                 <li key={city.id} className="regions__sidebar-item">
                                     {city.hasInfo ? (
                                         <Link

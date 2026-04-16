@@ -105,30 +105,29 @@ const datas = [
                         { text: 'Эта новейшая страница истории Сумщины стала символом мужества и несокрушимости её народа.' }
                     ]
                 },
-                discriptRegions: [
-                    {
-                        title: "Районы Сумской области",
-                        items: [
-                            { id: 1, name: "Сумский", hasInfo: false, path: "sumskyi" },
-                            { id: 2, name: "Ахтырский", hasInfo: false, path: "akhtyrskyi" },
-                            { id: 3, name: "Конотопский", hasInfo: false, path: "konotopskyi" },
-                            { id: 4, name: "Роменский", hasInfo: false, path: "romenskyi" },
-                            { id: 5, name: "Шосткинский", hasInfo: false, path: "shostkynskyi" }
-                        ]
-                    },
-                    {
-                        title: "Города с областным подчинением",
-                        items: [
-                            { id: 1, name: "Сумы", hasInfo: true, path: "sumy" },
-                            { id: 2, name: "Лебедин", hasInfo: false, path: "lebedyn" },
-                            { id: 3, name: "Ромны", hasInfo: false, path: "romny" },
-                            { id: 4, name: "Шостка", hasInfo: false, path: "shostka" },
-                            { id: 5, name: "Ахтырка", hasInfo: false, path: "akhtyrka" },
-                            { id: 6, name: "Глухов", hasInfo: false, path: "gluhov" },
-                            { id: 7, name: "Конотоп", hasInfo: false, path: "konotop" }
-                        ]
-                    }
-                ],
+                discriptRegions:
+                {
+                    title: "Районы Сумской области",
+                    items: [
+                        { id: 1, name: "Сумский", hasInfo: false, path: "sumskyi" },
+                        { id: 2, name: "Ахтырский", hasInfo: false, path: "akhtyrskyi" },
+                        { id: 3, name: "Конотопский", hasInfo: false, path: "konotopskyi" },
+                        { id: 4, name: "Роменский", hasInfo: false, path: "romenskyi" },
+                        { id: 5, name: "Шосткинский", hasInfo: false, path: "shostkynskyi" }
+                    ]
+                },
+                cities: {
+                    title: "Города с областным подчинением",
+                    items: [
+                        { id: 1, name: "Сумы", hasInfo: true, path: "sumy" },
+                        { id: 2, name: "Лебедин", hasInfo: false, path: "lebedyn" },
+                        { id: 3, name: "Ромны", hasInfo: false, path: "romny" },
+                        { id: 4, name: "Шостка", hasInfo: false, path: "shostka" },
+                        { id: 5, name: "Ахтырка", hasInfo: false, path: "akhtyrka" },
+                        { id: 6, name: "Глухов", hasInfo: false, path: "gluhov" },
+                        { id: 7, name: "Конотоп", hasInfo: false, path: "konotop" }
+                    ]
+                },
                 meta: {
                     title: "Сумская область — информация о регионе",
                     description: "Сумская область: города, история, культура, экономика и интересные факты.",
@@ -237,30 +236,29 @@ const datas = [
 
                     ]
                 },
-                discriptRegions: [
-                    {
-                        title: "Райони Сумської області",
-                        items: [
-                            { id: 1, name: "Сумський", hasInfo: false, path: "sumskyi" },
-                            { id: 2, name: "Ахтирський", hasInfo: false, path: "akhtyrskyi" },
-                            { id: 3, name: "Конотопський", hasInfo: false, path: "konotopskyi" },
-                            { id: 4, name: "Роменський", hasInfo: false, path: "romenskyi" },
-                            { id: 5, name: "Шосткинський", hasInfo: false, path: "shostkynskyi" }
-                        ]
-                    },
-                    {
-                        title: "Міста обласного підпорядкування",
-                        items: [
-                            { id: 1, name: "Суми", hasInfo: true, path: "sumy" },
-                            { id: 2, name: "Лебедин", hasInfo: false, path: "lebedyn" },
-                            { id: 3, name: "Ромни", hasInfo: false, path: "romny" },
-                            { id: 4, name: "Шостка", hasInfo: false, path: "shostka" },
-                            { id: 5, name: "Ахтирка", hasInfo: false, path: "akhtyrka" },
-                            { id: 6, name: "Глухів", hasInfo: false, path: "gluhov" },
-                            { id: 7, name: "Конотоп", hasInfo: false, path: "konotop" }
-                        ]
-                    }
-                ],
+                discriptRegions:
+                {
+                    title: "Райони Сумської області",
+                    items: [
+                        { id: 1, name: "Сумський", hasInfo: false, path: "sumskyi" },
+                        { id: 2, name: "Ахтирський", hasInfo: false, path: "akhtyrskyi" },
+                        { id: 3, name: "Конотопський", hasInfo: false, path: "konotopskyi" },
+                        { id: 4, name: "Роменський", hasInfo: false, path: "romenskyi" },
+                        { id: 5, name: "Шосткинський", hasInfo: false, path: "shostkynskyi" }
+                    ]
+                },
+                cities: {
+                    title: "Міста обласного підпорядкування",
+                    items: [
+                        { id: 1, name: "Суми", hasInfo: true, path: "sumy" },
+                        { id: 2, name: "Лебедин", hasInfo: false, path: "lebedyn" },
+                        { id: 3, name: "Ромни", hasInfo: false, path: "romny" },
+                        { id: 4, name: "Шостка", hasInfo: false, path: "shostka" },
+                        { id: 5, name: "Ахтирка", hasInfo: false, path: "akhtyrka" },
+                        { id: 6, name: "Глухів", hasInfo: false, path: "gluhov" },
+                        { id: 7, name: "Конотоп", hasInfo: false, path: "konotop" }
+                    ]
+                },
                 meta: {
                     title: "Сумська область — інформація про регіон",
                     description: "Сумська область: міста, історія, культура, економіка та цікаві факти.",
@@ -367,30 +365,29 @@ const datas = [
                         { text: 'Besondere Erwähnung verdient die Stadt Achtyrka, die 2022 den Titel „Stadt-Held der Ukraine“ erhielt für den massenhaften Heldenmut der Einwohner und die Standhaftigkeit bei der Verteidigung der Stadt.' },
                         { text: 'Diese neueste Seite der Geschichte der Region Sumy ist ein Symbol für den Mut und die Unerschütterlichkeit ihres Volkes.' }]
                 },
-                discriptRegions: [
-                    {
-                        title: "Landkreise der Oblast Sumy",
-                        items: [
-                            { id: 1, name: "Sumsky", hasInfo: false, path: "sumskyi" },
-                            { id: 2, name: "Akhtyrsky", hasInfo: false, path: "akhtyrskyi" },
-                            { id: 3, name: "Konotopsky", hasInfo: false, path: "konotopskyi" },
-                            { id: 4, name: "Romensky", hasInfo: false, path: "romenskyi" },
-                            { id: 5, name: "Shostkynsky", hasInfo: false, path: "shostkynskyi" }
-                        ]
-                    },
-                    {
-                        title: "Städte mit regionaler Unterstellung",
-                        items: [
-                            { id: 1, name: "Sumy", hasInfo: true, path: "sumy" },
-                            { id: 2, name: "Lebedyn", hasInfo: false, path: "lebedyn" },
-                            { id: 3, name: "Romny", hasInfo: false, path: "romny" },
-                            { id: 4, name: "Shostka", hasInfo: false, path: "shostka" },
-                            { id: 5, name: "Akhtyrka", hasInfo: false, path: "akhtyrka" },
-                            { id: 6, name: "Glukhiv", hasInfo: false, path: "gluhov" },
-                            { id: 7, name: "Konotop", hasInfo: false, path: "konotop" }
-                        ]
-                    }
-                ],
+                discriptRegions:
+                {
+                    title: "Landkreise der Oblast Sumy",
+                    items: [
+                        { id: 1, name: "Sumsky", hasInfo: false, path: "sumskyi" },
+                        { id: 2, name: "Akhtyrsky", hasInfo: false, path: "akhtyrskyi" },
+                        { id: 3, name: "Konotopsky", hasInfo: false, path: "konotopskyi" },
+                        { id: 4, name: "Romensky", hasInfo: false, path: "romenskyi" },
+                        { id: 5, name: "Shostkynsky", hasInfo: false, path: "shostkynskyi" }
+                    ]
+                },
+                cities: {
+                    title: "Städte mit regionaler Unterstellung",
+                    items: [
+                        { id: 1, name: "Sumy", hasInfo: true, path: "sumy" },
+                        { id: 2, name: "Lebedyn", hasInfo: false, path: "lebedyn" },
+                        { id: 3, name: "Romny", hasInfo: false, path: "romny" },
+                        { id: 4, name: "Shostka", hasInfo: false, path: "shostka" },
+                        { id: 5, name: "Akhtyrka", hasInfo: false, path: "akhtyrka" },
+                        { id: 6, name: "Glukhiv", hasInfo: false, path: "gluhov" },
+                        { id: 7, name: "Konotop", hasInfo: false, path: "konotop" }
+                    ]
+                },
                 meta: {
                     title: "Oblast Sumy — Informationen über die Region",
                     description: "Oblast Sumy: Städte, Geschichte, Kultur, Wirtschaft und interessante Fakten.",
@@ -400,10 +397,6 @@ const datas = [
                 }
             }
         }
-
-
-
-
     }
 ]
 export default datas

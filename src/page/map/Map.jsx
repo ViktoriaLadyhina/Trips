@@ -323,13 +323,18 @@ const Map = () => {
                   </li>
                 </ul>
               </li>
-              <li><span>{t.regions.capellen[lang]}</span>
+              <li><Link to="/luxembourg/capellen">{t.regions.capellen[lang]}</Link>
                 <ul>
-                  <li><span>{t.cities.koerich[lang]}</span>
+                  <li><Link to="/luxembourg/capellen/city/koerich">{t.cities.koerich[lang]}</Link>
                     <ul>
                       <li><Link to="/luxembourg/capellen/city/koerich/attractions/koerich_castle">{t.attractions.koerich_castle[lang]}</Link></li>
                     </ul>
                   </li>
+                </ul>
+              </li>
+              <li><Link to="/luxembourg/luxembourg_canton">{t.regions.luxembourg_canton[lang]}</Link>
+                <ul>
+                  <li><Link to="/luxembourg/luxembourg_canton/city/luxembourg_city"> {t.cities.luxembourg_city[lang]}</Link></li>
                 </ul>
               </li>
             </ul>

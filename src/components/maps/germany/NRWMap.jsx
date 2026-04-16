@@ -10,12 +10,12 @@ const NRWMap = ({ regions }) => {
 
   // Все округа NRW
   const nrwDistricts = useMemo(
-    () => regions?.discriptRegions?.[0]?.items || [],
+    () => regions?.discriptRegions?.items || [],
     [regions]
   );
   // Свободные города NRW
   const nrwCities = useMemo(
-    () => regions?.discriptRegions?.[1]?.items || [],
+    () => regions?.cities?.items || [],
     [regions]
   );
 

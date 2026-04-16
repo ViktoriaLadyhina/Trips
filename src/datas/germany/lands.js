@@ -41,46 +41,45 @@ const datas = [
                         { text: "18 июня 1950 года была принята Конституция самой земли, закрепившая её внутреннее устройство и права." }
                     ]
                 },
-                discriptRegions: [
-                    {
-                        title: "Административные округа в Северном Рейне-Вестфалии",
-                        items: [
-                            { id: 1, name: 'Арнсберг', hasInfo: true, path: "arnsberg" },
-                            { id: 2, name: 'Детмольд', hasInfo: false, path: "detmold" },
-                            { id: 3, name: 'Дюссельдорф', hasInfo: true, path: "dusseldorf" },
-                            { id: 4, name: "Кёльн", hasInfo: true, path: "koln" },
-                            { id: 5, name: 'Мюнстер', hasInfo: false, path: "munster" }
-                        ]
-                    },
-                    {
-                        title: "Свободные города в Северном Рейне-Вестфалии",
-                        items: [
-                            { id: 28, name: 'Аахен', hasInfo: false, path: "aachen-city" },
-                            { id: 6, name: 'Билефельд', hasInfo: false, path: "bielefeld", },
-                            { id: 7, name: 'Бонн', hasInfo: false, path: "bonn", },
-                            { id: 8, name: 'Боттроп', hasInfo: false, path: "bottrop", },
-                            { id: 9, name: 'Бохум', hasInfo: false, path: "bochum", },
-                            { id: 10, name: 'Вупперталь', hasInfo: false, path: "wuppertal", },
-                            { id: 11, name: 'Гельзенкирхен', hasInfo: false, path: "gelsenkirchen", },
-                            { id: 12, name: 'Дортмунд', hasInfo: true, path: "dortmund", },
-                            { id: 13, name: 'Дуйсбург', hasInfo: false, path: "duisburg", },
-                            { id: 14, name: 'Дюссельдорф', hasInfo: false, path: "duesseldorf_city", },
-                            { id: 15, name: 'Золинген', hasInfo: false, path: "solingen", },
-                            { id: 16, name: 'Кёльн', hasInfo: true, path: "koln", },
-                            { id: 17, name: 'Крефельд', hasInfo: false, path: "krefeld", },
-                            { id: 18, name: 'Леверкузен', hasInfo: false, path: "leverkusen", },
-                            { id: 19, name: 'Мёнхенгладбах', hasInfo: false, path: "moenchengladbach", },
-                            { id: 20, name: 'Мюльхайм-на-Руре', hasInfo: false, path: "muelheim" },
-                            { id: 21, name: 'Мюнстер', hasInfo: false, path: "muenster", },
-                            { id: 22, name: 'Оберхаузен', hasInfo: false, path: "oberhausen", },
-                            { id: 23, name: 'Ремшайд', hasInfo: false, path: "remscheid", },
-                            { id: 24, name: 'Хаген', hasInfo: false, path: "hagen", },
-                            { id: 25, name: 'Хамм', hasInfo: false, path: "hamm", },
-                            { id: 26, name: 'Херне', hasInfo: false, path: "herne", },
-                            { id: 27, name: 'Эссен', hasInfo: false, path: "essen", }
-                        ]
-                    }
-                ],
+                discriptRegions:
+                {
+                    title: "Административные округа в Северном Рейне-Вестфалии",
+                    items: [
+                        { id: 1, name: 'Арнсберг', hasInfo: true, path: "arnsberg" },
+                        { id: 2, name: 'Детмольд', hasInfo: false, path: "detmold" },
+                        { id: 3, name: 'Дюссельдорф', hasInfo: true, path: "dusseldorf" },
+                        { id: 4, name: "Кёльн", hasInfo: true, path: "koln" },
+                        { id: 5, name: 'Мюнстер', hasInfo: false, path: "munster" }
+                    ]
+                },
+                cities: {
+                    title: "Свободные города в Северном Рейне-Вестфалии",
+                    items: [
+                        { id: 28, name: 'Аахен', hasInfo: false, path: "aachen-city" },
+                        { id: 6, name: 'Билефельд', hasInfo: false, path: "bielefeld", },
+                        { id: 7, name: 'Бонн', hasInfo: false, path: "bonn", },
+                        { id: 8, name: 'Боттроп', hasInfo: false, path: "bottrop", },
+                        { id: 9, name: 'Бохум', hasInfo: false, path: "bochum", },
+                        { id: 10, name: 'Вупперталь', hasInfo: false, path: "wuppertal", },
+                        { id: 11, name: 'Гельзенкирхен', hasInfo: false, path: "gelsenkirchen", },
+                        { id: 12, name: 'Дортмунд', hasInfo: true, path: "dortmund", },
+                        { id: 13, name: 'Дуйсбург', hasInfo: false, path: "duisburg", },
+                        { id: 14, name: 'Дюссельдорф', hasInfo: false, path: "duesseldorf_city", },
+                        { id: 15, name: 'Золинген', hasInfo: false, path: "solingen", },
+                        { id: 16, name: 'Кёльн', hasInfo: true, path: "koln", },
+                        { id: 17, name: 'Крефельд', hasInfo: false, path: "krefeld", },
+                        { id: 18, name: 'Леверкузен', hasInfo: false, path: "leverkusen", },
+                        { id: 19, name: 'Мёнхенгладбах', hasInfo: false, path: "moenchengladbach", },
+                        { id: 20, name: 'Мюльхайм-на-Руре', hasInfo: false, path: "muelheim" },
+                        { id: 21, name: 'Мюнстер', hasInfo: false, path: "muenster", },
+                        { id: 22, name: 'Оберхаузен', hasInfo: false, path: "oberhausen", },
+                        { id: 23, name: 'Ремшайд', hasInfo: false, path: "remscheid", },
+                        { id: 24, name: 'Хаген', hasInfo: false, path: "hagen", },
+                        { id: 25, name: 'Хамм', hasInfo: false, path: "hamm", },
+                        { id: 26, name: 'Херне', hasInfo: false, path: "herne", },
+                        { id: 27, name: 'Эссен', hasInfo: false, path: "essen", }
+                    ]
+                },
                 meta: {
                     title: "Северный Рейн-Вестфалия – информация о регионе",
                     description: "Северный Рейн-Вестфалия: города, округа, культура и достопримечательности.",
@@ -153,46 +152,45 @@ const datas = [
                         }
                     ]
                 },
-                discriptRegions: [
-                    {
-                        title: "Адміністративні округи в Північному Рейні-Вестфалії",
-                        items: [
-                            { id: 1, name: 'Арнсберг', hasInfo: true, path: "arnsberg" },
-                            { id: 2, name: 'Детмольд', hasInfo: false, path: "detmold", },
-                            { id: 3, name: 'Дюссельдорф', hasInfo: true, path: "dusseldorf" },
-                            { id: 4, name: 'Кельн', hasInfo: true, path: "koln" },
-                            { id: 5, name: 'Мюнстер', hasInfo: false, path: "munster" }
-                        ]
-                    },
-                    {
-                        title: "Вільні міста в Північному Рейні-Вестфалії",
-                        items: [
-                            { id: 28, name: 'Аахен', hasInfo: false, path: "aachen-city" },
-                            { id: 6, name: 'Білефельд', hasInfo: false, path: "bielefeld", },
-                            { id: 7, name: 'Бонн', hasInfo: false, path: "bonn", },
-                            { id: 8, name: 'Боттроп', hasInfo: false, path: "bottrop", },
-                            { id: 9, name: 'Бохум', hasInfo: false, path: "bochum", },
-                            { id: 10, name: 'Вупперталь', hasInfo: false, path: "wuppertal", },
-                            { id: 11, name: 'Гельзенкірхен', hasInfo: false, path: "gelsenkirchen", },
-                            { id: 12, name: 'Дортмунд', hasInfo: true, path: "dortmund", },
-                            { id: 13, name: 'Дуйсбург', hasInfo: false, path: "duisburg", },
-                            { id: 14, name: 'Дюссельдорф', hasInfo: false, path: "duesseldorf_city", },
-                            { id: 15, name: 'Золінген', hasInfo: false, path: "solingen", },
-                            { id: 16, name: 'Кельн', hasInfo: true, path: "koln", },
-                            { id: 17, name: 'Крефельд', hasInfo: false, path: "krefeld", },
-                            { id: 18, name: 'Леверкузен', hasInfo: false, path: "leverkusen", },
-                            { id: 19, name: 'Менхенгладбах', hasInfo: false, path: "moenchengladbach", },
-                            { id: 20, name: 'Мюльхайм-на-Рурі', hasInfo: false, path: "muelheim", },
-                            { id: 21, name: 'Мюнстер', hasInfo: false, path: "muenster", },
-                            { id: 22, name: 'Обергаузен', hasInfo: false, path: "oberhausen", },
-                            { id: 23, name: 'Ремшайд', hasInfo: false, path: "remscheid", },
-                            { id: 24, name: 'Хаген', hasInfo: false, path: "hagen", },
-                            { id: 25, name: 'Хамм', hasInfo: false, path: "hamm", },
-                            { id: 26, name: 'Херне', hasInfo: false, path: "herne", },
-                            { id: 27, name: 'Ессен', hasInfo: false, path: "essen", }
-                        ]
-                    }
-                ],
+                discriptRegions:
+                {
+                    title: "Адміністративні округи в Північному Рейні-Вестфалії",
+                    items: [
+                        { id: 1, name: 'Арнсберг', hasInfo: true, path: "arnsberg" },
+                        { id: 2, name: 'Детмольд', hasInfo: false, path: "detmold", },
+                        { id: 3, name: 'Дюссельдорф', hasInfo: true, path: "dusseldorf" },
+                        { id: 4, name: 'Кельн', hasInfo: true, path: "koln" },
+                        { id: 5, name: 'Мюнстер', hasInfo: false, path: "munster" }
+                    ]
+                },
+                cities: {
+                    title: "Вільні міста в Північному Рейні-Вестфалії",
+                    items: [
+                        { id: 28, name: 'Аахен', hasInfo: false, path: "aachen-city" },
+                        { id: 6, name: 'Білефельд', hasInfo: false, path: "bielefeld", },
+                        { id: 7, name: 'Бонн', hasInfo: false, path: "bonn", },
+                        { id: 8, name: 'Боттроп', hasInfo: false, path: "bottrop", },
+                        { id: 9, name: 'Бохум', hasInfo: false, path: "bochum", },
+                        { id: 10, name: 'Вупперталь', hasInfo: false, path: "wuppertal", },
+                        { id: 11, name: 'Гельзенкірхен', hasInfo: false, path: "gelsenkirchen", },
+                        { id: 12, name: 'Дортмунд', hasInfo: true, path: "dortmund", },
+                        { id: 13, name: 'Дуйсбург', hasInfo: false, path: "duisburg", },
+                        { id: 14, name: 'Дюссельдорф', hasInfo: false, path: "duesseldorf_city", },
+                        { id: 15, name: 'Золінген', hasInfo: false, path: "solingen", },
+                        { id: 16, name: 'Кельн', hasInfo: true, path: "koln", },
+                        { id: 17, name: 'Крефельд', hasInfo: false, path: "krefeld", },
+                        { id: 18, name: 'Леверкузен', hasInfo: false, path: "leverkusen", },
+                        { id: 19, name: 'Менхенгладбах', hasInfo: false, path: "moenchengladbach", },
+                        { id: 20, name: 'Мюльхайм-на-Рурі', hasInfo: false, path: "muelheim", },
+                        { id: 21, name: 'Мюнстер', hasInfo: false, path: "muenster", },
+                        { id: 22, name: 'Обергаузен', hasInfo: false, path: "oberhausen", },
+                        { id: 23, name: 'Ремшайд', hasInfo: false, path: "remscheid", },
+                        { id: 24, name: 'Хаген', hasInfo: false, path: "hagen", },
+                        { id: 25, name: 'Хамм', hasInfo: false, path: "hamm", },
+                        { id: 26, name: 'Херне', hasInfo: false, path: "herne", },
+                        { id: 27, name: 'Ессен', hasInfo: false, path: "essen", }
+                    ]
+                },
                 meta: {
                     title: "Північний Рейн-Вестфалія – інформація про регіон",
                     description: "Північний Рейн-Вестфалія: міста, округи, культура та визначні місця.",
@@ -257,46 +255,45 @@ const datas = [
                         { text: "Am 18. Juni 1950 wurde die Landesverfassung verabschiedet, die die innere Organisation und die Rechte des Landes festlegte." }
                     ]
                 },
-                discriptRegions: [
-                    {
-                        title: "Regierungsbezirke in Nordrhein-Westfalen",
-                        items: [
-                            { id: 1, name: 'Arnsberg', hasInfo: true, path: "arnsberg" },
-                            { id: 2, name: 'Detmold', hasInfo: false, path: "detmold" },
-                            { id: 3, name: 'Düsseldorf', hasInfo: true, path: "dusseldorf" },
-                            { id: 4, name: 'Köln', hasInfo: true, path: "koln" },
-                            { id: 5, name: 'Münster', hasInfo: false, path: "munster" }
-                        ]
-                    },
-                    {
-                        title: "Kreisfreie Städte in Nordrhein-Westfalen",
-                        items: [
-                            { id: 28, name: 'Aachen', hasInfo: false, path: "aachen" },
-                            { id: 6, name: 'Bielefeld', hasInfo: false, path: "bielefeld", },
-                            { id: 7, name: 'Bonn', hasInfo: false, path: "bonn", },
-                            { id: 8, name: 'Bottrop', hasInfo: false, path: "bottrop", },
-                            { id: 9, name: 'Bochum', hasInfo: false, path: "bochum", },
-                            { id: 10, name: 'Wuppertal', hasInfo: false, path: "wuppertal", },
-                            { id: 11, name: 'Gelsenkirchen', hasInfo: false, path: "gelsenkirchen", },
-                            { id: 12, name: 'Dortmund', hasInfo: true, path: "dortmund", },
-                            { id: 13, name: 'Duisburg', hasInfo: false, path: "duisburg", },
-                            { id: 14, name: 'Düsseldorf', hasInfo: false, path: "duesseldorf_city", },
-                            { id: 15, name: 'Solingen', hasInfo: false, path: "solingen", },
-                            { id: 16, name: 'Köln', hasInfo: true, path: "koln", },
-                            { id: 17, name: 'Krefeld', hasInfo: false, path: "krefeld", },
-                            { id: 18, name: 'Leverkusen', hasInfo: false, path: "leverkusen", },
-                            { id: 19, name: 'Mönchengladbach', hasInfo: false, path: "moenchengladbach", },
-                            { id: 20, name: 'Mülheim an der Ruhr', hasInfo: false, path: "muelheim", },
-                            { id: 21, name: 'Münster', hasInfo: false, path: "muenster", },
-                            { id: 22, name: 'Oberhausen', hasInfo: false, path: "oberhausen", },
-                            { id: 23, name: 'Remscheid', hasInfo: false, path: "remscheid", },
-                            { id: 24, name: 'Hagen', hasInfo: false, path: "hagen", },
-                            { id: 25, name: 'Hamm', hasInfo: false, path: "hamm", },
-                            { id: 26, name: 'Herne', hasInfo: false, path: "herne", },
-                            { id: 27, name: 'Essen', hasInfo: false, path: "essen", }
-                        ]
-                    }
-                ],
+                discriptRegions:
+                {
+                    title: "Regierungsbezirke in Nordrhein-Westfalen",
+                    items: [
+                        { id: 1, name: 'Arnsberg', hasInfo: true, path: "arnsberg" },
+                        { id: 2, name: 'Detmold', hasInfo: false, path: "detmold" },
+                        { id: 3, name: 'Düsseldorf', hasInfo: true, path: "dusseldorf" },
+                        { id: 4, name: 'Köln', hasInfo: true, path: "koln" },
+                        { id: 5, name: 'Münster', hasInfo: false, path: "munster" }
+                    ]
+                },
+                cities: {
+                    title: "Kreisfreie Städte in Nordrhein-Westfalen",
+                    items: [
+                        { id: 28, name: 'Aachen', hasInfo: false, path: "aachen" },
+                        { id: 6, name: 'Bielefeld', hasInfo: false, path: "bielefeld", },
+                        { id: 7, name: 'Bonn', hasInfo: false, path: "bonn", },
+                        { id: 8, name: 'Bottrop', hasInfo: false, path: "bottrop", },
+                        { id: 9, name: 'Bochum', hasInfo: false, path: "bochum", },
+                        { id: 10, name: 'Wuppertal', hasInfo: false, path: "wuppertal", },
+                        { id: 11, name: 'Gelsenkirchen', hasInfo: false, path: "gelsenkirchen", },
+                        { id: 12, name: 'Dortmund', hasInfo: true, path: "dortmund", },
+                        { id: 13, name: 'Duisburg', hasInfo: false, path: "duisburg", },
+                        { id: 14, name: 'Düsseldorf', hasInfo: false, path: "duesseldorf_city", },
+                        { id: 15, name: 'Solingen', hasInfo: false, path: "solingen", },
+                        { id: 16, name: 'Köln', hasInfo: true, path: "koln", },
+                        { id: 17, name: 'Krefeld', hasInfo: false, path: "krefeld", },
+                        { id: 18, name: 'Leverkusen', hasInfo: false, path: "leverkusen", },
+                        { id: 19, name: 'Mönchengladbach', hasInfo: false, path: "moenchengladbach", },
+                        { id: 20, name: 'Mülheim an der Ruhr', hasInfo: false, path: "muelheim", },
+                        { id: 21, name: 'Münster', hasInfo: false, path: "muenster", },
+                        { id: 22, name: 'Oberhausen', hasInfo: false, path: "oberhausen", },
+                        { id: 23, name: 'Remscheid', hasInfo: false, path: "remscheid", },
+                        { id: 24, name: 'Hagen', hasInfo: false, path: "hagen", },
+                        { id: 25, name: 'Hamm', hasInfo: false, path: "hamm", },
+                        { id: 26, name: 'Herne', hasInfo: false, path: "herne", },
+                        { id: 27, name: 'Essen', hasInfo: false, path: "essen", }
+                    ]
+                },
                 meta: {
                     title: "Nordrhein-Westfalen – Informationen über die Region",
                     description: "Nordrhein-Westfalen: Städte, Bezirke, Kultur und Sehenswürdigkeiten.",
@@ -372,54 +369,53 @@ const datas = [
                         { text: "С момента образования земли Рейнланд-Пфальц стала важным культурным, экономическим и политическим регионом Германии, сохранившим богатое историческое наследие и уникальные природные ландшафты. Сегодня Рейнланд-Пфальц известна своими замками, виноградниками, римскими памятниками и историческими городами." },
                     ]
                 },
-                discriptRegions: [
-                    {
-                        title: "Районы в Рейнланд-Пфальц",
-                        items: [
-                            { id: 1, name: 'Арвайлер', hasInfo: false, path: "ahrweiler" },
-                            { id: 2, name: 'Альтенкирхен', hasInfo: false, path: "altenkirchen" },
-                            { id: 3, name: 'Альцай-Вормс', hasInfo: false, path: "alzey_worms" },
-                            { id: 4, name: 'Бад-Дюркхайм', hasInfo: false, path: "bad_duerkheim" },
-                            { id: 5, name: 'Бад-Кройцнах', hasInfo: false, path: "bad_kreuznach" },
-                            { id: 6, name: 'Бернкастель-Виттлих', hasInfo: false, path: "bernkastel_wittlich" },
-                            { id: 7, name: 'Биркенфельд', hasInfo: false, path: "birkenfeld" },
-                            { id: 8, name: 'Кохем-Целль', hasInfo: false, path: "cochem_zell" },
-                            { id: 9, name: 'Доннерсберг', hasInfo: false, path: "donnersbergkreis" },
-                            { id: 10, name: 'Айфелькрейс Битбург-Прюм', hasInfo: false, path: "eifelkreis_bitburg_pruem" },
-                            { id: 11, name: 'Гермерсхайм', hasInfo: false, path: "germersheim" },
-                            { id: 12, name: 'Кайзерслаутерн', hasInfo: false, path: "kaiserslautern" },
-                            { id: 13, name: 'Кузель', hasInfo: false, path: "kusel" },
-                            { id: 14, name: 'Майнц-Бинген', hasInfo: false, path: "mainz_bingen" },
-                            { id: 15, name: 'Майен-Кобленц', hasInfo: true, path: "mayen_koblenz" },
-                            { id: 16, name: 'Нойвид', hasInfo: false, path: "neuwied" },
-                            { id: 17, name: 'Райн-Хунсрюк', hasInfo: false, path: "rhein_hunsrueck_kreis" },
-                            { id: 18, name: 'Райн-Лан', hasInfo: false, path: "rhein_lahn_kreis" },
-                            { id: 19, name: 'Райн-Пфальц', hasInfo: false, path: "rhein_pfalz_kreis" },
-                            { id: 20, name: 'Южный Вайнштрассе', hasInfo: false, path: "suedliche_weinstrasse" },
-                            { id: 21, name: 'Юго-западный Пфальц', hasInfo: false, path: "suedwestpfalz" },
-                            { id: 22, name: 'Трир-Саарбург', hasInfo: true, path: "trier_saarburg" },
-                            { id: 23, name: 'Вулканайфель', hasInfo: false, path: "vulkaneifel" },
-                            { id: 24, name: 'Вестервальд', hasInfo: false, path: "westerwaldkreis" },
-                        ]
-                    },
-                    {
-                        title: "Свободные города в Рейнланд-Пфальц",
-                        items: [
-                            { id: 25, name: 'Майнц', hasInfo: false, path: "mainz" },
-                            { id: 26, name: 'Кобленц', hasInfo: false, path: "koblenz" },
-                            { id: 27, name: 'Людвигсхафен', hasInfo: false, path: "ludwigshafen" },
-                            { id: 28, name: 'Трир', hasInfo: true, path: "trier" },
-                            { id: 29, name: 'Кайзерслаутерн', hasInfo: false, path: "kaiserslautern-city" },
-                            { id: 30, name: 'Вормс', hasInfo: false, path: "worms" },
-                            { id: 31, name: 'Шпайер', hasInfo: false, path: "speyer" },
-                            { id: 32, name: 'Франкенталь', hasInfo: false, path: "frankenthal" },
-                            { id: 33, name: 'Ландау-ин-дер-Пфальц', hasInfo: false, path: "landau" },
-                            { id: 34, name: 'Нойштадт', hasInfo: false, path: "neustadt" },
-                            { id: 35, name: 'Пирмазенс', hasInfo: false, path: "pirmasens" },
-                            { id: 36, name: 'Цвайбрюккен', hasInfo: false, path: "zweibruecken" }
-                        ]
-                    }
-                ],
+                discriptRegions:
+                {
+                    title: "Районы в Рейнланд-Пфальц",
+                    items: [
+                        { id: 1, name: 'Арвайлер', hasInfo: false, path: "ahrweiler" },
+                        { id: 2, name: 'Альтенкирхен', hasInfo: false, path: "altenkirchen" },
+                        { id: 3, name: 'Альцай-Вормс', hasInfo: false, path: "alzey_worms" },
+                        { id: 4, name: 'Бад-Дюркхайм', hasInfo: false, path: "bad_duerkheim" },
+                        { id: 5, name: 'Бад-Кройцнах', hasInfo: false, path: "bad_kreuznach" },
+                        { id: 6, name: 'Бернкастель-Виттлих', hasInfo: false, path: "bernkastel_wittlich" },
+                        { id: 7, name: 'Биркенфельд', hasInfo: false, path: "birkenfeld" },
+                        { id: 8, name: 'Кохем-Целль', hasInfo: false, path: "cochem_zell" },
+                        { id: 9, name: 'Доннерсберг', hasInfo: false, path: "donnersbergkreis" },
+                        { id: 10, name: 'Айфелькрейс Битбург-Прюм', hasInfo: false, path: "eifelkreis_bitburg_pruem" },
+                        { id: 11, name: 'Гермерсхайм', hasInfo: false, path: "germersheim" },
+                        { id: 12, name: 'Кайзерслаутерн', hasInfo: false, path: "kaiserslautern" },
+                        { id: 13, name: 'Кузель', hasInfo: false, path: "kusel" },
+                        { id: 14, name: 'Майнц-Бинген', hasInfo: false, path: "mainz_bingen" },
+                        { id: 15, name: 'Майен-Кобленц', hasInfo: true, path: "mayen_koblenz" },
+                        { id: 16, name: 'Нойвид', hasInfo: false, path: "neuwied" },
+                        { id: 17, name: 'Райн-Хунсрюк', hasInfo: false, path: "rhein_hunsrueck_kreis" },
+                        { id: 18, name: 'Райн-Лан', hasInfo: false, path: "rhein_lahn_kreis" },
+                        { id: 19, name: 'Райн-Пфальц', hasInfo: false, path: "rhein_pfalz_kreis" },
+                        { id: 20, name: 'Южный Вайнштрассе', hasInfo: false, path: "suedliche_weinstrasse" },
+                        { id: 21, name: 'Юго-западный Пфальц', hasInfo: false, path: "suedwestpfalz" },
+                        { id: 22, name: 'Трир-Саарбург', hasInfo: true, path: "trier_saarburg" },
+                        { id: 23, name: 'Вулканайфель', hasInfo: false, path: "vulkaneifel" },
+                        { id: 24, name: 'Вестервальд', hasInfo: false, path: "westerwaldkreis" },
+                    ]
+                },
+                cities: {
+                    title: "Свободные города в Рейнланд-Пфальц",
+                    items: [
+                        { id: 25, name: 'Майнц', hasInfo: false, path: "mainz" },
+                        { id: 26, name: 'Кобленц', hasInfo: false, path: "koblenz" },
+                        { id: 27, name: 'Людвигсхафен', hasInfo: false, path: "ludwigshafen" },
+                        { id: 28, name: 'Трир', hasInfo: true, path: "trier" },
+                        { id: 29, name: 'Кайзерслаутерн', hasInfo: false, path: "kaiserslautern-city" },
+                        { id: 30, name: 'Вормс', hasInfo: false, path: "worms" },
+                        { id: 31, name: 'Шпайер', hasInfo: false, path: "speyer" },
+                        { id: 32, name: 'Франкенталь', hasInfo: false, path: "frankenthal" },
+                        { id: 33, name: 'Ландау-ин-дер-Пфальц', hasInfo: false, path: "landau" },
+                        { id: 34, name: 'Нойштадт', hasInfo: false, path: "neustadt" },
+                        { id: 35, name: 'Пирмазенс', hasInfo: false, path: "pirmasens" },
+                        { id: 36, name: 'Цвайбрюккен', hasInfo: false, path: "zweibruecken" }
+                    ]
+                },
                 meta: {
                     title: "Рейнланд-Пфальц — информация о регионе",
                     description: "Рейнланд-Пфальц: города, округа, культура и достопримечательности.",
@@ -491,54 +487,53 @@ const datas = [
                         { text: "З моменту утворення Рейнланд-Пфальц стала важливим культурним, економічним і політичним регіоном Німеччини, зберігши багату історичну спадщину та унікальні природні ландшафти. Сьогодні Рейнланд-Пфальц відома своїми замками, виноградниками, римськими пам’ятками та історичними містами." },
                     ]
                 },
-                discriptRegions: [
-                    {
-                        title: "Адміністративні округи Рейнланд-Пфальц",
-                        items: [
-                            { id: 1, name: 'Арвайлер', hasInfo: false, path: "ahrweiler" },
-                            { id: 2, name: 'Альтенкірхен', hasInfo: false, path: "altenkirchen" },
-                            { id: 3, name: 'Альцай-Вормс', hasInfo: false, path: "alzey_worms" },
-                            { id: 4, name: 'Бад-Дюркгайм', hasInfo: false, path: "bad_duerkheim" },
-                            { id: 5, name: 'Бад-Кройцнах', hasInfo: false, path: "bad_kreuznach" },
-                            { id: 6, name: 'Бернкастель-Віттліх', hasInfo: false, path: "bernkastel_wittlich" },
-                            { id: 7, name: 'Біркенфельд', hasInfo: false, path: "birkenfeld" },
-                            { id: 8, name: 'Кохем-Целль', hasInfo: false, path: "cochem_zell" },
-                            { id: 9, name: 'Доннерсберг', hasInfo: false, path: "donnersbergkreis" },
-                            { id: 10, name: 'Айфелькрайс Бітбург-Прюм', hasInfo: false, path: "eifelkreis_bitburg_pruem" },
-                            { id: 11, name: 'Гермерсгайм', hasInfo: false, path: "germersheim" },
-                            { id: 12, name: 'Кайзерслаутерн', hasInfo: false, path: "kaiserslautern" },
-                            { id: 13, name: 'Кузель', hasInfo: false, path: "kusel" },
-                            { id: 14, name: 'Майнц-Бінген', hasInfo: false, path: "mainz_bingen" },
-                            { id: 15, name: 'Маєн-Кобленц', hasInfo: true, path: "mayen_koblenz" },
-                            { id: 16, name: 'Нойвід', hasInfo: false, path: "neuwied" },
-                            { id: 17, name: 'Райн-Гунсрюк', hasInfo: false, path: "rhein_hunsrueck_kreis" },
-                            { id: 18, name: 'Райн-Лан', hasInfo: false, path: "rhein_lahn_kreis" },
-                            { id: 19, name: 'Райн-Пфальц', hasInfo: false, path: "rhein_pfalz_kreis" },
-                            { id: 20, name: 'Південна Вайнштрассе', hasInfo: false, path: "suedliche_weinstrasse" },
-                            { id: 21, name: 'Південно-Західний Пфальц', hasInfo: false, path: "suedwestpfalz" },
-                            { id: 22, name: 'Трір-Саарбург', hasInfo: true, path: "trier_saarburg" },
-                            { id: 23, name: 'Вулканайфель', hasInfo: false, path: "vulkaneifel" },
-                            { id: 24, name: 'Вестервальд', hasInfo: false, path: "westerwaldkreis" },
-                        ]
-                    },
-                    {
-                        title: "Міста з особливим статусом у Рейнланд-Пфальц",
-                        items: [
-                            { id: 25, name: 'Майнц', hasInfo: false, path: "mainz" },
-                            { id: 26, name: 'Кобленц', hasInfo: false, path: "koblenz" },
-                            { id: 27, name: 'Людвігсгафен', hasInfo: false, path: "ludwigshafen" },
-                            { id: 28, name: 'Трір', hasInfo: true, path: "trier" },
-                            { id: 29, name: 'Кайзерслаутерн', hasInfo: false, path: "kaiserslautern-city" },
-                            { id: 30, name: 'Вормс', hasInfo: false, path: "worms" },
-                            { id: 31, name: 'Шпаєр', hasInfo: false, path: "speyer" },
-                            { id: 32, name: 'Франкенталь', hasInfo: false, path: "frankenthal" },
-                            { id: 33, name: 'Ландау-ін-дер-Пфальц', hasInfo: false, path: "landau" },
-                            { id: 34, name: 'Нойштадт', hasInfo: false, path: "neustadt" },
-                            { id: 35, name: 'Пірмазенс', hasInfo: false, path: "pirmasens" },
-                            { id: 36, name: 'Цвайбрюккен', hasInfo: false, path: "zweibruecken" }
-                        ]
-                    }
-                ],
+                discriptRegions:
+                {
+                    title: "Адміністративні округи Рейнланд-Пфальц",
+                    items: [
+                        { id: 1, name: 'Арвайлер', hasInfo: false, path: "ahrweiler" },
+                        { id: 2, name: 'Альтенкірхен', hasInfo: false, path: "altenkirchen" },
+                        { id: 3, name: 'Альцай-Вормс', hasInfo: false, path: "alzey_worms" },
+                        { id: 4, name: 'Бад-Дюркгайм', hasInfo: false, path: "bad_duerkheim" },
+                        { id: 5, name: 'Бад-Кройцнах', hasInfo: false, path: "bad_kreuznach" },
+                        { id: 6, name: 'Бернкастель-Віттліх', hasInfo: false, path: "bernkastel_wittlich" },
+                        { id: 7, name: 'Біркенфельд', hasInfo: false, path: "birkenfeld" },
+                        { id: 8, name: 'Кохем-Целль', hasInfo: false, path: "cochem_zell" },
+                        { id: 9, name: 'Доннерсберг', hasInfo: false, path: "donnersbergkreis" },
+                        { id: 10, name: 'Айфелькрайс Бітбург-Прюм', hasInfo: false, path: "eifelkreis_bitburg_pruem" },
+                        { id: 11, name: 'Гермерсгайм', hasInfo: false, path: "germersheim" },
+                        { id: 12, name: 'Кайзерслаутерн', hasInfo: false, path: "kaiserslautern" },
+                        { id: 13, name: 'Кузель', hasInfo: false, path: "kusel" },
+                        { id: 14, name: 'Майнц-Бінген', hasInfo: false, path: "mainz_bingen" },
+                        { id: 15, name: 'Маєн-Кобленц', hasInfo: true, path: "mayen_koblenz" },
+                        { id: 16, name: 'Нойвід', hasInfo: false, path: "neuwied" },
+                        { id: 17, name: 'Райн-Гунсрюк', hasInfo: false, path: "rhein_hunsrueck_kreis" },
+                        { id: 18, name: 'Райн-Лан', hasInfo: false, path: "rhein_lahn_kreis" },
+                        { id: 19, name: 'Райн-Пфальц', hasInfo: false, path: "rhein_pfalz_kreis" },
+                        { id: 20, name: 'Південна Вайнштрассе', hasInfo: false, path: "suedliche_weinstrasse" },
+                        { id: 21, name: 'Південно-Західний Пфальц', hasInfo: false, path: "suedwestpfalz" },
+                        { id: 22, name: 'Трір-Саарбург', hasInfo: true, path: "trier_saarburg" },
+                        { id: 23, name: 'Вулканайфель', hasInfo: false, path: "vulkaneifel" },
+                        { id: 24, name: 'Вестервальд', hasInfo: false, path: "westerwaldkreis" },
+                    ]
+                },
+                cities: {
+                    title: "Міста з особливим статусом у Рейнланд-Пфальц",
+                    items: [
+                        { id: 25, name: 'Майнц', hasInfo: false, path: "mainz" },
+                        { id: 26, name: 'Кобленц', hasInfo: false, path: "koblenz" },
+                        { id: 27, name: 'Людвігсгафен', hasInfo: false, path: "ludwigshafen" },
+                        { id: 28, name: 'Трір', hasInfo: true, path: "trier" },
+                        { id: 29, name: 'Кайзерслаутерн', hasInfo: false, path: "kaiserslautern-city" },
+                        { id: 30, name: 'Вормс', hasInfo: false, path: "worms" },
+                        { id: 31, name: 'Шпаєр', hasInfo: false, path: "speyer" },
+                        { id: 32, name: 'Франкенталь', hasInfo: false, path: "frankenthal" },
+                        { id: 33, name: 'Ландау-ін-дер-Пфальц', hasInfo: false, path: "landau" },
+                        { id: 34, name: 'Нойштадт', hasInfo: false, path: "neustadt" },
+                        { id: 35, name: 'Пірмазенс', hasInfo: false, path: "pirmasens" },
+                        { id: 36, name: 'Цвайбрюккен', hasInfo: false, path: "zweibruecken" }
+                    ]
+                },
                 meta: {
                     title: "Рейнланд-Пфальц — інформація про регіон",
                     description: "Рейнланд-Пфальц: міста, округи, культура та пам’ятки.",
@@ -607,54 +602,53 @@ const datas = [
                         { text: "Seit seiner Gründung hat sich Rheinland-Pfalz zu einem bedeutenden kulturellen, wirtschaftlichen und politischen Bundesland Deutschlands entwickelt, das sein reiches historisches Erbe und seine einzigartigen Naturlandschaften bewahrt hat. Heute ist Rheinland-Pfalz bekannt für seine Burgen, Weinberge, römischen Denkmäler und historischen Städte." },
                     ]
                 },
-                discriptRegions: [
-                    {
-                        title: "Landkreise in Rheinland-Pfalz",
-                        items: [
-                            { id: 1, name: 'Ahrweiler', hasInfo: false, path: "ahrweiler" },
-                            { id: 2, name: 'Altenkirchen', hasInfo: false, path: "altenkirchen" },
-                            { id: 3, name: 'Alzey-Worms', hasInfo: false, path: "alzey_worms" },
-                            { id: 4, name: 'Bad Dürkheim', hasInfo: false, path: "bad_duerkheim" },
-                            { id: 5, name: 'Bad Kreuznach', hasInfo: false, path: "bad_kreuznach" },
-                            { id: 6, name: 'Bernkastel-Wittlich', hasInfo: false, path: "bernkastel_wittlich" },
-                            { id: 7, name: 'Birkenfeld', hasInfo: false, path: "birkenfeld" },
-                            { id: 8, name: 'Cochem-Zell', hasInfo: false, path: "cochem_zell" },
-                            { id: 9, name: 'Donnersbergkreis', hasInfo: false, path: "donnersbergkreis" },
-                            { id: 10, name: 'Eifelkreis Bitburg-Prüm', hasInfo: false, path: "eifelkreis_bitburg-pruem" },
-                            { id: 11, name: 'Germersheim', hasInfo: false, path: "germersheim" },
-                            { id: 12, name: 'Kaiserslautern', hasInfo: false, path: "kaiserslautern" },
-                            { id: 13, name: 'Kusel', hasInfo: false, path: "kusel" },
-                            { id: 14, name: 'Mainz-Bingen', hasInfo: false, path: "mainz_bingen" },
-                            { id: 15, name: 'Mayen-Koblenz', hasInfo: true, path: "mayen_koblenz" },
-                            { id: 16, name: 'Neuwied', hasInfo: false, path: "neuwied" },
-                            { id: 17, name: 'Rhein-Hunsrück-Kreis', hasInfo: false, path: "rhein_hunsrueck_kreis" },
-                            { id: 18, name: 'Rhein-Lahn-Kreis', hasInfo: false, path: "rhein_lahn_kreis" },
-                            { id: 19, name: 'Rhein-Pfalz-Kreis', hasInfo: false, path: "rhein_pfalz_kreis" },
-                            { id: 20, name: 'Südliche Weinstraße', hasInfo: false, path: "suedliche_weinstrasse" },
-                            { id: 21, name: 'Südwestpfalz', hasInfo: false, path: "suedwestpfalz" },
-                            { id: 22, name: 'Trier-Saarburg', hasInfo: true, path: "trier_saarburg" },
-                            { id: 23, name: 'Vulkaneifel', hasInfo: false, path: "vulkaneifel" },
-                            { id: 24, name: 'Westerwaldkreis', hasInfo: false, path: "westerwaldkreis" },
-                        ]
-                    },
-                    {
-                        title: "Kreisfreie Städte in Rheinland-Pfalz",
-                        items: [
-                            { id: 25, name: 'Mainz', hasInfo: false, path: "mainz" },
-                            { id: 26, name: 'Koblenz', hasInfo: false, path: "koblenz" },
-                            { id: 27, name: 'Ludwigshafen', hasInfo: false, path: "ludwigshafen" },
-                            { id: 28, name: 'Trier', hasInfo: true, path: "trier" },
-                            { id: 29, name: 'Kaiserslautern', hasInfo: false, path: "kaiserslautern-city" },
-                            { id: 30, name: 'Worms', hasInfo: false, path: "worms" },
-                            { id: 31, name: 'Speyer', hasInfo: false, path: "speyer" },
-                            { id: 32, name: 'Frankenthal', hasInfo: false, path: "frankenthal" },
-                            { id: 33, name: 'Landau in der Pfalz', hasInfo: false, path: "landau" },
-                            { id: 34, name: 'Neustadt an der Weinstraße', hasInfo: false, path: "neustadt" },
-                            { id: 35, name: 'Pirmasens', hasInfo: false, path: "pirmasens" },
-                            { id: 36, name: 'Zweibrücken', hasInfo: false, path: "zweibruecken" }
-                        ]
-                    }
-                ],
+                discriptRegions:
+                {
+                    title: "Landkreise in Rheinland-Pfalz",
+                    items: [
+                        { id: 1, name: 'Ahrweiler', hasInfo: false, path: "ahrweiler" },
+                        { id: 2, name: 'Altenkirchen', hasInfo: false, path: "altenkirchen" },
+                        { id: 3, name: 'Alzey-Worms', hasInfo: false, path: "alzey_worms" },
+                        { id: 4, name: 'Bad Dürkheim', hasInfo: false, path: "bad_duerkheim" },
+                        { id: 5, name: 'Bad Kreuznach', hasInfo: false, path: "bad_kreuznach" },
+                        { id: 6, name: 'Bernkastel-Wittlich', hasInfo: false, path: "bernkastel_wittlich" },
+                        { id: 7, name: 'Birkenfeld', hasInfo: false, path: "birkenfeld" },
+                        { id: 8, name: 'Cochem-Zell', hasInfo: false, path: "cochem_zell" },
+                        { id: 9, name: 'Donnersbergkreis', hasInfo: false, path: "donnersbergkreis" },
+                        { id: 10, name: 'Eifelkreis Bitburg-Prüm', hasInfo: false, path: "eifelkreis_bitburg-pruem" },
+                        { id: 11, name: 'Germersheim', hasInfo: false, path: "germersheim" },
+                        { id: 12, name: 'Kaiserslautern', hasInfo: false, path: "kaiserslautern" },
+                        { id: 13, name: 'Kusel', hasInfo: false, path: "kusel" },
+                        { id: 14, name: 'Mainz-Bingen', hasInfo: false, path: "mainz_bingen" },
+                        { id: 15, name: 'Mayen-Koblenz', hasInfo: true, path: "mayen_koblenz" },
+                        { id: 16, name: 'Neuwied', hasInfo: false, path: "neuwied" },
+                        { id: 17, name: 'Rhein-Hunsrück-Kreis', hasInfo: false, path: "rhein_hunsrueck_kreis" },
+                        { id: 18, name: 'Rhein-Lahn-Kreis', hasInfo: false, path: "rhein_lahn_kreis" },
+                        { id: 19, name: 'Rhein-Pfalz-Kreis', hasInfo: false, path: "rhein_pfalz_kreis" },
+                        { id: 20, name: 'Südliche Weinstraße', hasInfo: false, path: "suedliche_weinstrasse" },
+                        { id: 21, name: 'Südwestpfalz', hasInfo: false, path: "suedwestpfalz" },
+                        { id: 22, name: 'Trier-Saarburg', hasInfo: true, path: "trier_saarburg" },
+                        { id: 23, name: 'Vulkaneifel', hasInfo: false, path: "vulkaneifel" },
+                        { id: 24, name: 'Westerwaldkreis', hasInfo: false, path: "westerwaldkreis" },
+                    ]
+                },
+                cities: {
+                    title: "Kreisfreie Städte in Rheinland-Pfalz",
+                    items: [
+                        { id: 25, name: 'Mainz', hasInfo: false, path: "mainz" },
+                        { id: 26, name: 'Koblenz', hasInfo: false, path: "koblenz" },
+                        { id: 27, name: 'Ludwigshafen', hasInfo: false, path: "ludwigshafen" },
+                        { id: 28, name: 'Trier', hasInfo: true, path: "trier" },
+                        { id: 29, name: 'Kaiserslautern', hasInfo: false, path: "kaiserslautern-city" },
+                        { id: 30, name: 'Worms', hasInfo: false, path: "worms" },
+                        { id: 31, name: 'Speyer', hasInfo: false, path: "speyer" },
+                        { id: 32, name: 'Frankenthal', hasInfo: false, path: "frankenthal" },
+                        { id: 33, name: 'Landau in der Pfalz', hasInfo: false, path: "landau" },
+                        { id: 34, name: 'Neustadt an der Weinstraße', hasInfo: false, path: "neustadt" },
+                        { id: 35, name: 'Pirmasens', hasInfo: false, path: "pirmasens" },
+                        { id: 36, name: 'Zweibrücken', hasInfo: false, path: "zweibruecken" }
+                    ]
+                },
                 meta: {
                     title: "Rheinland-Pfalz — Informationen zur Region",
                     description: "Rheinland-Pfalz: Städte, Landkreise, Kultur und Sehenswürdigkeiten.",
@@ -664,8 +658,6 @@ const datas = [
                 }
             }
         },
-
-
     }
 ]
 
