@@ -80,6 +80,7 @@ export const Fotos = {
       ],
       koln_bridges: [
         { path: "Germany/nrw/koln/koln-city/koln_bridges/004.jpg", title: { ru: "4. Мост Мюльхаймер (фото взято с интернета)", ua: "4. Міст Мюльхаймер (фото взято з Інтернету)", de: "4. Mülheimer Brücke (Foto aus dem Internet)" } },
+        { path: "Germany/nrw/koln/koln-city/koln_bridges/009.jpg", title: { ru: "5. Мост Цообрюке, 2026", ua: "5. Міст Цообрюке, 2026", de: "5. Zoobrücke, 2026" } },
         { path: "Germany/nrw/koln/koln-city/koln_bridges/001.jpg", title: { ru: "6. Мост Гогенцоллернов, 2025", ua: "6. Міст Гогенцоллернів, 2025", de: "6. Hohenzollernbrücke, 2025" } },
         { path: "Germany/nrw/koln/koln-city/koln_bridges/005.jpg", title: { ru: "6. Мост Гогенцоллернов, 2025", ua: "6. Міст Гогенцоллернів, 2025", de: "6. Hohenzollernbrücke, 2025" } },
         { path: "Germany/nrw/koln/koln-city/koln_bridges/006.jpg", title: { ru: "7. Мост Дойцер, 2025", ua: "7. Міст Дойцер, 2025", de: "7. Deutzer Brücke, 2025" } },
@@ -98,8 +99,10 @@ export const Fotos = {
         { path: "Germany/nrw/koln/koln-city/flora_garten_koln/008.jpg", title: { ru: "Ботанический сад Флора, 2025", ua: "Ботанічний сад Флора, 2025", de: "Botanischer Garten Flora, 2025" } },
       ],
       rheinpark_koln: [
-        { path: "Germany/nrw/koln/koln-city/rheinpark_koln/001.jpg", title: { ru: "Рейнский парк (фото взято с википедии)", ua: "Рейнський парк (фото взято з Вікіпедії)", de: "Rheinpark (Foto von Wikipedia entnommen)" } },
-        { path: "Germany/nrw/koln/koln-city/rheinpark_koln/002.jpg", title: { ru: "Танцующий фонтан (фото взято с википедии)", ua: "Танцюючий фонтан (фото взято з Вікіпедії)", de: "Tanzbrunnen (Foto von Wikipedia entnommen)" } },
+        { path: "Germany/nrw/koln/koln-city/rheinpark_koln/001.jpg", title: { ru: "Рейнский парк, 2026", ua: "Рейнський парк, 2026", de: "Rheinpark, 2026" } },
+        { path: "Germany/nrw/koln/koln-city/rheinpark_koln/008.jpg", title: { ru: "Рейнский парк, 2026", ua: "Рейнський парк, 2026", de: "Rheinpark, 2026" } },
+        { path: "Germany/nrw/koln/koln-city/rheinpark_koln/009.jpg", title: { ru: "Рейнский парк, 2026", ua: "Рейнський парк, 2026", de: "Rheinpark, 2026" } },
+        { path: "Germany/nrw/koln/koln-city/rheinpark_koln/002.jpg", title: { ru: "Танцующий фонтан, 2026", ua: "Танцюючий фонтан, 2026", de: "Tanzbrunnen, 2026" } },
         { path: "Germany/nrw/koln/koln-city/rheinpark_koln/003.jpg", title: { ru: "Кёльнская канатная дорога (фото взято с википедии)", ua: "Кельнська канатна дорога (фото взято з Вікіпедії)", de: "Kölner Seilbahn (Foto von Wikipedia entnommen)" } },
         { path: "Germany/nrw/koln/koln-city/rheinpark_koln/004.jpg", title: { ru: "Руины римского форта Дивития в Кёльне, 2025", ua: "Руїни римського форту Дивітія в Кельні, 2025", de: "Ruinen des römischen Forts Divitia in Köln, 2025" } },
         { path: "Germany/nrw/koln/koln-city/rheinpark_koln/005.jpg", title: { ru: "Руины римского форта Дивития в Кёльне, 2025", ua: "Руїни римського форту Дивітія в Кельні, 2025", de: "Ruinen des römischen Forts Divitia in Köln, 2025" } },
@@ -107,7 +110,7 @@ export const Fotos = {
         { path: "Germany/nrw/koln/koln-city/rheinpark_koln/007.jpg", title: { ru: "Руины римского форта Дивития в Кёльне, 2025", ua: "Руїни римського форту Дивітія в Кельні, 2025", de: "Ruinen des römischen Forts Divitia in Köln, 2025" } },
       ],
       tanzbrunnen: [
-        { path: "Germany/nrw/koln/koln-city/rheinpark_koln/002.jpg", title: { ru: "Танцующий фонтан (фото взято с википедии)", ua: "Танцюючий фонтан (фото взято з Вікіпедії)", de: "Tanzbrunnen (Foto von Wikipedia entnommen)" } },
+        { path: "Germany/nrw/koln/koln-city/rheinpark_koln/002.jpg", title: { ru: "Танцующий фонтан, 2026", ua: "Танцюючий фонтан, 2026", de: "Tanzbrunnen, 2026" } },
       ],
       koln_seilbahn: [
         { path: "Germany/nrw/koln/koln-city/rheinpark_koln/003.jpg", title: { ru: "Кёльнская канатная дорога (фото взято с википедии)", ua: "Кельнська канатна дорога (фото взято з Вікіпедії)", de: "Kölner Seilbahn (Foto von Wikipedia entnommen)" } }
@@ -215,7 +218,8 @@ export const Fotos = {
         { path: "Germany/nrw/koln/koln-city/altstadt/old_towers/006.jpg", title: { ru: "Башня на юге у Рейна (Bayenturm) (фото взято с интернета)", ua: "Башта на півдні біля Рейну (Bayenturm) (фото взято з Інтернету)", de: "Bayenturm (Foto aus dem Internet)" } },
       ],
       fischmarkt_koln: [
-        { path: "Germany/nrw/koln/koln-city/altstadt/fischmarkt/001.jpg", title: { ru: "Фишмаркт (фото взято с интернета)", ua: "Фішмаркт (фото взято з Інтернету)", de: "Fischmarkt (Foto aus dem Internet)" } },
+        { path: "Germany/nrw/koln/koln-city/altstadt/fischmarkt/001.jpg", title: { ru: "Фишмаркт, 2026", ua: "Фішмаркт, 2026", de: "Fischmarkt, 2026" } },
+        { path: "Germany/nrw/koln/koln-city/altstadt/fischmarkt/002.jpg", title: { ru: "Фишмаркт, 2026", ua: "Фішмаркт, 2026", de: "Fischmarkt, 2026" } },
       ],
       st_gereon_koln: [
         { path: "Germany/nrw/koln/koln-city/altstadt/romanische_kirchen/st_gereon/001.jpg", title: { ru: "Церковь Святого Гереона (фото взято с интернета)", ua: "Церква Святого Герєона (фото взято з Інтернету)", de: "St. Gereon Kirche (Foto aus dem Internet)" } },
@@ -318,12 +322,14 @@ export const Fotos = {
       ],
       rathausbrunnen_frechen: [
         { path: "Germany/nrw/koln/Rhein-Erft-Kreis/frechen/johann_schmitz_platz_frechen/005.jpg", title: { ru: "Фонтан перед ратушей, 2026", ua: "Фонтан перед ратушею, 2026", de: "Brunnen vor dem Rathaus, 2026" } },
+        { path: "Germany/nrw/koln/Rhein-Erft-Kreis/frechen/johann_schmitz_platz_frechen/012.jpg", title: { ru: "Фонтан перед ратушей, 2026", ua: "Фонтан перед ратушею, 2026", de: "Brunnen vor dem Rathaus, 2026" } },
       ],
       st_audomar_frechen: [
         { path: "Germany/nrw/koln/Rhein-Erft-Kreis/frechen/st_audomar/001.jpg", title: { ru: "Церковь Святого Одомара, 2026", ua: "Церква Святого Одомара, 2026", de: "Kirche St. Audomar, 2026" } },
         { path: "Germany/nrw/koln/Rhein-Erft-Kreis/frechen/st_audomar/002.jpg", title: { ru: "Церковь Святого Одомара, 2026", ua: "Церква Святого Одомара, 2026", de: "Kirche St. Audomar, 2026" } },
         { path: "Germany/nrw/koln/Rhein-Erft-Kreis/frechen/st_audomar/003.jpg", title: { ru: "Церковь Святого Одомара, 2026", ua: "Церква Святого Одомара, 2026", de: "Kirche St. Audomar, 2026" } },
         { path: "Germany/nrw/koln/Rhein-Erft-Kreis/frechen/st_audomar/004.jpg", title: { ru: "Церковь Святого Одомара, 2026", ua: "Церква Святого Одомара, 2026", de: "Kirche St. Audomar, 2026" } },
+        { path: "Germany/nrw/koln/Rhein-Erft-Kreis/frechen/st_audomar/005.jpg", title: { ru: "Церковь Святого Одомара, 2026", ua: "Церква Святого Одомара, 2026", de: "Kirche St. Audomar, 2026" } },
       ],
       evangelischeKirche_frechen: [
         { path: "Germany/nrw/koln/Rhein-Erft-Kreis/frechen/evangelischeKirche/001.jpg", title: { ru: "Евангелическая церковь, 2026", ua: "Євангелічна церква, 2026", de: "Evangelische Kirche, 2026" } },
