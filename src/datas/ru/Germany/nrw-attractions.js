@@ -9,20 +9,14 @@ const datas = [
         countryPath: "germany", regionPath: "nrw", districtPath: "city", cityPath: "koln",
         fotoCard: "Germany/nrw/koln/koln-city/altstadt/005.jpg",
         location: "Кёльн, Германия",
-        subObjects: ["cologne_cathedral", "rathaus_koln", "guerzenich_koln", "miqua", "wallraf_richartz_museum", "roemisch_germanisches_museum", "farina_duftmuseum", "museum_ludwig", "stadtmuseum_koln", "dufthaus_4711_koln", "st_maria_himmelfahrt_koln", "romanische_kirchen_altstadt_koln", "old_towers_koln", "fischmarkt_koln"],
+        subObjects: ["cologne_cathedral", "rathaus_koln", "guerzenich_koln", "miqua", "wallraf_richartz_museum", "roemisch_germanisches_museum", "farina_duftmuseum", "museum_ludwig", "stadtmuseum_koln", "dufthaus_4711_koln", "st_maria_himmelfahrt_koln", "old_towers_koln", "fischmarkt_koln", "gross_st_martin_koln", "st_maria_im_kapitol_koln", ],
         short_description_subObjects: {
             text: "В старом городе Кельна расположены такие достопримечательности:",
             items: [
                 { bold: "🌍Кёльнский собор", text: "– величественный готический собор, сердце Старого города, на площади у главного вокзала." },
                 { bold: "Фишмаркт", text: "– яркая историческая площадь Старого города Кёльна с разноцветными домами и атмосферой средневекового рыбного рынка." },
-                {
-                    bold: "Романские церкви Старого города Кёльна:",
-                    text: `<ul>
-                            <li><b>Большой Святой Мартин</b> – одна из самых узнаваемых романских церквей Кёльна с массивной башней-триконхой, возвышающейся над набережной Рейна. Символ силуэта Старого города.</li>
-                            <li><b>Церковь Святой Марии в Капитолии</b> – крупнейшая романская церковь Кёльна, построенная на месте древнеримского храма. Выдающийся пример романской архитектуры с триконховым планом и исторической криптой, сохраняющей следы античного прошлого.</li>
-                            <li><b>Церковь Святого Гереона в Кёльне</b> – романская церковь с двенадцатигранным куполом, старинными витражами и богатым историческим интерьером.</li>
-                        </ul>`
-                },
+                { bold: "Большой Святой Мартин", text: "– одна из самых узнаваемых романских церквей Кёльна с массивной башней-триконхой, возвышающейся над набережной Рейна. Символ силуэта Старого города." },
+                { bold: "Церковь Святой Марии в Капитолии", text: "– крупнейшая романская церковь Кёльна, построенная на месте древнеримского храма. Выдающийся пример романской архитектуры с триконховым планом и исторической криптой, сохраняющей следы античного прошлого." },
                 { bold: "Церковь Успения Пресвятой Девы Марии (St. Mariä Himmelfahrt)", text: "– главная барочная церковь Кёльна XVII века, бывшая иезуитская святыня рядом с центральным вокзалом и Кёльнским собором." },
                 { bold: "Гюрцених", text: "– исторический гильдейский дом и зал рядом с Кёльнским собором." },
                 { bold: "Дом одеколона 4711", text: "– историческое здание в пешеходной зоне вокруг Hohe Straße и Schildergasse." },
@@ -203,6 +197,7 @@ const datas = [
         name: "Романские церкви Старого города Кёльна",
         type: ["cathedral"], rating: "popular",
         path: "romanische_kirchen_altstadt_koln",
+        mapOpen: "romanische_kirchen_altstadt_koln",
         countryPath: "germany", regionPath: "nrw", districtPath: "city", cityPath: "koln",
         subObjects: ["gross_st_martin_koln", "st_maria_im_kapitol_koln", "st_gereon_koln"],
         short_description_subObjects: {
@@ -222,7 +217,6 @@ const datas = [
                 // St. Ursula           
             ]
         },
-        hiddenFromList: true, showMore: true,
         fotoCard: "Germany/nrw/koln/koln-city/altstadt/romanische_kirchen/001.jpg",
         location: "Кёльн, Германия",
         officialSite: [{ bold: "Официальный сайт", link: "https://romanische-kirchen-koeln.de/" }],
@@ -249,6 +243,7 @@ const datas = [
         name: "Большой Святой Мартин",
         type: ["cathedral"], rating: "popular",
         path: "gross_st_martin_koln",
+        map: "romanische_kirchen_altstadt_koln",
         countryPath: "germany", regionPath: "nrw", districtPath: "city", cityPath: "koln",
         hiddenFromList: true, showMore: true,
         fotoCard: "Germany/nrw/koln/koln-city/altstadt/romanische_kirchen/gross_st_martin/001.jpg",
@@ -296,6 +291,7 @@ const datas = [
         path: "st_maria_im_kapitol_koln",
         countryPath: "germany", regionPath: "nrw", districtPath: "city", cityPath: "koln",
         hiddenFromList: true, showMore: true,
+        map: "romanische_kirchen_altstadt_koln",
         fotoCard: "Germany/nrw/koln/koln-city/altstadt/romanische_kirchen/stMariaImKapitol/001.jpg",
         location: "Кёльн, Германия",
         short_description: "Церковь Святой Марии в Капитолии (St. Maria im Kapitol) – крупнейшая романская церковь Кёльна и одна из двенадцати знаменитых романских церквей города. Она была построена в XI веке на месте древнеримского храма, посвящённого Капитолийской триаде богов – Юпитеру, Юноне и Минерве. Сегодня храм считается одним из важнейших памятников средневековой архитектуры Рейнской области. ",
@@ -1362,6 +1358,7 @@ const datas = [
         path: "old_towers_koln",
         countryPath: "germany", regionPath: "nrw", districtPath: "city", cityPath: "koln",
         hiddenFromList: true, showMore: true,
+        mapOpen: "old_towers_koln",
         fotoCard: "Germany/nrw/koln/koln-city/altstadt/old_towers/001.jpg",
         location: "Кёльн, Германия",
         short_description: "Старые башни и укрепления Старого Кёльна – это остатки средневековой городской стены и римских оборонительных сооружений, которые когда-то защищали город. Сегодня они разбросаны по Старому городу и служат историческим ориентиром для жителей и туристов. Эти башни позволяют представить, как выглядел Кёльн в Средние века и увидеть следы его оборонительной системы. Объект популярен среди туристов, но не является всемирно известным символом города.",
@@ -1401,6 +1398,7 @@ const datas = [
         countryPath: "germany", regionPath: "nrw", districtPath: "city", cityPath: "koln",
         hiddenFromList: true,
         coord: { lat: 50.94093, lng: 6.94663 },
+        map: "old_towers_koln",
         meta: {
             title: "Римская башня (Römerturm) – остаток римской городской стены (Colonia Agrippinensis), памятник древнеримской истории города",
             ogImage: "https://our-travels.info/foto/Germany/nrw/koln/koln-city/altstadt/old_towers/002.jpg"
@@ -1414,6 +1412,7 @@ const datas = [
         countryPath: "germany", regionPath: "nrw", districtPath: "city", cityPath: "koln",
         hiddenFromList: true,
         coord: { lat: 50.93639, lng: 6.94021 },
+        map: "old_towers_koln",
         meta: {
             title: "Западные ворота (Hahnentorburg) – одни из четырёх сохранившихся средневековых городских ворот-башен бывшей стены Старого города",
             ogImage: "https://our-travels.info/foto/Germany/nrw/koln/koln-city/altstadt/old_towers/001.jpg"
@@ -1427,6 +1426,7 @@ const datas = [
         countryPath: "germany", regionPath: "nrw", districtPath: "city", cityPath: "koln",
         hiddenFromList: true,
         coord: { lat: 50.94931, lng: 6.95687 },
+        map: "old_towers_koln",
         meta: {
             title: "Северные ворота (Eigelsteintorburg) – хорошо сохранившаяся средневековая фортификационная архитектура с массивными башнями и арочным проходом.",
             ogImage: "https://our-travels.info/foto/Germany/nrw/koln/koln-city/altstadt/old_towers/003.jpg"
@@ -1440,6 +1440,7 @@ const datas = [
         countryPath: "germany", regionPath: "nrw", districtPath: "city", cityPath: "koln",
         hiddenFromList: true,
         coord: { lat: 50.92196, lng: 6.95923 },
+        map: "old_towers_koln",
         meta: {
             title: "Южные ворота (Severinstorburg) – стратегически важный южный вход – через него проходили основные пути к Бонну и на юг Германии",
             ogImage: "https://our-travels.info/foto/Germany/nrw/koln/koln-city/altstadt/old_towers/004.jpg"
@@ -1453,6 +1454,7 @@ const datas = [
         countryPath: "germany", regionPath: "nrw", districtPath: "city", cityPath: "koln",
         hiddenFromList: true,
         coord: { lat: 50.92418, lng: 6.95305 },
+        map: "old_towers_koln",
         meta: {
             title: "Южный фрагмент стены (Ulrepforte) – самые узкие и маленькие из городских ворот, служили скорее вспомогательной частью обороны.",
             ogImage: "https://our-travels.info/foto/Germany/nrw/koln/koln-city/altstadt/old_towers/005.jpg"
@@ -1466,6 +1468,7 @@ const datas = [
         countryPath: "germany", regionPath: "nrw", districtPath: "city", cityPath: "koln",
         hiddenFromList: true,
         coord: { lat: 50.92375, lng: 6.96695 },
+        map: "old_towers_koln",
         meta: {
             title: "Башня на юге у Рейна (Bayenturm) – оборонительная башня, расположенная на юго-востоке городской стены у Рейна.",
             ogImage: "https://our-travels.info/foto/Germany/nrw/koln/koln-city/altstadt/old_towers/006.jpg"

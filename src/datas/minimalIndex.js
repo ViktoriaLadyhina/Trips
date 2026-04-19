@@ -135,6 +135,10 @@ const datas =
     old_towers_koln: { ru: 'Старые башни и укрепления Старого Кёльна', de: 'Alte Türme und Befestigungen der Altstadt Kölns', ua: 'Старі башти та укріплення Старого Кельна' },
     fischmarkt_koln: { ru: 'Фишмаркт', de: 'Fischmarkt', ua: 'Фішмаркт' },
     st_gereon_koln: { ru: 'Церковь Святого Гереона', de: 'St. Gereon Kirche', ua: 'Церква Святого Герєона' },
+    prussian_fortress_system_koln: { ru: 'Прусская крепостная система Кёльна', de: 'Preußisches Festungssystem Köln', ua: 'Прусська фортифікаційна система Кельна' },
+    fort_I_inner_koln: { ru: 'Fort I (внутреннее крепостное кольцо)', de: 'Fort I (innerer Festungsring)', ua: 'Fort I (внутрішнє фортифікаційне кільце)' },
+    fort_II_inner_koln: { ru: 'Fort II (внутреннее крепостное кольцо)', de: 'Fort II (innerer Festungsring)', ua: 'Fort II (внутрішнє фортифікаційне кільце)' },
+    fort_VI_outer_koln: { ru: 'Fort VI (внешнее крепостное кольцо)', de: 'Fort VI (äußerer Festungsring)', ua: 'Fort VI (зовнішнє фортифікаційне кільце)' },
 
     // Aachen Kreis
     // Monschau

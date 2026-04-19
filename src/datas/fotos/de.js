@@ -223,7 +223,27 @@ export const Fotos = {
       ],
       st_gereon_koln: [
         { path: "Germany/nrw/koln/koln-city/altstadt/romanische_kirchen/st_gereon/001.jpg", title: { ru: "Церковь Святого Гереона (фото взято с интернета)", ua: "Церква Святого Герєона (фото взято з Інтернету)", de: "St. Gereon Kirche (Foto aus dem Internet)" } },
-      ]
+      ],
+      prussian_fortress_system_koln: [
+        { path: "Germany/nrw/koln/koln-city/prussian_fortress_system/inner/001.jpg", title: { ru: "Fort I (внутреннее крепостное кольцо) (фото взято с интернета)", ua: "Fort I (внутрішнє фортифікаційне кільце) (фото взято з Інтернету)", de: "Fort I (innerer Festungsring) (Foto aus dem Internet)" } },
+        { path: "Germany/nrw/koln/koln-city/prussian_fortress_system/004.jpg", title: { ru: "Fort IV (фото взято с интернета)", ua: "Fort IV (фото взято з Інтернету)", de: "Fort IV (Foto aus dem Internet)" } },
+        { path: "Germany/nrw/koln/koln-city/prussian_fortress_system/005.jpg", title: { ru: "Fort V (фото взято с интернета)", ua: "Fort V (фото взято з Інтернету)", de: "Fort V (Foto aus dem Internet)" } },
+        { path: "Germany/nrw/koln/koln-city/prussian_fortress_system/outer/006.jpg", title: { ru: "Fort VI Deckstein (внешнее крепостное кольцо), 2026", ua: "Fort VI Deckstein (зовнішнє фортифікаційне кільце), 2026", de: "Fort VI Deckstein (äußerer Festungsring), 2026" } },
+        { path: "Germany/nrw/koln/koln-city/prussian_fortress_system/outer/006-1.jpg", title: { ru: "Fort VI Deckstein (внешнее крепостное кольцо), 2026", ua: "Fort VI Deckstein (зовнішнє фортифікаційне кільце), 2026", de: "Fort VI Deckstein (äußerer Festungsring), 2026" } },
+        { path: "Germany/nrw/koln/koln-city/prussian_fortress_system/009.jpg", title: { ru: "Fort IX (фото взято с интернета)", ua: "Fort IX (фото взято з Інтернету)", de: "Fort IX (Foto aus dem Internet)" } },
+        { path: "Germany/nrw/koln/koln-city/prussian_fortress_system/009-1.jpg", title: { ru: "Fort IX (фото взято с интернета)", ua: "Fort IX (фото взято з Інтернету)", de: "Fort IX (Foto aus dem Internet)" } },
+        { path: "Germany/nrw/koln/koln-city/prussian_fortress_system/009-2.jpg", title: { ru: "Fort IX (фото взято с интернета)", ua: "Fort IX (фото взято з Інтернету)", de: "Fort IX (Foto aus dem Internet)" } },
+        { path: "Germany/nrw/koln/koln-city/prussian_fortress_system/010.jpg", title: { ru: "Fort X (фото взято с интернета)", ua: "Fort X (фото взято з Інтернету)", de: "Fort X (Foto aus dem Internet)" } },
+        { path: "Germany/nrw/koln/koln-city/prussian_fortress_system/010-1.jpg", title: { ru: "Fort X (фото взято с интернета)", ua: "Fort X (фото взято з Інтернету)", de: "Fort X (Foto aus dem Internet)" } },
+        { path: "Germany/nrw/koln/koln-city/prussian_fortress_system/011.jpg", title: { ru: "Fort XI (фото взято с интернета)", ua: "Fort XI (фото взято з Інтернету)", de: "Fort XI (Foto aus dem Internet)" } },
+      ],
+      fort_I_inner_koln: [
+        { path: "Germany/nrw/koln/koln-city/prussian_fortress_system/inner/001.jpg", title: { ru: "Fort I (внутреннее крепостное кольцо) (фото взято с интернета)", ua: "Fort I (внутрішнє фортифікаційне кільце) (фото взято з Інтернету)", de: "Fort I (innerer Festungsring) (Foto aus dem Internet)" } },
+      ],
+      fort_VI_outer_koln: [
+        { path: "Germany/nrw/koln/koln-city/prussian_fortress_system/outer/006.jpg", title: { ru: "Fort VI Deckstein (внешнее крепостное кольцо), 2026", ua: "Fort VI Deckstein (зовнішнє фортифікаційне кільце), 2026", de: "Fort VI Deckstein (äußerer Festungsring), 2026" } },
+        { path: "Germany/nrw/koln/koln-city/prussian_fortress_system/outer/006-1.jpg", title: { ru: "Fort VI Deckstein (внешнее крепостное кольцо), 2026", ua: "Fort VI Deckstein (зовнішнє фортифікаційне кільце), 2026", de: "Fort VI Deckstein (äußerer Festungsring), 2026" } },
+      ],
     },
     bruhl: {
       gallery: [
@@ -322,7 +342,6 @@ export const Fotos = {
       ],
       rathausbrunnen_frechen: [
         { path: "Germany/nrw/koln/Rhein-Erft-Kreis/frechen/johann_schmitz_platz_frechen/005.jpg", title: { ru: "Фонтан перед ратушей, 2026", ua: "Фонтан перед ратушею, 2026", de: "Brunnen vor dem Rathaus, 2026" } },
-        { path: "Germany/nrw/koln/Rhein-Erft-Kreis/frechen/johann_schmitz_platz_frechen/012.jpg", title: { ru: "Фонтан перед ратушей, 2026", ua: "Фонтан перед ратушею, 2026", de: "Brunnen vor dem Rathaus, 2026" } },
       ],
       st_audomar_frechen: [
         { path: "Germany/nrw/koln/Rhein-Erft-Kreis/frechen/st_audomar/001.jpg", title: { ru: "Церковь Святого Одомара, 2026", ua: "Церква Святого Одомара, 2026", de: "Kirche St. Audomar, 2026" } },

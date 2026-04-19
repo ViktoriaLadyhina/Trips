@@ -9,21 +9,15 @@ const datas = [
         countryPath: "germany", regionPath: "nrw", districtPath: "city", cityPath: "koln",
         fotoCard: "Germany/nrw/koln/koln-city/altstadt/005.jpg",
         location: "Кельн, Німеччина",
-        subObjects: ["cologne_cathedral", "rathaus_koln", "guerzenich_koln", "miqua", "wallraf_richartz_museum", "roemisch_germanisches_museum", "farina_duftmuseum", "museum_ludwig", "stadtmuseum_koln", "dufthaus_4711_koln", "st_maria_himmelfahrt_koln", "romanische_kirchen_altstadt_koln", "old_towers_koln", "fischmarkt_koln"],
+        subObjects: ["cologne_cathedral", "rathaus_koln", "guerzenich_koln", "miqua", "wallraf_richartz_museum", "roemisch_germanisches_museum", "farina_duftmuseum", "museum_ludwig", "stadtmuseum_koln", "dufthaus_4711_koln", "st_maria_himmelfahrt_koln", "old_towers_koln", "fischmarkt_koln", "gross_st_martin_koln", "st_maria_im_kapitol_koln", ],
         short_description_subObjects: {
             text: "У Старому місті Кельна розташовані такі визначні пам'ятки:",
             items: [
                 { bold: "🌍Кельнський собор", text: "– величний готичний собор, серце Старого міста, на площі біля головного вокзалу." },
                 { bold: "Фішмаркт", text: "– яскрава історична площа Старого міста Кельна з різнокольоровими будинками та атмосферою середньовічного рибного ринку." },
                 { bold: "Будинок одеколону 4711", text: "– історична будівля у пішохідній зоні навколо Hohe Straße та Schildergasse." },
-                {
-                    bold: "Романські церкви Старого міста Кельна:",
-                    text: `<ul>
-                            <li><b>Великий Святий Мартин</b> – одна з найвідоміших романських церков Кельна з масивною баштою-триконхою, що височіє над набережною Рейну. Символ силуету Старого міста.</li>
-                            <li><b>Церква Святої Марії у Капітолії</b> – найбільша романська церква Кельна, збудована на місці давньоримського храму. Вражаючий приклад романської архітектури з триконховим планом та історичною криптою, що зберігає сліди античного минулого.</li>
-                            <li><b>Церква Святого Герєона в Кельні</b> – романська церква з дванадцятигранним куполом, старовинними вітражами та багатим історичним інтер'єром.</li>
-                        </ul>`
-                },
+                { bold: "Великий Святий Мартин", text: "– одна з найбільш впізнаваних романських церков Кельна з масивною вежею-триконхою, що піднімається над набережною Рейну. Символ силуету Старого міста." },
+                { bold: "Церква Святої Марії в Капітолії", text: "– найбільша романська церква Кельна, збудована на місці давньоримського храму. Вражаючий приклад романської архітектури з триконховим планом та історичною криптою, що зберігає сліди античного минулого." },              
                 { bold: "Церква Успіння Пресвятої Діви Марії (St. Mariä Himmelfahrt)", text: "– головна барокова церква Кельна сімнадцятого століття, колишній єзуїтський храм, розташований поруч із центральним залізничним вокзалом та Кельнським собором." },
                 { bold: "Гюрценіх", text: "– історичний цеховий будинок і зал поруч із Кельнським собором." },
                 { bold: "Кельнська ратуша", text: "– історична міська ратуша в центрі Старого міста." },
@@ -207,6 +201,7 @@ const datas = [
         path: "romanische_kirchen_altstadt_koln",
         countryPath: "germany", regionPath: "nrw", districtPath: "city", cityPath: "koln",
         subObjects: ["gross_st_martin_koln", "st_maria_im_kapitol_koln", "st_gereon_koln"],
+        mapOpen: "romanische_kirchen_altstadt_koln",
         short_description_subObjects: {
             text: "На нашому сайті з цього списку описані церкви:",
             items: [
@@ -215,7 +210,6 @@ const datas = [
                 { bold: "Церква Святого Герєона в Кельні", text: "– романська церква з дванадцятигранним куполом, старовинними вітражами та багатим історичним інтер'єром." }
             ]
         },
-        hiddenFromList: true, showMore: true,
         fotoCard: "Germany/nrw/koln/koln-city/altstadt/romanische_kirchen/001.jpg",
         location: "Кельн, Німеччина",
         officialSite: [{ bold: "Офіційний сайт", link: "https://romanische-kirchen-koeln.de/" }],
@@ -244,6 +238,7 @@ const datas = [
         path: "gross_st_martin_koln",
         countryPath: "germany", regionPath: "nrw", districtPath: "city", cityPath: "koln",
         hiddenFromList: true, showMore: true,
+        map: "romanische_kirchen_altstadt_koln",
         fotoCard: "Germany/nrw/koln/koln-city/altstadt/romanische_kirchen/gross_st_martin/001.jpg",
         location: "Кельн, Німеччина",
         officialSite: [
@@ -289,6 +284,7 @@ const datas = [
         path: "st_maria_im_kapitol_koln",
         countryPath: "germany", regionPath: "nrw", districtPath: "city", cityPath: "koln",
         hiddenFromList: true, showMore: true,
+        map: "romanische_kirchen_altstadt_koln",
         fotoCard: "Germany/nrw/koln/koln-city/altstadt/romanische_kirchen/stMariaImKapitol/001.jpg",
         location: "Кельн, Німеччина",
         short_description: "Церква Святої Марії у Капітолії (St. Maria im Kapitol) – найбільша романська церква Кельна та одна з дванадцяти відомих романських церков міста. Вона була побудована у XI столітті на місці давньоримського храму, присвяченого Капітолійській тріаді богів – Юпітеру, Юноні та Мінерві. Сьогодні храм вважається одним з найважливіших пам’яток середньовічної архітектури Рейнської області.",
@@ -1354,6 +1350,7 @@ const datas = [
         path: "old_towers_koln",
         countryPath: "germany", regionPath: "nrw", districtPath: "city", cityPath: "koln",
         hiddenFromList: true, showMore: true,
+        mapOpen: "old_towers_koln",
         fotoCard: "Germany/nrw/koln/koln-city/altstadt/old_towers/001.jpg",
         location: "Кельн, Німеччина",
         short_description: "Старі башти та укріплення Старого Кельна – це залишки середньовічної міської стіни та римських оборонних споруд, які колись захищали місто. Сьогодні вони розкидані по Старому місті і слугують історичними орієнтирами для мешканців і туристів. Ці башти дозволяють уявити, як виглядав Кельн у Середні віки та побачити сліди його оборонної системи. Об'єкт популярний серед туристів, але не є всесвітньо відомим символом міста.",
@@ -1390,6 +1387,7 @@ const datas = [
         name: "Римська башта Römerturm",
         type: ["historical_building"], rating: "popular",
         path: "old_towers_koln",
+        map: "old_towers_koln",
         countryPath: "germany", regionPath: "nrw", districtPath: "city", cityPath: "koln",
         hiddenFromList: true,
         coord: { lat: 50.94093, lng: 6.94663 },
@@ -1403,6 +1401,7 @@ const datas = [
         name: "Західні ворота (Hahnentorburg)",
         type: ["historical_building"], rating: "popular",
         path: "old_towers_koln",
+        map: "old_towers_koln",
         countryPath: "germany", regionPath: "nrw", districtPath: "city", cityPath: "koln",
         hiddenFromList: true,
         coord: { lat: 50.93639, lng: 6.94021 },
@@ -1416,6 +1415,7 @@ const datas = [
         name: "Північні ворота (Eigelsteintorburg)",
         type: ["historical_building"], rating: "popular",
         path: "old_towers_koln",
+        map: "old_towers_koln",
         countryPath: "germany", regionPath: "nrw", districtPath: "city", cityPath: "koln",
         hiddenFromList: true,
         coord: { lat: 50.94931, lng: 6.95687 },
@@ -1429,6 +1429,7 @@ const datas = [
         name: "Південні ворота (Severinstorburg)",
         type: ["historical_building"], rating: "popular",
         path: "old_towers_koln",
+        map: "old_towers_koln",
         countryPath: "germany", regionPath: "nrw", districtPath: "city", cityPath: "koln",
         hiddenFromList: true,
         coord: { lat: 50.92196, lng: 6.95923 },
@@ -1442,6 +1443,7 @@ const datas = [
         name: "Південний фрагмент стіни (Ulrepforte)",
         type: ["historical_building"], rating: "popular",
         path: "old_towers_koln",
+        map: "old_towers_koln",
         countryPath: "germany", regionPath: "nrw", districtPath: "city", cityPath: "koln",
         hiddenFromList: true,
         coord: { lat: 50.92418, lng: 6.95305 },
@@ -1455,6 +1457,7 @@ const datas = [
         name: "Башта на півдні біля Рейну (Bayenturm)",
         type: ["historical_building"], rating: "popular",
         path: "old_towers_koln",
+        map: "old_towers_koln",
         countryPath: "germany", regionPath: "nrw", districtPath: "city", cityPath: "koln",
         hiddenFromList: true,
         coord: { lat: 50.92375, lng: 6.96695 },

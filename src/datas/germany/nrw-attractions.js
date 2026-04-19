@@ -1495,6 +1495,7 @@ const datas = [
         path: "st_gereon_koln",
         countryPath: "germany", regionPath: "nrw", districtPath: "city", cityPath: "koln",
         hiddenFromList: true, showMore: true,
+        map: "romanische_kirchen_altstadt_koln",
         fotoCard: "Germany/nrw/koln/koln-city/altstadt/romanische_kirchen/st_gereon/001.jpg",
         coord: { lat: 50.94329, lng: 6.94571 },
         translations: {
@@ -1643,6 +1644,629 @@ const datas = [
                     ogDescription: "Eine einzigartige romanische Kirche in der Altstadt von Köln mit zwölfeckiger Kuppel, alten Glasfenstern und jahrhundertealter Geschichte.",
                     keywords: "Köln, romanische Kirche, St. Gereon Kirche, mittelalterliche Architektur, Glasfenster, Kuppel, historisches Denkmal, Tourismus, Sehenswürdigkeiten Kölns",
                     ogImage: "https://our-travels.info/foto/Germany/nrw/koln/koln-city/altstadt/romanische_kirchen/st_gereon/001.jpg"
+                }
+            }
+        }
+    },
+    {
+        id: "prussian_fortress_system_koln",
+        type: ["historical_building"], rating: "local",
+        path: "prussian_fortress_system_koln",
+        countryPath: "germany", regionPath: "nrw", districtPath: "city", cityPath: "koln",
+        fotoCard: "Germany/nrw/koln/koln-city/prussian_fortress_system/010-1.jpg",
+        mapOpen: "prussian_fortress_system_koln",
+        subObjects: ["fort_I_inner_koln", "fort_II_inner_koln"],
+        subObjects2: ["fort_VI_outer_koln",],
+        translations: {
+            ru: {
+                name: "Прусская крепостная система Кёльна",
+                location: "Кёльн, Германия",
+                short_description: "Прусская крепостная система Кёльна – это комплекс оборонительных сооружений XIX века, включающий два кольца фортов, построенных Пруссией вокруг города для его защиты. Сегодня форты сохранились в разной степени: часть используется как жилые и общественные пространства, часть превращена в зелёные зоны, а часть частично сохранилась или утрачена.",
+                full_description: {
+                    title: "Описание и история",
+                    items: [
+                        { text: "После включения Кёльна в состав Пруссии в 1815 году город получил стратегическое значение как пограничная крепость на Рейне. На основе более ранних укреплений, включая средневековые и частично римские оборонительные сооружения, была заложена система нового оборонительного кольца." },
+                        { text: "В XIX веке эта система была существенно расширена и приобрела двухуровневую структуру. Вокруг города сформировались два пояса укреплений – внутренний и внешний. Внутреннее кольцо, модернизированное в первой половине XIX века на основе более ранних фортификаций, располагалось вблизи городской черты и включало 12 основных фортов." },
+                        { text: "В связи с развитием артиллерии и необходимостью вынести линию обороны дальше от города, в период с 1873 по 1886 год было построено внешнее крепостное кольцо длиной около 46 километров. Оно также состояло из 12 основных фортов, размещённых на значительном удалении от центра Кёльна и соединённых между собой дорогами, валами и промежуточными укреплениями." },
+                        { text: "Помимо основных фортов, оборонительная система включала многочисленные дополнительные сооружения – редуты, батареи и так называемые промежуточные укрепления (Zwischenwerke). В общей сложности комплекс насчитывал более 180 объектов, образуя одну из крупнейших крепостных систем Пруссии. Форты строились преимущественно из кирпича с земляными насыпями и были рассчитаны на длительную оборону и артиллерийские обстрелы." },
+                        { text: "Однако стремительное развитие артиллерии во второй половине XIX века быстро снизило эффективность подобных укреплений, и уже к концу XIX века часть сооружений считалась устаревшей. После Первой мировой войны значительная часть крепостной системы была демонтирована или утратила своё военное значение." },
+                        { text: "Сегодня бывшие линии укреплений частично совпадают с зелёным поясом города (Grüngürtel) и трассой Militärringstraße, сохраняя следы прусской оборонительной системы в современном городском ландшафте." },
+                    ]
+                },
+                subObjects_title: "Некоторые форты Кёльна (внутреннее крепостное кольцо)",
+                subObjects_title2: "Некоторые форты Кёльна (внешнее крепостное кольцо)",
+                // sub_objects: {
+                //     title: "Форты Кёльна и их текущее состояние",
+                //     items: [
+                //         {
+                //             bold: "Fort II",
+                //             text: "являлся частью внутреннего прусского оборонительного кольца Кёльна, построенного в неопрусском стиле примерно в 500 метрах от существующей городской стены. Строительство форта началось в 1816 году и завершилось в декабре 1821 года, поэтому он относится к первой строительной серии укреплений. <br>В отличие от фортов второй очереди, Форт II получил не только номер, но и почётное имя –  «Великий князь Николай Российский», утверждённое королём Фридрихом Вильгельмом III. Как и у большинства укреплений внутреннего кольца, оригинальные строительные планы не сохранились, однако его устройство частично реконструируется по картам и аналогии с сохранившимися фортами. <br>Форт имел полигональную форму примерно 100×100 метров, окружён сухим рвом глубиной около 4 метров и шириной около 10 метров. В конструкции присутствовали казематированные помещения для гарнизона и боеприпасов, редут с двумя этажами, капониры для фланговой обороны и артиллерийские позиции, а также дополнительные оборонительные сооружения. Гарнизон насчитывал около 250 человек. <br>Форт II располагался на месте современного товарного вокзала Bonntor и был вынесен дальше от городской стены по сравнению с большинством других укреплений, что нарушало симметрию оборонительного кольца. Из-за этого он не был включён в более позднюю систему внутренней модернизации укреплений. <br>Военное использование форта завершилось в 1880-х годах, а окончательный снос произошёл в середине 1930-х годов. В настоящее время на местности не сохранилось видимых следов этого укрепления. <br><b>Состояние:</b> утраченный. <br><b>Где:</b> в районе Bayenthal, в южной части Кёльн."
+                //         },
+                //         {
+                //             bold: "Fort III",
+                //             text: "являлся частью внутреннего прусского оборонительного кольца Кёльна, построенного в неопрусском стиле примерно в 500 метрах от существующей городской стены. Строительство первых укреплений началось в 1816 году, однако форты с нечётными номерами, включая Форт III, были реализованы во второй строительной фазе между 1841 и 1847 годами. Работы над Фортом III начались в 1843 году. <br>Форт был рассчитан на гарнизон около 178 солдат. По своей планировке он соответствовал фортификационным сооружениям второй серии и имел менее острые контуры со стороны возможного противника, чем форты первой очереди. <br>Форт III располагался в районе современной улицы Bonner Wall. В отличие от большинства других укреплений, он не был полностью включён в новую городскую оборонительную линию 1882 года и оказался немного позади неё. <br>Позднее форт был переоборудован в тюремное военное сооружение: к редюиту были пристроены блоки камер. Военное использование продолжалось до конца XIX – начала XX века. <br>Окончательный снос Форта III произошёл в 1960-х годах. В настоящее время на местности не сохранилось видимых следов этого укрепления. <br><b>Состояние:</b> утраченный. <br><b>Где:</b> район Neustadt-Süd, в районе улицы Bonner Wall (южная часть Кёльна)"
+                //         },
+
+                //         {
+                //             img: "Germany/nrw/koln/koln-city/prussian_fortress_ring/004.jpg", alt: "Fort IV",
+                //             bold: "Fort IV",
+                //             text: "был построен между 1874 и 1876 годами и являлся одним из крупных фортов внешнего прусского оборонительного кольца Кёльна на левом берегу Рейна. По своим размерам он сопоставим только с фортами V и VII, тогда как остальные укрепления относились к среднему типу. Его параметры составляли около 210 метров в глубину и 330 метров в ширину, при этом форт имел строго симметричную планировку. <br>Форт был спроектирован как артиллерийское укрепление с поддержкой пехоты. В последующие годы он модернизировался: усиливались перекрытия бетоном, устанавливались бронированные наблюдательные купола и укреплялись оборонительные сооружения. <br>С 1909 по 1914 год в форте размещался 3-й Кёльнский батальон дирижаблей, после чего он был переведён в новые казармы в Бикендорфе. <br>После Первой мировой войны, в 1921–1922 годах, большая часть форта была демонтирована в соответствии с Версальским договором, однако часть казарменных зданий сохранилась. Позже территория была перепрофилирована: здесь появились спортивные площадки, учебные и городские службы. <br>Во время Второй мировой войны форт снова использовался в военных целях: в его подземных помещениях располагались командные и защитные сооружения противовоздушной обороны, а часть комплекса служила убежищем для гражданского населения. Сегодня территория используется в основном как спортивный и хозяйственный объект города. <br><b>Состояние:</b> частично сохранившееся / адаптированное. <br><b>Где:</b> западный Grüngürtel."
+                //         },
+
+                //         {
+                //             img: "Germany/nrw/koln/koln-city/prussian_fortress_ring/005.jpg",
+                //             alt: "Fort V",
+                //             bold: "Fort V",
+                //             text: "являлся частью внутреннего прусского оборонительного кольца Кёльна, построенного в неопрусском стиле примерно в 500 метрах от существующей городской стены. Первые укрепления начали возводить с 1816 года, однако форты с нечётными номерами, включая Форт V, были построены во второй строительной фазе между 1841 и 1847 годами. Работы над фортом начались в 1843 году и завершились в 1847 году. <br>Форт V не получил дополнительного имени, что было типично для укреплений второй строительной серии. По своей архитектуре он представлял переходный тип: с более сбалансированной геометрией фасов и флангов, в отличие от более острых форм ранних фортов. <br>В отличие от первоначальных планов, новая линия укреплений левого берега, построенная в 1882 году, прошла перед фортом, из-за чего он не был включён в обновлённую оборонительную систему и утратил своё военное значение. <br>В 1880-х годах форт был выведен из военного использования и в 1886 году перешёл в собственность города. Центральное сооружение (редюит) было переоборудовано под административные и лабораторные помещения Августовской больницы. <br>В дальнейшем здание использовалось как столовая, а затем как химический институт. Во время Второй мировой войны форт сильно пострадал от бомбардировок, и от него остались лишь руины. <br>В 2002-2004 годах редюит был полностью восстановлен и сегодня используется Географическим институтом Кёльнского университета, оставаясь одним из немногих сохранившихся элементов этого форта. <br><b>Состояние:</b> частично сохранившееся / адаптированное. <br><b>Где:</b> район Müngersdorf, рядом с зелёным поясом Grüngürtel (западная часть Кёльна)."
+                //         },
+                //         { img: "Germany/nrw/koln/koln-city/prussian_fortress_ring/006.jpg", alt: "Fort VI Deckstein", bold: "Fort VI Deckstein", text: "является одним из наиболее хорошо сохранившихся фортов системы. После утраты военного значения он был частично адаптирован под жильё и общественные функции. Сегодня внутри находятся жилые помещения и объединения жителей (Verein), а внутренний двор используется как общественное пространство. <br><b>Состояние:</b> жилой / адаптирован. <br><b>Где:</b> район Deckstein, рядом с Decksteiner Weiher (западный Кёльн)." },
+                //         { bold: "Fort VII", text: "– сохранились отдельные фрагменты стен и укреплений, большая часть сооружения утрачена. <br><b>Состояние:</b> руины / фрагменты. <br><b>Где:</b> район Lindenthal, рядом с Grüngürtel (западная часть Кёльна)." },
+                //         //                         Форт VI являлся частью внутреннего прусского оборонительного кольца Кёльна, построенного в неопрусском стиле примерно в 500 метрах от существующей городской стены. Строительство форта началось 30 декабря 1818 года и было завершено к концу 1823 года, поэтому он относится к первой строительной серии укреплений.
+                //         // Форт получил имя «Принц Фридрих Нидерландский», что было характерно для укреплений первой серии. Архитектурно он отличался более острыми формами валов и рвов, направленных в сторону предполагаемого противника.
+                //         // Проект форта был разработан в Берлине под руководством Карла Фридриха Шинкеля, а строительством руководили военные инженеры. Форт располагался в районе современной улицы Aachener Straße.
+                //         // В отличие от части других укреплений, Форт VI не был включён в новую линию обороны левого берега, построенную в 1882–1891 годах, из-за чего утратил своё военное значение.
+                //         // Окончательный снос форта произошёл в конце 1880-х годов. В настоящее время на местности не сохранилось видимых следов этого укрепления.
+
+                //         { bold: "Fort VIII", text: "– от форта сохранились лишь минимальные элементы, структура практически не читается. <br><b>Состояние:</b> частично утраченный. <br><b>Где:</b> район Sülz, западный сектор крепостного кольца." },
+                //         {
+                //             img: "Germany/nrw/koln/koln-city/prussian_fortress_ring/009.jpg",
+                //             alt: "Fort IX",
+                //             bold: "Fort IX",
+                //             text: "– частично сохранившийся форт с различимыми кирпичными сооружениями и элементами оборонительной структуры. Часть комплекса утрачена или скрыта в ландшафте, однако основные объёмы ещё читаются. <br><b>Состояние:</b> частично сохранился / фрагменты. <br><b>Где:</b> район Zollstock, юго-запад Кёльна."
+                //         },
+                //         { img: "Germany/nrw/koln/koln-city/prussian_fortress_ring/010.jpg", alt: "Fort X", bold: "Fort X", text: "сохранился лучше многих других фортов и был частично переоборудован. Сегодня он окружён парковой зоной и используется как общественное пространство, сохраняя при этом оригинальную структуру прусского укрепления. <br><b>Состояние:</b> частично переиспользован. <br><b>Где:</b> район Raderberg, южная часть Кёльна." },
+                //         {
+                //             img: "Germany/nrw/koln/koln-city/prussian_fortress_ring/011.jpg",
+                //             alt: "Fort XI",
+                //             bold: "Fort XI",
+                //             text: "– сохранившийся форт с отдельными кирпичными сооружениями и фрагментами оборонительной структуры. Хотя значительная часть комплекса утрачена или перестроена, элементы фортификационной архитектуры остаются хорошо различимыми в ландшафте. <br><b>Состояние:</b> частично сохранился / фрагменты. <br><b>Где:</b> район Bayenthal / Marienburg, южный сектор Кёльна."
+                //         },
+                //         { bold: "Fort XII", text: "– один из фортов восточного сектора, частично сохранился и используется ограниченно. <br><b>Состояние:</b> частично сохранён / адаптирован. <br><b>Где:</b> район Deutz, правый берег Рейна (восточная часть Кёльна)." },
+                //     ]
+                // },
+                meta: {
+                    title: "Прусское крепостное кольцо Кёльна – форты XIX века и оборонительная система города",
+                    description: "Прусское крепостное кольцо Кёльна – это система из 12 фортов XIX века, окружавших город. Узнайте историю фортификаций, их современное состояние и где сегодня можно увидеть сохранившиеся укрепления, парковые зоны и переоборудованные форты.",
+                    ogTitle: "Прусское крепостное кольцо Кёльна – прогулка по фортам XIX века",
+                    ogDescription: "Откройте для себя форты Кёльна: от жилого Fort VI Deckstein до скрытых в парках укреплений. История прусской оборонительной системы и её следы в современном городе.",
+                    keywords: "Прусское крепостное кольцо Кёльна, Festung Köln, форты Кёльна, Fort I Köln, Fort II Köln, Fort III Köln, Fort IV Köln, Fort V Köln, Fort VI Deckstein, Fort VII Köln, Fort VIII Köln, Fort IX Köln, Fort X Köln, Fort XI Köln, Fort XII Köln, крепости Кёльна, фортификация Кёльн, военная архитектура Германия, достопримечательности Кёльна, исторические сооружения Кёльна, Grüngürtel Köln",
+                    ogImage: "Germany/nrw/koln/koln-city/prussian_fortress_ring/006.jpg"
+                }
+            },
+            ua: {
+                name: "Прусська фортифікаційна система Кельна",
+                location: "Кельн, Німеччина",
+                short_description: "Прусська фортифікаційна система Кельна – це комплекс оборонних споруд XIX століття, що включає два кільця фортів, збудованих Пруссією навколо міста для його захисту. Сьогодні форти збереглися в різному стані: частина використовується як житлові та громадські простори, частина перетворена на зелені зони, а частина частково збереглася або була втрачена.",
+                full_description: {
+                    title: "Опис та історія",
+                    items: [
+                        { text: "Після включення Кельна до складу Пруссії у 1815 році місто отримало стратегічне значення як прикордонна фортеця на Рейні. На основі більш ранніх укріплень, включаючи середньовічні та частково римські оборонні споруди, було закладено систему нового оборонного кільця." },
+                        { text: "У XIX столітті ця система була значно розширена та набула дворівневої структури. Навколо міста сформувалися два пояси укріплень – внутрішній і зовнішній. Внутрішнє кільце, модернізоване у першій половині XIX століття на основі більш ранніх фортифікацій, розташовувалося поблизу міської межі та включало 12 основних фортів." },
+                        { text: "У зв’язку з розвитком артилерії та необхідністю винести лінію оборони далі від міста, у період з 1873 по 1886 рік було збудовано зовнішнє фортифікаційне кільце довжиною близько 46 кілометрів. Воно також складалося з 12 основних фортів, розміщених на значній відстані від центру Кельна та з’єднаних між собою дорогами, валами та проміжними укріпленнями." },
+                        { text: "Окрім основних фортів, оборонна система включала численні додаткові споруди – редути, батареї та так звані проміжні укріплення (Zwischenwerke). Загалом комплекс налічував понад 180 об’єктів, утворюючи одну з найбільших фортифікаційних систем Пруссії. Форти будувалися переважно з цегли із земляними насипами та були розраховані на тривалу оборону і артилерійські обстріли." },
+                        { text: "Однак стрімкий розвиток артилерії у другій половині XIX століття швидко знизив ефективність подібних укріплень, і вже наприкінці XIX століття частина споруд вважалася застарілою. Після Першої світової війни значна частина фортифікаційної системи була демонтована або втратила своє військове значення." },
+                        { text: "Сьогодні колишні лінії укріплень частково збігаються із зеленим поясом міста (Grüngürtel) та трасою Militärringstraße, зберігаючи сліди прусської оборонної системи в сучасному міському ландшафті." },
+                    ]
+                },
+                subObjects_title: "Деякі форти Кельна (внутрішнє фортифікаційне кільце)",
+                subObjects_title2: "Деякі форти Кельна (зовнішнє фортифікаційне кільце)",
+                // sub_objects: {
+                //     title: "Форти Кельна та їхній сучасний стан",
+                //     items: [
+                //         {
+                //             bold: "Форт II",
+                //             text: "був частиною внутрішнього прусського оборонного кільця Кельна, збудованого в неопрусському стилі приблизно за 500 метрів від існуючої міської стіни. Будівництво форту розпочалося у 1816 році та завершилося у грудні 1821 року, тому він належить до першої будівельної серії укріплень. <br>На відміну від фортів другої черги, Форт II отримав не лише номер, але й почесну назву – «Великий князь Микола Російський», затверджену королем Фрідріхом Вільгельмом III. Як і у більшості укріплень внутрішнього кільця, оригінальні будівельні плани не збереглися, однак його структура частково реконструюється за картами та за аналогією зі збереженими фортами. <br>Форт мав полігональну форму приблизно 100×100 метрів, був оточений сухим ровом глибиною близько 4 метрів і шириною близько 10 метрів. У конструкції були казематовані приміщення для гарнізону та боєприпасів, редут із двома поверхами, капоніри для флангової оборони та артилерійські позиції, а також додаткові оборонні споруди. Гарнізон налічував близько 250 осіб. <br>Форт II розташовувався на місці сучасного товарного вокзалу Bonntor і був винесений далі від міської стіни порівняно з більшістю інших укріплень, що порушувало симетрію оборонного кільця. Через це він не був включений до пізнішої системи внутрішньої модернізації укріплень. <br>Військове використання форту завершилося у 1880-х роках, а остаточний демонтаж відбувся в середині 1930-х років. Сьогодні на місцевості не збереглося видимих слідів цього укріплення. <br><b>Стан:</b> втрачений. <br><b>Де:</b> у районі Bayenthal, у південній частині Кельна."
+                //         },
+                //         {
+                //             bold: "Форт III",
+                //             text: "був частиною внутрішнього прусського оборонного кільця Кельна, збудованого в неопрусському стилі приблизно за 500 метрів від існуючої міської стіни. Будівництво перших укріплень розпочалося у 1816 році, однак форти з непарними номерами, включаючи Форт III, були реалізовані на другому етапі будівництва між 1841 і 1847 роками. Роботи над Фортом III розпочалися у 1843 році. <br>Форт був розрахований на гарнізон близько 178 солдатів. За своєю плануванням він відповідав фортифікаційним спорудам другої серії та мав менш гострі контури з боку можливого противника, ніж форти першої черги. <br>Форт III розташовувався в районі сучасної вулиці Bonner Wall. На відміну від більшості інших укріплень, він не був повністю включений до нової міської оборонної лінії 1882 року і опинився трохи позаду неї. <br>Згодом форт був переобладнаний у військову тюремну споруду: до редюїту були добудовані блоки камер. Військове використання тривало до кінця XIX – початку XX століття. <br>Остаточний демонтаж Форту III відбувся у 1960-х роках. Сьогодні на місцевості не збереглося видимих слідів цього укріплення. <br><b>Стан:</b> втрачений. <br><b>Де:</b> район Neustadt-Süd, у районі вулиці Bonner Wall (південна частина Кельна)"
+                //         },
+                //         {
+                //             img: "Germany/nrw/koln/koln-city/prussian_fortress_ring/004.jpg", alt: "Fort IV",
+                //             bold: "Форт IV",
+                //             text: "був збудований між 1874 і 1876 роками та був одним із великих фортів зовнішнього прусського оборонного кільця Кельна на лівому березі Рейну. За своїми розмірами він порівнюється лише з фортами V і VII, тоді як інші укріплення належали до середнього типу. Його параметри становили приблизно 210 метрів у глибину та 330 метрів у ширину, при цьому форт мав строго симетричне планування. <br>Форт був спроєктований як артилерійське укріплення з підтримкою піхоти. У наступні роки він модернізувався: посилювалися перекриття бетоном, встановлювалися броньовані спостережні куполи та зміцнювалися оборонні споруди. <br>З 1909 по 1914 рік у форті розміщувався 3-й Кельнський батальйон дирижаблів, після чого його було переведено до нових казарм у Бікендорфі. <br>Після Першої світової війни, у 1921–1922 роках, більша частина форту була демонтована відповідно до Версальського договору, однак частина казармених будівель збереглася. Згодом територію перепрофілювали: тут з’явилися спортивні майданчики, навчальні та міські служби. <br>Під час Другої світової війни форт знову використовувався у військових цілях: у його підземних приміщеннях розміщувалися командні та захисні споруди протиповітряної оборони, а частина комплексу слугувала укриттям для цивільного населення. Сьогодні територія використовується переважно як спортивний та господарський об’єкт міста. <br><b>Стан:</b> частково збережений / адаптований. <br><b>Розташування:</b> західний Grüngürtel."
+                //         },
+                //         {
+                //             img: "Germany/nrw/koln/koln-city/prussian_fortress_ring/005.jpg", alt: "Fort V",
+                //             bold: "Форт V",
+                //             text: "був частиною внутрішнього прусського оборонного кільця Кельна, збудованого в неопрусському стилі приблизно за 500 метрів від існуючої міської стіни. Перші укріплення почали зводити з 1816 року, однак форти з непарними номерами, включаючи Форт V, були побудовані на другому етапі будівництва між 1841 і 1847 роками. Роботи над фортом розпочалися у 1843 році та завершилися у 1847 році. <br>Форт V не отримав додаткової назви, що було типовим для укріплень другої будівельної серії. За своєю архітектурою він являв перехідний тип: із більш збалансованою геометрією фасів і флангів, на відміну від більш загострених форм ранніх фортів. <br>На відміну від початкових планів, нова лінія укріплень лівого берега, збудована у 1882 році, пройшла перед фортом, через що він не був включений до оновленої оборонної системи та втратив своє військове значення. <br>У 1880-х роках форт був виведений із військового використання і у 1886 році перейшов у власність міста. Центральна споруда (редюїт) була переобладнана під адміністративні та лабораторні приміщення Августівської лікарні. <br>Надалі будівля використовувалася як їдальня, а потім як хімічний інститут. Під час Другої світової війни форт сильно постраждав від бомбардувань, і від нього залишилися лише руїни. <br>У 2002–2004 роках редюїт був повністю відновлений і сьогодні використовується Географічним інститутом Кельнського університету, залишаючись одним із небагатьох збережених елементів цього форту. <br><b>Стан:</b> частково збережений / адаптований. <br><b>Де:</b> район Müngersdorf, поруч із зеленим поясом Grüngürtel (західна частина Кельна)."
+                //         },
+                //         { img: "Germany/nrw/koln/koln-city/prussian_fortress_ring/006.jpg", alt: "Fort VI Deckstein", bold: "Fort VI Deckstein", text: "є одним із найкраще збережених фортів системи. Після втрати військового значення був частково адаптований під житло та громадські функції. Сьогодні всередині знаходяться житлові приміщення та об’єднання мешканців (Verein), а внутрішній двір використовується як громадський простір. <br><b>Стан:</b> житловий / адаптований. <br><b>Де:</b> район Deckstein, поруч із Decksteiner Weiher (західний Кельн)." },
+                //         { bold: "Fort VII", text: "– збереглися окремі фрагменти стін та укріплень, більша частина споруди втрачена. <br><b>Стан:</b> руїни / фрагменти. <br><b>Де:</b> район Lindenthal, поруч із Grüngürtel (західна частина Кельна)." },
+                //         { bold: "Fort VIII", text: "– від форту збереглися лише мінімальні елементи, структура майже не читається. <br><b>Стан:</b> частково втрачений. <br><b>Де:</b> район Sülz, західний сектор фортифікаційного кільця." },
+                //         {
+                //             img: "Germany/nrw/koln/koln-city/prussian_fortress_ring/009.jpg", alt: "Fort IX",
+                //             bold: "Fort IX",
+                //             text: "– частково збережений форт із розпізнаваними цегляними спорудами та елементами оборонної структури. Частина комплексу втрачена або прихована в ландшафті, однак основні об’єми ще читаються. <br><b>Стан:</b> частково збережений / фрагменти. <br><b>Де:</b> район Zollstock, південний захід Кельна."
+                //         },
+                //         { img: "Germany/nrw/koln/koln-city/prussian_fortress_ring/010.jpg", alt: "Fort X", bold: "Fort X", text: "зберігся краще за багато інших фортів і був частково переобладнаний. Сьогодні він оточений парковою зоною та використовується як громадський простір, зберігаючи при цьому оригінальну структуру прусського укріплення. <br><b>Стан:</b> частково переобладнаний. <br><b>Де:</b> район Raderberg, південна частина Кельна." },
+                //         {
+                //             img: "Germany/nrw/koln/koln-city/prussian_fortress_ring/011.jpg",
+                //             alt: "Fort XI",
+                //             bold: "Fort XI",
+                //             text: "– збережений форт з окремими цегляними спорудами та фрагментами оборонної структури. Хоча значна частина комплексу втрачена або перебудована, елементи фортифікаційної архітектури залишаються добре впізнаваними в ландшафті. <br><b>Стан:</b> частково збережений / фрагменти. <br><b>Де:</b> район Bayenthal / Marienburg, південний сектор Кельна."
+                //         },
+                //         { bold: "Fort XII", text: "– один із фортів східного сектора, частково зберігся та використовується обмежено. <br><b>Стан:</b> частково збережений / адаптований. <br><b>Де:</b> район Deutz, правий берег Рейну (східна частина Кельна)." }
+                //     ]
+                // },
+                meta: {
+                    title: "Прусське фортифікаційне кільце Кельна – форти XIX століття та оборонна система міста",
+                    description: "Прусське фортифікаційне кільце Кельна – це система з 12 фортів XIX століття, що оточували місто. Дізнайтеся історію фортифікацій, їх сучасний стан і де сьогодні можна побачити збережені укріплення, паркові зони та переобладнані форти.",
+                    ogTitle: "Прусське фортифікаційне кільце Кельна – подорож фортами XIX століття",
+                    ogDescription: "Відкрийте для себе форти Кельна: від житлового Fort VI Deckstein до прихованих у парках укріплень. Історія прусської оборонної системи та її сліди в сучасному місті.",
+                    keywords: "Прусське фортифікаційне кільце Кельна, форти Кельна, Fort I Köln, Fort II Köln, Fort III Köln, Fort IV Köln, Fort V Köln, Fort VI Deckstein, Fort VII Köln, Fort VIII Köln, Fort IX Köln, Fort X Köln, Fort XI Köln, Fort XII Köln, фортифікації Кельна, військова архітектура Німеччини, визначні місця Кельна, історичні споруди Кельна, Grüngürtel Köln",
+                    ogImage: "Germany/nrw/koln/koln-city/prussian_fortress_system/006.jpg"
+                }
+            },
+            de: {
+                name: "Preußisches Festungssystem Köln",
+                location: "Köln, Deutschland",
+                short_description: "Das preußische Festungssystem von Köln ist ein Komplex von Verteidigungsanlagen des 19. Jahrhunderts, bestehend aus zwei Ringen von Forts, die von Preußen zur Verteidigung der Stadt errichtet wurden. Heute sind die Forts unterschiedlich erhalten: ein Teil wird als Wohn- und öffentliche Räume genutzt, ein Teil wurde zu Grünflächen umgestaltet, und ein Teil ist nur teilweise erhalten oder verloren gegangen.",
+                full_description: {
+                    title: "Beschreibung und Geschichte",
+                    items: [
+                        { text: "Nach der Eingliederung Kölns in das Königreich Preußen im Jahr 1815 erhielt die Stadt eine strategische Bedeutung als Grenzfestung am Rhein. Auf der Grundlage älterer Befestigungen, darunter mittelalterliche und teilweise römische Verteidigungsanlagen, wurde ein neues System eines Befestigungsrings angelegt." },
+                        { text: "Im 19. Jahrhundert wurde dieses System erheblich erweitert und erhielt eine zweistufige Struktur. Rund um die Stadt entstanden zwei Befestigungsgürtel – ein innerer und ein äußerer Ring. Der innere Ring, der in der ersten Hälfte des 19. Jahrhunderts auf Basis älterer Befestigungen modernisiert wurde, lag in unmittelbarer Nähe der Stadtgrenze und umfasste 12 Hauptforts." },
+                        { text: "Aufgrund der Entwicklung der Artillerie und der Notwendigkeit, die Verteidigungslinie weiter von der Stadt zu verlegen, wurde in den Jahren 1873 bis 1886 ein äußerer Festungsring mit einer Länge von etwa 46 Kilometern errichtet. Dieser bestand ebenfalls aus 12 Hauptforts, die in größerer Entfernung vom Stadtzentrum Kölns lagen und durch Straßen, Wälle sowie Zwischenwerke miteinander verbunden waren." },
+                        { text: "Neben den Hauptforts umfasste das Verteidigungssystem zahlreiche zusätzliche Anlagen – Redouten, Batterien sowie sogenannte Zwischenwerke. Insgesamt zählte das System mehr als 180 Objekte und bildete eine der größten Festungsanlagen Preußens. Die Forts wurden überwiegend aus Ziegeln mit Erdaufschüttungen errichtet und waren für eine langfristige Verteidigung sowie für Artilleriebeschuss ausgelegt." },
+                        { text: "Die rasante Entwicklung der Artillerie in der zweiten Hälfte des 19. Jahrhunderts verringerte jedoch schnell die Wirksamkeit solcher Befestigungen, sodass ein Teil der Anlagen bereits gegen Ende des 19. Jahrhunderts als veraltet galt. Nach dem Ersten Weltkrieg wurde ein großer Teil der Festungsanlagen abgebaut oder verlor seine militärische Bedeutung." },
+                        { text: "Heute verlaufen die ehemaligen Befestigungslinien teilweise entlang des Grüngürtels der Stadt sowie der Militärringstraße und bewahren Spuren der preußischen Verteidigungsanlagen im modernen Stadtbild." },
+                    ]
+                },
+                subObjects_title: "Einige Kölner Forts (innerer Festungsring)",
+                subObjects_title2: "Einige Kölner Forts (äußerer Festungsring)",
+                // sub_objects: {
+                //     title: "Die Kölner Forts und ihr heutiger Zustand",
+                //     items: [
+                //         {
+                //             bold: "Fort II",
+                //             text: "war Teil des inneren preußischen Festungsrings von Köln, der im neupreußischen Stil etwa 500 Meter von der bestehenden Stadtmauer entfernt errichtet wurde. Der Bau des Forts begann im Jahr 1816 und wurde im Dezember 1821 abgeschlossen, weshalb es zur ersten Bauphase der Befestigungen gehört. <br>Im Gegensatz zu den Forts der zweiten Bauphase erhielt Fort II nicht nur eine Nummer, sondern auch einen Ehrennamen – „Großfürst Nikolaus von Russland“, der von König Friedrich Wilhelm III. persönlich festgelegt wurde. Wie bei den meisten Befestigungen des inneren Rings sind die ursprünglichen Baupläne nicht erhalten, jedoch lässt sich seine Struktur teilweise anhand von Karten und durch Vergleich mit erhaltenen Forts rekonstruieren. <br>Das Fort hatte einen polygonalen Grundriss von etwa 100×100 Metern und war von einem trockenen Graben mit etwa 4 Metern Tiefe und rund 10 Metern Breite umgeben. Die Anlage umfasste kasemattierte Räume für Garnison und Munition, ein zweigeschossiges Reduit, Kaponniere zur Flankenverteidigung sowie Artilleriestellungen und zusätzliche Verteidigungsanlagen. Die Besatzung betrug etwa 250 Mann. <br>Fort II befand sich an der Stelle des heutigen Güterbahnhofs Bonntor und lag im Vergleich zu den meisten anderen Befestigungen weiter vor der Stadtmauer, wodurch die Symmetrie des Festungsrings in diesem Bereich unterbrochen wurde. Aus diesem Grund wurde es nicht in die spätere innere Modernisierung der Befestigungsanlagen einbezogen. <br>Die militärische Nutzung des Forts endete in den 1880er Jahren, der endgültige Abriss erfolgte Mitte der 1930er Jahre. Heute sind keine sichtbaren Spuren dieser Befestigung im Gelände erhalten. <br><b>Zustand:</b> verloren. <br><b>Lage:</b> im Stadtteil Bayenthal, im südlichen Teil von Köln."
+                //         },
+                //         {
+                //             bold: "Fort III",
+                //             text: "war Teil des inneren preußischen Festungsrings von Köln, der im neupreußischen Stil etwa 500 Meter vor der bestehenden Stadtmauer errichtet wurde. Der Bau der ersten Befestigungen begann im Jahr 1816, jedoch wurden die Forts mit ungeraden Nummern, einschließlich Fort III, in der zweiten Bauphase zwischen 1841 und 1847 errichtet. Die Arbeiten am Fort III begannen im Jahr 1843. <br>Das Fort war für eine Besatzung von etwa 178 Soldaten ausgelegt. In seiner Planung entsprach es den Befestigungen der zweiten Baureihe und wies auf der feindseitigen Seite weniger spitz zulaufende Konturen auf als die Forts der ersten Bauphase. <br>Fort III befand sich im Bereich der heutigen Straße Bonner Wall. Im Gegensatz zu den meisten anderen Befestigungen wurde es nicht vollständig in die neue Stadtbefestigungslinie von 1882 integriert und lag etwas hinter dieser zurück. <br>Später wurde das Fort zu einer militärischen Gefängnisanlage umgebaut: An das Reduit wurden Zellblöcke angebaut. Die militärische Nutzung dauerte bis zum Ende des 19. bzw. Anfang des 20. Jahrhunderts. <br>Der endgültige Abriss von Fort III erfolgte in den 1960er Jahren. Heute sind keine sichtbaren Spuren dieser Befestigung im Gelände erhalten. <br><b>Zustand:</b> verloren. <br><b>Lage:</b> Stadtteil Neustadt-Süd, im Bereich der Straße Bonner Wall (südlicher Teil von Köln)."
+                //         },
+                //         {
+                //             img: "Germany/nrw/koln/koln-city/prussian_fortress_ring/004.jpg", alt: "Fort IV",
+                //             bold: "Fort IV",
+                //             text: "wurde zwischen 1874 und 1876 erbaut und war eines der großen Forts des äußeren preußischen Festungsrings von Köln am linken Rheinufer. In seiner Größe ist es nur mit den Forts V und VII vergleichbar, während die übrigen Befestigungen dem mittleren Typ zugeordnet wurden. Seine Abmessungen betrugen etwa 210 Meter in der Tiefe und 330 Meter in der Breite, wobei das Fort eine streng symmetrische Anlage aufwies. <br>Das Fort wurde als Artilleriebefestigung mit Unterstützung durch Infanterie entworfen. In den folgenden Jahren wurde es modernisiert: Decken wurden mit Beton verstärkt, gepanzerte Beobachtungskuppeln installiert und Verteidigungsanlagen ausgebaut. <br>Von 1909 bis 1914 war im Fort das 3. Kölner Luftschifferbataillon stationiert, bevor es in neue Kasernen in Bickendorf verlegt wurde. <br>Nach dem Ersten Weltkrieg wurde der größte Teil des Forts in den Jahren 1921–1922 gemäß dem Versailler Vertrag abgetragen, wobei Teile der Kasernengebäude erhalten blieben. Später wurde das Gelände umgenutzt: Es entstanden Sportanlagen, Ausbildungsstätten und städtische Einrichtungen. <br>Im Zweiten Weltkrieg wurde das Fort erneut militärisch genutzt: In den unterirdischen Räumen befanden sich Kommandostellen und Einrichtungen der Luftverteidigung, außerdem diente ein Teil der Anlage als Schutzraum für die Zivilbevölkerung. Heute wird das Gelände überwiegend als Sport- und Betriebsfläche der Stadt genutzt. <br><b>Zustand:</b> teilweise erhalten / umgenutzt. <br><b>Lage:</b> westlicher Grüngürtel."
+                //         },
+                //         {
+                //             img: "Germany/nrw/koln/koln-city/prussian_fortress_ring/005.jpg", alt: "Fort V",
+                //             bold: "Fort V",
+                //             text: "war Teil des inneren preußischen Festungsrings von Köln, der im neupreußischen Stil etwa 500 Meter vor der bestehenden Stadtmauer errichtet wurde. Die ersten Befestigungen wurden ab 1816 gebaut, jedoch wurden die Forts mit ungeraden Nummern, einschließlich Fort V, erst in der zweiten Bauphase zwischen 1841 und 1847 errichtet. Die Arbeiten am Fort begannen im Jahr 1843 und wurden 1847 abgeschlossen. <br>Fort V erhielt keinen zusätzlichen Namen, was typisch für die Befestigungen der zweiten Baureihe war. In seiner Architektur stellte es einen Übergangstyp dar: mit einer ausgewogeneren Geometrie von Facen und Flanken im Vergleich zu den spitzeren Formen der frühen Forts. <br>Entgegen den ursprünglichen Planungen verlief die neue linksrheinische Befestigungslinie von 1882 vor dem Fort, wodurch es nicht in das modernisierte Verteidigungssystem einbezogen wurde und seine militärische Bedeutung verlor. <br>In den 1880er Jahren wurde das Fort aus der militärischen Nutzung genommen und ging 1886 in städtischen Besitz über. Das zentrale Bauwerk (Reduit) wurde zu Verwaltungs- und Laborräumen des Augustahospitals umgebaut. <br>Später wurde das Gebäude als Mensa und anschließend als chemisches Institut genutzt. Während des Zweiten Weltkriegs wurde das Fort durch Luftangriffe stark beschädigt, sodass nur noch Ruinen übrig blieben. <br>In den Jahren 2002–2004 wurde das Reduit vollständig restauriert und wird heute vom Geographischen Institut der Universität zu Köln genutzt. Es ist eines der wenigen erhaltenen Elemente dieses Forts. <br><b>Zustand:</b> teilweise erhalten / umgenutzt. <br><b>Lage:</b> Stadtteil Müngersdorf, in der Nähe des Grüngürtels (westlicher Teil von Köln)."
+                //         },
+                //         { img: "Germany/nrw/koln/koln-city/prussian_fortress_ring/006.jpg", alt: "Fort VI Deckstein", bold: "Fort VI Deckstein", text: "gehört zu den am besten erhaltenen Forts des Systems. Nach dem Verlust seiner militärischen Funktion wurde es teilweise in Wohn- und Gemeinschaftsnutzung umgewandelt. Heute befinden sich dort Wohnungen und ein Verein, der Innenhof wird gemeinschaftlich genutzt. <br><b>Zustand:</b> Wohnnutzung / angepasst. <br><b>Ort:</b> Deckstein, nahe Decksteiner Weiher (Westen Kölns)." },
+                //         { bold: "Fort VII", text: "– nur Fragmente von Mauern und Befestigungen erhalten, der Großteil ist verloren. <br><b>Zustand:</b> Ruinen / Fragmente. <br><b>Ort:</b> Lindenthal, nahe Grüngürtel (Westen Kölns)." },
+                //         { bold: "Fort VIII", text: "– nur minimale Reste erhalten, die Struktur ist kaum erkennbar. <br><b>Zustand:</b> teilweise verloren. <br><b>Ort:</b> Sülz, westlicher Sektor des Festungsrings." },
+                //         {
+                //             img: "Germany/nrw/koln/koln-city/prussian_fortress_ring/009.jpg",
+                //             alt: "Fort IX",
+                //             bold: "Fort IX",
+                //             text: "– teilweise erhaltenes Fort mit erkennbaren Ziegelbauten und Elementen der Verteidigungsstruktur. Ein Teil des Komplexes ist verloren oder im Gelände verborgen, jedoch sind die Hauptvolumen noch erkennbar. <br><b>Zustand:</b> teilweise erhalten / Fragmente. <br><b>Ort:</b> Stadtteil Zollstock, Südwesten Kölns."
+                //         },
+                //         { img: "Germany/nrw/koln/koln-city/prussian_fortress_ring/010.jpg", alt: "Fort X", bold: "Fort X", text: "– eines der am besten erhaltenen Forts, teilweise umgebaut und heute öffentlich genutzt. Die ursprüngliche Struktur ist weiterhin sichtbar. <br><b>Zustand:</b> teilweise umgenutzt. <br><b>Ort:</b> Raderberg, Süden Kölns." },
+                //         {
+                //             img: "Germany/nrw/koln/koln-city/prussian_fortress_ring/011.jpg",
+                //             alt: "Fort XI",
+                //             bold: "Fort XI",
+                //             text: "– erhaltenes Fort mit einzelnen Ziegelbauwerken und Fragmenten der Verteidigungsstruktur. Obwohl ein großer Teil des Komplexes verloren gegangen oder umgebaut wurde, sind Elemente der Festungsarchitektur im Gelände weiterhin gut erkennbar. <br><b>Zustand:</b> teilweise erhalten / Fragmente. <br><b>Ort:</b> Stadtteil Bayenthal / Marienburg, südlicher Sektor Kölns."
+                //         },
+                //         { bold: "Fort XII", text: "– eines der Forts im östlichen Sektor, teilweise erhalten und eingeschränkt genutzt. <br><b>Zustand:</b> teilweise erhalten / angepasst. <br><b>Ort:</b> Deutz, rechtsrheinisch (Osten Kölns)." }
+                //     ]
+                // },
+                meta: {
+                    title: "Preußischer Festungsring Köln – Festungen des 19. Jahrhunderts und Verteidigungssystem der Stadt",
+                    description: "Der Preußische Festungsring Köln ist ein System aus 12 Festungen des 19. Jahrhunderts, die die Stadt umgaben. Entdecken Sie die Geschichte der Befestigungen, ihren heutigen Zustand und wo man erhaltene Anlagen, Parkflächen und umgenutzte Forts heute sehen kann.",
+                    ogTitle: "Preußischer Festungsring Köln – eine Reise zu den Festungen des 19. Jahrhunderts",
+                    ogDescription: "Entdecken Sie die Kölner Forts: vom bewohnten Fort VI Deckstein bis zu versteckten Anlagen im Grüngürtel. Die Geschichte des preußischen Verteidigungssystems und seine Spuren in der heutigen Stadt.",
+                    keywords: "Preußischer Festungsring Köln, Festung Köln, Kölner Forts, Fort I Köln, Fort II Köln, Fort III Köln, Fort IV Köln, Fort V Köln, Fort VI Deckstein, Fort VII Köln, Fort VIII Köln, Fort IX Köln, Fort X Köln, Fort XI Köln, Fort XII Köln, Befestigungen Köln, Militärarchitektur Deutschland, Sehenswürdigkeiten Köln, historische Bauwerke Köln, Grüngürtel Köln",
+                    ogImage: "Germany/nrw/koln/koln-city/prussian_fortress_system/006.jpg"
+                }
+            }
+        }
+    },
+    {
+        id: "fort_I_inner_koln",
+        type: ["historical_building"], rating: "local",
+        path: "fort_I_inner_koln",
+        countryPath: "germany", regionPath: "nrw", districtPath: "city", cityPath: "koln",
+        hiddenFromList: true, showMore: true,
+        map: "prussian_fortress_system_koln",
+        fotoCard: "Germany/nrw/koln/koln-city/prussian_fortress_system/inner/001.jpg",
+        coord: { lat: 50.91769, lng: 6.96764 },
+        translations: {
+            ru: {
+                name: "Fort I (внутреннее крепостное кольцо)",
+                short_description: "Fort I (внутреннее крепостное кольцо) – один из фортов внутреннего кольца прусской крепостной системы Кёльна. Состояние: частично сохранившееся / адаптированное.",
+                full_description: {
+                    title: "Описание и история",
+                    items: [
+                        { bold: "Fort I (внутреннее крепостное кольцо)", text: " являлся частью внутреннего кольца прусских укреплений Кёльна, построенного в характерной для прусских укреплений XIX века фортификационной архитектуре вблизи прежней городской стены. Первые работы по созданию фортификационной системы начались в 1816 году, однако сам форт был реализован во втором этапе строительства между 1841 и 1847 годами по проекту Генриха Фердинанда Шуберта." },
+                        { text: "Предшественником форта был Рейншанце (Рейнский редут), построенный в 1830 году. Он включал массивное тыльное укрепление, которое частично сохранилось до наших дней и часто ошибочно воспринимается как сам Форт I." },
+                        { text: "Гарнизон форта насчитывал около 300-400 человек и был вооружён примерно 40 орудиями. Планировка предусматривала фланговую оборону соседних укреплений, а также контроль береговой линии Рейна." },
+                        { text: "В 1882-1891 годах форт был интегрирован в в систему укреплений левого берега Рейна и получил почётное название «Наследственный великий герцог Павел Мекленбургский»." },
+                        { text: "В 1911 году форт был выведен из состава военных укреплений, так как развитие артиллерии сделало его оборонительную функцию устаревшей." },
+                        { text: "С начала XX века территория постепенно получила гражданское назначение: здесь размещались университетская столовая, военный мемориал, зенитные установки во время Второй мировой войны, налоговая служба, городское садоводство и позже молодёжный центр." },
+                        { text: "Сегодня территория входит в состав зелёного пояса Кёльна и территории парка Friedenspark и используется как общественный парк с сохранившимися элементами укреплений, включая редут, капониры и оборонительные валы." },
+                        { bold: "Состояние:", text: " частично сохранившееся / адаптированное." },
+                        { bold: "Где:", text: " район Neustadt-Süd, Friedenspark (южная часть Кёльна)." }
+                    ]
+                },
+                construction_period: "1841–1847 (на месте редута 1830 года)",
+                meta: {
+                    title: "Fort I (внутреннее крепостное кольцо Кёльна)",
+                    description: "Fort I — один из 12 фортов внутреннего крепостного кольца Кёльна, построенный в 1841–1847 годах на месте редута 1830 года в составе прусской оборонительной системы на Рейне. Состояние: частично сохранившееся, адаптированное.",
+                    ogTitle: "Fort I (внутреннее крепостное кольцо Кёльна)",
+                    ogDescription: "Fort I — исторический форт внутреннего кольца укреплений Кёльна, возведённый в 1841–1847 годах на месте более раннего редута. Часть прусской крепостной системы XIX века.",
+                    keywords: "Форт I Кёльн, внутреннее кольцо Кёльна, прусские укрепления Кёльна, крепость Кёльн, форты Кёльна, Fort I Кёльн история, крепостное кольцо Кёльна",
+                    ogImage: "https://our-travels.info/foto/Germany/nrw/koln/koln-city/prussian_fortress_system/inner/001.jpg"
+                }
+            },
+            ua: {
+                name: "Fort I (внутрішнє фортифікаційне кільце)",
+                short_description: "Fort I (внутрішнє фортифікаційне кільце) – один із фортів внутрішнього кільця прусської фортифікаційної системи Кельна. Стан: частково збережений / адаптований.",
+                full_description: {
+                    title: "Опис та історія",
+                    items: [
+                        { bold: "Fort I (внутрішнє фортифікаційне кільце)", text: " був частиною внутрішнього кільця прусських укріплень Кельна, збудованого у характерній для прусських укріплень XIX століття фортифікаційній архітектурі поблизу колишнього міського муру. Перші роботи зі створення фортифікаційної системи розпочалися у 1816 році, однак сам форт був реалізований на другому етапі будівництва між 1841 і 1847 роками за проєктом Генріха Фердинанда Шуберта." },
+                        { text: "Попередником форту був Рейншанце (Рейнський редут), збудований у 1830 році. Він включав масивне тилове укріплення, яке частково збереглося до наших днів і часто помилково сприймається як сам Форт I." },
+                        { text: "Гарнізон форту налічував близько 300–400 осіб і був озброєний приблизно 40 гарматами. Планування передбачало флангову оборону сусідніх укріплень, а також контроль берегової лінії Рейну." },
+                        { text: "У 1882–1891 роках форт був інтегрований у систему укріплень лівого берега Рейну та отримав почесну назву «Спадковий великий герцог Павло Мекленбурзький»." },
+                        { text: "У 1911 році форт був виведений зі складу військових укріплень, оскільки розвиток артилерії зробив його оборонну функцію застарілою." },
+                        { text: "З початку XX століття територія поступово отримала цивільне призначення: тут розміщувалися університетська їдальня, військовий меморіал, зенітні установки під час Другої світової війни, податкова служба, міське садівництво та пізніше молодіжний центр." },
+                        { text: "Сьогодні територія входить до складу зеленого поясу Кельна та території парку Friedenspark і використовується як громадський парк із збереженими елементами укріплень, включаючи редут, капоніри та оборонні вали." },
+                        { bold: "Стан:", text: " частково збережений / адаптований." },
+                        { bold: "Де:", text: " район Neustadt-Süd, Friedenspark (південна частина Кельна)." }
+                    ]
+                },
+                construction_period: "1841–1847 (на місці редута 1830 року)",
+                meta: {
+                    title: "Fort I (внутрішнє фортифікаційне кільце Кельна)",
+                    description: "Fort I — один із 12 фортів внутрішнього фортифікаційного кільця Кельна, збудований у 1841–1847 роках на місці редута 1830 року в складі прусської оборонної системи на Рейні. Стан: частково збережений, адаптований.",
+                    ogTitle: "Fort I внутрішнє фортифікаційне кільце Кельна)",
+                    ogDescription: "Fort I — історичний форт внутрішнього кільця укріплень Кельна, зведений у 1841–1847 роках на місці більш раннього редута. Частина прусської фортифікаційної системи XIX століття.",
+                    keywords: "Форт I Кельн, внутрішнє кільце Кельна, прусські укріплення Кельна, фортеця Кельн, форти Кельна, Fort I історія, фортифікаційне кільце Кельна",
+                    ogImage: "https://our-travels.info/foto/Germany/nrw/koln/koln-city/prussian_fortress_system/inner/001.jpg"
+                }
+            },
+            de: {
+                name: "Fort I (innerer Festungsring)",
+                short_description: "Fort I (innerer Festungsring) – eines der Forts des inneren Rings des preußischen Festungssystems von Köln. Zustand: teilweise erhalten / umgenutzt.",
+                full_description: {
+                    title: "Beschreibung und Geschichte",
+                    items: [
+                        { bold: "Fort I (innerer Festungsring)", text: " war Teil des inneren Rings der preußischen Befestigungen von Köln, errichtet in der für die preußischen Festungsanlagen des 19. Jahrhunderts typischen Befestigungsarchitektur in der Nähe der ehemaligen Stadtmauer. Die ersten Arbeiten zur Errichtung des Festungssystems begannen im Jahr 1816, das Fort selbst wurde jedoch in der zweiten Bauphase zwischen 1841 und 1847 nach einem Entwurf von Heinrich Ferdinand Schubert ausgeführt." },
+                        { text: "Vorgänger des Forts war die Rhein-Schanze (Rheinischer Reduit), die im Jahr 1830 errichtet wurde. Sie umfasste ein massives rückwärtiges Befestigungselement, das teilweise bis heute erhalten ist und häufig fälschlicherweise als das eigentliche Fort I angesehen wird." },
+                        { text: "Die Garnison des Forts umfasste etwa 300–400 Mann und war mit rund 40 Geschützen ausgestattet. Die Anlage war so konzipiert, dass sie die Flankierung benachbarter Befestigungen sowie die Kontrolle des Rheinufers ermöglichte." },
+                        { text: "In den Jahren 1882–1891 wurde das Fort in das Befestigungssystem des linken Rheinufers integriert und erhielt den Ehrennamen „Erbgroßherzog Paul von Mecklenburg“." },
+                        { text: "Im Jahr 1911 wurde das Fort aus dem militärischen Verband entlassen, da die Entwicklung der Artillerie seine Verteidigungsfunktion überholt hatte." },
+                        { text: "Seit Beginn des 20. Jahrhunderts erhielt das Gelände schrittweise eine zivile Nutzung: Es befanden sich dort unter anderem eine Mensa, ein Kriegerdenkmal, Flugabwehrstellungen während des Zweiten Weltkriegs, eine Steuerbehörde, eine städtische Gärtnerei und später ein Jugendzentrum." },
+                        { text: "Heute gehört das Gelände zum Kölner Grüngürtel sowie zum Friedenspark und wird als öffentlicher Park genutzt, in dem Teile der Befestigungsanlagen wie das Reduit, Kaponniere und Wälle erhalten geblieben sind." },
+                        { bold: "Zustand:", text: " teilweise erhalten / umgenutzt." },
+                        { bold: "Lage:", text: " Stadtteil Neustadt-Süd, Friedenspark (südlicher Teil von Köln)." }
+                    ]
+                },
+                construction_period: "1841–1847 (auf dem Standort der Schanze von 1830)",
+                meta: {
+                    title: "Fort I (innerer Festungsring Köln)",
+                    description: "Fort I — eines der 12 Forts des inneren Festungsrings von Köln, errichtet in den Jahren 1841–1847 auf dem Standort einer Schanze von 1830 als Teil des preußischen Festungssystems am Rhein. Zustand: teilweise erhalten, umgenutzt.",
+                    ogTitle: "Fort I (innerer Festungsring Köln)",
+                    ogDescription: "Fort I — historisches Fort des inneren Befestigungsrings von Köln, errichtet 1841–1847 auf dem Standort einer älteren Schanze. Teil des preußischen Festungssystems des 19. Jahrhunderts.",
+                    keywords: "Fort I Köln, innerer Festungsring Köln, preußische Befestigungen Köln, Festung Köln, Kölner Forts, Fort I Geschichte, Festungssystem Köln",
+                    ogImage: "https://our-travels.info/foto/Germany/nrw/koln/koln-city/prussian_fortress_system/inner/001.jpg"
+                }
+            },
+        }
+    },
+    {
+        id: "fort_II_inner_koln",
+        type: ["historical_building"], rating: "local",
+        path: "fort_II_inner_koln",
+        countryPath: "germany", regionPath: "nrw", districtPath: "city", cityPath: "koln",
+        hiddenFromList: true, showMore: true,
+        map: "prussian_fortress_system_koln",
+        coord: { lat: 50.91404, lng: 6.95909 },
+        translations: {
+            ru: {
+                name: "Fort II (внутреннее крепостное кольцо)",
+                short_description: "Fort II (внутреннее крепостное кольцо) – один из фортов внутреннего кольца прусской крепостной системы Кёльна. Состояние: утраченный.",
+                full_description: {
+                    title: "Описание и история",
+                    items: [
+                        { bold: "Fort II (внутреннее крепостное кольцо)", text: " являлся частью внутреннего прусского оборонительного кольца Кёльна, построенного в начале XIX века в характерной для того времени фортификационной архитектуре примерно в 500 метрах от городской стены. Строительство форта началось в 1816 году и было завершено в декабре 1821 года, что относит его к первой строительной серии укреплений." },
+                        { text: "В отличие от фортов последующих этапов, Fort II получил не только номер, но и почётное имя «Великий князь Николай Российский», утверждённое королём Фридрихом Вильгельмом III." },
+                        { text: "Форт имел полигональную форму примерно 100×100 метров и был окружён сухим рвом глубиной около 4 метров и шириной около 10 метров. Внутри располагались казематированные помещения для гарнизона и боеприпасов, редут, капониры для фланговой обороны и артиллерийские позиции." },
+                        { text: "Гарнизон форта насчитывал около 250 человек. Его планировка включала элементы круговой обороны и автономного функционирования в условиях осады." },
+                        { text: "Fort II располагался в районе современного грузового вокзала Bonntor в южной части Кёльна. Его расположение было более удалённым от городской стены по сравнению с другими фортами внутреннего кольца, что нарушало общую симметрию оборонительной системы." },
+                        { text: "В связи с этим он не был включён в последующие этапы модернизации внутреннего кольца укреплений." },
+                        { text: "Военное использование форта завершилось в 1880-х годах, а окончательный снос был произведён в середине 1930-х годов. В настоящее время на местности не сохранилось видимых следов укрепления." },
+                        { bold: "Состояние:", text: " утраченный." },
+                        { bold: "Где:", text: " район Bayenthal, южная часть Кёльна." }
+                    ]
+                },
+                construction_period: "1816–1821",
+                meta: {
+                    title: "Fort II (внутреннее крепостное кольцо Кёльна)",
+                    description: "Fort II – один из ранних фортов внутреннего крепостного кольца Кёльна, построенный в 1816–1821 годах в составе прусской оборонительной системы. Получил почётное имя «Великий князь Николай Российский». В настоящее время утраченный.",
+                    ogTitle: "Fort II (внутреннее крепостное кольцо Кёльна)",
+                    ogDescription: "Fort II – исторический форт внутреннего кольца укреплений Кёльна, построенный в 1816–1821 годах. Один из первых объектов прусской крепостной системы XIX века. Утраченный.",
+                    keywords: "Форт II Кёльн, Fort II Köln, внутреннее крепостное кольцо Кёльна, прусская крепость Кёльна, Fort II история, Festung Köln, утраченные форты Кёльна, Великий князь Николай Российский",
+                    ogImage: ""
+                }
+            },
+            ua: {
+                name: "Fort II (внутрішнє фортифікаційне кільце)",
+                short_description: "Fort II (внутрішнє фортифікаційне кільце) – один із фортів внутрішнього кільця прусської фортифікаційної системи Кельна. Стан: втрачений.",
+                full_description: {
+                    title: "Опис та історія",
+                    items: [
+                        { bold: "Fort II (внутрішнє фортифікаційне кільце)", text: " був частиною внутрішнього прусського оборонного кільця Кельна, збудованого на початку XIX століття у характерній для того часу фортифікаційній архітектурі приблизно за 500 метрів від міського муру. Будівництво форту розпочалося у 1816 році і було завершене у грудні 1821 року, що відносить його до першої будівельної серії укріплень." },
+                        { text: "На відміну від фортів наступних етапів, Fort II отримав не лише номер, але й почесну назву «Великий князь Микола Російський», затверджену королем Фрідріхом Вільгельмом III." },
+                        { text: "Форт мав полігональну форму приблизно 100×100 метрів і був оточений сухим ровом глибиною близько 4 метрів та шириною близько 10 метрів. Усередині розташовувалися казематовані приміщення для гарнізону та боєприпасів, редут, капоніри для флангової оборони та артилерійські позиції." },
+                        { text: "Гарнізон форту налічував близько 250 осіб. Його планування передбачало елементи кругової оборони та автономного функціонування в умовах облоги." },
+                        { text: "Fort II розташовувався в районі сучасного вантажного вокзалу Bonntor у південній частині Кельна. Його розташування було більш віддаленим від міського муру порівняно з іншими фортами внутрішнього кільця, що порушувало загальну симетрію оборонної системи." },
+                        { text: "У зв’язку з цим він не був включений до наступних етапів модернізації внутрішнього фортифікаційного кільця." },
+                        { text: "Військове використання форту завершилося у 1880-х роках, а остаточний демонтаж був здійснений у середині 1930-х років. На сьогодні на місцевості не збереглося видимих слідів укріплення." },
+                        { bold: "Стан:", text: " втрачений." },
+                        { bold: "Де:", text: " район Bayenthal, південна частина Кельна." }
+                    ]
+                },
+                construction_period: "1816–1821",
+                meta: {
+                    title: "Fort II (внутрішнє фортифікаційне кільце Кельна)",
+                    description: "Fort II – один із ранніх фортів внутрішнього фортифікаційного кільця Кельна, збудований у 1816–1821 роках у складі прусської оборонної системи. Отримав почесну назву «Великий князь Микола Російський». Нині втрачений.",
+                    ogTitle: "Fort II (внутрішнє фортифікаційне кільце Кельна)",
+                    ogDescription: "Fort II – історичний форт внутрішнього кільця укріплень Кельна, збудований у 1816–1821 роках. Один із перших об’єктів прусської фортифікаційної системи XIX століття. Втрачений.",
+                    keywords: "Форт II Кельн, Fort II Köln, внутрішнє фортифікаційне кільце Кельна, прусські укріплення Кельна, Fort II історія, Festung Köln, втрачені форти Кельна, Великий князь Микола Російський",
+                    ogImage: ""
+                }
+            },
+            de: {
+                name: "Fort II (innerer Festungsring)",
+                short_description: "Fort II (innerer Festungsring) – eines der Forts des inneren Rings des preußischen Festungssystems von Köln. Zustand: verloren.",
+                full_description: {
+                    title: "Beschreibung und Geschichte",
+                    items: [
+                        { bold: "Fort II (innerer Festungsring)", text: " war Teil des inneren preußischen Verteidigungsrings von Köln, der zu Beginn des 19. Jahrhunderts in der für diese Zeit typischen Festungsarchitektur etwa 500 Meter von der Stadtmauer entfernt errichtet wurde. Der Bau des Forts begann im Jahr 1816 und wurde im Dezember 1821 abgeschlossen, wodurch es zur ersten Bauphase der Befestigungsanlagen zählt." },
+                        { text: "Im Gegensatz zu später errichteten Forts erhielt Fort II nicht nur eine Nummer, sondern auch den Ehrennamen „Großfürst Nikolai von Russland“, der von König Friedrich Wilhelm III. bestätigt wurde." },
+                        { text: "Das Fort hatte eine polygonale Form von etwa 100 × 100 Metern und war von einem trockenen Graben mit einer Tiefe von etwa 4 Metern und einer Breite von etwa 10 Metern umgeben. Innerhalb der Anlage befanden sich kasemattierte Räume für die Garnison und Munition, ein Reduit, Kaponnieren zur Flankenverteidigung sowie Artilleriestellungen." },
+                        { text: "Die Garnison des Forts umfasste etwa 250 Mann. Die Anlage war auf eine Rundumverteidigung sowie ein autonomes Verhalten während einer Belagerung ausgelegt." },
+                        { text: "Fort II befand sich im Bereich des heutigen Güterbahnhofs Bonntor im südlichen Teil von Köln. Seine Lage war im Vergleich zu anderen Forts des inneren Rings weiter von der Stadtmauer entfernt, was die Symmetrie des Verteidigungssystems störte." },
+                        { text: "Aus diesem Grund wurde es nicht in spätere Modernisierungsmaßnahmen des inneren Festungsrings einbezogen." },
+                        { text: "Die militärische Nutzung des Forts endete in den 1880er Jahren, und der endgültige Abbruch erfolgte Mitte der 1930er Jahre. Heute sind keine sichtbaren Reste der Anlage erhalten." },
+                        { bold: "Zustand:", text: " verloren." },
+                        { bold: "Lage:", text: " Stadtteil Bayenthal, südlicher Teil von Köln." }
+                    ]
+                },
+                construction_period: "1816–1821",
+                meta: {
+                    title: "Fort II (innerer Festungsring Köln)",
+                    description: "Fort II — eines der frühen Forts des inneren Festungsrings von Köln, erbaut 1816–1821 im Rahmen des preußischen Verteidigungssystems. Erhielt den Ehrennamen „Großfürst Nikolai von Russland“. Heute verloren.",
+                    ogTitle: "Fort II (innerer Festungsring Köln)",
+                    ogDescription: "Fort II — historisches Fort des inneren Befestigungsrings von Köln, errichtet 1816–1821. Eines der ersten Objekte des preußischen Festungssystems des 19. Jahrhunderts. Verloren.",
+                    keywords: "Fort II Köln, innerer Festungsring Köln, preußische Befestigungen Köln, Festung Köln, Fort II Geschichte, verlorene Forts Köln, Großfürst Nikolai von Russland",
+                    ogImage: ""
+                }
+            }
+        }
+    },
+    //     {
+    //         id: "Fort_III_koln",
+    //         type: ["historical_building"], rating: "local",
+    //         path: "prussian_fortress_ring_koln",
+    //         countryPath: "germany", regionPath: "nrw", districtPath: "city", cityPath: "koln",
+    //         hiddenFromList: true, map: "prussian_fortress_ring_koln",
+    //         coord: { lat: 50.91827, lng: 6.95098 },
+    //         translations: {
+    //             ru: {
+    //                 name: "Fort III",
+    //                 meta: {
+    //                     title: "Fort III – часть Прусского крепостного кольца Кёльна. Состояние: утраченный.",
+    //                     ogImage: ""
+    //                 }
+    //             },
+    //             ua: {
+    //                 name: "Форт III",
+    //                 meta: {
+    //                     title: "Форт III – частина прусського фортифікаційного кільця Кельна. Стан: втрачений.",
+    //                     ogImage: ""
+    //                 }
+    //             },
+    //             de: {
+    //                 name: "Fort III",
+    //                 meta: {
+    //                     title: "Fort III – Teil des preußischen Festungsrings von Köln. Zustand: verloren.",
+    //                     ogImage: ""
+    //                 }
+    //             },
+    //         }
+    //     },
+    //     {
+    //         id: "Fort_IV_koln",
+    //         type: ["historical_building"], rating: "local",
+    //         path: "prussian_fortress_ring_koln",
+    //         countryPath: "germany", regionPath: "nrw", districtPath: "city", cityPath: "koln",
+    //         hiddenFromList: true, map: "prussian_fortress_ring_koln",
+    //         coord: { lat: 50.97152, lng: 6.86036 },
+    //         translations: {
+    //             ru: {
+    //                 name: "Fort IV",
+    //                 meta: {
+    //                     title: "Fort IV – часть Прусского крепостного кольца Кёльна. Состояние: частично сохранившееся / адаптированное.",
+    //                     ogImage: "https://our-travels.info/foto/Germany/nrw/koln/koln-city/prussian_fortress_ring/004.jpg"
+    //                 }
+    //             },
+    //             ua: {
+    //                 name: "Форт IV",
+    //                 meta: {
+    //                     title: "Форт IV – частина прусського фортифікаційного кільця Кельна. Стан: частково збережений / адаптований.",
+    //                     ogImage: "https://our-travels.info/foto/Germany/nrw/koln/koln-city/prussian_fortress_ring/004.jpg"
+    //                 }
+    //             },
+    //             de: {
+    //                 name: "Fort IV",
+    //                 meta: {
+    //                     title: "Fort IV – Teil des preußischen Festungsrings von Köln. Zustand: teilweise erhalten / umgenutzt",
+    //                     ogImage: "https://our-travels.info/foto/Germany/nrw/koln/koln-city/prussian_fortress_ring/004.jpg"
+    //                 }
+    //             },
+    //         }
+    //     },
+    //     {
+    //         id: "Fort_V_koln",
+    //         type: ["historical_building"], rating: "local",
+    //         path: "prussian_fortress_ring_koln",
+    //         countryPath: "germany", regionPath: "nrw", districtPath: "city", cityPath: "koln",
+    //         hiddenFromList: true, map: "prussian_fortress_ring_koln",
+    //         coord: { lat: 50.9277, lng: 6.93609 },
+    //         translations: {
+    //             ru: {
+    //                 name: "Fort V",
+    //                 meta: {
+    //                     title: "Fort V – часть Прусского крепостного кольца Кёльна. Состояние: частично сохранившееся / адаптированное.",
+    //                     ogImage: "https://our-travels.info/foto/Germany/nrw/koln/koln-city/prussian_fortress_ring/005.jpg"
+    //                 }
+    //             },
+    //             ua: {
+    //                 name: "Форт V",
+    //                 meta: {
+    //                     title: "Форт V – частина прусського фортифікаційного кільця Кельна. Стан: частково збережений / адаптований.",
+    //                     ogImage: "https://our-travels.info/foto/Germany/nrw/koln/koln-city/prussian_fortress_ring/005.jpg"
+    //                 }
+    //             },
+    //             de: {
+    //                 name: "Fort V",
+    //                 meta: {
+    //                     title: "Fort V – Teil des preußischen Festungsrings von Köln. Zustand: teilweise erhalten / umgenutzt",
+    //                     ogImage: "https://our-travels.info/foto/Germany/nrw/koln/koln-city/prussian_fortress_ring/005.jpg"
+    //                 }
+    //             },
+    //         }
+    //     },
+    //         {
+    //         id: "Fort_VI_koln",
+    //         type: ["historical_building"], rating: "local",
+    //         path: "prussian_fortress_ring_koln",
+    //         countryPath: "germany", regionPath: "nrw", districtPath: "city", cityPath: "koln",
+    //         hiddenFromList: true, map: "prussian_fortress_ring_koln",
+    //         coord: { lat: 50.93542, lng: 6.93064 },
+    //         translations: {
+    //             ru: {
+    //                 name: "Fort VI",
+    //                 meta: {
+    //                     title: "Fort VI – часть Прусского крепостного кольца Кёльна. Состояние: частично сохранившееся / адаптированное.",
+    //                     ogImage: "https://our-travels.info/foto/Germany/nrw/koln/koln-city/prussian_fortress_ring/006.jpg"
+    //                 }
+    //             },
+    //             ua: {
+    //                 name: "Форт VI",
+    //                 meta: {
+    //                     title: "Форт VI – частина прусського фортифікаційного кільця Кельна. Стан: частково збережений / адаптований.",
+    //                     ogImage: "https://our-travels.info/foto/Germany/nrw/koln/koln-city/prussian_fortress_ring/006.jpg"
+    //                 }
+    //             },
+    //             de: {
+    //                 name: "Fort VI",
+    //                 meta: {
+    //                     title: "Fort VI – Teil des preußischen Festungsrings von Köln. Zustand: teilweise erhalten / umgenutzt",
+    //                     ogImage: "https://our-travels.info/foto/Germany/nrw/koln/koln-city/prussian_fortress_ring/006.jpg"
+    //                 }
+    //             },
+    //         }
+    //     },
+    {
+        id: "fort_VI_outer_koln",
+        type: ["historical_building"], rating: "local",
+        path: "fort_VI_outer_koln",
+        countryPath: "germany", regionPath: "nrw", districtPath: "city", cityPath: "koln",
+        hiddenFromList: true, showMore: true,
+        map: "prussian_fortress_system_koln",
+        fotoCard: "Germany/nrw/koln/koln-city/prussian_fortress_system/outer/006.jpg",
+        coord: { lat: 50.91453, lng: 6.89082 },
+        translations: {
+            ru: {
+                name: "Fort VI (внешнее крепостное кольцо)",
+                short_description: "Fort VI (внешнее крепостное кольцо) – один из фортов внешнего кольца прусской крепостной системы Кёльна. Состояние: частично сохранившееся / адаптированное.",
+                full_description: {
+                    title: "Описание и история",
+                    items: [
+                        { bold: "Fort VI (внешнее крепостное кольцо)", text: " являлся частью внешнего кольца прусских укреплений Кёльна, сформированного во второй половине XIX века в связи с развитием артиллерии и необходимостью вынести линию обороны на значительное расстояние от города." },
+                        { text: "Внешний крепостной пояс был спроектирован в 1872 году примерно в шести километрах от прежней линии обороны. В 1873 году началось строительство Fort VI, который стал первым сооружением внешнего кольца. Работы были завершены в 1876 году." },
+                        { text: "Форт был построен как артиллерийский и выполнен преимущественно из кирпича с земляными укреплениями. Он был рассчитан на гарнизон до 900 человек и вооружён примерно 16 орудиями различного калибра. Размеры сооружения составляли около 285 × 165 метров, толщина стен достигала от одного до трёх метров." },
+                        { text: "Со временем форт подвергался модернизации и частично был переоборудован для использования в качестве пехотного укрепления." },
+                        { text: "В 1921 году, в соответствии с условиями Версальского договора, Fort VI был частично демонтирован. До настоящего времени сохранились казармы тыльной части (Kehlkaserne) и отдельные элементы рва." },
+                        { text: "В дальнейшем территория использовалась для различных гражданских нужд: в казармах размещались жилые помещения, обсуждалось создание лесной школы с спортивными площадками, а во время Второй мировой войны здесь находились временные убежища для гражданского населения." },
+                        { text: "С 1970-х годов здания использовались городскими службами, спортивными организациями, а также творческими коллективами. В настоящее время территория преобразована в парковую зону с элементами ландшафтного дизайна, включая каменный сад в северной части рва." },
+                        { text: "Сегодня Fort VI входит в состав внешнего зелёного пояса Кёльна (Grüngürtel), созданного в 1920-х годах по инициативе обербургомистра Конрада Аденауэра, и используется как общественное пространство." },
+                        { bold: "Состояние:", text: " частично сохранившееся / адаптированное." },
+                        { bold: "Где:", text: " район Deckstein (западная часть Кёльна)." }
+                    ]
+                },
+                construction_period: "1873–1876",
+                meta: {
+                    title: "Fort VI (внешнее крепостное кольцо Кёльна)",
+                    description: "Fort VI – один из фортов внешнего крепостного кольца Кёльна, построенный в 1873–1876 годах как первое сооружение внешнего прусского оборонительного пояса. Рассчитан на гарнизон до 900 человек. Состояние: частично сохранившееся, адаптированное.",
+                    ogTitle: "Fort VI (внешнее крепостное кольцо Кёльна)",
+                    ogDescription: "Fort VI – исторический артиллерийский форт внешнего кольца укреплений Кёльна, возведённый в 1873–1876 годах. Один из ключевых объектов прусской крепостной системы XIX века.",
+                    keywords: "Форт VI Кёльн, Fort VI Köln, внешнее крепостное кольцо Кёльна, прусская крепость Кёльна, форты Кёльна, Festung Köln, Fort Deckstein, Fort VI история",
+                    ogImage: "https://our-travels.info/foto/Germany/nrw/koln/koln-city/prussian_fortress_system/outer/006.jpg"
+                }
+            },
+            ua: {
+                name: "Fort VI (зовнішнє фортифікаційне кільце)",
+                short_description: "Fort VI (зовнішнє фортифікаційне кільце) – один із фортів зовнішнього кільця прусської фортифікаційної системи Кельна. Стан: частково збережений / адаптований.",
+                full_description: {
+                    title: "Опис та історія",
+                    items: [
+                        { bold: "Fort VI (зовнішнє фортифікаційне кільце)", text: " був частиною зовнішнього кільця прусських укріплень Кельна, сформованого у другій половині XIX століття у зв’язку з розвитком артилерії та необхідністю винести лінію оборони на значну відстань від міста." },
+                        { text: "Зовнішній фортифікаційний пояс був спроєктований у 1872 році приблизно за шість кілометрів від попередньої лінії оборони. У 1873 році розпочалося будівництво Fort VI, який став першим об’єктом зовнішнього кільця. Роботи були завершені у 1876 році." },
+                        { text: "Форт був збудований як артилерійський і виконаний переважно з цегли із земляними укріпленнями. Він був розрахований на гарнізон до 900 осіб і озброєний приблизно 16 гарматами різного калібру. Розміри споруди становили близько 285 × 165 метрів, товщина стін сягала від одного до трьох метрів." },
+                        { text: "З часом форт зазнав модернізацій і частково був переобладнаний для використання як піхотне укріплення." },
+                        { text: "У 1921 році, відповідно до умов Версальського договору, Fort VI був частково демонтований. До сьогодні збереглися казарми тилової частини (Kehlkaserne) та окремі елементи рову." },
+                        { text: "Надалі територія використовувалася для різних цивільних потреб: у казармах облаштовували житлові приміщення, обговорювалося створення лісової школи зі спортивними майданчиками, а під час Другої світової війни тут розміщувалися тимчасові укриття для цивільного населення." },
+                        { text: "З 1970-х років будівлі використовувалися міськими службами, спортивними організаціями, а також творчими колективами. Нині територія перетворена на паркову зону з елементами ландшафтного дизайну, включаючи кам’яний сад у північній частині рову." },
+                        { text: "Сьогодні Fort VI входить до складу зовнішнього зеленого поясу Кельна (Grüngürtel), створеного у 1920-х роках за ініціативою обербургомістра Конрада Аденауера, і використовується як громадський простір." },
+                        { bold: "Стан:", text: " частково збережений / адаптований." },
+                        { bold: "Де:", text: " район Deckstein (західна частина Кельна)." }
+                    ]
+                },
+                construction_period: "1873–1876",
+                meta: {
+                    title: "Fort VI (зовнішнє фортифікаційне кільце Кельна)",
+                    description: "Fort VI — один із фортів зовнішнього фортифікаційного кільця Кельна, збудований у 1873–1876 роках як перший об’єкт зовнішнього прусського оборонного поясу. Розрахований на гарнізон до 900 осіб. Стан: частково збережений, адаптований.",
+                    ogTitle: "Fort VI (зовнішнє фортифікаційне кільце Кельна)",
+                    ogDescription: "Fort VI — історичний артилерійський форт зовнішнього кільця укріплень Кельна, зведений у 1873–1876 роках. Один із ключових об’єктів прусської фортифікаційної системи XIX століття.",
+                    keywords: "Форт VI Кельн, зовнішнє кільце Кельна, прусські укріплення Кельна, фортеця Кельн, форти Кельна, Fort VI історія, фортифікаційне кільце Кельна",
+                    ogImage: "https://our-travels.info/foto/Germany/nrw/koln/koln-city/prussian_fortress_system/outer/006.jpg"
+                }
+            },
+            de: {
+                name: "Fort VI (äußerer Festungsring)",
+                short_description: "Fort VI (äußerer Festungsring) – eines der Forts des äußeren Rings des preußischen Festungssystems von Köln. Zustand: teilweise erhalten / umgenutzt.",
+                full_description: {
+                    title: "Beschreibung und Geschichte",
+                    items: [
+                        { bold: "Fort VI (äußerer Festungsring)", text: " war Teil des äußeren Rings der preußischen Befestigungen von Köln, der in der zweiten Hälfte des 19. Jahrhunderts infolge der Weiterentwicklung der Artillerie und der Notwendigkeit, die Verteidigungslinie weiter vom Stadtgebiet entfernt anzulegen, geschaffen wurde." },
+                        { text: "Der äußere Festungsgürtel wurde im Jahr 1872 in einer Entfernung von etwa sechs Kilometern von der bisherigen Verteidigungslinie geplant. Im Jahr 1873 begann der Bau von Fort VI, das als erstes Bauwerk des äußeren Rings errichtet wurde. Die Arbeiten wurden 1876 abgeschlossen." },
+                        { text: "Das Fort wurde als Artilleriefort konzipiert und überwiegend in Ziegelbauweise mit Erdaufschüttungen errichtet. Es war für eine Besatzung von bis zu 900 Mann ausgelegt und mit etwa 16 Geschützen unterschiedlicher Kaliber ausgestattet. Die Anlage maß ungefähr 285 × 165 Meter, die Mauerstärken betrugen zwischen einem und drei Metern." },
+                        { text: "Im Laufe der Zeit wurde das Fort modernisiert und teilweise zu einem Infanteriefort umgebaut." },
+                        { text: "Im Jahr 1921 wurde Fort VI gemäß den Bestimmungen des Versailler Vertrags teilweise geschleift. Bis heute sind die Kehlkaserne sowie Teile des Grabensystems erhalten geblieben." },
+                        { text: "In der Folgezeit wurde das Gelände unterschiedlich zivil genutzt: In den Kasernen wurden zeitweise Wohnungen eingerichtet, die Einrichtung einer Waldschule mit Sportanlagen wurde diskutiert, und während des Zweiten Weltkriegs dienten die Anlagen als Notunterkünfte für die Bevölkerung." },
+                        { text: "Seit den 1970er Jahren wurden die Gebäude von städtischen Einrichtungen, Sportvereinen sowie von Künstlern genutzt. Heute ist das Gelände in eine Parkanlage mit landschaftsgestalterischen Elementen umgewandelt, darunter ein Felsengarten im nördlichen Grabenbereich." },
+                        { text: "Heute ist Fort VI Teil des äußeren Kölner Grüngürtels, der in den 1920er Jahren auf Initiative des Oberbürgermeisters Konrad Adenauer angelegt wurde, und wird als öffentlicher Raum genutzt." },
+                        { bold: "Zustand:", text: " teilweise erhalten / umgenutzt." },
+                        { bold: "Lage:", text: " Stadtteil Deckstein (westlicher Teil von Köln)." }
+                    ]
+                },
+                construction_period: "1873–1876",
+                meta: {
+                    title: "Fort VI (äußerer Festungsring Köln)",
+                    description: "Fort VI — eines der Forts des äußeren Festungsrings von Köln, errichtet in den Jahren 1873–1876 als erstes Bauwerk des äußeren preußischen Verteidigungsgürtels. Ausgelegt für eine Besatzung von bis zu 900 Mann. Zustand: teilweise erhalten, umgenutzt.",
+                    ogTitle: "Fort VI (äußerer Festungsring Köln)",
+                    ogDescription: "Fort VI — historisches Artilleriefort des äußeren Befestigungsrings von Köln, erbaut 1873–1876. Einer der bedeutenden Bestandteile des preußischen Festungssystems des 19. Jahrhunderts.",
+                    keywords: "Fort VI Köln, äußerer Festungsring Köln, preußische Befestigungen Köln, Festung Köln, Kölner Forts, Fort VI Geschichte, Festungssystem Köln",
+                    ogImage: "https://our-travels.info/foto/Germany/nrw/koln/koln-city/prussian_fortress_system/outer/006.jpg"
                 }
             }
         }

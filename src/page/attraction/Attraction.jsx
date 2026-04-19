@@ -10,7 +10,7 @@ import Gallery from '../../components/gallery/Gallery.jsx';
 import { photosByCountry } from '../../datas/fotos/index.js';
 import AttractionCardSub from '../../components/attraction/AttractionCardSub.jsx'
 import AttractionsFilters from '../../components/attractionsFilters/AttractionsFilters.jsx';
-import KolnTowers from '../../components/maps/germany/maps/Koln_towers.jsx';
+import FilteredMap from '../../components/maps/germany/maps/filteredMap.jsx';
 
 import useAttractions from '../../hooks/useAttractions.js';
 import useCity from '../../hooks/useCity.js';
@@ -60,6 +60,7 @@ const Attraction = () => {
     if (!attraction) return <p>Attraction not found</p>;
 
     const subObjects = attraction.subObjects || [];
+    const subObjects2 = attraction.subObjects2 || [];
 
     const filteredAttractions = attractions?.filter(attr => {
 
@@ -67,6 +68,12 @@ const Attraction = () => {
 
         if (attr.subObjects?.length > 0) {
             attr.subObjects.forEach(subId => {
+                const subAttr = attractions.find(a => a.id === subId);
+                if (subAttr) allTypes.push(...subAttr.type);
+            });
+        }
+        if (attr.subObjects2?.length > 0) {
+            attr.subObjects2.forEach(subId => {
                 const subAttr = attractions.find(a => a.id === subId);
                 if (subAttr) allTypes.push(...subAttr.type);
             });
@@ -94,13 +101,19 @@ const Attraction = () => {
     };
 
     const sortedAttractions = [...filteredAttractions].sort(sortByFilters);
-    const showKolnTowers = location.pathname === '/germany/nrw/city/koln/attractions/old_towers_koln';
 
     // --- Саб-объекты ---
     const sortedSubObjects = subObjects
         .map(subId => sortedAttractions.find(a => a.id === subId))
         .filter(Boolean)
         .sort(sortByFilters);
+
+    const sortedSubObjects2 = subObjects2
+        .map(subId => sortedAttractions.find(a => a.id === subId))
+        .filter(Boolean)
+        .sort(sortByFilters);
+    
+    
 
     const isLuxembourgLike = countryPath === "luxembourg";
 
@@ -139,7 +152,6 @@ const Attraction = () => {
         { label: datas.attractions[attractionsPath]?.[lang] }
     ].filter(Boolean);
 
-
     return (
 
         <div className="attraction">
@@ -157,7 +169,9 @@ const Attraction = () => {
 
             <div className='attraction__title'>{attraction.name && (attraction.name)}</div>
 
-            {showKolnTowers && <KolnTowers city={city} lang={lang} />}
+            {attraction.mapOpen && (
+                <FilteredMap city={city} lang={lang} map={attraction.mapOpen} />
+            )}
 
             <div className='attraction__desc'>
                 <div className='attraction__desc-foto'>
@@ -200,10 +214,20 @@ const Attraction = () => {
 
                 {subObjects.length > 0 && (
                     <section className="attraction-sub">
-                        <h3>{lang === "ru" ? "Достопримечательности" : lang === "de" ? "Sehenswürdigkeiten" : "Пам'ятки"}</h3>
+                        <h3>{attraction.subObjects_title || (lang === "ru" ? "Достопримечательности" : lang === "de" ? "Sehenswürdigkeiten" : "Пам'ятки")}</h3>
                         {subObjects.length > 5 && <AttractionsFilters lang={lang} filters={filters} setFilters={setFilters} />}
 
                         {sortedSubObjects.map(attr => (
+                            <AttractionCardSub key={attr.id} attr={attr} lang={lang} />
+                        ))}
+                    </section>
+                )}
+                {subObjects2.length > 0 && (
+                    <section className="attraction-sub">
+                        <h3>{attraction.subObjects_title2 || (lang === "ru" ? "Достопримечательности" : lang === "de" ? "Sehenswürdigkeiten" : "Пам'ятки")}</h3>
+                        {subObjects2.length > 5 && <AttractionsFilters lang={lang} filters={filters} setFilters={setFilters} />}
+
+                        {sortedSubObjects2.map(attr => (
                             <AttractionCardSub key={attr.id} attr={attr} lang={lang} />
                         ))}
                     </section>

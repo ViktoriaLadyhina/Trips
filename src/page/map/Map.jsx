@@ -184,13 +184,6 @@ const Map = () => {
                               <li><Link to="/germany/nrw/city/koln/attractions/cologne_cathedral">{t.attractions.cologne_cathedral[lang]}</Link></li>
                               <li><Link to="/germany/nrw/city/koln/attractions/fischmarkt_koln">{t.attractions.fischmarkt_koln[lang]}</Link></li>
                               <li><Link to="/germany/nrw/city/koln/attractions/rathaus_koln">{t.attractions.rathaus_koln[lang]}</Link></li>
-                              <li><Link to="/germany/nrw/city/koln/attractions/romanische_kirchen_altstadt_koln">{t.attractions.romanische_kirchen_altstadt_koln[lang]}:</Link>
-                                <ul>
-                                  <li><Link to="/germany/nrw/city/koln/attractions/gross_st_martin_koln">{t.attractions.gross_st_martin_koln[lang]}</Link></li>
-                                  <li><Link to="/germany/nrw/city/koln/attractions/st_maria_im_kapitol_koln">{t.attractions.st_maria_im_kapitol_koln[lang]}</Link></li>
-                                  <li><Link to="/germany/nrw/city/koln/attractions/st_gereon_koln">{t.attractions.st_gereon_koln[lang]}</Link></li>
-                                </ul>
-                              </li>
                               <li><Link to="/germany/nrw/city/koln/attractions/st_maria_himmelfahrt_koln">{t.attractions.st_maria_himmelfahrt_koln[lang]}</Link></li>
                               <li><Link to="/germany/nrw/city/koln/attractions/guerzenich_koln">{t.attractions.guerzenich_koln[lang]}</Link></li>
                               <li><Link to="/germany/nrw/city/koln/attractions/miqua">{t.attractions.miqua[lang]}</Link></li>
@@ -201,6 +194,13 @@ const Map = () => {
                               <li><Link to="/germany/nrw/city/koln/attractions/museum_ludwig">{t.attractions.museum_ludwig[lang]}</Link></li>
                               <li><Link to="/germany/nrw/city/koln/attractions/stadtmuseum_koln">{t.attractions.stadtmuseum_koln[lang]}</Link></li>
                               <li><Link to="/germany/nrw/city/koln/attractions/old_towers_koln">{t.attractions.old_towers_koln[lang]}</Link></li>
+                            </ul>
+                          </li>
+                          <li><Link to="/germany/nrw/city/koln/attractions/romanische_kirchen_altstadt_koln">{t.attractions.romanische_kirchen_altstadt_koln[lang]}:</Link>
+                            <ul>
+                              <li><Link to="/germany/nrw/city/koln/attractions/gross_st_martin_koln">{t.attractions.gross_st_martin_koln[lang]}</Link></li>
+                              <li><Link to="/germany/nrw/city/koln/attractions/st_maria_im_kapitol_koln">{t.attractions.st_maria_im_kapitol_koln[lang]}</Link></li>
+                              <li><Link to="/germany/nrw/city/koln/attractions/st_gereon_koln">{t.attractions.st_gereon_koln[lang]}</Link></li>
                             </ul>
                           </li>
                           <li><Link to="/germany/nrw/city/koln/attractions/schokoladenmuseum">{t.attractions.schokoladenmuseum[lang]}</Link></li>
@@ -224,6 +224,13 @@ const Map = () => {
                           </li>
                           <li><Link to="/germany/nrw/city/koln/attractions/finkens_garten_koln">{t.attractions.finkens_garten_koln[lang]}</Link></li>
                           <li><Link to="/germany/nrw/city/koln/attractions/decksteiner_weiher_koln">{t.attractions.decksteiner_weiher_koln[lang]}</Link></li>
+                          <li><Link to="/germany/nrw/city/koln/attractions/prussian_fortress_system_koln">{t.attractions.prussian_fortress_system_koln[lang]}</Link>
+                            <ul>
+                              <li><Link to="/germany/nrw/city/koln/attractions/fort_I_inner_koln">{t.attractions.fort_I_inner_koln[lang]}</Link></li>
+                              <li><Link to="/germany/nrw/city/koln/attractions/fort_II_inner_koln">{t.attractions.fort_II_inner_koln[lang]}</Link></li>
+                              <li><Link to="/germany/nrw/city/koln/attractions/fort_VI_outer_koln">{t.attractions.fort_VI_outer_koln[lang]}</Link></li>
+                            </ul>
+                          </li>
                         </ul>
                       </li>
 

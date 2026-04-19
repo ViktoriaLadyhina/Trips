@@ -9,20 +9,14 @@ const datas = [
         countryPath: "germany", regionPath: "nrw", districtPath: "city", cityPath: "koln",
         fotoCard: "Germany/nrw/koln/koln-city/altstadt/005.jpg",
         location: "Köln, Deutschland",
-        subObjects: ["cologne_cathedral", "rathaus_koln", "guerzenich_koln", "miqua", "wallraf_richartz_museum", "roemisch_germanisches_museum", "farina_duftmuseum", "museum_ludwig", "stadtmuseum_koln", "dufthaus_4711_koln", "st_maria_himmelfahrt_koln", "romanische_kirchen_altstadt_koln", "old_towers_koln", "fischmarkt_koln"],
+        subObjects: ["cologne_cathedral", "rathaus_koln", "guerzenich_koln", "miqua", "wallraf_richartz_museum", "roemisch_germanisches_museum", "farina_duftmuseum", "museum_ludwig", "stadtmuseum_koln", "dufthaus_4711_koln", "st_maria_himmelfahrt_koln", "old_towers_koln", "fischmarkt_koln", "gross_st_martin_koln", "st_maria_im_kapitol_koln", ],
         short_description_subObjects: {
             text: "In der Altstadt von Köln befinden sich folgende Sehenswürdigkeiten:",
             items: [
                 { bold: "🌍Kölner Dom", text: "– majestätische gotische Kathedrale, das Herz der Altstadt, am Platz vor dem Hauptbahnhof." },
                 { bold: "Fischmarkt", text: "– lebhafter historischer Platz in der Altstadt von Köln mit bunten Häusern und der Atmosphäre eines mittelalterlichen Fischmarktes." },
-                {
-                    bold: "Romanische Kirchen der Altstadt von Köln:",
-                    text: `<ul>
-                            <li><b>Groß St. Martin</b> – eine der bekanntesten romanischen Kirchen Kölns mit einem massiven Turm in Form einer Trikonche, der über dem Rheinufer aufragt. Ein Symbol der Silhouette der Altstadt.</li>
-                            <li><b>St. Maria im Kapitol</b> – die größte romanische Kirche Kölns, errichtet an der Stelle eines antiken römischen Tempels. Ein herausragendes Beispiel romanischer Architektur mit Trikonchenplan und historischer Krypta, die Spuren der antiken Vergangenheit bewahrt.</li>
-                            <li><b>St. Gereon Kirche</b> – eine romanische Kirche mit zwölfeckiger Kuppel, alten Glasfenstern und reichhaltigem historischen Interieur.</li>
-                        </ul>`
-                },
+                { bold: "Groß St. Martin", text: "– eine der bekanntesten romanischen Kirchen Kölns mit einem massiven Turm-Trikonchos, der über der Rheinpromenade aufragt. Ein Symbol des Silhouetts der Altstadt." },
+                { bold: "St. Maria im Kapitol", text: "– die größte romanische Kirche Kölns, erbaut auf dem Gelände eines antiken römischen Tempels. Ein herausragendes Beispiel romanischer Architektur mit Trikonchos-Plan und historischer Krypta, die Spuren der antiken Vergangenheit bewahrt." },
                 { bold: "St. Mariä Himmelfahrt", text: "– die wichtigste Barockkirche Kölns aus dem 17. Jahrhundert, eine ehemalige Jesuitenkirche in der Nähe des Hauptbahnhofs und des Kölner Doms." },
                 { bold: "Gürzenich", text: "– historisches Zunfthaus und Saal in der Nähe des Kölner Doms." },
                 { bold: "Kölner Rathaus", text: "– historisches Stadthaus im Zentrum der Altstadt." },
@@ -207,6 +201,7 @@ const datas = [
         path: "romanische_kirchen_altstadt_koln",
         countryPath: "germany", regionPath: "nrw", districtPath: "city", cityPath: "koln",
         subObjects: ["gross_st_martin_koln", "st_maria_im_kapitol_koln", "st_gereon_koln"],
+        mapOpen: "romanische_kirchen_altstadt_koln",
         short_description_subObjects: {
             text: "Auf unserer Website werden aus dieser Liste folgende Kirchen beschrieben:",
             items: [
@@ -215,7 +210,6 @@ const datas = [
                 { bold: "St. Gereon Kirche", text: "– eine romanische Kirche mit zwölfeckiger Kuppel, alten Glasfenstern und reichhaltigem historischen Interieur." },
             ]
         },
-        hiddenFromList: true, showMore: true,
         fotoCard: "Germany/nrw/koln/koln-city/altstadt/romanische_kirchen/001.jpg",
         location: "Köln, Deutschland",
         officialSite: [{ bold: "Offizielle Webseite", link: "https://romanische-kirchen-koeln.de/" }],
@@ -244,6 +238,7 @@ const datas = [
         path: "gross_st_martin_koln",
         countryPath: "germany", regionPath: "nrw", districtPath: "city", cityPath: "koln",
         hiddenFromList: true, showMore: true,
+        map: "romanische_kirchen_altstadt_koln",
         fotoCard: "Germany/nrw/koln/koln-city/altstadt/romanische_kirchen/gross_st_martin/001.jpg",
         location: "Köln, Deutschland",
         officialSite: [
@@ -289,6 +284,7 @@ const datas = [
         path: "st_maria_im_kapitol_koln",
         countryPath: "germany", regionPath: "nrw", districtPath: "city", cityPath: "koln",
         hiddenFromList: true, showMore: true,
+        map: "romanische_kirchen_altstadt_koln",
         fotoCard: "Germany/nrw/koln/koln-city/altstadt/romanische_kirchen/stMariaImKapitol/001.jpg",
         location: "Köln, Deutschland",
         officialSite: [{ bold: "Offizielle Webseite", link: "https://www.romanische-kirchen-koeln.de/" }],
@@ -1355,6 +1351,7 @@ const datas = [
         path: "old_towers_koln",
         countryPath: "germany", regionPath: "nrw", districtPath: "city", cityPath: "koln",
         hiddenFromList: true, showMore: true,
+        mapOpen: "old_towers_koln",
         fotoCard: "Germany/nrw/koln/koln-city/altstadt/old_towers/001.jpg",
         location: "Köln, Deutschland",
         short_description: "Die alten Türme und Befestigungen der Altstadt Kölns sind Reste der mittelalterlichen Stadtmauer und römischer Verteidigungsanlagen, die einst die Stadt schützten. Heute sind sie über die Altstadt verteilt und dienen als historische Orientierungspunkte für Bewohner und Touristen. Diese Türme vermitteln ein Bild davon, wie Köln im Mittelalter aussah, und zeigen Spuren des Verteidigungssystems. Die Sehenswürdigkeit ist bei Touristen beliebt, stellt jedoch kein weltbekanntes Symbol der Stadt dar.",
@@ -1391,6 +1388,7 @@ const datas = [
         name: "Römerturm",
         type: ["historical_building"], rating: "popular",
         path: "old_towers_koln",
+        map: "old_towers_koln",
         countryPath: "germany", regionPath: "nrw", districtPath: "city", cityPath: "koln",
         hiddenFromList: true,
         coord: { lat: 50.94093, lng: 6.94663 },
@@ -1404,6 +1402,7 @@ const datas = [
         name: "Westtor (Hahnentorburg)",
         type: ["historical_building"], rating: "popular",
         path: "old_towers_koln",
+        map: "old_towers_koln",
         countryPath: "germany", regionPath: "nrw", districtPath: "city", cityPath: "koln",
         hiddenFromList: true,
         coord: { lat: 50.93639, lng: 6.94021 },
@@ -1417,6 +1416,7 @@ const datas = [
         name: "Nordtor (Eigelsteintorburg)",
         type: ["historical_building"], rating: "popular",
         path: "old_towers_koln",
+        map: "old_towers_koln",
         countryPath: "germany", regionPath: "nrw", districtPath: "city", cityPath: "koln",
         hiddenFromList: true,
         coord: { lat: 50.94931, lng: 6.95687 },
@@ -1430,6 +1430,7 @@ const datas = [
         name: "Südtor (Severinstorburg)",
         type: ["historical_building"], rating: "popular",
         path: "old_towers_koln",
+        map: "old_towers_koln",
         countryPath: "germany", regionPath: "nrw", districtPath: "city", cityPath: "koln",
         hiddenFromList: true,
         coord: { lat: 50.92196, lng: 6.95923 },
@@ -1443,6 +1444,7 @@ const datas = [
         name: "Südliches Mauerfragment (Ulrepforte)",
         type: ["historical_building"], rating: "popular",
         path: "old_towers_koln",
+        map: "old_towers_koln",
         countryPath: "germany", regionPath: "nrw", districtPath: "city", cityPath: "koln",
         hiddenFromList: true,
         coord: { lat: 50.92418, lng: 6.95305 },
@@ -1456,6 +1458,7 @@ const datas = [
         name: "Turm im Süden am Rhein (Bayenturm)",
         type: ["historical_building"], rating: "popular",
         path: "old_towers_koln",
+        map: "old_towers_koln",
         countryPath: "germany", regionPath: "nrw", districtPath: "city", cityPath: "koln",
         hiddenFromList: true,
         coord: { lat: 50.92375, lng: 6.96695 },
