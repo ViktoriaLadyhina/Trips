@@ -63,6 +63,21 @@ export const Fotos = {
         { path: "Luxembourg/seven_castles/koerich_castle/007.jpg", title: { ru: "Замок Керих, 2024", ua: "Замок Кьоріх, 2024", de: "Burg Koerich, 2024" } },
       ]
     }
+  },
+  luxembourg_canton: {
+    luxembourg_city: {
+      musee_drai_eechelen_luxembourg: [
+        { path: "Luxembourg/luxembourg_canton/luxembourg_city/musee_drai_eechelen/001.jpg", title: { ru: 'Музей «Три жёлудя», 2024', de: 'Museum „Drei Eicheln“, 2024', ua: 'Музей «Три жолуді», 2024' } },
+      ],
+      fort_thungen_luxembourg: [
+        { path: "Luxembourg/luxembourg_canton/luxembourg_city/musee_drai_eechelen/001.jpg", title: { ru: 'Форт Тюнген, 2024', de: 'Fort Thüngen, 2024', ua: 'Форт Тюнген, 2024' } },
+        { path: "Luxembourg/luxembourg_canton/luxembourg_city/musee_drai_eechelen/002.jpg", title: { ru: 'Форт Тюнген, 2024', de: 'Fort Thüngen, 2024', ua: 'Форт Тюнген, 2024' } },
+        { path: "Luxembourg/luxembourg_canton/luxembourg_city/musee_drai_eechelen/003.jpg", title: { ru: 'Форт Тюнген, 2024', de: 'Fort Thüngen, 2024', ua: 'Форт Тюнген, 2024' } },
+        { path: "Luxembourg/luxembourg_canton/luxembourg_city/musee_drai_eechelen/004.jpg", title: { ru: 'Форт Тюнген, 2024', de: 'Fort Thüngen, 2024', ua: 'Форт Тюнген, 2024' } },
+        { path: "Luxembourg/luxembourg_canton/luxembourg_city/musee_drai_eechelen/005.jpg", title: { ru: 'Форт Тюнген, 2024', de: 'Fort Thüngen, 2024', ua: 'Форт Тюнген, 2024' } },
+        { path: "Luxembourg/luxembourg_canton/luxembourg_city/musee_drai_eechelen/006.jpg", title: { ru: 'Форт Тюнген, 2024', de: 'Fort Thüngen, 2024', ua: 'Форт Тюнген, 2024' } },
+      ]
+    }
   }
 
 };

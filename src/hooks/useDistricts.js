@@ -23,9 +23,6 @@ const useDistricts = (countryPath, regionPath, districtPath) => {
     const [district, setDistrict] = useState(null);
     const [error, setError] = useState(null);
 
-    console.log("countryPath, regionPath, districtPath", countryPath, regionPath, districtPath);
-    
-    
       useEffect(() => {
         const loadData = async () => {
           try {

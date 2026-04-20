@@ -57,11 +57,13 @@ const useAttractions = (countryPath, regionPath, districtPath, cityPath) => {
             const mod = await modulesNew[keyNew]();
             attractionsNew = mod.default || [];
           }
+
         } else {
           // уровень страны → собрать ВСЕ регионы
           const countryModules = Object.keys(modulesNew).filter((p) =>
             p.toLowerCase().includes(`/${lowerCountry}/`)
           );
+
 
           for (const key of countryModules) {
             const mod = await modulesNew[key]();

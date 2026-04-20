@@ -14,8 +14,13 @@ import rp_subRegions from '../../datas/germany/rheinland_pfalz-subRegions'
 import rp_city from '../../datas/germany/rheinland_pfalz-city'
 import rp_events from '../../datas/germany/rheinland_pfalz-events'
 
+import luxembourg_land from '../../datas/luxembourg/lands'
 import lu_routes from '../../datas/luxembourg/routes'
-import lu_attr from '../../datas/luxembourg/mersch-attractions'
+import capellen_city from '../../datas/luxembourg/capellen-city'
+import luxembourg_canton_city from '../../datas/luxembourg/luxembourg_canton-city'
+import mersch_attr from '../../datas/luxembourg/mersch-attractions'
+import capellen_attr from '../../datas/luxembourg/capellen-attractions'
+import luxembourg_canton_attr from '../../datas/luxembourg/luxembourg_canton-attractions'
 
 import ukr_land from '../../datas/ukraine/lands'
 import sum_city from '../../datas/ukraine/sumska-city'
@@ -60,7 +65,19 @@ const searchIndex = {
     },
     luxembourg: {
         routes: lu_routes,
-        attractions: lu_attr,
+        land: luxembourg_land,
+        mersch: {
+            attractions: mersch_attr,
+        },
+        capellen: {
+            attractions: capellen_attr,
+            city: capellen_city,
+        },
+        luxembourg_canton: {
+            attractions: luxembourg_canton_attr,
+            city: luxembourg_canton_city,
+        },
+        
     },
     ukraine: {
         land: ukr_land,

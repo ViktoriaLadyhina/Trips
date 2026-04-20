@@ -1,6 +1,6 @@
 const datas = [
     {
-        id: 20,
+        id: 1,
         hasInfo: true,
         path: 'capellen',
         translations: {
@@ -196,7 +196,7 @@ const datas = [
         }
     },
     {
-        id: 21,
+        id: 7,
         hasInfo: true,
         path: 'luxembourg_canton',
         translations: {
@@ -392,6 +392,190 @@ const datas = [
                     ogTitle: "Kanton Luxemburg – Zentrum des Landes",
                     ogDescription: "Detaillierte Informationen über den Kanton Luxemburg: Städte, Wirtschaft, Geschichte und Sehenswürdigkeiten.",
                     ogImage: "https://our-travels.info/foto/Luxembourg/luxembourg-city/001.jpg"
+                }
+            }
+        }
+    },
+    {
+        id: 8,
+        hasInfo: true,
+        path: 'mersch',
+        translations: {
+            ru: {
+                name: 'Кантон Мерш',
+                desc: {
+                    capital: [{ bold: 'Административный центр:', text: ' город Мерш (Mersch)' }],
+                    population: [
+                        { bold: 'Население:', text: ' около 30 000–35 000 человек (Факт не проверен).' }
+                    ],
+                    area: [{ bold: 'Площадь:', text: ' около 233 км² (Факт не проверен).' }],
+                    geography: [
+                        { bold: 'География:', text: ' Мерш расположен в центральной части Люксембурга. Территория характеризуется холмистым рельефом, долинами рек и сельскохозяйственными угодьями.' },
+                        { text: ' Регион считается географическим центром страны и включает как лесные массивы, так и небольшие населённые пункты.' }
+                    ],
+                    history: [
+                        { bold: 'История:', text: ' Регион исторически был важным пересечением торговых путей в центральном Люксембурге. В Средние века здесь развивались феодальные владения и замковые комплексы.' },
+                        { text: ' Одним из исторических центров является замок Мерш, который играл административную и оборонительную роль.' }
+                    ],
+                    economy: [
+                        { bold: 'Экономика:', text: ' Экономика сочетает сельское хозяйство, малый бизнес и сферу услуг.' },
+                        { text: ' Благодаря центральному расположению многие жители работают в столице и других крупных городах страны.' }
+                    ],
+                    cities: [
+                        { bold: 'Основные населённые пункты:', text: ' Мерш, Линтген, Ларошетт, Фишбах, Хелпернапа (Helperknapp), Хеффинген, Номмерн.' }
+                    ],
+                    rivers: [
+                        { bold: 'Реки:', text: ' Альзетт, Вайс-Эрнц и их притоки.' }
+                    ],
+                    tourism: [
+                        { bold: 'Туризм и отдых:', text: ' Регион известен замками, природными маршрутами и спокойной сельской атмосферой. Особенно популярен замок Мерш и окрестные долины.' }
+                    ]
+                },
+                briefHistory: {
+                    title: 'Краткая история',
+                    items: [
+                        { text: "Территория кантона Мерш с древности была важным пересечением путей в центральной части Люксембурга." },
+                        { text: "В Средние века здесь формировались феодальные владения и укреплённые поселения." },
+                        { text: "После административных реформ кантон вошёл в современную структуру Люксембурга и сохранил значение центрального региона." }
+                    ]
+                },
+                cities: {
+                    title: "Основные населённые пункты",
+                    items: [
+                        { id: 1, name: 'Мерш', hasInfo: false, path: "mersch" },
+                        { id: 2, name: 'Линтген', hasInfo: false, path: "lintgen" },
+                        { id: 3, name: 'Ларошетт', hasInfo: false, path: "larochette" },
+                        { id: 4, name: 'Фишбах', hasInfo: false, path: "fischbach" },
+                        { id: 5, name: 'Хелперкнапп', hasInfo: false, path: "helperknapp" },
+                        { id: 6, name: 'Хеффинген', hasInfo: false, path: "heffingen" },
+                        { id: 7, name: 'Номмерн', hasInfo: false, path: "nommern" },
+                        { id: 8, name: 'Ансембург', hasInfo: true, path: "ansembourg" }
+                    ]
+                },
+                meta: {
+                    title: "Мерш – информация о регионе Люксембурга",
+                    description: "Мерш: коммуны, география, история и особенности центрального региона Люксембурга.",
+                    ogTitle: "Мерш – кантон Люксембурга",
+                    ogDescription: "Подробная информация о кантоне Мерш: население, география, история и населённые пункты.",
+                    ogImage: "https://our-travels.info/foto/Luxembourg/seven_castles/ansembourg_castle/001.jpg"
+                }
+            },
+            ua: {
+                name: 'Кантон Мерш',
+                desc: {
+                    capital: [{ bold: 'Адміністративний центр:', text: ' місто Мерш (Mersch)' }],
+                    population: [
+                        { bold: 'Населення:', text: ' близько 30 000–35 000 осіб (Факт не перевірений).' }
+                    ],
+                    area: [{ bold: 'Площа:', text: ' близько 233 км² (Факт не перевірений).' }],
+                    geography: [
+                        { bold: 'Географія:', text: ' Мерш розташований у центральній частині Люксембургу. Регіон має пагорбистий рельєф, річкові долини та сільськогосподарські території.' },
+                        { text: ' Вважається географічним центром країни.' }
+                    ],
+                    history: [
+                        { bold: 'Історія:', text: ' Територія здавна була важливим перехрестям торгових шляхів у центрі країни. У середньовіччі тут існували феодальні володіння та замки.' },
+                        { text: ' Замок Мерш мав адміністративне та оборонне значення.' }
+                    ],
+                    economy: [
+                        { bold: 'Економіка:', text: ' Поєднує сільське господарство, малий бізнес і сферу послуг.' },
+                        { text: ' Багато мешканців працюють у столиці завдяки центральному розташуванню.' }
+                    ],
+                    cities: [
+                        { bold: 'Основні населені пункти:', text: ' Мерш, Лінтген, Ларошетт, Фішбах, Хелпернапа, Хеффінген, Номмерн.' }
+                    ],
+                    rivers: [
+                        { bold: 'Річки:', text: ' Альзетт, Вайс-Ернц та їх притоки.' }
+                    ],
+                    tourism: [
+                        { bold: 'Туризм і відпочинок:', text: ' Регіон відомий замками, природними маршрутами та спокійною атмосферою. Особливо популярний замок Мерш.' }
+                    ]
+                },
+                briefHistory: {
+                    title: 'Коротка історія',
+                    items: [
+                        { text: "Територія кантона здавна була важливим транспортним вузлом у центрі Люксембургу." },
+                        { text: "У середньовіччі тут формувалися замки та феодальні структури." },
+                        { text: "Після реформ регіон увійшов до сучасної адміністративної системи країни." }
+                    ]
+                },
+                cities: {
+                    title: "Основні населені пункти",
+                    items: [
+                        { id: 1, name: 'Мерш', hasInfo: false, path: "mersch" },
+                        { id: 2, name: 'Лінтген', hasInfo: false, path: "lintgen" },
+                        { id: 3, name: 'Ларошетт', hasInfo: false, path: "larochette" },
+                        { id: 4, name: 'Фішбах', hasInfo: false, path: "fischbach" },
+                        { id: 5, name: 'Хелперкнапп', hasInfo: false, path: "helperknapp" },
+                        { id: 6, name: 'Хеффінген', hasInfo: false, path: "heffingen" },
+                        { id: 7, name: 'Номмерн', hasInfo: false, path: "nommern" },
+                        { id: 8, name: 'Ансембург', hasInfo: true, path: "ansembourg" }
+                    ]
+                },
+                meta: {
+                    title: "Мерш – інформація про регіон Люксембургу",
+                    description: "Мерш: громади, географія, історія та особливості центрального регіону Люксембургу.",
+                    ogTitle: "Мерш – кантон Люксембургу",
+                    ogDescription: "Детальна інформація про кантон Мерш: населення, географія, історія та населені пункти.",
+                    ogImage: "https://our-travels.info/foto/Luxembourg/seven_castles/ansembourg_castle/001.jpg"
+                }
+            },
+            de: {
+                name: 'Kanton Mersch',
+                desc: {
+                    capital: [{ bold: 'Verwaltungszentrum:', text: ' Stadt Mersch (Mersch)' }],
+                    population: [
+                        { bold: 'Bevölkerung:', text: ' etwa 30.000–35.000 Einwohner (nicht geprüft).' }
+                    ],
+                    area: [{ bold: 'Fläche:', text: ' etwa 233 km² (nicht geprüft).' }],
+                    geography: [
+                        { bold: 'Geographie:', text: ' Mersch liegt im Zentrum Luxemburgs. Die Region ist geprägt von Hügeln, Flusstälern und landwirtschaftlichen Flächen.' },
+                        { text: ' Sie gilt als geografisches Zentrum des Landes.' }
+                    ],
+                    history: [
+                        { bold: 'Geschichte:', text: ' Das Gebiet war seit der Antike ein wichtiger Knotenpunkt zentraler Handelswege.' },
+                        { text: ' Im Mittelalter entstanden hier Burgen und feudale Strukturen, darunter die Burg Mersch.' }
+                    ],
+                    economy: [
+                        { bold: 'Wirtschaft:', text: ' Mischung aus Landwirtschaft, kleinen Unternehmen und Dienstleistungen.' },
+                        { text: ' Viele Einwohner pendeln aufgrund der zentralen Lage in die Hauptstadt.' }
+                    ],
+                    cities: [
+                        { bold: 'Wichtige Ortschaften:', text: ' Mersch, Lintgen, Larochette, Fischbach, Helperknapp, Heffingen, Nommern.' }
+                    ],
+                    rivers: [
+                        { bold: 'Flüsse:', text: ' Alzette, Weißer Ernz und Nebenflüsse.' }
+                    ],
+                    tourism: [
+                        { bold: 'Tourismus und Erholung:', text: ' Bekannt für Burgen, Naturwege und ruhige Landschaften. Besonders hervorzuheben ist die Burg Mersch.' }
+                    ]
+                },
+                briefHistory: {
+                    title: 'Kurze Geschichte',
+                    items: [
+                        { text: "Die Region war historisch ein wichtiger Verkehrsknotenpunkt im Zentrum Luxemburgs." },
+                        { text: "Im Mittelalter entstanden hier befestigte Siedlungen und Burgen." },
+                        { text: "Nach Verwaltungsreformen wurde der Kanton Teil der modernen Struktur Luxemburgs." }
+                    ]
+                },
+                cities: {
+                    title: "Wichtige Ortschaften",
+                    items: [
+                        { id: 1, name: 'Mersch', hasInfo: false, path: "mersch" },
+                        { id: 2, name: 'Lintgen', hasInfo: false, path: "lintgen" },
+                        { id: 3, name: 'Larochette', hasInfo: false, path: "larochette" },
+                        { id: 4, name: 'Fischbach', hasInfo: false, path: "fischbach" },
+                        { id: 5, name: 'Helperknapp', hasInfo: false, path: "helperknapp" },
+                        { id: 6, name: 'Heffingen', hasInfo: false, path: "heffingen" },
+                        { id: 7, name: 'Nommern', hasInfo: false, path: "nommern" },
+                        { id: 8, name: 'Ansemburg', hasInfo: true, path: "ansembourg" }
+                    ]
+                },
+                meta: {
+                    title: "Mersch – Informationen über die Region Luxemburgs",
+                    description: "Mersch: Gemeinden, Geographie, Geschichte und Besonderheiten der zentralen Region Luxemburgs.",
+                    ogTitle: "Mersch – Kanton Luxemburg",
+                    ogDescription: "Detaillierte Informationen über den Kanton Mersch: Bevölkerung, Geographie, Geschichte und Ortschaften.",
+                    ogImage: "https://our-travels.info/foto/Luxembourg/seven_castles/ansembourg_castle/001.jpg"
                 }
             }
         }

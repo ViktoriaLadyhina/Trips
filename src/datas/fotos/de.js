@@ -202,6 +202,12 @@ export const Fotos = {
         { path: "Germany/nrw/koln/koln-city/decksteiner_weiher/001.jpg", title: { ru: "Декштайнер Вайер, 2026", ua: "Декштайнер Вайер, 2026", de: "Decksteiner Weiher, 2026" } },
         { path: "Germany/nrw/koln/koln-city/decksteiner_weiher/002.jpg", title: { ru: "Декштайнер Вайер, 2026", ua: "Декштайнер Вайер, 2026", de: "Decksteiner Weiher, 2026" } },
         { path: "Germany/nrw/koln/koln-city/decksteiner_weiher/003.jpg", title: { ru: "Декштайнер Вайер, 2026", ua: "Декштайнер Вайер, 2026", de: "Decksteiner Weiher, 2026" } },
+        { path: "Germany/nrw/koln/koln-city/decksteiner_weiher/004.jpg", title: { ru: "Декштайнер Вайер, 2026", ua: "Декштайнер Вайер, 2026", de: "Decksteiner Weiher, 2026" } },
+        { path: "Germany/nrw/koln/koln-city/decksteiner_weiher/005.jpg", title: { ru: "Декштайнер Вайер, 2026", ua: "Декштайнер Вайер, 2026", de: "Decksteiner Weiher, 2026" } },
+        { path: "Germany/nrw/koln/koln-city/decksteiner_weiher/006.jpg", title: { ru: "Декштайнер Вайер, 2026", ua: "Декштайнер Вайер, 2026", de: "Decksteiner Weiher, 2026" } },
+        { path: "Germany/nrw/koln/koln-city/decksteiner_weiher/007.jpg", title: { ru: "Декштайнер Вайер, 2026", ua: "Декштайнер Вайер, 2026", de: "Decksteiner Weiher, 2026" } },
+        { path: "Germany/nrw/koln/koln-city/decksteiner_weiher/008.jpg", title: { ru: "Декштайнер Вайер, 2026", ua: "Декштайнер Вайер, 2026", de: "Decksteiner Weiher, 2026" } },
+        { path: "Germany/nrw/koln/koln-city/decksteiner_weiher/009.jpg", title: { ru: "Декштайнер Вайер, 2026", ua: "Декштайнер Вайер, 2026", de: "Decksteiner Weiher, 2026" } },
       ],
       romanische_kirchen_altstadt_koln: [
         { path: "Germany/nrw/koln/koln-city/altstadt/romanische_kirchen/001.jpg", title: { ru: "Романские церкви Старого города Кёльна (фото взято с интернета)", ua: "Романські церкви Старого міста Кельна (фото взято з Інтернету)", de: "Romanische Kirchen der Altstadt von Köln (Foto aus dem Internet)" } },

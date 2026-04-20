@@ -4,7 +4,7 @@ const datas = [
         path: "city",
         translations: {
             ru: { name: "Город областного значения" },
-            ua: { name: "Місто обланого значення" },
+            ua: { name: "Місто обласного значення" },
             de: { name: "Stadt von regionaler Bedeutung" }
         }
     }

@@ -1,8 +1,9 @@
 import { useSelector } from "react-redux";
 import { Helmet } from "react-helmet-async";
-import searchIndex from "../../components/search/index";
 import BreadCrumbs from '../../components/breadCrumbs/BreadCrumbs';
+import useAllAttractions from "../../hooks/useAllAttractions";
 import './Unesco.scss';
+import { Link } from "react-router";
 
 const Unesco_Title = { ru: "Достопримечательности ЮНЕСКО", ua: "Пам’ятки ЮНЕСКО", de: "UNESCO-Welterbestätten" }
 const unescoTableHead = {
@@ -19,46 +20,15 @@ const Unesco_Description = {
 
 export const Unesco = () => {
   const { lang } = useSelector((state) => state.language);
+  const { attractions } = useAllAttractions();
 
-  const getUnescoData = () => {
-    const results = [];
-
-    const countries = searchIndex[lang];
-    for (const countryKey in countries) {
-      if (countryKey === "country") continue; // пропускаем meta
-
-      const countryData = countries[countryKey];
-      for (const regionKey in countryData) {
-        const region = countryData[regionKey];
-        if (!region.attractions) continue;
-
-        (region.attractions || []).forEach(attraction => {
-          if (attraction.unesco_status?.included) {
-            results.push({
-              id: attraction.id,
-              name: attraction.name || "Достопримечательность",
-              type: attraction.unesco_status.type,
-              location: attraction.location,
-              country: countryKey === "germany" ? "Germany" : "Ukraine",
-              year: attraction.unesco_status.year,
-              criteria: attraction.unesco_status.criteria,
-              epoch: attraction.unesco_status.epoch,
-              series: attraction.unesco_status.series,
-              url: `/${countryKey}/${regionKey}/${attraction.districtPath}/${attraction.cityPath}/attractions/${attraction.path}`
-            });
-          }
-        });
-      }
-    }
-
-    return results;
-  }
-
-  const unescoData = getUnescoData();
+  const unescoData = attractions.filter(
+    (item) => item.unesco_status?.included
+  );
 
   const groupBySeries = (data) => {
     return data.reduce((acc, item) => {
-      const key = item.series || "no-series";
+      const key = item.unesco_status?.series || "no-series";
       if (!acc[key]) acc[key] = [];
       acc[key].push(item);
       return acc;
@@ -92,20 +62,20 @@ export const Unesco = () => {
       <h1 className="unesco__title">🌍 {Unesco_Title[lang]}</h1>
       {Object.entries(grouped).map(([series, items]) => (
         <div key={series} className="unesco__series">
-          <h2 className="unesco__series-title">{series === "no-series" ? Unesco_NoSeries[lang] : `${series} (${items[0].year})`}</h2>
+          <h2 className="unesco__series-title">{series === "no-series" ? Unesco_NoSeries[lang] : `${series} (${items[0].unesco_status?.year})`}</h2>
 
           {/* карточки для мобильных */}
           <div className="unesco-cards">
             {items.map(item => (
               <div key={item.id} className="unesco-card">
                 <div className="unesco-card-row"><strong>{t.name}:</strong> <a href={item.url}>{item.name}</a></div>
-                <div className="unesco-card-row"><strong>{t.type}:</strong> {item.type}</div>
+                <div className="unesco-card-row"><strong>{t.type}:</strong> {item.unesco_status?.type}</div>
                 <div className="unesco-card-row"><strong>{t.location}:</strong> {item.location}</div>
                 {series === "no-series" && (
-                  <div className="unesco-card-row"><strong>{t.year}:</strong> {item.year}</div>
+                  <div className="unesco-card-row"><strong>{t.year}:</strong> {item.unesco_status?.year}</div>
                 )}
-                <div className="unesco-card-row"><strong>{t.criteria}:</strong> {item.criteria}</div>
-                <div className="unesco-card-row"><strong>{t.epoch}:</strong> {item.epoch}</div>
+                <div className="unesco-card-row"><strong>{t.criteria}:</strong> {item.unesco_status?.criteria}</div>
+                <div className="unesco-card-row"><strong>{t.epoch}:</strong> {item.unesco_status?.epoch}</div>
               </div>
             ))}
           </div>
@@ -125,12 +95,18 @@ export const Unesco = () => {
             <tbody>
               {items.map(item => (
                 <tr key={item.id}>
-                  <td className="unesco__name"><a href={item.url}>{item.name}</a></td>
-                  <td>{item.type}</td>
+                  <td className="unesco__name">
+                    <Link
+                      to={`/${item.countryPath}/${item.regionPath}/${item.districtPath}/${item.cityPath}/attractions/${item.path}`}
+                    >
+                      {item.name}
+                    </Link>
+                  </td>
+                  <td>{item.unesco_status?.type}</td>
                   <td>{item.location}</td>
-                  {series === "no-series" && <td>{item.year}</td>}
-                  <td>{item.criteria}</td>
-                  <td>{item.epoch}</td>
+                  {series === "no-series" && <td>{item.unesco_status?.year}</td>}
+                  <td>{item.unesco_status?.criteria}</td>
+                  <td>{item.unesco_status?.epoch}</td>
                 </tr>
               ))}
             </tbody>

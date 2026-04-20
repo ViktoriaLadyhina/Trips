@@ -321,9 +321,9 @@ const Map = () => {
                   <li><Link to="/luxembourg/routes/seven_castles">{t.routes.seven_castles[lang]}</Link></li>
                 </ul>
               </li>
-              <li><span>{t.regions.mersch[lang]}</span>
+              <li><Link to="/luxembourg/mersch">{t.regions.mersch[lang]}</Link>
                 <ul>
-                  <li><span>{t.cities.ansembourg[lang]}</span>
+                  <li><Link to="/luxembourg/mersch/city/ansembourg">{t.cities.ansembourg[lang]}</Link>
                     <ul>
                       <li><Link to="/luxembourg/mersch/city/ansembourg/attractions/ansembourg_castle">{t.attractions.ansembourg_castle[lang]}</Link></li>
                     </ul>
@@ -341,7 +341,15 @@ const Map = () => {
               </li>
               <li><Link to="/luxembourg/luxembourg_canton">{t.regions.luxembourg_canton[lang]}</Link>
                 <ul>
-                  <li><Link to="/luxembourg/luxembourg_canton/city/luxembourg_city"> {t.cities.luxembourg_city[lang]}</Link></li>
+                  <li><Link to="/luxembourg/luxembourg_canton/city/luxembourg_city"> {t.cities.luxembourg_city[lang]}</Link>
+                  <ul>
+                    <li><Link to="/luxembourg/luxembourg_canton/city/luxembourg_city/attractions/musee_drai_eechelen_luxembourg">{t.attractions.musee_drai_eechelen_luxembourg[lang]}</Link>
+                    <ul>
+                      <li><Link to="/luxembourg/luxembourg_canton/city/luxembourg_city/attractions/fort_thungen_luxembourg">{t.attractions.fort_thungen_luxembourg[lang]}</Link></li>
+                    </ul>
+                    </li>
+                  </ul>
+                  </li>
                 </ul>
               </li>
             </ul>

@@ -70,6 +70,7 @@ const AttractionsList = () => {
         datas.countries[countryPath]?.[lang] ||
         '';
 
+
     const meta = {
         title: locationName ? `${base} – ${locationName}` : base,
         description: {
@@ -169,6 +170,7 @@ const AttractionsList = () => {
         });
     }, [listAttractions, filters.sort]);
 
+
 // для карты
     const visibleAttractions = showAll ? allAttractions : mapAttractions;
 
@@ -188,7 +190,7 @@ const AttractionsList = () => {
         city?.name
             ? {
                 label: city.name,
-                path: `/${countryPath}/${regionPath}${districtPath && districtPath !== "city" ? '/' + districtPath : ''}/${city.path}`
+                path: `/${countryPath}/${regionPath}/${districtPath}/${city.path}`
             }
             : null,
         { label: attractionsTitle[lang] }

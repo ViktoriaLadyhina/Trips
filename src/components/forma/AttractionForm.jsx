@@ -361,6 +361,7 @@ const AttractionForm = () => {
             {watchedFields.country === "luxembourg" && (
               <>
                 <option value="mersch">Кантон Мерш</option>
+                <option value="luxembourg_canton">Кантон Люксембург</option>
                 <option value="capellen">Кантон Капеллен</option>
               </>
             )}
@@ -393,6 +394,11 @@ const AttractionForm = () => {
               </>
             )}
             {watchedFields.country === "ukraine" && watchedFields.region === "sumska" && (
+              <>
+                <option value="city">Город обласного значения</option>
+              </>
+            )}
+            {watchedFields.country === "luxembourg" && (
               <>
                 <option value="city">Город обласного значения</option>
               </>
@@ -439,6 +445,7 @@ const AttractionForm = () => {
             )}
             {watchedFields.country === "luxembourg" && watchedFields.district === "city" && (
               <>
+                <option value="luxembourg_city">Люксембург</option>
                 <option value="ansembourg">Деревня Ансембург</option>
                 <option value="koerich">Деревня Кёрих</option>
               </>

@@ -1,5 +1,5 @@
 const datas = [
-    // Люксембург
+
     {
         id: "koerich",
         path: "koerich",

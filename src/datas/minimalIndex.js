@@ -199,6 +199,8 @@ const datas =
     //luxembourg
     ansembourg_castle: { ru: 'Замок-дворец Ансембург', de: 'Schloss Ansembourg', ua: 'Палац-замок Ансембурґ' },
     koerich_castle: { ru: 'Замок Керих', de: 'Burg Koerich', ua: 'Замок Кьоріх' },
+    musee_drai_eechelen_luxembourg: { ru: 'Музей «Три жёлудя»', de: 'Museum „Drei Eicheln“', ua: 'Музей «Три жолуді»' },
+    fort_thungen_luxembourg: { ru: 'Форт Тюнген', de: 'Fort Thüngen', ua: 'Форт Тюнген' },
 
     // Ukraine
     // Sumska oblast

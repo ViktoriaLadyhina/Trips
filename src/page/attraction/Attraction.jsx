@@ -115,7 +115,7 @@ const Attraction = () => {
     
     
 
-    const isLuxembourgLike = countryPath === "luxembourg";
+
 
     // Хлебные крошки
     const crumbs = [
@@ -128,7 +128,7 @@ const Attraction = () => {
 
         regionPath && datas.regions[regionPath]?.[lang] ? {
             label: datas.regions[regionPath][lang],
-            path: isLuxembourgLike ? undefined : `/${countryPath}/${regionPath}`,
+            path: `/${countryPath}/${regionPath}`,
         } : null,
 
         districtPath && districtPath !== "city" && datas.districts[districtPath]?.[lang] ? {
@@ -141,9 +141,7 @@ const Attraction = () => {
         cityPath
             ? {
                 label: datas.cities[cityPath]?.[lang],
-                path: isLuxembourgLike
-                    ? undefined
-                    : districtPath === "city"
+                path: districtPath === "city"
                         ? `/${countryPath}/${regionPath}/city/${cityPath}`
                         : `/${countryPath}/${regionPath}/${districtPath}/${cityPath}`,
             }
