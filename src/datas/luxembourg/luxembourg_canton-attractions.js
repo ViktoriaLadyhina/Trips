@@ -10,7 +10,7 @@ const datas = [
     translations: {
       ru: {
         name: "Музей «Три жёлудя»",
-        location: "Люксембург, Люксембург",
+        location: "Люксембург",
         officialSite: [{ bold: "Официальный сайт", link: "https://m3e.public.lu/fr.html" }],
         short_description: "Музей «Три жёлудя» – музей истории крепости Люксембурга, расположен на территории исторического Форта Тюнген. Экспозиции музея посвящены военной архитектуре, развитию города и его стратегическому значению в Европе.",
         subObjects_title: "Часть музейного комплекса «Три жёлудя»",
@@ -72,7 +72,7 @@ const datas = [
       },
       ua: {
         name: "Музей «Три жолуді»",
-        location: "Люксембург, Люксембург",
+        location: "Люксембург",
         officialSite: [{ bold: "Офіційний сайт", link: "https://m3e.public.lu/fr.html" }],
         short_description: "Музей «Три жолуді» – музей історії фортеці Люксембурга, розташований на території історичного Форту Тюнген. Експозиції музею присвячені військовій архітектурі, розвитку міста та його стратегічному значенню в Європі.",
         subObjects_title: "Частина музейного комплексу «Три жолуді»",
@@ -134,7 +134,7 @@ const datas = [
       },
       de: {
         name: "Museum „Drei Eicheln“",
-        location: "Luxemburg, Luxemburg",
+        location: "Luxemburg",
         officialSite: [{ bold: "Offizielle Website", link: "https://m3e.public.lu/fr.html" }],
         short_description: "Das Museum „Drei Eicheln“ ist ein Museum zur Geschichte der Festung Luxemburg und befindet sich auf dem Gelände des historischen Fort Thüngen. Die Ausstellungen widmen sich der Militärarchitektur, der Stadtentwicklung und ihrer strategischen Bedeutung in Europa.",
         subObjects_title: "Teil des Museumskomplexes „Drei Eicheln“",
@@ -206,11 +206,11 @@ const datas = [
     translations: {
       ru: {
         name: "Форт Тюнген",
-        location: "Люксембург, Люксембург",
+        location: "Люксембург",
         unesco_status: {
           included: true,
           year: 1984,
-          type: "Культурное наследие ЮНЕСКО",
+          type: "Культурное наследие",
           criteria: "iv",
           epoch: "Новое время (фортификационная архитектура XVIII–XIX вв.)",
           series: "Старый город Люксембурга и его укрепления"
@@ -261,11 +261,11 @@ const datas = [
       },
       ua: {
         name: "Форт Тюнген",
-        location: "Люксембург, Люксембург",
+        location: "Люксембург",
         unesco_status: {
           included: true,
           year: 1984,
-          type: "Культурна спадщина ЮНЕСКО",
+          type: "Культурна спадщина",
           criteria: "iv",
           epoch: "Новий час (фортифікаційна архітектура XVIII–XIX ст.)",
           series: "Старе місто Люксембурга та його укріплення"
@@ -316,11 +316,11 @@ const datas = [
       },
       de: {
         name: "Fort Thüngen",
-        location: "Luxemburg, Luxemburg",
+        location: "Luxemburg",
         unesco_status: {
           included: true,
           year: 1984,
-          type: "UNESCO-Kulturerbe",
+          type: "Kulturerbe",
           criteria: "iv",
           epoch: "Neuzeit (Festungsarchitektur des 18.–19. Jahrhunderts)",
           series: "Altstadt Luxemburgs und ihre Befestigungsanlagen"
@@ -367,6 +367,162 @@ const datas = [
           ogDescription: "Historisches Fort aus dem 18. Jahrhundert in Luxemburg, erhaltenes Element der Festungsanlage und Teil eines Museumskomplexes.",
           keywords: "Fort Thüngen, Festung Luxemburg, Luxemburg Befestigungen, Militärarchitektur, Kirchberg Luxemburg, Sehenswürdigkeiten Luxemburg, Geschichte Luxemburgs, UNESCO Luxemburg",
           ogImage: "https://our-travels.info/foto/Luxembourg/luxembourg_canton/luxembourg_city/musee_drai_eechelen/002.jpg"
+        }
+      }
+    }
+  },
+  {
+    id: "old_town_luxembourg",
+    type: ["historical_area"], rating: "top",
+    path: "old_town_luxembourg",
+    countryPath: "luxembourg", regionPath: "luxembourg_canton", districtPath: "city", cityPath: "luxembourg_city",
+    fotoCard: "Luxembourg/luxembourg_canton/luxembourg_city/old_town/001.jpg",
+    translations: {
+      ru: {
+        name: "Старый город Люксембурга",
+        location: "Люксембург",
+        unesco_status: {
+          included: true,
+          year: 1994,
+          type: "Культурное наследие",
+          criteria: "iv",
+          epoch: "Средневековье – Новое время (X–XIX вв., фортификационная архитектура)",
+          series: "Старый город Люксембурга и его укрепления"
+        },
+        short_description: "Старый город Люксембурга – это исторический центр столицы с узкими улицами, старинной застройкой и живописными видами на долины рек Альзет и Петрюс. Здесь сосредоточены главные архитектурные памятники, мосты и укрепления, отражающие многовековую историю города. Район сочетает атмосферу средневекового города с современной городской жизнью.",
+        full_description: {
+          title: "Описание и история",
+          items: [
+            { bold: "Старый город Люксембурга ", text: "– это исторический центр столицы с узкими улицами, старинной застройкой и выразительным рельефом, открывающим виды на долины рек Альзет и Петрюс. Район сформировался вокруг скального плато и на протяжении веков развивался как укреплённый городской центр, где тесно переплетаются архитектура разных эпох и природный ландшафт." },
+            { text: "Сегодня это живой городской район, где историческая среда сочетается с современной жизнью. Здесь расположены смотровые площадки, площади, музеи и прогулочные маршруты, позволяющие увидеть разные уровни города – от верхнего центра до нижних кварталов." },
+            { bold: "История города ", text: "начинается в 963 году, когда граф Зигфрид Люксембургский приобрёл скалу Бок и построил на ней укреплённый замок. Благодаря выгодному стратегическому положению поселение быстро стало важным оборонительным центром региона." },
+            { text: "В последующие века город переходил под власть различных европейских держав, включая Бургундию, Испанию, Францию и Австрийскую монархию. Благодаря своему стратегическому положению Люксембург постоянно укреплялся и развивался как одна из ключевых крепостей Европы. В XVII–XVIII веках Люксембург получил репутацию «Северного Гибралтара», а после Лондонского договора 1867 года значительная часть укреплений была разобрана, что открыло путь к развитию современного города." }
+          ]
+        },
+        tickets_and_entry: {
+          title: "Практическая информация",
+          items: [
+            { bold: "Адрес:", text: "Ville Haute, Luxembourg City, Luxembourg" },
+            { bold: "Лучшее время:", text: "весна-осень, особенно утром или на закате" }
+          ]
+        },
+        interestingFacts: {
+          title: "Интересные факты",
+          isList: true,
+          items: [
+            { text: "Старый город входит в список ЮНЕСКО с 1994 года " },
+            { text: "Под городом находится сеть подземных тоннелей – казематов " },
+            { text: "Общая длина укреплений достигала десятков километров " },
+            { text: "Люксембург долгое время считался одной из самых укреплённых крепостей Европы " }
+          ]
+        },
+        construction_period: "963 год",
+        founder: "Зигфрид Люксембургский",
+        meta: {
+          title: "Старый город Люксембурга – история, достопримечательности и советы туристам",
+          description: "Узнайте всё о Старом городе Люксембурга: история, казематы, лучшие места и практическая информация для туристов.",
+          ogTitle: "Старый город Люксембурга – сердце страны и объект ЮНЕСКО",
+          ogDescription: "Погрузитесь в атмосферу средневекового Люксембурга: крепости, мосты и лучшие виды города.",
+          keywords: "старый город люксембурга, казематы бок, достопримечательности люксембурга, что посмотреть в люксембурге, люксембург центр, люксембург старый город, люксембург укрепления, юнеско люксембург, история люксембурга",
+          ogImage: "https://our-travels.info/foto/Luxembourg/luxembourg_canton/luxembourg_city/old_town/001.jpg"
+        }
+      },
+      ua: {
+        name: "Старе місто Люксембурга",
+        location: "Люксембург",
+        unesco_status: {
+          included: true,
+          year: 1994,
+          type: "Культурна спадщина",
+          criteria: "iv",
+          epoch: "Середньовіччя – Новий час (X–XIX ст., фортифікаційна архітектура)",
+          series: "Старе місто Люксембурга та його укріплення"
+        },
+        short_description: "Старе місто Люксембурга – це історичний центр столиці з вузькими вуличками, старовинною забудовою та мальовничими видами на долини річок Альзет і Петрус. Тут зосереджені головні архітектурні пам’ятки, мости та укріплення, що відображають багатовікову історію міста. Район поєднує атмосферу середньовічного міста із сучасним міським життям.",
+        full_description: {
+          title: "Опис і історія",
+          items: [
+            { bold: "Старе місто Люксембурга ", text: "– це історичний центр столиці з вузькими вуличками, старовинною забудовою та виразним рельєфом, який відкриває види на долини річок Альзет і Петрус. Район сформувався навколо скелястого плато і протягом століть розвивався як укріплений міський центр, де тісно переплітаються архітектура різних епох і природний ландшафт." },
+            { text: "Сьогодні це живий міський район, де історичне середовище поєднується із сучасним життям. Тут розташовані оглядові майданчики, площі, музеї та прогулянкові маршрути, які дозволяють побачити різні рівні міста – від верхнього центру до нижніх кварталів." },
+            { bold: "Історія міста ", text: "починається у 963 році, коли граф Зігфрід Люксембурзький придбав скелю Бок і побудував на ній укріплений замок. Завдяки вигідному стратегічному положенню поселення швидко стало важливим оборонним центром регіону." },
+            { text: "У наступні століття місто переходило під владу різних європейських держав, включаючи Бургундію, Іспанію, Францію та Австрійську монархію. Завдяки своєму стратегічному положенню Люксембург постійно укріплювався і розвивався як одна з ключових фортець Європи. У XVII–XVIII століттях він отримав назву «Північний Гібралтар», а після Лондонського договору 1867 року значну частину укріплень було демонтовано, що відкрило шлях до розвитку сучасного міста." }
+          ]
+        },
+        tickets_and_entry: {
+          title: "Практична інформація",
+          items: [
+            { bold: "Адреса:", text: "Ville Haute, Luxembourg City, Luxembourg" },
+            { bold: "Найкращий час:", text: "весна–осінь, особливо вранці або на заході сонця" }
+          ]
+        },
+        interestingFacts: {
+          title: "Цікаві факти",
+          isList: true,
+          items: [
+            { text: "Старе місто входить до списку ЮНЕСКО з 1994 року" },
+            { text: "Під містом знаходиться мережа підземних тунелів – казематів" },
+            { text: "Загальна довжина укріплень сягала десятків кілометрів" },
+            { text: "Люксембург тривалий час вважався однією з найбільш укріплених фортець Європи" }
+          ]
+        },
+        construction_period: "963 рік",
+        founder: "Зігфрід Люксембурзький",
+        meta: {
+          title: "Старе місто Люксембурга – історія, пам’ятки та поради туристам",
+          description: "Дізнайтеся все про Старе місто Люксембурга: історія, каземати, найкращі місця та практична інформація для туристів.",
+          ogTitle: "Старе місто Люксембурга – серце країни та об’єкт ЮНЕСКО",
+          ogDescription: "Пориньте в атмосферу середньовічного Люксембурга: фортеці, мости та найкращі види міста.",
+          keywords: "старе місто люксембурга, каземати бок, пам’ятки люксембурга, що подивитися в люксембурзі, люксембург центр, люксембург старе місто, укріплення люксембурга, юнеско люксембург, історія люксембурга",
+          ogImage: "https://our-travels.info/foto/Luxembourg/luxembourg_canton/luxembourg_city/old_town/001.jpg"
+        }
+      },
+      de: {
+        name: "Altstadt Luxemburg",
+        location: "Luxemburg",
+        unesco_status: {
+          included: true,
+          year: 1994,
+          type: "Kulturerbe",
+          criteria: "iv",
+          epoch: "Mittelalter – Neuzeit (10.–19. Jh., Festungsarchitektur)",
+          series: "Altstadt von Luxemburg und ihre Befestigungen"
+        },
+        short_description: "Die Altstadt Luxemburg ist das historische Zentrum der Hauptstadt mit engen Gassen, historischer Bebauung und malerischen Ausblicken auf die Täler der Flüsse Alzette und Petruss. Hier konzentrieren sich die wichtigsten architektonischen Denkmäler, Brücken und Befestigungsanlagen, die die jahrhundertelange Geschichte der Stadt widerspiegeln. Das Viertel verbindet die Atmosphäre einer mittelalterlichen Stadt mit dem modernen Stadtleben.",
+        full_description: {
+          title: "Beschreibung und Geschichte",
+          items: [
+            { bold: "Die Altstadt Luxemburg ", text: "ist das historische Zentrum der Hauptstadt mit engen Gassen, historischer Bebauung und einer ausgeprägten Topografie mit Blick auf die Täler der Flüsse Alzette und Petruss. Das Gebiet entwickelte sich rund um ein Felsplateau und wuchs über Jahrhunderte zu einem befestigten städtischen Zentrum, in dem sich Architektur verschiedener Epochen und die natürliche Landschaft eng miteinander verbinden." },
+            { text: "Heute ist es ein lebendiges Stadtviertel, in dem historische Umgebung und modernes Leben miteinander verschmelzen. Es gibt Aussichtspunkte, Plätze, Museen und Spazierwege, die es ermöglichen, verschiedene Ebenen der Stadt zu erleben – vom oberen Zentrum bis zu den unteren Vierteln." },
+            { bold: "Die Geschichte der Stadt ", text: "beginnt im Jahr 963, als Graf Siegfried von Luxemburg den Felsen Bock erwarb und dort eine befestigte Burg errichten ließ. Aufgrund der strategisch günstigen Lage entwickelte sich die Siedlung schnell zu einem wichtigen Verteidigungszentrum der Region." },
+            { text: "In den folgenden Jahrhunderten stand die Stadt unter der Herrschaft verschiedener europäischer Mächte, darunter Burgund, Spanien, Frankreich und die österreichische Monarchie. Aufgrund ihrer strategischen Lage wurde Luxemburg kontinuierlich befestigt und entwickelte sich zu einer der bedeutendsten Festungen Europas. Im 17. und 18. Jahrhundert erhielt es den Beinamen „Gibraltar des Nordens“, und nach dem Londoner Vertrag von 1867 wurden große Teile der Befestigungen abgetragen, was den Weg für die moderne Stadtentwicklung öffnete." }
+          ]
+        },
+        tickets_and_entry: {
+          title: "Praktische Informationen",
+          items: [
+            { bold: "Adresse:", text: "Ville Haute, Luxembourg City, Luxembourg" },
+            { bold: "Beste Zeit:", text: "Frühling–Herbst, besonders morgens oder bei Sonnenuntergang" }
+          ]
+        },
+        interestingFacts: {
+          title: "Interessante Fakten",
+          isList: true,
+          items: [
+            { text: "Die Altstadt gehört seit 1994 zum UNESCO-Welterbe" },
+            { text: "Unter der Stadt befindet sich ein Netzwerk aus unterirdischen Tunneln – den Kasematten" },
+            { text: "Die Gesamtlänge der Befestigungen betrug mehrere Dutzend Kilometer" },
+            { text: "Luxemburg galt lange Zeit als eine der am stärksten befestigten Festungen Europas" }
+          ]
+        },
+        construction_period: "963",
+        founder: "Siegfried von Luxemburg",
+        meta: {
+          title: "Altstadt von Luxemburg – Geschichte, Sehenswürdigkeiten und Reisetipps",
+          description: "Erfahren Sie alles über die Altstadt von Luxemburg: Geschichte, Kasematten, Sehenswürdigkeiten und praktische Informationen für Besucher.",
+          ogTitle: "Altstadt von Luxemburg – Herz des Landes und UNESCO-Welterbe",
+          ogDescription: "Tauchen Sie ein in die mittelalterliche Atmosphäre Luxemburgs: Festungen, Brücken und beeindruckende Ausblicke.",
+          keywords: "altstadt luxemburg, kasematten bock, sehenswürdigkeiten luxemburg, luxemburg altstadt, luxemburg stadtzentrum, festungen luxemburg, unesco luxemburg, geschichte luxemburg",
+          ogImage: "https://our-travels.info/foto/Luxembourg/luxembourg_canton/luxembourg_city/old_town/001.jpg"
         }
       }
     }

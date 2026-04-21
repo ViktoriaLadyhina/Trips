@@ -201,6 +201,7 @@ const datas =
     koerich_castle: { ru: 'Замок Керих', de: 'Burg Koerich', ua: 'Замок Кьоріх' },
     musee_drai_eechelen_luxembourg: { ru: 'Музей «Три жёлудя»', de: 'Museum „Drei Eicheln“', ua: 'Музей «Три жолуді»' },
     fort_thungen_luxembourg: { ru: 'Форт Тюнген', de: 'Fort Thüngen', ua: 'Форт Тюнген' },
+    old_town_luxembourg: { ru: 'Старый город Люксембурга', de: 'Altstadt Luxemburg', ua: 'Старе місто Люксембурга' },
 
     // Ukraine
     // Sumska oblast

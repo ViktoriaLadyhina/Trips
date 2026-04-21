@@ -18,6 +18,7 @@ import luxembourg_land from '../../datas/luxembourg/lands'
 import lu_routes from '../../datas/luxembourg/routes'
 import capellen_city from '../../datas/luxembourg/capellen-city'
 import luxembourg_canton_city from '../../datas/luxembourg/luxembourg_canton-city'
+import mersch_city from '../../datas/luxembourg/mersch-city'
 import mersch_attr from '../../datas/luxembourg/mersch-attractions'
 import capellen_attr from '../../datas/luxembourg/capellen-attractions'
 import luxembourg_canton_attr from '../../datas/luxembourg/luxembourg_canton-attractions'
@@ -68,6 +69,7 @@ const searchIndex = {
         land: luxembourg_land,
         mersch: {
             attractions: mersch_attr,
+            city: mersch_city,
         },
         capellen: {
             attractions: capellen_attr,

@@ -13,7 +13,11 @@
   }
 
   .smaller-text {
-    font-size: 0.8em; 
+    font-size: 0.8em;
+  }
+
+  span {
+    @include body-text;
   }
 
   // медиазапрос для экранов ≤400px

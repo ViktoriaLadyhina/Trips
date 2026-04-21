@@ -28,7 +28,7 @@ const Map = () => {
           <li>
             <Link to="/germany"><strong>{t.countries.germany[lang]}</strong></Link>
             <ul>
-              <li>{lang === 'ru' ? 'Мероприятия/События' : lang === 'de' ? 'Veranstaltungen' : 'Заходи'}
+              <li><span>{lang === 'ru' ? 'Мероприятия/События' : lang === 'de' ? 'Veranstaltungen' : 'Заходи'}</span>
                 <ul>
                   <li><Link to="/germany/nrw/city/koln/events/karneval_koln">{t.events.karneval_koln[lang]}</Link> <span className="smaller-text"> ({t.events.karneval_koln_city[lang]})</span></li>
                   <li><Link to="/germany/nrw/city/dortmund/events/christmas_market_dortmund">{t.events.christmas_market_dortmund[lang]}</Link> </li>
@@ -315,7 +315,7 @@ const Map = () => {
           {/* Люксембург */}<br></br><br></br>
           <li><Link to="/luxembourg"><strong>{t.countries.luxembourg[lang]}</strong></Link>
             <ul>
-              <li>{lang === 'ru' ? 'Маршруты' : lang === 'de' ? 'Routen' : 'Маршрути'}
+              <li><span>{lang === 'ru' ? 'Маршруты' : lang === 'de' ? 'Routen' : 'Маршрути'}</span>
                 <ul>
                   <li><Link to="/luxembourg/routes/mullerthal_trail">{t.routes.mullerthal_trail[lang]}</Link></li>
                   <li><Link to="/luxembourg/routes/seven_castles">{t.routes.seven_castles[lang]}</Link></li>
@@ -343,6 +343,7 @@ const Map = () => {
                 <ul>
                   <li><Link to="/luxembourg/luxembourg_canton/city/luxembourg_city"> {t.cities.luxembourg_city[lang]}</Link>
                   <ul>
+                    <li><Link to="/luxembourg/luxembourg_canton/city/luxembourg_city/attractions/old_town_luxembourg">{t.attractions.old_town_luxembourg[lang]}</Link></li>
                     <li><Link to="/luxembourg/luxembourg_canton/city/luxembourg_city/attractions/musee_drai_eechelen_luxembourg">{t.attractions.musee_drai_eechelen_luxembourg[lang]}</Link>
                     <ul>
                       <li><Link to="/luxembourg/luxembourg_canton/city/luxembourg_city/attractions/fort_thungen_luxembourg">{t.attractions.fort_thungen_luxembourg[lang]}</Link></li>

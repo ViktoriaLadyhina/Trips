@@ -76,6 +76,16 @@ export const Fotos = {
         { path: "Luxembourg/luxembourg_canton/luxembourg_city/musee_drai_eechelen/004.jpg", title: { ru: 'Форт Тюнген, 2024', de: 'Fort Thüngen, 2024', ua: 'Форт Тюнген, 2024' } },
         { path: "Luxembourg/luxembourg_canton/luxembourg_city/musee_drai_eechelen/005.jpg", title: { ru: 'Форт Тюнген, 2024', de: 'Fort Thüngen, 2024', ua: 'Форт Тюнген, 2024' } },
         { path: "Luxembourg/luxembourg_canton/luxembourg_city/musee_drai_eechelen/006.jpg", title: { ru: 'Форт Тюнген, 2024', de: 'Fort Thüngen, 2024', ua: 'Форт Тюнген, 2024' } },
+      ],
+      old_town_luxembourg: [
+        { path: "Luxembourg/luxembourg_canton/luxembourg_city/old_town/001.jpg", title: { ru: 'Старый город Люксембурга, 2024', de: 'Altstadt Luxemburg, 2024', ua: 'Старе місто Люксембурга, 2024' } },
+        { path: "Luxembourg/luxembourg_canton/luxembourg_city/old_town/002.jpg", title: { ru: 'Старый город Люксембурга, 2024', de: 'Altstadt Luxemburg, 2024', ua: 'Старе місто Люксембурга, 2024' } },
+        { path: "Luxembourg/luxembourg_canton/luxembourg_city/old_town/003.jpg", title: { ru: 'Старый город Люксембурга, 2024', de: 'Altstadt Luxemburg, 2024', ua: 'Старе місто Люксембурга, 2024' } },
+        { path: "Luxembourg/luxembourg_canton/luxembourg_city/old_town/004.jpg", title: { ru: 'Старый город Люксембурга, 2024', de: 'Altstadt Luxemburg, 2024', ua: 'Старе місто Люксембурга, 2024' } },
+        { path: "Luxembourg/luxembourg_canton/luxembourg_city/old_town/005.jpg", title: { ru: 'Старый город Люксембурга, 2024', de: 'Altstadt Luxemburg, 2024', ua: 'Старе місто Люксембурга, 2024' } },
+        { path: "Luxembourg/luxembourg_canton/luxembourg_city/old_town/006.jpg", title: { ru: 'Старый город Люксембурга, 2024', de: 'Altstadt Luxemburg, 2024', ua: 'Старе місто Люксембурга, 2024' } },
+        { path: "Luxembourg/luxembourg_canton/luxembourg_city/old_town/007.jpg", title: { ru: 'Старый город Люксембурга, 2024', de: 'Altstadt Luxemburg, 2024', ua: 'Старе місто Люксембурга, 2024' } },
+        { path: "Luxembourg/luxembourg_canton/luxembourg_city/old_town/008.jpg", title: { ru: 'Старый город Люксембурга, 2024', de: 'Altstadt Luxemburg, 2024', ua: 'Старе місто Люксембурга, 2024' } },
       ]
     }
   }
