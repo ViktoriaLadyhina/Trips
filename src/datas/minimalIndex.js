@@ -203,6 +203,7 @@ const datas =
     fort_thungen_luxembourg: { ru: 'Форт Тюнген', de: 'Fort Thüngen', ua: 'Форт Тюнген' },
     old_town_luxembourg: { ru: 'Старый город Люксембурга', de: 'Altstadt Luxemburg', ua: 'Старе місто Люксембурга' },
     casemates_du_bock_luxembourg: { ru: 'Казематы Бок', de: 'Bock-Kasematten', ua: 'Каземати Бок' },
+    abbey_neumunster_luxembourg: { ru: 'Абатство Неймюнстер', de: 'Abtei Neumünster', ua: 'Абатство Неймюнстер' },
 
     // Ukraine
     // Sumska oblast

@@ -90,22 +90,22 @@
                 object-fit: contain;
             }
 
-.gallery__caption {
-    margin-top: 5px;
-    font-size: 1rem;
-    text-align: center;
-    width: 100%;
-    white-space: normal; 
-    overflow: visible;
-    text-overflow: unset;
-}
+            .gallery__caption {
+                margin-top: 5px;
+                @include body-text;
+                text-align: center;
+                width: 100%;
+                white-space: normal;
+                overflow: visible;
+                text-overflow: unset;
+            }
         }
     }
 }
 
 @media (max-width: 590px) {
     .gallery__main-wrapper {
-        flex-direction: column; 
+        flex-direction: column;
     }
 
     .gallery__nav {
@@ -113,18 +113,18 @@
         display: flex;
         justify-content: space-between;
         margin-top: 5px;
-        width: 35px;     // сузили кнопку
-        height: 35px;    // квадратная кнопка
-                font-size: 0; // отключаем наследуемый размер текста для кнопки
+        width: 35px; // сузили кнопку
+        height: 35px; // квадратная кнопка
+        font-size: 0; // отключаем наследуемый размер текста для кнопки
 
         svg {
-            width: 20px;  // ширина стрелки
+            width: 20px; // ширина стрелки
             height: 20px; // высота стрелки
         }
     }
 
-        .gallery__image-container {
-        flex: none;       // убираем flex:1
+    .gallery__image-container {
+        flex: none; // убираем flex:1
         width: 100%;
     }
 
@@ -135,7 +135,7 @@
         object-fit: contain;
     }
 
-        .gallery__caption {
+    .gallery__caption {
         font-size: 0.6rem; // меньше шрифт на телефоне
     }
 }

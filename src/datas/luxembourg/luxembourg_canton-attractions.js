@@ -15,9 +15,9 @@ const datas = [
         short_description: "Музей «Три жёлудя» – музей истории крепости Люксембурга, расположен на территории исторического Форта Тюнген. Экспозиции музея посвящены военной архитектуре, развитию города и его стратегическому значению в Европе.",
         subObjects_title: "Часть музейного комплекса «Три жёлудя»",
         short_description_subObjects: {
-          text: "На территории музея «Три жёлудя» и его исторического окружения расположен:",
+          text: "В состав музейного комплекса «Три жёлудя» и его исторического окружения входит:",
           items: [
-            { bold: "🌍Форт Тюнген", text: "– сохранившееся оборонительное сооружение XVIII века, которое является архитектурной основой музейного пространства и частью исторического комплекса." }
+            { bold: "Форт Тюнген", text: "– сохранившееся оборонительное сооружение XVIII века, которое является архитектурной основой музейного пространства и частью исторического комплекса." }
           ]
         },
         full_description: {
@@ -77,9 +77,9 @@ const datas = [
         short_description: "Музей «Три жолуді» – музей історії фортеці Люксембурга, розташований на території історичного Форту Тюнген. Експозиції музею присвячені військовій архітектурі, розвитку міста та його стратегічному значенню в Європі.",
         subObjects_title: "Частина музейного комплексу «Три жолуді»",
         short_description_subObjects: {
-          text: "На території музею «Три жолуді» та його історичного оточення розташований:",
+          text: "До складу музейного комплексу «Три жолуді» та його історичного оточення входить:",
           items: [
-            { bold: "🌍Форт Тюнген", text: "– збережена оборонна споруда XVIII століття, яка є архітектурною основою музейного простору та частиною історичного комплексу." }
+            { bold: "Форт Тюнген", text: "– збережена оборонна споруда XVIII століття, яка є архітектурною основою музейного простору та частиною історичного комплексу." }
           ]
         },
         full_description: {
@@ -139,9 +139,9 @@ const datas = [
         short_description: "Das Museum „Drei Eicheln“ ist ein Museum zur Geschichte der Festung Luxemburg und befindet sich auf dem Gelände des historischen Fort Thüngen. Die Ausstellungen widmen sich der Militärarchitektur, der Stadtentwicklung und ihrer strategischen Bedeutung in Europa.",
         subObjects_title: "Teil des Museumskomplexes „Drei Eicheln“",
         short_description_subObjects: {
-          text: "Auf dem Gelände des Museums „Drei Eicheln“ und seiner historischen Umgebung befindet sich:",
+          text: "Zum Museumskomplex „Drei Eicheln“ und seinem historischen Umfeld gehört:",
           items: [
-            { bold: "🌍Fort Thüngen", text: "– erhaltene Verteidigungsanlage aus dem 18. Jahrhundert, die die architektonische Grundlage des Museumsraums bildet und Teil des historischen Komplexes ist." }
+            { bold: "Fort Thüngen", text: "– erhaltene Verteidigungsanlage aus dem 18. Jahrhundert, die die architektonische Grundlage des Museumsraums bildet und Teil des historischen Komplexes ist." }
           ]
         },
         full_description: {
@@ -207,14 +207,6 @@ const datas = [
       ru: {
         name: "Форт Тюнген",
         location: "Город Люксембург, Люксембург",
-        unesco_status: {
-          included: true,
-          year: 1984,
-          type: "Культурное наследие",
-          criteria: "iv",
-          epoch: "Новое время (XVIII–XIX вв., фортификационная архитектура)",
-          series: "Старый город Люксембурга и его укрепления"
-        },
         officialSite: [
           { bold: "Страница музея", link: "https://m3e.public.lu/fr.html" }
         ],
@@ -262,14 +254,6 @@ const datas = [
       ua: {
         name: "Форт Тюнген",
         location: "Місто Люксембург, Люксембург",
-        unesco_status: {
-          included: true,
-          year: 1984,
-          type: "Культурна спадщина",
-          criteria: "iv",
-          epoch: "Новий час (XVIII–XIX ст., фортифікаційна архітектура)",
-          series: "Старе місто Люксембурга та його укріплення"
-        },
         officialSite: [
           { bold: "Сторінка музею", link: "https://m3e.public.lu/fr.html" }
         ],
@@ -317,14 +301,6 @@ const datas = [
       de: {
         name: "Fort Thüngen",
         location: "Stadt Luxemburg, Luxemburg",
-        unesco_status: {
-          included: true,
-          year: 1984,
-          type: "Kulturerbe",
-          criteria: "iv",
-          epoch: "Neuzeit (18.–19. Jahrhundert, Festungsarchitektur)",
-          series: "Altstadt Luxemburgs und ihre Befestigungsanlagen"
-        },
         officialSite: [
           { bold: "Museumsseite", link: "https://m3e.public.lu/fr.html" }
         ],
@@ -377,7 +353,7 @@ const datas = [
     path: "old_town_luxembourg",
     countryPath: "luxembourg", regionPath: "luxembourg_canton", districtPath: "city", cityPath: "luxembourg_city",
     fotoCard: "Luxembourg/luxembourg_canton/luxembourg_city/old_town/001.jpg",
-    subObjects: ["casemates_du_bock_luxembourg"],
+    subObjects: ["casemates_du_bock_luxembourg", "abbey_neumunster_luxembourg"],
     translations: {
       ru: {
         name: "Старый город Люксембурга",
@@ -394,7 +370,8 @@ const datas = [
         short_description_subObjects: {
           text: "На территории Старого города Люксембурга и его исторических укреплений расположены:",
           items: [
-            { bold: "🌍Казематы Бок", text: "– система подземных оборонительных туннелей, вырубленных в скале Бок, являющаяся частью бывшей крепостной системы города и одним из ключевых элементов фортификационного наследия Люксембурга." }
+            { bold: "Казематы Бок", text: "– система подземных оборонительных туннелей, вырубленных в скале Бок, являющаяся частью бывшей крепостной системы города и одним из ключевых элементов фортификационного наследия Люксембурга." },
+            { bold: "Аббатство Ноймюнстер", text: "– историческое аббатство XVII века в районе Грунд, преобразованное в современный культурный центр с выставками и мероприятиями." }
           ]
         },
         full_description: {
@@ -449,7 +426,8 @@ const datas = [
         short_description_subObjects: {
           text: "На території Старого міста Люксембурга та його історичних укріплень розташовані:",
           items: [
-            { bold: "🌍 Каземати Бок", text: "– система підземних оборонних тунелів, вирубаних у скелі Бок, яка є частиною колишньої фортифікаційної системи міста та одним із ключових елементів фортифікаційної спадщини Люксембурга." }
+            { bold: "Каземати Бок", text: "– система підземних оборонних тунелів, вирубаних у скелі Бок, яка є частиною колишньої фортифікаційної системи міста та одним із ключових елементів фортифікаційної спадщини Люксембурга." },
+            { bold: "Абатство Ноймюнстер", text: "– історичне абатство XVII століття в районі Грунд, перетворене на сучасний культурний центр із виставками та заходами." }
           ]
         },
         full_description: {
@@ -504,9 +482,8 @@ const datas = [
         short_description_subObjects: {
           text: "Auf dem Gebiet der Altstadt von Luxemburg und ihrer historischen Befestigungen befinden sich:",
           items: [
-            {
-              bold: "🌍 Bock-Kasematten", text: "– ein System unterirdischer Verteidigungstunnel, die in den Bockfelsen gehauen wurden, das Teil des ehemaligen Festungssystems der Stadt ist und eines der wichtigsten Elemente des fortifikatorischen Erbes Luxemburgs darstellt."
-            }
+            { bold: "Bock-Kasematten", text: "– ein System unterirdischer Verteidigungstunnel, die in den Bockfelsen gehauen wurden, das Teil des ehemaligen Festungssystems der Stadt ist und eines der wichtigsten Elemente des fortifikatorischen Erbes Luxemburgs darstellt." },
+            { bold: "Abtei Neumünster", text: "– eine historische Abtei aus dem 17. Jahrhundert im Stadtteil Grund, die in ein modernes Kulturzentrum mit Ausstellungen und Veranstaltungen umgewandelt wurde." }
           ]
         },
         full_description: {
@@ -555,19 +532,11 @@ const datas = [
     countryPath: "luxembourg", regionPath: "luxembourg_canton", districtPath: "city", cityPath: "luxembourg_city",
     hiddenFromList: true, showMore: true,
     fotoCard: "Luxembourg/luxembourg_canton/luxembourg_city/old_town/casemates/001.jpg",
-    coord: { lat: 49.611836, lng: 6.136937 },
+    coord: { lat: 49.611471586964306, lng: 6.136216298265006 },
     translations: {
       ru: {
         name: "Казематы Бок",
         location: "Город Люксембург, Люксембург",
-        unesco_status: {
-          included: true,
-          year: 1994,
-          type: "Культурное наследие",
-          criteria: "iv",
-          epoch: "Новое время (XVII–XVIII вв., фортификационная архитектура)",
-          series: "Старый город Люксембурга и его укрепления"
-        },
         short_description: "Казематы Бок – это система подземных оборонительных галерей, вырубленных в скале Бок в Люксембурге. Они являются частью бывших крепостных укреплений города. Подземные коридоры использовались для защиты, размещения солдат и хранения вооружения.",
         full_description: {
           title: "Описание и история",
@@ -614,14 +583,6 @@ const datas = [
       ua: {
         name: "Каземати Бок",
         location: "Місто Люксембург, Люксембург",
-        unesco_status: {
-          included: true,
-          year: 1994,
-          type: "Культурна спадщина",
-          criteria: "iv",
-          epoch: "Новий час (XVII–XVIII ст., фортифікаційна архітектура)",
-          series: "Старе місто Люксембурга та його укріплення"
-        },
         short_description: "Каземати Бок – це система підземних оборонних галерей, вирубаних у скелі Бок у Люксембурзі. Вони є частиною колишніх міських фортифікацій. Підземні коридори використовувалися для захисту, розміщення солдатів і зберігання озброєння.",
         full_description: {
           title: "Опис та історія",
@@ -668,14 +629,6 @@ const datas = [
       de: {
         name: "Bock-Kasematten",
         location: "Stadt Luxemburg, Luxemburg",
-        unesco_status: {
-          included: true,
-          year: 1994,
-          type: "Kulturerbe",
-          criteria: "iv",
-          epoch: "Neuzeit (17.–18. Jahrhundert, Festungsarchitektur)",
-          series: "Altstadt von Luxemburg und ihre Befestigungen"
-        },
         short_description: "Die Bock-Kasematten sind ein System unterirdischer Verteidigungsgalerien, die in den Bockfelsen in Luxemburg gehauen wurden. Sie sind Teil der ehemaligen Stadtbefestigungen. Die unterirdischen Gänge wurden zur Verteidigung, zur Unterbringung von Soldaten und zur Lagerung von Waffen genutzt.",
         full_description: {
           title: "Beschreibung und Geschichte",
@@ -717,6 +670,158 @@ const datas = [
           ogDescription: "Eine der außergewöhnlichsten Sehenswürdigkeiten Luxemburgs – ein Netzwerk unterirdischer Kasematten mit jahrhundertealter Geschichte und Panoramablicken.",
           keywords: "Bock-Kasematten, Luxemburg, unterirdische Kasematten, Festung Luxemburg, UNESCO Luxemburg, Sehenswürdigkeiten Luxemburg, Altstadt Luxemburg, Befestigungsanlagen, unterirdische Tunnel, historische Befestigungen, Casemates du Bock, was man in Luxemburg sehen kann, Führungen Luxemburg, Bockfelsen, Militärarchitektur Europa",
           ogImage: "https://our-travels.info/foto/Luxembourg/luxembourg_canton/luxembourg_city/old_town/casemates/001.jpg"
+        }
+      }
+    }
+  },
+  {
+    id: "abbey_neumunster_luxembourg",
+    type: ["cathedral"], rating: "popular",
+    path: "abbey_neumunster_luxembourg",
+    countryPath: "luxembourg", regionPath: "luxembourg_canton", districtPath: "city", cityPath: "luxembourg_city",
+    hiddenFromList: true, showMore: true,
+    fotoCard: "Luxembourg/luxembourg_canton/luxembourg_city/old_town/abbey_neumunster/001.jpg",
+    coord: { lat: 49.61083, lng: 6.13699 },
+    translations: {
+      ru: {
+        name: "Аббатство Ноймюнстер",
+        location: "Город Люксембург, Люксембург",
+        officialSite: [
+          { bold: "Официальный сайт", link: "https://www.neimenster.lu/?utm_source=chatgpt.com" }
+        ],
+        short_description: "Аббатство Ноймюнстер – исторический комплекс в районе Грунд в Люксембурге, расположенный у подножия старого города. Сегодня он функционирует как культурный центр с выставками, концертами и общественными мероприятиями. Здание сочетает многовековую историю с современной культурной жизнью города.",
+        full_description: {
+          title: "Описание и история",
+          items: [
+            { bold: "Аббатство Ноймюнстер", text: "один из самых атмосферных исторических комплексов в нижнем городе Люксембурга, расположенный в районе Грунд у подножия скал. Сегодня это не религиозное учреждение, а современный культурный центр, где проходят выставки, концерты, фестивали и общественные мероприятия." },
+            { text: "Комплекс гармонично сочетает старинную архитектуру и современные функции. Каменные фасады, арочные проходы и внутренние дворики создают особую атмосферу, благодаря которой место популярно как среди туристов, так и у местных жителей." },
+            { text: "Аббатство находится в историческом центре Люксембурга, который включён в список всемирного наследия ЮНЕСКО." },
+            { bold: "История аббатства ", text: "начинается в XVII веке, когда монахи-бенедиктинцы построили его после разрушения предыдущего монастыря во время Тридцатилетней войны. Новое здание возвели в более защищённом месте – в долине реки Альзет." },
+            { text: "В последующие века комплекс неоднократно менял своё назначение. После секуляризации церковных земель он утратил монастырскую функцию и был переоборудован под различные государственные нужды. В разные периоды здесь размещались казармы, административные службы и даже тюремные помещения. Такое использование сильно изменило первоначальный характер здания, превратив его из религиозного центра в утилитарный государственный объект." },
+            { text: "Особенно сложной и мрачной страницей в истории комплекса стало время Второй мировой войны. Во время немецкой оккупации здание использовалось нацистскими властями как место заключения и временного содержания людей. Эти события оставили заметный след в исторической памяти города, поэтому сегодня аббатство воспринимается не только как архитектурный памятник, но и как свидетель непростых этапов европейской истории." },
+            { text: "После войны комплекс постепенно утратил репрессивные функции и был переосмыслен как культурное пространство, что стало символическим шагом в его “второй жизни”. Сегодня оно известно как площадка для международных событий, включая фестивали и выставки." }
+          ]
+        },
+        tickets_and_entry: {
+          title: "Практическая информация",
+          items: [
+            { bold: "Адрес:", text: "28, Rue Münster, L-2160 Luxembourg, Luxembourg" },
+            { bold: "Доступ:", text: "территория открыта для посещения (время зависит от мероприятий)" },
+            { bold: "Вход:", text: "часто бесплатный, платный – на отдельные события" }
+          ]
+        },
+        interestingFacts: {
+          title: "Интересные факты",
+          isList: true,
+          items: [
+            { text: "Аббатство находится в одной из самых живописных частей города – внизу под крепостными стенами. " },
+            { text: "Комплекс неоднократно менял своё назначение – от монастыря до тюрьмы. " },
+            { text: "Сегодня это один из главных культурных центров Люксембурга. " },
+            { text: "Часто используется как площадка для open-air мероприятий летом. " }
+          ]
+        },
+        construction_period: "XVII век (около 1606-1616 гг.)",
+        meta: {
+          title: "Аббатство Ноймюнстер в Люксембурге – история, фото, посещение",
+          description: "Аббатство Ноймюнстер в Люксембурге – исторический монастырь XVII века в районе Грунд, сегодня культурный центр с выставками и мероприятиями.",
+          ogTitle: "Аббатство Ноймюнстер – культурный центр в сердце Люксембурга",
+          ogDescription: "Откройте для себя аббатство Ноймюнстер – историческое место с уникальной атмосферой, выставками и событиями в Люксембурге.",
+          keywords: "аббатство Ноймюнстер, Люксембург достопримечательности, Грунд Люксембург, культурный центр Люксембург",
+          ogImage: "https://our-travels.info/foto/Luxembourg/luxembourg_canton/luxembourg_city/old_town/abbey_neumunster/001.jpg"
+        }
+      },
+      ua: {
+        name: "Абатство Ноймюнстер",
+        location: "Місто Люксембург, Люксембург",
+        officialSite: [
+          { bold: "Офіційний сайт", link: "https://www.neimenster.lu/?utm_source=chatgpt.com" }
+        ],
+        short_description: "Абатство Ноймюнстер – історичний комплекс у районі Грунд у Люксембурзі, розташований біля підніжжя старого міста. Сьогодні він функціонує як культурний центр з виставками, концертами та громадськими заходами. Будівля поєднує багатовікову історію із сучасним культурним життям міста.",
+        full_description: {
+          title: "Опис та історія",
+          items: [
+            { bold: "Абатство Ноймюнстер", text: "один із найатмосферніших історичних комплексів у нижньому місті Люксембурга, розташований у районі Грунд біля підніжжя скель. Сьогодні це не релігійна установа, а сучасний культурний центр, де проходять виставки, концерти, фестивалі та громадські заходи." },
+            { text: "Комплекс гармонійно поєднує старовинну архітектуру та сучасні функції. Кам’яні фасади, аркові проходи та внутрішні дворики створюють особливу атмосферу, завдяки якій місце популярне як серед туристів, так і серед місцевих жителів." },
+            { text: "Абатство розташоване в історичному центрі Люксембурга, що внесений до списку всесвітньої спадщини ЮНЕСКО." },
+            { bold: "Історія абатства ", text: "починається у XVII столітті, коли монахи-бенедиктинці побудували його після зруйнування попереднього монастиря під час Тридцятирічної війни. Нову будівлю звели у більш захищеному місці – у долині річки Альзет." },
+            { text: "У наступні століття комплекс неодноразово змінював своє призначення. Після секуляризації церковних земель він втратив монастирську функцію та був переобладнаний під різні державні потреби. У різні періоди тут розміщувалися казарми, адміністративні служби та навіть тюремні приміщення. Таке використання суттєво змінило первісний характер будівлі, перетворивши її з релігійного центру на утилітарний державний об’єкт." },
+            { text: "Особливо складною та похмурою сторінкою в історії комплексу став період Другої світової війни. Під час німецької окупації будівля використовувалася нацистською владою як місце ув’язнення та тимчасового утримання людей. Ці події залишили помітний слід в історичній пам’яті міста, тому сьогодні абатство сприймається не лише як архітектурна пам’ятка, а й як свідок складних етапів європейської історії." },
+            { text: "Після війни комплекс поступово втратив репресивні функції та був переосмислений як культурний простір, що стало символічним кроком у його “другому житті”. Сьогодні він відомий як майданчик для міжнародних подій, включаючи фестивалі та виставки." }
+          ]
+        },
+        tickets_and_entry: {
+          title: "Практична інформація",
+          items: [
+            { bold: "Адреса:", text: "28, Rue Münster, L-2160 Luxembourg, Luxembourg" },
+            { bold: "Доступ:", text: "територія відкрита для відвідування (час залежить від заходів)" },
+            { bold: "Вхід:", text: "часто безкоштовний, платний – на окремі події" }
+          ]
+        },
+        interestingFacts: {
+          title: "Цікаві факти",
+          isList: true,
+          items: [
+            { text: "Абатство розташоване в одній із наймальовничіших частин міста – внизу під кріпосними стінами." },
+            { text: "Комплекс неодноразово змінював своє призначення – від монастиря до в’язниці." },
+            { text: "Сьогодні це один із головних культурних центрів Люксембурга." },
+            { text: "Часто використовується як майданчик для open-air заходів влітку." }
+          ]
+        },
+        construction_period: "XVII століття (близько 1606–1616 рр.)",
+        meta: {
+          title: "Абатство Ноймюнстер у Люксембурзі – історія, фото, відвідування",
+          description: "Абатство Ноймюнстер у Люксембурзі – історичний монастир XVII століття в районі Грунд, сьогодні культурний центр з виставками та заходами.",
+          ogTitle: "Абатство Ноймюнстер – культурний центр у серці Люксембурга",
+          ogDescription: "Відкрийте для себе абатство Ноймюнстер – історичне місце з унікальною атмосферою, виставками та подіями в Люксембурзі.",
+          keywords: "абатство Ноймюнстер, Люксембург пам’ятки, Грунд Люксембург, культурний центр Люксембург",
+          ogImage: "https://our-travels.info/foto/Luxembourg/luxembourg_canton/luxembourg_city/old_town/abbey_neumunster/001.jpg"
+        }
+      },
+      de: {
+        name: "Abtei Neumünster",
+        location: "Stadt Luxemburg, Luxemburg",
+        officialSite: [
+          { bold: "Offizielle Website", link: "https://www.neimenster.lu/?utm_source=chatgpt.com" }
+        ],
+        short_description: "Die Abtei Neumünster ist ein historischer Komplex im Stadtteil Grund in Luxemburg, am Fuße der Altstadt gelegen. Heute dient sie als Kulturzentrum mit Ausstellungen, Konzerten und öffentlichen Veranstaltungen. Das Gebäude verbindet eine jahrhundertealte Geschichte mit dem modernen kulturellen Leben der Stadt.",
+        full_description: {
+          title: "Beschreibung und Geschichte",
+          items: [
+            { bold: "Die Abtei Neumünster", text: "ist einer der atmosphärischsten historischen Komplexe in der Unterstadt von Luxemburg, gelegen im Stadtteil Grund am Fuße der Felsen. Heute ist sie keine religiöse Einrichtung mehr, sondern ein modernes Kulturzentrum, in dem Ausstellungen, Konzerte, Festivals und öffentliche Veranstaltungen stattfinden." },
+            { text: "Der Komplex verbindet harmonisch historische Architektur mit modernen Funktionen. Steinfassaden, Arkadengänge und Innenhöfe schaffen eine besondere Atmosphäre, durch die der Ort sowohl bei Touristen als auch bei Einheimischen beliebt ist." },
+            { text: "Die Abtei befindet sich im historischen Zentrum von Luxemburg, das zum UNESCO-Weltkulturerbe gehört." },
+            { bold: "Die Geschichte der Abtei ", text: "beginnt im 17. Jahrhundert, als Benediktinermönche sie nach der Zerstörung des vorherigen Klosters während des Dreißigjährigen Krieges errichteten. Der Neubau entstand an einem besser geschützten Ort im Tal der Alzette." },
+            { text: "In den folgenden Jahrhunderten wurde der Komplex mehrfach umgenutzt. Nach der Säkularisation verlor er seine klösterliche Funktion und wurde für verschiedene staatliche Zwecke genutzt. In unterschiedlichen Perioden dienten die Gebäude als Kasernen, Verwaltungsgebäude und sogar als Gefängnisräume. Diese Nutzung veränderte den ursprünglichen Charakter stark und machte aus dem religiösen Zentrum ein funktionales staatliches Gebäude." },
+            { text: "Besonders schwierig und dunkel war die Zeit des Zweiten Weltkriegs. Während der deutschen Besatzung wurde das Gebäude von den Nationalsozialisten als Ort der Inhaftierung und vorübergehenden Gefangenschaft genutzt. Diese Ereignisse hinterließen tiefe Spuren im historischen Gedächtnis der Stadt, weshalb die Abtei heute nicht nur als architektonisches Denkmal, sondern auch als Zeugnis europäischer Geschichte gilt." },
+            { text: "Nach dem Krieg verlor der Komplex nach und nach seine repressiven Funktionen und wurde als kultureller Raum neu interpretiert, was einen symbolischen Schritt in sein „zweites Leben“ darstellte. Heute ist er als Veranstaltungsort für internationale Events, Festivals und Ausstellungen bekannt." }
+          ]
+        },
+        tickets_and_entry: {
+          title: "Praktische Informationen",
+          items: [
+            { bold: "Adresse:", text: "28, Rue Münster, L-2160 Luxembourg, Luxemburg" },
+            { bold: "Zugang:", text: "Gelände ist frei zugänglich (abhängig von Veranstaltungen)" },
+            { bold: "Eintritt:", text: "oft kostenlos, für einzelne Events kostenpflichtig" }
+          ]
+        },
+        interestingFacts: {
+          title: "Interessante Fakten",
+          isList: true,
+          items: [
+            { text: "Die Abtei liegt in einem der malerischsten Teile der Stadt – unterhalb der Festungsmauern." },
+            { text: "Der Komplex wurde mehrfach umgenutzt – vom Kloster bis zum Gefängnis." },
+            { text: "Heute ist sie eines der wichtigsten Kulturzentren Luxemburgs." },
+            { text: "Im Sommer wird sie häufig für Open-Air-Veranstaltungen genutzt." }
+          ]
+        },
+        construction_period: "17. Jahrhundert (ca. 1606–1616)",
+        meta: {
+          title: "Abtei Neumünster in Luxemburg – Geschichte, Fotos, Besuch",
+          description: "Die Abtei Neumünster in Luxemburg ist ein Kloster aus dem 17. Jahrhundert im Stadtteil Grund, heute ein Kulturzentrum mit Ausstellungen und Veranstaltungen.",
+          ogTitle: "Abtei Neumünster – Kulturzentrum im Herzen Luxemburgs",
+          ogDescription: "Entdecken Sie die Abtei Neumünster – ein historischer Ort mit einzigartiger Atmosphäre, Ausstellungen und Veranstaltungen in Luxemburg.",
+          keywords: "Abtei Neumünster, Luxemburg Sehenswürdigkeiten, Grund Luxemburg, Kulturzentrum Luxemburg",
+          ogImage: "https://our-travels.info/foto/Luxembourg/luxembourg_canton/luxembourg_city/old_town/abbey_neumunster/001.jpg"
         }
       }
     }
