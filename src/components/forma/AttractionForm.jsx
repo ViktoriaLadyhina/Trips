@@ -22,6 +22,7 @@ const AttractionForm = () => {
       unescoType: "",
       unescoCriteria: "",
       unescoEpoch: "",
+      unescoSeries: "",
       isChildAttraction: false,
       shortDescriptionSubObjects: { title: "", items: [{ bold: "", text: "" }] },
       showMore: false,
@@ -99,7 +100,8 @@ const AttractionForm = () => {
             year: Number(watchedFields.unescoYear),
             type: watchedFields.unescoType,
             criteria: watchedFields.unescoCriteria,
-            epoch: watchedFields.unescoEpoch
+            epoch: watchedFields.unescoEpoch,
+            series: watchedFields.unescoSeries
           }
         }),
         ...(watchedFields.subObjectsInputs?.filter(o => o.value?.trim()).length > 0 && {
@@ -537,6 +539,7 @@ const AttractionForm = () => {
           <label><input type="text" {...register("unescoType")} placeholder="Например - Культурное наследие"/></label>
           <label><input type="text" {...register("unescoCriteria")} placeholder="Например - i, ii, iv"/></label>
           <label><input type="text" {...register("unescoEpoch")} placeholder="Например - Готика"/></label>
+          <label><input type="text" {...register("unescoSeries")} placeholder="Например - Без серии"/></label>
         </div>
       </div>
 

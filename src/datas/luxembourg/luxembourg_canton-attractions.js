@@ -10,7 +10,7 @@ const datas = [
     translations: {
       ru: {
         name: "Музей «Три жёлудя»",
-        location: "Люксембург",
+        location: "Город Люксембург, Люксембург",
         officialSite: [{ bold: "Официальный сайт", link: "https://m3e.public.lu/fr.html" }],
         short_description: "Музей «Три жёлудя» – музей истории крепости Люксембурга, расположен на территории исторического Форта Тюнген. Экспозиции музея посвящены военной архитектуре, развитию города и его стратегическому значению в Европе.",
         subObjects_title: "Часть музейного комплекса «Три жёлудя»",
@@ -72,7 +72,7 @@ const datas = [
       },
       ua: {
         name: "Музей «Три жолуді»",
-        location: "Люксембург",
+        location: "Місто Люксембург, Люксембург",
         officialSite: [{ bold: "Офіційний сайт", link: "https://m3e.public.lu/fr.html" }],
         short_description: "Музей «Три жолуді» – музей історії фортеці Люксембурга, розташований на території історичного Форту Тюнген. Експозиції музею присвячені військовій архітектурі, розвитку міста та його стратегічному значенню в Європі.",
         subObjects_title: "Частина музейного комплексу «Три жолуді»",
@@ -134,7 +134,7 @@ const datas = [
       },
       de: {
         name: "Museum „Drei Eicheln“",
-        location: "Luxemburg",
+        location: "Stadt Luxemburg, Luxemburg",
         officialSite: [{ bold: "Offizielle Website", link: "https://m3e.public.lu/fr.html" }],
         short_description: "Das Museum „Drei Eicheln“ ist ein Museum zur Geschichte der Festung Luxemburg und befindet sich auf dem Gelände des historischen Fort Thüngen. Die Ausstellungen widmen sich der Militärarchitektur, der Stadtentwicklung und ihrer strategischen Bedeutung in Europa.",
         subObjects_title: "Teil des Museumskomplexes „Drei Eicheln“",
@@ -206,13 +206,13 @@ const datas = [
     translations: {
       ru: {
         name: "Форт Тюнген",
-        location: "Люксембург",
+        location: "Город Люксембург, Люксембург",
         unesco_status: {
           included: true,
           year: 1984,
           type: "Культурное наследие",
           criteria: "iv",
-          epoch: "Новое время (фортификационная архитектура XVIII–XIX вв.)",
+          epoch: "Новое время (XVIII–XIX вв., фортификационная архитектура)",
           series: "Старый город Люксембурга и его укрепления"
         },
         officialSite: [
@@ -261,13 +261,13 @@ const datas = [
       },
       ua: {
         name: "Форт Тюнген",
-        location: "Люксембург",
+        location: "Місто Люксембург, Люксембург",
         unesco_status: {
           included: true,
           year: 1984,
           type: "Культурна спадщина",
           criteria: "iv",
-          epoch: "Новий час (фортифікаційна архітектура XVIII–XIX ст.)",
+          epoch: "Новий час (XVIII–XIX ст., фортифікаційна архітектура)",
           series: "Старе місто Люксембурга та його укріплення"
         },
         officialSite: [
@@ -316,13 +316,13 @@ const datas = [
       },
       de: {
         name: "Fort Thüngen",
-        location: "Luxemburg",
+        location: "Stadt Luxemburg, Luxemburg",
         unesco_status: {
           included: true,
           year: 1984,
           type: "Kulturerbe",
           criteria: "iv",
-          epoch: "Neuzeit (Festungsarchitektur des 18.–19. Jahrhunderts)",
+          epoch: "Neuzeit (18.–19. Jahrhundert, Festungsarchitektur)",
           series: "Altstadt Luxemburgs und ihre Befestigungsanlagen"
         },
         officialSite: [
@@ -377,19 +377,26 @@ const datas = [
     path: "old_town_luxembourg",
     countryPath: "luxembourg", regionPath: "luxembourg_canton", districtPath: "city", cityPath: "luxembourg_city",
     fotoCard: "Luxembourg/luxembourg_canton/luxembourg_city/old_town/001.jpg",
+    subObjects: ["casemates_du_bock_luxembourg"],
     translations: {
       ru: {
         name: "Старый город Люксембурга",
-        location: "Люксембург",
+        location: "Город Люксембург, Люксембург",
         unesco_status: {
           included: true,
           year: 1994,
           type: "Культурное наследие",
           criteria: "iv",
-          epoch: "Средневековье – Новое время (X–XIX вв., фортификационная архитектура)",
+          epoch: "Средневековье – Новое время (X–XIX вв., развитие фортификационной системы города)",
           series: "Старый город Люксембурга и его укрепления"
         },
         short_description: "Старый город Люксембурга – это исторический центр столицы с узкими улицами, старинной застройкой и живописными видами на долины рек Альзет и Петрюс. Здесь сосредоточены главные архитектурные памятники, мосты и укрепления, отражающие многовековую историю города. Район сочетает атмосферу средневекового города с современной городской жизнью.",
+        short_description_subObjects: {
+          text: "На территории Старого города Люксембурга и его исторических укреплений расположены:",
+          items: [
+            { bold: "🌍Казематы Бок", text: "– система подземных оборонительных туннелей, вырубленных в скале Бок, являющаяся частью бывшей крепостной системы города и одним из ключевых элементов фортификационного наследия Люксембурга." }
+          ]
+        },
         full_description: {
           title: "Описание и история",
           items: [
@@ -429,16 +436,22 @@ const datas = [
       },
       ua: {
         name: "Старе місто Люксембурга",
-        location: "Люксембург",
+        location: "Місто Люксембург, Люксембург",
         unesco_status: {
           included: true,
           year: 1994,
           type: "Культурна спадщина",
           criteria: "iv",
-          epoch: "Середньовіччя – Новий час (X–XIX ст., фортифікаційна архітектура)",
+          epoch: "Середньовіччя – Новий час (X–XIX ст., розвиток фортифікаційної системи міста)",
           series: "Старе місто Люксембурга та його укріплення"
         },
         short_description: "Старе місто Люксембурга – це історичний центр столиці з вузькими вуличками, старовинною забудовою та мальовничими видами на долини річок Альзет і Петрус. Тут зосереджені головні архітектурні пам’ятки, мости та укріплення, що відображають багатовікову історію міста. Район поєднує атмосферу середньовічного міста із сучасним міським життям.",
+        short_description_subObjects: {
+          text: "На території Старого міста Люксембурга та його історичних укріплень розташовані:",
+          items: [
+            { bold: "🌍 Каземати Бок", text: "– система підземних оборонних тунелів, вирубаних у скелі Бок, яка є частиною колишньої фортифікаційної системи міста та одним із ключових елементів фортифікаційної спадщини Люксембурга." }
+          ]
+        },
         full_description: {
           title: "Опис і історія",
           items: [
@@ -478,16 +491,24 @@ const datas = [
       },
       de: {
         name: "Altstadt Luxemburg",
-        location: "Luxemburg",
+        location: "Stadt Luxemburg, Luxemburg",
         unesco_status: {
           included: true,
           year: 1994,
           type: "Kulturerbe",
           criteria: "iv",
-          epoch: "Mittelalter – Neuzeit (10.–19. Jh., Festungsarchitektur)",
+          epoch: "Mittelalter – Neuzeit (10.–19. Jahrhundert, Entwicklung des Festungssystems der Stadt)",
           series: "Altstadt von Luxemburg und ihre Befestigungen"
         },
         short_description: "Die Altstadt Luxemburg ist das historische Zentrum der Hauptstadt mit engen Gassen, historischer Bebauung und malerischen Ausblicken auf die Täler der Flüsse Alzette und Petruss. Hier konzentrieren sich die wichtigsten architektonischen Denkmäler, Brücken und Befestigungsanlagen, die die jahrhundertelange Geschichte der Stadt widerspiegeln. Das Viertel verbindet die Atmosphäre einer mittelalterlichen Stadt mit dem modernen Stadtleben.",
+        short_description_subObjects: {
+          text: "Auf dem Gebiet der Altstadt von Luxemburg und ihrer historischen Befestigungen befinden sich:",
+          items: [
+            {
+              bold: "🌍 Bock-Kasematten", text: "– ein System unterirdischer Verteidigungstunnel, die in den Bockfelsen gehauen wurden, das Teil des ehemaligen Festungssystems der Stadt ist und eines der wichtigsten Elemente des fortifikatorischen Erbes Luxemburgs darstellt."
+            }
+          ]
+        },
         full_description: {
           title: "Beschreibung und Geschichte",
           items: [
@@ -523,6 +544,179 @@ const datas = [
           ogDescription: "Tauchen Sie ein in die mittelalterliche Atmosphäre Luxemburgs: Festungen, Brücken und beeindruckende Ausblicke.",
           keywords: "altstadt luxemburg, kasematten bock, sehenswürdigkeiten luxemburg, luxemburg altstadt, luxemburg stadtzentrum, festungen luxemburg, unesco luxemburg, geschichte luxemburg",
           ogImage: "https://our-travels.info/foto/Luxembourg/luxembourg_canton/luxembourg_city/old_town/001.jpg"
+        }
+      }
+    }
+  },
+  {
+    id: "casemates_du_bock_luxembourg",
+    type: ["historical_building"], rating: "top",
+    path: "casemates_du_bock_luxembourg",
+    countryPath: "luxembourg", regionPath: "luxembourg_canton", districtPath: "city", cityPath: "luxembourg_city",
+    hiddenFromList: true, showMore: true,
+    fotoCard: "Luxembourg/luxembourg_canton/luxembourg_city/old_town/casemates/001.jpg",
+    coord: { lat: 49.611836, lng: 6.136937 },
+    translations: {
+      ru: {
+        name: "Казематы Бок",
+        location: "Город Люксембург, Люксембург",
+        unesco_status: {
+          included: true,
+          year: 1994,
+          type: "Культурное наследие",
+          criteria: "iv",
+          epoch: "Новое время (XVII–XVIII вв., фортификационная архитектура)",
+          series: "Старый город Люксембурга и его укрепления"
+        },
+        short_description: "Казематы Бок – это система подземных оборонительных галерей, вырубленных в скале Бок в Люксембурге. Они являются частью бывших крепостных укреплений города. Подземные коридоры использовались для защиты, размещения солдат и хранения вооружения.",
+        full_description: {
+          title: "Описание и история",
+          items: [
+            { bold: "Казематы Бок", text: "представляют собой разветвлённую сеть тоннелей и помещений, вырубленных прямо в скале над долиной реки Альзетт. Их строительство началось в XVII веке, когда Люксембург находился под контролем испанских Нидерландов. Позже укрепления неоднократно расширялись австрийскими и прусскими инженерами." },
+            { text: "Благодаря своему расположению и многоуровневой структуре казематы могли размещать значительный военный гарнизон, артиллерию и склады. Толщина скальных стен и естественная защита делали комплекс практически неприступным." },
+            { text: "Сегодня часть казематов открыта для посещения и является одной из главных туристических достопримечательностей Люксембурга, позволяя увидеть, как выглядела одна из самых мощных крепостных систем Европы. Внутри казематов представлены исторические помещения и галереи; восстановленные участки оборонительных залов; смотровые точки с видом на долину Альзетт." },
+            { bold: "История", text: "Первые укрепления на скале Бок появились в 963 году, когда граф Зигфрид приобрёл участок и начал строительство замка Люксембург (Luxembourg). Позже на этом месте сформировалась мощная крепость, которая на протяжении веков переходила под контроль разных европейских держав." },
+            { text: "Основное развитие казематов пришлось на XVII-XVIII века, когда инженеры расширяли подземные галереи, превращая их в сложную оборонительную систему. В разные периоды крепость называли «Гибралтаром Севера» из-за её стратегической важности." },
+            { text: "В 1867 году по Лондонскому договору крепость Люксембурга была демонтирована, однако часть подземных сооружений, включая казематы Бок, сохранилась. Это один из ключевых фрагментов старой фортификационной системы города." }
+          ]
+        },
+        tickets_and_entry: {
+          title: "Практическая информация",
+          items: [
+            { bold: "Адрес:", text: "Montée de Clausen, L-1343 Luxembourg City, Luxembourg" },
+            { bold: "Входные билеты (2026):", text: "<br>Взрослые – 11 € <br>Студенты и пожилые (обычно 60+) – 9 € <br>Дети (4-12 лет) – 5,50 €  <br> Дети до 4 лет – бесплатно <br> Экскурсии (если с гидом) – 20 € с человека (индивидуальный билет), группы: около 100 € за группу " },
+            { bold: "Важно:", text: "Цена зависит от формата: самостоятельный вход дешевле, с гидом – заметно дороже.  <br>В высокий сезон билеты могут быстро заканчиваться<br>Luxembourg Card может давать бесплатный вход (если активна на момент визита) <br> Онлайн и касса могут иметь одинаковую цену, но на месте иногда есть культурные скидки" },
+            { bold: "Время посещения:", text: "обычно ограничено (≈45-60 минут). Лучше посещать с весны до осени (зимой может быть ограничено). Внутри прохладно даже летом" },
+            { bold: "Особенности:", text: "много лестниц и узких проходов, рекомендуется удобная обувь" }
+          ]
+        },
+        interestingFacts: {
+          title: "Интересные факты",
+          isList: true,
+          items: [
+            { text: "Казематы уходят в глубину скалы на десятки метров и имеют несколько уровней. " },
+            { text: "Во время Второй мировой войны их использовали как бомбоубежища. " },
+            { text: "В системе тоннелей могли размещаться до нескольких сотен солдат. " },
+            { text: "Люксембургская крепость считалась одной из самых мощных в Европе до её демонтажа в XIX веке. " }
+          ]
+        },
+        construction_period: "963 год (первые укрепления на скале Бок). Казематы как система: XVII век",
+        founder: "Граф Зигфрид Арденнский (основатель поселения Люксембург)",
+        meta: {
+          title: "Казематы Бок в Люксембурге – подземные укрепления и историческая крепость",
+          description: "Казематы Бок – подземная система оборонительных тоннелей в Люксембурге, часть крепости ЮНЕСКО. История, экскурсии и архитектура старого города.",
+          ogTitle: "Казематы Бок – подземная крепость Люксембурга",
+          ogDescription: "Одна из самых необычных достопримечательностей Люксембурга – сеть подземных казематов с многовековой историей и панорамными видами.",
+          keywords: "казематы Бок, Люксембург, подземные казематы, крепость Люксембурга, ЮНЕСКО Люксембург, достопримечательности Люксембурга, старый город Люксембург, фортификационные сооружения, подземные тоннели, исторические укрепления, Casemates du Bock, что посмотреть в Люксембурге, экскурсии Люксембург, скала Бок, военная архитектура Европы",
+          ogImage: "https://our-travels.info/foto/Luxembourg/luxembourg_canton/luxembourg_city/old_town/casemates/001.jpg"
+        }
+      },
+      ua: {
+        name: "Каземати Бок",
+        location: "Місто Люксембург, Люксембург",
+        unesco_status: {
+          included: true,
+          year: 1994,
+          type: "Культурна спадщина",
+          criteria: "iv",
+          epoch: "Новий час (XVII–XVIII ст., фортифікаційна архітектура)",
+          series: "Старе місто Люксембурга та його укріплення"
+        },
+        short_description: "Каземати Бок – це система підземних оборонних галерей, вирубаних у скелі Бок у Люксембурзі. Вони є частиною колишніх міських фортифікацій. Підземні коридори використовувалися для захисту, розміщення солдатів і зберігання озброєння.",
+        full_description: {
+          title: "Опис та історія",
+          items: [
+            { bold: "Каземати Бок", text: "являють собою розгалужену мережу тунелів і приміщень, вирубаних безпосередньо в скелі над долиною річки Альзетт. Їхнє будівництво почалося у XVII столітті, коли Люксембург перебував під контролем Іспанських Нідерландів. Згодом укріплення неодноразово розширювалися австрійськими та прусськими інженерами." },
+            { text: "Завдяки своєму розташуванню та багаторівневій структурі каземати могли розміщувати значний військовий гарнізон, артилерію та склади. Товщина скельних стін і природний захист робили комплекс практично неприступним." },
+            { text: "Сьогодні частина казематів відкрита для відвідування і є однією з головних туристичних пам’яток Люксембурга, дозволяючи побачити, як виглядала одна з найпотужніших фортифікаційних систем Європи. Усередині представлені історичні приміщення та галереї; відновлені ділянки оборонних залів; оглядові точки з видом на долину Альзетт." },
+            { bold: "Історія", text: "Перші укріплення на скелі Бок з’явилися у 963 році, коли граф Зіґфрід придбав територію і розпочав будівництво замку Люксембург (Luxembourg). Згодом на цьому місці сформувалася потужна фортеця, яка протягом століть переходила під контроль різних європейських держав." },
+            { text: "Основний розвиток казематів припав на XVII–XVIII століття, коли інженери розширювали підземні галереї, перетворюючи їх на складну оборонну систему. У різні періоди фортецю називали «Гібралтаром Півночі» через її стратегічне значення." },
+            { text: "У 1867 році згідно з Лондонським договором фортецю Люксембурга було демонтовано, однак частина підземних споруд, включаючи Каземати Бок, збереглася. Це один із ключових фрагментів старої фортифікаційної системи міста." }
+          ]
+        },
+        tickets_and_entry: {
+          title: "Практична інформація",
+          items: [
+            { bold: "Адреса:", text: "Montée de Clausen, L-1343 Luxembourg City, Luxembourg" },
+            { bold: "Квитки (2026):", text: "<br>Дорослі – 11 €; <br>Студенти та пенсіонери (приблизно 60+) – 9 €; <br>Діти (4–12 років) – 5,50 €; <br>Діти до 4 років – безкоштовно; <br>Екскурсії з гідом – 20 € з особи (індивідуально), групи: близько 100 € за групу" },
+            { bold: "Важливо:", text: "<br>Ціна залежить від формату: самостійний вхід дешевший, з гідом – дорожчий. <br>У високий сезон квитки можуть швидко закінчуватися. <br>Luxembourg Card може надавати безкоштовний вхід (за умови дії на момент відвідування). <br>Онлайн і каса зазвичай мають однакову ціну, але іноді на місці доступні культурні знижки." },
+            { bold: "Час відвідування:", text: "зазвичай обмежено (≈45–60 хвилин). <br>Найкраще відвідувати з весни до осені (взимку можливі обмеження). <br>Усередині прохолодно навіть влітку." },
+            { bold: "Особливості:", text: "багато сходів і вузьких проходів, рекомендується зручне взуття." }
+          ]
+        },
+        interestingFacts: {
+          title: "Цікаві факти",
+          isList: true,
+          items: [
+            { text: "Каземати сягають глибоко в скелю на десятки метрів і мають кілька рівнів." },
+            { text: "Під час Другої світової війни їх використовували як бомбосховища." },
+            { text: "У системі тунелів могло розміщуватися до кількох сотень солдатів." },
+            { text: "Люксембурзька фортеця вважалася однією з найпотужніших у Європі до її демонтажу в XIX столітті." }
+          ]
+        },
+        construction_period: "963 рік (перші укріплення на скелі Бок). Каземати як система: XVII століття",
+        founder: "Граф Зіґфрід Арденнський (засновник поселення Люксембург)",
+        meta: {
+          title: "Каземати Бок у Люксембурзі – підземні укріплення та історична фортеця",
+          description: "Каземати Бок – підземна система оборонних тунелів у Люксембурзі, частина фортеці ЮНЕСКО. Історія, екскурсії та архітектура старого міста.",
+          ogTitle: "Каземати Бок – підземна фортеця Люксембурга",
+          ogDescription: "Одна з найунікальніших пам’яток Люксембурга – мережа підземних казематів із багатовіковою історією та панорамними видами.",
+          keywords: "каземати Бок, Люксембург, підземні каземати, фортеця Люксембурга, ЮНЕСКО Люксембург, пам’ятки Люксембурга, старе місто Люксембург, фортифікаційні споруди, підземні тунелі, історичні укріплення, Casemates du Bock, що подивитися в Люксембурзі, екскурсії Люксембург, скеля Бок, військова архітектура Європи",
+          ogImage: "https://our-travels.info/foto/Luxembourg/luxembourg_canton/luxembourg_city/old_town/casemates/001.jpg"
+        }
+      },
+      de: {
+        name: "Bock-Kasematten",
+        location: "Stadt Luxemburg, Luxemburg",
+        unesco_status: {
+          included: true,
+          year: 1994,
+          type: "Kulturerbe",
+          criteria: "iv",
+          epoch: "Neuzeit (17.–18. Jahrhundert, Festungsarchitektur)",
+          series: "Altstadt von Luxemburg und ihre Befestigungen"
+        },
+        short_description: "Die Bock-Kasematten sind ein System unterirdischer Verteidigungsgalerien, die in den Bockfelsen in Luxemburg gehauen wurden. Sie sind Teil der ehemaligen Stadtbefestigungen. Die unterirdischen Gänge wurden zur Verteidigung, zur Unterbringung von Soldaten und zur Lagerung von Waffen genutzt.",
+        full_description: {
+          title: "Beschreibung und Geschichte",
+          items: [
+            { bold: "Die Bock-Kasematten", text: "stellen ein verzweigtes Netz aus Tunneln und Räumen dar, die direkt in den Felsen über dem Tal des Flusses Alzette gehauen wurden. Ihr Bau begann im 17. Jahrhundert, als Luxemburg unter der Kontrolle der Spanischen Niederlande stand. Später wurden die Befestigungen mehrfach von österreichischen und preußischen Ingenieuren erweitert." },
+            { text: "Aufgrund ihrer Lage und ihrer mehrstufigen Struktur konnten die Kasematten eine bedeutende Militärgarnison, Artillerie und Lager aufnehmen. Die Dicke der Felswände und der natürliche Schutz machten den Komplex praktisch uneinnehmbar." },
+            { text: "Heute ist ein Teil der Kasematten für Besucher geöffnet und gehört zu den wichtigsten touristischen Sehenswürdigkeiten Luxemburgs, da sie zeigen, wie eine der stärksten Festungsanlagen Europas ausgesehen hat. Im Inneren befinden sich historische Räume und Gänge; restaurierte Abschnitte der Verteidigungssäle; Aussichtspunkte mit Blick auf das Alzette-Tal." },
+            { bold: "Geschichte", text: "Die ersten Befestigungen auf dem Bockfelsen entstanden im Jahr 963, als Graf Siegfried das Gebiet erwarb und mit dem Bau der Burg Luxemburg (Luxembourg) begann. Später entwickelte sich an diesem Ort eine mächtige Festung, die über Jahrhunderte unter der Kontrolle verschiedener europäischer Mächte stand." },
+            { text: "Die Hauptentwicklung der Kasematten erfolgte im 17.–18. Jahrhundert, als Ingenieure die unterirdischen Gänge erweiterten und sie in ein komplexes Verteidigungssystem umwandelten. In verschiedenen Epochen wurde die Festung aufgrund ihrer strategischen Bedeutung als „Gibraltar des Nordens“ bezeichnet." },
+            { text: "Im Jahr 1867 wurde die Festung Luxemburg gemäß dem Londoner Vertrag abgebaut, jedoch blieb ein Teil der unterirdischen Anlagen, einschließlich der Bock-Kasematten, erhalten. Dies ist eines der wichtigsten erhaltenen Fragmente des alten Befestigungssystems der Stadt." }
+          ]
+        },
+        tickets_and_entry: {
+          title: "Praktische Informationen",
+          items: [
+            { bold: "Adresse:", text: "Montée de Clausen, L-1343 Luxembourg City, Luxemburg" },
+            { bold: "Eintrittskarten (2026):", text: "<br>Erwachsene – 11 €; <br>Studenten und Senioren (in der Regel 60+) – 9 €; <br>Kinder (4–12 Jahre) – 5,50 €; <br>Kinder unter 4 Jahren – kostenlos; <br>Führungen (mit Guide) – 20 € pro Person (Einzelticket), Gruppen: etwa 100 € pro Gruppe" },
+            { bold: "Wichtig:", text: "<br>Der Preis hängt von der Besuchsform ab: Selbstbesichtigung ist günstiger, mit Guide deutlich teurer. <br>In der Hochsaison können Tickets schnell ausverkauft sein. <br>Die Luxembourg Card kann freien Eintritt gewähren (wenn sie zum Zeitpunkt des Besuchs gültig ist). <br>Online- und Kassenpreise sind in der Regel gleich, aber vor Ort gibt es manchmal kulturelle Ermäßigungen." },
+            { bold: "Besuchszeit:", text: "in der Regel begrenzt (ca. 45–60 Minuten). Am besten von Frühling bis Herbst besuchen (im Winter möglicherweise eingeschränkt). Im Inneren ist es auch im Sommer kühl." },
+            { bold: "Besonderheiten:", text: "viele Treppen und enge Gänge, festes Schuhwerk wird empfohlen." }
+          ]
+        },
+        interestingFacts: {
+          title: "Interessante Fakten",
+          isList: true,
+          items: [
+            { text: "Die Kasematten reichen mehrere Dutzend Meter tief in den Felsen und bestehen aus mehreren Ebenen." },
+            { text: "Während des Zweiten Weltkriegs wurden sie als Luftschutzbunker genutzt." },
+            { text: "Im Tunnelsystem konnten mehrere hundert Soldaten untergebracht werden." },
+            { text: "Die Festung Luxemburg galt bis zu ihrem Abriss im 19. Jahrhundert als eine der stärksten Festungen Europas." }
+          ]
+        },
+        construction_period: "963 (erste Befestigungen auf dem Bockfelsen). Kasematten als System: 17. Jahrhundert",
+        founder: "Graf Siegfried von den Ardennen (Gründer der Siedlung Luxemburg)",
+        meta: {
+          title: "Bock-Kasematten in Luxemburg – unterirdische Befestigungen und historische Festung",
+          description: "Die Bock-Kasematten sind ein unterirdisches Verteidigungssystem in Luxemburg, Teil des UNESCO-Weltkulturerbes. Geschichte, Führungen und Architektur der Altstadt.",
+          ogTitle: "Bock-Kasematten – unterirdische Festung Luxemburgs",
+          ogDescription: "Eine der außergewöhnlichsten Sehenswürdigkeiten Luxemburgs – ein Netzwerk unterirdischer Kasematten mit jahrhundertealter Geschichte und Panoramablicken.",
+          keywords: "Bock-Kasematten, Luxemburg, unterirdische Kasematten, Festung Luxemburg, UNESCO Luxemburg, Sehenswürdigkeiten Luxemburg, Altstadt Luxemburg, Befestigungsanlagen, unterirdische Tunnel, historische Befestigungen, Casemates du Bock, was man in Luxemburg sehen kann, Führungen Luxemburg, Bockfelsen, Militärarchitektur Europa",
+          ogImage: "https://our-travels.info/foto/Luxembourg/luxembourg_canton/luxembourg_city/old_town/casemates/001.jpg"
         }
       }
     }

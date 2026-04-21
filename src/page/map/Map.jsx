@@ -343,7 +343,11 @@ const Map = () => {
                 <ul>
                   <li><Link to="/luxembourg/luxembourg_canton/city/luxembourg_city"> {t.cities.luxembourg_city[lang]}</Link>
                   <ul>
-                    <li><Link to="/luxembourg/luxembourg_canton/city/luxembourg_city/attractions/old_town_luxembourg">{t.attractions.old_town_luxembourg[lang]}</Link></li>
+                    <li><Link to="/luxembourg/luxembourg_canton/city/luxembourg_city/attractions/old_town_luxembourg">{t.attractions.old_town_luxembourg[lang]}</Link>
+                    <ul>
+                      <li><Link to="/luxembourg/luxembourg_canton/city/luxembourg_city/attractions/casemates_du_bock_luxembourg">{t.attractions.casemates_du_bock_luxembourg[lang]}</Link></li>
+                    </ul>
+                    </li>
                     <li><Link to="/luxembourg/luxembourg_canton/city/luxembourg_city/attractions/musee_drai_eechelen_luxembourg">{t.attractions.musee_drai_eechelen_luxembourg[lang]}</Link>
                     <ul>
                       <li><Link to="/luxembourg/luxembourg_canton/city/luxembourg_city/attractions/fort_thungen_luxembourg">{t.attractions.fort_thungen_luxembourg[lang]}</Link></li>
