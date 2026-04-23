@@ -43,7 +43,7 @@
             @include bold-text;
         }
 
-        &_-text {
+        &-text {
             @include body-text;
         }
 
@@ -73,6 +73,7 @@
 
     &__history {
         text-align: justify;
+        padding-bottom: 20px;
 
         &-title {
             @include h3();
@@ -80,7 +81,7 @@
             text-align: center;
         }
 
-        &_-text {
+        &-text {
             @include body-text;
         }
     }
