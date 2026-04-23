@@ -88,6 +88,7 @@ export const Fotos = {
         { path: "Luxembourg/luxembourg_canton/luxembourg_city/old_town/008.jpg", title: { ru: 'Старый город Люксембурга, 2024', de: 'Altstadt Luxemburg, 2024', ua: 'Старе місто Люксембурга, 2024' } },
         { path: "Luxembourg/luxembourg_canton/luxembourg_city/old_town/casemates/001.jpg", title: { ru: 'Казематы Бок, 2024', de: 'Bock-Kasematten, 2024', ua: 'Каземати Бок, 2024' } },
         { path: "Luxembourg/luxembourg_canton/luxembourg_city/old_town/abbey_neumunster/001.jpg", title: { ru: 'Аббатство Ноймюнстер, 2024', de: 'Abtei Neumünster, 2024', ua: 'Абатство Ноймюнстер, 2024' } },
+        { path: "Luxembourg/luxembourg_canton/luxembourg_city/old_town/pont_du_chateau/001.jpg", title: { ru: 'Мост Понт-дю-Шато, 2024', de: 'Pont du Château Brücke, 2024', ua: 'Міст Понт-дю-Шато, 2024' } }
       ],
       casemates_du_bock_luxembourg: [
         { path: "Luxembourg/luxembourg_canton/luxembourg_city/old_town/casemates/001.jpg", title: { ru: 'Казематы Бок, 2024', de: 'Bock-Kasematten, 2024', ua: 'Каземати Бок, 2024' } },
@@ -95,6 +96,10 @@ export const Fotos = {
       abbey_neumunster_luxembourg: [
         { path: "Luxembourg/luxembourg_canton/luxembourg_city/old_town/abbey_neumunster/001.jpg", title: { ru: 'Аббатство Ноймюнстер, 2024', de: 'Abtei Neumünster, 2024', ua: 'Абатство Ноймюнстер, 2024' } },
         { path: "Luxembourg/luxembourg_canton/luxembourg_city/old_town/abbey_neumunster/002.jpg", title: { ru: 'Аббатство Ноймюнстер, 2024', de: 'Abtei Neumünster, 2024', ua: 'Абатство Ноймюнстер, 2024' } },
+      ],
+      pont_du_chateau_luxembourg: [
+        { path: "Luxembourg/luxembourg_canton/luxembourg_city/old_town/pont_du_chateau/001.jpg", title: { ru: 'Мост Понт-дю-Шато, 2024', de: 'Pont du Château Brücke, 2024', ua: 'Міст Понт-дю-Шато, 2024' } },
+        { path: "Luxembourg/luxembourg_canton/luxembourg_city/old_town/pont_du_chateau/002.jpg", title: { ru: 'Мост Понт-дю-Шато, 2024', de: 'Pont du Château Brücke, 2024', ua: 'Міст Понт-дю-Шато, 2024' } }
       ]
     }
   }

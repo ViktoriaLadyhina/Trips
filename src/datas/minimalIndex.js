@@ -204,6 +204,7 @@ const datas =
     old_town_luxembourg: { ru: 'Старый город Люксембурга', de: 'Altstadt Luxemburg', ua: 'Старе місто Люксембурга' },
     casemates_du_bock_luxembourg: { ru: 'Казематы Бок', de: 'Bock-Kasematten', ua: 'Каземати Бок' },
     abbey_neumunster_luxembourg: { ru: 'Абатство Неймюнстер', de: 'Abtei Neumünster', ua: 'Абатство Неймюнстер' },
+    pont_du_chateau_luxembourg: { ru: 'Мост Понт-дю-Шато', de: 'Pont du Château Brücke', ua: 'Міст Понт-дю-Шато' },
 
     // Ukraine
     // Sumska oblast

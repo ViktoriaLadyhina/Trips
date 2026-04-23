@@ -63,11 +63,12 @@
             align-items: center;
             justify-content: center;
             cursor: pointer;
-            background: transparent;
             border: none;
             outline: none;
             transition: color 0.3s;
             font-size: 30px;
+            background: rgba(0, 0, 0, 0.35);
+            color: white;
 
             &:hover {
                 color: var(--color-primary); // можно оставить эффект при наведении
