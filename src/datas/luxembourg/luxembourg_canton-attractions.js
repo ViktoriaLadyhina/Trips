@@ -961,6 +961,138 @@ const datas = [
         }
       }
     }
+  },
+  {
+    id: "viaducts_luxembourg",
+    type: ["technical_structure"], rating: "top",
+    path: "viaducts_luxembourg",
+    countryPath: "luxembourg", regionPath: "luxembourg_canton", districtPath: "city", cityPath: "luxembourg_city",
+    fotoCard: "Luxembourg/luxembourg_canton/luxembourg_city/viaducts/001.jpg",
+    translations: {
+      ru: {
+        name: "Виадуки Люксембурга",
+        location: "Город Люксембург, Люксембург",
+        short_description: "Люксембург известен своей уникальной многоуровневой городской структурой, где глубокие долины рек разделяют районы города. Виадуки и мосты здесь служат не только транспортными связями, но и важной частью архитектурного облика столицы. Эти инженерные сооружения формируют узнаваемый силуэт Люксембурга и отражают его историческое развитие и особенности рельефа.",
+        full_description: {
+          title: "Описание и история",
+          items: [
+            { text: "Люксембург известен своей необычной городской структурой, которая выделяет его среди европейских столиц. Это один из немногих городов в Европе с таким значительным перепадом высот, где районы расположены на разных уровнях и разделены глубокими долинами рек Альзетт и Петрюсс." },
+            { text: "В отличие от большинства европейских городов, развивавшихся горизонтально, Люксембург формировался вертикально – вверх и вниз по склонам и плато. Именно поэтому здесь возникла уникальная система мостов и виадуков, соединяющих разные уровни города в единую городскую структуру." },
+            { text: "Сегодня виадуки – это одна из ключевых особенностей городского ландшафта. Они формируют узнаваемый силуэт Люксембург-Сити и отражают его историческое развитие, где инженерия тесно переплетается с природным рельефом." },
+            { bold: "История", text: "Активное строительство мостов в Люксембурге началось в XIX веке, когда развитие железных дорог и промышленности потребовало соединения новых транспортных узлов с историческим центром города. Именно в этот период были возведены первые крупные виадуки, включая мост Пассерель (Passerelle)." },
+            { text: "Позднее, по мере расширения города, появились новые мосты и инженерные решения, позволяющие преодолевать глубокие долины. Люксембург постепенно превратился в город многоуровневой структуры, где мосты стали необходимым элементом повседневной жизни." },
+            { text: "В XX и XXI веках строительство продолжилось уже с использованием современных технологий, но при этом сохранялась задача – гармонично вписать новые конструкции в исторический и природный ландшафт города." }
+          ]
+        },
+        tickets_and_entry: {
+          title: "Практическая информация",
+          items: [
+            { bold: "Расположение.", text: "Виадуки расположены в центральной части Люксембург-Сити и легко доступны пешком или на общественном транспорте. Многие маршруты прогулок по городу проходят через мосты, соединяющие район вокзала с историческим центром." },
+            { bold: "Лучшее время для посещения", text: "– дневные часы и закат, когда открываются панорамные виды на долины и старые кварталы города." }
+          ]
+        },
+        interestingFacts: {
+          title: "Интересные факты",
+          isList: true,
+          items: [
+            { text: "Люксембург построен на нескольких уровнях, поэтому мосты фактически “соединяют разные города в одном городе”." },
+            { text: "Некоторые виадуки выше 40 метров над уровнем долины." },
+            { text: "Многие мосты используются одновременно для автомобилей, пешеходов и общественного транспорта." },
+            { text: "Исторические районы и укрепления Люксембурга внесены в список ЮНЕСКО, и его мосты считаются частью исторического ландшафта." }
+          ]
+        },
+        meta: {
+          title: "Виадуки Люксембурга – мосты, история и архитектурные особенности города",
+          description: "Обзор виадуков Люксембурга: почему город построен на мостах, история ключевых сооружений и их роль в городской структуре.",
+          ogTitle: "Виадуки Люксембурга – город, построенный на мостах",
+          ogDescription: "Почему Люксембург называют городом виадуков: история, архитектура и самые известные мосты.",
+          keywords: "Люксембург что посмотреть, достопримечательности Люксембурга, прогулки по Люксембургу, город на мостах, архитектурные мосты Европы, виадуки Люксембурга, мосты Люксембурга, туристический Люксембург, старый мост Люксембург",
+          ogImage: "https://our-travels.info/foto/Luxembourg/luxembourg_canton/luxembourg_city/viaducts/001.jpg"
+        }
+      },
+      ua: {
+        name: "Віадуки Люксембурга",
+        location: "Місто Люксембург, Люксембург",
+        short_description: "Люксембург відомий своєю унікальною багаторівневою міською структурою, де глибокі долини річок розділяють райони міста. Віадуки та мости тут виконують не лише транспортну функцію, але й є важливою частиною архітектурного вигляду столиці. Ці інженерні споруди формують впізнаваний силует Люксембурга та відображають його історичний розвиток і особливості рельєфу.",
+        full_description: {
+          title: "Опис та історія",
+          items: [
+            { text: "Люксембург відомий своєю незвичайною міською структурою, яка вирізняє його серед європейських столиць. Це одне з небагатьох міст у Європі з таким значним перепадом висот, де райони розташовані на різних рівнях і розділені глибокими долинами річок Альзетт і Петрюсс." },
+            { text: "На відміну від більшості європейських міст, що розвивалися горизонтально, Люксембург формувався вертикально – вгору та вниз по схилах і плато. Саме тому тут виникла унікальна система мостів і віадуків, що з’єднують різні рівні міста в єдину міську структуру." },
+            { text: "Сьогодні віадуки є однією з ключових особливостей міського ландшафту. Вони формують впізнаваний силует Люксембург-Сіті та відображають його історичний розвиток, де інженерія тісно переплітається з природним рельєфом." },
+            { bold: "Історія", text: "Активне будівництво мостів у Люксембурзі розпочалося у XIX столітті, коли розвиток залізниць і промисловості вимагав з’єднання нових транспортних вузлів з історичним центром міста. Саме в цей період були зведені перші великі віадуки, включно з мостом Пассерель (Passerelle)." },
+            { text: "Згодом, у міру розширення міста, з’явилися нові мости та інженерні рішення, що дозволяли долати глибокі долини. Люксембург поступово перетворився на місто багаторівневої структури, де мости стали необхідним елементом повсякденного життя." },
+            { text: "У XX та XXI століттях будівництво продовжувалося вже з використанням сучасних технологій, але при цьому зберігалося завдання – гармонійно вписати нові конструкції в історичний і природний ландшафт міста." }
+          ]
+        },
+        tickets_and_entry: {
+          title: "Практична інформація",
+          items: [
+            { bold: "Розташування.", text: "Віадуки розташовані в центральній частині Люксембург-Сіті та легко доступні пішки або громадським транспортом. Багато маршрутів прогулянок містом проходять через мости, що з’єднують район вокзалу з історичним центром." },
+            { bold: "Найкращий час для відвідування", text: "– денні години та захід сонця, коли відкриваються панорамні види на долини та старі квартали міста." }
+          ]
+        },
+        interestingFacts: {
+          title: "Цікаві факти",
+          isList: true,
+          items: [
+            { text: "Люксембург побудований на кількох рівнях, тому мости фактично “з’єднують різні міста в одному місті”." },
+            { text: "Деякі віадуки мають висоту понад 40 метрів над рівнем долини." },
+            { text: "Багато мостів використовуються одночасно для автомобілів, пішоходів та громадського транспорту." },
+            { text: "Історичні райони та укріплення Люксембурга внесені до списку ЮНЕСКО, і його мости вважаються частиною історичного ландшафту." }
+          ]
+        },
+        meta: {
+          title: "Віадуки Люксембурга – мости, історія та архітектурні особливості міста",
+          description: "Огляд віадуків Люксембурга: чому місто побудоване на мостах, історія ключових споруд та їхня роль у міській структурі.",
+          ogTitle: "Віадуки Люксембурга – місто, побудоване на мостах",
+          ogDescription: "Чому Люксембург називають містом віадуків: історія, архітектура та найвідоміші мости.",
+          keywords: "Люксембург що подивитися, визначні місця Люксембурга, прогулянки Люксембургом, місто на мостах, архітектурні мости Європи, віадуки Люксембурга, мости Люксембурга, туристичний Люксембург, старий міст Люксембург",
+          ogImage: "https://our-travels.info/foto/Luxembourg/luxembourg_canton/luxembourg_city/viaducts/001.jpg"
+        }
+      },
+      de: {
+        name: "Viadukte Luxemburgs",
+        location: "Stadt Luxemburg, Luxemburg",
+        short_description: "Luxemburg ist bekannt für seine einzigartige mehrstufige Stadtstruktur, in der tiefe Flusstäler die Stadtteile voneinander trennen. Viadukte und Brücken dienen hier nicht nur als Verkehrsverbindungen, sondern sind auch ein wichtiger Bestandteil des architektonischen Erscheinungsbildes der Hauptstadt. Diese Ingenieurbauwerke prägen die charakteristische Silhouette Luxemburgs und spiegeln seine historische Entwicklung sowie die Besonderheiten des Reliefs wider.",
+        full_description: {
+          title: "Beschreibung und Geschichte",
+          items: [
+            { text: "Luxemburg ist bekannt für seine ungewöhnliche Stadtstruktur, die es von anderen europäischen Hauptstädten unterscheidet. Es gehört zu den wenigen Städten in Europa mit einem so starken Höhenunterschied, in der sich Stadtteile auf verschiedenen Ebenen befinden und durch die tiefen Täler der Flüsse Alzette und Pétrusse getrennt sind." },
+            { text: "Im Gegensatz zu den meisten europäischen Städten, die sich horizontal entwickelten, wuchs Luxemburg vertikal – bergauf und bergab entlang von Hängen und Plateaus. Genau deshalb entstand hier ein einzigartiges System von Brücken und Viadukten, das die verschiedenen Stadtebenen zu einer einheitlichen Stadtstruktur verbindet." },
+            { text: "Heute gehören die Viadukte zu den wichtigsten Merkmalen des Stadtbildes. Sie prägen die wiedererkennbare Silhouette von Luxemburg-Stadt und spiegeln ihre historische Entwicklung wider, in der Ingenieurkunst eng mit der natürlichen Topografie verbunden ist." },
+            { bold: "Geschichte", text: "Der aktive Brückenbau in Luxemburg begann im 19. Jahrhundert, als die Entwicklung der Eisenbahn und der Industrie neue Verkehrsverbindungen zum historischen Stadtzentrum erforderte. In dieser Zeit wurden die ersten großen Viadukte errichtet, darunter die Passerelle (Passerelle)." },
+            { text: "Im Laufe der weiteren Stadtentwicklung entstanden neue Brücken und ingenieurtechnische Lösungen, um die tiefen Täler zu überwinden. Luxemburg entwickelte sich allmählich zu einer Stadt mit mehrstufiger Struktur, in der Brücken zu einem unverzichtbaren Bestandteil des täglichen Lebens wurden." },
+            { text: "Im 20. und 21. Jahrhundert wurde der Bau mit modernen Technologien fortgesetzt, wobei stets darauf geachtet wurde, neue Konstruktionen harmonisch in die historische und natürliche Landschaft der Stadt einzufügen." }
+          ]
+        },
+        tickets_and_entry: {
+          title: "Praktische Informationen",
+          items: [
+            { bold: "Lage.", text: "Die Viadukte befinden sich im zentralen Teil von Luxemburg-Stadt und sind zu Fuß oder mit öffentlichen Verkehrsmitteln leicht erreichbar. Viele Spazierwege durch die Stadt führen über die Brücken, die das Bahnhofsviertel mit dem historischen Zentrum verbinden." },
+            { bold: "Beste Besuchszeit", text: "– tagsüber und bei Sonnenuntergang, wenn sich Panoramablicke auf die Täler und die Altstadt eröffnen." }
+          ]
+        },
+        interestingFacts: {
+          title: "Interessante Fakten",
+          isList: true,
+          items: [
+            { text: "Luxemburg ist auf mehreren Ebenen gebaut, daher verbinden die Brücken faktisch „verschiedene Städte in einer Stadt“." },
+            { text: "Einige Viadukte sind über 40 Meter hoch über dem Tal gelegen." },
+            { text: "Viele Brücken werden gleichzeitig von Autos, Fußgängern und öffentlichen Verkehrsmitteln genutzt." },
+            { text: "Die historischen Stadtviertel und Befestigungsanlagen Luxemburgs gehören zum UNESCO-Welterbe, und seine Brücken gelten als Teil der historischen Landschaft." }
+          ]
+        },
+        meta: {
+          title: "Viadukte Luxemburgs – Brücken, Geschichte und architektonische Besonderheiten der Stadt",
+          description: "Überblick über die Viadukte Luxemburgs: warum die Stadt auf Brücken gebaut ist, die Geschichte wichtiger Bauwerke und ihre Rolle in der Stadtstruktur.",
+          ogTitle: "Viadukte Luxemburgs – eine Stadt, die auf Brücken gebaut ist",
+          ogDescription: "Warum Luxemburg als Stadt der Viadukte gilt: Geschichte, Architektur und die bekanntesten Brücken.",
+          keywords: "Luxemburg Sehenswürdigkeiten, Luxemburg was sehen, Spaziergänge in Luxemburg, Stadt der Brücken, architektonische Brücken Europa, Viadukte Luxemburg, Brücken Luxemburg, Tourismus Luxemburg, alte Brücke Luxemburg",
+          ogImage: "https://our-travels.info/foto/Luxembourg/luxembourg_canton/luxembourg_city/viaducts/001.jpg"
+        }
+      }
+    }
   }
 ]
 

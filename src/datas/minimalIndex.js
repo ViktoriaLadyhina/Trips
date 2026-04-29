@@ -205,6 +205,7 @@ const datas =
     casemates_du_bock_luxembourg: { ru: 'Казематы Бок', de: 'Bock-Kasematten', ua: 'Каземати Бок' },
     abbey_neumunster_luxembourg: { ru: 'Абатство Неймюнстер', de: 'Abtei Neumünster', ua: 'Абатство Неймюнстер' },
     pont_du_chateau_luxembourg: { ru: 'Мост Понт-дю-Шато', de: 'Pont du Château Brücke', ua: 'Міст Понт-дю-Шато' },
+    viaducts_luxembourg: { ru: 'Виадуки Люксембурга', de: 'Viadukte Luxemburgs', ua: 'Віадуки Люксембурга' },
 
     // Ukraine
     // Sumska oblast
