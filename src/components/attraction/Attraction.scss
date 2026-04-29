@@ -67,11 +67,13 @@
                 @include body-text;
                 padding: 10px;
                 flex: 1;
+                font-size: 1rem;
             }
 
             &-more {
                 @include bold-text;
                 padding: 10px;
+                font-size: 1rem;
             }
         }
     }

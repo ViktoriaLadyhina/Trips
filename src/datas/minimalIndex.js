@@ -206,6 +206,7 @@ const datas =
     abbey_neumunster_luxembourg: { ru: 'Абатство Неймюнстер', de: 'Abtei Neumünster', ua: 'Абатство Неймюнстер' },
     pont_du_chateau_luxembourg: { ru: 'Мост Понт-дю-Шато', de: 'Pont du Château Brücke', ua: 'Міст Понт-дю-Шато' },
     viaducts_luxembourg: { ru: 'Виадуки Люксембурга', de: 'Viadukte Luxemburgs', ua: 'Віадуки Люксембурга' },
+    passerelle_luxembourg: { ru: 'Мост Пассерель', de: 'Passerelle-Brücke', ua: 'Міст Пассерель' },
 
     // Ukraine
     // Sumska oblast

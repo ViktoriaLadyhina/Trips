@@ -342,21 +342,25 @@ const Map = () => {
               <li><Link to="/luxembourg/luxembourg_canton">{t.regions.luxembourg_canton[lang]}</Link>
                 <ul>
                   <li><Link to="/luxembourg/luxembourg_canton/city/luxembourg_city"> {t.cities.luxembourg_city[lang]}</Link>
-                  <ul>
-                    <li><Link to="/luxembourg/luxembourg_canton/city/luxembourg_city/attractions/old_town_luxembourg">{t.attractions.old_town_luxembourg[lang]}</Link>
                     <ul>
-                      <li><Link to="/luxembourg/luxembourg_canton/city/luxembourg_city/attractions/casemates_du_bock_luxembourg">{t.attractions.casemates_du_bock_luxembourg[lang]}</Link></li>
-                      <li><Link to="/luxembourg/luxembourg_canton/city/luxembourg_city/attractions/abbey_neumunster_luxembourg">{t.attractions.abbey_neumunster_luxembourg[lang]}</Link></li>
-                      <li><Link to="/luxembourg/luxembourg_canton/city/luxembourg_city/attractions/pont_du_chateau_luxembourg">{t.attractions.pont_du_chateau_luxembourg[lang]}</Link></li>
+                      <li><Link to="/luxembourg/luxembourg_canton/city/luxembourg_city/attractions/old_town_luxembourg">{t.attractions.old_town_luxembourg[lang]}</Link>
+                        <ul>
+                          <li><Link to="/luxembourg/luxembourg_canton/city/luxembourg_city/attractions/casemates_du_bock_luxembourg">{t.attractions.casemates_du_bock_luxembourg[lang]}</Link></li>
+                          <li><Link to="/luxembourg/luxembourg_canton/city/luxembourg_city/attractions/abbey_neumunster_luxembourg">{t.attractions.abbey_neumunster_luxembourg[lang]}</Link></li>
+                          <li><Link to="/luxembourg/luxembourg_canton/city/luxembourg_city/attractions/pont_du_chateau_luxembourg">{t.attractions.pont_du_chateau_luxembourg[lang]}</Link></li>
+                        </ul>
+                      </li>
+                      <li><Link to="/luxembourg/luxembourg_canton/city/luxembourg_city/attractions/musee_drai_eechelen_luxembourg">{t.attractions.musee_drai_eechelen_luxembourg[lang]}</Link>
+                        <ul>
+                          <li><Link to="/luxembourg/luxembourg_canton/city/luxembourg_city/attractions/fort_thungen_luxembourg">{t.attractions.fort_thungen_luxembourg[lang]}</Link></li>
+                        </ul>
+                      </li>
+                      <li><Link to="/luxembourg/luxembourg_canton/city/luxembourg_city/attractions/viaducts_luxembourg">{t.attractions.viaducts_luxembourg[lang]}</Link>
+                        <ul>
+                          <li><Link to="/luxembourg/luxembourg_canton/city/luxembourg_city/attractions/passerelle_luxembourg">{t.attractions.passerelle_luxembourg[lang]}</Link></li>
+                        </ul>
+                      </li>
                     </ul>
-                    </li>
-                    <li><Link to="/luxembourg/luxembourg_canton/city/luxembourg_city/attractions/musee_drai_eechelen_luxembourg">{t.attractions.musee_drai_eechelen_luxembourg[lang]}</Link>
-                    <ul>
-                      <li><Link to="/luxembourg/luxembourg_canton/city/luxembourg_city/attractions/fort_thungen_luxembourg">{t.attractions.fort_thungen_luxembourg[lang]}</Link></li>
-                    </ul>
-                    </li>
-                    <li><Link to="/luxembourg/luxembourg_canton/city/luxembourg_city/attractions/viaducts_luxembourg">{t.attractions.viaducts_luxembourg[lang]}</Link></li>
-                  </ul>
                   </li>
                 </ul>
               </li>

@@ -105,6 +105,9 @@ export const Fotos = {
         { path: "Luxembourg/luxembourg_canton/luxembourg_city/viaducts/001.jpg", title: { ru: 'Мост Адольфа, 2024', de: 'Adolphe-Brücke, 2024', ua: 'Міст Адольфа, 2024' } },
         { path: "Luxembourg/luxembourg_canton/luxembourg_city/viaducts/002.jpg", title: { ru: 'Мост Адольфа, 2024', de: 'Adolphe-Brücke, 2024', ua: 'Міст Адольфа, 2024' } },
         { path: "Luxembourg/luxembourg_canton/luxembourg_city/old_town/passerelle/001.jpg", title: { ru: 'Мост Пассерель, 2024', de: 'Passerelle-Brücke, 2024', ua: 'Міст Пассерель, 2024' } }
+      ],
+      passerelle_luxembourg: [
+        { path: "Luxembourg/luxembourg_canton/luxembourg_city/old_town/passerelle/001.jpg", title: { ru: 'Мост Пассерель, 2024', de: 'Passerelle-Brücke, 2024', ua: 'Міст Пассерель, 2024' } }
       ]
     }
   }

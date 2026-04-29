@@ -353,7 +353,7 @@ const datas = [
     path: "old_town_luxembourg",
     countryPath: "luxembourg", regionPath: "luxembourg_canton", districtPath: "city", cityPath: "luxembourg_city",
     fotoCard: "Luxembourg/luxembourg_canton/luxembourg_city/old_town/001.jpg",
-    subObjects: ["casemates_du_bock_luxembourg", "abbey_neumunster_luxembourg", "pont_du_chateau_luxembourg"],
+    subObjects: ["casemates_du_bock_luxembourg", "abbey_neumunster_luxembourg", "pont_du_chateau_luxembourg", "passerelle_luxembourg"],
     translations: {
       ru: {
         name: "Старый город Люксембурга",
@@ -372,7 +372,8 @@ const datas = [
           items: [
             { bold: "Казематы Бок", text: "– система подземных оборонительных туннелей, вырубленных в скале Бок, являющаяся частью бывшей крепостной системы города и одним из ключевых элементов фортификационного наследия Люксембурга." },
             { bold: "Аббатство Ноймюнстер", text: "– историческое аббатство XVII века в районе Грунд, преобразованное в современный культурный центр с выставками и мероприятиями." },
-            { bold: "Мост Понт-дю-Шато", text: "– исторический мост в старом городе Люксембурга, входящий в систему бывших городских укреплений и являющийся частью пешеходных маршрутов." }
+            { bold: "Мост Понт-дю-Шато", text: "– исторический мост в старом городе Люксембурга, входящий в систему бывших городских укреплений и являющийся частью пешеходных маршрутов." },
+            { bold: "Мост Пассерель (Passerelle)", text: "– исторический каменный мост в городе Люксембург, соединяющий район старого города с кварталом вокзала и являющийся важной частью городской транспортной и пешеходной сети." }
           ]
         },
         full_description: {
@@ -430,6 +431,7 @@ const datas = [
             { bold: "Каземати Бок", text: "– система підземних оборонних тунелів, вирубаних у скелі Бок, яка є частиною колишньої фортифікаційної системи міста та одним із ключових елементів фортифікаційної спадщини Люксембурга." },
             { bold: "Абатство Ноймюнстер", text: "– історичне абатство XVII століття в районі Грунд, перетворене на сучасний культурний центр із виставками та заходами." },
             { bold: "Міст Понт-дю-Шато", text: "– історичний міст у старому місті Люксембургу, який входить до системи колишніх міських укріплень і є частиною пішохідних маршрутів." },
+            { bold: "Міст Пассерель (Passerelle)", text: "– історичний кам’яний міст у місті Люксембург, що з’єднує район старого міста з кварталом вокзалу та є важливою частиною міської транспортної і пішохідної мережі." }
           ]
         },
         full_description: {
@@ -487,6 +489,7 @@ const datas = [
             { bold: "Bock-Kasematten", text: "– ein System unterirdischer Verteidigungstunnel, die in den Bockfelsen gehauen wurden, das Teil des ehemaligen Festungssystems der Stadt ist und eines der wichtigsten Elemente des fortifikatorischen Erbes Luxemburgs darstellt." },
             { bold: "Abtei Neumünster", text: "– eine historische Abtei aus dem 17. Jahrhundert im Stadtteil Grund, die in ein modernes Kulturzentrum mit Ausstellungen und Veranstaltungen umgewandelt wurde." },
             { bold: "Pont du Château", text: "– eine historische Brücke in der Altstadt von Luxemburg, die Teil der ehemaligen Stadtbefestigungen ist und zu den Fußgängerwegen gehört." },
+            { bold: "Passerelle-Brücke", text: "– historische Steinbrücke in der Stadt Luxemburg, die den Altstadtbereich mit dem Bahnhofsviertel verbindet und ein wichtiger Bestandteil des städtischen Verkehrs- und Fußgängernetzes ist." }
           ]
         },
         full_description: {
@@ -968,11 +971,18 @@ const datas = [
     path: "viaducts_luxembourg",
     countryPath: "luxembourg", regionPath: "luxembourg_canton", districtPath: "city", cityPath: "luxembourg_city",
     fotoCard: "Luxembourg/luxembourg_canton/luxembourg_city/viaducts/001.jpg",
+    subObjects: ["passerelle_luxembourg"],
     translations: {
       ru: {
         name: "Виадуки Люксембурга",
         location: "Город Люксембург, Люксембург",
         short_description: "Люксембург известен своей уникальной многоуровневой городской структурой, где глубокие долины рек разделяют районы города. Виадуки и мосты здесь служат не только транспортными связями, но и важной частью архитектурного облика столицы. Эти инженерные сооружения формируют узнаваемый силуэт Люксембурга и отражают его историческое развитие и особенности рельефа.",
+        short_description_subObjects: {
+          text: "Некоторые из самых известных виадуков столицы:",
+          items: [
+            { bold: "Мост Пассерель (Passerelle)", text: "– исторический каменный мост в городе Люксембург, соединяющий район старого города с кварталом вокзала и являющийся важной частью городской транспортной и пешеходной сети." }
+          ]
+        },
         full_description: {
           title: "Описание и история",
           items: [
@@ -1014,6 +1024,12 @@ const datas = [
         name: "Віадуки Люксембурга",
         location: "Місто Люксембург, Люксембург",
         short_description: "Люксембург відомий своєю унікальною багаторівневою міською структурою, де глибокі долини річок розділяють райони міста. Віадуки та мости тут виконують не лише транспортну функцію, але й є важливою частиною архітектурного вигляду столиці. Ці інженерні споруди формують впізнаваний силует Люксембурга та відображають його історичний розвиток і особливості рельєфу.",
+        short_description_subObjects: {
+          text: "Деякі з найвідоміших віадуків столиці:",
+          items: [
+            { bold: "Міст Пассерель (Passerelle)", text: "– історичний кам’яний міст у місті Люксембург, що з’єднує район старого міста з кварталом вокзалу та є важливою частиною міської транспортної і пішохідної мережі." }
+          ]
+        },
         full_description: {
           title: "Опис та історія",
           items: [
@@ -1055,6 +1071,12 @@ const datas = [
         name: "Viadukte Luxemburgs",
         location: "Stadt Luxemburg, Luxemburg",
         short_description: "Luxemburg ist bekannt für seine einzigartige mehrstufige Stadtstruktur, in der tiefe Flusstäler die Stadtteile voneinander trennen. Viadukte und Brücken dienen hier nicht nur als Verkehrsverbindungen, sondern sind auch ein wichtiger Bestandteil des architektonischen Erscheinungsbildes der Hauptstadt. Diese Ingenieurbauwerke prägen die charakteristische Silhouette Luxemburgs und spiegeln seine historische Entwicklung sowie die Besonderheiten des Reliefs wider.",
+        short_description_subObjects: {
+          text: "Einige der bekanntesten Viadukte der Hauptstadt:",
+          items: [
+            { bold: "Passerelle-Brücke", text: "– historische Steinbrücke in der Stadt Luxemburg, die den Altstadtbereich mit dem Bahnhofsviertel verbindet und ein wichtiger Bestandteil des städtischen Verkehrs- und Fußgängernetzes ist." }
+          ]
+        },
         full_description: {
           title: "Beschreibung und Geschichte",
           items: [
@@ -1090,6 +1112,121 @@ const datas = [
           ogDescription: "Warum Luxemburg als Stadt der Viadukte gilt: Geschichte, Architektur und die bekanntesten Brücken.",
           keywords: "Luxemburg Sehenswürdigkeiten, Luxemburg was sehen, Spaziergänge in Luxemburg, Stadt der Brücken, architektonische Brücken Europa, Viadukte Luxemburg, Brücken Luxemburg, Tourismus Luxemburg, alte Brücke Luxemburg",
           ogImage: "https://our-travels.info/foto/Luxembourg/luxembourg_canton/luxembourg_city/viaducts/001.jpg"
+        }
+      }
+    }
+  },
+  {
+    id: "passerelle_luxembourg",
+    type: ["technical_structure"], rating: "popular",
+    path: "passerelle_luxembourg",
+    countryPath: "luxembourg", regionPath: "luxembourg_canton", districtPath: "city", cityPath: "luxembourg_city",
+    hiddenFromList: true, showMore: true,
+    fotoCard: "Luxembourg/luxembourg_canton/luxembourg_city/old_town/passerelle/001.jpg",
+    translations: {
+      ru: {
+        name: "Мост Пассерель",
+        location: "Город Люксембург, Люксембург",
+        short_description: "Мост Пассерель, также известный как Люксембургский виадук, – это один из самых узнаваемых мостов Люксембурга, соединяющий центральную часть города с районом вокзала. Построенный в XIX веке, он стал важным транспортным и архитектурным элементом столицы.",
+        full_description: {
+          title: "Описание и история",
+          items: [
+            { bold: "Мост Пассерель (Passerelle)", text: "является одним из ключевых исторических мостов города Люксембург. Он пересекает долину реки Петрус и соединяет старый город с районом Gare (железнодорожный вокзал). Благодаря своему расположению, мост открывает живописные виды на долину и старинные укрепления города." },
+            { text: "Архитектурно мост выполнен из камня и отличается элегантной арочной конструкцией. Его длина и масштаб делают его не только функциональным объектом, но и важной частью городского пейзажа. Сегодня по мосту активно передвигаются как автомобили, так и пешеходы." },
+            { text: "Пассерель часто называют “старым мостом” в отличие от более современного моста Адольфа, расположенного неподалёку. Несмотря на возраст, мост хорошо сохранился и остаётся важной частью городской инфраструктуры." },
+            { bold: "История", text: "Мост Пассерель был построен в период с 1859 по 1861 годы, когда Люксембург активно развивался как стратегический и транспортный узел Европы. Он стал первым крупным мостом, соединившим исторический центр города с новой железнодорожной станцией." },
+            { text: "Строительство моста было связано с необходимостью улучшения транспортного сообщения и развития городской инфраструктуры. В то время Люксембург находился под сильным влиянием европейских держав, и развитие железных дорог играло ключевую роль." },
+            { text: "Со временем мост утратил статус главного транспортного перехода после строительства моста Адольфа, однако сохранил своё историческое значение и продолжает использоваться до сих пор." }
+          ]
+        },
+        interestingFacts: {
+          title: "Интересные факты",
+          isList: true,
+          items: [
+            { text: "Мост часто называют просто “Passerelle”, что в переводе с французского означает “переход” или “мостик”." },
+            { text: "Это один из старейших мостов города, который до сих пор используется." },
+            { text: "С моста открываются одни из лучших видов на долину Петрус." },
+            { text: "Он долгое время был основным соединением между центром и вокзалом." }
+          ]
+        },
+        construction_period: "1859-1861",
+        meta: {
+          title: "Мост Пассерель в Люксембурге – история и описание Passerelle",
+          description: "Мост Пассерель (Passerelle) – исторический виадук в Люксембурге, соединяющий центр города с вокзалом. Узнайте историю, факты и как посетить.",
+          ogTitle: "Мост Пассерель – старейший мост Люксембурга",
+          ogDescription: "Живописный мост XIX века с видами на долину Петрус. Один из символов Люксембурга.",
+          keywords: "Passerelle Luxembourg, мост Пассерель, виадук Люксембург, Luxembourg bridge, Passerelle viaduct, достопримечательности Люксембурга, мосты Люксембурга",
+          ogImage: "https://our-travels.info/foto/Luxembourg/luxembourg_canton/luxembourg_city/old_town/passerelle/001.jpg"
+        }
+      },
+      ua: {
+        name: "Міст Пассерель",
+        location: "Місто Люксембург, Люксембург",
+        short_description: "Міст Пассерель, також відомий як Люксембурзький віадук, — це один із найвідоміших мостів Люксембургу, що з’єднує центральну частину міста з районом вокзалу. Збудований у XIX столітті, він став важливим транспортним і архітектурним елементом столиці.",
+        full_description: {
+          title: "Опис і історія",
+          items: [
+            { bold: "Міст Пассерель (Passerelle)", text: "є одним із ключових історичних мостів міста Люксембург. Він перетинає долину річки Петрус і з’єднує старе місто з районом Gare (залізничний вокзал). Завдяки своєму розташуванню міст відкриває мальовничі краєвиди на долину та старовинні укріплення міста." },
+            { text: "Архітектурно міст виконаний з каменю та вирізняється елегантною арковою конструкцією. Його довжина та масштаб роблять його не лише функціональним об’єктом, а й важливою частиною міського пейзажу. Сьогодні мостом активно користуються як автомобілі, так і пішоходи." },
+            { text: "Пассерель часто називають «старим мостом» на відміну від більш сучасного мосту Адольфа, розташованого неподалік. Попри свій вік, міст добре зберігся та залишається важливою частиною міської інфраструктури." },
+            { bold: "Історія", text: "Міст Пассерель був збудований у період з 1859 по 1861 роки, коли Люксембург активно розвивався як стратегічний і транспортний вузол Європи. Він став першим великим мостом, що з’єднав історичний центр міста з новою залізничною станцією." },
+            { text: "Будівництво мосту було пов’язане з необхідністю покращення транспортного сполучення та розвитку міської інфраструктури. У той час Люксембург перебував під сильним впливом європейських держав, і розвиток залізниць відігравав ключову роль." },
+            { text: "З часом міст втратив статус головного транспортного переходу після будівництва мосту Адольфа, однак зберіг своє історичне значення і продовжує використовуватися донині." }
+          ]
+        },
+        interestingFacts: {
+          title: "Цікаві факти",
+          isList: true,
+          items: [
+            { text: "Міст часто називають просто «Passerelle», що у перекладі з французької означає «перехід» або «місток»." },
+            { text: "Це один із найстаріших мостів міста, який досі використовується." },
+            { text: "З мосту відкриваються одні з найкращих краєвидів на долину Петрус." },
+            { text: "Він довгий час був основним сполученням між центром і вокзалом." }
+          ]
+        },
+        construction_period: "1859-1861",
+        meta: {
+          title: "Міст Пассерель у Люксембурзі – історія та опис Passerelle",
+          description: "Міст Пассерель (Passerelle) – історичний віадук у Люксембурзі, що з’єднує центр міста з вокзалом. Дізнайтеся історію, факти та як відвідати.",
+          ogTitle: "Міст Пассерель – найстаріший міст Люксембургу",
+          ogDescription: "Мальовничий міст XIX століття з видами на долину Петрус. Один із символів Люксембургу.",
+          keywords: "Passerelle Luxembourg, міст Пассерель, віадук Люксембург, Luxembourg bridge, Passerelle viaduct, пам’ятки Люксембургу, мости Люксембургу",
+          ogImage: "https://our-travels.info/foto/Luxembourg/luxembourg_canton/luxembourg_city/old_town/passerelle/001.jpg"
+        }
+      },
+      de: {
+        name: "Passerelle-Brücke",
+        location: "Stadt Luxemburg, Luxemburg",
+        short_description: "Die Passerelle-Brücke, auch als Luxemburger Viadukt bekannt, ist eine der bekanntesten Brücken Luxemburgs und verbindet das Stadtzentrum mit dem Bahnhofviertel. Im 19. Jahrhundert erbaut, wurde sie zu einem wichtigen Verkehrs- und Architekturdenkmal der Hauptstadt.",
+        full_description: {
+          title: "Beschreibung und Geschichte",
+          items: [
+            { bold: "Die Passerelle (Passerelle-Brücke)", text: "ist eine der wichtigsten historischen Brücken der Stadt Luxemburg. Sie überquert das Tal der Petruss und verbindet die Altstadt mit dem Stadtteil Gare (Bahnhofsviertel). Dank ihrer Lage bietet die Brücke beeindruckende Ausblicke auf das Tal und die historischen Festungsanlagen der Stadt." },
+            { text: "Architektonisch ist die Brücke aus Stein gebaut und zeichnet sich durch ihre elegante Bogenkonstruktion aus. Ihre Länge und ihr Maßstab machen sie nicht nur zu einem funktionalen Bauwerk, sondern auch zu einem wichtigen Teil des Stadtbildes. Heute wird die Brücke sowohl von Fahrzeugen als auch von Fußgängern genutzt." },
+            { text: "Die Passerelle wird oft als „alte Brücke“ bezeichnet, im Gegensatz zur moderneren Adolphe-Brücke in der Nähe. Trotz ihres Alters ist die Brücke gut erhalten und bleibt ein wichtiger Bestandteil der städtischen Infrastruktur." },
+            { bold: "Geschichte", text: "Die Passerelle-Brücke wurde zwischen 1859 und 1861 erbaut, als sich Luxemburg stark als strategischer und verkehrstechnischer Knotenpunkt Europas entwickelte. Sie war die erste große Brücke, die das historische Stadtzentrum mit dem neuen Bahnhof verband." },
+            { text: "Der Bau der Brücke war mit der Notwendigkeit verbunden, die Verkehrsanbindung zu verbessern und die städtische Infrastruktur auszubauen. Zu dieser Zeit stand Luxemburg unter starkem Einfluss europäischer Mächte, und der Ausbau der Eisenbahn spielte eine zentrale Rolle." },
+            { text: "Mit der Zeit verlor die Brücke ihre Rolle als wichtigste Verkehrsverbindung nach dem Bau der Adolphe-Brücke, behielt jedoch ihre historische Bedeutung und wird bis heute genutzt." }
+          ]
+        },
+        interestingFacts: {
+          title: "Interessante Fakten",
+          isList: true,
+          items: [
+            { text: "Die Brücke wird oft einfach „Passerelle“ genannt, was aus dem Französischen „Übergang“ oder „kleine Brücke“ bedeutet." },
+            { text: "Sie ist eine der ältesten noch genutzten Brücken der Stadt." },
+            { text: "Von der Brücke aus hat man einen der besten Ausblicke auf das Petruss-Tal." },
+            { text: "Sie war lange Zeit die wichtigste Verbindung zwischen Zentrum und Bahnhof." }
+          ]
+        },
+        construction_period: "1859-1861",
+        meta: {
+          title: "Passerelle-Brücke in Luxemburg – Geschichte und Beschreibung",
+          description: "Die Passerelle (Passerelle-Brücke) ist ein historisches Viadukt in Luxemburg, das das Stadtzentrum mit dem Bahnhof verbindet. Erfahren Sie mehr über Geschichte, Fakten und Besuchsmöglichkeiten.",
+          ogTitle: "Passerelle-Brücke – die älteste Brücke Luxemburgs",
+          ogDescription: "Malersiche Brücke aus dem 19. Jahrhundert mit Blick auf das Petruss-Tal. Eines der Wahrzeichen Luxemburgs.",
+          keywords: "Passerelle Luxembourg, Passerelle Brücke, Viadukt Luxemburg, Luxembourg bridge, Passerelle viaduct, Sehenswürdigkeiten Luxemburg, Brücken Luxemburg",
+          ogImage: "https://our-travels.info/foto/Luxembourg/luxembourg_canton/luxembourg_city/old_town/passerelle/001.jpg"
         }
       }
     }
