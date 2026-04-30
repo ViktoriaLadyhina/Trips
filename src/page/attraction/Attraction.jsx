@@ -31,7 +31,6 @@ const Attraction = () => {
     const { city } = useCity(countryPath, regionPath, districtPath, cityPath);
     const { attractions, error } = useAttractions(countryPath, regionPath, districtPath, cityPath);
 
-    const attraction = attractions.find(a => a.path === attractionsPath);
     const photos = photosByCountry[countryPath];
     const attractionPhotos = photos?.[regionPath]?.[cityPath]?.[attractionsPath] || [];
 
@@ -59,12 +58,14 @@ const Attraction = () => {
     if (!attractions) return <p>Loading...</p>;
     if (!attraction) return <p>Attraction not found</p>;
 
+    const attraction = attractions.find(a => a.path === attractionsPath);
+
     const subObjects = attraction.subObjects || [];
     const subObjects2 = attraction.subObjects2 || [];
 
     const filteredAttractions = attractions?.filter(attr => {
 
-        let allTypes = [...attr.type];
+        let allTypes = Array.isArray(attr.type) ? [...attr.type] : [];
 
         if (attr.subObjects?.length > 0) {
             attr.subObjects.forEach(subId => {
