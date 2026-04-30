@@ -41,6 +41,8 @@ const Attraction = () => {
         sort: 'rating',
     });
 
+const attraction = attractions.find(a => a.path === attractionsPath);
+
     <Helmet>
         <title>{attraction?.name}</title>
     </Helmet>
@@ -58,7 +60,7 @@ const Attraction = () => {
     if (!attractions) return <p>Loading...</p>;
     if (!attraction) return <p>Attraction not found</p>;
 
-    const attraction = attractions.find(a => a.path === attractionsPath);
+    
 
     const subObjects = attraction.subObjects || [];
     const subObjects2 = attraction.subObjects2 || [];
