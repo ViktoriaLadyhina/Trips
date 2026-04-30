@@ -9,7 +9,7 @@ const datas = [
         countryPath: "germany", regionPath: "nrw", districtPath: "city", cityPath: "koln",
         fotoCard: "Germany/nrw/koln/koln-city/altstadt/005.jpg",
         location: "Кельн, Німеччина",
-        subObjects: ["cologne_cathedral", "rathaus_koln", "guerzenich_koln", "miqua", "wallraf_richartz_museum", "roemisch_germanisches_museum", "farina_duftmuseum", "museum_ludwig", "stadtmuseum_koln", "dufthaus_4711_koln", "st_maria_himmelfahrt_koln", "old_towers_koln", "fischmarkt_koln", "gross_st_martin_koln", "st_maria_im_kapitol_koln", ],
+        subObjects: ["cologne_cathedral", "rathaus_koln", "guerzenich_koln", "miqua", "wallraf_richartz_museum", "roemisch_germanisches_museum", "farina_duftmuseum", "museum_ludwig", "stadtmuseum_koln", "dufthaus_4711_koln", "st_maria_himmelfahrt_koln", "old_towers_koln", "fischmarkt_koln", "gross_st_martin_koln", "st_maria_im_kapitol_koln", "st_kunibert_koln"],
         short_description_subObjects: {
             text: "У Старому місті Кельна розташовані такі визначні пам'ятки:",
             items: [
@@ -19,6 +19,7 @@ const datas = [
                 { bold: "Великий Святий Мартин", text: "– одна з найбільш впізнаваних романських церков Кельна з масивною вежею-триконхою, що піднімається над набережною Рейну. Символ силуету Старого міста." },
                 { bold: "Церква Святої Марії в Капітолії", text: "– найбільша романська церква Кельна, збудована на місці давньоримського храму. Вражаючий приклад романської архітектури з триконховим планом та історичною криптою, що зберігає сліди античного минулого." },              
                 { bold: "Церква Успіння Пресвятої Діви Марії (St. Mariä Himmelfahrt)", text: "– головна барокова церква Кельна сімнадцятого століття, колишній єзуїтський храм, розташований поруч із центральним залізничним вокзалом та Кельнським собором." },
+                { bold: "Базиліка Святого Куніберта в Кельні", text: "– романська церква з масивними вежами, строгими формами та спокійною атмосферою, розташована в північній частині старого міста біля Рейну." },
                 { bold: "Гюрценіх", text: "– історичний цеховий будинок і зал поруч із Кельнським собором." },
                 { bold: "Кельнська ратуша", text: "– історична міська ратуша в центрі Старого міста." },
                 { bold: "Кельнський міський музей", text: "– музей історії міста в центрі (Zeughaus)." },
@@ -200,14 +201,15 @@ const datas = [
         type: ["cathedral"], rating: "popular",
         path: "romanische_kirchen_altstadt_koln",
         countryPath: "germany", regionPath: "nrw", districtPath: "city", cityPath: "koln",
-        subObjects: ["gross_st_martin_koln", "st_maria_im_kapitol_koln", "st_gereon_koln"],
+        subObjects: ["gross_st_martin_koln", "st_maria_im_kapitol_koln", "st_gereon_koln", "st_kunibert_koln"],
         mapOpen: "romanische_kirchen_altstadt_koln",
         short_description_subObjects: {
             text: "На нашому сайті з цього списку описані церкви:",
             items: [
                 { bold: "Великий Святий Мартин", text: "– одна з найбільш впізнаваних романських церков Кельна з масивною вежею-триконхою, що піднімається над набережною Рейну. Символ силуету Старого міста." },
                 { bold: "Церква Святої Марії в Капітолії", text: "– найбільша романська церква Кельна, збудована на місці давньоримського храму. Вражаючий приклад романської архітектури з триконховим планом та історичною криптою, що зберігає сліди античного минулого." },
-                { bold: "Церква Святого Герєона в Кельні", text: "– романська церква з дванадцятигранним куполом, старовинними вітражами та багатим історичним інтер'єром." }
+                { bold: "Церква Святого Герєона в Кельні", text: "– романська церква з дванадцятигранним куполом, старовинними вітражами та багатим історичним інтер'єром." },
+                { bold: "Базиліка Святого Куніберта в Кельні", text: "– романська церква з масивними вежами, строгими формами та спокійною атмосферою, розташована в північній частині старого міста біля Рейну." },
             ]
         },
         fotoCard: "Germany/nrw/koln/koln-city/altstadt/romanische_kirchen/001.jpg",

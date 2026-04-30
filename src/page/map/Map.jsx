@@ -201,6 +201,7 @@ const Map = () => {
                               <li><Link to="/germany/nrw/city/koln/attractions/gross_st_martin_koln">{t.attractions.gross_st_martin_koln[lang]}</Link></li>
                               <li><Link to="/germany/nrw/city/koln/attractions/st_maria_im_kapitol_koln">{t.attractions.st_maria_im_kapitol_koln[lang]}</Link></li>
                               <li><Link to="/germany/nrw/city/koln/attractions/st_gereon_koln">{t.attractions.st_gereon_koln[lang]}</Link></li>
+                              <li><Link to="/germany/nrw/city/koln/attractions/st_kunibert_koln">{t.attractions.st_kunibert_koln[lang]}</Link></li>
                             </ul>
                           </li>
                           <li><Link to="/germany/nrw/city/koln/attractions/schokoladenmuseum">{t.attractions.schokoladenmuseum[lang]}</Link></li>
@@ -228,6 +229,7 @@ const Map = () => {
                             <ul>
                               <li><Link to="/germany/nrw/city/koln/attractions/fort_I_inner_koln">{t.attractions.fort_I_inner_koln[lang]}</Link></li>
                               <li><Link to="/germany/nrw/city/koln/attractions/fort_II_inner_koln">{t.attractions.fort_II_inner_koln[lang]}</Link></li>
+                              <li><Link to="/germany/nrw/city/koln/attractions/fort_III_inner_koln">{t.attractions.fort_III_inner_koln[lang]}</Link></li>
                               <li><Link to="/germany/nrw/city/koln/attractions/fort_V_inner_koln">{t.attractions.fort_V_inner_koln[lang]}</Link></li>
                               <li><Link to="/germany/nrw/city/koln/attractions/fort_IV_outer_koln">{t.attractions.fort_IV_outer_koln[lang]}</Link></li>
                               <li><Link to="/germany/nrw/city/koln/attractions/fort_V_outer_koln">{t.attractions.fort_V_outer_koln[lang]}</Link></li>

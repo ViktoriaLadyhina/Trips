@@ -9,7 +9,7 @@ const datas = [
         countryPath: "germany", regionPath: "nrw", districtPath: "city", cityPath: "koln",
         fotoCard: "Germany/nrw/koln/koln-city/altstadt/005.jpg",
         location: "Köln, Deutschland",
-        subObjects: ["cologne_cathedral", "rathaus_koln", "guerzenich_koln", "miqua", "wallraf_richartz_museum", "roemisch_germanisches_museum", "farina_duftmuseum", "museum_ludwig", "stadtmuseum_koln", "dufthaus_4711_koln", "st_maria_himmelfahrt_koln", "old_towers_koln", "fischmarkt_koln", "gross_st_martin_koln", "st_maria_im_kapitol_koln", ],
+        subObjects: ["cologne_cathedral", "rathaus_koln", "guerzenich_koln", "miqua", "wallraf_richartz_museum", "roemisch_germanisches_museum", "farina_duftmuseum", "museum_ludwig", "stadtmuseum_koln", "dufthaus_4711_koln", "st_maria_himmelfahrt_koln", "old_towers_koln", "fischmarkt_koln", "gross_st_martin_koln", "st_maria_im_kapitol_koln", "st_kunibert_koln"],
         short_description_subObjects: {
             text: "In der Altstadt von Köln befinden sich folgende Sehenswürdigkeiten:",
             items: [
@@ -18,6 +18,7 @@ const datas = [
                 { bold: "Groß St. Martin", text: "– eine der bekanntesten romanischen Kirchen Kölns mit einem massiven Turm-Trikonchos, der über der Rheinpromenade aufragt. Ein Symbol des Silhouetts der Altstadt." },
                 { bold: "St. Maria im Kapitol", text: "– die größte romanische Kirche Kölns, erbaut auf dem Gelände eines antiken römischen Tempels. Ein herausragendes Beispiel romanischer Architektur mit Trikonchos-Plan und historischer Krypta, die Spuren der antiken Vergangenheit bewahrt." },
                 { bold: "St. Mariä Himmelfahrt", text: "– die wichtigste Barockkirche Kölns aus dem 17. Jahrhundert, eine ehemalige Jesuitenkirche in der Nähe des Hauptbahnhofs und des Kölner Doms." },
+                { bold: "Basilika St. Kunibert in Köln", text: "– eine romanische Kirche mit massiven Türmen, strengen Formen und ruhiger Atmosphäre, gelegen im nördlichen Teil der Altstadt in der Nähe des Rheins." },
                 { bold: "Gürzenich", text: "– historisches Zunfthaus und Saal in der Nähe des Kölner Doms." },
                 { bold: "Kölner Rathaus", text: "– historisches Stadthaus im Zentrum der Altstadt." },
                 { bold: "Dufthaus 4711", text: "– historisches Gebäude in der Fußgängerzone um die Hohe Straße und Schildergasse." },
@@ -200,7 +201,7 @@ const datas = [
         type: ["cathedral"], rating: "popular",
         path: "romanische_kirchen_altstadt_koln",
         countryPath: "germany", regionPath: "nrw", districtPath: "city", cityPath: "koln",
-        subObjects: ["gross_st_martin_koln", "st_maria_im_kapitol_koln", "st_gereon_koln"],
+        subObjects: ["gross_st_martin_koln", "st_maria_im_kapitol_koln", "st_gereon_koln", "st_kunibert_koln"],
         mapOpen: "romanische_kirchen_altstadt_koln",
         short_description_subObjects: {
             text: "Auf unserer Website werden aus dieser Liste folgende Kirchen beschrieben:",
@@ -208,6 +209,7 @@ const datas = [
                 { bold: "Groß St. Martin", text: "– eine der bekanntesten romanischen Kirchen Kölns mit einem massiven Turm-Trikonchos, der über der Rheinpromenade aufragt. Ein Symbol des Silhouetts der Altstadt." },
                 { bold: "St. Maria im Kapitol", text: "– die größte romanische Kirche Kölns, erbaut auf dem Gelände eines antiken römischen Tempels. Ein herausragendes Beispiel romanischer Architektur mit Trikonchos-Plan und historischer Krypta, die Spuren der antiken Vergangenheit bewahrt." },
                 { bold: "St. Gereon Kirche", text: "– eine romanische Kirche mit zwölfeckiger Kuppel, alten Glasfenstern und reichhaltigem historischen Interieur." },
+                { bold: "Basilika St. Kunibert in Köln", text: "– eine romanische Kirche mit massiven Türmen, strengen Formen und ruhiger Atmosphäre, gelegen im nördlichen Teil der Altstadt in der Nähe des Rheins." },
             ]
         },
         fotoCard: "Germany/nrw/koln/koln-city/altstadt/romanische_kirchen/001.jpg",

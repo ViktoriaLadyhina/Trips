@@ -9,7 +9,7 @@ const datas = [
         countryPath: "germany", regionPath: "nrw", districtPath: "city", cityPath: "koln",
         fotoCard: "Germany/nrw/koln/koln-city/altstadt/005.jpg",
         location: "Кёльн, Германия",
-        subObjects: ["cologne_cathedral", "rathaus_koln", "guerzenich_koln", "miqua", "wallraf_richartz_museum", "roemisch_germanisches_museum", "farina_duftmuseum", "museum_ludwig", "stadtmuseum_koln", "dufthaus_4711_koln", "st_maria_himmelfahrt_koln", "old_towers_koln", "fischmarkt_koln", "gross_st_martin_koln", "st_maria_im_kapitol_koln", ],
+        subObjects: ["cologne_cathedral", "rathaus_koln", "guerzenich_koln", "miqua", "wallraf_richartz_museum", "roemisch_germanisches_museum", "farina_duftmuseum", "museum_ludwig", "stadtmuseum_koln", "dufthaus_4711_koln", "st_maria_himmelfahrt_koln", "old_towers_koln", "fischmarkt_koln", "gross_st_martin_koln", "st_maria_im_kapitol_koln", "st_kunibert_koln"],
         short_description_subObjects: {
             text: "В старом городе Кельна расположены такие достопримечательности:",
             items: [
@@ -18,6 +18,7 @@ const datas = [
                 { bold: "Большой Святой Мартин", text: "– одна из самых узнаваемых романских церквей Кёльна с массивной башней-триконхой, возвышающейся над набережной Рейна. Символ силуэта Старого города." },
                 { bold: "Церковь Святой Марии в Капитолии", text: "– крупнейшая романская церковь Кёльна, построенная на месте древнеримского храма. Выдающийся пример романской архитектуры с триконховым планом и исторической криптой, сохраняющей следы античного прошлого." },
                 { bold: "Церковь Успения Пресвятой Девы Марии (St. Mariä Himmelfahrt)", text: "– главная барочная церковь Кёльна XVII века, бывшая иезуитская святыня рядом с центральным вокзалом и Кёльнским собором." },
+                { bold: "Базилика Святого Куниберта в Кёльне", text: "– романская церковь с массивными башнями, строгими формами и спокойной атмосферой, расположенная в северной части старого города у Рейна." },
                 { bold: "Гюрцених", text: "– исторический гильдейский дом и зал рядом с Кёльнским собором." },
                 { bold: "Дом одеколона 4711", text: "– историческое здание в пешеходной зоне вокруг Hohe Straße и Schildergasse." },
                 { bold: "Кёльнская ратуша", text: "– историческая городская ратуша в центре Старого города." },
@@ -199,14 +200,14 @@ const datas = [
         path: "romanische_kirchen_altstadt_koln",
         mapOpen: "romanische_kirchen_altstadt_koln",
         countryPath: "germany", regionPath: "nrw", districtPath: "city", cityPath: "koln",
-        subObjects: ["gross_st_martin_koln", "st_maria_im_kapitol_koln", "st_gereon_koln"],
+        subObjects: ["gross_st_martin_koln", "st_maria_im_kapitol_koln", "st_gereon_koln", "st_kunibert_koln"],
         short_description_subObjects: {
             text: "На нашем сайте из этого списка описаны церкви:",
             items: [
                 { bold: "Большой Святой Мартин", text: "– одна из самых узнаваемых романских церквей Кёльна с массивной башней-триконхой, возвышающейся над набережной Рейна. Символ силуэта Старого города." },
                 { bold: "Церковь Святой Марии в Капитолии", text: "– крупнейшая романская церковь Кёльна, построенная на месте древнеримского храма. Выдающийся пример романской архитектуры с триконховым планом и исторической криптой, сохраняющей следы античного прошлого." },
                 { bold: "Церковь Святого Гереона в Кёльне", text: "– романская церковь с двенадцатигранным куполом, старинными витражами и богатым историческим интерьером." },
-                // St. Kunibert
+                { bold: "Базилика Святого Куниберта в Кёльне", text: "– романская церковь с массивными башнями, строгими формами и спокойной атмосферой, расположенная в северной части старого города у Рейна." },
                 // St. Aposteln
                 // St. Severin
                 // St. Pantaleon
