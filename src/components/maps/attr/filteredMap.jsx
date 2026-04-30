@@ -3,9 +3,10 @@ import L from 'leaflet';
 import 'leaflet/dist/leaflet.css';
 import './AttrMap.scss';
 import { useNavigate } from 'react-router';
-import { useEffect } from 'react';
+import { useEffect, useMemo } from 'react';
 import useAllAttractions from '../../../hooks/useAllAttractions';
 
+// фикс иконок Leaflet (важно оставить один раз)
 delete L.Icon.Default.prototype._getIconUrl;
 L.Icon.Default.mergeOptions({
   iconRetinaUrl: 'https://unpkg.com/leaflet@1.9.4/dist/images/marker-icon-2x.png',
@@ -13,19 +14,20 @@ L.Icon.Default.mergeOptions({
   shadowUrl: 'https://unpkg.com/leaflet@1.9.4/dist/images/marker-shadow.png',
 });
 
-const moreBtnText = { ru: "Подробнее", de: "Mehr erfahren", ua: "Детальніше" };
+const moreBtnText = {
+  ru: "Подробнее",
+  de: "Mehr erfahren",
+  ua: "Детальніше"
+};
 
-const FilteredMap = ({ map }) => {
-  const navigate = useNavigate();
-  const { attractions: allAttractions } = useAllAttractions();
-
+// Вынесено наружу (НЕ пересоздаётся на каждый render)
 const FitBounds = ({ points }) => {
   const map = useMap();
 
   useEffect(() => {
-    const valid = points.filter(p => p.coord);
+    const valid = points?.filter(p => p?.coord?.lat && p?.coord?.lng);
 
-    if (!valid.length) return;
+    if (!valid || valid.length === 0) return;
 
     const bounds = L.latLngBounds(
       valid.map(p => [p.coord.lat, p.coord.lng])
@@ -37,44 +39,62 @@ const FitBounds = ({ points }) => {
   return null;
 };
 
-const attractions = allAttractions.filter(attr =>
-  map ? attr.map === map : true
-);
+const FilteredMap = ({ map, lang = 'ru' }) => {
+  const navigate = useNavigate();
+  const { attractions: allAttractions = [] } = useAllAttractions();
 
-  // для мобильных
-  const isTouchDevice = L.Browser.mobile;
+  // 🔥 1. фильтрация стабильно через useMemo
+  const attractions = useMemo(() => {
+    if (!allAttractions.length) return [];
+
+    return allAttractions.filter(attr => {
+      if (!attr) return false;
+      return map ? attr.map === map : true;
+    });
+  }, [allAttractions, map]);
+
+  // 🔥 2. mobile detection безопасный
+  const isTouchDevice = L.Browser?.mobile ?? false;
 
   return (
     <MapContainer
-      closePopupOnClick={true}
+      center={[50.9375, 6.9603]} // fallback (Кёльн)
       zoom={13}
       style={{
         height: "450px",
         width: "100%",
         marginBottom: "20px"
       }}
+      // 🔥 важно: НЕ даём карте пересоздаваться без причины
+      key={map || 'default-map'}
     >
       <TileLayer url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png" />
+
+      {/* 🔥 bounds только на стабильных данных */}
       <FitBounds points={attractions} />
 
-      {attractions.map(attr => (
-        attr.coord && (
+      {attractions.map(attr => {
+        if (!attr?.coord) return null;
+
+        const { lat, lng } = attr.coord;
+
+        return (
           <Marker
             key={attr.id}
-            position={[attr.coord.lat, attr.coord.lng]}
+            position={[lat, lng]}
             eventHandlers={
               !isTouchDevice
                 ? {
-                  click: () => {
-                    navigate(
-                      `/${attr.countryPath}/${attr.regionPath}/${attr.districtPath}/${attr.cityPath}/attractions/${attr.path}`
-                    );
+                    click: () => {
+                      navigate(
+                        `/${attr.countryPath}/${attr.regionPath}/${attr.districtPath}/${attr.cityPath}/attractions/${attr.path}`
+                      );
+                    }
                   }
-                }
                 : undefined
             }
-
           >
+            {/* Tooltip desktop */}
             {!isTouchDevice && (
               <Tooltip
                 className="custom-tooltip"
@@ -83,19 +103,23 @@ const attractions = allAttractions.filter(attr =>
                 opacity={1}
               >
                 <div className="custom-tooltip-content">
-                  {attr.meta.ogImage && <img src={attr.meta.ogImage} alt={attr.name} />}
-                  <p>{attr.meta.title}</p>
+                  {attr?.meta?.ogImage && (
+                    <img src={attr.meta.ogImage} alt={attr.name} />
+                  )}
+                  <p>{attr?.meta?.title}</p>
                 </div>
               </Tooltip>
             )}
+
+            {/* Popup mobile */}
             {isTouchDevice && (
               <Popup className="custom-popup" maxWidth={180} minWidth={160}>
                 <div className="custom-popup-content">
-                  {attr.meta.ogImage && (
+                  {attr?.meta?.ogImage && (
                     <img src={attr.meta.ogImage} alt={attr.name} />
                   )}
 
-                  <p>{attr.meta.title}</p>
+                  <p>{attr?.meta?.title}</p>
 
                   <button
                     className="popup-btn"
@@ -111,8 +135,8 @@ const attractions = allAttractions.filter(attr =>
               </Popup>
             )}
           </Marker>
-        )
-      ))}
+        );
+      })}
     </MapContainer>
   );
 };
