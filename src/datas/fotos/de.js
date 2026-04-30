@@ -232,13 +232,14 @@ export const Fotos = {
       ],
       prussian_fortress_system_koln: [
         { path: "Germany/nrw/koln/koln-city/prussian_fortress_system/inner/001.jpg", title: { ru: "Fort I (внутреннее крепостное кольцо) (фото взято с интернета)", ua: "Fort I (внутрішнє фортифікаційне кільце) (фото взято з Інтернету)", de: "Fort I (innerer Festungsring) (Foto aus dem Internet)" } },
-        { path: "Germany/nrw/koln/koln-city/prussian_fortress_system/004.jpg", title: { ru: "Fort IV (фото взято с интернета)", ua: "Fort IV (фото взято з Інтернету)", de: "Fort IV (Foto aus dem Internet)" } },
-        { path: "Germany/nrw/koln/koln-city/prussian_fortress_system/005.jpg", title: { ru: "Fort V (фото взято с интернета)", ua: "Fort V (фото взято з Інтернету)", de: "Fort V (Foto aus dem Internet)" } },
+        { path: "Germany/nrw/koln/koln-city/prussian_fortress_system/inner/005.jpg", title: { ru: "Fort V (внутреннее крепостное кольцо) (фото взято с интернета)", ua: "Fort V (внутрішнє фортифікаційне кільце) (фото взято з Інтернету)", de: "Fort V (innerer Festungsring) (Foto aus dem Internet)" } },
+        { path: "Germany/nrw/koln/koln-city/prussian_fortress_system/outer/004.jpg", title: { ru: "Fort IV (внешнее крепостное кольцо) (фото взято с интернета)", ua: "Fort IV (зовнішнє фортифікаційне кільце) (фото взято з Інтернету)", de: "Fort IV (äußerer Festungsring) (Foto aus dem Internet)" } },
+        { path: "Germany/nrw/koln/koln-city/prussian_fortress_system/outer/005.jpg", title: { ru: "Fort V (внешнее крепостное кольцо) (фото взято с интернета)", ua: "Fort V (зовнішнє фортифікаційне кільце) (фото взято з Інтернету)", de: "Fort V (äußerer Festungsring) (Foto aus dem Internet)" } },
         { path: "Germany/nrw/koln/koln-city/prussian_fortress_system/outer/006.jpg", title: { ru: "Fort VI Deckstein (внешнее крепостное кольцо), 2026", ua: "Fort VI Deckstein (зовнішнє фортифікаційне кільце), 2026", de: "Fort VI Deckstein (äußerer Festungsring), 2026" } },
         { path: "Germany/nrw/koln/koln-city/prussian_fortress_system/outer/006-1.jpg", title: { ru: "Fort VI Deckstein (внешнее крепостное кольцо), 2026", ua: "Fort VI Deckstein (зовнішнє фортифікаційне кільце), 2026", de: "Fort VI Deckstein (äußerer Festungsring), 2026" } },
-        { path: "Germany/nrw/koln/koln-city/prussian_fortress_system/009.jpg", title: { ru: "Fort IX (фото взято с интернета)", ua: "Fort IX (фото взято з Інтернету)", de: "Fort IX (Foto aus dem Internet)" } },
-        { path: "Germany/nrw/koln/koln-city/prussian_fortress_system/009-1.jpg", title: { ru: "Fort IX (фото взято с интернета)", ua: "Fort IX (фото взято з Інтернету)", de: "Fort IX (Foto aus dem Internet)" } },
-        { path: "Germany/nrw/koln/koln-city/prussian_fortress_system/009-2.jpg", title: { ru: "Fort IX (фото взято с интернета)", ua: "Fort IX (фото взято з Інтернету)", de: "Fort IX (Foto aus dem Internet)" } },
+        { path: "Germany/nrw/koln/koln-city/prussian_fortress_system/outer/009.jpg", title: { ru: "Fort IX (внешнее крепостное кольцо) (фото взято с интернета)", ua: "Fort IX (зовнішнє фортифікаційне кільце) (фото взято з Інтернету)", de: "Fort IX (äußerer Festungsring) (Foto aus dem Internet)" } },
+        { path: "Germany/nrw/koln/koln-city/prussian_fortress_system/outer/009-1.jpg", title: { ru: "Fort IX (внешнее крепостное кольцо) (фото взято с интернета)", ua: "Fort IX (зовнішнє фортифікаційне кільце) (фото взято з Інтернету)", de: "Fort IX (äußerer Festungsring) (Foto aus dem Internet)" } },
+        { path: "Germany/nrw/koln/koln-city/prussian_fortress_system/outer/009-2.jpg", title: { ru: "Fort IX (внешнее крепостное кольцо) (фото взято с интернета)", ua: "Fort IX (зовнішнє фортифікаційне кільце) (фото взято з Інтернету)", de: "Fort IX (äußerer Festungsring) (Foto aus dem Internet)" } },
         { path: "Germany/nrw/koln/koln-city/prussian_fortress_system/010.jpg", title: { ru: "Fort X (фото взято с интернета)", ua: "Fort X (фото взято з Інтернету)", de: "Fort X (Foto aus dem Internet)" } },
         { path: "Germany/nrw/koln/koln-city/prussian_fortress_system/010-1.jpg", title: { ru: "Fort X (фото взято с интернета)", ua: "Fort X (фото взято з Інтернету)", de: "Fort X (Foto aus dem Internet)" } },
         { path: "Germany/nrw/koln/koln-city/prussian_fortress_system/011.jpg", title: { ru: "Fort XI (фото взято с интернета)", ua: "Fort XI (фото взято з Інтернету)", de: "Fort XI (Foto aus dem Internet)" } },
@@ -246,9 +247,23 @@ export const Fotos = {
       fort_I_inner_koln: [
         { path: "Germany/nrw/koln/koln-city/prussian_fortress_system/inner/001.jpg", title: { ru: "Fort I (внутреннее крепостное кольцо) (фото взято с интернета)", ua: "Fort I (внутрішнє фортифікаційне кільце) (фото взято з Інтернету)", de: "Fort I (innerer Festungsring) (Foto aus dem Internet)" } },
       ],
+      fort_V_inner_koln: [
+        { path: "Germany/nrw/koln/koln-city/prussian_fortress_system/inner/005.jpg", title: { ru: "Fort V (внутреннее крепостное кольцо) (фото взято с интернета)", ua: "Fort V (внутрішнє фортифікаційне кільце) (фото взято з Інтернету)", de: "Fort V (innerer Festungsring) (Foto aus dem Internet)" } },
+      ],
+      fort_IV_outer_koln: [
+        { path: "Germany/nrw/koln/koln-city/prussian_fortress_system/outer/004.jpg", title: { ru: "Fort IV (внешнее крепостное кольцо) (фото взято с интернета)", ua: "Fort IV (зовнішнє фортифікаційне кільце) (фото взято з Інтернету)", de: "Fort IV (äußerer Festungsring) (Foto aus dem Internet)" } },
+      ],
+      fort_V_outer_koln: [
+        { path: "Germany/nrw/koln/koln-city/prussian_fortress_system/outer/005.jpg", title: { ru: "Fort V (внешнее крепостное кольцо) (фото взято с интернета)", ua: "Fort V (зовнішнє фортифікаційне кільце) (фото взято з Інтернету)", de: "Fort V (äußerer Festungsring) (Foto aus dem Internet)" } },
+      ],
       fort_VI_outer_koln: [
         { path: "Germany/nrw/koln/koln-city/prussian_fortress_system/outer/006.jpg", title: { ru: "Fort VI Deckstein (внешнее крепостное кольцо), 2026", ua: "Fort VI Deckstein (зовнішнє фортифікаційне кільце), 2026", de: "Fort VI Deckstein (äußerer Festungsring), 2026" } },
         { path: "Germany/nrw/koln/koln-city/prussian_fortress_system/outer/006-1.jpg", title: { ru: "Fort VI Deckstein (внешнее крепостное кольцо), 2026", ua: "Fort VI Deckstein (зовнішнє фортифікаційне кільце), 2026", de: "Fort VI Deckstein (äußerer Festungsring), 2026" } },
+      ],
+      fort_IX_outer_koln: [
+        { path: "Germany/nrw/koln/koln-city/prussian_fortress_system/outer/009.jpg", title: { ru: "Fort IX (внешнее крепостное кольцо) (фото взято с интернета)", ua: "Fort IX (зовнішнє фортифікаційне кільце) (фото взято з Інтернету)", de: "Fort IX (äußerer Festungsring) (Foto aus dem Internet)" } },
+        { path: "Germany/nrw/koln/koln-city/prussian_fortress_system/outer/009-1.jpg", title: { ru: "Fort IX (внешнее крепостное кольцо) (фото взято с интернета)", ua: "Fort IX (зовнішнє фортифікаційне кільце) (фото взято з Інтернету)", de: "Fort IX (äußerer Festungsring) (Foto aus dem Internet)" } },
+        { path: "Germany/nrw/koln/koln-city/prussian_fortress_system/outer/009-2.jpg", title: { ru: "Fort IX (внешнее крепостное кольцо) (фото взято с интернета)", ua: "Fort IX (зовнішнє фортифікаційне кільце) (фото взято з Інтернету)", de: "Fort IX (äußerer Festungsring) (Foto aus dem Internet)" } },
       ],
     },
     bruhl: {

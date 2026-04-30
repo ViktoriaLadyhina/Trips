@@ -138,7 +138,11 @@ const datas =
     prussian_fortress_system_koln: { ru: 'Прусская крепостная система Кёльна', de: 'Preußisches Festungssystem Köln', ua: 'Прусська фортифікаційна система Кельна' },
     fort_I_inner_koln: { ru: 'Fort I (внутреннее крепостное кольцо)', de: 'Fort I (innerer Festungsring)', ua: 'Fort I (внутрішнє фортифікаційне кільце)' },
     fort_II_inner_koln: { ru: 'Fort II (внутреннее крепостное кольцо)', de: 'Fort II (innerer Festungsring)', ua: 'Fort II (внутрішнє фортифікаційне кільце)' },
+    fort_V_inner_koln: { ru: 'Fort V (внутреннее крепостное кольцо)', de: 'Fort V (innerer Festungsring)', ua: 'Fort V (внутрішнє фортифікаційне кільце)' },
+    fort_IV_outer_koln: { ru: 'Fort IV (внешнее крепостное кольцо)', de: 'Fort IV (äußerer Festungsring)', ua: 'Fort IV (зовнішнє фортифікаційне кільце)' },
+    fort_V_outer_koln: { ru: 'Fort V (внешнее крепостное кольцо)', de: 'Fort V (äußerer Festungsring)', ua: 'Fort V (зовнішнє фортифікаційне кільце)' },
     fort_VI_outer_koln: { ru: 'Fort VI (внешнее крепостное кольцо)', de: 'Fort VI (äußerer Festungsring)', ua: 'Fort VI (зовнішнє фортифікаційне кільце)' },
+    fort_IX_outer_koln: { ru: 'Fort IX (внешнее крепостное кольцо)', de: 'Fort IX (äußerer Festungsring)', ua: 'Fort IX (зовнішнє фортифікаційне кільце)' },
 
     // Aachen Kreis
     // Monschau

@@ -97,7 +97,9 @@ const Attraction = () => {
         const aRating = ratingOrder[a.rating] || 0;
         const bRating = ratingOrder[b.rating] || 0;
         if (bRating !== aRating) return bRating - aRating;
-        return (a?.name || '').localeCompare(b?.name || '');
+        return (
+            (a.sortIndex ?? 0) - (b.sortIndex ?? 0)
+        ) || (a.name || '').localeCompare(b.name || '');
     };
 
     const sortedAttractions = [...filteredAttractions].sort(sortByFilters);
@@ -112,7 +114,7 @@ const Attraction = () => {
         .map(subId => sortedAttractions.find(a => a.id === subId))
         .filter(Boolean)
         .sort(sortByFilters);
-    
+
 
     // Хлебные крошки
     const crumbs = [
@@ -139,8 +141,8 @@ const Attraction = () => {
             ? {
                 label: datas.cities[cityPath]?.[lang],
                 path: districtPath === "city"
-                        ? `/${countryPath}/${regionPath}/city/${cityPath}`
-                        : `/${countryPath}/${regionPath}/${districtPath}/${cityPath}`,
+                    ? `/${countryPath}/${regionPath}/city/${cityPath}`
+                    : `/${countryPath}/${regionPath}/${districtPath}/${cityPath}`,
             }
             : null,
 

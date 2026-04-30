@@ -228,7 +228,11 @@ const Map = () => {
                             <ul>
                               <li><Link to="/germany/nrw/city/koln/attractions/fort_I_inner_koln">{t.attractions.fort_I_inner_koln[lang]}</Link></li>
                               <li><Link to="/germany/nrw/city/koln/attractions/fort_II_inner_koln">{t.attractions.fort_II_inner_koln[lang]}</Link></li>
+                              <li><Link to="/germany/nrw/city/koln/attractions/fort_V_inner_koln">{t.attractions.fort_V_inner_koln[lang]}</Link></li>
+                              <li><Link to="/germany/nrw/city/koln/attractions/fort_IV_outer_koln">{t.attractions.fort_IV_outer_koln[lang]}</Link></li>
+                              <li><Link to="/germany/nrw/city/koln/attractions/fort_V_outer_koln">{t.attractions.fort_V_outer_koln[lang]}</Link></li>
                               <li><Link to="/germany/nrw/city/koln/attractions/fort_VI_outer_koln">{t.attractions.fort_VI_outer_koln[lang]}</Link></li>
+                              <li><Link to="/germany/nrw/city/koln/attractions/fort_IX_outer_koln">{t.attractions.fort_IX_outer_koln[lang]}</Link></li>
                             </ul>
                           </li>
                         </ul>
