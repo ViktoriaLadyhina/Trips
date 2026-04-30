@@ -33,7 +33,6 @@ const Regions = () => {
         { label: datas.countries[countryPath][lang], path: `/${countryPath}` },
         { label: region.name }
     ];
-console.log("region.cities", region.cities);
 
 
     return (

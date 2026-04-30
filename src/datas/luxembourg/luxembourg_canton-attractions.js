@@ -839,7 +839,8 @@ const datas = [
     countryPath: "luxembourg", regionPath: "luxembourg_canton", districtPath: "city", cityPath: "luxembourg_city",
     hiddenFromList: true, showMore: true,
     fotoCard: "Luxembourg/luxembourg_canton/luxembourg_city/old_town/pont_du_chateau/001.jpg",
-    coord: { lat: 49.61159, lng: 6.13597 },
+    map: "bridges_luxembourg",
+    coord: { lat: 49.61158, lng: 6.13594 },
     translations: {
       ru: {
         name: "Мост Понт-дю-Шато",
@@ -966,151 +967,161 @@ const datas = [
     }
   },
   {
-    id: "viaducts_luxembourg",
+    id: "bridges_luxembourg",
     type: ["technical_structure"], rating: "top",
-    path: "viaducts_luxembourg",
+    path: "bridges_luxembourg",
     countryPath: "luxembourg", regionPath: "luxembourg_canton", districtPath: "city", cityPath: "luxembourg_city",
     fotoCard: "Luxembourg/luxembourg_canton/luxembourg_city/viaducts/001.jpg",
-    subObjects: ["passerelle_luxembourg"],
+    subObjects: ["passerelle_luxembourg", "adolphe_luxembourg", "pont_du_chateau_luxembourg"],
+    mapOpen: "bridges_luxembourg",
     translations: {
       ru: {
-        name: "Виадуки Люксембурга",
+        name: "Мосты и виадуки Люксембурга",
         location: "Город Люксембург, Люксембург",
-        short_description: "Люксембург известен своей уникальной многоуровневой городской структурой, где глубокие долины рек разделяют районы города. Виадуки и мосты здесь служат не только транспортными связями, но и важной частью архитектурного облика столицы. Эти инженерные сооружения формируют узнаваемый силуэт Люксембурга и отражают его историческое развитие и особенности рельефа.",
+        short_description: "Люксембург – город с уникальным рельефом, где глубокие долины разделяют районы на разных уровнях. Именно поэтому здесь сформировалась система мостов и виадуков, которые соединяют город в единую структуру. Эти сооружения стали не только транспортной инфраструктурой, но и важной частью архитектурного образа столицы.",
         short_description_subObjects: {
-          text: "Некоторые из самых известных виадуков столицы:",
+          text: "Главные мосты и виадуки Люксембурга:",
           items: [
-            { bold: "Мост Пассерель (Passerelle)", text: "– исторический каменный мост в городе Люксембург, соединяющий район старого города с кварталом вокзала и являющийся важной частью городской транспортной и пешеходной сети." }
+            { bold: "Мост Адольфа (Pont Adolphe)", text: "– крупный каменный арочный мост над долиной Петрюсс, один из символов города." },
+            { bold: "Пассерель (Passerelle)", text: "– исторический железный виадук XIX века, соединяющий старый город с вокзальным районом." },
+            { bold: "Мост Понт-дю-Шато", text: "– исторический мост в старом городе Люксембурга, входящий в систему бывших городских укреплений и являющийся частью пешеходных маршрутов." },
           ]
         },
+        subObjects_title: "Мосты и виадуки Люксембурга",
         full_description: {
-          title: "Описание и история",
+          title: "Описание и разница между мостами и виадуками",
           items: [
-            { text: "Люксембург известен своей необычной городской структурой, которая выделяет его среди европейских столиц. Это один из немногих городов в Европе с таким значительным перепадом высот, где районы расположены на разных уровнях и разделены глубокими долинами рек Альзетт и Петрюсс." },
-            { text: "В отличие от большинства европейских городов, развивавшихся горизонтально, Люксембург формировался вертикально – вверх и вниз по склонам и плато. Именно поэтому здесь возникла уникальная система мостов и виадуков, соединяющих разные уровни города в единую городскую структуру." },
-            { text: "Сегодня виадуки – это одна из ключевых особенностей городского ландшафта. Они формируют узнаваемый силуэт Люксембург-Сити и отражают его историческое развитие, где инженерия тесно переплетается с природным рельефом." },
-            { bold: "История", text: "Активное строительство мостов в Люксембурге началось в XIX веке, когда развитие железных дорог и промышленности потребовало соединения новых транспортных узлов с историческим центром города. Именно в этот период были возведены первые крупные виадуки, включая мост Пассерель (Passerelle)." },
-            { text: "Позднее, по мере расширения города, появились новые мосты и инженерные решения, позволяющие преодолевать глубокие долины. Люксембург постепенно превратился в город многоуровневой структуры, где мосты стали необходимым элементом повседневной жизни." },
-            { text: "В XX и XXI веках строительство продолжилось уже с использованием современных технологий, но при этом сохранялась задача – гармонично вписать новые конструкции в исторический и природный ландшафт города." }
+            { text: "Люксембург известен своей сложной географией: город расположен на нескольких уровнях, разделённых глубокими долинами рек Альзетт и Петрюсс. Это сделало мосты и виадуки неотъемлемой частью городской структуры." },
+            { text: "Мосты и виадуки в Люксембурге часто воспринимаются как одно целое, однако между ними есть техническая разница. Мост обычно пересекает одно препятствие — например, реку или долину в одной точке. Виадук же представляет собой протяжённую конструкцию, состоящую из нескольких пролётов, которая проходит через долину или сложный рельеф." },
+            { text: "В Люксембурге есть и мосты, и виадуки, и оба типа сооружений одинаково важны. Например, Pont Adolphe – это крупный арочный мост, а Passerelle исторически относится к виадукам из-за своей протяжённой конструкции и серии пролётов." },
+            { text: "Сегодня эти сооружения формируют узнаваемый силуэт города и являются частью его культурного и инженерного наследия." },
+            { bold: "История", text: "Активное развитие мостов началось в XIX веке с расширением города и строительством железных дорог. Появление первых крупных виадуков позволило соединить районы, расположенные на разных уровнях." },
+            { text: "В XX веке появились более масштабные инженерные решения, включая знаковый мост Адольфа, который стал символом города и инженерным достижением своего времени." },
+            { text: "Сегодня мосты и виадуки Люксембурга продолжают выполнять транспортную функцию, оставаясь при этом важной частью исторического ландшафта." }
           ]
         },
         tickets_and_entry: {
           title: "Практическая информация",
           items: [
-            { bold: "Расположение.", text: "Виадуки расположены в центральной части Люксембург-Сити и легко доступны пешком или на общественном транспорте. Многие маршруты прогулок по городу проходят через мосты, соединяющие район вокзала с историческим центром." },
-            { bold: "Лучшее время для посещения", text: "– дневные часы и закат, когда открываются панорамные виды на долины и старые кварталы города." }
+            { bold: "Расположение.", text: "Основные мосты и виадуки находятся в центре Люксембург-Сити и соединяют Верхний город с районами вокзала и долинами рек." },
+            { bold: "Лучшее время для посещения", text: "– утро и закат, когда открываются панорамные виды на долины и историческую застройку." }
           ]
         },
         interestingFacts: {
           title: "Интересные факты",
           isList: true,
           items: [
-            { text: "Люксембург построен на нескольких уровнях, поэтому мосты фактически “соединяют разные города в одном городе”." },
-            { text: "Некоторые виадуки выше 40 метров над уровнем долины." },
-            { text: "Многие мосты используются одновременно для автомобилей, пешеходов и общественного транспорта." },
-            { text: "Исторические районы и укрепления Люксембурга внесены в список ЮНЕСКО, и его мосты считаются частью исторического ландшафта." }
+            { text: "Люксембург построен на нескольких уровнях, поэтому мосты буквально соединяют разные высоты города." },
+            { text: "Некоторые виадуки были построены ещё в XIX веке и до сих пор используются." },
+            { text: "Система мостов является частью охраняемого исторического ландшафта города." }
           ]
         },
         meta: {
-          title: "Виадуки Люксембурга – мосты, история и архитектурные особенности города",
-          description: "Обзор виадуков Люксембурга: почему город построен на мостах, история ключевых сооружений и их роль в городской структуре.",
-          ogTitle: "Виадуки Люксембурга – город, построенный на мостах",
-          ogDescription: "Почему Люксембург называют городом виадуков: история, архитектура и самые известные мосты.",
-          keywords: "Люксембург что посмотреть, достопримечательности Люксембурга, прогулки по Люксембургу, город на мостах, архитектурные мосты Европы, виадуки Люксембурга, мосты Люксембурга, туристический Люксембург, старый мост Люксембург",
+          title: "Мосты и виадуки Люксембурга – архитектура и история города",
+          description: "Мосты и виадуки Люксембурга: как устроен город на разных уровнях, разница между типами сооружений и их роль в городской структуре.",
+          ogTitle: "Мосты и виадуки Люксембурга – город на разных уровнях",
+          ogDescription: "Почему Люксембург называют городом мостов и виадуков: история, архитектура и ключевые сооружения.",
+          keywords: "мосты Люксембурга, виадуки Люксембурга, Pont Adolphe, Passerelle, архитектура Люксембурга, город мостов, достопримечательности Люксембурга",
           ogImage: "https://our-travels.info/foto/Luxembourg/luxembourg_canton/luxembourg_city/viaducts/001.jpg"
         }
       },
       ua: {
-        name: "Віадуки Люксембурга",
+        name: "Мости та віадуки Люксембурга",
         location: "Місто Люксембург, Люксембург",
-        short_description: "Люксембург відомий своєю унікальною багаторівневою міською структурою, де глибокі долини річок розділяють райони міста. Віадуки та мости тут виконують не лише транспортну функцію, але й є важливою частиною архітектурного вигляду столиці. Ці інженерні споруди формують впізнаваний силует Люксембурга та відображають його історичний розвиток і особливості рельєфу.",
+        short_description: "Люксембург – місто з унікальним рельєфом, де глибокі долини розділяють райони на різних рівнях. Саме тому тут сформувалася система мостів і віадуків, які з’єднують місто в єдину структуру. Ці споруди стали не лише транспортною інфраструктурою, але й важливою частиною архітектурного образу столиці.",
         short_description_subObjects: {
-          text: "Деякі з найвідоміших віадуків столиці:",
+          text: "Головні мости та віадуки Люксембурга:",
           items: [
-            { bold: "Міст Пассерель (Passerelle)", text: "– історичний кам’яний міст у місті Люксембург, що з’єднує район старого міста з кварталом вокзалу та є важливою частиною міської транспортної і пішохідної мережі." }
+            { bold: "Міст Адольфа (Pont Adolphe)", text: "– великий кам’яний арковий міст над долиною Петрюсс, один із символів міста." },
+            { bold: "Пассерель (Passerelle)", text: "– історичний залізний віадук XIX століття, що з’єднує старе місто з вокзальним районом." },
+            { bold: "Міст Понт-дю-Шато", text: "– історичний міст у старому місті Люксембургу, який входить до системи колишніх міських укріплень і є частиною пішохідних маршрутів." },
           ]
         },
+        subObjects_title: "Мости та віадуки Люксембурга",
         full_description: {
-          title: "Опис та історія",
+          title: "Опис і різниця між мостами та віадуками",
           items: [
-            { text: "Люксембург відомий своєю незвичайною міською структурою, яка вирізняє його серед європейських столиць. Це одне з небагатьох міст у Європі з таким значним перепадом висот, де райони розташовані на різних рівнях і розділені глибокими долинами річок Альзетт і Петрюсс." },
-            { text: "На відміну від більшості європейських міст, що розвивалися горизонтально, Люксембург формувався вертикально – вгору та вниз по схилах і плато. Саме тому тут виникла унікальна система мостів і віадуків, що з’єднують різні рівні міста в єдину міську структуру." },
-            { text: "Сьогодні віадуки є однією з ключових особливостей міського ландшафту. Вони формують впізнаваний силует Люксембург-Сіті та відображають його історичний розвиток, де інженерія тісно переплітається з природним рельєфом." },
-            { bold: "Історія", text: "Активне будівництво мостів у Люксембурзі розпочалося у XIX столітті, коли розвиток залізниць і промисловості вимагав з’єднання нових транспортних вузлів з історичним центром міста. Саме в цей період були зведені перші великі віадуки, включно з мостом Пассерель (Passerelle)." },
-            { text: "Згодом, у міру розширення міста, з’явилися нові мости та інженерні рішення, що дозволяли долати глибокі долини. Люксембург поступово перетворився на місто багаторівневої структури, де мости стали необхідним елементом повсякденного життя." },
-            { text: "У XX та XXI століттях будівництво продовжувалося вже з використанням сучасних технологій, але при цьому зберігалося завдання – гармонійно вписати нові конструкції в історичний і природний ландшафт міста." }
+            { text: "Люксембург відомий своєю складною географією: місто розташоване на кількох рівнях, розділених глибокими долинами річок Альзетт і Петрюсс. Це зробило мости та віадуки невід’ємною частиною міської структури." },
+            { text: "Мости та віадуки в Люксембурзі часто сприймаються як одне ціле, однак між ними є технічна різниця. Міст зазвичай перетинає одну перешкоду — наприклад, річку або долину в одній точці. Віадук же являє собою протяжну конструкцію, що складається з кількох прольотів і проходить через долину або складний рельєф." },
+            { text: "У Люксембурзі є і мости, і віадуки, і обидва типи споруд однаково важливі. Наприклад, Pont Adolphe – це великий арковий міст, а Passerelle історично належить до віадуків через свою протяжну конструкцію та серію прольотів." },
+            { text: "Сьогодні ці споруди формують впізнаваний силует міста та є частиною його культурної й інженерної спадщини." },
+            { bold: "Історія", text: "Активний розвиток мостів почався в XIX столітті з розширенням міста та будівництвом залізниць. Поява перших великих віадуків дозволила з’єднати райони, розташовані на різних рівнях." },
+            { text: "У XX столітті з’явилися масштабніші інженерні рішення, включаючи знаковий міст Адольфа, який став символом міста та інженерним досягненням свого часу." },
+            { text: "Сьогодні мости та віадуки Люксембурга продовжують виконувати транспортну функцію, залишаючись водночас важливою частиною історичного ландшафту." }
           ]
         },
         tickets_and_entry: {
           title: "Практична інформація",
           items: [
-            { bold: "Розташування.", text: "Віадуки розташовані в центральній частині Люксембург-Сіті та легко доступні пішки або громадським транспортом. Багато маршрутів прогулянок містом проходять через мости, що з’єднують район вокзалу з історичним центром." },
-            { bold: "Найкращий час для відвідування", text: "– денні години та захід сонця, коли відкриваються панорамні види на долини та старі квартали міста." }
+            { bold: "Розташування.", text: "Основні мости та віадуки розташовані в центрі Люксембург-Сіті та легко доступні пішки або громадським транспортом. Багато маршрутів прогулянок проходять через ключові мости міста." },
+            { bold: "Найкращий час для відвідування", text: "– ранок і захід сонця, коли відкриваються панорамні види на долини та історичну забудову." }
           ]
         },
         interestingFacts: {
           title: "Цікаві факти",
           isList: true,
           items: [
-            { text: "Люксембург побудований на кількох рівнях, тому мости фактично “з’єднують різні міста в одному місті”." },
-            { text: "Деякі віадуки мають висоту понад 40 метрів над рівнем долини." },
-            { text: "Багато мостів використовуються одночасно для автомобілів, пішоходів та громадського транспорту." },
-            { text: "Історичні райони та укріплення Люксембурга внесені до списку ЮНЕСКО, і його мости вважаються частиною історичного ландшафту." }
+            { text: "Люксембург побудований на кількох рівнях, тому мости буквально з’єднують різні висоти міста." },
+            { text: "Деякі віадуки були збудовані ще в XIX столітті та досі використовуються." },
+            { text: "Система мостів є частиною охоронюваного історичного ландшафту міста." }
           ]
         },
         meta: {
-          title: "Віадуки Люксембурга – мости, історія та архітектурні особливості міста",
-          description: "Огляд віадуків Люксембурга: чому місто побудоване на мостах, історія ключових споруд та їхня роль у міській структурі.",
-          ogTitle: "Віадуки Люксембурга – місто, побудоване на мостах",
-          ogDescription: "Чому Люксембург називають містом віадуків: історія, архітектура та найвідоміші мости.",
-          keywords: "Люксембург що подивитися, визначні місця Люксембурга, прогулянки Люксембургом, місто на мостах, архітектурні мости Європи, віадуки Люксембурга, мости Люксембурга, туристичний Люксембург, старий міст Люксембург",
+          title: "Мости та віадуки Люксембурга – архітектура та історія міста",
+          description: "Мости та віадуки Люксембурга: як влаштоване місто на різних рівнях, різниця між типами споруд та їхня роль у міській структурі.",
+          ogTitle: "Мости та віадуки Люксембурга – місто на різних рівнях",
+          ogDescription: "Чому Люксембург називають містом мостів і віадуків: історія, архітектура та ключові споруди.",
+          keywords: "мости Люксембурга, віадуки Люксембурга, Pont Adolphe, Passerelle, архітектура Люксембурга, місто мостів, визначні місця Люксембурга",
           ogImage: "https://our-travels.info/foto/Luxembourg/luxembourg_canton/luxembourg_city/viaducts/001.jpg"
         }
       },
       de: {
-        name: "Viadukte Luxemburgs",
+        name: "Brücken und Viadukte von Luxemburg",
         location: "Stadt Luxemburg, Luxemburg",
-        short_description: "Luxemburg ist bekannt für seine einzigartige mehrstufige Stadtstruktur, in der tiefe Flusstäler die Stadtteile voneinander trennen. Viadukte und Brücken dienen hier nicht nur als Verkehrsverbindungen, sondern sind auch ein wichtiger Bestandteil des architektonischen Erscheinungsbildes der Hauptstadt. Diese Ingenieurbauwerke prägen die charakteristische Silhouette Luxemburgs und spiegeln seine historische Entwicklung sowie die Besonderheiten des Reliefs wider.",
+        short_description: "Luxemburg ist eine Stadt mit einer einzigartigen Topografie, in der tiefe Täler die Stadtteile auf verschiedenen Ebenen voneinander trennen. Deshalb entstand hier ein System aus Brücken und Viadukten, das die Stadt zu einer zusammenhängenden Struktur verbindet. Diese Bauwerke sind nicht nur Teil der Verkehrsinfrastruktur, sondern auch ein wichtiger Bestandteil des architektonischen Erscheinungsbildes der Hauptstadt.",
         short_description_subObjects: {
-          text: "Einige der bekanntesten Viadukte der Hauptstadt:",
+          text: "Die wichtigsten Brücken und Viadukte von Luxemburg:",
           items: [
-            { bold: "Passerelle-Brücke", text: "– historische Steinbrücke in der Stadt Luxemburg, die den Altstadtbereich mit dem Bahnhofsviertel verbindet und ein wichtiger Bestandteil des städtischen Verkehrs- und Fußgängernetzes ist." }
+            { bold: "Adolphe-Brücke (Pont Adolphe)", text: "– große steinerne Bogenbrücke über das Petruss-Tal, eines der Wahrzeichen der Stadt." },
+            { bold: "Passerelle", text: "– historisches Eisenviadukt aus dem 19. Jahrhundert, das die Altstadt mit dem Bahnhofsviertel verbindet." },
+            { bold: "Pont du Château", text: "– eine historische Brücke in der Altstadt von Luxemburg, die Teil der ehemaligen Stadtbefestigungen ist und zu den Fußgängerwegen gehört." },
           ]
         },
+        subObjects_title: "Brücken und Viadukte von Luxemburg",
         full_description: {
-          title: "Beschreibung und Geschichte",
+          title: "Beschreibung und Unterschied zwischen Brücken und Viadukten",
           items: [
-            { text: "Luxemburg ist bekannt für seine ungewöhnliche Stadtstruktur, die es von anderen europäischen Hauptstädten unterscheidet. Es gehört zu den wenigen Städten in Europa mit einem so starken Höhenunterschied, in der sich Stadtteile auf verschiedenen Ebenen befinden und durch die tiefen Täler der Flüsse Alzette und Pétrusse getrennt sind." },
-            { text: "Im Gegensatz zu den meisten europäischen Städten, die sich horizontal entwickelten, wuchs Luxemburg vertikal – bergauf und bergab entlang von Hängen und Plateaus. Genau deshalb entstand hier ein einzigartiges System von Brücken und Viadukten, das die verschiedenen Stadtebenen zu einer einheitlichen Stadtstruktur verbindet." },
-            { text: "Heute gehören die Viadukte zu den wichtigsten Merkmalen des Stadtbildes. Sie prägen die wiedererkennbare Silhouette von Luxemburg-Stadt und spiegeln ihre historische Entwicklung wider, in der Ingenieurkunst eng mit der natürlichen Topografie verbunden ist." },
-            { bold: "Geschichte", text: "Der aktive Brückenbau in Luxemburg begann im 19. Jahrhundert, als die Entwicklung der Eisenbahn und der Industrie neue Verkehrsverbindungen zum historischen Stadtzentrum erforderte. In dieser Zeit wurden die ersten großen Viadukte errichtet, darunter die Passerelle (Passerelle)." },
-            { text: "Im Laufe der weiteren Stadtentwicklung entstanden neue Brücken und ingenieurtechnische Lösungen, um die tiefen Täler zu überwinden. Luxemburg entwickelte sich allmählich zu einer Stadt mit mehrstufiger Struktur, in der Brücken zu einem unverzichtbaren Bestandteil des täglichen Lebens wurden." },
-            { text: "Im 20. und 21. Jahrhundert wurde der Bau mit modernen Technologien fortgesetzt, wobei stets darauf geachtet wurde, neue Konstruktionen harmonisch in die historische und natürliche Landschaft der Stadt einzufügen." }
+            { text: "Luxemburg ist für seine komplexe Geografie bekannt: Die Stadt liegt auf mehreren Ebenen, getrennt durch tiefe Täler der Flüsse Alzette und Petruss. Dadurch wurden Brücken und Viadukte zu einem unverzichtbaren Bestandteil der städtischen Struktur." },
+            { text: "Brücken und Viadukte werden in Luxemburg oft als Einheit wahrgenommen, dennoch gibt es einen technischen Unterschied. Eine Brücke überquert in der Regel ein einzelnes Hindernis wie einen Fluss oder ein Tal an einem Punkt. Ein Viadukt hingegen ist eine längere Konstruktion aus mehreren Spannweiten, die ein Tal oder unebenes Gelände überquert." },
+            { text: "In Luxemburg gibt es sowohl Brücken als auch Viadukte, und beide Typen sind gleichermaßen wichtig. Zum Beispiel ist die Pont Adolphe eine große Bogenbrücke, während die Passerelle historisch zu den Viadukten zählt, da sie eine längere Struktur mit mehreren Spannweiten besitzt." },
+            { text: "Heute prägen diese Bauwerke die Skyline der Stadt und sind ein wichtiger Teil ihres kulturellen und technischen Erbes." },
+            { bold: "Geschichte", text: "Der Ausbau der Brücken begann im 19. Jahrhundert mit der Expansion der Stadt und dem Bau der Eisenbahn. Die ersten großen Viadukte ermöglichten die Verbindung von Stadtteilen auf unterschiedlichen Ebenen." },
+            { text: "Im 20. Jahrhundert entstanden größere Ingenieurprojekte, darunter die ikonische Adolphe-Brücke, die zum Wahrzeichen der Stadt wurde." },
+            { text: "Heute erfüllen die Brücken und Viadukte von Luxemburg weiterhin ihre Transportfunktion und bleiben gleichzeitig ein wichtiger Teil der historischen Landschaft." }
           ]
         },
         tickets_and_entry: {
           title: "Praktische Informationen",
           items: [
-            { bold: "Lage.", text: "Die Viadukte befinden sich im zentralen Teil von Luxemburg-Stadt und sind zu Fuß oder mit öffentlichen Verkehrsmitteln leicht erreichbar. Viele Spazierwege durch die Stadt führen über die Brücken, die das Bahnhofsviertel mit dem historischen Zentrum verbinden." },
-            { bold: "Beste Besuchszeit", text: "– tagsüber und bei Sonnenuntergang, wenn sich Panoramablicke auf die Täler und die Altstadt eröffnen." }
+            { bold: "Lage.", text: "Die wichtigsten Brücken und Viadukte befinden sich im Zentrum von Luxemburg-Stadt und sind zu Fuß oder mit öffentlichen Verkehrsmitteln leicht erreichbar. Viele Spazierwege führen über diese Bauwerke." },
+            { bold: "Beste Besuchszeit", text: "– morgens und bei Sonnenuntergang, wenn Panoramablicke auf die Täler und die Altstadt möglich sind." }
           ]
         },
         interestingFacts: {
           title: "Interessante Fakten",
           isList: true,
           items: [
-            { text: "Luxemburg ist auf mehreren Ebenen gebaut, daher verbinden die Brücken faktisch „verschiedene Städte in einer Stadt“." },
-            { text: "Einige Viadukte sind über 40 Meter hoch über dem Tal gelegen." },
-            { text: "Viele Brücken werden gleichzeitig von Autos, Fußgängern und öffentlichen Verkehrsmitteln genutzt." },
-            { text: "Die historischen Stadtviertel und Befestigungsanlagen Luxemburgs gehören zum UNESCO-Welterbe, und seine Brücken gelten als Teil der historischen Landschaft." }
+            { text: "Die Stadt ist auf mehreren Ebenen gebaut, sodass Brücken unterschiedliche Höhen miteinander verbinden." },
+            { text: "Einige Viadukte wurden bereits im 19. Jahrhundert gebaut und sind bis heute in Nutzung." },
+            { text: "Das Brückensystem ist Teil der geschützten historischen Landschaft der Stadt." }
           ]
         },
         meta: {
-          title: "Viadukte Luxemburgs – Brücken, Geschichte und architektonische Besonderheiten der Stadt",
-          description: "Überblick über die Viadukte Luxemburgs: warum die Stadt auf Brücken gebaut ist, die Geschichte wichtiger Bauwerke und ihre Rolle in der Stadtstruktur.",
-          ogTitle: "Viadukte Luxemburgs – eine Stadt, die auf Brücken gebaut ist",
-          ogDescription: "Warum Luxemburg als Stadt der Viadukte gilt: Geschichte, Architektur und die bekanntesten Brücken.",
-          keywords: "Luxemburg Sehenswürdigkeiten, Luxemburg was sehen, Spaziergänge in Luxemburg, Stadt der Brücken, architektonische Brücken Europa, Viadukte Luxemburg, Brücken Luxemburg, Tourismus Luxemburg, alte Brücke Luxemburg",
+          title: "Brücken und Viadukte von Luxemburg – Architektur und Geschichte der Stadt",
+          description: "Brücken und Viadukte von Luxemburg: Aufbau der Stadt auf verschiedenen Ebenen, Unterschiede der Bauwerke und ihre Rolle im Stadtbild.",
+          ogTitle: "Brücken und Viadukte von Luxemburg – Stadt auf mehreren Ebenen",
+          ogDescription: "Warum Luxemburg als Stadt der Brücken und Viadukte gilt: Geschichte, Architektur und bedeutende Bauwerke.",
+          keywords: "Brücken Luxemburg, Viadukte Luxemburg, Pont Adolphe, Passerelle, Architektur Luxemburg, Stadt der Brücken, Sehenswürdigkeiten Luxemburg",
           ogImage: "https://our-travels.info/foto/Luxembourg/luxembourg_canton/luxembourg_city/viaducts/001.jpg"
         }
       }
@@ -1122,7 +1133,9 @@ const datas = [
     path: "passerelle_luxembourg",
     countryPath: "luxembourg", regionPath: "luxembourg_canton", districtPath: "city", cityPath: "luxembourg_city",
     hiddenFromList: true, showMore: true,
+    map: "bridges_luxembourg",
     fotoCard: "Luxembourg/luxembourg_canton/luxembourg_city/old_town/passerelle/001.jpg",
+    coord: { lat: 49.60583, lng: 6.13363 },
     translations: {
       ru: {
         name: "Мост Пассерель",
@@ -1227,6 +1240,156 @@ const datas = [
           ogDescription: "Malersiche Brücke aus dem 19. Jahrhundert mit Blick auf das Petruss-Tal. Eines der Wahrzeichen Luxemburgs.",
           keywords: "Passerelle Luxembourg, Passerelle Brücke, Viadukt Luxemburg, Luxembourg bridge, Passerelle viaduct, Sehenswürdigkeiten Luxemburg, Brücken Luxemburg",
           ogImage: "https://our-travels.info/foto/Luxembourg/luxembourg_canton/luxembourg_city/old_town/passerelle/001.jpg"
+        }
+      }
+    }
+  },
+  {
+    id: "adolphe_luxembourg",
+    type: ["technical_structure"], rating: "top",
+    path: "adolphe_luxembourg",
+    countryPath: "luxembourg", regionPath: "luxembourg_canton", districtPath: "city", cityPath: "luxembourg_city",
+    hiddenFromList: true, showMore: true,
+    fotoCard: "Luxembourg/luxembourg_canton/luxembourg_city/viaducts/001.jpg",
+    map: "bridges_luxembourg",
+    coord: { lat: 49.60826, lng: 6.12688 },
+    translations: {
+      ru: {
+        name: "Мост Адольфа",
+        location: "Город Люксембург, Люксембург, район Ville Haute (граница с Gare)",
+        short_description: "Один из главных символов Люксембурга – каменный мост Адольфа, соединяющий Верхний город с районом Гар. Построенный в начале XX века, он известен своей масштабной аркой и панорамными видами.",
+        full_description: {
+          title: "Описание и история",
+          items: [
+            { bold: "Мост Адольфа", text: "– это не просто транспортная артерия, а архитектурная визитная карточка Люксембурга. Он перекинут через долину реки Петрус и соединяет исторический центр города с южными районами. Благодаря своему расположению мост открывает одни из лучших видов на старый город, зеленые долины и укрепления, включенные в список ЮНЕСКО." },
+            { text: "Конструкция моста выполнена из песчаника, а его главная арка долгое время была инженерным рекордом. Сегодня мост адаптирован под современные нужды: помимо автомобильного движения, здесь есть отдельные зоны для пешеходов и велосипедистов, что делает его удобным и для туристов." },
+            { text: "Особенно красиво мост выглядит вечером, когда включается подсветка – это популярное место для прогулок и фотографий." },
+            { bold: "История", text: "Строительство моста началось в 1900 году и завершилось в 1903 году во времена правления великого герцога Адольфа, в честь которого он и получил свое название. Проект был разработан французским инженером Полем Сежурне (Paul Séjourné), известным своими новаторскими решениями в мостостроении." },
+            { text: "На момент открытия мост Адольфа считался крупнейшим каменным арочным мостом в мире – его главный пролет достигал 84 метров. Это стало важным шагом в развитии города, так как мост значительно улучшил транспортное сообщение между районами." },
+            { text: "В 2014–2017 годах мост прошёл масштабную реконструкцию. В ходе работ была усилена конструкция, а также добавлен отдельный пешеходно-велосипедный мостик под основной аркой." }
+          ]
+        },
+        tickets_and_entry: {
+          title: "Практическая информация",
+          items: [
+            { bold: "Доступ", text: "Круглосуточно, бесплатно" },
+            { bold: "Лучшее время", text: "Утро и закат" },
+            { bold: "Подходит для", text: "Прогулок, фото, велопрогулок" }
+          ]
+        },
+        interestingFacts: {
+          title: "Интересные факты",
+          isList: true,
+          items: [
+            { text: "На момент постройки – крупнейший каменный арочный мост в мире" },
+            { text: "Часто называют «Новый мост», хотя ему уже более 100 лет" },
+            { text: "Символ независимости и развития Люксембурга" },
+            { text: "Во время реконструкции движение по мосту полностью перекрывали – редкий случай для города" },
+            { text: "Под мостом проходит отдельная пешеходно-велосипедная галерея" }
+          ]
+        },
+        construction_period: "1900–1903",
+        architects: "Paul Séjourné (Поль Сежурне)",
+        founder: "Великий герцог Адольф (Adolphe of Luxembourg)",
+        meta: {
+          title: "Мост Адольфа в Люксембурге – фото, история, описание",
+          description: "Мост Адольфа – один из главных символов Люксембурга. Узнайте историю, интересные факты и лучшие места для фото.",
+          ogTitle: "Мост Адольфа – символ Люксембурга",
+          ogDescription: "Исторический мост с панорамными видами на город и долину Петрус. Обязательное место для посещения.",
+          keywords: "мост Адольфа, Люксембург мост, Pont Adolphe, Adolphe Bridge, достопримечательности Люксембурга, что посмотреть в Люксембурге, мост Люксембург фото",
+          ogImage: "https://our-travels.info/foto/Luxembourg/luxembourg_canton/luxembourg_city/viaducts/001.jpg"
+        }
+      },
+      ua: {
+        name: "Міст Адольфа",
+        location: "Місто Люксембург, Люксембург, район Ville Haute (межа з районом Gare)",
+        short_description: "Один із головних символів Люксембурга – кам’яний міст Адольфа, що з’єднує Верхнє місто з районом Гар. Збудований на початку XX століття, він відомий своєю масштабною аркою та панорамними видами.",
+        full_description: {
+          title: "Опис і історія",
+          items: [
+            { bold: "Міст Адольфа", text: "– це не просто транспортна артерія, а архітектурна візитівка Люксембурга. Він перекинутий через долину річки Петрюсс і з’єднує історичний центр міста з південними районами. Завдяки своєму розташуванню міст відкриває одні з найкращих видів на старе місто, зелені долини та укріплення, включені до списку ЮНЕСКО." },
+            { text: "Конструкція мосту виконана з пісковику, а його головна арка тривалий час була інженерним рекордом. Сьогодні міст адаптований до сучасних потреб: окрім автомобільного руху, тут є окремі зони для пішоходів і велосипедистів, що робить його зручним і для туристів." },
+            { text: "Особливо красиво міст виглядає ввечері, коли вмикається підсвітка – це популярне місце для прогулянок і фотографій." },
+            { bold: "Історія", text: "Будівництво мосту розпочалося у 1900 році і завершилося у 1903 році за часів правління великого герцога Адольфа, на честь якого він і отримав свою назву. Проєкт був розроблений французьким інженером Полем Сежурне (Paul Séjourné), відомим своїми інноваційними рішеннями у мостобудуванні." },
+            { text: "На момент відкриття міст Адольфа вважався найбільшим кам’яним арковим мостом у світі – його головний проліт становив 84 метри. Це стало важливим кроком у розвитку міста, оскільки міст значно покращив транспортне сполучення між районами." },
+            { text: "У 2014–2017 роках міст пройшов масштабну реконструкцію. Під час робіт було посилено конструкцію, а також додано окремий пішохідно-велосипедний міст під основною аркою." }
+          ]
+        },
+        tickets_and_entry: {
+          title: "Практична інформація",
+          items: [
+            { bold: "Доступ", text: "Цілодобово, безкоштовно" },
+            { bold: "Найкращий час", text: "Ранок і захід сонця" },
+            { bold: "Підходить для", text: "Прогулянок, фото, велопрогулянок" }
+          ]
+        },
+        interestingFacts: {
+          title: "Цікаві факти",
+          isList: true,
+          items: [
+            { text: "На момент будівництва – найбільший кам’яний арковий міст у світі" },
+            { text: "Часто називають «Новий міст», хоча йому вже понад 100 років" },
+            { text: "Символ незалежності та розвитку Люксембурга" },
+            { text: "Під час реконструкції рух мостом повністю перекривали – рідкісний випадок для міста" },
+            { text: "Під мостом проходить окрема пішохідно-велосипедна галерея" }
+          ]
+        },
+        construction_period: "1900–1903",
+        architects: "Paul Séjourné (Поль Сежурне)",
+        founder: "Великий герцог Адольф (Adolphe of Luxembourg)",
+        meta: {
+          title: "Міст Адольфа в Люксембурзі – фото, історія, опис",
+          description: "Міст Адольфа – один із головних символів Люксембурга. Дізнайтеся історію, цікаві факти та найкращі місця для фото.",
+          ogTitle: "Міст Адольфа – символ Люксембурга",
+          ogDescription: "Історичний міст із панорамними видами на місто та долину Петрюсс. Обов’язкове місце для відвідування.",
+          keywords: "міст Адольфа, Люксембург міст, Pont Adolphe, Adolphe Bridge, визначні місця Люксембурга, що подивитися в Люксембурзі, міст Люксембург фото",
+          ogImage: "https://our-travels.info/foto/Luxembourg/luxembourg_canton/luxembourg_city/viaducts/001.jpg"
+        }
+      },
+      de: {
+        name: "Adolphe-Brücke",
+        location: "Stadt Luxemburg, Luxemburg, Stadtteil Ville Haute (Grenze zum Stadtteil Gare)",
+        short_description: "Eines der wichtigsten Wahrzeichen Luxemburgs – die steinerne Adolphe-Brücke, die die Oberstadt mit dem Stadtteil Gare verbindet. Sie wurde zu Beginn des 20. Jahrhunderts erbaut und ist für ihren großen Bogen und ihre Panoramablicke bekannt.",
+        full_description: {
+          title: "Beschreibung und Geschichte",
+          items: [
+            { bold: "Adolphe-Brücke", text: "– ist nicht nur eine Verkehrsanbindung, sondern ein architektonisches Wahrzeichen Luxemburgs. Sie spannt sich über das Petruss-Tal und verbindet das historische Stadtzentrum mit den südlichen Stadtteilen. Durch ihre Lage bietet die Brücke einige der besten Ausblicke auf die Altstadt, grüne Täler und die Festungsanlagen, die zum UNESCO-Welterbe gehören." },
+            { text: "Die Konstruktion der Brücke besteht aus Sandstein, und ihr Hauptbogen galt lange Zeit als ingenieurtechnische Meisterleistung. Heute ist die Brücke an moderne Anforderungen angepasst: Neben dem Autoverkehr gibt es separate Bereiche für Fußgänger und Radfahrer, was sie auch für Touristen sehr attraktiv macht." },
+            { text: "Besonders beeindruckend wirkt die Brücke am Abend, wenn die Beleuchtung eingeschaltet wird – ein beliebter Ort für Spaziergänge und Fotos." },
+            { bold: "Geschichte", text: "Der Bau der Brücke begann im Jahr 1900 und wurde 1903 während der Regierungszeit von Großherzog Adolf abgeschlossen, nach dem sie benannt wurde. Das Projekt wurde vom französischen Ingenieur Paul Séjourné entworfen, der für seine innovativen Lösungen im Brückenbau bekannt war." },
+            { text: "Zum Zeitpunkt ihrer Eröffnung galt die Adolphe-Brücke als größte steinerne Bogenbrücke der Welt – ihre Hauptspannweite betrug 84 Meter. Dies war ein wichtiger Schritt in der Entwicklung der Stadt, da die Brücke die Verkehrsverbindungen zwischen den Stadtteilen erheblich verbesserte." },
+            { text: "In den Jahren 2014 bis 2017 wurde die Brücke umfassend saniert. Dabei wurde die Konstruktion verstärkt und zusätzlich eine separate Fußgänger- und Radfahrerbrücke unter dem Hauptbogen hinzugefügt." }
+          ]
+        },
+        tickets_and_entry: {
+          title: "Praktische Informationen",
+          items: [
+            { bold: "Zugang", text: "Rund um die Uhr, kostenlos" },
+            { bold: "Beste Zeit", text: "Morgenstunden und Sonnenuntergang" },
+            { bold: "Geeignet für", text: "Spaziergänge, Fotos, Fahrradtouren" }
+          ]
+        },
+        interestingFacts: {
+          title: "Interessante Fakten",
+          isList: true,
+          items: [
+            { text: "Zum Zeitpunkt des Baus war sie die größte steinerne Bogenbrücke der Welt" },
+            { text: "Wird oft als „Neue Brücke“ bezeichnet, obwohl sie über 100 Jahre alt ist" },
+            { text: "Symbol für Unabhängigkeit und Entwicklung Luxemburgs" },
+            { text: "Während der Renovierung wurde der Verkehr vollständig gesperrt – ein seltener Fall in der Stadt" },
+            { text: "Unter der Brücke verläuft eine separate Fußgänger- und Radfahrgalerie" }
+          ]
+        },
+        construction_period: "1900–1903",
+        architects: "Paul Séjourné",
+        founder: "Großherzog Adolf von Luxemburg",
+        meta: {
+          title: "Adolphe-Brücke in Luxemburg – Fotos, Geschichte, Beschreibung",
+          description: "Die Adolphe-Brücke ist eines der wichtigsten Wahrzeichen Luxemburgs. Erfahren Sie mehr über ihre Geschichte, interessante Fakten und die besten Fotospots.",
+          ogTitle: "Adolphe-Brücke – Wahrzeichen Luxemburgs",
+          ogDescription: "Historische Brücke mit Panoramablick auf die Stadt und das Petruss-Tal. Ein absolutes Muss für Besucher.",
+          keywords: "Adolphe Brücke, Luxemburg Brücke, Pont Adolphe, Adolphe Bridge, Sehenswürdigkeiten Luxemburg, was sehen in Luxemburg, Luxemburg Fotos Brücke",
+          ogImage: "https://our-travels.info/foto/Luxembourg/luxembourg_canton/luxembourg_city/viaducts/001.jpg"
         }
       }
     }

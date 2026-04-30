@@ -66,6 +66,10 @@ export const Fotos = {
   },
   luxembourg_canton: {
     luxembourg_city: {
+      gallery: [
+        { path: "Luxembourg/luxembourg_canton/luxembourg_city/001.jpg", title: { ru: 'Люксембург, 2024', de: 'Luxemburg, 2024', ua: 'Люксембург, 2024' } },
+        { path: "Luxembourg/luxembourg_canton/luxembourg_city/old_town/004.jpg", title: { ru: 'Старый город Люксембурга, 2024', de: 'Altstadt Luxemburg, 2024', ua: 'Старе місто Люксембурга, 2024' } },
+      ],
       musee_drai_eechelen_luxembourg: [
         { path: "Luxembourg/luxembourg_canton/luxembourg_city/musee_drai_eechelen/001.jpg", title: { ru: 'Музей «Три жёлудя», 2024', de: 'Museum „Drei Eicheln“, 2024', ua: 'Музей «Три жолуді», 2024' } },
       ],
@@ -101,14 +105,19 @@ export const Fotos = {
         { path: "Luxembourg/luxembourg_canton/luxembourg_city/old_town/pont_du_chateau/001.jpg", title: { ru: 'Мост Понт-дю-Шато, 2024', de: 'Pont du Château Brücke, 2024', ua: 'Міст Понт-дю-Шато, 2024' } },
         { path: "Luxembourg/luxembourg_canton/luxembourg_city/old_town/pont_du_chateau/002.jpg", title: { ru: 'Мост Понт-дю-Шато, 2024', de: 'Pont du Château Brücke, 2024', ua: 'Міст Понт-дю-Шато, 2024' } }
       ],
-      viaducts_luxembourg: [
+      bridges_luxembourg: [
         { path: "Luxembourg/luxembourg_canton/luxembourg_city/viaducts/001.jpg", title: { ru: 'Мост Адольфа, 2024', de: 'Adolphe-Brücke, 2024', ua: 'Міст Адольфа, 2024' } },
         { path: "Luxembourg/luxembourg_canton/luxembourg_city/viaducts/002.jpg", title: { ru: 'Мост Адольфа, 2024', de: 'Adolphe-Brücke, 2024', ua: 'Міст Адольфа, 2024' } },
-        { path: "Luxembourg/luxembourg_canton/luxembourg_city/old_town/passerelle/001.jpg", title: { ru: 'Мост Пассерель, 2024', de: 'Passerelle-Brücke, 2024', ua: 'Міст Пассерель, 2024' } }
+        { path: "Luxembourg/luxembourg_canton/luxembourg_city/old_town/passerelle/001.jpg", title: { ru: 'Мост Пассерель, 2024', de: 'Passerelle-Brücke, 2024', ua: 'Міст Пассерель, 2024' } },
+        { path: "Luxembourg/luxembourg_canton/luxembourg_city/old_town/pont_du_chateau/001.jpg", title: { ru: 'Мost Понт-дю-Шато, 2024', de: 'Pont du Château Brücke, 2024', ua: 'Міst Понт-дю-Шато, 2024' } },
       ],
       passerelle_luxembourg: [
         { path: "Luxembourg/luxembourg_canton/luxembourg_city/old_town/passerelle/001.jpg", title: { ru: 'Мост Пассерель, 2024', de: 'Passerelle-Brücke, 2024', ua: 'Міст Пассерель, 2024' } }
-      ]
+      ],
+      adolphe_luxembourg: [
+        { path: "Luxembourg/luxembourg_canton/luxembourg_city/viaducts/001.jpg", title: { ru: 'Мост Адольфа, 2024', de: 'Adolphe-Brücke, 2024', ua: 'Міст Адольфа, 2024' } },
+        { path: "Luxembourg/luxembourg_canton/luxembourg_city/viaducts/002.jpg", title: { ru: 'Мост Адольфа, 2024', de: 'Adolphe-Brücke, 2024', ua: 'Міст Адольфа, 2024' } },
+      ],
     }
   }
 

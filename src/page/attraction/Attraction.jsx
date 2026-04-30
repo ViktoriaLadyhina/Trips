@@ -113,9 +113,6 @@ const Attraction = () => {
         .filter(Boolean)
         .sort(sortByFilters);
     
-    
-
-
 
     // Хлебные крошки
     const crumbs = [
