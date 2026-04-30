@@ -196,7 +196,7 @@ const datas = [
     },
     {
         id: "romanische_kirchen_altstadt_koln",
-        name: "Романські церкви Старого міста Кельна",
+        name: "Романські церкви Кельна",
         type: ["cathedral"], rating: "popular",
         path: "romanische_kirchen_altstadt_koln",
         countryPath: "germany", regionPath: "nrw", districtPath: "city", cityPath: "koln",

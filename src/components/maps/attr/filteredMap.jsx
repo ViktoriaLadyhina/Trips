@@ -1,13 +1,10 @@
 import { MapContainer, TileLayer, Marker, Tooltip, Popup, useMap } from 'react-leaflet';
 import L from 'leaflet';
 import 'leaflet/dist/leaflet.css';
-import '../../attr/AttrMap.scss';
+import './AttrMap.scss';
 import { useNavigate } from 'react-router';
 import { useEffect } from 'react';
-import nrw_attrDe from '../../../../datas/de/germany/nrw-attractions';
-import nrw_attrRu from '../../../../datas/ru/germany/nrw-attractions';
-import nrw_attrUa from '../../../../datas/ua/germany/nrw-attractions';
-import nrwAttr from '../../../../datas/germany/nrw-attractions';
+import useAllAttractions from '../../../hooks/useAllAttractions';
 
 delete L.Icon.Default.prototype._getIconUrl;
 L.Icon.Default.mergeOptions({
@@ -18,9 +15,9 @@ L.Icon.Default.mergeOptions({
 
 const moreBtnText = { ru: "Подробнее", de: "Mehr erfahren", ua: "Детальніше" };
 
-const FilteredMap = ({ city, lang, map }) => {
+const FilteredMap = ({ map }) => {
   const navigate = useNavigate();
-  if (!city) return null;
+  const { attractions: allAttractions } = useAllAttractions();
 
 const FitBounds = ({ points }) => {
   const map = useMap();
@@ -40,18 +37,7 @@ const FitBounds = ({ points }) => {
   return null;
 };
 
-const towers = lang === 'ru' ? nrw_attrRu
-  : lang === 'ua' ? nrw_attrUa
-  : nrw_attrDe;
-
-const ring = nrwAttr.map(item => ({
-  ...item,
-  meta: item.translations[lang].meta
-}));
-
-const all = [...towers, ...ring];
-
-const attractions = all.filter(attr =>
+const attractions = allAttractions.filter(attr =>
   map ? attr.map === map : true
 );
 

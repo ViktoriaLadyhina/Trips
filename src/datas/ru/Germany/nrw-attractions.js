@@ -194,7 +194,7 @@ const datas = [
     },
     {
         id: "romanische_kirchen_altstadt_koln",
-        name: "Романские церкви Старого города Кёльна",
+        name: "Романские церкви Кёльна",
         type: ["cathedral"], rating: "popular",
         path: "romanische_kirchen_altstadt_koln",
         mapOpen: "romanische_kirchen_altstadt_koln",

@@ -196,7 +196,7 @@ const datas = [
     },
     {
         id: "romanische_kirchen_altstadt_koln",
-        name: "Romanische Kirchen der Altstadt von Köln",
+        name: "Romanische Kirchen von Köln",
         type: ["cathedral"], rating: "popular",
         path: "romanische_kirchen_altstadt_koln",
         countryPath: "germany", regionPath: "nrw", districtPath: "city", cityPath: "koln",

@@ -10,7 +10,7 @@ import Gallery from '../../components/gallery/Gallery.jsx';
 import { photosByCountry } from '../../datas/fotos/index.js';
 import AttractionCardSub from '../../components/attraction/AttractionCardSub.jsx'
 import AttractionsFilters from '../../components/attractionsFilters/AttractionsFilters.jsx';
-import FilteredMap from '../../components/maps/germany/maps/filteredMap.jsx';
+import FilteredMap from '../../components/maps/attr/filteredMap.jsx';
 
 import useAttractions from '../../hooks/useAttractions.js';
 import useCity from '../../hooks/useCity.js';
@@ -165,7 +165,7 @@ const Attraction = () => {
             <div className='attraction__title'>{attraction.name && (attraction.name)}</div>
 
             {attraction.mapOpen && (
-                <FilteredMap city={city} lang={lang} map={attraction.mapOpen} />
+                <FilteredMap map={attraction.mapOpen} />
             )}
 
             <div className='attraction__desc'>
