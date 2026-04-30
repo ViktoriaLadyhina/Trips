@@ -2542,6 +2542,7 @@ const datas = [
     },
     {
         id: "zw-a_fort_IX_outer_koln",
+        type: ["historical_building"], 
         path: "fort_IX_outer_koln",
         countryPath: "germany", regionPath: "nrw", districtPath: "city", cityPath: "koln",
         map: "prussian_fortress_system_koln",
@@ -2584,6 +2585,7 @@ const datas = [
     },
     {
         id: "zw-b_fort_IX_outer_koln",
+        type: ["historical_building"],
         path: "fort_IX_outer_koln",
         countryPath: "germany", regionPath: "nrw", districtPath: "city", cityPath: "koln",
         map: "prussian_fortress_system_koln",
