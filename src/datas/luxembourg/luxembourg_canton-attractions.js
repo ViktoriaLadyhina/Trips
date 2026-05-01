@@ -353,7 +353,7 @@ const datas = [
     path: "old_town_luxembourg",
     countryPath: "luxembourg", regionPath: "luxembourg_canton", districtPath: "city", cityPath: "luxembourg_city",
     fotoCard: "Luxembourg/luxembourg_canton/luxembourg_city/old_town/001.jpg",
-    subObjects: ["casemates_du_bock_luxembourg", "abbey_neumunster_luxembourg", "pont_du_chateau_luxembourg", "passerelle_luxembourg"],
+    subObjects: ["casemates_du_bock_luxembourg", "abbey_neumunster_luxembourg", "pont_du_chateau_luxembourg", "passerelle_luxembourg", "notre_dame_cathedral_luxembourg"],
     translations: {
       ru: {
         name: "Старый город Люксембурга",
@@ -371,6 +371,7 @@ const datas = [
           text: "На территории Старого города Люксембурга и его исторических укреплений расположены:",
           items: [
             { bold: "Казематы Бок", text: "– система подземных оборонительных туннелей, вырубленных в скале Бок, являющаяся частью бывшей крепостной системы города и одним из ключевых элементов фортификационного наследия Люксембурга." },
+            { bold: "Собор Люксембургской Богоматери", text: "– готический собор с элементами Ренессанса, известный витражами, богатым интерьером и почитаемой статуей Богоматери-Утешительницы." },
             { bold: "Аббатство Ноймюнстер", text: "– историческое аббатство XVII века в районе Грунд, преобразованное в современный культурный центр с выставками и мероприятиями." },
             { bold: "Мост Понт-дю-Шато", text: "– исторический мост в старом городе Люксембурга, входящий в систему бывших городских укреплений и являющийся частью пешеходных маршрутов." },
             { bold: "Мост Пассерель (Passerelle)", text: "– исторический каменный мост в городе Люксембург, соединяющий район старого города с кварталом вокзала и являющийся важной частью городской транспортной и пешеходной сети." }
@@ -429,6 +430,7 @@ const datas = [
           text: "На території Старого міста Люксембурга та його історичних укріплень розташовані:",
           items: [
             { bold: "Каземати Бок", text: "– система підземних оборонних тунелів, вирубаних у скелі Бок, яка є частиною колишньої фортифікаційної системи міста та одним із ключових елементів фортифікаційної спадщини Люксембурга." },
+            { bold: "Собор Люксембурзької Богоматері", text: "– готичний собор з елементами Ренесансу, відомий вітражами, багатим інтер’єром і шанованою статуєю Богородиці-Утішительки." },
             { bold: "Абатство Ноймюнстер", text: "– історичне абатство XVII століття в районі Грунд, перетворене на сучасний культурний центр із виставками та заходами." },
             { bold: "Міст Понт-дю-Шато", text: "– історичний міст у старому місті Люксембургу, який входить до системи колишніх міських укріплень і є частиною пішохідних маршрутів." },
             { bold: "Міст Пассерель (Passerelle)", text: "– історичний кам’яний міст у місті Люксембург, що з’єднує район старого міста з кварталом вокзалу та є важливою частиною міської транспортної і пішохідної мережі." }
@@ -487,6 +489,7 @@ const datas = [
           text: "Auf dem Gebiet der Altstadt von Luxemburg und ihrer historischen Befestigungen befinden sich:",
           items: [
             { bold: "Bock-Kasematten", text: "– ein System unterirdischer Verteidigungstunnel, die in den Bockfelsen gehauen wurden, das Teil des ehemaligen Festungssystems der Stadt ist und eines der wichtigsten Elemente des fortifikatorischen Erbes Luxemburgs darstellt." },
+            { bold: "Kathedrale Notre-Dame Luxemburg", text: "– eine gotische Kathedrale mit Renaissance-Elementen, bekannt für ihre Glasfenster, ihr reiches Interieur und die verehrte Statue der Trösterin der Betrübten." },
             { bold: "Abtei Neumünster", text: "– eine historische Abtei aus dem 17. Jahrhundert im Stadtteil Grund, die in ein modernes Kulturzentrum mit Ausstellungen und Veranstaltungen umgewandelt wurde." },
             { bold: "Pont du Château", text: "– eine historische Brücke in der Altstadt von Luxemburg, die Teil der ehemaligen Stadtbefestigungen ist und zu den Fußgängerwegen gehört." },
             { bold: "Passerelle-Brücke", text: "– historische Steinbrücke in der Stadt Luxemburg, die den Altstadtbereich mit dem Bahnhofsviertel verbindet und ein wichtiger Bestandteil des städtischen Verkehrs- und Fußgängernetzes ist." }
@@ -676,6 +679,173 @@ const datas = [
           ogDescription: "Eine der außergewöhnlichsten Sehenswürdigkeiten Luxemburgs – ein Netzwerk unterirdischer Kasematten mit jahrhundertealter Geschichte und Panoramablicken.",
           keywords: "Bock-Kasematten, Luxemburg, unterirdische Kasematten, Festung Luxemburg, UNESCO Luxemburg, Sehenswürdigkeiten Luxemburg, Altstadt Luxemburg, Befestigungsanlagen, unterirdische Tunnel, historische Befestigungen, Casemates du Bock, was man in Luxemburg sehen kann, Führungen Luxemburg, Bockfelsen, Militärarchitektur Europa",
           ogImage: "https://our-travels.info/foto/Luxembourg/luxembourg_canton/luxembourg_city/old_town/casemates/001.jpg"
+        }
+      }
+    }
+  },
+  {
+    id: "notre_dame_cathedral_luxembourg",
+    type: ["cathedral"], rating: "top",
+    path: "notre_dame_cathedral_luxembourg",
+    countryPath: "luxembourg", regionPath: "luxembourg_canton", districtPath: "city", cityPath: "luxembourg_city",
+    hiddenFromList: true, showMore: true,
+    fotoCard: "Luxembourg/luxembourg_canton/luxembourg_city/old_town/notre_dame_cathedral/001.jpg",
+    coord: { lat: 49.60972, lng: 6.13139 },
+    translations: {
+      ru: {
+        name: "Собор Люксембургской Богоматери",
+        officialSite: [{ bold: "Официальный сайт", link: "https://www.cathol.lu" }],
+        short_description: "Главный католический храм Люксембурга – готический собор с элементами Ренессанса, известный витражами, богатым интерьером и почитаемой статуей Богоматери-Утешительницы.",
+        full_description: {
+          title: "Описание и история",
+          items: [
+            { bold: "Собор Люксембургской Богоматери (Notre-Dame de Luxembourg)", text: "Главный католический храм страны и один из ключевых символов Люксембурга. Он расположен в историческом центре города (район Ville Haute) и сочетает в себе готическую архитектурную основу с элементами Ренессанса. Внутреннее пространство собора отличается высокими сводами, витражами и богатым декоративным оформлением, создающим торжественную и спокойную атмосферу." },
+            { text: "Собор остаётся действующим религиозным центром и одновременно одной из главных туристических достопримечательностей города. Он играет важную роль как в духовной жизни страны, так и в её культурной идентичности, привлекая паломников и путешественников со всего мира." },
+            { bold: "История", text: "Собор был основан в 1613 году иезуитами как церковь при их коллегиуме. Первоначально он выполнял функции образовательного и религиозного центра ордена. После упразднения иезуитов в XVIII веке здание перешло государству и стало приходской церковью." },
+            { text: "В 1870 году храм получил статус кафедрального собора, закрепив своё значение как главного религиозного центра Люксембурга. В 1935–1938 годах он был расширен, включая строительство новой крипты, где разместились усыпальницы великогерцогской семьи." }
+          ]
+        },
+        tickets_and_entry: {
+          title: "Практическая информация",
+          items: [
+            { bold: "Адрес:", text: "Notre-Dame Cathedral, Luxembourg City" },
+            { bold: "Конфессия:", text: "римско-католическая церковь" },
+            { bold: "Часы работы: ", text: "обычно открыт ежедневно (точное время зависит от служб)" }
+          ]
+        },
+        relics: {
+          title: "Реликвии и ценности",
+          items: [
+            { bold: "Статуя Девы Марии «Утешительница скорбящих» (Consolatrix Afflictorum)", text: "Главная святыня собора и покровительница Люксембурга. Статуя почитается с XVII века и является центром национального религиозного культа. Каждый год во время Oktav её выносят в процессии, собирающей тысячи паломников. Для жителей страны это не просто религиозный объект, а символ защиты и идентичности." },
+            { bold: "Крипта с усыпальницами великогерцогской семьи", text: "Подземная часть собора служит усыпальницей представителей правящей династии Люксембурга. Пространство подчёркивает связь собора с историей государства и монархией." },
+            { bold: "Гробница Иоанна Слепого (Иоганна Люксембургского)", text: "Место захоронения короля Богемии и графа Люксембурга Иоанна Слепого — одной из ключевых исторических фигур страны и символа средневековой династии Люксембургов." },
+            { bold: "Скульптурное оформление и бронзовые львы крипты", text: "Интерьер собора включает многочисленные скульптуры, а вход в крипту с усыпальницами охраняют два массивных бронзовых льва, подчёркивающих торжественный характер династического некрополя." }
+          ]
+        },
+        interestingFacts: {
+          title: "Интересные факты",
+          isList: true,
+          items: [
+            { text: "В крипте собора похоронены представители правящей династии Люксембурга" },
+            { text: "Статуя Богоматери считается национальной святыней" },
+            { text: "Ежегодная процессия Oktav – одно из главных религиозных событий страны" },
+            { text: "Собор сочетает несколько архитектурных стилей, что редкость для такого типа зданий" }
+          ]
+        },
+        construction_period: "1613–1621",
+        architects: "Жан дю Блок (Jean du Blocq) – иезуит, автор проекта; строительство – Ульрих Йоб; расширение – Хуберт Шумахер",
+        founder: "Орден иезуитов ",
+        meta: {
+          title: "Собор Люксембургской Богоматери – описание, история и факты",
+          description: "Собор Notre-Dame в Люксембурге – главный храм страны с богатой историей, готической архитектурой и знаменитой статуей Богоматери. Полное описание и факты.",
+          ogTitle: "Собор Люксембургской Богоматери",
+          ogDescription: "Главный собор Люксембурга: история, архитектура и интересные факты о Notre-Dame.",
+          keywords: "собор Люксембургской Богоматери, Нотр-Дам Люксембург, Notre Dame Luxembourg, собор Люксембург, главный собор Люксембурга, достопримечательности Люксембурга, что посмотреть в Люксембурге, кафедральный собор Люксембурга, католический собор Люксембург, церковь Нотр-Дам Люксембург, Люксембург достопримечательности центр, Ville Haute Люксембург, старый город Люксембург, Consolatrix Afflictorum, собор Нотр-Дам история, архитектура Люксембурга",
+          ogImage: "https://our-travels.info/foto/Luxembourg/luxembourg_canton/luxembourg_city/old_town/notre_dame_cathedral/001.jpg"
+        }
+      },
+      ua: {
+        name: "Собор Люксембурзької Богоматері",
+        officialSite: [{ bold: "Офіційний сайт", link: "https://www.cathol.lu" }],
+        short_description: "Головний католицький храм Люксембургу – готичний собор з елементами Ренесансу, відомий вітражами, багатим інтер’єром і шанованою статуєю Богородиці-Утішительки.",
+        full_description: {
+          title: "Опис і історія",
+          items: [
+            { bold: "Собор Люксембурзької Богоматері (Notre-Dame de Luxembourg)", text: "Головний католицький храм країни та один із ключових символів Люксембургу. Він розташований в історичному центрі міста (район Ville Haute) і поєднує в собі готичну архітектурну основу з елементами Ренесансу. Внутрішній простір собору вирізняється високими склепіннями, вітражами та багатим декоративним оздобленням, що створює урочисту і спокійну атмосферу." },
+            { text: "Собор залишається діючим релігійним центром і водночас однією з головних туристичних визначних пам’яток міста. Він відіграє важливу роль як у духовному житті країни, так і в її культурній ідентичності, приваблюючи паломників і мандрівників з усього світу." },
+            { bold: "Історія", text: "Собор був заснований у 1613 році єзуїтами як церква при їхньому колегіумі. Спочатку він виконував функції освітнього та релігійного центру ордену. Після ліквідації єзуїтів у XVIII столітті будівля перейшла у державну власність і стала парафіяльною церквою." },
+            { text: "У 1870 році храм отримав статус кафедрального собору, закріпивши своє значення як головного релігійного центру Люксембургу. У 1935–1938 роках він був розширений, включаючи будівництво нової крипти, де розмістилися усипальниці великогерцогської родини." }
+          ]
+        },
+        tickets_and_entry: {
+          title: "Практична інформація",
+          items: [
+            { bold: "Адреса:", text: "Notre-Dame Cathedral, Luxembourg City" },
+            { bold: "Конфесія:", text: "римсько-католицька церква" },
+            { bold: "Години роботи:", text: "зазвичай відкритий щодня (точний час залежить від богослужінь)" }
+          ]
+        },
+        relics: {
+          title: "Реліквії та цінності",
+          items: [
+            { bold: "Статуя Діви Марії «Утішителька скорботних» (Consolatrix Afflictorum)", text: "Головна святиня собору та покровителька Люксембургу. Статуя шанується з XVII століття і є центром національного релігійного культу. Щороку під час Oktav її виносять у процесії, що збирає тисячі паломників. Для жителів країни це не просто релігійний об’єкт, а символ захисту та ідентичності." },
+            { bold: "Крипта з усипальницями великогерцогської родини", text: "Підземна частина собору служить місцем поховання представників правлячої династії Люксембургу. Простір підкреслює зв’язок собору з історією держави та монархією." },
+            { bold: "Гробниця Іоанна Сліпого (Йоганна Люксембурзького)", text: "Місце поховання короля Богемії та графа Люксембургу Іоанна Сліпого – однієї з ключових історичних постатей країни та символу середньовічної династії Люксембургів." },
+            { bold: "Скульптурне оформлення та бронзові леви крипти", text: "Інтер’єр собору включає численні скульптури, а вхід до крипти з усипальницями охороняють два масивні бронзові леви, що підкреслюють урочистий характер династичного некрополя." }
+          ]
+        },
+        interestingFacts: {
+          title: "Цікаві факти",
+          isList: true,
+          items: [
+            { text: "У крипті собору поховані представники правлячої династії Люксембургу" },
+            { text: "Статуя Богородиці вважається національною святинею" },
+            { text: "Щорічна процесія Oktav – одна з головних релігійних подій країни" },
+            { text: "Собор поєднує кілька архітектурних стилів, що рідко для такого типу споруд" }
+          ]
+        },
+        construction_period: "1613–1621",
+        architects: "Жан дю Блок (Jean du Blocq) – єзуїт, автор проєкту; будівництво – Ульріх Йоб; розширення – Губерт Шумахер",
+        founder: "Орден єзуїтів",
+        meta: {
+          title: "Собор Люксембурзької Богоматері – опис, історія та факти",
+          description: "Собор Notre-Dame у Люксембурзі – головний храм країни з багатою історією, готичною архітектурою та знаменитою статуєю Богородиці. Повний опис і факти.",
+          ogTitle: "Собор Люксембурзької Богоматері",
+          ogDescription: "Головний собор Люксембургу: історія, архітектура та цікаві факти про Notre-Dame.",
+          keywords: "собор Люксембурзької Богоматері, Нотр-Дам Люксембург, Notre Dame Luxembourg, собор Люксембург, головний собор Люксембургу, визначні пам’ятки Люксембургу, що подивитися в Люксембурзі, кафедральний собор Люксембургу, католицький собор Люксембург, церква Нотр-Дам Люксембург, Люксембург центр старе місто, Ville Haute Люксембург, Consolatrix Afflictorum, історія собору Люксембург, архітектура Люксембургу",
+          ogImage: "https://our-travels.info/foto/Luxembourg/luxembourg_canton/luxembourg_city/old_town/notre_dame_cathedral/001.jpg"
+        }
+      },
+      de: {
+        name: "Kathedrale Notre-Dame Luxemburg",
+        officialSite: [{ bold: "Offizielle Website", link: "https://www.cathol.lu" }],
+        short_description: "Die wichtigste katholische Kirche Luxemburgs – eine gotische Kathedrale mit Renaissance-Elementen, bekannt für ihre Glasfenster, ihr reiches Interieur und die verehrte Statue der Trösterin der Betrübten.",
+        full_description: {
+          title: "Beschreibung und Geschichte",
+          items: [
+            { bold: "Kathedrale Notre-Dame Luxemburg (Notre-Dame de Luxembourg)", text: "Die wichtigste katholische Kirche des Landes und eines der zentralen Wahrzeichen Luxemburgs. Sie befindet sich im historischen Stadtzentrum (Stadtteil Ville Haute) und verbindet eine gotische architektonische Basis mit Elementen der Renaissance. Der Innenraum der Kathedrale zeichnet sich durch hohe Gewölbe, Glasfenster und eine reichhaltige dekorative Ausstattung aus, die eine feierliche und ruhige Atmosphäre schafft." },
+            { text: "Die Kathedrale bleibt ein aktives religiöses Zentrum und gleichzeitig eine der wichtigsten touristischen Sehenswürdigkeiten der Stadt. Sie spielt sowohl im spirituellen Leben des Landes als auch in seiner kulturellen Identität eine bedeutende Rolle und zieht Pilger und Reisende aus aller Welt an." },
+            { bold: "Geschichte", text: "Die Kathedrale wurde 1613 von den Jesuiten als Kirche ihres Kollegs gegründet. Ursprünglich diente sie als religiöses und Bildungszentrum des Ordens. Nach der Aufhebung der Jesuiten im 18. Jahrhundert ging das Gebäude in staatlichen Besitz über und wurde zur Pfarrkirche." },
+            { text: "Im Jahr 1870 erhielt die Kirche den Status einer Kathedrale und wurde damit zum wichtigsten religiösen Zentrum Luxemburgs. In den Jahren 1935–1938 wurde sie erweitert, einschließlich des Baus einer neuen Krypta, in der die Grablegen der großherzoglichen Familie untergebracht wurden." }
+          ]
+        },
+        tickets_and_entry: {
+          title: "Praktische Informationen",
+          items: [
+            { bold: "Adresse:", text: "Notre-Dame Cathedral, Luxembourg City" },
+            { bold: "Konfession:", text: "römisch-katholische Kirche" },
+            { bold: "Öffnungszeiten:", text: "in der Regel täglich geöffnet (genaue Zeiten abhängig von Gottesdiensten)" }
+          ]
+        },
+        relics: {
+          title: "Reliquien und Schätze",
+          items: [
+            { bold: "Statue der Jungfrau Maria „Trösterin der Betrübten“ (Consolatrix Afflictorum)", text: "Die wichtigste Reliquie der Kathedrale und Schutzpatronin Luxemburgs. Die Statue wird seit dem 17. Jahrhundert verehrt und ist das Zentrum eines nationalen religiösen Kultes. Jedes Jahr während der Oktav wird sie in einer Prozession getragen, die Tausende von Pilgern versammelt. Für die Bevölkerung ist sie nicht nur ein religiöses Objekt, sondern ein Symbol des Schutzes und der Identität." },
+            { bold: "Krypta mit Grablegen der großherzoglichen Familie", text: "Der unterirdische Teil der Kathedrale dient als Begräbnisstätte der herrschenden Dynastie Luxemburgs. Dieser Ort unterstreicht die Verbindung der Kathedrale zur Geschichte des Staates und zur Monarchie." },
+            { bold: "Grab von Johann dem Blinden (Johann von Luxemburg)", text: "Begräbnisstätte des Königs von Böhmen und Grafen von Luxemburg Johann dem Blinden – einer der wichtigsten historischen Persönlichkeiten des Landes und Symbol der mittelalterlichen Dynastie der Luxemburger." },
+            { bold: "Skulpturale Ausstattung und bronzene Löwen der Krypta", text: "Der Innenraum der Kathedrale umfasst zahlreiche Skulpturen, und der Eingang zur Krypta mit den Grablegen wird von zwei massiven bronzenen Löwen bewacht, die den feierlichen Charakter der dynastischen Nekropole unterstreichen." }
+          ]
+        },
+        interestingFacts: {
+          title: "Interessante Fakten",
+          isList: true,
+          items: [
+            { text: "In der Krypta der Kathedrale sind Mitglieder der herrschenden Dynastie Luxemburgs bestattet" },
+            { text: "Die Marienstatue gilt als nationale Reliquie" },
+            { text: "Die jährliche Oktav-Prozession ist eines der wichtigsten religiösen Ereignisse des Landes" },
+            { text: "Die Kathedrale vereint mehrere Baustile, was für diese Art von Bauwerken selten ist" }
+          ]
+        },
+        construction_period: "1613–1621",
+        architects: "Jean du Blocq – Jesuit und Entwurfsautor; Bau – Ulrich Job; Erweiterung – Hubert Schumacher",
+        founder: "Jesuitenorden",
+        meta: {
+          title: "Kathedrale Notre-Dame Luxemburg – Beschreibung, Geschichte und Fakten",
+          description: "Die Notre-Dame-Kathedrale in Luxemburg ist die wichtigste Kirche des Landes mit reicher Geschichte, gotischer Architektur und der berühmten Marienstatue. Vollständige Beschreibung und Fakten.",
+          ogTitle: "Kathedrale Unserer Lieben Frau von Luxemburg",
+          ogDescription: "Die wichtigste Kathedrale Luxemburgs: Geschichte, Architektur und interessante Fakten über Notre-Dame.",
+          keywords: "Kathedrale Luxemburg, Notre Dame Luxemburg, Notre Dame Luxembourg, Luxemburg Kathedrale, Sehenswürdigkeiten Luxemburg, Luxemburg Stadtzentrum, Ville Haute Luxemburg, Consolatrix Afflictorum, Geschichte Kathedrale Luxemburg, Architektur Luxemburg",
+          ogImage: "https://our-travels.info/foto/Luxembourg/luxembourg_canton/luxembourg_city/old_town/notre_dame_cathedral/001.jpg"
         }
       }
     }
@@ -1393,7 +1563,7 @@ const datas = [
         }
       }
     }
-  }
+  },
 ]
 
 export default datas;

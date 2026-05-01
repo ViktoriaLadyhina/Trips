@@ -294,7 +294,8 @@ const datas = [
     tickets_and_entry: {
       title: "Praktische Informationen",
       items: [
-        { bold: "Zugang:", text: "geöffnet für Besuche, Eintritt in der Regel frei" }
+        { bold: "Zugang:", text: "geöffnet für Besuche, Eintritt in der Regel frei" },
+        { bold: "Konfession:", text: "evangelische Kirche" },
       ]
     },
     interestingFacts: {
@@ -466,6 +467,7 @@ const datas = [
       title: "Praktische Informationen",
       items: [
         { bold: "Adresse:", text: "Domfreihof 1, 54290 Trier, Deutschland" },
+        { bold: "Konfession:", text: "römisch-katholische Kirche" },
         { bold: "Öffnungszeiten:", text: "täglich von 10:00 bis 18:00 Uhr (Dom), <br>Schatzkammer von 10:00 bis 17:30 Uhr" },
         { bold: "Eintritt:", text: "Eintritt in den Dom frei, Museum kostenpflichtig (~5-7 €)" }
       ]
@@ -533,6 +535,7 @@ const datas = [
       title: "Praktische Informationen",
       items: [
         { bold: "Adresse:", text: "Palmatiusstraße 4, 54292 Trier, Deutschland" },
+        { bold: "Konfession:", text: "römisch-katholische Kirche" },
         { bold: "Status:", text: "aktive katholische Kirche" },
         { bold: "Öffnungszeiten:", text: "<br>März-September: ungefähr 08:00-17:00; <br>Oktober-Februar: ungefähr 09:00-17:00. <br>Besuche sind außerhalb der Gottesdienstzeiten möglich." }
       ]
@@ -604,6 +607,7 @@ const datas = [
       title: "Praktische Informationen",
       items: [
         { bold: "Adresse:", text: "Liebfrauenstraße 2, 54290 Trier, Deutschland" },
+        { bold: "Konfession:", text: "römisch-katholische Kirche" },
         { bold: "Eintritt: ", text: "frei (außer bei Konzerten und Sonderveranstaltungen)." }
       ]
     },

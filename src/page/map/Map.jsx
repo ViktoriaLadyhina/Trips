@@ -352,6 +352,7 @@ const Map = () => {
                       <li><Link to="/luxembourg/luxembourg_canton/city/luxembourg_city/attractions/old_town_luxembourg">{t.attractions.old_town_luxembourg[lang]}</Link>
                         <ul>
                           <li><Link to="/luxembourg/luxembourg_canton/city/luxembourg_city/attractions/casemates_du_bock_luxembourg">{t.attractions.casemates_du_bock_luxembourg[lang]}</Link></li>
+                          <li><Link to="/luxembourg/luxembourg_canton/city/luxembourg_city/attractions/notre_dame_cathedral_luxembourg">{t.attractions.notre_dame_cathedral_luxembourg[lang]}</Link></li>
                           <li><Link to="/luxembourg/luxembourg_canton/city/luxembourg_city/attractions/abbey_neumunster_luxembourg">{t.attractions.abbey_neumunster_luxembourg[lang]}</Link></li>
                         </ul>
                       </li>

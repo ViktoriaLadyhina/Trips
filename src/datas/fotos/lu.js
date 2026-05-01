@@ -118,6 +118,15 @@ export const Fotos = {
         { path: "Luxembourg/luxembourg_canton/luxembourg_city/viaducts/001.jpg", title: { ru: 'Мост Адольфа, 2024', de: 'Adolphe-Brücke, 2024', ua: 'Міст Адольфа, 2024' } },
         { path: "Luxembourg/luxembourg_canton/luxembourg_city/viaducts/002.jpg", title: { ru: 'Мост Адольфа, 2024', de: 'Adolphe-Brücke, 2024', ua: 'Міст Адольфа, 2024' } },
       ],
+      notre_dame_cathedral_luxembourg: [
+        { path: "Luxembourg/luxembourg_canton/luxembourg_city/old_town/notre_dame_cathedral/001.jpg", title: { ru: 'Собор Люксембургской Богоматери, 2024', de: 'Kathedrale Notre-Dame Luxemburg, 2024', ua: 'Собор Люксембургської Богоматері, 2024' } },
+        { path: "Luxembourg/luxembourg_canton/luxembourg_city/old_town/notre_dame_cathedral/002.jpg", title: { ru: 'Собор Люксембургской Богоматери, 2024', de: 'Kathedrale Notre-Dame Luxemburg, 2024', ua: 'Собор Люксембургської Богоматері, 2024' } },
+        { path: "Luxembourg/luxembourg_canton/luxembourg_city/old_town/notre_dame_cathedral/003.jpg", title: { ru: 'Собор Люксембургской Богоматери, 2024', de: 'Kathedrale Notre-Dame Luxemburg, 2024', ua: 'Собор Люксембургської Богоматері, 2024' } },
+        { path: "Luxembourg/luxembourg_canton/luxembourg_city/old_town/notre_dame_cathedral/004.jpg", title: { ru: 'Собор Люксембургской Богоматери, 2024', de: 'Kathedrale Notre-Dame Luxemburg, 2024', ua: 'Собор Люксембургської Богоматері, 2024' } },
+        { path: "Luxembourg/luxembourg_canton/luxembourg_city/old_town/notre_dame_cathedral/005.jpg", title: { ru: 'Мозаика и боковой алтарь собора Люксембургской Богоматери, посвящены святому Иосифу – покровителю Церкви, 2024', de: 'Das Mosaik und der Seitenaltar der Liebfrauenkathedrale von Luxemburg sind dem Heiligen Josef gewidmet – dem Schutzpatron der Kirche, 2024', ua: 'Мозаїка та бічний вівтар собору Люксембурзької Богоматері присвячені святому Йосифу — покровителю Церкви, 2024' } },
+        { path: "Luxembourg/luxembourg_canton/luxembourg_city/old_town/notre_dame_cathedral/006.jpg", title: { ru: 'Собор Люксембургской Богоматери, 2024', de: 'Kathedrale Notre-Dame Luxemburg, 2024', ua: 'Собор Люксембургської Богоматері, 2024' } },
+        { path: "Luxembourg/luxembourg_canton/luxembourg_city/old_town/notre_dame_cathedral/007.jpg", title: { ru: 'Собор Люксембургской Богоматери, 2024', de: 'Kathedrale Notre-Dame Luxemburg, 2024', ua: 'Собор Люксембургської Богоматері, 2024' } },
+      ],
     }
   }
 

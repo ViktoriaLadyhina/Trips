@@ -30,6 +30,7 @@ const datas = [
                     title: "Практическая информация",
                     items: [
                         { bold: "Адрес: ", text: "An der Kirche 1-4, 58762 Altena, Германия." },
+                        { bold: "Конфессия:", text: "евангелическая церковь (протестантская)" },
                         { bold: "Вход:", text: "свободный, доступ во время богослужений и открытых часов." },
                         { bold: "Часы посещения:", text: "<br>Церковь обычно открыта во время богослужений (например, воскресные службы) и особых мероприятий. <br>В летний сезон (с Пасхи до осенних каникул) дополнительные часы: четверг–воскресенье 10:00–18:00 (частично до стеклянного вестибюля), а также четверг 10:00–12:00 с короткой программой (чтение, лекция, органная музыка). <br>Прочие часы и экскурсии возможны по запросу/по договорённости через приход." },
                         { text: "Церковь действует как приходский центр с регулярными службами, концертами и культурными событиями." },
@@ -85,6 +86,7 @@ const datas = [
                     title: "Практична інформація",
                     items: [
                         { bold: "Адреса: ", text: "An der Kirche 1-4, 58762 Altena, Німеччина." },
+                        { bold: "Конфесія:", text: "євангелічна церква (протестантська)" },
                         { bold: "Вхід:", text: "вільний, доступ під час богослужінь та відкритих годин." },
                         { bold: "Часи відвідування:", text: "<br>Церква зазвичай відкрита під час богослужінь (наприклад, недільні служби) та особливих заходів. <br>У літній сезон (з Великодня до осінніх канікул) додаткові години: четвер–неділя 10:00–18:00 (частково до скляного вестибюля), а також четвер 10:00–12:00 з короткою програмою (читання, лекція, органна музика). <br>Інші години та екскурсії можливі за запитом/за домовленістю через парафію." },
                         { text: "Церква діє як парафіяльний центр з регулярними службами, концертами та культурними подіями." },
@@ -140,6 +142,7 @@ const datas = [
                     title: "Praktische Informationen",
                     items: [
                         { bold: "Adresse: ", text: "An der Kirche 1-4, 58762 Altena, Deutschland." },
+                        { bold: "Konfession:", text: "evangelische Kirche" },
                         { bold: "Eintritt:", text: "frei, Zugang während der Gottesdienste und geöffneten Zeiten." },
                         { bold: "Öffnungszeiten:", text: "<br>Die Kirche ist in der Regel während der Gottesdienste (z. B. Sonntagsgottesdienste) und besonderen Veranstaltungen geöffnet. <br>In der Sommersaison (von Ostern bis zu den Herbstferien) zusätzliche Öffnungszeiten: Donnerstag–Sonntag 10:00–18:00 (teilweise bis zum Glashaus-Vestibül), sowie Donnerstag 10:00–12:00 mit kurzem Programm (Lesung, Vortrag, Orgelmusik). <br>Weitere Öffnungszeiten und Führungen nach Anfrage/Absprache über die Gemeinde möglich." },
                         { text: "Die Kirche dient als Gemeindzentrum mit regelmäßigen Gottesdiensten, Konzerten und kulturellen Veranstaltungen." },
@@ -202,7 +205,7 @@ const datas = [
                     title: "Практическая информация",
                     items: [
                         { bold: "Адрес: ", text: "Lindenstraße 41, 58762 Altena, Германия" },
-                        { bold: "Конфессия:", text: "Римско-католическая " }
+                        { bold: "Конфессия:", text: "римско-католическая церковь" },
                     ]
                 },
                 sub_objects: {
@@ -254,7 +257,7 @@ const datas = [
                     title: "Практична інформація",
                     items: [
                         { bold: "Адреса: ", text: "Lindenstraße 41, 58762 Altena, Німеччина" },
-                        { bold: "Конфесія:", text: "Римо-католицька" }
+                        { bold: "Конфесія:", text: "римсько-католицька церква" },
                     ]
                 },
                 sub_objects: {
@@ -306,7 +309,7 @@ const datas = [
                     title: "Praktische Informationen",
                     items: [
                         { bold: "Adresse: ", text: "Lindenstraße 41, 58762 Altena, Deutschland" },
-                        { bold: "Konfession:", text: "Römisch-katholisch" }
+                        { bold: "Konfession:", text: "römisch-katholische Kirche" },
                     ]
                 },
                 sub_objects: {
@@ -1052,7 +1055,7 @@ const datas = [
                     title: "Практическая информация",
                     items: [
                         { bold: "Адрес:", text: "Hauptstraße 64 42555 Velbert Германия" },
-                        { bold: "Конфессия:", text: "Протестантская – Евангелическая" }
+                        { bold: "Конфессия:", text: "евангелическая церковь (протестантская)" },
                     ]
                 },
                 relics: {
@@ -1106,7 +1109,7 @@ const datas = [
                     title: "Практична інформація",
                     items: [
                         { bold: "Адреса:", text: "Hauptstraße 64 42555 Velbert Німеччина" },
-                        { bold: "Конфесія:", text: "Протестантська – Євангелічна" }
+                        { bold: "Конфесія:", text: "євангелічна церква (протестантська)" },
                     ]
                 },
                 relics: {
@@ -1160,7 +1163,7 @@ const datas = [
                     title: "Praktische Informationen",
                     items: [
                         { bold: "Adresse:", text: "Hauptstraße 64 42555 Velbert Deutschland" },
-                        { bold: "Konfession:", text: "Evangelisch – Protestantisch" }
+                        { bold: "Konfession:", text: "evangelische Kirche" },
                     ]
                 },
                 relics: {
@@ -1518,6 +1521,7 @@ const datas = [
                     title: "Практическая информация",
                     items: [
                         { bold: "Адрес:", text: "Gereonsplatz 1, 50670 Köln, Германия" },
+                        { bold: "Конфессия:", text: "римско-католическая церковь" },
                         { bold: "Время работы: ", text: "ежедневно с 10:00 до 18:00 (может меняться в зависимости от мероприятий) " },
                         { bold: "Вход:", text: "свободный для посещения, платные экскурсии доступны" }
                     ]
@@ -1567,6 +1571,7 @@ const datas = [
                     title: "Практична інформація",
                     items: [
                         { bold: "Адреса:", text: "Gereonsplatz 1, 50670 Köln, Німеччина" },
+                        { bold: "Конфесія:", text: "римсько-католицька церква" },
                         { bold: "Час роботи: ", text: "щодня з 10:00 до 18:00 (може змінюватися залежно від заходів)" },
                         { bold: "Вхід:", text: "вільний для відвідування, платні екскурсії доступні" }
                     ]
@@ -1616,6 +1621,7 @@ const datas = [
                     title: "Praktische Informationen",
                     items: [
                         { bold: "Adresse:", text: "Gereonsplatz 1, 50670 Köln, Deutschland" },
+                        { bold: "Konfession:", text: "römisch-katholische Kirche" },
                         { bold: "Öffnungszeiten: ", text: "täglich von 10:00 bis 18:00 Uhr (kann je nach Veranstaltung variieren)" },
                         { bold: "Eintritt:", text: "frei zugänglich, kostenpflichtige Führungen verfügbar" }
                     ]
@@ -1677,7 +1683,7 @@ const datas = [
                     title: "Практическая информация",
                     items: [
                         { bold: "Адрес:", text: "Kunibertsklostergasse 2, 50668 Köln, Германия" },
-                        { bold: "Принадлежность:", text: "Римско-католическая базилика" }
+                        { bold: "Конфессия:", text: "римско-католическая церковь" },
                     ]
                 },
                 interestingFacts: {
@@ -1719,7 +1725,7 @@ const datas = [
                     title: "Практична інформація",
                     items: [
                         { bold: "Адреса:", text: "Kunibertsklostergasse 2, 50668 Köln, Німеччина" },
-                        { bold: "Належність:", text: "Римсько-католицька базиліка" }
+                        { bold: "Конфесія:", text: "римсько-католицька церква" },
                     ]
                 },
                 interestingFacts: {
@@ -1761,7 +1767,7 @@ const datas = [
                     title: "Praktische Informationen",
                     items: [
                         { bold: "Adresse:", text: "Kunibertsklostergasse 2, 50668 Köln, Deutschland" },
-                        { bold: "Zugehörigkeit:", text: "Römisch-katholische Basilika" }
+                        { bold: "Konfession:", text: "römisch-katholische Kirche" },
                     ]
                 },
                 interestingFacts: {

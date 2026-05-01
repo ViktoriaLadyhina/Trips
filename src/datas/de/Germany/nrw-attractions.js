@@ -68,7 +68,6 @@ const datas = [
         showMore: true, hiddenFromList: true,
         fotoCard: "Germany/nrw/koln/koln-city/koln-cathedral/001.jpg",
         location: "Köln, Deutschland",
-        address: [{ bold: "Adresse:", text: " Domkloster 4, 50667 Köln, Deutschland" }],
         officialSite: [
             { bold: 'Offizielle Webseite des Kölner Doms', link: 'https://www.koelner-dom.de/' }
         ],
@@ -98,6 +97,13 @@ const datas = [
                 { text: "Die beiden Türme mit einer Höhe von etwa <b>157,4 Metern</b> krönen die Fassade und bilden eine weltweit erkennbare Silhouette. Nach der Fertigstellung 1880 galt der Dom als höchstes Gebäude der Welt; diesen Titel behielt er bis 1884, als das Washington Monument fertiggestellt wurde. Heute bleibt der Kölner Dom der <b>höchste zweispitzige Dom</b> der Welt und eines der beeindruckendsten gotischen Bauwerke Europas – nur das Ulmer Münster mit 161,5 Metern ist höher." },
                 { text: "Das Interieur beeindruckt durch Leichtigkeit – es scheint, als habe der Stein seine Schwere verloren und löse sich im Licht der Glasfenster auf. Der Raum des Hauptschiffs wird von einem Strom goldenen Lichts durchdrungen, und die Glasfenster des 14.–19. Jahrhunderts erzählen von Glauben, Zeit und menschlicher Kunstfertigkeit." }
             ]
+        },
+        tickets_and_entry: {
+          title: "Praktische Informationen",
+          items: [
+            { bold: "Adresse:", text: "Domkloster 4, 50667 Köln, Deutschland" },
+            { bold: "Konfession:", text: "römisch-katholische Kirche" },
+          ]
         },
         relics: {
             title: "Reliquien und Schätze des Kölner Doms",
@@ -258,6 +264,13 @@ const datas = [
                 { text: "Heute dient die Kirche wieder als Pfarrkirche und ist gleichzeitig ein wichtiges historisches Denkmal. Sie gehört zu den zwölf großen romanischen Kirchen Kölns und gilt als einer der wichtigsten Punkte auf der touristischen Route durch die Altstadt, da sie geistliche Bedeutung, architektonischen Wert und jahrhundertealte Geschichte der Stadt vereint." }
             ]
         },
+        tickets_and_entry: {
+          title: "Praktische Informationen",
+          items: [
+            { bold: "Adresse:", text: "An Groß St. Martin 9–11, 50667 Köln, Deutschland" },
+            { bold: "Konfession:", text: "römisch-katholische Kirche" },
+          ]
+        },
         interestingFacts: {
             title: "Interessante Fakten",
             items: [
@@ -309,6 +322,7 @@ const datas = [
             title: "Praktische Informationen",
             items: [
                 { bold: "Adresse: ", text: "Kasinostraße 6, 50676 Köln, Altstadt" },
+                { bold: "Konfession:", text: "römisch-katholische Kirche" },
                 { bold: "Eintritt: ", text: "Kostenlos" },
                 { bold: "Öffnungszeiten: ", text: "Täglich von 9:00 bis 18:00 Uhr geöffnet (kann an Feiertagen variieren)" },
                 { bold: "Barrierefreiheit: ", text: "Teilweise für mobilitätseingeschränkte Besucher zugänglich. Die Krypta hat Stufen" },
@@ -371,7 +385,8 @@ const datas = [
         tickets_and_entry: {
             title: "Praktische Informationen",
             items: [
-                { bold: "Adresse:", text: "Marzellenstraße 30, 50668 Köln, Nordrhein-Westfalen, Deutschland." }
+                { bold: "Adresse:", text: "Marzellenstraße 30, 50668 Köln, Nordrhein-Westfalen, Deutschland." },
+                { bold: "Konfession:", text: "römisch-katholische Kirche" },
             ]
         },
         interestingFacts: {
@@ -2772,7 +2787,8 @@ const datas = [
         tickets_and_entry: {
             title: "Praktische Informationen",
             items: [
-                { bold: "Adresse:", text: "Kölner Str. 3, 50226 Frechen, Nordrhein‑Westfalen, Deutschland" }
+                { bold: "Adresse:", text: "Kölner Str. 3, 50226 Frechen, Nordrhein‑Westfalen, Deutschland" },
+                { bold: "Konfession:", text: "römisch-katholische Kirche" },
             ]
         },
         relics: {
@@ -2829,7 +2845,8 @@ const datas = [
         tickets_and_entry: {
             title: "Praktische Informationen",
             items: [
-                { bold: "Adresse:", text: "Hauptstraße 209, 50226 Frechen" }
+                { bold: "Adresse:", text: "Hauptstraße 209, 50226 Frechen" },
+                { bold: "Konfession:", text: "evangelische Kirche" },
             ]
         },
         relics: {
@@ -3296,6 +3313,13 @@ const datas = [
                 { text: "Die Kirche St. Peter in Heisterbach ist ein lebendiges geistliches Zentrum der Anlage und ergänzt die historischen Ruinen der Abtei zu einem ganzheitlichen Eindruck dieses einzigartigen Ortes." }
             ]
         },
+        tickets_and_entry: {
+            title: "Praktische Informationen",
+            items: [
+                { bold: "Adresse:", text: "Kloster Heisterbach, 53639 Königswinter, Deutschland" },
+                { bold: "Konfession:", text: "römisch-katholische Kirche" },
+            ]
+        },
         interestingFacts: {
             title: "Interessante Fakten",
             items: [
@@ -3454,6 +3478,7 @@ const datas = [
             title: "Praktische Informationen",
             items: [
                 { bold: "Adresse:", text: "Kirchplatz 11, 58511 Lüdenscheid, Deutschland" },
+                { bold: "Konfession:", text: "evangelische Kirche" },
                 { bold: "Zugang. ", text: "Die Kirche befindet sich im Zentrum der Altstadt und ist bequem zu Fuß von den Hauptplätzen und Haltestellen des öffentlichen Verkehrs erreichbar. Sie ist während der Öffnungszeiten der Gemeinde für Besucher offen." },
             ]
         },
@@ -3742,7 +3767,7 @@ const datas = [
             title: "Praktische Informationen",
             items: [
                 { bold: "Adresse:", text: "Bahnhofstraße 59, 58507 Lüdenscheid" },
-                { bold: "Zugehörigkeit:", text: "Evangelische Kirche von Westfalen" },
+                { bold: "Konfession:", text: "evangelische Kirche" },
                 { bold: "Regelmäßige Gottesdienste:", text: "<br>Sonntag um 10:00 Uhr (Christuskirche) <br>Monatliche Veranstaltungen und Konzerte – laut Plan auf der offiziellen Website der Gemeinde" },
                 { bold: "Erreichbarkeit:", text: "Stadtzentrum, bequemer Zugang zu Fuß und mit öffentlichen Verkehrsmitteln." }
             ]

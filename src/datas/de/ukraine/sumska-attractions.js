@@ -7,7 +7,6 @@ const datas = [
         countryPath: "ukraine", regionPath: "sumska", districtPath: "city", cityPath: "sumy",
         fotoCard: "Ukraine/sumska/sumy-city/spaso-preobrazhensky/004.jpg",
         location: "Sumy, Ukraine",
-        address: [{ bold: "Adresse:", text: " Sobornaya Str. 31, Sumy, Ukraine" }],
         officialSite: [
             { bold: 'Offizielle Website der Kathedrale', link: 'https://sumy-sob.church.ua/' }
         ],
@@ -32,6 +31,13 @@ const datas = [
                 { text: "Während des Bürgerkriegs wurden die Uhren beschädigt und blieben bis 1947 außer Betrieb. Damals wandte sich der Pfarrer an das Werk Frunse, wo der Chefingenieur und Uhrmacher I.P. Lischinsky den Mechanismus wiederherstellte." },
                 { text: "Interessant ist, dass diese Uhren als fortschrittlicher gelten als die Kreml-Uhren: Die Kreml-Glocken müssen zweimal täglich aufgezogen werden, die Uhr der Spaso-Preobraschenski-Kathedrale — einmal alle drei Tage." },
                 { bold: "Die Kathedrale heute", text: "Die Spaso-Preobraschenski-Kathedrale bleibt das spirituelle und architektonische Zentrum von Sumy. Sie vereint Gläubige, dient als Ort großer religiöser Feiertage und ist zugleich eine der wichtigsten touristischen Attraktionen der Stadt." },
+            ]
+        },
+        tickets_and_entry: {
+            title: "Praktische Informationen",
+            items: [
+                { bold: "Adresse:", text: "Sobornaya Str. 31, Sumy, Ukraine" },
+                { bold: "Konfession:", text: "orthodoxe Kirche" },
             ]
         },
         relics: {
