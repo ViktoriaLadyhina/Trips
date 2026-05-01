@@ -744,6 +744,194 @@ const datas = [
             }
         }
     },
+    {
+        id: "bremecker_hammer_luedenscheid",
+        type: ["museum"], rating: "local",
+        path: "bremecker_hammer_luedenscheid",
+        countryPath: "germany", regionPath: "nrw",
+        districtPath: "arnsberg", cityPath: "luedenscheid",
+        fotoCard: "Germany/nrw/arnsberg/Märkischer-Kreis/luedenscheid/bremecker_hammer/001.jpg",
+        coord: { lat: 51.20658, lng: 7.69282 },
+        translations: {
+            ru: {
+                name: "Bremecker Hammer – технико-исторический музей кузнечного дела",
+                location: "Люденшайд, район Brüninghausen, Германия",
+                officialSite: [
+                    { bold: "Официальный сайт", link: "https://museen.de/bremecker-hammer-luedenscheid.html" }
+                ],
+                short_description: "Технико-исторический музей кузнечного дела – музей в районе Люденшайд, расположенный на территории бывшей кузницы с водяным колесом. Комплекс демонстрирует традиционное кузнечное ремесло и промышленную историю региона. Сегодня здесь проходят демонстрации работы кузницы и тематические мероприятия, включая «дни кузнеца».",
+                full_description: {
+                    title: "Описание и история",
+                    items: [
+                        { bold: "Технико-исторический музей кузнечного дела (Bremecker Hammer)", text: "– это исторический кузнечный комплекс, превращённый в музей, где можно увидеть, как в прошлом работали металлургические и кузнечные мастерские. Центральным элементом является восстановленная кузница с действующим водяным колесом, которое приводило в движение оборудование." },
+                        { text: "Музей относится к технико-историческим объектам региона и показывает развитие ремесленного производства, связанного с обработкой металла. Посетители могут познакомиться с технологическими процессами, которые использовались до индустриализации, и увидеть работу кузнецов в реальном времени во время демонстрационных мероприятий." },
+                        { text: "Особый интерес представляют регулярные «дни кузнеца», когда мастера демонстрируют традиционные техники ковки, работу с металлом и старинные инструменты. Это делает место не только музейным, но и живым ремесленным пространством." },
+                        { bold: "История", text: "Технико-исторический музей кузнечного дела впервые документально упоминается в 1753 году, когда уже существовал как водяной кузнечный молот в долине реки Верзе. Он стал частью разветвлённой сети кузнечных предприятий региона Люденшайд, где активно развивалась обработка железа с использованием водной энергии. " },
+                        { text: "В XVIII–XIX веках объект функционировал как типичное для региона кузнечное производство (Hammerwerk), где вода приводила в движение тяжёлые кузнечные механизмы. Здесь производили железные изделия, а позже объект был модернизирован и включён в более широкие производственные процессы индустриального периода." },
+                        { text: "Конкретные имена первых владельцев и основателей не сохранились в надёжно подтверждённой исторической документации. Известно, что объект неоднократно переходил между местными промышленными предприятиями, связанными с металлургией и кузнечным производством, что было обычной практикой для таких комплексов в регионе." },
+                        { text: "С течением времени музей получил новые технические элементы, включая более современные приводы и оборудование, и продолжал использоваться вплоть до XX века. В 1972 году производство было окончательно остановлено, после чего объект был сохранён как индустриальное наследие. " },
+                        { text: "С 1980 года комплекс функционирует как музей, где демонстрируется развитие кузнечного ремесла – от традиционной ручной ковки до механизированных молотов. Сегодня это один из немногих сохранившихся действующих исторических объектов такого типа в регионе." }
+                    ]
+                },
+                tickets_and_entry: {
+                    title: "Практическая информация",
+                    items: [
+                        { bold: "Адрес:", text: "Brüninghauser Straße 95, 58513 Lüdenscheid, Deutschland" },
+                        { bold: "Билеты:", text: "Вход свободный или по групповой экскурсии (≈30 € за группу до 15 человек)" },
+                        { bold: "Часы работы:", text: "Сезонно (примерно май–октябрь), преимущественно по выходным и во время мероприятий" }
+                    ]
+                },
+                sub_objects: {
+                    title: "Экспозиции",
+                    items: [
+                        { bold: "Рабочая кузница с водяным приводом", text: "Центральная часть музея, где восстановленная кузница приводится в действие водой через колесо и механические передачи. Здесь наглядно показано, как энергия воды превращается в работу кузнечного оборудования." },
+                        { bold: "Исторические инструменты кузнечного дела", text: "Коллекция оригинальных инструментов кузнецов, включая молоты, клещи и наковальни. Экспонаты демонстрируют традиционные методы ручной обработки металла." },
+                        { bold: "Демонстрационные зоны ковки металла", text: "Специальные площадки, где во время мероприятий кузнецы показывают процесс ковки в реальном времени. Посетители могут наблюдать работу горнов и формирование изделий из металла." },
+                        { bold: "Индустриальное оборудование старого типа", text: "Сохранившиеся механизмы водяного привода, молоты и элементы ранней промышленной техники. Экспозиция иллюстрирует переход от ремесленного производства к индустриальному." },
+                        { bold: "Тематические выставки по истории ремесла региона", text: "Материалы, рассказывающие о развитии кузнечного дела в регионе Зауэрланд и роли водяных кузниц в местной промышленности. Отдельное внимание уделено традициям и технологиям обработки металла." },
+                        { bold: "Общая характеристика экспозиции", text: "Это не статические витрины, а частично живая экспозиция: многие элементы запускаются на демонстрациях, работают в дни мероприятий и показываются в действии, а не только как музейные объекты." }
+                    ]
+                },
+                interestingFacts: {
+                    title: "Интересные факты",
+                    isList: true,
+                    items: [
+                        { text: "Кузница работает с использованием водяного колеса – это редкий пример сохранённой технологии" },
+                        { text: "Во время демонстраций можно увидеть живую работу кузнецов" },
+                        { text: "Объект относится к промышленному наследию региона Зауэрланд" },
+                        { text: "Место часто используется для образовательных и ремесленных мероприятий" }
+                    ]
+                },
+                construction_period: "ок. 1753 (первое документальное упоминание)",
+                meta: {
+                    title: "Технико-исторический музей кузнечного дела – историческая кузница в Люденшайд",
+                    description: "Технико-исторический музей кузнечного дела (Bremecker Hammer) – технико-исторический музей в Люденшайд с действующей кузницей и водяным колесом. Демонстрации кузнечного ремесла и индустриального наследия.",
+                    ogTitle: "Технико-исторический музей кузнечного дела – историческая кузница с водяным колесом в Люденшайде",
+                    ogDescription: "Старинная кузница с водяным колесом в Люденшайд. Демонстрации работы кузнецов, индустриальное наследие и уникальная атмосфера ремесла.",
+                    keywords: "Bremecker Hammer, кузнечный музей Германия, Люденшайд, водяная кузница, Hammerwerk, индустриальное наследие, кузнечное ремесло, музей техники Германия, достопримечательность",
+                    ogImage: "https://our-travels.info/foto/Germany/nrw/arnsberg/Märkischer-Kreis/luedenscheid/bremecker_hammer/001.jpg"
+                }
+            },
+            ua: {
+                name: "Bremecker Hammer – техніко-історичний музей ковальського ремесла",
+                location: "Люденшайд, район Brüninghausen, Німеччина",
+                officialSite: [
+                    { bold: "Офіційний сайт", link: "https://museen.de/bremecker-hammer-luedenscheid.html" }
+                ],
+                short_description: "Техніко-історичний музей ковальського ремесла – музей у районі Люденшайд, розташований на території колишньої кузні з водяним колесом. Комплекс демонструє традиційне ковальське ремесло та промислову історію регіону. Сьогодні тут проходять демонстрації роботи кузні та тематичні заходи, включаючи «дні коваля».",
+                full_description: {
+                    title: "Опис та історія",
+                    items: [
+                        { bold: "Техніко-історичний музей ковальського ремесла (Bremecker Hammer)", text: "– це історичний ковальський комплекс, перетворений на музей, де можна побачити, як у минулому працювали металургійні та ковальські майстерні. Центральним елементом є відновлена кузня з діючим водяним колесом, яке приводило в рух обладнання." },
+                        { text: "Музей належить до техніко-історичних об’єктів регіону та показує розвиток ремісничого виробництва, пов’язаного з обробкою металу. Відвідувачі можуть ознайомитися з технологічними процесами, які використовувалися до індустріалізації, та побачити роботу ковалів у реальному часі під час демонстраційних заходів." },
+                        { text: "Особливий інтерес становлять регулярні «дні коваля», коли майстри демонструють традиційні техніки кування, роботу з металом і старовинні інструменти. Це робить місце не лише музейним, а й живим ремісничим простором." },
+                        { bold: "Історія", text: "Техніко-історичний музей ковальського ремесла вперше документально згадується у 1753 році, коли вже існував як водяний ковальський молот у долині річки Верзе. Він став частиною розгалуженої мережі ковальських підприємств регіону Люденшайд, де активно розвивалася обробка заліза з використанням водної енергії." },
+                        { text: "У XVIII–XIX століттях об’єкт функціонував як типовий для регіону ковальський виробничий комплекс (Hammerwerk), де вода приводила в рух важкі ковальські механізми. Тут виготовляли залізні вироби, а пізніше об’єкт був модернізований і включений у ширші виробничі процеси індустріального періоду." },
+                        { text: "Конкретні імена перших власників та засновників не збереглися в надійно підтверджених історичних джерелах. Відомо, що об’єкт неодноразово переходив між місцевими промисловими підприємствами, пов’язаними з металургією та ковальським виробництвом, що було типовою практикою для таких комплексів у регіоні." },
+                        { text: "З часом музей отримав нові технічні елементи, включаючи сучасніші приводи та обладнання, і продовжував використовуватися до XX століття. У 1972 році виробництво було остаточно зупинено, після чого об’єкт був збережений як індустріальна спадщина." },
+                        { text: "З 1980 року комплекс функціонує як музей, де демонструється розвиток ковальського ремесла – від традиційного ручного кування до механізованих молотів. Сьогодні це один із небагатьох збережених діючих історичних об’єктів такого типу в регіоні." }
+                    ]
+                },
+                tickets_and_entry: {
+                    title: "Практична інформація",
+                    items: [
+                        { bold: "Адреса:", text: "Brüninghauser Straße 95, 58513 Lüdenscheid, Німеччина" },
+                        { bold: "Квитки:", text: "Вхід безкоштовний або за груповою екскурсією (≈30 € за групу до 15 осіб)" },
+                        { bold: "Години роботи:", text: "Сезонно (приблизно травень–жовтень), переважно у вихідні та під час заходів" }
+                    ]
+                },
+                sub_objects: {
+                    title: "Експозиції",
+                    items: [
+                        { bold: "Робоча кузня з водяним приводом", text: "Центральна частина музею, де відновлена кузня приводиться в дію водою через колесо та механічні передачі. Тут наочно показано, як енергія води перетворюється на роботу ковальського обладнання." },
+                        { bold: "Історичні інструменти ковальського ремесла", text: "Колекція оригінальних інструментів ковалів, включаючи молоти, кліщі та ковадла. Експонати демонструють традиційні методи ручної обробки металу." },
+                        { bold: "Демонстраційні зони кування металу", text: "Спеціальні майданчики, де під час заходів ковалі показують процес кування в реальному часі. Відвідувачі можуть спостерігати роботу горнів і формування металевих виробів." },
+                        { bold: "Індустріальне обладнання старого типу", text: "Збережені механізми водяного приводу, молоти та елементи ранньої промислової техніки. Експозиція ілюструє перехід від ремісничого виробництва до індустріального." },
+                        { bold: "Тематичні виставки з історії ремесла регіону", text: "Матеріали, що розповідають про розвиток ковальського ремесла в регіоні Зауерланд та роль водяних кузень у місцевій промисловості. Окрема увага приділена традиціям і технологіям обробки металу." },
+                        { bold: "Загальна характеристика експозиції", text: "Це не статичні вітрини, а частково жива експозиція: багато елементів запускаються під час демонстрацій, працюють у дні заходів і показуються в дії, а не лише як музейні об’єкти." }
+                    ]
+                },
+                interestingFacts: {
+                    title: "Цікаві факти",
+                    isList: true,
+                    items: [
+                        { text: "Кузня працює з використанням водяного колеса – це рідкісний приклад збереженої технології" },
+                        { text: "Під час демонстрацій можна побачити живу роботу ковалів" },
+                        { text: "Об’єкт належить до промислової спадщини регіону Зауерланд" },
+                        { text: "Місце часто використовується для освітніх і ремісничих заходів" }
+                    ]
+                },
+                construction_period: "бл. 1753 (перша документальна згадка)",
+                meta: {
+                    title: "Техніко-історичний музей ковальського ремесла – історична кузня в Люденшайді",
+                    description: "Техніко-історичний музей ковальського ремесла (Bremecker Hammer) – музей у Люденшайді з діючою кузнею та водяним колесом. Демонстрації ковальського ремесла та індустріальної спадщини.",
+                    ogTitle: "Техніко-історичний музей ковальського ремесла – історична кузня з водяним колесом у Люденшайді",
+                    ogDescription: "Стара кузня з водяним колесом у Люденшайді. Демонстрації роботи ковалів, індустріальна спадщина та унікальна атмосфера ремесла.",
+                    keywords: "Bremecker Hammer, музей ковальського ремесла, кузня з водяним колесом, техніко-історичний музей, Люденшайд, Німеччина, індустріальна спадщина, водяна кузня, Hammerwerk, ковальське ремесло, історія металургії, стара кузня, діюча кузня, демонстрація кування, ковальські інструменти, промислова історія Зауерланд, музей техніки, водяний привід",
+                    ogImage: "https://our-travels.info/foto/Germany/nrw/arnsberg/Märkischer-Kreis/luedenscheid/bremecker_hammer/001.jpg"
+                }
+            },
+            de: {
+                name: "Bremecker Hammer",
+                location: "Lüdenscheid, Stadtteil Brüninghausen, Deutschland",
+                officialSite: [
+                    { bold: "Offizielle Website", link: "https://museen.de/bremecker-hammer-luedenscheid.html" }
+                ],
+                short_description: "Das technikgeschichtliche Schmiedemuseum ist ein Museum im Stadtteil Lüdenscheid, das auf dem Gelände einer ehemaligen Schmiede mit Wasserrad liegt. Die Anlage zeigt traditionelles Schmiedehandwerk und die Industriegeschichte der Region. Heute finden hier Schmiedevorführungen und thematische Veranstaltungen statt, darunter die „Schmiedetage“.",
+                full_description: {
+                    title: "Beschreibung und Geschichte",
+                    items: [
+                        { bold: "Bremecker Hammer", text: "ist ein historischer Schmiede-Komplex, der zu einem Museum umgewandelt wurde und zeigt, wie Metall- und Schmiedewerkstätten früher gearbeitet haben. Zentrales Element ist die rekonstruierte Schmiede mit einem funktionierenden Wasserrad, das die Anlagen antrieb." },
+                        { text: "Das Museum gehört zu den technikgeschichtlichen Objekten der Region und zeigt die Entwicklung der handwerklichen Metallverarbeitung. Besucher können technologische Prozesse der vorindustriellen Zeit kennenlernen und Schmiede bei Vorführungen in Aktion erleben." },
+                        { text: "Besonders interessant sind die regelmäßigen Schmiedetage, bei denen traditionelle Schmiedetechniken, Werkzeuge und Arbeitsprozesse demonstriert werden. Dadurch ist das Museum nicht nur ein Ausstellungsort, sondern ein lebendiger Handwerksraum." },
+                        { bold: "Geschichte", text: "Das technikgeschichtliche Schmiedemuseum wird erstmals im Jahr 1753 urkundlich erwähnt, als es bereits als wasserbetriebener Schmiedehammer im Tal der Verse existierte. Es war Teil eines weit verzweigten Netzwerks von Hammerwerken in der Region Lüdenscheid, in der die Eisenverarbeitung mit Wasserkraft eine wichtige Rolle spielte." },
+                        { text: "Im 18. und 19. Jahrhundert funktionierte die Anlage als typisches regionales Hammerwerk, in dem Wasser schwere Schmiedemechanismen antrieb. Hier wurden Eisenprodukte hergestellt, später wurde die Anlage modernisiert und in industrielle Produktionsprozesse eingebunden." },
+                        { text: "Die Namen der ersten Eigentümer und Gründer sind in den gesicherten historischen Quellen nicht eindeutig überliefert. Bekannt ist, dass die Anlage mehrfach zwischen lokalen metallverarbeitenden Betrieben wechselte." },
+                        { text: "Im Laufe der Zeit wurde die Anlage technisch erweitert und bis ins 20. Jahrhundert genutzt. Im Jahr 1972 wurde die Produktion eingestellt und das Objekt als industrielles Kulturerbe erhalten." },
+                        { text: "Seit 1980 dient der Komplex als Museum, das die Entwicklung des Schmiedehandwerks von der Handarbeit bis zur mechanisierten Produktion zeigt." }
+                    ]
+                },
+                tickets_and_entry: {
+                    title: "Praktische Informationen",
+                    items: [
+                        { bold: "Adresse:", text: "Brüninghauser Straße 95, 58513 Lüdenscheid, Deutschland" },
+                        { bold: "Eintritt:", text: "Freier Eintritt oder Gruppenführung (ca. 30 € pro Gruppe bis 15 Personen)" },
+                        { bold: "Öffnungszeiten:", text: "Saisonal (ca. Mai–Oktober), meist an Wochenenden und bei Veranstaltungen" }
+                    ]
+                },
+                sub_objects: {
+                    title: "Ausstellungen",
+                    items: [
+                        { bold: "Funktionsfähige Schmiede mit Wasserrad", text: "Zentraler Bereich des Museums, in dem die rekonstruierte Schmiede durch ein Wasserrad und mechanische Übertragungssysteme betrieben wird. Hier wird die Umwandlung von Wasserkraft in Arbeitsenergie anschaulich gezeigt." },
+                        { bold: "Historische Schmiedewerkzeuge", text: "Sammlung originaler Werkzeuge wie Hämmer, Zangen und Ambosse, die traditionelle Schmiedetechniken dokumentieren." },
+                        { bold: "Schmiedevorführungsbereiche", text: "Bereiche, in denen Schmiede während Veranstaltungen den Schmiedeprozess in Echtzeit demonstrieren." },
+                        { bold: "Alte industrielle Ausrüstung", text: "Erhaltene Wasserräder, Antriebssysteme und mechanische Schmiedetechnik aus der frühen Industriezeit." },
+                        { bold: "Thematische Ausstellungen zur regionalen Handwerksgeschichte", text: "Materialien zur Entwicklung des Schmiedehandwerks im Sauerland und zur Bedeutung der Wasserschmieden in der Region." },
+                        { bold: "Allgemeine Charakteristik der Ausstellung", text: "Keine statischen Vitrinen, sondern teilweise lebendige Ausstellung: Viele Elemente werden bei Vorführungen betrieben und in Aktion gezeigt." }
+                    ]
+                },
+                interestingFacts: {
+                    title: "Interessante Fakten",
+                    isList: true,
+                    items: [
+                        { text: "Die Schmiede wird mit einem Wasserrad betrieben – ein selten erhaltenes historisches System" },
+                        { text: "Bei Vorführungen kann man Schmiede bei der Arbeit beobachten" },
+                        { text: "Das Objekt gehört zum industriellen Erbe des Sauerlands" },
+                        { text: "Der Ort wird häufig für Bildungs- und Handwerksveranstaltungen genutzt" }
+                    ]
+                },
+                construction_period: "ca. 1753 (erste urkundliche Erwähnung)",
+                meta: {
+                    title: "Bremecker Hammer – historische Schmiede in Lüdenscheid",
+                    description: "Bremecker Hammer in Lüdenscheid zeigt eine funktionierende historische Schmiede mit Wasserrad und vermittelt industrielle und handwerkliche Geschichte.",
+                    ogTitle: "Bremecker Hammer – historische Wasserschmiede in Lüdenscheid",
+                    ogDescription: "Historische Schmiede mit Wasserrad in Lüdenscheid. Schmiedevorführungen, industrielle Geschichte und authentisches Handwerkserlebnis.",
+                    keywords: "Bremecker Hammer, Schmiedemuseum Deutschland, Lüdenscheid, Wasserschmiede, Hammerwerk, Industriekultur, Schmiedehandwerk, Technikmuseum Deutschland, Sehenswürdigkeit",
+                    ogImage: "https://our-travels.info/foto/Germany/nrw/arnsberg/Märkischer-Kreis/luedenscheid/bremecker_hammer/001.jpg"
+                }
+            }
+        }
+    },
 
     //iserlohn
     {

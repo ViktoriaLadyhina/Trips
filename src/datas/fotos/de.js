@@ -627,6 +627,9 @@ export const Fotos = {
       schloss_oedenthal_luedenscheid: [
         { path: "Germany/nrw/arnsberg/Märkischer-Kreis/luedenscheid/schloss_oedenthal/001.jpg", title: { ru: "Усадьба Оеденталь (фото взято с интернета)", ua: "Садиба Оеденталь (фото взято з Інтернету)", de: "Schloss Oedenthal (Foto aus dem Internet)" } },
         { path: "Germany/nrw/arnsberg/Märkischer-Kreis/luedenscheid/schloss_oedenthal/002.jpg", title: { ru: "Усадьба Оеденталь (фото взято с интернета)", ua: "Садиба Оеденталь (фото взято з Інтернету)", de: "Schloss Oedenthal (Foto aus dem Internet)" } },
+      ],
+      bremecker_hammer_luedenscheid: [
+        { path: "Germany/nrw/arnsberg/Märkischer-Kreis/luedenscheid/bremecker_hammer/001.jpg", title: { ru: "Bremecker Hammer – технико-исторический музей кузнечного дела (фото взято с интернета)", ua: "Bremecker Hammer – техніко-історичний музей ковальського ремесла (фото взято з Інтернету)", de: "Bremecker Hammer (Foto aus dem Internet)" } },
       ]
     },
     iserlohn: {
