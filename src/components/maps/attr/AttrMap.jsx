@@ -14,6 +14,21 @@ L.Icon.Default.mergeOptions({
   shadowUrl: 'https://unpkg.com/leaflet@1.9.4/dist/images/marker-shadow.png',
 });
 
+const defaultIcon = new L.Icon({
+  iconUrl: 'https://unpkg.com/leaflet@1.9.4/dist/images/marker-icon.png',
+  iconRetinaUrl: 'https://unpkg.com/leaflet@1.9.4/dist/images/marker-icon-2x.png',
+  shadowUrl: 'https://unpkg.com/leaflet@1.9.4/dist/images/marker-shadow.png',
+  iconSize: [25, 41],
+  iconAnchor: [12, 41],
+});
+
+const lostIcon = new L.Icon({
+  iconUrl: 'https://raw.githubusercontent.com/pointhi/leaflet-color-markers/master/img/marker-icon-grey.png',
+  shadowUrl: 'https://unpkg.com/leaflet@1.9.4/dist/images/marker-shadow.png',
+  iconSize: [25, 41],
+  iconAnchor: [12, 41],
+});
+
 const moreBtnText = { ru: "Подробнее", de: "Mehr erfahren", ua: "Детальніше" };
 
 const AttrMap = ({ city, attractions, lang }) => {
@@ -42,6 +57,14 @@ const AttrMap = ({ city, attractions, lang }) => {
   return null;
 };
 
+const getIconByStatus = (attr) => {
+  const status = attr.status ?? 'active';
+
+  if (status === 'lost') return lostIcon;
+
+  return defaultIcon;
+};
+
 const points = attractions.filter(attr => attr.coord).map(attr => [attr.coord.lat, attr.coord.lng]);
 
 // запасной центр, если нет достопримечательностей
@@ -65,6 +88,7 @@ const fallbackCenter = city?.coord
           <Marker
             key={attr.id}
             position={[attr.coord.lat, attr.coord.lng]}
+            icon={getIconByStatus(attr)}
             eventHandlers={
               !isTouchDevice
                 ? {

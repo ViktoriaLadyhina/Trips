@@ -8,7 +8,14 @@
   --color-sidebar-hover: #e6c89a;
 
   /* Цвет фона для карточек */
-  --color-cart-bg:  #f7f2e8;
+  --color-cart-bg:  #f4ede3;
+
+    /* цвета фона для карточек при статусе */  
+  --color-status-lost-bg: #dad6d6;
+  --color-status-partial-bg: #efe6d8;
+
+  /* цвета фона для фильтров */  
+  --color-filter-bg: #ffffff;
 
 
   /* Цвет основного текста */
@@ -34,9 +41,12 @@
 /* ===== Цвета для темной темы ===== */
 [data-theme='dark'] {
   --color-body-bg: #121212;
-  --color-cart-bg: #1e1e1e;
   --color-sidebar-bg: #1a1a1a;
   --color-sidebar-hover: #151515;
+  --color-cart-bg: #1e1e1e;
+  --color-status-lost-bg: #252525;
+  --color-status-partial-bg: #2a2620;
+    --color-filter-bg: #1a1a1a;
 
   --color-text: #eee;
   --color-primary: #4CAF50;
@@ -67,7 +77,7 @@
   @include heading(28px, --color-heading-h3);
 }
 
-@mixin text($size: 16px, $color-var: --color-text, $weight: 400, $line-height: 1.5) {
+@mixin text($size: 16px, $color-var: --color-text, $weight: 400, $line-height: 24px) {
   font-size: $size;
   color: var(#{$color-var});
   font-weight: $weight;
@@ -76,21 +86,13 @@
 }
 
 @mixin body-text() {
-  @include text(1em, --color-text, 400, 1.5);
+  @include text(16px, --color-text, 400, 24px);
 }
 
 @mixin small-text() {
-  @include text(14px, --color-text, 400, 1.4);
-}
-
-@mixin medium-text() {
-  @include text(18px, --color-text, 500, 1.6);
-}
-
-@mixin large-text() {
-  @include text(20px, --color-text, 600, 1.6);
+  @include text(14px, --color-text, 400, 20px);
 }
 
 @mixin bold-text() {
-  @include text(1em, --color-text, 700, 1.5);
+  @include text(16px, --color-text, 700, 24px);
 }

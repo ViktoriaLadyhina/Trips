@@ -23,6 +23,8 @@ const BASE_PHOTO_URL = import.meta.env.VITE_BASE_PHOTO_URL;
 const construction_periodTitle = { ru: "Период строительства", ua: "Період будівництва", de: "Bauzeit" }
 const founderTitle = { ru: "Основатель", ua: "Засновник", de: "Gründer" }
 const architects = { ru: "Архитекторы", ua: "Архітектори", de: "Architekten" };
+const statusTitle = { ru: "Состояние", ua: "Стан", de: "Zustand" };
+const noteLabel = { partial: { ru: "Частично сохранилось", ua: "Частково збережено", de: "Teilweise erhalten" }, lost: { ru: "Утрачено", ua: "Втрачено", de: "Verloren" } };
 
 const Attraction = () => {
     const { lang } = useSelector((state) => state.language);
@@ -34,14 +36,15 @@ const Attraction = () => {
     const photos = photosByCountry[countryPath];
     const attractionPhotos = photos?.[regionPath]?.[cityPath]?.[attractionsPath] || [];
 
-    const [filters, setFilters] = useState({
+    const [subFilters, setSubFilters] = useState({
         type: 'all',
-        unesco: 'all',
         rating: 'all',
+        unesco: 'all',
         sort: 'rating',
+        status: ['active', 'partial'],
     });
 
-const attraction = attractions.find(a => a.path === attractionsPath);
+    const attraction = attractions.find(a => a.path === attractionsPath);
 
     <Helmet>
         <title>{attraction?.name}</title>
@@ -60,64 +63,51 @@ const attraction = attractions.find(a => a.path === attractionsPath);
     if (!attractions) return <p>Loading...</p>;
     if (!attraction) return <p>Attraction not found</p>;
 
-    
 
     const subObjects = attraction.subObjects || [];
     const subObjects2 = attraction.subObjects2 || [];
 
-    const filteredAttractions = attractions?.filter(attr => {
+    // фильтрация саб-объектов
+    const applyFilters = (list) => {
+    return list
+      .map(id => attractions.find(a => a.id === id))
+      .filter(Boolean)
+      .filter(attr => {
+        if (subFilters.type !== 'all' && !attr.type?.includes(subFilters.type)) return false;
 
-        let allTypes = Array.isArray(attr.type) ? [...attr.type] : [];
+        if (subFilters.rating !== 'all' && attr.rating !== subFilters.rating) return false;
 
-        if (attr.subObjects?.length > 0) {
-            attr.subObjects.forEach(subId => {
-                const subAttr = attractions.find(a => a.id === subId);
-                if (subAttr) allTypes.push(...subAttr.type);
-            });
-        }
-        if (attr.subObjects2?.length > 0) {
-            attr.subObjects2.forEach(subId => {
-                const subAttr = attractions.find(a => a.id === subId);
-                if (subAttr) allTypes.push(...subAttr.type);
-            });
-        }
+        if (subFilters.unesco === 'yes' && !attr.unesco_status?.included) return false;
+        if (subFilters.unesco === 'no' && attr.unesco_status?.included) return false;
 
-        if (filters.type !== 'all' && !allTypes.includes(filters.type)) { return false; }
-        if (filters.rating === 'top' && attr.rating !== 'top') return false;
-        if (filters.rating === 'popular' && attr.rating !== 'popular') return false;
-        if (filters.rating === 'local' && attr.rating !== 'local') return false;
-        if (filters.unesco === 'yes' && !attr.unesco_status?.included) return false;
-        if (filters.unesco === 'no' && attr.unesco_status?.included) return false;
+        const status = attr.status ?? 'active';
+        if (!subFilters.status.includes(status)) return false;
 
         return true;
-    }) || [];
+      });
+  };
 
-    // --- Сортировка ---
-    const sortByFilters = (a, b) => {
-        if (filters.sort === 'name-asc') return (a?.name || '').localeCompare(b?.name || '');
-        if (filters.sort === 'name-desc') return (b?.name || '').localeCompare(a?.name || '');
-        const ratingOrder = { top: 3, popular: 2, local: 1 };
-        const aRating = ratingOrder[a.rating] || 0;
-        const bRating = ratingOrder[b.rating] || 0;
-        if (bRating !== aRating) return bRating - aRating;
-        return (
-            (a.sortIndex ?? 0) - (b.sortIndex ?? 0)
-        ) || (a.name || '').localeCompare(b.name || '');
-    };
+  const filteredSubObjects = applyFilters(subObjects);
+  const filteredSubObjects2 = applyFilters(subObjects2);
 
-    const sortedAttractions = [...filteredAttractions].sort(sortByFilters);
+  // --- сортировка ---
+  const sortFn = (a, b) => {
+    if (subFilters.sort === 'name-asc')
+      return (a?.name || '').localeCompare(b?.name || '');
 
-    // --- Саб-объекты ---
-    const sortedSubObjects = subObjects
-        .map(subId => sortedAttractions.find(a => a.id === subId))
-        .filter(Boolean)
-        .sort(sortByFilters);
+    if (subFilters.sort === 'name-desc')
+      return (b?.name || '').localeCompare(a?.name || '');
 
-    const sortedSubObjects2 = subObjects2
-        .map(subId => sortedAttractions.find(a => a.id === subId))
-        .filter(Boolean)
-        .sort(sortByFilters);
+    const ratingOrder = { top: 3, popular: 2, local: 1 };
 
+    const diff =
+      (ratingOrder[b.rating] || 0) - (ratingOrder[a.rating] || 0);
+
+    return diff || (a.name || '').localeCompare(b.name || '');
+  };
+
+  const sortedSubObjects = [...filteredSubObjects].sort(sortFn);
+  const sortedSubObjects2 = [...filteredSubObjects2].sort(sortFn);
 
     // Хлебные крошки
     const crumbs = [
@@ -165,6 +155,7 @@ const attraction = attractions.find(a => a.path === attractionsPath);
                     <meta property="og:image" content={meta?.ogImage} />
                 </Helmet>
             )}
+
             <BreadCrumbs crumbs={crumbs} />
 
             <div className='attraction__title'>{attraction.name && (attraction.name)}</div>
@@ -201,6 +192,12 @@ const attraction = attractions.find(a => a.path === attractionsPath);
                         <span className='attraction__desc-architects-text'>{attraction.architects}</span>
                     </div>
                     )}
+                {attraction.status &&
+                    (<div className='attraction__desc-architects'>
+                        <span className='attraction__desc-architects-bold'>{statusTitle[lang]}: </span>
+                        <span className='attraction__desc-architects-text'>{noteLabel[attraction.status][lang]}, {attraction.note}</span>
+                    </div>
+                    )}
 
                 {attraction.tickets_and_entry && (<InfoBlock data={attraction.tickets_and_entry} className="attraction__desc-tickets_and_entry" />)}
 
@@ -215,7 +212,7 @@ const attraction = attractions.find(a => a.path === attractionsPath);
                 {subObjects.length > 0 && (
                     <section className="attraction-sub">
                         <h3>{attraction.subObjects_title || (lang === "ru" ? "Достопримечательности" : lang === "de" ? "Sehenswürdigkeiten" : "Пам'ятки")}</h3>
-                        {subObjects.length > 5 && <AttractionsFilters lang={lang} filters={filters} setFilters={setFilters} />}
+                        {subObjects.length > 5 && <AttractionsFilters lang={lang} filters={subFilters} setFilters={setSubFilters} />}
 
                         {sortedSubObjects.map(attr => (
                             <AttractionCardSub key={attr.id} attr={attr} lang={lang} />
@@ -225,7 +222,7 @@ const attraction = attractions.find(a => a.path === attractionsPath);
                 {subObjects2.length > 0 && (
                     <section className="attraction-sub">
                         <h3>{attraction.subObjects_title2 || (lang === "ru" ? "Достопримечательности" : lang === "de" ? "Sehenswürdigkeiten" : "Пам'ятки")}</h3>
-                        {subObjects2.length > 5 && <AttractionsFilters lang={lang} filters={filters} setFilters={setFilters} />}
+                        {subObjects2.length > 5 && <AttractionsFilters lang={lang} filters={subFilters} setFilters={setSubFilters} />}
 
                         {sortedSubObjects2.map(attr => (
                             <AttractionCardSub key={attr.id} attr={attr} lang={lang} />

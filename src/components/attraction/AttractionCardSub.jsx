@@ -7,11 +7,15 @@ const BASE_PHOTO_URL = import.meta.env.VITE_BASE_PHOTO_URL;
 const more = { ru: "Подробнее", ua: "Докладніше", de: "Weitere Details" };
 const ratingLabel = { ru: "Рейтинг", ua: "Рейтинг", de: "Bewertung" };
 const topOptionLabel = { top: { ru: "Топовый", ua: "Топовий", de: "Top" }, popular: { ru: "Популярный", ua: "Популярний", de: "Beliebt" }, local: { ru: "Локальный", ua: "Локальний", de: "Lokal" } };
+const noteLabel = { partial: { ru: "Частично сохранилось", ua: "Частково збережено", de: "Teilweise erhalten" }, lost: { ru: "Утрачено", ua: "Втрачено", de: "Verloren" } };
+
 
 const AttractionCardSub = ({ attr, lang }) => {
 
+    const status = attr.status ?? 'active';
+
     return (
-        <div className='attrCard'>
+        <div className={`attrCard attrCard--${status}`}>
             <div className='attrCard__title'>{attr.name}</div>
 
             <div className='attrCard__rating'>
@@ -29,7 +33,8 @@ const AttractionCardSub = ({ attr, lang }) => {
                         <img src={`${BASE_PHOTO_URL}${attr.fotoCard}`} alt={attr.name} />
                     </div>
                 )}
-                <div className='attrCard__desc-info'>
+                <div
+                    className='attrCard__desc-info'>
                     {attr.short_description && (
                         <div className='attrCard__desc-info-text'>{attr.short_description}</div>
                     )}
@@ -48,6 +53,11 @@ const AttractionCardSub = ({ attr, lang }) => {
                             </ul>
                         </div>
                     )}
+                    {attr.note && (
+                        <span className='attrCard__desc-info-text'>
+                            <strong>{noteLabel[attr.status][lang]}:</strong> {attr.note}
+                    </span>
+                    )}
                     {attr.unesco_status?.included && (
                         <span className='attrCard__desc-info-text'>
                             🌍UNESCO {attr.unesco_status.year}
@@ -58,7 +68,7 @@ const AttractionCardSub = ({ attr, lang }) => {
                             <Link to={`/${attr.countryPath}/${attr.regionPath}/${attr.districtPath}/${attr.cityPath}/attractions/${attr.slug || attr.path}`}>
                                 {more[lang]}
                             </Link>
-                        </div>
+                    </div>
                     )}
                 </div>
             </div>

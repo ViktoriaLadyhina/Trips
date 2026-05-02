@@ -2151,7 +2151,8 @@ const datas = [
         translations: {
             ru: {
                 name: "Форт I (внутреннее крепостное кольцо)", sortIndex: 1,
-                short_description: "Форт I (внутреннее крепостное кольцо) – один из фортов внутреннего кольца прусской крепостной системы Кёльна. Состояние: частично сохранившееся / адаптированное.",
+                short_description: "Форт I (внутреннее крепостное кольцо) – один из фортов внутреннего кольца прусской крепостной системы Кёльна.",
+                status: "partial", note: "используется как общественный парк с сохранившимися элементами укреплений, включая редут, капониры и оборонительные валы.",
                 full_description: {
                     title: "Описание и история",
                     items: [
@@ -2162,7 +2163,6 @@ const datas = [
                         { text: "В 1911 году форт был выведен из состава военных укреплений, так как развитие артиллерии сделало его оборонительную функцию устаревшей." },
                         { text: "С начала XX века территория постепенно получила гражданское назначение: здесь размещались университетская столовая, военный мемориал, зенитные установки во время Второй мировой войны, налоговая служба, городское садоводство и позже молодёжный центр." },
                         { text: "Сегодня территория входит в состав зелёного пояса Кёльна и территории парка Friedenspark и используется как общественный парк с сохранившимися элементами укреплений, включая редут, капониры и оборонительные валы." },
-                        { bold: "Состояние:", text: " частично сохранившееся / адаптированное." },
                         { bold: "Где:", text: " район Neustadt-Süd, Friedenspark (южная часть Кёльна)." }
                     ]
                 },
@@ -2178,7 +2178,8 @@ const datas = [
             },
             ua: {
                 name: "Форт I (внутрішнє фортифікаційне кільце)", sortIndex: 1,
-                short_description: "Форт I (внутрішнє фортифікаційне кільце) – один із фортів внутрішнього кільця прусської фортифікаційної системи Кельна. Стан: частково збережений / адаптований.",
+                short_description: "Форт I (внутрішнє фортифікаційне кільце) – один із фортів внутрішнього кільця прусської фортифікаційної системи Кельна. ",
+                status: "partial", note: "використовується як громадський парк із збереженими елементами укріплень, включаючи редут, капоніри та оборонні вали.",
                 full_description: {
                     title: "Опис та історія",
                     items: [
@@ -2189,7 +2190,6 @@ const datas = [
                         { text: "У 1911 році форт був виведений зі складу військових укріплень, оскільки розвиток артилерії зробив його оборонну функцію застарілою." },
                         { text: "З початку XX століття територія поступово отримала цивільне призначення: тут розміщувалися університетська їдальня, військовий меморіал, зенітні установки під час Другої світової війни, податкова служба, міське садівництво та пізніше молодіжний центр." },
                         { text: "Сьогодні територія входить до складу зеленого поясу Кельна та території парку Friedenspark і використовується як громадський парк із збереженими елементами укріплень, включаючи редут, капоніри та оборонні вали." },
-                        { bold: "Стан:", text: " частково збережений / адаптований." },
                         { bold: "Де:", text: " район Neustadt-Süd, Friedenspark (південна частина Кельна)." }
                     ]
                 },
@@ -2205,7 +2205,8 @@ const datas = [
             },
             de: {
                 name: "Fort I (innerer Festungsring)", sortIndex: 1,
-                short_description: "Fort I (innerer Festungsring) – eines der Forts des inneren Rings des preußischen Festungssystems von Köln. Zustand: teilweise erhalten / umgenutzt.",
+                short_description: "Fort I (innerer Festungsring) – eines der Forts des inneren Rings des preußischen Festungssystems von Köln. ",
+                status: "partial", note: "wird als öffentlicher Park genutzt, mit erhaltenen Elementen der Befestigungsanlagen, darunter Redoute, Kaponniere und Verteidigungswälle.",
                 full_description: {
                     title: "Beschreibung und Geschichte",
                     items: [
@@ -2216,7 +2217,6 @@ const datas = [
                         { text: "Im Jahr 1911 wurde das Fort aus dem militärischen Verband entlassen, da die Entwicklung der Artillerie seine Verteidigungsfunktion überholt hatte." },
                         { text: "Seit Beginn des 20. Jahrhunderts erhielt das Gelände schrittweise eine zivile Nutzung: Es befanden sich dort unter anderem eine Mensa, ein Kriegerdenkmal, Flugabwehrstellungen während des Zweiten Weltkriegs, eine Steuerbehörde, eine städtische Gärtnerei und später ein Jugendzentrum." },
                         { text: "Heute gehört das Gelände zum Kölner Grüngürtel sowie zum Friedenspark und wird als öffentlicher Park genutzt, in dem Teile der Befestigungsanlagen wie das Reduit, Kaponniere und Wälle erhalten geblieben sind." },
-                        { bold: "Zustand:", text: " teilweise erhalten / umgenutzt." },
                         { bold: "Lage:", text: " Stadtteil Neustadt-Süd, Friedenspark (südlicher Teil von Köln)." }
                     ]
                 },
@@ -2243,7 +2243,8 @@ const datas = [
         translations: {
             ru: {
                 name: "Форт II (внутреннее крепостное кольцо)", sortIndex: 2,
-                short_description: "Форт II (внутреннее крепостное кольцо) – один из фортов внутреннего кольца прусской крепостной системы Кёльна. Состояние: утраченный.",
+                status: "lost", note: "объект снесён в середине 1930-х годов. Видимые следы укреплений на местности не сохранились.",
+                short_description: "Форт II (внутреннее крепостное кольцо) – один из фортов внутреннего кольца прусской крепостной системы Кёльна.",
                 full_description: {
                     title: "Описание и история",
                     items: [
@@ -2254,7 +2255,6 @@ const datas = [
                         { text: "Форт II располагался в районе современного грузового вокзала Bonntor в южной части Кёльна. Его расположение было более удалённым от городской стены по сравнению с другими фортами внутреннего кольца, что нарушало общую симметрию оборонительной системы." },
                         { text: "В связи с этим он не был включён в последующие этапы модернизации внутреннего кольца укреплений." },
                         { text: "Военное использование форта завершилось в 1880-х годах, а окончательный снос был произведён в середине 1930-х годов. В настоящее время на местности не сохранилось видимых следов укрепления." },
-                        { bold: "Состояние:", text: " утраченный." },
                         { bold: "Где:", text: " район Bayenthal, южная часть Кёльна." }
                     ]
                 },
@@ -2270,7 +2270,8 @@ const datas = [
             },
             ua: {
                 name: "Форт II (внутрішнє фортифікаційне кільце)", sortIndex: 2,
-                short_description: "Форт II (внутрішнє фортифікаційне кільце) – один із фортів внутрішнього кільця прусської фортифікаційної системи Кельна. Стан: втрачений.",
+                status: "lost", note: "об’єкт знесено в середині 1930-х років. Видимих слідів укріплень на місцевості не збереглося.",
+                short_description: "Форт II (внутрішнє фортифікаційне кільце) – один із фортів внутрішнього кільця прусської фортифікаційної системи Кельна.",
                 full_description: {
                     title: "Опис та історія",
                     items: [
@@ -2281,7 +2282,6 @@ const datas = [
                         { text: "Форт II розташовувався в районі сучасного вантажного вокзалу Bonntor у південній частині Кельна. Його розташування було більш віддаленим від міського муру порівняно з іншими фортами внутрішнього кільця, що порушувало загальну симетрію оборонної системи." },
                         { text: "У зв’язку з цим він не був включений до наступних етапів модернізації внутрішнього фортифікаційного кільця." },
                         { text: "Військове використання форту завершилося у 1880-х роках, а остаточний демонтаж був здійснений у середині 1930-х років. На сьогодні на місцевості не збереглося видимих слідів укріплення." },
-                        { bold: "Стан:", text: " втрачений." },
                         { bold: "Де:", text: " район Bayenthal, південна частина Кельна." }
                     ]
                 },
@@ -2297,7 +2297,8 @@ const datas = [
             },
             de: {
                 name: "Fort II (innerer Festungsring)", sortIndex: 2,
-                short_description: "Fort II (innerer Festungsring) – eines der Forts des inneren Rings des preußischen Festungssystems von Köln. Zustand: verloren.",
+                status: "lost", note: "Das Objekt wurde Mitte der 1930er Jahre abgerissen. Sichtbare Spuren der Befestigungsanlagen sind vor Ort nicht erhalten geblieben.",
+                short_description: "Fort II (innerer Festungsring) – eines der Forts des inneren Rings des preußischen Festungssystems von Köln.",
                 full_description: {
                     title: "Beschreibung und Geschichte",
                     items: [
@@ -2308,7 +2309,6 @@ const datas = [
                         { text: "Fort II befand sich im Bereich des heutigen Güterbahnhofs Bonntor im südlichen Teil von Köln. Seine Lage war im Vergleich zu anderen Forts des inneren Rings weiter von der Stadtmauer entfernt, was die Symmetrie des Verteidigungssystems störte." },
                         { text: "Aus diesem Grund wurde es nicht in spätere Modernisierungsmaßnahmen des inneren Festungsrings einbezogen." },
                         { text: "Die militärische Nutzung des Forts endete in den 1880er Jahren, und der endgültige Abbruch erfolgte Mitte der 1930er Jahre. Heute sind keine sichtbaren Reste der Anlage erhalten." },
-                        { bold: "Zustand:", text: " verloren." },
                         { bold: "Lage:", text: " Stadtteil Bayenthal, südlicher Teil von Köln." }
                     ]
                 },
@@ -2335,7 +2335,8 @@ const datas = [
         translations: {
             ru: {
                 name: "Форт III (внутреннее крепостное кольцо)", sortIndex: 3,
-                short_description: "Форт III (внутреннее крепостное кольцо) – один из фортов внутреннего кольца прусской крепостной системы Кёльна. Состояние: утраченный.",
+                short_description: "Форт III (внутреннее крепостное кольцо) – один из фортов внутреннего кольца прусской крепостной системы Кёльна. ",
+                status: "lost", note: "в 1960-х годах сооружение было окончательно демонтировано. Территория форта полностью интегрирована в городскую среду, и видимые остатки не сохранились.",
                 full_description: {
                     title: "Описание и история",
                     items: [
@@ -2343,7 +2344,6 @@ const datas = [
                         { text: "Строительство началось в 1843 году и велось в рамках второй фазы развития крепости (1841–1847). Форт был рассчитан примерно на 178 солдат и отличался более сглаженными очертаниями фронта, обращённого к предполагаемому противнику, по сравнению с более ранними сооружениями." },
                         { text: "Впоследствии форт частично использовался как военное место содержания заключённых. К концу XIX века он утратил своё первоначальное значение и оказался вне основной линии новых укреплений." },
                         { text: "В середине XX века (в 1960-х годах) сооружение было окончательно демонтировано. В настоящее время территория форта полностью интегрирована в городскую среду, и видимые остатки не сохранились." },
-                        { bold: "Состояние:", text: " утраченный." },
                         { bold: "Где:", text: " район Neustadt-Süd, в районе улицы Bonner Wall (южная часть Кёльна)" }
                     ]
                 },
@@ -2359,7 +2359,8 @@ const datas = [
             },
             ua: {
                 name: "Форт III (внутрішнє кріпосне кільце)", sortIndex: 3,
-                short_description: "Форт III (внутрішнє кріпосне кільце) – один із фортів внутрішнього кільця прусської фортифікаційної системи Кельна. Стан: втрачений.",
+                short_description: "Форт III (внутрішнє кріпосне кільце) – один із фортів внутрішнього кільця прусської фортифікаційної системи Кельна. ",
+                status: "lost", note: "у 1960-х роках споруду було остаточно демонтовано. Територія форту повністю інтегрована в міське середовище, видимі залишки не збереглися.",
                 full_description: {
                     title: "Опис та історія",
                     items: [
@@ -2367,7 +2368,6 @@ const datas = [
                         { text: "Будівництво розпочалося у 1843 році і велося в межах другої фази розвитку фортеці (1841–1847). Форт був розрахований приблизно на 178 солдатів і відзначався більш згладженими обрисами фронту, зверненого до ймовірного противника, порівняно з більш ранніми спорудами." },
                         { text: "Згодом форт частково використовувався як військове місце утримання ув’язнених. Наприкінці XIX століття він втратив своє первісне значення і опинився поза основною лінією нових укріплень." },
                         { text: "У середині XX століття (у 1960-х роках) споруду було остаточно демонтовано. На сьогодні територія форту повністю інтегрована в міське середовище, і видимих залишків не збереглося." },
-                        { bold: "Стан:", text: " втрачений." },
                         { bold: "Де:", text: " район Neustadt-Süd, у районі вулиці Bonner Wall (південна частина Кельна)" }
                     ]
                 },
@@ -2383,7 +2383,8 @@ const datas = [
             },
             de: {
                 name: "Fort III (innerer Festungsring)", sortIndex: 3,
-                short_description: "Fort III (innerer Festungsring) – eines der Forts des inneren Rings der preußischen Festungsanlage in Köln. Zustand: nicht erhalten.",
+                short_description: "Fort III (innerer Festungsring) – eines der Forts des inneren Rings der preußischen Festungsanlage in Köln. ",
+                status: "lost", note: "in den 1960er Jahren wurde die Anlage endgültig abgetragen. Das Gelände des Forts ist vollständig in das Stadtbild integriert, sichtbare Überreste sind nicht erhalten geblieben.",
                 full_description: {
                     title: "Beschreibung und Geschichte",
                     items: [
@@ -2391,7 +2392,6 @@ const datas = [
                         { text: "Der Bau begann im Jahr 1843 und erfolgte im Rahmen der zweiten Ausbauphase der Festung (1841–1847). Das Fort war für etwa 178 Soldaten ausgelegt und zeichnete sich durch geglättete Konturen der dem mutmaßlichen Angreifer zugewandten Front im Vergleich zu früheren Anlagen aus." },
                         { text: "Später wurde das Fort teilweise als militärischer Haftort genutzt. Gegen Ende des 19. Jahrhunderts verlor es seine ursprüngliche Bedeutung und lag außerhalb der Hauptlinie der neueren Befestigungen." },
                         { text: "In der Mitte des 20. Jahrhunderts (in den 1960er Jahren) wurde die Anlage endgültig abgetragen. Heute ist das Gelände vollständig in die städtische Struktur integriert, und sichtbare Überreste sind nicht erhalten." },
-                        { bold: "Zustand:", text: " nicht erhalten." },
                         { bold: "Wo:", text: " Stadtteil Neustadt-Süd, im Bereich der Straße Bonner Wall (südlicher Teil von Köln)" }
                     ]
                 },
@@ -2419,7 +2419,8 @@ const datas = [
         translations: {
             ru: {
                 name: "Форт V (внутреннее крепостное кольцо)", sortIndex: 5,
-                short_description: "Форт V – форт внутреннего прусского оборонительного кольца Кёльна, построенный в 1843–1847 годах. Частично сохранился и используется в составе университетской инфраструктуры.",
+                short_description: "Форт V – форт внутреннего прусского оборонительного кольца Кёльна, построенный в 1843–1847 годах.",
+                status: "partial", note: "используется Географическим институтом Кёльнского университета",
                 full_description: {
                     title: "Описание и история",
                     items: [
@@ -2428,7 +2429,6 @@ const datas = [
                         { text: "В 1880-х годах форт утратил военное значение в связи с изменением линии обороны города и был выведен из состава действующих укреплений. В 1886 году он перешёл в собственность города." },
                         { text: "Центральное сооружение (редюит) было переоборудовано под административные и медицинские помещения, позже использовалось как столовая и химический институт. Во время Второй мировой войны здание сильно пострадало." },
                         { text: "В 2002–2004 годах редюит был восстановлен и в настоящее время используется Географическим институтом Кёльнского университета." },
-                        { bold: "Состояние:", text: "частично сохранившееся / адаптированное" },
                         { bold: "Где:", text: "район Lindenthal / Zülpicher Straße (внутреннее оборонительное кольцо Кёльна)" }
                     ]
                 },
@@ -2444,7 +2444,8 @@ const datas = [
             },
             ua: {
                 name: "Форт V (внутрішнє кріпосне кільце)", sortIndex: 5,
-                short_description: "Форт V – форт внутрішнього прусського оборонного кільця Кельна, збудований у 1843–1847 роках. Частково зберігся і використовується в університетській інфраструктурі.",
+                short_description: "Форт V – форт внутрішнього прусського оборонного кільця Кельна, збудований у 1843–1847 роках.",
+                status: "partial", note: "використовується Географічним інститутом Кельнського університету",
                 full_description: {
                     title: "Опис та історія",
                     items: [
@@ -2453,7 +2454,6 @@ const datas = [
                         { text: "У 1880-х роках форт втратив військове значення через зміну лінії оборони міста і був виведений з експлуатації. У 1886 році він перейшов у власність міста." },
                         { text: "Центральна споруда (редюїт) була переобладнана під адміністративні та медичні приміщення, згодом використовувалася як їдальня та хімічний інститут. Під час Другої світової війни будівля зазнала значних пошкоджень." },
                         { text: "У 2002–2004 роках редюїт було відновлено, і нині він використовується Географічним інститутом Кельнського університету." },
-                        { bold: "Стан:", text: "частково збережений / адаптований" },
                         { bold: "Де:", text: "район Lindenthal / Zülpicher Straße (внутрішнє оборонне кільце Кельна)" }
                     ]
                 },
@@ -2469,7 +2469,8 @@ const datas = [
             },
             de: {
                 name: "Fort V (innerer Festungsring)", sortIndex: 5,
-                short_description: "Fort V – ein Fort des inneren preußischen Festungsrings von Köln, erbaut 1843–1847. Teilweise erhalten und heute Teil der universitären Infrastruktur.",
+                short_description: "Fort V – ein Fort des inneren preußischen Festungsrings von Köln, erbaut 1843–1847. ",
+                status: "partial", note: "wird vom Geographischen Institut der Universität zu Köln genutzt",
                 full_description: {
                     title: "Beschreibung und Geschichte",
                     items: [
@@ -2478,7 +2479,6 @@ const datas = [
                         { text: "In den 1880er Jahren verlor das Fort seine militärische Bedeutung aufgrund der veränderten Verteidigungslinie der Stadt und wurde aus dem aktiven Festungssystem herausgenommen. 1886 ging es in den Besitz der Stadt über." },
                         { text: "Das zentrale Bauwerk (Reduit) wurde zu Verwaltungs- und medizinischen Räumen umgebaut und später als Mensa sowie als chemisches Institut genutzt. Im Zweiten Weltkrieg wurde das Gebäude stark beschädigt." },
                         { text: "In den Jahren 2002–2004 wurde das Reduit restauriert und wird heute vom Geographischen Institut der Universität zu Köln genutzt." },
-                        { bold: "Zustand:", text: "teilweise erhalten / angepasst" },
                         { bold: "Wo:", text: "Stadtteil Lindenthal / Zülpicher Straße (innerer Festungsring Köln)" }
                     ]
                 },
@@ -2506,7 +2506,8 @@ const datas = [
         translations: {
             ru: {
                 name: "Форт IV (внешнее крепостное кольцо)", sortIndex: 4,
-                short_description: "Форт IV – крупный форт внешнего прусского оборонительного кольца Кёльна, построенный в 1874–1876 годах на левом берегу Рейна. Частично сохранился и используется в городской инфраструктуре.",
+                short_description: "Форт IV – крупный форт внешнего прусского оборонительного кольца Кёльна, построенный в 1874–1876 годах на левом берегу Рейна.",
+                status: "partial", note: "используется в городской инфраструктуре, в основном для спортивных и хозяйственных нужд",
                 full_description: {
                     title: "Описание и история",
                     items: [
@@ -2517,7 +2518,6 @@ const datas = [
                         { text: "После Первой мировой войны, в 1921–1922 годах, большая часть форта была демонтирована в соответствии с Версальским договором, однако часть казарменных зданий сохранилась. Позже территория была перепрофилирована: здесь появились спортивные площадки, учебные и городские службы." },
                         { text: "Во время Второй мировой войны форт вновь использовался в военных целях. В его подземных помещениях размещались командные пункты и защитные сооружения противовоздушной обороны." },
                         { text: "Часть комплекса также использовалась как убежище для гражданского населения. Сегодня территория в основном выполняет функции спортивного и хозяйственного объекта города." },
-                        { bold: "Состояние:", text: "частично сохранившееся / адаптированное" },
                         { bold: "Где:", text: "западный Grüngürtel (левый берег Рейна)" }
                     ]
                 },
@@ -2533,7 +2533,8 @@ const datas = [
             },
             ua: {
                 name: "Форт IV (зовнішнє кріпосне кільце)", sortIndex: 4,
-                short_description: "Форт IV – великий форт зовнішнього прусського оборонного кільця Кельна, збудований у 1874–1876 роках на лівому березі Рейну. Частково зберігся і використовується в міській інфраструктурі.",
+                short_description: "Форт IV – великий форт зовнішнього прусського оборонного кільця Кельна, збудований у 1874–1876 роках на лівому березі Рейну. ",
+                status: "partial", note: "використовується в міській інфраструктурі, переважно для спортивних і господарських потреб",
                 full_description: {
                     title: "Опис та історія",
                     items: [
@@ -2544,7 +2545,6 @@ const datas = [
                         { text: "Після Першої світової війни, у 1921–1922 роках, більша частина форту була демонтована відповідно до Версальського договору, однак частина казармених будівель збереглася. Пізніше територія була перепрофільована: тут з’явилися спортивні майданчики, навчальні та міські служби." },
                         { text: "Під час Другої світової війни форт знову використовувався у військових цілях. У його підземних приміщеннях розміщувалися командні пункти та захисні споруди протиповітряної оборони." },
                         { text: "Частина комплексу також використовувалася як укриття для цивільного населення. Сьогодні територія в основному виконує функції спортивного та господарського об’єкта міста." },
-                        { bold: "Стан:", text: "частково збережений / адаптований" },
                         { bold: "Де:", text: "західний Grüngürtel (лівий берег Рейну)" }
                     ]
                 },
@@ -2560,7 +2560,8 @@ const datas = [
             },
             de: {
                 name: "Fort IV (äußerer Festungsring)", sortIndex: 4,
-                short_description: "Fort IV – ein großes Fort des äußeren preußischen Verteidigungsrings von Köln, erbaut in den Jahren 1874–1876 auf dem linken Rheinufer. Teilweise erhalten und heute in die städtische Infrastruktur integriert.",
+                short_description: "Fort IV – ein großes Fort des äußeren preußischen Verteidigungsrings von Köln, erbaut in den Jahren 1874–1876 auf dem linken Rheinufer. ",
+                status: "partial", note: "wird in der städtischen Infrastruktur genutzt, hauptsächlich für sportliche und wirtschaftliche Zwecke",
                 full_description: {
                     title: "Beschreibung und Geschichte",
                     items: [
@@ -2571,7 +2572,6 @@ const datas = [
                         { text: "Nach dem Ersten Weltkrieg wurde in den Jahren 1921–1922 der größte Teil des Forts gemäß den Bestimmungen des Versailler Vertrags abgetragen, ein Teil der Kasernengebäude blieb jedoch erhalten. Später wurde das Gelände umgenutzt: Es entstanden Sportanlagen sowie Einrichtungen für Ausbildung und städtische Dienste." },
                         { text: "Während des Zweiten Weltkriegs wurde das Fort erneut militärisch genutzt. In den unterirdischen Räumen befanden sich Befehlsstellen und Schutzanlagen der Luftverteidigung." },
                         { text: "Ein Teil der Anlage diente außerdem als Schutzraum für die Zivilbevölkerung. Heute wird das Gelände überwiegend als Sport- und Infrastrukturobjekt der Stadt genutzt." },
-                        { bold: "Zustand:", text: "teilweise erhalten / angepasst" },
                         { bold: "Wo:", text: "westlicher Grüngürtel (linkes Rheinufer)" }
                     ]
                 },
@@ -2599,7 +2599,8 @@ const datas = [
         translations: {
             ru: {
                 name: "Форт V (внешнее крепостное кольцо)", sortIndex: 5,
-                short_description: "Форт V – крупный форт внешнего прусского оборонительного кольца Кёльна, построенный в 1874–1876 годах в районе Müngersdorf. Частично сохранился и входит в структуру Grüngürtel.",
+                short_description: "Форт V – крупный форт внешнего прусского оборонительного кольца Кёльна, построенный в 1874–1876 годах в районе Müngersdorf.",
+                status: "partial", note: "входит в структуру Зелёного пояса Кёльна (Grüngürtel)",
                 full_description: {
                     title: "Описание и история",
                     items: [
@@ -2608,7 +2609,6 @@ const datas = [
                         { text: "В конце XIX – начале XX века форт использовался в военных целях, включая гарнизонное размещение и вспомогательные функции. Позднее территория частично утратила военное значение." },
                         { text: "В период Второй мировой войны объект использовался как часть военной и вспомогательной инфраструктуры. После войны часть сооружений была демонтирована в соответствии с требованиями демилитаризации." },
                         { text: "В XX веке территория была перепрофилирована: появились спортивные площадки, городские службы и открытые общественные пространства. Сегодня участок интегрирован в систему Grüngürtel Кёльна." },
-                        { bold: "Состояние:", text: "частично сохранившееся / адаптированное" },
                         { bold: "Где:", text: "район Müngersdorf, западный Grüngürtel (внешнее оборонительное кольцо Кёльна)" }
                     ]
                 },
@@ -2624,7 +2624,8 @@ const datas = [
             },
             ua: {
                 name: "Форт V (зовнішнє кріпосне кільце)", sortIndex: 5,
-                short_description: "Форт V – великий форт зовнішнього прусського оборонного кільця Кельна, збудований у 1874–1876 роках у районі Müngersdorf. Частково зберігся і входить до структури Grüngürtel.",
+                short_description: "Форт V – великий форт зовнішнього прусського оборонного кільця Кельна, збудований у 1874–1876 роках у районі Müngersdorf. ",
+                status: "partial", note: "входить до структури Зелёного пояса Кельна (Grüngürtel)",
                 full_description: {
                     title: "Опис та історія",
                     items: [
@@ -2633,7 +2634,6 @@ const datas = [
                         { text: "Наприкінці XIX – на початку XX століття форт використовувався у військових цілях, включаючи гарнізонне розміщення. Згодом військове значення частково втратилося." },
                         { text: "Під час Другої світової війни об’єкт використовувався як частина військової інфраструктури. Після війни частину споруд було демонтовано." },
                         { text: "У XX столітті територію було перепрофільовано: з’явилися спортивні майданчики, міські служби та громадські простори. Сьогодні вона інтегрована до системи Grüngürtel Кельна." },
-                        { bold: "Стан:", text: "частково збережений / адаптований" },
                         { bold: "Де:", text: "район Müngersdorf, західний Grüngürtel (зовнішнє оборонне кільце Кельна)" }
                     ]
                 },
@@ -2649,7 +2649,8 @@ const datas = [
             },
             de: {
                 name: "Fort V (äußerer Festungsring)", sortIndex: 5,
-                short_description: "Fort V – ein großes Fort des äußeren preußischen Festungsrings von Köln, erbaut 1874–1876 im Stadtteil Müngersdorf. Teilweise erhalten und in den Grüngürtel integriert.",
+                short_description: "Fort V – ein großes Fort des äußeren preußischen Festungsrings von Köln, erbaut 1874–1876 im Stadtteil Müngersdorf. ",
+                status: "partial", note: "gehört zum Grüngürtel Kölns",
                 full_description: {
                     title: "Beschreibung und Geschichte",
                     items: [
@@ -2658,7 +2659,6 @@ const datas = [
                         { text: "Im späten 19. und frühen 20. Jahrhundert wurde das Fort militärisch genutzt, unter anderem als Garnison. Später verlor es teilweise seine militärische Bedeutung." },
                         { text: "Während des Zweiten Weltkriegs wurde das Gelände weiterhin militärisch genutzt. Nach dem Krieg wurden Teile der Anlage im Rahmen der Demilitarisierung abgetragen." },
                         { text: "Im 20. Jahrhundert wurde das Gelände umgenutzt: Es entstanden Sportanlagen, städtische Einrichtungen und öffentliche Freiflächen. Heute ist es in den Grüngürtel von Köln integriert." },
-                        { bold: "Zustand:", text: "teilweise erhalten / angepasst" },
                         { bold: "Wo:", text: "Stadtteil Müngersdorf, westlicher Grüngürtel (äußerer Festungsring Köln)" }
                     ]
                 },
@@ -2686,7 +2686,8 @@ const datas = [
         translations: {
             ru: {
                 name: "Форт VI (внешнее крепостное кольцо)", sortIndex: 6,
-                short_description: "Форт VI (внешнее крепостное кольцо) – один из фортов внешнего кольца прусской крепостной системы Кёльна. Состояние: частично сохранившееся / адаптированное.",
+                short_description: "Форт VI (внешнее крепостное кольцо) – один из фортов внешнего кольца прусской крепостной системы Кёльна.",
+                status: "partial", note: "входит в состав внешнего зелёного пояса Кёльна (Grüngürtel) и используется как общественное пространство.",
                 full_description: {
                     title: "Описание и история",
                     items: [
@@ -2698,7 +2699,6 @@ const datas = [
                         { text: "В дальнейшем территория использовалась для различных гражданских нужд: в казармах размещались жилые помещения, обсуждалось создание лесной школы с спортивными площадками, а во время Второй мировой войны здесь находились временные убежища для гражданского населения." },
                         { text: "С 1970-х годов здания использовались городскими службами, спортивными организациями, а также творческими коллективами. В настоящее время территория преобразована в парковую зону с элементами ландшафтного дизайна, включая каменный сад в северной части рва." },
                         { text: "Сегодня Fort VI входит в состав внешнего зелёного пояса Кёльна (Grüngürtel), созданного в 1920-х годах по инициативе обербургомистра Конрада Аденауэра, и используется как общественное пространство." },
-                        { bold: "Состояние:", text: " частично сохранившееся / адаптированное." },
                         { bold: "Где:", text: " район Deckstein (западная часть Кёльна)." }
                     ]
                 },
@@ -2714,7 +2714,8 @@ const datas = [
             },
             ua: {
                 name: "Форт VI (зовнішнє фортифікаційне кільце)", sortIndex: 6,
-                short_description: "Форт VI (зовнішнє фортифікаційне кільце) – один із фортів зовнішнього кільця прусської фортифікаційної системи Кельна. Стан: частково збережений / адаптований.",
+                short_description: "Форт VI (зовнішнє фортифікаційне кільце) – один із фортів зовнішнього кільця прусської фортифікаційної системи Кельна.",
+                status: "partial", note: "входить до складу зовнішнього Зеленого поясу Кельна (Grüngürtel) і використовується як громадський простір.",
                 full_description: {
                     title: "Опис та історія",
                     items: [
@@ -2726,7 +2727,6 @@ const datas = [
                         { text: "Надалі територія використовувалася для різних цивільних потреб: у казармах облаштовували житлові приміщення, обговорювалося створення лісової школи зі спортивними майданчиками, а під час Другої світової війни тут розміщувалися тимчасові укриття для цивільного населення." },
                         { text: "З 1970-х років будівлі використовувалися міськими службами, спортивними організаціями, а також творчими колективами. Нині територія перетворена на паркову зону з елементами ландшафтного дизайну, включаючи кам’яний сад у північній частині рову." },
                         { text: "Сьогодні Fort VI входить до складу зовнішнього зеленого поясу Кельна (Grüngürtel), створеного у 1920-х роках за ініціативою обербургомістра Конрада Аденауера, і використовується як громадський простір." },
-                        { bold: "Стан:", text: " частково збережений / адаптований." },
                         { bold: "Де:", text: " район Deckstein (західна частина Кельна)." }
                     ]
                 },
@@ -2742,7 +2742,8 @@ const datas = [
             },
             de: {
                 name: "Fort VI (äußerer Festungsring)", sortIndex: 6,
-                short_description: "Fort VI (äußerer Festungsring) – eines der Forts des äußeren Rings des preußischen Festungssystems von Köln. Zustand: teilweise erhalten / umgenutzt.",
+                short_description: "Fort VI (äußerer Festungsring) – eines der Forts des äußeren Rings des preußischen Festungssystems von Köln.",
+                status: "partial", note: "gehört zum äußeren Grüngürtel Kölns und wird als öffentlicher Raum genutzt",
                 full_description: {
                     title: "Beschreibung und Geschichte",
                     items: [
@@ -2754,7 +2755,6 @@ const datas = [
                         { text: "In der Folgezeit wurde das Gelände unterschiedlich zivil genutzt: In den Kasernen wurden zeitweise Wohnungen eingerichtet, die Einrichtung einer Waldschule mit Sportanlagen wurde diskutiert, und während des Zweiten Weltkriegs dienten die Anlagen als Notunterkünfte für die Bevölkerung." },
                         { text: "Seit den 1970er Jahren wurden die Gebäude von städtischen Einrichtungen, Sportvereinen sowie von Künstlern genutzt. Heute ist das Gelände in eine Parkanlage mit landschaftsgestalterischen Elementen umgewandelt, darunter ein Felsengarten im nördlichen Grabenbereich." },
                         { text: "Heute ist Fort VI Teil des äußeren Kölner Grüngürtels, der in den 1920er Jahren auf Initiative des Oberbürgermeisters Konrad Adenauer angelegt wurde, und wird als öffentlicher Raum genutzt." },
-                        { bold: "Zustand:", text: " teilweise erhalten / umgenutzt." },
                         { bold: "Lage:", text: " Stadtteil Deckstein (westlicher Teil von Köln)." }
                     ]
                 },
@@ -2782,7 +2782,8 @@ const datas = [
         translations: {
             ru: {
                 name: "Форт IX (внешнее крепостное кольцо)", sortIndex: 9,
-                short_description: "Форт IX – крупный форт внешнего прусского оборонительного кольца Кёльна, построенный в 1877–1881 годах. Частично сохранился и использовался в различных военных и гражданских целях.",
+                short_description: "Форт IX – крупный форт внешнего прусского оборонительного кольца Кёльна, построенный в 1877–1881 годах. ",
+                status: "partial", note: "сохранились элементы фортификационных сооружений, территория частично интегрирована в городскую среду и используется как общественное пространство.",
                 full_description: {
                     title: "Описание и история",
                     items: [
@@ -2792,7 +2793,6 @@ const datas = [
                         { text: "После Первой мировой войны форт был оккупирован британскими войсками, а в 1922 году частично демонтирован в соответствии с Версальским договором." },
                         { text: "В период национал-социализма объект использовался как военное учебное учреждение для подготовки офицерского резерва. После Второй мировой войны его использовали бельгийские войска как вспомогательный объект." },
                         { text: "Позднее форт был заброшен и частично использовался как съёмочная площадка для телевизионных и кинопроектов." },
-                        { bold: "Состояние:", text: "частично сохранившееся / адаптированное" },
                         { bold: "Где:", text: "район Köln-Rath / Kalk, правобережная часть внешнего оборонительного кольца" },
                         { bold: "<br>Промежуточные форты/батареи (Zwischenwerke)", text: "Между основными фортами внешнего прусского оборонительного кольца Кёльна, включая участок Fort VIII – Fort IX – Fort X, были построены промежуточные форты/батареи. Их задача заключалась в том, чтобы закрывать «промежутки» между крупными фортами и усиливать перекрёстный артиллерийский огонь." },
                         { text: "В районе Fort IX (правобережная часть Кёльна, сектор Rath / Brück / Kalk) существовали как минимум два таких промежуточных укрепления: <ul><li><b>Zwischenwerk IXa</b> – располагался между Fort VIII и Fort IX, прикрывая подступы и обеспечивая дополнительную линию огня по восточному направлению. </li><li><b>Zwischenwerk IXb</b> – находился между Fort IX и Fort X, усиливая оборону в сторону юго-восточного сектора кольца. </li></ul>" },
@@ -2812,7 +2812,8 @@ const datas = [
             },
             ua: {
                 name: "Форт IX (зовнішнє кріпосне кільце)", sortIndex: 9,
-                short_description: "Форт IX – великий форт зовнішнього прусського оборонного кільця Кельна, збудований у 1877–1881 роках. Частково зберігся та використовувався у військових і цивільних цілях.",
+                short_description: "Форт IX – великий форт зовнішнього прусського оборонного кільця Кельна, збудований у 1877–1881 роках. ",
+                status: "partial", note: "збереглися елементи фортифікаційних споруд, територія частково інтегрована в міське середовище та використовується як громадський простір.",
                 full_description: {
                     title: "Опис та історія",
                     items: [
@@ -2822,7 +2823,6 @@ const datas = [
                         { text: "Після Першої світової війни форт був окупований британськими військами, а у 1922 році частково демонтований відповідно до Версальського договору." },
                         { text: "У період націонал-соціалізму використовувався як військовий навчальний центр для підготовки офіцерів. Після Другої світової війни його використовували бельгійські війська." },
                         { text: "Згодом форт був занедбаний і частково використовувався як знімальний майданчик для кіно та телепроєктів." },
-                        { bold: "Стан:", text: "частково збережений / адаптований" },
                         { bold: "Де:", text: "район Köln-Rath / Kalk, правобережна частина зовнішнього оборонного кільця" },
                         { bold: "<br>Проміжні форти / батареї (Zwischenwerke)", text: "Між основними фортами зовнішнього прусського оборонного кільця Кельна, включно з ділянкою Fort VIII – Fort IX – Fort X, були збудовані проміжні форти або батареї. Їхнім завданням було закривати «проміжки» між великими фортами та посилювати перехресний артилерійський вогонь." },
                         { text: "У районі Fort IX (правобережна частина Кельна, сектори Rath / Brück / Kalk) існувало щонайменше два таких проміжних укріплення: <ul><li><b>Zwischenwerk IXa</b> – розташовувався між Fort VIII і Fort IX, прикривав підступи та забезпечував додаткову лінію вогню у східному напрямку.</li><li><b>Zwischenwerk IXb</b> – знаходився між Fort IX і Fort X, посилюючи оборону в напрямку південно-східного сектору кільця.</li></ul>" },
@@ -2842,7 +2842,8 @@ const datas = [
             },
             de: {
                 name: "Fort IX (äußerer Festungsring)", sortIndex: 9,
-                short_description: "Fort IX – ein großes Fort des äußeren preußischen Festungsrings von Köln, erbaut 1877–1881. Teilweise erhalten und in verschiedenen militärischen und zivilen Funktionen genutzt.",
+                short_description: "Fort IX – ein großes Fort des äußeren preußischen Festungsrings von Köln, erbaut 1877–1881. ",
+                status: "partial", note: "erhalten sind Teile der Befestigungsanlagen, das Gelände ist teilweise in die städtische Struktur integriert und wird als öffentlicher Raum genutzt.",
                 full_description: {
                     title: "Beschreibung und Geschichte",
                     items: [
@@ -2852,7 +2853,6 @@ const datas = [
                         { text: "Nach dem Ersten Weltkrieg wurde das Fort von britischen Truppen besetzt und 1922 teilweise gemäß dem Versailler Vertrag abgetragen." },
                         { text: "Während der NS-Zeit diente die Anlage als militärische Ausbildungseinrichtung für Offiziersnachwuchs. Nach dem Zweiten Weltkrieg nutzten belgische Streitkräfte das Gelände." },
                         { text: "Später wurde das Fort aufgegeben und teilweise als Drehort für Film- und Fernsehproduktionen genutzt." },
-                        { bold: "Zustand:", text: "teilweise erhalten / angepasst" },
                         { bold: "Wo:", text: "Stadtteil Köln-Rath / Kalk, rechtsrheinischer äußerer Festungsring" },
                         { bold: "<br>Zwischenwerke", text: "Zwischen den Hauptforts des äußeren preußischen Festungsrings von Köln, einschließlich des Abschnitts Fort VIII – Fort IX – Fort X, wurden Zwischenforts bzw. Batterien errichtet. Ihre Aufgabe bestand darin, die Lücken zwischen den großen Forts zu schließen und das Kreuzfeuer der Artillerie zu verstärken." },
                         { text: "Im Bereich von Fort IX (rechtsrheinischer Teil von Köln, Sektoren Rath / Brück / Kalk) existierten mindestens zwei solcher Zwischenbefestigungen: <ul><li><b>Zwischenwerk IXa</b> – lag zwischen Fort VIII und Fort IX, deckte die Zugänge und stellte eine zusätzliche Feuerlinie in östlicher Richtung sicher.</li><li><b>Zwischenwerk IXb</b> – befand sich zwischen Fort IX und Fort X und verstärkte die Verteidigung in Richtung des südöstlichen Ringsektors.</li></ul>" },

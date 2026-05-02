@@ -1372,6 +1372,7 @@ const datas = [
         fotoCard: "Germany/nrw/koln/koln-city/altstadt/old_towers/001.jpg",
         location: "Köln, Deutschland",
         short_description: "Die alten Türme und Befestigungen der Altstadt Kölns sind Reste der mittelalterlichen Stadtmauer und römischer Verteidigungsanlagen, die einst die Stadt schützten. Heute sind sie über die Altstadt verteilt und dienen als historische Orientierungspunkte für Bewohner und Touristen. Diese Türme vermitteln ein Bild davon, wie Köln im Mittelalter aussah, und zeigen Spuren des Verteidigungssystems. Die Sehenswürdigkeit ist bei Touristen beliebt, stellt jedoch kein weltbekanntes Symbol der Stadt dar.",
+        status: "partial", note: "Von diesem System sind nur einzelne Objekte erhalten geblieben – sowohl große Stadttore mit Türmen als auch Mauerfragmente mit kleinen Wachttürmen.",
         full_description: {
             title: "Beschreibung und Geschichte",
             items: [
@@ -3071,6 +3072,7 @@ const datas = [
         construction_period: "12. Jahrhundert (1138–1167)",
         founder: " Kölner Erzbischof Arnold von Wied",
         short_description: "Die Ruinen der Burg Drachenfels sind die Überreste einer mittelalterlichen Burg aus dem 12. Jahrhundert, die sich auf dem Gipfel des gleichnamigen Berges im Siebengebirge befindet. Von der Festung sind Fragmente der Mauern und Fundamente der Türme erhalten geblieben, die direkt in den Felsen integriert sind. Die Burg wurde während des Dreißigjährigen Krieges zerstört und danach nicht wieder aufgebaut, weshalb man hier heute authentische historische Ruinen sehen kann. Vom Gipfel aus eröffnet sich ein panoramischer Blick auf den Rhein und die umliegende Landschaft.",
+        status: "partial", note: "die Anlage besteht aus Fragmenten einer mittelalterlichen Festung mit teilweise erhaltenen Befestigungsstrukturen.",
         full_description: {
             title: "Beschreibung und Geschichte",
             items: [
@@ -3263,6 +3265,7 @@ const datas = [
             { bold: "Offizielle Website", link: "https://www.klosterlandschaft-heisterbach.de" }
         ],
         short_description: "Die Ruinen des Chors der ehemaligen Klosterkirche sind der beeindruckendste und bekannteste Teil der Abtei Heisterbach. Sie sind das einzige Fragment der riesigen gotischen Basilika, das nach der Zerstörung des Klosters im 19. Jahrhundert fast vollständig erhalten geblieben ist.",
+        status: "partial", note: "das Objekt stellt ein architektonisches Fragment eines sakralen Bauwerks mit teilweise erhaltenen Chorwänden und Strukturen dar.",
         full_description: {
             title: "Beschreibung und Geschichte",
             items: [

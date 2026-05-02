@@ -12,36 +12,19 @@ import useAttractions from '../../hooks/useAttractions.js';
 import useAllAttractions from '../../hooks/useAllAttractions.js';
 import useCity from '../../hooks/useCity.js';
 import useSabRegions from '../../hooks/useSabRegions.js';
+import useAttractionFilters from '../../hooks/useAttractionFilters.js';
 
 import datas from '../../datas/minimalIndex';
 
 import './Attractions.scss';
 
-const attractionsTitle = {
-    ru: "Достопримечательности",
-    ua: "Пам'ятки",
-    de: "Sehenswürdigkeiten"
-};
 
-const NoAttractions = {
-    ru: "Нет достопримечательностей",
-    ua: "Достопримечательностей немає",
-    de: "Keine Sehenswürdigkeiten"
-};
-
+const attractionsTitle = { ru: "Достопримечательности", ua: "Пам'ятки", de: "Sehenswürdigkeiten" };
+const NoAttractions = { ru: "Нет достопримечательностей", ua: "Достопримечательностей немає", de: "Keine Sehenswürdigkeiten" };
 const showAllText = {
-    ru: {
-        true: "Показать только текущее",
-        false: "Показать все"
-    },
-    ua: {
-        true: "Показати тільки поточні",
-        false: "Показати все"
-    },
-    de: {
-        true: "Nur aktuelle anzeigen",
-        false: "Alle anzeigen"
-    }
+    ru: { true: "Показать только текущее", false: "Показать все" },
+    ua: { true: "Показати тільки поточні", false: "Показати все" },
+    de: { true: "Nur aktuelle anzeigen", false: "Alle anzeigen" }
 };
 
 const AttractionsList = () => {
@@ -57,8 +40,10 @@ const AttractionsList = () => {
 
     const [filters, setFilters] = useState({
         type: 'all',
+        rating: 'all',
         unesco: 'all',
         sort: 'rating',
+        status: ['active', 'partial'],
     });
 
     const base = attractionsTitle[lang];
@@ -69,7 +54,6 @@ const AttractionsList = () => {
         datas.regions[regionPath]?.[lang] ||
         datas.countries[countryPath]?.[lang] ||
         '';
-
 
     const meta = {
         title: locationName ? `${base} – ${locationName}` : base,
@@ -85,58 +69,14 @@ const AttractionsList = () => {
         return new Map((attractions || []).map(a => [a.id, a]));
     }, [attractions]);
 
-    const unescoChildIds = useMemo(() => {
-        const set = new Set();
-
-        (attractions || []).forEach(a => {
-            a.subObjects?.forEach(id => {
-                const sub = attrMap.get(id);
-                if (sub?.unesco_status?.included) {
-                    set.add(id);
-                }
-            });
-        });
-
-        return set;
-    }, [attractions, attrMap]);
-
-//фильтрация
-    const baseFiltered = useMemo(() => {
-        if (!attractions) return [];
-
-        return attractions.filter(attr => {
-            if (!attr) return false;
-
-            if (cityPath && attr.cityPath !== cityPath) return false;
-            if (districtPath && attr.districtPath !== districtPath) return false;
-
-            const allTypes = [
-                ...(attr.type || []),
-                ...(attr.subObjects || [])
-                    .map(id => attrMap.get(id)?.type || [])
-                    .flat()
-            ];
-
-            if (filters.type !== 'all' && !allTypes.includes(filters.type)) return false;
-
-            if (filters.unesco === 'yes') {
-                const isDirect = attr.unesco_status?.included;
-                const isChild = unescoChildIds.has(attr.id);
-
-                if (!isDirect && !isChild) return false;
-            }
-
-            return true;
-        });
-    }, [
+    //фильтрация
+    const baseFiltered = useAttractionFilters({
         attractions,
+        filters,
         cityPath,
         districtPath,
-        filters.type,
-        filters.unesco,
         attrMap,
-        unescoChildIds
-    ]);
+    });
 
     const mapAttractions = baseFiltered;
 
@@ -171,7 +111,7 @@ const AttractionsList = () => {
     }, [listAttractions, filters.sort]);
 
 
-// для карты
+    // для карты
     const visibleAttractions = showAll ? allAttractions : mapAttractions;
 
     // хлебные крошки

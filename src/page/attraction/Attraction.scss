@@ -42,13 +42,13 @@
             }
 
             &-bold {
-                @include bold-text;
+                @include bold-text();
                 display: inline;
                 text-align: justify;
             }
 
             &-text {
-                @include body-text;
+                @include body-text();
                 text-align: justify;
                 display: inline;
             }
@@ -60,7 +60,7 @@
             }
 
             li {
-                @include body-text;
+                @include body-text();
                 margin-bottom: 3px;
             }
 
@@ -78,7 +78,7 @@
             }
 
             &-bold {
-                @include bold-text;
+                @include bold-text();
                 display: inline;
                 text-align: justify;
             }
@@ -114,14 +114,14 @@
                 }
 
                 .attraction__desc-relics-text {
-                    @include body-text;
+                    @include body-text();
                     text-align: justify;
                     padding-left: 0;
                     margin: 0;
                 }
 
                 .attraction__desc-relics-bold {
-                    @include bold-text;
+                    @include bold-text();
                     // display: block; 
                     margin-bottom: 5px;
                 }
@@ -134,11 +134,11 @@
             text-align: left;
 
             &-bold {
-                @include bold-text;
+                @include bold-text();
             }
 
             &-text {
-                @include body-text
+                @include body-text();
             }
         }
     }
