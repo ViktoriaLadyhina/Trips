@@ -232,10 +232,14 @@ const Map = () => {
                               <li><Link to="/germany/nrw/city/koln/attractions/fort_II_inner_koln">{t.attractions.fort_II_inner_koln[lang]}</Link></li>
                               <li><Link to="/germany/nrw/city/koln/attractions/fort_III_inner_koln">{t.attractions.fort_III_inner_koln[lang]}</Link></li>
                               <li><Link to="/germany/nrw/city/koln/attractions/fort_V_inner_koln">{t.attractions.fort_V_inner_koln[lang]}</Link></li>
+                              <li><Link to="/germany/nrw/city/koln/attractions/fort_VI_inner_koln">{t.attractions.fort_VI_inner_koln[lang]}</Link></li>
+                              <li><Link to="/germany/nrw/city/koln/attractions/fort_IX_inner_koln">{t.attractions.fort_IX_inner_koln[lang]}</Link></li>
                               <li><Link to="/germany/nrw/city/koln/attractions/fort_IV_outer_koln">{t.attractions.fort_IV_outer_koln[lang]}</Link></li>
                               <li><Link to="/germany/nrw/city/koln/attractions/fort_V_outer_koln">{t.attractions.fort_V_outer_koln[lang]}</Link></li>
                               <li><Link to="/germany/nrw/city/koln/attractions/fort_VI_outer_koln">{t.attractions.fort_VI_outer_koln[lang]}</Link></li>
                               <li><Link to="/germany/nrw/city/koln/attractions/fort_IX_outer_koln">{t.attractions.fort_IX_outer_koln[lang]}</Link></li>
+                              <li><Link to="/germany/nrw/city/koln/attractions/fort_X_outer_koln">{t.attractions.fort_X_outer_koln[lang]}</Link></li>
+                              <li><Link to="/germany/nrw/city/koln/attractions/fort_XI_outer_koln">{t.attractions.fort_XI_outer_koln[lang]}</Link></li>
                             </ul>
                           </li>
                         </ul>

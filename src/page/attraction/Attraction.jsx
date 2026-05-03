@@ -69,45 +69,47 @@ const Attraction = () => {
 
     // фильтрация саб-объектов
     const applyFilters = (list) => {
-    return list
-      .map(id => attractions.find(a => a.id === id))
-      .filter(Boolean)
-      .filter(attr => {
-        if (subFilters.type !== 'all' && !attr.type?.includes(subFilters.type)) return false;
+        return list
+            .map(id => attractions.find(a => a.id === id))
+            .filter(Boolean)
+            .filter(attr => {
+                if (subFilters.type !== 'all' && !attr.type?.includes(subFilters.type)) return false;
 
-        if (subFilters.rating !== 'all' && attr.rating !== subFilters.rating) return false;
+                if (subFilters.rating !== 'all' && attr.rating !== subFilters.rating) return false;
 
-        if (subFilters.unesco === 'yes' && !attr.unesco_status?.included) return false;
-        if (subFilters.unesco === 'no' && attr.unesco_status?.included) return false;
+                if (subFilters.unesco === 'yes' && !attr.unesco_status?.included) return false;
+                if (subFilters.unesco === 'no' && attr.unesco_status?.included) return false;
 
-        const status = attr.status ?? 'active';
-        if (!subFilters.status.includes(status)) return false;
+                const status = attr.status ?? 'active';
+                if (!subFilters.status.includes(status)) return false;
 
-        return true;
-      });
-  };
+                return true;
+            });
+    };
 
-  const filteredSubObjects = applyFilters(subObjects);
-  const filteredSubObjects2 = applyFilters(subObjects2);
+    const filteredSubObjects = applyFilters(subObjects);
+    const filteredSubObjects2 = applyFilters(subObjects2);
 
-  // --- сортировка ---
-  const sortFn = (a, b) => {
-    if (subFilters.sort === 'name-asc')
-      return (a?.name || '').localeCompare(b?.name || '');
+    // --- сортировка ---
+    const sortFn = (a, b) => {
+        if (subFilters.sort === 'name-asc')
+            return (a?.name || '').localeCompare(b?.name || '');
 
-    if (subFilters.sort === 'name-desc')
-      return (b?.name || '').localeCompare(a?.name || '');
+        if (subFilters.sort === 'name-desc')
+            return (b?.name || '').localeCompare(a?.name || '');
 
-    const ratingOrder = { top: 3, popular: 2, local: 1 };
+        const ratingOrder = { top: 3, popular: 2, local: 1 };
 
-    const diff =
-      (ratingOrder[b.rating] || 0) - (ratingOrder[a.rating] || 0);
+        const diff =
+            (ratingOrder[b.rating] || 0) - (ratingOrder[a.rating] || 0);
 
-    return diff || (a.name || '').localeCompare(b.name || '');
-  };
+        return ((a.sortIndex ?? 0) - (b.sortIndex ?? 0)) || diff || (a.name || '').localeCompare(b.name || '');
 
-  const sortedSubObjects = [...filteredSubObjects].sort(sortFn);
-  const sortedSubObjects2 = [...filteredSubObjects2].sort(sortFn);
+    };
+
+    const sortedSubObjects = [...filteredSubObjects].sort(sortFn);
+    const sortedSubObjects2 = [...filteredSubObjects2].sort(sortFn);
+    const showFilters = subObjects.length + subObjects2.length >= 5;
 
     // Хлебные крошки
     const crumbs = [
@@ -212,7 +214,7 @@ const Attraction = () => {
                 {subObjects.length > 0 && (
                     <section className="attraction-sub">
                         <h3>{attraction.subObjects_title || (lang === "ru" ? "Достопримечательности" : lang === "de" ? "Sehenswürdigkeiten" : "Пам'ятки")}</h3>
-                        {subObjects.length > 5 && <AttractionsFilters lang={lang} filters={subFilters} setFilters={setSubFilters} />}
+                        {showFilters && <AttractionsFilters lang={lang} filters={subFilters} setFilters={setSubFilters} />}
 
                         {sortedSubObjects.map(attr => (
                             <AttractionCardSub key={attr.id} attr={attr} lang={lang} />
@@ -222,7 +224,6 @@ const Attraction = () => {
                 {subObjects2.length > 0 && (
                     <section className="attraction-sub">
                         <h3>{attraction.subObjects_title2 || (lang === "ru" ? "Достопримечательности" : lang === "de" ? "Sehenswürdigkeiten" : "Пам'ятки")}</h3>
-                        {subObjects2.length > 5 && <AttractionsFilters lang={lang} filters={subFilters} setFilters={setSubFilters} />}
 
                         {sortedSubObjects2.map(attr => (
                             <AttractionCardSub key={attr.id} attr={attr} lang={lang} />

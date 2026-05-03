@@ -240,9 +240,8 @@ export const Fotos = {
         { path: "Germany/nrw/koln/koln-city/prussian_fortress_system/outer/005.jpg", title: { ru: "Форт V (внешнее крепostное кольцо) (фото взято с интернета)", ua: "Форт V (зовнішнє фортифікаційне кільце) (фото взято з Інтернету)", de: "Fort V (äußerer Festungsring) (Foto aus dem Internet)" } },
         { path: "Germany/nrw/koln/koln-city/prussian_fortress_system/outer/006.jpg", title: { ru: "Форт VI Deckstein (внешнее крепostное кольцо), 2026", ua: "Форт VI Deckstein (зовнішнє фортифікаційне кільце), 2026", de: "Fort VI Deckstein (äußerer Festungsring), 2026" } },
         { path: "Germany/nrw/koln/koln-city/prussian_fortress_system/outer/009.jpg", title: { ru: "Форт IX (внешнее крепostное кольцо) (фото взято с интернета)", ua: "Форт IX (зовнішнє фортифікаційне кільце) (фото взято з Інтернету)", de: "Fort IX (äußerer Festungsring) (Foto aus dem Internet)" } },
-        { path: "Germany/nrw/koln/koln-city/prussian_fortress_system/010.jpg", title: { ru: "Форт X (фото взято с интернета)", ua: "Форт X (фото взято з Інтернету)", de: "Fort X (Foto aus dem Internet)" } },
-        { path: "Germany/nrw/koln/koln-city/prussian_fortress_system/010-1.jpg", title: { ru: "Форт X (фото взято с интернета)", ua: "Форт X (фото взято з Інтернету)", de: "Fort X (Foto aus dem Internet)" } },
-        { path: "Germany/nrw/koln/koln-city/prussian_fortress_system/011.jpg", title: { ru: "Форт XI (фото взято с интернета)", ua: "Форт XI (фото взято з Інтернету)", de: "Fort XI (Foto aus dem Internet)" } },
+        { path: "Germany/nrw/koln/koln-city/prussian_fortress_system/outer/010.jpg", title: { ru: "Форт X (внешнее крепostное кольцо) (фото взято с интернета)", ua: "Форт X (зовнішнє фортифікаційне кільце) (фото взято з Інтернету)", de: "Fort X (äußerer Festungsring) (Foto aus dem Internet)" } },
+        { path: "Germany/nrw/koln/koln-city/prussian_fortress_system/outer/011.jpg", title: { ru: "Форт XI (внешнее крепostное кольцо)  (фото взято с интернета)", ua: "Форт XI (зовнішнє фортифікаційне кільце) (фото взято з Інтернету)", de: "Fort XI (äußerer Festungsring) (Foto aus dem Internet)" } },
       ],
       fort_I_inner_koln: [
         { path: "Germany/nrw/koln/koln-city/prussian_fortress_system/inner/001.jpg", title: { ru: "Форт I (внутреннее крепостное кольцо) (фото взято с интернета)", ua: "Форт I (внутрішнє фортифікаційне кільце) (фото взято з Інтернету)", de: "Fort I (innerer Festungsring) (Foto aus dem Internet)" } },
@@ -264,6 +263,13 @@ export const Fotos = {
         { path: "Germany/nrw/koln/koln-city/prussian_fortress_system/outer/009.jpg", title: { ru: "Форт IX (внешнее крепостное кольцо) (фото взято с интернета)", ua: "Форт IX (зовнішнє фортифікаційне кільце) (фото взято з Інтернету)", de: "Fort IX (äußerer Festungsring) (Foto aus dem Internet)" } },
         { path: "Germany/nrw/koln/koln-city/prussian_fortress_system/outer/009-1.jpg", title: { ru: "Форт IX (внешнее крепостное кольцо) (фото взято с интернета)", ua: "Форт IX (зовнішнє фортифікаційне кільце) (фото взято з Інтернету)", de: "Fort IX (äußerer Festungsring) (Foto aus dem Internet)" } },
         { path: "Germany/nrw/koln/koln-city/prussian_fortress_system/outer/009-2.jpg", title: { ru: "Форт IX (внешнее крепостное кольцо) (фото взято с интернета)", ua: "Форт IX (зовнішнє фортифікаційне кільце) (фото взято з Інтернету)", de: "Fort IX (äußerer Festungsring) (Foto aus dem Internet)" } },
+      ],
+      fort_X_outer_koln: [
+        { path: "Germany/nrw/koln/koln-city/prussian_fortress_system/outer/010.jpg", title: { ru: "Форт X (внешнее крепостное кольцо) (фото взято с интернета)", ua: "Форт X (зовнішнє фортифікаційне кільце) (фото взято з Інтернету)", de: "Fort X (äußerer Festungsring) (Foto aus dem Internet)" } },
+        { path: "Germany/nrw/koln/koln-city/prussian_fortress_system/outer/010-1.jpg", title: { ru: "Форт X (внешнее крепостное кольцо) (фото взято с интернета)", ua: "Форт X (зовнішнє фортифікаційне кільце) (фото взято з Інтернету)", de: "Fort X (äußerer Festungsring) (Foto aus dem Internet)" } },
+      ],
+      fort_XI_outer_koln: [
+        { path: "Germany/nrw/koln/koln-city/prussian_fortress_system/outer/011.jpg", title: { ru: "Форт XI (внешнее крепостное кольцо) (фото взято с интернета)", ua: "Форт XI (зовнішнє фортифікаційне кільце) (фото взято з Інтернету)", de: "Fort XI (äußerer Festungsring) (Foto aus dem Internet)" } },
       ],
     },
     bruhl: {

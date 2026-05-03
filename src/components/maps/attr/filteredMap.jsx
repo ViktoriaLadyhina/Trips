@@ -14,6 +14,21 @@ L.Icon.Default.mergeOptions({
   shadowUrl: 'https://unpkg.com/leaflet@1.9.4/dist/images/marker-shadow.png',
 });
 
+const defaultIcon = new L.Icon({
+  iconUrl: 'https://unpkg.com/leaflet@1.9.4/dist/images/marker-icon.png',
+  iconRetinaUrl: 'https://unpkg.com/leaflet@1.9.4/dist/images/marker-icon-2x.png',
+  shadowUrl: 'https://unpkg.com/leaflet@1.9.4/dist/images/marker-shadow.png',
+  iconSize: [25, 41],
+  iconAnchor: [12, 41],
+});
+
+const lostIcon = new L.Icon({
+  iconUrl: 'https://raw.githubusercontent.com/pointhi/leaflet-color-markers/master/img/marker-icon-grey.png',
+  shadowUrl: 'https://unpkg.com/leaflet@1.9.4/dist/images/marker-shadow.png',
+  iconSize: [25, 41],
+  iconAnchor: [12, 41],
+});
+
 const moreBtnText = {
   ru: "Подробнее",
   de: "Mehr erfahren",
@@ -43,7 +58,14 @@ const FilteredMap = ({ map, lang = 'ru' }) => {
   const navigate = useNavigate();
   const { attractions: allAttractions = [] } = useAllAttractions();
 
-  // 🔥 1. фильтрация стабильно через useMemo
+  const getIconByStatus = (attr) => {
+  const status = attr.translations?.[lang]?.status ?? 'active';
+  if (status === 'lost') return lostIcon;
+  
+  return defaultIcon;
+};
+
+  // фильтрация стабильно через useMemo
   const attractions = useMemo(() => {
     if (!allAttractions.length) return [];
 
@@ -53,24 +75,24 @@ const FilteredMap = ({ map, lang = 'ru' }) => {
     });
   }, [allAttractions, map]);
 
-  // 🔥 2. mobile detection безопасный
+  // mobile detection безопасный
   const isTouchDevice = L.Browser?.mobile ?? false;
 
   return (
     <MapContainer
-      center={[50.9375, 6.9603]} // fallback (Кёльн)
+      center={[50.9375, 6.9603]} 
       zoom={13}
       style={{
         height: "450px",
         width: "100%",
         marginBottom: "20px"
       }}
-      // 🔥 важно: НЕ даём карте пересоздаваться без причины
+      // НЕ даём карте пересоздаваться без причины
       key={map || 'default-map'}
     >
       <TileLayer url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png" />
 
-      {/* 🔥 bounds только на стабильных данных */}
+      {/* bounds только на стабильных данных */}
       <FitBounds points={attractions} />
 
       {attractions.map(attr => {
@@ -80,8 +102,9 @@ const FilteredMap = ({ map, lang = 'ru' }) => {
 
         return (
           <Marker
-            key={attr.id}
+             key={`${attr.id}-${attr.status}`}
             position={[lat, lng]}
+            icon={getIconByStatus(attr)}
             eventHandlers={
               !isTouchDevice
                 ? {

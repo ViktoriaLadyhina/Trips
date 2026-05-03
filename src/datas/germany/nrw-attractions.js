@@ -1985,14 +1985,15 @@ const datas = [
         type: ["historical_building"], rating: "local",
         path: "prussian_fortress_system_koln",
         countryPath: "germany", regionPath: "nrw", districtPath: "city", cityPath: "koln",
-        fotoCard: "Germany/nrw/koln/koln-city/prussian_fortress_system/010-1.jpg",
+        fotoCard: "Germany/nrw/koln/koln-city/prussian_fortress_system/outer/010-1.jpg",
         mapOpen: "prussian_fortress_system_koln",
-        subObjects: ["fort_I_inner_koln", "fort_II_inner_koln", "fort_III_inner_koln", "fort_V_inner_koln"],
-        subObjects2: ["fort_VI_outer_koln", "fort_IV_outer_koln", "fort_V_outer_koln", "fort_IX_outer_koln"],
+        subObjects: ["fort_I_inner_koln", "fort_II_inner_koln", "fort_III_inner_koln", "fort_V_inner_koln", "fort_VI_inner_koln", "fort_IX_inner_koln"],
+        subObjects2: ["fort_VI_outer_koln", "fort_IV_outer_koln", "fort_V_outer_koln", "fort_IX_outer_koln", "fort_X_outer_koln", "fort_XI_outer_koln"],
         translations: {
             ru: {
                 name: "Прусская крепостная система Кёльна",
                 location: "Кёльн, Германия",
+                status: "partial", note: "часть сооружений сохранилась и используется как общественные пространства или парковые зоны с элементами оригинальных укреплений (редуты, капониры, оборонительные валы), другие объекты утрачены или сохранились только фрагментарно в виде рельефа и отдельных структур.",
                 short_description: "Прусская крепостная система Кёльна – это комплекс оборонительных сооружений XIX века, включающий два кольца фортов, построенных Пруссией вокруг города для его защиты. Сегодня форты сохранились в разной степени: часть используется как жилые и общественные пространства, часть превращена в зелёные зоны, а часть частично сохранилась или утрачена.",
                 full_description: {
                     title: "Описание и история",
@@ -2011,26 +2012,7 @@ const datas = [
                 //     title: "Форты Кёльна и их текущее состояние",
                 //     items: 
                 //         { bold: "Fort VII", text: "– сохранились отдельные фрагменты стен и укреплений, большая часть сооружения утрачена. <br><b>Состояние:</b> руины / фрагменты. <br><b>Где:</b> район Lindenthal, рядом с Grüngürtel (западная часть Кёльна)." },
-                //         // Форт VI являлся частью внутреннего прусского оборонительного кольца Кёльна, построенного в неопрусском стиле примерно в 500 метрах от существующей городской стены. Строительство форта началось 30 декабря 1818 года и было завершено к концу 1823 года, поэтому он относится к первой строительной серии укреплений.
-                //         // Форт получил имя «Принц Фридрих Нидерландский», что было характерно для укреплений первой серии. Архитектурно он отличался более острыми формами валов и рвов, направленных в сторону предполагаемого противника.
-                //         // Проект форта был разработан в Берлине под руководством Карла Фридриха Шинкеля, а строительством руководили военные инженеры. Форт располагался в районе современной улицы Aachener Straße.
-                //         // В отличие от части других укреплений, Форт VI не был включён в новую линию обороны левого берега, построенную в 1882–1891 годах, из-за чего утратил своё военное значение.
-                //         // Окончательный снос форта произошёл в конце 1880-х годов. В настоящее время на местности не сохранилось видимых следов этого укрепления.
-
                 //         { bold: "Fort VIII", text: "– от форта сохранились лишь минимальные элементы, структура практически не читается. <br><b>Состояние:</b> частично утраченный. <br><b>Где:</b> район Sülz, западный сектор крепостного кольца." },
-                //         {
-                //             img: "Germany/nrw/koln/koln-city/prussian_fortress_ring/009.jpg",
-                //             alt: "Fort IX",
-                //             bold: "Fort IX",
-                //             text: "– частично сохранившийся форт с различимыми кирпичными сооружениями и элементами оборонительной структуры. Часть комплекса утрачена или скрыта в ландшафте, однако основные объёмы ещё читаются. <br><b>Состояние:</b> частично сохранился / фрагменты. <br><b>Где:</b> район Zollstock, юго-запад Кёльна."
-                //         },
-                //         { img: "Germany/nrw/koln/koln-city/prussian_fortress_ring/010.jpg", alt: "Fort X", bold: "Fort X", text: "сохранился лучше многих других фортов и был частично переоборудован. Сегодня он окружён парковой зоной и используется как общественное пространство, сохраняя при этом оригинальную структуру прусского укрепления. <br><b>Состояние:</b> частично переиспользован. <br><b>Где:</b> район Raderberg, южная часть Кёльна." },
-                //         {
-                //             img: "Germany/nrw/koln/koln-city/prussian_fortress_ring/011.jpg",
-                //             alt: "Fort XI",
-                //             bold: "Fort XI",
-                //             text: "– сохранившийся форт с отдельными кирпичными сооружениями и фрагментами оборонительной структуры. Хотя значительная часть комплекса утрачена или перестроена, элементы фортификационной архитектуры остаются хорошо различимыми в ландшафте. <br><b>Состояние:</b> частично сохранился / фрагменты. <br><b>Где:</b> район Bayenthal / Marienburg, южный сектор Кёльна."
-                //         },
                 //         { bold: "Fort XII", text: "– один из фортов восточного сектора, частично сохранился и используется ограниченно. <br><b>Состояние:</b> частично сохранён / адаптирован. <br><b>Где:</b> район Deutz, правый берег Рейна (восточная часть Кёльна)." },
                 //     ]
                 // },
@@ -2046,6 +2028,7 @@ const datas = [
             ua: {
                 name: "Прусська фортифікаційна система Кельна",
                 location: "Кельн, Німеччина",
+                status: "partial", note: "частина споруд збереглася та використовується як громадські простори або паркові зони з елементами оригінальних укріплень (редути, капоніри, оборонні вали), інші об’єкти втрачено або вони збереглися лише фрагментарно у вигляді рельєфу та окремих структур.",
                 short_description: "Прусська фортифікаційна система Кельна – це комплекс оборонних споруд XIX століття, що включає два кільця фортів, збудованих Пруссією навколо міста для його захисту. Сьогодні форти збереглися в різному стані: частина використовується як житлові та громадські простори, частина перетворена на зелені зони, а частина частково збереглася або була втрачена.",
                 full_description: {
                     title: "Опис та історія",
@@ -2060,27 +2043,6 @@ const datas = [
                 },
                 subObjects_title: "Деякі форти Кельна (внутрішнє фортифікаційне кільце)",
                 subObjects_title2: "Деякі форти Кельна (зовнішнє фортифікаційне кільце)",
-                // sub_objects: {
-                //     title: "Форти Кельна та їхній сучасний стан",
-                //     items: [
-                //         { img: "Germany/nrw/koln/koln-city/prussian_fortress_ring/006.jpg", alt: "Fort VI Deckstein", bold: "Fort VI Deckstein", text: "є одним із найкраще збережених фортів системи. Після втрати військового значення був частково адаптований під житло та громадські функції. Сьогодні всередині знаходяться житлові приміщення та об’єднання мешканців (Verein), а внутрішній двір використовується як громадський простір. <br><b>Стан:</b> житловий / адаптований. <br><b>Де:</b> район Deckstein, поруч із Decksteiner Weiher (західний Кельн)." },
-                //         { bold: "Fort VII", text: "– збереглися окремі фрагменти стін та укріплень, більша частина споруди втрачена. <br><b>Стан:</b> руїни / фрагменти. <br><b>Де:</b> район Lindenthal, поруч із Grüngürtel (західна частина Кельна)." },
-                //         { bold: "Fort VIII", text: "– від форту збереглися лише мінімальні елементи, структура майже не читається. <br><b>Стан:</b> частково втрачений. <br><b>Де:</b> район Sülz, західний сектор фортифікаційного кільця." },
-                //         {
-                //             img: "Germany/nrw/koln/koln-city/prussian_fortress_ring/009.jpg", alt: "Fort IX",
-                //             bold: "Fort IX",
-                //             text: "– частково збережений форт із розпізнаваними цегляними спорудами та елементами оборонної структури. Частина комплексу втрачена або прихована в ландшафті, однак основні об’єми ще читаються. <br><b>Стан:</b> частково збережений / фрагменти. <br><b>Де:</b> район Zollstock, південний захід Кельна."
-                //         },
-                //         { img: "Germany/nrw/koln/koln-city/prussian_fortress_ring/010.jpg", alt: "Fort X", bold: "Fort X", text: "зберігся краще за багато інших фортів і був частково переобладнаний. Сьогодні він оточений парковою зоною та використовується як громадський простір, зберігаючи при цьому оригінальну структуру прусського укріплення. <br><b>Стан:</b> частково переобладнаний. <br><b>Де:</b> район Raderberg, південна частина Кельна." },
-                //         {
-                //             img: "Germany/nrw/koln/koln-city/prussian_fortress_ring/011.jpg",
-                //             alt: "Fort XI",
-                //             bold: "Fort XI",
-                //             text: "– збережений форт з окремими цегляними спорудами та фрагментами оборонної структури. Хоча значна частина комплексу втрачена або перебудована, елементи фортифікаційної архітектури залишаються добре впізнаваними в ландшафті. <br><b>Стан:</b> частково збережений / фрагменти. <br><b>Де:</b> район Bayenthal / Marienburg, південний сектор Кельна."
-                //         },
-                //         { bold: "Fort XII", text: "– один із фортів східного сектора, частково зберігся та використовується обмежено. <br><b>Стан:</b> частково збережений / адаптований. <br><b>Де:</b> район Deutz, правий берег Рейну (східна частина Кельна)." }
-                //     ]
-                // },
                 meta: {
                     title: "Прусське фортифікаційне кільце Кельна – форти XIX століття та оборонна система міста",
                     description: "Прусське фортифікаційне кільце Кельна – це система з 12 фортів XIX століття, що оточували місто. Дізнайтеся історію фортифікацій, їх сучасний стан і де сьогодні можна побачити збережені укріплення, паркові зони та переобладнані форти.",
@@ -2093,6 +2055,7 @@ const datas = [
             de: {
                 name: "Preußisches Festungssystem Köln",
                 location: "Köln, Deutschland",
+                status: "partial", note: "Ein Teil der Anlagen ist erhalten geblieben und wird als öffentliche Räume oder Parkanlagen mit Elementen der ursprünglichen Befestigungen (Redouten, Kaponnieren, Verteidigungswälle) genutzt, andere Objekte sind verloren gegangen oder nur fragmentarisch als Geländeformen und einzelne Strukturen erhalten.",
                 short_description: "Das preußische Festungssystem von Köln ist ein Komplex von Verteidigungsanlagen des 19. Jahrhunderts, bestehend aus zwei Ringen von Forts, die von Preußen zur Verteidigung der Stadt errichtet wurden. Heute sind die Forts unterschiedlich erhalten: ein Teil wird als Wohn- und öffentliche Räume genutzt, ein Teil wurde zu Grünflächen umgestaltet, und ein Teil ist nur teilweise erhalten oder verloren gegangen.",
                 full_description: {
                     title: "Beschreibung und Geschichte",
@@ -2107,27 +2070,6 @@ const datas = [
                 },
                 subObjects_title: "Einige Kölner Forts (innerer Festungsring)",
                 subObjects_title2: "Einige Kölner Forts (äußerer Festungsring)",
-                // sub_objects: {
-                //     title: "Die Kölner Forts und ihr heutiger Zustand",
-                //     items: [
-                //         { bold: "Fort VII", text: "– nur Fragmente von Mauern und Befestigungen erhalten, der Großteil ist verloren. <br><b>Zustand:</b> Ruinen / Fragmente. <br><b>Ort:</b> Lindenthal, nahe Grüngürtel (Westen Kölns)." },
-                //         { bold: "Fort VIII", text: "– nur minimale Reste erhalten, die Struktur ist kaum erkennbar. <br><b>Zustand:</b> teilweise verloren. <br><b>Ort:</b> Sülz, westlicher Sektor des Festungsrings." },
-                //         {
-                //             img: "Germany/nrw/koln/koln-city/prussian_fortress_ring/009.jpg",
-                //             alt: "Fort IX",
-                //             bold: "Fort IX",
-                //             text: "– teilweise erhaltenes Fort mit erkennbaren Ziegelbauten und Elementen der Verteidigungsstruktur. Ein Teil des Komplexes ist verloren oder im Gelände verborgen, jedoch sind die Hauptvolumen noch erkennbar. <br><b>Zustand:</b> teilweise erhalten / Fragmente. <br><b>Ort:</b> Stadtteil Zollstock, Südwesten Kölns."
-                //         },
-                //         { img: "Germany/nrw/koln/koln-city/prussian_fortress_ring/010.jpg", alt: "Fort X", bold: "Fort X", text: "– eines der am besten erhaltenen Forts, teilweise umgebaut und heute öffentlich genutzt. Die ursprüngliche Struktur ist weiterhin sichtbar. <br><b>Zustand:</b> teilweise umgenutzt. <br><b>Ort:</b> Raderberg, Süden Kölns." },
-                //         {
-                //             img: "Germany/nrw/koln/koln-city/prussian_fortress_ring/011.jpg",
-                //             alt: "Fort XI",
-                //             bold: "Fort XI",
-                //             text: "– erhaltenes Fort mit einzelnen Ziegelbauwerken und Fragmenten der Verteidigungsstruktur. Obwohl ein großer Teil des Komplexes verloren gegangen oder umgebaut wurde, sind Elemente der Festungsarchitektur im Gelände weiterhin gut erkennbar. <br><b>Zustand:</b> teilweise erhalten / Fragmente. <br><b>Ort:</b> Stadtteil Bayenthal / Marienburg, südlicher Sektor Kölns."
-                //         },
-                //         { bold: "Fort XII", text: "– eines der Forts im östlichen Sektor, teilweise erhalten und eingeschränkt genutzt. <br><b>Zustand:</b> teilweise erhalten / angepasst. <br><b>Ort:</b> Deutz, rechtsrheinisch (Osten Kölns)." }
-                //     ]
-                // },
                 meta: {
                     title: "Preußischer Festungsring Köln – Festungen des 19. Jahrhunderts und Verteidigungssystem der Stadt",
                     description: "Der Preußische Festungsring Köln ist ein System aus 12 Festungen des 19. Jahrhunderts, die die Stadt umgaben. Entdecken Sie die Geschichte der Befestigungen, ihren heutigen Zustand und wo man erhaltene Anlagen, Parkflächen und umgenutzte Forts heute sehen kann.",
@@ -2495,6 +2437,189 @@ const datas = [
         }
     },
     {
+        id: "fort_IX_inner_koln",
+        type: ["historical_building"], rating: "local",
+        path: "fort_IX_inner_koln",
+        countryPath: "germany", regionPath: "nrw", districtPath: "city", cityPath: "koln",
+        hiddenFromList: true, showMore: true,
+        map: "prussian_fortress_system_koln",
+        coord: { lat: 50.95376, lng: 6.95124 },
+        translations: {
+            ru: {
+                name: "Форт IX (внутреннее крепостное кольцо)", sortIndex: 9,
+                short_description: "Форт IX – элемент внутреннего прусского оборонительного кольца Кёльна, сформированного в первой половине XIX века.",
+                status: "lost", note: "сооружения полностью снесены около 1912–1913 годов при строительстве железнодорожной инфраструктуры; видимые остатки не сохранились.",
+                full_description: {
+                    title: "Описание и история",
+                    items: [
+                        { bold: "Форт IX", text: "являлся частью внутреннего прусского оборонительного кольца Кёльна, сформированного после перехода города под контроль Пруссии в начале XIX века." },
+                        { text: "Первоначальные укрепления этого участка были созданы в 1810–1820-х годах как часть пояса фортов вокруг левобережной части города." },
+                        { text: "В 1843–1847 годах на месте более ранних сооружений был возведён обновлённый фортификационный объект по проекту Генриха Фердинанда Шуберта с участием Эрнста Людвига фон Астера и Карла Фердинанда Буссе." },
+                        { text: "Форт располагался в юго-западной части Кёльна, в районе современной улицы Escher Straße (Zollstock), и входил в линию укреплений, находившуюся в непосредственной близости от городской застройки." },
+                        { text: "В 1888 году форт был переименован в «Fort Prinz Friedrich der Niederlande», что отражало традицию присвоения укреплениям имён членов правящих домов." },
+                        { text: "С развитием артиллерии и строительством внешнего оборонительного кольца во второй половине XIX века внутренние укрепления утратили своё значение и постепенно выводились из военного использования." },
+                        { text: "К началу XX века территория форта частично использовалась в хозяйственных целях, однако около 1912–1913 годов сооружения были полностью снесены в связи с развитием железнодорожной инфраструктуры." },
+                        { text: "В настоящее время от форта не сохранилось видимых следов." },
+                        { bold: "Где:", text: "район Köln-Zollstock (Escher Straße), левобережная часть бывшего внутреннего оборонительного кольца" }
+                    ]
+                },
+                construction_period: "1816–1825",
+                meta: {
+                    title: "Форт IX (внутреннее крепостное кольцо Кёльна)",
+                    description: "Форт IX – элемент внутреннего прусского оборонительного кольца Кёльна XIX века. До наших дней сохранились лишь фрагменты укреплений.",
+                    ogTitle: "Форт IX (внутреннее крепостное кольцо Кёльна)",
+                    ogDescription: "Форт IX – один из фортов раннего прусского оборонительного кольца Кёльна, частично сохранившийся и интегрированный в городскую среду.",
+                    keywords: "Форт IX Кёльн внутренний, внутренний крепостной пояс Кёльна, Festung Köln innerer Ring, Fort IX Köln Zollstock",
+                    ogImage: ""
+                }
+            },
+            ua: {
+                name: "Форт IX (внутрішнє кріпосне кільце)", sortIndex: 9,
+                short_description: "Форт IX – елемент внутрішнього прусського оборонного кільця Кельна, сформованого у першій половині XIX століття.",
+                status: "lost",
+                note: "споруди повністю знесені приблизно у 1912–1913 роках під час будівництва залізничної інфраструктури; видимі залишки не збереглися.",
+                full_description: {
+                    title: "Опис та історія",
+                    items: [
+                        { bold: "Форт IX", text: "був частиною внутрішнього прусського оборонного кільця Кельна, сформованого після переходу міста під контроль Пруссії на початку XIX століття." },
+                        { text: "Початкові укріплення цієї ділянки були створені у 1810–1820-х роках як частина поясу фортів навколо лівобережної частини міста." },
+                        { text: "У 1843–1847 роках на місці більш ранніх споруд було зведено оновлений фортифікаційний об’єкт за проєктом Генріха Фердинанда Шуберта за участю Ернста Людвіга фон Астера та Карла Фердинанда Буссе." },
+                        { text: "Форт розташовувався у південно-західній частині Кельна, в районі сучасної вулиці Escher Straße (Zollstock), і входив до лінії укріплень, що знаходилася у безпосередній близькості до міської забудови." },
+                        { text: "У 1888 році форт було перейменовано на «Fort Prinz Friedrich der Niederlande», що відображало традицію надання укріпленням імен представників правлячих династій." },
+                        { text: "З розвитком артилерії та будівництвом зовнішнього оборонного кільця у другій половині XIX століття внутрішні укріплення втратили своє військове значення та поступово виводилися з експлуатації." },
+                        { text: "На початку XX століття територія форту частково використовувалася у господарських цілях, однак приблизно у 1912–1913 роках споруди були повністю знесені у зв’язку з розвитком залізничної інфраструктури." },
+                        { text: "Наразі від форту не збереглося видимих слідів." },
+                        { bold: "Де:", text: "район Köln-Zollstock (Escher Straße), лівобережна частина колишнього внутрішнього оборонного кільця" }
+                    ]
+                },
+                construction_period: "1816–1825",
+                meta: {
+                    title: "Форт IX (внутрішнє кріпосне кільце Кельна)",
+                    description: "Форт IX – елемент внутрішнього прусського оборонного кільця Кельна XIX століття. До наших днів збереглися лише фрагменти укріплень.",
+                    ogTitle: "Форт IX (внутрішнє кріпосне кільце Кельна)",
+                    ogDescription: "Форт IX – один із фортів раннього прусського оборонного кільця Кельна, частково збережений та інтегрований у міське середовище.",
+                    keywords: "Форт IX Кельн внутрішній, внутрішній кріпосний пояс Кельна, Festung Köln innerer Ring, Fort IX Köln Zollstock",
+                    ogImage: ""
+                }
+            },
+            de: {
+                name: "Fort IX (innerer Festungsring)", sortIndex: 9,
+                short_description: "Fort IX – ein Element des inneren preußischen Festungsrings von Köln, der in der ersten Hälfte des 19. Jahrhunderts entstanden ist.",
+                status: "lost",
+                note: "die Bauwerke wurden etwa 1912–1913 beim Bau von Eisenbahninfrastruktur vollständig abgetragen; sichtbare Reste sind nicht erhalten.",
+                full_description: {
+                    title: "Beschreibung und Geschichte",
+                    items: [
+                        { bold: "Fort IX", text: "war Teil des inneren preußischen Festungsrings von Köln, der nach der Übernahme der Stadt durch Preußen zu Beginn des 19. Jahrhunderts entstand." },
+                        { text: "Die ersten Befestigungen dieses Abschnitts wurden in den 1810er–1820er Jahren als Teil eines Festungsgürtels um den linksrheinischen Stadtbereich errichtet." },
+                        { text: "In den Jahren 1843–1847 wurde anstelle früherer Anlagen ein erneuertes Befestigungsbauwerk nach den Plänen von Heinrich Ferdinand Schubert unter Beteiligung von Ernst Ludwig von Aster und Karl Ferdinand Busse errichtet." },
+                        { text: "Das Fort befand sich im südwestlichen Teil von Köln im Bereich der heutigen Escher Straße (Zollstock) und war Teil einer Befestigungslinie in unmittelbarer Nähe der städtischen Bebauung." },
+                        { text: "Im Jahr 1888 wurde das Fort in «Fort Prinz Friedrich der Niederlande» umbenannt, was der Tradition entsprach, Befestigungsanlagen nach Mitgliedern regierender Häuser zu benennen." },
+                        { text: "Mit der Entwicklung der Artillerie und dem Bau des äußeren Festungsrings verloren die inneren Befestigungen in der zweiten Hälfte des 19. Jahrhunderts ihre militärische Bedeutung und wurden schrittweise außer Dienst gestellt." },
+                        { text: "Zu Beginn des 20. Jahrhunderts wurde das Gelände teilweise wirtschaftlich genutzt, jedoch wurden die Bauwerke etwa 1912–1913 im Zuge der Entwicklung der Eisenbahninfrastruktur vollständig abgetragen." },
+                        { text: "Heute sind keine sichtbaren Spuren des Forts erhalten." },
+                        { bold: "Wo:", text: "Stadtteil Köln-Zollstock (Escher Straße), linksrheinischer Bereich des ehemaligen inneren Festungsrings" }
+                    ]
+                },
+                construction_period: "1816–1825",
+                meta: {
+                    title: "Fort IX (innerer Festungsring Köln)",
+                    description: "Fort IX – ein Element des inneren preußischen Festungsrings von Köln aus dem 19. Jahrhundert. Nur wenige Spuren sind bis heute erhalten.",
+                    ogTitle: "Fort IX (innerer Festungsring Köln)",
+                    ogDescription: "Fort IX – eines der frühen Forts des inneren Kölner Festungsrings, heute vollständig verschwunden und nur historisch nachweisbar.",
+                    keywords: "Fort IX Köln innerer Ring, innerer Festungsring Köln, Festung Köln innerer Ring, Fort IX Zollstock Köln",
+                    ogImage: ""
+                }
+            }
+        }
+    },
+    {
+        id: "fort_VI_inner_koln",
+        type: ["historical_building"], rating: "local",
+        path: "fort_VI_inner_koln",
+        countryPath: "germany", regionPath: "nrw", districtPath: "city", cityPath: "koln",
+        hiddenFromList: true, showMore: true,
+        map: "prussian_fortress_system_koln",
+        coord: { lat: 50.93363, lng: 6.94278 },
+        translations: {
+            ru: {
+                name: "Форт VI (внутреннее крепостное кольцо)", sortIndex: 6,
+                short_description: "Форт VI – форт внутреннего прусского оборонительного кольца Кёльна, построенный в 1818–1823 годах.",
+                status: "lost", note: "полностью утрачен, не сохранился",
+                full_description: {
+                    title: "Описание и история",
+                    items: [
+                        { bold: "Форт VI", text: "являлся частью раннего внутреннего прусского оборонительного кольца Кёльна, построенного вскоре после перехода города под контроль Пруссии. Он располагался примерно в 500 метрах от тогдашней городской стены и входил в первую серию укреплений города." },
+                        { text: "Строительство началось в 1818 году и было завершено к 1823 году. Форт получил имя «Принц Фридрих Нидерландский», что соответствовало традиции называть ранние укрепления в честь представителей прусской и союзной знати." },
+                        { text: "Архитектурно сооружение отличалось более резкими, угловатыми формами валов и рвов, ориентированными в сторону предполагаемого противника. Проект разрабатывался в Берлине под руководством Карла Фридриха Шинкеля, а реализацией занимались военные инженеры." },
+                        { text: "Форт был расположен в районе современной Aachener Straße и являлся частью западного сектора обороны Кёльна." },
+                        { text: "После строительства более позднего внешнего оборонительного пояса (1880–1890-е годы) форт утратил военное значение и был полностью разобран в конце 1880-х годов." },
+                        { text: "В настоящее время на местности не сохранилось видимых следов сооружения." }
+                    ]
+                },
+                construction_period: "1818–1823",
+                meta: {
+                    title: "Форт VI (внутреннее крепостное кольцо Кёльна)",
+                    description: "Форт VI – утраченный форт раннего прусского оборонительного кольца Кёльна, построенный в 1818–1823 годах.",
+                    ogTitle: "Форт VI Кёльн",
+                    ogDescription: "Утраченный форт внутреннего прусского кольца Кёльна начала XIX века.",
+                    keywords: "Форт VI Кёльн, прусская крепость Кёльн, внутреннее кольцо Кёльна, Fort VI Köln, Festung Köln",
+                    ogImage: ""
+                }
+            },
+            ua: {
+                name: "Форт VI (внутрішнє кріпосне кільце)", sortIndex: 6,
+                short_description: "Форт VI – форт внутрішнього прусського оборонного кільця Кельна, збудований у 1818–1823 роках.",
+                status: "lost", note: "повністю втрачений",
+                full_description: {
+                    title: "Опис та історія",
+                    items: [
+                        { bold: "Форт VI", text: "був частиною раннього внутрішнього прусського оборонного кільця Кельна, побудованого невдовзі після переходу міста під контроль Пруссії. Він розташовувався приблизно за 500 метрів від тодішніх міських мурів і входив до першої серії міських укріплень." },
+                        { text: "Будівництво розпочалося у 1818 році та було завершено у 1823 році. Форт отримав назву «Принц Фрідріх Нідерландський», що відповідало традиції називати ранні укріплення на честь представників прусської та союзної знаті." },
+                        { text: "Архітектурно споруда вирізнялася більш різкими, кутовими формами валів і ровів, орієнтованих у бік передбачуваного противника. Проєкт розроблявся в Берліні під керівництвом Карла Фрідріха Шинкеля, а реалізацією займалися військові інженери." },
+                        { text: "Форт був розташований у районі сучасної Aachener Straße і входив до західного сектору оборони Кельна." },
+                        { text: "Після будівництва пізнішого зовнішнього оборонного поясу (1880–1890-ті роки) форт втратив військове значення і був повністю розібраний наприкінці 1880-х років." },
+                        { text: "На сьогодні на місцевості не збереглося видимих слідів споруди." }
+                    ]
+                },
+                construction_period: "1818–1823",
+                meta: {
+                    title: "Форт VI (внутрішнє кріпосне кільце Кельна)",
+                    description: "Форт VI – втрачений форт раннього прусського кільця Кельна, збудований у 1818–1823 роках.",
+                    ogTitle: "Форт VI Кельн",
+                    ogDescription: "Втрачений форт внутрішнього прусського оборонного кільця Кельна.",
+                    keywords: "Форт VI Кельн, прусська фортеця Кельн, внутрішнє кільце Кельна, Fort VI Köln",
+                    ogImage: ""
+                }
+            },
+            de: {
+                name: "Fort VI (innerer Festungsring)", sortIndex: 6,
+                short_description: "Fort VI – ein Fort des frühen preußischen Verteidigungsrings von Köln, erbaut 1818–1823.",
+                status: "lost", note: "vollständig verschwunden",
+                full_description: {
+                    title: "Beschreibung und Geschichte",
+                    items: [
+                        { bold: "Fort VI", text: "war Teil des frühen inneren preußischen Verteidigungsrings von Köln, der kurz nach der Übergabe der Stadt an Preußen errichtet wurde. Es lag etwa 500 Meter von der damaligen Stadtmauer entfernt und gehörte zur ersten Serie der städtischen Befestigungen." },
+                        { text: "Der Bau begann im Jahr 1818 und wurde 1823 abgeschlossen. Das Fort erhielt den Namen „Prinz Friedrich der Niederlande“, entsprechend der Tradition, frühe Befestigungsanlagen nach Vertretern des preußischen und verbündeten Adels zu benennen." },
+                        { text: "Architektonisch zeichnete sich die Anlage durch schärfere, kantige Formen von Wällen und Gräben aus, die in Richtung des vermuteten Gegners ausgerichtet waren. Der Entwurf wurde in Berlin unter der Leitung von Karl Friedrich Schinkel entwickelt, die Umsetzung erfolgte durch Militäringenieure." },
+                        { text: "Das Fort befand sich im Bereich der heutigen Aachener Straße und war Teil des westlichen Verteidigungssektors von Köln." },
+                        { text: "Nach dem Bau des späteren äußeren Festungsrings (1880er–1890er Jahre) verlor das Fort seine militärische Bedeutung und wurde Ende der 1880er Jahre vollständig abgetragen." },
+                        { text: "Heute sind vor Ort keine sichtbaren Spuren der Anlage erhalten." }
+                    ]
+                },
+                construction_period: "1818–1823",
+                meta: {
+                    title: "Fort VI (innerer Festungsring Köln)",
+                    description: "Fort VI – verschwundenes Fort des frühen preußischen Festungsrings Köln, erbaut 1818–1823.",
+                    ogTitle: "Fort VI Köln",
+                    ogDescription: "Ehemaliges Fort des inneren preußischen Rings in Köln.",
+                    keywords: "Fort VI Köln, innerer Festungsring Köln, preußische Festung Köln",
+                    ogImage: ""
+                }
+            }
+        }
+    },
+    {
         id: "fort_IV_outer_koln",
         type: ["historical_building"], rating: "local",
         path: "fort_IV_outer_koln",
@@ -2502,89 +2627,202 @@ const datas = [
         hiddenFromList: true, showMore: true,
         fotoCard: "Germany/nrw/koln/koln-city/prussian_fortress_system/outer/004.jpg",
         map: "prussian_fortress_system_koln",
-        coord: { lat: 50.97152, lng: 6.86036 },
+        coord: { lat: 50.97152, lng: 6.86038 },
         translations: {
             ru: {
                 name: "Форт IV (внешнее крепостное кольцо)", sortIndex: 4,
-                short_description: "Форт IV – крупный форт внешнего прусского оборонительного кольца Кёльна, построенный в 1874–1876 годах на левом берегу Рейна.",
-                status: "partial", note: "используется в городской инфраструктуре, в основном для спортивных и хозяйственных нужд",
+                short_description: "Форт IV – крупный форт внешнего прусского оборонительного кольца Кёльна, построенный в 1874–1876 годах. Позднее частично демилитаризован и интегрирован в городскую инфраструктуру.",
+                status: "partial", note: "сохранились отдельные казарменные и фортификационные элементы; территория частично используется для спорта, учреждений и хозяйственных нужд города.",
                 full_description: {
                     title: "Описание и история",
                     items: [
-                        { bold: "Форт IV", text: "был построен между 1874 и 1876 годами и являлся одним из крупных фортов внешнего прусского оборонительного кольца Кёльна на левом берегу Рейна. Его размеры составляли около 210 метров в глубину и 330 метров в ширину, при этом форт имел строго симметричную планировку." },
-                        { text: "Форт был спроектирован как артиллерийское укрепление с поддержкой пехоты. В последующие годы он модернизировался: усиливались перекрытия бетоном, устанавливались бронированные наблюдательные купола и укреплялись оборонительные сооружения." },
-                        { text: "Форт IV относился к числу наиболее крупных укреплений внешнего кольца и играл важную роль в обороне западного сектора Кёльна." },
-                        { text: "С 1909 по 1914 год форт использовался подразделениями дирижаблей, после чего они были переведены в новые казармы в районе Бикендорф." },
-                        { text: "После Первой мировой войны, в 1921–1922 годах, большая часть форта была демонтирована в соответствии с Версальским договором, однако часть казарменных зданий сохранилась. Позже территория была перепрофилирована: здесь появились спортивные площадки, учебные и городские службы." },
-                        { text: "Во время Второй мировой войны форт вновь использовался в военных целях. В его подземных помещениях размещались командные пункты и защитные сооружения противовоздушной обороны." },
-                        { text: "Часть комплекса также использовалась как убежище для гражданского населения. Сегодня территория в основном выполняет функции спортивного и хозяйственного объекта города." },
-                        { bold: "Где:", text: "западный Grüngürtel (левый берег Рейна)" }
+                        { bold: "Fort IV", text: "являлся одним из крупных фортов внешнего прусского оборонительного кольца Кёльна, построенного в 1874–1876 годах на левом берегу Рейна в западной части города." },
+                        { text: "Форт относился к типу Biehler-Einheitsfort и имел крупную симметричную многоугольную планировку, характерную для поздней прусской фортификационной системы XIX века." },
+                        { text: "Сооружение было рассчитано на оборону с использованием артиллерии и пехоты и в последующие годы подвергалось модернизации с усилением бетонных перекрытий и установкой бронированных наблюдательных элементов." },
+                        { text: "В начале XX века часть комплекса использовалась военными подразделениями, включая размещение специальных технических служб и авиационных частей." },
+                        { text: "После Первой мировой войны, в 1921–1922 годах, значительная часть укреплений была демонтирована в рамках демилитаризации. Сохранились отдельные казарменные здания и элементы структуры форта." },
+                        { text: "В 1923–1925 годах территория начала перепрофилироваться под гражданские нужды, включая спортивные площадки, садовые и образовательные учреждения, а также коммунальные службы города." },
+                        { text: "Во время Второй мировой войны форт использовался в системе гражданской обороны и противовоздушной защиты, включая размещение командных и укрытийных помещений." },
+                        { text: "В послевоенный период территория была окончательно интегрирована в городской ландшафт и использовалась как спортивная, хозяйственная и административная зона." },
+                        { bold: "Где:", text: "западная часть Grüngürtel (левый берег Рейна), район Bocklemünd / Vogelsang" },
+                        { bold: "<br>Промежуточные форты (Zwischenwerke)", text: "Между основными фортами внешнего прусского оборонительного кольца Кёльна были построены промежуточные укрепления, предназначенные для закрытия промежутков между крупными фортами и усиления оборонительной линии." },
+                        { text: "В секторе Fort IV существовали следующие Zwischenwerke:" },
+                        { text: "<ul><li><b>Zwischenwerk IVa (Bocklemünd)</b> – построен в 1875–1877 годах к северу от Mühlenweg. В 1920-х годах был полностью разрушен и позднее территория была перепрофилирована под спортивные объекты по проекту Фрица Энке. Сегодня сохранились лишь слабые следы рельефа (фланговые рвы и валы).</li></ul>" },
+                        { text: "<ul><li><b>Zwischenwerk IVb (Vogelsang)</b> – построен в 1875–1877 годах восточнее Belvederestraße. В 1920-х годах частично демонтирован и окончательно ликвидирован. Сегодня сохраняются лишь слабые следы рельефа и фрагменты ландшафтных структур.</li></ul>" },
+                        { text: "После утраты военного значения большинство промежуточных укреплений было разрушено или перепрофилировано, а их остатки интегрированы в современную городскую инфраструктуру и зелёные зоны." }
                     ]
                 },
                 construction_period: "1874–1876",
                 meta: {
                     title: "Форт IV (внешнее крепостное кольцо Кёльна)",
-                    description: "Форт IV – один из крупных фортов внешнего крепостного кольца Кёльна, построенный в 1874–1876 годах. Частично сохранился и в настоящее время интегрирован в городскую инфраструктуру.",
+                    description: "Форт IV – крупный форт внешнего оборонительного кольца Кёльна, построенный в 1874–1876 годах. Частично сохранился и интегрирован в городскую инфраструктуру.",
                     ogTitle: "Форт IV (внешнее крепостное кольцо Кёльна)",
-                    ogDescription: "Форт IV – крупный форт внешнего оборонительного кольца Кёльна конца XIX века. Частично сохранившийся объект, использовавшийся от артиллерийского укрепления до базы дирижаблей.",
-                    keywords: "Форт IV Кёльн, Форт 4 Кёльн, внешнее крепостное кольцо Кёльна, prussian fort Cologne, Fort IV Köln, Grüngürtel Köln, дирижабли Кёльн, Festung Köln",
+                    ogDescription: "Форт IV – исторический форт внешнего кольца Кёльна XIX века, частично сохранившийся и адаптированный под городские функции.",
+                    keywords: "Форт IV Кёльн, Biehler Fort Köln, внешнее крепостное кольцо Кёльна, Fort IV Köln, Festung Köln Bocklemünd",
                     ogImage: "https://our-travels.info/foto/Germany/nrw/koln/koln-city/prussian_fortress_system/outer/004.jpg"
                 }
             },
             ua: {
-                name: "Форт IV (зовнішнє кріпосне кільце)", sortIndex: 4,
-                short_description: "Форт IV – великий форт зовнішнього прусського оборонного кільця Кельна, збудований у 1874–1876 роках на лівому березі Рейну. ",
-                status: "partial", note: "використовується в міській інфраструктурі, переважно для спортивних і господарських потреб",
+                name: "Форт IV (зовнішнє фортифікаційне кільце)", sortIndex: 4,
+                short_description: "Форт IV – великий форт зовнішнього прусського оборонного кільця Кельна, збудований у 1874–1876 роках. Пізніше частково демілітаризований та інтегрований у міську інфраструктуру.",
+                status: "partial", note: "збереглися окремі казармені та фортифікаційні елементи; територія частково використовується для спорту, установ та господарських потреб міста.",
                 full_description: {
                     title: "Опис та історія",
                     items: [
-                        { bold: "Форт IV", text: "був збудований між 1874 і 1876 роками і був одним із великих фортів зовнішнього прусського оборонного кільця Кельна на лівому березі Рейну. Його розміри становили близько 210 метрів у глибину та 330 метрів у ширину, при цьому форт мав суворо симетричне планування." },
-                        { text: "Форт був спроєктований як артилерійське укріплення з підтримкою піхоти. У наступні роки він модернізувався: перекриття посилювалися бетоном, встановлювалися броньовані спостережні куполи та укріплювалися оборонні споруди." },
-                        { text: "Форт IV належав до числа найбільш великих укріплень зовнішнього кільця і відігравав важливу роль в обороні західного сектора Кельна." },
-                        { text: "З 1909 по 1914 рік форт використовувався підрозділами дирижаблів, після чого вони були переведені до нових казарм у районі Бікендорф." },
-                        { text: "Після Першої світової війни, у 1921–1922 роках, більша частина форту була демонтована відповідно до Версальського договору, однак частина казармених будівель збереглася. Пізніше територія була перепрофільована: тут з’явилися спортивні майданчики, навчальні та міські служби." },
-                        { text: "Під час Другої світової війни форт знову використовувався у військових цілях. У його підземних приміщеннях розміщувалися командні пункти та захисні споруди протиповітряної оборони." },
-                        { text: "Частина комплексу також використовувалася як укриття для цивільного населення. Сьогодні територія в основному виконує функції спортивного та господарського об’єкта міста." },
-                        { bold: "Де:", text: "західний Grüngürtel (лівий берег Рейну)" }
+                        { bold: "Fort IV", text: "був одним із великих фортів зовнішнього прусського оборонного кільця Кельна, збудованого у 1874–1876 роках на лівому березі Рейну в західній частині міста." },
+                        { text: "Форт належав до типу Biehler-Einheitsfort і мав велику симетричну багатокутну планувальну структуру, характерну для пізньої прусської фортифікаційної системи XIX століття." },
+                        { text: "Споруда була розрахована на оборону із застосуванням артилерії та піхоти і в подальші роки зазнавала модернізації з посиленням бетонних перекриттів та встановленням броньованих спостережних елементів." },
+                        { text: "На початку XX століття частина комплексу використовувалася військовими підрозділами, включно з розміщенням спеціальних технічних служб та авіаційних частин." },
+                        { text: "Після Першої світової війни, у 1921–1922 роках, значна частина укріплень була демонтована в рамках демілітаризації. Збереглися окремі казармені будівлі та елементи структури форту." },
+                        { text: "У 1923–1925 роках територія почала перепрофілюватися під цивільні потреби, включно зі спортивними майданчиками, садовими та освітніми установами, а також міськими комунальними службами." },
+                        { text: "Під час Другої світової війни форт використовувався в системі цивільної оборони та протиповітряного захисту, включно з розміщенням командних пунктів та укриттів." },
+                        { text: "У повоєнний період територія була остаточно інтегрована в міський ландшафт і використовувалася як спортивна, господарська та адміністративна зона." },
+                        { bold: "Де:", text: "західна частина Grüngürtel (лівий берег Рейну), район Bocklemünd / Vogelsang" },
+                        { bold: "<br>Проміжні форти (Zwischenwerke)", text: "Між основними фортами зовнішнього прусського оборонного кільця Кельна були збудовані проміжні укріплення, призначені для закриття проміжків між великими фортами та посилення оборонної лінії." },
+                        { text: "У секторі Fort IV існували такі Zwischenwerke:" },
+                        { text: "<ul><li><b>Zwischenwerk IVa (Bocklemünd)</b> – збудований у 1875–1877 роках на північ від Mühlenweg. У 1920-х роках був повністю зруйнований, після чого територію перепрофільовано під спортивні об’єкти за проєктом Фріца Енке. Сьогодні збереглися лише слабкі сліди рельєфу (флангові рови та вали).</li></ul>" },
+                        { text: "<ul><li><b>Zwischenwerk IVb (Vogelsang)</b> – збудований у 1875–1877 роках на схід від Belvederestraße. У 1920-х роках частково демонтований і остаточно ліквідований. Сьогодні зберігаються лише слабкі сліди рельєфу та фрагменти ландшафтних структур.</li></ul>" },
+                        { text: "Після втрати військового значення більшість проміжних укріплень було зруйновано або перепрофільовано, а їх залишки інтегровано в сучасну міську інфраструктуру та зелені зони." }
                     ]
                 },
                 construction_period: "1874–1876",
                 meta: {
-                    title: "Форт IV (зовнішнє кріпосне кільце Кельна)",
-                    description: "Форт IV – один із великих фортів зовнішнього кріпосного кільця Кельна, збудований у 1874–1876 роках. Частково зберігся і нині інтегрований у міську інфраструктуру.",
-                    ogTitle: "Форт IV (зовнішнє кріпосне кільце Кельна)",
-                    ogDescription: "Форт IV – великий форт зовнішнього оборонного кільця Кельна кінця XIX століття. Частково збережений об’єкт, що використовувався від артилерійського укріплення до бази дирижаблів.",
-                    keywords: "Форт IV Кельн, Форт 4 Кельн, зовнішнє кріпосне кільце Кельна, прусська фортеця Кельна, Fort IV Köln, Grüngürtel Köln, дирижаблі Кельн, Festung Köln",
+                    title: "Форт IV (зовнішнє фортифікаційне кільце Кельна)",
+                    description: "Форт IV – великий форт зовнішнього оборонного кільця Кельна, збудований у 1874–1876 роках. Частково зберігся та інтегрований у міську інфраструктуру.",
+                    ogTitle: "Форт IV (зовнішнє фортифікаційне кільце Кельна)",
+                    ogDescription: "Форт IV – історичний форт зовнішнього кільця Кельна XIX століття, частково збережений та адаптований під міські функції.",
+                    keywords: "Форт IV Кельн, Biehler Fort Köln, зовнішнє фортифікаційне кільце Кельна, Fort IV Köln, Festung Köln Bocklemünd",
                     ogImage: "https://our-travels.info/foto/Germany/nrw/koln/koln-city/prussian_fortress_system/outer/004.jpg"
                 }
             },
             de: {
                 name: "Fort IV (äußerer Festungsring)", sortIndex: 4,
-                short_description: "Fort IV – ein großes Fort des äußeren preußischen Verteidigungsrings von Köln, erbaut in den Jahren 1874–1876 auf dem linken Rheinufer. ",
-                status: "partial", note: "wird in der städtischen Infrastruktur genutzt, hauptsächlich für sportliche und wirtschaftliche Zwecke",
+                short_description: "Fort IV – ein großes Fort des äußeren preußischen Festungsrings von Köln, erbaut 1874–1876. Später teilweise demilitarisiert und in die städtische Infrastruktur integriert.",
+                status: "partial", note: "erhalten sind einzelne kasernierte und fortifikatorische Elemente; das Gelände wird teilweise für Sport, Einrichtungen und kommunale Zwecke genutzt.",
                 full_description: {
                     title: "Beschreibung und Geschichte",
                     items: [
-                        { bold: "Fort IV", text: "wurde zwischen 1874 und 1876 errichtet und war eines der größeren Forts des äußeren preußischen Verteidigungsrings von Köln auf dem linken Rheinufer. Seine Ausmaße betrugen etwa 210 Meter in der Tiefe und 330 Meter in der Breite, wobei das Fort eine streng symmetrische Anlage aufwies." },
-                        { text: "Das Fort wurde als Artilleriebefestigung mit Unterstützung der Infanterie konzipiert. In den folgenden Jahren wurde es modernisiert: Decken wurden mit Beton verstärkt, gepanzerte Beobachtungskuppeln installiert und die Verteidigungsanlagen weiter ausgebaut." },
-                        { text: "Fort IV gehörte zu den größeren Befestigungen des äußeren Rings und spielte eine wichtige Rolle bei der Verteidigung des westlichen Sektors von Köln." },
-                        { text: "Von 1909 bis 1914 wurde das Fort von Luftschiff-Einheiten genutzt, danach wurden diese in neue Kasernen im Stadtteil Bickendorf verlegt." },
-                        { text: "Nach dem Ersten Weltkrieg wurde in den Jahren 1921–1922 der größte Teil des Forts gemäß den Bestimmungen des Versailler Vertrags abgetragen, ein Teil der Kasernengebäude blieb jedoch erhalten. Später wurde das Gelände umgenutzt: Es entstanden Sportanlagen sowie Einrichtungen für Ausbildung und städtische Dienste." },
-                        { text: "Während des Zweiten Weltkriegs wurde das Fort erneut militärisch genutzt. In den unterirdischen Räumen befanden sich Befehlsstellen und Schutzanlagen der Luftverteidigung." },
-                        { text: "Ein Teil der Anlage diente außerdem als Schutzraum für die Zivilbevölkerung. Heute wird das Gelände überwiegend als Sport- und Infrastrukturobjekt der Stadt genutzt." },
-                        { bold: "Wo:", text: "westlicher Grüngürtel (linkes Rheinufer)" }
+                        { bold: "Fort IV", text: "war eines der großen Forts des äußeren preußischen Festungsrings von Köln, das zwischen 1874 und 1876 am linken Rheinufer im westlichen Stadtgebiet errichtet wurde." },
+                        { text: "Das Fort gehörte zum Typ Biehler-Einheitsfort und wies eine große symmetrische polygonale Struktur auf, die für die späte preußische Festungsbauweise des 19. Jahrhunderts charakteristisch ist." },
+                        { text: "Die Anlage war für Verteidigungszwecke mit Artillerie und Infanterie ausgelegt und wurde in späteren Jahren durch Betonverstärkungen und den Einbau gepanzerter Beobachtungselemente modernisiert." },
+                        { text: "Zu Beginn des 20. Jahrhunderts wurde ein Teil der Anlage von militärischen Einheiten genutzt, einschließlich spezieller technischer Dienste und Luftfahrtverbände." },
+                        { text: "Nach dem Ersten Weltkrieg wurden in den Jahren 1921–1922 große Teile der Befestigungsanlagen im Rahmen der Demilitarisierung abgetragen. Einzelne Kasernengebäude und strukturelle Elemente blieben erhalten." },
+                        { text: "Zwischen 1923 und 1925 wurde das Gelände zunehmend für zivile Zwecke umgenutzt, darunter Sportanlagen, Garten- und Bildungseinrichtungen sowie kommunale Dienste der Stadt." },
+                        { text: "Während des Zweiten Weltkriegs wurde das Fort im System des Zivilschutzes und der Luftverteidigung genutzt, einschließlich der Einrichtung von Kommandostellen und Schutzräumen." },
+                        { text: "In der Nachkriegszeit wurde das Gelände vollständig in die städtische Landschaft integriert und als Sport-, Wirtschafts- und Verwaltungsfläche genutzt." },
+                        { bold: "Wo:", text: "westlicher Teil des Grüngürtels (linkes Rheinufer), Bereich Bocklemünd / Vogelsang" },
+                        { bold: "<br>Zwischenwerke", text: "Zwischen den Hauptforts des äußeren preußischen Festungsrings von Köln wurden Zwischenbefestigungen errichtet, die dazu dienten, Lücken zwischen den großen Forts zu schließen und die Verteidigungslinie zu verstärken." },
+                        { text: "Im Sektor Fort IV existierten folgende Zwischenwerke:" },
+                        { text: "<ul><li><b>Zwischenwerk IVa (Bocklemünd)</b> – erbaut 1875–1877 nördlich des Mühlenwegs. In den 1920er Jahren vollständig zerstört und später in Sportanlagen nach einem Entwurf von Fritz Encke umgewandelt. Heute sind nur schwache Relikte der Geländestruktur (Flankengräben und Wälle) erhalten.</li></ul>" },
+                        { text: "<ul><li><b>Zwischenwerk IVb (Vogelsang)</b> – erbaut 1875–1877 östlich der Belvederestraße. In den 1920er Jahren teilweise abgetragen und endgültig beseitigt. Heute sind nur schwache Geländespuren und Fragmente der Landschaftsstruktur sichtbar.</li></ul>" },
+                        { text: "Nach dem Verlust der militärischen Funktion wurden die meisten Zwischenwerke zerstört oder umgenutzt, und ihre Reste in die moderne städtische Infrastruktur und Grünflächen integriert." }
                     ]
                 },
                 construction_period: "1874–1876",
                 meta: {
                     title: "Fort IV (äußerer Festungsring Köln)",
-                    description: "Fort IV – eines der größeren Forts des äußeren Festungsrings von Köln, erbaut 1874–1876. Teilweise erhalten und heute in die städtische Infrastruktur integriert.",
+                    description: "Fort IV – großes Fort des äußeren Festungsrings von Köln, erbaut 1874–1876. Teilweise erhalten und in die städtische Infrastruktur integriert.",
                     ogTitle: "Fort IV (äußerer Festungsring Köln)",
-                    ogDescription: "Fort IV – großes Fort des äußeren Verteidigungsrings von Köln aus dem späten 19. Jahrhundert. Teilweise erhaltenes Objekt mit Nutzung von der Artilleriebefestigung bis zur Luftschiffbasis.",
-                    keywords: "Fort IV Köln, äußerer Festungsring Köln, preußische Festung Köln, Fort IV Geschichte, Grüngürtel Köln, Luftschiffe Köln, Festung Köln",
+                    ogDescription: "Fort IV – historisches Fort des äußeren Kölner Festungsrings des 19. Jahrhunderts, teilweise erhalten und an heutige Nutzungen angepasst.",
+                    keywords: "Fort IV Köln, Biehler Fort Köln, äußerer Festungsring Köln, Fort IV Köln, Festung Köln Bocklemünd",
                     ogImage: "https://our-travels.info/foto/Germany/nrw/koln/koln-city/prussian_fortress_system/outer/004.jpg"
                 }
             }
+        }
+    },
+    {
+        id: "zw-a_fort_IV_outer_koln",
+        type: ["historical_building"],
+        path: "fort_IV_outer_koln",
+        countryPath: "germany", regionPath: "nrw", districtPath: "city", cityPath: "koln",
+        map: "prussian_fortress_system_koln",
+        coord: { lat: 50.9696, lng: 6.8708 },
+        hiddenFromList: true,
+        translations: {
+            ru: {
+                name: "Промежуточное укрепление IVa (Bocklemünd) (Форт IV, Кёльн)",
+                status: "lost", note: "сохранились лишь слабые следы рельефа (фланговые рвы и валы).",
+                meta: {
+                    title: "Промежуточное укрепление IVa (Bocklemünd) (Zwischenwerk IVa, Форт IV, Кёльн)",
+                    description: "построен в 1875–1877 годах к северу от Mühlenweg.",
+                    ogTitle: "Промежуточное укрепление IVa (Bocklemünd) (Zwischenwerk IVa, Кёльн)",
+                    ogDescription: "Zwischenwerk IVa – элемент системы промежуточных укреплений прусского кольца Кёльна XIX века. ",
+                    keywords: "",
+                    ogImage: ""
+                }
+            },
+            ua: {
+                name: "Проміжне укріплення IVa (Bocklemünd) (Форт IV, Кельн)",
+                status: "lost", note: "збереглися лише слабкі сліди рельєфу (флангові рови та вали).",
+                meta: {
+                    title: "Проміжне укріплення IVa (Bocklemünd) (Zwischenwerk IVa, Форт IV, Кельн)",
+                    description: "збудоване у 1875–1877 роках на північ від Mühlenweg.",
+                    ogTitle: "Проміжне укріплення IVa (Bocklemünd) (Zwischenwerk IVa, Кельн)",
+                    ogDescription: "Zwischenwerk IVa – елемент системи проміжних укріплень прусського кільця Кельна XIX століття.",
+                    keywords: "",
+                    ogImage: ""
+                }
+            },
+            de: {
+                name: "Zwischenwerk IVa (Bocklemünd) (Fort IV, Köln)",
+                status: "lost", note: "Es sind nur schwache Geländespuren erhalten (Flankengräben und Wälle).",
+                meta: {
+                    title: "Zwischenwerk IVa (Bocklemünd) (Zwischenwerk IVa, Fort IV, Köln)",
+                    description: "erbaut 1875–1877 nördlich des Mühlenwegs.",
+                    ogTitle: "Zwischenwerk IVa (Bocklemünd) (Zwischenwerk IVa, Köln)",
+                    ogDescription: "Zwischenwerk IVa – ein Element des Systems der Zwischenbefestigungen des preußischen Festungsrings von Köln aus dem 19. Jahrhundert.",
+                    keywords: "",
+                    ogImage: ""
+                }
+            }
+        }
+    },
+    {
+        id: "zw-b_fort_IV_outer_koln",
+        type: ["historical_building"],
+        path: "fort_IV_outer_koln",
+        countryPath: "germany", regionPath: "nrw", districtPath: "city", cityPath: "koln",
+        map: "prussian_fortress_system_koln",
+        coord: { lat: 50.9585, lng: 6.8615 },
+        hiddenFromList: true,
+        translations: {
+            ru: {
+                name: "Промежуточное укрепление IVb (Vogelsang) (Форт IV, Кёльн)",
+                status: "lost", note: "сохраняются лишь слабые следы рельефа и фрагменты ландшафтных структур.",
+                meta: {
+                    title: "Промежуточное укрепление IVb (Vogelsang) (Zwischenwerk IVa, Форт IV, Кёльн)",
+                    description: "построен в 1875–1877 годах восточнее Belvederestraße. В 1920-х годах частично демонтирован и окончательно ликвидирован.",
+                    ogTitle: "Промежуточное укрепление IVb (Vogelsang) (Zwischenwerk IVb, Кёльн)",
+                    ogDescription: "Zwischenwerk IVb – элемент системы промежуточных укреплений прусского кольца Кёльна XIX века. ",
+                    keywords: "",
+                    ogImage: ""
+                }
+            },
+            ua: {
+                name: "Проміжне укріплення IVb (Vogelsang) (Форт IV, Кельн)",
+                status: "lost", note: "зберігаються лише слабкі сліди рельєфу та фрагменти ландшафтних структур.",
+                meta: {
+                    title: "Проміжне укріплення IVb (Vogelsang) (Zwischenwerk IVb, Форт IV, Кельн)",
+                    description: "збудоване у 1875–1877 роках на схід від Belvederestraße. У 1920-х роках частково демонтоване та остаточно ліквідоване.",
+                    ogTitle: "Проміжне укріплення IVb (Vogelsang) (Zwischenwerk IVb, Кельн)",
+                    ogDescription: "Zwischenwerk IVb – елемент системи проміжних укріплень прусського кільця Кельна XIX століття.",
+                    keywords: "",
+                    ogImage: ""
+                }
+            },
+            de: {
+                name: "Zwischenwerk IVb (Vogelsang) (Fort IV, Köln)",
+                status: "lost", note: "Es sind nur schwache Geländespuren und Fragmente landschaftlicher Strukturen erhalten.",
+                meta: {
+                    title: "Zwischenwerk IVb (Vogelsang) (Zwischenwerk IVb, Fort IV, Köln)",
+                    description: "erbaut 1875–1877 östlich der Belvederestraße. In den 1920er Jahren teilweise abgetragen und endgültig beseitigt.",
+                    ogTitle: "Zwischenwerk IVb (Vogelsang) (Zwischenwerk IVb, Köln)",
+                    ogDescription: "Zwischenwerk IVb – ein Element des Systems der Zwischenbefestigungen des preußischen Festungsrings von Köln aus dem 19. Jahrhundert.",
+                    keywords: "",
+                    ogImage: ""
+                }
+            }
+
         }
     },
     {
@@ -2960,6 +3198,470 @@ const datas = [
             }
         }
     },
+    {
+        id: "fort_X_outer_koln",
+        type: ["historical_building"], rating: "local",
+        path: "fort_X_outer_koln",
+        countryPath: "germany", regionPath: "nrw", districtPath: "city", cityPath: "koln",
+        hiddenFromList: true, showMore: true,
+        map: "prussian_fortress_system_koln",
+        fotoCard: "Germany/nrw/koln/koln-city/prussian_fortress_system/outer/010.jpg",
+        coord: { lat: 50.93833, lng: 7.03569 },
+        translations: {
+            ru: {
+                name: "Форт X (внешнее крепостное кольцо)", sortIndex: 10,
+                short_description: "Форт X – крупный форт внешнего прусского оборонительного кольца Кёльна, построенный в 1877–1880 годах и позднее частично преобразованный в парковое общественное пространство.",
+                status: "partial", note: "сохранилась значительная часть фортификационной структуры (рвы, валы, элементы казематов); территория полностью интегрирована в городской парк и используется как общественное пространство.",
+                full_description: {
+                    title: "Описание и история",
+                    items: [
+                        { bold: "Fort X (Höhenberg)", text: "являлся частью внешнего прусского оборонительного кольца Кёльна, построенного в 1877–1880 годах как стандартный форт типа Biehler-Einheitsfort." },
+                        { text: "Форт располагался к востоку от Frankfurter Straße и к югу от Nohlenweg, в районе современного Höhenberg / Raderberg." },
+                        { text: "В 1922 году форт был частично демонтирован, после чего в 1923 году был разработан проект его преобразования в «зелёный форт» архитектором Фрицем Энке. В 1927–1928 годах территория была переоформлена в парковое пространство с сохранением элементов укреплений." },
+                        { text: "В период Второй мировой войны форт использовался как главная командная позиция подразделений противовоздушной обороны. В послевоенное время на его территории размещались аварийные убежища." },
+                        { text: "Примерно с 1970 года объект использовался городскими службами, включая Департамент парков и Управление гражданской обороны, а с середины 1980-х годов – общественными объединениями и клубами." },
+                        { text: "Сегодня сохранились элементы оригинальной структуры: стена Kehlgraben, фланговые рвы, части валов, подъездные пути, а планировка дорожек повторяет исторический контур форта." },
+                        { bold: "Где:", text: "район Köln-Höhenberg / Raderberg, южная часть внешнего оборонительного кольца" },
+                        { bold: "<br>Промежуточные форты (Zwischenwerke)", text: "Между основными фортами внешнего прусского оборонительного кольца Кёльна были построены промежуточные укрепления, предназначенные для закрытия разрывов между крупными фортами и усиления перекрёстного артиллерийского огня." },
+                        { text: "В секторе Fort X существовали следующие Zwischenwerke:" },
+                        { text: "<ul><li><b>Zwischenwerk Xa (Vingst)</b> – построен в 1877–1879 годах восточнее Vingster Ring, севернее Hardtgebuschweg. Являлся частью промежуточной линии укреплений между основными фортами внешнего прусского оборонительного кольца Кёльна.</li></ul>" },
+                        { text: "В 1922 году укрепление было частично демонтировано, после чего в 1923 году был разработан проект преобразования Фрицем Энке в формат «Freiluft- und Gartenschule» (школа под открытым небом и садовая школа). В 1926–1927 годах проект был реализован." },
+                        { text: "В 1951 году территория использовалась как жилой участок (около девяти арендаторов). Около 1956 года сооружения были окончательно уничтожены в результате взрыва." },
+                        { text: "В настоящее время видимые постройки не сохранились. В ландшафте частично читаются следы фланговых рвов и валов в виде рельефных форм и структуры дорожной сети." },
+                        { text: "<ul><li><b>Zwischenwerk Xb (Höhenberg)</b> – построен в 1877–1879 годах в районе Merheimer Heide. В 1920-х годах был полностью разрушен. В настоящее время видимые следы отсутствуют.</li></ul>" },
+                        { text: "<ul><li><b>Zwischenwerk Xc (Buchheim)</b> – построен в 1877–1879 годах южнее Schlagbaumweg. В 1922 году частично демонтирован, позднее использовался под хозяйственные и спортивные нужды (конюшни, мастерские, помещения клуба). В 1966 году частично взорван. Сегодня сохранились отдельные элементы, используемые как вспомогательные помещения спортивного объекта.</li></ul>" },
+                        { text: "После ликвидации военного значения большинство Zwischenwerke было разрушено или перепрофилировано. Часть объектов сохранилась только фрагментарно, часто встроенная в современные спортивные или хозяйственные сооружения." }
+                    ]
+                },
+                construction_period: "1877–1881",
+                meta: {
+                    title: "Форт X (внешнее крепостное кольцо Кёльна)",
+                    description: "Форт X – крупный форт внешнего оборонительного кольца Кёльна, построенный в 1877–1881 годах. Использовался в военных и гражданских целях и частично сохранился до настоящего времени.",
+                    ogTitle: "Форт X (внешнее крепостное кольцо Кёльна)",
+                    ogDescription: "Форт X – исторический форт внешнего кольца Кёльна XIX века. Бывший военный объект, использовавшийся также в XX веке для различных гражданских целей.",
+                    keywords: "Форт X Кёльн, Форт 9 Кёльн, внешнее крепостное кольцо Кёльна, Biehler Fort Köln, Fort IX Köln, Festung Köln, Kalk Fort IX, Köln Rath Fort",
+                    ogImage: "https://our-travels.info/foto/Germany/nrw/koln/koln-city/prussian_fortress_system/outer/010.jpg"
+                }
+            },
+            ua: {
+                name: "Форт X (зовнішнє кріпосне кільце)", sortIndex: 10,
+                short_description: "Форт X – великий форт зовнішнього прусського оборонного кільця Кельна, збудований у 1877–1880 роках і пізніше частково перетворений на парковий громадський простір.",
+                status: "partial", note: "збереглася значна частина фортифікаційної структури (рів, вали, елементи казематів); територія повністю інтегрована в міський парк і використовується як громадський простір.",
+                full_description: {
+                    title: "Опис та історія",
+                    items: [
+                        { bold: "Fort X (Höhenberg)", text: "був частиною зовнішнього прусського оборонного кільця Кельна, збудованого у 1877–1880 роках як стандартний форт типу Biehler-Einheitsfort." },
+                        { text: "Форт розташовувався на схід від Frankfurter Straße та на південь від Nohlenweg, у районі сучасного Höhenberg / Raderberg." },
+                        { text: "У 1922 році форт був частково демонтований, після чого у 1923 році був розроблений проєкт його перетворення на «зелений форт» архітектором Фріцем Енке. У 1927–1928 роках територія була переоблаштована в парковий простір зі збереженням елементів укріплень." },
+                        { text: "У період Другої світової війни форт використовувався як головна командна позиція підрозділів протиповітряної оборони. У післявоєнний час на його території розміщувалися аварійні укриття." },
+                        { text: "Приблизно з 1970 року об’єкт використовувався міськими службами, включаючи Департамент парків та Управління цивільного захисту, а з середини 1980-х років – громадськими об’єднаннями та клубами." },
+                        { text: "Сьогодні збереглися елементи оригінальної структури: стіна Kehlgraben, флангові рови, частини валів, під’їзні шляхи, а планування доріжок повторює історичний контур форту." },
+                        { bold: "Де:", text: "район Köln-Höhenberg / Raderberg, південна частина зовнішнього оборонного кільця" },
+                        { bold: "<br>Проміжні форти (Zwischenwerke)", text: "Між основними фортами зовнішнього прусського оборонного кільця Кельна були збудовані проміжні укріплення, призначені для закриття розривів між великими фортами та посилення перехресного артилерійського вогню." },
+                        { text: "У секторі Fort X існували такі Zwischenwerke:" },
+                        { text: "<ul><li><b>Zwischenwerk Xa (Vingst)</b> – збудований у 1877–1879 роках на схід від Vingster Ring, на північ від Hardtgebuschweg. Був частиною проміжної лінії укріплень між основними фортами зовнішнього прусського оборонного кільця Кельна.</li></ul>" },
+                        { text: "У 1922 році укріплення було частково демонтоване, після чого у 1923 році був розроблений проєкт перетворення Фріцем Енке у формат «Freiluft- und Gartenschule» (школа просто неба та садова школа). У 1926–1927 роках проєкт був реалізований." },
+                        { text: "У 1951 році територія використовувалася як житлова ділянка (близько дев’яти орендарів). Приблизно у 1956 році споруди були остаточно знищені внаслідок вибуху." },
+                        { text: "Наразі видимі будівлі не збереглися. У ландшафті частково читаються сліди флангових ровів і валів у вигляді рельєфних форм та структури дорожньої мережі." },
+                        { text: "<ul><li><b>Zwischenwerk Xb (Höhenberg)</b> – збудований у 1877–1879 роках у районі Merheimer Heide. У 1920-х роках був повністю зруйнований. Наразі видимі сліди відсутні.</li></ul>" },
+                        { text: "<ul><li><b>Zwischenwerk Xc (Buchheim)</b> – збудований у 1877–1879 роках на південь від Schlagbaumweg. У 1922 році частково демонтований, пізніше використовувався для господарських та спортивних потреб (стайні, майстерні, приміщення клубу). У 1966 році частково підірваний. Сьогодні збереглися окремі елементи, що використовуються як допоміжні приміщення спортивного об’єкта.</li></ul>" },
+                        { text: "Після ліквідації військового значення більшість Zwischenwerke було зруйновано або перепрофільовано. Частина об’єктів збереглася лише фрагментарно, часто інтегрована в сучасні спортивні або господарські споруди." }
+                    ]
+                },
+                construction_period: "1877–1881",
+                meta: {
+                    title: "Форт X (зовнішнє кріпосне кільце Кельна)",
+                    description: "Форт X – великий форт зовнішнього оборонного кільця Кельна, збудований у 1877–1881 роках. Використовувався у військових і цивільних цілях та частково зберігся до сьогодні.",
+                    ogTitle: "Форт X (зовнішнє кріпосне кільце Кельна)",
+                    ogDescription: "Форт X – історичний форт зовнішнього кільця Кельна XIX століття. Колишній військовий об’єкт, який також використовувався у XX столітті для різних цивільних цілей.",
+                    keywords: "Форт X Кельн, Форт 9 Кельн, зовнішнє кріпосне кільце Кельна, Biehler Fort Köln, Fort IX Köln, Festung Köln, Kalk Fort IX, Köln Rath Fort",
+                    ogImage: "https://our-travels.info/foto/Germany/nrw/koln/koln-city/prussian_fortress_system/outer/010.jpg"
+                }
+            },
+            de: {
+                name: "Fort X (äußerer Festungsring)", sortIndex: 10,
+                short_description: "Fort X – ein großes Fort des äußeren preußischen Festungsrings von Köln, erbaut 1877–1880 und später teilweise in eine Park- und öffentliche Grünanlage umgewandelt.",
+                status: "partial", note: "ein bedeutender Teil der Befestigungsstruktur ist erhalten (Gräben, Wälle, Elemente der Kasematten); das Gelände ist vollständig in einen Stadtpark integriert und wird als öffentlicher Raum genutzt.",
+                full_description: {
+                    title: "Beschreibung und Geschichte",
+                    items: [
+                        { bold: "Fort X (Höhenberg)", text: "war Teil des äußeren preußischen Festungsrings von Köln und wurde zwischen 1877 und 1880 als Standardfort des Typs Biehler-Einheitsfort erbaut." },
+                        { text: "Das Fort lag östlich der Frankfurter Straße und südlich des Nohlenwegs im heutigen Stadtteil Höhenberg / Raderberg." },
+                        { text: "Im Jahr 1922 wurde das Fort teilweise abgetragen. Anschließend wurde 1923 ein Umgestaltungsprojekt von dem Architekten Fritz Encke entwickelt, das die Anlage in ein „grünes Fort“ umwandeln sollte. In den Jahren 1927–1928 wurde das Gelände in eine Parkanlage umgestaltet, wobei Teile der Befestigungsstruktur erhalten blieben." },
+                        { text: "Während des Zweiten Weltkriegs diente das Fort als zentrale Befehlsstelle für Einheiten der Luftverteidigung. In der Nachkriegszeit wurden auf dem Gelände Notunterkünfte eingerichtet." },
+                        { text: "Ab etwa 1970 wurde die Anlage durch städtische Dienste genutzt, darunter das Gartenamt und das Amt für Zivilschutz. Seit Mitte der 1980er Jahre wird das Gelände von Vereinen und Gemeinschaften genutzt." },
+                        { text: "Heute sind noch Elemente der ursprünglichen Struktur erhalten: die Kehlgrabenmauer, Flankengräben, Teile der Wälle und Zugangswege; die Wegeführung folgt dem historischen Grundriss des Forts." },
+                        { bold: "Wo:", text: "Stadtteil Köln-Höhenberg / Raderberg, südlicher Teil des äußeren Festungsrings" },
+                        { bold: "<br>Zwischenwerke", text: "Zwischen den Hauptforts des äußeren preußischen Festungsrings von Köln wurden Zwischenbefestigungen errichtet, um Lücken zwischen den großen Forts zu schließen und das Kreuzfeuer der Artillerie zu verstärken." },
+                        { text: "Im Bereich von Fort X existierten folgende Zwischenwerke:" },
+                        { text: "<ul><li><b>Zwischenwerk Xa (Vingst)</b> – erbaut 1877–1879 östlich des Vingster Rings, nördlich des Hardtgebuschwegs. Teil der Zwischenlinie zwischen den Hauptforts des äußeren Kölner Festungsrings.</li></ul>" },
+                        { text: "1922 wurde die Anlage teilweise geschleift. 1923 erfolgte ein Umgestaltungsentwurf von Fritz Encke als „Freiluft- und Gartenschule“, der 1926–1927 umgesetzt wurde." },
+                        { text: "1951 wurde das Gelände von etwa neun Mietparteien genutzt. Um 1956 wurden die Bauwerke durch eine Sprengung endgültig zerstört." },
+                        { text: "Heute sind keine oberirdischen Bauwerke mehr vorhanden. Im Gelände sind jedoch noch Relikte der Flankengräben und Wälle als Geländemodellierung sowie in der Wegeführung erkennbar." },
+                        { text: "<ul><li><b>Zwischenwerk Xb (Höhenberg)</b> – erbaut 1877–1879 im Bereich Merheimer Heide. In den 1920er Jahren vollständig zerstört. Heute keine sichtbaren Spuren vorhanden.</li></ul>" },
+                        { text: "<ul><li><b>Zwischenwerk Xc (Buchheim)</b> – erbaut 1877–1879 südlich des Schlagbaumwegs. 1922 teilweise geschleift, später für landwirtschaftliche und sportliche Zwecke genutzt (Stallungen, Werkstätten, Vereinsräume). 1966 teilweise gesprengt. Heute sind einzelne Elemente als Nebenräume einer Sportanlage erhalten.</li></ul>" },
+                        { text: "Nach dem Verlust der militärischen Funktion wurden die meisten Zwischenwerke zerstört oder umgenutzt. Einige Reste sind nur noch fragmentarisch erhalten und in moderne Nutzungen integriert." }
+                    ]
+                },
+                construction_period: "1877–1881",
+                meta: {
+                    title: "Fort X (äußerer Festungsring Köln)",
+                    description: "Fort X – ein großes Fort des äußeren Kölner Festungsrings, erbaut 1877–1881. Militärisch genutzt und teilweise als Parkanlage erhalten.",
+                    ogTitle: "Fort X (äußerer Festungsring Köln)",
+                    ogDescription: "Fort X – historisches Fort des äußeren Kölner Festungsrings aus dem 19. Jahrhundert, später teilweise zivil genutzt und erhalten.",
+                    keywords: "Fort X Köln, äußerer Festungsring Köln, Biehler Fort Köln, Festung Köln, Höhenberg Fort X, Raderberg Fort X",
+                    ogImage: "https://our-travels.info/foto/Germany/nrw/koln/koln-city/prussian_fortress_system/outer/010.jpg"
+                }
+            }
+        }
+    },
+    {
+        id: "zw-a_fort_X_outer_koln",
+        type: ["historical_building"],
+        path: "fort_X_outer_koln",
+        countryPath: "germany", regionPath: "nrw", districtPath: "city", cityPath: "koln",
+        map: "prussian_fortress_system_koln",
+        coord: { lat: 50.9326, lng: 7.0439 },
+        hiddenFromList: true,
+        translations: {
+            ru: {
+                name: "Промежуточное укрепление Xa (Vingst) (Форт X, Кёльн)",
+                status: "lost", note: "постройки не сохранились. В ландшафте частично читаются следы фланговых рвов и валов в виде рельефных форм и структуры дорожной сети.",
+                meta: {
+                    title: "Промежуточное укрепление Xa (Vingst) (Zwischenwerk Xa, Форт X, Кёльн)",
+                    description: "построен в 1877–1879 годах восточнее Vingster Ring, севернее Hardtgebuschweg. Являлся частью промежуточной линии укреплений между основными фортами внешнего прусского оборонительного кольца Кёльна.",
+                    ogTitle: "Промежуточное укрепление Xa (Vingst) (Zwischenwerk Xa, Кёльн)",
+                    ogDescription: "Zwischenwerk Xa – элемент системы промежуточных укреплений прусского кольца Кёльна XIX века. ",
+                    keywords: "",
+                    ogImage: ""
+                }
+            },
+            ua: {
+                name: "Проміжне укріплення Xa (Vingst) (Форт X, Кельн)",
+                status: "lost", note: "споруди не збереглися. У ландшафті частково читаються сліди флангових ровів і валів у вигляді рельєфних форм та структури дорожньої мережі.",
+                meta: {
+                    title: "Проміжне укріплення Xa (Vingst) (Zwischenwerk Xa, Форт X, Кельн)",
+                    description: "збудоване у 1877–1879 роках на схід від Vingster Ring, на північ від Hardtgebuschweg. Було частиною проміжної лінії укріплень між основними фортами зовнішнього прусського оборонного кільця Кельна.",
+                    ogTitle: "Проміжне укріплення Xa (Vingst) (Zwischenwerk Xa, Кельн)",
+                    ogDescription: "Zwischenwerk Xa – елемент системи проміжних укріплень прусського кільця Кельна XIX століття. ",
+                    keywords: "",
+                    ogImage: ""
+                }
+            },
+            de: {
+                name: "Zwischenwerk Xa (Vingst) (Fort X, Köln)",
+                status: "lost", note: "die Bauwerke sind nicht erhalten. Im Gelände sind teilweise noch Spuren der Flankengräben und Wälle als Geländemodellierung sowie in der Wegeführung erkennbar.",
+                meta: {
+                    title: "Zwischenwerk Xa (Vingst) (Zwischenwerk Xa, Fort X, Köln)",
+                    description: "erbaut 1877–1879 östlich des Vingster Rings, nördlich des Hardtgebuschwegs. Es war Teil der Zwischenlinie der Befestigungen zwischen den Hauptforts des äußeren preußischen Festungsrings von Köln.",
+                    ogTitle: "Zwischenwerk Xa (Vingst) (Zwischenwerk Xa, Köln)",
+                    ogDescription: "Zwischenwerk Xa – Bestandteil des Systems der Zwischenbefestigungen des preußischen Kölner Festungsrings im 19. Jahrhundert.",
+                    keywords: "",
+                    ogImage: ""
+                }
+            }
+        }
+    },
+    {
+        id: "zw-b_fort_X_outer_koln",
+        type: ["historical_building"],
+        path: "fort_X_outer_koln",
+        countryPath: "germany", regionPath: "nrw", districtPath: "city", cityPath: "koln",
+        map: "prussian_fortress_system_koln",
+        coord: { lat: 50.9458, lng: 7.0328 },
+        hiddenFromList: true,
+        translations: {
+            ru: {
+                name: "Промежуточное укрепление Xb (Höhenberg) (Форт X, Кёльн)",
+                status: "lost", note: "в 1920-х годах был полностью разрушен. В настоящее время видимые следы отсутствуют.",
+                meta: {
+                    title: "Промежуточное укрепление Xb (Höhenberg) (Zwischenwerk Xb, Форт X, Кёльн)",
+                    description: "построен в 1877–1879 годах в районе Merheimer Heide.",
+                    ogTitle: "Промежуточное укрепление Xb (Höhenberg) (Zwischenwerk Xb, Кёльн)",
+                    ogDescription: "Zwischenwerk Xb – элемент системы промежуточных укреплений прусского кольца Кёльна XIX века. ",
+                    keywords: "",
+                    ogImage: ""
+                }
+            },
+            ua: {
+                name: "Проміжне укріплення Xb (Höhenberg) (Форт X, Кельн)",
+                status: "lost", note: "у 1920-х роках було повністю зруйноване. Наразі видимі сліди відсутні.",
+                meta: {
+                    title: "Проміжне укріплення Xb (Höhenberg) (Zwischenwerk Xb, Форт X, Кельн)",
+                    description: "збудоване у 1877–1879 роках у районі Merheimer Heide.",
+                    ogTitle: "Проміжне укріплення Xb (Höhenberg) (Zwischenwerk Xb, Кельн)",
+                    ogDescription: "Zwischenwerk Xb – елемент системи проміжних укріплень прусського кільця Кельна XIX століття.",
+                    keywords: "",
+                    ogImage: ""
+                }
+            },
+            de: {
+                name: "Zwischenwerk Xb (Höhenberg) (Fort X, Köln)",
+                status: "lost", note: "in den 1920er Jahren vollständig zerstört. Heute sind keine sichtbaren Spuren mehr vorhanden.",
+                meta: {
+                    title: "Zwischenwerk Xb (Höhenberg) (Zwischenwerk Xb, Fort X, Köln)",
+                    description: "erbaut 1877–1879 im Bereich Merheimer Heide.",
+                    ogTitle: "Zwischenwerk Xb (Höhenberg) (Zwischenwerk Xb, Köln)",
+                    ogDescription: "Zwischenwerk Xb – Bestandteil des Systems der Zwischenbefestigungen des preußischen Kölner Festungsrings im 19. Jahrhundert.",
+                    keywords: "",
+                    ogImage: ""
+                }
+            }
+        }
+    },
+    {
+        id: "zw-c_fort_X_outer_koln",
+        type: ["historical_building"],
+        path: "fort_X_outer_koln",
+        countryPath: "germany", regionPath: "nrw", districtPath: "city", cityPath: "koln",
+        map: "prussian_fortress_system_koln",
+        coord: { lat: 50.9554, lng: 7.0317 },
+        hiddenFromList: true,
+        translations: {
+            ru: {
+                name: "Промежуточное укрепление Xc (Buchheim) (Форт X, Кёльн)",
+                status: "partial", note: "сохранились отдельные элементы, используемые как вспомогательные помещения спортивного объекта.",
+                meta: {
+                    title: "Промежуточное укрепление Xc (Buchheim) (Zwischenwerk Xc, Форт X, Кёльн)",
+                    description: "построен в 1877–1879 годах южнее Schlagbaumweg.",
+                    ogTitle: "Промежуточное укрепление Xc (Buchheim) (Zwischenwerk Xc, Кёльн)",
+                    ogDescription: "Zwischenwerk Xc – элемент системы промежуточных укреплений прусского кольца Кёльна XIX века. ",
+                    keywords: "",
+                    ogImage: ""
+                }
+            },
+            ua: {
+                name: "Проміжне укріплення Xc (Buchheim) (Форт X, Кельн)",
+                status: "partial", note: "збереглися окремі елементи, що використовуються як допоміжні приміщення спортивного об’єкта.",
+                meta: {
+                    title: "Проміжне укріплення Xc (Buchheim) (Zwischenwerk Xc, Форт X, Кельн)",
+                    description: "збудоване у 1877–1879 роках на південь від Schlagbaumweg.",
+                    ogTitle: "Проміжне укріплення Xc (Buchheim) (Zwischenwerk Xc, Кельн)",
+                    ogDescription: "Zwischenwerk Xc – елемент системи проміжних укріплень прусського кільця Кельна XIX століття.",
+                    keywords: "",
+                    ogImage: ""
+                }
+            },
+            de: {
+                name: "Zwischenwerk Xc (Buchheim) (Fort X, Köln)",
+                status: "partial", note: "einzelne erhaltene Elemente werden heute als Nebenräume einer Sportanlage genutzt.",
+                meta: {
+                    title: "Zwischenwerk Xc (Buchheim) (Zwischenwerk Xc, Fort X, Köln)",
+                    description: "erbaut 1877–1879 südlich des Schlagbaumwegs.",
+                    ogTitle: "Zwischenwerk Xc (Buchheim) (Zwischenwerk Xc, Köln)",
+                    ogDescription: "Zwischenwerk Xc – Bestandteil des Systems der Zwischenbefestigungen des preußischen Kölner Festungsrings im 19. Jahrhundert.",
+                    keywords: "",
+                    ogImage: ""
+                }
+            }
+        }
+    },
+    {
+        id: "fort_XI_outer_koln",
+        type: ["historical_building"], rating: "local",
+        path: "fort_XI_outer_koln",
+        countryPath: "germany", regionPath: "nrw", districtPath: "city", cityPath: "koln",
+        hiddenFromList: true, showMore: true,
+        map: "prussian_fortress_system_koln",
+        fotoCard: "Germany/nrw/koln/koln-city/prussian_fortress_system/outer/011.jpg",
+        coord: { lat: 50.9715, lng: 7.0259 },
+        translations: {
+            ru: {
+                name: "Форт XI (внешнее крепостное кольцо)", sortIndex: 11,
+                short_description: "Форт XI – крупный форт внешнего прусского оборонительного кольца Кёльна, построенный в 1877–1880 годах. Расположен в южном секторе города и частично сохранился в виде фрагментов фортификационной структуры.",
+                status: "partial", note: "сохранились отдельные элементы фортификационной и казарменной архитектуры (казематы, участки рвов и валов, фрагменты оборонительных стен); территория частично интегрирована в городскую среду и используется как общественные пространства и спортивные объекты.",
+                full_description: {
+                    title: "Описание и история",
+                    items: [
+                        { bold: "Fort XI (Bayenthal / Marienburg)", text: "являлся частью внешнего прусского оборонительного кольца Кёльна, построенного в 1877–1880 годах как стандартный форт типа Biehler-Einheitsfort на левом берегу Рейна." },
+                        { text: "Форт располагался в южной части Кёльна, в районе Bayenthal / Marienburg, и входил в систему южного сектора внешнего оборонительного кольца города." },
+                        { text: "Как и другие форты системы, он был рассчитан на ведение артиллерийской обороны и поддержку пехотных подразделений, с характерной многоугольной планировкой и укреплёнными казематами." },
+                        { text: "В начале XX века форт частично использовался военными подразделениями, а также вспомогательными службами, связанными с технической и инфраструктурной деятельностью." },
+                        { text: "После Первой мировой войны, в 1920-х годах, значительная часть укреплений была демонтирована в рамках демилитаризации Рейнской области, однако отдельные сооружения сохранились и были перепрофилированы." },
+                        { text: "В межвоенный период и после 1920-х годов территория начала постепенно интегрироваться в городскую структуру, частично переходя под хозяйственные, спортивные и коммунальные функции." },
+                        { text: "Во время Второй мировой войны отдельные элементы комплекса использовались в системе гражданской обороны и вспомогательной инфраструктуры." },
+                        { text: "В послевоенный период территория была окончательно включена в городскую среду Кёльна и частично адаптирована под общественное использование." },
+                        { bold: "Где:", text: "район Köln-Bayenthal / Marienburg, южный сектор внешнего оборонительного кольца Кёльна (левый берег Рейна)" },
+                        { bold: "<br>Промежуточные форты (Zwischenwerke)", text: "Между основными фортами внешнего прусского оборонительного кольца Кёльна были построены промежуточные укрепления, предназначенные для закрытия разрывов между крупными фортами и усиления оборонительной линии." },
+                        { text: "В секторе Fort XI существовали следующие промежуточные форты:" },
+                        { text: "<ul><li><b>Zwischenwerk XIa (Buchheim)</b> – построен в 1877–1879 годах, восточнее Herler Ring, севернее Gauweg. В 1922 году частично демонтирован, в 1920-х годах преобразован по проекту Фрица Энке в «зелёный форт» с элементами спортивной инфраструктуры. Позднее использовался как общественное и спортивное пространство, частично сохранилась казарма горжевой части форта и фрагменты рвов и валов.</li></ul>" },
+                        { text: "<ul><li><b>Zwischenwerk XIb (Mülheim)</b> – построен в 1877–1879 годов в районе Cottbuser Straße, южнее Berliner Straße. В 1920-х годах частично демонтирован и перепрофилирован в рекреационную зону по проекту Фрица Энке. В последующие десятилетия использовался как спортивный и общественный объект, позднее включал клубные и коммунальные функции. Сегодня сохранились отдельные элементы казарменных построек и ландшафтные следы рвов и валов.</li></ul>" },
+                        { text: "После утраты военного значения большая часть промежуточных укреплений была разрушена или перепрофилирована, а сохранившиеся элементы интегрированы в современную городскую и спортивную инфраструктуру Кёльна." }
+                    ]
+                },
+                construction_period: "1877–1880",
+                meta: {
+                    title: "Форт XI (внешнее крепостное кольцо Кёльна)",
+                    description: "Форт XI – крупный форт внешнего оборонительного кольца Кёльна, построенный в 1877–1880 годах. Частично сохранился и интегрирован в городскую структуру.",
+                    ogTitle: "Форт XI (внешнее крепостное кольцо Кёльна)",
+                    ogDescription: "Форт XI – исторический форт внешнего кольца Кёльна XIX века, частично сохранившийся и адаптированный под городские функции.",
+                    keywords: "Форт XI Кёльн, Fort XI Köln, Biehler Fort Köln, внешнее крепостное кольцо Кёльна, Bayenthal Fort, Marienburg Fort",
+                    ogImage: "https://our-travels.info/foto/Germany/nrw/koln/koln-city/prussian_fortress_system/outer/011.jpg"
+                }
+            },
+            ua: {
+                name: "Форт XI (зовнішнє фортифікаційне кільце)", sortIndex: 11,
+                short_description: "Форт XI – великий форт зовнішнього прусського оборонного кільця Кельна, побудований у 1877–1880 роках. Розташований у південному секторі міста та частково зберігся у вигляді фрагментів фортифікаційної структури.",
+                status: "partial", note: "збереглися окремі елементи фортифікаційної та казарменої архітектури (каземати, ділянки ровів і валів, фрагменти оборонних стін); територія частково інтегрована в міське середовище та використовується як громадські простори і спортивні об’єкти.",
+                full_description: {
+                    title: "Опис і історія",
+                    items: [
+                        { bold: "Fort XI (Bayenthal / Marienburg)", text: "був частиною зовнішнього прусського оборонного кільця Кельна, побудованого у 1877–1880 роках як стандартний форт типу Biehler-Einheitsfort на лівому березі Рейну." },
+                        { text: "Форт розташовувався в південній частині Кельна, в районі Bayenthal / Marienburg, і входив до системи південного сектору зовнішнього оборонного кільця міста." },
+                        { text: "Як і інші форти системи, він був розрахований на ведення артилерійської оборони та підтримку піхотних підрозділів, з характерним багатокутним плануванням і укріпленими казематами." },
+                        { text: "На початку XX століття форт частково використовувався військовими підрозділами, а також допоміжними службами, пов’язаними з технічною та інфраструктурною діяльністю." },
+                        { text: "Після Першої світової війни, у 1920-х роках, значна частина укріплень була демонтована в межах демілітаризації Рейнської області, однак окремі споруди збереглися і були перепрофільовані." },
+                        { text: "У міжвоєнний період і після 1920-х років територія почала поступово інтегруватися в міську структуру, частково переходячи під господарські, спортивні та комунальні функції." },
+                        { text: "Під час Другої світової війни окремі елементи комплексу використовувалися в системі цивільної оборони та допоміжної інфраструктури." },
+                        { text: "У післявоєнний період територія була остаточно включена до міського середовища Кельна і частково адаптована під громадське використання." },
+                        { bold: "Де:", text: "район Köln-Bayenthal / Marienburg, південний сектор зовнішнього оборонного кільця Кельна (лівий берег Рейну)" },
+                        { bold: "<br>Проміжні форти (Zwischenwerke)", text: "Між основними фортами зовнішнього прусського оборонного кільця Кельна були побудовані проміжні укріплення, призначені для закриття проміжків між великими фортами та посилення оборонної лінії." },
+                        { text: "У секторі Fort XI існували такі проміжні форти:" },
+                        { text: "<ul><li><b>Zwischenwerk XIa (Buchheim)</b> – побудований у 1877–1879 роках, на схід від Herler Ring, на північ від Gauweg. У 1922 році частково демонтований, у 1920-х роках перетворений за проєктом Фріца Енке на «зелений форт» з елементами спортивної інфраструктури. Пізніше використовувався як громадський і спортивний простір, частково збереглася казарма горжової частини форту та фрагменти ровів і валів.</li></ul>" },
+                        { text: "<ul><li><b>Zwischenwerk XIb (Mülheim)</b> – побудований у 1877–1879 роках у районі Cottbuser Straße, на південь від Berliner Straße. У 1920-х роках частково демонтований і перепрофільований у рекреаційну зону за проєктом Фріца Енке. У наступні десятиліття використовувався як спортивний і громадський об’єкт, пізніше включав клубні та комунальні функції. Сьогодні збереглися окремі елементи казармених споруд і ландшафтні сліди ровів і валів.</li></ul>" },
+                        { text: "Після втрати військового значення більшість проміжних укріплень було зруйновано або перепрофільовано, а збережені елементи інтегровано в сучасну міську та спортивну інфраструктуру Кельна." }
+                    ]
+                },
+                construction_period: "1877–1880",
+                meta: {
+                    title: "Форт XI (зовнішнє фортифікаційне кільце Кельна)",
+                    description: "Форт XI – великий форт зовнішнього прусського оборонного кільця Кельна, побудований у 1877–1880 роках. Частково зберігся та інтегрований у міську структуру.",
+                    ogTitle: "Форт XI (зовнішнє фортифікаційне кільце Кельна)",
+                    ogDescription: "Форт XI – історичний форт зовнішнього кільця Кельна XIX століття, частково збережений та адаптований під міські функції.",
+                    keywords: "Форт XI Кельн, Fort XI Köln, зовнішнє фортифікаційне кільце Кельна, Biehler Fort Köln, Bayenthal Fort, Marienburg Fort, Festung Köln",
+                    ogImage: "https://our-travels.info/foto/Germany/nrw/koln/koln-city/prussian_fortress_system/outer/011.jpg"
+                }
+            },
+            de: {
+                name: "Fort XI (äußeres Festungsring)", sortIndex: 11,
+                short_description: "Fort XI – großes Fort des äußeren preußischen Festungsrings von Köln, erbaut zwischen 1877 und 1880. Es befindet sich im südlichen Stadtsektor und ist teilweise in Form von Fragmenten der Befestigungsstruktur erhalten.",
+                status: "partial", note: "erhalten sind einzelne Elemente der Festungs- und Kasernenarchitektur (Kasematten, Abschnitte von Gräben und Wällen, Fragmente von Verteidigungsmauern); das Gelände ist teilweise in das Stadtgefüge integriert und wird als öffentliche Grün- und Sportfläche genutzt.",
+                full_description: {
+                    title: "Beschreibung und Geschichte",
+                    items: [
+                        { bold: "Fort XI (Bayenthal / Marienburg)", text: "gehörte zum äußeren preußischen Festungsring von Köln, der zwischen 1877 und 1880 als Standardfort des Typs Biehler-Einheitsfort am linken Rheinufer errichtet wurde." },
+                        { text: "Das Fort lag im südlichen Teil von Köln im Bereich Bayenthal / Marienburg und war Teil des südlichen Sektors des äußeren Festungsrings der Stadt." },
+                        { text: "Wie andere Forts des Systems war es für die Artillerieverteidigung und die Unterstützung von Infanterieeinheiten ausgelegt, mit typischer polygonaler Grundrissstruktur und befestigten Kasematten." },
+                        { text: "Zu Beginn des 20. Jahrhunderts wurde das Fort teilweise von militärischen Einheiten sowie von Hilfsdiensten im technischen und infrastrukturellen Bereich genutzt." },
+                        { text: "Nach dem Ersten Weltkrieg wurden in den 1920er Jahren große Teile der Befestigungen im Rahmen der Entmilitarisierung des Rheinlands abgetragen, jedoch blieben einzelne Bauwerke erhalten und wurden umgenutzt." },
+                        { text: "In der Zwischenkriegszeit und nach den 1920er Jahren wurde das Gelände zunehmend in die städtische Struktur integriert und teilweise für wirtschaftliche, sportliche und kommunale Zwecke genutzt." },
+                        { text: "Während des Zweiten Weltkriegs wurden einzelne Elemente der Anlage im System des Zivilschutzes und der Luftverteidigung verwendet." },
+                        { text: "In der Nachkriegszeit wurde das Gelände endgültig in das Stadtbild Kölns integriert und teilweise für öffentliche Nutzung angepasst." },
+                        { bold: "Lage:", text: "Stadtteil Köln-Bayenthal / Marienburg, südlicher Sektor des äußeren Festungsrings von Köln (linkes Rheinufer)" },
+                        { bold: "<br>Zwischenwerke (intermediäre Forts)", text: "Zwischen den Hauptforts des äußeren preußischen Festungsrings Köln wurden Zwischenwerke errichtet, die dazu dienten, Lücken zwischen den großen Forts zu schließen und die Verteidigungslinie zu verstärken." },
+                        { text: "Im Sektor von Fort XI existierten folgende Zwischenwerke:" },
+                        { text: "<ul><li><b>Zwischenwerk XIa (Buchheim)</b> – erbaut 1877–1879, östlich des Herler Rings, nördlich des Gauwegs. 1922 teilweise abgetragen, in den 1920er Jahren nach einem Entwurf von Fritz Encke zu einem „grünen Fort“ mit Sportanlagen umgestaltet. Später als öffentlicher und sportlicher Raum genutzt; teilweise erhalten sind die Kehlkasematte sowie Fragmente von Gräben und Wällen.</li></ul>" },
+                        { text: "<ul><li><b>Zwischenwerk XIb (Mülheim)</b> – erbaut 1877–1879 im Bereich der Cottbuser Straße, südlich der Berliner Straße. In den 1920er Jahren teilweise abgetragen und nach dem Entwurf von Fritz Encke zu einer Erholungsanlage umgestaltet. In den folgenden Jahrzehnten Nutzung als Sport- und Gemeinschaftsanlage, später auch für Vereins- und kommunale Zwecke. Heute sind einzelne Elemente der Kasernenbauten sowie landschaftliche Spuren von Gräben und Wällen erhalten.</li></ul>" },
+                        { text: "Nach dem Verlust der militärischen Bedeutung wurden die meisten Zwischenwerke zerstört oder umgenutzt; erhaltene Elemente sind in die heutige städtische und sportliche Infrastruktur Kölns integriert." }
+                    ]
+                },
+                construction_period: "1877–1880",
+                meta: {
+                    title: "Fort XI (äußeres Festungsring Köln)",
+                    description: "Fort XI – großes Fort des äußeren preußischen Festungsrings von Köln, erbaut zwischen 1877 und 1880. Teilweise erhalten und in die städtische Struktur integriert.",
+                    ogTitle: "Fort XI (äußeres Festungsring Köln)",
+                    ogDescription: "Fort XI – historisches Fort des äußeren Kölner Festungsrings aus dem 19. Jahrhundert, teilweise erhalten und für städtische Nutzung angepasst.",
+                    keywords: "Fort XI Köln, äußeres Festungsring Köln, Biehler Fort Köln, Bayenthal Fort, Marienburg Fort, Festung Köln",
+                    ogImage: "https://our-travels.info/foto/Germany/nrw/koln/koln-city/prussian_fortress_system/outer/011.jpg"
+                }
+            }
+        }
+    },
+    {
+        id: "zw-a_fort_XI_outer_koln",
+        type: ["historical_building"],
+        path: "fort_XI_outer_koln",
+        countryPath: "germany", regionPath: "nrw", districtPath: "city", cityPath: "koln",
+        map: "prussian_fortress_system_koln",
+        coord: { lat: 50.96416, lng: 7.02967 },
+        hiddenFromList: true,
+        translations: {
+            ru: {
+                name: "Промежуточное укрепление XIa (Buchheim) (Форт XI, Кёльн)",
+                status: "partial", note: "сохранилась казарма горжевой части форта и фрагменты рвов и валов.",
+                meta: {
+                    title: "Промежуточное укрепление XIa (Buchheim) (Zwischenwerk XIa, Форт XI, Кёльн)",
+                    description: "построен в 1877–1879 годах, восточнее Herler Ring, севернее Gauweg.",
+                    ogTitle: "Промежуточное укрепление XIa (Buchheim) (Zwischenwerk XIa, Кёльн)",
+                    ogDescription: "Zwischenwerk XIa – элемент системы промежуточных укреплений прусского кольца Кёльна XIX века.",
+                    keywords: "",
+                    ogImage: ""
+                }
+            },
+            ua: {
+                name: "Проміжне укріплення XIa (Buchheim) (Форт XI, Кельн)",
+                status: "partial", note: "збереглася казарма горжової частини форту та фрагменти ровів і валів.",
+                meta: {
+                    title: "Проміжне укріплення XIa (Buchheim) (Zwischenwerk XIa, Форт XI, Кельн)",
+                    description: "побудований у 1877–1879 роках, на схід від Herler Ring, на північ від Gauweg.",
+                    ogTitle: "Проміжне укріплення XIa (Buchheim) (Zwischenwerk XIa, Кельн)",
+                    ogDescription: "Zwischenwerk XIa – елемент системи проміжних укріплень прусського кільця Кельна XIX століття.",
+                    keywords: "",
+                    ogImage: ""
+                }
+            },
+            de: {
+                name: "Zwischenwerk XIa (Buchheim) (Fort XI, Köln)",
+                status: "partial", note: "erhalten sind die Kehlkaserne sowie Fragmente von Gräben und Wällen.",
+                meta: {
+                    title: "Zwischenwerk XIa (Buchheim) (Zwischenwerk XIa, Fort XI, Köln)",
+                    description: "erbaut 1877–1879, östlich des Herler Rings, nördlich des Gauwegs.",
+                    ogTitle: "Zwischenwerk XIa (Buchheim) (Zwischenwerk XIa, Köln)",
+                    ogDescription: "Zwischenwerk XIa – Bestandteil des Systems der Zwischenbefestigungen des preußischen Festungsrings von Köln im 19. Jahrhundert.",
+                    keywords: "",
+                    ogImage: ""
+                }
+            }
+        }
+    },
+    {
+        id: "zw-b_fort_XI_outer_koln",
+        type: ["historical_building"],
+        path: "fort_XI_outer_koln",
+        countryPath: "germany", regionPath: "nrw", districtPath: "city", cityPath: "koln",
+        map: "prussian_fortress_system_koln",
+        coord: { lat: 50.97787, lng: 7.02175 },
+        hiddenFromList: true,
+        translations: {
+            ru: {
+                name: "Промежуточное укрепление XIb (Mülheim) (Форт XI, Кёльн)",
+                status: "partial", note: "сохранились отдельные элементы казарменных построек и ландшафтные следы рвов и валов.",
+                meta: {
+                    title: "Промежуточное укрепление XIb (Mülheim) (Zwischenwerk XIb, Форт XI, Кёльн)",
+                    description: "построен в 1877–1879 годов в районе Cottbuser Straße, южнее Berliner Straße.",
+                    ogTitle: "Промежуточное укрепление XIb (Mülheim) (Zwischenwerk XIb, Кёльн)",
+                    ogDescription: "Zwischenwerk XIb – элемент системы промежуточных укреплений прусского кольца Кёльна XIX века.",
+                    keywords: "",
+                    ogImage: ""
+                }
+            },
+            ua: {
+                name: "Проміжне укріплення XIb (Mülheim) (Форт XI, Кельн)",
+                status: "partial", note: "збереглися окремі елементи казармених споруд і ландшафтні сліди ровів і валів.",
+                meta: {
+                    title: "Проміжне укріплення XIb (Mülheim) (Zwischenwerk XIb, Форт XI, Кельн)",
+                    description: "побудований у 1877–1879 роках у районі Cottbuser Straße, на південь від Berliner Straße.",
+                    ogTitle: "Проміжне укріплення XIb (Mülheim) (Zwischenwerk XIb, Кельн)",
+                    ogDescription: "Zwischenwerk XIb – елемент системи проміжних укріплень прусського кільця Кельна XIX століття.",
+                    keywords: "",
+                    ogImage: ""
+                }
+            },
+            de: {
+                name: "Zwischenwerk XIb (Mülheim) (Fort XI, Köln)",
+                status: "partial", note: "erhalten sind einzelne Elemente der Kasernenbauten sowie landschaftliche Spuren von Gräben und Wällen.",
+                meta: {
+                    title: "Zwischenwerk XIb (Mülheim) (Zwischenwerk XIb, Fort XI, Köln)",
+                    description: "erbaut 1877–1879 im Bereich der Cottbuser Straße, südlich der Berliner Straße.",
+                    ogTitle: "Zwischenwerk XIb (Mülheim) (Zwischenwerk XIb, Köln)",
+                    ogDescription: "Zwischenwerk XIb – Bestandteil des Systems der Zwischenbefestigungen des preußischen Festungsrings von Köln im 19. Jahrhundert.",
+                    keywords: "",
+                    ogImage: ""
+                }
+            }
+        }
+    },
+
 
     // край аахен
     // моншау
@@ -3072,8 +3774,7 @@ const datas = [
                 }
             }
         }
-    },
-
+    }
 
 ]
 

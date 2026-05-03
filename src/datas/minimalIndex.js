@@ -141,10 +141,14 @@ const datas =
     fort_II_inner_koln: { ru: 'Форт II (внутреннее крепостное кольцо)', de: 'Fort II (innerer Festungsring)', ua: 'Форт II (внутрішнє фортифікаційне кільце)' },
     fort_III_inner_koln: { ru: 'Форт III (внутреннее крепостное кольцо)', de: 'Fort III (innerer Festungsring)', ua: 'Форт III (внутрішнє фортифікаційне кільце)' },
     fort_V_inner_koln: { ru: 'Форт V (внутреннее крепостное кольцо)', de: 'Fort V (innerer Festungsring)', ua: 'Форт V (внутрішнє фортифікаційне кільце)' },
+    fort_VI_inner_koln: { ru: 'Форт VI (внутреннее крепостное кольцо)', de: 'Fort VI (innerer Festungsring)', ua: 'Форт VI (внутрішнє фортифікаційне кільце)' },
+    fort_IX_inner_koln: { ru: 'Форт IX (внутреннее крепостное кольцо)', de: 'Fort IX (innerer Festungsring)', ua: 'Форт IX (внутрішнє фортифікаційне кільце)' },
     fort_IV_outer_koln: { ru: 'Форт IV (внешнее крепостное кольцо)', de: 'Fort IV (äußerer Festungsring)', ua: 'Форт IV (зовнішнє фортифікаційне кільце)' },
     fort_V_outer_koln: { ru: 'Форт V (внешнее крепостное кольцо)', de: 'Fort V (äußerer Festungsring)', ua: 'Форт V (зовнішнє фортифікаційне кільце)' },
     fort_VI_outer_koln: { ru: 'Форт VI (внешнее крепостное кольцо)', de: 'Fort VI (äußerer Festungsring)', ua: 'Форт VI (зовнішнє фортифікаційне кільце)' },
     fort_IX_outer_koln: { ru: 'Форт IX (внешнее крепостное кольцо)', de: 'Fort IX (äußerer Festungsring)', ua: 'Форт IX (зовнішнє фортифікаційне кільце)' },
+    fort_X_outer_koln: { ru: 'Форт X (внешнее крепостное кольцо)', de: 'Fort X (äußerer Festungsring)', ua: 'Форт X (зовнішнє фортифікаційне кільце)' },
+    fort_XI_outer_koln: { ru: 'Форт XI (внешнее крепостное кольцо)', de: 'Fort XI (äußerer Festungsring)', ua: 'Форт XI (зовнішнє фортифікаційне кільце)' },
     st_kunibert_koln: { ru: 'Базилика Святого Куниберта', de: 'Basilika St. Kunibert', ua: 'Базиліка Святого Куніберта' },
 
     // Aachen Kreis
