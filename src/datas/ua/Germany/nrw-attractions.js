@@ -1369,6 +1369,8 @@ const datas = [
         hiddenFromList: true, showMore: true,
         mapOpen: "old_towers_koln",
         fotoCard: "Germany/nrw/koln/koln-city/altstadt/old_towers/001.jpg",
+        subObjects: ["rumerturm_koln", "hahnentorburg_koln", "eigelsteintorburg_koln", "severinstorburg_koln", "ulrepforte_koln", "bayenturm_koln"],
+        subObjects_title: "Основні збережені вежі та фрагменти міського муру",
         location: "Кельн, Німеччина",
         short_description: "Старі башти та укріплення Старого Кельна – це залишки середньовічної міської стіни та римських оборонних споруд, які колись захищали місто. Сьогодні вони розкидані по Старому місті і слугують історичними орієнтирами для мешканців і туристів. Ці башти дозволяють уявити, як виглядав Кельн у Середні віки та побачити сліди його оборонної системи. Об'єкт популярний серед туристів, але не є всесвітньо відомим символом міста.",
         status: "partial", note: "збереглися лише окремі об’єкти цієї системи — як великі міські ворота з баштами, так і фрагменти стін з малими сторожовими баштами.",
@@ -1380,17 +1382,6 @@ const datas = [
                 { text: "У Середні віки Кельн виріс у один із найбільших торгових центрів Північної Європи. У цей період міська стіна була посилена новими баштами та воротами, які утворювали складну систему оборони. Сьогодні збереглися лише окремі об'єкти цієї системи – як великі ворота з баштами, так і фрагменти стін з невеликими сторожовими баштами." }
             ]
         },
-        sub_objects: {
-            title: "Основні збережені башти та фрагменти міської стіни",
-            items: [
-                { img: "Germany/nrw/koln/koln-city/altstadt/old_towers/002.jpg", alt: "Римська башта Römerturm", bold: "Римська башта (Römerturm)", text: "– залишок римської міської стіни (Colonia Agrippinensis), пам'ятка давньоримської історії міста — рідкісна та дуже стара архітектурна реліквія. Це одна з небагатьох римських башт, що дійшли до наших днів. За римськими джерелами, спочатку навколо міста існувало до ~19 таких захисних башт.\nБашта була частиною пізньоримського укріплення і використовувалася як сторожова та спостережна – сьогодні це найдавніший фрагмент оборонних споруд Кельна.\n**Де:** вулиця Zeughausstraße — у північно-західній частині Старого міста, в пішій доступності від центру." },
-                { img: "Germany/nrw/koln/koln-city/altstadt/old_towers/001.jpg", alt: "Західні ворота (Hahnentorburg)", bold: "Західні ворота (Hahnentorburg)", text: "– одні з чотирьох збережених середньовічних міських воріт-башт колишньої стіни Старого міста. Ворота вперше згадуються у 1264 році; вони захищали західний вхід на торговий шлях до Ахена та Юліха. Тут середньовічна архітектура буквально «вплітається» у сучасний простір площі, зберігаючи дух оборонних укріплень Кельна.\n**Де:** площа Rudolfplatz – західна межа Старого міста." },
-                { img: "Germany/nrw/koln/koln-city/altstadt/old_towers/003.jpg", alt: "Північні ворота (Eigelsteintorburg)", bold: "Північні ворота (Eigelsteintorburg)", text: "– добре збережена середньовічна фортифікаційна архітектура з масивними баштами та арковим проходом. Великі подвійні ворота на північній стороні міської стіни Старого міста. Побудовані під час третього розширення міста у XIII столітті; замінили ранню північну башту і слугували для контролю в'їзду зі сторони північних торгових шляхів.\n**Де:** район Eigelstein / Ebertplatz." },
-                { img: "Germany/nrw/koln/koln-city/altstadt/old_towers/004.jpg", alt: "Південні ворота (Severinstorburg)", bold: "Південні ворота (Severinstorburg)", text: "– стратегічно важливий південний вхід – через нього проходили основні шляхи до Бонна та півдня Німеччини, одна з чотирьох головних середньовічних воріт Старого міста, що захищала південний підхід. Збудована у першій половині XIII століття у складі потужної кам'яної стіни; остаточно оформлена з зенітами та фланками у пізніші періоди.\n**Де:** сучасна площа Chlodwigplatz." },
-                { img: "Germany/nrw/koln/koln-city/altstadt/old_towers/005.jpg", alt: "Південний фрагмент стіни (Ulrepforte)", bold: "Південний фрагмент стіни (Ulrepforte)", text: "– найвужчі та найменші з міських воріт, слугували радше допоміжною частиною оборони. Це невеликий, але давній міський вхід, частина середньовічної оборонної стіни. Побудовані на початку XIII століття та вперше згадані у документах 1245 року; це були одні з дванадцяти воріт стіни, але з меншим значенням для транспортних шляхів.\n**Де:** вулиця Sachsenring – південний відрізок Старого міста." },
-                { img: "Germany/nrw/koln/koln-city/altstadt/old_towers/006.jpg", alt: "Башта на півдні біля Рейну (Bayenturm)", bold: "Башта на півдні біля Рейну (Bayenturm)", text: "– оборонна башта, що стояла на південному сході міської стіни біля Рейну, символ важливості контролю торгового шляху по Рейну. Побудована приблизно між 1180 та 1220 роками як частина укріплень біля ріки; сильно постраждала під час Другої світової війни, пізніше відновлена.\n**Де:** південна частина Старого міста, поруч з кільцевою вулицею Ringstraße." }
-            ]
-        },
         meta: {
             title: "Старі башти та укріплення Старого Кельна – історичні пам'ятки міста",
             description: "Досліджуйте середньовічні башти та фрагменти міської стіни Кельна. Дізнайтеся історію старовинних укріплень Старого міста та відкрийте важливі історичні орієнтири, що збереглися до наших днів.",
@@ -1398,90 +1389,6 @@ const datas = [
             ogDescription: "Прогуляйтеся Старим містом Кельна та відкрийте старовинні башти і укріплення, які зберігають дух середньовічного міста та слугують важливими історичними пам'ятками.",
             keywords: "Старі вежі та укріплення Старого Кельна, Кельн, пам’ятка, фортеці, середньовічні стіни, архітектура, історичні будівлі, туризм Німеччина, екскурсії, старе місто, фортифікація, культурна спадщина",
             ogImage: "https://our-travels.info/foto/Germany/nrw/koln/koln-city/altstadt/old_towers/001.jpg"
-        }
-    },
-    {
-        id: "rumerturm_koln",
-        name: "Римська башта Römerturm",
-        type: ["historical_building"], rating: "popular",
-        path: "old_towers_koln",
-        map: "old_towers_koln",
-        countryPath: "germany", regionPath: "nrw", districtPath: "city", cityPath: "koln",
-        hiddenFromList: true,
-        coord: { lat: 50.94093, lng: 6.94663 },
-        meta: {
-            title: "Римська башта (Römerturm) – залишок римської міської стіни (Colonia Agrippinensis), пам'ятка давньоримської історії міста",
-            ogImage: "https://our-travels.info/foto/Germany/nrw/koln/koln-city/altstadt/old_towers/002.jpg"
-        }
-    },
-    {
-        id: "hahnentorburg_koln",
-        name: "Західні ворота (Hahnentorburg)",
-        type: ["historical_building"], rating: "popular",
-        path: "old_towers_koln",
-        map: "old_towers_koln",
-        countryPath: "germany", regionPath: "nrw", districtPath: "city", cityPath: "koln",
-        hiddenFromList: true,
-        coord: { lat: 50.93639, lng: 6.94021 },
-        meta: {
-            title: "Західні ворота (Hahnentorburg) – одні з чотирьох збережених середньовічних міських воріт-башт колишньої стіни Старого міста",
-            ogImage: "https://our-travels.info/foto/Germany/nrw/koln/koln-city/altstadt/old_towers/001.jpg"
-        }
-    },
-    {
-        id: "eigelsteintorburg_koln",
-        name: "Північні ворота (Eigelsteintorburg)",
-        type: ["historical_building"], rating: "popular",
-        path: "old_towers_koln",
-        map: "old_towers_koln",
-        countryPath: "germany", regionPath: "nrw", districtPath: "city", cityPath: "koln",
-        hiddenFromList: true,
-        coord: { lat: 50.94931, lng: 6.95687 },
-        meta: {
-            title: "Північні ворота (Eigelsteintorburg) – добре збережена середньовічна фортифікаційна архітектура з масивними баштами та арковим проходом.",
-            ogImage: "https://our-travels.info/foto/Germany/nrw/koln/koln-city/altstadt/old_towers/003.jpg"
-        }
-    },
-    {
-        id: "severinstorburg_koln",
-        name: "Південні ворота (Severinstorburg)",
-        type: ["historical_building"], rating: "popular",
-        path: "old_towers_koln",
-        map: "old_towers_koln",
-        countryPath: "germany", regionPath: "nrw", districtPath: "city", cityPath: "koln",
-        hiddenFromList: true,
-        coord: { lat: 50.92196, lng: 6.95923 },
-        meta: {
-            title: "Південні ворота (Severinstorburg) – стратегічно важливий південний вхід – через нього проходили основні шляхи до Бонна та півдня Німеччини",
-            ogImage: "https://our-travels.info/foto/Germany/nrw/koln/koln-city/altstadt/old_towers/004.jpg"
-        }
-    },
-    {
-        id: "ulrepforte_koln",
-        name: "Південний фрагмент стіни (Ulrepforte)",
-        type: ["historical_building"], rating: "popular",
-        path: "old_towers_koln",
-        map: "old_towers_koln",
-        countryPath: "germany", regionPath: "nrw", districtPath: "city", cityPath: "koln",
-        hiddenFromList: true,
-        coord: { lat: 50.92418, lng: 6.95305 },
-        meta: {
-            title: "Південний фрагмент стіни (Ulrepforte) – найвужчі та найменші з міських воріт, слугували радше допоміжною частиною оборони.",
-            ogImage: "https://our-travels.info/foto/Germany/nrw/koln/koln-city/altstadt/old_towers/005.jpg"
-        }
-    },
-    {
-        id: "bayenturm_koln",
-        name: "Башта на півдні біля Рейну (Bayenturm)",
-        type: ["historical_building"], rating: "popular",
-        path: "old_towers_koln",
-        map: "old_towers_koln",
-        countryPath: "germany", regionPath: "nrw", districtPath: "city", cityPath: "koln",
-        hiddenFromList: true,
-        coord: { lat: 50.92375, lng: 6.96695 },
-        meta: {
-            title: "Башта на півдні біля Рейну (Bayenturm) – оборонна башта, що стояла на південному сході міської стіни біля Рейну.",
-            ogImage: "https://our-travels.info/foto/Germany/nrw/koln/koln-city/altstadt/old_towers/006.jpg"
         }
     },
     {
@@ -1891,6 +1798,7 @@ const datas = [
         fotoCard: "Germany/nrw/koln/koln-city/rheinpark_koln/004.jpg",
         location: "Кельн, Німеччина",
         short_description: "Руїни римського форту Дівітія, відомі також як історичний парк Дойц, це залишки пізньоримського укріплення IV століття н.е. на правому березі Рейну в Кельні. Збереглися фрагменти вежі, кам'яна кладка та основи стін. Доступні для вільного огляду в пішохідній зоні Рейнського парку.",
+        status: "partial", note: "збереглися фрагменти римського форту Дивітія, включаючи залишки оборонних стін та планувальні елементи укріплення, інша структура втрачена і відома за археологічними даними.",
         full_description: {
             title: "Опис та історія",
             items: [
@@ -2274,6 +2182,7 @@ const datas = [
         fotoCard: "Germany/nrw/koln/Aachen/monschau/burg/001.jpg",
         location: "Моншау, Німеччина",
         short_description: "Замок Моншау (нім. Burg Monschau) – середньовічний замок на пагорбі в Моншау (Північний Рейн‑Вестфалія, Німеччина). Частково в руїнах, із збереженими вежами та стінами, він є історичною та культурною пам’яткою з панорамними видами на старе місто.",
+        status: "partial", note: "збереглися окремі елементи середньовічного замку Моншау, включаючи частини оборонних стін і баштових споруд, значна частина комплексу перебудована і використовується в сучасних цілях, зокрема для розміщення хостелу.",
         full_description: {
             title: "Опис і історія",
             items: [

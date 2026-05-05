@@ -194,7 +194,16 @@ const Map = () => {
                               <li><Link to="/germany/nrw/city/koln/attractions/wallraf_richartz_museum">{t.attractions.wallraf_richartz_museum[lang]}</Link></li>
                               <li><Link to="/germany/nrw/city/koln/attractions/museum_ludwig">{t.attractions.museum_ludwig[lang]}</Link></li>
                               <li><Link to="/germany/nrw/city/koln/attractions/stadtmuseum_koln">{t.attractions.stadtmuseum_koln[lang]}</Link></li>
-                              <li><Link to="/germany/nrw/city/koln/attractions/old_towers_koln">{t.attractions.old_towers_koln[lang]}</Link></li>
+                              <li><Link to="/germany/nrw/city/koln/attractions/old_towers_koln">{t.attractions.old_towers_koln[lang]}</Link>
+                                <ul>
+                                  <li><Link to="/germany/nrw/city/koln/attractions/rumerturm_koln">{t.attractions.rumerturm_koln[lang]}</Link></li>
+                                  <li><Link to="/germany/nrw/city/koln/attractions/hahnentorburg_koln">{t.attractions.hahnentorburg_koln[lang]}</Link></li>
+                                  <li><Link to="/germany/nrw/city/koln/attractions/eigelsteintorburg_koln">{t.attractions.eigelsteintorburg_koln[lang]}</Link></li>
+                                  <li><Link to="/germany/nrw/city/koln/attractions/severinstorburg_koln">{t.attractions.severinstorburg_koln[lang]}</Link></li>
+                                  <li><Link to="/germany/nrw/city/koln/attractions/ulrepforte_koln">{t.attractions.ulrepforte_koln[lang]}</Link></li>
+                                  <li><Link to="/germany/nrw/city/koln/attractions/bayenturm_koln">{t.attractions.bayenturm_koln[lang]}</Link></li>
+                                </ul>
+                              </li>
                             </ul>
                           </li>
                           <li><Link to="/germany/nrw/city/koln/attractions/romanische_kirchen_altstadt_koln">{t.attractions.romanische_kirchen_altstadt_koln[lang]}:</Link>

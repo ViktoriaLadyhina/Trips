@@ -1369,6 +1369,8 @@ const datas = [
         countryPath: "germany", regionPath: "nrw", districtPath: "city", cityPath: "koln",
         hiddenFromList: true, showMore: true,
         mapOpen: "old_towers_koln",
+        subObjects: ["rumerturm_koln", "hahnentorburg_koln", "eigelsteintorburg_koln", "severinstorburg_koln", "ulrepforte_koln", "bayenturm_koln"],
+        subObjects_title: "Wichtigste erhaltene Türme und Mauerfragmente",
         fotoCard: "Germany/nrw/koln/koln-city/altstadt/old_towers/001.jpg",
         location: "Köln, Deutschland",
         short_description: "Die alten Türme und Befestigungen der Altstadt Kölns sind Reste der mittelalterlichen Stadtmauer und römischer Verteidigungsanlagen, die einst die Stadt schützten. Heute sind sie über die Altstadt verteilt und dienen als historische Orientierungspunkte für Bewohner und Touristen. Diese Türme vermitteln ein Bild davon, wie Köln im Mittelalter aussah, und zeigen Spuren des Verteidigungssystems. Die Sehenswürdigkeit ist bei Touristen beliebt, stellt jedoch kein weltbekanntes Symbol der Stadt dar.",
@@ -1381,17 +1383,6 @@ const datas = [
                 { text: "Im Mittelalter entwickelte sich Köln zu einem der größten Handelszentren Nordeuropas. In dieser Zeit wurde die Stadtmauer durch neue Türme und Tore verstärkt, die ein komplexes Verteidigungssystem bildeten. Heute sind nur noch einzelne Objekte dieses Systems erhalten – große Tore mit Türmen sowie Mauerreste mit kleinen Wachtürmen." }
             ]
         },
-        sub_objects: {
-            title: "Wichtigste erhaltene Türme und Mauerfragmente",
-            items: [
-                { img: "Germany/nrw/koln/koln-city/altstadt/old_towers/002.jpg", alt: "Römerturm Römerturm", bold: "Römerturm", text: "– Überrest der römischen Stadtmauer (Colonia Agrippinensis), ein Denkmal der antiken Geschichte der Stadt – ein seltenes und sehr altes architektonisches Relikt. Es ist einer der wenigen römischen Türme, die bis heute erhalten sind. Laut römischen Quellen gab es ursprünglich etwa 19 solcher Verteidigungstürme um die Stadt.<br>Der Turm war Teil der spätantiken Befestigung und diente als Wachturm und Aussichtspunkt – heute ist dies das älteste erhaltene Stück der Kölner Befestigungsanlagen.<br><b>Wo:</b> Zeughausstraße – im Nordwesten der Altstadt, fußläufig vom Zentrum entfernt." },
-                { img: "Germany/nrw/koln/koln-city/altstadt/old_towers/001.jpg", alt: "Westtor (Hahnentorburg)", bold: "Westtor (Hahnentorburg)", text: "– eines der vier erhaltenen mittelalterlichen Stadttore mit Türmen der ehemaligen Altstadtmauer. Das Tor wird erstmals 1264 erwähnt; es schützte den westlichen Zugang zum Handelsweg nach Aachen und Jülich. Hier verschmilzt mittelalterliche Architektur förmlich mit dem modernen Platzraum und bewahrt den Geist der Kölner Befestigungsanlagen.<br><b>Wo:</b> Rudolfplatz – westliche Grenze der Altstadt." },
-                { img: "Germany/nrw/koln/koln-city/altstadt/old_towers/003.jpg", alt: "Nordtor (Eigelsteintorburg)", bold: "Nordtor (Eigelsteintorburg)", text: "– gut erhaltene mittelalterliche Festungsarchitektur mit massiven Türmen und Bogenpassage. Große Doppeltore auf der Nordseite der Altstadtmauer. Erbaut während der dritten Stadterweiterung im 13. Jahrhundert; ersetzte den früheren Nordturm und diente der Kontrolle des Zugangs von den nördlichen Handelswegen.<br><b>Wo:</b> Bezirk Eigelstein / Ebertplatz." },
-                { img: "Germany/nrw/koln/koln-city/altstadt/old_towers/004.jpg", alt: "Südtor (Severinstorburg)", bold: "Südtor (Severinstorburg)", text: "– strategisch wichtiger südlicher Eingang – über ihn verliefen die Hauptwege nach Bonn und Süddeutschland, eines der vier Haupttore der Altstadt, das den südlichen Zugang schützte. Errichtet in der ersten Hälfte des 13. Jahrhunderts als Teil einer massiven Steinmauer; später mit Zinnen und Flanken ergänzt.<br><b>Wo:</b> heutiger Chlodwigplatz." },
-                { img: "Germany/nrw/koln/koln-city/altstadt/old_towers/005.jpg", alt: "Südliches Mauerfragment (Ulrepforte)", bold: "Südliches Mauerfragment (Ulrepforte)", text: "– das schmalste und kleinste der Stadttore, diente eher als Hilfsbefestigung. Ein kleiner, aber antiker Stadteingang, Teil der mittelalterlichen Stadtbefestigung. Erbaut Anfang des 13. Jahrhunderts und erstmals 1245 urkundlich erwähnt; eines von zwölf Toren der Mauer, aber von geringer Bedeutung für die Verkehrswege.<br><b>Wo:</b> Sachsenring – südlicher Abschnitt der Altstadt." },
-                { img: "Germany/nrw/koln/koln-city/altstadt/old_towers/006.jpg", alt: "Turm im Süden am Rhein (Bayenturm)", bold: "Turm im Süden am Rhein (Bayenturm)", text: "– Befestigungsturm am südöstlichen Ende der Stadtmauer nahe dem Rhein, Symbol für die Kontrolle des Handelswegs am Rhein. Errichtet ca. 1180–1220 als Teil der Flussbefestigung; im Zweiten Weltkrieg stark beschädigt, später wiederhergestellt.<br><b>Wo:</b> südlicher Teil der Altstadt, nahe Ringstraße." }
-            ]
-        },
         meta: {
             title: "Alte Türme und Befestigungen der Altstadt Kölns – historische Sehenswürdigkeiten der Stadt",
             description: "Entdecken Sie mittelalterliche Türme und Mauerfragmente in Köln. Erfahren Sie die Geschichte der alten Befestigungen der Altstadt und entdecken Sie wichtige historische Orientierungspunkte, die bis heute erhalten sind.",
@@ -1399,90 +1390,6 @@ const datas = [
             ogDescription: "Spazieren Sie durch die Altstadt von Köln und entdecken Sie alte Türme und Befestigungen, die den Geist der mittelalterlichen Stadt bewahren und wichtige historische Denkmäler darstellen.",
             keywords: "Alte Türme und Befestigungen der Altstadt Köln, Köln, Sehenswürdigkeit, Festungen, mittelalterliche Mauern, Architektur, historische Gebäude, Tourismus Deutschland, Führungen, Altstadt, Befestigungsanlagen, Kulturerbe",
             ogImage: "https://our-travels.info/foto/Germany/nrw/koln/koln-city/altstadt/old_towers/001.jpg"
-        }
-    },
-    {
-        id: "rumerturm_koln",
-        name: "Römerturm",
-        type: ["historical_building"], rating: "popular",
-        path: "old_towers_koln",
-        map: "old_towers_koln",
-        countryPath: "germany", regionPath: "nrw", districtPath: "city", cityPath: "koln",
-        hiddenFromList: true,
-        coord: { lat: 50.94093, lng: 6.94663 },
-        meta: {
-            title: "Römerturm – Überrest der römischen Stadtmauer (Colonia Agrippinensis), Denkmal der antiken Geschichte der Stadt",
-            ogImage: "https://our-travels.info/foto/Germany/nrw/koln/koln-city/altstadt/old_towers/002.jpg"
-        }
-    },
-    {
-        id: "hahnentorburg_koln",
-        name: "Westtor (Hahnentorburg)",
-        type: ["historical_building"], rating: "popular",
-        path: "old_towers_koln",
-        map: "old_towers_koln",
-        countryPath: "germany", regionPath: "nrw", districtPath: "city", cityPath: "koln",
-        hiddenFromList: true,
-        coord: { lat: 50.93639, lng: 6.94021 },
-        meta: {
-            title: "Westtor (Hahnentorburg) – eines der vier erhaltenen mittelalterlichen Stadttore mit Türmen der ehemaligen Altstadtmauer",
-            ogImage: "https://our-travels.info/foto/Germany/nrw/koln/koln-city/altstadt/old_towers/001.jpg"
-        }
-    },
-    {
-        id: "eigelsteintorburg_koln",
-        name: "Nordtor (Eigelsteintorburg)",
-        type: ["historical_building"], rating: "popular",
-        path: "old_towers_koln",
-        map: "old_towers_koln",
-        countryPath: "germany", regionPath: "nrw", districtPath: "city", cityPath: "koln",
-        hiddenFromList: true,
-        coord: { lat: 50.94931, lng: 6.95687 },
-        meta: {
-            title: "Nordtor (Eigelsteintorburg) – gut erhaltene mittelalterliche Festungsarchitektur mit massiven Türmen und einem Torbogen.",
-            ogImage: "https://our-travels.info/foto/Germany/nrw/koln/koln-city/altstadt/old_towers/003.jpg"
-        }
-    },
-    {
-        id: "severinstorburg_koln",
-        name: "Südtor (Severinstorburg)",
-        type: ["historical_building"], rating: "popular",
-        path: "old_towers_koln",
-        map: "old_towers_koln",
-        countryPath: "germany", regionPath: "nrw", districtPath: "city", cityPath: "koln",
-        hiddenFromList: true,
-        coord: { lat: 50.92196, lng: 6.95923 },
-        meta: {
-            title: "Südtor (Severinstorburg) – strategisch wichtiger südlicher Zugang – über ihn führten die wichtigsten Wege nach Bonn und in den Süden Deutschlands",
-            ogImage: "https://our-travels.info/foto/Germany/nrw/koln/koln-city/altstadt/old_towers/004.jpg"
-        }
-    },
-    {
-        id: "ulrepforte_koln",
-        name: "Südliches Mauerfragment (Ulrepforte)",
-        type: ["historical_building"], rating: "popular",
-        path: "old_towers_koln",
-        map: "old_towers_koln",
-        countryPath: "germany", regionPath: "nrw", districtPath: "city", cityPath: "koln",
-        hiddenFromList: true,
-        coord: { lat: 50.92418, lng: 6.95305 },
-        meta: {
-            title: "Südliches Mauerfragment (Ulrepforte) – das schmalste und kleinste der Stadttore, das eher als zusätzlicher Teil der Verteidigung diente.",
-            ogImage: "https://our-travels.info/foto/Germany/nrw/koln/koln-city/altstadt/old_towers/005.jpg"
-        }
-    },
-    {
-        id: "bayenturm_koln",
-        name: "Turm im Süden am Rhein (Bayenturm)",
-        type: ["historical_building"], rating: "popular",
-        path: "old_towers_koln",
-        map: "old_towers_koln",
-        countryPath: "germany", regionPath: "nrw", districtPath: "city", cityPath: "koln",
-        hiddenFromList: true,
-        coord: { lat: 50.92375, lng: 6.96695 },
-        meta: {
-            title: "Turm im Süden am Rhein (Bayenturm) – ein Wehrturm am südöstlichen Ende der Stadtmauer nahe dem Rhein.",
-            ogImage: "https://our-travels.info/foto/Germany/nrw/koln/koln-city/altstadt/old_towers/006.jpg"
         }
     },
     {
@@ -1892,6 +1799,7 @@ const datas = [
         fotoCard: "Germany/nrw/koln/koln-city/rheinpark_koln/004.jpg",
         location: "Köln, Deutschland",
         short_description: "Die Ruinen des römischen Forts Divitia, auch bekannt als Historischer Park Deutz, sind Überreste einer spätantiken Befestigung aus dem 4. Jahrhundert n. Chr. am rechten Rheinufer in Köln. Erhalten sind Turmfragmente, Mauerwerk und Fundamentreste. Sie sind für die freie Besichtigung in der Fußgängerzone des Rheinparks zugänglich.",
+        status: "partial", note: "erhalten sind Fragmente des römischen Kastells Divitia, einschließlich Reste der Befestigungsmauern und planungsbezogener Strukturen, der übrige Aufbau ist verloren und nur archäologisch belegt.",
         full_description: {
             title: "Beschreibung und Geschichte",
             items: [
@@ -2275,6 +2183,7 @@ const datas = [
         fotoCard: "Germany/nrw/koln/Aachen/monschau/burg/001.jpg",
         location: "Monschau, Deutschland",
         short_description: "Die Burg Monschau ist eine mittelalterliche Burg auf einem Hügel in Monschau (Nordrhein‑Westfalen, Deutschland). Teilweise ruinös mit erhaltenen Türmen und Mauern ist sie eine historische und kulturelle Sehenswürdigkeit mit Panoramablick auf die Altstadt.",
+        status: "partial", note: "erhalten sind einzelne Elemente der mittelalterlichen Burg Monschau, einschließlich Teile der Wehrmauern und Turmstrukturen, ein großer Teil der Anlage wurde umgebaut und wird heute unter anderem als Unterkunft (Hostel) genutzt.",
         full_description: {
             title: "Beschreibung und Geschichte",
             items: [

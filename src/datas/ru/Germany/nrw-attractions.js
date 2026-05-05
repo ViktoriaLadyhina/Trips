@@ -1377,6 +1377,8 @@ const datas = [
         mapOpen: "old_towers_koln",
         fotoCard: "Germany/nrw/koln/koln-city/altstadt/old_towers/001.jpg",
         location: "Кёльн, Германия",
+        subObjects: ["rumerturm_koln", "hahnentorburg_koln", "eigelsteintorburg_koln", "severinstorburg_koln", "ulrepforte_koln", "bayenturm_koln"],
+        subObjects_title: "Основные сохранившиеся башни и фрагменты городской стены",
         short_description: "Старые башни и укрепления Старого Кёльна – это остатки средневековой городской стены и римских оборонительных сооружений, которые когда-то защищали город. Сегодня они разбросаны по Старому городу и служат историческим ориентиром для жителей и туристов. Эти башни позволяют представить, как выглядел Кёльн в Средние века и увидеть следы его оборонительной системы. Объект популярен среди туристов, но не является всемирно известным символом города.",
         status: "partial", note: "сохранились лишь отдельные объекты этой системы – как крупные ворота с башнями, так и фрагменты стен с малыми сторожевыми башнями.",
         full_description: {
@@ -1387,17 +1389,6 @@ const datas = [
                 { text: "В Средние века Кёльн вырос в один из крупнейших торговых центров Северной Европы. В этот период городская стена была укреплена новыми башнями и воротами, которые образовывали сложную систему обороны. Сегодня сохранились лишь отдельные объекты этой системы – как крупные ворота с башнями, так и фрагменты стен с малыми сторожевыми башнями." }
             ]
         },
-        sub_objects: {
-            title: "Основные сохранившиеся башни и фрагменты городской стены",
-            items: [
-                { img: "Germany/nrw/koln/koln-city/altstadt/old_towers/002.jpg", alt: "Римская башня Römerturm", bold: "Римская башня (Römerturm)", text: "– остаток римской городской стены (Colonia Agrippinensis), памятник древнеримской истории города — редкая и очень старая архитектурная реликвия. Это одна из немногих римских башен, уцелевших до наших дней. По римским источникам, первоначально вокруг города существовало до ~19 таких защитных башен.<br>Башня была частью позднеримского укрепления и использовалась как сторожевая и наблюдательная – сегодня это самый древний фрагмент оборонительных сооружений Кёльна. <br> <b>Где: </b> улица Zeughausstraße — в северо западной части Старого города, в шаговой доступности от центра." },
-                { img: "Germany/nrw/koln/koln-city/altstadt/old_towers/001.jpg", alt: "Западные ворота (Hahnentorburg)", bold: "Западные ворота (Hahnentorburg)", text: "– один из четырёх сохранившихся средневековых городских ворот башен бывшей стены Старого города. Ворота впервые упоминаются в 1264 году; они защищали западный вход на торговый путь к Aахену и Юлиху. Здесь средневековая архитектура буквально «врезается» в современное пространство площади, сохраняя дух оборонительных укреплений Кёльна. <br><b>Где: </b> площадь Rudolfplatz – западная граница старого города. " },
-                { img: "Germany/nrw/koln/koln-city/altstadt/old_towers/003.jpg", alt: "Северные ворота (Eigelsteintorburg)", bold: "Северные ворота (Eigelsteintorburg)", text: "– это хорошо сохранившаяся средневековая крепостная архитектура с массивными башнями и арочным проходом. Большие двойные ворота на северной стороне городской стены Старого города. Построена в период третьего расширения города в XIII веке; заменила раннюю северную башню и служила для контроля въезда со стороны северных торговых путей. <br><b>Где: </b> район Eigelstein / Ebertplatz. " },
-                { img: "Germany/nrw/koln/koln-city/altstadt/old_towers/004.jpg", alt: "Южные ворота (Severinstorburg)", bold: "Южные ворота (Severinstorburg)", text: "– стратегически важный южный вход – через него шли основные пути к Бонну и югу Германии и одна из четырёх главных средневековых ворот Старого города, защищавшая южный подход.  Сооружена в первой половине XIII века в составе мощной каменной стены; окончательно оформлена с зенитами и фланками в более поздние периоды. <br><b>Где: </b> сегодняшняя площадь Chlodwigplatz. " },
-                { img: "Germany/nrw/koln/koln-city/altstadt/old_towers/005.jpg", alt: "Южный фрагмент стены (Ulrepforte)", bold: "Южный фрагмент стены (Ulrepforte)", text: "– самый узкий и маленький из городских ворот, служивший скорее вспомогательной частью обороны. Это небольшой, но античный городской вход, часть средневековой оборонительной стены.  Построена в начале XIII века и впервые упоминается в документах 1245 года; это был один из двенадцати ворот стены, но с меньшим значением по транспортным путям. <br><b>Где: </b> улица Sachsenring –  южный участок Старого города. " },
-                { img: "Germany/nrw/koln/koln-city/altstadt/old_towers/006.jpg", alt: "Башня на юге у Рейна (Bayenturm)", bold: "Башня на юге у Рейна (Bayenturm)", text: "– это оборонительная башня, стоявшая на юго восточном конце городской стены близ Рейна, символ важности контроля торгового пути по Рейну.  Построена примерно между 1180 и 1220 годами как часть крепостных укреплений у реки; сильно пострадала во Второй мировой, позже восстановлена. <br><b>Где: </b> южная часть Старого города, рядом с кольцевой улицей Ringstraße." }
-            ]
-        },
         meta: {
             title: "Старые башни и укрепления Старого Кёльна – исторические достопримечательности города",
             description: "Исследуйте средневековые башни и фрагменты городской стены Кёльна. Узнайте историю старинных укреплений, расположенных по Старому городу, и откройте для себя важные исторические ориентиры, сохранившиеся до наших дней.",
@@ -1405,90 +1396,6 @@ const datas = [
             ogDescription: "Прогуляйтесь по Старому городу Кёльна и откройте для себя старинные башни и укрепления, которые хранят дух средневекового города и служат важными историческими памятниками.",
             keywords: "Старые башни и укрепления Старого Кёльна, Кёльн, достопримечательность, крепости, средневековые стены, архитектура, исторические здания, туризм Германия, экскурсии, старый город, фортификация, культурное наследие",
             ogImage: "https://our-travels.info/foto/Germany/nrw/koln/koln-city/altstadt/old_towers/001.jpg"
-        }
-    },
-    {
-        id: "rumerturm_koln",
-        name: "Римская башня Römerturm",
-        type: ["historical_building"], rating: "popular",
-        path: "old_towers_koln",
-        countryPath: "germany", regionPath: "nrw", districtPath: "city", cityPath: "koln",
-        hiddenFromList: true,
-        coord: { lat: 50.94093, lng: 6.94663 },
-        map: "old_towers_koln",
-        meta: {
-            title: "Римская башня (Römerturm) – остаток римской городской стены (Colonia Agrippinensis), памятник древнеримской истории города",
-            ogImage: "https://our-travels.info/foto/Germany/nrw/koln/koln-city/altstadt/old_towers/002.jpg"
-        }
-    },
-    {
-        id: "hahnentorburg_koln",
-        name: "Западные ворота (Hahnentorburg)",
-        type: ["historical_building"], rating: "popular",
-        path: "old_towers_koln",
-        countryPath: "germany", regionPath: "nrw", districtPath: "city", cityPath: "koln",
-        hiddenFromList: true,
-        coord: { lat: 50.93639, lng: 6.94021 },
-        map: "old_towers_koln",
-        meta: {
-            title: "Западные ворота (Hahnentorburg) – одни из четырёх сохранившихся средневековых городских ворот-башен бывшей стены Старого города",
-            ogImage: "https://our-travels.info/foto/Germany/nrw/koln/koln-city/altstadt/old_towers/001.jpg"
-        }
-    },
-    {
-        id: "eigelsteintorburg_koln",
-        name: "Северные ворота (Eigelsteintorburg)",
-        type: ["historical_building"], rating: "popular",
-        path: "old_towers_koln",
-        countryPath: "germany", regionPath: "nrw", districtPath: "city", cityPath: "koln",
-        hiddenFromList: true,
-        coord: { lat: 50.94931, lng: 6.95687 },
-        map: "old_towers_koln",
-        meta: {
-            title: "Северные ворота (Eigelsteintorburg) – хорошо сохранившаяся средневековая фортификационная архитектура с массивными башнями и арочным проходом.",
-            ogImage: "https://our-travels.info/foto/Germany/nrw/koln/koln-city/altstadt/old_towers/003.jpg"
-        }
-    },
-    {
-        id: "severinstorburg_koln",
-        name: "Южные ворота (Severinstorburg)",
-        type: ["historical_building"], rating: "popular",
-        path: "old_towers_koln",
-        countryPath: "germany", regionPath: "nrw", districtPath: "city", cityPath: "koln",
-        hiddenFromList: true,
-        coord: { lat: 50.92196, lng: 6.95923 },
-        map: "old_towers_koln",
-        meta: {
-            title: "Южные ворота (Severinstorburg) – стратегически важный южный вход – через него проходили основные пути к Бонну и на юг Германии",
-            ogImage: "https://our-travels.info/foto/Germany/nrw/koln/koln-city/altstadt/old_towers/004.jpg"
-        }
-    },
-    {
-        id: "ulrepforte_koln",
-        name: "Южный фрагмент стены (Ulrepforte)",
-        type: ["historical_building"], rating: "popular",
-        path: "old_towers_koln",
-        countryPath: "germany", regionPath: "nrw", districtPath: "city", cityPath: "koln",
-        hiddenFromList: true,
-        coord: { lat: 50.92418, lng: 6.95305 },
-        map: "old_towers_koln",
-        meta: {
-            title: "Южный фрагмент стены (Ulrepforte) – самые узкие и маленькие из городских ворот, служили скорее вспомогательной частью обороны.",
-            ogImage: "https://our-travels.info/foto/Germany/nrw/koln/koln-city/altstadt/old_towers/005.jpg"
-        }
-    },
-    {
-        id: "bayenturm_koln",
-        name: "Башня на юге у Рейна (Bayenturm)",
-        type: ["historical_building"], rating: "popular",
-        path: "old_towers_koln",
-        countryPath: "germany", regionPath: "nrw", districtPath: "city", cityPath: "koln",
-        hiddenFromList: true,
-        coord: { lat: 50.92375, lng: 6.96695 },
-        map: "old_towers_koln",
-        meta: {
-            title: "Башня на юге у Рейна (Bayenturm) – оборонительная башня, расположенная на юго-востоке городской стены у Рейна.",
-            ogImage: "https://our-travels.info/foto/Germany/nrw/koln/koln-city/altstadt/old_towers/006.jpg"
         }
     },
     {
@@ -1898,6 +1805,7 @@ const datas = [
         fotoCard: "Germany/nrw/koln/koln-city/rheinpark_koln/004.jpg",
         location: "Кёльн, Германия",
         short_description: "Руины римского форта Дивития, известные также как исторический парк Дойтц, это остатки позднеримского укрепления IV века н.э. на правом берегу Рейна в Кёльне. Сохранились фрагменты башни, каменная кладка и основания стен. Доступен для свободного осмотра в пешеходной зоне Рейнского парка.",
+        status: "partial", note: "сохранились фрагменты римского форта Дивития, включая остатки оборонительных стен и планировочные элементы укрепления, остальная структура утрачена и известна по археологическим данным.",
         full_description: {
             title: "Описание и история",
             items: [
@@ -2283,6 +2191,7 @@ const datas = [
         fotoCard: "Germany/nrw/koln/Aachen/monschau/burg/001.jpg",
         location: "Моншау, Германия",
         short_description: "Замок Моншау (нем. Burg Monschau) – средневековый замок на холме в Моншау (Северный Рейн-Вестфалия, Германия). Частично руинирован, с сохранившимися башнями и стенами, он является исторической и культурной достопримечательностью с панорамными видами на старый город.",
+        status: "partial", note: "сохранились отдельные элементы средневекового замка Моншау, включая части крепостных стен и башенных сооружений, значительная часть комплекса перестроена и используется в современных целях, включая размещение хостела.",
         full_description: {
             title: "Описание и история",
             items: [

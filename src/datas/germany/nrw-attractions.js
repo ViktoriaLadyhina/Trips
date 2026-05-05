@@ -3661,6 +3661,471 @@ const datas = [
             }
         }
     },
+    {
+        id: "rumerturm_koln",
+        type: ["historical_building"], rating: "local",
+        path: "rumerturm_koln",
+        countryPath: "germany", regionPath: "nrw", districtPath: "city", cityPath: "koln",
+        hiddenFromList: true, showMore: true,
+        fotoCard: "Germany/nrw/koln/koln-city/altstadt/old_towers/002.jpg",
+        coord: { lat: 50.94093, lng: 6.94663 },
+        map: "old_towers_koln",
+        translations: {
+            ru: {
+                name: "Римская башня Römerturm",
+                short_description: "Römerturm – сохранившаяся римская башня городской стены Colonia Claudia Ara Agrippinensium. Один из наиболее значимых и хорошо сохранившихся фрагментов римского укреплённого Кёльна.",
+                status: "partial", note: "сохранился как фрагмент римской городской оборонительной системы Кёльна; оригинальная структура частично утрачена, но сохранилась основная башенная часть с римской кладкой.",
+                full_description: {
+                    title: "Описание и история",
+                    items: [
+                        { bold: "Römerturm (Римская башня)", text: "— часть римской оборонительной системы города Colonia Claudia Ara Agrippinensium. Башня относится к позднеримскому периоду укреплений (примерно IV век н.э.) и является одним из наиболее хорошо сохранившихся элементов римской городской стены Кёльна." },
+                        { text: "Она использовалась как оборонительная и наблюдательная башня в составе городской стены, защищавшей римский Кёльн. В отличие от большинства подобных сооружений, Römerturm частично сохранила оригинальную кладку с характерным декоративным узором из камня." },
+                        { bold: "Где:", text: "улица Zeughausstraße, район Innenstadt (Altstadt-Nord), недалеко от западной границы исторического центра Кёльна." }
+                    ]
+                },
+                construction_period: "позднеримский период (около IV века н.э.)",
+                meta: {
+                    title: "Римская башня (Römerturm) в Кёльне – один из лучших сохранившихся фрагментов римской городской стены Colonia Claudia Ara Agrippinensium",
+                    description: "Römerturm — римская башня в Кёльне, часть древней городской стены Colonia Claudia Ara Agrippinensium. Один из наиболее сохранившихся памятников римской эпохи в городе.",
+                    ogDescription: "Römerturm — хорошо сохранившаяся римская башня в Кёльне, часть античной городской оборонительной системы.",
+                    keywords: "Römerturm Köln, римская башня Кёльн, Colonia Claudia Ara Agrippinensium, римская стена Кёльна, исторические башни Кёльн, достопримечательности",
+                    ogImage: "https://our-travels.info/foto/Germany/nrw/koln/koln-city/altstadt/old_towers/002.jpg"
+                }
+            },
+            ua: {
+                name: "Римська вежа Römerturm",
+                short_description: "Römerturm – збережена римська вежа міського муру Colonia Claudia Ara Agrippinensium. Один із найважливіших і найкраще збережених фрагментів римського укріпленого Кельна.",
+                status: "partial", note: "зберігся як фрагмент римської міської оборонної системи Кельна; оригінальна структура частково втрачена, однак збереглася основна баштова частина з римською кладкою.",
+                full_description: {
+                    title: "Опис та історія",
+                    items: [
+                        { bold: "Römerturm (Римська вежа)", text: "– частина римської оборонної системи міста Colonia Claudia Ara Agrippinensium. Вежа належить до пізньоримського періоду укріплень (приблизно IV століття н. е.) і є одним із найкраще збережених елементів римського міського муру Кельна." },
+                        { text: "Вона використовувалася як оборонна та спостережна вежа у складі міського муру, який захищав римський Кельн. На відміну від більшості подібних споруд, Römerturm частково зберегла оригінальну кладку з характерним декоративним кам’яним візерунком." },
+                        { bold: "Де:", text: "вулиця Zeughausstraße, район Innenstadt (Altstadt-Nord), неподалік західної межі історичного центру Кельна." }
+                    ]
+                },
+                meta: {
+                    title: "Римська вежа (Römerturm) у Кельні – один із найкраще збережених фрагментів римського міського муру Colonia Claudia Ara Agrippinensium",
+                    description: "Römerturm – римська вежа у Кельні, частина давнього міського муру Colonia Claudia Ara Agrippinensium. Один із найкраще збережених пам’ятників римської епохи в місті.",
+                    ogDescription: "Römerturm – добре збережена римська вежа в Кельні, частина античної міської оборонної системи.",
+                    keywords: "Römerturm Köln, римська вежа Кельн, Colonia Claudia Ara Agrippinensium, римський мур Кельна, історичні вежі Кельн, визначні місця, пам’ятки",
+                    ogImage: "https://our-travels.info/foto/Germany/nrw/koln/koln-city/altstadt/old_towers/002.jpg"
+                }
+            },
+            de: {
+                name: "Römerturm",
+                short_description: "Der Römerturm ist ein erhalten gebliebener römischer Turm der Stadtmauer von Colonia Claudia Ara Agrippinensium. Eines der bedeutendsten und am besten erhaltenen Fragmente des römischen befestigten Kölns.",
+                status: "partial", note: "als Fragment der römischen Stadtbefestigung Kölns erhalten; die ursprüngliche Struktur ist teilweise verloren gegangen, jedoch ist der Hauptteil des Turms mit römischem Mauerwerk erhalten geblieben.",
+                full_description: {
+                    title: "Beschreibung und Geschichte",
+                    items: [
+                        { bold: "Römerturm", text: "— Teil des römischen Verteidigungssystems der Stadt Colonia Claudia Ara Agrippinensium. Der Turm stammt aus der spätrömischen Befestigungsphase (etwa 4. Jahrhundert n. Chr.) und gehört zu den am besten erhaltenen Elementen der römischen Stadtmauer Kölns." },
+                        { text: "Er diente als Verteidigungs- und Beobachtungsturm innerhalb der Stadtmauer, die das römische Köln schützte. Im Gegensatz zu vielen anderen Bauwerken dieser Zeit ist der Römerturm teilweise in seiner originalen römischen Mauertechnik mit dekorativer Steinsetzung erhalten." },
+                        { bold: "Lage:", text: "Zeughausstraße im Stadtteil Innenstadt (Altstadt-Nord), nahe der westlichen Grenze des historischen Stadtkerns von Köln." }
+                    ]
+                },
+                meta: {
+                    title: "Römerturm in Köln – eines der am besten erhaltenen Fragmente der römischen Stadtmauer von Colonia Claudia Ara Agrippinensium",
+                    description: "Der Römerturm ist ein römischer Turm in Köln und Teil der antiken Stadtmauer von Colonia Claudia Ara Agrippinensium. Eines der am besten erhaltenen Zeugnisse der Römerzeit in der Stadt.",
+                    ogDescription: "Der Römerturm ist ein gut erhaltener römischer Turm in Köln und Teil der antiken Stadtbefestigung.",
+                    keywords: "Römerturm Köln, römischer Turm Köln, Colonia Claudia Ara Agrippinensium, römische Stadtmauer Köln, historische Türme Köln, Sehenswürdigkeiten Köln",
+                    ogImage: "https://our-travels.info/foto/Germany/nrw/koln/koln-city/altstadt/old_towers/002.jpg"
+                }
+            },
+        },
+    },
+    {
+        id: "hahnentorburg_koln",
+        type: ["historical_building"], rating: "local",
+        path: "hahnentorburg_koln",
+        countryPath: "germany", regionPath: "nrw", districtPath: "city", cityPath: "koln",
+        hiddenFromList: true, showMore: true,
+        fotoCard: "Germany/nrw/koln/koln-city/altstadt/old_towers/001.jpg",
+        coord: { lat: 50.93639, lng: 6.94021 },
+        map: "old_towers_koln",
+        translations: {
+            ru: {
+                name: "Западные ворота (Hahnentorburg)",
+                short_description: "Hahnentorburg – одни из сохранившихся средневековых городских ворот Кёльна, входившие в систему второго городского оборонительного кольца. Один из наиболее выразительных памятников фортификационной архитектуры города.",
+                status: "partial", note: "сохранились как часть средневековой городской оборонительной системы Кёльна; ворота утратили часть первоначальных укреплений, но основная башенная структура и проезд сохранились.",
+                full_description: {
+                    title: "Описание и история",
+                    items: [
+                        { bold: "Hahnentorburg (Западные ворота)", text: "– одни из средневековых городских ворот Кёльна, входившие в систему второго городского оборонительного кольца (XIII–XIV века). Ворота впервые упоминаются в источниках в 1264 году и служили западным входом в город на торговом пути в сторону Аахена и Юлиха." },
+                        { text: "Сооружение представляло собой мощный оборонительный комплекс с башнями и проходом, контролировавший доступ в город. Сегодня Hahnentorburg является одним из наиболее хорошо сохранившихся элементов средневековой фортификации Кёльна." },
+                        { bold: "Где:", text: "площадь Rudolfplatz, западная граница исторического центра Кёльна." }
+                    ]
+                },
+                construction_period: "XIII век (первое упоминание 1264 год)",
+                meta: {
+                    title: "Западные ворота (Hahnentorburg) – средневековые западные городские ворота и часть второго оборонительного кольца",
+                    description: "Hahnentorburg – средневековые городские ворота Кёльна XIII века, входившие в систему городских укреплений и контролировавшие западный въезд в город.",
+                    ogDescription: "Hahnentorburg – одни из сохранившихся средневековых ворот Кёльна на площади Rudolfplatz.",
+                    keywords: "Hahnentorburg Köln, западные ворота Кёльна, средневековые ворота Кёльн, городская стена Кёльн, Rudolfplatz, достопримечательности",
+                    ogImage: "https://our-travels.info/foto/Germany/nrw/koln/koln-city/altstadt/old_towers/001.jpg"
+                }
+            },
+            ua: {
+                name: "Західні ворота (Hahnentorburg)",
+                short_description: "Hahnentorburg – одні із збережених середньовічних міських воріт Кельна, що входили до системи другого міського оборонного кільця. Один із найвиразніших пам’ятників фортифікаційної архітектури міста.",
+                status: "partial",
+                note: "збереглися як частина середньовічної міської оборонної системи Кельна; ворота втратили частину первісних укріплень, однак основна баштова структура та проїзд збереглися.",
+                full_description: {
+                    title: "Опис та історія",
+                    items: [
+                        { bold: "Hahnentorburg (Західні ворота)", text: "– одні із середньовічних міських воріт Кельна, що входили до системи другого міського оборонного кільця (XIII–XIV століття). Ворота вперше згадуються в джерелах у 1264 році та служили західним входом до міста на торговому шляху у напрямку Аахена та Юліха." },
+                        { text: "Споруда являла собою потужний оборонний комплекс із баштами та проїздом, який контролював доступ до міста. Сьогодні Hahnentorburg є одним із найкраще збережених елементів середньовічної фортифікації Кельна." },
+                        { bold: "Де:", text: "площа Rudolfplatz, західна межа історичного центру Кельна." }
+                    ]
+                },
+                construction_period: "XIII століття (перша згадка 1264 рік)",
+                meta: {
+                    title: "Західні ворота (Hahnentorburg) – середньовічні західні міські ворота та частина другого оборонного кільця",
+                    description: "Hahnentorburg – середньовічні міські ворота Кельна XIII століття, що входили до системи міських укріплень і контролювали західний в’їзд до міста.",
+                    ogDescription: "Hahnentorburg – одні із збережених середньовічних воріт Кельна на площі Rudolfplatz.",
+                    keywords: "Hahnentorburg Köln, західні ворота Кельна, середньовічні ворота Кельн, міський мур Кельна, Rudolfplatz, визначні місця, пам’ятки",
+                    ogImage: "https://our-travels.info/foto/Germany/nrw/koln/koln-city/altstadt/old_towers/001.jpg"
+                }
+            },
+            de: {
+                name: "Hahnentorburg (Westtor)",
+                short_description: "Die Hahnentorburg ist eines der erhaltenen mittelalterlichen Stadttore Kölns, die zum System des zweiten Stadtbefestigungsrings gehörten. Eines der ausdrucksstärksten Beispiele der Wehrarchitektur der Stadt.",
+                status: "partial",
+                note: "als Teil der mittelalterlichen Stadtbefestigung Kölns erhalten; das Tor hat einen Teil seiner ursprünglichen Befestigungsanlagen verloren, jedoch sind die Hauptturmstruktur und der Durchgang erhalten geblieben.",
+                full_description: {
+                    title: "Beschreibung und Geschichte",
+                    items: [
+                        { bold: "Hahnentorburg (Westtor)", text: "– eines der mittelalterlichen Stadttore Kölns, das zum System des zweiten Stadtbefestigungsrings (13.–14. Jahrhundert) gehörte. Das Tor wird erstmals im Jahr 1264 in Quellen erwähnt und diente als westlicher Stadteingang auf dem Handelsweg in Richtung Aachen und Jülich." },
+                        { text: "Der Bau stellte einen mächtigen Befestigungskomplex mit Türmen und Durchgang dar, der den Zugang zur Stadt kontrollierte. Heute gehört die Hahnentorburg zu den am besten erhaltenen Elementen der mittelalterlichen Stadtbefestigung Kölns." },
+                        { bold: "Lage:", text: "Rudolfplatz, westliche Grenze des historischen Stadtzentrums von Köln." }
+                    ]
+                },
+                construction_period: "13. Jahrhundert (erste Erwähnung im Jahr 1264)",
+                meta: {
+                    title: "Hahnentorburg in Köln – mittelalterliches Westtor und Teil des zweiten Stadtbefestigungsrings",
+                    description: "Die Hahnentorburg ist ein mittelalterliches Stadttor aus dem 13. Jahrhundert in Köln, das Teil der Stadtbefestigung war und den westlichen Stadteingang kontrollierte.",
+                    ogDescription: "Die Hahnentorburg ist eines der erhaltenen mittelalterlichen Stadttore Kölns am Rudolfplatz.",
+                    keywords: "Hahnentorburg Köln, Westtor Köln, mittelalterliches Stadttor Köln, Stadtmauer Köln, Rudolfplatz, Sehenswürdigkeiten Köln",
+                    ogImage: "https://our-travels.info/foto/Germany/nrw/koln/koln-city/altstadt/old_towers/001.jpg"
+                }
+            }
+        },
+    },
+    {
+        id: "eigelsteintorburg_koln",
+        type: ["historical_building"], rating: "local",
+        path: "eigelsteintorburg_koln",
+        countryPath: "germany", regionPath: "nrw", districtPath: "city", cityPath: "koln",
+        hiddenFromList: true, showMore: true,
+        fotoCard: "Germany/nrw/koln/koln-city/altstadt/old_towers/003.jpg",
+        coord: { lat: 50.94931, lng: 6.95687 },
+        map: "old_towers_koln",
+        translations: {
+            ru: {
+                name: "Северные ворота (Eigelsteintorburg)",
+                short_description: "Северные ворота (Eigelsteintorburg) – одни из сохранившихся средневековых городских ворот Кёльна, входившие в систему второго городского оборонительного кольца. Представляют собой массивный воротный комплекс с двумя башнями и арочным проходом.",
+                status: "partial", note: "сохранились как часть средневековой городской оборонительной системы Кёльна; уцелели основная башенная структура и арочный проезд, часть внешних укреплений утрачена.",
+                full_description: {
+                    title: "Описание и история",
+                    items: [
+                        { bold: "Северные ворота (Eigelsteintorburg)", text: "– одни из сохранившихся средневековых городских ворот Кёльна, входившие в систему второго городского оборонительного кольца. Представляют собой укреплённый воротный комплекс с двумя массивными башнями и центральным арочным проездом." },
+                        { text: "Ворота были построены в XIII веке в период расширения городских укреплений и заменили более раннюю северную оборонительную структуру. Они контролировали въезд в город со стороны северных торговых путей и играли важную роль в системе городской обороны." },
+                        { text: "Архитектурно комплекс включал проездные ворота, фланкирующие башни и элементы оборонительных стен. В отличие от многих других участков городской стены, Eigelsteintorburg сохранила выразительный внешний облик средневековой фортификации." },
+                        { bold: "Где:", text: "район Eigelstein / Ebertplatz, северная часть исторического центра Кёльна." }
+                    ]
+                },
+                construction_period: "XIII век (период второго расширения городских укреплений Кёльна)",
+                meta: {
+                    title: "Северные ворота (Eigelsteintorburg) в Кёльне – средневековые северные городские ворота и часть второго оборонительного кольца",
+                    description: "Северные ворота (Eigelsteintorburg) – средневековые городские ворота Кёльна XIII века, входившие в систему городских укреплений и контролировавшие северный въезд в город. Один из хорошо сохранившихся элементов городской фортификации.",
+                    ogDescription: "Северные ворота (Eigelsteintorburg) – хорошо сохранившиеся средневековые северные ворота Кёльна с двумя башнями и арочным проездом.",
+                    keywords: "Eigelsteintorburg Köln, северные ворота Кёльна, средневековые ворота Кёльн, городская стена Кёльна, Eigelstein, Ebertplatz, достопримечательности Кёльн",
+                    ogImage: "https://our-travels.info/foto/Germany/nrw/koln/koln-city/altstadt/old_towers/003.jpg"
+                }
+            },
+            ua: {
+                name: "Північні ворота (Eigelsteintorburg)",
+                short_description: "Північні ворота (Eigelsteintorburg) – одні із збережених середньовічних міських воріт Кельна, що входили до системи другого міського оборонного кільця. Являють собою масивний воротний комплекс із двома баштами та арковим проїздом.",
+                status: "partial", note: "збереглися як частина середньовічної міської оборонної системи Кельна; уціліли основна баштова структура та арковий проїзд, частина зовнішніх укріплень втрачена.",
+                full_description: {
+                    title: "Опис та історія",
+                    items: [
+                        { bold: "Північні ворота (Eigelsteintorburg)", text: "– одні із збережених середньовічних міських воріт Кельна, що входили до системи другого міського оборонного кільця. Являють собою укріплений воротний комплекс із двома масивними баштами та центральним арковим проїздом." },
+                        { text: "Ворота були зведені у XIII столітті в період розширення міських укріплень і замінили більш ранню північну оборонну споруду. Вони контролювали в’їзд до міста з боку північних торговельних шляхів і відігравали важливу роль у системі міської оборони." },
+                        { text: "Архітектурно комплекс включав проїзні ворота, фланкуючі башти та елементи оборонних мурів. На відміну від багатьох інших ділянок міського муру, Eigelsteintorburg зберегла виразний зовнішній вигляд середньовічної фортифікації." },
+                        { bold: "Де:", text: "район Eigelstein / Ebertplatz, північна частина історичного центру Кельна." }
+                    ]
+                },
+                construction_period: "XIII століття (період другого розширення міських укріплень Кельна)",
+                meta: {
+                    title: "Північні ворота (Eigelsteintorburg) у Кельні – середньовічні північні міські ворота та частина другого оборонного кільця",
+                    description: "Північні ворота (Eigelsteintorburg) – середньовічні міські ворота Кельна XIII століття, що входили до системи міських укріплень і контролювали північний в’їзд до міста. Один із добре збережених елементів міської фортифікації.",
+                    ogDescription: "Північні ворота (Eigelsteintorburg) – добре збережені середньовічні північні ворота Кельна з двома баштами та арковим проїздом.",
+                    keywords: "Eigelsteintorburg Köln, північні ворота Кельна, середньовічні ворота Кельн, міський мур Кельна, Eigelstein, Ebertplatz, визначні місця Кельн, пам’ятки",
+                    ogImage: "https://our-travels.info/foto/Germany/nrw/koln/koln-city/altstadt/old_towers/003.jpg"
+                }
+            },
+            de: {
+                name: "Eigelsteintorburg (Nordtor)",
+                short_description: "Die Eigelsteintorburg ist eines der erhaltenen mittelalterlichen Stadttore Kölns, die zum System des zweiten Stadtbefestigungsrings gehörten. Sie stellt einen massiven Toranlagekomplex mit zwei Türmen und einem Torbogen dar.",
+                status: "partial", note: "als Teil der mittelalterlichen Stadtbefestigung Kölns erhalten; die Hauptturmstruktur und der Torbogen sind erhalten geblieben, während Teile der äußeren Befestigungsanlagen verloren gegangen sind.",
+                full_description: {
+                    title: "Beschreibung und Geschichte",
+                    items: [
+                        { bold: "Eigelsteintorburg (Nordtor)", text: "— eines der erhaltenen mittelalterlichen Stadttore Kölns, das zum System des zweiten Stadtbefestigungsrings gehörte. Es handelt sich um einen befestigten Toranlagekomplex mit zwei massiven Türmen und einem zentralen Torbogen." },
+                        { text: "Das Tor wurde im 13. Jahrhundert im Zuge der Erweiterung der Stadtbefestigungen errichtet und ersetzte eine frühere nördliche Verteidigungsanlage. Es kontrollierte den Stadteingang von den nördlichen Handelswegen und spielte eine wichtige Rolle im Verteidigungssystem der Stadt." },
+                        { text: "Architektonisch umfasste der Komplex das Torgebäude, flankierende Türme sowie Elemente der Stadtmauer. Im Gegensatz zu vielen anderen Abschnitten der Stadtbefestigung hat die Eigelsteintorburg ihr charakteristisches mittelalterliches Erscheinungsbild bewahrt." },
+                        { bold: "Lage:", text: "Stadtteil Eigelstein / Ebertplatz, nördlicher Teil des historischen Stadtzentrums von Köln." }
+                    ]
+                },
+                construction_period: "13. Jahrhundert (Phase der zweiten Stadterweiterung Kölns)",
+                meta: {
+                    title: "Eigelsteintorburg in Köln – mittelalterliches Nordtor und Teil des zweiten Stadtbefestigungsrings",
+                    description: "Die Eigelsteintorburg ist ein mittelalterliches Stadttor aus dem 13. Jahrhundert in Köln, das Teil der Stadtbefestigung war und den nördlichen Stadteingang kontrollierte. Eines der gut erhaltenen Elemente der Stadtbefestigung.",
+                    ogDescription: "Die Eigelsteintorburg ist ein gut erhaltenes mittelalterliches Nordtor in Köln mit zwei Türmen und einem Torbogen.",
+                    keywords: "Eigelsteintorburg Köln, Nordtor Köln, mittelalterliches Stadttor Köln, Stadtmauer Köln, Eigelstein, Ebertplatz, Sehenswürdigkeiten Köln",
+                    ogImage: "https://our-travels.info/foto/Germany/nrw/koln/koln-city/altstadt/old_towers/003.jpg"
+                }
+            }
+        },
+    },
+    {
+        id: "severinstorburg_koln",
+        type: ["historical_building"], rating: "local",
+        path: "severinstorburg_koln",
+        countryPath: "germany", regionPath: "nrw", districtPath: "city", cityPath: "koln",
+        hiddenFromList: true, showMore: true,
+        fotoCard: "Germany/nrw/koln/koln-city/altstadt/old_towers/004.jpg",
+        coord: { lat: 50.92196, lng: 6.95923 },
+        map: "old_towers_koln",
+        translations: {
+            ru: {
+                name: "Южные ворота (Severinstorburg)",
+                short_description: "Южные ворота (Severinstorburg) – одни из наиболее значимых сохранившихся средневековых городских ворот Кёльна, входившие в систему второго городского оборонительного кольца. Представляют собой мощный воротный комплекс с центральной башней и проездом.",
+                status: "partial", note: "сохранились как часть средневековой городской оборонительной системы Кёльна; уцелела основная башенная структура и проезд, часть внешних укреплений и оборонительных элементов утрачена.",
+                full_description: {
+                    title: "Описание и история",
+                    items: [
+                        { bold: "Южные ворота (Severinstorburg)", text: "– одни из главных средневековых городских ворот Кёльна, входившие в систему второго городского оборонительного кольца. Они защищали южный вход в город и имели важное стратегическое значение." },
+                        { text: "Ворота были построены в первой половине XIII века в период расширения городской стены. Через них проходили основные торговые и транспортные пути в направлении Бонна и южных регионов, что делало их ключевым элементом городской инфраструктуры и обороны." },
+                        { text: "Архитектурно сооружение представляло собой укреплённый воротный комплекс с массивной центральной башней, проездом и примыкающими элементами оборонительной стены. В сравнении с другими воротами Кёльна, Severinstorburg сохранила характерный облик средневековой фортификации." },
+                        { bold: "Где:", text: "площадь Chlodwigplatz, южная граница исторического центра Кёльна." }
+                    ]
+                },
+                construction_period: "XIII век (первая половина, период расширения городской стены Кёльна)",
+                meta: {
+                    title: "Южные ворота (Severinstorburg) в Кёльне – средневековые южные городские ворота и часть оборонительного кольца",
+                    description: "Южные ворота (Severinstorburg) – средневековые южные городские ворота Кёльна XIII века, входившие в систему укреплений и контролировавшие въезд со стороны Бонна и южных торговых путей.",
+                    ogDescription: "Южные ворота (Severinstorburg) – хорошо сохранившиеся южные средневековые ворота Кёльна на площади Chlodwigplatz.",
+                    keywords: "Severinstorburg Köln, южные ворота Кёльна, средневековые ворота Кёльн, городская стена Кёльна, Chlodwigplatz, достопримечательности Кёльн",
+                    ogImage: "https://our-travels.info/foto/Germany/nrw/koln/koln-city/altstadt/old_towers/004.jpg"
+                }
+            },
+            ua: {
+                name: "Південні ворота (Severinstorburg)",
+                short_description: "Південні ворота (Severinstorburg) – одні з найбільш значущих збережених середньовічних міських воріт Кельна, що входили до системи другого міського оборонного кільця. Являють собою потужний воротний комплекс із центральною баштою та проїздом.",
+                status: "partial", note: "збереглися як частина середньовічної міської оборонної системи Кельна; уціліла основна баштова структура та проїзд, частина зовнішніх укріплень і оборонних елементів втрачена.",
+                full_description: {
+                    title: "Опис та історія",
+                    items: [
+                        { bold: "Південні ворота (Severinstorburg)", text: "– одні з головних середньовічних міських воріт Кельна, що входили до системи другого міського оборонного кільця. Вони захищали південний вхід до міста та мали важливе стратегічне значення." },
+                        { text: "Ворота були зведені в першій половині XIII століття в період розширення міського муру. Через них проходили основні торговельні та транспортні шляхи у напрямку Бонна та південних регіонів, що робило їх ключовим елементом міської інфраструктури та оборони." },
+                        { text: "Архітектурно споруда являла собою укріплений воротний комплекс із масивною центральною баштою, проїздом і прилеглими елементами оборонного муру. Порівняно з іншими воротами Кельна, Severinstorburg зберегла характерний вигляд середньовічної фортифікації." },
+                        { bold: "Де:", text: "площа Chlodwigplatz, південна межа історичного центру Кельна." }
+                    ]
+                },
+                construction_period: "XIII століття (перша половина, період розширення міського муру Кельна)",
+                meta: {
+                    title: "Південні ворота (Severinstorburg) у Кельні – середньовічні південні міські ворота та частина оборонного кільця",
+                    description: "Південні ворота (Severinstorburg) – середньовічні південні міські ворота Кельна XIII століття, що входили до системи укріплень і контролювали в’їзд з боку Бонна та південних торговельних шляхів.",
+                    ogDescription: "Південні ворота (Severinstorburg) – добре збережені південні середньовічні ворота Кельна на площі Chlodwigplatz.",
+                    keywords: "Severinstorburg Köln, південні ворота Кельна, середньовічні ворота Кельн, міський мур Кельна, Chlodwigplatz, визначні місця Кельн",
+                    ogImage: "https://our-travels.info/foto/Germany/nrw/koln/koln-city/altstadt/old_towers/004.jpg"
+                }
+            },
+            de: {
+                name: "Severinstorburg (Südtor)",
+                short_description: "Die Severinstorburg ist eines der bedeutendsten erhaltenen mittelalterlichen Stadttore Kölns, die zum System des zweiten Stadtbefestigungsrings gehörten. Sie stellt einen massiven Toranlagekomplex mit einem zentralen Turm und einem Durchgang dar.",
+                status: "partial", note: "als Teil der mittelalterlichen Stadtbefestigung Kölns erhalten; die Hauptturmstruktur und der Durchgang sind erhalten geblieben, während Teile der äußeren Befestigungen und Verteidigungselemente verloren gegangen sind.",
+                full_description: {
+                    title: "Beschreibung und Geschichte",
+                    items: [
+                        { bold: "Severinstorburg (Südtor)", text: "– eines der wichtigsten mittelalterlichen Stadttore Kölns, das zum System des zweiten Stadtbefestigungsrings gehörte. Es schützte den südlichen Stadteingang und hatte eine bedeutende strategische Funktion." },
+                        { text: "Das Tor wurde in der ersten Hälfte des 13. Jahrhunderts im Zuge der Erweiterung der Stadtmauer errichtet. Durch dieses Tor verliefen die wichtigsten Handels- und Verkehrswege in Richtung Bonn und die südlichen Regionen, was es zu einem zentralen Element der städtischen Infrastruktur und Verteidigung machte." },
+                        { text: "Architektonisch handelte es sich um einen befestigten Toranlagekomplex mit einem massiven zentralen Turm, einem Durchgang sowie angrenzenden Elementen der Stadtmauer. Im Vergleich zu anderen Toren Kölns hat die Severinstorburg ihr charakteristisches Erscheinungsbild der mittelalterlichen Befestigungsarchitektur bewahrt." },
+                        { bold: "Lage:", text: "Chlodwigplatz, südliche Grenze des historischen Stadtzentrums von Köln." }
+                    ]
+                },
+                construction_period: "13. Jahrhundert (erste Hälfte, Phase der Erweiterung der Kölner Stadtmauer)",
+                meta: {
+                    title: "Severinstorburg in Köln – mittelalterliches Südtor und Teil des Stadtbefestigungsrings",
+                    description: "Die Severinstorburg ist ein mittelalterliches Stadttor aus dem 13. Jahrhundert in Köln, das Teil der Stadtbefestigung war und den Zugang aus Richtung Bonn und den südlichen Handelswegen kontrollierte.",
+                    ogDescription: "Die Severinstorburg ist ein gut erhaltenes mittelalterliches Südtor in Köln am Chlodwigplatz.",
+                    keywords: "Severinstorburg Köln, Südtor Köln, mittelalterliches Stadttor Köln, Stadtmauer Köln, Chlodwigplatz, Sehenswürdigkeiten Köln",
+                    ogImage: "https://our-travels.info/foto/Germany/nrw/koln/koln-city/altstadt/old_towers/004.jpg"
+                }
+            }
+        },
+    },
+    {
+        id: "ulrepforte_koln",
+        type: ["historical_building"], rating: "local",
+        path: "ulrepforte_koln",
+        countryPath: "germany", regionPath: "nrw", districtPath: "city", cityPath: "koln",
+        hiddenFromList: true, showMore: true,
+        fotoCard: "Germany/nrw/koln/koln-city/altstadt/old_towers/005.jpg",
+        coord: { lat: 50.92418, lng: 6.95305 },
+        map: "old_towers_koln",
+        translations: {
+            ru: {
+                name: "Южные малые ворота (Ulrepforte)",
+                short_description: "Ulrepforte – небольшие сохранившиеся средневековые городские ворота Кёльна, входившие в систему второго городского оборонительного кольца. Представляют собой компактный башенный элемент с проездом, встроенный в линию городской стены.",
+                status: "partial", note: "сохранились как фрагмент средневековой городской оборонительной системы Кёльна; уцелела башенная часть и прилегающий участок стены, значительная часть укреплений утрачена.",
+                full_description: {
+                    title: "Описание и история",
+                    items: [
+                        { bold: "Южные малые ворота (Ulrepforte)", text: "– небольшие средневековые городские ворота Кёльна, входившие в систему второго городского оборонительного кольца. В отличие от крупных ворот, выполняли вспомогательную функцию и имели менее выраженное значение для основных транспортных потоков." },
+                        { text: "Ворота были построены в первой половине XIII века в период расширения городской стены и впервые упоминаются в письменных источниках в 1245 году. Они служили дополнительным входом в южной части города и использовались для локального сообщения и обороны." },
+                        { text: "Архитектурно Ulrepforte представляет собой компактное укреплённое сооружение с башенной частью и проездом, встроенное в линию городской стены. В сравнении с более крупными воротами Кёльна, объект отличается меньшими размерами и более простой конструкцией." },
+                        { bold: "Где:", text: "улица Sachsenring, южная часть исторического центра Кёльна." }
+                    ]
+                },
+                construction_period: "1245 год",
+                meta: {
+                    title: "Южные малые ворота (Ulrepforte) в Кёльне – малые средневековые городские ворота и фрагмент городской стены",
+                    description: "Южные малые ворота (Ulrepforte) – небольшие средневековые ворота Кёльна XIII века, входившие в систему городской стены и выполнявшие вспомогательную оборонительную функцию.",
+                    ogDescription: "Южные малые ворота (Ulrepforte) – компактные средневековые ворота Кёльна, сохранившиеся как часть городской стены на Sachsenring.",
+                    keywords: "Южные малые ворота (Ulrepforte) Köln, малые ворота Кёльна, средневековые ворота Кёльн, городская стена Кёльна, Sachsenring, достопримечательности Кёльн",
+                    ogImage: "https://our-travels.info/foto/Germany/nrw/koln/koln-city/altstadt/old_towers/005.jpg"
+                }
+            },
+            ua: {
+                name: "Південні малі ворота (Ulrepforte)",
+                short_description: "Ulrepforte – невеликі збережені середньовічні міські ворота Кельна, що входили до системи другого міського оборонного кільця. Являють собою компактний баштовий елемент із проїздом, вбудований у лінію міського муру.",
+                status: "partial", note: "збереглися як фрагмент середньовічної міської оборонної системи Кельна; уціліла баштова частина та прилегла ділянка муру, значна частина укріплень втрачена.",
+                full_description: {
+                    title: "Опис та історія",
+                    items: [
+                        { bold: "Південні малі ворота (Ulrepforte)", text: "– невеликі середньовічні міські ворота Кельна, що входили до системи другого міського оборонного кільця. На відміну від великих воріт, виконували допоміжну функцію та мали менше значення для основних транспортних потоків." },
+                        { text: "Ворота були зведені в першій половині XIII століття в період розширення міського муру та вперше згадуються в письмових джерелах у 1245 році. Вони слугували додатковим входом у південній частині міста та використовувалися для локального сполучення і оборони." },
+                        { text: "Архітектурно Ulrepforte являє собою компактну укріплену споруду з баштовою частиною та проїздом, вбудовану в лінію міського муру. Порівняно з більшими воротами Кельна, об’єкт відзначається меншими розмірами та простішою конструкцією." },
+                        { bold: "Де:", text: "вулиця Sachsenring, південна частина історичного центру Кельна." }
+                    ]
+                },
+                construction_period: "1245 рік",
+                meta: {
+                    title: "Південні малі ворота (Ulrepforte) у Кельні – середньовічні міські ворота та фрагмент міського муру",
+                    description: "Південні малі ворота (Ulrepforte) – невеликі середньовічні ворота Кельна XIII століття, що входили до системи міського муру та виконували допоміжну оборонну функцію.",
+                    ogDescription: "Південні малі ворота (Ulrepforte) – компактні середньовічні ворота Кельна, що збереглися як частина міського муру на Sachsenring.",
+                    keywords: "Ulrepforte Köln, малі ворота Кельна, середньовічні ворота Кельн, міський мур Кельна, Sachsenring, визначні місця Кельн",
+                    ogImage: "https://our-travels.info/foto/Germany/nrw/koln/koln-city/altstadt/old_towers/005.jpg"
+                }
+            },
+            de: {
+                name: "Ulrepforte (kleines Südtor)",
+                short_description: "Die Ulrepforte ist ein kleines erhaltenes mittelalterliches Stadttor Kölns, das zum System des zweiten Stadtbefestigungsrings gehörte. Sie stellt ein kompaktes Turmelement mit Durchgang dar, das in die Linie der Stadtmauer integriert ist.",
+                status: "partial",
+                note: "als Fragment der mittelalterlichen Stadtbefestigung Kölns erhalten; der Turmteil und ein angrenzender Abschnitt der Mauer sind erhalten geblieben, während ein großer Teil der Befestigungsanlagen verloren gegangen ist.",
+                full_description: {
+                    title: "Beschreibung und Geschichte",
+                    items: [
+                        { bold: "Ulrepforte (kleines Südtor)", text: "– ein kleines mittelalterliches Stadttor Kölns, das zum System des zweiten Stadtbefestigungsrings gehörte. Im Gegensatz zu den großen Stadttoren erfüllte es eine unterstützende Funktion und hatte eine geringere Bedeutung für den überregionalen Verkehr." },
+                        { text: "Das Tor wurde in der ersten Hälfte des 13. Jahrhunderts im Zuge der Erweiterung der Stadtmauer errichtet und wird erstmals im Jahr 1245 in schriftlichen Quellen erwähnt. Es diente als zusätzlicher Zugang im südlichen Bereich der Stadt und wurde für lokale Verbindungen sowie für Verteidigungszwecke genutzt." },
+                        { text: "Architektonisch handelt es sich bei der Ulrepforte um ein kompaktes befestigtes Bauwerk mit einem Turm und einem Durchgang, das in die Linie der Stadtmauer integriert ist. Im Vergleich zu größeren Toranlagen Kölns zeichnet sich das Bauwerk durch kleinere Dimensionen und eine einfachere Konstruktion aus." },
+                        { bold: "Lage:", text: "Sachsenring, südlicher Teil des historischen Stadtzentrums von Köln." }
+                    ]
+                },
+                construction_period: "1245",
+                meta: {
+                    title: "Ulrepforte in Köln – kleines mittelalterliches Stadttor und Teil der Stadtmauer",
+                    description: "Die Ulrepforte ist ein kleines mittelalterliches Stadttor aus dem 13. Jahrhundert in Köln, das Teil der Stadtmauer war und eine unterstützende Verteidigungsfunktion erfüllte.",
+                    ogDescription: "Die Ulrepforte ist ein kompaktes mittelalterliches Stadttor in Köln, das als Teil der Stadtmauer am Sachsenring erhalten ist.",
+                    keywords: "Ulrepforte Köln, kleines Stadttor Köln, mittelalterliches Tor Köln, Stadtmauer Köln, Sachsenring, Sehenswürdigkeiten Köln",
+                    ogImage: "https://our-travels.info/foto/Germany/nrw/koln/koln-city/altstadt/old_towers/005.jpg"
+                }
+            }
+        },
+    },
+    {
+        id: "bayenturm_koln",
+        type: ["historical_building"], rating: "local",
+        path: "bayenturm_koln",
+        countryPath: "germany", regionPath: "nrw", districtPath: "city", cityPath: "koln",
+        hiddenFromList: true, showMore: true,
+        fotoCard: "Germany/nrw/koln/koln-city/altstadt/old_towers/006.jpg",
+        coord: { lat: 50.92375, lng: 6.96695 },
+        map: "old_towers_koln",
+        translations: {
+            ru: {
+                name: "Юго-восточная башня у Рейна (Bayenturm)",
+                short_description: "Bayenturm – крупная средневековая оборонительная башня Кёльна, расположенная в юго-восточной части городской стены у Рейна. Являлась важным элементом контроля речного торгового пути и частью второго городского оборонительного кольца.",
+                status: "partial", note: "сохранилась как часть средневековой городской оборонительной системы Кёльна; башня была сильно повреждена во время Второй мировой войны и позднее восстановлена.",
+                full_description: {
+                    title: "Описание и история",
+                    items: [
+                        { bold: "Bayenturm (Юго-восточная башня у Рейна)", text: "– крупная средневековая оборонительная башня Кёльна, входившая в систему второго городского оборонительного кольца. Она располагалась в юго-восточной части городской стены непосредственно у берега Рейна." },
+                        { text: "Башня была построена в конце XII – начале XIII века (примерно между 1180 и 1220 годами) как часть укреплений, контролировавших речной торговый путь. Благодаря своему расположению она играла важную роль в защите города со стороны реки." },
+                        { text: "Во время Второй мировой войны сооружение было значительно разрушено, однако впоследствии восстановлено. Сегодня Bayenturm сохраняет облик средневековой оборонительной архитектуры и используется в культурных и общественных целях." },
+                        { bold: "Где:", text: "набережная Рейна (район Sachsenring / Rheinufer), юго-восточная часть исторического центра Кёльна." }
+                    ]
+                },
+                construction_period: "конец XII – начало XIII века (примерно 1180–1220 годы)",
+                meta: {
+                    title: "Bayenturm в Кёльне – средневековая оборонительная башня у Рейна",
+                    description: "Bayenturm – средневековая башня Кёльна конца XII – начала XIII века, входившая в систему городской стены и контролировавшая речной торговый путь по Рейну.",
+                    ogDescription: "Bayenturm – восстановленная средневековая башня Кёльна у берега Рейна, часть городской оборонительной системы.",
+                    keywords: "Bayenturm Köln, башня Кёльн Рейн, средневековая башня Кёльн, городская стена Кёльна, Rheinufer, достопримечательности Кёльн",
+                    ogImage: "https://our-travels.info/foto/Germany/nrw/koln/koln-city/altstadt/old_towers/006.jpg"
+                }
+            },
+            ua: {
+                name: "Південно-східна вежа біля Рейну (Bayenturm)",
+                short_description: "Bayenturm – велика середньовічна оборонна вежа Кельна, розташована в південно-східній частині міського муру біля Рейну. Була важливим елементом контролю річкового торговельного шляху та частиною другого міського оборонного кільця.",
+                status: "partial",
+                note: "збереглася як частина середньовічної міської оборонної системи Кельна; вежа була сильно пошкоджена під час Другої світової війни та пізніше відновлена.",
+                full_description: {
+                    title: "Опис та історія",
+                    items: [
+                        { bold: "Bayenturm (Південно-східна вежа біля Рейну)", text: "– велика середньовічна оборонна вежа Кельна, що входила до системи другого міського оборонного кільця. Вона розташовувалася в південно-східній частині міського муру безпосередньо біля берега Рейну." },
+                        { text: "Вежа була зведена наприкінці XII – на початку XIII століття (приблизно між 1180 та 1220 роками) як частина укріплень, що контролювали річковий торговельний шлях. Завдяки своєму розташуванню вона відігравала важливу роль у захисті міста з боку річки." },
+                        { text: "Під час Другої світової війни споруда була значно зруйнована, однак згодом відновлена. Сьогодні Bayenturm зберігає вигляд середньовічної оборонної архітектури та використовується в культурних і громадських цілях." },
+                        { bold: "Де:", text: "набережна Рейну (район Sachsenring / Rheinufer), південно-східна частина історичного центру Кельна." }
+                    ]
+                },
+                construction_period: "кінець XII – початок XIII століття (приблизно 1180–1220 роки)",
+                meta: {
+                    title: "Bayenturm у Кельні – середньовічна оборонна вежа біля Рейну",
+                    description: "Bayenturm – середньовічна вежа Кельна кінця XII — початку XIII століття, що входила до системи міського муру та контролювала річковий торговельний шлях Рейном.",
+                    ogDescription: "Bayenturm – відновлена середньовічна вежа Кельна біля берега Рейну, частина міської оборонної системи.",
+                    keywords: "Bayenturm Köln, вежа Кельн Рейн, середньовічна вежа Кельн, міський мур Кельна, Rheinufer, визначні місця Кельн",
+                    ogImage: "https://our-travels.info/foto/Germany/nrw/koln/koln-city/altstadt/old_towers/006.jpg"
+                }
+            },
+            de: {
+                name: "Bayenturm (Südostturm am Rhein)",
+                short_description: "Der Bayenturm ist ein großer mittelalterlicher Wehrturm in Köln, der sich im südöstlichen Abschnitt der Stadtmauer am Rhein befindet. Er war ein wichtiger Bestandteil zur Kontrolle des Flusshandelswegs und Teil des zweiten Stadtbefestigungsrings.",
+                status: "partial",
+                note: "als Teil der mittelalterlichen Stadtbefestigung Kölns erhalten; der Turm wurde im Zweiten Weltkrieg stark beschädigt und später wieder aufgebaut.",
+                full_description: {
+                    title: "Beschreibung und Geschichte",
+                    items: [
+                        { bold: "Bayenturm (Südostturm am Rhein)", text: "– ein großer mittelalterlicher Wehrturm in Köln, der zum System des zweiten Stadtbefestigungsrings gehörte. Er befand sich im südöstlichen Abschnitt der Stadtmauer unmittelbar am Ufer des Rheins." },
+                        { text: "Der Turm wurde Ende des 12. bis Anfang des 13. Jahrhunderts (etwa zwischen 1180 und 1220) als Teil der Befestigungsanlagen errichtet, die den Flusshandelsweg kontrollierten. Aufgrund seiner Lage spielte er eine wichtige Rolle bei der Verteidigung der Stadt von der Rheinseite aus." },
+                        { text: "Im Zweiten Weltkrieg wurde das Bauwerk stark zerstört, jedoch später wieder aufgebaut. Heute bewahrt der Bayenturm das Erscheinungsbild mittelalterlicher Wehrarchitektur und wird für kulturelle und gesellschaftliche Zwecke genutzt." },
+                        { bold: "Lage:", text: "Rheinufer (Bereich Sachsenring / Rheinufer), südöstlicher Teil des historischen Stadtzentrums von Köln." }
+                    ]
+                },
+                construction_period: "Ende des 12. bis Anfang des 13. Jahrhunderts (etwa 1180–1220)",
+                meta: {
+                    title: "Bayenturm in Köln – mittelalterlicher Wehrturm am Rhein",
+                    description: "Der Bayenturm ist ein mittelalterlicher Turm in Köln aus dem späten 12. und frühen 13. Jahrhundert, Teil der Stadtmauer und zur Kontrolle des Flusshandelswegs am Rhein genutzt.",
+                    ogDescription: "Der Bayenturm ist ein wiederaufgebauter mittelalterlicher Turm in Köln am Rheinufer und Teil der Stadtbefestigung.",
+                    keywords: "Bayenturm Köln, Turm Köln Rhein, mittelalterlicher Turm Köln, Stadtmauer Köln, Rheinufer, Sehenswürdigkeiten Köln",
+                    ogImage: "https://our-travels.info/foto/Germany/nrw/koln/koln-city/altstadt/old_towers/006.jpg"
+                }
+            }
+        },
+    },
 
 
     // край аахен

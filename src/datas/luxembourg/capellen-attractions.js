@@ -12,6 +12,7 @@ const datas = [
                 name: "Замок Керих",
                 location: "Керих, западный Люксембург",
                 short_description: "Замок Керих – средневековые руины замка в западной части Люксембурга, расположенные в коммуне Керих. Замок известен своей массивной каменной башней и остатками оборонительных сооружений, которые отражают архитектуру феодальной эпохи региона. Сегодня это атмосферное историческое место, открытое для посещения.",
+                status: "partial", note: "сохранились элементы средневекового замка, включая фрагменты оборонительных стен, башен и исторических построек, значительная часть структуры перестроена, но общий замковый облик сохранён.",
                 full_description: {
                     title: "Описание и история",
                     items: [
@@ -28,7 +29,6 @@ const datas = [
                     items: [
                         { bold: "Адрес:", text: "Rue du Château, L-8385 Koerich, Luxembourg" },
                         { bold: "Доступ:", text: "обычно свободный внешний осмотр (внутренние зоны ограничены или недоступны)" },
-                        { bold: "Тип объекта:", text: "руины замка, открытая историческая территория" }
                     ]
                 },
                 interestingFacts: {
@@ -55,6 +55,7 @@ const datas = [
                 name: "Замок Кьоріх",
                 location: "Кьоріх, західний Люксембург",
                 short_description: "Замок Кьоріх – середньовічні руїни замку в західній частині Люксембургу, розташовані в комуні Кьоріх. Замок відомий своєю масивною кам’яною вежею та залишками оборонних споруд, які відображають архітектуру феодальної епохи регіону. Сьогодні це атмосферне історичне місце, відкрите для відвідування.",
+                status: "partial", note: "збереглися елементи середньовічного замку, включаючи фрагменти оборонних стін, башт і історичних будівель, значна частина структури перебудована, але загальний вигляд замку збережений.",
                 full_description: {
                     title: "Опис і історія",
                     items: [
@@ -71,7 +72,6 @@ const datas = [
                     items: [
                         { bold: "Адреса:", text: "Rue du Château, L-8385 Koerich, Luxembourg" },
                         { bold: "Доступ:", text: "зазвичай вільний зовнішній огляд (внутрішні зони обмежені або недоступні)" },
-                        { bold: "Тип об’єкта:", text: "руїни замку, відкрита історична територія" }
                     ]
                 },
                 interestingFacts: {
@@ -98,6 +98,7 @@ const datas = [
                 name: "Burg Koerich",
                 location: "Koerich, Westluxemburg",
                 short_description: "Die Burg Koerich – mittelalterliche Burgruinen im westlichen Teil Luxemburgs, gelegen in der Gemeinde Koerich. Die Burg ist bekannt für ihren massiven Steinturm und die erhaltenen Überreste der Verteidigungsanlagen, die die Architektur der feudalen Epoche der Region widerspiegeln. Heute ist sie ein atmosphärischer historischer Ort, der für Besucher zugänglich ist.",
+                status: "partial", note: "erhalten sind Elemente der mittelalterlichen Burg, einschließlich Fragmente der Wehrmauern, Türme und historischer Bauten, ein großer Teil wurde umgebaut, der Gesamtcharakter der Burg ist jedoch erhalten.",
                 full_description: {
                     title: "Beschreibung und Geschichte",
                     items: [
@@ -114,7 +115,6 @@ const datas = [
                     items: [
                         { bold: "Adresse:", text: "Rue du Château, L-8385 Koerich, Luxemburg" },
                         { bold: "Zugang:", text: "in der Regel freie Außenbesichtigung (Innenbereiche eingeschränkt oder nicht zugänglich)" },
-                        { bold: "Objekttyp:", text: "Burgruinen, offenes historisches Gelände" }
                     ]
                 },
                 interestingFacts: {

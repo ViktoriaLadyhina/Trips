@@ -130,6 +130,7 @@ const datas = [
       series: "Römische Denkmäler, Dom St. Peter und Liebfrauenkirche in Trier"
     },
     short_description: "Das römische Amphitheater in Trier ist eine der größten römischen Arenen außerhalb Italiens. Es wurde Ende des 2. Jahrhunderts n. Chr. erbaut und konnte bis zu 20.000 Zuschauer fassen. Hier fanden Gladiatorenkämpfe, Tierdarstellungen und Massenveranstaltungen statt. Heute ist das Amphitheater für Besucher geöffnet; erhalten sind die Arena, die Tribünen und unterirdischen Gänge.",
+    status: "partial", note: "erhalten sind Fragmente der steinernen Strukturen und einzelne Elemente der Arenaplanung, der übrige Bau ist verloren und nur archäologisch nachweisbar.",
     full_description: {
       title: "Beschreibung und Geschichte",
       items: [
@@ -208,6 +209,7 @@ const datas = [
       series: "Römische Denkmäler, Dom St. Peter und Liebfrauenkirche in Trier"
     },
     short_description: "Die Kaiserthermen gehören zu den größten römischen Badeanlagen nördlich der Alpen, erbaut Ende des 3. bis Anfang des 4. Jahrhunderts n. Chr. in der Stadt Trier (früher Augusta Treverorum). Heute sind vom Komplex mächtige Ruinen erhalten, die sowohl oberirdisch als auch unterirdisch besichtigt werden können, mit Zugang zu den unterirdischen Dienstgalerien und den Überresten der Ingenieursysteme.",
+    status: "partial", note: "erhalten sind Fragmente von Mauern, unterirdischen Räumen und technischen Strukturen, die eine teilweise Rekonstruktion von Umfang und Aufbau der Anlage ermöglichen.",
     full_description: {
       title: "Beschreibung und Geschichte",
       items: [
@@ -337,6 +339,7 @@ const datas = [
       series: "Römische Denkmäler, Dom St. Peter und Liebfrauenkirche in Trier"
     },
     short_description: "Der Komplex Barbarathermen ist ein riesiger römischer Badekomplex im nördlichen Teil des antiken Trier. Er umfasste Bäder für verschiedene soziale Schichten: von einfachen Bürgern bis zum Adel und gehörte zu den größten nördlich der Alpen. Bis heute sind Reste von Mauern, Becken und Kanalisationsanlagen erhalten, die die Dimensionen des Bauwerks und das ingenieurtechnische Können der Römer verdeutlichen.",
+    status: "partial", note: "erhalten sind Fragmente der römischen Thermenanlage, einschließlich Reste von Mauern, Fundamenten sowie technischen Elementen der Heiz- und Wasserversorgung.",
     full_description: {
       title: "Beschreibung und Geschichte",
       items: [
@@ -806,6 +809,7 @@ const datas = [
     fotoCard: "Germany/rheinland-pfalz/trier_saarburg/saarburg_kell/saarburg/burg/001.jpg",
     location: "Saarburg, Deutschland",
     short_description: "Burg Saarburg ist eine mittelalterliche Burg aus dem 11. Jahrhundert, die über der Stadt Saarburg thront. Sie ist bekannt für ihre malerischen Ruinen und den Panoramablick auf die Altstadt mit dem einzigartigen Wasserfall im Zentrum.",
+    status: "partial", note: "erhalten sind Ruinen der mittelalterlichen Burg Saarburg, einschließlich Reste der Wehrmauern und Turmstrukturen, ein Teil der Anlage ist zerstört und in die Hügellandschaft integriert.",
     full_description: {
       title: "Beschreibung und Geschichte",
       items: [
