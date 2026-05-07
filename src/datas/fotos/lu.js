@@ -90,6 +90,8 @@ export const Fotos = {
         { path: "Luxembourg/luxembourg_canton/luxembourg_city/old_town/006.jpg", title: { ru: 'Старый город Люксембурга, 2024', de: 'Altstadt Luxemburg, 2024', ua: 'Старе місто Люксембурга, 2024' } },
         { path: "Luxembourg/luxembourg_canton/luxembourg_city/old_town/007.jpg", title: { ru: 'Старый город Люксембурга, 2024', de: 'Altstadt Luxemburg, 2024', ua: 'Старе місто Люксембурга, 2024' } },
         { path: "Luxembourg/luxembourg_canton/luxembourg_city/old_town/008.jpg", title: { ru: 'Старый город Люксембурга, 2024', de: 'Altstadt Luxemburg, 2024', ua: 'Старе місто Люксембурга, 2024' } },
+        { path: "Luxembourg/luxembourg_canton/luxembourg_city/old_town/notre_dame_cathedral/001.jpg", title: { ru: 'Собор Люксембургской Богоматери, 2024', de: 'Kathedrale Notre-Dame Luxemburg, 2024', ua: 'Собор Люксембургської Богоматері, 2024' } },
+        { path: "Luxembourg/luxembourg_canton/luxembourg_city/old_town/grand_ducal_palace/001.jpg", title: { ru: 'Дворец Великих герцогов в Люксембурге, 2024', de: 'Großherzoglicher Palast, 2024', ua: 'Палац Великого герцога, 2024' } },
         { path: "Luxembourg/luxembourg_canton/luxembourg_city/old_town/casemates/001.jpg", title: { ru: 'Казематы Бок, 2024', de: 'Bock-Kasematten, 2024', ua: 'Каземати Бок, 2024' } },
         { path: "Luxembourg/luxembourg_canton/luxembourg_city/old_town/abbey_neumunster/001.jpg", title: { ru: 'Аббатство Ноймюнстер, 2024', de: 'Abtei Neumünster, 2024', ua: 'Абатство Ноймюнстер, 2024' } },
         { path: "Luxembourg/luxembourg_canton/luxembourg_city/old_town/pont_du_chateau/001.jpg", title: { ru: 'Мост Понт-дю-Шато, 2024', de: 'Pont du Château Brücke, 2024', ua: 'Міст Понт-дю-Шато, 2024' } }
@@ -126,6 +128,10 @@ export const Fotos = {
         { path: "Luxembourg/luxembourg_canton/luxembourg_city/old_town/notre_dame_cathedral/005.jpg", title: { ru: 'Мозаика и боковой алтарь собора Люксембургской Богоматери, посвящены святому Иосифу – покровителю Церкви, 2024', de: 'Das Mosaik und der Seitenaltar der Liebfrauenkathedrale von Luxemburg sind dem Heiligen Josef gewidmet – dem Schutzpatron der Kirche, 2024', ua: 'Мозаїка та бічний вівтар собору Люксембурзької Богоматері присвячені святому Йосифу — покровителю Церкви, 2024' } },
         { path: "Luxembourg/luxembourg_canton/luxembourg_city/old_town/notre_dame_cathedral/006.jpg", title: { ru: 'Собор Люксембургской Богоматери, 2024', de: 'Kathedrale Notre-Dame Luxemburg, 2024', ua: 'Собор Люксембургської Богоматері, 2024' } },
         { path: "Luxembourg/luxembourg_canton/luxembourg_city/old_town/notre_dame_cathedral/007.jpg", title: { ru: 'Собор Люксембургской Богоматери, 2024', de: 'Kathedrale Notre-Dame Luxemburg, 2024', ua: 'Собор Люксембургської Богоматері, 2024' } },
+      ],
+      grand_ducal_palace_luxembourg: [
+        { path: "Luxembourg/luxembourg_canton/luxembourg_city/old_town/grand_ducal_palace/001.jpg", title: { ru: 'Дворец Великих герцогов в Люксембурге, 2024', de: 'Großherzoglicher Palast, 2024', ua: 'Палац Великого герцога, 2024' } },
+        { path: "Luxembourg/luxembourg_canton/luxembourg_city/old_town/grand_ducal_palace/002.jpg", title: { ru: 'Дворец Великих герцогов в Люксембурге, 2024', de: 'Großherzoglicher Palast, 2024', ua: 'Палац Великого герцога, 2024' } },
       ],
     }
   }

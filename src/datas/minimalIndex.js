@@ -226,6 +226,7 @@ const datas =
     passerelle_luxembourg: { ru: 'Мост Пассерель', de: 'Passerelle-Brücke', ua: 'Міст Пассерель' },
     adolphe_luxembourg: { ru: 'Мост Адольфа', de: 'Adolphe-Brücke', ua: 'Міст Адольфа' },
     notre_dame_cathedral_luxembourg: { ru: 'Собор Люксембургской Богоматери', de: 'Kathedrale Notre-Dame Luxemburg', ua: 'Собор Люксембургської Богоматері' },
+    grand_ducal_palace_luxembourg: { ru: 'Дворец Великих герцогов', de: 'Großherzoglicher Palast', ua: 'Палац Великого герцога' },
 
     // Ukraine
     // Sumska oblast

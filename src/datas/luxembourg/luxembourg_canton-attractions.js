@@ -353,7 +353,7 @@ const datas = [
     path: "old_town_luxembourg",
     countryPath: "luxembourg", regionPath: "luxembourg_canton", districtPath: "city", cityPath: "luxembourg_city",
     fotoCard: "Luxembourg/luxembourg_canton/luxembourg_city/old_town/001.jpg",
-    subObjects: ["casemates_du_bock_luxembourg", "abbey_neumunster_luxembourg", "pont_du_chateau_luxembourg", "passerelle_luxembourg", "notre_dame_cathedral_luxembourg"],
+    subObjects: ["casemates_du_bock_luxembourg", "abbey_neumunster_luxembourg", "pont_du_chateau_luxembourg", "passerelle_luxembourg", "notre_dame_cathedral_luxembourg", "grand_ducal_palace_luxembourg"],
     translations: {
       ru: {
         name: "Старый город Люксембурга",
@@ -372,6 +372,7 @@ const datas = [
           items: [
             { bold: "Казематы Бок", text: "– система подземных оборонительных туннелей, вырубленных в скале Бок, являющаяся частью бывшей крепостной системы города и одним из ключевых элементов фортификационного наследия Люксембурга." },
             { bold: "Собор Люксембургской Богоматери", text: "– готический собор с элементами Ренессанса, известный витражами, богатым интерьером и почитаемой статуей Богоматери-Утешительницы." },
+            { bold: "Дворец Великих герцогов", text: "– официальная резиденция великого герцога Люксембурга, построенная в стиле Ренессанса, известная парадными залами, историческими интерьерами и статусом одного из главных символов государства." },
             { bold: "Аббатство Ноймюнстер", text: "– историческое аббатство XVII века в районе Грунд, преобразованное в современный культурный центр с выставками и мероприятиями." },
             { bold: "Мост Понт-дю-Шато", text: "– исторический мост в старом городе Люксембурга, входящий в систему бывших городских укреплений и являющийся частью пешеходных маршрутов." },
             { bold: "Мост Пассерель (Passerelle)", text: "– исторический каменный мост в городе Люксембург, соединяющий район старого города с кварталом вокзала и являющийся важной частью городской транспортной и пешеходной сети." }
@@ -431,6 +432,7 @@ const datas = [
           items: [
             { bold: "Каземати Бок", text: "– система підземних оборонних тунелів, вирубаних у скелі Бок, яка є частиною колишньої фортифікаційної системи міста та одним із ключових елементів фортифікаційної спадщини Люксембурга." },
             { bold: "Собор Люксембурзької Богоматері", text: "– готичний собор з елементами Ренесансу, відомий вітражами, багатим інтер’єром і шанованою статуєю Богородиці-Утішительки." },
+            { bold: "Палац Великого герцога", text: "– офіційна резиденція Великого герцога Люксембургу, збудована в стилі Ренесансу, відома своїми урочистими залами, історичними інтер’єрами та статусом одного з головних символів держави." },
             { bold: "Абатство Ноймюнстер", text: "– історичне абатство XVII століття в районі Грунд, перетворене на сучасний культурний центр із виставками та заходами." },
             { bold: "Міст Понт-дю-Шато", text: "– історичний міст у старому місті Люксембургу, який входить до системи колишніх міських укріплень і є частиною пішохідних маршрутів." },
             { bold: "Міст Пассерель (Passerelle)", text: "– історичний кам’яний міст у місті Люксембург, що з’єднує район старого міста з кварталом вокзалу та є важливою частиною міської транспортної і пішохідної мережі." }
@@ -490,6 +492,7 @@ const datas = [
           items: [
             { bold: "Bock-Kasematten", text: "– ein System unterirdischer Verteidigungstunnel, die in den Bockfelsen gehauen wurden, das Teil des ehemaligen Festungssystems der Stadt ist und eines der wichtigsten Elemente des fortifikatorischen Erbes Luxemburgs darstellt." },
             { bold: "Kathedrale Notre-Dame Luxemburg", text: "– eine gotische Kathedrale mit Renaissance-Elementen, bekannt für ihre Glasfenster, ihr reiches Interieur und die verehrte Statue der Trösterin der Betrübten." },
+            { bold: "Großherzoglicher Palast", text: "– offizielle Residenz des Großherzogs von Luxemburg, im Renaissance-Stil erbaut, bekannt für seine prunkvollen Säle, historischen Innenräume und seinen Status als eines der wichtigsten Wahrzeichen des Landes." },
             { bold: "Abtei Neumünster", text: "– eine historische Abtei aus dem 17. Jahrhundert im Stadtteil Grund, die in ein modernes Kulturzentrum mit Ausstellungen und Veranstaltungen umgewandelt wurde." },
             { bold: "Pont du Château", text: "– eine historische Brücke in der Altstadt von Luxemburg, die Teil der ehemaligen Stadtbefestigungen ist und zu den Fußgängerwegen gehört." },
             { bold: "Passerelle-Brücke", text: "– historische Steinbrücke in der Stadt Luxemburg, die den Altstadtbereich mit dem Bahnhofsviertel verbindet und ein wichtiger Bestandteil des städtischen Verkehrs- und Fußgängernetzes ist." }
@@ -1564,6 +1567,191 @@ const datas = [
       }
     }
   },
+  {
+    id: "grand_ducal_palace_luxembourg",
+    type: ["palace_or_castle"], rating: "top",
+    path: "grand_ducal_palace_luxembourg",
+    countryPath: "luxembourg", regionPath: "luxembourg_canton", districtPath: "city", cityPath: "luxembourg_city",
+    hiddenFromList: true, showMore: true,
+    fotoCard: "Luxembourg/luxembourg_canton/luxembourg_city/old_town/grand_ducal_palace/001.jpg",
+    coord: { lat: 49.61095642099769, lng: 6.1328645037457825 },
+    translations: {
+      ru: {
+        name: "Дворец Великих герцогов в Люксембурге",
+        location: "Город Люксембург, Люксембург",
+        officialSite: [
+          { bold: "Официальный сайт", link: "https://monarchie.lu/fr?utm_source=chatgpt.com" }
+        ],
+        short_description: "Официальная резиденция великого герцога Люксембурга в центре столицы, первоначально построенная в XVI веке как ратуша в стиле Ренессанса.",
+        full_description: {
+          title: "Описание и история",
+          items: [
+            { bold: "Дворец Великих герцогов в Люксембурге", text: "– официальная резиденция великого герцога Люксембурга и один из главных символов страны. Здание расположено в историческом центре города Люксембург, рядом с площадью Гийома II и собором Нотр-Дам. Его фасад в стиле эпохи Возрождения выделяется изящными башенками, декоративными балконами и характерными окнами с богатым оформлением." },
+            { text: "Сегодня дворец используется для официальных государственных мероприятий, дипломатических приёмов и церемоний. В нём проходят встречи с иностранными делегациями, праздничные банкеты и обращения главы государства. Несмотря на статус действующей резиденции, летом часть парадных залов открывается для экскурсий, что делает дворец одной из самых посещаемых достопримечательностей Люксембурга." },
+            { text: "Интерьеры дворца сочетают историческую роскошь и элементы разных эпох. Здесь можно увидеть богато украшенные залы, парадные лестницы, портреты представителей великогерцогской семьи и коллекции декоративного искусства. Особое внимание привлекают Зал королей, банкетный зал и официальные кабинеты." },
+            { bold: "История Дворца Великих герцогов", text: "начинается в XVI веке, когда на его месте находилась городская ратуша Люксембурга. В 1554 году значительная часть города была разрушена в результате взрыва порохового склада, после чего территория была застроена заново. В 1572 году здесь возвели новое здание в стиле фламандского Ренессанса, которое использовалось как административный центр города." },
+            { text: "В течение последующих столетий здание неоднократно перестраивалось и меняло своё назначение. Во времена французского правления в конце XVIII века здесь размещалась администрация департамента Форê. Позднее сооружение использовалось представителями нидерландской Оранской династии как административная резиденция." },
+            { text: "Кардинальные изменения произошли в 1890 году, когда Люксембург получил полную династическую независимость. Тогда великий герцог Адольф преобразовал бывшую ратушу в официальную резиденцию великогерцогской семьи, и здание стало дворцом в современном понимании." },
+            { text: "Во время Второй мировой войны дворец был повреждён в период немецкой оккупации и использовался не по назначению. После освобождения страны в 1945 году великогерцогская семья вернулась, и начались работы по восстановлению здания. В 1990-х годах была проведена масштабная реставрация, в ходе которой дворец был приведён в современное состояние, сохранив при этом исторический облик." }
+          ]
+        },
+        tickets_and_entry: {
+          title: "Практическая информация",
+          items: [
+            { bold: "Адрес:", text: "17 Rue du Marché-aux-Herbes, Luxembourg" },
+            { bold: "Стиль:", text: "ренессанс с элементами барокко" },
+            { bold: "Посещение: ", text: "только с экскурсиями в летний период. Среднее время осмотра: 1-1,5 часа" }
+          ]
+        },
+        sub_objects: {
+          title: "Экспозиции и интерьеры",
+          items: [
+            { bold: "Парадные залы", text: "Официальные помещения для государственных церемоний, дипломатических встреч и банкетов. Отличаются роскошной отделкой, люстрами и декоративными элементами XIX–XX веков." },
+            { bold: "Зал королей", text: "Один из самых известных залов дворца, украшенный портретами европейских монархов и членов великогерцогской семьи." },
+            { bold: "Банкетный зал", text: "Используется для официальных государственных приёмов и торжественных мероприятий во время визитов иностранных лидеров." },
+            { bold: "Кабинет великого герцога", text: "Рабочее помещение главы государства, где проходят официальные встречи и подписание документов." }
+          ]
+        },
+        interestingFacts: {
+          title: "Интересные факты",
+          isList: true,
+          items: [
+            { text: "Дворец Великих герцогов изначально вовсе не был дворцом – здание построили как городскую ратушу в XVI веке." },
+            { text: "Статус официальной резиденции великого герцога он получил только в 1890 году, после обретения Люксембургом династической независимости." },
+            { text: "После войны дворец стал символом восстановления государственности Люксембурга и возвращения великогерцогской семьи." },
+            { text: "Смена караула у дворца является одной из самых узнаваемых церемоний в столице." },
+            { text: "В официальных новогодних обращениях великого герцога используется именно этот дворец как фон." }
+          ]
+        },
+        construction_period: "1572 (как ратуша), 1890 (преобразование в дворец)",
+        architects: "Адам Роберти (XVI век, ратуша); Гедеон Бордьо и Шарль Арендт (XIX век, реконструкция)",
+        meta: {
+          title: "Дворец Великих герцогов в Люксембурге – история, фото и описание",
+          description: "Дворец Великих герцогов – официальная резиденция правителей Люксембурга, расположенная в центре столицы. История, архитектура эпохи Возрождения, экскурсии и интересные факты.",
+          ogTitle: "Дворец Великих герцогов – символ Люксембурга",
+          ogDescription: "Историческая резиденция великих герцогов Люксембурга с роскошными залами, ренессансной архитектурой и многовековой историей.",
+          keywords: "дворец великих герцогов, palais grand-ducal, люксембург, дворец люксембург, великий герцог люксембурга, достопримечательности люксембурга, резиденция герцога, дворец ренессанс, palace, старый город люксембурга, архитектура люксембурга, дворец европа",
+          ogImage: "https://our-travels.info/foto/Luxembourg/luxembourg_canton/luxembourg_city/old_town/grand_ducal_palace/001.jpg"
+        }
+      },
+      ua: {
+        name: "Палац Великого герцога в Люксембурзі",
+        location: "Місто Люксембург, Люксембург",
+        officialSite: [
+          { bold: "Офіційний сайт", link: "https://monarchie.lu/fr?utm_source=chatgpt.com" }
+        ],
+        short_description: "Офіційна резиденція Великого герцога Люксембургу в центрі столиці, спочатку збудована у XVI столітті як ратуша в стилі Ренесансу.",
+        full_description: {
+          title: "Опис і історія",
+          items: [
+            { bold: "Палац Великого герцога в Люксембурзі", text: "– офіційна резиденція Великого герцога Люксембургу та один із головних символів країни. Будівля розташована в історичному центрі міста Люксембург, поруч із площею Гійома II та собором Нотр-Дам. Її фасад у стилі епохи Відродження вирізняється витонченими башточками, декоративними балконами та характерними вікнами з багатим оздобленням." },
+            { text: "Сьогодні палац використовується для офіційних державних заходів, дипломатичних прийомів і церемоній. Тут проходять зустрічі з іноземними делегаціями, святкові бенкети та звернення глави держави. Попри статус діючої резиденції, влітку частина парадних залів відкривається для екскурсій, що робить палац однією з найвідвідуваніших пам’яток Люксембургу." },
+            { text: "Інтер’єри палацу поєднують історичну розкіш і елементи різних епох. Тут можна побачити багато оздоблені зали, парадні сходи, портрети представників великогерцогської родини та колекції декоративного мистецтва. Особливу увагу привертають Зал королів, бенкетна зала та офіційні кабінети." },
+            { bold: "Історія Палацу Великого герцога", text: "починається у XVI столітті, коли на його місці знаходилася міська ратуша Люксембургу. У 1554 році значна частина міста була зруйнована внаслідок вибуху порохового складу, після чого територію було забудовано заново. У 1572 році тут звели нову будівлю у стилі фламандського Ренесансу, яка використовувалася як адміністративний центр міста." },
+            { text: "Протягом наступних століть будівля неодноразово перебудовувалася та змінювала своє призначення. У часи французького правління наприкінці XVIII століття тут розміщувалася адміністрація департаменту Форê. Пізніше споруда використовувалася представниками нідерландської Оранської династії як адміністративна резиденція." },
+            { text: "Кардинальні зміни відбулися у 1890 році, коли Люксембург отримав повну династичну незалежність. Тоді великий герцог Адольф перетворив колишню ратушу на офіційну резиденцію великогерцогської родини, і будівля стала палацом у сучасному розумінні." },
+            { text: "Під час Другої світової війни палац був пошкоджений у період німецької окупації та використовувався не за призначенням. Після визволення країни у 1945 році великогерцогська родина повернулася, і розпочалися роботи з відновлення будівлі. У 1990-х роках була проведена масштабна реставрація, під час якої палац було приведено до сучасного стану, зберігши його історичний вигляд." }
+          ]
+        },
+        tickets_and_entry: {
+          title: "Практична інформація",
+          items: [
+            { bold: "Адреса:", text: "17 Rue du Marché-aux-Herbes, Luxembourg" },
+            { bold: "Стиль:", text: "ренесанс з елементами бароко" },
+            { bold: "Відвідування: ", text: "лише з екскурсіями в літній період. Середній час огляду: 1–1,5 години" }
+          ]
+        },
+        sub_objects: {
+          title: "Експозиції та інтер’єри",
+          items: [
+            { bold: "Парадні зали", text: "Офіційні приміщення для державних церемоній, дипломатичних зустрічей і бенкетів. Відрізняються розкішним оздобленням, люстрами та декоративними елементами XIX–XX століть." },
+            { bold: "Зал королів", text: "Один із найвідоміших залів палацу, прикрашений портретами європейських монархів та членів великогерцогської родини." },
+            { bold: "Бенкетна зала", text: "Використовується для офіційних державних прийомів і урочистих заходів під час візитів іноземних лідерів." },
+            { bold: "Кабінет великого герцога", text: "Робоче приміщення глави держави, де проходять офіційні зустрічі та підписання документів." }
+          ]
+        },
+        interestingFacts: {
+          title: "Цікаві факти",
+          isList: true,
+          items: [
+            { text: "Палац Великого герцога спочатку не був палацом – будівлю звели як міську ратушу у XVI столітті." },
+            { text: "Статус офіційної резиденції великого герцога він отримав лише у 1890 році після здобуття Люксембургом династичної незалежності." },
+            { text: "Після війни палац став символом відновлення державності Люксембургу та повернення великогерцогської родини." },
+            { text: "Зміна варти біля палацу є однією з найвідоміших церемоній у столиці." },
+            { text: "В офіційних новорічних зверненнях великого герцога використовується саме цей палац як фон." }
+          ]
+        },
+        construction_period: "1572 (як ратуша), 1890 (перетворення на палац)",
+        architects: "Адам Роберті (XVI століття, ратуша); Гедеон Бордьо та Шарль Арендт (XIX століття, реконструкція)",
+        meta: {
+          title: "Палац Великого герцога в Люксембурзі – історія, фото та опис",
+          description: "Палац Великого герцога – офіційна резиденція правителів Люксембургу, розташована в центрі столиці. Історія, архітектура епохи Відродження, екскурсії та цікаві факти.",
+          ogTitle: "Палац Великого герцога – символ Люксембургу",
+          ogDescription: "Історична резиденція великих герцогів Люксембургу з розкішними залами, архітектурою Ренесансу та багатовіковою історією.",
+          keywords: "палац великого герцога, palais grand-ducal, Люксембург, палац Люксембург, великий герцог Люксембургу, пам’ятки Люксембургу, резиденція герцога, палац Ренесансу, старе місто Люксембург, архітектура Люксембургу, палац Європа",
+          ogImage: "https://our-travels.info/foto/Luxembourg/luxembourg_canton/luxembourg_city/old_town/grand_ducal_palace/001.jpg"
+        }
+      },
+      de: {
+        name: "Großherzoglicher Palast in Luxemburg",
+        location: "Stadt Luxemburg, Luxemburg",
+        officialSite: [
+          { bold: "Offizielle Website", link: "https://monarchie.lu/fr?utm_source=chatgpt.com" }
+        ],
+        short_description: "Offizielle Residenz des Großherzogs von Luxemburg im Zentrum der Hauptstadt, ursprünglich im 16. Jahrhundert als Rathaus im Renaissancestil erbaut.",
+        full_description: {
+          title: "Beschreibung und Geschichte",
+          items: [
+            { bold: "Großherzoglicher Palast in Luxemburg", text: "– offizielle Residenz des Großherzogs von Luxemburg und eines der wichtigsten Symbole des Landes. Das Gebäude befindet sich im historischen Zentrum der Stadt Luxemburg, in der Nähe des Place Guillaume II und der Kathedrale Notre-Dame. Seine Fassade im Stil der Renaissance zeichnet sich durch elegante Türmchen, dekorative Balkone und reich verzierte Fenster aus." },
+            { text: "Heute wird der Palast für offizielle Staatsveranstaltungen, diplomatische Empfänge und Zeremonien genutzt. Hier finden Treffen mit ausländischen Delegationen, festliche Bankette und Ansprachen des Staatsoberhauptes statt. Trotz seines Status als aktive Residenz werden im Sommer Teile der Prunksäle für Besucher geöffnet, was den Palast zu einer der meistbesuchten Sehenswürdigkeiten Luxemburgs macht." },
+            { text: "Die Innenräume des Palastes verbinden historischen Luxus mit Elementen verschiedener Epochen. Zu sehen sind reich dekorierte Säle, repräsentative Treppen, Porträts der großherzoglichen Familie und Sammlungen dekorativer Kunst. Besonders hervorzuheben sind der Königssaal, der Bankettsaal und die offiziellen Arbeitsräume." },
+            { bold: "Geschichte des Großherzoglichen Palastes", text: "beginnt im 16. Jahrhundert, als sich an seiner Stelle das Rathaus von Luxemburg befand. Im Jahr 1554 wurde ein großer Teil der Stadt durch eine Explosion eines Pulverlagers zerstört, woraufhin das Gebiet neu bebaut wurde. 1572 entstand hier ein neues Gebäude im flämischen Renaissancestil als Verwaltungszentrum der Stadt." },
+            { text: "In den folgenden Jahrhunderten wurde das Gebäude mehrfach umgebaut und unterschiedlich genutzt. Während der französischen Herrschaft im späten 18. Jahrhundert beherbergte es die Verwaltung des Departements Forêts. Später diente es als Verwaltungsresidenz der niederländischen Oranier." },
+            { text: "Entscheidende Veränderungen erfolgten im Jahr 1890, als Luxemburg seine dynastische Unabhängigkeit erlangte. Großherzog Adolf ließ das ehemalige Rathaus in eine offizielle Residenz der großherzoglichen Familie umwandeln, wodurch das Gebäude seinen heutigen Charakter als Palast erhielt." },
+            { text: "Während des Zweiten Weltkriegs wurde der Palast während der deutschen Besatzung beschädigt und zweckentfremdet genutzt. Nach der Befreiung des Landes im Jahr 1945 kehrte die großherzogliche Familie zurück, und es begannen umfangreiche Restaurierungsarbeiten. In den 1990er Jahren wurde der Palast umfassend restauriert und in seinen heutigen Zustand versetzt, wobei sein historisches Erscheinungsbild erhalten blieb." }
+          ]
+        },
+        tickets_and_entry: {
+          title: "Praktische Informationen",
+          items: [
+            { bold: "Adresse:", text: "17 Rue du Marché-aux-Herbes, Luxembourg" },
+            { bold: "Stil:", text: "Renaissance mit Elementen des Barock" },
+            { bold: "Besichtigung: ", text: "nur im Rahmen von Führungen in der Sommersaison. Durchschnittliche Dauer: 1–1,5 Stunden" }
+          ]
+        },
+        sub_objects: {
+          title: "Räume und Innenräume",
+          items: [
+            { bold: "Prunksäle", text: "Offizielle Räume für Staatszeremonien, diplomatische Empfänge und Bankette. Sie zeichnen sich durch luxuriöse Ausstattung, Kronleuchter und dekorative Elemente des 19. und 20. Jahrhunderts aus." },
+            { bold: "Königssaal", text: "Einer der bekanntesten Säle des Palastes, geschmückt mit Porträts europäischer Monarchen und Mitglieder der großherzoglichen Familie." },
+            { bold: "Bankettsaal", text: "Wird für offizielle Staatsbankette und feierliche Veranstaltungen bei Staatsbesuchen genutzt." },
+            { bold: "Arbeitszimmer des Großherzogs", text: "Arbeitsraum des Staatsoberhauptes, in dem offizielle Treffen und Unterzeichnungen stattfinden." }
+          ]
+        },
+        interestingFacts: {
+          title: "Interessante Fakten",
+          isList: true,
+          items: [
+            { text: "Der Großherzogliche Palast war ursprünglich kein Palast – das Gebäude wurde im 16. Jahrhundert als Rathaus errichtet." },
+            { text: "Den Status als offizielle Residenz erhielt er erst 1890 nach der dynastischen Unabhängigkeit Luxemburgs." },
+            { text: "Nach dem Krieg wurde der Palast zu einem Symbol der staatlichen Wiederherstellung Luxemburgs und der Rückkehr der großherzoglichen Familie." },
+            { text: "Die Wachablösung am Palast gehört zu den bekanntesten Zeremonien der Hauptstadt." },
+            { text: "In den offiziellen Neujahrsansprachen des Großherzogs dient dieser Palast als Hintergrund." }
+          ]
+        },
+        construction_period: "1572 (als Rathaus), 1890 (Umwandlung in den Palast)",
+        architects: "Adam Roberti (16. Jahrhundert, Rathaus); Gédéon Bordiau und Charles Arendt (19. Jahrhundert, Umbau)",
+        meta: {
+          title: "Großherzoglicher Palast in Luxemburg – Geschichte, Fotos und Beschreibung",
+          description: "Der Großherzogliche Palast ist die offizielle Residenz der Herrscher Luxemburgs im Zentrum der Hauptstadt. Geschichte, Architektur der Renaissance, Führungen und interessante Fakten.",
+          ogTitle: "Großherzoglicher Palast – Symbol Luxemburgs",
+          ogDescription: "Historische Residenz der Großherzöge Luxemburgs mit prachtvollen Sälen, Renaissance-Architektur und jahrhundertelanger Geschichte.",
+          keywords: "Großherzoglicher Palast, Palais grand-ducal, Luxemburg, Palast Luxemburg, Großherzog von Luxemburg, Sehenswürdigkeiten Luxemburg, Residenz des Herzogs, Renaissance-Palast, Altstadt Luxemburg, Architektur Luxemburg, Europa Palast",
+          ogImage: "https://our-travels.info/foto/Luxembourg/luxembourg_canton/luxembourg_city/old_town/grand_ducal_palace/001.jpg"
+        }
+      }
+    }
+  }
 ]
 
 export default datas;
