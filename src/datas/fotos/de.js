@@ -636,6 +636,9 @@ export const Fotos = {
       ],
       bremecker_hammer_luedenscheid: [
         { path: "Germany/nrw/arnsberg/Märkischer-Kreis/luedenscheid/bremecker_hammer/001.jpg", title: { ru: "Bremecker Hammer – технико-исторический музей кузнечного дела (фото взято с интернета)", ua: "Bremecker Hammer – техніко-історичний музей ковальського ремесла (фото взято з Інтернету)", de: "Bremecker Hammer (Foto aus dem Internet)" } },
+      ],
+      phaenomenta_luedenscheid: [
+        { path: "Germany/nrw/arnsberg/Märkischer-Kreis/luedenscheid/phaenomenta/001.jpg", title: { ru: "Научный центр ФАНОМЕНТА (фото взято с интернета)", ua: "Науковий центр ФАНОМЕНТА (фото взято з Інтернету)", de: "PHÄNOMENTA (Foto aus dem Internet)" } },
       ]
     },
     iserlohn: {

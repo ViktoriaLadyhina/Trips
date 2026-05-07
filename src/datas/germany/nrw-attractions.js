@@ -932,6 +932,184 @@ const datas = [
             }
         }
     },
+    {
+        id: "phaenomenta_luedenscheid",
+        type: ["museum"], rating: "local",
+        path: "phaenomenta_luedenscheid",
+        countryPath: "germany", regionPath: "nrw", districtPath: "arnsberg", cityPath: "luedenscheid",
+        fotoCard: "Germany/nrw/arnsberg/Märkischer-Kreis/luedenscheid/phaenomenta/001.jpg",
+        coord: { lat: 51.22164487741599, lng: 7.628506924874506 },
+        translations: {
+            ru: {
+                name: "Научный центр ФАНОМЕНТА",
+                location: "Люденшайд (центральная часть города), Германия",
+                officialSite: [{ bold: "Официальный сайт", link: "https://www.phaenomenta-luedenscheid.de" }],
+                short_description: "Научный центр ФАНОМЕНТА – это интерактивный научный центр, где физика, математика и природные явления становятся опытом через эксперимент. Здесь более 120 станций, на которых посетители могут самостоятельно исследовать законы природы. Главный принцип центра: не «не трогать», а «обязательно пробовать».",
+                full_description: {
+                    title: "Описание и история",
+                    items: [
+                        { bold: "Научный центр ФАНОМЕНТА (PHÄNOMENTA)", text: "в городе Люденшайд – это научно-экспериментальный центр, ориентированный на живое взаимодействие с наукой. Посетители здесь не наблюдают со стороны, а становятся участниками экспериментов. Более 120 интерактивных станций позволяют буквально «потрогать» физику, понять оптику, механику, акустику и другие природные явления через собственный опыт." },
+                        { text: "Особенность центра в том, что он подходит для всех возрастов: детям он даёт первое интуитивное понимание науки, а взрослым – возможность заново открыть базовые физические законы. Всё пространство построено на принципе самостоятельного исследования без сложных объяснений «сверху вниз»." },
+                        { text: "ФАНОМЕНТА считается одним из самых удачных научно-популярных проектов в регионе и привлекает как школьные группы, так и туристов, интересующихся наукой и интерактивными музеями." },
+                        { bold: "История", text: "ФАНОМЕНТА была открыта в Люденшайде как первый научно-экспериментальный центр подобного типа в федеральной земле Северный Рейн-Вестфалия. Идея проекта заключалась в создании пространства, где наука становится доступной через опыт, а не через теорию." },
+                        { text: "Проект был реализован при участии города и научно-образовательных инициатив региона. С момента открытия центр постоянно расширялся и дополнялся новыми экспериментальными установками, превращаясь в одну из ключевых образовательных достопримечательностей региона." },
+                        { text: "Сегодня центр является устойчивым примером того, как научное образование может быть интегрировано в туристическую и культурную среду города." }
+                    ]
+                },
+                tickets_and_entry: {
+                    title: "Практическая информация",
+                    items: [
+                        { bold: "Адрес:", text: "Phänomenta-Weg 1, 58507 Lüdenscheid" },
+                        { bold: "Часы работы (2026):", text: "<br>Понедельник: закрыто <br>Вторник – Пятница: 09:00 – 17:00 <br>Суббота – Воскресенье: 11:00 – 18:00 <br>Праздники (NRW): обычно 11:00 – 18:00 <br>Закрыто: Карфрайтаг, 24.12, 25.12, 31.12, 01.01" },
+                        { bold: "Цены на билеты (стандарт 2026):", text: "<br>Взрослые – 14,50 € <br>Дети (6–16 лет) – 9,50 € <br>Маленькие дети (3–5 лет) – 4,00 € <br>Льготный билет – 12,50 € <br>Семейный билет – 39,50 € (2 взрослых + 2 детей или 1 взрослый + 3 детей) <br>Группы (от 10 человек) – взрослые: ~12,00 €, дети: ~9,00 €" }
+                    ]
+                },
+                sub_objects: {
+                    title: "Экспозиции",
+                    items: [
+                        { text: "Более 120 интерактивных научных станций" },
+                        { text: "Эксперименты с оптикой (свет, отражение, иллюзии)" },
+                        { text: "Механика и силы (рычаги, баланс, движение)" },
+                        { text: "Акустика (звук, вибрации, резонанс)" },
+                        { text: "Восприятие и иллюзии (оптические и сенсорные эффекты)" },
+                        { text: "Экспериментальные зоны для детей и школьных групп" }
+                    ]
+                },
+                interestingFacts: {
+                    title: "Интересные факты",
+                    isList: true,
+                    items: [
+                        { text: "ФАНОМЕНТА – один из первых интерактивных научных центров такого типа в Северном Рейне-Вестфалии (NRW)" },
+                        { text: "Концепция построена по принципу «обучение через практику» (Learning by doing)" },
+                        { text: "Девиз центра: «Anfassen erwünscht» – «трогать разрешено и поощряется»" },
+                        { text: "Экспонаты регулярно обновляются и дополняются" },
+                        { text: "Центр активно используется для школьного STEM-образования (наука, технологии, инженерия и математика)" }
+                    ]
+                },
+                construction_period: "1996 год",
+                meta: {
+                    title: "Научный центр ФАНОМЕНТА  (PHÄNOMENTA) – интерактивный научный центр и музей экспериментов в NRW",
+                    description: "ФАНОМЕНТА в Люденшайде – интерактивный научный центр с более чем 120 экспериментами. Узнайте физику и природные явления через практический опыт.",
+                    ogTitle: "Научный центр ФАНОМЕНТА  (PHÄNOMENTA) – музей науки, где можно всё трогать",
+                    ogDescription: "120+ интерактивных экспериментов в ФАНОМЕНТА: наука, физика и оптика через практику. Идеально для детей и взрослых.",
+                    keywords: "Научный центр ФАНОМЕНТА, Phänomenta Lüdenscheid, интерактивный музей Германия, научный центр NRW, музей физики Германия, экспериментальный центр, science museum Germany, Lüdenscheid attractions, интерактивные экспонаты, STEM музей Германия, достопримечательности",
+                    ogImage: "https://our-travels.info/foto/Germany/nrw/arnsberg/Märkischer-Kreis/luedenscheid/phaenomenta/001.jpg"
+                }
+            },
+            ua: {
+                name: "Науковий центр ФАНОМЕНТА",
+                location: "Люденшайд (центральна частина міста), Німеччина",
+                officialSite: [{ bold: "Офіційний сайт", link: "https://www.phaenomenta-luedenscheid.de" }],
+                short_description: "Науковий центр ФАНОМЕНТА – це інтерактивний науковий центр, де фізика, математика та природні явища пізнаються через досвід та експерименти. Тут понад 120 станцій, на яких відвідувачі можуть самостійно досліджувати закони природи. Головний принцип центру: не «не чіпати», а «обов’язково пробувати».",
+                full_description: {
+                    title: "Опис та історія",
+                    items: [
+                        { bold: "Науковий центр ФАНОМЕНТА (PHÄNOMENTA)", text: "у місті Люденшайді – це науково-експериментальний центр, орієнтований на активну взаємодію з наукою. Відвідувачі тут не спостерігають збоку, а стають учасниками експериментів. Понад 120 інтерактивних станцій дозволяють буквально «доторкнутися» до фізики та зрозуміти оптику, механіку, акустику та інші природні явища через власний досвід." },
+                        { text: "Особливість центру полягає в тому, що він підходить для всіх вікових груп: дітям він дає інтуїтивне розуміння науки, а дорослим — можливість заново відкрити базові фізичні закони. Увесь простір побудований на принципі самостійного дослідження без складних пояснень «зверху вниз»." },
+                        { text: "ФАНОМЕНТА вважається одним із найуспішніших науково-популярних проєктів у регіоні та приваблює як шкільні групи, так і туристів, які цікавляться наукою та інтерактивними музеями." },
+                        { bold: "Історія", text: "ФАНОМЕНТА була відкрита в Люденшайді як перший науково-експериментальний центр такого типу у федеральній землі Північний Рейн-Вестфалія. Ідея проєкту полягала у створенні простору, де наука стає доступною через досвід, а не лише через теорію." },
+                        { text: "Проєкт був реалізований за участі міста та науково-освітніх ініціатив регіону. З моменту відкриття центр постійно розширювався та поповнювався новими експериментальними установками, перетворюючись на одну з ключових освітніх пам’яток регіону." },
+                        { text: "Сьогодні центр є яскравим прикладом того, як наукову освіту можна інтегрувати в туристичне та культурне середовище міста." }
+                    ]
+                },
+                tickets_and_entry: {
+                    title: "Практична інформація",
+                    items: [
+                        { bold: "Адреса:", text: "Phänomenta-Weg 1, 58507 Lüdenscheid" },
+                        { bold: "Години роботи (2026):", text: "<br>Понеділок: зачинено; <br>Вівторок – П’ятниця: 09:00 – 17:00; <br>Субота – Неділя: 11:00 – 18:00; <br>Святкові дні (NRW): зазвичай 11:00 – 18:00; <br>Зачинено: Страсна п’ятниця, 24.12, 25.12, 31.12, 01.01" },
+                        { bold: "Ціни на квитки (стандарт 2026):", text: "<br>Дорослі – 14,50 €; <br>Діти (6–16 років) – 9,50 €; <br>Діти (3–5 років) – 4,00 €; <br>Пільговий квиток – 12,50 €; <br>Сімейний квиток – 39,50 € (2 дорослих + 2 дітей або 1 дорослий + 3 дітей); <br>Групи (від 10 осіб): дорослі ~12,00 €, діти ~9,00 €" }
+                    ]
+                },
+                sub_objects: {
+                    title: "Експозиції",
+                    items: [
+                        { text: "Понад 120 інтерактивних наукових станцій" },
+                        { text: "Експерименти з оптикою (світло, відбиття, ілюзії)" },
+                        { text: "Механіка та сили (важелі, баланс, рух)" },
+                        { text: "Акустика (звук, вібрації, резонанс)" },
+                        { text: "Сприйняття та ілюзії (оптичні та сенсорні ефекти)" },
+                        { text: "Експериментальні зони для дітей і шкільних груп" }
+                    ]
+                },
+                interestingFacts: {
+                    title: "Цікаві факти",
+                    isList: true,
+                    items: [
+                        { text: "ФАНОМЕНТА – один із перших інтерактивних наукових центрів такого типу у Північному Рейні-Вестфалії (NRW)" },
+                        { text: "Концепція побудована за принципом «навчання через практику» (Learning by doing)" },
+                        { text: "Девіз центру: «Anfassen erwünscht» – «дозволено і заохочується торкатися»" },
+                        { text: "Експонати регулярно оновлюються та доповнюються" },
+                        { text: "Центр активно використовується для шкільної STEM-освіти (наука, технології, інженерія та математика)" }
+                    ]
+                },
+                construction_period: "1996 рік",
+                meta: {
+                    title: "Науковий центр ФАНОМЕНТА (PHÄNOMENTA) – інтерактивний науковий центр і музей експериментів у NRW",
+                    description: "ФАНОМЕНТА в Люденшайді – інтерактивний науковий центр із понад 120 експериментами. Дізнайтеся про фізику та природні явища через практичний досвід.",
+                    ogTitle: "Науковий центр ФАНОМЕНТА (PHÄNOMENTA) – музей науки, де все можна чіпати",
+                    ogDescription: "120+ інтерактивних експериментів у ФАНОМЕНТА: наука, фізика та оптика через практику. Ідеально для дітей і дорослих.",
+                    keywords: "Науковий центр ФАНОМЕНТА, Phänomenta Lüdenscheid, інтерактивний музей Німеччина, науковий центр NRW, музей фізики Німеччина, експериментальний центр, science museum Germany, Lüdenscheid attractions, інтерактивні експонати, STEM музей Німеччина, пам’ятки",
+                    ogImage: "https://our-travels.info/foto/Germany/nrw/arnsberg/Märkischer-Kreis/luedenscheid/phaenomenta/001.jpg"
+                }
+            },
+            de: {
+                name: "PHÄNOMENTA",
+                location: "Lüdenscheid (zentraler Stadtbereich), Deutschland",
+                officialSite: [{ bold: "Offizielle Website", link: "https://www.phaenomenta-luedenscheid.de" }],
+                short_description: "PHÄNOMENTA ist ein interaktives Science Center, in dem Physik, Mathematik und Naturphänomene durch Experimente erlebbar werden. Es gibt über 120 Stationen, an denen Besucher Naturgesetze selbstständig erforschen können. Das zentrale Prinzip lautet: nicht „nicht anfassen“, sondern „ausprobieren erwünscht“.",
+                full_description: {
+                    title: "Beschreibung und Geschichte",
+                    items: [
+                        { bold: "PHÄNOMENTA", text: "in der Stadt Lüdenscheid ist ein wissenschaftlich-experimentelles Zentrum, das auf aktive Interaktion mit der Wissenschaft ausgerichtet ist. Besucher beobachten hier nicht nur, sondern werden selbst Teil der Experimente. Mehr als 120 interaktive Stationen ermöglichen es, Physik buchstäblich „zu erleben“ und Optik, Mechanik, Akustik und andere Naturphänomene durch eigene Erfahrung zu verstehen." },
+                        { text: "Das Zentrum ist für alle Altersgruppen geeignet: Kinder erhalten ein intuitives Verständnis von Wissenschaft, während Erwachsene grundlegende physikalische Gesetzmäßigkeiten neu entdecken können. Der gesamte Raum basiert auf dem Prinzip des selbstständigen Experimentierens ohne komplexe Erklärungen von oben." },
+                        { text: "PHÄNOMENTA gilt als eines der erfolgreichsten wissenschaftlich-populären Projekte der Region und zieht sowohl Schulgruppen als auch Touristen an, die sich für Wissenschaft und interaktive Museen interessieren." },
+                        { bold: "Geschichte", text: "PHÄNOMENTA wurde in Lüdenscheid als erstes wissenschaftlich-experimentelles Zentrum dieser Art in Nordrhein-Westfalen eröffnet. Die Idee bestand darin, einen Raum zu schaffen, in dem Wissenschaft durch Erfahrung und nicht nur durch Theorie zugänglich wird." },
+                        { text: "Das Projekt wurde in Zusammenarbeit mit der Stadt und Bildungsinitiativen der Region realisiert. Seit der Eröffnung wurde das Zentrum kontinuierlich erweitert und mit neuen Experimentierstationen ergänzt und entwickelte sich zu einer wichtigen Bildungseinrichtung der Region." },
+                        { text: "Heute ist das Zentrum ein bedeutendes Beispiel dafür, wie naturwissenschaftliche Bildung in den kulturellen und touristischen Kontext einer Stadt integriert werden kann." }
+                    ]
+                },
+                tickets_and_entry: {
+                    title: "Praktische Informationen",
+                    items: [
+                        { bold: "Adresse:", text: "Phänomenta-Weg 1, 58507 Lüdenscheid" },
+                        { bold: "Öffnungszeiten (2026):", text: "<br>Montag: geschlossen; <br>Dienstag – Freitag: 09:00 – 17:00; <br>Samstag – Sonntag: 11:00 – 18:00; <br>Feiertage (NRW): meist 11:00 – 18:00; <br>Geschlossen: Karfreitag, 24.12, 25.12, 31.12, 01.01" },
+                        { bold: "Eintrittspreise (Standard 2026):", text: "<br>Erwachsene – 14,50 €; <br>Kinder (6–16 Jahre) – 9,50 €; <br>Kinder (3–5 Jahre) – 4,00 €; <br>Ermäßigter Eintritt – 12,50 €; <br>Familienkarte – 39,50 € (2 Erwachsene + 2 Kinder oder 1 Erwachsener + 3 Kinder); <br>Gruppen (ab 10 Personen): Erwachsene ~12,00 €, Kinder ~9,00 €" }
+                    ]
+                },
+                sub_objects: {
+                    title: "Ausstellungen",
+                    items: [
+                        { text: "Über 120 interaktive Experimentierstationen" },
+                        { text: "Experimente zur Optik (Licht, Reflexion, Illusionen)" },
+                        { text: "Mechanik und Kräfte (Hebel, Gleichgewicht, Bewegung)" },
+                        { text: "Akustik (Schall, Vibrationen, Resonanz)" },
+                        { text: "Wahrnehmung und Illusionen (optische und sensorische Effekte)" },
+                        { text: "Experimentierbereiche für Kinder und Schulgruppen" }
+                    ]
+                },
+                interestingFacts: {
+                    title: "Interessante Fakten",
+                    isList: true,
+                    items: [
+                        { text: "PHÄNOMENTA ist eines der ersten interaktiven Science Center dieser Art in Nordrhein-Westfalen (NRW)" },
+                        { text: "Das Konzept basiert auf dem Prinzip „Learning by doing“" },
+                        { text: "Das Motto des Zentrums lautet: „Anfassen erwünscht“" },
+                        { text: "Die Exponate werden regelmäßig aktualisiert und erweitert" },
+                        { text: "Das Zentrum wird intensiv für die schulische MINT-Bildung genutzt (Mathematik, Informatik, Naturwissenschaften, Technik)" }
+                    ]
+                },
+                construction_period: "1996",
+                meta: {
+                    title: "PHÄNOMENTA Lüdenscheid – interaktives Science Center und Museum in NRW",
+                    description: "PHÄNOMENTA in Lüdenscheid ist ein interaktives Science Center mit über 120 Experimenten. Naturwissenschaften durch praktische Erfahrung erleben.",
+                    ogTitle: "PHÄNOMENTA Lüdenscheid – Museum der Wissenschaft zum Anfassen",
+                    ogDescription: "Über 120 interaktive Experimente in der PHÄNOMENTA: Physik und Naturwissenschaften zum Ausprobieren. Ideal für Kinder und Erwachsene.",
+                    keywords: "PHÄNOMENTA Lüdenscheid, Science Center Deutschland, interaktives Museum NRW, Physik Museum Deutschland, Experimentierzentrum, Science Museum Germany, Lüdenscheid Sehenswürdigkeiten, MINT Bildung Deutschland",
+                    ogImage: "https://our-travels.info/foto/Germany/nrw/arnsberg/Märkischer-Kreis/luedenscheid/phaenomenta/001.jpg"
+                }
+            }
+        }
+    },
 
     //iserlohn
     {
