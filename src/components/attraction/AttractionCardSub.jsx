@@ -5,6 +5,7 @@ import { Link } from 'react-router';
 const BASE_PHOTO_URL = import.meta.env.VITE_BASE_PHOTO_URL;
 
 const more = { ru: "Подробнее", ua: "Докладніше", de: "Weitere Details" };
+const location = { ru: "Месторасположение", ua: "Місце розташування", de: "Standort" };
 const ratingLabel = { ru: "Рейтинг", ua: "Рейтинг", de: "Bewertung" };
 const topOptionLabel = { top: { ru: "Топовый", ua: "Топовий", de: "Top" }, popular: { ru: "Популярный", ua: "Популярний", de: "Beliebt" }, local: { ru: "Локальный", ua: "Локальний", de: "Lokal" } };
 const noteLabel = { partial: { ru: "Частично сохранилось", ua: "Частково збережено", de: "Teilweise erhalten" }, lost: { ru: "Утрачено", ua: "Втрачено", de: "Verloren" } };
@@ -62,6 +63,9 @@ const AttractionCardSub = ({ attr, lang }) => {
                         <span className='attrCard__desc-info-text'>
                             🌍UNESCO {attr.unesco_status.year}
                         </span>
+                    )}
+                                        {attr.location && (
+                        <div className='attrCard__desc-info-text'>{location[lang]}: {attr.location}</div>
                     )}
                     {attr.showMore && (
                         <div className='attrCard__desc-info-more'>

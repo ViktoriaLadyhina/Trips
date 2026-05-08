@@ -229,6 +229,7 @@ const datas =
     adolphe_luxembourg: { ru: 'Мост Адольфа', de: 'Adolphe-Brücke', ua: 'Міст Адольфа' },
     notre_dame_cathedral_luxembourg: { ru: 'Собор Люксембургской Богоматери', de: 'Kathedrale Notre-Dame Luxemburg', ua: 'Собор Люксембургської Богоматері' },
     grand_ducal_palace_luxembourg: { ru: 'Дворец Великих герцогов', de: 'Großherzoglicher Palast', ua: 'Палац Великого герцога' },
+    hammelsmarsch_luxembourg: { ru: 'Фонтан «Хэммельсмарш»', de: 'Brunnen «Hämmelsmarsch»', ua: 'Фонтан «Хеммельсмарш»' },
 
     // Ukraine
     // Sumska oblast

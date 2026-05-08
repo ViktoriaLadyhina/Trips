@@ -94,7 +94,9 @@ export const Fotos = {
         { path: "Luxembourg/luxembourg_canton/luxembourg_city/old_town/grand_ducal_palace/001.jpg", title: { ru: 'Дворец Великих герцогов в Люксембурге, 2024', de: 'Großherzoglicher Palast, 2024', ua: 'Палац Великого герцога, 2024' } },
         { path: "Luxembourg/luxembourg_canton/luxembourg_city/old_town/casemates/001.jpg", title: { ru: 'Казематы Бок, 2024', de: 'Bock-Kasematten, 2024', ua: 'Каземати Бок, 2024' } },
         { path: "Luxembourg/luxembourg_canton/luxembourg_city/old_town/abbey_neumunster/001.jpg", title: { ru: 'Аббатство Ноймюнстер, 2024', de: 'Abtei Neumünster, 2024', ua: 'Абатство Ноймюнстер, 2024' } },
-        { path: "Luxembourg/luxembourg_canton/luxembourg_city/old_town/pont_du_chateau/001.jpg", title: { ru: 'Мост Понт-дю-Шато, 2024', de: 'Pont du Château Brücke, 2024', ua: 'Міст Понт-дю-Шато, 2024' } }
+        { path: "Luxembourg/luxembourg_canton/luxembourg_city/old_town/pont_du_chateau/001.jpg", title: { ru: 'Мост Понт-дю-Шато, 2024', de: 'Pont du Château Brücke, 2024', ua: 'Міст Понт-дю-Шато, 2024' } },
+        { path: "Luxembourg/luxembourg_canton/luxembourg_city/old_town/passerelle/001.jpg", title: { ru: 'Мост Пассерель, 2024', de: 'Passerelle-Brücke, 2024', ua: 'Міст Пассерель, 2024' } },
+        { path: "Luxembourg/luxembourg_canton/luxembourg_city/old_town/hammelsmarsch/001.jpg", title: { ru: 'Фонтан «Хэммельсмарш», 2024', de: 'Brunnen «Hämmelsmarsch», 2024', ua: 'Фонтан «Хеммельсмарш», 2024' } },
       ],
       casemates_du_bock_luxembourg: [
         { path: "Luxembourg/luxembourg_canton/luxembourg_city/old_town/casemates/001.jpg", title: { ru: 'Казематы Бок, 2024', de: 'Bock-Kasematten, 2024', ua: 'Каземати Бок, 2024' } },
@@ -132,6 +134,10 @@ export const Fotos = {
       grand_ducal_palace_luxembourg: [
         { path: "Luxembourg/luxembourg_canton/luxembourg_city/old_town/grand_ducal_palace/001.jpg", title: { ru: 'Дворец Великих герцогов в Люксембурге, 2024', de: 'Großherzoglicher Palast, 2024', ua: 'Палац Великого герцога, 2024' } },
         { path: "Luxembourg/luxembourg_canton/luxembourg_city/old_town/grand_ducal_palace/002.jpg", title: { ru: 'Дворец Великих герцогов в Люксембурге, 2024', de: 'Großherzoglicher Palast, 2024', ua: 'Палац Великого герцога, 2024' } },
+      ],
+      hammelsmarsch_luxembourg: [
+        { path: "Luxembourg/luxembourg_canton/luxembourg_city/old_town/hammelsmarsch/001.jpg", title: { ru: 'Фонтан «Хэммельсмарш», 2024', de: 'Brunnen «Hämmelsmarsch», 2024', ua: 'Фонтан «Хеммельсмарш», 2024' } },
+        { path: "Luxembourg/luxembourg_canton/luxembourg_city/old_town/hammelsmarsch/002.jpg", title: { ru: 'Фонтан «Хэммельсмарш», 2024', de: 'Brunnen «Hämmelsmarsch», 2024', ua: 'Фонтан «Хеммельсмарш», 2024' } },
       ],
     }
   }

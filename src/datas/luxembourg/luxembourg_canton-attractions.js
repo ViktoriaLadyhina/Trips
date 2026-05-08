@@ -10,7 +10,7 @@ const datas = [
     translations: {
       ru: {
         name: "Музей «Три жёлудя»",
-        location: "Город Люксембург, Люксембург",
+        location: "Люксембург (квартал Kirchberg), Люксембург",
         officialSite: [{ bold: "Официальный сайт", link: "https://m3e.public.lu/fr.html" }],
         short_description: "Музей «Три жёлудя» – музей истории крепости Люксембурга, расположен на территории исторического Форта Тюнген. Экспозиции музея посвящены военной архитектуре, развитию города и его стратегическому значению в Европе.",
         subObjects_title: "Часть музейного комплекса «Три жёлудя»",
@@ -72,7 +72,7 @@ const datas = [
       },
       ua: {
         name: "Музей «Три жолуді»",
-        location: "Місто Люксембург, Люксембург",
+        location: "Люксембург (квартал Kirchberg), Люксембург",
         officialSite: [{ bold: "Офіційний сайт", link: "https://m3e.public.lu/fr.html" }],
         short_description: "Музей «Три жолуді» – музей історії фортеці Люксембурга, розташований на території історичного Форту Тюнген. Експозиції музею присвячені військовій архітектурі, розвитку міста та його стратегічному значенню в Європі.",
         subObjects_title: "Частина музейного комплексу «Три жолуді»",
@@ -134,7 +134,7 @@ const datas = [
       },
       de: {
         name: "Museum „Drei Eicheln“",
-        location: "Stadt Luxemburg, Luxemburg",
+        location: "Luxemburg (Viertel Kirchberg), Luxemburg",
         officialSite: [{ bold: "Offizielle Website", link: "https://m3e.public.lu/fr.html" }],
         short_description: "Das Museum „Drei Eicheln“ ist ein Museum zur Geschichte der Festung Luxemburg und befindet sich auf dem Gelände des historischen Fort Thüngen. Die Ausstellungen widmen sich der Militärarchitektur, der Stadtentwicklung und ihrer strategischen Bedeutung in Europa.",
         subObjects_title: "Teil des Museumskomplexes „Drei Eicheln“",
@@ -206,7 +206,7 @@ const datas = [
     translations: {
       ru: {
         name: "Форт Тюнген",
-        location: "Город Люксембург, Люксембург",
+        location: "Люксембург (квартал Kirchberg), Люксембург",
         officialSite: [
           { bold: "Страница музея", link: "https://m3e.public.lu/fr.html" }
         ],
@@ -253,7 +253,7 @@ const datas = [
       },
       ua: {
         name: "Форт Тюнген",
-        location: "Місто Люксембург, Люксембург",
+        location: "Люксембург (квартал Kirchberg), Люксембург",
         officialSite: [
           { bold: "Сторінка музею", link: "https://m3e.public.lu/fr.html" }
         ],
@@ -300,7 +300,7 @@ const datas = [
       },
       de: {
         name: "Fort Thüngen",
-        location: "Stadt Luxemburg, Luxemburg",
+        location: "Luxemburg (Viertel Kirchberg), Luxemburg",
         officialSite: [
           { bold: "Museumsseite", link: "https://m3e.public.lu/fr.html" }
         ],
@@ -353,11 +353,11 @@ const datas = [
     path: "old_town_luxembourg",
     countryPath: "luxembourg", regionPath: "luxembourg_canton", districtPath: "city", cityPath: "luxembourg_city",
     fotoCard: "Luxembourg/luxembourg_canton/luxembourg_city/old_town/001.jpg",
-    subObjects: ["casemates_du_bock_luxembourg", "abbey_neumunster_luxembourg", "pont_du_chateau_luxembourg", "passerelle_luxembourg", "notre_dame_cathedral_luxembourg", "grand_ducal_palace_luxembourg"],
+    subObjects: ["casemates_du_bock_luxembourg", "abbey_neumunster_luxembourg", "pont_du_chateau_luxembourg", "passerelle_luxembourg", "notre_dame_cathedral_luxembourg", "grand_ducal_palace_luxembourg", "hammelsmarsch_luxembourg"],
     translations: {
       ru: {
         name: "Старый город Люксембурга",
-        location: "Город Люксембург, Люксембург",
+        location: "Люксембург (кварталы Ville Haute, Grund, Pfaffenthal), Люксембург",
         unesco_status: {
           included: true,
           year: 1994,
@@ -375,7 +375,8 @@ const datas = [
             { bold: "Дворец Великих герцогов", text: "– официальная резиденция великого герцога Люксембурга, построенная в стиле Ренессанса, известная парадными залами, историческими интерьерами и статусом одного из главных символов государства." },
             { bold: "Аббатство Ноймюнстер", text: "– историческое аббатство XVII века в районе Грунд, преобразованное в современный культурный центр с выставками и мероприятиями." },
             { bold: "Мост Понт-дю-Шато", text: "– исторический мост в старом городе Люксембурга, входящий в систему бывших городских укреплений и являющийся частью пешеходных маршрутов." },
-            { bold: "Мост Пассерель (Passerelle)", text: "– исторический каменный мост в городе Люксембург, соединяющий район старого города с кварталом вокзала и являющийся важной частью городской транспортной и пешеходной сети." }
+            { bold: "Мост Пассерель (Passerelle)", text: "– исторический каменный мост в городе Люксембург, соединяющий район старого города с кварталом вокзала и являющийся важной частью городской транспортной и пешеходной сети." },
+            { bold: "Фонтан «Хэммельсмарш»", text: "– бронзовый фонтан «Хэммельсмарш» в центре Люксембурга, изображающий традиционное шествие музыкантов и овец, связанное с ярмаркой Schueberfouer." }
           ]
         },
         full_description: {
@@ -417,7 +418,7 @@ const datas = [
       },
       ua: {
         name: "Старе місто Люксембурга",
-        location: "Місто Люксембург, Люксембург",
+        location: "Люксембург (квартали Ville Haute, Grund, Pfaffenthal), Люксембург",
         unesco_status: {
           included: true,
           year: 1994,
@@ -435,7 +436,8 @@ const datas = [
             { bold: "Палац Великого герцога", text: "– офіційна резиденція Великого герцога Люксембургу, збудована в стилі Ренесансу, відома своїми урочистими залами, історичними інтер’єрами та статусом одного з головних символів держави." },
             { bold: "Абатство Ноймюнстер", text: "– історичне абатство XVII століття в районі Грунд, перетворене на сучасний культурний центр із виставками та заходами." },
             { bold: "Міст Понт-дю-Шато", text: "– історичний міст у старому місті Люксембургу, який входить до системи колишніх міських укріплень і є частиною пішохідних маршрутів." },
-            { bold: "Міст Пассерель (Passerelle)", text: "– історичний кам’яний міст у місті Люксембург, що з’єднує район старого міста з кварталом вокзалу та є важливою частиною міської транспортної і пішохідної мережі." }
+            { bold: "Міст Пассерель (Passerelle)", text: "– історичний кам’яний міст у місті Люксембург, що з’єднує район старого міста з кварталом вокзалу та є важливою частиною міської транспортної і пішохідної мережі." },
+            { bold: "Бронзовий фонтан «Хеммельсмарш»", text: "у центрі Люксембургу, що зображає традиційну процесію музикантів і овець, пов’язану з ярмарком Schueberfouer." }
           ]
         },
         full_description: {
@@ -477,7 +479,7 @@ const datas = [
       },
       de: {
         name: "Altstadt Luxemburg",
-        location: "Stadt Luxemburg, Luxemburg",
+        location: "Luxemburg (Viertel Ville Haute, Grund, Pfaffenthal), Luxemburg",
         unesco_status: {
           included: true,
           year: 1994,
@@ -495,7 +497,8 @@ const datas = [
             { bold: "Großherzoglicher Palast", text: "– offizielle Residenz des Großherzogs von Luxemburg, im Renaissance-Stil erbaut, bekannt für seine prunkvollen Säle, historischen Innenräume und seinen Status als eines der wichtigsten Wahrzeichen des Landes." },
             { bold: "Abtei Neumünster", text: "– eine historische Abtei aus dem 17. Jahrhundert im Stadtteil Grund, die in ein modernes Kulturzentrum mit Ausstellungen und Veranstaltungen umgewandelt wurde." },
             { bold: "Pont du Château", text: "– eine historische Brücke in der Altstadt von Luxemburg, die Teil der ehemaligen Stadtbefestigungen ist und zu den Fußgängerwegen gehört." },
-            { bold: "Passerelle-Brücke", text: "– historische Steinbrücke in der Stadt Luxemburg, die den Altstadtbereich mit dem Bahnhofsviertel verbindet und ein wichtiger Bestandteil des städtischen Verkehrs- und Fußgängernetzes ist." }
+            { bold: "Passerelle-Brücke", text: "– historische Steinbrücke in der Stadt Luxemburg, die den Altstadtbereich mit dem Bahnhofsviertel verbindet und ein wichtiger Bestandteil des städtischen Verkehrs- und Fußgängernetzes ist." },
+            { bold: "Brunnen «Hämmelsmarsch»", text: " im Zentrum von Luxemburg stellt eine traditionelle Prozession von Musikern und Schafen dar, die mit der Schueberfouer verbunden ist." }
           ]
         },
         full_description: {
@@ -548,7 +551,7 @@ const datas = [
     translations: {
       ru: {
         name: "Казематы Бок",
-        location: "Город Люксембург, Люксембург",
+        location: "Люксембург (квартал Ville Haute), Люксембург",
         short_description: "Казематы Бок – это система подземных оборонительных галерей, вырубленных в скале Бок в Люксембурге. Они являются частью бывших крепостных укреплений города. Подземные коридоры использовались для защиты, размещения солдат и хранения вооружения.",
         full_description: {
           title: "Описание и история",
@@ -594,7 +597,7 @@ const datas = [
       },
       ua: {
         name: "Каземати Бок",
-        location: "Місто Люксембург, Люксембург",
+        location: "Люксембург (квартал Ville Haute), Люксембург",
         short_description: "Каземати Бок – це система підземних оборонних галерей, вирубаних у скелі Бок у Люксембурзі. Вони є частиною колишніх міських фортифікацій. Підземні коридори використовувалися для захисту, розміщення солдатів і зберігання озброєння.",
         full_description: {
           title: "Опис та історія",
@@ -640,7 +643,7 @@ const datas = [
       },
       de: {
         name: "Bock-Kasematten",
-        location: "Stadt Luxemburg, Luxemburg",
+        location: "Luxemburg (Viertel Ville Haute), Luxemburg",
         short_description: "Die Bock-Kasematten sind ein System unterirdischer Verteidigungsgalerien, die in den Bockfelsen in Luxemburg gehauen wurden. Sie sind Teil der ehemaligen Stadtbefestigungen. Die unterirdischen Gänge wurden zur Verteidigung, zur Unterbringung von Soldaten und zur Lagerung von Waffen genutzt.",
         full_description: {
           title: "Beschreibung und Geschichte",
@@ -698,6 +701,7 @@ const datas = [
       ru: {
         name: "Собор Люксембургской Богоматери",
         officialSite: [{ bold: "Официальный сайт", link: "https://www.cathol.lu" }],
+        location: "Люксембург (квартал Ville Haute), Люксембург",
         short_description: "Главный католический храм Люксембурга – готический собор с элементами Ренессанса, известный витражами, богатым интерьером и почитаемой статуей Богоматери-Утешительницы.",
         full_description: {
           title: "Описание и история",
@@ -749,6 +753,7 @@ const datas = [
       },
       ua: {
         name: "Собор Люксембурзької Богоматері",
+        location: "Люксембург (квартал Ville Haute), Люксембург",
         officialSite: [{ bold: "Офіційний сайт", link: "https://www.cathol.lu" }],
         short_description: "Головний католицький храм Люксембургу – готичний собор з елементами Ренесансу, відомий вітражами, багатим інтер’єром і шанованою статуєю Богородиці-Утішительки.",
         full_description: {
@@ -801,6 +806,7 @@ const datas = [
       },
       de: {
         name: "Kathedrale Notre-Dame Luxemburg",
+        location: "Luxemburg (Viertel Ville Haute), Luxemburg",
         officialSite: [{ bold: "Offizielle Website", link: "https://www.cathol.lu" }],
         short_description: "Die wichtigste katholische Kirche Luxemburgs – eine gotische Kathedrale mit Renaissance-Elementen, bekannt für ihre Glasfenster, ihr reiches Interieur und die verehrte Statue der Trösterin der Betrübten.",
         full_description: {
@@ -864,7 +870,7 @@ const datas = [
     translations: {
       ru: {
         name: "Аббатство Ноймюнстер",
-        location: "Город Люксембург, Люксембург",
+        location: "Люксембург (квартал Grund), Люксембург",
         officialSite: [
           { bold: "Официальный сайт", link: "https://www.neimenster.lu/?utm_source=chatgpt.com" }
         ],
@@ -911,7 +917,7 @@ const datas = [
       },
       ua: {
         name: "Абатство Ноймюнстер",
-        location: "Місто Люксембург, Люксембург",
+        location: "Люксембург (квартал Grund), Люксембург",
         officialSite: [
           { bold: "Офіційний сайт", link: "https://www.neimenster.lu/?utm_source=chatgpt.com" }
         ],
@@ -958,7 +964,7 @@ const datas = [
       },
       de: {
         name: "Abtei Neumünster",
-        location: "Stadt Luxemburg, Luxemburg",
+        location: "Luxemburg (Viertel Grund), Luxemburg",
         officialSite: [
           { bold: "Offizielle Website", link: "https://www.neimenster.lu/?utm_source=chatgpt.com" }
         ],
@@ -1017,7 +1023,7 @@ const datas = [
     translations: {
       ru: {
         name: "Мост Понт-дю-Шато",
-        location: "Город Люксембург, Люксембург",
+        location: "Люксембург (квартал Ville Haute), Люксембург",
         short_description: "Мост Понт-дю-Шато – это исторический мост в Люксембурге, расположенный в районе старых городских укреплений. Он соединяет важные части исторического центра и связан с развитием фортификационной системы города.",
         full_description: {
           title: "Описание и история",
@@ -1057,7 +1063,7 @@ const datas = [
       },
       ua: {
         name: "Міст Понт-дю-Шато",
-        location: "Місто Люксембург, Люксембург",
+        location: "Люксембург (квартал Ville Haute), Люксембург",
         short_description: "Міст Понт-дю-Шато – це історичний міст у Люксембурзі, розташований у районі старих міських укріплень. Він з’єднує важливі частини історичного центру та пов’язаний із розвитком фортифікаційної системи міста.",
         full_description: {
           title: "Опис та історія",
@@ -1098,7 +1104,7 @@ const datas = [
       },
       de: {
         name: "Pont du Château Brücke",
-        location: "Stadt Luxemburg, Luxemburg",
+        location: "Luxemburg (Viertel Ville Haute), Luxemburg",
         short_description: "Die Pont du Château Brücke ist eine historische Brücke in Luxemburg, die sich im Bereich der alten Stadtbefestigungen befindet. Sie verbindet wichtige Teile des historischen Zentrums und steht im Zusammenhang mit der Entwicklung des Festungssystems der Stadt.",
         full_description: {
           title: "Beschreibung und Geschichte",
@@ -1312,7 +1318,7 @@ const datas = [
     translations: {
       ru: {
         name: "Мост Пассерель",
-        location: "Город Люксембург, Люксембург",
+        location: "Люксембург (квартал Gare), Люксембург",
         short_description: "Мост Пассерель, также известный как Люксембургский виадук, – это один из самых узнаваемых мостов Люксембурга, соединяющий центральную часть города с районом вокзала. Построенный в XIX веке, он стал важным транспортным и архитектурным элементом столицы.",
         full_description: {
           title: "Описание и история",
@@ -1347,7 +1353,7 @@ const datas = [
       },
       ua: {
         name: "Міст Пассерель",
-        location: "Місто Люксембург, Люксембург",
+        location: "Люксембург (квартал Gare), Люксембург",
         short_description: "Міст Пассерель, також відомий як Люксембурзький віадук, — це один із найвідоміших мостів Люксембургу, що з’єднує центральну частину міста з районом вокзалу. Збудований у XIX столітті, він став важливим транспортним і архітектурним елементом столиці.",
         full_description: {
           title: "Опис і історія",
@@ -1382,7 +1388,7 @@ const datas = [
       },
       de: {
         name: "Passerelle-Brücke",
-        location: "Stadt Luxemburg, Luxemburg",
+        location: "Luxemburg (Viertel Gare), Luxemburg",
         short_description: "Die Passerelle-Brücke, auch als Luxemburger Viadukt bekannt, ist eine der bekanntesten Brücken Luxemburgs und verbindet das Stadtzentrum mit dem Bahnhofviertel. Im 19. Jahrhundert erbaut, wurde sie zu einem wichtigen Verkehrs- und Architekturdenkmal der Hauptstadt.",
         full_description: {
           title: "Beschreibung und Geschichte",
@@ -1429,7 +1435,7 @@ const datas = [
     translations: {
       ru: {
         name: "Мост Адольфа",
-        location: "Город Люксембург, Люксембург, район Ville Haute (граница с Gare)",
+        location: "Люксембург (квартал Ville Haute), Люксембург",
         short_description: "Один из главных символов Люксембурга – каменный мост Адольфа, соединяющий Верхний город с районом Гар. Построенный в начале XX века, он известен своей масштабной аркой и панорамными видами.",
         full_description: {
           title: "Описание и история",
@@ -1475,7 +1481,7 @@ const datas = [
       },
       ua: {
         name: "Міст Адольфа",
-        location: "Місто Люксембург, Люксембург, район Ville Haute (межа з районом Gare)",
+        location: "Люксембург (квартал Ville Haute), Люксембург",
         short_description: "Один із головних символів Люксембурга – кам’яний міст Адольфа, що з’єднує Верхнє місто з районом Гар. Збудований на початку XX століття, він відомий своєю масштабною аркою та панорамними видами.",
         full_description: {
           title: "Опис і історія",
@@ -1521,7 +1527,7 @@ const datas = [
       },
       de: {
         name: "Adolphe-Brücke",
-        location: "Stadt Luxemburg, Luxemburg, Stadtteil Ville Haute (Grenze zum Stadtteil Gare)",
+        location: "Luxemburg (Viertel Ville Haute), Luxemburg",
         short_description: "Eines der wichtigsten Wahrzeichen Luxemburgs – die steinerne Adolphe-Brücke, die die Oberstadt mit dem Stadtteil Gare verbindet. Sie wurde zu Beginn des 20. Jahrhunderts erbaut und ist für ihren großen Bogen und ihre Panoramablicke bekannt.",
         full_description: {
           title: "Beschreibung und Geschichte",
@@ -1578,7 +1584,7 @@ const datas = [
     translations: {
       ru: {
         name: "Дворец Великих герцогов в Люксембурге",
-        location: "Город Люксембург, Люксембург",
+        location: "Люксембург (квартал Ville Haute), Люксембург",
         officialSite: [
           { bold: "Официальный сайт", link: "https://monarchie.lu/fr?utm_source=chatgpt.com" }
         ],
@@ -1636,7 +1642,7 @@ const datas = [
       },
       ua: {
         name: "Палац Великого герцога в Люксембурзі",
-        location: "Місто Люксембург, Люксембург",
+        location: "Люксембург (квартал Ville Haute), Люксембург",
         officialSite: [
           { bold: "Офіційний сайт", link: "https://monarchie.lu/fr?utm_source=chatgpt.com" }
         ],
@@ -1694,7 +1700,7 @@ const datas = [
       },
       de: {
         name: "Großherzoglicher Palast in Luxemburg",
-        location: "Stadt Luxemburg, Luxemburg",
+        location: "Luxemburg (Viertel Ville Haute), Luxemburg",
         officialSite: [
           { bold: "Offizielle Website", link: "https://monarchie.lu/fr?utm_source=chatgpt.com" }
         ],
@@ -1748,6 +1754,149 @@ const datas = [
           ogDescription: "Historische Residenz der Großherzöge Luxemburgs mit prachtvollen Sälen, Renaissance-Architektur und jahrhundertelanger Geschichte.",
           keywords: "Großherzoglicher Palast, Palais grand-ducal, Luxemburg, Palast Luxemburg, Großherzog von Luxemburg, Sehenswürdigkeiten Luxemburg, Residenz des Herzogs, Renaissance-Palast, Altstadt Luxemburg, Architektur Luxemburg, Europa Palast",
           ogImage: "https://our-travels.info/foto/Luxembourg/luxembourg_canton/luxembourg_city/old_town/grand_ducal_palace/001.jpg"
+        }
+      }
+    }
+  },
+  {
+    id: "hammelsmarsch_luxembourg",
+    type: ["monument_or_fountain"], rating: "popular",
+    path: "hammelsmarsch_luxembourg",
+    countryPath: "luxembourg", regionPath: "luxembourg_canton", districtPath: "city", cityPath: "luxembourg_city",
+    hiddenFromList: true, showMore: true,
+    fotoCard: "Luxembourg/luxembourg_canton/luxembourg_city/old_town/hammelsmarsch/001.jpg",
+    coord: { lat: 49.61187634688446, lng: 6.131175421182861 },
+    translations: {
+      ru: {
+        name: "Фонтан «Хэммельсмарш»",
+        location: "Люксембург (квартал Ville Haute), Люксембург",
+        short_description: "Бронзовый фонтан «Хэммельсмарш» в центре Люксембурга, изображающий традиционное шествие музыкантов и овец, связанное с ярмаркой Schueberfouer.",
+        full_description: {
+          title: "Описание и история",
+          items: [
+            { bold: "Фонтан «Хэммельсмарш»", text: "расположен в историческом центре Люксембурга на площади Roude Pëtz рядом с Grand-Rue. Он посвящён городской традиции Hämmelsmarsch – музыкальному шествию, которое сопровождало овец и приглашало жителей на ярмарку Schueberfouer." },
+            { text: "Скульптура изображает динамичную сцену с музыкальным ансамблем из четырёх исполнителей, играющих на аккордеоне, барабане и духовых инструментах. Рядом с ними показаны овцы и двое детей, наблюдающих за процессией." },
+            { text: "Композиция выполнена в бронзе и дополнена элементами фонтана: вода проходит через отдельные части скульптуры, создавая эффект движения и оживляя сцену." },
+            { text: "Особенностью работы является её авторская детализация и юмор. Скульптор Вил Лофи включил в композицию автопортрет, интегрировав его в образ одного из музыкантов." },
+            { bold: "История", text: "Традиция Hämmelsmarsch возникла в XIX веке и была связана с сельскими праздниками и городскими ярмарками. Музыканты сопровождали шествия овец, привлекая жителей к торговым событиям, что со временем стало частью культурной идентичности Люксембурга." },
+            { text: "Фонтан был создан в 1981–1982 годах скульптором Виллом Лофи и открыт 21 августа 1982 года во время празднования Schueberfouer. Он стал художественным символом сохранения этой традиции в городской среде." },
+            { text: "Сегодня фонтан считается важной частью культурного наследия Люксембурга и одной из узнаваемых городских скульптур в центре столицы." }
+          ]
+        },
+        tickets_and_entry: {
+          title: "Практическая информация",
+          items: [
+            { bold: "Адрес:", text: "Grand-Rue / Roude Pëtz, Luxembourg City" }
+          ]
+        },
+        interestingFacts: {
+          title: "Интересные факты",
+          isList: true,
+          items: [
+            { text: "Автор добавил в композицию самопортрет в образе музыканта." },
+            { text: "Вода проходит прямо через скульптуру, включая музыкальные инструменты." },
+            { text: "Сцена связана с открытием крупнейшей ярмарки Люксембурга – Schueberfouer." },
+            { text: "Фонтан установлен прямо на месте исторической городской площади Roude Pëtz." },
+            { text: "Скульптура была полностью отреставрирована и возвращена в 2024 году." }
+          ]
+        },
+        construction_period: "1981–1982",
+        architects: "Вилл Лофи (Wil Lofy), скульптор",
+        meta: {
+          title: "Фонтан «Hämmelsmarsch» в Люксембурге – бронзовая скульптура в Ville Haute",
+          description: "Бронзовый фонтан «Hämmelsmarsch» в историческом центре Люксембурга (Ville Haute), изображающий традиционное шествие музыкантов и овец, связанное с ярмаркой Schueberfouer.",
+          ogTitle: "Фонтан «Hämmelsmarsch» в Люксембурге",
+          ogDescription: "Бронзовый фонтан в центре Люксембурга, изображающий традиционное шествие музыкантов и овец – часть старинной ярмарочной культуры Schueberfouer.",
+          keywords: "Hämmelsmarsch, фонтан Люксембург, Ville Haute, Grand-Rue, Roude Pëtz, достопримечательности Люксембурга, бронзовая скульптура, Schueberfouer, городские фонтаны Люксембург, Овечий марш, Фонтан «Хэммельсмарш», Шуберфоер",
+          ogImage: "https://our-travels.info/foto/Luxembourg/luxembourg_canton/luxembourg_city/old_town/hammelsmarsch/001.jpg"
+        }
+      },
+      ua: {
+        name: "Фонтан «Хеммельсмарш»",
+        location: "Люксембург (квартал Ville Haute), Люксембург",
+        short_description: "Бронзовий фонтан «Хеммельсмарш» у центрі Люксембургу, що зображає традиційну процесію музикантів і овець, пов’язану з ярмарком Schueberfouer.",
+        full_description: {
+          title: "Опис і історія",
+          items: [
+            { bold: "Фонтан «Хеммельсмарш»", text: "розташований в історичному центрі Люксембургу на площі Roude Pëtz поруч із Grand-Rue. Він присвячений міській традиції Hämmelsmarsch – музичній процесії, яка супроводжувала овець і запрошувала мешканців на ярмарок Schueberfouer." },
+            { text: "Скульптура зображає динамічну сцену з музичним ансамблем із чотирьох виконавців, які грають на акордеоні, барабані та духових інструментах. Поруч із ними показані вівці та двоє дітей, які спостерігають за процесією." },
+            { text: "Композиція виконана з бронзи та доповнена елементами фонтану: вода проходить через окремі частини скульптури, створюючи ефект руху та оживляючи сцену." },
+            { text: "Особливістю роботи є її авторська деталізація та гумор. Скульптор Віл Лофі включив до композиції автопортрет, інтегрувавши його в образ одного з музикантів." },
+            { bold: "Історія", text: "Традиція Hämmelsmarsch виникла у XIX столітті та була пов’язана із сільськими святами та міськими ярмарками. Музиканти супроводжували процесії овець, залучаючи мешканців до торгових подій, що з часом стало частиною культурної ідентичності Люксембургу." },
+            { text: "Фонтан був створений у 1981–1982 роках скульптором Віллом Лофі та відкритий 21 серпня 1982 року під час святкування Schueberfouer. Він став художнім символом збереження цієї традиції в міському середовищі." },
+            { text: "Сьогодні фонтан вважається важливою частиною культурної спадщини Люксембургу та однією з упізнаваних міських скульптур у центрі столиці." }
+          ]
+        },
+        tickets_and_entry: {
+          title: "Практична інформація",
+          items: [
+            { bold: "Адреса:", text: "Grand-Rue / Roude Pëtz, Luxembourg City" }
+          ]
+        },
+        interestingFacts: {
+          title: "Цікаві факти",
+          isList: true,
+          items: [
+            { text: "Автор додав до композиції автопортрет у вигляді музиканта." },
+            { text: "Вода проходить безпосередньо через скульптуру, включаючи музичні інструменти." },
+            { text: "Сцена пов’язана з відкриттям найбільшого ярмарку Люксембургу – Schueberfouer." },
+            { text: "Фонтан встановлено безпосередньо на місці історичної міської площі Roude Pëtz." },
+            { text: "Скульптура була повністю відреставрована та повернута у 2024 році." }
+          ]
+        },
+        construction_period: "1981–1982",
+        architects: "Віл Лофі (Wil Lofy), скульптор",
+        meta: {
+          title: "Фонтан «Hämmelsmarsch» у Люксембурзі – бронзова скульптура у Ville Haute",
+          description: "Бронзовий фонтан «Hämmelsmarsch» в історичному центрі Люксембургу (Ville Haute), що зображає традиційну процесію музикантів і овець, пов’язану з ярмарком Schueberfouer.",
+          ogTitle: "Фонтан «Hämmelsmarsch» у Люксембурзі",
+          ogDescription: "Бронзовий фонтан у центрі Люксембургу, що зображає традиційну процесію музикантів і овець – частину старовинної ярмаркової культури Schueberfouer.",
+          keywords: "Hämmelsmarsch, фонтан Люксембург, Ville Haute, Grand-Rue, Roude Pëtz, пам’ятки Люксембургу, бронзова скульптура, Schueberfouer, міські фонтани Люксембург, Овечий марш, Хеммельсмарш, Шуберфоер",
+          ogImage: "https://our-travels.info/foto/Luxembourg/luxembourg_canton/luxembourg_city/old_town/hammelsmarsch/001.jpg"
+        }
+      },
+      de: {
+        name: "Brunnen «Hämmelsmarsch»",
+        location: "Luxemburg (Viertel Ville Haute), Luxemburg",
+        short_description: "Der bronzene Brunnen «Hämmelsmarsch» im Zentrum von Luxemburg stellt eine traditionelle Prozession von Musikern und Schafen dar, die mit der Schueberfouer verbunden ist.",
+        full_description: {
+          title: "Beschreibung und Geschichte",
+          items: [
+            { bold: "Brunnen «Hämmelsmarsch»", text: "befindet sich im historischen Zentrum von Luxemburg auf dem Platz Roude Pëtz in der Nähe der Grand-Rue. Er ist der städtischen Tradition Hämmelsmarsch gewidmet – einer musikalischen Prozession, die Schafe begleitete und die Bewohner zur Schueberfouer einlud." },
+            { text: "Die Skulptur zeigt eine dynamische Szene mit einem Musikensemble aus vier Darstellern, die Akkordeon, Trommel und Blasinstrumente spielen. Neben ihnen sind Schafe und zwei Kinder dargestellt, die der Prozession zuschauen." },
+            { text: "Die Komposition ist aus Bronze gefertigt und durch Elemente eines Brunnens ergänzt: Wasser fließt durch einzelne Teile der Skulptur und erzeugt einen lebendigen Bewegungseffekt." },
+            { text: "Besonders charakteristisch sind die Detailtreue und der Humor des Künstlers. Der Bildhauer Will Lofy integrierte ein Selbstporträt in die Figur eines der Musiker." },
+            { bold: "Geschichte", text: "Die Tradition Hämmelsmarsch entstand im 19. Jahrhundert im Zusammenhang mit ländlichen Festen und städtischen Jahrmärkten. Musiker begleiteten Schafprozessionen und luden die Bevölkerung zu Handelsveranstaltungen ein, was später Teil der kulturellen Identität Luxemburgs wurde." },
+            { text: "Der Brunnen wurde 1981–1982 vom Bildhauer Will Lofy geschaffen und am 21. August 1982 während der Schueberfouer eröffnet. Er wurde zu einem künstlerischen Symbol der Bewahrung dieser Tradition im städtischen Raum." },
+            { text: "Heute gilt der Brunnen als wichtiger Bestandteil des kulturellen Erbes von Luxemburg und als eine der bekannten städtischen Skulpturen im Zentrum der Hauptstadt." }
+          ]
+        },
+        tickets_and_entry: {
+          title: "Praktische Informationen",
+          items: [
+            { bold: "Adresse:", text: "Grand-Rue / Roude Pëtz, Luxembourg City" }
+          ]
+        },
+        interestingFacts: {
+          title: "Interessante Fakten",
+          isList: true,
+          items: [
+            { text: "Der Künstler fügte ein Selbstporträt in Form eines Musikers in die Komposition ein." },
+            { text: "Wasser fließt direkt durch die Skulptur, einschließlich der Musikinstrumente." },
+            { text: "Die Szene ist mit der Eröffnung des größten Jahrmarkts Luxemburgs – der Schueberfouer – verbunden." },
+            { text: "Der Brunnen steht direkt auf dem historischen Platz Roude Pëtz." },
+            { text: "Die Skulptur wurde 2024 vollständig restauriert und wieder aufgestellt." }
+          ]
+        },
+        construction_period: "1981–1982",
+        architects: "Will Lofy, Bildhauer",
+        meta: {
+          title: "Brunnen «Hämmelsmarsch» in Luxemburg – Bronzeskulptur in Ville Haute",
+          description: "Bronzener Brunnen «Hämmelsmarsch» im historischen Zentrum von Luxemburg (Ville Haute), der eine traditionelle Prozession von Musikern und Schafen im Zusammenhang mit der Schueberfouer darstellt.",
+          ogTitle: "Brunnen «Hämmelsmarsch» in Luxemburg",
+          ogDescription: "Bronzener Brunnen im Zentrum von Luxemburg, der eine traditionelle Prozession von Musikern und Schafen darstellt – Teil der alten Jahrmarktskultur der Schueberfouer.",
+          keywords: "Hämmelsmarsch, Brunnen Luxemburg, Ville Haute, Grand-Rue, Roude Pëtz, Sehenswürdigkeiten Luxemburg, Bronzeskulptur, Schueberfouer, Stadtbrunnen Luxemburg, Schafprozession, Hämmelsmarsch Brunnen",
+          ogImage: "https://our-travels.info/foto/Luxembourg/luxembourg_canton/luxembourg_city/old_town/hammelsmarsch/001.jpg"
         }
       }
     }
