@@ -214,6 +214,8 @@ export const Fotos = {
         { path: "Germany/nrw/koln/koln-city/altstadt/romanische_kirchen/gross_st_martin/002.jpg", title: { ru: "Большой Святой Мартин, 2025", ua: "Великий Святий Мартін, 2025", de: "Groß St. Martin, 2025" } },
         { path: "Germany/nrw/koln/koln-city/altstadt/romanische_kirchen/stMariaImKapitol/001.jpg", title: { ru: "Церковь Святой Марии в Капитолии (фото взято с интернета)", ua: "Церква Святої Марії у Капітолії (фото взято з Інтернету)", de: "Kirche St. Maria im Kapitol (Foto aus dem Internet)" } },
         { path: "Germany/nrw/koln/koln-city/altstadt/romanische_kirchen/st_gereon/001.jpg", title: { ru: "Церковь Святого Гереона (фото взято с интернета)", ua: "Церква Святого Герєона (фото взято з Інтернету)", de: "St. Gereon Kirche (Foto aus dem Internet)" } },
+        { path: "Germany/nrw/koln/koln-city/altstadt/romanische_kirchen/st_aposteln/001.jpg", title: { ru: "Церковь Святого Апостола (фото взято з интернета)", ua: "Церква Святого Апостола (фото взято з Інтернету)", de: "St. Aposteln (Foto aus dem Internet)" } },
+        { path: "Germany/nrw/koln/koln-city/altstadt/romanische_kirchen/st_kunibert/001.jpg", title: { ru: "Базиліка Святого Куніберта (фото взято з интернета)", ua: "Базиліка Святого Куніберта (фото взято з Інтернету)", de: "Basilika St. Kunibert (Foto aus dem Internet)" } }
       ],
       old_towers_koln: [
         { path: "Germany/nrw/koln/koln-city/altstadt/old_towers/001.jpg", title: { ru: "Западные ворота (Hahnentorburg), 2025", ua: "Західні ворота (Hahnentorburg), 2025", de: "Hahnentorburg, 2025" } },
@@ -270,6 +272,9 @@ export const Fotos = {
       ],
       fort_XI_outer_koln: [
         { path: "Germany/nrw/koln/koln-city/prussian_fortress_system/outer/011.jpg", title: { ru: "Форт XI (внешнее крепостное кольцо) (фото взято с интернета)", ua: "Форт XI (зовнішнє фортифікаційне кільце) (фото взято з Інтернету)", de: "Fort XI (äußerer Festungsring) (Foto aus dem Internet)" } },
+      ],
+      st_aposteln_koln: [
+        { path: "Germany/nrw/koln/koln-city/altstadt/romanische_kirchen/st_aposteln/001.jpg", title: { ru: "Церковь Святого Апостола (фото взято з интернета)", ua: "Церква Святого Апостола (фото взято з Інтернету)", de: "St. Aposteln (Foto aus dem Internet)" } }
       ],
     },
     bruhl: {
@@ -517,6 +522,9 @@ export const Fotos = {
 
     // округ Арнсберг
     dortmund: {
+      gallery: [
+        { path: "Germany/nrw/arnsberg/dortmund/001.jpg", title: { ru: "Дортмунд (фото взято с интернета)", ua: "Дортмунд (фото взято з Інтернету)", de: "Dortmund (Foto aus dem Internet)" } },
+      ],
       westfalenpark: [
         { path: "Germany/nrw/arnsberg/dortmund/westfalenpark/001.jpg", title: { ru: "Вестфаленпарк, 2023", ua: "Вестфаленпарк, 2023", de: "Westfalenpark, 2023" } },
         { path: "Germany/nrw/arnsberg/dortmund/westfalenpark/002.jpg", title: { ru: "Вестфаленпарк, 2023", ua: "Вестфаленпарк, 2023", de: "Westfalenpark, 2023" } },

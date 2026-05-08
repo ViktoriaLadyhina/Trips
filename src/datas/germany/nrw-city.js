@@ -15,24 +15,25 @@ const datas = [
                         { text: 'Кёльн – крупнейший город земли Северный Рейн-Вестфалия и четвёртый по численности город Германии.' },
                         { text: 'Кёльн является важнейшим экономическим, культурным и транспортным центром Германии: здесь находится крупнейший внутренний порт Европы, а также важнейший железнодорожный и автомобильный узел.' }
                     ],
-                    population: [
-                        { bold: 'Население:' },
-                        { text: ' примерно 1 013 684 человек (2025)' }
-                    ],
-                    area: [
-                        { bold: 'Площадь:' },
-                        { text: ' около 405 км²' }
-                    ],
-                    postalCode: [
-                        { bold: 'Почтовый индекс:' },
-                        { text: ' 50667–51149' }
-                    ],
-                    phone: [
-                        { bold: 'Телефонный код:' },
-                        { text: ' +49 0221' }
-                    ],
-                    officialSite: [
-                        { bold: 'Официальный сайт Кельна', link: 'https://www.stadt-koeln.de/' }
+                    population: [{ bold: 'Население:', text: ' примерно 1 013 684 человек (2025)' }],
+                    area: [{ bold: 'Площадь:', text: ' около 405 км²' }],
+                    postalCode: [{ bold: 'Почтовый индекс:', text: ' 50667–51149' }],
+                    phone: [{ bold: 'Телефонный код:', text: ' +49 0221' }],
+                    officialSite: [{ bold: 'Официальный сайт Кельна', link: 'https://www.stadt-koeln.de/' }]
+                },
+                admin: {
+                    title: 'Кёльн разделён на 9 административных округов (Stadtbezirke) и 86 районов (Stadtteile). Основные округа города:',
+                    isList: true,
+                    items: [
+                        { bold: 'Innenstadt', text: '– центральный округ Кёльна. Здесь расположены Кёльнский собор, главные музеи, торговые улицы и исторический центр города (включает районы: Altstadt-Nord, Altstadt-Süd, Neustadt-Nord, Neustadt-Süd, Deutz)' },
+                        { bold: 'Rodenkirchen', text: '– южный округ Кёльна с жилыми кварталами, зелёными зонами и районами вдоль Рейна (включает районы: Bayenthal, Marienburg, Raderberg, Raderthal, Zollstock, Rondorf, Hahnwald, Rodenkirchen, Weiß, Sürth, Godorf, Immendorf, Meschenich)' },
+                        { bold: 'Lindenthal', text: '– западный округ с университетскими районами, парками и престижной жилой застройкой (включает районы: Klettenberg, Sülz, Lindenthal, Braunsfeld, Müngersdorf, Junkersdorf, Weiden, Lövenich, Widdersdorf)' },
+                        { bold: 'Ehrenfeld', text: '– один из самых известных современных округов Кёльна, известный творческой атмосферой, барами, галереями и культурными пространствами (включает районы: Ehrenfeld, Neuehrenfeld, Bickendorf, Vogelsang, Bocklemünd/Mengenich, Ossendorf)' },
+                        { bold: 'Nippes', text: '– северный жилой округ с традиционными кварталами, рынками и локальной городской атмосферой (включает районы: Nippes, Mauenheim, Riehl, Niehl, Weidenpesch, Longerich, Bilderstöckchen)' },
+                        { bold: 'Chorweiler', text: '– северный округ с крупными жилыми массивами, современными кварталами и пригородными территориями (включает районы: Merkenich, Fühlingen, Seeberg, Heimersdorf, Lindweiler, Pesch, Esch/Auweiler, Volkhoven/Weiler, Chorweiler, Roggendorf/Thenhoven, Blumenberg)' },
+                        { bold: 'Porz', text: '– крупнейший округ Кёльна, расположенный на правом берегу Рейна. Включает жилые районы, природные зоны и территорию аэропорта Кёльн/Бонн (включает районы: Poll, Westhoven, Ensen, Gremberghoven, Eil, Porz, Urbach, Elsdorf, Grengel, Wahnheide, Wahn, Lind, Libur, Zündorf, Langel)' },
+                        { bold: 'Kalk', text: '– восточный округ с промышленным прошлым, жилыми кварталами и активным городским развитием (включает районы: Humboldt/Gremberg, Kalk, Vingst, Höhenberg, Ostheim, Merheim, Brück, Neubrück, Rath/Heumar)' },
+                        { bold: 'Mülheim', text: '– крупный округ на правом берегу Рейна, сочетающий исторические районы, современные жилые зоны и промышленные территории (включает районы: Mülheim, Buchforst, Buchheim, Holweide, Dellbrück, Höhenhaus, Dünnwald, Stammheim, Flittard)' },
                     ]
                 },
                 geography: {
@@ -48,6 +49,7 @@ const datas = [
                 },
                 notablePeople: {
                     title: 'Знаменитые люди Кёльна',
+                    isList: true,
                     items: [
                         { bold: 'Конрад Аденауэр', text: ' – первый канцлер ФРГ, в 1917–1933 годах занимал пост обербюргермайстера Кёльна.' },
                         { bold: 'Николаус Август Отто', text: ' – инженер, изобретатель первого двигателя внутреннего сгорания (1874), сооснователь завода Kloeckner Humboldt Deutz AG.' },
@@ -61,6 +63,7 @@ const datas = [
                 },
                 interestingFacts: {
                     title: 'Интересные факты',
+                    isList: true,
                     items: [
                         { text: 'Кёльнский собор – один из крупнейших готических соборов Европы, с башнями, видимыми почти из любой части города.' },
                         { text: 'Кёльнский карнавал – крупнейший в Германии и один из самых ярких в Европе.' },
@@ -93,7 +96,7 @@ const datas = [
                     description: "Кёльн: история, география, достопримечательности, знаменитые жители и интересные факты о крупнейшем городе Северного Рейна-Вестфалии.",
                     ogTitle: "Кёльн – информация о городе",
                     ogDescription: "Подробная информация о Кёльне: культура, история, знаменитые жители и интересные факты.",
-                    ogImage: "https://our-travels.info/foto/Germany/nrw/koln/koln-city/koln-cathedral/001.jpg"
+                    ogImage: "https://our-travels.info/foto/Germany/nrw/koln/koln-city/001.jpg"
                 }
             },
             ua: {
@@ -123,6 +126,21 @@ const datas = [
                         { bold: 'Офіційний сайт Кельна', link: 'https://www.stadt-koeln.de/' }
                     ]
                 },
+                admin: {
+                    title: 'Кельн поділяється на 9 адміністративних округів (Stadtbezirke) та 86 районів (Stadtteile). Основні округи міста:',
+                    isList: true,
+                    items: [
+                        { bold: 'Innenstadt', text: '– центральний округ Кельна. Тут розташовані Кельнський собор, головні музеї, торгові вулиці та історичний центр міста (включає райони: Altstadt-Nord, Altstadt-Süd, Neustadt-Nord, Neustadt-Süd, Deutz)' },
+                        { bold: 'Rodenkirchen', text: '– південний округ Кельна з житловими кварталами, зеленими зонами та районами вздовж Рейну (включає райони: Bayenthal, Marienburg, Raderberg, Raderthal, Zollstock, Rondorf, Hahnwald, Rodenkirchen, Weiß, Sürth, Godorf, Immendorf, Meschenich)' },
+                        { bold: 'Lindenthal', text: '– західний округ з університетськими районами, парками та престижною житловою забудовою (включає райони: Klettenberg, Sülz, Lindenthal, Braunsfeld, Müngersdorf, Junkersdorf, Weiden, Lövenich, Widdersdorf)' },
+                        { bold: 'Ehrenfeld', text: '– один із найвідоміших сучасних округів Кельна, відомий творчою атмосферою, барами, галереями та культурними просторами (включає райони: Ehrenfeld, Neuehrenfeld, Bickendorf, Vogelsang, Bocklemünd/Mengenich, Ossendorf)' },
+                        { bold: 'Nippes', text: '– північний житловий округ із традиційними кварталами, ринками та локальною міською атмосферою (включає райони: Nippes, Mauenheim, Riehl, Niehl, Weidenpesch, Longerich, Bilderstöckchen)' },
+                        { bold: 'Chorweiler', text: '– північний округ із великими житловими масивами, сучасними кварталами та приміськими територіями (включає райони: Merkenich, Fühlingen, Seeberg, Heimersdorf, Lindweiler, Pesch, Esch/Auweiler, Volkhoven/Weiler, Chorweiler, Roggendorf/Thenhoven, Blumenberg)' },
+                        { bold: 'Porz', text: '– найбільший округ Кельна, розташований на правому березі Рейну. Включає житлові райони, природні зони та територію аеропорту Кельн/Бонн (включає райони: Poll, Westhoven, Ensen, Gremberghoven, Eil, Porz, Urbach, Elsdorf, Grengel, Wahnheide, Wahn, Lind, Libur, Zündorf, Langel)' },
+                        { bold: 'Kalk', text: '– східний округ із промисловим минулим, житловими кварталами та активним міським розвитком (включає райони: Humboldt/Gremberg, Kalk, Vingst, Höhenberg, Ostheim, Merheim, Brück, Neubrück, Rath/Heumar)' },
+                        { bold: 'Mülheim', text: '– великий округ на правому березі Рейну, який поєднує історичні райони, сучасні житлові зони та промислові території (включає райони: Mülheim, Buchforst, Buchheim, Holweide, Dellbrück, Höhenhaus, Dünnwald, Stammheim, Flittard)' },
+                    ]
+                },
                 geography: {
                     title: 'Географія',
                     items: [
@@ -136,6 +154,7 @@ const datas = [
                 },
                 notablePeople: {
                     title: 'Відомі люди Кельна',
+                    isList: true,
                     items: [
                         { bold: 'Конрад Аденауер', text: ' – перший канцлер ФРН, у 1917–1933 роках обіймав посаду обер-бургомістра Кельна.' },
                         { bold: 'Ніколаус Август Отто', text: ' – інженер, винахідник першого двигуна внутрішнього згоряння (1874), співзасновник заводу Kloeckner Humboldt Deutz AG.' },
@@ -149,6 +168,7 @@ const datas = [
                 },
                 interestingFacts: {
                     title: 'Цікаві факти',
+                    isList: true,
                     items: [
                         { text: 'Кельнський собор – один із найбільших готичних соборів Європи, із вежами, видимими майже з будь-якої частини міста.' },
                         { text: 'Кельнський карнавал – найбільший у Німеччині та один із найяскравіших у Європі.' },
@@ -181,7 +201,7 @@ const datas = [
                     description: "Кельн: історія, географія, пам’ятки, відомі жителі та цікаві факти про найбільше місто Північного Рейну-Вестфалії.",
                     ogTitle: "Кельн – інформація про місто",
                     ogDescription: "Докладна інформація про Кельн: культура, історія, відомі жителі та цікаві факти.",
-                    ogImage: "https://our-travels.info/foto/Germany/nrw/koln/koln-city/koln-cathedral/001.jpg"
+                    ogImage: "https://our-travels.info/foto/Germany/nrw/koln/koln-city/001.jpg"
                 }
             },
             de: {
@@ -211,6 +231,21 @@ const datas = [
                         { bold: 'Offizielle Website von Köln', link: 'https://www.stadt-koeln.de/' }
                     ]
                 },
+                admin: {
+                    title: 'Köln ist in 9 Stadtbezirke und 86 Stadtteile gegliedert. Die wichtigsten Stadtbezirke der Stadt:',
+                    isList: true,
+                    items: [
+                        { bold: 'Innenstadt', text: '– der zentrale Stadtbezirk von Köln. Hier befinden sich der Kölner Dom, die wichtigsten Museen, Einkaufsstraßen und das historische Zentrum der Stadt (enthält die Stadtteile: Altstadt-Nord, Altstadt-Süd, Neustadt-Nord, Neustadt-Süd, Deutz)' },
+                        { bold: 'Rodenkirchen', text: '– der südliche Stadtbezirk von Köln mit Wohnvierteln, Grünflächen und Stadtteilen entlang des Rheins (enthält die Stadtteile: Bayenthal, Marienburg, Raderberg, Raderthal, Zollstock, Rondorf, Hahnwald, Rodenkirchen, Weiß, Sürth, Godorf, Immendorf, Meschenich)' },
+                        { bold: 'Lindenthal', text: '– ein westlicher Stadtbezirk mit Universitätsvierteln, Parks und gehobener Wohnbebauung (enthält die Stadtteile: Klettenberg, Sülz, Lindenthal, Braunsfeld, Müngersdorf, Junkersdorf, Weiden, Lövenich, Widdersdorf)' },
+                        { bold: 'Ehrenfeld', text: '– einer der bekanntesten modernen Stadtbezirke Kölns mit kreativer Atmosphäre, Bars, Galerien und kulturellen Einrichtungen (enthält die Stadtteile: Ehrenfeld, Neuehrenfeld, Bickendorf, Vogelsang, Bocklemünd/Mengenich, Ossendorf)' },
+                        { bold: 'Nippes', text: '– ein nördlicher Wohnbezirk mit traditionellen Vierteln, Märkten und lokaler urbaner Atmosphäre (enthält die Stadtteile: Nippes, Mauenheim, Riehl, Niehl, Weidenpesch, Longerich, Bilderstöckchen)' },
+                        { bold: 'Chorweiler', text: '– ein nördlicher Stadtbezirk mit großen Wohnsiedlungen, modernen Quartieren und Vorstadtgebieten (enthält die Stadtteile: Merkenich, Fühlingen, Seeberg, Heimersdorf, Lindweiler, Pesch, Esch/Auweiler, Volkhoven/Weiler, Chorweiler, Roggendorf/Thenhoven, Blumenberg)' },
+                        { bold: 'Porz', text: '– der größte Stadtbezirk Kölns auf der rechten Rheinseite. Er umfasst Wohngebiete, Naturflächen und das Gelände des Flughafens Köln/Bonn (enthält die Stadtteile: Poll, Westhoven, Ensen, Gremberghoven, Eil, Porz, Urbach, Elsdorf, Grengel, Wahnheide, Wahn, Lind, Libur, Zündorf, Langel)' },
+                        { bold: 'Kalk', text: '– ein östlicher Stadtbezirk mit industrieller Vergangenheit, Wohnvierteln und aktiver Stadtentwicklung (enthält die Stadtteile: Humboldt/Gremberg, Kalk, Vingst, Höhenberg, Ostheim, Merheim, Brück, Neubrück, Rath/Heumar)' },
+                        { bold: 'Mülheim', text: '– ein großer Stadtbezirk auf der rechten Rheinseite mit historischen Vierteln, modernen Wohngebieten und Industrieflächen (enthält die Stadtteile: Mülheim, Buchforst, Buchheim, Holweide, Dellbrück, Höhenhaus, Dünnwald, Stammheim, Flittard)' },
+                    ]
+                },
                 geography: {
                     title: 'Geographie',
                     items: [
@@ -224,6 +259,7 @@ const datas = [
                 },
                 notablePeople: {
                     title: 'Berühmte Persönlichkeiten aus Köln',
+                    isList: true,
                     items: [
                         { bold: 'Konrad Adenauer', text: ' – erster Bundeskanzler der BRD, von 1917–1933 Oberbürgermeister von Köln.' },
                         { bold: 'Nikolaus August Otto', text: ' – Ingenieur, Erfinder des ersten Verbrennungsmotors (1874), Mitbegründer der Fabrik Kloeckner Humboldt Deutz AG.' },
@@ -237,6 +273,7 @@ const datas = [
                 },
                 interestingFacts: {
                     title: 'Interessante Fakten',
+                    isList: true,
                     items: [
                         { text: 'Der Kölner Dom ist eine der größten gotischen Kathedralen Europas, mit Türmen, die fast aus jedem Stadtteil sichtbar sind.' },
                         { text: 'Der Kölner Karneval ist der größte in Deutschland und einer der buntesten in Europa.' },
@@ -269,7 +306,7 @@ const datas = [
                     description: "Köln: Geschichte, Geographie, Sehenswürdigkeiten, berühmte Persönlichkeiten und interessante Fakten der größten Stadt Nordrhein-Westfalens.",
                     ogTitle: "Köln – Stadtinformation",
                     ogDescription: "Detaillierte Informationen über Köln: Kultur, Geschichte, berühmte Einwohner und interessante Fakten.",
-                    ogImage: "https://our-travels.info/foto/Germany/nrw/koln/koln-city/koln-cathedral/001.jpg"
+                    ogImage: "https://our-travels.info/foto/Germany/nrw/koln/koln-city/001.jpg"
                 }
             }
         }
@@ -295,6 +332,24 @@ const datas = [
                     phone: [{ bold: 'Телефонный код:', text: ' +49 0231' }],
                     officialSite: [{ bold: 'Официальный сайт Дортмунда', link: 'https://www.dortmund.de/' }]
                 },
+                admin: {
+                    title: 'Дортмунд разделён на 12 административных округов (Stadtbezirke) и множество районов (Stadtteile). Основные округа города:',
+                    isList: true,
+                    items: [
+                        { bold: 'Innenstadt-Nord', text: '– северная часть центра Дортмунда с многонациональной атмосферой, старой промышленной застройкой и активной городской жизнью (включает районы: Hafen, Nordmarkt, Borsigplatz)' },
+                        { bold: 'Innenstadt-Ost', text: '– восточная часть центра города с жилыми кварталами, парками и культурными объектами (включает районы: Kaiserbrunnen, Gartenstadt, Körne)' },
+                        { bold: 'Innenstadt-West', text: '– западный центральный округ с торговыми улицами, университетскими объектами и современными жилыми районами (включает районы: Dorstfelder Brücke, Unionviertel, Kreuzviertel)' },
+                        { bold: 'Eving', text: '– северный округ с жилыми районами, зелёными зонами и бывшими промышленными территориями (включает районы: Eving, Brechten, Lindenhorst, Kemminghausen)' },
+                        { bold: 'Scharnhorst', text: '– северо-восточный округ с жилыми кварталами и пригородными территориями (включает районы: Scharnhorst, Husen, Kurl, Grevel)' },
+                        { bold: 'Brackel', text: '– восточный округ с семейными жилыми районами, спортивной инфраструктурой и хорошим транспортным сообщением (включает районы: Brackel, Wambel, Wickede, Asseln)' },
+                        { bold: 'Aplerbeck', text: '– юго-восточный округ с сочетанием городских и более спокойных жилых территорий (включает районы: Aplerbeck, Sölde, Schüren, Berghofen)' },
+                        { bold: 'Hörde', text: '– южный округ, известный озером Phoenix-See, современной застройкой и бывшими промышленными зонами (включает районы: Hörde, Höchsten, Benninghofen, Wellinghofen)' },
+                        { bold: 'Hombruch', text: '– юго-западный округ с университетскими объектами, зелёными районами и престижной жилой застройкой (включает районы: Hombruch, Barop, Kirchhörde, Löttringhausen)' },
+                        { bold: 'Lütgendortmund', text: '– западный округ с жилыми кварталами и пригородной атмосферой (включает районы: Lütgendortmund, Bövinghausen, Marten, Oespel)' },
+                        { bold: 'Huckarde', text: '– северо-западный округ с промышленным наследием и жилыми районами (включает районы: Huckarde, Kirchlinde, Deusen, Rahm)' },
+                        { bold: 'Mengede', text: '– самый северо-западный округ Дортмунда с зелёными зонами, каналами и пригородными территориями (включает районы: Mengede, Nette, Oestrich, Bodelschwingh)' },
+                    ]
+                },
                 geography: {
                     title: 'География',
                     items: [
@@ -307,6 +362,7 @@ const datas = [
                 },
                 notablePeople: {
                     title: 'Знаменитые люди Дортмунда',
+                    isList: true,
                     items: [
                         { bold: 'Райнхольд Шнайдер', text: ' – немецкий писатель и историк, родился в Дортмунде.' },
                         { bold: 'Нильс-Александер Сайдель', text: ' – немецкий актёр и телеведущий.' },
@@ -317,6 +373,7 @@ const datas = [
                 },
                 interestingFacts: {
                     title: 'Интересные факты',
+                    isList: true,
                     items: [
                         { text: 'Дортмунд – один из крупнейших футбольных центров Европы: здесь находится стадион Signal Iduna Park – крупнейший футбольный клубный стадион Германии и один из самых известных стадионов Европы.' },
                         { text: 'Футбольный клуб Borussia Dortmund является одним из самых известных и успешных клубов страны.' },
@@ -358,6 +415,24 @@ const datas = [
                     phone: [{ bold: 'Телефонний код:', text: ' +49 0231' }],
                     officialSite: [{ bold: 'Офіційний сайт Дортмунда', link: 'https://www.dortmund.de/' }]
                 },
+                admin: {
+                    title: 'Дортмунд поділений на 12 адміністративних округів (Stadtbezirke) та численні райони (Stadtteile). Основні округи міста:',
+                    isList: true,
+                    items: [
+                        { bold: 'Innenstadt-Nord', text: '– північна частина центру Дортмунда з багатонаціональною атмосферою, старою промисловою забудовою та активним міським життям (включає райони: Hafen, Nordmarkt, Borsigplatz)' },
+                        { bold: 'Innenstadt-Ost', text: '– східна частина центру міста з житловими кварталами, парками та культурними об’єктами (включає райони: Kaiserbrunnen, Gartenstadt, Körne)' },
+                        { bold: 'Innenstadt-West', text: '– західний центральний округ із торговими вулицями, університетськими об’єктами та сучасними житловими районами (включає райони: Dorstfelder Brücke, Unionviertel, Kreuzviertel)' },
+                        { bold: 'Eving', text: '– північний округ із житловими районами, зеленими зонами та колишніми промисловими територіями (включає райони: Eving, Brechten, Lindenhorst, Kemminghausen)' },
+                        { bold: 'Scharnhorst', text: '– північно-східний округ із житловими кварталами та приміськими територіями (включає райони: Scharnhorst, Husen, Kurl, Grevel)' },
+                        { bold: 'Brackel', text: '– східний округ із сімейними житловими районами, спортивною інфраструктурою та хорошим транспортним сполученням (включає райони: Brackel, Wambel, Wickede, Asseln)' },
+                        { bold: 'Aplerbeck', text: '– південно-східний округ із поєднанням міських та більш спокійних житлових територій (включає райони: Aplerbeck, Sölde, Schüren, Berghofen)' },
+                        { bold: 'Hörde', text: '– південний округ, відомий озером Phoenix-See, сучасною забудовою та колишніми промисловими зонами (включає райони: Hörde, Höchsten, Benninghofen, Wellinghofen)' },
+                        { bold: 'Hombruch', text: '– південно-західний округ з університетськими об’єктами, зеленими районами та престижною житловою забудовою (включає райони: Hombruch, Barop, Kirchhörde, Löttringhausen)' },
+                        { bold: 'Lütgendortmund', text: '– західний округ із житловими кварталами та приміською атмосферою (включає райони: Lütgendortmund, Bövinghausen, Marten, Oespel)' },
+                        { bold: 'Huckarde', text: '– північно-західний округ із промисловою спадщиною та житловими районами (включає райони: Huckarde, Kirchlinde, Deusen, Rahm)' },
+                        { bold: 'Mengede', text: '– найпівнічно-західніший округ Дортмунда із зеленими зонами, каналами та приміськими територіями (включає райони: Mengede, Nette, Oestrich, Bodelschwingh)' },
+                    ]
+                },
                 geography: {
                     title: 'Географія',
                     items: [
@@ -370,6 +445,7 @@ const datas = [
                 },
                 notablePeople: {
                     title: 'Відомі люди Дортмунда',
+                    isList: true,
                     items: [
                         { bold: 'Райнхольд Шнайдер', text: ' – німецький письменник і історик, народився у Дортмунді.' },
                         { bold: 'Нільс-Александер Зайдель', text: ' – німецький актор і телеведучий.' },
@@ -380,6 +456,7 @@ const datas = [
                 },
                 interestingFacts: {
                     title: 'Цікаві факти',
+                    isList: true,
                     items: [
                         { text: 'Дортмунд — один із найбільших футбольних центрів Європи: тут знаходиться стадіон Signal Iduna Park — найбільший клубний футбольний стадіон Німеччини та один із найвідоміших стадіонів Європи.' },
                         { text: 'Футбольний клуб Borussia Dortmund є одним із найвідоміших і найуспішніших клубів країни.' },
@@ -421,6 +498,24 @@ const datas = [
                     phone: [{ bold: 'Telefonvorwahl:', text: ' +49 0231' }],
                     officialSite: [{ bold: 'Offizielle Website von Dortmund', link: 'https://www.dortmund.de/' }]
                 },
+                admin: {
+                    title: 'Dortmund ist in 12 Stadtbezirke und zahlreiche Stadtteile gegliedert. Die wichtigsten Stadtbezirke sind:',
+                    isList: true,
+                    items: [
+                        { bold: 'Innenstadt-Nord', text: '– der nördliche Teil des Dortmunder Zentrums mit multikultureller Atmosphäre, alter Industriearchitektur und lebendigem Stadtleben (umfasst die Stadtteile: Hafen, Nordmarkt, Borsigplatz)' },
+                        { bold: 'Innenstadt-Ost', text: '– der östliche Teil des Stadtzentrums mit Wohnvierteln, Parks und kulturellen Einrichtungen (umfasst die Stadtteile: Kaiserbrunnen, Gartenstadt, Körne)' },
+                        { bold: 'Innenstadt-West', text: '– ein westlicher zentraler Bezirk mit Einkaufsstraßen, Universitätseinrichtungen und modernen Wohnvierteln (umfasst die Stadtteile: Dorstfelder Brücke, Unionviertel, Kreuzviertel)' },
+                        { bold: 'Eving', text: '– ein nördlicher Bezirk mit Wohngebieten, Grünflächen und ehemaligen Industriearealen (umfasst die Stadtteile: Eving, Brechten, Lindenhorst, Kemminghausen)' },
+                        { bold: 'Scharnhorst', text: '– ein nordöstlicher Bezirk mit Wohnvierteln und Vorstadtgebieten (umfasst die Stadtteile: Scharnhorst, Husen, Kurl, Grevel)' },
+                        { bold: 'Brackel', text: '– ein östlicher Bezirk mit familienfreundlichen Wohngebieten, Sportinfrastruktur und guter Verkehrsanbindung (umfasst die Stadtteile: Brackel, Wambel, Wickede, Asseln)' },
+                        { bold: 'Aplerbeck', text: '– ein südöstlicher Bezirk mit einer Mischung aus städtischen und ruhigeren Wohngebieten (umfasst die Stadtteile: Aplerbeck, Sölde, Schüren, Berghofen)' },
+                        { bold: 'Hörde', text: '– ein südlicher Bezirk, bekannt für den Phoenix-See, moderne Bebauung und ehemalige Industrieflächen (umfasst die Stadtteile: Hörde, Höchsten, Benninghofen, Wellinghofen)' },
+                        { bold: 'Hombruch', text: '– ein südwestlicher Bezirk mit Universitätseinrichtungen, grünen Wohngebieten und gehobener Bebauung (umfasst die Stadtteile: Hombruch, Barop, Kirchhörde, Löttringhausen)' },
+                        { bold: 'Lütgendortmund', text: '– ein westlicher Bezirk mit Wohnvierteln und vorstädtischer Atmosphäre (umfasst die Stadtteile: Lütgendortmund, Bövinghausen, Marten, Oespel)' },
+                        { bold: 'Huckarde', text: '– ein nordwestlicher Bezirk mit industriellem Erbe und Wohngebieten (umfasst die Stadtteile: Huckarde, Kirchlinde, Deusen, Rahm)' },
+                        { bold: 'Mengede', text: '– der nordwestlichste Bezirk Dortmunds mit Grünflächen, Kanälen und Vorstadtgebieten (umfasst die Stadtteile: Mengede, Nette, Oestrich, Bodelschwingh)' },
+                    ]
+                },
                 geography: {
                     title: 'Geografie',
                     items: [
@@ -433,6 +528,7 @@ const datas = [
                 },
                 notablePeople: {
                     title: 'Bekannte Persönlichkeiten aus Dortmund',
+                    isList: true,
                     items: [
                         { bold: 'Reinhold Schneider', text: ' – deutscher Schriftsteller und Historiker, wurde in Dortmund geboren.' },
                         { bold: 'Nils-Alexander Seidel', text: ' – deutscher Schauspieler und Fernsehmoderator.' },
@@ -443,6 +539,7 @@ const datas = [
                 },
                 interestingFacts: {
                     title: 'Interessante Fakten',
+                    isList: true,
                     items: [
                         { text: 'Dortmund ist eines der größten Fußballzentren Europas: Hier befindet sich das Stadion Signal Iduna Park – das größte Vereinsfußballstadion Deutschlands und eines der bekanntesten Stadien Europas.' },
                         { text: 'Der Fußballverein Borussia Dortmund gehört zu den bekanntesten und erfolgreichsten Vereinen des Landes.' },
@@ -497,7 +594,6 @@ const datas = [
                     area: [
                         { bold: 'Площадь:' },
                         { text: ' муниципалитета составляет около 86,7 км². Из площади значительная доля занята парко-лесными территориями и зелёными зонами; далее по объёму следуют сельскохозяйственные угодья, застроенные территории, дороги, водная поверхность и прочие земли.' },
-                        { text: ' Город разделён на 16 статистических районов, вот самые крупные их них: Lüdenscheid-Zentrum (Innenstadt) – центральная часть города, где расположены основные административные здания, торговые улицы и вокзал. Здесь также находятся ключевые городские учреждения и культурные объекты. Brügge – исторически сформированный район на северо-западе города с отдельной локальной структурой. Gevelndorf – жилой район в северной части Люденшайда. Buckesfeld – крупный современный жилой район с плотной застройкой. Honsel / Oeneking – северо-восточная часть города, сочетающая жилые зоны и промышленные территории. Wehberg – восточный район с преимущественно жилой застройкой. Rathmecke / Dickenberg – более периферийные районы с жилыми кварталами и природным окружением. Wettringhof – южная часть города, расположенная ближе к зелёным зонам и природным территориям. Eveking – небольшой район на юго-востоке Люденшайда.' }
                     ],
                     postalCode: [{ bold: 'Почтовые индексы:', text: ' 58507–58515' }],
                     phone: [{ bold: 'Телефонный код:', text: ' +49 02351' }],
@@ -516,8 +612,25 @@ const datas = [
                         { bold: 'Геология и древность пород.', text: 'Грунты в регионе имеют девонское происхождение (поздний палеозой, порядка сотен миллионов лет): на выходах пород находят окаменелости морских организмов (раковины, морские лилии), что согласуется с геологическими сведениями о том, что в разные геологические периоды эта территория была морским дном и позднее поднялась вследствие тектонических/вулканических процессов. Ландшафт современного рельефа сформировался в ходе длительных геологических процессов, в том числе в результате ледниковых/постледниковых изменений. ' },
                     ]
                 },
+                admin: {
+                    title: 'Город разделён на 16 статистических районов, вот самые крупные их них:',
+                    isList: true,
+                    items: [
+                        { bold: 'Lüdenscheid-Zentrum (Innenstadt) ', text: '– центральная часть города, где расположены основные административные здания, торговые улицы и вокзал' },
+                        { bold: 'Brügge', text: '– исторически сформированный район на северо-западе города с отдельной локальной структурой.' },
+                        { bold: 'Gevelndorf', text: '– жилой район в северной части Люденшайда.' },
+                        { bold: 'Buckesfeld', text: '– крупный современный жилой район с плотной застройкой.' },
+                        { bold: 'Honsel / Oeneking', text: '– северо-восточная часть города, сочетающая жилые зоны и промышленные территории.' },
+                        { bold: 'Wehberg', text: '– восточный район с преимущественно жилой застройкой.' },
+                        { bold: 'Rathmecke / Dickenberg', text: '– более периферийные районы с жилыми кварталами и природным окружением.' },
+                        { bold: 'Wettringhof', text: '– южная часть города, расположенная ближе к зелёным зонам и природным территориям.' },
+                        { bold: 'Eveking', text: '– небольшой район на юго-востоке Люденшайда.' },
+
+                    ]
+                },
                 notablePeople: {
                     title: 'Знаменитые люди Люденшайда',
+                    isList: true,
                     items: [
                         { bold: 'Марианна Розенберг (Marianne Rosenberg, род. 1955)', text: ' – немецкая певица, автор песен и икона поп- и шлягер-сцены 1970–2000-х годов. Родилась в Люденшайде. Известна хитами „Er gehört zu mir“, „Marleen“ и другими.' },
                         { bold: 'Петер Швайцер (Peter Schweitzer, род. 1942)', text: ' – немецкий промышленник, связанный с развитием светотехнической индустрии в регионе, один из пионеров освещения на основе светодиодов (LED).' },
@@ -533,6 +646,7 @@ const datas = [
                 },
                 interestingFacts: {
                     title: 'Интересные факты',
+                    isList: true,
                     items: [
                         { bold: '«Город света»', text: ' – Люденшайд носит прозвище Stadt des Lichts («город света») благодаря развитой светотехнической и осветительной промышленности. Для города характерны световые инсталляции, маршрут «Lichtrouten» и световое оформление зданий.' },
                         { bold: 'Наука, техника и интерактивность', text: ' – один из заметных объектов: музей-парк науки PHÄNOMENTA с около 200 интерактивными станциями и знакомой башней с маятником Фуко.' },
@@ -577,7 +691,6 @@ const datas = [
                     area: [
                         { bold: 'Площа:' },
                         { text: ' муніципалітету становить близько 86,7 км². Значна частина території зайнята парками, лісами та зеленими зонами; далі за обсягом ідуть сільськогосподарські угіддя, забудовані території, дороги, водна поверхня та інші землі.' },
-                        { text: ' Місто поділене на 16 статистичних районів.' }
                     ],
                     postalCode: [{ bold: 'Поштові індекси:', text: ' 58507–58515' }],
                     phone: [{ bold: 'Телефонний код:', text: ' +49 02351' }],
@@ -589,6 +702,21 @@ const datas = [
                     ],
                     culture: [{ bold: 'Культурне життя', text: ' – у місті проходять фестивалі, виставки, світлові маршрути та активні події: прогулянки з ліхтариками, світловими інсталяціями тощо.' }],
                 },
+                admin: {
+                    title: 'Місто поділяється на 16 статистичних районів, ось найбільші з них:',
+                    isList: true,
+                    items: [
+                        { bold: 'Lüdenscheid-Zentrum (Innenstadt)', text: '– центральна частина міста, де розташовані основні адміністративні будівлі, торгові вулиці та залізничний вокзал.' },
+                        { bold: 'Brügge', text: '– історично сформований район на північному заході міста з окремою локальною структурою.' },
+                        { bold: 'Gevelndorf', text: '– житловий район у північній частині Люденшайда.' },
+                        { bold: 'Buckesfeld', text: '– великий сучасний житловий район із щільною забудовою.' },
+                        { bold: 'Honsel / Oeneking', text: '– північно-східна частина міста, що поєднує житлові зони та промислові території.' },
+                        { bold: 'Wehberg', text: '– східний район із переважно житловою забудовою.' },
+                        { bold: 'Rathmecke / Dickenberg', text: '– більш периферійні райони з житловими кварталами та природним оточенням.' },
+                        { bold: 'Wettringhof', text: '– південна частина міста, розташована ближче до зелених зон і природних територій.' },
+                        { bold: 'Eveking', text: '– невеликий район на південному сході Люденшайда.' },
+                    ]
+                },
                 geography: {
                     title: 'Рельєф і висоти',
                     items: [
@@ -598,6 +726,7 @@ const datas = [
                 },
                 notablePeople: {
                     title: 'Відомі особистості Люденшайда',
+                    isList: true,
                     items: [
                         { bold: 'Маріанна Розенберг (Marianne Rosenberg, нар. 1955)', text: ' – німецька співачка, авторка пісень і ікона поп- та шлягер-сцени 1970–2000-х років. Народилася в Люденшайді. Відома хітами „Er gehört zu mir“, „Marleen“ та іншими.' },
                         { bold: 'Петер Швайцер (Peter Schweitzer, нар. 1942)', text: ' – німецький промисловець, пов’язаний із розвитком світлотехнічної індустрії регіону, один із піонерів освітлення на основі світлодіодів (LED).' },
@@ -613,6 +742,7 @@ const datas = [
                 },
                 interestingFacts: {
                     title: 'Цікаві факти',
+                    isList: true,
                     items: [
                         { bold: '«Місто світла»', text: ' – Люденшайд має прізвисько Stadt des Lichts («місто світла») завдяки розвиненій світлотехнічній та освітлювальній промисловості. Для міста характерні світлові інсталяції, маршрут «Lichtrouten» та художнє підсвічування будівель.' },
                         { bold: 'Наука, техніка та інтерактивність', text: ' – один із найвідоміших об’єктів: музей-парк науки PHÄNOMENTA з близько 200 інтерактивними станціями та відомою вежею з маятником Фуко.' },
@@ -657,7 +787,6 @@ const datas = [
                     area: [
                         { bold: 'Fläche:' },
                         { text: ' Die Fläche der Kommune beträgt rund 86,7 km². Ein großer Teil davon ist von Park- und Waldflächen sowie Grünzonen bedeckt; danach folgen landwirtschaftliche Flächen, bebaute Gebiete, Straßen, Gewässer und sonstige Flächen.' },
-                        { text: ' Die Stadt ist in 16 statistische Bezirke unterteilt.' }
                     ],
                     postalCode: [{ bold: 'Postleitzahlen:', text: ' 58507–58515' }],
                     phone: [{ bold: 'Telefonvorwahl:', text: ' +49 2351' }],
@@ -669,6 +798,21 @@ const datas = [
                     ],
                     culture: [{ bold: 'Kulturelles Leben', text: ' – In der Stadt finden zahlreiche Festivals, Ausstellungen, Licht-Routen und andere Veranstaltungen statt: Laternenwanderungen, Lichtinstallationen und vieles mehr.' }],
                 },
+                admin: {
+                    title: 'Die Stadt ist in 16 statistische Stadtteile gegliedert. Hier sind die größten davon:',
+                    isList: true,
+                    items: [
+                        { bold: 'Lüdenscheid-Zentrum (Innenstadt)', text: '– der zentrale Stadtbereich mit den wichtigsten Verwaltungsgebäuden, Einkaufsstraßen und dem Bahnhof.' },
+                        { bold: 'Brügge', text: '– ein historisch gewachsener Stadtteil im Nordwesten der Stadt mit eigener lokaler Struktur.' },
+                        { bold: 'Gevelndorf', text: '– ein Wohngebiet im nördlichen Teil von Lüdenscheid.' },
+                        { bold: 'Buckesfeld', text: '– ein großes modernes Wohnviertel mit dichter Bebauung.' },
+                        { bold: 'Honsel / Oeneking', text: '– der nordöstliche Teil der Stadt mit Wohngebieten und Industrieflächen.' },
+                        { bold: 'Wehberg', text: '– ein östlicher Stadtteil mit überwiegend Wohnbebauung.' },
+                        { bold: 'Rathmecke / Dickenberg', text: '– eher periphere Stadtteile mit Wohnquartieren und naturnaher Umgebung.' },
+                        { bold: 'Wettringhof', text: '– der südliche Teil der Stadt in der Nähe von Grünflächen und Naturgebieten.' },
+                        { bold: 'Eveking', text: '– ein kleiner Stadtteil im Südosten von Lüdenscheid.' },
+                    ]
+                },
                 geography: {
                     title: 'Relief und Höhenlage',
                     items: [
@@ -678,6 +822,7 @@ const datas = [
                 },
                 notablePeople: {
                     title: 'Bekannte Persönlichkeiten aus Lüdenscheid',
+                    isList: true,
                     items: [
                         { bold: 'Marianne Rosenberg (geb. 1955)', text: ' – Deutsche Sängerin, Songwriterin und Ikone der Pop- und Schlagerszene der 1970er–2000er Jahre. Geboren in Lüdenscheid. Bekannt durch Hits wie „Er gehört zu mir“, „Marleen“ u. a.' },
                         { bold: 'Peter Schweitzer (geb. 1942)', text: ' – Deutscher Industrieller, der mit der Entwicklung der Lichttechnikindustrie in der Region verbunden ist, einer der Pioniere der LED-Beleuchtung.' },
@@ -693,6 +838,7 @@ const datas = [
                 },
                 interestingFacts: {
                     title: 'Interessante Fakten',
+                    isList: true,
                     items: [
                         { bold: '„Stadt des Lichts“', text: ' – Lüdenscheid trägt den Beinamen „Stadt des Lichts“ aufgrund seiner stark entwickelten Licht- und Beleuchtungsindustrie. Charakteristisch für die Stadt sind Lichtinstallationen, die „Lichtrouten“ und künstlerische Beleuchtung von Gebäuden.' },
                         { bold: 'Wissenschaft, Technik und Interaktivität', text: ' – Eine der bekanntesten Sehenswürdigkeiten ist der Wissenschafts- und Erlebnispark PHÄNOMENTA mit rund 200 interaktiven Stationen und einem markanten Turm mit Foucaults Pendel.' },
@@ -744,15 +890,26 @@ const datas = [
                     ],
                     population: [{ bold: 'Население', text: ' города составляет около 18 500 человек (по состоянию на 31 декабря 2024 года).' }],
                     area: [
-                        { bold: 'Площадь:' },
-                        { text: ' муниципалитета составляет около 81,6 км². Большая часть территории занята лесами, зелёными зонами и холмистыми ландшафтами; далее идут сельскохозяйственные угодья, жилые и промышленные районы, дороги и водные объекты.' },
-                        { text: ' Город разделён на 7 районов.' }
+                        { bold: 'Площадь:', text: ' муниципалитета составляет около 81,6 км². Большая часть территории занята лесами, зелёными зонами и холмистыми ландшафтами; далее идут сельскохозяйственные угодья, жилые и промышленные районы, дороги и водные объекты.' },
                     ],
                     postalCode: [{ bold: 'Почтовые индексы:', text: ' 58762' }],
                     phone: [{ bold: 'Телефонный код:', text: ' +49 02352' }],
                     officialSite: [{ bold: 'Официальный сайт Альтены', link: 'https://www.altena-notbetrieb.de/' }],
                     education: [{ bold: 'Система образования', text: ' в городе включает несколько начальных школ, средние школы (Haupt- и Realschulen), гимназию (Städtisches Gymnasium Altena) и профессиональные учебные заведения. Также в Альтене работают музыкальные и художественные школы.' }],
                     culture: [{ bold: 'Культурные активности', text: ' – город знаменит крепостью Альтена (Burg Altena), музеями, фестивалями, культурными событиями и прогулочными маршрутами вдоль реки Лене.' }],
+                },
+                admin: {
+                    title: 'Альтена разделена на 7 районов (Stadtteile):',
+                    isList: true,
+                    items: [
+                        { bold: 'Innenstadt', text: '– центральный район Альтены с историческим старым городом, замком Альтена и основными городскими учреждениями' },
+                        { bold: 'Dahle', text: '– южный район с жилыми кварталами, лесными территориями и традиционной застройкой' },
+                        { bold: 'Evingsen', text: '– более сельский район с деревенской атмосферой и лесными ландшафтами' },
+                        { bold: 'Rahmede', text: '– район в долине Рамеде с жилыми кварталами и промышленными объектами' },
+                        { bold: 'Knerling', text: '– жилой район с зелёными зонами и панорамными видами на долину' },
+                        { bold: 'Pragpaul', text: '– небольшой жилой район на склонах вокруг центра города' },
+                        { bold: 'Mühlendorf', text: '– район вдоль реки Ленне с жилыми домами и промышленным прошлым' },
+                    ]
                 },
                 geography: {
                     title: 'Рельеф и высоты',
@@ -763,6 +920,7 @@ const datas = [
                 },
                 notablePeople: {
                     title: 'Знаменитые люди Альтены',
+                    isList: true,
                     items: [
                         { bold: 'Вальтер Флейшман (Walter Fleishmann, 1895-1974)', text: ' – немецкий предприниматель и инженер, участвовал в развитии индустрии Зауэрланда.' },
                         { bold: 'Ганс Дамм (Hans Damm, 1910-1982)', text: ' – известный немецкий политик и меценат региона.' },
@@ -770,6 +928,7 @@ const datas = [
                 },
                 interestingFacts: {
                     title: 'Интересные факты',
+                    isList: true,
                     items: [
                         { bold: 'Альтена – «проволочная столица Европы»', text: ' город исторически считается одним из центров проволочной промышленности: уже в средние века здесь производили проволоку, а в XIX веке регион был важнейшим центром её изготовления в Германии и за её пределами. Доказательства этому можно увидеть в специализированном Музее проволоки (Deutsches Drahtmuseum), где показывают, как проволока использовалась от древности до современной техники.' },
                         { bold: 'Производство канатов', text: ' – в XIX-XX веках Альтена был известен как центр канатной промышленности; музей канатов (Deutsches Drahtmuseum) сохраняет эту историю.' },
@@ -804,13 +963,25 @@ const datas = [
                     area: [
                         { bold: 'Площа:' },
                         { text: ' муніципалітету становить близько 81,6 км². Велика частина території зайнята лісами, зеленими зонами та пагористими ландшафтами; далі йдуть сільськогосподарські угіддя, житлові та промислові райони, дороги та водні об’єкти.' },
-                        { text: ' Місто поділене на 7 районів.' }
                     ],
                     postalCode: [{ bold: 'Поштові індекси:', text: ' 58762' }],
                     phone: [{ bold: 'Телефонний код:', text: ' +49 02352' }],
                     officialSite: [{ bold: 'Офіційний сайт Альтени', link: 'https://www.altena-notbetrieb.de/' }],
                     education: [{ bold: 'Освітня система', text: ' у місті включає кілька початкових шкіл, середні школи (Haupt- та Realschulen), гімназію (Städtisches Gymnasium Altena) та професійні навчальні заклади. Також в Альтені працюють музичні та художні школи.' }],
                     culture: [{ bold: 'Культурні активності', text: ' – місто славиться замком Альтена (Burg Altena), музеями, фестивалями, культурними подіями та пішохідними маршрутами вздовж річки Лене.' }],
+                },
+                admin: {
+                    title: 'Альтена поділена на 7 районів (Stadtteile):',
+                    isList: true,
+                    items: [
+                        { bold: 'Innenstadt', text: '– центральний район Альтени з історичним старим містом, замком Альтена та основними міськими установами' },
+                        { bold: 'Dahle', text: '– південний район із житловими кварталами, лісовими територіями та традиційною забудовою' },
+                        { bold: 'Evingsen', text: '– більш сільський район із сільською атмосферою та лісовими ландшафтами' },
+                        { bold: 'Rahmede', text: '– район у долині Рамеде з житловими кварталами та промисловими об’єктами' },
+                        { bold: 'Knerling', text: '– житловий район із зеленими зонами та панорамними видами на долину' },
+                        { bold: 'Pragpaul', text: '– невеликий житловий район на схилах навколо центру міста' },
+                        { bold: 'Mühlendorf', text: '– район уздовж річки Ленне з житловими будинками та промисловим минулим' },
+                    ]
                 },
                 geography: {
                     title: 'Рельєф і висоти',
@@ -821,6 +992,7 @@ const datas = [
                 },
                 notablePeople: {
                     title: 'Відомі люди Альтени',
+                    isList: true,
                     items: [
                         { bold: 'Вальтер Фляйшман (Walter Fleishmann, 1895-1974)', text: ' – німецький підприємець та інженер, брав участь у розвитку індустрії Зауерланду.' },
                         { bold: 'Ганс Дамм (Hans Damm, 1910-1982)', text: ' – відомий німецький політик і меценат регіону.' },
@@ -828,6 +1000,7 @@ const datas = [
                 },
                 interestingFacts: {
                     title: 'Цікаві факти',
+                    isList: true,
                     items: [
                         { bold: 'Альтена – «проволочна столиця Європи»', text: ' місто історично вважається одним із центрів виробництва дроту: вже в середні віки тут виробляли дріт, а в XIX столітті регіон був одним із найважливіших центрів його виготовлення в Німеччині та за її межами. Докази цьому можна побачити у спеціалізованому Музеї дроту (Deutsches Drahtmuseum), де демонструють, як дріт використовувався від давнини до сучасних технологій.' },
                         { bold: 'Виробництво канатів', text: ' – у XIX-XX століттях Альтена була відома як центр канатної промисловості; музей канатів (Deutsches Drahtmuseum) зберігає цю історію.' },
@@ -862,13 +1035,25 @@ const datas = [
                     area: [
                         { bold: 'Fläche:' },
                         { text: ' die Gemeinde erstreckt sich über etwa 81,6 km². Ein Großteil der Fläche besteht aus Wäldern, Grünflächen und hügeliger Landschaft; gefolgt von landwirtschaftlichen Flächen, Wohn- und Industriegebieten, Straßen und Gewässern.' },
-                        { text: ' Die Stadt ist in 7 Stadtteile unterteilt.' }
                     ],
                     postalCode: [{ bold: 'Postleitzahlen:', text: ' 58762' }],
                     phone: [{ bold: 'Telefonvorwahl:', text: ' +49 02352' }],
                     officialSite: [{ bold: 'Offizielle Website von Altena', link: 'https://www.altena-notbetrieb.de/' }],
                     education: [{ bold: 'Bildungssystem', text: ' in der Stadt umfasst mehrere Grundschulen, weiterführende Schulen (Haupt- und Realschulen), ein Gymnasium (Städtisches Gymnasium Altena) und berufliche Bildungseinrichtungen. In Altena gibt es außerdem Musik- und Kunstschulen.' }],
                     culture: [{ bold: 'Kulturelle Aktivitäten', text: ' – die Stadt ist bekannt für die Burg Altena, Museen, Festivals, kulturelle Veranstaltungen und Spazierwege entlang der Lenne.' }],
+                },
+                admin: {
+                    title: 'Altena ist in 7 Stadtteile gegliedert:',
+                    isList: true,
+                    items: [
+                        { bold: 'Innenstadt', text: '– der zentrale Stadtteil Altenas mit der historischen Altstadt, der Burg Altena und den wichtigsten städtischen Einrichtungen' },
+                        { bold: 'Dahle', text: '– ein südlicher Stadtteil mit Wohnvierteln, Waldgebieten und traditioneller Bebauung' },
+                        { bold: 'Evingsen', text: '– ein eher ländlicher Stadtteil mit dörflicher Atmosphäre und Waldlandschaften' },
+                        { bold: 'Rahmede', text: '– ein Stadtteil im Rahmedetal mit Wohnvierteln und Industrieanlagen' },
+                        { bold: 'Knerling', text: '– ein Wohngebiet mit Grünflächen und Panoramablicken über das Tal' },
+                        { bold: 'Pragpaul', text: '– ein kleiner Wohnstadtteil an den Hängen rund um das Stadtzentrum' },
+                        { bold: 'Mühlendorf', text: '– ein Stadtteil entlang der Lenne mit Wohnhäusern und industrieller Vergangenheit' },
+                    ]
                 },
                 geography: {
                     title: 'Relief und Höhen',
@@ -925,23 +1110,13 @@ const datas = [
                     general: [
                         { text: "Изерлон (нем. Iserlohn) – крупнейший город округа Меркиш в регионе Арнсберг, федеральная земля Северный Рейн-Вестфалия. Расположен на северной окраине Зауэрланда и исторически известен как важный центр металлургии и обработки металлов." }
                     ],
-                    population: [
-                        { bold: "Население", text: " города составляет около 92 000 человек (по состоянию на 2024 год)." }
-                    ],
+                    population: [{ bold: "Население", text: " города составляет около 92 000 человек (по состоянию на 2024 год)." }],
                     area: [
-                        { bold: "Площадь:" },
-                        { text: " территория города занимает примерно 125,5 км². Значительную часть занимают леса и природные зоны, что делает Изерлон одним из наиболее «зелёных» городов региона." },
-                        { text: " Город включает несколько районов, включая исторический центр и бывшие самостоятельные населённые пункты, присоединённые в ходе административных реформ." }
+                        { bold: "Площадь:", text: " территория города занимает примерно 125,5 км². Значительную часть занимают леса и природные зоны, что делает Изерлон одним из наиболее «зелёных» городов региона." },
                     ],
-                    postalCode: [
-                        { bold: "Почтовые индексы:", text: " 58636–58644" }
-                    ],
-                    phone: [
-                        { bold: "Телефонный код:", text: " +49 02371" }
-                    ],
-                    officialSite: [
-                        { bold: "Официальный сайт Изерлона", link: "https://www.iserlohn.de/" }
-                    ],
+                    postalCode: [{ bold: "Почтовые индексы:", text: " 58636–58644" }],
+                    phone: [{ bold: "Телефонный код:", text: " +49 02371" }],
+                    officialSite: [{ bold: "Официальный сайт Изерлона", link: "https://www.iserlohn.de/" }],
                     education: [
                         { bold: "Система образования" },
                         { text: " в городе представлена широким спектром учебных заведений: начальные школы, Realschulen, Gesamtschulen, гимназии, а также профессиональные колледжи." },
@@ -950,6 +1125,17 @@ const datas = [
                     ],
                     culture: [
                         { bold: "Культурные активности", text: " – в городе работают музеи, театры и концертные площадки. Особую известность имеет природный объект – пещера Dechenhöhle, а также многочисленные маршруты для пешего туризма и отдыха в лесных зонах." }
+                    ]
+                },
+                admin: {
+                    title: 'Изерлон разделён на 5 городских округов (Stadtbezirke):',
+                    isList: true,
+                    items: [
+                        { bold: 'Iserlohn', text: '– центральный округ с историческим центром, административными учреждениями и торговыми зонами' },
+                        { bold: 'Letmathe', text: '– крупный округ с отдельным центром, жилыми кварталами и развитой инфраструктурой' },
+                        { bold: 'Hennen', text: '– спокойный жилой округ с деревенской структурой и зелёными территориями' },
+                        { bold: 'Sümmern', text: '– северный округ с жилыми районами и сельскими окрестностями' },
+                        { bold: 'Oestrich', text: '– округ с жилой застройкой, природными зонами и спокойной атмосферой' },
                     ]
                 },
                 geography: {
@@ -962,6 +1148,7 @@ const datas = [
                 },
                 notablePeople: {
                     title: "Знаменитые люди Изерлона",
+                    isList: true,
                     items: [
                         { bold: "Ники Адлер (Nikki Adler, род. 1986)", text: " – немецкая профессиональная боксёрша, чемпионка мира по версиям WBC и WBO." },
                         { bold: "Райнер Шаллер (Rainer Schaller, 1969–2022)", text: " – немецкий предприниматель, основатель сети фитнес-клубов McFit." },
@@ -970,6 +1157,7 @@ const datas = [
                 },
                 interestingFacts: {
                     title: "Интересные факты",
+                    isList: true,
                     items: [
                         { bold: "Пещера Dechenhöhle", text: " – одна из самых известных и хорошо оборудованных сталактитовых пещер Германии, открытая в XIX веке." },
                         { bold: "Центр проволочной промышленности", text: " – Изерлон на протяжении столетий был одним из ключевых центров производства проволоки в Европе." },
@@ -1005,23 +1193,13 @@ const datas = [
                     general: [
                         { text: "Ізерлон (нім. Iserlohn) – найбільше місто округу Меркіш у регіоні Арнсберг, федеральна земля Північний Рейн-Вестфалія. Розташоване на північній околиці Зауерланду та історично відоме як важливий центр металургії та обробки металів." }
                     ],
-                    population: [
-                        { bold: "Населення", text: " міста становить близько 92 000 осіб (станом на 2024 рік)." }
-                    ],
+                    population: [{ bold: "Населення", text: " міста становить близько 92 000 осіб (станом на 2024 рік)." }],
                     area: [
-                        { bold: "Площа:" },
-                        { text: " територія міста становить приблизно 125,5 км². Значну частину займають ліси та природні зони, що робить Ізерлон одним із найбільш «зелених» міст регіону." },
-                        { text: " Місто включає кілька районів, зокрема історичний центр та колишні самостійні населені пункти, приєднані в ході адміністративних реформ." }
+                        { bold: "Площа:", text: " територія міста становить приблизно 125,5 км². Значну частину займають ліси та природні зони, що робить Ізерлон одним із найбільш «зелених» міст регіону." }
                     ],
-                    postalCode: [
-                        { bold: "Поштові індекси:", text: " 58636–58644" }
-                    ],
-                    phone: [
-                        { bold: "Телефонний код:", text: " +49 02371" }
-                    ],
-                    officialSite: [
-                        { bold: "Офіційний сайт Ізерлона", link: "https://www.iserlohn.de/" }
-                    ],
+                    postalCode: [{ bold: "Поштові індекси:", text: " 58636–58644" }],
+                    phone: [{ bold: "Телефонний код:", text: " +49 02371" }],
+                    officialSite: [{ bold: "Офіційний сайт Ізерлона", link: "https://www.iserlohn.de/" }],
                     education: [
                         { bold: "Система освіти" },
                         { text: " у місті представлена широким спектром навчальних закладів: початкові школи, Realschulen, Gesamtschulen, гімназії, а також професійні коледжі." },
@@ -1030,6 +1208,17 @@ const datas = [
                     ],
                     culture: [
                         { bold: "Культурні активності", text: " – у місті працюють музеї, театри та концертні майданчики. Особливу популярність має природний об'єкт – печера Dechenhöhle, а також численні маршрути для піших прогулянок і відпочинку в лісових зонах." }
+                    ]
+                },
+                admin: {
+                    title: 'Ізерлон поділений на 5 міських округів (Stadtbezirke):',
+                    isList: true,
+                    items: [
+                        { bold: 'Iserlohn', text: '– центральний округ з історичним центром, адміністративними установами та торговими зонами' },
+                        { bold: 'Letmathe', text: '– великий округ з окремим центром, житловими кварталами та розвиненою інфраструктурою' },
+                        { bold: 'Hennen', text: '– спокійний житловий округ із сільською структурою та зеленими територіями' },
+                        { bold: 'Sümmern', text: '– північний округ із житловими районами та сільськими околицями' },
+                        { bold: 'Oestrich', text: '– округ із житловою забудовою, природними зонами та спокійною атмосферою' },
                     ]
                 },
                 geography: {
@@ -1042,6 +1231,7 @@ const datas = [
                 },
                 notablePeople: {
                     title: "Відомі люди Ізерлона",
+                    isList: true,
                     items: [
                         { bold: "Ніккі Адлер (Nikki Adler, нар. 1986)", text: " – німецька професійна боксерка, чемпіонка світу за версіями WBC та WBO." },
                         { bold: "Райнер Шаллер (Rainer Schaller, 1969–2022)", text: " – німецький підприємець, засновник мережі фітнес-клубів McFit." },
@@ -1050,6 +1240,7 @@ const datas = [
                 },
                 interestingFacts: {
                     title: "Цікаві факти",
+                    isList: true,
                     items: [
                         { bold: "Печера Dechenhöhle", text: " – одна з найвідоміших і добре обладнаних сталактитових печер Німеччини, відкрита у XIX столітті." },
                         { bold: "Центр дротової промисловості", text: " – Ізерлон протягом століть був одним із ключових центрів виробництва дроту в Європі." },
@@ -1083,23 +1274,13 @@ const datas = [
                     general: [
                         { text: "Iserlohn ist die größte Stadt des Märkischen Kreises im Regierungsbezirk Arnsberg im Bundesland Nordrhein-Westfalen. Die Stadt liegt am nördlichen Rand des Sauerlandes und ist historisch als bedeutendes Zentrum der Metallverarbeitung und Industrie bekannt." }
                     ],
-                    population: [
-                        { bold: "Einwohnerzahl", text: " beträgt etwa 92.000 Personen (Stand: 2024)." }
-                    ],
+                    population: [{ bold: "Einwohnerzahl", text: " beträgt etwa 92.000 Personen (Stand: 2024)." }],
                     area: [
-                        { bold: "Fläche:" },
-                        { text: " Das Stadtgebiet umfasst etwa 125,5 km². Ein großer Teil besteht aus Wäldern und Naturflächen, wodurch Iserlohn zu den grünsten Städten der Region zählt." },
-                        { text: " Die Stadt gliedert sich in mehrere Stadtteile, darunter die historische Innenstadt sowie ehemals eigenständige Gemeinden." }
+                        { bold: "Fläche:", text: " Das Stadtgebiet umfasst etwa 125,5 km². Ein großer Teil besteht aus Wäldern und Naturflächen, wodurch Iserlohn zu den grünsten Städten der Region zählt." },
                     ],
-                    postalCode: [
-                        { bold: "Postleitzahlen:", text: " 58636–58644" }
-                    ],
-                    phone: [
-                        { bold: "Vorwahl:", text: " +49 02371" }
-                    ],
-                    officialSite: [
-                        { bold: "Offizielle Website von Iserlohn", link: "https://www.iserlohn.de/" }
-                    ],
+                    postalCode: [{ bold: "Postleitzahlen:", text: " 58636–58644" }],
+                    phone: [{ bold: "Vorwahl:", text: " +49 02371" }],
+                    officialSite: [{ bold: "Offizielle Website von Iserlohn", link: "https://www.iserlohn.de/" }],
                     education: [
                         { bold: "Bildungssystem" },
                         { text: " umfasst ein breites Spektrum an Bildungseinrichtungen: Grundschulen, Realschulen, Gesamtschulen, Gymnasien sowie berufliche Schulen." },
@@ -1108,6 +1289,17 @@ const datas = [
                     ],
                     culture: [
                         { bold: "Kulturelle Aktivitäten", text: " – die Stadt bietet Museen, Theater und Veranstaltungsorte. Besonders bekannt ist die Dechenhöhle sowie zahlreiche Wanderwege und Naherholungsgebiete." }
+                    ]
+                },
+                admin: {
+                    title: 'Iserlohn ist in 5 Stadtbezirke gegliedert:',
+                    isList: true,
+                    items: [
+                        { bold: 'Iserlohn', text: '– der zentrale Bezirk mit historischer Innenstadt, Verwaltungsgebäuden und Einkaufsbereichen' },
+                        { bold: 'Letmathe', text: '– ein großer Bezirk mit eigenem Zentrum, Wohngebieten und guter Infrastruktur' },
+                        { bold: 'Hennen', text: '– ein ruhiger Wohnbezirk mit dörflicher Struktur und viel Grün' },
+                        { bold: 'Sümmern', text: '– ein nördlicher Bezirk mit Wohngebieten und ländlicher Umgebung' },
+                        { bold: 'Oestrich', text: '– ein Wohnbezirk mit Naturflächen und ruhiger Atmosphäre' },
                     ]
                 },
                 geography: {
@@ -1120,6 +1312,7 @@ const datas = [
                 },
                 notablePeople: {
                     title: "Bekannte Persönlichkeiten aus Iserlohn",
+                    isList: true,
                     items: [
                         { bold: "Nikki Adler (*1986)", text: " – deutsche Profiboxerin und Weltmeisterin." },
                         { bold: "Rainer Schaller (1969–2022)", text: " – deutscher Unternehmer und Gründer von McFit." },
@@ -1128,6 +1321,7 @@ const datas = [
                 },
                 interestingFacts: {
                     title: "Interessante Fakten",
+                    isList: true,
                     items: [
                         { bold: "Dechenhöhle", text: " – eine der bekanntesten Tropfsteinhöhlen Deutschlands." },
                         { bold: "Drahtindustrie", text: " – Iserlohn war über Jahrhunderte ein bedeutendes Zentrum der Drahtproduktion in Europa." },
@@ -1174,12 +1368,20 @@ const datas = [
                     population: [{ bold: "Население", text: " составляет около 81 000 человек (по состоянию на 2024 год)." }],
                     area: [
                         { bold: "Площадь:", text: " около 74,9 км². Город расположен на холмистой местности региона Бергишес-Ланд, значительную часть территории занимают леса и зелёные зоны." },
-                        { text: " Город административно делится на три основных района: Фельберт-Митте (Velbert-Mitte), Невигес (Neviges) и Лангенберг (Langenberg)." }
                     ],
                     postalCode: [{ bold: "Почтовые индексы:", text: " 42549–42555" }],
                     phone: [{ bold: "Телефонный код:", text: " +49 02051" }],
                     officialSite: [{ bold: "Официальный сайт Фельберта", link: "https://www.velbert.de/" }],
                     culture: [{ bold: "Культурные особенности", text: " – город известен музеем замков и фурнитуры (Deutsches Schloss- und Beschlägemuseum), который отражает его многовековую промышленную специализацию." }]
+                },
+                admin: {
+                    title: 'Фельберт разделён на 3 городских района (Stadtteile):',
+                    isList: true,
+                    items: [
+                        { bold: 'Фельберт-Митте (Velbert-Mitte)', text: '– центральный район города с административными учреждениями, торговыми зонами и современными жилыми кварталами' },
+                        { bold: 'Невигес (Neviges)', text: '– исторический район, известный паломническим собором Mariendom Neviges и старой застройкой' },
+                        { bold: 'Лангенберг (Langenberg)', text: '– исторический район с хорошо сохранившимся старым городом, фахверковыми домами и культурным наследием' },
+                    ]
                 },
                 geography: {
                     title: "Рельеф и расположение",
@@ -1234,12 +1436,20 @@ const datas = [
                     population: [{ bold: "Населення", text: " становить близько 81 000 жителів (станом на 2024 рік)." }],
                     area: [
                         { bold: "Площа:", text: " близько 74,9 км². Місто розташоване на горбистій місцевості регіону Бергішес-Ланд, значну частину території займають ліси та зелені зони." },
-                        { text: " Місто адміністративно поділяється на три основні райони: Фельберт-Мітте (Velbert-Mitte), Невігес (Neviges) та Лангенберг (Langenberg)." }
                     ],
                     postalCode: [{ bold: "Поштові індекси:", text: " 42549–42555" }],
                     phone: [{ bold: "Телефонний код:", text: " +49 02051" }],
                     officialSite: [{ bold: "Офіційний сайт Фельберта", link: "https://www.velbert.de/" }],
                     culture: [{ bold: "Культурні особливості", text: " – місто відоме музеєм замків і фурнітури (Deutsches Schloss- und Beschlägemuseum), який відображає його багатовікову промислову спеціалізацію." }]
+                },
+                admin: {
+                    title: 'Фельберт поділений на 3 міські райони (Stadtteile):',
+                    isList: true,
+                    items: [
+                        { bold: 'Фельберт-Мітте (Velbert-Mitte)', text: '– центральний район міста з адміністративними установами, торговими зонами та сучасними житловими кварталами' },
+                        { bold: 'Невігес (Neviges)', text: '– історичний район, відомий паломницьким собором Mariendom Neviges та старою забудовою' },
+                        { bold: 'Лангенберг (Langenberg)', text: '– історичний район із добре збереженим старим містом, фахверковими будинками та культурною спадщиною' },
+                    ]
                 },
                 geography: {
                     title: "Рельєф і розташування",
@@ -1294,12 +1504,20 @@ const datas = [
                     population: [{ bold: "Einwohnerzahl", text: " beträgt etwa 81.000 Einwohner (Stand: 2024)." }],
                     area: [
                         { bold: "Fläche:", text: " etwa 74,9 km². Die Stadt liegt in einer hügeligen Landschaft der Region Bergisches Land, große Teile des Gebiets bestehen aus Wäldern und Grünflächen." },
-                        { text: " Die Stadt ist administrativ in drei Hauptteile gegliedert: Velbert-Mitte, Neviges und Langenberg." }
                     ],
                     postalCode: [{ bold: "Postleitzahlen:", text: " 42549–42555" }],
                     phone: [{ bold: "Vorwahl:", text: " +49 02051" }],
                     officialSite: [{ bold: "Offizielle Website von Velbert", link: "https://www.velbert.de/" }],
                     culture: [{ bold: "Kulturelle Besonderheiten", text: " – die Stadt ist bekannt für das Deutsche Schloss- und Beschlägemuseum, das ihre jahrhundertealte industrielle Spezialisierung widerspiegelt." }]
+                },
+                admin: {
+                    title: 'Velbert ist in 3 Stadtteile gegliedert:',
+                    isList: true,
+                    items: [
+                        { bold: 'Velbert-Mitte', text: '– der zentrale Stadtteil mit Verwaltungsgebäuden, Einkaufsbereichen und modernen Wohnvierteln' },
+                        { bold: 'Neviges', text: '– ein historischer Stadtteil, bekannt für den Wallfahrtsdom Mariendom Neviges und die alte Bebauung' },
+                        { bold: 'Langenberg', text: '– ein historischer Stadtteil mit gut erhaltener Altstadt, Fachwerkhäusern und kulturellem Erbe' },
+                    ]
                 },
                 geography: {
                     title: "Relief und Lage",

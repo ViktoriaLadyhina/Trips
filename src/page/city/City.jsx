@@ -85,6 +85,7 @@ const City = () => {
                             {city.desc?.education && (<InfoBlock data={city.desc.education} className="city__desc-phone" />)}
                             {city.desc?.culture && (<InfoBlock data={city.desc.culture} className="city__desc-phone" />)}
                             {city.desc?.officialSite && (<InfoBlock data={city.desc.officialSite} className="city__desc-officialSite" />)}
+                            {city.admin && (<InfoBlock data={city.admin} className="city__desc-admin" />)}
                             {city.notablePeople && (<InfoBlock data={city.notablePeople} className="city__desc-notablePeople" />)}
 
                             {photos?.[regionPath]?.[cityPath]?.gallery?.[1] && (

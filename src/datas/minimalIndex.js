@@ -157,6 +157,7 @@ const datas =
     fort_X_outer_koln: { ru: 'Форт X (внешнее крепостное кольцо)', de: 'Fort X (äußerer Festungsring)', ua: 'Форт X (зовнішнє фортифікаційне кільце)' },
     fort_XI_outer_koln: { ru: 'Форт XI (внешнее крепостное кольцо)', de: 'Fort XI (äußerer Festungsring)', ua: 'Форт XI (зовнішнє фортифікаційне кільце)' },
     st_kunibert_koln: { ru: 'Базилика Святого Куниберта', de: 'Basilika St. Kunibert', ua: 'Базиліка Святого Куніберта' },
+    st_aposteln_koln: { ru: 'Церковь Святого Апостола', de: 'St. Aposteln', ua: 'Церква Святого Апостола' },
 
     // Aachen Kreis
     // Monschau

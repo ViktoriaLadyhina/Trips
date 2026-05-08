@@ -1914,7 +1914,7 @@ const datas = [
                     description: "Посетите Церковь Святого Гереона в Кёльне – уникальную романскую церковь с двенадцатигранным куполом, старинными витражами и богатой историей Средневековья.",
                     ogTitle: "Церковь Святого Гереона – Романская церковь",
                     ogDescription: "Уникальная романская церковь в Старом городе Кёльна с двенадцатигранным куполом, старинными витражами и многовековой историей.",
-                    keywords: "Кёльн, романская церковь, Церковь Святого Гереона, средневековая архитектура, витражи, купол, исторический памятник, туризм, достопримечательности Кёльна",
+                    keywords: "Кёльн, романская церковь, церкви, Церковь Святого Гереона, средневековая архитектура, витражи, купол, исторический памятник, туризм, достопримечательности Кёльна",
                     ogImage: "https://our-travels.info/foto/Germany/nrw/koln/koln-city/altstadt/romanische_kirchen/st_gereon/001.jpg"
                 }
             },
@@ -2064,7 +2064,7 @@ const datas = [
                 },
                 construction_period: "VII–IX век – первая церковь; XIII век – современное здание",
                 meta: {
-                    title: "Базилика Святого Куниберта в Кёльне — романская церковь XIII века",
+                    title: "Базилика Святого Куниберта в Кёльне – романская церковь XIII века",
                     description: "Базилика Святого Куниберта в Кёльне – одна из 12 романских церквей города. История, архитектура и восстановление после Второй мировой войны.",
                     ogTitle: "Базилика Святого Куниберта в Кёльне",
                     ogDescription: "Романская церковь в Кёльне с многовековой историей, спокойной атмосферой и важным религиозным значением.",
@@ -2154,6 +2154,180 @@ const datas = [
                     ogDescription: "Eine romanische Kirche in Köln mit jahrhundertealter Geschichte, ruhiger Atmosphäre und großer religiöser Bedeutung.",
                     keywords: "Basilika St Kunibert Köln, St Kunibert Kirche Köln, romanische Kirchen Köln, Sehenswürdigkeiten Köln, Geschichte Köln, alte Kirchen Deutschland",
                     ogImage: "https://our-travels.info/foto/Germany/nrw/koln/koln-city/altstadt/romanische_kirchen/st_kunibert/001.jpg"
+                }
+            }
+        }
+    },
+    {
+        id: "st_aposteln_koln",
+        type: ["cathedral"], rating: "popular",
+        path: "st_aposteln_koln",
+        countryPath: "germany", regionPath: "nrw", districtPath: "city", cityPath: "koln",
+        hiddenFromList: true, showMore: true,
+        map: "romanische_kirchen_altstadt_koln",
+        fotoCard: "Germany/nrw/koln/koln-city/altstadt/romanische_kirchen/st_aposteln/001.jpg",
+        coord: { lat: 50.93659154341758, lng: 6.944789042836963 },
+        translations: {
+            ru: {
+                name: "Церковь Святого Апостола",
+                location: "Кёльн, район Altstadt-Nord (округ Innenstadt), Германия",
+                officialSite: [
+                    { bold: "Официальный сайт", link: "https://www.st-aposteln.de/start/" }
+                ],
+                short_description: "Романская базилика XI–XII веков в районе Neumarkt в Кёльне, известная своим трёхапсидным хором и музыкальными традициями.",
+                full_description: {
+                    title: "Описание и история",
+                    items: [
+                        { bold: "Церковь Святого Апостола (St. Aposteln)", text: "– одна из самых известных романских церквей Кёльна и часть знаменитого ансамбля «12 больших романских церквей города». Базилика расположена возле Neumarkt – одного из центральных и самых оживлённых мест Кёльна. Несмотря на шумный городской центр вокруг, внутри церкви царит спокойная и почти монастырская атмосфера. Главной архитектурной особенностью церкви считается её массивный трёхапсидный восточный хор (Dreikonchenanlage) – один из лучших образцов рейнской романики." },
+                        { text: "Современный облик церкви формировался на протяжении нескольких столетий. Внутри можно увидеть мощные романские колонны, своды, старинные элементы декора и строгий средневековый интерьер без чрезмерной готической пышности. Церковь известна не только архитектурой, но и своей музыкальной традицией: здесь регулярно проходят концерты органной и хоровой музыки, а сама базилика считается одной из главных «музыкальных церквей» Кёльна." },
+                        { text: "Сегодня Церковь Святого Апостола остаётся действующей католической церковью и одновременно важным историческим памятником. Она входит в число ключевых достопримечательностей исторического центра Кёльна и привлекает как паломников, так и любителей средневековой архитектуры." },
+                        { bold: "История", text: "Первые упоминания о церкви на этом месте относятся примерно к X веку. Она была построена за пределами римской городской стены Кёльна, возле дороги, ведущей в Ахен. Уже в XI веке здесь появилась крупная романская базилика, посвящённая двенадцати апостолам. В XII веке церковь значительно расширили и добавили знаменитый трёхконховый хор, ставший её главным архитектурным символом." },
+                        { text: "В Средние века церковь была важным религиозным центром города. Она неоднократно перестраивалась, но сохранила романскую основу даже после появления готики. Во время Второй мировой войны базилика серьёзно пострадала от бомбардировок – часть здания была разрушена, а интерьер сильно повреждён. После войны церковь долго реставрировали, стараясь максимально вернуть её исторический облик." },
+                        { text: "В 2021-2022 годах церковь отметила примерно 1000 лет существования базилики. Сегодня церковь Святого Апостола считается одним из важнейших памятников романской архитектуры Германии и входит в туристический маршрут Романские церкви Кёльна." },
+                    ]
+                },
+                tickets_and_entry: {
+                    title: "Практическая информация",
+                    items: [
+                        { bold: "Адрес:", text: "Neumarkt 30, 50667 Köln" },
+                        { bold: "Конфессия:", text: "римско-католическая церковь" },
+                    ]
+                },
+                relics: {
+                    title: "Реликвии и ценности",
+                    items: [
+                        { bold: "Романский интерьер", text: "Главная часть базилики сохранила характерную романскую архитектуру с массивными колоннами, арками и строгими геометрическими формами." },
+                        { bold: "Трёхконховый хор", text: "Главная архитектурная достопримечательность церкви – восточная часть с тремя полукруглыми апсидами." },
+                        { bold: "Орган и музыкальная традиция", text: "В церкви находятся несколько органов, а музыкальные мероприятия считаются важной частью жизни базилики." },
+                        { bold: "Современные витражи в пристройке Aula", text: "К церкви примыкает Aula с современными художественными витражами, создающими интересный контраст со средневековой архитектурой. " }
+                    ]
+                },
+                interestingFacts: {
+                    title: "Интересные факты",
+                    isList: true,
+                    items: [
+                        { text: "Церковь знаменита своим трёхапсидным восточным хором – одним из символов рейнской романики." },
+                        { text: "Во время войны базилика была почти разрушена, но её восстановили по историческим чертежам. " },
+                        { text: "Церковь Святого Апостола известна как «музыкальная церковь Кёльна» благодаря регулярным концертам и хоровым выступлениям." },
+                        { text: "Здесь проходят мессы на латинском языке с григорианским хоралом." }
+                    ]
+                },
+                construction_period: "X–XI век",
+                meta: {
+                    title: "Церковь Святого Апостола (St. Aposteln) – романская церковь Кёльна возле Neumarkt",
+                    description: "Церковь Святого Апостола – одна из 12 романских церквей Кёльна. История, архитектура, интересные факты, фото и информация для посещения базилики возле Neumarkt.",
+                    ogTitle: "Церковь Святого Апостола – романская базилика в центре Кёльна",
+                    ogDescription: "Откройте одну из самых красивых романских церквей Кёльна – Церковь Святого Апостола возле Neumarkt с тысячелетней историей и уникальной архитектурой.",
+                    keywords: "церковь Святого Апостола Кёльн, St Aposteln Кёльн, Санкт Апостельн Кёльн, романские церкви Кёльна, 12 романских церквей Кёльна, базилика St Aposteln, достопримечательности Кёльна, старый город Кёльна, церкви Кёльна, Neumarkt Кёльн, романская архитектура Кёльн, средневековые церкви Германии, исторические церкви Кёльна, что посмотреть в Кёльне, туристические места Кёльна, базилика Кёльн, Romanische Kirchen Köln, Altstadt Köln, храмы Кёльна, католические церкви Кёльна",
+                    ogImage: "https://our-travels.info/foto/Germany/nrw/koln/koln-city/altstadt/romanische_kirchen/st_aposteln/001.jpg"
+                }
+            },
+            ua: {
+                name: "Церква Святого Апостола",
+                location: "Кельн, район Altstadt-Nord (округ Innenstadt), Німеччина",
+                officialSite: [
+                    { bold: "Офіційний сайт", link: "https://www.st-aposteln.de/start/" }
+                ],
+                short_description: "Романська базиліка XI–XII століть у районі Neumarkt у Кельні, відома своїм триапсидним хором і музичними традиціями.",
+                full_description: {
+                    title: "Опис та історія",
+                    items: [
+                        { bold: "Церква Святого Апостола (St. Aposteln)", text: "– одна з найвідоміших романських церков Кельна і частина знаменитого ансамблю «12 великих романських церков міста». Базиліка розташована біля Neumarkt – одного з центральних і найжвавіших місць Кельна. Незважаючи на міський шум навколо, всередині церкви панує спокійна і майже монастирська атмосфера. Головною архітектурною особливістю є масивний триапсидний східний хор (Dreikonchenanlage) – один із найкращих зразків рейнської романіки." },
+                        { text: "Сучасний вигляд церкви формувався протягом багатьох століть. Усередині можна побачити масивні романські колони, склепіння, старовинні елементи декору та строгий середньовічний інтер’єр без надмірної готичної пишності. Церква відома не лише архітектурою, а й музичною традицією: тут регулярно відбуваються концерти органної та хорової музики, а сама базиліка вважається однією з головних «музичних церков» Кельна." },
+                        { text: "Сьогодні Церква Святого Апостола залишається діючою католицькою церквою і водночас важливою історичною пам’яткою. Вона входить до числа ключових пам’яток історичного центру Кельна і приваблює як паломників, так і поціновувачів середньовічної архітектури." },
+                        { bold: "Історія", text: "Перші згадки про церкву на цьому місці датуються приблизно X століттям. Вона була збудована за межами римської міської стіни Кельна, біля дороги, що веде до Ахена. Уже в XI столітті тут з’явилася велика романська базиліка, присвячена дванадцяти апостолам. У XII столітті церкву значно розширили та додали знаменитий триконховий хор, який став її головним архітектурним символом." },
+                        { text: "У Середньовіччі церква була важливим релігійним центром міста. Вона неодноразово перебудовувалася, але зберегла романську основу навіть після появи готики. Під час Другої світової війни базиліка серйозно постраждала від бомбардувань – частина будівлі була зруйнована, а інтер’єр сильно пошкоджений. Після війни церкву довго реставрували, намагаючись максимально відновити її історичний вигляд." },
+                        { text: "У 2021–2022 роках церква відзначила приблизно 1000 років існування базиліки. Сьогодні Церква Святого Апостола вважається одним із найважливіших пам’ятників романської архітектури Німеччини та входить до туристичного маршруту Романські церкви Кельна." },
+                    ]
+                },
+                tickets_and_entry: {
+                    title: "Практична інформація",
+                    items: [
+                        { bold: "Адреса:", text: "Neumarkt 30, 50667 Köln" },
+                        { bold: "Конфесія:", text: "римсько-католицька церква" }
+                    ]
+                },
+                relics: {
+                    title: "Реліквії та цінності",
+                    items: [
+                        { bold: "Романський інтер’єр", text: "Головна частина базиліки зберегла характерну романську архітектуру з масивними колонами, арками та строгими геометричними формами." },
+                        { bold: "Триконховий хор", text: "Головна архітектурна особливість церкви – східна частина з трьома напівкруглими апсидами." },
+                        { bold: "Орган і музична традиція", text: "У церкві є кілька органів, а музичні заходи є важливою частиною життя базиліки." },
+                        { bold: "Сучасні вітражі в прибудові Aula", text: "До церкви прилягає Aula з сучасними художніми вітражами, які створюють цікавий контраст із середньовічною архітектурою." }
+                    ]
+                },
+                interestingFacts: {
+                    title: "Цікаві факти",
+                    isList: true,
+                    items: [
+                        { text: "Церква відома своїм триапсидним східним хором – одним із символів рейнської романіки." },
+                        { text: "Під час війни базиліка була майже зруйнована, але її відновили за історичними кресленнями." },
+                        { text: "Церква Святого Апостола відома як «музична церква Кельна» завдяки регулярним концертам і хоровим виступам." },
+                        { text: "Тут проходять меси латинською мовою з григоріанським хоралом." }
+                    ]
+                },
+                construction_period: "X–XI століття",
+                meta: {
+                    title: "Церква Святого Апостола (St. Aposteln) – романська церква Кельна біля Neumarkt",
+                    description: "Церква Святого Апостола – одна з 12 романських церков Кельна. Історія, архітектура, цікаві факти, фото та інформація для відвідування базиліки біля Neumarkt.",
+                    ogTitle: "Церква Святого Апостола – романська базиліка в центрі Кельна",
+                    ogDescription: "Відкрийте одну з найкрасивіших романських церков Кельна – Церкву Святого Апостола біля Neumarkt з тисячолітньою історією та унікальною архітектурою.",
+                    keywords: "церква Святого Апостола Кельн, St Aposteln Кельн, Санкт Апостельн Кельн, романські церкви Кельна, 12 романських церков Кельна, базиліка St Aposteln, пам’ятки Кельна, старе місто Кельна, церкви Кельна, Neumarkt Кельн, романська архітектура Кельн, середньовічні церкви Німеччини, історичні церкви Кельна, що подивитися в Кельні, туристичні місця Кельна, базиліка Кельн, Romanische Kirchen Köln, Altstadt Köln, храми Кельна, католицькі церкви Кельна",
+                    ogImage: "https://our-travels.info/foto/Germany/nrw/koln/koln-city/altstadt/romanische_kirchen/st_aposteln/001.jpg"
+                }
+            },
+            de: {
+                name: "St. Aposteln",
+                location: "Köln, Stadtteil Altstadt-Nord (Stadtbezirk Innenstadt), Deutschland",
+                officialSite: [
+                    { bold: "Offizielle Website", link: "https://www.st-aposteln.de/start/" }
+                ],
+                short_description: "Romanische Basilika aus dem 11.–12. Jahrhundert im Bereich Neumarkt in Köln, bekannt für ihren dreikonchen Ostchor und ihre musikalische Tradition.",
+                full_description: {
+                    title: "Beschreibung und Geschichte",
+                    items: [
+                        { bold: "St. Aposteln", text: "– eine der bekanntesten romanischen Kirchen Kölns und Teil des berühmten Ensembles der „12 großen romanischen Kirchen der Stadt“. Die Basilika liegt am Neumarkt – einem der zentralen und lebendigsten Plätze Kölns. Trotz der städtischen Umgebung herrscht im Inneren eine ruhige und nahezu klösterliche Atmosphäre. Das wichtigste architektonische Merkmal ist der massive dreikonchige Ostchor (Dreikonchenanlage) – eines der besten Beispiele rheinischer Romanik." },
+                        { text: "Das heutige Erscheinungsbild der Kirche entwickelte sich über viele Jahrhunderte. Im Inneren finden sich massive romanische Säulen, Gewölbe, historische Dekorelemente und ein strenger mittelalterlicher Innenraum ohne übermäßige gotische Ausschmückung. Die Kirche ist nicht nur architektonisch bedeutend, sondern auch für ihre musikalische Tradition bekannt: Hier finden regelmäßig Orgel- und Chorkonzerte statt, und die Basilika gilt als eine der wichtigsten „Musik-Kirchen“ Kölns." },
+                        { text: "Heute ist die Kirche St. Aposteln weiterhin eine aktive römisch-katholische Kirche und zugleich ein bedeutendes historisches Denkmal. Sie gehört zu den wichtigsten Sehenswürdigkeiten im historischen Zentrum Kölns und zieht sowohl Pilger als auch Liebhaber mittelalterlicher Architektur an." },
+                        { bold: "Geschichte", text: "Die ersten Erwähnungen der Kirche an diesem Standort stammen etwa aus dem 10. Jahrhundert. Sie wurde außerhalb der römischen Stadtmauer Kölns an der Straße nach Aachen errichtet. Bereits im 11. Jahrhundert entstand hier eine große romanische Basilika, die den zwölf Aposteln gewidmet war. Im 12. Jahrhundert wurde die Kirche erheblich erweitert und erhielt den berühmten dreikonchigen Chor als zentrales architektonisches Element." },
+                        { text: "Im Mittelalter war die Kirche ein wichtiges religiöses Zentrum der Stadt. Sie wurde mehrfach umgebaut, behielt jedoch ihre romanische Grundstruktur auch nach der Einführung der Gotik. Im Zweiten Weltkrieg wurde die Basilika stark beschädigt – Teile des Gebäudes wurden zerstört und das Innere schwer beschädigt. Nach dem Krieg wurde die Kirche über viele Jahre restauriert, um ihr historisches Erscheinungsbild wiederherzustellen." },
+                        { text: "In den Jahren 2021–2022 feierte die Kirche etwa 1000 Jahre ihres Bestehens. Heute gilt St. Aposteln als eines der wichtigsten Beispiele romanischer Architektur in Deutschland und ist Teil der touristischen Route der romanischen Kirchen Kölns." },
+                    ]
+                },
+                tickets_and_entry: {
+                    title: "Praktische Informationen",
+                    items: [
+                        { bold: "Adresse:", text: "Neumarkt 30, 50667 Köln" },
+                        { bold: "Konfession:", text: "römisch-katholische Kirche" }
+                    ]
+                },
+                relics: {
+                    title: "Relikte und Besonderheiten",
+                    items: [
+                        { bold: "Romanischer Innenraum", text: "Der Hauptteil der Basilika bewahrt die typische romanische Architektur mit massiven Säulen, Bögen und strengen geometrischen Formen." },
+                        { bold: "Dreikonchenchor", text: "Das wichtigste architektonische Merkmal der Kirche ist der östliche Teil mit drei halbkreisförmigen Apsiden." },
+                        { bold: "Orgel und musikalische Tradition", text: "In der Kirche befinden sich mehrere Orgeln, und musikalische Veranstaltungen sind ein wichtiger Bestandteil des Gemeindelebens." },
+                        { bold: "Moderne Glasfenster in der Aula", text: "An die Kirche schließt sich die Aula mit modernen künstlerischen Glasfenstern an, die einen spannenden Kontrast zur mittelalterlichen Architektur bilden." }
+                    ]
+                },
+                interestingFacts: {
+                    title: "Interessante Fakten",
+                    isList: true,
+                    items: [
+                        { text: "Die Kirche ist bekannt für ihren dreikonchigen Ostchor – eines der Symbole der rheinischen Romanik." },
+                        { text: "Im Krieg wurde die Basilika fast vollständig zerstört, später jedoch nach historischen Plänen wieder aufgebaut." },
+                        { text: "St. Aposteln ist als „Musik-Kirche Kölns“ bekannt благодаря regelmäßigen Konzerten und Chordarbietungen." },
+                        { text: "Hier finden Gottesdienste in lateinischer Sprache mit gregorianischem Choral statt." }
+                    ]
+                },
+                construction_period: "10.–11. Jahrhundert",
+                meta: {
+                    title: "St. Aposteln – romanische Kirche in Köln am Neumarkt",
+                    description: "St. Aposteln ist eine der 12 romanischen Kirchen Kölns. Geschichte, Architektur, interessante Fakten, Fotos und Besuchsinformationen zur Basilika am Neumarkt.",
+                    ogTitle: "St. Aposteln – romanische Basilika im Zentrum von Köln",
+                    ogDescription: "Entdecken Sie eine der schönsten romanischen Kirchen Kölns – St. Aposteln am Neumarkt mit tausendjähriger Geschichte und einzigartiger Architektur.",
+                    keywords: "St. Aposteln Köln, romanische Kirchen Köln, 12 romanische Kirchen Köln, Basilika St. Aposteln, Sehenswürdigkeiten Köln, Altstadt Köln, Kirchen Köln, Neumarkt Köln, Romanik Köln, mittelalterliche Kirchen Deutschland, historische Kirchen Köln, Köln Sehenswürdigkeiten, touristische Orte Köln, Romanische Kirchen Köln Route",
+                    ogImage: "https://our-travels.info/foto/Germany/nrw/koln/koln-city/altstadt/romanische_kirchen/st_aposteln/001.jpg"
                 }
             }
         }
