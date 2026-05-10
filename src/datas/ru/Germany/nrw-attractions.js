@@ -67,7 +67,7 @@ const datas = [
         countryPath: "germany", regionPath: "nrw", districtPath: "city", cityPath: "koln",
         showMore: true, hiddenFromList: true,
         fotoCard: "Germany/nrw/koln/koln-city/koln-cathedral/001.jpg",
-        location: "Кёльн, Германия",
+        location: "Кёльн, район Altstadt-Nord (округ Innenstadt), Германия",
         officialSite: [{ bold: 'Официальный сайт Кёльнского собора', link: 'https://www.koelner-dom.de/' }],
         unesco_status: {
             included: true,
@@ -148,7 +148,7 @@ const datas = [
         countryPath: "germany", regionPath: "nrw", districtPath: "city", cityPath: "koln",
         showMore: true, hiddenFromList: true,
         fotoCard: "Germany/nrw/koln/koln-city/rathaus-koeln/Rathaus-Köln.jpg",
-        location: "Кёльн, Германия",
+        location: "Кёльн, район Altstadt-Nord (округ Innenstadt), Германия",
         address: [{ bold: "Адрес Кёльнской ратуши:", text: " Rathausplatz 2, 50667 Köln, Deutschland " },],
         officialSite: [
             { bold: "Официальный сайт", link: "https://www.stadt-koeln.de/", text: ' города Кёльна (ратуша)' },
@@ -254,7 +254,7 @@ const datas = [
         countryPath: "germany", regionPath: "nrw", districtPath: "city", cityPath: "koln",
         hiddenFromList: true, showMore: true,
         fotoCard: "Germany/nrw/koln/koln-city/altstadt/romanische_kirchen/gross_st_martin/001.jpg",
-        location: "Кёльн, Германия",
+        location: "Кёльн, район Altstadt-Nord (округ Innenstadt), Германия",
         officialSite: [
             { bold: "Официальный сайт", link: "https://www.romanische-kirchen-koeln.de/willkommen/willkommen" }
         ],
@@ -307,7 +307,7 @@ const datas = [
         hiddenFromList: true, showMore: true,
         map: "romanische_kirchen_altstadt_koln",
         fotoCard: "Germany/nrw/koln/koln-city/altstadt/romanische_kirchen/stMariaImKapitol/001.jpg",
-        location: "Кёльн, Германия",
+        location: "Кёльн, район Altstadt-Süd (округ Innenstadt), Германия",
         short_description: "Церковь Святой Марии в Капитолии (St. Maria im Kapitol) – крупнейшая романская церковь Кёльна и одна из двенадцати знаменитых романских церквей города. Она была построена в XI веке на месте древнеримского храма, посвящённого Капитолийской триаде богов – Юпитеру, Юноне и Минерве. Сегодня храм считается одним из важнейших памятников средневековой архитектуры Рейнской области. ",
         full_description: {
             title: "Описание и история",
@@ -374,7 +374,7 @@ const datas = [
         countryPath: "germany", regionPath: "nrw", districtPath: "city", cityPath: "koln",
         hiddenFromList: true, showMore: true,
         fotoCard: "Germany/nrw/koln/koln-city/altstadt/st_maria_himmelfahrt/001.jpg",
-        location: "Кёльн, Германия",
+        location: "Кёльн, район Altstadt-Süd (округ Innenstadt), Германия",
         short_description: "Санкт-Мария Химмельфарт (St. Mariä Himmelfahrt) – это выдающаяся католическая церковь Успения Пресвятой Девы Марии в старом городе Кёльна. Построенная в стиле барокко как иезуитская церковь, она долгое время была второй по величине после Кёльнского собора и остаётся одним из немногих сохранившихся барочных памятников города.",
         full_description: {
             title: "Описание и история",
@@ -422,7 +422,7 @@ const datas = [
         countryPath: "germany", regionPath: "nrw", districtPath: "city", cityPath: "koln",
         showMore: true, hiddenFromList: true,
         fotoCard: "Germany/nrw/koln/koln-city/altstadt/guerzenich_koln/001.jpg",
-        location: "Кёльн, Германия",
+        location: "Кёльн, район Altstadt-Nord (округ Innenstadt), Германия",
         officialSite: [
             { bold: "Официальный сайт", link: "https://koelncongress.de/locations/guerzenich-koeln/" }
         ],
@@ -484,7 +484,7 @@ const datas = [
         countryPath: "germany", regionPath: "nrw", districtPath: "city", cityPath: "koln",
         showMore: true, hiddenFromList: true,
         fotoCard: "Germany/nrw/koln/koln-city/roemisch-germanisches-museum/001.jpg",
-        location: "Кёльн, Германия",
+        location: "Кёльн, район Altstadt-Nord (округ Innenstadt), Германия",
         officialSite: [
             { bold: "Официальный сайт Римско-германского музея", link: "https://museenkoeln.de/portal/Roemisch-Germanisches-Museum" }
         ],
@@ -540,12 +540,12 @@ const datas = [
         countryPath: "germany", regionPath: "nrw", districtPath: "city", cityPath: "koln",
         showMore: true, hiddenFromList: true,
         fotoCard: "Germany/nrw/koln/koln-city/farina-duftmuseum/001.jpg",
-        location: "Кёльн, Германия",
+        location: "Кёльн, район Altstadt-Nord (округ Innenstadt), Германия",
         officialSite: [
             { bold: "Официальный сайт музея Фарина", link: "https://farina.org/de/duftmuseum/" }
         ],
         construction_period: "1709 (год основания фабрики Фарина)",
-        founder: " Иоганн Мария Фарина (Johann Maria Farina)",
+        founder: "Иоганн Мария Фарина (Johann Maria Farina)",
         short_description: "Музей духов в доме Фарина, известный также как «Дом одеколона», – старейший музей ароматов в мире и родина знаменитого Eau de Cologne, или «кёльнской воды». Именно здесь в 1709 году Иоганн Мария Фарина создал первый одеколон, который стал символом города и прославил Кёльн на весь мир.",
         full_description: {
             title: "Описание и история",
@@ -594,7 +594,7 @@ const datas = [
         countryPath: "germany", regionPath: "nrw", districtPath: "city", cityPath: "koln",
         showMore: true, hiddenFromList: true,
         fotoCard: "Germany/nrw/koln/koln-city/museum-ludwig/001.jpg",
-        location: "Кёльн, Германия",
+        location: "Кёльн, район Altstadt-Nord (округ Innenstadt), Германия",
         officialSite: [
             { bold: "Официальный сайт музея Людвига", link: "https://www.museum-ludwig.de" }
         ],
@@ -650,7 +650,7 @@ const datas = [
         path: "schokoladenmuseum",
         countryPath: "germany", regionPath: "nrw", districtPath: "city", cityPath: "koln",
         fotoCard: "Germany/nrw/koln/koln-city/schokoladenmuseum/001.jpg",
-        location: "Кёльн, Германия",
+        location: "Кёльн, район Altstadt-Süd (округ Innenstadt), Германия",
         officialSite: [
             {
                 "bold": "Официальный сайт Музея шоколада в Кёльне",
@@ -707,7 +707,7 @@ const datas = [
         countryPath: "germany", regionPath: "nrw", districtPath: "city", cityPath: "koln",
         showMore: true, hiddenFromList: true,
         fotoCard: "Germany/nrw/koln/koln-city/miqua/001.jpg",
-        location: "Кёльн, Германия",
+        location: "Кёльн, район Altstadt-Nord (округ Innenstadt), Германия",
         officialSite: [
             {
                 "bold": "Официальный сайт Музея в археологическом квартале Кёльна – MiQua",
@@ -783,7 +783,7 @@ const datas = [
         countryPath: "germany", regionPath: "nrw", districtPath: "city", cityPath: "koln",
         showMore: true, hiddenFromList: true,
         fotoCard: "Germany/nrw/koln/koln-city/wallraf_richartz_museum/001.jpg",
-        location: "Кёльн, Германия",
+        location: "Кёльн, район Altstadt-Süd (округ Innenstadt), Германия",
         officialSite: [
             { bold: "Официальный сайт музея", link: "http://www.wallraf.museum/en" }
         ],
@@ -843,7 +843,7 @@ const datas = [
         path: "ostasiatische_kunst_koln",
         countryPath: "germany", regionPath: "nrw", districtPath: "city", cityPath: "koln",
         fotoCard: "Germany/nrw/koln/koln-city/ostasiatische_kunst_koln/001.jpg",
-        location: "Кёльн, Германия",
+        location: "Кёльн, район Lindenthal (округ Lindenthal), Германия",
         officialSite: [
             { bold: "Официальный сайт", link: "https://museum-fuer-ostasiatische-kunst.de/Information_e?utm_source=chatgpt.com" }
         ],
@@ -899,7 +899,7 @@ const datas = [
         path: "museum_schnuetgen_koln",
         countryPath: "germany", regionPath: "nrw", districtPath: "city", cityPath: "koln",
         fotoCard: "Germany/nrw/koln/koln-city/schnuetgen/001.jpg",
-        location: "Кёльн, Германия",
+        location: "Кёльн, район Neustadt-Süd (округ Innenstadt), Германия",
         officialSite: [
             { bold: "Официальный сайт", link: "https://museum-schnuetgen.de/" }
         ],
@@ -963,7 +963,7 @@ const datas = [
         path: "rautenstrauch_joest_museum_koln",
         countryPath: "germany", regionPath: "nrw", districtPath: "city", cityPath: "koln",
         fotoCard: "Germany/nrw/koln/koln-city/rautenstrauch_joest_museum/001.jpg",
-        location: "Кёльн, Германия",
+        location: "Кёльн, район Neustadt-Süd (округ Innenstadt), Германия",
         officialSite: [
             { bold: "Официальный сайт", link: "https://www.rautenstrauch-joest-museum.de/Startseite" }
         ],
@@ -1025,7 +1025,7 @@ const datas = [
         countryPath: "germany", regionPath: "nrw", districtPath: "city", cityPath: "koln",
         showMore: true, hiddenFromList: true,
         fotoCard: "Germany/nrw/koln/koln-city/dufthaus_4711/001.jpg",
-        location: "Кёльн, Германия",
+        location: "Кёльн, район Altstadt-Nord (округ Innenstadt), Германия",
         officialSite: [
             { bold: "Официальный сайт", link: "https://4711.com/" }
         ],
@@ -1087,7 +1087,7 @@ const datas = [
         path: "makk_museum_koln",
         countryPath: "germany", regionPath: "nrw", districtPath: "city", cityPath: "koln",
         fotoCard: "Germany/nrw/koln/koln-city/makk_museum/001.JPG",
-        location: "Кёльн, Германия",
+        location: "Кёльн, район Altstadt-Nord (округ Innenstadt), Германия",
         officialSite: [
             { bold: "Официальный сайт", link: "https://makk.de/" }
         ],
@@ -1147,7 +1147,7 @@ const datas = [
         countryPath: "germany", regionPath: "nrw", districtPath: "city", cityPath: "koln",
         showMore: true, hiddenFromList: true,
         fotoCard: "Germany/nrw/koln/koln-city/stadtmuseum/001.jpg",
-        location: "Кёльн, Германия",
+        location: "Кёльн, район Altstadt-Nord (округ Innenstadt), Германия",
         officialSite: [
             { bold: "Официальный сайт", link: "https://www.koelnisches-stadtmuseum.de" }
         ],
@@ -1205,7 +1205,7 @@ const datas = [
         path: "sport_olympia_museum_koln",
         countryPath: "germany", regionPath: "nrw", districtPath: "city", cityPath: "koln",
         fotoCard: "Germany/nrw/koln/koln-city/sport_olympia_museum/001.jpg",
-        location: "Кёльн, Германия",
+        location: "Кёльн, район Altstadt-Süd (округ Innenstadt), Германия",
         officialSite: [
             { bold: "Официальный сайт", link: "https://sportmuseum.de/" }
         ],
@@ -1264,7 +1264,7 @@ const datas = [
         path: "photographische_sammlung_sk_stiftung_kultur_koln",
         countryPath: "germany", regionPath: "nrw", districtPath: "city", cityPath: "koln",
         fotoCard: "Germany/nrw/koln/koln-city/photographische_sammlung_sk_stiftung_kultur/001.jpg",
-        location: "Кёльн, Германия",
+        location: "Кёльн, район Neustadt-Nord (округ Innenstadt), Германия",
         officialSite: [
             { bold: "Официальный сайт", link: "https://www.photographie-sk-kultur.de/" }
         ],
@@ -1405,7 +1405,7 @@ const datas = [
         path: "skulpturenpark_koln",
         countryPath: "germany", regionPath: "nrw", districtPath: "city", cityPath: "koln",
         fotoCard: "Germany/nrw/koln/koln-city/skulpturenpark/001.jpg",
-        location: "Кёльн, Германия",
+        location: "Кёльн, район Riehl (округ Nippes), Германия",
         officialSite: [
             { bold: "Официальный сайт", link: "https://skulpturenparkkoeln.de/" }
         ],
@@ -1457,7 +1457,7 @@ const datas = [
         path: "zoo_koln",
         countryPath: "germany", regionPath: "nrw", districtPath: "city", cityPath: "koln",
         fotoCard: "Germany/nrw/koln/koln-city/zoo/001.jpg",
-        location: "Кёльн, Германия",
+        location: "Кёльн, район Riehl (округ Nippes), Германия",
         officialSite: [
             { bold: "Официальный сайт", link: "https://koelnerzoo.de/" }
         ],
@@ -1519,7 +1519,7 @@ const datas = [
         path: "forstbotanischer_garten",
         countryPath: "germany", regionPath: "nrw", districtPath: "city", cityPath: "koln",
         fotoCard: "Germany/nrw/koln/koln-city/forstbotanischer_garten/001.jpg",
-        location: "Кёльн, Германия",
+        location: "Кёльн, район Rodenkirchen (округ Rodenkirchen), Германия",
         officialSite: [
             {
                 bold: "Официальный сайт Forstbotanischer Garten",
@@ -1587,7 +1587,7 @@ const datas = [
         path: "flora_garten_koln",
         countryPath: "germany", regionPath: "nrw", districtPath: "city", cityPath: "koln",
         fotoCard: "Germany/nrw/koln/koln-city/flora_garten_koln/001.jpg",
-        location: "Кёльн, Германия",
+        location: "Кёльн, район Riehl (округ Nippes), Германия",
         short_description: "Ботанический сад Флора (Flora und Botanischer Garten, Köln) в Кёльне сочетает исторический парк и научный ботанический сад. Здесь можно увидеть более 10 000 растений со всего мира, прогуляться по тематическим аллеям и насладиться оранжереями. Идеальное место для отдыха и изучения растительного разнообразия.",
         full_description: {
             title: "Описание и история",
@@ -1645,18 +1645,17 @@ const datas = [
         path: "rheinpark_koln",
         countryPath: "germany", regionPath: "nrw", districtPath: "city", cityPath: "koln",
         fotoCard: "Germany/nrw/koln/koln-city/rheinpark_koln/001.jpg",
-        location: "Кёльн, Германия",
+        location: "Кёльн, район Deutz (округ Innenstadt), Германия",
         officialSite: [
             { bold: "Страница парка на сайте города Кёльн", link: "https://www.stadt-koeln.de/leben-in-koeln/freizeit-natur-sport/parks/rheinpark" },
             { bold: "<br>Официальный сайт детской железной дороги", link: "http://kleinbahn.koeln//" }
         ],
-        subObjects: ["tanzbrunnen", "koln_seilbahn", "divitia_koln"],
+        subObjects: ["tanzbrunnen", "divitia_koln"],
         short_description: "Рейнский парк (Rheinpark) – крупный общественный парк вдоль правого берега Рейна в районе Дойц (Deutz) города Кёльн. Он представляет собой исторически и архитектурно значимую зелёную зону, известную своими просторными лужайками, цветниками, прогулочными аллеями и великолепным видом на центр города с Кёльнским собором.",
         short_description_subObjects: {
             text: "В Рейнском парке Кёльна расположены следующие интересные места и аттракционы:",
             items: [
                 { bold: "Танцующий фонтан", text: "– красивое зрелищное сооружение с музыкой и подсветкой, привлекает туристов и жителей города." },
-                { bold: "Кёльнская канатная дорога", text: "– поднимает посетителей над Рейном, открывая панорамные виды на город и реку." },
                 { bold: "Римский форт Дивития", text: "– историческая крепость времен Римской империи, сохранившаяся на территории парка и доступная для осмотра." },
             ]
         },
@@ -1705,7 +1704,7 @@ const datas = [
         countryPath: "germany", regionPath: "nrw", districtPath: "city", cityPath: "koln",
         hiddenFromList: true, showMore: true,
         fotoCard: "Germany/nrw/koln/koln-city/rheinpark_koln/002.jpg",
-        location: "Кёльн, Германия",
+        location: "Кёльн, район Deutz (округ Innenstadt), Германия",
         officialSite: [
             { bold: "Официальная страница Tanzbrunnen (через KölnKongress)", link: "https://koelncongress.de/locations/tanzbrunnen-koeln/" }
         ],
@@ -1745,9 +1744,8 @@ const datas = [
         type: ["technical_structure"], rating: "popular",
         path: "koln_seilbahn",
         countryPath: "germany", regionPath: "nrw", districtPath: "city", cityPath: "koln",
-        hiddenFromList: true, showMore: true,
         fotoCard: "Germany/nrw/koln/koln-city/rheinpark_koln/003.jpg",
-        location: "Кёльн, Германия",
+        location: "Кёльн, район Riehl (округ Nippes), Германия",
         officialSite: [
             { bold: "Официальный сайт", link: "https://www.koelner-seilbahn.de/index.html" }
         ],
@@ -1771,6 +1769,7 @@ const datas = [
         tickets_and_entry: {
             title: "Практическая информация",
             items: [
+                { bold: "Адрес: ", text: "Северная станция – Riehler Straße 180, 50735 Köln <br>Южная станция – Rheinparkweg 1, 50679 Köln" },
                 { bold: "Сезон: ", text: "примерно с апреля по октябрь ежедневно." },
                 { bold: "Часы работы: ", text: "обычно с 10:00 до 18:00 (последний рейс ближе к 17:45–18:00)." },
                 { bold: "Билеты: ", text: "<br>взрослые: примерно 4,80 €–7,00 € за обратный билет, <br>дети (обычно до ~12 лет) дешевле. <br>Цены могут меняться, бывают скидки с KölnCard или другими картами." }
@@ -1803,7 +1802,7 @@ const datas = [
         countryPath: "germany", regionPath: "nrw", districtPath: "city", cityPath: "koln",
         hiddenFromList: true, showMore: true,
         fotoCard: "Germany/nrw/koln/koln-city/rheinpark_koln/004.jpg",
-        location: "Кёльн, Германия",
+        location: "Кёльн, район Deutz (округ Innenstadt), Германия",
         short_description: "Руины римского форта Дивития, известные также как исторический парк Дойтц, это остатки позднеримского укрепления IV века н.э. на правом берегу Рейна в Кёльне. Сохранились фрагменты башни, каменная кладка и основания стен. Доступен для свободного осмотра в пешеходной зоне Рейнского парка.",
         status: "partial", note: "сохранились фрагменты римского форта Дивития, включая остатки оборонительных стен и планировочные элементы укрепления, остальная структура утрачена и известна по археологическим данным.",
         full_description: {
@@ -1859,7 +1858,7 @@ const datas = [
         path: "finkens_garten_koln",
         countryPath: "germany", regionPath: "nrw", districtPath: "city", cityPath: "koln",
         fotoCard: "Germany/nrw/koln/koln-city/finkens_garten/001.jpg",
-        location: "Кёльн, Германия",
+        location: "Кёльн, район Rodenkirchen (округ Rodenkirchen), Германия",
         officialSite: [
             { bold: "Официальный сайт", link: "http://www.finkensgarten.org/" }
         ],
@@ -1913,7 +1912,7 @@ const datas = [
         path: "decksteiner_weiher_koln",
         countryPath: "germany", regionPath: "nrw", districtPath: "city", cityPath: "koln",
         fotoCard: "Germany/nrw/koln/koln-city/decksteiner_weiher/001.jpg",
-        location: "Кёльн, Германия",
+        location: "Кёльн, район Lindenthal (округ Lindenthal), Германия",
         short_description: "Декштайнер Вайер (Decksteiner Weiher) – крупнейший искусственный парковый водоём Кёльна, расположенный в западной части города в зоне внешнего зелёного пояса. Озеро окружено широкими аллеями, лесными участками и прогулочными дорожками. Благодаря длинной форме водоёма, тенистым каштановым аллеям и спокойной атмосфере это одно из самых популярных мест отдыха жителей города. ",
         full_description: {
             title: "Описание и история",

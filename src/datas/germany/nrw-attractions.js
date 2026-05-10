@@ -1729,7 +1729,7 @@ const datas = [
         translations: {
             ru: {
                 name: "Фишмаркт",
-                location: "Кёльн, Германия",
+                location: "Кёльн, район Altstadt-Nord (округ Innenstadt), Германия",
                 short_description: "Фишмаркт – историческая площадь Старого города Кёльна с яркими разноцветными домами и атмосферой средневекового рынка. Популярное место для прогулок, фотосессий, кафе и ярмарок, рядом с Кёльнским собором.",
                 full_description: {
                     title: "Описание и история",
@@ -1772,7 +1772,7 @@ const datas = [
             },
             ua: {
                 name: "Фішмаркт",
-                location: "Кельн, Німеччина",
+                location: "Кельн, район Altstadt-Nord (район Innenstadt), Німеччина",
                 short_description: "Фішмаркт – історична площа Старого міста Кельна з яскравими різнокольоровими будинками та атмосферою середньовічного ринку. Популярне місце для прогулянок, фотосесій, кафе та ярмарків, поруч з Кельнським собором.",
                 full_description: {
                     title: "Опис та історія",
@@ -1815,7 +1815,7 @@ const datas = [
             },
             de: {
                 name: "Fischmarkt",
-                location: "Köln, Deutschland",
+                location: "Köln, Stadtteil Altstadt-Nord (Stadtbezirk Innenstadt), Deutschland",
                 short_description: "Der Fischmarkt ist ein historischer Platz in der Altstadt von Köln mit bunten Häusern und der Atmosphäre eines mittelalterlichen Marktes. Ein beliebter Ort für Spaziergänge, Fotos, Cafés und Märkte, in der Nähe des Kölner Doms.",
                 full_description: {
                     title: "Beschreibung und Geschichte",
@@ -1870,7 +1870,7 @@ const datas = [
         translations: {
             ru: {
                 name: "Церковь Святого Гереона",
-                location: "Кёльн, Германия",
+                location: "Кёльн, район Neustadt-Nord (округ Innenstadt), Германия",
                 short_description: "Церковь Святого Гереона (St. Gereon) – одна из знаменитых романских церквей Кёльна, расположенная в Старом городе. Известна своей необычной круглой формой и богатым историческим наследием.",
                 full_description: {
                     title: "Описание и история",
@@ -1920,7 +1920,7 @@ const datas = [
             },
             ua: {
                 name: "Церква Святого Герєона",
-                location: "Кельн, Німеччина",
+                location: "Кельн, район Neustadt-Nord (район Innenstadt), Німеччина",
                 short_description: "Церква Святого Герєона (St. Gereon) – одна з відомих романських церков Кельна, розташована в Старому місті. Відома своєю незвичайною круглою формою та багатою історичною спадщиною.",
                 full_description: {
                     title: "Опис та історія",
@@ -1970,7 +1970,7 @@ const datas = [
             },
             de: {
                 name: "St. Gereon Kirche",
-                location: "Köln, Deutschland",
+                location: "Köln, Stadtteil Neustadt-Nord (Stadtbezirk Innenstadt), Deutschland",
                 short_description: "St. Gereon ist eine der bekannten romanischen Kirchen Kölns und befindet sich in der Altstadt. Sie ist bekannt für ihre ungewöhnliche runde Form und das reiche historische Erbe.",
                 full_description: {
                     title: "Beschreibung und Geschichte",
@@ -2032,7 +2032,7 @@ const datas = [
         translations: {
             ru: {
                 name: "Базилика Святого Куниберта",
-                location: "Кёльн, Германия",
+                location: "Кёльн, район Altstadt-Nord (округ Innenstadt), Германия",
                 short_description: "Базилика Святого Куниберта – католическая базилика в романском стиле в северной части старого Кёльна, последняя из 12 романских церквей Кёльна, завершённая в этом стиле.",
                 full_description: {
                     title: "Описание и история",
@@ -2074,7 +2074,7 @@ const datas = [
             },
             ua: {
                 name: "Базиліка Святого Куніберта",
-                location: "Кельн, Німеччина",
+                location: "Кельн, район Altstadt-Nord (район Innenstadt), Німеччина",
                 short_description: "Базиліка Святого Куніберта — католицька базиліка в романському стилі в північній частині старого Кельна, остання з 12 романських церков Кельна, завершена в цьому стилі.",
                 full_description: {
                     title: "Опис та історія",
@@ -2116,7 +2116,7 @@ const datas = [
             },
             de: {
                 name: "Basilika St. Kunibert",
-                location: "Köln, Deutschland",
+                location: "Köln, Stadtteil Altstadt-Nord (Stadtbezirk Innenstadt), Deutschland",
                 short_description: "Die Basilika St. Kunibert ist eine katholische Basilika im romanischen Stil im nördlichen Teil der Kölner Altstadt und die letzte der zwölf romanischen Kirchen Kölns, die in diesem Stil vollendet wurde.",
                 full_description: {
                     title: "Beschreibung und Geschichte",
@@ -2445,6 +2445,7 @@ const datas = [
         translations: {
             ru: {
                 name: "Форт I (внутреннее крепостное кольцо)", sortIndex: 1,
+                location: "Кёльн, район Neustadt-Süd (округ Innenstadt), Германия",
                 short_description: "Форт I (внутреннее крепостное кольцо) – один из фортов внутреннего кольца прусской крепостной системы Кёльна.",
                 status: "partial", note: "используется как общественный парк с сохранившимися элементами укреплений, включая редут, капониры и оборонительные валы.",
                 full_description: {
@@ -2472,6 +2473,7 @@ const datas = [
             },
             ua: {
                 name: "Форт I (внутрішнє фортифікаційне кільце)", sortIndex: 1,
+                location: "Кельн, район Neustadt-Süd (район Innenstadt), Німеччина",
                 short_description: "Форт I (внутрішнє фортифікаційне кільце) – один із фортів внутрішнього кільця прусської фортифікаційної системи Кельна. ",
                 status: "partial", note: "використовується як громадський парк із збереженими елементами укріплень, включаючи редут, капоніри та оборонні вали.",
                 full_description: {
@@ -2499,6 +2501,7 @@ const datas = [
             },
             de: {
                 name: "Fort I (innerer Festungsring)", sortIndex: 1,
+                location: "Köln, Stadtteil Neustadt-Süd (Stadtbezirk Innenstadt), Deutschland",
                 short_description: "Fort I (innerer Festungsring) – eines der Forts des inneren Rings des preußischen Festungssystems von Köln. ",
                 status: "partial", note: "wird als öffentlicher Park genutzt, mit erhaltenen Elementen der Befestigungsanlagen, darunter Redoute, Kaponniere und Verteidigungswälle.",
                 full_description: {
@@ -2537,6 +2540,7 @@ const datas = [
         translations: {
             ru: {
                 name: "Форт II (внутреннее крепостное кольцо)", sortIndex: 2,
+                location: "Кёльн, район Raderberg (округ Innenstadt), Германия",
                 status: "lost", note: "объект снесён в середине 1930-х годов. Видимые следы укреплений на местности не сохранились.",
                 short_description: "Форт II (внутреннее крепостное кольцо) – один из фортов внутреннего кольца прусской крепостной системы Кёльна.",
                 full_description: {
@@ -2549,7 +2553,7 @@ const datas = [
                         { text: "Форт II располагался в районе современного грузового вокзала Bonntor в южной части Кёльна. Его расположение было более удалённым от городской стены по сравнению с другими фортами внутреннего кольца, что нарушало общую симметрию оборонительной системы." },
                         { text: "В связи с этим он не был включён в последующие этапы модернизации внутреннего кольца укреплений." },
                         { text: "Военное использование форта завершилось в 1880-х годах, а окончательный снос был произведён в середине 1930-х годов. В настоящее время на местности не сохранилось видимых следов укрепления." },
-                        { bold: "Где:", text: " район Bayenthal, южная часть Кёльна." }
+                        { bold: "Где:", text: " район Raderberg, южная часть Кёльна." }
                     ]
                 },
                 construction_period: "1816–1821",
@@ -2564,6 +2568,7 @@ const datas = [
             },
             ua: {
                 name: "Форт II (внутрішнє фортифікаційне кільце)", sortIndex: 2,
+                location: "Кельн, район Raderberg (район Innenstadt), Німеччина",
                 status: "lost", note: "об’єкт знесено в середині 1930-х років. Видимих слідів укріплень на місцевості не збереглося.",
                 short_description: "Форт II (внутрішнє фортифікаційне кільце) – один із фортів внутрішнього кільця прусської фортифікаційної системи Кельна.",
                 full_description: {
@@ -2576,7 +2581,7 @@ const datas = [
                         { text: "Форт II розташовувався в районі сучасного вантажного вокзалу Bonntor у південній частині Кельна. Його розташування було більш віддаленим від міського муру порівняно з іншими фортами внутрішнього кільця, що порушувало загальну симетрію оборонної системи." },
                         { text: "У зв’язку з цим він не був включений до наступних етапів модернізації внутрішнього фортифікаційного кільця." },
                         { text: "Військове використання форту завершилося у 1880-х роках, а остаточний демонтаж був здійснений у середині 1930-х років. На сьогодні на місцевості не збереглося видимих слідів укріплення." },
-                        { bold: "Де:", text: " район Bayenthal, південна частина Кельна." }
+                        { bold: "Де:", text: " район Raderberg, південна частина Кельна." }
                     ]
                 },
                 construction_period: "1816–1821",
@@ -2591,6 +2596,7 @@ const datas = [
             },
             de: {
                 name: "Fort II (innerer Festungsring)", sortIndex: 2,
+                location: "Köln, Stadtteil Raderberg (Stadtbezirk Innenstadt), Deutschland",
                 status: "lost", note: "Das Objekt wurde Mitte der 1930er Jahre abgerissen. Sichtbare Spuren der Befestigungsanlagen sind vor Ort nicht erhalten geblieben.",
                 short_description: "Fort II (innerer Festungsring) – eines der Forts des inneren Rings des preußischen Festungssystems von Köln.",
                 full_description: {
@@ -2603,7 +2609,7 @@ const datas = [
                         { text: "Fort II befand sich im Bereich des heutigen Güterbahnhofs Bonntor im südlichen Teil von Köln. Seine Lage war im Vergleich zu anderen Forts des inneren Rings weiter von der Stadtmauer entfernt, was die Symmetrie des Verteidigungssystems störte." },
                         { text: "Aus diesem Grund wurde es nicht in spätere Modernisierungsmaßnahmen des inneren Festungsrings einbezogen." },
                         { text: "Die militärische Nutzung des Forts endete in den 1880er Jahren, und der endgültige Abbruch erfolgte Mitte der 1930er Jahre. Heute sind keine sichtbaren Reste der Anlage erhalten." },
-                        { bold: "Lage:", text: " Stadtteil Bayenthal, südlicher Teil von Köln." }
+                        { bold: "Lage:", text: " Stadtteil Raderberg, südlicher Teil von Köln." }
                     ]
                 },
                 construction_period: "1816–1821",
@@ -2629,6 +2635,7 @@ const datas = [
         translations: {
             ru: {
                 name: "Форт III (внутреннее крепостное кольцо)", sortIndex: 3,
+                location: "Кёльн, район Neustadt-Süd (округ Innenstadt), Германия",
                 short_description: "Форт III (внутреннее крепостное кольцо) – один из фортов внутреннего кольца прусской крепостной системы Кёльна. ",
                 status: "lost", note: "в 1960-х годах сооружение было окончательно демонтировано. Территория форта полностью интегрирована в городскую среду, и видимые остатки не сохранились.",
                 full_description: {
@@ -2653,6 +2660,7 @@ const datas = [
             },
             ua: {
                 name: "Форт III (внутрішнє кріпосне кільце)", sortIndex: 3,
+                location: "Кельн, район Neustadt-Süd (район Innenstadt), Німеччина",
                 short_description: "Форт III (внутрішнє кріпосне кільце) – один із фортів внутрішнього кільця прусської фортифікаційної системи Кельна. ",
                 status: "lost", note: "у 1960-х роках споруду було остаточно демонтовано. Територія форту повністю інтегрована в міське середовище, видимі залишки не збереглися.",
                 full_description: {
@@ -2677,6 +2685,7 @@ const datas = [
             },
             de: {
                 name: "Fort III (innerer Festungsring)", sortIndex: 3,
+                location: "Кельн, район Neustadt-Süd (район Innenstadt), Німеччина",
                 short_description: "Fort III (innerer Festungsring) – eines der Forts des inneren Rings der preußischen Festungsanlage in Köln. ",
                 status: "lost", note: "in den 1960er Jahren wurde die Anlage endgültig abgetragen. Das Gelände des Forts ist vollständig in das Stadtbild integriert, sichtbare Überreste sind nicht erhalten geblieben.",
                 full_description: {
@@ -2713,6 +2722,7 @@ const datas = [
         translations: {
             ru: {
                 name: "Форт V (внутреннее крепостное кольцо)", sortIndex: 5,
+                location: "Кёльн, район Lindenthal (округ Lindenthal), Германия",
                 short_description: "Форт V – форт внутреннего прусского оборонительного кольца Кёльна, построенный в 1843–1847 годах.",
                 status: "partial", note: "используется Географическим институтом Кёльнского университета",
                 full_description: {
@@ -2738,6 +2748,7 @@ const datas = [
             },
             ua: {
                 name: "Форт V (внутрішнє кріпосне кільце)", sortIndex: 5,
+                location: "Кельн, район Lindenthal (район Lindenthal), Німеччина",
                 short_description: "Форт V – форт внутрішнього прусського оборонного кільця Кельна, збудований у 1843–1847 роках.",
                 status: "partial", note: "використовується Географічним інститутом Кельнського університету",
                 full_description: {
@@ -2763,6 +2774,7 @@ const datas = [
             },
             de: {
                 name: "Fort V (innerer Festungsring)", sortIndex: 5,
+                location: "Köln, Stadtteil Lindenthal (Stadtbezirk Lindenthal), Deutschland",
                 short_description: "Fort V – ein Fort des inneren preußischen Festungsrings von Köln, erbaut 1843–1847. ",
                 status: "partial", note: "wird vom Geographischen Institut der Universität zu Köln genutzt",
                 full_description: {
@@ -2789,103 +2801,6 @@ const datas = [
         }
     },
     {
-        id: "fort_IX_inner_koln",
-        type: ["historical_building"], rating: "local",
-        path: "fort_IX_inner_koln",
-        countryPath: "germany", regionPath: "nrw", districtPath: "city", cityPath: "koln",
-        hiddenFromList: true, showMore: true,
-        map: "prussian_fortress_system_koln",
-        coord: { lat: 50.95376, lng: 6.95124 },
-        translations: {
-            ru: {
-                name: "Форт IX (внутреннее крепостное кольцо)", sortIndex: 9,
-                short_description: "Форт IX – элемент внутреннего прусского оборонительного кольца Кёльна, сформированного в первой половине XIX века.",
-                status: "lost", note: "сооружения полностью снесены около 1912–1913 годов при строительстве железнодорожной инфраструктуры; видимые остатки не сохранились.",
-                full_description: {
-                    title: "Описание и история",
-                    items: [
-                        { bold: "Форт IX", text: "являлся частью внутреннего прусского оборонительного кольца Кёльна, сформированного после перехода города под контроль Пруссии в начале XIX века." },
-                        { text: "Первоначальные укрепления этого участка были созданы в 1810–1820-х годах как часть пояса фортов вокруг левобережной части города." },
-                        { text: "В 1843–1847 годах на месте более ранних сооружений был возведён обновлённый фортификационный объект по проекту Генриха Фердинанда Шуберта с участием Эрнста Людвига фон Астера и Карла Фердинанда Буссе." },
-                        { text: "Форт располагался в юго-западной части Кёльна, в районе современной улицы Escher Straße (Zollstock), и входил в линию укреплений, находившуюся в непосредственной близости от городской застройки." },
-                        { text: "В 1888 году форт был переименован в «Fort Prinz Friedrich der Niederlande», что отражало традицию присвоения укреплениям имён членов правящих домов." },
-                        { text: "С развитием артиллерии и строительством внешнего оборонительного кольца во второй половине XIX века внутренние укрепления утратили своё значение и постепенно выводились из военного использования." },
-                        { text: "К началу XX века территория форта частично использовалась в хозяйственных целях, однако около 1912–1913 годов сооружения были полностью снесены в связи с развитием железнодорожной инфраструктуры." },
-                        { text: "В настоящее время от форта не сохранилось видимых следов." },
-                        { bold: "Где:", text: "район Köln-Zollstock (Escher Straße), левобережная часть бывшего внутреннего оборонительного кольца" }
-                    ]
-                },
-                construction_period: "1816–1825",
-                meta: {
-                    title: "Форт IX (внутреннее крепостное кольцо Кёльна)",
-                    description: "Форт IX – элемент внутреннего прусского оборонительного кольца Кёльна XIX века. До наших дней сохранились лишь фрагменты укреплений.",
-                    ogTitle: "Форт IX (внутреннее крепостное кольцо Кёльна)",
-                    ogDescription: "Форт IX – один из фортов раннего прусского оборонительного кольца Кёльна, частично сохранившийся и интегрированный в городскую среду.",
-                    keywords: "Форт IX Кёльн внутренний, внутренний крепостной пояс Кёльна, Festung Köln innerer Ring, Fort IX Köln Zollstock",
-                    ogImage: ""
-                }
-            },
-            ua: {
-                name: "Форт IX (внутрішнє кріпосне кільце)", sortIndex: 9,
-                short_description: "Форт IX – елемент внутрішнього прусського оборонного кільця Кельна, сформованого у першій половині XIX століття.",
-                status: "lost",
-                note: "споруди повністю знесені приблизно у 1912–1913 роках під час будівництва залізничної інфраструктури; видимі залишки не збереглися.",
-                full_description: {
-                    title: "Опис та історія",
-                    items: [
-                        { bold: "Форт IX", text: "був частиною внутрішнього прусського оборонного кільця Кельна, сформованого після переходу міста під контроль Пруссії на початку XIX століття." },
-                        { text: "Початкові укріплення цієї ділянки були створені у 1810–1820-х роках як частина поясу фортів навколо лівобережної частини міста." },
-                        { text: "У 1843–1847 роках на місці більш ранніх споруд було зведено оновлений фортифікаційний об’єкт за проєктом Генріха Фердинанда Шуберта за участю Ернста Людвіга фон Астера та Карла Фердинанда Буссе." },
-                        { text: "Форт розташовувався у південно-західній частині Кельна, в районі сучасної вулиці Escher Straße (Zollstock), і входив до лінії укріплень, що знаходилася у безпосередній близькості до міської забудови." },
-                        { text: "У 1888 році форт було перейменовано на «Fort Prinz Friedrich der Niederlande», що відображало традицію надання укріпленням імен представників правлячих династій." },
-                        { text: "З розвитком артилерії та будівництвом зовнішнього оборонного кільця у другій половині XIX століття внутрішні укріплення втратили своє військове значення та поступово виводилися з експлуатації." },
-                        { text: "На початку XX століття територія форту частково використовувалася у господарських цілях, однак приблизно у 1912–1913 роках споруди були повністю знесені у зв’язку з розвитком залізничної інфраструктури." },
-                        { text: "Наразі від форту не збереглося видимих слідів." },
-                        { bold: "Де:", text: "район Köln-Zollstock (Escher Straße), лівобережна частина колишнього внутрішнього оборонного кільця" }
-                    ]
-                },
-                construction_period: "1816–1825",
-                meta: {
-                    title: "Форт IX (внутрішнє кріпосне кільце Кельна)",
-                    description: "Форт IX – елемент внутрішнього прусського оборонного кільця Кельна XIX століття. До наших днів збереглися лише фрагменти укріплень.",
-                    ogTitle: "Форт IX (внутрішнє кріпосне кільце Кельна)",
-                    ogDescription: "Форт IX – один із фортів раннього прусського оборонного кільця Кельна, частково збережений та інтегрований у міське середовище.",
-                    keywords: "Форт IX Кельн внутрішній, внутрішній кріпосний пояс Кельна, Festung Köln innerer Ring, Fort IX Köln Zollstock",
-                    ogImage: ""
-                }
-            },
-            de: {
-                name: "Fort IX (innerer Festungsring)", sortIndex: 9,
-                short_description: "Fort IX – ein Element des inneren preußischen Festungsrings von Köln, der in der ersten Hälfte des 19. Jahrhunderts entstanden ist.",
-                status: "lost",
-                note: "die Bauwerke wurden etwa 1912–1913 beim Bau von Eisenbahninfrastruktur vollständig abgetragen; sichtbare Reste sind nicht erhalten.",
-                full_description: {
-                    title: "Beschreibung und Geschichte",
-                    items: [
-                        { bold: "Fort IX", text: "war Teil des inneren preußischen Festungsrings von Köln, der nach der Übernahme der Stadt durch Preußen zu Beginn des 19. Jahrhunderts entstand." },
-                        { text: "Die ersten Befestigungen dieses Abschnitts wurden in den 1810er–1820er Jahren als Teil eines Festungsgürtels um den linksrheinischen Stadtbereich errichtet." },
-                        { text: "In den Jahren 1843–1847 wurde anstelle früherer Anlagen ein erneuertes Befestigungsbauwerk nach den Plänen von Heinrich Ferdinand Schubert unter Beteiligung von Ernst Ludwig von Aster und Karl Ferdinand Busse errichtet." },
-                        { text: "Das Fort befand sich im südwestlichen Teil von Köln im Bereich der heutigen Escher Straße (Zollstock) und war Teil einer Befestigungslinie in unmittelbarer Nähe der städtischen Bebauung." },
-                        { text: "Im Jahr 1888 wurde das Fort in «Fort Prinz Friedrich der Niederlande» umbenannt, was der Tradition entsprach, Befestigungsanlagen nach Mitgliedern regierender Häuser zu benennen." },
-                        { text: "Mit der Entwicklung der Artillerie und dem Bau des äußeren Festungsrings verloren die inneren Befestigungen in der zweiten Hälfte des 19. Jahrhunderts ihre militärische Bedeutung und wurden schrittweise außer Dienst gestellt." },
-                        { text: "Zu Beginn des 20. Jahrhunderts wurde das Gelände teilweise wirtschaftlich genutzt, jedoch wurden die Bauwerke etwa 1912–1913 im Zuge der Entwicklung der Eisenbahninfrastruktur vollständig abgetragen." },
-                        { text: "Heute sind keine sichtbaren Spuren des Forts erhalten." },
-                        { bold: "Wo:", text: "Stadtteil Köln-Zollstock (Escher Straße), linksrheinischer Bereich des ehemaligen inneren Festungsrings" }
-                    ]
-                },
-                construction_period: "1816–1825",
-                meta: {
-                    title: "Fort IX (innerer Festungsring Köln)",
-                    description: "Fort IX – ein Element des inneren preußischen Festungsrings von Köln aus dem 19. Jahrhundert. Nur wenige Spuren sind bis heute erhalten.",
-                    ogTitle: "Fort IX (innerer Festungsring Köln)",
-                    ogDescription: "Fort IX – eines der frühen Forts des inneren Kölner Festungsrings, heute vollständig verschwunden und nur historisch nachweisbar.",
-                    keywords: "Fort IX Köln innerer Ring, innerer Festungsring Köln, Festung Köln innerer Ring, Fort IX Zollstock Köln",
-                    ogImage: ""
-                }
-            }
-        }
-    },
-    {
         id: "fort_VI_inner_koln",
         type: ["historical_building"], rating: "local",
         path: "fort_VI_inner_koln",
@@ -2896,6 +2811,7 @@ const datas = [
         translations: {
             ru: {
                 name: "Форт VI (внутреннее крепостное кольцо)", sortIndex: 6,
+                location: "Кёльн, район Lindenthal (округ Lindenthal), Германия",
                 short_description: "Форт VI – форт внутреннего прусского оборонительного кольца Кёльна, построенный в 1818–1823 годах.",
                 status: "lost", note: "полностью утрачен, не сохранился",
                 full_description: {
@@ -2921,6 +2837,7 @@ const datas = [
             },
             ua: {
                 name: "Форт VI (внутрішнє кріпосне кільце)", sortIndex: 6,
+                location: "Кельн, район Lindenthal (район Lindenthal), Німеччина",
                 short_description: "Форт VI – форт внутрішнього прусського оборонного кільця Кельна, збудований у 1818–1823 роках.",
                 status: "lost", note: "повністю втрачений",
                 full_description: {
@@ -2946,6 +2863,7 @@ const datas = [
             },
             de: {
                 name: "Fort VI (innerer Festungsring)", sortIndex: 6,
+                location: "Köln, Stadtteil Lindenthal (Stadtbezirk Lindenthal), Deutschland",
                 short_description: "Fort VI – ein Fort des frühen preußischen Verteidigungsrings von Köln, erbaut 1818–1823.",
                 status: "lost", note: "vollständig verschwunden",
                 full_description: {
@@ -2972,6 +2890,106 @@ const datas = [
         }
     },
     {
+        id: "fort_IX_inner_koln",
+        type: ["historical_building"], rating: "local",
+        path: "fort_IX_inner_koln",
+        countryPath: "germany", regionPath: "nrw", districtPath: "city", cityPath: "koln",
+        hiddenFromList: true, showMore: true,
+        map: "prussian_fortress_system_koln",
+        coord: { lat: 50.95376, lng: 6.95124 },
+        translations: {
+            ru: {
+                name: "Форт IX (внутреннее крепостное кольцо)", sortIndex: 9,
+                location: "Кёльн, район Neuehrenfeld (округ Ehrenfeld), Германия",
+                short_description: "Форт IX – элемент внутреннего прусского оборонительного кольца Кёльна, сформированного в первой половине XIX века.",
+                status: "lost", note: "сооружения полностью снесены около 1912–1913 годов при строительстве железнодорожной инфраструктуры; видимые остатки не сохранились.",
+                full_description: {
+                    title: "Описание и история",
+                    items: [
+                        { bold: "Форт IX", text: "являлся частью внутреннего прусского оборонительного кольца Кёльна, сформированного после перехода города под контроль Пруссии в начале XIX века." },
+                        { text: "Первоначальные укрепления этого участка были созданы в 1810–1820-х годах как часть пояса фортов вокруг левобережной части города." },
+                        { text: "В 1843–1847 годах на месте более ранних сооружений был возведён обновлённый фортификационный объект по проекту Генриха Фердинанда Шуберта с участием Эрнста Людвига фон Астера и Карла Фердинанда Буссе." },
+                        { text: "Форт располагался в юго-западной части Кёльна, в районе современной улицы Escher Straße (Zollstock), и входил в линию укреплений, находившуюся в непосредственной близости от городской застройки." },
+                        { text: "В 1888 году форт был переименован в «Fort Prinz Friedrich der Niederlande», что отражало традицию присвоения укреплениям имён членов правящих домов." },
+                        { text: "С развитием артиллерии и строительством внешнего оборонительного кольца во второй половине XIX века внутренние укрепления утратили своё значение и постепенно выводились из военного использования." },
+                        { text: "К началу XX века территория форта частично использовалась в хозяйственных целях, однако около 1912–1913 годов сооружения были полностью снесены в связи с развитием железнодорожной инфраструктуры." },
+                        { text: "В настоящее время от форта не сохранилось видимых следов." },
+                        { bold: "Где:", text: "район Neuehrenfeld (Escher Straße), северо-западная часть бывшего внутреннего оборонительного кольца Кёльна" }
+                    ]
+                },
+                construction_period: "1816–1825",
+                meta: {
+                    title: "Форт IX (внутреннее крепостное кольцо Кёльна)",
+                    description: "Форт IX – элемент внутреннего прусского оборонительного кольца Кёльна XIX века. До наших дней сохранились лишь фрагменты укреплений.",
+                    ogTitle: "Форт IX (внутреннее крепостное кольцо Кёльна)",
+                    ogDescription: "Форт IX – один из фортов раннего прусского оборонительного кольца Кёльна, частично сохранившийся и интегрированный в городскую среду.",
+                    keywords: "Форт IX Кёльн внутренний, внутренний крепостной пояс Кёльна, Festung Köln innerer Ring, Fort IX Köln Zollstock",
+                    ogImage: ""
+                }
+            },
+            ua: {
+                name: "Форт IX (внутрішнє кріпосне кільце)", sortIndex: 9,
+                location: "Кельн, район Neuehrenfeld (район Ehrenfeld), Німеччина",
+                short_description: "Форт IX – елемент внутрішнього прусського оборонного кільця Кельна, сформованого у першій половині XIX століття.",
+                status: "lost",
+                note: "споруди повністю знесені приблизно у 1912–1913 роках під час будівництва залізничної інфраструктури; видимі залишки не збереглися.",
+                full_description: {
+                    title: "Опис та історія",
+                    items: [
+                        { bold: "Форт IX", text: "був частиною внутрішнього прусського оборонного кільця Кельна, сформованого після переходу міста під контроль Пруссії на початку XIX століття." },
+                        { text: "Початкові укріплення цієї ділянки були створені у 1810–1820-х роках як частина поясу фортів навколо лівобережної частини міста." },
+                        { text: "У 1843–1847 роках на місці більш ранніх споруд було зведено оновлений фортифікаційний об’єкт за проєктом Генріха Фердинанда Шуберта за участю Ернста Людвіга фон Астера та Карла Фердинанда Буссе." },
+                        { text: "Форт розташовувався у південно-західній частині Кельна, в районі сучасної вулиці Escher Straße (Zollstock), і входив до лінії укріплень, що знаходилася у безпосередній близькості до міської забудови." },
+                        { text: "У 1888 році форт було перейменовано на «Fort Prinz Friedrich der Niederlande», що відображало традицію надання укріпленням імен представників правлячих династій." },
+                        { text: "З розвитком артилерії та будівництвом зовнішнього оборонного кільця у другій половині XIX століття внутрішні укріплення втратили своє військове значення та поступово виводилися з експлуатації." },
+                        { text: "На початку XX століття територія форту частково використовувалася у господарських цілях, однак приблизно у 1912–1913 роках споруди були повністю знесені у зв’язку з розвитком залізничної інфраструктури." },
+                        { text: "Наразі від форту не збереглося видимих слідів." },
+                        { bold: "Де:", text: "район Neuehrenfeld (Escher Straße), північно-західна частина колишнього внутрішнього оборонного кільця Кельна" }
+                    ]
+                },
+                construction_period: "1816–1825",
+                meta: {
+                    title: "Форт IX (внутрішнє кріпосне кільце Кельна)",
+                    description: "Форт IX – елемент внутрішнього прусського оборонного кільця Кельна XIX століття. До наших днів збереглися лише фрагменти укріплень.",
+                    ogTitle: "Форт IX (внутрішнє кріпосне кільце Кельна)",
+                    ogDescription: "Форт IX – один із фортів раннього прусського оборонного кільця Кельна, частково збережений та інтегрований у міське середовище.",
+                    keywords: "Форт IX Кельн внутрішній, внутрішній кріпосний пояс Кельна, Festung Köln innerer Ring, Fort IX Köln Zollstock",
+                    ogImage: ""
+                }
+            },
+            de: {
+                name: "Fort IX (innerer Festungsring)", sortIndex: 9,
+                location: "Köln, Stadtteil Neuehrenfeld (Stadtbezirk Ehrenfeld), Deutschland",
+                short_description: "Fort IX – ein Element des inneren preußischen Festungsrings von Köln, der in der ersten Hälfte des 19. Jahrhunderts entstanden ist.",
+                status: "lost",
+                note: "die Bauwerke wurden etwa 1912–1913 beim Bau von Eisenbahninfrastruktur vollständig abgetragen; sichtbare Reste sind nicht erhalten.",
+                full_description: {
+                    title: "Beschreibung und Geschichte",
+                    items: [
+                        { bold: "Fort IX", text: "war Teil des inneren preußischen Festungsrings von Köln, der nach der Übernahme der Stadt durch Preußen zu Beginn des 19. Jahrhunderts entstand." },
+                        { text: "Die ersten Befestigungen dieses Abschnitts wurden in den 1810er–1820er Jahren als Teil eines Festungsgürtels um den linksrheinischen Stadtbereich errichtet." },
+                        { text: "In den Jahren 1843–1847 wurde anstelle früherer Anlagen ein erneuertes Befestigungsbauwerk nach den Plänen von Heinrich Ferdinand Schubert unter Beteiligung von Ernst Ludwig von Aster und Karl Ferdinand Busse errichtet." },
+                        { text: "Das Fort befand sich im südwestlichen Teil von Köln im Bereich der heutigen Escher Straße (Zollstock) und war Teil einer Befestigungslinie in unmittelbarer Nähe der städtischen Bebauung." },
+                        { text: "Im Jahr 1888 wurde das Fort in «Fort Prinz Friedrich der Niederlande» umbenannt, was der Tradition entsprach, Befestigungsanlagen nach Mitgliedern regierender Häuser zu benennen." },
+                        { text: "Mit der Entwicklung der Artillerie und dem Bau des äußeren Festungsrings verloren die inneren Befestigungen in der zweiten Hälfte des 19. Jahrhunderts ihre militärische Bedeutung und wurden schrittweise außer Dienst gestellt." },
+                        { text: "Zu Beginn des 20. Jahrhunderts wurde das Gelände teilweise wirtschaftlich genutzt, jedoch wurden die Bauwerke etwa 1912–1913 im Zuge der Entwicklung der Eisenbahninfrastruktur vollständig abgetragen." },
+                        { text: "Heute sind keine sichtbaren Spuren des Forts erhalten." },
+                        { bold: "Lage:", text: "Stadtteil Neuehrenfeld (Escher Straße), nordwestlicher Teil des ehemaligen inneren Festungsrings von Köln" }
+                    ]
+                },
+                construction_period: "1816–1825",
+                meta: {
+                    title: "Fort IX (innerer Festungsring Köln)",
+                    description: "Fort IX – ein Element des inneren preußischen Festungsrings von Köln aus dem 19. Jahrhundert. Nur wenige Spuren sind bis heute erhalten.",
+                    ogTitle: "Fort IX (innerer Festungsring Köln)",
+                    ogDescription: "Fort IX – eines der frühen Forts des inneren Kölner Festungsrings, heute vollständig verschwunden und nur historisch nachweisbar.",
+                    keywords: "Fort IX Köln innerer Ring, innerer Festungsring Köln, Festung Köln innerer Ring, Fort IX Zollstock Köln",
+                    ogImage: ""
+                }
+            }
+        }
+    },    
+    {
         id: "fort_IV_outer_koln",
         type: ["historical_building"], rating: "local",
         path: "fort_IV_outer_koln",
@@ -2983,6 +3001,7 @@ const datas = [
         translations: {
             ru: {
                 name: "Форт IV (внешнее крепостное кольцо)", sortIndex: 4,
+                location: "Кёльн, район Bocklemünd / Vogelsang (округ Ehrenfeld), Германия",
                 short_description: "Форт IV – крупный форт внешнего прусского оборонительного кольца Кёльна, построенный в 1874–1876 годах. Позднее частично демилитаризован и интегрирован в городскую инфраструктуру.",
                 status: "partial", note: "сохранились отдельные казарменные и фортификационные элементы; территория частично используется для спорта, учреждений и хозяйственных нужд города.",
                 full_description: {
@@ -3016,6 +3035,7 @@ const datas = [
             },
             ua: {
                 name: "Форт IV (зовнішнє фортифікаційне кільце)", sortIndex: 4,
+                location: "Кельн, район Bocklemünd / Vogelsang (район Ehrenfeld), Німеччина",
                 short_description: "Форт IV – великий форт зовнішнього прусського оборонного кільця Кельна, збудований у 1874–1876 роках. Пізніше частково демілітаризований та інтегрований у міську інфраструктуру.",
                 status: "partial", note: "збереглися окремі казармені та фортифікаційні елементи; територія частково використовується для спорту, установ та господарських потреб міста.",
                 full_description: {
@@ -3049,6 +3069,7 @@ const datas = [
             },
             de: {
                 name: "Fort IV (äußerer Festungsring)", sortIndex: 4,
+                location: "Köln, Stadtteil Bocklemünd / Vogelsang (Stadtbezirk Ehrenfeld), Deutschland",
                 short_description: "Fort IV – ein großes Fort des äußeren preußischen Festungsrings von Köln, erbaut 1874–1876. Später teilweise demilitarisiert und in die städtische Infrastruktur integriert.",
                 status: "partial", note: "erhalten sind einzelne kasernierte und fortifikatorische Elemente; das Gelände wird teilweise für Sport, Einrichtungen und kommunale Zwecke genutzt.",
                 full_description: {
@@ -3189,6 +3210,7 @@ const datas = [
         translations: {
             ru: {
                 name: "Форт V (внешнее крепостное кольцо)", sortIndex: 5,
+                location: "Кёльн, район Müngersdorf (округ Lindenthal), Германия",
                 short_description: "Форт V – крупный форт внешнего прусского оборонительного кольца Кёльна, построенный в 1874–1876 годах в районе Müngersdorf.",
                 status: "partial", note: "входит в структуру Зелёного пояса Кёльна (Grüngürtel)",
                 full_description: {
@@ -3214,6 +3236,7 @@ const datas = [
             },
             ua: {
                 name: "Форт V (зовнішнє кріпосне кільце)", sortIndex: 5,
+                location: "Кельн, район Müngersdorf (район Lindenthal), Німеччина",
                 short_description: "Форт V – великий форт зовнішнього прусського оборонного кільця Кельна, збудований у 1874–1876 роках у районі Müngersdorf. ",
                 status: "partial", note: "входить до структури Зелёного пояса Кельна (Grüngürtel)",
                 full_description: {
@@ -3239,6 +3262,7 @@ const datas = [
             },
             de: {
                 name: "Fort V (äußerer Festungsring)", sortIndex: 5,
+                location: "Köln, Stadtteil Müngersdorf (Stadtbezirk Lindenthal), Deutschland",
                 short_description: "Fort V – ein großes Fort des äußeren preußischen Festungsrings von Köln, erbaut 1874–1876 im Stadtteil Müngersdorf. ",
                 status: "partial", note: "gehört zum Grüngürtel Kölns",
                 full_description: {
@@ -3276,6 +3300,7 @@ const datas = [
         translations: {
             ru: {
                 name: "Форт VI (внешнее крепостное кольцо)", sortIndex: 6,
+                location: "Кёльн, район Lindenthal (округ Lindenthal), Германия",
                 short_description: "Форт VI (внешнее крепостное кольцо) – один из фортов внешнего кольца прусской крепостной системы Кёльна.",
                 status: "partial", note: "входит в состав внешнего зелёного пояса Кёльна (Grüngürtel) и используется как общественное пространство.",
                 full_description: {
@@ -3304,6 +3329,7 @@ const datas = [
             },
             ua: {
                 name: "Форт VI (зовнішнє фортифікаційне кільце)", sortIndex: 6,
+                location: "Кельн, район Lindenthal (район Lindenthal), Німеччина",
                 short_description: "Форт VI (зовнішнє фортифікаційне кільце) – один із фортів зовнішнього кільця прусської фортифікаційної системи Кельна.",
                 status: "partial", note: "входить до складу зовнішнього Зеленого поясу Кельна (Grüngürtel) і використовується як громадський простір.",
                 full_description: {
@@ -3332,6 +3358,7 @@ const datas = [
             },
             de: {
                 name: "Fort VI (äußerer Festungsring)", sortIndex: 6,
+                location: "Köln, Stadtteil Lindenthal (Stadtbezirk Lindenthal), Deutschland",
                 short_description: "Fort VI (äußerer Festungsring) – eines der Forts des äußeren Rings des preußischen Festungssystems von Köln.",
                 status: "partial", note: "gehört zum äußeren Grüngürtel Kölns und wird als öffentlicher Raum genutzt",
                 full_description: {
@@ -3372,6 +3399,7 @@ const datas = [
         translations: {
             ru: {
                 name: "Форт IX (внешнее крепостное кольцо)", sortIndex: 9,
+                location: "Кёльн, район Rath / Kalk (округ Kalk), Германия",
                 short_description: "Форт IX – крупный форт внешнего прусского оборонительного кольца Кёльна, построенный в 1877–1881 годах. ",
                 status: "partial", note: "сохранились элементы фортификационных сооружений, территория частично интегрирована в городскую среду и используется как общественное пространство.",
                 full_description: {
@@ -3402,6 +3430,7 @@ const datas = [
             },
             ua: {
                 name: "Форт IX (зовнішнє кріпосне кільце)", sortIndex: 9,
+                location: "Кельн, район Rath / Kalk (район Kalk), Німеччина",
                 short_description: "Форт IX – великий форт зовнішнього прусського оборонного кільця Кельна, збудований у 1877–1881 роках. ",
                 status: "partial", note: "збереглися елементи фортифікаційних споруд, територія частково інтегрована в міське середовище та використовується як громадський простір.",
                 full_description: {
@@ -3432,6 +3461,7 @@ const datas = [
             },
             de: {
                 name: "Fort IX (äußerer Festungsring)", sortIndex: 9,
+                location: "Köln, Stadtteil Rath / Kalk (Stadtbezirk Kalk), Deutschland",
                 short_description: "Fort IX – ein großes Fort des äußeren preußischen Festungsrings von Köln, erbaut 1877–1881. ",
                 status: "partial", note: "erhalten sind Teile der Befestigungsanlagen, das Gelände ist teilweise in die städtische Struktur integriert und wird als öffentlicher Raum genutzt.",
                 full_description: {
@@ -3562,6 +3592,7 @@ const datas = [
         translations: {
             ru: {
                 name: "Форт X (внешнее крепостное кольцо)", sortIndex: 10,
+                location: "Кёльн, район Höhenberg / Neubrück (округ Kalk), Германия",
                 short_description: "Форт X – крупный форт внешнего прусского оборонительного кольца Кёльна, построенный в 1877–1880 годах и позднее частично преобразованный в парковое общественное пространство.",
                 status: "partial", note: "сохранилась значительная часть фортификационной структуры (рвы, валы, элементы казематов); территория полностью интегрирована в городской парк и используется как общественное пространство.",
                 full_description: {
@@ -3573,7 +3604,7 @@ const datas = [
                         { text: "В период Второй мировой войны форт использовался как главная командная позиция подразделений противовоздушной обороны. В послевоенное время на его территории размещались аварийные убежища." },
                         { text: "Примерно с 1970 года объект использовался городскими службами, включая Департамент парков и Управление гражданской обороны, а с середины 1980-х годов – общественными объединениями и клубами." },
                         { text: "Сегодня сохранились элементы оригинальной структуры: стена Kehlgraben, фланговые рвы, части валов, подъездные пути, а планировка дорожек повторяет исторический контур форта." },
-                        { bold: "Где:", text: "район Köln-Höhenberg / Raderberg, южная часть внешнего оборонительного кольца" },
+                        { bold: "Где:", text: "район Höhenberg / Neubrück, восточная часть внешнего оборонительного кольца Кёльна" },
                         { bold: "<br>Промежуточные форты (Zwischenwerke)", text: "Между основными фортами внешнего прусского оборонительного кольца Кёльна были построены промежуточные укрепления, предназначенные для закрытия разрывов между крупными фортами и усиления перекрёстного артиллерийского огня." },
                         { text: "В секторе Fort X существовали следующие Zwischenwerke:" },
                         { text: "<ul><li><b>Zwischenwerk Xa (Vingst)</b> – построен в 1877–1879 годах восточнее Vingster Ring, севернее Hardtgebuschweg. Являлся частью промежуточной линии укреплений между основными фортами внешнего прусского оборонительного кольца Кёльна.</li></ul>" },
@@ -3597,6 +3628,7 @@ const datas = [
             },
             ua: {
                 name: "Форт X (зовнішнє кріпосне кільце)", sortIndex: 10,
+                location: "Кельн, район Höhenberg / Neubrück (район Kalk), Німеччина",
                 short_description: "Форт X – великий форт зовнішнього прусського оборонного кільця Кельна, збудований у 1877–1880 роках і пізніше частково перетворений на парковий громадський простір.",
                 status: "partial", note: "збереглася значна частина фортифікаційної структури (рів, вали, елементи казематів); територія повністю інтегрована в міський парк і використовується як громадський простір.",
                 full_description: {
@@ -3608,7 +3640,7 @@ const datas = [
                         { text: "У період Другої світової війни форт використовувався як головна командна позиція підрозділів протиповітряної оборони. У післявоєнний час на його території розміщувалися аварійні укриття." },
                         { text: "Приблизно з 1970 року об’єкт використовувався міськими службами, включаючи Департамент парків та Управління цивільного захисту, а з середини 1980-х років – громадськими об’єднаннями та клубами." },
                         { text: "Сьогодні збереглися елементи оригінальної структури: стіна Kehlgraben, флангові рови, частини валів, під’їзні шляхи, а планування доріжок повторює історичний контур форту." },
-                        { bold: "Де:", text: "район Köln-Höhenberg / Raderberg, південна частина зовнішнього оборонного кільця" },
+                        { bold: "Де:", text: "район Höhenberg / Neubrück, східна частина зовнішнього оборонного кільця Кельна" },
                         { bold: "<br>Проміжні форти (Zwischenwerke)", text: "Між основними фортами зовнішнього прусського оборонного кільця Кельна були збудовані проміжні укріплення, призначені для закриття розривів між великими фортами та посилення перехресного артилерійського вогню." },
                         { text: "У секторі Fort X існували такі Zwischenwerke:" },
                         { text: "<ul><li><b>Zwischenwerk Xa (Vingst)</b> – збудований у 1877–1879 роках на схід від Vingster Ring, на північ від Hardtgebuschweg. Був частиною проміжної лінії укріплень між основними фортами зовнішнього прусського оборонного кільця Кельна.</li></ul>" },
@@ -3632,6 +3664,7 @@ const datas = [
             },
             de: {
                 name: "Fort X (äußerer Festungsring)", sortIndex: 10,
+                location: "Köln, Stadtteil Höhenberg / Neubrück (Stadtbezirk Kalk), Deutschland",
                 short_description: "Fort X – ein großes Fort des äußeren preußischen Festungsrings von Köln, erbaut 1877–1880 und später teilweise in eine Park- und öffentliche Grünanlage umgewandelt.",
                 status: "partial", note: "ein bedeutender Teil der Befestigungsstruktur ist erhalten (Gräben, Wälle, Elemente der Kasematten); das Gelände ist vollständig in einen Stadtpark integriert und wird als öffentlicher Raum genutzt.",
                 full_description: {
@@ -3643,7 +3676,7 @@ const datas = [
                         { text: "Während des Zweiten Weltkriegs diente das Fort als zentrale Befehlsstelle für Einheiten der Luftverteidigung. In der Nachkriegszeit wurden auf dem Gelände Notunterkünfte eingerichtet." },
                         { text: "Ab etwa 1970 wurde die Anlage durch städtische Dienste genutzt, darunter das Gartenamt und das Amt für Zivilschutz. Seit Mitte der 1980er Jahre wird das Gelände von Vereinen und Gemeinschaften genutzt." },
                         { text: "Heute sind noch Elemente der ursprünglichen Struktur erhalten: die Kehlgrabenmauer, Flankengräben, Teile der Wälle und Zugangswege; die Wegeführung folgt dem historischen Grundriss des Forts." },
-                        { bold: "Wo:", text: "Stadtteil Köln-Höhenberg / Raderberg, südlicher Teil des äußeren Festungsrings" },
+                        { bold: "Lage:", text: "Stadtteil Höhenberg / Neubrück, östlicher Teil des äußeren Festungsrings von Köln" },
                         { bold: "<br>Zwischenwerke", text: "Zwischen den Hauptforts des äußeren preußischen Festungsrings von Köln wurden Zwischenbefestigungen errichtet, um Lücken zwischen den großen Forts zu schließen und das Kreuzfeuer der Artillerie zu verstärken." },
                         { text: "Im Bereich von Fort X existierten folgende Zwischenwerke:" },
                         { text: "<ul><li><b>Zwischenwerk Xa (Vingst)</b> – erbaut 1877–1879 östlich des Vingster Rings, nördlich des Hardtgebuschwegs. Teil der Zwischenlinie zwischen den Hauptforts des äußeren Kölner Festungsrings.</li></ul>" },
@@ -3820,6 +3853,7 @@ const datas = [
         translations: {
             ru: {
                 name: "Форт XI (внешнее крепостное кольцо)", sortIndex: 11,
+                location: "Кёльн, район Mülheim (округ Mülheim), Германия",
                 short_description: "Форт XI – крупный форт внешнего прусского оборонительного кольца Кёльна, построенный в 1877–1880 годах. Расположен в южном секторе города и частично сохранился в виде фрагментов фортификационной структуры.",
                 status: "partial", note: "сохранились отдельные элементы фортификационной и казарменной архитектуры (казематы, участки рвов и валов, фрагменты оборонительных стен); территория частично интегрирована в городскую среду и используется как общественные пространства и спортивные объекты.",
                 full_description: {
@@ -3833,7 +3867,7 @@ const datas = [
                         { text: "В межвоенный период и после 1920-х годов территория начала постепенно интегрироваться в городскую структуру, частично переходя под хозяйственные, спортивные и коммунальные функции." },
                         { text: "Во время Второй мировой войны отдельные элементы комплекса использовались в системе гражданской обороны и вспомогательной инфраструктуры." },
                         { text: "В послевоенный период территория была окончательно включена в городскую среду Кёльна и частично адаптирована под общественное использование." },
-                        { bold: "Где:", text: "район Köln-Bayenthal / Marienburg, южный сектор внешнего оборонительного кольца Кёльна (левый берег Рейна)" },
+                        { bold: "Где:", text: "район Mülheim, восточная часть внешнего оборонительного кольца Кёльна (правый берег Рейна)" },
                         { bold: "<br>Промежуточные форты (Zwischenwerke)", text: "Между основными фортами внешнего прусского оборонительного кольца Кёльна были построены промежуточные укрепления, предназначенные для закрытия разрывов между крупными фортами и усиления оборонительной линии." },
                         { text: "В секторе Fort XI существовали следующие промежуточные форты:" },
                         { text: "<ul><li><b>Zwischenwerk XIa (Buchheim)</b> – построен в 1877–1879 годах, восточнее Herler Ring, севернее Gauweg. В 1922 году частично демонтирован, в 1920-х годах преобразован по проекту Фрица Энке в «зелёный форт» с элементами спортивной инфраструктуры. Позднее использовался как общественное и спортивное пространство, частично сохранилась казарма горжевой части форта и фрагменты рвов и валов.</li></ul>" },
@@ -3853,6 +3887,7 @@ const datas = [
             },
             ua: {
                 name: "Форт XI (зовнішнє фортифікаційне кільце)", sortIndex: 11,
+                location: "Кельн, район Mülheim (район Mülheim), Німеччина",
                 short_description: "Форт XI – великий форт зовнішнього прусського оборонного кільця Кельна, побудований у 1877–1880 роках. Розташований у південному секторі міста та частково зберігся у вигляді фрагментів фортифікаційної структури.",
                 status: "partial", note: "збереглися окремі елементи фортифікаційної та казарменої архітектури (каземати, ділянки ровів і валів, фрагменти оборонних стін); територія частково інтегрована в міське середовище та використовується як громадські простори і спортивні об’єкти.",
                 full_description: {
@@ -3866,7 +3901,7 @@ const datas = [
                         { text: "У міжвоєнний період і після 1920-х років територія почала поступово інтегруватися в міську структуру, частково переходячи під господарські, спортивні та комунальні функції." },
                         { text: "Під час Другої світової війни окремі елементи комплексу використовувалися в системі цивільної оборони та допоміжної інфраструктури." },
                         { text: "У післявоєнний період територія була остаточно включена до міського середовища Кельна і частково адаптована під громадське використання." },
-                        { bold: "Де:", text: "район Köln-Bayenthal / Marienburg, південний сектор зовнішнього оборонного кільця Кельна (лівий берег Рейну)" },
+                        { bold: "Де:", text: "район Mülheim, східна частина зовнішнього оборонного кільця Кельна (правий берег Рейну)" },
                         { bold: "<br>Проміжні форти (Zwischenwerke)", text: "Між основними фортами зовнішнього прусського оборонного кільця Кельна були побудовані проміжні укріплення, призначені для закриття проміжків між великими фортами та посилення оборонної лінії." },
                         { text: "У секторі Fort XI існували такі проміжні форти:" },
                         { text: "<ul><li><b>Zwischenwerk XIa (Buchheim)</b> – побудований у 1877–1879 роках, на схід від Herler Ring, на північ від Gauweg. У 1922 році частково демонтований, у 1920-х роках перетворений за проєктом Фріца Енке на «зелений форт» з елементами спортивної інфраструктури. Пізніше використовувався як громадський і спортивний простір, частково збереглася казарма горжової частини форту та фрагменти ровів і валів.</li></ul>" },
@@ -3886,6 +3921,7 @@ const datas = [
             },
             de: {
                 name: "Fort XI (äußeres Festungsring)", sortIndex: 11,
+                location: "Köln, Stadtteil Mülheim (Stadtbezirk Mülheim), Deutschland",
                 short_description: "Fort XI – großes Fort des äußeren preußischen Festungsrings von Köln, erbaut zwischen 1877 und 1880. Es befindet sich im südlichen Stadtsektor und ist teilweise in Form von Fragmenten der Befestigungsstruktur erhalten.",
                 status: "partial", note: "erhalten sind einzelne Elemente der Festungs- und Kasernenarchitektur (Kasematten, Abschnitte von Gräben und Wällen, Fragmente von Verteidigungsmauern); das Gelände ist teilweise in das Stadtgefüge integriert und wird als öffentliche Grün- und Sportfläche genutzt.",
                 full_description: {
@@ -3899,7 +3935,7 @@ const datas = [
                         { text: "In der Zwischenkriegszeit und nach den 1920er Jahren wurde das Gelände zunehmend in die städtische Struktur integriert und teilweise für wirtschaftliche, sportliche und kommunale Zwecke genutzt." },
                         { text: "Während des Zweiten Weltkriegs wurden einzelne Elemente der Anlage im System des Zivilschutzes und der Luftverteidigung verwendet." },
                         { text: "In der Nachkriegszeit wurde das Gelände endgültig in das Stadtbild Kölns integriert und teilweise für öffentliche Nutzung angepasst." },
-                        { bold: "Lage:", text: "Stadtteil Köln-Bayenthal / Marienburg, südlicher Sektor des äußeren Festungsrings von Köln (linkes Rheinufer)" },
+                        { bold: "Lage:", text: "Stadtteil Mülheim, östlicher Teil des äußeren Festungsrings von Köln (rechtes Rheinufer)" },
                         { bold: "<br>Zwischenwerke (intermediäre Forts)", text: "Zwischen den Hauptforts des äußeren preußischen Festungsrings Köln wurden Zwischenwerke errichtet, die dazu dienten, Lücken zwischen den großen Forts zu schließen und die Verteidigungslinie zu verstärken." },
                         { text: "Im Sektor von Fort XI existierten folgende Zwischenwerke:" },
                         { text: "<ul><li><b>Zwischenwerk XIa (Buchheim)</b> – erbaut 1877–1879, östlich des Herler Rings, nördlich des Gauwegs. 1922 teilweise abgetragen, in den 1920er Jahren nach einem Entwurf von Fritz Encke zu einem „grünen Fort“ mit Sportanlagen umgestaltet. Später als öffentlicher und sportlicher Raum genutzt; teilweise erhalten sind die Kehlkasematte sowie Fragmente von Gräben und Wällen.</li></ul>" },
@@ -4025,6 +4061,7 @@ const datas = [
         translations: {
             ru: {
                 name: "Римская башня Römerturm",
+                location: "Кёльн, район Altstadt-Nord (округ Innenstadt), Германия",
                 short_description: "Römerturm – сохранившаяся римская башня городской стены Colonia Claudia Ara Agrippinensium. Один из наиболее значимых и хорошо сохранившихся фрагментов римского укреплённого Кёльна.",
                 status: "partial", note: "сохранился как фрагмент римской городской оборонительной системы Кёльна; оригинальная структура частично утрачена, но сохранилась основная башенная часть с римской кладкой.",
                 full_description: {
@@ -4046,6 +4083,7 @@ const datas = [
             },
             ua: {
                 name: "Римська вежа Römerturm",
+                location: "Кельн, район Altstadt-Nord (район Innenstadt), Німеччина",
                 short_description: "Römerturm – збережена римська вежа міського муру Colonia Claudia Ara Agrippinensium. Один із найважливіших і найкраще збережених фрагментів римського укріпленого Кельна.",
                 status: "partial", note: "зберігся як фрагмент римської міської оборонної системи Кельна; оригінальна структура частково втрачена, однак збереглася основна баштова частина з римською кладкою.",
                 full_description: {
@@ -4066,6 +4104,7 @@ const datas = [
             },
             de: {
                 name: "Römerturm",
+                location: "Köln, Stadtteil Altstadt-Nord (Stadtbezirk Innenstadt), Deutschland",
                 short_description: "Der Römerturm ist ein erhalten gebliebener römischer Turm der Stadtmauer von Colonia Claudia Ara Agrippinensium. Eines der bedeutendsten und am besten erhaltenen Fragmente des römischen befestigten Kölns.",
                 status: "partial", note: "als Fragment der römischen Stadtbefestigung Kölns erhalten; die ursprüngliche Struktur ist teilweise verloren gegangen, jedoch ist der Hauptteil des Turms mit römischem Mauerwerk erhalten geblieben.",
                 full_description: {
@@ -4098,6 +4137,7 @@ const datas = [
         translations: {
             ru: {
                 name: "Западные ворота (Hahnentorburg)",
+                location: "Кёльн, район Neustadt-Süd (округ Innenstadt), Германия",
                 short_description: "Hahnentorburg – одни из сохранившихся средневековых городских ворот Кёльна, входившие в систему второго городского оборонительного кольца. Один из наиболее выразительных памятников фортификационной архитектуры города.",
                 status: "partial", note: "сохранились как часть средневековой городской оборонительной системы Кёльна; ворота утратили часть первоначальных укреплений, но основная башенная структура и проезд сохранились.",
                 full_description: {
@@ -4119,6 +4159,7 @@ const datas = [
             },
             ua: {
                 name: "Західні ворота (Hahnentorburg)",
+                location: "Кельн, район Neustadt-Süd (район Innenstadt), Німеччина",
                 short_description: "Hahnentorburg – одні із збережених середньовічних міських воріт Кельна, що входили до системи другого міського оборонного кільця. Один із найвиразніших пам’ятників фортифікаційної архітектури міста.",
                 status: "partial",
                 note: "збереглися як частина середньовічної міської оборонної системи Кельна; ворота втратили частину первісних укріплень, однак основна баштова структура та проїзд збереглися.",
@@ -4141,6 +4182,7 @@ const datas = [
             },
             de: {
                 name: "Hahnentorburg (Westtor)",
+                location: "Köln, Stadtteil Neustadt-Süd (Stadtbezirk Innenstadt), Deutschland",
                 short_description: "Die Hahnentorburg ist eines der erhaltenen mittelalterlichen Stadttore Kölns, die zum System des zweiten Stadtbefestigungsrings gehörten. Eines der ausdrucksstärksten Beispiele der Wehrarchitektur der Stadt.",
                 status: "partial",
                 note: "als Teil der mittelalterlichen Stadtbefestigung Kölns erhalten; das Tor hat einen Teil seiner ursprünglichen Befestigungsanlagen verloren, jedoch sind die Hauptturmstruktur und der Durchgang erhalten geblieben.",
@@ -4175,6 +4217,7 @@ const datas = [
         translations: {
             ru: {
                 name: "Северные ворота (Eigelsteintorburg)",
+                location: "Кёльн, район Neustadt-Nord (округ Innenstadt), Германия",
                 short_description: "Северные ворота (Eigelsteintorburg) – одни из сохранившихся средневековых городских ворот Кёльна, входившие в систему второго городского оборонительного кольца. Представляют собой массивный воротный комплекс с двумя башнями и арочным проходом.",
                 status: "partial", note: "сохранились как часть средневековой городской оборонительной системы Кёльна; уцелели основная башенная структура и арочный проезд, часть внешних укреплений утрачена.",
                 full_description: {
@@ -4197,6 +4240,7 @@ const datas = [
             },
             ua: {
                 name: "Північні ворота (Eigelsteintorburg)",
+                location: "Кельн, район Neustadt-Nord (район Innenstadt), Німеччина",
                 short_description: "Північні ворота (Eigelsteintorburg) – одні із збережених середньовічних міських воріт Кельна, що входили до системи другого міського оборонного кільця. Являють собою масивний воротний комплекс із двома баштами та арковим проїздом.",
                 status: "partial", note: "збереглися як частина середньовічної міської оборонної системи Кельна; уціліли основна баштова структура та арковий проїзд, частина зовнішніх укріплень втрачена.",
                 full_description: {
@@ -4219,6 +4263,7 @@ const datas = [
             },
             de: {
                 name: "Eigelsteintorburg (Nordtor)",
+                location: "Köln, Stadtteil Neustadt-Nord (Stadtbezirk Innenstadt), Deutschland",
                 short_description: "Die Eigelsteintorburg ist eines der erhaltenen mittelalterlichen Stadttore Kölns, die zum System des zweiten Stadtbefestigungsrings gehörten. Sie stellt einen massiven Toranlagekomplex mit zwei Türmen und einem Torbogen dar.",
                 status: "partial", note: "als Teil der mittelalterlichen Stadtbefestigung Kölns erhalten; die Hauptturmstruktur und der Torbogen sind erhalten geblieben, während Teile der äußeren Befestigungsanlagen verloren gegangen sind.",
                 full_description: {
@@ -4253,6 +4298,7 @@ const datas = [
         translations: {
             ru: {
                 name: "Южные ворота (Severinstorburg)",
+                location: "Кёльн, район Altstadt-Süd (округ Innenstadt), Германия",
                 short_description: "Южные ворота (Severinstorburg) – одни из наиболее значимых сохранившихся средневековых городских ворот Кёльна, входившие в систему второго городского оборонительного кольца. Представляют собой мощный воротный комплекс с центральной башней и проездом.",
                 status: "partial", note: "сохранились как часть средневековой городской оборонительной системы Кёльна; уцелела основная башенная структура и проезд, часть внешних укреплений и оборонительных элементов утрачена.",
                 full_description: {
@@ -4275,6 +4321,7 @@ const datas = [
             },
             ua: {
                 name: "Південні ворота (Severinstorburg)",
+                location: "Кельн, район Altstadt-Süd (район Innenstadt), Німеччина",
                 short_description: "Південні ворота (Severinstorburg) – одні з найбільш значущих збережених середньовічних міських воріт Кельна, що входили до системи другого міського оборонного кільця. Являють собою потужний воротний комплекс із центральною баштою та проїздом.",
                 status: "partial", note: "збереглися як частина середньовічної міської оборонної системи Кельна; уціліла основна баштова структура та проїзд, частина зовнішніх укріплень і оборонних елементів втрачена.",
                 full_description: {
@@ -4297,6 +4344,7 @@ const datas = [
             },
             de: {
                 name: "Severinstorburg (Südtor)",
+                location: "Köln, Stadtteil Altstadt-Süd (Stadtbezirk Innenstadt), Deutschland",
                 short_description: "Die Severinstorburg ist eines der bedeutendsten erhaltenen mittelalterlichen Stadttore Kölns, die zum System des zweiten Stadtbefestigungsrings gehörten. Sie stellt einen massiven Toranlagekomplex mit einem zentralen Turm und einem Durchgang dar.",
                 status: "partial", note: "als Teil der mittelalterlichen Stadtbefestigung Kölns erhalten; die Hauptturmstruktur und der Durchgang sind erhalten geblieben, während Teile der äußeren Befestigungen und Verteidigungselemente verloren gegangen sind.",
                 full_description: {
@@ -4331,6 +4379,7 @@ const datas = [
         translations: {
             ru: {
                 name: "Южные малые ворота (Ulrepforte)",
+                location: "Кёльн, район Altstadt-Süd (округ Innenstadt), Германия",
                 short_description: "Ulrepforte – небольшие сохранившиеся средневековые городские ворота Кёльна, входившие в систему второго городского оборонительного кольца. Представляют собой компактный башенный элемент с проездом, встроенный в линию городской стены.",
                 status: "partial", note: "сохранились как фрагмент средневековой городской оборонительной системы Кёльна; уцелела башенная часть и прилегающий участок стены, значительная часть укреплений утрачена.",
                 full_description: {
@@ -4353,6 +4402,7 @@ const datas = [
             },
             ua: {
                 name: "Південні малі ворота (Ulrepforte)",
+                location: "Кельн, район Altstadt-Süd (район Innenstadt), Німеччина",
                 short_description: "Ulrepforte – невеликі збережені середньовічні міські ворота Кельна, що входили до системи другого міського оборонного кільця. Являють собою компактний баштовий елемент із проїздом, вбудований у лінію міського муру.",
                 status: "partial", note: "збереглися як фрагмент середньовічної міської оборонної системи Кельна; уціліла баштова частина та прилегла ділянка муру, значна частина укріплень втрачена.",
                 full_description: {
@@ -4375,6 +4425,7 @@ const datas = [
             },
             de: {
                 name: "Ulrepforte (kleines Südtor)",
+                location: "Köln, Stadtteil Altstadt-Süd (Stadtbezirk Innenstadt), Deutschland",
                 short_description: "Die Ulrepforte ist ein kleines erhaltenes mittelalterliches Stadttor Kölns, das zum System des zweiten Stadtbefestigungsrings gehörte. Sie stellt ein kompaktes Turmelement mit Durchgang dar, das in die Linie der Stadtmauer integriert ist.",
                 status: "partial",
                 note: "als Fragment der mittelalterlichen Stadtbefestigung Kölns erhalten; der Turmteil und ein angrenzender Abschnitt der Mauer sind erhalten geblieben, während ein großer Teil der Befestigungsanlagen verloren gegangen ist.",
@@ -4410,6 +4461,7 @@ const datas = [
         translations: {
             ru: {
                 name: "Юго-восточная башня у Рейна (Bayenturm)",
+                location: "Кёльн, район Altstadt-Süd (округ Innenstadt), Германия",
                 short_description: "Bayenturm – крупная средневековая оборонительная башня Кёльна, расположенная в юго-восточной части городской стены у Рейна. Являлась важным элементом контроля речного торгового пути и частью второго городского оборонительного кольца.",
                 status: "partial", note: "сохранилась как часть средневековой городской оборонительной системы Кёльна; башня была сильно повреждена во время Второй мировой войны и позднее восстановлена.",
                 full_description: {
@@ -4432,6 +4484,7 @@ const datas = [
             },
             ua: {
                 name: "Південно-східна вежа біля Рейну (Bayenturm)",
+                location: "Кельн, район Altstadt-Süd (район Innenstadt), Німеччина",
                 short_description: "Bayenturm – велика середньовічна оборонна вежа Кельна, розташована в південно-східній частині міського муру біля Рейну. Була важливим елементом контролю річкового торговельного шляху та частиною другого міського оборонного кільця.",
                 status: "partial",
                 note: "збереглася як частина середньовічної міської оборонної системи Кельна; вежа була сильно пошкоджена під час Другої світової війни та пізніше відновлена.",
@@ -4455,6 +4508,7 @@ const datas = [
             },
             de: {
                 name: "Bayenturm (Südostturm am Rhein)",
+                location: "Köln, Stadtteil Altstadt-Süd (Stadtbezirk Innenstadt), Deutschland",
                 short_description: "Der Bayenturm ist ein großer mittelalterlicher Wehrturm in Köln, der sich im südöstlichen Abschnitt der Stadtmauer am Rhein befindet. Er war ein wichtiger Bestandteil zur Kontrolle des Flusshandelswegs und Teil des zweiten Stadtbefestigungsrings.",
                 status: "partial",
                 note: "als Teil der mittelalterlichen Stadtbefestigung Kölns erhalten; der Turm wurde im Zweiten Weltkrieg stark beschädigt und später wieder aufgebaut.",

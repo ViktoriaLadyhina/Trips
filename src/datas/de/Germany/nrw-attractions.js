@@ -67,7 +67,7 @@ const datas = [
         countryPath: "germany", regionPath: "nrw", districtPath: "city", cityPath: "koln",
         showMore: true, hiddenFromList: true,
         fotoCard: "Germany/nrw/koln/koln-city/koln-cathedral/001.jpg",
-        location: "Köln, Deutschland",
+        location: "Köln, Stadtteil Altstadt-Nord (Stadtbezirk Innenstadt), Deutschland",
         officialSite: [
             { bold: 'Offizielle Webseite des Kölner Doms', link: 'https://www.koelner-dom.de/' }
         ],
@@ -150,7 +150,7 @@ const datas = [
         countryPath: "germany", regionPath: "nrw", districtPath: "city", cityPath: "koln",
         showMore: true, hiddenFromList: true,
         fotoCard: "Germany/nrw/koln/koln-city/rathaus-koeln/Rathaus-Köln.jpg",
-        location: "Köln, Deutschland",
+        location: "Köln, Stadtteil Altstadt-Nord (Stadtbezirk Innenstadt), Deutschland",
         address: [{ bold: "Adresse des Kölner Rathauses:", text: "Rathausplatz 2, 50667 Köln, Deutschland" },],
         officialSite: [
             { bold: "Offizielle Website", link: "https://www.stadt-koeln.de/", text: " der Stadt Köln (Rathaus)" },
@@ -249,7 +249,7 @@ const datas = [
         hiddenFromList: true, showMore: true,
         map: "romanische_kirchen_altstadt_koln",
         fotoCard: "Germany/nrw/koln/koln-city/altstadt/romanische_kirchen/gross_st_martin/001.jpg",
-        location: "Köln, Deutschland",
+        location: "Köln, Stadtteil Altstadt-Nord (Stadtbezirk Innenstadt), Deutschland",
         officialSite: [
             { bold: "Offizielle Webseite", link: "https://www.romanische-kirchen-koeln.de/willkommen/willkommen" }
         ],
@@ -302,7 +302,7 @@ const datas = [
         hiddenFromList: true, showMore: true,
         map: "romanische_kirchen_altstadt_koln",
         fotoCard: "Germany/nrw/koln/koln-city/altstadt/romanische_kirchen/stMariaImKapitol/001.jpg",
-        location: "Köln, Deutschland",
+        location: "Köln, Stadtteil Altstadt-Süd (Stadtbezirk Innenstadt), Deutschland",
         officialSite: [{ bold: "Offizielle Webseite", link: "https://www.romanische-kirchen-koeln.de/" }],
         short_description: "Die Kirche St. Maria im Kapitol – die größte romanische Kirche Kölns und eine der zwölf berühmten romanischen Kirchen der Stadt. Sie wurde im 11. Jahrhundert an der Stelle eines römischen Tempels erbaut, der der kapitolinischen Triade – Jupiter, Juno und Minerva – geweiht war. Heute gilt das Bauwerk als eines der wichtigsten Zeugnisse mittelalterlicher Architektur im Rheinland.",
         full_description: {
@@ -370,7 +370,7 @@ const datas = [
         countryPath: "germany", regionPath: "nrw", districtPath: "city", cityPath: "koln",
         hiddenFromList: true, showMore: true,
         fotoCard: "Germany/nrw/koln/koln-city/altstadt/st_maria_himmelfahrt/001.jpg",
-        location: "Köln, Deutschland",
+        location: "Köln, Stadtteil Altstadt-Süd (Stadtbezirk Innenstadt), Deutschland",
         short_description: "St. Mariä Himmelfahrt ist eine bedeutende katholische Kirche der Aufnahme Mariens in der Kölner Altstadt. Sie wurde im Barockstil als Jesuitenkirche errichtet, war lange Zeit die zweitgrößte Kirche nach dem Kölner Dom und gehört bis heute zu den wenigen erhaltenen barocken Baudenkmälern der Stadt.",
         full_description: {
             title: "Beschreibung und Geschichte",
@@ -418,7 +418,7 @@ const datas = [
         countryPath: "germany", regionPath: "nrw", districtPath: "city", cityPath: "koln",
         showMore: true, hiddenFromList: true,
         fotoCard: "Germany/nrw/koln/koln-city/altstadt/guerzenich_koln/001.jpg",
-        location: "Köln, Deutschland",
+        location: "Köln, Stadtteil Altstadt-Nord (Stadtbezirk Innenstadt), Deutschland",
         officialSite: [
             { bold: "Offizielle Website", link: "https://koelncongress.de/locations/guerzenich-koeln/" }
         ],
@@ -480,7 +480,7 @@ const datas = [
         countryPath: "germany", regionPath: "nrw", districtPath: "city", cityPath: "koln",
         showMore: true, hiddenFromList: true,
         fotoCard: "Germany/nrw/koln/koln-city/roemisch-germanisches-museum/001.jpg",
-        location: "Köln, Deutschland",
+        location: "Köln, Stadtteil Altstadt-Nord (Stadtbezirk Innenstadt), Deutschland",
         officialSite: [
             { bold: "Offizielle Webseite des Römisch-Germanischen Museums", link: "https://museenkoeln.de/portal/Roemisch-Germanisches-Museum" }
         ],
@@ -536,7 +536,7 @@ const datas = [
         countryPath: "germany", regionPath: "nrw", districtPath: "city", cityPath: "koln",
         showMore: true, hiddenFromList: true,
         fotoCard: "Germany/nrw/koln/koln-city/farina-duftmuseum/001.jpg",
-        location: "Köln, Deutschland",
+        location: "Köln, Stadtteil Altstadt-Nord (Stadtbezirk Innenstadt), Deutschland",
         officialSite: [
             { "bold": "Offizielle Website des Farina-Museums", "link": "https://farina.org/de/duftmuseum/" }
         ],
@@ -590,7 +590,7 @@ const datas = [
         countryPath: "germany", regionPath: "nrw", districtPath: "city", cityPath: "koln",
         showMore: true, hiddenFromList: true,
         fotoCard: "Germany/nrw/koln/koln-city/museum-ludwig/001.jpg",
-        location: "Köln, Deutschland",
+        location: "Köln, Stadtteil Altstadt-Nord (Stadtbezirk Innenstadt), Deutschland",
         officialSite: [
             { bold: "Offizielle Website des Museum Ludwig", link: "https://www.museum-ludwig.de" }
         ],
@@ -645,7 +645,7 @@ const datas = [
         path: "schokoladenmuseum",
         countryPath: "germany", regionPath: "nrw", districtPath: "city", cityPath: "koln",
         fotoCard: "Germany/nrw/koln/koln-city/schokoladenmuseum/001.jpg",
-        location: "Köln, Deutschland",
+        location: "Köln, Stadtteil Altstadt-Süd (Stadtbezirk Innenstadt), Deutschland",
         officialSite: [
             {
                 bold: "Offizielle Website des Schokoladenmuseums Köln",
@@ -702,7 +702,7 @@ const datas = [
         countryPath: "germany", regionPath: "nrw", districtPath: "city", cityPath: "koln",
         showMore: true, hiddenFromList: true,
         fotoCard: "Germany/nrw/koln/koln-city/miqua/001.jpg",
-        location: "Köln, Deutschland",
+        location: "Köln, Stadtteil Altstadt-Nord (Stadtbezirk Innenstadt), Deutschland",
         officialSite: [
             {
                 bold: "Offizielle Website des Museums im archäologischen Viertel Köln – MiQua",
@@ -778,7 +778,7 @@ const datas = [
         countryPath: "germany", regionPath: "nrw", districtPath: "city", cityPath: "koln",
         showMore: true, hiddenFromList: true,
         fotoCard: "Germany/nrw/koln/koln-city/wallraf_richartz_museum/001.jpg",
-        location: "Köln, Deutschland",
+        location: "Köln, Stadtteil Altstadt-Süd (Stadtbezirk Innenstadt), Deutschland",
         officialSite: [
             { bold: "Offizielle Webseite des Museums", link: "http://www.wallraf.museum/en" }
         ],
@@ -838,7 +838,7 @@ const datas = [
         path: "ostasiatische_kunst_koln",
         countryPath: "germany", regionPath: "nrw", districtPath: "city", cityPath: "koln",
         fotoCard: "Germany/nrw/koln/koln-city/ostasiatische_kunst_koln/001.jpg",
-        location: "Köln, Deutschland",
+        location: "Köln, Stadtteil Lindenthal (Stadtbezirk Lindenthal), Deutschland",
         officialSite: [
             { bold: "Offizielle Webseite", link: "https://museum-fuer-ostasiatische-kunst.de/Information_e?utm_source=chatgpt.com" }
         ],
@@ -894,7 +894,7 @@ const datas = [
         path: "museum_schnuetgen_koln",
         countryPath: "germany", regionPath: "nrw", districtPath: "city", cityPath: "koln",
         fotoCard: "Germany/nrw/koln/koln-city/schnuetgen/001.jpg",
-        location: "Köln, Deutschland",
+        location: "Köln, Stadtteil Neustadt-Süd (Stadtbezirk Innenstadt), Deutschland",
         officialSite: [
             { bold: "Offizielle Webseite", link: "https://museum-schnuetgen.de/" }
         ],
@@ -958,7 +958,7 @@ const datas = [
         path: "rautenstrauch_joest_museum_koln",
         countryPath: "germany", regionPath: "nrw", districtPath: "city", cityPath: "koln",
         fotoCard: "Germany/nrw/koln/koln-city/rautenstrauch_joest_museum/001.jpg",
-        location: "Köln, Deutschland",
+        location: "Köln, Stadtteil Neustadt-Süd (Stadtbezirk Innenstadt), Deutschland",
         officialSite: [
             { bold: "Offizielle Website", link: "https://www.rautenstrauch-joest-museum.de/Startseite" }
         ],
@@ -1020,7 +1020,7 @@ const datas = [
         countryPath: "germany", regionPath: "nrw", districtPath: "city", cityPath: "koln",
         showMore: true, hiddenFromList: true,
         fotoCard: "Germany/nrw/koln/koln-city/dufthaus_4711/001.jpg",
-        location: "Köln, Deutschland",
+        location: "Köln, Stadtteil Altstadt-Nord (Stadtbezirk Innenstadt), Deutschland",
         officialSite: [
             { bold: "Offizielle Website", link: "https://4711.com/" }
         ],
@@ -1082,7 +1082,7 @@ const datas = [
         path: "makk_museum_koln",
         countryPath: "germany", regionPath: "nrw", districtPath: "city", cityPath: "koln",
         fotoCard: "Germany/nrw/koln/koln-city/makk_museum/001.JPG",
-        location: "Köln, Deutschland",
+        location: "Köln, Stadtteil Altstadt-Nord (Stadtbezirk Innenstadt), Deutschland",
         officialSite: [
             { bold: "Offizielle Website", link: "https://makk.de/" }
         ],
@@ -1142,7 +1142,7 @@ const datas = [
         countryPath: "germany", regionPath: "nrw", districtPath: "city", cityPath: "koln",
         showMore: true, hiddenFromList: true,
         fotoCard: "Germany/nrw/koln/koln-city/stadtmuseum/001.jpg",
-        location: "Köln, Deutschland",
+        location: "Köln, Stadtteil Altstadt-Nord (Stadtbezirk Innenstadt), Deutschland",
         officialSite: [
             { bold: "Offizielle Website", link: "https://www.koelnisches-stadtmuseum.de" }
         ],
@@ -1200,7 +1200,7 @@ const datas = [
         path: "sport_olympia_museum_koln",
         countryPath: "germany", regionPath: "nrw", districtPath: "city", cityPath: "koln",
         fotoCard: "Germany/nrw/koln/koln-city/sport_olympia_museum/001.jpg",
-        location: "Köln, Deutschland",
+        location: "Köln, Stadtteil Altstadt-Süd (Stadtbezirk Innenstadt), Deutschland",
         officialSite: [
             { bold: "Offizielle Website", link: "https://sportmuseum.de/" }
         ],
@@ -1259,7 +1259,7 @@ const datas = [
         path: "photographische_sammlung_sk_stiftung_kultur_koln",
         countryPath: "germany", regionPath: "nrw", districtPath: "city", cityPath: "koln",
         fotoCard: "Germany/nrw/koln/koln-city/photographische_sammlung_sk_stiftung_kultur/001.jpg",
-        location: "Köln, Deutschland",
+        location: "Köln, Stadtteil Neustadt-Nord (Stadtbezirk Innenstadt), Deutschland",
         officialSite: [
             { bold: "Offizielle Webseite", link: "https://www.photographie-sk-kultur.de/" }
         ],
@@ -1400,7 +1400,7 @@ const datas = [
         path: "skulpturenpark_koln",
         countryPath: "germany", regionPath: "nrw", districtPath: "city", cityPath: "koln",
         fotoCard: "Germany/nrw/koln/koln-city/skulpturenpark/001.jpg",
-        location: "Köln, Deutschland",
+        location: "Köln, Stadtteil Riehl (Stadtbezirk Nippes), Deutschland",
         officialSite: [
             { bold: "Offizielle Webseite", link: "https://skulpturenparkkoeln.de/" }
         ],
@@ -1452,7 +1452,7 @@ const datas = [
         path: "zoo_koln",
         countryPath: "germany", regionPath: "nrw", districtPath: "city", cityPath: "koln",
         fotoCard: "Germany/nrw/koln/koln-city/zoo/001.jpg",
-        location: "Köln, Deutschland",
+        location: "Köln, Stadtteil Riehl (Stadtbezirk Nippes), Deutschland",
         officialSite: [
             { bold: "Offizielle Website", link: "https://koelnerzoo.de/" }
         ],
@@ -1514,7 +1514,7 @@ const datas = [
         path: "forstbotanischer_garten",
         countryPath: "germany", regionPath: "nrw", districtPath: "city", cityPath: "koln",
         fotoCard: "Germany/nrw/koln/koln-city/forstbotanischer_garten/001.jpg",
-        location: "Köln, Deutschland",
+        location: "Köln, Stadtteil Rodenkirchen (Stadtbezirk Rodenkirchen), Deutschland",
         officialSite: [
             {
                 bold: "Offizielle Webseite des Forstbotanischer Gartens",
@@ -1582,7 +1582,7 @@ const datas = [
         path: "flora_garten_koln",
         countryPath: "germany", regionPath: "nrw", districtPath: "city", cityPath: "koln",
         fotoCard: "Germany/nrw/koln/koln-city/flora_garten_koln/001.jpg",
-        location: "Köln, Deutschland",
+        location: "Köln, Stadtteil Riehl (Stadtbezirk Nippes), Deutschland",
         short_description: "Flora und Botanischer Garten in Köln vereint historischen Park und wissenschaftlichen botanischen Garten. Hier können Besucher über 10.000 Pflanzen aus aller Welt sehen, thematische Alleen entlangschlendern und die Gewächshäuser genießen. Ein idealer Ort zur Erholung und zur Erforschung der Pflanzenvielfalt.",
         full_description: {
             title: "Beschreibung und Geschichte",
@@ -1640,18 +1640,17 @@ const datas = [
         path: "rheinpark_koln",
         countryPath: "germany", regionPath: "nrw", districtPath: "city", cityPath: "koln",
         fotoCard: "Germany/nrw/koln/koln-city/rheinpark_koln/001.jpg",
-        location: "Köln, Deutschland",
+        location: "Köln, Stadtteil Deutz (Stadtbezirk Innenstadt), Deutschland",
         officialSite: [
             { bold: "Parkseite auf der Website der Stadt Köln", link: "https://www.stadt-koeln.de/leben-in-koeln/freizeit-natur-sport/parks/rheinpark" },
             { bold: "<br>Offizielle Website der Kleinbahn im Rheinpark", link: "http://kleinbahn.koeln/" }
         ],
-        subObjects: ["tanzbrunnen", "koln_seilbahn", "divitia_koln"],
+        subObjects: ["tanzbrunnen", "divitia_koln"],
         short_description: "Der Rheinpark ist ein großer öffentlicher Park entlang des rechten Rheinufers im Stadtteil Deutz der Stadt Köln. Er stellt eine historisch und architektonisch bedeutende Grünanlage dar, bekannt für seine weitläufigen Rasenflächen, Blumenbeete, Spazierwege und den herrlichen Blick auf das Stadtzentrum mit dem Kölner Dom.",
         short_description_subObjects: {
             text: "Im Rheinpark Köln befinden sich folgende interessante Orte und Attraktionen:",
             items: [
                 { bold: "Tanzender Brunnen", text: "– ein schönes, beeindruckendes Bauwerk mit Musik und Beleuchtung, das Touristen und Einheimische anzieht." },
-                { bold: "Kölner Seilbahn", text: "– hebt Besucher über den Rhein und bietet Panoramablicke auf die Stadt und den Fluss." },
                 { bold: "Römisches Fort Divitia", text: "– eine historische Festung aus der Römerzeit, erhalten im Park und für Besichtigungen zugänglich." },
             ]
         },
@@ -1700,7 +1699,7 @@ const datas = [
         countryPath: "germany", regionPath: "nrw", districtPath: "city", cityPath: "koln",
         hiddenFromList: true, showMore: true,
         fotoCard: "Germany/nrw/koln/koln-city/rheinpark_koln/002.jpg",
-        location: "Köln, Deutschland",
+        location: "Köln, Stadtteil Deutz (Stadtbezirk Innenstadt), Deutschland",
         officialSite: [
             { bold: "Offizielle Seite des Tanzbrunnen (über KölnKongress)", link: "https://koelncongress.de/locations/tanzbrunnen-koeln/" }
         ],
@@ -1740,9 +1739,8 @@ const datas = [
         type: ["technical_structure"], rating: "popular",
         path: "koln_seilbahn",
         countryPath: "germany", regionPath: "nrw", districtPath: "city", cityPath: "koln",
-        hiddenFromList: true, showMore: true,
         fotoCard: "Germany/nrw/koln/koln-city/rheinpark_koln/003.jpg",
-        location: "Köln, Deutschland",
+        location: "Köln, Stadtteil Riehl (Stadtbezirk Nippes), Deutschland",
         officialSite: [
             { bold: "Offizielle Website", link: "https://www.koelner-seilbahn.de/index.html" }
         ],
@@ -1766,6 +1764,7 @@ const datas = [
         tickets_and_entry: {
             title: "Praktische Informationen",
             items: [
+                { bold: "Adresse: ", text: "Nordstation – Riehler Straße 180, 50735 Köln <br>Südstation – Rheinparkweg 1, 50679 Köln" },
                 { bold: "Saison: ", text: "in der Regel von April bis Oktober täglich." },
                 { bold: "Öffnungszeiten: ", text: "meist von 10:00 bis 18:00 Uhr (letzte Fahrt gegen 17:45–18:00 Uhr)." },
                 { bold: "Tickets: ", text: "<br>Erwachsene: etwa 4,80 €–7,00 € für ein Hin- und Rückfahrticket, <br>Kinder (meist bis ca. 12 Jahre) günstiger. <br>Preise können variieren, Ermäßigungen mit KölnCard oder anderen Karten sind möglich." }
@@ -1798,7 +1797,7 @@ const datas = [
         countryPath: "germany", regionPath: "nrw", districtPath: "city", cityPath: "koln",
         hiddenFromList: true, showMore: true,
         fotoCard: "Germany/nrw/koln/koln-city/rheinpark_koln/004.jpg",
-        location: "Köln, Deutschland",
+        location: "Köln, Stadtteil Deutz (Stadtbezirk Innenstadt), Deutschland",
         short_description: "Die Ruinen des römischen Forts Divitia, auch bekannt als Historischer Park Deutz, sind Überreste einer spätantiken Befestigung aus dem 4. Jahrhundert n. Chr. am rechten Rheinufer in Köln. Erhalten sind Turmfragmente, Mauerwerk und Fundamentreste. Sie sind für die freie Besichtigung in der Fußgängerzone des Rheinparks zugänglich.",
         status: "partial", note: "erhalten sind Fragmente des römischen Kastells Divitia, einschließlich Reste der Befestigungsmauern und planungsbezogener Strukturen, der übrige Aufbau ist verloren und nur archäologisch belegt.",
         full_description: {
@@ -1854,7 +1853,7 @@ const datas = [
         path: "finkens_garten_koln",
         countryPath: "germany", regionPath: "nrw", districtPath: "city", cityPath: "koln",
         fotoCard: "Germany/nrw/koln/koln-city/finkens_garten/001.jpg",
-        location: "Köln, Deutschland",
+        location: "Köln, Stadtteil Rodenkirchen (Stadtbezirk Rodenkirchen), Deutschland",
         officialSite: [
             { bold: "Offizielle Website", link: "http://www.finkensgarten.org/" }
         ],
@@ -1908,7 +1907,7 @@ const datas = [
         path: "decksteiner_weiher_koln",
         countryPath: "germany", regionPath: "nrw", districtPath: "city", cityPath: "koln",
         fotoCard: "Germany/nrw/koln/koln-city/decksteiner_weiher/001.jpg",
-        location: "Köln, Deutschland",
+        location: "Köln, Stadtteil Lindenthal (Stadtbezirk Lindenthal), Deutschland",
         short_description: "Der Decksteiner Weiher – der größte künstliche Parkteich Kölns, befindet sich im Westen der Stadt im Bereich des äußeren Grüngürtels. Der Weiher ist von breiten Alleen, Waldflächen und Spazierwegen umgeben. Aufgrund seiner langgestreckten Form, der schattigen Kastanienalleen und der ruhigen Atmosphäre ist er einer der beliebtesten Erholungsorte der Stadtbewohner.",
         full_description: {
             title: "Beschreibung und Geschichte",

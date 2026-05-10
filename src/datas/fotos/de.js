@@ -103,7 +103,6 @@ export const Fotos = {
         { path: "Germany/nrw/koln/koln-city/rheinpark_koln/008.jpg", title: { ru: "Рейнский парк, 2026", ua: "Рейнський парк, 2026", de: "Rheinpark, 2026" } },
         { path: "Germany/nrw/koln/koln-city/rheinpark_koln/009.jpg", title: { ru: "Рейнский парк, 2026", ua: "Рейнський парк, 2026", de: "Rheinpark, 2026" } },
         { path: "Germany/nrw/koln/koln-city/rheinpark_koln/002.jpg", title: { ru: "Танцующий фонтан, 2026", ua: "Танцюючий фонтан, 2026", de: "Tanzbrunnen, 2026" } },
-        { path: "Germany/nrw/koln/koln-city/rheinpark_koln/003.jpg", title: { ru: "Кёльнская канатная дорога (фото взято с википедии)", ua: "Кельнська канатна дорога (фото взято з Вікіпедії)", de: "Kölner Seilbahn (Foto von Wikipedia entnommen)" } },
         { path: "Germany/nrw/koln/koln-city/rheinpark_koln/004.jpg", title: { ru: "Руины римского форта Дивития в Кёльне, 2025", ua: "Руїни римського форту Дивітія в Кельні, 2025", de: "Ruinen des römischen Forts Divitia in Köln, 2025" } },
         { path: "Germany/nrw/koln/koln-city/rheinpark_koln/005.jpg", title: { ru: "Руины римского форта Дивития в Кёльне, 2025", ua: "Руїни римського форту Дивітія в Кельні, 2025", de: "Ruinen des römischen Forts Divitia in Köln, 2025" } },
         { path: "Germany/nrw/koln/koln-city/rheinpark_koln/006.jpg", title: { ru: "Руины римского форта Дивития в Кёльне, 2025", ua: "Руїни римського форту Дивітія в Кельні, 2025", de: "Ruinen des römischen Forts Divitia in Köln, 2025" } },

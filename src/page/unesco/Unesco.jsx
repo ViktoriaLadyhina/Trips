@@ -7,9 +7,9 @@ import { Link } from "react-router";
 
 const Unesco_Title = { ru: "Достопримечательности ЮНЕСКО", ua: "Пам’ятки ЮНЕСКО", de: "UNESCO-Welterbestätten" }
 const unescoTableHead = {
-  ru: { name: "Название", type: "Тип", location: "Город, страна", year: "Год", criteria: "Критерии", epoch: "Эпоха" },
-  de: { name: "Name", type: "Typ", location: "Stadt, Land", year: "Jahr", criteria: "Kriterien", epoch: "Epoche" },
-  ua: { name: "Назва", type: "Тип", location: "Місто, країна", year: "Рік", criteria: "Критерії", epoch: "Епоха" }
+  ru: { name: "Название", type: "Тип", location: "Местоположение", year: "Год", criteria: "Критерии", epoch: "Эпоха" },
+  de: { name: "Name", type: "Typ", location: "Standort", year: "Jahr", criteria: "Kriterien", epoch: "Epoche" },
+  ua: { name: "Назва", type: "Тип", location: "Місцезнаходження", year: "Рік", criteria: "Критерії", epoch: "Епоха" }
 };
 const Unesco_NoSeries = { ru: "Без серии", de: "Ohne Serie", ua: "Без серії" };
 const Unesco_Description = {
@@ -68,7 +68,7 @@ export const Unesco = () => {
           <div className="unesco-cards">
             {items.map(item => (
               <div key={item.id} className="unesco-card">
-                <div className="unesco-card-row"><strong>{t.name}:</strong> <a href={item.url}>{item.name}</a></div>
+                <div className="unesco-card-row"><strong>{t.name}:</strong> <a href={`/${item.countryPath}/${item.regionPath}/${item.districtPath}/${item.cityPath}/attractions/${item.path}`}>{item.name}</a></div>
                 <div className="unesco-card-row"><strong>{t.type}:</strong> {item.unesco_status?.type}</div>
                 <div className="unesco-card-row"><strong>{t.location}:</strong> {item.location}</div>
                 {series === "no-series" && (
