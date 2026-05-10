@@ -40,6 +40,7 @@ const datas =
     bruhl: { ru: 'Город Брюль', de: 'Stadt Brühl', ua: 'Місто Брюль' },
     frechen: { ru: 'Город Фрехен', de: 'Stadt Frechen', ua: 'Місто Фрехен' },
     konigswinter: { ru: 'Город Кёнигсвинтер', de: 'Stadt Königswinter', ua: 'Місто Кенігсвінтер' },
+    lohmar: { ru: 'Город Ломар', de: 'Stadt Lohmar', ua: 'Місто Ломар' },
     dortmund: { ru: 'Город Дортмунд', de: 'Stadt Dortmund', ua: 'Місто Дортмунд' },
     luedenscheid: { ru: 'Город Люденшайд', de: 'Stadt Lüdenscheid', ua: 'Місто Люденшайд' },
     altena: { ru: 'Город Альтена', de: 'Stadt Altena', ua: 'Місто Альтена' },

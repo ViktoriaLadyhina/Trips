@@ -2408,6 +2408,249 @@ const datas = [
             }
         }
     },
+    {
+        id: "lohmar",
+        path: "lohmar",
+        countryPath: "germany", regionPath: "nrw", districtPath: "koln", subRegionPath: "rhein_sieg",
+        gerb: "Germany/nrw/koln/Rhein-Sieg-Kreis/lohmar/gerb.png",
+        coord: { lat: 50.8387, lng: 7.2140 },
+        translations: {
+            ru: {
+                name: "Ломар",
+                subRegionName: "Рейн-Зиг",
+                desc: {
+                    general: [
+                        { text: "Ломар (нем. Lohmar) – небольшой зелёный город между Кёльном и Бонном, расположенный в долине реки Аггер на западной границе Bergisches Land. Город известен не столько отдельными достопримечательностями, сколько природными ландшафтами, холмами, лесами, фахверковыми домами и атмосферой спокойной «старой Западной Германии»." }
+                    ],
+                    population: [{ bold: "Население", text: " города составляет около 31 000 человек (по состоянию на 2024 год)." }],
+                    area: [{ bold: "Площадь:", text: " территория города занимает примерно 65,6 км². Значительная часть покрыта лесами, сельскохозяйственными угодьями и природными ландшафтами." }],
+                    postalCode: [{ bold: "Почтовый индекс:", text: " 53797" }],
+                    phone: [{ bold: "Телефонные коды:", text: " +49 02205, 02206, 02241, 02246, 02247" }],
+                    officialSite: [{ bold: "Официальный сайт Ломара", link: "https://www.lohmar.de/" }],
+                    education: [
+                        { bold: "Система образования", text: " в Ломаре представлены начальные школы, Gesamtschulen, гимназии и учреждения дошкольного образования." },
+                        { text: " Благодаря близости к Кёльну, Бонну и Зигбургу жители города имеют доступ к крупным университетам и профессиональным учебным заведениям региона." },
+                        { text: " В городе также работают музыкальные школы, спортивные клубы и программы дополнительного образования." }
+                    ],
+                    culture: [{ bold: "Культурная жизнь", text: " – в Ломаре проходят местные фестивали, ярмарки и спортивные мероприятия. Популярностью пользуются пешие и велосипедные маршруты вдоль долины Аггер и в холмистых районах Бергишес-Ланда." }]
+                },
+                admin: {
+                    title: "Ломар включает 30 официальных городских частей (Stadtteile) и множество небольших деревень и поселений. Крупнейшими из которых являются:",
+                    isList: true,
+                    items: [
+                        { bold: "Lohmar", text: " – центральная часть города с административными учреждениями, магазинами и городской инфраструктурой" },
+                        { bold: "Wahlscheid", text: " – второй по величине район с жилой застройкой и природным окружением" },
+                        { bold: "Birk", text: " – жилой район с современными кварталами и школами" },
+                        { bold: "Donrath", text: " – район в долине Аггер с хорошим транспортным сообщением" },
+                        { bold: "Honrath", text: " – исторический и более сельский район с традиционной застройкой" }
+                    ]
+                },
+                geography: {
+                    title: "Рельеф и природа",
+                    items: [
+                        { text: "Ломар расположен в переходной зоне между Рейнской равниной и холмами Бергишес-Ланда. Ландшафт сочетает лесистые возвышенности, долины рек и сельские территории." },
+                        { text: "Высоты на территории города колеблются примерно от 59 до 230 метров над уровнем моря." },
+                        { bold: "Река Аггер.", text: " Через территорию города протекает река Аггер, вдоль которой расположены прогулочные зоны, велосипедные маршруты и природные территории." },
+                        { bold: "Изгиб реки Аггер (Aggerbogen)", text: " – природная зона у реки Аггер с прогулочными дорожками, мостиками и спокойными пейзажами. Считается одним из самых приятных мест для прогулок и велопоездок в окрестностях Ломара." },
+                        { bold: "Долина реки Аггер (Aggertal)", text: " – является одной из наиболее живописных частей Бергишес-Ланд (Bergisches Land) и популярна среди любителей природы, пешего туризма и велосипедных маршрутов." },
+                    ]
+                },
+                notablePeople: {
+                    title: "Известные люди Ломара",
+                    isList: true,
+                    items: [
+                        { bold: "Клаудия Виея (Claudia Wieja)", text: " – немецкий политик, бургомистр Ломара." },
+                        { bold: "Регион Бергишес-Ланд", text: " – исторически связан с развитием ремёсел, сельского хозяйства и торговли между Кёльном и Зауэрландом." }
+                    ]
+                },
+                interestingFacts: {
+                    title: "Интересные факты",
+                    isList: true,
+                    items: [
+                        { bold: "Близость к Кёльну и Бонну", text: " – до обоих городов можно добраться примерно за 20–30 минут на автомобиле." },
+                        { bold: "Зелёный пригород", text: " – Ломар считается популярным местом проживания для тех, кто работает в Кёльне или Бонне, но предпочитает более спокойную среду." },
+                        { bold: "Бергишес-Ланд", text: " – город расположен на западной границе этого историко-географического региона." },
+                        { bold: "Множество небольших поселений", text: " – помимо основных Stadtteile, к Ломару относятся десятки маленьких деревень, хуторов и исторических поселений, характерных для Bergisches Land." },
+                        { bold: "Атмосфера региона", text: " – Ломар часто воспринимается как пример спокойного и зелёного пригорода старой западной Германии с небольшими деревнями, лесами и традиционной застройкой." }
+                    ]
+                },
+                briefHistory: {
+                    title: "История",
+                    items: [
+                        { text: "Территория современного Ломара была заселена ещё в доисторические времена. Археологические находки свидетельствуют о присутствии людей здесь уже в каменном веке." },
+                        { text: "Первые письменные упоминания о поселении относятся к Средневековью. Регион находился под влиянием архиепископства Кёльна." },
+                        { text: "На протяжении столетий местная экономика основывалась на сельском хозяйстве, ремёслах и небольших торговых путях между Рейном и Бергишес-Ландом." },
+                        { text: "В XIX веке развитие дорог и железнодорожной инфраструктуры усилило связь Ломара с Кёльном, Бонном и Зигбургом." },
+                        { text: "После Второй мировой войны город постепенно превратился в популярный жилой пригород для работников крупных городов региона." },
+                        { text: "Сегодня Ломар сочетает современную инфраструктуру, природные зоны и спокойный ритм жизни, оставаясь одним из зелёных городов округа Рейн-Зиг." }
+                    ]
+                },
+                meta: {
+                    title: "Ломар – зелёный город между Кёльном и Бонном",
+                    description: "Ломар: небольшой город округа Рейн-Зиг с природой Бергишес-Ланда, долиной Аггер и удобным расположением рядом с Кёльном и Бонном.",
+                    ogTitle: "Ломар – природа и спокойствие рядом с Кёльном",
+                    ogDescription: "Узнайте о Ломаре: история, районы, природа и жизнь в зелёном пригороде между Кёльном и Бонном.",
+                    ogImage: "https://our-travels.info/foto/Germany/nrw/koln/Rhein-Sieg-Kreis/lohmar/001.jpg"
+                }
+            },
+            ua: {
+                name: "Ломар",
+                subRegionName: "Райн-Зіг",
+                desc: {
+                    general: [
+                        { text: "Ломар (нім. Lohmar) – невелике зелене місто між Кельном і Бонном, розташоване в долині річки Аггер на західному кордоні Bergisches Land. Місто відоме не стільки окремими пам’ятками, скільки природними ландшафтами, пагорбами, лісами, фахверковими будинками та атмосферою спокійної «старої Західної Німеччини»." }
+                    ],
+                    population: [ { bold: "Населення", text: " міста становить близько 31 000 осіб (станом на 2024 рік)." } ],
+                    area: [ { bold: "Площа:", text: " територія міста становить приблизно 65,6 км². Значна частина вкрита лісами, сільськогосподарськими угіддями та природними ландшафтами." } ],
+                    postalCode: [ { bold: "Поштовий індекс:", text: " 53797" } ],
+                    phone: [ { bold: "Телефонні коди:", text: " +49 02205, 02206, 02241, 02246, 02247" } ],
+                    officialSite: [ { bold: "Офіційний сайт Ломара", link: "https://www.lohmar.de/" } ],
+                    education: [
+                        { bold: "Система освіти", text: " у Ломарі представлені початкові школи, Gesamtschulen, гімназії та заклади дошкільної освіти." },
+                        { text: " Завдяки близькості до Кельна, Бонна та Зігбурга мешканці міста мають доступ до великих університетів і професійних навчальних закладів регіону." },
+                        { text: " У місті також працюють музичні школи, спортивні клуби та програми додаткової освіти."}
+                    ],
+                    culture: [ { bold: "Культурне життя", text: " – у Ломарі проходять місцеві фестивалі, ярмарки та спортивні заходи. Популярністю користуються пішохідні та велосипедні маршрути вздовж долини Аггер і в горбистих районах Бергішес-Ланду."  } ]
+                },
+                admin: {
+                    title: "Ломар включає 30 офіційних міських частин (Stadtteile) та велику кількість невеликих сіл і поселень. Найбільшими з них є:",
+                    isList: true,
+                    items: [
+                        { bold: "Lohmar", text: " – центральна частина міста з адміністративними установами, магазинами та міською інфраструктурою" },
+                        { bold: "Wahlscheid", text: " – другий за величиною район із житловою забудовою та природним оточенням" },
+                        { bold: "Birk", text: " – житловий район із сучасними кварталами та школами" },
+                        { bold: "Donrath", text: " – район у долині Аггер із хорошим транспортним сполученням" },
+                        { bold: "Honrath", text: " – історичний і більш сільський район із традиційною забудовою" }
+                    ]
+                },
+                geography: {
+                    title: "Рельєф і природа",
+                    items: [
+                        { text: "Ломар розташований у перехідній зоні між Рейнською рівниною та пагорбами Бергішес-Ланду. Ландшафт поєднує лісисті височини, долини річок і сільські території." },
+                        { text: "Висоти на території міста коливаються приблизно від 59 до 230 метрів над рівнем моря." },
+                        { bold: "Річка Аггер.", text: " Через територію міста протікає річка Аггер, уздовж якої розташовані прогулянкові зони, велосипедні маршрути та природні території." },
+                        { bold: "Вигин річки Аггер (Aggerbogen)", text: " – природна зона біля річки Аггер із прогулянковими доріжками, містками та спокійними пейзажами. Вважається одним із найприємніших місць для прогулянок і велопоїздок в околицях Ломара." },
+                        { bold: "Долина річки Аггер (Aggertal)", text: " – є однією з наймальовничіших частин Бергішес-Ланду (Bergisches Land) і популярна серед любителів природи, пішого туризму та велосипедних маршрутів." }
+                    ]
+                },
+                notablePeople: {
+                    title: "Відомі люди Ломара",
+                    isList: true,
+                    items: [
+                        { bold: "Клаудія Вієя (Claudia Wieja)", text: " – німецький політик, бургомістр Ломара." },
+                        { bold: "Регіон Бергішес-Ланд", text: " – історично пов’язаний із розвитком ремесел, сільського господарства та торгівлі між Кельном і Зауерландом." }
+                    ]
+                },
+                interestingFacts: {
+                    title: "Цікаві факти",
+                    isList: true,
+                    items: [
+                        { bold: "Близькість до Кельна та Бонна", text: " – до обох міст можна дістатися приблизно за 20–30 хвилин автомобілем." },
+                        { bold: "Зелене передмістя", text: " – Ломар вважається популярним місцем проживання для тих, хто працює в Кельні або Бонні, але надає перевагу спокійнішому середовищу." },
+                        { bold: "Бергішес-Ланд", text: " – місто розташоване на західному кордоні цього історико-географічного регіону."},
+                        { bold: "Багато невеликих поселень", text: " – окрім основних Stadtteile, до Ломара належать десятки маленьких сіл, хуторів та історичних поселень, характерних для Bergisches Land." },
+                        { bold: "Атмосфера регіону", text: " – Ломар часто сприймається як приклад спокійного й зеленого передмістя старої Західної Німеччини з невеликими селами, лісами та традиційною забудовою." }
+                    ]
+                },
+                briefHistory: {
+                    title: "Історія",
+                    items: [
+                        { text: "Територія сучасного Ломара була заселена ще в доісторичні часи. Археологічні знахідки свідчать про присутність людей тут уже в кам’яному віці." },
+                        { text: "Перші письмові згадки про поселення належать до Середньовіччя. Регіон перебував під впливом архієпископства Кельна." },
+                        { text: "Протягом століть місцева економіка ґрунтувалася на сільському господарстві, ремеслах і невеликих торговельних шляхах між Рейном і Бергішес-Ландом." },
+                        { text: "У XIX столітті розвиток доріг і залізничної інфраструктури посилив зв’язок Ломара з Кельном, Бонном і Зігбургом." },
+                        { text: "Після Другої світової війни місто поступово перетворилося на популярне житлове передмістя для працівників великих міст регіону." },
+                        { text: "Сьогодні Ломар поєднує сучасну інфраструктуру, природні зони та спокійний ритм життя, залишаючись одним із зелених міст округу Райн-Зіг." }
+                    ]
+                },
+                meta: {
+                    title: "Ломар – зелене місто між Кельном і Бонном",
+                    description: "Ломар: невелике місто округу Райн-Зіг із природою Бергішес-Ланду, долиною Аггер і зручним розташуванням поруч із Кельном і Бонном.",
+                    ogTitle: "Ломар – природа та спокій поруч із Кельном",
+                    ogDescription: "Дізнайтеся про Ломар: історія, райони, природа та життя в зеленому передмісті між Кельном і Бонном.",
+                    ogImage: "https://our-travels.info/foto/Germany/nrw/koln/Rhein-Sieg-Kreis/lohmar/001.jpg"
+                }
+            },
+            de: {
+                name: "Lohmar",
+                subRegionName: "Rhein-Sieg",
+                desc: {
+                    general: [
+                        { text: "Lohmar ist eine kleine grüne Stadt zwischen Köln und Bonn, gelegen im Tal der Agger am westlichen Rand des Bergischen Landes. Die Stadt ist weniger für einzelne Sehenswürdigkeiten bekannt als vielmehr für ihre Naturlandschaften, Hügel, Wälder, Fachwerkhäuser und die Atmosphäre des ruhigen „alten Westdeutschlands“." }
+                    ],
+                    population: [ { bold: "Einwohnerzahl", text: " beträgt etwa 31.000 Personen (Stand: 2024)." } ],
+                    area: [ { bold: "Fläche:", text: " Das Stadtgebiet umfasst ungefähr 65,6 km². Große Teile bestehen aus Wäldern, landwirtschaftlichen Flächen und natürlichen Landschaften." } ],
+                    postalCode: [ { bold: "Postleitzahl:", text: " 53797" } ],
+                    phone: [ { bold: "Vorwahlen:", text: " +49 02205, 02206, 02241, 02246, 02247" } ],
+                    officialSite: [ { bold: "Offizielle Website von Lohmar", link: "https://www.lohmar.de/" } ],
+                    education: [
+                        { bold: "Bildungssystem", text: " in Lohmar umfasst Grundschulen, Gesamtschulen, Gymnasien sowie Einrichtungen der frühkindlichen Bildung." },
+                        { text: " Durch die Nähe zu Köln, Bonn und Siegburg haben die Einwohner Zugang zu großen Universitäten und beruflichen Bildungseinrichtungen der Region." },
+                        { text: " Außerdem gibt es Musikschulen, Sportvereine und Angebote der Weiterbildung." }
+                    ],
+                    culture: [ { bold: "Kulturelles Leben", text: " – in Lohmar finden lokale Feste, Märkte und Sportveranstaltungen statt. Besonders beliebt sind Wander- und Radwege entlang des Aggertals und in den hügeligen Gebieten des Bergischen Landes." } ]
+                },
+                admin: {
+                    title: "Lohmar umfasst 30 offizielle Stadtteile sowie zahlreiche kleine Dörfer und Siedlungen. Zu den größten gehören:",
+                    isList: true,
+                    items: [
+                        { bold: "Lohmar", text: " – das Zentrum der Stadt mit Verwaltungsgebäuden, Geschäften und städtischer Infrastruktur" },
+                        { bold: "Wahlscheid", text: " – der zweitgrößte Stadtteil mit Wohngebieten und naturnaher Umgebung" },
+                        { bold: "Birk", text: " – ein Wohngebiet mit modernen Quartieren und Schulen" },
+                        { bold: "Donrath", text: " – ein Stadtteil im Aggertal mit guter Verkehrsanbindung" },
+                        { bold: "Honrath", text: " – ein historischer und eher ländlicher Ortsteil mit traditioneller Bebauung" }
+                    ]
+                },
+                geography: {
+                    title: "Relief und Natur",
+                    items: [
+                        { text: "Lohmar liegt in einer Übergangszone zwischen der Rheinischen Ebene und den Hügeln des Bergischen Landes. Die Landschaft verbindet bewaldete Höhenzüge, Flusstäler und ländliche Gebiete." },
+                        { text: "Die Höhenlagen im Stadtgebiet reichen ungefähr von 59 bis 230 Metern über dem Meeresspiegel." },
+                        { bold: "Die Agger.", text: " Durch das Stadtgebiet fließt die Agger, entlang der sich Spazierwege, Radstrecken und Naturgebiete befinden." },
+                        { bold: "Aggerbogen", text: " – ein Naturgebiet an der Agger mit Spazierwegen, kleinen Brücken und ruhigen Landschaften. Es gilt als einer der angenehmsten Orte für Spaziergänge und Fahrradtouren in der Umgebung von Lohmar."  },
+                        { bold: "Aggertal", text: " – zählt zu den landschaftlich schönsten Teilen des Bergischen Landes und ist bei Naturfreunden, Wanderern und Radfahrern beliebt." }
+                    ]
+                },
+                notablePeople: {
+                    title: "Bekannte Persönlichkeiten aus Lohmar",
+                    isList: true,
+                    items: [
+                        { bold: "Claudia Wieja", text: " – deutsche Politikerin und Bürgermeisterin von Lohmar." },
+                        { bold: "Region Bergisches Land", text: " – historisch geprägt durch Handwerk, Landwirtschaft und Handelswege zwischen Köln und dem Sauerland." }
+                    ]
+                },
+                interestingFacts: {
+                    title: "Interessante Fakten",
+                    isList: true,
+                    items: [
+                        { bold: "Nähe zu Köln und Bonn", text: " – beide Städte sind mit dem Auto in etwa 20–30 Minuten erreichbar." },
+                        { bold: "Grüner Vorort", text: " – Lohmar gilt als beliebter Wohnort für Menschen, die in Köln oder Bonn arbeiten, aber eine ruhigere Umgebung bevorzugen." },
+                        { bold: "Bergisches Land", text: " – die Stadt liegt am westlichen Rand dieser historischen Kulturlandschaft." },
+                        { bold: "Zahlreiche kleine Ortschaften", text: " – neben den wichtigsten Stadtteilen gehören zu Lohmar Dutzende kleiner Dörfer, Weiler und historischer Siedlungen, die typisch für das Bergische Land sind." },
+                        { bold: "Atmosphäre der Region", text: " – Lohmar wird oft als Beispiel für ein ruhiges und grünes Westdeutschland mit kleinen Dörfern, Wäldern und traditioneller Bebauung wahrgenommen." }
+                    ]
+                },
+                briefHistory: {
+                    title: "Geschichte",
+                    items: [
+                        { text: "Das Gebiet des heutigen Lohmar war bereits in vorgeschichtlicher Zeit besiedelt. Archäologische Funde belegen die Anwesenheit von Menschen schon in der Steinzeit." },
+                        { text: "Die ersten schriftlichen Erwähnungen stammen aus dem Mittelalter. Die Region stand unter dem Einfluss des Erzbistums Köln." },
+                        { text: "Über Jahrhunderte basierte die lokale Wirtschaft auf Landwirtschaft, Handwerk und kleinen Handelswegen zwischen dem Rhein und dem Bergischen Land." },
+                        { text: "Im 19. Jahrhundert verbesserten Straßenbau und Eisenbahninfrastruktur die Verbindung Lohmars mit Köln, Bonn und Siegburg." },
+                        { text: "Nach dem Zweiten Weltkrieg entwickelte sich die Stadt zunehmend zu einem beliebten Wohnvorort für Berufspendler der umliegenden Großstädte." },
+                        { text: "Heute verbindet Lohmar moderne Infrastruktur, Naturgebiete und eine ruhige Lebensweise und zählt zu den grünen Städten des Rhein-Sieg-Kreises." }
+                    ]
+                },
+                meta: {
+                    title: "Lohmar – grüne Stadt zwischen Köln und Bonn",
+                    description: "Lohmar: kleine Stadt im Rhein-Sieg-Kreis mit Natur des Bergischen Landes, dem Aggertal und guter Lage nahe Köln und Bonn.",
+                    ogTitle: "Lohmar – Natur und Ruhe nahe Köln",
+                    ogDescription: "Entdecken Sie Lohmar: Geschichte, Ortsteile, Natur und Leben in einem grünen Vorort zwischen Köln und Bonn.",
+                    ogImage: "https://our-travels.info/foto/Germany/nrw/koln/Rhein-Sieg-Kreis/lohmar/001.jpg"
+                }
+            }
+        }
+    },
 ]
 
 export default datas
