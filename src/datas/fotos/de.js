@@ -459,6 +459,17 @@ export const Fotos = {
         { path: "Germany/nrw/koln/Rhein-Sieg-Kreis/lohmar/001.jpg", title: { ru: "Ломар, 2026", ua: "Ломар, 2026", de: "Lohmar, 2026" } },
         { path: "Germany/nrw/koln/Rhein-Sieg-Kreis/lohmar/002.jpg", title: { ru: "Ломар, 2026", ua: "Ломар, 2026", de: "Lohmar, 2026" } },
       ],    
+      st_johannes_enthauptung_lohmar: [
+        { path: "Germany/nrw/koln/Rhein-Sieg-Kreis/lohmar/st_johannes_enthauptung/001.jpg", title: { ru: "Церковь Святого Иоанна Крестителя, 2026", ua: "Церква Святого Іоанна Хрестителя, 2026", de: "Kirche St. Johannes Enthauptung, 2026" } },
+        { path: "Germany/nrw/koln/Rhein-Sieg-Kreis/lohmar/st_johannes_enthauptung/002.jpg", title: { ru: "Церковь Святого Иоанна Крестителя, 2026", ua: "Церква Святого Іоанна Хрестителя, 2026", de: "Kirche St. Johannes Enthauptung, 2026" } },
+        { path: "Germany/nrw/koln/Rhein-Sieg-Kreis/lohmar/st_johannes_enthauptung/003.jpg", title: { ru: "Церковь Святого Иоанна Крестителя, 2026", ua: "Церква Святого Іоанна Хрестителя, 2026", de: "Kirche St. Johannes Enthauptung, 2026" } },
+        { path: "Germany/nrw/koln/Rhein-Sieg-Kreis/lohmar/st_johannes_enthauptung/004.jpg", title: { ru: "Церковь Святого Иоанна Крестителя, 2026", ua: "Церква Святого Іоанна Хрестителя, 2026", de: "Kirche St. Johannes Enthauptung, 2026" } },
+        { path: "Germany/nrw/koln/Rhein-Sieg-Kreis/lohmar/st_johannes_enthauptung/005.jpg", title: { ru: "Церковь Святого Иоанна Крестителя, 2026", ua: "Церква Святого Іоанна Хрестителя, 2026", de: "Kirche St. Johannes Enthauptung, 2026" } },
+        { path: "Germany/nrw/koln/Rhein-Sieg-Kreis/lohmar/st_johannes_enthauptung/006.jpg", title: { ru: "Церковь Святого Иоанна Крестителя - Орган Klais, 2026", ua: "Церква Святого Іоанна Хрестителя - Орган Klais, 2026", de: "Kirche St. Johannes Enthauptung - Klais-Orgel, 2026" } },
+        { path: "Germany/nrw/koln/Rhein-Sieg-Kreis/lohmar/st_johannes_enthauptung/007.jpg", title: { ru: "Церковь Святого Иоанна Крестителя, 2026", ua: "Церква Святого Іоанна Хрестителя, 2026", de: "Kirche St. Johannes Enthauptung, 2026" } },
+        { path: "Germany/nrw/koln/Rhein-Sieg-Kreis/lohmar/st_johannes_enthauptung/008.jpg", title: { ru: "Церковь Святого Иоанна Крестителя, 2026", ua: "Церква Святого Іоанна Хрестителя, 2026", de: "Kirche St. Johannes Enthauptung, 2026" } },
+        { path: "Germany/nrw/koln/Rhein-Sieg-Kreis/lohmar/st_johannes_enthauptung/009.jpg", title: { ru: "Церковь Святого Иоанна Крестителя, 2026", ua: "Церква Святого Іоанна Хрестителя, 2026", de: "Kirche St. Johannes Enthauptung, 2026" } },
+      ],
     },
     monschau: {
       gallery: [

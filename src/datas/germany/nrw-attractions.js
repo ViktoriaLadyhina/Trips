@@ -4591,6 +4591,177 @@ const datas = [
                 }
             }
         }
+    },
+
+    //Rhein-Sieg-Kreis
+    // Lohmar
+    {
+        id: "st_johannes_enthauptung_lohmar",
+        type: ["cathedral"], rating: "local",
+        path: "st_johannes_enthauptung_lohmar",
+        countryPath: "germany", regionPath: "nrw", districtPath: "koln", cityPath: "lohmar",
+        fotoCard: "Germany/nrw/koln/Rhein-Sieg-Kreis/lohmar/st_johannes_enthauptung/001.jpg",
+        coord: { lat: 50.84058995156482, lng: 7.206009783746106 },
+        translations: {
+            ru: {
+                name: "Церковь Святого Иоанна Крестителя",
+                location: "Ломар, район Lohmar-Ort (историческое ядро Kirchdorf), Германия",
+                short_description: "Церковь Святого Иоанна Крестителя – историческая католическая церковь в центре Ломара, одна из старейших построек города. Храм сочетает романские элементы XII века и неороманическую архитектуру начала XX столетия. Церковь известна своим средневековым хором, массивной каменной архитектурой и многолетней ролью духовного центра Ломара.",
+                full_description: {
+                    title: "Описание и история",
+                    items: [
+                        { bold: "Церковь Святого Иоанна Крестителя (St. Johannes Enthauptung) ", text: "расположена в историческом районе Kirchdorf города Ломар-Орт, среди традиционных фахверковых домов и узких улиц. Благодаря своему высокому колокольному туру и каменным фасадам храм остаётся одной из главных архитектурных доминант города. Здание является охраняемым памятником архитектуры земли Северный Рейн-Вестфалия. " },
+                        { text: "Особую ценность представляет романский хор XII века, сохранившийся от первоначальной средневековой церкви. Внутри можно увидеть массивные арки, элементы старинной кладки и романскую купель из андезита, созданную примерно в середине XII века. Современный трёхнефный облик церковь получила после масштабной перестройки 1900-1903 годов в неороманском стиле. " },
+                        { text: "После серьёзной реставрации 2006-2011 годов храм был полностью укреплён и восстановлен. Сегодня здесь снова проходят богослужения, концерты церковной музыки и религиозные мероприятия. Церковь остаётся важной частью культурной и исторической жизни Ломара. " },
+                        { bold: "История", text: "Первое документальное упоминание церкви в Ломаре относится к 1131 году. В папской грамоте Папа Иннокентий II подтвердил права Боннского Cassius-Stift на церковь, хозяйственный двор и церковную десятину в Ломаре. Уже тогда храм играл важную роль для местного поселения. " },
+                        { text: "Примерно в 1160 году здесь существовала романская церковь, части которой сохранились до наших дней. В XVIII веке был обновлён западный тур, а в начале XX века старый неф заменили новой трёхнефной базиликой в неороманском стиле по проекту королевского строительного инспектора Косбаха из Зигбурга. " },
+                        { text: "В 1960-х годах церковь уже проходила крупную реставрацию, однако спустя несколько десятилетий здание оказалось под угрозой обрушения. С 2006 по 2011 год храм был капитально отреставрирован и вновь открыт для посетителей в декабре 2011 года. После объединения приходов в 2010 году церковь официально входит в большую приходскую общину St. Johannes Lohmar. " }
+                    ]
+                },
+                tickets_and_entry: {
+                    title: "Практическая информация",
+                    items: [
+                        { bold: "Адрес:", text: "Kirchstraße 20, 53797 Lohmar, Deutschland" },
+                        { bold: "Конфессия:", text: "римско-католическая церковь" },
+                        { bold: "Статус:", text: "памятник архитектуры" }
+                    ]
+                },
+                sub_objects: {
+                    title: "Что можно увидеть",
+                    items: [
+                        { bold: "Романский хор", text: "– сохранившаяся часть первоначальной церкви XII века с характерной романской архитектурой, массивными арками и полукруглой апсидой." },
+                        { bold: "Средневековая купель", text: "– каменная купель из андезита, созданная приблизительно в середине XII века, считается одним из старейших предметов интерьера церкви." },
+                        { bold: "Орган Klais", text: "был изготовлен боннской мастерской Klais в 1968 году и после реставрации церкви был вновь установлен в 2011 году. " }
+                    ]
+                },
+                interestingFacts: {
+                    title: "Интересные факты",
+                    isList: true,
+                    items: [
+                        { text: "Название «Enthauptung» переводится как «Усекновение главы» и связано с Иоанном Крестителем." },
+                        { text: "Самая старая часть церкви – романский хор XII века." },
+                        { text: "Романская купель внутри храма сохранилась со Средневековья." },
+                        { text: "Во время реставрации 2006–2011 годов церковь была закрыта из-за угрозы обрушения." },
+                        { text: "Колокола церкви частично были утрачены во время Второй мировой войны и позже заменены." }
+                    ]
+                },
+                construction_period: "XII век (первое упоминание – 1131 год)",
+                architects: "Baurat Kosbab (проект перестройки 1900–1903)",
+                meta: {
+                    title: "ЦЦерковь Святого Иоанна Крестителя в Ломаре | St. Johannes Enthauptung",
+                    description: "Церковь Святого Иоанна Крестителя (St. Johannes Enthauptung Lohmar) – историческая католическая церковь с романским хором XII века, неороманической архитектурой и многовековой историей.",
+                    ogTitle: "Церковь Святого Иоанна Крестителя (St. Johannes Enthauptung Lohmar) | Историческая церковь Ломара",
+                    ogDescription: "Откройте одну из старейших церквей Ломара: романская архитектура, средневековая история и восстановленный храм в историческом центре города.",
+                    keywords: "церковь Ломар, достопримечательности, церковь Усекновения главы Иоанна Крестителя, St. Johannes Enthauptung, историческая церковь Германия, церкви Северный Рейн-Вестфалия, Ломар-Орт, Кирхдорф Ломар, романская церковь Германия, средневековые церкви Германии, католическая церковь Ломар, Райн-Зиг, архитектура",
+                    ogImage: "https://our-travels.info/foto/Germany/nrw/koln/Rhein-Sieg-Kreis/lohmar/st_johannes_enthauptung/001.jpg"
+                }
+            },
+            ua: {
+                name: "Церква Святого Іоанна Хрестителя",
+                location: "Ломар, район Lohmar-Ort (історичне ядро Kirchdorf), Німеччина",
+                short_description: "Церква Святого Іоанна Хрестителя – історична католицька церква в центрі Ломара, одна з найстаріших споруд міста. Храм поєднує романські елементи XII століття та неороманську архітектуру початку XX століття. Церква відома своїм середньовічним хором, масивною кам’яною архітектурою та багаторічною роллю духовного центру Ломара.",
+                full_description: {
+                    title: "Опис і історія",
+                    items: [
+                        { bold: "Церква Святого Іоанна Хрестителя (St. Johannes Enthauptung) ", text: "розташована в історичному районі Kirchdorf міста Ломар-Орт серед традиційних фахверкових будинків і вузьких вулиць. Завдяки своїй високій дзвіниці та кам’яним фасадам храм залишається однією з головних архітектурних домінант міста. Будівля є пам’яткою архітектури землі Північний Рейн-Вестфалія. " },
+                        { text: "Особливу цінність становить романський хор XII століття, що зберігся від первісної середньовічної церкви. Усередині можна побачити масивні арки, елементи старовинної кладки та романську купіль з андезиту, створену приблизно в середині XII століття. Сучасного тринефного вигляду церква набула після масштабної перебудови 1900–1903 років у неороманському стилі. " },
+                        { text: "Після серйозної реставрації 2006–2011 років храм був повністю укріплений і відновлений. Сьогодні тут знову відбуваються богослужіння, концерти церковної музики та релігійні заходи. Церква залишається важливою частиною культурного та історичного життя Ломара. " },
+                        { bold: "Історія", text: "Перша документальна згадка про церкву в Ломарі датується 1131 роком. У папській грамоті Папа Іннокентій II підтвердив права Боннського Cassius-Stift на церкву, господарський двір і церковну десятину в Ломарі. Вже тоді храм відігравав важливу роль для місцевого поселення. " },
+                        { text: "Приблизно у 1160 році тут існувала романська церква, частини якої збереглися до наших днів. У XVIII столітті було оновлено західну дзвіницю, а на початку XX століття старий неф замінили новою тринефною базилікою в неороманському стилі за проєктом королівського будівельного інспектора Косбаха із Зігбурга. " },
+                        { text: "У 1960-х роках церква вже проходила масштабну реставрацію, однак через кілька десятиліть будівля опинилася під загрозою обвалу. З 2006 по 2011 рік храм було капітально відреставровано і знову відкрито для відвідувачів у грудні 2011 року. Після об’єднання парафій у 2010 році церква офіційно входить до великої парафіяльної громади St. Johannes Lohmar. " }
+                    ]
+                },
+                tickets_and_entry: {
+                    title: "Практична інформація",
+                    items: [
+                        { bold: "Адреса:", text: "Kirchstraße 20, 53797 Lohmar, Німеччина" },
+                        { bold: "Конфесія:", text: "римсько-католицька церква" },
+                        { bold: "Статус:", text: "пам’ятка архітектури" }
+                    ]
+                },
+                sub_objects: {
+                    title: "Що можна побачити",
+                    items: [
+                        { bold: "Романський хор", text: "– збережена частина первісної церкви XII століття з характерною романською архітектурою, масивними арками та напівкруглою апсидою." },
+                        { bold: "Середньовічна купіль", text: "– кам’яна купіль з андезиту, створена приблизно в середині XII століття, вважається одним із найстаріших предметів інтер’єру церкви." },
+                        { bold: "Орган Klais", text: "виготовлений боннською майстернею Klais у 1968 році та після реставрації церкви знову встановлений у 2011 році. " }
+                    ]
+                },
+                interestingFacts: {
+                    title: "Цікаві факти",
+                    isList: true,
+                    items: [
+                        { text: "Назва «Enthauptung» перекладається як «усічення голови» і пов’язана з Іоанном Хрестителем." },
+                        { text: "Найстаріша частина церкви – романський хор XII століття." },
+                        { text: "Романська купіль усередині храму збереглася з Середньовіччя." },
+                        { text: "Під час реставрації 2006–2011 років церква була закрита через загрозу обвалу." },
+                        { text: "Дзвони церкви частково були втрачені під час Другої світової війни і пізніше замінені." }
+                    ]
+                },
+                construction_period: "XII століття (перша згадка – 1131 рік)",
+                architects: "Baurat Kosbab (проєкт перебудови 1900–1903)",
+                meta: {
+                    title: "Церква Святого Іоанна Хрестителя в Ломарі | St. Johannes Enthauptung",
+                    description: "Церква Святого Іоанна Хрестителя (St. Johannes Enthauptung Lohmar) – історична католицька церква з романським хором XII століття, неороманською архітектурою та багатовіковою історією.",
+                    ogTitle: "Церква Святого Іоанна Хрестителя (St. Johannes Enthauptung Lohmar) | Історична церква Ломара",
+                    ogDescription: "Відкрийте одну з найстаріших церков Ломара: романська архітектура, середньовічна історія та відновлений храм у історичному центрі міста.",
+                    keywords: "церква Ломар, пам’ятки Ломар, церква Усічення голови Іоанна Хрестителя, St. Johannes Enthauptung, історична церква Німеччина, церкви Північний Рейн-Вестфалія, Ломар-Орт, Кирхдорф Ломар, романська церква Німеччина, середньовічні церкви, католицька церква Ломар, Райн-Зіг, архітектура",
+                    ogImage: "https://our-travels.info/foto/Germany/nrw/koln/Rhein-Sieg-Kreis/lohmar/st_johannes_enthauptung/001.jpg"
+                }
+            },
+            de: {
+                name: "Kirche St. Johannes Enthauptung",
+                location: "Lohmar, Stadtteil Lohmar-Ort (historisches Kerngebiet Kirchdorf), Deutschland",
+                short_description: "Die Kirche St. Johannes Enthauptung ist eine historische katholische Kirche im Zentrum von Lohmar und eines der ältesten Bauwerke der Stadt. Das Bauwerk vereint romanische Elemente aus dem 12. Jahrhundert mit neoromanischer Architektur des frühen 20. Jahrhunderts. Die Kirche ist bekannt für ihren mittelalterlichen Chor, ihre massive Steinarchitektur und ihre langjährige Rolle als geistliches Zentrum von Lohmar.",
+                full_description: {
+                    title: "Beschreibung und Geschichte",
+                    items: [
+                        { bold: "St. Johannes Enthauptung", text: "befindet sich im historischen Stadtteil Kirchdorf von Lohmar-Ort zwischen traditionellen Fachwerkhäusern und engen Straßen. Durch ihren hohen Glockenturm und die steinernen Fassaden zählt die Kirche zu den wichtigsten architektonischen Wahrzeichen der Stadt. Das Gebäude steht unter Denkmalschutz des Landes Nordrhein-Westfalen. " },
+                        { text: "Besonders wertvoll ist der romanische Chor aus dem 12. Jahrhundert, der von der ursprünglichen mittelalterlichen Kirche erhalten geblieben ist. Im Inneren sind massive Bögen, alte Mauerstrukturen und ein romanisches Taufbecken aus Andesit zu sehen, das etwa in der Mitte des 12. Jahrhunderts entstanden ist. Das heutige dreischiffige Erscheinungsbild erhielt die Kirche nach einem umfassenden Umbau in den Jahren 1900–1903 im neoromanischen Stil. " },
+                        { text: "Nach einer umfangreichen Restaurierung in den Jahren 2006–2011 wurde das Gebäude vollständig gesichert und wiederhergestellt. Heute finden hier erneut Gottesdienste, Kirchenkonzerte und religiöse Veranstaltungen statt. Die Kirche bleibt ein wichtiger Bestandteil des kulturellen und historischen Lebens in Lohmar. " },
+                        { bold: "Geschichte", text: "Die erste urkundliche Erwähnung der Kirche in Lohmar stammt aus dem Jahr 1131. In einer päpstlichen Urkunde bestätigte Papst Innozenz II. die Rechte des Bonner Cassius-Stifts an Kirche, Hofgut und Zehnt in Lohmar. Bereits damals spielte die Kirche eine wichtige Rolle für die lokale Siedlung. " },
+                        { text: "Um 1160 existierte hier eine romanische Kirche, deren Teile bis heute erhalten sind. Im 18. Jahrhundert wurde der Westturm erneuert, und Anfang des 20. Jahrhunderts ersetzte man das alte Langhaus durch eine neue dreischiffige Basilika im neoromanischen Stil nach dem Entwurf des königlichen Baurats Kosbab aus Siegburg. " },
+                        { text: "In den 1960er Jahren wurde die Kirche bereits umfassend restauriert, jedoch drohte das Gebäude Jahrzehnte später einzustürzen. Von 2006 bis 2011 wurde die Kirche vollständig saniert und im Dezember 2011 wieder für Besucher geöffnet. Nach der Zusammenlegung der Pfarreien im Jahr 2010 gehört die Kirche offiziell zur großen Pfarrgemeinde St. Johannes Lohmar. " }
+                    ]
+                },
+                tickets_and_entry: {
+                    title: "Praktische Informationen",
+                    items: [
+                        { bold: "Adresse:", text: "Kirchstraße 20, 53797 Lohmar, Deutschland" },
+                        { bold: "Konfession:", text: "römisch-katholische Kirche" },
+                        { bold: "Status:", text: "Baudenkmal" }
+                    ]
+                },
+                sub_objects: {
+                    title: "Sehenswürdigkeiten im Inneren",
+                    items: [
+                        { bold: "Romanischer Chor", text: "– erhaltener Teil der ursprünglichen Kirche aus dem 12. Jahrhundert mit typischer romanischer Architektur, massiven Bögen und halbrunder Apsis." },
+                        { bold: "Mittelalterliches Taufbecken", text: "– steinernes Taufbecken aus Andesit, etwa aus der Mitte des 12. Jahrhunderts, eines der ältesten Ausstattungsstücke der Kirche." },
+                        { bold: "Klais-Orgel", text: "wurde 1968 von der Bonner Orgelbaufirma Klais gefertigt und nach der Restaurierung 2011 wieder eingebaut. " }
+                    ]
+                },
+                interestingFacts: {
+                    title: "Interessante Fakten",
+                    isList: true,
+                    items: [
+                        { text: "Der älteste Teil der Kirche ist der romanische Chor aus dem 12. Jahrhundert." },
+                        { text: "Das romanische Taufbecken im Inneren stammt aus dem Mittelalter." },
+                        { text: "Während der Restaurierung 2006–2011 war die Kirche wegen Einsturzgefahr geschlossen." },
+                        { text: "Die Glocken der Kirche gingen teilweise im Zweiten Weltkrieg verloren und wurden später ersetzt." }
+                    ]
+                },
+                construction_period: "12. Jahrhundert (erste Erwähnung – 1131)",
+                architects: "Baurat Kosbab (Umbauentwurf 1900–1903)",
+                meta: {
+                    title: "Kirche St. Johannes Enthauptung",
+                    description: "Die Kirche St. Johannes Enthauptung Lohmar ist eine historische katholische Kirche mit romanischem Chor aus dem 12. Jahrhundert, neoromanischer Architektur und jahrhundertealter Geschichte.",
+                    ogTitle: "Kirche St. Johannes Enthauptung in Lohmar | Historische Kirche",
+                    ogDescription: "Entdecken Sie eine der ältesten Kirchen in Lohmar: romanische Architektur, mittelalterliche Geschichte und ein restauriertes Gotteshaus im historischen Zentrum.",
+                    keywords: "Kirche Lohmar, Sehenswürdigkeiten Lohmar, Johannes der Täufer Kirche, St. Johannes Enthauptung, historische Kirche Deutschland, Kirchen NRW, Lohmar-Ort, Kirchdorf Lohmar, romanische Kirche Deutschland, mittelalterliche Kirchen, katholische Kirche Lohmar, Rhein-Sieg-Kreis, Architektur",
+                    ogImage: "https://our-travels.info/foto/Germany/nrw/koln/Rhein-Sieg-Kreis/lohmar/st_johannes_enthauptung/001.jpg"
+                }
+            }
+        }
     }
 
 ]

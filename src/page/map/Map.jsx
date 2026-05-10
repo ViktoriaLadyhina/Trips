@@ -297,7 +297,11 @@ const Map = () => {
                               </li>
                             </ul>
                           </li>
-                          <li><Link to="/germany/nrw/koln/lohmar"> {t.cities.lohmar[lang]}</Link></li>
+                          <li><Link to="/germany/nrw/koln/lohmar"> {t.cities.lohmar[lang]}</Link>
+                          <ul>
+                            <li><Link to="/germany/nrw/koln/lohmar/attractions/st_johannes_enthauptung_lohmar">{t.attractions.st_johannes_enthauptung_lohmar[lang]}</Link></li>
+                          </ul>
+                          </li>
                         </ul>
                       </li>
 
