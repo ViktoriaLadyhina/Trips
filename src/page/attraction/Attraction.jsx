@@ -23,6 +23,7 @@ const BASE_PHOTO_URL = import.meta.env.VITE_BASE_PHOTO_URL;
 const construction_periodTitle = { ru: "Период строительства", ua: "Період будівництва", de: "Bauzeit" }
 const founderTitle = { ru: "Основатель", ua: "Засновник", de: "Gründer" }
 const architects = { ru: "Архитекторы", ua: "Архітектори", de: "Architekten" };
+const sculptors = { ru: "Скульпторы", ua: "Скульптори", de: "Bildhauer" };
 const statusTitle = { ru: "Состояние", ua: "Стан", de: "Zustand" };
 const noteLabel = { partial: { ru: "Частично сохранилось", ua: "Частково збережено", de: "Teilweise erhalten" }, lost: { ru: "Утрачено", ua: "Втрачено", de: "Verloren" } };
 
@@ -192,6 +193,12 @@ const Attraction = () => {
                     (<div className='attraction__desc-architects'>
                         <span className='attraction__desc-architects-bold'>{architects[lang]}: </span>
                         <span className='attraction__desc-architects-text'>{attraction.architects}</span>
+                    </div>
+                    )}
+                {attraction.sculptors &&
+                    (<div className='attraction__desc-architects'>
+                        <span className='attraction__desc-architects-bold'>{sculptors[lang]}: </span>
+                        <span className='attraction__desc-architects-text'>{attraction.sculptors}</span>
                     </div>
                     )}
                 {attraction.status &&

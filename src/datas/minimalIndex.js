@@ -83,7 +83,7 @@ const datas =
     schloss_neuenhof_luedenscheid: { ru: 'Замок Нойенхоф', de: 'Schloss Neuenhof', ua: 'Замок Нойенхоф' },
     schloss_oedenthal_luedenscheid: { ru: 'Усадьба Оеденталь', de: 'Schloss Oedenthal', ua: 'Садиба Оеденталь' },
     bremecker_hammer_luedenscheid: { ru: 'Bremecker Hammer – технико-исторический музей кузнечного дела', de: 'Bremecker Hammer', ua: 'Bremecker Hammer – техніко-історичний музей ковальського ремесла' },
-    phaenomenta_luedenscheid: { ru: 'Научный центр ФАНОМЕНТА', de: 'PHÄNOMENTA', ua: 'Науковий центр ФАНОМЕНТА' },
+    phaenomenta_luedenscheid: { ru: 'Научный центр ФЕНОМЕНТА', de: 'PHÄNOMENTA', ua: 'Науковий центр ФЕНОМЕНТА' },
 
     // Altena
     burg_altena: { ru: 'Замок Альтена', de: 'Burg Altena', ua: 'Замок Альтена' },
@@ -234,6 +234,7 @@ const datas =
     notre_dame_cathedral_luxembourg: { ru: 'Собор Люксембургской Богоматери', de: 'Kathedrale Notre-Dame Luxemburg', ua: 'Собор Люксембургської Богоматері' },
     grand_ducal_palace_luxembourg: { ru: 'Дворец Великих герцогов', de: 'Großherzoglicher Palast', ua: 'Палац Великого герцога' },
     hammelsmarsch_luxembourg: { ru: 'Фонтан «Хэммельсмарш»', de: 'Brunnen «Hämmelsmarsch»', ua: 'Фонтан «Хеммельсмарш»' },
+    acrobats_luxembourg: { ru: 'Скульптурная группа «Акробаты»', de: 'Skulpturengruppe «Akrobaten»', ua: 'Скульптурна група «Акробати»' },
 
     // Ukraine
     // Sumska oblast

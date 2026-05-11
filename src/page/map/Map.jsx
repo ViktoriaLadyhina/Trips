@@ -223,6 +223,7 @@ const Map = () => {
                           <li><Link to="/germany/nrw/city/koln/attractions/rautenstrauch_joest_museum_koln">{t.attractions.rautenstrauch_joest_museum_koln[lang]}</Link></li>
                           <li><Link to="/germany/nrw/city/koln/attractions/sport_olympia_museum_koln">{t.attractions.sport_olympia_museum_koln[lang]}</Link></li>
                           <li><Link to="/germany/nrw/city/koln/attractions/photographische_sammlung_sk_stiftung_kultur_koln">{t.attractions.photographische_sammlung_sk_stiftung_kultur_koln[lang]}</Link></li>
+                          <li><Link to="/germany/nrw/city/koln/attractions/koln_seilbahn">{t.attractions.koln_seilbahn[lang]}</Link></li>
                           <li><Link to="/germany/nrw/city/koln/attractions/koln_bridges">{t.attractions.koln_bridges[lang]}</Link></li>
                           <li><Link to="/germany/nrw/city/koln/attractions/skulpturenpark_koln">{t.attractions.skulpturenpark_koln[lang]}</Link></li>
                           <li><Link to="/germany/nrw/city/koln/attractions/zoo_koln">{t.attractions.zoo_koln[lang]}</Link></li>
@@ -231,7 +232,6 @@ const Map = () => {
                           <li><Link to="/germany/nrw/city/koln/attractions/rheinpark_koln">{t.attractions.rheinpark_koln[lang]}</Link>
                             <ul>
                               <li><Link to="/germany/nrw/city/koln/attractions/tanzbrunnen">{t.attractions.tanzbrunnen[lang]}</Link></li>
-                              <li><Link to="/germany/nrw/city/koln/attractions/koln_seilbahn">{t.attractions.koln_seilbahn[lang]}</Link></li>
                               <li><Link to="/germany/nrw/city/koln/attractions/divitia_koln">{t.attractions.divitia_koln[lang]}</Link></li>
                             </ul>
                           </li>
@@ -377,6 +377,7 @@ const Map = () => {
                           <li><Link to="/luxembourg/luxembourg_canton/city/luxembourg_city/attractions/grand_ducal_palace_luxembourg">{t.attractions.grand_ducal_palace_luxembourg[lang]}</Link></li>
                           <li><Link to="/luxembourg/luxembourg_canton/city/luxembourg_city/attractions/abbey_neumunster_luxembourg">{t.attractions.abbey_neumunster_luxembourg[lang]}</Link></li>
                           <li><Link to="/luxembourg/luxembourg_canton/city/luxembourg_city/attractions/hammelsmarsch_luxembourg">{t.attractions.hammelsmarsch_luxembourg[lang]}</Link></li>
+                          <li><Link to="/luxembourg/luxembourg_canton/city/luxembourg_city/attractions/acrobats_luxembourg">{t.attractions.acrobats_luxembourg[lang]}</Link></li>
                         </ul>
                       </li>
                       <li><Link to="/luxembourg/luxembourg_canton/city/luxembourg_city/attractions/musee_drai_eechelen_luxembourg">{t.attractions.musee_drai_eechelen_luxembourg[lang]}</Link>

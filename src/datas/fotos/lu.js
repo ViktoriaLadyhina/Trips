@@ -97,6 +97,7 @@ export const Fotos = {
         { path: "Luxembourg/luxembourg_canton/luxembourg_city/old_town/pont_du_chateau/001.jpg", title: { ru: 'Мост Понт-дю-Шато, 2024', de: 'Pont du Château Brücke, 2024', ua: 'Міст Понт-дю-Шато, 2024' } },
         { path: "Luxembourg/luxembourg_canton/luxembourg_city/old_town/passerelle/001.jpg", title: { ru: 'Мост Пассерель, 2024', de: 'Passerelle-Brücke, 2024', ua: 'Міст Пассерель, 2024' } },
         { path: "Luxembourg/luxembourg_canton/luxembourg_city/old_town/hammelsmarsch/001.jpg", title: { ru: 'Фонтан «Хэммельсмарш», 2024', de: 'Brunnen «Hämmelsmarsch», 2024', ua: 'Фонтан «Хеммельсмарш», 2024' } },
+        { path: "Luxembourg/luxembourg_canton/luxembourg_city/old_town/acrobats/001.jpg", title: { ru: 'Скульптурная группа «Акробаты», 2024', de: 'Skulpturengruppe «Akrobaten», 2024', ua: 'Скульптурна група «Акробати», 2024' } },
       ],
       casemates_du_bock_luxembourg: [
         { path: "Luxembourg/luxembourg_canton/luxembourg_city/old_town/casemates/001.jpg", title: { ru: 'Казематы Бок, 2024', de: 'Bock-Kasematten, 2024', ua: 'Каземати Бок, 2024' } },
@@ -138,6 +139,11 @@ export const Fotos = {
       hammelsmarsch_luxembourg: [
         { path: "Luxembourg/luxembourg_canton/luxembourg_city/old_town/hammelsmarsch/001.jpg", title: { ru: 'Фонтан «Хэммельсмарш», 2024', de: 'Brunnen «Hämmelsmarsch», 2024', ua: 'Фонтан «Хеммельсмарш», 2024' } },
         { path: "Luxembourg/luxembourg_canton/luxembourg_city/old_town/hammelsmarsch/002.jpg", title: { ru: 'Фонтан «Хэммельсмарш», 2024', de: 'Brunnen «Hämmelsmarsch», 2024', ua: 'Фонтан «Хеммельсмарш», 2024' } },
+      ],
+      acrobats_luxembourg: [
+        { path: "Luxembourg/luxembourg_canton/luxembourg_city/old_town/acrobats/001.jpg", title: { ru: 'Скульптурная группа «Акробаты», 2024', de: 'Skulpturengruppe «Akrobaten», 2024', ua: 'Скульптурна група «Акробати», 2024' } },
+        { path: "Luxembourg/luxembourg_canton/luxembourg_city/old_town/acrobats/002.jpg", title: { ru: 'Скульптурная группа «Акробаты», 2024', de: 'Skulpturengruppe «Akrobaten», 2024', ua: 'Скульптурна група «Акробати», 2024' } },
+        { path: "Luxembourg/luxembourg_canton/luxembourg_city/old_town/acrobats/003.jpg", title: { ru: 'Скульптурная группа «Акробаты», 2024', de: 'Skulpturengruppe «Akrobaten», 2024', ua: 'Скульптурна група «Акробати», 2024' } },
       ],
     }
   }

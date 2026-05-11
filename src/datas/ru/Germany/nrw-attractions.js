@@ -2648,6 +2648,7 @@ const datas = [
                 { text: "На площади перед старой ратушей находится декоративный районный фонтан (Rathausbrunnen), созданный в 1981 году художником керамистом Вим Мюлендик (Wim Mühlendyck). Он облицован керамическими плитами с рельефными изображениями сцен, отражающими развитие ремесел и керамической промышленности Фрехена – от традиционных мастеров до заводского производства, а разнообразные маскароны (лица) служат характерными водными струями фонтана." }
             ]
         },
+        sculptors: "Вим Мюлендик (Wim Mühlendyck)",
         coord: { lat: 50.90848, lng: 6.80879 },
         meta: {
             title: "Декоративный районный фонтан – исторический объект перед старой ратушей Фрехена",
@@ -2673,6 +2674,7 @@ const datas = [
                 { text: "В пешеходной зоне в 1986 году установлен скульптурный фонтан Клюттенбрюннен (Klüttenbrunnen), авторства немецкого скульптора Олафа Хёнена. Он расположен в пешеходной зоне рядом с площадью Йоханна Шмитца и отражает промышленную и ремесленную историю Фрехена, в частности добычу и обработку местной глины. Фонтан оформлен как художественная композиция с каменными элементами и водными струями, гармонируя с городской средой и служа визуальным ориентиром для туристов." }
             ]
         },
+        sculptors: "Олаф Хёнен",
         coord: { lat: 50.90960, lng: 6.80869 },
         meta: {
             title: "Фонтан Клюттенбрюннен (Klüttenbrunnen) – исторический скульптурный объект",
@@ -3260,7 +3262,6 @@ const datas = [
     },
 
     // arnsberg округ
-
     // Dortmund
     {
         id: "westfalenpark",
@@ -3335,6 +3336,7 @@ const datas = [
         countryPath: "germany", regionPath: "nrw", districtPath: "arnsberg", cityPath: "luedenscheid",
         fotoCard: "Germany/nrw/arnsberg/Märkischer-Kreis/luedenscheid/altstadt_luedenscheid/004.jpg",
         subObjects: ["erloeserkirche_luedenscheid", "brunnen_altstadt_luedenscheid"],
+        location: "Люденшайд, районы Innenstadt / Staberg / Knapp, Tinsberg / Kluse, Германия",
         short_description: "Старый город Люденшайда – историческое сердце города с узкими улицами и кольцевой планировкой вокруг церкви Спасителя. Здесь сохранились здания XVIII–XIX веков, остатки крепостной стены и исторический музей, а уютные улочки сочетают прошлое с современной городской жизнью.",
         short_description_subObjects: {
             text: "В старом городе Люденшайда расположены следующие достопримечательности:",
@@ -3446,7 +3448,7 @@ const datas = [
             ]
         },
         construction_period: "1982 год",
-        architects: "Фонтан был создан художником и металлистом К.Т.Нойманн",
+        sculptors: "художник и металлист К.Т.Нойманн",
         coord: { lat: 51.21631, lng: 7.63425 },
         meta: {
             title: "Фонтан на площади Графа Энгельберта – исторический фонтан в старом городе Люденшайда",
@@ -3464,7 +3466,7 @@ const datas = [
         path: "rathausplatz_luedenscheid",
         countryPath: "germany", regionPath: "nrw", districtPath: "arnsberg", cityPath: "luedenscheid",
         fotoCard: "Germany/nrw/arnsberg/Märkischer-Kreis/luedenscheid/rathausplatz_lüdenscheid/001.JPG",
-        location: "Люденшайд, Германия",
+        location: "Люденшайд, район Innenstadt / Staberg / Knapp, Германия",
         short_description: "Центральная площадь Люденшайда (Rathausplatz) – это сердце города и важное общественное пространство, расположенное рядом с ратушей и пешеходной зоной. Здесь проходят рынки, городские мероприятия и встречи жителей, а сама площадь служит отправной точкой для знакомства с историческим центром города.",
         full_description: {
             title: "Описание и история",
@@ -3504,7 +3506,7 @@ const datas = [
         path: "sternplatz",
         countryPath: "germany", regionPath: "nrw", districtPath: "arnsberg", cityPath: "luedenscheid",
         fotoCard: "Germany/nrw/arnsberg/Märkischer-Kreis/luedenscheid/sternplatz/003.jpg",
-        location: "Люденшайд, Германия",
+        location: "Люденшайд, район Innenstadt / Staberg / Knapp, Германия",
         subObjects: ["onkel_willi_denkmal_sternplatz_luedenscheid", "fontain_sternplatz_luedenscheid"],
         short_description: "Площадь Штернплац (Sternplatz) – центральная площадь Люденшайда, расположенная в пешеходной зоне исторического центра и являющаяся важной точкой городской жизни и встреч.",
         short_description_subObjects: {
@@ -3558,6 +3560,7 @@ const datas = [
                 { text: "Памятник органично вписан в пространство Sternplatz и является одной из точек притяжения в пешеходной зоне исторического центра." }
             ]
         },
+        sculptors: "Вальдемар Винн (Waldemar Winn)",
         coord: { lat: 51.21639, lng: 7.62917 },
         meta: {
             title: "Памятник дяде Вилли – символ Люденшайда на площади Штернплац ",
@@ -3587,6 +3590,7 @@ const datas = [
                 { text: "Фонтан не только декоративный, но и служит местом отдыха для жителей и гостей города, особенно в тёплое время года." }
             ]
         },
+        sculptors: "К.Т.Нойманн",
         coord: { lat: 51.21620, lng: 7.62942 },
         meta: {
             title: "Фонтан на площади Штернплац – городской водоём Люденшайда",
@@ -3604,7 +3608,7 @@ const datas = [
         path: "history_museum_luedenscheid",
         countryPath: "germany", regionPath: "nrw", districtPath: "arnsberg", cityPath: "luedenscheid",
         fotoCard: "Germany/nrw/arnsberg/Märkischer-Kreis/luedenscheid/history_museum_luedenscheid/001.JPG",
-        location: "Люденшайд, Германия",
+        location: "Люденшайд, район Innenstadt / Staberg / Knapp, Германия",
         officialSite: [{ "bold": "Официальный сайт", "link": "https://www.luedenscheid.de/freizeit-und-kultur/kultur/museen-der-stadt-luedenscheid/geschichtsmuseum" }],
         short_description: "Исторический музей Люденшайда – городской музей, посвящённый промышленной и технической истории региона, уникальным коллекциям карт и артефактов, включая узкоколейный поезд и модели дирижаблей. Музей объединён с городской галереей, старым административным зданием и кафе в современном комплексе.",
         full_description: {
@@ -3666,7 +3670,7 @@ const datas = [
         path: "christuskirche_luedenscheid",
         countryPath: "germany", regionPath: "nrw", districtPath: "arnsberg", cityPath: "luedenscheid",
         fotoCard: "Germany/nrw/arnsberg/Märkischer-Kreis/luedenscheid/christuskirche/001.jpg",
-        location: "Люденшайд, Германия",
+        location: "Люденшайд, район Innenstadt / Staberg / Knapp, Германия",
         short_description: "Псевдоготическая церковь Христа – крупнейшая протестантская церковь города и важный архитектурный ориентир. Её высокая башня видна из разных точек города и формирует характерный силуэт. Внутреннее пространство рассчитано примерно на 1200 мест и украшено витражами и псевдоготическими элементами. Церковь активно используется для богослужений и культурных мероприятий.",
         full_description: {
             title: "Описание и история",
@@ -3714,7 +3718,7 @@ const datas = [
         path: "st_joseph_medardus",
         countryPath: "germany", regionPath: "nrw", districtPath: "arnsberg", cityPath: "luedenscheid",
         fotoCard: "Germany/nrw/arnsberg/Märkischer-Kreis/luedenscheid/st_joseph_medardus/001.jpg",
-        location: "Люденшайд, Германия",
+        location: "Люденшайд, район Innenstadt / Staberg / Knapp, Германия",
         officialSite: [{ bold: "Официальный сайт", link: "https://www.st-medardus.org" }],
         short_description: "Церковь Святого Йозефа и Медарда – главная католическая приходская церковь города Люденшайд. Построенная в конце XIX века в стиле северогерманской кирпичной готики, она стала важной архитектурной доминантой города. Высокая башня высотой более 54 метров и массивные кирпичные фасады делают её одним из самых заметных исторических зданий Люденшайда.",
         full_description: {
@@ -3772,7 +3776,7 @@ const datas = [
         path: "versetalsperre_luedenscheid",
         countryPath: "germany", regionPath: "nrw", districtPath: "arnsberg", cityPath: "luedenscheid",
         fotoCard: "Germany/nrw/arnsberg/Märkischer-Kreis/luedenscheid/versetalsperre/003_2021.jpg",
-        location: "Люденшайд, Германия",
+        location: "Люденшайд, район Bierbaum / Höh / Hellersen, Германия",
         short_description: "Водохранилище Верзе (Versetalsperre) – крупное искусственное озеро, созданное плотиной для регулирования уровня воды и питьевого водоснабжения. Вокруг водоёма проложены прогулочные и велосипедные маршруты, а на берегах есть зоны отдыха. Плавание и водные виды спорта запрещены, что сохраняет чистоту воды и делает место популярным для прогулок и наблюдения за природой.",
         full_description: {
             title: "Описание и история",

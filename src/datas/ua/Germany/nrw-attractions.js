@@ -2640,6 +2640,7 @@ const datas = [
                 { text: "На площі перед старою ратушею знаходиться декоративний районний фонтан (Rathausbrunnen), створений у 1981 році художником-керамістом Вімом Мюлендиком (Wim Mühlendyck). Він облицьований керамічними плитами з рельєфними зображеннями сцен, що відображають розвиток ремесел та керамічної промисловості Фрехена – від традиційних майстрів до заводського виробництва, а різноманітні маскарони (обличчя) слугують характерними водними струменями фонтану." }
             ]
         },
+        sculptors: "Вім Мюлендік (Wim Mühlendyck)",
         coord: { lat: 50.90848, lng: 6.80879 },
         meta: {
             title: "Декоративний районний фонтан – історичний об’єкт перед старою ратушею Фрехена",
@@ -2665,6 +2666,7 @@ const datas = [
                 { text: "У пішохідній зоні у 1986 році встановлено скульптурний фонтан Клюттенбрюннен (Klüttenbrunnen), авторства німецького скульптора Олафа Хёнена. Він розташований поруч із площею Йоганна Шмітца та відображає промислову і ремісничу історію Фрехена, зокрема видобуток і обробку місцевої глини. Фонтан виконаний як художня композиція з кам’яними елементами та водними струменями, гармонійно вписується в міське середовище і слугує візуальним орієнтиром для туристів." }
             ]
         },
+        sculptors: "Олаф Хьонен (Olaf Höhnen)",
         coord: { lat: 50.90960, lng: 6.80869 },
         meta: {
             title: "Фонтан Клюттенбрюннен (Klüttenbrunnen) – історичний скульптурний об’єкт",
@@ -3326,6 +3328,7 @@ const datas = [
         countryPath: "germany", regionPath: "nrw", districtPath: "arnsberg", cityPath: "luedenscheid",
         fotoCard: "Germany/nrw/arnsberg/Märkischer-Kreis/luedenscheid/altstadt_luedenscheid/004.jpg",
         subObjects: ["erloeserkirche_luedenscheid", "brunnen_altstadt_luedenscheid"],
+        location: "Люденшайд, райони Innenstadt / Staberg / Knapp, Tinsberg / Kluse, Німеччина",
         short_description: "Старе місто Люденшайда – історичне серце міста з вузькими вулицями та кільцевим плануванням навколо церкви Спасителя. Тут збереглися будівлі XVIII–XIX століть, залишки міської стіни та історичний музей, а затишні вулички поєднують минуле з сучасним міським життям.",
         short_description_subObjects: {
             text: "У старому місті Люденшайда розташовані такі пам’ятки:",
@@ -3437,7 +3440,7 @@ const datas = [
             ]
         },
         construction_period: "1982 рік",
-        architects: "Фонтан створений художником і металургом K.Т. Нойманн",
+        sculptors: "художник і металург K.Т. Нойманн",
         coord: { lat: 51.21631, lng: 7.63425 },
         meta: {
             title: "Фонтан на площі Графа Енгельберта – історичний фонтан у старому місті Люденшайда",
@@ -3455,7 +3458,7 @@ const datas = [
         path: "rathausplatz_luedenscheid",
         countryPath: "germany", regionPath: "nrw", districtPath: "arnsberg", cityPath: "luedenscheid",
         fotoCard: "Germany/nrw/arnsberg/Märkischer-Kreis/luedenscheid/rathausplatz_lüdenscheid/001.JPG",
-        location: "Люденшайд, Німеччина",
+        location: "Люденшайд, район Innenstadt / Staberg / Knapp, Німеччина",
         short_description: "Центральна площа Люденшайда (Rathausplatz) – це серце міста та важливий громадський простір, розташований поруч з ратушею та пішохідною зоною. Тут проходять ринки, міські заходи та зустрічі мешканців, а сама площа слугує відправною точкою для ознайомлення з історичним центром міста.",
         full_description: {
             title: "Опис та історія",
@@ -3495,7 +3498,7 @@ const datas = [
         path: "sternplatz",
         countryPath: "germany", regionPath: "nrw", districtPath: "arnsberg", cityPath: "luedenscheid",
         fotoCard: "Germany/nrw/arnsberg/Märkischer-Kreis/luedenscheid/sternplatz/003.jpg",
-        location: "Люденшайд, Німеччина",
+        location: "Люденшайд, район Innenstadt / Staberg / Knapp, Німеччина",
         subObjects: ["onkel_willi_denkmal_sternplatz_luedenscheid", "fontain_sternplatz_luedenscheid"],
         short_description: "Площа Штернплац (Sternplatz) – центральна площа Люденшайда, розташована в пішохідній зоні історичного центру та є важливою точкою міського життя та зустрічей.",
         short_description_subObjects: {
@@ -3549,6 +3552,7 @@ const datas = [
                 { text: "Пам'ятник органічно вписаний у простір Sternplatz і є однією з точок притягання в пішохідній зоні історичного центру." }
             ]
         },
+        sculptors: "Вальдемар Вінн (Waldemar Winn)",
         coord: { lat: 51.21639, lng: 7.62917 },
         meta: {
             title: "Пам'ятник дядьку Віллі – символ Люденшайда на площі Штернплац",
@@ -3578,6 +3582,7 @@ const datas = [
                 { text: "Фонтан не лише декоративний, а й слугує місцем відпочинку для мешканців та гостей міста, особливо в теплу пору року." }
             ]
         },
+        sculptors: "K.Т. Нойманн",
         coord: { lat: 51.21620, lng: 7.62942 },
         meta: {
             title: "Фонтан на площі Штернплац – міське водоймище Люденшайда",
@@ -3595,7 +3600,7 @@ const datas = [
         path: "history_museum_luedenscheid",
         countryPath: "germany", regionPath: "nrw", districtPath: "arnsberg", cityPath: "luedenscheid",
         fotoCard: "Germany/nrw/arnsberg/Märkischer-Kreis/luedenscheid/history_museum_luedenscheid/001.JPG",
-        location: "Люденшайд, Німеччина",
+        location: "Люденшайд, район Innenstadt / Staberg / Knapp, Німеччина",
         officialSite: [
             { "bold": "Офіційний сайт", "link": "https://www.luedenscheid.de/freizeit-und-kultur/kultur/museen-der-stadt-luedenscheid/geschichtsmuseum" }
         ],
@@ -3659,7 +3664,7 @@ const datas = [
         path: "christuskirche_luedenscheid",
         countryPath: "germany", regionPath: "nrw", districtPath: "arnsberg", cityPath: "luedenscheid",
         fotoCard: "Germany/nrw/arnsberg/Märkischer-Kreis/luedenscheid/christuskirche/001.jpg",
-        location: "Люденшайд, Німеччина",
+        location: "Люденшайд, район Innenstadt / Staberg / Knapp, Німеччина",
         short_description: "Псевдоготична церква Христа – найбільша протестантська церква міста та важливий архітектурний орієнтир. Її висока вежа видна з різних точок міста та формує характерний силует. Внутрішній простір розрахований приблизно на 1200 місць і прикрашений вітражами та псевдоготичними елементами. Церква активно використовується для богослужінь та культурних заходів.",
         full_description: {
             title: "Опис та історія",
@@ -3707,7 +3712,7 @@ const datas = [
         path: "st_joseph_medardus",
         countryPath: "germany", regionPath: "nrw", districtPath: "arnsberg", cityPath: "luedenscheid",
         fotoCard: "Germany/nrw/arnsberg/Märkischer-Kreis/luedenscheid/st_joseph_medardus/001.jpg",
-        location: "Люденшайд, Німеччина",
+        location: "Люденшайд, район Innenstadt / Staberg / Knapp, Німеччина",
         officialSite: [{ bold: "Офіційний сайт", link: "https://www.st-medardus.org" }],
         short_description: "Церква Святого Йосипа та Медарда – головна католицька парафіяльна церква міста Люденшайд. Побудована наприкінці XIX століття в стилі північнонімецької цегляної готики, вона стала важливою архітектурною домінантою міста. Висока вежа заввишки понад 54 метри та масивні цегляні фасади роблять її одним із найпомітніших історичних будівель Люденшайда.",
         full_description: {
@@ -3765,7 +3770,7 @@ const datas = [
         path: "versetalsperre_luedenscheid",
         countryPath: "germany", regionPath: "nrw", districtPath: "arnsberg", cityPath: "luedenscheid",
         fotoCard: "Germany/nrw/arnsberg/Märkischer-Kreis/luedenscheid/versetalsperre/003_2021.jpg",
-        location: "Люденшайд, Німеччина",
+        location: "Люденшайд, район Bierbaum / Höh / Hellersen, Німеччина",
         short_description: "Водосховище Верзе (Versetalsperre) – велике штучне озеро, створене дамбою для регулювання рівня води та забезпечення питного водопостачання. Навколо водойми прокладені прогулянкові та велосипедні маршрути, а на берегах є зони відпочинку. Купання та водні види спорту заборонені, що зберігає чистоту води та робить це місце популярним для прогулянок і спостереження за природою.",
         full_description: {
             title: "Опис та історія",

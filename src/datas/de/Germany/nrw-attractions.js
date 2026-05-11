@@ -2641,6 +2641,7 @@ const datas = [
                 { text: "Auf dem Platz vor dem alten Rathaus befindet sich ein dekorativer Bezirksbrunnen, der 1981 vom Keramikkünstler Wim Mühlendyck geschaffen wurde. Er ist mit keramischen Platten verkleidet, die Reliefdarstellungen von Szenen zeigen, die die Entwicklung des Handwerks und der Keramikindustrie in Frechen widerspiegeln – von traditionellen Handwerkern bis zur Fabrikproduktion, während die verschiedenen Maskarone (Gesichter) charakteristische Wasserstrahlen des Brunnens bilden." }
             ]
         },
+        sculptors: "Wim Mühlendyck",
         coord: { lat: 50.90848, lng: 6.80879 },
         meta: {
             title: "Dekorativer Bezirksbrunnen – historisches Objekt vor dem alten Rathaus von Frechen",
@@ -2666,6 +2667,7 @@ const datas = [
                 { text: "In der Fußgängerzone wurde 1986 der skulpturale Brunnen Klüttenbrunnen vom deutschen Bildhauer Olaf Höhnen errichtet. Er befindet sich in der Nähe des Johann-Schmitz-Platz und spiegelt die industrielle und handwerkliche Geschichte Frechens wider, insbesondere den Abbau und die Verarbeitung von lokalem Ton. Der Brunnen ist als künstlerische Komposition mit Steinelementen und Wasserstrahlen gestaltet, fügt sich harmonisch in das Stadtbild ein und dient als visueller Orientierungspunkt für Besucher." }
             ]
         },
+        sculptors: "Olaf Höhnen",
         coord: { lat: 50.90960, lng: 6.80869 },
         meta: {
             title: "Klüttenbrunnen – historisches Skulpturenobjekt",
@@ -3328,6 +3330,7 @@ const datas = [
         countryPath: "germany", regionPath: "nrw", districtPath: "arnsberg", cityPath: "luedenscheid",
         fotoCard: "Germany/nrw/arnsberg/Märkischer-Kreis/luedenscheid/altstadt_luedenscheid/004.jpg",
         subObjects: ["erloeserkirche_luedenscheid", "brunnen_altstadt_luedenscheid"],
+        location: "Lüdenscheid, Stadtteile Innenstadt / Staberg / Knapp, Tinsberg / Kluse, Deutschland",
         short_description: "Die Altstadt von Lüdenscheid ist das historische Herz der Stadt mit engen Straßen und einem ringförmigen Straßennetz um die Erlöserkirche. Hier sind Gebäude aus dem 18.–19. Jahrhundert, Reste der Stadtmauer und das historische Museum erhalten geblieben, und die gemütlichen Gassen verbinden Vergangenheit mit dem modernen Stadtleben.",
         short_description_subObjects: {
             text: "In der Altstadt von Lüdenscheid befinden sich folgende Sehenswürdigkeiten:",
@@ -3440,7 +3443,7 @@ const datas = [
             ]
         },
         construction_period: "1982",
-        architects: "Der Brunnen wurde vom Künstler und Metallgestalter K. T. Neumann (Kurt Toni Neumann) geschaffen",
+        sculptors: "Künstler und Metallgestalter Kurt Toni Neumann",
         coord: { lat: 51.21631, lng: 7.63425 },
         meta: {
             title: "Brunnen am Graf-Engelbert-Platz – historischer Brunnen in der Altstadt von Lüdenscheid",
@@ -3458,7 +3461,7 @@ const datas = [
         path: "rathausplatz_luedenscheid",
         countryPath: "germany", regionPath: "nrw", districtPath: "arnsberg", cityPath: "luedenscheid",
         fotoCard: "Germany/nrw/arnsberg/Märkischer-Kreis/luedenscheid/rathausplatz_lüdenscheid/001.JPG",
-        location: "Lüdenscheid, Deutschland",
+        location: "Lüdenscheid, Stadtteil Innenstadt / Staberg / Knapp, Deutschland",
         short_description: "Der zentrale Platz von Lüdenscheid (Rathausplatz) ist das Herz der Stadt und ein wichtiger öffentlicher Raum in der Nähe des Rathauses und der Fußgängerzone. Hier finden Märkte, städtische Veranstaltungen und Treffen der Bewohner statt, und der Platz dient als Ausgangspunkt, um das historische Stadtzentrum zu erkunden.",
         full_description: {
             title: "Beschreibung und Geschichte",
@@ -3498,7 +3501,7 @@ const datas = [
         path: "sternplatz",
         countryPath: "germany", regionPath: "nrw", districtPath: "arnsberg", cityPath: "luedenscheid",
         fotoCard: "Germany/nrw/arnsberg/Märkischer-Kreis/luedenscheid/sternplatz/003.jpg",
-        location: "Lüdenscheid, Deutschland",
+        location: "Lüdenscheid, Stadtteil Innenstadt / Staberg / Knapp, Deutschland",
         subObjects: ["onkel_willi_denkmal_sternplatz_luedenscheid", "fontain_sternplatz_luedenscheid"],
         short_description: "Der Sternplatz ist der zentrale Platz von Lüdenscheid, gelegen in der Fußgängerzone des historischen Zentrums und ein wichtiger Treffpunkt des städtischen Lebens.",
         short_description_subObjects: {
@@ -3552,6 +3555,7 @@ const datas = [
                 { text: "Das Denkmal fügt sich harmonisch in den Raum des Sternplatzes ein und ist ein Anziehungspunkt in der Fußgängerzone des historischen Zentrums." }
             ]
         },
+        sculptors: "Waldemar Winn",
         coord: { lat: 51.21639, lng: 7.62917 },
         meta: {
             title: "Denkmal von Onkel Willi – Symbol von Lüdenscheid auf dem Sternplatz",
@@ -3581,6 +3585,7 @@ const datas = [
                 { text: "Der Brunnen ist nicht nur dekorativ, sondern dient auch als Erholungsort für Einwohner und Besucher, besonders in der warmen Jahreszeit." }
             ]
         },
+        sculptors: "Kurt Toni Neumann",
         coord: { lat: 51.21620, lng: 7.62942 },
         meta: {
             title: "Brunnen auf dem Sternplatz – städtisches Wasserbecken von Lüdenscheid",
@@ -3598,7 +3603,7 @@ const datas = [
         path: "history_museum_luedenscheid",
         countryPath: "germany", regionPath: "nrw", districtPath: "arnsberg", cityPath: "luedenscheid",
         fotoCard: "Germany/nrw/arnsberg/Märkischer-Kreis/luedenscheid/history_museum_luedenscheid/001.JPG",
-        location: "Lüdenscheid, Deutschland",
+        location: "Lüdenscheid, Stadtteil Innenstadt / Staberg / Knapp, Deutschland",
         officialSite: [
             { "bold": "Offizielle Webseite", "link": "https://www.luedenscheid.de/freizeit-und-kultur/kultur/museen-der-stadt-luedenscheid/geschichtsmuseum" }
         ],
@@ -3662,7 +3667,7 @@ const datas = [
         path: "christuskirche_luedenscheid",
         countryPath: "germany", regionPath: "nrw", districtPath: "arnsberg", cityPath: "luedenscheid",
         fotoCard: "Germany/nrw/arnsberg/Märkischer-Kreis/luedenscheid/christuskirche/001.jpg",
-        location: "Lüdenscheid, Deutschland",
+        location: "Lüdenscheid, Stadtteil Innenstadt / Staberg / Knapp, Deutschland",
         short_description: "Die pseudogotische Christuskirche ist die größte protestantische Kirche der Stadt und ein wichtiger architektonischer Orientierungspunkt. Ihr hoher Turm ist aus verschiedenen Punkten der Stadt sichtbar und prägt das charakteristische Stadtbild. Der Innenraum bietet Platz für etwa 1200 Personen und ist mit Glasfenstern und pseudogotischen Elementen geschmückt. Die Kirche wird aktiv für Gottesdienste und kulturelle Veranstaltungen genutzt.",
         full_description: {
             title: "Beschreibung und Geschichte",
@@ -3710,7 +3715,7 @@ const datas = [
         path: "st_joseph_medardus",
         countryPath: "germany", regionPath: "nrw", districtPath: "arnsberg", cityPath: "luedenscheid",
         fotoCard: "Germany/nrw/arnsberg/Märkischer-Kreis/luedenscheid/st_joseph_medardus/001.jpg",
-        location: "Lüdenscheid, Deutschland",
+        location: "Lüdenscheid, Stadtteil Innenstadt / Staberg / Knapp, Deutschland",
         officialSite: [{ bold: "Offizielle Website", link: "https://www.st-medardus.org" }],
         short_description: "Die Kirche St. Joseph und Medardus ist die wichtigste katholische Pfarrkirche der Stadt Lüdenscheid. Sie wurde Ende des 19. Jahrhunderts im Stil der norddeutschen Backsteingotik erbaut und ist zu einem wichtigen architektonischen Wahrzeichen der Stadt geworden. Der hohe Turm mit über 54 Metern Höhe und die massiven Backsteinfassaden machen sie zu einem der auffälligsten historischen Gebäude Lüdenscheids.",
         full_description: {
@@ -3768,7 +3773,7 @@ const datas = [
         path: "versetalsperre_luedenscheid",
         countryPath: "germany", regionPath: "nrw", districtPath: "arnsberg", cityPath: "luedenscheid",
         fotoCard: "Germany/nrw/arnsberg/Märkischer-Kreis/luedenscheid/versetalsperre/003_2021.jpg",
-        location: "Lüdenscheid, Deutschland",
+        location: "Lüdenscheid, Stadtteil Bierbaum / Höh / Hellersen, Deutschland",
         short_description: "Die Versetalsperre ist ein großes künstliches Gewässer, das durch eine Staumauer zur Regulierung des Wasserstands und zur Trinkwasserversorgung geschaffen wurde. Rund um den See verlaufen Spazier- und Radwege, und an den Ufern gibt es Erholungsbereiche. Baden und Wassersport sind verboten, was die Wasserqualität erhält und den Ort zu einem beliebten Ziel für Spaziergänge und Naturbeobachtungen macht.",
         full_description: {
             title: "Beschreibung und Geschichte",

@@ -353,7 +353,7 @@ const datas = [
     path: "old_town_luxembourg",
     countryPath: "luxembourg", regionPath: "luxembourg_canton", districtPath: "city", cityPath: "luxembourg_city",
     fotoCard: "Luxembourg/luxembourg_canton/luxembourg_city/old_town/001.jpg",
-    subObjects: ["casemates_du_bock_luxembourg", "abbey_neumunster_luxembourg", "pont_du_chateau_luxembourg", "passerelle_luxembourg", "notre_dame_cathedral_luxembourg", "grand_ducal_palace_luxembourg", "hammelsmarsch_luxembourg"],
+    subObjects: ["casemates_du_bock_luxembourg", "abbey_neumunster_luxembourg", "pont_du_chateau_luxembourg", "passerelle_luxembourg", "notre_dame_cathedral_luxembourg", "grand_ducal_palace_luxembourg", "hammelsmarsch_luxembourg", "acrobats_luxembourg"],
     translations: {
       ru: {
         name: "Старый город Люксембурга",
@@ -375,8 +375,9 @@ const datas = [
             { bold: "Дворец Великих герцогов", text: "– официальная резиденция великого герцога Люксембурга, построенная в стиле Ренессанса, известная парадными залами, историческими интерьерами и статусом одного из главных символов государства." },
             { bold: "Аббатство Ноймюнстер", text: "– историческое аббатство XVII века в районе Грунд, преобразованное в современный культурный центр с выставками и мероприятиями." },
             { bold: "Мост Понт-дю-Шато", text: "– исторический мост в старом городе Люксембурга, входящий в систему бывших городских укреплений и являющийся частью пешеходных маршрутов." },
-            { bold: "Мост Пассерель (Passerelle)", text: "– исторический каменный мост в городе Люксембург, соединяющий район старого города с кварталом вокзала и являющийся важной частью городской транспортной и пешеходной сети." },
-            { bold: "Фонтан «Хэммельсмарш»", text: "– бронзовый фонтан «Хэммельсмарш» в центре Люксембурга, изображающий традиционное шествие музыкантов и овец, связанное с ярмаркой Schueberfouer." }
+            { bold: "Мост Пассерель", text: "– исторический каменный мост в городе Люксембург, соединяющий район старого города с кварталом вокзала и являющийся важной частью городской транспортной и пешеходной сети." },
+            { bold: "Фонтан «Хэммельсмарш»", text: "– бронзовый фонтан «Хэммельсмарш» в центре Люксембурга, изображающий традиционное шествие музыкантов и овец, связанное с ярмаркой Schueberfouer." },
+            { bold: "Скульптурная группа «Акробаты»", text: "– бронзовая скульптурная группа на Place du Théâtre в центре Люксембурга, изображающая скоморохов, музыкантов и акробатов, символизирующих традиции уличного театра." }
           ]
         },
         full_description: {
@@ -437,7 +438,8 @@ const datas = [
             { bold: "Абатство Ноймюнстер", text: "– історичне абатство XVII століття в районі Грунд, перетворене на сучасний культурний центр із виставками та заходами." },
             { bold: "Міст Понт-дю-Шато", text: "– історичний міст у старому місті Люксембургу, який входить до системи колишніх міських укріплень і є частиною пішохідних маршрутів." },
             { bold: "Міст Пассерель (Passerelle)", text: "– історичний кам’яний міст у місті Люксембург, що з’єднує район старого міста з кварталом вокзалу та є важливою частиною міської транспортної і пішохідної мережі." },
-            { bold: "Бронзовий фонтан «Хеммельсмарш»", text: "у центрі Люксембургу, що зображає традиційну процесію музикантів і овець, пов’язану з ярмарком Schueberfouer." }
+            { bold: "Бронзовий фонтан «Хеммельсмарш»", text: "у центрі Люксембургу, що зображає традиційну процесію музикантів і овець, пов’язану з ярмарком Schueberfouer." },
+            { bold: "Скульптурна група «Акробати»", text: "– бронзова скульптурна група на Place du Théâtre у центрі Люксембургу, що зображає скоморохів, музикантів і акробатів, які символізують традиції вуличного театру." },
           ]
         },
         full_description: {
@@ -498,7 +500,8 @@ const datas = [
             { bold: "Abtei Neumünster", text: "– eine historische Abtei aus dem 17. Jahrhundert im Stadtteil Grund, die in ein modernes Kulturzentrum mit Ausstellungen und Veranstaltungen umgewandelt wurde." },
             { bold: "Pont du Château", text: "– eine historische Brücke in der Altstadt von Luxemburg, die Teil der ehemaligen Stadtbefestigungen ist und zu den Fußgängerwegen gehört." },
             { bold: "Passerelle-Brücke", text: "– historische Steinbrücke in der Stadt Luxemburg, die den Altstadtbereich mit dem Bahnhofsviertel verbindet und ein wichtiger Bestandteil des städtischen Verkehrs- und Fußgängernetzes ist." },
-            { bold: "Brunnen «Hämmelsmarsch»", text: " im Zentrum von Luxemburg stellt eine traditionelle Prozession von Musikern und Schafen dar, die mit der Schueberfouer verbunden ist." }
+            { bold: "Brunnen «Hämmelsmarsch»", text: " im Zentrum von Luxemburg stellt eine traditionelle Prozession von Musikern und Schafen dar, die mit der Schueberfouer verbunden ist." },
+            { bold: "Skulpturengruppe «Akrobaten»", text: "– eine bronzene Skulpturengruppe auf dem Place du Théâtre im Zentrum von Luxemburg, die Gaukler, Musiker und Akrobaten darstellt und die Traditionen des Straßentheaters symbolisiert." },
           ]
         },
         full_description: {
@@ -1801,7 +1804,7 @@ const datas = [
           ]
         },
         construction_period: "1981–1982",
-        architects: "Вилл Лофи (Wil Lofy), скульптор",
+        sculptors: "Вилл Лофи (Wil Lofy)",
         meta: {
           title: "Фонтан «Hämmelsmarsch» в Люксембурге – бронзовая скульптура в Ville Haute",
           description: "Бронзовый фонтан «Hämmelsmarsch» в историческом центре Люксембурга (Ville Haute), изображающий традиционное шествие музыкантов и овец, связанное с ярмаркой Schueberfouer.",
@@ -1845,7 +1848,7 @@ const datas = [
           ]
         },
         construction_period: "1981–1982",
-        architects: "Віл Лофі (Wil Lofy), скульптор",
+        sculptors: "Віл Лофі (Wil Lofy)",
         meta: {
           title: "Фонтан «Hämmelsmarsch» у Люксембурзі – бронзова скульптура у Ville Haute",
           description: "Бронзовий фонтан «Hämmelsmarsch» в історичному центрі Люксембургу (Ville Haute), що зображає традиційну процесію музикантів і овець, пов’язану з ярмарком Schueberfouer.",
@@ -1889,7 +1892,7 @@ const datas = [
           ]
         },
         construction_period: "1981–1982",
-        architects: "Will Lofy, Bildhauer",
+        sculptors: "Will Lofy",
         meta: {
           title: "Brunnen «Hämmelsmarsch» in Luxemburg – Bronzeskulptur in Ville Haute",
           description: "Bronzener Brunnen «Hämmelsmarsch» im historischen Zentrum von Luxemburg (Ville Haute), der eine traditionelle Prozession von Musikern und Schafen im Zusammenhang mit der Schueberfouer darstellt.",
@@ -1897,6 +1900,143 @@ const datas = [
           ogDescription: "Bronzener Brunnen im Zentrum von Luxemburg, der eine traditionelle Prozession von Musikern und Schafen darstellt – Teil der alten Jahrmarktskultur der Schueberfouer.",
           keywords: "Hämmelsmarsch, Brunnen Luxemburg, Ville Haute, Grand-Rue, Roude Pëtz, Sehenswürdigkeiten Luxemburg, Bronzeskulptur, Schueberfouer, Stadtbrunnen Luxemburg, Schafprozession, Hämmelsmarsch Brunnen",
           ogImage: "https://our-travels.info/foto/Luxembourg/luxembourg_canton/luxembourg_city/old_town/hammelsmarsch/001.jpg"
+        }
+      }
+    }
+  },
+  {
+    id: "acrobats_luxembourg",
+    type: ["monument_or_fountain"], rating: "local",
+    path: "acrobats_luxembourg",
+    countryPath: "luxembourg", regionPath: "luxembourg_canton", districtPath: "city", cityPath: "luxembourg_city",
+    hiddenFromList: true, showMore: true,
+    fotoCard: "Luxembourg/luxembourg_canton/luxembourg_city/old_town/acrobats/001.jpg",
+    coord: { lat: 49.612820820337646, lng: 6.130877371087807 },
+    translations: {
+      ru: {
+        name: "Скульптурная группа «Акробаты»",
+        location: "Люксембург (квартал Ville Haute), Люксембург",
+        short_description: "Бронзовая скульптурная группа «Акробаты» на Place du Théâtre изображает уличных артистов и является одной из известных культурных достопримечательностей центра Люксембурга.",
+        full_description: {
+          title: "Описание и история",
+          items: [
+            { bold: "Скульптурная группа «Акробаты» (Les Saltimbanques)", text: "– одна из самых узнаваемых художественных композиций на площади Place du Théâtre в центре Люксембурга. Бронзовые фигуры скоморохов, музыкантов и акробатов создают атмосферу уличного театра и напоминают о давних европейских традициях ярмарочных представлений. Композиция выглядит живой и динамичной: персонажи будто продолжают выступление прямо среди прохожих." },
+            { text: "Автором скульптуры стала люксембургская художница Бенедикт Вайс (Bénédicte Weis). Работа была установлена в конце 1980-х годов и быстро стала одной из характерных деталей культурного центра города. Скульптура органично вписалась в театральную площадь рядом с Théâtre des Capucins и городской Синематекой." },
+            { text: "На заднем плане композиции находится здание Cinémathèque de la Ville de Luxembourg – городской синематеки, известной архивами мирового кино и тематическими кинопоказами. Благодаря этому сочетанию скульптуры, театра и кино площадь Place du Théâtre считается одним из культурных уголков исторического центра Люксембурга." },
+            { bold: "История", text: "Площадь Place du Théâtre была сформирована во второй половине XIX века возле бывшего капуцинского монастыря, который позже стал театром Théâtre des Capucins. Со временем это место превратилось в культурный центр города, где соседствуют театр, кино и городское искусство." },
+            { text: "Скульптурная группа «Les Saltimbanques» появилась здесь в 1987 году после художественного конкурса, в котором проект Бенедикт Вайс получил первую премию. Композиция состоит из нескольких бронзовых фигур и символизирует театральную жизнь, уличные выступления и атмосферу праздника." }
+          ]
+        },
+        tickets_and_entry: {
+          title: "Практическая информация",
+          items: [
+            { bold: "Адрес:", text: "Place du Théâtre, Luxembourg City, Luxembourg" }
+          ]
+        },
+        interestingFacts: {
+          title: "Интересные факты",
+          isList: true,
+          items: [
+            { text: "Скульптура изображает традиционных уличных артистов – скоморохов, музыкантов и акробатов." },
+            { text: "Название «Saltimbanques» пришло из французского языка и означает бродячих артистов или ярмарочных акробатов." },
+            { text: "Композиция стала одной из самых фотографируемых скульптур в центре Люксембурга." },
+            { text: "Многие туристы принимают бронзовых персонажей за исторический памятник XIX века, хотя работа была создана в XX веке." },
+            { text: "Площадь Place du Théâtre считается одним из культурных центров Люксембурга благодаря соседству театра и синематеки." }
+          ]
+        },
+        construction_period: "1987",
+        sculptors: "Бенедикт Вайс (Bénédicte Weis)",
+        meta: {
+          title: "Скульптура «Акробаты» (Les Saltimbanques) – Люксембург",
+          description: "Скульптурная группа «Акробаты» (Les Saltimbanques) на Place du Théâtre в Люксембурге – бронзовая композиция Бенедикт Вайс рядом с городской Синематекой и Théâtre des Capucins.",
+          ogTitle: "Les Saltimbanques – скульптура акробатов в Люксембурге",
+          ogDescription: "Узнайте историю скульптуры «Акробаты» (Les Saltimbanques) в центре Люксембурга – бронзовой композиции Бенедикт Вайс возле городской Синематеки.",
+          keywords: "скульптура Акробаты Люксембург, Les Saltimbanques, скульптурная группа Люксембург, Place du Théâtre Люксембург, достопримечательности Люксембурга, современное искусство Люксембург, Бенедикт Вайс скульптура, уличные скульптуры Люксембург, Cinémathèque de la Ville de Luxembourg, что посмотреть в Люксембурге, центр Люксембурга достопримечательности, культурные места Люксембург, бронзовые скульптуры Люксембург, арт-объекты Люксембург",
+          ogImage: "https://our-travels.info/foto/Luxembourg/luxembourg_canton/luxembourg_city/old_town/acrobats/001.jpg"
+        }
+      },
+      ua: {
+        name: "Скульптурна група «Акробати»",
+        location: "Люксембург (квартал Ville Haute), Люксембург",
+        short_description: "Бронзова скульптурна група «Акробати» на Place du Théâtre зображає вуличних артистів і є однією з відомих культурних пам’яток центру Люксембургу.",
+        full_description: {
+          title: "Опис та історія",
+          items: [
+            { bold: "Скульптурна група «Акробати» (Les Saltimbanques)", text: "– одна з найвпізнаваніших художніх композицій на площі Place du Théâtre у центрі Люксембургу. Бронзові фігури скоморохів, музикантів і акробатів створюють атмосферу вуличного театру та нагадують про давні європейські традиції ярмаркових вистав. Композиція виглядає живою та динамічною: персонажі ніби продовжують виступ просто серед перехожих." },
+            { text: "Авторкою скульптури стала люксембурзька художниця Бенедикт Вайс (Bénédicte Weis). Роботу було встановлено наприкінці 1980-х років, і вона швидко стала однією з характерних деталей культурного центру міста. Скульптура органічно вписалася в театральну площу поруч із Théâtre des Capucins та міською Сінематекою." },
+            { text: "На задньому плані композиції розташована будівля Cinémathèque de la Ville de Luxembourg – міської сінематеки, відомої архівами світового кіно та тематичними кінопоказами. Завдяки цьому поєднанню скульптури, театру і кіно площа Place du Théâtre вважається одним із культурних куточків історичного центру Люксембургу." },
+            { bold: "Історія", text: "Площа Place du Théâtre була сформована у другій половині XIX століття біля колишнього монастиря капуцинів, який пізніше став театром Théâtre des Capucins. З часом це місце перетворилося на культурний центр міста, де поруч існують театр, кіно та міське мистецтво." },
+            { text: "Скульптурна група «Les Saltimbanques» з’явилася тут у 1987 році після художнього конкурсу, в якому проєкт Бенедикт Вайс отримав першу премію. Композиція складається з кількох бронзових фігур і символізує театральне життя, вуличні виступи та атмосферу свята." }
+          ]
+        },
+        tickets_and_entry: {
+          title: "Практична інформація",
+          items: [
+            { bold: "Адреса:", text: "Place du Théâtre, Luxembourg City, Luxembourg" }
+          ]
+        },
+        interestingFacts: {
+          title: "Цікаві факти",
+          isList: true,
+          items: [
+            { text: "Скульптура зображає традиційних вуличних артистів – скоморохів, музикантів і акробатів." },
+            { text: "Назва «Saltimbanques» походить з французької мови та означає мандрівних артистів або ярмаркових акробатів." },
+            { text: "Композиція стала однією з найбільш фотографованих скульптур у центрі Люксембургу." },
+            { text: "Багато туристів сприймають бронзові фігури як історичну пам’ятку XIX століття, хоча робота була створена у XX столітті." },
+            { text: "Площа Place du Théâtre вважається одним із культурних центрів Люксембургу завдяки сусідству театру та сінематеки." }
+          ]
+        },
+        construction_period: "1987",
+        sculptors: "Бенедикт Вайс (Bénédicte Weis)",
+        meta: {
+          title: "Скульптура «Акробати» (Les Saltimbanques) – Люксембург",
+          description: "Скульптурна група «Акробати» (Les Saltimbanques) на Place du Théâtre у Люксембурзі – бронзова композиція Бенедикт Вайс поруч із міською Сінематекою та Théâtre des Capucins.",
+          ogTitle: "Les Saltimbanques – скульптура акробатів у Люксембурзі",
+          ogDescription: "Дізнайтеся історію скульптури «Акробати» (Les Saltimbanques) у центрі Люксембургу – бронзової композиції Бенедикт Вайс біля міської Сінематеки.",
+          keywords: "скульптура Акробати Люксембург, Les Saltimbanques, скульптурна група Люксембург, Place du Théâtre Люксембург, визначні місця Люксембургу, сучасне мистецтво Люксембург, Бенедикт Вайс скульптура, вуличні скульптури Люксембург, Cinémathèque de la Ville de Luxembourg, що подивитися у Люксембурзі, центр Люксембургу визначні місця, культурні місця Люксембург, бронзові скульптури Люксембург, арт-об’єкти Люксембург",
+          ogImage: "https://our-travels.info/foto/Luxembourg/luxembourg_canton/luxembourg_city/old_town/acrobats/001.jpg"
+        }
+      },
+      de: {
+        name: "Skulpturengruppe «Akrobaten»",
+        location: "Luxemburg (Stadtteil Ville Haute), Luxemburg",
+        short_description: "Die bronzene Skulpturengruppe «Akrobaten» auf dem Place du Théâtre zeigt Straßenkünstler und gehört zu den bekannten kulturellen Sehenswürdigkeiten im Zentrum von Luxemburg.",
+        full_description: {
+          title: "Beschreibung und Geschichte",
+          items: [
+            { bold: "Skulpturengruppe «Akrobaten» (Les Saltimbanques)", text: "– eine der bekanntesten künstlerischen Kompositionen auf dem Place du Théâtre im Zentrum von Luxemburg. Die bronzenen Figuren von Gauklern, Musikern und Akrobaten schaffen eine Atmosphäre des Straßentheaters und erinnern an alte europäische Traditionen von Jahrmärkten und Aufführungen. Die Komposition wirkt lebendig und dynamisch: Die Figuren scheinen ihre Darbietung direkt zwischen den Passanten fortzusetzen." },
+            { text: "Die Skulptur wurde von der luxemburgischen Künstlerin Bénédicte Weis geschaffen. Sie wurde Ende der 1980er Jahre aufgestellt und entwickelte sich schnell zu einem charakteristischen Element des kulturellen Zentrums der Stadt. Die Skulptur fügt sich harmonisch in den Theaterplatz neben dem Théâtre des Capucins und der städtischen Cinémathèque ein." },
+            { text: "Im Hintergrund der Komposition befindet sich die Cinémathèque de la Ville de Luxembourg – die städtische Filmothek, bekannt für ihr Archiv des Weltkinos und thematische Filmvorführungen. Durch diese Verbindung von Skulptur, Theater und Kino gilt der Place du Théâtre als einer der kulturellen Orte im historischen Zentrum von Luxemburg." },
+            { bold: "Geschichte", text: "Der Place du Théâtre entstand in der zweiten Hälfte des 19. Jahrhunderts in der Nähe des ehemaligen Kapuzinerklosters, das später zum Théâtre des Capucins wurde. Im Laufe der Zeit entwickelte sich dieser Ort zu einem kulturellen Zentrum der Stadt, in dem Theater, Kino und städtische Kunst nebeneinander existieren." },
+            { text: "Die Skulpturengruppe «Les Saltimbanques» wurde 1987 im Rahmen eines Kunstwettbewerbs aufgestellt, bei dem der Entwurf von Bénédicte Weis den ersten Preis gewann. Die Komposition besteht aus mehreren Bronzefiguren und symbolisiert das Theaterleben, Straßenaufführungen und eine festliche Atmosphäre." }
+          ]
+        },
+        tickets_and_entry: {
+          title: "Praktische Informationen",
+          items: [
+            { bold: "Adresse:", text: "Place du Théâtre, Luxembourg City, Luxemburg" }
+          ]
+        },
+        interestingFacts: {
+          title: "Interessante Fakten",
+          isList: true,
+          items: [
+            { text: "Die Skulptur zeigt traditionelle Straßenkünstler – Gaukler, Musiker und Akrobaten." },
+            { text: "Der Name «Saltimbanques» stammt aus dem Französischen und bedeutet wandernde Künstler oder Jahrmarkt-Akrobaten." },
+            { text: "Die Komposition gehört zu den meistfotografierten Skulpturen im Zentrum von Luxemburg." },
+            { text: "Viele Touristen halten die bronzenen Figuren für ein historisches Denkmal aus dem 19. Jahrhundert, obwohl das Werk im 20. Jahrhundert entstanden ist." },
+            { text: "Der Place du Théâtre gilt als eines der kulturellen Zentren von Luxemburg dank der Nähe von Theater und Cinémathèque." }
+          ]
+        },
+        construction_period: "1987",
+        sculptors: "Bénédicte Weis",
+        meta: {
+          title: "Skulptur «Akrobaten» (Les Saltimbanques) – Luxemburg",
+          description: "Die Skulpturengruppe «Akrobaten» (Les Saltimbanques) auf dem Place du Théâtre in Luxemburg ist eine Bronze-Komposition von Bénédicte Weis neben der Cinémathèque und dem Théâtre des Capucins.",
+          ogTitle: "Les Saltimbanques – Akrobaten-Skulptur in Luxemburg",
+          ogDescription: "Erfahren Sie die Geschichte der Skulptur «Akrobaten» (Les Saltimbanques) im Zentrum von Luxemburg – eine Bronze-Komposition von Bénédicte Weis neben der Cinémathèque de la Ville de Luxembourg.",
+          keywords: "Skulptur Akrobaten Luxemburg, Les Saltimbanques, Skulpturengruppe Luxemburg, Place du Théâtre Luxemburg, Sehenswürdigkeiten Luxemburg, moderne Kunst Luxemburg, Bénédicte Weis Skulptur, Straßenkunst Luxemburg, Cinémathèque de la Ville de Luxembourg, was man in Luxemburg sehen kann, Stadtzentrum Luxemburg Sehenswürdigkeiten, kulturelle Orte Luxemburg, Bronze Skulpturen Luxemburg, Kunstobjekte Luxemburg",
+          ogImage: "https://our-travels.info/foto/Luxembourg/luxembourg_canton/luxembourg_city/old_town/acrobats/001.jpg"
         }
       }
     }
