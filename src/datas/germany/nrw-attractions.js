@@ -1110,6 +1110,136 @@ const datas = [
             }
         }
     },
+    {
+        id: "stilleking_luedenscheid",
+        type: ["nature"], rating: "local",
+        path: "stilleking_luedenscheid",
+        countryPath: "germany", regionPath: "nrw", districtPath: "arnsberg", cityPath: "luedenscheid",
+        fotoCard: "Germany/nrw/arnsberg/Märkischer-Kreis/luedenscheid/stilleking/001.jpg",
+        coord: { lat: 51.18595, lng: 7.63035 },
+        translations: {
+            ru: {
+                name: "Природный заповедник Стиллекинг",
+                location: "Люденшайд, Германия",
+                short_description: "Стиллекінг – природная территория на южной окраине Люденшайда в Северном Рейне-Вестфалии. Это бывший военный полигон, который с 1994 года находится под охраной как природный заповедник. Сегодня он известен своими открытыми ландшафтами, редкими биотопами и системой пешеходных маршрутов.",
+                full_description: {
+                    title: "Описание и история",
+                    items: [
+                        { text: "Территория Стиллекінг (Stilleking) формировалась в течение десятилетий военного использования. Начиная с 1930-х годов, территория использовалась как полигон. Позже она находилась под контролем бельгийских вооружённых сил, которые использовали её для учений и инфраструктуры." },
+                        { text: "После вывода войск в 1992 году природные процессы постепенно восстановили ландшафт, и уже в 1994 году территория получила статус заповедника, а позже стала частью европейской сети охраняемых территорий Natura 2000." },
+                        { text: "Сегодня здесь сочетаются открытые луга, вересковые участки, заболоченные зоны и небольшие лесные массивы. Особенность территории – бедные почвы, которые сохранились благодаря отсутствию сельскохозяйственного использования." },
+                        { text: "Ландшафт поддерживается также с помощью выпаса Heckrinder – крупного рогатого скота, который выполняет роль естественных “ландшафтных садовников”." }
+                    ]
+                },
+                tickets_and_entry: {
+                    title: "Практическая информация",
+                    items: [
+                        { bold: "Расположение:", text: "южная окраина Люденшайда" },
+                        { bold: "Доступ:", text: "свободный" },
+                        { bold: "Маршруты:", text: "круговые тропы ~4–8 км. Подходит для пеших прогулок, наблюдения природы" }
+                    ]
+                },
+                interestingFacts: {
+                    title: "Интересные факты",
+                    isList: true,
+                    items: [
+                        { text: "Территория использовалась как военный полигон более 50 лет" },
+                        { text: "Сегодня здесь живут Heckrinder – «псевдо-ауэрохсы»" },
+                        { text: "Ландшафт практически не подвергался сельскому хозяйству десятилетиями" },
+                        { text: "Старая «липa суда» (Gerichtslinde) — историческое дерево, под которым в Средние века в Германии проходили народные судебные собрания, где жители решали споры и общинные вопросы. Такая традиция существовала в ряде регионов Европы до появления современных судов." }
+                    ]
+                },
+                meta: {
+                    title: "Стиллекінг (Stilleking) – природная территория и бывший военный полигон в Люденшайде",
+                    description: "Природная территория Сти́ллекінг (Stilleking) в Люденшайде, NRW – бывший военный полигон, превращённый в охраняемую природную зону с лесами, лугами, ручьями и пешеходными маршрутами.",
+                    ogTitle: "Стиллекінг – природа и история бывшего полигона в Германии",
+                    ogDescription: "Бывший военный полигон Стиллекінг (Stilleking) сегодня – это природная территория с редкими ландшафтами, тропами и историческими объектами в Люденшайде.",
+                    keywords: "Стиллекінг, Германия, природная территория, заповедник Германия, бывший военный полигон, пешеходные маршруты Германия, природа Северный Рейн-Вестфалия, достопримечательности, Меркиш",
+                    ogImage: "https://our-travels.info/foto/Germany/nrw/arnsberg/Märkischer-Kreis/luedenscheid/stilleking/001.jpg"
+                }
+            },
+            ua: {
+                name: "Природний заповідник Стиллекінг",
+                location: "Люденшайд, Німеччина",
+                short_description: "Стиллекінг – природна територія на південній околиці Люденшайда в Північному Рейні-Вестфалії. Це колишній військовий полігон, який з 1994 року перебуває під охороною як природний заповідник. Сьогодні він відомий своїми відкритими ландшафтами, рідкісними біотопами та системою пішохідних маршрутів.",
+                full_description: {
+                    title: "Опис та історія",
+                    items: [
+                        { text: "Територія Стиллекінг (Stilleking) формувалася протягом десятиліть військового використання. Починаючи з 1930-х років, територія використовувалася як полігон. Пізніше вона перебувала під контролем бельгійських збройних сил, які використовували її для навчань та інфраструктури." },
+                        { text: "Після виведення військ у 1992 році природні процеси поступово відновили ландшафт, і вже у 1994 році територія отримала статус заповідника, а згодом стала частиною європейської мережі охоронюваних територій Natura 2000." },
+                        { text: "Сьогодні тут поєднуються відкриті луки, вересові ділянки, заболочені зони та невеликі лісові масиви. Особливістю території є бідні ґрунти, які збереглися завдяки відсутності сільськогосподарського використання." },
+                        { text: "Ландшафт також підтримується за допомогою випасу Heckrinder – великої рогатої худоби, яка виконує роль природних «ландшафтних садівників»." }
+                    ]
+                },
+                tickets_and_entry: {
+                    title: "Практична інформація",
+                    items: [
+                        { bold: "Розташування:", text: "південна околиця Люденшайда" },
+                        { bold: "Доступ:", text: "вільний" },
+                        { bold: "Маршрути:", text: "кругові стежки приблизно 4–8 км. Підходить для піших прогулянок та спостереження за природою" }
+                    ]
+                },
+                interestingFacts: {
+                    title: "Цікаві факти",
+                    isList: true,
+                    items: [
+                        { text: "Територія використовувалася як військовий полігон понад 50 років" },
+                        { text: "Сьогодні тут живуть Heckrinder – «псевдо-ауерохси»" },
+                        { text: "Ландшафт практично не зазнавав сільськогосподарського використання протягом десятиліть" },
+                        { text: "Стара «липа суду» (Gerichtslinde) – історичне дерево, під яким у Середньовіччі в Німеччині відбувалися народні судові збори, де жителі вирішували суперечки та громадські питання. Така традиція існувала в ряді регіонів Європи до появи сучасних судів." }
+                    ]
+                },
+                meta: {
+                    title: "Стиллекінг (Stilleking) – природний заповідник і колишній військовий полігон у Люденшайді",
+                    description: "Природний заповідник Стиллекінг (Stilleking) у Люденшайді, Північний Рейн-Вестфалія – колишній військовий полігон, перетворений на охоронювану природну територію з лісами, луками, струмками та пішохідними маршрутами.",
+                    ogTitle: "Стиллекінг – природа та історія колишнього полігону в Німеччині",
+                    ogDescription: "Колишній військовий полігон Штіллекінг (Stilleking) сьогодні є природною територією з рідкісними ландшафтами, маршрутами для прогулянок і історичними об’єктами у Люденшайді.",
+                    keywords: "Стиллекінг, Stilleking, Німеччина, природний заповідник, Люденшайд, Північний Рейн-Вестфалія, колишній військовий полігон, пішохідні маршрути, природа Німеччини, Märkischer Kreis, Heckrinder, Gerichtslinde",
+                    ogImage: "https://our-travels.info/foto/Germany/nrw/arnsberg/Märkischer-Kreis/luedenscheid/stilleking/001.jpg"
+                }
+            },
+            de: {
+                name: "Naturschutzgebiet Stilleking",
+                location: "Lüdenscheid, Deutschland",
+                short_description: "Das Stilleking ist ein Naturgebiet am südlichen Stadtrand von Lüdenscheid in Nordrhein-Westfalen. Es handelt sich um ein ehemaliges Militärgelände, das seit 1994 als Naturschutzgebiet unter Schutz steht. Heute ist es bekannt für seine offenen Landschaften, seltenen Biotope und ein Netz von Wanderwegen.",
+                full_description: {
+                    title: "Beschreibung und Geschichte",
+                    items: [
+                        { text: "Das Gebiet Stilleking (Stilleking) entstand über Jahrzehnte militärischer Nutzung. Seit den 1930er-Jahren wurde das Gelände als Truppenübungsplatz genutzt. Später stand es unter der Kontrolle belgischer Streitkräfte, die es für Übungen und Infrastruktur verwendeten." },
+                        { text: "Nach dem Abzug der Truppen im Jahr 1992 begannen natürliche Prozesse, die Landschaft allmählich wiederherzustellen. Bereits 1994 erhielt das Gebiet den Status eines Naturschutzgebiets und wurde später Teil des europäischen Schutzgebietsnetzes Natura 2000." },
+                        { text: "Heute vereint das Gebiet offene Wiesen, Heideflächen, feuchte Zonen und kleinere Waldflächen. Besonders charakteristisch sind die nährstoffarmen Böden, die durch die jahrzehntelange Nichtnutzung der Landwirtschaft erhalten geblieben sind." },
+                        { text: "Die Landschaft wird zudem durch die Beweidung mit Heckrindern gepflegt – einer robusten Rinderrasse, die als natürliche „Landschaftspfleger“ fungiert." }
+                    ]
+                },
+                tickets_and_entry: {
+                    title: "Praktische Informationen",
+                    items: [
+                        { bold: "Lage:", text: "südlicher Stadtrand von Lüdenscheid" },
+                        { bold: "Zugang:", text: "frei zugänglich" },
+                        { bold: "Routen:", text: "Rundwege von etwa 4–8 km. Geeignet für Wanderungen und Naturbeobachtung" }
+                    ]
+                },
+                interestingFacts: {
+                    title: "Interessante Fakten",
+                    isList: true,
+                    items: [
+                        { text: "Das Gebiet wurde über 50 Jahre lang als Truppenübungsplatz genutzt" },
+                        { text: "Heute leben hier Heckrinder – sogenannte „Rückzüchtungen des Auerochsen“" },
+                        { text: "Die Landschaft wurde über Jahrzehnte kaum landwirtschaftlich genutzt" },
+                        { text: "Die alte „Gerichtslinde“ ist ein historischer Baum, unter dem im Mittelalter in Deutschland bäuerliche Gerichtsversammlungen stattfanden, bei denen Streitigkeiten und gemeinschaftliche Angelegenheiten entschieden wurden. Diese Tradition existierte in mehreren Regionen Europas vor der Einführung moderner Gerichtssysteme." }
+                    ]
+                },
+                meta: {
+                    title: "Naturschutzgebiet Stilleking – ehemaliger Truppenübungsplatz in Lüdenscheid",
+                    description: "Das Naturschutzgebiet Stilleking in Lüdenscheid, Nordrhein-Westfalen, ist ein ehemaliger Truppenübungsplatz, der in eine geschützte Naturfläche mit Wäldern, Wiesen, Bächen und Wanderwegen umgewandelt wurde.",
+                    ogTitle: "Stilleking – Natur und Geschichte eines ehemaligen Militärgeländes in Deutschland",
+                    ogDescription: "Das ehemalige Militärgelände Stilleking (Stilleking) ist heute ein Naturschutzgebiet mit offenen Landschaften, Wanderwegen und historischen Elementen in Lüdenscheid.",
+                    keywords: "Stilleking, Naturschutzgebiet, Lüdenscheid, Nordrhein-Westfalen, Deutschland, ehemaliger Truppenübungsplatz, Wanderwege, Naturgebiet, Märkischer Kreis, Heckrinder, Gerichtslinde, Natur in Deutschland",
+                    ogImage: "https://our-travels.info/foto/Germany/nrw/arnsberg/Märkischer-Kreis/luedenscheid/stilleking/001.jpg"
+                }
+            }
+        }
+    },
 
     //iserlohn
     {
@@ -2988,7 +3118,7 @@ const datas = [
                 }
             }
         }
-    },    
+    },
     {
         id: "fort_IV_outer_koln",
         type: ["historical_building"], rating: "local",

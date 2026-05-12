@@ -663,7 +663,10 @@ export const Fotos = {
       ],
       phaenomenta_luedenscheid: [
         { path: "Germany/nrw/arnsberg/Märkischer-Kreis/luedenscheid/phaenomenta/001.jpg", title: { ru: "Научный центр ФЕНОМЕНТА (фото взято с интернета)", ua: "Науковий центр ФЕНОМЕНТА (фото взято з Інтернету)", de: "PHÄNOMENTA (Foto aus dem Internet)" } },
-      ]
+      ],
+      stilleking_luedenscheid: [
+        { path: "Germany/nrw/arnsberg/Märkischer-Kreis/luedenscheid/stilleking/001.jpg", title: { ru: "Природный заповедник Стиллекинг (фото взято с интернета)", ua: "Природний заповідник Стиллекінг (фото взято з Інтернету)", de: "Naturschutzgebiet Stilleking (Foto aus dem Internet)" } },
+      ],
     },
     iserlohn: {
       gallery: [

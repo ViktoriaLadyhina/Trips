@@ -84,6 +84,7 @@ const datas =
     schloss_oedenthal_luedenscheid: { ru: 'Усадьба Оеденталь', de: 'Schloss Oedenthal', ua: 'Садиба Оеденталь' },
     bremecker_hammer_luedenscheid: { ru: 'Bremecker Hammer – технико-исторический музей кузнечного дела', de: 'Bremecker Hammer', ua: 'Bremecker Hammer – техніко-історичний музей ковальського ремесла' },
     phaenomenta_luedenscheid: { ru: 'Научный центр ФЕНОМЕНТА', de: 'PHÄNOMENTA', ua: 'Науковий центр ФЕНОМЕНТА' },
+    stilleking_luedenscheid: { ru: 'Природный заповедник Стиллекинг', de: 'Naturschutzgebiet Stilleking', ua: 'Природний заповідник Стиллекінг' },
 
     // Altena
     burg_altena: { ru: 'Замок Альтена', de: 'Burg Altena', ua: 'Замок Альтена' },
