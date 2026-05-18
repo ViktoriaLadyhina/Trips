@@ -2,6 +2,7 @@ import { useSelector } from "react-redux";
 import { Helmet } from "react-helmet-async";
 import BreadCrumbs from '../../components/breadCrumbs/BreadCrumbs';
 import useAllAttractions from "../../hooks/useAllAttractions";
+import useRoutes from '../../hooks/useRoutesSearch';
 import './Unesco.scss';
 import { Link } from "react-router";
 
@@ -21,10 +22,31 @@ const Unesco_Description = {
 export const Unesco = () => {
   const { lang } = useSelector((state) => state.language);
   const { attractions } = useAllAttractions();
+  const { routes } = useRoutes();
 
-  const unescoData = attractions.filter(
-    (item) => item.unesco_status?.included
-  );
+  const getAttractionLink = (item) => `/${item.countryPath}/${item.regionPath}/${item.districtPath}/${item.cityPath}/attractions/${item.path}`;
+  const getRouteLink = (route) => `/${route.countryPath}/routes/${route.path}`;
+
+  const attractionsUnesco = attractions
+    .filter(a => a.unesco_status?.included)
+    .map(a => ({
+      ...a,
+      link: getAttractionLink(a)
+    }));
+
+const routesUnesco = routes
+  .filter(r => r.translations?.[lang]?.unesco_status?.included)
+  .map(r => {
+    const unesco = r.translations?.[lang]?.unesco_status;
+
+    return {
+      ...r,
+      unesco_status: unesco, 
+      link: getRouteLink(r)
+    };
+  });
+
+  const unescoItems = [...attractionsUnesco, ...routesUnesco];
 
   const groupBySeries = (data) => {
     return data.reduce((acc, item) => {
@@ -34,7 +56,7 @@ export const Unesco = () => {
       return acc;
     }, {});
   };
-  const grouped = groupBySeries(unescoData);
+  const grouped = groupBySeries(unescoItems);
   const t = unescoTableHead[lang];
 
   // BreadCrumbs
@@ -68,7 +90,7 @@ export const Unesco = () => {
           <div className="unesco-cards">
             {items.map(item => (
               <div key={item.id} className="unesco-card">
-                <div className="unesco-card-row"><strong>{t.name}:</strong> <a href={`/${item.countryPath}/${item.regionPath}/${item.districtPath}/${item.cityPath}/attractions/${item.path}`}>{item.name}</a></div>
+                <div className="unesco-card-row"><strong>{t.name}:</strong> <a href={item.link}>{item.name}</a></div>
                 <div className="unesco-card-row"><strong>{t.type}:</strong> {item.unesco_status?.type}</div>
                 <div className="unesco-card-row"><strong>{t.location}:</strong> {item.location}</div>
                 {series === "no-series" && (
@@ -95,13 +117,7 @@ export const Unesco = () => {
             <tbody>
               {items.map(item => (
                 <tr key={item.id}>
-                  <td className="unesco__name">
-                    <Link
-                      to={`/${item.countryPath}/${item.regionPath}/${item.districtPath}/${item.cityPath}/attractions/${item.path}`}
-                    >
-                      {item.name}
-                    </Link>
-                  </td>
+                  <td className="unesco__name">  <Link to={item.link}> {item.name}</Link>  </td>
                   <td>{item.unesco_status?.type}</td>
                   <td>{item.location}</td>
                   {series === "no-series" && <td>{item.unesco_status?.year}</td>}

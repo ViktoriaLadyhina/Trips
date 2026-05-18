@@ -7,12 +7,20 @@ const datas = [
         fotoCard: "Germany/rheinland-pfalz/koblenz/ehrenbreitstein/001.jpg",
         coord: { lat: 50.2045, lng: 7.6046 },
         map: "castles_rhine_valley",
+        location: "Рейнланд-Пфальц и Гессен, Германия",
         translations: {
             ru: {
                 name: "Долина Среднего Рейна",
                 countryName: "Германия",
-                location: "Германия, долина Рейна между Кобленцем и Бингеном",
                 routeLength: "Около 67 км",
+                location: "Германия, долина Рейна между Кобленцем и Бингеном",
+                unesco_status: {
+                    included: true,
+                    year: 2002,
+                    type: "Культурный ландшафт",
+                    criteria: "ii, iv, v",
+                    epoch: "Античность – Средневековье – Новое время"
+                },
                 short_description: "Долина Среднего Рейна – один из самых живописных и исторически насыщенных регионов Германии, включённый в список всемирного наследия ЮНЕСКО. Маршрут проходит вдоль извилистого Рейна, среди виноградников, средневековых замков и небольших городков.",
                 full_description: {
                     title: "Описание",
@@ -77,7 +85,14 @@ const datas = [
             ua: {
                 name: "Долина Середнього Рейну",
                 countryName: "Німеччина",
-                location: "Німеччина, долина Рейну між Кобленцом і Бінгеном",
+                location: "Рейнланд-Пфальц і Гессен, Німеччина",
+                unesco_status: {
+                    included: true,
+                    year: 2002,
+                    type: "Культурний ландшафт",
+                    criteria: "ii, iv, v",
+                    epoch: "Античність – Середньовіччя – Новий час"
+                },
                 routeLength: "Близько 67 км",
                 short_description: "Долина Середнього Рейну – один із наймальовничіших та найбільш історично насичених регіонів Німеччини, внесений до списку Світової спадщини ЮНЕСКО. Маршрут проходить уздовж звивистого Рейну, серед виноградників, середньовічних замків і невеликих міст.",
                 full_description: {
@@ -143,7 +158,14 @@ const datas = [
             de: {
                 name: "Mittelrheintal",
                 countryName: "Deutschland",
-                location: "Deutschland, Rheintal zwischen Koblenz und Bingen",
+                location: "Rheinland-Pfalz und Hessen, Deutschland",
+                unesco_status: {
+                    included: true,
+                    year: 2002,
+                    type: "Kulturlandschaft",
+                    criteria: "ii, iv, v",
+                    epoch: "Antike – Mittelalter – Neuzeit"
+                },
                 routeLength: "Etwa 67 km",
                 short_description: "Das Mittelrheintal gehört zu den malerischsten und geschichtsträchtigsten Regionen Deutschlands und ist Teil des UNESCO-Welterbes. Die Route verläuft entlang des kurvenreichen Rheins zwischen Weinbergen, mittelalterlichen Burgen und kleinen historischen Städten.",
                 full_description: {

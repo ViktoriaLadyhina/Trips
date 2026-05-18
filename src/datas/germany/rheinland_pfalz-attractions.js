@@ -2,11 +2,12 @@ const datas = [
   // Кобленц
   {
     id: "ehrenbreitstein_koblenz",
-    type: ["palace_or_castle"], rating: "popular",
+    type: ["palace_or_castle", "museum"], rating: "popular",
     path: "ehrenbreitstein_koblenz",
     countryPath: "germany", regionPath: "rheinland_pfalz", districtPath: "city", cityPath: "koblenz",
     fotoCard: "Germany/rheinland-pfalz/koblenz/ehrenbreitstein/001.jpg",
     routes: "castles_rhine_valley",
+    coord: { lat: 50.36492599012237, lng: 7.615038103887171 },
     translations: {
       ru: {
         name: "Крепость Эренбрайтштайн",

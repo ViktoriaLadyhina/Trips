@@ -9,6 +9,7 @@ import nrw_events from '../../datas/germany/nrw-events'
 import nrw_subRegions from '../../datas/germany/nrw-subRegions'
 import nrw_districts from '../../datas/germany/nrw-districts'
 
+import rp_attr from '../../datas/germany/rheinland_pfalz-attractions'
 import rp_districts from '../../datas/germany/rheinland_pfalz-districts'
 import rp_subRegions from '../../datas/germany/rheinland_pfalz-subRegions'
 import rp_city from '../../datas/germany/rheinland_pfalz-city'
@@ -58,6 +59,7 @@ const searchIndex = {
             events: nrw_events
         },
         rheinland_pfalz: {
+            attractions: rp_attr,
             districts: rp_districts,
             subRegions: rp_subRegions,
             city: rp_city,
