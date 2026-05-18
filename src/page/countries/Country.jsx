@@ -4,12 +4,12 @@ import { Helmet } from "react-helmet-async";
 import { useState } from 'react';
 
 import countries from '../../datas/country';
-import luxembourgRoutes from '../../datas/luxembourg/routes'
 import BtnAttr from "../../components/btn-attr/BtnAttr";
 import BreadCrumbs from '../../components/breadCrumbs/BreadCrumbs';
 import InfoBlock from '../../components/InfoBlock/InfoBlock';
 import { photosByCountry } from "../../datas/fotos";
 import CountryMap from '../../components/maps/CountryMap'
+import useRoutes from '../../hooks/useRoutesSearch';
 
 import './Country.scss'
 
@@ -19,6 +19,7 @@ const Country = () => {
     const { countryPath } = useParams();
     const { lang } = useSelector((state) => state.language);
     const [sidebarOpen, setSidebarOpen] = useState(false);
+    const { routes } = useRoutes(countryPath);
 
     // ищем нужную страну
     const country = countries.find(c => c.path === countryPath);
@@ -30,7 +31,6 @@ const Country = () => {
     if (!country) return <p>Country not found</p>;
 
     const photos = photosByCountry[countryPath];
-    const routes = countryPath === 'luxembourg' ? luxembourgRoutes : [];
 
     // BreadCrumbs
     const crumbs = [

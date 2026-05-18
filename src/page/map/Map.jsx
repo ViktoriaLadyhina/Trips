@@ -35,6 +35,11 @@ const Map = () => {
                   <li><Link to="/germany/nrw/city/dortmund/events/winterleuchten_dortmund">{t.events.winterleuchten_dortmund[lang]}</Link> <span className="smaller-text"> ({t.events.winterleuchten_dortmund_city[lang]})</span></li>
                 </ul>
               </li>
+                                                  <li><span>{lang === 'ru' ? 'Маршруты' : lang === 'de' ? 'Routen' : 'Маршрути'}</span>
+                <ul>
+                  <li><Link to="/germany/routes/castles_rhine_valley">{t.routes.castles_rhine_valley[lang]}</Link></li>
+                </ul>
+              </li>
 
               {/* Рейнланд-Пфальц */}<br></br>
               <li><Link to="/germany/rheinland_pfalz">{t.regions.rheinland_pfalz[lang]}</Link>
@@ -79,6 +84,13 @@ const Map = () => {
                       <li><Link to="/germany/rheinland_pfalz/city/trier/attractions/amphitheater_trier">{t.attractions.amphitheater_trier[lang]}</Link></li>
                       <li><Link to="/germany/rheinland_pfalz/city/trier/attractions/barbarathermen_trier">{t.attractions.barbarathermen_trier[lang]}</Link></li>
 
+                    </ul>
+                  </li>
+
+                  {/* Кобленц - город */}
+                  <li><Link to="/germany/rheinland_pfalz/city/koblenz">{t.cities.koblenz[lang]}</Link>
+                    <ul>
+                      <li><Link to="/germany/rheinland_pfalz/city/koblenz/attractions/ehrenbreitstein_koblenz">{t.attractions.ehrenbreitstein_koblenz[lang]}</Link></li>
                     </ul>
                   </li>
                 </ul>
@@ -299,9 +311,9 @@ const Map = () => {
                             </ul>
                           </li>
                           <li><Link to="/germany/nrw/koln/lohmar"> {t.cities.lohmar[lang]}</Link>
-                          <ul>
-                            <li><Link to="/germany/nrw/koln/lohmar/attractions/st_johannes_enthauptung_lohmar">{t.attractions.st_johannes_enthauptung_lohmar[lang]}</Link></li>
-                          </ul>
+                            <ul>
+                              <li><Link to="/germany/nrw/koln/lohmar/attractions/st_johannes_enthauptung_lohmar">{t.attractions.st_johannes_enthauptung_lohmar[lang]}</Link></li>
+                            </ul>
                           </li>
                         </ul>
                       </li>

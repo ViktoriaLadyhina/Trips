@@ -7,6 +7,9 @@ export const Fotos = {
     { path: "Germany/parahod.gif", title: { ru: "Парохід", ua: "Парохід", de: "Steamship" } },
     { path: "Germany/zamok3.jpg", title: { ru: "Замок 2", ua: "Замок 2", de: "Burg 2" } }
   ],
+  castles_rhine_valley: [
+    { path: "Germany/rheinland-pfalz/koblenz/ehrenbreitstein/001.jpg", title: { ru: "Крепость Эренбрайтштайн, 2023", ua: "Фортеця Еренбрайтштайн, 2023", de: "Festung Ehrenbreitstein, 2023" } },
+  ],
 
   nrw: {
     region: [
@@ -213,7 +216,7 @@ export const Fotos = {
         { path: "Germany/nrw/koln/koln-city/altstadt/romanische_kirchen/gross_st_martin/002.jpg", title: { ru: "Большой Святой Мартин, 2025", ua: "Великий Святий Мартін, 2025", de: "Groß St. Martin, 2025" } },
         { path: "Germany/nrw/koln/koln-city/altstadt/romanische_kirchen/stMariaImKapitol/001.jpg", title: { ru: "Церковь Святой Марии в Капитолии (фото взято с интернета)", ua: "Церква Святої Марії у Капітолії (фото взято з Інтернету)", de: "Kirche St. Maria im Kapitol (Foto aus dem Internet)" } },
         { path: "Germany/nrw/koln/koln-city/altstadt/romanische_kirchen/st_gereon/001.jpg", title: { ru: "Церковь Святого Гереона (фото взято с интернета)", ua: "Церква Святого Герєона (фото взято з Інтернету)", de: "St. Gereon Kirche (Foto aus dem Internet)" } },
-        { path: "Germany/nrw/koln/koln-city/altstadt/romanische_kirchen/st_aposteln/001.jpg", title: { ru: "Церковь Святого Апостола (фото взято з интернета)", ua: "Церква Святого Апостола (фото взято з Інтернету)", de: "St. Aposteln (Foto aus dem Internet)" } },
+        { path: "Germany/nrw/koln/koln-city/altstadt/romanische_kirchen/st_aposteln/001.jpg", title: { ru: "Церковь Святого Апостола, 2026", ua: "Церква Святого Апостола, 2026", de: "St. Aposteln, 2026" } },
         { path: "Germany/nrw/koln/koln-city/altstadt/romanische_kirchen/st_kunibert/001.jpg", title: { ru: "Базиліка Святого Куніберта (фото взято з интернета)", ua: "Базиліка Святого Куніберта (фото взято з Інтернету)", de: "Basilika St. Kunibert (Foto aus dem Internet)" } }
       ],
       old_towers_koln: [
@@ -273,7 +276,10 @@ export const Fotos = {
         { path: "Germany/nrw/koln/koln-city/prussian_fortress_system/outer/011.jpg", title: { ru: "Форт XI (внешнее крепостное кольцо) (фото взято с интернета)", ua: "Форт XI (зовнішнє фортифікаційне кільце) (фото взято з Інтернету)", de: "Fort XI (äußerer Festungsring) (Foto aus dem Internet)" } },
       ],
       st_aposteln_koln: [
-        { path: "Germany/nrw/koln/koln-city/altstadt/romanische_kirchen/st_aposteln/001.jpg", title: { ru: "Церковь Святого Апостола (фото взято з интернета)", ua: "Церква Святого Апостола (фото взято з Інтернету)", de: "St. Aposteln (Foto aus dem Internet)" } }
+        { path: "Germany/nrw/koln/koln-city/altstadt/romanische_kirchen/st_aposteln/001.jpg", title: { ru: "Церковь Святого Апостола, 2026", ua: "Церква Святого Апостола, 2026", de: "St. Aposteln, 2026" } },
+        { path: "Germany/nrw/koln/koln-city/altstadt/romanische_kirchen/st_aposteln/002.jpg", title: { ru: "Церковь Святого Апостола, 2026", ua: "Церква Святого Апостола, 2026", de: "St. Aposteln, 2026" } },
+        { path: "Germany/nrw/koln/koln-city/altstadt/romanische_kirchen/st_aposteln/003.jpg", title: { ru: "Церковь Святого Апостола, 2026", ua: "Церква Святого Апостола, 2026", de: "St. Aposteln, 2026" } },
+        { path: "Germany/nrw/koln/koln-city/altstadt/romanische_kirchen/st_aposteln/004.jpg", title: { ru: "Церковь Святого Апостола, 2026", ua: "Церква Святого Апостола, 2026", de: "St. Aposteln, 2026" } },
       ],
     },
     bruhl: {
@@ -483,12 +489,13 @@ export const Fotos = {
         { path: "Germany/nrw/koln/Aachen/monschau/005.jpg", title: { ru: "Старый город Моншау, 2025", ua: "Старе місто Моншау, 2025", de: "Altstadt Monschau, 2025" } },
         { path: "Germany/nrw/koln/Aachen/monschau/006.jpg", title: { ru: "Старый город Моншау, 2025", ua: "Старе місто Моншау, 2025", de: "Altstadt Monschau, 2025" } },
         { path: "Germany/nrw/koln/Aachen/monschau/007.jpg", title: { ru: "Старый город Моншау, 2025", ua: "Старе місто Моншау, 2025", de: "Altstadt Monschau, 2025" } },
-        { path: "Germany/nrw/koln/Aachen/monschau/rotes_haus/001.jpg", title: { ru: "Красный дом, 2024", ua: "Червоний будинок, 2024", de: "Rotes Haus, 2024" } },
+        { path: "Germany/nrw/koln/Aachen/monschau/rotes_haus/001.jpg", title: { ru: "Красный дом, 2026", ua: "Червоний будинок, 2026", de: "Rotes Haus, 2026" } },
       ],
       burg_monschau: [
-        { path: "Germany/nrw/koln/Aachen/monschau/burg/001.jpg", title: { ru: "Замок Моншау (фото взято с интернета)", ua: "Замок Моншау (фото взято з Інтернету)", de: "Burg Monschau (Foto aus dem Internet)" } },
+        { path: "Germany/nrw/koln/Aachen/monschau/burg/001.jpg", title: { ru: "Замок Моншау, 2026", ua: "Замок Моншау, 2026", de: "Burg Monschau, 2026" } },
         { path: "Germany/nrw/koln/Aachen/monschau/burg/002.jpg", title: { ru: "Замок Моншау, 2025", ua: "Замок Моншау, 2025", de: "Burg Monschau, 2025" } },
         { path: "Germany/nrw/koln/Aachen/monschau/burg/003.jpg", title: { ru: "Замок Моншау, 2025", ua: "Замок Моншау, 2025", de: "Burg Monschau, 2025" } },
+        { path: "Germany/nrw/koln/Aachen/monschau/burg/0031.jpg", title: { ru: "Замок Моншау, 2026", ua: "Замок Моншау, 2026", de: "Burg Monschau, 2026" } },
         { path: "Germany/nrw/koln/Aachen/monschau/burg/004.jpg", title: { ru: "Замок Моншау, 2025", ua: "Замок Моншау, 2025", de: "Burg Monschau, 2025" } },
         { path: "Germany/nrw/koln/Aachen/monschau/burg/005.jpg", title: { ru: "Замок Моншау, 2025", ua: "Замок Моншау, 2025", de: "Burg Monschau, 2025" } },
         { path: "Germany/nrw/koln/Aachen/monschau/burg/006.jpg", title: { ru: "Замок Моншау, 2025", ua: "Замок Моншау, 2025", de: "Burg Monschau, 2025" } },
@@ -496,7 +503,7 @@ export const Fotos = {
         { path: "Germany/nrw/koln/Aachen/monschau/burg/008.jpg", title: { ru: "Вид со смотровой площадки замка Моншау, 2025", ua: "Вид з оглядового майданчика замку Моншау, 2025", de: "Aussicht von der Aussichtsplattform der Burg Monschau, 2025" } },
       ],
       rotes_haus_monschau: [
-        { path: "Germany/nrw/koln/Aachen/monschau/rotes_haus/001.jpg", title: { ru: "Красный дом, 2024", ua: "Червоний будинок, 2024", de: "Rotes Haus, 2024" } },
+        { path: "Germany/nrw/koln/Aachen/monschau/rotes_haus/001.jpg", title: { ru: "Красный дом, 2026", ua: "Червоний будинок, 2026", de: "Rotes Haus, 2026" } },
         { path: "Germany/nrw/koln/Aachen/monschau/rotes_haus/002.jpg", title: { ru: "Красный дом (фото взято с интернета)", ua: "Червоний будинок (фото взято з Інтернету)", de: "Rotes Haus (Foto aus dem Internet)" } },
       ],
       senfmuehle_monschau: [
@@ -651,8 +658,10 @@ export const Fotos = {
         { path: "Germany/nrw/arnsberg/Märkischer-Kreis/luedenscheid/st_joseph_medardus/002.jpg", title: { ru: "Церковь Святого Йозефа и Медарда (фото взято с интернета)", ua: "Церква Святого Йосипа та Медарда (фото взято з Інтернету)", de: "Kirche St. Joseph und Medardus (Foto aus dem Internet)" } },
       ],
       schloss_neuenhof_luedenscheid: [
-        { path: "Germany/nrw/arnsberg/Märkischer-Kreis/luedenscheid/neuenhof/001.jpg", title: { ru: "Замок Нойенхоф, 2006", ua: "Замок Нойенхоф, 2006", de: "Schloss Neuenhof, 2006" } },
-        { path: "Germany/nrw/arnsberg/Märkischer-Kreis/luedenscheid/neuenhof/002.jpg", title: { ru: "Замок Нойенхоф (фото взято с интернета)", ua: "Замок Нойенхоф (фото взято з Інтернету)", de: "Schloss Neuenhof (Foto aus dem Internet)" } },
+        { path: "Germany/nrw/arnsberg/Märkischer-Kreis/luedenscheid/neuenhof/001.jpg", title: { ru: "Замок Нойенхоф, 2026", ua: "Замок Нойенхоф, 2026", de: "Schloss Neuenhof, 2026" } },
+        { path: "Germany/nrw/arnsberg/Märkischer-Kreis/luedenscheid/neuenhof/002.jpg", title: { ru: "Замок Нойенхоф, 2026", ua: "Замок Нойенхоф, 2026", de: "Schloss Neuenhof, 2026" } },
+        { path: "Germany/nrw/arnsberg/Märkischer-Kreis/luedenscheid/neuenhof/003.jpg", title: { ru: "Замок Нойенхоф, 2026", ua: "Замок Нойенхоф, 2026", de: "Schloss Neuenhof, 2026" } },
+        { path: "Germany/nrw/arnsberg/Märkischer-Kreis/luedenscheid/neuenhof/004.jpg", title: { ru: "Замок Нойенхоф (фото взято с интернета)", ua: "Замок Нойенхоф (фото взято з Інтернету)", de: "Schloss Neuenhof (Foto aus dem Internet)" } },
       ],
       schloss_oedenthal_luedenscheid: [
         { path: "Germany/nrw/arnsberg/Märkischer-Kreis/luedenscheid/schloss_oedenthal/001.jpg", title: { ru: "Усадьба Оеденталь (фото взято с интернета)", ua: "Садиба Оеденталь (фото взято з Інтернету)", de: "Schloss Oedenthal (Foto aus dem Internet)" } },
@@ -662,10 +671,17 @@ export const Fotos = {
         { path: "Germany/nrw/arnsberg/Märkischer-Kreis/luedenscheid/bremecker_hammer/001.jpg", title: { ru: "Bremecker Hammer – технико-исторический музей кузнечного дела (фото взято с интернета)", ua: "Bremecker Hammer – техніко-історичний музей ковальського ремесла (фото взято з Інтернету)", de: "Bremecker Hammer (Foto aus dem Internet)" } },
       ],
       phaenomenta_luedenscheid: [
-        { path: "Germany/nrw/arnsberg/Märkischer-Kreis/luedenscheid/phaenomenta/001.jpg", title: { ru: "Научный центр ФЕНОМЕНТА (фото взято с интернета)", ua: "Науковий центр ФЕНОМЕНТА (фото взято з Інтернету)", de: "PHÄNOMENTA (Foto aus dem Internet)" } },
+        { path: "Germany/nrw/arnsberg/Märkischer-Kreis/luedenscheid/phaenomenta/001.jpg", title: { ru: "Научный центр ФЕНОМЕНТА, 2026", ua: "Науковий центр ФЕНОМЕНТА, 2026", de: "PHÄNOMENTA, 2026" } },
+        { path: "Germany/nrw/arnsberg/Märkischer-Kreis/luedenscheid/phaenomenta/002.jpg", title: { ru: "Научный центр ФЕНОМЕНТА, 2026", ua: "Науковий центр ФЕНОМЕНТА, 2026", de: "PHÄNOMENTA, 2026" } },
       ],
       stilleking_luedenscheid: [
-        { path: "Germany/nrw/arnsberg/Märkischer-Kreis/luedenscheid/stilleking/001.jpg", title: { ru: "Природный заповедник Стиллекинг (фото взято с интернета)", ua: "Природний заповідник Стиллекінг (фото взято з Інтернету)", de: "Naturschutzgebiet Stilleking (Foto aus dem Internet)" } },
+        { path: "Germany/nrw/arnsberg/Märkischer-Kreis/luedenscheid/stilleking/001.jpg", title: { ru: "Природный заповедник Стиллекинг, 2026", ua: "Природний заповідник Стиллекінг, 2026", de: "Naturschutzgebiet Stilleking, 2026" } },
+        { path: "Germany/nrw/arnsberg/Märkischer-Kreis/luedenscheid/stilleking/002.jpg", title: { ru: "Природный заповедник Стиллекинг, 2026", ua: "Природний заповідник Стиллекінг, 2026", de: "Naturschutzgebiet Stilleking, 2026" } },
+        { path: "Germany/nrw/arnsberg/Märkischer-Kreis/luedenscheid/stilleking/003.jpg", title: { ru: "Природный заповедник Стиллекинг, 2026", ua: "Природний заповідник Стиллекінг, 2026", de: "Naturschutzgebiet Stilleking, 2026" } },
+        { path: "Germany/nrw/arnsberg/Märkischer-Kreis/luedenscheid/stilleking/004.jpg", title: { ru: "Природный заповедник Стиллекинг, 2026", ua: "Природний заповідник Стиллекінг, 2026", de: "Naturschutzgebiet Stilleking, 2026" } },
+        { path: "Germany/nrw/arnsberg/Märkischer-Kreis/luedenscheid/stilleking/005.jpg", title: { ru: "Природный заповедник Стиллекинг, 2026", ua: "Природний заповідник Стиллекінг, 2026", de: "Naturschutzgebiet Stilleking, 2026" } },
+        { path: "Germany/nrw/arnsberg/Märkischer-Kreis/luedenscheid/stilleking/006.jpg", title: { ru: "Природный заповедник Стиллекинг - Старая «липa суда», 2026", ua: "Природний заповідник Стиллекінг - Стара «липа суду», 2026", de: "Naturschutzgebiet Stilleking - Gerichtslinde, 2026" } },
+        { path: "Germany/nrw/arnsberg/Märkischer-Kreis/luedenscheid/stilleking/007.jpg", title: { ru: "Природный заповедник Стиллекинг - Старая «липa суда», 2026", ua: "Природний заповідник Стиллекінг - Стара «липа суду», 2026", de: "Naturschutzgebiet Stilleking - Gerichtslinde, 2026" } },
       ],
     },
     iserlohn: {
@@ -812,6 +828,31 @@ export const Fotos = {
         { path: "Germany/rheinland-pfalz/trier_saarburg/saarburg_kell/saarburg/burg/007.jpg", title: { ru: "Замок Саарбурга, 2024", ua: "Замок Саарбурга, 2024", de: "Burg Saarburg, 2024" } },
         { path: "Germany/rheinland-pfalz/trier_saarburg/saarburg_kell/saarburg/burg/008.jpg", title: { ru: "Замок Саарбурга, 2024", ua: "Замок Саарбурга, 2024", de: "Burg Saarburg, 2024" } },
       ]
-    }
+    },
+    koblenz: {
+      gallery: [
+        { path: "Germany/rheinland-pfalz/koblenz/002.jpg", title: { ru: "Кобленц, 2023", ua: "Кобленц, 2023", de: "Koblenz, 2023" } },
+        { path: "Germany/rheinland-pfalz/koblenz/001.jpg", title: { ru: "Кобленц, 2023", ua: "Кобленц, 2023", de: "Koblenz, 2023" } },
+      ],
+      ehrenbreitstein_koblenz: [
+        { path: "Germany/rheinland-pfalz/koblenz/ehrenbreitstein/001.jpg", title: { ru: "Крепость Эренбрайтштайн, 2023", ua: "Фортеця Еренбрайтштайн, 2023", de: "Festung Ehrenbreitstein, 2023" } },
+        { path: "Germany/rheinland-pfalz/koblenz/ehrenbreitstein/002.jpg", title: { ru: "Крепость Эренбрайтштайн, 2023", ua: "Фортеця Еренбрайтштайн, 2023", de: "Festung Ehrenbreitstein, 2023" } },
+        { path: "Germany/rheinland-pfalz/koblenz/ehrenbreitstein/003.jpg", title: { ru: "Крепость Эренбрайтштайн, 2023", ua: "Фортеця Еренбрайтштайн, 2023", de: "Festung Ehrenbreitstein, 2023" } },
+        { path: "Germany/rheinland-pfalz/koblenz/ehrenbreitstein/004.jpg", title: { ru: "Крепость Эренбрайтштайн, 2023", ua: "Фортеця Еренбрайтштайн, 2023", de: "Festung Ehrenbreitstein, 2023" } },
+        { path: "Germany/rheinland-pfalz/koblenz/ehrenbreitstein/005.jpg", title: { ru: "Крепость Эренбрайтштайн, 2023", ua: "Фортеця Еренбрайтштайн, 2023", de: "Festung Ehrenbreitstein, 2023" } },
+        { path: "Germany/rheinland-pfalz/koblenz/ehrenbreitstein/006.jpg", title: { ru: "Крепость Эренбрайтштайн, 2023", ua: "Фортеця Еренбрайтштайн, 2023", de: "Festung Ehrenbreitstein, 2023" } },
+        { path: "Germany/rheinland-pfalz/koblenz/ehrenbreitstein/007.jpg", title: { ru: "Крепость Эренбрайтштайн, 2023", ua: "Фортеця Еренбрайтштайн, 2023", de: "Festung Ehrenbreitstein, 2023" } },
+        { path: "Germany/rheinland-pfalz/koblenz/ehrenbreitstein/008.jpg", title: { ru: "Крепость Эренбрайтштайн, 2023", ua: "Фортеця Еренбрайтштайн, 2023", de: "Festung Ehrenbreitstein, 2023" } },
+        { path: "Germany/rheinland-pfalz/koblenz/ehrenbreitstein/009.jpg", title: { ru: "Крепость Эренбрайтштайн, 2023", ua: "Фортеця Еренбрайтштайн, 2023", de: "Festung Ehrenbreitstein, 2023" } },
+        { path: "Germany/rheinland-pfalz/koblenz/ehrenbreitstein/010.jpg", title: { ru: "Крепость Эренбрайтштайн, 2023", ua: "Фортеця Еренбрайтштайн, 2023", de: "Festung Ehrenbreitstein, 2023" } },
+        { path: "Germany/rheinland-pfalz/koblenz/ehrenbreitstein/011.jpg", title: { ru: "Крепость Эренбрайтштайн, 2023", ua: "Фортеця Еренбрайтштайн, 2023", de: "Festung Ehrenbreitstein, 2023" } },
+        { path: "Germany/rheinland-pfalz/koblenz/ehrenbreitstein/012.jpg", title: { ru: "Крепость Эренбрайтштайн, 2023", ua: "Фортеця Еренбрайтштайн, 2023", de: "Festung Ehrenbreitstein, 2023" } },
+        { path: "Germany/rheinland-pfalz/koblenz/ehrenbreitstein/013.jpg", title: { ru: "Крепость Эренбрайтштайн, 2023", ua: "Фортеця Еренбрайтштайн, 2023", de: "Festung Ehrenbreitstein, 2023" } },
+        { path: "Germany/rheinland-pfalz/koblenz/ehrenbreitstein/014.jpg", title: { ru: "Крепость Эренбрайтштайн, 2023", ua: "Фортеця Еренбрайтштайн, 2023", de: "Festung Ehrenbreitstein, 2023" } },
+        { path: "Germany/rheinland-pfalz/koblenz/ehrenbreitstein/015.jpg", title: { ru: "Крепость Эренбрайтштайн, 2023", ua: "Фортеця Еренбрайтштайн, 2023", de: "Festung Ehrenbreitstein, 2023" } },
+        { path: "Germany/rheinland-pfalz/koblenz/ehrenbreitstein/016.jpg", title: { ru: "Крепость Эренбрайтштайн, 2023", ua: "Фортеця Еренбрайтштайн, 2023", de: "Festung Ehrenbreitstein, 2023" } },
+        { path: "Germany/rheinland-pfalz/koblenz/ehrenbreitstein/017.jpg", title: { ru: "Крепость Эренбрайтштайн, 2023", ua: "Фортеця Еренбрайтштайн, 2023", de: "Festung Ehrenbreitstein, 2023" } },
+      ],
+    },
   }
 }

@@ -48,6 +48,7 @@ const datas =
 
     velbert: { ru: 'Город Фельберт', de: 'Stadt Velbert', ua: 'Місто Фельберт' },
 
+    koblenz: { ru: 'Город Кобленц', de: 'Stadt Koblenz', ua: 'Місто Кобленц' },
     trier: { ru: 'Город Трир', de: 'Stadt Trier', ua: 'Місто Трір' },
     saarburg: { ru: 'Город Саарбург', de: 'Stadt Saarburg', ua: 'Місто Саарбург' },
 
@@ -220,6 +221,9 @@ const datas =
     burg_saarburg: { ru: 'Замок Саарбурга', de: 'Burg Saarburg', ua: 'Замок Саарбурга' },
     amuseum_saarburg: { ru: 'Амюзеум Саарбург', de: 'Amüseum Saarburg', ua: 'Амюзеум Саарбург' },
 
+    // Koblenz
+    ehrenbreitstein_koblenz: { ru: 'Крепость Эренбрайтштайн', de: 'Festung Ehrenbreitstein', ua: 'Фортеця Еренбрайтштайн' },
+
     //luxembourg
     ansembourg_castle: { ru: 'Замок-дворец Ансембург', de: 'Schloss Ansembourg', ua: 'Палац-замок Ансембурґ' },
     koerich_castle: { ru: 'Замок Керих', de: 'Burg Koerich', ua: 'Замок Кьоріх' },
@@ -257,6 +261,7 @@ const datas =
   routes: {
     mullerthal_trail: { ru: "Мюллертальская тропа", ua: "Мюллертальська стежка", de: "Mullerthal Trail" },
     seven_castles: { ru: "Долина семи замков", ua: "Долина семи замків", de: "Tal der sieben Schlösser" },
+    castles_rhine_valley: { ru: "Долина Среднего Рейна", ua: "Долина Середнього Рейну", de: "Mittelrheintal" },
   }
 }
 

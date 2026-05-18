@@ -3,7 +3,7 @@ import { Helmet } from "react-helmet-async";
 import { useSelector } from 'react-redux';
 
 import InfoBlock from '../../components/InfoBlock/InfoBlock.jsx';
-import luxembourgRoutes from '../../datas/luxembourg/routes'
+import useRoutes from '../../hooks/useRoutesSearch';
 import './Routes.scss'
 import BreadCrumbs from '../../components/breadCrumbs/BreadCrumbs';
 import Gallery from '../../components/gallery/Gallery.jsx';
@@ -11,6 +11,7 @@ import { photosByCountry } from '../../datas/fotos/index.js';
 import { routeMaps } from "../../components/maps/RouteMap.jsx";
 import useAttractions from '../../hooks/useAttractions.js';
 import AttractionCardSub from '../../components/attraction/AttractionCardSub.jsx';
+import FilteredMap from '../../components/maps/attr/filteredMap.jsx';
 
 const BASE_PHOTO_URL = import.meta.env.VITE_BASE_PHOTO_URL;
 const routeNotFound = { ru: "Маршрут не найден", ua: "Маршрут не знайдено", de: "Route nicht gefunden" };
@@ -18,8 +19,15 @@ const routeNotFound = { ru: "Маршрут не найден", ua: "Маршр�
 const Routes = () => {
     const { countryPath, routesPath } = useParams();
     const { lang } = useSelector((state) => state.language);
-    const route = luxembourgRoutes.find((r) => r.path === routesPath && r.countryPath === countryPath);
     const { attractions } = useAttractions(countryPath);
+
+    const { routes } = useRoutes(countryPath);
+    const route = routes?.find(
+        r => r.path === routesPath
+    );
+
+    if (!route) return <p>not found</p>;
+
 
     const attractionRoute = attractions?.filter(r => r?.routes === route.path);
 

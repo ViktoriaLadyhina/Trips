@@ -403,7 +403,7 @@ const datas = [
                     title: "Свободные города в Рейнланд-Пфальц",
                     items: [
                         { id: 25, name: 'Майнц', hasInfo: false, path: "mainz" },
-                        { id: 26, name: 'Кобленц', hasInfo: false, path: "koblenz" },
+                        { id: 26, name: 'Кобленц', hasInfo: true, path: "koblenz" },
                         { id: 27, name: 'Людвигсхафен', hasInfo: false, path: "ludwigshafen" },
                         { id: 28, name: 'Трир', hasInfo: true, path: "trier" },
                         { id: 29, name: 'Кайзерслаутерн', hasInfo: false, path: "kaiserslautern-city" },
@@ -521,7 +521,7 @@ const datas = [
                     title: "Міста з особливим статусом у Рейнланд-Пфальц",
                     items: [
                         { id: 25, name: 'Майнц', hasInfo: false, path: "mainz" },
-                        { id: 26, name: 'Кобленц', hasInfo: false, path: "koblenz" },
+                        { id: 26, name: 'Кобленц', hasInfo: true, path: "koblenz" },
                         { id: 27, name: 'Людвігсгафен', hasInfo: false, path: "ludwigshafen" },
                         { id: 28, name: 'Трір', hasInfo: true, path: "trier" },
                         { id: 29, name: 'Кайзерслаутерн', hasInfo: false, path: "kaiserslautern-city" },
@@ -636,7 +636,7 @@ const datas = [
                     title: "Kreisfreie Städte in Rheinland-Pfalz",
                     items: [
                         { id: 25, name: 'Mainz', hasInfo: false, path: "mainz" },
-                        { id: 26, name: 'Koblenz', hasInfo: false, path: "koblenz" },
+                        { id: 26, name: 'Koblenz', hasInfo: true, path: "koblenz" },
                         { id: 27, name: 'Ludwigshafen', hasInfo: false, path: "ludwigshafen" },
                         { id: 28, name: 'Trier', hasInfo: true, path: "trier" },
                         { id: 29, name: 'Kaiserslautern', hasInfo: false, path: "kaiserslautern-city" },

@@ -382,6 +382,267 @@ const datas = [
                 }
             }
         }
+    },
+    {
+        id: "koblenz",
+        path: "koblenz",
+        countryPath: "germany", regionPath: "rheinland_pfalz", districtPath: "city",
+        gerb: "Germany/rheinland-pfalz/koblenz/gerb.png",
+        coord: { lat: 50.3569, lng: 7.5889 },
+        translations: {
+            ru: {
+                name: 'Кобленц',
+                desc: {
+                    general: [
+                        { text: 'Кобленц – один из старейших городов Германии, расположенный у места слияния рек Рейн и Мозель.' },
+                        { text: 'Город известен своей римской историей, крепостью Эренбрайтштайн, живописными набережными и статусом важного туристического центра региона Верхняя долина Среднего Рейна.' }
+                    ],
+                    population: [{ bold: 'Население:', text: ' около 115 000 человек (2025)' }],
+                    area: [{ bold: 'Площадь:', text: ' около 105 км²' }],
+                    postalCode: [{ bold: 'Почтовые индексы:', text: ' 56068–56077' }],
+                    phone: [{ bold: 'Телефонный код:', text: ' +49 0261' }],
+                    officialSite: [{ bold: 'Официальный сайт Кобленца', link: 'https://www.koblenz.de/' }]
+                },
+                admin: {
+                    title: 'Кобленц разделён на 30 районов (Stadtteile). Наиболее известные районы города:',
+                    isList: true,
+                    items: [
+                        { bold: 'Altstadt', text: ' – исторический центр города с площадями, старинными зданиями, ресторанами и туристическими улицами.' },
+                        { bold: 'Ehrenbreitstein', text: ' – район на правом берегу Рейна, известный одноимённой крепостью и панорамными видами.' },
+                        { bold: 'Metternich', text: ' – крупный жилой и университетский район на западе города.' },
+                        { bold: 'Karthause', text: ' – возвышенный район с жилыми кварталами и зелёными зонами.' },
+                        { bold: 'Güls', text: ' – винодельческий район на берегу Мозеля с традиционной атмосферой.' },
+                        { bold: 'Moselweiß', text: ' – старинный район вдоль Мозеля, известный виноградниками и спокойной жилой застройкой.' },
+                        { bold: 'Stolzenfels', text: ' – южный район города с одноимённым замком на берегу Рейна.' }
+                    ]
+                },
+                geography: {
+                    title: 'География',
+                    items: [
+                        { text: 'Кобленц расположен в северной части федеральной земли Рейнланд-Пфальц у места слияния рек Рейн и Мозель.' },
+                        { text: 'Место соединения двух рек называется Deutsches Eck («Немецкий угол») и является одной из самых известных достопримечательностей Германии.' },
+                        { text: 'Город окружён холмами, виноградниками и лесистыми возвышенностями Рейнского сланцевого массива.' },
+                        { text: 'Кобленц считается воротами в Верхнюю долину Среднего Рейна – живописный регион замков, виноградников и средневековых городов, включённый в список Всемирного наследия ЮНЕСКО.' },
+                        { text: 'По обоим берегам Рейна и Мозеля проходят прогулочные набережные, велосипедные маршруты и смотровые площадки.' },
+                        { text: 'Крепость Эренбрайтштайн на высоком берегу Рейна соединена с центром города канатной дорогой.' }
+                    ]
+                },
+                notablePeople: {
+                    title: 'Знаменитые люди Кобленца',
+                    isList: true,
+                    items: [
+                        { bold: 'Клеменс Венцель фон Меттерних', text: ' – австрийский государственный деятель, родился в Кобленце.' },
+                        { bold: 'Макс фон Шенкендорф', text: ' – немецкий поэт эпохи романтизма, связанный с регионом Рейна.' },
+                        { bold: 'Йозеф Горрес', text: ' – публицист, писатель и политический мыслитель, работал в Кобленце.' },
+                        { bold: 'Император Вильгельм I', text: ' – его конный памятник установлен на Deutsches Eck и стал символом города.' }
+                    ]
+                },
+                interestingFacts: {
+                    title: 'Интересные факты',
+                    isList: true,
+                    items: [
+                        { text: 'Кобленц был основан римлянами около 8 года до н. э. и считается одним из старейших городов Германии.' },
+                        { text: 'Название города происходит от латинского слова Confluentes, что означает «слияние рек».' },
+                        { text: 'Deutsches Eck – место слияния Рейна и Мозеля – является символом немецкого единства.' },
+                        { text: 'Крепость Эренбрайтштайн считается одной из крупнейших сохранившихся крепостей Европы.' },
+                        { text: 'Канатная дорога через Рейн была построена к федеральной садовой выставке 2011 года и быстро стала популярной достопримечательностью.' },
+                        { text: 'Регион вокруг Кобленца известен виноделием, особенно белыми рейнскими и мозельскими винами.' },
+                        { text: 'Исторический центр города сохранил множество зданий в стилях барокко, классицизма и романтизма.' }
+                    ]
+                },
+                briefHistory: {
+                    title: 'История',
+                    items: [
+                        { text: 'Кобленц считается одним из старейших городов Германии. Его история начинается ещё в римскую эпоху: около 8 года до н. э. римляне основали здесь военный пост у места слияния Рейна и Мозеля. Поселение получило название Confluentes, что в переводе с латинского означает «слияние рек».' },
+                        { text: 'Благодаря выгодному расположению Кобленц быстро превратился в важный торговый и военный центр Римской империи. Через город проходили дороги вдоль Рейна и Мозеля, а на берегах строились укрепления, мосты и гавани.' },
+                        { text: 'После ухода римлян город вошёл в состав Франкского государства. В Средние века Кобленц стал владением архиепископов Трира и важным религиозным центром региона. В это время здесь строились церкви, монастыри и укрепления, многие из которых сохранились до наших дней.' },
+                        { text: 'В XII–XIII веках на высоком правом берегу Рейна была значительно укреплена крепость Эренбрайтштайн, контролировавшая речные пути и торговлю. Со временем она превратилась в одну из самых мощных крепостей региона.' },
+                        { text: 'В эпоху позднего Средневековья и Ренессанса Кобленц развивался как торговый город на пересечении речных маршрутов. Здесь активно велась торговля вином, древесиной и товарами, перевозимыми по Рейну.' },
+                        { text: 'В конце XVIII века город был занят французскими революционными войсками. В период французского правления Кобленц стал частью наполеоновской системы управления, а многие церковные владения были секуляризированы.' },
+                        { text: 'После Венского конгресса 1815 года Кобленц вошёл в состав Пруссии. Город получил большое военное значение: прусские власти перестроили и расширили крепость Эренбрайтштайн, а сам Кобленц стал одним из важнейших гарнизонных центров Рейнской области.' },
+                        { text: 'В XIX веке город активно рос благодаря развитию речного судоходства, железных дорог и торговли. В это же время на месте слияния Рейна и Мозеля появился монумент Deutsches Eck с памятником императору Вильгельму I.' },
+                        { text: 'Во время Второй мировой войны Кобленц серьёзно пострадал от бомбардировок. Значительная часть исторического центра была разрушена, однако многие важные памятники позднее восстановили.' },
+                        { text: 'После войны город вошёл в состав федеральной земли Рейнланд-Пфальц. Во второй половине XX века Кобленц постепенно превратился в крупный туристический и культурный центр региона.' },
+                        { text: 'Сегодня Кобленц известен своими историческими кварталами, крепостью Эренбрайтштайн, речными набережными и расположением у входа в Верхнюю долину Среднего Рейна – объекта Всемирного наследия ЮНЕСКО.' }
+                    ]
+                },
+                meta: {
+                    title: 'Кобленц – город на слиянии Рейна и Мозеля',
+                    description: 'Кобленц: история, крепости, набережные, достопримечательности и интересные факты об одном из старейших городов Германии.',
+                    ogTitle: 'Кобленц – информация о городе',
+                    ogDescription: 'Подробная информация о Кобленце: история, Рейн, Мозель, крепость Эренбрайтштайн и знаменитые места города.',
+                    ogImage: 'https://our-travels.info/foto/Germany/rheinland-pfalz/koblenz/koblenz-city/001.jpg'
+                }
+            },
+            ua: {
+                name: 'Кобленц',
+                desc: {
+                    general: [
+                        { text: 'Кобленц – одне з найстаріших міст Німеччини, розташоване в місці злиття річок Рейн і Мозель.' },
+                        { text: 'Місто відоме своєю римською історією, фортецею Еренбрайтштайн, мальовничими набережними та статусом важливого туристичного центру регіону Верхня долина Середнього Рейну.' }
+                    ],
+                    population: [{ bold: 'Населення:', text: ' близько 115 000 осіб (2025)' }],
+                    area: [{ bold: 'Площа:', text: ' близько 105 км²' }],
+                    postalCode: [{ bold: 'Поштові індекси:', text: ' 56068–56077' }],
+                    phone: [{ bold: 'Телефонний код:', text: ' +49 0261' }],
+                    officialSite: [{ bold: 'Офіційний сайт Кобленца', link: 'https://www.koblenz.de/' }]
+                },
+                admin: {
+                    title: 'Кобленц поділяється на 30 районів (Stadtteile). Найвідоміші райони міста:',
+                    isList: true,
+                    items: [
+                        { bold: 'Altstadt', text: ' – історичний центр міста з площами, старовинними будівлями, ресторанами та туристичними вулицями.' },
+                        { bold: 'Ehrenbreitstein', text: ' – район на правому березі Рейну, відомий однойменною фортецею та панорамними краєвидами.' },
+                        { bold: 'Metternich', text: ' – великий житловий та університетський район на заході міста.' },
+                        { bold: 'Karthause', text: ' – підвищений район із житловими кварталами та зеленими зонами.' },
+                        { bold: 'Güls', text: ' – виноробний район на березі Мозеля з традиційною атмосферою.' },
+                        { bold: 'Moselweiß', text: ' – старовинний район уздовж Мозеля, відомий виноградниками та спокійною житловою забудовою.' },
+                        { bold: 'Stolzenfels', text: ' – південний район міста з однойменним замком на березі Рейну.' }
+                    ]
+                },
+                geography: {
+                    title: 'Географія',
+                    items: [
+                        { text: 'Кобленц розташований у північній частині федеральної землі Рейнланд-Пфальц у місці злиття річок Рейн і Мозель.' },
+                        { text: 'Місце з’єднання двох річок називається Deutsches Eck («Німецький кут») і є однією з найвідоміших пам’яток Німеччини.' },
+                        { text: 'Місто оточене пагорбами, виноградниками та лісистими височинами Рейнського сланцевого масиву.' },
+                        { text: 'Кобленц вважається воротами до Верхньої долини Середнього Рейну – мальовничого регіону замків, виноградників і середньовічних міст, включеного до списку Світової спадщини ЮНЕСКО.' },
+                        { text: 'Обабіч Рейну та Мозеля проходять прогулянкові набережні, велосипедні маршрути та оглядові майданчики.' },
+                        { text: 'Фортеця Еренбрайтштайн на високому березі Рейну з’єднана з центром міста канатною дорогою.' }
+                    ]
+                },
+                notablePeople: {
+                    title: 'Відомі люди Кобленца',
+                    isList: true,
+                    items: [
+                        { bold: 'Клеменс Венцель фон Меттерніх', text: ' – австрійський державний діяч, народився у Кобленці.' },
+                        { bold: 'Макс фон Шенкендорф', text: ' – німецький поет епохи романтизму, пов’язаний із регіоном Рейну.' },
+                        { bold: 'Йозеф Ґеррес', text: ' – публіцист, письменник і політичний мислитель, працював у Кобленці.' },
+                        { bold: 'Імператор Вільгельм I', text: ' – його кінний пам’ятник встановлений на Deutsches Eck і став символом міста.' }
+                    ]
+                },
+                interestingFacts: {
+                    title: 'Цікаві факти',
+                    isList: true,
+                    items: [
+                        { text: 'Кобленц був заснований римлянами близько 8 року до н. е. і вважається одним із найстаріших міст Німеччини.' },
+                        { text: 'Назва міста походить від латинського слова Confluentes, що означає «злиття річок».' },
+                        { text: 'Deutsches Eck – місце злиття Рейну та Мозеля – є символом німецької єдності.' },
+                        { text: 'Фортеця Еренбрайтштайн вважається однією з найбільших збережених фортець Європи.' },
+                        { text: 'Канатна дорога через Рейн була побудована до Федеральної садової виставки 2011 року та швидко стала популярною пам’яткою.' },
+                        { text: 'Регіон навколо Кобленца відомий виноробством, особливо білими рейнськими та мозельськими винами.' },
+                        { text: 'Історичний центр міста зберіг багато будівель у стилях бароко, класицизму та романтизму.' }
+                    ]
+                },
+                briefHistory: {
+                    title: 'Історія',
+                    items: [
+                        { text: 'Кобленц вважається одним із найстаріших міст Німеччини. Його історія починається ще в римську епоху: близько 8 року до н. е. римляни заснували тут військовий пост у місці злиття Рейну та Мозеля. Поселення отримало назву Confluentes, що в перекладі з латини означає «злиття річок».' },
+                        { text: 'Завдяки вигідному розташуванню Кобленц швидко перетворився на важливий торговий і військовий центр Римської імперії. Через місто проходили дороги вздовж Рейну та Мозеля, а на берегах будувалися укріплення, мости та гавані.' },
+                        { text: 'Після відходу римлян місто увійшло до складу Франкської держави. У Середньовіччі Кобленц став володінням архієпископів Тріра та важливим релігійним центром регіону. У цей час тут будувалися церкви, монастирі та укріплення, багато з яких збереглися до наших днів.' },
+                        { text: 'У XII–XIII століттях на високому правому березі Рейну була значно укріплена фортеця Еренбрайтштайн, яка контролювала річкові шляхи та торгівлю. Згодом вона перетворилася на одну з найпотужніших фортець регіону.' },
+                        { text: 'У добу пізнього Середньовіччя та Ренесансу Кобленц розвивався як торгове місто на перетині річкових маршрутів. Тут активно велася торгівля вином, деревиною та товарами, які перевозилися Рейном.' },
+                        { text: 'Наприкінці XVIII століття місто було зайняте французькими революційними військами. У період французького правління Кобленц став частиною наполеонівської системи управління, а багато церковних володінь були секуляризовані.' },
+                        { text: 'Після Віденського конгресу 1815 року Кобленц увійшов до складу Пруссії. Місто отримало велике військове значення: прусська влада перебудувала та розширила фортецю Еренбрайтштайн, а сам Кобленц став одним із найважливіших гарнізонних центрів Рейнської області.' },
+                        { text: 'У XIX столітті місто активно зростало завдяки розвитку річкового судноплавства, залізниць і торгівлі. У цей же час у місці злиття Рейну та Мозеля з’явився монумент Deutsches Eck із пам’ятником імператору Вільгельму I.' },
+                        { text: 'Під час Другої світової війни Кобленц серйозно постраждав від бомбардувань. Значна частина історичного центру була зруйнована, однак багато важливих пам’яток пізніше відновили.' },
+                        { text: 'Після війни місто увійшло до складу федеральної землі Рейнланд-Пфальц. У другій половині XX століття Кобленц поступово перетворився на великий туристичний і культурний центр регіону.' },
+                        { text: 'Сьогодні Кобленц відомий своїми історичними кварталами, фортецею Еренбрайтштайн, річковими набережними та розташуванням біля входу до Верхньої долини Середнього Рейну – об’єкта Світової спадщини ЮНЕСКО.' }
+                    ]
+                },
+                meta: {
+                    title: 'Кобленц – місто на злитті Рейну та Мозеля',
+                    description: 'Кобленц: історія, фортеці, набережні, пам’ятки та цікаві факти про одне з найстаріших міст Німеччини.',
+                    ogTitle: 'Кобленц – інформація про місто',
+                    ogDescription: 'Докладна інформація про Кобленц: історія, Рейн, Мозель, фортеця Еренбрайтштайн і знамениті місця міста.',
+                    ogImage: 'https://our-travels.info/foto/Germany/rheinland-pfalz/koblenz/koblenz-city/001.jpg'
+                }
+            },
+            de: {
+                name: 'Koblenz',
+                desc: {
+                    general: [
+                        { text: 'Koblenz ist eine der ältesten Städte Deutschlands und liegt am Zusammenfluss von Rhein und Mosel.' },
+                        { text: 'Die Stadt ist bekannt für ihre römische Geschichte, die Festung Ehrenbreitstein, ihre malerischen Uferpromenaden und ihren Status als wichtiges touristisches Zentrum der Region Oberes Mittelrheintal.' }
+                    ],
+                    population: [ { bold: 'Einwohnerzahl:', text: ' etwa 115.000 (2025)' } ],
+                    area: [ { bold: 'Fläche:', text: ' etwa 105 km²' } ],
+                    postalCode: [ { bold: 'Postleitzahlen:', text: ' 56068–56077' } ],
+                    phone: [ { bold: 'Telefonvorwahl:', text: ' +49 0261' } ],
+                    officialSite: [ { bold: 'Offizielle Website von Koblenz', link: 'https://www.koblenz.de/' } ]
+                },
+                admin: {
+                    title: 'Koblenz ist in 30 Stadtteile gegliedert. Die bekanntesten Stadtteile der Stadt:',
+                    isList: true,
+                    items: [
+                        { bold: 'Altstadt', text: ' – das historische Zentrum der Stadt mit Plätzen, historischen Gebäuden, Restaurants und touristischen Straßen.' },
+                        { bold: 'Ehrenbreitstein', text: ' – Stadtteil am rechten Rheinufer, bekannt für die gleichnamige Festung und Panoramablicke.' },
+                        { bold: 'Metternich', text: ' – ein großer Wohn- und Universitätsstadtteil im Westen der Stadt.' },
+                        { bold: 'Karthause', text: ' – ein höher gelegener Stadtteil mit Wohngebieten und Grünflächen.' },
+                        { bold: 'Güls', text: ' – ein Weinanbaugebiet am Moselufer mit traditioneller Atmosphäre.' },
+                        { bold: 'Moselweiß', text: ' – ein alter Stadtteil entlang der Mosel, bekannt für Weinberge und ruhige Wohngebiete.' },
+                        { bold: 'Stolzenfels', text: ' – ein südlicher Stadtteil mit dem gleichnamigen Schloss am Rheinufer.' }
+                    ]
+                },
+                geography: {
+                    title: 'Geografie',
+                    items: [
+                        { text: 'Koblenz liegt im nördlichen Teil des Bundeslandes Rheinland-Pfalz am Zusammenfluss von Rhein und Mosel.' },
+                        { text: 'Die Stelle, an der die beiden Flüsse zusammenfließen, heißt Deutsches Eck und gehört zu den bekanntesten Sehenswürdigkeiten Deutschlands.' },
+                        { text: 'Die Stadt ist von Hügeln, Weinbergen und bewaldeten Höhen des Rheinischen Schiefergebirges umgeben.' },
+                        { text: 'Koblenz gilt als Tor zum Oberen Mittelrheintal – einer malerischen Region mit Burgen, Weinbergen und mittelalterlichen Städten, die zum UNESCO-Welterbe gehört.' },
+                        { text: 'Entlang von Rhein und Mosel verlaufen Uferpromenaden, Radwege und Aussichtspunkte.' },
+                        { text: 'Die Festung Ehrenbreitstein auf dem hohen Rheinufer ist durch eine Seilbahn mit dem Stadtzentrum verbunden.' }
+                    ]
+                },
+                notablePeople: {
+                    title: 'Berühmte Persönlichkeiten aus Koblenz',
+                    isList: true,
+                    items: [
+                        { bold: 'Klemens Wenzel von Metternich', text: ' – österreichischer Staatsmann, in Koblenz geboren.' },
+                        { bold: 'Max von Schenkendorf', text: ' – deutscher Dichter der Romantik, mit der Rheinregion verbunden.' },
+                        { bold: 'Joseph Görres', text: ' – Publizist, Schriftsteller und politischer Denker, arbeitete in Koblenz.' },
+                        { bold: 'Kaiser Wilhelm I.', text: ' – sein Reiterstandbild am Deutschen Eck ist ein Wahrzeichen der Stadt.' }
+                    ]
+                },
+                interestingFacts: {
+                    title: 'Interessante Fakten',
+                    isList: true,
+                    items: [
+                        { text: 'Koblenz wurde von den Römern um 8 v. Chr. gegründet und zählt zu den ältesten Städten Deutschlands.' },
+                        { text: 'Der Name der Stadt stammt vom lateinischen Wort Confluentes und bedeutet „Zusammenfluss der Flüsse“.' },
+                        { text: 'Das Deutsche Eck, der Zusammenfluss von Rhein und Mosel, gilt als Symbol der deutschen Einheit.' },
+                        { text: 'Die Festung Ehrenbreitstein ist eine der größten erhaltenen Festungen Europas.' },
+                        { text: 'Die Seilbahn über den Rhein wurde zur Bundesgartenschau 2011 gebaut und ist heute eine beliebte Attraktion.' },
+                        { text: 'Die Region um Koblenz ist für den Weinbau bekannt, insbesondere für Rhein- und Moselweine.' },
+                        { text: 'Die historische Altstadt bewahrt viele Gebäude im Stil von Barock, Klassizismus und Romantik.' }
+                    ]
+                },
+                briefHistory: {
+                    title: 'Geschichte',
+                    items: [
+                        { text: 'Koblenz zählt zu den ältesten Städten Deutschlands. Seine Geschichte beginnt bereits in der Römerzeit: Um 8 v. Chr. errichteten die Römer hier einen Militärposten am Zusammenfluss von Rhein und Mosel. Die Siedlung erhielt den Namen Confluentes, was „Zusammenfluss der Flüsse“ bedeutet.' },
+                        { text: 'Aufgrund seiner strategisch günstigen Lage entwickelte sich Koblenz schnell zu einem wichtigen Handels- und Militärzentrum des Römischen Reiches. Straßen entlang von Rhein und Mosel kreuzten sich hier, und an den Ufern entstanden Befestigungen, Brücken und Häfen.' },
+                        { text: 'Nach dem Abzug der Römer wurde die Stadt Teil des Frankenreichs. Im Mittelalter gehörte Koblenz den Erzbischöfen von Trier und entwickelte sich zu einem bedeutenden religiösen Zentrum der Region. In dieser Zeit entstanden zahlreiche Kirchen, Klöster und Befestigungen, von denen viele bis heute erhalten sind.' },
+                        { text: 'Im 12. und 13. Jahrhundert wurde die Festung Ehrenbreitstein auf dem hohen rechten Rheinufer stark ausgebaut. Sie kontrollierte die Handels- und Verkehrswege auf dem Fluss und entwickelte sich zu einer der mächtigsten Festungen der Region.' },
+                        { text: 'Im späten Mittelalter und in der Renaissance entwickelte sich Koblenz zu einer Handelsstadt am Schnittpunkt wichtiger Flussrouten. Besonders der Handel mit Wein, Holz und Waren entlang des Rheins spielte eine große Rolle.' },
+                        { text: 'Ende des 18. Jahrhunderts wurde die Stadt von französischen Revolutionstruppen besetzt. In der napoleonischen Zeit wurde Koblenz Teil des französischen Verwaltungssystems, und viele kirchliche Besitztümer wurden säkularisiert.' },
+                        { text: 'Nach dem Wiener Kongress 1815 kam Koblenz zu Preußen. Die Stadt erhielt große militärische Bedeutung: Die preußische Verwaltung erweiterte die Festung Ehrenbreitstein, und Koblenz wurde zu einem wichtigen Garnisonsstandort im Rheinland.' },
+                        { text: 'Im 19. Jahrhundert wuchs die Stadt stark durch Schifffahrt, Eisenbahn und Handel. In dieser Zeit entstand am Deutschen Eck das Denkmal von Kaiser Wilhelm I.' },
+                        { text: 'Im Zweiten Weltkrieg wurde Koblenz durch Bombenangriffe stark zerstört. Große Teile der Altstadt gingen verloren, viele bedeutende Bauwerke wurden später jedoch wieder aufgebaut.' },
+                        { text: 'Nach dem Krieg wurde Koblenz Teil des Bundeslandes Rheinland-Pfalz. In der zweiten Hälfte des 20. Jahrhunderts entwickelte sich die Stadt zunehmend zu einem touristischen und kulturellen Zentrum der Region.' },
+                        { text: 'Heute ist Koblenz bekannt für seine historische Altstadt, die Festung Ehrenbreitstein, seine Uferpromenaden und seine Lage am Eingang zum Oberen Mittelrheintal – einem UNESCO-Welterbe.' }
+                    ]
+                },
+                meta: {
+                    title: 'Koblenz – Stadt am Zusammenfluss von Rhein und Mosel',
+                    description: 'Koblenz: Geschichte, Festungen, Uferpromenaden, Sehenswürdigkeiten und interessante Fakten über eine der ältesten Städte Deutschlands.',
+                    ogTitle: 'Koblenz – Stadtinformationen',
+                    ogDescription: 'Detaillierte Informationen über Koblenz: Geschichte, Rhein, Mosel, Festung Ehrenbreitstein und berühmte Orte der Stadt.',
+                    ogImage: 'https://our-travels.info/foto/Germany/rheinland-pfalz/koblenz/koblenz-city/001.jpg'
+                }
+            }
+        }
     }
 ]
 

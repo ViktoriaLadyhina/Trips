@@ -388,7 +388,7 @@ const AttractionForm = () => {
                 <option value="city">Город обласного значения</option>
               </>
             )}
-            {watchedFields.country === "germany" && watchedFields.region === "rheinland-pfalz" && (
+            {watchedFields.country === "germany" && watchedFields.region === "rheinland_pfalz" && (
               <>
                 <option value="mayen-koblenz">Майен‑Кобленц</option>
                 <option value="trier_saarburg">Трир-Саарбург</option>
@@ -444,6 +444,7 @@ const AttractionForm = () => {
                 <option value="koln">Кельн</option>
                 <option value="dortmund">Дортмунд</option>
                 <option value="trier">Трир</option>
+                <option value="koblenz">Кобленц</option>
               </>
             )}
             {watchedFields.country === "luxembourg" && watchedFields.district === "city" && (

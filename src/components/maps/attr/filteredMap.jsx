@@ -102,7 +102,7 @@ const FilteredMap = ({ map, lang = 'ru' }) => {
 
         return (
           <Marker
-             key={`${attr.id}-${attr.status}`}
+            key={`${attr.id}-${attr.status}`}
             position={[lat, lng]}
             icon={getIconByStatus(attr)}
             eventHandlers={

@@ -1115,7 +1115,7 @@ const datas = [
         type: ["nature"], rating: "local",
         path: "stilleking_luedenscheid",
         countryPath: "germany", regionPath: "nrw", districtPath: "arnsberg", cityPath: "luedenscheid",
-        fotoCard: "Germany/nrw/arnsberg/Märkischer-Kreis/luedenscheid/stilleking/001.jpg",
+        fotoCard: "Germany/nrw/arnsberg/Märkischer-Kreis/luedenscheid/stilleking/004.jpg",
         coord: { lat: 51.18595, lng: 7.63035 },
         translations: {
             ru: {
