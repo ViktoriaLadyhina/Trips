@@ -6,7 +6,7 @@ const datas = [
     path: "ehrenbreitstein_koblenz",
     countryPath: "germany", regionPath: "rheinland_pfalz", districtPath: "city", cityPath: "koblenz",
     fotoCard: "Germany/rheinland-pfalz/koblenz/ehrenbreitstein/001.jpg",
-    routes: "castles_rhine_valley",
+    routes: "castles_rhine_valley", showMore: true,
     coord: { lat: 50.36492599012237, lng: 7.615038103887171 },
     translations: {
       ru: {
@@ -23,7 +23,7 @@ const datas = [
             { text: "Несмотря на высокую военную значимость, в конце XIX века крепость утратила оборонительную функцию и была выведена из активной службы. Однако она не была разрушена, что позволило сохранить её как один из наиболее хорошо сохранившихся фортификационных комплексов Европы. Сегодня Эренбрайтштайн является культурным центром, где проходят выставки, фестивали и образовательные проекты, а сама крепость стала одной из ключевых точек туристического маршрута по Среднему Рейну." }
           ]
         },
-        tickets_and_entry: {
+        practical_info: {
           title: "Практическая информация",
           items: [
             { bold: "Адрес:", text: "Greiffenklaustraße, 56077 Koblenz, Deutschland" },
@@ -74,7 +74,7 @@ const datas = [
             { text: "Попри високе військове значення, наприкінці XIX століття фортеця втратила оборонну функцію і була виведена з активної служби. Однак вона не була зруйнована, що дозволило зберегти її як один із найкраще збережених фортифікаційних комплексів Європи. Сьогодні Еренбрайтштайн є культурним центром, де проходять виставки, фестивалі та освітні проєкти, а сама фортеця стала однією з ключових точок туристичного маршруту Середнім Рейном." }
           ]
         },
-        tickets_and_entry: {
+        practical_info: {
           title: "Практична інформація",
           items: [
             { bold: "Адреса:", text: "Greiffenklaustraße, 56077 Koblenz, Німеччина" },
@@ -125,7 +125,7 @@ const datas = [
             { text: "Trotz ihrer hohen militärischen Bedeutung verlor die Festung Ende des 19. Jahrhunderts ihre Funktion als Verteidigungsanlage und wurde außer Dienst gestellt. Sie wurde jedoch nicht zerstört, wodurch sie als eine der am besten erhaltenen Festungsanlagen Europas bewahrt blieb. Heute ist Ehrenbreitstein ein kulturelles Zentrum mit Ausstellungen, Festivals und Bildungsprojekten und ein wichtiger Bestandteil der touristischen Route entlang des Mittelrheins." }
           ]
         },
-        tickets_and_entry: {
+        practical_info: {
           title: "Praktische Informationen",
           items: [
             { bold: "Adresse:", text: "Greiffenklaustraße, 56077 Koblenz, Deutschland" },
@@ -160,6 +160,170 @@ const datas = [
           ogDescription: "Eine der beeindruckendsten Festungen Deutschlands mit Rheinpanorama, Museen und reicher Geschichte.",
           keywords: "festung ehrenbreitstein, festungen deutschland, koblenz sehenswürdigkeiten, mittelrheintal, rhein, deutsche burgen, deutsches eck, seilbahn koblenz, festungsmuseum, oberes mittelrheintal",
           ogImage: "https://our-travels.info/foto/Germany/rheinland-pfalz/koblenz/ehrenbreitstein/001.jpg"
+        }
+      }
+    }
+  },
+  {
+    id: "stolzenfels_koblenz",
+    type: ["palace_or_castle"], rating: "popular",
+    path: "stolzenfels_koblenz",
+    countryPath: "germany", regionPath: "rheinland_pfalz", districtPath: "city", cityPath: "koblenz",
+    fotoCard: "Germany/rheinland-pfalz/koblenz/stolzenfels/001.jpg",
+    routes: "castles_rhine_valley", showMore: true,
+    coord: { lat: 50.30323627434961, lng: 7.592053295948548 },
+    translations: {
+      ru: {
+        name: "Замок Штольценфельс",
+        location: "Кобленц, район Штольценфельс, Германия",
+        officialSite: [
+          { bold: "Официальный сайт", link: "https://tor-zum-welterbe.de/stolzenfels/?utm_source=chatgpt.com" }
+        ],
+        short_description: "Замок Штольценфельс – романтический неоготический дворец на берегу Рейна возле Кобленца, восстановленный в XIX веке на месте средневековой крепости и ставший символом рейнского романтизма.",
+        full_description: {
+          title: "Описание и история",
+          items: [
+            { bold: "Замок Штольценфельс", text: "– романтический дворец-крепость XIX века, расположенный на левом берегу Рейна недалеко от Кобленца. Он возвышается над рекой среди лесистых склонов и считается одним из самых известных образцов рейнского романтизма в Германии. Благодаря живописному расположению и архитектуре замок стал одной из символических достопримечательностей долины Среднего Рейна." },
+            { text: "Современный вид Штольценфельса появился в эпоху прусского короля Фридриха Вильгельма IV, который превратил руины средневековой крепости в роскошную резиденцию в неоготическом стиле. При реконструкции архитекторы стремились сохранить атмосферу средневекового замка, дополнив её декоративными башнями, рыцарскими залами и террасными садами." },
+            { text: "Сегодня Штольценфельс открыт для посетителей как музейный комплекс. Туристы могут осмотреть исторические интерьеры, парадные залы, часовню, сады и смотровые площадки с панорамным видом на Рейн. Замок входит в список объектов культурного ландшафта долины Верхнего Среднего Рейна, включённого в список Всемирного наследия ЮНЕСКО." },
+            { bold: "История", text: "Первоначальная крепость Штольценфельс была построена около 1259 года архиепископами Трира для контроля торгового пути по Рейну и защиты своих владений. Благодаря стратегическому положению замок играл важную роль в обороне региона и сборе пошлин с проходящих судов." },
+            { text: "Во время Тридцатилетней войны и последующих конфликтов крепость неоднократно подвергалась разрушениям. В 1689 году, в период войны Аугсбургской лиги, французские войска практически полностью уничтожили замок, после чего он долгое время оставался в руинах." },
+            { text: "В XIX веке руины приобрёл наследный принц Пруссии Фридрих Вильгельм, будущий король Фридрих Вильгельм IV. По его инициативе в 1836–1842 годах была проведена масштабная реконструкция под руководством архитектора Карла Фридриха Шинкеля и его последователей. После восстановления Штольценфельс стал одной из главных резиденций прусской аристократии на Рейне и важным символом эпохи романтизма." }
+          ]
+        },
+        practical_info: {
+          title: "Практическая информация",
+          items: [
+            { bold: "Адрес:", text: "Schlossweg 11, 56075 Koblenz" },
+            { bold: "Стиль:", text: "неоготика, рейнский романтизм" },
+            { bold: "Лучшее время для посещения: ", text: "весна, лето и ранняя осень" },
+            { bold: "Особенности:", text: "панорамные виды на Рейн, исторические интерьеры, террасные сады" },
+            { bold: "Доступ:", text: "часть пути к замку проходит по подъёму пешком" }
+          ]
+        },
+        interestingFacts: {
+          title: "Интересные факты",
+          isList: true,
+          items: [
+            { text: "Штольценфельс считается одним из важнейших примеров романтической реконструкции средневековых замков в Германии." },
+            { text: "В оформлении интерьеров использовались элементы рыцарской символики и исторические декоративные мотивы." },
+            { text: "Замок посещали представители европейской аристократии XIX века." },
+            { text: "Террасы и сады проектировались как часть единой художественной композиции вместе с архитектурой замка." },
+            { text: "Из замка открывается один из самых известных видов на долину Рейна возле Кобленца." }
+          ]
+        },
+        construction_period: "около 1259 года. Реконструкция: 1836–1842 годы",
+        architects: "Карл Фридрих Шинкель и последователи",
+        founder: "первоначальной крепости – архиепископы Трира",
+        meta: {
+          title: "Замок Штольценфельс в Кобленце – история, фото и посещение",
+          description: "Замок Штольценфельс – романтический неоготический замок на Рейне возле Кобленца. История крепости, интерьеры, сады, интересные факты и информация для посещения.",
+          ogTitle: "Замок Штольценфельс – романтический замок на Рейне возле Кобленца",
+          ogDescription: "Откройте для себя замок Штольценфельс – одну из самых красивых достопримечательностей долины Среднего Рейна с панорамными видами и историческими интерьерами.",
+          keywords: "замок Штольценфельс, Schloss Stolzenfels, Кобленц, замки Рейна, долина Среднего Рейна, достопримечательности Германии, рейнский романтизм, замки Германии, UNESCO Rhine Valley, что посмотреть в Кобленце",
+          ogImage: "https://our-travels.info/foto/Germany/rheinland-pfalz/koblenz/stolzenfels/001.jpg"
+        }
+      },
+      ua: {
+        name: "Замок Штольценфельс",
+        location: "Кобленц, район Штольценфельс, Німеччина",
+        officialSite: [
+          { bold: "Офіційний сайт", link: "https://tor-zum-welterbe.de/stolzenfels/?utm_source=chatgpt.com" }
+        ],
+        short_description: "Замок Штольценфельс – романтичний неоготичний палац на березі Рейну біля Кобленца, відновлений у XIX столітті на місці середньовічної фортеці та який став символом рейнського романтизму.",
+        full_description: {
+          title: "Опис і історія",
+          items: [
+            { bold: "Замок Штольценфельс", text: "– романтичний палац-фортеця XIX століття, розташований на лівому березі Рейну неподалік Кобленца. Він височіє над річкою серед лісистих схилів і вважається одним із найвідоміших зразків рейнського романтизму в Німеччині. Завдяки мальовничому розташуванню та архітектурі замок став однією з символічних пам’яток долини Середнього Рейну." },
+            { text: "Сучасний вигляд Штольценфельса з’явився в епоху прусського короля Фрідріха Вільгельма IV, який перетворив руїни середньовічної фортеці на розкішну резиденцію в неоготичному стилі. Під час реконструкції архітектори прагнули зберегти атмосферу середньовічного замку, доповнивши її декоративними вежами, лицарськими залами та терасовими садами." },
+            { text: "Сьогодні Штольценфельс відкритий для відвідувачів як музейний комплекс. Туристи можуть оглянути історичні інтер’єри, парадні зали, каплицю, сади та оглядові майданчики з панорамним видом на Рейн. Замок входить до списку об’єктів культурного ландшафту долини Верхнього Середнього Рейну, включеного до списку Світової спадщини ЮНЕСКО." },
+            { bold: "Історія", text: "Початкова фортеця Штольценфельс була побудована близько 1259 року архієпископами Тріра для контролю торгового шляху по Рейну та захисту своїх володінь. Завдяки стратегічному розташуванню замок відігравав важливу роль в обороні регіону та зборі мит із суден, що проходили." },
+            { text: "Під час Тридцятилітньої війни та наступних конфліктів фортеця неодноразово зазнавала руйнувань. У 1689 році, під час війни Аугсбурзької ліги, французькі війська практично повністю знищили замок, після чого він довгий час залишався в руїнах." },
+            { text: "У XIX столітті руїни придбав наслідний принц Пруссії Фрідріх Вільгельм, майбутній король Фрідріх Вільгельм IV. За його ініціативою у 1836–1842 роках була проведена масштабна реконструкція під керівництвом архітектора Карла Фрідріха Шинкеля та його послідовників. Після відновлення Штольценфельс став однією з головних резиденцій прусської аристократії на Рейні та важливим символом епохи романтизму." }
+          ]
+        },
+        practical_info: {
+          title: "Практична інформація",
+          items: [
+            { bold: "Адреса:", text: "Schlossweg 11, 56075 Koblenz" },
+            { bold: "Стиль:", text: "неоготика, рейнський романтизм" },
+            { bold: "Найкращий час для відвідування: ", text: "весна, літо та початок осені" },
+            { bold: "Особливості:", text: "панорамні види на Рейн, історичні інтер’єри, терасові сади" },
+            { bold: "Доступ:", text: "частина шляху до замку проходить пішим підйомом" }
+          ]
+        },
+        interestingFacts: {
+          title: "Цікаві факти",
+          isList: true,
+          items: [
+            { text: "Штольценфельс вважається одним із найважливіших прикладів романтичної реконструкції середньовічних замків у Німеччині." },
+            { text: "В оформленні інтер’єрів використовувалися елементи лицарської символіки та історичні декоративні мотиви." },
+            { text: "Замок відвідували представники європейської аристократії XIX століття." },
+            { text: "Тераси та сади проєктувалися як частина єдиної художньої композиції разом з архітектурою замку." },
+            { text: "Із замку відкривається один із найвідоміших видів на долину Рейну біля Кобленца." }
+          ]
+        },
+        construction_period: "близько 1259 року. Реконструкція: 1836–1842 роки",
+        architects: "Карл Фрідріх Шинкель та послідовники",
+        founder: "початкової фортеці – архієпископи Тріра",
+        meta: {
+          title: "Замок Штольценфельс у Кобленці – історія, фото та відвідування",
+          description: "Замок Штольценфельс – романтичний неоготичний замок на Рейні біля Кобленца. Історія фортеці, інтер’єри, сади, цікаві факти та інформація для відвідування.",
+          ogTitle: "Замок Штольценфельс – романтичний замок на Рейні біля Кобленца",
+          ogDescription: "Відкрийте для себе замок Штольценфельс – одну з найкрасивіших пам’яток долини Середнього Рейну з панорамними видами та історичними інтер’єрами.",
+          keywords: "замок Штольценфельс, Schloss Stolzenfels, Кобленц, замки Рейну, долина Середнього Рейну, пам’ятки Німеччини, рейнський романтизм, замки Німеччини, UNESCO Rhine Valley, що подивитися в Кобленці",
+          ogImage: "https://our-travels.info/foto/Germany/rheinland-pfalz/koblenz/stolzenfels/001.jpg"
+        }
+      },
+      de: {
+        name: "Schloss Stolzenfels",
+        location: "Koblenz, Stadtteil Stolzenfels, Deutschland",
+        officialSite: [
+          { bold: "Offizielle Website", link: "https://tor-zum-welterbe.de/stolzenfels/?utm_source=chatgpt.com" }
+        ],
+        short_description: "Schloss Stolzenfels ist ein romantischer neugotischer Schlossbau am Rhein bei Koblenz, der im 19. Jahrhundert auf den Ruinen einer mittelalterlichen Burg wiederaufgebaut wurde und zu einem Symbol der Rheinromantik wurde.",
+        full_description: {
+          title: "Beschreibung und Geschichte",
+          items: [
+            { bold: "Schloss Stolzenfels", text: "– ein romantischer Schloss- und Festungsbau des 19. Jahrhunderts am linken Rheinufer nahe Koblenz. Es erhebt sich über dem Fluss inmitten bewaldeter Hänge und gilt als eines der bekanntesten Beispiele der Rheinromantik in Deutschland. Durch seine malerische Lage und Architektur wurde das Schloss zu einem der symbolischen Wahrzeichen des Mittelrheintals." },
+            { text: "Das heutige Erscheinungsbild von Stolzenfels entstand in der Zeit des preußischen Königs Friedrich Wilhelm IV., der die Ruinen der mittelalterlichen Burg in eine repräsentative Residenz im neugotischen Stil umgestalten ließ. Bei der Rekonstruktion versuchten die Architekten, die Atmosphäre einer mittelalterlichen Burg zu bewahren und sie durch dekorative Türme, Rittersäle und Terrassengärten zu ergänzen." },
+            { text: "Heute ist Schloss Stolzenfels als Museumskomplex für Besucher geöffnet. Touristen können historische Innenräume, Prunksäle, die Kapelle, Gärten und Aussichtsterrassen mit Panoramablick auf den Rhein besichtigen. Das Schloss gehört zum UNESCO-Welterbe Oberes Mittelrheintal." },
+            { bold: "Geschichte", text: "Die ursprüngliche Burg Stolzenfels wurde um 1259 von den Erzbischöfen von Trier errichtet, um die Handelsroute am Rhein zu kontrollieren und ihre Gebiete zu schützen. Aufgrund seiner strategischen Lage spielte die Burg eine wichtige Rolle bei der Verteidigung der Region und der Erhebung von Zöllen auf vorbeifahrende Schiffe." },
+            { text: "Während des Dreißigjährigen Krieges und späterer Konflikte wurde die Burg mehrfach zerstört. Im Jahr 1689, im Pfälzischen Erbfolgekrieg, zerstörten französische Truppen die Anlage fast vollständig, sodass sie lange Zeit als Ruine bestehen blieb." },
+            { text: "Im 19. Jahrhundert erwarb der preußische Kronprinz Friedrich Wilhelm, der spätere König Friedrich Wilhelm IV., die Ruine. Auf seine Initiative wurde zwischen 1836 und 1842 unter der Leitung des Architekten Karl Friedrich Schinkel und seiner Nachfolger eine umfassende Restaurierung durchgeführt. Nach dem Wiederaufbau wurde Stolzenfels zu einer der wichtigsten Residenzen des preußischen Adels am Rhein und zu einem bedeutenden Symbol der Romantik." }
+          ]
+        },
+        practical_info: {
+          title: "Praktische Informationen",
+          items: [
+            { bold: "Adresse:", text: "Schlossweg 11, 56075 Koblenz" },
+            { bold: "Stil:", text: "Neugotik, Rheinromantik" },
+            { bold: "Beste Besuchszeit: ", text: "Frühling, Sommer und früher Herbst" },
+            { bold: "Besonderheiten:", text: "Panoramablicke auf den Rhein, historische Innenräume, Terrassengärten" },
+            { bold: "Zugang:", text: "Ein Teil des Weges zum Schloss führt bergauf zu Fuß" }
+          ]
+        },
+        interestingFacts: {
+          title: "Interessante Fakten",
+          isList: true,
+          items: [
+            { text: "Schloss Stolzenfels gilt als eines der wichtigsten Beispiele romantischer Rekonstruktionen mittelalterlicher Burgen in Deutschland." },
+            { text: "In der Innenausstattung wurden Elemente der Rittersymbolik und historische dekorative Motive verwendet." },
+            { text: "Das Schloss wurde im 19. Jahrhundert von Mitgliedern des europäischen Adels besucht." },
+            { text: "Die Terrassen und Gärten wurden als Teil eines einheitlichen künstlerischen Gesamtkonzepts gestaltet." },
+            { text: "Vom Schloss aus bietet sich einer der bekanntesten Ausblicke auf das Rheintal bei Koblenz." }
+          ]
+        },
+        construction_period: "um 1259. Rekonstruktion: 1836–1842",
+        architects: "Karl Friedrich Schinkel und Nachfolger",
+        founder: "ursprüngliche Burg – die Erzbischöfe von Trier",
+        meta: {
+          title: "Schloss Stolzenfels in Koblenz – Geschichte, Fotos und Besuch",
+          description: "Schloss Stolzenfels ist ein romantisches neugotisches Schloss am Rhein bei Koblenz. Geschichte der Burg, Innenräume, Gärten, interessante Fakten und Besucherinformationen.",
+          ogTitle: "Schloss Stolzenfels – romantisches Schloss am Rhein bei Koblenz",
+          ogDescription: "Entdecken Sie Schloss Stolzenfels – eines der schönsten Wahrzeichen des Mittelrheintals mit Panoramablicken und historischen Innenräumen.",
+          keywords: "Schloss Stolzenfels, Koblenz, Rheinburgen, Mittelrheintal, Rheinromantik, Burgen in Deutschland, UNESCO Rheintal, Sehenswürdigkeiten Deutschland, Rhein castles",
+          ogImage: "https://our-travels.info/foto/Germany/rheinland-pfalz/koblenz/stolzenfels/001.jpg"
         }
       }
     }

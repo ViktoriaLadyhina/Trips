@@ -9,6 +9,7 @@ export const Fotos = {
   ],
   castles_rhine_valley: [
     { path: "Germany/rheinland-pfalz/koblenz/ehrenbreitstein/001.jpg", title: { ru: "Крепость Эренбрайтштайн, 2023", ua: "Фортеця Еренбрайтштайн, 2023", de: "Festung Ehrenbreitstein, 2023" } },
+    { path: "Germany/rheinland-pfalz/koblenz/stolzenfels/001.jpg", title: { ru: "Замок Штольценфельс (фото взято с интернета)", ua: "Замок Штольценфельс (фото взято з Інтернету)", de: "Schloss Stolzenfels (Foto aus dem Internet)" } },
   ],
 
   nrw: {
@@ -852,6 +853,9 @@ export const Fotos = {
         { path: "Germany/rheinland-pfalz/koblenz/ehrenbreitstein/015.jpg", title: { ru: "Крепость Эренбрайтштайн, 2023", ua: "Фортеця Еренбрайтштайн, 2023", de: "Festung Ehrenbreitstein, 2023" } },
         { path: "Germany/rheinland-pfalz/koblenz/ehrenbreitstein/016.jpg", title: { ru: "Крепость Эренбрайтштайн, 2023", ua: "Фортеця Еренбрайтштайн, 2023", de: "Festung Ehrenbreitstein, 2023" } },
         { path: "Germany/rheinland-pfalz/koblenz/ehrenbreitstein/017.jpg", title: { ru: "Крепость Эренбрайтштайн, 2023", ua: "Фортеця Еренбрайтштайн, 2023", de: "Festung Ehrenbreitstein, 2023" } },
+      ],
+      stolzenfels_koblenz: [
+        { path: "Germany/rheinland-pfalz/koblenz/stolzenfels/001.jpg", title: { ru: "Замок Штольценфельс (фото взято с интернета)", ua: "Замок Штольценфельс (фото взято з Інтернету)", de: "Schloss Stolzenfels (Foto aus dem Internet)" } },
       ],
     },
   }

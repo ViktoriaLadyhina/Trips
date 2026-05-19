@@ -25,10 +25,12 @@ const datas = [
                 full_description: {
                     title: "Описание",
                     items: [
-                        { bold: "Долина Среднего Рейна", text: "охватывает участок реки Рейн между городами Кобленц и Бинген и является объектом Всемирного наследия ЮНЕСКО благодаря уникальному сочетанию природы и культурного ландшафта." },
-                        { text: "Регион известен своими крутыми виноградными склонами, старинными крепостями и замками, многие из которых возвышаются прямо над рекой и создают узнаваемый силуэт долины." },
-                        { text: "Маршрут вдоль Рейна объединяет десятки достопримечательностей: от легендарной скалы Лорелей до исторических городков вроде Бахараха, Обервезеля и Санкт-Гоара." },
-                        { text: "Путешествие по долине позволяет увидеть один из самых плотных по количеству замков регионов Европы, где почти каждый поворот реки открывает новый пейзаж." }
+                        { bold: "Долина Среднего Рейна", text: "– исторический участок реки Рейн между Кобленцем и Бингеном, который на протяжении веков был одной из важнейших торговых и транспортных артерий Европы. Благодаря сочетанию природного ландшафта, средневековой архитектуры и культурного значения регион в 2002 году был включён в список Всемирного наследия ЮНЕСКО как культурный ландшафт." },
+                        { text: "Узкая речная долина с крутыми сланцевыми склонами сформировалась миллионы лет назад, а уже в римскую эпоху здесь появились первые укрепления и поселения. В Средние века Рейн стал ключевым торговым путём Священной Римской империи: вдоль берегов строились крепости, замки и сторожевые башни, контролировавшие движение судов и сбор пошлин. Многие из этих укреплений сохранились до наших дней и считаются символами региона." },
+                        { text: "Долина особенно известна своими виноградниками, расположенными на террасах крутых склонов. Виноделие здесь развивается более тысячи лет, а местные рислинги считаются одними из самых известных немецких вин. Небольшие города и деревни вдоль реки – Бахарах, Обервезель, Санкт-Гоар и другие – сохранили средневековую планировку, старинные фахверковые дома и городские стены." },
+                        { text: "Одной из самых известных природных достопримечательностей региона является скала Лорелей. Согласно легенде, русалка Лорелея своим пением заманивала корабли на опасные рифы, из-за чего это место стало частью немецкого фольклора и романтической литературы XIX века." },
+                        { text: "В XIX столетии долина Рейна превратилась в символ романтизма. Художники, поэты и путешественники со всей Европы приезжали сюда ради живописных видов, руин замков и атмосферы средневековой Германии. Именно в этот период многие крепости были восстановлены или перестроены." },
+                        { text: "Сегодня Долина Среднего Рейна остаётся одним из самых известных туристических маршрутов Германии. Путешествие по реке позволяет увидеть десятки замков и крепостей, старинные города, винодельческие деревни и панорамы, которые считаются одними из самых узнаваемых пейзажей страны." },
                     ]
                 },
                 practicalInfo: {
@@ -98,10 +100,12 @@ const datas = [
                 full_description: {
                     title: "Опис",
                     items: [
-                        { bold: "Долина Середнього Рейну", text: "охоплює ділянку річки Рейн між містами Кобленц і Бінген та є об’єктом Світової спадщини ЮНЕСКО завдяки унікальному поєднанню природи й культурного ландшафту." },
-                        { text: "Регіон відомий своїми крутими виноградними схилами, старовинними фортецями та замками, багато з яких височіють просто над річкою та створюють впізнаваний силует долини." },
-                        { text: "Маршрут уздовж Рейну об’єднує десятки пам’яток: від легендарної скелі Лорелей до історичних містечок, таких як Бахарах, Обервезель і Санкт-Гоар." },
-                        { text: "Подорож долиною дозволяє побачити один із найбільш насичених замками регіонів Європи, де майже кожен вигин річки відкриває новий краєвид." }
+                        { bold: "Долина Середнього Рейну", text: "– історична ділянка річки Рейн між Кобленцом і Бінгеном, яка протягом століть була однією з найважливіших торговельних і транспортних артерій Європи. Завдяки поєднанню природного ландшафту, середньовічної архітектури та культурного значення регіон у 2002 році був включений до списку Світової спадщини ЮНЕСКО як культурний ландшафт." },
+                        { text: "Вузька річкова долина з крутими сланцевими схилами сформувалася мільйони років тому, а вже в римську епоху тут з’явилися перші укріплення та поселення. У Середньовіччі Рейн став ключовим торговельним шляхом Священної Римської імперії: уздовж берегів будувалися фортеці, замки та сторожові вежі, які контролювали рух суден і збір мит. Багато з цих укріплень збереглися до наших днів і вважаються символами регіону." },
+                        { text: "Долина особливо відома своїми виноградниками, розташованими на терасах крутих схилів. Виноробство тут розвивається понад тисячу років, а місцеві рислінги вважаються одними з найвідоміших німецьких вин. Невеликі міста та села вздовж річки – Бахарах, Обервезель, Санкт-Гоар та інші – зберегли середньовічне планування, старовинні фахверкові будинки та міські мури." },
+                        { text: "Однією з найвідоміших природних пам’яток регіону є скеля Лорелей. Згідно з легендою, русалка Лорелея своїм співом заманювала кораблі на небезпечні рифи, через що це місце стало частиною німецького фольклору та романтичної літератури XIX століття." },
+                        { text: "У XIX столітті долина Рейну перетворилася на символ романтизму. Художники, поети та мандрівники з усієї Європи приїжджали сюди заради мальовничих краєвидів, руїн замків і атмосфери середньовічної Німеччини. Саме в цей період багато фортець були відновлені або перебудовані." },
+                        { text: "Сьогодні Долина Середнього Рейну залишається одним із найвідоміших туристичних маршрутів Німеччини. Подорож річкою дозволяє побачити десятки замків і фортець, старовинні міста, виноробні села та панорами, які вважаються одними з найвідоміших пейзажів країни." },
                     ]
                 },
                 practicalInfo: {
@@ -171,10 +175,12 @@ const datas = [
                 full_description: {
                     title: "Beschreibung",
                     items: [
-                        { bold: "Das Mittelrheintal", text: "umfasst den Abschnitt des Rheins zwischen den Städten Koblenz und Bingen und gehört aufgrund der einzigartigen Verbindung von Natur- und Kulturlandschaft zum UNESCO-Welterbe." },
-                        { text: "Die Region ist bekannt für ihre steilen Weinberge, historischen Festungen und Burgen, von denen viele direkt über dem Rhein liegen und die charakteristische Silhouette des Tals prägen." },
-                        { text: "Die Route entlang des Rheins verbindet zahlreiche Sehenswürdigkeiten – von dem berühmten Loreleyfelsen bis zu historischen Orten wie Bacharach, Oberwesel und Sankt Goar." },
-                        { text: "Eine Reise durch das Tal ermöglicht es, eine der burgenreichsten Regionen Europas zu entdecken, in der nahezu jede Flussbiegung ein neues Panorama eröffnet." }
+                        { bold: "Das Mittelrheintal", text: "– ist ein historischer Abschnitt des Rheins zwischen Koblenz und Bingen, der über Jahrhunderte hinweg zu den wichtigsten Handels- und Verkehrsadern Europas gehörte. Aufgrund der einzigartigen Verbindung aus Naturlandschaft, mittelalterlicher Architektur und kultureller Bedeutung wurde die Region im Jahr 2002 als Kulturlandschaft in die UNESCO-Welterbeliste aufgenommen." },
+                        { text: "Das enge Flusstal mit seinen steilen Schieferhängen entstand vor Millionen von Jahren, und bereits in der Römerzeit entstanden hier die ersten Befestigungen und Siedlungen. Im Mittelalter wurde der Rhein zu einem zentralen Handelsweg des Heiligen Römischen Reiches: Entlang der Ufer wurden Burgen, Schlösser und Wachtürme errichtet, die den Schiffsverkehr und die Erhebung von Zöllen kontrollierten. Viele dieser Bauwerke sind bis heute erhalten geblieben und gelten als Wahrzeichen der Region." },
+                        { text: "Das Tal ist besonders für seine Weinberge bekannt, die auf Terrassen an den steilen Hängen angelegt wurden. Der Weinbau wird hier seit über tausend Jahren betrieben, und die lokalen Rieslinge zählen zu den bekanntesten deutschen Weinen. Kleine Städte und Dörfer entlang des Rheins – darunter Bacharach, Oberwesel und Sankt Goar – haben ihre mittelalterliche Struktur, historische Fachwerkhäuser und Stadtmauern bewahrt." },
+                        { text: "Zu den bekanntesten Natursehenswürdigkeiten der Region gehört der Loreley-Felsen. Der Legende nach lockte die Nixe Loreley mit ihrem Gesang Schiffe auf gefährliche Riffe, wodurch dieser Ort Teil der deutschen Folklore und der romantischen Literatur des 19. Jahrhunderts wurde." },
+                        { text: "Im 19. Jahrhundert entwickelte sich das Rheintal zu einem Symbol der Romantik. Künstler, Dichter und Reisende aus ganz Europa kamen hierher, um die malerischen Landschaften, Burgruinen und die Atmosphäre des mittelalterlichen Deutschlands zu erleben. In dieser Zeit wurden viele Burgen restauriert oder neu aufgebaut." },
+                        { text: "Heute gehört das Mittelrheintal zu den bekanntesten touristischen Routen Deutschlands. Eine Reise entlang des Rheins ermöglicht es, zahlreiche Burgen und Festungen, historische Städte, Weinbaudörfer und Panoramen zu entdecken, die zu den bekanntesten Landschaftsbildern des Landes zählen." },
                     ]
                 },
                 practicalInfo: {

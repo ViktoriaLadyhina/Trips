@@ -6,15 +6,6 @@ import DeutAttractions from "../../../datas/germany/rheinland_pfalz-attractions.
 
 const RhineValley = [
     {
-        id: "stolzenfels",
-        coord: { lat: 50.3036, lng: 7.5955 },
-        translations: {
-            ru: { name: "Замок Штольценфельс" },
-            ua: { name: "Замок Штольценфельс" },
-            de: { name: "Schloss Stolzenfels" }
-        }
-    },
-    {
         id: "lahneck",
         coord: { lat: 50.3132, lng: 7.6036 },
         translations: {
@@ -129,7 +120,7 @@ const routeOrder = {
     rhineValley: {
         ehrenbreitstein_koblenz: 1,
         lahneck: 2,
-        stolzenfels: 3,
+        stolzenfels_koblenz: 3,
         marksburg: 4,
         katz: 5,
         rheinfels: 6,
@@ -216,7 +207,7 @@ const attrList = Object.keys(routeOrder.rhineValley)
         <MapContainer
             center={fallbackCenter}
             zoom={11}
-            style={{ width: "80%", height: "100%" }}
+            style={{ width: "100%", height: "500px" }}
         >
             <TileLayer url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png" />
 

@@ -35,7 +35,7 @@ const Map = () => {
                   <li><Link to="/germany/nrw/city/dortmund/events/winterleuchten_dortmund">{t.events.winterleuchten_dortmund[lang]}</Link> <span className="smaller-text"> ({t.events.winterleuchten_dortmund_city[lang]})</span></li>
                 </ul>
               </li>
-                                                  <li><span>{lang === 'ru' ? 'Маршруты' : lang === 'de' ? 'Routen' : 'Маршрути'}</span>
+              <li><span>{lang === 'ru' ? 'Маршруты' : lang === 'de' ? 'Routen' : 'Маршрути'}</span>
                 <ul>
                   <li><Link to="/germany/routes/castles_rhine_valley">{t.routes.castles_rhine_valley[lang]}</Link></li>
                 </ul>
@@ -91,6 +91,7 @@ const Map = () => {
                   <li><Link to="/germany/rheinland_pfalz/city/koblenz">{t.cities.koblenz[lang]}</Link>
                     <ul>
                       <li><Link to="/germany/rheinland_pfalz/city/koblenz/attractions/ehrenbreitstein_koblenz">{t.attractions.ehrenbreitstein_koblenz[lang]}</Link></li>
+                      <li><Link to="/germany/rheinland_pfalz/city/koblenz/attractions/stolzenfels_koblenz">{t.attractions.stolzenfels_koblenz[lang]}</Link></li>
                     </ul>
                   </li>
                 </ul>
