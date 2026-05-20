@@ -104,7 +104,6 @@ const Map = () => {
                   {/* Arnsberg */}
                   <li><Link to="/germany/nrw/arnsberg">{t.districts.arnsberg[lang]}</Link>
                     <ul>
-
                       {/* Dortmund город */}
                       <li><Link to="/germany/nrw/city/dortmund">{t.cities.dortmund[lang]}</Link>
                         <ul>
@@ -112,11 +111,15 @@ const Map = () => {
                         </ul>
                       </li>
                     </ul>
-
                     <ul>
+                      {/* Край Hochsauerland */}
+                      <li><span>{t.districts.hochsauerland[lang]}</span>
+                        <ul>
+                          <li><Link to="/germany/nrw/arnsberg/sundern">{t.cities.sundern[lang]}</Link></li>
+                        </ul>
+                      </li>
+                      {/* Край Merkischer */}
                       <li><span>{t.districts.merkischer[lang]}</span>
-
-                        {/* Lüdenscheid */}
                         <ul>
                           <li><Link to="/germany/nrw/arnsberg/iserlohn">{t.cities.iserlohn[lang]}</Link>
                             <ul>
@@ -149,7 +152,6 @@ const Map = () => {
                               <li><Link to="/germany/nrw/arnsberg/luedenscheid/attractions/stilleking_luedenscheid">{t.attractions.stilleking_luedenscheid[lang]}</Link></li>
                             </ul>
                           </li>
-                          {/* Altena */}
                           <li><Link to="/germany/nrw/arnsberg/altena">{t.cities.altena[lang]}</Link>
                             <ul>
                               <li><Link to="/germany/nrw/arnsberg/altena/attractions/burg_altena">{t.attractions.burg_altena[lang]}</Link></li>
@@ -165,13 +167,12 @@ const Map = () => {
                     </ul>
                   </li>
 
-                  {/* Düsseldorf */}
+                  {/* Округ Düsseldorf */}
                   <li><Link to="/germany/nrw/dusseldorf">{t.districts.dusseldorf[lang]}</Link>
                     <ul>
-                      {/* Mettmann */}
+                      {/* Край Mettmann */}
                       <li><span>{t.districts.mettmann[lang]}</span>
                         <ul>
-                          {/* Velbert город */}
                           <li><Link to="/germany/nrw/dusseldorf/velbert">{t.cities.velbert[lang]}</Link>
                             <ul>
                               <li><Link to="/germany/nrw/dusseldorf/velbert/attractions/langenberg_altstadt_velbert">{t.attractions.langenberg_altstadt_velbert[lang]}</Link>
@@ -188,7 +189,7 @@ const Map = () => {
                     </ul>
                   </li>
 
-                  {/* Köln */}
+                  {/* Округ Köln */}
                   <li><Link to="/germany/nrw/koln">{t.districts.koln[lang]}</Link>
                     <ul>
 
@@ -270,7 +271,7 @@ const Map = () => {
                         </ul>
                       </li>
 
-                      {/* aachen */}
+                      {/* Край aachen */}
                       <li><span>{t.districts.aachen[lang]}</span>
                         <ul>
                           <li><Link to="/germany/nrw/koln/monschau">{t.cities.monschau[lang]}</Link>
@@ -289,7 +290,7 @@ const Map = () => {
                         </ul>
                       </li>
 
-                      {/* Rhein-Sieg */}
+                      {/* Край Rhein-Sieg */}
                       <li><span>{t.districts.rhein_sieg[lang]}</span>
                         <ul>
                           <li><Link to="/germany/nrw/koln/konigswinter"> {t.cities.konigswinter[lang]}</Link>
@@ -319,7 +320,7 @@ const Map = () => {
                         </ul>
                       </li>
 
-                      {/* Rhein-Erft */}
+                      {/* Край Rhein-Erft */}
                       <li><span>{t.districts.rheinErft[lang]}</span>
                         <ul>
                           <li><Link to="/germany/nrw/koln/bruhl">{t.cities.bruhl[lang]}</Link>

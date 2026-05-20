@@ -21,6 +21,7 @@ const datas =
   districts: {
     arnsberg: { ru: 'Административный округ Арнсберг', de: 'Regierungsbezirk Arnsberg', ua: 'Адміністративний округ Арнсберг' },
     merkischer: { ru: 'Район Меркиш', de: 'Märkischer Kreis', ua: 'Район Меркіш' },
+    hochsauerland: { ru: 'Район Хохзауэрланд', de: 'Hochsauerlandkreis', ua: 'Район Хохзауэрланд' },
 
     dusseldorf: { ru: 'Административный округ Дюссельдорф', de: 'Regierungsbezirk Düsseldorf', ua: 'Адміністративний округ Дюссельдорф' },
     mettmann: { ru: 'Район Меттман', de: 'Kreis Mettmann', ua: 'Район Меттман' },
@@ -41,12 +42,13 @@ const datas =
     frechen: { ru: 'Город Фрехен', de: 'Stadt Frechen', ua: 'Місто Фрехен' },
     konigswinter: { ru: 'Город Кёнигсвинтер', de: 'Stadt Königswinter', ua: 'Місто Кенігсвінтер' },
     lohmar: { ru: 'Город Ломар', de: 'Stadt Lohmar', ua: 'Місто Ломар' },
+    velbert: { ru: 'Город Фельберт', de: 'Stadt Velbert', ua: 'Місто Фельберт' },
+
     dortmund: { ru: 'Город Дортмунд', de: 'Stadt Dortmund', ua: 'Місто Дортмунд' },
     luedenscheid: { ru: 'Город Люденшайд', de: 'Stadt Lüdenscheid', ua: 'Місто Люденшайд' },
     altena: { ru: 'Город Альтена', de: 'Stadt Altena', ua: 'Місто Альтена' },
     iserlohn: { ru: 'Город Изерлон', de: 'Stadt Iserlohn', ua: 'Місто Ізерлон' },
-
-    velbert: { ru: 'Город Фельберт', de: 'Stadt Velbert', ua: 'Місто Фельберт' },
+    sundern: { ru: 'Город Зундерн', de: 'Stadt Sundern', ua: 'Місто Зундерн' },
 
     koblenz: { ru: 'Город Кобленц', de: 'Stadt Koblenz', ua: 'Місто Кобленц' },
     trier: { ru: 'Город Трир', de: 'Stadt Trier', ua: 'Місто Трір' },

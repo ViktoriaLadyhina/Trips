@@ -725,7 +725,13 @@ export const Fotos = {
       st_matthaeus_church_altena: [
         { path: "Germany/nrw/arnsberg/Märkischer-Kreis/altena/st_matthaeus_church/001.jpg", title: { ru: "Приходская церковь Святого Матфея, 2025", ua: "Парафіяльна церква Святого Матвія, 2025", de: "Katholische Pfarrkirche St. Matthäus, 2025" } },
       ],
-    }
+    },
+    sundern: {
+      gallery: [
+        { path: "Germany/nrw/arnsberg/Hochsauerlandkreis/sundern/001.jpg", title: { ru: "Зундерн, 2026", ua: "Зундерн, 2026", de: "Sundern, 2026" } },
+        { path: "Germany/nrw/arnsberg/Hochsauerlandkreis/sundern/002.jpg", title: { ru: "Зундерн, 2026", ua: "Зундерн, 2026", de: "Sundern, 2026" } },
+      ],
+    },
 
   },
 

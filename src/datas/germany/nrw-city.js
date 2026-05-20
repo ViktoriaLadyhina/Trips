@@ -574,6 +574,281 @@ const datas = [
     },
 
     // округ arnsberg 
+    // Хохзауэрланд
+    {
+        id: "sundern",
+        path: "sundern",
+        countryPath: "germany", regionPath: "nrw", districtPath: "arnsberg", subRegionPath: "hochsauerland",
+        gerb: "Germany/nrw/arnsberg/Hochsauerlandkreis/sundern/gerb.png",
+        coord: { lat: 51.3289, lng: 8.0011 },
+        translations: {
+            ru: {
+                name: 'Зундерн',
+                subRegionName: "Хохзауэрланд",
+                desc: {
+                    general: [
+                        { text: 'Зундерн (нем. Sundern) – город в регионе Зауэрланд в земле Северный Рейн-Вестфалия. Административно относится к округу Хохзауэрланд в составе региона Арнсберг. ' },
+                        { text: 'Город расположен среди лесистых холмов, долин и водохранилищ центрального Зауэрланда и известен как один из природно-туристических центров региона.' }
+                    ],
+                    population: [{ bold: 'Население', text: ' города составляет около 27 тысяч человек (по состоянию на 2024 год).' }],
+                    area: [{ bold: 'Площадь:', text: 'территория муниципалитета составляет около 193 км², значительная часть покрыта лесами, сельскохозяйственными угодьями и природными территориями.' }],
+                    postalCode: [{ bold: 'Почтовые индексы:', text: ' 59846' }],
+                    phone: [{ bold: 'Телефонный код:', text: ' +49 02933' }],
+                    officialSite: [{ bold: 'Официальный сайт Зундерна', link: 'https://www.sundern.de/' }],
+                    culture: [
+                        { bold: 'Туризм и отдых', text: ' – регион известен природным туризмом, велосипедными маршрутами, пешими тропами и отдыхом у водохранилища Зорпезее (Sorpesee).' },
+                        { bold: '<br>Спортивный регион', text: ' – холмистый рельеф, лесные маршруты и дороги вокруг Зундерна делают регион популярным среди велосипедистов, бегунов и любителей активного отдыха.' },
+                        { bold: '<br>Традиции Зауэрланда', text: ' – в районах города сохраняются местные фестивали, стрелковые праздники (Schützenfeste), духовые оркестры и культурные объединения, характерные для региона Sauerland.' },
+                    ]
+                },
+                geography: {
+                    title: 'География и рельеф',
+                    items: [
+                        { text: 'Зундерн расположен в южной части земли Северный Рейн-Вестфалия среди холмистого рельефа Зауэрланда. Высоты в окрестностях варьируются примерно от 250 до более чем 600 метров над уровнем моря.' },
+                        { text: 'Территория города характеризуется большими лесными массивами, долинами рек и искусственными водоёмами. Одним из важнейших природных объектов региона является водохранилище Зорпезее.' },
+                        { bold: 'Климат и природа.', text: ' Регион отличается более прохладным и влажным климатом по сравнению с низменными районами Рейнской области. Благодаря лесам и холмам территория популярна среди любителей активного отдыха.' }
+                    ]
+                },
+                admin: {
+                    title: 'Город Зундерн состоит из 16 районов (Stadtteile), многие из которых исторически были самостоятельными поселениями. Ниже перечислены некоторые из них:',
+                    isList: true,
+                    items: [
+                        { bold: 'Sundern', text: ' – центральная часть города с административными учреждениями, торговыми зонами и городской инфраструктурой.' },
+                        { bold: 'Allendorf', text: ' – район с исторической сельской застройкой и природным окружением.' },
+                        { bold: 'Amecke', text: ' – туристический район возле озера Зорпезее, популярный среди отдыхающих и любителей водного спорта.' },
+                        { bold: 'Endorf', text: ' – район в холмистой части Зауэрланда, известный природными маршрутами и традиционной застройкой.' },
+                        { bold: 'Hachen', text: ' – один из крупнейших районов города с жилыми кварталами и спортивной инфраструктурой.' },
+                        { bold: 'Langscheid', text: ' – крупнейший туристический район на берегу Зорпезее с гостиницами, прогулочными зонами и мариной.' },
+                        { bold: 'Stemel', text: ' – жилой и сельский район с традиционным ландшафтом Зауэрланда.' },
+                        { bold: 'Stockum', text: ' – район с историческими сельскими традициями и природным окружением.' },
+                        { bold: 'Westenfeld', text: ' – район с традиционной фахверковой застройкой и сельским характером.' }
+                    ]
+                },
+                notablePeople: {
+                    title: 'Известные люди Зундерна',
+                    isList: true,
+                    items: [
+                        { bold: 'Вильгельм Мюнкер (Wilhelm Münker, 1893-1976)', text: ' – немецкий педагог, туристический деятель и один из инициаторов развития молодёжных хостелов и пешеходного туризма в Германии. Был тесно связан с регионом Зауэрланд.' },
+                        { bold: 'Франц Шток (Franz Stock, 1904-1948)', text: ' – немецкий католический священник и гуманист, известный своей деятельностью во Франции во время Второй мировой войны. Родился в районе Нехайм неподалёку от Зундерна и связан с регионом Арнсберг.' },
+                        { bold: 'Йоахим Ламшайд (Joachim Lambsdorf)', text: ' – региональный политический деятель и общественный представитель Зауэрланда, участвовавший в развитии инфраструктуры и туризма региона.' },
+                    ]
+                },
+                interestingFacts: {
+                    title: 'Интересные факты',
+                    isList: true,
+                    items: [
+                        { bold: 'Sorpesee', text: ' – водохранилище было создано в первой половине XX века и сегодня является одним из самых известных озёр Зауэрланда.' },
+                        { bold: 'Подводный дайвинг', text: ' – Зорпезее популярен среди дайверов благодаря сравнительно чистой воде и большой глубине.' },
+                        { bold: 'Зимний отдых', text: ' – зимой в окрестностях региона доступны лыжные трассы, зимние прогулки и лесные маршруты.' },
+                        { bold: 'Леса Зауэрланда', text: ' – большая часть территории города покрыта лесами, благодаря чему регион иногда называют «зелёным сердцем» Северного Рейна-Вестфалии.' },
+                        { bold: 'Велосипедный туризм', text: ' – через окрестности проходят многочисленные веломаршруты и туристические тропы.' },
+                        { bold: 'Традиционная архитектура', text: ' – в некоторых районах сохранились дома в характерном фахверковом стиле Зауэрланда.' }
+                    ]
+                },
+                briefHistory: {
+                    title: 'История',
+                    items: [
+                        { text: 'Территория современного Зундерна была заселена ещё в раннем Средневековье. Первые небольшие поселения возникали в долинах рек и ручьёв среди густых лесов Зауэрланда.' },
+                        { text: 'Название Sundern происходит от старогерманского слова, связанного с «южными землями» или «отделёнными территориями». В средневековых документах населённые пункты региона упоминаются уже в XII-XIII веках.' },
+                        { text: 'На протяжении столетий местное население занималось сельским хозяйством, лесным промыслом, углежжением и обработкой металла. Леса региона были важным источником древесины и древесного угля для кузниц и металлургии.' },
+                        { text: 'На протяжении многих веков территория находилась под властью архиепископов Кёльна и входила в состав курфюршества Кёльн (Kurköln). В разные периоды территория страдала от феодальных конфликтов, эпидемий и последствий войн.' },
+                        { text: 'Во время Тридцатилетней войны (1618-1648) многие поселения региона пережили экономический упадок, нехватку продовольствия и разрушения. После войны население восстанавливалось медленно.' },
+                        { text: 'В XVIII-XIX веках в регионе начали активнее развиваться ремёсла и небольшие промышленные предприятия. Важную роль играли лесопилки, металлургические мастерские и переработка древесины.' },
+                        { text: 'После перехода территории под контроль Пруссии в XIX веке начались административные реформы, улучшение дорожной сети и развитие инфраструктуры. Постепенно регион интегрировался в экономическую систему индустриализирующейся Германии.' },
+                        { text: 'Во второй половине XIX века и начале XX века многие жители Зауэрланда работали в металлургической промышленности, машиностроении и деревообработке. При этом значительная часть территории оставалась сельской и лесной.' },
+                        { text: 'Во время Второй мировой войны регион не был полностью разрушен, как крупные индустриальные центры Рура, однако война серьёзно повлияла на экономику и население. После 1945 года в регион прибыло множество переселенцев и беженцев из восточных территорий бывшей Германии.' },
+                        { text: 'Особенно важным этапом для развития Зундерна стало создание водохранилища Зорпезее (Sorpesee) в XX веке. Озеро стало не только частью системы водоснабжения и регулирования рек, но и крупным туристическим центром региона.' },
+                        { text: 'В 1975 году в ходе административной реформы Северного Рейна-Вестфалии несколько самостоятельных населённых пунктов были объединены в современный город Зундерн. В состав муниципалитета вошли деревни и районы, исторически связанные с регионом Зауэрланд.' },
+                        { text: 'Сегодня Зундерн известен как город природного туризма, отдыха и активного спорта. Регион сочетает промышленное наследие Зауэрланда с лесными ландшафтами, водохранилищами и традиционной архитектурой небольших городов.' }
+                    ]
+                },
+                meta: {
+                    title: "Зундерн – природный город Зауэрланда у озера Зорпезее",
+                    description: "Зундерн в Хохзауэрланде: история, озеро Зорпезее, природа, районы, туризм и интересные факты о городе Зауэрланда.",
+                    ogTitle: "Зундерн – информация о городе",
+                    ogDescription: "Подробная информация о городе Зундерн в земле Северный Рейн-Вестфалия: география, история, озеро Зорпезее и туризм.",
+                    ogImage: "https://our-travels.info/foto/Germany/nrw/arnsberg/Hochsauerlandkreis/sundern/sorpesee/001.jpg"
+                }
+            },
+            ua: {
+                name: 'Зундерн',
+                subRegionName: "Гохзауерланд",
+                desc: {
+                    general: [
+                        { text: 'Зундерн (нім. Sundern) – місто в регіоні Зауерланд у землі Північний Рейн-Вестфалія. Адміністративно належить до округу Гохзауерланд у складі регіону Арнсберг.' },
+                        { text: 'Місто розташоване серед лісистих пагорбів, долин і водосховищ центрального Зауерланду та відоме як один із природно-туристичних центрів регіону.' }
+                    ],
+                    population: [ { bold: 'Населення', text: ' міста становить близько 27 тисяч осіб (станом на 2024 рік).' } ],
+                    area: [ { bold: 'Площа:', text: 'територія муніципалітету становить близько 193 км², значна частина якої вкрита лісами, сільськогосподарськими угіддями та природними територіями.' } ],
+                    postalCode: [ { bold: 'Поштові індекси:', text: ' 59846' }],
+                    phone: [ { bold: 'Телефонний код:', text: ' +49 02933' } ],
+                    officialSite: [ { bold: 'Офіційний сайт Зундерна', link: 'https://www.sundern.de/' } ],
+                    culture: [
+                        { bold: 'Туризм і відпочинок', text: ' – регіон відомий природним туризмом, велосипедними маршрутами, пішими стежками та відпочинком біля водосховища Зорпезее (Sorpesee).' },
+                        { bold: '<br>Спортивний регіон', text: ' – горбистий рельєф, лісові маршрути та дороги навколо Зундерна роблять регіон популярним серед велосипедистів, бігунів і любителів активного відпочинку.' },
+                        { bold: '<br>Традиції Зауерланду', text: ' – у районах міста зберігаються місцеві фестивалі, стрілецькі свята (Schützenfeste), духові оркестри та культурні об’єднання, характерні для регіону Зауерланд.' }
+                    ]
+                },
+                geography: {
+                    title: 'Географія і рельєф',
+                    items: [
+                        { text: 'Зундерн розташований у південній частині землі Північний Рейн-Вестфалія серед горбистого рельєфу Зауерланду. Висоти в околицях варіюються приблизно від 250 до понад 600 метрів над рівнем моря.' },
+                        { text: 'Територія міста характеризується великими лісовими масивами, долинами річок та штучними водоймами. Одним із найважливіших природних об’єктів регіону є водосховище Зорпезее.' },
+                        { bold: 'Клімат і природа.', text: ' Регіон відрізняється більш прохолодним і вологим кліматом у порівнянні з низовинними районами Рейнської області. Завдяки лісам і пагорбам територія популярна серед любителів активного відпочинку.' }
+                    ]
+                },
+                admin: {
+                    title: 'Місто Зундерн складається з 16 районів (Stadtteile), багато з яких історично були самостійними поселеннями. Нижче наведено деякі з них:',
+                    isList: true,
+                    items: [
+                        { bold: 'Sundern', text: ' – центральна частина міста з адміністративними установами, торговими зонами та міською інфраструктурою.' },
+                        { bold: 'Allendorf', text: ' – район із історичною сільською забудовою та природним оточенням.' },
+                        { bold: 'Amecke', text: ' – туристичний район біля озера Зорпезее, популярний серед відпочивальників і любителів водних видів спорту.' },
+                        { bold: 'Endorf', text: ' – район у горбистій частині Зауерланду, відомий природними маршрутами та традиційною забудовою.' },
+                        { bold: 'Hachen', text: ' – один із найбільших районів міста з житловими кварталами та спортивною інфраструктурою.' },
+                        { bold: 'Langscheid', text: ' – найбільший туристичний район на березі Зорпезее з готелями, прогулянковими зонами та маринами.' },
+                        { bold: 'Stemel', text: ' – житловий і сільський район із традиційним ландшафтом Зауерланду.' },
+                        { bold: 'Stockum', text: ' – район із історичними сільськими традиціями та природним оточенням.' },
+                        { bold: 'Westenfeld', text: ' – район із традиційною фахверковою забудовою та сільським характером.' }
+                    ]
+                },
+                notablePeople: {
+                    title: 'Відомі люди Зундерна',
+                    isList: true,
+                    items: [
+                        { bold: 'Вільгельм Мюнкер (Wilhelm Münker, 1893–1976)', text: ' – німецький педагог, діяч туризму та один із ініціаторів розвитку молодіжних хостелів і пішохідного туризму в Німеччині. Був тісно пов’язаний із регіоном Зауерланд.' },
+                        { bold: 'Франц Шток (Franz Stock, 1904–1948)', text: ' – німецький католицький священник і гуманіст, відомий своєю діяльністю у Франції під час Другої світової війни. Народився в районі Нехайм неподалік від Зундерна та пов’язаний із регіоном Арнсберг.' },
+                        { bold: 'Йоахім Ламшайд (Joachim Lambsdorf)', text: ' – регіональний політичний діяч і громадський представник Зауерланду, який брав участь у розвитку інфраструктури та туризму регіону.' }
+                    ]
+                },
+                interestingFacts: {
+                    title: 'Цікаві факти',
+                    isList: true,
+                    items: [
+                        { bold: 'Sorpesee', text: ' – водосховище було створене у першій половині XX століття та сьогодні є одним із найвідоміших озер Зауерланду.' },
+                        { bold: 'Підводний дайвінг', text: ' – Зорпезее популярне серед дайверів завдяки відносно чистій воді та значній глибині.' },
+                        { bold: 'Зимовий відпочинок', text: ' – узимку в околицях доступні лижні маршрути, зимові прогулянки та лісові стежки.' },
+                        { bold: 'Ліси Зауерланду', text: ' – значна частина території міста вкрита лісами, через що регіон іноді називають «зеленим серцем» Північного Рейну-Вестфалії.' },
+                        { bold: 'Велосипедний туризм', text: ' – через околиці проходять численні велосипедні маршрути та туристичні стежки.' },
+                        { bold: 'Традиційна архітектура', text: ' – у деяких районах збереглися будинки у характерному фахверковому стилі Зауерланду.' }
+                    ]
+                },
+                briefHistory: {
+                    title: 'Історія',
+                    items: [
+                        { text: 'Територія сучасного Зундерна була заселена ще в ранньому Середньовіччі. Перші невеликі поселення виникали в долинах річок і струмків серед густих лісів Зауерланду.' },
+                        { text: 'Назва Sundern походить від старогерманського слова, пов’язаного з «південними землями» або «відокремленими територіями». У середньовічних документах населені пункти регіону згадуються вже у XII–XIII століттях.' },
+                        { text: 'Протягом століть місцеве населення займалося сільським господарством, лісовим промислом, виробництвом деревного вугілля та обробкою металу. Ліси регіону були важливим джерелом деревини та деревного вугілля для кузень і металургії.' },
+                        { text: 'Протягом багатьох століть територія перебувала під владою архієпископів Кельна та входила до складу курфюрства Кельн (Kurköln). У різні періоди регіон страждав від феодальних конфліктів, епідемій та наслідків воєн.' },
+                        { text: 'Під час Тридцятирічної війни (1618–1648) багато поселень регіону пережили економічний занепад, нестачу продовольства та руйнування. Після війни населення відновлювалося повільно.' },
+                        { text: 'У XVIII–XIX століттях у регіоні почали активніше розвиватися ремесла та невеликі промислові підприємства. Важливу роль відігравали лісопилки, металургійні майстерні та переробка деревини.' },
+                        { text: 'Після переходу території під контроль Пруссії у XIX столітті почалися адміністративні реформи, покращення дорожньої мережі та розвиток інфраструктури. Регіон поступово інтегрувався в економічну систему індустріалізованої Німеччини.' },
+                        { text: 'У другій половині XIX – на початку XX століття багато мешканців Зауерланду працювали в металургійній промисловості, машинобудуванні та деревообробці. При цьому значна частина території залишалася сільською та лісовою.' },
+                        { text: 'Під час Другої світової війни регіон не був повністю зруйнований, як великі промислові центри Руру, однак війна серйозно вплинула на економіку та населення. Після 1945 року до регіону прибуло багато переселенців і біженців із східних територій колишньої Німеччини.' },
+                        { text: 'Особливо важливим етапом для розвитку Зундерна стало створення водосховища Зорпезее (Sorpesee) у XX столітті. Озеро стало не лише частиною системи водопостачання та регулювання річок, але й великим туристичним центром регіону.' },
+                        { text: 'У 1975 році в ході адміністративної реформи Північного Рейну-Вестфалії кілька самостійних населених пунктів були об’єднані в сучасне місто Зундерн. До складу муніципалітету увійшли села та райони, історично пов’язані з регіоном Зауерланд.' },
+                        { text: 'Сьогодні Зундерн відомий як місто природного туризму, відпочинку та активного спорту. Регіон поєднує промислову спадщину Зауерланду з лісовими ландшафтами, водосховищами та традиційною архітектурою невеликих міст.' }
+                    ]
+                },
+                meta: {
+                    title: "Зундерн – природне місто Зауерланду біля озера Зорпезее",
+                    description: "Зундерн у Хохзауерланді: історія, озеро Зорпезее, природа, райони, туризм і цікаві факти про місто Зауерланду.",
+                    ogTitle: "Зундерн – інформація про місто",
+                    ogDescription: "Детальна інформація про місто Зундерн у землі Північний Рейн-Вестфалія: географія, історія, озеро Зорпезее та туризм.",
+                    ogImage: "https://our-travels.info/foto/Germany/nrw/arnsberg/Hochsauerlandkreis/sundern/sorpesee/001.jpg"
+                }
+            },
+            de: {
+                name: 'Sundern',
+                subRegionName: "Hochsauerland",
+                desc: {
+                    general: [
+                        { text: 'Sundern ist eine Stadt in der Region Sauerland im Bundesland Nordrhein-Westfalen. Sie gehört zum Hochsauerlandkreis innerhalb des Regierungsbezirks Arnsberg.' },
+                        { text: 'Die Stadt liegt zwischen bewaldeten Hügeln, Tälern und Talsperren des zentralen Sauerlands und ist als eines der naturtouristischen Zentren der Region bekannt.' }
+                    ],
+                    population: [ { bold: 'Einwohner', text: ' der Stadt beträgt etwa 27.000 (Stand 2024).' } ],
+                    area: [ { bold: 'Fläche:', text: 'Das Gemeindegebiet umfasst etwa 193 km², ein großer Teil davon ist von Wäldern, landwirtschaftlichen Flächen und Naturräumen bedeckt.' } ],
+                    postalCode: [ { bold: 'Postleitzahl:', text: ' 59846' } ],
+                    phone: [ { bold: 'Telefonvorwahl:', text: ' +49 02933' } ],
+                    officialSite: [ { bold: 'Offizielle Website von Sundern', link: 'https://www.sundern.de/' } ],
+                    culture: [
+                        { bold: 'Tourismus und Erholung', text: ' – die Region ist bekannt für Naturtourismus, Radwege, Wanderwege und Erholung an der Sorpesee-Talsperre.' },
+                        { bold: '<br>Sportregion', text: ' – das hügelige Relief, Waldwege und Straßen rund um Sundern machen die Region beliebt bei Radfahrern, Läufern und Liebhabern aktiver Erholung.' },
+                        { bold: '<br>Traditionen im Sauerland', text: ' – in den Ortsteilen werden lokale Feste, Schützenfeste, Blasmusikvereine und kulturelle Vereinigungen gepflegt, die typisch für das Sauerland sind.' }
+                    ]
+                },
+                geography: {
+                    title: 'Geografie und Relief',
+                    items: [
+                        { text: 'Sundern liegt im südlichen Teil des Bundeslandes Nordrhein-Westfalen im hügeligen Sauerland. Die Höhenlagen in der Umgebung reichen ungefähr von 250 bis über 600 Metern über dem Meeresspiegel.' },
+                        { text: 'Das Stadtgebiet ist durch große Waldflächen, Flusstäler und künstliche Gewässer geprägt. Eines der wichtigsten Naturmerkmale der Region ist die Sorpesee-Talsperre.' },
+                        { bold: 'Klima und Natur.', text: ' Die Region weist ein kühleres und feuchteres Klima im Vergleich zu den tiefer gelegenen Gebieten des Rheinlands auf. Aufgrund der Wälder und Hügel ist das Gebiet bei Natur- und Aktivurlaubern sehr beliebt.' }
+                    ]
+                },
+                admin: {
+                    title: 'Die Stadt Sundern besteht aus 16 Ortsteilen, von denen viele historisch eigenständige Siedlungen waren. Im Folgenden sind einige davon aufgeführt:',
+                    isList: true,
+                    items: [
+                        { bold: 'Sundern', text: ' – das zentrale Gebiet der Stadt mit Verwaltungsgebäuden, Einkaufszonen und städtischer Infrastruktur.' },
+                        { bold: 'Allendorf', text: ' – ein Ortsteil mit historischer ländlicher Bebauung und natürlicher Umgebung.' },
+                        { bold: 'Amecke', text: ' – ein touristischer Ortsteil an der Sorpesee-Talsperre, beliebt bei Erholungssuchenden und Wassersportlern.' },
+                        { bold: 'Endorf', text: ' – ein Ortsteil im hügeligen Sauerland mit natürlichen Wanderwegen und traditioneller Bebauung.' },
+                        { bold: 'Hachen', text: ' – einer der größten Ortsteile mit Wohngebieten und sportlicher Infrastruktur.' },
+                        { bold: 'Langscheid', text: ' – der größte touristische Ortsteil am Ufer des Sorpesees mit Hotels, Promenaden und Yachthafen.' },
+                        { bold: 'Stemel', text: ' – ein Wohn- und ländlicher Ortsteil mit typischer Sauerländer Landschaft.' },
+                        { bold: 'Stockum', text: ' – ein Ortsteil mit historischen ländlichen Traditionen und natürlicher Umgebung.' },
+                        { bold: 'Westenfeld', text: ' – ein Ortsteil mit traditioneller Fachwerkbebauung und ländlichem Charakter.' }
+                    ]
+                },
+                notablePeople: {
+                    title: 'Bekannte Persönlichkeiten aus Sundern',
+                    isList: true,
+                    items: [
+                        { bold: 'Wilhelm Münker (1893–1976)', text: ' – deutscher Pädagoge und Tourismusfunktionär, einer der Initiatoren der Jugendherbergsbewegung und der Wanderbewegung in Deutschland. Eng mit der Region Sauerland verbunden.' },
+                        { bold: 'Franz Stock (1904–1948)', text: ' – deutscher katholischer Priester und Humanist, bekannt für seine Tätigkeit in Frankreich während des Zweiten Weltkriegs. Geboren im nahegelegenen Neheim und mit der Region Arnsberg verbunden.' },
+                        { bold: 'Joachim Lambsdorf', text: ' – regionaler Politiker und gesellschaftlicher Vertreter des Sauerlands, beteiligt an der Entwicklung von Infrastruktur und Tourismus in der Region.' }
+                    ]
+                },
+                interestingFacts: {
+                    title: 'Interessante Fakten',
+                    isList: true,
+                    items: [
+                        { bold: 'Sorpesee', text: ' – die Talsperre wurde in der ersten Hälfte des 20. Jahrhunderts angelegt und ist heute einer der bekanntesten Seen im Sauerland.' },
+                        { bold: 'Tauchsport', text: ' – der Sorpesee ist bei Tauchern aufgrund seines relativ klaren Wassers und seiner Tiefe sehr beliebt.' },
+                        { bold: 'Wintererholung', text: ' – im Winter stehen in der Umgebung Langlaufloipen, Winterwanderwege und Waldwege zur Verfügung.' },
+                        { bold: 'Wälder des Sauerlands', text: ' – ein großer Teil des Stadtgebiets ist bewaldet, weshalb die Region oft als „grünes Herz“ von Nordrhein-Westfalen bezeichnet wird.' },
+                        { bold: 'Radtourismus', text: ' – durch die Umgebung verlaufen zahlreiche Rad- und Wanderwege.' },
+                        { bold: 'Traditionelle Architektur', text: ' – in einigen Ortsteilen sind Fachwerkhäuser im typischen Stil des Sauerlands erhalten geblieben.' }
+                    ]
+                },
+                briefHistory: {
+                    title: 'Geschichte',
+                    items: [
+                        { text: 'Das Gebiet des heutigen Sundern war bereits im frühen Mittelalter besiedelt. Erste kleine Siedlungen entstanden in den Tälern von Flüssen und Bächen inmitten der dichten Wälder des Sauerlands.' },
+                        { text: 'Der Name Sundern stammt aus einem althochdeutschen Wort, das mit „südliche Gebiete“ oder „abgesonderte Landstriche“ in Verbindung steht. In mittelalterlichen Dokumenten werden Siedlungen der Region bereits im 12.–13. Jahrhundert erwähnt.' },
+                        { text: 'Über viele Jahrhunderte war die Bevölkerung in Landwirtschaft, Forstwirtschaft, Köhlerei und Metallverarbeitung tätig. Die Wälder der Region waren eine wichtige Quelle für Holz und Holzkohle für Schmieden und Metallbetriebe.' },
+                        { text: 'Die Region gehörte über viele Jahrhunderte zum Erzbistum Köln und war Teil des Kurkölnischen Territoriums (Kurköln). In verschiedenen Epochen war das Gebiet von feudalen Konflikten, Epidemien und Kriegsfolgen betroffen.' },
+                        { text: 'Während des Dreißigjährigen Krieges (1618–1648) litten viele Siedlungen unter wirtschaftlichem Niedergang, Lebensmittelknappheit und Zerstörungen. Nach dem Krieg erholte sich die Bevölkerung nur langsam.' },
+                        { text: 'Im 18. und 19. Jahrhundert entwickelten sich Handwerk und kleinere Industriebetriebe stärker. Eine wichtige Rolle spielten Sägewerke, metallverarbeitende Werkstätten und die Holzverarbeitung.' },
+                        { text: 'Nach dem Übergang des Gebiets an Preußen im 19. Jahrhundert wurden Verwaltungsreformen durchgeführt, das Straßennetz verbessert und die Infrastruktur ausgebaut. Die Region wurde schrittweise in die Industriewirtschaft Deutschlands integriert.' },
+                        { text: 'In der zweiten Hälfte des 19. und zu Beginn des 20. Jahrhunderts arbeiteten viele Einwohner des Sauerlands in der Metallindustrie, im Maschinenbau und in der Holzverarbeitung. Ein großer Teil der Fläche blieb jedoch ländlich und bewaldet.' },
+                        { text: 'Während des Zweiten Weltkriegs wurde die Region nicht vollständig zerstört wie große Industriezentren des Ruhrgebiets, dennoch hatte der Krieg erhebliche Auswirkungen auf Wirtschaft und Bevölkerung. Nach 1945 kamen viele Vertriebene und Flüchtlinge aus den ehemaligen deutschen Ostgebieten in die Region.' },
+                        { text: 'Ein besonders wichtiger Entwicklungsschritt für Sundern war der Bau der Sorpesee-Talsperre im 20. Jahrhundert. Der See wurde nicht nur Teil der Wasserwirtschaft und Flussregulierung, sondern auch ein wichtiges touristisches Zentrum der Region.' },
+                        { text: '1975 wurden im Zuge der kommunalen Gebietsreform in Nordrhein-Westfalen mehrere selbstständige Gemeinden zur heutigen Stadt Sundern zusammengelegt. In die Gemeinde wurden Dörfer und Ortsteile eingegliedert, die historisch mit dem Sauerland verbunden sind.' },
+                        { text: 'Heute ist Sundern als Stadt des Naturtourismus, der Erholung und des aktiven Sports bekannt. Die Region verbindet das industrielle Erbe des Sauerlands mit Waldlandschaften, Talsperren und traditioneller Architektur kleiner Städte.' }
+                    ]
+                },
+                meta: {
+                    title: "Sundern – Naturstadt im Sauerland am Sorpesee",
+                    description: "Sundern im Hochsauerland: Geschichte, Sorpesee, Natur, Ortsteile, Tourismus und interessante Fakten über die Stadt im Sauerland.",
+                    ogTitle: "Sundern – Stadtinformationen",
+                    ogDescription: "Detaillierte Informationen über die Stadt Sundern in Nordrhein-Westfalen: Geografie, Geschichte, Sorpesee und Tourismus.",
+                    ogImage: "https://our-travels.info/foto/Germany/nrw/arnsberg/Hochsauerlandkreis/sundern/sorpesee/001.jpg"
+                }
+            }
+        }
+    },
+
     // Märkischer Kreis
     {
         id: "luedenscheid",
