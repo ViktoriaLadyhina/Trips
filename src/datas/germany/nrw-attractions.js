@@ -1859,7 +1859,13 @@ const datas = [
         translations: {
             ru: {
                 name: "Фишмаркт",
-                location: "Кёльн, район Altstadt-Nord (округ Innenstadt), Германия",
+                loc: {
+                    country: "Германия",
+                    region: "Северный Рейн-Вестфалия",
+                    district: "Город областного значения",
+                    city: "Кёльн",
+                    cityDistrict: "район Altstadt-Nord (округ Innenstadt)"
+                },
                 short_description: "Фишмаркт – историческая площадь Старого города Кёльна с яркими разноцветными домами и атмосферой средневекового рынка. Популярное место для прогулок, фотосессий, кафе и ярмарок, рядом с Кёльнским собором.",
                 full_description: {
                     title: "Описание и история",
@@ -1902,7 +1908,13 @@ const datas = [
             },
             ua: {
                 name: "Фішмаркт",
-                location: "Кельн, район Altstadt-Nord (район Innenstadt), Німеччина",
+                loc: {
+                    country: "Німеччина",
+                    region: "Північний Рейн-Вестфалія",
+                    district: "Місто обласного значення",
+                    city: "Кельн",
+                    cityDistrict: "район Altstadt-Nord (округ Innenstadt)"
+                },
                 short_description: "Фішмаркт – історична площа Старого міста Кельна з яскравими різнокольоровими будинками та атмосферою середньовічного ринку. Популярне місце для прогулянок, фотосесій, кафе та ярмарків, поруч з Кельнським собором.",
                 full_description: {
                     title: "Опис та історія",
@@ -1945,7 +1957,13 @@ const datas = [
             },
             de: {
                 name: "Fischmarkt",
-                location: "Köln, Stadtteil Altstadt-Nord (Stadtbezirk Innenstadt), Deutschland",
+                loc: {
+                    country: "Deutschland",
+                    region: "Nordrhein-Westfalen",
+                    district: "Stadt mit Kreisstatus",
+                    city: "Köln",
+                    cityDistrict: "Stadtteil Altstadt-Nord (Bezirk Innenstadt)"
+                },
                 short_description: "Der Fischmarkt ist ein historischer Platz in der Altstadt von Köln mit bunten Häusern und der Atmosphäre eines mittelalterlichen Marktes. Ein beliebter Ort für Spaziergänge, Fotos, Cafés und Märkte, in der Nähe des Kölner Doms.",
                 full_description: {
                     title: "Beschreibung und Geschichte",

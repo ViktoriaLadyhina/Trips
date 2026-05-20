@@ -357,7 +357,13 @@ const datas = [
     translations: {
       ru: {
         name: "Старый город Люксембурга",
-        location: "Люксембург (кварталы Ville Haute, Grund, Pfaffenthal), Люксембург",
+        loc: {
+          country: "Люксембург",
+          region: "Кантон Люксембург",
+          district: "Город областного значения",
+          city: "Люксембург",
+          cityDistrict: "кварталы Ville Haute, Grund, Pfaffenthal"
+        },
         unesco_status: {
           included: true,
           year: 1994,
@@ -419,7 +425,13 @@ const datas = [
       },
       ua: {
         name: "Старе місто Люксембурга",
-        location: "Люксембург (квартали Ville Haute, Grund, Pfaffenthal), Люксембург",
+        loc: {
+          country: "Люксембург",
+          region: "Кантон Люксембург",
+          district: "Місто обласного значення",
+          city: "Люксембург",
+          cityDistrict: "квартали Ville Haute, Grund, Pfaffenthal"
+        },
         unesco_status: {
           included: true,
           year: 1994,
@@ -481,7 +493,13 @@ const datas = [
       },
       de: {
         name: "Altstadt Luxemburg",
-        location: "Luxemburg (Viertel Ville Haute, Grund, Pfaffenthal), Luxemburg",
+        loc: {
+          country: "Luxemburg",
+          region: "Kanton Luxemburg",
+          district: "Stadt mit Kreisstatus",
+          city: "Luxemburg",
+          cityDistrict: "Stadtviertel Ville Haute, Grund, Pfaffenthal"
+        },
         unesco_status: {
           included: true,
           year: 1994,

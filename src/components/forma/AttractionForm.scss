@@ -1,17 +1,56 @@
 .forma {
     max-width: 800px;
 
+    .path {
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+    }
+
+    .field {
+        display: flex;
+        flex-direction: column;
+        gap: 6px;
+
+        label {
+            font-weight: 500;
+            font-size: 14px;
+        }
+
+        select {
+            padding: 8px 10px;
+            border: 1px solid #ccc;
+            border-radius: 6px;
+            font-size: 14px;
+            background: #fff;
+
+            &:disabled {
+                background: #f5f5f5;
+                cursor: not-allowed;
+                opacity: 0.7;
+            }
+
+            &:focus {
+                outline: none;
+                border-color: #4a90e2;
+            }
+        }
+    }
+
+    .note {
+        font-size: 12px;
+        color: #777;
+        margin-top: -6px;
+    }
+
     .name,
     .id,
     .short_description,
     .description,
     .type,
-    .country,
-    .region,
-    .district,
-    .city,
     .foto,
     .subObjects,
+    .field,
     .meta {
         margin: 10px;
         text-align: left;
@@ -45,7 +84,6 @@
 
     .child-question,
     .show-more-question,
-    .unesco,
     .official-site {
         margin: 10px;
         text-align: left;
@@ -57,6 +95,49 @@
 
         input {
             padding: 8px;
+        }
+    }
+
+    .coord {
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+
+        h3 {
+            margin: 0;
+        }
+
+        &__row {
+            display: flex;
+            gap: 16px;
+
+            .field {
+                flex: 1;
+                display: flex;
+                flex-direction: column;
+                gap: 6px;
+            }
+        }
+    }
+
+    .unesco {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        padding: 20px;
+        border: 1px solid #ddd;
+        border-radius: 8px;
+        background: #f9f9f9;
+
+        &-fields {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+
+            input {
+                width: 60%;
+                padding: 8px;
+            }
         }
     }
 

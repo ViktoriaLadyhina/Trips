@@ -1,6 +1,7 @@
 import { useForm, useFieldArray } from "react-hook-form";
 import './AttractionForm.scss';
 import { useState } from "react";
+import { pathData } from "./pathData";
 
 const AttractionForm = () => {
   const { register, control, watch, reset, formState: { errors }, trigger } = useForm({
@@ -13,16 +14,29 @@ const AttractionForm = () => {
       region: "",
       district: "",
       city: "",
+      cityDistrict: "",
       foto: "",
-      location: "",
+      coord: {
+        lat: "",
+        lng: ""
+      },
+      loc: {
+        country: "",
+        lang: "",
+        district: "",
+        subRegion: "",
+        city: "",
+      },
       hasOfficialSite: false,
       officialSiteLink: "",
       isUnesco: false,
-      unescoYear: "",
-      unescoType: "",
-      unescoCriteria: "",
-      unescoEpoch: "",
-      unescoSeries: "",
+      unesco: {
+        year: "",
+        type: "",
+        criteria: "",
+        epoch: "",
+        series: ""
+      },
       isChildAttraction: false,
       shortDescriptionSubObjects: { title: "", items: [{ bold: "", text: "" }] },
       showMore: false,
@@ -50,6 +64,8 @@ const AttractionForm = () => {
 
   const [showSecondDescription, setShowSecondDescription] = useState(false);
   const [copied, setCopied] = useState(false);
+  const isUnesco = watch("isUnesco");
+
 
   const watchedFields = watch();
 
@@ -74,6 +90,21 @@ const AttractionForm = () => {
     watchedFields.short_description?.trim() &&
     isFullDescriptionEmpty;
 
+  // функция для построения объекта loc в зависимости от выбранных патчей
+  const buildLoc = (pathData, loc) => {
+    return {
+      country: pathData[loc.country]?.label || "",
+      region: pathData[loc.country]?.regions?.[loc.region]?.label || "",
+      district:
+        pathData[loc.country]?.regions?.[loc.region]?.districts?.[loc.district]?.label || "",
+      city:
+        pathData[loc.country]
+          ?.regions?.[loc.region]
+          ?.districts?.[loc.district]
+          ?.cities?.[loc.city] || ""
+    };
+  };
+
   const previewObject = {
     id: watchedFields.id,
     type: [watchedFields.type],
@@ -86,22 +117,29 @@ const AttractionForm = () => {
     ...(watchedFields.isChildAttraction === "true" && { hiddenFromList: true }),
     ...(watchedFields.showMore === "true" && { showMore: true }),
     fotoCard: watchedFields.foto,
+    coord: {
+      lat: Number(watchedFields.coord?.lat),
+      lng: Number(watchedFields.coord?.lng)
+    },
 
     translations: {
       ru: {
         name: watchedFields.name,
-        ...(watchedFields.location.length > 0 && { location: watchedFields.location }),
+        loc: {
+          ...buildLoc(pathData, watchedFields),
+          cityDistrict: watchedFields.cityDistrict || ""
+        },
         ...(watchedFields.hasOfficialSite && watchedFields.officialSiteLink && {
           officialSite: [{ bold: "Официальный сайт", link: watchedFields.officialSiteLink }]
         }),
-        ...(watchedFields.isUnesco && watchedFields.unescoYear && {
+        ...(watchedFields.isUnesco && watchedFields.unesco?.year && {
           unesco_status: {
             included: true,
-            year: Number(watchedFields.unescoYear),
-            type: watchedFields.unescoType,
-            criteria: watchedFields.unescoCriteria,
-            epoch: watchedFields.unescoEpoch,
-            series: watchedFields.unescoSeries
+            year: Number(watchedFields.unesco.year),
+            type: watchedFields.unesco.type,
+            criteria: watchedFields.unesco.criteria,
+            epoch: watchedFields.unesco.epoch,
+            series: watchedFields.unesco.series
           }
         }),
         ...(watchedFields.subObjectsInputs?.filter(o => o.value?.trim()).length > 0 && {
@@ -339,128 +377,90 @@ const AttractionForm = () => {
       <div className='path'>
         <h3><span className="required">*</span>Патчи</h3>
 
-        <div className="country">
-          <label>Страна</label>
-          <select {...register("country", { required: "Выберите страну" })}>
-            <option value="">Выберите страну</option>
-            <option value="germany">Германия</option>
-            <option value="luxembourg">Люксембург</option>
-            <option value="ukraine">Украина</option>
-          </select>
-          <p className='note'>Если добавляем новую страну, то вставляем объект с новой страной в src/datas/языки/Country.js. Потом обновляем src/datas/языки/index.js и форму. Так же нужно внести добавления в src/datas/fotos/index.js (чтобы работала фотогалерея)</p>
-        </div>
+        <select {...register("country", { required: "Выберите страну" })}>
+          <option value="">Выберите страну</option>
+          {Object.entries(pathData).map(([key, value]) => (
+            <option key={key} value={key}>
+              {value.label}
+            </option>
+          ))}
+        </select>
 
-        <div className="region">
-          <label>Область/Земля</label>
-          <select {...register("region", { required: "Выберите землю/область" })} disabled={!watchedFields.country}>
-            <option value="">Выберите землю/область</option>
-            {watchedFields.country === "germany" && (
-              <>
-                <option value="nrw">Северный Рейн-Вестфалия</option>
-                <option value="rheinland_pfalz">Рейнланд-Пфальц</option>
-              </>
-            )}
-            {watchedFields.country === "luxembourg" && (
-              <>
-                <option value="mersch">Кантон Мерш</option>
-                <option value="luxembourg_canton">Кантон Люксембург</option>
-                <option value="capellen">Кантон Капеллен</option>
-              </>
-            )}
-            {watchedFields.country === "ukraine" && (
-              <>
-                <option value="sumska">Сумская область</option>
-              </>
-            )}
-          </select>
-          <p className='note'>Если добавляем новую область/землю, то создаем новый файл в src/datas/языки/страна(например ukraine)/название (например kievska).js. Потом обновляем src/datas/языки/index.js и форму</p>
-        </div>
+        <select
+          {...register("region", { required: "Выберите область/землю" })}
+          disabled={!watchedFields.country}
+        >
+          <option value="">Выберите землю/область</option>
 
-        <div className="district">
-          <label>Район/Край</label>
-          <select {...register("district", { required: "Выберите район/край" })} disabled={!watchedFields.region}>
-            <option value="">Выберите район/край</option>
-            {watchedFields.country === "germany" && watchedFields.region === "nrw" && (
-              <>
-                <option value="arnsberg">Арнсберг</option>
-                <option value="dusseldorf">Дюссельдорф</option>
-                <option value="koln">Кельн</option>
-                <option value="city">Город обласного значения</option>
-              </>
+          {watchedFields.country &&
+            Object.entries(pathData[watchedFields.country]?.regions || {}).map(
+              ([key, value]) => (
+                <option key={key} value={key}>
+                  {value.label}
+                </option>
+              )
             )}
-            {watchedFields.country === "germany" && watchedFields.region === "rheinland_pfalz" && (
-              <>
-                <option value="mayen-koblenz">Майен‑Кобленц</option>
-                <option value="trier_saarburg">Трир-Саарбург</option>
-                <option value="city">Город обласного значения</option>
-              </>
-            )}
-            {watchedFields.country === "ukraine" && watchedFields.region === "sumska" && (
-              <>
-                <option value="city">Город обласного значения</option>
-              </>
-            )}
-            {watchedFields.country === "luxembourg" && (
-              <>
-                <option value="city">Город обласного значения</option>
-              </>
-            )}
-          </select>
-          <p className='note'>Если добавляем новый район/край, то добавляем объект в файл в src/datas/языки/страна(например germany)/регион(область/земля)(например bavarska).js. Потом обновляем src/datas/языки/index.js и форму</p>
-        </div>
+        </select>
 
-        <div className="city">
-          <label>Город</label>
-          <select {...register("city", { required: "Выберите город" })} disabled={!watchedFields.district}>
-            <option value="">Выберите город</option>
-            {watchedFields.country === "germany" && watchedFields.district === "arnsberg" && (
-              <>
-                <option value="luedenscheid">Люденшайд</option>
-                <option value="altena">Альтена</option>
-                <option value="iserlohn">Изерлон</option>
-              </>
-            )}
-            {watchedFields.country === "germany" && watchedFields.district === "dusseldorf" && (
-              <>
-                <option value="velbert">Фельберт</option>
-              </>
-            )}
-            {watchedFields.country === "germany" && watchedFields.district === "koln" && (
-              <>
-                <option value="monschau">Моншау</option>
-                <option value="bruhl">Брюль</option>
-                <option value="frechen">Фрехен</option>
-                <option value="konigswinter">Кёнигсвинтер</option>
-                <option value="lohmar">Ломар</option>
-              </>
-            )}
-            {watchedFields.country === "germany" && watchedFields.district === "trier_saarburg" && (
-              <>
-                <option value="saarburg">Саарбург</option>
-              </>
-            )}
-            {watchedFields.country === "germany" && watchedFields.district === "city" && (
-              <>
-                <option value="koln">Кельн</option>
-                <option value="dortmund">Дортмунд</option>
-                <option value="trier">Трир</option>
-                <option value="koblenz">Кобленц</option>
-              </>
-            )}
-            {watchedFields.country === "luxembourg" && watchedFields.district === "city" && (
-              <>
-                <option value="luxembourg_city">Люксембург</option>
-                <option value="ansembourg">Деревня Ансембург</option>
-                <option value="koerich">Деревня Кёрих</option>
-              </>
-            )}
-            {watchedFields.country === "ukraine" && watchedFields.district === "city" && (
-              <>
-                <option value="sumy">Сумы</option>
-              </>
-            )}
-          </select>
-          <p className='note'>Если добавляем новый город, то добавляем объект в файл в src/datas/языки/страна(например germany)/регион(область/земля)-city.js (например bavarska-city.js). Потом обновляем src/datas/языки/index.js и форму</p>
+        <select
+          {...register("district", { required: "Выберите район/край" })}
+          disabled={!watchedFields.region}
+        >
+          <option value="">Выберите район/край</option>
+
+          {watchedFields.country &&
+            watchedFields.region &&
+            Object.entries(
+              pathData[watchedFields.country]?.regions?.[watchedFields.region]?.districts || {}
+            ).map(([key, value]) => (
+              <option key={key} value={key}>
+                {value.label}
+              </option>
+            ))}
+        </select>
+
+        <select
+          {...register("city", { required: "Выберите город" })}
+          disabled={!watchedFields.district}
+        >
+          <option value="">Выберите город</option>
+
+          {watchedFields.country &&
+            watchedFields.region &&
+            watchedFields.district &&
+            Object.entries(
+              pathData[watchedFields.country]
+                ?.regions?.[watchedFields.region]
+                ?.districts?.[watchedFields.district]
+                ?.cities || {}
+            ).map(([key, label]) => (
+              <option key={key} value={key}>
+                {label}
+              </option>
+            ))}
+        </select>
+      </div>
+
+      {/* // -------------- Местоположение */}
+      <div className="field">
+        <label>Район города</label>
+        <input type="text" placeholder="Например: район Altstadt-Nord (округ Innenstadt)" {...register("cityDistrict")} />
+      </div>
+
+      {/* // -------------- Координаты */}
+      <div className="coord">
+        <h3>Координаты</h3>
+
+        <div className="coord__row">
+          <div className="field">
+            <label>Широта (lat)</label>
+            <input type="number" step="any" placeholder="50.93845" {...register("coord.lat", { valueAsNumber: true })} />
+          </div>
+
+          <div className="field">
+            <label>Долгота (lng)</label>
+            <input type="number" step="any" placeholder="6.96260" {...register("coord.lng", { valueAsNumber: true })} />
+          </div>
         </div>
       </div>
 
@@ -520,12 +520,6 @@ const AttractionForm = () => {
         <p className='note'>Если нужно добавить фото в фотогелерею, то работаем в файле src/datas/fotos/страна(de.js или ua.js). Указать патч города, потом патч дост-ти</p>
       </div>
 
-      {/* // -------------- Местонахождение  */}
-      <div className='foto'>
-        <label>Местонахождение</label>
-        <input type="text" {...register("location")} placeholder="Пример: Кёльн, Германия" />
-      </div>
-
       {/* // -------------- Официальный сайт */}
       <div className='official-site'>
         <label><input type="checkbox" {...register("hasOfficialSite")} />Есть ли официальный сайт</label>
@@ -533,17 +527,21 @@ const AttractionForm = () => {
       </div>
 
       {/* // -------------- ЮНЕСКО  */}
-      <div className='unesco'>
-        <label>Входит ли эта достопримечательность в список ЮНЕСКО?</label>
-        <div>
-          <label><input type="checkbox" {...register("isUnesco")} />Объект входит в список ЮНЕСКО</label>
-          <label><input type="Number" {...register("unescoYear")} placeholder="Год"/></label>
-          <label><input type="text" {...register("unescoType")} placeholder="Например - Культурное наследие"/></label>
-          <label><input type="text" {...register("unescoCriteria")} placeholder="Например - i, ii, iv"/></label>
-          <label><input type="text" {...register("unescoEpoch")} placeholder="Например - Готика"/></label>
-          <label><input type="text" {...register("unescoSeries")} placeholder="Например - Без серии"/></label>
+      <label>
+        <input type="checkbox" {...register("isUnesco")} />
+        Объект входит в список ЮНЕСКО
+      </label>
+
+      {isUnesco && (
+        <div className="unesco-fields">
+          <label><input type="number" {...register("unesco.year")} placeholder="Год" /></label>
+
+          <label><input type="text" {...register("unesco.type")} placeholder="Тип" /></label>
+          <label><input type="text" {...register("unesco.criteria")} placeholder="Критерии" /></label>
+          <label><input type="text" {...register("unesco.epoch")} placeholder="Эпоха" /></label>
+          <label><input type="text" {...register("unesco.series")} placeholder="Серия" /></label>
         </div>
-      </div>
+      )}
 
       {/* // -------------- Короткое описание */}
       <div className='short_description'>

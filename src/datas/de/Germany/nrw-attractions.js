@@ -67,7 +67,13 @@ const datas = [
         countryPath: "germany", regionPath: "nrw", districtPath: "city", cityPath: "koln",
         showMore: true, hiddenFromList: true,
         fotoCard: "Germany/nrw/koln/koln-city/koln-cathedral/001.jpg",
-        location: "Köln, Stadtteil Altstadt-Nord (Stadtbezirk Innenstadt), Deutschland",
+        loc: {
+            country: "Deutschland",
+            region: "Nordrhein-Westfalen",
+            district: "Stadt mit Kreisstatus",
+            city: "Köln",
+            cityDistrict: "Stadtteil Altstadt-Nord (Bezirk Innenstadt)"
+        },
         officialSite: [
             { bold: 'Offizielle Webseite des Kölner Doms', link: 'https://www.koelner-dom.de/' }
         ],
@@ -99,11 +105,11 @@ const datas = [
             ]
         },
         tickets_and_entry: {
-          title: "Praktische Informationen",
-          items: [
-            { bold: "Adresse:", text: "Domkloster 4, 50667 Köln, Deutschland" },
-            { bold: "Konfession:", text: "römisch-katholische Kirche" },
-          ]
+            title: "Praktische Informationen",
+            items: [
+                { bold: "Adresse:", text: "Domkloster 4, 50667 Köln, Deutschland" },
+                { bold: "Konfession:", text: "römisch-katholische Kirche" },
+            ]
         },
         relics: {
             title: "Reliquien und Schätze des Kölner Doms",
@@ -266,11 +272,11 @@ const datas = [
             ]
         },
         tickets_and_entry: {
-          title: "Praktische Informationen",
-          items: [
-            { bold: "Adresse:", text: "An Groß St. Martin 9–11, 50667 Köln, Deutschland" },
-            { bold: "Konfession:", text: "römisch-katholische Kirche" },
-          ]
+            title: "Praktische Informationen",
+            items: [
+                { bold: "Adresse:", text: "An Groß St. Martin 9–11, 50667 Köln, Deutschland" },
+                { bold: "Konfession:", text: "römisch-katholische Kirche" },
+            ]
         },
         interestingFacts: {
             title: "Interessante Fakten",
@@ -1329,7 +1335,7 @@ const datas = [
             ]
         },
         sub_objects: {
-            title: "Kölner Brücken", 
+            title: "Kölner Brücken",
             items: [
                 { "bold": "1. Leverkusener Brücke:", "text": "Die nördlichste Brücke Kölns, Teil der Autobahn A1. Sie wurde in den 1960er Jahren gebaut und dient als zentrale Strecke zwischen dem Ruhrgebiet und der Kölner Region. Aufgrund der Belastung mehrfach saniert. <br><b>Interessante Tatsache:</b> Wegen des enormen LKW-Aufkommens musste die Brücke mehrfach komplett für Sanierungsarbeiten gesperrt werden, was regelmäßig Gegenstand regionaler Nachrichten war." },
                 { "bold": "2. Rheinbrücke Merkenich:", "text": "Verbindet die Stadtteile Merkenich und Flittard und bedient die nördlichen Industriegebiete. Erbaut in den 1970er Jahren. Die Konstruktion ist speziell auf das industrielle Umfeld ausgelegt. <br><b>Interessante Tatsache:</b> Diese Brücke wurde mit besonders strengen Umweltauflagen geplant – wegen der Nähe großer Chemiewerke." },
@@ -2804,7 +2810,7 @@ const datas = [
         countryPath: "germany", regionPath: "nrw", districtPath: "koln", cityPath: "konigswinter",
         fotoCard: "Germany/nrw/koln/Rhein-Sieg-Kreis/konigswinter/drachenfels/001.jpg",
         location: "zwischen den Städten Königswinter und Bad Honnef, Deutschland",
-        officialSite: [ {bold: "Offizielle Website der Zahnradbahn und des touristischen Gesamtprojekts für den Berg", link: "https://www.drachenfelsbahn.de/" } ],
+        officialSite: [{ bold: "Offizielle Website der Zahnradbahn und des touristischen Gesamtprojekts für den Berg", link: "https://www.drachenfelsbahn.de/" }],
         short_description: "Der Drachenfels ist ein legendärer Berg im Naturpark Siebengebirge oberhalb des Rheins. Vom Gipfel eröffnen sich weite Panoramablicke über das Rheintal, und der Berg selbst ist eng mit der Sage vom Drachen und dem Helden Siegfried verbunden. ",
         short_description_subObjects: {
             text: "Auf dem Drachenfels befinden sich folgende Sehenswürdigkeiten:",

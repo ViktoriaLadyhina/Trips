@@ -81,6 +81,9 @@ const AttractionCard = ({ attr, lang }) => {
                     {attr.location && (
                         <div className='attrCard__desc-info-text'>{location[lang]}: {attr.location}</div>
                     )}
+                    {attr.loc && (
+                        <div className='attrCard__desc-info-text'>{location[lang]}: {attr.loc?.city} ({attr.loc?.cityDistrict}), {attr.loc?.country}</div>
+                    )}
                     {detailPath && (
                         <div className='attrCard__desc-info-more'>
                             <Link to={detailPath}>{more[lang]}</Link>

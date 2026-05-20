@@ -57,22 +57,25 @@ const AttractionCardSub = ({ attr, lang }) => {
                     {attr.note && (
                         <span className='attrCard__desc-info-text'>
                             <strong>{noteLabel[attr.status][lang]}:</strong> {attr.note}
-                    </span>
+                        </span>
                     )}
                     {attr.unesco_status?.included && (
                         <span className='attrCard__desc-info-text'>
                             🌍UNESCO {attr.unesco_status.year}
                         </span>
                     )}
-                                        {attr.location && (
+                    {attr.location && (
                         <div className='attrCard__desc-info-text'>{location[lang]}: {attr.location}</div>
+                    )}
+                    {attr.loc && (
+                        <div className='attrCard__desc-info-text'>{location[lang]}: {attr.loc?.city} ({attr.loc?.cityDistrict}), {attr.loc?.country}</div>
                     )}
                     {attr.showMore && (
                         <div className='attrCard__desc-info-more'>
                             <Link to={`/${attr.countryPath}/${attr.regionPath}/${attr.districtPath}/${attr.cityPath}/attractions/${attr.slug || attr.path}`}>
                                 {more[lang]}
                             </Link>
-                    </div>
+                        </div>
                     )}
                 </div>
             </div>

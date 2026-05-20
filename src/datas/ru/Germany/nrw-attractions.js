@@ -67,7 +67,13 @@ const datas = [
         countryPath: "germany", regionPath: "nrw", districtPath: "city", cityPath: "koln",
         showMore: true, hiddenFromList: true,
         fotoCard: "Germany/nrw/koln/koln-city/koln-cathedral/001.jpg",
-        location: "Кёльн, район Altstadt-Nord (округ Innenstadt), Германия",
+        loc: {
+            country: "Германия",
+            region: "Северный Рейн-Вестфалия",
+            district: "Город областного значения",
+            city: "Кёльн",
+            cityDistrict: "район Altstadt-Nord (округ Innenstadt)"
+        },
         officialSite: [{ bold: 'Официальный сайт Кёльнского собора', link: 'https://www.koelner-dom.de/' }],
         unesco_status: {
             included: true,
@@ -3899,7 +3905,7 @@ const datas = [
             ogImage: "https://our-travels.info/foto/Germany/nrw/arnsberg/Märkischer-Kreis/altena/burg/001.jpg"
         }
     },
-        {
+    {
         id: "drahtmuseum_altena",
         name: "Немецкий музей проволоки",
         type: ["museum"], rating: "local",

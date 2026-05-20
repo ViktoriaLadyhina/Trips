@@ -34,17 +34,17 @@ export const Unesco = () => {
       link: getAttractionLink(a)
     }));
 
-const routesUnesco = routes
-  .filter(r => r.translations?.[lang]?.unesco_status?.included)
-  .map(r => {
-    const unesco = r.translations?.[lang]?.unesco_status;
+  const routesUnesco = routes
+    .filter(r => r.translations?.[lang]?.unesco_status?.included)
+    .map(r => {
+      const unesco = r.translations?.[lang]?.unesco_status;
 
-    return {
-      ...r,
-      unesco_status: unesco, 
-      link: getRouteLink(r)
-    };
-  });
+      return {
+        ...r,
+        unesco_status: unesco,
+        link: getRouteLink(r)
+      };
+    });
 
   const unescoItems = [...attractionsUnesco, ...routesUnesco];
 
@@ -92,7 +92,19 @@ const routesUnesco = routes
               <div key={item.id} className="unesco-card">
                 <div className="unesco-card-row"><strong>{t.name}:</strong> <a href={item.link}>{item.name}</a></div>
                 <div className="unesco-card-row"><strong>{t.type}:</strong> {item.unesco_status?.type}</div>
-                <div className="unesco-card-row"><strong>{t.location}:</strong> {item.location}</div>
+                <div className="unesco-card-row"><strong>{t.location}: </strong>
+                  {
+                    item.location ||
+
+                    (item.loc?.city && item.loc?.country
+                      ? `${item.loc.city}, ${item.loc.country}`
+                      : null) ||
+
+                    (item.translations?.[lang]?.loc?.city &&
+                      item.translations?.[lang]?.loc?.country
+                      ? `${item.translations[lang].loc.city}, ${item.translations[lang].loc.country}`
+                      : null)
+                  }</div>
                 {series === "no-series" && (
                   <div className="unesco-card-row"><strong>{t.year}:</strong> {item.unesco_status?.year}</div>
                 )}
@@ -119,7 +131,21 @@ const routesUnesco = routes
                 <tr key={item.id}>
                   <td className="unesco__name">  <Link to={item.link}> {item.name}</Link>  </td>
                   <td>{item.unesco_status?.type}</td>
-                  <td>{item.location}</td>
+                  <td>
+                    {
+                      item.location ||
+
+                      (item.loc?.city && item.loc?.country
+                        ? `${item.loc.city}, ${item.loc.country}`
+                        : null) ||
+
+                      (item.translations?.[lang]?.loc?.city &&
+                        item.translations?.[lang]?.loc?.country
+                        ? `${item.translations[lang].loc.city}, ${item.translations[lang].loc.country}`
+                        : null)
+                    }
+
+                  </td>
                   {series === "no-series" && <td>{item.unesco_status?.year}</td>}
                   <td>{item.unesco_status?.criteria}</td>
                   <td>{item.unesco_status?.epoch}</td>
