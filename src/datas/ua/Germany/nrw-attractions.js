@@ -3333,7 +3333,7 @@ const datas = [
         path: "altstadt_luedenscheid",
         countryPath: "germany", regionPath: "nrw", districtPath: "arnsberg", cityPath: "luedenscheid",
         fotoCard: "Germany/nrw/arnsberg/Märkischer-Kreis/luedenscheid/altstadt_luedenscheid/004.jpg",
-        subObjects: ["erloeserkirche_luedenscheid", "brunnen_altstadt_luedenscheid"],
+        subObjects: ["erloeserkirche_luedenscheid", "brunnen_altstadt_luedenscheid", "stadtbücherei_lüdenscheid"],
         location: "Люденшайд, райони Innenstadt / Staberg / Knapp, Tinsberg / Kluse, Німеччина",
         short_description: "Старе місто Люденшайда – історичне серце міста з вузькими вулицями та кільцевим плануванням навколо церкви Спасителя. Тут збереглися будівлі XVIII–XIX століть, залишки міської стіни та історичний музей, а затишні вулички поєднують минуле з сучасним міським життям.",
         short_description_subObjects: {
@@ -3341,6 +3341,7 @@ const datas = [
             items: [
                 { bold: "Церква Спасителя", text: "– історична церква з характерною архітектурою, важливий культурний об’єкт міста." },
                 { bold: "Фонтан у старому місті", text: "– декоративний фонтан на головній площі, популярне місце для прогулянок та фотографій." },
+                { bold: "Міська бібліотека", text: "– одна з найстаріших публічних бібліотек Німеччини, розташована в історичній будівлі." }
             ]
         },
         full_description: {

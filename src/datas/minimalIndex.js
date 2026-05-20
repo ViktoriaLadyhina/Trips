@@ -92,6 +92,7 @@ const datas =
     bremecker_hammer_luedenscheid: { ru: 'Bremecker Hammer – технико-исторический музей кузнечного дела', de: 'Bremecker Hammer', ua: 'Bremecker Hammer – техніко-історичний музей ковальського ремесла' },
     phaenomenta_luedenscheid: { ru: 'Научный центр ФЕНОМЕНТА', de: 'PHÄNOMENTA', ua: 'Науковий центр ФЕНОМЕНТА' },
     stilleking_luedenscheid: { ru: 'Природный заповедник Стиллекинг', de: 'Naturschutzgebiet Stilleking', ua: 'Природний заповідник Стиллекінг' },
+    stadtbücherei_lüdenscheid: { ru: 'Городская библиотека', de: 'Stadtbücherei Lüdenscheid', ua: 'Міська бібліотека' },
 
     // Altena
     burg_altena: { ru: 'Замок Альтена', de: 'Burg Altena', ua: 'Замок Альтена' },

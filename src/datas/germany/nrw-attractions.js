@@ -1425,6 +1425,143 @@ const datas = [
             }
         }
     },
+    {
+        id: "stadtbücherei_lüdenscheid",
+        type: ["historical_building"], rating: "local",
+        path: "stadtbücherei_lüdenscheid",
+        countryPath: "germany", regionPath: "nrw", districtPath: "arnsberg", cityPath: "luedenscheid",
+        hiddenFromList: true, showMore: true,
+        fotoCard: "Germany/nrw/arnsberg/Märkischer-Kreis/luedenscheid/altstadt_luedenscheid/stadtbücherei//001.jpg",
+        coord: { lat: 51.21636, lng: 7.63478 },
+        translations: {
+            ru: {
+                name: "Городская библиотека Люденшайда",
+                loc: {
+                    country: "Германия",
+                    region: "Северный Рейн-Вестфалия",
+                    district: "Арнсберг",
+                    city: "Люденшайд",
+                    cityDistrict: "район Innenstadt / Staberg / Knapp"
+                },
+                short_description: "Одна из старейших публичных библиотек Германии (с 1857 года), расположенная в историческом здании 1892 года в стиле неоренессанс с современными архитектурными расширениями. Культурный центр, объединяющий историю, образование и современную городскую жизнь.",
+                full_description: {
+                    title: "Описание и история",
+                    items: [
+                        { bold: "Городская библиотека Люденшайда", text: "– это не просто городская библиотека, а один из значимых культурных центров города, соединяющий историческое наследие XIX века и современную архитектурную трансформацию. Она располагается в центральной части Люнденшайда и является важной точкой городской культурной жизни, открытой для жителей и гостей города." },
+                        { text: "Сегодня библиотека воспринимается как современное общественное пространство, где сочетаются чтение, образование, цифровые технологии и культурные мероприятия. Здесь проходят выставки, литературные встречи, образовательные программы и проекты для детей и молодёжи, что делает её живым и постоянно развивающимся культурным центром." },
+                        { text: "Особую ценность библиотеке придаёт её историческая глубина: это одно из старейших библиотечных учреждений Германии, чья традиция восходит к середине XIX века и отражает развитие общественного образования в индустриальных городах Рурского региона." },
+                        { bold: "История", text: "библиотеки начинается 10 мая 1857 года, когда в городе была основана народная библиотека (Volksbibliothek). Она возникла как часть движения за доступное образование и просвещение, что было характерно для промышленно развивающейся Германии XIX века. Первоначально фонд был небольшим и формировался за счёт пожертвований и поддержки местных сообществ." },
+                        { text: "В начале XX века библиотека постепенно стала муниципальной и расширила свои функции. Она превратилась из общественной читальни в полноценное городское культурное учреждение, обслуживающее всё население города. Этот переход закрепил её статус как важной части городской инфраструктуры образования." },
+                        { text: "Современная история библиотеки связана с несколькими этапами переосмысления пространства и архитектуры. В 1930-х годах библиотека получила постоянное здание в историческом городском корпусе конца XIX века, построенном в 1892 году в стиле неоренессанс. Изначально это здание использовалось как коммерческое сооружение кооперативного типа, но позже было адаптировано под библиотеку." },
+                        { text: "В 1980-х годах комплекс был существенно расширен и реконструирован: к историческому корпусу были добавлены современные функциональные пространства, что сформировало единый архитектурный ансамбль, объединяющий историческую и современную части." },
+                        { bold: "Архитектурный облик", text: "библиотеки основан на сочетании исторического здания конца XIX века и позднейших современных пристроек. Основной корпус был построен в 1892 году в стиле неоренессанс и отличается симметричным фасадом, выразительной пластикой стен, арочными окнами и декоративными элементами, характерными для представительской архитектуры эпохи индустриализации." },
+                        { text: "Первоначально здание не было библиотекой – оно использовалось как коммерческое сооружение кооперативного типа. Только в 1930-х годах оно было переоборудовано под городскую библиотеку, сохранив при этом свой исторический архитектурный облик." },
+                        { text: "В конце XX века комплекс был расширен современными пристройками, которые добавили функциональные пространства для читальных залов, мультимедийных зон и образовательных мероприятий. Благодаря этому библиотека сегодня представляет собой архитектурный ансамбль, в котором историческая застройка гармонично сочетается с современными элементами." },
+                        { text: "Городская библиотека Люденшайда ценна не только как библиотека, но и как пример живой городской эволюции – от народного просветительского движения XIX века до современного цифрового культурного центра. Её архитектура отражает несколько исторических слоёв города, а само здание является частью культурного наследия Люнденшайда." }
+                    ]
+                },
+                practical_info: {
+                    title: "Практическая информация",
+                    items: [
+                        { bold: "Адрес:", text: "Graf-Engelbert-Platz 6, 58511 Lüdenscheid, Германия" }
+                    ]
+                },
+                construction_period: "1857 (как народная библиотека / Volksbibliothek), здание: 1892 (основной исторический корпус)",
+                meta: {
+                    title: "Городская библиотека Люденшайда – одна из старейших библиотек Германии (1857)",
+                    description: "Городская библиотека Люденшайда – историческая городская библиотека, основанная в 1857 году. Современный культурный центр в здании неоренессанса 1892 года с библиотечными и цифровыми ресурсами.",
+                    ogTitle: "Городская библиотека Люденшайда – библиотека с историей с 1857 года",
+                    ogDescription: "Одна из старейших публичных библиотек Германии в Люнденшайде. История с 1857 года, архитектура XIX века и современное культурное пространство.",
+                    keywords: "библиотека Германия, старейшие библиотеки Германии, 1857 библиотека, неоренессанс здание, культура NRW, достопримечательности Люнденшайд, исторические здания Германии, публичные библиотеки, культурный центр Германия",
+                    ogImage: "https://our-travels.info/foto/Germany/nrw/arnsberg/Märkischer-Kreis/luedenscheid/altstadt_luedenscheid/stadtbücherei//001.jpg"
+                }
+            },
+            ua: {
+                name: "Міська бібліотека Люденшайда",
+                loc: {
+                    country: "Німеччина",
+                    region: "Північний Рейн-Вестфалія",
+                    district: "Арнсберг",
+                    city: "Люденшайд",
+                    cityDistrict: "район Innenstadt / Staberg / Knapp"
+                },
+                short_description: "Одна з найстаріших публічних бібліотек Німеччини (з 1857 року), розташована в історичній будівлі 1892 року в стилі неоренесансу з сучасними архітектурними розширеннями. Культурний центр, що об’єднує історію, освіту та сучасне міське життя.",
+                full_description: {
+                    title: "Опис та історія",
+                    items: [
+                        { bold: "Міська бібліотека Люденшайда", text: "– це не просто міська бібліотека, а один із значущих культурних центрів міста, що поєднує історичну спадщину XIX століття та сучасну архітектурну трансформацію. Вона розташована в центральній частині Люденшайда і є важливою точкою міського культурного життя, відкритою для мешканців та гостей міста." },
+                        { text: "Сьогодні бібліотека сприймається як сучасний громадський простір, де поєднуються читання, освіта, цифрові технології та культурні заходи. Тут проводяться виставки, літературні зустрічі, освітні програми та проєкти для дітей і молоді, що робить її живим і постійно розвиненим культурним центром." },
+                        { text: "Особливу цінність бібліотеці надає її історична глибина: це одна з найстаріших бібліотечних установ Німеччини, традиція якої бере початок із середини XIX століття та відображає розвиток громадської освіти в індустріальних містах Рурського регіону." },
+                        { bold: "Історія", text: "бібліотеки починається 10 травня 1857 року, коли в місті була заснована народна бібліотека (Volksbibliothek). Вона виникла як частина руху за доступну освіту та просвітництво, що було характерним для промислово розвиненої Німеччини XIX століття. Спочатку фонд був невеликим і формувався за рахунок пожертв та підтримки місцевих громад." },
+                        { text: "На початку XX століття бібліотека поступово стала муніципальною та розширила свої функції. Вона перетворилася з громадської читальні на повноцінну міську культурну установу, що обслуговує все населення міста. Цей перехід закріпив її статус як важливої частини міської освітньої інфраструктури." },
+                        { text: "Сучасна історія бібліотеки пов’язана з кількома етапами переосмислення простору та архітектури. У 1930-х роках бібліотека отримала постійну будівлю в історичному міському корпусі кінця XIX століття, зведеному у 1892 році в стилі неоренесансу. Спочатку ця будівля використовувалася як комерційна споруда кооперативного типу, але згодом була адаптована під бібліотеку." },
+                        { text: "У 1980-х роках комплекс був суттєво розширений і реконструйований: до історичного корпусу були додані сучасні функціональні простори, що сформувало єдиний архітектурний ансамбль, який поєднує історичну та сучасну частини." },
+                        { bold: "Архітектурний вигляд", text: "бібліотеки базується на поєднанні історичної будівлі кінця XIX століття та пізніших сучасних прибудов. Основний корпус був зведений у 1892 році в стилі неоренесансу та вирізняється симетричним фасадом, виразною пластикою стін, арковими вікнами та декоративними елементами, характерними для представницької архітектури епохи індустріалізації." },
+                        { text: "Спочатку будівля не була бібліотекою – вона використовувалася як комерційна споруда кооперативного типу. Лише у 1930-х роках її було переобладнано під міську бібліотеку, зберігши при цьому історичний архітектурний вигляд." },
+                        { text: "Наприкінці XX століття комплекс був розширений сучасними прибудовами, які додали функціональні простори для читальних залів, мультимедійних зон та освітніх заходів. Завдяки цьому бібліотека сьогодні є архітектурним ансамблем, у якому історична забудова гармонійно поєднується із сучасними елементами." },
+                        { text: "Міська бібліотека Люденшайда цінна не лише як бібліотека, але й як приклад живої міської еволюції – від народного просвітницького руху XIX століття до сучасного цифрового культурного центру. Її архітектура відображає кілька історичних шарів міста, а сама будівля є частиною культурної спадщини Люденшайда." }
+                    ]
+                },
+                practical_info: {
+                    title: "Практична інформація",
+                    items: [
+                        { bold: "Адреса:", text: "Graf-Engelbert-Platz 6, 58511 Lüdenscheid, Німеччина" }
+                    ]
+                },
+                construction_period: "1857 (як народна бібліотека / Volksbibliothek), будівля: 1892 (основний історичний корпус)",
+                meta: {
+                    title: "Міська бібліотека Люденшайда – одна з найстаріших бібліотек Німеччини (1857)",
+                    description: "Міська бібліотека Люденшайда – історична міська бібліотека, заснована у 1857 році. Сучасний культурний центр у будівлі неоренесансу 1892 року з бібліотечними та цифровими ресурсами.",
+                    ogTitle: "Міська бібліотека Люденшайда – бібліотека з історією з 1857 року",
+                    ogDescription: "Одна з найстаріших публічних бібліотек Німеччини в Люденшайді. Історія з 1857 року, архітектура XIX століття та сучасний культурний простір.",
+                    keywords: "бібліотека Німеччина, найстаріші бібліотеки Німеччини, 1857 бібліотека, неоренесанс будівля, культура NRW, визначні місця Люденшайд, історичні будівлі Німеччини, публічні бібліотеки, культурний центр Німеччина",
+                    ogImage: "https://our-travels.info/foto/Germany/nrw/arnsberg/Märkischer-Kreis/luedenscheid/altstadt_luedenscheid/stadtbücherei//001.jpg"
+                }
+            },
+            de: {
+                name: "Stadtbibliothek Lüdenscheid",
+                loc: {
+                    country: "Deutschland",
+                    region: "Nordrhein-Westfalen",
+                    district: "Arnsberg",
+                    city: "Lüdenscheid",
+                    cityDistrict: "Innenstadt / Staberg / Knapp"
+                },
+                short_description: "Eine der ältesten öffentlichen Bibliotheken Deutschlands (seit 1857), untergebracht in einem historischen Gebäude von 1892 im Neorenaissance-Stil mit modernen architektonischen Erweiterungen. Ein kulturelles Zentrum, das Geschichte, Bildung und modernes städtisches Leben vereint.",
+                full_description: {
+                    title: "Beschreibung und Geschichte",
+                    items: [
+                        { bold: "Stadtbibliothek Lüdenscheid", text: "– ist nicht nur eine Stadtbibliothek, sondern eines der bedeutenden kulturellen Zentren der Stadt, das das historische Erbe des 19. Jahrhunderts mit einer modernen architektonischen Transformation verbindet. Sie befindet sich im zentralen Teil von Lüdenscheid und ist ein wichtiger Ort des städtischen Kulturlebens, der für Einwohner und Besucher gleichermaßen offen ist." },
+                        { text: "Heute wird die Bibliothek als moderner öffentlicher Raum wahrgenommen, in dem Lesen, Bildung, digitale Technologien und kulturelle Veranstaltungen miteinander verbunden sind. Hier finden Ausstellungen, literarische Veranstaltungen, Bildungsprogramme sowie Projekte für Kinder und Jugendliche statt, was sie zu einem lebendigen und kontinuierlich wachsenden Kulturzentrum macht." },
+                        { text: "Einen besonderen Wert erhält die Bibliothek durch ihre historische Tiefe: Sie ist eine der ältesten bibliothekarischen Einrichtungen Deutschlands, deren Tradition bis in die Mitte des 19. Jahrhunderts zurückreicht und die Entwicklung der Volksbildung in den industriellen Städten des Ruhrgebiets widerspiegelt." },
+                        { bold: "Geschichte", text: "der Bibliothek beginnt am 10. Mai 1857, als in der Stadt eine Volksbibliothek (Volksbibliothek) gegründet wurde. Sie entstand als Teil der Bewegung für zugängliche Bildung und Aufklärung, die für das industriell geprägte Deutschland des 19. Jahrhunderts typisch war. Der ursprüngliche Bestand war klein und wurde durch Spenden und Unterstützung der lokalen Gemeinschaften aufgebaut." },
+                        { text: "Zu Beginn des 20. Jahrhunderts wurde die Bibliothek schrittweise kommunalisiert und erweiterte ihre Funktionen. Sie entwickelte sich von einer öffentlichen Leseeinrichtung zu einer vollwertigen städtischen Kultureinrichtung, die die gesamte Bevölkerung der Stadt versorgt. Dieser Übergang festigte ihren Status als wichtiger Bestandteil der Bildungsinfrastruktur der Stadt." },
+                        { text: "Die moderne Geschichte der Bibliothek ist mit mehreren Phasen der räumlichen und architektonischen Neugestaltung verbunden. In den 1930er Jahren erhielt die Bibliothek ein festes Gebäude in einem historischen Stadtkörper aus dem späten 19. Jahrhundert, der 1892 im Neorenaissance-Stil errichtet wurde. Ursprünglich wurde dieses Gebäude als gewerbliches Kooperationsgebäude genutzt, später jedoch zur Bibliothek umgebaut." },
+                        { text: "In den 1980er Jahren wurde der Komplex erheblich erweitert und umgebaut: An das historische Gebäude wurden moderne Funktionsbereiche angefügt, wodurch ein einheitliches architektonisches Ensemble entstand, das historische und moderne Teile vereint." },
+                        { bold: "Architektonisches Erscheinungsbild", text: "der Bibliothek basiert auf der Kombination eines historischen Gebäudes aus dem späten 19. Jahrhundert und späterer moderner Erweiterungen. Der Hauptbau wurde 1892 im Neorenaissance-Stil errichtet und zeichnet sich durch eine symmetrische Fassade, eine ausgeprägte Wandgliederung, Rundbogenfenster und dekorative Elemente aus, die für die repräsentative Architektur der Industrialisierungszeit typisch sind." },
+                        { text: "Ursprünglich war das Gebäude keine Bibliothek – es wurde als gewerbliches Kooperationsgebäude genutzt. Erst in den 1930er Jahren wurde es zur Stadtbibliothek umgebaut, wobei der historische architektonische Charakter erhalten blieb." },
+                        { text: "Ende des 20. Jahrhunderts wurde der Komplex durch moderne Anbauten erweitert, die zusätzliche Räume für Lesesäle, multimediale Bereiche und Bildungsangebote schufen. Dadurch stellt die Bibliothek heute ein architektonisches Ensemble dar, in dem historische Bausubstanz harmonisch mit modernen Elementen verbunden ist." },
+                        { text: "Die Stadtbibliothek Lüdenscheid ist nicht nur als Bibliothek wertvoll, sondern auch als Beispiel für die lebendige städtische Entwicklung – von der Volksbildungsbewegung des 19. Jahrhunderts bis hin zu einem modernen digitalen Kulturzentrum. Ihre Architektur spiegelt mehrere historische Schichten der Stadt wider, und das Gebäude selbst ist Teil des kulturellen Erbes von Lüdenscheid." }
+                    ]
+                },
+                practical_info: {
+                    title: "Praktische Informationen",
+                    items: [
+                        { bold: "Adresse:", text: "Graf-Engelbert-Platz 6, 58511 Lüdenscheid, Deutschland" }
+                    ]
+                },
+                construction_period: "1857 (als Volksbibliothek), Gebäude: 1892 (Hauptgebäude im Neorenaissance-Stil)",
+                meta: {
+                    title: "Stadtbibliothek Lüdenscheid – eine der ältesten Bibliotheken Deutschlands (1857)",
+                    description: "Die Stadtbibliothek Lüdenscheid ist eine historische Stadtbibliothek, gegründet 1857. Ein modernes Kulturzentrum in einem neorenaissance Gebäude von 1892 mit Bibliotheks- und digitalen Angeboten.",
+                    ogTitle: "Stadtbibliothek Lüdenscheid – Bibliothek mit Geschichte seit 1857",
+                    ogDescription: "Eine der ältesten öffentlichen Bibliotheken Deutschlands in Lüdenscheid. Geschichte seit 1857, Architektur des 19. Jahrhunderts und moderner Kulturraum.",
+                    keywords: "Bibliothek Deutschland, älteste Bibliotheken Deutschlands, 1857 Bibliothek, Neorenaissance Gebäude, Kultur NRW, Sehenswürdigkeiten Lüdenscheid, historische Gebäude Deutschland, öffentliche Bibliotheken, Kulturzentrum Deutschland",
+                    ogImage: "https://our-travels.info/foto/Germany/nrw/arnsberg/Märkischer-Kreis/luedenscheid/altstadt_luedenscheid/stadtbücherei//001.jpg"
+                }
+            }
+        }
+    },
 
     //iserlohn
     {

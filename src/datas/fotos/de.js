@@ -612,6 +612,7 @@ export const Fotos = {
         { path: "Germany/nrw/arnsberg/Märkischer-Kreis/luedenscheid/altstadt_luedenscheid/008.jpg", title: { ru: "Старый город Люденшайда, 2026", ua: "Старе місто Люденшайда, 2026", de: "Altstadt Lüdenscheid, 2026" } },
         { path: "Germany/nrw/arnsberg/Märkischer-Kreis/luedenscheid/altstadt_luedenscheid/erloeserkirche_luedenscheid/001.jpg", title: { ru: "Церковь Спасителя в Люденшайде, 2006", ua: "Церква Спасителя в Люденшайді, 2006", de: "Die Erlöserkirche in Lüdenscheid, 2006" } },
         { path: "Germany/nrw/arnsberg/Märkischer-Kreis/luedenscheid/altstadt_luedenscheid/001.jpg", title: { ru: "Фонтан в старом городе, 2026", ua: "Фонтан у старому місті, 2026", de: "Brunnen in der Altstadt, 2026" } },
+        { path: "Germany/nrw/arnsberg/Märkischer-Kreis/luedenscheid/altstadt_luedenscheid/stadtbücherei//001.jpg", title: { ru: "Городская библиотека Люденшайда, 2026", ua: "Міська бібліотека Люденшайда, 2026", de: "Stadtbücherei Lüdenscheid, 2026" } },
       ],
       erloeserkirche_luedenscheid: [
         { path: "Germany/nrw/arnsberg/Märkischer-Kreis/luedenscheid/altstadt_luedenscheid/erloeserkirche_luedenscheid/001.jpg", title: { ru: "Церковь Спасителя в Люденшайде, 2006", ua: "Церква Спасителя в Люденшайді, 2006", de: "Die Erlöserkirche in Lüdenscheid, 2006" } },
@@ -683,6 +684,9 @@ export const Fotos = {
         { path: "Germany/nrw/arnsberg/Märkischer-Kreis/luedenscheid/stilleking/005.jpg", title: { ru: "Природный заповедник Стиллекинг, 2026", ua: "Природний заповідник Стиллекінг, 2026", de: "Naturschutzgebiet Stilleking, 2026" } },
         { path: "Germany/nrw/arnsberg/Märkischer-Kreis/luedenscheid/stilleking/006.jpg", title: { ru: "Природный заповедник Стиллекинг - Старая «липa суда», 2026", ua: "Природний заповідник Стиллекінг - Стара «липа суду», 2026", de: "Naturschutzgebiet Stilleking - Gerichtslinde, 2026" } },
         { path: "Germany/nrw/arnsberg/Märkischer-Kreis/luedenscheid/stilleking/007.jpg", title: { ru: "Природный заповедник Стиллекинг - Старая «липa суда», 2026", ua: "Природний заповідник Стиллекінг - Стара «липа суду», 2026", de: "Naturschutzgebiet Stilleking - Gerichtslinde, 2026" } },
+      ],
+      stadtbücherei_lüdenscheid: [
+        { path: "Germany/nrw/arnsberg/Märkischer-Kreis/luedenscheid/altstadt_luedenscheid/stadtbücherei//001.jpg", title: { ru: "Городская библиотека Люденшайда, 2026", ua: "Міська бібліотека Люденшайда, 2026", de: "Stadtbücherei Lüdenscheid, 2026" } },
       ],
     },
     iserlohn: {

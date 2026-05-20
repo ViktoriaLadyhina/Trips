@@ -3335,7 +3335,7 @@ const datas = [
         path: "altstadt_luedenscheid",
         countryPath: "germany", regionPath: "nrw", districtPath: "arnsberg", cityPath: "luedenscheid",
         fotoCard: "Germany/nrw/arnsberg/Märkischer-Kreis/luedenscheid/altstadt_luedenscheid/004.jpg",
-        subObjects: ["erloeserkirche_luedenscheid", "brunnen_altstadt_luedenscheid"],
+        subObjects: ["erloeserkirche_luedenscheid", "brunnen_altstadt_luedenscheid", "stadtbücherei_lüdenscheid"],
         location: "Lüdenscheid, Stadtteile Innenstadt / Staberg / Knapp, Tinsberg / Kluse, Deutschland",
         short_description: "Die Altstadt von Lüdenscheid ist das historische Herz der Stadt mit engen Straßen und einem ringförmigen Straßennetz um die Erlöserkirche. Hier sind Gebäude aus dem 18.–19. Jahrhundert, Reste der Stadtmauer und das historische Museum erhalten geblieben, und die gemütlichen Gassen verbinden Vergangenheit mit dem modernen Stadtleben.",
         short_description_subObjects: {
@@ -3343,6 +3343,7 @@ const datas = [
             items: [
                 { bold: "Erlöserkirche", text: "– historische Kirche mit charakteristischer Architektur, ein wichtiger kultureller Ort der Stadt." },
                 { bold: "Brunnen in der Altstadt", text: "– dekorativer Brunnen auf dem Hauptplatz, ein beliebter Ort für Spaziergänge und Fotos." },
+                { bold: "Stadtbibliothek", text: "– eine der ältesten öffentlichen Bibliotheken Deutschlands, untergebracht in einem historischen Gebäude." }
             ]
         },
         full_description: {
