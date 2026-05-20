@@ -67,6 +67,10 @@ const datas =
     // Dortmund
     westfalenpark: { ru: 'Вестфаленпарк', de: 'Westfalenpark', ua: 'Вестфаленпарк' },
 
+    // Хохзауэрланд Kreis
+    // sundern
+    sorpesee_sundern: { ru: 'Озеро Сорпезее', de: 'Sorpesee', ua: 'Озеро Сорпезее' },
+
     // Märkischer Kreis
     // Iserlohn
     dechenhohle_iserlohn: { ru: 'Пещера Дехенхёле', de: 'Dechenhöhle', ua: 'Печера Дехенхёле' },

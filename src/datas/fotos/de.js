@@ -731,6 +731,11 @@ export const Fotos = {
         { path: "Germany/nrw/arnsberg/Hochsauerlandkreis/sundern/001.jpg", title: { ru: "Зундерн, 2026", ua: "Зундерн, 2026", de: "Sundern, 2026" } },
         { path: "Germany/nrw/arnsberg/Hochsauerlandkreis/sundern/002.jpg", title: { ru: "Зундерн, 2026", ua: "Зундерн, 2026", de: "Sundern, 2026" } },
       ],
+      sorpesee_sundern: [
+        { path: "Germany/nrw/arnsberg/Hochsauerlandkreis/sundern/sorpesee/001.jpg", title: { ru: "Озеро Сорпезее, 2026", ua: "Озеро Сорпезее, 2026", de: "Sorpesee, 2026" } },
+        { path: "Germany/nrw/arnsberg/Hochsauerlandkreis/sundern/sorpesee/002.jpg", title: { ru: "Озеро Сорпезее, 2026", ua: "Озеро Сорпезее, 2026", de: "Sorpesee, 2026" } },
+        { path: "Germany/nrw/arnsberg/Hochsauerlandkreis/sundern/sorpesee/003.jpg", title: { ru: "Озеро Сорпезее, 2026", ua: "Озеро Сорпезее, 2026", de: "Sorpesee, 2026" } },
+      ],
     },
 
   },

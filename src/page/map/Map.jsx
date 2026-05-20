@@ -115,7 +115,11 @@ const Map = () => {
                       {/* Край Hochsauerland */}
                       <li><span>{t.districts.hochsauerland[lang]}</span>
                         <ul>
-                          <li><Link to="/germany/nrw/arnsberg/sundern">{t.cities.sundern[lang]}</Link></li>
+                          <li><Link to="/germany/nrw/arnsberg/sundern">{t.cities.sundern[lang]}</Link>
+                            <ul>
+                              <li><Link to="/germany/nrw/arnsberg/sundern/attractions/sorpesee_sundern">{t.attractions.sorpesee_sundern[lang]}</Link></li>
+                            </ul>
+                          </li>
                         </ul>
                       </li>
                       {/* Край Merkischer */}

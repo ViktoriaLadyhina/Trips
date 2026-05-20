@@ -1,7 +1,192 @@
 const datas = [
     // arnsberg округ
+
+    // Хохзауэрланд Kreis
+    // sundern
+    {
+        id: "sorpesee_sundern",
+        type: ["nature"], rating: "local",
+        path: "sorpesee_sundern",
+        countryPath: "germany", regionPath: "nrw", districtPath: "arnsberg", cityPath: "sundern",
+        fotoCard: "Germany/nrw/arnsberg/Hochsauerlandkreis/sundern/sorpesee/001.jpg",
+        coord: { lat: 51.35008, lng: 7.96750 },
+        translations: {
+            ru: {
+                name: "Озеро Сорпезее",
+                loc: {
+                    country: "Германия",
+                    region: "Северный Рейн-Вестфалия",
+                    district: "Арнсберг",
+                    city: "Зундерн",
+                    cityDistrict: "районы Лангшайд (Langscheid), Амеке (Amecke), Штемель (Stemel)"
+                },
+                short_description: "Озеро Сорпезее (Sorpesee) – живописное водохранилище в регионе Зауэрланд (Северный Рейн-Вестфалия, Германия). Озеро окружено густыми лесами и холмами и используется для отдыха, водных видов спорта и прогулок на природе.",
+                full_description: {
+                    title: "Описание и история",
+                    items: [
+                        { bold: "Озеро Сорпезее (Sorpesee)", text: "одно из самых глубоких водохранилищ региона Зауэрланд и популярное место отдыха в любое время года. Оно расположено в живописной природной зоне Северного Рейна-Вестфалии и известно чистой водой, ухоженными набережными и спокойной атмосферой, благодаря чему привлекает как туристов, так и местных жителей." },
+                        { text: "Вдоль берегов озера проложены пешеходные и велосипедные маршруты, а также оборудованы зоны отдыха, небольшие пляжи и места для купания. Летом здесь особенно популярны плавание, катание на SUP-досках и парусный спорт, а в более спокойные сезоны озеро становится идеальным местом для прогулок, пробежек и наблюдения за природой. Благодаря вытянутой форме и разнообразному рельефу береговой линии здесь можно найти как оживлённые туристические зоны, так и уединённые природные участки." },
+                        { text: "Особую атмосферу Сорпезее создаёт сочетание инженерного водохранилища и почти нетронутого ландшафта, где густые леса и холмы Зауэрланда подходят вплотную к воде. Это делает озеро одновременно функциональным объектом и природной зоной отдыха, где ощущается баланс между природой и человеком." },
+                        { text: "Озеро Сорпезее было создано в первой половине XX века как часть системы водоснабжения и регулирования водных ресурсов региона Рур и Зауэрланд. Строительство плотины началось в 1920–1930-х годах, а ввод в эксплуатацию состоялся в 1930-х годах. В дальнейшем гидротехнический комплекс неоднократно модернизировался для повышения его эффективности и безопасности." },
+                        { text: "Сегодня водохранилище играет важную роль в регулировании уровня воды, защите от наводнений и обеспечении питьевой водой региона. При этом со временем оно приобрело и значительную рекреационную функцию, став одной из ключевых зон отдыха в Зауэрланде. Сочетание технического назначения и природной красоты сделало Сорпезее устойчиво популярным направлением для круглогодичного туризма." },
+                    ]
+                },
+                practical_info: {
+                    title: "Практическая информация",
+                    items: [
+                        { bold: "Расположение:", text: "Город Зундерн, Северный Рейн-Вестфалия, Германия" },
+                        { bold: "Основные параметры озера", text: "(зависит от уровня воды и метода измерения): <br>- площадь: ~3,3 км², <br>- максимальная глубина: до ~70 м, <br>- объём: ~70 млн м³, <br>- длина: ~7 км" },
+                        { bold: "Доступ:", text: "удобно добираться на автомобиле, есть парковки у набережной" },
+                        { bold: "Купание:", text: "разрешено в специально оборудованных зонах" }
+                    ]
+                },
+                sub_objects: {
+                    title: "Прогулочные корабли на Sorpesee",
+                    items: [
+                        { text: "На озере Sorpesee курсируют прогулочные пассажирские корабли, которые позволяют увидеть водохранилище с воды и познакомиться с его природными и туристическими зонами." },
+                        { text: "Основные маршруты обычно соединяют Langscheid и Amecke, проходя вдоль самых живописных участков озера. Во время поездки открываются виды на лесистые берега, холмы Зауэрланда и спокойные бухты." },
+                        { text: "Сезон навигации, как правило, ограничен тёплым временем года (весна–осень), а расписание зависит от погодных условий и уровня воды. Такие прогулки популярны как у туристов, так и у местных жителей, особенно в выходные и в летний сезон." },
+                    ]
+                },
+                interestingFacts: {
+                    title: "Интересные факты",
+                    isList: true,
+                    items: [
+                        { text: "Озеро Сорпезее является инженерным водохранилищем Рурской системы водоснабжения. Оно играет важную роль в регулировании водоснабжения региона Рур и защите от наводнений." },
+                        { text: "Сорпезее считается одним из самых глубоких искусственных водоёмов в Северном Рейне-Вестфалии." },
+                        { text: "Уровень воды в озере может заметно изменяться в зависимости от сезона и потребностей водной системы." },
+                        { text: "Это одно из самых спокойных озёр региона, менее туристическое по сравнению с Мёнезее и Биггезее." }
+                    ]
+                },
+                construction_period: "1920–1930",
+                meta: {
+                    title: "Озеро Сорпезее (Sorpesee) – отдых, природа и водные виды спорта в Зауэрланде",
+                    description: "Sorpesee – живописное озеро в Зауэрланде, Германия. Прогулки, пляжи, водные виды спорта и отдых на природе в Северном Рейне-Вестфалии.",
+                    ogTitle: "Sorpesee – одно из самых красивых озёр Зауэрланда",
+                    ogDescription: "Горное озеро в Германии с чистой водой, лесами и зонами отдыха. Идеально для прогулок, спорта и летнего отдыха.",
+                    keywords: "Sorpesee, водохранилище Германия, отдых на природе Германия, озёра Северный Рейн-Вестфалия, достопримечательности, озеро",
+                    ogImage: "https://our-travels.info/foto/Germany/nrw/arnsberg/Hochsauerlandkreis/sundern/sorpesee/001.jpg"
+                }
+            },
+            ua: {
+                name: "Озеро Сорпезее",
+                loc: {
+                    country: "Німеччина",
+                    region: "Північний Рейн-Вестфалія",
+                    district: "Арнсберг",
+                    city: "Зундерн",
+                    cityDistrict: "райони Лангшайд (Langscheid), Амеке (Amecke), Штемель (Stemel)"
+                },
+                short_description: "Озеро Сорпезее (Sorpesee) – мальовниче водосховище в регіоні Зауерланд (Північний Рейн-Вестфалія, Німеччина). Озеро оточене густими лісами та пагорбами і використовується для відпочинку, водних видів спорту та прогулянок на природі.",
+                full_description: {
+                    title: "Опис і історія",
+                    items: [
+                        { bold: "Озеро Сорпезее (Sorpesee)", text: "є одним із найглибших водосховищ регіону Зауерланд і популярним місцем відпочинку протягом усього року. Воно розташоване в мальовничій природній зоні Північного Рейну-Вестфалії та відоме чистою водою, доглянутими набережними і спокійною атмосферою, завдяки чому приваблює як туристів, так і місцевих жителів." },
+                        { text: "Вздовж берегів озера прокладені пішохідні та велосипедні маршрути, а також облаштовані зони відпочинку, невеликі пляжі та місця для купання. Влітку тут особливо популярні плавання, катання на SUP-дошках і вітрильний спорт, а в більш спокійні сезони озеро стає ідеальним місцем для прогулянок, пробіжок і спостереження за природою. Завдяки витягнутій формі та різноманітному рельєфу берегової лінії тут можна знайти як жваві туристичні зони, так і відокремлені природні ділянки." },
+                        { text: "Особливу атмосферу Сорпезее створює поєднання інженерного водосховища і майже недоторканого ландшафту, де густі ліси та пагорби Зауерланду підходять безпосередньо до води. Це робить озеро одночасно функціональним об’єктом і природною зоною відпочинку, де відчувається баланс між природою та людиною." },
+                        { text: "Озеро Сорпезее було створене в першій половині XX століття як частина системи водопостачання та регулювання водних ресурсів регіону Рур і Зауерланд. Будівництво греблі розпочалося у 1920–1930-х роках, а введення в експлуатацію відбулося у 1930-х роках. Надалі гідротехнічний комплекс неодноразово модернізувався для підвищення його ефективності та безпеки." },
+                        { text: "Сьогодні водосховище відіграє важливу роль у регулюванні рівня води, захисті від повеней та забезпеченні питною водою регіону. Водночас з часом воно набуло й значної рекреаційної функції, ставши однією з ключових зон відпочинку в Зауерланді. Поєднання технічного призначення і природної краси зробило Сорпезе стійко популярним напрямком для цілорічного туризму." }
+                    ]
+                },
+                practical_info: {
+                    title: "Практична інформація",
+                    items: [
+                        { bold: "Розташування:", text: "Місто Зундерн, Північний Рейн-Вестфалія, Німеччина" },
+                        { bold: "Основні параметри озера", text: "(залежить від рівня води та методу вимірювання): <br>- площа: ~3,3 км², <br>- максимальна глибина: до ~70 м, <br>- об’єм: ~70 млн м³, <br>- довжина: ~7 км" },
+                        { bold: "Доступ:", text: "зручно добиратися автомобілем, є парковки біля набережної" },
+                        { bold: "Купання:", text: "дозволене у спеціально обладнаних зонах" }
+                    ]
+                },
+                sub_objects: {
+                    title: "Прогулянкові кораблі на Sorpesee",
+                    items: [
+                        { text: "На озері Sorpesee курсують прогулянкові пасажирські кораблі, які дозволяють побачити водосховище з води та познайомитися з його природними і туристичними зонами." },
+                        { text: "Основні маршрути зазвичай з’єднують Langscheid і Amecke, проходячи вздовж наймальовничіших ділянок озера. Під час поїздки відкриваються види на лісисті береги, пагорби Зауерланду та спокійні бухти." },
+                        { text: "Сезон навігації, як правило, обмежений теплою порою року (весна–осінь), а розклад залежить від погодних умов і рівня води. Такі прогулянки популярні як серед туристів, так і серед місцевих жителів, особливо у вихідні та в літній сезон." }
+                    ]
+                },
+                interestingFacts: {
+                    title: "Цікаві факти",
+                    isList: true,
+                    items: [
+                        { text: "Озеро Сорпезее є інженерним водосховищем Рурської системи водопостачання. Воно відіграє важливу роль у регулюванні водопостачання регіону Рур і захисті від повеней." },
+                        { text: "Сорпезее вважається одним із найглибших штучних водойм у Північному Рейні-Вестфалії." },
+                        { text: "Рівень води в озері може помітно змінюватися залежно від сезону та потреб водної системи." },
+                        { text: "Це одне з найспокійніших озер регіону, менш туристичне порівняно з Мьонезе та Біггезе." }
+                    ]
+                },
+                construction_period: "1920–1930",
+                meta: {
+                    title: "Озеро Сорпезее (Sorpesee) – відпочинок, природа та водні види спорту в Зауерланді",
+                    description: "Sorpesee – мальовниче озеро в Зауерланді, Німеччина. Прогулянки, пляжі, водні види спорту та відпочинок на природі в Північному Рейні-Вестфалії.",
+                    ogTitle: "Sorpesee – одне з найкрасивіших озер Зауерланду",
+                    ogDescription: "Гірське озеро в Німеччині з чистою водою, лісами та зонами відпочинку. Ідеально для прогулянок, спорту та літнього відпочинку.",
+                    keywords: "Sorpesee, водосховище Німеччина, відпочинок на природі Німеччина, озера Північний Рейн-Вестфалія, Зундерн, Лангшайд, Амеке, Зауерланд",
+                    ogImage: "https://our-travels.info/foto/Germany/nrw/arnsberg/Hochsauerlandkreis/sundern/sorpesee/001.jpg"
+                }
+            },
+            de: {
+                name: "Sorpesee",
+                loc: {
+                    country: "Deutschland",
+                    region: "Nordrhein-Westfalen",
+                    district: "Arnsberg",
+                    city: "Sundern",
+                    cityDistrict: "Stadtteile Langscheid, Amecke, Stemel"
+                },
+                short_description: "Der Sorpesee ist ein malerisches Stauseegebiet in der Region Sauerland (Nordrhein-Westfalen, Deutschland). Der See ist von dichten Wäldern und Hügeln umgeben und wird für Erholung, Wassersport und Spaziergänge in der Natur genutzt.",
+                full_description: {
+                    title: "Beschreibung und Geschichte",
+                    items: [
+                        { bold: "Der Sorpesee", text: "ist eines der tiefsten Stauseen der Region Sauerland und ein beliebtes Erholungsziel zu jeder Jahreszeit. Er liegt in einer malerischen Naturlandschaft Nordrhein-Westfalens und ist bekannt für sein klares Wasser, gepflegte Uferanlagen und seine ruhige Atmosphäre, wodurch er sowohl Touristen als auch Einheimische anzieht." },
+                        { text: "Entlang des Sees verlaufen Wander- und Radwege, außerdem gibt es eingerichtete Erholungszonen, kleine Strände und Badestellen. Im Sommer sind Schwimmen, Stand-Up-Paddling und Segeln besonders beliebt, während der See in ruhigeren Jahreszeiten ideal für Spaziergänge, Jogging und Naturbeobachtung ist. Durch seine langgestreckte Form und abwechslungsreiche Uferlandschaft finden sich sowohl belebte touristische Bereiche als auch ruhige Naturabschnitte." },
+                        { text: "Die besondere Atmosphäre des Sorpesees entsteht durch die Kombination eines technischen Stausees und einer nahezu unberührten Landschaft, in der Wälder und Hügel des Sauerlands direkt an das Wasser grenzen. Dadurch ist der See sowohl ein funktionales Bauwerk als auch ein Naturerholungsgebiet, das ein Gleichgewicht zwischen Mensch und Natur bietet." },
+                        { text: "Der Sorpesee wurde in der ersten Hälfte des 20. Jahrhunderts als Teil des Wasserwirtschafts- und Regulierungssystems der Regionen Ruhr und Sauerland angelegt. Der Bau der Staumauer begann in den 1920er- und 1930er-Jahren, und die Inbetriebnahme erfolgte in den 1930er-Jahren. In der Folge wurde das hydraulische System mehrfach modernisiert." },
+                        { text: "Heute spielt der Stausee eine wichtige Rolle bei der Regulierung des Wasserstandes, dem Hochwasserschutz und der Trinkwasserversorgung der Region. Gleichzeitig hat er sich zu einem bedeutenden Erholungsgebiet entwickelt und zählt zu den wichtigsten Freizeitdestinationen im Sauerland. Die Verbindung aus technischer Funktion und natürlicher Schönheit macht den Sorpesee zu einem ganzjährig beliebten Reiseziel." }
+                    ]
+                },
+                practical_info: {
+                    title: "Praktische Informationen",
+                    items: [
+                        { bold: "Lage:", text: "Stadt Sundern, Nordrhein-Westfalen, Deutschland" },
+                        { bold: "Seeparameter", text: "(abhängig vom Wasserstand und der Messmethode): <br>- Fläche: ~3,3 km², <br>- maximale Tiefe: bis ~70 m, <br>- Volumen: ~70 Mio. m³, <br>- Länge: ~7 km" },
+                        { bold: "Anreise:", text: "gut mit dem Auto erreichbar, Parkplätze entlang des Ufers vorhanden" },
+                        { bold: "Baden:", text: "in ausgewiesenen Bereichen erlaubt" }
+                    ]
+                },
+                sub_objects: {
+                    title: "Ausflugsschiffe auf dem Sorpesee",
+                    items: [
+                        { text: "Auf dem Sorpesee verkehren Ausflugspassagierschiffe, die es ermöglichen, das Stauseegebiet vom Wasser aus zu erleben und seine natürlichen sowie touristischen Bereiche kennenzulernen." },
+                        { text: "Die Hauptstrecken verbinden in der Regel Langscheid und Amecke und führen entlang der landschaftlich schönsten Abschnitte des Sees. Während der Fahrt eröffnen sich Ausblicke auf bewaldete Ufer, die Hügel des Sauerlands und ruhige Buchten." },
+                        { text: "Die Schifffahrtssaison ist üblicherweise auf die warme Jahreszeit (Frühling bis Herbst) beschränkt und der Fahrplan hängt von Wetterbedingungen und Wasserstand ab. Diese Fahrten sind sowohl bei Touristen als auch bei Einheimischen beliebt, besonders an Wochenenden und in der Sommersaison." }
+                    ]
+                },
+                interestingFacts: {
+                    title: "Interessante Fakten",
+                    isList: true,
+                    items: [
+                        { text: "Der Sorpesee ist ein technisches Stausee der Wasserwirtschaft des Ruhrsystems. Er spielt eine wichtige Rolle bei der Regulierung der Wasserversorgung der Region Ruhr und beim Hochwasserschutz." },
+                        { text: "Der Sorpesee gilt als eines der tiefsten künstlichen Gewässer in Nordrhein-Westfalen." },
+                        { text: "Der Wasserstand des Sees kann je nach Jahreszeit und Anforderungen des Wassersystems deutlich schwanken." },
+                        { text: "Er gehört zu den ruhigeren Seen der Region und ist weniger touristisch als der Möhnesee oder der Biggesee." }
+                    ]
+                },
+                construction_period: "1920–1930",
+                meta: {
+                    title: "Sorpesee – Natur, Erholung und Wassersport im Sauerland",
+                    description: "Der Sorpesee im Sauerland (Nordrhein-Westfalen) bietet Natur, Wanderwege, Strände und Wassersportmöglichkeiten in einer malerischen Umgebung.",
+                    ogTitle: "Sorpesee – einer der schönsten Seen im Sauerland",
+                    ogDescription: "Ein Stausee in Deutschland mit klarem Wasser, Wäldern und Erholungsgebieten. Ideal für Natur, Sport und Sommerurlaub.",
+                    keywords: "Sorpesee, Sauerland, Nordrhein-Westfalen, Sundern, Langscheid, Amecke, Stemel, Stausee Deutschland, Natururlaub",
+                    ogImage: "https://our-travels.info/foto/Germany/nrw/arnsberg/Hochsauerlandkreis/sundern/sorpesee/001.jpg"
+                }
+            }
+        }
+    },
+
     // Märkischer Kreis
-    //altena
+    // altena
     {
         id: "lutherkirche_altena",
         type: ["cathedral"], rating: "local",
