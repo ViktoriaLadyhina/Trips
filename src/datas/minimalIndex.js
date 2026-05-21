@@ -221,6 +221,7 @@ const datas =
     basilikaStPaulinus_trier: { ru: 'Базилика Святого Паулина', de: 'Basilika St. Paulinus', ua: 'Базиліка Святого Пауліна' },
     liebfrauenkirche_trier: { ru: 'Церковь Богоматери', de: 'Liebfrauenkirche', ua: 'Церква Богородиці' },
     altstadt_trier: { ru: 'Старый город Трира', de: 'Altstadt Trier', ua: 'Старе місто Тріра' },
+    kurfuerstliches_palais_trier: { ru: 'Избирательский (курфюрстский) дворец', de: 'Kurfürstliches Palais', ua: 'Виборчий (курфюрстський) палац' },
 
     //Saarburg
     altstadt_saarburg: { ru: 'Старый город Саарбурга', de: 'Altstadt Saarburg', ua: 'Старе місто Саарбурга' },

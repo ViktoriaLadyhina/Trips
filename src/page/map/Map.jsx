@@ -76,8 +76,9 @@ const Map = () => {
                           <li><Link to="/germany/rheinland_pfalz/city/trier/attractions/cathedral_trier">{t.attractions.cathedral_trier[lang]}</Link></li>
                           <li><Link to="/germany/rheinland_pfalz/city/trier/attractions/liebfrauenkirche_trier">{t.attractions.liebfrauenkirche_trier[lang]}</Link></li>
                           <li><Link to="/germany/rheinland_pfalz/city/trier/attractions/basilica_of_constantine_trier">{t.attractions.basilica_of_constantine_trier[lang]}</Link></li>
+                          <li><Link to="/germany/rheinland_pfalz/city/trier/attractions/kurfuerstliches_palais_trier">{t.attractions.kurfuerstliches_palais_trier[lang]}</Link></li>
                           <li><Link to="/germany/rheinland_pfalz/city/trier/attractions/basilikaStPaulinus_trier">{t.attractions.basilikaStPaulinus_trier[lang]}</Link></li>
-                          <li><Link to="/germany/rheinland_pfalz/city/trier/attractions/roman_bridge_trier">{t.attractions.roman_bridge_trier[lang]}</Link></li>
+                          <li><Link to="/germany/rheinland_pfalz/city/trier/attractions/roman_bridge_trier">{t.attractions.roman_bridge_trier[lang]}</Link></li>                          
                         </ul>
                       </li>
                       <li><Link to="/germany/rheinland_pfalz/city/trier/attractions/kaiserthermen_trier">{t.attractions.kaiserthermen_trier[lang]}</Link></li>

@@ -761,6 +761,7 @@ export const Fotos = {
         { path: "Germany/rheinland-pfalz/trier-city/altstadt/008.jpg", title: { ru: "Старый город Трира, 2024", ua: "Старе місто Тріра, 2024", de: "Altstadt Trier, 2024" } },
         { path: "Germany/rheinland-pfalz/trier-city/altstadt/portaNigra_trier/001.jpg", title: { ru: "Порта Нигра, 2024", ua: "Порта Нігра («Чорні ворота»), 2024", de: "Porta Nigra, 2024" } },
         { path: "Germany/rheinland-pfalz/trier-city/cathedral/001.jpg", title: { ru: "Кафедральный собор, 2024", ua: "Кафедральний собор, 2024", de: "Trierer Dom, 2024" } },
+        { path: "Germany/rheinland-pfalz/trier-city/altstadt/kurfuerstliches_palais/003.jpg", title: { ru: "Избирательский (курфюрстский) дворец, 2024", ua: "Виборчий (курфюрстський) палац, 2024", de: "Kurfürstliches Palais, 2024" } },
       ],
       portaNigra_trier: [
         { path: "Germany/rheinland-pfalz/trier-city/altstadt/portaNigra_trier/001.jpg", title: { ru: "Порта Нигра, 2024", ua: "Порта Нігра («Чорні ворота»), 2024", de: "Porta Nigra, 2024" } },
@@ -815,6 +816,15 @@ export const Fotos = {
         { path: "Germany/rheinland-pfalz/trier-city/liebfrauenkirche/003.jpg", title: { ru: "Церковь Богоматери (фото взято с интернета)", ua: "Церква Богородиці (фото взято з Інтернету)", de: "Liebfrauenkirche (Foto aus dem Internet)" } },
         { path: "Germany/rheinland-pfalz/trier-city/liebfrauenkirche/004.jpg", title: { ru: "Церковь Богоматери (фото взято с интернета)", ua: "Церква Богородиці (фото взято з Інтернету)", de: "Liebfrauenkirche (Foto aus dem Internet)" } },
         { path: "Germany/rheinland-pfalz/trier-city/liebfrauenkirche/005.jpg", title: { ru: "Церковь Богоматери - Саркофаговый алтарь Теодора и Теодериха фон Хорста (фото взято с интернета)", ua: "Церква Богородиці - Саркофаговий вівтар Теодора і Теодеріха фон Хорста (фото взято з Інтернету)", de: "Liebfrauenkirche - Grabaltar von Theodor und Theoderich von Horst (Foto aus dem Internet)" } },
+      ],
+      kurfuerstliches_palais_trier: [
+        { path: "Germany/rheinland-pfalz/trier-city/altstadt/kurfuerstliches_palais/001.jpg", title: { ru: "Избирательский (курфюрстский) дворец (фото взято с интернета)", ua: "Виборчий (курфюрстський) палац (фото взято з Інтернету)", de: "Kurfürstliches Palais (Foto aus dem Internet)" } },
+        { path: "Germany/rheinland-pfalz/trier-city/altstadt/kurfuerstliches_palais/003.jpg", title: { ru: "Избирательский (курфюрстский) дворец, 2024", ua: "Виборчий (курфюрстський) палац, 2024", de: "Kurfürstliches Palais, 2024" } },
+        { path: "Germany/rheinland-pfalz/trier-city/altstadt/kurfuerstliches_palais/004.jpg", title: { ru: "Избирательский (курфюрстский) дворец, 2024", ua: "Виборчий (курфюрстський) палац, 2024", de: "Kurfürstliches Palais, 2024" } },
+        { path: "Germany/rheinland-pfalz/trier-city/altstadt/kurfuerstliches_palais/005.jpg", title: { ru: "Избирательский (курфюрстский) дворец, 2024", ua: "Виборчий (курфюрстський) палац, 2024", de: "Kurfürstliches Palais, 2024" } },
+        { path: "Germany/rheinland-pfalz/trier-city/altstadt/kurfuerstliches_palais/006.jpg", title: { ru: "Избирательский (курфюрстский) дворец, 2024", ua: "Виборчий (курфюрстський) палац, 2024", de: "Kurfürstliches Palais, 2024" } },
+        { path: "Germany/rheinland-pfalz/trier-city/altstadt/kurfuerstliches_palais/007.jpg", title: { ru: "Избирательский (курфюрстский) дворец, 2024", ua: "Виборчий (курфюрстський) палац, 2024", de: "Kurfürstliches Palais, 2024" } },
+        { path: "Germany/rheinland-pfalz/trier-city/altstadt/kurfuerstliches_palais/008.jpg", title: { ru: "Избирательский (курфюрстский) дворец, 2024", ua: "Виборчий (курфюрстський) палац, 2024", de: "Kurfürstliches Palais, 2024" } },
       ],
     },
     saarburg: {

@@ -21,6 +21,31 @@ const datas = [
                     officialSite: [{ bold: 'Официальный сайт города', link: 'https://www.trier.de/' }
                     ]
                 },
+                admin: {
+                    title: 'Трир разделён на 19 местных округов (Ortsbezirke), каждый из которых имеет собственный местный совет. Основные округа города:',
+                    isList: true,
+                    items: [
+                        { bold: 'Trier-Mitte/Gartenfeld', text: '– центральный округ города, включающий исторический центр, римские памятники, площади, торговые улицы и административные здания (включает районы: Altstadt, Gartenfeld).' },
+                        { bold: 'Trier-Nord', text: '– северный округ с жилыми кварталами, промышленными зонами и городской инфраструктурой.' },
+                        { bold: 'Trier-Süd', text: '– южный округ с жилыми районами и винодельческими зонами на склонах долины Мозеля.' },
+                        { bold: 'Trier-West/Pallien', text: '– западный округ на левом берегу Мозеля с жилой застройкой и промышленными территориями.' },
+                        { bold: 'Trier-Ost', text: '– восточный округ города с университетом, жилыми районами и зелёными зонами.' },
+                        { bold: 'Ehrang-Quint', text: '– северный округ на Мозеле, включающий жилые районы и промышленную инфраструктуру.' },
+                        { bold: 'Ruwer/Eitelsbach', text: '– винодельческий округ в долине Рувер с сельскими территориями и виноградниками.' },
+                        { bold: 'Irsch', text: '– жилой округ на юго-востоке города с пригородной застройкой.' },
+                        { bold: 'Filsch', text: '– небольшой жилой округ с деревенской структурой и зелёными зонами.' },
+                        { bold: 'Zewen', text: '– юго-западный округ с жилыми кварталами и близостью к Люксембургскому направлению.' },
+                        { bold: 'Kürenz', text: '– округ у подножия Трирского университета с жилой и студенческой застройкой.' },
+                        { bold: 'Olewig', text: '– винодельческий округ, известный виноградниками и винными фестивалями.' },
+                        { bold: 'Tarforst', text: '– современный жилой округ рядом с университетом Трира.' },
+                        { bold: 'Feyen-Weismark', text: '– южный округ с жилыми кварталами и зелёными холмами.' },
+                        { bold: 'Pfalzel', text: '– исторический округ на Мозеле с древней застройкой и средневековой структурой.' },
+                        { bold: 'Biewer', text: '– северный округ с жилой застройкой вдоль Мозеля.' },
+                        { bold: 'Euren', text: '– западный округ с промышленными зонами и жилыми кварталами.' },
+                        { bold: 'Quint', text: '– небольшой округ на Мозеле с промышленно-жилым характером.' },
+                        { bold: 'Heiligkreuz', text: '– южный округ с плотной жилой застройкой и городской инфраструктурой.' }
+                    ]
+                },
                 geography: {
                     title: 'География',
                     items: [
@@ -86,6 +111,31 @@ const datas = [
                     phone: [{ bold: 'Телефонний код:', text: ' +49 0651' }],
                     officialSite: [{ bold: 'Офіційний сайт міста', link: 'https://www.trier.de/' }]
                 },
+                admin: {
+                    title: 'Трір поділений на 19 місцевих округів (Ortsbezirke), кожен з яких має власну місцеву раду. Основні округи міста:',
+                    isList: true,
+                    items: [
+                        { bold: 'Trier-Mitte/Gartenfeld', text: '– центральний округ міста, що включає історичний центр, римські пам’ятки, площі, торгові вулиці та адміністративні будівлі (включає райони: Altstadt, Gartenfeld).' },
+                        { bold: 'Trier-Nord', text: '– північний округ із житловими кварталами, промисловими зонами та міською інфраструктурою.' },
+                        { bold: 'Trier-Süd', text: '– південний округ із житловими районами та виноробними зонами на схилах долини Мозелю.' },
+                        { bold: 'Trier-West/Pallien', text: '– західний округ на лівому березі Мозелю з житловою забудовою та промисловими територіями.' },
+                        { bold: 'Trier-Ost', text: '– східний округ міста з університетом, житловими районами та зеленими зонами.' },
+                        { bold: 'Ehrang-Quint', text: '– північний округ на Мозелі, що включає житлові райони та промислову інфраструктуру.' },
+                        { bold: 'Ruwer/Eitelsbach', text: '– виноробний округ у долині Рувер із сільськими територіями та виноградниками.' },
+                        { bold: 'Irsch', text: '– житловий округ на південному сході міста з передміською забудовою.' },
+                        { bold: 'Filsch', text: '– невеликий житловий округ із сільською структурою та зеленими зонами.' },
+                        { bold: 'Zewen', text: '– південно-західний округ із житловими кварталами та близькістю до напрямку Люксембурга.' },
+                        { bold: 'Kürenz', text: '– округ біля Трірського університету з житловою та студентською забудовою.' },
+                        { bold: 'Olewig', text: '– виноробний округ, відомий виноградниками та винними фестивалями.' },
+                        { bold: 'Tarforst', text: '– сучасний житловий округ поруч із університетом Тріра.' },
+                        { bold: 'Feyen-Weismark', text: '– південний округ із житловими кварталами та зеленими пагорбами.' },
+                        { bold: 'Pfalzel', text: '– історичний округ на Мозелі з давньою забудовою та середньовічною структурою.' },
+                        { bold: 'Biewer', text: '– північний округ із житловою забудовою вздовж Мозелю.' },
+                        { bold: 'Euren', text: '– західний округ із промисловими зонами та житловими кварталами.' },
+                        { bold: 'Quint', text: '– невеликий округ на Мозелі з промислово-житловим характером.' },
+                        { bold: 'Heiligkreuz', text: '– південний округ із щільною житловою забудовою та міською інфраструктурою.' }
+                    ]
+                },
                 geography: {
                     title: 'Географія',
                     items: [
@@ -150,6 +200,31 @@ const datas = [
                     postalCode: [{ bold: 'Postleitzahl:', text: ' 54290-54296' }],
                     phone: [{ bold: 'Telefonvorwahl:', text: ' +49 0651' }],
                     officialSite: [{ bold: 'Offizielle Stadtwebseite', link: 'https://www.trier.de/' }]
+                },
+                admin: {
+                    title: 'Trier ist in 19 Ortsbezirke gegliedert, von denen jeder einen eigenen Ortsbeirat hat. Die wichtigsten Stadtteile sind:',
+                    isList: true,
+                    items: [
+                        { bold: 'Trier-Mitte/Gartenfeld', text: '– zentraler Stadtbezirk mit historischem Zentrum, römischen Denkmälern, Plätzen, Einkaufsstraßen und Verwaltungsgebäuden (einschließlich der Stadtteile: Altstadt, Gartenfeld).' },
+                        { bold: 'Trier-Nord', text: '– nördlicher Bezirk mit Wohngebieten, Industrieflächen und städtischer Infrastruktur.' },
+                        { bold: 'Trier-Süd', text: '– südlicher Bezirk mit Wohngebieten und Weinbauflächen an den Hängen des Moseltals.' },
+                        { bold: 'Trier-West/Pallien', text: '– westlicher Bezirk am linken Moselufer mit Wohnbebauung und Industrieflächen.' },
+                        { bold: 'Trier-Ost', text: '– östlicher Stadtbezirk mit Universität, Wohngebieten und Grünflächen.' },
+                        { bold: 'Ehrang-Quint', text: '– nördlicher Bezirk an der Mosel mit Wohngebieten und Industrieinfrastruktur.' },
+                        { bold: 'Ruwer/Eitelsbach', text: '– weinbaulich geprägter Bezirk im Ruwertal mit ländlichen Gebieten und Weinbergen.' },
+                        { bold: 'Irsch', text: '– Wohnbezirk im Südosten der Stadt mit vorstädtischer Bebauung.' },
+                        { bold: 'Filsch', text: '– kleiner Wohnbezirk mit dörflicher Struktur und Grünflächen.' },
+                        { bold: 'Zewen', text: '– südwestlicher Bezirk mit Wohngebieten und Nähe zur Luxemburg-Route.' },
+                        { bold: 'Kürenz', text: '– Bezirk am Fuße der Universität Trier mit Wohn- und Studentenwohngebieten.' },
+                        { bold: 'Olewig', text: '– weinbaulich geprägter Bezirk, bekannt für Weinberge und Weinfeste.' },
+                        { bold: 'Tarforst', text: '– moderner Wohnbezirk in der Nähe der Universität Trier.' },
+                        { bold: 'Feyen-Weismark', text: '– südlicher Bezirk mit Wohngebieten und grünen Hügellandschaften.' },
+                        { bold: 'Pfalzel', text: '– historischer Bezirk an der Mosel mit alter Bebauung und mittelalterlicher Struktur.' },
+                        { bold: 'Biewer', text: '– nördlicher Bezirk mit Wohnbebauung entlang der Mosel.' },
+                        { bold: 'Euren', text: '– westlicher Bezirk mit Industrieflächen und Wohngebieten.' },
+                        { bold: 'Quint', text: '– kleiner Bezirk an der Mosel mit industriell-wohnlichem Charakter.' },
+                        { bold: 'Heiligkreuz', text: '– südlicher Bezirk mit dichter Wohnbebauung und städtischer Infrastruktur.' }
+                    ]
                 },
                 geography: {
                     title: 'Geographie',
@@ -565,11 +640,11 @@ const datas = [
                         { text: 'Koblenz ist eine der ältesten Städte Deutschlands und liegt am Zusammenfluss von Rhein und Mosel.' },
                         { text: 'Die Stadt ist bekannt für ihre römische Geschichte, die Festung Ehrenbreitstein, ihre malerischen Uferpromenaden und ihren Status als wichtiges touristisches Zentrum der Region Oberes Mittelrheintal.' }
                     ],
-                    population: [ { bold: 'Einwohnerzahl:', text: ' etwa 115.000 (2025)' } ],
-                    area: [ { bold: 'Fläche:', text: ' etwa 105 km²' } ],
-                    postalCode: [ { bold: 'Postleitzahlen:', text: ' 56068–56077' } ],
-                    phone: [ { bold: 'Telefonvorwahl:', text: ' +49 0261' } ],
-                    officialSite: [ { bold: 'Offizielle Website von Koblenz', link: 'https://www.koblenz.de/' } ]
+                    population: [{ bold: 'Einwohnerzahl:', text: ' etwa 115.000 (2025)' }],
+                    area: [{ bold: 'Fläche:', text: ' etwa 105 km²' }],
+                    postalCode: [{ bold: 'Postleitzahlen:', text: ' 56068–56077' }],
+                    phone: [{ bold: 'Telefonvorwahl:', text: ' +49 0261' }],
+                    officialSite: [{ bold: 'Offizielle Website von Koblenz', link: 'https://www.koblenz.de/' }]
                 },
                 admin: {
                     title: 'Koblenz ist in 30 Stadtteile gegliedert. Die bekanntesten Stadtteile der Stadt:',
