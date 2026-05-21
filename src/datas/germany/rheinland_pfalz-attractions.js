@@ -327,6 +327,195 @@ const datas = [
         }
       }
     }
+  },
+  {
+    id: "deutsches_eck_koblenz",
+    type: ["landmark", 'monument_or_fountain', 'viewpoint'], rating: "top",
+    path: "deutsches_eck_koblenz",
+    countryPath: "germany", regionPath: "rheinland_pfalz",
+    districtPath: "city", cityPath: "koblenz",
+    fotoCard: "Germany/rheinland-pfalz/koblenz/deutsches_eck/001.jpg",
+    coord: { lat: 50.36407, lng: 7.60564 },
+    routes: "castles_rhine_valley", showMore: true,
+    translations: {
+      ru: {
+        name: "Немецкий угол",
+        loc: {
+          country: "Германия", region: "Рейнланд-Пфальц", district: "Город областного значения", city: "Кобленц", cityDistrict: "район Altstadt"
+        },
+        short_description: "Немецкий угол (Deutsches Eck) – знаменитый мыс в Кобленце, расположенный в месте слияния рек Рейн и Мозель. Это одна из самых известных исторических и туристических точек Германии, символизирующая объединение немецких земель и значение Кобленца как важного города на Рейне. Главной доминантой комплекса является монументальная конная статуя кайзера Вильгельма I.",
+        full_description: {
+          title: "Описание и история",
+          items: [
+            { bold: "Немецкий угол (Deutsches Eck) ", text: "находится в северной части исторического центра Кобленца, где воды Мозеля впадают в Рейн. Благодаря широким набережным, обзорным площадкам и панорамным видам это место стало визитной карточкой города и одной из наиболее посещаемых достопримечательностей федеральной земли Рейнланд-Пфальц" },
+            { text: "Сегодня Deutsches Eck представляет собой большой прогулочный комплекс с террасами, флагами федеральных земель Германии, памятными зонами и смотровыми площадками. Отсюда открывается вид на крепость Эренбрайтштайн, мосты через Рейн и Мозель, а также на начало знаменитой долины Верхнего Среднего Рейна, включённой в список Всемирного наследия ЮНЕСКО." },
+
+            { bold: "Атмосфера и значение места" },
+            { text: "Deutsches Eck сочетает природный ландшафт, историю, архитектуру и символическое значение. Это место часто используется для городских мероприятий, национальных праздников, туристических экскурсий и речных прогулок по Рейну и Мозелю." },
+            { text: "Благодаря расположению у воды Немецкий угол особенно популярен во время закатов и речной навигации. Здесь можно наблюдать круизные суда, прогулочные корабли и характерное разделение оттенков воды двух рек в месте их соединения." },
+            { bold: "История" },
+            { bold: "Средневековое происхождение", text: "Название «Deutsches Eck» связано с Тевтонским орденом (Deutscher Orden), который в XIII веке получил участок земли рядом с местом слияния рек. Орден построил здесь свою резиденцию и госпиталь, а территория постепенно стала известна как «Немецкий угол»." },
+            { text: "В течение столетий Кобленц играл важную роль как торговый и военный центр на Рейне. Расположение между двумя реками делало этот участок стратегически важным для контроля речных путей и торговли." },
+            { bold: "Создание памятника", text: "После смерти кайзера Вильгельма I в 1888 году по всей Германии начали появляться памятники в его честь. Для Кобленца выбрали место на мысе у слияния рек, а строительство монумента завершили в 1897 году." },
+            { text: "Проект создал архитектор Бруно Шмитц, известный своими национальными монументами эпохи Германской империи. Огромный постамент и конная статуя должны были демонстрировать силу и единство государства." },
+            { bold: "XX век и восстановление", text: "Во время Второй мировой войны памятник получил серьёзные повреждения в результате артиллерийских обстрелов. После войны остатки статуи демонтировали, а на постаменте был установлен флаг Германии как символ стремления к будущему объединению страны." },
+            { text: "После воссоединения Германии в 1990 году начались дискуссии о восстановлении монумента. В 1993 году новая копия конной статуи была установлена на историческом месте, и сегодня памятник вновь является одним из главных символов Кобленца." }
+          ]
+        },
+        sub_objects: {
+          title: "Объекты комплекса",
+          items: [
+            { bold: "Памятник кайзеру Вильгельму I", text: "<br>Центральным объектом Немецкого угла является огромный конный памятник кайзеру Вильгельму I – первому германскому императору после объединения Германии в XIX веке. Монумент был создан как символ единства Германской империи и национального подъёма после франко-прусской войны. <br>Высота всего комплекса вместе с постаментом составляет около 37 метров. Статуя обращена в сторону Рейна и долгое время считалась символом немецкого национального единства. После разрушений Второй мировой войны памятник долгое время отсутствовал, а его восстановление после объединения Германии в 1993 году стало важным политическим и историческим событием." },
+            { bold: "Панорамная площадка", text: "<br>Смотровая зона с видом на слияние Рейна и Мозеля, крепость Эренбрайтштайн и речную долину." },
+            { bold: "Памятные таблички", text: "<br>На территории размещены мемориальные плиты и информационные стенды, посвящённые истории Кобленца и объединению Германии." },
+            { bold: "Флаги федеральных земель", text: "<br>Вдоль набережной установлены флаги всех земель Германии как символ национального единства." },
+          ]
+        },
+        interestingFacts: {
+          title: "Интересные факты",
+          isList: true,
+          items: [
+            { text: "Название города «Кобленц» происходит от латинского слова Confluentes – «слияние рек»." },
+            { text: "Немецкий угол считается одним из самых фотографируемых мест на Рейне." },
+            { text: "Во время холодной войны на постаменте памятника находился только флаг Германии без статуи." },
+            { text: "Высота памятника вместе с постаментом достигает примерно 37 метров." },
+            { text: "Во время объединения Германии место стало символом восстановления национального единства." },
+            { text: "Отсюда начинается один из самых известных речных туристических маршрутов Германии." }
+          ]
+        },
+        construction_period: "XIII век – появление владений Тевтонского ордена, 1897 год – открытие памятника кайзеру Вильгельму I, 1993 год – восстановление монумента ",
+        architects: "Бруно Шмитц (Bruno Schmitz)",
+        founder: "Монумент был создан по инициативе властей Германской империи в память о кайзере Вильгельме I.",
+        meta: {
+          title: "Немецкий угол в Кобленце (Deutsches Eck) – слияние Рейна и Мозеля",
+          description: "Немецкий угол в Кобленце — знаменитое место слияния Рейна и Мозеля с памятником кайзеру Вильгельму I и панорамными видами.",
+          ogTitle: "Deutsches Eck – главная достопримечательность Кобленца",
+          ogDescription: "Узнайте историю Немецкого угла в Кобленце – места слияния Рейна и Мозеля, где расположен знаменитый памятник кайзеру Вильгельму I.",
+          keywords: "Deutsches Eck, Немецкий угол, Кобленц, Koblenz, Рейн, Мозель, слияние рек, памятник Вильгельму I, достопримечательности Кобленца, Rhine, Moselle, Kaiser Wilhelm monument, Германия, Rhine Valley, UNESCO Rhine Valley",
+          ogImage: "https://our-travels.info/foto/Germany/rheinland-pfalz/koblenz/deutsches_eck/001.jpg"
+        }
+      },
+      ua: {
+        name: "Німецький кут",
+        loc: {
+          country: "Німеччина", region: "Рейнланд-Пфальц", district: "Місто обласного значення", city: "Кобленц", cityDistrict: "район Altstadt"
+        },
+        short_description: "Німецький кут (Deutsches Eck) – знаменитий мис у Кобленці, розташований у місці злиття річок Рейн і Мозель. Це одна з найвідоміших історичних і туристичних точок Німеччини, що символізує об'єднання німецьких земель і значення Кобленца як важливого міста на Рейні. Головною домінантою комплексу є монументальна кінна статуя кайзера Вільгельма I.",
+        full_description: {
+          title: "Опис і історія",
+          items: [
+            { bold: "Німецький кут (Deutsches Eck) ", text: "розташований у північній частині історичного центру Кобленца, де води Мозелю впадають у Рейн. Завдяки широким набережним, оглядовим майданчикам і панорамним видам це місце стало візитною карткою міста та однією з найбільш відвідуваних пам’яток федеральної землі Рейнланд-Пфальц" },
+            { text: "Сьогодні Deutsches Eck є великим прогулянковим комплексом із терасами, прапорами федеральних земель Німеччини, пам’ятними зонами та оглядовими майданчиками. Звідси відкривається вид на фортецю Еренбрайтштайн, мости через Рейн і Мозель, а також на початок знаменитої долини Верхнього Середнього Рейну, включеної до списку Світової спадщини ЮНЕСКО." },
+
+            { bold: "Атмосфера і значення місця" },
+            { text: "Deutsches Eck поєднує природний ландшафт, історію, архітектуру та символічне значення. Це місце часто використовується для міських заходів, національних свят, туристичних екскурсій і річкових прогулянок Рейном і Мозелем." },
+            { text: "Завдяки розташуванню біля води Німецький кут особливо популярний під час заходів сонця та річкового руху. Тут можна спостерігати круїзні судна, прогулянкові кораблі та характерне розділення відтінків води двох річок у місці їх злиття." },
+
+            { bold: "Історія" },
+            { bold: "Середньовічне походження", text: "Назва «Deutsches Eck» пов’язана з Тевтонським орденом (Deutscher Orden), який у XIII столітті отримав ділянку землі поблизу місця злиття річок. Орден побудував тут свою резиденцію та госпіталь, а територія поступово стала відома як «Німецький кут»." },
+            { text: "Протягом століть Кобленц відігравав важливу роль як торговельний і військовий центр на Рейні. Розташування між двома річками робило цю ділянку стратегічно важливою для контролю річкових шляхів і торгівлі." },
+
+            { bold: "Створення пам’ятника", text: "Після смерті кайзера Вільгельма I у 1888 році по всій Німеччині почали з’являтися пам’ятники на його честь. Для Кобленца було обрано місце на мисі біля злиття річок, а будівництво монумента завершили у 1897 році." },
+            { text: "Проєкт створив архітектор Бруно Шмітц, відомий своїми національними монументами епохи Німецької імперії. Масивний постамент і кінна статуя мали демонструвати силу та єдність держави." },
+
+            { bold: "XX століття і відновлення", text: "Під час Другої світової війни пам’ятник зазнав серйозних пошкоджень унаслідок артилерійських обстрілів. Після війни залишки статуї було демонтовано, а на постаменті встановили прапор Німеччини як символ прагнення до майбутнього об’єднання країни." },
+            { text: "Після возз’єднання Німеччини у 1990 році розпочалися дискусії щодо відновлення монумента. У 1993 році нову копію кінної статуї було встановлено на історичному місці, і сьогодні пам’ятник знову є одним із головних символів Кобленца." }
+          ]
+        },
+        sub_objects: {
+          title: "Об’єкти комплексу",
+          items: [
+            { bold: "Пам’ятник кайзеру Вільгельму I", text: "<br>Центральним об’єктом Німецького кута є величезний кінний пам’ятник кайзеру Вільгельму I – першому німецькому імператору після об’єднання Німеччини у XIX столітті. Монумент був створений як символ єдності Німецької імперії та національного піднесення після франко-прусської війни. <br>Висота всього комплексу разом із постаментом становить близько 37 метрів. Статуя звернена у бік Рейну і тривалий час вважалася символом німецької національної єдності. Після руйнувань Другої світової війни пам’ятник довгий час був відсутній, а його відновлення після об’єднання Німеччини у 1993 році стало важливою політичною та історичною подією." },
+            { bold: "Панорамний майданчик", text: "<br>Оглядова зона з видом на злиття Рейну і Мозелю, фортецю Еренбрайтштайн та річкову долину." },
+            { bold: "Пам’ятні таблички", text: "<br>На території розміщені меморіальні плити та інформаційні стенди, присвячені історії Кобленца та об’єднанню Німеччини." },
+            { bold: "Прапори федеральних земель", text: "<br>Вздовж набережної встановлені прапори всіх земель Німеччини як символ національної єдності." }
+          ]
+        },
+        interestingFacts: {
+          title: "Цікаві факти",
+          isList: true,
+          items: [
+            { text: "Назва міста «Кобленц» походить від латинського слова Confluentes – «злиття річок»." },
+            { text: "Німецький кут вважається одним із найбільш фотографованих місць на Рейні." },
+            { text: "Під час холодної війни на постаменті пам’ятника був лише прапор Німеччини без статуї." },
+            { text: "Висота пам’ятника разом із постаментом становить приблизно 37 метрів." },
+            { text: "Під час об’єднання Німеччини місце стало символом відновлення національної єдності." },
+            { text: "Звідси починається один із найвідоміших річкових туристичних маршрутів Німеччини." }
+          ]
+        },
+        construction_period: "XIII століття – поява володінь Тевтонського ордену, 1897 рік – відкриття пам’ятника кайзеру Вільгельму I, 1993 рік – відновлення монумента",
+        architects: "Бруно Шмітц (Bruno Schmitz)",
+        founder: "Монумент був створений з ініціативи влади Німецької імперії на честь кайзера Вільгельма I.",
+        meta: {
+          title: "Німецький кут у Кобленці (Deutsches Eck) – злиття Рейну і Мозелю",
+          description: "Німецький кут у Кобленці — відоме місце злиття Рейну і Мозелю з пам’ятником кайзеру Вільгельму I та панорамними видами.",
+          ogTitle: "Deutsches Eck – головна визначна пам’ятка Кобленца",
+          ogDescription: "Дізнайтеся історію Німецького кута в Кобленці – місця злиття Рейну і Мозелю, де розташований знаменитий пам’ятник кайзеру Вільгельму I.",
+          keywords: "Deutsches Eck, Німецький кут, Кобленц, Koblenz, Рейн, Мозель, злиття річок, пам’ятник Вільгельму I, визначні місця Кобленца, Rhine, Moselle, Kaiser Wilhelm monument, Німеччина, Rhine Valley, UNESCO Rhine Valley",
+          ogImage: "https://our-travels.info/foto/Germany/rheinland-pfalz/koblenz/deutsches_eck/001.jpg"
+        }
+      },
+      de: {
+        name: "Deutsches Eck",
+        loc: {
+          country: "Deutschland", region: "Rheinland-Pfalz", district: "Stadt von kreisfreier Bedeutung", city: "Koblenz", cityDistrict: "Stadtteil Altstadt"
+        },
+        short_description: "Das Deutsche Eck ist eine berühmte Landzunge in Koblenz am Zusammenfluss von Rhein und Mosel. Es ist einer der bekanntesten historischen und touristischen Orte Deutschlands und symbolisiert die Einigung der deutschen Länder sowie die Bedeutung von Koblenz als wichtiger Stadt am Rhein. Das zentrale Wahrzeichen ist das monumentale Reiterstandbild von Kaiser Wilhelm I.",
+        full_description: {
+          title: "Beschreibung und Geschichte",
+          items: [
+            { bold: "Das Deutsche Eck", text: "liegt im nördlichen Teil der historischen Innenstadt von Koblenz, wo die Mosel in den Rhein mündet. Dank breiter Uferpromenaden, Aussichtsplattformen und Panoramablicken ist dieser Ort zu einem Wahrzeichen der Stadt und einer der meistbesuchten Sehenswürdigkeiten des Bundeslandes Rheinland-Pfalz geworden" },
+            { text: "Heute ist das Deutsche Eck ein großer Promenadenkomplex mit Terrassen, Fahnen der deutschen Bundesländer, Gedenkbereichen und Aussichtspunkten. Von hier aus hat man einen Blick auf die Festung Ehrenbreitstein, die Brücken über Rhein und Mosel sowie auf den Beginn des berühmten Oberen Mittelrheintals, das zum UNESCO-Welterbe gehört." },
+
+            { bold: "Atmosphäre und Bedeutung" },
+            { text: "Das Deutsche Eck verbindet Natur, Geschichte, Architektur und symbolische Bedeutung. Der Ort wird häufig für städtische Veranstaltungen, nationale Feiertage, touristische Ausflüge und Schifffahrten auf Rhein und Mosel genutzt." },
+            { text: "Aufgrund der Lage am Wasser ist das Deutsche Eck besonders bei Sonnenuntergang und Schiffsverkehr beliebt. Hier kann man Kreuzfahrtschiffe, Ausflugsboote und den charakteristischen Farbunterschied der beiden Flüsse beobachten." },
+
+            { bold: "Geschichte" },
+            { bold: "Mittelalterliche Ursprünge", text: "Der Name „Deutsches Eck“ geht auf den Deutschen Orden zurück, der im 13. Jahrhundert ein Grundstück am Zusammenfluss der Flüsse erhielt. Der Orden errichtete hier seine Niederlassung und ein Hospital, wodurch der Ort als „Deutsches Eck“ bekannt wurde." },
+            { text: "Über Jahrhunderte war Koblenz ein wichtiger Handels- und Militärstandort am Rhein. Die Lage zwischen zwei Flüssen machte diesen Bereich strategisch bedeutsam für die Kontrolle der Wasserwege und des Handels." },
+
+            { bold: "Errichtung des Denkmals", text: "Nach dem Tod von Kaiser Wilhelm I. im Jahr 1888 entstanden in ganz Deutschland zahlreiche Denkmäler zu seinen Ehren. Für Koblenz wurde die Landzunge am Zusammenfluss der Flüsse gewählt, und das Monument wurde 1897 fertiggestellt." },
+            { text: "Das Projekt wurde vom Architekten Bruno Schmitz entworfen, der für seine nationalen Monumente der Kaiserzeit bekannt ist. Der massive Sockel und das Reiterstandbild sollten Stärke und Einheit des Staates darstellen." },
+
+            { bold: "20. Jahrhundert und Wiederaufbau", text: "Während des Zweiten Weltkriegs wurde das Denkmal durch Artilleriebeschuss schwer beschädigt. Nach dem Krieg wurden die Reste der Statue entfernt und auf dem Sockel die deutsche Flagge als Symbol der Hoffnung auf zukünftige Einheit gesetzt." },
+            { text: "Nach der deutschen Wiedervereinigung im Jahr 1990 begann die Diskussion über den Wiederaufbau des Denkmals. 1993 wurde eine neue Kopie des Reiterstandbildes am historischen Standort aufgestellt, und heute ist es erneut eines der wichtigsten Wahrzeichen von Koblenz." }
+          ]
+        },
+        sub_objects: {
+          title: "Anlage des Komplexes",
+          items: [
+            { bold: "Reiterstandbild von Kaiser Wilhelm I", text: "<br>Das zentrale Element des Deutschen Ecks ist das monumentale Reiterstandbild von Kaiser Wilhelm I – dem ersten deutschen Kaiser nach der Einigung Deutschlands im 19. Jahrhundert. Das Denkmal wurde als Symbol der Einheit des Deutschen Reiches und des nationalen Aufschwungs nach dem Deutsch-Französischen Krieg geschaffen. <br>Die Gesamthöhe des Denkmals inklusive Sockel beträgt etwa 37 Meter. Die Statue ist zum Rhein hin ausgerichtet und galt lange als Symbol der deutschen Einheit. Nach den Zerstörungen des Zweiten Weltkriegs war das Denkmal lange Zeit verschwunden, und seine Wiedererrichtung im Jahr 1993 nach der Wiedervereinigung Deutschlands war ein bedeutendes politisches und historisches Ereignis." },
+            { bold: "Aussichtsplattform", text: "<br>Aussichtsbereich mit Blick auf den Zusammenfluss von Rhein und Mosel, die Festung Ehrenbreitstein und das Flusstal." },
+            { bold: "Gedenktafeln", text: "<br>Auf dem Gelände befinden sich Gedenkplatten und Informationstafeln zur Geschichte von Koblenz und zur deutschen Einheit." },
+            { bold: "Fahnen der Bundesländer", text: "<br>Entlang der Uferpromenade sind die Fahnen aller deutschen Bundesländer als Symbol der nationalen Einheit aufgestellt." }
+          ]
+        },
+        interestingFacts: {
+          title: "Interessante Fakten",
+          isList: true,
+          items: [
+            { text: "Der Name der Stadt Koblenz stammt vom lateinischen Wort Confluentes – „Zusammenfluss der Flüsse“." },
+            { text: "Das Deutsche Eck gehört zu den meistfotografierten Orten am Rhein." },
+            { text: "Während des Kalten Krieges stand auf dem Sockel des Denkmals nur die deutsche Flagge ohne Statue." },
+            { text: "Die Höhe des Denkmals inklusive Sockel beträgt etwa 37 Meter." },
+            { text: "Während der deutschen Wiedervereinigung wurde der Ort zu einem Symbol der nationalen Einheit." },
+            { text: "Von hier aus beginnt eine der bekanntesten Fluss-Tourismusrouten Deutschlands." }
+          ]
+        },
+        construction_period: "13. Jahrhundert – Entstehung der Besitzungen des Deutschen Ordens, 1897 – Eröffnung des Denkmals für Kaiser Wilhelm I, 1993 – Wiederaufbau des Monuments",
+        architects: "Bruno Schmitz",
+        founder: "Das Monument wurde auf Initiative der Behörden des Deutschen Reiches zum Gedenken an Kaiser Wilhelm I errichtet.",
+        meta: {
+          title: "Deutsches Eck in Koblenz – Zusammenfluss von Rhein und Mosel",
+          description: "Das Deutsche Eck in Koblenz ist ein berühmter Ort am Zusammenfluss von Rhein und Mosel mit dem Reiterstandbild von Kaiser Wilhelm I und Panoramablicken.",
+          ogTitle: "Deutsches Eck – wichtigste Sehenswürdigkeit von Koblenz",
+          ogDescription: "Erfahren Sie die Geschichte des Deutschen Ecks in Koblenz – dem Zusammenfluss von Rhein und Mosel mit dem berühmten Kaiser-Wilhelm-Denkmal.",
+          keywords: "Deutsches Eck, Koblenz, Rhein, Mosel, Zusammenfluss, Kaiser Wilhelm Denkmal, Sehenswürdigkeiten Koblenz, Germany, Rhine Valley, Moselle",
+          ogImage: "https://our-travels.info/foto/Germany/rheinland-pfalz/koblenz/deutsches_eck/001.jpg"
+        }
+      }
+    }
   }
 
 ];

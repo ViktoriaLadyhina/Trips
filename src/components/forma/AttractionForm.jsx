@@ -356,6 +356,8 @@ const AttractionForm = () => {
           <option value="nature">Природа</option>
           <option value="monument_or_fountain">Памятники и фонтаны</option>
           <option value="square">Площади</option>
+          <option value="landmark">Знаковые места</option>
+          <option value="viewpoint">Смотровые площадки</option>
         </select>
         <p className='note'>Если ничего не подходит, а надо, то добавляем в файл src/components/AttractionsFilters (в объекте attractionTypes). И не забываем обновить форму</p>
       </div>

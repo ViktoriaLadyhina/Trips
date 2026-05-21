@@ -90,6 +90,7 @@ const Map = () => {
                   {/* Кобленц - город */}
                   <li><Link to="/germany/rheinland_pfalz/city/koblenz">{t.cities.koblenz[lang]}</Link>
                     <ul>
+                      <li><Link to="/germany/rheinland_pfalz/city/koblenz/attractions/deutsches_eck_koblenz">{t.attractions.deutsches_eck_koblenz[lang]}</Link></li>
                       <li><Link to="/germany/rheinland_pfalz/city/koblenz/attractions/ehrenbreitstein_koblenz">{t.attractions.ehrenbreitstein_koblenz[lang]}</Link></li>
                       <li><Link to="/germany/rheinland_pfalz/city/koblenz/attractions/stolzenfels_koblenz">{t.attractions.stolzenfels_koblenz[lang]}</Link></li>
                     </ul>

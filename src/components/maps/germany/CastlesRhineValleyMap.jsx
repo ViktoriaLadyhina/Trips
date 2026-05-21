@@ -119,19 +119,20 @@ const RhineValley = [
 const routeOrder = {
     rhineValley: {
         ehrenbreitstein_koblenz: 1,
-        lahneck: 2,
-        stolzenfels_koblenz: 3,
-        marksburg: 4,
-        katz: 5,
-        rheinfels: 6,
-        loreley: 7,
-        maus: 8,
-        schonburg: 9,
-        pfalzgrafenstein: 10,
-        stahleck: 11,
-        sooneck: 12,
-        reichenstein: 13,
-        rheinstein: 14
+        deutsches_eck_koblenz: 2,
+        lahneck: 3,
+        stolzenfels_koblenz: 4,
+        marksburg: 5,
+        katz: 6,
+        rheinfels: 7,
+        loreley: 8,
+        maus: 9,
+        schonburg: 10,
+        pfalzgrafenstein: 11,
+        stahleck: 12,
+        sooneck: 13,
+        reichenstein: 14,
+        rheinstein: 15
     }
 };
 

@@ -231,6 +231,7 @@ const datas =
     // Koblenz
     ehrenbreitstein_koblenz: { ru: 'Крепость Эренбрайтштайн', de: 'Festung Ehrenbreitstein', ua: 'Фортеця Еренбрайтштайн' },
     stolzenfels_koblenz: { ru: 'Замок Штольценфельс', de: 'Schloss Stolzenfels', ua: 'Замок Штольценфельс' },
+    deutsches_eck_koblenz: { ru: 'Немецкий угол', de: 'Deutsches Eck', ua: 'Німецький кут' },
 
     //luxembourg
     ansembourg_castle: { ru: 'Замок-дворец Ансембург', de: 'Schloss Ansembourg', ua: 'Палац-замок Ансембурґ' },

@@ -10,10 +10,12 @@ const attractionTypes = [
   { value: 'amusement_park', ru: 'Парки развлечений', ua: 'Парки розваг', de: 'Freizeitparks' },
   { value: 'historical_building', ru: 'Исторические сооружения', ua: ' Історичні споруди', de: 'Historische Bauwerke' },
   { value: 'historical_area', ru: 'Исторические районы', ua: 'Історичні райони', de: 'Historische Viertel' },
+  { value: 'landmark', ru: 'Знаковые места', ua: 'Знакові місця', de: 'Wahrzeichen' },
   { value: 'technical_structure', ru: 'Технические сооружения', ua: 'Технічні споруди', de: 'Technische Bauwerke' },
   { value: 'nature', ru: 'Природа', ua: 'Природа', de: 'Natur' },
   { value: 'monument_or_fountain', ru: 'Памятники и фонтаны', ua: 'Пам’ятники та фонтани', de: 'Denkmäler und Brunnen' },
   { value: 'square', ru: 'Площадь', ua: 'Площа', de: 'Platz' },
+  { value: 'viewpoint', ru: 'Смотровые площадки', ua: 'Оглядові майданчики',  de: 'Aussichtspunkte' }
 ];
 
 // === Рейтинг фильтр ===

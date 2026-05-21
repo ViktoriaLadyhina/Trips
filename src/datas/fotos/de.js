@@ -10,6 +10,7 @@ export const Fotos = {
   castles_rhine_valley: [
     { path: "Germany/rheinland-pfalz/koblenz/ehrenbreitstein/001.jpg", title: { ru: "Крепость Эренбрайтштайн, 2023", ua: "Фортеця Еренбрайтштайн, 2023", de: "Festung Ehrenbreitstein, 2023" } },
     { path: "Germany/rheinland-pfalz/koblenz/stolzenfels/001.jpg", title: { ru: "Замок Штольценфельс (фото взято с интернета)", ua: "Замок Штольценфельс (фото взято з Інтернету)", de: "Schloss Stolzenfels (Foto aus dem Internet)" } },
+    { path: "Germany/rheinland-pfalz/koblenz/deutsches_eck/001.jpg", title: { ru: "Немецкий угол, 2023", ua: "Німецький кут, 2023", de: "Deutsches Eck, 2023" } },
   ],
 
   nrw: {
@@ -871,6 +872,12 @@ export const Fotos = {
       ],
       stolzenfels_koblenz: [
         { path: "Germany/rheinland-pfalz/koblenz/stolzenfels/001.jpg", title: { ru: "Замок Штольценфельс (фото взято с интернета)", ua: "Замок Штольценфельс (фото взято з Інтернету)", de: "Schloss Stolzenfels (Foto aus dem Internet)" } },
+      ],
+      deutsches_eck_koblenz: [
+        { path: "Germany/rheinland-pfalz/koblenz/deutsches_eck/001.jpg", title: { ru: "Немецкий угол, 2023", ua: "Німецький кут, 2023", de: "Deutsches Eck, 2023" } },
+        { path: "Germany/rheinland-pfalz/koblenz/deutsches_eck/002.jpg", title: { ru: "Немецкий угол, 2023", ua: "Німецький кут, 2023", de: "Deutsches Eck, 2023" } },
+        { path: "Germany/rheinland-pfalz/koblenz/deutsches_eck/003.jpg", title: { ru: "Немецкий угол, 2023", ua: "Німецький кут, 2023", de: "Deutsches Eck, 2023" } },
+        { path: "Germany/rheinland-pfalz/koblenz/deutsches_eck/004.jpg", title: { ru: "Немецкий угол, 2023", ua: "Німецький кут, 2023", de: "Deutsches Eck, 2023" } },
       ],
     },
   }
