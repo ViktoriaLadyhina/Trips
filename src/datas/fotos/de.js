@@ -11,6 +11,7 @@ export const Fotos = {
     { path: "Germany/rheinland-pfalz/koblenz/ehrenbreitstein/001.jpg", title: { ru: "Крепость Эренбрайтштайн, 2023", ua: "Фортеця Еренбрайтштайн, 2023", de: "Festung Ehrenbreitstein, 2023" } },
     { path: "Germany/rheinland-pfalz/koblenz/stolzenfels/001.jpg", title: { ru: "Замок Штольценфельс (фото взято с интернета)", ua: "Замок Штольценфельс (фото взято з Інтернету)", de: "Schloss Stolzenfels (Foto aus dem Internet)" } },
     { path: "Germany/rheinland-pfalz/koblenz/deutsches_eck/001.jpg", title: { ru: "Немецкий угол, 2023", ua: "Німецький кут, 2023", de: "Deutsches Eck, 2023" } },
+    { path: "Germany/rheinland-pfalz/koblenz/kurfuerstliches_schloss/001.jpg", title: { ru: "Курфюрстский дворец, 2023", ua: "Курфюрстський палац, 2023", de: "Kurfürstliches Schloss, 2023" } },
   ],
 
   nrw: {
@@ -889,6 +890,10 @@ export const Fotos = {
         { path: "Germany/rheinland-pfalz/koblenz/deutsches_eck/003.jpg", title: { ru: "Немецкий угол, 2023", ua: "Німецький кут, 2023", de: "Deutsches Eck, 2023" } },
         { path: "Germany/rheinland-pfalz/koblenz/deutsches_eck/004.jpg", title: { ru: "Немецкий угол, 2023", ua: "Німецький кут, 2023", de: "Deutsches Eck, 2023" } },
       ],
+      kurfuerstliches_schloss_koblenz: [
+        { path: "Germany/rheinland-pfalz/koblenz/kurfuerstliches_schloss/001.jpg", title: { ru: "Курфюрстский дворец, 2023", ua: "Курфюрстський палац, 2023", de: "Kurfürstliches Schloss, 2023" } },
+        { path: "Germany/rheinland-pfalz/koblenz/kurfuerstliches_schloss/002.jpg", title: { ru: "Курфюрстский дворец, 2023", ua: "Курфюрстський палац, 2023", de: "Kurfürstliches Schloss, 2023" } },
+      ]
     },
   }
 }

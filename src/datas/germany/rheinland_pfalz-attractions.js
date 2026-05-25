@@ -517,6 +517,159 @@ const datas = [
       }
     }
   },
+  {
+    id: "kurfuerstliches_schloss_koblenz",
+    type: ["palace_or_castle"], rating: "popular",
+    path: "kurfuerstliches_schloss_koblenz",
+    countryPath: "germany", regionPath: "rheinland_pfalz", districtPath: "city", cityPath: "koblenz",
+    fotoCard: "Germany/rheinland-pfalz/koblenz/kurfuerstliches_schloss/001.jpg",
+    coord: { lat: 50.355565, lng: 7.602226 },
+    routes: "castles_rhine_valley", showMore: true,
+    translations: {
+      ru: {
+        name: "Курфюрстский дворец",
+        loc: {
+          country: "Германия", region: "Рейнланд-Пфальц", district: "Город областного значения", city: "Кобленц", cityDistrict: "район Altstadt"
+        },
+        short_description: "Курфюрстский дворец – один из главных дворцов города и яркий пример раннего классицизма на Рейне. Он расположен прямо на набережной и формирует один из самых узнаваемых городских ансамблей. Сегодня дворец используется как административное и культурное здание, а его парк открыт для прогулок.",
+        full_description: {
+          title: "Описание и история",
+          items: [
+            { bold: "Курфюрстский дворец", text: "был построен в конце XVIII века как резиденция последнего трирского курфюрста Клеменса Венцеслава Саксонского. Архитектура дворца заметно отличается от типичных средневековых замков региона: вместо крепостных башен и оборонительных стен здесь преобладают симметрия, светлые фасады и элементы французского классицизма." },
+            { text: "Дворец расположен на берегу Рейна и образует единый ансамбль с дворцовым садом и набережной. Центральное здание соединяется с полукруглыми боковыми корпусами, формируя просторную площадь перед главным входом. Благодаря расположению у воды дворец выглядит особенно эффектно со стороны реки и считается одной из самых узнаваемых панорам Кобленца." },
+            { text: "Сегодня внутренние помещения в основном используются для мероприятий, конференций и работы федеральных учреждений. Часть комплекса периодически закрывается на реставрацию и подготовку к BUGA 2029. При этом дворцовый парк и прилегающие территории остаются доступными для прогулок и отдыха. " },
+            { bold: "История", text: "Строительство Курфюрстского дворца началось в 1777 году по приказу курфюрста Клеменса Венцеслава Саксонского. Над проектом работали французские архитекторы Пьер-Мишель д’Икснар и Антуан-Франсуа Пейр. Дворец стал одной из последних крупных резиденций, построенных в Германии непосредственно перед Французской революцией. " },
+            { text: "После бегства курфюрста в 1794 году дворец переходил под контроль французских, а затем прусских властей. В XIX веке здесь проживали представители прусской королевской семьи, включая будущего императора Вильгельма I и императрицу Августу. В этот период Кобленц получил репутацию «рейнского Потсдама»." },
+            { text: "Во время Второй мировой войны дворец почти полностью выгорел после бомбардировок 1944 года. В 1950-х годах его восстановили по историческим чертежам, хотя часть интерьеров была выполнена уже в стиле послевоенной эпохи." },
+            { text: "Дворец расположен в пределах культурного ландшафта Верхней долины Среднего Рейна, включённого в список Всемирного наследия ЮНЕСКО." }
+          ]
+        },
+        practical_info: {
+          title: "Практическая информация",
+          items: [
+            { bold: "Адрес:", text: "Neustadt 24, 56068 Koblenz, Germany" },
+            { bold: "Режим посещения: ", text: "внутренние помещения обычно недоступны для свободного туристического посещения, так как используются для мероприятий и работы учреждений. Дворцовый парк и территория вокруг замка открыты для прогулок." },
+            { bold: "Важно", text: "На момент 2026 года часть комплекса проходит масштабную реставрацию к федеральной садовой выставке BUGA 2029. Некоторые зоны могут быть временно закрыты." }
+          ]
+        },
+        interestingFacts: {
+          title: "Интересные факты",
+          isList: true,
+          items: [
+            { text: "Курфюрстский дворец считается одним из лучших примеров французского раннего классицизма в юго-западной Германии." },
+            { text: "Это одна из последних крупных дворцовых резиденций, построенных в Германии до Французской революции." },
+            { text: "После Второй мировой войны дворец пришлось практически полностью восстанавливать заново." },
+            { text: "Во время BUGA 2011 территория вокруг замка была полностью обновлена и превращена в современный парк." }
+          ]
+        },
+        construction_period: "1777–1793",
+        architects: "Пьер-Мишель д’Икснар (Pierre-Michel d’Ixnard), Антуан-Франсуа Пейр (Antoine-François Peyre) ",
+        founder: "Клеменс Венцеслав Саксонский – последний курфюрст Трира",
+        meta: {
+          title: "Курфюрстский дворец в Кобленце – дворец на берегу Рейна",
+          description: "Курфюрстский дворец в Кобленце – один из важнейших дворцов раннего классицизма Германии. История, архитектура, парк, фото и информация для туристов.",
+          ogTitle: "Курфюрстский дворец – исторический дворец Кобленца на Рейне",
+          ogDescription: "Узнайте историю Курфюрстского дворца в Кобленце – бывшей резиденции курфюрстов Трира, расположенной прямо на берегу Рейна.",
+          keywords: "Kurfürstliches Schloss Koblenz, Курфюрстский дворец Кобленц, дворец Кобленц, достопримечательности Кобленца, дворцы Германии, Koblenz palace, Electoral Palace Koblenz, Рейн Кобленц, дворцы Рейнланд-Пфальц, UNESCO Koblenz",
+          ogImage: "https://our-travels.info/foto/Germany/rheinland-pfalz/koblenz/kurfuerstliches_schloss/001.jpg"
+        }
+      },
+      ua: {
+        name: "Курфюрстський палац",
+        loc: {
+          country: "Німеччина", region: "Рейнланд-Пфальц", district: "Місто обласного значення", city: "Кобленц", cityDistrict: "район Altstadt"
+        },
+        short_description: "Курфюрстський палац – один із головних палаців міста та яскравий приклад раннього класицизму на Рейні. Він розташований прямо на набережній і формує один із найвпізнаваніших міських ансамблів. Сьогодні палац використовується як адміністративна та культурна будівля, а його парк відкритий для прогулянок.",
+        full_description: {
+          title: "Опис та історія",
+          items: [
+            { bold: "Курфюрстський палац", text: "був побудований наприкінці XVIII століття як резиденція останнього трірського курфюрста Клеменса Венцеслава Саксонського. Архітектура палацу помітно відрізняється від типових середньовічних замків регіону: замість оборонних веж і фортифікаційних стін тут переважають симетрія, світлі фасади та елементи французького класицизму." },
+            { text: "Палац розташований на березі Рейну та утворює єдиний ансамбль із палацовим садом і набережною. Центральна будівля з’єднується з напівкруглими бічними корпусами, формуючи простору площу перед головним входом. Завдяки розташуванню біля води палац виглядає особливо ефектно з боку річки та вважається однією з найвпізнаваніших панорам Кобленца." },
+            { text: "Сьогодні внутрішні приміщення переважно використовуються для заходів, конференцій і роботи федеральних установ. Частина комплексу періодично закривається на реставрацію та пíдготовку до BUGA 2029. При цьому палацовий парк і прилеглІ територІї залишаються доступними для прогулянок і вІдпочинку." },
+            { bold: "ІсторІя", text: "БудІвництво Курфюрстського палацу розпочалося у 1777 роцІ за наказом курфюрста Клеменса Венцеслава Саксонського. Над проєктом працювали французькІ архІтектори П’єр-МІшель д’Ікснар і Антуан-Франсуа Пейр. Палац став однІєю з останнИх великих резиденцIй, збудованИх у НІмеччинI безпосередньо перед Французькою революцIєю." },
+            { text: "ПІсля втечI курфюрста у 1794 роцI палац переходив пIд контроль французької, а згодом прусської влади. У XIX столIттI тут проживали представники прусської королIвської родини, включно з майбутнIм імператором ВIльгельмом I та імператрицею Августою. У цей перIод Кобленц отримав репутацIю «рейнського Потсдама»." },
+            { text: "ПІд час Другої свIтової вIйни палац майже повнIстю згорIв пIсля бомбардувань 1944 року. У 1950-х роках його вiдновили за iсторичними кресленнями, хоча частина iнтер’Єрiв була виконана вже у стилi пiслявоєнної епохи. Палац розташований у межах культурного ландшафту Верхньої долини Середнього Рейну, включеного до списку ВсесвIтньої спадщини ЮНЕСКО." }
+          ]
+        },
+        practical_info: {
+          title: "Практична інформація",
+          items: [
+            { bold: "Адреса:", text: "Neustadt 24, 56068 Koblenz, Germany" },
+            { bold: "Режим відвідування: ", text: "внутрішні приміщення зазвичай недоступні для вільного туристичного відвідування, оскільки використовуються для заходів і роботи установ. Палацовий парк і територія навколо замку відкриті для прогулянок." },
+            { bold: "Важливо", text: "Станом на 2026 рік частина комплексу проходить масштабну реставрацію до федеральної садової виставки BUGA 2029. Деякі зони можуть бути тимчасово закриті." }
+          ]
+        },
+        interestingFacts: {
+          title: "Цікаві факти",
+          isList: true,
+          items: [
+            { text: "Курфюрстський палац вважається одним із найкращих прикладів французького раннього класицизму в південно-західній Німеччині." },
+            { text: "Це одна з останніх великих палацових резиденцій, збудованих у Німеччині до Французької революції." },
+            { text: "Після Другої світової війни палац довелося практично повністю відбудовувати заново." },
+            { text: "Під час BUGA 2011 територія навколо замку була повністю оновлена та перетворена на сучасний парк." }
+          ]
+        },
+        construction_period: "1777–1793",
+        architects: "П’єр-Мішель д’Ікснар (Pierre-Michel d’Ixnard), Антуан-Франсуа Пейр (Antoine-François Peyre)",
+        founder: "Клеменс Венцеслав Саксонський – останній курфюрст Тріра",
+        meta: {
+          title: "Курфюрстський палац у Кобленці – палац на березі Рейну",
+          description: "Курфюрстський палац у Кобленці – один із найважливіших палаців раннього класицизму Німеччини. Історія, архітектура, парк, фото та інформація для туристів.",
+          ogTitle: "Курфюрстський палац – історичний палац Кобленця на Рейні",
+          ogDescription: "Дізнайтеся історію Курфюрстського палацу в Кобленці – колишньої резиденції курфюрстів Тріра, розташованої прямо на березі Рейну.",
+          keywords: "Kurfürstliches Schloss Koblenz, Курфюрстський палац Кобленц, палац Кобленц, визначні місця Кобленца, палаци Німеччини, Koblenz palace, Electoral Palace Koblenz, Рейн Кобленц, палаци Рейнланд-Пфальц, UNESCO Koblenz",
+          ogImage: "https://our-travels.info/foto/Germany/rheinland-pfalz/koblenz/kurfuerstliches_schloss/001.jpg"
+        }
+      },
+      de: {
+        name: "Kurfürstliches Schloss",
+        loc: {
+          country: "Deutschland", region: "Rheinland-Pfalz", district: "Stadt mit Kreisstatus", city: "Koblenz", cityDistrict: "Stadtteil Altstadt"
+        },
+        short_description: "Das Kurfürstliche Schloss ist eines der wichtigsten Paläste der Stadt und ein herausragendes Beispiel des frühen Klassizismus am Rhein. Es liegt direkt an der Uferpromenade und prägt eines der bekanntesten städtischen Ensembles. Heute wird das Schloss als Verwaltungs- und Kulturgebäude genutzt, und der Park ist für Spaziergänge geöffnet.",
+        full_description: {
+          title: "Beschreibung und Geschichte",
+          items: [
+            { bold: "Das Kurfürstliche Schloss", text: "wurde Ende des 18. Jahrhunderts als Residenz des letzten Trierer Kurfürsten Clemens Wenzeslaus von Sachsen erbaut. Die Architektur des Palastes unterscheidet sich deutlich von den typischen mittelalterlichen Burgen der Region: Statt Wehrtürmen und Befestigungsmauern dominieren Symmetrie, helle Fassaden und Elemente des französischen Klassizismus." },
+            { text: "Das Schloss liegt am Rheinufer und bildet ein einheitliches Ensemble mit dem Schlossgarten und der Uferpromenade. Der zentrale Bau ist mit halbkreisförmigen Seitenflügeln verbunden und bildet einen großzügigen Platz vor dem Haupteingang. Durch die Lage am Wasser wirkt der Palast besonders eindrucksvoll vom Fluss aus und gilt als eines der bekanntesten Panoramen von Koblenz." },
+            { text: "Heute werden die Innenräume hauptsächlich für Veranstaltungen, Konferenzen und die Arbeit von Bundesbehörden genutzt. Teile der Anlage werden regelmäßig restauriert und für die BUGA 2029 vorbereitet. Der Schlosspark und die umliegenden Bereiche sind jedoch für Spaziergänge und Erholung zugänglich." },
+            { bold: "Geschichte", text: "Der Bau des Kurfürstlichen Schlosses begann 1777 im Auftrag des Kurfürsten Clemens Wenzeslaus von Sachsen. An dem Projekt arbeiteten die französischen Architekten Pierre-Michel d’Ixnard und Antoine-François Peyre. Das Schloss war eine der letzten großen Residenzen, die in Deutschland unmittelbar vor der Französischen Revolution errichtet wurden." },
+            { text: "Nach der Flucht des Kurfürsten im Jahr 1794 kam der Palast unter französische und später preußische Kontrolle. Im 19. Jahrhundert wohnten hier Mitglieder der preußischen Königsfamilie, darunter der spätere Kaiser Wilhelm I. und Kaiserin Augusta. In dieser Zeit erhielt Koblenz den Ruf als „rheinisches Potsdam“." },
+            { text: "Während des Zweiten Weltkriegs wurde das Schloss nach den Bombardierungen von 1944 fast vollständig zerstört. In den 1950er Jahren wurde es anhand historischer Pläne wiederaufgebaut, wobei ein Teil der Innenräume im Stil der Nachkriegszeit gestaltet wurde. Das Schloss liegt innerhalb der Kulturlandschaft des Oberen Mittelrheintals, die zum UNESCO-Welterbe gehört." }
+          ]
+        },
+        practical_info: {
+          title: "Praktische Informationen",
+          items: [
+            { bold: "Adresse:", text: "Neustadt 24, 56068 Koblenz, Deutschland" },
+            { bold: "Besuchsregelung: ", text: "Die Innenräume sind in der Regel nicht frei zugänglich, da sie für Veranstaltungen und Behörden genutzt werden. Der Schlosspark und das umliegende Gelände sind jedoch für Spaziergänge geöffnet." },
+            { bold: "Wichtig", text: "Stand 2026 befindet sich ein Teil der Anlage im Rahmen der BUGA 2029 in umfangreichen Restaurierungsarbeiten. Einige Bereiche können zeitweise gesperrt sein." }
+          ]
+        },
+        interestingFacts: {
+          title: "Interessante Fakten",
+          isList: true,
+          items: [
+            { text: "Das Kurfürstliche Schloss gilt als eines der besten Beispiele des frühen französischen Klassizismus in Südwestdeutschland." },
+            { text: "Es ist eine der letzten großen Residenzen, die in Deutschland vor der Französischen Revolution errichtet wurden." },
+            { text: "Nach dem Zweiten Weltkrieg musste der Palast nahezu vollständig wiederaufgebaut werden." },
+            { text: "Während der BUGA 2011 wurde das Gelände rund um das Schloss umfassend modernisiert und in einen zeitgemäßen Park umgewandelt." }
+          ]
+        },
+        construction_period: "1777–1793",
+        architects: "Pierre-Michel d’Ixnard, Antoine-François Peyre",
+        founder: "Clemens Wenzeslaus von Sachsen – letzter Trierer Kurfürst",
+        meta: {
+          title: "Kurfürstliches Schloss in Koblenz – Palast am Rhein",
+          description: "Das Kurfürstliche Schloss in Koblenz ist eines der bedeutendsten Paläste des frühen Klassizismus in Deutschland. Geschichte, Architektur, Park und Besucherinformationen.",
+          ogTitle: "Kurfürstliches Schloss – historischer Palast in Koblenz am Rhein",
+          ogDescription: "Erfahren Sie mehr über das Kurfürstliche Schloss in Koblenz – die ehemalige Residenz der Trierer Kurfürsten direkt am Rheinufer.",
+          keywords: "Kurfürstliches Schloss Koblenz, Schloss Koblenz, Sehenswürdigkeiten Koblenz, Schlösser Deutschland, Koblenz palace, Electoral Palace Koblenz, Rhein Koblenz, Rheinland-Pfalz Schlösser, UNESCO Oberes Mittelrheintal",
+          ogImage: "https://our-travels.info/foto/Germany/rheinland-pfalz/koblenz/kurfuerstliches_schloss/001.jpg"
+        }
+      }
+    }
+  },
 
   // Trier
   {
