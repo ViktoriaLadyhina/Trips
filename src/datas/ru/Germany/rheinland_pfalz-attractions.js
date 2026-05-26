@@ -7,7 +7,7 @@ const datas = [
     path: "altstadt_trier",
     countryPath: "germany", regionPath: "rheinland_pfalz", districtPath: "city", cityPath: "trier",
     fotoCard: "Germany/rheinland-pfalz/trier-city/altstadt/001.jpg",
-    subObjects: ["portaNigra_trier", "cathedral_trier", "basilica_of_constantine_trier", "roman_bridge_trier", "basilikaStPaulinus_trier", "liebfrauenkirche_trier", "kurfuerstliches_palais_trier"],
+    subObjects: ["portaNigra_trier", "cathedral_trier", "basilica_of_constantine_trier", "roman_bridge_trier", "basilikaStPaulinus_trier", "liebfrauenkirche_trier", "kurfuerstliches_palais_trier", "hauptmarkt_trier"],
     location: "Трир, Германия",
     officialSite: [{ bold: "Официальный сайт", link: "https://www.trier.de" }],
     short_description: "Старый город Трира – исторический центр одного из старейших городов Германии с богатой архитектурой римского и средневекового периодов. Узкие улочки, площади с фонтанами и старинные дома создают уникальную атмосферу.",
@@ -21,7 +21,8 @@ const datas = [
         { bold: "🌍Римский мост", text: "– древний мост через реку Мозель, построенный римлянами в I веке и до сих пор частично используемый. Один из старейших сохранившихся мостов в Германии, расположенный в старом городе Трира." },
         { bold: "Базилика Святого Паулина", text: "– средневековая базилика, расположенная в старом городе Трира. В разные эпохи служила религиозным центром и примером готической архитектуры." },
         { bold: "🌍Церковь Богоматери", text: "– готическая церковь XIII века, расположенная в старом городе Трира рядом с Трирским собором. Один из ярких примеров средневековой архитектуры города." },
-        { bold: "Избирательский (курфюрстский) дворец", text: "– барочный дворец XVIII века, расположенный рядом с Базиликой Константина. Известен своим розовым фасадом и ухоженными садами." }
+        { bold: "Избирательский (курфюрстский) дворец", text: "– барочный дворец XVIII века, расположенный рядом с Базиликой Константина. Известен своим розовым фасадом и ухоженными садами." },
+        { bold: "Главная рыночная площадь Трира (Hauptmarkt)", text: "– центральная площадь старого города с фонтаном Святого Петра и историческими домами." }
       ]
     },
     full_description: {

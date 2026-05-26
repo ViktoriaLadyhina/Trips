@@ -6,7 +6,7 @@ const datas = [
     path: "altstadt_trier",
     countryPath: "germany", regionPath: "rheinland_pfalz", districtPath: "city", cityPath: "trier",
     fotoCard: "Germany/rheinland-pfalz/trier-city/altstadt/001.jpg",
-    subObjects: ["portaNigra_trier", "cathedral_trier", "basilica_of_constantine_trier", "roman_bridge_trier", "basilikaStPaulinus_trier", "liebfrauenkirche_trier", "kurfuerstliches_palais_trier"],
+    subObjects: ["portaNigra_trier", "cathedral_trier", "basilica_of_constantine_trier", "roman_bridge_trier", "basilikaStPaulinus_trier", "liebfrauenkirche_trier", "kurfuerstliches_palais_trier", "hauptmarkt_trier"],
     location: "Trier, Deutschland",
     officialSite: [{ bold: "Offizielle Website", link: "https://www.trier.de" }],
     short_description: "Die Altstadt von Trier – das historische Zentrum einer der ältesten Städte Deutschlands mit reicher Architektur aus der römischen und mittelalterlichen Zeit. Enge Gassen, Plätze mit Brunnen und alte Häuser schaffen eine einzigartige Atmosphäre.",
@@ -20,7 +20,8 @@ const datas = [
         { bold: "🌍Römische Brücke", text: "– antike Brücke über die Mosel, von den Römern im 1. Jahrhundert erbaut und teilweise noch heute genutzt. Eine der ältesten erhaltenen Brücken Deutschlands, gelegen in der Altstadt von Trier." },
         { bold: "Basilika St. Paulin", text: "– mittelalterliche Basilika in der Altstadt von Trier. Im Laufe der Jahrhunderte diente sie als religiöses Zentrum und ist ein Beispiel gotischer Architektur." },
         { bold: "🌍Liebfrauenkirche", text: "– gotische Kirche aus dem 13. Jahrhundert, gelegen in der Altstadt von Trier neben dem Trierer Dom. Eines der herausragenden Beispiele mittelalterlicher Stadtarchitektur." },
-        { bold: "Kurfürstliches Palais", text: "– barockes Schloss aus dem 18. Jahrhundert, neben der Konstantinbasilika gelegen. Bekannt für seine rosafarbene Fassade und gepflegten Gärten." }
+        { bold: "Kurfürstliches Palais", text: "– barockes Schloss aus dem 18. Jahrhundert, neben der Konstantinbasilika gelegen. Bekannt für seine rosafarbene Fassade und gepflegten Gärten." },
+        { bold: "Hauptmarkt Trier", text: "– zentraler Platz der Altstadt mit dem Petrusbrunnen und historischen Gebäuden." }
       ]
     },
     full_description: {

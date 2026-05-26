@@ -80,6 +80,7 @@ const Map = () => {
                     <ul>
                       <li><Link to="/germany/rheinland_pfalz/city/trier/attractions/altstadt_trier">{t.attractions.altstadt_trier[lang]}</Link>
                         <ul>
+                          <li><Link to="/germany/rheinland_pfalz/city/trier/attractions/hauptmarkt_trier">{t.attractions.hauptmarkt_trier[lang]}</Link></li>
                           <li><Link to="/germany/rheinland_pfalz/city/trier/attractions/portaNigra_trier">{t.attractions.portaNigra_trier[lang]}</Link></li>
                           <li><Link to="/germany/rheinland_pfalz/city/trier/attractions/cathedral_trier">{t.attractions.cathedral_trier[lang]}</Link></li>
                           <li><Link to="/germany/rheinland_pfalz/city/trier/attractions/liebfrauenkirche_trier">{t.attractions.liebfrauenkirche_trier[lang]}</Link></li>

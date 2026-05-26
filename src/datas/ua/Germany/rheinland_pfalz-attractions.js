@@ -6,7 +6,7 @@ const datas = [
     path: "altstadt_trier",
     countryPath: "germany", regionPath: "rheinland_pfalz", districtPath: "city", cityPath: "trier",
     fotoCard: "Germany/rheinland-pfalz/trier-city/altstadt/001.jpg",
-    subObjects: ["portaNigra_trier", "cathedral_trier", "basilica_of_constantine_trier", "roman_bridge_trier", "basilikaStPaulinus_trier", "liebfrauenkirche_trier", "kurfuerstliches_palais_trier"],
+    subObjects: ["portaNigra_trier", "cathedral_trier", "basilica_of_constantine_trier", "roman_bridge_trier", "basilikaStPaulinus_trier", "liebfrauenkirche_trier", "kurfuerstliches_palais_trier", "hauptmarkt_trier"],
     location: "Трір, Німеччина",
     officialSite: [{ bold: "Офіційний сайт", link: "https://www.trier.de" }],
     short_description: "Старе місто Тріра – історичний центр одного з найстаріших міст Німеччини з багатою архітектурою римського та середньовічного періодів. Вузькі вулички, площі з фонтанами та старовинні будинки створюють унікальну атмосферу.",
@@ -20,7 +20,8 @@ const datas = [
         { bold: "🌍Римський міст", text: "– стародавній міст через річку Мозель, побудований римлянами в I столітті та частково використовується й сьогодні. Один із найстаріших збережених мостів у Німеччині, розташований у старому місті Тріра." },
         { bold: "Базиліка Святого Пауліна", text: "– середньовічна базиліка, розташована у старому місті Тріра. Протягом різних епох служила релігійним центром і прикладом готичної архітектури." },
         { bold: "🌍Церква Богородиці", text: "– готична церква XIII століття, розташована у старому місті Тріра поруч із Трірським собором. Один із яскравих прикладів середньовічної архітектури міста." },
-        { bold: "Виборчий (курфюрстський) палац", text: "– бароковий палац XVIII століття, розташований поруч із Базилікою Костянтина. Відомий своїм рожевим фасадом і доглянутими садами." }
+        { bold: "Виборчий (курфюрстський) палац", text: "– бароковий палац XVIII століття, розташований поруч із Базилікою Костянтина. Відомий своїм рожевим фасадом і доглянутими садами." },
+        { bold: "Головна ринкова площа Тріра (Hauptmarkt)", text: "– центральна площа старого міста з фонтаном Святого Петра та історичними будівлями." }
       ]
     },
     full_description: {

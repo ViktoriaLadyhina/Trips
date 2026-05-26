@@ -990,6 +990,146 @@ const datas = [
         }
       }
     }
+  },
+  {
+    id: "hauptmarkt_trier",
+    type: ["square"], rating: "top",
+    path: "hauptmarkt_trier",
+    countryPath: "germany", regionPath: "rheinland_pfalz", districtPath: "city", cityPath: "trier",
+    hiddenFromList: true, showMore: true,
+    fotoCard: "Germany/rheinland-pfalz/trier-city/altstadt/007.jpg",
+    coord: { lat: 49.75639, lng: 6.64132 },
+    translations: {
+      ru: {
+        name: "Главная рыночная площадь Трира",
+        loc: {
+          country: "Германия", region: "Рейнланд-Пфальц", district: "Город областного значения", city: "Трир", cityDistrict: "район Altstadt"
+        },
+        short_description: "Главная рыночная площадь Трира с фонтаном Святого Петра и историческими зданиями. Центральное место старого города, где проходят рынки и городские события.",
+        full_description: {
+          title: "Описание и история",
+          items: [
+            { bold: "Главная рыночная площадь Трира ", text: "– одна из самых красивых и атмосферных площадей Трира. Её окружают яркие фасады средневековых и ренессансных домов, создающие ощущение живого исторического ансамбля. В центре площади находится фонтан Святого Петра (Petrusbrunnen), украшенный фигурами, символизирующими добродетели и важные стороны городской жизни." },
+            { text: "Сегодня площадь остаётся главным общественным пространством города. Здесь расположены кафе, магазины и уличные рынки, а также проходят рождественские ярмарки и городские фестивали. Несмотря на туристическую популярность, площадь остаётся местом повседневной жизни жителей Трира." },
+            { bold: "История" },
+            { text: "Главная рыночная площадь сформировалась в Средние века, когда Трир стал важным торговым и религиозным центром региона. Уже в X–XI веках здесь проходили рынки, а к позднему Средневековью площадь приобрела регулярную планировку и стала центральным торговым узлом города." },
+            { text: "Большинство окружающих зданий относится к эпохам поздней готики, ренессанса и барокко. Многие дома принадлежали богатым купцам и ремесленным гильдиям, что отражается в их декоре и архитектуре. Фонтан Святого Петра был установлен в XVI веке и символизировал городскую власть и благополучие." }
+          ]
+        },
+        practical_info: {
+          title: "Практическая информация",
+          items: [
+            { bold: "Адрес:", text: "Hauptmarkt, 54290 Trier, Deutschland" },
+            { bold: "Лучшее время:", text: "декабрь (рождественская ярмарка), весна и лето" }
+          ]
+        },
+        interestingFacts: {
+          title: "Интересные факты",
+          isList: true,
+          items: [
+            { text: "Площадь считается одной из старейших торговых площадей Германии" },
+            { text: "Цветные фасады домов частично восстановлены после разрушений" },
+            { text: "Фонтан Святого Петра – один из символов Трира" },
+            { text: "На площади проходили средневековые ярмарки и публичные объявления" },
+            { text: "Сегодня здесь часто проходят городские концерты и фестивали" }
+          ]
+        },
+        meta: {
+          title: "Главная рыночная площадь Трира – сердце старого города",
+          description: "Историческая рыночная площадь Трира с фонтаном Святого Петра, яркими фасадами домов, кафе и атмосферой средневекового города.",
+          ogTitle: "Главная рыночная площадь Трира – сердце старого города",
+          ogDescription: "Главная площадь Трира с фонтаном, историческими домами и атмосферой живого средневекового города.",
+          keywords: "Главная рыночная площадь Трира, Трир достопримечательности, старый город Трир, центр Трира, фонтан Святого Петра, Petrusbrunnen, Trier Germany, Rheinland-Pfalz, площади Германии",
+          ogImage: "https://our-travels.info/foto/Germany/rheinland-pfalz/trier-city/altstadt/007.jpg"
+        }
+      },
+      ua: {
+        name: "Головна ринкова площа Тріра",
+        loc: {
+          country: "Німеччина", region: "Рейнланд-Пфальц", district: "Місто обласного значення", city: "Трір", cityDistrict: "район Altstadt"
+        },
+        short_description: "Головна ринкова площа Тріра з фонтаном Святого Петра та історичними будівлями. Центральне місце старого міста, де проходять ринки та міські події.",
+        full_description: {
+          title: "Опис та історія",
+          items: [
+            { bold: "Головна ринкова площа Тріра ", text: "– одна з найкрасивіших та найатмосферніших площ Тріра. Її оточують яскраві фасади середньовічних і ренесансних будинків, що створюють відчуття живого історичного ансамблю. У центрі площі розташований фонтан Святого Петра (Petrusbrunnen), прикрашений фігурами, що символізують чесноти та важливі сторони міського життя." },
+            { text: "Сьогодні площа залишається головним громадським простором міста. Тут розташовані кафе, магазини та вуличні ринки, а також проходять різдвяні ярмарки й міські фестивалі. Попри туристичну популярність, площа залишається місцем повсякденного життя мешканців Тріра." },
+            { bold: "Історія" },
+            { text: "Головна ринкова площа сформувалася в Середньовіччі, коли Трір став важливим торговим і релігійним центром регіону. Уже в X–XI століттях тут проходили ринки, а до пізнього Середньовіччя площа набула регулярного планування і стала центральним торговим вузлом міста." },
+            { text: "Більшість навколишніх будівель належить до епох пізньої готики, ренесансу та бароко. Багато будинків належали заможним купцям і ремісничим гільдіям, що відображається в їхньому декорі та архітектурі. Фонтан Святого Петра був встановлений у XVI столітті та символізував міську владу і добробут." }
+          ]
+        },
+        practical_info: {
+          title: "Практична інформація",
+          items: [
+            { bold: "Адреса:", text: "Hauptmarkt, 54290 Trier, Deutschland" },
+            { bold: "Найкращий час:", text: "грудень (різдвяний ярмарок), весна та літо" }
+          ]
+        },
+        interestingFacts: {
+          title: "Цікаві факти",
+          isList: true,
+          items: [
+            { text: "Площа вважається однією з найстаріших торгових площ Німеччини" },
+            { text: "Кольорові фасади будинків частково відновлені після руйнувань" },
+            { text: "Фонтан Святого Петра – один із символів Тріра" },
+            { text: "На площі проходили середньовічні ярмарки та публічні оголошення" },
+            { text: "Сьогодні тут часто проходять міські концерти та фестивалі" }
+          ]
+        },
+        meta: {
+          title: "Головна ринкова площа Тріра – серце старого міста",
+          description: "Історична ринкова площа Тріра з фонтаном Святого Петра, яскравими фасадами будинків, кафе та атмосферою середньовічного міста.",
+          ogTitle: "Головна ринкова площа Тріра – серце старого міста",
+          ogDescription: "Головна площа Тріра з фонтаном, історичними будинками та атмосферою живого середньовічного міста.",
+          keywords: "Головна ринкова площа Тріра, Трір визначні місця, старе місто Трір, центр Тріра, фонтан Святого Петра, Petrusbrunnen, Trier Germany, Rheinland-Pfalz, площі Німеччини",
+          ogImage: "https://our-travels.info/foto/Germany/rheinland-pfalz/trier-city/altstadt/007.jpg"
+        }
+      },
+      de: {
+        name: "Hauptmarkt Trier",
+        loc: {
+          country: "Deutschland", region: "Rheinland-Pfalz", district: "Kreisfreie Stadt", city: "Trier", cityDistrict: "Stadtteil Altstadt"
+        },
+        short_description: "Der Hauptmarkt in Trier ist ein historischer Marktplatz mit dem Petrusbrunnen und alten Gebäuden. Er ist das zentrale Herz der Altstadt, wo Märkte und städtische Veranstaltungen stattfinden.",
+        full_description: {
+          title: "Beschreibung und Geschichte",
+          items: [
+            { bold: "Hauptmarkt Trier ", text: "– einer der schönsten und atmosphärischsten Plätze in Trier. Er ist von farbenfrohen Fassaden mittelalterlicher und Renaissance-Gebäude umgeben, die ein lebendiges historisches Ensemble bilden. Im Zentrum befindet sich der Petrusbrunnen, geschmückt mit Figuren, die Tugenden und wichtige Aspekte des städtischen Lebens symbolisieren." },
+            { text: "Heute ist der Platz weiterhin der wichtigste öffentliche Raum der Stadt. Hier befinden sich Cafés, Geschäfte und Wochenmärkte, außerdem finden Weihnachtsmärkte und Stadtfeste statt. Trotz seiner touristischen Bedeutung bleibt der Platz ein Ort des täglichen Lebens der Trierer." },
+            { bold: "Geschichte" },
+            { text: "Der Hauptmarkt entstand im Mittelalter, als Trier zu einem wichtigen Handels- und religiösen Zentrum der Region wurde. Bereits im 10. und 11. Jahrhundert fanden hier Märkte statt, und im späten Mittelalter entwickelte sich der Platz zu einem zentralen Handelszentrum der Stadt." },
+            { text: "Die meisten umliegenden Gebäude stammen aus der Spätgotik, der Renaissance und dem Barock. Viele Häuser gehörten wohlhabenden Kaufleuten und Zunftgemeinschaften, was sich in ihrer Architektur und Dekoration widerspiegelt. Der Petrusbrunnen wurde im 16. Jahrhundert errichtet und symbolisierte städtische Macht und Wohlstand." }
+          ]
+        },
+        practical_info: {
+          title: "Praktische Informationen",
+          items: [
+            { bold: "Adresse:", text: "Hauptmarkt, 54290 Trier, Deutschland" },
+            { bold: "Beste Zeit:", text: "Dezember (Weihnachtsmarkt), Frühling und Sommer" }
+          ]
+        },
+        interestingFacts: {
+          title: "Interessante Fakten",
+          isList: true,
+          items: [
+            { text: "Der Platz gilt als einer der ältesten Marktplätze Deutschlands" },
+            { text: "Die farbigen Fassaden wurden teilweise nach Zerstörungen restauriert" },
+            { text: "Der Petrusbrunnen ist eines der Wahrzeichen von Trier" },
+            { text: "Auf dem Platz fanden mittelalterliche Märkte und öffentliche Bekanntmachungen statt" },
+            { text: "Heute finden hier häufig Konzerte und Stadtfeste statt" }
+          ]
+        },
+        meta: {
+          title: "Hauptmarkt Trier – Herz der Altstadt",
+          description: "Historischer Marktplatz in Trier mit Petrusbrunnen, farbigen Häuserfassaden, Cafés und mittelalterlicher Atmosphäre.",
+          ogTitle: "Hauptmarkt Trier – Herz der Altstadt",
+          ogDescription: "Der Hauptmarkt in Trier mit Brunnen, historischen Gebäuden und lebendiger mittelalterlicher Atmosphäre.",
+          keywords: "Hauptmarkt Trier, Trier Sehenswürdigkeiten, Altstadt Trier, Trier Stadtzentrum, Petrusbrunnen, Deutschland Plätze, Rheinland-Pfalz, Trier Germany",
+          ogImage: "https://our-travels.info/foto/Germany/rheinland-pfalz/trier-city/altstadt/007.jpg"
+        }
+      }
+    }
   }
 
 ];
