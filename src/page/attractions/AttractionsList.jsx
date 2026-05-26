@@ -149,9 +149,7 @@ const AttractionsList = () => {
 
             <BreadCrumbs crumbs={crumbs} />
 
-            <div className="attractions__title">
-                {attractionsTitle[lang]}
-            </div>
+            <h1 className="attractions__title">{attractionsTitle[lang]} </h1>
 
             <div className="map-wrapper">
                 <AttrMap city={city} attractions={visibleAttractions} lang={lang} />

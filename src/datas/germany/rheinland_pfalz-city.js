@@ -483,6 +483,7 @@ const datas = [
                     isList: true,
                     items: [
                         { bold: 'Altstadt', text: ' – исторический центр города с площадями, старинными зданиями, ресторанами и туристическими улицами.' },
+                        { bold: 'Mitte', text: ' – центральный административный район города, включающий современные кварталы, набережные Рейна и Курфюрстский дворец.' },
                         { bold: 'Ehrenbreitstein', text: ' – район на правом берегу Рейна, известный одноимённой крепостью и панорамными видами.' },
                         { bold: 'Metternich', text: ' – крупный жилой и университетский район на западе города.' },
                         { bold: 'Karthause', text: ' – возвышенный район с жилыми кварталами и зелёными зонами.' },
@@ -567,6 +568,7 @@ const datas = [
                     isList: true,
                     items: [
                         { bold: 'Altstadt', text: ' – історичний центр міста з площами, старовинними будівлями, ресторанами та туристичними вулицями.' },
+                        { bold: 'Mitte', text: ' – центральний адміністративний район міста, що включає сучасні квартали, набережні Рейну та Курфюрстський палац.' },
                         { bold: 'Ehrenbreitstein', text: ' – район на правому березі Рейну, відомий однойменною фортецею та панорамними краєвидами.' },
                         { bold: 'Metternich', text: ' – великий житловий та університетський район на заході міста.' },
                         { bold: 'Karthause', text: ' – підвищений район із житловими кварталами та зеленими зонами.' },
@@ -651,6 +653,7 @@ const datas = [
                     isList: true,
                     items: [
                         { bold: 'Altstadt', text: ' – das historische Zentrum der Stadt mit Plätzen, historischen Gebäuden, Restaurants und touristischen Straßen.' },
+                        { bold: 'Mitte', text: ' – zentraler Verwaltungsbezirk der Stadt mit modernen Vierteln, Rheinpromenaden und dem Kurfürstlichen Schloss.' },
                         { bold: 'Ehrenbreitstein', text: ' – Stadtteil am rechten Rheinufer, bekannt für die gleichnamige Festung und Panoramablicke.' },
                         { bold: 'Metternich', text: ' – ein großer Wohn- und Universitätsstadtteil im Westen der Stadt.' },
                         { bold: 'Karthause', text: ' – ein höher gelegener Stadtteil mit Wohngebieten und Grünflächen.' },

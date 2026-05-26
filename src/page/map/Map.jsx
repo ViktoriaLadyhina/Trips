@@ -3,7 +3,9 @@ import { Link } from 'react-router-dom';
 import './Map.scss';
 import BreadCrumbs from '../../components/breadCrumbs/BreadCrumbs';
 import datas from '../../datas/minimalIndex'
+import { Helmet } from 'react-helmet-async';
 
+const sitemap = { ru: "Карта сайта", ua: "Мапа сайту", de: "Sitemap" };
 
 const Map = () => {
   const { lang } = useSelector((state) => state.language);
@@ -16,12 +18,18 @@ const Map = () => {
       label: lang === 'ru' ? 'Главная' : lang === 'de' ? 'Startseite' : 'Головна',
       path: '/'
     },
-    { label: lang === 'ru' ? 'Карта сайта' : lang === 'de' ? 'Sitemap' : 'Мапа сайту' }
+    { label: sitemap[lang] }
   ];
 
   return (
     <div className='map'>
+
+      <Helmet>
+          <title>{sitemap[lang]}</title>
+      </Helmet>
+
       <BreadCrumbs crumbs={crumbs} />
+      
       <div className='map__pages'>
         <ul>
           {/* Германия */}
@@ -95,6 +103,7 @@ const Map = () => {
                       <li><Link to="/germany/rheinland_pfalz/city/koblenz/attractions/ehrenbreitstein_koblenz">{t.attractions.ehrenbreitstein_koblenz[lang]}</Link></li>
                       <li><Link to="/germany/rheinland_pfalz/city/koblenz/attractions/stolzenfels_koblenz">{t.attractions.stolzenfels_koblenz[lang]}</Link></li>
                       <li><Link to="/germany/rheinland_pfalz/city/koblenz/attractions/kurfuerstliches_schloss_koblenz">{t.attractions.kurfuerstliches_schloss_koblenz[lang]}</Link></li>
+                      <li><Link to="/germany/rheinland_pfalz/city/koblenz/attractions/altstadt_koblenz">{t.attractions.altstadt_koblenz[lang]}</Link></li>
                     </ul>
                   </li>
                 </ul>

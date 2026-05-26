@@ -47,10 +47,6 @@ const Attraction = () => {
 
     const attraction = attractions.find(a => a.path === attractionsPath);
 
-    <Helmet>
-        <title>{attraction?.name}</title>
-    </Helmet>
-
     const meta = attraction?.meta;
 
     // Преобразуем в массив для Gallery
@@ -150,7 +146,7 @@ const Attraction = () => {
         <div className="attraction">
             {meta && (
                 <Helmet>
-                    <title>{meta?.title}</title>
+                    <title>{attraction?.name || meta?.title}</title>
                     <meta name="description" content={meta?.description} />
                     {meta?.keywords && (<meta name="keywords" content={meta.keywords} />)}
                     <meta property="og:title" content={meta?.ogTitle} />
@@ -161,7 +157,7 @@ const Attraction = () => {
 
             <BreadCrumbs crumbs={crumbs} />
 
-            <div className='attraction__title'>{attraction.name && (attraction.name)}</div>
+            <h1 className='attraction__title'>{attraction.name && (attraction.name)}</h1>
 
             {attraction.mapOpen && (
                 <FilteredMap map={attraction.mapOpen} />

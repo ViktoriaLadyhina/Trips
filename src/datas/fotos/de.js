@@ -893,7 +893,22 @@ export const Fotos = {
       kurfuerstliches_schloss_koblenz: [
         { path: "Germany/rheinland-pfalz/koblenz/kurfuerstliches_schloss/001.jpg", title: { ru: "Курфюрстский дворец, 2023", ua: "Курфюрстський палац, 2023", de: "Kurfürstliches Schloss, 2023" } },
         { path: "Germany/rheinland-pfalz/koblenz/kurfuerstliches_schloss/002.jpg", title: { ru: "Курфюрстский дворец, 2023", ua: "Курфюрстський палац, 2023", de: "Kurfürstliches Schloss, 2023" } },
-      ]
+      ],
+      altstadt_koblenz: [
+        { path: "Germany/rheinland-pfalz/koblenz/altstadt/001.jpg", title: { ru: "Фонтан Клеменса, 2023", ua: "Фонтан Клеменса, 2023", de: "Klemensbrunnen, 2023" } },
+        { path: "Germany/rheinland-pfalz/koblenz/altstadt/002.jpg", title: { ru: "Историческая колонна, 2023", ua: "Історична колона, 2023", de: "Historiensäule, 2023" } },
+        { path: "Germany/rheinland-pfalz/koblenz/altstadt/003.jpg", title: { ru: "Фонтан «Шенгель» (Schängelbrunnen), 2023", ua: "Фонтан «Шенгель» (Schängelbrunnen), 2023", de: "Schängelbrunnen, 2023" } },
+        { path: "Germany/rheinland-pfalz/koblenz/altstadt/004.jpg", title: { ru: "Старый город Кобленца, 2023", ua: "Старе місто, 2023", de: "Altstadt, 2023" } },
+        { path: "Germany/rheinland-pfalz/koblenz/altstadt/005.jpg", title: { ru: "Утиный фонтан (Entenbrunnen), 2023", ua: "Качиний фонтан (Entenbrunnen), 2023", de: "Entenbrunnen, 2023" } },
+        { path: "Germany/rheinland-pfalz/koblenz/altstadt/006.jpg", title: { ru: "Старый город Кобленца, 2023", ua: "Старе місто, 2023", de: "Altstadt, 2023" } },
+        { path: "Germany/rheinland-pfalz/koblenz/altstadt/007.jpg", title: { ru: "Старый город Кобленца, 2023", ua: "Старе місто, 2023", de: "Altstadt, 2023" } },
+        { path: "Germany/rheinland-pfalz/koblenz/altstadt/008.jpg", title: { ru: "Старый город Кобленца, 2023", ua: "Старе місто, 2023", de: "Altstadt, 2023" } },
+        { path: "Germany/rheinland-pfalz/koblenz/altstadt/009.jpg", title: { ru: "Памятник «Реше-Хеннерих», 2023", ua: "Пам’ятник «Реше-Хеннерих», 2023", de: "Denkmal für Rese-Hennrich, 2023" } },
+        { path: "Germany/rheinland-pfalz/koblenz/altstadt/010.jpg", title: { ru: "Старый город Кобленца, 2023", ua: "Старе місто, 2023", de: "Altstadt, 2023" } },
+        { path: "Germany/rheinland-pfalz/koblenz/altstadt/011.jpg", title: { ru: "Скульптура «Торговка и полицейский», 2023", ua: "Скульптура «Торговка и полицейский», 2023", de: "Marktfrau und Schutzmann, 2023" } },
+        { path: "Germany/rheinland-pfalz/koblenz/altstadt/012.jpg", title: { ru: "Старый город Кобленца, 2023", ua: "Старе місто, 2023", de: "Altstadt, 2023" } },
+        { path: "Germany/rheinland-pfalz/koblenz/altstadt/013.jpg", title: { ru: "Старый город Кобленца, 2023", ua: "Старе місто, 2023", de: "Altstadt, 2023" } },
+      ],
     },
   }
 }

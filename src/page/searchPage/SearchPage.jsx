@@ -39,10 +39,14 @@ const SearchPage = () => {
 
   return (
     <div className="search-results">
+
+            <Helmet>
+                <title>{searchResultsText[lang]}</title>
+            </Helmet>
+
       <BreadCrumbs crumbs={crumbs} />
-      <h2 className="search-results__title">
-        {searchResultsText[lang]}: '{query}'
-      </h2>
+
+      <h2 className="search-results__title"> {searchResultsText[lang]}: '{query}' </h2>
 
       <div className="search-results">
         {results.length === 0 ? (

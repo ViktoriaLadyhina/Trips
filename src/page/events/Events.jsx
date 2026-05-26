@@ -68,7 +68,7 @@ const Event = () => {
 
             <BreadCrumbs crumbs={crumbs} />
 
-            <div className='event__title'>{event.name && (event.name)}</div>
+            <h1 className='event__title'>{event.name && (event.name)}</h1>
             <div className='event__desc'>
                 <div className='event__desc-foto'>
                     {event.fotoCard && (

@@ -68,7 +68,8 @@ const Routes = () => {
             )}
 
             <BreadCrumbs crumbs={crumbs} />
-            <div className='route__title'>{t?.name}</div>
+
+            <h1 className='route__title'>{t?.name}</h1>
 
             <div className='route__desc'>
                 <div className="route__desc-plan">

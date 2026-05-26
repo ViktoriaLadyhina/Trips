@@ -55,7 +55,7 @@ const City = () => {
                     <BreadCrumbs crumbs={crumbs} />
 
                     <div className='city__container'>
-                        {city.name && <div className='city__title'>{city.name}</div>}
+                        {city.name && <h1 className='city__title'>{city.name}</h1>}
 
                         <BtnAttr lang={lang} path={`/${countryPath}/${regionPath}/${districtPath}/${cityPath}/attractions`} />
 

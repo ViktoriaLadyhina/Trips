@@ -529,7 +529,7 @@ const datas = [
       ru: {
         name: "Курфюрстский дворец",
         loc: {
-          country: "Германия", region: "Рейнланд-Пфальц", district: "Город областного значения", city: "Кобленц", cityDistrict: "район Altstadt"
+          country: "Германия", region: "Рейнланд-Пфальц", district: "Город областного значения", city: "Кобленц", cityDistrict: "район Mitte"
         },
         short_description: "Курфюрстский дворец – один из главных дворцов города и яркий пример раннего классицизма на Рейне. Он расположен прямо на набережной и формирует один из самых узнаваемых городских ансамблей. Сегодня дворец используется как административное и культурное здание, а его парк открыт для прогулок.",
         full_description: {
@@ -577,7 +577,7 @@ const datas = [
       ua: {
         name: "Курфюрстський палац",
         loc: {
-          country: "Німеччина", region: "Рейнланд-Пфальц", district: "Місто обласного значення", city: "Кобленц", cityDistrict: "район Altstadt"
+          country: "Німеччина", region: "Рейнланд-Пфальц", district: "Місто обласного значення", city: "Кобленц", cityDistrict: "район Mitte"
         },
         short_description: "Курфюрстський палац – один із головних палаців міста та яскравий приклад раннього класицизму на Рейні. Він розташований прямо на набережній і формує один із найвпізнаваніших міських ансамблів. Сьогодні палац використовується як адміністративна та культурна будівля, а його парк відкритий для прогулянок.",
         full_description: {
@@ -624,7 +624,7 @@ const datas = [
       de: {
         name: "Kurfürstliches Schloss",
         loc: {
-          country: "Deutschland", region: "Rheinland-Pfalz", district: "Stadt mit Kreisstatus", city: "Koblenz", cityDistrict: "Stadtteil Altstadt"
+          country: "Deutschland", region: "Rheinland-Pfalz", district: "Stadt mit Kreisstatus", city: "Koblenz", cityDistrict: "Stadtteil Mitte"
         },
         short_description: "Das Kurfürstliche Schloss ist eines der wichtigsten Paläste der Stadt und ein herausragendes Beispiel des frühen Klassizismus am Rhein. Es liegt direkt an der Uferpromenade und prägt eines der bekanntesten städtischen Ensembles. Heute wird das Schloss als Verwaltungs- und Kulturgebäude genutzt, und der Park ist für Spaziergänge geöffnet.",
         full_description: {
@@ -666,6 +666,164 @@ const datas = [
           ogDescription: "Erfahren Sie mehr über das Kurfürstliche Schloss in Koblenz – die ehemalige Residenz der Trierer Kurfürsten direkt am Rheinufer.",
           keywords: "Kurfürstliches Schloss Koblenz, Schloss Koblenz, Sehenswürdigkeiten Koblenz, Schlösser Deutschland, Koblenz palace, Electoral Palace Koblenz, Rhein Koblenz, Rheinland-Pfalz Schlösser, UNESCO Oberes Mittelrheintal",
           ogImage: "https://our-travels.info/foto/Germany/rheinland-pfalz/koblenz/kurfuerstliches_schloss/001.jpg"
+        }
+      }
+    }
+  },
+  {
+    id: "altstadt_koblenz",
+    type: ["historical_area"], rating: "popular",
+    path: "altstadt_koblenz",
+    countryPath: "germany", regionPath: "rheinland_pfalz", districtPath: "city", cityPath: "koblenz",
+    fotoCard: "Germany/rheinland-pfalz/koblenz/altstadt/006.jpg",
+    translations: {
+      ru: {
+        name: "Старый город Кобленца",
+        loc: {
+          country: "Германия", region: "Рейнланд-Пфальц", district: "Город областного значения", city: "Кобленц", cityDistrict: "район Altstadt"
+        },
+        short_description: "Исторический центр Кобленца с узкими улочками, площадями, старинной архитектурой и атмосферой рейнского города.",
+        full_description: {
+          title: "Описание и история",
+          items: [
+            { bold: "Старый город Кобленца", text: "– исторический центр одного из старейших городов Германии, расположенный у слияния рек Рейн и Мозель. Узкие мощёные улицы, уютные площади, старинные фасады и многочисленные кафе создают атмосферу типичного рейнского города с богатым прошлым. Здесь сохранились здания разных эпох – от средневековья до барокко и классицизма." },
+            { text: "Во время прогулки по Altstadt можно увидеть исторические площади Münzplatz, Jesuitenplatz и Görresplatz, старые фонтаны, церкви и традиционные немецкие дома с декоративными фасадами. Этот район считается одним из самых популярных туристических мест Кобленца и одновременно важным культурным и гастрономическим центром города." },
+            { text: "Сегодня исторический центр гармонично сочетает старинную архитектуру и современную городскую жизнь. Здесь регулярно проходят фестивали, рождественские ярмарки, концерты и другие мероприятия, а многочисленные рестораны и винные заведения знакомят гостей с кухней и винной культурой региона Рейнланд-Пфальц." },
+            { bold: "История", text: "Кобленца уходит корнями во времена Римской империи. Благодаря стратегическому расположению у слияния двух рек здесь уже в I веке существовали римские укрепления и военные лагеря. Позднее город превратился в важный торговый и религиозный центр региона." },
+            { text: "В средние века Кобленц активно развивался под влиянием курфюрстов Трира. В этот период появились церкви, площади, оборонительные сооружения и дома богатых купцов. Несмотря на войны и пожары, значительная часть средневековой планировки улиц сохранилась до наших дней." },
+            { text: "Во время Второй мировой войны исторический центр серьёзно пострадал от бомбардировок, однако после войны был восстановлен с сохранением традиционного архитектурного облика. Сегодня Старый город является важной частью культурного наследия региона и входит в территорию объекта Всемирного наследия ЮНЕСКО «Верхняя Средняя долина Рейна»." }
+          ]
+        },
+        practical_info: {
+          title: "Практическая информация",
+          items: [
+            { bold: "Адрес:", text: "Altstadt Koblenz, 56068 Koblenz, Германия" },
+            { bold: "Лучшее время для посещения:", text: "весна, лето и период рождественских ярмарок" },
+            { bold: "Вход:", text: "свободный" },
+            { bold: "Рядом находятся:", text: "Немецкий угол, Базилика Святого Кастора, Курфюрстский дворец" },
+            { bold: "Подходит для:", text: "пеших прогулок, фотосъёмки, гастрономического туризма" }
+          ]
+        },
+        interestingFacts: {
+          title: "Интересные факты",
+          isList: true,
+          items: [
+            { text: "Кобленц считается одним из старейших городов Германии." },
+            { text: "Название города происходит от латинского слова Confluentes – «слияние рек»." },
+            { text: "Многие улицы Старого города сохранили средневековую планировку." },
+            { text: "В этом районе расположено большое количество винных заведений региона Мозель и Рейн." },
+            { text: "Старый город особенно популярен во время рождественского рынка Кобленца." }
+          ]
+        },
+        meta: {
+          title: "Старый город Кобленца — достопримечательность Кобленца у слияния Рейна и Мозеля",
+          description: "Старый город Кобленца – исторический центр у Рейна и Мозеля с площадями, старинной архитектурой, кафе и атмосферой средневекового города.",
+          ogTitle: "Старый город Кобленца | Исторический Altstadt",
+          ogDescription: "Откройте атмосферу Старого города Кобленца – исторические улицы, площади, рестораны и архитектура у слияния Рейна и Мозеля.",
+          keywords: "Старый город Кобленца, Altstadt Koblenz, исторический центр Кобленца, что посмотреть в Кобленце, Koblenz Altstadt, достопримечательности Кобленца, Рейн, Мозель",
+          ogImage: "https://our-travels.info/foto/Germany/rheinland-pfalz/koblenz/altstadt/006.jpg"
+        }
+      },
+      ua: {
+        name: "Старе місто Кобленца",
+        loc: {
+          country: "Німеччина",
+          region: "Рейнланд-Пфальц",
+          district: "місто",
+          city: "Кобленц",
+          cityDistrict: "район Altstadt"
+        },
+        short_description: "Історичний центр Кобленца з вузькими вуличками, площами, старовинною архітектурою та атмосферою рейнського міста.",
+        full_description: {
+          title: "Опис та історія",
+          items: [
+            { bold: "Старе місто Кобленца", text: "– історичний центр одного з найстаріших міст Німеччини, розташований у місці злиття річок Рейн і Мозель. Вузькі бруковані вулиці, затишні площі, старовинні фасади та численні кафе створюють атмосферу типового рейнського міста з багатовіковою історією. Тут збереглися будівлі різних епох – від середньовіччя до бароко та класицизму." },
+            { text: "Під час прогулянки Altstadt можна побачити історичні площі Münzplatz, Jesuitenplatz і Görresplatz, старі фонтани, церкви та традиційні німецькі будинки з декоративними фасадами. Цей район вважається одним із найпопулярніших туристичних місць Кобленца та водночас важливим культурним і гастрономічним центром міста." },
+            { text: "Сьогодні історичний центр гармонійно поєднує старовинну архітектуру та сучасне міське життя. Тут регулярно проходять фестивалі, різдвяні ярмарки, концерти та інші заходи, а численні ресторани та винні заклади знайомлять гостей із кухнею та винною культурою регіону Рейнланд-Пфальц." },
+            { bold: "Історія", text: "Історія Кобленца сягає часів Римської імперії. Завдяки стратегічному розташуванню в місці злиття двох річок тут уже в I столітті існували римські укріплення та військові табори. Згодом місто перетворилося на важливий торговий і релігійний центр регіону." },
+            { text: "У середньовіччі Кобленц активно розвивався під впливом курфюрстів Тріра. У цей період з’явилися церкви, площі, оборонні споруди та будинки заможних купців. Попри війни та пожежі, значна частина середньовічного планування вулиць збереглася до сьогодні." },
+            { text: "Під час Другої світової війни історичний центр зазнав серйозних руйнувань унаслідок бомбардувань, однак після війни був відновлений зі збереженням історичного архітектурного вигляду. Сьогодні Старе місто є важливою частиною культурної спадщини регіону та входить до території об’єкта Світової спадщини ЮНЕСКО «Верхня Середня долина Рейну»." }
+          ]
+        },
+        practical_info: {
+          title: "Практична інформація",
+          items: [
+            { bold: "Адреса:", text: "Altstadt Koblenz, 56068 Koblenz, Німеччина" },
+            { bold: "Найкращий час для відвідування:", text: "весна, літо та період різдвяних ярмарків" },
+            { bold: "Вхід:", text: "безкоштовний" },
+            { bold: "Поруч розташовані:", text: "Німецький кут, Базиліка Святого Кастора, Курфюрстський палац" },
+            { bold: "Підходить для:", text: "піших прогулянок, фотозйомки, гастрономічного туризму" }
+          ]
+        },
+        interestingFacts: {
+          title: "Цікаві факти",
+          isList: true,
+          items: [
+            { text: "Кобленц вважається одним із найстаріших міст Німеччини." },
+            { text: "Назва міста походить від латинського слова Confluentes – «злиття річок»." },
+            { text: "Багато вулиць Старого міста зберегли середньовічне планування." },
+            { text: "У цьому районі розташовано велику кількість винних закладів регіонів Мозель та Рейн." },
+            { text: "Старе місто особливо популярне під час різдвяного ярмарку Кобленца." }
+          ]
+        },
+        meta: {
+          title: "Старе місто Кобленца — визначна пам’ятка Кобленца біля злиття Рейну і Мозелю",
+          description: "Старе місто Кобленца – історичний центр біля Рейну і Мозелю з площами, старовинною архітектурою, кафе та атмосферою середньовічного міста.",
+          ogTitle: "Старе місто Кобленца | Історичний Altstadt",
+          ogDescription: "Відкрийте атмосферу Старого міста Кобленца – історичні вулиці, площі, ресторани та архітектура біля злиття Рейну і Мозелю.",
+          keywords: "Старе місто Кобленца, Altstadt Koblenz, історичний центр Кобленца, що подивитися в Кобленці, Koblenz Altstadt, визначні місця Кобленца, Рейн, Мозель",
+          ogImage: "https://our-travels.info/foto/Germany/rheinland-pfalz/koblenz/altstadt/006.jpg"
+        }
+      },
+      de: {
+        name: "Altstadt Koblenz",
+        loc: {
+          country: "Deutschland",
+          region: "Rheinland-Pfalz",
+          district: "Stadt",
+          city: "Koblenz",
+          cityDistrict: "Stadtteil Altstadt"
+        },
+        short_description: "Historisches Zentrum von Koblenz mit engen Gassen, Plätzen, historischer Architektur und der Atmosphäre einer rheinischen Stadt.",
+        full_description: {
+          title: "Beschreibung und Geschichte",
+          items: [
+            { bold: "Altstadt Koblenz", text: "– historisches Zentrum einer der ältesten Städte Deutschlands, gelegen am Zusammenfluss von Rhein und Mosel. Enge gepflasterte Gassen, gemütliche Plätze, historische Fassaden und zahlreiche Cafés schaffen die Atmosphäre einer typischen rheinischen Stadt mit jahrhundertealter Geschichte. Hier sind Gebäude aus verschiedenen Epochen erhalten – vom Mittelalter über das Barock bis zum Klassizismus." },
+            { text: "Bei einem Spaziergang durch die Altstadt kann man historische Plätze wie den Münzplatz, den Jesuitenplatz und den Görresplatz, alte Brunnen, Kirchen sowie traditionelle deutsche Häuser mit dekorativen Fassaden entdecken. Dieses Viertel gehört zu den beliebtesten touristischen Bereichen von Koblenz und ist zugleich ein wichtiges kulturelles und gastronomisches Zentrum der Stadt." },
+            { text: "Heute verbindet die historische Innenstadt auf harmonische Weise alte Architektur mit modernem Stadtleben. Hier finden regelmäßig Festivals, Weihnachtsmärkte, Konzerte und andere Veranstaltungen statt, während zahlreiche Restaurants und Weinstuben die Besucher mit der regionalen Küche und Weinkultur von Rheinland-Pfalz vertraut machen." },
+            { bold: "Geschichte", text: "Die Geschichte von Koblenz reicht bis in die Zeit des Römischen Reiches zurück. Aufgrund der strategischen Lage am Zusammenfluss zweier Flüsse existierten hier bereits im 1. Jahrhundert römische Befestigungen und Militärlager. Später entwickelte sich die Stadt zu einem wichtigen Handels- und religiösen Zentrum der Region." },
+            { text: "Im Mittelalter wuchs Koblenz unter dem Einfluss der Trierer Kurfürsten. In dieser Zeit entstanden Kirchen, Plätze, Befestigungsanlagen und Häuser wohlhabender Kaufleute. Trotz Kriegen und Bränden blieb ein großer Teil der mittelalterlichen Straßenstruktur bis heute erhalten." },
+            { text: "Während des Zweiten Weltkriegs wurde die historische Innenstadt durch Bombardierungen schwer beschädigt, nach dem Krieg jedoch unter Bewahrung des historischen Stadtbildes wiederaufgebaut. Heute ist die Altstadt ein bedeutender Teil des kulturellen Erbes der Region und Teil des UNESCO-Welterbes „Oberes Mittelrheintal“." }
+          ]
+        },
+        practical_info: {
+          title: "Praktische Informationen",
+          items: [
+            { bold: "Adresse:", text: "Altstadt Koblenz, 56068 Koblenz, Deutschland" },
+            { bold: "Beste Besuchszeit:", text: "Frühling, Sommer und Weihnachtsmarktzeit" },
+            { bold: "Eintritt:", text: "frei" },
+            { bold: "In der Nähe:", text: "Deutsches Eck, Basilika St. Kastor, Kurfürstliches Schloss" },
+            { bold: "Geeignet für:", text: "Spaziergänge, Fotografie, kulinarischen Tourismus" }
+          ]
+        },
+        interestingFacts: {
+          title: "Interessante Fakten",
+          isList: true,
+          items: [
+            { text: "Koblenz gilt als eine der ältesten Städte Deutschlands." },
+            { text: "Der Stadtname stammt vom lateinischen Wort Confluentes – „Zusammenfluss“." },
+            { text: "Viele Straßen der Altstadt haben ihren mittelalterlichen Verlauf bis heute bewahrt." },
+            { text: "In diesem Viertel gibt es zahlreiche Weinstuben der Mosel- und Rheinregion." },
+            { text: "Die Altstadt ist besonders während des Koblenzer Weihnachtsmarktes beliebt." }
+          ]
+        },
+        meta: {
+          title: "Altstadt Koblenz — Sehenswürdigkeit in Koblenz am Rhein und Moselzusammenfluss",
+          description: "Die Altstadt von Koblenz bietet historische Gassen, Plätze, Architektur, Cafés und die Atmosphäre einer mittelalterlichen Stadt am Rhein und an der Mosel.",
+          ogTitle: "Altstadt Koblenz | Historisches Zentrum",
+          ogDescription: "Entdecken Sie die Altstadt von Koblenz mit ihren historischen Straßen, Plätzen und der einzigartigen Atmosphäre am Rhein und an der Mosel.",
+          keywords: "Altstadt Koblenz, Koblenz Altstadt, historische Innenstadt Koblenz, Sehenswürdigkeiten Koblenz, was sehen in Koblenz, Rhein, Mosel",
+          ogImage: "https://our-travels.info/foto/Germany/rheinland-pfalz/koblenz/altstadt/006.jpg"
         }
       }
     }

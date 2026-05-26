@@ -62,7 +62,7 @@ const datas = [
     {
         id: "cologne_cathedral",
         name: "Кельнський собор",
-        type: ["cathedral"], rating: "top",
+        type: ["cathedral", "landmark"], rating: "top",
         path: "cologne_cathedral",
         countryPath: "germany", regionPath: "nrw", districtPath: "city", cityPath: "koln",
         showMore: true, hiddenFromList: true,
