@@ -5,20 +5,16 @@ const datas = [
     // sundern
     {
         id: "sorpesee_sundern",
-        type: ["nature"], rating: "local",
+        type: ["nature"], rating: "popular",
         path: "sorpesee_sundern",
         countryPath: "germany", regionPath: "nrw", districtPath: "arnsberg", cityPath: "sundern",
         fotoCard: "Germany/nrw/arnsberg/Hochsauerlandkreis/sundern/sorpesee/001.jpg",
-        coord: { lat: 51.35008, lng: 7.96750 },
+        coord: { lat: 51.35002, lng: 7.96500 },
         translations: {
             ru: {
                 name: "Озеро Сорпезее",
                 loc: {
-                    country: "Германия",
-                    region: "Северный Рейн-Вестфалия",
-                    district: "Арнсберг",
-                    city: "Зундерн",
-                    cityDistrict: "районы Лангшайд (Langscheid), Амеке (Amecke), Штемель (Stemel)"
+                    country: "Германия", region: "Северный Рейн-Вестфалия", district: "Арнсберг", city: "Зундерн", cityDistrict: "районы Лангшайд, Амеке, Штемель"
                 },
                 short_description: "Озеро Сорпезее (Sorpesee) – живописное водохранилище в регионе Зауэрланд (Северный Рейн-Вестфалия, Германия). Озеро окружено густыми лесами и холмами и используется для отдыха, водных видов спорта и прогулок на природе.",
                 full_description: {
@@ -71,11 +67,7 @@ const datas = [
             ua: {
                 name: "Озеро Сорпезее",
                 loc: {
-                    country: "Німеччина",
-                    region: "Північний Рейн-Вестфалія",
-                    district: "Арнсберг",
-                    city: "Зундерн",
-                    cityDistrict: "райони Лангшайд (Langscheid), Амеке (Amecke), Штемель (Stemel)"
+                    country: "Німеччина", region: "Північний Рейн-Вестфалія", district: "Арнсберг", city: "Зундерн", cityDistrict: "райони Лангшайд, Амеке, Штемель"
                 },
                 short_description: "Озеро Сорпезее (Sorpesee) – мальовниче водосховище в регіоні Зауерланд (Північний Рейн-Вестфалія, Німеччина). Озеро оточене густими лісами та пагорбами і використовується для відпочинку, водних видів спорту та прогулянок на природі.",
                 full_description: {
@@ -128,11 +120,7 @@ const datas = [
             de: {
                 name: "Sorpesee",
                 loc: {
-                    country: "Deutschland",
-                    region: "Nordrhein-Westfalen",
-                    district: "Arnsberg",
-                    city: "Sundern",
-                    cityDistrict: "Stadtteile Langscheid, Amecke, Stemel"
+                    country: "Deutschland", region: "Nordrhein-Westfalen", district: "Arnsberg", city: "Sundern", cityDistrict: "Stadtteile Langscheid, Amecke, Stemel"
                 },
                 short_description: "Der Sorpesee ist ein malerisches Stauseegebiet in der Region Sauerland (Nordrhein-Westfalen, Deutschland). Der See ist von dichten Wäldern und Hügeln umgeben und wird für Erholung, Wassersport und Spaziergänge in der Natur genutzt.",
                 full_description: {
@@ -184,6 +172,182 @@ const datas = [
             }
         }
     },
+    {
+        id: "ehrenmal_langscheid",
+        type: ['viewpoint', 'monument_or_fountain', 'historical_building'], rating: "local",
+        path: "ehrenmal_langscheid",
+        countryPath: "germany", regionPath: "nrw", districtPath: "arnsberg", cityPath: "sundern",
+        fotoCard: "Germany/nrw/arnsberg/Hochsauerlandkreis/sundern/ehrenmal/001.jpg",
+        coord: { lat: 51.353938, lng: 7.953097 },
+        translations: {
+            ru: {
+                name: "Мемориал Лангшайд",
+                loc: {
+                    country: "Германия", region: "Северный Рейн-Вестфалия", district: "Арнсберг", city: "Зундерн", cityDistrict: "район Лангшайд"
+                },
+                short_description: "Исторический мемориал и смотровая башня в Лангшайде с панорамным видом на озеро Зорпезее.",
+                full_description: {
+                    title: "Описание и история",
+                    items: [
+                        { bold: "Мемориал-панорама Лангшайд (Ehrenmal Langscheid)", text: " – мемориальный комплекс и смотровая башня, расположенные в районе Лангшайд города Зундерн (Sundern) в регионе Зауэрланд, Северный Рейн–Вестфалия. Памятник возвышается над окрестностями озера Зорпезее и считается одной из заметных достопримечательностей поселка. Благодаря расположению на возвышенности отсюда открываются панорамные виды на озеро, лесистые холмы и окружающий ландшафт." },
+                        { text: "В отличие от традиционных военных мемориалов, мемориал Лангшайд изначально задумывался не только как место памяти, но и как сооружение практического назначения. Его башня служит смотровой площадкой, что делает объект одновременно историческим памятником и популярной туристической точкой." },
+                        { text: "Сегодня смотровая башня является важной частью местной культурной жизни. Сюда приходят не только ради видов на Зорпезее, но и для прогулок, пеших маршрутов и знакомства с историей региона." },
+                        { bold: "История", text: "Идея строительства мемориала появилась в конце 1920-х годов как память о жителях Лангшайда, погибших во время Первой мировой войны. По имеющимся данным, тогда община потеряла 21 человек, и жители решили создать памятное место, которое имело бы не только символическое, но и практическое значение." },
+                        { text: "Строительство завершилось в 1930 году. Вместо традиционного монумента был создан высокий мемориальный комплекс с обзорной башней. Такое решение позволило объединить функции памятника и смотровой площадки." },
+                        { text: "Со временем смотровая башня стала одним из символов поселка. За десятилетия сооружение подвергалось воздействию погоды и требовало реставрации. В последние годы проводились восстановительные работы при участии местных организаций и жителей, благодаря чему памятник продолжает сохраняться как важная историческая и туристическая достопримечательность." },
+                    ]
+                },
+                practical_info: {
+                    title: "Практическая информация",
+                    items: [
+                        { bold: "Адрес:", text: "Ringstraße 58, Langscheid, Sundern, Deutschland" },
+                        { bold: "Лучшее время посещения: ", text: "весна, лето и осень; особенно красивы виды на закате" },
+                        { bold: "Особенности маршрута:", text: "к мемориалу ведёт достаточно крутая дорога, поэтому рекомендуется удобная обувь, особенно для пеших прогулок." }
+                    ]
+                },
+                sub_objects: {
+                    title: "Основная ценность объекта",
+                    isList: true,
+                    items: [
+                        { text: "- исторический мемориал" },
+                        { text: "- смотровая башня" },
+                        { text: "- панорамная площадка на озеро Зорпезее" },
+                        { text: "- место памяти и общественных мероприятий" },
+                    ]
+                },
+                interestingFacts: {
+                    title: "Интересные факты",
+                    isList: true,
+                    items: [
+                        { text: "Мемориал одновременно является смотровой башней и памятником погибшим в Первой мировой войне." },
+                        { text: "Башня расположена примерно на высшей точке Лангшайда и предлагает вид на озеро Зорпезее." },
+                        { text: "Сооружение считается одним из главных символов поселка." },
+                        { text: "В Лангшайде периодически проходят мероприятия и встречи, связанные с мемориалом." }
+                    ]
+                },
+                construction_period: "1927–1930",
+                meta: {
+                    title: "Мемориал-панорама Лангшайд (Ehrenmal Langscheid) – лучшие виды на Зорпезее",
+                    description: "Посетите смотровую башню в Лангшайд – исторический мемориал и обзорную башню в регионе Зауэрланд. Узнайте историю памятника и насладитесь панорамными видами на озеро Зорпезее.",
+                    ogTitle: "Мемориал-панорама Лангшайд (Ehrenmal Langscheid) – лучшие виды на Зорпезее",
+                    ogDescription: "Мемориал-панорама Лангшайд сочетает историю, память и великолепные панорамы. Узнайте, почему это место стало одним из символов региона Зауэрланд.",
+                    keywords: "Лангшайд, Зорпезее, достопримечательности Зауэрланда, смотровая башня Германия, мемориалы Германии, обзорная площадка Зундерн",
+                    ogImage: "https://our-travels.info/foto/Germany/nrw/arnsberg/Hochsauerlandkreis/sundern/ehrenmal/001.jpg"
+                }
+            },
+            ua: {
+                name: "Меморіал Лангшайд",
+                loc: {
+                    country: "Німеччина", region: "Північний Рейн-Вестфалія", district: "Арнсберг", city: "Зундерн", cityDistrict: "район Лангшайд"
+                },
+                short_description: "Історичний меморіал та оглядова вежа у Лангшайді з панорамним видом на озеро Зорпезее.",
+                full_description: {
+                    title: "Опис та історія",
+                    items: [
+                        { bold: "Меморіал Лангшайд (Ehrenmal Langscheid)", text: " – меморіальний комплекс та оглядова вежа, розташовані в районі Лангшайд міста Зундерн у регіоні Зауерланд, Північний Рейн-Вестфалія. Пам’ятник височіє над околицями озера Зорпезее та є однією з помітних пам’яток району. Завдяки розташуванню на височині звідси відкриваються панорамні краєвиди на озеро, лісисті пагорби та навколишній ландшафт." },
+                        { text: "На відміну від традиційних військових меморіалів, Меморіал Лангшайд від початку задумувався не лише як місце пам’яті, а й як споруда практичного призначення. Його вежа виконує функцію оглядового майданчика, що робить об’єкт одночасно історичною пам’яткою та популярним туристичним місцем." },
+                        { text: "Сьогодні оглядова вежа є важливою частиною місцевого культурного життя. Сюди приходять не лише заради краєвидів на Зорпезее, а й для прогулянок, пішохідних маршрутів та знайомства з історією регіону." },
+                        { bold: "Історія", text: "Ідея будівництва меморіалу виникла наприкінці 1920-х років як пам’ять про мешканців Лангшайда, які загинули під час Першої світової війни. За наявними даними, громада втратила 21 людину, і жителі вирішили створити місце пам’яті, яке мало б не лише символічне, а й практичне значення." },
+                        { text: "Будівництво було завершене у 1930 році. Замість традиційного монумента було створено високий меморіальний комплекс з оглядовою вежею. Таке рішення дозволило поєднати функції пам’ятника та оглядового майданчика." },
+                        { text: "З часом оглядова вежа стала одним із символів району. Протягом десятиліть споруда зазнавала впливу погодних умов та потребувала реставрації. В останні роки проводилися відновлювальні роботи за участю місцевих організацій та жителів, завдяки чому пам’ятка продовжує зберігатися як важливий історичний та туристичний об’єкт." }
+                    ]
+                },
+                practical_info: {
+                    title: "Практична інформація",
+                    items: [
+                        { bold: "Адреса:", text: "Ringstraße 58, Лангшайд, Зундерн, Німеччина" },
+                        { bold: "Найкращий час для відвідування:", text: "весна, літо та осінь; особливо красиві краєвиди відкриваються на заході сонця" },
+                        { bold: "Особливості маршруту:", text: "до меморіалу веде досить крута дорога, тому рекомендується зручне взуття, особливо для піших прогулянок." }
+                    ]
+                },
+                sub_objects: {
+                    title: "Основна цінність об’єкта",
+                    isList: true,
+                    items: [
+                        { text: "- історичний меморіал" },
+                        { text: "- оглядова вежа" },
+                        { text: "- панорамний майданчик з видом на озеро Зорпезее" },
+                        { text: "- місце пам’яті та громадських заходів" }
+                    ]
+                },
+                interestingFacts: {
+                    title: "Цікаві факти",
+                    isList: true,
+                    items: [
+                        { text: "Меморіал одночасно є оглядовою вежею та пам’ятником загиблим у Першій світовій війні." },
+                        { text: "Вежа розташована приблизно на найвищій точці Лангшайда та відкриває вид на озеро Зорпезее." },
+                        { text: "Споруда вважається одним із головних символів району." },
+                        { text: "У Лангшайді періодично проводяться заходи та зустрічі, пов’язані з меморіалом." }
+                    ]
+                },
+                construction_period: "1927–1930",
+                meta: {
+                    title: "Меморіал Лангшайд (Ehrenmal Langscheid) – найкращі краєвиди на Зорпезее",
+                    description: "Відвідайте Меморіал Лангшайд – історичний меморіал та оглядову вежу в регіоні Зауерланд. Дізнайтеся історію пам’ятки та насолодіться панорамними видами на озеро Зорпезее.",
+                    ogTitle: "Меморіал Лангшайд (Ehrenmal Langscheid) – найкращі краєвиди на Зорпезее",
+                    ogDescription: "Меморіал Лангшайд поєднує історію, пам’ять та чудові панорами. Дізнайтеся, чому це місце стало одним із символів регіону Зауерланд.",
+                    keywords: "Лангшайд, Зорпезее, пам’ятки Зауерланду, оглядова вежа Німеччина, меморіали Німеччини, оглядовий майданчик Зундерн",
+                    ogImage: "https://our-travels.info/foto/Germany/nrw/arnsberg/Hochsauerlandkreis/sundern/ehrenmal/001.jpg"
+                }
+            },
+            de: {
+                name: "Ehrenmal Langscheid",
+                loc: {
+                    country: "Deutschland", region: "Nordrhein-Westfalen", district: "Arnsberg", city: "Sundern", cityDistrict: "Stadtteil Langscheid"
+                },
+                short_description: "Historisches Ehrenmal und Aussichtsturm in Langscheid mit Panoramablick auf den Sorpesee.",
+                full_description: {
+                    title: "Beschreibung und Geschichte",
+                    items: [
+                        { bold: "Ehrenmal Langscheid", text: " – ein Gedenkkomplex mit Aussichtsturm im Stadtteil Langscheid der Stadt Sundern im Sauerland in Nordrhein-Westfalen. Das Denkmal erhebt sich über die Umgebung des Sorpesees und gehört zu den markanten Sehenswürdigkeiten des Ortsteils. Durch seine erhöhte Lage bietet sich ein Panoramablick auf den See, bewaldete Hügel und die umliegende Landschaft." },
+                        { text: "Im Gegensatz zu traditionellen Kriegerdenkmälern wurde das Ehrenmal Langscheid nicht nur als Ort des Gedenkens, sondern auch als Bauwerk mit praktischem Nutzen geplant. Der Turm dient als Aussichtspunkt und macht die Anlage gleichzeitig zu einem historischen Denkmal und einem beliebten Ausflugsziel." },
+                        { text: "Heute ist der Aussichtsturm ein wichtiger Bestandteil des lokalen kulturellen Lebens. Besucher kommen nicht nur wegen der Aussicht auf den Sorpesee, sondern auch für Spaziergänge, Wanderwege und um mehr über die Geschichte der Region zu erfahren." },
+                        { bold: "Geschichte", text: "Die Idee zum Bau des Ehrenmals entstand Ende der 1920er Jahre als Erinnerung an die Einwohner von Langscheid, die im Ersten Weltkrieg gefallen waren. Nach vorliegenden Angaben verlor die Gemeinde 21 Menschen, und die Einwohner beschlossen, einen Ort des Gedenkens zu schaffen, der nicht nur symbolische, sondern auch praktische Bedeutung haben sollte." },
+                        { text: "Der Bau wurde im Jahr 1930 abgeschlossen. Anstelle eines traditionellen Monuments entstand ein hoher Gedenkkomplex mit Aussichtsturm. Dadurch konnten die Funktionen eines Denkmals und eines Aussichtspunktes miteinander verbunden werden." },
+                        { text: "Im Laufe der Zeit entwickelte sich der Aussichtsturm zu einem der Wahrzeichen des Ortsteils. Über Jahrzehnte war die Anlage Witterungseinflüssen ausgesetzt und musste restauriert werden. In den letzten Jahren wurden mit Unterstützung lokaler Organisationen und Einwohner Restaurierungsarbeiten durchgeführt, sodass das Denkmal weiterhin als bedeutende historische und touristische Sehenswürdigkeit erhalten bleibt." }
+                    ]
+                },
+                practical_info: {
+                    title: "Praktische Informationen",
+                    items: [
+                        { bold: "Adresse:", text: "Ringstraße 58, Langscheid, Sundern, Deutschland" },
+                        { bold: "Beste Besuchszeit:", text: "Frühling, Sommer und Herbst; besonders schöne Aussicht bei Sonnenuntergang" },
+                        { bold: "Besonderheiten des Weges:", text: "zum Ehrenmal führt eine recht steile Straße, daher werden bequeme Schuhe empfohlen, besonders für Spaziergänge zu Fuß." }
+                    ]
+                },
+                sub_objects: {
+                    title: "Besondere Merkmale",
+                    isList: true,
+                    items: [
+                        { text: "- historisches Ehrenmal" },
+                        { text: "- Aussichtsturm" },
+                        { text: "- Panoramaplattform mit Blick auf den Sorpesee" },
+                        { text: "- Ort des Gedenkens und öffentlicher Veranstaltungen" }
+                    ]
+                },
+                interestingFacts: {
+                    title: "Interessante Fakten",
+                    isList: true,
+                    items: [
+                        { text: "Das Ehrenmal ist gleichzeitig Aussichtsturm und Denkmal für die Gefallenen des Ersten Weltkriegs." },
+                        { text: "Der Turm befindet sich ungefähr am höchsten Punkt von Langscheid und bietet Ausblicke auf den Sorpesee." },
+                        { text: "Das Bauwerk gilt als eines der wichtigsten Wahrzeichen des Ortsteils." },
+                        { text: "In Langscheid finden regelmäßig Veranstaltungen und Treffen rund um das Ehrenmal statt." }
+                    ]
+                },
+                construction_period: "1927–1930",
+                meta: {
+                    title: "Ehrenmal Langscheid – die schönsten Ausblicke auf den Sorpesee",
+                    description: "Besuchen Sie das Ehrenmal Langscheid – ein historisches Denkmal und einen Aussichtsturm im Sauerland. Erfahren Sie mehr über seine Geschichte und genießen Sie den Panoramablick auf den Sorpesee.",
+                    ogTitle: "Ehrenmal Langscheid – die schönsten Ausblicke auf den Sorpesee",
+                    ogDescription: "Das Ehrenmal Langscheid verbindet Geschichte, Erinnerung und beeindruckende Panoramen. Erfahren Sie, warum dieser Ort zu den Symbolen des Sauerlands gehört.",
+                    keywords: "Ehrenmal Langscheid, Langscheid, Sorpesee, Sehenswürdigkeiten Sauerland, Aussichtsturm Deutschland, Denkmäler Deutschland, Aussichtspunkt Sundern",
+                    ogImage: "https://our-travels.info/foto/Germany/nrw/arnsberg/Hochsauerlandkreis/sundern/ehrenmal/001.jpg"
+                }
+            }
+        }
+    },
+
 
     // Märkischer Kreis
     // altena

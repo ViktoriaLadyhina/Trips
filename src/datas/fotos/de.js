@@ -742,6 +742,12 @@ export const Fotos = {
         { path: "Germany/nrw/arnsberg/Hochsauerlandkreis/sundern/sorpesee/002.jpg", title: { ru: "Озеро Сорпезее, 2026", ua: "Озеро Сорпезее, 2026", de: "Sorpesee, 2026" } },
         { path: "Germany/nrw/arnsberg/Hochsauerlandkreis/sundern/sorpesee/003.jpg", title: { ru: "Озеро Сорпезее, 2026", ua: "Озеро Сорпезее, 2026", de: "Sorpesee, 2026" } },
       ],
+      ehrenmal_langscheid: [
+        { path: "Germany/nrw/arnsberg/Hochsauerlandkreis/sundern/ehrenmal/001.jpg", title: { ru: "Мемориал Лангшайд, 2026", ua: "Меморіал Лангшайд, 2026", de: "Ehrenmal Langscheid, 2026" } },
+        { path: "Germany/nrw/arnsberg/Hochsauerlandkreis/sundern/ehrenmal/002.jpg", title: { ru: "Мемориал Лангшайд, 2026", ua: "Меморіал Лангшайд, 2026", de: "Ehrenmal Langscheid, 2026" } },
+        { path: "Germany/nrw/arnsberg/Hochsauerlandkreis/sundern/ehrenmal/003.jpg", title: { ru: "Панорамный вид на озеро с башни, 2026", ua: "Панорамний вид на озеро з вежі, 2026", de: "Panoramablick auf den See vom Turm, 2026" } },
+        { path: "Germany/nrw/arnsberg/Hochsauerlandkreis/sundern/ehrenmal/004.jpg", title: { ru: "Панорамный вид на озеро с башни, 2026", ua: "Панорамний вид на озеро з вежі, 2026", de: "Panoramablick auf den See vom Turm, 2026" } },
+      ]
     },
 
   },

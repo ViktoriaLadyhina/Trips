@@ -131,6 +131,7 @@ const Map = () => {
                           <li><Link to="/germany/nrw/arnsberg/sundern">{t.cities.sundern[lang]}</Link>
                             <ul>
                               <li><Link to="/germany/nrw/arnsberg/sundern/attractions/sorpesee_sundern">{t.attractions.sorpesee_sundern[lang]}</Link></li>
+                              <li><Link to="/germany/nrw/arnsberg/sundern/attractions/ehrenmal_langscheid">{t.attractions.ehrenmal_langscheid[lang]}</Link></li>
                             </ul>
                           </li>
                         </ul>
