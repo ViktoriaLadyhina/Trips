@@ -237,6 +237,7 @@ const datas =
     deutsches_eck_koblenz: { ru: 'Немецкий угол', de: 'Deutsches Eck', ua: 'Німецький кут' },
     kurfuerstliches_schloss_koblenz: { ru: 'Курфюрстский дворец', de: 'Kurfürstliches Schloss', ua: 'Курфюрстський палац' },
     altstadt_koblenz: { ru: 'Старый город Кобленца', de: 'Altstadt Koblenz', ua: 'Старе місто Кобленца' },
+    citykirche_koblenz: { ru: 'Иезуитская церковь Кобленца (Citykirche)', de: 'Jesuitenkirche Koblenz (Citykirche)', ua: 'Єзуїтська церква Кобленца (Citykirche)' },
 
     //luxembourg
     ansembourg_castle: { ru: 'Замок-дворец Ансембург', de: 'Schloss Ansembourg', ua: 'Палац-замок Ансембурґ' },

@@ -922,6 +922,11 @@ export const Fotos = {
         { path: "Germany/rheinland-pfalz/koblenz/altstadt/012.jpg", title: { ru: "Старый город Кобленца, 2023", ua: "Старе місто, 2023", de: "Altstadt, 2023" } },
         { path: "Germany/rheinland-pfalz/koblenz/altstadt/013.jpg", title: { ru: "Старый город Кобленца, 2023", ua: "Старе місто, 2023", de: "Altstadt, 2023" } },
       ],
+      citykirche_koblenz: [
+        { path: "Germany/rheinland-pfalz/koblenz/altstadt/citykirche/001.jpg", title: { ru: "Иезуитская церковь Кобленца (Citykirche), 2023", ua: "Єзуїтська церква Кобленца (Citykirche), 2023", de: "Jesuitenkirche Koblenz (Citykirche), 2023" } },
+        { path: "Germany/rheinland-pfalz/koblenz/altstadt/citykirche/002.jpg", title: { ru: "Иезуитская церковь Кобленца (Citykirche), 2023", ua: "Єзуїтська церква Кобленца (Citykirche), 2023", de: "Jesuitenkirche Koblenz (Citykirche), 2023" } },
+        { path: "Germany/rheinland-pfalz/koblenz/altstadt/citykirche/003.jpg", title: { ru: "Иезуитская церковь Кобленца (Citykirche), 2023", ua: "Єзуїтська церква Кобленца (Citykirche), 2023", de: "Jesuitenkirche Koblenz (Citykirche), 2023" } },
+      ],
     },
   }
 }

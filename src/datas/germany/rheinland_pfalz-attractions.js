@@ -676,6 +676,7 @@ const datas = [
     path: "altstadt_koblenz",
     countryPath: "germany", regionPath: "rheinland_pfalz", districtPath: "city", cityPath: "koblenz",
     fotoCard: "Germany/rheinland-pfalz/koblenz/altstadt/006.jpg",
+    subObjects: ["citykirche_koblenz",],
     translations: {
       ru: {
         name: "Старый город Кобленца",
@@ -683,6 +684,12 @@ const datas = [
           country: "Германия", region: "Рейнланд-Пфальц", district: "Город областного значения", city: "Кобленц", cityDistrict: "район Altstadt"
         },
         short_description: "Исторический центр Кобленца с узкими улочками, площадями, старинной архитектурой и атмосферой рейнского города.",
+        short_description_subObjects: {
+          text: "В старом городе Кобленца расположены такие достопримечательности:",
+          items: [
+            { bold: "Иезуитская церковь Кобленца (Citykirche)", text: "– историческая церковь XVII века на Иезуитов (Jesuitenplatz) в центре старого города Кобленца, сочетающая оригинальный фасад и современное внутреннее пространство." },
+          ]
+        },
         full_description: {
           title: "Описание и история",
           items: [
@@ -734,6 +741,12 @@ const datas = [
           cityDistrict: "район Altstadt"
         },
         short_description: "Історичний центр Кобленца з вузькими вуличками, площами, старовинною архітектурою та атмосферою рейнського міста.",
+        short_description_subObjects: {
+          text: "У старому місті Кобленца розташовані такі визначні пам’ятки:",
+          items: [
+            { bold: "Єзуїтська церква Кобленца (Citykirche)", text: "– історична церква XVII століття на площі Єзуїтів (Jesuitenplatz) у центрі старого міста Кобленца, що поєднує оригінальний фасад і сучасний внутрішній простір." },
+          ]
+        },
         full_description: {
           title: "Опис та історія",
           items: [
@@ -778,13 +791,15 @@ const datas = [
       de: {
         name: "Altstadt Koblenz",
         loc: {
-          country: "Deutschland",
-          region: "Rheinland-Pfalz",
-          district: "Stadt",
-          city: "Koblenz",
-          cityDistrict: "Stadtteil Altstadt"
+          country: "Deutschland", region: "Rheinland-Pfalz", city: "Koblenz", cityDistrict: "Stadtteil Altstadt"
         },
         short_description: "Historisches Zentrum von Koblenz mit engen Gassen, Plätzen, historischer Architektur und der Atmosphäre einer rheinischen Stadt.",
+        short_description_subObjects: {
+          text: "In der Altstadt von Koblenz befinden sich folgende Sehenswürdigkeiten:",
+          items: [
+            { bold: "Citykirche (Jesuitenkirche)", text: "– historische Kirche aus dem 17. Jahrhundert am Jesuitenplatz im Zentrum der Altstadt von Koblenz, die eine originale Fassade mit einem modernen Innenraum verbindet." },
+          ]
+        },
         full_description: {
           title: "Beschreibung und Geschichte",
           items: [
@@ -824,6 +839,164 @@ const datas = [
           ogDescription: "Entdecken Sie die Altstadt von Koblenz mit ihren historischen Straßen, Plätzen und der einzigartigen Atmosphäre am Rhein und an der Mosel.",
           keywords: "Altstadt Koblenz, Koblenz Altstadt, historische Innenstadt Koblenz, Sehenswürdigkeiten Koblenz, was sehen in Koblenz, Rhein, Mosel",
           ogImage: "https://our-travels.info/foto/Germany/rheinland-pfalz/koblenz/altstadt/006.jpg"
+        }
+      }
+    }
+  },
+  {
+    id: "citykirche_koblenz",
+    type: ["cathedral"], rating: "popular",
+    path: "citykirche_koblenz",
+    countryPath: "germany", regionPath: "rheinland_pfalz", districtPath: "city", cityPath: "koblenz",
+    hiddenFromList: true, showMore: true,
+    fotoCard: "Germany/rheinland-pfalz/koblenz/altstadt/citykirche/001.jpg",
+    coord: { lat: 50.36032214728197, lng: 7.598783445009036 },
+    translations: {
+      ru: {
+        name: "Иезуитская церковь Кобленца (Citykirche)",
+        loc: {
+          country: "Германия", region: "Рейнланд-Пфальц", city: "Кобленц", cityDistrict: "район Altstadt"
+        },
+        officialSite: [
+          { bold: "Официальный сайт", link: "https://www.citykirche-koblenz.de" }
+        ],
+        short_description: "Историческая церковь в центре старого города на площади Иезуитов (Jesuitenplatz). Она была построена в XVII веке как часть комплекса иезуитского ордена. Сегодня здание используется как открытая городская церковь для богослужений, концертов и культурных мероприятий.",
+        full_description: {
+          title: "Описание и история",
+          items: [
+            { bold: "Иезуитская церковь Кобленца (Citykirche)", text: "расположена в самом центре старого города на площади Иезуитов (Jesuitenplatz). Это историческое здание связано с деятельностью ордена иезуитов в XVII веке и развитием религиозной жизни города." },
+            { text: "Сегодня церковь используется как открытое городское пространство. Здесь проходят богослужения, концерты и культурные мероприятия, поэтому здание выполняет одновременно религиозную и общественную функцию." },
+            { text: "Фасад здания сохраняет исторический облик, а внутреннее пространство после послевоенного восстановления оформлено в современном стиле." },
+            { bold: "История", text: "Иезуитская церковь в Кобленце была построена в начале XVII века как часть комплекса ордена иезуитов. При церкви действовала школа, которая играла важную роль в образовательной системе города в эпоху Контрреформации." },
+            { text: "Здание пережило несколько исторических этапов, оставаясь важным религиозным и образовательным центром Кобленца." },
+            { text: "В 1944 году церковь была сильно повреждена во время Второй мировой войны. После восстановления фасад был сохранён, а интерьер полностью переосмыслен и оформлен в современном стиле, что сделало здание примером сочетания исторической архитектуры и современной функции." }
+          ]
+        },
+        practical_info: {
+          title: "Практическая информация",
+          items: [
+            { bold: "Адрес:", text: "Jesuitenplatz 4, 56068 Koblenz, Deutschland" },
+            { bold: "Конфессия:", text: "римско-католическая церковь" },
+            { bold: "Вход:", text: "обычно свободный (зависит от мероприятий)" }
+          ]
+        },
+        interestingFacts: {
+          title: "Интересные факты",
+          isList: true,
+          items: [
+            { text: "Изначально входила в комплекс иезуитского монастыря и школы" },
+            { text: "После войны интерьер сознательно сделали современным" },
+            { text: "Сегодня используется как открытое культурное пространство" },
+            { text: "Расположена на одной из центральных площадей старого города" }
+          ]
+        },
+        construction_period: "1613–1617",
+        founder: "Орден иезуитов (Societas Jesu)",
+        meta: {
+          title: "Иезуитская церковь Кобленца (Citykirche) – историческая церковь в центре города",
+          description: "Иезуитская церковь Кобленца (Citykirche) – историческая церковь XVII века в центре старого города, сочетающая барочный фасад и современное культурное пространство.",
+          ogTitle: "Citykirche Кобленца – история и современность в центре старого города",
+          ogDescription: "Бывшая иезуитская церковь XVII века в Кобленце: историческая архитектура, современный интерьер и культурная жизнь города.",
+          keywords: "Citykirche Koblenz, Jesuitenkirche Koblenz, Кобленц церковь, старый город Кобленц, Jesuitenplatz, исторические церкви Германии, барочная церковь Кобленца",
+          ogImage: "https://our-travels.info/foto/Germany/rheinland-pfalz/koblenz/altstadt/citykirche/001.jpg"
+        }
+      },
+      ua: {
+        name: "Єзуїтська церква Кобленца (Citykirche)",
+        loc: {
+          country: "Німеччина", region: "Рейнланд-Пфальц", city: "Кобленц", cityDistrict: "район Altstadt"
+        },
+        officialSite: [
+          { bold: "Офіційний сайт", link: "https://www.citykirche-koblenz.de" }
+        ],
+        short_description: "Історична церква в центрі старого міста на площі Єзуїтів (Jesuitenplatz). Вона була збудована у XVII столітті як частина комплексу єзуїтського ордену. Сьогодні будівля використовується як відкрита міська церква для богослужінь, концертів і культурних заходів.",
+        full_description: {
+          title: "Опис та історія",
+          items: [
+            { bold: "Єзуїтська церква Кобленца (Citykirche)", text: "розташована в самому центрі старого міста на площі Єзуїтів (Jesuitenplatz). Це історична будівля, пов’язана з діяльністю єзуїтського ордену у XVII столітті та розвитком релігійного життя міста." },
+            { text: "Сьогодні церква використовується як відкрите міське простір. Тут проходять богослужіння, концерти та культурні заходи, тому будівля виконує одночасно релігійну та громадську функцію." },
+            { text: "Фасад будівлі зберігає історичний вигляд, а внутрішній простір після післявоєнної відбудови оформлений у сучасному стилі." },
+            { bold: "Історія", text: "Єзуїтська церква в Кобленці була збудована на початку XVII століття як частина комплексу єзуїтського ордену. При церкві діяла школа, яка відігравала важливу роль в освітній системі міста в епоху Контрреформації." },
+            { text: "Будівля пережила кілька історичних етапів, залишаючись важливим релігійним та освітнім центром Кобленца." },
+            { text: "У 1944 році церква була сильно пошкоджена під час Другої світової війни. Після відновлення фасад було збережено, а інтер’єр повністю переосмислено та оформлено у сучасному стилі, що зробило будівлю прикладом поєднання історичної архітектури та сучасного використання." }
+          ]
+        },
+        practical_info: {
+          title: "Практична інформація",
+          items: [
+            { bold: "Адреса:", text: "Jesuitenplatz 4, 56068 Koblenz, Deutschland" },
+            { bold: "Конфесія:", text: "римсько-католицька церква" },
+            { bold: "Вхід:", text: "зазвичай вільний (залежить від заходів)" }
+          ]
+        },
+        interestingFacts: {
+          title: "Цікаві факти",
+          isList: true,
+          items: [
+            { text: "Спочатку входила до комплексу єзуїтського монастиря та школи" },
+            { text: "Після війни інтер’єр свідомо зробили сучасним" },
+            { text: "Сьогодні використовується як відкрите культурне простір" },
+            { text: "Розташована на одній із центральних площ старого міста" }
+          ]
+        },
+        construction_period: "1613–1617",
+        founder: "Орден єзуїтів (Societas Jesu)",
+        meta: {
+          title: "Єзуїтська церква Кобленца (Citykirche) – історична церква в центрі міста",
+          description: "Єзуїтська церква Кобленца (Citykirche) – історична церква XVII століття в центрі старого міста, що поєднує бароковий фасад і сучасний культурний простір.",
+          ogTitle: "Citykirche Кобленца – історія та сучасність у центрі старого міста",
+          ogDescription: "Колишня єзуїтська церква XVII століття в Кобленці: історична архітектура, сучасний інтер’єр і культурне життя міста.",
+          keywords: "Citykirche Koblenz, Jesuitenkirche Koblenz, Кобленц церква, старе місто Кобленц, Jesuitenplatz, історичні церкви Німеччини, барокова церква Кобленца",
+          ogImage: "https://our-travels.info/foto/Germany/rheinland-pfalz/koblenz/altstadt/citykirche/001.jpg"
+        }
+      },
+      de: {
+        name: "Jesuitenkirche Koblenz (Citykirche)",
+        loc: {
+          country: "Deutschland", region: "Rheinland-Pfalz", city: "Koblenz", cityDistrict: "Altstadt"
+        },
+        officialSite: [
+          { bold: "Offizielle Website", link: "https://www.citykirche-koblenz.de" }
+        ],
+        short_description: "Historische Kirche im Zentrum der Altstadt am Jesuitenplatz. Sie wurde im 17. Jahrhundert als Teil eines Komplexes des Jesuitenordens erbaut. Heute wird das Gebäude als offene Stadtkirche für Gottesdienste, Konzerte und kulturelle Veranstaltungen genutzt.",
+        full_description: {
+          title: "Beschreibung und Geschichte",
+          items: [
+            { bold: "Jesuitenkirche Koblenz (Citykirche)", text: "befindet sich im Zentrum der Altstadt am Jesuitenplatz. Das historische Gebäude steht im Zusammenhang mit der Tätigkeit des Jesuitenordens im 17. Jahrhundert und der religiösen Entwicklung der Stadt." },
+            { text: "Heute wird die Kirche als offener städtischer Raum genutzt. Hier finden Gottesdienste, Konzerte und kulturelle Veranstaltungen statt, wodurch das Gebäude sowohl religiöse als auch gesellschaftliche Funktionen erfüllt." },
+            { text: "Die Fassade bewahrt ihr historisches Erscheinungsbild, während der Innenraum nach dem Wiederaufbau nach dem Krieg modern gestaltet wurde." },
+            { bold: "Geschichte", text: "Die Jesuitenkirche in Koblenz wurde im frühen 17. Jahrhundert als Teil eines Komplexes des Jesuitenordens erbaut. An der Kirche befand sich eine Schule, die eine wichtige Rolle im Bildungssystem der Stadt in der Zeit der Gegenreformation spielte." },
+            { text: "Das Gebäude durchlief mehrere historische Phasen und blieb ein bedeutendes religiöses und Bildungszentrum von Koblenz." },
+            { text: "Im Jahr 1944 wurde die Kirche im Zweiten Weltkrieg schwer beschädigt. Nach dem Wiederaufbau wurde die Fassade erhalten, während der Innenraum vollständig neu und modern gestaltet wurde, wodurch das Gebäude ein Beispiel für die Verbindung historischer Architektur und moderner Nutzung wurde." }
+          ]
+        },
+        practical_info: {
+          title: "Praktische Informationen",
+          items: [
+            { bold: "Adresse:", text: "Jesuitenplatz 4, 56068 Koblenz, Deutschland" },
+            { bold: "Konfession:", text: "römisch-katholische Kirche" },
+            { bold: "Eintritt:", text: "in der Regel frei (abhängig von Veranstaltungen)" }
+          ]
+        },
+        interestingFacts: {
+          title: "Interessante Fakten",
+          isList: true,
+          items: [
+            { text: "Ursprünglich Teil eines Jesuitenklosters und einer Schule" },
+            { text: "Nach dem Krieg wurde der Innenraum bewusst modern gestaltet" },
+            { text: "Heute als offener Kulturraum genutzt" },
+            { text: "Liegt an einem der zentralen Plätze der Altstadt" }
+          ]
+        },
+        construction_period: "1613–1617",
+        founder: "Societas Jesu",
+        meta: {
+          title: "Jesuitenkirche Koblenz (Citykirche) – historische Kirche im Stadtzentrum",
+          description: "Jesuitenkirche Koblenz (Citykirche) – historische Kirche aus dem 17. Jahrhundert im Zentrum der Altstadt, die barocke Fassade mit modernem Kulturraum verbindet.",
+          ogTitle: "Citykirche Koblenz – Geschichte und Moderne im Herzen der Altstadt",
+          ogDescription: "Ehemalige Jesuitenkirche aus dem 17. Jahrhundert in Koblenz: historische Architektur, moderner Innenraum und kulturelles Leben der Stadt.",
+          keywords: "Citykirche Koblenz, Jesuitenkirche Koblenz, Koblenz Kirche, Altstadt Koblenz, Jesuitenplatz, historische Kirchen Deutschland, Barockkirche Koblenz",
+          ogImage: "https://our-travels.info/foto/Germany/rheinland-pfalz/koblenz/altstadt/citykirche/001.jpg"
         }
       }
     }
