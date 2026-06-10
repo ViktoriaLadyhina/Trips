@@ -16,7 +16,7 @@
         margin-bottom: 15px;
     }
 
-    &__title {
+    &__name {
         @include h1();
         margin-bottom: 20px;
         text-align: center;
@@ -32,57 +32,59 @@
     &__transport,
     &__climate,
     &__tourism,
-    &__cuisine,
-    &__entry,
-    &__symbols,
+    // &__cuisine,
+    // &__entry,
     &__holidays {
         text-align: justify;
         padding: 3px;
+        @include body-text;
 
-        &-bold {
-            @include bold-text;
-        }
-
-        &-text {
+        a {
             @include body-text;
-        }
+            text-decoration: none;
 
-        &-title {
-            @include h3();
-            padding: 20px;
-            text-align: center;
-        }
-
-        &-item {
-            display: flex;
-            align-items: flex-start;
-            gap: 5px;
-            margin-bottom: 10px;
-        }
-
-        img {
-            max-width: 250px;
+            &:hover {
+                text-decoration: underline;
+                cursor: pointer;
+            }
         }
     }
 
     &__symbols {
+        .symbol-item {
+            display: flex;
+            gap: 20px;
+            align-items: flex-start;
+            margin-bottom: 30px;
+            @include body-text;
+            text-align: justify;
+        }
+
         img {
-            max-width: 150px;
+            width: 150px;
+            flex-shrink: 0;
+        }
+
+        h2 {
+            @include h3();
+            text-align: center;
+            margin: 20px 0 10px;
+        }
+
+        .symbol-content {
+            flex: 1;
         }
     }
 
-    &__history {
+    &__briefHistory {
         text-align: justify;
         padding-bottom: 20px;
+        @include body-text;
 
-        &-title {
+        h2 {
             @include h3();
-            padding: 20px;
             text-align: center;
-        }
-
-        &-text {
-            @include body-text;
+            margin: 20px 0 10px;
         }
     }
 
@@ -93,7 +95,7 @@
         margin: 10px 0 10px 10px;
         float: right;
 
-        &--right {
+        &--left {
             float: left;
             margin: 10px 10px 10px 0;
         }
@@ -160,94 +162,95 @@
 }
 
 .country__routes {
-  margin: 2rem 0;
+    margin: 2rem 0;
 
-  &-title {
-    @include h3();
-    margin-bottom: 20px;
-  }
-
-  &-table {
-    width: 100%;
-    border-collapse: collapse;
-    background: var(--color-cart-bg);
-  }
-
-  th {
-    @include small-text();
-    font-weight: 600;
-    padding: 10px 12px;
-    border-bottom: 2px solid var(--color-primary);
-    text-align: center;
-  }
-
-  td {
-    @include small-text();
-    padding: 10px 12px;
-    border-bottom: 1px solid rgba(0, 0, 0, 0.08);
-    vertical-align: top;
-    text-align: left;
-  }
-
-  tr:hover {
-    background: rgba(0, 0, 0, 0.03);
-  }
-
-  a {
-    color: var(--color-primary);
-    text-decoration: none;
-    font-weight: 600;
-
-    &:hover {
-      text-decoration: underline;
+    &-title {
+        @include h3();
+        margin-bottom: 20px;
     }
-  }
 
-  &-name {
-    min-width: 220px;
-    text-align: left;
-  }
+    &-table {
+        width: 100%;
+        border-collapse: collapse;
+        background: var(--color-cart-bg);
+    }
+
+    th {
+        @include small-text();
+        font-weight: 600;
+        padding: 10px 12px;
+        border-bottom: 2px solid var(--color-primary);
+        text-align: center;
+    }
+
+    td {
+        @include small-text();
+        padding: 10px 12px;
+        border-bottom: 1px solid rgba(0, 0, 0, 0.08);
+        vertical-align: top;
+        text-align: left;
+    }
+
+    tr:hover {
+        background: rgba(0, 0, 0, 0.03);
+    }
+
+    a {
+        color: var(--color-primary);
+        text-decoration: none;
+        font-weight: 600;
+
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+
+    &-name {
+        min-width: 220px;
+        text-align: left;
+    }
 }
 
 /* ===== карточки ===== */
 
 .country__routes-cards {
-  display: none;
-  flex-direction: column;
-  gap: 12px;
+    display: none;
+    flex-direction: column;
+    gap: 12px;
 }
 
 .country__routes-card {
-  background: var(--color-cart-bg);
-  border: 1px solid #ddd;
-  padding: 12px;
-  border-radius: 8px;
+    background: var(--color-cart-bg);
+    border: 1px solid #ddd;
+    padding: 12px;
+    border-radius: 8px;
 }
 
 .country__routes-row {
-  margin-bottom: 6px;
-  @include small-text();
+    margin-bottom: 6px;
+    @include small-text();
 }
 
 .country__routes-card a {
-  color: var(--color-primary);
-  text-decoration: none;
+    color: var(--color-primary);
+    text-decoration: none;
 }
 
 /* ===== адаптив ===== */
 
 @media (max-width: 768px) {
 
-  .country__routes-table {
-    display: none;
-  }
+    .country__routes-table {
+        display: none;
+    }
 
-  .country__routes-cards {
-    display: flex;
-  }
+    .country__routes-cards {
+        display: flex;
+    }
 }
 
 @media (max-width: 768px) {
+
     .country__photo,
     .country__photo--right,
     .country__history-img {
@@ -266,6 +269,10 @@
         &.mobile-open> :not(.country__sidebar-toggle) {
             display: block;
         }
+    }
+
+    .symbol-item {
+        flex-direction: column;
     }
 }
 

@@ -6,7 +6,7 @@ import { useEffect, useRef, useState } from "react";
 export default function LuxembourgMap({ regions, countryPath }) {
   const navigate = useNavigate();
 
-  const regionItems = regions?.items || [];
+  const regionItems = regions || [];
 
   const [hoverRegion, setHoverRegion] = useState(null);
   const [tooltipPos, setTooltipPos] = useState([0, 0]);

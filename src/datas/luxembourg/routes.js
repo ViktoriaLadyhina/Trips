@@ -70,7 +70,7 @@ const datas = [
                     ogImage: "https://our-travels.info/foto/Luxembourg/mullerthal/001.jpg"
                 }
             },
-            ua: {
+            uk: {
                 name: "Мюллертальська стежка",
                 countryName: "Люксембург",
                 location: "Люксембург, регіон Мюллерталь",
@@ -273,7 +273,7 @@ const datas = [
                     ogImage: "https://our-travels.info/foto/Luxembourg/seven_castles/001.jpg"
                 }
             },
-            ua: {
+            uk: {
                 name: "Долина семи замків",
                 countryName: "Люксембург",
                 location: "Люксембург, долина річки Ейш",

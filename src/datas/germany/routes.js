@@ -84,7 +84,7 @@ const datas = [
                     ogImage: "https://our-travels.info/foto/Germany/middle_rhine_valley/001.jpg"
                 }
             },
-            ua: {
+            uk: {
                 name: "Долина Середнього Рейну",
                 countryName: "Німеччина",
                 location: "Рейнланд-Пфальц і Гессен, Німеччина",

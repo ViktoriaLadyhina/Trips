@@ -33,12 +33,43 @@ const regionCenters = {
   crimea: { x: 712, y: 564, dx: 15, dy: 3 }
 };
 
-export default function UkraineMap({ regions, countryPath }) {
+const ukraineSvgMap = {
+  vinnytsia: "vinnytska",
+  volyn: "volynska",
+  dnipropetrovsk: "dnepropetrovska",
+  donetsk: "donetska",
+  zhytomyr: "zhytomyrska",
+  zakarpattia: "zakarpatska",
+  zaporizhia: "zaporizka",
+  "ivano-frankivsk": "ivano-frankivska",
+  kyiv: "kyivska",
+  kirovohrad: "kirovohradska",
+  luhansk: "luganska",
+  lviv: "lvivska",
+  mykolaiv: "mykolaivska",
+  odessa: "odeska",
+  poltava: "poltavska",
+  rivne: "rovenska",
+  sumy: "sumska",
+  ternopil: "ternopilska",
+  kharkiv: "kharkivska",
+  kherson: "khersonska",
+  khmelnytskyi: "khmelnytska",
+  cherkasy: "cherkaska",
+  chernihiv: "chernihivska",
+  chernivtsi: "chernivetska",
+  "kyiv-city": "kyiv",
+  sevastopol: "sevastopol",
+  crimea: "crimea"
+};
+
+
+export default function UkraineMap({ regions=[], countryPath }) {
   const navigate = useNavigate();
-  const regionItems = regions?.items || [];
 
   const [hoverRegion, setHoverRegion] = useState(null);
   const [tooltipPos, setTooltipPos] = useState([0, 0]);
+
 
   return (
     <div className="map-container">
@@ -49,7 +80,8 @@ export default function UkraineMap({ regions, countryPath }) {
       >
         <g className="map-shape">
           {ukraine.locations.map((loc) => {
-            const region = regionItems.find(r => r.svgId.toLowerCase() === loc.id);
+            const regionKey = ukraineSvgMap[loc.id];
+const region = regions.find(r => r.path === regionKey);
             if (!region) return null;
 
             return (
@@ -70,7 +102,8 @@ export default function UkraineMap({ regions, countryPath }) {
           })}
 
           {ukraine.locations.map((loc) => {
-            const region = regionItems.find(r => r.svgId.toLowerCase() === loc.id);
+            const regionKey = ukraineSvgMap[loc.id];
+            const region = regions.find(r => r.path === regionKey);
             if (!region) return null;
 
             const center = regionCenters[loc.id] || { x: 0, y: 0, dx: 0, dy: 0 };

@@ -434,7 +434,7 @@ const datas = [
           items: [
             { id: 1, name: 'Капеллен', hasInfo: true, path: 'capellen' },
             { id: 2, name: 'Клерво', hasInfo: false, path: 'clervaux' },
-            { id: 3, name: 'Дікріх', hasInfo: false, path: 'diekirch' },
+            { id: 3, name: 'Капеллен', hasInfo: false, path: 'diekirch' },
             { id: 4, name: 'Ехтернах', hasInfo: false, path: 'echternach' },
             { id: 5, name: 'Еш-сюр-Альзетт', hasInfo: false, path: 'esch_sur_alzette' },
             { id: 6, name: 'Гревенмахер', hasInfo: false, path: 'grevenmacher' },
