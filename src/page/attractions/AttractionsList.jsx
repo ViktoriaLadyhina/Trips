@@ -23,7 +23,7 @@ const attractionsTitle = { ru: "Достопримечательности", ua:
 const NoAttractions = { ru: "Нет достопримечательностей", ua: "Достопримечательностей немає", de: "Keine Sehenswürdigkeiten" };
 const showAllText = {
     ru: { true: "Показать только текущее", false: "Показать все" },
-    ua: { true: "Показати тільки поточні", false: "Показати все" },
+    uk: { true: "Показати тільки поточні", false: "Показати все" },
     de: { true: "Nur aktuelle anzeigen", false: "Alle anzeigen" }
 };
 
@@ -59,7 +59,7 @@ const AttractionsList = () => {
         title: locationName ? `${base} – ${locationName}` : base,
         description: {
             ru: `Список достопримечательностей в ${locationName || 'регионе'}`,
-            ua: `Список пам’яток у ${locationName || 'регіоні'}`,
+            uk: `Список пам’яток у ${locationName || 'регіоні'}`,
             de: `Liste der Sehenswürdigkeiten in ${locationName || 'der Region'}`
         }[lang]
     };

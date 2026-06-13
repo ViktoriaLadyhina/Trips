@@ -61,7 +61,7 @@ const datas = [
                     ogImage: "https://our-travels.info/foto/Luxembourg/seven_castles/koerich_castle/001.jpg"
                 }
             },
-            ua: {
+            uk: {
                 name: "Кьоріх",
                 desc: {
                     general: [

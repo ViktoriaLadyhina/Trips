@@ -52,7 +52,7 @@ const datas = [
                     ogImage: "https://our-travels.info/foto/Germany/nrw/koln/koln-city/karneval/001.jpg"
                 }
             },
-            ua: {
+            uk: {
                 name: "Кельнський карнавал",
                 location: "Кельн, Німеччина",
                 date: "Щорічно. Кінець лютого – початок березня: четвер перед Попільною середою (Weiberfastnacht, перший день Великого посту) – Попільна середа",
@@ -194,7 +194,7 @@ const datas = [
                     ogImage: "https://our-travels.info/foto/Germany/nrw/arnsberg/dortmund/westfalenpark/winterleuchten/001.jpg"
                 }
             },
-            ua: {
+            uk: {
                 name: "Сад світла у Вестфаленпарку",
                 location: "Дортмунд, Німеччина",
                 date: "Щороку. Зазвичай з початку грудня до початку січня (приблизно 6 грудня – 4 січня)",
@@ -325,7 +325,7 @@ const datas = [
                     ogImage: "https://our-travels.info/foto/Germany/nrw/arnsberg/dortmund/christmas/001.jpeg"
                 }
             },
-            ua: {
+            uk: {
                 name: "Різдвяний ярмарок і головна різдвяна ялинка Дортмунда",
                 location: "Дортмунд, Німеччина",
                 date: "Щороку в грудні",

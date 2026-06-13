@@ -31,16 +31,17 @@ const { lang } = useSelector((state) => state.language);
 
   const districtPagePath = "/germany/nrw/koln";
 
-
   // 1️⃣ Берём субрегионы Köln
   const kolnSubRegions = useMemo(() => subRegion || [], [subRegion]);
 
   // 2️⃣ Берём города
-  const freeCities = useMemo(() => {
-    return ["koln", "leverkusen", "bonn", "aachen-city"]
-      .map(slug => regions?.cities?.items?.find(city => city.path === slug))
-      .filter(Boolean);
-  }, [regions]);
+const freeCities = useMemo(() => {
+  const result = ["koln_city", "leverkusen", "bonn", "aachen_city"]
+    .map(slug => regions?.cities?.items.find(city => city.path === slug))
+    .filter(Boolean);
+
+  return result;
+}, [regions]);
 
   // Функция клика по субрегиону
   const scrollToSubRegion = (reg) => {

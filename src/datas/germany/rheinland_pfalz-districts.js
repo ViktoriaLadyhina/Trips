@@ -4,7 +4,7 @@ const datas = [
         path: "city",
         translations: {
             ru: { name: "Город областного значения" },
-            ua: { name: "Місто облатного значення" },
+            uk: { name: "Місто облатного значення" },
             de: { name: "Stadt von regionaler Bedeutung" }
         }
     },
@@ -14,7 +14,7 @@ const datas = [
         path: "ahrweiler",
         translations: {
             ru: { name: 'Арвайлер' },
-            ua: { name: 'Арвайлер' },
+            uk: { name: 'Арвайлер' },
             de: { name: 'Ahrweiler' }
         }
     },
@@ -24,7 +24,7 @@ const datas = [
         path: "altenkirchen",
         translations: {
             ru: { name: 'Альтенкирхен' },
-            ua: { name: 'Альтенкірхен' },
+            uk: { name: 'Альтенкірхен' },
             de: { name: 'Altenkirchen' }
         }
     },
@@ -34,7 +34,7 @@ const datas = [
         path: "alzey_worms",
         translations: {
             ru: { name: 'Альцай-Вормс' },
-            ua: { name: 'Альцай-Вормс' },
+            uk: { name: 'Альцай-Вормс' },
             de: { name: 'Alzey-Worms' }
         }
     },
@@ -44,7 +44,7 @@ const datas = [
         path: "bad_duerkheim",
         translations: {
             ru: { name: 'Бад-Дюркхайм' },
-            ua: { name: 'Бад-Дюркгайм' },
+            uk: { name: 'Бад-Дюркгайм' },
             de: { name: 'Bad Dürkheim' }
         }
     },
@@ -54,7 +54,7 @@ const datas = [
         path: "bad_kreuznach",
         translations: {
             ru: { name: 'Бад-Кройцнах' },
-            ua: { name: 'Бад-Кройцнах' },
+            uk: { name: 'Бад-Кройцнах' },
             de: { name: 'Bad Kreuznach' }
         }
     },
@@ -64,7 +64,7 @@ const datas = [
         path: "bernkastel_wittlich",
         translations: {
             ru: { name: 'Бернкастель-Виттлих' },
-            ua: { name: 'Бернкастель-Віттліх' },
+            uk: { name: 'Бернкастель-Віттліх' },
             de: { name: 'Bernkastel-Wittlich' }
         }
     },
@@ -74,7 +74,7 @@ const datas = [
         path: "birkenfeld",
         translations: {
             ru: { name: 'Биркенфельд' },
-            ua: { name: 'Біркенфельд' },
+            uk: { name: 'Біркенфельд' },
             de: { name: 'Birkenfeld' }
         }
     },
@@ -84,7 +84,7 @@ const datas = [
         path: "cochem_zell",
         translations: {
             ru: { name: 'Кохем-Целль' },
-            ua: { name: 'Кохем-Целль' },
+            uk: { name: 'Кохем-Целль' },
             de: { name: 'Cochem-Zell' }
         }
     },
@@ -94,7 +94,7 @@ const datas = [
         path: "donnersbergkreis",
         translations: {
             ru: { name: 'Доннерсберг' },
-            ua: { name: 'Доннерсберг' },
+            uk: { name: 'Доннерсберг' },
             de: { name: 'Donnersbergkreis' }
         }
     },
@@ -104,7 +104,7 @@ const datas = [
         path: "eifelkreis_bitburg_pruem",
         translations: {
             ru: { name: 'Айфелькрайс Бітбург-Прюм' },
-            ua: { name: 'Айфелькрайс Бітбург-Прюм' },
+            uk: { name: 'Айфелькрайс Бітбург-Прюм' },
             de: { name: 'Eifelkreis Bitburg-Prüm' }
         }
     },
@@ -114,7 +114,7 @@ const datas = [
         path: "germersheim",
         translations: {
             ru: { name: 'Гермерсхайм' },
-            ua: { name: 'Гермерсгайм' },
+            uk: { name: 'Гермерсгайм' },
             de: { name: 'Germersheim' }
         }
     },
@@ -124,7 +124,7 @@ const datas = [
         path: "kaiserslautern",
         translations: {
             ru: { name: 'Кайзерслаутерн' },
-            ua: { name: 'Кайзерслаутерн' },
+            uk: { name: 'Кайзерслаутерн' },
             de: { name: 'Kaiserslautern' }
         }
     },
@@ -134,7 +134,7 @@ const datas = [
         path: "kusel",
         translations: {
             ru: { name: 'Кузель' },
-            ua: { name: 'Кузель' },
+            uk: { name: 'Кузель' },
             de: { name: 'Kusel' }
         }
     },
@@ -144,7 +144,7 @@ const datas = [
         path: "mainz_bingen",
         translations: {
             ru: { name: 'Майнц-Бинген' },
-            ua: { name: 'Майнц-Бінген' },
+            uk: { name: 'Майнц-Бінген' },
             de: { name: 'Mainz-Bingen' }
         }
     },
@@ -176,7 +176,7 @@ const datas = [
                     districts: [{ bold: 'Округа-районы (Kreise):', text: 'Майен (Mayen), Андерах (Andernach), Бендорф (Bendorf), Мандиг (Mendig), Пелленц (Pellenz), Майфельд (Maifeld), Вордерайфель (Vordereifel), Рейн-Мозель (Rhein-Mosel), Вайсентхурм (Weißenthurm)' }], cities: [{ bold: 'Города, не принадлежащие районам (kreisfreie Städte):', text: 'Кобленц (Koblenz)' },]
                 },
             },
-            ua: {
+            uk: {
                 name: 'Маєн-Кобленц',
                 title: "Район Маєн-Кобленц",
                 countryName: "Німеччина", regionName: "Рейнланд-Пфальц",
@@ -240,7 +240,7 @@ const datas = [
         path: "neuwied",
         translations: {
             ru: { name: 'Нойвид' },
-            ua: { name: 'Нойвід' },
+            uk: { name: 'Нойвід' },
             de: { name: 'Neuwied' }
         }
     },
@@ -250,7 +250,7 @@ const datas = [
         path: "rhein_hunsrueck_kreis",
         translations: {
             ru: { name: 'Райн-Хунсрюк' },
-            ua: { name: 'Райн-Гунсрюк' },
+            uk: { name: 'Райн-Гунсрюк' },
             de: { name: 'Rhein-Hunsrück-Kreis' }
         }
     },
@@ -260,7 +260,7 @@ const datas = [
         path: "rhein_lahn_kreis",
         translations: {
             ru: { name: 'Райн-Лан' },
-            ua: { name: 'Райн-Лан' },
+            uk: { name: 'Райн-Лан' },
             de: { name: 'Rhein-Lahn-Kreis' }
         }
     },
@@ -270,7 +270,7 @@ const datas = [
         path: "rhein_pfalz_kreis",
         translations: {
             ru: { name: 'Райн-Пфальц' },
-            ua: { name: 'Райн-Пфальц' },
+            uk: { name: 'Райн-Пфальц' },
             de: { name: 'Rhein-Pfalz-Kreis' }
         }
     },
@@ -280,7 +280,7 @@ const datas = [
         path: "suedliche_weinstrasse",
         translations: {
             ru: { name: 'Южный Вайнштрассе' },
-            ua: { name: 'Південна Вайнштрассе' },
+            uk: { name: 'Південна Вайнштрассе' },
             de: { name: 'Südliche Weinstrasse' }
         }
     },
@@ -290,7 +290,7 @@ const datas = [
         path: "suedwestpfalz",
         translations: {
             ru: { name: 'Юго-западный Пфальц' },
-            ua: { name: 'Південно-Західний Пфальц' },
+            uk: { name: 'Південно-Західний Пфальц' },
             de: { name: 'Südwestpfalz' }
         }
     },
@@ -331,7 +331,7 @@ const datas = [
                     ]
                 },
             },
-            ua: {
+            uk: {
                 name: 'Трір-Саарбург',
                 title: "Район Трір-Саарбург",
                 countryName: "Німеччина", regionName: "Рейнланд-Пфальц",
@@ -398,7 +398,7 @@ const datas = [
         path: "vulkaneifel",
         translations: {
             ru: { name: 'Вулканайфель' },
-            ua: { name: 'Вулканайфель' },
+            uk: { name: 'Вулканайфель' },
             de: { name: 'Vulkaneifel' }
         }
     },
@@ -407,7 +407,7 @@ const datas = [
         path: "westerwaldkreis",
         translations: {
             ru: { name: 'Вестервальд' },
-            ua: { name: 'Вестервальд' },
+            uk: { name: 'Вестервальд' },
             de: { name: 'Westerwaldkreis' }
         }
     },
@@ -416,7 +416,7 @@ const datas = [
         path: "mainz",
         translations: {
             ru: { name: 'Майнц' },
-            ua: { name: 'Майнц' },
+            uk: { name: 'Майнц' },
             de: { name: 'Mainz' }
         }
     },
@@ -425,7 +425,7 @@ const datas = [
         path: "koblenz",
         translations: {
             ru: { name: 'Кобленц' },
-            ua: { name: 'Кобленц' },
+            uk: { name: 'Кобленц' },
             de: { name: 'Koblenz' }
         }
     },
@@ -434,7 +434,7 @@ const datas = [
         path: "ludwigshafen",
         translations: {
             ru: { name: 'Людвигсхафен' },
-            ua: { name: 'Людвігсгафен' },
+            uk: { name: 'Людвігсгафен' },
             de: { name: 'Ludwigshafen' }
         }
     },
@@ -443,7 +443,7 @@ const datas = [
         path: "trier",
         translations: {
             ru: { name: 'Трир' },
-            ua: { name: 'Трір' },
+            uk: { name: 'Трір' },
             de: { name: 'Trier' }
         }
     },
@@ -452,7 +452,7 @@ const datas = [
         path: "kaiserslautern-city",
         translations: {
             ru: { name: 'Кайзерслаутерн' },
-            ua: { name: 'Кайзерслаутерн' },
+            uk: { name: 'Кайзерслаутерн' },
             de: { name: 'Kaiserslautern' }
         }
     },
@@ -461,7 +461,7 @@ const datas = [
         path: "worms",
         translations: {
             ru: { name: 'Вормс' },
-            ua: { name: 'Вормс' },
+            uk: { name: 'Вормс' },
             de: { name: 'Worms' }
         }
      },
@@ -470,7 +470,7 @@ const datas = [
         path: "speyer",
         translations: {
             ru: { name: 'Шпайер' },
-            ua: { name: 'Шпаєр' },
+            uk: { name: 'Шпаєр' },
             de: { name: 'Speyer' }
         }
      },
@@ -479,7 +479,7 @@ const datas = [
         path: "frankenthal",
         translations: {
             ru: { name: 'Франкенталь' },
-            ua: { name: 'Франкенталь' },
+            uk: { name: 'Франкенталь' },
             de: { name: 'Frankenthal' }
         }
     },
@@ -488,7 +488,7 @@ const datas = [
         path: "landau",
         translations: {
             ru: { name: 'Ландау-ин-дер-Пфальц' },
-            ua: { name: 'Ландау-ин-дер-Пфальц' },
+            uk: { name: 'Ландау-ин-дер-Пфальц' },
             de: { name: 'Landau in der Pfalz' }
         }
     },
@@ -497,7 +497,7 @@ const datas = [
         path: "neustadt",
         translations: {
             ru: { name: 'Нойштадт' },
-            ua: { name: 'Нойштадт' },
+            uk: { name: 'Нойштадт' },
             de: { name: 'Neustadt an der Weinstraße' }
         }
     },
@@ -506,7 +506,7 @@ const datas = [
         path: "pirmasens",
         translations: {
             ru: { name: 'Пирмазенс' },
-            ua: { name: 'Пірмазенс' },
+            uk: { name: 'Пірмазенс' },
             de: { name: 'Pirmasens' }
         }
     },
@@ -515,7 +515,7 @@ const datas = [
         path: "zweibruecken",
         translations: {
             ru: { name: 'Цвайбрюккен' },
-            ua: { name: 'Цвайбрюккен' },
+            uk: { name: 'Цвайбрюккен' },
             de: { name: 'Zweibrücken' }
         }
      }

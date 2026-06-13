@@ -64,7 +64,7 @@ const datas = [
                     ogImage: "https://our-travels.info/foto/Germany/nrw/arnsberg/Hochsauerlandkreis/sundern/sorpesee/001.jpg"
                 }
             },
-            ua: {
+            uk: {
                 name: "Озеро Сорпезее",
                 loc: {
                     country: "Німеччина", region: "Північний Рейн-Вестфалія", district: "Арнсберг", city: "Зундерн", cityDistrict: "райони Лангшайд, Амеке, Штемель"
@@ -235,7 +235,7 @@ const datas = [
                     ogImage: "https://our-travels.info/foto/Germany/nrw/arnsberg/Hochsauerlandkreis/sundern/ehrenmal/001.jpg"
                 }
             },
-            ua: {
+            uk: {
                 name: "Меморіал Лангшайд",
                 loc: {
                     country: "Німеччина", region: "Північний Рейн-Вестфалія", district: "Арнсберг", city: "Зундерн", cityDistrict: "район Лангшайд"
@@ -415,7 +415,7 @@ const datas = [
                     ogImage: "https://our-travels.info/foto/Germany/nrw/arnsberg/Märkischer-Kreis/altena/lutherkirche/001.jpg"
                 }
             },
-            ua: {
+            uk: {
                 name: "Євангелічно-лютеранська церква Лютера",
                 location: "Альтена, Німеччина",
                 short_description: "Євангелічно-лютеранська церква Лютера (Lutherkirche Altena) – історична міська церква в центрі міста Альтена. Спочатку як церква Святої Катерини побудована на початку XIV століття, після Реформації стала центральною протестантською церквою міста. Бароковий інтер'єр, багата історія та роль у житті громади роблять її однією з ключових архітектурних пам'яток міста.",
@@ -589,7 +589,7 @@ const datas = [
                     ogImage: "https://our-travels.info/foto/Germany/nrw/arnsberg/Märkischer-Kreis/altena/st_matthaeus_church/001.jpg"
                 }
             },
-            ua: {
+            uk: {
                 name: "Парафіяльна церква Святого Матвія",
                 location: "Альтена, Німеччина",
                 short_description: "Католицька парафіяльна церква Святого Матвія – одна з помітних архітектурних пам'яток міста Альтена, побудована наприкінці XIX століття. Храм виконаний у неоготичному стилі з елементами романської архітектури та вирізняється масивними кам'яними стінами та високою вежею. Всередині збережені історичні вівтарі та декоративні елементи, що створюють атмосферу затишку та традицій. Церква залишається діючою парафією та важливою частиною міського життя.",
@@ -742,7 +742,7 @@ const datas = [
                     ogImage: "https://our-travels.info/foto/Germany/nrw/arnsberg/Märkischer-Kreis/altena/gustav_selve/001.jpg"
                 }
             },
-            ua: {
+            uk: {
                 name: "Пам’ятник Густаву Сельве",
                 location: "Альтена, Німеччина",
                 short_description: "Пам’ятник Густаву Сельве – відомому німецькому промисловцю XIX–XX століть – встановлено на підвищенні між долинами річок Ленне та Рахмедеталь у місті Альтена. Монумент височіє над містом і слугує музейно-пам’ятним об’єктом, поєднуючи художню скульптуру з історичним меморіалом.",
@@ -874,7 +874,7 @@ const datas = [
                     ogImage: "https://our-travels.info/foto/Germany/nrw/arnsberg/Märkischer-Kreis/luedenscheid/neuenhof/001.jpg"
                 }
             },
-            ua: {
+            uk: {
                 name: "Замок Нойенхоф",
                 location: "Люденшайд, район Brügge, Німеччина",
                 short_description: "Оточений водяним ровом замок Нойенхоф — один із значущих історичних архітектурних пам’яток міста Люденшайд. Комплекс поєднує житлову садибу, господарські будівлі та внутрішній двір з декоративним оформленням.",
@@ -1009,7 +1009,7 @@ const datas = [
                     ogImage: "https://our-travels.info/foto/Germany/nrw/arnsberg/Märkischer-Kreis/luedenscheid/schloss_oedenthal/001.jpg"
                 }
             },
-            ua: {
+            uk: {
                 name: "Садиба Оеденталь",
                 location: "Люденшайд, район Oeneking / Stüttinghausen, Німеччина",
                 short_description: "Історична садиба в Люденшайді, перебудована в XIX столітті в неоготичному стилі та збережена як атмосферне заміське маєткове господарство.",
@@ -1161,7 +1161,7 @@ const datas = [
                     ogImage: "https://our-travels.info/foto/Germany/nrw/arnsberg/Märkischer-Kreis/luedenscheid/bremecker_hammer/001.jpg"
                 }
             },
-            ua: {
+            uk: {
                 name: "Bremecker Hammer – техніко-історичний музей ковальського ремесла",
                 location: "Люденшайд, район Brüninghausen / Augustenthal, Німеччина",
                 officialSite: [
@@ -1345,7 +1345,7 @@ const datas = [
                     ogImage: "https://our-travels.info/foto/Germany/nrw/arnsberg/Märkischer-Kreis/luedenscheid/phaenomenta/001.jpg"
                 }
             },
-            ua: {
+            uk: {
                 name: "Науковий центр ФЕНОМЕНТА",
                 location: "Люденшайд, район Innenstadt / Staberg / Knapp, Німеччина",
                 officialSite: [{ bold: "Офіційний сайт", link: "https://www.phaenomenta-luedenscheid.de" }],
@@ -1507,7 +1507,7 @@ const datas = [
                     ogImage: "https://our-travels.info/foto/Germany/nrw/arnsberg/Märkischer-Kreis/luedenscheid/stilleking/001.jpg"
                 }
             },
-            ua: {
+            uk: {
                 name: "Природний заповідник Стиллекінг",
                 location: "Люденшайд, Німеччина",
                 short_description: "Стиллекінг – природна територія на південній околиці Люденшайда в Північному Рейні-Вестфалії. Це колишній військовий полігон, який з 1994 року перебуває під охороною як природний заповідник. Сьогодні він відомий своїми відкритими ландшафтами, рідкісними біотопами та системою пішохідних маршрутів.",
@@ -1640,7 +1640,7 @@ const datas = [
                     ogImage: "https://our-travels.info/foto/Germany/nrw/arnsberg/Märkischer-Kreis/luedenscheid/altstadt_luedenscheid/stadtbücherei//001.jpg"
                 }
             },
-            ua: {
+            uk: {
                 name: "Міська бібліотека Люденшайда",
                 loc: {
                     country: "Німеччина",
@@ -1779,7 +1779,7 @@ const datas = [
                     ogImage: "https://our-travels.info/foto/Germany/nrw/arnsberg/Märkischer-Kreis/iserlohn/dechenhohle/001.jpg"
                 }
             },
-            ua: {
+            uk: {
                 name: "Печера Дехенхёле",
                 location: "Ізерлон, Німеччина",
                 officialSite: [{ bold: "Офіційний сайт", link: "https://www.dechenhoehle.de/" }],
@@ -1921,7 +1921,7 @@ const datas = [
                     ogImage: "https://our-travels.info/foto/Germany/nrw/dusseldorf/mettmann/velbert/langenberg_altstadt/006.jpg"
                 }
             },
-            ua: {
+            uk: {
                 name: "Старе місто Лангенберг",
                 location: "Фельберт-Лангенберг, Німеччина",
                 short_description: "Старе місто Лангенберг – один із найкраще збережених історичних центрів регіону, відомий фахверковою архітектурою, вузькими вуличками та атмосферою старовинного торговельно-ремісничого міста.",
@@ -2070,7 +2070,7 @@ const datas = [
                     ogImage: "https://our-travels.info/foto/Germany/nrw/dusseldorf/mettmann/velbert/langenberg_altstadt/alte_kirche/001.jpg"
                 }
             },
-            ua: {
+            uk: {
                 name: "Стара церква Лангенберг",
                 location: "Фельберт-Лангенберг, Німеччина",
                 officialSite: [
@@ -2235,7 +2235,7 @@ const datas = [
                     ogImage: "https://our-travels.info/foto/Germany/nrw/dusseldorf/mettmann/velbert/burgerhaus/001.jpg"
                 }
             },
-            ua: {
+            uk: {
                 name: "Історичний громадський будинок Лангенберга",
                 location: "Фельберт-Лангенберг, Німеччина",
                 short_description: "Історичний громадський будинок Лангенберга – монументальна історична будівля в районі Лангенберг міста Фельберт. Вона була побудована як громадський дар для мешканців і сьогодні використовується як культурний центр для концертів, заходів і громадських зустрічей.",
@@ -2338,7 +2338,7 @@ const datas = [
         id: "fischmarkt_koln",
         type: ["square"], rating: "top",
         path: "fischmarkt_koln",
-        countryPath: "germany", regionPath: "nrw", districtPath: "city", cityPath: "koln",
+        countryPath: "germany", regionPath: "nrw", districtPath: "city", cityPath: "koln_city",
         hiddenFromList: true, showMore: true,
         fotoCard: "Germany/nrw/koln/koln-city/altstadt/fischmarkt/001.jpg",
         coord: { lat: 50.93845, lng: 6.96260 },
@@ -2392,7 +2392,7 @@ const datas = [
                     ogImage: "https://our-travels.info/foto/Germany/nrw/koln/koln-city/altstadt/fischmarkt/001.jpg"
                 }
             },
-            ua: {
+            uk: {
                 name: "Фішмаркт",
                 loc: {
                     country: "Німеччина",
@@ -2496,7 +2496,7 @@ const datas = [
         id: "st_gereon_koln",
         type: ["cathedral"], rating: "popular",
         path: "st_gereon_koln",
-        countryPath: "germany", regionPath: "nrw", districtPath: "city", cityPath: "koln",
+        countryPath: "germany", regionPath: "nrw", districtPath: "city", cityPath: "koln_city",
         hiddenFromList: true, showMore: true,
         map: "romanische_kirchen_altstadt_koln",
         fotoCard: "Germany/nrw/koln/koln-city/altstadt/romanische_kirchen/st_gereon/001.jpg",
@@ -2552,7 +2552,7 @@ const datas = [
                     ogImage: "https://our-travels.info/foto/Germany/nrw/koln/koln-city/altstadt/romanische_kirchen/st_gereon/001.jpg"
                 }
             },
-            ua: {
+            uk: {
                 name: "Церква Святого Герєона",
                 location: "Кельн, район Neustadt-Nord (район Innenstadt), Німеччина",
                 short_description: "Церква Святого Герєона (St. Gereon) – одна з відомих романських церков Кельна, розташована в Старому місті. Відома своєю незвичайною круглою формою та багатою історичною спадщиною.",
@@ -2658,7 +2658,7 @@ const datas = [
         id: "st_kunibert_koln",
         type: ["cathedral"], rating: "local",
         path: "st_kunibert_koln",
-        countryPath: "germany", regionPath: "nrw", districtPath: "city", cityPath: "koln",
+        countryPath: "germany", regionPath: "nrw", districtPath: "city", cityPath: "koln_city",
         hiddenFromList: true, showMore: true,
         map: "romanische_kirchen_altstadt_koln",
         fotoCard: "Germany/nrw/koln/koln-city/altstadt/romanische_kirchen/st_kunibert/001.jpg",
@@ -2706,7 +2706,7 @@ const datas = [
                     ogImage: "https://our-travels.info/foto/Germany/nrw/koln/koln-city/altstadt/romanische_kirchen/st_kunibert/001.jpg"
                 }
             },
-            ua: {
+            uk: {
                 name: "Базиліка Святого Куніберта",
                 location: "Кельн, район Altstadt-Nord (район Innenstadt), Німеччина",
                 short_description: "Базиліка Святого Куніберта — католицька базиліка в романському стилі в північній частині старого Кельна, остання з 12 романських церков Кельна, завершена в цьому стилі.",
@@ -2796,7 +2796,7 @@ const datas = [
         id: "st_aposteln_koln",
         type: ["cathedral"], rating: "popular",
         path: "st_aposteln_koln",
-        countryPath: "germany", regionPath: "nrw", districtPath: "city", cityPath: "koln",
+        countryPath: "germany", regionPath: "nrw", districtPath: "city", cityPath: "koln_city",
         hiddenFromList: true, showMore: true,
         map: "romanische_kirchen_altstadt_koln",
         fotoCard: "Germany/nrw/koln/koln-city/altstadt/romanische_kirchen/st_aposteln/001.jpg",
@@ -2856,7 +2856,7 @@ const datas = [
                     ogImage: "https://our-travels.info/foto/Germany/nrw/koln/koln-city/altstadt/romanische_kirchen/st_aposteln/001.jpg"
                 }
             },
-            ua: {
+            uk: {
                 name: "Церква Святого Апостола",
                 location: "Кельн, район Altstadt-Nord (округ Innenstadt), Німеччина",
                 officialSite: [
@@ -2970,7 +2970,7 @@ const datas = [
         id: "prussian_fortress_system_koln",
         type: ["historical_building"], rating: "local",
         path: "prussian_fortress_system_koln",
-        countryPath: "germany", regionPath: "nrw", districtPath: "city", cityPath: "koln",
+        countryPath: "germany", regionPath: "nrw", districtPath: "city", cityPath: "koln_city",
         fotoCard: "Germany/nrw/koln/koln-city/prussian_fortress_system/outer/010-1.jpg",
         mapOpen: "prussian_fortress_system_koln",
         subObjects: ["fort_I_inner_koln", "fort_II_inner_koln", "fort_III_inner_koln", "fort_V_inner_koln", "fort_VI_inner_koln", "fort_IX_inner_koln"],
@@ -3011,7 +3011,7 @@ const datas = [
                     ogImage: "Germany/nrw/koln/koln-city/prussian_fortress_ring/006.jpg"
                 }
             },
-            ua: {
+            uk: {
                 name: "Прусська фортифікаційна система Кельна",
                 location: "Кельн, Німеччина",
                 status: "partial", note: "частина споруд збереглася та використовується як громадські простори або паркові зони з елементами оригінальних укріплень (редути, капоніри, оборонні вали), інші об’єкти втрачено або вони збереглися лише фрагментарно у вигляді рельєфу та окремих структур.",
@@ -3071,7 +3071,7 @@ const datas = [
         id: "fort_I_inner_koln",
         type: ["historical_building"], rating: "local",
         path: "fort_I_inner_koln",
-        countryPath: "germany", regionPath: "nrw", districtPath: "city", cityPath: "koln",
+        countryPath: "germany", regionPath: "nrw", districtPath: "city", cityPath: "koln_city",
         hiddenFromList: true, showMore: true,
         map: "prussian_fortress_system_koln",
         fotoCard: "Germany/nrw/koln/koln-city/prussian_fortress_system/inner/001.jpg",
@@ -3105,7 +3105,7 @@ const datas = [
                     ogImage: "https://our-travels.info/foto/Germany/nrw/koln/koln-city/prussian_fortress_system/inner/001.jpg"
                 }
             },
-            ua: {
+            uk: {
                 name: "Форт I (внутрішнє фортифікаційне кільце)", sortIndex: 1,
                 location: "Кельн, район Neustadt-Süd (район Innenstadt), Німеччина",
                 short_description: "Форт I (внутрішнє фортифікаційне кільце) – один із фортів внутрішнього кільця прусської фортифікаційної системи Кельна. ",
@@ -3167,7 +3167,7 @@ const datas = [
         id: "fort_II_inner_koln",
         type: ["historical_building"], rating: "local",
         path: "fort_II_inner_koln",
-        countryPath: "germany", regionPath: "nrw", districtPath: "city", cityPath: "koln",
+        countryPath: "germany", regionPath: "nrw", districtPath: "city", cityPath: "koln_city",
         hiddenFromList: true, showMore: true,
         map: "prussian_fortress_system_koln",
         coord: { lat: 50.91404, lng: 6.95909 },
@@ -3200,7 +3200,7 @@ const datas = [
                     ogImage: ""
                 }
             },
-            ua: {
+            uk: {
                 name: "Форт II (внутрішнє фортифікаційне кільце)", sortIndex: 2,
                 location: "Кельн, район Raderberg (район Innenstadt), Німеччина",
                 status: "lost", note: "об’єкт знесено в середині 1930-х років. Видимих слідів укріплень на місцевості не збереглося.",
@@ -3262,7 +3262,7 @@ const datas = [
         id: "fort_III_inner_koln",
         type: ["historical_building"], rating: "local",
         path: "fort_III_inner_koln",
-        countryPath: "germany", regionPath: "nrw", districtPath: "city", cityPath: "koln",
+        countryPath: "germany", regionPath: "nrw", districtPath: "city", cityPath: "koln_city",
         hiddenFromList: true, showMore: true,
         map: "prussian_fortress_system_koln",
         coord: { lat: 50.91827, lng: 6.95098 },
@@ -3292,7 +3292,7 @@ const datas = [
                     ogImage: ""
                 }
             },
-            ua: {
+            uk: {
                 name: "Форт III (внутрішнє кріпосне кільце)", sortIndex: 3,
                 location: "Кельн, район Neustadt-Süd (район Innenstadt), Німеччина",
                 short_description: "Форт III (внутрішнє кріпосне кільце) – один із фортів внутрішнього кільця прусської фортифікаційної системи Кельна. ",
@@ -3348,7 +3348,7 @@ const datas = [
         id: "fort_V_inner_koln",
         type: ["historical_building"], rating: "local",
         path: "fort_V_inner_koln",
-        countryPath: "germany", regionPath: "nrw", districtPath: "city", cityPath: "koln",
+        countryPath: "germany", regionPath: "nrw", districtPath: "city", cityPath: "koln_city",
         hiddenFromList: true, showMore: true,
         fotoCard: "Germany/nrw/koln/koln-city/prussian_fortress_system/inner/005.jpg",
         map: "prussian_fortress_system_koln",
@@ -3380,7 +3380,7 @@ const datas = [
                     ogImage: "https://our-travels.info/foto/Germany/nrw/koln/koln-city/prussian_fortress_system/inner/005.jpg"
                 }
             },
-            ua: {
+            uk: {
                 name: "Форт V (внутрішнє кріпосне кільце)", sortIndex: 5,
                 location: "Кельн, район Lindenthal (район Lindenthal), Німеччина",
                 short_description: "Форт V – форт внутрішнього прусського оборонного кільця Кельна, збудований у 1843–1847 роках.",
@@ -3438,7 +3438,7 @@ const datas = [
         id: "fort_VI_inner_koln",
         type: ["historical_building"], rating: "local",
         path: "fort_VI_inner_koln",
-        countryPath: "germany", regionPath: "nrw", districtPath: "city", cityPath: "koln",
+        countryPath: "germany", regionPath: "nrw", districtPath: "city", cityPath: "koln_city",
         hiddenFromList: true, showMore: true,
         map: "prussian_fortress_system_koln",
         coord: { lat: 50.93363, lng: 6.94278 },
@@ -3469,7 +3469,7 @@ const datas = [
                     ogImage: ""
                 }
             },
-            ua: {
+            uk: {
                 name: "Форт VI (внутрішнє кріпосне кільце)", sortIndex: 6,
                 location: "Кельн, район Lindenthal (район Lindenthal), Німеччина",
                 short_description: "Форт VI – форт внутрішнього прусського оборонного кільця Кельна, збудований у 1818–1823 роках.",
@@ -3527,7 +3527,7 @@ const datas = [
         id: "fort_IX_inner_koln",
         type: ["historical_building"], rating: "local",
         path: "fort_IX_inner_koln",
-        countryPath: "germany", regionPath: "nrw", districtPath: "city", cityPath: "koln",
+        countryPath: "germany", regionPath: "nrw", districtPath: "city", cityPath: "koln_city",
         hiddenFromList: true, showMore: true,
         map: "prussian_fortress_system_koln",
         coord: { lat: 50.95376, lng: 6.95124 },
@@ -3561,7 +3561,7 @@ const datas = [
                     ogImage: ""
                 }
             },
-            ua: {
+            uk: {
                 name: "Форт IX (внутрішнє кріпосне кільце)", sortIndex: 9,
                 location: "Кельн, район Neuehrenfeld (район Ehrenfeld), Німеччина",
                 short_description: "Форт IX – елемент внутрішнього прусського оборонного кільця Кельна, сформованого у першій половині XIX століття.",
@@ -3627,7 +3627,7 @@ const datas = [
         id: "fort_IV_outer_koln",
         type: ["historical_building"], rating: "local",
         path: "fort_IV_outer_koln",
-        countryPath: "germany", regionPath: "nrw", districtPath: "city", cityPath: "koln",
+        countryPath: "germany", regionPath: "nrw", districtPath: "city", cityPath: "koln_city",
         hiddenFromList: true, showMore: true,
         fotoCard: "Germany/nrw/koln/koln-city/prussian_fortress_system/outer/004.jpg",
         map: "prussian_fortress_system_koln",
@@ -3667,7 +3667,7 @@ const datas = [
                     ogImage: "https://our-travels.info/foto/Germany/nrw/koln/koln-city/prussian_fortress_system/outer/004.jpg"
                 }
             },
-            ua: {
+            uk: {
                 name: "Форт IV (зовнішнє фортифікаційне кільце)", sortIndex: 4,
                 location: "Кельн, район Bocklemünd / Vogelsang (район Ehrenfeld), Німеччина",
                 short_description: "Форт IV – великий форт зовнішнього прусського оборонного кільця Кельна, збудований у 1874–1876 роках. Пізніше частково демілітаризований та інтегрований у міську інфраструктуру.",
@@ -3741,7 +3741,7 @@ const datas = [
         id: "zw-a_fort_IV_outer_koln",
         type: ["historical_building"],
         path: "fort_IV_outer_koln",
-        countryPath: "germany", regionPath: "nrw", districtPath: "city", cityPath: "koln",
+        countryPath: "germany", regionPath: "nrw", districtPath: "city", cityPath: "koln_city",
         map: "prussian_fortress_system_koln",
         coord: { lat: 50.9696, lng: 6.8708 },
         hiddenFromList: true,
@@ -3758,7 +3758,7 @@ const datas = [
                     ogImage: ""
                 }
             },
-            ua: {
+            uk: {
                 name: "Проміжне укріплення IVa (Bocklemünd) (Форт IV, Кельн)",
                 status: "lost", note: "збереглися лише слабкі сліди рельєфу (флангові рови та вали).",
                 meta: {
@@ -3788,7 +3788,7 @@ const datas = [
         id: "zw-b_fort_IV_outer_koln",
         type: ["historical_building"],
         path: "fort_IV_outer_koln",
-        countryPath: "germany", regionPath: "nrw", districtPath: "city", cityPath: "koln",
+        countryPath: "germany", regionPath: "nrw", districtPath: "city", cityPath: "koln_city",
         map: "prussian_fortress_system_koln",
         coord: { lat: 50.9585, lng: 6.8615 },
         hiddenFromList: true,
@@ -3805,7 +3805,7 @@ const datas = [
                     ogImage: ""
                 }
             },
-            ua: {
+            uk: {
                 name: "Проміжне укріплення IVb (Vogelsang) (Форт IV, Кельн)",
                 status: "lost", note: "зберігаються лише слабкі сліди рельєфу та фрагменти ландшафтних структур.",
                 meta: {
@@ -3836,7 +3836,7 @@ const datas = [
         id: "fort_V_outer_koln",
         type: ["historical_building"], rating: "local",
         path: "fort_V_outer_koln",
-        countryPath: "germany", regionPath: "nrw", districtPath: "city", cityPath: "koln",
+        countryPath: "germany", regionPath: "nrw", districtPath: "city", cityPath: "koln_city",
         hiddenFromList: true, showMore: true,
         fotoCard: "Germany/nrw/koln/koln-city/prussian_fortress_system/outer/005.jpg",
         map: "prussian_fortress_system_koln",
@@ -3868,7 +3868,7 @@ const datas = [
                     ogImage: "https://our-travels.info/foto/Germany/nrw/koln/koln-city/prussian_fortress_system/outer/005.jpg"
                 }
             },
-            ua: {
+            uk: {
                 name: "Форт V (зовнішнє кріпосне кільце)", sortIndex: 5,
                 location: "Кельн, район Müngersdorf (район Lindenthal), Німеччина",
                 short_description: "Форт V – великий форт зовнішнього прусського оборонного кільця Кельна, збудований у 1874–1876 роках у районі Müngersdorf. ",
@@ -3926,7 +3926,7 @@ const datas = [
         id: "fort_VI_outer_koln",
         type: ["historical_building"], rating: "local",
         path: "fort_VI_outer_koln",
-        countryPath: "germany", regionPath: "nrw", districtPath: "city", cityPath: "koln",
+        countryPath: "germany", regionPath: "nrw", districtPath: "city", cityPath: "koln_city",
         hiddenFromList: true, showMore: true,
         map: "prussian_fortress_system_koln",
         fotoCard: "Germany/nrw/koln/koln-city/prussian_fortress_system/outer/006.jpg",
@@ -3961,7 +3961,7 @@ const datas = [
                     ogImage: "https://our-travels.info/foto/Germany/nrw/koln/koln-city/prussian_fortress_system/outer/006.jpg"
                 }
             },
-            ua: {
+            uk: {
                 name: "Форт VI (зовнішнє фортифікаційне кільце)", sortIndex: 6,
                 location: "Кельн, район Lindenthal (район Lindenthal), Німеччина",
                 short_description: "Форт VI (зовнішнє фортифікаційне кільце) – один із фортів зовнішнього кільця прусської фортифікаційної системи Кельна.",
@@ -4025,7 +4025,7 @@ const datas = [
         id: "fort_IX_outer_koln",
         type: ["historical_building"], rating: "local",
         path: "fort_IX_outer_koln",
-        countryPath: "germany", regionPath: "nrw", districtPath: "city", cityPath: "koln",
+        countryPath: "germany", regionPath: "nrw", districtPath: "city", cityPath: "koln_city",
         hiddenFromList: true, showMore: true,
         map: "prussian_fortress_system_koln",
         fotoCard: "Germany/nrw/koln/koln-city/prussian_fortress_system/outer/009.jpg",
@@ -4062,7 +4062,7 @@ const datas = [
                     ogImage: "https://our-travels.info/foto/Germany/nrw/koln/koln-city/prussian_fortress_system/outer/009.jpg"
                 }
             },
-            ua: {
+            uk: {
                 name: "Форт IX (зовнішнє кріпосне кільце)", sortIndex: 9,
                 location: "Кельн, район Rath / Kalk (район Kalk), Німеччина",
                 short_description: "Форт IX – великий форт зовнішнього прусського оборонного кільця Кельна, збудований у 1877–1881 роках. ",
@@ -4130,7 +4130,7 @@ const datas = [
         id: "zw-a_fort_IX_outer_koln",
         type: ["historical_building"],
         path: "fort_IX_outer_koln",
-        countryPath: "germany", regionPath: "nrw", districtPath: "city", cityPath: "koln",
+        countryPath: "germany", regionPath: "nrw", districtPath: "city", cityPath: "koln_city",
         map: "prussian_fortress_system_koln",
         coord: { lat: 50.9017, lng: 7.0049 },
         hiddenFromList: true,
@@ -4146,7 +4146,7 @@ const datas = [
                     ogImage: ""
                 }
             },
-            ua: {
+            uk: {
                 name: "Проміжне укріплення IXa (Форт IX, Кельн)",
                 meta: {
                     title: "Проміжне укріплення IXa (Zwischenwerk IXa, Форт IX, Кельн)",
@@ -4174,7 +4174,7 @@ const datas = [
         id: "zw-b_fort_IX_outer_koln",
         type: ["historical_building"],
         path: "fort_IX_outer_koln",
-        countryPath: "germany", regionPath: "nrw", districtPath: "city", cityPath: "koln",
+        countryPath: "germany", regionPath: "nrw", districtPath: "city", cityPath: "koln_city",
         map: "prussian_fortress_system_koln",
         coord: { lat: 50.9197, lng: 7.0270 },
         hiddenFromList: true,
@@ -4190,7 +4190,7 @@ const datas = [
                     ogImage: ""
                 }
             },
-            ua: {
+            uk: {
                 name: "Проміжне укріплення IXb (Форт IX–X, Кельн)",
                 meta: {
                     title: "Проміжне укріплення IXb (Zwischenwerk IXb, Форт IX–X, Кельн)",
@@ -4218,7 +4218,7 @@ const datas = [
         id: "fort_X_outer_koln",
         type: ["historical_building"], rating: "local",
         path: "fort_X_outer_koln",
-        countryPath: "germany", regionPath: "nrw", districtPath: "city", cityPath: "koln",
+        countryPath: "germany", regionPath: "nrw", districtPath: "city", cityPath: "koln_city",
         hiddenFromList: true, showMore: true,
         map: "prussian_fortress_system_koln",
         fotoCard: "Germany/nrw/koln/koln-city/prussian_fortress_system/outer/010.jpg",
@@ -4260,7 +4260,7 @@ const datas = [
                     ogImage: "https://our-travels.info/foto/Germany/nrw/koln/koln-city/prussian_fortress_system/outer/010.jpg"
                 }
             },
-            ua: {
+            uk: {
                 name: "Форт X (зовнішнє кріпосне кільце)", sortIndex: 10,
                 location: "Кельн, район Höhenberg / Neubrück (район Kalk), Німеччина",
                 short_description: "Форт X – великий форт зовнішнього прусського оборонного кільця Кельна, збудований у 1877–1880 роках і пізніше частково перетворений на парковий громадський простір.",
@@ -4338,7 +4338,7 @@ const datas = [
         id: "zw-a_fort_X_outer_koln",
         type: ["historical_building"],
         path: "fort_X_outer_koln",
-        countryPath: "germany", regionPath: "nrw", districtPath: "city", cityPath: "koln",
+        countryPath: "germany", regionPath: "nrw", districtPath: "city", cityPath: "koln_city",
         map: "prussian_fortress_system_koln",
         coord: { lat: 50.9326, lng: 7.0439 },
         hiddenFromList: true,
@@ -4355,7 +4355,7 @@ const datas = [
                     ogImage: ""
                 }
             },
-            ua: {
+            uk: {
                 name: "Проміжне укріплення Xa (Vingst) (Форт X, Кельн)",
                 status: "lost", note: "споруди не збереглися. У ландшафті частково читаються сліди флангових ровів і валів у вигляді рельєфних форм та структури дорожньої мережі.",
                 meta: {
@@ -4385,7 +4385,7 @@ const datas = [
         id: "zw-b_fort_X_outer_koln",
         type: ["historical_building"],
         path: "fort_X_outer_koln",
-        countryPath: "germany", regionPath: "nrw", districtPath: "city", cityPath: "koln",
+        countryPath: "germany", regionPath: "nrw", districtPath: "city", cityPath: "koln_city",
         map: "prussian_fortress_system_koln",
         coord: { lat: 50.9458, lng: 7.0328 },
         hiddenFromList: true,
@@ -4402,7 +4402,7 @@ const datas = [
                     ogImage: ""
                 }
             },
-            ua: {
+            uk: {
                 name: "Проміжне укріплення Xb (Höhenberg) (Форт X, Кельн)",
                 status: "lost", note: "у 1920-х роках було повністю зруйноване. Наразі видимі сліди відсутні.",
                 meta: {
@@ -4432,7 +4432,7 @@ const datas = [
         id: "zw-c_fort_X_outer_koln",
         type: ["historical_building"],
         path: "fort_X_outer_koln",
-        countryPath: "germany", regionPath: "nrw", districtPath: "city", cityPath: "koln",
+        countryPath: "germany", regionPath: "nrw", districtPath: "city", cityPath: "koln_city",
         map: "prussian_fortress_system_koln",
         coord: { lat: 50.9554, lng: 7.0317 },
         hiddenFromList: true,
@@ -4449,7 +4449,7 @@ const datas = [
                     ogImage: ""
                 }
             },
-            ua: {
+            uk: {
                 name: "Проміжне укріплення Xc (Buchheim) (Форт X, Кельн)",
                 status: "partial", note: "збереглися окремі елементи, що використовуються як допоміжні приміщення спортивного об’єкта.",
                 meta: {
@@ -4479,7 +4479,7 @@ const datas = [
         id: "fort_XI_outer_koln",
         type: ["historical_building"], rating: "local",
         path: "fort_XI_outer_koln",
-        countryPath: "germany", regionPath: "nrw", districtPath: "city", cityPath: "koln",
+        countryPath: "germany", regionPath: "nrw", districtPath: "city", cityPath: "koln_city",
         hiddenFromList: true, showMore: true,
         map: "prussian_fortress_system_koln",
         fotoCard: "Germany/nrw/koln/koln-city/prussian_fortress_system/outer/011.jpg",
@@ -4519,7 +4519,7 @@ const datas = [
                     ogImage: "https://our-travels.info/foto/Germany/nrw/koln/koln-city/prussian_fortress_system/outer/011.jpg"
                 }
             },
-            ua: {
+            uk: {
                 name: "Форт XI (зовнішнє фортифікаційне кільце)", sortIndex: 11,
                 location: "Кельн, район Mülheim (район Mülheim), Німеччина",
                 short_description: "Форт XI – великий форт зовнішнього прусського оборонного кільця Кельна, побудований у 1877–1880 роках. Розташований у південному секторі міста та частково зберігся у вигляді фрагментів фортифікаційної структури.",
@@ -4593,7 +4593,7 @@ const datas = [
         id: "zw-a_fort_XI_outer_koln",
         type: ["historical_building"],
         path: "fort_XI_outer_koln",
-        countryPath: "germany", regionPath: "nrw", districtPath: "city", cityPath: "koln",
+        countryPath: "germany", regionPath: "nrw", districtPath: "city", cityPath: "koln_city",
         map: "prussian_fortress_system_koln",
         coord: { lat: 50.96416, lng: 7.02967 },
         hiddenFromList: true,
@@ -4610,7 +4610,7 @@ const datas = [
                     ogImage: ""
                 }
             },
-            ua: {
+            uk: {
                 name: "Проміжне укріплення XIa (Buchheim) (Форт XI, Кельн)",
                 status: "partial", note: "збереглася казарма горжової частини форту та фрагменти ровів і валів.",
                 meta: {
@@ -4640,7 +4640,7 @@ const datas = [
         id: "zw-b_fort_XI_outer_koln",
         type: ["historical_building"],
         path: "fort_XI_outer_koln",
-        countryPath: "germany", regionPath: "nrw", districtPath: "city", cityPath: "koln",
+        countryPath: "germany", regionPath: "nrw", districtPath: "city", cityPath: "koln_city",
         map: "prussian_fortress_system_koln",
         coord: { lat: 50.97787, lng: 7.02175 },
         hiddenFromList: true,
@@ -4657,7 +4657,7 @@ const datas = [
                     ogImage: ""
                 }
             },
-            ua: {
+            uk: {
                 name: "Проміжне укріплення XIb (Mülheim) (Форт XI, Кельн)",
                 status: "partial", note: "збереглися окремі елементи казармених споруд і ландшафтні сліди ровів і валів.",
                 meta: {
@@ -4687,7 +4687,7 @@ const datas = [
         id: "rumerturm_koln",
         type: ["historical_building"], rating: "local",
         path: "rumerturm_koln",
-        countryPath: "germany", regionPath: "nrw", districtPath: "city", cityPath: "koln",
+        countryPath: "germany", regionPath: "nrw", districtPath: "city", cityPath: "koln_city",
         hiddenFromList: true, showMore: true,
         fotoCard: "Germany/nrw/koln/koln-city/altstadt/old_towers/002.jpg",
         coord: { lat: 50.94093, lng: 6.94663 },
@@ -4715,7 +4715,7 @@ const datas = [
                     ogImage: "https://our-travels.info/foto/Germany/nrw/koln/koln-city/altstadt/old_towers/002.jpg"
                 }
             },
-            ua: {
+            uk: {
                 name: "Римська вежа Römerturm",
                 location: "Кельн, район Altstadt-Nord (район Innenstadt), Німеччина",
                 short_description: "Römerturm – збережена римська вежа міського муру Colonia Claudia Ara Agrippinensium. Один із найважливіших і найкраще збережених фрагментів римського укріпленого Кельна.",
@@ -4763,7 +4763,7 @@ const datas = [
         id: "hahnentorburg_koln",
         type: ["historical_building"], rating: "local",
         path: "hahnentorburg_koln",
-        countryPath: "germany", regionPath: "nrw", districtPath: "city", cityPath: "koln",
+        countryPath: "germany", regionPath: "nrw", districtPath: "city", cityPath: "koln_city",
         hiddenFromList: true, showMore: true,
         fotoCard: "Germany/nrw/koln/koln-city/altstadt/old_towers/001.jpg",
         coord: { lat: 50.93639, lng: 6.94021 },
@@ -4791,7 +4791,7 @@ const datas = [
                     ogImage: "https://our-travels.info/foto/Germany/nrw/koln/koln-city/altstadt/old_towers/001.jpg"
                 }
             },
-            ua: {
+            uk: {
                 name: "Західні ворота (Hahnentorburg)",
                 location: "Кельн, район Neustadt-Süd (район Innenstadt), Німеччина",
                 short_description: "Hahnentorburg – одні із збережених середньовічних міських воріт Кельна, що входили до системи другого міського оборонного кільця. Один із найвиразніших пам’ятників фортифікаційної архітектури міста.",
@@ -4843,7 +4843,7 @@ const datas = [
         id: "eigelsteintorburg_koln",
         type: ["historical_building"], rating: "local",
         path: "eigelsteintorburg_koln",
-        countryPath: "germany", regionPath: "nrw", districtPath: "city", cityPath: "koln",
+        countryPath: "germany", regionPath: "nrw", districtPath: "city", cityPath: "koln_city",
         hiddenFromList: true, showMore: true,
         fotoCard: "Germany/nrw/koln/koln-city/altstadt/old_towers/003.jpg",
         coord: { lat: 50.94931, lng: 6.95687 },
@@ -4872,7 +4872,7 @@ const datas = [
                     ogImage: "https://our-travels.info/foto/Germany/nrw/koln/koln-city/altstadt/old_towers/003.jpg"
                 }
             },
-            ua: {
+            uk: {
                 name: "Північні ворота (Eigelsteintorburg)",
                 location: "Кельн, район Neustadt-Nord (район Innenstadt), Німеччина",
                 short_description: "Північні ворота (Eigelsteintorburg) – одні із збережених середньовічних міських воріт Кельна, що входили до системи другого міського оборонного кільця. Являють собою масивний воротний комплекс із двома баштами та арковим проїздом.",
@@ -4924,7 +4924,7 @@ const datas = [
         id: "severinstorburg_koln",
         type: ["historical_building"], rating: "local",
         path: "severinstorburg_koln",
-        countryPath: "germany", regionPath: "nrw", districtPath: "city", cityPath: "koln",
+        countryPath: "germany", regionPath: "nrw", districtPath: "city", cityPath: "koln_city",
         hiddenFromList: true, showMore: true,
         fotoCard: "Germany/nrw/koln/koln-city/altstadt/old_towers/004.jpg",
         coord: { lat: 50.92196, lng: 6.95923 },
@@ -4953,7 +4953,7 @@ const datas = [
                     ogImage: "https://our-travels.info/foto/Germany/nrw/koln/koln-city/altstadt/old_towers/004.jpg"
                 }
             },
-            ua: {
+            uk: {
                 name: "Південні ворота (Severinstorburg)",
                 location: "Кельн, район Altstadt-Süd (район Innenstadt), Німеччина",
                 short_description: "Південні ворота (Severinstorburg) – одні з найбільш значущих збережених середньовічних міських воріт Кельна, що входили до системи другого міського оборонного кільця. Являють собою потужний воротний комплекс із центральною баштою та проїздом.",
@@ -5005,7 +5005,7 @@ const datas = [
         id: "ulrepforte_koln",
         type: ["historical_building"], rating: "local",
         path: "ulrepforte_koln",
-        countryPath: "germany", regionPath: "nrw", districtPath: "city", cityPath: "koln",
+        countryPath: "germany", regionPath: "nrw", districtPath: "city", cityPath: "koln_city",
         hiddenFromList: true, showMore: true,
         fotoCard: "Germany/nrw/koln/koln-city/altstadt/old_towers/005.jpg",
         coord: { lat: 50.92418, lng: 6.95305 },
@@ -5034,7 +5034,7 @@ const datas = [
                     ogImage: "https://our-travels.info/foto/Germany/nrw/koln/koln-city/altstadt/old_towers/005.jpg"
                 }
             },
-            ua: {
+            uk: {
                 name: "Південні малі ворота (Ulrepforte)",
                 location: "Кельн, район Altstadt-Süd (район Innenstadt), Німеччина",
                 short_description: "Ulrepforte – невеликі збережені середньовічні міські ворота Кельна, що входили до системи другого міського оборонного кільця. Являють собою компактний баштовий елемент із проїздом, вбудований у лінію міського муру.",
@@ -5087,7 +5087,7 @@ const datas = [
         id: "bayenturm_koln",
         type: ["historical_building"], rating: "local",
         path: "bayenturm_koln",
-        countryPath: "germany", regionPath: "nrw", districtPath: "city", cityPath: "koln",
+        countryPath: "germany", regionPath: "nrw", districtPath: "city", cityPath: "koln_city",
         hiddenFromList: true, showMore: true,
         fotoCard: "Germany/nrw/koln/koln-city/altstadt/old_towers/006.jpg",
         coord: { lat: 50.92375, lng: 6.96695 },
@@ -5116,7 +5116,7 @@ const datas = [
                     ogImage: "https://our-travels.info/foto/Germany/nrw/koln/koln-city/altstadt/old_towers/006.jpg"
                 }
             },
-            ua: {
+            uk: {
                 name: "Південно-східна вежа біля Рейну (Bayenturm)",
                 location: "Кельн, район Altstadt-Süd (район Innenstadt), Німеччина",
                 short_description: "Bayenturm – велика середньовічна оборонна вежа Кельна, розташована в південно-східній частині міського муру біля Рейну. Була важливим елементом контролю річкового торговельного шляху та частиною другого міського оборонного кільця.",
@@ -5212,7 +5212,7 @@ const datas = [
                     ogImage: "https://our-travels.info/foto/Germany/nrw/koln/Aachen/monschau/tuchmacherbrunnen/001.jpg"
                 }
             },
-            ua: {
+            uk: {
                 name: "Фонтан ткачів у Моншау",
                 location: "Моншау, Німеччина",
                 short_description: "Фонтан ткачів – невеликий тематичний фонтан у історичному центрі Моншау. Фонтан присвячений традиціям ткацтва та текстильному минулому міста. Скульптурна композиція показує ремісничу працю, завдяки якій Моншау став відомим центром виробництва сукна у XVIII столітті. Сьогодні фонтан є атмосферним елементом старого міста та цікавою зупинкою під час прогулянки.",
@@ -5344,7 +5344,7 @@ const datas = [
                     ogImage: "https://our-travels.info/foto/Germany/nrw/koln/Rhein-Sieg-Kreis/lohmar/st_johannes_enthauptung/001.jpg"
                 }
             },
-            ua: {
+            uk: {
                 name: "Церква Святого Іоанна Хрестителя",
                 location: "Ломар, район Lohmar-Ort (історичне ядро Kirchdorf), Німеччина",
                 short_description: "Церква Святого Іоанна Хрестителя – історична католицька церква в центрі Ломара, одна з найстаріших споруд міста. Храм поєднує романські елементи XII століття та неороманську архітектуру початку XX століття. Церква відома своїм середньовічним хором, масивною кам’яною архітектурою та багаторічною роллю духовного центру Ломара.",

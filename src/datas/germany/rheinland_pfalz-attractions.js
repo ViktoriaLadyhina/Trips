@@ -60,7 +60,7 @@ const datas = [
           ogImage: "https://our-travels.info/foto/Germany/rheinland-pfalz/koblenz/ehrenbreitstein/001.jpg"
         }
       },
-      ua: {
+      uk: {
         name: "Фортеця Еренбрайтштайн",
         location: "Кобленц, район Еренбрайтштайн, Німеччина",
         short_description: "Фортеця Еренбрайтштайн – одна з найбільших збережених фортець Європи, розташована на пагорбі над Кобленцом, навпроти злиття Рейну та Мозеля. Сьогодні вона є частиною об’єкта Всесвітньої спадщини ЮНЕСКО «Верхня Середня долина Рейну» та популярним туристичним центром з музеями, панорамними видами і культурними заходами.",
@@ -224,7 +224,7 @@ const datas = [
           ogImage: "https://our-travels.info/foto/Germany/rheinland-pfalz/koblenz/stolzenfels/001.jpg"
         }
       },
-      ua: {
+      uk: {
         name: "Замок Штольценфельс",
         location: "Кобленц, район Штольценфельс, Німеччина",
         officialSite: [
@@ -395,7 +395,7 @@ const datas = [
           ogImage: "https://our-travels.info/foto/Germany/rheinland-pfalz/koblenz/deutsches_eck/001.jpg"
         }
       },
-      ua: {
+      uk: {
         name: "Німецький кут",
         loc: {
           country: "Німеччина", region: "Рейнланд-Пфальц", district: "Місто обласного значення", city: "Кобленц", cityDistrict: "район Altstadt"
@@ -574,7 +574,7 @@ const datas = [
           ogImage: "https://our-travels.info/foto/Germany/rheinland-pfalz/koblenz/kurfuerstliches_schloss/001.jpg"
         }
       },
-      ua: {
+      uk: {
         name: "Курфюрстський палац",
         loc: {
           country: "Німеччина", region: "Рейнланд-Пфальц", district: "Місто обласного значення", city: "Кобленц", cityDistrict: "район Mitte"
@@ -731,7 +731,7 @@ const datas = [
           ogImage: "https://our-travels.info/foto/Germany/rheinland-pfalz/koblenz/altstadt/006.jpg"
         }
       },
-      ua: {
+      uk: {
         name: "Старе місто Кобленца",
         loc: {
           country: "Німеччина",
@@ -901,7 +901,7 @@ const datas = [
           ogImage: "https://our-travels.info/foto/Germany/rheinland-pfalz/koblenz/altstadt/citykirche/001.jpg"
         }
       },
-      ua: {
+      uk: {
         name: "Єзуїтська церква Кобленца (Citykirche)",
         loc: {
           country: "Німеччина", region: "Рейнланд-Пфальц", city: "Кобленц", cityDistrict: "район Altstadt"
@@ -1062,7 +1062,7 @@ const datas = [
           ogImage: "https://our-travels.info/foto/Germany/rheinland-pfalz/trier-city/altstadt/kurfuerstliches_palais/001.jpg"
         }
       },
-      ua: {
+      uk: {
         name: "Виборчий (курфюрстський) палац",
         loc: {
           country: "Німеччина",
@@ -1216,7 +1216,7 @@ const datas = [
           ogImage: "https://our-travels.info/foto/Germany/rheinland-pfalz/trier-city/altstadt/007.jpg"
         }
       },
-      ua: {
+      uk: {
         name: "Головна ринкова площа Тріра",
         loc: {
           country: "Німеччина", region: "Рейнланд-Пфальц", district: "Місто обласного значення", city: "Трір", cityDistrict: "район Altstadt"

@@ -5,9 +5,9 @@ import { useEffect, useMemo, useState } from 'react';
 
 import BtnAttr from "../../components/btn-attr/BtnAttr";
 import BreadCrumbs from '../../components/breadCrumbs/BreadCrumbs';
-import { photosByCountry } from "../../datas/fotos";
 import CountryMap from '../../components/maps/CountryMap'
 import useRoutes from '../../hooks/useRoutesSearch';
+import { toFullUrl, fixHtmlImages } from "../../utils/photo";
 
 import './Country.scss'
 
@@ -24,12 +24,9 @@ const Country = () => {
     const { lang } = useSelector((state) => state.language);
     const [sidebarOpen, setSidebarOpen] = useState(false);
     const { routes } = useRoutes(countryPath);
-
-    // ищем нужную страну
     const [country, setCountry] = useState(null);
 
     useEffect(() => {
-        console.log("LANG IN REQUEST:", lang);
         fetch(`http://localhost:3001/api/country/${countryPath}?lang=${lang}`)
             .then(res => res.json())
             .then(data => setCountry(data));
@@ -46,29 +43,15 @@ const Country = () => {
 
     if (!country) return <p>Country not found</p>;
 
-    const photos = photosByCountry[countryPath];
-
-    const fixImages = (html) => {
-        return html.replace(
-            /src="([^"]+)"/g,
-            (match, src) => {
-
-                // если уже полный путь — не трогаем
-                if (src.startsWith('http')) {
-                    return match;
-                }
-
-                return `src="${BASE_PHOTO_URL}/${src}"`;
-            }
-        );
-    };
-
     const mapRegions = (country?.regions || []).map(region => ({
         id: region.id,
         path: region.path,
         hasInfo: Boolean(region.is_active),
         name: region?.name || ""
     }));
+
+    const getPhoto = (index) =>
+        country.photos?.find(p => p.sort_order === index);
 
 
     const renderBlock = (block) => {
@@ -104,49 +87,42 @@ const Country = () => {
                     <section
                         className={`country__${block.block_key}`}
                         dangerouslySetInnerHTML={{
-                            __html: fixImages(langData[block.block_key], country.path)
+                            __html: fixHtmlImages(langData[block.block_key], country.path)
                         }}
                     />
                 ) : null;
 
             // ===== PHOTOS =====
-            case "photo": {
-                const photo = photos?.gallery?.[block.settings?.index];
 
-                return photo ? (
-                    <img
-                        src={`${BASE_PHOTO_URL}${photo.path}`}
-                        className="country__photo"
-                        alt=""
-                    />
-                ) : null;
+            case "photo": {
+                const photo = getPhoto(1);
+                return photo ? <img
+                    src={`${BASE_PHOTO_URL}${photo.path}`}
+                    className="country__photo"
+                    alt={photo.title?.[lang] || ""}
+                /> : null;
             }
 
             case "photo2": {
-                const photo2 = photos?.gallery?.[block.settings?.index];
-
-                return photo2 ? (
-                    <img
-                        src={`${BASE_PHOTO_URL}${photo2.path}`}
-                        className="country__photo country__photo--left"
-                        alt=""
-                    />
-                ) : null;
+                const photo = getPhoto(2);
+                return photo ? <img
+                    src={`${BASE_PHOTO_URL}${photo.path}`}
+                    className="country__photo country__photo--left"
+                    alt={photo.title?.[lang] || ""}
+                /> : null;
             }
 
             case "photo3": {
-                const photo3 = photos?.gallery?.[block.settings?.index];
-
-                return photo3 ? (
-                    <img
-                        src={`${BASE_PHOTO_URL}${photo3.path}`}
-                        className="country__photo"
-                        alt=""
-                    />
-                ) : null;
+                const photo = getPhoto(3);
+                return photo ? <img
+                    src={`${BASE_PHOTO_URL}${photo.path}`}
+                    className="country__photo"
+                    alt={photo.title?.[lang] || ""}
+                /> : null;
             }
 
-            // ===== ROUTES (НЕ ТРОГАЮ) =====
+
+            // ===== ROUTES =====
             case "rout": {
                 if (!routes) return <div>loading routes...</div>;
                 if (!routes?.length) return null;
@@ -213,9 +189,6 @@ const Country = () => {
         }
     };
 
-console.log("country:", country);
-console.log("type:", country?.regions?.[0]?.type);
-
     // BreadCrumbs
     const nameBlock = country?.blocks?.find(
         b => b.block_key === "name"
@@ -236,11 +209,12 @@ console.log("type:", country?.regions?.[0]?.type);
 
             {country?.meta && (
                 <Helmet>
-                    <title>{country.meta.title || country?.translations?.[lang]?.name}</title>
+                    <title>{country.meta.title}</title>
+                    <meta name="title" content={country.meta.title} />
                     <meta name="description" content={country.meta.description} />
-                    <meta property="og:title" content={country.meta.ogTitle} />
-                    <meta property="og:description" content={country.meta.ogDescription} />
-                    <meta property="og:image" content={country.meta.ogImage} />
+                    <meta property="og:title" content={country.meta.og_title} />
+                    <meta property="og:description" content={country.meta.og_description} />
+                    <meta property="og:image" content={toFullUrl(country.meta.og_image)} />
                 </Helmet>
             )}
 
@@ -277,11 +251,16 @@ console.log("type:", country?.regions?.[0]?.type);
 
             {/* Основной контент */}
             <section className="country__content">
-                <div className="country__breadcrumbs"> <BreadCrumbs crumbs={crumbs} /></div>
+                <div className="country__breadcrumbs"> 
+                    <BreadCrumbs crumbs={crumbs} /></div>
                 <div>
                     {country?.blocks.length > 0 && country?.blocks
                         .sort((a, b) => a.sort_order - b.sort_order)
-                        .map(renderBlock)
+                        .map(block => (
+                            <div key={`${block.block_key}-${block.sort_order}`}>
+                                {renderBlock(block)}
+                            </div>
+                        ))
                     }
                 </div>
             </section>

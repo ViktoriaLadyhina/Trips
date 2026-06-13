@@ -97,7 +97,7 @@ const datas = [
                     ogImage: "https://our-travels.info/foto/Germany/rheinland-pfalz/trier-city/portaNigra_trier/001.JPG"
                 }
             },
-            ua: {
+            uk: {
                 name: "Трір",
                 countryName: "Німеччина", regionName: "Рейнланд-Пфальц",
                 desc: {
@@ -344,7 +344,7 @@ const datas = [
                     ogImage: "https://our-travels.info/foto/Germany/rheinland-pfalz/trier_saarburg/saarburg_kell/saarburg/001.jpg"
                 }
             },
-            ua: {
+            uk: {
                 name: 'Саарбург',
                 countryName: "Германия", regionName: "Рейнланд-Пфальц", districtName: "Трір-Саарбург", subRegionName: "Саарбург-Келль",
                 desc: {
@@ -550,7 +550,7 @@ const datas = [
                     ogImage: 'https://our-travels.info/foto/Germany/rheinland-pfalz/koblenz/koblenz-city/001.jpg'
                 }
             },
-            ua: {
+            uk: {
                 name: 'Кобленц',
                 desc: {
                     general: [

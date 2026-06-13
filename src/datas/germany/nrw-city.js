@@ -2,8 +2,8 @@ const datas = [
     // свободные города
     // Köln-city
     {
-        id: "koln",
-        path: "koln",
+        id: "koln_city",
+        path: "koln_city",
         countryPath: "germany", regionPath: "nrw", districtPath: "city",
         gerb: "Germany/nrw/koln/koln-city/gerb.png",
         coord: { lat: 50.9333, lng: 6.95 },
@@ -99,7 +99,7 @@ const datas = [
                     ogImage: "https://our-travels.info/foto/Germany/nrw/koln/koln-city/001.jpg"
                 }
             },
-            ua: {
+            uk: {
                 name: 'Кельн',
                 desc: {
                     general: [
@@ -402,7 +402,7 @@ const datas = [
                     ogImage: "https://our-travels.info/foto/Germany/nrw/dortmund/dortmund-city/phoenix-see/001.jpg"
                 }
             },
-            ua: {
+            uk: {
                 name: 'Дортмунд',
                 desc: {
                     general: [
@@ -670,7 +670,7 @@ const datas = [
                     ogImage: "https://our-travels.info/foto/Germany/nrw/arnsberg/Hochsauerlandkreis/sundern/sorpesee/001.jpg"
                 }
             },
-            ua: {
+            uk: {
                 name: 'Зундерн',
                 subRegionName: "Гохзауерланд",
                 desc: {
@@ -961,7 +961,7 @@ const datas = [
                     ogImage: "https://our-travels.info/foto/Germany/nrw/arnsberg/Märkischer-Kreis/luedenscheid/altstadt_luedenscheid/004.jpg"
                 }
             },
-            ua: {
+            uk: {
                 name: 'Люденшайд',
                 subRegionName: "Меркіш",
                 desc: {
@@ -1247,7 +1247,7 @@ const datas = [
                     ogImage: "https://upload.wikimedia.org/wikipedia/commons/thumb/3/38/Burg_Altena_2012.jpg/800px-Burg_Altena_2012.jpg"
                 }
             },
-            ua: {
+            uk: {
                 name: 'Альтена',
                 subRegionName: "Меркіш",
                 desc: {
@@ -1481,7 +1481,7 @@ const datas = [
                     ogImage: "https://our-travels.info/foto/Germany/nrw/arnsberg/Märkischer-Kreis/iserlohn/dechenhoehle/001.jpg"
                 }
             },
-            ua: {
+            uk: {
                 name: "Ізерлон",
                 subRegionName: "Меркіш",
                 desc: {
@@ -1723,7 +1723,7 @@ const datas = [
                     ogImage: "https://upload.wikimedia.org/wikipedia/commons/..."
                 }
             },
-            ua: {
+            uk: {
                 name: "Фельберт",
                 subRegionName: "Меттман",
                 desc: {
@@ -1930,7 +1930,7 @@ const datas = [
                     ogImage: "https://our-travels.info/foto/Germany/nrw/koln/Aachen/monschau/002.jpg"
                 }
             },
-            ua: {
+            uk: {
                 name: 'Моншау',
                 subRegionName: "Аахен",
                 desc: {
@@ -2117,7 +2117,7 @@ const datas = [
                     ogImage: "https://our-travels.info/foto/Germany/nrw/koln/Rhein-Erft-Kreis/bruhl/bruhel_palaces/001.jpg"
                 }
             },
-            ua: {
+            uk: {
                 name: 'Брюль',
                 subRegionName: "Рейн-Ерфт",
                 desc: {
@@ -2315,7 +2315,7 @@ const datas = [
                     ogImage: "https://our-travels.info/foto/Germany/nrw/koln/Rhein-Erft-Kreis/frechen/johann_schmitz_platz_frechen/006.jpg"
                 }
             },
-            ua: {
+            uk: {
                 name: 'Фрехен',
                 subRegionName: "Рейн-Ерфт",
                 desc: {
@@ -2549,7 +2549,7 @@ const datas = [
                     ogImage: "https://our-travels.info/foto/Germany/nrw/koln/Rhein-Sieg-Kreis/konigswinter/drachenfels/007.jpg"
                 }
             },
-            ua: {
+            uk: {
                 name: 'Кенігсвінтер',
                 subRegionName: "Рейн-Зіг",
                 desc: {
@@ -2823,7 +2823,7 @@ const datas = [
                     ogImage: "https://our-travels.info/foto/Germany/nrw/koln/Rhein-Sieg-Kreis/lohmar/001.jpg"
                 }
             },
-            ua: {
+            uk: {
                 name: "Ломар",
                 subRegionName: "Райн-Зіг",
                 desc: {

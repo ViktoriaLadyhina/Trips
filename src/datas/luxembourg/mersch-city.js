@@ -57,7 +57,7 @@ const datas = [
                     ogImage: "https://our-travels.info/foto/Luxembourg/seven_castles/ansembourg_castle/001.jpg"
                 }
             },
-            ua: {
+            uk: {
                 name: "Ансембург",
                 desc: {
                     general: [

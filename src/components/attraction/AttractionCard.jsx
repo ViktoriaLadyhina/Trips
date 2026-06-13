@@ -4,11 +4,11 @@ import { Link, useParams } from 'react-router';
 
 const BASE_PHOTO_URL = import.meta.env.VITE_BASE_PHOTO_URL;
 
-const more = { ru: "Подробнее", ua: "Докладніше", de: "Weitere Details" };
-const location = { ru: "Месторасположение", ua: "Місце розташування", de: "Standort" };
-const ratingLabel = { ru: "Рейтинг", ua: "Рейтинг", de: "Bewertung" };
-const topOptionLabel = { top: { ru: "Топовый", ua: "Топовий", de: "Top" }, popular: { ru: "Популярный", ua: "Популярний", de: "Beliebt" }, local: { ru: "Локальный", ua: "Локальний", de: "Lokal" } };
-const noteLabel = { partial: { ru: "Частично сохранилось", ua: "Частково збережено", de: "Teilweise erhalten" }, lost: { ru: "Утрачено", ua: "Втрачено", de: "Verloren" } };
+const more = { ru: "Подробнее", uk: "Докладніше", de: "Weitere Details" };
+const location = { ru: "Месторасположение", uk: "Місце розташування", de: "Standort" };
+const ratingLabel = { ru: "Рейтинг", uk: "Рейтинг", de: "Bewertung" };
+const topOptionLabel = { top: { ru: "Топовый", uk: "Топовий", de: "Top" }, popular: { ru: "Популярный", uk: "Популярний", de: "Beliebt" }, local: { ru: "Локальный", uk: "Локальний", de: "Lokal" } };
+const noteLabel = { partial: { ru: "Частично сохранилось", uk: "Частково збережено", de: "Teilweise erhalten" }, lost: { ru: "Утрачено", uk: "Втрачено", de: "Verloren" } };
 
 const AttractionCard = ({ attr, lang }) => {
     const params = useParams();

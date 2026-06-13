@@ -20,7 +20,7 @@ const sumyRegionCenters = {
 
 const SumskaMap = ({ regions, countryPath }) => {
   const navigate = useNavigate();
-  const regionItems = regions?.discriptRegions?.items || [];
+  const regionItems = regions?.discriptRegions || [];
 
   const [hoverRegion, setHoverRegion] = useState(null);
   const [tooltipPos, setTooltipPos] = useState([0, 0]);

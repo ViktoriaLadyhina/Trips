@@ -70,7 +70,7 @@ const datas = [
           ogImage: "https://our-travels.info/foto/Luxembourg/luxembourg_canton/luxembourg_city/musee_drai_eechelen/001.jpg"
         }
       },
-      ua: {
+      uk: {
         name: "Музей «Три жолуді»",
         location: "Люксембург (квартал Kirchberg), Люксембург",
         officialSite: [{ bold: "Офіційний сайт", link: "https://m3e.public.lu/fr.html" }],
@@ -251,7 +251,7 @@ const datas = [
           ogImage: "https://our-travels.info/foto/Luxembourg/luxembourg_canton/luxembourg_city/musee_drai_eechelen/002.jpg"
         }
       },
-      ua: {
+      uk: {
         name: "Форт Тюнген",
         location: "Люксембург (квартал Kirchberg), Люксембург",
         officialSite: [
@@ -423,7 +423,7 @@ const datas = [
           ogImage: "https://our-travels.info/foto/Luxembourg/luxembourg_canton/luxembourg_city/old_town/001.jpg"
         }
       },
-      ua: {
+      uk: {
         name: "Старе місто Люксембурга",
         loc: {
           country: "Люксембург",
@@ -616,7 +616,7 @@ const datas = [
           ogImage: "https://our-travels.info/foto/Luxembourg/luxembourg_canton/luxembourg_city/old_town/casemates/001.jpg"
         }
       },
-      ua: {
+      uk: {
         name: "Каземати Бок",
         location: "Люксембург (квартал Ville Haute), Люксембург",
         short_description: "Каземати Бок – це система підземних оборонних галерей, вирубаних у скелі Бок у Люксембурзі. Вони є частиною колишніх міських фортифікацій. Підземні коридори використовувалися для захисту, розміщення солдатів і зберігання озброєння.",
@@ -772,7 +772,7 @@ const datas = [
           ogImage: "https://our-travels.info/foto/Luxembourg/luxembourg_canton/luxembourg_city/old_town/notre_dame_cathedral/001.jpg"
         }
       },
-      ua: {
+      uk: {
         name: "Собор Люксембурзької Богоматері",
         location: "Люксембург (квартал Ville Haute), Люксембург",
         officialSite: [{ bold: "Офіційний сайт", link: "https://www.cathol.lu" }],
@@ -936,7 +936,7 @@ const datas = [
           ogImage: "https://our-travels.info/foto/Luxembourg/luxembourg_canton/luxembourg_city/old_town/abbey_neumunster/001.jpg"
         }
       },
-      ua: {
+      uk: {
         name: "Абатство Ноймюнстер",
         location: "Люксембург (квартал Grund), Люксембург",
         officialSite: [
@@ -1082,7 +1082,7 @@ const datas = [
           ogImage: "https://our-travels.info/foto/Luxembourg/luxembourg_canton/luxembourg_city/old_town/pont_du_chateau/001.jpg"
         }
       },
-      ua: {
+      uk: {
         name: "Міст Понт-дю-Шато",
         location: "Люксембург (квартал Ville Haute), Люксембург",
         short_description: "Міст Понт-дю-Шато – це історичний міст у Люксембурзі, розташований у районі старих міських укріплень. Він з’єднує важливі частини історичного центру та пов’язаний із розвитком фортифікаційної системи міста.",
@@ -1225,7 +1225,7 @@ const datas = [
           ogImage: "https://our-travels.info/foto/Luxembourg/luxembourg_canton/luxembourg_city/viaducts/001.jpg"
         }
       },
-      ua: {
+      uk: {
         name: "Мости та віадуки Люксембурга",
         location: "Місто Люксембург, Люксембург",
         short_description: "Люксембург – місто з унікальним рельєфом, де глибокі долини розділяють райони на різних рівнях. Саме тому тут сформувалася система мостів і віадуків, які з’єднують місто в єдину структуру. Ці споруди стали не лише транспортною інфраструктурою, але й важливою частиною архітектурного образу столиці.",
@@ -1372,7 +1372,7 @@ const datas = [
           ogImage: "https://our-travels.info/foto/Luxembourg/luxembourg_canton/luxembourg_city/old_town/passerelle/001.jpg"
         }
       },
-      ua: {
+      uk: {
         name: "Міст Пассерель",
         location: "Люксембург (квартал Gare), Люксембург",
         short_description: "Міст Пассерель, також відомий як Люксембурзький віадук, — це один із найвідоміших мостів Люксембургу, що з’єднує центральну частину міста з районом вокзалу. Збудований у XIX столітті, він став важливим транспортним і архітектурним елементом столиці.",
@@ -1500,7 +1500,7 @@ const datas = [
           ogImage: "https://our-travels.info/foto/Luxembourg/luxembourg_canton/luxembourg_city/viaducts/001.jpg"
         }
       },
-      ua: {
+      uk: {
         name: "Міст Адольфа",
         location: "Люксембург (квартал Ville Haute), Люксембург",
         short_description: "Один із головних символів Люксембурга – кам’яний міст Адольфа, що з’єднує Верхнє місто з районом Гар. Збудований на початку XX століття, він відомий своєю масштабною аркою та панорамними видами.",
@@ -1661,7 +1661,7 @@ const datas = [
           ogImage: "https://our-travels.info/foto/Luxembourg/luxembourg_canton/luxembourg_city/old_town/grand_ducal_palace/001.jpg"
         }
       },
-      ua: {
+      uk: {
         name: "Палац Великого герцога в Люксембурзі",
         location: "Люксембург (квартал Ville Haute), Люксембург",
         officialSite: [
@@ -1832,7 +1832,7 @@ const datas = [
           ogImage: "https://our-travels.info/foto/Luxembourg/luxembourg_canton/luxembourg_city/old_town/hammelsmarsch/001.jpg"
         }
       },
-      ua: {
+      uk: {
         name: "Фонтан «Хеммельсмарш»",
         location: "Люксембург (квартал Ville Haute), Люксембург",
         short_description: "Бронзовий фонтан «Хеммельсмарш» у центрі Люксембургу, що зображає традиційну процесію музикантів і овець, пов’язану з ярмарком Schueberfouer.",
@@ -1973,7 +1973,7 @@ const datas = [
           ogImage: "https://our-travels.info/foto/Luxembourg/luxembourg_canton/luxembourg_city/old_town/acrobats/001.jpg"
         }
       },
-      ua: {
+      uk: {
         name: "Скульптурна група «Акробати»",
         location: "Люксембург (квартал Ville Haute), Люксембург",
         short_description: "Бронзова скульптурна група «Акробати» на Place du Théâtre зображає вуличних артистів і є однією з відомих культурних пам’яток центру Люксембургу.",

@@ -1,10 +1,10 @@
 import { useSelector } from "react-redux";
 import { useNavigate } from "react-router";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 
 import "../Maps.scss";
 import { cantries as mapEu, countryNames, countryCenters } from "./cantries";
-import datas from "../../../datas/country";
+
 
 export default function EuropeMap() {
   const { lang } = useSelector((state) => state.language);
@@ -12,10 +12,29 @@ export default function EuropeMap() {
 
   const [hoverId, setHoverId] = useState(null);
   const [tooltipPos, setTooltipPos] = useState([0, 0]);
+  const [countries, setCountries] = useState([]);
+
+  useEffect(() => {
+  const fetchCountries = async () => {
+    try {
+      const response = await fetch(
+        `${import.meta.env.VITE_API_URL}/api/countries?lang=${lang}`
+      );
+
+      const data = await response.json();
+
+      setCountries(data);
+    } catch (error) {
+      console.error(error);
+    }
+  };
+
+  fetchCountries();
+}, [lang]);
 
   // 👉 активные страны
   const countriesMap = Object.fromEntries(
-    datas.map(c => [c.path, c])
+    countries.map(c => [c.path, c])
   );
 
   const isActive = (id) => Boolean(countriesMap[id]);

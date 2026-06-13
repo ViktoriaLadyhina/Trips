@@ -83,7 +83,7 @@ const datas = [
                     ogImage: "https://our-travels.info/foto/Ukraine/sumska/sumy-city/altanka/009.jpg"
                 }
             },
-            ua: {
+            uk: {
                 name: 'Суми',
                 countryName: "Україна", regionName: "Сумська область",
                 desc: {

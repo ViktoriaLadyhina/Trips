@@ -1,37 +1,122 @@
-import { useState } from 'react';
+import { useEffect, useMemo, useState } from 'react';
 import { useSelector } from "react-redux";
 import { Link, useParams } from 'react-router';
 import { Helmet } from "react-helmet-async";
 
-import { photosByCountry } from "../../datas/fotos";
-import InfoBlock from '../../components/InfoBlock/InfoBlock';
+import BtnAttr from "../../components/btn-attr/BtnAttr";
 import BreadCrumbs from '../../components/breadCrumbs/BreadCrumbs';
 import './Regions.scss'
 import CountryMap from '../../components/maps/CountryMap';
-import BtnAttr from "../../components/btn-attr/BtnAttr";
-import useLand from "../../hooks/useLand";
 import datas from '../../datas/minimalIndex'
+import { toFullUrl, fixHtmlImages } from "../../utils/photo";
 
 const BASE_PHOTO_URL = import.meta.env.VITE_BASE_PHOTO_URL;
+const regionTitlesByType = {
+    discript: { ru: "Административные округа", uk: "Адміністративні округи", de: "Regierungsbezirke" },
+    city: { ru: "Свободные города", uk: "Вільні міста", de: "Kreisfreie Städte" },
+    commune: { ru: "Коммуны и населённые пункты", uk: "Громади та населені пункти", de: "Gemeinden und Ortschaften" }
+};
 
 const Regions = () => {
     const { countryPath, regionPath } = useParams();
-    const { region, error } = useLand(countryPath, regionPath);
     const [sidebarOpen, setSidebarOpen] = useState(false);
     const { lang } = useSelector((state) => state.language);
 
-    const meta = region?.meta;
-    const titleFallback = region?.name;
+    const [region, setRegion] = useState(null);
+    const [error, setError] = useState(null);
 
-    const photos = photosByCountry[countryPath];
+    const meta = region?.meta;
+  
+    useEffect(() => {
+        fetch(`http://localhost:3001/api/region/${regionPath}?lang=${lang}`)
+            .then(res => res.json())
+            .then(data => setRegion(data))
+            .catch(err => setError(err.message));
+    }, [regionPath, lang]);
+
+    const blocks = useMemo(() => {
+        return (region?.blocks || [])
+            .slice()
+            .sort((a, b) => a.sort_order - b.sort_order);
+    }, [region]);
+
+    const langData = useMemo(() => {
+        if (!region?.blocks) return {};
+
+        return region.blocks.reduce((acc, b) => {
+            acc[b.block_key] = b.content;
+            return acc;
+        }, {});
+    }, [region]);
+
+
+    const renderBlock = (block) => {
+        switch (block.block_key) {
+
+            // ===== TEXT BLOCKS =====
+            case "name":
+            case "capital":
+            case "geography":
+            case "area":
+            case "population":
+            case "historyName":
+            case "economy":
+            case "tourism":
+            case "briefHistory":
+            case "interestingFacts":    
+            case "symbols":
+                return langData?.[block.block_key] ? (
+                    <section
+                        className={`regions__${block.block_key}`}
+                        dangerouslySetInnerHTML={{
+                            __html: fixHtmlImages(langData[block.block_key])
+                        }}
+                    />
+                ) : null;
+
+            // ===== MAP =====
+            case "map":
+                
+                return (
+                    <div className='regions__map'>
+                        <BtnAttr lang={lang} path={`/${countryPath}/${regionPath}/attractions`} />
+                        <CountryMap
+                            countryKey={countryPath}
+                            regions={region}
+                            regionKey={region?.path}
+                        />
+                    </div>
+                );
+
+            // ===== PHOTO =====
+case "photo": {
+    const photo = region.mainPhoto;
+
+    if (!photo) return null;
+
+    return (
+        <img
+            src={`${BASE_PHOTO_URL}${photo.path}`}
+            className="regions__photo"
+            alt={photo.title?.[lang] || ""}
+        />
+    );
+}
+
+            default:
+                return null;
+        }
+    };
+
 
     if (error) return <p>{error}</p>;
     if (!region) return <div>Загрузка региона...</div>;
 
+    // BreadCrumbs
     const crumbs = [
         { label: lang === 'ru' ? 'Главная' : lang === 'de' ? 'Startseite' : 'Головна', path: '/' },
         { label: datas.countries[countryPath][lang], path: `/${countryPath}` },
-        { label: region.name }
+        { label: datas.regions[regionPath][lang] }
     ];
 
 
@@ -40,27 +125,25 @@ const Regions = () => {
 
             {meta && (
                 <Helmet>
-                    <title>{meta.title || titleFallback}</title>
-
+                    <title>{meta.title || datas.regions[regionPath][lang]}</title>
+                    <meta name="title" content={meta.title} />
                     <meta name="description" content={meta.description} />
-
-                    <meta property="og:title" content={meta.ogTitle} />
-                    <meta property="og:description" content={meta.ogDescription} />
-                    <meta property="og:image" content={meta.ogImage} />
+                    <meta property="og:title" content={meta.og_title} />
+                    <meta property="og:description" content={meta.og_description} />
+                    <meta property="og:image" content={toFullUrl(meta.og_image)} />
                 </Helmet>
             )}
-
 
             <aside className={`regions__sidebar ${sidebarOpen ? "mobile-open" : ""}`}>
                 <div className="regions__sidebar-toggle" onClick={() => setSidebarOpen(!sidebarOpen)}>☰</div>
                 {/* Административные округа */}
-                {region.discriptRegions && (
+                {region.discriptRegions?.length > 0 && (
                     <div>
-                        <h2 className="regions__sidebar-title">{region.discriptRegions.title}</h2>
+                        <h2 className="regions__sidebar-title">{regionTitlesByType["discript"]?.[lang]}</h2>
                         <ul className={`regions__sidebar-list ${sidebarOpen ? "active" : ""}`}>
-                            {region.discriptRegions?.items?.map((district) => (
+                            {region.discriptRegions?.map((district) => (
                                 <li key={district.id} className="regions__sidebar-item">
-                                    {district.hasInfo ? (
+                                    {district.is_active ? (
                                         <Link
                                             to={`/${countryPath}/${regionPath}/${district.path}`}
                                             className="regions__sidebar-link"
@@ -79,13 +162,13 @@ const Regions = () => {
                 )}
 
                 {/* Свободные города */}
-                {region.cities && (
+                {region.cities?.length > 0 && (
                     <div>
-                        <h2 className="regions__sidebar-title">{region.cities.title}</h2>
+                        <h2 className="regions__sidebar-title">{regionTitlesByType["city"]?.[lang]}</h2>
                         <ul className="regions__sidebar-list">
-                            {region.cities?.items?.map((city) => (
+                            {region.cities?.map((city) => (
                                 <li key={city.id} className="regions__sidebar-item">
-                                    {city.hasInfo ? (
+                                    {city.is_active ? (
                                         <Link
                                             to={`/${countryPath}/${regionPath}/city/${city.path}`}
                                             className="regions__sidebar-link"
@@ -102,46 +185,42 @@ const Regions = () => {
                         </ul>
                     </div>
                 )}
+
+                {/* Коммуны */}
+                {region.communes?.length > 0 && (
+                    <div>
+                        <h2 className="regions__sidebar-title">{regionTitlesByType["commune"]?.[lang]}</h2>
+                        <ul className="regions__sidebar-list">
+                            {region.communes?.map((com) => (
+                                <li key={com.id} className="regions__sidebar-item">
+                                    {com.is_active ? (
+                                        <Link
+                                            to={`/${countryPath}/${regionPath}/city/${com.path}`}
+                                            className="regions__sidebar-link"
+                                        >
+                                            {com.name}
+                                        </Link>
+                                    ) : (
+                                        <span className="regions__sidebar-link regions__sidebar-link--disabled">
+                                            {com.name}
+                                        </span>
+                                    )}
+                                </li>
+                            ))}
+                        </ul>
+                    </div>
+                )}
             </aside>
 
-            <div className="regions__content">
+            <section className="regions__content">
                 <BreadCrumbs crumbs={crumbs} />
 
-                <h1 className="regions__title">{region.name}</h1>
-
-                <BtnAttr lang={lang} path={`/${countryPath}/${regionPath}/attractions`} />
-
-                <div className='regions__map'>
-                    <CountryMap
-                        countryKey={countryPath}
-                        regions={region}
-                        regionKey={region?.path}
-                    />
-                </div>
-
-                {region.desc.capital && <InfoBlock data={region.desc.capital} className="regions__capital" />}
-                {region.desc.population && <InfoBlock data={region.desc.population} className="regions__population" />}
-                {photos[regionPath]?.region?.[0] && (
-                    <img
-                        src={`${BASE_PHOTO_URL}${photos[regionPath].region[0].path}`}
-                        alt={photos[regionPath].region[0].title}
-                        className="regions__foto"
-                    />
-                )}
-                {region.desc.area && <InfoBlock data={region.desc.area} className="regions__area" />}
-                {region.desc.geography && <InfoBlock data={region.desc.geography} className="regions__geography" />}
-                {region.desc.rivers && <InfoBlock data={region.desc.rivers} className="regions__rivers" />}
-                {region.desc.cities && <InfoBlock data={region.desc.cities} className="regions__cities" />}
-                {region.desc.history && <InfoBlock data={region.desc.history} className="regions__history" />}
-                {region.desc.economy && <InfoBlock data={region.desc.economy} className="regions__economy" />}
-                {region.desc.tourism && <InfoBlock data={region.desc.tourism} className="regions__tourism" />}
-                {region.desc.culture && <InfoBlock data={region.desc.culture} className="regions__culture" />}
-                {region.desc.notablePeople && <InfoBlock data={region.desc.notablePeople} className="regions__notablePeople" />}
-                {region.desc.interestingFacts && <InfoBlock data={region.desc.interestingFacts} className="regions__interestingFacts" />}
-                {region.symbols && <InfoBlock data={region.symbols} className="regions__symbols" />}
-                {region.briefHistory && <InfoBlock data={region.briefHistory} className="regions__history" />}
-
-            </div>
+                {blocks?.length > 0 && blocks.map(block => (
+                    <div key={block.block_key}>
+                        {renderBlock(block)}
+                    </div>
+                ))}
+            </section>
         </div>
     )
 }

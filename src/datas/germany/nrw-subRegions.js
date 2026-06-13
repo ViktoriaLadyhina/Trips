@@ -30,7 +30,7 @@ const datas = [
                     { id: 11, name: "Эрндтебрюк", hasInfo: false }
                 ],
             },
-            ua: {
+            uk: {
                 name: "Зіген-Віттгенштайн",
                 center: [{ bold: "Центр району:", text: " місто Зіген." }],
                 area: [{ bold: "Площа:", text: " 1 132,9 км² (станом на 2023 р.)" }],
@@ -116,7 +116,7 @@ const datas = [
                     { id: 14, name: "Эрвитте", hasInfo: false }
                 ],
             },
-            ua: {
+            uk: {
                 name: "Зост",
                 center: [{ bold: "Центр району:", text: " місто Зост." }],
                 area: [{ bold: "Площа:", text: " 1 328,6 км² (станом на 2023 р.)" }],
@@ -209,7 +209,7 @@ const datas = [
                     { id: 15, name: "Шальксмюле", hasInfo: false }
                 ],
             },
-            ua: {
+            uk: {
                 name: "Меркіш",
                 center: [{ bold: "Центр району:", text: " місто Люденшайд." }],
                 area: [{ bold: "Площа:", text: " 1 058,95 км² (станом на 2023 р.)" }],
@@ -296,7 +296,7 @@ const datas = [
                     { id: 7, name: "Финнентроп", hasInfo: false }
                 ],
             },
-            ua: {
+            uk: {
                 name: "Ольпе",
                 center: [{ bold: "Центр району:", text: " місто Ольпе." }],
                 area: [{ bold: "Площа:", text: " 710,7 км² (станом на 2023 р.)" }],
@@ -370,7 +370,7 @@ const datas = [
                     { id: 10, name: "Шверте", hasInfo: false }
                 ],
             },
-            ua: {
+            uk: {
                 name: "Унна",
                 center: [{ bold: "Центр району:", text: " місто Унна." }],
                 area: [{ bold: "Площа:", text: " 543,2 км² (станом на 31 грудня 2023 р.)" }],
@@ -452,7 +452,7 @@ const datas = [
                     { id: 12, name: "Эслоэ", hasInfo: false }
                 ]
             },
-            ua: {
+            uk: {
                 name: "Хохзауерланд",
                 center: [{ bold: "Центр району:", text: " місто Мешеде." }],
                 area: [{ bold: "Площа:", text: " 1 960,2 км² (станом на 31 грудня 2023 р.)" }],
@@ -553,7 +553,7 @@ const datas = [
                     { id: 9, name: "Виттен", hasInfo: false }
                 ]
             },
-            ua: {
+            uk: {
                 name: "Еннепе-Рур",
                 center: [
                     { bold: "Центр району:" },
@@ -674,7 +674,7 @@ const datas = [
                     { id: 16, name: "Веце", hasInfo: false }
                 ]
             },
-            ua: {
+            uk: {
                 name: "Клеве",
                 center: [{ bold: "Центр району:", text: " місто Клеве." }],
                 area: [{ bold: "Площа:", text: " 1 232,99 км² (станом на 2023 р.)" }],
@@ -766,7 +766,7 @@ const datas = [
                     { id: 10, name: "Вюльфрат", hasInfo: false }
                 ]
             },
-            ua: {
+            uk: {
                 name: "Меттман",
                 center: [{ bold: "Центр району:", text: " місто Меттман." }],
                 area: [{ bold: "Площа:", text: " 407,22 км²." }],
@@ -844,7 +844,7 @@ const datas = [
                     { id: 8, name: "Роммерскирхен", hasInfo: false }
                 ]
             },
-            ua: {
+            uk: {
                 name: "Рейн-Ноєс",
                 center: [{ bold: "Центр району:", text: " місто Нойс." }],
                 area: [{ bold: "Площа:", text: " 576,52 км²." }],
@@ -919,7 +919,7 @@ const datas = [
                     { id: 9, name: "Виллих", hasInfo: false }
                 ]
             },
-            ua: {
+            uk: {
                 name: "Вірзен",
                 center: [{ bold: "Центр району:", text: " місто Вірзен." }],
                 area: [{ bold: "Площа:", text: " 563,29 км²." }],
@@ -1000,7 +1000,7 @@ const datas = [
                     { id: 13, name: "Ксантен", hasInfo: false }
                 ]
             },
-            ua: {
+            uk: {
                 name: "Везель",
                 center: [{ bold: "Центр району:", text: " місто Везель." }],
                 area: [{ bold: "Площа:", text: " 1 042,8 км²." }],
@@ -1086,7 +1086,7 @@ const datas = [
                     { id: 10, name: "Эшвайлер", hasInfo: false }
                 ]
             },
-            ua: {
+            uk: {
                 name: "Аахен",
                 center: [{ bold: "Центр району:", text: " місто Аахен." }],
                 area: [{ bold: "Площа:", text: " 707,15 кв. км (на 2023 р.)" }],
@@ -1167,7 +1167,7 @@ const datas = [
                     { id: 15, name: "Хюртгенвальд", hasInfo: false }
                 ]
             },
-            ua: {
+            uk: {
                 name: "Дюрен",
                 center: [{ bold: "Центр району:", text: " місто Дюрен." }],
                 area: [{ bold: "Площа:", text: " 941,15 кв. км (на 2023 р.)" }],
@@ -1278,7 +1278,7 @@ const datas = [
                     { id: 13, name: "Энгельскирхен", hasInfo: false }
                 ]
             },
-            ua: {
+            uk: {
                 name: "Обербергіш",
                 center: [
                     { bold: "Центр району:" },
@@ -1419,7 +1419,7 @@ const datas = [
                     { id: 11, name: "Далем", hasInfo: false }
                 ]
             },
-            ua: {
+            uk: {
                 name: "Ойскирхен",
                 center: [
                     { bold: "Центр району:" },
@@ -1546,7 +1546,7 @@ const datas = [
                     { id: 19, name: "Хеннеф", hasInfo: false }
                 ],
             },
-            ua: {
+            uk: {
                 name: "Рейн-Зіг",
                 center: [{ bold: "Центр району:", text: " місто Зігбург (Siegburg)." }],
                 area: [{ bold: "Площа:", text: " 1 153,00 кв. км (на 2023 р.)" }],
@@ -1640,7 +1640,7 @@ const datas = [
                     { id: 10, name: "Весселинг", hasInfo: false }
                 ]
             },
-            ua: {
+            uk: {
                 name: "Рейн-Ерфт",
                 center: [{ bold: "Центр району:", text: " місто Бергхайм (Bergheim)." }],
                 area: [{ bold: "Площа:", text: " 704,70 кв. км (на 2023 р.)" }],
@@ -1736,7 +1736,7 @@ const datas = [
                     { id: 8, name: "Рёсрат", hasInfo: false }
                 ]
             },
-            ua: {
+            uk: {
                 name: "Рейнiш-Бергiш",
                 center: [
                     { bold: "Центр району:" },
@@ -1866,7 +1866,7 @@ const datas = [
                     { id: 10, name: "Эркеленц", hasInfo: false }
                 ]
             },
-            ua: {
+            uk: {
                 name: "Хайнсберг",
                 center: [
                     { bold: "Центр району:" },

@@ -1,7 +1,4 @@
 // new
-import country from '../../datas/country'
-
-import germ_land from '../../datas/germany/lands'
 
 import nrw_attr from '../../datas/germany/nrw-attractions'
 import nrw_city from '../../datas/germany/nrw-city'
@@ -42,15 +39,13 @@ import rp_attRu from '../../datas/ru/germany/rheinland_pfalz-attractions'
 import sum_attrRu from '../../datas/ru/ukraine/sumska-attractions'
 
 //ua
-import nrw_attrUa from '../../datas/ua/germany/nrw-attractions'
-import rp_attUa from '../../datas/ua/germany/rheinland_pfalz-attractions'
-import sum_attrUa from '../../datas/ua/ukraine/sumska-attractions'
+import nrw_attrUa from '../../datas/uk/germany/nrw-attractions'
+import rp_attUa from '../../datas/uk/germany/rheinland_pfalz-attractions'
+import sum_attrUa from '../../datas/uk/ukraine/sumska-attractions'
 
 
 const searchIndex = {
-    country: country,
     germany: {
-        land: germ_land,
         nrw: {
             attractions: nrw_attr,
             subRegions: nrw_subRegions,
@@ -127,7 +122,7 @@ const searchIndex = {
             },
         }
     },
-    ua: {
+    uk: {
         germany: {
             nrw: {
                 attractions: nrw_attrUa,

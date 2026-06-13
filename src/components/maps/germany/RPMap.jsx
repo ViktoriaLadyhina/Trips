@@ -1,4 +1,4 @@
-import { useState, useMemo } from "react";
+import { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import { districtsRlp as districts } from "./maps/districtsRlp";
 import "../Maps.scss";
@@ -8,23 +8,16 @@ const RPMap = ({ regions }) => {
   const [hoverRegion, setHoverRegion] = useState(null);
   const [tooltipPos, setTooltipPos] = useState([0, 0]);
 
-  // Все округа Райн-Пфальц
-  const rlpDistricts = useMemo(
-    () => regions?.discriptRegions?.items || [],
-    [regions]
-  );
-  // Свободные города NRW
-  const rlpCities = useMemo(
-    () => regions?.cities?.items || [],
-    [regions]
-  );
+  const rlpDistricts = regions?.discriptRegions || [];
+const rlpCities = regions?.cities || [];
+
 
   const handleDistrictClick = (district) => {
-    if (district.hasInfo) navigate(`/germany/rheinland_pfalz/${district.path}`);
+    if (district.is_active) navigate(`/germany/rheinland_pfalz/${district.path}`);
   };
 
   const handleCityClick = (city) => {
-    if (city.hasInfo) navigate(`/germany/rheinland_pfalz/city/${city.path}`);
+    if (city.is_active) navigate(`/germany/rheinland_pfalz/city/${city.path}`);
   };
 
   // Координаты подписей (x, y) + смещения dx, dy
@@ -38,7 +31,7 @@ const RPMap = ({ regions }) => {
     Rbernkastel_wittlich: { x: 10000, y: 10000, dx: -2000, dy: 2800 },
     Rbirkenfeld: { x: 10000, y: 10000, dx: 100, dy: 5800 },
     Rcochem_zell: { x: 10000, y: 10000, dx: -400, dy: 800 },
-    Rdonnersbergkreis: { x: 10000, y: 10000, dx: 4700, dy: 6500 },
+    Rdonnersberg: { x: 10000, y: 10000, dx: 4700, dy: 6500 },
     Reifelkreis_bitburg_pruem: { x: 10000, y: 10000, dx: -5600, dy: 1700 },
     Rgermersheim: { x: 10000, y: 10000, dx: 7600, dy: 12700 },
     Rkaiserslautern: { x: 10000, y: 10000, dx: 3300, dy: 8000 },
@@ -46,8 +39,8 @@ const RPMap = ({ regions }) => {
     Rmainz_bingen: { x: 10000, y: 10000, dx: 5400, dy: 3000 },
     Rmayen_koblenz: { x: 10000, y: 10000, dx: 300, dy: -1400 },
     Rneuwied: { x: 10000, y: 10000, dx: 1400, dy: -3200 },
-    Rrhein_hunsrueck_kreis: { x: 10000, y: 10000, dx: 1900, dy: 1700 },
-    Rrhein_lahn_kreis: { x: 10000, y: 10000, dx: 4000, dy: -600 },
+    Rrhein_hunsrueck: { x: 10000, y: 10000, dx: 1900, dy: 1700 },
+    Rrhein_lahn: { x: 10000, y: 10000, dx: 4000, dy: -600 },
     Rrhein_pfalz_kreis: { x: 10000, y: 10000, dx: 8600, dy: 8900 },
     Rsuedliche_weinstrasse: { x: 10000, y: 10000, dx: 7500, dy: 10500 },
     Rsuedwestpfalz: { x: 10000, y: 10000, dx: 2500, dy: 9850 },
@@ -60,7 +53,7 @@ const RPMap = ({ regions }) => {
     Ckoblenz: { x: 5000, y: 5000, dx: 7600, dy: 3500 },
     Cludwigshafen: { x: 5000, y: 5000, dx: 14500, dy: 13000 },
     Ctrier: { x: 5000, y: 5000, dx: 1000, dy: 10000 },
-    "Ckaiserslautern-city": { x: 5000, y: 5000, dx: 9700, dy: 13800 },
+    "Ckaiserslautern_city": { x: 5000, y: 5000, dx: 9700, dy: 13800 },
     Cworms: { x: 5000, y: 5000, dx: 13000, dy: 11300 },
     Cspeyer: { x: 5000, y: 5000, dx: 14100, dy: 14900 },
     Cfrankenthal: { x: 5000, y: 5000, dx: 14100, dy: 12300 },
@@ -86,7 +79,7 @@ const RPMap = ({ regions }) => {
               <path
                 key={loc.id}
                 d={loc.path}
-                className={district.hasInfo ? "interactive" : "disabled"}
+                className={district.is_active ? "interactive" : "disabled"}
                 onClick={() => handleDistrictClick(district)}
                 onMouseEnter={(e) => {
                   setHoverRegion(district.name);
@@ -107,7 +100,7 @@ const RPMap = ({ regions }) => {
               <path
                 key={loc.id}
                 d={loc.path}
-                className={city.hasInfo ? "interactive" : "disabled"}
+                className={city.is_active ? "interactive" : "disabled"}
                 onClick={() => handleCityClick(city)}
                 onMouseEnter={(e) => {
                   setHoverRegion(city.name);

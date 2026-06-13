@@ -4,7 +4,7 @@ const datas = [
         path: "city",
         translations: {
             ru: { name: "Город областного значения" },
-            ua: { name: "Місто облатного значення" },
+            uk: { name: "Місто облатного значення" },
             de: { name: "Stadt von regionaler Bedeutung" }
         }
     },
@@ -36,7 +36,7 @@ const datas = [
                     ogImage: "https://our-travels.info/foto/Germany/nrw/arnsberg/Märkischer-Kreis/altena/burg/001.jpg"
                 }
             },
-            ua: {
+            uk: {
                 title: 'Адміністративний округ Арнсберг',
                 name: 'Арнсберг',
                 countryName: "Германия", regionName: "Північний Рейн-Вестфалія",
@@ -113,7 +113,7 @@ const datas = [
         path: "detmold",
         translations: {
             ru: { name: 'Детмольд' },
-            ua: { name: 'Детмольд' },
+            uk: { name: 'Детмольд' },
             de: { name: 'Detmold' }
         }
     },
@@ -153,7 +153,7 @@ const datas = [
                     ogImage: "/nrw/duesseldorf.jpg"
                 }
             },
-            ua: {
+            uk: {
                 title: "Адміністративний округ Дюссельдорф",
                 name: "Дюссельдорф",
                 countryName: "Німеччина",
@@ -244,7 +244,7 @@ const datas = [
                     ogImage: "https://our-travels.info/foto/Germany/nrw/koln/koln-city/001.jpg"
                 }
             },
-            ua: {
+            uk: {
                 title: 'Адміністративний округ Кельн',
                 name: 'Кельн',
                 countryName: "Германия", regionName: "Північний Рейн-Вестфалія",
@@ -320,7 +320,7 @@ const datas = [
         path: "munster",
         translations: {
             ru: { name: 'Мюнстер' },
-            ua: { name: 'Мюнстер' },
+            uk: { name: 'Мюнстер' },
             de: { name: 'Münster' }
         }
     }
