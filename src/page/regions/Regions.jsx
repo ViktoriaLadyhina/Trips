@@ -28,7 +28,7 @@ const Regions = () => {
     const meta = region?.meta;
   
     useEffect(() => {
-        fetch(`http://localhost:3001/api/region/${regionPath}?lang=${lang}`)
+        fetch(`${import.meta.env.VITE_API_URL}/api/region/${regionPath}?lang=${lang}`)
             .then(res => res.json())
             .then(data => setRegion(data))
             .catch(err => setError(err.message));
