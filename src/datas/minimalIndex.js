@@ -2,65 +2,65 @@ const datas =
 
 {
   countries: {
-    germany: { ru: 'Германия', de: 'Deutschland', uk: 'Німеччина' },
-    ukraine: { ru: 'Украина', de: 'Ukraine', uk: 'Україна' },
-    luxembourg: { ru: 'Люксембург', de: 'Luxemburg', uk: 'Люксембург' }
+    germany: { id: 1, ru: 'Германия', de: 'Deutschland', uk: 'Німеччина' },
+    ukraine: { id: 3, ru: 'Украина', de: 'Ukraine', uk: 'Україна' },
+    luxembourg: { id: 2, ru: 'Люксембург', de: 'Luxemburg', uk: 'Люксембург' }
   },
   regions: {
     // Germany
-    nrw: { ru: 'Северный Рейн-Вестфалия', de: 'Nordrhein-Westfalen', uk: 'Північний Рейн-Вестфалія' },
-    rheinland_pfalz: { ru: 'Рейнланд-Пфальц', de: 'Rheinland-Pfalz', uk: 'Рейнланд-Пфальц' },
+    nrw: { id: 13, ru: 'Северный Рейн-Вестфалия', de: 'Nordrhein-Westfalen', uk: 'Північний Рейн-Вестфалія' },
+    rheinland_pfalz: { id: 14, ru: 'Рейнланд-Пфальц', de: 'Rheinland-Pfalz', uk: 'Рейнланд-Пфальц' },
     //luxembourg
-    mersch: { ru: 'Кантон Мерш', de: 'Kanton Mersch', uk: 'Кантон Мерш' },
-    capellen: { ru: 'Кантон Капеллен', de: 'Kanton Capellen', uk: 'Кантон Капеллен' },
-    luxembourg_canton: { ru: 'Кантон Люксембург', de: 'Kanton Luxemburg', uk: 'Кантон Люксембург' },
+    mersch: { id: 28, ru: 'Кантон Мерш', de: 'Kanton Mersch', uk: 'Кантон Мерш' },
+    capellen: { id: 20, ru: 'Кантон Капеллен', de: 'Kanton Capellen', uk: 'Кантон Капеллен' },
+    luxembourg_canton: { id: 26, ru: 'Кантон Люксембург', de: 'Kanton Luxemburg', uk: 'Кантон Люксембург' },
 
     //Ukraine
-    sumska: { ru: 'Сумская область', de: 'Sumska Oblast', uk: 'Сумська область' }
+    sumska: { id: 49, ru: 'Сумская область', de: 'Sumska Oblast', uk: 'Сумська область' }
   },
   districts: {
-    arnsberg: { ru: 'Административный округ Арнсберг', de: 'Regierungsbezirk Arnsberg', uk: 'Адміністративний округ Арнсберг' },
+    arnsberg: { id: 60, ru: 'Административный округ Арнсберг', de: 'Regierungsbezirk Arnsberg', uk: 'Адміністративний округ Арнсберг' },
     merkischer: { ru: 'Район Меркиш', de: 'Märkischer Kreis', uk: 'Район Меркіш' },
     hochsauerland: { ru: 'Район Хохзауэрланд', de: 'Hochsauerlandkreis', uk: 'Район Хохзауэрланд' },
 
-    dusseldorf: { ru: 'Административный округ Дюссельдорф', de: 'Regierungsbezirk Düsseldorf', uk: 'Адміністративний округ Дюссельдорф' },
+    dusseldorf: { id: 62, ru: 'Административный округ Дюссельдорф', de: 'Regierungsbezirk Düsseldorf', uk: 'Адміністративний округ Дюссельдорф' },
     mettmann: { ru: 'Район Меттман', de: 'Kreis Mettmann', uk: 'Район Меттман' },
 
-    koln: { ru: 'Административный округ Кёльн', de: 'Regierungsbezirk Köln', uk: 'Адміністративний округ Кельн' },
+    koln: { id: 63, ru: 'Административный округ Кёльн', de: 'Regierungsbezirk Köln', uk: 'Адміністративний округ Кельн' },
     rheinErft: { ru: 'Район Рейн-Эрфт', de: 'Rhein-Erft-Kreis', uk: 'Район Рейн-Ерфт' },
     aachen: { ru: 'Район Аахен', de: 'Kreis Aachen', uk: 'Район Аахен' },
     rhein_sieg: { ru: 'Район Рейн-Зиг', de: 'Rhein-Sieg-Kreis', uk: 'Район Рейн-Зиг' },
 
-    mayen_koblenz: { ru: 'Район Майен‑Кобленц', de: 'Landkreis Mayen-Koblenz', uk: 'Район Маєн-Кобленц' },
-    trier_saarburg: { ru: 'Район Трир-Саарбург', de: 'Landkreis Trier-Saarburg', uk: 'Район Трір-Саарбург' }
+    mayen_koblenz: { id: 114, ru: 'Район Майен‑Кобленц', de: 'Landkreis Mayen-Koblenz', uk: 'Район Маєн-Кобленц' },
+    trier_saarburg: { id: 121, ru: 'Район Трир-Саарбург', de: 'Landkreis Trier-Saarburg', uk: 'Район Трір-Саарбург' }
   },
   cities: {
     // Germany
-    koln_city: { ru: 'Город Кёльн', de: 'Stadt Köln', uk: 'Місто Кельн' },
-    monschau: { ru: 'Город Моншау', de: 'Stadt Monschau', uk: 'Місто Моншау' },
-    bruhl: { ru: 'Город Брюль', de: 'Stadt Brühl', uk: 'Місто Брюль' },
-    frechen: { ru: 'Город Фрехен', de: 'Stadt Frechen', uk: 'Місто Фрехен' },
-    konigswinter: { ru: 'Город Кёнигсвинтер', de: 'Stadt Königswinter', uk: 'Місто Кенігсвінтер' },
-    lohmar: { ru: 'Город Ломар', de: 'Stadt Lohmar', uk: 'Місто Ломар' },
+    koln_city: { id: 76, ru: 'Город Кёльн', de: 'Stadt Köln', uk: 'Місто Кельн' },
+    monschau: { id: 185, ru: 'Город Моншау', de: 'Stadt Monschau', uk: 'Місто Моншау' },
+    bruhl: { id: 171, ru: 'Город Брюль', de: 'Stadt Brühl', uk: 'Місто Брюль' },
+    frechen: { id: 174, ru: 'Город Фрехен', de: 'Stadt Frechen', uk: 'Місто Фрехен' },
+    konigswinter: { id: 247, ru: 'Город Кёнигсвинтер', de: 'Stadt Königswinter', uk: 'Місто Кенігсвінтер' },
+    lohmar: { id: 248, ru: 'Город Ломар', de: 'Stadt Lohmar', uk: 'Місто Ломар' },
     velbert: { ru: 'Город Фельберт', de: 'Stadt Velbert', uk: 'Місто Фельберт' },
 
-    dortmund: { ru: 'Город Дортмунд', de: 'Stadt Dortmund', uk: 'Місто Дортмунд' },
-    luedenscheid: { ru: 'Город Люденшайд', de: 'Stadt Lüdenscheid', uk: 'Місто Люденшайд' },
-    altena: { ru: 'Город Альтена', de: 'Stadt Altena', uk: 'Місто Альтена' },
-    iserlohn: { ru: 'Город Изерлон', de: 'Stadt Iserlohn', uk: 'Місто Ізерлон' },
+    dortmund: { id: 72, ru: 'Город Дортмунд', de: 'Stadt Dortmund', uk: 'Місто Дортмунд' },
+    luedenscheid: { id: 298, ru: 'Город Люденшайд', de: 'Stadt Lüdenscheid', uk: 'Місто Люденшайд' },
+    altena: { id: 293, ru: 'Город Альтена', de: 'Stadt Altena', uk: 'Місто Альтена' },
+    iserlohn: { id: 296, ru: 'Город Изерлон', de: 'Stadt Iserlohn', uk: 'Місто Ізерлон' },
     sundern: { ru: 'Город Зундерн', de: 'Stadt Sundern', uk: 'Місто Зундерн' },
 
-    koblenz: { ru: 'Город Кобленц', de: 'Stadt Koblenz', uk: 'Місто Кобленц' },
-    trier: { ru: 'Город Трир', de: 'Stadt Trier', uk: 'Місто Трір' },
-    saarburg: { ru: 'Город Саарбург', de: 'Stadt Saarburg', uk: 'Місто Саарбург' },
+    koblenz: { id: 90, ru: 'Город Кобленц', de: 'Stadt Koblenz', uk: 'Місто Кобленц' },
+    trier: { id: 91, ru: 'Город Трир', de: 'Stadt Trier', uk: 'Місто Трір' },
+    saarburg_city: { id: 618, ru: 'Город Саарбург', de: 'Stadt Saarburg', uk: 'Місто Саарбург' },
 
     //luxembourg
-    luxembourg_city: { ru: 'Город Люксембург', de: 'Stadt Luxemburg', uk: 'Місто Люксембург' },
-    ansembourg: { ru: 'Деревня Ансембург', de: 'Dorf Ansembourg', uk: 'Село Ансембург' },
-    koerich: { ru: 'Деревня Кёрих', de: 'Dorf Koerich', uk: 'Село Кьоріх' },
+    luxembourg_city: { id: 146, ru: 'Город Люксембург', de: 'Stadt Luxemburg', uk: 'Місто Люксембург' },
+    ansembourg: { id: 159, ru: 'Деревня Ансембург', de: 'Dorf Ansembourg', uk: 'Село Ансембург' },
+    koerich: { id: 141, ru: 'Деревня Кёрих', de: 'Dorf Koerich', uk: 'Село Кьоріх' },
 
     //Ukraine
-    sumy: { ru: 'Город Сумы', de: 'Stadt Sumy', uk: 'Місто Суми' }
+    sumy: { id: 125, ru: 'Город Сумы', de: 'Stadt Sumy', uk: 'Місто Суми' }
   },
   attractions: {
     // arnsberg округ

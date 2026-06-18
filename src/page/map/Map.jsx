@@ -61,15 +61,15 @@ const Map = () => {
                     <ul>
 
                       {/* Саарбург - город */}
-                      <li><Link to="/germany/rheinland_pfalz/trier_saarburg/saarburg">{t.cities.saarburg[lang]}</Link>
+                      <li><Link to="/germany/rheinland_pfalz/trier_saarburg/saarburg_city">{t.cities.saarburg_city[lang]}</Link>
                         <ul>
-                          <li><Link to="/germany/rheinland_pfalz/trier_saarburg/saarburg/attractions/altstadt_saarburg">{t.attractions.altstadt_saarburg[lang]}</Link>
+                          <li><Link to="/germany/rheinland_pfalz/trier_saarburg/saarburg_city/attractions/altstadt_saarburg">{t.attractions.altstadt_saarburg[lang]}</Link>
                             <ul>
-                              <li><Link to="/germany/rheinland_pfalz/trier_saarburg/saarburg/attractions/wasserfall_saarburg">{t.attractions.wasserfall_saarburg[lang]}</Link></li>
-                              <li><Link to="/germany/rheinland_pfalz/trier_saarburg/saarburg/attractions/amuseum_saarburg">{t.attractions.amuseum_saarburg[lang]}</Link></li>
+                              <li><Link to="/germany/rheinland_pfalz/trier_saarburg/saarburg_city/attractions/wasserfall_saarburg">{t.attractions.wasserfall_saarburg[lang]}</Link></li>
+                              <li><Link to="/germany/rheinland_pfalz/trier_saarburg/saarburg_city/attractions/amuseum_saarburg">{t.attractions.amuseum_saarburg[lang]}</Link></li>
                             </ul>
                           </li>
-                          <li><Link to="/germany/rheinland_pfalz/trier_saarburg/saarburg/attractions/burg_saarburg">{t.attractions.burg_saarburg[lang]}</Link></li>
+                          <li><Link to="/germany/rheinland_pfalz/trier_saarburg/saarburg_city/attractions/burg_saarburg">{t.attractions.burg_saarburg[lang]}</Link></li>
                         </ul>
                       </li>
                     </ul>

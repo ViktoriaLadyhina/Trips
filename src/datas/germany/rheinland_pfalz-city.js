@@ -1,7 +1,7 @@
 const datas = [
     {
         id: "trier",
-        path: "trier",
+        path: "trier", // 91
         countryPath: "germany", regionPath: "rheinland_pfalz", districtPath: "city",
         gerb: "Germany/rheinland-pfalz/trier-city/gerb.png",
         coord: { lat: 49.75565, lng: 6.63935 },
@@ -280,8 +280,8 @@ const datas = [
         }
     },
     {
-        id: "saarburg",
-        path: "saarburg",
+        id: "saarburg_city",
+        path: "saarburg_city",
         countryPath: "germany", regionPath: "rheinland_pfalz", districtPath: "trier_saarburg",
         gerb: "Germany/rheinland-pfalz/trier_saarburg/saarburg_kell/saarburg/gerb.png",
         coord: { lat: 49.6131, lng: 6.5783 },
@@ -460,7 +460,7 @@ const datas = [
     },
     {
         id: "koblenz",
-        path: "koblenz",
+        path: "koblenz", // 89
         countryPath: "germany", regionPath: "rheinland_pfalz", districtPath: "city",
         gerb: "Germany/rheinland-pfalz/koblenz/gerb.png",
         coord: { lat: 50.3569, lng: 7.5889 },

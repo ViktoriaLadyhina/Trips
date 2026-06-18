@@ -1,5 +1,5 @@
-import { useEffect } from "react";
-import { useLocation, useParams } from "react-router";
+import { useEffect, useMemo, useRef, useState } from "react";
+import { useParams } from "react-router";
 import { Helmet } from "react-helmet-async";
 import BreadCrumbs from '../../components/breadCrumbs/BreadCrumbs.jsx';
 import Region from '../../components/region/Region.jsx';
@@ -9,43 +9,153 @@ import './District.scss'
 import CountryMap from '../../components/maps/CountryMap.jsx';
 import BtnAttr from "../../components/btn-attr/BtnAttr.jsx";
 import { useSelector } from "react-redux";
-import useDistricts from "../../hooks/useDistricts.js";
-import useSabRegions from "../../hooks/useSabRegions.js";
-import useLand from "../../hooks/useLand.js";
 import datas from '../../datas/minimalIndex'
+import { toFullUrl, fixHtmlImages } from "../../utils/photo";
 
 const BASE_PHOTO_URL = import.meta.env.VITE_BASE_PHOTO_URL;
-
-const slugify = (str = "") =>
-  str
-    .toString()
-    .toLowerCase()
-    .trim()
-    .replace(/\s+/g, "-")
-    .replace(/[^\w\-]/g, "");
 
 const District = () => {
   const { countryPath, regionPath, districtPath } = useParams();
   const { lang } = useSelector((state) => state.language);
-  const { region } = useLand(countryPath, regionPath);
-  const { district, error } = useDistricts(countryPath, regionPath, districtPath);
-  const { subRegion } = useSabRegions(countryPath, regionPath, districtPath);
-  const location = useLocation();
 
-  useEffect(() => {
-    const params = new URLSearchParams(location.search);
-    const scrollTo = params.get("scrollTo");
-    if (scrollTo) {
-      // даём компоненту время отрендериться
-      setTimeout(() => {
-        const el = document.getElementById(`subregion-${scrollTo}`);
-        el?.scrollIntoView({ behavior: "smooth" });
-      }, 50);
-    }
-  }, [location.search]);
+  const [district, setDistrict] = useState(null);
+  const [subRegions, setSubRegions] = useState(null);
+  const [cities, setCities] = useState([]);
+  const [error, setError] = useState(null);
 
   const meta = district?.meta;
-  const titleFallback = district?.name;
+
+  const subRegionRefs = useRef({});
+
+useEffect(() => {
+  const controller = new AbortController();
+
+  const fetchData = async () => {
+    try {
+      setError(null);
+
+      const [districtRes, citiesRes, subRegionsRes] = await Promise.all([
+        fetch(`${import.meta.env.VITE_API_URL}/api/district/${districtPath}?lang=${lang}`, { signal: controller.signal }),
+        fetch(`${import.meta.env.VITE_API_URL}/api/map/cities/${regionPath}?lang=${lang}`, { signal: controller.signal }),
+        fetch(`${import.meta.env.VITE_API_URL}/api/subregions/${districtPath}?lang=${lang}`, { signal: controller.signal }),
+      ]);
+
+      const districtData = await districtRes.json();
+      const citiesData = await citiesRes.json();
+      const subRegionsData = await subRegionsRes.json();
+
+      setDistrict(districtData);
+      setCities(citiesData.cities || []);
+      setSubRegions(subRegionsData || []);
+    } catch (err) {
+      if (err.name !== "AbortError") {
+        setError(err.message);
+      }
+    }
+  };
+
+  fetchData();
+
+  return () => controller.abort();
+}, [districtPath, regionPath, lang]);
+
+  // Функция клика по субрегиону
+  const scrollToSubRegion = (reg) => {
+    const el = subRegionRefs.current[reg.id];
+
+    el?.scrollIntoView({
+      behavior: "smooth",
+      block: "start"
+    });
+  };
+
+  const blocks = useMemo(() => {
+    return (district?.blocks || [])
+      .slice()
+      .sort((a, b) => a.sort_order - b.sort_order);
+  }, [district]);
+
+  const langData = useMemo(() => {
+    if (!district?.blocks) return {};
+
+    return district.blocks.reduce((acc, b) => {
+      acc[b.block_key] = b.content;
+      return acc;
+    }, {});
+  }, [district]);
+
+  const sortedSubRegion = useMemo(() => {
+    if (!subRegions?.length) return [];
+
+    const getRegionName = (region) => {
+      return (
+        region.blocks?.find(
+          (block) => block.block_key === "name"
+        )?.content || ""
+      );
+    };
+
+    return [...subRegions].sort((a, b) =>
+      getRegionName(a).localeCompare(getRegionName(b))
+    );
+  }, [subRegions]);
+
+  const renderBlock = (block) => {
+    switch (block.block_key) {
+
+      // ===== TEXT BLOCKS =====
+      case "name":
+      case "capital":
+      case "geography":
+      case "area":
+      case "cities":
+      case "districts":
+      case "population":
+        return langData?.[block.block_key] ? (
+          <section
+            className={`district__${block.block_key}`}
+            dangerouslySetInnerHTML={{
+              __html: fixHtmlImages(langData[block.block_key])
+            }}
+          />
+        ) : null;
+
+      // ===== MAP =====
+      case "map":
+
+        return (
+          <div className='district__map'>
+            <CountryMap
+              countryKey={countryPath}
+              regionKey={regionPath}
+              districtKey={districtPath}
+              regions={district}
+              subRegion={subRegions}
+              cities={cities}
+              scrollToSubRegion={scrollToSubRegion}
+            />
+          </div>
+        );
+
+      // ===== PHOTO =====
+      case "photo": {
+        const photo = district.mainPhoto;
+
+        if (!photo) return null;
+
+        return (
+          <img
+            src={`${BASE_PHOTO_URL}${photo.path}`}
+            className="district__photo"
+            alt={photo.title?.[lang] || ""}
+          />
+        );
+      }
+
+      default:
+        return null;
+    }
+  };
 
   if (error) return <p>{error}</p>;
   if (!district) return <p>District not found</p>;
@@ -54,7 +164,7 @@ const District = () => {
     { label: lang === "ru" ? "Главная" : lang === "de" ? "Startseite" : "Головна", path: "/" },
     { label: datas.countries[countryPath][lang], path: `/${countryPath}` },
     { label: datas.regions[regionPath][lang], path: `/${countryPath}/${regionPath}` },
-    { label: district.name || district.title }
+    { label: datas.districts[districtPath][lang] }
   ];
 
   return (
@@ -62,62 +172,46 @@ const District = () => {
 
       {meta && (
         <Helmet>
-          <title>{meta.title || titleFallback}</title>
+          <title>{meta.title}</title>
+          <meta name="title" content={meta.title} />
           <meta name="description" content={meta.description} />
-          <meta property="og:title" content={meta.ogTitle} />
-          <meta property="og:description" content={meta.ogDescription} />
-          <meta property="og:image" content={meta.ogImage} />
+          <meta property="og:title" content={meta.og_title} />
+          <meta property="og:description" content={meta.og_description} />
+          <meta property="og:image" content={toFullUrl(meta.og_image)} />
         </Helmet>
       )}
 
-      <BreadCrumbs crumbs={crumbs} />
+      <section className="district__container">
+        <BreadCrumbs crumbs={crumbs} />
 
-      <div className='district__container'>
-        {district?.title && <h1 className='district__title'>{district.title}</h1>}
-
-        <BtnAttr lang={lang} path={`/${countryPath}/${regionPath}/${districtPath}/attractions`} />
-
-        {districtPath !== "trier_saarburg" && districtPath !== "mayen_koblenz" && (
-          <div className='district__map'>
-            <CountryMap
-              countryKey={countryPath}
-              regionKey={regionPath}
-              districtKey={districtPath}
-              regions={region}
-              subRegion={subRegion}
-            />
+        {blocks?.length > 0 && blocks.map(block => (
+          <div key={block.block_key}>
+            {renderBlock(block)}
           </div>
-        )}
+        ))}
 
-        <div className='district__desc'>
-          {district?.gerb && (
-            <div className='district-gerb'>
-              <img src={`${BASE_PHOTO_URL}${district.gerb}`} alt={district.name} />
-            </div>
-          )}
-
-          {district?.desc?.history && (<InfoBlock data={district.desc.history} className="district__history" />)}
-          {district?.desc?.area && (<InfoBlock data={district.desc.area} className="district__area" />)}
-          {district?.desc?.population && (<InfoBlock data={district.desc.population} className="district__population" />)}
-          {district?.desc?.districts && (<InfoBlock data={district.desc.districts} className="district__districts" />)}
-          {district?.desc?.cities && (<InfoBlock data={district.desc.cities} className="district__cities" />)}
-        </div>
-
-        {subRegion?.length > 0 && (
+        {sortedSubRegion?.length > 0 && (
           <div className="district__list">
-            {subRegion.map((sub) => (
-              <Region
-                key={sub.id}
-                data={sub}
-                countryPath={countryPath}
-                regionPath={regionPath}
-                districtPath={districtPath}
-                id={`subregion-${slugify(sub.path)}`}
-              />
-            ))}
+            {(sortedSubRegion || [])
+              .map((sub) => (
+                <div
+                  key={sub.id}
+                  ref={(el) => {
+                    if (el) subRegionRefs.current[sub.id] = el;
+                  }}
+                >
+                  <Region
+                    data={sub}
+                    countryPath={countryPath}
+                    regionPath={regionPath}
+                    districtPath={districtPath}
+                    subregionId={sub.id}
+                  />
+                </div>
+              ))}
           </div>
         )}
-      </div>
+      </section>
     </div>
 
   )

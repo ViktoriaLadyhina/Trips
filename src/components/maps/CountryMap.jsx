@@ -31,7 +31,7 @@ const maps = {
   }
 };
 
-export default function CountryMap({ countryKey, regionKey, regions, subRegion, districtKey }) {
+export default function CountryMap({ countryKey, regionKey, regions, subRegion, districtKey, cities, scrollToSubRegion }) {
   const country = maps[countryKey];
   if (!country) return null;
 
@@ -71,6 +71,8 @@ export default function CountryMap({ countryKey, regionKey, regions, subRegion, 
       regionPath={regionKey}
       districtPath={districtKey}
       subRegion={subRegion}
+      cities={cities}
+      scrollToSubRegion={scrollToSubRegion}
     />
   );
 }

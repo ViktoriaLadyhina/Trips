@@ -12,7 +12,7 @@ import { toFullUrl, fixHtmlImages } from "../../utils/photo";
 
 const BASE_PHOTO_URL = import.meta.env.VITE_BASE_PHOTO_URL;
 const regionTitlesByType = {
-    discript: { ru: "Административные округа", uk: "Адміністративні округи", de: "Regierungsbezirke" },
+    district: { ru: "Административные округа", uk: "Адміністративні округи", de: "Regierungsbezirke" },
     city: { ru: "Свободные города", uk: "Вільні міста", de: "Kreisfreie Städte" },
     commune: { ru: "Коммуны и населённые пункты", uk: "Громади та населені пункти", de: "Gemeinden und Ortschaften" }
 };
@@ -92,8 +92,6 @@ const Regions = () => {
 case "photo": {
     const photo = region.mainPhoto;
 
-    if (!photo) return null;
-
     return (
         <img
             src={`${BASE_PHOTO_URL}${photo.path}`}
@@ -139,7 +137,7 @@ case "photo": {
                 {/* Административные округа */}
                 {region.discriptRegions?.length > 0 && (
                     <div>
-                        <h2 className="regions__sidebar-title">{regionTitlesByType["discript"]?.[lang]}</h2>
+                        <h2 className="regions__sidebar-title">{regionTitlesByType["district"]?.[lang]}</h2>
                         <ul className={`regions__sidebar-list ${sidebarOpen ? "active" : ""}`}>
                             {region.discriptRegions?.map((district) => (
                                 <li key={district.id} className="regions__sidebar-item">

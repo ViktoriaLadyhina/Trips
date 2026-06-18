@@ -1,11 +1,7 @@
 import React, { useState, useMemo } from "react";
-import { useLocation, useNavigate } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 import { districtsArnsberg as districts } from "./maps/nrwDistricts";
 import "../Maps.scss";
-import { useSelector } from "react-redux";
-
-const slugify = (str = "") =>
-    str.toString().toLowerCase().trim().replace(/\s+/g, "-").replace(/[^\w\-]/g, "");
 
 const arnsbergDistrictCenters = {
     herne: { x: 35, y: 220, dx: 15, dy: -68 },
@@ -22,46 +18,38 @@ const arnsbergDistrictCenters = {
     ksw: { x: 35, y: 220, dx: 350, dy: 260 }, //Kreis Siegen-Wittgenstein
 };
 
-const NRWArnsbergMap = ({ regions, subRegion }) => {
+const NRWArnsbergMap = ({ subRegion, cities, scrollToSubRegion }) => {
     const navigate = useNavigate();
-    const location = useLocation();
     const [hoverRegion, setHoverRegion] = useState(null);
     const [tooltipPos, setTooltipPos] = useState([0, 0]);
-    const { lang } = useSelector((state) => state.language);
 
-    const districtPagePath = "/germany/nrw/arnsberg";
 
     // 1️⃣ Берём субрегионы Köln
-    const kolnSubRegions = useMemo(() => subRegion || [], [subRegion]);
+    const arnsbergSubRegions = useMemo(() => subRegion || [], [subRegion]);
 
     // 2️⃣ Берём города
     const freeCities = useMemo(() => {
         return ["bochum", "dortmund", "hagen", "hamm", "herne"]
-            .map(slug => regions?.cities?.items?.find(city => city.path === slug))
+            .map(slug => cities?.find(city => city.path === slug))
             .filter(Boolean);
-    }, [regions]);
-
-    // Функция клика по субрегиону
-    const scrollToSubRegion = (reg) => {
-        const slug = slugify(reg.path);
-        if (location.pathname.startsWith(districtPagePath)) {
-            document.getElementById(`subregion-${slug}`)?.scrollIntoView({ behavior: "smooth" });
-        } else {
-            navigate(`${districtPagePath}?scrollTo=${encodeURIComponent(slug)}`);
-        }
-    };
+    }, [cities]);
 
     // Функция клика по городу
     const handleCityClick = (city) => {
-        if (city.hasInfo) navigate(`/germany/nrw/city/${city.path}`);
+        if (city.is_active) navigate(`/germany/nrw/city/${city.path}`);
     };
+
+    const getName = (obj) =>
+  obj?.blocks?.find(b => b.block_key === "name")?.content
+  ?? obj?.name
+  ?? obj?.path;
 
     return (
         <div className="koln-map">
             <svg viewBox="0 0 660.479 660.117">
                 <g className="map-shape">
                     {/* 1️⃣ Субрегионы */}
-                    {kolnSubRegions.map((reg) => {
+                    {arnsbergSubRegions.map((reg) => {
                         const loc = districts.find(d => d.name === reg.path);
                         if (!loc) return null;
 
@@ -71,7 +59,7 @@ const NRWArnsbergMap = ({ regions, subRegion }) => {
                                 d={loc.path}
                                 className="interactive"
                                 onClick={() => scrollToSubRegion(reg)}
-                                onMouseEnter={(e) => { setHoverRegion(reg.translations[lang].name); setTooltipPos([e.clientX, e.clientY]); }}
+                                onMouseEnter={(e) => { setHoverRegion(getName(reg)); setTooltipPos([e.clientX, e.clientY]); }}
                                 onMouseMove={(e) => setTooltipPos([e.clientX, e.clientY])}
                                 onMouseLeave={() => setHoverRegion(null)}
                             />
@@ -87,9 +75,9 @@ const NRWArnsbergMap = ({ regions, subRegion }) => {
                             <path
                                 key={loc.id}
                                 d={loc.path}
-                                className={city.hasInfo ? "interactive" : "disabled"}
+                                className={city.is_active ? "interactive" : "disabled"}
                                 onClick={() => handleCityClick(city)}
-                                onMouseEnter={(e) => { setHoverRegion(city.name); setTooltipPos([e.clientX, e.clientY]); }}
+                                onMouseEnter={(e) => { setHoverRegion(getName(city)); setTooltipPos([e.clientX, e.clientY]); }}
                                 onMouseMove={(e) => setTooltipPos([e.clientX, e.clientY])}
                                 onMouseLeave={() => setHoverRegion(null)}
                             />
@@ -97,14 +85,15 @@ const NRWArnsbergMap = ({ regions, subRegion }) => {
                     })}
 
                     {/* 3️⃣ Подписи субрегионов */}
-                    {kolnSubRegions.map((reg) => {
+                    {arnsbergSubRegions.map((reg) => {
                         const loc = districts.find(d => d.name === reg.path);
                         if (!loc) return null;
+                        const name = getName(reg) || "";
 
                         const center = arnsbergDistrictCenters[loc.id] || { x: 0, y: 0, dx: 0, dy: 0 };
                         return (
                             <text
-                                key={`${loc.id}-label`}                                
+                                key={`subregion-${loc.id}-label`}
                                 x={center.x + (center.dx || 0)}
                                 y={center.y + (center.dy || 0)}
                                 textAnchor="middle"
@@ -112,9 +101,9 @@ const NRWArnsbergMap = ({ regions, subRegion }) => {
                                 fill="#000"
                                 pointerEvents="none"
                             >
-                                
-                                {reg.translations[lang].name.includes("-") || reg.translations[lang].name.includes(" ")
-                                    ? reg.translations[lang].name.split("-").map((part, i) => (
+
+                                {name.includes("-") || name.includes(" ")
+                                    ? name.split("-").map((part, i) => (
                                         <tspan
                                             key={i}
                                             x={center.x + (center.dx || 0)}
@@ -125,7 +114,7 @@ const NRWArnsbergMap = ({ regions, subRegion }) => {
                                     ))
                                     : (
                                         <tspan x={center.x + (center.dx || 0)} dy="0">
-                                            {reg.translations[lang].name}
+                                            {name}
                                         </tspan>
                                     )}
                             </text>
@@ -140,7 +129,7 @@ const NRWArnsbergMap = ({ regions, subRegion }) => {
                         const center = arnsbergDistrictCenters[loc.id] || { x: 0, y: 0, dx: 0, dy: 0 };
                         return (
                             <text
-                                key={`${loc.id}-label`}
+                                key={`city-${loc.id}-label`}
                                 x={center.x + (center.dx || 0)}
                                 y={center.y + (center.dy || 0)}
                                 textAnchor="middle"

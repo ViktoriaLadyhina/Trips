@@ -3,7 +3,7 @@ const datas = [
     // Köln-city
     {
         id: "koln_city",
-        path: "koln_city",
+        path: "koln_city", // 76
         countryPath: "germany", regionPath: "nrw", districtPath: "city",
         gerb: "Germany/nrw/koln/koln-city/gerb.png",
         coord: { lat: 50.9333, lng: 6.95 },
@@ -314,7 +314,7 @@ const datas = [
     // Dortmund-city
     {
         id: "dortmund",
-        path: "dortmund",
+        path: "dortmund", // 72
         countryPath: "germany", regionPath: "nrw", districtPath: "city",
         gerb: "Germany/nrw/arnsberg/dortmund/gerb.png",
         coord: { lat: 51.5136, lng: 7.4653 },
@@ -577,7 +577,7 @@ const datas = [
     // Хохзауэрланд
     {
         id: "sundern",
-        path: "sundern",
+        path: "sundern", 
         countryPath: "germany", regionPath: "nrw", districtPath: "arnsberg", subRegionPath: "hochsauerland",
         gerb: "Germany/nrw/arnsberg/Hochsauerlandkreis/sundern/gerb.png",
         coord: { lat: 51.3289, lng: 8.0011 },

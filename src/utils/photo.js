@@ -1,9 +1,13 @@
 const BASE_PHOTO_URL = import.meta.env.VITE_BASE_PHOTO_URL;
 
-export const toFullUrl = (path, baseUrl) => {
+export const toFullUrl = (path) => {
     if (!path) return null;
     if (path.startsWith("http")) return path;
-    return `${baseUrl}/${path}`;
+
+    const base = BASE_PHOTO_URL.replace(/\/$/, ""); // убираем /
+    const cleanPath = path.replace(/^\//, "");      // убираем /
+
+    return `${base}/${cleanPath}`;
 };
 
 export const fixHtmlImages = (html) => {
