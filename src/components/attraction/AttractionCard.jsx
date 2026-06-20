@@ -4,27 +4,29 @@ import { Link, useParams } from 'react-router';
 
 const BASE_PHOTO_URL = import.meta.env.VITE_BASE_PHOTO_URL;
 
-const more = { ru: "Подробнее", ua: "Докладніше", de: "Weitere Details" };
-const location = { ru: "Месторасположение", ua: "Місце розташування", de: "Standort" };
-const ratingLabel = { ru: "Рейтинг", ua: "Рейтинг", de: "Bewertung" };
-const topOptionLabel = { top: { ru: "Топовый", ua: "Топовий", de: "Top" }, popular: { ru: "Популярный", ua: "Популярний", de: "Beliebt" }, local: { ru: "Локальный", ua: "Локальний", de: "Lokal" } };
+const more = { ru: "Подробнее", uk: "Докладніше", de: "Weitere Details" };
+const location = { ru: "Месторасположение", uk: "Місце розташування", de: "Standort" };
+const ratingLabel = { ru: "Рейтинг", uk: "Рейтинг", de: "Bewertung" };
+const topOptionLabel = { top: { ru: "Топовый", uk: "Топовий", de: "Top" }, popular: { ru: "Популярный", uk: "Популярний", de: "Beliebt" }, local: { ru: "Локальный", uk: "Локальний", de: "Lokal" } };
+const noteLabel = { partial: { ru: "Частично сохранилось", uk: "Частково збережено", de: "Teilweise erhalten" }, lost: { ru: "Утрачено", uk: "Втрачено", de: "Verloren" } };
 
 const AttractionCard = ({ attr, lang }) => {
     const params = useParams();
     const countryPath = params.countryPath || attr.countryPath || 'germany';
-    const regionsPath = params.regionsPath || attr.regionsPath;
+    const regionPath = params.regionPath || attr.regionPath;
     const districtPath = params.districtPath || attr.districtPath;
     const cityPath = params.cityPath || attr.cityPath;
+    const status = attr.status ?? 'active';
 
     // Формируем путь корректно
     let detailPath = `/${countryPath}`;
-    if (regionsPath) detailPath += `/${regionsPath}`;
+    if (regionPath) detailPath += `/${regionPath}`;
     if (districtPath) detailPath += `/${districtPath}`;
     if (cityPath) detailPath += `/${cityPath}`;
     detailPath += `/attractions/${attr.path}`;
 
     return (
-        <div className='attrCard'>
+        <div className={`attrCard attrCard--${status}`}>
             <div className='attrCard__title'>{attr.name}</div>
 
             <div className='attrCard__rating'>
@@ -47,6 +49,9 @@ const AttractionCard = ({ attr, lang }) => {
                     {attr.short_description && (
                         <div className='attrCard__desc-info-text'>{attr.short_description}</div>
                     )}
+                    {attr.short_description2 && (
+                        <div className='attrCard__desc-info-text'>{attr.short_description2}</div>
+                    )}
 
                     {attr.short_description_subObjects && (
                         <div className='attrCard__desc-subObjects'>
@@ -61,14 +66,23 @@ const AttractionCard = ({ attr, lang }) => {
                         </div>
                     )}
 
-
+                    {attr.note && (
+                        <span className='attrCard__desc-info-text'>
+                            <strong>{noteLabel[attr.status][lang]}:</strong> {attr.note}
+                    </span>
+                    )}
+                    
                     {attr.unesco_status?.included && (
                         <span className='attrCard__desc-info-text'>
                             🌍UNESCO {attr.unesco_status.year}
                         </span>
                     )}
+
                     {attr.location && (
                         <div className='attrCard__desc-info-text'>{location[lang]}: {attr.location}</div>
+                    )}
+                    {attr.loc && (
+                        <div className='attrCard__desc-info-text'>{location[lang]}: {attr.loc?.city} ({attr.loc?.cityDistrict}), {attr.loc?.country}</div>
                     )}
                     {detailPath && (
                         <div className='attrCard__desc-info-more'>

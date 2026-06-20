@@ -14,7 +14,7 @@ const LangSelector = () => {
     <div className="language-switcher">
       <select value={lang} onChange={handleChange}>
         <option value="ru">RU</option>
-        <option value="ua">UA</option>
+        <option value="uk">UA</option>
         <option value="de">DE</option>
       </select>
     </div>

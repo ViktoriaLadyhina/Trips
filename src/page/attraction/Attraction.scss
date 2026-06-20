@@ -28,6 +28,7 @@
         &-interestingFacts,
         &-officialSite,
         &-tickets_and_entry,
+        &-practical_info,
         &-address,
         &-sub_objects,
         &-theme_zones {
@@ -42,15 +43,26 @@
             }
 
             &-bold {
-                @include bold-text;
+                @include bold-text();
                 display: inline;
                 text-align: justify;
             }
 
             &-text {
-                @include body-text;
+                @include body-text();
                 text-align: justify;
                 display: inline;
+            }
+
+            ul {
+                margin: 0;
+                padding-left: 20px;
+                list-style-type: disc;
+            }
+
+            li {
+                @include body-text();
+                margin-bottom: 3px;
             }
 
         }
@@ -67,7 +79,7 @@
             }
 
             &-bold {
-                @include bold-text;
+                @include bold-text();
                 display: inline;
                 text-align: justify;
             }
@@ -76,7 +88,7 @@
                 display: flex;
                 align-items: flex-start;
                 flex-wrap: wrap;
-                margin-bottom: 20px; 
+                margin-bottom: 20px;
 
                 p {
                     margin: 0;
@@ -103,14 +115,14 @@
                 }
 
                 .attraction__desc-relics-text {
-                    @include body-text;
+                    @include body-text();
                     text-align: justify;
                     padding-left: 0;
                     margin: 0;
                 }
 
                 .attraction__desc-relics-bold {
-                    @include bold-text;
+                    @include bold-text();
                     // display: block; 
                     margin-bottom: 5px;
                 }
@@ -123,17 +135,17 @@
             text-align: left;
 
             &-bold {
-                @include bold-text;
+                @include bold-text();
             }
 
             &-text {
-                @include body-text
+                @include body-text();
             }
         }
     }
 
 
-    &__sub {
+    &-sub {
         @include h3();
         padding: 10px;
         text-align: center;

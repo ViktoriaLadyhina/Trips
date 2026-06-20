@@ -22,12 +22,31 @@ const regionCenters = {
   th: { x: 308, y: 364, dx: 10, dy: 7.5 }
 };
 
-export default function GermanyMap({ regions, countryPath }) {
+const germanySvgMap = {
+    "baden-wuerttemberg": "bw",
+    "bavaria": "by",
+    "berlin": "be",
+    "brandenburg": "bb",
+    "bremen": "hb",
+    "hamburg": "hh",
+    "hessen": "he",
+    "mecklenburg-vorpommern": "mv",
+    "lower-saxony": "ni",
+    "nrw": "nw",
+    "rheinland_pfalz": "rp",
+    "saarland": "sl",
+    "saxony": "sn",
+    "saxony-anhalt": "st",
+    "schleswig-holstein": "sh",
+    "thuringia": "th"
+};
+
+export default function GermanyMap({ regions=[], countryPath }) {
   const navigate = useNavigate();
-  const regionItems = regions?.items || [];
 
   const [hoverRegion, setHoverRegion] = useState(null);
   const [tooltipPos, setTooltipPos] = useState([0, 0]);
+
 
   return (
     <div className="map-container">
@@ -38,7 +57,7 @@ export default function GermanyMap({ regions, countryPath }) {
       >
         <g className="map-shape">
           {germany.locations.map((loc) => {
-            const region = regionItems.find(r => r.svgId.toLowerCase() === loc.id);
+            const region = regions.find(r => germanySvgMap[r.path] === loc.id);
             if (!region) return null;
 
             return (
@@ -59,7 +78,7 @@ export default function GermanyMap({ regions, countryPath }) {
           })}
 
           {germany.locations.map((loc) => {
-            const region = regionItems.find(r => r.svgId.toLowerCase() === loc.id);
+            const region = regions.find(r => germanySvgMap[r.path] === loc.id);
             if (!region) return null;
 
             const center = regionCenters[loc.id] || { x: 0, y: 0, dx: 0, dy: 0 };

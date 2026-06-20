@@ -1,6 +1,7 @@
 import { useForm, useFieldArray } from "react-hook-form";
 import './AttractionForm.scss';
 import { useState } from "react";
+import { pathData } from "./pathData";
 
 const AttractionForm = () => {
   const { register, control, watch, reset, formState: { errors }, trigger } = useForm({
@@ -13,12 +14,29 @@ const AttractionForm = () => {
       region: "",
       district: "",
       city: "",
+      cityDistrict: "",
       foto: "",
-      location: "",
+      coord: {
+        lat: "",
+        lng: ""
+      },
+      loc: {
+        country: "",
+        lang: "",
+        district: "",
+        subRegion: "",
+        city: "",
+      },
       hasOfficialSite: false,
       officialSiteLink: "",
       isUnesco: false,
-      unescoYear: "",
+      unesco: {
+        year: "",
+        type: "",
+        criteria: "",
+        epoch: "",
+        series: ""
+      },
       isChildAttraction: false,
       shortDescriptionSubObjects: { title: "", items: [{ bold: "", text: "" }] },
       showMore: false,
@@ -38,6 +56,7 @@ const AttractionForm = () => {
         description: "",
         ogTitle: "",
         ogDescription: "",
+        keywords: "",
         ogImage: ""
       }
     }
@@ -45,6 +64,8 @@ const AttractionForm = () => {
 
   const [showSecondDescription, setShowSecondDescription] = useState(false);
   const [copied, setCopied] = useState(false);
+  const isUnesco = watch("isUnesco");
+
 
   const watchedFields = watch();
 
@@ -69,117 +90,149 @@ const AttractionForm = () => {
     watchedFields.short_description?.trim() &&
     isFullDescriptionEmpty;
 
+  // функция для построения объекта loc в зависимости от выбранных патчей
+  const buildLoc = (pathData, loc) => {
+    return {
+      country: pathData[loc.country]?.label || "",
+      region: pathData[loc.country]?.regions?.[loc.region]?.label || "",
+      district:
+        pathData[loc.country]?.regions?.[loc.region]?.districts?.[loc.district]?.label || "",
+      city:
+        pathData[loc.country]
+          ?.regions?.[loc.region]
+          ?.districts?.[loc.district]
+          ?.cities?.[loc.city] || ""
+    };
+  };
+
   const previewObject = {
     id: watchedFields.id,
-    name: watchedFields.name,
     type: [watchedFields.type],
     rating: watchedFields.rating,
     path: watchedFields.id,
     countryPath: watchedFields.country,
-    regionsPath: watchedFields.region,
+    regionPath: watchedFields.region,
     districtPath: watchedFields.district,
     cityPath: watchedFields.city,
-    ...(watchedFields.isChildAttraction === "true" && { hiddenFromList: true }), 
+    ...(watchedFields.isChildAttraction === "true" && { hiddenFromList: true }),
     ...(watchedFields.showMore === "true" && { showMore: true }),
     fotoCard: watchedFields.foto,
-    ...(watchedFields.location.length > 0 && { location: watchedFields.location }),
-    ...(watchedFields.hasOfficialSite && watchedFields.officialSiteLink && {
-      officialSite: [
-        { bold: "Официальный сайт", link: watchedFields.officialSiteLink }]
-    }),
-    ...(watchedFields.isUnesco && watchedFields.unescoYear && {
-      unesco_status: {
-        included: true,
-        year: Number(watchedFields.unescoYear)
-      }
-    }),
-    ...(watchedFields.subObjectsInputs?.filter(o => o.value?.trim()).length > 0 && {
-      subObjects: watchedFields.subObjectsInputs
-        .filter(o => o.value?.trim())
-        .map(o => o.value)
-    }),
-...(watchedFields.shortDescriptionSubObjects?.items?.some(item => item.bold?.trim() || item.text?.trim()) && {
-  short_description_subObjects: {
-    text: watchedFields.shortDescriptionSubObjects.title?.trim() || "",
-    items: watchedFields.shortDescriptionSubObjects.items
-      .filter(item => item.bold?.trim() || item.text?.trim())
-      .map(item => ({
-        bold: item.bold?.trim() || "",
-        text: item.text?.trim() || ""
-      }))
-  }
-}),
-    short_description: watchedFields.short_description,
-    ...(watchedFields.short_description2.length > 0 && { short_description2: watchedFields.short_description2 }),
-    full_description: {
-      title: "Описание и история",
-      items: shouldAutoFillDescription
-        ? [
-          {
-            text: watchedFields.short_description
-          }
-        ]
-        : watchedFields.full_description
-          .filter(item => item.bold?.trim() || item.text?.trim())
-          .map(item => ({
-            ...(item.bold?.trim() && { bold: item.bold }),
-            ...(item.text?.trim() && { text: item.text })
-          }))
+    coord: {
+      lat: Number(watchedFields.coord?.lat),
+      lng: Number(watchedFields.coord?.lng)
     },
-    ...(watchedFields.ticketItems?.some(item => item.bold.trim() || item.text.trim()) && {
-      tickets_and_entry: {
-        title: "Практическая информация",
-        items: watchedFields.ticketItems
-          ?.filter(item => item.bold.trim() || item.text.trim())
-          .map(item => ({
-            ...(item.bold.trim() && { bold: item.bold }),
-            ...(item.text.trim() && { text: item.text })
-          }))
+
+    translations: {
+      ru: {
+        name: watchedFields.name,
+        loc: {
+          ...buildLoc(pathData, watchedFields),
+          cityDistrict: watchedFields.cityDistrict || ""
+        },
+        ...(watchedFields.hasOfficialSite && watchedFields.officialSiteLink && {
+          officialSite: [{ bold: "Официальный сайт", link: watchedFields.officialSiteLink }]
+        }),
+        ...(watchedFields.isUnesco && watchedFields.unesco?.year && {
+          unesco_status: {
+            included: true,
+            year: Number(watchedFields.unesco.year),
+            type: watchedFields.unesco.type,
+            criteria: watchedFields.unesco.criteria,
+            epoch: watchedFields.unesco.epoch,
+            series: watchedFields.unesco.series
+          }
+        }),
+        ...(watchedFields.subObjectsInputs?.filter(o => o.value?.trim()).length > 0 && {
+          subObjects: watchedFields.subObjectsInputs
+            .filter(o => o.value?.trim())
+            .map(o => o.value)
+        }),
+        ...(watchedFields.shortDescriptionSubObjects?.items?.some(item => item.bold?.trim() || item.text?.trim()) && {
+          short_description_subObjects: {
+            text: watchedFields.shortDescriptionSubObjects.title?.trim() || "",
+            items: watchedFields.shortDescriptionSubObjects.items
+              .filter(item => item.bold?.trim() || item.text?.trim())
+              .map(item => ({
+                bold: item.bold?.trim() || "",
+                text: item.text?.trim() || ""
+              }))
+          }
+        }),
+        short_description: watchedFields.short_description,
+        ...(watchedFields.short_description2.length > 0 && { short_description2: watchedFields.short_description2 }),
+        full_description: {
+          title: "Описание и история",
+          items: shouldAutoFillDescription
+            ? [
+              {
+                text: watchedFields.short_description
+              }
+            ]
+            : watchedFields.full_description
+              .filter(item => item.bold?.trim() || item.text?.trim())
+              .map(item => ({
+                ...(item.bold?.trim() && { bold: item.bold }),
+                ...(item.text?.trim() && { text: item.text })
+              }))
+        },
+        ...(watchedFields.ticketItems?.some(item => item.bold.trim() || item.text.trim()) && {
+          practical_info: {
+            title: "Практическая информация",
+            items: watchedFields.ticketItems
+              ?.filter(item => item.bold.trim() || item.text.trim())
+              .map(item => ({
+                ...(item.bold.trim() && { bold: item.bold }),
+                ...(item.text.trim() && { text: item.text })
+              }))
+          }
+        }),
+        ...(watchedFields.relics?.some(item => item.bold.trim() || item.text.trim()) && {
+          relics: {
+            title: "Реликвии и ценности",
+            items: watchedFields.relics
+              ?.filter(item => item.bold.trim() || item.text.trim())
+              .map(item => ({
+                ...(item.bold.trim() && { bold: item.bold }),
+                ...(item.text.trim() && { text: item.text })
+              }))
+          }
+        }),
+        ...(watchedFields.subObjectsTitle.title.length > 0 && {
+          sub_objects: {
+            title: watchedFields.subObjectsTitle.title || "Экспозиции",
+            items: watchedFields.subObjectsTitle.items
+              .filter(item => item?.bold?.trim() || item?.text?.trim())
+              .map(item => ({
+                ...(item.bold.trim() && { bold: item.bold }),
+                ...(item.text.trim() && { text: item.text })
+              }))
+          }
+        }),
+        ...(watchedFields.interestingFacts?.some(item => item.bold.trim() || item.text.trim()) && {
+          interestingFacts: {
+            title: "Интересные факты",
+            isList: true,
+            items: watchedFields.interestingFacts
+              .filter(item => item?.bold?.trim() || item?.text?.trim())
+              .map(item => ({
+                ...(item?.bold?.trim() && { bold: item.bold }),
+                ...(item?.text?.trim() && { text: item.text })
+              }))
+          }
+        }),
+        ...(watchedFields.constructionPeriod.length > 0 && { construction_period: watchedFields.constructionPeriod }),
+        ...(watchedFields.architects.length > 0 && { architects: watchedFields.architects }),
+        ...(watchedFields.founder.length > 0 && { founder: watchedFields.founder }),
+        meta: {
+          title: watchedFields.meta.title,
+          description: watchedFields.meta.description,
+          ogTitle: watchedFields.meta.ogTitle,
+          ogDescription: watchedFields.meta.ogDescription,
+          keywords: watchedFields.meta.keywords,
+          ogImage: watchedFields.meta.ogImage,
+        }
       }
-    }),
-    ...(watchedFields.relics?.some(item => item.bold.trim() || item.text.trim()) && {
-      relics: {
-        title: "Реликвии и ценности",
-        items: watchedFields.relics
-          ?.filter(item => item.bold.trim() || item.text.trim())
-          .map(item => ({
-            ...(item.bold.trim() && { bold: item.bold }),
-            ...(item.text.trim() && { text: item.text })
-          }))
-      }
-    }),
-    ...(watchedFields.subObjectsTitle.title.length > 0 && {
-      sub_objects: {
-        title: watchedFields.subObjectsTitle.title || "Экспозиции",
-        items: watchedFields.subObjectsTitle.items
-          .filter(item => item?.bold?.trim() || item?.text?.trim())
-          .map(item => ({
-            ...(item.bold.trim() && { bold: item.bold }),
-            ...(item.text.trim() && { text: item.text })
-          }))
-      }
-    }),
-    ...(watchedFields.interestingFacts?.some(item => item.bold.trim() || item.text.trim()) && {
-      interestingFacts: {
-        title: "Интересные факты",
-        items: watchedFields.interestingFacts
-          .filter(item => item?.bold?.trim() || item?.text?.trim())
-          .map(item => ({
-            ...(item?.bold?.trim() && { bold: item.bold }),
-            ...(item?.text?.trim() && { text: item.text })
-          }))
-      }
-    }),
-    ...(watchedFields.constructionPeriod.length > 0 && { construction_period: watchedFields.constructionPeriod }),
-    ...(watchedFields.architects.length > 0 && { architects: watchedFields.architects }),
-    ...(watchedFields.founder.length > 0 && { founder: watchedFields.founder }),
-    meta: {
-      title: watchedFields.meta.title,
-      description: watchedFields.meta.description,
-      ogTitle: watchedFields.meta.ogTitle,
-      ogDescription: watchedFields.meta.ogDescription,
-      ogImage: watchedFields.meta.ogImage,
-    }
+    },
   };
 
   const clearAll = () => {
@@ -229,45 +282,45 @@ const AttractionForm = () => {
 
 
   // Правильный вывод объекта
-const toJsModuleString = (obj, indent = 0) => {
-  const space = "  ".repeat(indent);
+  const toJsModuleString = (obj, indent = 0) => {
+    const space = "  ".repeat(indent);
 
-  if (Array.isArray(obj)) {
-    // Если все элементы строки
-    if (obj.every(v => typeof v === "string")) {
-      return `[${obj.map(v => `"${v}"`).join(", ")}]`;
+    if (Array.isArray(obj)) {
+      // Если все элементы строки
+      if (obj.every(v => typeof v === "string")) {
+        return `[${obj.map(v => `"${v}"`).join(", ")}]`;
+      }
+
+      const arrayItems = obj.map(item => {
+        // Если элемент — "простой объект", вывести в одну строку
+        if (
+          typeof item === "object" &&
+          item !== null &&
+          Object.values(item).every(v => typeof v === "string" || typeof v === "number")
+        ) {
+          const inner = Object.entries(item)
+            .map(([k, v]) => `${k}: "${v}"`)
+            .join(", ");
+          return `${space}  { ${inner} }`;
+        }
+        return `${space}  ${toJsModuleString(item, indent + 1)}`;
+      });
+
+      return `[\n${arrayItems.join(",\n")}\n${space}]`;
     }
 
-    const arrayItems = obj.map(item => {
-      // Если элемент — "простой объект", вывести в одну строку
-      if (
-        typeof item === "object" &&
-        item !== null &&
-        Object.values(item).every(v => typeof v === "string" || typeof v === "number")
-      ) {
-        const inner = Object.entries(item)
-          .map(([k, v]) => `${k}: "${v}"`)
-          .join(", ");
-        return `${space}  { ${inner} }`;
-      }
-      return `${space}  ${toJsModuleString(item, indent + 1)}`;
-    });
+    if (typeof obj === "object" && obj !== null) {
+      const entries = Object.entries(obj)
+        .filter(([, value]) => value !== undefined && value !== null)
+        .map(([key, value]) => {
+          if (typeof value === "string") return `${key}: "${value}"`;
+          return `${key}: ${toJsModuleString(value, indent + 1)}`;
+        });
+      return `{\n${space}  ${entries.join(`,\n${space}  `)}\n${space}}`;
+    }
 
-    return `[\n${arrayItems.join(",\n")}\n${space}]`;
-  }
-
-  if (typeof obj === "object" && obj !== null) {
-    const entries = Object.entries(obj)
-      .filter(([, value]) => value !== undefined && value !== null)
-      .map(([key, value]) => {
-        if (typeof value === "string") return `${key}: "${value}"`;
-        return `${key}: ${toJsModuleString(value, indent + 1)}`;
-      });
-    return `{\n${space}  ${entries.join(`,\n${space}  `)}\n${space}}`;
-  }
-
-  return obj;
-};
+    return obj;
+  };
 
 
 
@@ -303,11 +356,13 @@ const toJsModuleString = (obj, indent = 0) => {
           <option value="nature">Природа</option>
           <option value="monument_or_fountain">Памятники и фонтаны</option>
           <option value="square">Площади</option>
+          <option value="landmark">Знаковые места</option>
+          <option value="viewpoint">Смотровые площадки</option>
         </select>
         <p className='note'>Если ничего не подходит, а надо, то добавляем в файл src/components/AttractionsFilters (в объекте attractionTypes). И не забываем обновить форму</p>
       </div>
 
-            {/* // -------------- Рейтинг */}
+      {/* // -------------- Рейтинг */}
       <div className="type">
         <label><span className="required">*</span>Рейтинг</label>
         <select {...register("rating", { required: "Выберите рейтинг" })}>
@@ -324,92 +379,90 @@ const toJsModuleString = (obj, indent = 0) => {
       <div className='path'>
         <h3><span className="required">*</span>Патчи</h3>
 
-        <div className="country">
-          <label>Страна</label>
-          <select {...register("country", { required: "Выберите страну" })}>
-            <option value="">Выберите страну</option>
-            <option value="germany">Германия</option>
-            <option value="ukraine">Украина</option>
-          </select>
-          <p className='note'>Если добавляем новую страну, то вставляем объект с новой страной в src/datas/языки/Country.js. Потом обновляем src/datas/языки/index.js и форму. Так же нужно внести добавления в src/datas/fotos/index.js (чтобы работала фотогалерея)</p>
-        </div>
+        <select {...register("country", { required: "Выберите страну" })}>
+          <option value="">Выберите страну</option>
+          {Object.entries(pathData).map(([key, value]) => (
+            <option key={key} value={key}>
+              {value.label}
+            </option>
+          ))}
+        </select>
 
-        <div className="region">
-          <label>Область/Земля</label>
-          <select {...register("region", { required: "Выберите землю/область" })} disabled={!watchedFields.country}>
-            <option value="">Выберите землю/область</option>
-            {watchedFields.country === "germany" && (
-              <>
-                <option value="nrw">Северный Рейн-Вестфалия</option>
-                <option value="rheinland-pfalz">Рейнланд-Пфальц</option>
-              </>
-            )}
-            {watchedFields.country === "ukraine" && (
-              <>
-                <option value="sumska">Сумская область</option>
-              </>
-            )}
-          </select>
-          <p className='note'>Если добавляем новую область/землю, то создаем новый файл в src/datas/языки/страна(например ukraine)/название (например kievska).js. Потом обновляем src/datas/языки/index.js и форму</p>
-        </div>
+        <select
+          {...register("region", { required: "Выберите область/землю" })}
+          disabled={!watchedFields.country}
+        >
+          <option value="">Выберите землю/область</option>
 
-        <div className="district">
-          <label>Район/Край</label>
-          <select {...register("district", { required: "Выберите район/край" })} disabled={!watchedFields.region}>
-            <option value="">Выберите район/край</option>
-            {watchedFields.country === "germany" && watchedFields.region === "nrw" && (
-              <>
-                <option value="arnsberg">Арнсберг</option>
-                <option value="koln">Кельн</option>
-                <option value="city">Город обласного значения</option>
-              </>
+          {watchedFields.country &&
+            Object.entries(pathData[watchedFields.country]?.regions || {}).map(
+              ([key, value]) => (
+                <option key={key} value={key}>
+                  {value.label}
+                </option>
+              )
             )}
-            {watchedFields.country === "germany" && watchedFields.region === "rheinland-pfalz" && (
-              <>
-                <option value="mayen-koblenz">Майен‑Кобленц</option>
-                <option value="city">Город обласного значения</option>
-              </>
-            )}
-            {watchedFields.country === "ukraine" && watchedFields.region === "sumska" && (
-              <>
-                <option value="city">Город обласного значения</option>
-              </>
-            )}
-          </select>
-          <p className='note'>Если добавляем новый район/край, то добавляем объект в файл в src/datas/языки/страна(например germany)/регион(область/земля)(например bavarska).js. Потом обновляем src/datas/языки/index.js и форму</p>
-        </div>
+        </select>
 
-        <div className="city">
-          <label>Город</label>
-          <select {...register("city", { required: "Выберите город" })} disabled={!watchedFields.district}>
-            <option value="">Выберите город</option>
-            {watchedFields.country === "germany" && watchedFields.district === "arnsberg" && (
-              <>
-                <option value="luedenscheid">Люденшайд</option>
-                <option value="altena">Альтена</option>
-              </>
-            )}
-            {watchedFields.country === "germany" && watchedFields.district === "koln" && (
-              <>
-                <option value="monschau">Моншау</option>
-                <option value="bruhl">Брюль</option>
-                <option value="frechen">Фрехен</option>
-                <option value="konigswinter">Кёнигсвинтер</option>
-              </>
-            )}
-            {watchedFields.country === "germany" && watchedFields.district === "city" && (
-              <>
-                <option value="koln">Кельн</option>
-                <option value="trier">Трир</option>
-              </>
-            )}
-            {watchedFields.country === "ukraine" && watchedFields.district === "city" && (
-              <>
-                <option value="sumy">Сумы</option>
-              </>
-            )}
-          </select>
-          <p className='note'>Если добавляем новый город, то добавляем объект в файл в src/datas/языки/страна(например germany)/регион(область/земля)-city.js (например bavarska-city.js). Потом обновляем src/datas/языки/index.js и форму</p>
+        <select
+          {...register("district", { required: "Выберите район/край" })}
+          disabled={!watchedFields.region}
+        >
+          <option value="">Выберите район/край</option>
+
+          {watchedFields.country &&
+            watchedFields.region &&
+            Object.entries(
+              pathData[watchedFields.country]?.regions?.[watchedFields.region]?.districts || {}
+            ).map(([key, value]) => (
+              <option key={key} value={key}>
+                {value.label}
+              </option>
+            ))}
+        </select>
+
+        <select
+          {...register("city", { required: "Выберите город" })}
+          disabled={!watchedFields.district}
+        >
+          <option value="">Выберите город</option>
+
+          {watchedFields.country &&
+            watchedFields.region &&
+            watchedFields.district &&
+            Object.entries(
+              pathData[watchedFields.country]
+                ?.regions?.[watchedFields.region]
+                ?.districts?.[watchedFields.district]
+                ?.cities || {}
+            ).map(([key, label]) => (
+              <option key={key} value={key}>
+                {label}
+              </option>
+            ))}
+        </select>
+      </div>
+
+      {/* // -------------- Местоположение */}
+      <div className="field">
+        <label>Район города</label>
+        <input type="text" placeholder="Например: район Altstadt-Nord (округ Innenstadt)" {...register("cityDistrict")} />
+      </div>
+
+      {/* // -------------- Координаты */}
+      <div className="coord">
+        <h3>Координаты</h3>
+
+        <div className="coord__row">
+          <div className="field">
+            <label>Широта (lat)</label>
+            <input type="number" step="any" placeholder="50.93845" {...register("coord.lat", { valueAsNumber: true })} />
+          </div>
+
+          <div className="field">
+            <label>Долгота (lng)</label>
+            <input type="number" step="any" placeholder="6.96260" {...register("coord.lng", { valueAsNumber: true })} />
+          </div>
         </div>
       </div>
 
@@ -424,22 +477,22 @@ const toJsModuleString = (obj, indent = 0) => {
       </div>
 
       {/* // -------------- Перечень дочерних достопримечательностей */}
-<div className='description'>
-  <label><span className="note">Заполняем только, если есть вложенные достопримечательности.</span>Перечень дочерних достопримечательностей</label>
-  {sabDickripInputFields.map((item, i) => (
-    <div key={item.id} className='subobject-item'>
-      {i === 0 && (
-        <textarea className='description-textarea' {...register(`shortDescriptionSubObjects.title`)} rows={2} placeholder="Пример: В старом городе Люденшайда расположены такие достопримечательности:" />
-      )}
-      <input type="text" {...register(`shortDescriptionSubObjects.items.${i}.bold`)} placeholder="Название достопримечательности, например: Церковь Спасителя" />
-      <input type="text" {...register(`shortDescriptionSubObjects.items.${i}.text`)} placeholder="Краткое описание достопримечательности" />
-    </div>
-  ))}
+      <div className='description'>
+        <label><span className="note">Заполняем только, если есть вложенные достопримечательности.</span>Перечень дочерних достопримечательностей</label>
+        {sabDickripInputFields.map((item, i) => (
+          <div key={item.id} className='subobject-item'>
+            {i === 0 && (
+              <textarea className='description-textarea' {...register(`shortDescriptionSubObjects.title`)} rows={2} placeholder="Пример: В старом городе Люденшайда расположены такие достопримечательности:" />
+            )}
+            <input type="text" {...register(`shortDescriptionSubObjects.items.${i}.bold`)} placeholder="Название достопримечательности, например: Церковь Спасителя" />
+            <input type="text" {...register(`shortDescriptionSubObjects.items.${i}.text`)} placeholder="Краткое описание достопримечательности" />
+          </div>
+        ))}
 
-  <button type="button" onClick={() => append_sabDiscripInput({ bold: "", text: "" })}>
-    Добавить достопримечательность
-  </button>
-</div>
+        <button type="button" onClick={() => append_sabDiscripInput({ bold: "", text: "" })}>
+          Добавить достопримечательность
+        </button>
+      </div>
 
       {/* // -------------- Является ли эта достопримечательность дочерней? */}
       <div className='unesco'>
@@ -462,17 +515,11 @@ const toJsModuleString = (obj, indent = 0) => {
         </div>
       )}
 
-            {/* // -------------- Фото  */}
+      {/* // -------------- Фото  */}
       <div className='foto'>
         <label><span className="required">*</span>Фотография</label>
         <input type="text" {...register("foto", { required: "Поле Фотография обязательно" })} placeholder="Путь к фото в формате Country/region/city/attraction/001.jpg" />
         <p className='note'>Если нужно добавить фото в фотогелерею, то работаем в файле src/datas/fotos/страна(de.js или ua.js). Указать патч города, потом патч дост-ти</p>
-      </div>
-
-      {/* // -------------- Местонахождение  */}
-      <div className='foto'>
-        <label>Местонахождение</label>
-        <input type="text" {...register("location")} placeholder="Пример: Кёльн, Германия" />
       </div>
 
       {/* // -------------- Официальный сайт */}
@@ -482,13 +529,21 @@ const toJsModuleString = (obj, indent = 0) => {
       </div>
 
       {/* // -------------- ЮНЕСКО  */}
-      <div className='unesco'>
-        <label>Входит ли эта достопримечательность в список ЮНЕСКО?</label>
-        <div>
-          <label><input type="checkbox" {...register("isUnesco")} />Объект входит в список ЮНЕСКО</label>
-          <label><input type="Number" {...register("unescoYear")} /></label>
+      <label>
+        <input type="checkbox" {...register("isUnesco")} />
+        Объект входит в список ЮНЕСКО
+      </label>
+
+      {isUnesco && (
+        <div className="unesco-fields">
+          <label><input type="number" {...register("unesco.year")} placeholder="Год" /></label>
+
+          <label><input type="text" {...register("unesco.type")} placeholder="Тип" /></label>
+          <label><input type="text" {...register("unesco.criteria")} placeholder="Критерии" /></label>
+          <label><input type="text" {...register("unesco.epoch")} placeholder="Эпоха" /></label>
+          <label><input type="text" {...register("unesco.series")} placeholder="Серия" /></label>
         </div>
-      </div>
+      )}
 
       {/* // -------------- Короткое описание */}
       <div className='short_description'>
@@ -625,6 +680,10 @@ const toJsModuleString = (obj, indent = 0) => {
         <textarea type="text" {...register("meta.ogDescription", { required: "Поле Мета-описание для соцсетей обязательно" })} className='meta-textarea' />
       </div>
       <div className='meta'>
+        <label><span className="required">*</span>Ключевые слова</label>
+        <textarea type="text" {...register("meta.keywords", { required: "Поле Мета-ключевые слова обязательно" })} className='meta-textarea' />
+      </div>
+      <div className='meta'>
         <label><span className="required">*</span>Мета-фото для соцсетей</label>
         <input type="text" {...register("meta.ogImage", { required: "Поле Мета-фото для соцсетей обязательно" })} placeholder="Полный путь к фото - https://our-travels.info/new/foto/Germany/nrw/koln/Rhein-Erft-Kreis/frechen/burg-bachem/Burg-Bachem_3.jpg" />
       </div>
@@ -633,7 +692,7 @@ const toJsModuleString = (obj, indent = 0) => {
       {/* // -------------- Предпросмотр и кнопки */}
       <div className='prev'>
         <h4>Предпросмотр:</h4>
-        <pre>{toJsModuleString(previewObject)+","}</pre>
+        <pre>{toJsModuleString(previewObject) + ","}</pre>
       </div>
 
       <div className='clear-copy'>

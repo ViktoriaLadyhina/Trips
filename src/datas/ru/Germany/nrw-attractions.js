@@ -6,22 +6,19 @@ const datas = [
         name: "Старый город Кёльна",
         type: ["historical_area"], rating: "top",
         path: "altstadt_koln",
-        countryPath: "germany", regionsPath: "nrw", districtPath: "city", cityPath: "koln",
+        countryPath: "germany", regionPath: "nrw", districtPath: "city", cityPath: "koln_city",
         fotoCard: "Germany/nrw/koln/koln-city/altstadt/005.jpg",
         location: "Кёльн, Германия",
-        subObjects: ["cologne_cathedral", "rathaus_koln", "guerzenich_koln", "miqua", "wallraf_richartz_museum", "roemisch_germanisches_museum", "farina_duftmuseum", "museum_ludwig", "stadtmuseum_koln", "dufthaus_4711_koln", "st_maria_himmelfahrt_koln", "romanische_kirchen_altstadt_koln", "old_towers_koln"],
+        subObjects: ["cologne_cathedral", "rathaus_koln", "guerzenich_koln", "miqua", "wallraf_richartz_museum", "roemisch_germanisches_museum", "farina_duftmuseum", "museum_ludwig", "stadtmuseum_koln", "dufthaus_4711_koln", "st_maria_himmelfahrt_koln", "old_towers_koln", "fischmarkt_koln", "gross_st_martin_koln", "st_maria_im_kapitol_koln", "st_kunibert_koln"],
         short_description_subObjects: {
             text: "В старом городе Кельна расположены такие достопримечательности:",
             items: [
-                { bold: "Кёльнский собор", text: "– величественный готический собор, сердце Старого города, на площади у главного вокзала." },
-                {
-                    bold: "Романские церкви Старого города Кёльна:",
-                    text: `<ul>
-                            <li><b>Большой Святой Мартин</b> – одна из самых узнаваемых романских церквей Кёльна с массивной башней-триконхой, возвышающейся над набережной Рейна. Символ силуэта Старого города.</li>
-                            <li><b>Церковь Святой Марии в Капитолии</b> – крупнейшая романская церковь Кёльна, построенная на месте древнеримского храма. Выдающийся пример романской архитектуры с триконховым планом и исторической криптой, сохраняющей следы античного прошлого.</li>
-                        </ul>`
-                },
+                { bold: "🌍Кёльнский собор", text: "– величественный готический собор, сердце Старого города, на площади у главного вокзала." },
+                { bold: "Фишмаркт", text: "– яркая историческая площадь Старого города Кёльна с разноцветными домами и атмосферой средневекового рыбного рынка." },
+                { bold: "Большой Святой Мартин", text: "– одна из самых узнаваемых романских церквей Кёльна с массивной башней-триконхой, возвышающейся над набережной Рейна. Символ силуэта Старого города." },
+                { bold: "Церковь Святой Марии в Капитолии", text: "– крупнейшая романская церковь Кёльна, построенная на месте древнеримского храма. Выдающийся пример романской архитектуры с триконховым планом и исторической криптой, сохраняющей следы античного прошлого." },
                 { bold: "Церковь Успения Пресвятой Девы Марии (St. Mariä Himmelfahrt)", text: "– главная барочная церковь Кёльна XVII века, бывшая иезуитская святыня рядом с центральным вокзалом и Кёльнским собором." },
+                { bold: "Базилика Святого Куниберта в Кёльне", text: "– романская церковь с массивными башнями, строгими формами и спокойной атмосферой, расположенная в северной части старого города у Рейна." },
                 { bold: "Гюрцених", text: "– исторический гильдейский дом и зал рядом с Кёльнским собором." },
                 { bold: "Дом одеколона 4711", text: "– историческое здание в пешеходной зоне вокруг Hohe Straße и Schildergasse." },
                 { bold: "Кёльнская ратуша", text: "– историческая городская ратуша в центре Старого города." },
@@ -58,22 +55,26 @@ const datas = [
             description: "Откройте для себя Старый город Кёльна: узкие улочки, готические соборы, исторические площади, музеи и набережную Рейна. Полезный гид для прогулок и планирования визита.",
             ogTitle: "Старый город Кёльна – сердце истории и культуры города",
             ogDescription: "Прогуляйтесь по Старому городу Кёльна: исторические здания, музеи, площади, пивные и живописная набережная Рейна. Идеальное место для туристов и любителей истории.",
+            keywords: "Старый город Кёльн, Кёльн, исторический центр, архитектура Кёльна, туристические маршруты, достопримечательности Кёльна, средневековая архитектура, прогулка по городу, культурное наследие, музеи Кёльна, старинные здания, площадь, башни, туризм Германия",
             ogImage: "https://our-travels.info/foto/Germany/nrw/koln/koln-city/altstadt/005.jpg"
         }
     },
     {
         id: "cologne_cathedral",
         name: "Кёльнский собор",
-        type: ["cathedral"], rating: "top",
-        path: "cologne-cathedral",
-        countryPath: "germany", regionsPath: "nrw", districtPath: "city", cityPath: "koln",
+        type: ["cathedral", "landmark"], rating: "top",
+        path: "cologne_cathedral",
+        countryPath: "germany", regionPath: "nrw", districtPath: "city", cityPath: "koln_city",
         showMore: true, hiddenFromList: true,
         fotoCard: "Germany/nrw/koln/koln-city/koln-cathedral/001.jpg",
-        location: "Кёльн, Германия",
-        address: [{ bold: "Адрес:", text: " Domkloster 4, 50667 Köln, Deutschland" }],
-        officialSite: [
-            { bold: 'Официальный сайт Кёльнского собора', link: 'https://www.koelner-dom.de/' }
-        ],
+        loc: {
+            country: "Германия",
+            region: "Северный Рейн-Вестфалия",
+            district: "Город областного значения",
+            city: "Кёльн",
+            cityDistrict: "район Altstadt-Nord (округ Innenstadt)"
+        },
+        officialSite: [{ bold: 'Официальный сайт Кёльнского собора', link: 'https://www.koelner-dom.de/' }],
         unesco_status: {
             included: true,
             year: 1996,
@@ -99,6 +100,13 @@ const datas = [
                 { bold: "<br>Архитектура: музыка камня.", text: "Кёльнский собор – это гимн готике. Его пропорции идеальны, его вертикали стремительны, а каждая деталь служит одной цели – устремить взгляд вверх." },
                 { text: "Две башни высотой около <b>157,4 метра</b> венчают фасад, образуя силуэт, узнаваемый во всём мире. После завершения в 1880 году собор считался самым высоким зданием в мире; этот титул он удерживал до 1884 года, когда был достроен Вашингтонский монумент. Сегодня Кёльнский собор остаётся <b>высочайшим двухшпильным храмом</b> в мире и одним из самых впечатляющих готических сооружений Европы – лишь Ульмский собор, достигающий 161,5 метра, выше него." },
                 { text: "Интерьер поражает лёгкостью – кажется, будто камень утратил тяжесть, растворился в свете витражей. Пространство главного нефа пронзает поток золотого сияния, а витражи XIV-XIX веков рассказывают о вере, времени и человеческом мастерстве." },
+            ]
+        },
+        tickets_and_entry: {
+            title: "Практическая информация",
+            items: [
+                { bold: "Адрес:", text: "Domkloster 4, 50667 Köln, Deutschland" },
+                { bold: "Конфессия:", text: "римско-католическая церковь" },
             ]
         },
         relics: {
@@ -134,6 +142,7 @@ const datas = [
             description: "Кёльнский собор – символ города и шедевр готической архитектуры. История строительства, реликвии, витражи, колокола и тайны собора.",
             ogTitle: "Кёльнский собор: история, архитектура и реликвии",
             ogDescription: "Погрузитесь в историю Кёльнского собора – величие, реликвии, архитектура и интриги готического шедевра.",
+            keywords: "Кёльнский собор, Кёльн, готическая архитектура, исторический центр, туристические маршруты, достопримечательности Германии, христианская архитектура, религиозные памятники, башни, культовое сооружение, памятник культуры, туризм, экскурсии, собор",
             ogImage: "https://our-travels.info/foto/Germany/nrw/koln/koln-city/koln-cathedral/001.jpg"
         }
     },
@@ -142,10 +151,10 @@ const datas = [
         name: "Кёльнская ратуша",
         type: ['historical_building'], rating: "popular",
         path: "rathaus_koln",
-        countryPath: "germany", regionsPath: "nrw", districtPath: "city", cityPath: "koln",
+        countryPath: "germany", regionPath: "nrw", districtPath: "city", cityPath: "koln_city",
         showMore: true, hiddenFromList: true,
         fotoCard: "Germany/nrw/koln/koln-city/rathaus-koeln/Rathaus-Köln.jpg",
-        location: "Кёльн, Германия",
+        location: "Кёльн, район Altstadt-Nord (округ Innenstadt), Германия",
         address: [{ bold: "Адрес Кёльнской ратуши:", text: " Rathausplatz 2, 50667 Köln, Deutschland " },],
         officialSite: [
             { bold: "Официальный сайт", link: "https://www.stadt-koeln.de/", text: ' города Кёльна (ратуша)' },
@@ -192,24 +201,26 @@ const datas = [
             description: "Кёльнская ратуша: готическая башня, ренессансная лоджия ",
             ogTitle: "Кёльнская ратуша: готическая башня, ренессансная лоджия",
             ogDescription: "Кёльнская ратуша – старейшее административное здание Германии, сочетающее готическую башню, ренессансную лоджию и исторический зал Ганзы.",
+            keywords: "Кёльнская ратуша, Кёльн, исторический центр, средневековая архитектура, городская архитектура, административное здание, башни, достопримечательности Кёльна, городской совет, туристические маршруты, культурное наследие, туризм Германия",
             ogImage: "https://our-travels.info/foto/Germany/nrw/koln/koln-city/rathaus-koeln/Rathaus-Köln.jpg"
         }
     },
     {
         id: "romanische_kirchen_altstadt_koln",
-        name: "Романские церкви Старого города Кёльна",
+        name: "Романские церкви Кёльна",
         type: ["cathedral"], rating: "popular",
         path: "romanische_kirchen_altstadt_koln",
-        countryPath: "germany", regionsPath: "nrw", districtPath: "city", cityPath: "koln",
-        subObjects: ["gross_st_martin_koln", "st_maria_im_kapitol_koln"],
+        mapOpen: "romanische_kirchen_altstadt_koln",
+        countryPath: "germany", regionPath: "nrw", districtPath: "city", cityPath: "koln_city",
+        subObjects: ["gross_st_martin_koln", "st_maria_im_kapitol_koln", "st_gereon_koln", "st_kunibert_koln", "st_aposteln_koln"],
         short_description_subObjects: {
             text: "На нашем сайте из этого списка описаны церкви:",
             items: [
                 { bold: "Большой Святой Мартин", text: "– одна из самых узнаваемых романских церквей Кёльна с массивной башней-триконхой, возвышающейся над набережной Рейна. Символ силуэта Старого города." },
                 { bold: "Церковь Святой Марии в Капитолии", text: "– крупнейшая романская церковь Кёльна, построенная на месте древнеримского храма. Выдающийся пример романской архитектуры с триконховым планом и исторической криптой, сохраняющей следы античного прошлого." },
-                // St. Gereon
-                // St. Kunibert
-                // St. Aposteln
+                { bold: "Церковь Святого Гереона", text: "– романская церковь с двенадцатигранным куполом, старинными витражами и богатым историческим интерьером." },
+                { bold: "Базилика Святого Куниберта", text: "– романская церковь с массивными башнями, строгими формами и спокойной атмосферой, расположенная в северной части старого города у Рейна." },
+                { bold: "Базилика Святого Апостола", text: "– одна из 12 романских церквей Кёльна, известная своим трёхапсидным хором, средневековой архитектурой и расположением возле Neumarkt в центре города." },
                 // St. Severin
                 // St. Pantaleon
                 // St. Andreas
@@ -219,7 +230,6 @@ const datas = [
                 // St. Ursula           
             ]
         },
-        hiddenFromList: true, showMore: true,
         fotoCard: "Germany/nrw/koln/koln-city/altstadt/romanische_kirchen/001.jpg",
         location: "Кёльн, Германия",
         officialSite: [{ bold: "Официальный сайт", link: "https://romanische-kirchen-koeln.de/" }],
@@ -237,6 +247,7 @@ const datas = [
             description: "Список крупнейших романских церквей Кёльна, расположенных в Старом городе. Архитектура, исторические факты и культурное наследие города.",
             ogTitle: "Романские церкви Старого города Кёльна",
             ogDescription: "Познакомьтесь с 12 крупнейшими романскими церквями Кёльна, их архитектурой, историей и реликвиями XI-XIII веков.",
+            keywords: "романские церкви, Кёльн, старый город, религиозная архитектура, средневековые церкви, архитектура Германии, исторические храмы, культурное наследие, базилики, монастыри, достопримечательности Кёльна, туризм Германия, церковная архитектура",
             ogImage: "https://our-travels.info/foto/Germany/nrw/koln/koln-city/altstadt/romanische_kirchen/001.jpg"
         }
     },
@@ -245,10 +256,11 @@ const datas = [
         name: "Большой Святой Мартин",
         type: ["cathedral"], rating: "popular",
         path: "gross_st_martin_koln",
-        countryPath: "germany", regionsPath: "nrw", districtPath: "city", cityPath: "koln",
+        map: "romanische_kirchen_altstadt_koln",
+        countryPath: "germany", regionPath: "nrw", districtPath: "city", cityPath: "koln_city",
         hiddenFromList: true, showMore: true,
         fotoCard: "Germany/nrw/koln/koln-city/altstadt/romanische_kirchen/gross_st_martin/001.jpg",
-        location: "Кёльн, Германия",
+        location: "Кёльн, район Altstadt-Nord (округ Innenstadt), Германия",
         officialSite: [
             { bold: "Официальный сайт", link: "https://www.romanische-kirchen-koeln.de/willkommen/willkommen" }
         ],
@@ -262,6 +274,13 @@ const datas = [
                 { text: "Архитектурно храм представляет собой типичный пример рейнской романики с триконхой – редкой планировкой, при которой три полукруглые апсиды образуют клеверообразную форму восточной части здания. Центральная башня возвышается над перекрестием нефов и служит ориентиром для горожан и путешественников уже много столетий." },
                 { text: "Во время Второй мировой войны церковь была почти полностью разрушена бомбардировками. От здания остались лишь части стен и оснований. Долгое время руины стояли законсервированными как напоминание о войне, и только во второй половине XX века началась масштабная реставрация. Полное восстановление завершилось к 1980-м годам с максимальным сохранением исторических форм." },
                 { text: "Сегодня церковь снова действует как приходской храм и одновременно является важным историческим памятником. Она входит в число двенадцати больших романских церквей Кёльна и считается одной из ключевых точек туристического маршрута по старому городу, соединяя в себе духовное значение, архитектурную ценность и многовековую историю города." }
+            ]
+        },
+        tickets_and_entry: {
+            title: "Практическая информация",
+            items: [
+                { bold: "Адрес:", text: "An Groß St. Martin 9–11, 50667 Köln, Германия" },
+                { bold: "Конфессия:", text: "римско-католическая церковь" },
             ]
         },
         interestingFacts: {
@@ -281,6 +300,7 @@ const datas = [
             description: "Большой Святой Мартин – романская церковь в Старом городе Кёльна у Рейна. История, архитектура, факты и информация для посещения.",
             ogTitle: "Большой Святой Мартин – символ романского Кёльна",
             ogDescription: "Узнайте историю одной из самых узнаваемых церквей Кёльна с мощной башней и средневековым прошлым.",
+            keywords: "церковь, романская архитектура, Кёльн, старый город, религиозная архитектура, историческое здание, достопримечательности Германии, башня, монастырь, средневековье, архитектура, туризм, панорама города",
             ogImage: "https://our-travels.info/foto/Germany/nrw/koln/koln-city/altstadt/romanische_kirchen/gross_st_martin/001.jpg"
         }
     },
@@ -289,10 +309,11 @@ const datas = [
         name: "Церковь Святой Марии в Капитолии",
         type: ["cathedral"], rating: "popular",
         path: "st_maria_im_kapitol_koln",
-        countryPath: "germany", regionsPath: "nrw", districtPath: "city", cityPath: "koln",
+        countryPath: "germany", regionPath: "nrw", districtPath: "city", cityPath: "koln_city",
         hiddenFromList: true, showMore: true,
+        map: "romanische_kirchen_altstadt_koln",
         fotoCard: "Germany/nrw/koln/koln-city/altstadt/romanische_kirchen/stMariaImKapitol/001.jpg",
-        location: "Кёльн, Германия",
+        location: "Кёльн, район Altstadt-Süd (округ Innenstadt), Германия",
         short_description: "Церковь Святой Марии в Капитолии (St. Maria im Kapitol) – крупнейшая романская церковь Кёльна и одна из двенадцати знаменитых романских церквей города. Она была построена в XI веке на месте древнеримского храма, посвящённого Капитолийской триаде богов – Юпитеру, Юноне и Минерве. Сегодня храм считается одним из важнейших памятников средневековой архитектуры Рейнской области. ",
         full_description: {
             title: "Описание и история",
@@ -312,6 +333,7 @@ const datas = [
             title: "Практическая информация",
             items: [
                 { bold: "Адрес: ", text: "Kasinostraße 6, 50676 Köln, Старый город" },
+                { bold: "Конфессия:", text: "римско-католическая церковь" },
                 { bold: "Вход: ", text: "Бесплатный" },
                 { bold: "Часы работы: ", text: "Открыта для посещения ежедневно с 9:00 до 18:00 (может меняться в дни богослужений)" },
                 { bold: "Доступность: ", text: "Частично доступна для маломобильных посетителей. Крипта имеет ступени" },
@@ -342,10 +364,11 @@ const datas = [
         founder: "Аббатиса Ида (Ida von Köln). Также традиционно упоминается Плектруда как основатель более ранней церкви.",
         coord: { lat: 50.9346, lng: 6.9585 },
         meta: {
-            title: "St. Maria im Kapitol в Кёльне – крупнейшая романская церковь",
+            title: "Церковь Святой Марии в Капитолии (St. Maria im Kapitol) в Кёльне – крупнейшая романская церковь",
             description: "St. Maria im Kapitol – крупнейшая романская церковь Кёльна, построенная в XI веке на месте римского храма. История, архитектура и средневековые реликвии.",
             ogTitle: "Церковь Святой Марии в Капитолии – Старый город Кёльн",
-            ogDescription: "St. Maria im Kapitol – одна из древнейших и значимых церквей Кёльна, построена на месте римского храма, известна своими резными дверями XI века и просторной криптой.",
+            ogDescription: "Церковь Святой Марии в Капитолии – одна из древнейших и значимых церквей Кёльна, построена на месте римского храма, известна своими резными дверями XI века и просторной криптой.",
+            keywords: "церковь, романская архитектура, Кёльн, старый город, религиозная архитектура, историческое здание, средневековье, монастырь, базилика, триконха, архитектура, достопримечательности Германии, туризм, древний храм",
             ogImage: "https://our-travels.info/foto/Germany/nrw/koln/koln-city/altstadt/romanische_kirchen/stMariaImKapitol/001.jpg"
         }
     },
@@ -354,10 +377,10 @@ const datas = [
         name: "Церковь Успения Пресвятой Девы Марии",
         type: ["cathedral"], rating: "popular",
         path: "st_maria_himmelfahrt_koln",
-        countryPath: "germany", regionsPath: "nrw", districtPath: "city", cityPath: "koln",
+        countryPath: "germany", regionPath: "nrw", districtPath: "city", cityPath: "koln_city",
         hiddenFromList: true, showMore: true,
-        fotoCard: "Germany/nrw/koln/koln-city/st_maria_himmelfahrt/001.jpg",
-        location: "Кёльн, Германия",
+        fotoCard: "Germany/nrw/koln/koln-city/altstadt/st_maria_himmelfahrt/001.jpg",
+        location: "Кёльн, район Altstadt-Süd (округ Innenstadt), Германия",
         short_description: "Санкт-Мария Химмельфарт (St. Mariä Himmelfahrt) – это выдающаяся католическая церковь Успения Пресвятой Девы Марии в старом городе Кёльна. Построенная в стиле барокко как иезуитская церковь, она долгое время была второй по величине после Кёльнского собора и остаётся одним из немногих сохранившихся барочных памятников города.",
         full_description: {
             title: "Описание и история",
@@ -373,7 +396,8 @@ const datas = [
         tickets_and_entry: {
             title: "Практическая информация",
             items: [
-                { bold: "Адрес:", text: "Marzellenstraße 30, 50668 Köln, Северный Рейн‑Вестфалия, Германия." }
+                { bold: "Адрес:", text: "Marzellenstraße 30, 50668 Köln, Северный Рейн‑Вестфалия, Германия." },
+                { bold: "Конфессия:", text: "римско-католическая церковь" },
             ]
         },
         interestingFacts: {
@@ -392,7 +416,8 @@ const datas = [
             description: "Историческая барочная церковь Санкт-Мария Химмельфарт (St. Mariä Himmelfahrt) в центре Кёльна – бывшая иезуитская церковь XVII века с богатой архитектурой, восстановленная после войны. Узнайте историю, архитектуру и интересные факты.",
             ogTitle: "Санкт-Мария Химмельфарт (St. Mariä Himmelfahrt) – историческая барочная церковь Кёльна",
             ogDescription: "Погрузитесь в атмосферу барочной архитектуры в сердце Кёльна! Санкт-Мария Химмельфарт (St. Mariä Himmelfahrt) – главное религиозное сооружение старого города с богатой историей и впечатляющим интерьером.",
-            ogImage: "https://our-travels.info/foto/Germany/nrw/koln/koln-city/st_maria_himmelfahrt/001.jpg"
+            keywords: "Церковь Успения Пресвятой Девы Марии, Кёльн, готическая архитектура, исторический центр, религиозная архитектура, достопримечательности Кёльна, средневековая церковь, монастырь, культовое сооружение, туризм Германия, экскурсии, старинные здания",
+            ogImage: "https://our-travels.info/foto/Germany/nrw/koln/koln-city/altstadt/st_maria_himmelfahrt/001.jpg"
         }
     },
     {
@@ -400,10 +425,10 @@ const datas = [
         name: "Гюрцених – исторический концертный зал и гильдейский дом в Кёльне",
         type: ["historical_building"], rating: "popular",
         path: "guerzenich_koln",
-        countryPath: "germany", regionsPath: "nrw", districtPath: "city", cityPath: "koln",
+        countryPath: "germany", regionPath: "nrw", districtPath: "city", cityPath: "koln_city",
         showMore: true, hiddenFromList: true,
-        fotoCard: "Germany/nrw/koln/koln-city/guerzenich_koln/001.jpg",
-        location: "Кёльн, Германия",
+        fotoCard: "Germany/nrw/koln/koln-city/altstadt/guerzenich_koln/001.jpg",
+        location: "Кёльн, район Altstadt-Nord (округ Innenstadt), Германия",
         officialSite: [
             { bold: "Официальный сайт", link: "https://koelncongress.de/locations/guerzenich-koeln/" }
         ],
@@ -453,18 +478,19 @@ const datas = [
             description: "Гюрцених в Кёльне – построенное в 1441-1452 гг. здание для городских празднеств. Сегодня здесь проходят концерты, банкетные мероприятия и официальные приёмы.",
             ogTitle: "Гюрцених, Кёльн – историческое здание и центр мероприятий",
             ogDescription: "Откройте Гюрцених в Кёльне – историческое здание XV века, восстановленное после войны, где проходят концерты, карнавальные сессии и банкетные приёмы.",
-            ogImage: "https://our-travels.info/foto/Germany/nrw/koln/koln-city/guerzenich_koln/001.jpg"
+            keywords: "Гюрцених, Кёльн, исторический концертный зал, гильдейский дом, культурное наследие, историческое здание, архитектура Кёльна, музыкальные события, концерты, средневековое здание, достопримечательности Кёльна, туризм Германия, старинные здания, мероприятия",
+            ogImage: "https://our-travels.info/foto/Germany/nrw/koln/koln-city/altstadt/guerzenich_koln/001.jpg"
         }
     },
     {
         id: "roemisch_germanisches_museum",
         name: "Римско-германский музей",
         type: ["museum"], rating: "popular",
-        path: "roemisch-germanisches-museum",
-        countryPath: "germany", regionsPath: "nrw", districtPath: "city", cityPath: "koln",
+        path: "roemisch_germanisches_museum",
+        countryPath: "germany", regionPath: "nrw", districtPath: "city", cityPath: "koln_city",
         showMore: true, hiddenFromList: true,
         fotoCard: "Germany/nrw/koln/koln-city/roemisch-germanisches-museum/001.jpg",
-        location: "Кёльн, Германия",
+        location: "Кёльн, район Altstadt-Nord (округ Innenstadt), Германия",
         officialSite: [
             { bold: "Официальный сайт Римско-германского музея", link: "https://museenkoeln.de/portal/Roemisch-Germanisches-Museum" }
         ],
@@ -508,6 +534,7 @@ const datas = [
             description: "Римско-германский музей — уникальный археологический музей Кёльна, построенный над древнеримской виллой. Мозаика Диониса, стекло, украшения и история города Колония.",
             ogTitle: "Римско-германский музей Кёльна — история и мозаика Диониса",
             ogDescription: "Музей античной Колонии: мозаика Диониса, римское стекло и археология Кёльна. Узнайте, как античность сохранилась под современным городом.",
+            keywords: "Римско-германский музей, Кёльн, достопримечательность, археология, римская история, античность, исторические экспонаты, музей Кёльна, культурное наследие, средневековая археология, древние находки, коллекции, туризм Германия, исторические артефакты, экскурсии",
             ogImage: "https://our-travels.info/foto/Germany/nrw/koln/koln-city/roemisch-germanisches-museum/001.jpg"
         }
     },
@@ -515,16 +542,16 @@ const datas = [
         id: "farina_duftmuseum",
         name: "Музей духов в доме Фарина",
         type: ["museum"], rating: "popular",
-        path: "farina-duftmuseum",
-        countryPath: "germany", regionsPath: "nrw", districtPath: "city", cityPath: "koln",
+        path: "farina_duftmuseum",
+        countryPath: "germany", regionPath: "nrw", districtPath: "city", cityPath: "koln_city",
         showMore: true, hiddenFromList: true,
         fotoCard: "Germany/nrw/koln/koln-city/farina-duftmuseum/001.jpg",
-        location: "Кёльн, Германия",
+        location: "Кёльн, район Altstadt-Nord (округ Innenstadt), Германия",
         officialSite: [
             { bold: "Официальный сайт музея Фарина", link: "https://farina.org/de/duftmuseum/" }
         ],
         construction_period: "1709 (год основания фабрики Фарина)",
-        founder: " Иоганн Мария Фарина (Johann Maria Farina)",
+        founder: "Иоганн Мария Фарина (Johann Maria Farina)",
         short_description: "Музей духов в доме Фарина, известный также как «Дом одеколона», – старейший музей ароматов в мире и родина знаменитого Eau de Cologne, или «кёльнской воды». Именно здесь в 1709 году Иоганн Мария Фарина создал первый одеколон, который стал символом города и прославил Кёльн на весь мир.",
         full_description: {
             title: "Описание и история",
@@ -561,6 +588,7 @@ const datas = [
             description: "Музей духов в доме Фарина, известный также как Дом одеколона, – старейший музей ароматов в Кёльне и родина знаменитого Eau de Cologne. Именно здесь в 1709 году Иоганн Мария Фарина создал первый одеколон.",
             ogTitle: "Дом Фарина в Кёльне – Дом одеколона и музей Eau de Cologne",
             ogDescription: "Посетите Музей духов в доме Фарина, также известный как Дом одеколона – родину легендарного Eau de Cologne. История, ароматы и трёхвековая традиция создания кёльнской воды.",
+            keywords: "Музей духов Фарина, Кёльн, достопримечательность, парфюмерия, исторический музей, история духов, музей Кёльна, культурное наследие, ароматы, выставка, коллекции, туризм Германия, экскурсии, старинные здания",
             ogImage: "https://our-travels.info/foto/Germany/nrw/koln/koln-city/farina-duftmuseum/001.jpg"
         }
     },
@@ -568,11 +596,11 @@ const datas = [
         id: "museum_ludwig",
         name: "Музей Людвига",
         type: ["museum"], rating: "popular",
-        path: "museum-ludwig",
-        countryPath: "germany", regionsPath: "nrw", districtPath: "city", cityPath: "koln",
+        path: "museum_ludwig",
+        countryPath: "germany", regionPath: "nrw", districtPath: "city", cityPath: "koln_city",
         showMore: true, hiddenFromList: true,
         fotoCard: "Germany/nrw/koln/koln-city/museum-ludwig/001.jpg",
-        location: "Кёльн, Германия",
+        location: "Кёльн, район Altstadt-Nord (округ Innenstadt), Германия",
         officialSite: [
             { bold: "Официальный сайт музея Людвига", link: "https://www.museum-ludwig.de" }
         ],
@@ -613,10 +641,11 @@ const datas = [
         },
         coord: { lat: 50.940951, lng: 6.960385 },
         meta: {
-            "title": "Музей Людвига — Современное искусство в Кёльне",
-            "description": "Музей Людвига в Кёльне — одно из ведущих мировых собраний современного искусства, основанное на коллекции немецкого промышленника Петера Людвига и его супруги Ирэны.",
-            "ogTitle": "Музей Людвига — Современное искусство в Кёльне",
-            "ogDescription": "Музей Людвига в Кёльне — одно из ведущих мировых собраний современного искусства, основанное на коллекции немецкого промышленника Петера Людвига и его супруги Ирэны.",
+            "title": "Музей Людвига – Современное искусство в Кёльне",
+            "description": "Музей Людвига в Кёльне – одно из ведущих мировых собраний современного искусства, основанное на коллекции немецкого промышленника Петера Людвига и его супруги Ирэны.",
+            "ogTitle": "Музей Людвига – Современное искусство в Кёльне",
+            "ogDescription": "Музей Людвига в Кёльне – одно из ведущих мировых собраний современного искусства, основанное на коллекции немецкого промышленника Петера Людвига и его супруги Ирэны.",
+            keywords: "Музей Людвига, Кёльн, достопримечательность, современное искусство, музей Кёльна, коллекции искусства, культурное наследие, выставки, поп-арт, живопись, скульптура, туризм Германия, экскурсии, исторические здания",
             "ogImage": "https://our-travels.info/foto/Germany/nrw/koln/koln-city/museum-ludwig/001.jpg"
         }
     },
@@ -625,9 +654,9 @@ const datas = [
         name: "Музей шоколада",
         type: ["museum"], rating: "popular",
         path: "schokoladenmuseum",
-        countryPath: "germany", regionsPath: "nrw", districtPath: "city", cityPath: "koln",
+        countryPath: "germany", regionPath: "nrw", districtPath: "city", cityPath: "koln_city",
         fotoCard: "Germany/nrw/koln/koln-city/schokoladenmuseum/001.jpg",
-        location: "Кёльн, Германия",
+        location: "Кёльн, район Altstadt-Süd (округ Innenstadt), Германия",
         officialSite: [
             {
                 "bold": "Официальный сайт Музея шоколада в Кёльне",
@@ -672,6 +701,7 @@ const datas = [
             description: "Музей шоколада – уникальный музей в Кёльне, который показывает путь какао от тропической плантации до плитки шоколада. Посетите стеклянную фабрику, фонтан из 200 кг шоколада и окунитесь в историю сладкого удовольствия.",
             ogTitle: "Schokoladenmuseum Köln – музей шоколада в Кёльне",
             ogDescription: "Погрузитесь в сладкий мир какао и шоколада в Кёльне: от древних цивилизаций до современной фабрики и шоколадного фонтана.",
+            keywords: "Музей шоколада, Кёльн, достопримечательность, шоколад, кондитерское искусство, музей Кёльна, выставки, производство шоколада, культурное наследие, дегустации, туризм Германия, экскурсии, исторические здания",
             ogImage: "https://our-travels.info/foto/Germany/nrw/koln/koln-city/schokoladenmuseum/001.jpg"
         }
     },
@@ -680,10 +710,10 @@ const datas = [
         name: "Музей в археологическом квартале Кёльна – MiQua",
         type: ["museum"], rating: "popular",
         path: "miqua",
-        countryPath: "germany", regionsPath: "nrw", districtPath: "city", cityPath: "koln",
+        countryPath: "germany", regionPath: "nrw", districtPath: "city", cityPath: "koln_city",
         showMore: true, hiddenFromList: true,
         fotoCard: "Germany/nrw/koln/koln-city/miqua/001.jpg",
-        location: "Кёльн, Германия",
+        location: "Кёльн, район Altstadt-Nord (округ Innenstadt), Германия",
         officialSite: [
             {
                 "bold": "Официальный сайт Музея в археологическом квартале Кёльна – MiQua",
@@ -747,6 +777,7 @@ const datas = [
             description: "MiQua – подземный музей в центре Кёльна, показывающий римские, еврейские и средневековые археологические слои города.",
             ogTitle: "MiQua – Музей в археологическом квартале Кёльна",
             ogDescription: "Подземный музей MiQua позволяет пройти сквозь 2000 лет истории Кёльна, включая Praetorium, Mikwe и средневековые постройки.",
+            keywords: "Музей в археологическом квартале Кёльна, MiQua, Кёльн, достопримечательность, археология, римская история, музей Кёльна, исторические находки, культурное наследие, выставки, экскурсии, древние артефакты, туризм Германия, средневековая археология",
             ogImage: "https://our-travels.info/foto/Germany/nrw/koln/koln-city/miqua/001.jpg"
         }
     },
@@ -755,10 +786,10 @@ const datas = [
         name: "Музей Вальрафа-Рихарца",
         type: ["museum"], rating: "popular",
         path: "wallraf_richartz_museum",
-        countryPath: "germany", regionsPath: "nrw", districtPath: "city", cityPath: "koln",
+        countryPath: "germany", regionPath: "nrw", districtPath: "city", cityPath: "koln_city",
         showMore: true, hiddenFromList: true,
         fotoCard: "Germany/nrw/koln/koln-city/wallraf_richartz_museum/001.jpg",
-        location: "Кёльн, Германия",
+        location: "Кёльн, район Altstadt-Süd (округ Innenstadt), Германия",
         officialSite: [
             { bold: "Официальный сайт музея", link: "http://www.wallraf.museum/en" }
         ],
@@ -803,10 +834,11 @@ const datas = [
         },
         coord: { lat: 50.93729, lng: 6.95837 },
         meta: {
-            "title": "Музей Вальрафа-Рихарца — Искусство от Средневековья до Импрессионизма",
-            "description": "Музей Вальрафа-Рихарца в Кёльне — старейший музей города с коллекциями живописи, скульптуры и графики от Средневековья до начала XX века, включая фонд Fondation Corboud с импрессионистами.",
-            "ogTitle": "Музей Вальрафа-Рихарца — Искусство от Средневековья до Импрессионизма",
+            "title": "Музей Вальрафа-Рихарца – Искусство от Средневековья до Импрессионизма",
+            "description": "Музей Вальрафа-Рихарца в Кёльне – старейший музей города с коллекциями живописи, скульптуры и графики от Средневековья до начала XX века, включая фонд Fondation Corboud с импрессионистами.",
+            "ogTitle": "Музей Вальрафа-Рихарца – Искусство от Средневековья до Импрессионизма",
             "ogDescription": "Откройте для себя музей Вальрафа-Рихарца в Кёльне: средневековое и барочное искусство, а также коллекция импрессионистов Fondation Corboud.",
+            keywords: "Музей Вальрафа-Рихарца, Кёльн, достопримечательность, искусство, музей Кёльна, живопись, скульптура, коллекции искусства, культурное наследие, выставки, средневековое искусство, туризм Германия, экскурсии, исторические здания",
             "ogImage": "https://our-travels.info/foto/Germany/nrw/koln/koln-city/wallraf_richartz_museum/001.jpg"
         }
     },
@@ -815,9 +847,9 @@ const datas = [
         name: "Музей восточно‑азиатского искусства",
         type: ["museum"], rating: "popular",
         path: "ostasiatische_kunst_koln",
-        countryPath: "germany", regionsPath: "nrw", districtPath: "city", cityPath: "koln",
+        countryPath: "germany", regionPath: "nrw", districtPath: "city", cityPath: "koln_city",
         fotoCard: "Germany/nrw/koln/koln-city/ostasiatische_kunst_koln/001.jpg",
-        location: "Кёльн, Германия",
+        location: "Кёльн, район Lindenthal (округ Lindenthal), Германия",
         officialSite: [
             { bold: "Официальный сайт", link: "https://museum-fuer-ostasiatische-kunst.de/Information_e?utm_source=chatgpt.com" }
         ],
@@ -862,6 +894,7 @@ const datas = [
             description: "Откройте для себя искусство Китая, Кореи и Японии в Кёльне: буддийская живопись, деревянные скульптуры, японские ширмы и традиционный японский сад.",
             ogTitle: "Музей восточно-азиатского искусства (Кёльн)",
             ogDescription: "Посетите музей в Кёльне с уникальной коллекцией восточно-азиатского искусства: живопись, скульптуры, японские ширмы и красивый японский сад.",
+            keywords: "Музей восточно-азиатского искусства, Кёльн, достопримечательность, восточно-азиатское искусство, музей Кёльна, культура Азии, выставки, коллекции искусства, культурное наследие, скульптура, живопись, туризм Германия, экскурсии, исторические здания",
             ogImage: "https://our-travels.info/foto/Germany/nrw/koln/koln-city/ostasiatische_kunst_koln/001.jpg"
         }
     },
@@ -870,9 +903,9 @@ const datas = [
         name: "Музей Шнютгена",
         type: ["museum", 'cathedral'], rating: "popular",
         path: "museum_schnuetgen_koln",
-        countryPath: "germany", regionsPath: "nrw", districtPath: "city", cityPath: "koln",
+        countryPath: "germany", regionPath: "nrw", districtPath: "city", cityPath: "koln_city",
         fotoCard: "Germany/nrw/koln/koln-city/schnuetgen/001.jpg",
-        location: "Кёльн, Германия",
+        location: "Кёльн, район Neustadt-Süd (округ Innenstadt), Германия",
         officialSite: [
             { bold: "Официальный сайт", link: "https://museum-schnuetgen.de/" }
         ],
@@ -921,10 +954,11 @@ const datas = [
         founder: "Александр Шнютген – католический теолог и коллекционер, собиравший произведения христианского искусства по всей Европе. Именно его частная коллекция стала основой музея",
         coord: { lat: 50.93472, lng: 6.95144 },
         meta: {
-            title: "Музей Шнютгена в Кёльне — средневековое искусство",
+            title: "Музей Шнютгена в Кёльне – средневековое искусство",
             description: "Музей Шнютгена в Кёльне – уникальный музей средневекового искусства в здании романской церкви XII века. Скульптуры, реликварии, витражи и церковные сокровища.",
-            ogTitle: "Музей Шнютгена — средневековое искусство в древней церкви",
+            ogTitle: "Музей Шнютгена – средневековое искусство в древней церкви",
             ogDescription: "Посетите музей Шнютгена – один из самых атмосферных музеев Кёльна, расположенный в романской церкви XII века с коллекцией редкого средневекового искусства.",
+            keywords: "Музей Шнютгена, Кёльн, достопримечательность, средневековое искусство, музей Кёльна, коллекции искусства, культурное наследие, скульптура, реликвии, выставки, туризм Германия, экскурсии, исторические здания",
             ogImage: "https://our-travels.info/foto/Germany/nrw/koln/koln-city/schnuetgen/001.jpg"
         }
     },
@@ -933,9 +967,9 @@ const datas = [
         name: "Музей Раутенштраух-Йост",
         type: ["museum"], rating: "popular",
         path: "rautenstrauch_joest_museum_koln",
-        countryPath: "germany", regionsPath: "nrw", districtPath: "city", cityPath: "koln",
+        countryPath: "germany", regionPath: "nrw", districtPath: "city", cityPath: "koln_city",
         fotoCard: "Germany/nrw/koln/koln-city/rautenstrauch_joest_museum/001.jpg",
-        location: "Кёльн, Германия",
+        location: "Кёльн, район Neustadt-Süd (округ Innenstadt), Германия",
         officialSite: [
             { bold: "Официальный сайт", link: "https://www.rautenstrauch-joest-museum.de/Startseite" }
         ],
@@ -985,6 +1019,7 @@ const datas = [
             description: "Музей Раутенштрауха-Йост в Кёльне – один из крупнейших этнографических музеев Германии. Экспозиции культур мира, коллекции, история, часы работы и цены.",
             ogTitle: "Музей Раутенштрауха-Йост – культуры мира в центре Кёльна",
             ogDescription: "Современный этнографический музей с уникальными коллекциями народов мира, интерактивными экспозициями и временными выставками в Кёльне.",
+            keywords: "Музей Раутенштраух-Йост, Кёльн, достопримечательность, этнография, культура мира, музей Кёльна, коллекции искусства, выставки, культурное наследие, туризм Германия, экскурсии, исторические здания, народное искусство",
             ogImage: "https://our-travels.info/foto/Germany/nrw/koln/koln-city/rautenstrauch_joest_museum/001.jpg"
         }
     },
@@ -993,10 +1028,10 @@ const datas = [
         name: "Дом одеколона 4711",
         type: ["museum"], rating: "popular",
         path: "dufthaus_4711_koln",
-        countryPath: "germany", regionsPath: "nrw", districtPath: "city", cityPath: "koln",
+        countryPath: "germany", regionPath: "nrw", districtPath: "city", cityPath: "koln_city",
         showMore: true, hiddenFromList: true,
         fotoCard: "Germany/nrw/koln/koln-city/dufthaus_4711/001.jpg",
-        location: "Кёльн, Германия",
+        location: "Кёльн, район Altstadt-Nord (округ Innenstadt), Германия",
         officialSite: [
             { bold: "Официальный сайт", link: "https://4711.com/" }
         ],
@@ -1047,6 +1082,7 @@ const datas = [
             description: "Посетите исторический Дом одеколона 4711 в центре Кёльна: фирменный магазин, экспозиция о знаменитом Eau de Cologne, экскурсии и мастер-классы по ароматам.",
             ogTitle: "Дом одеколона 4711 – легенда Кёльна и оригинальный парфюм",
             ogDescription: "Откройте для себя Дом одеколона 4711: историческое здание, магазин бренда, экспозиция и экскурсии о знаменитом кёльнском одеколоне. Идеально для туристов и любителей ароматов.",
+            keywords: "Дом одеколона 4711, Кёльн, достопримечательность, одеколон, парфюмерия, музей Кёльна, история парфюмерии, культурное наследие, выставки, дегустации, туризм Германия, экскурсии, исторические здания",
             ogImage: "https://our-travels.info/foto/Germany/nrw/koln/koln-city/dufthaus_4711/001.jpg"
         }
     },
@@ -1055,9 +1091,9 @@ const datas = [
         name: "Музей прикладного искусства",
         type: ["museum"], rating: "popular",
         path: "makk_museum_koln",
-        countryPath: "germany", regionsPath: "nrw", districtPath: "city", cityPath: "koln",
+        countryPath: "germany", regionPath: "nrw", districtPath: "city", cityPath: "koln_city",
         fotoCard: "Germany/nrw/koln/koln-city/makk_museum/001.JPG",
-        location: "Кёльн, Германия",
+        location: "Кёльн, район Altstadt-Nord (округ Innenstadt), Германия",
         officialSite: [
             { bold: "Официальный сайт", link: "https://makk.de/" }
         ],
@@ -1105,6 +1141,7 @@ const datas = [
             description: "Музей прикладного искусства в Кёльне: мебель, текстиль, украшения и дизайн от Средневековья до современности. Адрес, часы работы, билеты, выставки.",
             ogTitle: "Музей прикладного искусства (Кёльн) – коллекции и выставки",
             ogDescription: "Посетите музей прикладного искусства в Кёльне и познакомьтесь с уникальными предметами дизайна и ремёсел разных эпох. Полезная информация для посетителей.",
+            keywords: "Музей прикладного искусства, Кёльн, достопримечательность, декоративно-прикладное искусство, музей Кёльна, дизайн, керамика, текстиль, выставки, культурное наследие, туризм Германия, экскурсии, исторические здания",
             ogImage: "https://our-travels.info/foto/Germany/nrw/koln/koln-city/makk_museum/001.JPG"
         }
     },
@@ -1113,10 +1150,10 @@ const datas = [
         name: "Кельнский городской музей",
         type: ["museum"], rating: "popular",
         path: "stadtmuseum_koln",
-        countryPath: "germany", regionsPath: "nrw", districtPath: "city", cityPath: "koln",
+        countryPath: "germany", regionPath: "nrw", districtPath: "city", cityPath: "koln_city",
         showMore: true, hiddenFromList: true,
         fotoCard: "Germany/nrw/koln/koln-city/stadtmuseum/001.jpg",
-        location: "Кёльн, Германия",
+        location: "Кёльн, район Altstadt-Nord (округ Innenstadt), Германия",
         officialSite: [
             { bold: "Официальный сайт", link: "https://www.koelnisches-stadtmuseum.de" }
         ],
@@ -1163,6 +1200,7 @@ const datas = [
             description: "Посетите Кёльнский городской музей в Кёльне – современный городской музей с богатой постоянной и временной экспозицией, раскрывающей культуру, общество и традиции Кёльна. Адрес, билеты, часы работы.",
             ogTitle: "Кёльнский городской музей – История Кёльна",
             ogDescription: "Узнайте историю Кёльна через уникальные объекты, интерактивные экспозиции и современные выставки Кёльнском городском музее. ",
+            keywords: "Кельнский городской музей, Кёльн, достопримечательность, история города, музей Кёльна, экспозиции, культурное наследие, городская жизнь, выставки, туризм Германия, экскурсии, исторические здания, археология",
             ogImage: "https://our-travels.info/foto/Germany/nrw/koln/koln-city/stadtmuseum/001.jpg"
         }
     },
@@ -1171,9 +1209,9 @@ const datas = [
         name: "Немецкий музей спорта и Олимпийских игр",
         type: ["museum"], rating: "popular",
         path: "sport_olympia_museum_koln",
-        countryPath: "germany", regionsPath: "nrw", districtPath: "city", cityPath: "koln",
+        countryPath: "germany", regionPath: "nrw", districtPath: "city", cityPath: "koln_city",
         fotoCard: "Germany/nrw/koln/koln-city/sport_olympia_museum/001.jpg",
-        location: "Кёльн, Германия",
+        location: "Кёльн, район Altstadt-Süd (округ Innenstadt), Германия",
         officialSite: [
             { bold: "Официальный сайт", link: "https://sportmuseum.de/" }
         ],
@@ -1221,6 +1259,7 @@ const datas = [
             description: "Узнайте 2 500 лет истории спорта и олимпийского движения в музее в Кёльне: экспонаты, интерактивные экспозиции, площадки на крыше и специальные выставки.",
             ogTitle: "Немецкий музей спорта и Олимпийских игр – Музей спорта в Кёльне",
             ogDescription: "Погрузитесь в историю спорта от античности до современности: более 2 000 экспонатов, олимпийские медали, интерактивные зоны и уникальные спортивные площадки на крыше.",
+            keywords: "Немецкий музей спорта и Олимпийских игр, Кёльн, достопримечательность, спорт, Олимпийские игры, музей Кёльна, спортивная история, экспозиции, культурное наследие, выставки, туризм Германия, экскурсии, исторические здания",
             ogImage: "https://our-travels.info/foto/Germany/nrw/koln/koln-city/sport_olympia_museum/001.jpg"
         }
     },
@@ -1229,9 +1268,9 @@ const datas = [
         name: "Фотографическая коллекция культурного фонда SK",
         type: ["museum"], rating: "local",
         path: "photographische_sammlung_sk_stiftung_kultur_koln",
-        countryPath: "germany", regionsPath: "nrw", districtPath: "city", cityPath: "koln",
+        countryPath: "germany", regionPath: "nrw", districtPath: "city", cityPath: "koln_city",
         fotoCard: "Germany/nrw/koln/koln-city/photographische_sammlung_sk_stiftung_kultur/001.jpg",
-        location: "Кёльн, Германия",
+        location: "Кёльн, район Neustadt-Nord (округ Innenstadt), Германия",
         officialSite: [
             { bold: "Официальный сайт", link: "https://www.photographie-sk-kultur.de/" }
         ],
@@ -1273,10 +1312,11 @@ const datas = [
         founder: "учреждена на основе культурного фонда Эс-Ка Штифтунг Культур (SK Stiftung Kultur), который был основан в Кёльне для поддержки искусства и культуры, включая фотографию, танец и литературу. ",
         coord: { lat: 50.94855, lng: 6.94358 },
         meta: {
-            title: "Фотографическая коллекция / SK Stiftung Kultur в Кёльне — музей фотографии и архив Августа Зандера",
+            title: "Фотографическая коллекция / SK Stiftung Kultur в Кёльне – музей фотографии и архив Августа Зандера",
             description: "Узнайте о документальной и концептуальной фотографии в Кёльне: крупнейший архив Августа Зандера, выставки работ классических и современных фотографов.",
-            ogTitle: "Фотографическая коллекция / SK Stiftung Kultur — музей фотографии в Кёльне",
+            ogTitle: "Фотографическая коллекция / SK Stiftung Kultur – музей фотографии в Кёльне",
             ogDescription: "Погрузитесь в мир документальной и концептуальной фотографии: архив Августа Зандера, международные проекты, сменяющиеся выставки и образовательные программы.",
+            keywords: "Фотографическая коллекция культурного фонда SK, Кёльн, достопримечательность, фотография, современное искусство, музей Кёльна, коллекции, выставки, культурное наследие, туризм Германия, экскурсии, исторические здания",
             ogImage: "https://our-travels.info/foto/Germany/nrw/koln/koln-city/photographische_sammlung_sk_stiftung_kultur/001.jpg"
         }
     },
@@ -1285,7 +1325,7 @@ const datas = [
         name: "Мосты Кёльна через Рейн",
         type: ["technical_structure"], rating: "popular",
         path: "koln_bridges",
-        countryPath: "germany", regionsPath: "nrw", districtPath: "city", cityPath: "koln",
+        countryPath: "germany", regionPath: "nrw", districtPath: "city", cityPath: "koln_city",
         fotoCard: "Germany/nrw/koln/koln-city/koln_bridges/001.jpg",
         location: "Кёльн, Германия",
         construction_period: "Разные периоды, XX–XXI век",
@@ -1306,7 +1346,7 @@ const datas = [
                 { bold: "2. Мост Райнбрюке Меркених (Rheinbrücke Merkenich):", text: "Соединяет районы Меркених и Фльиттар и обслуживает северные промышленные зоны. Построен в 1970-х. Применяет конструктивные решения, рассчитанные на промышленное окружение. <br><b>Интересный факт:</b> Этот мост проектировали с повышенными экологическими требованиями – из-за близости крупных химических предприятий. " },
                 { bold: "3. Мост Нильхер Хафен (Niehler Hafenbrücke):", text: "Рабочий мост, служащий главным въездом в порт Niehler Hafen. Используется преимущественно грузовым транспортом. <br><b>Интересный факт:</b> Порт является одним из самых современных речных портов Германии, и этот мост критически важен для его логистики." },
                 { img: "Germany/nrw/koln/koln-city/koln_bridges/004.jpg", bold: "4. Мост Мюльхаймер (Mülheimer Brücke):", text: "Большой подвесной мост, соединяющий Мюльхайм и Ригель. Открыт в 1929 году, восстановлен после войны. Несёт автомобили и трамваи. <br><b>Интересный факт:</b> С 2014 по 2024 год мост проходил одну из самых обширных реконструкций в истории города." },
-                { bold: "5. Мост Цообрюке (Zoobrücke):", text: "Широкий автомобильный мост, часть кольцевой дороги Innerer Ring. Открыт в 1960-х, имеет характерную дугообразную форму. <br><b>Интересный факт:</b> Неподалёку проходит единственная в Германии канатная дорога, пересекающая крупную реку – Kölner Seilbahn." },
+                { img: "Germany/nrw/koln/koln-city/koln_bridges/009.jpg", bold: "5. Мост Цообрюке (Zoobrücke):", text: "Широкий автомобильный мост, часть кольцевой дороги Innerer Ring. Открыт в 1960-х, имеет характерную дугообразную форму. <br><b>Интересный факт:</b> Неподалёку проходит единственная в Германии канатная дорога, пересекающая крупную реку – Kölner Seilbahn." },
                 { img: "Germany/nrw/koln/koln-city/koln_bridges/001.jpg", bold: "6. Мост Гогенцоллернов (Hohenzollernbrücke):", text: "Железнодорожный и пешеходный мост – один из символов Кёльна. Через него ежедневно проходит до 1200 поездов, что делает его одним из самых загруженных в Европе." },
                 { img: "Germany/nrw/koln/koln-city/koln_bridges/005.jpg", bold: "Интересный факт:", text: "Это знаменитый «мост любви»: пары из разных стран пристёгивают на ограждение замки любви, а ключи бросают в Рейн. Их количество исчисляется сотнями тысяч, а вес – несколькими тоннами. <br>С моста открывается лучший вид на Кёльнский собор, особенно вечером, когда загорается подсветка." },
                 { img: "Germany/nrw/koln/koln-city/koln_bridges/006.jpg", bold: "7. Мост Дойцер (Deutzer Brücke):", text: "Соединяет центр Кёльна с районом Дойц, где находятся KölnMesse и Lanxess Arena. Это один из главных мостов города. <br><b>Интересный факт:</b> Рядом с мостом проходят крупные городские мероприятия, включая марафоны и часть маршрутов Карнавала." },
@@ -1329,6 +1369,7 @@ const datas = [
             description: "Описание восьми мостов Кёльна: история, особенности, интересные факты, включая мост любви Hohenzollernbrücke.",
             ogTitle: "Мосты Кёльна через Рейн",
             ogDescription: "Полное описание всех восьми мостов Кёльна с фактами, историей и архитектурой.",
+            keywords: "Мосты Кёльна через Рейн, Кёльн, достопримечательность, мосты, архитектура, транспорт, река Рейн, инженерное сооружение, исторические мосты, туризм Германия, экскурсии, фото, городская инфраструктура",
             ogImage: "https://our-travels.info/foto/Germany/nrw/koln/koln-city/koln_bridges/001.jpg"
         }
     },
@@ -1337,11 +1378,15 @@ const datas = [
         name: "Старые башни и укрепления Старого Кёльна",
         type: ["historical_building"], rating: "popular",
         path: "old_towers_koln",
-        countryPath: "germany", regionsPath: "nrw", districtPath: "city", cityPath: "koln",
+        countryPath: "germany", regionPath: "nrw", districtPath: "city", cityPath: "koln_city",
         hiddenFromList: true, showMore: true,
+        mapOpen: "old_towers_koln",
         fotoCard: "Germany/nrw/koln/koln-city/altstadt/old_towers/001.jpg",
         location: "Кёльн, Германия",
+        subObjects: ["rumerturm_koln", "hahnentorburg_koln", "eigelsteintorburg_koln", "severinstorburg_koln", "ulrepforte_koln", "bayenturm_koln"],
+        subObjects_title: "Основные сохранившиеся башни и фрагменты городской стены",
         short_description: "Старые башни и укрепления Старого Кёльна – это остатки средневековой городской стены и римских оборонительных сооружений, которые когда-то защищали город. Сегодня они разбросаны по Старому городу и служат историческим ориентиром для жителей и туристов. Эти башни позволяют представить, как выглядел Кёльн в Средние века и увидеть следы его оборонительной системы. Объект популярен среди туристов, но не является всемирно известным символом города.",
+        status: "partial", note: "сохранились лишь отдельные объекты этой системы – как крупные ворота с башнями, так и фрагменты стен с малыми сторожевыми башнями.",
         full_description: {
             title: "Описание и история",
             items: [
@@ -1350,101 +1395,13 @@ const datas = [
                 { text: "В Средние века Кёльн вырос в один из крупнейших торговых центров Северной Европы. В этот период городская стена была укреплена новыми башнями и воротами, которые образовывали сложную систему обороны. Сегодня сохранились лишь отдельные объекты этой системы – как крупные ворота с башнями, так и фрагменты стен с малыми сторожевыми башнями." }
             ]
         },
-        sub_objects: {
-            title: "Основные сохранившиеся башни и фрагменты городской стены",
-            items: [
-                { img: "Germany/nrw/koln/koln-city/altstadt/old_towers/002.jpg", alt: "Римская башня Römerturm", bold: "Римская башня (Römerturm)", text: "– остаток римской городской стены (Colonia Agrippinensis), памятник древнеримской истории города — редкая и очень старая архитектурная реликвия. Это одна из немногих римских башен, уцелевших до наших дней. По римским источникам, первоначально вокруг города существовало до ~19 таких защитных башен.<br>Башня была частью позднеримского укрепления и использовалась как сторожевая и наблюдательная – сегодня это самый древний фрагмент оборонительных сооружений Кёльна. <br> <b>Где: </b> улица Zeughausstraße — в северо западной части Старого города, в шаговой доступности от центра." },
-                { img: "Germany/nrw/koln/koln-city/altstadt/old_towers/001.jpg", alt: "Западные ворота (Hahnentorburg)", bold: "Западные ворота (Hahnentorburg)", text: "– один из четырёх сохранившихся средневековых городских ворот башен бывшей стены Старого города. Ворота впервые упоминаются в 1264 году; они защищали западный вход на торговый путь к Aахену и Юлиху. Здесь средневековая архитектура буквально «врезается» в современное пространство площади, сохраняя дух оборонительных укреплений Кёльна. <br><b>Где: </b> площадь Rudolfplatz – западная граница старого города. " },
-                { img: "Germany/nrw/koln/koln-city/altstadt/old_towers/003.jpg", alt: "Северные ворота (Eigelsteintorburg)", bold: "Северные ворота (Eigelsteintorburg)", text: "– это хорошо сохранившаяся средневековая крепостная архитектура с массивными башнями и арочным проходом. Большие двойные ворота на северной стороне городской стены Старого города. Построена в период третьего расширения города в XIII веке; заменила раннюю северную башню и служила для контроля въезда со стороны северных торговых путей. <br><b>Где: </b> район Eigelstein / Ebertplatz. " },
-                { img: "Germany/nrw/koln/koln-city/altstadt/old_towers/004.jpg", alt: "Южные ворота (Severinstorburg)", bold: "Южные ворота (Severinstorburg)", text: "– стратегически важный южный вход – через него шли основные пути к Бонну и югу Германии и одна из четырёх главных средневековых ворот Старого города, защищавшая южный подход.  Сооружена в первой половине XIII века в составе мощной каменной стены; окончательно оформлена с зенитами и фланками в более поздние периоды. <br><b>Где: </b> сегодняшняя площадь Chlodwigplatz. " },
-                { img: "Germany/nrw/koln/koln-city/altstadt/old_towers/005.jpg", alt: "Южный фрагмент стены (Ulrepforte)", bold: "Южный фрагмент стены (Ulrepforte)", text: "– самый узкий и маленький из городских ворот, служивший скорее вспомогательной частью обороны. Это небольшой, но античный городской вход, часть средневековой оборонительной стены.  Построена в начале XIII века и впервые упоминается в документах 1245 года; это был один из двенадцати ворот стены, но с меньшим значением по транспортным путям. <br><b>Где: </b> улица Sachsenring –  южный участок Старого города. " },
-                { img: "Germany/nrw/koln/koln-city/altstadt/old_towers/006.jpg", alt: "Башня на юге у Рейна (Bayenturm)", bold: "Башня на юге у Рейна (Bayenturm)", text: "– это оборонительная башня, стоявшая на юго восточном конце городской стены близ Рейна, символ важности контроля торгового пути по Рейну.  Построена примерно между 1180 и 1220 годами как часть крепостных укреплений у реки; сильно пострадала во Второй мировой, позже восстановлена. <br><b>Где: </b> южная часть Старого города, рядом с кольцевой улицей Ringstraße." }
-            ]
-        },
         meta: {
             title: "Старые башни и укрепления Старого Кёльна – исторические достопримечательности города",
             description: "Исследуйте средневековые башни и фрагменты городской стены Кёльна. Узнайте историю старинных укреплений, расположенных по Старому городу, и откройте для себя важные исторические ориентиры, сохранившиеся до наших дней.",
             ogTitle: "Старые башни и укрепления Старого Кёльна – прогулка по истории города",
             ogDescription: "Прогуляйтесь по Старому городу Кёльна и откройте для себя старинные башни и укрепления, которые хранят дух средневекового города и служат важными историческими памятниками.",
+            keywords: "Старые башни и укрепления Старого Кёльна, Кёльн, достопримечательность, крепости, средневековые стены, архитектура, исторические здания, туризм Германия, экскурсии, старый город, фортификация, культурное наследие",
             ogImage: "https://our-travels.info/foto/Germany/nrw/koln/koln-city/altstadt/old_towers/001.jpg"
-        }
-    },
-    {
-        id: "rumerturm_koln",
-        name: "Римская башня Römerturm",
-        type: ["historical_building"], rating: "popular",
-        path: "old_towers_koln",
-        countryPath: "germany", regionsPath: "nrw", districtPath: "city", cityPath: "koln",
-        hiddenFromList: true,
-        coord: { lat: 50.94093, lng: 6.94663 },
-        meta: {
-            title: "Римская башня (Römerturm) – остаток римской городской стены (Colonia Agrippinensis), памятник древнеримской истории города",
-            ogImage: "https://our-travels.info/foto/Germany/nrw/koln/koln-city/altstadt/old_towers/002.jpg"
-        }
-    },
-    {
-        id: "hahnentorburg_koln",
-        name: "Западные ворота (Hahnentorburg)",
-        type: ["historical_building"], rating: "popular",
-        path: "old_towers_koln",
-        countryPath: "germany", regionsPath: "nrw", districtPath: "city", cityPath: "koln",
-        hiddenFromList: true,
-        coord: { lat: 50.93639, lng: 6.94021 },
-        meta: {
-            title: "Западные ворота (Hahnentorburg) – одни из четырёх сохранившихся средневековых городских ворот-башен бывшей стены Старого города",
-            ogImage: "https://our-travels.info/foto/Germany/nrw/koln/koln-city/altstadt/old_towers/001.jpg"
-        }
-    },
-    {
-        id: "eigelsteintorburg_koln",
-        name: "Северные ворота (Eigelsteintorburg)",
-        type: ["historical_building"], rating: "popular",
-        path: "old_towers_koln",
-        countryPath: "germany", regionsPath: "nrw", districtPath: "city", cityPath: "koln",
-        hiddenFromList: true,
-        coord: { lat: 50.94931, lng: 6.95687 },
-        meta: {
-            title: "Северные ворота (Eigelsteintorburg) – хорошо сохранившаяся средневековая фортификационная архитектура с массивными башнями и арочным проходом.",
-            ogImage: "https://our-travels.info/foto/Germany/nrw/koln/koln-city/altstadt/old_towers/003.jpg"
-        }
-    },
-    {
-        id: "severinstorburg_koln",
-        name: "Южные ворота (Severinstorburg)",
-        type: ["historical_building"], rating: "popular",
-        path: "old_towers_koln",
-        countryPath: "germany", regionsPath: "nrw", districtPath: "city", cityPath: "koln",
-        hiddenFromList: true,
-        coord: { lat: 50.92196, lng: 6.95923 },
-        meta: {
-            title: "Южные ворота (Severinstorburg) – стратегически важный южный вход – через него проходили основные пути к Бонну и на юг Германии",
-            ogImage: "https://our-travels.info/foto/Germany/nrw/koln/koln-city/altstadt/old_towers/004.jpg"
-        }
-    },
-    {
-        id: "ulrepforte_koln",
-        name: "Южный фрагмент стены (Ulrepforte)",
-        type: ["historical_building"], rating: "popular",
-        path: "old_towers_koln",
-        countryPath: "germany", regionsPath: "nrw", districtPath: "city", cityPath: "koln",
-        hiddenFromList: true,
-        coord: { lat: 50.92418, lng: 6.95305 },
-        meta: {
-            title: "Южный фрагмент стены (Ulrepforte) – самые узкие и маленькие из городских ворот, служили скорее вспомогательной частью обороны.",
-            ogImage: "https://our-travels.info/foto/Germany/nrw/koln/koln-city/altstadt/old_towers/005.jpg"
-        }
-    },
-    {
-        id: "bayenturm_koln",
-        name: "Башня на юге у Рейна (Bayenturm)",
-        type: ["historical_building"], rating: "popular",
-        path: "old_towers_koln",
-        countryPath: "germany", regionsPath: "nrw", districtPath: "city", cityPath: "koln",
-        hiddenFromList: true,
-        coord: { lat: 50.92375, lng: 6.96695 },
-        meta: {
-            title: "Башня на юге у Рейна (Bayenturm) – оборонительная башня, расположенная на юго-востоке городской стены у Рейна.",
-            ogImage: "https://our-travels.info/foto/Germany/nrw/koln/koln-city/altstadt/old_towers/006.jpg"
         }
     },
     {
@@ -1452,9 +1409,9 @@ const datas = [
         name: "Парк скульптур в Кёльне",
         type: ["museum", 'nature', 'monument_or_fountain'], rating: "local",
         path: "skulpturenpark_koln",
-        countryPath: "germany", regionsPath: "nrw", districtPath: "city", cityPath: "koln",
+        countryPath: "germany", regionPath: "nrw", districtPath: "city", cityPath: "koln_city",
         fotoCard: "Germany/nrw/koln/koln-city/skulpturenpark/001.jpg",
-        location: "Кёльн, Германия",
+        location: "Кёльн, район Riehl (округ Nippes), Германия",
         officialSite: [
             { bold: "Официальный сайт", link: "https://skulpturenparkkoeln.de/" }
         ],
@@ -1495,6 +1452,7 @@ const datas = [
             description: "Посетите парк скульптур (Skulpturenpark Köln) – уникальный парк скульптур под открытым небом рядом с Рейном и Кёльнским зоопарком. Современные скульптуры международных авторов, бесплатный вход, прогулки среди искусства и природы.",
             ogTitle: "Парк скульптур (Skulpturenpark Köln) – музей скульптуры на свежем воздухе",
             ogDescription: "Откройте для себя парк скульптур (Skulpturenpark Köln): современное искусство под открытым небом, скульптуры международных авторов, прогулки среди зелёных аллей и бесплатный вход каждый день.",
+            keywords: "Парк скульптур в Кёльне, Кёльн, достопримечательность, скульптуры, современное искусство, открытый музей, выставки под открытым небом, культурное наследие, туризм Германия, экскурсии, искусство на улице, городской парк",
             ogImage: "https://our-travels.info/foto/Germany/nrw/koln/koln-city/skulpturenpark/001.jpg"
         }
     },
@@ -1503,9 +1461,9 @@ const datas = [
         name: "Кёльнский зоопарк",
         type: ["nature"], rating: "popular",
         path: "zoo_koln",
-        countryPath: "germany", regionsPath: "nrw", districtPath: "city", cityPath: "koln",
+        countryPath: "germany", regionPath: "nrw", districtPath: "city", cityPath: "koln_city",
         fotoCard: "Germany/nrw/koln/koln-city/zoo/001.jpg",
-        location: "Кёльн, Германия",
+        location: "Кёльн, район Riehl (округ Nippes), Германия",
         officialSite: [
             { bold: "Официальный сайт", link: "https://koelnerzoo.de/" }
         ],
@@ -1556,6 +1514,7 @@ const datas = [
             description: "Откройте для себя Кёльнский зоопарк, один из старейших зоопарков Германии. Узнайте о его истории, тематических экспозициях, тропическом лесу, парке слонов и практической информации для посещения.",
             ogTitle: "Посетите Кёльнский зоопарк – более 10 000 животных и уникальные экспозиции",
             ogDescription: "Исследуйте Кёльнский зоопарк: исторические постройки, тропический лес Юго-Восточной Азии, парк слонов и аквариум. Идеальное место для семейного отдыха и образовательного посещения.",
+            keywords: "Кёльнский зоопарк, Кёльн, достопримечательность, зоопарк, животные, сафари, семейный отдых, детский туризм, экскурсии, природные экспозиции, туризм Германия, образовательные программы, городской зоопарк",
             ogImage: "https://our-travels.info/foto/Germany/nrw/koln/koln-city/zoo/001.jpg"
         }
     },
@@ -1564,9 +1523,9 @@ const datas = [
         name: "Ботанический сад и лесопарк",
         type: ["nature"], rating: "popular",
         path: "forstbotanischer_garten",
-        countryPath: "germany", regionsPath: "nrw", districtPath: "city", cityPath: "koln",
+        countryPath: "germany", regionPath: "nrw", districtPath: "city", cityPath: "koln_city",
         fotoCard: "Germany/nrw/koln/koln-city/forstbotanischer_garten/001.jpg",
-        location: "Кёльн, Германия",
+        location: "Кёльн, район Rodenkirchen (округ Rodenkirchen), Германия",
         officialSite: [
             {
                 bold: "Официальный сайт Forstbotanischer Garten",
@@ -1623,6 +1582,7 @@ const datas = [
             description: "Ботанический сад и лесопарк Кёльна с растениями со всего мира и тематическими зонами, включая Friedenswald – Лес мира.",
             ogTitle: "Forstbotanischer Garten – Ботанический сад и лесопарк Кёльна",
             ogDescription: "Сад и лесопарк Кёльна предлагают прогулки по рододендроновому оврагу, японскому саду, вересковому лугу и Лесу мира.",
+            keywords: "Ботанический сад и лесопарк в Кёльне, Кёльн, достопримечательность, ботанический сад, парк, флора, прогулки, природа, семейный отдых, экскурсии, туризм Германия, растения, садовая архитектура",
             ogImage: "https://our-travels.info/foto/Germany/nrw/koln/koln-city/forstbotanischer_garten/001.jpg"
         }
     },
@@ -1631,9 +1591,9 @@ const datas = [
         name: "Ботанический сад Флора",
         type: ["nature"], rating: "popular",
         path: "flora_garten_koln",
-        countryPath: "germany", regionsPath: "nrw", districtPath: "city", cityPath: "koln",
+        countryPath: "germany", regionPath: "nrw", districtPath: "city", cityPath: "koln_city",
         fotoCard: "Germany/nrw/koln/koln-city/flora_garten_koln/001.jpg",
-        location: "Кёльн, Германия",
+        location: "Кёльн, район Riehl (округ Nippes), Германия",
         short_description: "Ботанический сад Флора (Flora und Botanischer Garten, Köln) в Кёльне сочетает исторический парк и научный ботанический сад. Здесь можно увидеть более 10 000 растений со всего мира, прогуляться по тематическим аллеям и насладиться оранжереями. Идеальное место для отдыха и изучения растительного разнообразия.",
         full_description: {
             title: "Описание и история",
@@ -1680,6 +1640,7 @@ const datas = [
             description: "Посетите ботанический сад Флора в Кёльне: более 10 000 растений со всего мира, исторические аллеи, тематические сады, оранжереи и отдых на свежем воздухе.",
             ogTitle: "Флора – ботанический сад и парк в Кёльне",
             ogDescription: "Откройте для себя Флору в Кёльне: кругосветное путешествие среди 10 000 видов растений, исторические сады, оранжереи и уютные аллеи для прогулок.",
+            keywords: "Ботанический сад Флора, Кёльн, достопримечательность, ботанический сад, флора, растения, цветочные коллекции, парки Кёльна, прогулки на природе, семейный отдых, экскурсии, туризм Германия, садовая архитектура",
             ogImage: "https://our-travels.info/foto/Germany/nrw/koln/koln-city/flora_garten_koln/001.jpg"
         }
     },
@@ -1688,20 +1649,19 @@ const datas = [
         name: "Рейнский парк",
         type: ["nature"], rating: "popular",
         path: "rheinpark_koln",
-        countryPath: "germany", regionsPath: "nrw", districtPath: "city", cityPath: "koln",
+        countryPath: "germany", regionPath: "nrw", districtPath: "city", cityPath: "koln_city",
         fotoCard: "Germany/nrw/koln/koln-city/rheinpark_koln/001.jpg",
-        location: "Кёльн, Германия",
+        location: "Кёльн, район Deutz (округ Innenstadt), Германия",
         officialSite: [
             { bold: "Страница парка на сайте города Кёльн", link: "https://www.stadt-koeln.de/leben-in-koeln/freizeit-natur-sport/parks/rheinpark" },
             { bold: "<br>Официальный сайт детской железной дороги", link: "http://kleinbahn.koeln//" }
         ],
-        subObjects: ["tanzbrunnen", "koln_seilbahn", "divitia_koln"],
+        subObjects: ["tanzbrunnen", "divitia_koln"],
         short_description: "Рейнский парк (Rheinpark) – крупный общественный парк вдоль правого берега Рейна в районе Дойц (Deutz) города Кёльн. Он представляет собой исторически и архитектурно значимую зелёную зону, известную своими просторными лужайками, цветниками, прогулочными аллеями и великолепным видом на центр города с Кёльнским собором.",
         short_description_subObjects: {
             text: "В Рейнском парке Кёльна расположены следующие интересные места и аттракционы:",
             items: [
                 { bold: "Танцующий фонтан", text: "– красивое зрелищное сооружение с музыкой и подсветкой, привлекает туристов и жителей города." },
-                { bold: "Кёльнская канатная дорога", text: "– поднимает посетителей над Рейном, открывая панорамные виды на город и реку." },
                 { bold: "Римский форт Дивития", text: "– историческая крепость времен Римской империи, сохранившаяся на территории парка и доступная для осмотра." },
             ]
         },
@@ -1738,6 +1698,7 @@ const datas = [
             description: "Рейнский парк – крупный общественный парк вдоль правого берега Рейна в районе Дойц (Deutz) города Кёльн. Он представляет собой исторически и архитектурно значимую зелёную зону, известную своими просторными лужайками, цветниками, прогулочными аллеями и великолепным видом на центр города с Кёльнским собором.",
             ogTitle: "Рейнский парк (Rheinpark)",
             ogDescription: "Рейнский парк – крупный общественный парк вдоль правого берега Рейна в районе Дойц (Deutz) города Кёльн. Он представляет собой исторически и архитектурно значимую зелёную зону, известную своими просторными лужайками, цветниками, прогулочными аллеями и великолепным видом на центр города с Кёльнским собором.",
+            keywords: "Рейнский парк, Кёльн, достопримечательность, парк, прогулки, природа, отдых на свежем воздухе, семейный отдых, зеленая зона, экскурсии, туризм Германия, городские парки, ландшафтный дизайн",
             ogImage: "https://our-travels.info/foto/Germany/nrw/koln/koln-city/rheinpark_koln/001.jpg"
         }
     },
@@ -1746,10 +1707,10 @@ const datas = [
         name: "Танцующий фонтан",
         type: ["monument_or_fountain"], rating: "popular",
         path: "tanzbrunnen",
-        countryPath: "germany", regionsPath: "nrw", districtPath: "city", cityPath: "koln",
+        countryPath: "germany", regionPath: "nrw", districtPath: "city", cityPath: "koln_city",
         hiddenFromList: true, showMore: true,
         fotoCard: "Germany/nrw/koln/koln-city/rheinpark_koln/002.jpg",
-        location: "Кёльн, Германия",
+        location: "Кёльн, район Deutz (округ Innenstadt), Германия",
         officialSite: [
             { bold: "Официальная страница Tanzbrunnen (через KölnKongress)", link: "https://koelncongress.de/locations/tanzbrunnen-koeln/" }
         ],
@@ -1779,6 +1740,7 @@ const datas = [
             description: "Посетите Tanzbrunnen – исторический «Танцующий фонтан» на Рейне в Кёльне. Концерты, фестивали, культурные мероприятия и живописный вид на реку. Узнайте историю и архитектуру комплекса.",
             ogTitle: "Танцующий фонтан в Кёльне – концерты и культурные события на Рейне",
             ogDescription: "Tanzbrunnen – знаменитый культурный комплекс Кёльна с историей почти 100 лет. Концерты, фестивали, прогулки вдоль Рейна и уникальный «звёздно-волновой шатёр».",
+            keywords: "Танцующий фонтан, Рейнский парк, Кёльн, достопримечательность, фонтан, водное шоу, семейный отдых, прогулки, туристические места Кёльна, развлекательные объекты, туризм Германия, фото, экскурсии",
             ogImage: "https://our-travels.info/foto/Germany/nrw/koln/koln-city/rheinpark_koln/002.jpg"
         },
     },
@@ -1787,10 +1749,9 @@ const datas = [
         name: "Кёльнская канатная дорога",
         type: ["technical_structure"], rating: "popular",
         path: "koln_seilbahn",
-        countryPath: "germany", regionsPath: "nrw", districtPath: "city", cityPath: "koln",
-        hiddenFromList: true, showMore: true,
+        countryPath: "germany", regionPath: "nrw", districtPath: "city", cityPath: "koln_city",
         fotoCard: "Germany/nrw/koln/koln-city/rheinpark_koln/003.jpg",
-        location: "Кёльн, Германия",
+        location: "Кёльн, район Riehl (округ Nippes), Германия",
         officialSite: [
             { bold: "Официальный сайт", link: "https://www.koelner-seilbahn.de/index.html" }
         ],
@@ -1814,6 +1775,7 @@ const datas = [
         tickets_and_entry: {
             title: "Практическая информация",
             items: [
+                { bold: "Адрес: ", text: "Северная станция – Riehler Straße 180, 50735 Köln <br>Южная станция – Rheinparkweg 1, 50679 Köln" },
                 { bold: "Сезон: ", text: "примерно с апреля по октябрь ежедневно." },
                 { bold: "Часы работы: ", text: "обычно с 10:00 до 18:00 (последний рейс ближе к 17:45–18:00)." },
                 { bold: "Билеты: ", text: "<br>взрослые: примерно 4,80 €–7,00 € за обратный билет, <br>дети (обычно до ~12 лет) дешевле. <br>Цены могут меняться, бывают скидки с KölnCard или другими картами." }
@@ -1830,10 +1792,11 @@ const datas = [
         construction_period: "26 апреля 1957 г.",
         coord: { lat: 50.94424, lng: 6.97374 },
         meta: {
-            title: "Cologne Cable Car (Kölner Seilbahn) – канатная дорога над Рейном в Кёльне",
+            title: "Кёльнская канатная дорога (Cologne Cable Car, Kölner Seilbahn) – канатная дорога над Рейном в Кёльне",
             description: "Cologne Cable Car – панорамная канатная дорога над рекой Рейн в Кёльне. История, расположение, виды на Кёльнский собор, Rheinpark и полезная информация для посетителей.",
             ogTitle: "Cologne Cable Car – панорамный вид на Кёльн с высоты",
             ogDescription: "Канатная дорога Cologne Cable Car соединяет берега Рейна и открывает один из лучших панорамных видов на Кёльн, Кёльнский собор и Rheinpark. Популярная достопримечательность и символ города.",
+            keywords: "Кёльнская канатная дорога, Кёльн, достопримечательность, канатная дорога, транспорт, панорамные виды, Рейн, туристические места, экскурсии, городской туризм, развлечения, Германия, фото, прогулки",
             ogImage: "https://our-travels.info/foto/Germany/nrw/koln/koln-city/rheinpark_koln/003.jpg"
         }
     },
@@ -1842,11 +1805,12 @@ const datas = [
         name: "Руины римского форта Дивития в Кёльне (исторический парк Дойтц)",
         type: ["historical_building"], rating: "local",
         path: "divitia_koln",
-        countryPath: "germany", regionsPath: "nrw", districtPath: "city", cityPath: "koln",
+        countryPath: "germany", regionPath: "nrw", districtPath: "city", cityPath: "koln_city",
         hiddenFromList: true, showMore: true,
         fotoCard: "Germany/nrw/koln/koln-city/rheinpark_koln/004.jpg",
-        location: "Кёльн, Германия",
+        location: "Кёльн, район Deutz (округ Innenstadt), Германия",
         short_description: "Руины римского форта Дивития, известные также как исторический парк Дойтц, это остатки позднеримского укрепления IV века н.э. на правом берегу Рейна в Кёльне. Сохранились фрагменты башни, каменная кладка и основания стен. Доступен для свободного осмотра в пешеходной зоне Рейнского парка.",
+        status: "partial", note: "сохранились фрагменты римского форта Дивития, включая остатки оборонительных стен и планировочные элементы укрепления, остальная структура утрачена и известна по археологическим данным.",
         full_description: {
             title: "Описание и история",
             items: [
@@ -1889,6 +1853,7 @@ const datas = [
             description: "Остатки римского форта Дивития IV века н.э., известного также как исторический парк Дойтц, на правом берегу Рейна в Кёльне. Сохранились башня, каменная кладка и основания стен. Доступно для осмотра в Рейнском парке.",
             ogTitle: "Руины римского форта Дивития в Кёльне – исторический парк Дойтц, руины римского укрепления",
             ogDescription: "Познакомьтесь с остатками римского форта Дивития, известного как исторический парк Дойтц, в Рейнском парке, Кёльн. Оригинальные стены, башня и основания открыты для прогулок и осмотра.",
+            keywords: "Руины римского форта Дивития, исторический парк Дойц, Кёльн, достопримечательность, римский форт, археология, исторический парк, древние укрепления, туризм Германия, римская история, культура, фото",
             ogImage: "https://our-travels.info/foto/Germany/nrw/koln/koln-city/rheinpark_koln/004.jpg"
         }
     },
@@ -1897,9 +1862,9 @@ const datas = [
         name: "Экологический сад Финкенсгартен",
         type: ["nature"], rating: "local",
         path: "finkens_garten_koln",
-        countryPath: "germany", regionsPath: "nrw", districtPath: "city", cityPath: "koln",
+        countryPath: "germany", regionPath: "nrw", districtPath: "city", cityPath: "koln_city",
         fotoCard: "Germany/nrw/koln/koln-city/finkens_garten/001.jpg",
-        location: "Кёльн, Германия",
+        location: "Кёльн, район Rodenkirchen (округ Rodenkirchen), Германия",
         officialSite: [
             { bold: "Официальный сайт", link: "http://www.finkensgarten.org/" }
         ],
@@ -1942,17 +1907,18 @@ const datas = [
             description: "Экологический сад Финкенсгартен в Кёльне – бесплатный природный парк с биотопами, пчелиным домом и образовательными программами для детей и взрослых.",
             ogTitle: "Экологический сад Финкенсгартен – природа и приключения в сердце города",
             ogDescription: "Проведите день в экологическом саду Финкенсгартен: исследуйте экологичные ландшафты, познакомьтесь с природой, посетите пчелиный дом и образовательные мероприятия.",
+            keywords: "Экологический сад Финкенсгартен, Кёльн, достопримечательность, экологический сад, ботанический сад, природа, растения, прогулки, семейный отдых, экскурсии, туризм Германия, зеленая зона, образовательные программы",
             ogImage: "https://our-travels.info/foto/Germany/nrw/koln/koln-city/finkens_garten/001.jpg"
         }
     },
     {
         id: "decksteiner_weiher_koln",
-        name: "Декштайнер Вайер",
+        name: "Озеро Декштайнер Вайер",
         type: ["nature"], rating: "local",
         path: "decksteiner_weiher_koln",
-        countryPath: "germany", regionsPath: "nrw", districtPath: "city", cityPath: "koln",
+        countryPath: "germany", regionPath: "nrw", districtPath: "city", cityPath: "koln_city",
         fotoCard: "Germany/nrw/koln/koln-city/decksteiner_weiher/001.jpg",
-        location: "Кёльн, Германия",
+        location: "Кёльн, район Lindenthal (округ Lindenthal), Германия",
         short_description: "Декштайнер Вайер (Decksteiner Weiher) – крупнейший искусственный парковый водоём Кёльна, расположенный в западной части города в зоне внешнего зелёного пояса. Озеро окружено широкими аллеями, лесными участками и прогулочными дорожками. Благодаря длинной форме водоёма, тенистым каштановым аллеям и спокойной атмосфере это одно из самых популярных мест отдыха жителей города. ",
         full_description: {
             title: "Описание и история",
@@ -1987,10 +1953,11 @@ const datas = [
         founder: "проект реализован в рамках городской программы развития зелёного пояса Кёльна по идеям Конрада Аденауэра и градостроительному плану Фрица Шумахера. ",
         coord: { lat: 50.91775, lng: 6.88815 },
         meta: {
-            title: "Декштайнер Вайер в Кёльне – крупнейшее парковое озеро города",
+            title: "Озеро Декштайнер Вайер в Кёльне – крупнейшее парковое озеро города",
             description: "Декштайнер Вайер – живописное искусственное озеро в зелёном поясе Кёльна. Популярное место для прогулок, спорта и отдыха на природе рядом с центром города.",
             ogTitle: "Декштайнер Вайер – зелёное озеро Кёльна",
             ogDescription: "Декштайнер Вайер – одно из самых красивых мест отдыха в Кёльне. Прогулочные аллеи, лодки на воде, зелёные парки и спокойная атмосфера всего в нескольких километрах от центра города.",
+            keywords: "Декштайнер Вайер, Кёльн, достопримечательность, озеро, пруд, прогулки, природа, отдых на свежем воздухе, семейный отдых, водоем, туризм Германия, рыбалка, парк, зелёная зона",
             ogImage: "https://our-travels.info/foto/Germany/nrw/koln/koln-city/decksteiner_weiher/001.jpg"
         }
     },
@@ -1999,19 +1966,21 @@ const datas = [
     // Köln округ
 
     // aachen kreis
+    // моншау
     {
         id: "historic_center_monschau",
         name: "Старый город Моншау",
         type: ["historical_area"], rating: "popular",
         path: "historic_center_monschau",
-        countryPath: "germany", regionsPath: "nrw", districtPath: "koln", cityPath: "monschau",
-        subObjects: ["rotes_haus_monschau", "senfmuehle_monschau", "glashuette_monschau"],
+        countryPath: "germany", regionPath: "nrw", districtPath: "koln", cityPath: "monschau",
+        subObjects: ["rotes_haus_monschau", "senfmuehle_monschau", "glashuette_monschau", "tuchmacherbrunnen_monschau"],
         short_description_subObjects: {
             text: "В старом городе Моншау находятся такая достопримечательность:",
             items: [
                 { bold: "Красный дом (Rotes Haus)", text: "– выдающийся исторический дом-музей в центре старого города Моншау" },
                 { bold: "Историческая горчичная мельница (Historische Senfmühle)", "text": "– историческая горчичная мельница с живым производством и дегустацией горчицы" },
                 { bold: "Стеклодувная мастерская (Glashütte)", text: "– мастерская с живыми демонстрациями стеклодувов, где можно увидеть процесс изготовления стеклянных изделий и купить сувениры" },
+                { bold: "Фонтан ткачей", text: "– небольшой фонтан в Моншау, посвящённый ткачеству и текстильной истории города" },
             ]
         },
         fotoCard: "Germany/nrw/koln/Aachen/monschau/001.jpg",
@@ -2040,10 +2009,11 @@ const datas = [
         },
         construction_period: "XIII век (формирование поселения вокруг крепости)",
         meta: {
-            title: "Старый город Моншау — средневековый центр в Айфеле | Германия",
+            title: "Старый город Моншау – средневековый центр в Айфеле | Германия",
             description: "Старый город Моншау – один из самых красивых исторических центров Германии с фахверковыми домами, рекой Рур и атмосферой средневековья.",
             ogTitle: "Старый город Моншау – сказочная Германия",
             ogDescription: "Прогулка по старому городу Моншау – это путешествие в прошлое: узкие улицы, старинные дома и романтика Айфеля.",
+            keywords: "Старый город Моншау, Моншау, достопримечательность, исторический центр, узкие улочки, фахверковые дома, туризм Германия, прогулки, культура, архитектура, экскурсии, атмосферный город, фото",
             ogImage: "https://our-travels.info/foto/Germany/nrw/koln/Aachen/monschau/002.jpg"
         }
     },
@@ -2052,7 +2022,7 @@ const datas = [
         name: "Красный дом",
         type: ["museum", "historical_house"], rating: "popular",
         path: "rotes_haus_monschau",
-        countryPath: "germany", regionsPath: "nrw", districtPath: "koln", cityPath: "monschau",
+        countryPath: "germany", regionPath: "nrw", districtPath: "koln", cityPath: "monschau",
         hiddenFromList: true, showMore: true,
         fotoCard: "Germany/nrw/koln/Aachen/monschau/rotes_haus/001.jpg",
         location: "Моншау, Германия",
@@ -2101,6 +2071,7 @@ const datas = [
             description: "Исторический музей Красный дом в Моншау – великолепный 18-вековой жилой и торговый дом семьи ткачей Шайблеров. Экспозиции о жизни, ремеслах и торговле тканями по всей Европе. Практическая информация для посетителей.",
             ogTitle: "Красный дом Моншау – история, ткани и жизнь 18 века",
             ogDescription: "Посетите Красный дом в Моншау: уникальный музей с историей семейной торговли тканями, роскошными интерьерами и ремесленными экспозициями в сердце старого города. ",
+            keywords: "Красный дом, Моншау, достопримечательность, музей, исторический дом, фахверковый дом, архитектура, культурное наследие, экскурсии, туризм Германия, фото, исторические здания, Старый город Моншау",
             ogImage: "https://our-travels.info/foto/Germany/nrw/koln/Aachen/monschau/rotes_haus/001.jpg"
         }
     },
@@ -2109,7 +2080,7 @@ const datas = [
         name: "Историческая горчичная мельница",
         type: ["museum"], rating: "local",
         path: "senfmuehle_monschau",
-        countryPath: "germany", regionsPath: "nrw", districtPath: "koln", cityPath: "monschau",
+        countryPath: "germany", regionPath: "nrw", districtPath: "koln", cityPath: "monschau",
         hiddenFromList: true, showMore: true,
         fotoCard: "Germany/nrw/koln/Aachen/monschau/senfmuehle/001.jpg",
         location: "Моншау, Германия",
@@ -2159,6 +2130,7 @@ const datas = [
             description: "Посетите горчичную мельницу в Моншау с более чем 100-летней историей. Смотрите производство, пробуйте 20+ сортов, покупайте на месте.",
             ogTitle: "Историческая горчичная мельница – традиционный немецкий горчичный рай",
             ogDescription: "Узнайте, как в сердце Моншау делают легендарную немецкую горчицу по старинным рецептам! Больше 20 вкусов, живой процесс производства и уютный магазин прямо в историческом центре.",
+            keywords: "Историческая горчичная мельница, Моншау, достопримечательность, мельница, горчица, историческое производство, музей, экскурсии, туризм Германия, традиции, культура, Старый город Моншау, фото",
             ogImage: "https://our-travels.info/foto/Germany/nrw/koln/Aachen/monschau/senfmuehle/001.jpg"
         }
     },
@@ -2167,7 +2139,7 @@ const datas = [
         name: "Стеклодувная мастерская",
         type: ["museum"], rating: "popular",
         path: "glashuette_monschau",
-        countryPath: "germany", regionsPath: "nrw", districtPath: "koln", cityPath: "monschau",
+        countryPath: "germany", regionPath: "nrw", districtPath: "koln", cityPath: "monschau",
         hiddenFromList: true, showMore: true,
         fotoCard: "Germany/nrw/koln/Aachen/monschau/glashuette/001.jpg",
         short_description: "Стеклодувная мастерская (Glashütte) – стеклодувная мастерская и выставочный центр традиционного ремесла стеклодувов в историческом городе Моншау. Посетители наблюдают живой процесс ручной работы: от расплавления стекла до формовки бутылей, сосудов и декоративных фигур с помощью выдувания.",
@@ -2207,10 +2179,11 @@ const datas = [
         },
         coord: { lat: 50.552844, lng: 6.236908 },
         meta: {
-            title: "Стеклодувная мастерская (Glashütte)– мастерская стеклодувов в Моншау",
+            title: "Стеклодувная мастерская (Glashütte) – мастерская стеклодувов в Моншау",
             description: "Посетите стеклодувную мастерскую в Моншау: живые демонстрации стеклодувов, выставка стеклянных изделий и традиционное ремесло для всей семьи.",
             ogTitle: "Стеклодувная мастерская (Glashütte) в Моншау – живой опыт стеклодувов в сердце Эйфеля",
             ogDescription: "Узнайте, как мастера превращают горячее стекло в произведения искусства на стеклодувной мастерской. История, ремесло и выставки в историческом Моншау.",
+            keywords: "Стеклодувная мастерская, Моншау, достопримечательность, стеклодув, ремесленное производство, музей, экскурсии, туризм Германия, традиции, культура, Старый город Моншау, фото, ремесленные мастерские",
             ogImage: "https://our-travels.info/foto/Germany/nrw/koln/Aachen/monschau/glashuette/001.jpg"
         }
     },
@@ -2219,10 +2192,11 @@ const datas = [
         name: "Замок Моншау",
         type: ["palace_or_castle"], rating: "local",
         path: "burg_monschau",
-        countryPath: "germany", regionsPath: "nrw", districtPath: "koln", cityPath: "monschau",
+        countryPath: "germany", regionPath: "nrw", districtPath: "koln", cityPath: "monschau",
         fotoCard: "Germany/nrw/koln/Aachen/monschau/burg/001.jpg",
         location: "Моншау, Германия",
         short_description: "Замок Моншау (нем. Burg Monschau) – средневековый замок на холме в Моншау (Северный Рейн-Вестфалия, Германия). Частично руинирован, с сохранившимися башнями и стенами, он является исторической и культурной достопримечательностью с панорамными видами на старый город.",
+        status: "partial", note: "сохранились отдельные элементы средневекового замка Моншау, включая части крепостных стен и башенных сооружений, значительная часть комплекса перестроена и используется в современных целях, включая размещение хостела.",
         full_description: {
             title: "Описание и история",
             items: [
@@ -2257,6 +2231,7 @@ const datas = [
             description: "Средневековый замок Моншау (Burg Monschau) на холме над городом Моншау в Германии. История с XIII века, панорамные виды, музей-хостел и культурные события в сердце Айфеля.",
             ogTitle: "Замок Моншау – Средневековый замок над Моншау",
             ogDescription: "Откройте для себя замок Моншау: средневековая крепость, крутые виды на город, летние культурные мероприятия и уникальная атмосфера исторического Айфеля.",
+            keywords: "Замок Моншау, замки, Моншау, достопримечательность, крепость, средневековый замок, историческая архитектура, экскурсии, туризм Германия, культура, Старый город Моншау, фото, исторические здания",
             ogImage: "https://our-travels.info/foto/Germany/nrw/koln/Aachen/monschau/burg/001.jpg"
         }
     },
@@ -2269,7 +2244,7 @@ const datas = [
         name: "Дворцы Брюля: ансамбль Аугустусбург и Фалькенлюст",
         type: ['palace_or_castle', 'museum'], rating: "top",
         path: 'bruhl_palaces',
-        countryPath: "germany", regionsPath: "nrw", districtPath: "koln", cityPath: "bruhl",
+        countryPath: "germany", regionPath: "nrw", districtPath: "koln", cityPath: "bruhl",
         fotoCard: "Germany/nrw/koln/Rhein-Erft-Kreis/bruhl/bruhl_palaces/001.jpg",
         location: "Брюль, Германия",
         address: [{ bold: "Адрес:", text: " Schloss Augustusburg — Max-Ernst-Allee, 50321 Brühl, Deutschland <br>Schloss Falkenlust — An Schloss Falkenlust 1, 50321 Brühl, Deutschland" }],
@@ -2326,6 +2301,7 @@ const datas = [
             description: "Ансамбль дворцов Аугустусбург и Фалькенлюст в Брюле – шедевр барокко и рококо, дополненный французскими и английскими садами, фонтанами, аллеями и зеркальными бассейнами. История, стиль, интересные факты.",
             ogTitle: "Дворцы Брюля: архитектура, сады и легенды",
             ogDescription: "Познайте Дворцы Брюля – их величие, интерьеры, парк с партером, аллеями и английским лесопарком, культурное значение и ЮНЕСКО-статус.",
+            keywords: "Дворцы Брюля, Аугустусбург, Фалькенлюст, Брюль, достопримечательность, дворцовый ансамбль, барочная архитектура, исторические здания, музей, экскурсии, туризм Германия, культурное наследие, UNESCO, юнеско, фото",
             ogImage: "https://our-travels.info/foto/Germany/nrw/koln/Rhein-Erft-Kreis/bruhl/bruhl_palaces/001.jpg"
         }
     },
@@ -2334,7 +2310,7 @@ const datas = [
         name: "Дворец Аугустусбург",
         type: ['palace_or_castle'],
         path: 'bruhl_palaces',
-        countryPath: "germany", regionsPath: "nrw", districtPath: "koln", cityPath: "bruhl",
+        countryPath: "germany", regionPath: "nrw", districtPath: "koln", cityPath: "bruhl",
         hiddenFromList: true,
         coord: { lat: 50.82750, lng: 6.90806 },
         meta: {
@@ -2347,7 +2323,7 @@ const datas = [
         name: "Дворец Фалькенлюст",
         type: ['palace_or_castle'],
         path: 'bruhl_palaces',
-        countryPath: "germany", regionsPath: "nrw", districtPath: "koln", cityPath: "bruhl",
+        countryPath: "germany", regionPath: "nrw", districtPath: "koln", cityPath: "bruhl",
         hiddenFromList: true,
         coord: { lat: 50.82320, lng: 6.90478 },
         meta: {
@@ -2359,8 +2335,8 @@ const datas = [
         id: "max_ernst_museum",
         name: "Музей Макса Эрнста",
         type: ['museum'], rating: "popular",
-        path: "max-ernst-museum",
-        regionsPath: "nrw", districtPath: "koln", cityPath: "bruhl",
+        path: "max_ernst_museum",
+        regionPath: "nrw", districtPath: "koln", cityPath: "bruhl",
         fotoCard: "Germany/nrw/koln/Rhein-Erft-Kreis/bruhl/max_ernst_museum/Max-Ernst-Museum.jpg",
         location: "Брюль, Германия",
         address: [{ bold: "Адрес:", text: " Comesstraße 42 / Max-Ernst-Allee 1, 50321 Brühl, Deutschland" }],
@@ -2400,6 +2376,7 @@ const datas = [
             description: "Единственный в мире музей, посвящённый Максу Эрнсту. Коллекция, история, дадаизм, сюрреализм, временные выставки.",
             ogTitle: "Музей Макса Эрнста – Брюль, Германия",
             ogDescription: "Познакомьтесь с музеем Макса Эрнста в Брюле, его коллекцией и выставками, посвящёнными дадаизму и сюрреализму.",
+            keywords: "Музей Макса Эрнста, Брюль, достопримечательность, современное искусство, живопись, скульптура, Max Ernst, музей, выставки, туризм Германия, культура, фото",
             ogImage: "https://our-travels.info/foto/Germany/nrw/koln/Rhein-Erft-Kreis/bruhl/max_ernst_museum/Max-Ernst-Museum.jpg"
         }
     },
@@ -2408,7 +2385,7 @@ const datas = [
         name: "Парк развлечений Phantasialand",
         type: ['amusement_park'], rating: "popular",
         path: "phantasialand",
-        regionsPath: "nrw", districtPath: "koln", cityPath: "bruhl",
+        regionPath: "nrw", districtPath: "koln", cityPath: "bruhl",
         fotoCard: "Germany/nrw/koln/Rhein-Erft-Kreis/bruhl/phantasialand/001.jpg",
         location: "Брюль, Германия",
         address: [{ bold: "Адрес:", text: " Berggeiststraße 31–41, 50321 Brühl, Deutschland" }],
@@ -2456,6 +2433,7 @@ const datas = [
             description: "Phantasialand – один из самых посещаемых парков Европы с более чем 30 аттракционами, тематическими зонами и уникальными отелями.",
             ogTitle: "Phantasialand – Брюль, Германия",
             ogDescription: "Познакомьтесь с Phantasialand в Брюле: аттракционы, тематические зоны, отели и развлечения для всей семьи.",
+            keywords: "Phantasialand, Фантазиялэнд, Фантазиленд, Брюль, достопримечательность, парк развлечений, аттракционы, развлечения, семейный отдых, американские горки, шоу, туризм Германия, отдых с детьми, тематический парк, фото",
             ogImage: "https://our-travels.info/foto/Germany/nrw/koln/Rhein-Erft-Kreis/bruhl/phantasialand/001.jpg"
         },
     },
@@ -2466,7 +2444,7 @@ const datas = [
         name: "Керамион – центр современной и исторической керамики",
         type: ['museum'], rating: "local",
         path: "keramion",
-        countryPath: "germany", regionsPath: "nrw", districtPath: "koln", cityPath: "frechen",
+        countryPath: "germany", regionPath: "nrw", districtPath: "koln", cityPath: "frechen",
         fotoCard: "Germany/nrw/koln/Rhein-Erft-Kreis/frechen/keramion/001.jpg",
         location: "Фрехен, Германия",
         address: [{ bold: "Адрес:", text: " Bonnstraße 12, 50226 Frechen, Deutschland" }],
@@ -2509,6 +2487,7 @@ const datas = [
             description: "KERAMION: постоянная коллекция и временные выставки керамики, история производства и современное художественное видение.",
             ogTitle: "KERAMION – Центр современной и исторической керамики, Frechen",
             ogDescription: "Узнайте о коллекции Cremer, исторической керамике Фрехена и выставках в KERAMION.",
+            keywords: "Керамион, Keramion, Фрехен, достопримечательность, музей керамики, керамика, современное искусство, музей, выставки, культурное наследие, туризм Германия, экскурсии, дизайн, декоративно-прикладное искусство",
             ogImage: "https://our-travels.info/foto/Germany/nrw/koln/Rhein-Erft-Kreis/frechen/keramion/001.jpg"
         }
     },
@@ -2516,8 +2495,8 @@ const datas = [
         id: "burg_bachem_frechen",
         name: "Крепость Бахем – историческая водяная крепость во Фрехене",
         type: ['palace_or_castle'], rating: "local",
-        path: "burg-bachem",
-        countryPath: "germany", regionsPath: "nrw", districtPath: "koln", cityPath: "frechen",
+        path: "burg_bachem_frechen",
+        countryPath: "germany", regionPath: "nrw", districtPath: "koln", cityPath: "frechen",
         fotoCard: "Germany/nrw/koln/Rhein-Erft-Kreis/frechen/burg-bachem/Burg-Bachem_3.jpg",
         location: "Фрехен, Германия",
         address: [{ bold: "Адрес:", text: " Schloßstraße 8, 50226 Frechen, Deutschland" }],
@@ -2558,6 +2537,7 @@ const datas = [
             description: "Burg Bachem: история, водяные рвы, прогулочные зоны и отдых у небольшого озера в Фрехене.",
             ogTitle: "Burg Bachem – Frechen, Deutschland",
             ogDescription: "Откройте для себя историческую водяную крепость Burg Bachem и озеро с прогулочными аллеями во Фрехене.",
+            keywords: "Крепость Бахем, Фрехен, достопримечательность, водяная крепость, замок, историческая архитектура, ров с водой, средневековое сооружение, усадьба, туризм Германия, экскурсии, исторические здания, фото",
             ogImage: "https://our-travels.info/foto/Germany/nrw/koln/Rhein-Erft-Kreis/frechen/burg-bachem/Burg-Bachem_3.jpg"
         }
     },
@@ -2566,7 +2546,7 @@ const datas = [
         name: "Площадь Йоханна Шмитца («площадь Ратуши»)",
         type: ['square'], rating: "local",
         path: "johann_schmitz_platz_frechen",
-        countryPath: "germany", regionsPath: "nrw", districtPath: "koln", cityPath: "frechen",
+        countryPath: "germany", regionPath: "nrw", districtPath: "koln", cityPath: "frechen",
         fotoCard: "Germany/nrw/koln/Rhein-Erft-Kreis/frechen/johann_schmitz_platz_frechen/006.jpg",
         location: "Фрехен, Германия",
         address: [{ bold: "Адрес: ", text: "Johann-Schmitz-Platz, 50226 Frechen, Deutschland" }],
@@ -2607,6 +2587,7 @@ const datas = [
             description: "Площадь Йоханна Шмитца – центральная городская площадь Фрехена с рынками, мероприятиями и исторической ратушей.",
             ogTitle: "Johann-Schmitz-Platz – Frechen, Deutschland",
             ogDescription: "Откройте для себя центральную площадь Фрехена — Johann-Schmitz-Platz с исторической ратушей, рынками и городской атмосферой.",
+            keywords: "Площадь Йоханна Шмитца, площадь Ратуши, Фрехен, достопримечательность, городская площадь, центр города, ратуша, архитектура, общественное пространство, экскурсии, туризм Германия, фото, городская жизнь",
             ogImage: "https://our-travels.info/foto/Germany/nrw/koln/Rhein-Erft-Kreis/frechen/johann_schmitz_platz_frechen/006.jpg"
         }
     },
@@ -2615,7 +2596,7 @@ const datas = [
         name: "Старая ратуша Фрехена",
         type: ['historical_building'], rating: "local",
         path: "altes_rathaus_frechen",
-        countryPath: "germany", regionsPath: "nrw", districtPath: "koln", cityPath: "frechen",
+        countryPath: "germany", regionPath: "nrw", districtPath: "koln", cityPath: "frechen",
         hiddenFromList: true, showMore: true,
         fotoCard: "Germany/nrw/koln/Rhein-Erft-Kreis/frechen/johann_schmitz_platz_frechen/008.jpg",
         location: "Фрехен, Германия",
@@ -2654,6 +2635,7 @@ const datas = [
             description: "Старая ратуша Фрехена – историческое здание городской администрации с башней на площади Йоханна Шмитца в центре города, Северный Рейн‑Вестфалия.",
             ogTitle: "Старая ратуша Фрехена – Фрехен, Германия",
             ogDescription: "Откройте для себя старую ратушу Фрехена с характерной башней и архитектурой в стиле необарокко на площади Йоханна Шмитца.",
+            keywords: "Старая ратуша Фрехена, Фрехен, достопримечательность, ратуша, историческое здание, городская архитектура, центр города, муниципальное здание, экскурсии, туризм Германия, фото, история города",
             ogImage: "https://our-travels.info/foto/Germany/nrw/koln/Rhein-Erft-Kreis/frechen/johann_schmitz_platz_frechen/008.jpg"
         }
     },
@@ -2662,7 +2644,7 @@ const datas = [
         name: "Фонтан перед ратушей",
         type: ['monument_or_fountain'], rating: "local",
         path: "rathausbrunnen_frechen",
-        countryPath: "germany", regionsPath: "nrw", districtPath: "koln", cityPath: "frechen",
+        countryPath: "germany", regionPath: "nrw", districtPath: "koln", cityPath: "frechen",
         hiddenFromList: true,
         fotoCard: "Germany/nrw/koln/Rhein-Erft-Kreis/frechen/johann_schmitz_platz_frechen/005.jpg",
         short_description: "На площади перед старой ратушей находится декоративный районный фонтан, созданный в 1981 году художником керамистом Вим Мюлендик (Wim Mühlendyck). Он облицован керамическими плитами с рельефными изображениями сцен, отражающими развитие ремесел и керамической промышленности Фрехена – от традиционных мастеров до заводского производства, а разнообразные маскароны (лица) служат характерными водными струями фонтана.",
@@ -2672,22 +2654,23 @@ const datas = [
                 { text: "На площади перед старой ратушей находится декоративный районный фонтан (Rathausbrunnen), созданный в 1981 году художником керамистом Вим Мюлендик (Wim Mühlendyck). Он облицован керамическими плитами с рельефными изображениями сцен, отражающими развитие ремесел и керамической промышленности Фрехена – от традиционных мастеров до заводского производства, а разнообразные маскароны (лица) служат характерными водными струями фонтана." }
             ]
         },
+        sculptors: "Вим Мюлендик (Wim Mühlendyck)",
         coord: { lat: 50.90848, lng: 6.80879 },
         meta: {
             title: "Декоративный районный фонтан – исторический объект перед старой ратушей Фрехена",
             description: "На площади перед старой ратушей находится декоративный районный фонтан, созданный в 1981 году художником керамистом Вимом Мюлендиком (Wim Mühlendyck). Он облицован керамическими плитами с рельефными изображениями сцен, отражающими развитие ремесел и керамической промышленности Фрехена – от традиционных мастеров до заводского производства, а разнообразные маскароны (лица) служат характерными водными струями фонтана.",
             ogTitle: "Декоративный районный фонтан перед старой ратушей Фрехена",
             ogDescription: "Фонтан на площади перед старой ратушей во Фрехене, созданный художником керамистом Вимом Мюлендиком в 1981 году, оформлен керамическими плитами с рельефами сцен ремесел и керамической промышленности и маскаронами с водными струями.",
+            keywords: "фонтан перед ратушей, Фрехен, достопримечательность, городская площадь, ратуша, фонтан, центр города, общественное пространство, прогулки, архитектура, туризм Германия, фото, городская среда",
             ogImage: "https://our-travels.info/foto/Germany/nrw/koln/Rhein-Erft-Kreis/frechen/johann_schmitz_platz_frechen/005.jpg"
         }
-
     },
     {
         id: "klüttenbrunnen_frechen",
         name: "Фонтан Клюттенбрюннен",
         type: ['monument_or_fountain'], rating: "local",
         path: "klüttenbrunnen_frechen",
-        countryPath: "germany", regionsPath: "nrw", districtPath: "koln", cityPath: "frechen",
+        countryPath: "germany", regionPath: "nrw", districtPath: "koln", cityPath: "frechen",
         hiddenFromList: true,
         fotoCard: "Germany/nrw/koln/Rhein-Erft-Kreis/frechen/johann_schmitz_platz_frechen/004.jpg",
         short_description: "В пешеходной зоне в 1986 году установлен скульптурный фонтан Клюттенбрюннен (Klüttenbrunnen), авторства немецкого скульптора Олафа Хёнена. Он расположен в пешеходной зоне рядом с площадью Йоханна Шмитца и отражает промышленную и ремесленную историю Фрехена, в частности добычу и обработку местной глины. Фонтан оформлен как художественная композиция с каменными элементами и водными струями, гармонируя с городской средой и служа визуальным ориентиром для туристов.",
@@ -2697,12 +2680,14 @@ const datas = [
                 { text: "В пешеходной зоне в 1986 году установлен скульптурный фонтан Клюттенбрюннен (Klüttenbrunnen), авторства немецкого скульптора Олафа Хёнена. Он расположен в пешеходной зоне рядом с площадью Йоханна Шмитца и отражает промышленную и ремесленную историю Фрехена, в частности добычу и обработку местной глины. Фонтан оформлен как художественная композиция с каменными элементами и водными струями, гармонируя с городской средой и служа визуальным ориентиром для туристов." }
             ]
         },
+        sculptors: "Олаф Хёнен",
         coord: { lat: 50.90960, lng: 6.80869 },
         meta: {
             title: "Фонтан Клюттенбрюннен (Klüttenbrunnen) – исторический скульптурный объект",
             description: "В пешеходной зоне в 1986 году установлен скульптурный фонтан Клюттенбрюннен (Klüttenbrunnen), авторства немецкого скульптора Олафа Хёнена. Он расположен рядом с площадью Йоханна Шмитца и отражает промышленную и ремесленную историю Фрехена, в частности добычу и обработку местной глины. Фонтан оформлен как художественная композиция с каменными элементами и водными струями, гармонируя с городской средой и служа визуальным ориентиром для туристов.",
             ogTitle: "Фонтан Клюттенбрюннен (Klüttenbrunnen) во Фрехене",
             ogDescription: "Скульптурный фонтан Клюттенбрюннен (Klüttenbrunnen) в пешеходной зоне рядом с площадью Йоханна Шмитца отражает промышленную и ремесленную историю Фрехена, оформлен как художественная композиция с каменными элементами и водными струями.",
+            keywords: "Фонтан Клюттенбрюннен, Фрехен, достопримечательность, фонтан, городской символ, площадь, центр города, общественное пространство, прогулки, архитектура, туризм Германия, фото, городская среда",
             ogImage: "https://our-travels.info/foto/Germany/nrw/koln/Rhein-Erft-Kreis/frechen/johann_schmitz_platz_frechen/004.jpg"
         }
     },
@@ -2711,7 +2696,7 @@ const datas = [
         name: "Церковь Святого Одомара",
         type: ["cathedral"], rating: "local",
         path: "st_audomar_frechen",
-        countryPath: "germany", regionsPath: "nrw", districtPath: "koln", cityPath: "frechen",
+        countryPath: "germany", regionPath: "nrw", districtPath: "koln", cityPath: "frechen",
         fotoCard: "Germany/nrw/koln/Rhein-Erft-Kreis/frechen/st_audomar/001.jpg",
         location: "Фрехен, Германия",
         short_description: "Церковь Святого Одомара (St. Audomar) в Фрехене – историческая римско-католическая церковь. Построена в XIX веке в неороманском стиле, рядом находится старое кладбище (Alter Friedhof) с памятными надгробиями. Это культурный и духовный центр города, сохраняющий многовековую историю прихода.",
@@ -2727,7 +2712,8 @@ const datas = [
         tickets_and_entry: {
             title: "Практическая информация",
             items: [
-                { bold: "Адрес:", text: "Kölner Str. 3, 50226 Frechen, Nordrhein‑Westfalen, Германия" }
+                { bold: "Адрес:", text: "Kölner Str. 3, 50226 Frechen, Nordrhein‑Westfalen, Германия" },
+                { bold: "Конфессия:", text: "римско-католическая церковь" },
             ]
         },
         relics: {
@@ -2756,6 +2742,7 @@ const datas = [
             description: "История и архитектура церкви Святого Одомара в Фрехене с рядом старого кладбища Alter Friedhof.",
             ogTitle: "Церковь Святого Одомара (St. Audomar) – историческая сердце Фрехена",
             ogDescription: "Погрузитесь в историю католической церкви Святого Одомара (St. Audomar) в Фрехене: древняя традиция, неороманская архитектура, старое кладбище и культурные памятники.",
+            keywords: "Церковь Святого Одомара, Фрехен, достопримечательность, церковь, храм, религиозная архитектура, историческое здание, центр города, готика, католическая церковь, туризм Германия, экскурсии, фото, духовное наследие",
             ogImage: "https://our-travels.info/foto/Germany/nrw/koln/Rhein-Erft-Kreis/frechen/st_audomar/001.jpg"
         }
     },
@@ -2764,7 +2751,7 @@ const datas = [
         name: "Евангелическая церковь",
         type: ["cathedral"], rating: "local",
         path: "evangelischeKirche_frechen",
-        countryPath: "germany", regionsPath: "nrw", districtPath: "koln", cityPath: "frechen",
+        countryPath: "germany", regionPath: "nrw", districtPath: "koln", cityPath: "frechen",
         fotoCard: "Germany/nrw/koln/Rhein-Erft-Kreis/frechen/evangelischeKirche/001.jpg",
         location: "Фрехен, Германия",
         officialSite: [{ bold: "Официальный сайт", link: "https://www.kirche-frechen.de/" }],
@@ -2783,7 +2770,8 @@ const datas = [
         tickets_and_entry: {
             title: "Практическая информация",
             items: [
-                { bold: "Адрес:", text: "Hauptstraße 209, 50226 Frechen" }
+                { bold: "Адрес:", text: "Hauptstraße 209, 50226 Frechen" },
+                { bold: "Конфессия:", text: "евангелическая церковь (протестантская)" },
             ]
         },
         relics: {
@@ -2813,6 +2801,7 @@ const datas = [
             description: "Евангелическая церковь Фрехена – историческая протестантская церковь XVIII века в центре города. Узнайте её историю, архитектуру и роль в развитии общины.",
             ogTitle: "Евангелическая церковь Фрехена (Evangelische Kirche Frechen) – историческая протестантская церковь Фрехена",
             ogDescription: "Историческая евангелическая церковь Фрехена, построенная в XVIII веке. Узнайте о развитии протестантской общины и архитектуре этого храма.",
+            keywords: "Евангелическая церковь Фрехена, Фрехен, достопримечательность, церковь, протестантская церковь, религиозная архитектура, историческое здание, центр города, экскурсии, туризм Германия, фото, культурное наследие",
             ogImage: "https://our-travels.info/foto/Germany/nrw/koln/Rhein-Erft-Kreis/frechen/evangelischeKirche/001.jpg"
         }
     },
@@ -2826,7 +2815,7 @@ const datas = [
         name: "Гора Драхенфельс",
         type: ["nature"], rating: "top",
         path: "drachenfels",
-        regionsPath: "nrw", districtPath: "koln", cityPath: "konigswinter",
+        regionPath: "nrw", districtPath: "koln", cityPath: "konigswinter",
         fotoCard: "Germany/nrw/koln/Rhein-Sieg-Kreis/konigswinter/drachenfels/001.jpg",
         location: "между городами Кёнигсвинтер и Бад-Хоннеф, Германия",
         officialSite: [
@@ -2882,6 +2871,7 @@ const datas = [
             description: "Гора Драхенфельс в Кёнигсвинтере – легендарное место Рейнской долины, связанное с мифом о драконе и Зигфриде. Панорамные виды на Рейн, руины замка, природный парк Зибенгебирге и популярные туристические маршруты.",
             ogTitle: "Гора Драхенфельс – легенды и панорамы над Рейном",
             ogDescription: "Откройте для себя гору Драхенфельс: мифы о драконе, виды на Рейн, природный парк Зибенгебирге и историческое значение одной из самых известных гор региона.",
+            keywords: "Гора Драхенфельс, Драхенфельс, Кёнигсвинтер, достопримечательность, гора, смотровая площадка, панорамные виды, Рейн, замок Драхенфельс, туристические места, прогулки, экскурсии, туризм Германия, природа, фото",
             ogImage: "https://our-travels.info/foto/Germany/nrw/koln/Rhein-Sieg-Kreis/konigswinter/drachenfels/001.jpg"
         }
     },
@@ -2890,7 +2880,7 @@ const datas = [
         name: "Железная дорога Драхенфельс",
         type: ["technical_structure"], rating: "popular",
         path: "drachenfelsbahn",
-        countryPath: "germany", regionsPath: "nrw", districtPath: "koln", cityPath: "konigswinter",
+        countryPath: "germany", regionPath: "nrw", districtPath: "koln", cityPath: "konigswinter",
         hiddenFromList: true, showMore: true,
         fotoCard: "Germany/nrw/koln/Rhein-Sieg-Kreis/konigswinter/drachenfels/002.jpg",
         officialSite: [
@@ -2931,6 +2921,7 @@ const datas = [
             description: "Железная дорога Драхенфельса (Drachenfelsbahn) – историческая зубчатая железная дорога 1883 года в Кёнигсвинтере. Соединяет долину Рейна с плато горы Драхенфельс и является одной из главных туристических достопримечательностей региона.",
             ogTitle: "Железная дорога Драхенфельса (Drachenfelsbahn)",
             ogDescription: "Прокатитесь на Drachenfelsbahn – самой старой действующей зубчатой железной дороге Германии с панорамными видами на Рейн и гору Драхенфельс.",
+            keywords: "Железная дорога Драхенфельс, Драхенфельсбан, Кёнигсвинтер, достопримечательность, фуникулёр, горная железная дорога, панорамные виды, Рейн, подъём на гору, туристический транспорт, экскурсии, туризм Германия, фото, путешествия",
             ogImage: "https://our-travels.info/foto/Germany/nrw/koln/Rhein-Sieg-Kreis/konigswinter/drachenfels/002.jpg"
         }
     },
@@ -2939,7 +2930,7 @@ const datas = [
         name: "Дворец Драхенбург",
         type: ["palace_or_castle"], rating: "popular",
         path: "schloss_drachenburg",
-        countryPath: "germany", regionsPath: "nrw", districtPath: "koln", cityPath: "konigswinter",
+        countryPath: "germany", regionPath: "nrw", districtPath: "koln", cityPath: "konigswinter",
         hiddenFromList: true, showMore: true,
         fotoCard: "Germany/nrw/koln/Rhein-Sieg-Kreis/konigswinter/drachenfels/001.jpg",
         officialSite: [
@@ -2990,6 +2981,7 @@ const datas = [
             description: "Дворец Драхенбург (Schloss Drachenburg) расположен на склоне горы Drachenfels в Кёнигсвинтере. Построенный в 1882-1884 годах, замок впечатляет неоготической архитектурой, богатыми интерьерами и панорамными видами на долину Рейна.",
             ogTitle: "Дворец Драхенбург (Schloss Drachenburg)",
             ogDescription: "Посетите дворец Драхенбург – романтический неоготический замок XIX века с историческими залами, витражами и смотровыми террасами с видом на Рейн и гору Drachenfels.",
+            keywords: "Дворец Драхенбург, дворцы, Шлосс Драхенбург, Кёнигсвинтер, достопримечательность, замок, дворец, неоготика, историческая архитектура, Рейн, панорамные виды, экскурсии, туризм Германия, музей, фото, туристические места",
             ogImage: "https://our-travels.info/foto/Germany/nrw/koln/Rhein-Sieg-Kreis/konigswinter/drachenfels/001.jpg"
         }
     },
@@ -2998,12 +2990,13 @@ const datas = [
         name: "Руины замка Драхенфельс",
         type: ["palace_or_castle"], rating: "popular",
         path: "drachenfels_ruins",
-        countryPath: "germany", regionsPath: "nrw", districtPath: "koln", cityPath: "konigswinter",
+        countryPath: "germany", regionPath: "nrw", districtPath: "koln", cityPath: "konigswinter",
         hiddenFromList: true, showMore: true,
         fotoCard: "Germany/nrw/koln/Rhein-Sieg-Kreis/konigswinter/drachenfels/003.jpg",
         construction_period: "XII век (1138–1167) ",
         founder: " кёльнский архиепископ Арнольд фон Вид",
         short_description: "Руины замка Драхенфельс (нем. Ruins of Drachenfels) – это руины средневекового замка XII века, расположенные на вершине одноимённой горы в регионе Siebengebirge. От крепости сохранились фрагменты стен и оснований башен, встроенные прямо в скалу. Замок был разрушен во время Тридцатилетней войны и больше не восстанавливался, поэтому сегодня здесь можно увидеть подлинные исторические руины. С вершины открывается панорамный вид на Рейн и окрестности.",
+        status: "partial", note: "объект представляет собой фрагменты средневековой крепости и частично сохранившиеся оборонительные структуры.",
         full_description: {
             title: "Описание и история",
             items: [
@@ -3031,15 +3024,16 @@ const datas = [
             description: "Руины замка Drachenfels расположены на вершине одноимённой горы в регионе Siebengebirge. Сохранились фрагменты стен и башен, а с вершины открываются панорамные виды на Рейн и Кёнигсвинтер.",
             ogTitle: "Руины замка Драхенфельс (Burg Drachenfels)",
             ogDescription: "Посетите руины замка Drachenfels – средневековой крепости XII века с сохранившимися стенами и башнями, открытыми для посещения и с панорамными видами на долину Рейна.",
+            keywords: "Руины замка Драхенфельс, Драхенфельс, Кёнигсвинтер, достопримечательность, замок, руины, средневековый замок, история, панорамные виды, Рейн, туристические места, экскурсии, туризм Германия, фото, гора Драхенфельс",
             ogImage: "https://our-travels.info/foto/Germany/nrw/koln/Rhein-Sieg-Kreis/konigswinter/drachenfels/003.jpg"
         }
     },
     {
         id: "nibelungenhalle",
-        name: "Зал Нибеленгов",
+        name: "Зал Нибелунгов",
         type: ["museum"], rating: "local",
         path: "nibelungenhalle",
-        countryPath: "germany", regionsPath: "nrw", districtPath: "koln", cityPath: "konigswinter",
+        countryPath: "germany", regionPath: "nrw", districtPath: "koln", cityPath: "konigswinter",
         hiddenFromList: true, showMore: true,
         officialSite: [
             { bold: "Официальный сайт зала Нибеленгов", link: "https://nibelungenhalle.de/" }
@@ -3055,21 +3049,22 @@ const datas = [
                 { bold: "Дополнительно:", text: "музей часто посещают вместе с подъёмом на гору Драхенфельс и посещением Драконьей пещеры. Рекомендуется уточнять актуальные часы работы и цены на официальном сайте." }
             ]
         },
-        short_description: "Зал Нибеленгов (нем. Nibelungenhalle) – музей, построенный в 1913 году на вершине горы Драхенфельс и посвящённый немецкому эпосу о Нибелунгах и легендам о драконах. Здание выполнено в романтическом стиле и создавалось как место, где посетители могли погрузиться в мир средневековых мифов. Рядом находится «Драконья пещера» (Drachenhöhle) — небольшая интерактивная экспозиция, особенно популярная у семей с детьми. Музей часто посещают вместе с подъёмом на Драхенфельс и прогулкой по смотровым площадкам над Рейном.",
+        short_description: "Зал Нибелунгов (нем. Nibelungenhalle) – музей, построенный в 1913 году на вершине горы Драхенфельс и посвящённый немецкому эпосу о Нибелунгах и легендам о драконах. Здание выполнено в романтическом стиле и создавалось как место, где посетители могли погрузиться в мир средневековых мифов. Рядом находится «Драконья пещера» (Drachenhöhle) — небольшая интерактивная экспозиция, особенно популярная у семей с детьми. Музей часто посещают вместе с подъёмом на Драхенфельс и прогулкой по смотровым площадкам над Рейном.",
         full_description: {
             title: "Описание и история",
             items: [
-                { bold: "Зал Нибеленгов (нем. Nibelungenhalle)", text: " – музей на вершине горы Драхенфельс, посвящённый легенде о драконах и мифам немецкой национальной эпики «Песнь о Нибелунгах»." },
+                { bold: "Зал Нибелунгов (нем. Nibelungenhalle)", text: " – музей на вершине горы Драхенфельс, посвящённый легенде о драконах и мифам немецкой национальной эпики «Песнь о Нибелунгах»." },
                 { text: "Архитектура здания выполнена в стиле романтизма, с элементами, напоминающими замки Рейна, что создаёт «сказочную» атмосферу. Внутри музея можно увидеть экспонаты, рассказывающие о средневековой культуре, местных замках и истории Рейна. Особое внимание уделено легенде о драконе Фафнире, охранявшем сокровища, и героях, связанных с эпосом. " },
                 { text: "Рядом находится <b>«Драконья пещера» (нем. Drachenhöhle)</b> – небольшая интерактивная пещера с фигурами драконов, световыми эффектами и звуковым сопровождением, что делает её особенно привлекательной для детей и туристов, которые хотят почувствовать атмосферу легенд." },
             ]
         },
         coord: { lat: 50.67090, lng: 7.20390 },
         meta: {
-            title: "Зал Нибеленгов (Nibelungenhalle) – музей легенд и драконов на горе Драхенфельс",
-            description: "Зал Нибеленгов – музей, построенный в 1913 году на вершине горы Драхенфельс, посвящённый германскому эпосу «Песнь о Нибелунгах» и легендам о драконах. Рядом расположена интерактивная Драконья пещера.",
-            ogTitle: "Зал Нибеленгов (Nibelungenhalle) на горе Драхенфельс",
-            ogDescription: "Посетите Зал Нибеленгов – музей мифов и легенд Германии на вершине Драхенфельса. Экспозиции о Нибелунгах, драконах и интерактивная Драконья пещера с видами на долину Рейна.",
+            title: "Зал Нибелунгов (Nibelungenhalle) – музей легенд и драконов на горе Драхенфельс",
+            description: "Зал Нибелунгов – музей, построенный в 1913 году на вершине горы Драхенфельс, посвящённый германскому эпосу «Песнь о Нибелунгах» и легендам о драконах. Рядом расположена интерактивная Драконья пещера.",
+            ogTitle: "Зал Нибелунгов (Nibelungenhalle) на горе Драхенфельс",
+            ogDescription: "Посетите Зал Нибелунгов – музей мифов и легенд Германии на вершине Драхенфельса. Экспозиции о Нибелунгах, драконах и интерактивная Драконья пещера с видами на долину Рейна.",
+            keywords: "Зал Нибелунгов, Нибелунгенхалле, Кёнигсвинтер, достопримечательность, музей, зал, Нибелунги, мифология, легенды Германии, скульптуры, экскурсии, туризм Германия, Рейн, фото, туристические места",
             ogImage: "https://our-travels.info/foto/Germany/nrw/koln/Rhein-Sieg-Kreis/konigswinter/drachenfels/004.jpg"
         }
     },
@@ -3078,11 +3073,8 @@ const datas = [
         name: "Зоопарк рептилий Драхенфельс",
         type: ["nature"], rating: "local",
         path: "reptile_zoo",
-        countryPath: "germany", regionsPath: "nrw", districtPath: "koln", cityPath: "konigswinter",
+        countryPath: "germany", regionPath: "nrw", districtPath: "koln", cityPath: "konigswinter",
         hiddenFromList: true, showMore: true,
-        // officialSite: [ не рабоает проверить
-        //     { bold: "Официальный сайт зоопарка", link: "https://www.reptilien-zoo-drachenfels.de" }
-        // ],
         fotoCard: "Germany/nrw/koln/Rhein-Sieg-Kreis/konigswinter/drachenfels/005.jpg",
         short_description: "Зоопарк рептилий Драхенфельс (нем. Reptilien-Tierpark Drachenfels) – небольшой, но насыщенный зоологический парк на территории Драхенфельс, специализирующийся на рептилиях и экзотических животных. Здесь можно увидеть змей, ящериц, черепах и других животных, а также принять участие в интерактивных демонстрациях и кормлениях. Посещение зоопарка занимает около 1–1,5 часов и идеально совмещается с подъёмом на гору и другими достопримечательностями Драхенфельс.",
         full_description: {
@@ -3119,6 +3111,7 @@ const datas = [
             description: "Reptile Zoo на горе Драхенфельс – зоологический парк, где можно увидеть змей, ящериц, черепах и редких экзотических животных, а также принять участие в интерактивных демонстрациях и образовательных программах.",
             ogTitle: "Зоопарк рептилий Драхенфельс",
             ogDescription: "Посетите Reptile Zoo на горе Драхенфельс – зоопарк с редкими рептилиями, интерактивными демонстрациями кормления и образовательными программами для детей и взрослых.",
+            keywords: "Зоопарк рептилий Драхенфельс, Кёнигсвинтер, достопримечательность, зоопарк, рептилии, змеи, ящерицы, экзотические животные, террариум, музей живой природы, экскурсии, туризм Германия, семейный отдых, фото",
             ogImage: "https://our-travels.info/foto/Germany/nrw/koln/Rhein-Sieg-Kreis/konigswinter/drachenfels/005.jpg"
         }
     },
@@ -3127,7 +3120,7 @@ const datas = [
         name: "Аббатство Хайстербах",
         type: ["historical_building"], rating: "popular",
         path: "heisterbach_konigswinter",
-        countryPath: "germany", regionsPath: "nrw", districtPath: "koln", cityPath: "konigswinter",
+        countryPath: "germany", regionPath: "nrw", districtPath: "koln", cityPath: "konigswinter",
         fotoCard: "Germany/nrw/koln/Rhein-Sieg-Kreis/konigswinter/heisterbach/001.jpg",
         location: "Кёнигсвинтер, Германия",
         officialSite: [
@@ -3179,6 +3172,7 @@ const datas = [
             description: "Аббатство Хайстербах – бывший цистерцианский монастырь XII века в долине Хайстербах рядом с Кёнигсвинтером. История, значение и посещение исторического комплекса.",
             ogTitle: "Аббатство Хайстербах – средневековый монастырь в долине Хайстербах",
             ogDescription: "Историческое аббатство Хайстербах – один из самых атмосферных памятников средневековой монастырской архитектуры в регионе Зибенгебирге, недалеко от Кёнигсвинтера.",
+            keywords: "Аббатство Хайстербах, руины аббатства, Кёнигсвинтер, достопримечательность, монастырь, цистерцианцы, средневековая Германия, руины, историческое место, легенды, архитектура, экскурсии, туризм Германия, Рейн, фото",
             ogImage: "https://our-travels.info/foto/Germany/nrw/koln/Rhein-Sieg-Kreis/konigswinter/heisterbach/001.jpg"
         }
     },
@@ -3187,7 +3181,7 @@ const datas = [
         name: "Руины хора бывшей монастырской церкви",
         type: ["historical_building"], rating: "local",
         path: "chorruine_heisterbach_konigswinter",
-        countryPath: "germany", regionsPath: "nrw", districtPath: "koln", cityPath: "konigswinter",
+        countryPath: "germany", regionPath: "nrw", districtPath: "koln", cityPath: "konigswinter",
         hiddenFromList: true, showMore: true,
         fotoCard: "Germany/nrw/koln/Rhein-Sieg-Kreis/konigswinter/heisterbach/001.jpg",
         location: "Кенигсвинтер, Германия",
@@ -3195,6 +3189,7 @@ const datas = [
             { bold: "Официальный сайт", link: "https://www.klosterlandschaft-heisterbach.de" }
         ],
         short_description: "Руины хора бывшей монастырской церкви – самая впечатляющая и узнаваемая часть Аббатства Хайстербах. Это единственный фрагмент огромной готической базилики, сохранившийся почти в полном объёме после разрушения монастыря в XIX веке.",
+        status: "partial", note: "представляет собой архитектурный фрагмент сакрального сооружения с частично сохранившимися стенами и конструкциями хора.",
         full_description: {
             title: "Описание и история",
             items: [
@@ -3218,6 +3213,7 @@ const datas = [
             description: "Откройте для себя впечатляющие руины хора аббатства Хайстербах: история, архитектура и уникальные остатки средневекового монастыря в Зибенгебирге.",
             ogTitle: "Руины хора аббатства Хайстербах",
             ogDescription: "Посетите руины хора аббатства Хайстербах и погрузитесь в атмосферу истории средневекового монастыря в сердце Сивенберга.",
+            keywords: "руины хора монастырской церкви, Хайстербах, Кёнигсвинтер, аббатство Хайстербах, достопримечательность, руины, готическая архитектура, монастырь, цистерцианцы, средневековье, историческое место, Германия, Рейн, туристические места, фото",
             ogImage: "https://our-travels.info/foto/Germany/nrw/koln/Rhein-Sieg-Kreis/konigswinter/heisterbach/001.jpg"
         }
     },
@@ -3226,7 +3222,7 @@ const datas = [
         name: "Церковь Святого Петра в Хайстербахе",
         type: ["cathedral"], rating: "local",
         path: "st_peter_heisterbach_konigswinter",
-        countryPath: "germany", regionsPath: "nrw", districtPath: "koln", cityPath: "konigswinter",
+        countryPath: "germany", regionPath: "nrw", districtPath: "koln", cityPath: "konigswinter",
         hiddenFromList: true, showMore: true,
         fotoCard: "Germany/nrw/koln/Rhein-Sieg-Kreis/konigswinter/heisterbach/005.jpg",
         location: "Кёнигсвинтер, Германия",
@@ -3244,6 +3240,13 @@ const datas = [
                 { text: "Церковь Святого Петра в Хайстербахе является живым духовным центром комплекса и органично дополняет исторические руины аббатства, создавая целостное восприятие этого уникального места." }
             ]
         },
+        tickets_and_entry: {
+            title: "Практическая информация",
+            items: [
+                { bold: "Адрес:", text: "Kloster Heisterbach, 53639 Königswinter, Deutschland" },
+                { bold: "Конфессия:", text: "римско-католическая церковь" },
+            ]
+        },
         interestingFacts: {
             title: "Интересные факты",
             items: [
@@ -3259,11 +3262,74 @@ const datas = [
             description: "Церковь Святого Петра в Хайстербахе – католическая церковь 1953–1956 годов на территории бывшего аббатства. История, архитектура, витражи и посещение в Хайстербахе, Кёнигсвинтер.",
             ogTitle: "Церковь Святого Петра в Хайстербахе",
             ogDescription: "Действующая католическая церковь на территории бывшего аббатства Хайстербах. Построена в 1953-1956 годах, с уникальным тимпаном XIII века и впечатляющими витражами.",
+            keywords: "церковь Святого Петра в Хайстербахе, Кёнигсвинтер, аббатство Хайстербах, достопримечательность, церковь, руины, средневековая архитектура, монастырский комплекс, цистерцианцы, история Германии, Рейн, туристические места, готика, фото",
             ogImage: "https://our-travels.info/foto/Germany/nrw/koln/Rhein-Sieg-Kreis/konigswinter/heisterbach/005.jpg"
         }
     },
 
     // arnsberg округ
+    // Dortmund
+    {
+        id: "westfalenpark",
+        name: "Вестфаленпарк",
+        type: ["nature"], rating: "popular",
+        path: "westfalenpark",
+        countryPath: "germany", regionPath: "nrw", districtPath: "city", cityPath: "dortmund",
+        fotoCard: "Germany/nrw/arnsberg/dortmund/westfalenpark/001.jpg",
+        location: "Дортмунд, Германия",
+        officialSite: [{ bold: "Официальный сайт", link: "https://www.dortmund.de/westfalenpark" }],
+        short_description: "Вестфаленпарк – один из крупнейших и самых красивых городских парков Дортмунда. Он известен своими обширными зелёными лужайками, тематическими садами, озёрами и башней Флориан, которая долгое время была самым высоким сооружением города. Парк является популярным местом отдыха, прогулок и проведения культурных мероприятий.",
+        full_description: {
+            title: "Описание и история",
+            items: [
+                { bold: "Вестфаленпарк", text: "– это большой городской парк на юге Дортмунда, занимающий площадь около 70 гектаров. Парк объединяет природные ландшафты, цветочные сады, озёра и зоны отдыха. Благодаря просторным аллеям и ухоженным газонам он стал любимым местом прогулок для жителей города и туристов." },
+                { text: "Особую известность парку придаёт телебашня Florianturm, с обзорной площадки которой открывается панорамный вид на весь Дортмунд и Рурскую область. В парке находится Немецкий розарий с тысячами сортов роз, а также тематические сады, мини-железная дорога и канатная дорога, что делает его интересным для взрослых и детей." },
+                { bold: "История", text: "Современный Вестфаленпарк был создан к Федеральной садовой выставке Bundesgartenschau 1959. Для проведения выставки была преобразована территория бывших сельскохозяйственных угодий и объединена в единый городской парк. Центральным элементом выставки стала башня Florianturm, символ модернизации Дортмунда." },
+                { text: "После окончания выставки парк был сохранён и постепенно развивался. Появились новые тематические сады, водные зоны и игровые площадки для детей. В парке стали регулярно проводиться культурные мероприятия, концерты и фестивали, что укрепило его роль как культурного и рекреационного центра города." },
+                { text: "Сегодня Вестфаленпарк остаётся одним из символов Дортмунда и обязательным местом посещения для туристов. Он сочетает в себе историю, архитектуру, природу и развлечения для всей семьи, предлагая уникальное сочетание культурных и природных достопримечательностей." }
+            ]
+        },
+        tickets_and_entry: {
+            title: "Практическая информация",
+            items: [
+                { bold: "Адрес:", text: "An der Buschmühle 3, 44139 Dortmund" },
+                { bold: "Часы работы", text: "Парк открыт ежедневно с 9:00 до 20:00 (летом) и до 18:00 (зимой)." },
+                { bold: "Вход:", text: "платный (обычно символическая плата)" }
+            ]
+        },
+        sub_objects: {
+            title: "Зоны парка",
+            items: [
+                { bold: "Канатная дорога", text: "Над частью парка проходит канатная дорога Seilbahn im Westfalenpark. Кабинки медленно движутся по канату над зелёными зонами парка и позволяют увидеть парк с высоты. Во время поездки открываются красивые виды на розарий, озёра и башню Florian. <br>Канатная дорога – одно из самых необычных развлечений парка и особенно популярна в тёплое время года." },
+                { bold: "Мини-железная дорога", text: "В парке работает небольшая парковая железная дорога Parkbahn im Westfalenpark. Она проходит по территории парка и делает несколько остановок рядом с основными зонами отдыха. Небольшой поезд особенно популярен у семей с детьми, но им пользуются и взрослые, чтобы быстро перемещаться между разными частями парка." },
+                { bold: "Немецкий розарий", text: "Один из крупнейших розариев Германии с тысячами сортов роз и тематическими цветочными композициями." },
+                { bold: "Башня Florian", text: "Телевизионная и смотровая башня с рестораном и обзорной площадкой." },
+                { bold: "Тематические сады", text: "В парке есть несколько садов, оформленных в разных стилях и посвящённых различным растениям." },
+                { bold: "Озёра и водные зоны", text: "В парке есть несколько искусственных озёр и водоёмов, которые являются важной частью его ландшафта. Вокруг них проходят прогулочные дорожки, установлены скамейки и смотровые площадки. Озёра создают спокойную атмосферу и являются популярным местом для отдыха и фотографий." },
+                { bold: "Детские игровые площадки", text: "В разных частях парка расположены современные игровые зоны для детей с горками, лазательными конструкциями и интерактивными элементами." },
+                { bold: "Концертные и фестивальные площадки", text: "На территории парка есть открытые площадки для концертов и крупных мероприятий. Здесь регулярно проходят фестивали, культурные события и летние концерты под открытым небом." },
+            ]
+        },
+        interestingFacts: {
+            title: "Интересные факты",
+            items: [
+                { bold: "Один из крупнейших розариев Германии", text: "В парке находится Немецкий розарий, где выращивают тысячи сортов роз." },
+                { bold: "Телебашня с панорамой города", text: "Башня Florian долгое время была самым высоким сооружением Дортмунда." },
+                { bold: "Место крупных мероприятий", text: "Вестфаленпарк регулярно принимает концерты, фестивали и городские праздники." }
+            ]
+        },
+        construction_period: "1959 год",
+        architects: "команда ландшафтных архитекторов Bundesgartenschau 1959",
+        coord: { lat: 51.49655, lng: 7.47621 },
+        meta: {
+            title: "Вестфаленпарк в Дортмунде – парк, башня Florian и розарий",
+            description: "Вестфаленпарк — крупнейший городской парк Дортмунда с башней Florian, розарием, озёрами, канатной дорогой и мини-железной дорогой. Идеальное место для прогулок, отдыха и мероприятий.",
+            ogTitle: "Вестфаленпарк – зелёное сердце Дортмунда",
+            ogDescription: "Большой парк с розарием, озёрами и башней Florian. Одно из лучших мест для прогулок и отдыха в Дортмунде.",
+            keywords: "Вестфаленпарк, Дортмунд, достопримечательность, парк, парк развлечений, Рейн-Рур регион, розарий, Florianturm, башня Флориан, прогулки, природа, отдых, семейный парк, Германия, туристические места, фото",
+            ogImage: "https://our-travels.info/foto/Germany/nrw/arnsberg/dortmund/westfalenpark/001.jpg"
+        }
+    },
 
     // Märkischer Kreis
 
@@ -3273,15 +3339,17 @@ const datas = [
         name: "Старый город Люденшайда",
         type: ["historical_area"], rating: "popular",
         path: "altstadt_luedenscheid",
-        countryPath: "germany", regionsPath: "nrw", districtPath: "arnsberg", cityPath: "luedenscheid",
-        fotoCard: "Germany/nrw/arnsberg/Märkischer-Kreis/luedenscheid/001.JPG",
-        subObjects: ["erloeserkirche_luedenscheid", "brunnen_altstadt_luedenscheid"],
+        countryPath: "germany", regionPath: "nrw", districtPath: "arnsberg", cityPath: "luedenscheid",
+        fotoCard: "Germany/nrw/arnsberg/Märkischer-Kreis/luedenscheid/altstadt_luedenscheid/004.jpg",
+        subObjects: ["erloeserkirche_luedenscheid", "brunnen_altstadt_luedenscheid", "stadtbücherei_lüdenscheid"],
+        location: "Люденшайд, районы Innenstadt / Staberg / Knapp, Tinsberg / Kluse, Германия",
         short_description: "Старый город Люденшайда – историческое сердце города с узкими улицами и кольцевой планировкой вокруг церкви Спасителя. Здесь сохранились здания XVIII–XIX веков, остатки крепостной стены и исторический музей, а уютные улочки сочетают прошлое с современной городской жизнью.",
         short_description_subObjects: {
             text: "В старом городе Люденшайда расположены следующие достопримечательности:",
             items: [
                 { bold: "Церковь Спасителя", text: "– историческая церковь с характерной архитектурой, важный культурный объект города." },
                 { bold: "Фонтан в старом городе", text: "– декоративный фонтан на главной площади, популярное место для прогулок и фотографий." },
+                { bold: "Городская библиотека", text: "– одна из старейших публичных библиотек Германии, расположенная в историческом здании." }
             ]
         },
         full_description: {
@@ -3309,7 +3377,8 @@ const datas = [
             description: "Старый город Люденшайда – средневековая часть города с историческими зданиями XVIII–XIX веков, церковью Спасителя, остатками крепостной стены и историческим музеем. Прогуляйтесь по уютным улочкам, чтобы почувствовать атмосферу прошлых веков.",
             ogTitle: "Старый город Люденшайда",
             ogDescription: "Посетите старый город Люденшайда – историческую часть города с барочными домами, Церковью Спасителя, историческим музеем и остатками средневековой крепостной стены.",
-            ogImage: "https://our-travels.info/foto/Germany/nrw/arnsberg/Märkischer-Kreis/luedenscheid/001.JPG"
+            keywords: "старый город Люденшайда, исторический центр Люденшайд, достопримечательность, Германия, Северный Рейн-Вестфалия, архитектура, старый город, прогулки, туристические места, фахверк, центр города, история, фото, Зауэрланд",
+            ogImage: "https://our-travels.info/foto/Germany/nrw/arnsberg/Märkischer-Kreis/luedenscheid/altstadt_luedenscheid/004.jpg"
         }
     },
     {
@@ -3317,9 +3386,9 @@ const datas = [
         name: "Церковь Спасителя",
         type: ["cathedral"], rating: "popular",
         path: "erloeserkirche_luedenscheid",
-        countryPath: "germany", regionsPath: "nrw", districtPath: "arnsberg", cityPath: "luedenscheid",
+        countryPath: "germany", regionPath: "nrw", districtPath: "arnsberg", cityPath: "luedenscheid",
         hiddenFromList: true, showMore: true,
-        fotoCard: "Germany/nrw/arnsberg/Märkischer-Kreis/luedenscheid/erloeserkirche_luedenscheid/001.JPG",
+        fotoCard: "Germany/nrw/arnsberg/Märkischer-Kreis/luedenscheid/altstadt_luedenscheid/erloeserkirche_luedenscheid/001.jpg",
         short_description: "Церковь Спасителя (Erlöserkirche) – старейшая церковь Люденшайда с классицистическим фасадом, эмпорами и лютеранским алтарем. В центре старого города, архитектурная доминанта и культурный центр с концертами и выставками.",
         full_description: {
             title: "Описание и история",
@@ -3337,6 +3406,7 @@ const datas = [
             title: "Практическая информация",
             items: [
                 { bold: "Адрес:", text: "Kirchplatz 11, 58511 Lüdenscheid, Германия" },
+                { bold: "Конфессия:", text: "евангелическая церковь (протестантская)" },
                 { bold: "Доступ. ", text: "Церковь расположена в центре старого города и легко доступна пешком с главных площадей и остановок общественного транспорта. Она открыта для посещения в часы работы прихода." },
             ]
         },
@@ -3363,7 +3433,8 @@ const datas = [
             description: "Церковь Спасителя (Erlöserkirche) – старейшая церковь Люденшайда, построенная в XII веке, с классицистическим фасадом, эмпорами и лютеранским алтарем. Посетите этот исторический храм в центре старого города и почувствуйте атмосферу прошлых веков.",
             ogTitle: "Церковь Спасителя, Люденшайда",
             ogDescription: "Откройте для себя Церковь Спасителя в Люденшайде – исторический храм с башней, эмпорами и лютеранским алтарем, архитектурная доминанта старого города.",
-            ogImage: "https://our-travels.info/foto/Germany/nrw/arnsberg/Märkischer-Kreis/luedenscheid/erloeserkirche_luedenscheid/001.JPG"
+            keywords: "церковь Спасителя Люденшайд, Кристускирхе Люденшайд, достопримечательность, церковь, протестантская церковь, Германия, Северный Рейн-Вестфалия, архитектура, историческое здание, религиозные памятники, центр города, туризм, фото, Зауэрланд",
+            ogImage: "https://our-travels.info/foto/Germany/nrw/arnsberg/Märkischer-Kreis/luedenscheid/altstadt_luedenscheid/erloeserkirche_luedenscheid/001.jpg"
         }
     },
     {
@@ -3371,8 +3442,8 @@ const datas = [
         name: "Фонтан в старом городе",
         type: ["monument_or_fountain"], rating: "local",
         path: "brunnen_altstadt_luedenscheid",
-        countryPath: "germany", regionsPath: "nrw", districtPath: "arnsberg", cityPath: "luedenscheid",
-        fotoCard: "Germany/nrw/arnsberg/Märkischer-Kreis/luedenscheid/altstadt_luedenscheid/001.JPG",
+        countryPath: "germany", regionPath: "nrw", districtPath: "arnsberg", cityPath: "luedenscheid",
+        fotoCard: "Germany/nrw/arnsberg/Märkischer-Kreis/luedenscheid/altstadt_luedenscheid/001.jpg",
         hiddenFromList: true,
         short_description: "Фонтан расположен в историческом Старом городе, на Graf Engelbert Platz – площади, посвящённой первому основателю города. Он был открыт в 1982 году и подарен городу жителями в ходе реконструкции старого города, став одним из символов обновлённой исторической зоны. На торжественном открытии местные власти подчеркнули желание сделать фонтан «сердцем гражданской жизни» старого города. С тех пор он входит в число значимых общественных и культурных объектов Люденшайда. ",
         short_description2: "Фонтан был создан художником и металлистом К.Т.Нойманн, который работал и жил в Люденшайде и внёс значительный вклад в скульптурное оформление города. В дизайне используется фигура герольда (глашатая), символически подчёркивающая исторический момент – объявление городских прав графом Энгельбертом I, основателем Люденшайда. Этот мотив отражён в рельефах и общей тематике композиции.",
@@ -3384,14 +3455,15 @@ const datas = [
             ]
         },
         construction_period: "1982 год",
-        architects: "Фонтан был создан художником и металлистом К.Т.Нойманн",
+        sculptors: "художник и металлист К.Т.Нойманн",
         coord: { lat: 51.21631, lng: 7.63425 },
         meta: {
             title: "Фонтан на площади Графа Энгельберта – исторический фонтан в старом городе Люденшайда",
             description: "Фонтан на площади Графа Энгельберта был создан в 1982 году в ходе реконструкции старого города. Он является одним из символов исторического центра Люденшайда и украшен фигурой герольда, отсылающей к основанию города графом Энгельбертом I.",
             ogTitle: "Фонтан на площади Графа Энгельберта, Люденшайд",
             ogDescription: "Посетите фонтан на площади Графа Энгельберта в Люденшайде – исторический объект старого города, связанный с основанием города и реконструкцией исторического центра.",
-            ogImage: "https://our-travels.info/foto/Germany/nrw/arnsberg/Märkischer-Kreis/luedenscheid/altstadt_luedenscheid/001.JPG"
+            keywords: "фонтан в старом городе Люденшайд, исторический центр, достопримечательность, Германия, Северный Рейн-Вестфалия, старый город, площадь, городской фонтан, архитектура, прогулки, центр города, туристические места, фото, Зауэрланд",
+            ogImage: "https://our-travels.info/foto/Germany/nrw/arnsberg/Märkischer-Kreis/luedenscheid/altstadt_luedenscheid/001.jpg"
         }
     },
     {
@@ -3399,9 +3471,9 @@ const datas = [
         name: "Центральная площадь Люденшайда",
         type: ["square"], rating: "local",
         path: "rathausplatz_luedenscheid",
-        countryPath: "germany", regionsPath: "nrw", districtPath: "arnsberg", cityPath: "luedenscheid",
+        countryPath: "germany", regionPath: "nrw", districtPath: "arnsberg", cityPath: "luedenscheid",
         fotoCard: "Germany/nrw/arnsberg/Märkischer-Kreis/luedenscheid/rathausplatz_lüdenscheid/001.JPG",
-        location: "Люденшайд, Германия",
+        location: "Люденшайд, район Innenstadt / Staberg / Knapp, Германия",
         short_description: "Центральная площадь Люденшайда (Rathausplatz) – это сердце города и важное общественное пространство, расположенное рядом с ратушей и пешеходной зоной. Здесь проходят рынки, городские мероприятия и встречи жителей, а сама площадь служит отправной точкой для знакомства с историческим центром города.",
         full_description: {
             title: "Описание и история",
@@ -3430,6 +3502,7 @@ const datas = [
             description: "Центральная площадь Люденшайда (Rathausplatz) – главное общественное пространство города рядом с ратушей. Здесь проходят рынки, городские мероприятия и встречи жителей, а сама площадь служит отправной точкой для прогулок по центру.",
             ogTitle: "Центральная площадь Люденшайда",
             ogDescription: "Центральная площадь Люденшайда (Rathausplatz) – центральная городская площадь рядом с ратушей, место проведения рынков, праздников и важных городских событий.",
+            keywords: "центральная площадь Люденшайда, площадь ратхауза Люденшайд, ратуша Люденшайд, достопримечательность, Германия, Северный Рейн-Вестфалия, городская площадь, ратхаус, центр города, архитектура, прогулки, городская жизнь, события, туристические места, фото, Зауэрланд",
             ogImage: "https://our-travels.info/foto/Germany/nrw/arnsberg/Märkischer-Kreis/luedenscheid/rathausplatz_lüdenscheid/001.JPG"
         }
     },
@@ -3438,9 +3511,9 @@ const datas = [
         name: "Площадь Штернплац",
         type: ["square"], rating: "local",
         path: "sternplatz",
-        countryPath: "germany", regionsPath: "nrw", districtPath: "arnsberg", cityPath: "luedenscheid",
+        countryPath: "germany", regionPath: "nrw", districtPath: "arnsberg", cityPath: "luedenscheid",
         fotoCard: "Germany/nrw/arnsberg/Märkischer-Kreis/luedenscheid/sternplatz/003.jpg",
-        location: "Люденшайд, Германия",
+        location: "Люденшайд, район Innenstadt / Staberg / Knapp, Германия",
         subObjects: ["onkel_willi_denkmal_sternplatz_luedenscheid", "fontain_sternplatz_luedenscheid"],
         short_description: "Площадь Штернплац (Sternplatz) – центральная площадь Люденшайда, расположенная в пешеходной зоне исторического центра и являющаяся важной точкой городской жизни и встреч.",
         short_description_subObjects: {
@@ -3471,6 +3544,7 @@ const datas = [
             description: "Штернплац (Sternplatz) –   одна из центральных площадей Люденшайда, расположенная в пешеходной зоне исторического центра. Площадь служит важной точкой городской жизни, прогулок и проведения мероприятий.",
             ogTitle: "Штернплац (Sternplatz) в Люденшайде",
             ogDescription: "Штернплац (Sternplatz) –  центральная городская площадь в историческом центре Люденшайда, часть пешеходной зоны и важное общественное пространство города.",
+            keywords: "центральная площадь Люденшайда, Штернплац, достопримечательность, Германия, Северный Рейн-Вестфалия, площадь города, центр города, городская жизнь, архитектура, прогулки, торговый центр города, события, туристические места, фото, Зауэрланд",
             ogImage: "https://our-travels.info/foto/Germany/nrw/arnsberg/Märkischer-Kreis/luedenscheid/sternplatz/003.jpg"
         }
     },
@@ -3479,9 +3553,9 @@ const datas = [
         name: "Памятник дяде Вилли",
         type: ["monument_or_fountain"], rating: "local",
         path: "onkel_willi_denkmal_sternplatz_luedenscheid",
-        countryPath: "germany", regionsPath: "nrw", districtPath: "arnsberg", cityPath: "luedenscheid",
+        countryPath: "germany", regionPath: "nrw", districtPath: "arnsberg", cityPath: "luedenscheid",
         hiddenFromList: true, showMore: true,
-        fotoCard: "Germany/nrw/arnsberg/Märkischer-Kreis/luedenscheid/sternplatz/001.JPG",
+        fotoCard: "Germany/nrw/arnsberg/Märkischer-Kreis/luedenscheid/sternplatz/001.jpg",
         short_description: "Памятник дяде Вилли – бронзовая скульптура на Sternplatz, изображающая типичного жителя Люденшайда с собакой. Является неофициальным символом города и отражает его повседневную, «живую» атмосферу.",
         full_description: {
             title: "Описание и история",
@@ -3493,13 +3567,15 @@ const datas = [
                 { text: "Памятник органично вписан в пространство Sternplatz и является одной из точек притяжения в пешеходной зоне исторического центра." }
             ]
         },
+        sculptors: "Вальдемар Винн (Waldemar Winn)",
         coord: { lat: 51.21639, lng: 7.62917 },
         meta: {
             title: "Памятник дяде Вилли – символ Люденшайда на площади Штернплац ",
             description: "Памятник дяде Вилли на площади Штернплац в Люденшайде – бронзовая скульптура, изображающая типичного жителя города с собакой. Скульптура стала неофициальным символом города и популярной точкой для встреч и фотографий.",
             ogTitle: "Памятник дяде Вилли в Люденшайде",
             ogDescription: "Бронзовая скульптура дяди Вилли на площади Штернплац в историческом центре Люденшайда олицетворяет доброжелательность и повседневную жизнь жителей города. Популярное место среди туристов и горожан.",
-            ogImage: "https://our-travels.info/foto/Germany/nrw/arnsberg/Märkischer-Kreis/luedenscheid/sternplatz/001.JPG"
+            keywords: "памятник дяде Вилли Люденшайд, памятник Онкель Вилли, достопримечательность, Германия, Северный Рейн-Вестфалия, городской памятник, скульптура, центр города, история города, Лидншайд, прогулки, туристические места, фото, Зауэрланд",
+            ogImage: "https://our-travels.info/foto/Germany/nrw/arnsberg/Märkischer-Kreis/luedenscheid/sternplatz/001.jpg"
         }
     },
     {
@@ -3507,7 +3583,7 @@ const datas = [
         name: "Фонтан на площади Штернплац",
         type: ["monument_or_fountain"], rating: "local",
         path: "fontain_sternplatz_luedenscheid",
-        countryPath: "germany", regionsPath: "nrw", districtPath: "arnsberg", cityPath: "luedenscheid",
+        countryPath: "germany", regionPath: "nrw", districtPath: "arnsberg", cityPath: "luedenscheid",
         hiddenFromList: true, showMore: true,
         fotoCard: "Germany/nrw/arnsberg/Märkischer-Kreis/luedenscheid/sternplatz/003.jpg",
         short_description: "Фонтан на площади Штернплац – декоративный водоём в центре площади, созданный в конце 1970 х годов скульптором Куртом Тони Нейманом. Он стал значимым городским объектом и местом отдыха в пешеходной зоне Люденшайда.",
@@ -3521,12 +3597,14 @@ const datas = [
                 { text: "Фонтан не только декоративный, но и служит местом отдыха для жителей и гостей города, особенно в тёплое время года." }
             ]
         },
+        sculptors: "К.Т.Нойманн",
         coord: { lat: 51.21620, lng: 7.62942 },
         meta: {
             title: "Фонтан на площади Штернплац – городской водоём Люденшайда",
             description: "Фонтан на площади Штернплац в Люденшайде – декоративный водоём, созданный в конце 1970-х годов скульптором Куртом Тони Нойманом. Вокруг фонтана расположены таблички с названиями партнёрских городов: Брайхаус, Таганрог, Ден-Хелдер, Лёвен, Мышленице и Ромийи‑сюр‑Сен. Фонтан стал популярным местом отдыха и прогулок на площади.",
             ogTitle: "Фонтан на площади Штернплац в Люденшайде",
             ogDescription: "Декоративный фонтан на площади Штернплац в историческом центре Люденшайда, окружённый табличками с названиями партнёрских городов. Место встреч и отдыха жителей и гостей города.",
+            keywords: "фонтан на площади Штернплац Люденшайд, Штернплац, достопримечательность, Германия, Северный Рейн-Вестфалия, городская площадь, фонтан, центр города, архитектура, прогулки, городская жизнь, события, туристические места, фото, Зауэрланд",
             ogImage: "https://our-travels.info/foto/Germany/nrw/arnsberg/Märkischer-Kreis/luedenscheid/sternplatz/003.jpg"
         }
     },
@@ -3535,9 +3613,9 @@ const datas = [
         name: "Исторический музей Люденшайда",
         type: ["museum"], rating: "local",
         path: "history_museum_luedenscheid",
-        countryPath: "germany", regionsPath: "nrw", districtPath: "arnsberg", cityPath: "luedenscheid",
+        countryPath: "germany", regionPath: "nrw", districtPath: "arnsberg", cityPath: "luedenscheid",
         fotoCard: "Germany/nrw/arnsberg/Märkischer-Kreis/luedenscheid/history_museum_luedenscheid/001.JPG",
-        location: "Люденшайд, Германия",
+        location: "Люденшайд, район Innenstadt / Staberg / Knapp, Германия",
         officialSite: [{ "bold": "Официальный сайт", "link": "https://www.luedenscheid.de/freizeit-und-kultur/kultur/museen-der-stadt-luedenscheid/geschichtsmuseum" }],
         short_description: "Исторический музей Люденшайда – городской музей, посвящённый промышленной и технической истории региона, уникальным коллекциям карт и артефактов, включая узкоколейный поезд и модели дирижаблей. Музей объединён с городской галереей, старым административным зданием и кафе в современном комплексе.",
         full_description: {
@@ -3588,6 +3666,7 @@ const datas = [
             description: "Откройте для себя Исторический музей Люденшайда: узкоколейный поезд, модели дирижаблей, техника пожарной охраны, коллекция карт и артефактов с бронзового века. Посетите музей и музейное кафе в современном комплексе города.",
             ogTitle: "Исторический музей Люденшайда – уникальные экспонаты и коллекции",
             ogDescription: "Посетите Исторический музей Люденшайда: от узкоколейного поезда до коллекции бронзовых застежек, исторических карт и макетов города. Музей и музейное кафе ждут вас в культурном комплексе города.",
+            keywords: "исторический музей Люденшайда, музей города Люденшайд, достопримечательность, Германия, Северный Рейн-Вестфалия, музей, история города, краеведческий музей, экспозиции, культура, старый город, центр города, экскурсии, туризм, фото, Зауэрланд",
             ogImage: "https://our-travels.info/foto/Germany/nrw/arnsberg/Märkischer-Kreis/luedenscheid/history_museum_luedenscheid/001.JPG"
         }
     },
@@ -3596,9 +3675,9 @@ const datas = [
         name: "Псевдоготическая церковь Христа",
         type: ["cathedral"], rating: "popular",
         path: "christuskirche_luedenscheid",
-        countryPath: "germany", regionsPath: "nrw", districtPath: "arnsberg", cityPath: "luedenscheid",
+        countryPath: "germany", regionPath: "nrw", districtPath: "arnsberg", cityPath: "luedenscheid",
         fotoCard: "Germany/nrw/arnsberg/Märkischer-Kreis/luedenscheid/christuskirche/001.jpg",
-        location: "Люденшайд, Германия",
+        location: "Люденшайд, район Innenstadt / Staberg / Knapp, Германия",
         short_description: "Псевдоготическая церковь Христа – крупнейшая протестантская церковь города и важный архитектурный ориентир. Её высокая башня видна из разных точек города и формирует характерный силуэт. Внутреннее пространство рассчитано примерно на 1200 мест и украшено витражами и псевдоготическими элементами. Церковь активно используется для богослужений и культурных мероприятий.",
         full_description: {
             title: "Описание и история",
@@ -3615,7 +3694,7 @@ const datas = [
             title: "Практическая информация",
             items: [
                 { bold: "Адрес:", text: "Bahnhofstraße 59, 58507 Lüdenscheid" },
-                { bold: "Принадлежность:", text: "Евангелическая церковь Вестфалии" },
+                { bold: "Конфессия:", text: "евангелическая церковь (протестантская)" },
                 { bold: "Регулярные богослужения:", text: "<br>Воскресенье в 10:00 (Christuskirche) <br>Ежемесячные мероприятия и концерты – в расписании на официальном сайте общины" },
                 { bold: "Доступность транспорта:", text: "центр города, удобный подъезд пешком и на общественном транспорте." }
             ]
@@ -3635,6 +3714,7 @@ const datas = [
             description: "Крупнейшая евангелическая церковь Люденшайда с башней 61,5 м, построенная в 1902 г., орган Walcker и выразительная неоготическая архитектура.",
             ogTitle: "Псевдоготическая церковь Христа – архитектурный символ города",
             ogDescription: "Историческая евангелическая церковь в сердце Люденшайда: архитектура, орган, культурные мероприятия.",
+            keywords: "псевдоготическая церковь Христа Люденшайд, Кристускирхе Люденшайд, достопримечательность, Германия, Северный Рейн-Вестфалия, церковь, неоготика, псевдоготика, архитектура, религиозное здание, историческая церковь, центр города, Зауэрланд, туризм, фото",
             ogImage: "https://our-travels.info/foto/Germany/nrw/arnsberg/Märkischer-Kreis/luedenscheid/christuskirche/001.jpg"
         }
     },
@@ -3643,9 +3723,9 @@ const datas = [
         name: "Церковь Святого Йозефа и Медарда",
         type: ["cathedral"], rating: "local",
         path: "st_joseph_medardus",
-        countryPath: "germany", regionsPath: "nrw", districtPath: "arnsberg", cityPath: "luedenscheid",
+        countryPath: "germany", regionPath: "nrw", districtPath: "arnsberg", cityPath: "luedenscheid",
         fotoCard: "Germany/nrw/arnsberg/Märkischer-Kreis/luedenscheid/st_joseph_medardus/001.jpg",
-        location: "Люденшайд, Германия",
+        location: "Люденшайд, район Innenstadt / Staberg / Knapp, Германия",
         officialSite: [{ bold: "Официальный сайт", link: "https://www.st-medardus.org" }],
         short_description: "Церковь Святого Йозефа и Медарда – главная католическая приходская церковь города Люденшайд. Построенная в конце XIX века в стиле северогерманской кирпичной готики, она стала важной архитектурной доминантой города. Высокая башня высотой более 54 метров и массивные кирпичные фасады делают её одним из самых заметных исторических зданий Люденшайда.",
         full_description: {
@@ -3692,6 +3772,7 @@ const datas = [
             description: "Церковь Святого Йозефа и Медарда – главная католическая приходская церковь Люденшайда, построенная в 1882-1885 годах в стиле северогерманской кирпичной готики. История, архитектура и интересные факты.",
             ogTitle: "Церковь Святого Йозефа и Медарда – историческая церковь Люденшайда",
             ogDescription: "Неоготическая церковь XIX века с башней высотой более 54 метров – одна из главных исторических достопримечательностей Люденшайда.",
+            keywords: "церковь Святого Йозефа и Медарда Люденшайд, католическая церковь Люденшайд, достопримечательность, Германия, Северный Рейн-Вестфалия, церковь, неоготика, архитектура, религиозное здание, историческая церковь, центр города, Зауэрланд, туризм, фото",
             ogImage: "https://our-travels.info/foto/Germany/nrw/arnsberg/Märkischer-Kreis/luedenscheid/st_joseph_medardus/001.jpg"
         }
     },
@@ -3700,9 +3781,9 @@ const datas = [
         name: "Водохранилище Верзе",
         type: ["nature"], rating: "local",
         path: "versetalsperre_luedenscheid",
-        countryPath: "germany", regionsPath: "nrw", districtPath: "arnsberg", cityPath: "luedenscheid",
-        fotoCard: "Germany/nrw/arnsberg/Märkischer-Kreis/luedenscheid/versetalsperre/001.jpg",
-        location: "Люденшайд, Германия",
+        countryPath: "germany", regionPath: "nrw", districtPath: "arnsberg", cityPath: "luedenscheid",
+        fotoCard: "Germany/nrw/arnsberg/Märkischer-Kreis/luedenscheid/versetalsperre/003_2021.jpg",
+        location: "Люденшайд, район Bierbaum / Höh / Hellersen, Германия",
         short_description: "Водохранилище Верзе (Versetalsperre) – крупное искусственное озеро, созданное плотиной для регулирования уровня воды и питьевого водоснабжения. Вокруг водоёма проложены прогулочные и велосипедные маршруты, а на берегах есть зоны отдыха. Плавание и водные виды спорта запрещены, что сохраняет чистоту воды и делает место популярным для прогулок и наблюдения за природой.",
         full_description: {
             title: "Описание и история",
@@ -3712,8 +3793,15 @@ const datas = [
                 { text: "Природные окрестности водоёма богаты флорой и фауной, а информационные стенды на маршрутах рассказывают о ландшафте, экологии и истории сооружения, делая прогулку познавательной и комфортной." },
                 { bold: "История" },
                 { text: "Строительство водохранилища началось в 1929 году по инициативе Ассоциации Рура (Ruhrverband), чтобы обеспечить питьевую воду и регулировать уровень реки Рур (Ruhr). Первоначальные работы были прерваны в 1930-х из-за экономических трудностей, а затем возобновлены в 1938 году. " },
-                { text: "Во время Второй мировой войны в Хунсвинкеле (Hunswinkel) действовал трудовой лагерь, где заключённые участвовали в строительстве плотины. Многие из них погибли, и позже был установлен мемориал в их память на берегу водоёма." },
-                { text: "Работы завершились к 1951 году, а окончательное оформление и заполнение водохранилища продолжались до 1952 года. С этого времени Верзе (Versetalsperre) функционирует как водохранилище питьевого назначения и объект регулирования рек Ruhr и Lenne, а также как популярное место для прогулок и отдыха." }
+                { text: "Работы завершились к 1951 году, а окончательное оформление и заполнение водохранилища продолжались до 1952 года. С этого времени Верзе (Versetalsperre) функционирует как водохранилище питьевого назначения и объект регулирования рек Ruhr и Lenne, а также как популярное место для прогулок и отдыха." },
+            ]
+        },
+        sub_objects: {
+            title: "Памятные места и сооружения",
+            items: [
+                { img: "Germany/nrw/arnsberg/Märkischer-Kreis/luedenscheid/versetalsperre/011_2026.jpg", bold: "Мемориал у водохранилища Верзе", text: " посвящён жертвам лагеря Хунсвинкель – нацистского лагеря принудительного труда, который находился в долине реки Верзе в 1940-1945 годах. Сегодня место лагеря затоплено водохранилищем, а мемориал установлен рядом и напоминает о тысячах заключённых, использовавшихся при строительстве плотины, из которых не менее 550 погибли из-за тяжёлых условий, голода и насилия." },
+                { img: "Germany/nrw/arnsberg/Märkischer-Kreis/luedenscheid/versetalsperre/001_2020.jpg", bold: "Кламер мост (Klamer Brücke)", text: " – это заметный мост через водохранилище Верзе. Он был построен ещё до наполнения озера и служил важным транспортным переходом при строительстве дамбы и дорог вокруг долины реки Верзе. Сегодня мост используется как пешеходный и автомобильный переход, а рядом с ним находятся парковки и туристические маршруты." },
+                { img: "Germany/nrw/arnsberg/Märkischer-Kreis/luedenscheid/versetalsperre/007_2026.jpg", bold: "Vorsperre", text: " – это предварительная плотина у будущего водохранилища Верзе, построенная в 1933 году на реке Верзе вблизи посёлка Штайнбах. Её создали как временное сооружение для начального накопления воды и подготовки к строительству большой основной дамбы, которая затем стала Versetalsperre. Такая конструкция выполняла важную роль в ранней фазе инженерных работ: она регулирует воду, удерживает загрязнения и осадки, а также улучшает внешний вид зоны при варьировании уровня воды. В итоге Vorsperre помогла обеспечить более стабильный процесс строительства и эксплуатации водохранилища." },
             ]
         },
         tickets_and_entry: {
@@ -3730,28 +3818,28 @@ const datas = [
                 { text: "Водохранилище Верзе – крупнейшая плотина в округе Меркиш по объёму хранения воды." },
                 { text: "Активно используется не только для питьевого водоснабжения, но и для регулирования уровней рек Ruhr и Lenne." },
                 { text: "На маршрутах вокруг водоёма есть природно-образовательная тропа Knax (Knax Naturerlebnispfad) с интерактивными станциями." },
-                { text: "Мемориал в память о жертвах труда в лагере Хунсвинкеле (Hunswinkel) стоит на одном из троп вокруг водохранилища и напоминает о тяжёлой истории строительства." }
             ]
         },
         construction_period: "1929-1952",
         founder: "по инициативе Ассоциации Рура (Ruhrverband)",
         coord: { lat: 51.18321, lng: 7.68336 },
         meta: {
-            title: "Водохранилище Верзе — плотина и водохранилище в Заурланде, Германия",
+            title: "Водохранилище Верзе – плотина и водохранилище в Заурланде, Германия",
             description: "Подробная информация о водохранилище Верзе: история, маршруты, мемориал Хунсвинкеле и прогулки вокруг крупнейшей плотины Меркиш.",
-            ogTitle: "Водохранилище Верзе — природная дестинация и водохранилище в Северном Рейне-Вестфалии",
+            ogTitle: "Водохранилище Верзе – природная дестинация и водохранилище в Северном Рейне-Вестфалии",
             ogDescription: "Узнайте всё о Водохранилище Верзе: от истории строительства и мемориала до прогулок вокруг озера",
-            ogImage: "https://our-travels.info/foto/Germany/nrw/arnsberg/Märkischer-Kreis/luedenscheid/versetalsperre/001.jpg"
+            keywords: "водохранилище Верзе, Верзетальсперре, Люденшайд, достопримечательность, Германия, Северный Рейн-Вестфалия, озеро, дамба, плотина, природа, прогулки, водоем, туризм, отдых на природе, велосипедные маршруты, фото, Зауэрланд",
+            ogImage: "https://our-travels.info/foto/Germany/nrw/arnsberg/Märkischer-Kreis/luedenscheid/versetalsperre/003_2021.jpg"
         }
     },
 
     // Альтена
     {
         id: "burg_altena",
-        name: "Замок Альтена ",
+        name: "Замок Альтена",
         type: ["palace_or_castle", 'museum'], rating: "top",
         path: "burg_altena",
-        countryPath: "germany", regionsPath: "nrw", districtPath: "arnsberg", cityPath: "altena",
+        countryPath: "germany", regionPath: "nrw", districtPath: "arnsberg", cityPath: "altena",
         fotoCard: "Germany/nrw/arnsberg/Märkischer-Kreis/altena/burg/001.jpg",
         location: "Альтена, Германия",
         officialSite: [{ bold: "Официальный сайт", link: "https://www.burg-altena.de/" }],
@@ -3814,9 +3902,123 @@ const datas = [
             description: "Путеводитель по замку Альтена (Burg Altena): история XII века, музеи, первая в мире молодежная хостел гостиница, практическая информация для туристов.",
             ogTitle: "Замок Альтена (Burg Altena) – средневековая крепость и музеи в Германии",
             ogDescription: "Узнайте всё о замке Альтена – от истории его основания в XII веке до современных экспозиций и уникальной молодежной хостел гостиницы.",
-            ogImage: ""
+            keywords: "замок Альтена, Бург Альтена, Альтена Германия, достопримечательность, замок, средневековый замок, крепость, музей замка, история Германии, Северный Рейн-Вестфалия, Зауэрланд, панорамный вид, экскурсии, туризм, фото, старинные замки Германии",
+            ogImage: "https://our-travels.info/foto/Germany/nrw/arnsberg/Märkischer-Kreis/altena/burg/001.jpg"
         }
     },
+    {
+        id: "drahtmuseum_altena",
+        name: "Немецкий музей проволоки",
+        type: ["museum"], rating: "local",
+        path: "drahtmuseum_altena",
+        countryPath: "germany", regionPath: "nrw", districtPath: "arnsberg", cityPath: "altena",
+        fotoCard: "Germany/nrw/arnsberg/Märkischer-Kreis/altena/drahtmuseum/001.jpg",
+        location: "Альтена, Германия",
+        short_description: "Немецкий музей проволоки в Альтене (Deutsches Drahtmuseum) – уникальный технический музей, посвящённый истории производства проволоки и её роли в развитии промышленности, от средневековых технологий до современных высокотехнологичных материалов.",
+        full_description: {
+            title: "Описание и история",
+            items: [
+                { bold: "Немецкий музей проволоки (Deutsches Drahtmuseum)", text: "расположен в городе Альтена, в нескольких минутах ходьбы от замка Альтены. Музей посвящён одному из ключевых ремёсел региона – производству проволоки, которое на протяжении веков играло важную роль в экономике Зауэрланда." },
+                { text: "Экспозиция охватывает путь развития проволоки под концепцией «от кольчуги к сверхпроводнику». Посетители могут увидеть, как из металлических заготовок создаётся проволока, как она используется в промышленности, электронике и даже в искусстве. Особое внимание уделяется не только технологии, но и влиянию отрасли на общество и экономику региона." },
+                { text: "Музей активно использует интерактивные элементы: демонстрации, модели и экспериментальные установки позволяют лучше понять процессы производства. Это делает посещение интересным не только для взрослых, но и для детей." },
+                { bold: "История. ", text: "Регион вокруг Альтены с позднего Средневековья был одним из центров производства проволоки в Европе. Наличие рек и водяных мельниц позволило развивать механизированное производство, а местные мастера постепенно совершенствовали технологии вытягивания металла." },
+                { text: "Сам музей был открыт в 1965 году как специализированное учреждение, посвящённое этой отрасли. Его создание стало частью усилий по сохранению индустриального наследия региона и популяризации технической истории." },
+                { text: "Со временем экспозиция расширялась и модернизировалась, включая современные темы – от промышленного производства до использования проволоки в высоких технологиях и дизайне. Сегодня музей является значимым культурным и образовательным объектом региона." }
+            ]
+        },
+        tickets_and_entry: {
+            title: "Практическая информация",
+            items: [
+                { bold: "Адрес: ", text: "Fritz-Thomée-Straße 12, 58762 Altena, Германия" },
+                { bold: "Часы работы: ", text: "<br>Вторник-воскресенье: 10:00-17:00, <br>понедельник – выходной (рекомендуется уточнять перед посещением)" },
+                { bold: "Стоимость (2025): ", text: "вход бесплатный (по системе «Pay what you want» – можно оставить добровольное пожертвование). Экскурсии оплачиваются отдельно" },
+                { bold: "Как добраться: ", text: "пешком от замка Альтена (Burg Altena) – около 5-10 минут. Из центра города – пешком или на автомобиле. Ближайшая ж/д станция: Altena (Westf), далее пешком около 15-20 минут" }
+            ]
+        },
+        sub_objects: {
+            title: "Экспозиции",
+            items: [
+                { text: "Историческое производство проволоки (ручные и механические методы)" },
+                { text: "Кольчуги и средневековые изделия" },
+                { text: "Промышленная революция и развитие технологий" },
+                { text: "Современные материалы и сверхпроводники" },
+                { text: "Проволока в искусстве и дизайне" }
+            ]
+        },
+        interestingFacts: {
+            title: "Интересные факты",
+            items: [
+                { text: "Альтена исторически считалась одним из крупнейших центров производства проволоки в Германии" },
+                { text: "Проволока использовалась не только в ремесле, но и в ранней промышленности Европы" },
+                { text: "Музей показывает не только технику, но и социальные изменения, связанные с индустриализацией" },
+                { text: "Экспозиции включают как реальные станки, так и современные научные разработки" }
+            ]
+        },
+        construction_period: "1965 год ",
+        coord: { lat: 51.29456, lng: 7.67429 },
+        meta: {
+            title: "Музей проволоки в Альтене (Deutsches Drahtmuseum) – описание, история и экспозиции",
+            description: "Немецкий музей проволоки в Альтене: история производства от кольчуги до современных технологий. Экспозиции, факты и информация для посетителей.",
+            ogTitle: "Музей проволоки в Альтене (Deutsches Drahtmuseum) – необычный музей Германии",
+            ogDescription: "Узнай, как проволока изменила мир – от средневековых кольчуг до высоких технологий. Интерактивный музей в Альтене.",
+            keywords: "немецкий музей проволоки в Альтене, Драхтмузеум Альтена, достопримечательность, Германия, Северный Рейн-Вестфалия, музей, промышленная история, проволока, металлургия, индустриальное наследие, Зауэрланд, экскурсии, интерактивный музей, история производства, туризм, фото",
+            ogImage: "https://our-travels.info/foto/Germany/nrw/arnsberg/Märkischer-Kreis/altena/drahtmuseum/001.jpg"
+        }
+    },
+    {
+        id: "fuelbecketalsperre_altena",
+        name: "Водохранилище Фюльбекке",
+        type: ["nature"], rating: "local",
+        path: "fuelbecketalsperre_altena",
+        countryPath: "germany", regionPath: "nrw", districtPath: "arnsberg", cityPath: "altena",
+        fotoCard: "Germany/nrw/arnsberg/Märkischer-Kreis/altena/fuelbecketalsperre/001_2020.jpg",
+        location: "Альтена / Люденшайд, Северный Рейн-Вестфалия, Германия",
+        short_description: "Водохранилище Фюльбекке (Fuelbecketalsperre) – небольшое живописное водохранилище в регионе Зауэрланд (Sauerland), окружённое лесами и холмами. Построенное в конце XIX века, оно сегодня используется для питьевого водоснабжения. Вокруг водоёма проходит удобный круговой маршрут длиной около 2 км, популярный для прогулок и отдыха на природе. Из-за охраны воды купание и водные виды спорта здесь запрещены.",
+        full_description: {
+            title: "Описание и история",
+            items: [
+                { bold: "Водохранилище Фюльбекке (Fuelbecketalsperre)", text: "небольшое, но исторически значимое водохранилище и плотина на реке Фюльбекке (Fuelbecke) в лесистой части региона Зауэрланд (Sauerland), в земле Северный Рейн Вестфалия, Германия. " },
+                { bold: "История.", text: "Это одна из ранних плотин региона, построенная между 1894 и 1896 годами с целью обеспечения водоснабжения и регулирования уровня воды для промышленных нужд – тогда плотина помогала обеспечивать бесперебойную работу водяных колёс мельниц и заводов в засушливые месяцы. Проект возглавлял инженер проф. Отто Инце (Otto Intze), известный своей практикой в градостроении плотин. " },
+                { text: "Со временем основное назначение водохранилища изменилось: уже к началу XX века оно стало использоваться преимущественно для питьевого водоснабжения." },
+                { bold: "Природа и отдых.", text: "Окрестности водоёма покрыты смешанным лесом Зауэрланд (Sauerland), что делает водохранилище Фюльбекке приятным местом для прогулок, походов, бега или спокойного отдыха вдали от больших дорог. Проложены классические маршруты для пешеходов и даже семейных прогулок; маршрут вокруг водоёма проходит по хорошо утоптанной и лёгкой тропе, подходит детям и не требует специальной подготовки. " },
+                { text: "Озеро также популярно среди рыболовов (право на рыбалку обычно имеют члены местного рыболовного клуба), а информационные щиты вдоль троп дают представление о фауне и флоре региона. " }
+            ]
+        },
+        tickets_and_entry: {
+            title: "Практическая информация",
+            items: [
+                { bold: "Адрес:", text: "Fuelbecker Straße 60, 58762 Altena (между городами Altena и Lüdenscheid), Германия " },
+                { bold: "Ограничения: ", text: "плавание и водные виды спорта запрещены (используется для питьевого водоснабжения) " },
+                { bold: "Вход: ", text: "свободный; вокруг водоёма есть удобные прогулочные маршруты " },
+                { bold: "Тип плотины: ", text: "тяжёлая гравитационная дамба (masonry), построенная по концепции Инце " },
+                { bold: "Высота: ", text: "около 27 м " },
+                { bold: "Длина гребня: ", text: "около 145 м " },
+                { bold: "Объём хранения: ", text: "около 0,7 млн м³ (самое маленькое среди основных водохранилищ в округе Märkischer Kreis) " },
+                { bold: "Водоём: ", text: "протягивается примерно 450 м в длину, максимальная ширина около 240 м " },
+                { bold: "Береговой маршрут: ", text: "более 2 км, прогулка занимает около 30 мин " }
+            ]
+        },
+        interestingFacts: {
+            title: "Интересные факты",
+            items: [
+                { text: "Водохранилище Фюльбекке (Fuelbecketalsperre) – одна из самых старых плотин в регионе Зауэрланд (Sauerland), построенная ещё в конце XIX века. " },
+                { text: "После прохождения службы для промышленности плотина и водоём сохранили своё значение как источник питьевой воды для региона. " },
+                { text: "У водоёма вокруг – тихие, живописные прогулочные дорожки, подходящие для лёгких походов и семейного отдыха. " },
+                { text: "На маршруте можно встретить разнообразных водных и лесных птиц, а также узнать о рыбе, населяющей водоём. " }
+            ]
+        },
+        construction_period: "1894-1896 ",
+        architects: "проф. Отто Инце (Otto Intze)",
+        coord: { lat: 51.24833, lng: 7.66250 },
+        meta: {
+            title: "Водохранилище Фюльбекке (Fuelbecketalsperre) – прогулки в Зауэрланде",
+            description: "Водохранилище Фюльбекке (Fuelbecketalsperre) – живописное место в регионе Зауэрланд (Sauerland), Германия. Лесные маршруты, круговая прогулка и спокойный отдых на природе.",
+            ogTitle: "Водохранилище Фюльбекке – природа и прогулки в Sauerland",
+            ogDescription: "Уютное водохранилище в лесах Зауэрланда: прогулочные тропы, тишина и красивая природа. Купание запрещено из-за питьевого назначения.",
+            keywords: "водохранилище Фюльбекке, Альтена, Фюрвиггетальсперре, Хальвер, достопримечательность, Германия, Северный Рейн-Вестфалия, водохранилище, плотина, дамба, озеро, природа, прогулки, туризм, отдых на природе, Зауэрланд, велосипедные маршруты, фото",
+            ogImage: "https://our-travels.info/foto/Germany/nrw/arnsberg/Märkischer-Kreis/altena/fuelbecketalsperre/001_2020.jpg"
+        }
+    }
 ];
 
 export default datas;

@@ -8,7 +8,7 @@
         padding: 5px;
     }
 
-    &__title {
+    &__name {
         @include h1();
         margin-bottom: 20px;
         text-align: center;
@@ -29,48 +29,62 @@
     &__capital,
     &__population,
     &__area,
-    &__history,
+    &__historyName,
     &__economy,
-    &__culture,
     &__geography,
-    &__cities,
-    &__rivers,
     &__tourism,
     &__notablePeople,
-    &__history,
-    &__symbols,
+    &__briefHistory,
     &__interestingFacts {
         text-align: justify;
         padding: 3px;
+        @include body-text;
 
-        &-bold {
-            @include bold-text;
-        }
-
-        &-text {
+        a {
             @include body-text;
+            text-decoration: none;
+
+            &:hover {
+                text-decoration: underline;
+                cursor: pointer;
+            }
         }
 
-        &-title {
+                h2 {
             @include h3();
-            padding: 20px;
             text-align: center;
-        }
-
-        &-item {
-            display: flex;
-            align-items: flex-start;
-            gap: 10px;
-            margin-bottom: 15px;
-        }
-
-        img {
-            max-width: 200px;
+            margin: 20px 0 10px;
         }
     }
 
-    &__foto {
-        max-width: 300px;
+        &__symbols {
+        .symbol-item {
+            display: flex;
+            gap: 20px;
+            align-items: flex-start;
+            margin-bottom: 30px;
+            @include body-text;
+            text-align: justify;
+        }
+
+        img {
+            width: 150px;
+            flex-shrink: 0;
+        }
+
+        h2 {
+            @include h3();
+            text-align: center;
+            margin: 20px 0 10px;
+        }
+
+        .symbol-content {
+            flex: 1;
+        }
+    }
+
+    &__photo {
+        max-width: 350px;
         height: auto;
         border-radius: 8px;
         margin: 10px 0 10px 10px;
@@ -146,8 +160,8 @@
 // На мобильных убираем
 @media (max-width: 768px) {
 
-    .regions__foto,
-    .regions__foto--right {
+    .regions__photo,
+    .regions__photo--right {
         display: none;
     }
 

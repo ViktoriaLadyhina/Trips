@@ -35,7 +35,6 @@ const Gallery = ({ images }) => {
                 });
             }
         }
-        console.log(container.scrollLeft)
     }, [current]);
 
     return (

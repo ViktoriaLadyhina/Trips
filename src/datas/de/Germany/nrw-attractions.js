@@ -6,22 +6,19 @@ const datas = [
         name: "Altstadt Köln",
         type: ["historical_area"], rating: "top",
         path: "altstadt_koln",
-        countryPath: "germany", regionsPath: "nrw", districtPath: "city", cityPath: "koln",
+        countryPath: "germany", regionPath: "nrw", districtPath: "city", cityPath: "koln_city",
         fotoCard: "Germany/nrw/koln/koln-city/altstadt/005.jpg",
         location: "Köln, Deutschland",
-        subObjects: ["cologne_cathedral", "rathaus_koln", "guerzenich_koln", "miqua", "wallraf_richartz_museum", "roemisch_germanisches_museum", "farina_duftmuseum", "museum_ludwig", "stadtmuseum_koln", "dufthaus_4711_koln", "st_maria_himmelfahrt_koln", "romanische_kirchen_altstadt_koln", "old_towers_koln"],
+        subObjects: ["cologne_cathedral", "rathaus_koln", "guerzenich_koln", "miqua", "wallraf_richartz_museum", "roemisch_germanisches_museum", "farina_duftmuseum", "museum_ludwig", "stadtmuseum_koln", "dufthaus_4711_koln", "st_maria_himmelfahrt_koln", "old_towers_koln", "fischmarkt_koln", "gross_st_martin_koln", "st_maria_im_kapitol_koln", "st_kunibert_koln"],
         short_description_subObjects: {
             text: "In der Altstadt von Köln befinden sich folgende Sehenswürdigkeiten:",
             items: [
-                { bold: "Kölner Dom", text: "– majestätische gotische Kathedrale, das Herz der Altstadt, am Platz vor dem Hauptbahnhof." },
-                {
-                    bold: "Romanische Kirchen der Altstadt von Köln:",
-                    text: `<ul>
-                            <li><b>Groß St. Martin</b> – eine der bekanntesten romanischen Kirchen Kölns mit einem massiven Turm in Form einer Trikonche, der über dem Rheinufer aufragt. Ein Symbol der Silhouette der Altstadt.</li>
-                            <li><b>St. Maria im Kapitol</b> – die größte romanische Kirche Kölns, errichtet an der Stelle eines antiken römischen Tempels. Ein herausragendes Beispiel romanischer Architektur mit Trikonchenplan und historischer Krypta, die Spuren der antiken Vergangenheit bewahrt.</li>
-                        </ul>`
-                },
+                { bold: "🌍Kölner Dom", text: "– majestätische gotische Kathedrale, das Herz der Altstadt, am Platz vor dem Hauptbahnhof." },
+                { bold: "Fischmarkt", text: "– lebhafter historischer Platz in der Altstadt von Köln mit bunten Häusern und der Atmosphäre eines mittelalterlichen Fischmarktes." },
+                { bold: "Groß St. Martin", text: "– eine der bekanntesten romanischen Kirchen Kölns mit einem massiven Turm-Trikonchos, der über der Rheinpromenade aufragt. Ein Symbol des Silhouetts der Altstadt." },
+                { bold: "St. Maria im Kapitol", text: "– die größte romanische Kirche Kölns, erbaut auf dem Gelände eines antiken römischen Tempels. Ein herausragendes Beispiel romanischer Architektur mit Trikonchos-Plan und historischer Krypta, die Spuren der antiken Vergangenheit bewahrt." },
                 { bold: "St. Mariä Himmelfahrt", text: "– die wichtigste Barockkirche Kölns aus dem 17. Jahrhundert, eine ehemalige Jesuitenkirche in der Nähe des Hauptbahnhofs und des Kölner Doms." },
+                { bold: "Basilika St. Kunibert in Köln", text: "– eine romanische Kirche mit massiven Türmen, strengen Formen und ruhiger Atmosphäre, gelegen im nördlichen Teil der Altstadt in der Nähe des Rheins." },
                 { bold: "Gürzenich", text: "– historisches Zunfthaus und Saal in der Nähe des Kölner Doms." },
                 { bold: "Kölner Rathaus", text: "– historisches Stadthaus im Zentrum der Altstadt." },
                 { bold: "Dufthaus 4711", text: "– historisches Gebäude in der Fußgängerzone um die Hohe Straße und Schildergasse." },
@@ -58,19 +55,25 @@ const datas = [
             description: "Entdecken Sie die Altstadt von Köln: enge Gassen, gotische Kathedralen, historische Plätze, Museen und die Rheinuferpromenade. Ein nützlicher Reiseführer für Spaziergänge und Besuchsplanung.",
             ogTitle: "Altstadt Köln – Herz der Geschichte und Kultur der Stadt",
             ogDescription: "Spazieren Sie durch die Altstadt von Köln: historische Gebäude, Museen, Plätze, Brauhäuser und die malerische Rheinuferpromenade. Perfekt für Touristen und Geschichtsinteressierte.",
+            keywords: "Altstadt Köln, Köln, historisches Zentrum, Architektur Köln, touristische Routen, Sehenswürdigkeiten Köln, mittelalterliche Architektur, Stadtrundgang, Kulturerbe, Museen Köln, historische Gebäude, Platz, Türme, Tourismus Deutschland",
             ogImage: "https://our-travels.info/foto/Germany/nrw/koln/koln-city/altstadt/005.jpg"
         }
     },
     {
         id: "cologne_cathedral",
         name: "Kölner Dom",
-        type: ["cathedral"], rating: "top",
-        path: "cologne-cathedral",
-        countryPath: "germany", regionsPath: "nrw", districtPath: "city", cityPath: "koln",
+        type: ["cathedral", "landmark"], rating: "top",
+        path: "cologne_cathedral",
+        countryPath: "germany", regionPath: "nrw", districtPath: "city", cityPath: "koln_city",
         showMore: true, hiddenFromList: true,
         fotoCard: "Germany/nrw/koln/koln-city/koln-cathedral/001.jpg",
-        location: "Köln, Deutschland",
-        address: [{ bold: "Adresse:", text: " Domkloster 4, 50667 Köln, Deutschland" }],
+        loc: {
+            country: "Deutschland",
+            region: "Nordrhein-Westfalen",
+            district: "Stadt mit Kreisstatus",
+            city: "Köln",
+            cityDistrict: "Stadtteil Altstadt-Nord (Bezirk Innenstadt)"
+        },
         officialSite: [
             { bold: 'Offizielle Webseite des Kölner Doms', link: 'https://www.koelner-dom.de/' }
         ],
@@ -99,6 +102,13 @@ const datas = [
                 { bold: "<br>Architektur: Musik des Steins.", text: "Der Kölner Dom ist ein Hymnus auf die Gotik. Seine Proportionen sind perfekt, die Vertikalen steil, und jedes Detail dient einem Ziel – den Blick nach oben zu lenken." },
                 { text: "Die beiden Türme mit einer Höhe von etwa <b>157,4 Metern</b> krönen die Fassade und bilden eine weltweit erkennbare Silhouette. Nach der Fertigstellung 1880 galt der Dom als höchstes Gebäude der Welt; diesen Titel behielt er bis 1884, als das Washington Monument fertiggestellt wurde. Heute bleibt der Kölner Dom der <b>höchste zweispitzige Dom</b> der Welt und eines der beeindruckendsten gotischen Bauwerke Europas – nur das Ulmer Münster mit 161,5 Metern ist höher." },
                 { text: "Das Interieur beeindruckt durch Leichtigkeit – es scheint, als habe der Stein seine Schwere verloren und löse sich im Licht der Glasfenster auf. Der Raum des Hauptschiffs wird von einem Strom goldenen Lichts durchdrungen, und die Glasfenster des 14.–19. Jahrhunderts erzählen von Glauben, Zeit und menschlicher Kunstfertigkeit." }
+            ]
+        },
+        tickets_and_entry: {
+            title: "Praktische Informationen",
+            items: [
+                { bold: "Adresse:", text: "Domkloster 4, 50667 Köln, Deutschland" },
+                { bold: "Konfession:", text: "römisch-katholische Kirche" },
             ]
         },
         relics: {
@@ -134,6 +144,7 @@ const datas = [
             description: "Der Kölner Dom – Symbol der Stadt und Meisterwerk gotischer Architektur. Baugeschichte, Reliquien, Glasfenster, Glocken und Geheimnisse des Doms.",
             ogTitle: "Kölner Dom: Geschichte, Architektur und Reliquien",
             ogDescription: "Tauchen Sie ein in die Geschichte des Kölner Doms – Größe, Reliquien, Architektur und Intrigen des gotischen Meisterwerks.",
+            keywords: "Kölner Dom, Köln, gotische Architektur, historisches Zentrum, touristische Routen, Sehenswürdigkeiten Deutschland, christliche Architektur, religiöse Denkmäler, Türme, Kultstätte, Kulturdenkmal, Tourismus, Führungen, Dom",
             ogImage: "https://our-travels.info/foto/Germany/nrw/koln/koln-city/koln-cathedral/001.jpg"
         }
     },
@@ -142,10 +153,10 @@ const datas = [
         name: "Kölner Rathaus",
         type: ['historical_building'], rating: "popular",
         path: "rathaus_koln",
-        countryPath: "germany", regionsPath: "nrw", districtPath: "city", cityPath: "koln",
+        countryPath: "germany", regionPath: "nrw", districtPath: "city", cityPath: "koln_city",
         showMore: true, hiddenFromList: true,
         fotoCard: "Germany/nrw/koln/koln-city/rathaus-koeln/Rathaus-Köln.jpg",
-        location: "Köln, Deutschland",
+        location: "Köln, Stadtteil Altstadt-Nord (Stadtbezirk Innenstadt), Deutschland",
         address: [{ bold: "Adresse des Kölner Rathauses:", text: "Rathausplatz 2, 50667 Köln, Deutschland" },],
         officialSite: [
             { bold: "Offizielle Website", link: "https://www.stadt-koeln.de/", text: " der Stadt Köln (Rathaus)" },
@@ -192,24 +203,28 @@ const datas = [
             description: "Kölner Rathaus: gotischer Turm, Renaissance-Loggia",
             ogTitle: "Kölner Rathaus: gotischer Turm, Renaissance-Loggia",
             ogDescription: "Das Kölner Rathaus – das älteste Verwaltungsgebäude Deutschlands, vereint gotischen Turm, Renaissance-Loggia und den historischen Hansasaal.",
+            keywords: "Kölner Rathaus, Köln, historisches Zentrum, mittelalterliche Architektur, städtische Architektur, Verwaltungsgebäude, Türme, Sehenswürdigkeiten Köln, Stadtrat, touristische Routen, Kulturerbe, Tourismus Deutschland",
             ogImage: "https://our-travels.info/foto/Germany/nrw/koln/koln-city/rathaus-koeln/Rathaus-Köln.jpg"
         }
     },
     {
         id: "romanische_kirchen_altstadt_koln",
-        name: "Romanische Kirchen der Altstadt von Köln",
+        name: "Romanische Kirchen von Köln",
         type: ["cathedral"], rating: "popular",
         path: "romanische_kirchen_altstadt_koln",
-        countryPath: "germany", regionsPath: "nrw", districtPath: "city", cityPath: "koln",
-        subObjects: ["gross_st_martin_koln", "st_maria_im_kapitol_koln"],
+        countryPath: "germany", regionPath: "nrw", districtPath: "city", cityPath: "koln_city",
+        subObjects: ["gross_st_martin_koln", "st_maria_im_kapitol_koln", "st_gereon_koln", "st_kunibert_koln", "st_aposteln_koln"],
+        mapOpen: "romanische_kirchen_altstadt_koln",
         short_description_subObjects: {
             text: "Auf unserer Website werden aus dieser Liste folgende Kirchen beschrieben:",
             items: [
                 { bold: "Groß St. Martin", text: "– eine der bekanntesten romanischen Kirchen Kölns mit einem massiven Turm-Trikonchos, der über der Rheinpromenade aufragt. Ein Symbol des Silhouetts der Altstadt." },
-                { bold: "St. Maria im Kapitol", text: "– die größte romanische Kirche Kölns, erbaut auf dem Gelände eines antiken römischen Tempels. Ein herausragendes Beispiel romanischer Architektur mit Trikonchos-Plan und historischer Krypta, die Spuren der antiken Vergangenheit bewahrt." }
+                { bold: "St. Maria im Kapitol", text: "– die größte romanische Kirche Kölns, erbaut auf dem Gelände eines antiken römischen Tempels. Ein herausragendes Beispiel romanischer Architektur mit Trikonchos-Plan und historischer Krypta, die Spuren der antiken Vergangenheit bewahrt." },
+                { bold: "St. Gereon Kirche", text: "– eine romanische Kirche mit zwölfeckiger Kuppel, alten Glasfenstern und reichhaltigem historischen Interieur." },
+                { bold: "Basilika St. Aposteln", text: "– eine der 12 romanischen Kirchen Kölns, bekannt für ihren dreikonchigen Chor, ihre mittelalterliche Architektur und ihre Lage am Neumarkt im Stadtzentrum." },
+                { bold: "Basilika St. Kunibert", text: "– eine romanische Kirche mit massiven Türmen, strengen Formen und ruhiger Atmosphäre, gelegen im nördlichen Teil der Altstadt in der Nähe des Rheins." },
             ]
         },
-        hiddenFromList: true, showMore: true,
         fotoCard: "Germany/nrw/koln/koln-city/altstadt/romanische_kirchen/001.jpg",
         location: "Köln, Deutschland",
         officialSite: [{ bold: "Offizielle Webseite", link: "https://romanische-kirchen-koeln.de/" }],
@@ -227,6 +242,7 @@ const datas = [
             description: "Liste der größten romanischen Kirchen Kölns in der Altstadt. Architektur, historische Fakten und kulturelles Erbe der Stadt.",
             ogTitle: "Romanische Kirchen der Altstadt von Köln",
             ogDescription: "Entdecken Sie die 12 größten romanischen Kirchen Kölns, ihre Architektur, Geschichte und Relikte aus dem XI.–XIII. Jahrhundert.",
+            keywords: "romanische Kirchen, Köln, Altstadt, religiöse Architektur, mittelalterliche Kirchen, Architektur Deutschland, historische Kirchen, Kulturerbe, Basiliken, Klöster, Sehenswürdigkeiten Köln, Tourismus Deutschland, Kirchenarchitektur",
             ogImage: "https://our-travels.info/foto/Germany/nrw/koln/koln-city/altstadt/romanische_kirchen/001.jpg"
         }
     },
@@ -235,10 +251,11 @@ const datas = [
         name: "Groß St. Martin",
         type: ["cathedral"], rating: "popular",
         path: "gross_st_martin_koln",
-        countryPath: "germany", regionsPath: "nrw", districtPath: "city", cityPath: "koln",
+        countryPath: "germany", regionPath: "nrw", districtPath: "city", cityPath: "koln_city",
         hiddenFromList: true, showMore: true,
+        map: "romanische_kirchen_altstadt_koln",
         fotoCard: "Germany/nrw/koln/koln-city/altstadt/romanische_kirchen/gross_st_martin/001.jpg",
-        location: "Köln, Deutschland",
+        location: "Köln, Stadtteil Altstadt-Nord (Stadtbezirk Innenstadt), Deutschland",
         officialSite: [
             { bold: "Offizielle Webseite", link: "https://www.romanische-kirchen-koeln.de/willkommen/willkommen" }
         ],
@@ -252,6 +269,13 @@ const datas = [
                 { text: "Architektonisch stellt die Kirche ein typisches Beispiel der Rheinromanik mit einer Trikonche dar – einer seltenen Bauform, bei der drei halbrunde Apsiden eine kleeblattartige Form im östlichen Teil des Gebäudes bilden. Der zentrale Turm erhebt sich über dem Schnittpunkt der Langhäuser und dient seit vielen Jahrhunderten als Orientierungspunkt für die Bewohner und Reisenden." },
                 { text: "Während des Zweiten Weltkriegs wurde die Kirche durch Bomben fast vollständig zerstört. Von dem Gebäude blieben nur Teile der Wände und Fundamente erhalten. Lange Zeit standen die Ruinen als Mahnmal für den Krieg, und erst in der zweiten Hälfte des 20. Jahrhunderts begann eine umfassende Restaurierung. Die vollständige Wiederherstellung wurde in den 1980er Jahren abgeschlossen, wobei die historischen Formen maximal erhalten wurden." },
                 { text: "Heute dient die Kirche wieder als Pfarrkirche und ist gleichzeitig ein wichtiges historisches Denkmal. Sie gehört zu den zwölf großen romanischen Kirchen Kölns und gilt als einer der wichtigsten Punkte auf der touristischen Route durch die Altstadt, da sie geistliche Bedeutung, architektonischen Wert und jahrhundertealte Geschichte der Stadt vereint." }
+            ]
+        },
+        tickets_and_entry: {
+            title: "Praktische Informationen",
+            items: [
+                { bold: "Adresse:", text: "An Groß St. Martin 9–11, 50667 Köln, Deutschland" },
+                { bold: "Konfession:", text: "römisch-katholische Kirche" },
             ]
         },
         interestingFacts: {
@@ -271,6 +295,7 @@ const datas = [
             description: "Groß St. Martin – romanische Kirche in der Altstadt von Köln am Rhein. Geschichte, Architektur, Fakten und Besuchsinformationen.",
             ogTitle: "Groß St. Martin – Symbol der romanischen Kirchen Kölns",
             ogDescription: "Erfahren Sie die Geschichte einer der markantesten Kirchen Kölns mit mächtigem Turm und mittelalterlicher Vergangenheit.",
+            keywords: "Kirche, romanische Architektur, Köln, Altstadt, religiöse Architektur, historisches Gebäude, Sehenswürdigkeiten Deutschland, Turm, Kloster, Mittelalter, Architektur, Tourismus, Stadtpanorama",
             ogImage: "https://our-travels.info/foto/Germany/nrw/koln/koln-city/altstadt/romanische_kirchen/gross_st_martin/001.jpg"
         }
     },
@@ -279,10 +304,11 @@ const datas = [
         name: "Kirche St. Maria im Kapitol",
         type: ["cathedral"], rating: "popular",
         path: "st_maria_im_kapitol_koln",
-        countryPath: "germany", regionsPath: "nrw", districtPath: "city", cityPath: "koln",
+        countryPath: "germany", regionPath: "nrw", districtPath: "city", cityPath: "koln_city",
         hiddenFromList: true, showMore: true,
+        map: "romanische_kirchen_altstadt_koln",
         fotoCard: "Germany/nrw/koln/koln-city/altstadt/romanische_kirchen/stMariaImKapitol/001.jpg",
-        location: "Köln, Deutschland",
+        location: "Köln, Stadtteil Altstadt-Süd (Stadtbezirk Innenstadt), Deutschland",
         officialSite: [{ bold: "Offizielle Webseite", link: "https://www.romanische-kirchen-koeln.de/" }],
         short_description: "Die Kirche St. Maria im Kapitol – die größte romanische Kirche Kölns und eine der zwölf berühmten romanischen Kirchen der Stadt. Sie wurde im 11. Jahrhundert an der Stelle eines römischen Tempels erbaut, der der kapitolinischen Triade – Jupiter, Juno und Minerva – geweiht war. Heute gilt das Bauwerk als eines der wichtigsten Zeugnisse mittelalterlicher Architektur im Rheinland.",
         full_description: {
@@ -303,6 +329,7 @@ const datas = [
             title: "Praktische Informationen",
             items: [
                 { bold: "Adresse: ", text: "Kasinostraße 6, 50676 Köln, Altstadt" },
+                { bold: "Konfession:", text: "römisch-katholische Kirche" },
                 { bold: "Eintritt: ", text: "Kostenlos" },
                 { bold: "Öffnungszeiten: ", text: "Täglich von 9:00 bis 18:00 Uhr geöffnet (kann an Feiertagen variieren)" },
                 { bold: "Barrierefreiheit: ", text: "Teilweise für mobilitätseingeschränkte Besucher zugänglich. Die Krypta hat Stufen" },
@@ -337,6 +364,7 @@ const datas = [
             description: "St. Maria im Kapitol – die größte romanische Kirche Kölns, erbaut im 11. Jahrhundert auf den Überresten eines römischen Tempels. Geschichte, Architektur und mittelalterliche Reliquien.",
             ogTitle: "Kirche St. Maria im Kapitol – Altstadt Köln",
             ogDescription: "St. Maria im Kapitol – eine der ältesten und bedeutendsten Kirchen Kölns, auf den Überresten eines römischen Tempels erbaut, bekannt für ihre geschnitzten Türen aus dem 11. Jahrhundert und die geräumige Krypta.",
+            keywords: "Kirche, romanische Architektur, Köln, Altstadt, religiöse Architektur, historisches Gebäude, Mittelalter, Kloster, Basilika, Dreikonchenanlage, Architektur, Sehenswürdigkeiten Deutschland, Tourismus, historische Kirche",
             ogImage: "https://our-travels.info/foto/Germany/nrw/koln/koln-city/altstadt/romanische_kirchen/stMariaImKapitol/001.jpg"
         }
     },
@@ -345,10 +373,10 @@ const datas = [
         name: "St. Mariä Himmelfahrt",
         type: ["cathedral"], rating: "popular",
         path: "st_maria_himmelfahrt_koln",
-        countryPath: "germany", regionsPath: "nrw", districtPath: "city", cityPath: "koln",
+        countryPath: "germany", regionPath: "nrw", districtPath: "city", cityPath: "koln_city",
         hiddenFromList: true, showMore: true,
-        fotoCard: "Germany/nrw/koln/koln-city/st_maria_himmelfahrt/001.jpg",
-        location: "Köln, Deutschland",
+        fotoCard: "Germany/nrw/koln/koln-city/altstadt/st_maria_himmelfahrt/001.jpg",
+        location: "Köln, Stadtteil Altstadt-Süd (Stadtbezirk Innenstadt), Deutschland",
         short_description: "St. Mariä Himmelfahrt ist eine bedeutende katholische Kirche der Aufnahme Mariens in der Kölner Altstadt. Sie wurde im Barockstil als Jesuitenkirche errichtet, war lange Zeit die zweitgrößte Kirche nach dem Kölner Dom und gehört bis heute zu den wenigen erhaltenen barocken Baudenkmälern der Stadt.",
         full_description: {
             title: "Beschreibung und Geschichte",
@@ -364,7 +392,8 @@ const datas = [
         tickets_and_entry: {
             title: "Praktische Informationen",
             items: [
-                { bold: "Adresse:", text: "Marzellenstraße 30, 50668 Köln, Nordrhein-Westfalen, Deutschland." }
+                { bold: "Adresse:", text: "Marzellenstraße 30, 50668 Köln, Nordrhein-Westfalen, Deutschland." },
+                { bold: "Konfession:", text: "römisch-katholische Kirche" },
             ]
         },
         interestingFacts: {
@@ -383,7 +412,8 @@ const datas = [
             description: "Die historische Barockkirche St. Mariä Himmelfahrt im Zentrum von Köln – eine ehemalige Jesuitenkirche des 17. Jahrhunderts mit reicher Architektur, die nach dem Krieg restauriert wurde. Erfahren Sie mehr über Geschichte, Architektur und interessante Fakten.",
             ogTitle: "St. Mariä Himmelfahrt – historische Barockkirche in Köln",
             ogDescription: "Tauchen Sie ein in die Atmosphäre barocker Architektur im Herzen Kölns! St. Mariä Himmelfahrt ist ein bedeutendes religiöses Bauwerk der Altstadt mit reicher Geschichte und beeindruckendem Innenraum.",
-            ogImage: "https://our-travels.info/foto/Germany/nrw/koln/koln-city/st_maria_himmelfahrt/001.jpg"
+            keywords: "Kirche Mariä Himmelfahrt, Köln, gotische Architektur, historisches Zentrum, religiöse Architektur, Sehenswürdigkeiten Köln, mittelalterliche Kirche, Kloster, Kultstätte, Tourismus Deutschland, Führungen, historische Gebäude",
+            ogImage: "https://our-travels.info/foto/Germany/nrw/koln/koln-city/altstadt/st_maria_himmelfahrt/001.jpg"
         }
     },
     {
@@ -391,10 +421,10 @@ const datas = [
         name: "Gürzenich – historischer Konzertsaal und Zunfthaus in Köln",
         type: ["historical_building"], rating: "popular",
         path: "guerzenich_koln",
-        countryPath: "germany", regionsPath: "nrw", districtPath: "city", cityPath: "koln",
+        countryPath: "germany", regionPath: "nrw", districtPath: "city", cityPath: "koln_city",
         showMore: true, hiddenFromList: true,
-        fotoCard: "Germany/nrw/koln/koln-city/guerzenich_koln/001.jpg",
-        location: "Köln, Deutschland",
+        fotoCard: "Germany/nrw/koln/koln-city/altstadt/guerzenich_koln/001.jpg",
+        location: "Köln, Stadtteil Altstadt-Nord (Stadtbezirk Innenstadt), Deutschland",
         officialSite: [
             { bold: "Offizielle Website", link: "https://koelncongress.de/locations/guerzenich-koeln/" }
         ],
@@ -444,18 +474,19 @@ const datas = [
             description: "Der Gürzenich in Köln wurde in den Jahren 1441–1452 als Gebäude für städtische Feierlichkeiten errichtet. Heute finden hier Konzerte, Bankette und offizielle Empfänge statt.",
             ogTitle: "Gürzenich, Köln – historisches Gebäude und Veranstaltungszentrum",
             ogDescription: "Entdecken Sie den Gürzenich in Köln – ein historisches Bauwerk aus dem 15. Jahrhundert, das nach dem Krieg wiederaufgebaut wurde und heute Konzerte, Karnevalssitzungen und festliche Empfänge beherbergt.",
-            ogImage: "https://our-travels.info/foto/Germany/nrw/koln/koln-city/guerzenich_koln/001.jpg"
+            keywords: "Gürzenich, Köln, historischer Konzertsaal, Zunfthaus, Kulturerbe, historisches Gebäude, Architektur Köln, Musikveranstaltungen, Konzerte, mittelalterliches Gebäude, Sehenswürdigkeiten Köln, Tourismus Deutschland, historische Gebäude, Events",
+            ogImage: "https://our-travels.info/foto/Germany/nrw/koln/koln-city/altstadt/guerzenich_koln/001.jpg"
         }
     },
     {
         id: "roemisch_germanisches_museum",
         name: "Römisch-Germanisches Museum",
         type: ["museum"], rating: "popular",
-        path: "roemisch-germanisches-museum",
-        countryPath: "germany", regionsPath: "nrw", districtPath: "city", cityPath: "koln",
+        path: "roemisch_germanisches_museum",
+        countryPath: "germany", regionPath: "nrw", districtPath: "city", cityPath: "koln_city",
         showMore: true, hiddenFromList: true,
         fotoCard: "Germany/nrw/koln/koln-city/roemisch-germanisches-museum/001.jpg",
-        location: "Köln, Deutschland",
+        location: "Köln, Stadtteil Altstadt-Nord (Stadtbezirk Innenstadt), Deutschland",
         officialSite: [
             { bold: "Offizielle Webseite des Römisch-Germanischen Museums", link: "https://museenkoeln.de/portal/Roemisch-Germanisches-Museum" }
         ],
@@ -499,6 +530,7 @@ const datas = [
             description: "Das Römisch-Germanische Museum ist ein einzigartiges archäologisches Museum in Köln, errichtet über einer römischen Villa. Dionysosmosaik, Glas, Schmuck und Geschichte der Stadt Colonia.",
             ogTitle: "Römisch-Germanisches Museum Köln — Geschichte und Dionysosmosaik",
             ogDescription: "Museum der antiken Colonia: Dionysosmosaik, römisches Glas und Archäologie in Köln. Erfahren Sie, wie die Antike unter der modernen Stadt erhalten blieb.",
+            keywords: "Römisch-Germanisches Museum, Köln, Sehenswürdigkeit, Archäologie, römische Geschichte, Antike, historische Exponate, Museum Köln, Kulturerbe, mittelalterliche Archäologie, alte Funde, Sammlungen, Tourismus Deutschland, historische Artefakte, Führungen",
             ogImage: "https://our-travels.info/foto/Germany/nrw/koln/koln-city/roemisch-germanisches-museum/001.jpg"
         }
     },
@@ -506,11 +538,11 @@ const datas = [
         id: "farina_duftmuseum",
         name: "Duftmuseum im Farina-Haus",
         type: ["museum"], rating: "popular",
-        path: "farina-duftmuseum",
-        countryPath: "germany", regionsPath: "nrw", districtPath: "city", cityPath: "koln",
+        path: "farina_duftmuseum",
+        countryPath: "germany", regionPath: "nrw", districtPath: "city", cityPath: "koln_city",
         showMore: true, hiddenFromList: true,
         fotoCard: "Germany/nrw/koln/koln-city/farina-duftmuseum/001.jpg",
-        location: "Köln, Deutschland",
+        location: "Köln, Stadtteil Altstadt-Nord (Stadtbezirk Innenstadt), Deutschland",
         officialSite: [
             { "bold": "Offizielle Website des Farina-Museums", "link": "https://farina.org/de/duftmuseum/" }
         ],
@@ -552,6 +584,7 @@ const datas = [
             description: "Das Duftmuseum im Farina-Haus, auch bekannt als Haus des Kölnisch Wassers, ist das älteste Duftmuseum in Köln und die Geburtsstätte des berühmten Eau de Cologne. Hier schuf Johann Maria Farina 1709 das erste Eau de Cologne.",
             ogTitle: "Farina-Haus in Köln – Haus des Kölnisch Wassers und Museum des Eau de Cologne",
             ogDescription: "Besuchen Sie das Duftmuseum im Farina-Haus, das auch als Haus des Kölnisch Wassers bekannt ist – die Heimat des legendären Eau de Cologne. Erleben Sie Geschichte, Düfte und die dreihundertjährige Tradition des Eau de Cologne.",
+            keywords: "Farina Duftmuseum, Köln, Sehenswürdigkeit, Parfümerie, historisches Museum, Geschichte der Düfte, Museum Köln, Kulturerbe, Düfte, Ausstellung, Sammlungen, Tourismus Deutschland, Führungen, historisches Gebäude",
             ogImage: "https://our-travels.info/foto/Germany/nrw/koln/koln-city/farina-duftmuseum/001.jpg"
         }
     },
@@ -559,11 +592,11 @@ const datas = [
         id: "museum_ludwig",
         name: "Museum Ludwig",
         type: ["museum"], rating: "popular",
-        path: "museum-ludwig",
-        countryPath: "germany", regionsPath: "nrw", districtPath: "city", cityPath: "koln",
+        path: "museum_ludwig",
+        countryPath: "germany", regionPath: "nrw", districtPath: "city", cityPath: "koln_city",
         showMore: true, hiddenFromList: true,
         fotoCard: "Germany/nrw/koln/koln-city/museum-ludwig/001.jpg",
-        location: "Köln, Deutschland",
+        location: "Köln, Stadtteil Altstadt-Nord (Stadtbezirk Innenstadt), Deutschland",
         officialSite: [
             { bold: "Offizielle Website des Museum Ludwig", link: "https://www.museum-ludwig.de" }
         ],
@@ -603,10 +636,11 @@ const datas = [
         },
         coord: { lat: 50.940951, lng: 6.960385 },
         meta: {
-            title: "Museum Ludwig — Zeitgenössische Kunst in Köln",
+            title: "Museum Ludwig – Zeitgenössische Kunst in Köln",
             description: "Das Museum Ludwig in Köln ist eine der führenden Sammlungen zeitgenössischer Kunst weltweit, gegründet auf der Sammlung des deutschen Industriellen Peter Ludwig und seiner Frau Irene.",
-            ogTitle: "Museum Ludwig — Zeitgenössische Kunst in Köln",
+            ogTitle: "Museum Ludwig – Zeitgenössische Kunst in Köln",
             ogDescription: "Besuchen Sie das Museum Ludwig in Köln, eine der führenden Sammlungen zeitgenössischer Kunst weltweit, gegründet auf der Sammlung des deutschen Industriellen Peter Ludwig und seiner Frau Irene.",
+            keywords: "Museum Ludwig, Köln, Sehenswürdigkeit, moderne Kunst, Museum Köln, Kunstsammlungen, Kulturerbe, Ausstellungen, Pop-Art, Malerei, Skulptur, Tourismus Deutschland, Führungen, historisches Gebäude",
             ogImage: "https://our-travels.info/foto/Germany/nrw/koln/koln-city/museum-ludwig/001.jpg"
         }
     },
@@ -615,9 +649,9 @@ const datas = [
         name: "Schokoladenmuseum",
         type: ["museum"], rating: "popular",
         path: "schokoladenmuseum",
-        countryPath: "germany", regionsPath: "nrw", districtPath: "city", cityPath: "koln",
+        countryPath: "germany", regionPath: "nrw", districtPath: "city", cityPath: "koln_city",
         fotoCard: "Germany/nrw/koln/koln-city/schokoladenmuseum/001.jpg",
-        location: "Köln, Deutschland",
+        location: "Köln, Stadtteil Altstadt-Süd (Stadtbezirk Innenstadt), Deutschland",
         officialSite: [
             {
                 bold: "Offizielle Website des Schokoladenmuseums Köln",
@@ -662,6 +696,7 @@ const datas = [
             description: "Das Schokoladenmuseum in Köln zeigt den Weg des Kakaos von der tropischen Plantage bis zur Schokoladentafel. Besuchen Sie die gläserne Fabrik, den 200-kg-Schokoladenbrunnen und entdecken Sie die Geschichte der süßen Versuchung.",
             ogTitle: "Schokoladenmuseum Köln – Das süßeste Museum Deutschlands",
             ogDescription: "Tauchen Sie ein in die Welt von Kakao und Schokolade in Köln: von alten Zivilisationen bis zur modernen Fabrik und dem berühmten Schokoladenbrunnen.",
+            keywords: "Schokoladenmuseum, Köln, Sehenswürdigkeit, Schokolade, Konditorkunst, Museum Köln, Ausstellungen, Schokoladenherstellung, Kulturerbe, Verkostungen, Tourismus Deutschland, Führungen, historisches Gebäude",
             ogImage: "https://our-travels.info/foto/Germany/nrw/koln/koln-city/schokoladenmuseum/001.jpg"
         }
     },
@@ -670,10 +705,10 @@ const datas = [
         name: "Museum im archäologischen Viertel Köln – MiQua",
         type: ["museum"], rating: "popular",
         path: "miqua",
-        countryPath: "germany", regionsPath: "nrw", districtPath: "city", cityPath: "koln",
+        countryPath: "germany", regionPath: "nrw", districtPath: "city", cityPath: "koln_city",
         showMore: true, hiddenFromList: true,
         fotoCard: "Germany/nrw/koln/koln-city/miqua/001.jpg",
-        location: "Köln, Deutschland",
+        location: "Köln, Stadtteil Altstadt-Nord (Stadtbezirk Innenstadt), Deutschland",
         officialSite: [
             {
                 bold: "Offizielle Website des Museums im archäologischen Viertel Köln – MiQua",
@@ -737,6 +772,7 @@ const datas = [
             description: "MiQua – ein unterirdisches Museum im Zentrum von Köln, das römische, jüdische und mittelalterliche archäologische Schichten der Stadt zeigt.",
             ogTitle: "MiQua – Museum im archäologischen Viertel Köln",
             ogDescription: "Das unterirdische Museum MiQua ermöglicht das Durchschreiten von 2000 Jahren Kölner Geschichte, einschließlich Praetorium, Mikwe und mittelalterlicher Bauten.",
+            keywords: "Museum im Archäologischen Quartier Köln, MiQua, Köln, Sehenswürdigkeit, Archäologie, römische Geschichte, Museum Köln, historische Funde, Kulturerbe, Ausstellungen, Führungen, alte Artefakte, Tourismus Deutschland, mittelalterliche Archäologie",
             ogImage: "https://our-travels.info/foto/Germany/nrw/koln/koln-city/miqua/001.jpg"
         }
     },
@@ -745,10 +781,10 @@ const datas = [
         name: "Wallraf-Richartz-Museum",
         type: ["museum"], rating: "popular",
         path: "wallraf_richartz_museum",
-        countryPath: "germany", regionsPath: "nrw", districtPath: "city", cityPath: "koln",
+        countryPath: "germany", regionPath: "nrw", districtPath: "city", cityPath: "koln_city",
         showMore: true, hiddenFromList: true,
         fotoCard: "Germany/nrw/koln/koln-city/wallraf_richartz_museum/001.jpg",
-        location: "Köln, Deutschland",
+        location: "Köln, Stadtteil Altstadt-Süd (Stadtbezirk Innenstadt), Deutschland",
         officialSite: [
             { bold: "Offizielle Webseite des Museums", link: "http://www.wallraf.museum/en" }
         ],
@@ -793,10 +829,11 @@ const datas = [
         },
         coord: { lat: 50.93729, lng: 6.95837 },
         meta: {
-            title: "Wallraf-Richartz-Museum — Kunst vom Mittelalter bis zum Impressionismus",
+            title: "Wallraf-Richartz-Museum – Kunst vom Mittelalter bis zum Impressionismus",
             description: "Das Wallraf-Richartz-Museum in Köln ist das älteste Museum der Stadt mit Sammlungen von Malerei, Skulptur und Grafik vom Mittelalter bis zum frühen 20. Jh., einschließlich des Fonds Fondation Corboud mit Impressionisten.",
-            ogTitle: "Wallraf-Richartz-Museum — Kunst vom Mittelalter bis zum Impressionismus",
+            ogTitle: "Wallraf-Richartz-Museum – Kunst vom Mittelalter bis zum Impressionismus",
             ogDescription: "Entdecken Sie das Wallraf-Richartz-Museum in Köln: Mittelalterliche und barocke Kunst sowie die Impressionisten-Sammlung Fondation Corboud.",
+            keywords: "Wallraf-Richartz-Museum, Köln, Sehenswürdigkeit, Kunst, Museum Köln, Malerei, Skulptur, Kunstsammlungen, Kulturerbe, Ausstellungen, mittelalterliche Kunst, Tourismus Deutschland, Führungen, historisches Gebäude",
             ogImage: "https://our-travels.info/foto/Germany/nrw/koln/koln-city/wallraf_richartz_museum/001.jpg"
         }
     },
@@ -805,9 +842,9 @@ const datas = [
         name: "Museum für Ostasiatische Kunst",
         type: ["museum"], rating: "popular",
         path: "ostasiatische_kunst_koln",
-        countryPath: "germany", regionsPath: "nrw", districtPath: "city", cityPath: "koln",
+        countryPath: "germany", regionPath: "nrw", districtPath: "city", cityPath: "koln_city",
         fotoCard: "Germany/nrw/koln/koln-city/ostasiatische_kunst_koln/001.jpg",
-        location: "Köln, Deutschland",
+        location: "Köln, Stadtteil Lindenthal (Stadtbezirk Lindenthal), Deutschland",
         officialSite: [
             { bold: "Offizielle Webseite", link: "https://museum-fuer-ostasiatische-kunst.de/Information_e?utm_source=chatgpt.com" }
         ],
@@ -852,6 +889,7 @@ const datas = [
             description: "Entdecken Sie die Kunst Chinas, Koreas und Japans in Köln: buddhistische Malerei, Holzskulpturen, japanische Schirme und traditioneller japanischer Garten.",
             ogTitle: "Museum für Ostasiatische Kunst (Köln)",
             ogDescription: "Besuchen Sie das Museum in Köln mit einer einzigartigen Sammlung ostasiatischer Kunst: Malerei, Skulpturen, japanische Schirme und ein schöner japanischer Garten.",
+            keywords: "Museum für Ostasiatische Kunst, Köln, Sehenswürdigkeit, ostasiatische Kunst, Museum Köln, asiatische Kultur, Ausstellungen, Kunstsammlungen, Kulturerbe, Skulptur, Malerei, Tourismus Deutschland, Führungen, historisches Gebäude",
             ogImage: "https://our-travels.info/foto/Germany/nrw/koln/koln-city/ostasiatische_kunst_koln/001.jpg"
         }
     },
@@ -860,9 +898,9 @@ const datas = [
         name: "Museum Schnütgen",
         type: ["museum", 'cathedral'], rating: "popular",
         path: "museum_schnuetgen_koln",
-        countryPath: "germany", regionsPath: "nrw", districtPath: "city", cityPath: "koln",
+        countryPath: "germany", regionPath: "nrw", districtPath: "city", cityPath: "koln_city",
         fotoCard: "Germany/nrw/koln/koln-city/schnuetgen/001.jpg",
-        location: "Köln, Deutschland",
+        location: "Köln, Stadtteil Neustadt-Süd (Stadtbezirk Innenstadt), Deutschland",
         officialSite: [
             { bold: "Offizielle Webseite", link: "https://museum-schnuetgen.de/" }
         ],
@@ -911,10 +949,11 @@ const datas = [
         founder: "Alexander Schnütgen – katholischer Theologe und Sammler, der christliche Kunstwerke in ganz Europa zusammengetragen hat. Seine private Sammlung bildete die Grundlage des Museums",
         coord: { lat: 50.93472, lng: 6.95144 },
         meta: {
-            title: "Museum Schnütgen in Köln — mittelalterliche Kunst",
+            title: "Museum Schnütgen in Köln – mittelalterliche Kunst",
             description: "Das Museum Schnütgen in Köln – ein einzigartiges Museum für mittelalterliche Kunst im Gebäude der romanischen Kirche aus dem 12. Jahrhundert. Skulpturen, Reliquiare, Glasfenster und kirchliche Schätze.",
-            ogTitle: "Museum Schnütgen — mittelalterliche Kunst in einer alten Kirche",
+            ogTitle: "Museum Schnütgen – mittelalterliche Kunst in einer alten Kirche",
             ogDescription: "Besuchen Sie das Museum Schnütgen – eines der atmosphärischsten Museen Kölns, untergebracht in der romanischen Kirche des 12. Jahrhunderts mit einer Sammlung seltener mittelalterlicher Kunst.",
+            keywords: "Schnütgen-Museum, Köln, Sehenswürdigkeit, mittelalterliche Kunst, Museum Köln, Kunstsammlungen, Kulturerbe, Skulptur, Reliquien, Ausstellungen, Tourismus Deutschland, Führungen, historisches Gebäude",
             ogImage: "https://our-travels.info/foto/Germany/nrw/koln/koln-city/schnuetgen/001.jpg"
         }
     },
@@ -923,9 +962,9 @@ const datas = [
         name: "Rautenstrauch-Joest-Museum",
         type: ["museum"], rating: "popular",
         path: "rautenstrauch_joest_museum_koln",
-        countryPath: "germany", regionsPath: "nrw", districtPath: "city", cityPath: "koln",
+        countryPath: "germany", regionPath: "nrw", districtPath: "city", cityPath: "koln_city",
         fotoCard: "Germany/nrw/koln/koln-city/rautenstrauch_joest_museum/001.jpg",
-        location: "Köln, Deutschland",
+        location: "Köln, Stadtteil Neustadt-Süd (Stadtbezirk Innenstadt), Deutschland",
         officialSite: [
             { bold: "Offizielle Website", link: "https://www.rautenstrauch-joest-museum.de/Startseite" }
         ],
@@ -975,6 +1014,7 @@ const datas = [
             description: "Das Rautenstrauch-Joest-Museum in Köln ist eines der größten ethnologischen Museen Deutschlands. Ausstellungen zu Weltkulturen, Sammlungen, Geschichte, Öffnungszeiten und Preise.",
             ogTitle: "Rautenstrauch-Joest-Museum – Weltkulturen im Zentrum von Köln",
             ogDescription: "Modernes ethnologisches Museum mit einzigartigen Sammlungen der Kulturen der Welt, interaktiven Ausstellungen und Sonderprojekten in Köln.",
+            keywords: "Rautenstrauch-Joest-Museum, Köln, Sehenswürdigkeit, Ethnographie, Weltkultur, Museum Köln, Kunstsammlungen, Ausstellungen, Kulturerbe, Tourismus Deutschland, Führungen, historisches Gebäude, Volkskunst",
             ogImage: "https://our-travels.info/foto/Germany/nrw/koln/koln-city/rautenstrauch_joest_museum/001.jpg"
         }
     },
@@ -983,10 +1023,10 @@ const datas = [
         name: "Duft-Haus 4711",
         type: ["museum"], rating: "popular",
         path: "dufthaus_4711_koln",
-        countryPath: "germany", regionsPath: "nrw", districtPath: "city", cityPath: "koln",
+        countryPath: "germany", regionPath: "nrw", districtPath: "city", cityPath: "koln_city",
         showMore: true, hiddenFromList: true,
         fotoCard: "Germany/nrw/koln/koln-city/dufthaus_4711/001.jpg",
-        location: "Köln, Deutschland",
+        location: "Köln, Stadtteil Altstadt-Nord (Stadtbezirk Innenstadt), Deutschland",
         officialSite: [
             { bold: "Offizielle Website", link: "https://4711.com/" }
         ],
@@ -1037,6 +1077,7 @@ const datas = [
             description: "Besuchen Sie das historische Duft-Haus 4711 im Zentrum von Köln: Flagship-Store, Ausstellung über das berühmte Eau de Cologne, Führungen und Duft-Workshops.",
             ogTitle: "Duft-Haus 4711 – Legende von Köln und originaler Duft",
             ogDescription: "Entdecken Sie das Duft-Haus 4711: historisches Gebäude, Markenstore, Ausstellung und Führungen über das berühmte Kölnisch Wasser. Ideal für Touristen und Duftliebhaber.",
+            keywords: "Haus des Eau de Cologne 4711, Köln, Sehenswürdigkeit, Kölnisch Wasser, Parfümerie, Museum Köln, Parfumgeschichte, Kulturerbe, Ausstellungen, Verkostungen, Tourismus Deutschland, Führungen, historisches Gebäude",
             ogImage: "https://our-travels.info/foto/Germany/nrw/koln/koln-city/dufthaus_4711/001.jpg"
         }
     },
@@ -1045,9 +1086,9 @@ const datas = [
         name: "Museum für Angewandte Kunst",
         type: ["museum"], rating: "popular",
         path: "makk_museum_koln",
-        countryPath: "germany", regionsPath: "nrw", districtPath: "city", cityPath: "koln",
+        countryPath: "germany", regionPath: "nrw", districtPath: "city", cityPath: "koln_city",
         fotoCard: "Germany/nrw/koln/koln-city/makk_museum/001.JPG",
-        location: "Köln, Deutschland",
+        location: "Köln, Stadtteil Altstadt-Nord (Stadtbezirk Innenstadt), Deutschland",
         officialSite: [
             { bold: "Offizielle Website", link: "https://makk.de/" }
         ],
@@ -1095,6 +1136,7 @@ const datas = [
             description: "Museum für Angewandte Kunst Köln: Möbel, Textilien, Schmuck und Design vom Mittelalter bis heute. Adresse, Öffnungszeiten, Eintritt und Ausstellungen.",
             ogTitle: "Museum für Angewandte Kunst Köln – Sammlungen und Ausstellungen",
             ogDescription: "Entdecken Sie einzigartige Objekte des Designs und Kunsthandwerks verschiedener Epochen im Museum für Angewandte Kunst Köln. Besucherinformationen und Details.",
+            keywords: "Museum für Angewandte Kunst, Köln, Sehenswürdigkeit, dekorative Kunst, Museum Köln, Design, Keramik, Textilien, Ausstellungen, Kulturerbe, Tourismus Deutschland, Führungen, historisches Gebäude",
             ogImage: "https://our-travels.info/foto/Germany/nrw/koln/koln-city/makk_museum/001.JPG"
         }
     },
@@ -1103,10 +1145,10 @@ const datas = [
         name: "Kölnisches Stadtmuseum",
         type: ["museum"], rating: "popular",
         path: "stadtmuseum_koln",
-        countryPath: "germany", regionsPath: "nrw", districtPath: "city", cityPath: "koln",
+        countryPath: "germany", regionPath: "nrw", districtPath: "city", cityPath: "koln_city",
         showMore: true, hiddenFromList: true,
         fotoCard: "Germany/nrw/koln/koln-city/stadtmuseum/001.jpg",
-        location: "Köln, Deutschland",
+        location: "Köln, Stadtteil Altstadt-Nord (Stadtbezirk Innenstadt), Deutschland",
         officialSite: [
             { bold: "Offizielle Website", link: "https://www.koelnisches-stadtmuseum.de" }
         ],
@@ -1153,6 +1195,7 @@ const datas = [
             description: "Besuchen Sie das Kölnische Stadtmuseum in Köln – ein modernes Stadtmuseum mit einer reichen Dauerausstellung und wechselnden Ausstellungen, die Kultur, Gesellschaft und Traditionen Kölns offenbaren. Adresse, Eintritt, Öffnungszeiten.",
             ogTitle: "Kölnisches Stadtmuseum – Geschichte von Köln",
             ogDescription: "Erfahren Sie die Geschichte von Köln durch einzigartige Objekte, interaktive Ausstellungen und moderne Präsentationen im Kölnischen Stadtmuseum.",
+            keywords: "Kölnisches Stadtmuseum, Köln, Sehenswürdigkeit, Stadtgeschichte, Museum Köln, Ausstellungen, Kulturerbe, städtisches Leben, Tourismus Deutschland, Führungen, historisches Gebäude, Archäologie",
             ogImage: "https://our-travels.info/foto/Germany/nrw/koln/koln-city/stadtmuseum/001.jpg"
         }
     },
@@ -1161,9 +1204,9 @@ const datas = [
         name: "Deutsches Sport & Olympia Museum",
         type: ["museum"], rating: "popular",
         path: "sport_olympia_museum_koln",
-        countryPath: "germany", regionsPath: "nrw", districtPath: "city", cityPath: "koln",
+        countryPath: "germany", regionPath: "nrw", districtPath: "city", cityPath: "koln_city",
         fotoCard: "Germany/nrw/koln/koln-city/sport_olympia_museum/001.jpg",
-        location: "Köln, Deutschland",
+        location: "Köln, Stadtteil Altstadt-Süd (Stadtbezirk Innenstadt), Deutschland",
         officialSite: [
             { bold: "Offizielle Website", link: "https://sportmuseum.de/" }
         ],
@@ -1211,6 +1254,7 @@ const datas = [
             description: "Entdecken Sie 2.500 Jahre Sport- und Olympiageschichte im Museum in Köln: Exponate, interaktive Ausstellungen, Dach-Sportflächen und Sonderausstellungen.",
             ogTitle: "Deutsches Sport & Olympia Museum – Sportmuseum in Köln",
             ogDescription: "Tauchen Sie ein in die Geschichte des Sports von der Antike bis heute: über 2.000 Exponate, olympische Medaillen, interaktive Zonen und einzigartige Sportflächen auf dem Dach.",
+            keywords: "Deutsches Sport & Olympia Museum, Köln, Sehenswürdigkeit, Sport, Olympische Spiele, Museum Köln, Sportgeschichte, Ausstellungen, Kulturerbe, Tourismus Deutschland, Führungen, historisches Gebäude",
             ogImage: "https://our-travels.info/foto/Germany/nrw/koln/koln-city/sport_olympia_museum/001.jpg"
         }
     },
@@ -1219,9 +1263,9 @@ const datas = [
         name: "Photographische Sammlung des SK Kulturfonds",
         type: ["museum"], rating: "local",
         path: "photographische_sammlung_sk_stiftung_kultur_koln",
-        countryPath: "germany", regionsPath: "nrw", districtPath: "city", cityPath: "koln",
+        countryPath: "germany", regionPath: "nrw", districtPath: "city", cityPath: "koln_city",
         fotoCard: "Germany/nrw/koln/koln-city/photographische_sammlung_sk_stiftung_kultur/001.jpg",
-        location: "Köln, Deutschland",
+        location: "Köln, Stadtteil Neustadt-Nord (Stadtbezirk Innenstadt), Deutschland",
         officialSite: [
             { bold: "Offizielle Webseite", link: "https://www.photographie-sk-kultur.de/" }
         ],
@@ -1267,6 +1311,7 @@ const datas = [
             description: "Erfahren Sie mehr über dokumentarische und konzeptionelle Fotografie in Köln: größtes Archiv von August Sander, Ausstellungen klassischer und zeitgenössischer Fotografen.",
             ogTitle: "Photographische Sammlung des SK Kulturfonds — Museum für Fotografie in Köln",
             ogDescription: "Tauchen Sie ein in die Welt der dokumentarischen und konzeptionellen Fotografie: Archiv von August Sander, internationale Projekte, wechselnde Ausstellungen und Bildungsprogramme.",
+            keywords: "Fotografische Sammlung der Kulturstiftung SK, Köln, Sehenswürdigkeit, Fotografie, zeitgenössische Kunst, Museum Köln, Sammlungen, Ausstellungen, Kulturerbe, Tourismus Deutschland, Führungen, historisches Gebäude",
             ogImage: "https://our-travels.info/foto/Germany/nrw/koln/koln-city/photographische_sammlung_sk_stiftung_kultur/001.jpg"
         }
     },
@@ -1275,7 +1320,7 @@ const datas = [
         name: "Kölner Rheinbrücken",
         type: ["technical_structure"], rating: "popular",
         path: "koln_bridges",
-        countryPath: "germany", regionsPath: "nrw", districtPath: "city", cityPath: "koln",
+        countryPath: "germany", regionPath: "nrw", districtPath: "city", cityPath: "koln_city",
         fotoCard: "Germany/nrw/koln/koln-city/koln_bridges/001.jpg",
         location: "Köln, Deutschland",
         construction_period: "Verschiedene Bauphasen, 20.–21. Jahrhundert",
@@ -1296,7 +1341,7 @@ const datas = [
                 { "bold": "2. Rheinbrücke Merkenich:", "text": "Verbindet die Stadtteile Merkenich und Flittard und bedient die nördlichen Industriegebiete. Erbaut in den 1970er Jahren. Die Konstruktion ist speziell auf das industrielle Umfeld ausgelegt. <br><b>Interessante Tatsache:</b> Diese Brücke wurde mit besonders strengen Umweltauflagen geplant – wegen der Nähe großer Chemiewerke." },
                 { "bold": "3. Niehler Hafenbrücke:", "text": "Eine Arbeitsbrücke und die Haupteinfahrt zum Hafen Niehler Hafen. Wird überwiegend vom Güterverkehr genutzt. <br><b>Interessante Tatsache:</b> Der Hafen gehört zu den modernsten Binnenhäfen Deutschlands, und diese Brücke ist für seine Logistik von entscheidender Bedeutung." },
                 { img: "Germany/nrw/koln/koln-city/koln_bridges/004.jpg", bold: "4. Mülheimer Brücke:", "text": "Eine große Hängebrücke, die Mülheim und Riehl verbindet. Eröffnet im Jahr 1929, nach dem Krieg wiederaufgebaut. Sie führt sowohl Autos als auch Straßenbahnen.<br><b>Interessante Tatsache:</b> Von 2014 bis 2024 wurde die Brücke einer der umfangreichsten Sanierungen in der Stadtgeschichte unterzogen." },
-                { "bold": "5. Zoobrücke:", "text": "Eine breite Autobrücke und Teil des Kölner Rings (Innerer Ring). Eröffnet in den 1960er Jahren, mit charakteristischer bogenförmiger Struktur.<br><b>Interessante Tatsache:</b> Ganz in der Nähe befindet sich die einzige Seilbahn Deutschlands, die einen großen Fluss überquert – die Kölner Seilbahn." },
+                { img: "Germany/nrw/koln/koln-city/koln_bridges/009.jpg", bold: "5. Zoobrücke:", "text": "Eine breite Autobrücke und Teil des Kölner Rings (Innerer Ring). Eröffnet in den 1960er Jahren, mit charakteristischer bogenförmiger Struktur.<br><b>Interessante Tatsache:</b> Ganz in der Nähe befindet sich die einzige Seilbahn Deutschlands, die einen großen Fluss überquert – die Kölner Seilbahn." },
                 { img: "Germany/nrw/koln/koln-city/koln_bridges/001.jpg", "bold": "6. Hohenzollernbrücke:", "text": "Eine Eisenbahn- und Fußgängerbrücke – eines der Wahrzeichen Kölns. Täglich passieren bis zu 1200 Züge, was sie zu einer der meistbefahrenen Brücken Europas macht." },
                 { img: "Germany/nrw/koln/koln-city/koln_bridges/005.jpg", "bold": "Interessante Tatsache:", "text": "Dies ist die berühmte „Liebesbrücke“: Paare aus verschiedenen Ländern befestigen Liebesschlösser am Geländer und werfen die Schlüssel in den Rhein. Ihre Anzahl geht in die Hunderttausende, das Gewicht in mehrere Tonnen. <br>Von der Brücke bietet sich der beste Blick auf den Kölner Dom, besonders abends, wenn die Beleuchtung eingeschaltet wird. " },
                 { img: "Germany/nrw/koln/koln-city/koln_bridges/006.jpg", "bold": "7. Deutzer Brücke:", "text": "Verbindet die Kölner Innenstadt mit dem Stadtteil Deutz, wo sich die KölnMesse und die Lanxess Arena befinden. Eine der Hauptbrücken der Stadt.<br><b>Interessante Tatsache:</b> In der Nähe finden große städtische Veranstaltungen statt, darunter Marathonläufe und Teile der Karnevalsroute." },
@@ -1319,6 +1364,7 @@ const datas = [
             "description": "Beschreibung der acht Kölner Brücken: Geschichte, Besonderheiten, interessante Fakten, inklusive der Liebesbrücke Hohenzollernbrücke.",
             "ogTitle": "Kölner Rheinbrücken",
             "ogDescription": "Vollständige Beschreibung aller acht Kölner Rheinbrücken mit Fakten, Geschichte und Architektur.",
+            keywords: "Brücken Köln über den Rhein, Köln, Sehenswürdigkeit, Brücken, Architektur, Verkehr, Rhein, Ingenieurbau, historische Brücken, Tourismus Deutschland, Führungen, Fotos, städtische Infrastruktur",
             "ogImage": "https://our-travels.info/foto/Germany/nrw/koln/koln-city/koln_bridges/001.jpg"
         }
     },
@@ -1327,11 +1373,15 @@ const datas = [
         name: "Alte Türme und Befestigungen der Altstadt Kölns",
         type: ["historical_building"], rating: "popular",
         path: "old_towers_koln",
-        countryPath: "germany", regionsPath: "nrw", districtPath: "city", cityPath: "koln",
+        countryPath: "germany", regionPath: "nrw", districtPath: "city", cityPath: "koln_city",
         hiddenFromList: true, showMore: true,
+        mapOpen: "old_towers_koln",
+        subObjects: ["rumerturm_koln", "hahnentorburg_koln", "eigelsteintorburg_koln", "severinstorburg_koln", "ulrepforte_koln", "bayenturm_koln"],
+        subObjects_title: "Wichtigste erhaltene Türme und Mauerfragmente",
         fotoCard: "Germany/nrw/koln/koln-city/altstadt/old_towers/001.jpg",
         location: "Köln, Deutschland",
         short_description: "Die alten Türme und Befestigungen der Altstadt Kölns sind Reste der mittelalterlichen Stadtmauer und römischer Verteidigungsanlagen, die einst die Stadt schützten. Heute sind sie über die Altstadt verteilt und dienen als historische Orientierungspunkte für Bewohner und Touristen. Diese Türme vermitteln ein Bild davon, wie Köln im Mittelalter aussah, und zeigen Spuren des Verteidigungssystems. Die Sehenswürdigkeit ist bei Touristen beliebt, stellt jedoch kein weltbekanntes Symbol der Stadt dar.",
+        status: "partial", note: "Von diesem System sind nur einzelne Objekte erhalten geblieben – sowohl große Stadttore mit Türmen als auch Mauerfragmente mit kleinen Wachttürmen.",
         full_description: {
             title: "Beschreibung und Geschichte",
             items: [
@@ -1340,101 +1390,13 @@ const datas = [
                 { text: "Im Mittelalter entwickelte sich Köln zu einem der größten Handelszentren Nordeuropas. In dieser Zeit wurde die Stadtmauer durch neue Türme und Tore verstärkt, die ein komplexes Verteidigungssystem bildeten. Heute sind nur noch einzelne Objekte dieses Systems erhalten – große Tore mit Türmen sowie Mauerreste mit kleinen Wachtürmen." }
             ]
         },
-        sub_objects: {
-            title: "Wichtigste erhaltene Türme und Mauerfragmente",
-            items: [
-                { img: "Germany/nrw/koln/koln-city/altstadt/old_towers/002.jpg", alt: "Römerturm Römerturm", bold: "Römerturm", text: "– Überrest der römischen Stadtmauer (Colonia Agrippinensis), ein Denkmal der antiken Geschichte der Stadt – ein seltenes und sehr altes architektonisches Relikt. Es ist einer der wenigen römischen Türme, die bis heute erhalten sind. Laut römischen Quellen gab es ursprünglich etwa 19 solcher Verteidigungstürme um die Stadt.<br>Der Turm war Teil der spätantiken Befestigung und diente als Wachturm und Aussichtspunkt – heute ist dies das älteste erhaltene Stück der Kölner Befestigungsanlagen.<br><b>Wo:</b> Zeughausstraße – im Nordwesten der Altstadt, fußläufig vom Zentrum entfernt." },
-                { img: "Germany/nrw/koln/koln-city/altstadt/old_towers/001.jpg", alt: "Westtor (Hahnentorburg)", bold: "Westtor (Hahnentorburg)", text: "– eines der vier erhaltenen mittelalterlichen Stadttore mit Türmen der ehemaligen Altstadtmauer. Das Tor wird erstmals 1264 erwähnt; es schützte den westlichen Zugang zum Handelsweg nach Aachen und Jülich. Hier verschmilzt mittelalterliche Architektur förmlich mit dem modernen Platzraum und bewahrt den Geist der Kölner Befestigungsanlagen.<br><b>Wo:</b> Rudolfplatz – westliche Grenze der Altstadt." },
-                { img: "Germany/nrw/koln/koln-city/altstadt/old_towers/003.jpg", alt: "Nordtor (Eigelsteintorburg)", bold: "Nordtor (Eigelsteintorburg)", text: "– gut erhaltene mittelalterliche Festungsarchitektur mit massiven Türmen und Bogenpassage. Große Doppeltore auf der Nordseite der Altstadtmauer. Erbaut während der dritten Stadterweiterung im 13. Jahrhundert; ersetzte den früheren Nordturm und diente der Kontrolle des Zugangs von den nördlichen Handelswegen.<br><b>Wo:</b> Bezirk Eigelstein / Ebertplatz." },
-                { img: "Germany/nrw/koln/koln-city/altstadt/old_towers/004.jpg", alt: "Südtor (Severinstorburg)", bold: "Südtor (Severinstorburg)", text: "– strategisch wichtiger südlicher Eingang – über ihn verliefen die Hauptwege nach Bonn und Süddeutschland, eines der vier Haupttore der Altstadt, das den südlichen Zugang schützte. Errichtet in der ersten Hälfte des 13. Jahrhunderts als Teil einer massiven Steinmauer; später mit Zinnen und Flanken ergänzt.<br><b>Wo:</b> heutiger Chlodwigplatz." },
-                { img: "Germany/nrw/koln/koln-city/altstadt/old_towers/005.jpg", alt: "Südliches Mauerfragment (Ulrepforte)", bold: "Südliches Mauerfragment (Ulrepforte)", text: "– das schmalste und kleinste der Stadttore, diente eher als Hilfsbefestigung. Ein kleiner, aber antiker Stadteingang, Teil der mittelalterlichen Stadtbefestigung. Erbaut Anfang des 13. Jahrhunderts und erstmals 1245 urkundlich erwähnt; eines von zwölf Toren der Mauer, aber von geringer Bedeutung für die Verkehrswege.<br><b>Wo:</b> Sachsenring – südlicher Abschnitt der Altstadt." },
-                { img: "Germany/nrw/koln/koln-city/altstadt/old_towers/006.jpg", alt: "Turm im Süden am Rhein (Bayenturm)", bold: "Turm im Süden am Rhein (Bayenturm)", text: "– Befestigungsturm am südöstlichen Ende der Stadtmauer nahe dem Rhein, Symbol für die Kontrolle des Handelswegs am Rhein. Errichtet ca. 1180–1220 als Teil der Flussbefestigung; im Zweiten Weltkrieg stark beschädigt, später wiederhergestellt.<br><b>Wo:</b> südlicher Teil der Altstadt, nahe Ringstraße." }
-            ]
-        },
         meta: {
             title: "Alte Türme und Befestigungen der Altstadt Kölns – historische Sehenswürdigkeiten der Stadt",
             description: "Entdecken Sie mittelalterliche Türme und Mauerfragmente in Köln. Erfahren Sie die Geschichte der alten Befestigungen der Altstadt und entdecken Sie wichtige historische Orientierungspunkte, die bis heute erhalten sind.",
             ogTitle: "Alte Türme und Befestigungen der Altstadt Kölns – ein Spaziergang durch die Geschichte der Stadt",
             ogDescription: "Spazieren Sie durch die Altstadt von Köln und entdecken Sie alte Türme und Befestigungen, die den Geist der mittelalterlichen Stadt bewahren und wichtige historische Denkmäler darstellen.",
+            keywords: "Alte Türme und Befestigungen der Altstadt Köln, Köln, Sehenswürdigkeit, Festungen, mittelalterliche Mauern, Architektur, historische Gebäude, Tourismus Deutschland, Führungen, Altstadt, Befestigungsanlagen, Kulturerbe",
             ogImage: "https://our-travels.info/foto/Germany/nrw/koln/koln-city/altstadt/old_towers/001.jpg"
-        }
-    },
-    {
-        id: "rumerturm_koln",
-        name: "Römerturm",
-        type: ["historical_building"], rating: "popular",
-        path: "old_towers_koln",
-        countryPath: "germany", regionsPath: "nrw", districtPath: "city", cityPath: "koln",
-        hiddenFromList: true,
-        coord: { lat: 50.94093, lng: 6.94663 },
-        meta: {
-            title: "Römerturm – Überrest der römischen Stadtmauer (Colonia Agrippinensis), Denkmal der antiken Geschichte der Stadt",
-            ogImage: "https://our-travels.info/foto/Germany/nrw/koln/koln-city/altstadt/old_towers/002.jpg"
-        }
-    },
-    {
-        id: "hahnentorburg_koln",
-        name: "Westtor (Hahnentorburg)",
-        type: ["historical_building"], rating: "popular",
-        path: "old_towers_koln",
-        countryPath: "germany", regionsPath: "nrw", districtPath: "city", cityPath: "koln",
-        hiddenFromList: true,
-        coord: { lat: 50.93639, lng: 6.94021 },
-        meta: {
-            title: "Westtor (Hahnentorburg) – eines der vier erhaltenen mittelalterlichen Stadttore mit Türmen der ehemaligen Altstadtmauer",
-            ogImage: "https://our-travels.info/foto/Germany/nrw/koln/koln-city/altstadt/old_towers/001.jpg"
-        }
-    },
-    {
-        id: "eigelsteintorburg_koln",
-        name: "Nordtor (Eigelsteintorburg)",
-        type: ["historical_building"], rating: "popular",
-        path: "old_towers_koln",
-        countryPath: "germany", regionsPath: "nrw", districtPath: "city", cityPath: "koln",
-        hiddenFromList: true,
-        coord: { lat: 50.94931, lng: 6.95687 },
-        meta: {
-            title: "Nordtor (Eigelsteintorburg) – gut erhaltene mittelalterliche Festungsarchitektur mit massiven Türmen und einem Torbogen.",
-            ogImage: "https://our-travels.info/foto/Germany/nrw/koln/koln-city/altstadt/old_towers/003.jpg"
-        }
-    },
-    {
-        id: "severinstorburg_koln",
-        name: "Südtor (Severinstorburg)",
-        type: ["historical_building"], rating: "popular",
-        path: "old_towers_koln",
-        countryPath: "germany", regionsPath: "nrw", districtPath: "city", cityPath: "koln",
-        hiddenFromList: true,
-        coord: { lat: 50.92196, lng: 6.95923 },
-        meta: {
-            title: "Südtor (Severinstorburg) – strategisch wichtiger südlicher Zugang – über ihn führten die wichtigsten Wege nach Bonn und in den Süden Deutschlands",
-            ogImage: "https://our-travels.info/foto/Germany/nrw/koln/koln-city/altstadt/old_towers/004.jpg"
-        }
-    },
-    {
-        id: "ulrepforte_koln",
-        name: "Südliches Mauerfragment (Ulrepforte)",
-        type: ["historical_building"], rating: "popular",
-        path: "old_towers_koln",
-        countryPath: "germany", regionsPath: "nrw", districtPath: "city", cityPath: "koln",
-        hiddenFromList: true,
-        coord: { lat: 50.92418, lng: 6.95305 },
-        meta: {
-            title: "Südliches Mauerfragment (Ulrepforte) – das schmalste und kleinste der Stadttore, das eher als zusätzlicher Teil der Verteidigung diente.",
-            ogImage: "https://our-travels.info/foto/Germany/nrw/koln/koln-city/altstadt/old_towers/005.jpg"
-        }
-    },
-    {
-        id: "bayenturm_koln",
-        name: "Turm im Süden am Rhein (Bayenturm)",
-        type: ["historical_building"], rating: "popular",
-        path: "old_towers_koln",
-        countryPath: "germany", regionsPath: "nrw", districtPath: "city", cityPath: "koln",
-        hiddenFromList: true,
-        coord: { lat: 50.92375, lng: 6.96695 },
-        meta: {
-            title: "Turm im Süden am Rhein (Bayenturm) – ein Wehrturm am südöstlichen Ende der Stadtmauer nahe dem Rhein.",
-            ogImage: "https://our-travels.info/foto/Germany/nrw/koln/koln-city/altstadt/old_towers/006.jpg"
         }
     },
     {
@@ -1442,9 +1404,9 @@ const datas = [
         name: "Skulpturenpark in Köln",
         type: ["museum", "nature", "monument_or_fountain"], rating: "local",
         path: "skulpturenpark_koln",
-        countryPath: "germany", regionsPath: "nrw", districtPath: "city", cityPath: "koln",
+        countryPath: "germany", regionPath: "nrw", districtPath: "city", cityPath: "koln_city",
         fotoCard: "Germany/nrw/koln/koln-city/skulpturenpark/001.jpg",
-        location: "Köln, Deutschland",
+        location: "Köln, Stadtteil Riehl (Stadtbezirk Nippes), Deutschland",
         officialSite: [
             { bold: "Offizielle Webseite", link: "https://skulpturenparkkoeln.de/" }
         ],
@@ -1485,6 +1447,7 @@ const datas = [
             description: "Besuchen Sie den Skulpturenpark Köln – ein einzigartiger Freilicht-Skulpturenpark in der Nähe des Rheins und des Kölner Zoos. Moderne Skulpturen internationaler Künstler, freier Eintritt, Spaziergänge zwischen Kunst und Natur.",
             ogTitle: "Skulpturenpark Köln – Freilichtmuseum für Skulpturen",
             ogDescription: "Entdecken Sie den Skulpturenpark Köln: moderne Kunst im Freien, Skulpturen internationaler Künstler, Spaziergänge durch grüne Alleen und freier Eintritt täglich.",
+            keywords: "Skulpturenpark Köln, Köln, Sehenswürdigkeit, Skulpturen, zeitgenössische Kunst, Freilichtmuseum, Ausstellungen im Freien, Kulturerbe, Tourismus Deutschland, Führungen, Kunst im öffentlichen Raum, Stadtpark",
             ogImage: "https://our-travels.info/foto/Germany/nrw/koln/koln-city/skulpturenpark/001.jpg"
         }
     },
@@ -1493,9 +1456,9 @@ const datas = [
         name: "Kölner Zoo",
         type: ["nature"], rating: "popular",
         path: "zoo_koln",
-        countryPath: "germany", regionsPath: "nrw", districtPath: "city", cityPath: "koln",
+        countryPath: "germany", regionPath: "nrw", districtPath: "city", cityPath: "koln_city",
         fotoCard: "Germany/nrw/koln/koln-city/zoo/001.jpg",
-        location: "Köln, Deutschland",
+        location: "Köln, Stadtteil Riehl (Stadtbezirk Nippes), Deutschland",
         officialSite: [
             { bold: "Offizielle Website", link: "https://koelnerzoo.de/" }
         ],
@@ -1546,6 +1509,7 @@ const datas = [
             description: "Entdecken Sie den Kölner Zoo, einen der ältesten Zoos Deutschlands. Erfahren Sie mehr über seine Geschichte, thematischen Expositionen, den Regenwald, den Elefantenpark und praktische Besuchsinformationen.",
             ogTitle: "Besuchen Sie den Kölner Zoo – über 10 000 Tiere und einzigartige Expositionen",
             ogDescription: "Erkunden Sie den Kölner Zoo: historische Gebäude, Südostasien-Regenwald, Elefantenpark und Aquarium. Perfekter Ort für Familien und Bildungsbesuche.",
+            keywords: "Kölner Zoo, Köln, Sehenswürdigkeit, Zoo, Tiere, Safari, Familienausflug, Kindertourismus, Führungen, Natur-Ausstellungen, Tourismus Deutschland, Bildungsprogramme, Stadtzoo",
             ogImage: "https://our-travels.info/foto/Germany/nrw/koln/koln-city/zoo/001.jpg"
         }
     },
@@ -1554,9 +1518,9 @@ const datas = [
         name: "Forstbotanischer Garten",
         type: ["nature"], rating: "popular",
         path: "forstbotanischer_garten",
-        countryPath: "germany", regionsPath: "nrw", districtPath: "city", cityPath: "koln",
+        countryPath: "germany", regionPath: "nrw", districtPath: "city", cityPath: "koln_city",
         fotoCard: "Germany/nrw/koln/koln-city/forstbotanischer_garten/001.jpg",
-        location: "Köln, Deutschland",
+        location: "Köln, Stadtteil Rodenkirchen (Stadtbezirk Rodenkirchen), Deutschland",
         officialSite: [
             {
                 bold: "Offizielle Webseite des Forstbotanischer Gartens",
@@ -1613,6 +1577,7 @@ const datas = [
             description: "Botanischer Garten und Forstpark Köln mit Pflanzen aus aller Welt und thematischen Zonen, einschließlich Friedenswald.",
             ogTitle: "Forstbotanischer Garten – Botanischer Garten und Forstpark Köln",
             ogDescription: "Der Garten und Forstpark Köln bieten Spaziergänge durch die Rhododendron-Ravine, den Japanischen Garten, die Heidewiese und den Friedenswald.",
+            keywords: "Botanischer Garten und Waldpark Köln, Köln, Sehenswürdigkeit, botanischer Garten, Park, Flora, Spaziergänge, Natur, Familienausflug, Führungen, Tourismus Deutschland, Pflanzen, Gartenarchitektur",
             ogImage: "https://our-travels.info/foto/Germany/nrw/koln/koln-city/forstbotanischer_garten/001.jpg"
         }
     },
@@ -1621,9 +1586,9 @@ const datas = [
         name: "Botanischer Garten Flora",
         type: ["nature"], rating: "popular",
         path: "flora_garten_koln",
-        countryPath: "germany", regionsPath: "nrw", districtPath: "city", cityPath: "koln",
+        countryPath: "germany", regionPath: "nrw", districtPath: "city", cityPath: "koln_city",
         fotoCard: "Germany/nrw/koln/koln-city/flora_garten_koln/001.jpg",
-        location: "Köln, Deutschland",
+        location: "Köln, Stadtteil Riehl (Stadtbezirk Nippes), Deutschland",
         short_description: "Flora und Botanischer Garten in Köln vereint historischen Park und wissenschaftlichen botanischen Garten. Hier können Besucher über 10.000 Pflanzen aus aller Welt sehen, thematische Alleen entlangschlendern und die Gewächshäuser genießen. Ein idealer Ort zur Erholung und zur Erforschung der Pflanzenvielfalt.",
         full_description: {
             title: "Beschreibung und Geschichte",
@@ -1670,6 +1635,7 @@ const datas = [
             description: "Besuchen Sie den Botanischen Garten Flora in Köln: über 10.000 Pflanzenarten aus aller Welt, historische Alleen, thematische Gärten, Gewächshäuser und Erholung im Freien.",
             ogTitle: "Flora – Botanischer Garten und Park in Köln",
             ogDescription: "Entdecken Sie die Flora in Köln: Weltreise unter 10.000 Pflanzenarten, historische Gärten, Gewächshäuser und gemütliche Alleen zum Spazierengehen.",
+            keywords: "Botanischer Garten Flora, Köln, Sehenswürdigkeit, botanischer Garten, Flora, Pflanzen, Blumensammlungen, Kölner Parks, Spaziergänge in der Natur, Familienausflug, Führungen, Tourismus Deutschland, Gartenarchitektur",
             ogImage: "https://our-travels.info/foto/Germany/nrw/koln/koln-city/flora_garten_koln/001.jpg"
         }
     },
@@ -1678,20 +1644,19 @@ const datas = [
         name: "Rheinpark",
         type: ["nature"], rating: "popular",
         path: "rheinpark_koln",
-        countryPath: "germany", regionsPath: "nrw", districtPath: "city", cityPath: "koln",
+        countryPath: "germany", regionPath: "nrw", districtPath: "city", cityPath: "koln_city",
         fotoCard: "Germany/nrw/koln/koln-city/rheinpark_koln/001.jpg",
-        location: "Köln, Deutschland",
+        location: "Köln, Stadtteil Deutz (Stadtbezirk Innenstadt), Deutschland",
         officialSite: [
             { bold: "Parkseite auf der Website der Stadt Köln", link: "https://www.stadt-koeln.de/leben-in-koeln/freizeit-natur-sport/parks/rheinpark" },
             { bold: "<br>Offizielle Website der Kleinbahn im Rheinpark", link: "http://kleinbahn.koeln/" }
         ],
-        subObjects: ["tanzbrunnen", "koln_seilbahn", "divitia_koln"],
+        subObjects: ["tanzbrunnen", "divitia_koln"],
         short_description: "Der Rheinpark ist ein großer öffentlicher Park entlang des rechten Rheinufers im Stadtteil Deutz der Stadt Köln. Er stellt eine historisch und architektonisch bedeutende Grünanlage dar, bekannt für seine weitläufigen Rasenflächen, Blumenbeete, Spazierwege und den herrlichen Blick auf das Stadtzentrum mit dem Kölner Dom.",
         short_description_subObjects: {
             text: "Im Rheinpark Köln befinden sich folgende interessante Orte und Attraktionen:",
             items: [
                 { bold: "Tanzender Brunnen", text: "– ein schönes, beeindruckendes Bauwerk mit Musik und Beleuchtung, das Touristen und Einheimische anzieht." },
-                { bold: "Kölner Seilbahn", text: "– hebt Besucher über den Rhein und bietet Panoramablicke auf die Stadt und den Fluss." },
                 { bold: "Römisches Fort Divitia", text: "– eine historische Festung aus der Römerzeit, erhalten im Park und für Besichtigungen zugänglich." },
             ]
         },
@@ -1728,6 +1693,7 @@ const datas = [
             description: "Der Rheinpark ist ein großer öffentlicher Park entlang des rechten Rheinufers im Stadtteil Deutz der Stadt Köln. Er stellt eine historisch und architektonisch bedeutende Grünanlage dar, bekannt für seine weitläufigen Rasenflächen, Blumenbeete, Spazierwege und den herrlichen Blick auf das Stadtzentrum mit dem Kölner Dom.",
             ogTitle: "Rheinpark (Rheinpark)",
             ogDescription: "Der Rheinpark ist ein großer öffentlicher Park entlang des rechten Rheinufers im Stadtteil Deutz der Stadt Köln. Er stellt eine historisch und architektonisch bedeutende Grünanlage dar, bekannt für seine weitläufigen Rasenflächen, Blumenbeete, Spazierwege und den herrlichen Blick auf das Stadtzentrum mit dem Kölner Dom.",
+            keywords: "Rheinpark, Köln, Sehenswürdigkeit, Park, Spaziergänge, Natur, Erholung im Freien, Familienausflug, Grünanlage, Führungen, Tourismus Deutschland, Stadtparks, Landschaftsgestaltung",
             ogImage: "https://our-travels.info/foto/Germany/nrw/koln/koln-city/rheinpark_koln/001.jpg"
         }
     },
@@ -1736,10 +1702,10 @@ const datas = [
         name: "Tanzbrunnen",
         type: ["monument_or_fountain"], rating: "popular",
         path: "tanzbrunnen",
-        countryPath: "germany", regionsPath: "nrw", districtPath: "city", cityPath: "koln",
+        countryPath: "germany", regionPath: "nrw", districtPath: "city", cityPath: "koln_city",
         hiddenFromList: true, showMore: true,
         fotoCard: "Germany/nrw/koln/koln-city/rheinpark_koln/002.jpg",
-        location: "Köln, Deutschland",
+        location: "Köln, Stadtteil Deutz (Stadtbezirk Innenstadt), Deutschland",
         officialSite: [
             { bold: "Offizielle Seite des Tanzbrunnen (über KölnKongress)", link: "https://koelncongress.de/locations/tanzbrunnen-koeln/" }
         ],
@@ -1769,6 +1735,7 @@ const datas = [
             description: "Besuchen Sie den Tanzbrunnen – den historischen „Tanzenden Brunnen“ am Rhein in Köln. Konzerte, Festivals, kulturelle Events und malerische Ausblicke auf den Fluss. Erfahren Sie mehr über Geschichte und Architektur des Komplexes.",
             ogTitle: "Tanzbrunnen in Köln – Konzerte und kulturelle Veranstaltungen am Rhein",
             ogDescription: "Der Tanzbrunnen ist ein bekannter Kulturkomplex in Köln mit einer Geschichte von fast 100 Jahren. Konzerte, Festivals, Spaziergänge entlang des Rheins und das einzigartige „Sternwellenzelt“.",
+            keywords: "Tanzender Brunnen, Rheinpark, Köln, Sehenswürdigkeit, Brunnen, Wassershow, Familienausflug, Spaziergänge, touristische Attraktionen Köln, Unterhaltung, Tourismus Deutschland, Fotos, Führungen",
             ogImage: "https://our-travels.info/foto/Germany/nrw/koln/koln-city/rheinpark_koln/002.jpg"
         }
     },
@@ -1777,10 +1744,9 @@ const datas = [
         name: "Kölner Seilbahn",
         type: ["technical_structure"], rating: "popular",
         path: "koln_seilbahn",
-        countryPath: "germany", regionsPath: "nrw", districtPath: "city", cityPath: "koln",
-        hiddenFromList: true, showMore: true,
+        countryPath: "germany", regionPath: "nrw", districtPath: "city", cityPath: "koln_city",
         fotoCard: "Germany/nrw/koln/koln-city/rheinpark_koln/003.jpg",
-        location: "Köln, Deutschland",
+        location: "Köln, Stadtteil Riehl (Stadtbezirk Nippes), Deutschland",
         officialSite: [
             { bold: "Offizielle Website", link: "https://www.koelner-seilbahn.de/index.html" }
         ],
@@ -1804,6 +1770,7 @@ const datas = [
         tickets_and_entry: {
             title: "Praktische Informationen",
             items: [
+                { bold: "Adresse: ", text: "Nordstation – Riehler Straße 180, 50735 Köln <br>Südstation – Rheinparkweg 1, 50679 Köln" },
                 { bold: "Saison: ", text: "in der Regel von April bis Oktober täglich." },
                 { bold: "Öffnungszeiten: ", text: "meist von 10:00 bis 18:00 Uhr (letzte Fahrt gegen 17:45–18:00 Uhr)." },
                 { bold: "Tickets: ", text: "<br>Erwachsene: etwa 4,80 €–7,00 € für ein Hin- und Rückfahrticket, <br>Kinder (meist bis ca. 12 Jahre) günstiger. <br>Preise können variieren, Ermäßigungen mit KölnCard oder anderen Karten sind möglich." }
@@ -1824,6 +1791,7 @@ const datas = [
             description: "Die Cologne Cable Car ist eine panoramische Seilbahn über den Rhein in Köln. Geschichte, Lage, Ausblicke auf den Kölner Dom, den Rheinpark und nützliche Informationen für Besucher.",
             ogTitle: "Cologne Cable Car – Panoramablick auf Köln aus der Höhe",
             ogDescription: "Die Cologne Cable Car verbindet die Rheinufer und bietet einen der schönsten Panoramablicke auf Köln, den Kölner Dom und den Rheinpark. Eine beliebte Sehenswürdigkeit und ein Wahrzeichen der Stadt.",
+            keywords: "Kölner Seilbahn, Köln, Sehenswürdigkeit, Seilbahn, Transport, Panoramablick, Rhein, touristische Attraktionen, Führungen, Städtetourismus, Unterhaltung, Deutschland, Fotos, Spaziergänge",
             ogImage: "https://our-travels.info/foto/Germany/nrw/koln/koln-city/rheinpark_koln/003.jpg"
         }
     },
@@ -1832,11 +1800,12 @@ const datas = [
         name: "Ruinen des römischen Forts Divitia in Köln (Historischer Park Deutz)",
         type: ["historical_building"], rating: "local",
         path: "divitia_koln",
-        countryPath: "germany", regionsPath: "nrw", districtPath: "city", cityPath: "koln",
+        countryPath: "germany", regionPath: "nrw", districtPath: "city", cityPath: "koln_city",
         hiddenFromList: true, showMore: true,
         fotoCard: "Germany/nrw/koln/koln-city/rheinpark_koln/004.jpg",
-        location: "Köln, Deutschland",
+        location: "Köln, Stadtteil Deutz (Stadtbezirk Innenstadt), Deutschland",
         short_description: "Die Ruinen des römischen Forts Divitia, auch bekannt als Historischer Park Deutz, sind Überreste einer spätantiken Befestigung aus dem 4. Jahrhundert n. Chr. am rechten Rheinufer in Köln. Erhalten sind Turmfragmente, Mauerwerk und Fundamentreste. Sie sind für die freie Besichtigung in der Fußgängerzone des Rheinparks zugänglich.",
+        status: "partial", note: "erhalten sind Fragmente des römischen Kastells Divitia, einschließlich Reste der Befestigungsmauern und planungsbezogener Strukturen, der übrige Aufbau ist verloren und nur archäologisch belegt.",
         full_description: {
             title: "Beschreibung und Geschichte",
             items: [
@@ -1879,6 +1848,7 @@ const datas = [
             description: "Überreste des römischen Forts Divitia aus dem 4. Jahrhundert n. Chr., auch bekannt als Historischer Park Deutz, am rechten Rheinufer in Köln. Erhalten sind Turm, Mauerwerk und Fundamentreste. Für Besichtigungen im Rheinpark zugänglich.",
             ogTitle: "Ruinen des römischen Forts Divitia in Köln – Historischer Park Deutz, römische Befestigungsruinen",
             ogDescription: "Erkunden Sie die Überreste des römischen Forts Divitia, bekannt als Historischer Park Deutz, im Rheinpark Köln. Originale Mauern, Turm und Fundament sind für Spaziergänge und Besichtigungen geöffnet.",
+            keywords: "Ruinen des römischen Forts Divitia, Historischer Park Deutz, Köln, Sehenswürdigkeit, römisches Fort, Archäologie, historischer Park, antike Befestigungen, Tourismus Deutschland, römische Geschichte, Kultur, Fotos",
             ogImage: "https://our-travels.info/foto/Germany/nrw/koln/koln-city/rheinpark_koln/004.jpg"
         }
     },
@@ -1887,9 +1857,9 @@ const datas = [
         name: "Finkens Garten",
         type: ["nature"], rating: "local",
         path: "finkens_garten_koln",
-        countryPath: "germany", regionsPath: "nrw", districtPath: "city", cityPath: "koln",
+        countryPath: "germany", regionPath: "nrw", districtPath: "city", cityPath: "koln_city",
         fotoCard: "Germany/nrw/koln/koln-city/finkens_garten/001.jpg",
-        location: "Köln, Deutschland",
+        location: "Köln, Stadtteil Rodenkirchen (Stadtbezirk Rodenkirchen), Deutschland",
         officialSite: [
             { bold: "Offizielle Website", link: "http://www.finkensgarten.org/" }
         ],
@@ -1932,6 +1902,7 @@ const datas = [
             description: "Finkens Garten in Köln ist ein kostenloser Naturpark mit Biotopen, Bienenhaus und Bildungsprogrammen für Kinder und Erwachsene.",
             ogTitle: "Finkens Garten – Natur und Erlebnisse im Herzen der Stadt",
             ogDescription: "Verbringen Sie einen Tag im Finkens Garten: Entdecken Sie natürliche Landschaften, lernen Sie die Natur kennen und besuchen Sie das Bienenhaus und Bildungsangebote.",
+            keywords: "Ökologischer Garten Finkensgarten, Köln, Sehenswürdigkeit, ökologischer Garten, Botanischer Garten, Natur, Pflanzen, Spaziergänge, Familienausflug, Führungen, Tourismus Deutschland, Grünanlage, Bildungsprogramme",
             ogImage: "https://our-travels.info/foto/Germany/nrw/koln/koln-city/finkens_garten/001.jpg"
         }
     },
@@ -1940,9 +1911,9 @@ const datas = [
         name: "Decksteiner Weiher",
         type: ["nature"], rating: "local",
         path: "decksteiner_weiher_koln",
-        countryPath: "germany", regionsPath: "nrw", districtPath: "city", cityPath: "koln",
+        countryPath: "germany", regionPath: "nrw", districtPath: "city", cityPath: "koln_city",
         fotoCard: "Germany/nrw/koln/koln-city/decksteiner_weiher/001.jpg",
-        location: "Köln, Deutschland",
+        location: "Köln, Stadtteil Lindenthal (Stadtbezirk Lindenthal), Deutschland",
         short_description: "Der Decksteiner Weiher – der größte künstliche Parkteich Kölns, befindet sich im Westen der Stadt im Bereich des äußeren Grüngürtels. Der Weiher ist von breiten Alleen, Waldflächen und Spazierwegen umgeben. Aufgrund seiner langgestreckten Form, der schattigen Kastanienalleen und der ruhigen Atmosphäre ist er einer der beliebtesten Erholungsorte der Stadtbewohner.",
         full_description: {
             title: "Beschreibung und Geschichte",
@@ -1981,6 +1952,7 @@ const datas = [
             description: "Der Decksteiner Weiher – ein malerischer künstlicher See im Grüngürtel von Köln. Beliebter Ort zum Spazierengehen, Sport treiben und zur Erholung in der Natur in der Nähe des Stadtzentrums.",
             ogTitle: "Decksteiner Weiher – grüner See Kölns",
             ogDescription: "Der Decksteiner Weiher ist einer der schönsten Erholungsorte Kölns. Spazierwege, Boote auf dem Wasser, grüne Parks und eine ruhige Atmosphäre nur wenige Kilometer vom Stadtzentrum entfernt.",
+            keywords: "Decksteiner Weiher, Köln, Sehenswürdigkeit, See, Teich, Spaziergänge, Natur, Erholung im Freien, Familienausflug, Gewässer, Tourismus Deutschland, Angeln, Park, Grünanlage",
             ogImage: "https://our-travels.info/foto/Germany/nrw/koln/koln-city/decksteiner_weiher/001.jpg"
         }
     },
@@ -1993,14 +1965,15 @@ const datas = [
         name: "Altstadt Monschau",
         type: ["historical_area"], rating: "popular",
         path: "historic_center_monschau",
-        countryPath: "germany", regionsPath: "nrw", districtPath: "koln", cityPath: "monschau",
-        subObjects: ["rotes_haus_monschau", "senfmuehle_monschau", "glashuette_monschau"],
+        countryPath: "germany", regionPath: "nrw", districtPath: "koln", cityPath: "monschau",
+        subObjects: ["rotes_haus_monschau", "senfmuehle_monschau", "glashuette_monschau", "tuchmacherbrunnen_monschau"],
         short_description_subObjects: {
             text: "In der Altstadt von Monschau befindet sich folgende Sehenswürdigkeit:",
             items: [
                 { bold: "Rotes Haus", text: "– ein herausragendes historisches Hausmuseum im Zentrum der Altstadt von Monschau" },
                 { bold: "Historische Senfmühle", text: "– historischer Senfmühle in der Altstadt von Monschau mit aktiver Produktion und Senfverkostung" },
-                { bold: "Glashütte", text: "– Werkstatt mit Live-Demonstrationen der Glasbläser, bei der man den Herstellungsprozess von Glasprodukten beobachten und Souvenirs kaufen kann" }
+                { bold: "Glashütte", text: "– Werkstatt mit Live-Demonstrationen der Glasbläser, bei der man den Herstellungsprozess von Glasprodukten beobachten und Souvenirs kaufen kann" },
+                { bold: "Tuchmacherbrunnen", text: "– kleiner Brunnen in Monschau, gewidmet der Weberei und der textilen Geschichte der Stadt" },
             ]
         },
         fotoCard: "Germany/nrw/koln/Aachen/monschau/001.jpg",
@@ -2029,10 +2002,11 @@ const datas = [
         },
         construction_period: "13. Jahrhundert (Entstehung der Siedlung um die Burg)",
         meta: {
-            title: "Altstadt Monschau — Mittelalterliches Zentrum in der Eifel | Deutschland",
+            title: "Altstadt Monschau – Mittelalterliches Zentrum in der Eifel | Deutschland",
             description: "Die Altstadt von Monschau ist eines der schönsten historischen Zentren Deutschlands mit Fachwerkhäusern, dem Fluss Rur und mittelalterlicher Atmosphäre.",
-            ogTitle: "Altstadt Monschau — Märchenhaftes Deutschland",
+            ogTitle: "Altstadt Monschau – Märchenhaftes Deutschland",
             ogDescription: "Ein Spaziergang durch die Altstadt von Monschau ist eine Reise in die Vergangenheit: enge Gassen, historische Häuser und die Romantik der Eifel.",
+            keywords: "Altstadt Monschau, Monschau, Sehenswürdigkeit, historisches Zentrum, enge Gassen, Fachwerkhäuser, Tourismus Deutschland, Spaziergänge, Kultur, Architektur, Führungen, atmosphärische Stadt, Fotos",
             ogImage: "https://our-travels.info/foto/Germany/nrw/koln/Aachen/monschau/002.jpg"
         }
     },
@@ -2041,7 +2015,7 @@ const datas = [
         name: "Rotes Haus",
         type: ["museum", "historical_house"], rating: "popular",
         path: "rotes_haus_monschau",
-        countryPath: "germany", regionsPath: "nrw", districtPath: "koln", cityPath: "monschau",
+        countryPath: "germany", regionPath: "nrw", districtPath: "koln", cityPath: "monschau",
         hiddenFromList: true, showMore: true,
         fotoCard: "Germany/nrw/koln/Aachen/monschau/rotes_haus/001.jpg",
         location: "Monschau, Deutschland",
@@ -2090,6 +2064,7 @@ const datas = [
             description: "Das historische Museum Rotes Haus in Monschau ist ein prachtvolles Wohn- und Handelshaus des 18. Jahrhunderts der Tuchmacherfamilie Scheibler. Ausstellungen über Leben, Handwerk und Textilhandel in ganz Europa. Praktische Besucherinformationen.",
             ogTitle: "Rotes Haus Monschau – Geschichte, Stoffe und Leben des 18. Jahrhunderts",
             ogDescription: "Besuchen Sie das Rote Haus in Monschau: ein einzigartiges Museum zur Geschichte des Familienhandels mit Textilien, prunkvollen Innenräumen und Handwerksausstellungen im Herzen der Altstadt. ",
+            keywords: "Rotes Haus, Monschau, Sehenswürdigkeit, Museum, historisches Haus, Fachwerkhaus, Architektur, Kulturerbe, Führungen, Tourismus Deutschland, Fotos, historische Gebäude, Altstadt Monschau",
             ogImage: "https://our-travels.info/foto/Germany/nrw/koln/Aachen/monschau/rotes_haus/001.jpg"
         }
     },
@@ -2098,7 +2073,7 @@ const datas = [
         name: "Historische Senfmühle",
         type: ["museum"], rating: "local",
         path: "senfmuehle_monschau",
-        countryPath: "germany", regionsPath: "nrw", districtPath: "koln", cityPath: "monschau",
+        countryPath: "germany", regionPath: "nrw", districtPath: "koln", cityPath: "monschau",
         hiddenFromList: true, showMore: true,
         fotoCard: "Germany/nrw/koln/Aachen/monschau/senfmuehle/001.jpg",
         location: "Monschau, Deutschland",
@@ -2148,6 +2123,7 @@ const datas = [
             description: "Besuchen Sie die Senfmühle in Monschau mit über 100-jähriger Geschichte. Beobachten Sie die Herstellung, probieren Sie über 20 Sorten und kaufen Sie Produkte vor Ort.",
             ogTitle: "Historische Senfmühle – traditionelles deutsches Senfparadies",
             ogDescription: "Erfahren Sie, wie im Herzen von Monschau legendärer deutscher Senf nach alten Rezepten hergestellt wird! Mehr als 20 Geschmacksrichtungen, Live-Herstellung und ein gemütlicher Laden direkt im historischen Zentrum.",
+            keywords: "Historische Senfmühle, Monschau, Sehenswürdigkeit, Mühle, Senf, historische Produktion, Museum, Führungen, Tourismus Deutschland, Traditionen, Kultur, Altstadt Monschau, Fotos",
             ogImage: "https://our-travels.info/foto/Germany/nrw/koln/Aachen/monschau/senfmuehle/001.jpg"
         }
     },
@@ -2156,7 +2132,7 @@ const datas = [
         name: "Glashütte",
         type: ["museum"], rating: "popular",
         path: "glashuette_monschau",
-        countryPath: "germany", regionsPath: "nrw", districtPath: "koln", cityPath: "monschau",
+        countryPath: "germany", regionPath: "nrw", districtPath: "koln", cityPath: "monschau",
         hiddenFromList: true, showMore: true,
         fotoCard: "Germany/nrw/koln/Aachen/monschau/glashuette/001.jpg",
         short_description: "Glashütte Monschau – eine Glasmacherei und Ausstellungszentrum für traditionelles Glasmacherhandwerk in der historischen Stadt Monschau. Besucher können den lebendigen Herstellungsprozess beobachten: vom Schmelzen des Glases bis zur Formung von Flaschen, Gefäßen und dekorativen Figuren durch Glasblasen.",
@@ -2200,6 +2176,7 @@ const datas = [
             description: "Besuchen Sie die Glashütte Monschau: Live-Demonstrationen der Glasmacher, Ausstellung von Glasprodukten und traditionelles Handwerk für die ganze Familie.",
             ogTitle: "Glashütte Monschau – lebendige Erfahrung mit Glasmachern im Herzen der Eifel",
             ogDescription: "Erfahren Sie, wie Meister heißes Glas in Kunstwerke verwandeln. Geschichte, Handwerk und Ausstellungen in historischem Monschau.",
+            keywords: "Glasbläserei, Monschau, Sehenswürdigkeit, Glasbläser, handwerkliche Produktion, Museum, Führungen, Tourismus Deutschland, Traditionen, Kultur, Altstadt Monschau, Fotos, Handwerksbetriebe",
             ogImage: "https://our-travels.info/foto/Germany/nrw/koln/Aachen/monschau/glashuette/001.jpg"
         }
     },
@@ -2208,10 +2185,11 @@ const datas = [
         name: "Burg Monschau",
         type: ["palace_or_castle"], rating: "local",
         path: "burg_monschau",
-        countryPath: "germany", regionsPath: "nrw", districtPath: "koln", cityPath: "monschau",
+        countryPath: "germany", regionPath: "nrw", districtPath: "koln", cityPath: "monschau",
         fotoCard: "Germany/nrw/koln/Aachen/monschau/burg/001.jpg",
         location: "Monschau, Deutschland",
         short_description: "Die Burg Monschau ist eine mittelalterliche Burg auf einem Hügel in Monschau (Nordrhein‑Westfalen, Deutschland). Teilweise ruinös mit erhaltenen Türmen und Mauern ist sie eine historische und kulturelle Sehenswürdigkeit mit Panoramablick auf die Altstadt.",
+        status: "partial", note: "erhalten sind einzelne Elemente der mittelalterlichen Burg Monschau, einschließlich Teile der Wehrmauern und Turmstrukturen, ein großer Teil der Anlage wurde umgebaut und wird heute unter anderem als Unterkunft (Hostel) genutzt.",
         full_description: {
             title: "Beschreibung und Geschichte",
             items: [
@@ -2246,6 +2224,7 @@ const datas = [
             description: "Die mittelalterliche Burg Monschau (Burg Monschau) auf einem Hügel über Monschau in Deutschland. Geschichte seit dem 13. Jahrhundert, Panoramablicke, Jugendherberge und kulturelle Veranstaltungen im Herzen der Eifel.",
             ogTitle: "Burg Monschau – Mittelalterliche Burg über Monschau",
             ogDescription: "Entdecken Sie die Burg Monschau: eine mittelalterliche Festung mit malerischen Ausblicken auf die Stadt, sommerlichen Kulturveranstaltungen und der einzigartigen Atmosphäre der historischen Eifel.",
+            keywords: "Burg Monschau, Monschau, Sehenswürdigkeit, Festung, mittelalterliche Burg, historische Architektur, Führungen, Tourismus Deutschland, Kultur, Altstadt Monschau, Fotos, historische Gebäude",
             ogImage: "https://our-travels.info/foto/Germany/nrw/koln/Aachen/monschau/burg/001.jpg"
         }
     },
@@ -2258,7 +2237,7 @@ const datas = [
         name: "Brühler Schlösser: Ensemble Augustusburg und Falkenlust",
         type: ['palace_or_castle', 'museum'], rating: "top",
         path: 'bruhl_palaces',
-        countryPath: "germany", regionsPath: "nrw", districtPath: "koln", cityPath: "bruhl",
+        countryPath: "germany", regionPath: "nrw", districtPath: "koln", cityPath: "bruhl",
         fotoCard: "Germany/nrw/koln/Rhein-Erft-Kreis/bruhl/bruhl_palaces/001.jpg",
         location: "Brühl, Deutschland",
         address: [{ bold: "Adresse:", text: " Schloss Augustusburg — Max-Ernst-Allee, 50321 Brühl, Deutschland <br>Schloss Falkenlust — An Schloss Falkenlust 1, 50321 Brühl, Deutschland" }],
@@ -2315,6 +2294,7 @@ const datas = [
             description: "Das Ensemble der Schlösser Augustusburg und Falkenlust in Brühl – ein Meisterwerk des Barock und Rokoko, ergänzt durch französische und englische Gärten, Brunnen, Alleen und Spiegelbecken. Geschichte, Stil, interessante Fakten.",
             ogTitle: "Brühler Schlösser: Architektur, Gärten und Legenden",
             ogDescription: "Entdecken Sie die Brühler Schlösser – ihre Pracht, Innenräume, den Park mit Parterre, Alleen und englischem Landschaftsgarten, ihre kulturelle Bedeutung und ihren UNESCO-Status.",
+            keywords: "Schlösser Brühl, Augustusburg, Falkenlust, Brühl, Sehenswürdigkeit, Schlossanlage, Barockarchitektur, historische Gebäude, Museum, Führungen, Tourismus Deutschland, Kulturerbe, UNESCO, Fotos",
             ogImage: "https://our-travels.info/foto/Germany/nrw/koln/Rhein-Erft-Kreis/bruhl/bruhl_palaces/001.jpg"
         }
     },
@@ -2323,7 +2303,7 @@ const datas = [
         name: "Schloss Augustusburg",
         type: ['Palast oder Schloss', 'Museum'],
         path: 'bruhl_palaces',
-        countryPath: "germany", regionsPath: "nrw", districtPath: "koln", cityPath: "bruhl",
+        countryPath: "germany", regionPath: "nrw", districtPath: "koln", cityPath: "bruhl",
         hiddenFromList: true,
         coord: { lat: 50.82750, lng: 6.90806 },
         meta: {
@@ -2336,7 +2316,7 @@ const datas = [
         name: "Schloss Falkenlust",
         type: ['Palast oder Schloss'],
         path: 'bruhl_palaces',
-        countryPath: "germany", regionsPath: "nrw", districtPath: "koln", cityPath: "bruhl",
+        countryPath: "germany", regionPath: "nrw", districtPath: "koln", cityPath: "bruhl",
         hiddenFromList: true,
         coord: { lat: 50.82320, lng: 6.90478 },
         meta: {
@@ -2348,8 +2328,8 @@ const datas = [
         id: "max_ernst_museum",
         name: "Max-Ernst-Museum",
         type: ['museum'], rating: "popular",
-        path: "max-ernst-museum",
-        countryPath: "germany", regionsPath: "nrw", districtPath: "koln", cityPath: "bruhl",
+        path: "max_ernst_museum",
+        countryPath: "germany", regionPath: "nrw", districtPath: "koln", cityPath: "bruhl",
         fotoCard: "Germany/nrw/koln/Rhein-Erft-Kreis/bruhl/max_ernst_museum/Max-Ernst-Museum.jpg",
         location: "Brühl, Deutschland",
         address: [{ bold: "Adresse:", text: " Comesstraße 42 / Max-Ernst-Allee 1, 50321 Brühl, Deutschland" }],
@@ -2389,6 +2369,7 @@ const datas = [
             description: "Das einzige Museum weltweit, das Max Ernst gewidmet ist. Sammlung, Geschichte, Dadaismus, Surrealismus, Sonderausstellungen.",
             ogTitle: "Max-Ernst-Museum — Brühl, Deutschland",
             ogDescription: "Entdecken Sie das Max-Ernst-Museum in Brühl, seine Sammlung und Ausstellungen, die dem Dadaismus und Surrealismus gewidmet sind.",
+            keywords: "Max Ernst Museum, Brühl, Sehenswürdigkeit, moderne Kunst, Malerei, Skulptur, Museum, Ausstellungen, Tourismus Deutschland, Kultur, Fotos",
             ogImage: "https://our-travels.info/foto/Germany/nrw/koln/Rhein-Erft-Kreis/bruhl/max_ernst_museum/Max-Ernst-Museum.jpg"
         }
     },
@@ -2397,7 +2378,7 @@ const datas = [
         name: "Phantasialand",
         type: ['amusement_park'], rating: "popular",
         path: "phantasialand",
-        countryPath: "germany", regionsPath: "nrw", districtPath: "koln", cityPath: "bruhl",
+        countryPath: "germany", regionPath: "nrw", districtPath: "koln", cityPath: "bruhl",
         fotoCard: "Germany/nrw/koln/Rhein-Erft-Kreis/bruhl/phantasialand/001.jpg",
         location: "Brühl, Deutschland",
         address: [{ bold: "Adresse:", text: " Berggeiststraße 31–41, 50321 Brühl, Deutschland" }],
@@ -2445,6 +2426,7 @@ const datas = [
             description: "Phantasialand – einer der meistbesuchten Parks Europas mit über 30 Attraktionen, Themenbereichen und einzigartigen Hotels.",
             ogTitle: "Phantasialand – Brühl, Deutschland",
             ogDescription: "Entdecken Sie Phantasialand in Brühl: Attraktionen, Themenbereiche, Hotels und Unterhaltung für die ganze Familie.",
+            keywords: "Phantasialand, Brühl, Sehenswürdigkeit, Freizeitpark, Attraktionen, Unterhaltung, Familienausflug, Achterbahnen, Shows, Tourismus Deutschland, Kindererholung, Themenpark, Fotos",
             ogImage: "https://our-travels.info/foto/Germany/nrw/koln/Rhein-Erft-Kreis/bruhl/phantasialand/001.jpg"
         },
     },
@@ -2455,7 +2437,7 @@ const datas = [
         name: "KERAMION – Zentrum für moderne und historische Keramik",
         type: ['museum'], rating: "local",
         path: "keramion",
-        countryPath: "germany", regionsPath: "nrw", districtPath: "koln", cityPath: "frechen",
+        countryPath: "germany", regionPath: "nrw", districtPath: "koln", cityPath: "frechen",
         fotoCard: "Germany/nrw/koln/Rhein-Erft-Kreis/frechen/keramion/001.jpg",
         location: "Frechen, Deutschland",
         address: [{ bold: "Adresse:", text: " Bonnstraße 12, 50226 Frechen, Deutschland" }],
@@ -2498,6 +2480,7 @@ const datas = [
             description: "KERAMION: Dauerausstellung und Sonderausstellungen von Keramik, Geschichte der Produktion und zeitgenössische künstlerische Perspektiven.",
             ogTitle: "KERAMION – Zentrum für moderne und historische Keramik, Frechen",
             ogDescription: "Erfahren Sie mehr über die Sammlung von Cremer, die historische Keramik aus Frechen und die Ausstellungen im KERAMION.",
+            keywords: "Keramion, Frechen, Sehenswürdigkeit, Keramikmuseum, Keramik, moderne Kunst, Museum, Ausstellungen, Kulturerbe, Tourismus Deutschland, Führungen, Design, angewandte Kunst",
             ogImage: "https://our-travels.info/foto/Germany/nrw/koln/Rhein-Erft-Kreis/frechen/keramion/001.jpg"
         }
     },
@@ -2505,8 +2488,8 @@ const datas = [
         id: "burg_bachem_frechen",
         name: "Burg Bachem – historische Wasserburg in Frechen",
         type: ['palace_or_castle'], rating: "local",
-        path: "burg-bachem",
-        countryPath: "germany", regionsPath: "nrw", districtPath: "koln", cityPath: "frechen",
+        path: "burg_bachem_frechen",
+        countryPath: "germany", regionPath: "nrw", districtPath: "koln", cityPath: "frechen",
         fotoCard: "Germany/nrw/koln/Rhein-Erft-Kreis/frechen/burg-bachem/Burg-Bachem_3.jpg",
         location: "Frechen, Deutschland",
         address: [{ bold: "Adresse:", text: " Schloßstraße 8, 50226 Frechen, Deutschland" }],
@@ -2547,6 +2530,7 @@ const datas = [
             description: "Burg Bachem: Geschichte, Wassergräben, Spazierbereiche und Erholung am kleinen See in Frechen.",
             ogTitle: "Burg Bachem – Frechen, Deutschland",
             ogDescription: "Entdecken Sie die historische Wasserburg Burg Bachem und den See mit Spazierwegen in Frechen.",
+            keywords: "Wasserburg Bachem, Frechen, Sehenswürdigkeit, Wasserburg, Schloss, historische Architektur, Wassergraben, mittelalterliches Bauwerk, Gutshof, Tourismus Deutschland, Führungen, historische Gebäude, Fotos",
             ogImage: "https://our-travels.info/foto/Germany/nrw/koln/Rhein-Erft-Kreis/frechen/burg-bachem/Burg-Bachem_3.jpg"
         }
     },
@@ -2555,7 +2539,7 @@ const datas = [
         name: "Johann-Schmitz-Platz («Rathausplatz»)",
         type: ['square'], rating: "local",
         path: "johann_schmitz_platz_frechen",
-        countryPath: "germany", regionsPath: "nrw", districtPath: "koln", cityPath: "frechen",
+        countryPath: "germany", regionPath: "nrw", districtPath: "koln", cityPath: "frechen",
         fotoCard: "Germany/nrw/koln/Rhein-Erft-Kreis/frechen/johann_schmitz_platz_frechen/001.jpg",
         location: "Frechen, Deutschland",
         address: [{ bold: "Adresse:", text: " Johann-Schmitz-Platz, 50226 Frechen, Deutschland" }],
@@ -2596,6 +2580,7 @@ const datas = [
             description: "Der Johann-Schmitz-Platz ist der zentrale Stadtplatz von Frechen mit Märkten, Veranstaltungen und historischem Rathaus.",
             ogTitle: "Johann-Schmitz-Platz – Frechen, Deutschland",
             ogDescription: "Entdecken Sie den zentralen Platz von Frechen – Johann-Schmitz-Platz mit historischem Rathaus, Märkten und städtischer Atmosphäre.",
+            keywords: "Johann-Schmitz-Platz, Rathausplatz, Frechen, Sehenswürdigkeit, Stadtplatz, Stadtzentrum, Rathaus, Architektur, öffentlicher Raum, Führungen, Tourismus Deutschland, Fotos, Stadtleben",
             ogImage: "https://our-travels.info/foto/Germany/nrw/koln/Rhein-Erft-Kreis/frechen/johann_schmitz_platz_frechen/001.jpg"
         }
     },
@@ -2604,7 +2589,7 @@ const datas = [
         name: "Altes Rathaus Frechen",
         type: ['historical_building'], rating: "local",
         path: "altes_rathaus_frechen",
-        countryPath: "germany", regionsPath: "nrw", districtPath: "koln", cityPath: "frechen",
+        countryPath: "germany", regionPath: "nrw", districtPath: "koln", cityPath: "frechen",
         hiddenFromList: true, showMore: true,
         fotoCard: "Germany/nrw/koln/Rhein-Erft-Kreis/frechen/johann_schmitz_platz_frechen/008.jpg",
         location: "Frechen, Deutschland",
@@ -2643,6 +2628,7 @@ const datas = [
             description: "Das Alte Rathaus Frechen – ein historisches Verwaltungsgebäude mit Turm auf dem Johann-Schmitz-Platz im Zentrum der Stadt, Nordrhein-Westfalen.",
             ogTitle: "Altes Rathaus Frechen – Frechen, Deutschland",
             ogDescription: "Entdecken Sie das Alte Rathaus Frechen mit seinem charakteristischen Turm und der neobarocken Architektur auf dem Johann-Schmitz-Platz.",
+            keywords: "Altes Rathaus Frechen, Frechen, Sehenswürdigkeit, Rathaus, historisches Gebäude, Stadtarchitektur, Stadtzentrum, Verwaltungsgebäude, Führungen, Tourismus Deutschland, Fotos, Stadtgeschichte",
             ogImage: "https://our-travels.info/foto/Germany/nrw/koln/Rhein-Erft-Kreis/frechen/johann_schmitz_platz_frechen/008.jpg"
         }
     },
@@ -2651,7 +2637,7 @@ const datas = [
         name: "Brunnen vor dem Rathaus",
         type: ["monument_or_fountain"], rating: "local",
         path: "rathausbrunnen_frechen",
-        countryPath: "germany", regionsPath: "nrw", districtPath: "koln", cityPath: "frechen",
+        countryPath: "germany", regionPath: "nrw", districtPath: "koln", cityPath: "frechen",
         hiddenFromList: true,
         fotoCard: "Germany/nrw/koln/Rhein-Erft-Kreis/frechen/johann_schmitz_platz_frechen/005.jpg",
         short_description: "Auf dem Platz vor dem alten Rathaus befindet sich ein dekorativer Bezirksbrunnen, der 1981 vom Keramikkünstler Wim Mühlendyck geschaffen wurde. Er ist mit keramischen Platten verkleidet, die Reliefdarstellungen von Szenen zeigen, die die Entwicklung des Handwerks und der Keramikindustrie in Frechen widerspiegeln – von traditionellen Handwerkern bis zur Fabrikproduktion, während die verschiedenen Maskarone (Gesichter) charakteristische Wasserstrahlen des Brunnens bilden.",
@@ -2661,12 +2647,14 @@ const datas = [
                 { text: "Auf dem Platz vor dem alten Rathaus befindet sich ein dekorativer Bezirksbrunnen, der 1981 vom Keramikkünstler Wim Mühlendyck geschaffen wurde. Er ist mit keramischen Platten verkleidet, die Reliefdarstellungen von Szenen zeigen, die die Entwicklung des Handwerks und der Keramikindustrie in Frechen widerspiegeln – von traditionellen Handwerkern bis zur Fabrikproduktion, während die verschiedenen Maskarone (Gesichter) charakteristische Wasserstrahlen des Brunnens bilden." }
             ]
         },
+        sculptors: "Wim Mühlendyck",
         coord: { lat: 50.90848, lng: 6.80879 },
         meta: {
             title: "Dekorativer Bezirksbrunnen – historisches Objekt vor dem alten Rathaus von Frechen",
             description: "Auf dem Platz vor dem alten Rathaus befindet sich ein dekorativer Bezirksbrunnen, der 1981 vom Keramikkünstler Wim Mühlendyck geschaffen wurde. Er ist mit Keramikplatten mit Reliefszenen bedeckt, die die Entwicklung des Handwerks und der Keramikindustrie in Frechen zeigen – von traditionellen Handwerkern bis zur Fabrikproduktion, und verschiedene Maskarone (Gesichter) dienen als charakteristische Wasserstrahlen des Brunnens.",
             ogTitle: "Dekorativer Bezirksbrunnen vor dem alten Rathaus von Frechen",
             ogDescription: "Der Brunnen auf dem Platz vor dem alten Rathaus in Frechen, 1981 vom Keramikkünstler Wim Mühlendyck geschaffen, ist mit Keramikplatten mit Reliefszenen des Handwerks und der Keramikindustrie sowie Maskaronen mit Wasserstrahlen gestaltet.",
+            keywords: "Brunnen vor dem Rathaus, Frechen, Sehenswürdigkeit, Stadtplatz, Rathaus, Brunnen, Stadtzentrum, öffentlicher Raum, Spaziergänge, Architektur, Tourismus Deutschland, Fotos, Stadtbild",
             ogImage: "https://our-travels.info/foto/Germany/nrw/koln/Rhein-Erft-Kreis/frechen/johann_schmitz_platz_frechen/005.jpg"
         }
     },
@@ -2675,7 +2663,7 @@ const datas = [
         name: "Klüttenbrunnen",
         type: ["monument_or_fountain"], rating: "local",
         path: "klüttenbrunnen_frechen",
-        countryPath: "germany", regionsPath: "nrw", districtPath: "koln", cityPath: "frechen",
+        countryPath: "germany", regionPath: "nrw", districtPath: "koln", cityPath: "frechen",
         hiddenFromList: true,
         fotoCard: "Germany/nrw/koln/Rhein-Erft-Kreis/frechen/johann_schmitz_platz_frechen/004.jpg",
         short_description: "In der Fußgängerzone wurde 1986 der skulpturale Brunnen Klüttenbrunnen vom deutschen Bildhauer Olaf Höhnen errichtet. Er befindet sich in der Nähe des Johann-Schmitz-Platz und spiegelt die industrielle und handwerkliche Geschichte Frechens wider, insbesondere den Abbau und die Verarbeitung von lokalem Ton. Der Brunnen ist als künstlerische Komposition mit Steinelementen und Wasserstrahlen gestaltet, fügt sich harmonisch in das Stadtbild ein und dient als visueller Orientierungspunkt für Besucher.",
@@ -2685,12 +2673,14 @@ const datas = [
                 { text: "In der Fußgängerzone wurde 1986 der skulpturale Brunnen Klüttenbrunnen vom deutschen Bildhauer Olaf Höhnen errichtet. Er befindet sich in der Nähe des Johann-Schmitz-Platz und spiegelt die industrielle und handwerkliche Geschichte Frechens wider, insbesondere den Abbau und die Verarbeitung von lokalem Ton. Der Brunnen ist als künstlerische Komposition mit Steinelementen und Wasserstrahlen gestaltet, fügt sich harmonisch in das Stadtbild ein und dient als visueller Orientierungspunkt für Besucher." }
             ]
         },
+        sculptors: "Olaf Höhnen",
         coord: { lat: 50.90960, lng: 6.80869 },
         meta: {
             title: "Klüttenbrunnen – historisches Skulpturenobjekt",
             description: "In der Fußgängerzone wurde 1986 der Skulpturenbrunnen Klüttenbrunnen (Klüttenbrunnen) des deutschen Bildhauers Olaf Hönen errichtet. Er befindet sich in der Nähe des Johann-Schmitz-Platzes und spiegelt die industrielle und handwerkliche Geschichte Frechens wider, insbesondere den Abbau und die Verarbeitung des lokalen Tons. Der Brunnen ist als künstlerische Komposition mit Steinelementen und Wasserstrahlen gestaltet, harmoniert mit der städtischen Umgebung und dient als visueller Orientierungspunkt für Touristen.",
             ogTitle: "Klüttenbrunnen in Frechen",
             ogDescription: "Der Skulpturenbrunnen Klüttenbrunnen (Klüttenbrunnen) in der Fußgängerzone nahe dem Johann-Schmitz-Platz spiegelt die industrielle und handwerkliche Geschichte Frechens wider und ist als künstlerische Komposition mit Steinelementen und Wasserstrahlen gestaltet.",
+            keywords: "Kluttenbrunnen, Frechen, Sehenswürdigkeit, Brunnen, Stadtsymbol, Platz, Stadtzentrum, öffentlicher Raum, Spaziergänge, Architektur, Tourismus Deutschland, Fotos, Stadtbild",
             ogImage: "https://our-travels.info/foto/Germany/nrw/koln/Rhein-Erft-Kreis/frechen/johann_schmitz_platz_frechen/004.jpg"
         }
     },
@@ -2699,7 +2689,7 @@ const datas = [
         name: "Kirche St. Audomar",
         type: ["cathedral"], rating: "local",
         path: "st_audomar_frechen",
-        countryPath: "germany", regionsPath: "nrw", districtPath: "koln", cityPath: "frechen",
+        countryPath: "germany", regionPath: "nrw", districtPath: "koln", cityPath: "frechen",
         fotoCard: "Germany/nrw/koln/Rhein-Erft-Kreis/frechen/st_audomar/001.jpg",
         location: "Frechen, Deutschland",
         short_description: "Die Kirche St. Audomar (St. Audomar) in Frechen ist eine historische römisch-katholische Kirche. Sie wurde im 19. Jahrhundert im neuromanischen Stil erbaut, daneben befindet sich der alte Friedhof (Alter Friedhof) mit Gedenksteinen. Sie ist ein kulturelles und spirituelles Zentrum der Stadt und bewahrt die jahrhundertealte Geschichte der Gemeinde.",
@@ -2715,7 +2705,8 @@ const datas = [
         tickets_and_entry: {
             title: "Praktische Informationen",
             items: [
-                { bold: "Adresse:", text: "Kölner Str. 3, 50226 Frechen, Nordrhein‑Westfalen, Deutschland" }
+                { bold: "Adresse:", text: "Kölner Str. 3, 50226 Frechen, Nordrhein‑Westfalen, Deutschland" },
+                { bold: "Konfession:", text: "römisch-katholische Kirche" },
             ]
         },
         relics: {
@@ -2744,6 +2735,7 @@ const datas = [
             description: "Geschichte und Architektur der Kirche St. Audomar in Frechen mit dem angrenzenden alten Friedhof Alter Friedhof.",
             ogTitle: "Kirche St. Audomar (St. Audomar) – historisches Herz von Frechen",
             ogDescription: "Tauchen Sie ein in die Geschichte der katholischen Kirche St. Audomar (St. Audomar) in Frechen: alte Traditionen, neuromanische Architektur, alter Friedhof und kulturelle Denkmäler.",
+            keywords: "St. Audomar Kirche, Frechen, Sehenswürdigkeit, Kirche, Sakralbau, religiöse Architektur, historisches Gebäude, Stadtzentrum, Gotik, katholische Kirche, Tourismus Deutschland, Führungen, Fotos, geistliches Erbe",
             ogImage: "https://our-travels.info/foto/Germany/nrw/koln/Rhein-Erft-Kreis/frechen/st_audomar/001.jpg"
         }
     },
@@ -2752,7 +2744,7 @@ const datas = [
         name: "Evangelische Kirche",
         type: ["cathedral"], rating: "local",
         path: "evangelischeKirche_frechen",
-        countryPath: "germany", regionsPath: "nrw", districtPath: "koln", cityPath: "frechen",
+        countryPath: "germany", regionPath: "nrw", districtPath: "koln", cityPath: "frechen",
         fotoCard: "Germany/nrw/koln/Rhein-Erft-Kreis/frechen/evangelischeKirche/001.jpg",
         location: "Frechen, Deutschland",
         officialSite: [{ bold: "Offizielle Website", link: "https://www.kirche-frechen.de/" }],
@@ -2771,7 +2763,8 @@ const datas = [
         tickets_and_entry: {
             title: "Praktische Informationen",
             items: [
-                { bold: "Adresse:", text: "Hauptstraße 209, 50226 Frechen" }
+                { bold: "Adresse:", text: "Hauptstraße 209, 50226 Frechen" },
+                { bold: "Konfession:", text: "evangelische Kirche" },
             ]
         },
         relics: {
@@ -2801,6 +2794,7 @@ const datas = [
             description: "Die Evangelische Kirche Frechen ist eine historische protestantische Kirche aus dem 18. Jahrhundert im Zentrum der Stadt. Erfahren Sie mehr über ihre Geschichte, Architektur und die Entwicklung der Gemeinde.",
             ogTitle: "Evangelische Kirche Frechen – historische protestantische Kirche in Frechen",
             ogDescription: "Historische evangelische Kirche in Frechen, erbaut im 18. Jahrhundert. Entdecken Sie die Geschichte der protestantischen Gemeinde und die Architektur dieses Gotteshauses.",
+            keywords: "Evangelische Kirche Frechen, Frechen, Sehenswürdigkeit, Kirche, evangelische Kirche, protestantische Kirche, religiöse Architektur, historisches Gebäude, Stadtzentrum, Führungen, Tourismus Deutschland, Fotos, Kulturerbe",
             ogImage: "https://our-travels.info/foto/Germany/nrw/koln/Rhein-Erft-Kreis/frechen/evangelischeKirche/001.jpg"
         }
     },
@@ -2813,15 +2807,10 @@ const datas = [
         name: "Berg Drachenfels",
         type: ["nature"], rating: "top",
         path: "drachenfels",
-        countryPath: "germany", regionsPath: "nrw", districtPath: "koln", cityPath: "konigswinter",
+        countryPath: "germany", regionPath: "nrw", districtPath: "koln", cityPath: "konigswinter",
         fotoCard: "Germany/nrw/koln/Rhein-Sieg-Kreis/konigswinter/drachenfels/001.jpg",
         location: "zwischen den Städten Königswinter und Bad Honnef, Deutschland",
-        officialSite: [
-            {
-                bold: "Offizielle Website der Zahnradbahn und des touristischen Gesamtprojekts für den Berg",
-                link: "https://www.drachenfelsbahn.de/"
-            }
-        ],
+        officialSite: [{ bold: "Offizielle Website der Zahnradbahn und des touristischen Gesamtprojekts für den Berg", link: "https://www.drachenfelsbahn.de/" }],
         short_description: "Der Drachenfels ist ein legendärer Berg im Naturpark Siebengebirge oberhalb des Rheins. Vom Gipfel eröffnen sich weite Panoramablicke über das Rheintal, und der Berg selbst ist eng mit der Sage vom Drachen und dem Helden Siegfried verbunden. ",
         short_description_subObjects: {
             text: "Auf dem Drachenfels befinden sich folgende Sehenswürdigkeiten:",
@@ -2872,6 +2861,7 @@ const datas = [
             description: "Der Drachenfels bei Königswinter ist ein legendärer Berg des Rheintals, eng verbunden mit der Sage von Siegfried und dem Drachen. Panoramablicke auf den Rhein, Burgruinen, der Naturpark Siebengebirge und beliebte Wanderwege machen ihn zu einem der bekanntesten Ausflugsziele der Region.",
             ogTitle: "Berg Drachenfels — Legenden und Panoramablicke am Rhein",
             ogDescription: "Entdecken Sie den Drachenfels: Drachenmythen, Ausblicke über den Rhein, den Naturpark Siebengebirge und die historische Bedeutung eines der bekanntesten Berge der Region.",
+            keywords: "Drachenfels, Königswinter, Sehenswürdigkeit, Berg, Aussichtspunkt, Panoramablick, Rhein, Burg Drachenfels, touristische Attraktionen, Spaziergänge, Führungen, Tourismus Deutschland, Natur, Fotos",
             ogImage: "https://our-travels.info/foto/Germany/nrw/koln/Rhein-Sieg-Kreis/konigswinter/drachenfels/001.jpg"
         }
     },
@@ -2880,7 +2870,7 @@ const datas = [
         name: "Drachenfelsbahn",
         type: ["technical_structure"], rating: "popular",
         path: "drachenfelsbahn",
-        countryPath: "germany", regionsPath: "nrw", districtPath: "koln", cityPath: "konigswinter",
+        countryPath: "germany", regionPath: "nrw", districtPath: "koln", cityPath: "konigswinter",
         hiddenFromList: true, showMore: true,
         fotoCard: "Germany/nrw/koln/Rhein-Sieg-Kreis/konigswinter/drachenfels/002.jpg",
         officialSite: [
@@ -2924,6 +2914,7 @@ const datas = [
             description: "Die Drachenfelsbahn ist eine historische Zahnradbahn aus dem Jahr 1883 in Königswinter. Sie verbindet das Rheintal mit dem Plateau des Drachenfels und zählt zu den wichtigsten touristischen Attraktionen der Region.",
             ogTitle: "Drachenfelsbahn",
             ogDescription: "Erleben Sie eine Fahrt mit der Drachenfelsbahn — der ältesten noch betriebenen Zahnradbahn Deutschlands mit Panoramablicken auf den Rhein und den Drachenfels.",
+            keywords: "Drachenfelsbahn, Königswinter, Sehenswürdigkeit, Zahnradbahn, Standseilbahn, Bergbahn, Panoramablick, Rhein, Bergauffahrt, touristische Bahn, Führungen, Tourismus Deutschland, Fotos, Reisen",
             ogImage: "https://our-travels.info/foto/Germany/nrw/koln/Rhein-Sieg-Kreis/konigswinter/drachenfels/002.jpg"
         }
     },
@@ -2932,7 +2923,7 @@ const datas = [
         name: "Schloss Drachenburg",
         type: ["palace_or_castle"], rating: "popular",
         path: "schloss_drachenburg",
-        countryPath: "germany", regionsPath: "nrw", districtPath: "koln", cityPath: "konigswinter",
+        countryPath: "germany", regionPath: "nrw", districtPath: "koln", cityPath: "konigswinter",
         hiddenFromList: true, showMore: true,
         fotoCard: "Germany/nrw/koln/Rhein-Sieg-Kreis/konigswinter/drachenfels/001.jpg",
         officialSite: [
@@ -2983,6 +2974,7 @@ const datas = [
             description: "Schloss Drachenburg liegt am Hang des Drachenfels in Königswinter. Erbaut 1882-1884, beeindruckt das Schloss durch neugotische Architektur, prächtige Innenräume und Panoramablicke ins Rheintal.",
             ogTitle: "Schloss Drachenburg",
             ogDescription: "Besuchen Sie Schloss Drachenburg – ein romantisches neugotisches Schloss des 19. Jahrhunderts mit historischen Sälen, Glasfenstern und Aussichtsterrassen mit Blick auf Rhein und Drachenfels.",
+            keywords: "Schloss Drachenburg, Königswinter, Sehenswürdigkeit, Schloss, Burg, Neugotik, historische Architektur, Rhein, Panoramablick, Führungen, Tourismus Deutschland, Museum, Fotos, touristische Attraktion",
             ogImage: "https://our-travels.info/foto/Germany/nrw/koln/Rhein-Sieg-Kreis/konigswinter/drachenfels/001.jpg"
         }
     },
@@ -2991,12 +2983,13 @@ const datas = [
         name: "Ruinen der Burg Drachenfels",
         type: ["palace_or_castle"], rating: "popular",
         path: "drachenfels_ruins",
-        countryPath: "germany", regionsPath: "nrw", districtPath: "koln", cityPath: "konigswinter",
+        countryPath: "germany", regionPath: "nrw", districtPath: "koln", cityPath: "konigswinter",
         hiddenFromList: true, showMore: true,
         fotoCard: "Germany/nrw/koln/Rhein-Sieg-Kreis/konigswinter/drachenfels/003.jpg",
         construction_period: "12. Jahrhundert (1138–1167)",
         founder: " Kölner Erzbischof Arnold von Wied",
         short_description: "Die Ruinen der Burg Drachenfels sind die Überreste einer mittelalterlichen Burg aus dem 12. Jahrhundert, die sich auf dem Gipfel des gleichnamigen Berges im Siebengebirge befindet. Von der Festung sind Fragmente der Mauern und Fundamente der Türme erhalten geblieben, die direkt in den Felsen integriert sind. Die Burg wurde während des Dreißigjährigen Krieges zerstört und danach nicht wieder aufgebaut, weshalb man hier heute authentische historische Ruinen sehen kann. Vom Gipfel aus eröffnet sich ein panoramischer Blick auf den Rhein und die umliegende Landschaft.",
+        status: "partial", note: "die Anlage besteht aus Fragmenten einer mittelalterlichen Festung mit teilweise erhaltenen Befestigungsstrukturen.",
         full_description: {
             title: "Beschreibung und Geschichte",
             items: [
@@ -3024,6 +3017,7 @@ const datas = [
             description: "Die Ruinen der Burg Drachenfels befinden sich auf dem Gipfel des gleichnamigen Berges im Siebengebirge. Erhalten sind Mauerreste und Türme mit Panoramablick auf den Rhein und Königswinter.",
             ogTitle: "Ruinen der Burg Drachenfels (Burg Drachenfels)",
             ogDescription: "Besuchen Sie die Ruinen der Burg Drachenfels – eine mittelalterliche Festung aus dem 12. Jahrhundert mit beeindruckendem Blick auf das Rheintal.",
+            keywords: "Руїни замку Драхенфельс, Драхенфельс, Кьонігсвінтер, пам’ятка, замок, руїни, середньовічний замок, історія, панорамні види, Рейн, туристичні місця, екскурсії, туризм Німеччина, фото, гора Драхенфельс",
             ogImage: "https://our-travels.info/foto/Germany/nrw/koln/Rhein-Sieg-Kreis/konigswinter/drachenfels/003.jpg"
         }
     },
@@ -3032,7 +3026,7 @@ const datas = [
         name: "Nibelungenhalle",
         type: ["museum"], rating: "local",
         path: "nibelungenhalle",
-        countryPath: "germany", regionsPath: "nrw", districtPath: "koln", cityPath: "konigswinter",
+        countryPath: "germany", regionPath: "nrw", districtPath: "koln", cityPath: "konigswinter",
         hiddenFromList: true, showMore: true,
         officialSite: [
             { bold: "Offizielle Website der Nibelungenhalle", link: "https://nibelungenhalle.de/" }
@@ -3063,6 +3057,7 @@ const datas = [
             description: "Die Nibelungenhalle ist ein 1913 erbautes Museum auf dem Drachenfels, das der Nibelungensage und Drachenlegenden gewidmet ist. In der Nähe befindet sich die Drachenhöhle.",
             ogTitle: "Nibelungenhalle auf dem Drachenfels",
             ogDescription: "Besuchen Sie die Nibelungenhalle – ein Museum der Mythen und Legenden mit Blick auf das Rheintal und die Drachenhöhle.",
+            keywords: "Nibelungenhalle, Königswinter, Sehenswürdigkeit, Halle, Museum, Nibelungen, Mythologie, deutsche Sagen, Skulpturen, Führungen, Tourismus Deutschland, Rhein, Fotos, touristische Attraktion",
             ogImage: "https://our-travels.info/foto/Germany/nrw/koln/Rhein-Sieg-Kreis/konigswinter/drachenfels/004.jpg"
         }
     },
@@ -3071,11 +3066,8 @@ const datas = [
         name: "Reptilienzoo Drachenfels",
         type: ["nature"], rating: "local",
         path: "reptile_zoo",
-        countryPath: "germany", regionsPath: "nrw", districtPath: "koln", cityPath: "konigswinter",
+        countryPath: "germany", regionPath: "nrw", districtPath: "koln", cityPath: "konigswinter",
         hiddenFromList: true, showMore: true,
-        // officialSite: [ funktioniert nicht überprüfen
-        //     { bold: "Offizielle Website des Zoos", link: "https://www.reptilien-zoo-drachenfels.de" }
-        // ],
         fotoCard: "Germany/nrw/koln/Rhein-Sieg-Kreis/konigswinter/drachenfels/005.jpg",
         short_description: "Der Reptilienzoo Drachenfels (dt. Reptilien-Tierpark Drachenfels) ist ein kleiner, aber gut ausgestatteter zoologischer Park auf dem Gelände des Drachenfels, der sich auf Reptilien und exotische Tiere spezialisiert hat. Hier kann man Schlangen, Eidechsen, Schildkröten und andere Tiere sehen sowie an interaktiven Vorführungen und Fütterungen teilnehmen. Der Besuch des Zoos dauert etwa 1–1,5 Stunden und lässt sich ideal mit dem Aufstieg auf den Berg und anderen Sehenswürdigkeiten des Drachenfels kombinieren.",
         full_description: {
@@ -3112,6 +3104,7 @@ const datas = [
             description: "Der Reptile Zoo auf dem Drachenfels ist ein zoologischer Park, in dem man Schlangen, Eidechsen, Schildkröten und seltene exotische Tiere sehen sowie an interaktiven Vorführungen und Bildungsprogrammen teilnehmen kann.",
             ogTitle: "Reptilienzoo Drachenfels",
             ogDescription: "Besuchen Sie den Reptile Zoo auf dem Drachenfels – ein Zoo mit seltenen Reptilien, interaktiven Fütterungs‑Vorführungen und Bildungsprogrammen für Kinder und Erwachsene.",
+            keywords: "Reptilienzoo Drachenfels, Königswinter, Sehenswürdigkeit, Zoo, Reptilien, Schlangen, Echsen, exotische Tiere, Terrarium, lebende Natur, Führungen, Tourismus Deutschland, Familienausflug, Fotos",
             ogImage: "https://our-travels.info/foto/Germany/nrw/koln/Rhein-Sieg-Kreis/konigswinter/drachenfels/005.jpg"
         }
     },
@@ -3120,7 +3113,7 @@ const datas = [
         name: "Abtei Heisterbach",
         type: ["historical_building"], rating: "popular",
         path: "heisterbach_konigswinter",
-        countryPath: "germany", regionsPath: "nrw", districtPath: "koln", cityPath: "konigswinter",
+        countryPath: "germany", regionPath: "nrw", districtPath: "koln", cityPath: "konigswinter",
         fotoCard: "Germany/nrw/koln/Rhein-Sieg-Kreis/konigswinter/heisterbach/001.jpg",
         location: "Königswinter, Deutschland",
         officialSite: [
@@ -3172,6 +3165,7 @@ const datas = [
             description: "Die Abtei Heisterbach – ehemaliges Zisterzienserkloster aus dem 12. Jahrhundert im Heisterbachtal nahe Königswinter. Geschichte, Bedeutung und Besuch des historischen Komplexes.",
             ogTitle: "Abtei Heisterbach – mittelalterliches Kloster im Heisterbachtal",
             ogDescription: "Die historische Abtei Heisterbach – eines der atmosphärischsten Zeugnisse mittelalterlicher Klosterarchitektur in der Region Siebengebirge, unweit von Königswinter.",
+            keywords: "Kloster Heisterbach, Abtei Heisterbach, Ruinen, Königswinter, Sehenswürdigkeit, Zisterzienser, Mittelalter, Klosteranlage, historische Stätte, Architektur, Führungen, Tourismus Deutschland, Rhein, Fotos",
             ogImage: "https://our-travels.info/foto/Germany/nrw/koln/Rhein-Sieg-Kreis/konigswinter/heisterbach/001.jpg"
         }
     },
@@ -3180,7 +3174,7 @@ const datas = [
         name: "Ruinen des Chors der ehemaligen Klosterkirche",
         type: ["historical_building"], rating: "local",
         path: "chorruine_heisterbach_konigswinter",
-        countryPath: "germany", regionsPath: "nrw", districtPath: "koln", cityPath: "konigswinter",
+        countryPath: "germany", regionPath: "nrw", districtPath: "koln", cityPath: "konigswinter",
         hiddenFromList: true, showMore: true,
         fotoCard: "Germany/nrw/koln/Rhein-Sieg-Kreis/konigswinter/heisterbach/001.jpg",
         location: "Königswinter, Deutschland",
@@ -3188,6 +3182,7 @@ const datas = [
             { bold: "Offizielle Website", link: "https://www.klosterlandschaft-heisterbach.de" }
         ],
         short_description: "Die Ruinen des Chors der ehemaligen Klosterkirche sind der beeindruckendste und bekannteste Teil der Abtei Heisterbach. Sie sind das einzige Fragment der riesigen gotischen Basilika, das nach der Zerstörung des Klosters im 19. Jahrhundert fast vollständig erhalten geblieben ist.",
+        status: "partial", note: "das Objekt stellt ein architektonisches Fragment eines sakralen Bauwerks mit teilweise erhaltenen Chorwänden und Strukturen dar.",
         full_description: {
             title: "Beschreibung und Geschichte",
             items: [
@@ -3211,6 +3206,7 @@ const datas = [
             description: "Entdecken Sie die beeindruckenden Ruinen des Chors der Abtei Heisterbach: Geschichte, Architektur und einzigartige Überreste des mittelalterlichen Klosters im Siebengebirge.",
             ogTitle: "Ruinen des Chors der Abtei Heisterbach",
             ogDescription: "Besuchen Sie die Ruinen des Chors der Abtei Heisterbach und tauchen Sie ein in die Atmosphäre der mittelalterlichen Klostergeschichte im Herzen des Siebengebirges.",
+            keywords: "Chorruine Klosterkirche Heisterbach, Königswinter, Abtei Heisterbach, Sehenswürdigkeit, Ruinen, gotische Architektur, Zisterzienserkloster, Mittelalter, historische Stätte, Deutschland, Rhein, touristisches Ziel, Fotos",
             ogImage: "https://our-travels.info/foto/Germany/nrw/koln/Rhein-Sieg-Kreis/konigswinter/heisterbach/001.jpg"
         }
     },
@@ -3219,7 +3215,7 @@ const datas = [
         name: "Kirche St. Peter in Heisterbach",
         type: ["cathedral"], rating: "local",
         path: "st_peter_heisterbach_konigswinter",
-        countryPath: "germany", regionsPath: "nrw", districtPath: "koln", cityPath: "konigswinter",
+        countryPath: "germany", regionPath: "nrw", districtPath: "koln", cityPath: "konigswinter",
         hiddenFromList: true, showMore: true,
         fotoCard: "Germany/nrw/koln/Rhein-Sieg-Kreis/konigswinter/heisterbach/005.jpg",
         location: "Königswinter, Deutschland",
@@ -3237,6 +3233,13 @@ const datas = [
                 { text: "Die Kirche St. Peter in Heisterbach ist ein lebendiges geistliches Zentrum der Anlage und ergänzt die historischen Ruinen der Abtei zu einem ganzheitlichen Eindruck dieses einzigartigen Ortes." }
             ]
         },
+        tickets_and_entry: {
+            title: "Praktische Informationen",
+            items: [
+                { bold: "Adresse:", text: "Kloster Heisterbach, 53639 Königswinter, Deutschland" },
+                { bold: "Konfession:", text: "römisch-katholische Kirche" },
+            ]
+        },
         interestingFacts: {
             title: "Interessante Fakten",
             items: [
@@ -3252,29 +3255,95 @@ const datas = [
             description: "Die Kirche St. Peter in Heisterbach ist eine katholische Kirche von 1953–1956 auf dem Gelände der ehemaligen Abtei. Geschichte, Architektur, Glasfenster und Besuch in Heisterbach, Königswinter.",
             ogTitle: "Kirche St. Peter in Heisterbach",
             ogDescription: "Aktive katholische Kirche auf dem Gelände der ehemaligen Abtei Heisterbach. Erbaut 1953-1956 mit einem einzigartigen Tympanon aus dem 13. Jahrhundert und beeindruckenden Glasfenstern.",
+            keywords: "Kirche St. Peter Heisterbach, Königswinter, Abtei Heisterbach, Sehenswürdigkeit, Kirche, Ruine, mittelalterliche Architektur, Klosteranlage, Zisterzienser, Geschichte Deutschland, Rhein, touristisches Ziel, Gotik, Fotos",
             ogImage: "https://our-travels.info/foto/Germany/nrw/koln/Rhein-Sieg-Kreis/konigswinter/heisterbach/005.jpg"
         }
     },
 
     // arnsberg округ
 
+    // Dortmund
+    {
+        id: "westfalenpark",
+        name: "Westfalenpark",
+        type: ["nature"], rating: "popular",
+        path: "westfalenpark",
+        countryPath: "germany", regionPath: "nrw", districtPath: "city", cityPath: "dortmund",
+        fotoCard: "Germany/nrw/arnsberg/dortmund/westfalenpark/001.jpg",
+        location: "Dortmund, Deutschland",
+        officialSite: [{ bold: "Offizielle Webseite", link: "https://www.dortmund.de/westfalenpark" }],
+        short_description: "Der Westfalenpark ist einer der größten und schönsten Stadtparks Dortmunds. Er ist bekannt für seine weitläufigen grünen Rasenflächen, thematischen Gärten, Seen und den Florianturm, der lange Zeit das höchste Bauwerk der Stadt war. Der Park ist ein beliebter Ort für Erholung, Spaziergänge und kulturelle Veranstaltungen.",
+        full_description: {
+            title: "Beschreibung und Geschichte",
+            items: [
+                { bold: "Westfalenpark", text: "– ist ein großer Stadtpark im Süden von Dortmund, der eine Fläche von etwa 70 Hektar einnimmt. Der Park vereint natürliche Landschaften, Blumengärten, Seen und Erholungszonen. Dank seiner weitläufigen Alleen und gepflegten Rasenflächen ist er ein beliebter Ort für Spaziergänge von Einheimischen und Touristen." },
+                { text: "Besondere Bekanntheit erlangt der Park durch den Fernsehturm Florianturm, von dessen Aussichtsterrasse man einen Panoramablick über ganz Dortmund und die Ruhr-Region hat. Im Park befindet sich der Deutsche Rosengarten mit Tausenden von Rosensorten sowie thematische Gärten, die Parkbahn und die Seilbahn, was ihn für Erwachsene und Kinder interessant macht." },
+                { bold: "Geschichte", text: "Der moderne Westfalenpark wurde zur Bundesgartenschau 1959 angelegt. Für die Ausstellung wurde das Gebiet ehemaliger landwirtschaftlicher Flächen umgestaltet und zu einem einheitlichen Stadtpark zusammengeführt. Das zentrale Element der Ausstellung war der Florianturm, ein Symbol der Modernisierung Dortmunds." },
+                { text: "Nach Ende der Ausstellung wurde der Park erhalten und schrittweise weiterentwickelt. Neue thematische Gärten, Wasserbereiche und Spielplätze für Kinder wurden angelegt. Im Park werden regelmäßig kulturelle Veranstaltungen, Konzerte und Festivals abgehalten, was seine Rolle als kulturelles und Erholungszentrum der Stadt stärkte." },
+                { text: "Heute bleibt der Westfalenpark eines der Wahrzeichen Dortmunds und ein Muss für Touristen. Er vereint Geschichte, Architektur, Natur und Unterhaltung für die ganze Familie und bietet eine einzigartige Kombination aus kulturellen und natürlichen Sehenswürdigkeiten." }
+            ]
+        },
+        tickets_and_entry: {
+            title: "Praktische Informationen",
+            items: [
+                { bold: "Adresse:", text: "An der Buschmühle 3, 44139 Dortmund" },
+                { bold: "Öffnungszeiten", text: "Der Park ist täglich von 9:00 bis 20:00 Uhr (Sommer) und bis 18:00 Uhr (Winter) geöffnet." },
+                { bold: "Eintritt:", text: "gebührenpflichtig (meist symbolischer Betrag)" }
+            ]
+        },
+        sub_objects: {
+            title: "Parkbereiche",
+            items: [
+                { bold: "Seilbahn", text: "Über einen Teil des Parks verläuft die Seilbahn Seilbahn im Westfalenpark. Die Kabinen bewegen sich langsam über die grünen Bereiche des Parks und bieten eine Aussicht aus der Höhe. Während der Fahrt eröffnen sich schöne Blicke auf den Rosengarten, die Seen und den Florianturm. <br>Die Seilbahn ist eine der ungewöhnlichsten Attraktionen des Parks und besonders in den warmen Monaten beliebt." },
+                { bold: "Parkbahn", text: "Im Park verkehrt die kleine Parkbahn Parkbahn im Westfalenpark. Sie verläuft durch das Parkgelände und hält an mehreren Stationen nahe den wichtigsten Erholungsbereichen. Die kleine Bahn ist besonders bei Familien mit Kindern beliebt, wird aber auch von Erwachsenen genutzt, um sich schnell innerhalb des Parks zu bewegen." },
+                { bold: "Deutscher Rosengarten", text: "Einer der größten Rosengärten Deutschlands mit Tausenden von Rosensorten und thematischen Blumenarrangements." },
+                { bold: "Florianturm", text: "Fernseh- und Aussichtsturm mit Restaurant und Aussichtsterrasse." },
+                { bold: "Thematische Gärten", text: "Im Park gibt es mehrere Gärten, die in verschiedenen Stilen gestaltet sind und verschiedenen Pflanzen gewidmet sind." },
+                { bold: "Seen und Wasserbereiche", text: "Im Park befinden sich mehrere künstliche Seen und Wasserbecken, die ein wichtiger Bestandteil der Landschaft sind. Rund um die Seen verlaufen Spazierwege, es gibt Bänke und Aussichtspunkte. Die Seen schaffen eine ruhige Atmosphäre und sind ein beliebter Ort für Erholung und Fotografie." },
+                { bold: "Spielplätze", text: "In verschiedenen Bereichen des Parks befinden sich moderne Spielplätze für Kinder mit Rutschen, Klettergerüsten und interaktiven Elementen." },
+                { bold: "Konzert- und Festivalbereiche", text: "Auf dem Parkgelände gibt es offene Flächen für Konzerte und Großveranstaltungen. Hier finden regelmäßig Festivals, kulturelle Events und Sommerkonzerte im Freien statt." }
+            ]
+        },
+        interestingFacts: {
+            title: "Interessante Fakten",
+            items: [
+                { bold: "Einer der größten Rosengärten Deutschlands", text: "Im Park befindet sich der Deutsche Rosengarten, in dem Tausende Rosensorten gezüchtet werden." },
+                { bold: "Fernsehturm mit Stadtpanorama", text: "Der Florianturm war lange Zeit das höchste Bauwerk Dortmunds." },
+                { bold: "Ort für große Veranstaltungen", text: "Der Westfalenpark beherbergt regelmäßig Konzerte, Festivals und städtische Feierlichkeiten." }
+            ]
+        },
+        construction_period: "1959",
+        architects: "Team der Landschaftsarchitekten der Bundesgartenschau 1959",
+        coord: { lat: 51.49655, lng: 7.47621 },
+        meta: {
+            title: "Westfalenpark in Dortmund – Park, Florianturm und Rosengarten",
+            description: "Der Westfalenpark ist der größte Stadtpark Dortmunds mit dem Florianturm, Rosengarten, Seen, Seilbahn und Parkbahn. Ein idealer Ort für Spaziergänge, Erholung und Veranstaltungen.",
+            ogTitle: "Westfalenpark – grünes Herz Dortmunds",
+            ogDescription: "Großer Park mit Rosengarten, Seen und Florianturm. Einer der besten Orte für Spaziergänge und Erholung in Dortmund.",
+            keywords: "Westfalenpark Dortmund, Sehenswürdigkeit, Park, Freizeitpark, Ruhrgebiet, Rosarium, Florianturm, Aussichtsturm, Spaziergänge, Natur, Erholung, Familienpark, Deutschland, touristisches Ziel, Fotos",
+            ogImage: "https://our-travels.info/foto/Germany/nrw/arnsberg/dortmund/westfalenpark/001.jpg"
+        }
+    },
+
     // Märkischer Kreis
 
     // Lüdenscheid    
     {
         id: "altstadt_luedenscheid",
-        name: "Altstadt von Lüdenscheid",
+        name: "Altstadt Lüdenscheid",
         type: ["historical_area"], rating: "popular",
         path: "altstadt_luedenscheid",
-        countryPath: "germany", regionsPath: "nrw", districtPath: "arnsberg", cityPath: "luedenscheid",
-        fotoCard: "Germany/nrw/arnsberg/Märkischer-Kreis/luedenscheid/001.JPG",
-        subObjects: ["erloeserkirche_luedenscheid", "brunnen_altstadt_luedenscheid"],
+        countryPath: "germany", regionPath: "nrw", districtPath: "arnsberg", cityPath: "luedenscheid",
+        fotoCard: "Germany/nrw/arnsberg/Märkischer-Kreis/luedenscheid/altstadt_luedenscheid/004.jpg",
+        subObjects: ["erloeserkirche_luedenscheid", "brunnen_altstadt_luedenscheid", "stadtbücherei_lüdenscheid"],
+        location: "Lüdenscheid, Stadtteile Innenstadt / Staberg / Knapp, Tinsberg / Kluse, Deutschland",
         short_description: "Die Altstadt von Lüdenscheid ist das historische Herz der Stadt mit engen Straßen und einem ringförmigen Straßennetz um die Erlöserkirche. Hier sind Gebäude aus dem 18.–19. Jahrhundert, Reste der Stadtmauer und das historische Museum erhalten geblieben, und die gemütlichen Gassen verbinden Vergangenheit mit dem modernen Stadtleben.",
         short_description_subObjects: {
             text: "In der Altstadt von Lüdenscheid befinden sich folgende Sehenswürdigkeiten:",
             items: [
                 { bold: "Erlöserkirche", text: "– historische Kirche mit charakteristischer Architektur, ein wichtiger kultureller Ort der Stadt." },
                 { bold: "Brunnen in der Altstadt", text: "– dekorativer Brunnen auf dem Hauptplatz, ein beliebter Ort für Spaziergänge und Fotos." },
+                { bold: "Stadtbibliothek", text: "– eine der ältesten öffentlichen Bibliotheken Deutschlands, untergebracht in einem historischen Gebäude." }
             ]
         },
         full_description: {
@@ -3298,11 +3367,12 @@ const datas = [
             ]
         },
         meta: {
-            title: "Altstadt von Lüdenscheid – historisches Herz der Stadt mit engen Straßen und Denkmälern",
+            title: "Altstadt Lüdenscheid – historisches Herz der Stadt mit engen Straßen und Denkmälern",
             description: "Die Altstadt von Lüdenscheid ist der mittelalterliche Teil der Stadt mit historischen Gebäuden des 18.–19. Jahrhunderts, der Erlöserkirche, Resten der Stadtmauer und dem historischen Museum. Schlendern Sie durch die gemütlichen Gassen und spüren Sie die Atmosphäre vergangener Jahrhunderte.",
-            ogTitle: "Altstadt von Lüdenscheid",
+            ogTitle: "Altstadt Lüdenscheid",
             ogDescription: "Besuchen Sie die Altstadt von Lüdenscheid – den historischen Teil der Stadt mit barocken Häusern, der Erlöserkirche, dem historischen Museum und den Resten der mittelalterlichen Stadtmauer.",
-            ogImage: "https://our-travels.info/foto/Germany/nrw/arnsberg/Märkischer-Kreis/luedenscheid/001.JPG"
+            keywords: "Altstadt Lüdenscheid, historisches Zentrum, Sehenswürdigkeit, Deutschland, Nordrhein-Westfalen, Architektur, Altstadt, Spaziergänge, touristische Orte, Fachwerk, Stadtzentrum, Geschichte, Fotos, Sauerland",
+            ogImage: "https://our-travels.info/foto/Germany/nrw/arnsberg/Märkischer-Kreis/luedenscheid/altstadt_luedenscheid/004.jpg"
         }
     },
     {
@@ -3310,9 +3380,9 @@ const datas = [
         name: "Erlöserkirche",
         type: ["cathedral"], rating: "popular",
         path: "erloeserkirche_luedenscheid",
-        countryPath: "germany", regionsPath: "nrw", districtPath: "arnsberg", cityPath: "luedenscheid",
+        countryPath: "germany", regionPath: "nrw", districtPath: "arnsberg", cityPath: "luedenscheid",
         hiddenFromList: true, showMore: true,
-        fotoCard: "Germany/nrw/arnsberg/Märkischer-Kreis/luedenscheid/erloeserkirche_luedenscheid/001.JPG",
+        fotoCard: "Germany/nrw/arnsberg/Märkischer-Kreis/luedenscheid/altstadt_luedenscheid/erloeserkirche_luedenscheid/001.jpg",
         short_description: "Die Erlöserkirche – die älteste Kirche Lüdenscheids mit klassizistischer Fassade, Emporen und lutherischem Altar. Im Zentrum der Altstadt, architektonisches Wahrzeichen und kulturelles Zentrum mit Konzerten und Ausstellungen.",
         full_description: {
             title: "Beschreibung und Geschichte",
@@ -3330,6 +3400,7 @@ const datas = [
             title: "Praktische Informationen",
             items: [
                 { bold: "Adresse:", text: "Kirchplatz 11, 58511 Lüdenscheid, Deutschland" },
+                { bold: "Konfession:", text: "evangelische Kirche" },
                 { bold: "Zugang. ", text: "Die Kirche befindet sich im Zentrum der Altstadt und ist bequem zu Fuß von den Hauptplätzen und Haltestellen des öffentlichen Verkehrs erreichbar. Sie ist während der Öffnungszeiten der Gemeinde für Besucher offen." },
             ]
         },
@@ -3356,7 +3427,8 @@ const datas = [
             description: "Die Erlöserkirche (Erlöserkirche) ist die älteste Kirche Lüdenscheids, errichtet im 12. Jahrhundert mit klassizistischer Fassade, Emporen und lutherischem Altar. Besuchen Sie dieses historische Gotteshaus im Zentrum der Altstadt und spüren Sie die Atmosphäre vergangener Jahrhunderte.",
             ogTitle: "Erlöserkirche, Lüdenscheid",
             ogDescription: "Entdecken Sie die Erlöserkirche in Lüdenscheid – ein historisches Gotteshaus mit Turm, Emporen und lutherischem Altar, ein architektonisches Wahrzeichen der Altstadt.",
-            ogImage: "https://our-travels.info/foto/Germany/nrw/arnsberg/Märkischer-Kreis/luedenscheid/erloeserkirche_luedenscheid/001.JPG"
+            keywords: "Erlöserkirche Lüdenscheid, Christuskirche Lüdenscheid, Sehenswürdigkeit, Kirche, evangelische Kirche, Deutschland, Nordrhein-Westfalen, Architektur, historisches Gebäude, religiöse Stätte, Stadtzentrum, Tourismus, Fotos, Sauerland",
+            ogImage: "https://our-travels.info/foto/Germany/nrw/arnsberg/Märkischer-Kreis/luedenscheid/altstadt_luedenscheid/erloeserkirche_luedenscheid/001.jpg"
         }
     },
     {
@@ -3364,10 +3436,10 @@ const datas = [
         name: "Brunnen in der Altstadt",
         type: ["monument_or_fountain"], rating: "local",
         path: "brunnen_altstadt_luedenscheid",
-        countryPath: "germany", regionsPath: "nrw",
+        countryPath: "germany", regionPath: "nrw",
         districtPath: "arnsberg", cityPath: "luedenscheid",
         hiddenFromList: true,
-        fotoCard: "Germany/nrw/arnsberg/Märkischer-Kreis/luedenscheid/altstadt_luedenscheid/001.JPG",
+        fotoCard: "Germany/nrw/arnsberg/Märkischer-Kreis/luedenscheid/altstadt_luedenscheid/001.jpg",
         short_description: "Der Brunnen befindet sich in der historischen Altstadt auf dem Graf-Engelbert-Platz – einem Platz, der dem Stadtgründer gewidmet ist. Er wurde im Jahr 1982 eröffnet und der Stadt von ihren Bürgern im Zuge der Altstadtsanierung gestiftet und wurde zu einem der Symbole der erneuerten historischen Zone. Bei der feierlichen Eröffnung betonten die örtlichen Behörden den Wunsch, den Brunnen zum „Herz des bürgerlichen Lebens“ der Altstadt zu machen. Seitdem zählt er zu den bedeutenden öffentlichen und kulturellen Objekten Lüdenscheids.",
         short_description2: "Der Brunnen wurde vom Künstler und Metallgestalter K. T. Neumann (Kurt Toni Neumann) geschaffen, der in Lüdenscheid lebte und arbeitete und einen bedeutenden Beitrag zur plastischen Gestaltung der Stadt leistete. In der Gestaltung wird die Figur eines Herolds verwendet, die symbolisch den historischen Moment der Verleihung der Stadtrechte durch Graf Engelbert I., den Gründer Lüdenscheids, darstellt. Dieses Motiv spiegelt sich in den Reliefs und im gesamten thematischen Konzept der Anlage wider.",
         full_description: {
@@ -3378,14 +3450,15 @@ const datas = [
             ]
         },
         construction_period: "1982",
-        architects: "Der Brunnen wurde vom Künstler und Metallgestalter K. T. Neumann (Kurt Toni Neumann) geschaffen",
+        sculptors: "Künstler und Metallgestalter Kurt Toni Neumann",
         coord: { lat: 51.21631, lng: 7.63425 },
         meta: {
             title: "Brunnen am Graf-Engelbert-Platz – historischer Brunnen in der Altstadt von Lüdenscheid",
             description: "Der Brunnen am Graf-Engelbert-Platz entstand 1982 im Zuge der Altstadtsanierung. Er gilt als eines der Wahrzeichen des historischen Zentrums von Lüdenscheid und ist mit der Figur eines Herolds geschmückt, die auf die Stadtgründung durch Graf Engelbert I. verweist.",
             ogTitle: "Brunnen am Graf-Engelbert-Platz, Lüdenscheid",
             ogDescription: "Besuchen Sie den Brunnen am Graf-Engelbert-Platz in Lüdenscheid – ein historisches Objekt der Altstadt, das mit der Stadtgründung und der Erneuerung des historischen Zentrums verbunden ist.",
-            ogImage: "https://our-travels.info/foto/Germany/nrw/arnsberg/Märkischer-Kreis/luedenscheid/altstadt_luedenscheid/001.JPG"
+            keywords: "Brunnen in der Altstadt Lüdenscheid, historisches Zentrum, Sehenswürdigkeit, Deutschland, Nordrhein-Westfalen, Altstadt, Platz, Stadtbrunnen, Architektur, Spaziergänge, Stadtzentrum, touristische Orte, Fotos, Sauerland",
+            ogImage: "https://our-travels.info/foto/Germany/nrw/arnsberg/Märkischer-Kreis/luedenscheid/altstadt_luedenscheid/001.jpg"
         }
     },
     {
@@ -3393,9 +3466,9 @@ const datas = [
         name: "Rathausplatz von Lüdenscheid",
         type: ["square"], rating: "local",
         path: "rathausplatz_luedenscheid",
-        countryPath: "germany", regionsPath: "nrw", districtPath: "arnsberg", cityPath: "luedenscheid",
+        countryPath: "germany", regionPath: "nrw", districtPath: "arnsberg", cityPath: "luedenscheid",
         fotoCard: "Germany/nrw/arnsberg/Märkischer-Kreis/luedenscheid/rathausplatz_lüdenscheid/001.JPG",
-        location: "Lüdenscheid, Deutschland",
+        location: "Lüdenscheid, Stadtteil Innenstadt / Staberg / Knapp, Deutschland",
         short_description: "Der zentrale Platz von Lüdenscheid (Rathausplatz) ist das Herz der Stadt und ein wichtiger öffentlicher Raum in der Nähe des Rathauses und der Fußgängerzone. Hier finden Märkte, städtische Veranstaltungen und Treffen der Bewohner statt, und der Platz dient als Ausgangspunkt, um das historische Stadtzentrum zu erkunden.",
         full_description: {
             title: "Beschreibung und Geschichte",
@@ -3424,6 +3497,7 @@ const datas = [
             description: "Der zentrale Platz von Lüdenscheid (Rathausplatz) ist der wichtigste öffentliche Raum der Stadt neben dem Rathaus. Hier finden Märkte, städtische Veranstaltungen und Treffen der Bewohner statt, und der Platz dient als Ausgangspunkt für Spaziergänge im Zentrum.",
             ogTitle: "Zentraler Platz von Lüdenscheid",
             ogDescription: "Der zentrale Platz von Lüdenscheid (Rathausplatz) ist der zentrale Stadtplatz neben dem Rathaus, ein Ort für Märkte, Feste und wichtige städtische Veranstaltungen.",
+            keywords: "Rathausplatz Lüdenscheid, Rathaus Lüdenscheid, zentraler Platz, Sehenswürdigkeit, Deutschland, Nordrhein-Westfalen, Stadtplatz, Rathaus, Stadtzentrum, Architektur, Spaziergänge, urbanes Leben, Veranstaltungen, touristische Orte, Fotos, Sauerland",
             ogImage: "https://our-travels.info/foto/Germany/nrw/arnsberg/Märkischer-Kreis/luedenscheid/rathausplatz_lüdenscheid/001.JPG"
         }
     },
@@ -3432,9 +3506,9 @@ const datas = [
         name: "Sternplatz",
         type: ["square"], rating: "local",
         path: "sternplatz",
-        countryPath: "germany", regionsPath: "nrw", districtPath: "arnsberg", cityPath: "luedenscheid",
+        countryPath: "germany", regionPath: "nrw", districtPath: "arnsberg", cityPath: "luedenscheid",
         fotoCard: "Germany/nrw/arnsberg/Märkischer-Kreis/luedenscheid/sternplatz/003.jpg",
-        location: "Lüdenscheid, Deutschland",
+        location: "Lüdenscheid, Stadtteil Innenstadt / Staberg / Knapp, Deutschland",
         subObjects: ["onkel_willi_denkmal_sternplatz_luedenscheid", "fontain_sternplatz_luedenscheid"],
         short_description: "Der Sternplatz ist der zentrale Platz von Lüdenscheid, gelegen in der Fußgängerzone des historischen Zentrums und ein wichtiger Treffpunkt des städtischen Lebens.",
         short_description_subObjects: {
@@ -3465,6 +3539,7 @@ const datas = [
             description: "Der Sternplatz ist einer der zentralen Plätze von Lüdenscheid, gelegen in der Fußgängerzone des historischen Zentrums. Der Platz ist ein wichtiger Treffpunkt für das städtische Leben, Spaziergänge und Veranstaltungen.",
             ogTitle: "Sternplatz in Lüdenscheid",
             ogDescription: "Der Sternplatz ist der zentrale Stadtplatz im historischen Zentrum von Lüdenscheid, Teil der Fußgängerzone und ein wichtiger öffentlicher Raum der Stadt.",
+            keywords: "Sternplatz Lüdenscheid, zentraler Platz, Sehenswürdigkeit, Deutschland, Nordrhein-Westfalen, Stadtplatz, Stadtzentrum, urbanes Leben, Architektur, Spaziergänge, Einkaufszentrum der Stadt, Veranstaltungen, touristische Orte, Fotos, Sauerland",
             ogImage: "https://our-travels.info/foto/Germany/nrw/arnsberg/Märkischer-Kreis/luedenscheid/sternplatz/003.jpg"
         }
     },
@@ -3473,9 +3548,9 @@ const datas = [
         name: "Denkmal von Onkel Willi",
         type: ["monument_or_fountain"], rating: "local",
         path: "onkel_willi_denkmal_sternplatz_luedenscheid",
-        countryPath: "germany", regionsPath: "nrw", districtPath: "arnsberg", cityPath: "luedenscheid",
+        countryPath: "germany", regionPath: "nrw", districtPath: "arnsberg", cityPath: "luedenscheid",
         hiddenFromList: true, showMore: true,
-        fotoCard: "Germany/nrw/arnsberg/Märkischer-Kreis/luedenscheid/sternplatz/001.JPG",
+        fotoCard: "Germany/nrw/arnsberg/Märkischer-Kreis/luedenscheid/sternplatz/001.jpg",
         short_description: "Das Denkmal von Onkel Willi ist eine Bronzeskulptur auf dem Sternplatz, die einen typischen Bewohner von Lüdenscheid mit Hund darstellt. Es ist ein inoffizielles Wahrzeichen der Stadt und spiegelt die alltägliche, „lebendige“ Atmosphäre wider.",
         full_description: {
             title: "Beschreibung und Geschichte",
@@ -3487,13 +3562,15 @@ const datas = [
                 { text: "Das Denkmal fügt sich harmonisch in den Raum des Sternplatzes ein und ist ein Anziehungspunkt in der Fußgängerzone des historischen Zentrums." }
             ]
         },
+        sculptors: "Waldemar Winn",
         coord: { lat: 51.21639, lng: 7.62917 },
         meta: {
             title: "Denkmal von Onkel Willi – Symbol von Lüdenscheid auf dem Sternplatz",
             description: "Das Denkmal von Onkel Willi auf dem Sternplatz in Lüdenscheid ist eine Bronzeskulptur, die einen typischen Einwohner der Stadt mit Hund darstellt. Die Skulptur ist ein inoffizielles Wahrzeichen der Stadt und ein beliebter Treffpunkt für Fotos und Begegnungen.",
             ogTitle: "Denkmal von Onkel Willi in Lüdenscheid",
             ogDescription: "Die Bronzeskulptur von Onkel Willi auf dem Sternplatz im historischen Zentrum von Lüdenscheid verkörpert Freundlichkeit und das alltägliche Leben der Stadtbewohner. Beliebter Ort bei Touristen und Einwohnern.",
-            ogImage: "https://our-travels.info/foto/Germany/nrw/arnsberg/Märkischer-Kreis/luedenscheid/sternplatz/001.JPG"
+            keywords: "Denkmal Onkel Willi Lüdenscheid, Sehenswürdigkeit, Deutschland, Nordrhein-Westfalen, Skulptur, Stadtdenkmal, Stadtzentrum, Geschichte der Stadt, Spaziergänge, touristische Orte, Fotos, Sauerland",
+            ogImage: "https://our-travels.info/foto/Germany/nrw/arnsberg/Märkischer-Kreis/luedenscheid/sternplatz/001.jpg"
         }
     },
     {
@@ -3501,7 +3578,7 @@ const datas = [
         name: "Brunnen auf dem Sternplatz",
         type: ["monument_or_fountain"], rating: "local",
         path: "fontain_sternplatz_luedenscheid",
-        countryPath: "germany", regionsPath: "nrw", districtPath: "arnsberg", cityPath: "luedenscheid",
+        countryPath: "germany", regionPath: "nrw", districtPath: "arnsberg", cityPath: "luedenscheid",
         hiddenFromList: true, showMore: true,
         fotoCard: "Germany/nrw/arnsberg/Märkischer-Kreis/luedenscheid/sternplatz/003.jpg",
         short_description: "Der Brunnen auf dem Sternplatz ist ein dekoratives Wasserbecken im Zentrum des Platzes, geschaffen Ende der 1970er Jahre vom Bildhauer Kurt Toni Neumann. Er ist ein bedeutendes städtisches Objekt und ein Ort der Erholung in der Fußgängerzone von Lüdenscheid.",
@@ -3515,12 +3592,14 @@ const datas = [
                 { text: "Der Brunnen ist nicht nur dekorativ, sondern dient auch als Erholungsort für Einwohner und Besucher, besonders in der warmen Jahreszeit." }
             ]
         },
+        sculptors: "Kurt Toni Neumann",
         coord: { lat: 51.21620, lng: 7.62942 },
         meta: {
             title: "Brunnen auf dem Sternplatz – städtisches Wasserbecken von Lüdenscheid",
             description: "Der Brunnen auf dem Sternplatz in Lüdenscheid ist ein dekoratives Wasserbecken, geschaffen Ende der 1970er Jahre vom Bildhauer Kurt Toni Neumann. Um den Brunnen befinden sich Tafeln mit den Namen der Partnerstädte: Brayhaus, Taganrog, Den Helder, Löwen, Mysłowice und Romilly-sur-Seine. Der Brunnen ist ein beliebter Ort für Erholung und Spaziergänge auf dem Platz.",
             ogTitle: "Brunnen auf dem Sternplatz in Lüdenscheid",
             ogDescription: "Dekorativer Brunnen auf dem Sternplatz im historischen Zentrum von Lüdenscheid, umgeben von Tafeln mit den Namen der Partnerstädte. Treffpunkt und Erholungsort für Einwohner und Besucher.",
+            keywords: "Brunnen am Sternplatz Lüdenscheid, Sternplatz, Sehenswürdigkeit, Deutschland, Nordrhein-Westfalen, Stadtplatz, Brunnen, Stadtzentrum, Architektur, Spaziergänge, urbanes Leben, Veranstaltungen, touristische Orte, Fotos, Sauerland",
             ogImage: "https://our-travels.info/foto/Germany/nrw/arnsberg/Märkischer-Kreis/luedenscheid/sternplatz/003.jpg"
         }
     },
@@ -3529,9 +3608,9 @@ const datas = [
         name: "Geschichtsmuseum Lüdenscheid",
         type: ["museum"], rating: "local",
         path: "history_museum_luedenscheid",
-        countryPath: "germany", regionsPath: "nrw", districtPath: "arnsberg", cityPath: "luedenscheid",
+        countryPath: "germany", regionPath: "nrw", districtPath: "arnsberg", cityPath: "luedenscheid",
         fotoCard: "Germany/nrw/arnsberg/Märkischer-Kreis/luedenscheid/history_museum_luedenscheid/001.JPG",
-        location: "Lüdenscheid, Deutschland",
+        location: "Lüdenscheid, Stadtteil Innenstadt / Staberg / Knapp, Deutschland",
         officialSite: [
             { "bold": "Offizielle Webseite", "link": "https://www.luedenscheid.de/freizeit-und-kultur/kultur/museen-der-stadt-luedenscheid/geschichtsmuseum" }
         ],
@@ -3584,6 +3663,7 @@ const datas = [
             description: "Entdecken Sie das Geschichtsmuseum Lüdenscheid: Schmalspurzug, Zeppelin‑Modelle, Feuerwehrtechnik, Sammlung historischer Karten und Artefakte. Besuchen Sie das Museum und das Museumscafé im modernen Stadtkomplex.",
             ogTitle: "Geschichtsmuseum Lüdenscheid – einzigartige Exponate und Sammlungen",
             ogDescription: "Besuchen Sie das Geschichtsmuseum Lüdenscheid: vom Schmalspurzug bis zur Sammlung historischer Knöpfe, Karten und Stadtmodelle. Das Museum und das Museumscafé erwarten Sie im kulturellen Komplex der Stadt.",
+            keywords: "Geschichtsmuseum der Stadt Lüdenscheid, Stadtmuseum Lüdenscheid, Sehenswürdigkeit, Deutschland, Nordrhein-Westfalen, Museum, Stadtgeschichte, Heimatmuseum, Ausstellungen, Kultur, Altstadt, Stadtzentrum, Führungen, Tourismus, Fotos, Sauerland",
             ogImage: "https://our-travels.info/foto/Germany/nrw/arnsberg/Märkischer-Kreis/luedenscheid/history_museum_luedenscheid/001.JPG"
         }
     },
@@ -3592,9 +3672,9 @@ const datas = [
         name: "Pseudogotische Christuskirche",
         type: ["cathedral"], rating: "popular",
         path: "christuskirche_luedenscheid",
-        countryPath: "germany", regionsPath: "nrw", districtPath: "arnsberg", cityPath: "luedenscheid",
+        countryPath: "germany", regionPath: "nrw", districtPath: "arnsberg", cityPath: "luedenscheid",
         fotoCard: "Germany/nrw/arnsberg/Märkischer-Kreis/luedenscheid/christuskirche/001.jpg",
-        location: "Lüdenscheid, Deutschland",
+        location: "Lüdenscheid, Stadtteil Innenstadt / Staberg / Knapp, Deutschland",
         short_description: "Die pseudogotische Christuskirche ist die größte protestantische Kirche der Stadt und ein wichtiger architektonischer Orientierungspunkt. Ihr hoher Turm ist aus verschiedenen Punkten der Stadt sichtbar und prägt das charakteristische Stadtbild. Der Innenraum bietet Platz für etwa 1200 Personen und ist mit Glasfenstern und pseudogotischen Elementen geschmückt. Die Kirche wird aktiv für Gottesdienste und kulturelle Veranstaltungen genutzt.",
         full_description: {
             title: "Beschreibung und Geschichte",
@@ -3611,7 +3691,7 @@ const datas = [
             title: "Praktische Informationen",
             items: [
                 { bold: "Adresse:", text: "Bahnhofstraße 59, 58507 Lüdenscheid" },
-                { bold: "Zugehörigkeit:", text: "Evangelische Kirche von Westfalen" },
+                { bold: "Konfession:", text: "evangelische Kirche" },
                 { bold: "Regelmäßige Gottesdienste:", text: "<br>Sonntag um 10:00 Uhr (Christuskirche) <br>Monatliche Veranstaltungen und Konzerte – laut Plan auf der offiziellen Website der Gemeinde" },
                 { bold: "Erreichbarkeit:", text: "Stadtzentrum, bequemer Zugang zu Fuß und mit öffentlichen Verkehrsmitteln." }
             ]
@@ -3631,6 +3711,7 @@ const datas = [
             description: "Die größte evangelische Kirche in Lüdenscheid mit einem 61,5 m hohen Turm, gebaut 1902, Walcker-Orgel und markante neugotische Architektur.",
             ogTitle: "Pseudogotische Christuskirche – architektonisches Wahrzeichen der Stadt",
             ogDescription: "Historische evangelische Kirche im Herzen von Lüdenscheid: Architektur, Orgel, kulturelle Veranstaltungen.",
+            keywords: "Christuskirche Lüdenscheid, Sehenswürdigkeit, Deutschland, Nordrhein-Westfalen, Kirche, Neugotik, Pseudogotik, Architektur, religiöses Gebäude, historische Kirche, Stadtzentrum, Sauerland, Tourismus, Fotos",
             ogImage: "https://our-travels.info/foto/Germany/nrw/arnsberg/Märkischer-Kreis/luedenscheid/christuskirche/001.jpg"
         }
     },
@@ -3639,9 +3720,9 @@ const datas = [
         name: "Kirche St. Joseph und Medardus",
         type: ["church"], rating: "local",
         path: "st_joseph_medardus",
-        countryPath: "germany", regionsPath: "nrw", districtPath: "arnsberg", cityPath: "luedenscheid",
+        countryPath: "germany", regionPath: "nrw", districtPath: "arnsberg", cityPath: "luedenscheid",
         fotoCard: "Germany/nrw/arnsberg/Märkischer-Kreis/luedenscheid/st_joseph_medardus/001.jpg",
-        location: "Lüdenscheid, Deutschland",
+        location: "Lüdenscheid, Stadtteil Innenstadt / Staberg / Knapp, Deutschland",
         officialSite: [{ bold: "Offizielle Website", link: "https://www.st-medardus.org" }],
         short_description: "Die Kirche St. Joseph und Medardus ist die wichtigste katholische Pfarrkirche der Stadt Lüdenscheid. Sie wurde Ende des 19. Jahrhunderts im Stil der norddeutschen Backsteingotik erbaut und ist zu einem wichtigen architektonischen Wahrzeichen der Stadt geworden. Der hohe Turm mit über 54 Metern Höhe und die massiven Backsteinfassaden machen sie zu einem der auffälligsten historischen Gebäude Lüdenscheids.",
         full_description: {
@@ -3688,6 +3769,7 @@ const datas = [
             description: "Die Kirche St. Joseph und Medardus ist die wichtigste katholische Pfarrkirche von Lüdenscheid, erbaut 1882-1885 im Stil der norddeutschen Backsteingotik. Geschichte, Architektur und interessante Fakten.",
             ogTitle: "Kirche St. Joseph und Medardus – historische Kirche in Lüdenscheid",
             ogDescription: "Neugotische Kirche des 19. Jahrhunderts mit Turm über 54 Meter Höhe – eine der wichtigsten historischen Sehenswürdigkeiten Lüdenscheids.",
+            keywords: "Kirche St. Joseph und Medardus Lüdenscheid, Sehenswürdigkeit, Deutschland, Nordrhein-Westfalen, katholische Kirche, Neugotik, Architektur, religiöses Gebäude, historische Kirche, Stadtzentrum, Sauerland, Tourismus, Fotos",
             ogImage: "https://our-travels.info/foto/Germany/nrw/arnsberg/Märkischer-Kreis/luedenscheid/st_joseph_medardus/001.jpg"
         }
     },
@@ -3696,48 +3778,55 @@ const datas = [
         name: "Versetalsperre",
         type: ["nature"], rating: "local",
         path: "versetalsperre_luedenscheid",
-        countryPath: "germany", regionsPath: "nrw", districtPath: "arnsberg", cityPath: "luedenscheid",
-        fotoCard: "Germany/nrw/arnsberg/Märkischer-Kreis/luedenscheid/versetalsperre/001.jpg",
-        location: "Lüdenscheid, Deutschland",
-        short_description: "Versetalsperre ist ein großer künstlicher See, der durch einen Staudamm zur Regulierung des Wasserstandes und zur Trinkwasserversorgung geschaffen wurde. Rund um das Gewässer verlaufen Fuß- und Radwege, an den Ufern gibt es Erholungsbereiche. Schwimmen und Wassersport sind verboten, um die Wasserqualität zu erhalten, wodurch der Ort beliebt für Spaziergänge und Naturbeobachtungen ist.",
+        countryPath: "germany", regionPath: "nrw", districtPath: "arnsberg", cityPath: "luedenscheid",
+        fotoCard: "Germany/nrw/arnsberg/Märkischer-Kreis/luedenscheid/versetalsperre/003_2021.jpg",
+        location: "Lüdenscheid, Stadtteil Bierbaum / Höh / Hellersen, Deutschland",
+        short_description: "Die Versetalsperre ist ein großes künstliches Gewässer, das durch eine Staumauer zur Regulierung des Wasserstands und zur Trinkwasserversorgung geschaffen wurde. Rund um den See verlaufen Spazier- und Radwege, und an den Ufern gibt es Erholungsbereiche. Baden und Wassersport sind verboten, was die Wasserqualität erhält und den Ort zu einem beliebten Ziel für Spaziergänge und Naturbeobachtungen macht.",
         full_description: {
             title: "Beschreibung und Geschichte",
             items: [
-                { bold: "Versetalsperre", text: " – ein großer Stausee am Fluss Verse im bewaldeten Südosten von Nordrhein-Westfalen, Deutschland. Die Wasseroberfläche beträgt etwa 170 ha, das Volumen ca. 32,8 Mio. m³. Der Damm, der das Stauwerk bildet, ist 62 m hoch und 393 m lang und prägt die malerische Landschaft mit Wäldern und den Hügeln des Sauerlands." },
-                { text: "Rund um das Gewässer verlaufen Fuß- und Radwege unterschiedlicher Länge, einschließlich eines Rundwegs von etwa 11 km. Die Ufer sind mit Erholungsbereichen und Picknickplätzen ausgestattet, und zum Schutz des Trinkwassers sind Schwimmen und Wassersport verboten." },
-                { text: "Die natürlichen Umgebung des Sees ist reich an Flora und Fauna, und Informationsschilder entlang der Wege informieren über Landschaft, Ökologie und Geschichte der Anlage." },
+                { bold: "Die Versetalsperre ", text: "ist ein großes Gewässer an der Verse im waldreichen südöstlichen Teil von Nordrhein-Westfalen, Deutschland. Die Wasserfläche beträgt etwa 170 Hektar, und das Volumen liegt bei rund 32,8 Millionen Kubikmetern. Die Staumauer, die das Gewässer bildet, ist 62 Meter hoch und 393 Meter lang und schafft eine landschaftlich reizvolle Umgebung mit Wäldern und Hügeln des Sauerlands." },
+                { text: "Rund um den See verlaufen Spazier- und Radwege unterschiedlicher Länge, darunter ein Rundweg von etwa 11 Kilometern. Die Ufer sind mit Erholungs- und Picknickbereichen ausgestattet, und zum Schutz des Trinkwassers sind Baden und Wassersport hier verboten." },
+                { text: "Die natürlichen Umgebung des Gewässers ist reich an Flora und Fauna, und Informationstafeln entlang der Wege informieren über Landschaft, Ökologie und die Geschichte des Bauwerks und machen den Aufenthalt informativ und angenehm." },
                 { bold: "Geschichte" },
-                { text: "Der Bau des Stausees begann 1929 auf Initiative des Ruhrverbands, um Trinkwasser bereitzustellen und den Pegel des Flusses Ruhr zu regulieren. Die Anfangsarbeiten wurden in den 1930er Jahren aufgrund wirtschaftlicher Schwierigkeiten unterbrochen und 1938 wieder aufgenommen." },
-                { text: "Während des Zweiten Weltkriegs existierte in Hunswinkel ein Arbeitslager, in dem Gefangene am Bau des Damms beteiligt waren. Viele von ihnen starben, und später wurde am Ufer des Stausees ein Denkmal zu ihren Ehren errichtet." },
-                { text: "Die Arbeiten wurden bis 1951 abgeschlossen, die endgültige Gestaltung und Befüllung des Stausees erfolgte bis 1952. Seitdem dient die Versetalsperre als Trinkwasserspeicher und Regulierung der Flüsse Ruhr und Lenne und ist gleichzeitig ein beliebter Ort für Spaziergänge und Erholung." }
+                { text: "Der Bau der Talsperre begann im Jahr 1929 auf Initiative des Ruhrverbands, um die Trinkwasserversorgung zu sichern und den Wasserstand der Ruhr zu regulieren. Die ersten Arbeiten wurden in den 1930er Jahren aufgrund wirtschaftlicher Schwierigkeiten unterbrochen und später im Jahr 1938 wieder aufgenommen." },
+                { text: "Die Bauarbeiten wurden bis 1951 abgeschlossen, und die endgültige Fertigstellung und Befüllung der Talsperre dauerte bis 1952. Seitdem dient die Versetalsperre als Trinkwasserspeicher und als Anlage zur Regulierung der Flüsse Ruhr und Lenne sowie als beliebter Ort für Spaziergänge und Erholung." },
+            ]
+        },
+        sub_objects: {
+            title: "Gedenkorte und Bauwerke",
+            items: [
+                { img: "Germany/nrw/arnsberg/Märkischer-Kreis/luedenscheid/versetalsperre/011_2026.jpg", bold: "Mahnmal an der Versetalsperre", text: " ist den Opfern des Lagers Hunswinkel gewidmet – eines nationalsozialistischen Zwangsarbeitslagers, das sich in den Jahren 1940 bis 1945 im Tal der Verse befand. Heute liegt das ehemalige Lagergelände unter Wasser, während das Mahnmal in der Nähe errichtet wurde und an Tausende von Gefangenen erinnert, die beim Bau der Talsperre eingesetzt wurden, von denen mindestens 550 infolge schwerer Bedingungen, Hunger und Gewalt ums Leben kamen." },
+                { img: "Germany/nrw/arnsberg/Märkischer-Kreis/luedenscheid/versetalsperre/001_2020.jpg", bold: "Klamer Brücke", text: " ist eine markante Brücke über die Versetalsperre. Sie wurde noch vor der Flutung des Sees gebaut und diente als wichtiger Verkehrsübergang während des Baus der Talsperre und der Straßen rund um das Tal der Verse. Heute wird die Brücke als Fußgänger- und Straßenübergang genutzt, und in ihrer Nähe befinden sich Parkplätze und touristische маршруты." },
+                { img: "Germany/nrw/arnsberg/Märkischer-Kreis/luedenscheid/versetalsperre/007_2026.jpg", bold: "Vorsperre", text: " ist eine vorgelagerte Staumauer bei der zukünftigen Versetalsperre, die im Jahr 1933 an der Verse in der Nähe der Ortschaft Steinbach errichtet wurde. Sie wurde als temporäres Bauwerk zur ersten Wasseransammlung und zur Vorbereitung des Baus der großen Hauptstaumauer geschaffen, die später zur Versetalsperre wurde. Eine solche Konstruktion spielte eine wichtige Rolle in der frühen Phase der Bauarbeiten: Sie reguliert das Wasser, hält Verunreinigungen und Sedimente zurück und verbessert das Erscheinungsbild des Gebiets bei schwankendem Wasserstand. Letztendlich trug die Vorsperre zu einem stabileren Bau- und Betriebsprozess der Talsperre bei." },
             ]
         },
         tickets_and_entry: {
             title: "Praktische Informationen",
             items: [
                 { bold: "Adresse:", text: "Klinkenberg 40a, 58515 Lüdenscheid, Deutschland" },
-                { bold: "Einschränkungen:", text: "Wassersport und Schwimmen sind wegen des Trinkwasserschutzes verboten." },
-                { bold: "Eintritt:", text: "Frei" }
+                { bold: "Einschränkungen:", text: "Wassersport und Baden sind aufgrund des Trinkwasserschutzes verboten." },
+                { bold: "Eintritt:", text: "Kostenlos" }
             ]
         },
         interestingFacts: {
             title: "Interessante Fakten",
             items: [
-                { text: "Die Versetalsperre ist der größte Staudamm im Märkischen Kreis nach Speichervolumen." },
-                { text: "Sie wird nicht nur für die Trinkwasserversorgung genutzt, sondern auch zur Regulierung der Flüsse Ruhr und Lenne." },
-                { text: "Auf den Wegen rund um das Gewässer gibt es den Natur- und Bildungspfad Knax mit interaktiven Stationen." },
-                { text: "Ein Denkmal für die Arbeitslageropfer in Hunswinkel erinnert an die harte Geschichte des Baus." }
+                { text: "Die Versetalsperre ist die größte Talsperre im Märkischen Kreis nach Speichervolumen." },
+                { text: "Sie wird nicht nur zur Trinkwasserversorgung genutzt, sondern auch zur Regulierung der Flüsse Ruhr und Lenne." },
+                { text: "Entlang der Wege rund um den See gibt es den Naturerlebnispfad Knax mit interaktiven Stationen." },
             ]
         },
         construction_period: "1929-1952",
         founder: "auf Initiative des Ruhrverbands",
         coord: { lat: 51.18321, lng: 7.68336 },
         meta: {
-            title: "Versetalsperre – Staudamm und Stausee im Sauerland, Deutschland",
-            description: "Detaillierte Informationen zur Versetalsperre: Geschichte, Wanderwege, Denkmal Hunswinkel und Spaziergänge rund um den größten Staudamm im Märkischen Kreis.",
+            title: "Versetalsperre – Talsperre und Stausee im Sauerland, Deutschland",
+            description: "Detaillierte Informationen zur Versetalsperre: Baugeschichte, Wanderwege, Mahnmal Hunswinkel und Spaziergänge rund um die größte Talsperre im Märkischen Kreis.",
             ogTitle: "Versetalsperre – Naturziel und Stausee in Nordrhein-Westfalen",
-            ogDescription: "Erfahren Sie alles über die Versetalsperre: von der Baugeschichte und dem Denkmal bis zu Spaziergängen rund um den See.",
-            ogImage: "https://our-travels.info/foto/Germany/nrw/arnsberg/Märkischer-Kreis/luedenscheid/versetalsperre/001.jpg"
+            ogDescription: "Erfahren Sie alles über die Versetalsperre: Geschichte, Mahnmal und Wanderwege rund um den See",
+            keywords: "Versetalsperre, Lüdenscheid, Stausee, Sehenswürdigkeit, Deutschland, Nordrhein-Westfalen, See, Talsperre, Natur, Spaziergänge, Wasserreservoir, Tourismus, Erholung, Radwege, Fotos, Sauerland",
+            ogImage: "https://our-travels.info/foto/Germany/nrw/arnsberg/Märkischer-Kreis/luedenscheid/versetalsperre/003_2021.jpg"
         }
     },
 
@@ -3747,7 +3836,7 @@ const datas = [
         name: "Burg Altena",
         type: ["palace_or_castle", "museum"], rating: "top",
         path: "burg_altena",
-        countryPath: "germany", regionsPath: "nrw", districtPath: "arnsberg", cityPath: "altena",
+        countryPath: "germany", regionPath: "nrw", districtPath: "arnsberg", cityPath: "altena",
         fotoCard: "Germany/nrw/arnsberg/Märkischer-Kreis/altena/burg/001.jpg",
         location: "Altena, Deutschland",
         officialSite: [{ bold: "Offizielle Website", link: "https://www.burg-altena.de/" }],
@@ -3810,10 +3899,123 @@ const datas = [
             description: "Reiseführer zur Burg Altena: Geschichte aus dem 12. Jahrhundert, Museen und die erste Jugendherberge der Welt.",
             ogTitle: "Burg Altena – mittelalterliche Festung in Deutschland",
             ogDescription: "Entdecken Sie die Geschichte der Burg Altena und ihrer Museen.",
-            ogImage: ""
+            keywords: "Burg Altena, Schloss Altena, Altena Deutschland, Sehenswürdigkeit, Burg, mittelalterliche Burg, Festung, Burgenmuseum, Geschichte Deutschland, Nordrhein-Westfalen, Sauerland, Panoramablick, Führungen, Tourismus, Fotos, historische Burgen",
+            ogImage: "https://our-travels.info/foto/Germany/nrw/arnsberg/Märkischer-Kreis/altena/burg/001.jpg"
+        }
+    },
+    {
+        id: "drahtmuseum_altena",
+        name: "Deutsches Drahtmuseum",
+        type: ["museum"], rating: "local",
+        path: "drahtmuseum_altena",
+        countryPath: "germany", regionPath: "nrw", districtPath: "arnsberg", cityPath: "altena",
+        fotoCard: "Germany/nrw/arnsberg/Märkischer-Kreis/altena/drahtmuseum/001.jpg",
+        location: "Altena, Deutschland",
+        short_description: "Das Deutsche Drahtmuseum in Altena ist ein einzigartiges technisches Museum, das der Geschichte der Drahtproduktion und ihrer Rolle in der industriellen Entwicklung von mittelalterlichen Technologien bis hin zu modernen Hightech-Materialien gewidmet ist.",
+        full_description: {
+            title: "Beschreibung und Geschichte",
+            items: [
+                { bold: "Das Deutsche Drahtmuseum", text: "befindet sich in der Stadt Altena, nur wenige Gehminuten von der Burg Altena entfernt. Das Museum widmet sich einem der wichtigsten Handwerke der Region – der Drahtproduktion, die über Jahrhunderte eine bedeutende Rolle in der Wirtschaft des Sauerlandes spielte." },
+                { text: "Die Ausstellung zeigt die Entwicklung des Drahtes unter dem Motto „vom Kettenhemd zum Supraleiter“. Besucher können sehen, wie Draht aus Metallrohlingen hergestellt wird und wie er in Industrie, Elektronik und sogar in der Kunst verwendet wird. Besonderes Augenmerk liegt nicht nur auf der Technologie, sondern auch auf den sozialen und wirtschaftlichen Auswirkungen dieser Branche." },
+                { text: "Das Museum nutzt активно interaktive Elemente: Vorführungen, Modelle und Experimentierstationen helfen dabei, die Herstellungsprozesse besser zu verstehen. Dadurch ist der Besuch sowohl für Erwachsene als auch für Kinder interessant." },
+                { bold: "Geschichte.", text: "Die Region rund um Altena war seit dem späten Mittelalter eines der Zentren der Drahtproduktion in Europa. Flüsse und Wassermühlen ermöglichten die Entwicklung mechanisierter Produktionsverfahren, und lokale Handwerker verbesserten die Techniken des Drahtziehens kontinuierlich." },
+                { text: "Das Museum wurde im Jahr 1965 als spezialisierte Einrichtung gegründet. Ziel war es, das industrielle Erbe der Region zu bewahren und die technische Geschichte zu vermitteln." },
+                { text: "Im Laufe der Zeit wurde die Ausstellung erweitert und modernisiert und umfasst heute Themen von der industriellen Produktion bis hin zur Nutzung von Draht in Hochtechnologie und Design. Heute ist das Museum ein bedeutendes kulturelles und Bildungsobjekt der Region." }
+            ]
+        },
+        tickets_and_entry: {
+            title: "Praktische Informationen",
+            items: [
+                { bold: "Adresse: ", text: "Fritz-Thomée-Straße 12, 58762 Altena, Deutschland" },
+                { bold: "Öffnungszeiten: ", text: "<br>Dienstag–Sonntag: 10:00–17:00, <br>Montag – geschlossen (es wird empfohlen, die Zeiten vor dem Besuch zu überprüfen)" },
+                { bold: "Eintritt (2025): ", text: "Der Eintritt ist kostenlos (nach dem Prinzip „Pay what you want“ – freiwillige Spende möglich). Führungen werden separat berechnet" },
+                { bold: "Anreise: ", text: "Zu Fuß von der Burg Altena etwa 5–10 Minuten. Vom Stadtzentrum aus zu Fuß oder mit dem Auto erreichbar. Nächster Bahnhof: Altena (Westf), anschließend etwa 15–20 Minuten zu Fuß" }
+            ]
+        },
+        sub_objects: {
+            title: "Ausstellungen",
+            items: [
+                { text: "Historische Drahtproduktion (manuelle und mechanische Verfahren)" },
+                { text: "Kettenhemden und mittelalterliche Objekte" },
+                { text: "Industrialisierung und technologische Entwicklung" },
+                { text: "Moderne Materialien und Supraleiter" },
+                { text: "Draht in Kunst und Design" }
+            ]
+        },
+        interestingFacts: {
+            title: "Interessante Fakten",
+            items: [
+                { text: "Altena galt historisch als eines der wichtigsten Zentren der Drahtproduktion in Deutschland" },
+                { text: "Draht wurde nicht nur im Handwerk, sondern auch in der frühen Industrie Europas verwendet" },
+                { text: "Das Museum zeigt nicht nur Technik, sondern auch soziale Veränderungen im Zuge der Industrialisierung" },
+                { text: "Die Ausstellung umfasst sowohl originale Maschinen als auch moderne wissenschaftliche Entwicklungen" }
+            ]
+        },
+        construction_period: "1965",
+        coord: { lat: 51.29456, lng: 7.67429 },
+        meta: {
+            title: "Deutsches Drahtmuseum in Altena – Beschreibung, Geschichte und Ausstellungen",
+            description: "Das Deutsche Drahtmuseum in Altena zeigt die Geschichte der Drahtproduktion von mittelalterlichen Kettenhemden bis zu modernen Technologien. Informationen, Ausstellungen und Fakten für Besucher.",
+            ogTitle: "Deutsches Drahtmuseum in Altena – ein ungewöhnliches Museum in Deutschland",
+            ogDescription: "Erfahre, wie Draht die Welt verändert hat – von mittelalterlichen Kettenhemden bis hin zu Hochtechnologien. Interaktives Museum in Altena.",
+            keywords: "Deutsches Drahtmuseum Altena, Sehenswürdigkeit, Museum, Deutschland, Nordrhein-Westfalen, Industriegeschichte, Draht, Metallverarbeitung, Industriekultur, Sauerland, Führungen, interaktives Museum, Produktion Geschichte, Tourismus, Fotos",
+            ogImage: "https://our-travels.info/foto/Germany/nrw/arnsberg/Märkischer-Kreis/altena/drahtmuseum/001.jpg"
+        }
+    },
+    {
+        id: "fuelbecketalsperre_altena",
+        name: "Fuelbecketalsperre",
+        type: ["nature"], rating: "local",
+        path: "fuelbecketalsperre_altena",
+        countryPath: "germany", regionPath: "nrw", districtPath: "arnsberg", cityPath: "altena",
+        fotoCard: "Germany/nrw/arnsberg/Märkischer-Kreis/altena/fuelbecketalsperre/001_2020.jpg",
+        location: "Altena / Lüdenscheid, Nordrhein-Westfalen, Deutschland",
+        short_description: "Die Fuelbecketalsperre ist ein kleines, malerisches Wasserreservoir im Sauerland, umgeben von Wäldern und Hügeln. Sie wurde Ende des 19. Jahrhunderts erbaut und dient heute der Trinkwasserversorgung. Rund um den See verläuft ein etwa 2 km langer Rundweg, der sich ideal für Spaziergänge und Erholung in der Natur eignet. Baden und Wassersport sind zum Schutz des Trinkwassers verboten.",
+        full_description: {
+            title: "Beschreibung und Geschichte",
+            items: [
+                { bold: "Fuelbecketalsperre", text: "ist ein kleines, aber historisch bedeutendes Wasserreservoir und eine Talsperre am Fluss Fuelbecke im bewaldeten Teil des Sauerlands in Nordrhein-Westfalen, Deutschland." },
+                { bold: "Geschichte.", text: "Sie gehört zu den frühen Talsperren der Region und wurde zwischen 1894 und 1896 zur Wasserversorgung und zur Regulierung des Wasserstands für industrielle Zwecke errichtet. Damals sicherte sie den Betrieb von Wassermühlen und Fabriken in trockenen Perioden. Das Projekt wurde von dem Ingenieur Prof. Otto Intze geleitet, der für den Bau von Talsperren bekannt ist." },
+                { text: "Mit der Zeit änderte sich die Hauptfunktion der Talsperre: Bereits zu Beginn des 20. Jahrhunderts wurde sie überwiegend zur Trinkwasserversorgung genutzt." },
+                { bold: "Natur und Erholung.", text: "Die Umgebung ist von Mischwäldern des Sauerlands geprägt, was die Fuelbecketalsperre zu einem idealen Ort für Spaziergänge, Wanderungen, Jogging oder ruhige Erholung abseits großer Straßen macht. Der Rundweg um den See ist gut begehbar, familienfreundlich und erfordert keine besondere Vorbereitung." },
+                { text: "Der See ist auch bei Anglern beliebt (Angelrechte besitzen in der Regel Mitglieder lokaler Vereine), und Informationstafeln entlang der Wege informieren über Flora und Fauna der Region." }
+            ]
+        },
+        tickets_and_entry: {
+            title: "Praktische Informationen",
+            items: [
+                { bold: "Adresse:", text: "Fuelbecker Straße 60, 58762 Altena (zwischen Altena und Lüdenscheid), Deutschland" },
+                { bold: "Einschränkungen:", text: "Baden und Wassersport sind verboten (Trinkwasserschutzgebiet)" },
+                { bold: "Eintritt:", text: "frei; rund um den See gibt es gut ausgebaute Spazierwege" },
+                { bold: "Talsperrentyp:", text: "Schwere Gewichtsstaumauer (Mauerwerk), gebaut nach dem Intze-Prinzip" },
+                { bold: "Höhe:", text: "ca. 27 m" },
+                { bold: "Kronenlänge:", text: "ca. 145 m" },
+                { bold: "Speicherinhalt:", text: "ca. 0,7 Mio. m³ (die kleinste unter den Haupttalsperren im Märkischen Kreis)" },
+                { bold: "Gewässer:", text: "etwa 450 m lang, maximale Breite ca. 240 m" },
+                { bold: "Rundweg:", text: "über 2 km, Gehzeit etwa 30 Minuten" }
+            ]
+        },
+        interestingFacts: {
+            title: "Interessante Fakten",
+            items: [
+                { text: "Die Fuelbecketalsperre gehört zu den ältesten Talsperren im Sauerland und wurde bereits Ende des 19. Jahrhunderts errichtet." },
+                { text: "Nach der industriellen Nutzung blieb sie als wichtige Quelle für die Trinkwasserversorgung der Region erhalten." },
+                { text: "Rund um den See verlaufen ruhige und landschaftlich reizvolle Wege, ideal für leichte Wanderungen und Familienausflüge." },
+                { text: "Entlang der Wege kann man verschiedene Wasser- und Waldvögel beobachten sowie mehr über die Fischarten im See erfahren." }
+            ]
+        },
+        construction_period: "1894-1896",
+        architects: "Prof. Otto Intze",
+        coord: { lat: 51.24833, lng: 7.66250 },
+        meta: {
+            title: "Fuelbecketalsperre – Spaziergänge im Sauerland",
+            description: "Die Fuelbecketalsperre ist ein malerischer Ort im Sauerland, Deutschland. Waldwege, Rundwanderungen und erholsame Spaziergänge in der Natur.",
+            ogTitle: "Fuelbecketalsperre – Natur und Spaziergänge im Sauerland",
+            ogDescription: "Ein gemütliches Wasserreservoir in den Wäldern des Sauerlands: Wanderwege, Ruhe und schöne Natur. Baden ist aufgrund der Trinkwassernutzung verboten.",
+            keywords: "Fürwiggetalsperre, Halver, Altena, Stausee, Sehenswürdigkeit, Deutschland, Nordrhein-Westfalen, Talsperre, See, Natur, Spaziergänge, Wasserreservoir, Tourismus, Erholung, Radwege, Sauerland, Fotos",
+            ogImage: "https://our-travels.info/foto/Germany/nrw/arnsberg/Märkischer-Kreis/altena/fuelbecketalsperre/001_2020.jpg"
         }
     }
-
 ];
 
 export default datas;

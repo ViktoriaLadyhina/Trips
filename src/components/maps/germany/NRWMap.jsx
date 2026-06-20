@@ -1,4 +1,4 @@
-import React, { useState, useMemo } from "react";
+import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import { districtsNrw as districts } from "./maps/nrwDistricts";
 import "../Maps.scss";
@@ -8,23 +8,15 @@ const NRWMap = ({ regions }) => {
   const [hoverRegion, setHoverRegion] = useState(null);
   const [tooltipPos, setTooltipPos] = useState([0, 0]);
 
-  // Все округа NRW
-  const nrwDistricts = useMemo(
-    () => regions?.discriptRegions?.[0]?.items || [],
-    [regions]
-  );
-  // Свободные города NRW
-  const nrwCities = useMemo(
-    () => regions?.discriptRegions?.[1]?.items || [],
-    [regions]
-  );
+const nrwDistricts = regions?.discriptRegions || [];
+const nrwCities = regions?.cities || [];
 
   const handleDistrictClick = (district) => {
-    if (district.hasInfo) navigate(`/germany/nrw/${district.path}`);
+    if (district.is_active) navigate(`/germany/nrw/${district.path}`);
   };
 
   const handleCityClick = (city) => {
-    if (city.hasInfo) navigate(`/germany/nrw/city/${city.path}`);
+    if (city.is_active) navigate(`/germany/nrw/city/${city.path}`);
   };
 
   // Координаты подписей (x, y) + смещения dx, dy
@@ -34,9 +26,9 @@ const NRWMap = ({ regions }) => {
     Rdusseldorf: { x: 300, y: 310, dx: -140, dy: -110 },
     Rarnsberg: { x: 120, y: 180, dx: 320, dy: 110 },
     Rmunster: { x: 200, y: 100, dx: 80, dy: -20 },
-    Ckoln: { x: 395, y: 385, dx: -155, dy: -0 }, 
+    Ckoln_city: { x: 395, y: 385, dx: -155, dy: -0 }, 
     Cduesseldorf: { x: 305, y: 315, dx: -70, dy: -35 }, // -----
-    Caachen: { x: 55, y: 205, dx: 35, dy: 221 },
+    Caachen_city: { x: 55, y: 205, dx: 35, dy: 221 },
     Cbonn: { x: 125, y: 185, dx: 145, dy: 265 },
     Cduisburg: { x: 160, y: 140, dx: 50, dy: 90 },
     Cmuenster: { x: 205, y: 105, dx: 158, dy: -18 },// -----
@@ -72,7 +64,7 @@ const NRWMap = ({ regions }) => {
               <path
                 key={loc.id}
                 d={loc.path}
-                className={district.hasInfo ? "interactive" : "disabled"}
+                className={district.is_active ? "interactive" : "disabled"}
                 onClick={() => handleDistrictClick(district)}
                 onMouseEnter={(e) => {
                   setHoverRegion(district.name);
@@ -93,7 +85,7 @@ const NRWMap = ({ regions }) => {
               <path
                 key={loc.id}
                 d={loc.path}
-                className={city.hasInfo ? "interactive" : "disabled"}
+                className={city.is_active ? "interactive" : "disabled"}
                 onClick={() => handleCityClick(city)}
                 onMouseEnter={(e) => {
                   setHoverRegion(city.name);

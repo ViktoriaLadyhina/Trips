@@ -3,7 +3,7 @@
 .district {
     margin-top: 40px;
 
-    &__title {
+    &__name {
         @include h1();
         margin-bottom: 20px;
         text-align: center;
@@ -15,20 +15,37 @@
         display: block; // чтобы SVG растягивался нормально
     }
 
-    &__history,
+    &__photo {
+      max-width: 250px;
+      float: right;
+      padding: 8px;
+
+      img {
+        width: 100%;
+        height: auto;
+        display: block;
+      }
+
+    }
+
     &__area,
     &__population,
+    &__capital,
+    &__geography,
     &__districts,
     &__cities {
         text-align: justify;
         padding: 3px;
 
-        &-bold {
-            @include bold-text;
-        }
+    p {
+      margin: 0;
+      @include body-text;
+    }
 
-        &-text {
-            @include body-text;
-        }
+    strong {
+      @include bold-text;
+    }
+
+
     }
 }

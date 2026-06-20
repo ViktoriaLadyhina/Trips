@@ -1,115 +1,271 @@
 import { useSelector } from 'react-redux';
 import { Link, useParams } from 'react-router';
-import { useEffect, useState } from 'react';
+import { Helmet } from "react-helmet-async";
+import { useEffect, useMemo, useState } from 'react';
 
-import countriesUa from '../../datas/ua/Country';
-import countriesRu from '../../datas/ru/Country';
-import countriesDe from '../../datas/de/Country';
-
+import BtnAttr from "../../components/btn-attr/BtnAttr";
 import BreadCrumbs from '../../components/breadCrumbs/BreadCrumbs';
-import InfoBlock from '../../components/InfoBlock/InfoBlock';
-import { photosByCountry } from "../../datas/fotos";
-import { useMeta } from '../../hooks/useMeta';
 import CountryMap from '../../components/maps/CountryMap'
+import useRoutes from '../../hooks/useRoutesSearch';
+import { toFullUrl, fixHtmlImages } from "../../utils/photo";
 
 import './Country.scss'
 
 const BASE_PHOTO_URL = import.meta.env.VITE_BASE_PHOTO_URL;
 
+const regionTitlesByType = {
+    land: { ru: "Земли", uk: "Землі", de: "Bundesländer" },
+    canton: { ru: "Кантоны", uk: "Кантони", de: "Kantone" },
+    oblast: { ru: "Области", uk: "Області", de: "Regionen" }
+};
+
 const Country = () => {
     const { countryPath } = useParams();
     const { lang } = useSelector((state) => state.language);
     const [sidebarOpen, setSidebarOpen] = useState(false);
-
-    // выбираем данные в зависимости от языка
-    const countries = lang === 'ua' ? countriesUa : lang === 'de' ? countriesDe : countriesRu;
-
-    // ищем нужную страну
-    const country = countries.find(c => c.path === countryPath);
-    useMeta(country?.meta);
+    const { routes } = useRoutes(countryPath);
+    const [country, setCountry] = useState(null);
 
     useEffect(() => {
-        if (country?.country) {
-            document.title = country.country;
-        }
-    }, [country?.country]);
+        fetch(`${import.meta.env.VITE_API_URL}/api/country/${countryPath}?lang=${lang}`)
+            .then(res => res.json())
+            .then(data => setCountry(data));
+    }, [countryPath, lang]);
+
+    const langData = useMemo(() => {
+        if (!country?.blocks) return {};
+
+        return country.blocks.reduce((acc, b) => {
+            acc[b.block_key] = b.content;
+            return acc;
+        }, {});
+    }, [country]);
 
     if (!country) return <p>Country not found</p>;
 
-    const photos = photosByCountry[countryPath];
+    const mapRegions = (country?.regions || []).map(region => ({
+        id: region.id,
+        path: region.path,
+        hasInfo: Boolean(region.is_active),
+        name: region?.name || ""
+    }));
+
+    const getPhoto = (index) =>
+        country.photos?.find(p => p.sort_order === index);
+
+
+    const renderBlock = (block) => {
+
+        switch (block.block_key) {
+
+            case "map":
+                return (
+                    <div className='country__map'>
+                        <BtnAttr lang={lang} path={`/${countryPath}/attractions`} />
+                        <CountryMap
+                            countryKey={country.path}
+                            regions={mapRegions}
+                        />
+                    </div>
+                );
+
+            // ===== TEXT BLOCKS =====
+            case "name":
+            case "capital":
+            case "geography":
+            case "population":
+            case "languages":
+            case "administrative":
+            case "government":
+            case "currency":
+            case "transport":
+            case "climate":
+            case "tourism":
+            case "briefHistory":
+            case "symbols":
+                return langData?.[block.block_key] ? (
+                    <section
+                        className={`country__${block.block_key}`}
+                        dangerouslySetInnerHTML={{
+                            __html: fixHtmlImages(langData[block.block_key], country.path)
+                        }}
+                    />
+                ) : null;
+
+            // ===== PHOTOS =====
+
+            case "photo": {
+                const photo = getPhoto(1);
+                return photo ? <img
+                    src={`${BASE_PHOTO_URL}${photo.path}`}
+                    className="country__photo"
+                    alt={photo.title?.[lang] || ""}
+                /> : null;
+            }
+
+            case "photo2": {
+                const photo = getPhoto(2);
+                return photo ? <img
+                    src={`${BASE_PHOTO_URL}${photo.path}`}
+                    className="country__photo country__photo--left"
+                    alt={photo.title?.[lang] || ""}
+                /> : null;
+            }
+
+            case "photo3": {
+                const photo = getPhoto(3);
+                return photo ? <img
+                    src={`${BASE_PHOTO_URL}${photo.path}`}
+                    className="country__photo"
+                    alt={photo.title?.[lang] || ""}
+                /> : null;
+            }
+
+
+            // ===== ROUTES =====
+            case "rout": {
+                if (!routes) return <div>loading routes...</div>;
+                if (!routes?.length) return null;
+
+                return (
+                    <div className="country__routes">
+
+                        <h2 className="country__routes-title">
+                            {lang === "ru" ? "Маршруты" : lang === "de" ? "Routen" : "Маршрути"}
+                        </h2>
+
+                        {/* ===== TABLE ===== */}
+                        <table className="country__routes-table">
+                            <thead>
+                                <tr>
+                                    <th>{lang === "ru" ? "Название" : lang === "de" ? "Name" : "Назва"}</th>
+                                    <th>{lang === "ru" ? "Короткое описание" : lang === "de" ? "Kurze Beschreibung" : "Короткий опис"}</th>
+                                    <th>{lang === "ru" ? "Длина маршрута" : lang === "de" ? "Routenlänge" : "Довжина маршруту"}</th>
+                                </tr>
+                            </thead>
+
+                            <tbody>
+                                {routes.map(r => (
+                                    <tr key={r.id}>
+                                        <td>
+                                            <Link to={`/${countryPath}/routes/${r.path}`}>
+                                                {r.translations?.[lang]?.name}
+                                            </Link>
+                                        </td>
+                                        <td>{r.translations?.[lang]?.short_description}</td>
+                                        <td>{r.translations?.[lang]?.routeLength}</td>
+                                    </tr>
+                                ))}
+                            </tbody>
+                        </table>
+
+                        {/* ===== CARDS ===== */}
+                        <div className="country__routes-cards">
+                            {routes.map(r => (
+                                <div key={r.id} className="country__routes-card">
+
+                                    <div className="country__routes-row">
+                                        <strong>
+                                            {lang === "ru" ? "Название:" : lang === "de" ? "Name:" : "Назва:"}
+                                        </strong>{" "}
+                                        <Link to={`/${countryPath}/routes/${r.path}`}>
+                                            {r.translations?.[lang]?.name}
+                                        </Link>
+                                    </div>
+
+                                    <div className="country__routes-row">
+                                        {r.translations?.[lang]?.short_description}
+                                    </div>
+
+                                </div>
+                            ))}
+                        </div>
+
+                    </div>
+                );
+            }
+            default:
+                return null;
+        }
+    };
 
     // BreadCrumbs
+    const nameBlock = country?.blocks?.find(
+        b => b.block_key === "name"
+    );
+
     const crumbs = [
         {
             label: lang === 'ru' ? 'Главная' : lang === 'de' ? 'Startseite' : 'Головна',
             path: '/'
         },
-        { label: country?.country }
+        {
+            label: nameBlock?.content || ''
+        }
     ];
 
     return (
         <div className="country">
+
+            {country?.meta && (
+                <Helmet>
+                    <title>{country.meta.title}</title>
+                    <meta name="title" content={country.meta.title} />
+                    <meta name="description" content={country.meta.description} />
+                    <meta property="og:title" content={country.meta.og_title} />
+                    <meta property="og:description" content={country.meta.og_description} />
+                    <meta property="og:image" content={toFullUrl(country.meta.og_image)} />
+                </Helmet>
+            )}
+
             {/* Сайдбар */}
             <aside className={`country__sidebar ${sidebarOpen ? "mobile-open" : ""}`}>
                 {/* Кнопка-гамбургер на мобильных */}
                 <div className="country__sidebar-toggle" onClick={() => setSidebarOpen(!sidebarOpen)}>☰</div>
 
                 {/* Заголовок и список */}
-                <h2 className="country__sidebar-title">{country.regions.title}</h2>
-                <ul className={`country__sidebar-list ${sidebarOpen ? "active" : ""}`}>
-                    {country.regions.items?.map((state) => (
-                        <li key={state.id} className="country__sidebar-item">
-                            {state.hasInfo ? (
-                                <Link
-                                    to={`/${countryPath}/${state.path}`}
-                                    className="country__sidebar-link"
-                                >
-                                    {state.name}
-                                </Link>
-                            ) : (
-                                <span className="country__sidebar-link country__sidebar-link--disabled">
-                                    {state.name}
-                                </span>
-                            )}
-                        </li>
-                    ))}
+                <h2 className="country__sidebar-title">{regionTitlesByType[country?.regions?.[0]?.type]?.[lang] || "Regions"}</h2>
+                <ul className="country__sidebar-list">
+                    {country?.regions?.map((region) => {
+                        const name = region?.name;
+
+                        return (
+                            <li key={region.id} className="country__sidebar-item">
+                                {region.is_active ? (
+                                    <Link
+                                        to={`/${countryPath}/${region.path}`}
+                                        className="country__sidebar-link"
+                                    >
+                                        {name}
+                                    </Link>
+                                ) : (
+                                    <span className="country__sidebar-link country__sidebar-link--disabled">
+                                        {name}
+                                    </span>
+                                )}
+                            </li>
+                        );
+                    })}
                 </ul>
             </aside>
 
             {/* Основной контент */}
-
-            <div className="country__content">
-                <div className="country__breadcrumbs"> <BreadCrumbs crumbs={crumbs} /></div>
-                <h1 className="country__title">{country?.country}</h1>
-
-                <div className='country__map'>
-                    <CountryMap
-                        countryKey={country.path}
-                        regions={country.regions}
-                    />
+            <section className="country__content">
+                <div className="country__breadcrumbs"> 
+                    <BreadCrumbs crumbs={crumbs} /></div>
+                <div>
+                    {country?.blocks.length > 0 && country?.blocks
+                        .sort((a, b) => a.sort_order - b.sort_order)
+                        .map(block => (
+                            <div key={`${block.block_key}-${block.sort_order}`}>
+                                {renderBlock(block)}
+                            </div>
+                        ))
+                    }
                 </div>
-
-                {country.desc?.capital && <InfoBlock data={country.desc.capital} className="country__capital" />}
-                {photos.gallery[2] && (<img src={`${BASE_PHOTO_URL}${photos.gallery[2].path}`} alt={photos.gallery[2].title} className="country__photo" />)}
-                {country.desc?.geography && <InfoBlock data={country.desc.geography} className="country__geography" />}
-                {country.desc?.population && <InfoBlock data={country.desc.population} className="country__population" />}
-                {country.desc?.languages && <InfoBlock data={country.desc.languages} className="country__languages" />}
-                {country.desc?.administrative && <InfoBlock data={country.desc.administrative} className="country__administrative" />}
-                {country.desc?.government && <InfoBlock data={country.desc.government} className="country__government" />}
-                {country.desc?.currency && <InfoBlock data={country.desc.currency} className="country__currency" />}
-                {country.desc?.transport && <InfoBlock data={country.desc.transport} className="country__transport" />}
-                {photos.gallery[3] && (<img src={`${BASE_PHOTO_URL}${photos.gallery[3].path}`} alt={photos.gallery[3].title} className="country__photo country__photo--right" />)}
-                {country.desc?.climate && <InfoBlock data={country.desc.climate} className="country__climate" />}
-                {country.desc?.tourism && <InfoBlock data={country.desc.tourism} className="country__tourism" />}
-                {country.desc?.cuisine && <InfoBlock data={country.desc.cuisine} className="country__cuisine" />}
-                {country.desc?.entry && <InfoBlock data={country.desc.entry} className="country__entry" />}
-                {country.symbols && <InfoBlock data={country.symbols} className="country__symbols" />}
-                {photos.gallery[4] && (<img src={`${BASE_PHOTO_URL}${photos.gallery[4].path}`} alt={photos.gallery[4].title} className="country__photo country__photo" />)}
-                {country.holidays && <InfoBlock data={country.holidays} className="country__holidays" />}
-                {country.briefHistory && <InfoBlock data={country.briefHistory} className="country__history" />}
-            </div>
+            </section>
         </div>
-    );
+    )
 }
 
 export default Country

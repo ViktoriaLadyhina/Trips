@@ -10,7 +10,7 @@ const enterSearchWord = {
 
 const searchButton = {
   ru: "Найти",
-  ua: "Знайти",
+  uk: "Знайти",
   de: "Suchen"
 };
 

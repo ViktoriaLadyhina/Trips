@@ -28,9 +28,10 @@
         &-interestingFacts,
         &-officialSite,
         &-date,
+        &-location,
         &-theme_zones {
             padding: 10px;
-            flex: 1; // чтобы текст занимал оставшееся место
+            flex: 1;
             text-align: justify;
 
             &-title {
@@ -51,10 +52,21 @@
                 display: inline;
             }
 
+            ul {
+                margin: 0;
+                padding-left: 20px;
+                list-style-type: disc;
+            }
+
+            li {
+                @include body-text;
+                margin-bottom: 3px;
+            }
+
         }
 
         &-sub_objects {
-            padding: 10px;
+            padding: 5px;
             text-align: left;
 
             &-title {
@@ -69,11 +81,17 @@
                 text-align: justify;
             }
 
+                        &-text {
+                @include body-text;
+                text-align: justify;
+                display: inline;
+            }
+
             &-item {
                 display: flex;
                 align-items: flex-start;
                 flex-wrap: wrap;
-                margin-bottom: 20px; 
+                margin-bottom: 10px;
 
                 p {
                     margin: 0;

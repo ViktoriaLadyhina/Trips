@@ -4,16 +4,12 @@ const datas = [
         name: "Spaso-Preobraschenski-Kathedrale",
         type: ["cathedral"], rating: "popular",
         path: "sumy_spaso_preobrazhensky",
-        countryPath: "ukraine", regionsPath: "sumska", districtPath: "city", cityPath: "sumy",
+        countryPath: "ukraine", regionPath: "sumska", districtPath: "city", cityPath: "sumy",
         fotoCard: "Ukraine/sumska/sumy-city/spaso-preobrazhensky/004.jpg",
         location: "Sumy, Ukraine",
-        address: [{ bold: "Adresse:", text: " Sobornaya Str. 31, Sumy, Ukraine" }],
         officialSite: [
             { bold: 'Offizielle Website der Kathedrale', link: 'https://sumy-sob.church.ua/' }
         ],
-        unesco_status: {
-            included: false,
-        },
         construction_period: "1776–1788 (Rekonstruktion 1882–1892)",
         architects: ["Michail Lowszow (Rekonstruktion)"],
         founder: "Sumy-Mäzene des 18. Jahrhunderts; Rekonstruktion — D.I. Suchanow",
@@ -35,6 +31,13 @@ const datas = [
                 { text: "Während des Bürgerkriegs wurden die Uhren beschädigt und blieben bis 1947 außer Betrieb. Damals wandte sich der Pfarrer an das Werk Frunse, wo der Chefingenieur und Uhrmacher I.P. Lischinsky den Mechanismus wiederherstellte." },
                 { text: "Interessant ist, dass diese Uhren als fortschrittlicher gelten als die Kreml-Uhren: Die Kreml-Glocken müssen zweimal täglich aufgezogen werden, die Uhr der Spaso-Preobraschenski-Kathedrale — einmal alle drei Tage." },
                 { bold: "Die Kathedrale heute", text: "Die Spaso-Preobraschenski-Kathedrale bleibt das spirituelle und architektonische Zentrum von Sumy. Sie vereint Gläubige, dient als Ort großer religiöser Feiertage und ist zugleich eine der wichtigsten touristischen Attraktionen der Stadt." },
+            ]
+        },
+        tickets_and_entry: {
+            title: "Praktische Informationen",
+            items: [
+                { bold: "Adresse:", text: "Sobornaya Str. 31, Sumy, Ukraine" },
+                { bold: "Konfession:", text: "orthodoxe Kirche" },
             ]
         },
         relics: {
@@ -60,15 +63,16 @@ const datas = [
         name: "Pokrowska-Platz",
         type: ["square"], rating: "local",
         path: "pokrovska_square_sumy",
-        countryPath: "ukraine", regionsPath: "sumska", districtPath: "city", cityPath: "sumy",
-        fotoCard: "Ukraine/sumska/sumy-city/altanka/009.jpg",
+        countryPath: "ukraine", regionPath: "sumska", districtPath: "city", cityPath: "sumy",
+        fotoCard: "Ukraine/sumska/sumy-city/pokrovska_square/altanka/009.jpg",
         location: "Sumy, Ukraine",
-        subObjects: ["sumy_altanka"],
+        subObjects: ["sumy_altanka", "onatsky_museum_sumy"],
         short_description: "Der Pokrowska-Platz ist der Ort, an dem die Geschichte der Stadt Sumy begann. Hier verbinden sich tragische Ereignisse der Vergangenheit mit dem ruhigen heutigen Stadtleben. Bis heute bewahrt der Platz eine besondere Atmosphäre von Erinnerung und Ruhe.",
         short_description_subObjects: {
             text: "Auf dem Pokrovskaja-Platz befinden sich folgende Sehenswürdigkeiten:",
             items: [
                 { bold: "Pavillon", text: "– der Pavillon gilt zu Recht als eines der wichtigsten architektonischen Wahrzeichen der Stadt" },
+                { bold: "Oblastliches Kunstmuseum Sumy N. Onatsky", text: "– gilt zu Recht als eine der wichtigsten kulturellen und architektonischen Sehenswürdigkeiten von Sumy" }
             ]
         },
         full_description: {
@@ -94,13 +98,12 @@ const datas = [
                 { text: "Trotz seiner tragischen Vergangenheit gilt er heute als einer der ruhigsten und angenehmsten Orte im Stadtzentrum." }
             ]
         },
-        coord: { lat: 50.9078, lng: 34.7972 },
         meta: {
             title: "Pokrowska-Platz — historisches Zentrum von Sumy",
             description: "Der Pokrowska-Platz ist einer der ältesten Plätze von Sumy mit einer reichen Geschichte. Erfahren Sie mehr über seine Vergangenheit, Kriegsjahre und heutige Bedeutung.",
             ogTitle: "Pokrowska-Platz — das Herz des historischen Sumy",
             ogDescription: "Der Pokrowska-Platz ist einer der ältesten Orte in Sumy und eng mit der Geschichte der Stadt verbunden.",
-            ogImage: "https://our-travels.info/foto/Ukraine/sumska/sumy-city/altanka/009.jpg"
+            ogImage: "https://our-travels.info/foto/Ukraine/sumska/sumy-city/pokrovska_square/altanka/009.jpg"
         }
     },
     {
@@ -108,9 +111,9 @@ const datas = [
         name: "Der Pavillon ",
         type: ["historical_building"], rating: "popular",
         path: "sumy_altanka",
-        countryPath: "ukraine", regionsPath: "sumska", districtPath: "city", cityPath: "sumy",
+        countryPath: "ukraine", regionPath: "sumska", districtPath: "city", cityPath: "sumy",
         hiddenFromList: true, showMore: true,
-        fotoCard: "Ukraine/sumska/sumy-city/altanka/009.jpg",
+        fotoCard: "Ukraine/sumska/sumy-city/pokrovska_square/altanka/009.jpg",
         location: "Sumy, Ukraine",
         address: [{ bold: "Adresse:", text: " Pokrowskyj-Platz" }],
         construction_period: "Ungefähr zu Beginn des 20. Jahrhunderts – etwa 1900–1905",
@@ -134,7 +137,7 @@ const datas = [
             description: "Der Pavillon gilt zu Recht als eines der wichtigsten architektonischen Wahrzeichen der Stadt",
             ogTitle: "Pavillon – die Visitenkarte von Sumy",
             ogDescription: "Der Pavillon gilt zu Recht als eines der wichtigsten architektonischen Wahrzeichen der Stadt",
-            ogImage: "https://our-travels.info/foto/Ukraine/sumska/sumy-city/altanka/009.jpg"
+            ogImage: "https://our-travels.info/foto/Ukraine/sumska/sumy-city/pokrovska_square/altanka/009.jpg"
         }
     }
 

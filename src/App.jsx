@@ -13,6 +13,7 @@ import AttractionForm from './components/forma/AttractionForm';
 import Event from './page/events/Events'
 import Map from './page/map/Map'
 import Unesco from './page/unesco/Unesco'
+import Rout from './page/routes/Routes';
 
 function App() {
 
@@ -30,10 +31,13 @@ function App() {
 
           <Route path="/:countryPath/:regionPath" element={<Regions />} />
 
+          <Route path="/:countryPath/routes/:routesPath" element={<Rout />} />
+
           <Route path="/:countryPath/:regionPath/:districtPath" element={<District />} />
 
           <Route path="/:countryPath/:regionPath/:districtPath/:cityPath" element={<City />} />
 
+          <Route path="/:countryPath/attractions" element={<AttractionsList />} />
           <Route path="/:countryPath/:regionPath/attractions" element={<AttractionsList />} />
           <Route path="/:countryPath/:regionPath/:districtPath/attractions" element={<AttractionsList />} />
           <Route path="/:countryPath/:regionPath/:districtPath/:cityPath/attractions" element={<AttractionsList />} />

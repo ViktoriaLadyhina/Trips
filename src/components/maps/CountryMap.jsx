@@ -4,7 +4,10 @@ import UkraineMap from './ukraine/Ukraine';
 import NRWMap from './germany/NRWMap';
 import NRWKolnMap from './germany/NRWKolnMap';
 import NRWArnsbergMap from './germany/NRWArnsbergMap'
+import NRWDusseldorfMap from './germany/NRWDussMap'
 import RheinlandPfalzMap from './germany/RPMap';
+
+import luxembourgMap from './luxembourg/luxembourg';
 
 const maps = {
   germany: {
@@ -13,8 +16,9 @@ const maps = {
       region: NRWMap,
       koln: NRWKolnMap,
       arnsberg: NRWArnsbergMap,
+      dusseldorf: NRWDusseldorfMap,
     },
-    'rheinland-pfalz': {
+    rheinland_pfalz: {
       region: RheinlandPfalzMap
     },
   },
@@ -22,21 +26,32 @@ const maps = {
     country: UkraineMap,
     sumska: SumskaMap,
   },
+  luxembourg: {
+    country: luxembourgMap
+  }
 };
 
-export default function CountryMap({ countryKey, regionKey, regions, subRegion, districtKey }) {
+export default function CountryMap({ countryKey, regionKey, regions, subRegion, districtKey, cities, scrollToSubRegion }) {
   const country = maps[countryKey];
   if (!country) return null;
 
   let MapComponent = country.country;
 
-  if (regionKey && country[regionKey]) {
-    const region = country[regionKey];
+  if (!regionKey) {
+  // уровень страны
+  MapComponent = country.country;
+} else {
+  // уровень региона
+  if (!country[regionKey]) {
+    return null; 
+  }
+
+  const region = country[regionKey];
 
     // Если districtKey задан, но карты для него нет — не показываем карту
     if (districtKey) {
       if (region[districtKey]) {
-        MapComponent = region[districtKey];
+        MapComponent = region[districtKey] || null;
       } else {
         return null; // <-- ничего не рендерим
       }
@@ -56,6 +71,8 @@ export default function CountryMap({ countryKey, regionKey, regions, subRegion, 
       regionPath={regionKey}
       districtPath={districtKey}
       subRegion={subRegion}
+      cities={cities}
+      scrollToSubRegion={scrollToSubRegion}
     />
   );
 }

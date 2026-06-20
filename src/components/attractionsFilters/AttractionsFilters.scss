@@ -1,20 +1,163 @@
+@use '../../styles/variables' as *;
+
+/* =========================
+   CONTAINER
+========================= */
+
 .attractions-filters {
   display: flex;
   flex-wrap: wrap;
   gap: 12px;
+  row-gap: 12px;
   margin-bottom: 20px;
+  align-items: stretch;
+}
+
+/* =========================
+   BASE FILTER CONTROL
+========================= */
+
+@mixin filter-control {
+  height: 38px;
+  padding: 8px 12px;
+
+  border-radius: 8px;
+  border: 1px solid var(--color-sidebar-bg);
+
+  background: var(--color-filter-bg);
+  color: var(--color-text);
+
+  font-size: 14px;
+  cursor: pointer;
+
+  transition: 0.2s ease;
+
+  box-sizing: border-box;
+
+  &:hover {
+    border-color: var(--color-primary);
+  }
+}
+
+/* =========================
+   LAYOUT SIZING (ALL FILTERS SAME BEHAVIOR)
+========================= */
+
+.attractions-filters select,
+.select-wrapper,
+.custom-select {
+flex: 1 1 180px;
+min-width: 180px;
+max-width: 260px;
+}
+
+/* =========================
+   NATIVE SELECT
+========================= */
+
+.select-wrapper {
+  position: relative;
 
   select {
-    padding: 8px 12px;
-    border-radius: 8px;
-    border: 1px solid #ccc;
-    font-size: 14px;
-    background: #fff;
-    cursor: pointer;
-    transition: 0.2s ease;
+    width: 100%;
+    @include filter-control;
 
-    &:hover {
-      border-color: #7ec27e;
-    }
+    appearance: none;
+    padding-right: 32px;
+  }
+
+  /* arrow */
+  &::after {
+    content: '';
+    position: absolute;
+
+    right: 12px;
+    top: 50%;
+    transform: translateY(-50%);
+
+    width: 0;
+    height: 0;
+
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    border-top: 6px solid var(--color-text);
+
+    pointer-events: none;
+  }
+}
+
+/* =========================
+   CUSTOM SELECT (STATUS)
+========================= */
+
+.custom-select {
+  position: relative;
+}
+
+/* control (like select) */
+.custom-select__control {
+  @include filter-control;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* arrow */
+.custom-select__arrow {
+  width: 0;
+  height: 0;
+
+  border-left: 5px solid transparent;
+  border-right: 5px solid transparent;
+  border-top: 6px solid var(--color-text);
+
+  transition: transform 0.2s ease;
+  margin-left: 10px;
+
+  &.open {
+    transform: rotate(180deg);
+  }
+}
+
+/* dropdown */
+.custom-select__dropdown {
+  position: absolute;
+  top: calc(100% + 4px);
+  left: 0;
+  right: 0;
+
+  background: var(--color-filter-bg);
+  border: 1px solid var(--color-sidebar-bg);
+  border-radius: 8px;
+
+  z-index: 20;
+
+  padding: 8px;
+
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+/* option */
+.custom-select__option {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+
+  font-size: 14px;
+  color: var(--color-text);
+
+  cursor: pointer;
+
+  input {
+    cursor: pointer;
+  }
+
+  &:hover {
+    color: var(--color-primary);
   }
 }

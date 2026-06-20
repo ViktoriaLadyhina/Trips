@@ -9,20 +9,29 @@
     margin: 10px;
     border: 1px solid var(--color-sidebar-bg);
 
+    &--lost {
+        background: var(--color-status-lost-bg);
+        border-color: rgba(200, 180, 150, 0.5);
+    }
+
+    &--partial {
+        background: var(--color-status-partial-bg);
+        border-color: rgba(200, 180, 150, 0.5);
+    }
+
     &__title {
         @include h3();
         margin: 10px;
-        font-size: 1.5rem;
     }
 
     &__rating {
-        @include body-text;
+        @include body-text();
         margin: 10px;
-        font-size: 15px;
         text-align: right;
 
         &-label {
             color: black;
+            @include body-text();
         }
 
         &-value {
@@ -51,14 +60,11 @@
         &-subObjects {
             text-align: left;
             padding-left: 10px;
-
-            &-text {
-                @include body-text;
-                flex: 1;
-            }
+            @include body-text();
+            flex: 1;
 
             &-bold {
-                @include bold-text;
+                @include bold-text();
             }
         }
 
@@ -66,18 +72,19 @@
             text-align: left;
 
             &-text {
-                @include body-text;
+                display: block;
+                @include body-text();
                 padding: 10px;
-                flex: 1;
             }
 
             &-more {
-                @include bold-text;
+                @include bold-text();
                 padding: 10px;
             }
         }
     }
 }
+
 
 // Адаптивность
 @media (max-width: 768px) {
@@ -91,6 +98,8 @@
     .attrCard__desc-info-more {
         padding: 5px 0;
         text-align: left; // текст по левому краю
+        font-size: 12px; // чуть меньше размер текста
+        line-height: 20px;
     }
 
     .attrCard__title {
