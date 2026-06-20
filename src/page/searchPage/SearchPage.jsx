@@ -1,9 +1,9 @@
 import { useEffect } from "react";
 import { Link, useLocation } from "react-router-dom";
 import { useSelector } from "react-redux";
-import searchIndex from "../../components/search/index";
-import { buildSearchIndex, searchStatic } from "../../components/search/searchUtils";
-import BreadCrumbs from '../../components/breadCrumbs/BreadCrumbs';
+import searchIndex from "../../components/search/index.js";
+import { buildSearchIndex, searchStatic } from "../../components/search/searchUtils.js";
+import BreadCrumbs from '../../components/breadCrumbs/BreadCrumbs.jsx';
 import './SearchPage.scss';
 
 const searchResultsText = {

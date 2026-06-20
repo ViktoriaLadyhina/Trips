@@ -1,9 +1,8 @@
 import './Region.scss'
-import InfoBlock from '../InfoBlock/InfoBlock'
 import { Link } from 'react-router-dom';
 import { useEffect, useMemo, useState } from 'react';
 import { useSelector } from 'react-redux';
-import { fixHtmlImages } from "../../utils/photo";
+import { fixHtmlImages } from "../../utils/photo.js";
 import { forwardRef } from "react";
 
 const BASE_PHOTO_URL = import.meta.env.VITE_BASE_PHOTO_URL;

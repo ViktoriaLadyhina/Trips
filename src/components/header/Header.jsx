@@ -1,8 +1,8 @@
 import { useSelector } from 'react-redux';
 
-import LangSelector from '../langSelector/LangSelector'
-import Search from '../search/Search'
-import ThemeToggle from '../themeToggle/ThemeToggle'
+import LangSelector from '../langSelector/LangSelector.jsx'
+import Search from '../search/Search.jsx'
+import ThemeToggle from '../themeToggle/ThemeToggle.jsx'
 import './Header.scss'
 
 const titleMap = {

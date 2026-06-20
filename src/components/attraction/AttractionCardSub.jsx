@@ -1,4 +1,4 @@
-import InfoBlock from '../InfoBlock/InfoBlock';
+import InfoBlock from '../InfoBlock/InfoBlock.jsx';
 import './Attraction.scss';
 import { Link } from 'react-router';
 

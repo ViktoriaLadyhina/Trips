@@ -4,7 +4,7 @@ import { Link } from "react-router";
 import { useEffect, useState } from "react";
 import { Helmet } from "react-helmet-async";
 
-import EuropeMap from "../../components/maps/europe/Europe";
+import EuropeMap from "../../components/maps/europe/Europe.jsx";
 
 const BASE_PHOTO_URL = import.meta.env.VITE_BASE_PHOTO_URL;
 

@@ -3,12 +3,12 @@ import { useSelector } from "react-redux";
 import { Link, useParams } from 'react-router';
 import { Helmet } from "react-helmet-async";
 
-import BtnAttr from "../../components/btn-attr/BtnAttr";
-import BreadCrumbs from '../../components/breadCrumbs/BreadCrumbs';
+import BtnAttr from "../../components/btn-attr/BtnAttr.jsx";
+import BreadCrumbs from '../../components/breadCrumbs/BreadCrumbs.jsx';
 import './Regions.scss'
-import CountryMap from '../../components/maps/CountryMap';
-import datas from '../../datas/minimalIndex'
-import { toFullUrl, fixHtmlImages } from "../../utils/photo";
+import CountryMap from '../../components/maps/CountryMap.jsx';
+import datas from '../../datas/minimalIndex.js'
+import { toFullUrl, fixHtmlImages } from "../../utils/photo.js";
 
 const BASE_PHOTO_URL = import.meta.env.VITE_BASE_PHOTO_URL;
 const regionTitlesByType = {

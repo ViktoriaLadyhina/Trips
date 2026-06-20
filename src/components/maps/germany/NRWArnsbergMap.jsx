@@ -1,6 +1,6 @@
 import React, { useState, useMemo } from "react";
 import { useNavigate } from "react-router-dom";
-import { districtsArnsberg as districts } from "./maps/nrwDistricts";
+import { districtsArnsberg as districts } from "./maps/nrwDistricts.js";
 import "../Maps.scss";
 
 const arnsbergDistrictCenters = {

@@ -1,8 +1,8 @@
 import { useSelector } from 'react-redux';
 import { Link } from 'react-router-dom';
 import './Map.scss';
-import BreadCrumbs from '../../components/breadCrumbs/BreadCrumbs';
-import datas from '../../datas/minimalIndex'
+import BreadCrumbs from '../../components/breadCrumbs/BreadCrumbs.jsx';
+import datas from '../../datas/minimalIndex.js'
 import { Helmet } from 'react-helmet-async';
 
 const sitemap = { ru: "Карта сайта", ua: "Мапа сайту", de: "Sitemap" };

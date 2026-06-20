@@ -14,7 +14,7 @@ import FilteredMap from '../../components/maps/attr/filteredMap.jsx';
 
 import useAttractions from '../../hooks/useAttractions.js';
 import useCity from '../../hooks/useCity.js';
-import datas from '../../datas/minimalIndex'
+import datas from '../../datas/minimalIndex.js'
 
 import './Attraction.scss'
 

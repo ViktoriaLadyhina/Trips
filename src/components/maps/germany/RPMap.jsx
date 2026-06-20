@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
-import { districtsRlp as districts } from "./maps/districtsRlp";
+import { districtsRlp as districts } from "./maps/districtsRlp.js";
 import "../Maps.scss";
 
 const RPMap = ({ regions }) => {

@@ -4,7 +4,7 @@ import 'leaflet/dist/leaflet.css';
 import './AttrMap.scss';
 import { useNavigate } from 'react-router';
 import { useEffect, useMemo } from 'react';
-import useAllAttractions from '../../../hooks/useAllAttractions';
+import useAllAttractions from '../../../hooks/useAllAttractions.js';
 
 // фикс иконок Leaflet (важно оставить один раз)
 delete L.Icon.Default.prototype._getIconUrl;

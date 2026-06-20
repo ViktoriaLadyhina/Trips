@@ -9,8 +9,8 @@ import './District.scss'
 import CountryMap from '../../components/maps/CountryMap.jsx';
 import BtnAttr from "../../components/btn-attr/BtnAttr.jsx";
 import { useSelector } from "react-redux";
-import datas from '../../datas/minimalIndex'
-import { toFullUrl, fixHtmlImages } from "../../utils/photo";
+import datas from '../../datas/minimalIndex.js'
+import { toFullUrl, fixHtmlImages } from "../../utils/photo.js";
 
 const BASE_PHOTO_URL = import.meta.env.VITE_BASE_PHOTO_URL;
 
