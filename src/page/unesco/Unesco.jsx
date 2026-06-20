@@ -1,8 +1,8 @@
 import { useSelector } from "react-redux";
 import { Helmet } from "react-helmet-async";
-import BreadCrumbs from '../../components/breadCrumbs/BreadCrumbs';
-import useAllAttractions from "../../hooks/useAllAttractions";
-import useRoutes from '../../hooks/useRoutesSearch';
+import BreadCrumbs from '../../components/breadCrumbs/BreadCrumbs.jsx';
+import useAllAttractions from "../../hooks/useAllAttractions.js";
+import useRoutes from '../../hooks/useRoutesSearch.js';
 import './Unesco.scss';
 import { Link } from "react-router";
 

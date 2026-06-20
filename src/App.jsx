@@ -1,19 +1,19 @@
 import './App.scss'
 import { Routes, Route } from 'react-router';
-import Layout from './components/layout/Layout'
-import Home from './page/home/Home'
-import Country from './page/countries/Country';
-import Regions from './page/regions/Regions';
-import District from "./page/district/District";
-import City from './page/city/City'
-import AttractionsList from './page/attractions/AttractionsList';
-import Attraction from './page/attraction/Attraction';
-import SearchPage from './page/searchPage/SearchPage';
-import AttractionForm from './components/forma/AttractionForm';
-import Event from './page/events/Events'
-import Map from './page/map/Map'
-import Unesco from './page/unesco/Unesco'
-import Rout from './page/routes/Routes';
+import Layout from './components/layout/Layout.jsx'
+import Home from './page/home/Home.jsx'
+import Country from './page/countries/Country.jsx';
+import Regions from './page/regions/Regions.jsx';
+import District from "./page/district/District.jsx";
+import City from './page/city/City.jsx'
+import AttractionsList from './page/attractions/AttractionsList.jsx';
+import Attraction from './page/attraction/Attraction.jsx';
+import SearchPage from './page/searchPage/SearchPage.jsx';
+import AttractionForm from './components/forma/AttractionForm.jsx';
+import Event from './page/events/Events.jsx'
+import Map from './page/map/Map.jsx'
+import Unesco from './page/unesco/Unesco.jsx'
+import Rout from './page/routes/Routes.jsx';
 
 function App() {
 

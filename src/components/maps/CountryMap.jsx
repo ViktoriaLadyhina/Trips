@@ -1,13 +1,13 @@
-import GermanyMap from "./germany/Germany";
-import SumskaMap from "./ukraine/SumskaMap";
-import UkraineMap from './ukraine/Ukraine';
-import NRWMap from './germany/NRWMap';
-import NRWKolnMap from './germany/NRWKolnMap';
-import NRWArnsbergMap from './germany/NRWArnsbergMap'
-import NRWDusseldorfMap from './germany/NRWDussMap'
-import RheinlandPfalzMap from './germany/RPMap';
+import GermanyMap from "./germany/Germany.jsx";
+import SumskaMap from "./ukraine/SumskaMap.jsx";
+import UkraineMap from './ukraine/Ukraine.jsx';
+import NRWMap from './germany/NRWMap.jsx';
+import NRWKolnMap from './germany/NRWKolnMap.jsx';
+import NRWArnsbergMap from './germany/NRWArnsbergMap.jsx'
+import NRWDusseldorfMap from './germany/NRWDussMap.jsx'
+import RheinlandPfalzMap from './germany/RPMap.jsx';
 
-import luxembourgMap from './luxembourg/luxembourg';
+import luxembourgMap from './luxembourg/luxembourg.jsx';
 
 const maps = {
   germany: {

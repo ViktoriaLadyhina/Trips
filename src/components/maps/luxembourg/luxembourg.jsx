@@ -1,6 +1,6 @@
 import { useNavigate } from "react-router";
 import "../Maps.scss";
-import { districtsLu as mapLu } from "./districts";
+import { districtsLu as mapLu } from "./districts.js";
 import { useEffect, useRef, useState } from "react";
 
 export default function LuxembourgMap({ regions, countryPath }) {

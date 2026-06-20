@@ -3,11 +3,11 @@ import { Link, useParams } from 'react-router';
 import { Helmet } from "react-helmet-async";
 import { useEffect, useMemo, useState } from 'react';
 
-import BtnAttr from "../../components/btn-attr/BtnAttr";
-import BreadCrumbs from '../../components/breadCrumbs/BreadCrumbs';
-import CountryMap from '../../components/maps/CountryMap'
-import useRoutes from '../../hooks/useRoutesSearch';
-import { toFullUrl, fixHtmlImages } from "../../utils/photo";
+import BtnAttr from "../../components/btn-attr/BtnAttr.jsx";
+import BreadCrumbs from '../../components/breadCrumbs/BreadCrumbs.jsx';
+import CountryMap from '../../components/maps/CountryMap.jsx'
+import useRoutes from '../../hooks/useRoutesSearch.js';
+import { toFullUrl, fixHtmlImages } from "../../utils/photo.js";
 
 import './Country.scss'
 

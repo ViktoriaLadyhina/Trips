@@ -7,7 +7,7 @@ import InfoBlock from '../../components/InfoBlock/InfoBlock.jsx';
 import Gallery from '../../components/gallery/Gallery.jsx';
 import { photosByCountry } from '../../datas/fotos/index.js';
 import useEvents from '../../hooks/useEvents.js';
-import datas from '../../datas/minimalIndex'
+import datas from '../../datas/minimalIndex.js'
 import './Events.scss'
 
 const BASE_PHOTO_URL = import.meta.env.VITE_BASE_PHOTO_URL;

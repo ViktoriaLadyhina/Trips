@@ -14,7 +14,7 @@ import useCity from '../../hooks/useCity.js';
 import useSabRegions from '../../hooks/useSabRegions.js';
 import useAttractionFilters from '../../hooks/useAttractionFilters.js';
 
-import datas from '../../datas/minimalIndex';
+import datas from '../../datas/minimalIndex.js';
 
 import './Attractions.scss';
 

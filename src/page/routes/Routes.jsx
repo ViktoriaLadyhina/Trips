@@ -3,9 +3,9 @@ import { Helmet } from "react-helmet-async";
 import { useSelector } from 'react-redux';
 
 import InfoBlock from '../../components/InfoBlock/InfoBlock.jsx';
-import useRoutes from '../../hooks/useRoutesSearch';
+import useRoutes from '../../hooks/useRoutesSearch.js';
 import './Routes.scss'
-import BreadCrumbs from '../../components/breadCrumbs/BreadCrumbs';
+import BreadCrumbs from '../../components/breadCrumbs/BreadCrumbs.jsx';
 import Gallery from '../../components/gallery/Gallery.jsx';
 import { photosByCountry } from '../../datas/fotos/index.js';
 import { routeMaps } from "../../components/maps/RouteMap.jsx";

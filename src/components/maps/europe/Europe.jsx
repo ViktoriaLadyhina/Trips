@@ -3,7 +3,7 @@ import { useNavigate } from "react-router";
 import { useEffect, useState } from "react";
 
 import "../Maps.scss";
-import { cantries as mapEu, countryNames, countryCenters } from "./cantries";
+import { cantries as mapEu, countryNames, countryCenters } from "./cantries.js";
 
 
 export default function EuropeMap() {
