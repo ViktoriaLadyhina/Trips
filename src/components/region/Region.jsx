@@ -40,7 +40,6 @@ const Region = forwardRef(({ data, countryPath, regionPath, districtPath, subreg
       .sort((a, b) => a.sort_order - b.sort_order);
   }, [data]);
 
-
   const sortedCities = useMemo(() => {
     if (!cities?.length) return [];
 

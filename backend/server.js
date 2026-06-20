@@ -15,6 +15,10 @@ const db = mysql.createPool({
   database: process.env.DB_NAME
 }).promise();
 
+const getMeta = require("./services/getMeta");
+const getEntityPhotos = require("./services/getPhotos");
+const getBlocks = require("./services/getBlocks");
+
 // COUNTRY API
 app.get("/api/country/:path", async (req, res) => {
   try {
@@ -34,31 +38,7 @@ app.get("/api/country/:path", async (req, res) => {
     const country = countryRows[0];
 
     // 2. blocks
-    const [blocksRows] = await db.query(
-      `
-SELECT
-    b.block_key,
-    b.sort_order,
-    (
-        SELECT c.content
-        FROM content c
-        WHERE c.block_key = b.block_key
-          AND c.entity_id = ?
-          AND c.language = ?
-        LIMIT 1
-    ) AS content
-FROM blocks b
-WHERE b.entity_type = 'country'
-ORDER BY b.sort_order ASC
-`,
-      [country.id, lang]
-    );
-
-    const blocks = blocksRows.map(b => ({
-      block_key: b.block_key,
-      content: b.content,
-      sort_order: b.sort_order
-    }));
+    const blocks = await getBlocks(db, country.id, lang, "country");
 
     // 3. regions
     const [regionsRows] = await db.query(
@@ -88,56 +68,10 @@ WHERE e.parent_id = ?
     }));
 
     // META
-    const [metaRows] = await db.query(
-      `
-SELECT
-    em.title,
-    em.description,
-    em.og_title,
-    em.og_description,
-    ep.path AS og_image
-FROM entity_meta em
-LEFT JOIN entity_photos ep
-    ON ep.id = em.og_image
-WHERE em.entity_id = ?
-  AND em.language = ?
-LIMIT 1;
-      `,
-      [country.id, lang]
-    );
+    const meta = await getMeta(db, country.id, lang);
 
-    const meta = metaRows[0] || null;
-    console.log(metaRows);
     // PHOTO
-    const [photosRows] = await db.query(
-      `
-  SELECT
-    id,
-    entity_id,
-    path,
-    sort_order,
-    title_ru,
-    title_uk,
-    title_de,
-    is_main
-  FROM entity_photos
-  WHERE entity_id = ?
-  ORDER BY sort_order ASC
-  `,
-      [country.id]
-    );
-
-    const photos = photosRows.map(p => ({
-      id: p.id,
-      path: p.path,
-      sort_order: p.sort_order,
-      is_main: Boolean(p.is_main),
-      title: {
-        ru: p.title_ru,
-        uk: p.title_uk,
-        de: p.title_de
-      }
-    }));
+    const { photos, mainPhoto } = await getEntityPhotos(db, country.id);
 
     // 4. response
     res.json({
@@ -145,7 +79,8 @@ LIMIT 1;
       blocks,
       regions,
       meta,
-      photos
+      photos,
+      mainPhoto
     });
 
   } catch (err) {
@@ -259,52 +194,10 @@ app.get("/api/region/:path", async (req, res) => {
     }
 
     // 3. BLOCKS
-    const [blocksRows] = await db.query(
-      `
-      SELECT
-          b.block_key,
-          b.sort_order,
-          (
-              SELECT c.content
-              FROM content c
-              WHERE c.entity_id = ?
-                AND c.block_key = b.block_key
-                AND c.language = ?
-              LIMIT 1
-          ) AS content
-      FROM blocks b
-      WHERE b.entity_type = ?
-      ORDER BY b.sort_order
-      `,
-      [region.id, lang, blockType]
-    );
-
-    const blocks = blocksRows.map(b => ({
-      block_key: b.block_key,
-      content: b.content,
-      sort_order: b.sort_order
-    }));
+    const blocks = await getBlocks(db, region.id, lang, blockType);
 
     // 4. META
-    const [metaRows] = await db.query(
-      `
-SELECT
-    em.title,
-    em.description,
-    em.og_title,
-    em.og_description,
-    ep.path AS og_image
-FROM entity_meta em
-LEFT JOIN entity_photos ep
-    ON ep.id = em.og_image
-WHERE em.entity_id = ?
-  AND em.language = ?
-LIMIT 1;
-      `,
-      [region.id, lang]
-    );
-
-    const meta = metaRows[0] || null;
+    const meta = await getMeta(db, region.id, lang);
 
     // 5. CHILD ENTITIES
     const [childrenRows] = await db.query(
@@ -326,7 +219,7 @@ LIMIT 1;
       [lang, region.id]
     );
 
-    // 6. SPLIT REGIONS / CITIES
+    // 6. REGIONS / CITIES
     const discriptRegions = childrenRows
       .filter(item => item.type === "district")
       .map(item => ({
@@ -358,40 +251,7 @@ LIMIT 1;
       }));
 
     // 7. PHOTOS (NEW SYSTEM)
-    const [photosRows] = await db.query(
-      `
-      SELECT
-        id,
-        entity_id,
-        path,
-        sort_order,
-        is_main,
-        title_ru,
-        title_uk,
-        title_de
-      FROM entity_photos
-      WHERE entity_id = ?
-      ORDER BY sort_order ASC
-      `,
-      [region.id]
-    );
-
-    const photos = photosRows.map(p => ({
-      id: p.id,
-      path: p.path,
-      sort_order: p.sort_order,
-      is_main: Boolean(p.is_main),
-      title: {
-        ru: p.title_ru,
-        uk: p.title_uk,
-        de: p.title_de
-      }
-    }));
-
-    const mainPhoto =
-      photos.find(p => p.is_main) ||
-      photos[0] ||
-      null;
+    const { photos, mainPhoto } = await getEntityPhotos(db, region.id);
 
     // 8. RESPONSE
     res.json({
@@ -511,84 +371,13 @@ app.get("/api/district/:path", async (req, res) => {
     const district = districtRows[0];
 
     // 2. BLOCKS
-    const [blocksRows] = await db.query(
-      `
-      SELECT
-        b.block_key,
-        b.sort_order,
-        c.content
-      FROM blocks b
-      LEFT JOIN content c
-        ON c.entity_id = ?
-       AND c.block_key = b.block_key
-       AND c.language = ?
-      WHERE b.entity_type = 'district'
-      ORDER BY b.sort_order
-      `,
-      [district.id, lang]
-    );
-
-    const blocks = blocksRows.map(b => ({
-      block_key: b.block_key,
-      content: b.content,
-      sort_order: b.sort_order
-    }));
-
+   const blocks = await getBlocks(db, district.id, lang, "district");
+   
     // 3. META
-    const [metaRows] = await db.query(
-      `
-      SELECT
-        em.title,
-        em.description,
-        em.og_title,
-        em.og_description,
-        ep.path AS og_image
-      FROM entity_meta em
-      LEFT JOIN entity_photos ep
-        ON ep.id = em.og_image
-      WHERE em.entity_id = ?
-        AND em.language = ?
-      LIMIT 1
-      `,
-      [district.id, lang]
-    );
-
-    const meta = metaRows[0] || null;
+    const meta = await getMeta(db, district.id, lang);
 
     // 4. PHOTOS
-    const [photosRows] = await db.query(
-      `
-      SELECT
-        id,
-        path,
-        sort_order,
-        is_main,
-        title_ru,
-        title_uk,
-        title_de
-      FROM entity_photos
-      WHERE entity_id = ?
-      ORDER BY sort_order ASC
-      `,
-      [district.id]
-    );
-
-    const photos = photosRows.map(p => ({
-      id: p.id,
-      path: p.path,
-      is_main: !!p.is_main,
-      sort_order: p.sort_order,
-      title: {
-        ru: p.title_ru,
-        uk: p.title_uk,
-        de: p.title_de
-      }
-    }));
-
-    const mainPhoto =
-      photos.find(p => p.is_main) ||
-      photos[0] ||
-      null;
+    const { photos, mainPhoto } = await getEntityPhotos(db, district.id);
 
     // 5. RESPONSE (CLEAN)
     res.json({
@@ -745,7 +534,7 @@ app.get("/api/subregions/:districtPath", async (req, res) => {
   }
 });
 
-// SUBREGION CITIES API subregionCities
+// SUBREGION CITIES API 
 app.get("/api/subregionCities/:subregionId", async (req, res) => {
   try {
     const { subregionId } = req.params;

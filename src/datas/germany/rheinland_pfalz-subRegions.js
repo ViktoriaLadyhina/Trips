@@ -358,73 +358,20 @@ communities: [
             gerb: "Germany/rheinland-pfalz/trier_saarburg/trier_land/gerb.png",
             translations: {
                 ru: {
-                    name: "Трир-Ланд",
-                    center: [{ bold: "Административный центр:", text: " город Трир." }],
-                    description: [{ text: "Объединённая община в составе района Трир-Саарбург земли Рейнланд-Пфальц." }],
-                    area: [{ bold: "Площадь:", text: " ~175,49 км² (по состоянию на 2024 г.)" }],
-                    density: [{ bold: "Плотность населения:", text: " ~127 человек/км² (по состоянию на 2024 г.)" }],
-                    population: [{ bold: "Население:", text: " ~22 197 человек (по состоянию на 2024 г.)" }],
-                    com: [{ text: "Район подразделяется на " }, { bold: "11 общин:" }],
                     communities: [
-                        { id: 1, name: "Ах", hasInfo: false },
-                        { id: 2, name: "Франценхайм", hasInfo: false },
-                        { id: 3, name: "Хоквайлер", hasInfo: false },
-                        { id: 4, name: "Игель", hasInfo: false },
-                        { id: 5, name: "Кордель", hasInfo: false },
-                        { id: 6, name: "Лангзур", hasInfo: false },
-                        { id: 7, name: "Невель", hasInfo: false },
-                        { id: 8, name: "Ралинген", hasInfo: false },
-                        { id: 9, name: "Трирвайлер", hasInfo: false },
-                        { id: 10, name: "Вельшбиллиг", hasInfo: false },
-                        { id: 11, name: "Цеммер", hasInfo: false }
+                        { id: 1, name: "Ах", hasInfo: false }, // 648
+                        { id: 2, name: "Франценхайм", hasInfo: false }, // 649
+                        { id: 3, name: "Хоквайлер", hasInfo: false }, // 650
+                        { id: 4, name: "Игель", hasInfo: false }, // 651
+                        { id: 5, name: "Кордель", hasInfo: false }, // 652
+                        { id: 6, name: "Лангзур", hasInfo: false }, // 653
+                        { id: 7, name: "Нойвель", hasInfo: false }, // 654
+                        { id: 8, name: "Ралинген", hasInfo: false }, // 655
+                        { id: 9, name: "Трирвайлер", hasInfo: false }, // 656
+                        { id: 10, name: "Вельшбиллиг", hasInfo: false }, // 657
+                        { id: 11, name: "Цеммер", hasInfo: false } // 658
                     ]
                 },
-                uk: {
-                    name: "Трір-Ланд",
-                    center: [{ bold: "Адміністративний центр:", text: " місто Трір." }],
-                    description: [{ text: "Об’єднана громада у складі району Трір-Саарбург землі Рейнланд-Пфальц." }],
-                    area: [{ bold: "Площа:", text: " близько 175,49 км² (станом на 2024 рік)." }],
-                    density: [{ bold: "Щільність населення:", text: " близько 127 осіб/км² (станом на 2024 рік)." }],
-                    population: [{ bold: "Населення:", text: " близько 22 197 осіб (станом на 2024 рік)." }],
-                    com: [{ text: "Громада включає " }, { bold: "11 населених пунктів:" }],
-                    communities: [
-                        { id: 1, name: "Ах", hasInfo: false },
-                        { id: 2, name: "Франценхайм", hasInfo: false },
-                        { id: 3, name: "Хоквайлер", hasInfo: false },
-                        { id: 4, name: "Ігель", hasInfo: false },
-                        { id: 5, name: "Кордель", hasInfo: false },
-                        { id: 6, name: "Лангзур", hasInfo: false },
-                        { id: 7, name: "Невель", hasInfo: false },
-                        { id: 8, name: "Ралінген", hasInfo: false },
-                        { id: 9, name: "Трірвайлер", hasInfo: false },
-                        { id: 10, name: "Вельшбілліг", hasInfo: false },
-                        { id: 11, name: "Цеммер", hasInfo: false }
-                    ]
-                },
-                de: {
-                    name: "Trier-Land",
-                    path: "trier_land",
-                    districtPath: "trier_saarburg",
-                    center: [{ bold: "Verwaltungssitz:", text: " Stadt Trier." }],
-                    description: [{ text: "Verbandsgemeinde im Landkreis Trier-Saarburg, Rheinland-Pfalz." }],
-                    area: [{ bold: "Fläche:", text: " ca. 175,49 km² (Stand 2024)." }],
-                    density: [{ bold: "Bevölkerungsdichte:", text: " ca. 127 Einwohner/km² (Stand 2024)." }],
-                    population: [{ bold: "Einwohner:", text: " ca. 22 197 (Stand 2024)." }],
-                    com: [{ text: "Die Verbandsgemeinde umfasst " }, { bold: "11 Ortsgemeinden:" }],
-                    communities: [
-                        { id: 1, name: "Aach", hasInfo: false },
-                        { id: 2, name: "Franzenheim", hasInfo: false },
-                        { id: 3, name: "Hockweiler", hasInfo: false },
-                        { id: 4, name: "Igel", hasInfo: false },
-                        { id: 5, name: "Kordel", hasInfo: false },
-                        { id: 6, name: "Langsur", hasInfo: false },
-                        { id: 7, name: "Neumagen-Dhron", hasInfo: false },
-                        { id: 8, name: "Ralingen", hasInfo: false },
-                        { id: 9, name: "Trierweiler", hasInfo: false },
-                        { id: 10, name: "Welschbillig", hasInfo: false },
-                        { id: 11, name: "Zemmer", hasInfo: false }
-                    ]
-                }
             }
         }
     ]
