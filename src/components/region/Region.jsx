@@ -4,6 +4,7 @@ import { useEffect, useMemo, useState } from 'react';
 import { useSelector } from 'react-redux';
 import { fixHtmlImages } from "../../utils/photo.js";
 import { forwardRef } from "react";
+import { getSubregionCities } from "../../api/api.js";
 
 const BASE_PHOTO_URL = import.meta.env.VITE_BASE_PHOTO_URL;
 
@@ -12,12 +13,15 @@ const Region = forwardRef(({ data, countryPath, regionPath, districtPath, subreg
   const [cities, setCities] = useState([]);
   const [error, setError] = useState(null);
 
-  useEffect(() => {
-    fetch(`${import.meta.env.VITE_API_URL}/api/subregionCities/${subregionId}?lang=${lang}`)
-      .then(res => res.json())
-      .then(data => setCities(data || []))
-      .catch(err => setError(err.message));
-  }, [subregionId, lang]);
+useEffect(() => {
+  if (!subregionId) return;
+
+  setError(null);
+
+  getSubregionCities(subregionId, lang)
+    .then(data => { setCities(data || []) })
+    .catch(err => { setError(err.message) });
+}, [subregionId, lang]);
 
   const communityText = {
     ru: `Район подразделяется на ${cities.length} общин:`,

@@ -3,6 +3,7 @@ import './Home.scss'
 import { Link } from "react-router";
 import { useEffect, useState } from "react";
 import { Helmet } from "react-helmet-async";
+import { getCountries } from "../../api/api.js";
 
 import EuropeMap from "../../components/maps/europe/Europe.jsx";
 
@@ -74,30 +75,21 @@ const texts = {
 const Home = () => {
   const { lang } = useSelector((state) => state.language);
   const [countries, setCountries] = useState([]);
+  const [error, setError] = useState(null);
 
-  useEffect(() => {
-    const fetchCountries = async () => {
-      try {
-        const response = await fetch(
-          `${import.meta.env.VITE_API_URL}/api/countries?lang=${lang}`
-        );
+useEffect(() => {
+  setError(null);
 
-        if (!response.ok) {
-          throw new Error("Failed to fetch countries");
-        }
-
-        const data = await response.json();
-
-        setCountries(data);
-      } catch (error) {
-        console.error("Countries fetch error:", error);
-      }
-    };
-
-    fetchCountries();
-  }, [lang]);
+  getCountries(lang)
+    .then(data => { setCountries(data) })
+    .catch(error => {
+      console.error("Countries fetch error:", error);
+      setError(error.message);
+    });
+}, [lang]);
 
   const homeData = texts[lang];
+   if (error) return <p>{error}</p>;
 
   return (
     <div className="home">

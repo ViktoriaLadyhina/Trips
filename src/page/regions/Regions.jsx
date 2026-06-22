@@ -9,6 +9,7 @@ import './Regions.scss'
 import CountryMap from '../../components/maps/CountryMap.jsx';
 import datas from '../../datas/minimalIndex.js'
 import { toFullUrl, fixHtmlImages } from "../../utils/photo.js";
+import { getRegion } from "../../api/api.js";
 
 const BASE_PHOTO_URL = import.meta.env.VITE_BASE_PHOTO_URL;
 const regionTitlesByType = {
@@ -16,6 +17,7 @@ const regionTitlesByType = {
     city: { ru: "Свободные города", uk: "Вільні міста", de: "Kreisfreie Städte" },
     commune: { ru: "Коммуны и населённые пункты", uk: "Громади та населені пункти", de: "Gemeinden und Ortschaften" }
 };
+const loadingRegion = { ru: "Загрузка региона...",  de: "Region wird geladen...", uk: "Завантаження регіону..." };
 
 const Regions = () => {
     const { countryPath, regionPath } = useParams();
@@ -26,13 +28,14 @@ const Regions = () => {
     const [error, setError] = useState(null);
 
     const meta = region?.meta;
-  
+
+    // фетч запрос
     useEffect(() => {
-        fetch(`${import.meta.env.VITE_API_URL}/api/region/${regionPath}?lang=${lang}`)
-            .then(res => res.json())
-            .then(data => setRegion(data))
-            .catch(err => setError(err.message));
-    }, [regionPath, lang]);
+  if (!regionPath) return;
+  getRegion(regionPath, lang)
+  .then(setRegion)
+  .catch(err => setError(err.message))
+}, [regionPath, lang]);
 
     const blocks = useMemo(() => {
         return (region?.blocks || [])
@@ -108,7 +111,7 @@ case "photo": {
 
 
     if (error) return <p>{error}</p>;
-    if (!region) return <div>Загрузка региона...</div>;
+    if (!region) return <div>{loadingRegion[lang]}</div>;
 
     // BreadCrumbs
     const crumbs = [

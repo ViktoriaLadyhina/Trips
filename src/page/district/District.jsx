@@ -11,8 +11,10 @@ import BtnAttr from "../../components/btn-attr/BtnAttr.jsx";
 import { useSelector } from "react-redux";
 import datas from '../../datas/minimalIndex.js'
 import { toFullUrl, fixHtmlImages } from "../../utils/photo.js";
+import { getDistrict, getMapCities, getSubregions } from "../../api/api.js";
 
 const BASE_PHOTO_URL = import.meta.env.VITE_BASE_PHOTO_URL;
+const loadingDistrict = { ru: "Загрузка района...",  de: "Region wird geladen...", uk: "Завантаження району..." };
 
 const District = () => {
   const { countryPath, regionPath, districtPath } = useParams();
@@ -22,35 +24,38 @@ const District = () => {
   const [subRegions, setSubRegions] = useState(null);
   const [cities, setCities] = useState([]);
   const [error, setError] = useState(null);
+  const [loading, setLoading] = useState(false);
 
   const meta = district?.meta;
 
   const subRegionRefs = useRef({});
 
 useEffect(() => {
+  if (!districtPath || !regionPath) return;
+
   const controller = new AbortController();
 
   const fetchData = async () => {
     try {
       setError(null);
+      setLoading(true);
 
-      const [districtRes, citiesRes, subRegionsRes] = await Promise.all([
-        fetch(`${import.meta.env.VITE_API_URL}/api/district/${districtPath}?lang=${lang}`, { signal: controller.signal }),
-        fetch(`${import.meta.env.VITE_API_URL}/api/map/cities/${regionPath}?lang=${lang}`, { signal: controller.signal }),
-        fetch(`${import.meta.env.VITE_API_URL}/api/subregions/${districtPath}?lang=${lang}`, { signal: controller.signal }),
-      ]);
-
-      const districtData = await districtRes.json();
-      const citiesData = await citiesRes.json();
-      const subRegionsData = await subRegionsRes.json();
+      const [districtData, citiesData, subRegionsData] =
+        await Promise.all([
+          getDistrict(districtPath, lang, controller.signal),
+          getMapCities(regionPath, lang, controller.signal),
+          getSubregions(districtPath, lang, controller.signal),
+        ]);
 
       setDistrict(districtData);
-      setCities(citiesData.cities || []);
+      setCities(citiesData?.cities || []);
       setSubRegions(subRegionsData || []);
     } catch (err) {
       if (err.name !== "AbortError") {
         setError(err.message);
       }
+    } finally {
+      setLoading(false);
     }
   };
 
@@ -158,7 +163,8 @@ useEffect(() => {
   };
 
   if (error) return <p>{error}</p>;
-  if (!district) return <p>District not found</p>;
+  if (!district) return <p>{loadingDistrict[lang]}</p>;
+  if (loading) return <div>Loading...</div>;
 
   const crumbs = [
     { label: lang === "ru" ? "Главная" : lang === "de" ? "Startseite" : "Головна", path: "/" },
