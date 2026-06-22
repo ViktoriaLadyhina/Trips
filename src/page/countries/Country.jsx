@@ -8,6 +8,7 @@ import BreadCrumbs from '../../components/breadCrumbs/BreadCrumbs.jsx';
 import CountryMap from '../../components/maps/CountryMap.jsx'
 import useRoutes from '../../hooks/useRoutesSearch.js';
 import { toFullUrl, fixHtmlImages } from "../../utils/photo.js";
+import { getCountry } from "../../api/api.js";
 
 import './Country.scss'
 
@@ -19,18 +20,23 @@ const regionTitlesByType = {
     oblast: { ru: "Области", uk: "Області", de: "Regionen" }
 };
 
+const loadingCountry = { ru: "Загрузка страны...",  de: "Land wird geladen...", uk: "Завантаження країни..." };
+
 const Country = () => {
     const { countryPath } = useParams();
     const { lang } = useSelector((state) => state.language);
     const [sidebarOpen, setSidebarOpen] = useState(false);
     const { routes } = useRoutes(countryPath);
     const [country, setCountry] = useState(null);
+    const [error, setError] = useState(null);
 
+// фетч запрос
     useEffect(() => {
-        fetch(`${import.meta.env.VITE_API_URL}/api/country/${countryPath}?lang=${lang}`)
-            .then(res => res.json())
-            .then(data => setCountry(data));
-    }, [countryPath, lang]);
+  if (!countryPath) return;
+  getCountry(countryPath, lang)
+  .then(setCountry)
+  .catch(err => setError(err.message))
+}, [countryPath, lang]);
 
     const langData = useMemo(() => {
         if (!country?.blocks) return {};
@@ -188,6 +194,9 @@ const Country = () => {
                 return null;
         }
     };
+
+    if (error) return <p>{error}</p>;
+    if (!country) return <div>{loadingCountry[lang]}</div>;
 
     // BreadCrumbs
     const nameBlock = country?.blocks?.find(
