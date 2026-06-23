@@ -8,7 +8,6 @@ app.use(express.json());
 
 // DB
 const mysql = require("mysql2/promise");
-require("dotenv").config();
 
 const db = mysql.createPool({
   host: process.env.DB_HOST,
@@ -603,6 +602,8 @@ app.get("/api/subregionCities/:subregionId", async (req, res) => {
 });
 
 // запуск сервера
-app.listen(3001, () => {
-  console.log("Server running on http://localhost:3001");
+const PORT = process.env.PORT || 3001;
+
+app.listen(PORT, () => {
+  console.log(`Server running on port ${PORT}`);
 });
