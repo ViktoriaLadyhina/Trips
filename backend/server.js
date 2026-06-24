@@ -1,4 +1,4 @@
-console.log("🔥 SERVER.JS IS RUNNING");
+console.log("🔥 FILE LOADED");
 const express = require("express");
 const cors = require("cors");
 require("dotenv").config();
@@ -24,16 +24,16 @@ app.use(express.json());
 // DB
 const mysql = require("mysql2/promise");
 
-const db = mysql.createPool({
-  host: process.env.DB_HOST,
-  user: process.env.DB_USER,
-  password: process.env.DB_PASSWORD,
-  database: process.env.DB_NAME,
-  port: Number(process.env.DB_PORT),
-  ssl: {
-    rejectUnauthorized: false
-  }
-});
+// const db = mysql.createPool({
+//   host: process.env.DB_HOST,
+//   user: process.env.DB_USER,
+//   password: process.env.DB_PASSWORD,
+//   database: process.env.DB_NAME,
+//   port: Number(process.env.DB_PORT),
+//   ssl: {
+//     rejectUnauthorized: false
+//   }
+// });
 
 db.query("SELECT 1")
   .then(() => console.log("DB CONNECTED"))
@@ -621,7 +621,9 @@ app.get("/api/subregionCities/:subregionId", async (req, res) => {
 });
 
 // запуск сервера
-const PORT = process.env.PORT || 3001;
+const PORT = process.env.PORT || 8080;
+
+console.log("🔥 BEFORE LISTEN");
 
 app.listen(PORT, "0.0.0.0", () => {
   console.log(`Server running on port ${PORT}`);
