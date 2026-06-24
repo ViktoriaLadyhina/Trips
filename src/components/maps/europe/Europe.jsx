@@ -4,6 +4,7 @@ import { useEffect, useState } from "react";
 
 import "../Maps.scss";
 import { cantries as mapEu, countryNames, countryCenters } from "./cantries.js";
+import { getCountries } from "../../../api/api.js";
 
 
 export default function EuropeMap() {
@@ -13,23 +14,17 @@ export default function EuropeMap() {
   const [hoverId, setHoverId] = useState(null);
   const [tooltipPos, setTooltipPos] = useState([0, 0]);
   const [countries, setCountries] = useState([]);
+  const [error, setError] = useState(null);
 
-  useEffect(() => {
-  const fetchCountries = async () => {
-    try {
-      const response = await fetch(
-        `${import.meta.env.VITE_API_URL}/api/countries?lang=${lang}`
-      );
+useEffect(() => {
+  setError(null);
 
-      const data = await response.json();
-
-      setCountries(data);
-    } catch (error) {
-      console.error(error);
-    }
-  };
-
-  fetchCountries();
+  getCountries(lang)
+    .then(data => { setCountries(data) })
+    .catch(error => {
+      console.error("Countries fetch error:", error);
+      setError(error.message);
+    });
 }, [lang]);
 
   // 👉 активные страны
@@ -42,6 +37,8 @@ export default function EuropeMap() {
   const getCountryName = (id) =>
     countryNames[id]?.[lang] || id;
 
+  if (error) return <p>{error}</p>;
+  
   return (
     <div className="map-container">
       <svg viewBox="0 0 1000 684" className="map-svg">

@@ -1,13 +1,25 @@
 const BASE_URL = import.meta.env.VITE_API_URL;
 
-const apiFetch = async (url, signal) => {
-  const response = await fetch(url, signal ? { signal } : {});
+console.log("API FILE LOADED");
+console.log(import.meta.env.VITE_API_URL);
+
+const apiFetch = async (url, options = {}) => {
+  console.log("🔥 apiFetch ENTER:", url);
+
+  const response = await fetch(url, options);
+
+  console.log("🔥 AFTER FETCH:", url);
 
   if (!response.ok) {
+    console.log("❌ BAD STATUS:", response.status);
     throw new Error(`HTTP error: ${response.status}`);
   }
 
-  return response.json();
+  const data = await response.json();
+
+  console.log("🔥 RESPONSE OK");
+
+  return data;
 };
 
 export const getCountries = (lang = "ru") =>
