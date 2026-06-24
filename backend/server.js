@@ -1,3 +1,4 @@
+console.log("🔥 SERVER.JS IS RUNNING");
 const express = require("express");
 const cors = require("cors");
 require("dotenv").config();
@@ -11,6 +12,11 @@ app.use(cors({
   methods: ["GET", "POST", "PUT", "DELETE", "OPTIONS"],
   allowedHeaders: ["Content-Type", "Authorization"]
 }));
+
+app.use((req, res, next) => {
+  console.log("➡️ REQUEST:", req.method, req.url);
+  next();
+});
 
 app.use(express.json());
 
@@ -36,6 +42,10 @@ db.query("SELECT 1")
 const getMeta = require("./services/getMeta");
 const getEntityPhotos = require("./services/getPhotos");
 const getBlocks = require("./services/getBlocks");
+
+app.get("/api/test", (req, res) => {
+  res.json({ ok: true });
+});
 
 // COUNTRY API
 app.get("/api/country/:path", async (req, res) => {
