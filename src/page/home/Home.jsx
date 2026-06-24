@@ -89,7 +89,7 @@ useEffect(() => {
 }, [lang]);
 
   const homeData = texts[lang];
-   if (error) return <p>{error}</p>;
+  if (error) return <p>{error}</p>;
 
   return (
     <div className="home">
