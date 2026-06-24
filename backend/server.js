@@ -1,10 +1,20 @@
 const express = require("express");
 const cors = require("cors");
 require("dotenv").config();
-
 const app = express();
+
+app.use(cors({
+  origin: [
+    "http://localhost:5173",
+    "https://your-frontend-domain.com"
+  ],
+  methods: ["GET", "POST", "PUT", "DELETE", "OPTIONS"],
+  allowedHeaders: ["Content-Type", "Authorization"]
+}));
+
 app.use(cors());
 app.use(express.json());
+
 
 // DB
 const mysql = require("mysql2/promise");
