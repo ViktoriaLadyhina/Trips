@@ -1,3 +1,7 @@
+console.log("🚨 FILE:", __filename);
+console.log("🚨 PID:", process.pid);
+console.log("🔥 VERSION CHECK 2026-06-25-NEW");
+
 const express = require("express");
 const cors = require("cors");
 require("dotenv").config();
@@ -13,18 +17,24 @@ app.use(cors({
   allowedHeaders: ["Content-Type", "Authorization"]
 }));
 
+
+
+app.use(express.json());
+
 app.use((req, res, next) => {
-  console.log("➡️ REQUEST:", req.method, req.url);
+  console.log("🔥 GLOBAL HIT");
   next();
 });
 
-app.use(express.json());
+app.get("/test", (req, res) => {
+  console.log("TEST HIT");
+  res.json({ ok: true });
+});
 
 
 // DB
 let db;
 
-if (process.env.DB_HOST) {
   const mysql = require("mysql2/promise");
 
   db = mysql.createPool({
@@ -36,19 +46,37 @@ if (process.env.DB_HOST) {
     ssl: { rejectUnauthorized: false }
   });
 
-db.query("SELECT 1")
-  .then(() => console.log("DB CONNECTED"))
-  .catch(err => {
-    console.log("DB ERROR FULL:", {
-      message: err.message,
-      code: err.code,
-      errno: err.errno,
-      address: err.address,
-      port: err.port,
-      errors: err.errors
-    });
-  });
+  console.log("🔥 SERVER FILE LOADED");
+
+// db.query("SELECT 1")
+//   .then(() => console.log("DB CONNECTED"))
+//   .catch(err => {
+//     console.log("DB ERROR FULL:", {
+//       message: err.message,
+//       code: err.code,
+//       errno: err.errno,
+//       address: err.address,
+//       port: err.port,
+//       errors: err.errors
+//     });
+//   });
+
+  if (!process.env.DB_HOST) {
+  throw new Error("DB_HOST is missing");
 }
+
+console.log("ENV CHECK:", {
+  host: process.env.DB_HOST,
+  user: process.env.DB_USER,
+  db: process.env.DB_NAME,
+  port: process.env.DB_PORT
+});
+
+db.query("SELECT DATABASE() AS db")
+  .then(([rows]) => {
+    console.log("ACTIVE DB:", rows[0]);
+  })
+  .catch(console.error);
 
 const getMeta = require("./services/getMeta");
 const getEntityPhotos = require("./services/getPhotos");
@@ -132,8 +160,10 @@ WHERE e.parent_id = ?
 
 // COUNTRY LIST API
 app.get("/api/countries", async (req, res) => {
+   console.log("🔥 COUNTRIES ROUTE HIT");
   try {
     const lang = req.query.lang || "ru";
+    console.log("req.query.lang - ", req.query.lang);
 
     const [rows] = await db.query(`
       SELECT
@@ -151,18 +181,22 @@ app.get("/api/countries", async (req, res) => {
 
     const countryIds = rows.map(r => r.id);
 
-    if (!countryIds.length) return res.json([]);
+    if (!Array.isArray(countryIds) || countryIds.length === 0) {
+  return res.json([]);
+}
+
+    const placeholders = countryIds.map(() => '?').join(',');
 
     const [photosRows] = await db.query(`
-SELECT
-  id,
-  entity_id,
-  path,
-  is_main
-FROM entity_photos
-WHERE entity_id IN (?)
-  AND is_main = 1
-    `, [countryIds]);
+  SELECT
+    id,
+    entity_id,
+    path,
+    is_main
+  FROM entity_photos
+  WHERE entity_id IN (${placeholders})
+    AND is_main = 1
+`, countryIds);
 
     // группируем фото по стране
     const photosMap = {};
@@ -187,12 +221,16 @@ WHERE entity_id IN (?)
     res.json(result);
 
   } catch (err) {
-  console.error("COUNTRIES ERROR:", err);
+  console.error("COUNTRIES ERROR FULL:", err);
+  console.error("STACK:", err.stack);
+  console.log("DB EXISTS:", !!db);
+console.log("DB TYPE:", typeof db);
 
   res.status(500).json({
     message: err.message,
     code: err.code,
-    sqlMessage: err.sqlMessage
+    sqlMessage: err.sqlMessage,
+    stack: err.stack
   });
 }
 });
