@@ -55,6 +55,8 @@ if (!process.env.DB_HOST) {
   console.log("❌ DB_HOST is missing (ENV NOT LOADED)");
 }
 
+console.log("ENV KEYS", process.env);
+
 db.query("SELECT DATABASE() AS db")
   .then(([rows]) => {
     console.log("ACTIVE DB:", rows[0]);
@@ -220,8 +222,6 @@ console.log("DB TYPE:", typeof db);
 
 // запуск сервера
 const PORT = process.env.PORT || 8080;
-
-console.log("🔥 BEFORE LISTEN");
 
 app.listen(PORT, "0.0.0.0", () => {
   console.log(`Server running on port ${PORT}`);
