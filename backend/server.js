@@ -40,25 +40,17 @@ let db;
     user: process.env.MYSQLUSER,
     password: process.env.MYSQLPASSWORD,
     database: process.env.MYSQL_DATABASE,
-    port: Number(process.env.MYSQLHOST),
+    port: Number(process.env.MYSQLPORT),
     ssl: { rejectUnauthorized: false }
   });
 
-console.log("ENV TEST:", {
-    host: process.env.MYSQLHOST,
-    user: process.env.MYSQLUSER,
-    password: process.env.MYSQLPASSWORD,
-    database: process.env.MYSQL_DATABASE,
-    port: Number(process.env.MYSQLHOST),
-});
 
 if (!process.env.MYSQLHOST) {
   console.log("❌ DB_HOST is missing (ENV NOT LOADED)");
 }
 
-console.log("DB_HOST RAW:", JSON.stringify(process.env.MYSQLHOST));
-console.log("ALL ENV KEYS COUNT:", Object.keys(process.env).length);
-// console.log("ENV KEYS", process.env);
+console.log("ENV KEYS:");
+console.log(Object.keys(process.env).sort());
 
 // db.query("SELECT DATABASE() AS db")
 //   .then(([rows]) => {
