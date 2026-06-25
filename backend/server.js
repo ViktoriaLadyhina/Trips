@@ -1,7 +1,3 @@
-console.log("🚨 FILE:", __filename);
-console.log("🚨 PID:", process.pid);
-console.log("🔥 VERSION CHECK 2026-06-25-NEW");
-
 const express = require("express");
 const cors = require("cors");
 require("dotenv").config();
@@ -19,15 +15,15 @@ app.use(cors({
 
 app.use(express.json());
 
-app.use((req, res, next) => {
-  console.log("🔥 GLOBAL HIT");
-  next();
-});
+// app.use((req, res, next) => {
+//   console.log("🔥 GLOBAL HIT");
+//   next();
+// });
 
-app.get("/test", (req, res) => {
-  console.log("TEST HIT");
-  res.json({ ok: true });
-});
+// app.get("/test", (req, res) => {
+//   console.log("TEST HIT");
+//   res.json({ ok: true });
+// });
 
 
 // DB
@@ -36,32 +32,35 @@ let db;
   const mysql = require("mysql2/promise");
 
   db = mysql.createPool({
-    host: process.env.DB_HOST,
-    user: process.env.DB_USER,
-    password: process.env.DB_PASSWORD,
-    database: process.env.DB_NAME,
-    port: Number(process.env.DB_PORT),
+    host: process.env.MYSQLHOST,
+    user: process.env.MYSQLUSER,
+    password: process.env.MYSQLPASSWORD,
+    database: process.env.MYSQL_DATABASE,
+    port: Number(process.env.MYSQLHOST),
     ssl: { rejectUnauthorized: false }
   });
 
 console.log("ENV TEST:", {
-  DB_HOST: process.env.DB_HOST,
-  DB_USER: process.env.DB_USER,
-  DB_NAME: process.env.DB_NAME,
-  DB_PORT: process.env.DB_PORT
+    host: process.env.MYSQLHOST,
+    user: process.env.MYSQLUSER,
+    password: process.env.MYSQLPASSWORD,
+    database: process.env.MYSQL_DATABASE,
+    port: Number(process.env.MYSQLHOST),
 });
 
-if (!process.env.DB_HOST) {
+if (!process.env.MYSQLHOST) {
   console.log("❌ DB_HOST is missing (ENV NOT LOADED)");
 }
 
+console.log("DB_HOST RAW:", JSON.stringify(process.env.MYSQLHOST));
+console.log("ALL ENV KEYS COUNT:", Object.keys(process.env).length);
 console.log("ENV KEYS", process.env);
 
-db.query("SELECT DATABASE() AS db")
-  .then(([rows]) => {
-    console.log("ACTIVE DB:", rows[0]);
-  })
-  .catch(console.error);
+// db.query("SELECT DATABASE() AS db")
+//   .then(([rows]) => {
+//     console.log("ACTIVE DB:", rows[0]);
+//   })
+//   .catch(console.error);
 
 const getMeta = require("./services/getMeta");
 const getEntityPhotos = require("./services/getPhotos");
