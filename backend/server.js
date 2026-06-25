@@ -15,15 +15,15 @@ app.use(cors({
 
 app.use(express.json());
 
-// app.use((req, res, next) => {
-//   console.log("🔥 GLOBAL HIT");
-//   next();
-// });
+app.use((req, res, next) => {
+  console.log("🔥 GLOBAL HIT");
+  next();
+});
 
-// app.get("/test", (req, res) => {
-//   console.log("TEST HIT");
-//   res.json({ ok: true });
-// });
+app.get("/test", (req, res) => {
+  console.log("TEST HIT");
+  res.json({ ok: true });
+});
 
 
 // DB
