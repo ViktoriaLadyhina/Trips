@@ -17,8 +17,6 @@ app.use(cors({
   allowedHeaders: ["Content-Type", "Authorization"]
 }));
 
-
-
 app.use(express.json());
 
 app.use((req, res, next) => {
@@ -46,31 +44,16 @@ let db;
     ssl: { rejectUnauthorized: false }
   });
 
-  console.log("🔥 SERVER FILE LOADED");
-
-// db.query("SELECT 1")
-//   .then(() => console.log("DB CONNECTED"))
-//   .catch(err => {
-//     console.log("DB ERROR FULL:", {
-//       message: err.message,
-//       code: err.code,
-//       errno: err.errno,
-//       address: err.address,
-//       port: err.port,
-//       errors: err.errors
-//     });
-//   });
-
-  if (!process.env.DB_HOST) {
-  throw new Error("DB_HOST is missing");
-}
-
-console.log("ENV CHECK:", {
-  host: process.env.DB_HOST,
-  user: process.env.DB_USER,
-  db: process.env.DB_NAME,
-  port: process.env.DB_PORT
+console.log("ENV TEST:", {
+  DB_HOST: process.env.DB_HOST,
+  DB_USER: process.env.DB_USER,
+  DB_NAME: process.env.DB_NAME,
+  DB_PORT: process.env.DB_PORT
 });
+
+if (!process.env.DB_HOST) {
+  console.log("❌ DB_HOST is missing (ENV NOT LOADED)");
+}
 
 db.query("SELECT DATABASE() AS db")
   .then(([rows]) => {
