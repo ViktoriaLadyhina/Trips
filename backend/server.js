@@ -48,6 +48,7 @@ db.query("SELECT 1")
       errors: err.errors
     });
   });
+}
 
 const getMeta = require("./services/getMeta");
 const getEntityPhotos = require("./services/getPhotos");
@@ -203,4 +204,4 @@ console.log("🔥 BEFORE LISTEN");
 
 app.listen(PORT, "0.0.0.0", () => {
   console.log(`Server running on port ${PORT}`);
-});
+})
