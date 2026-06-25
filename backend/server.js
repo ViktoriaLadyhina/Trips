@@ -1,6 +1,10 @@
 const express = require("express");
 const cors = require("cors");
-require("dotenv").config();
+const dotenv = require("dotenv");
+
+const result = dotenv.config();
+
+console.log("DOTENV RESULT:", result);
 
 const app = express();
 
@@ -54,7 +58,7 @@ if (!process.env.MYSQLHOST) {
 
 console.log("DB_HOST RAW:", JSON.stringify(process.env.MYSQLHOST));
 console.log("ALL ENV KEYS COUNT:", Object.keys(process.env).length);
-console.log("ENV KEYS", process.env);
+// console.log("ENV KEYS", process.env);
 
 // db.query("SELECT DATABASE() AS db")
 //   .then(([rows]) => {
