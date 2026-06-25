@@ -1,14 +1,6 @@
-console.log("🔥 FILE LOADED");
-
 const express = require("express");
 const cors = require("cors");
 require("dotenv").config();
-
-console.log("ENV TEST", {
-  host: process.env.DB_HOST,
-  user: process.env.DB_USER,
-  password: process.env.DB_PASSWORD
-});
 
 const app = express();
 
@@ -44,10 +36,18 @@ if (process.env.DB_HOST) {
     ssl: { rejectUnauthorized: false }
   });
 
-  db.query("SELECT 1")
-    .then(() => console.log("DB CONNECTED"))
-    .catch(err => console.log("DB ERROR", err));
-}
+db.query("SELECT 1")
+  .then(() => console.log("DB CONNECTED"))
+  .catch(err => {
+    console.log("DB ERROR FULL:", {
+      message: err.message,
+      code: err.code,
+      errno: err.errno,
+      address: err.address,
+      port: err.port,
+      errors: err.errors
+    });
+  });
 
 const getMeta = require("./services/getMeta");
 const getEntityPhotos = require("./services/getPhotos");
