@@ -17,17 +17,6 @@ app.use(cors({
 
 app.use(express.json());
 
-app.use((req, res, next) => {
-  console.log("🔥 GLOBAL HIT");
-  next();
-});
-
-app.get("/ping", (req, res) => {
-  console.log("PING HIT");
-  res.send("ok");
-});
-
-
 // DB
 let db;
 
@@ -37,9 +26,43 @@ let db;
     host: process.env.MYSQLHOST,
     user: process.env.MYSQLUSER,
     password: process.env.MYSQLPASSWORD,
-    database: process.env.MYSQL_DATABASE,
+    database: process.env.MYSQLDATABASE,
     port: Number(process.env.MYSQLPORT)
   });
+
+  // ------------- Проверка ----------
+  app.use((req, res, next) => {
+  console.log("🔥 GLOBAL HIT");
+  next();
+});
+
+app.get("/db-check", async (req, res) => {
+  try {
+    const [result] = await db.query("SELECT 1 AS ok");
+    console.log("DB CHECK RESULT:", result);
+
+    res.json({
+      status: "connected",
+      result
+    });
+  } catch (err) {
+    console.log("DB CHECK FAILED:", err);
+
+    res.status(500).json({
+      status: "failed",
+      message: err.message,
+      code: err.code
+    });
+  }
+});
+
+
+  console.log("DB ENV:", {
+  host: process.env.MYSQLHOST,
+  user: process.env.MYSQLUSER,
+  db: process.env.MYSQLDATABASE,
+  port: process.env.MYSQLPORT
+});
 
 
 const getMeta = require("./services/getMeta");
@@ -200,8 +223,8 @@ console.log("DB TYPE:", typeof db);
 });
 
 // запуск сервера
-const PORT = process.env.PORT;
-console.log("ENV PORT =", process.env.PORT);
+const PORT = process.env.PORT || 8080;
+console.log("ENV PORT =", PORT);
 app.listen(PORT, "0.0.0.0", () => {
   console.log(`Server running on port ${PORT}`);
 })
