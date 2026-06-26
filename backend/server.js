@@ -1,10 +1,8 @@
 const express = require("express");
 const cors = require("cors");
-const dotenv = require("dotenv");
-
-const result = dotenv.config();
-
-console.log("DOTENV RESULT:", result);
+if (!process.env.RAILWAY_ENVIRONMENT) {
+  require("dotenv").config();
+}
 
 const app = express();
 
@@ -24,9 +22,9 @@ app.use((req, res, next) => {
   next();
 });
 
-app.get("/test", (req, res) => {
-  console.log("TEST HIT");
-  res.json({ ok: true });
+app.get("/ping", (req, res) => {
+  console.log("PING HIT");
+  res.send("ok");
 });
 
 
@@ -40,23 +38,9 @@ let db;
     user: process.env.MYSQLUSER,
     password: process.env.MYSQLPASSWORD,
     database: process.env.MYSQL_DATABASE,
-    port: Number(process.env.MYSQLPORT),
-    ssl: { rejectUnauthorized: false }
+    port: Number(process.env.MYSQLPORT)
   });
 
-
-if (!process.env.MYSQLHOST) {
-  console.log("❌ DB_HOST is missing (ENV NOT LOADED)");
-}
-
-console.log("ENV KEYS:");
-console.log(Object.keys(process.env).sort());
-
-// db.query("SELECT DATABASE() AS db")
-//   .then(([rows]) => {
-//     console.log("ACTIVE DB:", rows[0]);
-//   })
-//   .catch(console.error);
 
 const getMeta = require("./services/getMeta");
 const getEntityPhotos = require("./services/getPhotos");
@@ -216,8 +200,8 @@ console.log("DB TYPE:", typeof db);
 });
 
 // запуск сервера
-const PORT = process.env.PORT || 8080;
-
+const PORT = process.env.PORT;
+console.log("ENV PORT =", process.env.PORT);
 app.listen(PORT, "0.0.0.0", () => {
   console.log(`Server running on port ${PORT}`);
 })
