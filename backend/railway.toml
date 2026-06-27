@@ -1,5 +1,0 @@
-toml[build]
-builder = "Nixpacks"
-
-[deploy]
-startCommand = "node server.js"
