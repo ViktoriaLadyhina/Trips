@@ -36,26 +36,6 @@ let db;
   next();
 });
 
-app.get("/db-check", async (req, res) => {
-  try {
-    const [result] = await db.query("SELECT 1 AS ok");
-    console.log("DB CHECK RESULT:", result);
-
-    res.json({
-      status: "connected",
-      result
-    });
-  } catch (err) {
-    console.log("DB CHECK FAILED:", err);
-
-    res.status(500).json({
-      status: "failed",
-      message: err.message,
-      code: err.code
-    });
-  }
-});
-
 
   console.log("DB ENV:", {
   host: process.env.MYSQLHOST,
