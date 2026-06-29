@@ -11,19 +11,21 @@
 
     &__map {
         max-width: 1000px;
-        margin: 0 auto; // центрируем блок
-        display: block; // чтобы SVG растягивался нормально
+        margin: 0 auto; 
+        display: block; 
     }
 
     &__photo {
       max-width: 250px;
       float: right;
-      padding: 8px;
+      margin: 8px;
+      border-radius: 8px;
 
       img {
         width: 100%;
         height: auto;
         display: block;
+        object-fit: cover;
       }
 
     }

@@ -38,7 +38,7 @@ useEffect(() => {
     countryNames[id]?.[lang] || id;
 
   if (error) return <p>{error}</p>;
-  
+
   return (
     <div className="map-container">
       <svg viewBox="0 0 1000 684" className="map-svg">

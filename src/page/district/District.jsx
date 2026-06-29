@@ -1,4 +1,4 @@
-import { useEffect, useMemo, useRef, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import { useParams } from "react-router";
 import { Helmet } from "react-helmet-async";
 import BreadCrumbs from '../../components/breadCrumbs/BreadCrumbs.jsx';
@@ -10,11 +10,15 @@ import CountryMap from '../../components/maps/CountryMap.jsx';
 import BtnAttr from "../../components/btn-attr/BtnAttr.jsx";
 import { useSelector } from "react-redux";
 import datas from '../../datas/minimalIndex.js'
-import { toFullUrl, fixHtmlImages } from "../../utils/photo.js";
+import { toFullUrl } from "../../utils/photo.js";
 import { getDistrict, getMapCities, getSubregions } from "../../api/api.js";
+import { getEntityName, prepareEntityBlocks } from "../../utils/entityHelpers.js";
+import { TextBlock } from "../../components/renders/TextBlock.jsx";
+import { PhotoBlock } from "../../components/renders/PhotoBlock.jsx";
+import { MapBlock } from "../../components/renders/MapBlock.jsx";
 
 const BASE_PHOTO_URL = import.meta.env.VITE_BASE_PHOTO_URL;
-const loadingDistrict = { ru: "Загрузка района...",  de: "Region wird geladen...", uk: "Завантаження району..." };
+const loadingDistrict = { ru: "Загрузка района...", de: "Region wird geladen...", uk: "Завантаження району..." };
 
 const District = () => {
   const { countryPath, regionPath, districtPath } = useParams();
@@ -27,42 +31,47 @@ const District = () => {
   const [loading, setLoading] = useState(false);
 
   const meta = district?.meta;
+  const { blocks, langData } = prepareEntityBlocks(district?.blocks);
 
   const subRegionRefs = useRef({});
 
-useEffect(() => {
-  if (!districtPath || !regionPath) return;
+  useEffect(() => {
+    if (!districtPath || !regionPath) return;
 
-  const controller = new AbortController();
+    const controller = new AbortController();
 
-  const fetchData = async () => {
-    try {
-      setError(null);
-      setLoading(true);
+    const fetchData = async () => {
+      try {
+        setError(null);
+        setLoading(true);
 
-      const [districtData, citiesData, subRegionsData] =
-        await Promise.all([
-          getDistrict(districtPath, lang, controller.signal),
-          getMapCities(regionPath, lang, controller.signal),
-          getSubregions(districtPath, lang, controller.signal),
-        ]);
+        const [districtData, citiesData, subRegionsData] =
+          await Promise.all([
+            getDistrict(districtPath, lang, controller.signal),
+            getMapCities(regionPath, lang, controller.signal),
+            getSubregions(districtPath, lang, controller.signal),
+          ]);
 
-      setDistrict(districtData);
-      setCities(citiesData?.cities || []);
-      setSubRegions(subRegionsData || []);
-    } catch (err) {
-      if (err.name !== "AbortError") {
-        setError(err.message);
+        setDistrict(districtData);
+        setCities(citiesData?.cities || []);
+        setSubRegions(subRegionsData || []);
+      } catch (err) {
+        if (err.name !== "AbortError") {
+          setError(err.message);
+        }
+      } finally {
+        setLoading(false);
       }
-    } finally {
-      setLoading(false);
-    }
-  };
+    };
 
-  fetchData();
+    fetchData();
 
-  return () => controller.abort();
-}, [districtPath, regionPath, lang]);
+    return () => controller.abort();
+  }, [districtPath, regionPath, lang]);
+
+  if (error) return <p>{error}</p>;
+  if (!district) return <p>{loadingDistrict[lang]}</p>;
+  if (loading) return <div>Loading...</div>;
 
   // Функция клика по субрегиону
   const scrollToSubRegion = (reg) => {
@@ -74,92 +83,52 @@ useEffect(() => {
     });
   };
 
-  const blocks = useMemo(() => {
-    return (district?.blocks || [])
-      .slice()
-      .sort((a, b) => a.sort_order - b.sort_order);
-  }, [district]);
-
-  const langData = useMemo(() => {
-    if (!district?.blocks) return {};
-
-    return district.blocks.reduce((acc, b) => {
-      acc[b.block_key] = b.content;
-      return acc;
-    }, {});
-  }, [district]);
-
-  const sortedSubRegion = useMemo(() => {
-    if (!subRegions?.length) return [];
-
-    const getRegionName = (region) => {
-      return (
-        region.blocks?.find(
-          (block) => block.block_key === "name"
-        )?.content || ""
-      );
-    };
-
-    return [...subRegions].sort((a, b) =>
-      getRegionName(a).localeCompare(getRegionName(b))
+  const sortedSubRegion = [...(subRegions || [])]
+    .sort((a, b) =>
+      getEntityName(a).localeCompare(getEntityName(b))
     );
-  }, [subRegions]);
+
+  const mapData = {
+    districtPath,
+    district,
+    subRegions,
+    cities,
+    scrollToSubRegion
+  };
+
+  const photo = district?.mainPhoto;
+
+  const context = {
+    lang,
+    langData,
+    countryPath, regionPath,
+    mapRegions: mapData,
+    photo,
+    path: `/${countryPath}/${regionPath}/${districtPath}/attractions`,
+    classPrefix: "district",
+    className: "district__photo"
+  };
+
+  const blockRegistry = {
+    name: TextBlock,
+    capital: TextBlock,
+    geography: TextBlock,
+    population: TextBlock,
+    area: TextBlock,
+    cities: TextBlock,
+    districts: TextBlock,
+
+    photo: PhotoBlock,
+
+    map: MapBlock
+  };
 
   const renderBlock = (block) => {
-    switch (block.block_key) {
+    const Renderer = blockRegistry[block.block_key];
 
-      // ===== TEXT BLOCKS =====
-      case "name":
-      case "capital":
-      case "geography":
-      case "area":
-      case "cities":
-      case "districts":
-      case "population":
-        return langData?.[block.block_key] ? (
-          <section
-            className={`district__${block.block_key}`}
-            dangerouslySetInnerHTML={{
-              __html: fixHtmlImages(langData[block.block_key])
-            }}
-          />
-        ) : null;
+    if (!Renderer) return null;
 
-      // ===== MAP =====
-      case "map":
-
-        return (
-          <div className='district__map'>
-            <CountryMap
-              countryKey={countryPath}
-              regionKey={regionPath}
-              districtKey={districtPath}
-              regions={district}
-              subRegion={subRegions}
-              cities={cities}
-              scrollToSubRegion={scrollToSubRegion}
-            />
-          </div>
-        );
-
-      // ===== PHOTO =====
-      case "photo": {
-        const photo = district.mainPhoto;
-
-        if (!photo) return null;
-
-        return (
-          <img
-            src={`${BASE_PHOTO_URL}${photo.path}`}
-            className="district__photo"
-            alt={photo.title?.[lang] || ""}
-          />
-        );
-      }
-
-      default:
-        return null;
-    }
+    return <Renderer block={block} {...context} />;
   };
 
   if (error) return <p>{error}</p>;
