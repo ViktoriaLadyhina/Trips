@@ -16,18 +16,7 @@ app.use(cors({
 
 app.use(express.json());
 
-// DB
-let db;
-
-  const mysql = require("mysql2/promise");
-
-  db = mysql.createPool({
-    host: process.env.MYSQLHOST,
-    user: process.env.MYSQLUSER,
-    password: process.env.MYSQLPASSWORD,
-    database: process.env.MYSQLDATABASE,
-    port: Number(process.env.MYSQLPORT)
-  });
+const db = require("../db");
 
 const searchMysql = require("./routes/searchMysql.js");  
 
