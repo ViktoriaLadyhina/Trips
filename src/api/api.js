@@ -23,13 +23,16 @@ export const getRegion = (path, lang = "ru") =>
   apiFetch(`${BASE_URL}/api/region/${path}?lang=${lang}`);
 
 export const getDistrict = (path, lang = "ru", signal) =>
-  apiFetch(`${BASE_URL}/api/district/${path}?lang=${lang}`, signal);
+  apiFetch(`${BASE_URL}/api/district/${path}?lang=${lang}`, { signal });
 
 export const getMapCities = (path, lang = "ru", signal) =>
-  apiFetch(`${BASE_URL}/api/map/cities/${path}?lang=${lang}`, signal);
+  apiFetch(`${BASE_URL}/api/map/cities/${path}?lang=${lang}`, { signal });
 
 export const getSubregions = (path, lang = "ru", signal) =>
-  apiFetch(`${BASE_URL}/api/subregions/${path}?lang=${lang}`, signal);
+  apiFetch(`${BASE_URL}/api/subregions/${path}?lang=${lang}`, { signal });
 
 export const getSubregionCities = (subregionId, lang = "ru") =>
   apiFetch(`${BASE_URL}/api/subregionCities/${subregionId}?lang=${lang}`);
+
+export const getMysqlSearch = (lang = "ru") =>
+  apiFetch(`${BASE_URL}/api/search/mysql?lang=${lang}`);

@@ -1,58 +1,43 @@
+export function adaptItem(item, lang) {
+  if (!item) return null;
 
-// -------------------------
-// нормализация текста
-// -------------------------
-// -------------------------
-// нормализация текста + стемминг для русского
-// -------------------------
-export const normalize = str => {
-  if (!str) return "";
+  const base = {
+    id: item.id,
 
-  // приведение к нижнему регистру, удаление HTML, спецсимволов, лишних пробелов
-  let text = str
-    .toLowerCase()
-    .replace(/<[^>]*>/g, "")
-    .replace(/ё/g, "е")
-    .replace(/ä/g, "a")
-    .replace(/ö/g, "o")
-    .replace(/ü/g, "u")
-    .replace(/\s+/g, " ")
-    .trim();
+    name: "",
+    description: "",
+    keywords: "",
 
-  // простейший стемминг для русского языка (удаляем окончания)
-  const stemWord = word =>
-    word.replace(/(ы|и|а|е|у|ой|ей|ий|ой|ах|ях|ов|ев|ами|ями)$/i, '');
+    path: item.path,
+    rating: item.rating || null,
 
-  return text
-    .split(" ")
-    .map(stemWord)
-    .join(" ");
-};
+    countryPath: item.countryPath,
+    regionPath: item.regionPath,
+    districtPath: item.districtPath,
+    cityPath: item.cityPath,
+  };
 
-function levenshtein(a, b) {
-  const matrix = [];
-  for (let i = 0; i <= b.length; i++) matrix[i] = [i];
-  for (let j = 0; j <= a.length; j++) matrix[0][j] = j;
+  // 1. NEW FORMAT (translations)
+  if (item.translations) {
+    const t = item.translations?.[lang] || {};
 
-  for (let i = 1; i <= b.length; i++) {
-    for (let j = 1; j <= a.length; j++) {
-      if (b[i - 1] === a[j - 1]) matrix[i][j] = matrix[i - 1][j - 1];
-      else
-        matrix[i][j] = Math.min(
-          matrix[i - 1][j - 1] + 1,
-          matrix[i][j - 1] + 1,
-          matrix[i - 1][j] + 1
-        );
-    }
+    return {
+      ...base,
+      name: t.name || item.name,
+      description: t.meta?.description || "",
+      keywords: t.meta?.keywords || "",
+    };
   }
-  return matrix[b.length][a.length];
-}
 
-function isSimilar(a, b) {
-  if (a.length < 4) return false;
-  const distance = levenshtein(a, b);
-  const maxLen = Math.max(a.length, b.length);
-  return distance <= Math.max(1, Math.floor(maxLen * 0.1));
+  // 2. OLD FORMAT (langKey objects)
+  if (item[lang]) {
+    return {
+      ...base,
+      name: item[lang]?.name || item.name,
+      description: item[lang]?.meta?.description || "",
+      keywords: item[lang]?.meta?.keywords || "",
+    };
+  }
 }
 
 // -------------------------
@@ -81,193 +66,143 @@ function getSearchText(item, lang = "ru") {
   return normalize(text);
 }
 
-// -------------------------
+export const normalize = str => {
+  if (!str) return "";
+
+  // приведение к нижнему регистру, удаление HTML, спецсимволов, лишних пробелов
+  let text = str
+    .toLowerCase()
+    .replace(/<[^>]*>/g, "")
+    .replace(/ё/g, "е")
+    .replace(/ä/g, "a")
+    .replace(/ö/g, "o")
+    .replace(/ü/g, "u")
+    .replace(/\s+/g, " ")
+    .trim();
+
+  // простейший стемминг для русского языка (удаляем окончания)
+  const stemWord = word =>
+    word.replace(/(ы|и|а|е|у|ой|ей|ий|ой|ах|ях|ов|ев|ами|ями)$/i, '');
+
+  return text
+    .split(" ")
+    .map(stemWord)
+    .join(" ");
+};
+
 // плоский индекс для поиска
-// -------------------------
-export function buildSearchIndex(data, lang) {
+export async function buildSearchIndex(searchIndex, lang) {
   const flat = [];
-  const usedIds = new Set();
+  const used = new Set();
 
-  function push(item, type, urlBuilder) {
+  function push(item, type) {
+    const base = adaptItem(item, lang);
+    if (!base) return;
 
-    if (!item) return;
-    const key = `${type}_${item.id || item.path}`;
-    if (usedIds.has(key)) return;   // ← вот это главное
-    usedIds.add(key);
+    const key = `${type}_${base.id || base.path}`;
+    if (used.has(key)) return;
+    used.add(key);
 
     const searchText = getSearchText(item, lang);
 
     flat.push({
-      ...item,
+      ...base,
       type,
-      searchText,
-      searchName: normalize(item.translations?.[lang]?.name || item.name),
-      url: urlBuilder ? urlBuilder() : "#",
-      rating: item.rating || null
+      searchText
     });
   }
 
-  function pushOld(item, type, urlBuilder, langKey) {
-    const searchText = getSearchText(item, langKey);
-    flat.push({
-      ...item,
-      type,
-      searchText,
-      // берём name/meta напрямую из объекта языка
-      searchName: normalize(
-        item[langKey]?.name || item[langKey]?.meta?.title || item.name
-      ),
-      url: urlBuilder ? urlBuilder() : "#",
-      rating: item.rating || null
-    });
+  async function walk(obj) {
+    for (const value of Object.values(obj)) {
+
+      // 1. loader-узел
+      if (value?.loaders) {
+        const items = await value.loaders();
+
+        if (Array.isArray(items)) {
+          items.forEach(item =>
+            push(item, value.type)
+          );
+        }
+
+        continue;
+      }
+
+      // 2. вложенный объект
+      if (value && typeof value === "object") {
+        await walk(value);
+      }
+    }
   }
 
-  // страны
-  Object.values(data.country || {}).forEach(c =>
-    push(c, "country", () => `/${c.path}`)
-  );
-
-  // регионы и города
-  Object.keys(data).forEach(countryKey => {
-    if (["country", "de", "ru", "ua"].includes(countryKey)) return;
-
-    const countryObj = data[countryKey];
-    // регион
-    Object.keys(countryObj).forEach(regionKey => {
-      const region = countryObj[regionKey];
-      if (!region) return;
-
-      if (data[countryKey].land) {
-        data[countryKey].land.forEach(land => {
-          push(land, "region", () => "/" + [countryKey, land.path].filter(Boolean).join("/"))
-        });
-      }
-
-      // маршруты
-      if (data[countryKey].routes) {
-        data[countryKey].routes.forEach(routes => {
-          push(routes, "routes", () => "/" + [countryKey, "routes", routes.path].filter(Boolean).join("/"))
-        });
-      }
-
-      // города
-      (region.city || []).forEach(city =>
-        push(city, "city", () => "/" + [countryKey, regionKey, city.districtPath, city.path].filter(Boolean).join("/"))
-      );
-
-      // округа
-      (region.districts || []).forEach(district =>
-        push(district, "district", () => `/${countryKey}/${regionKey}/${district.path}`)
-      );
-
-      // субрегионы
-      (region.subRegions || []).forEach(sub =>
-        push(sub, "subRegion", () => "/" + [countryKey, regionKey, sub.districtPath].filter(Boolean).join("/"))
-      );
-
-      // достопримечательности новые
-      (region.attractions || []).forEach(attr =>
-        push(attr, "attraction", () => "/" +
-          [
-            attr.countryPath || countryKey,
-            attr.regionPath || regionKey,
-            attr.districtPath,
-            attr.cityPath,
-            "attractions",
-            attr.path
-          ].filter(Boolean).join("/")
-        )
-      );
-
-      // события
-      (region.events || []).forEach(e =>
-        push(e, "event", () =>
-          "/" + [countryKey, regionKey, e.districtPath, e.cityPath, "events", e.path].filter(Boolean).join("/")
-        )
-      );
-    });
-  });
-
-  // старые аттракции (de, ru, ua)
-  ["de", "ru", "ua"].forEach(langKey => {
-    if (langKey !== lang) return;
-    const langData = data[langKey];
-    if (!langData) return;
-    Object.keys(langData).forEach(countryKey => {
-      Object.keys(langData[countryKey] || {}).forEach(regionKey => {
-        (langData[countryKey][regionKey]?.attractions || []).forEach(attr =>
-
-          pushOld(attr, "attraction", () =>
-            "/" + [countryKey, regionKey, attr.districtPath, attr.cityPath, "attractions", attr.path].filter(Boolean).join("/")
-          )
-        );
-      });
-    });
-  });
-
+  await walk(searchIndex);
 
   return flat;
 }
 
-const TYPE_SCORE = {
-  country: 100,
-  region: 90,
-  city: 80,
-  district: 70,
-  subRegion: 60,
-  attraction: 50,
-  event: 40,
-  routes: 40
-};
-
-// -------------------------
 // поиск
-// -------------------------
-// -------------------------
-// поиск с разбиением запроса на слова
-// -------------------------
 export function searchStatic(query, flatIndex) {
   if (!query || !flatIndex?.length) return [];
 
-  const queryWords = normalize(query).split(" "); // разбиваем запрос на слова
-
-  const results = flatIndex
-    .map(item => {
-      if (!item?.searchText) return null;
-
-      const itemWords = item.searchText.split(" ");
-      const itemNameWords = item.searchName.split(" ");
-
-      // проверка: каждый корень слова из запроса должен найтись хотя бы в одном слове объекта
-      const matches = queryWords.every(qw =>
-        itemWords.some(w => w.startsWith(qw)) ||
-        itemNameWords.some(w => w.startsWith(qw)) ||
-        (qw.length >= 4 && (isSimilar(qw, itemWords.join(" ")) || isSimilar(qw, itemNameWords.join(" "))))
-      );
-
-      if (!matches) return null;
-
-      // базовый score по типу
-      let score = TYPE_SCORE[item.type] || 0;
-
-      // если аттракция, добавляем рейтинг
-      if (item.type === "attraction") {
-        const ratingOrder = { top: 3, popular: 2, local: 1 };
-        score += ratingOrder[item.rating] || 0;
-      }
-
-      return { ...item, score };
-    })
+  const queryWords = normalize(query)
+    .split(" ")
     .filter(Boolean);
 
-  // сортировка: аттракции по рейтингу, остальные по score
-  results.sort((a, b) => {
-    if (a.type === "attraction" && b.type === "attraction") {
-      const ratingOrder = { top: 3, popular: 2, local: 1 };
-      return (ratingOrder[b.rating] || 0) - (ratingOrder[a.rating] || 0);
-    }
-    return b.score - a.score;
-  });
+  const results = [];
 
-  return results;
+  for (const item of flatIndex) {
+    if (!item) continue;
+
+    const text = item.searchText || "";
+    if (!text) continue;
+
+    const itemWords = text.split(" ");
+
+    // 1. проверка совпадения
+    const matches = queryWords.every(qw => {
+      if (!qw) return false;
+
+      return itemWords.some(w => w.startsWith(qw));
+    });
+
+    if (!matches) continue;
+
+    // 2. базовый скор
+    let score = 0;
+
+    // приоритет по типу (ВАЖНО: type должен приходить из searchIndex context)
+    const TYPE_SCORE = {
+      country: 100,
+      region: 90,
+      city: 80,
+      district: 70,
+      attraction: 50,
+      event: 40,
+      routes: 30
+    };
+
+    score += TYPE_SCORE[item.type] || 0;
+
+    // 3. усиление за совпадение в названии
+    const name = (item.name || "").toLowerCase();
+    const normalizedQuery = normalize(query);
+
+    if (name.includes(normalizedQuery)) {
+      score += 20;
+    }
+
+    // 4. бонус за точное совпадение слова
+    for (const qw of queryWords) {
+      if (itemWords.includes(qw)) {
+        score += 5;
+      }
+    }
+
+    results.push({
+      ...item,
+      score
+    });
+  }
+
+  return results.sort((a, b) => b.score - a.score);
 }

@@ -9,10 +9,9 @@ const app = express();
 app.use(cors({
   origin: [
     "http://localhost:5173",
-    "https://your-frontend-domain.com"
+    "https://our-travels.info"
   ],
-  methods: ["GET", "POST", "PUT", "DELETE", "OPTIONS"],
-  allowedHeaders: ["Content-Type", "Authorization"]
+  methods: ["GET", "POST"]
 }));
 
 app.use(express.json());
@@ -30,19 +29,13 @@ let db;
     port: Number(process.env.MYSQLPORT)
   });
 
-  // ------------- Проверка ----------
-
-  console.log("DB ENV:", {
-  host: process.env.MYSQLHOST,
-  user: process.env.MYSQLUSER,
-  db: process.env.MYSQLDATABASE,
-  port: process.env.MYSQLPORT
-});
-
+const searchMysql = require("./routes/searchMysql.js");  
 
 const getMeta = require("./services/getMeta");
 const getEntityPhotos = require("./services/getPhotos");
 const getBlocks = require("./services/getBlocks");
+
+
 
 // COUNTRY LIST API
 app.get("/api/countries", async (req, res) => {
@@ -630,9 +623,12 @@ app.get("/api/subregionCities/:subregionId", async (req, res) => {
   }
 });
 
+// SEARCH API 
+app.use("/api/search", searchMysql);
+
 // запуск сервера
 const PORT = process.env.PORT || 8080;
-console.log("ENV PORT =", PORT);
+
 app.listen(PORT, "0.0.0.0", () => {
   console.log(`Server running on port ${PORT}`);
 })
