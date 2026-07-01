@@ -1,5 +1,6 @@
 const express = require("express");
 const db = require("../db");
+const { normalize } = require("../../src/components/search/searchUtils");
 
 const router = express.Router();
 
@@ -16,16 +17,21 @@ router.get("/mysql", async (req, res) => {
         e.parent_id,
         c.content as name,
         m.title,
-        m.description
+        m.description,
+        m.keywords,
+        m.og_description
       FROM entities e
+
       LEFT JOIN content c
-        ON c.entity_id = e.id
-        AND c.block_key = 'name'
+      ON c.entity_id = e.id
+      AND c.block_key = 'name'
+      AND c.language = ?
+
       LEFT JOIN entity_meta m
-        ON m.entity_id = e.id
-      WHERE
-        c.language = ?
-        AND m.language = ?
+      ON m.entity_id = e.id
+      AND m.language = ?
+
+      WHERE e.is_active = 1
       `,
       [lang, lang]
     );
@@ -75,15 +81,23 @@ router.get("/mysql", async (req, res) => {
     const mysqlIndex = rows.map(item => {
       const paths = buildPaths(item);
 
+      const searchText = normalize(`
+    ${item.name || ""}
+    ${item.title || ""}
+    ${item.description || ""}
+    ${item.keywords || ""}
+    ${item.og_description || ""}
+  `);
+
       return {
         id: item.id,
         type: item.type,
-        name: item.name || "",
-        description: item.description || item.title || "",
+        name: item.name || item.title || "",
+        description: item.description || item.og_description || "",
+        keywords: item.keywords || "",
         path: item.path,
-
+        searchText,
         ...paths,
-
         source: "mysql"
       };
     });

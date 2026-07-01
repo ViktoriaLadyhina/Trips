@@ -1,13 +1,16 @@
-import { useEffect, useState } from "react";
+import { useEffect, useMemo, useState } from "react";
 import { Link, useLocation } from "react-router-dom";
 import { useSelector } from "react-redux";
-import { searchStatic } from "../../components/search/searchUtils.js";
+
 import { getSearchIndex } from "../../components/search/searchService.js";
-import BreadCrumbs from '../../components/breadCrumbs/BreadCrumbs.jsx';
-import './SearchPage.scss';
+import { searchStatic } from "../../components/search/searchStatic.js";
+
+import BreadCrumbs from "../../components/breadCrumbs/BreadCrumbs.jsx";
 import { Helmet } from "react-helmet-async";
 import { buildUrl } from "../../components/search/buildUrl.js";
 import { getMysqlSearch } from "../../api/api.js";
+
+import "./SearchPage.scss";
 
 const searchResultsText = { ru: "Результаты поиска", uk: "Результати пошуку", de: "Suchergebnisse" };
 const noResultsText = { ru: "По вашему запросу ничего не найдено.", uk: "За вашим запитом нічого не знайдено.", de: "Für Ihre Suche wurden keine Ergebnisse gefunden."};
@@ -15,41 +18,54 @@ const noResultsText = { ru: "По вашему запросу ничего не 
 const SearchPage = () => {
   const { lang } = useSelector(state => state.language);
   const location = useLocation();
-  const query = new URLSearchParams(location.search).get("query") || "";
+
+  const query =
+    new URLSearchParams(location.search).get("query") || "";
 
   const [flatIndex, setFlatIndex] = useState([]);
-
-useEffect(() => {
-  let alive = true;
-
-  const load = async () => {
-    const [staticIndex, mysqlData] = await Promise.all([
-      getSearchIndex(lang),
-      getMysqlSearch(lang)
-    ]);
-
-    if (!alive) return;
-
-    const mysqlIndex = mysqlData.results || [];
-
-    setFlatIndex([
-      ...staticIndex,
-      ...mysqlIndex
-    ]);
-  };
-
-  load();
-
-  return () => {
-    alive = false;
-  };
-}, [lang]);
-
-  const results = query ? searchStatic(query, flatIndex) : [];
+  const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-    document.title = searchResultsText[lang];
+    let alive = true;
+
+    const load = async () => {
+      try {
+        setLoading(true);
+
+        const [staticIndex, mysqlData] = await Promise.all([
+          getSearchIndex(lang),
+          getMysqlSearch(lang)
+        ]);
+
+        if (!alive) return;
+
+        const mysqlIndex = mysqlData?.results || [];
+
+        setFlatIndex([
+          ...staticIndex,
+          ...mysqlIndex
+        ]);
+
+      } catch (error) {
+        console.error(error);
+      } finally {
+        if (alive) setLoading(false);
+      }
+    };
+
+    load();
+
+    return () => {
+      alive = false;
+    };
   }, [lang]);
+
+  const results = useMemo(() => {
+    if (!query || !flatIndex.length) return [];
+    return searchStatic(query, flatIndex);
+  }, [query, flatIndex]);
+
+  if (loading) { return <p>Loading...</p> }
 
   const crumbs = [
     {

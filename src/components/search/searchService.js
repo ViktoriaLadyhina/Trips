@@ -1,15 +1,13 @@
-import searchIndex from "../../components/search/index.js";
-import { buildSearchIndex } from "../../components/search/searchUtils.js";
+import { buildFlatIndex } from "./buildFlatIndex,js";
+
 
 // кеш индексов по языку
 const cache = new Map();
 
 export async function getSearchIndex(lang) {
-  if (cache.has(lang)) {
-    return cache.get(lang);
-  }
+  if (cache.has(lang)) return cache.get(lang);
 
-  const index = await buildSearchIndex(searchIndex, lang);
+  const index = await buildFlatIndex(lang);
 
   cache.set(lang, index);
 
