@@ -1,6 +1,6 @@
 const express = require("express");
 const db = require("../db");
-const { normalize } = require("../../src/components/search/searchUtils");
+const { normalize } = require("../utils/normalize");
 
 const router = express.Router();
 
