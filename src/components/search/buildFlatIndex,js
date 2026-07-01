@@ -4,6 +4,8 @@ import searchIndexNew from "./indexNew.js";
 import searchIndexOld from "./indexOld.js";
 import { normalize } from "./normalize.js";
 
+
+
 export async function buildFlatIndex(lang) {
     const localizedOldIndex = searchIndexOld[lang];
   const oldIndex = await buildOldIndex(localizedOldIndex);

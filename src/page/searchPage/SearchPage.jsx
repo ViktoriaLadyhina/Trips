@@ -13,7 +13,7 @@ import { getMysqlSearch } from "../../api/api.js";
 import "./SearchPage.scss";
 
 const searchResultsText = { ru: "Результаты поиска", uk: "Результати пошуку", de: "Suchergebnisse" };
-const noResultsText = { ru: "По вашему запросу ничего не найдено.", uk: "За вашим запитом нічого не знайдено.", de: "Für Ihre Suche wurden keine Ergebnisse gefunden."};
+const noResultsText = { ru: "По вашему запросу ничего не найдено.", uk: "За вашим запитом нічого не знайдено.", de: "Für Ihre Suche wurden keine Ergebnisse gefunden." };
 
 const SearchPage = () => {
   const { lang } = useSelector(state => state.language);
@@ -24,6 +24,24 @@ const SearchPage = () => {
 
   const [flatIndex, setFlatIndex] = useState([]);
   const [loading, setLoading] = useState(true);
+
+  function mergeSearchResults(staticIndex, mysqlIndex) {
+    const map = new Map();
+
+    // static — главный источник
+    for (const item of staticIndex) {
+      map.set(item.id, item);
+    }
+
+    // mysql добавляем только если нет static
+    for (const item of mysqlIndex) {
+      if (!map.has(item.id)) {
+        map.set(item.id, item);
+      }
+    }
+
+    return Array.from(map.values());
+  }
 
   useEffect(() => {
     let alive = true;
@@ -37,14 +55,16 @@ const SearchPage = () => {
           getMysqlSearch(lang)
         ]);
 
+        console.log("STATIC SAMPLE", staticIndex?.[0]);
+        console.log("MYSQL SAMPLE", mysqlData?.results?.[0]);
+
         if (!alive) return;
 
         const mysqlIndex = mysqlData?.results || [];
 
-        setFlatIndex([
-          ...staticIndex,
-          ...mysqlIndex
-        ]);
+        const merged = mergeSearchResults(staticIndex, mysqlIndex);
+
+        setFlatIndex(merged);
 
       } catch (error) {
         console.error(error);
@@ -66,6 +86,7 @@ const SearchPage = () => {
   }, [query, flatIndex]);
 
   if (loading) { return <p>Loading...</p> }
+
 
   const crumbs = [
     {

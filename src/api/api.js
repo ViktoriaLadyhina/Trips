@@ -1,16 +1,15 @@
 const BASE_URL = import.meta.env.VITE_API_URL;
 
 const apiFetch = async (url, options = {}) => {
-
-  const response = await fetch(url, options);
+  const response = await fetch(url, {
+    ...options
+  });
 
   if (!response.ok) {
     throw new Error(`HTTP error: ${response.status}`);
   }
 
-  const data = await response.json();
-
-  return data;
+  return response.json();
 };
 
 export const getCountries = (lang = "ru") =>
