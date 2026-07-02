@@ -4,6 +4,7 @@ const cors = require("cors");
 if (process.env.NODE_ENV !== "production") {
   require("dotenv").config();
 }
+console.log("server");
 
 const app = express();
 
@@ -26,13 +27,12 @@ const districtRouter = require("./routes/district.router.js");
 const subregionsRoutes = require("./routes/subregions.routes.js");  
 const subregionCitiesRouter = require("./routes/subregionCities.router.js"); 
 
-
 // COUNTRY LIST API
 app.use("/api/countries", listCountriesRouter);
 
 // COUNTRY API
 app.use("/api/country", countryRouter);
-
+console.log("country");
 // REGION API
 app.use("/api/region", regionRouter);
 

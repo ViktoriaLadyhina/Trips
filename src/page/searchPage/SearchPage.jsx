@@ -55,9 +55,6 @@ const SearchPage = () => {
           getMysqlSearch(lang)
         ]);
 
-        console.log("STATIC SAMPLE", staticIndex?.[0]);
-        console.log("MYSQL SAMPLE", mysqlData?.results?.[0]);
-
         if (!alive) return;
 
         const mysqlIndex = mysqlData?.results || [];
