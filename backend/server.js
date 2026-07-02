@@ -25,6 +25,7 @@ const mapCitiesListRouter = require("./routes/mapCitiesList.router.js");
 const districtRouter = require("./routes/district.router.js");  
 const subregionsRoutes = require("./routes/subregions.routes.js");  
 const subregionCitiesRouter = require("./routes/subregionCities.router.js"); 
+const cityRouter = require("./routes/subregionCities.router.js"); 
 
 // COUNTRY LIST API
 app.use("/api/countries", listCountriesRouter);
@@ -49,6 +50,10 @@ app.use("/api/subregionCities", subregionCitiesRouter);
 
 // SEARCH API 
 app.use("/api/search", searchMysql);
+
+// CITY API 
+app.use("/api/city", cityRouter);
+
 
 // запуск сервера
 const PORT = process.env.PORT || 8080;
