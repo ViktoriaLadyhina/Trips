@@ -1,10 +1,13 @@
 import './Region.scss'
 import { Link } from 'react-router-dom';
-import { useEffect, useMemo, useState } from 'react';
+import { useEffect, useState } from 'react';
 import { useSelector } from 'react-redux';
-import { fixHtmlImages } from "../../utils/photo.js";
 import { forwardRef } from "react";
 import { getSubregionCities } from "../../api/api.js";
+import { prepareEntityBlocks } from '../../utils/entityHelpers.js';
+import { TextBlock } from '../renders/TextBlock.jsx';
+import { PhotoBlock } from '../renders/PhotoBlock.jsx';
+
 
 const BASE_PHOTO_URL = import.meta.env.VITE_BASE_PHOTO_URL;
 
@@ -12,6 +15,7 @@ const Region = forwardRef(({ data, countryPath, regionPath, districtPath, subreg
   const { lang } = useSelector((state) => state.language);
   const [cities, setCities] = useState([]);
   const [error, setError] = useState(null);
+  const { blocks, langData } = prepareEntityBlocks(data?.blocks);
 
 useEffect(() => {
   if (!subregionId) return;
@@ -28,64 +32,40 @@ useEffect(() => {
     uk: `Район поділяється на ${cities.length} громад:`,
     de: `Der Landkreis ist in ${cities.length} Gemeinden unterteilt:`,
   };
-  const langData = useMemo(() => {
-    if (!data?.blocks) return {};
 
-    return data.blocks.reduce((acc, b) => {
-      acc[b.block_key] = b.content;
-      return acc;
-    }, {});
-  }, [data]);
 
-  const blocks = useMemo(() => {
-    return (data?.blocks || [])
-      .slice()
-      .sort((a, b) => a.sort_order - b.sort_order);
-  }, [data]);
-
-  const sortedCities = useMemo(() => {
-    if (!cities?.length) return [];
-
-    return [...cities].sort((a, b) =>
-      (a.name || "").localeCompare(b.name || "")
-    );
-  }, [cities]);
+const sortedCities = [...(cities || [])].sort((a, b) =>
+  (a.name || "").localeCompare(b.name || "")
+);
 
   const photo = data?.emblem;
 
-  const renderBlock = (block) => {
-    switch (block.block_key) {
-
-      case "name":
-      case "capital":
-      case "geography":
-      case "area":
-      case "code":
-      case "population":
-        return langData?.[block.block_key] ? (
-          <section
-            className={`region__block region__block--${block.block_key}`}
-            dangerouslySetInnerHTML={{
-              __html: fixHtmlImages(langData[block.block_key])
-            }}
-          />
-        ) : null;
-
-      case "photo":
-        return (
-          <div className='region__container_desc-img'>
-            <img
-              src={`${BASE_PHOTO_URL}${photo?.path}`}
-              className="region__photo"
-              alt={photo?.title?.[lang] || ""}
-            />
-          </div>
-        );
-
-      default:
-        return null;
-    }
-  };
+    const context = {
+      lang,
+      langData,
+      photo,
+      className: "region__photo",
+      classPrefix: "region__block region__block",
+    };
+  
+    const blockRegistry = {
+      name: TextBlock,
+      capital: TextBlock,
+      geography: TextBlock,
+      population: TextBlock,
+      area: TextBlock,
+      code: TextBlock,
+  
+      photo: PhotoBlock,
+    };
+  
+    const renderBlock = (block) => {
+      const Renderer = blockRegistry[block.block_key];
+  
+      if (!Renderer) return null;
+  
+      return <Renderer block={block} {...context} />;
+    };
 
   if (error) return <p>{error}</p>;
 

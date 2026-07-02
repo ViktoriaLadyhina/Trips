@@ -1,4 +1,4 @@
-import { useEffect, useMemo, useState } from 'react';
+import { useEffect, useState } from 'react';
 import { useSelector } from "react-redux";
 import { Link, useParams } from 'react-router';
 import { Helmet } from "react-helmet-async";
@@ -8,8 +8,12 @@ import BreadCrumbs from '../../components/breadCrumbs/BreadCrumbs.jsx';
 import './Regions.scss'
 import CountryMap from '../../components/maps/CountryMap.jsx';
 import datas from '../../datas/minimalIndex.js'
-import { toFullUrl, fixHtmlImages } from "../../utils/photo.js";
+import { toFullUrl } from "../../utils/photo.js";
 import { getRegion } from "../../api/api.js";
+import { prepareEntityBlocks } from '../../utils/entityHelpers.js';
+import { TextBlock } from '../../components/renders/TextBlock.jsx';
+import { PhotoBlock } from '../../components/renders/PhotoBlock.jsx';
+import { MapBlock } from '../../components/renders/MapBlock.jsx';
 
 const BASE_PHOTO_URL = import.meta.env.VITE_BASE_PHOTO_URL;
 const regionTitlesByType = {
@@ -17,7 +21,7 @@ const regionTitlesByType = {
     city: { ru: "Свободные города", uk: "Вільні міста", de: "Kreisfreie Städte" },
     commune: { ru: "Коммуны и населённые пункты", uk: "Громади та населені пункти", de: "Gemeinden und Ortschaften" }
 };
-const loadingRegion = { ru: "Загрузка региона...",  de: "Region wird geladen...", uk: "Завантаження регіону..." };
+const loadingRegion = { ru: "Загрузка региона...", de: "Region wird geladen...", uk: "Завантаження регіону..." };
 
 const Regions = () => {
     const { countryPath, regionPath } = useParams();
@@ -29,89 +33,57 @@ const Regions = () => {
 
     const meta = region?.meta;
 
+    const { blocks, langData } = prepareEntityBlocks(region?.blocks);
+
     // фетч запрос
     useEffect(() => {
-  if (!regionPath) return;
-  getRegion(regionPath, lang)
-  .then(setRegion)
-  .catch(err => setError(err.message))
-}, [regionPath, lang]);
-
-    const blocks = useMemo(() => {
-        return (region?.blocks || [])
-            .slice()
-            .sort((a, b) => a.sort_order - b.sort_order);
-    }, [region]);
-
-    const langData = useMemo(() => {
-        if (!region?.blocks) return {};
-
-        return region.blocks.reduce((acc, b) => {
-            acc[b.block_key] = b.content;
-            return acc;
-        }, {});
-    }, [region]);
-
-
-    const renderBlock = (block) => {
-        switch (block.block_key) {
-
-            // ===== TEXT BLOCKS =====
-            case "name":
-            case "capital":
-            case "geography":
-            case "area":
-            case "population":
-            case "historyName":
-            case "economy":
-            case "tourism":
-            case "briefHistory":
-            case "interestingFacts":    
-            case "symbols":
-                return langData?.[block.block_key] ? (
-                    <section
-                        className={`regions__${block.block_key}`}
-                        dangerouslySetInnerHTML={{
-                            __html: fixHtmlImages(langData[block.block_key])
-                        }}
-                    />
-                ) : null;
-
-            // ===== MAP =====
-            case "map":
-                
-                return (
-                    <div className='regions__map'>
-                        <BtnAttr lang={lang} path={`/${countryPath}/${regionPath}/attractions`} />
-                        <CountryMap
-                            countryKey={countryPath}
-                            regions={region}
-                            regionKey={region?.path}
-                        />
-                    </div>
-                );
-
-            // ===== PHOTO =====
-case "photo": {
-    const photo = region.mainPhoto;
-
-    return (
-        <img
-            src={`${BASE_PHOTO_URL}${photo.path}`}
-            className="regions__photo"
-            alt={photo.title?.[lang] || ""}
-        />
-    );
-}
-
-            default:
-                return null;
-        }
-    };
-
+        if (!regionPath) return;
+        getRegion(regionPath, lang)
+            .then(setRegion)
+            .catch(err => setError(err.message))
+    }, [regionPath, lang]);
 
     if (error) return <p>{error}</p>;
     if (!region) return <div>{loadingRegion[lang]}</div>;
+
+    const photo = region?.mainPhoto;
+
+    const context = {
+        lang,
+        langData,
+        countryPath, regionPath,
+        mapRegions: region,
+        photo,
+        path: `/${countryPath}/${regionPath}/attractions`,
+        className: "regions__photo",
+        classPrefix: "regions",
+    };
+
+    const blockRegistry = {
+        name: TextBlock,
+        capital: TextBlock,
+        geography: TextBlock,
+        area: TextBlock,
+        population: TextBlock,
+        historyName: TextBlock,
+        economy: TextBlock,
+        tourism: TextBlock,
+        interestingFacts: TextBlock,
+        briefHistory: TextBlock,
+        symbols: TextBlock,
+
+        photo: PhotoBlock,
+
+        map: MapBlock
+    };
+
+    const renderBlock = (block) => {
+        const Renderer = blockRegistry[block.block_key];
+
+        if (!Renderer) return null;
+
+        return <Renderer block={block} {...context} />;
+    };
 
     // BreadCrumbs
     const crumbs = [

@@ -1,16 +1,19 @@
 import { useSelector } from 'react-redux';
 import { Link, useParams } from 'react-router';
 import { Helmet } from "react-helmet-async";
-import { useEffect, useMemo, useState } from 'react';
+import { useEffect, useState } from 'react';
 
-import BtnAttr from "../../components/btn-attr/BtnAttr.jsx";
 import BreadCrumbs from '../../components/breadCrumbs/BreadCrumbs.jsx';
-import CountryMap from '../../components/maps/CountryMap.jsx'
 import useRoutes from '../../hooks/useRoutesSearch.js';
-import { toFullUrl, fixHtmlImages } from "../../utils/photo.js";
+import { toFullUrl } from "../../utils/photo.js";
 import { getCountry } from "../../api/api.js";
 
 import './Country.scss'
+import { PhotoBlock } from '../../components/renders/PhotoBlock.jsx';
+import { TextBlock } from '../../components/renders/TextBlock.jsx';
+import { MapBlock } from '../../components/renders/MapBlock.jsx';
+import { RoutesBlock } from '../../components/renders/RoutesBlock.jsx';
+import { getEntityName, prepareEntityBlocks } from '../../utils/entityHelpers.js';
 
 const BASE_PHOTO_URL = import.meta.env.VITE_BASE_PHOTO_URL;
 
@@ -20,7 +23,7 @@ const regionTitlesByType = {
     oblast: { ru: "Области", uk: "Області", de: "Regionen" }
 };
 
-const loadingCountry = { ru: "Загрузка страны...",  de: "Land wird geladen...", uk: "Завантаження країни..." };
+const loadingCountry = { ru: "Загрузка страны...", de: "Land wird geladen...", uk: "Завантаження країни..." };
 
 const Country = () => {
     const { countryPath } = useParams();
@@ -29,25 +32,20 @@ const Country = () => {
     const { routes } = useRoutes(countryPath);
     const [country, setCountry] = useState(null);
     const [error, setError] = useState(null);
+    const { blocks, langData } = prepareEntityBlocks(country?.blocks);
 
-// фетч запрос
+    // фетч запрос
     useEffect(() => {
-  if (!countryPath) return;
-  getCountry(countryPath, lang)
-  .then(setCountry)
-  .catch(err => setError(err.message))
-}, [countryPath, lang]);
-
-    const langData = useMemo(() => {
-        if (!country?.blocks) return {};
-
-        return country.blocks.reduce((acc, b) => {
-            acc[b.block_key] = b.content;
-            return acc;
-        }, {});
-    }, [country]);
+        if (!countryPath) return;
+        getCountry(countryPath, lang)
+            .then(setCountry)
+            .catch(err => setError(err.message))
+    }, [countryPath, lang]);
 
     if (!country) return <p>Country not found</p>;
+
+    if (error) return <p>{error}</p>;
+    if (!country) return <div>{loadingCountry[lang]}</div>;
 
     const mapRegions = (country?.regions || []).map(region => ({
         id: region.id,
@@ -59,149 +57,74 @@ const Country = () => {
     const getPhoto = (index) =>
         country.photos?.find(p => p.sort_order === index);
 
-
-    const renderBlock = (block) => {
-
-        switch (block.block_key) {
-
-            case "map":
-                return (
-                    <div className='country__map'>
-                        <BtnAttr lang={lang} path={`/${countryPath}/attractions`} />
-                        <CountryMap
-                            countryKey={country.path}
-                            regions={mapRegions}
-                        />
-                    </div>
-                );
-
-            // ===== TEXT BLOCKS =====
-            case "name":
-            case "capital":
-            case "geography":
-            case "population":
-            case "languages":
-            case "administrative":
-            case "government":
-            case "currency":
-            case "transport":
-            case "climate":
-            case "tourism":
-            case "briefHistory":
-            case "symbols":
-                return langData?.[block.block_key] ? (
-                    <section
-                        className={`country__${block.block_key}`}
-                        dangerouslySetInnerHTML={{
-                            __html: fixHtmlImages(langData[block.block_key], country.path)
-                        }}
-                    />
-                ) : null;
-
-            // ===== PHOTOS =====
-
-            case "photo": {
-                const photo = getPhoto(1);
-                return photo ? <img
-                    src={`${BASE_PHOTO_URL}${photo.path}`}
-                    className="country__photo"
-                    alt={photo.title?.[lang] || ""}
-                /> : null;
-            }
-
-            case "photo2": {
-                const photo = getPhoto(2);
-                return photo ? <img
-                    src={`${BASE_PHOTO_URL}${photo.path}`}
-                    className="country__photo country__photo--left"
-                    alt={photo.title?.[lang] || ""}
-                /> : null;
-            }
-
-            case "photo3": {
-                const photo = getPhoto(3);
-                return photo ? <img
-                    src={`${BASE_PHOTO_URL}${photo.path}`}
-                    className="country__photo"
-                    alt={photo.title?.[lang] || ""}
-                /> : null;
-            }
-
-
-            // ===== ROUTES =====
-            case "rout": {
-                if (!routes) return <div>loading routes...</div>;
-                if (!routes?.length) return null;
-
-                return (
-                    <div className="country__routes">
-
-                        <h2 className="country__routes-title">
-                            {lang === "ru" ? "Маршруты" : lang === "de" ? "Routen" : "Маршрути"}
-                        </h2>
-
-                        {/* ===== TABLE ===== */}
-                        <table className="country__routes-table">
-                            <thead>
-                                <tr>
-                                    <th>{lang === "ru" ? "Название" : lang === "de" ? "Name" : "Назва"}</th>
-                                    <th>{lang === "ru" ? "Короткое описание" : lang === "de" ? "Kurze Beschreibung" : "Короткий опис"}</th>
-                                    <th>{lang === "ru" ? "Длина маршрута" : lang === "de" ? "Routenlänge" : "Довжина маршруту"}</th>
-                                </tr>
-                            </thead>
-
-                            <tbody>
-                                {routes.map(r => (
-                                    <tr key={r.id}>
-                                        <td>
-                                            <Link to={`/${countryPath}/routes/${r.path}`}>
-                                                {r.translations?.[lang]?.name}
-                                            </Link>
-                                        </td>
-                                        <td>{r.translations?.[lang]?.short_description}</td>
-                                        <td>{r.translations?.[lang]?.routeLength}</td>
-                                    </tr>
-                                ))}
-                            </tbody>
-                        </table>
-
-                        {/* ===== CARDS ===== */}
-                        <div className="country__routes-cards">
-                            {routes.map(r => (
-                                <div key={r.id} className="country__routes-card">
-
-                                    <div className="country__routes-row">
-                                        <strong>
-                                            {lang === "ru" ? "Название:" : lang === "de" ? "Name:" : "Назва:"}
-                                        </strong>{" "}
-                                        <Link to={`/${countryPath}/routes/${r.path}`}>
-                                            {r.translations?.[lang]?.name}
-                                        </Link>
-                                    </div>
-
-                                    <div className="country__routes-row">
-                                        {r.translations?.[lang]?.short_description}
-                                    </div>
-
-                                </div>
-                            ))}
-                        </div>
-
-                    </div>
-                );
-            }
-            default:
-                return null;
+    const context = {
+        lang,
+        langData,
+        countryPath,
+        mapRegions,
+        routes,
+        path: `/${countryPath}/attractions`,
+        classPrefix: "country",
+        photos: {
+            photo: getPhoto(1),
+            photo2: getPhoto(2),
+            photo3: getPhoto(3),
+        },
+        photoClasses: {
+            photo: "country__photo",
+            photo2: "country__photo country__photo--left",
+            photo3: "country__photo"
         }
     };
 
-    if (error) return <p>{error}</p>;
-    if (!country) return <div>{loadingCountry[lang]}</div>;
+    const blockRegistry = {
+        name: TextBlock,
+        capital: TextBlock,
+        geography: TextBlock,
+        population: TextBlock,
+        language: TextBlock,
+        administrative: TextBlock,
+        government: TextBlock,
+        currency: TextBlock,
+        transport: TextBlock,
+        climate: TextBlock,
+        tourism: TextBlock,
+        briefHistory: TextBlock,
+        symbols: TextBlock,
+
+        photo: PhotoBlock,
+        photo2: PhotoBlock,
+        photo3: PhotoBlock,
+
+        map: MapBlock,
+        rout: RoutesBlock,
+    };
+
+
+    const renderBlock = (block) => {
+        const Renderer = blockRegistry[block.block_key];
+
+        if (!Renderer) return null;
+
+        if (block.block_key.startsWith("photo")) {
+            const index = Number(block.block_key.replace("photo", "")) || 1;
+
+            const photo = getPhoto(index);
+
+            return (
+                <PhotoBlock
+                    photo={photo}
+                    lang={context.lang}
+                    className={context.photoClasses[block.block_key]}
+                />
+            );
+        }
+
+        return <Renderer block={block} {...context} />;
+    };
 
     // BreadCrumbs
-    const nameBlock = country?.blocks?.find(
-        b => b.block_key === "name"
-    );
+    const countryName = getEntityName(country);
 
     const crumbs = [
         {
@@ -209,7 +132,7 @@ const Country = () => {
             path: '/'
         },
         {
-            label: nameBlock?.content || ''
+            label: countryName || ''
         }
     ];
 
@@ -260,11 +183,10 @@ const Country = () => {
 
             {/* Основной контент */}
             <section className="country__content">
-                <div className="country__breadcrumbs"> 
+                <div className="country__breadcrumbs">
                     <BreadCrumbs crumbs={crumbs} /></div>
                 <div>
-                    {country?.blocks.length > 0 && country?.blocks
-                        .sort((a, b) => a.sort_order - b.sort_order)
+                    {blocks.length > 0 && blocks
                         .map(block => (
                             <div key={`${block.block_key}-${block.sort_order}`}>
                                 {renderBlock(block)}

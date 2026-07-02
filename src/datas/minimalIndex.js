@@ -24,7 +24,7 @@ const datas =
     hochsauerland: { ru: 'Район Хохзауэрланд', de: 'Hochsauerlandkreis', uk: 'Район Хохзауэрланд' },
 
     dusseldorf: { id: 62, ru: 'Административный округ Дюссельдорф', de: 'Regierungsbezirk Düsseldorf', uk: 'Адміністративний округ Дюссельдорф' },
-    mettmann: { ru: 'Район Меттман', de: 'Kreis Mettmann', uk: 'Район Меттман' },
+    mettmann: { id: 372,ru: 'Район Меттман', de: 'Kreis Mettmann', uk: 'Район Меттман' },
 
     koln: { id: 63, ru: 'Административный округ Кёльн', de: 'Regierungsbezirk Köln', uk: 'Адміністративний округ Кельн' },
     rheinErft: { ru: 'Район Рейн-Эрфт', de: 'Rhein-Erft-Kreis', uk: 'Район Рейн-Ерфт' },
