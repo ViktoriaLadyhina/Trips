@@ -4,7 +4,6 @@ const cors = require("cors");
 if (process.env.NODE_ENV !== "production") {
   require("dotenv").config();
 }
-console.log("server");
 
 const app = express();
 
@@ -32,7 +31,7 @@ app.use("/api/countries", listCountriesRouter);
 
 // COUNTRY API
 app.use("/api/country", countryRouter);
-console.log("country");
+
 // REGION API
 app.use("/api/region", regionRouter);
 

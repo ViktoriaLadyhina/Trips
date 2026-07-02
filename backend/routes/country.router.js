@@ -8,7 +8,6 @@ const getEntityPhotos = require("../repositories/getPhotos");
 const router = express.Router();
 
 router.get("/:path", async (req, res) => {
-  console.log("country.router.js: GET /api/country/:path");
   try {
     const { path } = req.params;
     const lang = req.query.lang || "ru";
