@@ -8,64 +8,115 @@ const getEntityPhotos = require("../repositories/getPhotos");
 const router = express.Router();
 
 router.get("/:path", async (req, res) => {
-  try {
+ try {
     const { path } = req.params;
     const lang = req.query.lang || "ru";
 
-    // 1. страна
-    const [countryRows] = await db.query(
-      "SELECT * FROM entities WHERE path = ? AND type = 'country' LIMIT 1",
+    // 1. ИЩЕМ РЕГИОН
+    const [regionRows] = await db.query(
+      `
+      SELECT *
+      FROM entities
+      WHERE path = ?
+      LIMIT 1
+      `,
       [path]
     );
 
-    if (!countryRows.length) {
-      return res.status(404).json({ message: "Country not found" });
+    if (!regionRows.length) {
+      return res.status(404).json({
+        message: "Region not found"
+      });
     }
 
-    const country = countryRows[0];
+    const region = regionRows[0];
 
-    // 2. blocks
-    const blocks = await getBlocks(db, country.id, lang, "country");
+    // 2. BLOCK TYPE LOGIC
+    let blockType = region.type;
 
-    // 3. regions
-    const [regionsRows] = await db.query(
+    if (
+      region.type === "land" ||
+      region.type === "oblast" ||
+      region.type === "canton"
+    ) {
+      blockType = "land";
+    }
+
+    // 3. BLOCKS
+    const blocks = await getBlocks(db, region.id, lang, blockType);
+
+    // 4. META
+    const meta = await getMeta(db, region.id, lang);
+
+    // 5. CHILD ENTITIES
+    const [childrenRows] = await db.query(
       `
-SELECT 
-    e.id,
-    e.path,
-    e.type,
-    e.is_active,
-    c.content AS name
-FROM entities e
-LEFT JOIN content c
-    ON c.entity_id = e.id
-    AND c.block_key = 'name'
-    AND c.language = ?
-WHERE e.parent_id = ?
-`,
-      [lang, country.id]
+      SELECT
+          e.id,
+          e.path,
+          e.type,
+          e.is_active,
+          c.content AS name
+      FROM entities e
+      LEFT JOIN content c
+        ON c.entity_id = e.id
+       AND c.block_key = 'name'
+       AND c.language = ?
+      WHERE e.parent_id = ?
+      ORDER BY c.content
+      `,
+      [lang, region.id]
     );
 
-    const regions = regionsRows.map(r => ({
-      id: r.id,
-      path: r.path,
-      type: r.type,
-      is_active: Boolean(r.is_active),
-      name: r.name || ""
-    }));
+    // 6. REGIONS / CITIES
+    const discriptRegions = childrenRows
+      .filter(item => item.type === "district")
+      .map(item => ({
+        id: item.id,
+        path: item.path,
+        type: item.type,
+        is_active: Boolean(item.is_active),
+        name: item.name || ""
+      }));
 
-    // META
-    const meta = await getMeta(db, country.id, lang);
+    const cities = childrenRows
+      .filter(item => item.type === "city")
+      .map(item => ({
+        id: item.id,
+        path: item.path,
+        type: item.type,
+        is_active: Boolean(item.is_active),
+        name: item.name || ""
+      }));
 
-    // PHOTO
-    const { photos, mainPhoto } = await getEntityPhotos(db, country.id);
+    const communes = childrenRows
+      .filter(item => item.type === "commune")
+      .map(item => ({
+        id: item.id,
+        path: item.path,
+        type: item.type,
+        is_active: Boolean(item.is_active),
+        name: item.name || ""
+      }));
 
-    // 4. response
+    // 7. PHOTOS (NEW SYSTEM)
+    const { photos, mainPhoto } = await getEntityPhotos(db, region.id);
+
+    // 8. RESPONSE
     res.json({
-      ...country,
+      id: region.id,
+      type: region.type,
+      path: region.path,
+      parent_id: region.parent_id,
+      is_active: Boolean(region.is_active),
+
       blocks,
-      regions,
+
+      discriptRegions,
+      cities,
+      communes,
       meta,
+
       photos,
       mainPhoto
     });
@@ -73,7 +124,6 @@ WHERE e.parent_id = ?
   } catch (err) {
     console.error("ERROR:", err);
     console.error("MESSAGE:", err.message);
-    console.error("STACK:", err.stack);
 
     res.status(500).json({
       message: "Server error",

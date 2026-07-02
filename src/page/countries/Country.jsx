@@ -53,7 +53,7 @@ const Country = () => {
         hasInfo: Boolean(region.is_active),
         name: region?.name || ""
     }));
-console.log("country", country);
+
     const getPhoto = (index) =>
         country.photos?.find(p => p.sort_order === index);
 
