@@ -3,7 +3,7 @@ const db = require("../db");
 
 const router = express.Router();
 
-router.get("/:subregionId", async (req, res) => {
+router.get("/:districtPath", async (req, res) => {
   try {
     const { districtPath } = req.params;
     const lang = req.query.lang || "ru";
