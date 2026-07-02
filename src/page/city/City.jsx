@@ -7,17 +7,39 @@ import BreadCrumbs from '../../components/breadCrumbs/BreadCrumbs.jsx';
 import InfoBlock from '../../components/InfoBlock/InfoBlock.jsx';
 import './City.scss'
 import BtnAttr from '../../components/btn-attr/BtnAttr.jsx';
-import useCity from '../../hooks/useCity.js';
+// import useCity from '../../hooks/useCity.js';
 import useEvents from '../../hooks/useEvents.js';
 import datas from '../../datas/minimalIndex.js'
+import { useEffect, useState } from 'react';
+import { getCity } from '../../api/api.js';
 
 const BASE_PHOTO_URL = import.meta.env.VITE_BASE_PHOTO_URL;
 
 const City = () => {
     const { countryPath, regionPath, districtPath, cityPath } = useParams();
     const { lang } = useSelector((state) => state.language);
-    const { city, error } = useCity(countryPath, regionPath, districtPath, cityPath);
+    // const { city, error } = useCity(countryPath, regionPath, districtPath, cityPath);
     const { events } = useEvents(countryPath, regionPath, districtPath, cityPath);
+
+    const [city, setCity] = useState(null);
+    const [error, setError] = useState(null);
+
+        // фетч запрос
+useEffect(() => {
+    if (!cityPath) return;
+
+    let active = true;
+
+    getCity(cityPath, lang)
+        .then(data => {
+            if (active) setCity(data);
+        })
+        .catch(err => setError(err.message));
+
+    return () => {
+        active = false;
+    };
+}, [cityPath, lang]);
 
     if (error) return <p>{error}</p>;
     if (!city) return <p>Loading...</p>;
@@ -80,7 +102,7 @@ const City = () => {
 
                             {city.desc?.population && (<InfoBlock data={city.desc.population} className="city__desc-population" />)}
                             {city.desc?.area && (<InfoBlock data={city.desc.area} className="city__desc-area" />)}
-                            {city.desc?.postalCode && (<InfoBlock data={city.desc.postalCode} className="city__desc-postalCode" />)}
+                            {city.desc?.code && (<InfoBlock data={city.desc.postalCode} className="city__desc-postalCode" />)}
                             {city.desc?.phone && (<InfoBlock data={city.desc.phone} className="city__desc-phone" />)}
                             {city.desc?.education && (<InfoBlock data={city.desc.education} className="city__desc-phone" />)}
                             {city.desc?.culture && (<InfoBlock data={city.desc.culture} className="city__desc-phone" />)}

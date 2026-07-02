@@ -35,13 +35,21 @@ const Regions = () => {
 
     const { blocks, langData } = prepareEntityBlocks(region?.blocks);
 
-    // фетч запрос
-    useEffect(() => {
-        if (!regionPath) return;
-        getRegion(regionPath, lang)
-            .then(setRegion)
-            .catch(err => setError(err.message))
-    }, [regionPath, lang]);
+useEffect(() => {
+    if (!regionPath) return;
+
+    let active = true;
+
+    getRegion(regionPath, lang)
+        .then(data => {
+            if (active) setRegion(data);
+        })
+        .catch(err => setError(err.message));
+
+    return () => {
+        active = false;
+    };
+}, [regionPath, lang]);
 
     if (error) return <p>{error}</p>;
     if (!region) return <div>{loadingRegion[lang]}</div>;
