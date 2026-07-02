@@ -51,6 +51,17 @@ router.get("/mysql", async (req, res) => {
       contentRows.map(r => [r.id, r])
     );
 
+      const normalizeType = (type) => {
+    switch (type) {
+      case "oblast":
+      case "canton":
+      case "land":
+        return "region";
+      default:
+        return type;
+    }
+  };
+  
     // 4. buildPaths
 function buildPaths(entity) {
   let current = entity;
@@ -63,17 +74,6 @@ function buildPaths(entity) {
   };
 
   const visited = new Set();
-
-  const normalizeType = (type) => {
-    switch (type) {
-      case "oblast":
-      case "canton":
-      case "land":
-        return "region";
-      default:
-        return type;
-    }
-  };
 
   while (current && !visited.has(current.id)) {
     visited.add(current.id);
@@ -114,7 +114,7 @@ function buildPaths(entity) {
       const content = contentMap[entity.id] || {};
       const paths = buildPaths(entity);
 
-      const name = content.name || "";
+      const name = content.title || content.name || "";
       const description = content.description || content.og_description || "";
       const keywords = content.keywords || "";
       const searchText = normalize(
@@ -123,7 +123,7 @@ function buildPaths(entity) {
 
       return {
         id: entity.id,
-        type: entity.type,
+        type: normalizeType(entity.type),
         path: entity.path,
 
         name,

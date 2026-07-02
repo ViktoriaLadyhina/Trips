@@ -30,12 +30,12 @@ const SearchPage = () => {
 
     // static — главный источник
     for (const item of staticIndex) {
-      map.set(item.id, item);
+      map.set(item.path, item);
     }
 
     // mysql добавляем только если нет static
     for (const item of mysqlIndex) {
-      if (!map.has(item.id)) {
+      if (!map.has(item.path)) {
         map.set(item.id, item);
       }
     }
