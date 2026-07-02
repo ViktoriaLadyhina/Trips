@@ -35,3 +35,6 @@ export const getSubregionCities = (subregionId, lang = "ru") =>
 
 export const getMysqlSearch = (lang = "ru") =>
   apiFetch(`${BASE_URL}/api/search/mysql?lang=${lang}`);
+
+export const getCity = (cityPath, lang = "ru") =>
+  apiFetch(`${BASE_URL}/api/city/${cityPath}?lang=${lang}`);

@@ -7,7 +7,7 @@
     padding: 5px;
   }
 
-  &__title {
+  &__name {
     @include h1();
     margin-bottom: 20px;
     text-align: center;
@@ -55,116 +55,90 @@
     }
   }
 
-  &__desc {
 
-    &-gerb {
-      max-width: 200px;
-      float: right;
-      padding: 8px;
 
-      img {
-        width: 100%;
-        height: auto;
-        display: block;
-      }
+  // &-gerb {
+  //   max-width: 200px;
+  //   float: right;
+  //   padding: 8px;
 
+  //   img {
+  //     width: 100%;
+  //     height: auto;
+  //     display: block;
+  //   }
+  // }
+
+  &__capital,
+  &__population,
+  &__area,
+  &__postalCode,
+  &__phone,
+  &__code,
+  &__officialSite,
+  &__notablePeople,
+  &__geography,
+  &__culture,
+  &__admin,
+  &__interestingFacts,
+  &__briefHistory {
+    text-align: justify;
+    padding: 1px;
+    
+    p {
+      @include body-text;
     }
 
-    &-general,
-    &-population,
-    &-area,
-    &-postalCode,
-    &-phone,
-    &-officialSite,
-    &-notablePeople,
-    &-geography,
-    &-interestingFacts,
-    &-history {
+    strong {
+      @include bold-text;
+      display: inline;
       text-align: justify;
-      padding: 3px;
+    }
 
-      &-bold {
-        @include bold-text;
-        display: inline;
-        text-align: justify;
-      }
+    a {
+      @include body-text;
+      text-decoration: none;
 
-      &-text {
-        @include body-text;
-        display: inline;
-        text-align: justify;
-      }
-
-      a {
-        text-decoration: none;
-        @include bold-text;
-      }
-
-      &-title {
-        @include h3();
-        padding: 20px;
-        text-align: center;
-      }
-
-      ul {
-        margin: 0;
-        padding-left: 20px;
-        list-style-type: disc;
-      }
-
-      li {
-        @include body-text;
-        margin-bottom: 3px;
+      &:hover {
+        text-decoration: underline;
+        cursor: pointer;
       }
     }
 
-    &-admin {
-      &-title {
-        @include bold-text;
-        padding: 5px;
-        text-align: left;
-      }
-
-      &-bold {
-        @include bold-text;
-        display: inline;
-        text-align: justify;
-      }
-
-      &-text {
-        @include body-text;
-        display: inline;
-        text-align: justify;
-      }
-
-      ul {
-        margin: 0;
-        padding-left: 20px;
-        list-style-type: disc;
-      }
-
-      li {
-        @include body-text;
-        margin-bottom: 2px;
-        text-align: justify;
-      }
+    h2 {
+      @include h3();
+      text-align: center;
+      margin: 20px 0 10px;
     }
-  }
 
-  &__foto {
-    max-width: 300px;
-    height: auto;
-    border-radius: 8px;
-    margin: 10px 0 10px 10px;
-    float: right;
 
-    &--right {
-      float: left;
-      margin: 10px 10px 10px 0;
-      // max-width: 300px;
+    ul {
+      margin: 0;
+      padding-left: 20px;
+      list-style-type: disc;
+    }
+
+    li {
+      @include body-text;
+      margin-bottom: 3px;
     }
   }
 }
+
+// &__photo {
+//   max-width: 300px;
+//   height: auto;
+//   border-radius: 8px;
+//   margin: 10px 0 10px 10px;
+//   float: right;
+
+//   &--right {
+//     float: left;
+//     margin: 10px 10px 10px 0;
+//     // max-width: 300px;
+//   }
+// }
+
 
 .city__events {
   margin: 2rem 0;
