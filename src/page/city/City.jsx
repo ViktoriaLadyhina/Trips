@@ -62,8 +62,8 @@ const City = () => {
         city,
         photo,
         path: `/${countryPath}/${regionPath}/attractions`,
-        className: "regions__photo",
-        classPrefix: "regions",
+        className: "city__photo",
+        classPrefix: "city",
     };
 
     const blockRegistry = {
@@ -99,7 +99,7 @@ const City = () => {
         { label: datas.countries[countryPath][lang], path: `/${countryPath}` },
         { label: datas.regions[regionPath][lang], path: `/${countryPath}/${regionPath}` },
         ...(districtPath !== "city" ? [{ label: datas.districts[districtPath][lang], path: `/${countryPath}/${regionPath}/${districtPath}` }] : []),
-        ...(districtPath !== "city" ? [{ label: city.subRegionName }] : []),
+        ...(districtPath !== "city" ? [{ label: datas.districts[districtPath][lang] }] : []),
         { label: city.name }
     ];
 

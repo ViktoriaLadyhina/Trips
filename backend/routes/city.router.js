@@ -8,17 +8,22 @@ const getEntityPhotos = require("../repositories/getPhotos");
 const router = express.Router();
 
 router.get("/:cityPath", async (req, res) => {
- try {
+  try {
     const { cityPath } = req.params;
     const lang = req.query.lang || "ru";
 
     // 1. ИЩЕМ РЕГИОН
     const [cityRows] = await db.query(
       `
-      SELECT *
-      FROM entities
-      WHERE path = ?
-      LIMIT 1
+SELECT 
+  c.*,
+  p.id AS parent_id,
+  p.path AS parent_path
+FROM entities c
+LEFT JOIN entities p
+  ON c.parent_id = p.id
+WHERE c.path = ?
+LIMIT 1
       `,
       [cityPath]
     );
@@ -47,6 +52,7 @@ router.get("/:cityPath", async (req, res) => {
       type: city.type,
       path: city.path,
       parent_id: city.parent_id,
+      parent_path: city.parent_path,
       is_active: Boolean(city.is_active),
 
       blocks,
