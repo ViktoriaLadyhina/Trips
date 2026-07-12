@@ -25,11 +25,11 @@ const Map = () => {
     <div className='map'>
 
       <Helmet>
-          <title>{sitemap[lang]}</title>
+        <title>{sitemap[lang]}</title>
       </Helmet>
 
       <BreadCrumbs crumbs={crumbs} />
-      
+
       <div className='map__pages'>
         <ul>
           {/* Германия */}
@@ -59,19 +59,23 @@ const Map = () => {
                   {/* Район Трир-Саарбург */}
                   <li><Link to="/germany/rheinland_pfalz/trier_saarburg">{t.districts.trier_saarburg[lang]}</Link>
                     <ul>
-
-                      {/* Саарбург - город */}
-                      <li><Link to="/germany/rheinland_pfalz/trier_saarburg/saarburg_city">{t.cities.saarburg_city[lang]}</Link>
+                      <li><span>{t.subRegions.saarburg_kell[lang]}</span>
                         <ul>
-                          <li><Link to="/germany/rheinland_pfalz/trier_saarburg/saarburg_city/attractions/altstadt_saarburg">{t.attractions.altstadt_saarburg[lang]}</Link>
+                          {/* Саарбург - город */}
+                          <li><Link to="/germany/rheinland_pfalz/trier_saarburg/saarburg_city">{t.cities.saarburg_city[lang]}</Link>
                             <ul>
-                              <li><Link to="/germany/rheinland_pfalz/trier_saarburg/saarburg_city/attractions/wasserfall_saarburg">{t.attractions.wasserfall_saarburg[lang]}</Link></li>
-                              <li><Link to="/germany/rheinland_pfalz/trier_saarburg/saarburg_city/attractions/amuseum_saarburg">{t.attractions.amuseum_saarburg[lang]}</Link></li>
+                              <li><Link to="/germany/rheinland_pfalz/trier_saarburg/saarburg_city/attractions/altstadt_saarburg">{t.attractions.altstadt_saarburg[lang]}</Link>
+                                <ul>
+                                  <li><Link to="/germany/rheinland_pfalz/trier_saarburg/saarburg_city/attractions/wasserfall_saarburg">{t.attractions.wasserfall_saarburg[lang]}</Link></li>
+                                  <li><Link to="/germany/rheinland_pfalz/trier_saarburg/saarburg_city/attractions/amuseum_saarburg">{t.attractions.amuseum_saarburg[lang]}</Link></li>
+                                </ul>
+                              </li>
+                              <li><Link to="/germany/rheinland_pfalz/trier_saarburg/saarburg_city/attractions/burg_saarburg">{t.attractions.burg_saarburg[lang]}</Link></li>
                             </ul>
                           </li>
-                          <li><Link to="/germany/rheinland_pfalz/trier_saarburg/saarburg_city/attractions/burg_saarburg">{t.attractions.burg_saarburg[lang]}</Link></li>
                         </ul>
                       </li>
+
                     </ul>
                   </li>
 
@@ -87,7 +91,7 @@ const Map = () => {
                           <li><Link to="/germany/rheinland_pfalz/city/trier/attractions/basilica_of_constantine_trier">{t.attractions.basilica_of_constantine_trier[lang]}</Link></li>
                           <li><Link to="/germany/rheinland_pfalz/city/trier/attractions/kurfuerstliches_palais_trier">{t.attractions.kurfuerstliches_palais_trier[lang]}</Link></li>
                           <li><Link to="/germany/rheinland_pfalz/city/trier/attractions/basilikaStPaulinus_trier">{t.attractions.basilikaStPaulinus_trier[lang]}</Link></li>
-                          <li><Link to="/germany/rheinland_pfalz/city/trier/attractions/roman_bridge_trier">{t.attractions.roman_bridge_trier[lang]}</Link></li>                          
+                          <li><Link to="/germany/rheinland_pfalz/city/trier/attractions/roman_bridge_trier">{t.attractions.roman_bridge_trier[lang]}</Link></li>
                         </ul>
                       </li>
                       <li><Link to="/germany/rheinland_pfalz/city/trier/attractions/kaiserthermen_trier">{t.attractions.kaiserthermen_trier[lang]}</Link></li>
@@ -105,9 +109,9 @@ const Map = () => {
                       <li><Link to="/germany/rheinland_pfalz/city/koblenz/attractions/stolzenfels_koblenz">{t.attractions.stolzenfels_koblenz[lang]}</Link></li>
                       <li><Link to="/germany/rheinland_pfalz/city/koblenz/attractions/kurfuerstliches_schloss_koblenz">{t.attractions.kurfuerstliches_schloss_koblenz[lang]}</Link></li>
                       <li><Link to="/germany/rheinland_pfalz/city/koblenz/attractions/altstadt_koblenz">{t.attractions.altstadt_koblenz[lang]}</Link>
-                      <ul>
-                        <li><Link to="/germany/rheinland_pfalz/city/koblenz/attractions/citykirche_koblenz">{t.attractions.citykirche_koblenz[lang]}</Link></li>
-                      </ul>
+                        <ul>
+                          <li><Link to="/germany/rheinland_pfalz/city/koblenz/attractions/citykirche_koblenz">{t.attractions.citykirche_koblenz[lang]}</Link></li>
+                        </ul>
                       </li>
                     </ul>
                   </li>
@@ -130,7 +134,7 @@ const Map = () => {
                     </ul>
                     <ul>
                       {/* Край Hochsauerland */}
-                      <li><span>{t.districts.hochsauerland[lang]}</span>
+                      <li><span>{t.subRegions.hochsauerland[lang]}</span>
                         <ul>
                           <li><Link to="/germany/nrw/arnsberg/sundern">{t.cities.sundern[lang]}</Link>
                             <ul>
@@ -141,7 +145,7 @@ const Map = () => {
                         </ul>
                       </li>
                       {/* Край Merkischer */}
-                      <li><span>{t.districts.merkischer[lang]}</span>
+                      <li><span>{t.subRegions.merkischer[lang]}</span>
                         <ul>
                           <li><Link to="/germany/nrw/arnsberg/iserlohn">{t.cities.iserlohn[lang]}</Link>
                             <ul>
@@ -194,7 +198,7 @@ const Map = () => {
                   <li><Link to="/germany/nrw/dusseldorf">{t.districts.dusseldorf[lang]}</Link>
                     <ul>
                       {/* Край Mettmann */}
-                      <li><span>{t.districts.mettmann[lang]}</span>
+                      <li><span>{t.subRegions.mettmann[lang]}</span>
                         <ul>
                           <li><Link to="/germany/nrw/dusseldorf/velbert">{t.cities.velbert[lang]}</Link>
                             <ul>
@@ -295,7 +299,7 @@ const Map = () => {
                       </li>
 
                       {/* Край aachen */}
-                      <li><span>{t.districts.aachen[lang]}</span>
+                      <li><span>{t.subRegions.aachen[lang]}</span>
                         <ul>
                           <li><Link to="/germany/nrw/koln/monschau">{t.cities.monschau[lang]}</Link>
                             <ul>
@@ -314,7 +318,7 @@ const Map = () => {
                       </li>
 
                       {/* Край Rhein-Sieg */}
-                      <li><span>{t.districts.rhein_sieg[lang]}</span>
+                      <li><span>{t.subRegions.rhein_sieg[lang]}</span>
                         <ul>
                           <li><Link to="/germany/nrw/koln/konigswinter"> {t.cities.konigswinter[lang]}</Link>
                             <ul>
@@ -344,7 +348,7 @@ const Map = () => {
                       </li>
 
                       {/* Край Rhein-Erft */}
-                      <li><span>{t.districts.rheinErft[lang]}</span>
+                      <li><span>{t.subRegions.rhein_erft[lang]}</span>
                         <ul>
                           <li><Link to="/germany/nrw/koln/bruhl">{t.cities.bruhl[lang]}</Link>
                             <ul>

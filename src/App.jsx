@@ -46,8 +46,7 @@ function App() {
 
           <Route path="/:countryPath/:regionPath/:districtPath/:cityPath/events/:eventPath" element={<Event />} />
 
-          <Route path="/search" element={<SearchPage />} />
-        </Route>
+          <Route path="/search" element={<SearchPage />} /> </Route>
       </Routes>
     </>
   )

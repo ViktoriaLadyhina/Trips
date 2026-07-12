@@ -20,19 +20,21 @@ const datas =
   },
   districts: {
     arnsberg: { id: 60, ru: 'Административный округ Арнсберг', de: 'Regierungsbezirk Arnsberg', uk: 'Адміністративний округ Арнсберг' },
-    merkischer: { ru: 'Район Меркиш', de: 'Märkischer Kreis', uk: 'Район Меркіш' },
-    hochsauerland: { ru: 'Район Хохзауэрланд', de: 'Hochsauerlandkreis', uk: 'Район Хохзауэрланд' },
-
     dusseldorf: { id: 62, ru: 'Административный округ Дюссельдорф', de: 'Regierungsbezirk Düsseldorf', uk: 'Адміністративний округ Дюссельдорф' },
-    mettmann: { id: 372,ru: 'Район Меттман', de: 'Kreis Mettmann', uk: 'Район Меттман' },
-
     koln: { id: 63, ru: 'Административный округ Кёльн', de: 'Regierungsbezirk Köln', uk: 'Адміністративний округ Кельн' },
-    rheinErft: { ru: 'Район Рейн-Эрфт', de: 'Rhein-Erft-Kreis', uk: 'Район Рейн-Ерфт' },
-    aachen: { ru: 'Район Аахен', de: 'Kreis Aachen', uk: 'Район Аахен' },
-    rhein_sieg: { ru: 'Район Рейн-Зиг', de: 'Rhein-Sieg-Kreis', uk: 'Район Рейн-Зиг' },
-
     mayen_koblenz: { id: 114, ru: 'Район Майен‑Кобленц', de: 'Landkreis Mayen-Koblenz', uk: 'Район Маєн-Кобленц' },
     trier_saarburg: { id: 121, ru: 'Район Трир-Саарбург', de: 'Landkreis Trier-Saarburg', uk: 'Район Трір-Саарбург' }
+  },
+  subRegions: {
+    merkischer: { id: 161, ru: 'Район Меркиш', de: 'Märkischer Kreis', uk: 'Район Меркіш' },
+   
+    hochsauerland: { id: 291, ru: 'Район Хохзауэрланд', de: 'Hochsauerlandkreis', uk: 'Район Хохзауэрланд' },
+    mettmann: { id: 372, ru: 'Район Меттман', de: 'Kreis Mettmann', uk: 'Район Меттман' },
+    rhein_erft: { id: 160, ru: 'Район Рейн-Эрфт', de: 'Rhein-Erft-Kreis', uk: 'Район Рейн-Ерфт' },
+    aachen: { id: 162, ru: 'Район Аахен', de: 'Kreis Aachen', uk: 'Район Аахен' },
+    rhein_sieg: { id: 166, ru: 'Район Рейн-Зиг', de: 'Rhein-Sieg-Kreis', uk: 'Район Рейн-Зиг' },
+
+    saarburg_kell: { id: 552, ru: 'Объединённая община Саарбург-Келль', de: 'Verbandsgemeinde Saarburg-Kell', uk: 'Об’єднана громада Саарбург-Келль' },
   },
   cities: {
     // Germany
@@ -42,15 +44,15 @@ const datas =
     frechen: { id: 174, ru: 'Город Фрехен', de: 'Stadt Frechen', uk: 'Місто Фрехен' },
     konigswinter: { id: 247, ru: 'Город Кёнигсвинтер', de: 'Stadt Königswinter', uk: 'Місто Кенігсвінтер' },
     lohmar: { id: 248, ru: 'Город Ломар', de: 'Stadt Lohmar', uk: 'Місто Ломар' },
-    velbert: { ru: 'Город Фельберт', de: 'Stadt Velbert', uk: 'Місто Фельберт' },
+    velbert: { id: 410, ru: 'Город Фельберт', de: 'Stadt Velbert', uk: 'Місто Фельберт' },
 
     dortmund: { id: 72, ru: 'Город Дортмунд', de: 'Stadt Dortmund', uk: 'Місто Дортмунд' },
     luedenscheid: { id: 298, ru: 'Город Люденшайд', de: 'Stadt Lüdenscheid', uk: 'Місто Люденшайд' },
     altena: { id: 293, ru: 'Город Альтена', de: 'Stadt Altena', uk: 'Місто Альтена' },
     iserlohn: { id: 296, ru: 'Город Изерлон', de: 'Stadt Iserlohn', uk: 'Місто Ізерлон' },
-    sundern: { ru: 'Город Зундерн', de: 'Stadt Sundern', uk: 'Місто Зундерн' },
+    sundern: { id: 354, ru: 'Город Зундерн', de: 'Stadt Sundern', uk: 'Місто Зундерн' },
 
-    koblenz: { id: 90, ru: 'Город Кобленц', de: 'Stadt Koblenz', uk: 'Місто Кобленц' },
+    koblenz: { id: 89, ru: 'Город Кобленц', de: 'Stadt Koblenz', uk: 'Місто Кобленц' },
     trier: { id: 91, ru: 'Город Трир', de: 'Stadt Trier', uk: 'Місто Трір' },
     saarburg_city: { id: 618, ru: 'Город Саарбург', de: 'Stadt Saarburg', uk: 'Місто Саарбург' },
 
@@ -61,6 +63,67 @@ const datas =
 
     //Ukraine
     sumy: { id: 125, ru: 'Город Сумы', de: 'Stadt Sumy', uk: 'Місто Суми' }
+  },
+  cityDistrict: {
+    dortmund_innenstadt_nord: { id: 673, parent: 72, ru: 'Центр-Север', de: 'Innenstadt-Nord', uk: 'Центр-Північ' },
+    dortmund_innenstadt_ost: { id: 674, parent: 72, ru: 'Центр-Восток', de: 'Innenstadt-Ost', uk: 'Центр-Схід' },
+    dortmund_innenstadt_west: { id: 675, parent: 72, ru: 'Центр-Запад', de: 'Innenstadt-West', uk: 'Центр-Захід' },
+    dortmund_eving: { id: 676, parent: 72, ru: 'Эвинг', de: 'Eving', uk: 'Евінг' },
+    dortmund_scharnhorst: { id: 677, parent: 72, ru: 'Шарнхорст', de: 'Scharnhorst', uk: 'Шарнгорст' },
+    dortmund_brackel: { id: 678, parent: 72, ru: 'Бракель', de: 'Brackel', uk: 'Бракель' },
+    dortmund_aplerbeck: { id: 679, parent: 72, ru: 'Аплербек', de: 'Aplerbeck', uk: 'Аплербек' },
+    dortmund_hoerde: { id: 680, parent: 72, ru: 'Хёрде', de: 'Hoerde', uk: 'Герде' },
+    dortmund_hombruch: { id: 681, parent: 72, ru: 'Хомбрук', de: 'Hombruch', uk: 'Хомбрух' },
+    dortmund_luetgendortmund: { id: 682, parent: 72, ru: 'Лютгендортмунд', de: 'Luetgendortmund', uk: 'Лютгендортмунд' },
+    dortmund_huckarde: { id: 683, parent: 72, ru: 'Хуккарде', de: 'Huckarde', uk: 'Хуккарде' },
+    dortmund_mengede: { id: 684, parent: 72, ru: 'Менгеде', de: 'Mengede', uk: 'Менгеде' },
+
+    sundern_sundern: { id: 685, parent: 354, ru: 'Зундерн', de: 'Sundern', uk: 'Зундерн' },
+    sundern_allendorf: { id: 686, parent: 354, ru: 'Аллендорф', de: 'Allendorf', uk: 'Аллендорф' },
+    sundern_amecke: { id: 687, parent: 354, ru: 'Амеке', de: 'Amecke', uk: 'Амеке' },
+    sundern_endorf: { id: 688, parent: 354, ru: 'Эндорф', de: 'Endorf', uk: 'Ендорф' },
+    sundern_hachen: { id: 689, parent: 354, ru: 'Хахен', de: 'Hachen', uk: 'Хахен' },
+    sundern_langscheid: { id: 690, parent: 354, ru: 'Лангшеид', de: 'Langscheid', uk: 'Лангшайд' },
+    sundern_stemel: { id: 691, parent: 354, ru: 'Штемель', de: 'Stemel', uk: 'Штемель' },
+    sundern_stockum: { id: 692, parent: 354, ru: 'Штоккум', de: 'Stockum', uk: 'Штоккум' },
+    sundern_westenfeld: { id: 693, parent: 354, ru: 'Вестенфельд', de: 'Westenfeld', uk: 'Вестенфельд' },
+
+    iserlohn_iserlohn: { id: 694, parent: 296, ru: 'Изерлон', de: 'Iserlohn', uk: 'Ізерлон' },
+    iserlohn_letmathe: { id: 695, parent: 296, ru: 'Летмате', de: 'Letmathe', uk: 'Летмате' },
+    iserlohn_hennen: { id: 696, parent: 296, ru: 'Хеннен', de: 'Hennen', uk: 'Хеннен' },
+    iserlohn_suemmern: { id: 697, parent: 296, ru: 'Зюммерн', de: 'Sümmern', uk: 'Зюммерн' },
+    iserlohn_oestrich: { id: 698, parent: 296, ru: 'Эстрих', de: 'Oestrich', uk: 'Естріх' },
+
+    luedenscheid_innenstadt: { id: 699, parent: 298, ru: 'Центр города', de: 'Innenstadt', uk: 'Центр міста' },
+    luedenscheid_tinsberg_kluse: { id: 700, parent: 298, ru: 'Тинсберг / Клузе', de: 'Tinsberg / Kluse', uk: 'Тінсберг / Клузе' },
+    luedenscheid_gruenewald: { id: 701, parent: 298, ru: 'Грюнвальд', de: 'Grünewald', uk: 'Грюнвальд' },
+    luedenscheid_honsel_eichholz: { id: 702, parent: 298, ru: 'Хонсель / Айххольц', de: 'Honsel / Eichholz', uk: 'Хонсель / Айхгольц' },
+    luedenscheid_oeneking_stuettinghausen: { id: 703, parent: 298, ru: 'Оенекинг / Штюттингхаузен', de: 'Oeneking / Stüttinghausen', uk: 'Оенекінг / Штюттінггаузен' },
+    luedenscheid_buckesfeld_othlinghausen: { id: 704, parent: 298, ru: 'Буксфельд / Отлингхаузен', de: 'Buckesfeld / Othlinghausen', uk: 'Буксфельд / Отлінггаузен' },
+    luedenscheid_wehberg: { id: 705, parent: 298, ru: 'Вехберг', de: 'Wehberg', uk: 'Вегберг' },
+    luedenscheid_kalve_wefelshohl: { id: 706, parent: 298, ru: 'Кальве / Вефельсхоль', de: 'Kalve / Wefelshohl', uk: 'Кальве / Вефельсголь' },
+    luedenscheid_gevelndorf_freisenberg: { id: 707, parent: 298, ru: 'Гевельндорф / Фрайзенберг', de: 'Gevelndorf / Freisenberg', uk: 'Гевельндорф / Фрайзенберг' },
+    luedenscheid_bruegge: { id: 708, parent: 298, ru: 'Брюгге', de: 'Brügge', uk: 'Брюгге' },
+    luedenscheid_ramsberg_hasley_baukloh: { id: 709, parent: 298, ru: 'Рамсберг / Хаслей / Баукloh', de: 'Ramsberg / Hasley / Baukloh', uk: 'Рамсберг / Хаслей / Баукloh' },
+    luedenscheid_vogelberg: { id: 710, parent: 298, ru: 'Вогельберг', de: 'Vogelberg', uk: 'Вогельберг' },
+    luedenscheid_wettringhof: { id: 711, parent: 298, ru: 'Веттрингhof', de: 'Wettringhof', uk: 'Веттрингhof' },
+    luedenscheid_dickenberg_eggenscheid: { id: 712, parent: 298, ru: 'Диккенберг / Эгеншайд', de: 'Dickenberg / Eggenscheid', uk: 'Диккенберг / Егеншайд' },
+
+    monschau_altstadt: { id: 659, parent: 185, ru: 'Исторический центр Моншау', de: 'Altstadt', uk: 'Історичний центр Моншау' },
+    monschau_hoefen: { id: 660, parent: 185, ru: 'Хёфен', de: 'Höfen', uk: 'Хьофен' },
+    monschau_imgenbroich: { id: 661, parent: 185, ru: 'Имгенбройх', de: 'Imgenbroich', uk: 'Імгенбройх' },
+    monschau_kalterherberg: { id: 662, parent: 185, ru: 'Кальтерхерберг', de: 'Kalterherberg', uk: 'Кальтерхерберг' },
+    monschau_konzen: { id: 663, parent: 185, ru: 'Концен', de: 'Konzen', uk: 'Концен' },
+    monschau_muetzenich: { id: 664, parent: 185, ru: 'Мютцених', de: 'Mützenich', uk: 'Мютценіх' },
+    monschau_rohren: { id: 665, parent: 185, ru: 'Рорен', de: 'Rohren', uk: 'Рорен' },
+
+    frechen_centrum: { id: 666, parent: 174, ru: 'Центральный район Фрехена', de: 'Zentrum', uk: 'Центральний район Фрехена' },
+    frechen_bachem: { id: 667, parent: 174, ru: 'Бахем', de: 'Bachem', uk: 'Бахем' },
+    frechen_buschbell: { id: 668, parent: 174, ru: 'Бушбель', de: 'Buschbell', uk: 'Бушбель' },
+    frechen_habbelrath: { id: 669, parent: 174, ru: 'Хаббелрат', de: 'Habbelrath', uk: 'Хаббелрат' },
+    frechen_koenigsdorf: { id: 670, parent: 174, ru: 'Кёнигсдорф', de: 'Königsdorf', uk: 'Кьонігсдорф' },
+    frechen_grefrath: { id: 671, parent: 174, ru: 'Грефрат', de: 'Grefrath', uk: 'Грефрат' },
+    frechen_huecheln: { id: 672, parent: 174, ru: 'Хюхельн', de: 'Hücheln', uk: 'Хюхельн' },
   },
   attractions: {
     // arnsberg округ

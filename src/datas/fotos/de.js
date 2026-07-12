@@ -11,10 +11,6 @@ export const Fotos = {
 
     // округ Кёльн
     koln_city: {
-      gallery: [
-        { path: "Germany/nrw/koln/koln-city/001.jpg", title: { ru: "Кельн 1", uk: "Кельн 1", de: "Köln 1" } },
-        { path: "Germany/nrw/koln/koln-city/021.jpg", title: { ru: "Кельн 2", uk: "Кельн 2", de: "Köln 2" } }
-      ],
       'rathaus-koeln': [
         { path: "Germany/nrw/koln/koln-city/rathaus-koeln/Rathaus-Köln.jpg", title: { ru: "Кёльнская ратуша (фото взято с википедии)", uk: "Кельнська ратуша (фото взято з Вікіпедії)", de: "Kölner Rathaus (Foto von Wikipedia entnommen)" } }
       ],
@@ -276,9 +272,6 @@ export const Fotos = {
       ],
     },
     bruhl: {
-      gallery: [
-        { path: "Germany/nrw/koln/Rhein-Erft-Kreis/bruhl/bruhl_palaces/013.jpg", title: { ru: "Дворцы Брюля: Аугустусбург, 2022", uk: "Палаци Брюля: Аугустусбург, 2022", de: "Brühler Schlösser: Augustusburg, 2022" } },
-      ],
       'phantasialand': [
         { path: "Germany/nrw/koln/Rhein-Erft-Kreis/bruhl/phantasialand/001.jpg", title: { ru: "Парк атракционов «Фантазия Ленд», 2006", uk: "Парк атракціонів «Фантазія Ленд», 2006", de: "Freizeitpark «Fantasia Land», 2006" } },
         { path: "Germany/nrw/koln/Rhein-Erft-Kreis/bruhl/phantasialand/002.jpg", title: { ru: "Скала-череп, 2006", uk: "Скеля-череп, 2006", de: "Schädel-Felsen, 2006" } },
@@ -326,9 +319,6 @@ export const Fotos = {
       ]
     },
     frechen: {
-      gallery: [
-        { path: "Germany/nrw/koln/Rhein-Erft-Kreis/frechen/johann_schmitz_platz_frechen/008.jpg", title: { ru: "Старая ратуша Фрехена, 2026", uk: "Стара ратуша Фрехена, 2026", de: "Altes Rathaus Frechen, 2026" } },
-      ],
       keramion: [
         { path: "Germany/nrw/koln/Rhein-Erft-Kreis/frechen/keramion/001.jpg", title: { ru: "KERAMION – Центр современной и исторической керамики, 2026", uk: "KERAMION – Центр сучасної та історичної кераміки, 2026", de: "KERAMION – Zentrum für zeitgenössische und historische Keramik, 2026" } },
         { path: "Germany/nrw/koln/Rhein-Erft-Kreis/frechen/keramion/002.jpg", title: { ru: "KERAMION – Центр современной и исторической керамики, 2026", uk: "KERAMION – Центр сучасної та історичної кераміки, 2026", de: "KERAMION – Zentrum für zeitgenössische und historische Keramik, 2026" } },
@@ -452,11 +442,7 @@ export const Fotos = {
         { path: "Germany/nrw/koln/Rhein-Sieg-Kreis/konigswinter/heisterbach/007.jpg", title: { ru: "Церковь Святого Петра в Хайстербахе, 2026", uk: "Церква Святого Петра в Гайстербасі, 2026", de: "Kirche St. Peter in Heisterbach, 2026" } },
       ]
     },
-    lohmar: {
-        gallery: [
-        { path: "Germany/nrw/koln/Rhein-Sieg-Kreis/lohmar/001.jpg", title: { ru: "Ломар, 2026", uk: "Ломар, 2026", de: "Lohmar, 2026" } },
-        { path: "Germany/nrw/koln/Rhein-Sieg-Kreis/lohmar/002.jpg", title: { ru: "Ломар, 2026", uk: "Ломар, 2026", de: "Lohmar, 2026" } },
-      ],    
+    lohmar: {   
       st_johannes_enthauptung_lohmar: [
         { path: "Germany/nrw/koln/Rhein-Sieg-Kreis/lohmar/st_johannes_enthauptung/001.jpg", title: { ru: "Церковь Святого Иоанна Крестителя, 2026", uk: "Церква Святого Іоанна Хрестителя, 2026", de: "Kirche St. Johannes Enthauptung, 2026" } },
         { path: "Germany/nrw/koln/Rhein-Sieg-Kreis/lohmar/st_johannes_enthauptung/002.jpg", title: { ru: "Церковь Святого Иоанна Крестителя, 2026", uk: "Церква Святого Іоанна Хрестителя, 2026", de: "Kirche St. Johannes Enthauptung, 2026" } },
@@ -470,10 +456,6 @@ export const Fotos = {
       ],
     },
     monschau: {
-      gallery: [
-        { path: "Germany/nrw/koln/Aachen/monschau/002.jpg", title: { ru: "Моншау, 2025", uk: "Моншау, 2025", de: "Monschau, 2025" } },
-        { path: "Germany/nrw/koln/Aachen/monschau/001.jpg", title: { ru: "Моншау, 2025", uk: "Моншау, 2025", de: "Monschau, 2025" } },
-      ],
       historic_center_monschau: [
         { path: "Germany/nrw/koln/Aachen/monschau/001.jpg", title: { ru: "Старый город Моншау, 2025", uk: "Старе місто Моншау, 2025", de: "Altstadt Monschau, 2025" } },
         { path: "Germany/nrw/koln/Aachen/monschau/002.jpg", title: { ru: "Старый город Моншау, 2025", uk: "Старе місто Моншау, 2025", de: "Altstadt Monschau, 2025" } },
@@ -511,10 +493,6 @@ export const Fotos = {
 
     // округ Düsseldorf
     velbert: {
-      gallery: [
-        { path: "Germany/nrw/dusseldorf/mettmann/velbert/langenberg_altstadt/001.jpg", title: { ru: "Старый город Лангенберг (фото взято с интернета)", uk: "Старе місто Лангенберг (фото взято з Інтернету)", de: "Altstadt Langenberg (Foto aus dem Internet)" } },
-        { path: "Germany/nrw/dusseldorf/mettmann/velbert/burgerhaus/001.jpg", title: { ru: "Исторический общественный дом Лангенберга, 2025", uk: "Історичний громадський будинок Лангенберга, 2025", de: "Historisches Bürgerhaus Langenberg, 2025" } },
-      ],
       langenberg_altstadt_velbert: [
         { path: "Germany/nrw/dusseldorf/mettmann/velbert/langenberg_altstadt/001.jpg", title: { ru: "Старый город Лангенберг (фото взято с интернета)", uk: "Старе місто Лангенберг (фото взято з Інтернету)", de: "Altstadt Langenberg (Foto aus dem Internet)" } },
         { path: "Germany/nrw/dusseldorf/mettmann/velbert/langenberg_altstadt/002.jpg", title: { ru: "Старый город Лангенберг, 2025", uk: "Старе місто Лангенберг, 2025", de: "Altstadt Langenberg, 2025" } },
@@ -538,9 +516,6 @@ export const Fotos = {
 
     // округ Арнсберг
     dortmund: {
-      gallery: [
-        { path: "Germany/nrw/arnsberg/dortmund/001.jpg", title: { ru: "Дортмунд (фото взято с интернета)", uk: "Дортмунд (фото взято з Інтернету)", de: "Dortmund (Foto aus dem Internet)" } },
-      ],
       westfalenpark: [
         { path: "Germany/nrw/arnsberg/dortmund/westfalenpark/001.jpg", title: { ru: "Вестфаленпарк, 2023", uk: "Вестфаленпарк, 2023", de: "Westfalenpark, 2023" } },
         { path: "Germany/nrw/arnsberg/dortmund/westfalenpark/002.jpg", title: { ru: "Вестфаленпарк, 2023", uk: "Вестфаленпарк, 2023", de: "Westfalenpark, 2023" } },
@@ -590,10 +565,6 @@ export const Fotos = {
       ]
     },
     luedenscheid: {
-      gallery: [
-        { path: "Germany/nrw/arnsberg/Märkischer-Kreis/luedenscheid/altstadt_luedenscheid/004.jpg", title: { ru: "Старый город Люденшайда, 2026", uk: "Старе місто Люденшайда, 2026", de: "Altstadt Lüdenscheid, 2026" } },
-        { path: "Germany/nrw/arnsberg/Märkischer-Kreis/luedenscheid/002.JPG", title: { ru: "Люденшайд, 2006", uk: "Люденшайд, 2006", de: "Lüdenscheid, 2006" } },
-      ],
       altstadt_luedenscheid: [
         { path: "Germany/nrw/arnsberg/Märkischer-Kreis/luedenscheid/altstadt_luedenscheid/007.jpg", title: { ru: "Старый город Люденшайда, 2026", uk: "Старе місто Люденшайда, 2026", de: "Altstadt Lüdenscheid, 2026" } },
         { path: "Germany/nrw/arnsberg/Märkischer-Kreis/luedenscheid/altstadt_luedenscheid/003.jpg", title: { ru: "Старый город Люденшайда, 2026", uk: "Старе місто Люденшайда, 2026", de: "Altstadt Lüdenscheid, 2026" } },
@@ -681,15 +652,7 @@ export const Fotos = {
         { path: "Germany/nrw/arnsberg/Märkischer-Kreis/luedenscheid/altstadt_luedenscheid/stadtbücherei//001.jpg", title: { ru: "Городская библиотека Люденшайда, 2026", uk: "Міська бібліотека Люденшайда, 2026", de: "Stadtbücherei Lüdenscheid, 2026" } },
       ],
     },
-    iserlohn: {
-      gallery: [
-        { path: "Germany/nrw/arnsberg/Märkischer-Kreis/iserlohn/001.jpg", title: { ru: "Изерлон (фото взято с википедии)", uk: "Альтена (фото взято з Вікіпедії)", de: "Iserlohn (Foto von Wikipedia entnommen)" } },
-      ],
-    },
     altena: {
-      gallery: [
-        { path: "Germany/nrw/arnsberg/Märkischer-Kreis/altena/001.jpg", title: { ru: "Альтена, 2025", uk: "Альтена, 2025", de: "Altena, 2025" } },
-      ],
       burg_altena: [
         { path: "Germany/nrw/arnsberg/Märkischer-Kreis/altena/burg/001.jpg", title: { ru: "Замок Альтена, 2025", uk: "Замок Альтена, 2025", de: "Burg Altena, 2025" } },
         { path: "Germany/nrw/arnsberg/Märkischer-Kreis/altena/burg/002.jpg", title: { ru: "Замок Альтена, 2023", uk: "Замок Альтена, 2023", de: "Burg Altena, 2023" } },
@@ -744,9 +707,6 @@ export const Fotos = {
 
   rheinland_pfalz: {
     trier: {
-      gallery: [
-        { path: "Germany/rheinland-pfalz/trier-city/altstadt/portaNigra_trier/001.jpg", title: { ru: "Порта Нигра, 2024", uk: "Порта Нігра («Чорні ворота»), 2024", de: "Porta Nigra, 2024" } },
-      ],
       altstadt_trier: [
         { path: "Germany/rheinland-pfalz/trier-city/altstadt/001.jpg", title: { ru: "Старый город Трира, 2024", uk: "Старе місто Тріра, 2024", de: "Altstadt Trier, 2024" } },
         { path: "Germany/rheinland-pfalz/trier-city/altstadt/002.jpg", title: { ru: "Главная рыночная площадь, 2024", uk: "Головна ринкова площа, 2024", de: "Hauptmarkt Trier, 2024" } },
@@ -832,10 +792,6 @@ export const Fotos = {
       ],
     },
     saarburg: {
-      gallery: [
-        { path: "Germany/rheinland-pfalz/trier_saarburg/saarburg_kell/saarburg/001.jpg", title: { ru: "Саарбург, 2024", uk: "Саарбург, 2024", de: "Saarburg, 2024" } },
-        { path: "Germany/rheinland-pfalz/trier_saarburg/saarburg_kell/saarburg/002.jpg", title: { ru: "Саарбург, 2024", uk: "Саарбург, 2024", de: "Saarburg, 2024" } },
-      ],
       altstadt_saarburg: [
         { path: "Germany/rheinland-pfalz/trier_saarburg/saarburg_kell/saarburg/altstadt/001.jpg", title: { ru: "Старый город Саарбурга, 2024", uk: "Старе місто Саарбурга, 2024", de: "Altstadt Saarburg, 2024" } },
         { path: "Germany/rheinland-pfalz/trier_saarburg/saarburg_kell/saarburg/altstadt/002.jpg", title: { ru: "Старый город Саарбурга, 2024", uk: "Старе місто Саарбурга, 2024", de: "Altstadt Saarburg, 2024" } },
@@ -861,10 +817,6 @@ export const Fotos = {
       ]
     },
     koblenz: {
-      gallery: [
-        { path: "Germany/rheinland-pfalz/koblenz/002.jpg", title: { ru: "Кобленц, 2023", uk: "Кобленц, 2023", de: "Koblenz, 2023" } },
-        { path: "Germany/rheinland-pfalz/koblenz/001.jpg", title: { ru: "Кобленц, 2023", uk: "Кобленц, 2023", de: "Koblenz, 2023" } },
-      ],
       ehrenbreitstein_koblenz: [
         { path: "Germany/rheinland-pfalz/koblenz/ehrenbreitstein/001.jpg", title: { ru: "Крепость Эренбрайтштайн, 2023", uk: "Фортеця Еренбрайтштайн, 2023", de: "Festung Ehrenbreitstein, 2023" } },
         { path: "Germany/rheinland-pfalz/koblenz/ehrenbreitstein/002.jpg", title: { ru: "Крепость Эренбрайтштайн, 2023", uk: "Фортеця Еренбрайтштайн, 2023", de: "Festung Ehrenbreitstein, 2023" } },

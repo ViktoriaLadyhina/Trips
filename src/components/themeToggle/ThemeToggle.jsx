@@ -1,24 +1,24 @@
-import { useState, useEffect } from "react";
+import { useEffect } from "react";
+import { useDispatch, useSelector } from "react-redux";
 import { AiOutlineMoon } from "react-icons/ai";
 import { PiSun } from "react-icons/pi";
+
+import { setTheme } from "../../store/features/theme";
+
 import "./themeToggle.scss";
 
 const ThemeToggle = () => {
-  
-  // Локальное состояние темы
-  const [theme, setTheme] = useState(() => {
-    return localStorage.getItem("theme") || "light";
-  });
+  const dispatch = useDispatch();
 
-  // Синхронизация темы с HTML и localStorage
+  const { theme } = useSelector((state) => state.theme);
+
   useEffect(() => {
     document.documentElement.setAttribute("data-theme", theme);
     localStorage.setItem("theme", theme);
   }, [theme]);
 
-  // Переключение темы
   const toggleTheme = () => {
-    setTheme(prev => (prev === "light" ? "dark" : "light"));
+    dispatch(setTheme(theme === "light" ? "dark" : "light"));
   };
 
   return (
