@@ -89,16 +89,6 @@ router.get("/:path", async (req, res) => {
         name: item.name || ""
       }));
 
-    const communes = childrenRows
-      .filter(item => item.type === "commune")
-      .map(item => ({
-        id: item.id,
-        path: item.path,
-        type: item.type,
-        is_active: Boolean(item.is_active),
-        name: item.name || ""
-      }));
-
     // 7. PHOTOS (NEW SYSTEM)
     const { photos, mainPhoto } = await getEntityPhotos(db, region.id);
 
@@ -114,7 +104,6 @@ router.get("/:path", async (req, res) => {
 
       discriptRegions,
       cities,
-      communes,
       meta,
 
       photos,

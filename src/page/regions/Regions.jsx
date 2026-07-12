@@ -166,31 +166,6 @@ useEffect(() => {
                         </ul>
                     </div>
                 )}
-
-                {/* Коммуны */}
-                {region.communes?.length > 0 && (
-                    <div>
-                        <h2 className="regions__sidebar-title">{regionTitlesByType["commune"]?.[lang]}</h2>
-                        <ul className="regions__sidebar-list">
-                            {region.communes?.map((com) => (
-                                <li key={com.id} className="regions__sidebar-item">
-                                    {com.is_active ? (
-                                        <Link
-                                            to={`/${countryPath}/${regionPath}/city/${com.path}`}
-                                            className="regions__sidebar-link"
-                                        >
-                                            {com.name}
-                                        </Link>
-                                    ) : (
-                                        <span className="regions__sidebar-link regions__sidebar-link--disabled">
-                                            {com.name}
-                                        </span>
-                                    )}
-                                </li>
-                            ))}
-                        </ul>
-                    </div>
-                )}
             </aside>
 
             <section className="regions__content">

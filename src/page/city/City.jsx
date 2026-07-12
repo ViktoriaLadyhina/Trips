@@ -13,9 +13,10 @@ import datas from '../../datas/minimalIndex.js'
 import { useEffect, useState } from 'react';
 import { getCity } from '../../api/api.js';
 import { TextBlock } from '../../components/renders/TextBlock.jsx';
-import { prepareEntityBlocks } from '../../utils/entityHelpers.js';
+import { getEntityName, prepareEntityBlocks } from '../../utils/entityHelpers.js';
 import { PhotoBlock } from '../../components/renders/PhotoBlock.jsx';
 import { toFullUrl } from '../../utils/photo.js';
+import { MapBlock } from '../../components/renders/MapBlock.jsx';
 
 const BASE_PHOTO_URL = import.meta.env.VITE_BASE_PHOTO_URL;
 
@@ -29,8 +30,6 @@ const City = () => {
     const [error, setError] = useState(null);
     const { blocks, langData } = prepareEntityBlocks(city?.blocks);
     const meta = city?.meta;
-
-    console.log("city", city);
 
     // фетч запрос
     useEffect(() => {
@@ -52,7 +51,8 @@ const City = () => {
     if (error) return <p>{error}</p>;
     if (!city) return <p>Loading...</p>;
 
-    const photo = city?.mainPhoto;
+    const getPhoto = (index) => city.photos?.find(p => p.sort_order === index);
+
     const cityEvents = events?.filter(ev => ev.cities?.includes(cityPath)) || [];
 
     const context = {
@@ -60,14 +60,21 @@ const City = () => {
         langData,
         countryPath, regionPath, districtPath, cityPath,
         city,
-        photo,
         path: `/${countryPath}/${regionPath}/attractions`,
-        className: "city__photo",
         classPrefix: "city",
+        photos: {
+            photo_1: getPhoto(1),
+            photo_2: getPhoto(2),
+        },
+        photoClasses: {
+            photo_1: "city__gerb",
+            photo_2: "city__photo city__photo--left",
+            photo_3: "city__photo",
+        }
     };
 
     const blockRegistry = {
-        name: TextBlock,
+        // name: TextBlock,
         capital: TextBlock,
         population: TextBlock,
         area: TextBlock,
@@ -81,26 +88,37 @@ const City = () => {
         interestingFacts: TextBlock,
         briefHistory: TextBlock,
 
-        photo: PhotoBlock,
+        photo_1: PhotoBlock,
+        photo_2: PhotoBlock,
+        photo_3: PhotoBlock,
+
+        map: MapBlock,
+        path: `/${countryPath}/${regionPath}/${districtPath}/${cityPath}/attractions`,
     };
 
-    const renderBlock = (block) => {
-        const Renderer = blockRegistry[block.block_key];
+const renderBlock = (block) => {
+    const Renderer = blockRegistry[block.block_key];
+    if (!Renderer) return null;
 
-        if (!Renderer) return null;
+    return (
+        <Renderer
+            block={block}
+            photo={getPhoto(Number(block.block_key.replace("photo_", "")))}
+            className={context.photoClasses[block.block_key]}
+            {...context}
+        />
+    );
+};
 
-        return <Renderer block={block} {...context} />;
-    };
-
-
+const cityName = getEntityName(city);
     // Хлебные крошки
     const crumbs = [
         { label: lang === "ru" ? "Главная" : lang === "de" ? "Startseite" : "Головна", path: "/" },
         { label: datas.countries[countryPath][lang], path: `/${countryPath}` },
         { label: datas.regions[regionPath][lang], path: `/${countryPath}/${regionPath}` },
         ...(districtPath !== "city" ? [{ label: datas.districts[districtPath][lang], path: `/${countryPath}/${regionPath}/${districtPath}` }] : []),
-        ...(districtPath !== "city" ? [{ label: datas.districts[districtPath][lang] }] : []),
-        { label: city.name }
+        ...(districtPath !== "city" ? [{ label: datas.subRegions[city.parent_path][lang] }] : []),
+        { label: cityName || "" }
     ];
 
     return (
@@ -122,54 +140,14 @@ const City = () => {
                     
 
                     <div className='city__container'>
-                        {city.name && <h1 className='city__title'>{city.name}</h1>}
+
+                        <BreadCrumbs crumbs={crumbs} />
+
+                        <h1 className='city__name'>{cityName}</h1>
 
                         <BtnAttr lang={lang} path={`/${countryPath}/${regionPath}/${districtPath}/${cityPath}/attractions`} />
 
-
-                        <div className='city__desc'>
-                            {city?.gerb && (
-                                <div className='city__desc-gerb'>
-                                    <img src={`${BASE_PHOTO_URL}${city.gerb}`} alt={city.name} />
-                                </div>
-                            )}
-
-
-                            {city.desc?.general && (<InfoBlock data={city.desc.general} className="city__desc-general" />)}
-
-                            {/* {photos?.[regionPath]?.[cityPath]?.gallery?.[0] && (
-                                <img
-                                    src={`${BASE_PHOTO_URL}${photos[regionPath][cityPath].gallery[0].path}`}
-                                    alt={photos[regionPath][cityPath].gallery[0].title?.[lang]}
-                                    className='city__foto city__foto--right'
-                                />
-                            )} */}
-
-                            {city.desc?.population && (<InfoBlock data={city.desc.population} className="city__desc-population" />)}
-                            {city.desc?.area && (<InfoBlock data={city.desc.area} className="city__desc-area" />)}
-                            {city.desc?.code && (<InfoBlock data={city.desc.postalCode} className="city__desc-postalCode" />)}
-                            {city.desc?.phone && (<InfoBlock data={city.desc.phone} className="city__desc-phone" />)}
-                            {city.desc?.education && (<InfoBlock data={city.desc.education} className="city__desc-phone" />)}
-                            {city.desc?.culture && (<InfoBlock data={city.desc.culture} className="city__desc-phone" />)}
-                            {city.desc?.officialSite && (<InfoBlock data={city.desc.officialSite} className="city__desc-officialSite" />)}
-                            {city.admin && (<InfoBlock data={city.admin} className="city__desc-admin" />)}
-                            {city.notablePeople && (<InfoBlock data={city.notablePeople} className="city__desc-notablePeople" />)}
-                            {/* 
-                            {photos?.[regionPath]?.[cityPath]?.gallery?.[1] && (
-                                <img
-                                    src={`${BASE_PHOTO_URL}${photos?.[regionPath]?.[cityPath]?.gallery?.[1].path}`}
-                                    alt={photos?.[regionPath]?.[cityPath]?.gallery?.[1].title?.[lang]}
-                                    className='city__foto'
-                                />
-                            )} */}
-
-                            {city.geography && (<InfoBlock data={city.geography} className="city__desc-geography" />)}
-                            {city.interestingFacts && (<InfoBlock data={city.interestingFacts} className="city__desc-interestingFacts" />)}
-                            {city.briefHistory && (<InfoBlock data={city.briefHistory} className="city__desc-history" />)}
-                        </div>
-
                         <section className="city__content">
-                            <BreadCrumbs crumbs={crumbs} />
 
                             {blocks?.length > 0 && blocks.map(block => (
                                 <div key={block.block_key}>
