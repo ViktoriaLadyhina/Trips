@@ -35,13 +35,21 @@ const Regions = () => {
 
     const { blocks, langData } = prepareEntityBlocks(region?.blocks);
 
-    // фетч запрос
-    useEffect(() => {
-        if (!regionPath) return;
-        getRegion(regionPath, lang)
-            .then(setRegion)
-            .catch(err => setError(err.message))
-    }, [regionPath, lang]);
+useEffect(() => {
+    if (!regionPath) return;
+
+    let active = true;
+
+    getRegion(regionPath, lang)
+        .then(data => {
+            if (active) setRegion(data);
+        })
+        .catch(err => setError(err.message));
+
+    return () => {
+        active = false;
+    };
+}, [regionPath, lang]);
 
     if (error) return <p>{error}</p>;
     if (!region) return <div>{loadingRegion[lang]}</div>;
@@ -151,31 +159,6 @@ const Regions = () => {
                                     ) : (
                                         <span className="regions__sidebar-link regions__sidebar-link--disabled">
                                             {city.name}
-                                        </span>
-                                    )}
-                                </li>
-                            ))}
-                        </ul>
-                    </div>
-                )}
-
-                {/* Коммуны */}
-                {region.communes?.length > 0 && (
-                    <div>
-                        <h2 className="regions__sidebar-title">{regionTitlesByType["commune"]?.[lang]}</h2>
-                        <ul className="regions__sidebar-list">
-                            {region.communes?.map((com) => (
-                                <li key={com.id} className="regions__sidebar-item">
-                                    {com.is_active ? (
-                                        <Link
-                                            to={`/${countryPath}/${regionPath}/city/${com.path}`}
-                                            className="regions__sidebar-link"
-                                        >
-                                            {com.name}
-                                        </Link>
-                                    ) : (
-                                        <span className="regions__sidebar-link regions__sidebar-link--disabled">
-                                            {com.name}
                                         </span>
                                     )}
                                 </li>

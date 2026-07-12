@@ -62,10 +62,6 @@ export const Fotos = {
   },
   luxembourg_canton: {
     luxembourg_city: {
-      gallery: [
-        { path: "Luxembourg/luxembourg_canton/luxembourg_city/001.jpg", title: { ru: 'Люксембург, 2024', de: 'Luxemburg, 2024', uk: 'Люксембург, 2024' } },
-        { path: "Luxembourg/luxembourg_canton/luxembourg_city/old_town/004.jpg", title: { ru: 'Старый город Люксембурга, 2024', de: 'Altstadt Luxemburg, 2024', uk: 'Старе місто Люксембурга, 2024' } },
-      ],
       musee_drai_eechelen_luxembourg: [
         { path: "Luxembourg/luxembourg_canton/luxembourg_city/musee_drai_eechelen/001.jpg", title: { ru: 'Музей «Три жёлудя», 2024', de: 'Museum „Drei Eicheln“, 2024', uk: 'Музей «Три жолуді», 2024' } },
       ],

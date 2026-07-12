@@ -3,7 +3,7 @@ const datas = [
         id: "karneval_koln",
         path: "karneval_koln",
         countryPath: "germany", regionPath: "nrw", districtPath: "city", cityPath: "koln_city",
-        cities: ["koln", "frechen", "bruhl"],
+        cities: ["koln_city", "frechen", "bruhl"],
         season: "spring", type: ["festival"],
         fotoCard: "Germany/nrw/koln/koln-city/karneval/001.jpg",
         translations: {
