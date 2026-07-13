@@ -16,9 +16,25 @@ import { getEntityName, prepareEntityBlocks } from "../../utils/entityHelpers.js
 import { TextBlock } from "../../components/renders/TextBlock.jsx";
 import { PhotoBlock } from "../../components/renders/PhotoBlock.jsx";
 import { MapBlock } from "../../components/renders/MapBlock.jsx";
+import SkeletonRenderer from "../../components/skeleton/SkeletonRenderer.jsx";
 
 const BASE_PHOTO_URL = import.meta.env.VITE_BASE_PHOTO_URL;
-const loadingDistrict = { ru: "Загрузка района...", de: "Region wird geladen...", uk: "Завантаження району..." };
+
+const SkeletonList = [
+  { type: "title" },
+  { type: "map" },
+  {
+    type: "text", props: {
+      hasTitle: false,
+      lines: 6,
+      hasPhoto: true,
+      photoPosition: "right",
+    }
+  },
+  { type: "subregion", props: { cities: 5 } },
+  { type: "subregion", props: { cities: 4 } },
+  { type: "subregion", props: { cities: 7 } },
+];
 
 const District = () => {
   const { countryPath, regionPath, districtPath } = useParams();
@@ -28,50 +44,64 @@ const District = () => {
   const [subRegions, setSubRegions] = useState(null);
   const [cities, setCities] = useState([]);
   const [error, setError] = useState(null);
-  const [loading, setLoading] = useState(false);
+  const [loading, setLoading] = useState(true);
+
 
   const meta = district?.meta;
   const { blocks, langData } = prepareEntityBlocks(district?.blocks);
 
   const subRegionRefs = useRef({});
 
-  useEffect(() => {
+useEffect(() => {
     if (!districtPath || !regionPath) return;
 
     const controller = new AbortController();
 
     const fetchData = async () => {
-      try {
-        setError(null);
-        setLoading(true);
+        try {
+            setError(null);
+            setLoading(true);
 
-        const [districtData, citiesData, subRegionsData] =
-          await Promise.all([
-            getDistrict(districtPath, lang, controller.signal),
-            getMapCities(regionPath, lang, controller.signal),
-            getSubregions(districtPath, lang, controller.signal),
-          ]);
+            setDistrict(null);
+            setCities([]);
+            setSubRegions([]);
 
-        setDistrict(districtData);
-        setCities(citiesData?.cities || []);
-        setSubRegions(subRegionsData || []);
-      } catch (err) {
-        if (err.name !== "AbortError") {
-          setError(err.message);
+            const [districtData, citiesData, subRegionsData] =
+                await Promise.all([
+                    getDistrict(districtPath, lang, controller.signal),
+                    getMapCities(regionPath, lang, controller.signal),
+                    getSubregions(districtPath, lang, controller.signal),
+                ]);
+
+            if (!controller.signal.aborted) {
+                setDistrict(districtData);
+                setCities(citiesData?.cities || []);
+                setSubRegions(subRegionsData || []);
+
+                setLoading(false);
+            }
+
+        } catch (err) {
+            if (err.name !== "AbortError") {
+                setError(err.message);
+                setLoading(false);
+            }
         }
-      } finally {
-        setLoading(false);
-      }
     };
 
     fetchData();
 
     return () => controller.abort();
-  }, [districtPath, regionPath, lang]);
+
+}, [districtPath, regionPath, lang]);
 
   if (error) return <p>{error}</p>;
-  if (!district) return <p>{loadingDistrict[lang]}</p>;
-  if (loading) return <div>Loading...</div>;
+
+  if (loading || !district) {
+    return (
+      <SkeletonRenderer blocks={SkeletonList} />
+    );
+  }
 
   // Функция клика по субрегиону
   const scrollToSubRegion = (reg) => {
@@ -130,10 +160,6 @@ const District = () => {
 
     return <Renderer block={block} {...context} />;
   };
-
-  if (error) return <p>{error}</p>;
-  if (!district) return <p>{loadingDistrict[lang]}</p>;
-  if (loading) return <div>Loading...</div>;
 
   const crumbs = [
     { label: lang === "ru" ? "Главная" : lang === "de" ? "Startseite" : "Головна", path: "/" },

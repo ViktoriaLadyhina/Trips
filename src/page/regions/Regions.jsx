@@ -14,6 +14,7 @@ import { prepareEntityBlocks } from '../../utils/entityHelpers.js';
 import { TextBlock } from '../../components/renders/TextBlock.jsx';
 import { PhotoBlock } from '../../components/renders/PhotoBlock.jsx';
 import { MapBlock } from '../../components/renders/MapBlock.jsx';
+import SkeletonRenderer from '../../components/skeleton/SkeletonRenderer.jsx';
 
 const BASE_PHOTO_URL = import.meta.env.VITE_BASE_PHOTO_URL;
 const regionTitlesByType = {
@@ -21,7 +22,35 @@ const regionTitlesByType = {
     city: { ru: "Свободные города", uk: "Вільні міста", de: "Kreisfreie Städte" },
     commune: { ru: "Коммуны и населённые пункты", uk: "Громади та населені пункти", de: "Gemeinden und Ortschaften" }
 };
-const loadingRegion = { ru: "Загрузка региона...", de: "Region wird geladen...", uk: "Завантаження регіону..." };
+
+const SkeletonList = [
+    { type: "sidebar", props: { items: 10 } },
+    {
+        type: "content", props: {
+            blocks: [
+                { type: "title" },
+                { type: "map" },
+                {
+                    type: "text", props: {
+                        hasTitle: false,
+                        lines: 8,
+                        hasPhoto: true,
+                        photoPosition: "right",
+                    }
+                },
+                {
+                    type: "text", props: {
+                        hasTitle: true,
+                        lines: 6,
+                        hasPhoto: true,
+                        photoPosition: "left",
+                    }
+                },
+                { type: "text", props: { hasTitle: true, lines: 6 } }
+            ]
+        }
+    }
+];
 
 const Regions = () => {
     const { countryPath, regionPath } = useParams();
@@ -35,24 +64,44 @@ const Regions = () => {
 
     const { blocks, langData } = prepareEntityBlocks(region?.blocks);
 
-useEffect(() => {
-    if (!regionPath) return;
+    const [loading, setLoading] = useState(true);
 
-    let active = true;
+    useEffect(() => {
+        if (!regionPath) return;
 
-    getRegion(regionPath, lang)
-        .then(data => {
-            if (active) setRegion(data);
-        })
-        .catch(err => setError(err.message));
+        let active = true;
 
-    return () => {
-        active = false;
-    };
-}, [regionPath, lang]);
+        setLoading(true);
+        setRegion(null);
+        setError(null);
+
+        getRegion(regionPath, lang)
+            .then(data => {
+                if (active) {
+                    setRegion(data);
+                    setLoading(false);
+                }
+            })
+            .catch(err => {
+                if (active) {
+                    setError(err.message);
+                    setLoading(false);
+                }
+            });
+
+        return () => {
+            active = false;
+        };
+
+    }, [regionPath, lang]);
 
     if (error) return <p>{error}</p>;
-    if (!region) return <div>{loadingRegion[lang]}</div>;
+
+    if (loading || !region) {
+        return (
+            <SkeletonRenderer blocks={SkeletonList} layout="sidebar" />
+        );
+    }
 
     const photo = region?.mainPhoto;
 

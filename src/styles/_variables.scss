@@ -36,6 +36,10 @@
   /* цвета текста sidebar */  
   --color-sidebar-text: #333;
 
+    /* Skeleton */
+    --color-skeleton-bg: #e5e5e5;
+    --color-skeleton-highlight: rgba(255,255,255,0.7);
+
 }
 
 /* ===== Цвета для темной темы ===== */
@@ -54,6 +58,9 @@
   --color-heading-h2: red;
   --color-heading-h3: #B3B3B3;
   --color-sidebar-text: #eee;
+
+    --color-skeleton-bg: #2a2a2a;
+    --color-skeleton-highlight: rgba(255,255,255,0.12);
 }
 
 /* ===== Миксины ===== */

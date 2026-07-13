@@ -14,6 +14,7 @@ import { TextBlock } from '../../components/renders/TextBlock.jsx';
 import { MapBlock } from '../../components/renders/MapBlock.jsx';
 import { RoutesBlock } from '../../components/renders/RoutesBlock.jsx';
 import { getEntityName, prepareEntityBlocks } from '../../utils/entityHelpers.js';
+import SkeletonRenderer from '../../components/skeleton/SkeletonRenderer.jsx';
 
 const BASE_PHOTO_URL = import.meta.env.VITE_BASE_PHOTO_URL;
 
@@ -23,7 +24,34 @@ const regionTitlesByType = {
     oblast: { ru: "Области", uk: "Області", de: "Regionen" }
 };
 
-const loadingCountry = { ru: "Загрузка страны...", de: "Land wird geladen...", uk: "Завантаження країни..." };
+    const SkeletonList = [
+        { type: "sidebar", props: { items: 10 } },
+        {
+            type: "content", props: {
+                blocks: [
+                    { type: "title" },
+                    { type: "map" },
+                    {
+                        type: "text", props: {
+                            hasTitle: false,
+                            lines: 8,
+                            hasPhoto: true,
+                            photoPosition: "right",
+                        }
+                    },
+                    {
+                        type: "text", props: {
+                            hasTitle: true,
+                            lines: 6,
+                            hasPhoto: true,
+                            photoPosition: "left",
+                        }
+                    },
+                    { type: "text", props: { hasTitle: true, lines: 6 } }
+                ]
+            }
+        }
+    ];
 
 const Country = () => {
     const { countryPath } = useParams();
@@ -33,19 +61,37 @@ const Country = () => {
     const [country, setCountry] = useState(null);
     const [error, setError] = useState(null);
     const { blocks, langData } = prepareEntityBlocks(country?.blocks);
+    const [loading, setLoading] = useState(true);
+
 
     // фетч запрос
-    useEffect(() => {
-        if (!countryPath) return;
-        getCountry(countryPath, lang)
-            .then(setCountry)
-            .catch(err => setError(err.message))
-    }, [countryPath, lang]);
+useEffect(() => {
 
-    if (!country) return <p>Country not found</p>;
+    if (!countryPath) return;
+
+    setLoading(true);
+    setCountry(null);
+    setError(null);
+
+    getCountry(countryPath, lang)
+        .then(data => {
+            setCountry(data);
+            setLoading(false);
+        })
+        .catch(err => {
+            setError(err.message);
+            setLoading(false);
+        });
+
+}, [countryPath, lang]);
 
     if (error) return <p>{error}</p>;
-    if (!country) return <div>{loadingCountry[lang]}</div>;
+
+    if (loading || !country) {
+        return (
+            <SkeletonRenderer blocks={SkeletonList} layout="sidebar" />
+        );
+    }
 
     const mapRegions = (country?.regions || []).map(region => ({
         id: region.id,

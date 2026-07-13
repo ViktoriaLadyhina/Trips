@@ -17,8 +17,58 @@ import { getEntityName, prepareEntityBlocks } from '../../utils/entityHelpers.js
 import { PhotoBlock } from '../../components/renders/PhotoBlock.jsx';
 import { toFullUrl } from '../../utils/photo.js';
 import { MapBlock } from '../../components/renders/MapBlock.jsx';
+import SkeletonRenderer from '../../components/skeleton/SkeletonRenderer.jsx';
 
 const BASE_PHOTO_URL = import.meta.env.VITE_BASE_PHOTO_URL;
+
+const SkeletonList = [
+    { type: "title" },
+    {
+        type: "text", props: {
+            hasTitle: false,
+            lines: 4,
+            hasPhoto: true,
+            photoPosition: "right",
+        }
+    },
+    {
+        type: "text", props: {
+            hasTitle: false,
+            lines: 6,
+            hasPhoto: true,
+            photoPosition: "left",
+        }
+    },
+    {
+        type: "text", props: {
+            hasTitle: true,
+            lines: 6,
+            hasPhoto: false
+        }
+    },
+    {
+        type: "text", props: {
+            hasTitle: true,
+            lines: 5,
+            hasPhoto: false
+        }
+    },
+    {
+        type: "text", props: {
+            hasTitle: false,
+            lines: 6,
+            hasPhoto: true,
+            photoPosition: "right",
+        }
+    },
+    {
+        type: "text", props: {
+            hasTitle: true,
+            lines: 7,
+            hasPhoto: false
+        }
+    },
+];
 
 const City = () => {
     const { countryPath, regionPath, districtPath, cityPath } = useParams();
@@ -29,6 +79,7 @@ const City = () => {
     const [city, setCity] = useState(null);
     const [error, setError] = useState(null);
     const { blocks, langData } = prepareEntityBlocks(city?.blocks);
+    const [loading, setLoading] = useState(true);
     const meta = city?.meta;
 
     // фетч запрос
@@ -37,19 +88,39 @@ const City = () => {
 
         let active = true;
 
+        setLoading(true);
+        setCity(null);
+        setError(null);
+
         getCity(cityPath, lang)
             .then(data => {
-                if (active) setCity(data);
+
+                    if (active) {
+                        setCity(data);
+                        setLoading(false);
+                    }
             })
-            .catch(err => setError(err.message));
+            .catch(err => {
+                if (active) {
+                    setError(err.message);
+                    setLoading(false);
+                }
+            });
+
 
         return () => {
             active = false;
         };
+
     }, [cityPath, lang]);
 
     if (error) return <p>{error}</p>;
-    if (!city) return <p>Loading...</p>;
+
+    if (loading || !city) {
+        return (
+            <SkeletonRenderer blocks={SkeletonList} />
+        );
+    }
 
     const getPhoto = (index) => city.photos?.find(p => p.sort_order === index);
 
@@ -96,21 +167,21 @@ const City = () => {
         path: `/${countryPath}/${regionPath}/${districtPath}/${cityPath}/attractions`,
     };
 
-const renderBlock = (block) => {
-    const Renderer = blockRegistry[block.block_key];
-    if (!Renderer) return null;
+    const renderBlock = (block) => {
+        const Renderer = blockRegistry[block.block_key];
+        if (!Renderer) return null;
 
-    return (
-        <Renderer
-            block={block}
-            photo={getPhoto(Number(block.block_key.replace("photo_", "")))}
-            className={context.photoClasses[block.block_key]}
-            {...context}
-        />
-    );
-};
+        return (
+            <Renderer
+                block={block}
+                photo={getPhoto(Number(block.block_key.replace("photo_", "")))}
+                className={context.photoClasses[block.block_key]}
+                {...context}
+            />
+        );
+    };
 
-const cityName = getEntityName(city);
+    const cityName = getEntityName(city);
     // Хлебные крошки
     const crumbs = [
         { label: lang === "ru" ? "Главная" : lang === "de" ? "Startseite" : "Головна", path: "/" },
@@ -137,7 +208,7 @@ const cityName = getEntityName(city);
 
             {city && (
                 <>
-                    
+
 
                     <div className='city__container'>
 

@@ -6,6 +6,7 @@ import { Helmet } from "react-helmet-async";
 import { getCountries } from "../../api/api.js";
 
 import EuropeMap from "../../components/maps/europe/Europe.jsx";
+import SkeletonRenderer from "../../components/skeleton/SkeletonRenderer.jsx";
 
 const BASE_PHOTO_URL = import.meta.env.VITE_BASE_PHOTO_URL;
 
@@ -72,21 +73,45 @@ const texts = {
   }
 };
 
+const SkeletonList = [
+    { type: "title" },
+    { type: "text", props: { hasTitle: true, lines: 2 } },
+    { type: "map" },
+    { type: "countries", props: { count: 3 } },
+    { type: "text", props: { hasTitle: true, lines: 6 } },
+];
+
 const Home = () => {
   const { lang } = useSelector((state) => state.language);
   const [countries, setCountries] = useState([]);
   const [error, setError] = useState(null);
+  const [loading, setLoading] = useState(true);
 
-useEffect(() => {
-  setError(null);
+  useEffect(() => {
+      setLoading(true);
+      setError(null);
 
-  getCountries(lang)
-    .then(data => { setCountries(data) })
-    .catch(error => {
-      console.error("Countries fetch error:", error);
-      setError(error.message);
-    });
-}, [lang]);
+      getCountries(lang)
+          .then(data => {
+              setCountries(data);
+          })
+          .catch(error => {
+              console.error("Countries fetch error:", error);
+              setError(error.message);
+          })
+          .finally(() => {
+              setLoading(false);
+          });
+
+  }, [lang]);
+
+  if (loading) {
+    return (<SkeletonRenderer blocks={SkeletonList} />);
+  }
+
+  if (error) {
+    return <div>{error}</div>;
+  }
 
   const homeData = texts[lang];
   if (error) return <p>{error}</p>;
