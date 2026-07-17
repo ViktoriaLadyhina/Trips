@@ -117,6 +117,8 @@ const datas =
     monschau_muetzenich: { id: 664, parent: 185, ru: 'Мютцених', de: 'Mützenich', uk: 'Мютценіх' },
     monschau_rohren: { id: 665, parent: 185, ru: 'Рорен', de: 'Rohren', uk: 'Рорен' },
 
+    koeln_lindenthal: { id: 714, parent: 76, ru: 'Линденталь (Lindenthal)', de: 'Lindenthal', uk: 'Лінденталь' },
+
     frechen_centrum: { id: 666, parent: 174, ru: 'Центральный район Фрехена', de: 'Zentrum', uk: 'Центральний район Фрехена' },
     frechen_bachem: { id: 667, parent: 174, ru: 'Бахем', de: 'Bachem', uk: 'Бахем' },
     frechen_buschbell: { id: 668, parent: 174, ru: 'Бушбель', de: 'Buschbell', uk: 'Бушбель' },
@@ -202,11 +204,11 @@ const datas =
     stadtmuseum_koln: { ru: 'Кельнский городской музей', de: 'Kölnisches Stadtmuseum', uk: 'Кельнський міський музей' },
     sport_olympia_museum_koln: { ru: 'Немецкий музей спорта и Олимпийских игр', de: 'Deutsches Sport & Olympia Museum', uk: 'Німецький музей спорту та Олімпійських ігор' },
     photographische_sammlung_sk_stiftung_kultur_koln: { ru: 'Фотографическая коллекция культурного фонда SK', de: 'Photographische Sammlung des SK Kulturfonds', uk: 'Фотографічна колекція культурного фонду SK' },
-    altstadt_koln: { ru: 'Старый город Кёльна', de: 'Altstadt Köln', uk: 'Старе місто Кельна' },
+    altstadt_koln: { id: 715, ru: 'Старый город Кёльна', de: 'Altstadt Köln', uk: 'Старе місто Кельна' },
     gross_st_martin_koln: { ru: 'Большой Святой Мартин', de: 'Groß St. Martin', uk: 'Великий Святий Мартін' },
     st_maria_himmelfahrt_koln: { ru: 'Церковь Успения Пресвятой Девы Марии', de: 'St. Mariä Himmelfahrt', uk: 'Церква Успіння Пресвятої Діви Марії' },
     st_maria_im_kapitol_koln: { ru: 'Церковь Святой Марии в Капитолии', de: 'Kirche St. Maria im Kapitol', uk: 'Церква Святої Марії у Капітолії' },
-    decksteiner_weiher_koln: { ru: 'Озеро Декштайнер Вайер', de: 'Decksteiner Weiher', uk: 'Озеро Декштайнер Вайер' },
+    decksteiner_weiher_koln: { id: 713, ru: 'Озеро Декштайнер Вайер', de: 'Decksteiner Weiher', uk: 'Озеро Декштайнер Вайер' },
     romanische_kirchen_altstadt_koln: { ru: 'Романские церкви Старого города Кёльна', de: 'Romanische Kirchen der Altstadt von Köln', uk: 'Романські церкви Старого міста Кельна' },
     old_towers_koln: { ru: 'Старые башни и укрепления Старого Кёльна', de: 'Alte Türme und Befestigungen der Altstadt Kölns', uk: 'Старі башти та укріплення Старого Кельна' },
     rumerturm_koln: { ru: 'Римская башня Römerturm', de: 'Römerturm', uk: 'Римська вежа Römerturm' },
