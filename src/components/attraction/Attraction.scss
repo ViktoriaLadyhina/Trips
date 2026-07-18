@@ -71,7 +71,8 @@
         &-info {
             text-align: left;
 
-            &-text {
+            &-text,
+            &-text__short_description {
                 display: block;
                 @include body-text();
                 padding: 10px;

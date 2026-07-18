@@ -117,7 +117,8 @@ const datas =
     monschau_muetzenich: { id: 664, parent: 185, ru: 'Мютцених', de: 'Mützenich', uk: 'Мютценіх' },
     monschau_rohren: { id: 665, parent: 185, ru: 'Рорен', de: 'Rohren', uk: 'Рорен' },
 
-    koeln_lindenthal: { id: 714, parent: 76, ru: 'Линденталь (Lindenthal)', de: 'Lindenthal', uk: 'Лінденталь' },
+    koeln_lindenthal: { id: 714, parent: 76, ru: 'округ Линденталь (Lindenthal)', de: 'Bezirk Lindenthal', uk: 'округ Лінденталь' },
+    koeln_innenstadt: { id: 716, parent: 76, ru: 'Центральный округ (Innenstadt)', de: 'Stadtbezirk Innenstadt', uk: 'Центральний округ (Innenstadt)' },
 
     frechen_centrum: { id: 666, parent: 174, ru: 'Центральный район Фрехена', de: 'Zentrum', uk: 'Центральний район Фрехена' },
     frechen_bachem: { id: 667, parent: 174, ru: 'Бахем', de: 'Bachem', uk: 'Бахем' },

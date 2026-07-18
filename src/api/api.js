@@ -41,3 +41,6 @@ export const getCity = (cityPath, lang = "ru") =>
 
 export const getAttractionsList = (entityPath, lang = "ru") =>
   apiFetch(`${BASE_URL}/api/attractions/${entityPath}?lang=${lang}`);
+
+export const getAllAttractions = (lang = "ru", signal) =>
+  apiFetch(`${BASE_URL}/api/attractions?lang=${lang}`, { signal });

@@ -31,8 +31,15 @@ export default function useAttractionFilters({
         return attractions.filter(attr => {
             if (!attr) return false;
 
-            if (cityPath && attr.cityPath !== cityPath) return false;
-            if (districtPath && attr.districtPath !== districtPath) return false;
+const attrCityPath = attr.cityPath || attr.paths?.city;
+
+const attrDistrictPath =
+    attr.districtPath ||
+    attr.paths?.district ||
+    (attrCityPath ? 'city' : null);
+
+if (cityPath && attrCityPath !== cityPath) return false;
+if (districtPath && attrDistrictPath !== districtPath) return false;
 
             const allTypes = [
                 ...(attr.type || []),

@@ -33,7 +33,7 @@ const AttractionsList = () => {
 
     const { subRegion } = useSabRegions(countryPath, regionPath, districtPath);
     const { city } = useCity(countryPath, regionPath, districtPath, cityPath);
-    const { mergedAttractions: attractions, allAttractions } = useCombinedAttractions(countryPath, regionPath, districtPath, cityPath);
+    const { mergedAttractions: attractions, mergedAllAttractions: allAttractions } = useCombinedAttractions(countryPath, regionPath, districtPath, cityPath);
 
     const [showAll, setShowAll] = useState(false);
 

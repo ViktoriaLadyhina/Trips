@@ -1,7 +1,7 @@
 import useAttractions from './useAttractions.js';
 import useAllAttractions from './useAllAttractions.js';
 import { useEffect, useMemo, useState } from 'react';
-import { getAttractionsList } from '../api/api';
+import { getAllAttractions, getAttractionsList } from '../api/api';
 import { useSelector } from 'react-redux';
 
 const useCombinedAttractions = (countryPath, regionPath, districtPath, cityPath) => {
@@ -12,6 +12,7 @@ const useCombinedAttractions = (countryPath, regionPath, districtPath, cityPath)
     const [loading, setLoading] = useState(true);
     const [error, setError] = useState(null);
     const [attrData, setattrData] = useState(null);
+    const [allAttrData, setAllAttrData] = useState(null);
 
     const entityPath =
     cityPath ||
@@ -21,36 +22,60 @@ const useCombinedAttractions = (countryPath, regionPath, districtPath, cityPath)
 
     
 // фетч запрос
-    useEffect(() => {
-        if (!entityPath) return;
+useEffect(() => {
+    const controller = new AbortController();
 
-        let active = true;
+    const fetchData = async () => {
+        try {
+            setLoading(true);
+            setError(null);
 
-        setLoading(true);
-        setattrData(null);
-        setError(null);
+            const allAttractionsPromise =
+                getAllAttractions(
+                    lang,
+                    controller.signal
+                );
 
-        getAttractionsList(entityPath, lang)
-            .then(data => {
+            const attractionsPromise = entityPath
+                ? getAttractionsList(
+                    entityPath,
+                    lang,
+                    controller.signal
+                )
+                : Promise.resolve({
+                    attractions: []
+                });
 
-                    if (active) {
-                        setattrData(data);
-                        setLoading(false);
-                    }
-            })
-            .catch(err => {
-                if (active) {
-                    setError(err.message);
-                    setLoading(false);
-                }
-            });
+            const [
+                allAttractionsData,
+                attractionsData
+            ] = await Promise.all([
+                allAttractionsPromise,
+                attractionsPromise
+            ]);
 
+            if (!controller.signal.aborted) {
+                setAllAttrData(allAttractionsData);
+                setattrData(attractionsData);
 
-        return () => {
-            active = false;
-        };
+                setLoading(false);
+            }
 
-    }, [entityPath, lang]);
+        } catch (err) {
+            if (err.name !== "AbortError") {
+                setError(err.message);
+                setLoading(false);
+            }
+        }
+    };
+
+    fetchData();
+
+    return () => {
+        controller.abort();
+    };
+
+}, [entityPath, lang]);
 
         const mysqlAttractions = useMemo(
     () => attrData?.attractions || [],
@@ -83,17 +108,24 @@ const useCombinedAttractions = (countryPath, regionPath, districtPath, cityPath)
 
 }, [staticAttractions, mysqlAttractions]);
 
+const mysqlAllAttractions = useMemo(
+    () => allAttrData?.attractions || [],
+    [allAttrData]
+);
+
 const mergedAttractions = [
     ...staticAttractions,
     ...mysqlAttractions
 ];
 
-console.log(attrData);
-console.log(mergedAttractions);
+    const mergedAllAttractions = [
+        ...allAttractions,
+        ...mysqlAllAttractions
+    ];
 
     return {
     mergedAttractions,
-    allAttractions,
+    mergedAllAttractions,
     loading,
     error
 };
