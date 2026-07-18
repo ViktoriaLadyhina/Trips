@@ -1,6 +1,6 @@
 import useAttractions from './useAttractions.js';
 import useAllAttractions from './useAllAttractions.js';
-import { useEffect, useState } from 'react';
+import { useEffect, useMemo, useState } from 'react';
 import { getAttractionsList } from '../api/api';
 import { useSelector } from 'react-redux';
 
@@ -18,8 +18,6 @@ const useCombinedAttractions = (countryPath, regionPath, districtPath, cityPath)
     (districtPath && districtPath !== 'city' ? districtPath : null) ||
     regionPath ||
     countryPath;
-
-    const mysqlAttractions = attrData?.attractions || [];
 
     
 // фетч запрос
@@ -53,6 +51,11 @@ const useCombinedAttractions = (countryPath, regionPath, districtPath, cityPath)
         };
 
     }, [entityPath, lang]);
+
+        const mysqlAttractions = useMemo(
+    () => attrData?.attractions || [],
+    [attrData]
+);
 
     useEffect(() => {
     if (!mysqlAttractions.length) return;

@@ -31,7 +31,7 @@ const lostIcon = new L.Icon({
 
 const moreBtnText = { ru: "Подробнее", de: "Mehr erfahren", ua: "Детальніше" };
 
-const AttrMap = ({ city, attractions, lang }) => {
+const AttrMap = ({ attractions, lang }) => {
   const navigate = useNavigate();
 
   const FitBounds = ({ points }) => {
@@ -66,11 +66,7 @@ const getIconByStatus = (attr) => {
 };
 
 const points = attractions.filter(attr => attr.coord).map(attr => [attr.coord.lat, attr.coord.lng]);
-
-// запасной центр, если нет достопримечательностей
-const fallbackCenter = city?.coord
-  ? [city.coord.lat, city.coord.lng]
-  : [50.1109, 8.6821];
+const defaultCenter = [50.1109, 8.6821];
 
   // для мобильных
   const isTouchDevice = L.Browser.mobile;
@@ -79,7 +75,7 @@ const fallbackCenter = city?.coord
   const getAttrName = (attr, lang) => { return attr.translations?.[lang]?.name || attr.name || ''; };
 
   return (
-    <MapContainer closePopupOnClick={true} center={fallbackCenter} zoom={6} style={{ height: "450px", width: "100%", marginBottom: "20px" }}>
+    <MapContainer closePopupOnClick={true} center={defaultCenter} zoom={6} style={{ height: "450px", width: "100%", marginBottom: "20px" }}>
       <TileLayer url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png" />
       <FitBounds points={points} />
 
