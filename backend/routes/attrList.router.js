@@ -389,7 +389,7 @@ AND relation = 'contains'
           cityDistrict: location.cityDistrict_path || null
         },
 
-        subObgit sjects: subObjectsByParent[item.id] || []
+        subObjects: subObjectsByParent[item.id] || []
 
       };
     });
