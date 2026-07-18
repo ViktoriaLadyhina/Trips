@@ -76,7 +76,7 @@ WHERE entity_id IN (${placeholders})
 AND block_key IN ('name', 'short_description', 'subObjects_intro',  'status_note')
 AND language = ?
       `,
-      [lang]
+      [...attrIds, lang]
     );
 console.log("3 content");
     const contentByEntity = contentRows.reduce((acc, row) => {
