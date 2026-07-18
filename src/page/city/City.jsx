@@ -7,7 +7,6 @@ import BreadCrumbs from '../../components/breadCrumbs/BreadCrumbs.jsx';
 import InfoBlock from '../../components/InfoBlock/InfoBlock.jsx';
 import './City.scss'
 import BtnAttr from '../../components/btn-attr/BtnAttr.jsx';
-// import useCity from '../../hooks/useCity.js';
 import useEvents from '../../hooks/useEvents.js';
 import datas from '../../datas/minimalIndex.js'
 import { useEffect, useState } from 'react';
@@ -73,7 +72,6 @@ const SkeletonList = [
 const City = () => {
     const { countryPath, regionPath, districtPath, cityPath } = useParams();
     const { lang } = useSelector((state) => state.language);
-    // const { city, error } = useCity(countryPath, regionPath, districtPath, cityPath);
     const { events } = useEvents(countryPath, regionPath, districtPath, cityPath);
 
     const [city, setCity] = useState(null);

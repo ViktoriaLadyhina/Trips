@@ -38,3 +38,6 @@ export const getMysqlSearch = (lang = "ru") =>
 
 export const getCity = (cityPath, lang = "ru") =>
   apiFetch(`${BASE_URL}/api/city/${cityPath}?lang=${lang}`);
+
+export const getAttractionsList = (entityPath, lang = "ru") =>
+  apiFetch(`${BASE_URL}/api/attractions/${entityPath}?lang=${lang}`);
