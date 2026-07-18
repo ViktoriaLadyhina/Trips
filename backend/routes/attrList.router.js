@@ -222,15 +222,24 @@ WHERE entity_id IN (${placeholders})
       attrIds
     );
 
-    const attributesByEntity = attributesRows.reduce((acc, row) => {
-      if (!acc[row.entity_id]) {
+const attributesByEntity = attributesRows.reduce((acc, row) => {
+    if (!acc[row.entity_id]) {
         acc[row.entity_id] = {};
-      }
+    }
 
-      acc[row.entity_id][row.attribute_group] = row.value;
+    if (row.attribute_group === 'type') {
+        if (!acc[row.entity_id].type) {
+            acc[row.entity_id].type = [];
+        }
 
-      return acc;
-    }, {});
+        acc[row.entity_id].type.push(row.value);
+    } else {
+        acc[row.entity_id][row.attribute_group] = row.value;
+    }
+
+    return acc;
+}, {});
+
 console.log("7 attributes");
     // ----------------- unesco
     const [unescoRows] = await db.query(
