@@ -8,8 +8,7 @@ import AttractionCard from '../../components/attraction/AttractionCard.jsx';
 import AttractionsFilters from '../../components/attractionsFilters/AttractionsFilters.jsx';
 import AttrMap from '../../components/maps/attr/AttrMap.jsx';
 
-import useAttractions from '../../hooks/useAttractions.js';
-import useAllAttractions from '../../hooks/useAllAttractions.js';
+
 import useCity from '../../hooks/useCity.js';
 import useSabRegions from '../../hooks/useSabRegions.js';
 import useAttractionFilters from '../../hooks/useAttractionFilters.js';
@@ -17,6 +16,7 @@ import useAttractionFilters from '../../hooks/useAttractionFilters.js';
 import datas from '../../datas/minimalIndex.js';
 
 import './Attractions.scss';
+import useCombinedAttractions from '../../hooks/useCombinedAttractions.js';
 
 
 const attractionsTitle = { ru: "Достопримечательности", ua: "Пам'ятки", de: "Sehenswürdigkeiten" };
@@ -33,8 +33,7 @@ const AttractionsList = () => {
 
     const { subRegion } = useSabRegions(countryPath, regionPath, districtPath);
     const { city } = useCity(countryPath, regionPath, districtPath, cityPath);
-    const { attractions, error } = useAttractions(countryPath, regionPath, districtPath, cityPath);
-    const { attractions: allAttractions } = useAllAttractions();
+    const { mergedAttractions: attractions, allAttractions } = useCombinedAttractions(countryPath, regionPath, districtPath, cityPath);
 
     const [showAll, setShowAll] = useState(false);
 
@@ -137,7 +136,7 @@ const AttractionsList = () => {
     ].filter(Boolean);
 
 
-    if (error) return <p>{error}</p>;
+
     if (!attractions) return <p>Loading...</p>;
 
     return (
@@ -152,7 +151,7 @@ const AttractionsList = () => {
             <h1 className="attractions__title">{attractionsTitle[lang]} </h1>
 
             <div className="map-wrapper">
-                <AttrMap city={city} attractions={visibleAttractions} lang={lang} />
+                <AttrMap attractions={visibleAttractions} lang={lang} />
 
                 <button
                     className="attractions__btn"

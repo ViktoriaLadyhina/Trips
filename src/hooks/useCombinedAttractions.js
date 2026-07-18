@@ -1,6 +1,6 @@
 import useAttractions from './useAttractions.js';
 import useAllAttractions from './useAllAttractions.js';
-import { useEffect, useState } from 'react';
+import { useEffect, useMemo, useState } from 'react';
 import { getAttractionsList } from '../api/api';
 import { useSelector } from 'react-redux';
 
@@ -19,7 +19,6 @@ const useCombinedAttractions = (countryPath, regionPath, districtPath, cityPath)
     regionPath ||
     countryPath;
 
-    const mysqlAttractions = attrData?.attractions || [];
 
     
 // фетч запрос
@@ -54,7 +53,12 @@ const useCombinedAttractions = (countryPath, regionPath, districtPath, cityPath)
 
     }, [entityPath, lang]);
 
-    useEffect(() => {
+    const mysqlAttractions = useMemo(
+    () => attrData?.attractions || [],
+    [attrData]
+);
+
+   useEffect(() => {
     if (!mysqlAttractions.length) return;
 
     const staticPaths = new Set(
@@ -85,8 +89,9 @@ const mergedAttractions = [
     ...mysqlAttractions
 ];
 
-console.log(attrData);
-console.log(mergedAttractions);
+console.log("attrData", attrData); /// здесь ноль, т.е. досты только локальные
+console.log("mergedAttractions", mergedAttractions);
+
 
     return {
     mergedAttractions,

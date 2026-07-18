@@ -26,7 +26,7 @@ LIMIT 1
     }
 
     const parent = parentRows[0];
-
+console.log("1 parent");
     const locationFields = {
       country: "country_id",
       region: "region_id",
@@ -60,7 +60,7 @@ AND e.type = 'attraction'
         attractions: []
       });
     }
-
+console.log("2 attrList");
     const attrIds = attrList.map(item => item.id);
 
     const placeholders = attrIds.map(() => "?").join(",");
@@ -78,7 +78,7 @@ AND language = ?
       `,
       [lang]
     );
-
+console.log("3 content");
     const contentByEntity = contentRows.reduce((acc, row) => {
       if (!acc[row.entity_id]) {
         acc[row.entity_id] = {};
@@ -137,7 +137,7 @@ WHERE l.entity_id IN (${placeholders})
   `,
       attrIds
     );
-
+console.log("4 location");
     const locationsByEntity = Object.fromEntries(
       locationRows.map(item => [
         item.entity_id,
@@ -186,7 +186,7 @@ WHERE l.entity_id IN (${placeholders})
         item.content
       ])
     );
-
+console.log("5 location names");
     // ----------------- coordinates
     const [coordinatesRows] = await db.query(
       `
@@ -209,7 +209,7 @@ WHERE l.entity_id IN (${placeholders})
         }
       ])
     );
-
+console.log("6 coordinates");
     // ----------------- attributes
     const [attributesRows] = await db.query(
       `
@@ -229,7 +229,7 @@ WHERE entity_id IN (${placeholders})
 
       return acc;
     }, {});
-
+console.log("7 attributes");
     // ----------------- unesco
     const [unescoRows] = await db.query(
       `
@@ -250,8 +250,7 @@ WHERE entity_id IN (${placeholders})
         }
       ])
     );
-
-
+console.log("8 unesco");
     // ----------------- relations
     const [relationsRows] = await db.query(
       `
@@ -266,7 +265,7 @@ AND relation = 'contains'
         ...attrIds
       ]
     );
-
+console.log("9 relations");
     const childIds = [
       ...new Set(
         relationsRows.map(item => item.child_id)
@@ -294,7 +293,7 @@ AND relation = 'contains'
           lang
         ]
       );
-
+console.log("10 child content");
       const childContentByEntity = Object.fromEntries(
         childRows.map(item => [
           item.entity_id,
@@ -345,7 +344,7 @@ AND relation = 'contains'
         }
       ])
     );
-
+console.log("11 photos");
     // ----------------- СБОРКА
     const attractions = attrList.map(item => {
       const content = contentByEntity[item.id] || {};
@@ -407,10 +406,12 @@ AND relation = 'contains'
   } catch (err) {
     console.error("ERROR:", err);
     console.error("MESSAGE:", err.message);
+    console.error("SQL:", err.sql);
+    console.error("SQL STATE:", err.sqlState);
 
     res.status(500).json({
-      message: "Server error",
-      error: err.message
+        message: "Server error",
+        error: err.message
     });
   }
 });
