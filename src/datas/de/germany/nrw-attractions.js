@@ -1,64 +1,64 @@
 const datas = [
 
     // Köln-city
-    {
-        id: "altstadt_koln",
-        name: "Altstadt Köln",
-        type: ["historical_area"], rating: "top",
-        path: "altstadt_koln",
-        countryPath: "germany", regionPath: "nrw", districtPath: "city", cityPath: "koln_city",
-        fotoCard: "Germany/nrw/koln/koln-city/altstadt/005.jpg",
-        location: "Köln, Deutschland",
-        subObjects: ["cologne_cathedral", "rathaus_koln", "guerzenich_koln", "miqua", "wallraf_richartz_museum", "roemisch_germanisches_museum", "farina_duftmuseum", "museum_ludwig", "stadtmuseum_koln", "dufthaus_4711_koln", "st_maria_himmelfahrt_koln", "old_towers_koln", "fischmarkt_koln", "gross_st_martin_koln", "st_maria_im_kapitol_koln", "st_kunibert_koln"],
-        short_description_subObjects: {
-            text: "In der Altstadt von Köln befinden sich folgende Sehenswürdigkeiten:",
-            items: [
-                { bold: "🌍Kölner Dom", text: "– majestätische gotische Kathedrale, das Herz der Altstadt, am Platz vor dem Hauptbahnhof." },
-                { bold: "Fischmarkt", text: "– lebhafter historischer Platz in der Altstadt von Köln mit bunten Häusern und der Atmosphäre eines mittelalterlichen Fischmarktes." },
-                { bold: "Groß St. Martin", text: "– eine der bekanntesten romanischen Kirchen Kölns mit einem massiven Turm-Trikonchos, der über der Rheinpromenade aufragt. Ein Symbol des Silhouetts der Altstadt." },
-                { bold: "St. Maria im Kapitol", text: "– die größte romanische Kirche Kölns, erbaut auf dem Gelände eines antiken römischen Tempels. Ein herausragendes Beispiel romanischer Architektur mit Trikonchos-Plan und historischer Krypta, die Spuren der antiken Vergangenheit bewahrt." },
-                { bold: "St. Mariä Himmelfahrt", text: "– die wichtigste Barockkirche Kölns aus dem 17. Jahrhundert, eine ehemalige Jesuitenkirche in der Nähe des Hauptbahnhofs und des Kölner Doms." },
-                { bold: "Basilika St. Kunibert in Köln", text: "– eine romanische Kirche mit massiven Türmen, strengen Formen und ruhiger Atmosphäre, gelegen im nördlichen Teil der Altstadt in der Nähe des Rheins." },
-                { bold: "Gürzenich", text: "– historisches Zunfthaus und Saal in der Nähe des Kölner Doms." },
-                { bold: "Kölner Rathaus", text: "– historisches Stadthaus im Zentrum der Altstadt." },
-                { bold: "Dufthaus 4711", text: "– historisches Gebäude in der Fußgängerzone um die Hohe Straße und Schildergasse." },
-                { bold: "Duftmuseum im Farina-Haus", text: "– Museum für Düfte und Parfum im historischen Viertel beim Rathaus." },
-                { bold: "Kölnisches Stadtmuseum", text: "– Museum für Stadtgeschichte im Zentrum (Zeughaus)." },
-                { bold: "Museum im archäologischen Viertel Köln – MiQua", text: "– archäologisches und jüdisches Museum am Marktplatz im Zentrum der Altstadt." },
-                { bold: "Museum Ludwig", text: "– Museum für moderne Kunst in der Nähe des Kölner Doms." },
-                { bold: "Römisch-Germanisches Museum", text: "– Museum der Antike in der Nähe des Kölner Doms und des MiQua." },
-                { bold: "Wallraf-Richartz-Museum", text: "– Museum für Malerei und Kunst, unweit von Rathaus und Dom." },
-                { bold: "Alte Türme und Befestigungen der Altstadt Kölns", text: "– Reste der mittelalterlichen Stadtmauer und Verteidigungstürme, verteilt über die Altstadt, die einen Einblick geben, wie Köln im Mittelalter aussah und das Verteidigungssystem der Stadt nachvollziehbar machen." }
-            ]
-        },
-        short_description: "Die Altstadt von Köln ist das historische Herz der Stadt mit engen gepflasterten Gassen, traditionellen Häusern, gemütlichen Brauhäusern und Cafés am Rheinufer. Sie vereint Kultur, Architektur und alltägliches Leben: von gotischen Kathedralen bis zu Museen und Märkten, die die vielschichtige Geschichte der Stadt widerspiegeln.",
-        full_description: {
-            title: "Beschreibung und Geschichte",
-            items: [
-                { bold: "Die Altstadt von Köln", text: "– ist das historische und kulturelle Herz der Stadt, in dem Geschichte und modernes Leben aufeinandertreffen. Sie erstreckt sich entlang des Rheins und umfasst enge gepflasterte Gassen, malerische Plätze, historische Häuser mit charakteristischen Fassaden sowie zahlreiche gemütliche Cafés, Restaurants und traditionelle Brauhäuser, in denen das berühmte Bier Kölsch serviert wird." },
-                { text: "Dieses Viertel spiegelt die jahrhundertealte Geschichte der Stadt wider – von der römischen Kolonie Colonia Claudia Ara Agrippinensium, gegründet um 50 n. Chr., bis zum Mittelalter und in die Moderne. Während des Zweiten Weltkriegs wurde ein großer Teil des historischen Zentrums zerstört, aber das Viertel wurde in den Nachkriegsjahren mit teilweiser Rekonstruktion der historischen Bebauung und Anpassung an die moderne städtische Umgebung wiederaufgebaut." },
-                { text: "Die Altstadt vereint architektonische Vielfalt: hier kann man prächtige gotische Gebäude wie den Kölner Dom, romanische Kirchen, historische Rathäuser und Stadttore sowie moderne Gestaltung der Rheinuferpromenade und städtischer Plätze sehen." },
-                { text: "Für Touristen ist die Altstadt ein ideales Gebiet für Spaziergänge: jede Gasse eröffnet neue Eindrücke, und Fußgängerwege ermöglichen den einfachen Besuch von Museen, Plätzen und historischen Gebäuden. Hier befinden sich bekannte Objekte wie die Kirche Groß St. Martin, das Rathaus Köln und Museen, darunter das Wallraf-Richartz-Museum und das Museum Ludwig." },
-                { text: "Die Altstadt ist auch für ihre Plätze und Einkaufsstraßen bekannt: Alter Markt, Fischmarkt und Hohe Straße sind Orte, an denen das städtische Leben pulsiert, Jahrmärkte, Straßenkonzerte und Festivals stattfinden. Ein Spaziergang entlang der Rheinuferpromenade ermöglicht es, die malerischen Ausblicke, historische Gebäude am gegenüberliegenden Ufer und die Atmosphäre des Kölner Stadtlebens zu genießen." },
-                { text: "So ist die Altstadt ein umfassendes touristisches Gebiet, in dem jeder etwas für sich findet: Geschichte, Architektur, kulturelle Objekte und die authentische Atmosphäre Kölns." }
-            ]
-        },
-        interestingFacts: {
-            title: "Interessante Fakten",
-            items: [
-                { text: "Die Altstadt ist eine Fußgängerzone, in der man ohne Autos spazieren kann." },
-                { text: "Hier befinden sich einige der ältesten Brauhäuser Kölns, in denen das traditionelle Bier Kölsch serviert wird." }
-            ]
-        },
-        meta: {
-            title: "Altstadt Köln – Sehenswürdigkeiten, Museen, Spaziergänge entlang des Rheins",
-            description: "Entdecken Sie die Altstadt von Köln: enge Gassen, gotische Kathedralen, historische Plätze, Museen und die Rheinuferpromenade. Ein nützlicher Reiseführer für Spaziergänge und Besuchsplanung.",
-            ogTitle: "Altstadt Köln – Herz der Geschichte und Kultur der Stadt",
-            ogDescription: "Spazieren Sie durch die Altstadt von Köln: historische Gebäude, Museen, Plätze, Brauhäuser und die malerische Rheinuferpromenade. Perfekt für Touristen und Geschichtsinteressierte.",
-            keywords: "Altstadt Köln, Köln, historisches Zentrum, Architektur Köln, touristische Routen, Sehenswürdigkeiten Köln, mittelalterliche Architektur, Stadtrundgang, Kulturerbe, Museen Köln, historische Gebäude, Platz, Türme, Tourismus Deutschland",
-            ogImage: "https://our-travels.info/foto/Germany/nrw/koln/koln-city/altstadt/005.jpg"
-        }
-    },
+    // {
+    //     id: "altstadt_koln",
+    //     name: "Altstadt Köln",
+    //     type: ["historical_area"], rating: "top",
+    //     path: "altstadt_koln",
+    //     countryPath: "germany", regionPath: "nrw", districtPath: "city", cityPath: "koln_city",
+    //     fotoCard: "Germany/nrw/koln/koln-city/altstadt/005.jpg",
+    //     location: "Köln, Deutschland",
+    //     subObjects: ["cologne_cathedral", "rathaus_koln", "guerzenich_koln", "miqua", "wallraf_richartz_museum", "roemisch_germanisches_museum", "farina_duftmuseum", "museum_ludwig", "stadtmuseum_koln", "dufthaus_4711_koln", "st_maria_himmelfahrt_koln", "old_towers_koln", "fischmarkt_koln", "gross_st_martin_koln", "st_maria_im_kapitol_koln", "st_kunibert_koln"],
+    //     short_description_subObjects: {
+    //         text: "In der Altstadt von Köln befinden sich folgende Sehenswürdigkeiten:",
+    //         items: [
+    //             { bold: "🌍Kölner Dom", text: "– majestätische gotische Kathedrale, das Herz der Altstadt, am Platz vor dem Hauptbahnhof." },
+    //             { bold: "Fischmarkt", text: "– lebhafter historischer Platz in der Altstadt von Köln mit bunten Häusern und der Atmosphäre eines mittelalterlichen Fischmarktes." },
+    //             { bold: "Groß St. Martin", text: "– eine der bekanntesten romanischen Kirchen Kölns mit einem massiven Turm-Trikonchos, der über der Rheinpromenade aufragt. Ein Symbol des Silhouetts der Altstadt." },
+    //             { bold: "St. Maria im Kapitol", text: "– die größte romanische Kirche Kölns, erbaut auf dem Gelände eines antiken römischen Tempels. Ein herausragendes Beispiel romanischer Architektur mit Trikonchos-Plan und historischer Krypta, die Spuren der antiken Vergangenheit bewahrt." },
+    //             { bold: "St. Mariä Himmelfahrt", text: "– die wichtigste Barockkirche Kölns aus dem 17. Jahrhundert, eine ehemalige Jesuitenkirche in der Nähe des Hauptbahnhofs und des Kölner Doms." },
+    //             { bold: "Basilika St. Kunibert in Köln", text: "– eine romanische Kirche mit massiven Türmen, strengen Formen und ruhiger Atmosphäre, gelegen im nördlichen Teil der Altstadt in der Nähe des Rheins." },
+    //             { bold: "Gürzenich", text: "– historisches Zunfthaus und Saal in der Nähe des Kölner Doms." },
+    //             { bold: "Kölner Rathaus", text: "– historisches Stadthaus im Zentrum der Altstadt." },
+    //             { bold: "Dufthaus 4711", text: "– historisches Gebäude in der Fußgängerzone um die Hohe Straße und Schildergasse." },
+    //             { bold: "Duftmuseum im Farina-Haus", text: "– Museum für Düfte und Parfum im historischen Viertel beim Rathaus." },
+    //             { bold: "Kölnisches Stadtmuseum", text: "– Museum für Stadtgeschichte im Zentrum (Zeughaus)." },
+    //             { bold: "Museum im archäologischen Viertel Köln – MiQua", text: "– archäologisches und jüdisches Museum am Marktplatz im Zentrum der Altstadt." },
+    //             { bold: "Museum Ludwig", text: "– Museum für moderne Kunst in der Nähe des Kölner Doms." },
+    //             { bold: "Römisch-Germanisches Museum", text: "– Museum der Antike in der Nähe des Kölner Doms und des MiQua." },
+    //             { bold: "Wallraf-Richartz-Museum", text: "– Museum für Malerei und Kunst, unweit von Rathaus und Dom." },
+    //             { bold: "Alte Türme und Befestigungen der Altstadt Kölns", text: "– Reste der mittelalterlichen Stadtmauer und Verteidigungstürme, verteilt über die Altstadt, die einen Einblick geben, wie Köln im Mittelalter aussah und das Verteidigungssystem der Stadt nachvollziehbar machen." }
+    //         ]
+    //     },
+    //     short_description: "Die Altstadt von Köln ist das historische Herz der Stadt mit engen gepflasterten Gassen, traditionellen Häusern, gemütlichen Brauhäusern und Cafés am Rheinufer. Sie vereint Kultur, Architektur und alltägliches Leben: von gotischen Kathedralen bis zu Museen und Märkten, die die vielschichtige Geschichte der Stadt widerspiegeln.",
+    //     full_description: {
+    //         title: "Beschreibung und Geschichte",
+    //         items: [
+    //             { bold: "Die Altstadt von Köln", text: "– ist das historische und kulturelle Herz der Stadt, in dem Geschichte und modernes Leben aufeinandertreffen. Sie erstreckt sich entlang des Rheins und umfasst enge gepflasterte Gassen, malerische Plätze, historische Häuser mit charakteristischen Fassaden sowie zahlreiche gemütliche Cafés, Restaurants und traditionelle Brauhäuser, in denen das berühmte Bier Kölsch serviert wird." },
+    //             { text: "Dieses Viertel spiegelt die jahrhundertealte Geschichte der Stadt wider – von der römischen Kolonie Colonia Claudia Ara Agrippinensium, gegründet um 50 n. Chr., bis zum Mittelalter und in die Moderne. Während des Zweiten Weltkriegs wurde ein großer Teil des historischen Zentrums zerstört, aber das Viertel wurde in den Nachkriegsjahren mit teilweiser Rekonstruktion der historischen Bebauung und Anpassung an die moderne städtische Umgebung wiederaufgebaut." },
+    //             { text: "Die Altstadt vereint architektonische Vielfalt: hier kann man prächtige gotische Gebäude wie den Kölner Dom, romanische Kirchen, historische Rathäuser und Stadttore sowie moderne Gestaltung der Rheinuferpromenade und städtischer Plätze sehen." },
+    //             { text: "Für Touristen ist die Altstadt ein ideales Gebiet für Spaziergänge: jede Gasse eröffnet neue Eindrücke, und Fußgängerwege ermöglichen den einfachen Besuch von Museen, Plätzen und historischen Gebäuden. Hier befinden sich bekannte Objekte wie die Kirche Groß St. Martin, das Rathaus Köln und Museen, darunter das Wallraf-Richartz-Museum und das Museum Ludwig." },
+    //             { text: "Die Altstadt ist auch für ihre Plätze und Einkaufsstraßen bekannt: Alter Markt, Fischmarkt und Hohe Straße sind Orte, an denen das städtische Leben pulsiert, Jahrmärkte, Straßenkonzerte und Festivals stattfinden. Ein Spaziergang entlang der Rheinuferpromenade ermöglicht es, die malerischen Ausblicke, historische Gebäude am gegenüberliegenden Ufer und die Atmosphäre des Kölner Stadtlebens zu genießen." },
+    //             { text: "So ist die Altstadt ein umfassendes touristisches Gebiet, in dem jeder etwas für sich findet: Geschichte, Architektur, kulturelle Objekte und die authentische Atmosphäre Kölns." }
+    //         ]
+    //     },
+    //     interestingFacts: {
+    //         title: "Interessante Fakten",
+    //         items: [
+    //             { text: "Die Altstadt ist eine Fußgängerzone, in der man ohne Autos spazieren kann." },
+    //             { text: "Hier befinden sich einige der ältesten Brauhäuser Kölns, in denen das traditionelle Bier Kölsch serviert wird." }
+    //         ]
+    //     },
+    //     meta: {
+    //         title: "Altstadt Köln – Sehenswürdigkeiten, Museen, Spaziergänge entlang des Rheins",
+    //         description: "Entdecken Sie die Altstadt von Köln: enge Gassen, gotische Kathedralen, historische Plätze, Museen und die Rheinuferpromenade. Ein nützlicher Reiseführer für Spaziergänge und Besuchsplanung.",
+    //         ogTitle: "Altstadt Köln – Herz der Geschichte und Kultur der Stadt",
+    //         ogDescription: "Spazieren Sie durch die Altstadt von Köln: historische Gebäude, Museen, Plätze, Brauhäuser und die malerische Rheinuferpromenade. Perfekt für Touristen und Geschichtsinteressierte.",
+    //         keywords: "Altstadt Köln, Köln, historisches Zentrum, Architektur Köln, touristische Routen, Sehenswürdigkeiten Köln, mittelalterliche Architektur, Stadtrundgang, Kulturerbe, Museen Köln, historische Gebäude, Platz, Türme, Tourismus Deutschland",
+    //         ogImage: "https://our-travels.info/foto/Germany/nrw/koln/koln-city/altstadt/005.jpg"
+    //     }
+    // },
     {
         id: "cologne_cathedral",
         name: "Kölner Dom",
