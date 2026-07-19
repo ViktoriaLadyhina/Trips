@@ -35,44 +35,53 @@ const AttrMap = ({ attractions, lang }) => {
   const navigate = useNavigate();
 
   const FitBounds = ({ points }) => {
-  const map = useMap();
+    const map = useMap();
 
-  useEffect(() => {
-    if (!points.length) return;
+    useEffect(() => {
+      if (!points.length) return;
 
-    // 1 точка
-    if (points.length === 1) {
-      map.setView(points[0], 14);
-      return;
-    }
+      // 1 точка
+      if (points.length === 1) {
+        map.setView(points[0], 14);
+        return;
+      }
 
-    // много точек
-    const bounds = L.latLngBounds(points);
-    map.fitBounds(bounds, {
-      padding: [50, 50],
-      maxZoom: 14,
-    });
-  }, [points, map]);
+      // много точек
+      const bounds = L.latLngBounds(points);
+      map.fitBounds(bounds, {
+        padding: [50, 50],
+        maxZoom: 14,
+      });
+    }, [points, map]);
 
-  return null;
-};
+    return null;
+  };
 
-const getIconByStatus = (attr) => {
-  const status = attr.status ?? 'active';
+  const getIconByStatus = (attr) => {
+    const status = attr.status ?? 'active';
 
-  if (status === 'lost') return lostIcon;
+    if (status === 'lost') return lostIcon;
 
-  return defaultIcon;
-};
+    return defaultIcon;
+  };
 
-const points = attractions.filter(attr => attr.coord).map(attr => [attr.coord.lat, attr.coord.lng]);
-const defaultCenter = [50.1109, 8.6821];
+  const points = attractions.filter(attr => attr.coord).map(attr => [attr.coord.lat, attr.coord.lng]);
+  const defaultCenter = [50.1109, 8.6821];
 
   // для мобильных
   const isTouchDevice = L.Browser.mobile;
 
-  const getAttrMeta = (attr, lang) => { return attr.translations?.[lang]?.meta || attr.meta || {}; };
-  const getAttrName = (attr, lang) => { return attr.translations?.[lang]?.name || attr.name || ''; };
+const getAttrImage = (attr) => {
+  return attr.meta?.ogImage || null;
+};
+
+const getAttrTitle = (attr) => {
+  return attr.meta?.title || '';
+};
+
+const getAttractionPath = (attr) => {
+  return `/${attr.countryPath}/${attr.regionPath}/${attr.districtPath}/${attr.cityPath}/attractions/${attr.path}`;
+};
 
   return (
     <MapContainer closePopupOnClick={true} center={defaultCenter} zoom={6} style={{ height: "450px", width: "100%", marginBottom: "20px" }}>
@@ -89,9 +98,7 @@ const defaultCenter = [50.1109, 8.6821];
               !isTouchDevice
                 ? {
                   click: () => {
-                    navigate(
-                      `/${attr.countryPath}/${attr.regionPath}/${attr.districtPath}/${attr.cityPath}/attractions/${attr.path}`
-                    );
+                    navigate(getAttractionPath(attr));
                   }
                 }
                 : undefined
@@ -99,39 +106,44 @@ const defaultCenter = [50.1109, 8.6821];
 
           >
             {!isTouchDevice && (
-              <Tooltip
-                className="custom-tooltip"
-                direction="top"
-                offset={[0, -10]}
-                opacity={1}
-              >
-                <div className="custom-tooltip-content">
-                  {getAttrMeta(attr, lang).ogImage && (
-                    <img src={getAttrMeta(attr, lang).ogImage} alt={getAttrName(attr, lang)} />
-                  )}
-                  <p>{getAttrMeta(attr, lang).title || getAttrName(attr, lang)}</p>
-                </div>
-              </Tooltip>
+<Tooltip
+  className="custom-tooltip"
+  direction="top"
+  offset={[0, -10]}
+  opacity={1}
+>
+  <div className="custom-tooltip-content">
+    {getAttrImage(attr) && (
+      <img
+        src={getAttrImage(attr)}
+        alt={getAttrTitle(attr)}
+      />
+    )}
+
+    <p>{getAttrTitle(attr)}</p>
+  </div>
+</Tooltip>
             )}
             {isTouchDevice && (
-              <Popup className="custom-popup" maxWidth={180} minWidth={160}>
-                <div className="custom-popup-content">
-                  {getAttrMeta(attr, lang).ogImage && (
-                    <img src={getAttrMeta(attr, lang).ogImage} alt={getAttrName(attr, lang)} />
-                  )}
-                  <p>{getAttrMeta(attr, lang).title || getAttrName(attr, lang)}</p>
-                  <button
-                    className="popup-btn"
-                    onClick={() =>
-                      navigate(
-                        `/${attr.countryPath}/${attr.regionPath}/${attr.districtPath}/${attr.cityPath}/attractions/${attr.path}`
-                      )
-                    }
-                  >
-                    {moreBtnText[lang]}
-                  </button>
-                </div>
-              </Popup>
+<Popup className="custom-popup" maxWidth={180} minWidth={160}>
+  <div className="custom-popup-content">
+    {getAttrImage(attr) && (
+      <img
+        src={getAttrImage(attr)}
+        alt={getAttrTitle(attr)}
+      />
+    )}
+
+    <p>{getAttrTitle(attr)}</p>
+
+    <button
+      className="popup-btn"
+      onClick={() => navigate(getAttractionPath(attr))}
+    >
+      {moreBtnText[lang]}
+    </button>
+  </div>
+</Popup>
             )}
           </Marker>
         )

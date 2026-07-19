@@ -44,15 +44,30 @@ LIMIT 1
     const [attrList] = await db.query(
       `
 SELECT 
-    e.id,
-    e.path
-FROM entity_locations l
-JOIN entities e
-    ON e.id = l.entity_id
-WHERE ${field} = ?
-AND e.type = 'attraction'
-      `,
-      [parent.id]
+      e.id,
+      e.path,
+
+      m.title,
+      m.description,
+      m.keywords,
+      p.path AS og_image
+
+  FROM entity_locations l
+
+  JOIN entities e
+      ON e.id = l.entity_id
+
+  LEFT JOIN entity_meta m
+      ON m.entity_id = e.id
+      AND m.language = ?
+
+  LEFT JOIN entity_photos p
+      ON p.id = m.og_image
+
+  WHERE ${field} = ?
+  AND e.type = 'attraction'
+  `,
+      [lang, parent.id]
     );
 
     if (!attrList.length) {
@@ -209,7 +224,7 @@ WHERE l.entity_id IN (${placeholders})
         }
       ])
     );
-    
+
     // ----------------- attributes
     const [attributesRows] = await db.query(
       `
@@ -220,23 +235,23 @@ WHERE entity_id IN (${placeholders})
       attrIds
     );
 
-const attributesByEntity = attributesRows.reduce((acc, row) => {
-    if (!acc[row.entity_id]) {
+    const attributesByEntity = attributesRows.reduce((acc, row) => {
+      if (!acc[row.entity_id]) {
         acc[row.entity_id] = {};
-    }
+      }
 
-    if (row.attribute_group === 'type') {
+      if (row.attribute_group === 'type') {
         if (!acc[row.entity_id].type) {
-            acc[row.entity_id].type = [];
+          acc[row.entity_id].type = [];
         }
 
         acc[row.entity_id].type.push(row.value);
-    } else {
+      } else {
         acc[row.entity_id][row.attribute_group] = row.value;
-    }
+      }
 
-    return acc;
-}, {});
+      return acc;
+    }, {});
 
 
     // ----------------- unesco
@@ -354,6 +369,7 @@ AND relation = 'contains'
       ])
     );
 
+    
     // ----------------- СБОРКА
     const attractions = attrList.map(item => {
       const content = contentByEntity[item.id] || {};
@@ -379,6 +395,12 @@ AND relation = 'contains'
 
         unesco_status: unescoByEntity[item.id] || null,
 
+        meta: {
+          title: item.title || null,
+          description: item.description || null,
+          ogImage: item.og_image || null
+        },
+
         loc: {
           country: locationNamesById[location.country_id] || null,
           region: locationNamesById[location.region_id] || null,
@@ -388,14 +410,13 @@ AND relation = 'contains'
           cityDistrict: locationNamesById[location.cityDistrict_id] || null
         },
 
-        paths: {
-          country: location.country_path || null,
-          region: location.region_path || null,
-          district: location.district_path || null,
-          subRegion: location.subRegion_path || null,
-          city: location.city_path || null,
-          cityDistrict: location.cityDistrict_path || null
-        },
+countryPath: location.country_path || null,
+regionPath: location.region_path || null,
+districtPath: location.district_path || 'city',
+subRegionPath: location.subRegion_path || null,
+cityPath: location.city_path || null,
+cityDistrictPath: location.cityDistrict_path || null,
+
 
         subObjects: subObjectsByParent[item.id] || []
 
@@ -419,8 +440,8 @@ AND relation = 'contains'
     console.error("SQL STATE:", err.sqlState);
 
     res.status(500).json({
-        message: "Server error",
-        error: err.message
+      message: "Server error",
+      error: err.message
     });
   }
 });

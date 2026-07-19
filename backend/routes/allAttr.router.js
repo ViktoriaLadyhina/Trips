@@ -8,7 +8,7 @@ router.get("/", async (req, res) => {
     const lang = req.query.lang || "ru";
 
     const [attractionRows] = await db.query(
-  `
+      `
   SELECT
       e.id,
       e.path,
@@ -85,8 +85,8 @@ router.get("/", async (req, res) => {
 
   WHERE e.type = 'attraction'
   `,
-  [lang]
-);
+      [lang]
+    );
 
     if (!attractionRows.length) {
       return res.status(404).json({
@@ -95,47 +95,36 @@ router.get("/", async (req, res) => {
     }
 
     const attractions = attractionRows.map(row => ({
-  id: row.id,
+      id: row.id,
+      path: row.path,
 
-  path: row.path,
+      meta: {
+        title: row.title || null,
+        description: row.description || null,
+        keywords: row.keywords || null,
+        ogImage: row.photo_path || null
+      },
 
-  name: row.title || null,
+      status: row.status || null,
 
-  description: row.description || null,
+      coord:
+        row.latitude !== null && row.longitude !== null
+          ? {
+            lat: Number(row.latitude),
+            lng: Number(row.longitude)
+          }
+          : null,
 
-  keywords: row.keywords || null,
-
-  status: row.status || null,
-
-  coord:
-    row.latitude !== null && row.longitude !== null
-      ? {
-          lat: Number(row.latitude),
-          lng: Number(row.longitude)
-        }
-      : null,
-
-  photo: row.photo_id
-    ? {
-        id: row.photo_id,
-        path: row.photo_path,
-        title: {
-          ru: row.title_ru,
-          uk: row.title_uk,
-          de: row.title_de
-        }
-      }
-    : null,
-
-    countryPath: row.country_path || null,
-    regionPath: row.region_path || null,
-    districtPath: row.district_path || null,
-    cityPath: row.city_path || null
-
-}));
+countryPath: row.country_path || null,
+regionPath: row.region_path || null,
+districtPath: row.district_path || 'city',
+subRegionPath: row.subRegion_path || null,
+cityPath: row.city_path || null,
+cityDistrictPath: row.cityDistrict_path || null,
+    }));
 
     // RESPONSE
-     res.json({
+    res.json({
       attractions
     });
 
