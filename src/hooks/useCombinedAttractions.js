@@ -3,6 +3,7 @@ import useAllAttractions from './useAllAttractions.js';
 import { useEffect, useMemo, useState } from 'react';
 import { getAllAttractions, getAttractionsList } from '../api/api';
 import { useSelector } from 'react-redux';
+import { toFullUrl } from '../utils/photo.js';
 
 const useCombinedAttractions = (countryPath, regionPath, districtPath, cityPath) => {
     const { lang } = useSelector((state) => state.language);
@@ -77,9 +78,27 @@ useEffect(() => {
 
 }, [entityPath, lang]);
 
-        const mysqlAttractions = useMemo(
-    () => attrData?.attractions || [],
+const normalizeAttractionMeta = (attractions) => {
+    return attractions.map(attr => ({
+        ...attr,
+
+        meta: attr.meta
+            ? {
+                ...attr.meta,
+                ogImage: toFullUrl(attr.meta.ogImage)
+            }
+            : null
+    }));
+};
+
+const mysqlAttractions = useMemo(
+    () => normalizeAttractionMeta(attrData?.attractions || []),
     [attrData]
+);
+
+const mysqlAllAttractions = useMemo(
+    () => normalizeAttractionMeta(allAttrData?.attractions || []),
+    [allAttrData]
 );
 
     useEffect(() => {
@@ -108,10 +127,7 @@ useEffect(() => {
 
 }, [staticAttractions, mysqlAttractions]);
 
-const mysqlAllAttractions = useMemo(
-    () => allAttrData?.attractions || [],
-    [allAttrData]
-);
+
 
 const mergedAttractions = [
     ...staticAttractions,

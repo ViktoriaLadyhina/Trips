@@ -26,6 +26,15 @@ LIMIT 1
     }
 
     const parent = parentRows[0];
+    let parentType = parent.type;
+
+    if (
+  parent.type === "land" ||
+  parent.type === "oblast" ||
+  parent.type === "canton"
+) {
+  parentType = "region";
+}
 
     const locationFields = {
       country: "country_id",
@@ -34,7 +43,7 @@ LIMIT 1
       city: "city_id"
     };
 
-    const field = locationFields[parent.type];
+    const field = locationFields[parentType];;
     if (!field) {
       return res.status(400).json({
         message: `Unsupported parent type: ${parent.type}`
@@ -369,7 +378,7 @@ AND relation = 'contains'
       ])
     );
 
-    
+
     // ----------------- СБОРКА
     const attractions = attrList.map(item => {
       const content = contentByEntity[item.id] || {};
@@ -410,12 +419,12 @@ AND relation = 'contains'
           cityDistrict: locationNamesById[location.cityDistrict_id] || null
         },
 
-countryPath: location.country_path || null,
-regionPath: location.region_path || null,
-districtPath: location.district_path || 'city',
-subRegionPath: location.subRegion_path || null,
-cityPath: location.city_path || null,
-cityDistrictPath: location.cityDistrict_path || null,
+        countryPath: location.country_path || null,
+        regionPath: location.region_path || null,
+        districtPath: location.district_path || 'city',
+        subRegionPath: location.subRegion_path || null,
+        cityPath: location.city_path || null,
+        cityDistrictPath: location.cityDistrict_path || null,
 
 
         subObjects: subObjectsByParent[item.id] || []

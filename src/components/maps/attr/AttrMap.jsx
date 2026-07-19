@@ -34,6 +34,10 @@ const moreBtnText = { ru: "Подробнее", de: "Mehr erfahren", ua: "Дет
 const AttrMap = ({ attractions, lang }) => {
   const navigate = useNavigate();
 
+  console.log('🔥 AttrMap RENDER');
+
+  console.log("attractions:", attractions);
+
   const FitBounds = ({ points }) => {
     const map = useMap();
 
@@ -71,17 +75,17 @@ const AttrMap = ({ attractions, lang }) => {
   // для мобильных
   const isTouchDevice = L.Browser.mobile;
 
-const getAttrImage = (attr) => {
-  return attr.meta?.ogImage || null;
-};
+  const getAttrImage = (attr) => {
+    return attr.meta?.ogImage || null;
+  };
 
-const getAttrTitle = (attr) => {
-  return attr.meta?.title || '';
-};
+  const getAttrTitle = (attr) => {
+    return attr.meta?.title || '';
+  };
 
-const getAttractionPath = (attr) => {
-  return `/${attr.countryPath}/${attr.regionPath}/${attr.districtPath}/${attr.cityPath}/attractions/${attr.path}`;
-};
+  const getAttractionPath = (attr) => {
+    return `/${attr.countryPath}/${attr.regionPath}/${attr.districtPath}/${attr.cityPath}/attractions/${attr.path}`;
+  };
 
   return (
     <MapContainer closePopupOnClick={true} center={defaultCenter} zoom={6} style={{ height: "450px", width: "100%", marginBottom: "20px" }}>
@@ -106,44 +110,44 @@ const getAttractionPath = (attr) => {
 
           >
             {!isTouchDevice && (
-<Tooltip
-  className="custom-tooltip"
-  direction="top"
-  offset={[0, -10]}
-  opacity={1}
->
-  <div className="custom-tooltip-content">
-    {getAttrImage(attr) && (
-      <img
-        src={getAttrImage(attr)}
-        alt={getAttrTitle(attr)}
-      />
-    )}
+              <Tooltip
+                className="custom-tooltip"
+                direction="top"
+                offset={[0, -10]}
+                opacity={1}
+              >
+                <div className="custom-tooltip-content">
+                  {getAttrImage(attr) && (
+                    <img
+                      src={getAttrImage(attr)}
+                      alt={getAttrTitle(attr)}
+                    />
+                  )}
 
-    <p>{getAttrTitle(attr)}</p>
-  </div>
-</Tooltip>
+                  <p>{getAttrTitle(attr)}</p>
+                </div>
+              </Tooltip>
             )}
             {isTouchDevice && (
-<Popup className="custom-popup" maxWidth={180} minWidth={160}>
-  <div className="custom-popup-content">
-    {getAttrImage(attr) && (
-      <img
-        src={getAttrImage(attr)}
-        alt={getAttrTitle(attr)}
-      />
-    )}
+              <Popup className="custom-popup" maxWidth={180} minWidth={160}>
+                <div className="custom-popup-content">
+                  {getAttrImage(attr) && (
+                    <img
+                      src={getAttrImage(attr)}
+                      alt={getAttrTitle(attr)}
+                    />
+                  )}
 
-    <p>{getAttrTitle(attr)}</p>
+                  <p>{getAttrTitle(attr)}</p>
 
-    <button
-      className="popup-btn"
-      onClick={() => navigate(getAttractionPath(attr))}
-    >
-      {moreBtnText[lang]}
-    </button>
-  </div>
-</Popup>
+                  <button
+                    className="popup-btn"
+                    onClick={() => navigate(getAttractionPath(attr))}
+                  >
+                    {moreBtnText[lang]}
+                  </button>
+                </div>
+              </Popup>
             )}
           </Marker>
         )
