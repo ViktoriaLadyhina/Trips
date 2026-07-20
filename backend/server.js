@@ -28,6 +28,7 @@ const subregionCitiesRouter = require("./routes/subregionCities.router.js");
 const cityRouter = require("./routes/city.router.js"); 
 const attractionsListRouter = require("./routes/attrList.router.js");
 const allAttractionsRouter = require("./routes/allAttr.router.js")
+const attractionRouter = require("./routes/attraction.router.js")
 
 // COUNTRY LIST API
 app.use("/api/countries", listCountriesRouter);
@@ -61,6 +62,9 @@ app.use("/api/attractions", attractionsListRouter);
 
 // All ATTRACTIONS
 app.use("/api/attractions", allAttractionsRouter);
+
+// ATTRACTION
+app.use("/api/attraction", attractionRouter);
 
 
 // запуск сервера

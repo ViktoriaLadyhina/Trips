@@ -34,10 +34,6 @@ const moreBtnText = { ru: "Подробнее", de: "Mehr erfahren", ua: "Дет
 const AttrMap = ({ attractions, lang }) => {
   const navigate = useNavigate();
 
-  console.log('🔥 AttrMap RENDER');
-
-  console.log("attractions:", attractions);
-
   const FitBounds = ({ points }) => {
     const map = useMap();
 

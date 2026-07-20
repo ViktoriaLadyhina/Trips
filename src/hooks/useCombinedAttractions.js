@@ -20,7 +20,6 @@ const useCombinedAttractions = (countryPath, regionPath, districtPath, cityPath)
     (districtPath && districtPath !== 'city' ? districtPath : null) ||
     regionPath ||
     countryPath;
-
     
 // фетч запрос
 useEffect(() => {
@@ -127,7 +126,7 @@ const mysqlAllAttractions = useMemo(
 
 }, [staticAttractions, mysqlAttractions]);
 
-
+const parent = attrData?.parent || null;
 
 const mergedAttractions = [
     ...staticAttractions,
@@ -142,6 +141,7 @@ const mergedAttractions = [
     return {
     mergedAttractions,
     mergedAllAttractions,
+    parent,
     loading,
     error
 };

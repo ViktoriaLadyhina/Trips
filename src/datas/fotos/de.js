@@ -18,7 +18,7 @@ export const Fotos = {
         { path: "Germany/nrw/koln/koln-city/altstadt/romanische_kirchen/gross_st_martin/001.jpg", title: { ru: "Большой Святой Мартин (фото взято с википедии)", uk: "Великий Святий Мартін (фото взято з Вікіпедії)", de: "Groß St. Martin (Foto von Wikipedia entnommen)" } },
         { path: "Germany/nrw/koln/koln-city/altstadt/romanische_kirchen/gross_st_martin/002.jpg", title: { ru: "Большой Святой Мартин, 2025", uk: "Великий Святий Мартін, 2025", de: "Groß St. Martin, 2025" } }
       ],
-      'cologne-cathedral': [
+      cologne_cathedral: [
         { path: "Germany/nrw/koln/koln-city/koln-cathedral/001.jpg", title: { ru: "Кёльнский собор, 2025", uk: "Кельнський собор, 2025", de: "Kölner Dom, 2025" } },
 
         { path: "Germany/nrw/koln/koln-city/koln-cathedral/022.jpg", title: { ru: "Кёльнский собор. Реликвии", uk: "Кельнський собор. Реліквії", de: "Kölner Dom. Reliquien" } },
@@ -63,6 +63,7 @@ export const Fotos = {
       schokoladenmuseum: [
         { path: "Germany/nrw/koln/koln-city/schokoladenmuseum/001.jpg", title: { ru: "Музей шоколада (фото взято с википедии)", uk: "Музей шоколаду (фото взято з Вікіпедії)", de: "Schokoladenmuseum (Foto von Wikipedia entnommen)" } },
         { path: "Germany/nrw/koln/koln-city/schokoladenmuseum/002.jpg", title: { ru: "Музей шоколада, 2026", uk: "Музей шоколаду, 2026", de: "Schokoladenmuseum, 2026" } },
+        { path: "Germany/nrw/koln/koln-city/schokoladenmuseum/003.jpg", title: { ru: "Музей шоколада, 2026", uk: "Музей шоколаду, 2026", de: "Schokoladenmuseum, 2026" } },
       ],
       wallraf_richartz_museum: [
         { path: "Germany/nrw/koln/koln-city/wallraf_richartz_museum/001.jpg", title: { ru: "Музей Вальрафа-Рихарца, 2025", uk: "Музей Вальрафа-Ріхарцa, 2025", de: "Wallraf-Richartz-Museum, 2025" } }
@@ -76,9 +77,11 @@ export const Fotos = {
         { path: "Germany/nrw/koln/koln-city/koln_bridges/001.jpg", title: { ru: "6. Мост Гогенцоллернов, 2025", uk: "6. Міст Гогенцоллернів, 2025", de: "6. Hohenzollernbrücke, 2025" } },
         { path: "Germany/nrw/koln/koln-city/koln_bridges/005.jpg", title: { ru: "6. Мост Гогенцоллернов, 2025", uk: "6. Міст Гогенцоллернів, 2025", de: "6. Hohenzollernbrücke, 2025" } },
         { path: "Germany/nrw/koln/koln-city/koln_bridges/006.jpg", title: { ru: "7. Мост Дойцер, 2025", uk: "7. Міст Дойцер, 2025", de: "7. Deutzer Brücke, 2025" } },
+        { path: "Germany/nrw/koln/koln-city/koln_bridges/006a.jpg", title: { ru: "7. Мост Дойцер, 2026", uk: "7. Міст Дойцер, 2026", de: "7. Deutzer Brücke, 2026" } },
         { path: "Germany/nrw/koln/koln-city/koln_bridges/008.jpg", title: { ru: "8. Южный мост (фото взято с интернета)", uk: "8. Південний міст (фото взято з Інтернету)", de: "8. Südbrücke (Foto aus dem Internet)" } },
         { path: "Germany/nrw/koln/koln-city/koln_bridges/003.jpg", title: { ru: "9. Мост Северинс, 2025", uk: "9. Міст Северинс, 2025", de: "9. Severinsbrücke, 2025" } },
-        { path: "Germany/nrw/koln/koln-city/koln_bridges/002.jpeg", title: { ru: "10. Мост Роденкирхенер (фото взято с интернета)", uk: "10. Міст Роденкірхенер (фото взято з Інтернету)", de: "10. Rodenkirchener Brücke (Foto aus dem Internet)" } }
+        { path: "Germany/nrw/koln/koln-city/koln_bridges/003a.jpg", title: { ru: "9. Мост Северинс, 2026", uk: "9. Міст Северинс, 2026", de: "9. Severinsbrücke, 2026" } },
+        { path: "Germany/nrw/koln/koln-city/koln_bridges/002.jpg", title: { ru: "10. Мост Роденкирхенер (фото взято с интернета)", uk: "10. Міст Роденкірхенер (фото взято з Інтернету)", de: "10. Rodenkirchener Brücke (Foto aus dem Internet)" } }
       ],
       flora_garten_koln: [
         { path: "Germany/nrw/koln/koln-city/flora_garten_koln/001.jpg", title: { ru: "Ботанический сад Флора, 2025", uk: "Ботанічний сад Флора, 2025", de: "Botanischer Garten Flora, 2025" } },
@@ -141,7 +144,8 @@ export const Fotos = {
         { path: "Germany/nrw/koln/koln-city/stadtmuseum/001.jpg", title: { ru: "Кельнский городской музей (фото взято с интернета)", uk: "Кельнський міський музей (фото взято з Інтернету)", de: "Kölnisches Stadtmuseum (Foto aus dem Internet)" } },
       ],
       sport_olympia_museum_koln: [
-        { path: "Germany/nrw/koln/koln-city/sport_olympia_museum/001.jpg", title: { ru: "Немецкий музей спорта и Олимпийских игр (фото взято с интернета)", uk: "Німецький музей спорту та Олімпійських ігор (фото взято з Інтернету)", de: "Deutsches Sport & Olympia Museum (Foto aus dem Internet)" } },
+        { path: "Germany/nrw/koln/koln-city/sport_olympia_museum/001.jpg", title: { ru: "Немецкий музей спорта и Олимпийских игр, 2026", uk: "Німецький музей спорту та Олімпійських ігор, 2026", de: "Deutsches Sport & Olympia Museum, 2026" } },
+        { path: "Germany/nrw/koln/koln-city/sport_olympia_museum/002.jpg", title: { ru: "Немецкий музей спорта и Олимпийских игр, 2026", uk: "Німецький музей спорту та Олімпійських ігор, 2026", de: "Deutsches Sport & Olympia Museum, 2026" } },
       ],
       photographische_sammlung_sk_stiftung_kultur_koln: [
         { path: "Germany/nrw/koln/koln-city/photographische_sammlung_sk_stiftung_kultur/001.jpg", title: { ru: "Фотографическая коллекция культурного фонда SK (фото взято с интернета)", uk: "Фотографічна колекція культурного фонду SK (фото взято з Інтернету)", de: "Photographische Sammlung des SK Kulturfonds (Foto aus dem Internet)" } },
@@ -200,6 +204,7 @@ export const Fotos = {
       fischmarkt_koln: [
         { path: "Germany/nrw/koln/koln-city/altstadt/fischmarkt/001.jpg", title: { ru: "Фишмаркт, 2026", uk: "Фішмаркт, 2026", de: "Fischmarkt, 2026" } },
         { path: "Germany/nrw/koln/koln-city/altstadt/fischmarkt/002.jpg", title: { ru: "Фишмаркт, 2026", uk: "Фішмаркт, 2026", de: "Fischmarkt, 2026" } },
+        { path: "Germany/nrw/koln/koln-city/altstadt/fischmarkt/003.jpg", title: { ru: "Фишмаркт, 2026", uk: "Фішмаркт, 2026", de: "Fischmarkt, 2026" } },
       ],
       st_gereon_koln: [
         { path: "Germany/nrw/koln/koln-city/altstadt/romanische_kirchen/st_gereon/001.jpg", title: { ru: "Церковь Святого Гереона (фото взято с интернета)", uk: "Церква Святого Герєона (фото взято з Інтернету)", de: "St. Gereon Kirche (Foto aus dem Internet)" } },

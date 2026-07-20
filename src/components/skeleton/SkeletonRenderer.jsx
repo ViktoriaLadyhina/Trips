@@ -5,6 +5,7 @@ import SkeletonCountries from "./blocks/SkeletonCountries";
 import SkeletonSidebar from "./blocks/SkeletonSidebar";
 import SkeletonContent from "./blocks/SkeletonContent";
 import SkeletonSubRegion from "./blocks/SkeletonSubRegion";
+import SkeletonAttractionCard from "./blocks/SkeletonAttractionCard";
 
 
 const skeletonBlocks = {
@@ -15,6 +16,7 @@ const skeletonBlocks = {
     sidebar: SkeletonSidebar,
     content: SkeletonContent,
     subregion: SkeletonSubRegion,
+    attractionCards: SkeletonAttractionCard,
 };
 
 

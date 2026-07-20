@@ -8,18 +8,19 @@ import AttractionCard from '../../components/attraction/AttractionCard.jsx';
 import AttractionsFilters from '../../components/attractionsFilters/AttractionsFilters.jsx';
 import AttrMap from '../../components/maps/attr/AttrMap.jsx';
 
-
-import useCity from '../../hooks/useCity.js';
-import useSabRegions from '../../hooks/useSabRegions.js';
 import useAttractionFilters from '../../hooks/useAttractionFilters.js';
-
+import useCombinedAttractions from '../../hooks/useCombinedAttractions.js';
+import SkeletonRenderer from '../../components/skeleton/SkeletonRenderer.jsx';
 import datas from '../../datas/minimalIndex.js';
 
 import './Attractions.scss';
-import useCombinedAttractions from '../../hooks/useCombinedAttractions.js';
 
 
-const attractionsTitle = { ru: "Достопримечательности", ua: "Пам'ятки", de: "Sehenswürdigkeiten" };
+const attractionsTitle = {
+    ru: "Список достопримечательностей",
+    uk: "Список пам'яток",
+    de: "Liste der Sehenswürdigkeiten"
+};
 const NoAttractions = { ru: "Нет достопримечательностей", ua: "Достопримечательностей немає", de: "Keine Sehenswürdigkeiten" };
 const showAllText = {
     ru: { true: "Показать только текущее", false: "Показать все" },
@@ -27,13 +28,12 @@ const showAllText = {
     de: { true: "Nur aktuelle anzeigen", false: "Alle anzeigen" }
 };
 
+
 const AttractionsList = () => {
     const { lang } = useSelector((state) => state.language);
     const { countryPath, regionPath, districtPath, cityPath } = useParams();
 
-    const { subRegion } = useSabRegions(countryPath, regionPath, districtPath);
-    const { city } = useCity(countryPath, regionPath, districtPath, cityPath);
-    const { mergedAttractions: attractions, mergedAllAttractions: allAttractions } = useCombinedAttractions(countryPath, regionPath, districtPath, cityPath);
+    const { mergedAttractions: attractions, mergedAllAttractions: allAttractions, loading, error } = useCombinedAttractions(countryPath, regionPath, districtPath, cityPath);
 
     const [showAll, setShowAll] = useState(false);
 
@@ -45,24 +45,13 @@ const AttractionsList = () => {
         status: ['active', 'partial'],
     });
 
+    const SkeletonList = [
+        { type: "title" },
+        { type: "map" },
+        { type: "attractionCards", props: { count: 6 } }
+    ];
+
     const base = attractionsTitle[lang];
-
-    const locationName =
-        datas.districts[districtPath]?.[lang] ||
-        subRegion?.name ||
-        datas.regions[regionPath]?.[lang] ||
-        datas.countries[countryPath]?.[lang] ||
-        '';
-
-    const meta = {
-        title: locationName ? `${base} – ${locationName}` : base,
-        description: {
-            ru: `Список достопримечательностей в ${locationName || 'регионе'}`,
-            uk: `Список пам’яток у ${locationName || 'регіоні'}`,
-            de: `Liste der Sehenswürdigkeiten in ${locationName || 'der Region'}`
-        }[lang]
-    };
-
 
     const attrMap = useMemo(() => {
         return new Map((attractions || []).map(a => [a.id, a]));
@@ -111,7 +100,48 @@ const AttractionsList = () => {
 
 
     // для карты
-    const visibleAttractions = showAll ? allAttractions : mapAttractions;
+    const visibleAttractions = showAll
+        ? (allAttractions ?? [])
+        : (mapAttractions ?? []);
+
+    const city = cityPath ? datas.cities[cityPath] : null;
+
+    const subRegionPath =
+        districtPath !== 'city'
+            ? attractions.find(attr => attr.subRegionPath)?.subRegionPath || null
+            : null;
+
+    const subRegion = subRegionPath
+        ? datas.subRegions[subRegionPath]
+        : null;
+
+    const locationName =
+        city?.[lang] ||
+        (
+            districtPath !== 'city'
+                ? datas.districts[districtPath]?.[lang]
+                : null
+        ) ||
+        datas.regions[regionPath]?.[lang] ||
+        datas.countries[countryPath]?.[lang] ||
+        '';
+
+    const meta = {
+        title: locationName ? `${base} – ${locationName}` : base,
+        description: {
+            ru: `Список достопримечательностей в ${locationName || 'регионе'}`,
+            uk: `Список пам’яток у ${locationName || 'регіоні'}`,
+            de: `Liste der Sehenswürdigkeiten in ${locationName || 'der Region'}`
+        }[lang]
+    };
+
+    if (error) return <p>{error}</p>;
+
+    if (loading || !attractions) {
+        return (
+            <SkeletonRenderer blocks={SkeletonList} />
+        );
+    }
 
     // хлебные крошки
     const crumbs = [
@@ -125,20 +155,13 @@ const AttractionsList = () => {
         districtPath && districtPath !== "city" && datas.districts[districtPath]?.[lang]
             ? { label: datas.districts[districtPath][lang], path: `/${countryPath}/${regionPath}/${districtPath}` }
             : null,
-        city?.subRegionName ? { label: city.subRegionName } : null,
-        city?.name
-            ? {
-                label: city.name,
-                path: `/${countryPath}/${regionPath}/${districtPath}/${city.path}`
-            }
+        subRegion ? { label: subRegion[lang] } : null,
+        city ? { label: city[lang], path: `/${countryPath}/${regionPath}/${districtPath}/${cityPath}` }
             : null,
-        { label: attractionsTitle[lang] }
+        { label: `${attractionsTitle[lang]} – ${locationName}` }
     ].filter(Boolean);
 
-
-
-    if (!attractions) return <p>Loading...</p>;
-
+    
     return (
         <div className="attractions">
             <Helmet>
@@ -148,7 +171,7 @@ const AttractionsList = () => {
 
             <BreadCrumbs crumbs={crumbs} />
 
-            <h1 className="attractions__title">{attractionsTitle[lang]} </h1>
+            <h1 className="attractions__title"> {attractionsTitle[lang]} <br />  – {locationName}</h1>
 
             <div className="map-wrapper">
                 <AttrMap attractions={visibleAttractions} lang={lang} />

@@ -4,6 +4,7 @@ const db = require("../db");
 const getBlocks = require("../repositories/getBlocks");
 const getMeta = require("../repositories/getMeta");
 const getEntityPhotos = require("../repositories/getPhotos");
+const getCityRecommendations = require("../repositories/getCityRecommendations");
 
 const router = express.Router();
 
@@ -46,6 +47,8 @@ LIMIT 1
     // 5. PHOTOS (NEW SYSTEM)
     const { photos, mainPhoto } = await getEntityPhotos(db, city.id);
 
+    const recommendations = await getCityRecommendations(db, city.id, lang);
+
     // 8. RESPONSE
     res.json({
       id: city.id,
@@ -59,7 +62,9 @@ LIMIT 1
       meta,
 
       photos,
-      mainPhoto
+      mainPhoto,
+
+      recommendations
     });
 
   } catch (err) {
