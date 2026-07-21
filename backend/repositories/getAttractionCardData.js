@@ -108,6 +108,7 @@ async function getAttractionCardData(db, attrIds, lang) {
         if (!attributesByEntity[row.entity_id]) {
             attributesByEntity[row.entity_id] = {
                 type: [],
+                map: [],
                 rating: null,
                 status: null
             };
@@ -116,6 +117,9 @@ async function getAttractionCardData(db, attrIds, lang) {
         const attributes = attributesByEntity[row.entity_id];
 
         if (row.attribute_group === "type") {
+            attributes.type.push(row.value);
+        }
+        if (row.attribute_group === "map") {
             attributes.type.push(row.value);
         }
 
@@ -234,9 +238,9 @@ const coordinatesByEntity = Object.fromEntries(
             path: item.path,
 
             type: attributes.type,
-
             rating: attributes.rating,
             status: attributes.status,
+            map: attributes.map,
 
             name: content.name || null,
             short_description: content.short_description || null,

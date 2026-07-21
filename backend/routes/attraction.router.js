@@ -66,35 +66,30 @@ router.get("/:attrPath", async (req, res) => {
 
         const [attributeRows] = await db.query(
             `
-            SELECT
-                attribute_group,
-                value
+    SELECT
+        attribute_group,
+        value
 
-            FROM entity_attributes
+    FROM entity_attributes
 
-            WHERE entity_id = ?
-            `,
+    WHERE entity_id = ?
+    `,
             [attr.id]
         );
 
         const attributes = {
-            type: [],
-            rating: null,
-            status: null
+            status: null,
+            mapOpen: null
         };
 
         for (const row of attributeRows) {
 
-            if (row.attribute_group === "type") {
-                attributes.type.push(row.value);
-            }
-
-            if (row.attribute_group === "rating") {
-                attributes.rating = row.value;
-            }
-
             if (row.attribute_group === "status") {
                 attributes.status = row.value;
+            }
+
+            if (row.attribute_group === "mapOpen") {
+                attributes.mapOpen = row.value;
             }
         }
 
@@ -168,7 +163,8 @@ router.get("/:attrPath", async (req, res) => {
             photos: allPhotos,
             mainPhoto,
 
-            attributes,
+            status: attributes.status,
+            mapOpen: attributes.mapOpen,
 
             location,
 
