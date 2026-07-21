@@ -43,9 +43,7 @@ router.get("/:attrPath", async (req, res) => {
         );
 
         if (!attrRows.length) {
-            return res.status(404).json({
-                message: "Attraction not found"
-            });
+            return res.json(null);
         }
 
         const attr = attrRows[0];

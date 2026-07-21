@@ -42,7 +42,7 @@ function App() {
           <Route path="/:countryPath/:regionPath/:districtPath/attractions" element={<AttractionsList />} />
           <Route path="/:countryPath/:regionPath/:districtPath/:cityPath/attractions" element={<AttractionsList />} />
 
-          <Route path="/:countryPath/:regionPath/:districtPath/:cityPath/attractions/:attractionsPath" element={<Attraction />} />
+          <Route path="/:countryPath/:regionPath/:districtPath/:cityPath/attractions/:attractionPath" element={<Attraction />} />
 
           <Route path="/:countryPath/:regionPath/:districtPath/:cityPath/events/:eventPath" element={<Event />} />
 
