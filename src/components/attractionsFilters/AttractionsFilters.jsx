@@ -18,6 +18,15 @@ const attractionTypes = [
   { value: 'viewpoint', ru: 'Смотровые площадки', ua: 'Оглядові майданчики',  de: 'Aussichtspunkte' }
 ];
 
+// feature = landmark
+// feature = viewpoint
+// feature = family_friendly
+// feature = free_entry
+// feature = accessible
+// feature = dog_friendly
+// feature = panoramic
+// feature = hidden_gem
+
 // === Рейтинг фильтр ===
 const topOptions = [
   { value: 'all', ru: 'Рейтинг: все', ua: 'Рейтинг: усі', de: 'Bewertung: alle' },

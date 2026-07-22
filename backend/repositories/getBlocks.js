@@ -6,6 +6,9 @@ async function getBlocks(db, entityId, lang, blockType) {
     const [rows] = await db.query(
         `
         SELECT
+
+            c.id AS content_id,
+
             b.block_key,
             b.sort_order,
 
@@ -39,6 +42,8 @@ async function getBlocks(db, entityId, lang, blockType) {
     );
 
     return rows.map(row => ({
+
+        id: row.content_id,
 
         block_key: row.block_key,
 

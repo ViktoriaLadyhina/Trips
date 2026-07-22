@@ -19,5 +19,3 @@ export const getEntityName = (entity) =>
   entity.blocks?.find(
     block => block.block_key === "name"
   )?.content || "";
-
-  

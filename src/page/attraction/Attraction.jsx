@@ -13,18 +13,16 @@ import AttractionCardSub from '../../components/attraction/AttractionCardSub.jsx
 import AttractionsFilters from '../../components/attractionsFilters/AttractionsFilters.jsx';
 import FilteredMap from '../../components/maps/attr/filteredMap.jsx';
 
-import useCity from '../../hooks/useCity.js';
 import useAttractions from '../../hooks/useAttractions.js';
-
 import datas from '../../datas/minimalIndex.js';
 import { getAttraction } from '../../api/api.js';
-
 import { TextBlock } from '../../components/renders/TextBlock.jsx';
 import { PhotoBlock } from '../../components/renders/PhotoBlock.jsx';
-import { MapBlock } from '../../components/renders/MapBlock.jsx';
-
+import { prepareEntityBlocks } from '../../utils/entityHelpers.js';
+import { toFullUrl } from '../../utils/photo.js';
+import { cityLocations } from '../../datas/cityLocations.js';
 import './Attraction.scss';
-
+import { ItemBlock } from '../../components/renders/ItemBlock.jsx';
 
 const BASE_PHOTO_URL = import.meta.env.VITE_BASE_PHOTO_URL;
 
@@ -84,18 +82,6 @@ const Attraction = () => {
 
     const { countryPath, regionPath, districtPath, cityPath, attractionPath } = useParams();
 
-
-    // --------------------------------
-    // CITY
-    // --------------------------------
-
-    const { city } = useCity(
-        countryPath,
-        regionPath,
-        districtPath,
-        cityPath
-    );
-
     // STATIC ATTRACTIONS
     const { attractions, errorStatic } = useAttractions( countryPath, regionPath, districtPath, cityPath );
 
@@ -103,6 +89,19 @@ const Attraction = () => {
     const [ mysqlAttraction, setMysqlAttraction ] = useState(null);
     const [ loading, setLoading ] = useState(true);
     const [ error, setError ] = useState(null);
+    const { blocks, langData } = prepareEntityBlocks( mysqlAttraction?.blocks || []);
+
+    // FILTERS
+    const [ subFilters, setSubFilters ] = useState({
+        type: 'all',
+        rating: 'all',
+        unesco: 'all',
+        sort: 'rating',
+        status: [
+            'active',
+            'partial'
+        ]
+    });
 
     useEffect(() => {
         if (!attractionPath) { return; }
@@ -141,22 +140,21 @@ const Attraction = () => {
     const attraction = attractions?.find( item => item.path === attractionPath );
 
     // MYSQL BLOCKS
-
-    const blocks = mysqlAttraction?.blocks || [];
-
     const context = {
         lang,
-        countryPath,
-        regionPath,
-        districtPath,
-        cityPath,
-        attractionPath,
-        city
+        langData,
+        classPrefix: "attraction",
+        photo: mysqlAttraction?.mainPhoto,
+        className: 'attraction__photo'
     };
 
     const blockRegistry = {
         name: TextBlock,
-        map: MapBlock,
+        map: () => (
+            mysqlAttraction?.mapOpen
+                ? <FilteredMap map={mysqlAttraction.mapOpen} />
+                : null
+        ),
         photo: PhotoBlock,
         founder: TextBlock,
         construction_period: TextBlock,
@@ -167,31 +165,25 @@ const Attraction = () => {
         full_description: TextBlock,
         legends: TextBlock,
         item_title: TextBlock,
-        item: TextBlock,
+        item: ItemBlock,
         interestingFacts: TextBlock,
         officialSite: TextBlock
     };
 
 
     const renderBlock = block => {
-        const Renderer = blockRegistry[
-            block.block_key
-        ];
+        const Renderer = blockRegistry[ block.block_key ];
 
         if (!Renderer) { return null; }
 
         return (
-            <Renderer
-                block={block}
-                {...context}
-            />
+            <Renderer block={block} {...context} />
         );
     };
 
 
     // STATIC PHOTOS
-
-    const staticPhotos =   photosByCountry[countryPath];
+    const staticPhotos = photosByCountry[countryPath];
     const staticAttractionPhotos = staticPhotos?.[ regionPath ]?.[ cityPath ]?.[ attractionPath ] || [];
     const staticImages = staticAttractionPhotos.map(photo => ({
             src: `${BASE_PHOTO_URL}${photo.path}`,
@@ -199,21 +191,9 @@ const Attraction = () => {
         }));
 
 
-    // FILTERS
-    const [ subFilters, setSubFilters ] = useState({
-        type: 'all',
-        rating: 'all',
-        unesco: 'all',
-        sort: 'rating',
-        status: [
-            'active',
-            'partial'
-        ]
-    });
-
-
-    // STATIC META
+    // META
     const meta = attraction?.meta;
+    const mysqlMeta = mysqlAttraction?.meta;
 
     // LOADING / ERRORS
     if (errorStatic) { return <p>{errorStatic}</p>; }
@@ -293,122 +273,39 @@ const Attraction = () => {
 
     const showFilters = subObjects.length + subObjects2.length >= 5;
 
+    const staticSubRegionPath = cityLocations[cityPath]?.subRegionPath || null;
+
+const subRegionName = mysqlAttraction?.loc?.subRegion ||
+    datas.subRegions[staticSubRegionPath]?.[lang];
+
     // BREADCRUMBS
     const crumbs = [
+        { label: lang === 'ru' ? 'Главная' : lang === 'de' ? 'Startseite' : 'Головна', path: '/' },
 
-        {
-
-            label:
-                lang === 'ru'
-                    ? 'Главная'
-                    : lang === 'de'
-                        ? 'Startseite'
-                        : 'Головна',
-
-            path: '/'
-
-        },
-
-
-        countryPath &&
-        datas.countries[
-            countryPath
-        ]?.[lang]
-            ? {
-
-                label:
-                    datas.countries[
-                        countryPath
-                    ][lang],
-
-                path:
-                    `/${countryPath}`
-
-            }
-
+        countryPath && datas.countries[ countryPath ]?.[lang] ? 
+            { label: datas.countries[ countryPath ][lang], path: `/${countryPath}` }
             : null,
 
-
-        regionPath &&
-        datas.regions[
-            regionPath
-        ]?.[lang]
-            ? {
-
-                label:
-                    datas.regions[
-                        regionPath
-                    ][lang],
-
-                path:
-                    `/${countryPath}/${regionPath}`
-
-            }
-
+        regionPath && datas.regions[ regionPath ]?.[lang] ? 
+            { label: datas.regions[ regionPath][lang], path: `/${countryPath}/${regionPath}` }
             : null,
 
-
-        districtPath &&
-        districtPath !== 'city' &&
-        datas.districts[
-            districtPath
-        ]?.[lang]
-            ? {
-
-                label:
-                    datas.districts[
-                        districtPath
-                    ][lang],
-
-                path:
-                    `/${countryPath}/${regionPath}/${districtPath}`
-
-            }
-
+        districtPath && districtPath !== 'city' && datas.districts[ districtPath ]?.[lang] ? 
+            { label: datas.districts[ districtPath ][lang], path: `/${countryPath}/${regionPath}/${districtPath}` }
             : null,
 
+        subRegionName ?
+    { label: subRegionName }
+    : null,
 
-        city?.subRegionName
-
-            ? {
-
-                label:
-                    city.subRegionName
-
-            }
-
-            : null,
-
-
-        cityPath
-
-            ? {
-
-                label:
-                    datas.cities[
-                        cityPath
-                    ]?.[lang],
-
-                path:
-                    districtPath === 'city'
-
+        cityPath ? 
+            { label:  datas.cities[ cityPath ]?.[lang], path: districtPath === 'city'
                         ? `/${countryPath}/${regionPath}/city/${cityPath}`
-
                         : `/${countryPath}/${regionPath}/${districtPath}/${cityPath}`
-
             }
-
             : null,
 
-
-        {
-
-            label:
-                datas.attractions[
-                    attractionPath
-                ]?.[lang]
-
-        }
+        { label: datas.attractions[ attractionPath ]?.[lang] }
 
     ].filter(Boolean);
 
@@ -436,7 +333,7 @@ const Attraction = () => {
 
                     <BreadCrumbs  crumbs={crumbs} />
 
-                    <h1 className="attraction__title"> {attraction.name} </h1>
+                    <h1 className="attraction__name"> {attraction.name} </h1>
 
                     { attraction.mapOpen && (
                             <FilteredMap  map={attraction.mapOpen} />
@@ -620,6 +517,16 @@ const Attraction = () => {
 
                 // MYSQL ATTRACTION
                 <div className="attraction">
+                {mysqlMeta && (
+                <Helmet>
+                    <title>{mysqlMeta.title || datas.regions[regionPath][lang]}</title>
+                    <meta name="title" content={mysqlMeta.title} />
+                    <meta name="description" content={mysqlMeta.description} />
+                    <meta property="og:title" content={mysqlMeta.og_title} />
+                    <meta property="og:description" content={mysqlMeta.og_description} />
+                    <meta property="og:image" content={toFullUrl(mysqlMeta.og_image)} />
+                </Helmet>
+            )}
 
                     <BreadCrumbs crumbs={crumbs} />
 

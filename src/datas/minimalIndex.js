@@ -178,7 +178,7 @@ const datas =
 
     // Köln okrug
     //Köln-city
-    cologne_cathedral: { ru: 'Кёльнский собор', de: 'Kölner Dom', uk: 'Кельнський собор' },
+    cologne_cathedral: { id: 717, ru: 'Кёльнский собор', de: 'Kölner Dom', uk: 'Кельнський собор' },
     rathaus_koln: { ru: 'Кёльнская ратуша', de: 'Kölner Rathaus', uk: 'Кельнська ратуша' },
     roemisch_germanisches_museum: { ru: 'Римско-германский музей', de: 'Römisch-Germanisches Museum', uk: 'Римсько-германський музей' },
     farina_duftmuseum: { ru: 'Музей духов в доме Фарина', de: 'Duftmuseum im Farina-Haus', uk: 'Музей парфумів у домі Фаріна' },
