@@ -87,7 +87,19 @@ async function getAttractionCardData(db, attrIds, lang) {
     // 3. ATTRIBUTES
     // -------------------------
 
-    const attributesByEntity = {};
+   const [attributeRows] = await db.query(
+    `
+    SELECT
+        entity_id,
+        attribute_group,
+        value
+    FROM entity_attributes
+    WHERE entity_id IN (${placeholders})
+    `,
+    attrIds
+);
+
+const attributesByEntity = {};
 
 for (const row of attributeRows) {
 
