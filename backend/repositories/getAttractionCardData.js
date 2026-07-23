@@ -18,28 +18,32 @@ async function getAttractionCardData(db, attrIds, lang) {
     // -------------------------
 
     const [entityRows] = await db.query(
-        `
-        SELECT
-            e.id,
-            e.path,
+    `
+    SELECT
+        e.id,
+        e.path,
 
-            m.title,
-            m.description,
-            m.og_image
+        m.title,
+        m.description,
 
-        FROM entities e
+        p.path AS og_image
 
-        LEFT JOIN entity_meta m
-            ON m.entity_id = e.id
-            AND m.language = ?
+    FROM entities e
 
-        WHERE e.id IN (${placeholders})
-        `,
-        [
-            lang,
-            ...attrIds
-        ]
-    );
+    LEFT JOIN entity_meta m
+        ON m.entity_id = e.id
+        AND m.language = ?
+
+    LEFT JOIN entity_photos p
+        ON p.id = m.og_image
+
+    WHERE e.id IN (${placeholders})
+    `,
+    [
+        lang,
+        ...attrIds
+    ]
+);
 
     // -------------------------
     // 2. CONTENT

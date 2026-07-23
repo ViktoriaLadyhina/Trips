@@ -37,13 +37,14 @@ const AttractionsList = () => {
 
     const [showAll, setShowAll] = useState(false);
 
-    const [filters, setFilters] = useState({
-        type: 'all',
-        rating: 'all',
-        unesco: 'all',
-        sort: 'rating',
-        status: ['active', 'partial'],
-    });
+const [filters, setFilters] = useState({
+    type: 'all',
+    feature: ['all'],
+    rating: 'all',
+    unesco: 'all',
+    sort: 'rating',
+    status: ['active', 'partial'],
+});
 
     const SkeletonList = [
         { type: "title" },
@@ -53,27 +54,48 @@ const AttractionsList = () => {
 
     const base = attractionsTitle[lang];
 
-    const attrMap = useMemo(() => {
-        return new Map((attractions || []).map(a => [a.id, a]));
-    }, [attractions]);
 
     //фильтрация
     const baseFiltered = useAttractionFilters({
         attractions,
         filters,
         cityPath,
-        districtPath,
-        attrMap,
+        districtPath
     });
 
     const mapAttractions = baseFiltered;
 
-    const listAttractions = useMemo(() => {
-        return baseFiltered.filter(attr => {
-            if (attr.hiddenFromList && filters.unesco !== 'yes') return false;
-            return true;
+    const hiddenFromListIds = useMemo(() => {
+    const ids = new Set();
+
+    (attractions || []).forEach(attr => {
+        (attr.subObjects || []).forEach(subObject => {
+            if (subObject?.id) {
+                ids.add(subObject.id);
+            }
         });
-    }, [baseFiltered, filters.unesco]);
+    });
+
+    return ids;
+}, [attractions]);
+
+   const listAttractions = useMemo(() => {
+    return baseFiltered.filter(attr => {
+
+        const hidden =
+            attr.hiddenFromList || hiddenFromListIds.has(attr.id);
+
+        if (hidden && filters.unesco !== 'yes') {
+            return false;
+        }
+
+        return true;
+    });
+}, [
+    baseFiltered,
+    hiddenFromListIds,
+    filters.unesco
+]);
 
     //сортировка
     const sortedAttractions = useMemo(() => {

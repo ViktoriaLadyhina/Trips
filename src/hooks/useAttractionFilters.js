@@ -6,24 +6,7 @@ export default function useAttractionFilters({
     filters,
     cityPath,
     districtPath,
-    attrMap
 }) {
-
-    const unescoChildIds = useMemo(() => {
-        const set = new Set();
-
-        (attractions || []).forEach(a => {
-            a.subObjects?.forEach(id => {
-                const sub = attrMap.get(id);
-                if (sub?.unesco_status?.included) {
-                    set.add(id);
-                }
-            });
-        });
-
-        return set;
-    }, [attractions, attrMap]);
-
 
     return useMemo(() => {
         if (!attractions) return [];
@@ -31,38 +14,67 @@ export default function useAttractionFilters({
         return attractions.filter(attr => {
             if (!attr) return false;
 
-const attrCityPath = attr.cityPath || attr.paths?.city;
+            const attrCityPath =
+                attr.cityPath ||
+                attr.paths?.city;
 
-const attrDistrictPath =
-    attr.districtPath ||
-    attr.paths?.district ||
-    (attrCityPath ? 'city' : null);
+            const attrDistrictPath =
+                attr.districtPath ||
+                attr.paths?.district ||
+                (attrCityPath ? 'city' : null);
 
-if (cityPath && attrCityPath !== cityPath) return false;
-if (districtPath && attrDistrictPath !== districtPath) return false;
-
-            const allTypes = [
-                ...(attr.type || []),
-                ...(attr.subObjects || [])
-                    .map(id => attrMap.get(id)?.type || [])
-                    .flat()
-            ];
-
-            if (filters.type !== 'all' && !allTypes.includes(filters.type)) return false;
-
-            if (filters.rating !== 'all' && attr.rating !== filters.rating) {
+            if (cityPath && attrCityPath !== cityPath) {
                 return false;
             }
 
-            if (filters.unesco === 'yes') {
-                const isDirect = attr.unesco_status?.included;
-                const isChild = unescoChildIds.has(attr.id);
+            if (districtPath && attrDistrictPath !== districtPath) {
+                return false;
+            }
 
-                if (!isDirect && !isChild) return false;
+            if (
+                filters.type !== 'all' &&
+                !attr.type?.includes(filters.type)
+            ) {
+                return false;
+            }
+
+            if (
+                filters.feature?.length > 0 &&
+                !filters.feature.includes('all') &&
+                !filters.feature.some(feature =>
+                    attr.feature?.includes(feature)
+                )
+            ) {
+                return false;
+            }
+
+            if (
+                filters.rating !== 'all' &&
+                attr.rating !== filters.rating
+            ) {
+                return false;
+            }
+
+            if (
+                filters.unesco === 'yes' &&
+                !attr.unesco_status?.included
+            ) {
+                return false;
+            }
+
+            if (
+                filters.unesco === 'no' &&
+                attr.unesco_status?.included
+            ) {
+                return false;
             }
 
             const status = attr.status ?? 'active';
-            if (filters.status.length && !filters.status.includes(status)) {
+
+            if (
+                filters.status?.length &&
+                !filters.status.includes(status)
+            ) {
                 return false;
             }
 
@@ -74,13 +86,9 @@ if (districtPath && attrDistrictPath !== districtPath) return false;
         cityPath,
         districtPath,
         filters.type,
+        filters.feature,
         filters.rating,
         filters.unesco,
-        attrMap,
-        unescoChildIds,
         filters.status
     ]);
-
-
-
 }
