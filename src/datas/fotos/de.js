@@ -15,9 +15,6 @@ export const Fotos = {
         { path: "Germany/nrw/koln/koln-city/altstadt/romanische_kirchen/gross_st_martin/001.jpg", title: { ru: "Большой Святой Мартин (фото взято с википедии)", uk: "Великий Святий Мартін (фото взято з Вікіпедії)", de: "Groß St. Martin (Foto von Wikipedia entnommen)" } },
         { path: "Germany/nrw/koln/koln-city/altstadt/romanische_kirchen/gross_st_martin/002.jpg", title: { ru: "Большой Святой Мартин, 2025", uk: "Великий Святий Мартін, 2025", de: "Groß St. Martin, 2025" } }
       ],
-      guerzenich_koln: [
-        { path: "Germany/nrw/koln/koln-city/altstadt/guerzenich_koln/001.jpg", title: { ru: "Гюрцених, 2026", uk: "Гюрценіх, 2026", de: "Gürzenich, 2026" } },
-      ],
       'roemisch-germanisches-museum': [
         { path: "Germany/nrw/koln/koln-city/roemisch-germanisches-museum/001.jpg", title: { ru: "Римско-германский музей, 2025", uk: "Римсько-германський музей, 2025", de: "Römisch-Germanisches Museum, 2025" } }
       ],

@@ -3,7 +3,7 @@ const datas = [
     // Köln-city
     // {
     //     id: "altstadt_koln",
-    //     subObjects: ["cologne_cathedral", "rathaus_koln", "guerzenich_koln", "miqua", "wallraf_richartz_museum", "roemisch_germanisches_museum", "farina_duftmuseum", "museum_ludwig", "stadtmuseum_koln", "dufthaus_4711_koln", "st_maria_himmelfahrt_koln", "old_towers_koln", "fischmarkt_koln", "gross_st_martin_koln", "st_maria_im_kapitol_koln", "st_kunibert_koln"],
+    //     subObjects: ["miqua", "wallraf_richartz_museum", "roemisch_germanisches_museum", "farina_duftmuseum", "museum_ludwig", "stadtmuseum_koln", "dufthaus_4711_koln", "st_maria_himmelfahrt_koln", "old_towers_koln", "fischmarkt_koln", "gross_st_martin_koln", "st_maria_im_kapitol_koln", "st_kunibert_koln"],
     //     short_description_subObjects: {
     //         items: [
     //             { bold: "Fischmarkt", text: "– lebhafter historischer Platz in der Altstadt von Köln mit bunten Häusern und der Atmosphäre eines mittelalterlichen Fischmarktes." },
@@ -11,7 +11,6 @@ const datas = [
     //             { bold: "St. Maria im Kapitol", text: "– die größte romanische Kirche Kölns, erbaut auf dem Gelände eines antiken römischen Tempels. Ein herausragendes Beispiel romanischer Architektur mit Trikonchos-Plan und historischer Krypta, die Spuren der antiken Vergangenheit bewahrt." },
     //             { bold: "St. Mariä Himmelfahrt", text: "– die wichtigste Barockkirche Kölns aus dem 17. Jahrhundert, eine ehemalige Jesuitenkirche in der Nähe des Hauptbahnhofs und des Kölner Doms." },
     //             { bold: "Basilika St. Kunibert in Köln", text: "– eine romanische Kirche mit massiven Türmen, strengen Formen und ruhiger Atmosphäre, gelegen im nördlichen Teil der Altstadt in der Nähe des Rheins." },
-    //             { bold: "Gürzenich", text: "– historisches Zunfthaus und Saal in der Nähe des Kölner Doms." },
     //             { bold: "Dufthaus 4711", text: "– historisches Gebäude in der Fußgängerzone um die Hohe Straße und Schildergasse." },
     //             { bold: "Duftmuseum im Farina-Haus", text: "– Museum für Düfte und Parfum im historischen Viertel beim Rathaus." },
     //             { bold: "Kölnisches Stadtmuseum", text: "– Museum für Stadtgeschichte im Zentrum (Zeughaus)." },
@@ -231,68 +230,6 @@ const datas = [
             ogDescription: "Tauchen Sie ein in die Atmosphäre barocker Architektur im Herzen Kölns! St. Mariä Himmelfahrt ist ein bedeutendes religiöses Bauwerk der Altstadt mit reicher Geschichte und beeindruckendem Innenraum.",
             keywords: "Kirche Mariä Himmelfahrt, Köln, gotische Architektur, historisches Zentrum, religiöse Architektur, Sehenswürdigkeiten Köln, mittelalterliche Kirche, Kloster, Kultstätte, Tourismus Deutschland, Führungen, historische Gebäude",
             ogImage: "https://our-travels.info/foto/Germany/nrw/koln/koln-city/altstadt/st_maria_himmelfahrt/001.jpg"
-        }
-    },
-    {
-        id: "guerzenich_koln",
-        name: "Gürzenich – historischer Konzertsaal und Zunfthaus in Köln",
-        type: ["historical_building"], rating: "popular",
-        path: "guerzenich_koln",
-        countryPath: "germany", regionPath: "nrw", districtPath: "city", cityPath: "koln_city",
-        // showMore: true, hiddenFromList: true,
-        fotoCard: "Germany/nrw/koln/koln-city/altstadt/guerzenich_koln/001.jpg",
-        location: "Köln, Stadtteil Altstadt-Nord (Stadtbezirk Innenstadt), Deutschland",
-        officialSite: [
-            { bold: "Offizielle Website", link: "https://koelncongress.de/locations/guerzenich-koeln/" }
-        ],
-        short_description: "Der Gürzenich ist ein historisches Gebäude im Zentrum von Köln, das in den Jahren 1441-1452 für städtische Feste und feierliche Anlässe errichtet wurde. Nach der Zerstörung im Krieg wurde es wiederaufgebaut und dient heute als Veranstaltungsort für Konzerte, Bankette und offizielle Empfänge. Die Fassade ist mit Figuren historischer Schutzpatrone der Stadt geschmückt, während die Türgriffe des Haupteingangs die volkstümlichen Kölner Figuren Tünnes und Schäl zeigen.",
-        full_description: {
-            title: "Beschreibung und Geschichte",
-            items: [
-                { bold: "Der Gürzenich", text: "ist eines der bekanntesten weltlichen Gebäude der Kölner Altstadt und wurde Mitte des 15. Jahrhunderts im spätgotischen Stil errichtet. Seit jeher diente er als städtisches „Wohnzimmer“ – als repräsentativer Festsaal für Feiern, Empfänge, Bälle, offizielle Bankette und bedeutende Veranstaltungen." },
-                { bold: "Architektur: ", text: "Das Gebäude ist ein rechteckiger Steinbau mit typischen architektonischen Elementen der Spätgotik, darunter zinnenartige Mauern, kleine Ecktürmchen und hohe, schmale Fenster, die die Innenräume mit Tageslicht durchfluten. Trotz der Zerstörungen im Zweiten Weltkrieg wurde ein Teil der Fassade originalgetreu wiederhergestellt." },
-                { bold: "Geschichte.", text: "Der Bau entstand im 15. Jahrhundert, etwa zwischen 1441 und 1446. Der Name „Gürzenich“ geht auf den Namen einer der früheren Besitzerfamilien oder einer Kaufmannszunft zurück, die mit Handel und städtischen Angelegenheiten verbunden war." },
-                { text: "Ursprünglich war der Gürzenich für prächtige städtische Feste, Bälle und offizielle Empfänge bestimmt. Hier wurden hochrangige Gäste empfangen, darunter Kaiser und andere Würdenträger. Im 16. Jahrhundert fanden im Großen Saal Versammlungen und Reichstage statt." },
-                { text: "Im 17. und 18. Jahrhundert wurde der Gürzenich überwiegend als Lager- und Handelsgebäude genutzt und verlor zeitweise einen Teil seiner repräsentativen Bedeutung." },
-                { text: "Während des Zweiten Weltkriegs wurde das Gebäude schwer beschädigt – erhalten blieben im Wesentlichen nur die Außenmauern. Der Wiederaufbau begann Anfang der 1950er-Jahre: Die Fassade wurde im gotischen Stil rekonstruiert, während die Innenräume im Stil der 1950er-Jahre gestaltet wurden. Die Architekten der Rekonstruktion waren Rudolf Schwarz und Karl Band." },
-                { bold: "Heutige Nutzung: ", text: "Heute dient der Gürzenich als Konzertsaal, Veranstaltungsort für kulturelle Ereignisse und offizielle Empfänge. Er ist bekannt für seine hervorragende Akustik und seine historische Atmosphäre. Der Gürzenich vereint Geschichte, Kultur und das städtische Leben Kölns und gilt als Denkmal der kaufmännischen und musikalischen Tradition." }
-            ]
-        },
-        tickets_and_entry: {
-            title: "Praktische Informationen",
-            items: [
-                { bold: "Adresse: ", text: "Martinstrasse 29-37, 50667 Köln, Deutschland. Von der Haltestelle Heumarkt (Straßenbahn) weniger als 250 m entfernt." },
-                { bold: "Zugang:", text: "Das Gebäude ist kein Museum – der Zutritt ist nur im Rahmen von Veranstaltungen, Konzerten, Festivals oder Karnevalssitzungen möglich." }
-            ]
-        },
-        sub_objects: {
-            title: "Heute verfügt das Gebäude über mehrere Säle unterschiedlicher Größe, darunter:",
-            items: [
-                { bold: "Großer Saal ", text: "– 23×53 m, hauptsächlich für große festliche Anlässe." },
-                { bold: "Marsiliussaal, Isabella-Hall,", text: "Sitzungs- und Empfangssäle – genutzt für Bankette, Versammlungen und Konzerte." },
-                { text: "Die ursprünglichen gotischen Innenausstattungen sind verloren gegangen, doch der mittelalterliche Charakter ist durch die Proportionen und die Architektur des oberen Saals weiterhin spürbar." }
-            ]
-        },
-        interestingFacts: {
-            title: "Interessante Fakten",
-            items: [
-                { text: "Der Gürzenich wird oft als das „Wohnzimmer Kölns“ (Cologne’s parlor) bezeichnet, da er traditionell als Ort für Empfänge und Feierlichkeiten dient." },
-                { text: "Hier fanden bedeutende Karnevalssitzungen statt, die weit über Köln hinaus bekannt sind." },
-                { text: "Die Fassade ist mit den Figuren der legendären Schutzpatrone der Stadt — Agrippa und Marsilius – geschmückt, während die Türgriffe des Haupteingangs die kölnischen Volksfiguren Tünnes und Schäl darstellen." },
-                { text: "Der Name Gürzenich wurde auch auf das berühmte Gürzenich-Orchester Köln übertragen, das ursprünglich als musikalisches Ensemble für Auftritte in diesen Sälen entstand." }
-            ]
-        },
-        construction_period: " ursprünglich im 15. Jahrhundert erbaut, etwa zwischen 1441 und 1446.",
-        architects: " Die Architekten der Rekonstruktion waren Rudolf Schwarz und Karl Band.",
-        founder: " die Stadt Köln auf einem Grundstück der Familie Gürzenich.",
-        coord: { lat: 50.93674, lng: 6.95843 },
-        meta: {
-            title: "Gürzenich in Köln – historisches Gebäude und Zentrum der Festlichkeiten",
-            description: "Der Gürzenich in Köln wurde in den Jahren 1441–1452 als Gebäude für städtische Feierlichkeiten errichtet. Heute finden hier Konzerte, Bankette und offizielle Empfänge statt.",
-            ogTitle: "Gürzenich, Köln – historisches Gebäude und Veranstaltungszentrum",
-            ogDescription: "Entdecken Sie den Gürzenich in Köln – ein historisches Bauwerk aus dem 15. Jahrhundert, das nach dem Krieg wiederaufgebaut wurde und heute Konzerte, Karnevalssitzungen und festliche Empfänge beherbergt.",
-            keywords: "Gürzenich, Köln, historischer Konzertsaal, Zunfthaus, Kulturerbe, historisches Gebäude, Architektur Köln, Musikveranstaltungen, Konzerte, mittelalterliches Gebäude, Sehenswürdigkeiten Köln, Tourismus Deutschland, historische Gebäude, Events",
-            ogImage: "https://our-travels.info/foto/Germany/nrw/koln/koln-city/altstadt/guerzenich_koln/001.jpg"
         }
     },
     {
