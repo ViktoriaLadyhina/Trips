@@ -3,17 +3,9 @@ const datas = [
     // Köln-city
     // {
     //     id: "altstadt_koln",
-    //     name: "Altstadt Köln",
-    //     type: ["historical_area"], rating: "top",
-    //     path: "altstadt_koln",
-    //     countryPath: "germany", regionPath: "nrw", districtPath: "city", cityPath: "koln_city",
-    //     fotoCard: "Germany/nrw/koln/koln-city/altstadt/005.jpg",
-    //     location: "Köln, Deutschland",
     //     subObjects: ["cologne_cathedral", "rathaus_koln", "guerzenich_koln", "miqua", "wallraf_richartz_museum", "roemisch_germanisches_museum", "farina_duftmuseum", "museum_ludwig", "stadtmuseum_koln", "dufthaus_4711_koln", "st_maria_himmelfahrt_koln", "old_towers_koln", "fischmarkt_koln", "gross_st_martin_koln", "st_maria_im_kapitol_koln", "st_kunibert_koln"],
     //     short_description_subObjects: {
-    //         text: "In der Altstadt von Köln befinden sich folgende Sehenswürdigkeiten:",
     //         items: [
-    //             { bold: "🌍Kölner Dom", text: "– majestätische gotische Kathedrale, das Herz der Altstadt, am Platz vor dem Hauptbahnhof." },
     //             { bold: "Fischmarkt", text: "– lebhafter historischer Platz in der Altstadt von Köln mit bunten Häusern und der Atmosphäre eines mittelalterlichen Fischmarktes." },
     //             { bold: "Groß St. Martin", text: "– eine der bekanntesten romanischen Kirchen Kölns mit einem massiven Turm-Trikonchos, der über der Rheinpromenade aufragt. Ein Symbol des Silhouetts der Altstadt." },
     //             { bold: "St. Maria im Kapitol", text: "– die größte romanische Kirche Kölns, erbaut auf dem Gelände eines antiken römischen Tempels. Ein herausragendes Beispiel romanischer Architektur mit Trikonchos-Plan und historischer Krypta, die Spuren der antiken Vergangenheit bewahrt." },
@@ -30,73 +22,6 @@ const datas = [
     //             { bold: "Wallraf-Richartz-Museum", text: "– Museum für Malerei und Kunst, unweit von Rathaus und Dom." },
     //             { bold: "Alte Türme und Befestigungen der Altstadt Kölns", text: "– Reste der mittelalterlichen Stadtmauer und Verteidigungstürme, verteilt über die Altstadt, die einen Einblick geben, wie Köln im Mittelalter aussah und das Verteidigungssystem der Stadt nachvollziehbar machen." }
     //         ]
-    //     },
-    //     meta: {
-    //         title: "Altstadt Köln – Sehenswürdigkeiten, Museen, Spaziergänge entlang des Rheins",
-    //         description: "Entdecken Sie die Altstadt von Köln: enge Gassen, gotische Kathedralen, historische Plätze, Museen und die Rheinuferpromenade. Ein nützlicher Reiseführer für Spaziergänge und Besuchsplanung.",
-    //         ogTitle: "Altstadt Köln – Herz der Geschichte und Kultur der Stadt",
-    //         ogDescription: "Spazieren Sie durch die Altstadt von Köln: historische Gebäude, Museen, Plätze, Brauhäuser und die malerische Rheinuferpromenade. Perfekt für Touristen und Geschichtsinteressierte.",
-    //         keywords: "Altstadt Köln, Köln, historisches Zentrum, Architektur Köln, touristische Routen, Sehenswürdigkeiten Köln, mittelalterliche Architektur, Stadtrundgang, Kulturerbe, Museen Köln, historische Gebäude, Platz, Türme, Tourismus Deutschland",
-    //         ogImage: "https://our-travels.info/foto/Germany/nrw/koln/koln-city/altstadt/005.jpg"
-    //     }
-    // },
-    // {
-    //     id: "cologne_cathedral",
-    //     name: "Kölner Dom",
-    //     type: ["cathedral", "landmark"], rating: "top",
-    //     path: "cologne_cathedral",
-    //     countryPath: "germany", regionPath: "nrw", districtPath: "city", cityPath: "koln_city",
-    //     showMore: true, hiddenFromList: true,
-    //     fotoCard: "Germany/nrw/koln/koln-city/koln-cathedral/001.jpg",
-    //     loc: {
-    //         country: "Deutschland",
-    //         region: "Nordrhein-Westfalen",
-    //         district: "Stadt mit Kreisstatus",
-    //         city: "Köln",
-    //         cityDistrict: "Stadtteil Altstadt-Nord (Bezirk Innenstadt)"
-    //     },
-    //     officialSite: [
-    //         { bold: 'Offizielle Webseite des Kölner Doms', link: 'https://www.koelner-dom.de/' }
-    //     ],
-    //     unesco_status: {
-    //         included: true,
-    //         year: 1996,
-    //         type: "Kulturerbe",
-    //         criteria: "i, ii, iv",
-    //         epoch: "Gotik"
-    //     },
-    //     construction_period: "1248–1880",
-    //     architects: ["Konrad von Hochstaden, ", "Werkstätten der Baumeister XIII–XIX Jh."],
-    //     founder: "Reinald von Dassel",
-    //     relics: {
-    //         title: "Reliquien und Schätze des Kölner Doms",
-    //         items: [
-    //             { img: "Germany/nrw/koln/koln-city/koln-cathedral/024.jpg", bold: "6. Schrein der Heiligen Drei Könige.", text: "Die Hauptreliquie des Kölner Doms – der Schrein der Heiligen Drei Könige (Dreikönigenschrein), geschaffen von Meister Nikolaus aus Verden und seinen Schülern Ende 12. – Anfang 13. Jh. <br>Dieses Meisterwerk ist 2,20 m lang, 1,53 m hoch und 1,10 m breit, mit vergoldeten Silberplatten bezogen und mit Tausenden von Edelsteinen, Perlen und antiken Gemmen geschmückt. Die Reliefs zeigen Szenen aus Altem und Neuem Testament und unterstreichen die Idee der Kontinuität des Glaubens. <br>Auf der Vorderseite ist die Madonna mit dem Kind dargestellt, vor der die drei Könige – Kaspar, Melchior und Balthasar – knien. Ihnen schloss sich ein vierter an – der deutsche König Otto IV., der ewig bei ihnen sein wollte. <br>Am 6. Januar, am Fest der Epiphanie, wird die Vorderseite des Schreins entfernt – und Gläubige sehen die drei Schädel der Könige, gekrönt mit goldenen Kronen. Laut Legende wurden diese Reliquien 1164 von Erzbischof Reinald von Dassel aus Mailand gebracht – genau dafür wurde der Dom errichtet." },
-    //             { img: "Germany/nrw/koln/koln-city/koln-cathedral/010.jpg", bold: "7. Chöre", text: " – eines der ersten fertiggestellten Teile des Doms. Zwischen 1308–1311 wurden die Holzelemente fein geschnitzt, und ein Jahrzehnt später mit Fresken und Glasfenstern mit biblischen Königen verziert. Das Licht durch diese Fenster verleiht dem Innenraum den Eindruck eines ewigen Morgens." },
-    //             { bold: "8. Königs-Kapelle.", text: "In der Königs-Kapelle sind Glasfenster des frühen 14. Jahrhunderts zu sehen, die Szenen der Anbetung des Jesuskindes darstellen. Hier ruht auch das Herz von <b>Maria de’ Medici</b>, der französischen Königin, die 1642 in Köln starb. Die weiße Marmorplatte über dem Grab erinnert an ihr bewegtes Leben und daran, dass diese Kirche auch Zuflucht für vertriebene Monarchen war." },
-    //             { bold: "9. Innen Galerie.", text: "Der breite Umgehungsgang hinter dem Altar wurde speziell für Pilger entworfen, damit sie ungehindert den Schrein der Könige erreichen konnten. In diesem architektonischen Konzept zeigt sich Fürsorge für die Menschen – die Verbindung von Geistlichem und Praktischem." },
-    //             { img: "Germany/nrw/koln/koln-city/koln-cathedral/013.jpg", bold: "10. Stephan Lochner Triptychon.", text: "Im Marienkapelle befindet sich das Meisterwerk der deutschen Malerei des 15. Jahrhunderts – das Triptychon von Stephan Lochner. Auf der Mitteltafel ist die Anbetung der Könige dargestellt, auf den Seitenheften die Heiligen Ursula und Gereon, Schutzpatrone Kölns. Wenn die Flügel geschlossen sind, erscheint die Verkündigungsszene. <br>Dies ist eines jener Werke, vor denen man schweigen möchte – denn das Licht, das von den Gesichtern der Könige ausgeht, wirkt lebendig." },
-    //             { img: "Germany/nrw/koln/koln-city/koln-cathedral/021.jpg", bold: "Mailänder Madonna.", text: "Erzbischof Reinald von Dassel brachte aus Mailand die geschnitzte Darstellung der Madonna, die als wundertätig verehrt wurde. Nach dem Brand 1248 ging das Original verloren, aber um 1290 wurde eine neue Statue geschaffen, bekannt als Mailänder Madonna. <br>Ihre Eleganz und Sanftheit der Linien machen sie zu einem der schönsten Beispiele gotischer Skulptur. Im 19. Jh. wurde sie auf ein neues Podest gesetzt und mit Krone und Zepter gekrönt. Noch Jahrhunderte später bleibt sie ein Symbol der Zärtlichkeit und mütterlichen Schutzes." },
-    //             { bold: "Archäologische Funde / Lapidarium", text: " – Funde unter dem Fundament: Sarkophage, Reliquien aus dem 7.–6. Jh., sowie Sarkophage von Erzbischöfen (z. B. der Sarkophag der Heiligen Irmgardis), ausgestellt in unterirdischen Räumen/Lapidarium." }
-    //         ]
-    //     },
-    //     interestingFacts: {
-    //         title: "Interessante Fakten",
-    //         items: [
-    //             { text: "Der Bau dauerte 632 Jahre – von 1248 bis 1880." },
-    //             { text: "Höhe – ca. 157,4 Meter; unter den Domen höher nur das Ulmer Münster." },
-    //             { text: "Die Petersglocke wiegt über 24 Tonnen." },
-    //             { text: "Zur Aussichtsplattform führen 509 Stufen." }
-    //         ]
-    //     },
-    //     coord: { lat: 50.941364, lng: 6.958107 },
-    //     meta: {
-    //         title: "Kölner Dom: Gotische Legende des Rheins",
-    //         description: "Der Kölner Dom – Symbol der Stadt und Meisterwerk gotischer Architektur. Baugeschichte, Reliquien, Glasfenster, Glocken und Geheimnisse des Doms.",
-    //         ogTitle: "Kölner Dom: Geschichte, Architektur und Reliquien",
-    //         ogDescription: "Tauchen Sie ein in die Geschichte des Kölner Doms – Größe, Reliquien, Architektur und Intrigen des gotischen Meisterwerks.",
-    //         keywords: "Kölner Dom, Köln, gotische Architektur, historisches Zentrum, touristische Routen, Sehenswürdigkeiten Deutschland, christliche Architektur, religiöse Denkmäler, Türme, Kultstätte, Kulturdenkmal, Tourismus, Führungen, Dom",
-    //         ogImage: "https://our-travels.info/foto/Germany/nrw/koln/koln-city/koln-cathedral/001.jpg"
     //     }
     // },
     {

@@ -18,32 +18,6 @@ export const Fotos = {
         { path: "Germany/nrw/koln/koln-city/altstadt/romanische_kirchen/gross_st_martin/001.jpg", title: { ru: "Большой Святой Мартин (фото взято с википедии)", uk: "Великий Святий Мартін (фото взято з Вікіпедії)", de: "Groß St. Martin (Foto von Wikipedia entnommen)" } },
         { path: "Germany/nrw/koln/koln-city/altstadt/romanische_kirchen/gross_st_martin/002.jpg", title: { ru: "Большой Святой Мартин, 2025", uk: "Великий Святий Мартін, 2025", de: "Groß St. Martin, 2025" } }
       ],
-      cologne_cathedral: [
-        // { path: "Germany/nrw/koln/koln-city/koln-cathedral/001.jpg", title: { ru: "Кёльнский собор, 2025", uk: "Кельнський собор, 2025", de: "Kölner Dom, 2025" } },
-
-        // { path: "Germany/nrw/koln/koln-city/koln-cathedral/022.jpg", title: { ru: "Кёльнский собор. Реликвии", uk: "Кельнський собор. Реліквії", de: "Kölner Dom. Reliquien" } },
-        // { path: "Germany/nrw/koln/koln-city/koln-cathedral/027.jpg", title: { ru: "Кёльнский собор. Реликвии - 1. Портал Святого Петра, 2025", uk: "Кельнський собор. Реліквії - 1. Портал Святого Петра, 2025", de: "Kölner Dom. Reliquien - 1. Portal des Heiligen Petrus, 2025" } },
-        // { path: "Germany/nrw/koln/koln-city/koln-cathedral/026.jpg", title: { ru: "Кёльнский собор. Реликвии - 4. Распятие Геро, 2006", uk: "Кельнський собор. Реліквії - 4. Розп’яття Геро, 2006", de: "Kölner Dom. Reliquien - 4. Gero-Kreuz, 2006" } },
-        // { path: "Germany/nrw/koln/koln-city/koln-cathedral/024.jpg", title: { ru: "Кёльнский собор. Реликвии - 6. Ларь с мощами трёх волхвов (фото взято с википедии)", uk: "Кельнський собор. Реліквії - 6. Лар з мощами трьох волхвів (фото взято з Вікіпедії)", de: "Kölner Dom. Reliquien - 6. Schrein der Heiligen Drei Könige (Foto von Wikipedia entnommen)" } },
-        // { path: "Germany/nrw/koln/koln-city/koln-cathedral/010.jpg", title: { ru: "Кёльнский собор. Реликвии - 7. Хоры, 2025", uk: "Кельнський собор. Реліквії - 7. Хори, 2025", de: "Kölner Dom. Reliquien - 7. Chöre, 2025" } },
-        // { path: "Germany/nrw/koln/koln-city/koln-cathedral/013.jpg", title: { ru: "Кёльнский собор. Реликвии - 10. Триптих Стефана Лохнера, 2025", uk: "Кельнський собор. Реліквії - 10. Триптих Стефана Лохнера, 2025", de: "Kölner Dom. Reliquien - 10. Stephan Lochner Triptychon, 2025" } },
-        { path: "Germany/nrw/koln/koln-city/koln-cathedral/021.jpg", title: { ru: "Кёльнский собор. Миланская Мадонна (фото взято с интернета)", uk: "Кельнський собор. Міланська Мадонна (фото взято з Інтернету)", de: "Kölner Dom. Mailänder Madonna (Foto aus dem Internet)" } },
-
-        { path: "Germany/nrw/koln/koln-city/koln-cathedral/011.jpg", title: { ru: "Кёльнский собор. Антверпенский ретабло: алтарь Агилольфа шириной 6,80 метра (1520 г.), 2025", uk: "Кельнський собор. Антверпенський ретабль: вівтар Агілольфа завширшки 6,80 метра (1520), 2025", de: "Kölner Dom. Antwerpener Retabel: Der 6,80 Meter breite Agilolphusaltar (1520), 2025" } },
-        { path: "Germany/nrw/koln/koln-city/koln-cathedral/012.jpg", title: { ru: "Кёльнский собор, 2025", uk: "Кельнський собор, 2025", de: "Kölner Dom, 2025" } },
-        { path: "Germany/nrw/koln/koln-city/koln-cathedral/014.jpg", title: { ru: "Кёльнский собор, 2025", uk: "Кельнський собор, 2025", de: "Kölner Dom, 2025" } },
-        { path: "Germany/nrw/koln/koln-city/koln-cathedral/015.jpg", title: { ru: "Кёльнский собор, 2025", uk: "Кельнський собор, 2025", de: "Kölner Dom, 2025" } },
-        { path: "Germany/nrw/koln/koln-city/koln-cathedral/016.jpg", title: { ru: "Кёльнский собор, 2025", uk: "Кельнський собор, 2025", de: "Kölner Dom, 2025" } },
-        { path: "Germany/nrw/koln/koln-city/koln-cathedral/017.jpg", title: { ru: "Кёльнский собор, 2025", uk: "Кельнський собор, 2025", de: "Kölner Dom, 2025" } },
-        { path: "Germany/nrw/koln/koln-city/koln-cathedral/018.jpg", title: { ru: "Кёльнский собор, 2025", uk: "Кельнський собор, 2025", de: "Kölner Dom, 2025" } },
-        { path: "Germany/nrw/koln/koln-city/koln-cathedral/019.jpg", title: { ru: "Кёльнский собор. Святилище Агилольфа, 2025", uk: "Кельнський собор. Святилище Агілолфуса, 2025", de: "Kölner Dom. Agilolphusschrein, 2025" } },
-        { path: "Germany/nrw/koln/koln-city/koln-cathedral/020.jpg", title: { ru: "Кёльнский собор, 2025", uk: "Кельнський собор, 2025", de: "Kölner Dom, 2025" } },
-
-        { path: "Germany/nrw/koln/koln-city/koln-cathedral/002.jpg", title: { ru: "Кёльнский собор, 2025", uk: "Кельнський собор, 2025", de: "Kölner Dom, 2025" } },
-        { path: "Germany/nrw/koln/koln-city/koln-cathedral/003.jpg", title: { ru: "Кёльнский собор, 2025", uk: "Кельнський собор, 2025", de: "Kölner Dom, 2025" } },
-        { path: "Germany/nrw/koln/koln-city/koln-cathedral/004.jpg", title: { ru: "Кёльнский собор, 2025", uk: "Кельнський собор, 2025", de: "Kölner Dom, 2025" } },
-        { path: "Germany/nrw/koln/koln-city/koln-cathedral/005.jpg", title: { ru: "Кёльнский собор, 2025", uk: "Кельнський собор, 2025", de: "Kölner Dom, 2025" } },
-      ],
       guerzenich_koln: [
         { path: "Germany/nrw/koln/koln-city/altstadt/guerzenich_koln/001.jpg", title: { ru: "Гюрцених, 2026", uk: "Гюрценіх, 2026", de: "Gürzenich, 2026" } },
       ],
@@ -97,6 +71,7 @@ export const Fotos = {
         { path: "Germany/nrw/koln/koln-city/rheinpark_koln/001.jpg", title: { ru: "Рейнский парк, 2026", uk: "Рейнський парк, 2026", de: "Rheinpark, 2026" } },
         { path: "Germany/nrw/koln/koln-city/rheinpark_koln/008.jpg", title: { ru: "Рейнский парк, 2026", uk: "Рейнський парк, 2026", de: "Rheinpark, 2026" } },
         { path: "Germany/nrw/koln/koln-city/rheinpark_koln/009.jpg", title: { ru: "Рейнский парк, 2026", uk: "Рейнський парк, 2026", de: "Rheinpark, 2026" } },
+        { path: "Germany/nrw/koln/koln-city/rheinpark_koln/003.jpg", title: { ru: "Рейнский парк, 2026", uk: "Рейнський парк, 2026", de: "Rheinpark, 2026" } },
         { path: "Germany/nrw/koln/koln-city/rheinpark_koln/002.jpg", title: { ru: "Танцующий фонтан, 2026", uk: "Танцюючий фонтан, 2026", de: "Tanzbrunnen, 2026" } },
         { path: "Germany/nrw/koln/koln-city/rheinpark_koln/004.jpg", title: { ru: "Руины римского форта Дивития в Кёльне, 2025", uk: "Руїни римського форту Дивітія в Кельні, 2025", de: "Ruinen des römischen Forts Divitia in Köln, 2025" } },
         { path: "Germany/nrw/koln/koln-city/rheinpark_koln/005.jpg", title: { ru: "Руины римского форта Дивития в Кёльне, 2025", uk: "Руїни римського форту Дивітія в Кельні, 2025", de: "Ruinen des römischen Forts Divitia in Köln, 2025" } },
@@ -107,7 +82,7 @@ export const Fotos = {
         { path: "Germany/nrw/koln/koln-city/rheinpark_koln/002.jpg", title: { ru: "Танцующий фонтан, 2026", uk: "Танцюючий фонтан, 2026", de: "Tanzbrunnen, 2026" } },
       ],
       koln_seilbahn: [
-        { path: "Germany/nrw/koln/koln-city/rheinpark_koln/003.jpg", title: { ru: "Кёльнская канатная дорога (фото взято с википедии)", uk: "Кельнська канатна дорога (фото взято з Вікіпедії)", de: "Kölner Seilbahn (Foto von Wikipedia entnommen)" } }
+        { path: "Germany/nrw/koln/koln-city/koln_seilbahn/001.jpg", title: { ru: "Кёльнская канатная дорога, 2026", uk: "Кельнська канатна дорога, 2026", de: "Kölner Seilbahn, 2026" } }
       ],
       divitia_koln: [
         { path: "Germany/nrw/koln/koln-city/rheinpark_koln/004.jpg", title: { ru: "Руины римского форта Дивития в Кёльне, 2025", uk: "Руїни римського форту Дивітія в Кельні, 2025", de: "Ruinen des römischen Forts Divitia in Köln, 2025" } },
@@ -129,7 +104,8 @@ export const Fotos = {
         { path: "Germany/nrw/koln/koln-city/dufthaus_4711/001.jpg", title: { ru: "Дом ароматов 4711 (фото взято с интернета)", uk: "Будинок одеколону 4711 (фото взято з Інтернету)", de: "Duft-Haus 4711 (Foto aus dem Internet)" } },
       ],
       skulpturenpark_koln: [
-        { path: "Germany/nrw/koln/koln-city/skulpturenpark/001.jpg", title: { ru: "Парк скульптур в Кёльне (фото взято с интернета)", uk: "Парк скульптур у Кельні (фото взято з Інтернету)", de: "Skulpturenpark in Köln (Foto aus dem Internet)" } },
+        { path: "Germany/nrw/koln/koln-city/skulpturenpark/001.jpg", title: { ru: "Парк скульптур в Кёльне, 2026", uk: "Парк скульптур у Кельні, 2026", de: "Skulpturenpark in Köln, 2026" } },
+        { path: "Germany/nrw/koln/koln-city/skulpturenpark/002.jpg", title: { ru: "Парк скульптур в Кёльне, 2026", uk: "Парк скульптур у Кельні, 2026", de: "Skulpturenpark in Köln, 2026" } },
       ],
       rautenstrauch_joest_museum_koln: [
         { path: "Germany/nrw/koln/koln-city/rautenstrauch_joest_museum/001.jpg", title: { ru: "Музей Раутенштраух-Йоста, 2026", uk: "Музей Раутенштраух-Йост, 2026", de: "Rautenstrauch-Joest-Museum, 2026" } },
@@ -210,7 +186,15 @@ export const Fotos = {
         { path: "Germany/nrw/koln/koln-city/altstadt/romanische_kirchen/st_gereon/001.jpg", title: { ru: "Церковь Святого Гереона (фото взято с интернета)", uk: "Церква Святого Герєона (фото взято з Інтернету)", de: "St. Gereon Kirche (Foto aus dem Internet)" } },
       ],
       st_kunibert_koln: [
-        { path: "Germany/nrw/koln/koln-city/altstadt/romanische_kirchen/st_kunibert/001.jpg", title: { ru: "Базиліка Святого Куніберта (фото взято з интернета)", uk: "Базиліка Святого Куніберта (фото взято з Інтернету)", de: "Basilika St. Kunibert (Foto aus dem Internet)" } }
+        { path: "Germany/nrw/koln/koln-city/altstadt/romanische_kirchen/st_kunibert/001.jpg", title: { ru: "Базиліка Святого Куніберта, 2026", uk: "Базиліка Святого Куніберта, 2026", de: "Basilika St. Kunibert, 2026" } },
+        { path: "Germany/nrw/koln/koln-city/altstadt/romanische_kirchen/st_kunibert/002.jpg", title: { ru: "Базиліка Святого Куніберта, 2026", uk: "Базиліка Святого Куніберта, 2026", de: "Basilika St. Kunibert, 2026" } },
+        { path: "Germany/nrw/koln/koln-city/altstadt/romanische_kirchen/st_kunibert/003.jpg", title: { ru: "Базиліка Святого Куніберта, 2026", uk: "Базиліка Святого Куніберта, 2026", de: "Basilika St. Kunibert, 2026" } },
+        { path: "Germany/nrw/koln/koln-city/altstadt/romanische_kirchen/st_kunibert/004.jpg", title: { ru: "Базиліка Святого Куніберта, 2026", uk: "Базиліка Святого Куніберта, 2026", de: "Basilika St. Kunibert, 2026" } },
+        { path: "Germany/nrw/koln/koln-city/altstadt/romanische_kirchen/st_kunibert/005.jpg", title: { ru: "Базиліка Святого Куніберта, 2026", uk: "Базиліка Святого Куніберта, 2026", de: "Basilika St. Kunibert, 2026" } },
+        { path: "Germany/nrw/koln/koln-city/altstadt/romanische_kirchen/st_kunibert/006.jpg", title: { ru: "Базиліка Святого Куніберта, 2026", uk: "Базиліка Святого Куніберта, 2026", de: "Basilika St. Kunibert, 2026" } },
+        { path: "Germany/nrw/koln/koln-city/altstadt/romanische_kirchen/st_kunibert/007.jpg", title: { ru: "Базиліка Святого Куніберта, 2026", uk: "Базиліка Святого Куніберта, 2026", de: "Basilika St. Kunibert, 2026" } },
+        { path: "Germany/nrw/koln/koln-city/altstadt/romanische_kirchen/st_kunibert/008.jpg", title: { ru: "Базиліка Святого Куніберта, 2026", uk: "Базиліка Святого Куніберта, 2026", de: "Basilika St. Kunibert, 2026" } },
+        { path: "Germany/nrw/koln/koln-city/altstadt/romanische_kirchen/st_kunibert/009.jpg", title: { ru: "Базиліка Святого Куніберта, 2026", uk: "Базиліка Святого Куніберта, 2026", de: "Basilika St. Kunibert, 2026" } },
       ],
       prussian_fortress_system_koln: [
         { path: "Germany/nrw/koln/koln-city/prussian_fortress_system/inner/001.jpg", title: { ru: "Форт I (внутреннее крепostное кольцо) (фото взято с интернета)", uk: "Форт I (внутрішнє фортифікаційне кільце) (фото взято з Інтернету)", de: "Fort I (innerer Festungsring) (Foto aus dem Internet)" } },

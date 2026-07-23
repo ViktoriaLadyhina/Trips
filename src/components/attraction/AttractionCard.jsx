@@ -41,30 +41,53 @@ const AttractionCard = ({ attr, lang }) => {
 
 
             <div className='attrCard__desc'>
-{attr.fotoCard && (
-    <div className='attrCard__desc-foto'>
-        <img
-            src={`${BASE_PHOTO_URL}${
-                typeof attr.fotoCard === 'string'
-                    ? attr.fotoCard
-                    : attr.fotoCard.path
-            }`}
-            alt={
-                typeof attr.fotoCard === 'object'
-                    ? attr.fotoCard.title?.[lang] || attr.name
-                    : attr.name
-            }
-        />
-    </div>
-)}
+                {attr.fotoCard && (
+                    <div className='attrCard__desc-foto'>
+                        <img
+                            src={`${BASE_PHOTO_URL}${typeof attr.fotoCard === 'string'
+                                ? attr.fotoCard
+                                : attr.fotoCard.path
+                                }`}
+                            alt={
+                                typeof attr.fotoCard === 'object'
+                                    ? attr.fotoCard.title?.[lang] || attr.name
+                                    : attr.name
+                            }
+                        />
+                    </div>
+                )}
                 <div className='attrCard__desc-info'>
                     {attr.short_description && (
-    <TextBlock
-        block={{ block_key: 'short_description' }}
-        langData={{ short_description: attr.short_description }}
-        classPrefix="attrCard__desc-info-text"
-    />
-)}
+                        <TextBlock
+                            block={{ block_key: 'short_description' }}
+                            langData={{ short_description: attr.short_description }}
+                            classPrefix="attrCard__desc-info-text"
+                        />
+                    )}
+{/* // подпись с базы */}
+                    {attr.subObjects_intro && (
+                        <TextBlock
+                            block={{ block_key: 'subObjects_intro' }}
+                            langData={{ subObjects_intro: attr.subObjects_intro }}
+                            classPrefix="attrCard__desc-info-text"
+                        />
+                    )}
+{/* // строки описания достов с базы */}
+                    {attr.subObjects?.length > 0 && (
+                        <ul className="attrCard__desc-subObjects">
+                            {attr.subObjects.map(subObject => (
+                                <li key={subObject.id}>
+                                    <TextBlock
+                                        block={{ block_key: 'subObjects_desc' }}
+                                        langData={{
+                                            subObjects_desc: subObject.description
+                                        }}
+                                        classPrefix="attrCard__desc-subObject"
+                                    />
+                                </li>
+                            ))}
+                        </ul>
+                    )}
 
                     {attr.short_description_subObjects && (
                         <div className='attrCard__desc-subObjects'>
@@ -82,9 +105,9 @@ const AttractionCard = ({ attr, lang }) => {
                     {attr.note && (
                         <span className='attrCard__desc-info-text'>
                             <strong>{noteLabel[attr.status][lang]}:</strong> {attr.note}
-                    </span>
+                        </span>
                     )}
-                    
+
                     {attr.unesco_status?.included && (
                         <span className='attrCard__desc-info-text'>
                             🌍UNESCO {attr.unesco_status.year}

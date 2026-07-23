@@ -19,8 +19,8 @@ const attractionTypes = [
 ];
 
 // feature = landmark
-// feature = viewpoint
-// feature = family_friendly
+// feature = viewpoint - смотровая площадка
+// feature = family_friendly - Знаковые места
 // feature = free_entry
 // feature = accessible
 // feature = dog_friendly

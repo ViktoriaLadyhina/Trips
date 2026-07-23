@@ -1,4 +1,5 @@
 import InfoBlock from '../InfoBlock/InfoBlock.jsx';
+import { TextBlock } from '../renders/TextBlock.jsx';
 import './Attraction.scss';
 import { Link } from 'react-router';
 
@@ -29,16 +30,33 @@ const AttractionCardSub = ({ attr, lang }) => {
             </div>
 
             <div className='attrCard__desc'>
-                {attr.fotoCard && (
-                    <div className='attrCard__desc-foto'>
-                        <img src={`${BASE_PHOTO_URL}${attr.fotoCard}`} alt={attr.name} />
-                    </div>
-                )}
+{attr.fotoCard && (
+    <div className='attrCard__desc-foto'>
+        <img
+            src={`${BASE_PHOTO_URL}${
+                typeof attr.fotoCard === 'string'
+                    ? attr.fotoCard
+                    : attr.fotoCard.path
+            }`}
+            alt={
+                typeof attr.fotoCard === 'object'
+                    ? attr.fotoCard.title?.[lang] || attr.name
+                    : attr.name
+            }
+        />
+    </div>
+)}
                 <div
                     className='attrCard__desc-info'>
-                    {attr.short_description && (
-                        <div className='attrCard__desc-info-text'>{attr.short_description}</div>
-                    )}
+{attr.short_description && (
+    <TextBlock
+        block={{ block_key: 'short_description' }}
+        langData={{
+            short_description: attr.short_description
+        }}
+        classPrefix="attrCard__desc-info-text"
+    />
+)}
                     {attr.short_description2 && (
                         <div className='attrCard__desc-info-text'>{attr.short_description2}</div>
                     )}
@@ -70,13 +88,15 @@ const AttractionCardSub = ({ attr, lang }) => {
                     {attr.loc && (
                         <div className='attrCard__desc-info-text'>{location[lang]}: {attr.loc?.city} ({attr.loc?.cityDistrict}), {attr.loc?.country}</div>
                     )}
-                    {attr.showMore && (
-                        <div className='attrCard__desc-info-more'>
-                            <Link to={`/${attr.countryPath}/${attr.regionPath}/${attr.districtPath}/${attr.cityPath}/attractions/${attr.slug || attr.path}`}>
-                                {more[lang]}
-                            </Link>
-                        </div>
-                    )}
+{(attr.showMore || attr.id) && (
+    <div className='attrCard__desc-info-more'>
+        <Link
+            to={`/${attr.countryPath}/${attr.regionPath}/${attr.districtPath}/${attr.cityPath}/attractions/${attr.slug || attr.path}`}
+        >
+            {more[lang]}
+        </Link>
+    </div>
+)}
                 </div>
             </div>
         </div>

@@ -23,6 +23,7 @@ import { toFullUrl } from '../../utils/photo.js';
 import { cityLocations } from '../../datas/cityLocations.js';
 import './Attraction.scss';
 import { ItemBlock } from '../../components/renders/ItemBlock.jsx';
+import MysqlGallery from '../../components/gallery/MysqlGallery.jsx';
 
 const BASE_PHOTO_URL = import.meta.env.VITE_BASE_PHOTO_URL;
 
@@ -78,21 +79,21 @@ const noteLabel = {
 
 const Attraction = () => {
 
-    const { lang } = useSelector( state => state.language );
+    const { lang } = useSelector(state => state.language);
 
     const { countryPath, regionPath, districtPath, cityPath, attractionPath } = useParams();
 
     // STATIC ATTRACTIONS
-    const { attractions, errorStatic } = useAttractions( countryPath, regionPath, districtPath, cityPath );
+    const { attractions, errorStatic } = useAttractions(countryPath, regionPath, districtPath, cityPath);
 
     // MYSQL ATTRACTION
-    const [ mysqlAttraction, setMysqlAttraction ] = useState(null);
-    const [ loading, setLoading ] = useState(true);
-    const [ error, setError ] = useState(null);
-    const { blocks, langData } = prepareEntityBlocks( mysqlAttraction?.blocks || []);
+    const [mysqlAttraction, setMysqlAttraction] = useState(null);
+    const [loading, setLoading] = useState(true);
+    const [error, setError] = useState(null);
+    const { blocks, langData } = prepareEntityBlocks(mysqlAttraction?.blocks || []);
 
     // FILTERS
-    const [ subFilters, setSubFilters ] = useState({
+    const [subFilters, setSubFilters] = useState({
         type: 'all',
         rating: 'all',
         unesco: 'all',
@@ -111,7 +112,7 @@ const Attraction = () => {
         const fetchAttraction = async () => {
             try {
                 setLoading(true);
-                const data = await getAttraction( attractionPath, lang, controller.signal );
+                const data = await getAttraction(attractionPath, lang, controller.signal);
 
                 if (!controller.signal.aborted) {
                     setMysqlAttraction(data);
@@ -137,7 +138,7 @@ const Attraction = () => {
 
 
     // STATIC ATTRACTION
-    const attraction = attractions?.find( item => item.path === attractionPath );
+    const attraction = attractions?.find(item => item.path === attractionPath);
 
     // MYSQL BLOCKS
     const context = {
@@ -172,23 +173,36 @@ const Attraction = () => {
 
 
     const renderBlock = block => {
-        const Renderer = blockRegistry[ block.block_key ];
+        const Renderer = blockRegistry[block.block_key];
 
         if (!Renderer) { return null; }
 
         return (
-            <Renderer block={block} {...context} />
+            <Renderer key={block.id} block={block} {...context} />
         );
+    };
+
+    const mysqlSubObjects = mysqlAttraction?.subObjects || [];
+    const subObjectsIntro = mysqlAttraction?.blocks?.find(
+        block => block.block_key === 'subObjects_intro'
+    )?.content;
+
+    const stripOuterP = (html) => {
+        if (!html) return '';
+
+        return html
+            .replace(/^\s*<p[^>]*>/i, '')
+            .replace(/<\/p>\s*$/i, '');
     };
 
 
     // STATIC PHOTOS
     const staticPhotos = photosByCountry[countryPath];
-    const staticAttractionPhotos = staticPhotos?.[ regionPath ]?.[ cityPath ]?.[ attractionPath ] || [];
+    const staticAttractionPhotos = staticPhotos?.[regionPath]?.[cityPath]?.[attractionPath] || [];
     const staticImages = staticAttractionPhotos.map(photo => ({
-            src: `${BASE_PHOTO_URL}${photo.path}`,
-            alt: photo.title?.[lang] || ''
-        }));
+        src: `${BASE_PHOTO_URL}${photo.path}`,
+        alt: photo.title?.[lang] || ''
+    }));
 
 
     // META
@@ -197,40 +211,40 @@ const Attraction = () => {
 
     // LOADING / ERRORS
     if (errorStatic) { return <p>{errorStatic}</p>; }
-    if (error) { return <p>{error}</p>;  }
-    if (!countryPath || !regionPath) {return <p>Loading...</p>; }
-    if (!attractions) { return <p>Loading...</p>;  }
+    if (error) { return <p>{error}</p>; }
+    if (!countryPath || !regionPath) { return <p>Loading...</p>; }
+    if (!attractions) { return <p>Loading...</p>; }
 
 
     // STATIC SUB-OBJECTS
-    const subObjects =  attraction?.subObjects || [];
+    const subObjects = attraction?.subObjects || [];
     const subObjects2 = attraction?.subObjects2 || [];
 
     const applyFilters = list => {
         return list
             .map(id =>
-                attractions.find( item => item.id === id )
+                attractions.find(item => item.id === id)
             ).filter(Boolean)
             .filter(attr => {
-                if ( subFilters.type !== 'all' && !attr.type?.includes( subFilters.type ) ) { 
+                if (subFilters.type !== 'all' && !attr.type?.includes(subFilters.type)) {
                     return false;
                 }
 
-                if ( subFilters.rating !== 'all' && attr.rating !== subFilters.rating ) {
+                if (subFilters.rating !== 'all' && attr.rating !== subFilters.rating) {
                     return false;
                 }
 
-                if ( subFilters.unesco === 'yes' &&  !attr.unesco_status?.included  ) {
+                if (subFilters.unesco === 'yes' && !attr.unesco_status?.included) {
                     return false;
                 }
 
-                if ( subFilters.unesco === 'no' &&  attr.unesco_status?.included ) {
+                if (subFilters.unesco === 'no' && attr.unesco_status?.included) {
                     return false;
                 }
 
                 const status = attr.status ?? 'active';
 
-                if ( !subFilters.status.includes( status ) ) {
+                if (!subFilters.status.includes(status)) {
                     return false;
                 }
 
@@ -239,16 +253,16 @@ const Attraction = () => {
     };
 
     const filteredSubObjects = applyFilters(subObjects);
-    const filteredSubObjects2 =  applyFilters(subObjects2);
+    const filteredSubObjects2 = applyFilters(subObjects2);
 
     // SORT
     const sortFn = (a, b) => {
-        if ( subFilters.sort === 'name-asc' ) {
-            return ( a?.name || ''  ).localeCompare( b?.name || '' );
+        if (subFilters.sort === 'name-asc') {
+            return (a?.name || '').localeCompare(b?.name || '');
         }
 
-        if ( subFilters.sort === 'name-desc' ) {
-            return ( b?.name || '' ).localeCompare( a?.name || ''  );
+        if (subFilters.sort === 'name-desc') {
+            return (b?.name || '').localeCompare(a?.name || '');
         }
 
         const ratingOrder = {
@@ -258,54 +272,55 @@ const Attraction = () => {
         };
 
         const diff =
-            ( ratingOrder[b.rating] || 0 ) -
-            ( ratingOrder[a.rating] || 0 );
+            (ratingOrder[b.rating] || 0) -
+            (ratingOrder[a.rating] || 0);
 
         return (
-            ( a.sortIndex ?? 0 ) -
-            ( b.sortIndex ?? 0 )
-        ) || diff || ( a.name || ''
-        ).localeCompare( b.name || '' );
+            (a.sortIndex ?? 0) -
+            (b.sortIndex ?? 0)
+        ) || diff || (a.name || ''
+        ).localeCompare(b.name || '');
     };
 
-    const sortedSubObjects = [ ...filteredSubObjects ].sort(sortFn);
-    const sortedSubObjects2 = [ ...filteredSubObjects2 ].sort(sortFn);
+    const sortedSubObjects = [...filteredSubObjects].sort(sortFn);
+    const sortedSubObjects2 = [...filteredSubObjects2].sort(sortFn);
 
     const showFilters = subObjects.length + subObjects2.length >= 5;
 
     const staticSubRegionPath = cityLocations[cityPath]?.subRegionPath || null;
 
-const subRegionName = mysqlAttraction?.loc?.subRegion ||
-    datas.subRegions[staticSubRegionPath]?.[lang];
+    const subRegionName = mysqlAttraction?.loc?.subRegion ||
+        datas.subRegions[staticSubRegionPath]?.[lang];
 
     // BREADCRUMBS
     const crumbs = [
         { label: lang === 'ru' ? 'Главная' : lang === 'de' ? 'Startseite' : 'Головна', path: '/' },
 
-        countryPath && datas.countries[ countryPath ]?.[lang] ? 
-            { label: datas.countries[ countryPath ][lang], path: `/${countryPath}` }
+        countryPath && datas.countries[countryPath]?.[lang] ?
+            { label: datas.countries[countryPath][lang], path: `/${countryPath}` }
             : null,
 
-        regionPath && datas.regions[ regionPath ]?.[lang] ? 
-            { label: datas.regions[ regionPath][lang], path: `/${countryPath}/${regionPath}` }
+        regionPath && datas.regions[regionPath]?.[lang] ?
+            { label: datas.regions[regionPath][lang], path: `/${countryPath}/${regionPath}` }
             : null,
 
-        districtPath && districtPath !== 'city' && datas.districts[ districtPath ]?.[lang] ? 
-            { label: datas.districts[ districtPath ][lang], path: `/${countryPath}/${regionPath}/${districtPath}` }
+        districtPath && districtPath !== 'city' && datas.districts[districtPath]?.[lang] ?
+            { label: datas.districts[districtPath][lang], path: `/${countryPath}/${regionPath}/${districtPath}` }
             : null,
 
         subRegionName ?
-    { label: subRegionName }
-    : null,
+            { label: subRegionName }
+            : null,
 
-        cityPath ? 
-            { label:  datas.cities[ cityPath ]?.[lang], path: districtPath === 'city'
-                        ? `/${countryPath}/${regionPath}/city/${cityPath}`
-                        : `/${countryPath}/${regionPath}/${districtPath}/${cityPath}`
+        cityPath ?
+            {
+                label: datas.cities[cityPath]?.[lang], path: districtPath === 'city'
+                    ? `/${countryPath}/${regionPath}/city/${cityPath}`
+                    : `/${countryPath}/${regionPath}/${districtPath}/${cityPath}`
             }
             : null,
 
-        { label: datas.attractions[ attractionPath ]?.[lang] }
+        { label: datas.attractions[attractionPath]?.[lang] }
 
     ].filter(Boolean);
 
@@ -321,191 +336,191 @@ const subRegionName = mysqlAttraction?.loc?.subRegion ||
                 <div className="attraction">
                     {meta && (
                         <Helmet>
-                            <title> { attraction.name ||  meta.title  } </title>
+                            <title> {attraction.name || meta.title} </title>
 
                             <meta name="description" content={meta.description} />
-                            { meta.keywords && ( <meta name="keywords" content={meta.keywords} /> ) }
+                            {meta.keywords && (<meta name="keywords" content={meta.keywords} />)}
                             <meta property="og:title" content={meta.ogTitle} />
                             <meta property="og:description" content={meta.ogDescription} />
-                            <meta  property="og:image" content={meta.ogImage} />
+                            <meta property="og:image" content={meta.ogImage} />
                         </Helmet>
                     )}
 
-                    <BreadCrumbs  crumbs={crumbs} />
+                    <BreadCrumbs crumbs={crumbs} />
 
                     <h1 className="attraction__name"> {attraction.name} </h1>
 
-                    { attraction.mapOpen && (
-                            <FilteredMap  map={attraction.mapOpen} />
-                        )
+                    {attraction.mapOpen && (
+                        <FilteredMap map={attraction.mapOpen} />
+                    )
                     }
 
                     <div className="attraction__desc">
                         <div className="attraction__desc-foto">
-                            { attraction.fotoCard && (
-                                    <img
-                                        src={`${BASE_PHOTO_URL}${attraction.fotoCard}`}
-                                        alt={attraction.name}
-                                    />
-                                )
+                            {attraction.fotoCard && (
+                                <img
+                                    src={`${BASE_PHOTO_URL}${attraction.fotoCard}`}
+                                    alt={attraction.name}
+                                />
+                            )
                             }
                         </div>
 
-                        { attraction.founder && (
-                                <div className="attraction__desc-founder">
-                                    <span className="attraction__desc-founder-bold">{founderTitle[lang]}: </span>
-                                    <span className="attraction__desc-founder-text">{' '} {attraction.founder} </span>
-                                </div>
-                            )
+                        {attraction.founder && (
+                            <div className="attraction__desc-founder">
+                                <span className="attraction__desc-founder-bold">{founderTitle[lang]}: </span>
+                                <span className="attraction__desc-founder-text">{' '} {attraction.founder} </span>
+                            </div>
+                        )
                         }
 
-                        { attraction.construction_period && (
-                                <div className="attraction__desc-construction_period">
-                                    <span className="attraction__desc-construction_period-bold"> {construction_periodTitle[lang]}: </span>
-                                    <span className="attraction__desc-construction_period-text"> {' '} {attraction.construction_period} </span>
-                                </div>
-                            )
+                        {attraction.construction_period && (
+                            <div className="attraction__desc-construction_period">
+                                <span className="attraction__desc-construction_period-bold"> {construction_periodTitle[lang]}: </span>
+                                <span className="attraction__desc-construction_period-text"> {' '} {attraction.construction_period} </span>
+                            </div>
+                        )
                         }
 
-                        { attraction.architects && (
-                                <div className="attraction__desc-architects">
-                                    <span className="attraction__desc-architects-bold"> {architectsTitle[lang]}: </span>
-                                    <span className="attraction__desc-architects-text"> {attraction.architects} </span>
-                                </div>
-                            )
+                        {attraction.architects && (
+                            <div className="attraction__desc-architects">
+                                <span className="attraction__desc-architects-bold"> {architectsTitle[lang]}: </span>
+                                <span className="attraction__desc-architects-text"> {attraction.architects} </span>
+                            </div>
+                        )
                         }
 
-                        { attraction.sculptors && (
-                                <div className="attraction__desc-architects">
-                                    <span className="attraction__desc-architects-bold"> {sculptorsTitle[lang]}: </span>
-                                    <span className="attraction__desc-architects-text"> {attraction.sculptors} </span>
-                                </div>
-                            )
+                        {attraction.sculptors && (
+                            <div className="attraction__desc-architects">
+                                <span className="attraction__desc-architects-bold"> {sculptorsTitle[lang]}: </span>
+                                <span className="attraction__desc-architects-text"> {attraction.sculptors} </span>
+                            </div>
+                        )
                         }
 
-                        { attraction.status && (
-                                <div className="attraction__desc-architects">
-                                    <span className="attraction__desc-architects-bold"> {statusTitle[lang]}: </span>
-                                    <span className="attraction__desc-architects-text">
-                                        {noteLabel[ attraction.status ]?.[lang]}
-                                        {attraction.note && (
-                                            <> {', '} {attraction.note} </>
-                                        )}
-                                    </span>
-                                </div>
-                            )
+                        {attraction.status && (
+                            <div className="attraction__desc-architects">
+                                <span className="attraction__desc-architects-bold"> {statusTitle[lang]}: </span>
+                                <span className="attraction__desc-architects-text">
+                                    {noteLabel[attraction.status]?.[lang]}
+                                    {attraction.note && (
+                                        <> {', '} {attraction.note} </>
+                                    )}
+                                </span>
+                            </div>
+                        )
                         }
 
-                        { attraction.tickets_and_entry && (
-                                <InfoBlock data={ attraction.tickets_and_entry }
-                                    className="attraction__desc-tickets_and_entry"
-                                />
-                            )
+                        {attraction.tickets_and_entry && (
+                            <InfoBlock data={attraction.tickets_and_entry}
+                                className="attraction__desc-tickets_and_entry"
+                            />
+                        )
                         }
 
-                        { attraction.practical_info && (
-                                <InfoBlock data={ attraction.practical_info }
-                                    className="attraction__desc-practical_info"
-                                />
-                            )
+                        {attraction.practical_info && (
+                            <InfoBlock data={attraction.practical_info}
+                                className="attraction__desc-practical_info"
+                            />
+                        )
                         }
 
-                        { attraction.address && (
-                                <InfoBlock data={ attraction.address }
-                                    className="attraction__desc-address"
-                                />
-                            )
+                        {attraction.address && (
+                            <InfoBlock data={attraction.address}
+                                className="attraction__desc-address"
+                            />
+                        )
                         }
 
-                        { attraction.full_description && (
-                                <InfoBlock data={ attraction.full_description }
-                                    className="attraction__desc-full_description"
-                                />
-                            )
+                        {attraction.full_description && (
+                            <InfoBlock data={attraction.full_description}
+                                className="attraction__desc-full_description"
+                            />
+                        )
                         }
 
-                        { attraction.legends && (
-                                <InfoBlock data={ attraction.legends }
-                                    className="attraction__desc-full_description"
-                                />
-                            )
+                        {attraction.legends && (
+                            <InfoBlock data={attraction.legends}
+                                className="attraction__desc-full_description"
+                            />
+                        )
                         }
 
-                        { attraction.sub_objects && (
-                                <InfoBlock data={ attraction.sub_objects }
-                                    className="attraction__desc-sub_objects"
-                                />
-                            )
+                        {attraction.sub_objects && (
+                            <InfoBlock data={attraction.sub_objects}
+                                className="attraction__desc-sub_objects"
+                            />
+                        )
                         }
 
-                        { attraction.relics && (
-                                <InfoBlock data={ attraction.relics }
-                                    className="attraction__desc-relics"
-                                />
-                            )
+                        {attraction.relics && (
+                            <InfoBlock data={attraction.relics}
+                                className="attraction__desc-relics"
+                            />
+                        )
                         }
 
-                        { attraction.hotels && (
-                                <InfoBlock  data={ attraction.hotels }
-                                    className="attraction__desc-hotels"
-                                />
-                            )
+                        {attraction.hotels && (
+                            <InfoBlock data={attraction.hotels}
+                                className="attraction__desc-hotels"
+                            />
+                        )
                         }
 
-                        { attraction.interestingFacts && (
-                                <InfoBlock data={ attraction.interestingFacts }
-                                    className="attraction__desc-interestingFacts"
-                                />
-                            )
+                        {attraction.interestingFacts && (
+                            <InfoBlock data={attraction.interestingFacts}
+                                className="attraction__desc-interestingFacts"
+                            />
+                        )
                         }
 
-                        { subObjects.length > 0 && (
-                                <section className="attraction-sub">
-                                    <h3> { attraction.subObjects_title ||
-                                            ( lang === 'ru' ? 'Достопримечательности' : lang === 'de' ? 'Sehenswürdigkeiten' : 'Пам’ятки' )
-                                        }
-                                    </h3>
+                        {subObjects.length > 0 && (
+                            <section className="attraction-sub">
+                                <h3> {attraction.subObjects_title ||
+                                    (lang === 'ru' ? 'Достопримечательности' : lang === 'de' ? 'Sehenswürdigkeiten' : 'Пам’ятки')
+                                }
+                                </h3>
 
-                                    { showFilters && (
-                                            <AttractionsFilters lang={lang} filters={subFilters} setFilters={ setSubFilters } />
-                                        )
-                                    }
+                                {showFilters && (
+                                    <AttractionsFilters lang={lang} filters={subFilters} setFilters={setSubFilters} />
+                                )
+                                }
 
-                                    { sortedSubObjects.map( attr => (
-                                                <AttractionCardSub key={attr.id}  attr={attr} lang={lang} />
-                                            )
-                                        )
-                                    }
-                                </section>
-                            )
+                                {sortedSubObjects.map(attr => (
+                                    <AttractionCardSub key={attr.id} attr={attr} lang={lang} />
+                                )
+                                )
+                                }
+                            </section>
+                        )
                         }
 
-                        { subObjects2.length > 0 && (
-                                <section className="attraction-sub">
-                                    <h3> { attraction.subObjects_title2 ||
-                                            ( lang === 'ru' ? 'Достопримечательности' : lang === 'de' ? 'Sehenswürdigkeiten' : 'Пам’ятки' )
-                                        }
-                                    </h3>
+                        {subObjects2.length > 0 && (
+                            <section className="attraction-sub">
+                                <h3> {attraction.subObjects_title2 ||
+                                    (lang === 'ru' ? 'Достопримечательности' : lang === 'de' ? 'Sehenswürdigkeiten' : 'Пам’ятки')
+                                }
+                                </h3>
 
-                                    { sortedSubObjects2.map( attr => (
-                                                <AttractionCardSub key={attr.id} attr={attr} lang={lang} />
-                                            )
-                                        )
-                                    }
-                                </section>
-                            )
+                                {sortedSubObjects2.map(attr => (
+                                    <AttractionCardSub key={attr.id} attr={attr} lang={lang} />
+                                )
+                                )
+                                }
+                            </section>
+                        )
                         }
 
-                        { attraction.officialSite && (
-                                <InfoBlock data={ attraction.officialSite }
-                                    className="attraction__desc-officialSite"
-                                />
-                            )
+                        {attraction.officialSite && (
+                            <InfoBlock data={attraction.officialSite}
+                                className="attraction__desc-officialSite"
+                            />
+                        )
                         }
 
-                        { staticImages.length > 0 && (
-                                <Gallery images={staticImages}  />
-                            )
+                        {staticImages.length > 0 && (
+                            <Gallery images={staticImages} />
+                        )
                         }
 
                     </div>
@@ -517,16 +532,16 @@ const subRegionName = mysqlAttraction?.loc?.subRegion ||
 
                 // MYSQL ATTRACTION
                 <div className="attraction">
-                {mysqlMeta && (
-                <Helmet>
-                    <title>{mysqlMeta.title || datas.regions[regionPath][lang]}</title>
-                    <meta name="title" content={mysqlMeta.title} />
-                    <meta name="description" content={mysqlMeta.description} />
-                    <meta property="og:title" content={mysqlMeta.og_title} />
-                    <meta property="og:description" content={mysqlMeta.og_description} />
-                    <meta property="og:image" content={toFullUrl(mysqlMeta.og_image)} />
-                </Helmet>
-            )}
+                    {mysqlMeta && (
+                        <Helmet>
+                            <title>{mysqlMeta.title || datas.regions[regionPath][lang]}</title>
+                            <meta name="title" content={mysqlMeta.title} />
+                            <meta name="description" content={mysqlMeta.description} />
+                            <meta property="og:title" content={mysqlMeta.og_title} />
+                            <meta property="og:description" content={mysqlMeta.og_description} />
+                            <meta property="og:image" content={toFullUrl(mysqlMeta.og_image)} />
+                        </Helmet>
+                    )}
 
                     <BreadCrumbs crumbs={crumbs} />
 
@@ -536,11 +551,33 @@ const subRegionName = mysqlAttraction?.loc?.subRegion ||
                         {
                             blocks.length > 0 && (
                                 blocks.map(block => (
-                                    <div key={ block.id || block.block_key } >
+                                    <div key={block.id || block.block_key} >
                                         {renderBlock(block)}
                                     </div>
                                 ))
                             )
+                        }
+
+                        {mysqlSubObjects.length > 0 && (
+                            <section className="attraction-sub">
+                                <h3> {subObjectsIntro ? stripOuterP(subObjectsIntro)
+                                    : (lang === 'ru' ? 'Достопримечательности' : lang === 'de' ? 'Sehenswürdigkeiten' : 'Пам’ятки')
+                                }
+                                </h3>
+
+                                {mysqlSubObjects.map(attr => (
+                                    <AttractionCardSub
+                                        key={attr.id}
+                                        attr={attr}
+                                        lang={lang}
+                                    />
+                                ))}
+                            </section>
+                        )}
+
+                        {mysqlAttraction.photos?.length > 0 && (
+                            <MysqlGallery images={mysqlAttraction.photos} lang={lang} />
+                        )
                         }
                     </div>
                 </div>

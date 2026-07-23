@@ -87,50 +87,44 @@ async function getAttractionCardData(db, attrIds, lang) {
     // 3. ATTRIBUTES
     // -------------------------
 
-    const [attributeRows] = await db.query(
-        `
-        SELECT
-            entity_id,
-            attribute_group,
-            value
-
-        FROM entity_attributes
-
-        WHERE entity_id IN (${placeholders})
-        `,
-        attrIds
-    );
-
     const attributesByEntity = {};
 
-    for (const row of attributeRows) {
+for (const row of attributeRows) {
 
-        if (!attributesByEntity[row.entity_id]) {
-            attributesByEntity[row.entity_id] = {
-                type: [],
-                map: [],
-                rating: null,
-                status: null
-            };
-        }
-
-        const attributes = attributesByEntity[row.entity_id];
-
-        if (row.attribute_group === "type") {
-            attributes.type.push(row.value);
-        }
-        if (row.attribute_group === "map") {
-            attributes.type.push(row.value);
-        }
-
-        if (row.attribute_group === "rating") {
-            attributes.rating = row.value;
-        }
-
-        if (row.attribute_group === "status") {
-            attributes.status = row.value;
-        }
+    if (!attributesByEntity[row.entity_id]) {
+        attributesByEntity[row.entity_id] = {
+            type: [],
+            feature: [],
+            map: [],
+            rating: null,
+            status: null
+        };
     }
+
+    const attributes = attributesByEntity[row.entity_id];
+
+    switch (row.attribute_group) {
+        case 'type':
+            attributes.type.push(row.value);
+            break;
+
+        case 'feature':
+            attributes.feature.push(row.value);
+            break;
+
+        case 'map':
+            attributes.map.push(row.value);
+            break;
+
+        case 'rating':
+            attributes.rating = row.value;
+            break;
+
+        case 'status':
+            attributes.status = row.value;
+            break;
+    }
+}
 
     // -------------------------
     // 4. COORDINATES
@@ -221,9 +215,11 @@ const coordinatesByEntity = Object.fromEntries(
     return entityRows.map(item => {
         const attributes =
         attributesByEntity[item.id] || {
-            type: [],
-            rating: null,
-            status: null
+                type: [],
+                feature: null,
+                map: [],
+                rating: null,
+                status: null
         };
 
         const content =
@@ -238,6 +234,7 @@ const coordinatesByEntity = Object.fromEntries(
             path: item.path,
 
             type: attributes.type,
+            feature: attributes.feature,
             rating: attributes.rating,
             status: attributes.status,
             map: attributes.map,

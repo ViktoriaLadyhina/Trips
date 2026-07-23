@@ -7,7 +7,11 @@
         margin: 40px;
     }
 
-
+    h3 {
+        @include h3();
+        padding: 10px;
+        text-align: center;
+    }
 
     &__desc {
         overflow: hidden;
@@ -172,7 +176,7 @@
     &__legends,
     &__item_title {
         padding: 1px;
-        flex: 1; // чтобы текст занимал оставшееся место
+        flex: 1;
         text-align: justify;
 
         h2 {
@@ -184,12 +188,11 @@
         strong {
             @include bold-text();
             display: inline;
-            text-align: justify;
         }
 
         p {
-        @include body-text();
-        margin: 0 0 3px;
+            @include body-text();
+            margin: 0 0 3px;
         }
 
         ul {
@@ -204,15 +207,63 @@
         }
     }
 
-    &__photo,
-    &__item-image {
-    float: left;
-    width: 350px;
-    max-width: 100%;
-    height: auto;
-    margin: 0 15px 15px 0;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    &__photo {
+        float: left;
+        width: 350px;
+        max-width: 100%;
+        height: auto;
+        margin: 0 15px 15px 0;
+        border-radius: 8px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    }
+
+    &__item {
+        display: flex;
+        margin: 10px;
+
+        strong {
+            @include bold-text();
+            display: inline;
+        }
+
+        p {
+            @include body-text();
+            margin: 0 0 3px;
+            text-align: justify;
+        }
+
+        &-image {
+            flex: 0 0 300px;
+            width: 300px;
+            margin: 8px;
+
+            img {
+                display: block;
+                width: 100%;
+                height: auto;
+                border-radius: 6px;
+            }
+        }
+
+        &-content {
+            flex: 1;
+            min-width: 0;
+        }
+    }
 }
 
+@media (max-width: 500px) {
+
+    .attraction {
+
+        &__item {
+            flex-direction: column;
+
+            &-image {
+                width: 100%;
+                max-width: 300px;
+                flex: none;
+            }
+        }
+    }
 }
