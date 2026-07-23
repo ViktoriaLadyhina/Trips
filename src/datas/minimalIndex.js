@@ -179,7 +179,7 @@ const datas =
     // Köln okrug
     //Köln-city
     cologne_cathedral: { id: 717, ru: 'Кёльнский собор', de: 'Kölner Dom', uk: 'Кельнський собор' },
-    rathaus_koln: { ru: 'Кёльнская ратуша', de: 'Kölner Rathaus', uk: 'Кельнська ратуша' },
+    rathaus_koln: { id: 718, ru: 'Кёльнская ратуша', de: 'Kölner Rathaus', uk: 'Кельнська ратуша' },
     roemisch_germanisches_museum: { ru: 'Римско-германский музей', de: 'Römisch-Germanisches Museum', uk: 'Римсько-германський музей' },
     farina_duftmuseum: { ru: 'Музей духов в доме Фарина', de: 'Duftmuseum im Farina-Haus', uk: 'Музей парфумів у домі Фаріна' },
     museum_ludwig: { ru: 'Музей Людвига', de: 'Museum Ludwig', uk: 'Музей Людвіга' },
@@ -347,3 +347,15 @@ const datas =
 }
 
 export default datas
+
+// Arnsberg — 27
+// Düsseldorf — 3
+// Köln — 57
+// Aachen — 6
+// Rhein-Erft-Kreis — 11
+// Rhein-Sieg-Kreis — 10
+// Rheinland-Pfalz / Trier, Saarburg, Koblenz — 22
+// Luxembourg — 15
+// Ukraine / Sumy — 4
+
+// Итого: 155.

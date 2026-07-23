@@ -2339,7 +2339,7 @@ const datas = [
         type: ["square"], rating: "top",
         path: "fischmarkt_koln",
         countryPath: "germany", regionPath: "nrw", districtPath: "city", cityPath: "koln_city",
-        hiddenFromList: true, showMore: true,
+        // hiddenFromList: true, showMore: true,
         fotoCard: "Germany/nrw/koln/koln-city/altstadt/fischmarkt/001.jpg",
         coord: { lat: 50.93845, lng: 6.96260 },
         translations: {

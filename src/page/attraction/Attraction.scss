@@ -195,6 +195,11 @@
             margin: 0 0 3px;
         }
 
+        a {
+            @include bold-text();
+            text-decoration: none;
+        }
+
         ul {
             margin: 0;
             padding-left: 20px;

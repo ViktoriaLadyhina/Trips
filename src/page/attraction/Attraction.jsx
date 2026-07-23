@@ -24,6 +24,7 @@ import { cityLocations } from '../../datas/cityLocations.js';
 import './Attraction.scss';
 import { ItemBlock } from '../../components/renders/ItemBlock.jsx';
 import MysqlGallery from '../../components/gallery/MysqlGallery.jsx';
+import SkeletonRenderer from '../../components/skeleton/SkeletonRenderer.jsx';
 
 const BASE_PHOTO_URL = import.meta.env.VITE_BASE_PHOTO_URL;
 
@@ -76,6 +77,39 @@ const noteLabel = {
     }
 };
 
+const SkeletonList = [
+    { type: "title" },
+    {
+        type: "text", props: {
+            hasTitle: false,
+            lines: 4,
+            hasPhoto: true,
+            photoPosition: "left",
+        }
+    },
+    {
+        type: "text", props: {
+            hasTitle: true,
+            lines: 6,
+            hasPhoto: false
+        }
+    },
+    {
+        type: "text", props: {
+            hasTitle: true,
+            lines: 5,
+            hasPhoto: false
+        }
+    },
+    {
+        type: "text", props: {
+            hasTitle: true,
+            lines: 7,
+            hasPhoto: false
+        }
+    },
+];
+
 
 const Attraction = () => {
 
@@ -95,13 +129,11 @@ const Attraction = () => {
     // FILTERS
     const [subFilters, setSubFilters] = useState({
         type: 'all',
+        feature: ['all'],
         rating: 'all',
         unesco: 'all',
         sort: 'rating',
-        status: [
-            'active',
-            'partial'
-        ]
+        status: ['active', 'partial']
     });
 
     useEffect(() => {
@@ -212,8 +244,11 @@ const Attraction = () => {
     // LOADING / ERRORS
     if (errorStatic) { return <p>{errorStatic}</p>; }
     if (error) { return <p>{error}</p>; }
-    if (!countryPath || !regionPath) { return <p>Loading...</p>; }
-    if (!attractions) { return <p>Loading...</p>; }
+    if (loading || !attractions) {
+        return (
+            <SkeletonRenderer blocks={SkeletonList} />
+        );
+    }
 
 
     // STATIC SUB-OBJECTS
@@ -227,6 +262,14 @@ const Attraction = () => {
             ).filter(Boolean)
             .filter(attr => {
                 if (subFilters.type !== 'all' && !attr.type?.includes(subFilters.type)) {
+                    return false;
+                }
+
+                if (subFilters.feature?.length > 0 &&
+                    !subFilters.feature.includes('all') &&
+                    !subFilters.feature.some(feature => attr.feature?.includes(feature)
+                    )
+                ) {
                     return false;
                 }
 

@@ -11,9 +11,6 @@ export const Fotos = {
 
     // округ Кёльн
     koln_city: {
-      'rathaus-koeln': [
-        { path: "Germany/nrw/koln/koln-city/rathaus-koeln/Rathaus-Köln.jpg", title: { ru: "Кёльнская ратуша (фото взято с википедии)", uk: "Кельнська ратуша (фото взято з Вікіпедії)", de: "Kölner Rathaus (Foto von Wikipedia entnommen)" } }
-      ],
       gross_st_martin_koln: [
         { path: "Germany/nrw/koln/koln-city/altstadt/romanische_kirchen/gross_st_martin/001.jpg", title: { ru: "Большой Святой Мартин (фото взято с википедии)", uk: "Великий Святий Мартін (фото взято з Вікіпедії)", de: "Groß St. Martin (Foto von Wikipedia entnommen)" } },
         { path: "Germany/nrw/koln/koln-city/altstadt/romanische_kirchen/gross_st_martin/002.jpg", title: { ru: "Большой Святой Мартин, 2025", uk: "Великий Святий Мартін, 2025", de: "Groß St. Martin, 2025" } }

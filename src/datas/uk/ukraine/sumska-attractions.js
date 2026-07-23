@@ -113,7 +113,7 @@ const datas = [
         path: "sumy_altanka",
         countryPath: "ukraine", regionsPath: "sumska", districtPath: "city", cityPath: "sumy",
         hiddenFromList: true, showMore: true,
-        fotoCard: "Ukraine/sumska/sumy-city/pokrovska_square/altanka/009.jpg",
+        fotoCard: "Ukraine/sumska/sumy-city/pokrovska_square/altanka/001.jpg",
         location: "Суми, Україна",
         address: [{ bold: "Адреса:", text: "Покровська площа" }],
         construction_period: "На початку XX століття – у період близько 1900–1905 років",
@@ -137,7 +137,7 @@ const datas = [
             description: "Альтанка – бесідка по праву вважається однією з головних архітектурних пам’яток міста",
             ogTitle: "Альтанка – візитна картка Сум",
             ogDescription: "Альтанка – бесідка по праву вважається однією з головних архітектурних пам’яток міста",
-            ogImage: "https://our-travels.info/foto/Ukraine/sumska/sumy-city/pokrovska_square/altanka/009.jpg"
+            ogImage: "https://our-travels.info/foto/Ukraine/sumska/sumy-city/pokrovska_square/altanka/001.jpg"
         }
     }
 ]

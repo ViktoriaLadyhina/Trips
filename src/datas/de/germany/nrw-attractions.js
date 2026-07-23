@@ -12,7 +12,6 @@ const datas = [
     //             { bold: "St. Mariä Himmelfahrt", text: "– die wichtigste Barockkirche Kölns aus dem 17. Jahrhundert, eine ehemalige Jesuitenkirche in der Nähe des Hauptbahnhofs und des Kölner Doms." },
     //             { bold: "Basilika St. Kunibert in Köln", text: "– eine romanische Kirche mit massiven Türmen, strengen Formen und ruhiger Atmosphäre, gelegen im nördlichen Teil der Altstadt in der Nähe des Rheins." },
     //             { bold: "Gürzenich", text: "– historisches Zunfthaus und Saal in der Nähe des Kölner Doms." },
-    //             { bold: "Kölner Rathaus", text: "– historisches Stadthaus im Zentrum der Altstadt." },
     //             { bold: "Dufthaus 4711", text: "– historisches Gebäude in der Fußgängerzone um die Hohe Straße und Schildergasse." },
     //             { bold: "Duftmuseum im Farina-Haus", text: "– Museum für Düfte und Parfum im historischen Viertel beim Rathaus." },
     //             { bold: "Kölnisches Stadtmuseum", text: "– Museum für Stadtgeschichte im Zentrum (Zeughaus)." },
@@ -24,65 +23,7 @@ const datas = [
     //         ]
     //     }
     // },
-    {
-        id: "rathaus_koln",
-        name: "Kölner Rathaus",
-        type: ['historical_building'], rating: "popular",
-        path: "rathaus_koln",
-        countryPath: "germany", regionPath: "nrw", districtPath: "city", cityPath: "koln_city",
-        showMore: true, hiddenFromList: true,
-        fotoCard: "Germany/nrw/koln/koln-city/rathaus-koeln/Rathaus-Köln.jpg",
-        location: "Köln, Stadtteil Altstadt-Nord (Stadtbezirk Innenstadt), Deutschland",
-        address: [{ bold: "Adresse des Kölner Rathauses:", text: "Rathausplatz 2, 50667 Köln, Deutschland" },],
-        officialSite: [
-            { bold: "Offizielle Website", link: "https://www.stadt-koeln.de/", text: " der Stadt Köln (Rathaus)" },
-        ],
-        tickets_and_entry: {
-            title: "Eintritt und Zugang",
-            items: [
-                { bold: "Zugang:", text: "Das Rathaus ist ein aktives Verwaltungsgebäude der Stadt Köln. Der Zugang zu den Verwaltungsräumen ist eingeschränkt, jedoch sind Teile der Säle und der Turm im Rahmen von Führungen zugänglich. Führungen finden nach Zeitplan statt, Details auf der Website der Stadt Köln." },
-            ]
-        },
-        short_description: "Das Kölner Rathaus – das älteste Verwaltungsgebäude Deutschlands, vereint einen gotischen Turm, eine Renaissance-Loggia und den historischen Hansasaal.",
-        full_description: {
-            title: "Beschreibung und Geschichte",
-            items: [
-                { text: "Das Kölner Rathaus (Kölner Rathaus) ist eines der wichtigsten Symbole der Stadt und das älteste Gebäude der kommunalen Verwaltung in Deutschland. Es vereint architektonische Elemente der Gotik, Renaissance und modernen Restaurierungen. Das Rathaus diente und dient weiterhin als Symbol der städtischen Macht und Selbstverwaltung." },
-                { text: "Die ersten Erwähnungen des Gebäudes, in dem sich die Bürger versammelten, stammen aus dem 12. Jahrhundert (1135–1152). Im 14. Jahrhundert begann der Bau eines neuen Komplexes, einschließlich des <b>Hansasaals</b>, in dem 1367 Vertreter der Hanse tagten." },
-                { text: "Anfang des 15. Jahrhunderts (1407–1414) wurde dem Komplex der imposante <b>Rathaus-Turm (Ratsturm)</b> mit einer Höhe von etwa 61 Metern hinzugefügt – ein Beispiel der Spätgotik. Seine Fassade ist mit über hundert Steinfiguren geschmückt, darunter nicht nur historische Persönlichkeiten, sondern auch moderne Kölner Helden – z. B. der Schriftsteller Heinrich Böll und Karnevalsfiguren." },
-                { text: "Im 16. Jahrhundert (1569–1573) errichtete der Architekt Wilhelm Vernukken aus Kalkar die kunstvolle <b>Renaissance-Loggia (Laube)</b>, inspiriert von der Architektur Antwerpens. Ihre Arkaden und reich verzierte Steinmetzarbeiten verleihen dem Gebäude ein feierliches Aussehen." },
-                { text: "In der Nähe befand sich das <b>Spanischer Bau</b>, in dem Gerichts- und Verwaltungsorgane untergebracht waren." },
-                { text: "Während des Zweiten Weltkriegs wurde das Rathaus stark durch Bombenangriffe beschädigt: Dach, Fassaden und ein Großteil des Interieurs wurden zerstört. Nach dem Krieg, ab Ende der 1940er Jahre, begann eine umfassende Restaurierung. Die Wiederherstellung dauerte Jahrzehnte, einschließlich der vollständigen Rekonstruktion von Hansasaal und Turm." },
-                { text: "Bis in die 1970er Jahre waren die Hauptarbeiten abgeschlossen, und das Gebäude wurde wieder Sitz des Stadtrats." },
-            ]
-        },
-        interestingFacts: {
-            title: "Interessante Fakten",
-            items: [
-                { text: "Auf dem Turm des Rathauses befindet sich der hölzerne Kopf Platzjabbeck, der jede Stunde die Zunge herausstreckt – ein Symbol der Verspottung der Macht." },
-                { text: "Der Hansasaal ist mit der Skulpturenkomposition 'Neun tapfere Helden' geschmückt, die Figuren aus heidnischer, jüdischer und christlicher Tradition vereint." },
-                { text: "Die Fundamente des Rathauses ruhen teilweise auf den Überresten der römischen Stadtmauer." },
-            ]
-        },
-        construction_period: "12.–16. Jahrhundert, mit anschließenden Restaurierungen nach dem Zweiten Weltkrieg",
-        founder: "Stadt Köln, unter Mitwirkung des Architekten Wilhelm Vernukken und der Meister der gotischen Schule",
-        sub_objects: {
-            title: "Objekte des Rathauses",
-            items: [
-                { bold: "Hansasaal", text: " – Hauptsaal des Rathauses aus dem 14. Jahrhundert, Sitz der Hanse, geschmückt mit Skulpturen der Neun Helden." },
-                { bold: "Ratsturm", text: " – Turm mit 61 Metern Höhe und Hunderten von Figuren, Symbol der Macht und des Stolzes der Stadt." },
-            ]
-        },
-        coord: { lat: 50.938020, lng: 6.959260 },
-        meta: {
-            title: "Kölner Rathaus",
-            description: "Kölner Rathaus: gotischer Turm, Renaissance-Loggia",
-            ogTitle: "Kölner Rathaus: gotischer Turm, Renaissance-Loggia",
-            ogDescription: "Das Kölner Rathaus – das älteste Verwaltungsgebäude Deutschlands, vereint gotischen Turm, Renaissance-Loggia und den historischen Hansasaal.",
-            keywords: "Kölner Rathaus, Köln, historisches Zentrum, mittelalterliche Architektur, städtische Architektur, Verwaltungsgebäude, Türme, Sehenswürdigkeiten Köln, Stadtrat, touristische Routen, Kulturerbe, Tourismus Deutschland",
-            ogImage: "https://our-travels.info/foto/Germany/nrw/koln/koln-city/rathaus-koeln/Rathaus-Köln.jpg"
-        }
-    },
+
     {
         id: "romanische_kirchen_altstadt_koln",
         name: "Romanische Kirchen von Köln",
@@ -250,7 +191,7 @@ const datas = [
         type: ["cathedral"], rating: "popular",
         path: "st_maria_himmelfahrt_koln",
         countryPath: "germany", regionPath: "nrw", districtPath: "city", cityPath: "koln_city",
-        hiddenFromList: true, showMore: true,
+        // hiddenFromList: true, showMore: true,
         fotoCard: "Germany/nrw/koln/koln-city/altstadt/st_maria_himmelfahrt/001.jpg",
         location: "Köln, Stadtteil Altstadt-Süd (Stadtbezirk Innenstadt), Deutschland",
         short_description: "St. Mariä Himmelfahrt ist eine bedeutende katholische Kirche der Aufnahme Mariens in der Kölner Altstadt. Sie wurde im Barockstil als Jesuitenkirche errichtet, war lange Zeit die zweitgrößte Kirche nach dem Kölner Dom und gehört bis heute zu den wenigen erhaltenen barocken Baudenkmälern der Stadt.",
@@ -298,7 +239,7 @@ const datas = [
         type: ["historical_building"], rating: "popular",
         path: "guerzenich_koln",
         countryPath: "germany", regionPath: "nrw", districtPath: "city", cityPath: "koln_city",
-        showMore: true, hiddenFromList: true,
+        // showMore: true, hiddenFromList: true,
         fotoCard: "Germany/nrw/koln/koln-city/altstadt/guerzenich_koln/001.jpg",
         location: "Köln, Stadtteil Altstadt-Nord (Stadtbezirk Innenstadt), Deutschland",
         officialSite: [
@@ -360,7 +301,7 @@ const datas = [
         type: ["museum"], rating: "popular",
         path: "roemisch_germanisches_museum",
         countryPath: "germany", regionPath: "nrw", districtPath: "city", cityPath: "koln_city",
-        showMore: true, hiddenFromList: true,
+        // showMore: true, hiddenFromList: true,
         fotoCard: "Germany/nrw/koln/koln-city/roemisch-germanisches-museum/001.jpg",
         location: "Köln, Stadtteil Altstadt-Nord (Stadtbezirk Innenstadt), Deutschland",
         officialSite: [
@@ -416,7 +357,7 @@ const datas = [
         type: ["museum"], rating: "popular",
         path: "farina_duftmuseum",
         countryPath: "germany", regionPath: "nrw", districtPath: "city", cityPath: "koln_city",
-        showMore: true, hiddenFromList: true,
+        // showMore: true, hiddenFromList: true,
         fotoCard: "Germany/nrw/koln/koln-city/farina-duftmuseum/001.jpg",
         location: "Köln, Stadtteil Altstadt-Nord (Stadtbezirk Innenstadt), Deutschland",
         officialSite: [
@@ -470,7 +411,7 @@ const datas = [
         type: ["museum"], rating: "popular",
         path: "museum_ludwig",
         countryPath: "germany", regionPath: "nrw", districtPath: "city", cityPath: "koln_city",
-        showMore: true, hiddenFromList: true,
+        // showMore: true, hiddenFromList: true,
         fotoCard: "Germany/nrw/koln/koln-city/museum-ludwig/001.jpg",
         location: "Köln, Stadtteil Altstadt-Nord (Stadtbezirk Innenstadt), Deutschland",
         officialSite: [
@@ -582,7 +523,7 @@ const datas = [
         type: ["museum"], rating: "popular",
         path: "miqua",
         countryPath: "germany", regionPath: "nrw", districtPath: "city", cityPath: "koln_city",
-        showMore: true, hiddenFromList: true,
+        // showMore: true, hiddenFromList: true,
         fotoCard: "Germany/nrw/koln/koln-city/miqua/001.jpg",
         location: "Köln, Stadtteil Altstadt-Nord (Stadtbezirk Innenstadt), Deutschland",
         officialSite: [
@@ -658,7 +599,7 @@ const datas = [
         type: ["museum"], rating: "popular",
         path: "wallraf_richartz_museum",
         countryPath: "germany", regionPath: "nrw", districtPath: "city", cityPath: "koln_city",
-        showMore: true, hiddenFromList: true,
+        // showMore: true, hiddenFromList: true,
         fotoCard: "Germany/nrw/koln/koln-city/wallraf_richartz_museum/001.jpg",
         location: "Köln, Stadtteil Altstadt-Süd (Stadtbezirk Innenstadt), Deutschland",
         officialSite: [
@@ -900,7 +841,7 @@ const datas = [
         type: ["museum"], rating: "popular",
         path: "dufthaus_4711_koln",
         countryPath: "germany", regionPath: "nrw", districtPath: "city", cityPath: "koln_city",
-        showMore: true, hiddenFromList: true,
+        // showMore: true, hiddenFromList: true,
         fotoCard: "Germany/nrw/koln/koln-city/dufthaus_4711/001.jpg",
         location: "Köln, Stadtteil Altstadt-Nord (Stadtbezirk Innenstadt), Deutschland",
         officialSite: [
@@ -1022,7 +963,7 @@ const datas = [
         type: ["museum"], rating: "popular",
         path: "stadtmuseum_koln",
         countryPath: "germany", regionPath: "nrw", districtPath: "city", cityPath: "koln_city",
-        showMore: true, hiddenFromList: true,
+        // showMore: true, hiddenFromList: true,
         fotoCard: "Germany/nrw/koln/koln-city/stadtmuseum/001.jpg",
         location: "Köln, Stadtteil Altstadt-Nord (Stadtbezirk Innenstadt), Deutschland",
         officialSite: [
@@ -1250,7 +1191,7 @@ const datas = [
         type: ["historical_building"], rating: "popular",
         path: "old_towers_koln",
         countryPath: "germany", regionPath: "nrw", districtPath: "city", cityPath: "koln_city",
-        hiddenFromList: true, showMore: true,
+        // hiddenFromList: true, showMore: true,
         mapOpen: "old_towers_koln",
         subObjects: ["rumerturm_koln", "hahnentorburg_koln", "eigelsteintorburg_koln", "severinstorburg_koln", "ulrepforte_koln", "bayenturm_koln"],
         subObjects_title: "Wichtigste erhaltene Türme und Mauerfragmente",
@@ -1621,7 +1562,7 @@ const datas = [
         type: ["technical_structure"], rating: "popular",
         path: "koln_seilbahn",
         countryPath: "germany", regionPath: "nrw", districtPath: "city", cityPath: "koln_city",
-        fotoCard: "Germany/nrw/koln/koln-city/rheinpark_koln/003.jpg",
+        fotoCard: "Germany/nrw/koln/koln-city/koln_seilbahn/001.jpg",
         location: "Köln, Stadtteil Riehl (Stadtbezirk Nippes), Deutschland",
         officialSite: [
             { bold: "Offizielle Website", link: "https://www.koelner-seilbahn.de/index.html" }
@@ -1668,7 +1609,7 @@ const datas = [
             ogTitle: "Cologne Cable Car – Panoramablick auf Köln aus der Höhe",
             ogDescription: "Die Cologne Cable Car verbindet die Rheinufer und bietet einen der schönsten Panoramablicke auf Köln, den Kölner Dom und den Rheinpark. Eine beliebte Sehenswürdigkeit und ein Wahrzeichen der Stadt.",
             keywords: "Kölner Seilbahn, Köln, Sehenswürdigkeit, Seilbahn, Transport, Panoramablick, Rhein, touristische Attraktionen, Führungen, Städtetourismus, Unterhaltung, Deutschland, Fotos, Spaziergänge",
-            ogImage: "https://our-travels.info/foto/Germany/nrw/koln/koln-city/rheinpark_koln/003.jpg"
+            ogImage: "https://our-travels.info/foto/Germany/nrw/koln/koln-city/koln_seilbahn/001.jpg"
         }
     },
     {

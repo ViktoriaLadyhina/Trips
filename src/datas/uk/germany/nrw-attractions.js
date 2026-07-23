@@ -19,7 +19,6 @@ const datas = [
     //             { bold: "Церква Успіння Пресвятої Діви Марії (St. Mariä Himmelfahrt)", text: "– головна барокова церква Кельна сімнадцятого століття, колишній єзуїтський храм, розташований поруч із центральним залізничним вокзалом та Кельнським собором." },
     //             { bold: "Базиліка Святого Куніберта в Кельні", text: "– романська церква з масивними вежами, строгими формами та спокійною атмосферою, розташована в північній частині старого міста біля Рейну." },
     //             { bold: "Гюрценіх", text: "– історичний цеховий будинок і зал поруч із Кельнським собором." },
-    //             { bold: "Кельнська ратуша", text: "– історична міська ратуша в центрі Старого міста." },
     //             { bold: "Кельнський міський музей", text: "– музей історії міста в центрі (Zeughaus)." },
     //             { bold: "Музей у археологічному кварталі Кельна – MiQua", text: "– археологічний та єврейський музей на Marktplatz у центрі Старого міста." },
     //             { bold: "Музей Вальрафа-Ріхарца", text: "– музей живопису та мистецтва, недалеко від ратуші та собору." },
@@ -30,65 +29,7 @@ const datas = [
     //         ]
     //     },
     // },
-    {
-        id: "rathaus_koln",
-        name: "Кельнська ратуша",
-        type: ['historical_building'], rating: "popular",
-        path: "rathaus_koln",
-        countryPath: "germany", regionPath: "nrw", districtPath: "city", cityPath: "koln_city",
-        showMore: true, hiddenFromList: true,
-        fotoCard: "Germany/nrw/koln/koln-city/rathaus-koeln/Rathaus-Köln.jpg",
-        location: "Кельн, район Altstadt-Nord (район Innenstadt), Німеччина",
-        address: [{ bold: "Адреса Кельнської ратуші:", text: "Rathausplatz 2, 50667 Köln, Deutschland" },],
-        officialSite: [
-            { bold: "Офіційний сайт", link: "https://www.stadt-koeln.de/", text: " міста Кельн (ратуша)" },
-        ],
-        tickets_and_entry: {
-            title: "Вхід та доступ",
-            items: [
-                { bold: "Доступ:", text: "Ратуша є діючою будівлею міської ради. Вхід до адміністративних приміщень обмежений, однак частина залів і вежа доступні в рамках екскурсій. Екскурсії по ратуші проводяться за розкладом, уточнюється на сайті міста Кельн." },
-            ]
-        },
-        short_description: "Кельнська ратуша – найстаріша адміністративна будівля Німеччини, що поєднує готичну вежу, ренесансну лоджію та історичний зал Ганзи.",
-        full_description: {
-            title: "Опис та історія",
-            items: [
-                { text: "Кельнська ратуша (Kölner Rathaus) – один з головних символів міста і найстаріша будівля муніципальної влади в Німеччині. Вона об’єднує архітектурні елементи готики, ренесансу та сучасних реставрацій. Ратуша служила і продовжує служити символом влади та самоврядування міста." },
-                { text: "Перші згадки про будівлю, де збиралися містяни, відносяться до XII століття (1135–1152). У XIV столітті почалося будівництво нового комплексу, включаючи <b>зал Hansasaal</b>, де в 1367 році засідали представники Ганзи." },
-                { text: "На початку XV століття (1407–1414) до комплексу була прибудована велична <b>Вежа ратуші (Ratsturm)</b> висотою близько 61 метра – приклад пізньої готики. Її фасад прикрашають понад сотню кам’яних фігур, серед яких не лише історичні персонажі, а й сучасні герої Кельна – наприклад, письменник Генріх Бель та карнавальні персонажі." },
-                { text: "У XVI столітті (1569–1573) архітектор Вільгельм Вернуккен з Калькара збудував вишукану <b>ренесансну лоджію (Laube)</b>, натхненну архітектурою Антверпена. Її аркади та багатий кам’яний різьблений декор надають будівлі урочистого вигляду." },
-                { text: "Поруч знаходилося <b>крило Spanischer Bau</b>, де розміщувалися судові та адміністративні органи." },
-                { text: "Під час Другої світової війни ратуша сильно постраждала від бомбардувань: були зруйновані дах, фасади та значна частина інтер’єру. Після війни, з кінця 1940-х років, почалася масштабна реставрація. Відновлення тривало десятиліттями, включно з повним відтворенням Hansasaal та вежі." },
-                { text: "До 1970-х років основні роботи були завершені, і будівля знову стала резиденцією міської ради." },
-            ]
-        },
-        interestingFacts: {
-            title: "Цікаві факти",
-            items: [
-                { text: "На вежі ратуші встановлено дерев’яну голову Platzjabbeck, яка кожну годину висовує язик – символ глузування над владою." },
-                { text: "Hansasaal прикрашений скульптурною композицією 'Дев’ять доблесних героїв', що об’єднує персонажів з язичницької, єврейської та християнської традицій." },
-                { text: "Фундаменти ратуші частково спираються на залишки давньоримської міської стіни." },
-            ]
-        },
-        construction_period: "XII–XVI століття, з наступними реставраціями після Другої світової війни",
-        founder: "Місто Кельн, за участю архітектора Вільгельма Вернуккена та майстрів готичної школи",
-        sub_objects: {
-            title: "Об’єкти ратуші",
-            items: [
-                { bold: "Hansasaal", text: " – головний зал ратуші XIV століття, місце засідань Ганзи, прикрашений скульптурами Дев’яти героїв." },
-                { bold: "Ratsturm", text: " – вежа висотою 61 метр з сотнями фігур, символ влади та гордості міста." },
-            ]
-        },
-        coord: { lat: 50.938020, lng: 6.959260 },
-        meta: {
-            title: "Кельнська ратуша",
-            description: "Кельнська ратуша: готична вежа, ренесансна лоджія",
-            ogTitle: "Кельнська ратуша: готична вежа, ренесансна лоджія",
-            ogDescription: "Кельнська ратуша – найстаріша адміністративна будівля Німеччини, що поєднує готичну вежу, ренесансну лоджію та історичний зал Ганзи.",
-            keywords: "Кельнська ратуша, Кельн, історичний центр, середньовічна архітектура, міська архітектура, адміністративна будівля, вежі, пам’ятки Кельна, міська рада, туристичні маршрути, культурна спадщина, туризм Німеччина",
-            ogImage: "https://our-travels.info/foto/Germany/nrw/koln/koln-city/rathaus-koeln/Rathaus-Köln.jpg"
-        }
-    },
+
     {
         id: "romanische_kirchen_altstadt_koln",
         name: "Романські церкви Кельна",
@@ -255,7 +196,7 @@ const datas = [
         type: ["cathedral"], rating: "popular",
         path: "st_maria_himmelfahrt_koln",
         countryPath: "germany", regionPath: "nrw", districtPath: "city", cityPath: "koln_city",
-        hiddenFromList: true, showMore: true,
+        // hiddenFromList: true, showMore: true,
         fotoCard: "Germany/nrw/koln/koln-city/altstadt/st_maria_himmelfahrt/001.jpg",
         location: "Кельн, район Altstadt-Süd (район Innenstadt), Німеччина",
         short_description: "Санкт-Марія Гіммельфарт (St. Mariä Himmelfahrt) – це визначна католицька церква Успіння Пресвятої Діви Марії у старому місті Кельна. Побудована в стилі бароко як єзуїтська церква, вона тривалий час була другою за величиною після Кельнського собору і залишається однією з небагатьох збережених барокових пам’яток міста.",
@@ -303,7 +244,7 @@ const datas = [
         type: ["historical_building"], rating: "popular",
         path: "guerzenich_koln",
         countryPath: "germany", regionPath: "nrw", districtPath: "city", cityPath: "koln_city",
-        showMore: true, hiddenFromList: true,
+        // showMore: true, hiddenFromList: true,
         fotoCard: "Germany/nrw/koln/koln-city/altstadt/guerzenich_koln/001.jpg",
         location: "Кельн, район Altstadt-Nord (район Innenstadt), Німеччина",
         officialSite: [
@@ -365,7 +306,7 @@ const datas = [
         type: ["museum"], rating: "popular",
         path: "roemisch_germanisches_museum",
         countryPath: "germany", regionPath: "nrw", districtPath: "city", cityPath: "koln_city",
-        showMore: true, hiddenFromList: true,
+        // showMore: true, hiddenFromList: true,
         fotoCard: "Germany/nrw/koln/koln-city/roemisch-germanisches-museum/001.jpg",
         location: "Кельн, район Altstadt-Nord (район Innenstadt), Німеччина",
         officialSite: [
@@ -421,7 +362,7 @@ const datas = [
         type: ["museum"], rating: "popular",
         path: "farina_duftmuseum",
         countryPath: "germany", regionPath: "nrw", districtPath: "city", cityPath: "koln_city",
-        showMore: true, hiddenFromList: true,
+        // showMore: true, hiddenFromList: true,
         fotoCard: "Germany/nrw/koln/koln-city/farina-duftmuseum/001.jpg",
         location: "Кельн, район Altstadt-Nord (район Innenstadt), Німеччина",
         officialSite: [
@@ -475,7 +416,7 @@ const datas = [
         type: ["museum"], rating: "popular",
         path: "museum_ludwig",
         countryPath: "germany", regionPath: "nrw", districtPath: "city", cityPath: "koln_city",
-        showMore: true, hiddenFromList: true,
+        // showMore: true, hiddenFromList: true,
         fotoCard: "Germany/nrw/koln/koln-city/museum-ludwig/001.jpg",
         location: "Кельн, район Altstadt-Nord (район Innenstadt), Німеччина",
         officialSite: [
@@ -587,7 +528,7 @@ const datas = [
         type: ["museum"], rating: "popular",
         path: "miqua",
         countryPath: "germany", regionPath: "nrw", districtPath: "city", cityPath: "koln_city",
-        showMore: true, hiddenFromList: true,
+        // showMore: true, hiddenFromList: true,
         fotoCard: "Germany/nrw/koln/koln-city/miqua/001.jpg",
         location: "Кельн, район Altstadt-Nord (район Innenstadt), Німеччина",
         officialSite: [
@@ -663,7 +604,7 @@ const datas = [
         type: ["museum"], rating: "popular",
         path: "wallraf_richartz_museum",
         countryPath: "germany", regionPath: "nrw", districtPath: "city", cityPath: "koln_city",
-        showMore: true, hiddenFromList: true,
+        // showMore: true, hiddenFromList: true,
         fotoCard: "Germany/nrw/koln/koln-city/wallraf_richartz_museum/001.jpg",
         location: "Кельн, район Altstadt-Süd (район Innenstadt), Німеччина",
         officialSite: [
@@ -905,7 +846,7 @@ const datas = [
         type: ["museum"], rating: "popular",
         path: "dufthaus_4711_koln",
         countryPath: "germany", regionPath: "nrw", districtPath: "city", cityPath: "koln_city",
-        showMore: true, hiddenFromList: true,
+        // showMore: true, hiddenFromList: true,
         fotoCard: "Germany/nrw/koln/koln-city/dufthaus_4711/001.jpg",
         location: "Кельн, район Altstadt-Nord (район Innenstadt), Німеччина",
         officialSite: [
@@ -1027,7 +968,7 @@ const datas = [
         type: ["museum"], rating: "popular",
         path: "stadtmuseum_koln",
         countryPath: "germany", regionPath: "nrw", districtPath: "city", cityPath: "koln_city",
-        showMore: true, hiddenFromList: true,
+        // showMore: true, hiddenFromList: true,
         fotoCard: "Germany/nrw/koln/koln-city/stadtmuseum/001.jpg",
         location: "Кельн, район Altstadt-Nord (район Innenstadt), Німеччина",
         officialSite: [
@@ -1255,7 +1196,7 @@ const datas = [
         type: ["historical_building"], rating: "popular",
         path: "old_towers_koln",
         countryPath: "germany", regionPath: "nrw", districtPath: "city", cityPath: "koln_city",
-        hiddenFromList: true, showMore: true,
+        // hiddenFromList: true, showMore: true,
         mapOpen: "old_towers_koln",
         fotoCard: "Germany/nrw/koln/koln-city/altstadt/old_towers/001.jpg",
         subObjects: ["rumerturm_koln", "hahnentorburg_koln", "eigelsteintorburg_koln", "severinstorburg_koln", "ulrepforte_koln", "bayenturm_koln"],
@@ -1626,7 +1567,7 @@ const datas = [
         type: ["technical_structure"], rating: "popular",
         path: "koln_seilbahn",
         countryPath: "germany", regionPath: "nrw", districtPath: "city", cityPath: "koln_city",
-        fotoCard: "Germany/nrw/koln/koln-city/rheinpark_koln/003.jpg",
+        fotoCard: "Germany/nrw/koln/koln-city/koln_seilbahn/001.jpg",
         location: "Кельн, район Riehl (район Nippes), Німеччина",
         officialSite: [
             { bold: "Офіційний сайт", link: "https://www.koelner-seilbahn.de/index.html" }
@@ -1673,7 +1614,7 @@ const datas = [
             ogTitle: "Cologne Cable Car – панорамний вид на Кельн з висоти",
             ogDescription: "Канатна дорога Cologne Cable Car з’єднує береги Рейну та відкриває один із найкращих панорамних видів на Кельн, Кельнський собор і Rheinpark. Популярна пам’ятка та символ міста.",
             keywords: "Кельнська канатна дорога, Кельн, пам’ятка, канатна дорога, транспорт, панорамні види, Рейн, туристичні місця, екскурсії, міський туризм, розваги, Німеччина, фото, прогулянки",
-            ogImage: "https://our-travels.info/foto/Germany/nrw/koln/koln-city/rheinpark_koln/003.jpg"
+            ogImage: "https://our-travels.info/foto/Germany/nrw/koln/koln-city/koln_seilbahn/001.jpg"
         }
     },
     {

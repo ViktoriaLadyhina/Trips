@@ -113,7 +113,7 @@ const datas = [
         path: "sumy_altanka",
         countryPath: "ukraine", regionPath: "sumska", districtPath: "city", cityPath: "sumy",
         hiddenFromList: true, showMore: true,
-        fotoCard: "Ukraine/sumska/sumy-city/pokrovska_square/altanka/009.jpg",
+        fotoCard: "Ukraine/sumska/sumy-city/pokrovska_square/altanka/001.jpg",
         location: "Sumy, Ukraine",
         address: [{ bold: "Adresse:", text: " Pokrowskyj-Platz" }],
         construction_period: "Ungefähr zu Beginn des 20. Jahrhunderts – etwa 1900–1905",
@@ -137,7 +137,7 @@ const datas = [
             description: "Der Pavillon gilt zu Recht als eines der wichtigsten architektonischen Wahrzeichen der Stadt",
             ogTitle: "Pavillon – die Visitenkarte von Sumy",
             ogDescription: "Der Pavillon gilt zu Recht als eines der wichtigsten architektonischen Wahrzeichen der Stadt",
-            ogImage: "https://our-travels.info/foto/Ukraine/sumska/sumy-city/pokrovska_square/altanka/009.jpg"
+            ogImage: "https://our-travels.info/foto/Ukraine/sumska/sumy-city/pokrovska_square/altanka/001.jpg"
         }
     }
 

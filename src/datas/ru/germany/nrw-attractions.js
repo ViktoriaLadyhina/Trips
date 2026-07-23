@@ -30,68 +30,8 @@ const datas = [
     //         ]
     //     },
     // },
-    // { Кельнский собор
-    //     showMore: true, hiddenFromList: true,
 
-    {
-        id: "rathaus_koln",
-        name: "Кёльнская ратуша",
-        type: ['historical_building'], rating: "popular",
-        path: "rathaus_koln",
-        countryPath: "germany", regionPath: "nrw", districtPath: "city", cityPath: "koln_city",
-        showMore: true, hiddenFromList: true,
-        fotoCard: "Germany/nrw/koln/koln-city/rathaus-koeln/Rathaus-Köln.jpg",
-        location: "Кёльн, район Altstadt-Nord (округ Innenstadt), Германия",
-        address: [{ bold: "Адрес Кёльнской ратуши:", text: " Rathausplatz 2, 50667 Köln, Deutschland " },],
-        officialSite: [
-            { bold: "Официальный сайт", link: "https://www.stadt-koeln.de/", text: ' города Кёльна (ратуша)' },
-        ],
-        tickets_and_entry: {
-            title: "Вход и доступ",
-            items: [
-                { bold: "Доступ:", text: "Ратуша является действующим зданием городского совета. Вход в административные помещения ограничен, однако часть залов и башня доступны в рамках экскурсий. Экскурсии по ратуше проводятся по расписанию, уточняется на сайте города Кёльна." },
-            ]
-        },
-        short_description: "Кёльнская ратуша – старейшее административное здание Германии, сочетающее готическую башню, ренессансную лоджию и исторический зал Ганзы. ",
-        full_description: {
-            title: "Описание и история",
-            items: [
-                { text: "Кёльнская ратуша (Kölner Rathaus) – один из главных символов города и старейшее здание муниципальной власти в Германии. Она объединяет архитектурные элементы готики, ренессанса и современных реставраций. Ратуша служила и продолжает служить символом власти и самоуправления города." },
-                { text: "Первые упоминания о здании, где собирались горожане, относятся к XII веку (1135-1152). В XIV веке началось строительство нового комплекса, включая <b>зал Hansasaal</b>, где в 1367 году заседали представители Ганзы." },
-                { text: "В начале XV века (1407-1414) к комплексу была пристроена величественная <b>Башня ратуши (Ratsturm)</b> высотой около 61 метра – пример поздней готики. Её фасад украшают более сотни каменных фигур, среди которых не только исторические персонажи, но и современные герои Кёльна – например, писатель Генрих Бёлль и карнавальные персонажи." },
-                { text: "В XVI веке (1569-1573) архитектор Вильгельм Вернуккен из Калькара возвёл изысканную <b>ренессансную лоджию (Laube)</b>, вдохновлённую архитектурой Антверпена. Её аркады и богатая каменная резьба придают зданию торжественный облик." },
-                { text: "Рядом находилось <b>крыло Spanischer Bau</b>, где размещались судебные и административные органы." },
-                { text: "Во время Второй мировой войны ратуша сильно пострадала от бомбардировок: были уничтожены крыша, фасады и значительная часть интерьера. После войны, с конца 1940-х годов, началась масштабная реставрация. Восстановление продолжалось десятилетиями, включая полное воссоздание Hansasaal и башни." },
-                { text: "К 1970-м годам основные работы были завершены, и здание вновь стало резиденцией городского совета." },
-            ]
-        },
-        interestingFacts: {
-            title: "Интересные факты",
-            items: [
-                { text: "На башне ратуши установлена деревянная голова Platzjabbeck, которая каждый час высовывает язык – символ насмешки над властью." },
-                { text: "Hansasaal украшен скульптурной композицией 'Девять доблестных героев', объединяющей персонажей из языческой, еврейской и христианской традиций." },
-                { text: "Фундаменты ратуши частично опираются на остатки древнеримской городской стены." },
-            ]
-        },
-        construction_period: "XII-XVI века, с последующими реставрациями после Второй мировой войны",
-        founder: "Город Кёльн, при участии архитекторов Вильгельма Вернуккена и мастеров готической школы",
-        sub_objects: {
-            title: "Объекты ратуши",
-            items: [
-                { bold: "Hansasaal", text: " – главный зал ратуши XIV века, место заседаний Ганзы, украшен скульптурами Девяти героев." },
-                { bold: "Ratsturm", text: " – башня высотой 61 метр с сотнями фигур, символ власти и гордости города." },
-            ]
-        },
-        coord: { lat: 50.938020, lng: 6.959260 },
-        meta: {
-            title: "Кёльнская ратуша",
-            description: "Кёльнская ратуша: готическая башня, ренессансная лоджия ",
-            ogTitle: "Кёльнская ратуша: готическая башня, ренессансная лоджия",
-            ogDescription: "Кёльнская ратуша – старейшее административное здание Германии, сочетающее готическую башню, ренессансную лоджию и исторический зал Ганзы.",
-            keywords: "Кёльнская ратуша, Кёльн, исторический центр, средневековая архитектура, городская архитектура, административное здание, башни, достопримечательности Кёльна, городской совет, туристические маршруты, культурное наследие, туризм Германия",
-            ogImage: "https://our-travels.info/foto/Germany/nrw/koln/koln-city/rathaus-koeln/Rathaus-Köln.jpg"
-        }
-    },
+
     {
         id: "romanische_kirchen_altstadt_koln",
         name: "Романские церкви Кёльна",
@@ -313,7 +253,7 @@ const datas = [
         type: ["historical_building"], rating: "popular",
         path: "guerzenich_koln",
         countryPath: "germany", regionPath: "nrw", districtPath: "city", cityPath: "koln_city",
-        showMore: true, hiddenFromList: true,
+        // showMore: true, hiddenFromList: true,
         fotoCard: "Germany/nrw/koln/koln-city/altstadt/guerzenich_koln/001.jpg",
         location: "Кёльн, район Altstadt-Nord (округ Innenstadt), Германия",
         officialSite: [
@@ -375,7 +315,7 @@ const datas = [
         type: ["museum"], rating: "popular",
         path: "roemisch_germanisches_museum",
         countryPath: "germany", regionPath: "nrw", districtPath: "city", cityPath: "koln_city",
-        showMore: true, hiddenFromList: true,
+        // showMore: true, hiddenFromList: true,
         fotoCard: "Germany/nrw/koln/koln-city/roemisch-germanisches-museum/001.jpg",
         location: "Кёльн, район Altstadt-Nord (округ Innenstadt), Германия",
         officialSite: [
@@ -431,7 +371,7 @@ const datas = [
         type: ["museum"], rating: "popular",
         path: "farina_duftmuseum",
         countryPath: "germany", regionPath: "nrw", districtPath: "city", cityPath: "koln_city",
-        showMore: true, hiddenFromList: true,
+        // showMore: true, hiddenFromList: true,
         fotoCard: "Germany/nrw/koln/koln-city/farina-duftmuseum/001.jpg",
         location: "Кёльн, район Altstadt-Nord (округ Innenstadt), Германия",
         officialSite: [
@@ -485,7 +425,7 @@ const datas = [
         type: ["museum"], rating: "popular",
         path: "museum_ludwig",
         countryPath: "germany", regionPath: "nrw", districtPath: "city", cityPath: "koln_city",
-        showMore: true, hiddenFromList: true,
+        // showMore: true, hiddenFromList: true,
         fotoCard: "Germany/nrw/koln/koln-city/museum-ludwig/001.jpg",
         location: "Кёльн, район Altstadt-Nord (округ Innenstadt), Германия",
         officialSite: [
@@ -598,7 +538,7 @@ const datas = [
         type: ["museum"], rating: "popular",
         path: "miqua",
         countryPath: "germany", regionPath: "nrw", districtPath: "city", cityPath: "koln_city",
-        showMore: true, hiddenFromList: true,
+        // showMore: true, hiddenFromList: true,
         fotoCard: "Germany/nrw/koln/koln-city/miqua/001.jpg",
         location: "Кёльн, район Altstadt-Nord (округ Innenstadt), Германия",
         officialSite: [
@@ -674,7 +614,7 @@ const datas = [
         type: ["museum"], rating: "popular",
         path: "wallraf_richartz_museum",
         countryPath: "germany", regionPath: "nrw", districtPath: "city", cityPath: "koln_city",
-        showMore: true, hiddenFromList: true,
+        // showMore: true, hiddenFromList: true,
         fotoCard: "Germany/nrw/koln/koln-city/wallraf_richartz_museum/001.jpg",
         location: "Кёльн, район Altstadt-Süd (округ Innenstadt), Германия",
         officialSite: [
@@ -916,7 +856,7 @@ const datas = [
         type: ["museum"], rating: "popular",
         path: "dufthaus_4711_koln",
         countryPath: "germany", regionPath: "nrw", districtPath: "city", cityPath: "koln_city",
-        showMore: true, hiddenFromList: true,
+        // showMore: true, hiddenFromList: true,
         fotoCard: "Germany/nrw/koln/koln-city/dufthaus_4711/001.jpg",
         location: "Кёльн, район Altstadt-Nord (округ Innenstadt), Германия",
         officialSite: [
@@ -1038,7 +978,7 @@ const datas = [
         type: ["museum"], rating: "popular",
         path: "stadtmuseum_koln",
         countryPath: "germany", regionPath: "nrw", districtPath: "city", cityPath: "koln_city",
-        showMore: true, hiddenFromList: true,
+        // showMore: true, hiddenFromList: true,
         fotoCard: "Germany/nrw/koln/koln-city/stadtmuseum/001.jpg",
         location: "Кёльн, район Altstadt-Nord (округ Innenstadt), Германия",
         officialSite: [
@@ -1266,7 +1206,7 @@ const datas = [
         type: ["historical_building"], rating: "popular",
         path: "old_towers_koln",
         countryPath: "germany", regionPath: "nrw", districtPath: "city", cityPath: "koln_city",
-        hiddenFromList: true, showMore: true,
+        // hiddenFromList: true, showMore: true,
         mapOpen: "old_towers_koln",
         fotoCard: "Germany/nrw/koln/koln-city/altstadt/old_towers/001.jpg",
         location: "Кёльн, Германия",
@@ -1637,7 +1577,7 @@ const datas = [
         type: ["technical_structure"], rating: "popular",
         path: "koln_seilbahn",
         countryPath: "germany", regionPath: "nrw", districtPath: "city", cityPath: "koln_city",
-        fotoCard: "Germany/nrw/koln/koln-city/rheinpark_koln/003.jpg",
+        fotoCard: "Germany/nrw/koln/koln-city/koln_seilbahn/001.jpg",
         location: "Кёльн, район Riehl (округ Nippes), Германия",
         officialSite: [
             { bold: "Официальный сайт", link: "https://www.koelner-seilbahn.de/index.html" }
@@ -1684,7 +1624,7 @@ const datas = [
             ogTitle: "Cologne Cable Car – панорамный вид на Кёльн с высоты",
             ogDescription: "Канатная дорога Cologne Cable Car соединяет берега Рейна и открывает один из лучших панорамных видов на Кёльн, Кёльнский собор и Rheinpark. Популярная достопримечательность и символ города.",
             keywords: "Кёльнская канатная дорога, Кёльн, достопримечательность, канатная дорога, транспорт, панорамные виды, Рейн, туристические места, экскурсии, городской туризм, развлечения, Германия, фото, прогулки",
-            ogImage: "https://our-travels.info/foto/Germany/nrw/koln/koln-city/rheinpark_koln/003.jpg"
+            ogImage: "https://our-travels.info/foto/Germany/nrw/koln/koln-city/koln_seilbahn/001.jpg"
         }
     },
     {
@@ -1798,63 +1738,6 @@ const datas = [
             ogImage: "https://our-travels.info/foto/Germany/nrw/koln/koln-city/finkens_garten/001.jpg"
         }
     },
-    {
-        // id: "decksteiner_weiher_koln", // 713
-        // name: "Озеро Декштайнер Вайер",
-        // type: ["nature"], rating: "local",
-        // path: "decksteiner_weiher_koln",
-        // countryPath: "germany", regionPath: "nrw", districtPath: "city", cityPath: "koln_city",
-        // fotoCard: "Germany/nrw/koln/koln-city/decksteiner_weiher/001.jpg",
-        // loc: {
-        //     country: "Германия",
-        //     region: "Северный Рейн-Вестфалия",
-        //     district: "Город областного значения",
-        //     city: "Кёльн",
-        //     cityDistrict: "округ Lindenthal"
-        // },
-        // short_description: "Декштайнер Вайер (Decksteiner Weiher) – крупнейший искусственный парковый водоём Кёльна, расположенный в западной части города в зоне внешнего зелёного пояса. Озеро окружено широкими аллеями, лесными участками и прогулочными дорожками. Благодаря длинной форме водоёма, тенистым каштановым аллеям и спокойной атмосфере это одно из самых популярных мест отдыха жителей города. ",
-        // full_description: {
-        //     title: "Описание и история",
-        //     items: [
-        //         { bold: "Декштайнер Вайер (Decksteiner Weiher)", text: "– искусственное парковое озеро в западной части Кёльна, входящее в систему внешнего зелёного пояса города. Водоём имеет вытянутую форму и окружён широкими прогулочными аллеями, зелёными лужайками и тенистыми деревьями. Это популярное место для прогулок, пробежек и отдыха на природе." },
-        //         { text: "Особенность водоёма – прямой канал, соединяющий две части озера. Вдоль него проходит живописная каштановая аллея, которая создаёт один из самых узнаваемых пейзажей этого парка. В тёплое время года здесь можно увидеть лодки, уток и лебедей, а вокруг озера часто гуляют местные жители и туристы." },
-        //         { text: "Сегодня Декштайнер Вайер является важной рекреационной зоной города. Здесь можно гулять, кататься на велосипеде, устраивать пикники или просто наслаждаться природой недалеко от центра Кёльна." },
-        //         { bold: "История", text: "Декштайнер Вайер был создан в конце 1920-х годов во время масштабного проекта по формированию внешнего зелёного пояса Кёльна. После демонтажа старых прусских укреплений вокруг города освободились большие территории, которые было решено превратить в парки и зоны отдыха." },
-        //         { text: "Строительство озера проходило в 1927-1929 годах. Проект стал частью городской программы развития зелёных пространств, активно поддержанной тогдашним мэром Кёльна Конрадом Аденауэром. Водоём задумывался как декоративный и спортивный объект – его вытянутая форма позволяла использовать озеро для тренировок по гребле." },
-        //         { text: "Название озера происходит от старого поселения Декштайн (Deckstein), которое раньше находилось в этой местности. Сегодня этот район стал частью городской зелёной зоны и одним из любимых мест отдыха жителей Кёльна." }
-        //     ]
-        // },
-        // tickets_and_entry: {
-        //     title: "Практическая информация",
-        //     items: [
-        //         { bold: "Расположение: ", text: "западная часть Кёльна, районы Линденталь и Зюльц" },
-        //         { bold: "Длина прогулочного маршрута:", text: "около 6 км вокруг озера и канала" },
-        //         { bold: "Глубина: ", text: "примерно 1-1,6 м" },
-        //         { text: "Рядом с озером расположены ресторан Haus am See, лодочная станция и площадка для мини-гольфа. Неподалёку в парковой зоне находится исторический форт VI Deckstein – одно из сохранившихся прусских укреплений города." }
-        //     ]
-        // },
-        // interestingFacts: {
-        //     title: "Интересные факты",
-        //     items: [
-        //         { text: "Декштайнер Вайер считается крупнейшим искусственным парковым водоёмом Кёльна и одной из центральных зон отдыха западной части города." },
-        //         { text: "Озеро специально проектировали как тренировочную трассу для гребли. " },
-        //         { text: "В северной части водоёма находится небольшая островная зона, недоступная для посетителей." }
-        //     ]
-        // },
-        // construction_period: "1927-1929 годы ",
-        // architects: "Теодор Нуссбаум (городской архитектор и руководитель садового управления Кёльна) ",
-        // founder: "проект реализован в рамках городской программы развития зелёного пояса Кёльна по идеям Конрада Аденауэра и градостроительному плану Фрица Шумахера. ",
-        // coord: { lat: 50.91775, lng: 6.88815 },
-        // meta: {
-        //     title: "Озеро Декштайнер Вайер в Кёльне – крупнейшее парковое озеро города",
-        //     description: "Декштайнер Вайер – живописное искусственное озеро в зелёном поясе Кёльна. Популярное место для прогулок, спорта и отдыха на природе рядом с центром города.",
-        //     ogTitle: "Декштайнер Вайер – зелёное озеро Кёльна",
-        //     ogDescription: "Декштайнер Вайер – одно из самых красивых мест отдыха в Кёльне. Прогулочные аллеи, лодки на воде, зелёные парки и спокойная атмосфера всего в нескольких километрах от центра города.",
-        //     keywords: "Декштайнер Вайер, Кёльн, достопримечательность, озеро, пруд, прогулки, природа, отдых на свежем воздухе, семейный отдых, водоем, туризм Германия, рыбалка, парк, зелёная зона",
-        //     ogImage: "https://our-travels.info/foto/Germany/nrw/koln/koln-city/decksteiner_weiher/001.jpg"
-        // }
-    },
-
 
     // Köln округ
 

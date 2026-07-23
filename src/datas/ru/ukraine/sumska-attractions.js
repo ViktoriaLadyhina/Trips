@@ -115,7 +115,7 @@ const datas = [
         path: "sumy_altanka",
         countryPath: "ukraine", regionPath: "sumska", districtPath: "city", cityPath: "sumy",
         hiddenFromList: true, showMore: true,
-        fotoCard: "Ukraine/sumska/sumy-city/pokrovska_square/altanka/009.jpg",
+        fotoCard: "Ukraine/sumska/sumy-city/pokrovska_square/altanka/001.jpg",
         location: "Сумы, Украина",
         address: [{ bold: "Адрес:", text: " Покровская площадь" }],
         construction_period: "примерно в начале XX века – около 1900–1905 годов",
@@ -140,7 +140,7 @@ const datas = [
             ogTitle: "Альтанка – визитная карточка Сум",
             ogDescription: "Альтанка – беседка по праву считается одной из главных архитектурных достопримечательностей города",
             keywords: "Сумы, Украина, достопримечательности, архитектура Сум, беседка, альтанка",
-            ogImage: "https://our-travels.info/foto/Ukraine/sumska/sumy-city/pokrovska_square/altanka/009.jpg"
+            ogImage: "https://our-travels.info/foto/Ukraine/sumska/sumy-city/pokrovska_square/altanka/001.jpg"
         }
     }
 ]
