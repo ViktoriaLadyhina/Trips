@@ -127,6 +127,8 @@ const datas =
     frechen_koenigsdorf: { id: 670, parent: 174, ru: 'Кёнигсдорф', de: 'Königsdorf', uk: 'Кьонігсдорф' },
     frechen_grefrath: { id: 671, parent: 174, ru: 'Грефрат', de: 'Grefrath', uk: 'Грефрат' },
     frechen_huecheln: { id: 672, parent: 174, ru: 'Хюхельн', de: 'Hücheln', uk: 'Хюхельн' },
+
+    sumy_zarichnyi: { id: 723, parent: 125, ru: 'Заречный район', de: 'Zaritschnyj-Bezirk', uk: 'Зарічний район' },
   },
   attractions: {
     // arnsberg округ
@@ -326,10 +328,10 @@ const datas =
     // Ukraine
     // Sumska oblast
     // Sumy city
-    sumy_spaso_preobrazhensky: { ru: 'Спасо-Преображенский собор', de: 'Spaso-Preobraschenski-Kathedrale', uk: 'Спасо-Преображенський собор' },
-    pokrovska_square_sumy: { ru: 'Покровская площадь', de: 'Pokrowska-Platz', uk: 'Покровська площа' },
-    sumy_altanka: { ru: 'Альтанка', de: 'Der Pavillon', uk: 'Альтанка' },
-    onatsky_museum_sumy: { ru: 'Сумской областной художественный музей им. Н. Онацкого', de: 'Oblastliches Kunstmuseum Sumy N. Onatsky', uk: 'Сумський обласний художній музей ім. Н. Онацького' },
+    sumy_spaso_preobrazhensky: { id: 726, ru: 'Спасо-Преображенский собор', de: 'Spaso-Preobraschenski-Kathedrale', uk: 'Спасо-Преображенський собор' },
+    pokrovska_square_sumy: { id: 722, ru: 'Покровская площадь', de: 'Pokrowska-Platz', uk: 'Покровська площа' },
+    sumy_altanka: { id: 724, ru: 'Альтанка', de: 'Der Pavillon', uk: 'Альтанка' },
+    onatsky_museum_sumy: { id: 725, ru: 'Сумской областной художественный музей им. Н. Онацкого', de: 'Kunstmuseum der Oblast Sumy N. Onazkyj', uk: 'Сумський обласний художній музей ім. Н. Онацького' },
 
     Unesco_Title: { ru: "Достопримечательности ЮНЕСКО", uk: "Пам’ятки ЮНЕСКО", de: "UNESCO-Welterbestätten" }
   },

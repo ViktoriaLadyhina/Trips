@@ -10,7 +10,6 @@ const attractionTypes = [
   { value: 'amusement_park', ru: 'Парки развлечений', uk: 'Парки розваг', de: 'Freizeitparks' },
   { value: 'historical_building', ru: 'Исторические сооружения', uk: ' Історичні споруди', de: 'Historische Bauwerke' },
   { value: 'historical_area', ru: 'Исторические районы', uk: 'Історичні райони', de: 'Historische Viertel' },
-  { value: 'landmark', ru: 'Знаковые места', uk: 'Знакові місця', de: 'Wahrzeichen' },
   { value: 'technical_structure', ru: 'Технические сооружения', uk: 'Технічні споруди', de: 'Technische Bauwerke' },
   { value: 'nature', ru: 'Природа', uk: 'Природа', de: 'Natur' },
   { value: 'monument_or_fountain', ru: 'Памятники и фонтаны', uk: 'Пам’ятники та фонтани', de: 'Denkmäler und Brunnen' },

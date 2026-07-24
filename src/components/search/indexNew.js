@@ -23,13 +23,6 @@ const loaders = {
         luxembourg_canton: {
             attractions: () => import('../../datas/luxembourg/luxembourg_canton-attractions.js').then(m => m.default),
         }
-    },
-
-    ukraine: {
-        sumska: {
-            events: () => import('../../datas/ukraine/sumska-events.js').then(m => m.default),
-            attractions: () => import('../../datas/ukraine/sumska-attractions.js').then(m => m.default),
-        }
     }
 }
 
@@ -56,13 +49,7 @@ const searchIndexNew = {
     luxembourg_canton: {
       attractions: { type: "attraction", loaders: loaders.luxembourg.luxembourg_canton.attractions },
     }
-  },
-  ukraine: {
-    sumska: {
-      events: { type: "event", loaders: loaders.ukraine.sumska.events  },
-      attractions: { type: "attraction", loaders: loaders.ukraine.sumska.attractions },
-    }
-  },
+  }
 
 };
 

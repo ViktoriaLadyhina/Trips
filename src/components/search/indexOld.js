@@ -7,12 +7,7 @@ const loaders = {
             rheinland_pfalz: {
                 attractions: () => import('../../datas/de/germany/rheinland_pfalz-attractions.js').then(m => m.default),
             },
-        },
-        ukraine: {
-            sumska: {
-                attractions: () => import('../../datas/de/ukraine/sumska-attractions.js').then(m => m.default),
-            },
-        },
+        }
     },
     ru: {
         germany: {
@@ -22,12 +17,7 @@ const loaders = {
             rheinland_pfalz: {
                 attractions: () => import('../../datas/ru/germany/rheinland_pfalz-attractions.js').then(m => m.default),
             },
-        },
-        ukraine: {
-            sumska: {
-                attractions: () => import('../../datas/ru/ukraine/sumska-attractions.js').then(m => m.default),
-            },
-        },
+        }
     },
     uk: {
         germany: {
@@ -37,12 +27,7 @@ const loaders = {
             rheinland_pfalz: {
                 attractions: () => import('../../datas/uk/germany/rheinland_pfalz-attractions.js').then(m => m.default),
             },
-        },
-        ukraine: {
-            sumska: {
-                attractions: () => import('../../datas/uk/ukraine/sumska-attractions.js').then(m => m.default),
-            },
-        },
+        }
     },
 }
 
@@ -55,12 +40,7 @@ const searchIndexOld = {
       rheinland_pfalz: {
         attractions: { type: "attraction", loaders: loaders.de.germany.rheinland_pfalz.attractions },
       },
-    },
-    ukraine: {  
-      sumska: {
-        attractions: { type: "attraction", loaders: loaders.de.ukraine.sumska.attractions },
-      },
-    },
+    }
   },
 
   ru: {
@@ -71,12 +51,7 @@ const searchIndexOld = {
       rheinland_pfalz: {
         attractions: { type: "attraction", loaders: loaders.ru.germany.rheinland_pfalz.attractions },
       },
-    },
-    ukraine: {
-      sumska: {
-        attractions: { type: "attraction", loaders: loaders.ru.ukraine.sumska.attractions },
-      },
-    },
+    }
   },
 
   uk: {
@@ -87,12 +62,7 @@ const searchIndexOld = {
       rheinland_pfalz: {
         attractions: { type: "attraction", loaders: loaders.uk.germany.rheinland_pfalz.attractions },
       },
-    },
-    ukraine: {
-      sumska: {
-        attractions: { type: "attraction", loaders: loaders.uk.ukraine.sumska.attractions },
-      },
-    },
+    }
   },
 };
 
