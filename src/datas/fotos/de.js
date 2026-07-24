@@ -171,11 +171,6 @@ export const Fotos = {
         { path: "Germany/nrw/koln/koln-city/altstadt/old_towers/005.jpg", title: { ru: "Южный фрагмент стены (Ulrepforte) (фото взято с интернета)", uk: "Південний фрагмент стіни (Ulrepforte) (фото взято з Інтернету)", de: "Ulrepforte (Foto aus dem Internet)" } },
         { path: "Germany/nrw/koln/koln-city/altstadt/old_towers/006.jpg", title: { ru: "Башня на юге у Рейна (Bayenturm) (фото взято с интернета)", uk: "Башта на півдні біля Рейну (Bayenturm) (фото взято з Інтернету)", de: "Bayenturm (Foto aus dem Internet)" } },
       ],
-      fischmarkt_koln: [
-        { path: "Germany/nrw/koln/koln-city/altstadt/fischmarkt/001.jpg", title: { ru: "Фишмаркт, 2026", uk: "Фішмаркт, 2026", de: "Fischmarkt, 2026" } },
-        { path: "Germany/nrw/koln/koln-city/altstadt/fischmarkt/002.jpg", title: { ru: "Фишмаркт, 2026", uk: "Фішмаркт, 2026", de: "Fischmarkt, 2026" } },
-        { path: "Germany/nrw/koln/koln-city/altstadt/fischmarkt/003.jpg", title: { ru: "Фишмаркт, 2026", uk: "Фішмаркт, 2026", de: "Fischmarkt, 2026" } },
-      ],
       st_gereon_koln: [
         { path: "Germany/nrw/koln/koln-city/altstadt/romanische_kirchen/st_gereon/001.jpg", title: { ru: "Церковь Святого Гереона (фото взято с интернета)", uk: "Церква Святого Герєона (фото взято з Інтернету)", de: "St. Gereon Kirche (Foto aus dem Internet)" } },
       ],

@@ -12,7 +12,6 @@ const datas = [
     //     subObjects: ["miqua", "wallraf_richartz_museum", "roemisch_germanisches_museum", "farina_duftmuseum", "museum_ludwig", "stadtmuseum_koln", "dufthaus_4711_koln", "st_maria_himmelfahrt_koln", "old_towers_koln", "fischmarkt_koln", "gross_st_martin_koln", "st_maria_im_kapitol_koln", "st_kunibert_koln"],
     //     short_description_subObjects: {
     //         items: [
-    //             { bold: "Фішмаркт", text: "– яскрава історична площа Старого міста Кельна з різнокольоровими будинками та атмосферою середньовічного рибного ринку." },
     //             { bold: "Будинок одеколону 4711", text: "– історична будівля у пішохідній зоні навколо Hohe Straße та Schildergasse." },
     //             { bold: "Великий Святий Мартин", text: "– одна з найбільш впізнаваних романських церков Кельна з масивною вежею-триконхою, що піднімається над набережною Рейну. Символ силуету Старого міста." },
     //             { bold: "Церква Святої Марії в Капітолії", text: "– найбільша романська церква Кельна, збудована на місці давньоримського храму. Вражаючий приклад романської архітектури з триконховим планом та історичною криптою, що зберігає сліди античного минулого." },

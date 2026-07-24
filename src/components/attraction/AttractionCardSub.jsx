@@ -5,11 +5,11 @@ import { Link } from 'react-router';
 
 const BASE_PHOTO_URL = import.meta.env.VITE_BASE_PHOTO_URL;
 
-const more = { ru: "Подробнее", ua: "Докладніше", de: "Weitere Details" };
-const location = { ru: "Месторасположение", ua: "Місце розташування", de: "Standort" };
-const ratingLabel = { ru: "Рейтинг", ua: "Рейтинг", de: "Bewertung" };
-const topOptionLabel = { top: { ru: "Топовый", ua: "Топовий", de: "Top" }, popular: { ru: "Популярный", ua: "Популярний", de: "Beliebt" }, local: { ru: "Локальный", ua: "Локальний", de: "Lokal" } };
-const noteLabel = { partial: { ru: "Частично сохранилось", ua: "Частково збережено", de: "Teilweise erhalten" }, lost: { ru: "Утрачено", ua: "Втрачено", de: "Verloren" } };
+const more = { ru: "Подробнее", uk: "Докладніше", de: "Weitere Details" };
+const location = { ru: "Месторасположение", uk: "Місце розташування", de: "Standort" };
+const ratingLabel = { ru: "Рейтинг", uk: "Рейтинг", de: "Bewertung" };
+const topOptionLabel = { top: { ru: "Топовый", uk: "Топовий", de: "Top" }, popular: { ru: "Популярный", uk: "Популярний", de: "Beliebt" }, local: { ru: "Локальный", uk: "Локальний", de: "Lokal" } };
+const noteLabel = { partial: { ru: "Частично сохранилось", uk: "Частково збережено", de: "Teilweise erhalten" }, lost: { ru: "Утрачено", uk: "Втрачено", de: "Verloren" } };
 
 
 const AttractionCardSub = ({ attr, lang }) => {
@@ -30,33 +30,32 @@ const AttractionCardSub = ({ attr, lang }) => {
             </div>
 
             <div className='attrCard__desc'>
-{attr.fotoCard && (
-    <div className='attrCard__desc-foto'>
-        <img
-            src={`${BASE_PHOTO_URL}${
-                typeof attr.fotoCard === 'string'
-                    ? attr.fotoCard
-                    : attr.fotoCard.path
-            }`}
-            alt={
-                typeof attr.fotoCard === 'object'
-                    ? attr.fotoCard.title?.[lang] || attr.name
-                    : attr.name
-            }
-        />
-    </div>
-)}
+                {attr.fotoCard && (
+                    <div className='attrCard__desc-foto'>
+                        <img
+                            src={`${BASE_PHOTO_URL}${typeof attr.fotoCard === 'string'
+                                    ? attr.fotoCard
+                                    : attr.fotoCard.path
+                                }`}
+                            alt={
+                                typeof attr.fotoCard === 'object'
+                                    ? attr.fotoCard.title?.[lang] || attr.name
+                                    : attr.name
+                            }
+                        />
+                    </div>
+                )}
                 <div
                     className='attrCard__desc-info'>
-{attr.short_description && (
-    <TextBlock
-        block={{ block_key: 'short_description' }}
-        langData={{
-            short_description: attr.short_description
-        }}
-        classPrefix="attrCard__desc-info-text"
-    />
-)}
+                    {attr.short_description && (
+                        <TextBlock
+                            block={{ block_key: 'short_description' }}
+                            langData={{
+                                short_description: attr.short_description
+                            }}
+                            classPrefix="attrCard__desc-info-text"
+                        />
+                    )}
                     {attr.short_description2 && (
                         <div className='attrCard__desc-info-text'>{attr.short_description2}</div>
                     )}
@@ -88,15 +87,15 @@ const AttractionCardSub = ({ attr, lang }) => {
                     {attr.loc && (
                         <div className='attrCard__desc-info-text'>{location[lang]}: {attr.loc?.city} ({attr.loc?.cityDistrict}), {attr.loc?.country}</div>
                     )}
-{(attr.showMore || attr.id) && (
-    <div className='attrCard__desc-info-more'>
-        <Link
-            to={`/${attr.countryPath}/${attr.regionPath}/${attr.districtPath}/${attr.cityPath}/attractions/${attr.slug || attr.path}`}
-        >
-            {more[lang]}
-        </Link>
-    </div>
-)}
+                    {(attr.showMore || attr.id) && (
+                        <div className='attrCard__desc-info-more'>
+                            <Link
+                                to={`/${attr.countryPath}/${attr.regionPath}/${attr.districtPath}/${attr.cityPath}/attractions/${attr.slug || attr.path}`}
+                            >
+                                {more[lang]}
+                            </Link>
+                        </div>
+                    )}
                 </div>
             </div>
         </div>

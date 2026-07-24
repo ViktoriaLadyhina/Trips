@@ -226,7 +226,11 @@ const Map = () => {
                           <li><Link to="/germany/nrw/city/koln_city/attractions/altstadt_koln">{t.attractions.altstadt_koln[lang]}</Link>
                             <ul>
                               <li><Link to="/germany/nrw/city/koln_city/attractions/cologne_cathedral">{t.attractions.cologne_cathedral[lang]}</Link></li>
-                              <li><Link to="/germany/nrw/city/koln_city/attractions/fischmarkt_koln">{t.attractions.fischmarkt_koln[lang]}</Link></li>
+                              <li><Link to="/germany/nrw/city/koln_city/attractions/fischmarkt_koln">{t.attractions.fischmarkt_koln[lang]}</Link>
+                              <ul>
+                              <li><Link to="/germany/nrw/city/koln_city/attractions/fischweiberbrunnen_koln">{t.attractions.fischweiberbrunnen_koln[lang]}</Link></li>
+                              </ul>
+                              </li>
                               <li><Link to="/germany/nrw/city/koln_city/attractions/rathaus_koln">{t.attractions.rathaus_koln[lang]}</Link></li>
                               <li><Link to="/germany/nrw/city/koln_city/attractions/st_maria_himmelfahrt_koln">{t.attractions.st_maria_himmelfahrt_koln[lang]}</Link></li>
                               <li><Link to="/germany/nrw/city/koln_city/attractions/guerzenich_koln">{t.attractions.guerzenich_koln[lang]}</Link></li>

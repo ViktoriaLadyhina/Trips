@@ -218,7 +218,7 @@ const datas =
     severinstorburg_koln: { ru: 'Южные ворота (Severinstorburg)', de: 'Severinstorburg (Südtor)', uk: 'Південні ворота (Severinstorburg)' },
     ulrepforte_koln: { ru: 'Южные малые ворота (Ulrepforte)', de: 'Ulrepforte (kleines Südtor)', uk: 'Південні малі ворота (Ulrepforte)' },
     bayenturm_koln: { ru: 'Юго-восточная башня у Рейна (Bayenturm)', de: 'Bayenturm (Südostturm am Rhein)', uk: 'Південно-східна вежа біля Рейну (Bayenturm)' },
-    fischmarkt_koln: { ru: 'Фишмаркт', de: 'Fischmarkt', uk: 'Фішмаркт' },
+    fischmarkt_koln: { id: 720, ru: 'Фишмаркт', de: 'Fischmarkt', uk: 'Фішмаркт' },
     st_gereon_koln: { ru: 'Церковь Святого Гереона', de: 'St. Gereon Kirche', uk: 'Церква Святого Герєона' },
     prussian_fortress_system_koln: { ru: 'Прусская крепостная система Кёльна', de: 'Preußisches Festungssystem Köln', uk: 'Прусська фортифікаційна система Кельна' },
     fort_I_inner_koln: { ru: 'Форт I (внутреннее крепостное кольцо)', de: 'Fort I (innerer Festungsring)', uk: 'Форт I (внутрішнє фортифікаційне кільце)' },
@@ -235,6 +235,7 @@ const datas =
     fort_XI_outer_koln: { ru: 'Форт XI (внешнее крепостное кольцо)', de: 'Fort XI (äußerer Festungsring)', uk: 'Форт XI (зовнішнє фортифікаційне кільце)' },
     st_kunibert_koln: { ru: 'Базилика Святого Куниберта', de: 'Basilika St. Kunibert', uk: 'Базиліка Святого Куніберта' },
     st_aposteln_koln: { ru: 'Церковь Святого Апостола', de: 'St. Aposteln', uk: 'Церква Святого Апостола' },
+    fischweiberbrunnen_koln: { id: 721, ru: 'Фонтан рыбных торговок', de: 'Fischweiberbrunnen', uk: 'Фонтан рибних торговок' },
 
     // Aachen Kreis
     // Monschau
