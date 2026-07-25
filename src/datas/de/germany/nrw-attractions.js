@@ -6,7 +6,6 @@ const datas = [
     //     subObjects: ["miqua", "wallraf_richartz_museum", "roemisch_germanisches_museum", "farina_duftmuseum", "museum_ludwig", "stadtmuseum_koln", "dufthaus_4711_koln", "st_maria_himmelfahrt_koln", "old_towers_koln", "fischmarkt_koln", "gross_st_martin_koln", "st_maria_im_kapitol_koln", "st_kunibert_koln"],
     //     short_description_subObjects: {
     //         items: [
-    //             { bold: "Groß St. Martin", text: "– eine der bekanntesten romanischen Kirchen Kölns mit einem massiven Turm-Trikonchos, der über der Rheinpromenade aufragt. Ein Symbol des Silhouetts der Altstadt." },
     //             { bold: "St. Maria im Kapitol", text: "– die größte romanische Kirche Kölns, erbaut auf dem Gelände eines antiken römischen Tempels. Ein herausragendes Beispiel romanischer Architektur mit Trikonchos-Plan und historischer Krypta, die Spuren der antiken Vergangenheit bewahrt." },
     //             { bold: "St. Mariä Himmelfahrt", text: "– die wichtigste Barockkirche Kölns aus dem 17. Jahrhundert, eine ehemalige Jesuitenkirche in der Nähe des Hauptbahnhofs und des Kölner Doms." },
     //             { bold: "Basilika St. Kunibert in Köln", text: "– eine romanische Kirche mit massiven Türmen, strengen Formen und ruhiger Atmosphäre, gelegen im nördlichen Teil der Altstadt in der Nähe des Rheins." },
@@ -22,105 +21,25 @@ const datas = [
     //     }
     // },
 
-    {
-        id: "romanische_kirchen_altstadt_koln",
-        name: "Romanische Kirchen von Köln",
-        type: ["cathedral"], rating: "popular",
-        path: "romanische_kirchen_altstadt_koln",
-        countryPath: "germany", regionPath: "nrw", districtPath: "city", cityPath: "koln_city",
-        subObjects: ["gross_st_martin_koln", "st_maria_im_kapitol_koln", "st_gereon_koln", "st_kunibert_koln", "st_aposteln_koln"],
-        mapOpen: "romanische_kirchen_altstadt_koln",
-        short_description_subObjects: {
-            text: "Auf unserer Website werden aus dieser Liste folgende Kirchen beschrieben:",
-            items: [
-                { bold: "Groß St. Martin", text: "– eine der bekanntesten romanischen Kirchen Kölns mit einem massiven Turm-Trikonchos, der über der Rheinpromenade aufragt. Ein Symbol des Silhouetts der Altstadt." },
-                { bold: "St. Maria im Kapitol", text: "– die größte romanische Kirche Kölns, erbaut auf dem Gelände eines antiken römischen Tempels. Ein herausragendes Beispiel romanischer Architektur mit Trikonchos-Plan und historischer Krypta, die Spuren der antiken Vergangenheit bewahrt." },
-                { bold: "St. Gereon Kirche", text: "– eine romanische Kirche mit zwölfeckiger Kuppel, alten Glasfenstern und reichhaltigem historischen Interieur." },
-                { bold: "Basilika St. Aposteln", text: "– eine der 12 romanischen Kirchen Kölns, bekannt für ihren dreikonchigen Chor, ihre mittelalterliche Architektur und ihre Lage am Neumarkt im Stadtzentrum." },
-                { bold: "Basilika St. Kunibert", text: "– eine romanische Kirche mit massiven Türmen, strengen Formen und ruhiger Atmosphäre, gelegen im nördlichen Teil der Altstadt in der Nähe des Rheins." },
-            ]
-        },
-        fotoCard: "Germany/nrw/koln/koln-city/altstadt/romanische_kirchen/001.jpg",
-        location: "Köln, Deutschland",
-        officialSite: [{ bold: "Offizielle Webseite", link: "https://romanische-kirchen-koeln.de/" }],
-        short_description: "Die Liste der 12 größten romanischen Kirchen der Altstadt von Köln – bedeutende Denkmäler mittelalterlicher Architektur, die die Vielfalt des romanischen Stils und die historische Entwicklung der Stadt demonstrieren.",
-        full_description: {
-            title: "Beschreibung und Geschichte",
-            items: [
-                { bold: "Die Liste der 12 romanischen Kirchen Kölns", text: "ist kein offizielles staatliches Dokument, hat sich jedoch als anerkannter Leitfaden unter Kunsthistorikern, Architekten und Reiseleitern etabliert. Sie vereint die größten romanischen Kirchen im historischen Zentrum der Stadt, die herausragende Baudenkmäler des XI.–XIII. Jahrhunderts darstellen und die Entwicklung des mittelalterlichen Köln widerspiegeln." },
-                { text: "Die Idee, genau zwölf Kirchen hervorzuheben, entstand im 20. Jahrhundert bei der Erstellung von Reiseführern und wissenschaftlichen Veröffentlichungen zum romanischen Erbe Kölns. Experten wollten Touristen und Forschern ein Ensemble von Baudenkmälern zeigen, das verschiedene Aspekte der romanischen Architektur illustriert: Trikonchos-Plan, massive Türme, Holz- und Steinschnitzereien, historische Krypten." },
-                { text: "Die Liste dient als praktisches System zur Erkundung des historischen Zentrums: Besucher können die Altstadt zu Fuß durchqueren und alle wichtigen romanischen Kirchen sehen, von denen jede einzigartig in Stil, Größe und künstlerischen Relikten ist. Dank dieser Liste erhalten Touristen die Möglichkeit, die architektonische Vielfalt und die historische Bedeutung Kölns als Stadt im Rheinland im Mittelalter zu schätzen." }
-            ]
-        },
-        meta: {
-            title: "12 romanische Kirchen der Altstadt von Köln – Geschichte und Beschreibung",
-            description: "Liste der größten romanischen Kirchen Kölns in der Altstadt. Architektur, historische Fakten und kulturelles Erbe der Stadt.",
-            ogTitle: "Romanische Kirchen der Altstadt von Köln",
-            ogDescription: "Entdecken Sie die 12 größten romanischen Kirchen Kölns, ihre Architektur, Geschichte und Relikte aus dem XI.–XIII. Jahrhundert.",
-            keywords: "romanische Kirchen, Köln, Altstadt, religiöse Architektur, mittelalterliche Kirchen, Architektur Deutschland, historische Kirchen, Kulturerbe, Basiliken, Klöster, Sehenswürdigkeiten Köln, Tourismus Deutschland, Kirchenarchitektur",
-            ogImage: "https://our-travels.info/foto/Germany/nrw/koln/koln-city/altstadt/romanische_kirchen/001.jpg"
-        }
-    },
-    {
-        id: "gross_st_martin_koln",
-        name: "Groß St. Martin",
-        type: ["cathedral"], rating: "popular",
-        path: "gross_st_martin_koln",
-        countryPath: "germany", regionPath: "nrw", districtPath: "city", cityPath: "koln_city",
-        hiddenFromList: true, showMore: true,
-        map: "romanische_kirchen_altstadt_koln",
-        fotoCard: "Germany/nrw/koln/koln-city/altstadt/romanische_kirchen/gross_st_martin/001.jpg",
-        location: "Köln, Stadtteil Altstadt-Nord (Stadtbezirk Innenstadt), Deutschland",
-        officialSite: [
-            { bold: "Offizielle Webseite", link: "https://www.romanische-kirchen-koeln.de/willkommen/willkommen" }
-        ],
-        short_description: "Die romanische Kirche aus dem 12. Jahrhundert befindet sich im historischen Zentrum in der Nähe des Flusses und wurde im charakteristischen Stil der Rheinromanik erbaut. Besonderes Merkmal ist der mächtige zentrale Turm und die drei halbrunden Apsiden, die eine seltene architektonische Komposition bilden. Heute ist die Kirche in Betrieb und für Besucher geöffnet.",
-        full_description: {
-            title: "Beschreibung und Geschichte",
-            items: [
-                { bold: "Groß St. Martin", text: "– eine der markantesten romanischen Kirchen Kölns, die die erkennbare Silhouette des historischen Stadtzentrums prägt. Die Kirche liegt in der Nähe des Rheinufers und erhebt sich über die umgebende Bebauung mit einem mächtigen Turm mit vier Ecktürmchen. Dank ihrer Lage und ausdrucksstarken Architektur ist die Kirche ein wichtiges visuelles Wahrzeichen der Altstadt." },
-                { text: "Die Geschichte dieses Ortes reicht bis in die römische Epoche zurück. In der Antike befand sich hier eine Insel im Rheinarm, auf der Lagerhäuser und Hafenanlagen standen. Archäologische Ausgrabungen bestätigten die Existenz massiver steinerner Fundamente römischer Bauwerke, von denen ein Teil später als Basis für das mittelalterliche Kloster genutzt wurde." },
-                { text: "Im 10. Jahrhundert gründete Erzbischof Bruno der Große hier ein Benediktinerkloster, das zum religiösen und wirtschaftlichen Zentrum des Bezirks wurde. Mit der Zeit verfielen die alten Gebäude, und im 12. Jahrhundert begann der Bau einer neuen monumentalen Kirche im romanischen Stil. Die Hauptbauarbeiten dauerten bis etwa zur Mitte des 13. Jahrhunderts und prägten das Aussehen, das im Wesentlichen bis heute erhalten geblieben ist." },
-                { text: "Architektonisch stellt die Kirche ein typisches Beispiel der Rheinromanik mit einer Trikonche dar – einer seltenen Bauform, bei der drei halbrunde Apsiden eine kleeblattartige Form im östlichen Teil des Gebäudes bilden. Der zentrale Turm erhebt sich über dem Schnittpunkt der Langhäuser und dient seit vielen Jahrhunderten als Orientierungspunkt für die Bewohner und Reisenden." },
-                { text: "Während des Zweiten Weltkriegs wurde die Kirche durch Bomben fast vollständig zerstört. Von dem Gebäude blieben nur Teile der Wände und Fundamente erhalten. Lange Zeit standen die Ruinen als Mahnmal für den Krieg, und erst in der zweiten Hälfte des 20. Jahrhunderts begann eine umfassende Restaurierung. Die vollständige Wiederherstellung wurde in den 1980er Jahren abgeschlossen, wobei die historischen Formen maximal erhalten wurden." },
-                { text: "Heute dient die Kirche wieder als Pfarrkirche und ist gleichzeitig ein wichtiges historisches Denkmal. Sie gehört zu den zwölf großen romanischen Kirchen Kölns und gilt als einer der wichtigsten Punkte auf der touristischen Route durch die Altstadt, da sie geistliche Bedeutung, architektonischen Wert und jahrhundertealte Geschichte der Stadt vereint." }
-            ]
-        },
-        tickets_and_entry: {
-            title: "Praktische Informationen",
-            items: [
-                { bold: "Adresse:", text: "An Groß St. Martin 9–11, 50667 Köln, Deutschland" },
-                { bold: "Konfession:", text: "römisch-katholische Kirche" },
-            ]
-        },
-        interestingFacts: {
-            title: "Interessante Fakten",
-            items: [
-                { text: "Steht auf dem Gelände ehemaliger römischer Hafenanlagen." },
-                { text: "Im Mittelalter war das Kloster eines der reichsten in der Region." },
-                { text: "Der Turm dient als wichtiger Orientierungspunkt in der Stadtansicht." },
-                { text: "Nach dem Krieg stand die Kirche jahrzehntelang in Trümmern und wurde zum Symbol für den Wiederaufbau Kölns." }
-            ]
-        },
-        construction_period: "Kloster – ca. 960 n. Chr., heutige Kirche – 12.–13. Jahrhundert",
-        founder: "Das Kloster wurde auf Initiative des Erzbischofs von Köln, Bruno der Große, gegründet.",
-        coord: { lat: 50.93858, lng: 6.96127 },
-        meta: {
-            title: "Groß St. Martin in Köln – Geschichte, Architektur und Fakten",
-            description: "Groß St. Martin – romanische Kirche in der Altstadt von Köln am Rhein. Geschichte, Architektur, Fakten und Besuchsinformationen.",
-            ogTitle: "Groß St. Martin – Symbol der romanischen Kirchen Kölns",
-            ogDescription: "Erfahren Sie die Geschichte einer der markantesten Kirchen Kölns mit mächtigem Turm und mittelalterlicher Vergangenheit.",
-            keywords: "Kirche, romanische Architektur, Köln, Altstadt, religiöse Architektur, historisches Gebäude, Sehenswürdigkeiten Deutschland, Turm, Kloster, Mittelalter, Architektur, Tourismus, Stadtpanorama",
-            ogImage: "https://our-travels.info/foto/Germany/nrw/koln/koln-city/altstadt/romanische_kirchen/gross_st_martin/001.jpg"
-        }
-    },
+    // {
+    //     id: "romanische_kirchen_altstadt_koln",
+    //     name: "Romanische Kirchen von Köln",
+    //     subObjects: ["gross_st_martin_koln", "st_maria_im_kapitol_koln", "st_gereon_koln", "st_kunibert_koln", "st_aposteln_koln"],
+    //     short_description_subObjects: {
+    //         items: [
+    //             { bold: "St. Maria im Kapitol", text: "– die größte romanische Kirche Kölns, erbaut auf dem Gelände eines antiken römischen Tempels. Ein herausragendes Beispiel romanischer Architektur mit Trikonchos-Plan und historischer Krypta, die Spuren der antiken Vergangenheit bewahrt." },
+    //             { bold: "St. Gereon Kirche", text: "– eine romanische Kirche mit zwölfeckiger Kuppel, alten Glasfenstern und reichhaltigem historischen Interieur." },
+    //             { bold: "Basilika St. Aposteln", text: "– eine der 12 romanischen Kirchen Kölns, bekannt für ihren dreikonchigen Chor, ihre mittelalterliche Architektur und ihre Lage am Neumarkt im Stadtzentrum." },
+    //             { bold: "Basilika St. Kunibert", text: "– eine romanische Kirche mit massiven Türmen, strengen Formen und ruhiger Atmosphäre, gelegen im nördlichen Teil der Altstadt in der Nähe des Rheins." },
+    //         ]
+    //     },
     {
         id: "st_maria_im_kapitol_koln",
         name: "Kirche St. Maria im Kapitol",
         type: ["cathedral"], rating: "popular",
         path: "st_maria_im_kapitol_koln",
         countryPath: "germany", regionPath: "nrw", districtPath: "city", cityPath: "koln_city",
-        hiddenFromList: true, showMore: true,
+        // hiddenFromList: true, showMore: true,
         map: "romanische_kirchen_altstadt_koln",
         fotoCard: "Germany/nrw/koln/koln-city/altstadt/romanische_kirchen/stMariaImKapitol/001.jpg",
         location: "Köln, Stadtteil Altstadt-Süd (Stadtbezirk Innenstadt), Deutschland",

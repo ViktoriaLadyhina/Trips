@@ -54,7 +54,6 @@ const [filters, setFilters] = useState({
 
     const base = attractionsTitle[lang];
 
-
     //фильтрация
     const baseFiltered = useAttractionFilters({
         attractions,
@@ -79,13 +78,17 @@ const [filters, setFilters] = useState({
     return ids;
 }, [attractions]);
 
-   const listAttractions = useMemo(() => {
+  const listAttractions = useMemo(() => {
     return baseFiltered.filter(attr => {
 
         const hidden =
             attr.hiddenFromList || hiddenFromListIds.has(attr.id);
 
-        if (hidden && filters.unesco !== 'yes') {
+        const specificFilterSelected =
+            filters.type !== 'all' ||
+            filters.unesco === 'yes';
+
+        if (hidden && !specificFilterSelected) {
             return false;
         }
 
@@ -94,6 +97,7 @@ const [filters, setFilters] = useState({
 }, [
     baseFiltered,
     hiddenFromListIds,
+    filters.type,
     filters.unesco
 ]);
 

@@ -85,7 +85,7 @@ const AttractionCardSub = ({ attr, lang }) => {
                         <div className='attrCard__desc-info-text'>{location[lang]}: {attr.location}</div>
                     )}
                     {attr.loc && (
-                        <div className='attrCard__desc-info-text'>{location[lang]}: {attr.loc?.city} ({attr.loc?.cityDistrict}), {attr.loc?.country}</div>
+                        <div className='attrCard__desc-info-text'>{location[lang]}: {attr.loc?.cityDistrict} </div>
                     )}
                     {(attr.showMore || attr.id) && (
                         <div className='attrCard__desc-info-more'>

@@ -11,10 +11,6 @@ export const Fotos = {
 
     // округ Кёльн
     koln_city: {
-      gross_st_martin_koln: [
-        { path: "Germany/nrw/koln/koln-city/altstadt/romanische_kirchen/gross_st_martin/001.jpg", title: { ru: "Большой Святой Мартин (фото взято с википедии)", uk: "Великий Святий Мартін (фото взято з Вікіпедії)", de: "Groß St. Martin (Foto von Wikipedia entnommen)" } },
-        { path: "Germany/nrw/koln/koln-city/altstadt/romanische_kirchen/gross_st_martin/002.jpg", title: { ru: "Большой Святой Мартин, 2025", uk: "Великий Святий Мартін, 2025", de: "Groß St. Martin, 2025" } }
-      ],
       'roemisch-germanisches-museum': [
         { path: "Germany/nrw/koln/koln-city/roemisch-germanisches-museum/001.jpg", title: { ru: "Римско-германский музей, 2025", uk: "Римсько-германський музей, 2025", de: "Römisch-Germanisches Museum, 2025" } }
       ],
@@ -154,14 +150,6 @@ export const Fotos = {
         { path: "Germany/nrw/koln/koln-city/altstadt/romanische_kirchen/stMariaImKapitol/014.jpg", title: { ru: "Церковь Святой Марии в Капитолии, 2026", uk: "Церква Святої Марії у Капітолії, 2026", de: "Kirche St. Maria im Kapitol, 2026" } },
         { path: "Germany/nrw/koln/koln-city/altstadt/romanische_kirchen/stMariaImKapitol/015.jpg", title: { ru: "Церковь Святой Марии в Капитолии - Крипта, 2026", uk: "Церква Святої Марії у Капітолії - Крипта, 2026", de: "Kirche St. Maria im Kapitol - Krypta, 2026" } },
         { path: "Germany/nrw/koln/koln-city/altstadt/romanische_kirchen/stMariaImKapitol/017.jpg", title: { ru: "Церковь Святой Марии в Капитолии - Крипта, 2026", uk: "Церква Святої Марії у Капітолії - Крипта, 2026", de: "Kirche St. Maria im Kapitol - Krypta, 2026" } },
-      ],
-      romanische_kirchen_altstadt_koln: [
-        { path: "Germany/nrw/koln/koln-city/altstadt/romanische_kirchen/001.jpg", title: { ru: "Романские церкви Старого города Кёльна (фото взято с интернета)", uk: "Романські церкви Старого міста Кельна (фото взято з Інтернету)", de: "Romanische Kirchen der Altstadt von Köln (Foto aus dem Internet)" } },
-        { path: "Germany/nrw/koln/koln-city/altstadt/romanische_kirchen/gross_st_martin/002.jpg", title: { ru: "Большой Святой Мартин, 2025", uk: "Великий Святий Мартін, 2025", de: "Groß St. Martin, 2025" } },
-        { path: "Germany/nrw/koln/koln-city/altstadt/romanische_kirchen/stMariaImKapitol/001.jpg", title: { ru: "Церковь Святой Марии в Капитолии (фото взято с интернета)", uk: "Церква Святої Марії у Капітолії (фото взято з Інтернету)", de: "Kirche St. Maria im Kapitol (Foto aus dem Internet)" } },
-        { path: "Germany/nrw/koln/koln-city/altstadt/romanische_kirchen/st_gereon/001.jpg", title: { ru: "Церковь Святого Гереона (фото взято с интернета)", uk: "Церква Святого Герєона (фото взято з Інтернету)", de: "St. Gereon Kirche (Foto aus dem Internet)" } },
-        { path: "Germany/nrw/koln/koln-city/altstadt/romanische_kirchen/st_aposteln/001.jpg", title: { ru: "Церковь Святого Апостола, 2026", uk: "Церква Святого Апостола, 2026", de: "St. Aposteln, 2026" } },
-        { path: "Germany/nrw/koln/koln-city/altstadt/romanische_kirchen/st_kunibert/001.jpg", title: { ru: "Базиліка Святого Куніберта (фото взято з интернета)", uk: "Базиліка Святого Куніберта (фото взято з Інтернету)", de: "Basilika St. Kunibert (Foto aus dem Internet)" } }
       ],
       old_towers_koln: [
         { path: "Germany/nrw/koln/koln-city/altstadt/old_towers/001.jpg", title: { ru: "Западные ворота (Hahnentorburg), 2025", uk: "Західні ворота (Hahnentorburg), 2025", de: "Hahnentorburg, 2025" } },
