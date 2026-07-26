@@ -332,6 +332,7 @@ const datas =
     pokrovska_square_sumy: { id: 722, ru: 'Покровская площадь', de: 'Pokrowska-Platz', uk: 'Покровська площа' },
     sumy_altanka: { id: 724, ru: 'Альтанка', de: 'Der Pavillon', uk: 'Альтанка' },
     onatsky_museum_sumy: { id: 725, ru: 'Сумской областной художественный музей им. Н. Онацкого', de: 'Kunstmuseum der Oblast Sumy N. Onazkyj', uk: 'Сумський обласний художній музей ім. Н. Онацького' },
+    sumy_regional_museum: { id: 729, ru: 'Сумской областной краеведческий музей', de: 'Regionalmuseum für Heimatkunde Sumy', uk: 'Сумський обласний краєзнавчий музей' },
 
     Unesco_Title: { ru: "Достопримечательности ЮНЕСКО", uk: "Пам’ятки ЮНЕСКО", de: "UNESCO-Welterbestätten" }
   },

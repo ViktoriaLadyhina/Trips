@@ -2,9 +2,9 @@ import { MapContainer, TileLayer, Marker, Tooltip, Popup, useMap } from 'react-l
 import L from 'leaflet';
 import 'leaflet/dist/leaflet.css';
 import './AttrMap.scss';
-import { useNavigate } from 'react-router';
+import { useNavigate, useParams } from 'react-router';
 import { useEffect, useMemo } from 'react';
-import useAllAttractions from '../../../hooks/useAllAttractions.js';
+import useCombinedAttractions from '../../../hooks/useCombinedAttractions.js';
 
 // фикс иконок Leaflet (важно оставить один раз)
 delete L.Icon.Default.prototype._getIconUrl;
@@ -56,7 +56,9 @@ const FitBounds = ({ points }) => {
 
 const FilteredMap = ({ map, lang = 'ru' }) => {
   const navigate = useNavigate();
-  const { attractions: allAttractions = [] } = useAllAttractions();
+  const { countryPath, regionPath, districtPath, cityPath} = useParams();
+  
+  const { mergedAttractions: allAttractions = []} = useCombinedAttractions( countryPath, regionPath, districtPath, cityPath);
 
   const getIconByStatus = (attr) => {
   const status = attr.translations?.[lang]?.status ?? 'active';
@@ -66,14 +68,19 @@ const FilteredMap = ({ map, lang = 'ru' }) => {
 };
 
   // фильтрация стабильно через useMemo
-  const attractions = useMemo(() => {
+const attractions = useMemo(() => {
     if (!allAttractions.length) return [];
 
     return allAttractions.filter(attr => {
-      if (!attr) return false;
-      return map ? attr.map === map : true;
+        if (!attr) return false;
+
+        if (!map) return true;
+
+        return Array.isArray(attr.map)
+            ? attr.map.includes(map)
+            : attr.map === map;
     });
-  }, [allAttractions, map]);
+}, [allAttractions, map]);
 
   // mobile detection безопасный
   const isTouchDevice = L.Browser?.mobile ?? false;
