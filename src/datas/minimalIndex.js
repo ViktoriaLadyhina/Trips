@@ -210,7 +210,7 @@ const datas =
     altstadt_koln: { id: 715, ru: 'Старый город Кёльна', de: 'Altstadt Köln', uk: 'Старе місто Кельна' },
     gross_st_martin_koln: { id: 728, ru: 'Большой Святой Мартин', de: 'Groß St. Martin', uk: 'Великий Святий Мартін' },
     st_maria_himmelfahrt_koln: { ru: 'Церковь Успения Пресвятой Девы Марии', de: 'St. Mariä Himmelfahrt', uk: 'Церква Успіння Пресвятої Діви Марії' },
-    st_maria_im_kapitol_koln: { ru: 'Церковь Святой Марии в Капитолии', de: 'Kirche St. Maria im Kapitol', uk: 'Церква Святої Марії у Капітолії' },
+    st_maria_im_kapitol_koln: { id: 730, ru: 'Церковь Святой Марии в Капитолии', de: 'Kirche St. Maria im Kapitol', uk: 'Церква Святої Марії у Капітолії' },
     decksteiner_weiher_koln: { id: 713, ru: 'Озеро Декштайнер Вайер', de: 'Decksteiner Weiher', uk: 'Озеро Декштайнер Вайер' },
     romanische_kirchen_altstadt_koln: { id: 727, ru: 'Романские церкви Старого города Кёльна', de: 'Romanische Kirchen der Altstadt von Köln', uk: 'Романські церкви Старого міста Кельна' },
     old_towers_koln: { ru: 'Старые башни и укрепления Старого Кёльна', de: 'Alte Türme und Befestigungen der Altstadt Kölns', uk: 'Старі башти та укріплення Старого Кельна' },
