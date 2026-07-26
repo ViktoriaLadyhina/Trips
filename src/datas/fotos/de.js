@@ -143,17 +143,6 @@ export const Fotos = {
       st_gereon_koln: [
         { path: "Germany/nrw/koln/koln-city/altstadt/romanische_kirchen/st_gereon/001.jpg", title: { ru: "Церковь Святого Гереона (фото взято с интернета)", uk: "Церква Святого Герєона (фото взято з Інтернету)", de: "St. Gereon Kirche (Foto aus dem Internet)" } },
       ],
-      st_kunibert_koln: [
-        { path: "Germany/nrw/koln/koln-city/altstadt/romanische_kirchen/st_kunibert/001.jpg", title: { ru: "Базиліка Святого Куніберта, 2026", uk: "Базиліка Святого Куніберта, 2026", de: "Basilika St. Kunibert, 2026" } },
-        { path: "Germany/nrw/koln/koln-city/altstadt/romanische_kirchen/st_kunibert/002.jpg", title: { ru: "Базиліка Святого Куніберта, 2026", uk: "Базиліка Святого Куніберта, 2026", de: "Basilika St. Kunibert, 2026" } },
-        { path: "Germany/nrw/koln/koln-city/altstadt/romanische_kirchen/st_kunibert/003.jpg", title: { ru: "Базиліка Святого Куніберта, 2026", uk: "Базиліка Святого Куніберта, 2026", de: "Basilika St. Kunibert, 2026" } },
-        { path: "Germany/nrw/koln/koln-city/altstadt/romanische_kirchen/st_kunibert/004.jpg", title: { ru: "Базиліка Святого Куніберта, 2026", uk: "Базиліка Святого Куніберта, 2026", de: "Basilika St. Kunibert, 2026" } },
-        { path: "Germany/nrw/koln/koln-city/altstadt/romanische_kirchen/st_kunibert/005.jpg", title: { ru: "Базиліка Святого Куніберта, 2026", uk: "Базиліка Святого Куніберта, 2026", de: "Basilika St. Kunibert, 2026" } },
-        { path: "Germany/nrw/koln/koln-city/altstadt/romanische_kirchen/st_kunibert/006.jpg", title: { ru: "Базиліка Святого Куніберта, 2026", uk: "Базиліка Святого Куніберта, 2026", de: "Basilika St. Kunibert, 2026" } },
-        { path: "Germany/nrw/koln/koln-city/altstadt/romanische_kirchen/st_kunibert/007.jpg", title: { ru: "Базиліка Святого Куніберта, 2026", uk: "Базиліка Святого Куніберта, 2026", de: "Basilika St. Kunibert, 2026" } },
-        { path: "Germany/nrw/koln/koln-city/altstadt/romanische_kirchen/st_kunibert/008.jpg", title: { ru: "Базиліка Святого Куніберта, 2026", uk: "Базиліка Святого Куніберта, 2026", de: "Basilika St. Kunibert, 2026" } },
-        { path: "Germany/nrw/koln/koln-city/altstadt/romanische_kirchen/st_kunibert/009.jpg", title: { ru: "Базиліка Святого Куніберта, 2026", uk: "Базиліка Святого Куніберта, 2026", de: "Basilika St. Kunibert, 2026" } },
-      ],
       prussian_fortress_system_koln: [
         { path: "Germany/nrw/koln/koln-city/prussian_fortress_system/inner/001.jpg", title: { ru: "Форт I (внутреннее крепostное кольцо) (фото взято с интернета)", uk: "Форт I (внутрішнє фортифікаційне кільце) (фото взято з Інтернету)", de: "Fort I (innerer Festungsring) (Foto aus dem Internet)" } },
         { path: "Germany/nrw/koln/koln-city/prussian_fortress_system/inner/005.jpg", title: { ru: "Форт V (внутреннее крепostное кольцо) (фото взято с интернета)", uk: "Форт V (внутрішнє фортифікаційне кільце) (фото взято з Інтернету)", de: "Fort V (innerer Festungsring) (Foto aus dem Internet)" } },

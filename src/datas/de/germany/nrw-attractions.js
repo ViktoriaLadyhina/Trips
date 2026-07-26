@@ -3,14 +3,14 @@ const datas = [
     // Köln-city
     // {
     //     id: "altstadt_koln",
-    //     subObjects: ["miqua", "wallraf_richartz_museum", "roemisch_germanisches_museum", "farina_duftmuseum", "museum_ludwig", "stadtmuseum_koln", "dufthaus_4711_koln", "st_maria_himmelfahrt_koln", "old_towers_koln", "st_kunibert_koln"],
+    //     subObjects: ["miqua", "wallraf_richartz_museum", "roemisch_germanisches_museum", "farina_duftmuseum", "museum_ludwig", "stadtmuseum_koln", "dufthaus_4711_koln", "st_maria_himmelfahrt_koln", "old_towers_koln"],
     //     short_description_subObjects: {
     //         items: [
     //             { bold: "St. Mariä Himmelfahrt", text: "– die wichtigste Barockkirche Kölns aus dem 17. Jahrhundert, eine ehemalige Jesuitenkirche in der Nähe des Hauptbahnhofs und des Kölner Doms." },
     //             { bold: "Basilika St. Kunibert in Köln", text: "– eine romanische Kirche mit massiven Türmen, strengen Formen und ruhiger Atmosphäre, gelegen im nördlichen Teil der Altstadt in der Nähe des Rheins." },
     //             { bold: "Dufthaus 4711", text: "– historisches Gebäude in der Fußgängerzone um die Hohe Straße und Schildergasse." },
     //             { bold: "Duftmuseum im Farina-Haus", text: "– Museum für Düfte und Parfum im historischen Viertel beim Rathaus." },
-    //             { bold: "Kölnisches Stadtmuseum", text: "– Museum für Stadtgeschichte im Zentrum (Zeughaus)." },
+                // { bold: "Kölnisches Stadtmuseum", text: "– Museum für Stadtgeschichte im Zentrum (Zeughaus)." },
     //             { bold: "Museum im archäologischen Viertel Köln – MiQua", text: "– archäologisches und jüdisches Museum am Marktplatz im Zentrum der Altstadt." },
     //             { bold: "Museum Ludwig", text: "– Museum für moderne Kunst in der Nähe des Kölner Doms." },
     //             { bold: "Römisch-Germanisches Museum", text: "– Museum der Antike in der Nähe des Kölner Doms und des MiQua." },
@@ -23,12 +23,11 @@ const datas = [
     // {
     //     id: "romanische_kirchen_altstadt_koln",
     //     name: "Romanische Kirchen von Köln",
-    //     subObjects: ["st_gereon_koln", "st_kunibert_koln", "st_aposteln_koln"],
+    //     subObjects: ["st_gereon_koln", "st_aposteln_koln"],
     //     short_description_subObjects: {
     //         items: [
     //             { bold: "St. Gereon Kirche", text: "– eine romanische Kirche mit zwölfeckiger Kuppel, alten Glasfenstern und reichhaltigem historischen Interieur." },
     //             { bold: "Basilika St. Aposteln", text: "– eine der 12 romanischen Kirchen Kölns, bekannt für ihren dreikonchigen Chor, ihre mittelalterliche Architektur und ihre Lage am Neumarkt im Stadtzentrum." },
-    //             { bold: "Basilika St. Kunibert", text: "– eine romanische Kirche mit massiven Türmen, strengen Formen und ruhiger Atmosphäre, gelegen im nördlichen Teil der Altstadt in der Nähe des Rheins." },
     //         ]
     //     },
     {

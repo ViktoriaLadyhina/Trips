@@ -2,11 +2,10 @@ const datas = [
 
     // Köln-city
 
-    //     subObjects: ["miqua", "wallraf_richartz_museum", "roemisch_germanisches_museum", "farina_duftmuseum", "museum_ludwig", "stadtmuseum_koln", "dufthaus_4711_koln", "st_maria_himmelfahrt_koln", "old_towers_koln", "st_kunibert_koln"],
+    //     subObjects: ["miqua", "wallraf_richartz_museum", "roemisch_germanisches_museum", "farina_duftmuseum", "museum_ludwig", "stadtmuseum_koln", "dufthaus_4711_koln", "st_maria_himmelfahrt_koln", "old_towers_koln"],
     //     short_description_subObjects: {
     //         items: [
     //             { bold: "Церковь Успения Пресвятой Девы Марии (St. Mariä Himmelfahrt)", text: "– главная барочная церковь Кёльна XVII века, бывшая иезуитская святыня рядом с центральным вокзалом и Кёльнским собором." },
-    //             { bold: "Базилика Святого Куниберта в Кёльне", text: "– романская церковь с массивными башнями, строгими формами и спокойной атмосферой, расположенная в северной части старого города у Рейна." },
     //             { bold: "Дом одеколона 4711", text: "– историческое здание в пешеходной зоне вокруг Hohe Straße и Schildergasse." },
     //             { bold: "Кёльнская ратуша", text: "– историческая городская ратуша в центре Старого города." },
     //             { bold: "Кельнский городской музей", text: "– музей истории города в центре (Zeughaus)." },
@@ -21,11 +20,10 @@ const datas = [
     // },
 
 
-    //      subObjects: [st_gereon_koln", "st_kunibert_koln", "st_aposteln_koln"],
+    //      subObjects: [st_gereon_koln", "st_aposteln_koln"],
     //     short_description_subObjects: {
     //         items: [
     //             { bold: "Церковь Святого Гереона", text: "– романская церковь с двенадцатигранным куполом, старинными витражами и богатым историческим интерьером." },
-    //             { bold: "Базилика Святого Куниберта", text: "– романская церковь с массивными башнями, строгими формами и спокойной атмосферой, расположенная в северной части старого города у Рейна." },
     //             { bold: "Базилика Святого Апостола", text: "– одна из 12 романских церквей Кёльна, известная своим трёхапсидным хором, средневековой архитектурой и расположением возле Neumarkt в центре города." },        
     //         ]
     //     },

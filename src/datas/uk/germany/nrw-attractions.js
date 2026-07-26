@@ -2,7 +2,7 @@ const datas = [
 
     // Köln-city
 
-    //     subObjects: ["miqua", "wallraf_richartz_museum", "roemisch_germanisches_museum", "farina_duftmuseum", "museum_ludwig", "stadtmuseum_koln", "dufthaus_4711_koln", "st_maria_himmelfahrt_koln", "old_towers_koln", "st_kunibert_koln"],
+    //     subObjects: ["miqua", "wallraf_richartz_museum", "roemisch_germanisches_museum", "farina_duftmuseum", "museum_ludwig", "stadtmuseum_koln", "dufthaus_4711_koln", "st_maria_himmelfahrt_koln", "old_towers_koln"],
     //     short_description_subObjects: {
     //         items: [
     //             { bold: "Будинок одеколону 4711", text: "– історична будівля у пішохідній зоні навколо Hohe Straße та Schildergasse." },
@@ -20,12 +20,11 @@ const datas = [
     // {
     //     id: "romanische_kirchen_altstadt_koln",
     //     name: "Романські церкви Кельна",
-    //     subObjects: ["st_gereon_koln", "st_kunibert_koln", "st_aposteln_koln"],
+    //     subObjects: ["st_gereon_koln", "st_aposteln_koln"],
     //     short_description_subObjects: {
     //         items: [
     //             { bold: "Церква Святого Герєона", text: "– романська церква з дванадцятигранним куполом, старовинними вітражами та багатим історичним інтер'єром." },
     //             { bold: "Базиліка Святого Апостола", text: "– одна з 12 романських церков Кельна, відома своїм триапсидним хором, середньовічною архітектурою та розташуванням біля Neumarkt у центрі міста." },
-    //             { bold: "Базиліка Святого Куніберта", text: "– романська церква з масивними вежами, строгими формами та спокійною атмосферою, розташована в північній частині старого міста біля Рейну." },
     //         ]
     //     },
 
