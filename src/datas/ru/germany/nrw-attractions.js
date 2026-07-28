@@ -2,10 +2,9 @@ const datas = [
 
     // Köln-city
 
-    //     subObjects: ["miqua", "wallraf_richartz_museum", "roemisch_germanisches_museum", "farina_duftmuseum", "museum_ludwig", "stadtmuseum_koln", "dufthaus_4711_koln", "st_maria_himmelfahrt_koln", "old_towers_koln"],
+    //     subObjects: ["miqua", "wallraf_richartz_museum", "roemisch_germanisches_museum", "farina_duftmuseum", "museum_ludwig", "stadtmuseum_koln", "dufthaus_4711_koln", "old_towers_koln"],
     //     short_description_subObjects: {
     //         items: [
-    //             { bold: "Церковь Успения Пресвятой Девы Марии (St. Mariä Himmelfahrt)", text: "– главная барочная церковь Кёльна XVII века, бывшая иезуитская святыня рядом с центральным вокзалом и Кёльнским собором." },
     //             { bold: "Дом одеколона 4711", text: "– историческое здание в пешеходной зоне вокруг Hohe Straße и Schildergasse." },
     //             { bold: "Кельнский городской музей", text: "– музей истории города в центре (Zeughaus)." },
     //             { bold: "Музей в археологическом квартале Кёльна – MiQua", text: "– археологический и еврейский музей на Marktplatz в центре Старого города." },
