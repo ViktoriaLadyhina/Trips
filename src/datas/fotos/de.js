@@ -127,11 +127,6 @@ export const Fotos = {
         { path: "Germany/nrw/koln/koln-city/museum-ludwig/001.jpg", title: { ru: "Музей Людвига, 2025", uk: "Музей Людвіга, 2025", de: "Museum Ludwig, 2025" } },
         { path: "Germany/nrw/koln/koln-city/wallraf_richartz_museum/001.jpg", title: { ru: "Музей Вальрафа-Рихарца, 2025", uk: "Музей Вальрафа-Ріхарцa, 2025", de: "Wallraf-Richartz-Museum, 2025" } },
       ],
-      st_maria_himmelfahrt_koln: [
-        { path: "Germany/nrw/koln/koln-city/altstadt/st_maria_himmelfahrt/001.jpg", title: { ru: "Сент-Мария Химмельфарт, 2026", uk: "Церква Успіння Пресвятої Діви Марії, 2026", de: "St. Mariä Himmelfahrt, 2026" } },
-        { path: "Germany/nrw/koln/koln-city/altstadt/st_maria_himmelfahrt/002.jpg", title: { ru: "Сент-Мария Химмельфарт, 2026", uk: "Церква Успіння Пресвятої Діви Марії, 2026", de: "St. Mariä Himmelfahrt, 2026" } },
-        { path: "Germany/nrw/koln/koln-city/altstadt/st_maria_himmelfahrt/003.jpg", title: { ru: "Сент-Мария Химмельфарт (фото взято с интернета)", uk: "Церква Успіння Пресвятої Діви Марії (фото взято з Інтернету)", de: "St. Mariä Himmelfahrt (Foto aus dem Internet)" } },
-      ],
       old_towers_koln: [
         { path: "Germany/nrw/koln/koln-city/altstadt/old_towers/001.jpg", title: { ru: "Западные ворота (Hahnentorburg), 2025", uk: "Західні ворота (Hahnentorburg), 2025", de: "Hahnentorburg, 2025" } },
         { path: "Germany/nrw/koln/koln-city/altstadt/old_towers/002.jpg", title: { ru: "Римская башня (Römerturm) (фото взято с интернета)", uk: "Римська башта (Römerturm) (фото взято з Інтернету)", de: "Römerturm (Foto aus dem Internet)" } },

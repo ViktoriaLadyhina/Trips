@@ -30,54 +30,50 @@ const datas = [
     //             { bold: "Basilika St. Aposteln", text: "– eine der 12 romanischen Kirchen Kölns, bekannt für ihren dreikonchigen Chor, ihre mittelalterliche Architektur und ihre Lage am Neumarkt im Stadtzentrum." },
     //         ]
     //     },
-    {
-        id: "st_maria_himmelfahrt_koln",
-        name: "St. Mariä Himmelfahrt",
-        type: ["cathedral"], rating: "popular",
-        path: "st_maria_himmelfahrt_koln",
-        countryPath: "germany", regionPath: "nrw", districtPath: "city", cityPath: "koln_city",
-        // hiddenFromList: true, showMore: true,
-        fotoCard: "Germany/nrw/koln/koln-city/altstadt/st_maria_himmelfahrt/001.jpg",
-        location: "Köln, Stadtteil Altstadt-Süd (Stadtbezirk Innenstadt), Deutschland",
-        short_description: "St. Mariä Himmelfahrt ist eine bedeutende katholische Kirche der Aufnahme Mariens in der Kölner Altstadt. Sie wurde im Barockstil als Jesuitenkirche errichtet, war lange Zeit die zweitgrößte Kirche nach dem Kölner Dom und gehört bis heute zu den wenigen erhaltenen barocken Baudenkmälern der Stadt.",
-        full_description: {
-            title: "Beschreibung und Geschichte",
-            items: [
-                { bold: "St. Mariä Himmelfahrt", text: "– eine der bedeutendsten historischen Kirchen Kölns, gelegen im Zentrum der Altstadt. Es handelt sich um eine katholische Pfarrkirche, die der Aufnahme Mariens in den Himmel gewidmet ist und im 17. Jahrhundert im Barockstil erbaut wurde. Ihr monumentales Gebäude mit zwei Türmen prägt das Stadtbild und ist ein wichtiger Bestandteil des architektonischen Erbes Kölns. " },
-                { text: "Der Bau der Kirche begann 1618 auf Initiative der Jesuiten während der Gegenreformation – einer Zeit, in der die katholische Kirche Architektur und Kunst gezielt zur Stärkung ihres religiösen Einflusses einsetzte. Der ursprüngliche Entwurf stammt vom Architekten Christoph Wamser, später führte Valentin Boltz die Arbeiten fort. Die barocke Architektur des Bauwerks betont Dynamik der Formen, Monumentalität und dekorative Gestaltung, die für diese Epoche typisch sind. Die Kirche wurde 1678 endgültig fertiggestellt und geweiht." },
-                { text: "Ursprünglich war die Kirche als eines der größten religiösen Bauwerke der Stadt geplant, und lange Zeit war sie tatsächlich die zweitgrößte Kirche Kölns nach dem berühmten Kölner Dom. Der Innenraum ist als dreischiffige Anlage mit Emporen gestaltet, was ein Gefühl von Weite und Feierlichkeit vermittelt, während die helle Beleuchtung die Details der Innenausstattung hervorhebt." },
-                { text: "Die Geschichte des Gebäudes verlief nicht ohne Einschnitte: Ende des 18. Jahrhunderts wurde die Kirche während der französischen Besatzung säkularisiert, verlor einen Teil ihrer ursprünglichen Funktion und diente zeitweise weltlichen Zwecken. Bereits zu Beginn des 19. Jahrhunderts wurde sie jedoch wieder als Pfarrkirche genutzt. Diese Veränderungen spiegeln die komplexen historischen Prozesse wider, die Köln im Laufe der Jahrhunderte durchlebte." },
-                { text: "Während des Zweiten Weltkriegs wurde das Bauwerk durch Bombardierungen schwer beschädigt: Die Außenmauern blieben erhalten, doch das Innere wurde nahezu vollständig zerstört. Eine lange Phase der Restaurierung nach dem Krieg – von den späten 1940er- bis in die 1970er-Jahre – ermöglichte es, die Kirche nahezu in ihrem ursprünglichen Zustand wiederherzustellen und ihre barocke künstlerische Ausdruckskraft sowie architektonischen Proportionen zurückzugeben." },
-                { text: "Heute ist St. Mariä Himmelfahrt eine aktive Pfarrkirche und zugleich ein beliebtes touristisches Ziel in Köln. Architektur und Geschichte vermitteln den Besuchern einen Eindruck vom religiösen Leben der Stadt in verschiedenen Epochen und verbinden kulturelles Erbe, barocke Kunstformen und die historisch geprägte Atmosphäre der Altstadt." }
-            ]
-        },
-        tickets_and_entry: {
-            title: "Praktische Informationen",
-            items: [
-                { bold: "Adresse:", text: "Marzellenstraße 30, 50668 Köln, Nordrhein-Westfalen, Deutschland." },
-                { bold: "Konfession:", text: "römisch-katholische Kirche" },
-            ]
-        },
-        interestingFacts: {
-            title: "Interessante Fakten",
-            items: [
-                { text: "Sie ist eine der wenigen vollständig barocken Kirchen Kölns." },
-                { text: "Sie wurde von den Jesuiten während der Gegenreformation errichtet." },
-                { text: "Sie befindet sich nur wenige Minuten vom Kölner Hauptbahnhof entfernt." }
-            ]
-        },
-        construction_period: "1618-1678",
-        architects: "Christoph Wamser; Valentin Boltz",
-        coord: { lat: 50.94306, lng: 6.95680 },
-        meta: {
-            title: "St. Mariä Himmelfahrt – Barockkirche des 17. Jahrhunderts",
-            description: "Die historische Barockkirche St. Mariä Himmelfahrt im Zentrum von Köln – eine ehemalige Jesuitenkirche des 17. Jahrhunderts mit reicher Architektur, die nach dem Krieg restauriert wurde. Erfahren Sie mehr über Geschichte, Architektur und interessante Fakten.",
-            ogTitle: "St. Mariä Himmelfahrt – historische Barockkirche in Köln",
-            ogDescription: "Tauchen Sie ein in die Atmosphäre barocker Architektur im Herzen Kölns! St. Mariä Himmelfahrt ist ein bedeutendes religiöses Bauwerk der Altstadt mit reicher Geschichte und beeindruckendem Innenraum.",
-            keywords: "Kirche Mariä Himmelfahrt, Köln, gotische Architektur, historisches Zentrum, religiöse Architektur, Sehenswürdigkeiten Köln, mittelalterliche Kirche, Kloster, Kultstätte, Tourismus Deutschland, Führungen, historische Gebäude",
-            ogImage: "https://our-travels.info/foto/Germany/nrw/koln/koln-city/altstadt/st_maria_himmelfahrt/001.jpg"
-        }
-    },
+    // {
+    //     id: "st_maria_himmelfahrt_koln",
+    //     name: "St. Mariä Himmelfahrt",
+    //     type: ["cathedral"], rating: "popular",
+    //     fotoCard: "Germany/nrw/koln/koln-city/altstadt/st_maria_himmelfahrt/001.jpg",
+    //     short_description: "St. Mariä Himmelfahrt ist eine bedeutende katholische Kirche der Aufnahme Mariens in der Kölner Altstadt. Sie wurde im Barockstil als Jesuitenkirche errichtet, war lange Zeit die zweitgrößte Kirche nach dem Kölner Dom und gehört bis heute zu den wenigen erhaltenen barocken Baudenkmälern der Stadt.",
+    //     full_description: {
+    //         title: "Beschreibung und Geschichte",
+    //         items: [
+    //             { bold: "St. Mariä Himmelfahrt", text: "– eine der bedeutendsten historischen Kirchen Kölns, gelegen im Zentrum der Altstadt. Es handelt sich um eine katholische Pfarrkirche, die der Aufnahme Mariens in den Himmel gewidmet ist und im 17. Jahrhundert im Barockstil erbaut wurde. Ihr monumentales Gebäude mit zwei Türmen prägt das Stadtbild und ist ein wichtiger Bestandteil des architektonischen Erbes Kölns. " },
+    //             { text: "Der Bau der Kirche begann 1618 auf Initiative der Jesuiten während der Gegenreformation – einer Zeit, in der die katholische Kirche Architektur und Kunst gezielt zur Stärkung ihres religiösen Einflusses einsetzte. Der ursprüngliche Entwurf stammt vom Architekten Christoph Wamser, später führte Valentin Boltz die Arbeiten fort. Die barocke Architektur des Bauwerks betont Dynamik der Formen, Monumentalität und dekorative Gestaltung, die für diese Epoche typisch sind. Die Kirche wurde 1678 endgültig fertiggestellt und geweiht." },
+    //             { text: "Ursprünglich war die Kirche als eines der größten religiösen Bauwerke der Stadt geplant, und lange Zeit war sie tatsächlich die zweitgrößte Kirche Kölns nach dem berühmten Kölner Dom. Der Innenraum ist als dreischiffige Anlage mit Emporen gestaltet, was ein Gefühl von Weite und Feierlichkeit vermittelt, während die helle Beleuchtung die Details der Innenausstattung hervorhebt." },
+    //             { text: "Die Geschichte des Gebäudes verlief nicht ohne Einschnitte: Ende des 18. Jahrhunderts wurde die Kirche während der französischen Besatzung säkularisiert, verlor einen Teil ihrer ursprünglichen Funktion und diente zeitweise weltlichen Zwecken. Bereits zu Beginn des 19. Jahrhunderts wurde sie jedoch wieder als Pfarrkirche genutzt. Diese Veränderungen spiegeln die komplexen historischen Prozesse wider, die Köln im Laufe der Jahrhunderte durchlebte." },
+    //             { text: "Während des Zweiten Weltkriegs wurde das Bauwerk durch Bombardierungen schwer beschädigt: Die Außenmauern blieben erhalten, doch das Innere wurde nahezu vollständig zerstört. Eine lange Phase der Restaurierung nach dem Krieg – von den späten 1940er- bis in die 1970er-Jahre – ermöglichte es, die Kirche nahezu in ihrem ursprünglichen Zustand wiederherzustellen und ihre barocke künstlerische Ausdruckskraft sowie architektonischen Proportionen zurückzugeben." },
+    //             { text: "Heute ist St. Mariä Himmelfahrt eine aktive Pfarrkirche und zugleich ein beliebtes touristisches Ziel in Köln. Architektur und Geschichte vermitteln den Besuchern einen Eindruck vom religiösen Leben der Stadt in verschiedenen Epochen und verbinden kulturelles Erbe, barocke Kunstformen und die historisch geprägte Atmosphäre der Altstadt." }
+    //         ]
+    //     },
+    //     tickets_and_entry: {
+    //         title: "Praktische Informationen",
+    //         items: [
+    //             { bold: "Adresse:", text: "Marzellenstraße 30, 50668 Köln, Nordrhein-Westfalen, Deutschland." },
+    //             { bold: "Konfession:", text: "römisch-katholische Kirche" },
+    //         ]
+    //     },
+    //     interestingFacts: {
+    //         title: "Interessante Fakten",
+    //         items: [
+    //             { text: "Sie ist eine der wenigen vollständig barocken Kirchen Kölns." },
+    //             { text: "Sie wurde von den Jesuiten während der Gegenreformation errichtet." },
+    //             { text: "Sie befindet sich nur wenige Minuten vom Kölner Hauptbahnhof entfernt." }
+    //         ]
+    //     },
+    //     construction_period: "1618-1678",
+    //     architects: "Christoph Wamser; Valentin Boltz",
+    //     coord: { lat: 50.94306, lng: 6.95680 },
+    //     meta: {
+    //         title: "St. Mariä Himmelfahrt – Barockkirche des 17. Jahrhunderts",
+    //         description: "Die historische Barockkirche St. Mariä Himmelfahrt im Zentrum von Köln – eine ehemalige Jesuitenkirche des 17. Jahrhunderts mit reicher Architektur, die nach dem Krieg restauriert wurde. Erfahren Sie mehr über Geschichte, Architektur und interessante Fakten.",
+    //         ogTitle: "St. Mariä Himmelfahrt – historische Barockkirche in Köln",
+    //         ogDescription: "Tauchen Sie ein in die Atmosphäre barocker Architektur im Herzen Kölns! St. Mariä Himmelfahrt ist ein bedeutendes religiöses Bauwerk der Altstadt mit reicher Geschichte und beeindruckendem Innenraum.",
+    //         keywords: "Kirche Mariä Himmelfahrt, Köln, gotische Architektur, historisches Zentrum, religiöse Architektur, Sehenswürdigkeiten Köln, mittelalterliche Kirche, Kloster, Kultstätte, Tourismus Deutschland, Führungen, historische Gebäude",
+    //         ogImage: "https://our-travels.info/foto/Germany/nrw/koln/koln-city/altstadt/st_maria_himmelfahrt/001.jpg"
+    //     }
+    // },
     {
         id: "roemisch_germanisches_museum",
         name: "Römisch-Germanisches Museum",
