@@ -221,7 +221,7 @@ const datas =
     ulrepforte_koln: { ru: 'Южные малые ворота (Ulrepforte)', de: 'Ulrepforte (kleines Südtor)', uk: 'Південні малі ворота (Ulrepforte)' },
     bayenturm_koln: { ru: 'Юго-восточная башня у Рейна (Bayenturm)', de: 'Bayenturm (Südostturm am Rhein)', uk: 'Південно-східна вежа біля Рейну (Bayenturm)' },
     fischmarkt_koln: { id: 720, ru: 'Фишмаркт', de: 'Fischmarkt', uk: 'Фішмаркт' },
-    st_gereon_koln: { ru: 'Церковь Святого Гереона', de: 'St. Gereon Kirche', uk: 'Церква Святого Герєона' },
+    st_gereon_koln: { id: 733, ru: 'Церковь Святого Гереона', de: 'St. Gereon Kirche', uk: 'Церква Святого Герєона' },
     prussian_fortress_system_koln: { ru: 'Прусская крепостная система Кёльна', de: 'Preußisches Festungssystem Köln', uk: 'Прусська фортифікаційна система Кельна' },
     fort_I_inner_koln: { ru: 'Форт I (внутреннее крепостное кольцо)', de: 'Fort I (innerer Festungsring)', uk: 'Форт I (внутрішнє фортифікаційне кільце)' },
     fort_II_inner_koln: { ru: 'Форт II (внутреннее крепостное кольцо)', de: 'Fort II (innerer Festungsring)', uk: 'Форт II (внутрішнє фортифікаційне кільце)' },

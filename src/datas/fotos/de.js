@@ -135,9 +135,6 @@ export const Fotos = {
         { path: "Germany/nrw/koln/koln-city/altstadt/old_towers/005.jpg", title: { ru: "Южный фрагмент стены (Ulrepforte) (фото взято с интернета)", uk: "Південний фрагмент стіни (Ulrepforte) (фото взято з Інтернету)", de: "Ulrepforte (Foto aus dem Internet)" } },
         { path: "Germany/nrw/koln/koln-city/altstadt/old_towers/006.jpg", title: { ru: "Башня на юге у Рейна (Bayenturm) (фото взято с интернета)", uk: "Башта на півдні біля Рейну (Bayenturm) (фото взято з Інтернету)", de: "Bayenturm (Foto aus dem Internet)" } },
       ],
-      st_gereon_koln: [
-        { path: "Germany/nrw/koln/koln-city/altstadt/romanische_kirchen/st_gereon/001.jpg", title: { ru: "Церковь Святого Гереона (фото взято с интернета)", uk: "Церква Святого Герєона (фото взято з Інтернету)", de: "St. Gereon Kirche (Foto aus dem Internet)" } },
-      ],
       prussian_fortress_system_koln: [
         { path: "Germany/nrw/koln/koln-city/prussian_fortress_system/inner/001.jpg", title: { ru: "Форт I (внутреннее крепostное кольцо) (фото взято с интернета)", uk: "Форт I (внутрішнє фортифікаційне кільце) (фото взято з Інтернету)", de: "Fort I (innerer Festungsring) (Foto aus dem Internet)" } },
         { path: "Germany/nrw/koln/koln-city/prussian_fortress_system/inner/005.jpg", title: { ru: "Форт V (внутреннее крепostное кольцо) (фото взято с интернета)", uk: "Форт V (внутрішнє фортифікаційне кільце) (фото взято з Інтернету)", de: "Fort V (innerer Festungsring) (Foto aus dem Internet)" } },
