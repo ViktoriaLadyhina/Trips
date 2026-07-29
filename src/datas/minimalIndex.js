@@ -78,6 +78,8 @@ const datas =
     dortmund_huckarde: { id: 683, parent: 72, ru: 'Хуккарде', de: 'Huckarde', uk: 'Хуккарде' },
     dortmund_mengede: { id: 684, parent: 72, ru: 'Менгеде', de: 'Mengede', uk: 'Менгеде' },
 
+    velbert_langenberg: { id: 738, parent: 410, ru: 'Менгеде', de: 'Mengede', uk: 'Менгеде' },
+
     sundern_sundern: { id: 685, parent: 354, ru: 'Зундерн', de: 'Sundern', uk: 'Зундерн' },
     sundern_allendorf: { id: 686, parent: 354, ru: 'Аллендорф', de: 'Allendorf', uk: 'Аллендорф' },
     sundern_amecke: { id: 687, parent: 354, ru: 'Амеке', de: 'Amecke', uk: 'Амеке' },
@@ -174,8 +176,8 @@ const datas =
     // Düsseldorf okrug
     // край mettmann 
     // velbert
-    langenberg_altstadt_velbert: { ru: 'Старый город Лангенберг', de: 'Altstadt Langenberg', uk: 'Старе місто Лангенберг' },
-    langenberg_alte_kirche_velbert: { ru: 'Старая церковь Лангеберг', de: 'Alte Kirche Langenberg', uk: 'Стара церква Лангенберг' },
+    langenberg_altstadt_velbert: { id: 737, ru: 'Старый город Лангенберг', de: 'Altstadt Langenberg', uk: 'Старе місто Лангенберг' },
+    langenberg_alte_kirche_velbert: { id: 739, ru: 'Старая церковь Лангеберг', de: 'Alte Kirche Langenberg', uk: 'Стара церква Лангенберг' },
     langenberg_burgerhaus_velbert: { ru: 'Исторический общественный дом Лангенберга', de: 'Historisches Bürgerhaus Langenberg', uk: 'Історичний громадський будинок Лангенберга' },
 
     // Köln okrug
