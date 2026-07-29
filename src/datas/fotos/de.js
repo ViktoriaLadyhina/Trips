@@ -172,13 +172,7 @@ export const Fotos = {
       ],
       fort_XI_outer_koln: [
         { path: "Germany/nrw/koln/koln-city/prussian_fortress_system/outer/011.jpg", title: { ru: "Форт XI (внешнее крепостное кольцо) (фото взято с интернета)", uk: "Форт XI (зовнішнє фортифікаційне кільце) (фото взято з Інтернету)", de: "Fort XI (äußerer Festungsring) (Foto aus dem Internet)" } },
-      ],
-      st_aposteln_koln: [
-        { path: "Germany/nrw/koln/koln-city/altstadt/romanische_kirchen/st_aposteln/001.jpg", title: { ru: "Церковь Святого Апостола, 2026", uk: "Церква Святого Апостола, 2026", de: "St. Aposteln, 2026" } },
-        { path: "Germany/nrw/koln/koln-city/altstadt/romanische_kirchen/st_aposteln/002.jpg", title: { ru: "Церковь Святого Апостола, 2026", uk: "Церква Святого Апостола, 2026", de: "St. Aposteln, 2026" } },
-        { path: "Germany/nrw/koln/koln-city/altstadt/romanische_kirchen/st_aposteln/003.jpg", title: { ru: "Церковь Святого Апостола, 2026", uk: "Церква Святого Апостола, 2026", de: "St. Aposteln, 2026" } },
-        { path: "Germany/nrw/koln/koln-city/altstadt/romanische_kirchen/st_aposteln/004.jpg", title: { ru: "Церковь Святого Апостола, 2026", uk: "Церква Святого Апостола, 2026", de: "St. Aposteln, 2026" } },
-      ],
+      ]
     },
     bruhl: {
       'phantasialand': [

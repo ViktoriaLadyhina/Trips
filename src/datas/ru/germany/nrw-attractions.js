@@ -17,14 +17,6 @@ const datas = [
     //     },
     // },
 
-
-    //      subObjects: ["st_aposteln_koln"],
-    //     short_description_subObjects: {
-    //         items: [
-    //             { bold: "Базилика Святого Апостола", text: "– одна из 12 романских церквей Кёльна, известная своим трёхапсидным хором, средневековой архитектурой и расположением возле Neumarkt в центре города." },        
-    //         ]
-    //     },
-
     {
         id: "roemisch_germanisches_museum",
         name: "Римско-германский музей",

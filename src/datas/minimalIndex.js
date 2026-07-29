@@ -236,7 +236,7 @@ const datas =
     fort_X_outer_koln: { ru: 'Форт X (внешнее крепостное кольцо)', de: 'Fort X (äußerer Festungsring)', uk: 'Форт X (зовнішнє фортифікаційне кільце)' },
     fort_XI_outer_koln: { ru: 'Форт XI (внешнее крепостное кольцо)', de: 'Fort XI (äußerer Festungsring)', uk: 'Форт XI (зовнішнє фортифікаційне кільце)' },
     st_kunibert_koln: { id: 731, ru: 'Базилика Святого Куниберта', de: 'Basilika St. Kunibert', uk: 'Базиліка Святого Куніберта' },
-    st_aposteln_koln: { ru: 'Церковь Святого Апостола', de: 'St. Aposteln', uk: 'Церква Святого Апостола' },
+    st_aposteln_koln: { id: 734, ru: 'Церковь Святого Апостола', de: 'St. Aposteln', uk: 'Церква Святого Апостола' },
     fischweiberbrunnen_koln: { id: 721, ru: 'Фонтан рыбных торговок', de: 'Fischweiberbrunnen', uk: 'Фонтан рибних торговок' },
 
     // Aachen Kreis
