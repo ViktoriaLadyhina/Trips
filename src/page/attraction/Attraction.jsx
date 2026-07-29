@@ -251,84 +251,137 @@ const Attraction = () => {
     }
 
 
-    // STATIC SUB-OBJECTS
-    const subObjects = attraction?.subObjects || [];
-    const subObjects2 = attraction?.subObjects2 || [];
+    // SUB-OBJECTS
 
-    const applyFilters = list => {
-        return list
-            .map(id =>
-                attractions.find(item => item.id === id)
-            ).filter(Boolean)
-            .filter(attr => {
-                if (subFilters.type !== 'all' && !attr.type?.includes(subFilters.type)) {
-                    return false;
-                }
+// STATIC SUB-OBJECTS (old JSON format: array of ids)
+const subObjects = attraction?.subObjects || [];
+const subObjects2 = attraction?.subObjects2 || [];
 
-                if (subFilters.feature?.length > 0 &&
-                    !subFilters.feature.includes('all') &&
-                    !subFilters.feature.some(feature => attr.feature?.includes(feature)
-                    )
-                ) {
-                    return false;
-                }
+const staticSubObjects = subObjects
+    .map(id => attractions.find(item => item.id === id))
+    .filter(Boolean);
 
-                if (subFilters.rating !== 'all' && attr.rating !== subFilters.rating) {
-                    return false;
-                }
+const staticSubObjects2 = subObjects2
+    .map(id => attractions.find(item => item.id === id))
+    .filter(Boolean);
 
-                if (subFilters.unesco === 'yes' && !attr.unesco_status?.included) {
-                    return false;
-                }
 
-                if (subFilters.unesco === 'no' && attr.unesco_status?.included) {
-                    return false;
-                }
+// FILTERS
+const applyFilters = list => {
+    return list.filter(attr => {
 
-                const status = attr.status ?? 'active';
-
-                if (!subFilters.status.includes(status)) {
-                    return false;
-                }
-
-                return true;
-            });
-    };
-
-    const filteredSubObjects = applyFilters(subObjects);
-    const filteredSubObjects2 = applyFilters(subObjects2);
-
-    // SORT
-    const sortFn = (a, b) => {
-        if (subFilters.sort === 'name-asc') {
-            return (a?.name || '').localeCompare(b?.name || '');
+        if (
+            subFilters.type !== 'all' &&
+            !attr.type?.includes(subFilters.type)
+        ) {
+            return false;
         }
 
-        if (subFilters.sort === 'name-desc') {
-            return (b?.name || '').localeCompare(a?.name || '');
+
+        if (
+            subFilters.feature?.length > 0 &&
+            !subFilters.feature.includes('all') &&
+            !subFilters.feature.some(feature =>
+                attr.feature?.includes(feature)
+            )
+        ) {
+            return false;
         }
 
-        const ratingOrder = {
-            top: 3,
-            popular: 2,
-            local: 1
-        };
 
-        const diff =
-            (ratingOrder[b.rating] || 0) -
-            (ratingOrder[a.rating] || 0);
+        if (
+            subFilters.rating !== 'all' &&
+            attr.rating !== subFilters.rating
+        ) {
+            return false;
+        }
 
-        return (
-            (a.sortIndex ?? 0) -
-            (b.sortIndex ?? 0)
-        ) || diff || (a.name || ''
-        ).localeCompare(b.name || '');
+
+        if (
+            subFilters.unesco === 'yes' &&
+            !attr.unesco_status?.included
+        ) {
+            return false;
+        }
+
+
+        if (
+            subFilters.unesco === 'no' &&
+            attr.unesco_status?.included
+        ) {
+            return false;
+        }
+
+
+        const status = attr.status ?? 'active';
+
+        if (!subFilters.status.includes(status)) {
+            return false;
+        }
+
+
+        return true;
+    });
+};
+
+
+// MYSQL SUB-OBJECTS (already objects)
+const filteredMysqlSubObjects = applyFilters(mysqlSubObjects);
+
+
+// STATIC SUB-OBJECTS
+const filteredStaticSubObjects = applyFilters(staticSubObjects);
+const filteredStaticSubObjects2 = applyFilters(staticSubObjects2);
+
+
+// SORT
+const sortFn = (a, b) => {
+
+    if (subFilters.sort === 'name-asc') {
+        return (a?.name || '').localeCompare(b?.name || '');
+    }
+
+    if (subFilters.sort === 'name-desc') {
+        return (b?.name || '').localeCompare(a?.name || '');
+    }
+
+
+    const ratingOrder = {
+        top: 3,
+        popular: 2,
+        local: 1
     };
 
-    const sortedSubObjects = [...filteredSubObjects].sort(sortFn);
-    const sortedSubObjects2 = [...filteredSubObjects2].sort(sortFn);
 
-    const showFilters = subObjects.length + subObjects2.length >= 5;
+    const diff =
+        (ratingOrder[b.rating] || 0) -
+        (ratingOrder[a.rating] || 0);
+
+
+    return (
+        (a.sortIndex ?? 0) -
+        (b.sortIndex ?? 0)
+    ) || diff || (
+        a.name || ''
+    ).localeCompare(b.name || '');
+};
+
+
+const sortedMysqlSubObjects =
+    [...filteredMysqlSubObjects].sort(sortFn);
+
+const sortedStaticSubObjects =
+    [...filteredStaticSubObjects].sort(sortFn);
+
+const sortedStaticSubObjects2 =
+    [...filteredStaticSubObjects2].sort(sortFn);
+
+
+const showStaticFilters =
+    subObjects.length + subObjects2.length >= 5;
+
+const showMysqlFilters =
+    mysqlSubObjects.length >= 5;
 
     const staticSubRegionPath = cityLocations[cityPath]?.subRegionPath || null;
 
@@ -524,12 +577,12 @@ const Attraction = () => {
                                 }
                                 </h3>
 
-                                {showFilters && (
+                                {showStaticFilters && (
                                     <AttractionsFilters lang={lang} filters={subFilters} setFilters={setSubFilters} />
                                 )
                                 }
 
-                                {sortedSubObjects.map(attr => (
+                                {sortedStaticSubObjects.map(attr => (
                                     <AttractionCardSub key={attr.id} attr={attr} lang={lang} />
                                 )
                                 )
@@ -545,7 +598,7 @@ const Attraction = () => {
                                 }
                                 </h3>
 
-                                {sortedSubObjects2.map(attr => (
+                                {sortedStaticSubObjects2.map(attr => (
                                     <AttractionCardSub key={attr.id} attr={attr} lang={lang} />
                                 )
                                 )
@@ -603,18 +656,36 @@ const Attraction = () => {
 
                         {mysqlSubObjects.length > 0 && (
                             <section className="attraction-sub">
-                                <h3> {subObjectsIntro ? stripOuterP(subObjectsIntro)
-                                    : (lang === 'ru' ? 'Достопримечательности' : lang === 'de' ? 'Sehenswürdigkeiten' : 'Пам’ятки')
-                                }
+
+                                <h3>
+                                    {subObjectsIntro
+                                        ? stripOuterP(subObjectsIntro)
+                                        : (
+                                            lang === 'ru'
+                                                ? 'Достопримечательности'
+                                                : lang === 'de'
+                                                    ? 'Sehenswürdigkeiten'
+                                                    : 'Пам’ятки'
+                                        )
+                                    }
                                 </h3>
 
-                                {mysqlSubObjects.map(attr => (
+                                {showMysqlFilters && (
+                                    <AttractionsFilters
+                                        lang={lang}
+                                        filters={subFilters}
+                                        setFilters={setSubFilters}
+                                    />
+                                )}
+
+                                {sortedMysqlSubObjects.map(attr => (
                                     <AttractionCardSub
                                         key={attr.id}
                                         attr={attr}
                                         lang={lang}
                                     />
                                 ))}
+
                             </section>
                         )}
 
