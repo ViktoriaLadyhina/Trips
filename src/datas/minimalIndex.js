@@ -184,7 +184,7 @@ const datas =
     rathaus_koln: { id: 718, ru: 'Кёльнская ратуша', de: 'Kölner Rathaus', uk: 'Кельнська ратуша' },
     roemisch_germanisches_museum: { ru: 'Римско-германский музей', de: 'Römisch-Germanisches Museum', uk: 'Римсько-германський музей' },
     farina_duftmuseum: { ru: 'Музей духов в доме Фарина', de: 'Duftmuseum im Farina-Haus', uk: 'Музей парфумів у домі Фаріна' },
-    museum_ludwig: { ru: 'Музей Людвига', de: 'Museum Ludwig', uk: 'Музей Людвіга' },
+    museum_ludwig: { id: 735, ru: 'Музей Людвига', de: 'Museum Ludwig', uk: 'Музей Людвіга' },
     schokoladenmuseum: { ru: 'Музей шоколада', de: 'Schokoladenmuseum', uk: 'Музей шоколаду' },
     miqua: { ru: 'Музей в археологическом квартале Кёльна – MiQua', de: 'Museum im archäologischen Viertel Köln – MiQua', uk: 'Музей в археологічному кварталі Кельна – MiQua' },
     wallraf_richartz_museum: { ru: 'Музей Вальрафа-Рихарца', de: 'Wallraf-Richartz-Museum', uk: 'Музей Вальрафа-Ріхарцa' },

@@ -17,10 +17,6 @@ export const Fotos = {
       'farina-duftmuseum': [
         { path: "Germany/nrw/koln/koln-city/farina-duftmuseum/001.jpg", title: { ru: "Музей духов в доме Фарина, 2025", uk: "Музей парфумів у домі Фаріна, 2025", de: "Duftmuseum im Farina-Haus, 2025" } }
       ],
-      'museum-ludwig': [
-        { path: "Germany/nrw/koln/koln-city/museum-ludwig/001.jpg", title: { ru: "Музей Людвига, 2025", uk: "Музей Людвіга, 2025", de: "Museum Ludwig, 2025" } },
-        { path: "Germany/nrw/koln/koln-city/museum-ludwig/002.jpg", title: { ru: "Музей Людвига, 2025", uk: "Музей Людвіга, 2025", de: "Museum Ludwig, 2025" } }
-      ],
       miquk: [
         { path: "Germany/nrw/koln/koln-city/miqua/001.jpg", title: { ru: "Музей в археологическом квартале Кёльна – MiQua (фото взято с интернета)", uk: "Музей в археологічному кварталі Кельна – MiQua (фото взято з Інтернету)", de: "Museum im archäologischen Viertel Köln – MiQua (Foto aus dem Internet)" } },
       ],
