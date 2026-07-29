@@ -25,9 +25,6 @@ export const Fotos = {
         { path: "Germany/nrw/koln/koln-city/schokoladenmuseum/002.jpg", title: { ru: "Музей шоколада, 2026", uk: "Музей шоколаду, 2026", de: "Schokoladenmuseum, 2026" } },
         { path: "Germany/nrw/koln/koln-city/schokoladenmuseum/003.jpg", title: { ru: "Музей шоколада, 2026", uk: "Музей шоколаду, 2026", de: "Schokoladenmuseum, 2026" } },
       ],
-      wallraf_richartz_museum: [
-        { path: "Germany/nrw/koln/koln-city/wallraf_richartz_museum/001.jpg", title: { ru: "Музей Вальрафа-Рихарца, 2025", uk: "Музей Вальрафа-Ріхарцa, 2025", de: "Wallraf-Richartz-Museum, 2025" } }
-      ],
       forstbotanischer_garten: [
         { path: "Germany/nrw/koln/koln-city/forstbotanischer_garten/001.jpg", title: { ru: "Ботанический сад и лесопарк (фото взято с википедии)", uk: "Ботанічний сад і лісопарк (фото взято з Вікіпедії)", de: "Forstbotanischer Garten (Foto von Wikipedia entnommen)" } }
       ],

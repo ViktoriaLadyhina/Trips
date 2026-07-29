@@ -198,6 +198,7 @@
 
         a {
             @include bold-text();
+            font-weight: inherit;
             text-decoration: none;
         }
 
