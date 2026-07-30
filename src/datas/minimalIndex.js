@@ -139,7 +139,7 @@ const datas =
 
     // Хохзауэрланд Kreis
     // sundern
-    sorpesee_sundern: { ru: 'Озеро Сорпезее', de: 'Sorpesee', uk: 'Озеро Сорпезее' },
+    sorpesee_sundern: { id: 741, ru: 'Озеро Сорпезее', de: 'Sorpesee', uk: 'Озеро Сорпезее' },
     ehrenmal_langscheid: { ru: 'Мемориал Лангшайд', de: 'Ehrenmal Langscheid', uk: 'Меморіал Лангшайд' },
 
     // Märkischer Kreis

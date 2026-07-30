@@ -173,7 +173,7 @@ async function getLocations(db, entityIds, lang) {
                 regionPath: location.region_path || null,
                 districtPath: location.district_path || "city",
                 subRegionPath: location.subRegion_path || null,
-                cityPath: location.city_paath || null,
+                cityPath: location.city_path || null,
                 cityDistrictPath: location.cityDistrict_path || null
             }
         ])
