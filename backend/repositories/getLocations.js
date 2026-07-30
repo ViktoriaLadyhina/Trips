@@ -32,7 +32,9 @@ async function getLocations(db, entityIds, lang) {
             city.path AS city_path,
 
             l.cityDistrict_id,
-            cityDistrict.path AS cityDistrict_path
+            cityDistrict.path AS cityDistrict_path,
+
+            l.extra_cityDistrict_ids
 
         FROM entity_locations l
 
@@ -94,7 +96,13 @@ async function getLocations(db, entityIds, lang) {
                 location.district_id,
                 location.subRegion_id,
                 location.city_id,
-                location.cityDistrict_id
+                location.cityDistrict_id,
+
+                ...(location.extra_cityDistrict_ids
+                    ? location.extra_cityDistrict_ids
+                        .split(",")
+                        .map(Number)
+                    : [])
             ])
         )
     ].filter(Boolean);
@@ -147,14 +155,25 @@ async function getLocations(db, entityIds, lang) {
                     district: locationNamesById[location.district_id] || null,
                     subRegion: locationNamesById[location.subRegion_id] || null,
                     city: locationNamesById[location.city_id] || null,
-                    cityDistrict: locationNamesById[location.cityDistrict_id] || null
+                    // cityDistrict can contain main + extra districts as comma-separated string
+                    cityDistrict: [
+                        locationNamesById[location.cityDistrict_id],
+
+                        ...(location.extra_cityDistrict_ids
+                            ? location.extra_cityDistrict_ids
+                                .split(",")
+                                .map(id => locationNamesById[id])
+                            : [])
+                    ]
+                        .filter(Boolean)
+                        .join(", ") || null
                 },
 
                 countryPath: location.country_path || null,
                 regionPath: location.region_path || null,
                 districtPath: location.district_path || "city",
                 subRegionPath: location.subRegion_path || null,
-                cityPath: location.city_path || null,
+                cityPath: location.city_paath || null,
                 cityDistrictPath: location.cityDistrict_path || null
             }
         ])
