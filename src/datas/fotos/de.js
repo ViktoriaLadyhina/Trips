@@ -558,23 +558,6 @@ export const Fotos = {
         { path: "Germany/nrw/arnsberg/Märkischer-Kreis/altena/st_matthaeus_church/001.jpg", title: { ru: "Приходская церковь Святого Матфея, 2025", uk: "Парафіяльна церква Святого Матвія, 2025", de: "Katholische Pfarrkirche St. Matthäus, 2025" } },
       ],
     },
-    sundern: {
-      gallery: [
-        { path: "Germany/nrw/arnsberg/Hochsauerlandkreis/sundern/001.jpg", title: { ru: "Зундерн, 2026", uk: "Зундерн, 2026", de: "Sundern, 2026" } },
-        { path: "Germany/nrw/arnsberg/Hochsauerlandkreis/sundern/002.jpg", title: { ru: "Зундерн, 2026", uk: "Зундерн, 2026", de: "Sundern, 2026" } },
-      ],
-      sorpesee_sundern: [
-        { path: "Germany/nrw/arnsberg/Hochsauerlandkreis/sundern/sorpesee/001.jpg", title: { ru: "Озеро Сорпезее, 2026", uk: "Озеро Сорпезее, 2026", de: "Sorpesee, 2026" } },
-        { path: "Germany/nrw/arnsberg/Hochsauerlandkreis/sundern/sorpesee/002.jpg", title: { ru: "Озеро Сорпезее, 2026", uk: "Озеро Сорпезее, 2026", de: "Sorpesee, 2026" } },
-        { path: "Germany/nrw/arnsberg/Hochsauerlandkreis/sundern/sorpesee/003.jpg", title: { ru: "Озеро Сорпезее, 2026", uk: "Озеро Сорпезее, 2026", de: "Sorpesee, 2026" } },
-      ],
-      ehrenmal_langscheid: [
-        { path: "Germany/nrw/arnsberg/Hochsauerlandkreis/sundern/ehrenmal/001.jpg", title: { ru: "Мемориал Лангшайд, 2026", uk: "Меморіал Лангшайд, 2026", de: "Ehrenmal Langscheid, 2026" } },
-        { path: "Germany/nrw/arnsberg/Hochsauerlandkreis/sundern/ehrenmal/002.jpg", title: { ru: "Мемориал Лангшайд, 2026", uk: "Меморіал Лангшайд, 2026", de: "Ehrenmal Langscheid, 2026" } },
-        { path: "Germany/nrw/arnsberg/Hochsauerlandkreis/sundern/ehrenmal/003.jpg", title: { ru: "Панорамный вид на озеро с башни, 2026", uk: "Панорамний вид на озеро з вежі, 2026", de: "Panoramablick auf den See vom Turm, 2026" } },
-        { path: "Germany/nrw/arnsberg/Hochsauerlandkreis/sundern/ehrenmal/004.jpg", title: { ru: "Панорамный вид на озеро с башни, 2026", uk: "Панорамний вид на озеро з вежі, 2026", de: "Panoramablick auf den See vom Turm, 2026" } },
-      ]
-    },
 
   },
 
