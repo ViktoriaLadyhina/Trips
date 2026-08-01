@@ -14,9 +14,6 @@ export const Fotos = {
       'roemisch-germanisches-museum': [
         { path: "Germany/nrw/koln/koln-city/roemisch-germanisches-museum/001.jpg", title: { ru: "Римско-германский музей, 2025", uk: "Римсько-германський музей, 2025", de: "Römisch-Germanisches Museum, 2025" } }
       ],
-      'farina-duftmuseum': [
-        { path: "Germany/nrw/koln/koln-city/farina-duftmuseum/001.jpg", title: { ru: "Музей духов в доме Фарина, 2025", uk: "Музей парфумів у домі Фаріна, 2025", de: "Duftmuseum im Farina-Haus, 2025" } }
-      ],
       miquk: [
         { path: "Germany/nrw/koln/koln-city/miqua/001.jpg", title: { ru: "Музей в археологическом квартале Кёльна – MiQua (фото взято с интернета)", uk: "Музей в археологічному кварталі Кельна – MiQua (фото взято з Інтернету)", de: "Museum im archäologischen Viertel Köln – MiQua (Foto aus dem Internet)" } },
       ],
@@ -82,9 +79,6 @@ export const Fotos = {
       ],
       karneval_koln: [
         { path: "Germany/nrw/koln/koln-city/karneval/001.jpg", title: { ru: "Кёльнский карнавал (фото взято с интернета)", uk: "Кельнський карнавал (фото взято з Інтернету)", de: "Kölner Karneval (Foto aus dem Internet)" } },
-      ],
-      dufthaus_4711_koln: [
-        { path: "Germany/nrw/koln/koln-city/dufthaus_4711/001.jpg", title: { ru: "Дом ароматов 4711 (фото взято с интернета)", uk: "Будинок одеколону 4711 (фото взято з Інтернету)", de: "Duft-Haus 4711 (Foto aus dem Internet)" } },
       ],
       skulpturenpark_koln: [
         { path: "Germany/nrw/koln/koln-city/skulpturenpark/001.jpg", title: { ru: "Парк скульптур в Кёльне, 2026", uk: "Парк скульптур у Кельні, 2026", de: "Skulpturenpark in Köln, 2026" } },

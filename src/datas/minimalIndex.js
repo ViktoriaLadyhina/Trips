@@ -201,7 +201,7 @@ const datas =
     ostasiatische_kunst_koln: { ru: 'Музей восточно‑азиатского искусства', de: 'Museum für Ostasiatische Kunst', uk: 'Музей східноазіатського мистецтва' },
     museum_schnuetgen_koln: { ru: 'Музей Шнютгена', de: 'Museum Schnütgen', uk: 'Музей Шнютгена' },
     zoo_koln: { ru: 'Кёльнский зоопарк', de: 'Kölner Zoo', uk: 'Кельнський зоопарк' },
-    dufthaus_4711_koln: { ru: 'Дом одеколона 4711', de: 'Duft-Haus 4711', uk: 'Будинок одеколону 4711' },
+    dufthaus_4711_koln: { id: 744, ru: 'Дом одеколона 4711', de: 'Duft-Haus 4711', uk: 'Будинок одеколону 4711' },
     skulpturenpark_koln: { ru: 'Парк скульптур в Кёльне', de: 'Skulpturenpark in Köln', uk: 'Парк скульптур у Кельні' },
     rautenstrauch_joest_museum_koln: { ru: 'Музей Раутенштраух-Йост', de: 'Rautenstrauch-Joest-Museum', uk: 'Музей Раутенштраух-Йост' },
     finkens_garten_koln: { ru: 'Экологический сад Финкенсгартен', de: 'Finkens Garten', uk: 'Екологічний сад Фінкенсгартен' },

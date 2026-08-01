@@ -59,60 +59,6 @@ const datas = [
         }
     },
     {
-        id: "farina_duftmuseum",
-        name: "Duftmuseum im Farina-Haus",
-        type: ["museum"], rating: "popular",
-        path: "farina_duftmuseum",
-        countryPath: "germany", regionPath: "nrw", districtPath: "city", cityPath: "koln_city",
-        // showMore: true, hiddenFromList: true,
-        fotoCard: "Germany/nrw/koln/koln-city/farina-duftmuseum/001.jpg",
-        location: "Köln, Stadtteil Altstadt-Nord (Stadtbezirk Innenstadt), Deutschland",
-        officialSite: [
-            { "bold": "Offizielle Website des Farina-Museums", "link": "https://farina.org/de/duftmuseum/" }
-        ],
-        construction_period: "1709 (Gründungsjahr der Farina-Fabrik)",
-        founder: " Johann Maria Farina",
-        short_description: "Das Duftmuseum im Farina-Haus, auch bekannt als „Haus des Kölnisch Wassers“, ist das älteste Duftmuseum der Welt und die Geburtsstätte des berühmten Eau de Cologne, oder „Kölner Wasser“. Hier schuf Johann Maria Farina 1709 das erste Eau de Cologne, das zu einem Symbol der Stadt wurde und Köln weltberühmt machte.",
-        full_description: {
-            title: "Beschreibung und Geschichte",
-            items: [
-                { "bold": "Über das Museum.", "text": "Das Duftmuseum im Farina-Haus befindet sich im Herzen der Altstadt von Köln, direkt gegenüber dem Rathaus. Es widmet sich der Geschichte der Schaffung und Herstellung des berühmten Eau de Cologne, was wörtlich „Kölner Wasser“ bedeutet. Besucher erfahren hier die dreihundertjährige Geschichte einer der ältesten Parfümfabriken Europas." },
-                { "bold": "Geschichte und Gründer.", "text": "Die Parfümfabrik wurde 1709 vom Italiener Johann Maria Farina gegründet. Er kreierte den weltweit ersten frischen, zitrus-blumigen Duft, den er nach der Stadt, in der er lebte, „Eau de Cologne“ nannte. Dieser Duft wurde schnell zum Symbol von Luxus und Reinheit, eroberte die europäischen Höfe und begründete die weltweite Parfümtradition." },
-                { "bold": "Museums-Ausstellung.", "text": "Das Museum zeigt eine reichhaltige Sammlung, darunter alte Flakons und Duftbehälter, originale Rezepte und Destillationsgeräte für ätherische Öle. In den Räumen sind Möbel und Gemälde des 18. Jahrhunderts zu sehen, sowie Dokumente und Briefe, die die internationalen Kontakte der Familie Farina belegen." },
-                { "bold": "„Duftkammer“.", "text": "Ein besonderer Teil der Ausstellung ist die sogenannte „Duftkammer“, in der Besucher die Parfümherstellung kennenlernen und die Düfte verschiedener Essenzen riechen können. Hier wird erklärt, wie natürliche Zutaten – Bergamotte, Zitrone, Rosmarin und Lavendel – zu raffinierten Duftkompositionen verarbeitet werden." },
-                { "bold": "Fabrik und Kontinuität.", "text": "Die Firma Farina ist bis heute in Betrieb und wird von der achten Generation der Familie geführt. Produkte unter der Marke „Farina Gegenüber“ werden weiterhin nach dem Originalrezept hergestellt und weltweit exportiert." }
-            ]
-        },
-        tickets_and_entry: {
-            title: "Praktische Informationen",
-            items: [
-                { "bold": "Adresse:", "text": "Obenmarspforten 21, 50667 Köln, Deutschland" },
-                { "bold": "Öffnungszeiten:", "text": "täglich von 10:00 bis 18:00 Uhr (Führungen nach Plan)" },
-                { "bold": "Ticketpreise (2025):", "text": "<br>Erwachsene – 8 €, <br>ermäßigt – 5 €, <br>Kinder bis 10 Jahre – kostenlos" },
-                { "bold": "Führungen:", "text": "Das Museum ist nur im Rahmen von Führungen zugänglich, die in mehreren Sprachen angeboten werden. Die Tour dauert ca. 45 Minuten und endet im Museumsshop, wo das originale Eau de Cologne nach Farinas Rezept gekauft werden kann." }
-            ]
-        },
-        interestingFacts: {
-            title: "Interessante Fakten",
-            items: [
-                { "text": "Hier wurde 1709 das weltweit erste Eau de Cologne geschaffen, der Begründer der Kategorie leichter Zitrusdüfte." },
-                { "text": "Der Name „Eau de Cologne“ bedeutet wörtlich „Kölner Wasser“ und entstand dank Farina." },
-                { "text": "Farina wählte einen Duft, der ihn an die Frische eines italienischen Morgens nach dem Regen erinnerte – so beschrieb er seine Kreation." },
-                { "text": "Im Museum sind noch originale Flakons aus dem 18. Jahrhundert und Briefe von Kunden aus europäischen Königshäusern zu sehen." },
-                { "text": "Das Museum liegt gegenüber dem Kölner Rathaus und gilt als das älteste Parfümmuseum der Welt." }
-            ]
-        },
-        coord: { lat: 50.93774963688874, lng: 6.957929134368896 },
-        meta: {
-            title: "Duftmuseum im Farina-Haus – auch bekannt als Haus des Kölnisch Wassers",
-            description: "Das Duftmuseum im Farina-Haus, auch bekannt als Haus des Kölnisch Wassers, ist das älteste Duftmuseum in Köln und die Geburtsstätte des berühmten Eau de Cologne. Hier schuf Johann Maria Farina 1709 das erste Eau de Cologne.",
-            ogTitle: "Farina-Haus in Köln – Haus des Kölnisch Wassers und Museum des Eau de Cologne",
-            ogDescription: "Besuchen Sie das Duftmuseum im Farina-Haus, das auch als Haus des Kölnisch Wassers bekannt ist – die Heimat des legendären Eau de Cologne. Erleben Sie Geschichte, Düfte und die dreihundertjährige Tradition des Eau de Cologne.",
-            keywords: "Farina Duftmuseum, Köln, Sehenswürdigkeit, Parfümerie, historisches Museum, Geschichte der Düfte, Museum Köln, Kulturerbe, Düfte, Ausstellung, Sammlungen, Tourismus Deutschland, Führungen, historisches Gebäude",
-            ogImage: "https://our-travels.info/foto/Germany/nrw/koln/koln-city/farina-duftmuseum/001.jpg"
-        }
-    },
-    {
         id: "schokoladenmuseum",
         name: "Schokoladenmuseum",
         type: ["museum"], rating: "popular",
@@ -423,69 +369,6 @@ const datas = [
             ogDescription: "Modernes ethnologisches Museum mit einzigartigen Sammlungen der Kulturen der Welt, interaktiven Ausstellungen und Sonderprojekten in Köln.",
             keywords: "Rautenstrauch-Joest-Museum, Köln, Sehenswürdigkeit, Ethnographie, Weltkultur, Museum Köln, Kunstsammlungen, Ausstellungen, Kulturerbe, Tourismus Deutschland, Führungen, historisches Gebäude, Volkskunst",
             ogImage: "https://our-travels.info/foto/Germany/nrw/koln/koln-city/rautenstrauch_joest_museum/001.jpg"
-        }
-    },
-    {
-        id: "dufthaus_4711_koln",
-        name: "Duft-Haus 4711",
-        type: ["museum"], rating: "popular",
-        path: "dufthaus_4711_koln",
-        countryPath: "germany", regionPath: "nrw", districtPath: "city", cityPath: "koln_city",
-        // showMore: true, hiddenFromList: true,
-        fotoCard: "Germany/nrw/koln/koln-city/dufthaus_4711/001.jpg",
-        location: "Köln, Stadtteil Altstadt-Nord (Stadtbezirk Innenstadt), Deutschland",
-        officialSite: [
-            { bold: "Offizielle Website", link: "https://4711.com/" }
-        ],
-        short_description: "Das Duft-Haus 4711 ist ein historisches Gebäude im Zentrum von Köln, verbunden mit dem legendären 4711 Kölnisch Wasser. Hier befindet sich der Flagship-Store der Marke, eine kleine historische Ausstellung und es werden thematische Führungen und Workshops angeboten, die sich mit der Geschichte und den Traditionen des berühmten Eau de Cologne beschäftigen.",
-        full_description: {
-            title: "Beschreibung und Geschichte",
-            items: [
-                { bold: "Duft-Haus 4711 ", text: "– historisches Gebäude im Zentrum von Köln, verbunden mit dem legendären 4711 Kölnisch Wasser. Hier befindet sich der Flagship-Store der Marke, eine kleine historische Ausstellung und es werden thematische Führungen und Workshops angeboten, die sich mit der Geschichte und den Traditionen des berühmten Eau de Cologne beschäftigen." },
-                { bold: "Geschichte der Marke 4711 ", text: "beginnt Ende des 18. Jahrhunderts. Der Legende nach erhielt 1792 der Kaufmann Wilhelm Mülhens von einem Kartäusermönch anlässlich seiner Hochzeit das Rezept für das duftende „Wunderwasser“. Dieses Wasser (aqua mirabilis) bildete die Grundlage für das, was später als Eau de Cologne (Kölnisch Wasser) bekannt wurde." },
-                { text: "Der genaue Grund für die Wahl des Namens „4711“ hängt mit der vorübergehenden französischen Besetzung von Köln Ende des 18. Jahrhunderts zusammen: Die Stadt wurde neu vermessen und dem Gebäude in der Glockengasse (Glockengasse) wurde die Nummer 4711 zugewiesen – genau diese Zahl wurde zum Markennamen." },
-                { text: "Das Gebäude 4711 in seiner neugotischen Form wurde Mitte des 19. Jahrhunderts (ca. 1852–1854) für Peter Joseph Mülhens, einen der Mitglieder der Unternehmerfamilie, erbaut. Der Architekt laut historischen Quellen war Johann Jakob Claassen. Das Gebäude wurde im Zweiten Weltkrieg zerstört und teilweise in seiner heutigen Form wieder aufgebaut." },
-                { text: "Die Marke 4711 wurde zu einem der bekanntesten Symbole Kölns und zu einem der weltweit bekanntesten Düfte, mit Export in Dutzende Länder und großem Einfluss auf die Parfümindustrie." }
-            ]
-        },
-        tickets_and_entry: {
-            title: "Praktische Informationen",
-            items: [
-                { bold: "Adresse:", text: "Glockengasse 4, 50667 Köln, Deutschland (in der Nähe der Oper und ca. 10 Gehminuten vom Hauptbahnhof entfernt)." },
-                { bold: "Öffnungszeiten:", text: "in der Regel täglich von morgens bis abends (bitte auf der offiziellen Website die aktuellen Zeiten prüfen)." }
-            ]
-        },
-        sub_objects: {
-            title: "Ausstellungen und Veranstaltungen",
-            items: [
-                { bold: "Museum und historische Ausstellung.", text: "Im Gebäude gibt es eine kleine Ausstellungsecke, in der alte Werbeplakate, Flakons und Artefakte gezeigt werden, die die Geschichte der Marke 4711 von der Legende ihrer Entstehung bis zur Gegenwart erzählen." },
-                { bold: "Flagship-Store.", text: "Im Erdgeschoss befindet sich der moderne Flagship-Store, in dem originale Kölnisch Wasser, Neuheiten und Souvenirs angeboten werden." },
-                { bold: "4711 Duftbrunnen.", text: "Auf dem Gelände gibt es einen Brunnen, an dem Besucher den klassischen 4711-Duft erleben und ihre Lieblingsnoten auswählen können." },
-                { bold: "Historische Führungen.", text: "Es werden Führungen zur Geschichte von 4711 angeboten, die über die Marke, ihre Bedeutung in Kultur und Parfümerie berichten." },
-                { bold: "Duft-Workshops.", text: "Interaktive Veranstaltungen, bei denen die Teilnehmer erfahren, wie Parfüms hergestellt werden, und ihren eigenen Duft kreieren können." },
-                { bold: "„Duft-Menü“.", text: "Besondere Events, bei denen das klassische Eau de Cologne mit einem Vier-Gänge-Menü kombiniert wird und eine sensorische Reise entsteht." }
-            ]
-        },
-        interestingFacts: {
-            title: "Interessante Fakten",
-            items: [
-                { text: "Die Glockengasse 4711-Uhr spielt jede Stunde zwischen 09:00 und 19:00 die Melodien „La Marseillaise“ und „Der treue Husar“." },
-                { text: "Die Marke 4711 verkaufte den Duft ursprünglich nicht nur als Parfüm, sondern auch als universelles Mittel zur Linderung von Beschwerden." },
-                { text: "Heute ist 4711 nicht nur das originale Cologne, sondern auch eine ganze Linie von Düften, Pflegeprodukten und Souvenirs." },
-                { text: "Jedes Jahr besuchen Zehntausende Touristen das Haus 4711." }
-            ]
-        },
-        construction_period: "ca. 1852–1854 (Bau des Gebäudes im neugotischen Stil); Marke gegründet 1792",
-        architects: "Johann Jakob Claassen – Architekt des Gebäudes",
-        founder: "Wilhelm Mülhens spielte eine Schlüsselrolle bei der Entwicklung der Marke 4711 und deren weltweiter Bekanntheit Ende des 18. bis Anfang des 19. Jahrhunderts; die Familie Mülhens erweiterte die Produktion und vertrieb die Produkte weltweit.",
-        coord: { lat: 50.93848, lng: 6.95225 },
-        meta: {
-            title: "Duft-Haus 4711 in Köln – Geschichte des legendären Eau de Cologne",
-            description: "Besuchen Sie das historische Duft-Haus 4711 im Zentrum von Köln: Flagship-Store, Ausstellung über das berühmte Eau de Cologne, Führungen und Duft-Workshops.",
-            ogTitle: "Duft-Haus 4711 – Legende von Köln und originaler Duft",
-            ogDescription: "Entdecken Sie das Duft-Haus 4711: historisches Gebäude, Markenstore, Ausstellung und Führungen über das berühmte Kölnisch Wasser. Ideal für Touristen und Duftliebhaber.",
-            keywords: "Haus des Eau de Cologne 4711, Köln, Sehenswürdigkeit, Kölnisch Wasser, Parfümerie, Museum Köln, Parfumgeschichte, Kulturerbe, Ausstellungen, Verkostungen, Tourismus Deutschland, Führungen, historisches Gebäude",
-            ogImage: "https://our-travels.info/foto/Germany/nrw/koln/koln-city/dufthaus_4711/001.jpg"
         }
     },
     {
