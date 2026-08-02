@@ -14,9 +14,6 @@ export const Fotos = {
       'roemisch-germanisches-museum': [
         { path: "Germany/nrw/koln/koln-city/roemisch-germanisches-museum/001.jpg", title: { ru: "Римско-германский музей, 2025", uk: "Римсько-германський музей, 2025", de: "Römisch-Germanisches Museum, 2025" } }
       ],
-      miquk: [
-        { path: "Germany/nrw/koln/koln-city/miqua/001.jpg", title: { ru: "Музей в археологическом квартале Кёльна – MiQua (фото взято с интернета)", uk: "Музей в археологічному кварталі Кельна – MiQua (фото взято з Інтернету)", de: "Museum im archäologischen Viertel Köln – MiQua (Foto aus dem Internet)" } },
-      ],
       schokoladenmuseum: [
         { path: "Germany/nrw/koln/koln-city/schokoladenmuseum/001.jpg", title: { ru: "Музей шоколада (фото взято с википедии)", uk: "Музей шоколаду (фото взято з Вікіпедії)", de: "Schokoladenmuseum (Foto von Wikipedia entnommen)" } },
         { path: "Germany/nrw/koln/koln-city/schokoladenmuseum/002.jpg", title: { ru: "Музей шоколада, 2026", uk: "Музей шоколаду, 2026", de: "Schokoladenmuseum, 2026" } },
@@ -464,7 +461,7 @@ export const Fotos = {
         { path: "Germany/nrw/arnsberg/Märkischer-Kreis/luedenscheid/sternplatz/002.jpg", title: { ru: "Памятник дяде Вилли, 2026", uk: "Пам'ятник дядьку Віллі, 2026", de: "Denkmal von Onkel Willi, 2026" } },
       ],
       fontain_sternplatz_luedenscheid: [
-        { path: "Germany/nrw/arnsberg/Märkischer-Kreis/luedenscheid/sternplatz/003.jpg", title: { ru: "Фонтан на площади Штернплац, 2006", uk: "Фонтан на площі Штернплац, 2006", de: "Brunnen auf dem Sternplatz, 2006" } },
+        { path: "Germany/nrw/arnsberg/Märkischer-Kreis/luedenscheid/sternplatz/003.jpg", title: { ru: "Фонтан на площади Штернплац, 2026", uk: "Фонтан на площі Штернплац, 2026", de: "Brunnen auf dem Sternplatz, 2026" } },
       ],
       history_museum_luedenscheid: [
         { path: "Germany/nrw/arnsberg/Märkischer-Kreis/luedenscheid/history_museum_luedenscheid/001.JPG", title: { ru: "Исторический музей Люденшайда (фото взято с интернета)", uk: "Історичний музей Люденшайда (фото взято з Інтернету)", de: "Geschichtsmuseum Lüdenscheid (Foto aus dem Internet)" } },
@@ -496,8 +493,10 @@ export const Fotos = {
         { path: "Germany/nrw/arnsberg/Märkischer-Kreis/luedenscheid/neuenhof/004.jpg", title: { ru: "Замок Нойенхоф (фото взято с интернета)", uk: "Замок Нойенхоф (фото взято з Інтернету)", de: "Schloss Neuenhof (Foto aus dem Internet)" } },
       ],
       schloss_oedenthal_luedenscheid: [
-        { path: "Germany/nrw/arnsberg/Märkischer-Kreis/luedenscheid/schloss_oedenthal/001.jpg", title: { ru: "Усадьба Оеденталь (фото взято с интернета)", uk: "Садиба Оеденталь (фото взято з Інтернету)", de: "Schloss Oedenthal (Foto aus dem Internet)" } },
+        { path: "Germany/nrw/arnsberg/Märkischer-Kreis/luedenscheid/schloss_oedenthal/001.jpg", title: { ru: "Усадьба Оеденталь, 2026", uk: "Садиба Оеденталь, 2026", de: "Schloss Oedenthal, 2026" } },
         { path: "Germany/nrw/arnsberg/Märkischer-Kreis/luedenscheid/schloss_oedenthal/002.jpg", title: { ru: "Усадьба Оеденталь (фото взято с интернета)", uk: "Садиба Оеденталь (фото взято з Інтернету)", de: "Schloss Oedenthal (Foto aus dem Internet)" } },
+        { path: "Germany/nrw/arnsberg/Märkischer-Kreis/luedenscheid/schloss_oedenthal/003.jpg", title: { ru: "Усадьба Оеденталь, 2026", uk: "Садиба Оеденталь, 2026", de: "Schloss Oedenthal, 2026" } },
+        { path: "Germany/nrw/arnsberg/Märkischer-Kreis/luedenscheid/schloss_oedenthal/004.jpg", title: { ru: "Усадьба Оеденталь, 2026", uk: "Садиба Оеденталь, 2026", de: "Schloss Oedenthal, 2026" } },
       ],
       bremecker_hammer_luedenscheid: [
         { path: "Germany/nrw/arnsberg/Märkischer-Kreis/luedenscheid/bremecker_hammer/001.jpg", title: { ru: "Bremecker Hammer – технико-исторический музей кузнечного дела (фото взято с интернета)", uk: "Bremecker Hammer – техніко-історичний музей ковальського ремесла (фото взято з Інтернету)", de: "Bremecker Hammer (Foto aus dem Internet)" } },
