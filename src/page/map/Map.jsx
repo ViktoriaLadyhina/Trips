@@ -140,6 +140,7 @@ const Map = () => {
                             <ul>
                               <li><Link to="/germany/nrw/arnsberg/sundern/attractions/sorpesee_sundern">{t.attractions.sorpesee_sundern[lang]}</Link></li>
                               <li><Link to="/germany/nrw/arnsberg/sundern/attractions/ehrenmal_langscheid">{t.attractions.ehrenmal_langscheid[lang]}</Link></li>
+                              <li><Link to="/germany/nrw/arnsberg/sundern/attractions/burg_amecke">{t.attractions.burg_amecke[lang]}</Link></li>
                             </ul>
                           </li>
                         </ul>
@@ -234,7 +235,7 @@ const Map = () => {
                               <li><Link to="/germany/nrw/city/koln_city/attractions/rathaus_koln">{t.attractions.rathaus_koln[lang]}</Link></li>
                               <li><Link to="/germany/nrw/city/koln_city/attractions/st_maria_himmelfahrt_koln">{t.attractions.st_maria_himmelfahrt_koln[lang]}</Link></li>
                               <li><Link to="/germany/nrw/city/koln_city/attractions/guerzenich_koln">{t.attractions.guerzenich_koln[lang]}</Link></li>
-                              <li><Link to="/germany/nrw/city/koln_city/attractions/miqua">{t.attractions.miqua[lang]}</Link></li>
+                              <li><Link to="/germany/nrw/city/koln_city/attractions/miqua_koln">{t.attractions.miqua_koln[lang]}</Link></li>
                               <li><Link to="/germany/nrw/city/koln_city/attractions/roemisch_germanisches_museum">{t.attractions.roemisch_germanisches_museum[lang]}</Link></li>
                               <li><Link to="/germany/nrw/city/koln_city/attractions/farina_duftmuseum">{t.attractions.farina_duftmuseum[lang]}</Link></li>
                               <li><Link to="/germany/nrw/city/koln_city/attractions/dufthaus_4711_koln">{t.attractions.dufthaus_4711_koln[lang]}</Link></li>
