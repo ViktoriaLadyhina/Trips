@@ -11,9 +11,6 @@ export const Fotos = {
 
     // округ Кёльн
     koln_city: {
-      'roemisch-germanisches-museum': [
-        { path: "Germany/nrw/koln/koln-city/roemisch-germanisches-museum/001.jpg", title: { ru: "Римско-германский музей, 2025", uk: "Римсько-германський музей, 2025", de: "Römisch-Germanisches Museum, 2025" } }
-      ],
       schokoladenmuseum: [
         { path: "Germany/nrw/koln/koln-city/schokoladenmuseum/001.jpg", title: { ru: "Музей шоколада (фото взято с википедии)", uk: "Музей шоколаду (фото взято з Вікіпедії)", de: "Schokoladenmuseum (Foto von Wikipedia entnommen)" } },
         { path: "Germany/nrw/koln/koln-city/schokoladenmuseum/002.jpg", title: { ru: "Музей шоколада, 2026", uk: "Музей шоколаду, 2026", de: "Schokoladenmuseum, 2026" } },

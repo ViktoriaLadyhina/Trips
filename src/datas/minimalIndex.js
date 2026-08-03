@@ -185,7 +185,7 @@ const datas =
     //Köln-city
     cologne_cathedral: { id: 717, ru: 'Кёльнский собор', de: 'Kölner Dom', uk: 'Кельнський собор' },
     rathaus_koln: { id: 718, ru: 'Кёльнская ратуша', de: 'Kölner Rathaus', uk: 'Кельнська ратуша' },
-    roemisch_germanisches_museum: { ru: 'Римско-германский музей', de: 'Römisch-Germanisches Museum', uk: 'Римсько-германський музей' },
+    roemisch_germanisches_museum: { id: 747, ru: 'Римско-германский музей', de: 'Römisch-Germanisches Museum', uk: 'Римсько-германський музей' },
     farina_duftmuseum: { ru: 'Музей духов в доме Фарина', de: 'Duftmuseum im Farina-Haus', uk: 'Музей парфумів у домі Фаріна' },
     museum_ludwig: { id: 735, ru: 'Музей Людвига', de: 'Museum Ludwig', uk: 'Музей Людвіга' },
     schokoladenmuseum: { ru: 'Музей шоколада', de: 'Schokoladenmuseum', uk: 'Музей шоколаду' },
