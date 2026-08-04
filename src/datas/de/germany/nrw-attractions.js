@@ -2,62 +2,6 @@ const datas = [
 
     // Köln-city
    
-    // {
-    //     id: "roemisch_germanisches_museum",
-    //     name: "Römisch-Germanisches Museum",
-    //     type: ["museum"], rating: "popular",
-    //     path: "roemisch_germanisches_museum",
-    //     countryPath: "germany", regionPath: "nrw", districtPath: "city", cityPath: "koln_city",
-    //     // showMore: true, hiddenFromList: true,
-    //     fotoCard: "Germany/nrw/koln/koln-city/roemisch-germanisches-museum/001.jpg",
-    //     location: "Köln, Stadtteil Altstadt-Nord (Stadtbezirk Innenstadt), Deutschland",
-    //     officialSite: [
-    //         { bold: "Offizielle Webseite des Römisch-Germanischen Museums", link: "https://museenkoeln.de/portal/Roemisch-Germanisches-Museum" }
-    //     ],
-    //     construction_period: "1974 (gegründet 1946, Renovierung seit 2019)",
-    //     architects: ["Heinz Röcke, ", "Klaus Renner"],
-    //     founder: "Archäologischer Dienst Köln (als Reaktion auf die Entdeckung der römischen Villa mit Dionysosmosaik, 1941)",
-    //     short_description: "Das Römisch-Germanische Museum in Köln bewahrt einzigartige archäologische Funde aus der römischen Zeit. Es wurde direkt über den Ruinen einer antiken Villa mit dem Dionysosmosaik errichtet und bildet eine Brücke zwischen Antike und Moderne. Hier werden Mosaike, Glas, Schmuck und Artefakte präsentiert, die die Geschichte von Köln als antike Kolonie Colonia Claudia Ara Agrippinensium erzählen.",
-    //     full_description: {
-    //         title: "Beschreibung und Geschichte",
-    //         items: [
-    //             { bold: "Über das Museum.", text: "Das Römisch-Germanische Museum bewahrt umfangreiche archäologische Funde, die die Geschichte Kölns – der römischen Kolonie Colonia Claudia Ara Agrippinensium – erzählen. In der Sammlung finden sich Kunstwerke und Alltagsgegenstände der römischen Zeit: Schmuck, Glasgefäße, Marmorgrabsteine, Keramik und Münzen." },
-    //             { bold: "Hauptattraktion", text: " – das Dionysosmosaik (Dionysosmosaik), datiert auf ca. 220–230 n. Chr. Es bedeckte den Boden einer römischen Villa, auf deren Ruinen das erste Museumsgebäude errichtet wurde. Neben dem Mosaik kann man hier eine große Sammlung römischen Glases, weiblichen Schmucks und Alltagsgegenständen sehen, die bei archäologischen Ausgrabungen in Köln gefunden wurden." },
-    //             { bold: "Ausstellung und Bedeutung.", text: "Neben dem Mosaik ist das Museum bekannt für seine Sammlung römischen und germanischen Glases, weiblichen Schmucks, Amphoren, Alltagsgegenstände und Münzen. Es erzählt die Geschichte der Stadt Köln, die zur Zeit des Römischen Reiches Colonia Claudia Ara Agrippinensium hieß. Das Museum erfüllt auch wissenschaftliche und archäologische Funktionen – es beteiligt sich an Ausgrabungen und am Erhalt des antiken Erbes der Region." },
-    //             { bold: "Museumsgründung.", text: "Das Museum wurde 1946 kurz nach dem Zweiten Weltkrieg gegründet. Anlass für die Gründung war ein Zufallsfund – 1941, während Bauarbeiten am Kölner Dom, entdeckten Archäologen die Ruinen eines römischen Hauses mit dem prächtigen Dionysosmosaik. Um den Fund vor Ort (in situ) zu bewahren, wurde beschlossen, das Museum direkt über diesen Ruinen zu errichten." },
-    //             { bold: "Gebäude und Architektur.", text: "Das moderne Museumsgebäude am Roncalliplatz 4 wurde von den Architekten Heinz Röcke und Klaus Renner entworfen. Es wurde 1974 eröffnet. Die Architektur ist streng und funktional, im Geist des Modernismus der 1970er Jahre. Klare geometrische Formen und große Panoramafenster unterstreichen den wissenschaftlichen Charakter des Museums und erzeugen den Eindruck ruhiger Monumentalität. Im alten Gebäude war das Mosaik sogar von außen sichtbar – durch ein großes Fenster zur Platzseite am Kölner Dom." },
-    //             { bold: "Renovierung.", text: "Heute befindet sich das Museumsgebäude in einer umfassenden Renovierung (seit 2019, Fertigstellung geplant für 2027). Die Hauptausstellung ist vorübergehend im Belgischen Haus in der Cäcilienstraße untergebracht. Trotz des Umzugs arbeitet das Museum weiterhin und empfängt Besucher." },
-    //         ]
-    //     },
-    //     tickets_and_entry: {
-    //         title: "Praktische Informationen",
-    //         items: [
-    //             { bold: "Adresse (temporäre Ausstellung):", text: "Belgisches Haus, Cäcilienstraße 46, 50667 Köln" },
-    //             { bold: "Altes Gebäude:", text: "Roncalliplatz 4, neben dem Kölner Dom" },
-    //             { bold: "Öffnungszeiten:", text: "<br>Mittwoch bis Montag, 10:00 – 18:00, <br>Dienstag geschlossen" },
-    //             { bold: "Eintrittspreise (2025):", text: "<br>Erwachsene – 6 €, <br>ermäßigt – 3 €" },
-    //         ]
-    //     },
-    //     interestingFacts: {
-    //         title: "Interessante Fakten",
-    //         items: [
-    //             { text: "Das Museum wurde nach der zufälligen Entdeckung einer römischen Villa im Jahr 1941 gegründet – direkt unter dem zukünftigen Platz beim Kölner Dom." },
-    //             { text: "Das Dionysosmosaik gilt als eines der schönsten römischen Mosaike nördlich der Alpen." },
-    //             { text: "Das erste Museumsgebäude wurde direkt über den Originalruinen errichtet – ein seltenes Beispiel für eine In-situ-Ausstellung." },
-    //             { text: "Die Sammlung römischen Glases des Museums ist eine der größten der Welt." },
-    //             { text: "Seit 2019 befindet sich das Museum in Renovierung; die Eröffnung des modernisierten Gebäudes ist für 2027 geplant." }
-    //         ]
-    //     },
-    //     coord: { lat: 50.940556, lng: 6.959028 },
-    //     meta: {
-    //         title: "Römisch-Germanisches Museum in Köln: Antike unter dem Dom",
-    //         description: "Das Römisch-Germanische Museum ist ein einzigartiges archäologisches Museum in Köln, errichtet über einer römischen Villa. Dionysosmosaik, Glas, Schmuck und Geschichte der Stadt Colonia.",
-    //         ogTitle: "Römisch-Germanisches Museum Köln — Geschichte und Dionysosmosaik",
-    //         ogDescription: "Museum der antiken Colonia: Dionysosmosaik, römisches Glas und Archäologie in Köln. Erfahren Sie, wie die Antike unter der modernen Stadt erhalten blieb.",
-    //         keywords: "Römisch-Germanisches Museum, Köln, Sehenswürdigkeit, Archäologie, römische Geschichte, Antike, historische Exponate, Museum Köln, Kulturerbe, mittelalterliche Archäologie, alte Funde, Sammlungen, Tourismus Deutschland, historische Artefakte, Führungen",
-    //         ogImage: "https://our-travels.info/foto/Germany/nrw/koln/koln-city/roemisch-germanisches-museum/001.jpg"
-    //     }
-    // },
     {
         id: "schokoladenmuseum",
         name: "Schokoladenmuseum",

@@ -1385,7 +1385,7 @@ const datas = [
         type: ["nature"], rating: "popular",
         path: "dechenhohle_iserlohn",
         countryPath: "germany", regionPath: "nrw", districtPath: "arnsberg", cityPath: "iserlohn",
-        fotoCard: "Germany/nrw/arnsberg/Märkischer-Kreis/iserlohn/dechenhohle/001.jpg",
+        fotoCard: "Germany/nrw/arnsberg/Märkischer-Kreis/iserlohn/dechenhohle/014.jpg",
         coord: { lat: 51.36556, lng: 7.64472 },
         translations: {
             ru: {

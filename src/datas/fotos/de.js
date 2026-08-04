@@ -548,6 +548,25 @@ export const Fotos = {
         { path: "Germany/nrw/arnsberg/Märkischer-Kreis/altena/st_matthaeus_church/001.jpg", title: { ru: "Приходская церковь Святого Матфея, 2025", uk: "Парафіяльна церква Святого Матвія, 2025", de: "Katholische Pfarrkirche St. Matthäus, 2025" } },
       ],
     },
+    iserlohn: {
+      dechenhohle_iserlohn: [
+        { path: "Germany/nrw/arnsberg/Märkischer-Kreis/iserlohn/dechenhohle/001.jpg", title: { ru: "Пещера Дехенхёле, 2026", uk: "Печера Дехенхёле, 2026", de: "Dechenhöhle, 2026" } },
+        { path: "Germany/nrw/arnsberg/Märkischer-Kreis/iserlohn/dechenhohle/002.jpg", title: { ru: "Пещера Дехенхёле, 2026", uk: "Печера Дехенхёле, 2026", de: "Dechenhöhle, 2026" } },
+        { path: "Germany/nrw/arnsberg/Märkischer-Kreis/iserlohn/dechenhohle/003.jpg", title: { ru: "Пещера Дехенхёле, 2026", uk: "Печера Дехенхёле, 2026", de: "Dechenhöhle, 2026" } },
+        { path: "Germany/nrw/arnsberg/Märkischer-Kreis/iserlohn/dechenhohle/004.jpg", title: { ru: "Пещера Дехенхёле, 2026", uk: "Печера Дехенхёле, 2026", de: "Dechenhöhle, 2026" } },
+        { path: "Germany/nrw/arnsberg/Märkischer-Kreis/iserlohn/dechenhohle/005.jpg", title: { ru: "Пещера Дехенхёле, 2026", uk: "Печера Дехенхёле, 2026", de: "Dechenhöhle, 2026" } },
+        { path: "Germany/nrw/arnsberg/Märkischer-Kreis/iserlohn/dechenhohle/006.jpg", title: { ru: "Пещера Дехенхёле, 2026", uk: "Печера Дехенхёле, 2026", de: "Dechenhöhle, 2026" } },
+        { path: "Germany/nrw/arnsberg/Märkischer-Kreis/iserlohn/dechenhohle/007.jpg", title: { ru: "Пещера Дехенхёле, 2026", uk: "Печера Дехенхёле, 2026", de: "Dechenhöhle, 2026" } },
+        { path: "Germany/nrw/arnsberg/Märkischer-Kreis/iserlohn/dechenhohle/008.jpg", title: { ru: "Пещера Дехенхёле, 2026", uk: "Печера Дехенхёле, 2026", de: "Dechenhöhle, 2026" } },
+        { path: "Germany/nrw/arnsberg/Märkischer-Kreis/iserlohn/dechenhohle/009.jpg", title: { ru: "Пещера Дехенхёле, 2026", uk: "Печера Дехенхёле, 2026", de: "Dechenhöhle, 2026" } },
+        { path: "Germany/nrw/arnsberg/Märkischer-Kreis/iserlohn/dechenhohle/010.jpg", title: { ru: "Пещера Дехенхёле, 2026", uk: "Печера Дехенхёле, 2026", de: "Dechenhöhle, 2026" } },
+        { path: "Germany/nrw/arnsberg/Märkischer-Kreis/iserlohn/dechenhohle/011.jpg", title: { ru: "Пещера Дехенхёле, 2026", uk: "Печера Дехенхёле, 2026", de: "Dechenhöhle, 2026" } },
+        { path: "Germany/nrw/arnsberg/Märkischer-Kreis/iserlohn/dechenhohle/012.jpg", title: { ru: "Пещера Дехенхёле, 2026", uk: "Печера Дехенхёле, 2026", de: "Dechenhöhle, 2026" } },
+        { path: "Germany/nrw/arnsberg/Märkischer-Kreis/iserlohn/dechenhohle/013.jpg", title: { ru: "Пещера Дехенхёле, 2026", uk: "Печера Дехенхёле, 2026", de: "Dechenhöhle, 2026" } },
+        { path: "Germany/nrw/arnsberg/Märkischer-Kreis/iserlohn/dechenhohle/014.jpg", title: { ru: "Пещера Дехенхёле, 2026", uk: "Печера Дехенхёле, 2026", de: "Dechenhöhle, 2026" } },
+        { path: "Germany/nrw/arnsberg/Märkischer-Kreis/iserlohn/dechenhohle/015.jpg", title: { ru: "Пещера Дехенхёле, 2026", uk: "Печера Дехенхёле, 2026", de: "Dechenhöhle, 2026" } },
+      ]
+    }
 
   },
 
