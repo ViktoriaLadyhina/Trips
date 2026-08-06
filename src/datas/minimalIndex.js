@@ -207,7 +207,7 @@ const datas =
     rautenstrauch_joest_museum_koln: { ru: 'Музей Раутенштраух-Йост', de: 'Rautenstrauch-Joest-Museum', uk: 'Музей Раутенштраух-Йост' },
     finkens_garten_koln: { ru: 'Экологический сад Финкенсгартен', de: 'Finkens Garten', uk: 'Екологічний сад Фінкенсгартен' },
     makk_museum_koln: { ru: 'Музей прикладного искусства', de: 'Museum für angewandte Kunst', uk: 'Музей прикладного мистецтва' },
-    stadtmuseum_koln: { ru: 'Кельнский городской музей', de: 'Kölnisches Stadtmuseum', uk: 'Кельнський міський музей' },
+    stadtmuseum_koln: { id: 748, ru: 'Кельнский городской музей', de: 'Kölnisches Stadtmuseum', uk: 'Кельнський міський музей' },
     sport_olympia_museum_koln: { ru: 'Немецкий музей спорта и Олимпийских игр', de: 'Deutsches Sport & Olympia Museum', uk: 'Німецький музей спорту та Олімпійських ігор' },
     photographische_sammlung_sk_stiftung_kultur_koln: { ru: 'Фотографическая коллекция культурного фонда SK', de: 'Photographische Sammlung des SK Kulturfonds', uk: 'Фотографічна колекція культурного фонду SK' },
     altstadt_koln: { id: 715, ru: 'Старый город Кёльна', de: 'Altstadt Köln', uk: 'Старе місто Кельна' },

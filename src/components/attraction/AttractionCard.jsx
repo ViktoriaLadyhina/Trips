@@ -64,7 +64,7 @@ const AttractionCard = ({ attr, lang }) => {
                             classPrefix="attrCard__desc-info-text"
                         />
                     )}
-{/* // подпись с базы */}
+                    {/* // подпись с базы */}
                     {attr.subObjects_intro && (
                         <TextBlock
                             block={{ block_key: 'subObjects_intro' }}
@@ -72,22 +72,23 @@ const AttractionCard = ({ attr, lang }) => {
                             classPrefix="attrCard__desc-info-text"
                         />
                     )}
-{/* // строки описания достов с базы */}
-                    {attr.subObjects?.length > 0 && (
-                        <ul className="attrCard__desc-subObjects">
-                            {attr.subObjects.map(subObject => (
-                                <li key={subObject.id}>
-                                    <TextBlock
-                                        block={{ block_key: 'subObjects_desc' }}
-                                        langData={{
-                                            subObjects_desc: subObject.description
-                                        }}
-                                        classPrefix="attrCard__desc-subObject"
-                                    />
-                                </li>
-                            ))}
-                        </ul>
-                    )}
+                    {/* // строки описания достов с базы */}
+                    {attr.subObjects?.length > 0 &&
+                        typeof attr.subObjects[0] === 'object' && (
+                            <ul className="attrCard__desc-subObjects">
+                                {attr.subObjects.map(subObject => (
+                                    <li key={subObject.id}>
+                                        <TextBlock
+                                            block={{ block_key: 'subObjects_desc' }}
+                                            langData={{
+                                                subObjects_desc: subObject.description
+                                            }}
+                                            classPrefix="attrCard__desc-subObject"
+                                        />
+                                    </li>
+                                ))}
+                            </ul>
+                        )}
 
                     {attr.short_description_subObjects && (
                         <div className='attrCard__desc-subObjects'>

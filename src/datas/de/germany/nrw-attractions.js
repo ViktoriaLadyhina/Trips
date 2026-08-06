@@ -299,65 +299,6 @@ const datas = [
         }
     },
     {
-        id: "stadtmuseum_koln",
-        name: "Kölnisches Stadtmuseum",
-        type: ["museum"], rating: "popular",
-        path: "stadtmuseum_koln",
-        countryPath: "germany", regionPath: "nrw", districtPath: "city", cityPath: "koln_city",
-        // showMore: true, hiddenFromList: true,
-        fotoCard: "Germany/nrw/koln/koln-city/stadtmuseum/001.jpg",
-        location: "Köln, Stadtteil Altstadt-Nord (Stadtbezirk Innenstadt), Deutschland",
-        officialSite: [
-            { bold: "Offizielle Website", link: "https://www.koelnisches-stadtmuseum.de" }
-        ],
-        short_description: "Das Museum erzählt die Entwicklung von Köln vom Mittelalter bis zur Gegenwart anhand von Objekten, Dokumenten und interaktiven Ausstellungen. Besucher lernen Kultur und Alltag der Stadt kennen – einschließlich Karneval, Kölsch und Eau de Cologne – in einem modernen Format mit einem ungewöhnlichen historischen Ansatz.",
-        full_description: {
-            title: "Beschreibung und Geschichte",
-            items: [
-                { bold: "Kölnisches Stadtmuseum", text: "wurde 1888 als historische Einrichtung zur Erforschung und Bewahrung der Entwicklung der Stadt Köln gegründet. Ursprünglich wurde das Museum als Ort geschaffen, an dem Objekte, Dokumente und Artefakte gesammelt und aufbewahrt werden, die mit dem politischen, wirtschaftlichen und kulturellen Leben der Stadt sowie dem Alltag ihrer Bewohner verbunden sind. Bereits in den ersten Jahren seines Bestehens wurde es zu einem wichtigen Zentrum des kulturellen Gedächtnisses, das die vielfältigen Schichten der Geschichte Kölns – von mittelalterlichen Handwerken bis zu den Ereignissen der jüngeren Vergangenheit – widerspiegelt." },
-                { bold: "Die ersten Jahrzehnte:", text: "In den ersten Jahrzehnten existierte das Museum unter verschiedenen Namen und befand sich in verschiedenen städtischen Gebäuden. Die Grundlage seiner Sammlung bildeten Objekte, die aus dem historischen Archiv und anderen städtischen Sammlungen übergeben wurden – zum Beispiel Siegel der Stadt aus dem 13. Jahrhundert, das Stadtwappen, Alltagsgegenstände und Handwerksprodukte. Der Aufbau der Sammlung erfolgte nicht nur durch offizielle Schenkungen, sondern auch durch private Spenden und Käufe, was im Laufe der Zeit die Sammlung von Hunderttausenden einzigartigen Objekten ermöglichte." },
-                { bold: "20. Jahrhundert und Zweiter Weltkrieg:", text: "Im 20. Jahrhundert erlebte das Museum schwerwiegende Herausforderungen: Während des Zweiten Weltkriegs wurde Köln massiv bombardiert und die Stadt nahezu zerstört. Viele Objekte, Archive und kulturelle Schichten waren der Zerstörung ausgesetzt. Dank der Bemühungen von Kuratoren, Bewahrern und Freiwilligen konnte ein Teil der Sammlung gerettet und in sichere Depots gebracht werden, was es dem Museum nach dem Krieg ermöglichte, einen bedeutenden Teil des historischen Erbes wieder zusammenzuführen. In den Nachkriegsjahren wurde das Museum zu einem wichtigen Zentrum für den Wiederaufbau des städtischen Geistes und des historischen Gedächtnisses, indem es darüber berichtete, wie der Krieg die Stadt, ihre Bewohner und die soziale Struktur verändert hat. In dieser Zeit wurde nicht nur den Materialien der Vorkriegszeit Aufmerksamkeit geschenkt, sondern auch der Dokumentation der Geschichte des Lebens und Überlebens der Stadt in den Jahren der Zerstörung und des Wiederaufbaus." },
-                { bold: "Zeughaus‑Periode (1958–2017):", text: "Ab 1958 befand sich das Museum im ehemaligen städtischen Zeughaus (Zeughaus), wo die Ausstellungen über Jahrzehnte der Öffentlichkeit zugänglich waren. Dieser Ort wurde zu einem symbolischen Zuhause für die Stadtgeschichte: Hier wurden Themen des Alltags, der wirtschaftlichen Entwicklung, der Kunst und der kulturellen Traditionen Kölns präsentiert. Aufgrund erheblicher struktureller Probleme und Bauschäden musste das Gebäude jedoch 2017 stillgelegt und das Museum vorübergehend geschlossen werden." },
-                { bold: "Moderner Raum (2024):", text: "Nach jahrelangen Plänen zur Rekonstruktion und Neugestaltung der Ausstellungen zog das Museum ins Zentrum von Köln in das ehemalige Modehaus Franz Sauer um und eröffnete dort 2024 einen neuen Raum und ein neues Ausstellungskonzept. Das neue Museumskonzept macht es nicht nur zu einem Aufbewahrungsort von Objekten, sondern auch zu einer interaktiven Plattform für den Dialog mit den Besuchern: Die Geschichte der Stadt wird hier durch Emotionen, Fragen und persönliche Verbindungen zwischen Vergangenheit und Gegenwart vermittelt. Das neue Kölnische Stadtmuseum vereint die Tradition des Sammlers mit einem modernen Blick auf die Geschichtsvermittlung." }
-            ]
-        },
-        tickets_and_entry: {
-            title: "Praktische Informationen",
-            items: [
-                { bold: "Adresse:", text: "Minoritenstraße 13, 50667 Köln, Deutschland" },
-                { bold: "Öffnungszeiten (2026):", text: "<br>Dienstag-Sonntag: 10:00-17:00 <br>Jeden ersten Donnerstag im Monat: 10:00-22:00 (das ist «KölnTag» – dann gibt es manchmal freien Eintritt für Kölner) <br>Montag: normalerweise geschlossen <br>An Feiertagen gelten normalerweise die regulären Öffnungszeiten (10:00-17:00), aber während des Karnevals ist das Museum im Zeitraum der wichtigsten Karnevalstage (ungefähr 12.-17. Februar) geschlossen." },
-                { bold: "Preise für Eintrittskarten (2026):", text: "<br>Erwachsene: €5 <br>Ermäßigt: €3 (Studierende, Jugendliche usw.) <br>Kinder bis 7 Jahre: kostenlos <br>Kinder und Jugendliche mit Wohnsitz vor Ort (bis 18 Jahre): kostenlos <br>Spezielle Fälle von kostenlosem Eintritt: Kölner an ihrem Geburtstag oder am «KölnTag» (1. Donnerstag im Monat) und Inhaber eines Köln‑Pass. <br>Es gibt Museumskarten (Museumscard) für mehrere Kölner Museen (Option mit Kombinationen für mehrere Tage)." }
-            ]
-        },
-        sub_objects: {
-            title: "Ausstellungen:",
-            items: [
-                { bold: "Dauerausstellung:", text: "<br>Geschichte der Stadt vom Mittelalter bis zur Gegenwart <br>Themen: Kultur, Wirtschaft, Gesellschaft und Alltag <br>Interaktive Elemente und moderne Präsentationen von Objekten " },
-                { bold: "Wechselnde Ausstellungen:", text: "<br>Im Museum finden regelmäßig thematische Ausstellungen und Sonderprojekte statt (Zeitraum variiert je nach Saison). " }
-            ]
-        },
-        interestingFacts: {
-            title: "Interessante Fakten",
-            items: [
-                { text: "Das Museum zog 2024 von seinem alten Standort in einen neuen Raum mit modernem Design im Zentrum der Stadt um." },
-                { text: "Während des Zweiten Weltkriegs wurde ein bedeutender Teil der Sammlung gerettet und in sichere Depots gebracht." },
-                { text: "Die Ausstellung ist in Form von Fragen‑Emotionen aufgebaut, damit der Besucher selbst die Verbindung der Geschichte mit persönlichen Erfahrungen erkennt." },
-                { text: "Das Museum bietet öffentliche und buchbare Führungen in mehreren Sprachen an, darunter Englisch und Französisch." }
-            ]
-        },
-        construction_period: "1888 Jahr",
-        founder: "gegründet vom Kommunalverwaltung der Stadt Köln",
-        coord: { lat: 50.93902, lng: 6.95427 },
-        meta: {
-            title: "Kölnisches Stadtmuseum | Geschichte von Köln vom Mittelalter bis heute",
-            description: "Besuchen Sie das Kölnische Stadtmuseum in Köln – ein modernes Stadtmuseum mit einer reichen Dauerausstellung und wechselnden Ausstellungen, die Kultur, Gesellschaft und Traditionen Kölns offenbaren. Adresse, Eintritt, Öffnungszeiten.",
-            ogTitle: "Kölnisches Stadtmuseum – Geschichte von Köln",
-            ogDescription: "Erfahren Sie die Geschichte von Köln durch einzigartige Objekte, interaktive Ausstellungen und moderne Präsentationen im Kölnischen Stadtmuseum.",
-            keywords: "Kölnisches Stadtmuseum, Köln, Sehenswürdigkeit, Stadtgeschichte, Museum Köln, Ausstellungen, Kulturerbe, städtisches Leben, Tourismus Deutschland, Führungen, historisches Gebäude, Archäologie",
-            ogImage: "https://our-travels.info/foto/Germany/nrw/koln/koln-city/stadtmuseum/001.jpg"
-        }
-    },
-    {
         id: "sport_olympia_museum_koln",
         name: "Deutsches Sport & Olympia Museum",
         type: ["museum"], rating: "popular",
