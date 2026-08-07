@@ -84,9 +84,6 @@ export const Fotos = {
       finkens_garten_koln: [
         { path: "Germany/nrw/koln/koln-city/finkens_garten/001.jpg", title: { ru: "Экологический сад Финкенсгартен (фото взято с интернета)", uk: "Екологічний сад Фінкенсгартен (фото взято з Інтернету)", de: "Finkens Garten (Foto aus dem Internet)" } },
       ],
-      makk_museum_koln: [
-        { path: "Germany/nrw/koln/koln-city/makk_museum/001.JPG", title: { ru: "Музей прикладного искусства (фото взято с интернета)", uk: "Музей прикладного мистецтва (фото взято з Інтернету)", de: "Museum für angewandte Kunst (Foto aus dem Internet)" } },
-      ],
       sport_olympia_museum_koln: [
         { path: "Germany/nrw/koln/koln-city/sport_olympia_museum/001.jpg", title: { ru: "Немецкий музей спорта и Олимпийских игр, 2026", uk: "Німецький музей спорту та Олімпійських ігор, 2026", de: "Deutsches Sport & Olympia Museum, 2026" } },
         { path: "Germany/nrw/koln/koln-city/sport_olympia_museum/002.jpg", title: { ru: "Немецкий музей спорта и Олимпийских игр, 2026", uk: "Німецький музей спорту та Олімпійських ігор, 2026", de: "Deutsches Sport & Olympia Museum, 2026" } },

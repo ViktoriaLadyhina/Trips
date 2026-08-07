@@ -240,65 +240,6 @@ const datas = [
         }
     },
     {
-        id: "makk_museum_koln",
-        name: "Museum für Angewandte Kunst",
-        type: ["museum"], rating: "popular",
-        path: "makk_museum_koln",
-        countryPath: "germany", regionPath: "nrw", districtPath: "city", cityPath: "koln_city",
-        fotoCard: "Germany/nrw/koln/koln-city/makk_museum/001.JPG",
-        location: "Köln, Stadtteil Altstadt-Nord (Stadtbezirk Innenstadt), Deutschland",
-        officialSite: [
-            { bold: "Offizielle Website", link: "https://makk.de/" }
-        ],
-        short_description: "Das Museum für Angewandte Kunst Köln (oft als MAKK abgekürzt) ist eines der führenden Museen für Kunsthandwerk und Design in Deutschland. Hier werden Objekte des europäischen Designs und Kunsthandwerks vom Mittelalter bis zur Gegenwart präsentiert: Möbel, Geschirr, Schmuck, Textilien, Designobjekte und vieles mehr.",
-        full_description: {
-            title: "Beschreibung und Geschichte",
-            items: [
-                { bold: "Das Museum für Angewandte Kunst", text: " ist eines der führenden Museen Deutschlands für Kunsthandwerk und Design. Seine Sammlung umfasst mehr als 100.000 Objekte und deckt nahezu tausend Jahre europäischer Kulturgeschichte ab – von mittelalterlichen Handwerksarbeiten bis zu Werken zeitgenössischer Designer. Die Ausstellung ist chronologisch aufgebaut und ermöglicht es Besuchern, die Entwicklung von Stilen, Technologien und Geschmäckern verschiedener Epochen nachzuvollziehen. Gezeigt werden Möbel, Glas, Porzellan, Textilien, Schmuck sowie Grafik- und Industriedesign." },
-                { text: "Eine Besonderheit des Museums ist die Kombination historischer Objekte mit modernen Arbeiten, wodurch sichtbar wird, wie traditionelle Formen das heutige Design beeinflussen. Neben der Dauerausstellung finden regelmäßig Sonderausstellungen statt, die einzelnen Kunstrichtungen, Mode oder bekannten Designern gewidmet sind." },
-                { bold: "Geschichte. ", text: "Das Museum wurde 1888 unter dem Namen Kunstgewerbemuseum Köln als Bildungs- und Kulturprojekt gegründet, das Handwerker und Künstler durch Beispiele hoher Meisterschaft inspirieren sollte." },
-                { text: "Ende des 19. Jahrhunderts wurden ähnliche Museen in ganz Europa gegründet, da man davon ausging, dass das Studium historischer Vorbilder die Qualität moderner Produktion und künstlerischer Ausbildung verbessert." },
-                { text: "Die ursprüngliche Sammlung entstand durch Schenkungen, Ankäufe und Übernahmen privater Sammlungen. Nach dem Zweiten Weltkrieg wurde das Museum umfassend wiederaufgebaut und erweiterte seine Bestände um Werke des modernen und zeitgenössischen Designs." },
-                { text: "Das heutige Museumsgebäude wurde 1957 eröffnet und zählt zu den ersten Museumsbauten der Nachkriegszeit in Deutschland im Stil der Moderne." },
-                { text: "Heute wächst die Sammlung weiterhin und das Museum bleibt ein bedeutendes kulturelles Zentrum Kölns, das Handwerksgeschichte, Kunst und Industriedesign vereint." },
-            ]
-        },
-        tickets_and_entry: {
-            title: "Praktische Informationen",
-            items: [
-                { bold: "Adresse: ", text: "An der Rechtschule 7, 50667 Köln, Deutschland." },
-                { bold: "Öffnungszeiten:", text: "<br>Di-So: 10:00-18:00 <br>Mo: geschlossen (außer an Feiertagen) <br>Erster Donnerstag im Monat: bis 22:00 geöffnet." },
-                { bold: "Eintritt (2026):", text: "<br>Erwachsene: ca. 6 € <br>Ermäßigt: ca. 3,50 € <br>Kostenlos für Kinder unter 6 Jahren und junge Kölner bis 18 Jahre an bestimmten Tagen." },
-                { bold: "Anreise:", text: "10 Minuten zu Fuß vom Kölner Hauptbahnhof oder von den Haltestellen Dom/Hauptbahnhof." }
-            ]
-        },
-        sub_objects: {
-            title: "Ausstellungen",
-            items: [
-                { bold: "Dauerausstellung – das Herz des Museums:", text: "<br>• Europäisches Kunsthandwerk vom 10. Jahrhundert bis heute – Möbel, Geschirr, Glas, Schmuck, Textilien und dekorative Objekte. <br>• Design im Dialog mit Kunst: Kunstwerke und Designobjekte in thematischen Präsentationen." },
-                { bold: "Wechsel- und Sonderausstellungen (2025-2026):", text: "<br>• Von Louise Bourgeois bis Yoko Ono – Jewellery by Female Artists – Schmuckarbeiten von Künstlerinnen des 20.–21. Jahrhunderts (bis 26. April 2026). <br>• Weitere thematische Sonderausstellungen zu Design und angewandter Kunst." },
-            ]
-        },
-        interestingFacts: {
-            title: "Interessante Fakten",
-            items: [
-                { text: "Das Museum ist bekannt für den Dialog zwischen Design und Kunst – Designobjekte werden zusammen mit Gemälden und Skulpturen präsentiert." },
-                { text: "An jedem ersten Donnerstag im Monat findet der sogenannte „KölnTag“ statt, an dem viele städtische Museen bis spät abends kostenlos geöffnet sind." },
-                { text: "Im MAKK werden regelmäßig Sonderausstellungen, Vorträge und Bildungsprogramme veranstaltet." }
-            ]
-        },
-        construction_period: "1888 (gegründet als Kunstgewerbemuseum Köln).",
-        coord: { lat: 50.93983, lng: 6.95479 },
-        meta: {
-            title: "Museum für Angewandte Kunst Köln – Design- und Handwerkskollektionen",
-            description: "Museum für Angewandte Kunst Köln: Möbel, Textilien, Schmuck und Design vom Mittelalter bis heute. Adresse, Öffnungszeiten, Eintritt und Ausstellungen.",
-            ogTitle: "Museum für Angewandte Kunst Köln – Sammlungen und Ausstellungen",
-            ogDescription: "Entdecken Sie einzigartige Objekte des Designs und Kunsthandwerks verschiedener Epochen im Museum für Angewandte Kunst Köln. Besucherinformationen und Details.",
-            keywords: "Museum für Angewandte Kunst, Köln, Sehenswürdigkeit, dekorative Kunst, Museum Köln, Design, Keramik, Textilien, Ausstellungen, Kulturerbe, Tourismus Deutschland, Führungen, historisches Gebäude",
-            ogImage: "https://our-travels.info/foto/Germany/nrw/koln/koln-city/makk_museum/001.JPG"
-        }
-    },
-    {
         id: "sport_olympia_museum_koln",
         name: "Deutsches Sport & Olympia Museum",
         type: ["museum"], rating: "popular",
