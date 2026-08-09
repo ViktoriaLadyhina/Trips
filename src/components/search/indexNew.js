@@ -14,9 +14,6 @@ const loaders = {
 
     luxembourg: {
         routes: () => import('../../datas/luxembourg/routes.js').then(m => m.default),
-        mersch: {
-            attractions: () => import('../../datas/luxembourg/mersch-attractions.js').then(m => m.default),
-        },
         capellen: {
             attractions: () => import('../../datas/luxembourg/capellen-attractions.js').then(m => m.default),
         },
@@ -40,9 +37,6 @@ const searchIndexNew = {
   },
   luxembourg: {
     routes: { type: "routes", loaders: loaders.luxembourg.routes },
-    mersch: {
-      attractions: { type: "attraction", loaders: loaders.luxembourg.mersch.attractions },
-    },
     capellen: {
       attractions: { type: "attraction", loaders: loaders.luxembourg.capellen.attractions },
     },

@@ -27,26 +27,6 @@ export const Fotos = {
     { path: "Luxembourg/seven_castles/ansembourg_castle/013.jpg", title: { ru: "Замок Ансембург, 2024", uk: "Замок Ансембург, 2024", de: "Schloss Ansemburg, 2024" } },
   ],
 
-  mersch: {
-    ansembourg: {
-      ansembourg_castle: [
-        { path: "Luxembourg/seven_castles/ansembourg_castle/001.jpg", title: { ru: "Замок-дворец Ансембург, 2024", uk: "Палац-замок Ансембурґ, 2024", de: "Schloss Ansemburg, 2024" } },
-        { path: "Luxembourg/seven_castles/ansembourg_castle/002.jpg", title: { ru: "Замок-дворец Ансембург, 2024", uk: "Палац-замок Ансембурґ, 2024", de: "Schloss Ansemburg, 2024" } },
-        { path: "Luxembourg/seven_castles/ansembourg_castle/003.jpg", title: { ru: "Замок-дворец Ансембург, 2024", uk: "Палац-замок Ансембурґ, 2024", de: "Schloss Ansemburg, 2024" } },
-        { path: "Luxembourg/seven_castles/ansembourg_castle/004.jpg", title: { ru: "Замок-дворец Ансембург, 2024", uk: "Палац-замок Ансембурґ, 2024", de: "Schloss Ansemburg, 2024" } },
-        { path: "Luxembourg/seven_castles/ansembourg_castle/005.jpg", title: { ru: "Замок-дворец Ансембург, 2024", uk: "Палац-замок Ансембурґ, 2024", de: "Schloss Ansemburg, 2024" } },
-        { path: "Luxembourg/seven_castles/ansembourg_castle/006.jpg", title: { ru: "Замок-дворец Ансембург, 2024", uk: "Палац-замок Ансембурґ, 2024", de: "Schloss Ansemburg, 2024" } },
-        { path: "Luxembourg/seven_castles/ansembourg_castle/007.jpg", title: { ru: "Замок-дворец Ансембург, 2024", uk: "Палац-замок Ансембурґ, 2024", de: "Schloss Ansemburg, 2024" } },
-        { path: "Luxembourg/seven_castles/ansembourg_castle/008.jpg", title: { ru: "Замок-дворец Ансембург, 2024", uk: "Палац-замок Ансембурґ, 2024", de: "Schloss Ansemburg, 2024" } },
-        { path: "Luxembourg/seven_castles/ansembourg_castle/009.jpg", title: { ru: "Замок-дворец Ансембург, 2024", uk: "Палац-замок Ансембурґ, 2024", de: "Schloss Ansemburg, 2024" } },
-        { path: "Luxembourg/seven_castles/ansembourg_castle/010.jpg", title: { ru: "Замок-дворец Ансембург, 2024", uk: "Палац-замок Ансембурґ, 2024", de: "Schloss Ansemburg, 2024" } },
-        { path: "Luxembourg/seven_castles/ansembourg_castle/011.jpg", title: { ru: "Замок-дворец Ансембург, 2024", uk: "Палац-замок Ансембурґ, 2024", de: "Schloss Ansemburg, 2024" } },
-        { path: "Luxembourg/seven_castles/ansembourg_castle/012.jpg", title: { ru: "Замок-дворец Ансембург, 2024", uk: "Палац-замок Ансембурґ, 2024", de: "Schloss Ansemburg, 2024" } },
-        { path: "Luxembourg/seven_castles/ansembourg_castle/013.jpg", title: { ru: "Замок-дворец Ансембург, 2024", uk: "Палац-замок Ансембурґ, 2024", de: "Schloss Ansemburg, 2024" } },
-        { path: "Luxembourg/seven_castles/ansembourg_castle/014.jpg", title: { ru: "Замок-дворец Ансембург, 2024", uk: "Палац-замок Ансембурґ, 2024", de: "Schloss Ansemburg, 2024" } },
-      ],
-    },
-  },
   capellen: {
     koerich: {
       koerich_castle: [

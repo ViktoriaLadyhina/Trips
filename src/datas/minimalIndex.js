@@ -312,7 +312,7 @@ const datas =
     citykirche_koblenz: { ru: 'Иезуитская церковь Кобленца (Citykirche)', de: 'Jesuitenkirche Koblenz (Citykirche)', uk: 'Єзуїтська церква Кобленца (Citykirche)' },
 
     //luxembourg
-    ansembourg_castle: { ru: 'Замок-дворец Ансембург', de: 'Schloss Ansembourg', uk: 'Палац-замок Ансембурґ' },
+    ansembourg_castle: { id: 751, ru: 'Новый замок Ансембург', de: 'Schloss Ansembourg', uk: 'Новий замок Ансембурґ' },
     koerich_castle: { ru: 'Замок Керих', de: 'Burg Koerich', uk: 'Замок Кьоріх' },
     musee_drai_eechelen_luxembourg: { ru: 'Музей «Три жёлудя»', de: 'Museum „Drei Eicheln“', uk: 'Музей «Три жолуді»' },
     fort_thungen_luxembourg: { ru: 'Форт Тюнген', de: 'Fort Thüngen', uk: 'Форт Тюнген' },
@@ -348,7 +348,7 @@ const datas =
   },
   routes: {
     mullerthal_trail: { ru: "Мюллертальская тропа", uk: "Мюллертальська стежка", de: "Mullerthal Trail" },
-    seven_castles: { ru: "Долина семи замков", uk: "Долина семи замків", de: "Tal der sieben Schlösser" },
+    seven_castles: { id: 750, ru: "Долина семи замков", uk: "Долина семи замків", de: "Tal der sieben Schlösser" },
     castles_rhine_valley: { ru: "Долина Среднего Рейна", uk: "Долина Середнього Рейну", de: "Mittelrheintal" },
   }
 }
