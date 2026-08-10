@@ -168,7 +168,6 @@ const Attraction = () => {
 
     }, [attractionPath, lang]);
 
-
     // STATIC ATTRACTION
     const attraction = attractions?.find(item => item.path === attractionPath);
 
@@ -193,7 +192,7 @@ const Attraction = () => {
         construction_period: TextBlock,
         architects: TextBlock,
         sculptors: TextBlock,
-        status: TextBlock,
+        status_note: TextBlock,
         practical_info: TextBlock,
         full_description: TextBlock,
         legends: TextBlock,
@@ -419,8 +418,6 @@ const showMysqlFilters =
         { label: datas.attractions[attractionPath]?.[lang] }
 
     ].filter(Boolean);
-
-
 
     return (
 
