@@ -73,6 +73,7 @@
 
             &-text,
             &-text__short_description,
+            &-text__status_note,
             &-text__subObjects_intro {
                 display: block;
                 @include body-text();
