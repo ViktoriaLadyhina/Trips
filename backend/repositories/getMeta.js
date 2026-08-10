@@ -6,6 +6,7 @@ async function getMeta(db, entityId, lang) {
       em.description,
       em.og_title,
       em.og_description,
+      em.keywords,
       ep.path AS og_image
     FROM entity_meta em
     LEFT JOIN entity_photos ep

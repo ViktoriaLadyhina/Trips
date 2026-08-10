@@ -1,19 +1,18 @@
 const datas = [
     {
         id: "castles_rhine_valley",
-        type: ["nature", "history"], rating: "unesco",
         path: "castles_rhine_valley",
         countryPath: "germany",
         fotoCard: "Germany/rheinland-pfalz/koblenz/ehrenbreitstein/001.jpg",
         coord: { lat: 50.2045, lng: 7.6046 },
-        map: "castles_rhine_valley",
-        location: "Рейнланд-Пфальц и Гессен, Германия",
+        mapOpen: "castles_rhine_valley",
+        location: "Рейнланд-Пфальц и Гессен, Германия", // вот это нужно из локатиоn
         translations: {
             ru: {
                 name: "Долина Среднего Рейна",
-                countryName: "Германия",
+                countryName: "Германия", // вот это нужно из локатиоn
                 routeLength: "Около 67 км",
-                location: "Германия, долина Рейна между Кобленцем и Бингеном",
+                location: "Германия, долина Рейна между Кобленцем и Бингеном", // вот это нужно из локатиоn
                 unesco_status: {
                     included: true,
                     year: 2002,
