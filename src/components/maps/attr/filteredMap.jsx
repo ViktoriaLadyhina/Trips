@@ -1,10 +1,11 @@
-import { MapContainer, TileLayer, Marker, Tooltip, Popup, useMap } from 'react-leaflet';
+import { MapContainer, TileLayer, Marker, Tooltip, Popup, Polyline, useMap } from 'react-leaflet';
 import L from 'leaflet';
 import 'leaflet/dist/leaflet.css';
 import './AttrMap.scss';
 import { useNavigate, useParams } from 'react-router';
 import { useEffect, useMemo } from 'react';
 import useCombinedAttractions from '../../../hooks/useCombinedAttractions.js';
+import { toFullUrl } from '../../../utils/photo.js';
 
 // фикс иконок Leaflet (важно оставить один раз)
 delete L.Icon.Default.prototype._getIconUrl;
@@ -54,40 +55,55 @@ const FitBounds = ({ points }) => {
   return null;
 };
 
-const FilteredMap = ({ map, lang = 'ru' }) => {
+const FilteredMap = ({ map, routeAttractions = null, lang = 'ru' }) => {
   const navigate = useNavigate();
-  const { countryPath, regionPath, districtPath, cityPath} = useParams();
-  
-  const { mergedAttractions: allAttractions = []} = useCombinedAttractions( countryPath, regionPath, districtPath, cityPath);
+  const { countryPath, regionPath, districtPath, cityPath } = useParams();
+
+  const { mergedAttractions: allAttractions = [] } = useCombinedAttractions(countryPath, regionPath, districtPath, cityPath);
+
+  const sourceAttractions = routeAttractions ?? allAttractions;
 
   const getIconByStatus = (attr) => {
-  const status = attr.translations?.[lang]?.status ?? 'active';
-  if (status === 'lost') return lostIcon;
-  
-  return defaultIcon;
-};
+    const status = attr.translations?.[lang]?.status ?? 'active';
+    if (status === 'lost') return lostIcon;
+
+    return defaultIcon;
+  };
 
   // фильтрация стабильно через useMemo
-const attractions = useMemo(() => {
-    if (!allAttractions.length) return [];
+  const attractions = useMemo(() => {
+    if (!sourceAttractions.length) return [];
 
-    return allAttractions.filter(attr => {
-        if (!attr) return false;
+    // Карта маршрута:
+    // достопримечательности уже отобраны API через routes
+    if (routeAttractions) {
+      return sourceAttractions.filter(Boolean);
+    }
 
-        if (!map) return true;
+    // Обычная карта достопримечательностей
+    return sourceAttractions.filter(attr => {
+      if (!attr) return false;
 
-        return Array.isArray(attr.map)
-            ? attr.map.includes(map)
-            : attr.map === map;
+      if (!map) return true;
+
+      return Array.isArray(attr.map)
+        ? attr.map.includes(map)
+        : attr.map === map;
     });
-}, [allAttractions, map]);
+  }, [sourceAttractions, map, routeAttractions]);
 
   // mobile detection безопасный
   const isTouchDevice = L.Browser?.mobile ?? false;
 
+  const routePositions = routeAttractions
+    ? attractions
+        .filter(attr => attr?.coord?.lat != null && attr?.coord?.lng != null)
+        .map(attr => [attr.coord.lat, attr.coord.lng])
+    : [];
+
   return (
     <MapContainer
-      center={[50.9375, 6.9603]} 
+      center={[50.9375, 6.9603]}
       zoom={13}
       style={{
         height: "450px",
@@ -102,6 +118,10 @@ const attractions = useMemo(() => {
       {/* bounds только на стабильных данных */}
       <FitBounds points={attractions} />
 
+      {routeAttractions && routePositions.length > 1 && (
+    <Polyline positions={routePositions} />
+)}
+
       {attractions.map(attr => {
         if (!attr?.coord) return null;
 
@@ -115,12 +135,12 @@ const attractions = useMemo(() => {
             eventHandlers={
               !isTouchDevice
                 ? {
-                    click: () => {
-                      navigate(
-                        `/${attr.countryPath}/${attr.regionPath}/${attr.districtPath}/${attr.cityPath}/attractions/${attr.path}`
-                      );
-                    }
+                  click: () => {
+                    navigate(
+                      `/${attr.countryPath}/${attr.regionPath}/${attr.districtPath}/${attr.cityPath}/attractions/${attr.path}`
+                    );
                   }
+                }
                 : undefined
             }
           >
@@ -134,7 +154,7 @@ const attractions = useMemo(() => {
               >
                 <div className="custom-tooltip-content">
                   {attr?.meta?.ogImage && (
-                    <img src={attr.meta.ogImage} alt={attr.name} />
+                    <img src={toFullUrl(attr.meta.ogImage)} alt={attr.name} />
                   )}
                   <p>{attr?.meta?.title}</p>
                 </div>
@@ -146,7 +166,7 @@ const attractions = useMemo(() => {
               <Popup className="custom-popup" maxWidth={180} minWidth={160}>
                 <div className="custom-popup-content">
                   {attr?.meta?.ogImage && (
-                    <img src={attr.meta.ogImage} alt={attr.name} />
+                    <img src={toFullUrl(attr.meta.ogImage)} alt={attr.name} />
                   )}
 
                   <p>{attr?.meta?.title}</p>

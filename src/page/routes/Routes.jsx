@@ -2,56 +2,166 @@ import { useParams } from 'react-router';
 import { Helmet } from "react-helmet-async";
 import { useSelector } from 'react-redux';
 
-import InfoBlock from '../../components/InfoBlock/InfoBlock.jsx';
-import useRoutes from '../../hooks/useRoutesSearch.js';
 import './Routes.scss'
 import BreadCrumbs from '../../components/breadCrumbs/BreadCrumbs.jsx';
 import Gallery from '../../components/gallery/Gallery.jsx';
-import { photosByCountry } from '../../datas/fotos/index.js';
-import { routeMaps } from "../../components/maps/RouteMap.jsx";
-import useAttractions from '../../hooks/useAttractions.js';
 import AttractionCardSub from '../../components/attraction/AttractionCardSub.jsx';
 import FilteredMap from '../../components/maps/attr/filteredMap.jsx';
+import { useEffect, useState } from 'react';
+import { getRoute } from '../../api/api.js';
+import { toFullUrl } from '../../utils/photo.js';
+import datas from '../../datas/minimalIndex.js';
+import { prepareEntityBlocks } from '../../utils/entityHelpers.js';
+import { TextBlock } from '../../components/renders/TextBlock.jsx';
+import { PhotoBlock } from '../../components/renders/PhotoBlock.jsx';
+import SkeletonRenderer from '../../components/skeleton/SkeletonRenderer.jsx';
+import MysqlGallery from '../../components/gallery/MysqlGallery.jsx';
 
 const BASE_PHOTO_URL = import.meta.env.VITE_BASE_PHOTO_URL;
-const routeNotFound = { ru: "Маршрут не найден", ua: "Маршрут не знайдено", de: "Route nicht gefunden" };
+
+const SkeletonList = [
+    { type: "title" },
+    {
+        type: "text", props: {
+            hasTitle: false,
+            lines: 4,
+            hasPhoto: true,
+            photoPosition: "right",
+        }
+    },
+    {
+        type: "text", props: {
+            hasTitle: false,
+            lines: 6,
+            hasPhoto: true,
+            photoPosition: "left",
+        }
+    },
+    {
+        type: "text", props: {
+            hasTitle: true,
+            lines: 6,
+            hasPhoto: false
+        }
+    },
+    {
+        type: "text", props: {
+            hasTitle: true,
+            lines: 5,
+            hasPhoto: false
+        }
+    },
+    {
+        type: "text", props: {
+            hasTitle: false,
+            lines: 6,
+            hasPhoto: true,
+            photoPosition: "right",
+        }
+    },
+    {
+        type: "text", props: {
+            hasTitle: true,
+            lines: 7,
+            hasPhoto: false
+        }
+    },
+];
 
 const Routes = () => {
-    const { countryPath, routesPath } = useParams();
+    const { routesPath } = useParams();
     const { lang } = useSelector((state) => state.language);
-    const { attractions } = useAttractions(countryPath);
+    const [route, setRoute] = useState(null);
+    const [loading, setLoading] = useState(true);
+    const [error, setError] = useState(null);
+    const meta = route?.meta;
+    const { blocks, langData } = prepareEntityBlocks(route?.blocks || []);
 
-    const { routes } = useRoutes(countryPath);
-    const route = routes?.find(
-        r => r.path === routesPath
-    );
+    useEffect(() => {
+        if (!routesPath) return;
 
-    if (!route) return <p>not found</p>;
+        let active = true;
+
+        setLoading(true);
+        setRoute(null);
+        setError(null);
+
+        getRoute(routesPath, lang)
+            .then(data => {
+
+                if (active) {
+                    setRoute(data);
+                    setLoading(false);
+                }
+            })
+            .catch(err => {
+                if (active) {
+                    setError(err.message);
+                    setLoading(false);
+                }
+            });
 
 
-    const attractionRoute = attractions?.filter(r => r?.routes === route.path);
+        return () => {
+            active = false;
+        };
+
+    }, [routesPath, lang]);
+
+    // MYSQL BLOCKS
+    const context = {
+        lang,
+        langData,
+        classPrefix: "route",
+        photo: route?.mainPhoto,
+        className: 'route__photo'
+    };
+
+    const blockRegistry = {
+        name: TextBlock,
+        map: () => (
+            route?.mapOpen
+                ? (
+                    <FilteredMap
+                        map={route.mapOpen}
+                        routeAttractions={route.subObjects}
+                    />
+                )
+                : null
+        ),
+        full_description: TextBlock,
+        practical_info: TextBlock,
+        photo: PhotoBlock,
+        features: TextBlock,
+        recommendations: TextBlock,
+        interestingFacts: TextBlock,
+    };
 
 
-    if (!route) return <p>{routeNotFound[lang]}</p>;
+    const renderBlock = block => {
+        const Renderer = blockRegistry[block.block_key];
 
-    const photos = photosByCountry[route?.countryPath];
-    const routePhotos = photos?.[route?.path] || [];
+        if (!Renderer) { return null; }
 
-    // Преобразуем в массив для Gallery
-    const images = routePhotos.map(photo => ({
-        src: `${BASE_PHOTO_URL}${photo.path}`,
-        alt: photo.title[lang]
-    }));
+        return (
+            <Renderer key={block.id} block={block} {...context} />
+        );
+    };
 
-    const t = route.translations?.[lang];
-    const meta = t?.meta;
+    // subAttractions
+    const attractionRoute = route?.subObjects?.filter(r => r?.routes === route.path);
 
-    const MapComponent = route.map ? routeMaps[route.map] : null;
+    if (error) return <p>{error}</p>;
+    if (loading || !route) {
+        return (
+            <SkeletonRenderer blocks={SkeletonList} />
+        );
+    }
 
     const crumbs = [
         { label: lang === 'ru' ? 'Главная' : lang === 'de' ? 'Startseite' : 'Головна', path: '/' },
-        { label: t?.countryName, path: `/${route?.countryPath}` },
-        { label: t?.name }
+        { label: route?.countryName, path: `/${route?.countryPath}` },
+        { label: datas.routes[routesPath][lang] }
     ];
 
     return (
@@ -59,57 +169,34 @@ const Routes = () => {
 
             {meta && (
                 <Helmet>
-                    <title>{meta.title}</title>
+                    <title>{meta.title || datas.routes[routesPath][lang]}</title>
+                    <meta name="title" content={meta.title} />
                     <meta name="description" content={meta.description} />
-                    <meta property="og:title" content={meta.ogTitle} />
-                    <meta property="og:description" content={meta.ogDescription} />
-                    <meta property="og:image" content={meta.ogImage} />
+                    <meta property="og:title" content={meta.og_title} />
+                    <meta property="og:description" content={meta.og_description} />
+                    <meta property="og:image" content={toFullUrl(meta.og_image)} />
                 </Helmet>
             )}
 
             <BreadCrumbs crumbs={crumbs} />
 
-            <h1 className='route__title'>{t?.name}</h1>
+            <section className="route__content">
+                {blocks?.length > 0 && blocks.map(block => (
+                    <div key={block.block_key}>
+                        {renderBlock(block)}
+                    </div>
+                ))}
+            </section>
 
-            <div className='route__desc'>
-                <div className="route__desc-plan">
-                    {MapComponent ? (
-                        <MapComponent lang={lang} />
-                    ) : (
-                        route.plan && (
-                            <img
-                                src={`${BASE_PHOTO_URL}${route.plan}`}
-                                alt={t?.name}
-                            />
-                        )
-                    )}
-                </div>
-            </div>
-
-            <div className='route__desc'>
-                {t?.full_description?.items?.length > 0 && (<InfoBlock data={t?.full_description} className="route__desc-full_description" />)}
-                <div className='route__desc-foto'>
-                    {route.fotoCard && (
-                        <img
-                            src={`${BASE_PHOTO_URL}${route.fotoCard}`}
-                            alt={t?.name}
-                        />
-                    )}
-                </div>
-
-                {t?.practicalInfo?.items?.length > 0 && (<InfoBlock data={t?.practicalInfo} className="route__desc-practicalInfo" />)}
-                {t?.features?.items?.length > 0 && (<InfoBlock data={t?.features} className="route__desc-features" />)}
-                {t?.recommendations?.items?.length > 0 && (<InfoBlock data={t?.recommendations} className="route__desc-recommendations" />)}
-                {t?.interestingFacts?.items?.length > 0 && (<InfoBlock data={t?.interestingFacts} className="route__desc-interestingFacts" />)}
-
+            <div>
                 {attractionRoute.length > 0 && (
                     <section className="attraction-sub">
                         <h3>
                             {lang === "ru"
-                                ? `Достопримечательности маршрута «${t.name}»`
+                                ? `Достопримечательности маршрута «${datas.routes[routesPath][lang]}»`
                                 : lang === "de"
-                                    ? `Sehenswürdigkeiten der Route «${t.name}»`
-                                    : `Пам'ятки маршруту «${t.name}»`}
+                                    ? `Sehenswürdigkeiten der Route «${datas.routes[routesPath][lang]}»`
+                                    : `Пам'ятки маршруту «${datas.routes[routesPath][lang]}»`}
                         </h3>
                         {attractionRoute.map(attr => (
                             <AttractionCardSub key={attr.id} attr={attr} lang={lang} />
@@ -117,9 +204,12 @@ const Routes = () => {
                     </section>
                 )}
 
-                {images.length > 0 && <Gallery images={images} />}
+                {route.photos?.length > 0 && (
+                    <MysqlGallery images={route.photos} lang={lang} />
+                )
+                }
             </div>
-        </div>
+        </div >
     )
 }
 

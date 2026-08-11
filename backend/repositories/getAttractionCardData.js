@@ -22,6 +22,7 @@ async function getAttractionCardData(db, attrIds, lang) {
     SELECT
         e.id,
         e.path,
+        e.is_active,
 
         m.title,
         m.description,
@@ -248,6 +249,7 @@ const coordinatesByEntity = Object.fromEntries(
 
             id: item.id,
             path: item.path,
+            is_active: Boolean(item.is_active),
 
             type: attributes.type,
             feature: attributes.feature,
