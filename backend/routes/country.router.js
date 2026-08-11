@@ -42,6 +42,7 @@ LEFT JOIN content c
     AND c.block_key = 'name'
     AND c.language = ?
 WHERE e.parent_id = ?
+AND e.type != 'route'
 `,
       [lang, country.id]
     );
@@ -54,17 +55,73 @@ WHERE e.parent_id = ?
       name: r.name || ""
     }));
 
-    // META
+        // 4. routes
+    const [routesRows] = await db.query(
+        `
+        SELECT
+            e.id,
+            e.path,
+            e.is_active,
+
+            name.content AS name,
+            short_description.content AS short_description,
+            routeLength.content AS routeLength
+
+        FROM entities e
+
+        LEFT JOIN content name
+            ON name.entity_id = e.id
+            AND name.block_key = 'name'
+            AND name.language = ?
+
+        LEFT JOIN content short_description
+            ON short_description.entity_id = e.id
+            AND short_description.block_key = 'short_description'
+            AND short_description.language = ?
+
+        LEFT JOIN content routeLength
+            ON routeLength.entity_id = e.id
+            AND routeLength.block_key = 'routeLength'
+            AND routeLength.language = ?
+
+        WHERE e.parent_id = ?
+          AND e.type = 'route'
+          AND e.is_active = 1
+        `,
+        [
+            lang,
+            lang,
+            lang,
+            country.id
+        ]
+    );
+
+    const routes = routesRows.map(r => ({
+        id: r.id,
+        path: r.path,
+        is_active: Boolean(r.is_active),
+
+        translations: {
+            [lang]: {
+                name: r.name || null,
+                short_description: r.short_description || null,
+                routeLength: r.routeLength || null
+            }
+        }
+    }));
+
+    // 5. META
     const meta = await getMeta(db, country.id, lang);
 
-    // PHOTO
+    // 6. PHOTO
     const { photos, mainPhoto } = await getEntityPhotos(db, country.id);
 
-    // 4. response
+    // 7. response
     res.json({
       ...country,
       blocks,
       regions,
+      routes,
       meta,
       photos,
       mainPhoto

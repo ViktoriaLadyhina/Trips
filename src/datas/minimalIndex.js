@@ -60,6 +60,9 @@ const datas =
     luxembourg_city: { id: 146, ru: 'Город Люксембург', de: 'Stadt Luxemburg', uk: 'Місто Люксембург' },
     ansembourg: { id: 159, ru: 'Деревня Ансембург', de: 'Dorf Ansembourg', uk: 'Село Ансембург' },
     koerich: { id: 141, ru: 'Деревня Кёрих', de: 'Dorf Koerich', uk: 'Село Керіх' },
+    mersch_com: { id: 153, is_active: 0, ru: 'Мерш', de: 'Mersch', uk: 'Мерш' },
+    helperknapp: { id: 755, is_active: 0, ru: 'Хелперкенапп', de: 'Helperknapp', uk: 'Хелперкенапп' },
+    habscht: { id: 759, is_active: 0, ru: 'Хабшт', de: 'Habscht', uk: 'Хабшт' },
 
     //Ukraine
     sumy: { id: 125, ru: 'Город Сумы', de: 'Stadt Sumy', uk: 'Місто Суми' }
@@ -312,8 +315,8 @@ const datas =
     citykirche_koblenz: { ru: 'Иезуитская церковь Кобленца (Citykirche)', de: 'Jesuitenkirche Koblenz (Citykirche)', uk: 'Єзуїтська церква Кобленца (Citykirche)' },
 
     //luxembourg
-    ansembourg_castle: { id: 751, ru: 'Новый замок Ансембург', de: 'Schloss Ansembourg', uk: 'Новий замок Ансембурґ' },
-    koerich_castle: { id: 752, ru: 'Замок Керих', de: 'Burg Koerich', uk: 'Замок Керіх' },
+    ansembourg_castle: { id: 751, ru: 'Новый замок Ансембург', de: 'Schloss Ansembourg', uk: 'Новий замок Ансембурґ' }, // routes: 'seven_castles'
+    koerich_castle: { id: 752, ru: 'Замок Керих', de: 'Burg Koerich', uk: 'Замок Керіх' }, // routes: 'seven_castles'
     musee_drai_eechelen_luxembourg: { ru: 'Музей «Три жёлудя»', de: 'Museum „Drei Eicheln“', uk: 'Музей «Три жолуді»' },
     fort_thungen_luxembourg: { ru: 'Форт Тюнген', de: 'Fort Thüngen', uk: 'Форт Тюнген' },
     old_town_luxembourg: { ru: 'Старый город Люксембурга', de: 'Altstadt Luxemburg', uk: 'Старе місто Люксембурга' },
@@ -327,6 +330,12 @@ const datas =
     grand_ducal_palace_luxembourg: { ru: 'Дворец Великих герцогов', de: 'Großherzoglicher Palast', uk: 'Палац Великого герцога' },
     hammelsmarsch_luxembourg: { ru: 'Фонтан «Хэммельсмарш»', de: 'Brunnen «Hämmelsmarsch»', uk: 'Фонтан «Хеммельсмарш»' },
     acrobats_luxembourg: { ru: 'Скульптурная группа «Акробаты»', de: 'Skulpturengruppe «Akrobaten»', uk: 'Скульптурна група «Акробати»' },
+
+    mersch_castle: { id: 753, is_active: 0, ru: 'Замок Мерш', de: 'Schloss Mersch', uk: 'Замок Мерш' }, // routes: 'seven_castles'
+    schoenfels_castle: { id: 754, is_active: 0, ru: 'Замок Шёнфельс', de: 'Schloss Schoenfels', uk: 'Замок Шёнфельс' }, // routes: 'seven_castles'
+    hollenfels_castle: { id: 756, is_active: 0, ru: 'Замок Холленфельс', de: 'Schloss Hollenfels', uk: 'Замок Холленфельс' }, // routes: 'seven_castles'
+    ansembourg_ruins: { id: 758, is_active: 0, ru: 'Руины старого замка Ансембург', de: 'Ruinen der alten Burg Ansemburg', uk: 'Руїни старого замку Ансембург' }, // routes: 'seven_castles'
+    septfontaines_castle: { id: 760, is_active: 0, ru: 'Замок Сетфонтен', de: 'Schloss Septfontaines', uk: 'Замок Сетфонтен' }, // routes: 'seven_castles'
 
     // Ukraine
     // Sumska oblast

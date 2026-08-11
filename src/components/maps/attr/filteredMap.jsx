@@ -97,8 +97,8 @@ const FilteredMap = ({ map, routeAttractions = null, lang = 'ru' }) => {
 
   const routePositions = routeAttractions
     ? attractions
-        .filter(attr => attr?.coord?.lat != null && attr?.coord?.lng != null)
-        .map(attr => [attr.coord.lat, attr.coord.lng])
+      .filter(attr => attr?.coord?.lat != null && attr?.coord?.lng != null)
+      .map(attr => [attr.coord.lat, attr.coord.lng])
     : [];
 
   return (
@@ -119,8 +119,8 @@ const FilteredMap = ({ map, routeAttractions = null, lang = 'ru' }) => {
       <FitBounds points={attractions} />
 
       {routeAttractions && routePositions.length > 1 && (
-    <Polyline positions={routePositions} />
-)}
+        <Polyline positions={routePositions} />
+      )}
 
       {attractions.map(attr => {
         if (!attr?.coord) return null;
@@ -133,7 +133,7 @@ const FilteredMap = ({ map, routeAttractions = null, lang = 'ru' }) => {
             position={[lat, lng]}
             icon={getIconByStatus(attr)}
             eventHandlers={
-              !isTouchDevice
+              !isTouchDevice && attr.is_active
                 ? {
                   click: () => {
                     navigate(
@@ -156,7 +156,7 @@ const FilteredMap = ({ map, routeAttractions = null, lang = 'ru' }) => {
                   {attr?.meta?.ogImage && (
                     <img src={toFullUrl(attr.meta.ogImage)} alt={attr.name} />
                   )}
-                  <p>{attr?.meta?.title}</p>
+                   <p>{ attr?.meta?.title || attr?.name }</p>
                 </div>
               </Tooltip>
             )}
@@ -169,18 +169,20 @@ const FilteredMap = ({ map, routeAttractions = null, lang = 'ru' }) => {
                     <img src={toFullUrl(attr.meta.ogImage)} alt={attr.name} />
                   )}
 
-                  <p>{attr?.meta?.title}</p>
+                 <p>{ attr?.meta?.title || attr?.name }</p>
 
-                  <button
-                    className="popup-btn"
-                    onClick={() =>
-                      navigate(
-                        `/${attr.countryPath}/${attr.regionPath}/${attr.districtPath}/${attr.cityPath}/attractions/${attr.path}`
-                      )
-                    }
-                  >
-                    {moreBtnText[lang]}
-                  </button>
+                  {attr.is_active && (
+                    <button
+                      className="popup-btn"
+                      onClick={() =>
+                        navigate(
+                          `/${attr.countryPath}/${attr.regionPath}/${attr.districtPath}/${attr.cityPath}/attractions/${attr.path}`
+                        )
+                      }
+                    >
+                      {moreBtnText[lang]}
+                    </button>
+                  )}
                 </div>
               </Popup>
             )}
