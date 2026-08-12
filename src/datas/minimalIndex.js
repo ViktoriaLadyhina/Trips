@@ -130,6 +130,8 @@ const datas =
     frechen_grefrath: { id: 671, parent: 174, ru: 'Грефрат', de: 'Grefrath', uk: 'Грефрат' },
     frechen_huecheln: { id: 672, parent: 174, ru: 'Хюхельн', de: 'Hücheln', uk: 'Хюхельн' },
 
+    koblenz_ehrenbreitstein: { id: 763, parent: 89, ru: 'Эренбрайтштайн (Ehrenbreitstein)', de: 'Ehrenbreitstein', uk: 'Еренбрайтштайн (Ehrenbreitstein)' },
+
     sumy_zarichnyi: { id: 723, parent: 125, ru: 'Заречный район', de: 'Zaritschnyj-Bezirk', uk: 'Зарічний район' },
   },
   attractions: {
@@ -304,7 +306,7 @@ const datas =
     amuseum_saarburg: { ru: 'Амюзеум Саарбург', de: 'Amüseum Saarburg', uk: 'Амюзеум Саарбург' },
 
     // Koblenz
-    ehrenbreitstein_koblenz: { ru: 'Крепость Эренбрайтштайн', de: 'Festung Ehrenbreitstein', uk: 'Фортеця Еренбрайтштайн' },
+    ehrenbreitstein_koblenz: { id: 762, ru: 'Крепость Эренбрайтштайн', de: 'Festung Ehrenbreitstein', uk: 'Фортеця Еренбрайтштайн' },
     stolzenfels_koblenz: { ru: 'Замок Штольценфельс', de: 'Schloss Stolzenfels', uk: 'Замок Штольценфельс' },
     deutsches_eck_koblenz: { ru: 'Немецкий угол', de: 'Deutsches Eck', uk: 'Німецький кут' },
     kurfuerstliches_schloss_koblenz: { ru: 'Курфюрстский дворец', de: 'Kurfürstliches Schloss', uk: 'Курфюрстський палац' },

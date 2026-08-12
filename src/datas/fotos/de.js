@@ -676,25 +676,6 @@ export const Fotos = {
       ]
     },
     koblenz: {
-      ehrenbreitstein_koblenz: [
-        { path: "Germany/rheinland-pfalz/koblenz/ehrenbreitstein/001.jpg", title: { ru: "Крепость Эренбрайтштайн, 2023", uk: "Фортеця Еренбрайтштайн, 2023", de: "Festung Ehrenbreitstein, 2023" } },
-        { path: "Germany/rheinland-pfalz/koblenz/ehrenbreitstein/002.jpg", title: { ru: "Крепость Эренбрайтштайн, 2023", uk: "Фортеця Еренбрайтштайн, 2023", de: "Festung Ehrenbreitstein, 2023" } },
-        { path: "Germany/rheinland-pfalz/koblenz/ehrenbreitstein/003.jpg", title: { ru: "Крепость Эренбрайтштайн, 2023", uk: "Фортеця Еренбрайтштайн, 2023", de: "Festung Ehrenbreitstein, 2023" } },
-        { path: "Germany/rheinland-pfalz/koblenz/ehrenbreitstein/004.jpg", title: { ru: "Крепость Эренбрайтштайн, 2023", uk: "Фортеця Еренбрайтштайн, 2023", de: "Festung Ehrenbreitstein, 2023" } },
-        { path: "Germany/rheinland-pfalz/koblenz/ehrenbreitstein/005.jpg", title: { ru: "Крепость Эренбрайтштайн, 2023", uk: "Фортеця Еренбрайтштайн, 2023", de: "Festung Ehrenbreitstein, 2023" } },
-        { path: "Germany/rheinland-pfalz/koblenz/ehrenbreitstein/006.jpg", title: { ru: "Крепость Эренбрайтштайн, 2023", uk: "Фортеця Еренбрайтштайн, 2023", de: "Festung Ehrenbreitstein, 2023" } },
-        { path: "Germany/rheinland-pfalz/koblenz/ehrenbreitstein/007.jpg", title: { ru: "Крепость Эренбрайтштайн, 2023", uk: "Фортеця Еренбрайтштайн, 2023", de: "Festung Ehrenbreitstein, 2023" } },
-        { path: "Germany/rheinland-pfalz/koblenz/ehrenbreitstein/008.jpg", title: { ru: "Крепость Эренбрайтштайн, 2023", uk: "Фортеця Еренбрайтштайн, 2023", de: "Festung Ehrenbreitstein, 2023" } },
-        { path: "Germany/rheinland-pfalz/koblenz/ehrenbreitstein/009.jpg", title: { ru: "Крепость Эренбрайтштайн, 2023", uk: "Фортеця Еренбрайтштайн, 2023", de: "Festung Ehrenbreitstein, 2023" } },
-        { path: "Germany/rheinland-pfalz/koblenz/ehrenbreitstein/010.jpg", title: { ru: "Крепость Эренбрайтштайн, 2023", uk: "Фортеця Еренбрайтштайн, 2023", de: "Festung Ehrenbreitstein, 2023" } },
-        { path: "Germany/rheinland-pfalz/koblenz/ehrenbreitstein/011.jpg", title: { ru: "Крепость Эренбрайтштайн, 2023", uk: "Фортеця Еренбрайтштайн, 2023", de: "Festung Ehrenbreitstein, 2023" } },
-        { path: "Germany/rheinland-pfalz/koblenz/ehrenbreitstein/012.jpg", title: { ru: "Крепость Эренбрайтштайн, 2023", uk: "Фортеця Еренбрайтштайн, 2023", de: "Festung Ehrenbreitstein, 2023" } },
-        { path: "Germany/rheinland-pfalz/koblenz/ehrenbreitstein/013.jpg", title: { ru: "Крепость Эренбрайтштайн, 2023", uk: "Фортеця Еренбрайтштайн, 2023", de: "Festung Ehrenbreitstein, 2023" } },
-        { path: "Germany/rheinland-pfalz/koblenz/ehrenbreitstein/014.jpg", title: { ru: "Крепость Эренбрайтштайн, 2023", uk: "Фортеця Еренбрайтштайн, 2023", de: "Festung Ehrenbreitstein, 2023" } },
-        { path: "Germany/rheinland-pfalz/koblenz/ehrenbreitstein/015.jpg", title: { ru: "Крепость Эренбрайтштайн, 2023", uk: "Фортеця Еренбрайтштайн, 2023", de: "Festung Ehrenbreitstein, 2023" } },
-        { path: "Germany/rheinland-pfalz/koblenz/ehrenbreitstein/016.jpg", title: { ru: "Крепость Эренбрайтштайн, 2023", uk: "Фортеця Еренбрайтштайн, 2023", de: "Festung Ehrenbreitstein, 2023" } },
-        { path: "Germany/rheinland-pfalz/koblenz/ehrenbreitstein/017.jpg", title: { ru: "Крепость Эренбрайтштайн, 2023", uk: "Фортеця Еренбрайтштайн, 2023", de: "Festung Ehrenbreitstein, 2023" } },
-      ],
       stolzenfels_koblenz: [
         { path: "Germany/rheinland-pfalz/koblenz/stolzenfels/001.jpg", title: { ru: "Замок Штольценфельс (фото взято с интернета)", uk: "Замок Штольценфельс (фото взято з Інтернету)", de: "Schloss Stolzenfels (Foto aus dem Internet)" } },
       ],
