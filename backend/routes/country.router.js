@@ -96,19 +96,14 @@ AND e.type != 'route'
         ]
     );
 
-    const routes = routesRows.map(r => ({
-        id: r.id,
-        path: r.path,
-        is_active: Boolean(r.is_active),
-
-        translations: {
-            [lang]: {
-                name: r.name || null,
-                short_description: r.short_description || null,
-                routeLength: r.routeLength || null
-            }
-        }
-    }));
+const routes = routesRows.map(r => ({
+    id: r.id,
+    path: r.path,
+    is_active: Boolean(r.is_active),
+    name: r.name || null,
+    short_description: r.short_description || null,
+    routeLength: r.routeLength || null
+}));
 
     // 5. META
     const meta = await getMeta(db, country.id, lang);
