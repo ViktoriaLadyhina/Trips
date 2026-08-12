@@ -673,12 +673,6 @@ export const Fotos = {
       stolzenfels_koblenz: [
         { path: "Germany/rheinland-pfalz/koblenz/stolzenfels/001.jpg", title: { ru: "Замок Штольценфельс (фото взято с интернета)", uk: "Замок Штольценфельс (фото взято з Інтернету)", de: "Schloss Stolzenfels (Foto aus dem Internet)" } },
       ],
-      deutsches_eck_koblenz: [
-        { path: "Germany/rheinland-pfalz/koblenz/deutsches_eck/001.jpg", title: { ru: "Немецкий угол, 2023", uk: "Німецький кут, 2023", de: "Deutsches Eck, 2023" } },
-        { path: "Germany/rheinland-pfalz/koblenz/deutsches_eck/002.jpg", title: { ru: "Немецкий угол, 2023", uk: "Німецький кут, 2023", de: "Deutsches Eck, 2023" } },
-        { path: "Germany/rheinland-pfalz/koblenz/deutsches_eck/003.jpg", title: { ru: "Немецкий угол, 2023", uk: "Німецький кут, 2023", de: "Deutsches Eck, 2023" } },
-        { path: "Germany/rheinland-pfalz/koblenz/deutsches_eck/004.jpg", title: { ru: "Немецкий угол, 2023", uk: "Німецький кут, 2023", de: "Deutsches Eck, 2023" } },
-      ],
       kurfuerstliches_schloss_koblenz: [
         { path: "Germany/rheinland-pfalz/koblenz/kurfuerstliches_schloss/001.jpg", title: { ru: "Курфюрстский дворец, 2023", uk: "Курфюрстський палац, 2023", de: "Kurfürstliches Schloss, 2023" } },
         { path: "Germany/rheinland-pfalz/koblenz/kurfuerstliches_schloss/002.jpg", title: { ru: "Курфюрстский дворец, 2023", uk: "Курфюрстський палац, 2023", de: "Kurfürstliches Schloss, 2023" } },

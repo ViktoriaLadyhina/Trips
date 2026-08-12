@@ -134,6 +134,7 @@ const datas =
     frechen_huecheln: { id: 672, parent: 174, ru: 'Хюхельн', de: 'Hücheln', uk: 'Хюхельн' },
 
     koblenz_ehrenbreitstein: { id: 763, parent: 89, ru: 'Эренбрайтштайн (Ehrenbreitstein)', de: 'Ehrenbreitstein', uk: 'Еренбрайтштайн (Ehrenbreitstein)' },
+    koblenz_altstadt: { id: 778, parent: 89, ru: 'Старый город (Altstadt)', de: 'Altstadt', uk: 'Старе місто (Altstadt)' },
 
     sumy_zarichnyi: { id: 723, parent: 125, ru: 'Заречный район', de: 'Zaritschnyj-Bezirk', uk: 'Зарічний район' },
   },
@@ -311,7 +312,7 @@ const datas =
     // Koblenz
     ehrenbreitstein_koblenz: { id: 762, ru: 'Крепость Эренбрайтштайн', de: 'Festung Ehrenbreitstein', uk: 'Фортеця Еренбрайтштайн' }, // routes: 'castles_rhine_valley'
     stolzenfels_koblenz: { ru: 'Замок Штольценфельс', de: 'Schloss Stolzenfels', uk: 'Замок Штольценфельс' },
-    deutsches_eck_koblenz: { ru: 'Немецкий угол', de: 'Deutsches Eck', uk: 'Німецький кут' },
+    deutsches_eck_koblenz: { id: 777, ru: 'Немецкий угол', de: 'Deutsches Eck', uk: 'Німецький кут' }, // routes: 'castles_rhine_valley'
     kurfuerstliches_schloss_koblenz: { ru: 'Курфюрстский дворец', de: 'Kurfürstliches Schloss', uk: 'Курфюрстський палац' },
     altstadt_koblenz: { ru: 'Старый город Кобленца', de: 'Altstadt Koblenz', uk: 'Старе місто Кобленца' },
     citykirche_koblenz: { ru: 'Иезуитская церковь Кобленца (Citykirche)', de: 'Jesuitenkirche Koblenz (Citykirche)', uk: 'Єзуїтська церква Кобленца (Citykirche)' },

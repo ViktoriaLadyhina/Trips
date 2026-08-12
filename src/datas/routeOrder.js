@@ -1,7 +1,7 @@
 const routeOrder = {
     castles_rhine_valley: [
         "ehrenbreitstein_koblenz",
-        // "deutsches_eck_koblenz",
+        "deutsches_eck_koblenz",
         // "kurfuerstliches_schloss_koblenz",
         "lahneck",
         // "stolzenfels_koblenz",
