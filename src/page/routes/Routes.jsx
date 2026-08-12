@@ -120,14 +120,19 @@ const Routes = () => {
     const blockRegistry = {
         name: TextBlock,
         map: () => (
-            route?.mapOpen
-                ? (
+            <div className="route__desc-plan">
+                {route?.mapOpen ? (
                     <FilteredMap
                         map={route.mapOpen}
                         routeAttractions={route.subObjects}
                     />
-                )
-                : null
+                ) : route?.plan ? (
+                    <img
+                        src={`${BASE_PHOTO_URL}${route.plan.path}`}
+                        alt={langData?.name || ""}
+                    />
+                ) : null}
+            </div>
         ),
         full_description: TextBlock,
         practical_info: TextBlock,
@@ -135,6 +140,7 @@ const Routes = () => {
         features: TextBlock,
         recommendations: TextBlock,
         interestingFacts: TextBlock,
+        officialSite: TextBlock,
     };
 
 
@@ -148,15 +154,14 @@ const Routes = () => {
         );
     };
 
-    // subAttractions
-    const attractionRoute = route?.subObjects?.filter(r => r?.routes === route.path);
-
     if (error) return <p>{error}</p>;
     if (loading || !route) {
         return (
             <SkeletonRenderer blocks={SkeletonList} />
         );
     }
+
+    const attractionRoute = route?.subObjects?.filter(attr => attr.is_active) || [];
 
     const crumbs = [
         { label: lang === 'ru' ? 'Главная' : lang === 'de' ? 'Startseite' : 'Головна', path: '/' },

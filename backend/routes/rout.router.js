@@ -132,7 +132,7 @@ router.get("/:routPath", async (req, res) => {
             .filter(Boolean);
 
         const allPhotos = [
-            ...photos,
+            ...photos.filter(photo => photo.sort_order !== 0),
             ...subObjectPhotos
         ].filter(
             (photo, index, array) =>
@@ -140,6 +140,8 @@ router.get("/:routPath", async (req, res) => {
                     item => item.id === photo.id
                 )
         );
+
+        const plan = photos.find(photo => photo.sort_order === 0) || null;
 
         // 10. RESPONSE
 
@@ -167,6 +169,7 @@ router.get("/:routPath", async (req, res) => {
 
             photos: allPhotos,
             mainPhoto,
+            plan,
 
             mapOpen: attributes.mapOpen,
 

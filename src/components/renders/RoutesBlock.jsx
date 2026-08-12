@@ -8,11 +8,7 @@ export const RoutesBlock = ({ routes, lang, countryPath }) => {
     <div className="country__routes">
 
       <h2 className="country__routes-title">
-        {lang === "ru"
-          ? "Маршруты"
-          : lang === "de"
-          ? "Routen"
-          : "Маршрути"}
+        {lang === "ru" ? "Маршруты" : lang === "de" ? "Routen" : "Маршрути"}
       </h2>
 
       <table className="country__routes-table">
@@ -29,11 +25,11 @@ export const RoutesBlock = ({ routes, lang, countryPath }) => {
             <tr key={r.id}>
               <td>
                 <Link to={`/${countryPath}/routes/${r.path}`}>
-                  {r.translations?.[lang]?.name}
+                  {r.name}
                 </Link>
               </td>
-              <td>{r.translations?.[lang]?.short_description}</td>
-              <td>{r.translations?.[lang]?.routeLength}</td>
+              <td dangerouslySetInnerHTML={{ __html: r.short_description || "" }} />
+              <td dangerouslySetInnerHTML={{ __html: r.routeLength || "" }} />
             </tr>
           ))}
         </tbody>
@@ -52,12 +48,12 @@ export const RoutesBlock = ({ routes, lang, countryPath }) => {
                   : "Назва:"}
               </strong>{" "}
               <Link to={`/${countryPath}/routes/${r.path}`}>
-                {r.translations?.[lang]?.name}
+                {r.name}
               </Link>
             </div>
 
             <div className="country__routes-row">
-              {r.translations?.[lang]?.short_description}
+              <td dangerouslySetInnerHTML={{ __html: r.short_description || "" }} />
             </div>
 
           </div>

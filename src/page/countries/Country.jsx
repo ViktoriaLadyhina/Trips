@@ -4,7 +4,6 @@ import { Helmet } from "react-helmet-async";
 import { useEffect, useState } from 'react';
 
 import BreadCrumbs from '../../components/breadCrumbs/BreadCrumbs.jsx';
-import useRoutes from '../../hooks/useRoutesSearch.js';
 import { toFullUrl } from "../../utils/photo.js";
 import { getCountry } from "../../api/api.js";
 
@@ -57,7 +56,6 @@ const Country = () => {
     const { countryPath } = useParams();
     const { lang } = useSelector((state) => state.language);
     const [sidebarOpen, setSidebarOpen] = useState(false);
-    const { routes } = useRoutes(countryPath);
     const [country, setCountry] = useState(null);
     const [error, setError] = useState(null);
     const { blocks, langData } = prepareEntityBlocks(country?.blocks);
@@ -108,7 +106,7 @@ useEffect(() => {
         langData,
         countryPath,
         mapRegions,
-        routes,
+        routes: country.routes || [],
         path: `/${countryPath}/attractions`,
         classPrefix: "country",
         photos: {

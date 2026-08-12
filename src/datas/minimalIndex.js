@@ -356,7 +356,7 @@ const datas =
     christmas_market_dortmund: { ru: "Рождественская ярмарка и главная рождественская ёлка Дортмунда", uk: "Різдвяний ярмарок і головна різдвяна ялинка Дортмунда", de: "Weihnachtsmarkt und der große Weihnachtsbaum in Dortmund" },
   },
   routes: {
-    mullerthal_trail: { ru: "Мюллертальская тропа", uk: "Мюллертальська стежка", de: "Mullerthal Trail" },
+    mullerthal_trail: { id: 761, ru: "Мюллертальская тропа", uk: "Мюллертальська стежка", de: "Mullerthal Trail" },
     seven_castles: { id: 750, ru: "Долина семи замков", uk: "Долина семи замків", de: "Tal der sieben Schlösser" },
     castles_rhine_valley: { ru: "Долина Среднего Рейна", uk: "Долина Середнього Рейну", de: "Mittelrheintal" },
   }

@@ -1,31 +1,5 @@
 export const Fotos = {
   country: "Luxembourg",
-  mullerthal_trail: [
-    { path: "Luxembourg/mullerthal/001.jpg", title: { ru: "Мюллертальская тропа, 2024", uk: "Мюллертальська стежка, 2024", de: "Mullerthal Trail, 2024" } },
-    { path: "Luxembourg/mullerthal/002.jpg", title: { ru: "Мюллертальская тропа, 2024", uk: "Мюллертальська стежка, 2024", de: "Mullerthal Trail, 2024" } },
-    { path: "Luxembourg/mullerthal/003.jpg", title: { ru: "Мюллертальская тропа, 2024", uk: "Мюллертальська стежка, 2024", de: "Mullerthal Trail, 2024" } },
-    { path: "Luxembourg/mullerthal/004.jpg", title: { ru: "Мюллертальская тропа, 2024", uk: "Мюллертальська стежка, 2024", de: "Mullerthal Trail, 2024" } },
-    { path: "Luxembourg/mullerthal/005.jpg", title: { ru: "Мюллертальская тропа, 2024", uk: "Мюллертальська стежка, 2024", de: "Mullerthal Trail, 2024" } },
-    { path: "Luxembourg/mullerthal/006.jpg", title: { ru: "Мюллертальская тропа, 2024", uk: "Мюллертальська стежка, 2024", de: "Mullerthal Trail, 2024" } },
-    { path: "Luxembourg/mullerthal/007.jpg", title: { ru: "Мюллертальская тропа, 2024", uk: "Мюллертальська стежка, 2024", de: "Mullerthal Trail, 2024" } },
-    { path: "Luxembourg/mullerthal/008.jpg", title: { ru: "Мюллертальская тропа, 2024", uk: "Мюллертальська стежка, 2024", de: "Mullerthal Trail, 2024" } },
-    { path: "Luxembourg/mullerthal/009.jpg", title: { ru: "Мюллертальская тропа, 2024", uk: "Мюллертальська стежка, 2024", de: "Mullerthal Trail, 2024" } },
-    { path: "Luxembourg/mullerthal/010.jpg", title: { ru: "Мюллертальская тропа, 2024", uk: "Мюллертальська стежка, 2024", de: "Mullerthal Trail, 2024" } },
-    { path: "Luxembourg/mullerthal/011.jpg", title: { ru: "Мюллертальская тропа, 2024", uk: "Мюллертальська стежка, 2024", de: "Mullerthal Trail, 2024" } },
-    { path: "Luxembourg/mullerthal/012.jpg", title: { ru: "Мюллертальская тропа, 2024", uk: "Мюллертальська стежка, 2024", de: "Mullerthal Trail, 2024" } },
-    { path: "Luxembourg/mullerthal/013.jpg", title: { ru: "Мюллертальская тропа, 2024", uk: "Мюллертальська стежка, 2024", de: "Mullerthal Trail, 2024" } },
-    { path: "Luxembourg/mullerthal/014.jpg", title: { ru: "Мюллертальская тропа, 2024", uk: "Мюллертальська стежка, 2024", de: "Mullerthal Trail, 2024" } },
-    { path: "Luxembourg/mullerthal/015.jpg", title: { ru: "Мюллертальская тропа, 2024", uk: "Мюллертальська стежка, 2024", de: "Mullerthal Trail, 2024" } },
-    { path: "Luxembourg/mullerthal/016.jpg", title: { ru: "Мюллертальская тропа, 2024", uk: "Мюллертальська стежка, 2024", de: "Mullerthal Trail, 2024" } },
-  ],
-  seven_castles: [
-    { path: "Luxembourg/seven_castles/koerich_castle/001.jpg", title: { ru: "Замок Керих, 2024", uk: "Замок Кьоріх, 2024", de: "Burg Koerich, 2024" } },
-    { path: "Luxembourg/seven_castles/koerich_castle/005.jpg", title: { ru: "Замок Керих, 2024", uk: "Замок Кьоріх, 2024", de: "Burg Koerich, 2024" } },
-    { path: "Luxembourg/seven_castles/koerich_castle/007.jpg", title: { ru: "Замок Керих, 2024", uk: "Замок Кьоріх, 2024", de: "Burg Koerich, 2024" } },
-    { path: "Luxembourg/seven_castles/ansembourg_castle/006.jpg", title: { ru: "Замок Ансембург, 2024", uk: "Замок Ансембург, 2024", de: "Schloss Ansemburg, 2024" } },
-    { path: "Luxembourg/seven_castles/ansembourg_castle/009.jpg", title: { ru: "Замок Ансембург, 2024", uk: "Замок Ансембург, 2024", de: "Schloss Ansemburg, 2024" } },
-    { path: "Luxembourg/seven_castles/ansembourg_castle/013.jpg", title: { ru: "Замок Ансембург, 2024", uk: "Замок Ансембург, 2024", de: "Schloss Ansemburg, 2024" } },
-  ],
 
   luxembourg_canton: {
     luxembourg_city: {
