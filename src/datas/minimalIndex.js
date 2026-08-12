@@ -309,12 +309,25 @@ const datas =
     amuseum_saarburg: { ru: 'Амюзеум Саарбург', de: 'Amüseum Saarburg', uk: 'Амюзеум Саарбург' },
 
     // Koblenz
-    ehrenbreitstein_koblenz: { id: 762, ru: 'Крепость Эренбрайтштайн', de: 'Festung Ehrenbreitstein', uk: 'Фортеця Еренбрайтштайн' },
+    ehrenbreitstein_koblenz: { id: 762, ru: 'Крепость Эренбрайтштайн', de: 'Festung Ehrenbreitstein', uk: 'Фортеця Еренбрайтштайн' }, // routes: 'castles_rhine_valley'
     stolzenfels_koblenz: { ru: 'Замок Штольценфельс', de: 'Schloss Stolzenfels', uk: 'Замок Штольценфельс' },
     deutsches_eck_koblenz: { ru: 'Немецкий угол', de: 'Deutsches Eck', uk: 'Німецький кут' },
     kurfuerstliches_schloss_koblenz: { ru: 'Курфюрстский дворец', de: 'Kurfürstliches Schloss', uk: 'Курфюрстський палац' },
     altstadt_koblenz: { ru: 'Старый город Кобленца', de: 'Altstadt Koblenz', uk: 'Старе місто Кобленца' },
     citykirche_koblenz: { ru: 'Иезуитская церковь Кобленца (Citykirche)', de: 'Jesuitenkirche Koblenz (Citykirche)', uk: 'Єзуїтська церква Кобленца (Citykirche)' },
+
+    lahneck: { id: 766, is_active: 0, ru: 'Замок Ланек', de: 'Burg Lahneck', uk: 'Замок Ланек' }, // routes: 'castles_rhine_valley'
+    marksburg: { id: 767, is_active: 0, ru: 'Замок Марксбург', de: 'Burg Marksburg', uk: 'Замок Марксбург' }, // routes: 'castles_rhine_valley'
+    katz: { id: 768, is_active: 0, ru: 'Замок Кац', de: 'Burg Katz', uk: 'Замок Кац' }, // routes: 'castles_rhine_valley'
+    rheinfels: { id: 769, is_active: 0, ru: 'Замок Райнфельс', de: 'Burg Rheinfels', uk: 'Замок Райнфельс' }, // routes: 'castles_rhine_valley'
+    loreley: { id: 765, is_active: 0, ru: 'Лореляй', de: 'Loreley', uk: 'Лореляй' }, // routes: 'castles_rhine_valley'
+    maus: { id: 770, is_active: 0, ru: 'Замок Маус', de: 'Burg Maus', uk: 'Замок Маус' }, // routes: 'castles_rhine_valley'
+    schonburg: { id: 771, is_active: 0, ru: 'Замок Шёнбург', de: 'Burg Schönburg', uk: 'Замок Шенбург' }, // routes: 'castles_rhine_valley'
+    pfalzgrafenstein: { id: 772, is_active: 0, ru: 'Замок Пфальцграфенштайн', de: 'Burg Pfalzgrafenstein', uk: 'Замок Пфальцграфенштайн' }, // routes: 'castles_rhine_valley'
+    stahleck: { id: 773, is_active: 0, ru: 'Замок Шталек', de: 'Burg Stahleck', uk: 'Замок Шталек' }, // routes: 'castles_rhine_valley'
+    sooneck: { id: 774, is_active: 0, ru: 'Замок Зоонек', de: 'Burg Sooneck', uk: 'Замок Зоонек' }, // routes: 'castles_rhine_valley'
+    reichenstein: { id: 775, is_active: 0, ru: 'Замок Райхенштайн', de: 'Burg Reichenstein', uk: 'Замок Райхенштайн' }, // routes: 'castles_rhine_valley'
+    rheinstein: { id: 776, is_active: 0, ru: 'Замок Райнштайн', de: 'Burg Rheinstein', uk: 'Замок Райнштайн' }, // routes: 'castles_rhine_valley'
 
     //luxembourg
     ansembourg_castle: { id: 751, ru: 'Новый замок Ансембург', de: 'Schloss Ansembourg', uk: 'Новий замок Ансембурґ' }, // routes: 'seven_castles'
@@ -360,7 +373,7 @@ const datas =
   routes: {
     mullerthal_trail: { id: 761, ru: "Мюллертальская тропа", uk: "Мюллертальська стежка", de: "Mullerthal Trail" },
     seven_castles: { id: 750, ru: "Долина семи замков", uk: "Долина семи замків", de: "Tal der sieben Schlösser" },
-    castles_rhine_valley: { ru: "Долина Среднего Рейна", uk: "Долина Середнього Рейну", de: "Mittelrheintal" },
+    castles_rhine_valley: { id: 764, ru: "Долина Среднего Рейна", uk: "Долина Середнього Рейну", de: "Mittelrheintal" },
   }
 }
 

@@ -71,26 +71,39 @@ const FilteredMap = ({ map, routeAttractions = null, lang = 'ru' }) => {
   };
 
   // фильтрация стабильно через useMemo
-  const attractions = useMemo(() => {
-    if (!sourceAttractions.length) return [];
+const attractions = useMemo(() => {
+  if (!sourceAttractions.length) return [];
 
-    // Карта маршрута:
-    // достопримечательности уже отобраны API через routes
-    if (routeAttractions) {
-      return sourceAttractions.filter(Boolean);
+  // Карта маршрута
+  if (routeAttractions) {
+    const valid = sourceAttractions.filter(Boolean);
+
+    // Если у маршрута есть порядок — используем его
+    const hasRouteOrder = valid.some(
+      attr => attr?.routeOrder != null
+    );
+
+    if (hasRouteOrder) {
+      return [...valid].sort(
+        (a, b) => (a.routeOrder ?? Infinity) - (b.routeOrder ?? Infinity)
+      );
     }
 
-    // Обычная карта достопримечательностей
-    return sourceAttractions.filter(attr => {
-      if (!attr) return false;
+    // Пока порядок не задан — оставляем как пришло из API
+    return valid;
+  }
 
-      if (!map) return true;
+  // Обычная карта достопримечательностей
+  return sourceAttractions.filter(attr => {
+    if (!attr) return false;
 
-      return Array.isArray(attr.map)
-        ? attr.map.includes(map)
-        : attr.map === map;
-    });
-  }, [sourceAttractions, map, routeAttractions]);
+    if (!map) return true;
+
+    return Array.isArray(attr.map)
+      ? attr.map.includes(map)
+      : attr.map === map;
+  });
+}, [sourceAttractions, map, routeAttractions]);
 
   // mobile detection безопасный
   const isTouchDevice = L.Browser?.mobile ?? false;

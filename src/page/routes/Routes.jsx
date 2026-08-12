@@ -16,6 +16,7 @@ import { TextBlock } from '../../components/renders/TextBlock.jsx';
 import { PhotoBlock } from '../../components/renders/PhotoBlock.jsx';
 import SkeletonRenderer from '../../components/skeleton/SkeletonRenderer.jsx';
 import MysqlGallery from '../../components/gallery/MysqlGallery.jsx';
+import routeOrder from '../../datas/routeOrder.js';
 
 const BASE_PHOTO_URL = import.meta.env.VITE_BASE_PHOTO_URL;
 
@@ -76,6 +77,7 @@ const Routes = () => {
     const [error, setError] = useState(null);
     const meta = route?.meta;
     const { blocks, langData } = prepareEntityBlocks(route?.blocks || []);
+    const order = routeOrder[route?.path];
 
     useEffect(() => {
         if (!routesPath) return;
@@ -108,6 +110,13 @@ const Routes = () => {
 
     }, [routesPath, lang]);
 
+    // порядок маршрутовых достопримечательностей
+    const orderedRouteAttractions = order
+    ? [...(route?.subObjects || [])].sort(
+        (a, b) => order.indexOf(a.path) - order.indexOf(b.path)
+      )
+    : route?.subObjects || [];
+
     // MYSQL BLOCKS
     const context = {
         lang,
@@ -124,7 +133,7 @@ const Routes = () => {
                 {route?.mapOpen ? (
                     <FilteredMap
                         map={route.mapOpen}
-                        routeAttractions={route.subObjects}
+                        routeAttractions={orderedRouteAttractions}
                     />
                 ) : route?.plan ? (
                     <img

@@ -64,17 +64,8 @@ const statusTitle = {
 };
 
 const noteLabel = {
-    partial: {
-        ru: 'Частично сохранилось',
-        uk: 'Частково збережено',
-        de: 'Teilweise erhalten'
-    },
-
-    lost: {
-        ru: 'Утрачено',
-        uk: 'Втрачено',
-        de: 'Verloren'
-    }
+    partial: { ru: 'Частично сохранилось', uk: 'Частково збережено', de: 'Teilweise erhalten' },
+    lost: { ru: 'Утрачено', uk: 'Втрачено', de: 'Verloren' }
 };
 
 const SkeletonList = [

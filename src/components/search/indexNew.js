@@ -1,6 +1,5 @@
 const loaders = {
     germany: {
-      routes: () => import('../../datas/germany/routes.js').then(m => m.default),
         nrw: {
             attractions: () => import('../../datas/germany/nrw-attractions.js').then(m => m.default),
             events: () => import('../../datas/germany/nrw-events.js').then(m => m.default),
@@ -21,7 +20,6 @@ const loaders = {
 
 const searchIndexNew = {
   germany: {
-    routes: { type: "routes", loaders: loaders.germany.routes },
     nrw: {
       attractions: { type: "attraction", loaders: loaders.germany.nrw.attractions  },
       events: { type: "event", loaders: loaders.germany.nrw.events },

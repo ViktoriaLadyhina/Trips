@@ -1,11 +1,5 @@
 export const Fotos = {
   country: "Germany",
-  castles_rhine_valley: [
-    { path: "Germany/rheinland-pfalz/koblenz/ehrenbreitstein/001.jpg", title: { ru: "Крепость Эренбрайтштайн, 2023", uk: "Фортеця Еренбрайтштайн, 2023", de: "Festung Ehrenbreitstein, 2023" } },
-    { path: "Germany/rheinland-pfalz/koblenz/stolzenfels/001.jpg", title: { ru: "Замок Штольценфельс (фото взято с интернета)", uk: "Замок Штольценфельс (фото взято з Інтернету)", de: "Schloss Stolzenfels (Foto aus dem Internet)" } },
-    { path: "Germany/rheinland-pfalz/koblenz/deutsches_eck/001.jpg", title: { ru: "Немецкий угол, 2023", uk: "Німецький кут, 2023", de: "Deutsches Eck, 2023" } },
-    { path: "Germany/rheinland-pfalz/koblenz/kurfuerstliches_schloss/001.jpg", title: { ru: "Курфюрстский дворец, 2023", uk: "Курфюрстський палац, 2023", de: "Kurfürstliches Schloss, 2023" } },
-  ],
 
   nrw: {
 

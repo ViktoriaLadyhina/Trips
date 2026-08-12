@@ -19,6 +19,52 @@ const Unesco_Description = {
   de: "Liste der UNESCO-Welterbestätten: Sehenswürdigkeiten, Städte und historische Orte."
 };
 
+// export const Unesco_HeritageType = {
+//     Cultural: {
+//         ru: "Культурное",
+//         uk: "Культурне",
+//         de: "Kulturell"
+//     },
+//     Natural: {
+//         ru: "Природное",
+//         uk: "Природне",
+//         de: "Natur"
+//     },
+//     Mixed: {
+//         ru: "Смешанное",
+//         uk: "Змішане",
+//         de: "Gemischt"
+//     }
+// };
+
+// export const Unesco_Epoch = {
+//     Gothic: {
+//         ru: "Готика",
+//         uk: "Готика",
+//         de: "Gotik"
+//     },
+//         Historic: {
+//         ru: "Античность – Средневековье – Новое время",
+//         uk: "Античність – Середньовіччя – Новий час",
+//         de: "Antike – Mittelalter – Neuzeit"
+//     }
+// };
+
+// export const Unesco_NoSeries = {
+//     ru: "Без серии",
+//     uk: "Без серії",
+//     de: "Ohne Serie"
+// };
+
+// const getUnescoEpoch = (epoch, lang) => {
+//     if (!epoch) return null;
+
+//     return epoch
+//         .split(" – ")
+//         .map(item => Unesco_Epoch[item]?.[lang] || item)
+//         .join(" – ");
+// };
+
 export const Unesco = () => {
   const { lang } = useSelector((state) => state.language);
   const { attractions } = useAllAttractions();
