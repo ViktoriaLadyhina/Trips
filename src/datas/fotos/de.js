@@ -684,12 +684,7 @@ export const Fotos = {
         { path: "Germany/rheinland-pfalz/koblenz/altstadt/005.jpg", title: { ru: "Утиный фонтан (Entenbrunnen), 2023", uk: "Качиний фонтан (Entenbrunnen), 2023", de: "Entenbrunnen, 2023" } },
         { path: "Germany/rheinland-pfalz/koblenz/altstadt/009.jpg", title: { ru: "Памятник «Реше-Хеннерих», 2023", uk: "Пам’ятник «Реше-Хеннерих», 2023", de: "Denkmal für Rese-Hennrich, 2023" } },
         { path: "Germany/rheinland-pfalz/koblenz/altstadt/011.jpg", title: { ru: "Скульптура «Торговка и полицейский», 2023", uk: "Скульптура «Торговка и полицейский», 2023", de: "Marktfrau und Schutzmann, 2023" } },
-      ],
-      citykirche_koblenz: [
-        { path: "Germany/rheinland-pfalz/koblenz/altstadt/citykirche/001.jpg", title: { ru: "Иезуитская церковь Кобленца (Citykirche), 2023", uk: "Єзуїтська церква Кобленца (Citykirche), 2023", de: "Jesuitenkirche Koblenz (Citykirche), 2023" } },
-        { path: "Germany/rheinland-pfalz/koblenz/altstadt/citykirche/002.jpg", title: { ru: "Иезуитская церковь Кобленца (Citykirche), 2023", uk: "Єзуїтська церква Кобленца (Citykirche), 2023", de: "Jesuitenkirche Koblenz (Citykirche), 2023" } },
-        { path: "Germany/rheinland-pfalz/koblenz/altstadt/citykirche/003.jpg", title: { ru: "Иезуитская церковь Кобленца (Citykirche), 2023", uk: "Єзуїтська церква Кобленца (Citykirche), 2023", de: "Jesuitenkirche Koblenz (Citykirche), 2023" } },
-      ],
+      ]
     },
   }
 }

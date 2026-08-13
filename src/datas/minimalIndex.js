@@ -315,7 +315,7 @@ const datas =
     deutsches_eck_koblenz: { id: 777, ru: 'Немецкий угол', de: 'Deutsches Eck', uk: 'Німецький кут' }, // routes: 'castles_rhine_valley'
     kurfuerstliches_schloss_koblenz: { ru: 'Курфюрстский дворец', de: 'Kurfürstliches Schloss', uk: 'Курфюрстський палац' },
     altstadt_koblenz: { id: 779, ru: 'Старый город Кобленца', de: 'Altstadt Koblenz', uk: 'Старе місто Кобленца' },
-    citykirche_koblenz: { ru: 'Иезуитская церковь Кобленца (Citykirche)', de: 'Jesuitenkirche Koblenz (Citykirche)', uk: 'Єзуїтська церква Кобленца (Citykirche)' },
+    citykirche_koblenz: { id: 780, ru: 'Иезуитская церковь Кобленца (Citykirche)', de: 'Jesuitenkirche Koblenz (Citykirche)', uk: 'Єзуїтська церква Кобленца (Citykirche)' },
 
     lahneck: { id: 766, is_active: 0, ru: 'Замок Ланек', de: 'Burg Lahneck', uk: 'Замок Ланек' }, // routes: 'castles_rhine_valley'
     marksburg: { id: 767, is_active: 0, ru: 'Замок Марксбург', de: 'Burg Marksburg', uk: 'Замок Марксбург' }, // routes: 'castles_rhine_valley'
