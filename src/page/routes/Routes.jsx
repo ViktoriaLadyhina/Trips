@@ -22,6 +22,14 @@ const BASE_PHOTO_URL = import.meta.env.VITE_BASE_PHOTO_URL;
 
 const SkeletonList = [
     { type: "title" },
+    { type: "map" },
+        {
+        type: "text", props: {
+            hasTitle: true,
+            lines: 6,
+            hasPhoto: false
+        }
+    },
     {
         type: "text", props: {
             hasTitle: false,
@@ -32,41 +40,18 @@ const SkeletonList = [
     },
     {
         type: "text", props: {
-            hasTitle: false,
-            lines: 6,
-            hasPhoto: true,
-            photoPosition: "left",
-        }
-    },
-    {
-        type: "text", props: {
             hasTitle: true,
-            lines: 6,
+            lines: 4,
             hasPhoto: false
         }
     },
     {
         type: "text", props: {
             hasTitle: true,
-            lines: 5,
+            lines: 4,
             hasPhoto: false
         }
-    },
-    {
-        type: "text", props: {
-            hasTitle: false,
-            lines: 6,
-            hasPhoto: true,
-            photoPosition: "right",
-        }
-    },
-    {
-        type: "text", props: {
-            hasTitle: true,
-            lines: 7,
-            hasPhoto: false
-        }
-    },
+    }
 ];
 
 const Routes = () => {

@@ -4,7 +4,7 @@ const routeOrder = {
         "deutsches_eck_koblenz",
         // "kurfuerstliches_schloss_koblenz",
         "lahneck",
-        // "stolzenfels_koblenz",
+        "stolzenfels_koblenz",
         "marksburg",
         "maus",
         "rheinfels",
