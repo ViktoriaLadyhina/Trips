@@ -111,6 +111,7 @@ const Map = () => {
                         <ul>
                           <li><Link to="/germany/rheinland_pfalz/city/koblenz/attractions/deutsches_eck_koblenz">{t.attractions.deutsches_eck_koblenz[lang]}</Link></li>
                           <li><Link to="/germany/rheinland_pfalz/city/koblenz/attractions/citykirche_koblenz">{t.attractions.citykirche_koblenz[lang]}</Link></li>
+                          <li><Link to="/germany/rheinland_pfalz/city/koblenz/attractions/schengelbrunnen">{t.attractions.schengelbrunnen[lang]}</Link></li>
                         </ul>
                       </li>
                     </ul>

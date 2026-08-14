@@ -677,7 +677,6 @@ export const Fotos = {
       altstadt_koblenz: [
         { path: "Germany/rheinland-pfalz/koblenz/altstadt/001.jpg", title: { ru: "Фонтан Клеменса, 2023", uk: "Фонтан Клеменса, 2023", de: "Klemensbrunnen, 2023" } },
         { path: "Germany/rheinland-pfalz/koblenz/altstadt/002.jpg", title: { ru: "Историческая колонна, 2023", uk: "Історична колона, 2023", de: "Historiensäule, 2023" } },
-        { path: "Germany/rheinland-pfalz/koblenz/altstadt/003.jpg", title: { ru: "Фонтан «Шенгель» (Schängelbrunnen), 2023", uk: "Фонтан «Шенгель» (Schängelbrunnen), 2023", de: "Schängelbrunnen, 2023" } },
         { path: "Germany/rheinland-pfalz/koblenz/altstadt/005.jpg", title: { ru: "Утиный фонтан (Entenbrunnen), 2023", uk: "Качиний фонтан (Entenbrunnen), 2023", de: "Entenbrunnen, 2023" } },
         { path: "Germany/rheinland-pfalz/koblenz/altstadt/009.jpg", title: { ru: "Памятник «Реше-Хеннерих», 2023", uk: "Пам’ятник «Реше-Хеннерих», 2023", de: "Denkmal für Rese-Hennrich, 2023" } },
         { path: "Germany/rheinland-pfalz/koblenz/altstadt/011.jpg", title: { ru: "Скульптура «Торговка и полицейский», 2023", uk: "Скульптура «Торговка и полицейский», 2023", de: "Marktfrau und Schutzmann, 2023" } },
