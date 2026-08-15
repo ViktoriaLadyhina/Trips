@@ -670,16 +670,11 @@ export const Fotos = {
       ]
     },
     koblenz: {
-      kurfuerstliches_schloss_koblenz: [
-        { path: "Germany/rheinland-pfalz/koblenz/kurfuerstliches_schloss/001.jpg", title: { ru: "Курфюрстский дворец, 2023", uk: "Курфюрстський палац, 2023", de: "Kurfürstliches Schloss, 2023" } },
-        { path: "Germany/rheinland-pfalz/koblenz/kurfuerstliches_schloss/002.jpg", title: { ru: "Курфюрстский дворец, 2023", uk: "Курфюрстський палац, 2023", de: "Kurfürstliches Schloss, 2023" } },
-      ],
       altstadt_koblenz: [
         { path: "Germany/rheinland-pfalz/koblenz/altstadt/001.jpg", title: { ru: "Фонтан Клеменса, 2023", uk: "Фонтан Клеменса, 2023", de: "Klemensbrunnen, 2023" } },
         { path: "Germany/rheinland-pfalz/koblenz/altstadt/002.jpg", title: { ru: "Историческая колонна, 2023", uk: "Історична колона, 2023", de: "Historiensäule, 2023" } },
         { path: "Germany/rheinland-pfalz/koblenz/altstadt/005.jpg", title: { ru: "Утиный фонтан (Entenbrunnen), 2023", uk: "Качиний фонтан (Entenbrunnen), 2023", de: "Entenbrunnen, 2023" } },
         { path: "Germany/rheinland-pfalz/koblenz/altstadt/009.jpg", title: { ru: "Памятник «Реше-Хеннерих», 2023", uk: "Пам’ятник «Реше-Хеннерих», 2023", de: "Denkmal für Rese-Hennrich, 2023" } },
-        { path: "Germany/rheinland-pfalz/koblenz/altstadt/011.jpg", title: { ru: "Скульптура «Торговка и полицейский», 2023", uk: "Скульптура «Торговка и полицейский», 2023", de: "Marktfrau und Schutzmann, 2023" } },
       ]
     },
   }

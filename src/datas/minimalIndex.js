@@ -136,6 +136,7 @@ const datas =
     koblenz_ehrenbreitstein: { id: 763, parent: 89, ru: 'район Эренбрайтштайн (Ehrenbreitstein)', de: 'Stadtteil Ehrenbreitstein', uk: 'район Еренбрайтштайн (Ehrenbreitstein)' },
     koblenz_altstadt: { id: 778, parent: 89, ru: ' район Старый город (Altstadt)', de: 'Stadtteil Altstadt', uk: 'район Старе місто (Altstadt)' },
     koblenz_solzenfels: { id: 782, parent: 89, ru: 'район  Штольценфельс (Stolzenfels)', de: 'Stadtteil Stolzenfels', uk: 'район Штольценфельс (Stolzenfels)' },
+    koblenz_südliche_vorstadt: { id: 784, parent: 89, ru: 'район  Южный пригород (Südliche Vorstadt)', de: 'Stadtteil Südliche Vorstadt', uk: 'район Південне передмістя (Südliche Vorstadt)' },
 
     sumy_zarichnyi: { id: 723, parent: 125, ru: 'Заречный район', de: 'Zaritschnyj-Bezirk', uk: 'Зарічний район' },
   },
@@ -314,10 +315,11 @@ const datas =
     ehrenbreitstein_koblenz: { id: 762, ru: 'Крепость Эренбрайтштайн', de: 'Festung Ehrenbreitstein', uk: 'Фортеця Еренбрайтштайн' }, // routes: 'castles_rhine_valley'
     stolzenfels_koblenz: { id: 781, ru: 'Замок Штольценфельс', de: 'Schloss Stolzenfels', uk: 'Замок Штольценфельс' }, // routes: 'castles_rhine_valley'
     deutsches_eck_koblenz: { id: 777, ru: 'Немецкий угол', de: 'Deutsches Eck', uk: 'Німецький кут' }, // routes: 'castles_rhine_valley'
-    kurfuerstliches_schloss_koblenz: { ru: 'Курфюрстский дворец', de: 'Kurfürstliches Schloss', uk: 'Курфюрстський палац' },
-    altstadt_koblenz: { id: 779, ru: 'Старый город Кобленца', de: 'Altstadt Koblenz', uk: 'Старе місто Кобленца' },
+    kurfuerstliches_schloss_koblenz: { id: 785, ru: 'Курфюрстский дворец', de: 'Kurfürstliches Schloss', uk: 'Курфюрстський палац' },
+    altstadt_koblenz: { id: 779, ru: 'Старый город Кобленца', de: 'Altstadt Koblenz', uk: 'Старе місто Кобленца' }, // routes: 'castles_rhine_valley'
     citykirche_koblenz: { id: 780, ru: 'Иезуитская церковь Кобленца (Citykirche)', de: 'Jesuitenkirche Koblenz (Citykirche)', uk: 'Єзуїтська церква Кобленца (Citykirche)' },
     schengelbrunnen: { id: 783, ru: 'Фонтан «Шенгель»', de: 'Schängelbrunnen', uk: 'Фонтан «Шенгель»' },
+    marktfrau_und_schutzmann_koblenz: { id: 786, ru: 'Скульптура «Торговка и полицейский»', de: 'Die Figurengruppe «Marktfrau und Schutzmann»', uk: 'Скульптурна група «Ринкова торговка та поліцейський»' },
 
     lahneck: { id: 766, is_active: 0, ru: 'Замок Ланек', de: 'Burg Lahneck', uk: 'Замок Ланек' }, // routes: 'castles_rhine_valley'
     marksburg: { id: 767, is_active: 0, ru: 'Замок Марксбург', de: 'Burg Marksburg', uk: 'Замок Марксбург' }, // routes: 'castles_rhine_valley'
