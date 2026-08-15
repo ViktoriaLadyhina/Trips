@@ -50,3 +50,6 @@ export const getAttraction = ( attrPath, lang = "ru") =>
 
 export const getRoute = (routePath, lang = "ru") =>
     apiFetch(`${BASE_URL}/api/route/${routePath}?lang=${lang}`);
+
+export const getUnesco = (lang = "ru") =>
+    apiFetch(`${BASE_URL}/api/unesco?lang=${lang}`);

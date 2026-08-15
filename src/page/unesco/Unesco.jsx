@@ -1,10 +1,11 @@
 import { useSelector } from "react-redux";
 import { Helmet } from "react-helmet-async";
 import BreadCrumbs from '../../components/breadCrumbs/BreadCrumbs.jsx';
-import useAllAttractions from "../../hooks/useAllAttractions.js";
-import useRoutes from '../../hooks/useRoutesSearch.js';
 import './Unesco.scss';
 import { Link } from "react-router";
+import { useEffect, useState } from "react";
+import getUnesco from "../../api/api.js";
+import SkeletonRenderer from "../../components/skeleton/SkeletonRenderer.jsx";
 
 const Unesco_Title = { ru: "Достопримечательности ЮНЕСКО", ua: "Пам’ятки ЮНЕСКО", de: "UNESCO-Welterbestätten" }
 const unescoTableHead = {
@@ -19,90 +20,86 @@ const Unesco_Description = {
   de: "Liste der UNESCO-Welterbestätten: Sehenswürdigkeiten, Städte und historische Orte."
 };
 
-// export const Unesco_HeritageType = {
-//     Cultural: {
-//         ru: "Культурное",
-//         uk: "Культурне",
-//         de: "Kulturell"
-//     },
-//     Natural: {
-//         ru: "Природное",
-//         uk: "Природне",
-//         de: "Natur"
-//     },
-//     Mixed: {
-//         ru: "Смешанное",
-//         uk: "Змішане",
-//         de: "Gemischt"
-//     }
-// };
+const SkeletonList = [
+        { type: "sidebar", props: { items: 10 } },
+        {
+            type: "content", props: {
+                blocks: [
+                    { type: "title" },
+                    { type: "map" },
+                    {
+                        type: "text", props: {
+                            hasTitle: false,
+                            lines: 8,
+                            hasPhoto: true,
+                            photoPosition: "right",
+                        }
+                    },
+                    {
+                        type: "text", props: {
+                            hasTitle: true,
+                            lines: 6,
+                            hasPhoto: true,
+                            photoPosition: "left",
+                        }
+                    },
+                    { type: "text", props: { hasTitle: true, lines: 6 } }
+                ]
+            }
+        }
+    ];
 
-// export const Unesco_Epoch = {
-//     Gothic: {
-//         ru: "Готика",
-//         uk: "Готика",
-//         de: "Gotik"
-//     },
-//         Historic: {
-//         ru: "Античность – Средневековье – Новое время",
-//         uk: "Античність – Середньовіччя – Новий час",
-//         de: "Antike – Mittelalter – Neuzeit"
-//     }
-// };
-
-// export const Unesco_NoSeries = {
-//     ru: "Без серии",
-//     uk: "Без серії",
-//     de: "Ohne Serie"
-// };
-
-// const getUnescoEpoch = (epoch, lang) => {
-//     if (!epoch) return null;
-
-//     return epoch
-//         .split(" – ")
-//         .map(item => Unesco_Epoch[item]?.[lang] || item)
-//         .join(" – ");
-// };
 
 export const Unesco = () => {
   const { lang } = useSelector((state) => state.language);
-  const { attractions } = useAllAttractions();
-  const { routes } = useRoutes();
+  const [loading, setLoading] = useState(true);
+  const [error, setError] = useState(null);
+  const [unesco, setUnesco] = useState(null);
 
-  const getAttractionLink = (item) => `/${item.countryPath}/${item.regionPath}/${item.districtPath}/${item.cityPath}/attractions/${item.path}`;
-  const getRouteLink = (route) => `/${route.countryPath}/routes/${route.path}`;
+  useEffect(() => {
+  
+      setLoading(true);
+      setError(null);
+  
+      getUnesco(lang)
+          .then(data => {
+              setUnesco(data);
+              setLoading(false);
+          })
+          .catch(err => {
+              setError(err.message);
+              setLoading(false);
+          });
+  
+  }, [lang]);
 
-  const attractionsUnesco = attractions
-    .filter(a => a.unesco_status?.included)
-    .map(a => ({
-      ...a,
-      link: getAttractionLink(a)
-    }));
+      if (error) return <p>{error}</p>;
+  
+      if (loading) {
+          return (
+              <SkeletonRenderer blocks={SkeletonList} />
+          );
+      }
 
-  const routesUnesco = routes
-    .filter(r => r.translations?.[lang]?.unesco_status?.included)
-    .map(r => {
-      const unesco = r.translations?.[lang]?.unesco_status;
+  const getLink = (data) => 
+    data.type === 'attraction' 
+      ? `/${data.countryPath}/${data.regionPath}/${data.districtPath}/${data.cityPath}/attractions/${data.path}`
+      : `/${data.countryPath}/routes/${data.path}`
+  
+const groupBySeries = (data) => {
+  return data.reduce((acc, item) => {
+    const key = item.series || "no-series";
 
-      return {
-        ...r,
-        unesco_status: unesco,
-        link: getRouteLink(r)
-      };
-    });
+    if (!acc[key]) {
+      acc[key] = [];
+    }
 
-  const unescoItems = [...attractionsUnesco, ...routesUnesco];
+    acc[key].push(item);
 
-  const groupBySeries = (data) => {
-    return data.reduce((acc, item) => {
-      const key = item.unesco_status?.series || "no-series";
-      if (!acc[key]) acc[key] = [];
-      acc[key].push(item);
-      return acc;
-    }, {});
-  };
-  const grouped = groupBySeries(unescoItems);
+    return acc;
+  }, {});
+};
+  const grouped = groupBySeries(unesco);
   const t = unescoTableHead[lang];
 
   // BreadCrumbs
@@ -127,6 +124,7 @@ export const Unesco = () => {
       </Helmet>
 
       <BreadCrumbs crumbs={crumbs} />
+
       <h1 className="unesco__title">🌍 {Unesco_Title[lang]}</h1>
       {Object.entries(grouped).map(([series, items]) => (
         <div key={series} className="unesco__series">
@@ -136,7 +134,7 @@ export const Unesco = () => {
           <div className="unesco-cards">
             {items.map(item => (
               <div key={item.id} className="unesco-card">
-                <div className="unesco-card-row"><strong>{t.name}:</strong> <a href={item.link}>{item.name}</a></div>
+                <div className="unesco-card-row"><strong>{t.name}:</strong> <a href={getLink(item)}>{item.name}</a></div>
                 <div className="unesco-card-row"><strong>{t.type}:</strong> {item.unesco_status?.type}</div>
                 <div className="unesco-card-row"><strong>{t.location}: </strong>
                   {
