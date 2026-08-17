@@ -133,6 +133,8 @@ const datas =
     frechen_grefrath: { id: 671, parent: 174, ru: 'Грефрат', de: 'Grefrath', uk: 'Грефрат' },
     frechen_huecheln: { id: 672, parent: 174, ru: 'Хюхельн', de: 'Hücheln', uk: 'Хюхельн' },
 
+    bruhl_innenstadt: { id: 788, parent: 171, ru: 'район Инненштадт (Innenstadt)', de: 'Stadtteil Innenstadt', uk: 'район Інненштадт (Innenstadt)' },
+
     koblenz_ehrenbreitstein: { id: 763, parent: 89, ru: 'район Эренбрайтштайн (Ehrenbreitstein)', de: 'Stadtteil Ehrenbreitstein', uk: 'район Еренбрайтштайн (Ehrenbreitstein)' },
     koblenz_altstadt: { id: 778, parent: 89, ru: ' район Старый город (Altstadt)', de: 'Stadtteil Altstadt', uk: 'район Старе місто (Altstadt)' },
     koblenz_solzenfels: { id: 782, parent: 89, ru: 'район  Штольценфельс (Stolzenfels)', de: 'Stadtteil Stolzenfels', uk: 'район Штольценфельс (Stolzenfels)' },
@@ -261,7 +263,9 @@ const datas =
 
     // Rhein-Erft-Kreis
     // Brühl
-    bruhl_palaces: { ru: 'Дворцы Брюля: ансамбль Аугустусбург и Фалькенлюст', de: 'Schlösser Brühl: Augustusburg & Falkenlust', uk: 'Палаци Брюля: ансамбль Аугустусбург і Фалькенлюст' },
+    bruhl_palaces: { id: 787, ru: 'Дворцы Брюля: ансамбль Аугустусбург и Фалькенлюст', de: 'Schlösser Brühl: Augustusburg & Falkenlust', uk: 'Палаци Брюля: ансамбль Аугустусбург і Фалькенлюст' },
+    bruehl_augustusburg: { id: 789, ru: 'Дворец Аугустусбург', de: 'Schloss Augustusburg', uk: 'Палац Аугустусбург' },
+    bruehl_falkenlust: { id: 790, ru: 'Дворец Фалькенлюст', de: 'Schloss Falkenlust', uk: 'Палац Фалькенлюст' },
     max_ernst_museum: { ru: 'Музей Макса Эрнста', de: 'Max Ernst Museum', uk: 'Музей Макса Ернста' },
     phantasialand: { ru: 'Парк развлечений Phantasialand', de: 'Phantasialand', uk: 'Парк розваг Phantasialand' },
 
