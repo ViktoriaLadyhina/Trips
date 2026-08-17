@@ -540,19 +540,6 @@ export const Fotos = {
 
   rheinland_pfalz: {
     trier: {
-      altstadt_trier: [
-        { path: "Germany/rheinland-pfalz/trier-city/altstadt/001.jpg", title: { ru: "Старый город Трира, 2024", uk: "Старе місто Тріра, 2024", de: "Altstadt Trier, 2024" } },
-        { path: "Germany/rheinland-pfalz/trier-city/altstadt/002.jpg", title: { ru: "Главная рыночная площадь, 2024", uk: "Головна ринкова площа, 2024", de: "Hauptmarkt Trier, 2024" } },
-        { path: "Germany/rheinland-pfalz/trier-city/altstadt/003.jpg", title: { ru: "Главная рыночная площадь, 2024", uk: "Головна ринкова площа, 2024", de: "Hauptmarkt Trier, 2024" } },
-        { path: "Germany/rheinland-pfalz/trier-city/altstadt/004.jpg", title: { ru: "Главная рыночная площадь, 2024", uk: "Головна ринкова площа, 2024", de: "Hauptmarkt Trier, 2024" } },
-        { path: "Germany/rheinland-pfalz/trier-city/altstadt/005.jpg", title: { ru: "Главная рыночная площадь, 2024", uk: "Головна ринкова площа, 2024", de: "Hauptmarkt Trier, 2024" } },
-        { path: "Germany/rheinland-pfalz/trier-city/altstadt/006.jpg", title: { ru: "Старый город Трира, 2024", uk: "Старе місто Тріра, 2024", de: "Altstadt Trier, 2024" } },
-        { path: "Germany/rheinland-pfalz/trier-city/altstadt/007.jpg", title: { ru: "Главная рыночная площадь, 2024", uk: "Головна ринкова площа, 2024", de: "Hauptmarkt Trier, 2024" } },
-        { path: "Germany/rheinland-pfalz/trier-city/altstadt/008.jpg", title: { ru: "Старый город Трира, 2024", uk: "Старе місто Тріра, 2024", de: "Altstadt Trier, 2024" } },
-        { path: "Germany/rheinland-pfalz/trier-city/altstadt/portaNigra_trier/001.jpg", title: { ru: "Порта Нигра, 2024", uk: "Порта Нігра («Чорні ворота»), 2024", de: "Porta Nigra, 2024" } },
-        { path: "Germany/rheinland-pfalz/trier-city/cathedral/001.jpg", title: { ru: "Кафедральный собор, 2024", uk: "Кафедральний собор, 2024", de: "Trierer Dom, 2024" } },
-        { path: "Germany/rheinland-pfalz/trier-city/altstadt/kurfuerstliches_palais/003.jpg", title: { ru: "Избирательский (курфюрстский) дворец, 2024", uk: "Виборчий (курфюрстський) палац, 2024", de: "Kurfürstliches Palais, 2024" } },
-      ],
       hauptmarkt_trier: [
         { path: "Germany/rheinland-pfalz/trier-city/altstadt/002.jpg", title: { ru: "Главная рыночная площадь, 2024", uk: "Головна ринкова площа, 2024", de: "Hauptmarkt Trier, 2024" } },
         { path: "Germany/rheinland-pfalz/trier-city/altstadt/003.jpg", title: { ru: "Главная рыночная площадь, 2024", uk: "Головна ринкова площа, 2024", de: "Hauptmarkt Trier, 2024" } },

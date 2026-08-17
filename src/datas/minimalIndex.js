@@ -140,6 +140,8 @@ const datas =
     koblenz_solzenfels: { id: 782, parent: 89, ru: 'район  Штольценфельс (Stolzenfels)', de: 'Stadtteil Stolzenfels', uk: 'район Штольценфельс (Stolzenfels)' },
     koblenz_südliche_vorstadt: { id: 784, parent: 89, ru: 'район  Южный пригород (Südliche Vorstadt)', de: 'Stadtteil Südliche Vorstadt', uk: 'район Південне передмістя (Südliche Vorstadt)' },
 
+    trier_mitte_gartenfeld: { id: 791, parent: 91, ru: 'округ Центр / Гартенфельд (Trier-Mitte/Gartenfeld)', de: 'Ortsbezirk Trier-Mitte/Gartenfeld', uk: 'округ Центр / Гартенфельд (Trier-Mitte/Gartenfeld)' },
+
     sumy_zarichnyi: { id: 723, parent: 125, ru: 'Заречный район', de: 'Zaritschnyj-Bezirk', uk: 'Зарічний район' },
   },
   attractions: {
@@ -305,7 +307,7 @@ const datas =
     cathedral_trier: { ru: 'Кафедральний собор', de: 'Trierer Dom', uk: 'Кафедральний собор' },
     basilikaStPaulinus_trier: { ru: 'Базилика Святого Паулина', de: 'Basilika St. Paulinus', uk: 'Базиліка Святого Пауліна' },
     liebfrauenkirche_trier: { ru: 'Церковь Богоматери', de: 'Liebfrauenkirche', uk: 'Церква Богородиці' },
-    altstadt_trier: { ru: 'Старый город Трира', de: 'Altstadt Trier', uk: 'Старе місто Тріра' },
+    altstadt_trier: { id: 792, ru: 'Старый город Трира', de: 'Altstadt Trier', uk: 'Старе місто Тріра' },
     kurfuerstliches_palais_trier: { ru: 'Избирательский (курфюрстский) дворец', de: 'Kurfürstliches Palais', uk: 'Виборчий (курфюрстський) палац' },
     hauptmarkt_trier: { ru: 'Главная рыночная площадь', de: 'Hauptmarkt', uk: 'Головна ринкова площа' },
 

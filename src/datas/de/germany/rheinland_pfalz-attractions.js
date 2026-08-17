@@ -1,61 +1,16 @@
 const datas = [
-  {
-    id: "altstadt_trier",
-    name: "Altstadt Trier",
-    type: ["historical_area"], rating: "top",
-    path: "altstadt_trier",
-    countryPath: "germany", regionPath: "rheinland_pfalz", districtPath: "city", cityPath: "trier",
-    fotoCard: "Germany/rheinland-pfalz/trier-city/altstadt/001.jpg",
-    subObjects: ["portaNigra_trier", "cathedral_trier", "basilica_of_constantine_trier", "roman_bridge_trier", "basilikaStPaulinus_trier", "liebfrauenkirche_trier", "kurfuerstliches_palais_trier", "hauptmarkt_trier"],
-    location: "Trier, Deutschland",
-    officialSite: [{ bold: "Offizielle Website", link: "https://www.trier.de" }],
-    short_description: "Die Altstadt von Trier – das historische Zentrum einer der ältesten Städte Deutschlands mit reicher Architektur aus der römischen und mittelalterlichen Zeit. Enge Gassen, Plätze mit Brunnen und alte Häuser schaffen eine einzigartige Atmosphäre.",
-    short_description2: "Entlang der Mosel gelegen, zieht die Altstadt Touristen aus ganz Deutschland und Europa an, dank der Kombination aus römischen Denkmälern und mittelalterlicher Architektur.",
-    short_description_subObjects: {
-      text: "In der Altstadt von Trier befinden sich folgende Sehenswürdigkeiten:",
-      items: [
-        { bold: "🌍Porta Nigra", text: "– das größte erhaltene römische Stadttor nördlich der Alpen, Symbol der Stadt Trier." },
-        { bold: "🌍Trierer Dom", text: "– der Hauptdom von Trier mit Teilen aus dem 4. Jahrhundert, gelegen in der Altstadt." },
-        { bold: "🌍Basilika Konstantin", text: "– römische Kaiserbasilika aus dem 4. Jahrhundert, das größte erhaltene römische Bauwerk nördlich der Alpen." },
-        { bold: "🌍Römische Brücke", text: "– antike Brücke über die Mosel, von den Römern im 1. Jahrhundert erbaut und teilweise noch heute genutzt. Eine der ältesten erhaltenen Brücken Deutschlands, gelegen in der Altstadt von Trier." },
-        { bold: "Basilika St. Paulin", text: "– mittelalterliche Basilika in der Altstadt von Trier. Im Laufe der Jahrhunderte diente sie als religiöses Zentrum und ist ein Beispiel gotischer Architektur." },
-        { bold: "🌍Liebfrauenkirche", text: "– gotische Kirche aus dem 13. Jahrhundert, gelegen in der Altstadt von Trier neben dem Trierer Dom. Eines der herausragenden Beispiele mittelalterlicher Stadtarchitektur." },
-        { bold: "Kurfürstliches Palais", text: "– barockes Schloss aus dem 18. Jahrhundert, neben der Konstantinbasilika gelegen. Bekannt für seine rosafarbene Fassade und gepflegten Gärten." },
-        { bold: "Hauptmarkt Trier", text: "– zentraler Platz der Altstadt mit dem Petrusbrunnen und historischen Gebäuden." }
-      ]
-    },
-    full_description: {
-      title: "Beschreibung und Geschichte",
-      items: [
-        { bold: "Altstadt Trier", text: "liegt entlang der Mosel und ist als eine der ältesten Städte Deutschlands bekannt, gegründet von den Römern im 1. Jahrhundert v. Chr. Hier haben sich antike Denkmäler, mittelalterliche Architektur und historisch bedeutsame Plätze erhalten." },
-        { text: "Den besonderen Charme der Altstadt verleihen die engen gepflasterten Gassen, alte Fachwerkhäuser und zahlreiche Brunnen. Viele Gebäude sind mit Wappen und historischen Symbolen verziert." },
-        { text: "Heute ist die Altstadt ein beliebter Ort für touristische Spaziergänge. Hier befinden sich Museen, Cafés, Geschäfte sowie historische Plätze und Bauwerke aus verschiedenen Epochen." },
-        { bold: "Geschichte", text: "dieses Stadtteils ist eng mit der römischen Zeit und der mittelalterlichen Entwicklung Triers verbunden. Die Stadt war ein wichtiges Verwaltungszentrum des Römischen Reiches, und ihre Straßen und Plätze entwickelten sich über Jahrhunderte, wobei Spuren der antiken und mittelalterlichen Architektur erhalten blieben." },
-        { text: "Im Mittelalter war Trier ein Bischofssitz, was den Bau von Kirchen, Doms und öffentlichen Gebäuden förderte. Handel und kulturelles Leben florierten dank der vorteilhaften Lage an der Mosel." },
-        { text: "Im Laufe der Geschichte hat die Altstadt Überschwemmungen, Kriege und Umbauten erlebt, aber viele historische Denkmäler konnten bis heute erhalten werden, was das Zentrum von Trier einzigartig in Deutschland macht." }
-      ]
-    },
-    interestingFacts: {
-      title: "Interessante Fakten",
-      isList: true,
-      items: [
-        { text: "Die Altstadt von Trier ist zusammen mit mehreren römischen Denkmälern in das UNESCO-Weltkulturerbe aufgenommen." },
-        { text: "Porta Nigra – das am besten erhaltene römische Stadttor nördlich der Alpen." },
-        { text: "Der Trierer Dom vereint architektonische Stile vom römischen Zeitalter bis zum Barock." },
-        { text: "Der Marktplatz ist seit über 1000 Jahren das Zentrum des städtischen Lebens." },
-        { text: "Die Altstadt von Trier zieht jedes Jahr Hunderttausende von Touristen an, dank ihrer Geschichte und Architektur." }
-      ]
-    },
-    construction_period: "1. Jahrhundert v. Chr. – Mittelalter",
-    meta: {
-      title: "Altstadt Trier (Altstadt Trier) – historisches Stadtzentrum in Deutschland",
-      description: "Die Altstadt Trier (Altstadt Trier) – historisches Stadtzentrum von Trier mit antiken und mittelalterlichen Denkmälern, engen Gassen und Plätzen. Beschreibung, Geschichte und nützliche Informationen für Touristen.",
-      ogTitle: "Altstadt Trier – historisches Zentrum und römische Denkmäler",
-      ogDescription: "Enge Gassen, alte Häuser und römische Denkmäler machen die Altstadt von Trier zu einem einzigartigen historischen Zentrum Deutschlands.",
-      keywords: "Altstadt Trier, Trier Deutschland, Sehenswürdigkeit, Altstadt, antike Stadt, römische Geschichte, Rheinland-Pfalz, Architektur, historisches Zentrum, Porta Nigra, Trierer Dom, Spaziergänge, Tourismus, Fotos, UNESCO Weltkulturerbe",
-      ogImage: "https://our-travels.info/foto/Germany/rheinland-pfalz/trier_saarburg/trier/altstadt/001.jpg"
-    }
-  },
+ 
+  //     text: "In der Altstadt von Trier befinden sich folgende Sehenswürdigkeiten:",
+  //     items: [
+  //       { bold: "🌍Porta Nigra", text: "– das größte erhaltene römische Stadttor nördlich der Alpen, Symbol der Stadt Trier." },
+  //       { bold: "🌍Trierer Dom", text: "– der Hauptdom von Trier mit Teilen aus dem 4. Jahrhundert, gelegen in der Altstadt." },
+  //       { bold: "🌍Basilika Konstantin", text: "– römische Kaiserbasilika aus dem 4. Jahrhundert, das größte erhaltene römische Bauwerk nördlich der Alpen." },
+  //       { bold: "🌍Römische Brücke", text: "– antike Brücke über die Mosel, von den Römern im 1. Jahrhundert erbaut und teilweise noch heute genutzt. Eine der ältesten erhaltenen Brücken Deutschlands, gelegen in der Altstadt von Trier." },
+  //       { bold: "Basilika St. Paulin", text: "– mittelalterliche Basilika in der Altstadt von Trier. Im Laufe der Jahrhunderte diente sie als religiöses Zentrum und ist ein Beispiel gotischer Architektur." },
+  //       { bold: "🌍Liebfrauenkirche", text: "– gotische Kirche aus dem 13. Jahrhundert, gelegen in der Altstadt von Trier neben dem Trierer Dom. Eines der herausragenden Beispiele mittelalterlicher Stadtarchitektur." },
+  //       { bold: "Kurfürstliches Palais", text: "– barockes Schloss aus dem 18. Jahrhundert, neben der Konstantinbasilika gelegen. Bekannt für seine rosafarbene Fassade und gepflegten Gärten." },
+  //       { bold: "Hauptmarkt Trier", text: "– zentraler Platz der Altstadt mit dem Petrusbrunnen und historischen Gebäuden." }
+ 
   {
     id: "portaNigra_trier",
     name: "Porta Nigra",
@@ -63,7 +18,7 @@ const datas = [
     path: "portaNigra_trier",
     countryPath: "germany", regionPath: "rheinland_pfalz", districtPath: "city", cityPath: "trier",
     fotoCard: "Germany/rheinland-pfalz/trier-city/altstadt/portaNigra_trier/001.jpg",
-    hiddenFromList: true, showMore: true,
+    // hiddenFromList: true, showMore: true,
     location: "Trier, Deutschland",
     officialSite: [{ bold: "Offizielle Webseite", link: "https://www.zentrum-der-antike.de/monumente/porta-nigra?utm_source=chatgpt.com" }],
     unesco_status: {
@@ -273,7 +228,7 @@ const datas = [
     path: "basilica_of_constantine_trier",
     countryPath: "germany", regionPath: "rheinland_pfalz", districtPath: "city", cityPath: "trier",
     fotoCard: "Germany/rheinland-pfalz/trier-city/basilica_of_constantine/001.jpg",
-    hiddenFromList: true, showMore: true,
+    // hiddenFromList: true, showMore: true,
     location: "Trier, Deutschland",
     officialSite: [{ bold: "Offizielle Webseite", link: "https://trier.ekir.de/inhalt/konstantin-basilika?utm_source=chatgpt.com" }],
     unesco_status: {
@@ -390,7 +345,7 @@ const datas = [
     path: "roman_bridge_trier",
     countryPath: "germany", regionPath: "rheinland_pfalz", districtPath: "city", cityPath: "trier",
     fotoCard: "Germany/rheinland-pfalz/trier-city/roman_bridge/001.jpg",
-    hiddenFromList: true, showMore: true,
+    // hiddenFromList: true, showMore: true,
     location: "Trier, Deutschland",
     officialSite: [{ bold: "Offizielle Webseite", link: "https://www.trier-info.de/sehenswuerdigkeiten/roemerbruecke" }],
     unesco_status: {
@@ -446,7 +401,7 @@ const datas = [
     path: "cathedral_trier",
     countryPath: "germany", regionPath: "rheinland_pfalz", districtPath: "city", cityPath: "trier",
     fotoCard: "Germany/rheinland-pfalz/trier-city/cathedral/001.jpg",
-    hiddenFromList: true, showMore: true,
+    // hiddenFromList: true, showMore: true,
     location: "Trier, Deutschland",
     officialSite: [{ bold: "Offizielle Website", link: "https://www.trierer-dom.de" }],
     unesco_status: {
@@ -514,7 +469,7 @@ const datas = [
     path: "basilikaStPaulinus_trier",
     countryPath: "germany", regionPath: "rheinland_pfalz", districtPath: "city", cityPath: "trier",
     fotoCard: "Germany/rheinland-pfalz/trier-city/basilikaStPaulinus/001.jpg",
-    hiddenFromList: true, showMore: true,
+    // hiddenFromList: true, showMore: true,
     location: "Trier, Deutschland",
     officialSite: [
       { bold: "Offizielles Tourismusportal der Stadt Trier", link: "https://www.trier-info.de/sehenswuerdigkeiten/st-paulin" },
@@ -583,7 +538,7 @@ const datas = [
     path: "liebfrauenkirche_trier",
     countryPath: "germany", regionPath: "rheinland_pfalz", districtPath: "city", cityPath: "trier",
     fotoCard: "Germany/rheinland-pfalz/trier-city/liebfrauenkirche/001.jpg",
-    hiddenFromList: true, showMore: true,
+    // hiddenFromList: true, showMore: true,
     location: "Trier, Deutschland",
     officialSite: [
       { bold: "Offizielles Tourismusportal der Stadt Trier", link: "https://www.trier-info.de/sehenswuerdigkeiten/liebfrauen-basilika" },
