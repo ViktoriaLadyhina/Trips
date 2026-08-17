@@ -298,7 +298,7 @@ const datas =
 
     // rheinland-pfalz
     // Trier
-    portaNigra_trier: { ru: 'Порта Нигра («Чёрные ворота»)', de: 'Porta Nigra', uk: 'Порта Нігра («Чорні ворота»)' },
+    portaNigra_trier: { id: 793, ru: 'Порта Нигра («Чёрные ворота»)', de: 'Porta Nigra', uk: 'Порта Нігра («Чорні ворота»)' },
     amphitheater_trier: { ru: 'Римский амфитеатр', de: 'Römisches Amphitheater', uk: 'Римський амфітеатр' },
     kaiserthermen_trier: { ru: 'Римские императорские бани', de: 'Römische Kaiserthermen', uk: 'Римські імператорські терми' },
     basilica_of_constantine_trier: { ru: 'Базилика Константина', de: 'Konstantin-Basilika', uk: 'Базиліка Константина' },

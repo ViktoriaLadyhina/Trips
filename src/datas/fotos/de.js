@@ -547,10 +547,6 @@ export const Fotos = {
         { path: "Germany/rheinland-pfalz/trier-city/altstadt/005.jpg", title: { ru: "Главная рыночная площадь, 2024", uk: "Головна ринкова площа, 2024", de: "Hauptmarkt Trier, 2024" } },
         { path: "Germany/rheinland-pfalz/trier-city/altstadt/007.jpg", title: { ru: "Главная рыночная площадь, 2024", uk: "Головна ринкова площа, 2024", de: "Hauptmarkt Trier, 2024" } },
       ],
-      portaNigra_trier: [
-        { path: "Germany/rheinland-pfalz/trier-city/altstadt/portaNigra_trier/001.jpg", title: { ru: "Порта Нигра, 2024", uk: "Порта Нігра («Чорні ворота»), 2024", de: "Porta Nigra, 2024" } },
-        { path: "Germany/rheinland-pfalz/trier-city/altstadt/portaNigra_trier/002.jpg", title: { ru: "Порта Нигра, 2024", uk: "Порта Нігра («Чорні ворота»), 2024", de: "Porta Nigra, 2024" } },
-      ],
       amphitheater_trier: [
         { path: "Germany/rheinland-pfalz/trier-city/amphitheater/001.jpg", title: { ru: "Римский амфитеатр в Трире, 2024", uk: "Римський амфітеатр у Трірі, 2024", de: "Römischer Amphitheater in Trier, 2024" } },
         { path: "Germany/rheinland-pfalz/trier-city/amphitheater/002.jpg", title: { ru: "Римский амфитеатр в Трире, 2024", uk: "Римський амфітеатр у Трірі, 2024", de: "Römischer Amphitheater in Trier, 2024" } },
