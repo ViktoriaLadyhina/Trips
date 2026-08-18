@@ -540,13 +540,6 @@ export const Fotos = {
 
   rheinland_pfalz: {
     trier: {
-      hauptmarkt_trier: [
-        { path: "Germany/rheinland-pfalz/trier-city/altstadt/002.jpg", title: { ru: "Главная рыночная площадь, 2024", uk: "Головна ринкова площа, 2024", de: "Hauptmarkt Trier, 2024" } },
-        { path: "Germany/rheinland-pfalz/trier-city/altstadt/003.jpg", title: { ru: "Главная рыночная площадь, 2024", uk: "Головна ринкова площа, 2024", de: "Hauptmarkt Trier, 2024" } },
-        { path: "Germany/rheinland-pfalz/trier-city/altstadt/004.jpg", title: { ru: "Главная рыночная площадь, 2024", uk: "Головна ринкова площа, 2024", de: "Hauptmarkt Trier, 2024" } },
-        { path: "Germany/rheinland-pfalz/trier-city/altstadt/005.jpg", title: { ru: "Главная рыночная площадь, 2024", uk: "Головна ринкова площа, 2024", de: "Hauptmarkt Trier, 2024" } },
-        { path: "Germany/rheinland-pfalz/trier-city/altstadt/007.jpg", title: { ru: "Главная рыночная площадь, 2024", uk: "Головна ринкова площа, 2024", de: "Hauptmarkt Trier, 2024" } },
-      ],
       amphitheater_trier: [
         { path: "Germany/rheinland-pfalz/trier-city/amphitheater/001.jpg", title: { ru: "Римский амфитеатр в Трире, 2024", uk: "Римський амфітеатр у Трірі, 2024", de: "Römischer Amphitheater in Trier, 2024" } },
         { path: "Germany/rheinland-pfalz/trier-city/amphitheater/002.jpg", title: { ru: "Римский амфитеатр в Трире, 2024", uk: "Римський амфітеатр у Трірі, 2024", de: "Römischer Amphitheater in Trier, 2024" } },
@@ -570,22 +563,6 @@ export const Fotos = {
       ],
       barbarathermen_trier: [
         { path: "Germany/rheinland-pfalz/trier-city/barbarathermen/001.jpg", title: { ru: "Барбарские термы (фото взято с интернета)", uk: "Барбарські терми (фото взято з Інтернету)", de: "Barbarathermen (Foto aus dem Internet)" } },
-      ],
-      roman_bridge_trier: [
-        { path: "Germany/rheinland-pfalz/trier-city/roman_bridge/001.jpg", title: { ru: "Римский мост (фото взято с интернета)", uk: "Римський міст (фото взято з Інтернету)", de: "Römerbrücke (Foto aus dem Internet)" } },
-      ],
-      cathedral_trier: [
-        { path: "Germany/rheinland-pfalz/trier-city/cathedral/001.jpg", title: { ru: "Кафедральный собор, 2024", uk: "Кафедральний собор, 2024", de: "Trierer Dom, 2024" } },
-        { path: "Germany/rheinland-pfalz/trier-city/cathedral/002.jpg", title: { ru: "Кафедральный собор, 2024", uk: "Кафедральний собор, 2024", de: "Trierer Dom, 2024" } },
-        { path: "Germany/rheinland-pfalz/trier-city/cathedral/003.jpg", title: { ru: "Кафедральный собор - Барочный купол, 2024", uk: "Кафедральний собор - Бароковий купол, 2024", de: "Trierer Dom - Barocke Kuppel, 2024" } },
-        { path: "Germany/rheinland-pfalz/trier-city/cathedral/004.jpg", title: { ru: "Кафедральный собор, 2024", uk: "Кафедральний собор, 2024", de: "Trierer Dom, 2024" } },
-        { path: "Germany/rheinland-pfalz/trier-city/cathedral/005.jpg", title: { ru: "Кафедральный собор, 2024", uk: "Кафедральний собор, 2024", de: "Trierer Dom, 2024" } },
-        { path: "Germany/rheinland-pfalz/trier-city/cathedral/006.jpg", title: { ru: "Кафедральный собор, 2024", uk: "Кафедральний собор, 2024", de: "Trierer Dom, 2024" } },
-        { path: "Germany/rheinland-pfalz/trier-city/cathedral/007.jpg", title: { ru: "Кафедральный собор, 2024", uk: "Кафедральний собор, 2024", de: "Trierer Dom, 2024" } },
-        { path: "Germany/rheinland-pfalz/trier-city/cathedral/008.jpg", title: { ru: "Кафедральный собор, 2024", uk: "Кафедральний собор, 2024", de: "Trierer Dom, 2024" } },
-        { path: "Germany/rheinland-pfalz/trier-city/cathedral/009.jpg", title: { ru: "Кафедральный собор, 2024", uk: "Кафедральний собор, 2024", de: "Trierer Dom, 2024" } },
-        { path: "Germany/rheinland-pfalz/trier-city/cathedral/010.jpg", title: { ru: "Кафедральный собор, 2024", uk: "Кафедральний собор, 2024", de: "Trierer Dom, 2024" } },
-        { path: "Germany/rheinland-pfalz/trier-city/cathedral/011.jpg", title: { ru: "Кафедральный собор - Алтарь Меттерниху, 2024", uk: "Кафедральний собор - Вівтар Меттерніха, 2024", de: "Trierer Dom - Metternich-Altar, 2024" } },
       ],
       basilikaStPaulinus_trier: [
         { path: "Germany/rheinland-pfalz/trier-city/basilikaStPaulinus/001.jpg", title: { ru: "Базилика Святого Паулина (фото взято с интернета)", uk: "Базиліка Святого Пауліна (фото взято з Інтернету)", de: "Basilika St. Paulinus (Foto aus dem Internet)" } },

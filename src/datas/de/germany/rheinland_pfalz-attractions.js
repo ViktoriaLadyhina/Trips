@@ -2,13 +2,10 @@ const datas = [
  
   //     text: "In der Altstadt von Trier befinden sich folgende Sehenswürdigkeiten:",
   //     items: [
-  //       { bold: "🌍Trierer Dom", text: "– der Hauptdom von Trier mit Teilen aus dem 4. Jahrhundert, gelegen in der Altstadt." },
   //       { bold: "🌍Basilika Konstantin", text: "– römische Kaiserbasilika aus dem 4. Jahrhundert, das größte erhaltene römische Bauwerk nördlich der Alpen." },
-  //       { bold: "🌍Römische Brücke", text: "– antike Brücke über die Mosel, von den Römern im 1. Jahrhundert erbaut und teilweise noch heute genutzt. Eine der ältesten erhaltenen Brücken Deutschlands, gelegen in der Altstadt von Trier." },
   //       { bold: "Basilika St. Paulin", text: "– mittelalterliche Basilika in der Altstadt von Trier. Im Laufe der Jahrhunderte diente sie als religiöses Zentrum und ist ein Beispiel gotischer Architektur." },
   //       { bold: "🌍Liebfrauenkirche", text: "– gotische Kirche aus dem 13. Jahrhundert, gelegen in der Altstadt von Trier neben dem Trierer Dom. Eines der herausragenden Beispiele mittelalterlicher Stadtarchitektur." },
   //       { bold: "Kurfürstliches Palais", text: "– barockes Schloss aus dem 18. Jahrhundert, neben der Konstantinbasilika gelegen. Bekannt für seine rosafarbene Fassade und gepflegten Gärten." },
-  //       { bold: "Hauptmarkt Trier", text: "– zentraler Platz der Altstadt mit dem Petrusbrunnen und historischen Gebäuden." }
   {
     id: "amphitheater_trier",
     name: "Römisches Amphitheater",
@@ -276,130 +273,6 @@ const datas = [
       ogDescription: "Entdecken Sie die Barbarathermen in Trier: einer der größten römischen Badekomplexe nördlich der Alpen.",
       keywords: "Barbarathermen Trier, Barbara-Thermen, Trier, Sehenswürdigkeit, Römisches Reich, antike Thermen, römische Bäder, Antike, UNESCO Weltkulturerbe, Altstadt Trier, Archäologie, historische Stätte, Tourismus, Führungen, Fotos, Rheinland-Pfalz",
       ogImage: "https://our-travels.info/foto/Germany/rheinland-pfalz/trier-city/barbarathermen/001.jpg"
-    }
-  },
-  {
-    id: "roman_bridge_trier",
-    name: "Römerbrücke",
-    type: ["technical_structure", "historical_building"], rating: "popular",
-    path: "roman_bridge_trier",
-    countryPath: "germany", regionPath: "rheinland_pfalz", districtPath: "city", cityPath: "trier",
-    fotoCard: "Germany/rheinland-pfalz/trier-city/roman_bridge/001.jpg",
-    // hiddenFromList: true, showMore: true,
-    location: "Trier, Deutschland",
-    officialSite: [{ bold: "Offizielle Webseite", link: "https://www.trier-info.de/sehenswuerdigkeiten/roemerbruecke" }],
-    unesco_status: {
-      included: true,
-      year: 1986,
-      type: "Kulturerbe",
-      criteria: "i, iii, iv, vi",
-      epoch: "Römische Epoche",
-      series: "Römische Denkmäler, Dom St. Peter und Liebfrauenkirche in Trier"
-    },
-    short_description: "Die Römische Brücke – eine antike römische Brücke über die Mosel in Trier, erbaut im 2. Jahrhundert n. Chr. Sie ist die älteste Brücke Deutschlands, deren originale römische Basaltpfeiler teilweise erhalten geblieben sind. Das Bauwerk wird bis heute für den Verkehr und Fußgänger genutzt.",
-    full_description: {
-      title: "Beschreibung und Geschichte",
-      items: [
-        { bold: "Römerbrücke", text: "– ein herausragendes Beispiel römischer Ingenieurskunst, das sich über die Mosel in der Stadt Trier spannt. Sie gilt als älteste Brücke Deutschlands und eine der ältesten noch genutzten Brücken Europas. Auch nach fast zweitausend Jahren erfüllt das Bauwerk weiterhin seine ursprüngliche Funktion, verbindet die Ufer und bleibt ein wichtiger Bestandteil der städtischen Infrastruktur." },
-        { text: "Die Geschichte der Furt an dieser Stelle beginnt bereits im 1. Jahrhundert v. Chr., als die Römer die Stadt Augusta Treverorum gründeten. Zunächst existierten hier Holzbrücken, die wiederholt durch Hochwasser und Zeit zerstört wurden. Im 2. Jahrhundert n. Chr. errichteten römische Ingenieure steinerne Pfeiler aus massiven Basaltblöcken – diese sind bis heute erhalten und bilden den ältesten Teil der Konstruktion." },
-        { text: "Im Mittelalter und in der Neuzeit wurde die Brücke mehrfach umgebaut. Die oberen Bögen wurden nach Zerstörungen durch Kriege und Naturkatastrophen verändert, doch die römischen Fundamente erwiesen sich als so stabil, dass sie nicht ersetzt werden mussten. Besonders starke Schäden erlitt die Brücke im 17. Jahrhundert während militärischer Konflikte, danach wurde sie Anfang des 18. Jahrhunderts wiederhergestellt." },
-        { text: "Im 19. Jahrhundert wurden die Verteidigungstore der Brücke entfernt, um den Verkehr zu erleichtern, und im 20. Jahrhundert wurde die Konstruktion für moderne Belastungen erweitert und verstärkt. Trotz Modernisierungen ist das historische Aussehen erhalten geblieben, und heute ist die Grenze zwischen den antiken Steinsäulen und den späteren Aufbauten deutlich erkennbar." },
-        { text: "Heute dient die Brücke nicht nur als Verkehrsverbindung, sondern ist auch eine bedeutende Sehenswürdigkeit, die Teil des Komplexes römischer Monumente von Trier ist, der zum UNESCO-Weltkulturerbe gehört. Sie ist ein anschauliches Zeugnis der Ingenieurskunst des Römischen Reiches und erinnert an eine Zeit, als Trier eine der größten Städte nördlich der Alpen war." }
-      ]
-    },
-    tickets_and_entry: {
-      title: "Praktische Informationen",
-      items: [
-        { bold: "Adresse: ", text: "Trier, Rheinland-Pfalz, Deutschland." }
-      ]
-    },
-    interestingFacts: {
-      title: "Interessante Fakten",
-      isList: true,
-      items: [
-        { text: "Es ist die älteste Brücke Deutschlands, die teilweise aus römischer Zeit erhalten geblieben ist." },
-        { text: "In römischer Zeit warfen Menschen Münzen in die Mosel als Opfergabe für die Flussgöttin – Schätzungen zufolge könnten es bis zu einer Million auf dem Grund sein." },
-        { text: "Auf einem der Pfeiler wurde im 18. Jahrhundert eine Statue des Hl. Nikolaus sowie ein Kreuz aufgestellt (Geschichte und Legenden rund um dieses lokale Symbol)." },
-        { text: "Jeden Juni findet das kulturelle Ereignis BrückenGlück statt: Die Brücke wird für den Verkehr gesperrt, die Menschen versammeln sich für Picknicks, Live-Musik und Spaziergänge direkt auf der Brücke." }
-      ]
-    },
-    construction_period: "2. Jahrhundert n. Chr. (≈144–152) – Steinsäulen.",
-    coord: { lat: 49.7518886046633, lng: 6.62641205412341 },
-    meta: {
-      title: "Römerbrücke in Trier – älteste römische Brücke Deutschlands (UNESCO)",
-      description: "Erfahren Sie die Geschichte der antiken Römerbrücke über die Mosel in Trier – von den römischen Pfeilern des 2. Jahrhunderts bis zu modernen Rekonstruktionen. Kostenloser Zugang, UNESCO-Denkmal.",
-      ogTitle: "Römische Brücke in Trier – antike Perle der Mosel",
-      ogDescription: "Entdecken Sie die über 1800 Jahre alte Römische Brücke (Römerbrücke): Architektur, Geschichte und Entwicklung des Brückenbaus. Teil des UNESCO-Weltkulturerbes.",
-      keywords: "Römerbrücke Trier, römische Brücke Trier, Sehenswürdigkeit, Römisches Reich, antike Brücke, antike Architektur, Altstadt Trier, UNESCO Weltkulturerbe, Moselbrücke, Geschichte Deutschland, römische Ingenieurskunst, Tourismus, Spaziergänge, Fotos, Rheinland-Pfalz",
-      ogImage: "https://our-travels.info/foto/Germany/rheinland-pfalz/trier-city/roman_bridge/001.jpg"
-    }
-  },
-  {
-    id: "cathedral_trier",
-    name: "Trierer Dom",
-    type: ["cathedral"], rating: "top",
-    path: "cathedral_trier",
-    countryPath: "germany", regionPath: "rheinland_pfalz", districtPath: "city", cityPath: "trier",
-    fotoCard: "Germany/rheinland-pfalz/trier-city/cathedral/001.jpg",
-    // hiddenFromList: true, showMore: true,
-    location: "Trier, Deutschland",
-    officialSite: [{ bold: "Offizielle Website", link: "https://www.trierer-dom.de" }],
-    unesco_status: {
-      included: true,
-      year: 1986,
-      type: "Kulturerbe",
-      criteria: "i, iii, iv, vi",
-      epoch: "Mittelalter",
-      series: "Römische Denkmäler, Dom St. Peter und Liebfrauenkirche in Trier"
-    },
-    short_description: "Der Trierer Dom ist die älteste Kirche Deutschlands, gegründet im 4. Jahrhundert. Die imposante Kirche mit romanischer Architektur und reicher Geschichte bewahrt den berühmten Heiligen Rock und ein Schatzkammer-Museum mit seltenen christlichen Reliquien.",
-    full_description: {
-      title: "Beschreibung und Geschichte",
-      items: [
-        { bold: "Trierer Dom", text: "– ist ein beeindruckender historischer Komplex im Zentrum von Trier, der Elemente der romanischen und gotischen Architektur vereint. Er ist die älteste Kathedrale Deutschlands und dient noch heute als aktive Kirche. Der Dom ist bekannt für seine imposanten Gewölbe, massiven Säulen und schönen Glasfenster." },
-        { bold: "Architektur und Rekonstruktionen.", text: "Der Dom wurde auf den Fundamenten einer frühchristlichen Basilika aus dem 4. Jahrhundert errichtet, und seine Architektur spiegelt die Jahrhunderte lange Geschichte wider. Er vereint Elemente spätantiker, romanischer, gotischer und barocker Baukunst. Die romanische Grundstruktur stammt aus dem 12. Jahrhundert, gotische Elemente wurden im 13.–14. Jahrhundert hinzugefügt. Im Inneren sind einzigartige Marmordetails, Skulpturen und Malereien verschiedener Epochen zu sehen." },
-        { bold: "Schatzkammer des Doms (Trier Cathedral Treasury)", text: "bewahrt wertvolle kirchliche Reliquien, darunter Reliquiare, liturgische Gefäße und Textilien. Viele Exponate stammen aus dem Mittelalter und gelten als Meisterwerke der sakralen Kunst. Die Sammlung ermöglicht es, die religiöse und künstlerische Tradition der Region nachzuvollziehen." },
-        { bold: "Religiöse und kulturelle Bedeutung.", text: "Der Dom war stets das Zentrum des christlichen Lebens in Trier und ein Ort der Pilgerfahrt. Kathedrale und Schatzkammer gehören zu den bedeutenden historisch-kulturellen Objekten und sind Teil der touristischen Routen der Stadt." },
-        { bold: "Moderne Nutzung.", text: "Heute zieht der Trierer Dom jährlich Tausende von Touristen und Pilgern an. Hier finden Gottesdienste, Orgelkonzerte und spezielle Führungen durch die Schatzkammer statt, was ihn zu einem der wichtigsten touristischen und religiösen Zentren von Trier macht." }
-      ]
-    },
-    tickets_and_entry: {
-      title: "Praktische Informationen",
-      items: [
-        { bold: "Adresse:", text: "Domfreihof 1, 54290 Trier, Deutschland" },
-        { bold: "Konfession:", text: "römisch-katholische Kirche" },
-        { bold: "Öffnungszeiten:", text: "täglich von 10:00 bis 18:00 Uhr (Dom), <br>Schatzkammer von 10:00 bis 17:30 Uhr" },
-        { bold: "Eintritt:", text: "Eintritt in den Dom frei, Museum kostenpflichtig (~5-7 €)" }
-      ]
-    },
-    sub_objects: {
-      title: "Reliquien",
-      items: [
-        { bold: "Heiliger Rock,", text: "bekannt als Trierer Heiliger Rock, gilt als eine der am meisten verehrten christlichen Reliquien des Doms. Nach kirchlicher Überlieferung handelt es sich um ein nahtloses Kleidungsstück, das Jesus Christus vor der Kreuzigung getragen haben soll. Die Reliquie wird in einem speziellen Reliquienschrein im Dom aufbewahrt und ist normalerweise nicht dauerhaft ausgestellt; sie wird nur zu seltenen Pilgerausstellungen öffentlich gezeigt, die Tausende von Gläubigen aus aller Welt anziehen. Historiker vermuten, dass die Reliquie im 4. Jahrhundert zur Zeit von Kaiser Konstantin I. nach Trier gelangte, doch ihre genaue Herkunft bleibt wissenschaftlich umstritten." },
-        { bold: "Metternich-Altar", text: "– ein mittelalterlicher Holzaltar, verziert mit Szenen aus dem Leben Christi und der Heiligen. Er wurde von der Familie Metternich, einem einflussreichen Adelsgeschlecht der Region, in Auftrag gegeben oder mit ihr in Verbindung gebracht. Der Altar zeigt meisterhafte Holzschnitzkunst und Malerei der damaligen Zeit und hat trotz der Jahrhunderte seine lebendigen Farben und Goldverzierungen bewahrt." },
-        { bold: "Bischofskreuz, 4.–5. Jahrhundert", text: "– eines der ältesten christlichen Kreuze, das mit der Geschichte des Trierer Doms verbunden ist. Dieses kleine Kreuz, verziert mit Edelsteinen und dekorativen Elementen, wurde als Symbol der bischöflichen Autorität und geistlichen Leitung in der frühchristlichen Zeit verwendet. Es stammt aus der Zeit des Spätromischen Reiches, als Trier ein bedeutendes religiöses und politisches Zentrum war. Heute wird das Kreuz in der Schatzkammer aufbewahrt und gilt als wertvolles Zeugnis frühchristlicher Kunst und kirchlicher Tradition." },
-        { bold: "Schätze der mittelalterlichen Liturgie", text: "– Gefäße, Reliquiare und Textilien, die im Gottesdienst verwendet wurden." }
-      ]
-    },
-    interestingFacts: {
-      title: "Interessante Fakten",
-      isList: true,
-      items: [
-        { text: "Der Trierer Dom gilt als die älteste noch aktive Kathedrale Deutschlands, und das Bischofsamt in der Stadt besteht seit über 1600 Jahren." },
-        { text: "Der erste christliche Tempel an dieser Stelle wurde im 4. Jahrhundert zur Zeit des Römischen Reiches errichtet, als Trier eine der kaiserlichen Residenzen war." },
-        { text: "Die Mauern des Doms sind an einigen Stellen über 4 Meter dick, da beim Bau Steine aus römischen Bauwerken verwendet wurden." },
-        { text: "Neben dem Dom befindet sich die Kirche Liebfrauenkirche – eine der frühesten gotischen Kirchen Deutschlands." }
-      ]
-    },
-    construction_period: "IV-XII Jahrhundert",
-    coord: { lat: 49.75625, lng: 6.64366 },
-    meta: {
-      title: "Trierer Dom (Trier Cathedral) und Schatzkammer",
-      description: "Entdecken Sie den Trierer Dom aus dem 12. Jahrhundert mit einzigartigen Reliquien und der Schatzkammer des Doms. Geschichte, Architektur und wertvolle Artefakte christlicher Kunst in Trier.",
-      ogTitle: "Trierer Dom und Schatzkammer – Geschichte und Reliquien",
-      ogDescription: "Tauchen Sie ein in die Geschichte des Trierer Doms aus dem 12. Jahrhundert und entdecken Sie die Schatzkammer mit seltenen kirchlichen Artefakten.",
-      keywords: "Trierer Dom, Dom St. Peter Trier, Sehenswürdigkeit, Kathedrale, Deutschland, katholischer Dom, Römisches Reich, Christentum, ältester Dom Deutschlands, Altstadt Trier, UNESCO Weltkulturerbe, Architektur, religiöse Stätte, Tourismus, Führungen, Fotos, Rheinland-Pfalz",
-      ogImage: "https://our-travels.info/foto/Germany/rheinland-pfalz/trier-city/cathedral/001.jpg"
     }
   },
   {
