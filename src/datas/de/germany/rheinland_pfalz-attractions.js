@@ -2,7 +2,6 @@ const datas = [
  
   //     text: "In der Altstadt von Trier befinden sich folgende Sehenswürdigkeiten:",
   //     items: [
-  //       { bold: "🌍Porta Nigra", text: "– das größte erhaltene römische Stadttor nördlich der Alpen, Symbol der Stadt Trier." },
   //       { bold: "🌍Trierer Dom", text: "– der Hauptdom von Trier mit Teilen aus dem 4. Jahrhundert, gelegen in der Altstadt." },
   //       { bold: "🌍Basilika Konstantin", text: "– römische Kaiserbasilika aus dem 4. Jahrhundert, das größte erhaltene römische Bauwerk nördlich der Alpen." },
   //       { bold: "🌍Römische Brücke", text: "– antike Brücke über die Mosel, von den Römern im 1. Jahrhundert erbaut und teilweise noch heute genutzt. Eine der ältesten erhaltenen Brücken Deutschlands, gelegen in der Altstadt von Trier." },
@@ -10,18 +9,6 @@ const datas = [
   //       { bold: "🌍Liebfrauenkirche", text: "– gotische Kirche aus dem 13. Jahrhundert, gelegen in der Altstadt von Trier neben dem Trierer Dom. Eines der herausragenden Beispiele mittelalterlicher Stadtarchitektur." },
   //       { bold: "Kurfürstliches Palais", text: "– barockes Schloss aus dem 18. Jahrhundert, neben der Konstantinbasilika gelegen. Bekannt für seine rosafarbene Fassade und gepflegten Gärten." },
   //       { bold: "Hauptmarkt Trier", text: "– zentraler Platz der Altstadt mit dem Petrusbrunnen und historischen Gebäuden." }
- 
-  // {
-  //   id: "portaNigra_trier",
-  //   meta: {
-  //     title: "Porta Nigra in Trier – größtes römisches Stadttor in Deutschland",
-  //     description: "Entdecken Sie die Porta Nigra in Trier – das größte erhaltene römische Stadttor nördlich der Alpen. Geschichte, interessante Fakten, praktische Informationen für Touristen und Legenden.",
-  //     ogTitle: "Porta Nigra, Trier – historisches römisches Stadttor in Deutschland",
-  //     ogDescription: "Besuchen Sie die Porta Nigra – beeindruckendes römisches Tor im Zentrum von Trier. Erfahren Sie Geschichte, Legenden und praktische Informationen für Touristen. Perfekt für Liebhaber von Geschichte und Architektur.",
-  //     keywords: "Porta Nigra, Trier, Sehenswürdigkeit, römisches Stadttor, Antike, Römisches Reich, Altstadt Trier, UNESCO Weltkulturerbe, Architektur, Geschichte Deutschland, antikes Denkmal, Tourismus, Führungen, Fotos, Rheinland-Pfalz",
-  //     ogImage: "https://our-travels.info/foto/Germany/rheinland-pfalz/trier-city/altstadt/portaNigra_trier/001.jpg"
-  //   }
-  // },
   {
     id: "amphitheater_trier",
     name: "Römisches Amphitheater",

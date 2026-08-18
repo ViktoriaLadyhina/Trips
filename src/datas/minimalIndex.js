@@ -143,6 +143,7 @@ const datas =
     trier_mitte_gartenfeld: { id: 791, parent: 91, ru: 'округ Центр / Гартенфельд (Trier-Mitte/Gartenfeld)', de: 'Ortsbezirk Trier-Mitte/Gartenfeld', uk: 'округ Центр / Гартенфельд (Trier-Mitte/Gartenfeld)' },
 
     sumy_zarichnyi: { id: 723, parent: 125, ru: 'Заречный район', de: 'Zaritschnyj-Bezirk', uk: 'Зарічний район' },
+    sumy_kowpak: { id: 795, parent: 125, ru: 'Ковпаковский район', de: 'Kowpakivskyj-Bezirk', uk: 'Ковпаківський район' },
   },
   attractions: {
     // arnsberg округ
@@ -371,6 +372,8 @@ const datas =
     sumy_altanka: { id: 724, ru: 'Альтанка', de: 'Der Pavillon', uk: 'Альтанка' },
     onatsky_museum_sumy: { id: 725, ru: 'Сумской областной художественный музей им. Н. Онацкого', de: 'Kunstmuseum der Oblast Sumy N. Onazkyj', uk: 'Сумський обласний художній музей ім. Н. Онацького' },
     sumy_regional_museum: { id: 729, ru: 'Сумской областной краеведческий музей', de: 'Regionalmuseum für Heimatkunde Sumy', uk: 'Сумський обласний краєзнавчий музей' },
+    afghan_square_sumy: { id: 794, ru: 'Афганский сквер', de: 'Afghanischer Park', uk: 'Афганський сквер' },
+    afghan_memorial_sumy: { id: 796, ru: 'Мемориал погибшим воинам-интернационалистам', de: 'Gedenkstätte für die gefallenen Soldaten-Internationalisten', uk: 'Меморіал загиблим воїнам-інтернаціоналістам' },
 
     Unesco_Title: { ru: "Достопримечательности ЮНЕСКО", uk: "Пам’ятки ЮНЕСКО", de: "UNESCO-Welterbestätten" }
   },

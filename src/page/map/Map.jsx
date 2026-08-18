@@ -230,9 +230,9 @@ const Map = () => {
                             <ul>
                               <li><Link to="/germany/nrw/city/koln_city/attractions/cologne_cathedral">{t.attractions.cologne_cathedral[lang]}</Link></li>
                               <li><Link to="/germany/nrw/city/koln_city/attractions/fischmarkt_koln">{t.attractions.fischmarkt_koln[lang]}</Link>
-                              <ul>
-                              <li><Link to="/germany/nrw/city/koln_city/attractions/fischweiberbrunnen_koln">{t.attractions.fischweiberbrunnen_koln[lang]}</Link></li>
-                              </ul>
+                                <ul>
+                                  <li><Link to="/germany/nrw/city/koln_city/attractions/fischweiberbrunnen_koln">{t.attractions.fischweiberbrunnen_koln[lang]}</Link></li>
+                                </ul>
                               </li>
                               <li><Link to="/germany/nrw/city/koln_city/attractions/rathaus_koln">{t.attractions.rathaus_koln[lang]}</Link></li>
                               <li><Link to="/germany/nrw/city/koln_city/attractions/st_maria_himmelfahrt_koln">{t.attractions.st_maria_himmelfahrt_koln[lang]}</Link></li>
@@ -461,6 +461,11 @@ const Map = () => {
                           <li><Link to="/ukraine/sumska/city/sumy/attractions/sumy_altanka">{t.attractions.sumy_altanka[lang]}</Link></li>
                           <li><Link to="/ukraine/sumska/city/sumy/attractions/onatsky_museum_sumy">{t.attractions.onatsky_museum_sumy[lang]}</Link></li>
                           <li><Link to="/ukraine/sumska/city/sumy/attractions/sumy_regional_museum">{t.attractions.sumy_regional_museum[lang]}</Link></li>
+                        </ul>
+                      </li>
+                      <li><Link to="/ukraine/sumska/city/sumy/attractions/afghan_square_sumy">{t.attractions.afghan_square_sumy[lang]}</Link>
+                        <ul>
+                          <li><Link to="/ukraine/sumska/city/sumy/attractions/afghan_memorial_sumy">{t.attractions.afghan_memorial_sumy[lang]}</Link></li>
                         </ul>
                       </li>
                     </ul>
