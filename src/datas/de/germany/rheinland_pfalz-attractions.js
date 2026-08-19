@@ -1,8 +1,5 @@
 const datas = [
  
-  //     text: "In der Altstadt von Trier befinden sich folgende Sehenswürdigkeiten:",
-  //     items: [
-  //       { bold: "🌍Basilika Konstantin", text: "– römische Kaiserbasilika aus dem 4. Jahrhundert, das größte erhaltene römische Bauwerk nördlich der Alpen." },
   //       { bold: "Basilika St. Paulin", text: "– mittelalterliche Basilika in der Altstadt von Trier. Im Laufe der Jahrhunderte diente sie als religiöses Zentrum und ist ein Beispiel gotischer Architektur." },
   //       { bold: "🌍Liebfrauenkirche", text: "– gotische Kirche aus dem 13. Jahrhundert, gelegen in der Altstadt von Trier neben dem Trierer Dom. Eines der herausragenden Beispiele mittelalterlicher Stadtarchitektur." },
   //       { bold: "Kurfürstliches Palais", text: "– barockes Schloss aus dem 18. Jahrhundert, neben der Konstantinbasilika gelegen. Bekannt für seine rosafarbene Fassade und gepflegten Gärten." },
@@ -156,64 +153,6 @@ const datas = [
       ogDescription: "Entdecken Sie die Kaiserthermen in Trier: antike Ruinen der imposanten römischen Bäder mit unterirdischen Galerien, multimedialen Ausstellungen und reicher Geschichte.",
       keywords: "Kaiserthermen Trier, Römische Kaiserthermen, Trier, Sehenswürdigkeit, Römisches Reich, Thermen, antike Bäder, Antike, UNESCO Weltkulturerbe, Altstadt Trier, Architektur, historische Stätte, Tourismus, Führungen, Fotos, Rheinland-Pfalz",
       ogImage: "https://our-travels.info/foto/Germany/rheinland-pfalz/trier-city/kaiserthermen/01.jpg"
-    }
-  },
-  {
-    id: "basilica_of_constantine_trier",
-    name: "Konstantin-Basilika",
-    type: ["cathedral", "historical_building"], rating: "popular",
-    path: "basilica_of_constantine_trier",
-    countryPath: "germany", regionPath: "rheinland_pfalz", districtPath: "city", cityPath: "trier",
-    fotoCard: "Germany/rheinland-pfalz/trier-city/basilica_of_constantine/001.jpg",
-    // hiddenFromList: true, showMore: true,
-    location: "Trier, Deutschland",
-    officialSite: [{ bold: "Offizielle Webseite", link: "https://trier.ekir.de/inhalt/konstantin-basilika?utm_source=chatgpt.com" }],
-    unesco_status: {
-      included: true,
-      year: 1986,
-      type: "Kulturerbe",
-      criteria: "i, iii, iv, vi",
-      epoch: "Römische Epoche",
-      series: "Römische Denkmäler, Dom St. Peter und Liebfrauenkirche in Trier"
-    },
-    short_description: "Monumentales römisches Gebäude aus dem 4. Jahrhundert, das als Thronsaal von Kaiser Konstantin diente. Heute ist es eine der größten erhaltenen antiken Saalbasiliken der Welt und eine protestantische Kirche.",
-    full_description: {
-      title: "Beschreibung und Geschichte",
-      items: [
-        { bold: "Konstantin-Basilika (Aula Palatina) ", text: "– ein einzigartiges Beispiel spätantiker Palastarchitektur. Der große rechteckige Saal mit einer Länge von etwa 67 m und einer Höhe von über 30 m beeindruckt durch sein Ausmaß und die strenge Monumentalität. Innen gibt es keine Säulen – der Raum ist vollständig offen, was eine technische Meisterleistung der damaligen Zeit darstellte. Heute wird das Gebäude als evangelische Kirche und historisches Denkmal genutzt." },
-        { bold: "Geschichte. ", text: "Die Konstantinbasilika (Aula Palatina) wurde um 310 n. Chr. auf Anordnung von Kaiser Konstantin dem Großen erbaut, als Trier eine der Hauptstädte des Römischen Reiches war. Das Gebäude diente als Thronsaal des kaiserlichen Palastes, in dem offizielle Empfänge und Audienzen stattfanden. Die architektonische Lösung beeindruckte durch ihre Größe: der enorme rechteckige Saal mit einer Länge von etwa 67 Metern und einer Höhe von über 30 Metern vermittelte ein Gefühl monumentaler Offenheit, und die massiven Wände sowie die hohen Fenster ließen das natürliche Licht gleichmäßig den Innenraum erhellen." },
-        { text: "Nach dem Fall des Römischen Reiches verlor die Basilika ihre ursprüngliche Bedeutung. Im Mittelalter wurde sie als Festung und Residenz des Trierer Erzbischofs genutzt. In dieser Zeit wurde das Gebäude erheblich umgebaut: Innenräume wurden unterteilt und ein Teil der architektonischen Details ging verloren. Dennoch blieb die Hauptstruktur erhalten, was die Ingenieurskunst der römischen Baumeister verdeutlicht." },
-        { text: "Im 19. Jahrhundert begann die bayerische Regierung mit einer umfangreichen Restaurierung der Basilika, um ihr ursprüngliches antikes Aussehen wiederherzustellen. Die Innenräume wurden restauriert, die Fassaden gereinigt, die Mauern verstärkt und die Bogenfenster nach erhaltenen Plänen und Vorbildern rekonstruiert. Seitdem wird das Gebäude als protestantische Kirche genutzt und bleibt gleichzeitig ein bedeutendes historisches Denkmal." },
-        { text: "Während des Zweiten Weltkriegs wurde die Basilika geringfügig beschädigt, die Schäden wurden in den Nachkriegsjahren behoben. Heute gehört die Aula Palatina zum UNESCO-Welterbe „Römische Baudenkmäler, Dom und Liebfrauenkirche in Trier“. Sie zieht Touristen aus der ganzen Welt nicht nur als religiöses Bauwerk, sondern auch als herausragendes Beispiel römischer Architektur in Nordeuropa an." }
-      ]
-    },
-    tickets_and_entry: {
-      title: "Praktische Informationen",
-      items: [
-        { bold: "Zugang:", text: "geöffnet für Besuche, Eintritt in der Regel frei" },
-        { bold: "Konfession:", text: "evangelische Kirche" },
-      ]
-    },
-    interestingFacts: {
-      title: "Interessante Fakten",
-      isList: true,
-      items: [
-        { text: "Es ist der größte vollständig erhaltene Innenraum der Antike nördlich der Alpen." },
-        { text: "Wände bis zu 2,7 m dick." },
-        { text: "Im römischen Zeitalter war das Innere mit Marmor verkleidet und mit Mosaiken geschmückt." },
-        { text: "Das Gebäude wurde ursprünglich mit einem Hypokaustsystem (römische Zentralheizung) beheizt." }
-      ]
-    },
-    construction_period: "4. Jahrhundert n. Chr., ca. 310",
-    founder: "Kaiser Konstantin der Große",
-    coord: { lat: 49.75352, lng: 6.64342 },
-    meta: {
-      title: "Konstantin-Basilika in Trier – römischer Thronsaal des 4. Jahrhunderts",
-      description: "Die Konstantin-Basilika (Aula Palatina) – antiker Palastsaal von Kaiser Konstantin in Trier. Geschichte, Fakten, Architektur und Besuchsinformationen.",
-      ogTitle: "Konstantin-Basilika – römische Architektur in Trier",
-      ogDescription: "Der große Thronsaal von Kaiser Konstantin aus dem 4. Jahrhundert – eines der beeindruckendsten Denkmäler der römischen Epoche in Deutschland.",
-      keywords: "Aula Palatina Trier, Konstantinbasilika Trier, Sehenswürdigkeit, Römisches Reich, Basilika, antike Architektur, Konstantin der Große, Altstadt Trier, UNESCO Weltkulturerbe, historische Stätte, Tourismus, Führungen, Fotos, Rheinland-Pfalz",
-      ogImage: "https://our-travels.info/foto/Germany/rheinland-pfalz/trier-city/basilica_of_constantine/001.jpg"
     }
   },
   {

@@ -556,11 +556,6 @@ export const Fotos = {
         { path: "Germany/rheinland-pfalz/trier-city/kaiserthermen/04.jpg", title: { ru: "Римские императорские бани, 2024", uk: "Римські імператорські терми, 2024", de: "Römische Kaiserthermen, 2024" } },
         { path: "Germany/rheinland-pfalz/trier-city/kaiserthermen/05.jpg", title: { ru: "Римские императорские бани, 2024", uk: "Римські імператорські терми, 2024", de: "Römische Kaiserthermen, 2024" } },
       ],
-      basilica_of_constantine_trier: [
-        { path: "Germany/rheinland-pfalz/trier-city/basilica_of_constantine/001.jpg", title: { ru: "Базилика Константина (фото взято с интернета)", uk: "Базиліка Константина (фото взято з Інтернету)", de: "Konstantin-Basilika (Foto aus dem Internet)" } },
-        { path: "Germany/rheinland-pfalz/trier-city/basilica_of_constantine/002.jpg", title: { ru: "Базилика Константина, 2024", uk: "Базиліка Константина, 2024", de: "Konstantin-Basilika, 2024" } },
-        { path: "Germany/rheinland-pfalz/trier-city/basilica_of_constantine/003.jpg", title: { ru: "Базилика Константина, 2024", uk: "Базиліка Константина, 2024", de: "Konstantin-Basilika, 2024" } },
-      ],
       barbarathermen_trier: [
         { path: "Germany/rheinland-pfalz/trier-city/barbarathermen/001.jpg", title: { ru: "Барбарские термы (фото взято с интернета)", uk: "Барбарські терми (фото взято з Інтернету)", de: "Barbarathermen (Foto aus dem Internet)" } },
       ],

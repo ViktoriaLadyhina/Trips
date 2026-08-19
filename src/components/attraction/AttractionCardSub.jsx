@@ -71,6 +71,7 @@ const AttractionCardSub = ({ attr, lang }) => {
                             </ul>
                         </div>
                     )}
+                    
                     {attr.note && (
                         <span className='attrCard__desc-info-text'>
                             <strong>{noteLabel[attr.status][lang]}:</strong> {attr.note}
