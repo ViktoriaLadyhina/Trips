@@ -1,10 +1,8 @@
 import { Link, useParams } from 'react-router';
 import { useSelector } from 'react-redux';
 import { Helmet } from "react-helmet-async";
-// import { photosByCountry } from "../../datas/fotos/index.js";
 
 import BreadCrumbs from '../../components/breadCrumbs/BreadCrumbs.jsx';
-import InfoBlock from '../../components/InfoBlock/InfoBlock.jsx';
 import './City.scss'
 import BtnAttr from '../../components/btn-attr/BtnAttr.jsx';
 import useEvents from '../../hooks/useEvents.js';
@@ -17,8 +15,7 @@ import { PhotoBlock } from '../../components/renders/PhotoBlock.jsx';
 import { toFullUrl } from '../../utils/photo.js';
 import { MapBlock } from '../../components/renders/MapBlock.jsx';
 import SkeletonRenderer from '../../components/skeleton/SkeletonRenderer.jsx';
-
-const BASE_PHOTO_URL = import.meta.env.VITE_BASE_PHOTO_URL;
+import WhatToSee from '../../components/attraction/WhatToSee.jsx';
 
 const SkeletonList = [
     { type: "title" },
@@ -93,10 +90,10 @@ const City = () => {
         getCity(cityPath, lang)
             .then(data => {
 
-                    if (active) {
-                        setCity(data);
-                        setLoading(false);
-                    }
+                if (active) {
+                    setCity(data);
+                    setLoading(false);
+                }
             })
             .catch(err => {
                 if (active) {
@@ -276,6 +273,17 @@ const City = () => {
                             </div>
                         )}
                         {/* ---------------------------------------------------------- */}
+
+                        {/* ------------------- Что посмотреть ------------------- */}
+                        <div className="recommendations__block">
+                            {city?.recommendations?.length > 0 && (
+                                <WhatToSee 
+                                    rec={city.recommendations} 
+                                    lang={lang} 
+                                    paths={`${countryPath}/${regionPath}/${districtPath}/${cityPath}` }
+                                />
+                            )}
+                        </div>
 
                     </div>
                 </>

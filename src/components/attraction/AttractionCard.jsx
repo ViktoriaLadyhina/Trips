@@ -20,7 +20,7 @@ const AttractionCard = ({ attr, lang }) => {
     const status = attr.status ?? 'active';
 
 
-    // Формируем путь корректно
+    // Формируем путь
     let detailPath = `/${countryPath}`;
     if (regionPath) detailPath += `/${regionPath}`;
     if (districtPath) detailPath += `/${districtPath}`;
@@ -111,13 +111,13 @@ const AttractionCard = ({ attr, lang }) => {
                     )}
 
                     {/* // статус с базы */}
-{attr.status_note && (
-    <TextBlock
-        block={{ block_key: 'status_note' }}
-        langData={{ status_note: attr.status_note }}
-        classPrefix="attrCard__desc-info-text"
-    />
-)}
+                    {attr.status_note && (
+                        <TextBlock
+                            block={{ block_key: 'status_note' }}
+                            langData={{ status_note: attr.status_note }}
+                            classPrefix="attrCard__desc-info-text"
+                        />
+                    )}
 
                     {attr.unesco_status?.included && (
                         <span className='attrCard__desc-info-text'>
