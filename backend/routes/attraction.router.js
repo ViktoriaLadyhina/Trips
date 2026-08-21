@@ -7,6 +7,7 @@ const getEntityPhotos = require("../repositories/getPhotos");
 const getLocation = require("../repositories/getLocation");
 const getUnesco = require("../repositories/getUnesco");
 const getAttractionCardData = require("../repositories/getAttractionCardData");
+const getChildRelations = require("../repositories/getChildRelations");
 
 const router = express.Router();
 
@@ -100,27 +101,49 @@ router.get("/:attrPath", async (req, res) => {
         const unesco_status = await getUnesco(db, attr.id);
 
         // 7. SUBOBJECT RELATIONS
+        const relations = await getChildRelations(db, [attr.id]);
 
-        const [relationsRows] = await db.query(
-            `
-            SELECT
-                child_id
-
-            FROM entity_relations
-
-            WHERE parent_id = ?
-              AND relation = 'contains'
-            `,
-            [attr.id]
-        );
-
-        const childIds = relationsRows.map(row => row.child_id);
+        const childIds = relations.map(row => row.child_id);
 
         // 8. SUBOBJECT CARDS
-
         const subObjects = await getAttractionCardData(db, childIds, lang);
 
-        // 9. ADD SUBOBJECT PHOTOS
+        // 9. NESTED SUBOBJECT RELATIONS
+        const nestedRelations = await getChildRelations(db, childIds);
+
+        const nestedChildIds = nestedRelations.map(row => row.child_id);
+
+        // 10. NESTED SUBOBJECT CARDS
+        const nestedSubObjects = await getAttractionCardData(db, nestedChildIds, lang);
+
+        // 11. GROUP NESTED SUBOBJECTS
+        const nestedSubObjectsById = Object.fromEntries(
+            nestedSubObjects.map(subObject => [
+                subObject.id,
+                subObject
+            ])
+        );
+
+        const nestedByParent = {};
+
+        for (const relation of nestedRelations) {
+            if (!nestedByParent[relation.parent_id]) {
+                nestedByParent[relation.parent_id] = [];
+            }
+
+            const child = nestedSubObjectsById[relation.child_id];
+
+            if (child) {
+                nestedByParent[relation.parent_id].push(child);
+            }
+        }
+
+        for (const subObject of subObjects) {
+            subObject.subObjects =
+                nestedByParent[subObject.id] || [];
+        }
+
+        // 12. ADD SUBOBJECT PHOTOS
 
         const subObjectPhotos = subObjects
             .map(subObject => subObject.fotoCard)
@@ -136,7 +159,7 @@ router.get("/:attrPath", async (req, res) => {
                 )
         );
 
-        // 10. RESPONSE
+        // 13. RESPONSE
 
         res.json({
 
