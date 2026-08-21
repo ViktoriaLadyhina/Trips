@@ -307,7 +307,7 @@ const datas =
     roman_bridge_trier: { id: 799, ru: 'Римский мост', de: 'Römerbrücke', uk: 'Римський міст' },
     cathedral_trier: { id: 797, ru: 'Кафедральний собор', de: 'Trierer Dom', uk: 'Кафедральний собор' },
     basilikaStPaulinus_trier: { ru: 'Базилика Святого Паулина', de: 'Basilika St. Paulinus', uk: 'Базиліка Святого Пауліна' },
-    liebfrauenkirche_trier: { ru: 'Церковь Богоматери', de: 'Liebfrauenkirche', uk: 'Церква Богородиці' },
+    liebfrauenkirche_trier: { id: 801, ru: 'Церковь Богоматери', de: 'Liebfrauenkirche', uk: 'Церква Богородиці' },
     altstadt_trier: { id: 792, ru: 'Старый город Трира', de: 'Altstadt Trier', uk: 'Старе місто Тріра' },
     kurfuerstliches_palais_trier: { ru: 'Избирательский (курфюрстский) дворец', de: 'Kurfürstliches Palais', uk: 'Виборчий (курфюрстський) палац' },
     hauptmarkt_trier: { id: 798, ru: 'Главная рыночная площадь', de: 'Hauptmarkt', uk: 'Головна ринкова площа' },
