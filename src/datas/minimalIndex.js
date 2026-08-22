@@ -312,6 +312,7 @@ const datas =
     kurfuerstliches_palais_trier: { ru: 'Избирательский (курфюрстский) дворец', de: 'Kurfürstliches Palais', uk: 'Виборчий (курфюрстський) палац' },
     hauptmarkt_trier: { id: 798, ru: 'Главная рыночная площадь', de: 'Hauptmarkt', uk: 'Головна ринкова площа' },
     steipe_trier: { id: 802, ru: 'Штайпе', de: 'Steipe', uk: 'Штайпе' },
+    petrusbrunnen_trier: { id: 803, ru: 'Фонтан Святого Петра', de: 'Petrusbrunnen', uk: 'Фонтан Святого Петра' },
 
     //Saarburg
     altstadt_saarburg: { ru: 'Старый город Саарбурга', de: 'Altstadt Saarburg', uk: 'Старе місто Саарбурга' },
