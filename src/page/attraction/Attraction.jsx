@@ -9,7 +9,6 @@ import InfoBlock from '../../components/InfoBlock/InfoBlock.jsx';
 import Gallery from '../../components/gallery/Gallery.jsx';
 import { photosByCountry } from '../../datas/fotos/index.js';
 
-import AttractionCardSub from '../../components/attraction/AttractionCardSub.jsx';
 import AttractionCard from '../../components/attraction/AttractionCard.jsx';
 import AttractionsFilters from '../../components/attractionsFilters/AttractionsFilters.jsx';
 import FilteredMap from '../../components/maps/attr/filteredMap.jsx';

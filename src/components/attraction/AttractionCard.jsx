@@ -74,22 +74,38 @@ const AttractionCard = ({ attr, lang }) => {
                         />
                     )}
                     {/* // строки описания достов с базы */}
-                    {attr.subObjects?.length > 0 &&
-                        typeof attr.subObjects[0] === 'object' && (
-                            <ul className="attrCard__desc-subObjects">
-                                {attr.subObjects.map(subObject => (
-                                    <li key={subObject.id}>
-                                        <TextBlock
-                                            block={{ block_key: 'subObjects_desc' }}
-                                            langData={{
-                                                subObjects_desc: subObject.description
-                                            }}
-                                            classPrefix="attrCard__desc-subObject"
-                                        />
-                                    </li>
-                                ))}
-                            </ul>
-                        )}
+                    {attr.subObjects?.length > 0 && (
+                        <ul className="attrCard__desc-subObjects">
+                            {attr.subObjects.map(subObject => (
+                                <li key={subObject.id}>
+                                    <TextBlock
+                                        block={{ block_key: 'subObjects_desc' }}
+                                        langData={{
+                                            subObjects_desc: subObject.subObjects_desc
+                                        }}
+                                        classPrefix="attrCard__desc-subObject"
+                                    />
+
+                                    {subObject.subObjects?.length > 0 && (
+                                        <ul className="attrCard__desc-subObjects">
+                                            {subObject.subObjects.map(nestedSubObject => (
+                                                <li key={nestedSubObject.id}>
+                                                    <TextBlock
+                                                        block={{ block_key: 'subObjects_desc' }}
+                                                        langData={{
+                                                            subObjects_desc:
+                                                                nestedSubObject.subObjects_desc
+                                                        }}
+                                                        classPrefix="attrCard__desc-subObject"
+                                                    />
+                                                </li>
+                                            ))}
+                                        </ul>
+                                    )}
+                                </li>
+                            ))}
+                        </ul>
+                    )}
 
                     {attr.short_description_subObjects && (
                         <div className='attrCard__desc-subObjects'>

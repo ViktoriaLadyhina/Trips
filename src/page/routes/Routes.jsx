@@ -4,8 +4,7 @@ import { useSelector } from 'react-redux';
 
 import './Routes.scss'
 import BreadCrumbs from '../../components/breadCrumbs/BreadCrumbs.jsx';
-import Gallery from '../../components/gallery/Gallery.jsx';
-import AttractionCardSub from '../../components/attraction/AttractionCardSub.jsx';
+import AttractionCard from '../../components/attraction/AttractionCard.jsx';
 import FilteredMap from '../../components/maps/attr/filteredMap.jsx';
 import { useEffect, useState } from 'react';
 import { getRoute } from '../../api/api.js';
@@ -198,7 +197,7 @@ const Routes = () => {
                                     : `Пам'ятки маршруту «${datas.routes[routesPath][lang]}»`}
                         </h3>
                         {attractionRoute.map(attr => (
-                            <AttractionCardSub key={attr.id} attr={attr} lang={lang} />
+                            <AttractionCard key={attr.id} attr={attr} lang={lang} />
                         ))}
                     </section>
                 )}
