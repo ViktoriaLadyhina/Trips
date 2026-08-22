@@ -540,15 +540,6 @@ export const Fotos = {
 
   rheinland_pfalz: {
     trier: {
-      amphitheater_trier: [
-        { path: "Germany/rheinland-pfalz/trier-city/amphitheater/001.jpg", title: { ru: "Римский амфитеатр в Трире, 2024", uk: "Римський амфітеатр у Трірі, 2024", de: "Römischer Amphitheater in Trier, 2024" } },
-        { path: "Germany/rheinland-pfalz/trier-city/amphitheater/002.jpg", title: { ru: "Римский амфитеатр в Трире, 2024", uk: "Римський амфітеатр у Трірі, 2024", de: "Römischer Amphitheater in Trier, 2024" } },
-        { path: "Germany/rheinland-pfalz/trier-city/amphitheater/003.jpg", title: { ru: "Римский амфитеатр в Трире, 2024", uk: "Римський амфітеатр у Трірі, 2024", de: "Römischer Amphitheater in Trier, 2024" } },
-        { path: "Germany/rheinland-pfalz/trier-city/amphitheater/004.jpg", title: { ru: "Римский амфитеатр в Трире, 2024", uk: "Римський амфітеатр у Трірі, 2024", de: "Römischer Amphitheater in Trier, 2024" } },
-        { path: "Germany/rheinland-pfalz/trier-city/amphitheater/005.jpg", title: { ru: "Римский амфитеатр в Трире, 2024", uk: "Римський амфітеатр у Трірі, 2024", de: "Römischer Amphitheater in Trier, 2024" } },
-        { path: "Germany/rheinland-pfalz/trier-city/amphitheater/006.jpg", title: { ru: "Римский амфитеатр в Трире, 2024", uk: "Римський амфітеатр у Трірі, 2024", de: "Römischer Amphitheater in Trier, 2024" } },
-        { path: "Germany/rheinland-pfalz/trier-city/amphitheater/007.jpg", title: { ru: "Римский амфитеатр в Трире, 2024", uk: "Римський амфітеатр у Трірі, 2024", de: "Römischer Amphitheater in Trier, 2024" } },
-      ],
       kaiserthermen_trier: [
         { path: "Germany/rheinland-pfalz/trier-city/kaiserthermen/01.jpg", title: { ru: "Римские императорские бани, 2024", uk: "Римські імператорські терми, 2024", de: "Römische Kaiserthermen, 2024" } },
         { path: "Germany/rheinland-pfalz/trier-city/kaiserthermen/02.jpg", title: { ru: "Римские императорские бани, 2024", uk: "Римські імператорські терми, 2024", de: "Römische Kaiserthermen, 2024" } },

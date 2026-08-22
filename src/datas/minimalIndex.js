@@ -141,6 +141,7 @@ const datas =
     koblenz_südliche_vorstadt: { id: 784, parent: 89, ru: 'район  Южный пригород (Südliche Vorstadt)', de: 'Stadtteil Südliche Vorstadt', uk: 'район Південне передмістя (Südliche Vorstadt)' },
 
     trier_mitte_gartenfeld: { id: 791, parent: 91, ru: 'округ Центр / Гартенфельд (Trier-Mitte/Gartenfeld)', de: 'Ortsbezirk Trier-Mitte/Gartenfeld', uk: 'округ Центр / Гартенфельд (Trier-Mitte/Gartenfeld)' },
+    trier_olewig: { id: 805, parent: 91, ru: 'округ Центр / Гартенфельд (Trier-Mitte/Gartenfeld)', de: 'Ortsbezirk Trier-Mitte/Gartenfeld', uk: 'округ Центр / Гартенфельд (Trier-Mitte/Gartenfeld)' },
 
     sumy_zarichnyi: { id: 723, parent: 125, ru: 'Заречный район', de: 'Zaritschnyj-Bezirk', uk: 'Зарічний район' },
     sumy_kowpak: { id: 795, parent: 125, ru: 'Ковпаковский район', de: 'Kowpakivskyj-Bezirk', uk: 'Ковпаківський район' },
@@ -300,7 +301,7 @@ const datas =
     // rheinland-pfalz
     // Trier
     portaNigra_trier: { id: 793, ru: 'Порта Нигра («Чёрные ворота»)', de: 'Porta Nigra', uk: 'Порта Нігра («Чорні ворота»)' },
-    amphitheater_trier: { ru: 'Римский амфитеатр', de: 'Römisches Amphitheater', uk: 'Римський амфітеатр' },
+    amphitheater_trier: { id: 804, ru: 'Римский амфитеатр', de: 'Römisches Amphitheater', uk: 'Римський амфітеатр' },
     kaiserthermen_trier: { ru: 'Римские императорские бани', de: 'Römische Kaiserthermen', uk: 'Римські імператорські терми' },
     basilica_of_constantine_trier: { id: 800, ru: 'Базилика Константина', de: 'Konstantin-Basilika', uk: 'Базиліка Константина' },
     barbarathermen_trier: { ru: 'Барбарские термы', de: 'Barbarathermen', uk: 'Барбарські терми' },
