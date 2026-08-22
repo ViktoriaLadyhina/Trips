@@ -162,7 +162,7 @@ router.get("/:entityPath", async (req, res) => {
                 subObjectsByParent[relation.parent_id].push({
                     id: relation.child_id,
 
-                    description:
+                    subObjects_desc:
                         childContentByEntity[
                             relation.child_id
                         ] || null

@@ -64,6 +64,7 @@ async function getAttractionCardData(db, attrIds, lang) {
               'name',
               'short_description',
               'subObjects_intro',
+              'subObjects_desc',
               'status_note'
           )
           AND language = ?
@@ -261,6 +262,7 @@ const coordinatesByEntity = Object.fromEntries(
             short_description: content.short_description || null,
             status_note: content.status_note || null,
             subObjects_intro: content.subObjects_intro || null,
+            subObjects_desc: content.subObjects_desc || null,
 
             coord: coordinatesByEntity[item.id] || null,
 
