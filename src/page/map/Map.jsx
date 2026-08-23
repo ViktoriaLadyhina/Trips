@@ -202,6 +202,23 @@ const Map = () => {
                     </ul>
                   </li>
 
+                  {/* Округ Münster */}
+                  <li><Link to="/germany/nrw/munster">{t.districts.munster[lang]}</Link>
+                    <ul>
+                      {/* Край Recklinghausen */}
+                      <li><span>{t.subRegions.recklinghausen[lang]}</span>
+                        <ul>
+                          <li><Link to="/germany/nrw/munster/dorsten">{t.cities.dorsten[lang]}</Link>
+                            <ul>
+                              <li></li>
+                            </ul>
+                          </li>
+                        </ul>
+                      </li>
+
+                    </ul>
+                  </li>                  
+
                   {/* Округ Düsseldorf */}
                   <li><Link to="/germany/nrw/dusseldorf">{t.districts.dusseldorf[lang]}</Link>
                     <ul>

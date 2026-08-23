@@ -4,15 +4,15 @@ import { districtsMunster as districts } from "./maps/nrwDistricts.js";
 import "../Maps.scss";
 
 const districtsMunsterCenters = {
-    warendorf: { x: 0, y: 0, dx: -10, dy: -10 },
-    steinfurt: { x: 0, y: 0, dx: 0, dy: -10 },
-    coesfeld: { x: 0, y: 0, dx: 0, dy: 0 },
-    borken: { x: 0, y: 0, dx: 0, dy: 0 },
-    recklinghausen: { x: 0, y: 0, dx: 0, dy: 0 },
+    warendorf:      { x: 316.4, y: 157.0, dx: -10, dy: -10 },
+    steinfurt:      { x: 257.9, y: 74.8,  dx: 0,   dy: -10 },
+    coesfeld:       { x: 233.9, y: 161.5, dx: 0,   dy: 0 },
+    borken:         { x: 153.2, y: 132.9, dx: 10,   dy: 20 },
+    recklinghausen: { x: 203.4, y: 206.6, dx: 0,   dy: 0 },
 
-    muenster: { x: 0, y: 0, dx: 0, dy: 0 },
-    gelsenkirchen: { x: 0, y: 0, dx: 0, dy: 0 },
-    bottrop: { x: 0, y: 0, dx: 0, dy: 0 },
+    muenster:       { x: 267.3, y: 141.6, dx: 0,   dy: 0 },
+    gelsenkirchen:  { x: 187.4, y: 231.9, dx: 16,   dy: -5 },
+    bottrop:        { x: 165.2, y: 230.6, dx: 5,   dy: 5 },
 };
 
 const NRWMunsterMap = ({ subRegion, cities, scrollToSubRegion }) => {
@@ -28,7 +28,7 @@ const NRWMunsterMap = ({ subRegion, cities, scrollToSubRegion }) => {
         || "";
 
     // SUBREGIONS
-    const dussSubRegions = useMemo(() => subRegion || [], [subRegion]);
+    const munsterSubRegions = useMemo(() => subRegion || [], [subRegion]);
 
     // CITIES
       const freeCities = useMemo(() => {
@@ -44,12 +44,13 @@ const NRWMunsterMap = ({ subRegion, cities, scrollToSubRegion }) => {
         }
     };
 
+
     return (
         <div className="koln-map">
-            <svg viewBox="78 5.75 313.332 246.75">
+            <svg viewBox="78 12 313.332 240.5">
                 <g className="map-shape">
 
-                    {dussSubRegions.map((reg) => {
+                    {munsterSubRegions.map((reg) => {
                         const loc = districts.find(d => d.name === reg.path);
                         if (!loc) return null;
 
@@ -93,7 +94,7 @@ const NRWMunsterMap = ({ subRegion, cities, scrollToSubRegion }) => {
                         );
                     })}
 
-                    {dussSubRegions.map((reg) => {
+                    {munsterSubRegions.map((reg) => {
                         const loc = districts.find(d => d.name === reg.path);
                         if (!loc) return null;
 
