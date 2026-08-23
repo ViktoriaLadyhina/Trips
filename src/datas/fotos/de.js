@@ -540,13 +540,6 @@ export const Fotos = {
 
   rheinland_pfalz: {
     trier: {
-      kaiserthermen_trier: [
-        { path: "Germany/rheinland-pfalz/trier-city/kaiserthermen/01.jpg", title: { ru: "Римские императорские бани, 2024", uk: "Римські імператорські терми, 2024", de: "Römische Kaiserthermen, 2024" } },
-        { path: "Germany/rheinland-pfalz/trier-city/kaiserthermen/02.jpg", title: { ru: "Римские императорские бани, 2024", uk: "Римські імператорські терми, 2024", de: "Römische Kaiserthermen, 2024" } },
-        { path: "Germany/rheinland-pfalz/trier-city/kaiserthermen/03.jpg", title: { ru: "Римские императорские бани, 2024", uk: "Римські імператорські терми, 2024", de: "Römische Kaiserthermen, 2024" } },
-        { path: "Germany/rheinland-pfalz/trier-city/kaiserthermen/04.jpg", title: { ru: "Римские императорские бани, 2024", uk: "Римські імператорські терми, 2024", de: "Römische Kaiserthermen, 2024" } },
-        { path: "Germany/rheinland-pfalz/trier-city/kaiserthermen/05.jpg", title: { ru: "Римские императорские бани, 2024", uk: "Римські імператорські терми, 2024", de: "Römische Kaiserthermen, 2024" } },
-      ],
       barbarathermen_trier: [
         { path: "Germany/rheinland-pfalz/trier-city/barbarathermen/001.jpg", title: { ru: "Барбарские термы (фото взято с интернета)", uk: "Барбарські терми (фото взято з Інтернету)", de: "Barbarathermen (Foto aus dem Internet)" } },
       ],
