@@ -22,19 +22,23 @@ const datas =
     arnsberg: { id: 60, ru: 'Административный округ Арнсберг', de: 'Regierungsbezirk Arnsberg', uk: 'Адміністративний округ Арнсберг' },
     dusseldorf: { id: 62, ru: 'Административный округ Дюссельдорф', de: 'Regierungsbezirk Düsseldorf', uk: 'Адміністративний округ Дюссельдорф' },
     koln: { id: 63, ru: 'Административный округ Кёльн', de: 'Regierungsbezirk Köln', uk: 'Адміністративний округ Кельн' },
+    munster: { id: 64, ru: 'Административный округ Мюнстер', de: 'Regierungsbezirk Münster', uk: 'Адміністративний округ Мюнстер' },
     mayen_koblenz: { id: 114, ru: 'Район Майен‑Кобленц', de: 'Landkreis Mayen-Koblenz', uk: 'Район Маєн-Кобленц' },
     trier_saarburg: { id: 121, ru: 'Район Трир-Саарбург', de: 'Landkreis Trier-Saarburg', uk: 'Район Трір-Саарбург' }
   },
   subRegions: {
-    merkischer: { id: 161, ru: 'Район Меркиш', de: 'Märkischer Kreis', uk: 'Район Меркіш' },
-   
-    hochsauerland: { id: 291, ru: 'Район Хохзауэрланд', de: 'Hochsauerlandkreis', uk: 'Район Хохзауэрланд' },
-    mettmann: { id: 372, ru: 'Район Меттман', de: 'Kreis Mettmann', uk: 'Район Меттман' },
-    rhein_erft: { id: 160, ru: 'Район Рейн-Эрфт', de: 'Rhein-Erft-Kreis', uk: 'Район Рейн-Ерфт' },
-    aachen: { id: 162, ru: 'Район Аахен', de: 'Kreis Aachen', uk: 'Район Аахен' },
-    rhein_sieg: { id: 166, ru: 'Район Рейн-Зиг', de: 'Rhein-Sieg-Kreis', uk: 'Район Рейн-Зиг' },
-
-    saarburg_kell: { id: 552, ru: 'Объединённая община Саарбург-Келль', de: 'Verbandsgemeinde Saarburg-Kell', uk: 'Об’єднана громада Саарбург-Келль' },
+    merkischer: { id: 161, parent_id: 60, ru: 'Район Меркиш', de: 'Märkischer Kreis', uk: 'Район Меркіш' },
+    hochsauerland: { id: 291, parent_id: 60, ru: 'Район Хохзауэрланд', de: 'Hochsauerlandkreis', uk: 'Район Хохзауэрланд' },
+    mettmann: { id: 372, parent_id: 62, ru: 'Район Меттман', de: 'Kreis Mettmann', uk: 'Район Меттман' },
+    rhein_erft: { id: 160, parent_id: 63, ru: 'Район Рейн-Эрфт', de: 'Rhein-Erft-Kreis', uk: 'Район Рейн-Ерфт' },
+    aachen: { id: 162, parent_id: 63,ru: 'Район Аахен', de: 'Kreis Aachen', uk: 'Район Аахен' },
+    rhein_sieg: { id: 166, parent_id: 63,ru: 'Район Рейн-Зиг', de: 'Rhein-Sieg-Kreis', uk: 'Район Рейн-Зиг' },
+    recklinghausen: { id: 808, parent_id: 64, ru: 'Район Реклингхаузен', de: 'Kreis Recklinghausen', uk: 'Район Реклінггаузен' },
+    steinfurt: { id: 819, parent_id: 64, ru: 'Район Штайнфурт', de: 'Kreis Steinfurt', uk: 'Район Штайнфурт' },
+    borken: { id: 844, parent_id: 64, ru: 'Район Боркен', de: 'Kreis Borken', uk: 'Район Боркен' },
+    coesfeld: { id: 862, parent_id: 64, ru: 'Район Косфельд', de: 'Kreis Coesfeld', uk: 'Район Косфельд' },
+    warendorf: { id: 874, parent_id: 64, ru: 'Район Варендорф', de: 'Kreis Warendorf', uk: 'Район Варендорф' },
+    saarburg_kell: { id: 552, parent_id: 121, ru: 'Объединённая община Саарбург-Келль', de: 'Verbandsgemeinde Saarburg-Kell', uk: 'Об’єднана громада Саарбург-Келль' },
   },
   cities: {
     // Germany

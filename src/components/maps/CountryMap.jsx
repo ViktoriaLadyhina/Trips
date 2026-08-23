@@ -5,8 +5,8 @@ import NRWMap from './germany/NRWMap.jsx';
 import NRWKolnMap from './germany/NRWKolnMap.jsx';
 import NRWArnsbergMap from './germany/NRWArnsbergMap.jsx'
 import NRWDusseldorfMap from './germany/NRWDussMap.jsx'
+import NRWMunsterMap from './germany/NRWMusterMap.jsx'
 import RheinlandPfalzMap from './germany/RPMap.jsx';
-
 import luxembourgMap from './luxembourg/luxembourg.jsx';
 
 const maps = {
@@ -17,6 +17,7 @@ const maps = {
       koln: NRWKolnMap,
       arnsberg: NRWArnsbergMap,
       dusseldorf: NRWDusseldorfMap,
+      munster: NRWMunsterMap,
     },
     rheinland_pfalz: {
       region: RheinlandPfalzMap
