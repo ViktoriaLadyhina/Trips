@@ -540,9 +540,6 @@ export const Fotos = {
 
   rheinland_pfalz: {
     trier: {
-      barbarathermen_trier: [
-        { path: "Germany/rheinland-pfalz/trier-city/barbarathermen/001.jpg", title: { ru: "Барбарские термы (фото взято с интернета)", uk: "Барбарські терми (фото взято з Інтернету)", de: "Barbarathermen (Foto aus dem Internet)" } },
-      ],
       basilikaStPaulinus_trier: [
         { path: "Germany/rheinland-pfalz/trier-city/basilikaStPaulinus/001.jpg", title: { ru: "Базилика Святого Паулина (фото взято с интернета)", uk: "Базиліка Святого Пауліна (фото взято з Інтернету)", de: "Basilika St. Paulinus (Foto aus dem Internet)" } },
       ],

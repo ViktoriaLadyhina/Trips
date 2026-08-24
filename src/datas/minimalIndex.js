@@ -312,7 +312,7 @@ const datas =
     amphitheater_trier: { id: 804, ru: 'Римский амфитеатр', de: 'Römisches Amphitheater', uk: 'Римський амфітеатр' },
     kaiserthermen_trier: { id: 806, ru: 'Римские императорские бани', de: 'Römische Kaiserthermen', uk: 'Римські імператорські терми' },
     basilica_of_constantine_trier: { id: 800, ru: 'Базилика Константина', de: 'Konstantin-Basilika', uk: 'Базиліка Константина' },
-    barbarathermen_trier: { ru: 'Барбарские термы', de: 'Barbarathermen', uk: 'Барбарські терми' },
+    barbarathermen_trier: { id: 892, ru: 'Барбарские термы', de: 'Barbarathermen', uk: 'Барбарські терми' },
     roman_bridge_trier: { id: 799, ru: 'Римский мост', de: 'Römerbrücke', uk: 'Римський міст' },
     cathedral_trier: { id: 797, ru: 'Кафедральний собор', de: 'Trierer Dom', uk: 'Кафедральний собор' },
     basilikaStPaulinus_trier: { ru: 'Базилика Святого Паулина', de: 'Basilika St. Paulinus', uk: 'Базиліка Святого Пауліна' },
