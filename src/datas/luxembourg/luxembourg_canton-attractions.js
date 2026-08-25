@@ -347,226 +347,27 @@ const datas = [
       }
     }
   },
-  {
-    id: "old_town_luxembourg",
-    type: ["historical_area"], rating: "top",
-    path: "old_town_luxembourg",
-    countryPath: "luxembourg", regionPath: "luxembourg_canton", districtPath: "city", cityPath: "luxembourg_city",
-    fotoCard: "Luxembourg/luxembourg_canton/luxembourg_city/old_town/001.jpg",
-    subObjects: ["casemates_du_bock_luxembourg", "abbey_neumunster_luxembourg", "pont_du_chateau_luxembourg", "passerelle_luxembourg", "notre_dame_cathedral_luxembourg", "grand_ducal_palace_luxembourg", "hammelsmarsch_luxembourg", "acrobats_luxembourg"],
-    translations: {
-      ru: {
-        name: "Старый город Люксембурга",
-        loc: {
-          country: "Люксембург",
-          region: "Кантон Люксембург",
-          district: "Город областного значения",
-          city: "Люксембург",
-          cityDistrict: "кварталы Ville Haute, Grund, Pfaffenthal"
-        },
-        unesco_status: {
-          included: true,
-          year: 1994,
-          type: "Культурное наследие",
-          criteria: "iv",
-          epoch: "Средневековье – Новое время (X–XIX вв., развитие фортификационной системы города)",
-          series: "Старый город Люксембурга и его укрепления"
-        },
-        short_description: "Старый город Люксембурга – это исторический центр столицы с узкими улицами, старинной застройкой и живописными видами на долины рек Альзет и Петрюс. Здесь сосредоточены главные архитектурные памятники, мосты и укрепления, отражающие многовековую историю города. Район сочетает атмосферу средневекового города с современной городской жизнью.",
-        short_description_subObjects: {
-          text: "На территории Старого города Люксембурга и его исторических укреплений расположены:",
-          items: [
-            { bold: "Казематы Бок", text: "– система подземных оборонительных туннелей, вырубленных в скале Бок, являющаяся частью бывшей крепостной системы города и одним из ключевых элементов фортификационного наследия Люксембурга." },
-            { bold: "Собор Люксембургской Богоматери", text: "– готический собор с элементами Ренессанса, известный витражами, богатым интерьером и почитаемой статуей Богоматери-Утешительницы." },
-            { bold: "Дворец Великих герцогов", text: "– официальная резиденция великого герцога Люксембурга, построенная в стиле Ренессанса, известная парадными залами, историческими интерьерами и статусом одного из главных символов государства." },
-            { bold: "Аббатство Ноймюнстер", text: "– историческое аббатство XVII века в районе Грунд, преобразованное в современный культурный центр с выставками и мероприятиями." },
-            { bold: "Мост Понт-дю-Шато", text: "– исторический мост в старом городе Люксембурга, входящий в систему бывших городских укреплений и являющийся частью пешеходных маршрутов." },
-            { bold: "Мост Пассерель", text: "– исторический каменный мост в городе Люксембург, соединяющий район старого города с кварталом вокзала и являющийся важной частью городской транспортной и пешеходной сети." },
-            { bold: "Фонтан «Хэммельсмарш»", text: "– бронзовый фонтан «Хэммельсмарш» в центре Люксембурга, изображающий традиционное шествие музыкантов и овец, связанное с ярмаркой Schueberfouer." },
-            { bold: "Скульптурная группа «Акробаты»", text: "– бронзовая скульптурная группа на Place du Théâtre в центре Люксембурга, изображающая скоморохов, музыкантов и акробатов, символизирующих традиции уличного театра." }
-          ]
-        },
-        full_description: {
-          title: "Описание и история",
-          items: [
-            { bold: "Старый город Люксембурга ", text: "– это исторический центр столицы с узкими улицами, старинной застройкой и выразительным рельефом, открывающим виды на долины рек Альзет и Петрюс. Район сформировался вокруг скального плато и на протяжении веков развивался как укреплённый городской центр, где тесно переплетаются архитектура разных эпох и природный ландшафт." },
-            { text: "Сегодня это живой городской район, где историческая среда сочетается с современной жизнью. Здесь расположены смотровые площадки, площади, музеи и прогулочные маршруты, позволяющие увидеть разные уровни города – от верхнего центра до нижних кварталов." },
-            { bold: "История города ", text: "начинается в 963 году, когда граф Зигфрид Люксембургский приобрёл скалу Бок и построил на ней укреплённый замок. Благодаря выгодному стратегическому положению поселение быстро стало важным оборонительным центром региона." },
-            { text: "В последующие века город переходил под власть различных европейских держав, включая Бургундию, Испанию, Францию и Австрийскую монархию. Благодаря своему стратегическому положению Люксембург постоянно укреплялся и развивался как одна из ключевых крепостей Европы. В XVII–XVIII веках Люксембург получил репутацию «Северного Гибралтара», а после Лондонского договора 1867 года значительная часть укреплений была разобрана, что открыло путь к развитию современного города." }
-          ]
-        },
-        tickets_and_entry: {
-          title: "Практическая информация",
-          items: [
-            { bold: "Адрес:", text: "Ville Haute, Luxembourg City, Luxembourg" },
-            { bold: "Лучшее время:", text: "весна-осень, особенно утром или на закате" }
-          ]
-        },
-        interestingFacts: {
-          title: "Интересные факты",
-          isList: true,
-          items: [
-            { text: "Старый город входит в список ЮНЕСКО с 1994 года " },
-            { text: "Под городом находится сеть подземных тоннелей – казематов " },
-            { text: "Общая длина укреплений достигала десятков километров " },
-            { text: "Люксембург долгое время считался одной из самых укреплённых крепостей Европы " }
-          ]
-        },
-        construction_period: "963 год",
-        founder: "Зигфрид Люксембургский",
-        meta: {
-          title: "Старый город Люксембурга – история, достопримечательности и советы туристам",
-          description: "Узнайте всё о Старом городе Люксембурга: история, казематы, лучшие места и практическая информация для туристов.",
-          ogTitle: "Старый город Люксембурга – сердце страны и объект ЮНЕСКО",
-          ogDescription: "Погрузитесь в атмосферу средневекового Люксембурга: крепости, мосты и лучшие виды города.",
-          keywords: "старый город люксембурга, казематы бок, достопримечательности люксембурга, что посмотреть в люксембурге, люксембург центр, люксембург старый город, люксембург укрепления, юнеско люксембург, история люксембурга",
-          ogImage: "https://our-travels.info/foto/Luxembourg/luxembourg_canton/luxembourg_city/old_town/001.jpg"
-        }
-      },
-      uk: {
-        name: "Старе місто Люксембурга",
-        loc: {
-          country: "Люксембург",
-          region: "Кантон Люксембург",
-          district: "Місто обласного значення",
-          city: "Люксембург",
-          cityDistrict: "квартали Ville Haute, Grund, Pfaffenthal"
-        },
-        unesco_status: {
-          included: true,
-          year: 1994,
-          type: "Культурна спадщина",
-          criteria: "iv",
-          epoch: "Середньовіччя – Новий час (X–XIX ст., розвиток фортифікаційної системи міста)",
-          series: "Старе місто Люксембурга та його укріплення"
-        },
-        short_description: "Старе місто Люксембурга – це історичний центр столиці з вузькими вуличками, старовинною забудовою та мальовничими видами на долини річок Альзет і Петрус. Тут зосереджені головні архітектурні пам’ятки, мости та укріплення, що відображають багатовікову історію міста. Район поєднує атмосферу середньовічного міста із сучасним міським життям.",
-        short_description_subObjects: {
-          text: "На території Старого міста Люксембурга та його історичних укріплень розташовані:",
-          items: [
-            { bold: "Каземати Бок", text: "– система підземних оборонних тунелів, вирубаних у скелі Бок, яка є частиною колишньої фортифікаційної системи міста та одним із ключових елементів фортифікаційної спадщини Люксембурга." },
-            { bold: "Собор Люксембурзької Богоматері", text: "– готичний собор з елементами Ренесансу, відомий вітражами, багатим інтер’єром і шанованою статуєю Богородиці-Утішительки." },
-            { bold: "Палац Великого герцога", text: "– офіційна резиденція Великого герцога Люксембургу, збудована в стилі Ренесансу, відома своїми урочистими залами, історичними інтер’єрами та статусом одного з головних символів держави." },
-            { bold: "Абатство Ноймюнстер", text: "– історичне абатство XVII століття в районі Грунд, перетворене на сучасний культурний центр із виставками та заходами." },
-            { bold: "Міст Понт-дю-Шато", text: "– історичний міст у старому місті Люксембургу, який входить до системи колишніх міських укріплень і є частиною пішохідних маршрутів." },
-            { bold: "Міст Пассерель (Passerelle)", text: "– історичний кам’яний міст у місті Люксембург, що з’єднує район старого міста з кварталом вокзалу та є важливою частиною міської транспортної і пішохідної мережі." },
-            { bold: "Бронзовий фонтан «Хеммельсмарш»", text: "у центрі Люксембургу, що зображає традиційну процесію музикантів і овець, пов’язану з ярмарком Schueberfouer." },
-            { bold: "Скульптурна група «Акробати»", text: "– бронзова скульптурна група на Place du Théâtre у центрі Люксембургу, що зображає скоморохів, музикантів і акробатів, які символізують традиції вуличного театру." },
-          ]
-        },
-        full_description: {
-          title: "Опис і історія",
-          items: [
-            { bold: "Старе місто Люксембурга ", text: "– це історичний центр столиці з вузькими вуличками, старовинною забудовою та виразним рельєфом, який відкриває види на долини річок Альзет і Петрус. Район сформувався навколо скелястого плато і протягом століть розвивався як укріплений міський центр, де тісно переплітаються архітектура різних епох і природний ландшафт." },
-            { text: "Сьогодні це живий міський район, де історичне середовище поєднується із сучасним життям. Тут розташовані оглядові майданчики, площі, музеї та прогулянкові маршрути, які дозволяють побачити різні рівні міста – від верхнього центру до нижніх кварталів." },
-            { bold: "Історія міста ", text: "починається у 963 році, коли граф Зігфрід Люксембурзький придбав скелю Бок і побудував на ній укріплений замок. Завдяки вигідному стратегічному положенню поселення швидко стало важливим оборонним центром регіону." },
-            { text: "У наступні століття місто переходило під владу різних європейських держав, включаючи Бургундію, Іспанію, Францію та Австрійську монархію. Завдяки своєму стратегічному положенню Люксембург постійно укріплювався і розвивався як одна з ключових фортець Європи. У XVII–XVIII століттях він отримав назву «Північний Гібралтар», а після Лондонського договору 1867 року значну частину укріплень було демонтовано, що відкрило шлях до розвитку сучасного міста." }
-          ]
-        },
-        tickets_and_entry: {
-          title: "Практична інформація",
-          items: [
-            { bold: "Адреса:", text: "Ville Haute, Luxembourg City, Luxembourg" },
-            { bold: "Найкращий час:", text: "весна–осінь, особливо вранці або на заході сонця" }
-          ]
-        },
-        interestingFacts: {
-          title: "Цікаві факти",
-          isList: true,
-          items: [
-            { text: "Старе місто входить до списку ЮНЕСКО з 1994 року" },
-            { text: "Під містом знаходиться мережа підземних тунелів – казематів" },
-            { text: "Загальна довжина укріплень сягала десятків кілометрів" },
-            { text: "Люксембург тривалий час вважався однією з найбільш укріплених фортець Європи" }
-          ]
-        },
-        construction_period: "963 рік",
-        founder: "Зігфрід Люксембурзький",
-        meta: {
-          title: "Старе місто Люксембурга – історія, пам’ятки та поради туристам",
-          description: "Дізнайтеся все про Старе місто Люксембурга: історія, каземати, найкращі місця та практична інформація для туристів.",
-          ogTitle: "Старе місто Люксембурга – серце країни та об’єкт ЮНЕСКО",
-          ogDescription: "Пориньте в атмосферу середньовічного Люксембурга: фортеці, мости та найкращі види міста.",
-          keywords: "старе місто люксембурга, каземати бок, пам’ятки люксембурга, що подивитися в люксембурзі, люксембург центр, люксембург старе місто, укріплення люксембурга, юнеско люксембург, історія люксембурга",
-          ogImage: "https://our-travels.info/foto/Luxembourg/luxembourg_canton/luxembourg_city/old_town/001.jpg"
-        }
-      },
-      de: {
-        name: "Altstadt Luxemburg",
-        loc: {
-          country: "Luxemburg",
-          region: "Kanton Luxemburg",
-          district: "Stadt mit Kreisstatus",
-          city: "Luxemburg",
-          cityDistrict: "Stadtviertel Ville Haute, Grund, Pfaffenthal"
-        },
-        unesco_status: {
-          included: true,
-          year: 1994,
-          type: "Kulturerbe",
-          criteria: "iv",
-          epoch: "Mittelalter – Neuzeit (10.–19. Jahrhundert, Entwicklung des Festungssystems der Stadt)",
-          series: "Altstadt von Luxemburg und ihre Befestigungen"
-        },
-        short_description: "Die Altstadt Luxemburg ist das historische Zentrum der Hauptstadt mit engen Gassen, historischer Bebauung und malerischen Ausblicken auf die Täler der Flüsse Alzette und Petruss. Hier konzentrieren sich die wichtigsten architektonischen Denkmäler, Brücken und Befestigungsanlagen, die die jahrhundertelange Geschichte der Stadt widerspiegeln. Das Viertel verbindet die Atmosphäre einer mittelalterlichen Stadt mit dem modernen Stadtleben.",
-        short_description_subObjects: {
-          text: "Auf dem Gebiet der Altstadt von Luxemburg und ihrer historischen Befestigungen befinden sich:",
-          items: [
-            { bold: "Bock-Kasematten", text: "– ein System unterirdischer Verteidigungstunnel, die in den Bockfelsen gehauen wurden, das Teil des ehemaligen Festungssystems der Stadt ist und eines der wichtigsten Elemente des fortifikatorischen Erbes Luxemburgs darstellt." },
-            { bold: "Kathedrale Notre-Dame Luxemburg", text: "– eine gotische Kathedrale mit Renaissance-Elementen, bekannt für ihre Glasfenster, ihr reiches Interieur und die verehrte Statue der Trösterin der Betrübten." },
-            { bold: "Großherzoglicher Palast", text: "– offizielle Residenz des Großherzogs von Luxemburg, im Renaissance-Stil erbaut, bekannt für seine prunkvollen Säle, historischen Innenräume und seinen Status als eines der wichtigsten Wahrzeichen des Landes." },
-            { bold: "Abtei Neumünster", text: "– eine historische Abtei aus dem 17. Jahrhundert im Stadtteil Grund, die in ein modernes Kulturzentrum mit Ausstellungen und Veranstaltungen umgewandelt wurde." },
-            { bold: "Pont du Château", text: "– eine historische Brücke in der Altstadt von Luxemburg, die Teil der ehemaligen Stadtbefestigungen ist und zu den Fußgängerwegen gehört." },
-            { bold: "Passerelle-Brücke", text: "– historische Steinbrücke in der Stadt Luxemburg, die den Altstadtbereich mit dem Bahnhofsviertel verbindet und ein wichtiger Bestandteil des städtischen Verkehrs- und Fußgängernetzes ist." },
-            { bold: "Brunnen «Hämmelsmarsch»", text: " im Zentrum von Luxemburg stellt eine traditionelle Prozession von Musikern und Schafen dar, die mit der Schueberfouer verbunden ist." },
-            { bold: "Skulpturengruppe «Akrobaten»", text: "– eine bronzene Skulpturengruppe auf dem Place du Théâtre im Zentrum von Luxemburg, die Gaukler, Musiker und Akrobaten darstellt und die Traditionen des Straßentheaters symbolisiert." },
-          ]
-        },
-        full_description: {
-          title: "Beschreibung und Geschichte",
-          items: [
-            { bold: "Die Altstadt Luxemburg ", text: "ist das historische Zentrum der Hauptstadt mit engen Gassen, historischer Bebauung und einer ausgeprägten Topografie mit Blick auf die Täler der Flüsse Alzette und Petruss. Das Gebiet entwickelte sich rund um ein Felsplateau und wuchs über Jahrhunderte zu einem befestigten städtischen Zentrum, in dem sich Architektur verschiedener Epochen und die natürliche Landschaft eng miteinander verbinden." },
-            { text: "Heute ist es ein lebendiges Stadtviertel, in dem historische Umgebung und modernes Leben miteinander verschmelzen. Es gibt Aussichtspunkte, Plätze, Museen und Spazierwege, die es ermöglichen, verschiedene Ebenen der Stadt zu erleben – vom oberen Zentrum bis zu den unteren Vierteln." },
-            { bold: "Die Geschichte der Stadt ", text: "beginnt im Jahr 963, als Graf Siegfried von Luxemburg den Felsen Bock erwarb und dort eine befestigte Burg errichten ließ. Aufgrund der strategisch günstigen Lage entwickelte sich die Siedlung schnell zu einem wichtigen Verteidigungszentrum der Region." },
-            { text: "In den folgenden Jahrhunderten stand die Stadt unter der Herrschaft verschiedener europäischer Mächte, darunter Burgund, Spanien, Frankreich und die österreichische Monarchie. Aufgrund ihrer strategischen Lage wurde Luxemburg kontinuierlich befestigt und entwickelte sich zu einer der bedeutendsten Festungen Europas. Im 17. und 18. Jahrhundert erhielt es den Beinamen „Gibraltar des Nordens“, und nach dem Londoner Vertrag von 1867 wurden große Teile der Befestigungen abgetragen, was den Weg für die moderne Stadtentwicklung öffnete." }
-          ]
-        },
-        tickets_and_entry: {
-          title: "Praktische Informationen",
-          items: [
-            { bold: "Adresse:", text: "Ville Haute, Luxembourg City, Luxembourg" },
-            { bold: "Beste Zeit:", text: "Frühling–Herbst, besonders morgens oder bei Sonnenuntergang" }
-          ]
-        },
-        interestingFacts: {
-          title: "Interessante Fakten",
-          isList: true,
-          items: [
-            { text: "Die Altstadt gehört seit 1994 zum UNESCO-Welterbe" },
-            { text: "Unter der Stadt befindet sich ein Netzwerk aus unterirdischen Tunneln – den Kasematten" },
-            { text: "Die Gesamtlänge der Befestigungen betrug mehrere Dutzend Kilometer" },
-            { text: "Luxemburg galt lange Zeit als eine der am stärksten befestigten Festungen Europas" }
-          ]
-        },
-        construction_period: "963",
-        founder: "Siegfried von Luxemburg",
-        meta: {
-          title: "Altstadt von Luxemburg – Geschichte, Sehenswürdigkeiten und Reisetipps",
-          description: "Erfahren Sie alles über die Altstadt von Luxemburg: Geschichte, Kasematten, Sehenswürdigkeiten und praktische Informationen für Besucher.",
-          ogTitle: "Altstadt von Luxemburg – Herz des Landes und UNESCO-Welterbe",
-          ogDescription: "Tauchen Sie ein in die mittelalterliche Atmosphäre Luxemburgs: Festungen, Brücken und beeindruckende Ausblicke.",
-          keywords: "altstadt luxemburg, kasematten bock, sehenswürdigkeiten luxemburg, luxemburg altstadt, luxemburg stadtzentrum, festungen luxemburg, unesco luxemburg, geschichte luxemburg",
-          ogImage: "https://our-travels.info/foto/Luxembourg/luxembourg_canton/luxembourg_city/old_town/001.jpg"
-        }
-      }
-    }
-  },
+ 
+  //       short_description_subObjects: {
+  //         text: "На территории Старого города Люксембурга и его исторических укреплений расположены:",
+  //         items: [
+  //           { bold: "Казематы Бок", text: "– система подземных оборонительных туннелей, вырубленных в скале Бок, являющаяся частью бывшей крепостной системы города и одним из ключевых элементов фортификационного наследия Люксембурга." },
+  //           { bold: "Собор Люксембургской Богоматери", text: "– готический собор с элементами Ренессанса, известный витражами, богатым интерьером и почитаемой статуей Богоматери-Утешительницы." },
+  //           { bold: "Дворец Великих герцогов", text: "– официальная резиденция великого герцога Люксембурга, построенная в стиле Ренессанса, известная парадными залами, историческими интерьерами и статусом одного из главных символов государства." },
+  //           { bold: "Аббатство Ноймюнстер", text: "– историческое аббатство XVII века в районе Грунд, преобразованное в современный культурный центр с выставками и мероприятиями." },
+  //           { bold: "Мост Понт-дю-Шато", text: "– исторический мост в старом городе Люксембурга, входящий в систему бывших городских укреплений и являющийся частью пешеходных маршрутов." },
+  //           { bold: "Мост Пассерель", text: "– исторический каменный мост в городе Люксембург, соединяющий район старого города с кварталом вокзала и являющийся важной частью городской транспортной и пешеходной сети." },
+  //           { bold: "Фонтан «Хэммельсмарш»", text: "– бронзовый фонтан «Хэммельсмарш» в центре Люксембурга, изображающий традиционное шествие музыкантов и овец, связанное с ярмаркой Schueberfouer." },
+  //           { bold: "Скульптурная группа «Акробаты»", text: "– бронзовая скульптурная группа на Place du Théâtre в центре Люксембурга, изображающая скоморохов, музыкантов и акробатов, символизирующих традиции уличного театра." }
+  //         ]
+  //       },
+
   {
     id: "casemates_du_bock_luxembourg",
     type: ["historical_building"], rating: "top",
     path: "casemates_du_bock_luxembourg",
     countryPath: "luxembourg", regionPath: "luxembourg_canton", districtPath: "city", cityPath: "luxembourg_city",
-    hiddenFromList: true, showMore: true,
+    // hiddenFromList: true, showMore: true,
     fotoCard: "Luxembourg/luxembourg_canton/luxembourg_city/old_town/casemates/001.jpg",
     coord: { lat: 49.611471586964306, lng: 6.136216298265006 },
     translations: {
@@ -715,7 +516,7 @@ const datas = [
     type: ["cathedral"], rating: "top",
     path: "notre_dame_cathedral_luxembourg",
     countryPath: "luxembourg", regionPath: "luxembourg_canton", districtPath: "city", cityPath: "luxembourg_city",
-    hiddenFromList: true, showMore: true,
+    // hiddenFromList: true, showMore: true,
     fotoCard: "Luxembourg/luxembourg_canton/luxembourg_city/old_town/notre_dame_cathedral/001.jpg",
     coord: { lat: 49.60972, lng: 6.13139 },
     translations: {
@@ -885,7 +686,7 @@ const datas = [
     type: ["cathedral"], rating: "popular",
     path: "abbey_neumunster_luxembourg",
     countryPath: "luxembourg", regionPath: "luxembourg_canton", districtPath: "city", cityPath: "luxembourg_city",
-    hiddenFromList: true, showMore: true,
+    // hiddenFromList: true, showMore: true,
     fotoCard: "Luxembourg/luxembourg_canton/luxembourg_city/old_town/abbey_neumunster/001.jpg",
     coord: { lat: 49.61083, lng: 6.13699 },
     translations: {
@@ -1599,7 +1400,7 @@ const datas = [
     type: ["palace_or_castle"], rating: "top",
     path: "grand_ducal_palace_luxembourg",
     countryPath: "luxembourg", regionPath: "luxembourg_canton", districtPath: "city", cityPath: "luxembourg_city",
-    hiddenFromList: true, showMore: true,
+    // hiddenFromList: true, showMore: true,
     fotoCard: "Luxembourg/luxembourg_canton/luxembourg_city/old_town/grand_ducal_palace/001.jpg",
     coord: { lat: 49.61095642099769, lng: 6.1328645037457825 },
     translations: {
@@ -1784,7 +1585,7 @@ const datas = [
     type: ["monument_or_fountain"], rating: "popular",
     path: "hammelsmarsch_luxembourg",
     countryPath: "luxembourg", regionPath: "luxembourg_canton", districtPath: "city", cityPath: "luxembourg_city",
-    hiddenFromList: true, showMore: true,
+    // hiddenFromList: true, showMore: true,
     fotoCard: "Luxembourg/luxembourg_canton/luxembourg_city/old_town/hammelsmarsch/001.jpg",
     coord: { lat: 49.61187634688446, lng: 6.131175421182861 },
     translations: {
@@ -1927,7 +1728,7 @@ const datas = [
     type: ["monument_or_fountain"], rating: "local",
     path: "acrobats_luxembourg",
     countryPath: "luxembourg", regionPath: "luxembourg_canton", districtPath: "city", cityPath: "luxembourg_city",
-    hiddenFromList: true, showMore: true,
+    // hiddenFromList: true, showMore: true,
     fotoCard: "Luxembourg/luxembourg_canton/luxembourg_city/old_town/acrobats/001.jpg",
     coord: { lat: 49.612820820337646, lng: 6.130877371087807 },
     translations: {

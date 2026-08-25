@@ -31,8 +31,8 @@ const datas =
     hochsauerland: { id: 291, parent_id: 60, ru: 'Район Хохзауэрланд', de: 'Hochsauerlandkreis', uk: 'Район Хохзауэрланд' },
     mettmann: { id: 372, parent_id: 62, ru: 'Район Меттман', de: 'Kreis Mettmann', uk: 'Район Меттман' },
     rhein_erft: { id: 160, parent_id: 63, ru: 'Район Рейн-Эрфт', de: 'Rhein-Erft-Kreis', uk: 'Район Рейн-Ерфт' },
-    aachen: { id: 162, parent_id: 63,ru: 'Район Аахен', de: 'Kreis Aachen', uk: 'Район Аахен' },
-    rhein_sieg: { id: 166, parent_id: 63,ru: 'Район Рейн-Зиг', de: 'Rhein-Sieg-Kreis', uk: 'Район Рейн-Зиг' },
+    aachen: { id: 162, parent_id: 63, ru: 'Район Аахен', de: 'Kreis Aachen', uk: 'Район Аахен' },
+    rhein_sieg: { id: 166, parent_id: 63, ru: 'Район Рейн-Зиг', de: 'Rhein-Sieg-Kreis', uk: 'Район Рейн-Зиг' },
     recklinghausen: { id: 808, parent_id: 64, ru: 'Район Реклингхаузен', de: 'Kreis Recklinghausen', uk: 'Район Реклінггаузен' },
     steinfurt: { id: 819, parent_id: 64, ru: 'Район Штайнфурт', de: 'Kreis Steinfurt', uk: 'Район Штайнфурт' },
     borken: { id: 844, parent_id: 64, ru: 'Район Боркен', de: 'Kreis Borken', uk: 'Район Боркен' },
@@ -51,7 +51,7 @@ const datas =
     iserlohn: { id: 296, ru: 'Город Изерлон', de: 'Stadt Iserlohn', uk: 'Місто Ізерлон' },
     luedenscheid: { id: 298, ru: 'Город Люденшайд', de: 'Stadt Lüdenscheid', uk: 'Місто Люденшайд' },
     altena: { id: 293, ru: 'Город Альтена', de: 'Stadt Altena', uk: 'Місто Альтена' },
-    
+
     velbert: { id: 410, ru: 'Город Фельберт', de: 'Stadt Velbert', uk: 'Місто Фельберт' },
 
     dorsten: { id: 811, ru: 'Город Дорстен', de: 'Stadt Dorsten', uk: 'Місто Дорстен' },
@@ -64,7 +64,7 @@ const datas =
     konigswinter: { id: 247, ru: 'Город Кёнигсвинтер', de: 'Stadt Königswinter', uk: 'Місто Кенігсвінтер' },
     lohmar: { id: 248, ru: 'Город Ломар', de: 'Stadt Lohmar', uk: 'Місто Ломар' },
 
-  
+
     //luxembourg
     luxembourg_city: { id: 146, ru: 'Город Люксембург', de: 'Stadt Luxemburg', uk: 'Місто Люксембург' },
     ansembourg: { id: 159, ru: 'Деревня Ансембург', de: 'Dorf Ansembourg', uk: 'Село Ансембург' },
@@ -155,6 +155,10 @@ const datas =
     trier_olewig: { id: 805, parent: 91, ru: 'округ Олевиг', de: 'Ortsbezirk Olewig', uk: 'округ Олевіг' },
     trier_sud: { id: 807, parent: 91, ru: 'округ Южный Трир', de: 'Ortsbezirk Trier-Süd', uk: 'округ Південний Трір' },
     trier_nord: { id: 896, parent: 91, ru: 'округ Северный Трир', de: 'Ortsbezirk Trier-Nord', uk: 'округ Північний Трір' },
+
+    luxembourg_ville_haute: { id: 898, parent: 146, ru: 'квартал Верхний город Люксембурга', de: 'Stadtteil Ville Haute', uk: 'квартал Верхнє місто Люксембурга' },
+    luxembourg_grund: { id: 899, parent: 146, ru: 'квартал Грунд', de: 'Stadtteil Grund', uk: 'квартал Грунд' },
+    luxembourg_pfaffenthal: { id: 900, parent: 146, ru: 'квартал Пфаффенталь', de: 'Stadtteil Pfaffenthal', uk: 'квартал Пфаффенталь' },
 
     sumy_zarichnyi: { id: 723, parent: 125, ru: 'Заречный район', de: 'Zaritschnyj-Bezirk', uk: 'Зарічний район' },
     sumy_kowpak: { id: 795, parent: 125, ru: 'Ковпаковский район', de: 'Kowpakivskyj-Bezirk', uk: 'Ковпаківський район' },
@@ -367,7 +371,7 @@ const datas =
     koerich_castle: { id: 752, ru: 'Замок Керих', de: 'Burg Koerich', uk: 'Замок Керіх' }, // routes: 'seven_castles'
     musee_drai_eechelen_luxembourg: { ru: 'Музей «Три жёлудя»', de: 'Museum „Drei Eicheln“', uk: 'Музей «Три жолуді»' },
     fort_thungen_luxembourg: { ru: 'Форт Тюнген', de: 'Fort Thüngen', uk: 'Форт Тюнген' },
-    old_town_luxembourg: { ru: 'Старый город Люксембурга', de: 'Altstadt Luxemburg', uk: 'Старе місто Люксембурга' },
+    old_town_luxembourg: { id: 897, ru: 'Старый город Люксембурга', de: 'Altstadt Luxemburg', uk: 'Старе місто Люксембурга' },
     casemates_du_bock_luxembourg: { ru: 'Казематы Бок', de: 'Bock-Kasematten', uk: 'Каземати Бок' },
     abbey_neumunster_luxembourg: { ru: 'Абатство Неймюнстер', de: 'Abtei Neumünster', uk: 'Абатство Неймюнстер' },
     pont_du_chateau_luxembourg: { ru: 'Мост Понт-дю-Шато', de: 'Pont du Château Brücke', uk: 'Міст Понт-дю-Шато' },
@@ -413,15 +417,3 @@ const datas =
 }
 
 export default datas
-
-// Arnsberg — 27
-// Düsseldorf — 3
-// Köln — 57
-// Aachen — 6
-// Rhein-Erft-Kreis — 11
-// Rhein-Sieg-Kreis — 10
-// Rheinland-Pfalz / Trier, Saarburg, Koblenz — 22
-// Luxembourg — 15
-// Ukraine / Sumy — 4
-
-// Итого: 155.
