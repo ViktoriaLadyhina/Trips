@@ -7,7 +7,9 @@ export const cityLocations = {
     koblenz: { subRegionPath: null },
 
     // Nordrhein-Westfalen
+    bonn: { subRegionPath: null },
     dortmund: { subRegionPath: null },
+    koln_city: { subRegionPath: null },
 
     sundern: { subRegionPath: "hochsauerland" },
 
@@ -19,9 +21,11 @@ export const cityLocations = {
 
     dorsten: { subRegionPath: "recklinghausen" },
 
-    koln_city: { subRegionPath: null },
+
     monschau: { subRegionPath: "aachen" },
+
     konigswinter: { subRegionPath: "rhein_sieg" },
+    
     lohmar: { subRegionPath: "rhein_sieg" },
     bruhl: { subRegionPath: "rhein_erft" },
     frechen: { subRegionPath: "rhein_erft" },

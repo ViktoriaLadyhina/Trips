@@ -42,6 +42,21 @@ const datas =
   },
   cities: {
     // Germany
+    koblenz: { id: 89, ru: 'Город Кобленц', de: 'Stadt Koblenz', uk: 'Місто Кобленц' },
+    trier: { id: 91, ru: 'Город Трир', de: 'Stadt Trier', uk: 'Місто Трір' },
+    saarburg_city: { id: 618, ru: 'Город Саарбург', de: 'Stadt Saarburg', uk: 'Місто Саарбург' },
+
+    dortmund: { id: 72, ru: 'Город Дортмунд', de: 'Stadt Dortmund', uk: 'Місто Дортмунд' },
+    sundern: { id: 354, ru: 'Город Зундерн', de: 'Stadt Sundern', uk: 'Місто Зундерн' },
+    iserlohn: { id: 296, ru: 'Город Изерлон', de: 'Stadt Iserlohn', uk: 'Місто Ізерлон' },
+    luedenscheid: { id: 298, ru: 'Город Люденшайд', de: 'Stadt Lüdenscheid', uk: 'Місто Люденшайд' },
+    altena: { id: 293, ru: 'Город Альтена', de: 'Stadt Altena', uk: 'Місто Альтена' },
+    
+    velbert: { id: 410, ru: 'Город Фельберт', de: 'Stadt Velbert', uk: 'Місто Фельберт' },
+
+    dorsten: { id: 811, ru: 'Город Дорстен', de: 'Stadt Dorsten', uk: 'Місто Дорстен' },
+
+    bonn: { id: 67, ru: 'Город Бонн', de: 'Stadt Bonn', uk: 'Місто Бонн' },
     koln_city: { id: 76, ru: 'Город Кёльн', de: 'Stadt Köln', uk: 'Місто Кельн' },
     monschau: { id: 185, ru: 'Город Моншау', de: 'Stadt Monschau', uk: 'Місто Моншау' },
     bruhl: { id: 171, ru: 'Город Брюль', de: 'Stadt Brühl', uk: 'Місто Брюль' },
@@ -49,20 +64,7 @@ const datas =
     konigswinter: { id: 247, ru: 'Город Кёнигсвинтер', de: 'Stadt Königswinter', uk: 'Місто Кенігсвінтер' },
     lohmar: { id: 248, ru: 'Город Ломар', de: 'Stadt Lohmar', uk: 'Місто Ломар' },
 
-    velbert: { id: 410, ru: 'Город Фельберт', de: 'Stadt Velbert', uk: 'Місто Фельберт' },
-
-    dorsten: { id: 811, ru: 'Город Дорстен', de: 'Stadt Dorsten', uk: 'Місто Дорстен' },
-
-    dortmund: { id: 72, ru: 'Город Дортмунд', de: 'Stadt Dortmund', uk: 'Місто Дортмунд' },
-    luedenscheid: { id: 298, ru: 'Город Люденшайд', de: 'Stadt Lüdenscheid', uk: 'Місто Люденшайд' },
-    altena: { id: 293, ru: 'Город Альтена', de: 'Stadt Altena', uk: 'Місто Альтена' },
-    iserlohn: { id: 296, ru: 'Город Изерлон', de: 'Stadt Iserlohn', uk: 'Місто Ізерлон' },
-    sundern: { id: 354, ru: 'Город Зундерн', de: 'Stadt Sundern', uk: 'Місто Зундерн' },
-
-    koblenz: { id: 89, ru: 'Город Кобленц', de: 'Stadt Koblenz', uk: 'Місто Кобленц' },
-    trier: { id: 91, ru: 'Город Трир', de: 'Stadt Trier', uk: 'Місто Трір' },
-    saarburg_city: { id: 618, ru: 'Город Саарбург', de: 'Stadt Saarburg', uk: 'Місто Саарбург' },
-
+  
     //luxembourg
     luxembourg_city: { id: 146, ru: 'Город Люксембург', de: 'Stadt Luxemburg', uk: 'Місто Люксембург' },
     ansembourg: { id: 159, ru: 'Деревня Ансембург', de: 'Dorf Ansembourg', uk: 'Село Ансембург' },

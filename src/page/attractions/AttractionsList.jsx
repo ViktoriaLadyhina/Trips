@@ -37,14 +37,14 @@ const AttractionsList = () => {
 
     const [showAll, setShowAll] = useState(false);
 
-const [filters, setFilters] = useState({
-    type: 'all',
-    feature: ['all'],
-    rating: 'all',
-    unesco: 'all',
-    sort: 'rating',
-    status: ['active', 'partial'],
-});
+    const [filters, setFilters] = useState({
+        type: 'all',
+        feature: ['all'],
+        rating: 'all',
+        unesco: 'all',
+        sort: 'rating',
+        status: ['active', 'partial'],
+    });
 
     const SkeletonList = [
         { type: "title" },
@@ -65,41 +65,41 @@ const [filters, setFilters] = useState({
     const mapAttractions = baseFiltered;
 
     const hiddenFromListIds = useMemo(() => {
-    const ids = new Set();
+        const ids = new Set();
 
-    (attractions || []).forEach(attr => {
-        (attr.subObjects || []).forEach(subObject => {
-            if (subObject?.id) {
-                ids.add(subObject.id);
-            }
+        (attractions || []).forEach(attr => {
+            (attr.subObjects || []).forEach(subObject => {
+                if (subObject?.id) {
+                    ids.add(subObject.id);
+                }
+            });
         });
-    });
 
-    return ids;
-}, [attractions]);
+        return ids;
+    }, [attractions]);
 
-  const listAttractions = useMemo(() => {
-    return baseFiltered.filter(attr => {
+    const listAttractions = useMemo(() => {
+        return baseFiltered.filter(attr => {
 
-        const hidden =
-            attr.hiddenFromList || hiddenFromListIds.has(attr.id);
+            const hidden =
+                attr.hiddenFromList || hiddenFromListIds.has(attr.id);
 
-        const specificFilterSelected =
-            filters.type !== 'all' ||
-            filters.unesco === 'yes';
+            const specificFilterSelected =
+                filters.type !== 'all' ||
+                filters.unesco === 'yes';
 
-        if (hidden && !specificFilterSelected) {
-            return false;
-        }
+            if (hidden && !specificFilterSelected) {
+                return false;
+            }
 
-        return true;
-    });
-}, [
-    baseFiltered,
-    hiddenFromListIds,
-    filters.type,
-    filters.unesco
-]);
+            return true;
+        });
+    }, [
+        baseFiltered,
+        hiddenFromListIds,
+        filters.type,
+        filters.unesco
+    ]);
 
     //сортировка
     const sortedAttractions = useMemo(() => {
@@ -181,13 +181,19 @@ const [filters, setFilters] = useState({
         districtPath && districtPath !== "city" && datas.districts[districtPath]?.[lang]
             ? { label: datas.districts[districtPath][lang], path: `/${countryPath}/${regionPath}/${districtPath}` }
             : null,
-        subRegion ? { label: subRegion[lang] } : null,
+        subRegion && districtPath !== undefined && districtPath !== 'city'
+            ? { label: subRegion[lang] }
+            : null,
         city ? { label: city[lang], path: `/${countryPath}/${regionPath}/${districtPath}/${cityPath}` }
             : null,
         { label: `${attractionsTitle[lang]} – ${locationName}` }
     ].filter(Boolean);
 
-    
+    console.log('SUBREGION DEBUG:', {
+        districtPath,
+        subRegionPath,
+        firstWithSubRegion: attractions.find(attr => attr.subRegionPath)
+    });
     return (
         <div className="attractions">
             <Helmet>
