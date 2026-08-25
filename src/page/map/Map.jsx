@@ -96,13 +96,12 @@ const Map = () => {
                           <li><Link to="/germany/rheinland_pfalz/city/trier/attractions/basilica_of_constantine_trier">{t.attractions.basilica_of_constantine_trier[lang]}</Link></li>
                           <li><Link to="/germany/rheinland_pfalz/city/trier/attractions/kurfuerstliches_palais_trier">{t.attractions.kurfuerstliches_palais_trier[lang]}</Link></li>
                           <li><Link to="/germany/rheinland_pfalz/city/trier/attractions/basilikaStPaulinus_trier">{t.attractions.basilikaStPaulinus_trier[lang]}</Link></li>
-                          <li><Link to="/germany/rheinland_pfalz/city/trier/attractions/roman_bridge_trier">{t.attractions.roman_bridge_trier[lang]}</Link></li>
                         </ul>
                       </li>
                       <li><Link to="/germany/rheinland_pfalz/city/trier/attractions/kaiserthermen_trier">{t.attractions.kaiserthermen_trier[lang]}</Link></li>
                       <li><Link to="/germany/rheinland_pfalz/city/trier/attractions/amphitheater_trier">{t.attractions.amphitheater_trier[lang]}</Link></li>
                       <li><Link to="/germany/rheinland_pfalz/city/trier/attractions/barbarathermen_trier">{t.attractions.barbarathermen_trier[lang]}</Link></li>
-
+                      <li><Link to="/germany/rheinland_pfalz/city/trier/attractions/roman_bridge_trier">{t.attractions.roman_bridge_trier[lang]}</Link></li>
                     </ul>
                   </li>
 
@@ -200,24 +199,7 @@ const Map = () => {
                         </ul>
                       </li>
                     </ul>
-                  </li>
-
-                  {/* Округ Münster */}
-                  <li><Link to="/germany/nrw/munster">{t.districts.munster[lang]}</Link>
-                    <ul>
-                      {/* Край Recklinghausen */}
-                      <li><span>{t.subRegions.recklinghausen[lang]}</span>
-                        <ul>
-                          <li><Link to="/germany/nrw/munster/dorsten">{t.cities.dorsten[lang]}</Link>
-                            <ul>
-                              <li></li>
-                            </ul>
-                          </li>
-                        </ul>
-                      </li>
-
-                    </ul>
-                  </li>                  
+                  </li>               
 
                   {/* Округ Düsseldorf */}
                   <li><Link to="/germany/nrw/dusseldorf">{t.districts.dusseldorf[lang]}</Link>
@@ -237,9 +219,24 @@ const Map = () => {
                           </li>
                         </ul>
                       </li>
-
                     </ul>
                   </li>
+
+                  {/* Округ Münster */}
+                  <li><Link to="/germany/nrw/munster">{t.districts.munster[lang]}</Link>
+                    <ul>
+                      {/* Край Recklinghausen */}
+                      <li><span>{t.subRegions.recklinghausen[lang]}</span>
+                        <ul>
+                          <li><Link to="/germany/nrw/munster/dorsten">{t.cities.dorsten[lang]}</Link>
+                            <ul>
+                              <li><Link to="/germany/nrw/munster/dorsten/attractions/lembeck_dorsten">{t.attractions.lembeck_dorsten[lang]}</Link></li>
+                            </ul>
+                          </li>
+                        </ul>
+                      </li>
+                    </ul>
+                  </li>   
 
                   {/* Округ Köln */}
                   <li><Link to="/germany/nrw/koln">{t.districts.koln[lang]}</Link>
