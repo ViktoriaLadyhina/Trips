@@ -539,17 +539,6 @@ export const Fotos = {
   },
 
   rheinland_pfalz: {
-    trier: {
-      kurfuerstliches_palais_trier: [
-        { path: "Germany/rheinland-pfalz/trier-city/altstadt/kurfuerstliches_palais/001.jpg", title: { ru: "Избирательский (курфюрстский) дворец (фото взято с интернета)", uk: "Виборчий (курфюрстський) палац (фото взято з Інтернету)", de: "Kurfürstliches Palais (Foto aus dem Internet)" } },
-        { path: "Germany/rheinland-pfalz/trier-city/altstadt/kurfuerstliches_palais/003.jpg", title: { ru: "Избирательский (курфюрстский) дворец, 2024", uk: "Виборчий (курфюрстський) палац, 2024", de: "Kurfürstliches Palais, 2024" } },
-        { path: "Germany/rheinland-pfalz/trier-city/altstadt/kurfuerstliches_palais/004.jpg", title: { ru: "Избирательский (курфюрстский) дворец, 2024", uk: "Виборчий (курфюрстський) палац, 2024", de: "Kurfürstliches Palais, 2024" } },
-        { path: "Germany/rheinland-pfalz/trier-city/altstadt/kurfuerstliches_palais/005.jpg", title: { ru: "Избирательский (курфюрстский) дворец, 2024", uk: "Виборчий (курфюрстський) палац, 2024", de: "Kurfürstliches Palais, 2024" } },
-        { path: "Germany/rheinland-pfalz/trier-city/altstadt/kurfuerstliches_palais/006.jpg", title: { ru: "Избирательский (курфюрстский) дворец, 2024", uk: "Виборчий (курфюрстський) палац, 2024", de: "Kurfürstliches Palais, 2024" } },
-        { path: "Germany/rheinland-pfalz/trier-city/altstadt/kurfuerstliches_palais/007.jpg", title: { ru: "Избирательский (курфюрстский) дворец, 2024", uk: "Виборчий (курфюрстський) палац, 2024", de: "Kurfürstliches Palais, 2024" } },
-        { path: "Germany/rheinland-pfalz/trier-city/altstadt/kurfuerstliches_palais/008.jpg", title: { ru: "Избирательский (курфюрстский) дворец, 2024", uk: "Виборчий (курфюрстський) палац, 2024", de: "Kurfürstliches Palais, 2024" } },
-      ],
-    },
     saarburg: {
       altstadt_saarburg: [
         { path: "Germany/rheinland-pfalz/trier_saarburg/saarburg_kell/saarburg/altstadt/001.jpg", title: { ru: "Старый город Саарбурга, 2024", uk: "Старе місто Саарбурга, 2024", de: "Altstadt Saarburg, 2024" } },

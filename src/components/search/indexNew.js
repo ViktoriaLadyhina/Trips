@@ -6,7 +6,6 @@ const loaders = {
         },
 
         rheinland_pfalz: {
-            attractions: () => import('../../datas/germany/rheinland_pfalz-attractions.js').then(m => m.default),
             events: () => import('../../datas/germany/rheinland_pfalz-events.js').then(m => m.default),
         }
     },
@@ -25,7 +24,6 @@ const searchIndexNew = {
       events: { type: "event", loaders: loaders.germany.nrw.events },
     },
     rheinland_pfalz: {
-      attractions: { type: "attraction", loaders: loaders.germany.rheinland_pfalz.attractions },
       events: { type: "event", loaders: loaders.germany.rheinland_pfalz.events },
     }
   },
