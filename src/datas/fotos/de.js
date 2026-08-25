@@ -540,9 +540,6 @@ export const Fotos = {
 
   rheinland_pfalz: {
     trier: {
-      basilikaStPaulinus_trier: [
-        { path: "Germany/rheinland-pfalz/trier-city/basilikaStPaulinus/001.jpg", title: { ru: "Базилика Святого Паулина (фото взято с интернета)", uk: "Базиліка Святого Пауліна (фото взято з Інтернету)", de: "Basilika St. Paulinus (Foto aus dem Internet)" } },
-      ],
       kurfuerstliches_palais_trier: [
         { path: "Germany/rheinland-pfalz/trier-city/altstadt/kurfuerstliches_palais/001.jpg", title: { ru: "Избирательский (курфюрстский) дворец (фото взято с интернета)", uk: "Виборчий (курфюрстський) палац (фото взято з Інтернету)", de: "Kurfürstliches Palais (Foto aus dem Internet)" } },
         { path: "Germany/rheinland-pfalz/trier-city/altstadt/kurfuerstliches_palais/003.jpg", title: { ru: "Избирательский (курфюрстский) дворец, 2024", uk: "Виборчий (курфюрстський) палац, 2024", de: "Kurfürstliches Palais, 2024" } },

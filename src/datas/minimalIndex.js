@@ -152,6 +152,7 @@ const datas =
     trier_mitte_gartenfeld: { id: 791, parent: 91, ru: 'округ Центр / Гартенфельд', de: 'Ortsbezirk Trier-Mitte/Gartenfeld', uk: 'округ Центр / Гартенфельд' },
     trier_olewig: { id: 805, parent: 91, ru: 'округ Олевиг', de: 'Ortsbezirk Olewig', uk: 'округ Олевіг' },
     trier_sud: { id: 807, parent: 91, ru: 'округ Южный Трир', de: 'Ortsbezirk Trier-Süd', uk: 'округ Південний Трір' },
+    trier_nord: { id: 896, parent: 91, ru: 'округ Северный Трир', de: 'Ortsbezirk Trier-Nord', uk: 'округ Північний Трір' },
 
     sumy_zarichnyi: { id: 723, parent: 125, ru: 'Заречный район', de: 'Zaritschnyj-Bezirk', uk: 'Зарічний район' },
     sumy_kowpak: { id: 795, parent: 125, ru: 'Ковпаковский район', de: 'Kowpakivskyj-Bezirk', uk: 'Ковпаківський район' },
@@ -322,7 +323,7 @@ const datas =
     barbarathermen_trier: { id: 892, ru: 'Барбарские термы', de: 'Barbarathermen', uk: 'Барбарські терми' },
     roman_bridge_trier: { id: 799, ru: 'Римский мост', de: 'Römerbrücke', uk: 'Римський міст' },
     cathedral_trier: { id: 797, ru: 'Кафедральний собор', de: 'Trierer Dom', uk: 'Кафедральний собор' },
-    basilikaStPaulinus_trier: { ru: 'Базилика Святого Паулина', de: 'Basilika St. Paulinus', uk: 'Базиліка Святого Пауліна' },
+    basilikaStPaulinus_trier: { id: 895, ru: 'Базилика Святого Паулина', de: 'Basilika St. Paulinus', uk: 'Базиліка Святого Пауліна' },
     liebfrauenkirche_trier: { id: 801, ru: 'Церковь Богоматери', de: 'Liebfrauenkirche', uk: 'Церква Богородиці' },
     altstadt_trier: { id: 792, ru: 'Старый город Трира', de: 'Altstadt Trier', uk: 'Старе місто Тріра' },
     kurfuerstliches_palais_trier: { ru: 'Избирательский (курфюрстский) дворец', de: 'Kurfürstliches Palais', uk: 'Виборчий (курфюрстський) палац' },
