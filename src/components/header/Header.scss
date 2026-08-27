@@ -1,99 +1,61 @@
 @use '../../styles/variables' as *;
 
 .header {
-  padding: 20px;
+  padding: 10px 0 20px;
   display: flex;
   flex-direction: column;
   align-items: center;
 
-  &__title {
-    @include h1();
-    margin: 20px 0;
-    text-align: center;
+  &__topMenu {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 8px 10px;
+
+    &-lang {
+      display: flex;
+      align-items: center;
+
+      span {
+        @include body-text();
+        padding-right: 10px;
+      }
+    }
   }
 
   &__image {
     width: 100%;
-    max-width: 1600px;
-    position: relative;
-    margin: 20px 0;
+    border-radius: 0 0 10px 10px;
 
     img {
       width: 100%;
-      height: auto; 
+      height: auto;
       display: block;
     }
-    
-    [data-theme='dark'] &::after {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: rgba(0, 0, 0, 0.4); 
-    pointer-events: none; 
-    border-radius: inherit;
-  }
   }
 
-  &__menu {
+  &__lowerMenu {
+    width: 100%;
     display: flex;
-    align-items: center;
-    justify-content: space-between;
-    width: 100%;
-    max-width: 1600px; // ограничиваем ширину меню
-
-    &-theme,
-    &-lang,
-    &-search {
-      display: flex;
-      align-items: center;
-    }
-
-    &-lang {
-      padding-left: 20px; // убрал фиксированные 160px для адаптивности
-    }
-  }
-
-  // ===== Адаптивность =====
-  @media (max-width: 1200px) {
-    &__menu {
-      flex-wrap: wrap;
-      gap: 10px;
-      justify-content: center;
-
-      &-lang {
-        padding-left: 10px;
-      }
-    }
+    justify-content: flex-end;
+    padding: 12px 10px 0;
   }
 
   @media (max-width: 768px) {
-    &__title {
-      font-size: 1.5rem; // уменьшаем размер заголовка
+    padding-bottom: 10px;
+
+    &__topMenu {
+      flex-direction: column;
+      gap: 10px;
+    }
+
+    &__lowerMenu {
+      justify-content: center;
     }
 
     &__image {
-      margin: 10px 0;
-    }
-
-    &__menu {
-      flex-direction: column;
-      gap: 10px;
-      align-items: center;
-
-      &-lang,
-      &-theme,
-      &-search {
-        padding-left: 0;
-      }
-    }
-  }
-
-  @media (max-width: 480px) {
-    &__title {
-      font-size: 1.2rem;
+      margin: 5px 0;
     }
   }
 }

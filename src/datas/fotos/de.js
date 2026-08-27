@@ -167,7 +167,8 @@ export const Fotos = {
         { path: "Germany/nrw/koln/Rhein-Erft-Kreis/bruhl/phantasialand/020.jpg", title: { ru: "Пруд с утками и карпами, 2006", uk: "Став з качками та коропами, 2006", de: "Teich mit Enten und Karpfen, 2006" } }
       ],
       "max-ernst-museum": [
-        { path: "Germany/nrw/koln/Rhein-Erft-Kreis/bruhl/max_ernst_museum/Max-Ernst-Museum.jpg", title: { ru: "Музей Макса Эрнста (фото взято с интернета)", uk: "Музей Макса Ернста (фото взято з Інтернету)", de: "Max Ernst Museum (Foto aus dem Internet)" } }
+        { path: "Germany/nrw/koln/Rhein-Erft-Kreis/bruhl/max_ernst_museum/001.jpg", title: { ru: "Музей Макса Эрнста, 2026", uk: "Музей Макса Ернста, 2026", de: "Max Ernst Museum, 2026" } },
+        { path: "Germany/nrw/koln/Rhein-Erft-Kreis/bruhl/max_ernst_museum/002.jpg", title: { ru: "Музей Макса Эрнста, 2026", uk: "Музей Макса Ернста, 2026", de: "Max Ernst Museum, 2026" } }
       ],
     },
     frechen: {

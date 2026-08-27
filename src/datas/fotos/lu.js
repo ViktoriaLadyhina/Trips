@@ -14,9 +14,6 @@ export const Fotos = {
         { path: "Luxembourg/luxembourg_canton/luxembourg_city/musee_drai_eechelen/005.jpg", title: { ru: 'Форт Тюнген, 2024', de: 'Fort Thüngen, 2024', uk: 'Форт Тюнген, 2024' } },
         { path: "Luxembourg/luxembourg_canton/luxembourg_city/musee_drai_eechelen/006.jpg", title: { ru: 'Форт Тюнген, 2024', de: 'Fort Thüngen, 2024', uk: 'Форт Тюнген, 2024' } },
       ],
-      casemates_du_bock_luxembourg: [
-        { path: "Luxembourg/luxembourg_canton/luxembourg_city/old_town/casemates/001.jpg", title: { ru: 'Казематы Бок, 2024', de: 'Bock-Kasematten, 2024', uk: 'Каземати Бок, 2024' } },
-      ],
       abbey_neumunster_luxembourg: [
         { path: "Luxembourg/luxembourg_canton/luxembourg_city/old_town/abbey_neumunster/001.jpg", title: { ru: 'Аббатство Ноймюнстер, 2024', de: 'Abtei Neumünster, 2024', uk: 'Абатство Ноймюнстер, 2024' } },
         { path: "Luxembourg/luxembourg_canton/luxembourg_city/old_town/abbey_neumunster/002.jpg", title: { ru: 'Аббатство Ноймюнстер, 2024', de: 'Abtei Neumünster, 2024', uk: 'Абатство Ноймюнстер, 2024' } },

@@ -20,20 +20,23 @@ const headerImages = {
   },
 };
 
+const languages = { ru: 'Язык', uk: 'Мовa', de: 'Sprache'}
+
 export const Header = () => {
   const { lang } = useSelector((state) => state.language);
   const { theme } = useSelector((state) => state.theme);
   
   const image = headerImages[lang][theme];
 
-
   return (
     <div className='header'>
+      <div className='header__topMenu'>
+        <div className='header__topMenu-theme'><ThemeToggle /></div>
+        <div className='header__topMenu-lang'><span>{languages[lang]}</span> <LangSelector /></div>
+      </div>
       <div className='header__image'><img src={image} alt="" /></div>
-      <div className='header__menu'>
-        <div className='header__menu-theme'><ThemeToggle /></div>
-        <div className='header__menu-lang'><LangSelector /></div>
-        <div className='header__menu-search'><Search lang={lang} /></div>
+      <div className='header__lowerMenu'>
+        <div className='header__lowerMenu-search'><Search lang={lang} /></div>
       </div>
     </div>
   )
