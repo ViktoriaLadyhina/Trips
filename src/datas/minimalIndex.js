@@ -297,7 +297,7 @@ const datas =
     bruhl_palaces: { id: 787, ru: 'Дворцы Брюля: ансамбль Аугустусбург и Фалькенлюст', de: 'Schlösser Brühl: Augustusburg & Falkenlust', uk: 'Палаци Брюля: ансамбль Аугустусбург і Фалькенлюст' },
     bruehl_augustusburg: { id: 789, ru: 'Дворец Аугустусбург', de: 'Schloss Augustusburg', uk: 'Палац Аугустусбург' },
     bruehl_falkenlust: { id: 790, ru: 'Дворец Фалькенлюст', de: 'Schloss Falkenlust', uk: 'Палац Фалькенлюст' },
-    max_ernst_museum: { ru: 'Музей Макса Эрнста', de: 'Max Ernst Museum', uk: 'Музей Макса Ернста' },
+    max_ernst_museum: { id: 905, ru: 'Музей Макса Эрнста', de: 'Max Ernst Museum', uk: 'Музей Макса Ернста' },
     phantasialand: { ru: 'Парк развлечений Phantasialand', de: 'Phantasialand', uk: 'Парк розваг Phantasialand' },
 
     // Frechen

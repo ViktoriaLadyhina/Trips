@@ -1223,55 +1223,6 @@ const datas = [
 
     // Brühl
     {
-        id: "max_ernst_museum",
-        name: "Max-Ernst-Museum",
-        type: ['museum'], rating: "popular",
-        path: "max_ernst_museum",
-        countryPath: "germany", regionPath: "nrw", districtPath: "koln", cityPath: "bruhl",
-        fotoCard: "Germany/nrw/koln/Rhein-Erft-Kreis/bruhl/max_ernst_museum/Max-Ernst-Museum.jpg",
-        location: "Brühl, Deutschland",
-        address: [{ bold: "Adresse:", text: " Comesstraße 42 / Max-Ernst-Allee 1, 50321 Brühl, Deutschland" }],
-        officialSite: [
-            { bold: 'Offizielle Webseite des Max-Ernst-Museums', link: 'https://maxernstmuseum.lvr.de/en/startseite_1.html' }
-        ],
-        tickets_and_entry: {
-            title: "Tickets und Eintritt",
-            items: [
-                { bold: "Eintritt ins Museum:", text: " Erwachsene — 5 €, Ermäßigungen für Familien mit Kindern vorgesehen." },
-                { bold: "Öffnungszeiten:", text: " Dienstag–Sonntag, 11:00–18:00." }
-            ]
-        },
-        short_description: "Das Max-Ernst-Museum in Brühl ist das einzige Museum weltweit, das dem Leben und Werk des Künstlers Max Ernst (1891–1976) gewidmet ist. Das Museum wurde 2005 eröffnet und befindet sich auf dem Gelände eines Palastkomplexes im Klassizismus des 19. Jahrhunderts.",
-        full_description: {
-            title: "Beschreibung und Geschichte",
-            items: [
-                { text: "Das Max-Ernst-Museum in Brühl (Max Ernst Museum Brühl des LVR) ist das einzige Museum weltweit, das dem Leben und Werk des Künstlers Max Ernst (1891–1976) gewidmet ist. Es befindet sich in einem Gebäude, das von den Architekten Thomas van den Valentijn und Seyed Mohammad Oreizi entworfen wurde, und wurde im September 2005 eröffnet. Das Museum liegt auf dem Gelände eines Palastkomplexes im Klassizismus des 19. Jahrhunderts. maxernstmuseum.lvr.de" },
-                { text: "Die Sammlung des Museums umfasst über 70 Jahre Schaffens von Max Ernst und enthält etwa 2040 Exponate, darunter Gemälde, Skulpturen, Objekte, Fotografien und Papierarbeiten. Besonderes Augenmerk liegt auf seiner dadaistischen und surrealistischen Phase. Das Museum veranstaltet regelmäßig Sonderausstellungen, in denen zeitgenössische Künstler gezeigt werden, die die Traditionen von Dadaismus und Surrealismus fortsetzen." },
-                { text: "Der Bau des Max-Ernst-Museums zog sich lange hin: Die Fertigstellung verzögerte sich um fünf Monate, und für das Projekt wurden 14 Millionen Euro ausgegeben." },
-                { text: "Max Ernst wurde 1891 in Brühl geboren. Er gilt als Pionier des Dadaismus und als einer der Begründer des Surrealismus." },
-                { text: "Früher gab es in Brühl bereits ein Atelier-Museum von Ernst, das in einem Skandal endete: Die Stadt verkaufte eines der vom Künstler geschenkten Gemälde, um die Unterhaltskosten zu decken. Ernst war verärgert, aber der jahrelange Streit endete mit Versöhnung, und das Bild kehrte als Exponat zurück, das vorübergehend vom Kölner Museum Ludwig bereitgestellt wurde." }
-            ]
-        },
-        interestingFacts: {
-            title: "Interessante Fakten",
-            items: [
-                { text: "Das Max-Ernst-Museum ist das einzige Museum weltweit, das vollständig dem Werk von Ernst gewidmet ist." },
-                { text: "Die Finanzierung des Museums erfolgt durch den LVR-Fonds gemeinsam mit den Stadt- und Regionalbehörden." }
-            ]
-        },
-        construction_period: "2000–2005",
-        founder: "LVR-Fonds (Stadt- und Regionalbehörden)",
-        coord: { lat: 50.83029, lng: 6.90980 },
-        meta: {
-            title: "Max-Ernst-Museum in Brühl: Leben und Werk des Künstlers",
-            description: "Das einzige Museum weltweit, das Max Ernst gewidmet ist. Sammlung, Geschichte, Dadaismus, Surrealismus, Sonderausstellungen.",
-            ogTitle: "Max-Ernst-Museum — Brühl, Deutschland",
-            ogDescription: "Entdecken Sie das Max-Ernst-Museum in Brühl, seine Sammlung und Ausstellungen, die dem Dadaismus und Surrealismus gewidmet sind.",
-            keywords: "Max Ernst Museum, Brühl, Sehenswürdigkeit, moderne Kunst, Malerei, Skulptur, Museum, Ausstellungen, Tourismus Deutschland, Kultur, Fotos",
-            ogImage: "https://our-travels.info/foto/Germany/nrw/koln/Rhein-Erft-Kreis/bruhl/max_ernst_museum/Max-Ernst-Museum.jpg"
-        }
-    },
-    {
         id: "phantasialand",
         name: "Phantasialand",
         type: ['amusement_park'], rating: "popular",
