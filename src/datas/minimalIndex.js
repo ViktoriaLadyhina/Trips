@@ -77,6 +77,8 @@ const datas =
     sumy: { id: 125, ru: 'Город Сумы', de: 'Stadt Sumy', uk: 'Місто Суми' }
   },
   cityDistrict: {
+    bonn_zentrum: { id: 904, parent: 67, ru: 'округ Бонн, район Бонн-Центр', de: 'Stadtbezirk Bonn, Stadtteil Bonn-Zentrum', uk: 'округ Бонн, район Бонн-Центр' },
+    
     dortmund_innenstadt_nord: { id: 673, parent: 72, ru: 'район Центр-Север', de: 'Stadtbezirk Innenstadt-Nord', uk: 'район Центр-Північ' },
     dortmund_innenstadt_ost: { id: 674, parent: 72, ru: 'район Центр-Восток', de: 'Stadtbezirk Innenstadt-Ost', uk: 'район Центр-Схід' },
     dortmund_innenstadt_west: { id: 675, parent: 72, ru: 'район Центр-Запад', de: 'Stadtbezirk Innenstadt-West', uk: 'район Центр-Захід' },
@@ -89,6 +91,9 @@ const datas =
     dortmund_luetgendortmund: { id: 682, parent: 72, ru: 'район Лютгендортмунд', de: 'Stadtbezirk Luetgendortmund', uk: 'район Лютгендортмунд' },
     dortmund_huckarde: { id: 683, parent: 72, ru: 'район Хуккарде', de: 'Stadtbezirk Huckarde', uk: 'район Хуккарде' },
     dortmund_mengede: { id: 684, parent: 72, ru: 'район Менгеде', de: 'Stadtbezirk Mengede', uk: 'район Менгеде' },
+
+    koeln_lindenthal: { id: 714, parent: 76, ru: 'округ Линденталь', de: 'Bezirk Lindenthal', uk: 'округ Лінденталь' },
+    koeln_innenstadt: { id: 716, parent: 76, ru: 'Центральный округ', de: 'Stadtbezirk Innenstadt', uk: 'Центральний округ' },
 
     velbert_langenberg: { id: 738, parent: 410, ru: 'район Лангенберг', de: 'Stadtteil Langenberg', uk: 'район Лангенберг' },
 
@@ -133,8 +138,7 @@ const datas =
     monschau_muetzenich: { id: 664, parent: 185, ru: 'район Мютцених', de: 'Stadtteil Mützenich', uk: 'район Мютценіх' },
     monschau_rohren: { id: 665, parent: 185, ru: 'район Рорен', de: 'Stadtteil Rohren', uk: 'район Рорен' },
 
-    koeln_lindenthal: { id: 714, parent: 76, ru: 'округ Линденталь', de: 'Bezirk Lindenthal', uk: 'округ Лінденталь' },
-    koeln_innenstadt: { id: 716, parent: 76, ru: 'Центральный округ', de: 'Stadtbezirk Innenstadt', uk: 'Центральний округ' },
+    bruhl_innenstadt: { id: 788, parent: 171, ru: 'район Инненштадт', de: 'Stadtteil Innenstadt', uk: 'район Інненштадт' },
 
     frechen_centrum: { id: 666, parent: 174, ru: 'Центральный район Фрехена', de: 'Stadtteil Zentrum', uk: 'Центральний район Фрехена' },
     frechen_bachem: { id: 667, parent: 174, ru: 'район Бахем', de: 'Stadtteil Bachem', uk: 'район Бахем' },
@@ -143,8 +147,6 @@ const datas =
     frechen_koenigsdorf: { id: 670, parent: 174, ru: 'район Кёнигсдорф', de: 'Stadtteil Königsdorf', uk: 'район Кьонігсдорф' },
     frechen_grefrath: { id: 671, parent: 174, ru: 'район Грефрат', de: 'Grefrath', uk: 'район Грефрат' },
     frechen_huecheln: { id: 672, parent: 174, ru: 'район Хюхельн', de: 'Hücheln', uk: 'район Хюхельн' },
-
-    bruhl_innenstadt: { id: 788, parent: 171, ru: 'район Инненштадт', de: 'Stadtteil Innenstadt', uk: 'район Інненштадт' },
 
     koblenz_ehrenbreitstein: { id: 763, parent: 89, ru: 'район Эренбрайтштайн', de: 'Stadtteil Ehrenbreitstein', uk: 'район Еренбрайтштайн' },
     koblenz_altstadt: { id: 778, parent: 89, ru: ' район Старый город', de: 'Stadtteil Altstadt', uk: 'район Старе місто' },
@@ -164,60 +166,12 @@ const datas =
     sumy_kowpak: { id: 795, parent: 125, ru: 'Ковпаковский район', de: 'Kowpakivskyj-Bezirk', uk: 'Ковпаківський район' },
   },
   attractions: {
-    // arnsberg округ
+    // Бонн
+    bonner_muenster_bonn: { ru: 'Боннский кафедральный собор', de: 'Bonner Münster', uk: 'Боннський кафедральний собор' },
+    
     // Dortmund
     westfalenpark: { ru: 'Вестфаленпарк', de: 'Westfalenpark', uk: 'Вестфаленпарк' },
 
-    // Хохзауэрланд Kreis
-    // sundern
-    sorpesee_sundern: { id: 741, ru: 'Озеро Сорпе', de: 'Sorpesee', uk: 'Озеро Сорпе' },
-    ehrenmal_langscheid: { id: 742, ru: 'Мемориал Лангшайд', de: 'Ehrenmal Langscheid', uk: 'Меморіал Лангшайд' },
-    burg_amecke: { id: 746, ru: 'Замок Амеке', de: 'Schloss Amecke', uk: 'Замок Амеке' },
-
-    // Märkischer Kreis
-    // Iserlohn
-    dechenhohle_iserlohn: { ru: 'Пещера Дехенхёле', de: 'Dechenhöhle', uk: 'Печера Дехенхёле' },
-
-    // Lüdenscheid
-    altstadt_luedenscheid: { ru: 'Старый город Люденшайда', de: 'Altstadt Lüdenscheid', uk: 'Старе місто Люденшайда' },
-    erloeserkirche_luedenscheid: { ru: 'Церковь Спасителя', de: 'Erlöserkirche', uk: 'Церква Спасителя' },
-    rathausplatz_luedenscheid: { ru: 'Центральная площадь Люденшайда', de: 'Rathausplatz von Lüdenscheid', uk: 'Центральна площа Люденшайда' },
-    brunnen_altstadt_luedenscheid: { ru: 'Фонтан в старом городе', de: 'Brunnen in der Altstadt', uk: 'Фонтан у старому місті' },
-    sternplatz: { ru: 'Площадь Штернплац', de: 'Sternplatz', uk: 'Площа Штернплац' },
-    onkel_willi_denkmal_sternplatz_luedenscheid: { ru: 'Памятник дяде Вилли', de: 'Denkmal von Onkel Willi', uk: 'Памятник дядьку Віллі' },
-    fontain_sternplatz_luedenscheid: { ru: 'Фонтан на площади Штернплац', de: 'Brunnen auf dem Sternplatz', uk: 'Фонтан на площі Штернплац' },
-    history_museum_luedenscheid: { ru: 'Исторический музей Люденшайда', de: 'Geschichtsmuseum Lüdenscheid', uk: 'Історичний музей Люденшайда' },
-    christuskirche_luedenscheid: { ru: 'Псевдоготическая церковь Христа', de: 'Pseudogotische Christuskirche', uk: 'Псевдоготична церква Христа' },
-    versetalsperre_luedenscheid: { ru: 'Водохранилище Верзе', de: 'Versetalsperre', uk: 'Водосховище Верзе' },
-    st_joseph_medardus: { ru: 'Церковь Святого Йозефа и Медарда', de: 'Kirche St. Joseph und Medardus', uk: 'Церква Святого Йосипа та Медарда' },
-    schloss_neuenhof_luedenscheid: { ru: 'Замок Нойенхоф', de: 'Schloss Neuenhof', uk: 'Замок Нойенхоф' },
-    schloss_oedenthal_luedenscheid: { ru: 'Усадьба Оеденталь', de: 'Schloss Oedenthal', uk: 'Садиба Оеденталь' },
-    bremecker_hammer_luedenscheid: { ru: 'Bremecker Hammer – технико-исторический музей кузнечного дела', de: 'Bremecker Hammer', uk: 'Bremecker Hammer – техніко-історичний музей ковальського ремесла' },
-    phaenomenta_luedenscheid: { ru: 'Научный центр ФЕНОМЕНТА', de: 'PHÄNOMENTA', uk: 'Науковий центр ФЕНОМЕНТА' },
-    stilleking_luedenscheid: { ru: 'Природный заповедник Стиллекинг', de: 'Naturschutzgebiet Stilleking', uk: 'Природний заповідник Стиллекінг' },
-    stadtbücherei_lüdenscheid: { ru: 'Городская библиотека', de: 'Stadtbücherei Lüdenscheid', uk: 'Міська бібліотека' },
-
-    // Altena
-    burg_altena: { ru: 'Замок Альтена', de: 'Burg Altena', uk: 'Замок Альтена' },
-    drahtmuseum_altena: { ru: 'Немецкий музей проволоки', de: 'Deutsches Drahtmuseum', uk: 'Німецький музей дроту' },
-    fuelbecketalsperre_altena: { ru: 'Водохранилище Фюльбекке', de: 'Fuelbecketalsperre', uk: 'Водосховище Фюльбекке' },
-    lutherkirche_altena: { ru: 'Евангелическо-лютеранская церковь Лютера', de: 'Lutherkirche Altena', uk: 'Євангелічно-лютеранська церква Лютера' },
-    gustav_selve_altena: { ru: 'Памятник Густаву Сельве', de: 'Gustav-Selve-Denkmal', uk: 'Пам’ятник Густаву Сельве' },
-    st_matthaeus_church_altena: { ru: 'Приходская церковь Святого Матфея', de: 'Katholische Pfarrkirche St. Matthäus', uk: 'Парафіяльна церква Святого Матвія' },
-
-    // Düsseldorf округ
-    // край mettmann 
-    // velbert
-    langenberg_altstadt_velbert: { id: 737, ru: 'Старый город Лангенберг', de: 'Altstadt Langenberg', uk: 'Старе місто Лангенберг' },
-    langenberg_alte_kirche_velbert: { id: 739, ru: 'Старая церковь Лангеберг', de: 'Alte Kirche Langenberg', uk: 'Стара церква Лангенберг' },
-    langenberg_burgerhaus_velbert: { ru: 'Исторический общественный дом Лангенберга', de: 'Historisches Bürgerhaus Langenberg', uk: 'Історичний громадський будинок Лангенберга' },
-
-    // Münster округ
-    // край Recklinghausen 
-    // Dorsten
-    lembeck_dorsten: { id: 893, ru: 'Замок Лембек', de: 'Schloss Lembeck', uk: 'Замок Лембек' },
-
-    // Köln okrug
     //Köln-city
     cologne_cathedral: { id: 717, ru: 'Кёльнский собор', de: 'Kölner Dom', uk: 'Кельнський собор' },
     rathaus_koln: { id: 718, ru: 'Кёльнская ратуша', de: 'Kölner Rathaus', uk: 'Кельнська ратуша' },
@@ -278,6 +232,57 @@ const datas =
     st_aposteln_koln: { id: 734, ru: 'Церковь Святого Апостола', de: 'St. Aposteln', uk: 'Церква Святого Апостола' },
     fischweiberbrunnen_koln: { id: 721, ru: 'Фонтан рыбных торговок', de: 'Fischweiberbrunnen', uk: 'Фонтан рибних торговок' },
 
+    // arnsberg округ
+    // Хохзауэрланд Kreis
+    // sundern
+    sorpesee_sundern: { id: 741, ru: 'Озеро Сорпе', de: 'Sorpesee', uk: 'Озеро Сорпе' },
+    ehrenmal_langscheid: { id: 742, ru: 'Мемориал Лангшайд', de: 'Ehrenmal Langscheid', uk: 'Меморіал Лангшайд' },
+    burg_amecke: { id: 746, ru: 'Замок Амеке', de: 'Schloss Amecke', uk: 'Замок Амеке' },
+
+    // Märkischer Kreis
+    // Iserlohn
+    dechenhohle_iserlohn: { ru: 'Пещера Дехенхёле', de: 'Dechenhöhle', uk: 'Печера Дехенхёле' },
+
+    // Lüdenscheid
+    altstadt_luedenscheid: { ru: 'Старый город Люденшайда', de: 'Altstadt Lüdenscheid', uk: 'Старе місто Люденшайда' },
+    erloeserkirche_luedenscheid: { ru: 'Церковь Спасителя', de: 'Erlöserkirche', uk: 'Церква Спасителя' },
+    rathausplatz_luedenscheid: { ru: 'Центральная площадь Люденшайда', de: 'Rathausplatz von Lüdenscheid', uk: 'Центральна площа Люденшайда' },
+    brunnen_altstadt_luedenscheid: { ru: 'Фонтан в старом городе', de: 'Brunnen in der Altstadt', uk: 'Фонтан у старому місті' },
+    sternplatz: { ru: 'Площадь Штернплац', de: 'Sternplatz', uk: 'Площа Штернплац' },
+    onkel_willi_denkmal_sternplatz_luedenscheid: { ru: 'Памятник дяде Вилли', de: 'Denkmal von Onkel Willi', uk: 'Памятник дядьку Віллі' },
+    fontain_sternplatz_luedenscheid: { ru: 'Фонтан на площади Штернплац', de: 'Brunnen auf dem Sternplatz', uk: 'Фонтан на площі Штернплац' },
+    history_museum_luedenscheid: { ru: 'Исторический музей Люденшайда', de: 'Geschichtsmuseum Lüdenscheid', uk: 'Історичний музей Люденшайда' },
+    christuskirche_luedenscheid: { ru: 'Псевдоготическая церковь Христа', de: 'Pseudogotische Christuskirche', uk: 'Псевдоготична церква Христа' },
+    versetalsperre_luedenscheid: { ru: 'Водохранилище Верзе', de: 'Versetalsperre', uk: 'Водосховище Верзе' },
+    st_joseph_medardus: { ru: 'Церковь Святого Йозефа и Медарда', de: 'Kirche St. Joseph und Medardus', uk: 'Церква Святого Йосипа та Медарда' },
+    schloss_neuenhof_luedenscheid: { ru: 'Замок Нойенхоф', de: 'Schloss Neuenhof', uk: 'Замок Нойенхоф' },
+    schloss_oedenthal_luedenscheid: { ru: 'Усадьба Оеденталь', de: 'Schloss Oedenthal', uk: 'Садиба Оеденталь' },
+    bremecker_hammer_luedenscheid: { ru: 'Bremecker Hammer – технико-исторический музей кузнечного дела', de: 'Bremecker Hammer', uk: 'Bremecker Hammer – техніко-історичний музей ковальського ремесла' },
+    phaenomenta_luedenscheid: { ru: 'Научный центр ФЕНОМЕНТА', de: 'PHÄNOMENTA', uk: 'Науковий центр ФЕНОМЕНТА' },
+    stilleking_luedenscheid: { ru: 'Природный заповедник Стиллекинг', de: 'Naturschutzgebiet Stilleking', uk: 'Природний заповідник Стиллекінг' },
+    stadtbücherei_lüdenscheid: { ru: 'Городская библиотека', de: 'Stadtbücherei Lüdenscheid', uk: 'Міська бібліотека' },
+
+    // Altena
+    burg_altena: { ru: 'Замок Альтена', de: 'Burg Altena', uk: 'Замок Альтена' },
+    drahtmuseum_altena: { ru: 'Немецкий музей проволоки', de: 'Deutsches Drahtmuseum', uk: 'Німецький музей дроту' },
+    fuelbecketalsperre_altena: { ru: 'Водохранилище Фюльбекке', de: 'Fuelbecketalsperre', uk: 'Водосховище Фюльбекке' },
+    lutherkirche_altena: { ru: 'Евангелическо-лютеранская церковь Лютера', de: 'Lutherkirche Altena', uk: 'Євангелічно-лютеранська церква Лютера' },
+    gustav_selve_altena: { ru: 'Памятник Густаву Сельве', de: 'Gustav-Selve-Denkmal', uk: 'Пам’ятник Густаву Сельве' },
+    st_matthaeus_church_altena: { ru: 'Приходская церковь Святого Матфея', de: 'Katholische Pfarrkirche St. Matthäus', uk: 'Парафіяльна церква Святого Матвія' },
+
+    // Düsseldorf округ
+    // край mettmann 
+    // velbert
+    langenberg_altstadt_velbert: { id: 737, ru: 'Старый город Лангенберг', de: 'Altstadt Langenberg', uk: 'Старе місто Лангенберг' },
+    langenberg_alte_kirche_velbert: { id: 739, ru: 'Старая церковь Лангеберг', de: 'Alte Kirche Langenberg', uk: 'Стара церква Лангенберг' },
+    langenberg_burgerhaus_velbert: { ru: 'Исторический общественный дом Лангенберга', de: 'Historisches Bürgerhaus Langenberg', uk: 'Історичний громадський будинок Лангенберга' },
+
+    // Münster округ
+    // край Recklinghausen 
+    // Dorsten
+    lembeck_dorsten: { id: 893, ru: 'Замок Лембек', de: 'Schloss Lembeck', uk: 'Замок Лембек' },
+
+    // Köln okrug
     // Aachen Kreis
     // Monschau
     historic_center_monschau: { ru: 'Старый город Моншау', de: 'Altstadt Monschau', uk: 'Старе місто Моншау' },

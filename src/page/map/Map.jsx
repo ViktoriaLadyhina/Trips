@@ -130,7 +130,9 @@ const Map = () => {
 
                   {/* Bonn город */}
                   <li><Link to="/germany/nrw/city/bonn">{t.cities.bonn[lang]}</Link>
-
+                    <ul>
+                      <li><Link to="/germany/nrw/city/bonn/attractions/bonner_muenster_bonn">{t.attractions.bonner_muenster_bonn[lang]}</Link></li>
+                    </ul>
                   </li>
 
                                     {/* Dortmund город */}
