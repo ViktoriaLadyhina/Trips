@@ -1,31 +1,55 @@
 const datas =
 
 {
+
   countries: {
+
     germany: { id: 1, ru: 'Германия', de: 'Deutschland', uk: 'Німеччина' },
+
     ukraine: { id: 3, ru: 'Украина', de: 'Ukraine', uk: 'Україна' },
+
     luxembourg: { id: 2, ru: 'Люксембург', de: 'Luxemburg', uk: 'Люксембург' }
+
   },
+
   regions: {
+
     // Germany
+
     nrw: { id: 13, ru: 'Северный Рейн-Вестфалия', de: 'Nordrhein-Westfalen', uk: 'Північний Рейн-Вестфалія' },
+
     rheinland_pfalz: { id: 14, ru: 'Рейнланд-Пфальц', de: 'Rheinland-Pfalz', uk: 'Рейнланд-Пфальц' },
+
     //luxembourg
+
     mersch: { id: 28, ru: 'Кантон Мерш', de: 'Kanton Mersch', uk: 'Кантон Мерш' },
+
     capellen: { id: 20, ru: 'Кантон Капеллен', de: 'Kanton Capellen', uk: 'Кантон Капеллен' },
+
     luxembourg_canton: { id: 26, ru: 'Кантон Люксембург', de: 'Kanton Luxemburg', uk: 'Кантон Люксембург' },
 
     //Ukraine
+
     sumska: { id: 49, ru: 'Сумская область', de: 'Sumska Oblast', uk: 'Сумська область' }
+
   },
+
   districts: {
+
     arnsberg: { id: 60, ru: 'Административный округ Арнсберг', de: 'Regierungsbezirk Arnsberg', uk: 'Адміністративний округ Арнсберг' },
+
     dusseldorf: { id: 62, ru: 'Административный округ Дюссельдорф', de: 'Regierungsbezirk Düsseldorf', uk: 'Адміністративний округ Дюссельдорф' },
+
     koln: { id: 63, ru: 'Административный округ Кёльн', de: 'Regierungsbezirk Köln', uk: 'Адміністративний округ Кельн' },
+
     munster: { id: 64, ru: 'Административный округ Мюнстер', de: 'Regierungsbezirk Münster', uk: 'Адміністративний округ Мюнстер' },
+
     mayen_koblenz: { id: 114, ru: 'Район Майен‑Кобленц', de: 'Landkreis Mayen-Koblenz', uk: 'Район Маєн-Кобленц' },
+
     trier_saarburg: { id: 121, ru: 'Район Трир-Саарбург', de: 'Landkreis Trier-Saarburg', uk: 'Район Трір-Саарбург' }
+
   },
+
   subRegions: {
     merkischer: { id: 161, parent_id: 60, ru: 'Район Меркиш', de: 'Märkischer Kreis', uk: 'Район Меркіш' },
     hochsauerland: { id: 291, parent_id: 60, ru: 'Район Хохзауэрланд', de: 'Hochsauerlandkreis', uk: 'Район Хохзауэрланд' },
@@ -40,13 +64,16 @@ const datas =
     warendorf: { id: 874, parent_id: 64, ru: 'Район Варендорф', de: 'Kreis Warendorf', uk: 'Район Варендорф' },
     saarburg_kell: { id: 552, parent_id: 121, ru: 'Объединённая община Саарбург-Келль', de: 'Verbandsgemeinde Saarburg-Kell', uk: 'Об’єднана громада Саарбург-Келль' },
   },
+
   cities: {
     // Germany
     koblenz: { id: 89, ru: 'Город Кобленц', de: 'Stadt Koblenz', uk: 'Місто Кобленц' },
     trier: { id: 91, ru: 'Город Трир', de: 'Stadt Trier', uk: 'Місто Трір' },
+
     saarburg_city: { id: 618, ru: 'Город Саарбург', de: 'Stadt Saarburg', uk: 'Місто Саарбург' },
 
     dortmund: { id: 72, ru: 'Город Дортмунд', de: 'Stadt Dortmund', uk: 'Місто Дортмунд' },
+
     sundern: { id: 354, ru: 'Город Зундерн', de: 'Stadt Sundern', uk: 'Місто Зундерн' },
     iserlohn: { id: 296, ru: 'Город Изерлон', de: 'Stadt Iserlohn', uk: 'Місто Ізерлон' },
     luedenscheid: { id: 298, ru: 'Город Люденшайд', de: 'Stadt Lüdenscheid', uk: 'Місто Люденшайд' },
@@ -57,13 +84,14 @@ const datas =
     dorsten: { id: 811, ru: 'Город Дорстен', de: 'Stadt Dorsten', uk: 'Місто Дорстен' },
 
     bonn: { id: 67, ru: 'Город Бонн', de: 'Stadt Bonn', uk: 'Місто Бонн' },
+
     koln_city: { id: 76, ru: 'Город Кёльн', de: 'Stadt Köln', uk: 'Місто Кельн' },
+
     monschau: { id: 185, ru: 'Город Моншау', de: 'Stadt Monschau', uk: 'Місто Моншау' },
     bruhl: { id: 171, ru: 'Город Брюль', de: 'Stadt Brühl', uk: 'Місто Брюль' },
     frechen: { id: 174, ru: 'Город Фрехен', de: 'Stadt Frechen', uk: 'Місто Фрехен' },
     konigswinter: { id: 247, ru: 'Город Кёнигсвинтер', de: 'Stadt Königswinter', uk: 'Місто Кенігсвінтер' },
     lohmar: { id: 248, ru: 'Город Ломар', de: 'Stadt Lohmar', uk: 'Місто Ломар' },
-
 
     //luxembourg
     luxembourg_city: { id: 146, ru: 'Город Люксембург', de: 'Stadt Luxemburg', uk: 'Місто Люксембург' },
@@ -75,10 +103,12 @@ const datas =
 
     //Ukraine
     sumy: { id: 125, ru: 'Город Сумы', de: 'Stadt Sumy', uk: 'Місто Суми' }
+
   },
+
   cityDistrict: {
     bonn_zentrum: { id: 904, parent: 67, ru: 'округ Бонн, район Бонн-Центр', de: 'Stadtbezirk Bonn, Stadtteil Bonn-Zentrum', uk: 'округ Бонн, район Бонн-Центр' },
-    
+
     dortmund_innenstadt_nord: { id: 673, parent: 72, ru: 'район Центр-Север', de: 'Stadtbezirk Innenstadt-Nord', uk: 'район Центр-Північ' },
     dortmund_innenstadt_ost: { id: 674, parent: 72, ru: 'район Центр-Восток', de: 'Stadtbezirk Innenstadt-Ost', uk: 'район Центр-Схід' },
     dortmund_innenstadt_west: { id: 675, parent: 72, ru: 'район Центр-Запад', de: 'Stadtbezirk Innenstadt-West', uk: 'район Центр-Захід' },
@@ -92,8 +122,9 @@ const datas =
     dortmund_huckarde: { id: 683, parent: 72, ru: 'район Хуккарде', de: 'Stadtbezirk Huckarde', uk: 'район Хуккарде' },
     dortmund_mengede: { id: 684, parent: 72, ru: 'район Менгеде', de: 'Stadtbezirk Mengede', uk: 'район Менгеде' },
 
-    koeln_lindenthal: { id: 714, parent: 76, ru: 'округ Линденталь', de: 'Bezirk Lindenthal', uk: 'округ Лінденталь' },
-    koeln_innenstadt: { id: 716, parent: 76, ru: 'Центральный округ', de: 'Stadtbezirk Innenstadt', uk: 'Центральний округ' },
+    koeln_lindenthal_suelz: { id: 714, parent: 76, ru: 'округ Линденталь, район Зюльц', de: 'Stadtbezirk Lindenthal, Stadtteil Sülz', uk: 'округ Лінденталь, район Зюльц' },
+    koeln_innenstadt_nord: { id: 716, parent: 76, ru: 'Центральный округ, район Альтштадт-Норд', de: 'Stadtbezirk Innenstadt, Stadtteil Altstadt-Nord', uk: 'Центральный округ, район Альтштадт-Норд' },
+    koeln_innenstadt_sud: { id: 906, parent: 76, ru: 'Центральный округ, Южный старый город', de: 'Stadtbezirk Innenstadt, Stadtteil Altstadt-Nord', uk: 'Центральний округ, Південне старе місто' },
 
     velbert_langenberg: { id: 738, parent: 410, ru: 'район Лангенберг', de: 'Stadtteil Langenberg', uk: 'район Лангенберг' },
 
@@ -147,7 +178,6 @@ const datas =
     frechen_koenigsdorf: { id: 670, parent: 174, ru: 'район Кёнигсдорф', de: 'Stadtteil Königsdorf', uk: 'район Кьонігсдорф' },
     frechen_grefrath: { id: 671, parent: 174, ru: 'район Грефрат', de: 'Grefrath', uk: 'район Грефрат' },
     frechen_huecheln: { id: 672, parent: 174, ru: 'район Хюхельн', de: 'Hücheln', uk: 'район Хюхельн' },
-
     koblenz_ehrenbreitstein: { id: 763, parent: 89, ru: 'район Эренбрайтштайн', de: 'Stadtteil Ehrenbreitstein', uk: 'район Еренбрайтштайн' },
     koblenz_altstadt: { id: 778, parent: 89, ru: ' район Старый город', de: 'Stadtteil Altstadt', uk: 'район Старе місто' },
     koblenz_solzenfels: { id: 782, parent: 89, ru: 'район  Штольценфельс', de: 'Stadtteil Stolzenfels', uk: 'район Штольценфельс' },
@@ -164,11 +194,14 @@ const datas =
 
     sumy_zarichnyi: { id: 723, parent: 125, ru: 'Заречный район', de: 'Zaritschnyj-Bezirk', uk: 'Зарічний район' },
     sumy_kowpak: { id: 795, parent: 125, ru: 'Ковпаковский район', de: 'Kowpakivskyj-Bezirk', uk: 'Ковпаківський район' },
+
   },
+
   attractions: {
+
     // Бонн
     bonner_muenster_bonn: { ru: 'Боннский кафедральный собор', de: 'Bonner Münster', uk: 'Боннський кафедральний собор' },
-    
+
     // Dortmund
     westfalenpark: { ru: 'Вестфаленпарк', de: 'Westfalenpark', uk: 'Вестфаленпарк' },
 
@@ -271,14 +304,14 @@ const datas =
     st_matthaeus_church_altena: { ru: 'Приходская церковь Святого Матфея', de: 'Katholische Pfarrkirche St. Matthäus', uk: 'Парафіяльна церква Святого Матвія' },
 
     // Düsseldorf округ
-    // край mettmann 
+    // край mettmann
     // velbert
     langenberg_altstadt_velbert: { id: 737, ru: 'Старый город Лангенберг', de: 'Altstadt Langenberg', uk: 'Старе місто Лангенберг' },
     langenberg_alte_kirche_velbert: { id: 739, ru: 'Старая церковь Лангеберг', de: 'Alte Kirche Langenberg', uk: 'Стара церква Лангенберг' },
     langenberg_burgerhaus_velbert: { ru: 'Исторический общественный дом Лангенберга', de: 'Historisches Bürgerhaus Langenberg', uk: 'Історичний громадський будинок Лангенберга' },
 
     // Münster округ
-    // край Recklinghausen 
+    // край Recklinghausen
     // Dorsten
     lembeck_dorsten: { id: 893, ru: 'Замок Лембек', de: 'Schloss Lembeck', uk: 'Замок Лембек' },
 
@@ -311,6 +344,7 @@ const datas =
     evangelischeKirche_frechen: { ru: 'Евангелическая церковь', de: 'Evangelische Kirche', uk: 'Євангелічна церква' },
 
     // Rhein-Sieg-Kreis
+
     // Königswinter
     drachenfels: { ru: 'Гора Драхенфельс', de: 'Drachenfels', uk: 'Гора Драхенфельс' },
     drachenfelsbahn: { ru: 'Железная дорога Драхенфельс', de: 'Drachenfelsbahn', uk: 'Залізниця Драхенфельса' },
@@ -326,6 +360,7 @@ const datas =
     st_johannes_enthauptung_lohmar: { ru: 'Церковь Святого Иоанна Крестителя', de: 'Kirche St. Johannes Enthauptung', uk: 'Церква Святого Іоанна Хрестителя' },
 
     // rheinland-pfalz
+
     // Trier
     portaNigra_trier: { id: 793, ru: 'Порта Нигра («Чёрные ворота»)', de: 'Porta Nigra', uk: 'Порта Нігра («Чорні ворота»)' },
     amphitheater_trier: { id: 804, ru: 'Римский амфитеатр', de: 'Römisches Amphitheater', uk: 'Римський амфітеатр' },
@@ -357,7 +392,6 @@ const datas =
     citykirche_koblenz: { id: 780, ru: 'Иезуитская церковь Кобленца (Citykirche)', de: 'Jesuitenkirche Koblenz (Citykirche)', uk: 'Єзуїтська церква Кобленца (Citykirche)' },
     schengelbrunnen: { id: 783, ru: 'Фонтан «Шенгель»', de: 'Schängelbrunnen', uk: 'Фонтан «Шенгель»' },
     marktfrau_und_schutzmann_koblenz: { id: 786, ru: 'Скульптура «Торговка и полицейский»', de: 'Die Figurengruppe «Marktfrau und Schutzmann»', uk: 'Скульптурна група «Ринкова торговка та поліцейський»' },
-
     lahneck: { id: 766, is_active: 0, ru: 'Замок Ланек', de: 'Burg Lahneck', uk: 'Замок Ланек' }, // routes: 'castles_rhine_valley'
     marksburg: { id: 767, is_active: 0, ru: 'Замок Марксбург', de: 'Burg Marksburg', uk: 'Замок Марксбург' }, // routes: 'castles_rhine_valley'
     katz: { id: 768, is_active: 0, ru: 'Замок Кац', de: 'Burg Katz', uk: 'Замок Кац' }, // routes: 'castles_rhine_valley'
@@ -383,7 +417,7 @@ const datas =
     bridges_luxembourg: { ru: 'Мосты и виадуки Люксембурга', de: 'Brücken und Viadukte von Luxemburg', uk: 'Мости та віадуки Люксембурга' },
     passerelle_luxembourg: { ru: 'Мост Пассерель', de: 'Passerelle-Brücke', uk: 'Міст Пассерель' },
     adolphe_luxembourg: { ru: 'Мост Адольфа', de: 'Adolphe-Brücke', uk: 'Міст Адольфа' },
-    notre_dame_cathedral_luxembourg: { ru: 'Собор Люксембургской Богоматери', de: 'Kathedrale Notre-Dame Luxemburg', uk: 'Собор Люксембургської Богоматері' },
+    notre_dame_cathedral_luxembourg: { id: 907, ru: 'Собор Люксембургской Богоматери', de: 'Kathedrale Notre-Dame Luxemburg', uk: 'Собор Люксембургської Богоматері' },
     grand_ducal_palace_luxembourg: { ru: 'Дворец Великих герцогов', de: 'Großherzoglicher Palast', uk: 'Палац Великого герцога' },
     hammelsmarsch_luxembourg: { ru: 'Фонтан «Хэммельсмарш»', de: 'Brunnen «Hämmelsmarsch»', uk: 'Фонтан «Хеммельсмарш»' },
     acrobats_luxembourg: { ru: 'Скульптурная группа «Акробаты»', de: 'Skulpturengruppe «Akrobaten»', uk: 'Скульптурна група «Акробати»' },
@@ -406,7 +440,9 @@ const datas =
     afghan_memorial_sumy: { id: 796, ru: 'Мемориал погибшим воинам-интернационалистам', de: 'Gedenkstätte für die gefallenen Soldaten-Internationalisten', uk: 'Меморіал загиблим воїнам-інтернаціоналістам' },
 
     Unesco_Title: { ru: "Достопримечательности ЮНЕСКО", uk: "Пам’ятки ЮНЕСКО", de: "UNESCO-Welterbestätten" }
+
   },
+
   events: {
     karneval_koln: { ru: "Кельнский карнавал", uk: "Кельнський карнавал", de: "Kölner Karneval" },
     karneval_koln_city: { ru: "проходит в Кёльне – неофициальной столице карнавала, а также во многих городах Рейнской области", uk: "відбувається в Кельні – неофіційній столиці карнавалу, а також у багатьох містах Рейнської області", de: "Findet in Köln – der inoffiziellen Karnevalshauptstadt – sowie in zahlreichen Städten des Rheinlandes statt" },
@@ -414,6 +450,7 @@ const datas =
     winterleuchten_dortmund_city: { ru: "проходит в Дортмунде, в Вестфаленпарке", uk: "відбувається в Дортмунді, у Вестфаленпарку", de: "Findet in Dortmund, im Westfalenpark statt" },
     christmas_market_dortmund: { ru: "Рождественская ярмарка и главная рождественская ёлка Дортмунда", uk: "Різдвяний ярмарок і головна різдвяна ялинка Дортмунда", de: "Weihnachtsmarkt und der große Weihnachtsbaum in Dortmund" },
   },
+
   routes: {
     mullerthal_trail: { id: 761, ru: "Мюллертальская тропа", uk: "Мюллертальська стежка", de: "Mullerthal Trail" },
     seven_castles: { id: 750, ru: "Долина семи замков", uk: "Долина семи замків", de: "Tal der sieben Schlösser" },
