@@ -200,7 +200,8 @@ const datas =
   attractions: {
 
     // Бонн
-    bonner_muenster_bonn: { ru: 'Боннский кафедральный собор', de: 'Bonner Münster', uk: 'Боннський кафедральний собор' },
+    bonner_muenster_bonn: { id: 903, ru: 'Боннский кафедральный собор', de: 'Bonner Münster', uk: 'Боннський кафедральний собор' },
+    denkmal_beethoven_bonn: { id: 908, ru: 'Памятник Бетховену', de: 'Beethoven-Denkmal', uk: 'Пам’ятник Бетховену' },
 
     // Dortmund
     westfalenpark: { ru: 'Вестфаленпарк', de: 'Westfalenpark', uk: 'Вестфаленпарк' },
@@ -221,7 +222,7 @@ const datas =
     tanzbrunnen: { ru: 'Танцующий фонтан', de: 'Tanzbrunnen', uk: 'Танцюючий фонтан' },
     koln_seilbahn: { ru: 'Кёльнская канатная дорога', de: 'Kölner Seilbahn', uk: 'Кельнська канатна дорога' },
     divitia_koln: { ru: 'Руины римского форта Дивития в Кёльне', de: 'Ruinen des römischen Forts Divitia in Köln', uk: 'Руїни римського форту Дивітія в Кельні' },
-    guerzenich_koln: { ru: 'Гюрцених – исторический концертный зал и гильдейский дом в Кёльне', de: 'Gürzenich – historischer Konzertsaal und Zunfthaus in Köln', uk: 'Гюрценіх – історичний концертний зал і гільдійний дім у Кельні' },
+    guerzenich_koln: { id: 719, ru: 'Гюрцених – исторический концертный зал и гильдейский дом в Кёльне', de: 'Gürzenich – historischer Konzertsaal und Zunfthaus in Köln', uk: 'Гюрценіх – історичний концертний зал і гільдійний дім у Кельні' },
     ostasiatische_kunst_koln: { ru: 'Музей восточно‑азиатского искусства', de: 'Museum für Ostasiatische Kunst', uk: 'Музей східноазіатського мистецтва' },
     museum_schnuetgen_koln: { ru: 'Музей Шнютгена', de: 'Museum Schnütgen', uk: 'Музей Шнютгена' },
     zoo_koln: { ru: 'Кёльнский зоопарк', de: 'Kölner Zoo', uk: 'Кельнський зоопарк' },
@@ -392,6 +393,7 @@ const datas =
     citykirche_koblenz: { id: 780, ru: 'Иезуитская церковь Кобленца (Citykirche)', de: 'Jesuitenkirche Koblenz (Citykirche)', uk: 'Єзуїтська церква Кобленца (Citykirche)' },
     schengelbrunnen: { id: 783, ru: 'Фонтан «Шенгель»', de: 'Schängelbrunnen', uk: 'Фонтан «Шенгель»' },
     marktfrau_und_schutzmann_koblenz: { id: 786, ru: 'Скульптура «Торговка и полицейский»', de: 'Die Figurengruppe «Marktfrau und Schutzmann»', uk: 'Скульптурна група «Ринкова торговка та поліцейський»' },
+
     lahneck: { id: 766, is_active: 0, ru: 'Замок Ланек', de: 'Burg Lahneck', uk: 'Замок Ланек' }, // routes: 'castles_rhine_valley'
     marksburg: { id: 767, is_active: 0, ru: 'Замок Марксбург', de: 'Burg Marksburg', uk: 'Замок Марксбург' }, // routes: 'castles_rhine_valley'
     katz: { id: 768, is_active: 0, ru: 'Замок Кац', de: 'Burg Katz', uk: 'Замок Кац' }, // routes: 'castles_rhine_valley'
@@ -418,7 +420,7 @@ const datas =
     passerelle_luxembourg: { ru: 'Мост Пассерель', de: 'Passerelle-Brücke', uk: 'Міст Пассерель' },
     adolphe_luxembourg: { ru: 'Мост Адольфа', de: 'Adolphe-Brücke', uk: 'Міст Адольфа' },
     notre_dame_cathedral_luxembourg: { id: 907, ru: 'Собор Люксембургской Богоматери', de: 'Kathedrale Notre-Dame Luxemburg', uk: 'Собор Люксембургської Богоматері' },
-    grand_ducal_palace_luxembourg: { ru: 'Дворец Великих герцогов', de: 'Großherzoglicher Palast', uk: 'Палац Великого герцога' },
+    grand_ducal_palace_luxembourg: { id: 909, ru: 'Дворец Великих герцогов', de: 'Großherzoglicher Palast', uk: 'Палац Великого герцога' },
     hammelsmarsch_luxembourg: { ru: 'Фонтан «Хэммельсмарш»', de: 'Brunnen «Hämmelsmarsch»', uk: 'Фонтан «Хеммельсмарш»' },
     acrobats_luxembourg: { ru: 'Скульптурная группа «Акробаты»', de: 'Skulpturengruppe «Akrobaten»', uk: 'Скульптурна група «Акробати»' },
 
