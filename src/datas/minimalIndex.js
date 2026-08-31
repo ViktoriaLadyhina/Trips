@@ -393,6 +393,7 @@ const datas =
     citykirche_koblenz: { id: 780, ru: 'Иезуитская церковь Кобленца (Citykirche)', de: 'Jesuitenkirche Koblenz (Citykirche)', uk: 'Єзуїтська церква Кобленца (Citykirche)' },
     schengelbrunnen: { id: 783, ru: 'Фонтан «Шенгель»', de: 'Schängelbrunnen', uk: 'Фонтан «Шенгель»' },
     marktfrau_und_schutzmann_koblenz: { id: 786, ru: 'Скульптура «Торговка и полицейский»', de: 'Die Figurengruppe «Marktfrau und Schutzmann»', uk: 'Скульптурна група «Ринкова торговка та поліцейський»' },
+    liebfrauenkirche_koblenz: { id: 910, ru: 'Церковь Либфрауэнкирхе', de: 'Liebfrauenkirche', uk: 'Церква Лібфрауенкірхе' },
 
     lahneck: { id: 766, is_active: 0, ru: 'Замок Ланек', de: 'Burg Lahneck', uk: 'Замок Ланек' }, // routes: 'castles_rhine_valley'
     marksburg: { id: 767, is_active: 0, ru: 'Замок Марксбург', de: 'Burg Marksburg', uk: 'Замок Марксбург' }, // routes: 'castles_rhine_valley'
@@ -414,7 +415,7 @@ const datas =
     fort_thungen_luxembourg: { ru: 'Форт Тюнген', de: 'Fort Thüngen', uk: 'Форт Тюнген' },
     old_town_luxembourg: { id: 897, ru: 'Старый город Люксембурга', de: 'Altstadt Luxemburg', uk: 'Старе місто Люксембурга' },
     casemates_du_bock_luxembourg: { id: 902, ru: 'Казематы Бок', de: 'Bock-Kasematten', uk: 'Каземати Бок' },
-    abbey_neumunster_luxembourg: { ru: 'Абатство Неймюнстер', de: 'Abtei Neumünster', uk: 'Абатство Неймюнстер' },
+    abbey_neumunster_luxembourg: { id: 911, ru: 'Абатство Неймюнстер', de: 'Abtei Neumünster', uk: 'Абатство Неймюнстер' },
     pont_du_chateau_luxembourg: { ru: 'Мост Понт-дю-Шато', de: 'Pont du Château Brücke', uk: 'Міст Понт-дю-Шато' },
     bridges_luxembourg: { ru: 'Мосты и виадуки Люксембурга', de: 'Brücken und Viadukte von Luxemburg', uk: 'Мости та віадуки Люксембурга' },
     passerelle_luxembourg: { ru: 'Мост Пассерель', de: 'Passerelle-Brücke', uk: 'Міст Пассерель' },

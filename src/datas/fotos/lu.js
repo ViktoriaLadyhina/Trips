@@ -14,10 +14,6 @@ export const Fotos = {
         { path: "Luxembourg/luxembourg_canton/luxembourg_city/musee_drai_eechelen/005.jpg", title: { ru: 'Форт Тюнген, 2024', de: 'Fort Thüngen, 2024', uk: 'Форт Тюнген, 2024' } },
         { path: "Luxembourg/luxembourg_canton/luxembourg_city/musee_drai_eechelen/006.jpg", title: { ru: 'Форт Тюнген, 2024', de: 'Fort Thüngen, 2024', uk: 'Форт Тюнген, 2024' } },
       ],
-      abbey_neumunster_luxembourg: [
-        { path: "Luxembourg/luxembourg_canton/luxembourg_city/old_town/abbey_neumunster/001.jpg", title: { ru: 'Аббатство Ноймюнстер, 2024', de: 'Abtei Neumünster, 2024', uk: 'Абатство Ноймюнстер, 2024' } },
-        { path: "Luxembourg/luxembourg_canton/luxembourg_city/old_town/abbey_neumunster/002.jpg", title: { ru: 'Аббатство Ноймюнстер, 2024', de: 'Abtei Neumünster, 2024', uk: 'Абатство Ноймюнстер, 2024' } },
-      ],
       pont_du_chateau_luxembourg: [
         { path: "Luxembourg/luxembourg_canton/luxembourg_city/old_town/pont_du_chateau/001.jpg", title: { ru: 'Мост Понт-дю-Шато, 2024', de: 'Pont du Château Brücke, 2024', uk: 'Міст Понт-дю-Шато, 2024' } },
         { path: "Luxembourg/luxembourg_canton/luxembourg_city/old_town/pont_du_chateau/002.jpg", title: { ru: 'Мост Понт-дю-Шато, 2024', de: 'Pont du Château Brücke, 2024', uk: 'Міст Понт-дю-Шато, 2024' } }
