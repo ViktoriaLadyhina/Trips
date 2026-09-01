@@ -203,6 +203,7 @@ const datas =
     bonner_muenster_bonn: { id: 903, ru: 'Боннский кафедральный собор', de: 'Bonner Münster', uk: 'Боннський кафедральний собор' },
     denkmal_beethoven_bonn: { id: 908, ru: 'Памятник Бетховену', de: 'Beethoven-Denkmal', uk: 'Пам’ятник Бетховену' },
     altes_rathaus_bonn: { id: 912, ru: 'Старая ратуша Бонна', de: 'Altes Rathaus Bonn', uk: 'Стара ратуша Бонна' },
+    namen_jesu_kirche_bonn: { id: 913, ru: 'Церковь Имени Иисуса', de: 'Namen Jesu Kirche', uk: 'Церква Імені Ісуса' },
 
     // Dortmund
     westfalenpark: { ru: 'Вестфаленпарк', de: 'Westfalenpark', uk: 'Вестфаленпарк' },
@@ -423,7 +424,7 @@ const datas =
     adolphe_luxembourg: { ru: 'Мост Адольфа', de: 'Adolphe-Brücke', uk: 'Міст Адольфа' },
     notre_dame_cathedral_luxembourg: { id: 907, ru: 'Собор Люксембургской Богоматери', de: 'Kathedrale Notre-Dame Luxemburg', uk: 'Собор Люксембургської Богоматері' },
     grand_ducal_palace_luxembourg: { id: 909, ru: 'Дворец Великих герцогов', de: 'Großherzoglicher Palast', uk: 'Палац Великого герцога' },
-    hammelsmarsch_luxembourg: { ru: 'Фонтан «Хэммельсмарш»', de: 'Brunnen «Hämmelsmarsch»', uk: 'Фонтан «Хеммельсмарш»' },
+    hammelsmarsch_luxembourg: { id: 914, ru: 'Фонтан «Хэммельсмарш»', de: 'Brunnen «Hämmelsmarsch»', uk: 'Фонтан «Хеммельсмарш»' },
     acrobats_luxembourg: { ru: 'Скульптурная группа «Акробаты»', de: 'Skulpturengruppe «Akrobaten»', uk: 'Скульптурна група «Акробати»' },
 
     mersch_castle: { id: 753, is_active: 0, ru: 'Замок Мерш', de: 'Schloss Mersch', uk: 'Замок Мерш' }, // routes: 'seven_castles'

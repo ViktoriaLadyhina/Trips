@@ -135,6 +135,7 @@ const Map = () => {
                       <li><Link to="/germany/nrw/city/bonn/attractions/bonner_muenster_bonn">{t.attractions.bonner_muenster_bonn[lang]}</Link></li>
                       <li><Link to="/germany/nrw/city/bonn/attractions/denkmal_beethoven_bonn">{t.attractions.denkmal_beethoven_bonn[lang]}</Link></li>
                       <li><Link to="/germany/nrw/city/bonn/attractions/altes_rathaus_bonn">{t.attractions.altes_rathaus_bonn[lang]}</Link></li>
+                      <li><Link to="/germany/nrw/city/bonn/attractions/namen_jesu_kirche_bonn">{t.attractions.namen_jesu_kirche_bonn[lang]}</Link></li>
                     </ul>
                   </li>
 

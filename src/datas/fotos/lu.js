@@ -31,10 +31,6 @@ export const Fotos = {
         { path: "Luxembourg/luxembourg_canton/luxembourg_city/viaducts/001.jpg", title: { ru: 'Мост Адольфа, 2024', de: 'Adolphe-Brücke, 2024', uk: 'Міст Адольфа, 2024' } },
         { path: "Luxembourg/luxembourg_canton/luxembourg_city/viaducts/002.jpg", title: { ru: 'Мост Адольфа, 2024', de: 'Adolphe-Brücke, 2024', uk: 'Міст Адольфа, 2024' } },
       ],
-      hammelsmarsch_luxembourg: [
-        { path: "Luxembourg/luxembourg_canton/luxembourg_city/old_town/hammelsmarsch/001.jpg", title: { ru: 'Фонтан «Хэммельсмарш», 2024', de: 'Brunnen «Hämmelsmarsch», 2024', uk: 'Фонтан «Хеммельсмарш», 2024' } },
-        { path: "Luxembourg/luxembourg_canton/luxembourg_city/old_town/hammelsmarsch/002.jpg", title: { ru: 'Фонтан «Хэммельсмарш», 2024', de: 'Brunnen «Hämmelsmarsch», 2024', uk: 'Фонтан «Хеммельсмарш», 2024' } },
-      ],
       acrobats_luxembourg: [
         { path: "Luxembourg/luxembourg_canton/luxembourg_city/old_town/acrobats/001.jpg", title: { ru: 'Скульптурная группа «Акробаты», 2024', de: 'Skulpturengruppe «Akrobaten», 2024', uk: 'Скульптурна група «Акробати», 2024' } },
         { path: "Luxembourg/luxembourg_canton/luxembourg_city/old_town/acrobats/002.jpg", title: { ru: 'Скульптурная группа «Акробаты», 2024', de: 'Skulpturengruppe «Akrobaten», 2024', uk: 'Скульптурна група «Акробати», 2024' } },
