@@ -324,7 +324,7 @@ const datas =
     historic_center_monschau: { ru: 'Старый город Моншау', de: 'Altstadt Monschau', uk: 'Старе місто Моншау' },
     burg_monschau: { ru: 'Замок Моншау', de: 'Burg Monschau', uk: 'Замок Моншау' },
     rotes_haus_monschau: { ru: 'Красный дом', de: 'Rotes Haus', uk: 'Червоний будинок' },
-    senfmuehle_monschau: { ru: 'Историческая горчичная мельница', de: 'Historische Senfmühle', uk: 'Історичний гірчичний млин' },
+    senfmuehle_monschau: { id: 916, ru: 'Историческая горчичная мельница', de: 'Historische Senfmühle', uk: 'Історичний гірчичний млин' },
     glashuette_monschau: { ru: 'Стеклодувная мастерская', de: 'Glashütte', uk: 'Майстерня скла' },
     tuchmacherbrunnen_monschau: { ru: 'Фонтан ткачей в Моншау', de: 'Tuchmacherbrunnen in Monschau', uk: 'Фонтан ткачів у Моншау' },
 
@@ -425,7 +425,7 @@ const datas =
     notre_dame_cathedral_luxembourg: { id: 907, ru: 'Собор Люксембургской Богоматери', de: 'Kathedrale Notre-Dame Luxemburg', uk: 'Собор Люксембургської Богоматері' },
     grand_ducal_palace_luxembourg: { id: 909, ru: 'Дворец Великих герцогов', de: 'Großherzoglicher Palast', uk: 'Палац Великого герцога' },
     hammelsmarsch_luxembourg: { id: 914, ru: 'Фонтан «Хэммельсмарш»', de: 'Brunnen «Hämmelsmarsch»', uk: 'Фонтан «Хеммельсмарш»' },
-    acrobats_luxembourg: { ru: 'Скульптурная группа «Акробаты»', de: 'Skulpturengruppe «Akrobaten»', uk: 'Скульптурна група «Акробати»' },
+    acrobats_luxembourg: { id: 915, ru: 'Скульптурная группа «Акробаты»', de: 'Skulpturengruppe «Akrobaten»', uk: 'Скульптурна група «Акробати»' },
 
     mersch_castle: { id: 753, is_active: 0, ru: 'Замок Мерш', de: 'Schloss Mersch', uk: 'Замок Мерш' }, // routes: 'seven_castles'
     schoenfels_castle: { id: 754, is_active: 0, ru: 'Замок Шёнфельс', de: 'Schloss Schoenfels', uk: 'Замок Шёнфельс' }, // routes: 'seven_castles'

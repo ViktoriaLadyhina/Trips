@@ -330,10 +330,6 @@ export const Fotos = {
         { path: "Germany/nrw/koln/Aachen/monschau/rotes_haus/001.jpg", title: { ru: "Красный дом, 2026", uk: "Червоний будинок, 2026", de: "Rotes Haus, 2026" } },
         { path: "Germany/nrw/koln/Aachen/monschau/rotes_haus/002.jpg", title: { ru: "Красный дом (фото взято с интернета)", uk: "Червоний будинок (фото взято з Інтернету)", de: "Rotes Haus (Foto aus dem Internet)" } },
       ],
-      senfmuehle_monschau: [
-        { path: "Germany/nrw/koln/Aachen/monschau/senfmuehle/001.jpg", title: { ru: "Историческая горчичная мельница (фото взято с интернета)", uk: "Історичний гірчичний млин (фото взято з Інтернету)", de: "Historische Senfmühle (Foto aus dem Internet)" } },
-        { path: "Germany/nrw/koln/Aachen/monschau/senfmuehle/002.jpg", title: { ru: "Историческая горчичная мельница, 2025", uk: "Історичний гірчичний млин, 2025", de: "Historische Senfmühle, 2025" } },
-      ],
       glashuette_monschau: [
         { path: "Germany/nrw/koln/Aachen/monschau/glashuette/001.jpg", title: { ru: "Стеклодувная мастерская (фото взято с интернета)", uk: "Майстерня скла (фото взято з Інтернету)", de: "Glashütte (Foto aus dem Internet)" } },
         { path: "Germany/nrw/koln/Aachen/monschau/glashuette/002.jpg", title: { ru: "Стеклодувная мастерская (фото взято с интернета)", uk: "Майстерня скла (фото взято з Інтернету)", de: "Glashütte (Foto aus dem Internet)" } },
