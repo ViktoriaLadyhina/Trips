@@ -384,7 +384,7 @@ const datas =
 
     //Saarburg
     altstadt_saarburg: { id: 919, ru: 'Старый город Саарбурга', de: 'Altstadt Saarburg', uk: 'Старе місто Саарбурга' },
-    wasserfall_saarburg: { ru: 'Водопад Саарбурга', de: 'Wasserfall von Saarburg', uk: 'Водоспад Саарбурга' },
+    wasserfall_saarburg: { id: 921, ru: 'Водопад Саарбурга', de: 'Wasserfall von Saarburg', uk: 'Водоспад Саарбурга' },
     burg_saarburg: { ru: 'Замок Саарбурга', de: 'Burg Saarburg', uk: 'Замок Саарбурга' },
     amuseum_saarburg: { ru: 'Амюзеум Саарбург', de: 'Amüseum Saarburg', uk: 'Амюзеум Саарбург' },
 

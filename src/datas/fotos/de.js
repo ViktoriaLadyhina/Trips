@@ -529,11 +529,6 @@ export const Fotos = {
 
   rheinland_pfalz: {
     saarburg: {
-      wasserfall_saarburg: [
-        { path: "Germany/rheinland-pfalz/trier_saarburg/saarburg_kell/saarburg/altstadt/wasserfall/001.jpg", title: { ru: "Водопад Саарбурга, 2024", uk: "Водоспад Саарбурга, 2024", de: "Wasserfall von Saarburg, 2024" } },
-        { path: "Germany/rheinland-pfalz/trier_saarburg/saarburg_kell/saarburg/altstadt/wasserfall/002.jpg", title: { ru: "Водопад Саарбурга, 2024", uk: "Водоспад Саарбурга, 2024", de: "Wasserfall von Saarburg, 2024" } },
-        { path: "Germany/rheinland-pfalz/trier_saarburg/saarburg_kell/saarburg/altstadt/wasserfall/003.jpg", title: { ru: "Водопад Саарбурга, 2024", uk: "Водоспад Саарбурга, 2024", de: "Wasserfall von Saarburg, 2024" } },
-      ],
       amuseum_saarburg: [
         { path: "Germany/rheinland-pfalz/trier_saarburg/saarburg_kell/saarburg/altstadt/amuseum/001.jpg", title: { ru: "Амюзеум Саарбург (фото взято с интернета)", uk: "Амюзеум Саарбург (фото взято з Інтернету)", de: "Amüseum Saarburg (Foto aus dem Internet)" } },
       ],

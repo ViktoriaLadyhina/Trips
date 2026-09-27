@@ -2,48 +2,6 @@ const datas = [
 
   // Saarburg
 
-  {
-    id: "wasserfall_saarburg",
-    name: "Wasserfall von Saarburg",
-    type: ["natural_attraction"], rating: "top",
-    path: "wasserfall_saarburg",
-    countryPath: "germany", regionPath: "rheinland_pfalz", districtPath: "trier_saarburg", cityPath: "saarburg_city",
-    fotoCard: "Germany/rheinland-pfalz/trier_saarburg/saarburg_kell/saarburg/altstadt/wasserfall/001.jpg",
-    // hiddenFromList: true, showMore: true,
-    short_description: "Der Wasserfall von Saarburg ist ein einzigartiger Stadtwasserfall, der sich direkt im Zentrum der Altstadt befindet. Das Wasser des Leukbachs stürzt zwischen den Häusern hinab und schafft eine ungewöhnliche und malerische Stadtkulisse.",
-    short_description2: "Er gehört zu den bekanntesten Sehenswürdigkeiten der Region und zieht Besucher durch seine besondere Lage und Atmosphäre an. Der Wasserfall ist von historischen Gebäuden, Brücken und gemütlichen Cafés umgeben.",
-    full_description: {
-      title: "Beschreibung und Geschichte",
-      items: [
-        { bold: "Der Wasserfall von Saarburg ", text: "befindet sich im Herzen der Altstadt und zählt zu den wichtigsten natürlichen Sehenswürdigkeiten der Region. Er wird vom Leukbach gespeist, der durch die Stadt fließt und an dieser Stelle etwa 20 Meter in die Tiefe stürzt." },
-        { text: "Das Besondere an diesem Ort ist die Lage mitten in der Stadt. Das Wasser fließt zwischen historischen Häusern, Brücken und Terrassen und schafft eine seltene Verbindung von Natur und Architektur. Es handelt sich um ein seltenes Beispiel eines Wasserfalls, der sich direkt in einem historischen Stadtzentrum innerhalb bebauter Umgebung befindet." },
-        { text: "Heute ist der Bereich rund um den Wasserfall ein beliebtes Ziel für Besucher. Hier befinden sich Aussichtspunkte, Cafés und Spazierwege. Von Plätzen und Brücken bieten sich schöne Ausblicke, die häufig für Fotos und Postkarten genutzt werden. Besonders eindrucksvoll ist der Wasserfall am Abend, wenn er beleuchtet wird." },
-        { bold: "Geschichte", text: "Der Wasserfall steht in engem Zusammenhang mit der Entwicklung der Stadt und der Nutzung der Wasserkraft. Im Mittelalter wurde der Leukbach teilweise umgeleitet, um Mühlen zu betreiben, die eine wichtige Rolle für die Wirtschaft Saarburgs spielten. Durch diese Veränderungen entstand der Höhenunterschied, der den Wasserfall im Stadtzentrum formte." },
-        { text: "In der Umgebung des Wasserfalls sind noch heute alte Mühlengebäude erhalten, von denen einige inzwischen als Museen oder kulturelle Einrichtungen genutzt werden. Das Wasser trieb früher die Mechanismen zur Verarbeitung von Getreide und für andere Zwecke an." },
-        { text: "Mit der Zeit verlor die Nutzung der Mühlen an Bedeutung, und der Wasserfall entwickelte sich zu einer touristischen Attraktion. Heute gilt er als Wahrzeichen der Stadt und als eine ihrer bekanntesten Sehenswürdigkeiten." }
-      ]
-    },
-    interestingFacts: {
-      title: "Interessante Fakten",
-      isList: true,
-      items: [
-        { text: "Der Wasserfall ist etwa 20 Meter hoch." },
-        { text: "Er gehört zu den wenigen Wasserfällen in Europa, die sich direkt im Stadtzentrum befinden." },
-        { text: "Der Leukbach, der den Wasserfall speist, mündet in die Saar." },
-        { text: "In unmittelbarer Nähe befindet sich ein Museum zum Thema Mühlenwesen." },
-        { text: "Am Abend wird der Wasserfall beleuchtet und wirkt besonders stimmungsvoll." }
-      ]
-    },
-    coord: { lat: 49.607892, lng: 6.551109 },
-    meta: {
-      title: "Wasserfall von Saarburg – einzigartiger Stadtwasserfall in Deutschland",
-      description: "Der Wasserfall von Saarburg ist ein malerischer Wasserfall im Zentrum der Stadt Saarburg. Beschreibung, Geschichte und nützliche Informationen für Besucher.",
-      ogTitle: "Der Wasserfall von Saarburg – einer der ungewöhnlichsten Wasserfälle Deutschlands",
-      ogDescription: "Ein Wasserfall mitten zwischen Häusern – eine der beeindruckendsten Sehenswürdigkeiten von Saarburg.",
-      keywords: "Wasserfall Saarburg, Saarburg Wasserfall, Deutschland, Sehenswürdigkeit, Stadtwasserfall, Fluss Leuk, Altstadt Saarburg, Rheinland-Pfalz, Natur in der Stadt, Tourismus, Führungen, Fotos, historisches Zentrum",
-      ogImage: "https://our-travels.info/foto/Germany/rheinland-pfalz/trier_saarburg/saarburg_kell/saarburg/altstadt/wasserfall/001.jpg"
-    }
-  },
     {
     id: "amuseum_saarburg",
     name: "Amüseum Saarburg",
