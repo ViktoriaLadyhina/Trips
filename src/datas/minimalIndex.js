@@ -382,11 +382,11 @@ const datas =
     steipe_trier: { id: 802, ru: 'Штайпе', de: 'Steipe', uk: 'Штайпе' },
     petrusbrunnen_trier: { id: 803, ru: 'Фонтан Святого Петра', de: 'Petrusbrunnen', uk: 'Фонтан Святого Петра' },
 
-    //Saarburg
+    //Saarburg 
     altstadt_saarburg: { id: 919, ru: 'Старый город Саарбурга', de: 'Altstadt Saarburg', uk: 'Старе місто Саарбурга' },
     wasserfall_saarburg: { id: 921, ru: 'Водопад Саарбурга', de: 'Wasserfall von Saarburg', uk: 'Водоспад Саарбурга' },
     burg_saarburg: { ru: 'Замок Саарбурга', de: 'Burg Saarburg', uk: 'Замок Саарбурга' },
-    amuseum_saarburg: { ru: 'Амюзеум Саарбург', de: 'Amüseum Saarburg', uk: 'Амюзеум Саарбург' },
+    amuseum_saarburg: { id: 922, ru: 'Амюзеум Саарбург', de: 'Amüseum Saarburg', uk: 'Амюзеум Саарбург' },
 
     // Koblenz
     ehrenbreitstein_koblenz: { id: 762, ru: 'Крепость Эренбрайтштайн', de: 'Festung Ehrenbreitstein', uk: 'Фортеця Еренбрайтштайн' }, // routes: 'castles_rhine_valley'

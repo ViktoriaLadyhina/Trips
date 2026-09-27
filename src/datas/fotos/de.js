@@ -529,9 +529,6 @@ export const Fotos = {
 
   rheinland_pfalz: {
     saarburg: {
-      amuseum_saarburg: [
-        { path: "Germany/rheinland-pfalz/trier_saarburg/saarburg_kell/saarburg/altstadt/amuseum/001.jpg", title: { ru: "Амюзеум Саарбург (фото взято с интернета)", uk: "Амюзеум Саарбург (фото взято з Інтернету)", de: "Amüseum Saarburg (Foto aus dem Internet)" } },
-      ],
       burg_saarburg: [
         { path: "Germany/rheinland-pfalz/trier_saarburg/saarburg_kell/saarburg/burg/001.jpg", title: { ru: "Замок Саарбурга, 2024", uk: "Замок Саарбурга, 2024", de: "Burg Saarburg, 2024" } },
         { path: "Germany/rheinland-pfalz/trier_saarburg/saarburg_kell/saarburg/burg/002.jpg", title: { ru: "Замок Саарбурга, 2024", uk: "Замок Саарбурга, 2024", de: "Burg Saarburg, 2024" } },

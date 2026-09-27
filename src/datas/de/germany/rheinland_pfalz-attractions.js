@@ -2,68 +2,7 @@ const datas = [
 
   // Saarburg
 
-    {
-    id: "amuseum_saarburg",
-    name: "Amüseum Saarburg",
-    type: ["museum"], rating: "local",
-    path: "amuseum_saarburg",
-    countryPath: "germany", regionPath: "rheinland_pfalz", districtPath: "trier_saarburg", cityPath: "saarburg_city",
-    // hiddenFromList: true, showMore: true,
-    fotoCard: "Germany/rheinland-pfalz/trier_saarburg/saarburg_kell/saarburg/altstadt/amuseum/001.jpg",
-    location: "Saarburg, Deutschland",
-    officialSite: [{ bold: "Offizielle Website", link: "https://www.amueseum-saarburg.de/" }],
-    short_description: "Amüseum Saarburg – ein städtisches Museum im historischen Zentrum von Saarburg, direkt am berühmten Wasserfall gelegen. Es widmet sich Handwerk, städtischem Leben und der Geschichte der Region mit besonderem Fokus auf Weinbau, Druckwesen und Binnenschifffahrt.",
-    full_description: {
-      title: "Beschreibung und Geschichte",
-      items: [
-        { bold: "Amüseum Saarburg ", text: "– ein kleines, aber sehr atmosphärisches Museum, das sich in einem ehemaligen Mühlengebäude am Wasserfall in der Altstadt von Saarburg befindet. Schon die Lage macht es einzigartig: das Rauschen des fallenden Wassers schafft eine besondere Atmosphäre, die in anderen Museen Deutschlands schwer zu finden ist." },
-        { text: "Die Ausstellung des Museums deckt die traditionellen Handwerke der Region ab, einschließlich Weinbau, Lederverarbeitung und Glockengießerei. Besonderes Augenmerk liegt auf dem Leben der Einheimischen in verschiedenen historischen Epochen, was das Museum nicht nur für Touristen, sondern auch für diejenigen interessant macht, die die Kultur der Region tiefer verstehen möchten." },
-        { text: "Neben der Galerie mit wechselnden Kunstausstellungen umfasst das Museum auch das städtische Museum, in dem traditionelle Handwerke von Saarburg präsentiert werden, wie Ledergerberei, Schuhmacherei, Apothekenwesen, Glockengießen und Schifffahrt. Im Museum befindet sich zudem das Kulturamt von Saarburg, das Informationen über Kunst, Kultur und Veranstaltungen in der Stadt bereitstellt." },
-        { text: "Das Gebäude, in dem sich heute das Museum befindet, wurde historisch als Mühle genutzt, die durch die Energie des Wasserfalls betrieben wurde. Solche Anlagen waren ein wichtiger Teil der Stadtwirtschaft, insbesondere im Mittelalter und in der frühen Neuzeit." },
-        { text: "Das Amüseum wurde vergleichsweise spät eröffnet – Ende des 20. Jahrhunderts. Ziel war es, das kulturelle Erbe der Region Saarburg und des Saartals zu bewahren und zu präsentieren." }
-      ]
-    },
-    tickets_and_entry: {
-      title: "Praktische Informationen",
-      items: [
-        { bold: "Adresse:", text: "Am Markt 29, 54439 Saarburg, Deutschland" },
-        { bold: "Öffnungszeiten:", text: "<br>&nbsp;&nbsp;&nbsp; Montag-Freitag: 11:00-16:00 <br>&nbsp;&nbsp;&nbsp; Sonntag und Feiertage: 11:00-16:00 <br>&nbsp;&nbsp;&nbsp; Samstag: geschlossen <br>&nbsp;&nbsp;&nbsp; An Feiertagen (z. B. Weihnachten, Neujahr etc.) geschlossen – bitte vor dem Besuch prüfen" },
-        { bold: "Eintrittspreise:", text: "<br>&nbsp;&nbsp;&nbsp; Erwachsene: 3,00 € <br>&nbsp;&nbsp;&nbsp; Ermäßigt (Studenten, Jugendliche, Menschen mit Behinderung): 1,50 € <br>&nbsp;&nbsp;&nbsp; Kinder (6–14 Jahre): 0,70 € <br>&nbsp;&nbsp;&nbsp; Familienkarte: 6,50 € <br>&nbsp;&nbsp;&nbsp; Gruppen- und Kombitickets mit der Mühlenmuseum verfügbar" },
-        { bold: "Nützliche Hinweise:", text: "<br>&nbsp;&nbsp;&nbsp; Das Museum liegt direkt am Wasserfall in der Altstadt  <br>&nbsp;&nbsp;&nbsp; Für den Rundgang benötigt man in der Regel 1–1,5 Stunden  <br>&nbsp;&nbsp;&nbsp; Gut kombinierbar mit einem Spaziergang durch das Zentrum von Saarburg" }
-      ]
-    },
-    sub_objects: {
-      title: "Ausstellungen",
-      items: [
-        { bold: "Salon (Salönchen)", text: "Die Ausstellung versetzt die Besucher in die Atmosphäre des frühen 20. Jahrhunderts (ca. 1904). Das Interieur eines typischen städtischen Salons dieser Zeit wurde nachgebildet." },
-        { bold: "Druckerei (Druckerei)", text: "Hier wird die Ausrüstung der alten Druckerei Rassier (gegründet 1865) präsentiert. Hauptausstellungsstück ist die Linotype-Setzmaschine von 1924, die für den Druck von Zeitungen und Büchern verwendet wurde." },
-        { bold: "Glockengießerei (Glockengießerei)", text: "Widmet sich der Gießerei der Familie Mabilon, die von 1770 bis 2002 Glocken herstellte. Besucher können den Herstellungsprozess kennenlernen und die Klänge verschiedener Glocken hören." },
-        { bold: "Binnenschifffahrt an der Saar (Saarschifffahrt)", text: "Erklärt den Beruf der Binnenschiffer – einer der ältesten Berufe in Saarburg. Gezeigt wird, wie Waren über den Fluss transportiert wurden, einschließlich der schweren manuellen Arbeit beim Treideln." },
-        { bold: "Apotheke (Apotheke)", text: "Die historische Marien-Apotheke, eine der ältesten der Region, wurde nachgebildet. Die Ausstellung zeigt alte Apothekerschränke, Gefäße und Werkzeuge sowie Tablettenschablonen." },
-        { bold: "Gerberei und Schuhmacherei (Gerberei und Schusterei)", text: "Zeigt die traditionellen Handwerke des 19. Jahrhunderts. Mitte des 19. Jahrhunderts gab es in Saarburg mehrere Gerbereien, und lokale Schuhmacher stellten Schuhe in Handarbeit her." },
-        { bold: "Städtische Galerie und Archiv (Galerie & Saarburgensia)", text: "Im Obergeschoss: Ausstellungen zeitgenössischer Kunst, Werke regionaler und eingeladener Künstler, kleines städtisches Archiv „Saarburgensia“." },
-        { bold: "Turbine (Turbine)", text: "Im Keller befindet sich die Turbine von 1935. Bis in die 1960er Jahre versorgte sie einen großen Teil der Stadt mit Strom." }
-      ]
-    },
-    interestingFacts: {
-      title: "Interessante Fakten",
-      isList: true,
-      items: [
-        { text: "Das Museum liegt direkt an einem der ungewöhnlichsten städtischen Wasserfälle Deutschlands." },
-        { text: "Der Name Amüseum ist ein Wortspiel aus „amüsieren“ (unterhalten) und „Museum“." },
-        { text: "Das Gebäude selbst ist Teil der historischen städtischen Infrastruktur." }
-      ]
-    },
-    coord: { lat: 49.607895, lng: 6.550875 },
-    meta: {
-      title: "Amüseum Saarburg – Museum am Wasserfall in Saarburg",
-      description: "Amüseum Saarburg – ein Museum im historischen Zentrum von Saarburg direkt am Wasserfall. Ausstellungen über Handwerk, Weinbau und das Leben in der Region Saar.",
-      ogTitle: "Amüseum Saarburg: Museum am Wasserfall",
-      ogDescription: "Ein einzigartiges Museum in Saarburg direkt am Wasserfall. Geschichte, Handwerk und Atmosphäre der Altstadt.",
-      keywords: "Amüseum Saarburg, Museum Saarburg, Deutschland, Sehenswürdigkeit, Heimatmuseum, Alltagskultur und Handwerk, Altstadt Saarburg, Rheinland-Pfalz, Ausstellungen, Tourismus, Geschichte der Region, Führungen, Fotos",
-      ogImage: "https://our-travels.info/foto/Germany/rheinland-pfalz/trier_saarburg/saarburg_kell/saarburg/altstadt/amuseum/001.jpg"
-    }
-  },
+  
   {
     id: "burg_saarburg",
     name: "Burg Saarburg",
