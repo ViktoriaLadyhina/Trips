@@ -330,10 +330,6 @@ export const Fotos = {
         { path: "Germany/nrw/koln/Aachen/monschau/rotes_haus/001.jpg", title: { ru: "Красный дом, 2026", uk: "Червоний будинок, 2026", de: "Rotes Haus, 2026" } },
         { path: "Germany/nrw/koln/Aachen/monschau/rotes_haus/002.jpg", title: { ru: "Красный дом (фото взято с интернета)", uk: "Червоний будинок (фото взято з Інтернету)", de: "Rotes Haus (Foto aus dem Internet)" } },
       ],
-      glashuette_monschau: [
-        { path: "Germany/nrw/koln/Aachen/monschau/glashuette/001.jpg", title: { ru: "Стеклодувная мастерская (фото взято с интернета)", uk: "Майстерня скла (фото взято з Інтернету)", de: "Glashütte (Foto aus dem Internet)" } },
-        { path: "Germany/nrw/koln/Aachen/monschau/glashuette/002.jpg", title: { ru: "Стеклодувная мастерская (фото взято с интернета)", uk: "Майстерня скла (фото взято з Інтернету)", de: "Glashütte (Foto aus dem Internet)" } },
-      ],
     },
 
     // округ Арнсберг
@@ -533,11 +529,6 @@ export const Fotos = {
 
   rheinland_pfalz: {
     saarburg: {
-      altstadt_saarburg: [
-        { path: "Germany/rheinland-pfalz/trier_saarburg/saarburg_kell/saarburg/altstadt/001.jpg", title: { ru: "Старый город Саарбурга, 2024", uk: "Старе місто Саарбурга, 2024", de: "Altstadt Saarburg, 2024" } },
-        { path: "Germany/rheinland-pfalz/trier_saarburg/saarburg_kell/saarburg/altstadt/002.jpg", title: { ru: "Старый город Саарбурга, 2024", uk: "Старе місто Саарбурга, 2024", de: "Altstadt Saarburg, 2024" } },
-        { path: "Germany/rheinland-pfalz/trier_saarburg/saarburg_kell/saarburg/altstadt/003.jpg", title: { ru: "Старый город Саарбурга, 2024", uk: "Старе місто Саарбурга, 2024", de: "Altstadt Saarburg, 2024" } },
-      ],
       wasserfall_saarburg: [
         { path: "Germany/rheinland-pfalz/trier_saarburg/saarburg_kell/saarburg/altstadt/wasserfall/001.jpg", title: { ru: "Водопад Саарбурга, 2024", uk: "Водоспад Саарбурга, 2024", de: "Wasserfall von Saarburg, 2024" } },
         { path: "Germany/rheinland-pfalz/trier_saarburg/saarburg_kell/saarburg/altstadt/wasserfall/002.jpg", title: { ru: "Водопад Саарбурга, 2024", uk: "Водоспад Саарбурга, 2024", de: "Wasserfall von Saarburg, 2024" } },

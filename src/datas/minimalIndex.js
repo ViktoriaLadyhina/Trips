@@ -188,6 +188,8 @@ const datas =
     trier_sud: { id: 807, parent: 91, ru: 'округ Южный Трир', de: 'Ortsbezirk Trier-Süd', uk: 'округ Південний Трір' },
     trier_nord: { id: 896, parent: 91, ru: 'округ Северный Трир', de: 'Ortsbezirk Trier-Nord', uk: 'округ Північний Трір' },
 
+    saarburg_saarburg: { id: 920, parent: 618, ru: 'Центральная часть Саарбурга', de: 'Zentraler Stadtbereich Saarburg', uk: 'Центральна частина Саарбурга' },
+
     luxembourg_ville_haute: { id: 898, parent: 146, ru: 'квартал Верхний город Люксембурга', de: 'Stadtteil Ville Haute', uk: 'квартал Верхнє місто Люксембурга' },
     luxembourg_grund: { id: 899, parent: 146, ru: 'квартал Грунд', de: 'Stadtteil Grund', uk: 'квартал Грунд' },
     luxembourg_pfaffenthal: { id: 900, parent: 146, ru: 'квартал Пфаффенталь', de: 'Stadtteil Pfaffenthal', uk: 'квартал Пфаффенталь' },
@@ -325,7 +327,7 @@ const datas =
     burg_monschau: { ru: 'Замок Моншау', de: 'Burg Monschau', uk: 'Замок Моншау' },
     rotes_haus_monschau: { ru: 'Красный дом', de: 'Rotes Haus', uk: 'Червоний будинок' },
     senfmuehle_monschau: { id: 916, ru: 'Историческая горчичная мельница', de: 'Historische Senfmühle', uk: 'Історичний гірчичний млин' },
-    glashuette_monschau: { ru: 'Стеклодувная мастерская', de: 'Glashütte', uk: 'Майстерня скла' },
+    glashuette_monschau: { id: 918, ru: 'Стеклодувная мастерская', de: 'Glashütte', uk: 'Майстерня скла' },
     tuchmacherbrunnen_monschau: { ru: 'Фонтан ткачей в Моншау', de: 'Tuchmacherbrunnen in Monschau', uk: 'Фонтан ткачів у Моншау' },
 
     // Rhein-Erft-Kreis
@@ -381,7 +383,7 @@ const datas =
     petrusbrunnen_trier: { id: 803, ru: 'Фонтан Святого Петра', de: 'Petrusbrunnen', uk: 'Фонтан Святого Петра' },
 
     //Saarburg
-    altstadt_saarburg: { ru: 'Старый город Саарбурга', de: 'Altstadt Saarburg', uk: 'Старе місто Саарбурга' },
+    altstadt_saarburg: { id: 919, ru: 'Старый город Саарбурга', de: 'Altstadt Saarburg', uk: 'Старе місто Саарбурга' },
     wasserfall_saarburg: { ru: 'Водопад Саарбурга', de: 'Wasserfall von Saarburg', uk: 'Водоспад Саарбурга' },
     burg_saarburg: { ru: 'Замок Саарбурга', de: 'Burg Saarburg', uk: 'Замок Саарбурга' },
     amuseum_saarburg: { ru: 'Амюзеум Саарбург', de: 'Amüseum Saarburg', uk: 'Амюзеум Саарбург' },

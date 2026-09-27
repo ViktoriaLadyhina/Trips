@@ -1,56 +1,7 @@
 const datas = [
 
   // Saarburg
-  {
-    id: "altstadt_saarburg",
-    name: "Altstadt Saarburg",
-    type: ["historical_area"], rating: "popular",
-    path: "altstadt_saarburg",
-    countryPath: "germany", regionPath: "rheinland_pfalz", districtPath: "trier_saarburg", cityPath: "saarburg_city",
-    fotoCard: "Germany/rheinland-pfalz/trier_saarburg/saarburg_kell/saarburg/altstadt/001.jpg",
-    subObjects: ["wasserfall_saarburg", "amuseum_saarburg"],
-    location: "Saarburg, Deutschland",
-    officialSite: [{ bold: "Offizielle Website", link: "https://www.saar-obermosel.de" }],
-    short_description: "Die Altstadt von Saarburg ist eines der malerischsten historischen Zentren im Tal der Saar. Enge gepflasterte Gassen, alte Häuser von Fischern und Bootsmännern, kleine Brücken und gemütliche Plätze schaffen die Atmosphäre einer typischen mittelalterlichen Stadt.",
-    short_description2: "Das historische Zentrum liegt am Fuße der Burg und gilt als einer der fotogensten Teile der Stadt. Dank der gut erhaltenen Architektur und der Lage am Fluss zieht die Altstadt Touristen aus ganz Deutschland und aus den Nachbarländern an.",
-    short_description_subObjects: {
-      text: "In der Altstadt von Saarburg befinden sich folgende Sehenswürdigkeiten:",
-      items: [
-        { bold: "Wasserfall von Saarburg", text: "– ein malerischer Stadtwasserfall im Zentrum der Altstadt und eine der bekanntesten sowie beeindruckendsten Sehenswürdigkeiten von Saarburg." },
-        { bold: "Amüseum Saarburg", text: "– städtisches Museum am Wasserfall, das den Handwerken, dem städtischen Leben und der Geschichte der Region gewidmet ist, mit interessanten interaktiven Ausstellungen." }
-      ]
-    },
-    full_description: {
-      title: "Beschreibung und Geschichte",
-      items: [
-        { bold: "Die Altstadt von Saarburg ", text: "liegt am Fuße der mittelalterlichen Burg und entlang der Saar. Sie ist bekannt für ihre engen Gassen, bunten Häuser und kleinen Brücken über den Leukbach, der durch das historische Zentrum fließt. Die meisten Gebäude stammen aus dem 17. und 18. Jahrhundert und haben den traditionellen architektonischen Stil der Region gut bewahrt." },
-        { text: "Besonderen Charme erhält die Altstadt durch die Häuser ehemaliger Fischer und Bootsmänner. An den Fassaden vieler Gebäude sind noch heute alte Handwerkssymbole zu sehen – zum Beispiel Darstellungen von Fischen, Ankern oder Bootshaken. Diese Zeichen erinnern an die Zeit, als der Fluss ein wichtiger Handels- und Transportweg war." },
-        { text: "Heute ist die Altstadt ein beliebter Ort für Spaziergänge. Hier befinden sich kleine Cafés, Restaurants, Museen und historische Plätze. Ein Spaziergang durch die Straßen ermöglicht es, die Atmosphäre einer alten europäischen Stadt zu spüren und Architektur zu sehen, die sich über mehrere Jahrhunderte kaum verändert hat." },
-        { bold: "Geschichte", text: "dieses Stadtteils ist eng mit der Entwicklung der Burg und der Stadt Saarburg verbunden. Die Siedlung entstand am Fuße der Festung, die erstmals im Jahr 964 in schriftlichen Quellen erwähnt wird. Die Burg kontrollierte die Handelswege entlang der Saar, wodurch sich nach und nach eine Stadt um sie herum entwickelte." },
-        { text: "Im Mittelalter spielte der Fluss eine wichtige Rolle im Handel zwischen Trier und anderen Städten der Region. Deshalb ließen sich in der Altstadt Fischer, Bootsmänner und Händler nieder. Viele Straßen und Häuser bewahren noch Spuren dieser Zeit, und die Architektur des historischen Zentrums entstand gerade in der Phase des intensiven Handels auf dem Fluss." },
-        { text: "Im Laufe der Jahrhunderte litt die Stadt mehrfach unter Überschwemmungen, da das alte Zentrum nahe am Fluss liegt. Ende des 20. Jahrhunderts wurde zum Schutz des historischen Bereichs eine spezielle Schutzmauer gebaut, die heute hilft, die Altstadt vor Hochwasser zu bewahren." }
-      ]
-    },
-    interestingFacts: {
-      title: "Interessante Fakten",
-      items: [
-        { text: "Die Altstadt wird oft als eines der schönsten historischen Zentren der Saar-Mosel-Region bezeichnet." },
-        { text: "Einige alte Gebäude wurden auf Holzkonstruktionen errichtet, was in Städten an Flüssen eine verbreitete Bauweise war." },
-        { text: "An den Fassaden der Gebäude kann man alte Handwerkszeichen sehen – eine Art historischer „Logos“ der Häuser." },
-        { text: "Einige Straßen der Altstadt haben sich seit dem Mittelalter kaum verändert." },
-        { text: "Durch die Altstadt führt eine touristische Route mit einer Länge von etwa 2 Kilometern." }
-      ]
-    },
-    construction_period: "10.–11. Jahrhundert (Entstehung der Siedlung am Fuße der Burg)",
-    meta: {
-      title: "Altstadt von Saarburg (Altstadt Saarburg) – mittelalterliches Zentrum der Stadt in Deutschland",
-      description: "Die Altstadt von Saarburg (Altstadt Saarburg) ist das historische Zentrum der Stadt Saarburg mit engen Gassen, Häusern von Fischern und schönen Plätzen. Beschreibung, Geschichte und praktische Informationen für Touristen.",
-      ogTitle: "Altstadt von Saarburg – eine der schönsten historischen Kleinstädte Deutschlands",
-      ogDescription: "Enge Gassen, alte Häuser und die Atmosphäre einer mittelalterlichen Stadt – die Altstadt von Saarburg gilt als eine der malerischsten im Saar-Tal.",
-      keywords: "Altstadt Saarburg, Saarburg Deutschland, Sehenswürdigkeit, historisches Zentrum, mittelalterliche Stadt, Fachwerkhäuser, enge Gassen, Wasserfall in der Stadt, Burg Saarburg, Rheinland-Pfalz, Tourismus, Führungen, Fotos, Architektur",
-      ogImage: "https://our-travels.info/foto/Germany/rheinland-pfalz/trier_saarburg/saarburg_kell/saarburg/altstadt/001.jpg"
-    }
-  },
+
   {
     id: "wasserfall_saarburg",
     name: "Wasserfall von Saarburg",
@@ -58,7 +9,7 @@ const datas = [
     path: "wasserfall_saarburg",
     countryPath: "germany", regionPath: "rheinland_pfalz", districtPath: "trier_saarburg", cityPath: "saarburg_city",
     fotoCard: "Germany/rheinland-pfalz/trier_saarburg/saarburg_kell/saarburg/altstadt/wasserfall/001.jpg",
-    hiddenFromList: true, showMore: true,
+    // hiddenFromList: true, showMore: true,
     short_description: "Der Wasserfall von Saarburg ist ein einzigartiger Stadtwasserfall, der sich direkt im Zentrum der Altstadt befindet. Das Wasser des Leukbachs stürzt zwischen den Häusern hinab und schafft eine ungewöhnliche und malerische Stadtkulisse.",
     short_description2: "Er gehört zu den bekanntesten Sehenswürdigkeiten der Region und zieht Besucher durch seine besondere Lage und Atmosphäre an. Der Wasserfall ist von historischen Gebäuden, Brücken und gemütlichen Cafés umgeben.",
     full_description: {
@@ -99,7 +50,7 @@ const datas = [
     type: ["museum"], rating: "local",
     path: "amuseum_saarburg",
     countryPath: "germany", regionPath: "rheinland_pfalz", districtPath: "trier_saarburg", cityPath: "saarburg_city",
-    hiddenFromList: true, showMore: true,
+    // hiddenFromList: true, showMore: true,
     fotoCard: "Germany/rheinland-pfalz/trier_saarburg/saarburg_kell/saarburg/altstadt/amuseum/001.jpg",
     location: "Saarburg, Deutschland",
     officialSite: [{ bold: "Offizielle Website", link: "https://www.amueseum-saarburg.de/" }],

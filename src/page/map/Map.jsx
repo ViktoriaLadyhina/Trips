@@ -139,7 +139,7 @@ const Map = () => {
                     </ul>
                   </li>
 
-                                    {/* Dortmund город */}
+                  {/* Dortmund город */}
                   <li><Link to="/germany/nrw/city/dortmund">{t.cities.dortmund[lang]}</Link>
                     <ul>
                       <li><Link to="/germany/nrw/city/dortmund/attractions/westfalenpark">{t.attractions.westfalenpark[lang]}</Link></li>
@@ -342,12 +342,13 @@ const Map = () => {
                               <li><Link to="/germany/nrw/koln/monschau/attractions/historic_center_monschau">{t.attractions.historic_center_monschau[lang]}</Link>
                                 <ul>
                                   <li><Link to="/germany/nrw/koln/monschau/attractions/rotes_haus_monschau">{t.attractions.rotes_haus_monschau[lang]}</Link></li>
-                                  <li><Link to="/germany/nrw/koln/monschau/attractions/senfmuehle_monschau">{t.attractions.senfmuehle_monschau[lang]}</Link></li>
-                                  <li><Link to="/germany/nrw/koln/monschau/attractions/glashuette_monschau">{t.attractions.glashuette_monschau[lang]}</Link></li>
+
                                   <li><Link to="/germany/nrw/koln/monschau/attractions/tuchmacherbrunnen_monschau">{t.attractions.tuchmacherbrunnen_monschau[lang]}</Link></li>
                                 </ul>
                               </li>
                               <li><Link to="/germany/nrw/koln/monschau/attractions/burg_monschau">{t.attractions.burg_monschau[lang]}</Link></li>
+                              <li><Link to="/germany/nrw/koln/monschau/attractions/senfmuehle_monschau">{t.attractions.senfmuehle_monschau[lang]}</Link></li>
+                              <li><Link to="/germany/nrw/koln/monschau/attractions/glashuette_monschau">{t.attractions.glashuette_monschau[lang]}</Link></li>
                             </ul>
                           </li>
                         </ul>
