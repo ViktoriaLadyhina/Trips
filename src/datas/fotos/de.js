@@ -528,18 +528,6 @@ export const Fotos = {
   },
 
   rheinland_pfalz: {
-    saarburg: {
-      burg_saarburg: [
-        { path: "Germany/rheinland-pfalz/trier_saarburg/saarburg_kell/saarburg/burg/001.jpg", title: { ru: "Замок Саарбурга, 2024", uk: "Замок Саарбурга, 2024", de: "Burg Saarburg, 2024" } },
-        { path: "Germany/rheinland-pfalz/trier_saarburg/saarburg_kell/saarburg/burg/002.jpg", title: { ru: "Замок Саарбурга, 2024", uk: "Замок Саарбурга, 2024", de: "Burg Saarburg, 2024" } },
-        { path: "Germany/rheinland-pfalz/trier_saarburg/saarburg_kell/saarburg/burg/003.jpg", title: { ru: "Замок Саарбурга, 2024", uk: "Замок Саарбурга, 2024", de: "Burg Saarburg, 2024" } },
-        { path: "Germany/rheinland-pfalz/trier_saarburg/saarburg_kell/saarburg/burg/004.jpg", title: { ru: "Замок Саарбурга, 2024", uk: "Замок Саарбурга, 2024", de: "Burg Saarburg, 2024" } },
-        { path: "Germany/rheinland-pfalz/trier_saarburg/saarburg_kell/saarburg/burg/005.jpg", title: { ru: "Замок Саарбурга, 2024", uk: "Замок Саарбурга, 2024", de: "Burg Saarburg, 2024" } },
-        { path: "Germany/rheinland-pfalz/trier_saarburg/saarburg_kell/saarburg/burg/006.jpg", title: { ru: "Замок Саарбурга, 2024", uk: "Замок Саарбурга, 2024", de: "Burg Saarburg, 2024" } },
-        { path: "Germany/rheinland-pfalz/trier_saarburg/saarburg_kell/saarburg/burg/007.jpg", title: { ru: "Замок Саарбурга, 2024", uk: "Замок Саарбурга, 2024", de: "Burg Saarburg, 2024" } },
-        { path: "Germany/rheinland-pfalz/trier_saarburg/saarburg_kell/saarburg/burg/008.jpg", title: { ru: "Замок Саарбурга, 2024", uk: "Замок Саарбурга, 2024", de: "Burg Saarburg, 2024" } },
-      ]
-    },
     koblenz: {
       altstadt_koblenz: [
         { path: "Germany/rheinland-pfalz/koblenz/altstadt/001.jpg", title: { ru: "Фонтан Клеменса, 2023", uk: "Фонтан Клеменса, 2023", de: "Klemensbrunnen, 2023" } },
