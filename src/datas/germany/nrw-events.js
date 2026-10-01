@@ -1,149 +1,149 @@
 const datas = [
-    {
-        id: "karneval_koln",
-        path: "karneval_koln",
-        countryPath: "germany", regionPath: "nrw", districtPath: "city", cityPath: "koln_city",
-        cities: ["koln_city", "frechen", "bruhl"],
-        season: "spring", type: ["festival"],
-        fotoCard: "Germany/nrw/koln/koln-city/karneval/001.jpg",
-        translations: {
-            ru: {
-                name: "Кёльнский карнавал",
-                location: "Кёльн, Германия",
-                date: "Ежегодно. Конец февраля – начало марта: четверг перед Пепельной средой (Weiberfastnacht, первый день Великого поста) – Пепельная среда (Aschermittwoch)",
-                officialSite: [{ bold: "Официальный сайт Кёльнского карнавала", link: "https://www.koelnerkarneval.de/" }],
-                short_description: "Кёльнский карнавал – один из крупнейших и самых известных карнавалов Германии, ежегодно собирающий сотни тысяч участников и туристов. Празднование включает парады, маскарады, музыку и традиционные шествия по городу.",
-                full_description: {
-                    title: "Описание и история",
-                    items: [
-                        { bold: "Кёльнский карнавал", text: " – одно из крупнейших народных празднеств Европы и одно из самых значимых культурных событий Германия, ежегодно собирающее сотни тысяч участников и более миллиона зрителей. Кёльн считается неофициальной столицей карнавала благодаря масштабу празднования, медийному вниманию и числу участников. При этом сама традиция носит региональный характер и охватывает множество городов Рейнской области, включая Дюссельдорф, Майнц, Бонн и десятки других, где проходят собственные карнавальные шествия. Его корни уходят в средневековые народные праздники, когда перед началом Великого поста жители устраивали шумные гуляния, переворачивая привычный порядок вещей: простые горожане высмеивали власть, социальные роли менялись, а улицы превращались в сцену." },
-                        { text: "Современная форма карнавала сложилась в XIX веке. В 1823 году был создан первый организационный комитет, который ввёл структурированную программу праздника, официальные шествия и символических персонажей. Именно тогда появились традиционные фигуры карнавальной власти – Принц, Крестьянин и Дева, представляющие исторические сословия города." },
-                        { text: "Официально карнавальный сезон открывается ежегодно 11 ноября в 11:11 – символическое «магическое время», связанное с числом 11, которое в рейнской традиции считается числом шутов и свободы от правил. Однако кульминация наступает лишь в конце зимы, в так называемую «безумную неделю», когда весь город превращается в праздничную площадку." },
-                        { text: "Главная особенность кёльнского карнавала – его массовость и участие самих жителей. В отличие от многих фестивалей, это не зрелище для публики, а народное действие: горожане выходят на улицы в костюмах, поют традиционные песни на кёльнском диалекте, участвуют в шествиях и празднуют вместе. Карнавальные общества готовятся к этому весь год – строят платформы, пишут сатирические номера и создают сложные костюмы." },
-                        { text: "Карнавал выполняет и социальную функцию: он служит безопасным способом коллективной сатиры. Во время парадов на платформах часто изображают политиков и мировые события в ироничной форме, продолжая старую традицию народного юмора и критики власти." },
-                    ]
-                },
-                sub_objects: {
-                    title: "Основные дни и события карнавала",
-                    items: [
-                        { bold: "Карнавальные сессии (Karnevalssitzungen):", text: " официальные праздничные вечера и концерты, которые проводят карнавальные общества. В программу входят юмористические выступления, музыкальные номера, речи и традиционные сценические представления." },
-                        { bold: "Женский карнавал (Weiberfastnacht):", text: " четверг перед Пепельной средой. Традиционный день, когда женщины символически «захватывают» город – особенно ратуши – и по обычаю отрезают мужчинам галстуки. С этого дня начинается уличная фаза карнавала." },
-                        { bold: "Уличный карнавал (Straßenkarneval):", text: " период массовых уличных празднований, концертов, танцев и гуляний по всему городу. Люди выходят в костюмах, поют карнавальные песни и празднуют вместе на улицах." },
-                        { bold: "Розовый понедельник – главный парад (Rosenmontag / Rosenmontagszug):", text: " понедельник перед Пепельной средой. Центральное событие карнавала – масштабное шествие платформ, оркестров и костюмированных участников через центр города." },
-                        { bold: "Фиалковый вторник (Veilchendienstag):", text: " вторник перед Пепельной средой. Завершающий день праздника с финальными вечеринками и символическим прощанием с карнавальным сезоном." },
-                        { bold: "Пепельная среда (Aschermittwoch)", text: " – первый день Великого поста в западной христианской традиции. Она наступает сразу после завершения карнавала и символизирует начало периода воздержания, покаяния и духовной подготовки к Пасхе. В этот день на богослужениях верующим наносят на лоб крест из освящённого пепла – знак покаяния и напоминание о бренности жизни." },
-                    ]
-                },
-                interestingFacts: {
-                    title: "Интересные факты",
-                    isList: true,
-                    items: [
-                        { text: "Кёльнский карнавал считается одним из крупнейших карнавалов Европы и привлекает более миллиона участников каждый год." },
-                        { text: "Главный парад Rosenmontag длится несколько часов и проходит через весь центр города." },
-                        { text: "Участники карнавала традиционно используют символику города, включая его герб, карнавальные цвета и маски." },
-                        { text: "Традиция «Weiberfastnacht» берет начало в XIX веке, когда женщины впервые массово участвовали в празднованиях." }
-                    ]
-                },
-                meta: {
-                    title: "Кёльнский карнавал – крупнейший фестиваль Германии",
-                    description: "Кёльнский карнавал – известный праздник с парадами, маскарадами и музыкальными выступлениями, проходящий ежегодно в центре Кёльна.",
-                    ogTitle: "Кёльнский карнавал – крупнейший фестиваль Германии",
-                    ogDescription: "Главный карнавальный парад Rosenmontag и Weiberfastnacht делают Кёльнский карнавал уникальным событием в Германии.",
-                    ogImage: "https://our-travels.info/foto/Germany/nrw/koln/koln-city/karneval/001.jpg"
-                }
-            },
-            uk: {
-                name: "Кельнський карнавал",
-                location: "Кельн, Німеччина",
-                date: "Щорічно. Кінець лютого – початок березня: четвер перед Попільною середою (Weiberfastnacht, перший день Великого посту) – Попільна середа",
-                officialSite: [{ bold: "Офіційний сайт Кельнського карнавалу", link: "https://www.koelnerkarneval.de/" }],
-                short_description: "Кельнський карнавал – один з найбільших та найвідоміших карнавалів Німеччини, щороку збирає сотні тисяч учасників та туристів. Святкування включає паради, маскаради, музику та традиційні ходи містом.",
-                full_description: {
-                    title: "Опис та історія",
-                    items: [
-                        { bold: "Кельнський карнавал", text: " – одне з найбільших народних свят Європи та одна з найважливіших культурних подій Німеччини, що щороку збирає сотні тисяч учасників і понад мільйон глядачів. Кельн вважається неофіційною столицею карнавалу завдяки масштабності святкування, медійному висвітленню та числу учасників. Традиція носить регіональний характер і охоплює багато міст Рейнської області, включно з Дюссельдорфом, Майнцом, Бонном та десятками інших, де проходять власні карнавальні ходи. Корені сягають середньовічних народних свят, коли перед Великим постом жителі влаштовували гучні гуляння, перевертаючи звичний порядок речей: прості містяни висміювали владу, соціальні ролі змінювались, а вулиці ставали сценою." },
-                        { text: "Сучасна форма карнавалу сформувалась у XIX столітті. У 1823 році створили перший організаційний комітет, який запровадив структуровану програму свята, офіційні ходи та символічні персонажі. Саме тоді з’явились традиційні фігури карнавальної влади – Принц, Селянин і Діва, що представляють історичні стани міста." },
-                        { text: "Офіційно карнавальний сезон відкривається щороку 11 листопада о 11:11 – символічний «магічний час», пов’язаний з числом 11, яке у рейнській традиції вважається числом дурнів та свободи від правил. Проте кульмінація настає лише наприкінці зими, у так званий «божевільний тиждень», коли все місто перетворюється на святкову площу." },
-                        { text: "Головна особливість кельнського карнавалу – його масовість та участь самих мешканців. На відміну від багатьох фестивалів, це не видовищне шоу для публіки, а народна дія: містяни виходять на вулиці в костюмах, співають традиційні пісні на кельнському діалекті, беруть участь у ходах і святкують разом. Карнавальні товариства готуються до цього цілий рік – будують платформи, пишуть сатиричні номери та створюють складні костюми." },
-                        { text: "Карнавал виконує також соціальну функцію: він служить безпечним способом колективної сатири. Під час парадів на платформах часто зображують політиків і світові події у іронічній формі, продовжуючи давню традицію народного гумору та критики влади." },
-                    ]
-                },
-                sub_objects: {
-                    title: "Основні дні та події карнавалу",
-                    items: [
-                        { bold: "Карнавальні сесії:", text: " офіційні святкові вечори та концерти, які проводять карнавальні товариства. Програма включає гумористичні виступи, музичні номери, промови та традиційні сценічні вистави." },
-                        { bold: "Жіночий карнавал (Weiberfastnacht):", text: " четвер перед Попільною середою. Традиційний день, коли жінки символічно «захоплюють» місто – особливо ратуші – і за звичаєм обрізають чоловікам краватки. З цього дня починається вулична фаза карнавалу." },
-                        { bold: "Вуличний карнавал:", text: " період масових святкувань на вулицях, концертів, танців та гулянь по всьому місту. Люди виходять у костюмах, співають карнавальні пісні та святкують разом на вулицях." },
-                        { bold: "Рожевий понеділок – головний парад:", text: " понеділок перед Попільною середою. Центральна подія карнавалу – масштабний хід платформ, оркестрів та костюмованих учасників через центр міста." },
-                        { bold: "Фіалковий вівторок:", text: " вівторок перед Попільною середою. Завершальний день свята з фінальними вечірками та символічним прощанням з карнавальним сезоном." },
-                        { bold: "Попільна середа", text: " – перший день Великого посту у західній християнській традиції. Настає відразу після завершення карнавалу і символізує початок періоду утримання, покаяння та духовної підготовки до Пасхи. В цей день на богослужіннях вірянам наносять на лоб хрест із освяченого попелу – знак покаяння і нагадування про плинність життя." },
-                    ]
-                },
-                interestingFacts: {
-                    title: "Цікаві факти",
-                    isList: true,
-                    items: [
-                        { text: "Кельнський карнавал вважається одним із найбільших карнавалів Європи і щороку привертає понад мільйон учасників." },
-                        { text: "Головний парад Rosenmontag триває кілька годин і проходить через весь центр міста." },
-                        { text: "Учасники карнавалу традиційно використовують символіку міста, включаючи герб, карнавальні кольори та маски." },
-                        { text: "Традиція Weiberfastnacht бере початок у XIX столітті, коли жінки вперше масово брали участь у святкуваннях." }
-                    ]
-                },
-                meta: {
-                    title: "Кельнський карнавал – найбільший фестиваль Німеччини",
-                    description: "Кельнський карнавал – відоме свято з парадами, маскарадами та музичними виступами, що проходить щороку в центрі Кельна.",
-                    ogTitle: "Кельнський карнавал – найбільший фестиваль Німеччини",
-                    ogDescription: "Головний карнавальний парад Rosenmontag та Weiberfastnacht роблять Кельнський карнавал унікальною подією в Німеччині.",
-                    ogImage: "https://our-travels.info/foto/Germany/nrw/koln/koln-city/karneval/001.jpg"
-                }
-            },
-            de: {
-                name: "Kölner Karneval",
-                location: "Köln, Deutschland",
-                date: "Jährlich. Ende Februar – Anfang März: Donnerstag vor Aschermittwoch (Weiberfastnacht, erster Tag der Fastenzeit) – Aschermittwoch",
-                officialSite: [{ bold: "Offizielle Website des Kölner Karnevals", link: "https://www.koelnerkarneval.de/" }],
-                short_description: "Der Kölner Karneval ist einer der größten und bekanntesten Karnevals Deutschlands, der jährlich Hunderttausende Teilnehmer und Touristen anzieht. Die Feierlichkeiten umfassen Paraden, Maskeraden, Musik und traditionelle Umzüge durch die Stadt.",
-                full_description: {
-                    title: "Beschreibung und Geschichte",
-                    items: [
-                        { bold: "Kölner Karneval", text: " – eines der größten Volksfeste Europas und eines der wichtigsten kulturellen Ereignisse Deutschlands, das jährlich Hunderttausende Teilnehmer und über eine Million Zuschauer anzieht. Köln gilt aufgrund des Ausmaßes der Feier, der medialen Aufmerksamkeit und der Teilnehmerzahl als inoffizielle Karnevalshauptstadt. Die Tradition ist jedoch regional geprägt und umfasst viele Städte der Rheinregion, darunter Düsseldorf, Mainz, Bonn und dutzende andere, in denen eigene Karnevalsumzüge stattfinden. Die Wurzeln reichen zurück zu mittelalterlichen Volksfesten, als vor Beginn der Fastenzeit die Bewohner laute Feiern veranstalteten, die gewohnte Ordnung auf den Kopf stellten: einfache Bürger verspotteten die Macht, soziale Rollen wurden getauscht, und die Straßen wurden zur Bühne." },
-                        { text: "Die moderne Form des Karnevals entstand im 19. Jahrhundert. 1823 wurde der erste Organisationsausschuss gegründet, der ein strukturiertes Festprogramm, offizielle Umzüge und symbolische Figuren einführte. Damals entstanden auch die traditionellen Figuren der Karnevalsherrschaft – Prinz, Bauer und Jungfrau – die die historischen Stände der Stadt repräsentieren." },
-                        { text: "Offiziell beginnt die Karnevalssaison jedes Jahr am 11. November um 11:11 Uhr – die symbolische „magische Zeit“, die mit der Zahl 11 verbunden ist, die in der rheinischen Tradition als Zahl der Narren und der Freiheit von Regeln gilt. Der Höhepunkt tritt jedoch erst am Ende des Winters in der sogenannten „tollen Woche“ ein, wenn die ganze Stadt zur Festfläche wird." },
-                        { text: "Das Hauptmerkmal des Kölner Karnevals ist seine Massenbeteiligung und die Teilnahme der Einwohner selbst. Anders als bei vielen Festivals handelt es sich nicht um ein reines Publikumsspektakel, sondern um eine Volksaktion: Die Bürger gehen verkleidet auf die Straßen, singen traditionelle Lieder im Kölner Dialekt, nehmen an Umzügen teil und feiern gemeinsam. Die Karnevalsgesellschaften bereiten sich das ganze Jahr darauf vor – sie bauen Plattformen, schreiben satirische Nummern und kreieren aufwendige Kostüme." },
-                        { text: "Der Karneval erfüllt auch eine soziale Funktion: Er dient als sicherer Weg kollektiver Satire. Während der Umzüge auf den Plattformen werden oft Politiker und weltweite Ereignisse auf ironische Weise dargestellt, wodurch die alte Tradition des Volks-Humors und der Machtkritik fortgesetzt wird." },
-                    ]
-                },
-                sub_objects: {
-                    title: "Haupttage und Ereignisse des Karnevals",
-                    items: [
-                        { bold: "Karnevalssitzungen:", text: " offizielle festliche Abende und Konzerte, die von Karnevalsgesellschaften veranstaltet werden. Das Programm umfasst humoristische Darbietungen, Musiknummern, Reden und traditionelle Bühnenshows." },
-                        { bold: "Weiberfastnacht:", text: " Donnerstag vor Aschermittwoch. Traditioneller Tag, an dem Frauen symbolisch die Stadt – insbesondere das Rathaus – „übernehmen“ und den Männern nach Brauch die Krawatten abschneiden. Von diesem Tag an beginnt die Straßenphase des Karnevals." },
-                        { bold: "Straßenkarneval:", text: " Zeitraum von Massenspaß auf den Straßen, Konzerten, Tänzen und Festlichkeiten in der ganzen Stadt. Menschen gehen verkleidet hinaus, singen Karnevalslieder und feiern gemeinsam auf den Straßen." },
-                        { bold: "Rosenmontag / Rosenmontagszug:", text: " Montag vor Aschermittwoch. Zentrale Veranstaltung des Karnevals – ein großangelegter Umzug von Plattformen, Orchestern und kostümierten Teilnehmern durch das Stadtzentrum." },
-                        { bold: "Veilchendienstag:", text: " Dienstag vor Aschermittwoch. Abschlusstag des Festes mit finalen Partys und symbolischem Abschied von der Karnevalssaison." },
-                        { bold: "Aschermittwoch", text: " – erster Tag der Fastenzeit in der westlichen christlichen Tradition. Er folgt direkt auf das Ende des Karnevals und symbolisiert den Beginn einer Periode der Enthaltsamkeit, Buße und spirituellen Vorbereitung auf Ostern. An diesem Tag wird Gläubigen in Gottesdiensten ein Kreuz aus geweihtem Asche auf die Stirn gezeichnet – Zeichen der Buße und Erinnerung an die Vergänglichkeit des Lebens." },
-                    ]
-                },
-                interestingFacts: {
-                    title: "Interessante Fakten",
-                    isList: true,
-                    items: [
-                        { text: "Der Kölner Karneval gilt als einer der größten Karnevals Europas und zieht jedes Jahr über eine Million Teilnehmer an." },
-                        { text: "Der Hauptumzug am Rosenmontag dauert mehrere Stunden und zieht sich durch das gesamte Stadtzentrum." },
-                        { text: "Die Teilnehmer verwenden traditionell die Symbolik der Stadt, einschließlich ihres Wappens, der Karnevalsfarben und Masken." },
-                        { text: "Die Tradition der Weiberfastnacht geht auf das 19. Jahrhundert zurück, als Frauen erstmals in großer Zahl an den Feierlichkeiten teilnahmen." }
-                    ]
-                },
-                meta: {
-                    title: "Kölner Karneval – größtes Festival Deutschlands",
-                    description: "Der Kölner Karneval ist ein bekanntes Fest mit Paraden, Maskeraden und Musikdarbietungen, das jährlich im Zentrum von Köln stattfindet.",
-                    ogTitle: "Kölner Karneval – größtes Festival Deutschlands",
-                    ogDescription: "Der Hauptkarnevalsumzug Rosenmontag und die Weiberfastnacht machen den Kölner Karneval zu einem einzigartigen Ereignis in Deutschland.",
-                    ogImage: "https://our-travels.info/foto/Germany/nrw/koln/koln-city/karneval/001.jpg"
-                }
-            }
-        }
-    },
+    // {
+    //     id: "karneval_koln",
+    //     path: "karneval_koln",
+    //     countryPath: "germany", regionPath: "nrw", districtPath: "city", cityPath: "koln_city",
+    //     cities: ["koln_city", "frechen", "bruhl"],
+    //     season: "spring", type: ["festival"],
+    //     fotoCard: "Germany/nrw/koln/koln-city/karneval/001.jpg",
+    //     translations: {
+    //         ru: {
+    //             name: "Кёльнский карнавал",
+    //             location: "Кёльн, Германия",
+    //             date: "Ежегодно. Конец февраля – начало марта: четверг перед Пепельной средой (Weiberfastnacht, первый день Великого поста) – Пепельная среда (Aschermittwoch)",
+    //             officialSite: [{ bold: "Официальный сайт Кёльнского карнавала", link: "https://www.koelnerkarneval.de/" }],
+    //             short_description: "Кёльнский карнавал – один из крупнейших и самых известных карнавалов Германии, ежегодно собирающий сотни тысяч участников и туристов. Празднование включает парады, маскарады, музыку и традиционные шествия по городу.",
+    //             full_description: {
+    //                 title: "Описание и история",
+    //                 items: [
+    //                     { bold: "Кёльнский карнавал", text: " – одно из крупнейших народных празднеств Европы и одно из самых значимых культурных событий Германия, ежегодно собирающее сотни тысяч участников и более миллиона зрителей. Кёльн считается неофициальной столицей карнавала благодаря масштабу празднования, медийному вниманию и числу участников. При этом сама традиция носит региональный характер и охватывает множество городов Рейнской области, включая Дюссельдорф, Майнц, Бонн и десятки других, где проходят собственные карнавальные шествия. Его корни уходят в средневековые народные праздники, когда перед началом Великого поста жители устраивали шумные гуляния, переворачивая привычный порядок вещей: простые горожане высмеивали власть, социальные роли менялись, а улицы превращались в сцену." },
+    //                     { text: "Современная форма карнавала сложилась в XIX веке. В 1823 году был создан первый организационный комитет, который ввёл структурированную программу праздника, официальные шествия и символических персонажей. Именно тогда появились традиционные фигуры карнавальной власти – Принц, Крестьянин и Дева, представляющие исторические сословия города." },
+    //                     { text: "Официально карнавальный сезон открывается ежегодно 11 ноября в 11:11 – символическое «магическое время», связанное с числом 11, которое в рейнской традиции считается числом шутов и свободы от правил. Однако кульминация наступает лишь в конце зимы, в так называемую «безумную неделю», когда весь город превращается в праздничную площадку." },
+    //                     { text: "Главная особенность кёльнского карнавала – его массовость и участие самих жителей. В отличие от многих фестивалей, это не зрелище для публики, а народное действие: горожане выходят на улицы в костюмах, поют традиционные песни на кёльнском диалекте, участвуют в шествиях и празднуют вместе. Карнавальные общества готовятся к этому весь год – строят платформы, пишут сатирические номера и создают сложные костюмы." },
+    //                     { text: "Карнавал выполняет и социальную функцию: он служит безопасным способом коллективной сатиры. Во время парадов на платформах часто изображают политиков и мировые события в ироничной форме, продолжая старую традицию народного юмора и критики власти." },
+    //                 ]
+    //             },
+    //             sub_objects: {
+    //                 title: "Основные дни и события карнавала",
+    //                 items: [
+    //                     { bold: "Карнавальные сессии (Karnevalssitzungen):", text: " официальные праздничные вечера и концерты, которые проводят карнавальные общества. В программу входят юмористические выступления, музыкальные номера, речи и традиционные сценические представления." },
+    //                     { bold: "Женский карнавал (Weiberfastnacht):", text: " четверг перед Пепельной средой. Традиционный день, когда женщины символически «захватывают» город – особенно ратуши – и по обычаю отрезают мужчинам галстуки. С этого дня начинается уличная фаза карнавала." },
+    //                     { bold: "Уличный карнавал (Straßenkarneval):", text: " период массовых уличных празднований, концертов, танцев и гуляний по всему городу. Люди выходят в костюмах, поют карнавальные песни и празднуют вместе на улицах." },
+    //                     { bold: "Розовый понедельник – главный парад (Rosenmontag / Rosenmontagszug):", text: " понедельник перед Пепельной средой. Центральное событие карнавала – масштабное шествие платформ, оркестров и костюмированных участников через центр города." },
+    //                     { bold: "Фиалковый вторник (Veilchendienstag):", text: " вторник перед Пепельной средой. Завершающий день праздника с финальными вечеринками и символическим прощанием с карнавальным сезоном." },
+    //                     { bold: "Пепельная среда (Aschermittwoch)", text: " – первый день Великого поста в западной христианской традиции. Она наступает сразу после завершения карнавала и символизирует начало периода воздержания, покаяния и духовной подготовки к Пасхе. В этот день на богослужениях верующим наносят на лоб крест из освящённого пепла – знак покаяния и напоминание о бренности жизни." },
+    //                 ]
+    //             },
+    //             interestingFacts: {
+    //                 title: "Интересные факты",
+    //                 isList: true,
+    //                 items: [
+    //                     { text: "Кёльнский карнавал считается одним из крупнейших карнавалов Европы и привлекает более миллиона участников каждый год." },
+    //                     { text: "Главный парад Rosenmontag длится несколько часов и проходит через весь центр города." },
+    //                     { text: "Участники карнавала традиционно используют символику города, включая его герб, карнавальные цвета и маски." },
+    //                     { text: "Традиция «Weiberfastnacht» берет начало в XIX веке, когда женщины впервые массово участвовали в празднованиях." }
+    //                 ]
+    //             },
+    //             meta: {
+    //                 title: "Кёльнский карнавал – крупнейший фестиваль Германии",
+    //                 description: "Кёльнский карнавал – известный праздник с парадами, маскарадами и музыкальными выступлениями, проходящий ежегодно в центре Кёльна.",
+    //                 ogTitle: "Кёльнский карнавал – крупнейший фестиваль Германии",
+    //                 ogDescription: "Главный карнавальный парад Rosenmontag и Weiberfastnacht делают Кёльнский карнавал уникальным событием в Германии.",
+    //                 ogImage: "https://our-travels.info/foto/Germany/nrw/koln/koln-city/karneval/001.jpg"
+    //             }
+    //         },
+    //         uk: {
+    //             name: "Кельнський карнавал",
+    //             location: "Кельн, Німеччина",
+    //             date: "Щорічно. Кінець лютого – початок березня: четвер перед Попільною середою (Weiberfastnacht, перший день Великого посту) – Попільна середа",
+    //             officialSite: [{ bold: "Офіційний сайт Кельнського карнавалу", link: "https://www.koelnerkarneval.de/" }],
+    //             short_description: "Кельнський карнавал – один з найбільших та найвідоміших карнавалів Німеччини, щороку збирає сотні тисяч учасників та туристів. Святкування включає паради, маскаради, музику та традиційні ходи містом.",
+    //             full_description: {
+    //                 title: "Опис та історія",
+    //                 items: [
+    //                     { bold: "Кельнський карнавал", text: " – одне з найбільших народних свят Європи та одна з найважливіших культурних подій Німеччини, що щороку збирає сотні тисяч учасників і понад мільйон глядачів. Кельн вважається неофіційною столицею карнавалу завдяки масштабності святкування, медійному висвітленню та числу учасників. Традиція носить регіональний характер і охоплює багато міст Рейнської області, включно з Дюссельдорфом, Майнцом, Бонном та десятками інших, де проходять власні карнавальні ходи. Корені сягають середньовічних народних свят, коли перед Великим постом жителі влаштовували гучні гуляння, перевертаючи звичний порядок речей: прості містяни висміювали владу, соціальні ролі змінювались, а вулиці ставали сценою." },
+    //                     { text: "Сучасна форма карнавалу сформувалась у XIX столітті. У 1823 році створили перший організаційний комітет, який запровадив структуровану програму свята, офіційні ходи та символічні персонажі. Саме тоді з’явились традиційні фігури карнавальної влади – Принц, Селянин і Діва, що представляють історичні стани міста." },
+    //                     { text: "Офіційно карнавальний сезон відкривається щороку 11 листопада о 11:11 – символічний «магічний час», пов’язаний з числом 11, яке у рейнській традиції вважається числом дурнів та свободи від правил. Проте кульмінація настає лише наприкінці зими, у так званий «божевільний тиждень», коли все місто перетворюється на святкову площу." },
+    //                     { text: "Головна особливість кельнського карнавалу – його масовість та участь самих мешканців. На відміну від багатьох фестивалів, це не видовищне шоу для публіки, а народна дія: містяни виходять на вулиці в костюмах, співають традиційні пісні на кельнському діалекті, беруть участь у ходах і святкують разом. Карнавальні товариства готуються до цього цілий рік – будують платформи, пишуть сатиричні номери та створюють складні костюми." },
+    //                     { text: "Карнавал виконує також соціальну функцію: він служить безпечним способом колективної сатири. Під час парадів на платформах часто зображують політиків і світові події у іронічній формі, продовжуючи давню традицію народного гумору та критики влади." },
+    //                 ]
+    //             },
+    //             sub_objects: {
+    //                 title: "Основні дні та події карнавалу",
+    //                 items: [
+    //                     { bold: "Карнавальні сесії:", text: " офіційні святкові вечори та концерти, які проводять карнавальні товариства. Програма включає гумористичні виступи, музичні номери, промови та традиційні сценічні вистави." },
+    //                     { bold: "Жіночий карнавал (Weiberfastnacht):", text: " четвер перед Попільною середою. Традиційний день, коли жінки символічно «захоплюють» місто – особливо ратуші – і за звичаєм обрізають чоловікам краватки. З цього дня починається вулична фаза карнавалу." },
+    //                     { bold: "Вуличний карнавал:", text: " період масових святкувань на вулицях, концертів, танців та гулянь по всьому місту. Люди виходять у костюмах, співають карнавальні пісні та святкують разом на вулицях." },
+    //                     { bold: "Рожевий понеділок – головний парад:", text: " понеділок перед Попільною середою. Центральна подія карнавалу – масштабний хід платформ, оркестрів та костюмованих учасників через центр міста." },
+    //                     { bold: "Фіалковий вівторок:", text: " вівторок перед Попільною середою. Завершальний день свята з фінальними вечірками та символічним прощанням з карнавальним сезоном." },
+    //                     { bold: "Попільна середа", text: " – перший день Великого посту у західній християнській традиції. Настає відразу після завершення карнавалу і символізує початок періоду утримання, покаяння та духовної підготовки до Пасхи. В цей день на богослужіннях вірянам наносять на лоб хрест із освяченого попелу – знак покаяння і нагадування про плинність життя." },
+    //                 ]
+    //             },
+    //             interestingFacts: {
+    //                 title: "Цікаві факти",
+    //                 isList: true,
+    //                 items: [
+    //                     { text: "Кельнський карнавал вважається одним із найбільших карнавалів Європи і щороку привертає понад мільйон учасників." },
+    //                     { text: "Головний парад Rosenmontag триває кілька годин і проходить через весь центр міста." },
+    //                     { text: "Учасники карнавалу традиційно використовують символіку міста, включаючи герб, карнавальні кольори та маски." },
+    //                     { text: "Традиція Weiberfastnacht бере початок у XIX столітті, коли жінки вперше масово брали участь у святкуваннях." }
+    //                 ]
+    //             },
+    //             meta: {
+    //                 title: "Кельнський карнавал – найбільший фестиваль Німеччини",
+    //                 description: "Кельнський карнавал – відоме свято з парадами, маскарадами та музичними виступами, що проходить щороку в центрі Кельна.",
+    //                 ogTitle: "Кельнський карнавал – найбільший фестиваль Німеччини",
+    //                 ogDescription: "Головний карнавальний парад Rosenmontag та Weiberfastnacht роблять Кельнський карнавал унікальною подією в Німеччині.",
+    //                 ogImage: "https://our-travels.info/foto/Germany/nrw/koln/koln-city/karneval/001.jpg"
+    //             }
+    //         },
+    //         de: {
+    //             name: "Kölner Karneval",
+    //             location: "Köln, Deutschland",
+    //             date: "Jährlich. Ende Februar – Anfang März: Donnerstag vor Aschermittwoch (Weiberfastnacht, erster Tag der Fastenzeit) – Aschermittwoch",
+    //             officialSite: [{ bold: "Offizielle Website des Kölner Karnevals", link: "https://www.koelnerkarneval.de/" }],
+    //             short_description: "Der Kölner Karneval ist einer der größten und bekanntesten Karnevals Deutschlands, der jährlich Hunderttausende Teilnehmer und Touristen anzieht. Die Feierlichkeiten umfassen Paraden, Maskeraden, Musik und traditionelle Umzüge durch die Stadt.",
+    //             full_description: {
+    //                 title: "Beschreibung und Geschichte",
+    //                 items: [
+    //                     { bold: "Kölner Karneval", text: " – eines der größten Volksfeste Europas und eines der wichtigsten kulturellen Ereignisse Deutschlands, das jährlich Hunderttausende Teilnehmer und über eine Million Zuschauer anzieht. Köln gilt aufgrund des Ausmaßes der Feier, der medialen Aufmerksamkeit und der Teilnehmerzahl als inoffizielle Karnevalshauptstadt. Die Tradition ist jedoch regional geprägt und umfasst viele Städte der Rheinregion, darunter Düsseldorf, Mainz, Bonn und dutzende andere, in denen eigene Karnevalsumzüge stattfinden. Die Wurzeln reichen zurück zu mittelalterlichen Volksfesten, als vor Beginn der Fastenzeit die Bewohner laute Feiern veranstalteten, die gewohnte Ordnung auf den Kopf stellten: einfache Bürger verspotteten die Macht, soziale Rollen wurden getauscht, und die Straßen wurden zur Bühne." },
+    //                     { text: "Die moderne Form des Karnevals entstand im 19. Jahrhundert. 1823 wurde der erste Organisationsausschuss gegründet, der ein strukturiertes Festprogramm, offizielle Umzüge und symbolische Figuren einführte. Damals entstanden auch die traditionellen Figuren der Karnevalsherrschaft – Prinz, Bauer und Jungfrau – die die historischen Stände der Stadt repräsentieren." },
+    //                     { text: "Offiziell beginnt die Karnevalssaison jedes Jahr am 11. November um 11:11 Uhr – die symbolische „magische Zeit“, die mit der Zahl 11 verbunden ist, die in der rheinischen Tradition als Zahl der Narren und der Freiheit von Regeln gilt. Der Höhepunkt tritt jedoch erst am Ende des Winters in der sogenannten „tollen Woche“ ein, wenn die ganze Stadt zur Festfläche wird." },
+    //                     { text: "Das Hauptmerkmal des Kölner Karnevals ist seine Massenbeteiligung und die Teilnahme der Einwohner selbst. Anders als bei vielen Festivals handelt es sich nicht um ein reines Publikumsspektakel, sondern um eine Volksaktion: Die Bürger gehen verkleidet auf die Straßen, singen traditionelle Lieder im Kölner Dialekt, nehmen an Umzügen teil und feiern gemeinsam. Die Karnevalsgesellschaften bereiten sich das ganze Jahr darauf vor – sie bauen Plattformen, schreiben satirische Nummern und kreieren aufwendige Kostüme." },
+    //                     { text: "Der Karneval erfüllt auch eine soziale Funktion: Er dient als sicherer Weg kollektiver Satire. Während der Umzüge auf den Plattformen werden oft Politiker und weltweite Ereignisse auf ironische Weise dargestellt, wodurch die alte Tradition des Volks-Humors und der Machtkritik fortgesetzt wird." },
+    //                 ]
+    //             },
+    //             sub_objects: {
+    //                 title: "Haupttage und Ereignisse des Karnevals",
+    //                 items: [
+    //                     { bold: "Karnevalssitzungen:", text: " offizielle festliche Abende und Konzerte, die von Karnevalsgesellschaften veranstaltet werden. Das Programm umfasst humoristische Darbietungen, Musiknummern, Reden und traditionelle Bühnenshows." },
+    //                     { bold: "Weiberfastnacht:", text: " Donnerstag vor Aschermittwoch. Traditioneller Tag, an dem Frauen symbolisch die Stadt – insbesondere das Rathaus – „übernehmen“ und den Männern nach Brauch die Krawatten abschneiden. Von diesem Tag an beginnt die Straßenphase des Karnevals." },
+    //                     { bold: "Straßenkarneval:", text: " Zeitraum von Massenspaß auf den Straßen, Konzerten, Tänzen und Festlichkeiten in der ganzen Stadt. Menschen gehen verkleidet hinaus, singen Karnevalslieder und feiern gemeinsam auf den Straßen." },
+    //                     { bold: "Rosenmontag / Rosenmontagszug:", text: " Montag vor Aschermittwoch. Zentrale Veranstaltung des Karnevals – ein großangelegter Umzug von Plattformen, Orchestern und kostümierten Teilnehmern durch das Stadtzentrum." },
+    //                     { bold: "Veilchendienstag:", text: " Dienstag vor Aschermittwoch. Abschlusstag des Festes mit finalen Partys und symbolischem Abschied von der Karnevalssaison." },
+    //                     { bold: "Aschermittwoch", text: " – erster Tag der Fastenzeit in der westlichen christlichen Tradition. Er folgt direkt auf das Ende des Karnevals und symbolisiert den Beginn einer Periode der Enthaltsamkeit, Buße und spirituellen Vorbereitung auf Ostern. An diesem Tag wird Gläubigen in Gottesdiensten ein Kreuz aus geweihtem Asche auf die Stirn gezeichnet – Zeichen der Buße und Erinnerung an die Vergänglichkeit des Lebens." },
+    //                 ]
+    //             },
+    //             interestingFacts: {
+    //                 title: "Interessante Fakten",
+    //                 isList: true,
+    //                 items: [
+    //                     { text: "Der Kölner Karneval gilt als einer der größten Karnevals Europas und zieht jedes Jahr über eine Million Teilnehmer an." },
+    //                     { text: "Der Hauptumzug am Rosenmontag dauert mehrere Stunden und zieht sich durch das gesamte Stadtzentrum." },
+    //                     { text: "Die Teilnehmer verwenden traditionell die Symbolik der Stadt, einschließlich ihres Wappens, der Karnevalsfarben und Masken." },
+    //                     { text: "Die Tradition der Weiberfastnacht geht auf das 19. Jahrhundert zurück, als Frauen erstmals in großer Zahl an den Feierlichkeiten teilnahmen." }
+    //                 ]
+    //             },
+    //             meta: {
+    //                 title: "Kölner Karneval – größtes Festival Deutschlands",
+    //                 description: "Der Kölner Karneval ist ein bekanntes Fest mit Paraden, Maskeraden und Musikdarbietungen, das jährlich im Zentrum von Köln stattfindet.",
+    //                 ogTitle: "Kölner Karneval – größtes Festival Deutschlands",
+    //                 ogDescription: "Der Hauptkarnevalsumzug Rosenmontag und die Weiberfastnacht machen den Kölner Karneval zu einem einzigartigen Ereignis in Deutschland.",
+    //                 ogImage: "https://our-travels.info/foto/Germany/nrw/koln/koln-city/karneval/001.jpg"
+    //             }
+    //         }
+    //     }
+    // },
     {
         id: "winterleuchten_dortmund",
         path: "winterleuchten_dortmund",
