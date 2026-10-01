@@ -31,6 +31,7 @@ const allAttractionsRouter = require("./routes/allAttr.router.js")
 const attractionRouter = require("./routes/attraction.router.js")
 const routRouter = require("./routes/rout.router.js")
 const unescoRouter = require("./routes/unesco.roter.js")
+const eventRouter = require("./routes/event.roter.js")
 
 // COUNTRY LIST API
 app.use("/api/countries", listCountriesRouter);
@@ -73,6 +74,9 @@ app.use("/api/route", routRouter);
 
 // UNESCO
 app.use("/api/unesco", unescoRouter);
+
+// EVENT
+app.use("/api/event", eventRouter);
 
 
 // запуск сервера

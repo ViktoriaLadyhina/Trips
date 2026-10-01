@@ -13,7 +13,7 @@ router.get("/:cityPath", async (req, res) => {
     const { cityPath } = req.params;
     const lang = req.query.lang || "ru";
 
-    // 1. ИЩЕМ РЕГИОН
+    // 1. ИЩЕМ город
     const [cityRows] = await db.query(
       `
 SELECT 
@@ -38,18 +38,94 @@ LIMIT 1
     const city = cityRows[0];
     const blockType = city.type || "city";
 
-    // 3. BLOCKS
+    // 2. BLOCKS
     const blocks = await getBlocks(db, city.id, lang, blockType);
 
-    // 4. META
+    // 3. META
     const meta = await getMeta(db, city.id, lang);
 
-    // 5. PHOTOS (NEW SYSTEM)
+    // 4. PHOTOS
     const { photos, mainPhoto } = await getEntityPhotos(db, city.id);
 
+    // 5. RECOMMENDATIONS
     const recommendations = await getCityRecommendations(db, city.id, lang);
 
-    // 8. RESPONSE
+    // 6. EVENTS
+   const [eventRows] = await db.query(
+    `
+    SELECT
+        e.id,
+        e.path
+    FROM entities e
+    JOIN entity_locations l
+        ON l.entity_id = e.id
+    WHERE l.city_id = ?
+        AND e.type = 'event'
+        AND e.is_active = 1
+
+    UNION
+
+    SELECT
+        e.id,
+        e.path
+    FROM entity_relations r
+    JOIN entities e
+        ON e.id = r.child_id
+    WHERE r.parent_id = ?
+        AND r.relation = 'region_event'
+        AND e.type = 'event'
+        AND e.is_active = 1
+    `,
+    [city.id, city.id]
+);
+
+const eventIds = eventRows.map(row => row.id);
+
+let eventContentRows = [];
+
+if (eventIds.length) {
+
+    const placeholders = eventIds.map(() => "?").join(",");
+
+    [eventContentRows] = await db.query(
+        `
+        SELECT
+            entity_id,
+            block_key,
+            content
+        FROM content
+        WHERE entity_id IN (${placeholders})
+            AND language = ?
+            AND block_key IN (
+                'name',
+                'short_description',
+                'date'
+            )
+        `,
+        [...eventIds, lang]
+    );
+}
+
+const eventData = {};
+
+for (const row of eventContentRows) {
+
+    if (!eventData[row.entity_id]) {
+        eventData[row.entity_id] = {};
+    }
+
+    eventData[row.entity_id][row.block_key] = row.content;
+}
+
+const cityEvents = eventRows.map(event => ({
+    id: event.id,
+    path: event.path,
+    name: eventData[event.id]?.name || "",
+    short_description: eventData[event.id]?.short_description || "",
+    date: eventData[event.id]?.date || ""
+}));
+
+    // 7. RESPONSE
     res.json({
       id: city.id,
       type: city.type,
@@ -64,7 +140,8 @@ LIMIT 1
       photos,
       mainPhoto,
 
-      recommendations
+      recommendations,
+      cityEvents
     });
 
   } catch (err) {

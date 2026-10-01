@@ -53,3 +53,6 @@ export const getRoute = (routePath, lang = "ru") =>
 
 export const getUnesco = (lang = "ru") =>
     apiFetch(`${BASE_URL}/api/unesco?lang=${lang}`);
+
+export const getEvent = (eventPath, lang = "ru") =>
+    apiFetch(`${BASE_URL}/api/event/${eventPath}?lang=${lang}`);
