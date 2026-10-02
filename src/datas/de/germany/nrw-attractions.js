@@ -956,13 +956,11 @@ const datas = [
         type: ["historical_area"], rating: "popular",
         path: "historic_center_monschau",
         countryPath: "germany", regionPath: "nrw", districtPath: "koln", cityPath: "monschau",
-        subObjects: ["rotes_haus_monschau", "senfmuehle_monschau", "glashuette_monschau", "tuchmacherbrunnen_monschau"],
+        subObjects: ["rotes_haus_monschau", "tuchmacherbrunnen_monschau"],
         short_description_subObjects: {
             text: "In der Altstadt von Monschau befindet sich folgende Sehenswürdigkeit:",
             items: [
                 { bold: "Rotes Haus", text: "– ein herausragendes historisches Hausmuseum im Zentrum der Altstadt von Monschau" },
-                { bold: "Historische Senfmühle", text: "– historischer Senfmühle in der Altstadt von Monschau mit aktiver Produktion und Senfverkostung" },
-                { bold: "Glashütte", text: "– Werkstatt mit Live-Demonstrationen der Glasbläser, bei der man den Herstellungsprozess von Glasprodukten beobachten und Souvenirs kaufen kann" },
                 { bold: "Tuchmacherbrunnen", text: "– kleiner Brunnen in Monschau, gewidmet der Weberei und der textilen Geschichte der Stadt" },
             ]
         },
@@ -1059,118 +1057,6 @@ const datas = [
         }
     },
     {
-        id: "senfmuehle_monschau",
-        name: "Historische Senfmühle",
-        type: ["museum"], rating: "local",
-        path: "senfmuehle_monschau",
-        countryPath: "germany", regionPath: "nrw", districtPath: "koln", cityPath: "monschau",
-        hiddenFromList: true, showMore: true,
-        fotoCard: "Germany/nrw/koln/Aachen/monschau/senfmuehle/001.jpg",
-        location: "Monschau, Deutschland",
-        officialSite: [{ bold: "Offizielle Webseite", link: "http://www.senfmuehle.de/start/ " }],
-        short_description: "Die Historische Senfmühle in Monschau ist ein Familienunternehmen mit über 100-jähriger Geschichte, in dem traditionelle deutsche Senfsaucen auf historischen mechanischen Anlagen mit Wasserantrieb hergestellt werden. Besucher können den Produktionsprozess beobachten, verschiedene Sorten probieren und die Produkte im Laden vor Ort erwerben.",
-        full_description: {
-            title: "Beschreibung und Geschichte",
-            items: [
-                { bold: "Historische Senfmühle Monschau", text: "– eine der authentischsten und beliebtesten Sehenswürdigkeiten der Altstadt von Monschau. Die Mühle liegt zwischen malerischen Fachwerkhäusern in der Laufenstraße, im Herzen der Altstadt, und ist ein Pflichtbesuch für Touristen, die sich für die traditionelle deutsche Küche und Kultur der Region interessieren. Hier kann man den einzigartigen Herstellungsprozess von Senf sehen, der Methoden aus dem frühen 20. Jahrhundert bewahrt." },
-                { bold: "Geschichte.", text: "Die Geschichte der Mühle reicht über 100 Jahre zurück. Ursprünglich diente der Komplex als Teil der Textilindustrie der Region. Mitte des 20. Jahrhunderts, 1952, wurde das Unternehmen von der Familie Breuer übernommen, die hier begann, traditionellen Senf herzustellen. Seitdem ist die Produktion ein Familienbetrieb, und die Rezepte sowie die Methoden der Senfverarbeitung werden von Generation zu Generation weitergegeben." },
-                { bold: "Ausstattung und Produktion.", text: "In der Mühle wird das originale Wasserantriebs-Equipment verwendet, das seit der Gründung erhalten geblieben ist. Dies macht den Senfherstellungsprozess nicht nur einzigartig, sondern verwandelt ihn auch in eine anschauliche historische Ausstellung. Besucher können beobachten, wie die Senfkörner zerkleinert und zu fertigem Produkt verarbeitet werden, sowie verschiedene Sorten probieren, von klassischen bis zu aromatisierten Varianten mit Feige, Honig oder Riesling." },
-                { bold: "Laden und Verkostung.", text: "Heute vereint die Mühle Museum, Produktionsbetrieb und Laden. Die Gäste können nicht nur den Herstellungsprozess beobachten, sondern auch Produkte vor Ort erwerben. Besonderes Augenmerk liegt auf Qualität und Authentizität: Jede Senfcharge wird von Hand nach traditioneller Technik hergestellt, wodurch Geschmack und Aroma einzigartig bleiben." },
-                { bold: "Bedeutung für die Stadt.", text: "Die Historische Senfmühle ist ein Symbol des kulturellen Erbes von Monschau. Sie zieht Touristen durch ihre Authentizität an und ermöglicht es, in die Atmosphäre der Altstadt einzutauchen, regionale Traditionen kennenzulernen und zu sehen, wie Geschichte Teil der modernen Gastronomie sein kann." }
-            ]
-        },
-        tickets_and_entry: {
-            title: "Praktische Informationen",
-            items: [
-                { bold: "Adresse:", text: "Laufenstraße 116–124, 52156 Monschau (NRW, Deutschland)", link: "https://goo.gl/maps/XYZ123" },
-                { bold: "Öffnungszeiten: ", text: "täglich ungefähr 08:30-18:00, an Wochenenden etwas kürzer; <br>Führungen nach Vereinbarung oder in der Saison nach Plan möglich." }
-            ]
-        },
-        sub_objects: {
-            title: "Ausstellungen",
-            items: [
-                { bold: "Produktionsprozess: ", text: "Besucher können beobachten, wie die Senfkörner zerkleinert und mit Hilfe des originalen Equipments zu fertigem Produkt verarbeitet werden." },
-                { bold: "Sortenausstellung:", text: "Über 20 Senfsorten – von klassischen bis zu aromatisierten Varianten (Honig, Mohn, Riesling, Feige, Curry etc.)." },
-                { bold: "Boutique-Laden:", text: "Vor Ort können Produkte als Souvenir oder Geschenk erworben werden." }
-            ]
-        },
-        interestingFacts: {
-            title: "Interessante Fakten",
-            items: [
-                { bold: "Das Wasserrad funktioniert noch", text: "– die Mühle nutzt den originalen Antrieb aus dem Fluss, der alle Mechanismen zur Zerkleinerung der Senfkörner in Bewegung setzt." },
-                { bold: "Familiäre Tradition", text: "– die Senfproduktion befindet sich seit 1952 im Besitz der Familie Breuer, die Rezepte werden von Generation zu Generation weitergegeben." },
-                { bold: "Über 20 Senfsorten", text: "– vor Ort kann man klassische, scharfe, süße und aromatisierte Varianten (Feige, Riesling, Honig, Curry) probieren." },
-                { bold: "Live-Demonstration der Produktion", text: "– Touristen können den gesamten Prozess vom Samen bis zum fertigen Produkt beobachten, was den Besuch interaktiv und lehrreich macht." },
-                { bold: "Senf als Geschenk", text: "– der Laden der Mühle bietet Souvenir-Sets an, was den Ort bei Touristen beliebt macht, die lokale Geschenke suchen." },
-                { bold: "Einzigartige Kombination aus Museum und aktiver Produktion", text: "– solche lebendigen 'Fabrikmuseen' sind in Deutschland selten, besonders in kleinen Städten wie Monschau." }
-            ]
-        },
-        construction_period: "Das Alter der Fabrik beträgt über 100 Jahre, und die Familienproduktion von Senf besteht seit Anfang des 20. Jahrhunderts (seit den 1950er Jahren unter der Leitung der Familie Breuer).",
-        founder: "Historisch entwickelte sich das Objekt als Produktionskomplex; die Senfproduktion erhielt neues Leben mit der Übernahme in Familienbesitz der Familie Breuer im Jahr 1952.",
-        coord: { lat: 50.56250, lng: 6.23828 },
-        meta: {
-            title: "Historische Senfmühle Monschau – Museum und Senfverkostung",
-            description: "Besuchen Sie die Senfmühle in Monschau mit über 100-jähriger Geschichte. Beobachten Sie die Herstellung, probieren Sie über 20 Sorten und kaufen Sie Produkte vor Ort.",
-            ogTitle: "Historische Senfmühle – traditionelles deutsches Senfparadies",
-            ogDescription: "Erfahren Sie, wie im Herzen von Monschau legendärer deutscher Senf nach alten Rezepten hergestellt wird! Mehr als 20 Geschmacksrichtungen, Live-Herstellung und ein gemütlicher Laden direkt im historischen Zentrum.",
-            keywords: "Historische Senfmühle, Monschau, Sehenswürdigkeit, Mühle, Senf, historische Produktion, Museum, Führungen, Tourismus Deutschland, Traditionen, Kultur, Altstadt Monschau, Fotos",
-            ogImage: "https://our-travels.info/foto/Germany/nrw/koln/Aachen/monschau/senfmuehle/001.jpg"
-        }
-    },
-    {
-        id: "glashuette_monschau",
-        name: "Glashütte",
-        type: ["museum"], rating: "popular",
-        path: "glashuette_monschau",
-        countryPath: "germany", regionPath: "nrw", districtPath: "koln", cityPath: "monschau",
-        hiddenFromList: true, showMore: true,
-        fotoCard: "Germany/nrw/koln/Aachen/monschau/glashuette/001.jpg",
-        short_description: "Glashütte Monschau – eine Glasmacherei und Ausstellungszentrum für traditionelles Glasmacherhandwerk in der historischen Stadt Monschau. Besucher können den lebendigen Herstellungsprozess beobachten: vom Schmelzen des Glases bis zur Formung von Flaschen, Gefäßen und dekorativen Figuren durch Glasblasen.",
-        full_description: {
-            title: "Beschreibung und Geschichte",
-            items: [
-                { bold: "Glashütte Monschau", text: "bietet ein einzigartiges Erlebnis zur Einführung in das alte Glasmacherhandwerk. Hier stellt der Meister Glasprodukte direkt vor den Besuchern her und demonstriert Kunstfertigkeit, die auf Techniken zurückgeht, die bereits im Römischen Reich angewendet wurden. Während der Demonstration können Sie sehen, wie aus geschmolzenem Sand, Pottasche und Kalk feine Glasgefäße und Figuren durch die Fähigkeiten des Meisters entstehen." },
-                { text: "Neben der Handwerksdemonstration umfasst die Glashütte auch große Ausstellungs- und Verkaufsbereiche, in denen einzigartige Glasprodukte präsentiert werden. Der Besuch ist nicht nur für Liebhaber von Geschichte und Handwerk interessant, sondern für alle, die die traditionelle Produktion in Aktion erleben möchten – der Eintritt ist das ganze Jahr über frei, und die Produkte können vor Ort erworben werden." },
-                { bold: "Geschichte. ", text: "Die Geschichte des Glasmacherhandwerks reicht bis in die Antike zurück: die Technik des Glasblasens entwickelte sich bereits im Römischen Reich, und ihre Grundlagen sind bis heute erhalten geblieben. In der Glashütte Monschau wird dieses Handwerk von Generation zu Generation weitergegeben und zeigt traditionelle Verfahren der Glasbearbeitung, die über Jahrhunderte verfeinert wurden." },
-                { text: "Der Ort hat sich zu einem beliebten Kulturzentrum in der Region Eifel entwickelt, da er das technische Handwerk vergangener Zeiten lebendig erhält. Heute arbeitet hier ein Team erfahrener Glasmacher, die nicht nur ihr Können demonstrieren, sondern auch das kulturelle Erbe für zukünftige Generationen von Besuchern bewahren." }
-            ]
-        },
-        tickets_and_entry: {
-            title: "Praktische Informationen",
-            items: [
-                { bold: "Adresse:", text: "Burgau 15, 52156 Monschau, Deutschland." },
-                { bold: "Öffnungszeiten: ", text: "in der Regel von 10:00 bis 18:00 an Werktagen und Wochenenden während des gesamten Jahres." },
-                { bold: "Glasbläser-Demonstrationen: ", text: "täglich zu festgelegten Zeiten (10:15, 11:15, 12:15, 13:45, 14:45, 15:45 und 16:45)." },
-                { bold: "Eintritt: ", text: "Die Demonstrationen sind kostenlos; kostenpflichtige Teilnahme an Workshops möglich (je nach Saison)." }
-            ]
-        },
-        sub_objects: {
-            title: "Exponate",
-            items: [
-                { bold: "In der Glashütte gezeigt:", text: "<br><br>• Live-Demonstrationen der Glasmacher" },
-                { text: "• Ausstellung verschiedener Glasprodukte in traditionellem und modernem Stil" },
-                { text: "• Verkaufsbereich mit der Möglichkeit, individuelle Produkte zu kaufen oder zu bestellen." }
-            ]
-        },
-        interestingFacts: {
-            title: "Interessante Fakten",
-            items: [
-                { text: "Die Technik des Glasblasens wird so demonstriert, wie sie vor 2000 Jahren von Meistern angewendet wurde." },
-                { text: "Die Teilnahme an einem Workshop ermöglicht nicht nur das Beobachten, sondern auch das Verstehen der komplexen Schritte bei der Herstellung eines gewöhnlichen Glasgefäßes." },
-                { text: "Die Glashütte Monschau ist Teil des Kulturerbes der Eifelregion und eine beliebte Touristenattraktion." }
-            ]
-        },
-        coord: { lat: 50.552844, lng: 6.236908 },
-        meta: {
-            title: "Glashütte Monschau – Glasmacherei in Monschau",
-            description: "Besuchen Sie die Glashütte Monschau: Live-Demonstrationen der Glasmacher, Ausstellung von Glasprodukten und traditionelles Handwerk für die ganze Familie.",
-            ogTitle: "Glashütte Monschau – lebendige Erfahrung mit Glasmachern im Herzen der Eifel",
-            ogDescription: "Erfahren Sie, wie Meister heißes Glas in Kunstwerke verwandeln. Geschichte, Handwerk und Ausstellungen in historischem Monschau.",
-            keywords: "Glasbläserei, Monschau, Sehenswürdigkeit, Glasbläser, handwerkliche Produktion, Museum, Führungen, Tourismus Deutschland, Traditionen, Kultur, Altstadt Monschau, Fotos, Handwerksbetriebe",
-            ogImage: "https://our-travels.info/foto/Germany/nrw/koln/Aachen/monschau/glashuette/001.jpg"
-        }
-    },
-    {
         id: "burg_monschau",
         name: "Burg Monschau",
         type: ["palace_or_castle"], rating: "local",
@@ -1222,55 +1108,6 @@ const datas = [
     // Rhein-Erft-Kreis
 
     // Brühl
-    {
-        id: "max_ernst_museum",
-        name: "Max-Ernst-Museum",
-        type: ['museum'], rating: "popular",
-        path: "max_ernst_museum",
-        countryPath: "germany", regionPath: "nrw", districtPath: "koln", cityPath: "bruhl",
-        fotoCard: "Germany/nrw/koln/Rhein-Erft-Kreis/bruhl/max_ernst_museum/Max-Ernst-Museum.jpg",
-        location: "Brühl, Deutschland",
-        address: [{ bold: "Adresse:", text: " Comesstraße 42 / Max-Ernst-Allee 1, 50321 Brühl, Deutschland" }],
-        officialSite: [
-            { bold: 'Offizielle Webseite des Max-Ernst-Museums', link: 'https://maxernstmuseum.lvr.de/en/startseite_1.html' }
-        ],
-        tickets_and_entry: {
-            title: "Tickets und Eintritt",
-            items: [
-                { bold: "Eintritt ins Museum:", text: " Erwachsene — 5 €, Ermäßigungen für Familien mit Kindern vorgesehen." },
-                { bold: "Öffnungszeiten:", text: " Dienstag–Sonntag, 11:00–18:00." }
-            ]
-        },
-        short_description: "Das Max-Ernst-Museum in Brühl ist das einzige Museum weltweit, das dem Leben und Werk des Künstlers Max Ernst (1891–1976) gewidmet ist. Das Museum wurde 2005 eröffnet und befindet sich auf dem Gelände eines Palastkomplexes im Klassizismus des 19. Jahrhunderts.",
-        full_description: {
-            title: "Beschreibung und Geschichte",
-            items: [
-                { text: "Das Max-Ernst-Museum in Brühl (Max Ernst Museum Brühl des LVR) ist das einzige Museum weltweit, das dem Leben und Werk des Künstlers Max Ernst (1891–1976) gewidmet ist. Es befindet sich in einem Gebäude, das von den Architekten Thomas van den Valentijn und Seyed Mohammad Oreizi entworfen wurde, und wurde im September 2005 eröffnet. Das Museum liegt auf dem Gelände eines Palastkomplexes im Klassizismus des 19. Jahrhunderts. maxernstmuseum.lvr.de" },
-                { text: "Die Sammlung des Museums umfasst über 70 Jahre Schaffens von Max Ernst und enthält etwa 2040 Exponate, darunter Gemälde, Skulpturen, Objekte, Fotografien und Papierarbeiten. Besonderes Augenmerk liegt auf seiner dadaistischen und surrealistischen Phase. Das Museum veranstaltet regelmäßig Sonderausstellungen, in denen zeitgenössische Künstler gezeigt werden, die die Traditionen von Dadaismus und Surrealismus fortsetzen." },
-                { text: "Der Bau des Max-Ernst-Museums zog sich lange hin: Die Fertigstellung verzögerte sich um fünf Monate, und für das Projekt wurden 14 Millionen Euro ausgegeben." },
-                { text: "Max Ernst wurde 1891 in Brühl geboren. Er gilt als Pionier des Dadaismus und als einer der Begründer des Surrealismus." },
-                { text: "Früher gab es in Brühl bereits ein Atelier-Museum von Ernst, das in einem Skandal endete: Die Stadt verkaufte eines der vom Künstler geschenkten Gemälde, um die Unterhaltskosten zu decken. Ernst war verärgert, aber der jahrelange Streit endete mit Versöhnung, und das Bild kehrte als Exponat zurück, das vorübergehend vom Kölner Museum Ludwig bereitgestellt wurde." }
-            ]
-        },
-        interestingFacts: {
-            title: "Interessante Fakten",
-            items: [
-                { text: "Das Max-Ernst-Museum ist das einzige Museum weltweit, das vollständig dem Werk von Ernst gewidmet ist." },
-                { text: "Die Finanzierung des Museums erfolgt durch den LVR-Fonds gemeinsam mit den Stadt- und Regionalbehörden." }
-            ]
-        },
-        construction_period: "2000–2005",
-        founder: "LVR-Fonds (Stadt- und Regionalbehörden)",
-        coord: { lat: 50.83029, lng: 6.90980 },
-        meta: {
-            title: "Max-Ernst-Museum in Brühl: Leben und Werk des Künstlers",
-            description: "Das einzige Museum weltweit, das Max Ernst gewidmet ist. Sammlung, Geschichte, Dadaismus, Surrealismus, Sonderausstellungen.",
-            ogTitle: "Max-Ernst-Museum — Brühl, Deutschland",
-            ogDescription: "Entdecken Sie das Max-Ernst-Museum in Brühl, seine Sammlung und Ausstellungen, die dem Dadaismus und Surrealismus gewidmet sind.",
-            keywords: "Max Ernst Museum, Brühl, Sehenswürdigkeit, moderne Kunst, Malerei, Skulptur, Museum, Ausstellungen, Tourismus Deutschland, Kultur, Fotos",
-            ogImage: "https://our-travels.info/foto/Germany/nrw/koln/Rhein-Erft-Kreis/bruhl/max_ernst_museum/Max-Ernst-Museum.jpg"
-        }
-    },
     {
         id: "phantasialand",
         name: "Phantasialand",

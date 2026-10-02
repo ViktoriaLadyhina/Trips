@@ -571,7 +571,7 @@ const showMysqlFilters =
                                 }
 
                                 {sortedStaticSubObjects.map(attr => (
-                                    <AttractionCardSub key={attr.id} attr={attr} lang={lang} />
+                                    <AttractionCard key={attr.id} attr={attr} lang={lang} />
                                 )
                                 )
                                 }

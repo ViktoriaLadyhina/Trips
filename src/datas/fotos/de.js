@@ -163,9 +163,6 @@ export const Fotos = {
         { path: "Germany/nrw/koln/Rhein-Erft-Kreis/bruhl/phantasialand/019.jpg", title: { ru: "Американские горки, 2006", uk: "Американські гірки, 2006", de: "Achterbahn, 2006" } },
         { path: "Germany/nrw/koln/Rhein-Erft-Kreis/bruhl/phantasialand/020.jpg", title: { ru: "Пруд с утками и карпами, 2006", uk: "Став з качками та коропами, 2006", de: "Teich mit Enten und Karpfen, 2006" } }
       ],
-      "max-ernst-museum": [
-        { path: "Germany/nrw/koln/Rhein-Erft-Kreis/bruhl/max_ernst_museum/Max-Ernst-Museum.jpg", title: { ru: "Музей Макса Эрнста (фото взято с интернета)", uk: "Музей Макса Ернста (фото взято з Інтернету)", de: "Max Ernst Museum (Foto aus dem Internet)" } }
-      ],
     },
     frechen: {
       keramion: [
@@ -329,14 +326,6 @@ export const Fotos = {
       rotes_haus_monschau: [
         { path: "Germany/nrw/koln/Aachen/monschau/rotes_haus/001.jpg", title: { ru: "Красный дом, 2026", uk: "Червоний будинок, 2026", de: "Rotes Haus, 2026" } },
         { path: "Germany/nrw/koln/Aachen/monschau/rotes_haus/002.jpg", title: { ru: "Красный дом (фото взято с интернета)", uk: "Червоний будинок (фото взято з Інтернету)", de: "Rotes Haus (Foto aus dem Internet)" } },
-      ],
-      senfmuehle_monschau: [
-        { path: "Germany/nrw/koln/Aachen/monschau/senfmuehle/001.jpg", title: { ru: "Историческая горчичная мельница (фото взято с интернета)", uk: "Історичний гірчичний млин (фото взято з Інтернету)", de: "Historische Senfmühle (Foto aus dem Internet)" } },
-        { path: "Germany/nrw/koln/Aachen/monschau/senfmuehle/002.jpg", title: { ru: "Историческая горчичная мельница, 2025", uk: "Історичний гірчичний млин, 2025", de: "Historische Senfmühle, 2025" } },
-      ],
-      glashuette_monschau: [
-        { path: "Germany/nrw/koln/Aachen/monschau/glashuette/001.jpg", title: { ru: "Стеклодувная мастерская (фото взято с интернета)", uk: "Майстерня скла (фото взято з Інтернету)", de: "Glashütte (Foto aus dem Internet)" } },
-        { path: "Germany/nrw/koln/Aachen/monschau/glashuette/002.jpg", title: { ru: "Стеклодувная мастерская (фото взято с интернета)", uk: "Майстерня скла (фото взято з Інтернету)", de: "Glashütte (Foto aus dem Internet)" } },
       ],
     },
 
@@ -536,64 +525,6 @@ export const Fotos = {
   },
 
   rheinland_pfalz: {
-    trier: {
-      amphitheater_trier: [
-        { path: "Germany/rheinland-pfalz/trier-city/amphitheater/001.jpg", title: { ru: "Римский амфитеатр в Трире, 2024", uk: "Римський амфітеатр у Трірі, 2024", de: "Römischer Amphitheater in Trier, 2024" } },
-        { path: "Germany/rheinland-pfalz/trier-city/amphitheater/002.jpg", title: { ru: "Римский амфитеатр в Трире, 2024", uk: "Римський амфітеатр у Трірі, 2024", de: "Römischer Amphitheater in Trier, 2024" } },
-        { path: "Germany/rheinland-pfalz/trier-city/amphitheater/003.jpg", title: { ru: "Римский амфитеатр в Трире, 2024", uk: "Римський амфітеатр у Трірі, 2024", de: "Römischer Amphitheater in Trier, 2024" } },
-        { path: "Germany/rheinland-pfalz/trier-city/amphitheater/004.jpg", title: { ru: "Римский амфитеатр в Трире, 2024", uk: "Римський амфітеатр у Трірі, 2024", de: "Römischer Amphitheater in Trier, 2024" } },
-        { path: "Germany/rheinland-pfalz/trier-city/amphitheater/005.jpg", title: { ru: "Римский амфитеатр в Трире, 2024", uk: "Римський амфітеатр у Трірі, 2024", de: "Römischer Amphitheater in Trier, 2024" } },
-        { path: "Germany/rheinland-pfalz/trier-city/amphitheater/006.jpg", title: { ru: "Римский амфитеатр в Трире, 2024", uk: "Римський амфітеатр у Трірі, 2024", de: "Römischer Amphitheater in Trier, 2024" } },
-        { path: "Germany/rheinland-pfalz/trier-city/amphitheater/007.jpg", title: { ru: "Римский амфитеатр в Трире, 2024", uk: "Римський амфітеатр у Трірі, 2024", de: "Römischer Amphitheater in Trier, 2024" } },
-      ],
-      kaiserthermen_trier: [
-        { path: "Germany/rheinland-pfalz/trier-city/kaiserthermen/01.jpg", title: { ru: "Римские императорские бани, 2024", uk: "Римські імператорські терми, 2024", de: "Römische Kaiserthermen, 2024" } },
-        { path: "Germany/rheinland-pfalz/trier-city/kaiserthermen/02.jpg", title: { ru: "Римские императорские бани, 2024", uk: "Римські імператорські терми, 2024", de: "Römische Kaiserthermen, 2024" } },
-        { path: "Germany/rheinland-pfalz/trier-city/kaiserthermen/03.jpg", title: { ru: "Римские императорские бани, 2024", uk: "Римські імператорські терми, 2024", de: "Römische Kaiserthermen, 2024" } },
-        { path: "Germany/rheinland-pfalz/trier-city/kaiserthermen/04.jpg", title: { ru: "Римские императорские бани, 2024", uk: "Римські імператорські терми, 2024", de: "Römische Kaiserthermen, 2024" } },
-        { path: "Germany/rheinland-pfalz/trier-city/kaiserthermen/05.jpg", title: { ru: "Римские императорские бани, 2024", uk: "Римські імператорські терми, 2024", de: "Römische Kaiserthermen, 2024" } },
-      ],
-      barbarathermen_trier: [
-        { path: "Germany/rheinland-pfalz/trier-city/barbarathermen/001.jpg", title: { ru: "Барбарские термы (фото взято с интернета)", uk: "Барбарські терми (фото взято з Інтернету)", de: "Barbarathermen (Foto aus dem Internet)" } },
-      ],
-      basilikaStPaulinus_trier: [
-        { path: "Germany/rheinland-pfalz/trier-city/basilikaStPaulinus/001.jpg", title: { ru: "Базилика Святого Паулина (фото взято с интернета)", uk: "Базиліка Святого Пауліна (фото взято з Інтернету)", de: "Basilika St. Paulinus (Foto aus dem Internet)" } },
-      ],
-      kurfuerstliches_palais_trier: [
-        { path: "Germany/rheinland-pfalz/trier-city/altstadt/kurfuerstliches_palais/001.jpg", title: { ru: "Избирательский (курфюрстский) дворец (фото взято с интернета)", uk: "Виборчий (курфюрстський) палац (фото взято з Інтернету)", de: "Kurfürstliches Palais (Foto aus dem Internet)" } },
-        { path: "Germany/rheinland-pfalz/trier-city/altstadt/kurfuerstliches_palais/003.jpg", title: { ru: "Избирательский (курфюрстский) дворец, 2024", uk: "Виборчий (курфюрстський) палац, 2024", de: "Kurfürstliches Palais, 2024" } },
-        { path: "Germany/rheinland-pfalz/trier-city/altstadt/kurfuerstliches_palais/004.jpg", title: { ru: "Избирательский (курфюрстский) дворец, 2024", uk: "Виборчий (курфюрстський) палац, 2024", de: "Kurfürstliches Palais, 2024" } },
-        { path: "Germany/rheinland-pfalz/trier-city/altstadt/kurfuerstliches_palais/005.jpg", title: { ru: "Избирательский (курфюрстский) дворец, 2024", uk: "Виборчий (курфюрстський) палац, 2024", de: "Kurfürstliches Palais, 2024" } },
-        { path: "Germany/rheinland-pfalz/trier-city/altstadt/kurfuerstliches_palais/006.jpg", title: { ru: "Избирательский (курфюрстский) дворец, 2024", uk: "Виборчий (курфюрстський) палац, 2024", de: "Kurfürstliches Palais, 2024" } },
-        { path: "Germany/rheinland-pfalz/trier-city/altstadt/kurfuerstliches_palais/007.jpg", title: { ru: "Избирательский (курфюрстский) дворец, 2024", uk: "Виборчий (курфюрстський) палац, 2024", de: "Kurfürstliches Palais, 2024" } },
-        { path: "Germany/rheinland-pfalz/trier-city/altstadt/kurfuerstliches_palais/008.jpg", title: { ru: "Избирательский (курфюрстский) дворец, 2024", uk: "Виборчий (курфюрстський) палац, 2024", de: "Kurfürstliches Palais, 2024" } },
-      ],
-    },
-    saarburg: {
-      altstadt_saarburg: [
-        { path: "Germany/rheinland-pfalz/trier_saarburg/saarburg_kell/saarburg/altstadt/001.jpg", title: { ru: "Старый город Саарбурга, 2024", uk: "Старе місто Саарбурга, 2024", de: "Altstadt Saarburg, 2024" } },
-        { path: "Germany/rheinland-pfalz/trier_saarburg/saarburg_kell/saarburg/altstadt/002.jpg", title: { ru: "Старый город Саарбурга, 2024", uk: "Старе місто Саарбурга, 2024", de: "Altstadt Saarburg, 2024" } },
-        { path: "Germany/rheinland-pfalz/trier_saarburg/saarburg_kell/saarburg/altstadt/003.jpg", title: { ru: "Старый город Саарбурга, 2024", uk: "Старе місто Саарбурга, 2024", de: "Altstadt Saarburg, 2024" } },
-      ],
-      wasserfall_saarburg: [
-        { path: "Germany/rheinland-pfalz/trier_saarburg/saarburg_kell/saarburg/altstadt/wasserfall/001.jpg", title: { ru: "Водопад Саарбурга, 2024", uk: "Водоспад Саарбурга, 2024", de: "Wasserfall von Saarburg, 2024" } },
-        { path: "Germany/rheinland-pfalz/trier_saarburg/saarburg_kell/saarburg/altstadt/wasserfall/002.jpg", title: { ru: "Водопад Саарбурга, 2024", uk: "Водоспад Саарбурга, 2024", de: "Wasserfall von Saarburg, 2024" } },
-        { path: "Germany/rheinland-pfalz/trier_saarburg/saarburg_kell/saarburg/altstadt/wasserfall/003.jpg", title: { ru: "Водопад Саарбурга, 2024", uk: "Водоспад Саарбурга, 2024", de: "Wasserfall von Saarburg, 2024" } },
-      ],
-      amuseum_saarburg: [
-        { path: "Germany/rheinland-pfalz/trier_saarburg/saarburg_kell/saarburg/altstadt/amuseum/001.jpg", title: { ru: "Амюзеум Саарбург (фото взято с интернета)", uk: "Амюзеум Саарбург (фото взято з Інтернету)", de: "Amüseum Saarburg (Foto aus dem Internet)" } },
-      ],
-      burg_saarburg: [
-        { path: "Germany/rheinland-pfalz/trier_saarburg/saarburg_kell/saarburg/burg/001.jpg", title: { ru: "Замок Саарбурга, 2024", uk: "Замок Саарбурга, 2024", de: "Burg Saarburg, 2024" } },
-        { path: "Germany/rheinland-pfalz/trier_saarburg/saarburg_kell/saarburg/burg/002.jpg", title: { ru: "Замок Саарбурга, 2024", uk: "Замок Саарбурга, 2024", de: "Burg Saarburg, 2024" } },
-        { path: "Germany/rheinland-pfalz/trier_saarburg/saarburg_kell/saarburg/burg/003.jpg", title: { ru: "Замок Саарбурга, 2024", uk: "Замок Саарбурга, 2024", de: "Burg Saarburg, 2024" } },
-        { path: "Germany/rheinland-pfalz/trier_saarburg/saarburg_kell/saarburg/burg/004.jpg", title: { ru: "Замок Саарбурга, 2024", uk: "Замок Саарбурга, 2024", de: "Burg Saarburg, 2024" } },
-        { path: "Germany/rheinland-pfalz/trier_saarburg/saarburg_kell/saarburg/burg/005.jpg", title: { ru: "Замок Саарбурга, 2024", uk: "Замок Саарбурга, 2024", de: "Burg Saarburg, 2024" } },
-        { path: "Germany/rheinland-pfalz/trier_saarburg/saarburg_kell/saarburg/burg/006.jpg", title: { ru: "Замок Саарбурга, 2024", uk: "Замок Саарбурга, 2024", de: "Burg Saarburg, 2024" } },
-        { path: "Germany/rheinland-pfalz/trier_saarburg/saarburg_kell/saarburg/burg/007.jpg", title: { ru: "Замок Саарбурга, 2024", uk: "Замок Саарбурга, 2024", de: "Burg Saarburg, 2024" } },
-        { path: "Germany/rheinland-pfalz/trier_saarburg/saarburg_kell/saarburg/burg/008.jpg", title: { ru: "Замок Саарбурга, 2024", uk: "Замок Саарбурга, 2024", de: "Burg Saarburg, 2024" } },
-      ]
-    },
     koblenz: {
       altstadt_koblenz: [
         { path: "Germany/rheinland-pfalz/koblenz/altstadt/001.jpg", title: { ru: "Фонтан Клеменса, 2023", uk: "Фонтан Клеменса, 2023", de: "Klemensbrunnen, 2023" } },

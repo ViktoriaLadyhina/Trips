@@ -18,11 +18,11 @@ export function buildUrl(item) {
 
         // 🗺️ земля / регион
         case "region":
-            return `/${countryPath}/${regionPath}`;
+            return `/${countryPath}/${path}`;
 
         // 🏘️ район
         case "district":
-            return `/${countryPath}/${regionPath}/${districtPath}`;
+            return `/${countryPath}/${regionPath}/${path}`;
 
         // 🏙️ город
         case "city":
@@ -56,7 +56,7 @@ export function buildUrl(item) {
             return `/${countryPath}/${regionPath}/events/${path}`;
 
         // 🛣️ маршруты
-        case "routes":
+        case "route":
             return `/${countryPath}/routes/${path}`;
 
         default:
