@@ -62,8 +62,37 @@
 }
     }
 
-    &__item {
-        text-align: justify;
-        @include body-text;
+&__item {
+        display: flex;
+        margin: 10px;
+
+        strong {
+            @include bold-text();
+            display: inline;
+        }
+
+        p {
+            @include body-text();
+            margin: 0 0 3px;
+            text-align: justify;
+        }
+
+        &-image {
+            flex: 0 0 300px;
+            width: 300px;
+            margin: 8px;
+
+            img {
+                display: block;
+                width: 100%;
+                height: auto;
+                border-radius: 6px;
+            }
+        }
+
+        &-content {
+            flex: 1;
+            min-width: 0;
+        }
     }
 }

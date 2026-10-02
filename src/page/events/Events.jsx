@@ -10,14 +10,13 @@ import SkeletonRenderer from '../../components/skeleton/SkeletonRenderer.jsx';
 import './Events.scss'
 import { prepareEntityBlocks } from '../../utils/entityHelpers.js';
 import { TextBlock } from '../../components/renders/TextBlock.jsx';
-import { PhotoBlock } from '../../components/renders/PhotoBlock.jsx';
 import { ItemBlock } from '../../components/renders/ItemBlock.jsx';
 import MysqlGallery from '../../components/gallery/MysqlGallery.jsx';
 
 const BASE_PHOTO_URL = import.meta.env.VITE_BASE_PHOTO_URL;
 
-const period = { ru: "Период", ua: "Період", de: "Zeitraum" }
-const location = { ru: "Место проведения", ua: "Місце проведення", de: "Veranstaltungsort" }
+const period = { ru: "Период", uk: "Період", de: "Zeitraum" }
+const location = { ru: "Место проведения", uk: "Місце проведення", de: "Veranstaltungsort" }
 
 const SkeletonList = [
     { type: "title" },
@@ -128,17 +127,17 @@ const Event = () => {
     }
 
 
-    //Хлебные крошки
-    // const crumbs = [
-    //     { label: lang === "ru" ? "Главная" : lang === "de" ? "Startseite" : "Головна", path: "/" },
-    //     countryPath ? { label: datas.countries[countryPath][lang], path: `/${countryPath}` } : null,
-    //     regionPath ? { label: datas.regions[regionPath][lang], path: `/${countryPath}/${regionPath}` } : null,
-    //     ...(districtPath !== "city" ? [{ label: datas.districts[districtPath][lang], path: `/${countryPath}/${regionPath}/${districtPath}` }] : []),
-    //     ...(districtPath !== "city" ? [{ label: events.subRegionName }] : []),
-    //     cityPath ? { label: datas.cities[cityPath][lang], path: `/${countryPath}/${regionPath}/${districtPath ? districtPath + '/' : ''}${cityPath}` } : null,
-    //     { label: lang === "ru" ? "Мероприятия" : lang === "de" ? "Veranstaltungen" : "Заходи", },
-    //     event ? { label: event.name } : null
-    // ].filter(Boolean);
+    // Хлебные крошки
+    const crumbs = [
+        { label: lang === "ru" ? "Главная" : lang === "de" ? "Startseite" : "Головна", path: "/" },
+        countryPath ? { label: datas.countries[countryPath][lang], path: `/${countryPath}` } : null,
+        regionPath ? { label: datas.regions[regionPath][lang], path: `/${countryPath}/${regionPath}` } : null,
+        ...(districtPath !== "city" ? [{ label: datas.districts[districtPath][lang], path: `/${countryPath}/${regionPath}/${districtPath}` }] : []),
+        ...(districtPath !== "city" ? [{ label: events.subRegionName }] : []),
+        cityPath ? { label: datas.cities[cityPath][lang], path: `/${countryPath}/${regionPath}/${districtPath ? districtPath + '/' : ''}${cityPath}` } : null,
+        { label: lang === "ru" ? "Мероприятия" : lang === "de" ? "Veranstaltungen" : "Заходи", },
+        event ? { label: datas.events[eventPath]?.[lang] } : null
+    ].filter(Boolean);
 
 
     return (
@@ -156,7 +155,7 @@ const Event = () => {
                 </Helmet>
             )}
 
-            {/* <BreadCrumbs crumbs={crumbs} /> */}
+            <BreadCrumbs crumbs={crumbs} />
 
             <h1 className='event__title'>{langData?.name}</h1>
             <div className='event__desc'>
