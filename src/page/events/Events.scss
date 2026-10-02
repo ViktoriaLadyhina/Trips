@@ -1,4 +1,4 @@
-@use '../../styles//variables' as *;
+@use '../../styles/variables' as *;
 
 .event {
 
@@ -9,127 +9,61 @@
 
     &__desc {
         overflow: hidden;
-
-        &-foto {
-            float: left;
-            max-width: 350px;
-            margin: 0 15px 15px 0;
-            border-radius: 8px;
-
-            img {
-                width: 100%;
-                height: auto;
-                border-radius: 8px;
-                box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-            }
-        }
-
-        &-full_description,
-        &-interestingFacts,
-        &-officialSite,
-        &-date,
-        &-location,
-        &-theme_zones {
-            padding: 10px;
-            flex: 1;
-            text-align: justify;
-
-            &-title {
-                @include h3();
-                padding: 10px;
-                text-align: center;
-            }
-
-            &-bold {
-                @include bold-text;
-                display: inline;
-                text-align: justify;
-            }
-
-            &-text {
-                @include body-text;
-                text-align: justify;
-                display: inline;
-            }
-
-            ul {
-                margin: 0;
-                padding-left: 20px;
-                list-style-type: disc;
-            }
-
-            li {
-                @include body-text;
-                margin-bottom: 3px;
-            }
-
-        }
-
-        &-sub_objects {
-            padding: 5px;
-            text-align: left;
-
-            &-title {
-                @include h3();
-                padding: 10px;
-                text-align: center;
-            }
-
-            &-bold {
-                @include bold-text;
-                display: inline;
-                text-align: justify;
-            }
-
-                        &-text {
-                @include body-text;
-                text-align: justify;
-                display: inline;
-            }
-
-            &-item {
-                display: flex;
-                align-items: flex-start;
-                flex-wrap: wrap;
-                margin-bottom: 10px;
-
-                p {
-                    margin: 0;
-                }
-
-                img {
-                    max-width: 300px;
-                    max-height: 300px;
-                    width: 100%;
-                    margin-right: 15px;
-                    display: block;
-                    border-radius: 8px;
-                    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-
-                    &:first-child {
-                        max-width: 400px;
-                    }
-                }
-
-                .content {
-                    flex: 1;
-                    display: flex;
-                    flex-direction: column;
-                }
-
-
-            }
-        }
-
     }
 
+&__desc-foto {
+    float: left;
+    max-width: 350px;
+    margin: 0 15px 15px 0;
+    border-radius: 8px;
 
-    &__sub {
-        @include h3();
+    img {
+        width: 100%;
+        height: auto;
+        border-radius: 8px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    }
+}
+
+    &__full_description,
+    &__interestingFacts,
+    &__officialSite,
+    &__item_title,
+    &__date {
         padding: 10px;
-        text-align: center;
+        text-align: justify;
+        @include body-text;
+
+        H2 {
+            @include h3();
+            padding: 10px;
+            text-align: center;
+        }
+
+        &-bold {
+            @include bold-text;
+        }
+
+        ul {
+            margin: 0;
+            padding-left: 20px;
+            list-style-type: disc;
+        }
+
+        li {
+            @include body-text;
+            margin-bottom: 3px;
+        }
+
+        a {
+    @include bold-text;
+    color: inherit;
+    text-decoration: none;
+}
     }
 
-
-
+    &__item {
+        text-align: justify;
+        @include body-text;
+    }
 }

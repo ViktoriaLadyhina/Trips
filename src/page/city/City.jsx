@@ -5,7 +5,6 @@ import { Helmet } from "react-helmet-async";
 import BreadCrumbs from '../../components/breadCrumbs/BreadCrumbs.jsx';
 import './City.scss'
 import BtnAttr from '../../components/btn-attr/BtnAttr.jsx';
-import useEvents from '../../hooks/useEvents.js';
 import datas from '../../datas/minimalIndex.js'
 import { useEffect, useState } from 'react';
 import { getCity } from '../../api/api.js';
@@ -69,7 +68,6 @@ const SkeletonList = [
 const City = () => {
     const { countryPath, regionPath, districtPath, cityPath } = useParams();
     const { lang } = useSelector((state) => state.language);
-    const { events } = useEvents(countryPath, regionPath, districtPath, cityPath);
 
     const [city, setCity] = useState(null);
     const [error, setError] = useState(null);
@@ -118,8 +116,6 @@ const City = () => {
     }
 
     const getPhoto = (index) => city.photos?.find(p => p.sort_order === index);
-
-    const cityEvents = events?.filter(ev => ev.cities?.includes(cityPath)) || [];
 
     const context = {
         lang,
@@ -223,7 +219,7 @@ const City = () => {
                         </section>
 
                         {/* ------------------- Раздел мероприятий ------------------- */}
-                        {cityEvents && cityEvents.length > 0 && (
+                        {city.cityEvents && city.cityEvents.length > 0 && (
                             <div className="city__events">
 
                                 <h2 className="city__events-title"> {lang === "ru" ? "Мероприятия" : lang === "de" ? "Veranstaltungen" : "Заходи"} </h2>
@@ -239,7 +235,7 @@ const City = () => {
                                     </thead>
 
                                     <tbody>
-                                        {cityEvents.map(ev => (
+                                        {city.cityEvents.map(ev => (
                                             <tr key={ev.id}>
                                                 <td><Link to={`/${countryPath}/${regionPath}/${districtPath}/${cityPath}/events/${ev.path}`}>{ev.name}</Link> </td>
                                                 <td>{ev.short_description}</td>
@@ -252,7 +248,7 @@ const City = () => {
 
                                 {/* ===== CARDS (mobile) ===== */}
                                 <div className="city-events-cards">
-                                    {cityEvents.map(ev => (
+                                    {city.cityEvents.map(ev => (
                                         <div key={ev.id} className="city-events-card">
 
                                             <div className="city-events-row">

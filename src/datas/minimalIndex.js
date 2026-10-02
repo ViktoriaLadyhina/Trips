@@ -38,6 +38,7 @@ const datas =
   },
   cities: {
     // Germany
+    bonn: { id: 67, ru: 'Город Бонн', de: 'Stadt Bonn', uk: 'Місто Бонн' },
     koln_city: { id: 76, ru: 'Город Кёльн', de: 'Stadt Köln', uk: 'Місто Кельн' },
     monschau: { id: 185, ru: 'Город Моншау', de: 'Stadt Monschau', uk: 'Місто Моншау' },
     bruhl: { id: 171, ru: 'Город Брюль', de: 'Stadt Brühl', uk: 'Місто Брюль' },
@@ -122,6 +123,8 @@ const datas =
     monschau_muetzenich: { id: 664, parent: 185, ru: 'Мютцених', de: 'Mützenich', uk: 'Мютценіх' },
     monschau_rohren: { id: 665, parent: 185, ru: 'Рорен', de: 'Rohren', uk: 'Рорен' },
 
+    bonn_zentrum: { id: 904, parent: 67, ru: 'район Бонн-Центр', de: 'Stadtteil Bonn-Zentrum', uk: 'район Бонн-Центр' },
+
     koeln_lindenthal: { id: 714, parent: 76, ru: 'округ Линденталь (Lindenthal)', de: 'Bezirk Lindenthal', uk: 'округ Лінденталь' },
     koeln_innenstadt: { id: 716, parent: 76, ru: 'Центральный округ (Innenstadt)', de: 'Stadtbezirk Innenstadt', uk: 'Центральний округ (Innenstadt)' },
 
@@ -194,7 +197,12 @@ const datas =
     langenberg_alte_kirche_velbert: { id: 739, ru: 'Старая церковь Лангеберг', de: 'Alte Kirche Langenberg', uk: 'Стара церква Лангенберг' },
     langenberg_burgerhaus_velbert: { ru: 'Исторический общественный дом Лангенберга', de: 'Historisches Bürgerhaus Langenberg', uk: 'Історичний громадський будинок Лангенберга' },
 
-    // Köln okrug
+    // Bonn
+bonner_muenster_bonn: { id: 903, ru: 'Боннский кафедральный собор', de: 'Bonner Münster', uk: 'Боннський кафедральний собор' },
+denkmal_beethoven_bonn: { id: 908, ru: 'Памятник Бетховену', de: 'Beethoven-Denkmal', uk: 'Пам’ятник Бетховену' },
+altes_rathaus_bonn: { id: 912, ru: 'Старая ратуша Бонна', de: 'Altes Rathaus Bonn', uk: 'Стара ратуша Бонна' },
+namen_jesu_kirche_bonn: { id: 913, ru: 'Церковь Имени Иисуса', de: 'Namen Jesu Kirche', uk: 'Церква Імені Ісуса' },
+
     //Köln-city
     cologne_cathedral: { id: 717, ru: 'Кёльнский собор', de: 'Kölner Dom', uk: 'Кельнський собор' },
     rathaus_koln: { id: 718, ru: 'Кёльнская ратуша', de: 'Kölner Rathaus', uk: 'Кельнська ратуша' },
@@ -255,6 +263,7 @@ const datas =
     st_aposteln_koln: { id: 734, ru: 'Церковь Святого Апостола', de: 'St. Aposteln', uk: 'Церква Святого Апостола' },
     fischweiberbrunnen_koln: { id: 721, ru: 'Фонтан рыбных торговок', de: 'Fischweiberbrunnen', uk: 'Фонтан рибних торговок' },
 
+    // Köln okrug
     // Aachen Kreis
     // Monschau
     historic_center_monschau: { ru: 'Старый город Моншау', de: 'Altstadt Monschau', uk: 'Старе місто Моншау' },
@@ -379,7 +388,7 @@ const datas =
     Unesco_Title: { ru: "Достопримечательности ЮНЕСКО", uk: "Пам’ятки ЮНЕСКО", de: "UNESCO-Welterbestätten" }
   },
   events: {
-    karneval_koln: { ru: "Кельнский карнавал", uk: "Кельнський карнавал", de: "Kölner Karneval" },
+    karneval_koln: { id: 924, ru: "Кельнский карнавал", uk: "Кельнський карнавал", de: "Kölner Karneval" },
     karneval_koln_city: { ru: "проходит в Кёльне – неофициальной столице карнавала, а также во многих городах Рейнской области", uk: "відбувається в Кельні – неофіційній столиці карнавалу, а також у багатьох містах Рейнської області", de: "Findet in Köln – der inoffiziellen Karnevalshauptstadt – sowie in zahlreichen Städten des Rheinlandes statt" },
     winterleuchten_dortmund: { ru: "Сад света в Вестфаленпарке", uk: "Сад світла у Вестфаленпарку", de: "Winterleuchten im Westfalenpark" },
     winterleuchten_dortmund_city: { ru: "проходит в Дортмунде, в Вестфаленпарке", uk: "відбувається в Дортмунді, у Вестфаленпарку", de: "Findet in Dortmund, im Westfalenpark statt" },
@@ -393,15 +402,3 @@ const datas =
 }
 
 export default datas
-
-// Arnsberg — 27
-// Düsseldorf — 3
-// Köln — 57
-// Aachen — 6
-// Rhein-Erft-Kreis — 11
-// Rhein-Sieg-Kreis — 10
-// Rheinland-Pfalz / Trier, Saarburg, Koblenz — 22
-// Luxembourg — 15
-// Ukraine / Sumy — 4
-
-// Итого: 155.

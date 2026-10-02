@@ -65,9 +65,6 @@ export const Fotos = {
         { path: "Germany/nrw/koln/koln-city/schnuetgen/004.jpg", title: { ru: "Музей Шнютгена, 2026", uk: "Музей Шнютгена, 2026", de: "Museum Schnütgen, 2026" } },
         { path: "Germany/nrw/koln/koln-city/schnuetgen/005.jpg", title: { ru: "Музей Шнютгена, 2026", uk: "Музей Шнютгена, 2026", de: "Museum Schnütgen, 2026" } },
       ],
-      karneval_koln: [
-        { path: "Germany/nrw/koln/koln-city/karneval/001.jpg", title: { ru: "Кёльнский карнавал (фото взято с интернета)", uk: "Кельнський карнавал (фото взято з Інтернету)", de: "Kölner Karneval (Foto aus dem Internet)" } },
-      ],
       skulpturenpark_koln: [
         { path: "Germany/nrw/koln/koln-city/skulpturenpark/001.jpg", title: { ru: "Парк скульптур в Кёльне, 2026", uk: "Парк скульптур у Кельні, 2026", de: "Skulpturenpark in Köln, 2026" } },
         { path: "Germany/nrw/koln/koln-city/skulpturenpark/002.jpg", title: { ru: "Парк скульптур в Кёльне, 2026", uk: "Парк скульптур у Кельні, 2026", de: "Skulpturenpark in Köln, 2026" } },
