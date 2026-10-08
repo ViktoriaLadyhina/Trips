@@ -41,8 +41,11 @@ const SumskaMap = ({ regions, countryPath }) => {
               <path
                 key={loc.id}
                 d={loc.path}
-                className={reg.hasInfo ? "interactive" : "disabled"}
-                onClick={() => reg.hasInfo && navigate(`/${countryPath}/${reg.path}`)}
+                className={reg.is_active ? "interactive" : "disabled"}
+                onClick={() =>
+                  reg.is_active &&
+                  navigate(`/${countryPath}/${countryPath === "ukraine" ? "sumska" : ""}/${reg.path}`)
+                }
                 strokeWidth="1"
                 onMouseEnter={(e) => {
                   setHoverRegion(reg.name);

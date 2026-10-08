@@ -11,21 +11,34 @@ import { PhotoBlock } from '../renders/PhotoBlock.jsx';
 
 const BASE_PHOTO_URL = import.meta.env.VITE_BASE_PHOTO_URL;
 
+const showAllText = {
+  ru: "Показать все",
+  uk: "Показати всі",
+  de: "Alle anzeigen",
+};
+
+const hideAllText = {
+  ru: "Скрыть",
+  uk: "Сховати",
+  de: "Weniger anzeigen",
+};
+
 const Region = forwardRef(({ data, countryPath, regionPath, districtPath, subregionId }, ref) => {
   const { lang } = useSelector((state) => state.language);
   const [cities, setCities] = useState([]);
   const [error, setError] = useState(null);
   const { blocks, langData } = prepareEntityBlocks(data?.blocks);
+  const [showAllCities, setShowAllCities] = useState(false);
 
-useEffect(() => {
-  if (!subregionId) return;
+  useEffect(() => {
+    if (!subregionId) return;
 
-  setError(null);
+    setError(null);
 
-  getSubregionCities(subregionId, lang)
-    .then(data => { setCities(data || []) })
-    .catch(err => { setError(err.message) });
-}, [subregionId, lang]);
+    getSubregionCities(subregionId, lang)
+      .then(data => { setCities(data || []) })
+      .catch(err => { setError(err.message) });
+  }, [subregionId, lang]);
 
   const communityText = {
     ru: `Район подразделяется на ${cities.length} общин:`,
@@ -34,38 +47,38 @@ useEffect(() => {
   };
 
 
-const sortedCities = [...(cities || [])].sort((a, b) =>
-  (a.name || "").localeCompare(b.name || "")
-);
+  const sortedCities = [...(cities || [])].sort((a, b) =>
+    (a.name || "").localeCompare(b.name || "")
+  );
 
   const photo = data?.emblem;
 
-    const context = {
-      lang,
-      langData,
-      photo,
-      className: "region__photo",
-      classPrefix: "region__block region__block",
-    };
-  
-    const blockRegistry = {
-      name: TextBlock,
-      capital: TextBlock,
-      geography: TextBlock,
-      population: TextBlock,
-      area: TextBlock,
-      code: TextBlock,
-  
-      photo: PhotoBlock,
-    };
-  
-    const renderBlock = (block) => {
-      const Renderer = blockRegistry[block.block_key];
-  
-      if (!Renderer) return null;
-  
-      return <Renderer block={block} {...context} />;
-    };
+  const context = {
+    lang,
+    langData,
+    photo,
+    className: "region__photo",
+    classPrefix: "region__block region__block",
+  };
+
+  const blockRegistry = {
+    name: TextBlock,
+    capital: TextBlock,
+    geography: TextBlock,
+    population: TextBlock,
+    area: TextBlock,
+    code: TextBlock,
+
+    photo: PhotoBlock,
+  };
+
+  const renderBlock = (block) => {
+    const Renderer = blockRegistry[block.block_key];
+
+    if (!Renderer) return null;
+
+    return <Renderer block={block} {...context} />;
+  };
 
   if (error) return <p>{error}</p>;
 
@@ -73,7 +86,7 @@ const sortedCities = [...(cities || [])].sort((a, b) =>
     data?.type?.toLowerCase() === "subregion" &&
     sortedCities.length > 0;
 
-
+console.log(sortedCities);
   return (
     <div className='region' ref={ref}>
 
@@ -84,7 +97,7 @@ const sortedCities = [...(cities || [])].sort((a, b) =>
           <div className='region__container-list'>
             <span className="region__container_desc-text-com">{communityText[lang]}</span>
             <ul>
-              {sortedCities.map((reg) => (
+              {(showAllCities ? sortedCities : sortedCities.slice(0, 12)).map((reg) => (
                 <li key={reg.id} className="region__container-list__item">
                   {reg.is_active ? (
                     <Link
@@ -101,6 +114,15 @@ const sortedCities = [...(cities || [])].sort((a, b) =>
                 </li>
               ))}
             </ul>
+            {sortedCities.length > 12 && (
+              <button
+                type="button"
+                className="region__container-list__show-all"
+                onClick={() => setShowAllCities((prev) => !prev)}
+              >
+                {showAllCities ? hideAllText[lang] : showAllText[lang]}
+              </button>
+            )}
           </div>
         )}
 

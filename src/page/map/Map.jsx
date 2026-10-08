@@ -36,13 +36,6 @@ const Map = () => {
           <li>
             <Link to="/germany"><strong>{t.countries.germany[lang]}</strong></Link>
             <ul>
-              <li><span>{lang === 'ru' ? 'Мероприятия/События' : lang === 'de' ? 'Veranstaltungen' : 'Заходи'}</span>
-                <ul>
-                  <li><Link to="/germany/nrw/city/koln_city/events/karneval_koln">{t.events.karneval_koln[lang]}</Link> <span className="smaller-text"> ({t.events.karneval_koln_city[lang]})</span></li>
-                  <li><Link to="/germany/nrw/city/dortmund/events/christmas_market_dortmund">{t.events.christmas_market_dortmund[lang]}</Link> </li>
-                  <li><Link to="/germany/nrw/city/dortmund/events/winterleuchten_dortmund">{t.events.winterleuchten_dortmund[lang]}</Link> <span className="smaller-text"> ({t.events.winterleuchten_dortmund_city[lang]})</span></li>
-                </ul>
-              </li>
               <li><span>{lang === 'ru' ? 'Маршруты' : lang === 'de' ? 'Routen' : 'Маршрути'}</span>
                 <ul>
                   <li><Link to="/germany/routes/castles_rhine_valley">{t.routes.castles_rhine_valley[lang]}</Link></li>
@@ -142,89 +135,110 @@ const Map = () => {
                   {/* Dortmund город */}
                   <li><Link to="/germany/nrw/city/dortmund">{t.cities.dortmund[lang]}</Link>
                     <ul>
-                      <li><Link to="/germany/nrw/city/dortmund/attractions/westfalenpark">{t.attractions.westfalenpark[lang]}</Link></li>
+                      <li><span>{lang === 'ru' ? 'Мероприятия/События' : lang === 'de' ? 'Veranstaltungen' : 'Заходи'}</span>
+                        <ul>
+                          <li><Link to="/germany/nrw/city/dortmund/events/christmas_market_dortmund">{t.events.christmas_market_dortmund[lang]}</Link> </li>
+                          <li><Link to="/germany/nrw/city/dortmund/events/winterleuchten_dortmund">{t.events.winterleuchten_dortmund[lang]}</Link> </li>
+                        </ul>
+                      </li>
+                    </ul>
+                    <ul>
+                      <li><span>{lang === 'ru' ? 'Достопримечательности' : lang === 'de' ? 'Sehenswürdigkeiten' : 'Заходи'}</span></li>
+                      <ul>
+                        <li><Link to="/germany/nrw/city/dortmund/attractions/westfalenpark">{t.attractions.westfalenpark[lang]}</Link></li>
+                      </ul>
                     </ul>
                   </li>
 
                   {/* Köln город */}
                   <li><Link to="/germany/nrw/city/koln_city">{t.cities.koln_city[lang]}</Link>
                     <ul>
-                      <li><Link to="/germany/nrw/city/koln_city/attractions/altstadt_koln">{t.attractions.altstadt_koln[lang]}</Link>
+                      <li><span>{lang === 'ru' ? 'Мероприятия/События' : lang === 'de' ? 'Veranstaltungen' : 'Заходи'}</span>
                         <ul>
-                          <li><Link to="/germany/nrw/city/koln_city/attractions/cologne_cathedral">{t.attractions.cologne_cathedral[lang]}</Link></li>
-                          <li><Link to="/germany/nrw/city/koln_city/attractions/fischmarkt_koln">{t.attractions.fischmarkt_koln[lang]}</Link>
-                            <ul>
-                              <li><Link to="/germany/nrw/city/koln_city/attractions/fischweiberbrunnen_koln">{t.attractions.fischweiberbrunnen_koln[lang]}</Link></li>
-                            </ul>
-                          </li>
-                          <li><Link to="/germany/nrw/city/koln_city/attractions/rathaus_koln">{t.attractions.rathaus_koln[lang]}</Link></li>
-                          <li><Link to="/germany/nrw/city/koln_city/attractions/st_maria_himmelfahrt_koln">{t.attractions.st_maria_himmelfahrt_koln[lang]}</Link></li>
-                          <li><Link to="/germany/nrw/city/koln_city/attractions/guerzenich_koln">{t.attractions.guerzenich_koln[lang]}</Link></li>
-                          <li><Link to="/germany/nrw/city/koln_city/attractions/miqua_koln">{t.attractions.miqua_koln[lang]}</Link></li>
-                          <li><Link to="/germany/nrw/city/koln_city/attractions/roemisch_germanisches_museum">{t.attractions.roemisch_germanisches_museum[lang]}</Link></li>
-                          <li><Link to="/germany/nrw/city/koln_city/attractions/farina_duftmuseum">{t.attractions.farina_duftmuseum[lang]}</Link></li>
-                          <li><Link to="/germany/nrw/city/koln_city/attractions/dufthaus_4711_koln">{t.attractions.dufthaus_4711_koln[lang]}</Link></li>
-                          <li><Link to="/germany/nrw/city/koln_city/attractions/wallraf_richartz_museum">{t.attractions.wallraf_richartz_museum[lang]}</Link></li>
-                          <li><Link to="/germany/nrw/city/koln_city/attractions/museum_ludwig">{t.attractions.museum_ludwig[lang]}</Link></li>
-                          <li><Link to="/germany/nrw/city/koln_city/attractions/stadtmuseum_koln">{t.attractions.stadtmuseum_koln[lang]}</Link></li>
-                          <li><Link to="/germany/nrw/city/koln_city/attractions/old_towers_koln">{t.attractions.old_towers_koln[lang]}</Link>
-                            <ul>
-                              <li><Link to="/germany/nrw/city/koln_city/attractions/rumerturm_koln">{t.attractions.rumerturm_koln[lang]}</Link></li>
-                              <li><Link to="/germany/nrw/city/koln_city/attractions/hahnentorburg_koln">{t.attractions.hahnentorburg_koln[lang]}</Link></li>
-                              <li><Link to="/germany/nrw/city/koln_city/attractions/eigelsteintorburg_koln">{t.attractions.eigelsteintorburg_koln[lang]}</Link></li>
-                              <li><Link to="/germany/nrw/city/koln_city/attractions/severinstorburg_koln">{t.attractions.severinstorburg_koln[lang]}</Link></li>
-                              <li><Link to="/germany/nrw/city/koln_city/attractions/ulrepforte_koln">{t.attractions.ulrepforte_koln[lang]}</Link></li>
-                              <li><Link to="/germany/nrw/city/koln_city/attractions/bayenturm_koln">{t.attractions.bayenturm_koln[lang]}</Link></li>
-                            </ul>
-                          </li>
+                          <li><Link to="/germany/nrw/city/koln_city/events/karneval_koln">{t.events.karneval_koln[lang]}</Link></li>
                         </ul>
                       </li>
-                      <li><Link to="/germany/nrw/city/koln_city/attractions/romanische_kirchen_altstadt_koln">{t.attractions.romanische_kirchen_altstadt_koln[lang]}:</Link>
-                        <ul>
-                          <li><Link to="/germany/nrw/city/koln_city/attractions/gross_st_martin_koln">{t.attractions.gross_st_martin_koln[lang]}</Link></li>
-                          <li><Link to="/germany/nrw/city/koln_city/attractions/st_maria_im_kapitol_koln">{t.attractions.st_maria_im_kapitol_koln[lang]}</Link></li>
-                          <li><Link to="/germany/nrw/city/koln_city/attractions/st_gereon_koln">{t.attractions.st_gereon_koln[lang]}</Link></li>
-                          <li><Link to="/germany/nrw/city/koln_city/attractions/st_aposteln_koln">{t.attractions.st_aposteln_koln[lang]}</Link></li>
-                          <li><Link to="/germany/nrw/city/koln_city/attractions/st_kunibert_koln">{t.attractions.st_kunibert_koln[lang]}</Link></li>
-                        </ul>
-                      </li>
-                      <li><Link to="/germany/nrw/city/koln_city/attractions/schokoladenmuseum">{t.attractions.schokoladenmuseum[lang]}</Link></li>
-                      <li><Link to="/germany/nrw/city/koln_city/attractions/ostasiatische_kunst_koln">{t.attractions.ostasiatische_kunst_koln[lang]}</Link></li>
-                      <li><Link to="/germany/nrw/city/koln_city/attractions/makk_museum_koln">{t.attractions.makk_museum_koln[lang]}</Link></li>
-                      <li><Link to="/germany/nrw/city/koln_city/attractions/museum_schnuetgen_koln">{t.attractions.museum_schnuetgen_koln[lang]}</Link></li>
-                      <li><Link to="/germany/nrw/city/koln_city/attractions/rautenstrauch_joest_museum_koln">{t.attractions.rautenstrauch_joest_museum_koln[lang]}</Link></li>
-                      <li><Link to="/germany/nrw/city/koln_city/attractions/sport_olympia_museum_koln">{t.attractions.sport_olympia_museum_koln[lang]}</Link></li>
-                      <li><Link to="/germany/nrw/city/koln_city/attractions/photographische_sammlung_sk_stiftung_kultur_koln">{t.attractions.photographische_sammlung_sk_stiftung_kultur_koln[lang]}</Link></li>
-                      <li><Link to="/germany/nrw/city/koln_city/attractions/koln_seilbahn">{t.attractions.koln_seilbahn[lang]}</Link></li>
-                      <li><Link to="/germany/nrw/city/koln_city/attractions/koln_bridges">{t.attractions.koln_bridges[lang]}</Link></li>
-                      <li><Link to="/germany/nrw/city/koln_city/attractions/skulpturenpark_koln">{t.attractions.skulpturenpark_koln[lang]}</Link></li>
-                      <li><Link to="/germany/nrw/city/koln_city/attractions/zoo_koln">{t.attractions.zoo_koln[lang]}</Link></li>
-                      <li><Link to="/germany/nrw/city/koln_city/attractions/forstbotanischer_garten">{t.attractions.forstbotanischer_garten[lang]}</Link></li>
-                      <li><Link to="/germany/nrw/city/koln_city/attractions/flora_garten_koln">{t.attractions.flora_garten_koln[lang]}</Link></li>
-                      <li><Link to="/germany/nrw/city/koln_city/attractions/rheinpark_koln">{t.attractions.rheinpark_koln[lang]}</Link>
-                        <ul>
-                          <li><Link to="/germany/nrw/city/koln_city/attractions/tanzbrunnen">{t.attractions.tanzbrunnen[lang]}</Link></li>
-                          <li><Link to="/germany/nrw/city/koln_city/attractions/divitia_koln">{t.attractions.divitia_koln[lang]}</Link></li>
-                        </ul>
-                      </li>
-                      <li><Link to="/germany/nrw/city/koln_city/attractions/finkens_garten_koln">{t.attractions.finkens_garten_koln[lang]}</Link></li>
-                      <li><Link to="/germany/nrw/city/koln_city/attractions/decksteiner_weiher_koln">{t.attractions.decksteiner_weiher_koln[lang]}</Link></li>
-                      <li><Link to="/germany/nrw/city/koln_city/attractions/prussian_fortress_system_koln">{t.attractions.prussian_fortress_system_koln[lang]}</Link>
-                        <ul>
-                          <li><Link to="/germany/nrw/city/koln_city/attractions/fort_I_inner_koln">{t.attractions.fort_I_inner_koln[lang]}</Link></li>
-                          <li><Link to="/germany/nrw/city/koln_city/attractions/fort_II_inner_koln">{t.attractions.fort_II_inner_koln[lang]}</Link></li>
-                          <li><Link to="/germany/nrw/city/koln_city/attractions/fort_III_inner_koln">{t.attractions.fort_III_inner_koln[lang]}</Link></li>
-                          <li><Link to="/germany/nrw/city/koln_city/attractions/fort_V_inner_koln">{t.attractions.fort_V_inner_koln[lang]}</Link></li>
-                          <li><Link to="/germany/nrw/city/koln_city/attractions/fort_VI_inner_koln">{t.attractions.fort_VI_inner_koln[lang]}</Link></li>
-                          <li><Link to="/germany/nrw/city/koln_city/attractions/fort_IX_inner_koln">{t.attractions.fort_IX_inner_koln[lang]}</Link></li>
-                          <li><Link to="/germany/nrw/city/koln_city/attractions/fort_IV_outer_koln">{t.attractions.fort_IV_outer_koln[lang]}</Link></li>
-                          <li><Link to="/germany/nrw/city/koln_city/attractions/fort_V_outer_koln">{t.attractions.fort_V_outer_koln[lang]}</Link></li>
-                          <li><Link to="/germany/nrw/city/koln_city/attractions/fort_VI_outer_koln">{t.attractions.fort_VI_outer_koln[lang]}</Link></li>
-                          <li><Link to="/germany/nrw/city/koln_city/attractions/fort_IX_outer_koln">{t.attractions.fort_IX_outer_koln[lang]}</Link></li>
-                          <li><Link to="/germany/nrw/city/koln_city/attractions/fort_X_outer_koln">{t.attractions.fort_X_outer_koln[lang]}</Link></li>
-                          <li><Link to="/germany/nrw/city/koln_city/attractions/fort_XI_outer_koln">{t.attractions.fort_XI_outer_koln[lang]}</Link></li>
-                        </ul>
-                      </li>
+                    </ul>
+                    <ul>
+                      <li><span>{lang === 'ru' ? 'Достопримечательности' : lang === 'de' ? 'Sehenswürdigkeiten' : 'Заходи'}</span></li>
+                      <ul>
+                        <li><Link to="/germany/nrw/city/koln_city/attractions/altstadt_koln">{t.attractions.altstadt_koln[lang]}</Link>
+                          <ul>
+                            <li><Link to="/germany/nrw/city/koln_city/attractions/cologne_cathedral">{t.attractions.cologne_cathedral[lang]}</Link></li>
+                            <li><Link to="/germany/nrw/city/koln_city/attractions/fischmarkt_koln">{t.attractions.fischmarkt_koln[lang]}</Link>
+                              <ul>
+                                <li><Link to="/germany/nrw/city/koln_city/attractions/fischweiberbrunnen_koln">{t.attractions.fischweiberbrunnen_koln[lang]}</Link></li>
+                              </ul>
+                            </li>
+                            <li><Link to="/germany/nrw/city/koln_city/attractions/rathaus_koln">{t.attractions.rathaus_koln[lang]}</Link></li>
+                            <li><Link to="/germany/nrw/city/koln_city/attractions/st_maria_himmelfahrt_koln">{t.attractions.st_maria_himmelfahrt_koln[lang]}</Link></li>
+                            <li><Link to="/germany/nrw/city/koln_city/attractions/guerzenich_koln">{t.attractions.guerzenich_koln[lang]}</Link></li>
+                            <li><Link to="/germany/nrw/city/koln_city/attractions/miqua_koln">{t.attractions.miqua_koln[lang]}</Link></li>
+                            <li><Link to="/germany/nrw/city/koln_city/attractions/roemisch_germanisches_museum">{t.attractions.roemisch_germanisches_museum[lang]}</Link></li>
+                            <li><Link to="/germany/nrw/city/koln_city/attractions/farina_duftmuseum">{t.attractions.farina_duftmuseum[lang]}</Link></li>
+                            <li><Link to="/germany/nrw/city/koln_city/attractions/dufthaus_4711_koln">{t.attractions.dufthaus_4711_koln[lang]}</Link></li>
+                            <li><Link to="/germany/nrw/city/koln_city/attractions/wallraf_richartz_museum">{t.attractions.wallraf_richartz_museum[lang]}</Link></li>
+                            <li><Link to="/germany/nrw/city/koln_city/attractions/museum_ludwig">{t.attractions.museum_ludwig[lang]}</Link></li>
+                            <li><Link to="/germany/nrw/city/koln_city/attractions/stadtmuseum_koln">{t.attractions.stadtmuseum_koln[lang]}</Link></li>
+                            <li><Link to="/germany/nrw/city/koln_city/attractions/old_towers_koln">{t.attractions.old_towers_koln[lang]}</Link>
+                              <ul>
+                                <li><Link to="/germany/nrw/city/koln_city/attractions/rumerturm_koln">{t.attractions.rumerturm_koln[lang]}</Link></li>
+                                <li><Link to="/germany/nrw/city/koln_city/attractions/hahnentorburg_koln">{t.attractions.hahnentorburg_koln[lang]}</Link></li>
+                                <li><Link to="/germany/nrw/city/koln_city/attractions/eigelsteintorburg_koln">{t.attractions.eigelsteintorburg_koln[lang]}</Link></li>
+                                <li><Link to="/germany/nrw/city/koln_city/attractions/severinstorburg_koln">{t.attractions.severinstorburg_koln[lang]}</Link></li>
+                                <li><Link to="/germany/nrw/city/koln_city/attractions/ulrepforte_koln">{t.attractions.ulrepforte_koln[lang]}</Link></li>
+                                <li><Link to="/germany/nrw/city/koln_city/attractions/bayenturm_koln">{t.attractions.bayenturm_koln[lang]}</Link></li>
+                              </ul>
+                            </li>
+                          </ul>
+                        </li>
+                        <li><Link to="/germany/nrw/city/koln_city/attractions/romanische_kirchen_altstadt_koln">{t.attractions.romanische_kirchen_altstadt_koln[lang]}:</Link>
+                          <ul>
+                            <li><Link to="/germany/nrw/city/koln_city/attractions/gross_st_martin_koln">{t.attractions.gross_st_martin_koln[lang]}</Link></li>
+                            <li><Link to="/germany/nrw/city/koln_city/attractions/st_maria_im_kapitol_koln">{t.attractions.st_maria_im_kapitol_koln[lang]}</Link></li>
+                            <li><Link to="/germany/nrw/city/koln_city/attractions/st_gereon_koln">{t.attractions.st_gereon_koln[lang]}</Link></li>
+                            <li><Link to="/germany/nrw/city/koln_city/attractions/st_aposteln_koln">{t.attractions.st_aposteln_koln[lang]}</Link></li>
+                            <li><Link to="/germany/nrw/city/koln_city/attractions/st_kunibert_koln">{t.attractions.st_kunibert_koln[lang]}</Link></li>
+                          </ul>
+                        </li>
+                        <li><Link to="/germany/nrw/city/koln_city/attractions/schokoladenmuseum">{t.attractions.schokoladenmuseum[lang]}</Link></li>
+                        <li><Link to="/germany/nrw/city/koln_city/attractions/ostasiatische_kunst_koln">{t.attractions.ostasiatische_kunst_koln[lang]}</Link></li>
+                        <li><Link to="/germany/nrw/city/koln_city/attractions/makk_museum_koln">{t.attractions.makk_museum_koln[lang]}</Link></li>
+                        <li><Link to="/germany/nrw/city/koln_city/attractions/museum_schnuetgen_koln">{t.attractions.museum_schnuetgen_koln[lang]}</Link></li>
+                        <li><Link to="/germany/nrw/city/koln_city/attractions/rautenstrauch_joest_museum_koln">{t.attractions.rautenstrauch_joest_museum_koln[lang]}</Link></li>
+                        <li><Link to="/germany/nrw/city/koln_city/attractions/sport_olympia_museum_koln">{t.attractions.sport_olympia_museum_koln[lang]}</Link></li>
+                        <li><Link to="/germany/nrw/city/koln_city/attractions/photographische_sammlung_sk_stiftung_kultur_koln">{t.attractions.photographische_sammlung_sk_stiftung_kultur_koln[lang]}</Link></li>
+                        <li><Link to="/germany/nrw/city/koln_city/attractions/koln_seilbahn">{t.attractions.koln_seilbahn[lang]}</Link></li>
+                        <li><Link to="/germany/nrw/city/koln_city/attractions/koln_bridges">{t.attractions.koln_bridges[lang]}</Link></li>
+                        <li><Link to="/germany/nrw/city/koln_city/attractions/skulpturenpark_koln">{t.attractions.skulpturenpark_koln[lang]}</Link></li>
+                        <li><Link to="/germany/nrw/city/koln_city/attractions/zoo_koln">{t.attractions.zoo_koln[lang]}</Link></li>
+                        <li><Link to="/germany/nrw/city/koln_city/attractions/forstbotanischer_garten">{t.attractions.forstbotanischer_garten[lang]}</Link></li>
+                        <li><Link to="/germany/nrw/city/koln_city/attractions/flora_garten_koln">{t.attractions.flora_garten_koln[lang]}</Link></li>
+                        <li><Link to="/germany/nrw/city/koln_city/attractions/rheinpark_koln">{t.attractions.rheinpark_koln[lang]}</Link>
+                          <ul>
+                            <li><Link to="/germany/nrw/city/koln_city/attractions/tanzbrunnen">{t.attractions.tanzbrunnen[lang]}</Link></li>
+                            <li><Link to="/germany/nrw/city/koln_city/attractions/divitia_koln">{t.attractions.divitia_koln[lang]}</Link></li>
+                          </ul>
+                        </li>
+                        <li><Link to="/germany/nrw/city/koln_city/attractions/finkens_garten_koln">{t.attractions.finkens_garten_koln[lang]}</Link></li>
+                        <li><Link to="/germany/nrw/city/koln_city/attractions/decksteiner_weiher_koln">{t.attractions.decksteiner_weiher_koln[lang]}</Link></li>
+                        <li><Link to="/germany/nrw/city/koln_city/attractions/prussian_fortress_system_koln">{t.attractions.prussian_fortress_system_koln[lang]}</Link>
+                          <ul>
+                            <li><Link to="/germany/nrw/city/koln_city/attractions/fort_I_inner_koln">{t.attractions.fort_I_inner_koln[lang]}</Link></li>
+                            <li><Link to="/germany/nrw/city/koln_city/attractions/fort_II_inner_koln">{t.attractions.fort_II_inner_koln[lang]}</Link></li>
+                            <li><Link to="/germany/nrw/city/koln_city/attractions/fort_III_inner_koln">{t.attractions.fort_III_inner_koln[lang]}</Link></li>
+                            <li><Link to="/germany/nrw/city/koln_city/attractions/fort_V_inner_koln">{t.attractions.fort_V_inner_koln[lang]}</Link></li>
+                            <li><Link to="/germany/nrw/city/koln_city/attractions/fort_VI_inner_koln">{t.attractions.fort_VI_inner_koln[lang]}</Link></li>
+                            <li><Link to="/germany/nrw/city/koln_city/attractions/fort_IX_inner_koln">{t.attractions.fort_IX_inner_koln[lang]}</Link></li>
+                            <li><Link to="/germany/nrw/city/koln_city/attractions/fort_IV_outer_koln">{t.attractions.fort_IV_outer_koln[lang]}</Link></li>
+                            <li><Link to="/germany/nrw/city/koln_city/attractions/fort_V_outer_koln">{t.attractions.fort_V_outer_koln[lang]}</Link></li>
+                            <li><Link to="/germany/nrw/city/koln_city/attractions/fort_VI_outer_koln">{t.attractions.fort_VI_outer_koln[lang]}</Link></li>
+                            <li><Link to="/germany/nrw/city/koln_city/attractions/fort_IX_outer_koln">{t.attractions.fort_IX_outer_koln[lang]}</Link></li>
+                            <li><Link to="/germany/nrw/city/koln_city/attractions/fort_X_outer_koln">{t.attractions.fort_X_outer_koln[lang]}</Link></li>
+                            <li><Link to="/germany/nrw/city/koln_city/attractions/fort_XI_outer_koln">{t.attractions.fort_XI_outer_koln[lang]}</Link></li>
+                          </ul>
+                        </li>
+                      </ul>
                     </ul>
                   </li>
 

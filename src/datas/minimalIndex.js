@@ -31,7 +31,9 @@ const datas =
     munster: { id: 64, ru: 'Административный округ Мюнстер', de: 'Regierungsbezirk Münster', uk: 'Адміністративний округ Мюнстер' },
 
     mayen_koblenz: { id: 114, ru: 'Район Майен‑Кобленц', de: 'Landkreis Mayen-Koblenz', uk: 'Район Маєн-Кобленц' },
-    trier_saarburg: { id: 121, ru: 'Район Трир-Саарбург', de: 'Landkreis Trier-Saarburg', uk: 'Район Трір-Саарбург' }
+    trier_saarburg: { id: 121, ru: 'Район Трир-Саарбург', de: 'Landkreis Trier-Saarburg', uk: 'Район Трір-Саарбург' },
+
+    sumskyi: { id: 132, ru: 'Район Сумський', de: 'Landkreis Sumskyi', uk: 'Район Сумський' }
 
   },
 
@@ -48,6 +50,8 @@ const datas =
     coesfeld: { id: 862, parent_id: 64, ru: 'Район Косфельд', de: 'Kreis Coesfeld', uk: 'Район Косфельд' },
     warendorf: { id: 874, parent_id: 64, ru: 'Район Варендорф', de: 'Kreis Warendorf', uk: 'Район Варендорф' },
     saarburg_kell: { id: 552, parent_id: 121, ru: 'Объединённая община Саарбург-Келль', de: 'Verbandsgemeinde Saarburg-Kell', uk: 'Об’єднана громада Саарбург-Келль' },
+
+    "sumska-miska": { id: 1251, parent_id: 132, ru: 'Сумская городская территориальная громада', de: 'Sumska miska terytorialna hromada', uk: 'Сумська міська територіальна громада' }
   },
 
   cities: {
@@ -437,9 +441,7 @@ const datas =
 
   events: {
     karneval_koln: { id: 924, ru: "Кельнский карнавал", uk: "Кельнський карнавал", de: "Kölner Karneval" },
-    karneval_koln_city: { ru: "проходит в Кёльне – неофициальной столице карнавала, а также во многих городах Рейнской области", uk: "відбувається в Кельні – неофіційній столиці карнавалу, а також у багатьох містах Рейнської області", de: "Findet in Köln – der inoffiziellen Karnevalshauptstadt – sowie in zahlreichen Städten des Rheinlandes statt" },
     winterleuchten_dortmund: { id: 925, ru: "Сад света в Вестфаленпарке", uk: "Сад світла у Вестфаленпарку", de: "Winterleuchten im Westfalenpark" },
-    winterleuchten_dortmund_city: { ru: "проходит в Дортмунде, в Вестфаленпарке", uk: "відбувається в Дортмунді, у Вестфаленпарку", de: "Findet in Dortmund, im Westfalenpark statt" },
     christmas_market_dortmund: { id: 926, ru: "Рождественская ярмарка и главная рождественская ёлка Дортмунда", uk: "Різдвяний ярмарок і головна різдвяна ялинка Дортмунда", de: "Weihnachtsmarkt und der große Weihnachtsbaum in Dortmund" },
   },
 
