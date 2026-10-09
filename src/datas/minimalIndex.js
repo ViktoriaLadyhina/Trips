@@ -33,7 +33,7 @@ const datas =
     mayen_koblenz: { id: 114, ru: 'Район Майен‑Кобленц', de: 'Landkreis Mayen-Koblenz', uk: 'Район Маєн-Кобленц' },
     trier_saarburg: { id: 121, ru: 'Район Трир-Саарбург', de: 'Landkreis Trier-Saarburg', uk: 'Район Трір-Саарбург' },
 
-    sumskyi: { id: 132, ru: 'Район Сумський', de: 'Landkreis Sumskyi', uk: 'Район Сумський' }
+    sumskyi: { id: 132, ru: 'Сумской район', de: 'Landkreis Sumskyi', uk: 'Сумський район' }
 
   },
 
@@ -51,7 +51,7 @@ const datas =
     warendorf: { id: 874, parent_id: 64, ru: 'Район Варендорф', de: 'Kreis Warendorf', uk: 'Район Варендорф' },
     saarburg_kell: { id: 552, parent_id: 121, ru: 'Объединённая община Саарбург-Келль', de: 'Verbandsgemeinde Saarburg-Kell', uk: 'Об’єднана громада Саарбург-Келль' },
 
-    "sumska-miska": { id: 1251, parent_id: 132, ru: 'Сумская городская территориальная громада', de: 'Sumska miska terytorialna hromada', uk: 'Сумська міська територіальна громада' }
+    sumska_miska: { id: 1251, parent_id: 132, ru: 'Сумская городская территориальная громада', de: 'Sumska miska terytorialna hromada', uk: 'Сумська міська територіальна громада' }
   },
 
   cities: {
@@ -302,7 +302,7 @@ const datas =
     // velbert
     langenberg_altstadt_velbert: { id: 737, ru: 'Старый город Лангенберг', de: 'Altstadt Langenberg', uk: 'Старе місто Лангенберг' },
     langenberg_alte_kirche_velbert: { id: 739, ru: 'Старая церковь Лангеберг', de: 'Alte Kirche Langenberg', uk: 'Стара церква Лангенберг' },
-    langenberg_burgerhaus_velbert: { ru: 'Исторический общественный дом Лангенберга', de: 'Historisches Bürgerhaus Langenberg', uk: 'Історичний громадський будинок Лангенберга' },
+    langenberg_burgerhaus_velbert: { id: 740, ru: 'Исторический общественный дом Лангенберга', de: 'Historisches Bürgerhaus Langenberg', uk: 'Історичний громадський будинок Лангенберга' },
 
     // Münster округ
     // край Recklinghausen
@@ -316,7 +316,7 @@ const datas =
     burg_monschau: { ru: 'Замок Моншау', de: 'Burg Monschau', uk: 'Замок Моншау' },
     rotes_haus_monschau: { ru: 'Красный дом', de: 'Rotes Haus', uk: 'Червоний будинок' },
     senfmuehle_monschau: { id: 916, ru: 'Историческая горчичная мельница', de: 'Historische Senfmühle', uk: 'Історичний гірчичний млин' },
-    glashuette_monschau: { id: 918, ru: 'Стеклодувная мастерская', de: 'Glashütte', uk: 'Майстерня скла' },
+    glashuette_monschau: { id: 918, ru: 'Стеклодувная мастерская', de: 'Glashütte', uk: 'Склодувна майстерня' },
     tuchmacherbrunnen_monschau: { ru: 'Фонтан ткачей в Моншау', de: 'Tuchmacherbrunnen in Monschau', uk: 'Фонтан ткачів у Моншау' },
 
     // Rhein-Erft-Kreis
@@ -352,7 +352,6 @@ const datas =
     // Lohmar
     st_johannes_enthauptung_lohmar: { ru: 'Церковь Святого Иоанна Крестителя', de: 'Kirche St. Johannes Enthauptung', uk: 'Церква Святого Іоанна Хрестителя' },
 
-
     // rheinland-pfalz
     // Trier
     portaNigra_trier: { id: 793, ru: 'Порта Нигра («Чёрные ворота»)', de: 'Porta Nigra', uk: 'Порта Нігра («Чорні ворота»)' },
@@ -386,6 +385,7 @@ const datas =
     schengelbrunnen: { id: 783, ru: 'Фонтан «Шенгель»', de: 'Schängelbrunnen', uk: 'Фонтан «Шенгель»' },
     marktfrau_und_schutzmann_koblenz: { id: 786, ru: 'Скульптура «Торговка и полицейский»', de: 'Die Figurengruppe «Marktfrau und Schutzmann»', uk: 'Скульптурна група «Ринкова торговка та поліцейський»' },
     liebfrauenkirche_koblenz: { id: 910, ru: 'Церковь Либфрауэнкирхе', de: 'Liebfrauenkirche', uk: 'Церква Лібфрауенкірхе' },
+    historicalColumn_koblenz: { id: 1283, ru: 'Историческая колонна', de: 'Historische Säule', uk: 'Історична колона' },
 
     lahneck: { id: 766, is_active: 0, ru: 'Замок Ланек', de: 'Burg Lahneck', uk: 'Замок Ланек' }, // routes: 'castles_rhine_valley'
     marksburg: { id: 767, is_active: 0, ru: 'Замок Марксбург', de: 'Burg Marksburg', uk: 'Замок Марксбург' }, // routes: 'castles_rhine_valley'

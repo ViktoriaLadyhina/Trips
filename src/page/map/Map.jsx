@@ -5,13 +5,15 @@ import BreadCrumbs from '../../components/breadCrumbs/BreadCrumbs.jsx';
 import datas from '../../datas/minimalIndex.js'
 import { Helmet } from 'react-helmet-async';
 
-const sitemap = { ru: "Карта сайта", ua: "Мапа сайту", de: "Sitemap" };
+const sitemap = { ru: "Карта сайта", uk: "Мапа сайту", de: "Sitemap" };
+const t = datas
+const routes = { ru: "Маршруты", de: "Routen", uk: "Маршрути" };
+const events = { ru: "Мероприятия/События", de: "Veranstaltungen", uk: "Заходи" };
+const attractions = { ru: "Достопримечательности", de: "Sehenswürdigkeiten", uk: "Пам'ятки" };
 
 const Map = () => {
   const { lang } = useSelector((state) => state.language);
-
-  const t = datas
-
+  
   // BreadCrumbs
   const crumbs = [
     {
@@ -36,7 +38,7 @@ const Map = () => {
           <li>
             <Link to="/germany"><strong>{t.countries.germany[lang]}</strong></Link>
             <ul>
-              <li><span>{lang === 'ru' ? 'Маршруты' : lang === 'de' ? 'Routen' : 'Маршрути'}</span>
+              <li><span>{routes[lang]}</span>
                 <ul>
                   <li><Link to="/germany/routes/castles_rhine_valley">{t.routes.castles_rhine_valley[lang]}</Link></li>
                 </ul>
@@ -111,6 +113,7 @@ const Map = () => {
                           <li><Link to="/germany/rheinland_pfalz/city/koblenz/attractions/liebfrauenkirche_koblenz">{t.attractions.liebfrauenkirche_koblenz[lang]}</Link></li>
                           <li><Link to="/germany/rheinland_pfalz/city/koblenz/attractions/schengelbrunnen">{t.attractions.schengelbrunnen[lang]}</Link></li>
                           <li><Link to="/germany/rheinland_pfalz/city/koblenz/attractions/marktfrau_und_schutzmann_koblenz">{t.attractions.marktfrau_und_schutzmann_koblenz[lang]}</Link></li>
+                          <li><Link to="/germany/rheinland_pfalz/city/koblenz/attractions/historicalColumn_koblenz">{t.attractions.historicalColumn_koblenz[lang]}</Link></li>
                         </ul>
                       </li>
                     </ul>
@@ -135,7 +138,7 @@ const Map = () => {
                   {/* Dortmund город */}
                   <li><Link to="/germany/nrw/city/dortmund">{t.cities.dortmund[lang]}</Link>
                     <ul>
-                      <li><span>{lang === 'ru' ? 'Мероприятия/События' : lang === 'de' ? 'Veranstaltungen' : 'Заходи'}</span>
+                      <li><span>{events[lang]}</span>
                         <ul>
                           <li><Link to="/germany/nrw/city/dortmund/events/christmas_market_dortmund">{t.events.christmas_market_dortmund[lang]}</Link> </li>
                           <li><Link to="/germany/nrw/city/dortmund/events/winterleuchten_dortmund">{t.events.winterleuchten_dortmund[lang]}</Link> </li>
@@ -143,7 +146,7 @@ const Map = () => {
                       </li>
                     </ul>
                     <ul>
-                      <li><span>{lang === 'ru' ? 'Достопримечательности' : lang === 'de' ? 'Sehenswürdigkeiten' : 'Заходи'}</span></li>
+                      <li><span>{attractions[lang]}</span></li>
                       <ul>
                         <li><Link to="/germany/nrw/city/dortmund/attractions/westfalenpark">{t.attractions.westfalenpark[lang]}</Link></li>
                       </ul>
@@ -153,14 +156,14 @@ const Map = () => {
                   {/* Köln город */}
                   <li><Link to="/germany/nrw/city/koln_city">{t.cities.koln_city[lang]}</Link>
                     <ul>
-                      <li><span>{lang === 'ru' ? 'Мероприятия/События' : lang === 'de' ? 'Veranstaltungen' : 'Заходи'}</span>
+                      <li><span>{events[lang]}</span>
                         <ul>
                           <li><Link to="/germany/nrw/city/koln_city/events/karneval_koln">{t.events.karneval_koln[lang]}</Link></li>
                         </ul>
                       </li>
                     </ul>
                     <ul>
-                      <li><span>{lang === 'ru' ? 'Достопримечательности' : lang === 'de' ? 'Sehenswürdigkeiten' : 'Заходи'}</span></li>
+                      <li><span>{attractions[lang]}</span></li>
                       <ul>
                         <li><Link to="/germany/nrw/city/koln_city/attractions/altstadt_koln">{t.attractions.altstadt_koln[lang]}</Link>
                           <ul>
@@ -435,7 +438,7 @@ const Map = () => {
           {/* Люксембург */}<br></br><br></br>
           <li><Link to="/luxembourg"><strong>{t.countries.luxembourg[lang]}</strong></Link>
             <ul>
-              <li><span>{lang === 'ru' ? 'Маршруты' : lang === 'de' ? 'Routen' : 'Маршрути'}</span>
+              <li><span>{routes[lang]}</span>
                 <ul>
                   <li><Link to="/luxembourg/routes/mullerthal_trail">{t.routes.mullerthal_trail[lang]}</Link></li>
                   <li><Link to="/luxembourg/routes/seven_castles">{t.routes.seven_castles[lang]}</Link></li>
@@ -497,24 +500,36 @@ const Map = () => {
             <ul>
               <li><Link to="/ukraine/sumska">{t.regions.sumska[lang]}</Link>
                 <ul>
-                  <li><Link to="/ukraine/sumska/city/sumy">{t.cities.sumy[lang]}</Link>
+                  <li><Link to="/ukraine/sumska/sumskyi">{t.districts.sumskyi[lang]}</Link>
                     <ul>
-                      <li><Link to="/ukraine/sumska/city/sumy/attractions/sumy_spaso_preobrazhensky">{t.attractions.sumy_spaso_preobrazhensky[lang]}</Link></li>
-                      <li><Link to="/ukraine/sumska/city/sumy/attractions/pokrovska_square_sumy">{t.attractions.pokrovska_square_sumy[lang]}</Link>
-                        <ul>
-                          <li><Link to="/ukraine/sumska/city/sumy/attractions/sumy_altanka">{t.attractions.sumy_altanka[lang]}</Link></li>
-                          <li><Link to="/ukraine/sumska/city/sumy/attractions/onatsky_museum_sumy">{t.attractions.onatsky_museum_sumy[lang]}</Link></li>
-                          <li><Link to="/ukraine/sumska/city/sumy/attractions/sumy_regional_museum">{t.attractions.sumy_regional_museum[lang]}</Link></li>
-                        </ul>
-                      </li>
-                      <li><Link to="/ukraine/sumska/city/sumy/attractions/afghan_square_sumy">{t.attractions.afghan_square_sumy[lang]}</Link>
-                        <ul>
-                          <li><Link to="/ukraine/sumska/city/sumy/attractions/afghan_memorial_sumy">{t.attractions.afghan_memorial_sumy[lang]}</Link></li>
-                        </ul>
-                      </li>
+                      <li><span>{t.subRegions.sumska_miska[lang]}</span></li>
+                      <ul>
+                        <li><Link to="/ukraine/sumska/city/sumy">{t.cities.sumy[lang]}</Link>
+                          <ul>
+                            <li><span>{attractions[lang]}</span>
+                              <ul>
+                                <li><Link to="/ukraine/sumska/city/sumy/attractions/sumy_spaso_preobrazhensky">{t.attractions.sumy_spaso_preobrazhensky[lang]}</Link></li>
+                                <li><Link to="/ukraine/sumska/city/sumy/attractions/pokrovska_square_sumy">{t.attractions.pokrovska_square_sumy[lang]}</Link>
+                                  <ul>
+                                    <li><Link to="/ukraine/sumska/city/sumy/attractions/sumy_altanka">{t.attractions.sumy_altanka[lang]}</Link></li>
+                                    <li><Link to="/ukraine/sumska/city/sumy/attractions/onatsky_museum_sumy">{t.attractions.onatsky_museum_sumy[lang]}</Link></li>
+                                    <li><Link to="/ukraine/sumska/city/sumy/attractions/sumy_regional_museum">{t.attractions.sumy_regional_museum[lang]}</Link></li>
+                                  </ul>
+                                </li>
+                                <li><Link to="/ukraine/sumska/city/sumy/attractions/afghan_square_sumy">{t.attractions.afghan_square_sumy[lang]}</Link>
+                                  <ul>
+                                    <li><Link to="/ukraine/sumska/city/sumy/attractions/afghan_memorial_sumy">{t.attractions.afghan_memorial_sumy[lang]}</Link></li>
+                                  </ul>
+                                </li>
+                              </ul>
+                            </li>
+                          </ul>
+                        </li>
+                      </ul>
                     </ul>
                   </li>
                 </ul>
+
               </li>
             </ul>
           </li>

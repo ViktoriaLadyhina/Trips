@@ -498,7 +498,6 @@ export const Fotos = {
     koblenz: {
       altstadt_koblenz: [
         { path: "Germany/rheinland-pfalz/koblenz/altstadt/001.jpg", title: { ru: "Фонтан Клеменса, 2023", uk: "Фонтан Клеменса, 2023", de: "Klemensbrunnen, 2023" } },
-        { path: "Germany/rheinland-pfalz/koblenz/altstadt/002.jpg", title: { ru: "Историческая колонна, 2023", uk: "Історична колона, 2023", de: "Historiensäule, 2023" } },
         { path: "Germany/rheinland-pfalz/koblenz/altstadt/005.jpg", title: { ru: "Утиный фонтан (Entenbrunnen), 2023", uk: "Качиний фонтан (Entenbrunnen), 2023", de: "Entenbrunnen, 2023" } },
         { path: "Germany/rheinland-pfalz/koblenz/altstadt/009.jpg", title: { ru: "Памятник «Реше-Хеннерих», 2023", uk: "Пам’ятник «Реше-Хеннерих», 2023", de: "Denkmal für Rese-Hennrich, 2023" } },
       ]
