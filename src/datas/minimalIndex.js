@@ -78,6 +78,7 @@ const datas =
     monschau: { id: 185, ru: 'Город Моншау', de: 'Stadt Monschau', uk: 'Місто Моншау' },
     bruhl: { id: 171, ru: 'Город Брюль', de: 'Stadt Brühl', uk: 'Місто Брюль' },
     frechen: { id: 174, ru: 'Город Фрехен', de: 'Stadt Frechen', uk: 'Місто Фрехен' },
+    bergheim: { id: 170, ru: 'Город Бергхайм', de: 'Stadt Bergheim', uk: 'Місто Бергхайм' },
     konigswinter: { id: 247, ru: 'Город Кёнигсвинтер', de: 'Stadt Königswinter', uk: 'Місто Кенігсвінтер' },
     lohmar: { id: 248, ru: 'Город Ломар', de: 'Stadt Lohmar', uk: 'Місто Ломар' },
 
@@ -156,6 +157,9 @@ const datas =
     monschau_konzen: { id: 663, parent: 185, ru: 'район Концен', de: 'Stadtteil Konzen', uk: 'район Концен' },
     monschau_muetzenich: { id: 664, parent: 185, ru: 'район Мютцених', de: 'Stadtteil Mützenich', uk: 'район Мютценіх' },
     monschau_rohren: { id: 665, parent: 185, ru: 'район Рорен', de: 'Stadtteil Rohren', uk: 'район Рорен' },
+
+    bergheim_mitte: { id: 1285, parent: 170, ru: 'район Бергхайм-Митте', de: 'Stadtteil Bergheim-Mitte', uk: 'район Бергхайм-Мітте' },
+    bergheim_paffendorf: { id: 1287, parent: 170, ru: 'район Пафендорф', de: 'Stadtteil Paffendorf', uk: 'район Пафендорф' },
 
     bruhl_innenstadt: { id: 788, parent: 171, ru: 'район Инненштадт', de: 'Stadtteil Innenstadt', uk: 'район Інненштадт' },
 
@@ -320,6 +324,10 @@ const datas =
     tuchmacherbrunnen_monschau: { ru: 'Фонтан ткачей в Моншау', de: 'Tuchmacherbrunnen in Monschau', uk: 'Фонтан ткачів у Моншау' },
 
     // Rhein-Erft-Kreis
+    // Bergheim
+    aachener_tor_bergheim: { id: 1284, ru: 'Аахенские ворота', de: 'Aachener Tor', uk: 'Аахенські ворота' },
+    burg_bergheim: { id: 1286, ru: 'Замок Паффендорф', de: 'Schloss Paffendorf', uk: 'Замок Паффендорф' },
+
     // Brühl
     bruhl_palaces: { id: 787, ru: 'Дворцы Брюля: ансамбль Аугустусбург и Фалькенлюст', de: 'Schlösser Brühl: Augustusburg & Falkenlust', uk: 'Палаци Брюля: ансамбль Аугустусбург і Фалькенлюст' },
     bruehl_augustusburg: { id: 789, ru: 'Дворец Аугустусбург', de: 'Schloss Augustusburg', uk: 'Палац Аугустусбург' },

@@ -25,9 +25,10 @@ export const cityLocations = {
     monschau: { subRegionPath: "aachen" },
 
     konigswinter: { subRegionPath: "rhein_sieg" },
-    
     lohmar: { subRegionPath: "rhein_sieg" },
+    
     bruhl: { subRegionPath: "rhein_erft" },
     frechen: { subRegionPath: "rhein_erft" },
+    bergheim: { subRegionPath: "rhein_erft" },
 
 };

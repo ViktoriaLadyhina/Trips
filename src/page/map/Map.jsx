@@ -13,7 +13,7 @@ const attractions = { ru: "Достопримечательности", de: "Seh
 
 const Map = () => {
   const { lang } = useSelector((state) => state.language);
-  
+
   // BreadCrumbs
   const crumbs = [
     {
@@ -404,6 +404,16 @@ const Map = () => {
                       {/* Край Rhein-Erft */}
                       <li><span>{t.subRegions.rhein_erft[lang]}</span>
                         <ul>
+                          <li><Link to="/germany/nrw/koln/bergheim">{t.cities.bergheim[lang]}</Link>
+                            <ul>
+                              <li><span>{attractions[lang]}</span>
+                                <ul>
+                                  <li><Link to="/germany/nrw/koln/bergheim/attractions/aachener_tor_bergheim">{t.attractions.aachener_tor_bergheim[lang]}</Link></li>
+                                  <li><Link to="/germany/nrw/koln/bergheim/attractions/burg_bergheim">{t.attractions.burg_bergheim[lang]}</Link></li>
+                                </ul>
+                              </li>
+                            </ul>
+                          </li>
                           <li><Link to="/germany/nrw/koln/bruhl">{t.cities.bruhl[lang]}</Link>
                             <ul>
                               <li><Link to="/germany/nrw/koln/bruhl/attractions/bruhl_palaces">{t.attractions.bruhl_palaces[lang]}</Link></li>
