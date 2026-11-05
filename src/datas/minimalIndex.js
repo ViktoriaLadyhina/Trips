@@ -186,6 +186,7 @@ const datas =
     luxembourg_ville_haute: { id: 898, parent: 146, ru: 'квартал Верхний город Люксембурга', de: 'Stadtteil Ville Haute', uk: 'квартал Верхнє місто Люксембурга' },
     luxembourg_grund: { id: 899, parent: 146, ru: 'квартал Грунд', de: 'Stadtteil Grund', uk: 'квартал Грунд' },
     luxembourg_pfaffenthal: { id: 900, parent: 146, ru: 'квартал Пфаффенталь', de: 'Stadtteil Pfaffenthal', uk: 'квартал Пфаффенталь' },
+    luxembourg_kirchberg: { id: 1290, parent: 146, ru: 'квартал Кирхберг', de: 'Stadtviertel Kirchberg', uk: 'квартал Кірхберг' },
 
     sumy_zarichnyi: { id: 723, parent: 125, ru: 'Заречный район', de: 'Zaritschnyj-Bezirk', uk: 'Зарічний район' },
     sumy_kowpak: { id: 795, parent: 125, ru: 'Ковпаковский район', de: 'Kowpakivskyj-Bezirk', uk: 'Ковпаківський район' },
@@ -327,6 +328,7 @@ const datas =
     // Bergheim
     aachener_tor_bergheim: { id: 1284, ru: 'Аахенские ворота', de: 'Aachener Tor', uk: 'Аахенські ворота' },
     burg_bergheim: { id: 1286, ru: 'Замок Паффендорф', de: 'Schloss Paffendorf', uk: 'Замок Паффендорф' },
+    st_pankratius_paffendorf: { id: 1288, ru: 'Церковь Святого Панкратия', de: 'St. Pankratius', uk: 'Церква Святого Панкратія' },
 
     // Brühl
     bruhl_palaces: { id: 787, ru: 'Дворцы Брюля: ансамбль Аугустусбург и Фалькенлюст', de: 'Schlösser Brühl: Augustusburg & Falkenlust', uk: 'Палаци Брюля: ансамбль Аугустусбург і Фалькенлюст' },
@@ -412,7 +414,7 @@ const datas =
     //luxembourg
     ansembourg_castle: { id: 751, ru: 'Новый замок Ансембург', de: 'Schloss Ansembourg', uk: 'Новий замок Ансембурґ' }, // routes: 'seven_castles'
     koerich_castle: { id: 752, ru: 'Замок Керих', de: 'Burg Koerich', uk: 'Замок Керіх' }, // routes: 'seven_castles'
-    musee_drai_eechelen_luxembourg: { ru: 'Музей «Три жёлудя»', de: 'Museum „Drei Eicheln“', uk: 'Музей «Три жолуді»' },
+    musee_drai_eechelen_luxembourg: { id: 1289, ru: 'Музей «Три жёлудя»', de: 'Museum „Drei Eicheln“', uk: 'Музей «Три жолуді»' },
     fort_thungen_luxembourg: { ru: 'Форт Тюнген', de: 'Fort Thüngen', uk: 'Форт Тюнген' },
     old_town_luxembourg: { id: 897, ru: 'Старый город Люксембурга', de: 'Altstadt Luxemburg', uk: 'Старе місто Люксембурга' },
     casemates_du_bock_luxembourg: { id: 902, ru: 'Казематы Бок', de: 'Bock-Kasematten', uk: 'Каземати Бок' },

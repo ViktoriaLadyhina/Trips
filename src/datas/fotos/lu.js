@@ -3,9 +3,6 @@ export const Fotos = {
 
   luxembourg_canton: {
     luxembourg_city: {
-      musee_drai_eechelen_luxembourg: [
-        { path: "Luxembourg/luxembourg_canton/luxembourg_city/musee_drai_eechelen/001.jpg", title: { ru: 'Музей «Три жёлудя», 2024', de: 'Museum „Drei Eicheln“, 2024', uk: 'Музей «Три жолуді», 2024' } },
-      ],
       fort_thungen_luxembourg: [
         { path: "Luxembourg/luxembourg_canton/luxembourg_city/musee_drai_eechelen/001.jpg", title: { ru: 'Форт Тюнген, 2024', de: 'Fort Thüngen, 2024', uk: 'Форт Тюнген, 2024' } },
         { path: "Luxembourg/luxembourg_canton/luxembourg_city/musee_drai_eechelen/002.jpg", title: { ru: 'Форт Тюнген, 2024', de: 'Fort Thüngen, 2024', uk: 'Форт Тюнген, 2024' } },

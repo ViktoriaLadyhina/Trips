@@ -410,6 +410,7 @@ const Map = () => {
                                 <ul>
                                   <li><Link to="/germany/nrw/koln/bergheim/attractions/aachener_tor_bergheim">{t.attractions.aachener_tor_bergheim[lang]}</Link></li>
                                   <li><Link to="/germany/nrw/koln/bergheim/attractions/burg_bergheim">{t.attractions.burg_bergheim[lang]}</Link></li>
+                                  <li><Link to="/germany/nrw/koln/bergheim/attractions/st_pankratius_paffendorf">{t.attractions.st_pankratius_paffendorf[lang]}</Link></li>
                                 </ul>
                               </li>
                             </ul>
