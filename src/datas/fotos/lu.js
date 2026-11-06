@@ -3,14 +3,6 @@ export const Fotos = {
 
   luxembourg_canton: {
     luxembourg_city: {
-      fort_thungen_luxembourg: [
-        { path: "Luxembourg/luxembourg_canton/luxembourg_city/musee_drai_eechelen/001.jpg", title: { ru: 'Форт Тюнген, 2024', de: 'Fort Thüngen, 2024', uk: 'Форт Тюнген, 2024' } },
-        { path: "Luxembourg/luxembourg_canton/luxembourg_city/musee_drai_eechelen/002.jpg", title: { ru: 'Форт Тюнген, 2024', de: 'Fort Thüngen, 2024', uk: 'Форт Тюнген, 2024' } },
-        { path: "Luxembourg/luxembourg_canton/luxembourg_city/musee_drai_eechelen/003.jpg", title: { ru: 'Форт Тюнген, 2024', de: 'Fort Thüngen, 2024', uk: 'Форт Тюнген, 2024' } },
-        { path: "Luxembourg/luxembourg_canton/luxembourg_city/musee_drai_eechelen/004.jpg", title: { ru: 'Форт Тюнген, 2024', de: 'Fort Thüngen, 2024', uk: 'Форт Тюнген, 2024' } },
-        { path: "Luxembourg/luxembourg_canton/luxembourg_city/musee_drai_eechelen/005.jpg", title: { ru: 'Форт Тюнген, 2024', de: 'Fort Thüngen, 2024', uk: 'Форт Тюнген, 2024' } },
-        { path: "Luxembourg/luxembourg_canton/luxembourg_city/musee_drai_eechelen/006.jpg", title: { ru: 'Форт Тюнген, 2024', de: 'Fort Thüngen, 2024', uk: 'Форт Тюнген, 2024' } },
-      ],
       pont_du_chateau_luxembourg: [
         { path: "Luxembourg/luxembourg_canton/luxembourg_city/old_town/pont_du_chateau/001.jpg", title: { ru: 'Мост Понт-дю-Шато, 2024', de: 'Pont du Château Brücke, 2024', uk: 'Міст Понт-дю-Шато, 2024' } },
         { path: "Luxembourg/luxembourg_canton/luxembourg_city/old_town/pont_du_chateau/002.jpg", title: { ru: 'Мост Понт-дю-Шато, 2024', de: 'Pont du Château Brücke, 2024', uk: 'Міст Понт-дю-Шато, 2024' } }
