@@ -41,7 +41,7 @@ app.use(session({
     maxAge: 8 * 60 * 60 * 1000
   }
 }));
-
+console.log("SESSION_SECRET exists:", Boolean(process.env.SESSION_SECRET));
 const searchMysql = require("./routes/searchMysql.js");  
 const listCountriesRouter = require("./routes/listCountries.router.js");  
 const countryRouter = require("./routes/country.router.js");  
