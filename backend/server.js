@@ -1,5 +1,7 @@
 const express = require("express");
 const cors = require("cors");
+const session = require("express-session");
+const MySQLStore = require("express-mysql-session")(session);
 
 if (process.env.NODE_ENV !== "production") {
   require("dotenv").config();
@@ -12,10 +14,33 @@ app.use(cors({
     "http://localhost:5173",
     "https://our-travels.info"
   ],
-  methods: ["GET", "POST"]
+  methods: ["GET", "POST"],
+  credentials: true
 }));
 
 app.use(express.json());
+const sessionStore = new MySQLStore({
+  host: process.env.MYSQLHOST,
+  user: process.env.MYSQLUSER,
+  password: process.env.MYSQLPASSWORD,
+  database: process.env.MYSQLDATABASE,
+  port: Number(process.env.MYSQLPORT || 3306)
+});
+
+app.set("trust proxy", 1);
+
+app.use(session({
+  secret: process.env.SESSION_SECRET,
+  store: sessionStore,
+  resave: false,
+  saveUninitialized: false,
+  cookie: {
+    httpOnly: true,
+    secure: true,
+    sameSite: "none",
+    maxAge: 8 * 60 * 60 * 1000
+  }
+}));
 
 const searchMysql = require("./routes/searchMysql.js");  
 const listCountriesRouter = require("./routes/listCountries.router.js");  
@@ -32,6 +57,8 @@ const attractionRouter = require("./routes/attraction.router.js")
 const routRouter = require("./routes/rout.router.js")
 const unescoRouter = require("./routes/unesco.roter.js")
 const eventRouter = require("./routes/event.router.js")
+const addRouter = require("./routes/addAttraction.router.js")
+const authRouter = require("./routes/auth.router.js");
 
 // COUNTRY LIST API
 app.use("/api/countries", listCountriesRouter);
@@ -77,6 +104,10 @@ app.use("/api/unesco", unescoRouter);
 
 // EVENT
 app.use("/api/event", eventRouter);
+
+//forma
+app.use("/api/add", addRouter);
+app.use("/api/auth", authRouter); // защита маршрута добавления достопримечательности
 
 
 // запуск сервера

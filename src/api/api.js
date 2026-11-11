@@ -56,3 +56,8 @@ export const getUnesco = (lang = "ru") =>
 
 export const getEvent = (eventPath, lang = "ru") =>
     apiFetch(`${BASE_URL}/api/event/${eventPath}?lang=${lang}`);
+
+export const checkAdminSession = () =>
+  apiFetch(`${BASE_URL}/api/auth/check`, {
+    credentials: "include"
+  });

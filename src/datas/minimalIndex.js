@@ -86,9 +86,9 @@ const datas =
     luxembourg_city: { id: 146, ru: 'Город Люксембург', de: 'Stadt Luxemburg', uk: 'Місто Люксембург' },
     ansembourg: { id: 159, ru: 'Деревня Ансембург', de: 'Dorf Ansembourg', uk: 'Село Ансембург' },
     koerich: { id: 141, ru: 'Деревня Кёрих', de: 'Dorf Koerich', uk: 'Село Керіх' },
-    mersch_com: { id: 153, is_active: 0, ru: 'Мерш', de: 'Mersch', uk: 'Мерш' },
-    helperknapp: { id: 755, is_active: 0, ru: 'Хелперкенапп', de: 'Helperknapp', uk: 'Хелперкенапп' },
-    habscht: { id: 759, is_active: 0, ru: 'Хабшт', de: 'Habscht', uk: 'Хабшт' },
+    // mersch_com: { id: 153, is_active: 0, ru: 'Мерш', de: 'Mersch', uk: 'Мерш' },
+    // helperknapp: { id: 755, is_active: 0, ru: 'Хелперкенапп', de: 'Helperknapp', uk: 'Хелперкенапп' },
+    // habscht: { id: 759, is_active: 0, ru: 'Хабшт', de: 'Habscht', uk: 'Хабшт' },
 
     //Ukraine
     sumy: { id: 125, ru: 'Город Сумы', de: 'Stadt Sumy', uk: 'Місто Суми' }
