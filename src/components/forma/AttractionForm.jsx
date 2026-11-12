@@ -1,737 +1,513 @@
 import { useState, useEffect } from "react";
-import { checkAdminSession } from "../../api/api";
+import { checkAdminSession, adminLogin, addAttraction, getCityDistricts, addCityDistrict } from "../../api/api";
+import datas from "../../datas/minimalIndex.js";
+import { useSelector } from "react-redux";
+import { useForm, useFieldArray } from "react-hook-form";
+import './AttractionForm.scss';
 
-// import { useForm, useFieldArray } from "react-hook-form";
-// import './AttractionForm.scss';
 // import { pathData } from "./pathData";
 
 const AttractionForm = () => {
   const [isAdmin, setIsAdmin] = useState(false);
   const [isChecking, setIsChecking] = useState(true);
+  const [password, setPassword] = useState("");
+  const [loginError, setLoginError] = useState("");
+  const lang = useSelector((state) => state.language.lang);
 
-useEffect(() => {
-  checkAdminSession()
-    .then((data) => {
-      setIsAdmin(data.isAdmin);
-    })
-    .catch((error) => {
-      console.error("Session check error:", error);
-      setIsAdmin(false);
-    })
-    .finally(() => {
-      setIsChecking(false);
-    });
-}, []);
+  const [cityDistricts, setCityDistricts] = useState([]);
+  const [isLoadingDistricts, setIsLoadingDistricts] = useState(false);
+  const [isNewDistrict, setIsNewDistrict] = useState(false);
+  const [selectedDistrictIds, setSelectedDistrictIds] = useState([]);
 
-if (isChecking) { return <div>Checking session...</div>; }
-if (isAdmin === false) { return <div>Access denied</div>; }
+  const { register, handleSubmit, watch } = useForm({
+    defaultValues: {
+      type: "attraction",
+      path: "",
+      parent_id: "",
+      is_active: 1
+    }
+  });
 
+  const selectedCityId = watch("parent_id");
+
+  useEffect(() => {
+    checkAdminSession()
+      .then((data) => {
+        setIsAdmin(data.isAdmin);
+      })
+      .catch((error) => {
+        console.error("Session check error:", error);
+        setIsAdmin(false);
+      })
+      .finally(() => {
+        setIsChecking(false);
+      });
+  }, []);
+
+  useEffect(() => {
+    if (!selectedCityId) {
+      setCityDistricts([]);
+      return;
+    }
+
+    setIsLoadingDistricts(true);
+
+    getCityDistricts(selectedCityId)
+      .then((data) => {
+        setCityDistricts(data);
+      })
+      .catch((error) => {
+        console.error("Error loading city districts:", error);
+        setCityDistricts([]);
+      })
+      .finally(() => {
+        setIsLoadingDistricts(false);
+      });
+  }, [selectedCityId]);
+
+  const handleLogin = async (e) => {
+    e.preventDefault();
+    setLoginError("");
+
+    try {
+      await adminLogin(password);
+      setIsAdmin(true);
+    } catch (error) {
+      setLoginError("Неверный пароль или ошибка сервера");
+    }
+  };
+
+  if (isChecking) { return <div>Checking session...</div>; }
+  if (isAdmin === false) {
     return (
-<form className='forma'>
-  <h1>Добавить достопримечательность</h1>
-</form>
-)
+      <form onSubmit={handleLogin}>
+        <h1>Вход администратора</h1>
+
+        <label>
+          Пароль:
+          <input
+            type="password"
+            value={password}
+            onChange={(e) => setPassword(e.target.value)}
+            required
+          />
+        </label>
+
+        <button type="submit">Войти</button>
+
+        {loginError && <p>{loginError}</p>}
+      </form>
+    );
+  }
+
+
+  const onSubmit = async (data) => {
+    try {
+      const districtIds = [...selectedDistrictIds];
+
+      if (isNewDistrict) {
+        const district = await addCityDistrict({
+          parent_id: data.parent_id,
+          name_ru: data.district_name_ru,
+          name_uk: data.district_name_uk,
+          name_de: data.district_name_de
+        });
+
+        districtIds.push(district.id);
+      }
+
+      data.cityDistrict_ids = districtIds;
+
+      const result = await addAttraction(data);
+      alert(`Достопримечательность добавлена. ID: ${result.id}`);
+    } catch (error) {
+      console.error("Ошибка добавления:", error);
+      alert("Не удалось добавить достопримечательность");
+    }
+  };
+
+
+  return (
+    <form className='forma' onSubmit={handleSubmit(onSubmit)}>
+      <h1>Добавить достопримечательность</h1>
+
+      <div className='field'>
+        {/* патч */}
+        <label>Path: <span className='note'>(в path используем только подчёркивания _, без дефисов -)</span>
+
+          <input
+            type="text"
+            {...register("path", { required: true })}
+            placeholder="Например, museum_bonn"
+          />
+        </label>
+      </div>
+      <div className='field'>
+
+        {/* Выбор города */}
+        <label> Город:
+          <select {...register("parent_id", { valueAsNumber: true })}>
+            <option value="">Выбери город</option>
+            {Object.entries(datas.cities)
+              .sort(([, a], [, b]) =>
+                a[lang].localeCompare(b[lang], lang)
+              )
+              .map(([key, city]) => (
+                <option key={key} value={city.id}>
+                  {city[lang]}
+                </option>
+              ))}
+          </select>
+        </label>
+
+
+        {/* Выбор районов города */}
+        <div>
+          <p>Районы города:</p>
+
+          {cityDistricts.map((district) => (
+            <label key={district.id}>
+              <input
+                type="checkbox"
+                checked={selectedDistrictIds.includes(district.id)}
+                onChange={(event) => {
+                  if (event.target.checked) {
+                    setSelectedDistrictIds((prev) => [
+                      ...prev,
+                      district.id
+                    ]);
+                  } else {
+                    setSelectedDistrictIds((prev) =>
+                      prev.filter((id) => id !== district.id)
+                    );
+                  }
+                }}
+              />
+              {district.name}
+            </label>
+          ))}
+
+          <label>
+            <input
+              type="checkbox"
+              checked={isNewDistrict}
+              onChange={(event) => setIsNewDistrict(event.target.checked)}
+            />
+            Такого района нет
+          </label>
+        </div>
+
+        {isNewDistrict && (
+          <>
+            <label>
+              Название района (RU):
+              <input {...register("district_name_ru")} />
+            </label>
+
+            <label>
+              Назва району (UK):
+              <input {...register("district_name_uk")} />
+            </label>
+
+            <label>
+              Stadtteilname (DE):
+              <input {...register("district_name_de")} />
+            </label>
+          </>
+        )}
+
+      </div>
+      <div className='field'>
+        {/* Название */}
+        <label> Название (RU): <input type="text" {...register("name_ru", { required: true })} placeholder="Например, Форт Тюнген" /> </label>
+        <label> Название (UK): <input type="text" {...register("name_uk", { required: true })} placeholder="Наприклад, Форт Тюнген" /> </label>
+        <label> Название (DE): <input type="text" {...register("name_de", { required: true })} placeholder="Например, Fort Thüngen" /> </label>
+
+      </div>
+      <div className='field'>
+        {/* Короткое описание */}
+        <label> Краткое описание (RU): <textarea {...register("short_description_ru", { required: true })} placeholder="Краткое описание на русском" /> </label>
+        <label> Короткий опис (UK): <textarea {...register("short_description_uk", { required: true })} placeholder="Короткий опис українською" /> </label>
+        <label> Kurzbeschreibung (DE): <textarea {...register("short_description_de", { required: true })} placeholder="Kurzbeschreibung auf Deutsch" /> </label>
+
+      </div>
+
+      <button type="submit">Отправить данные в БД</button>
+    </form>
+  )
 }
 
 export default AttractionForm
 
-  //   const { register, control, watch, reset, formState: { errors }, trigger } = useForm({
-  //     defaultValues: {
-  //       id: "",
-  //       name: "",
-  //       type: "",
-  //       rating: "",
-  //       country: "",
-  //       region: "",
-  //       district: "",
-  //       city: "",
-  //       cityDistrict: "",
-  //       foto: "",
-  //       coord: {
-  //         lat: "",
-  //         lng: ""
-  //       },
-  //       loc: {
-  //         country: "",
-  //         lang: "",
-  //         district: "",
-  //         subRegion: "",
-  //         city: "",
-  //       },
-  //       hasOfficialSite: false,
-  //       officialSiteLink: "",
-  //       isUnesco: false,
-  //       unesco: {
-  //         year: "",
-  //         type: "",
-  //         criteria: "",
-  //         epoch: "",
-  //         series: ""
-  //       },
-  //       isChildAttraction: false,
-  //       shortDescriptionSubObjects: { title: "", items: [{ bold: "", text: "" }] },
-  //       showMore: false,
-  //       short_description: "",
-  //       short_description2: "",
-  //       full_description: [{ bold: "", text: "" }],
-  //       ticketItems: [{ bold: "", text: "" }],
-  //       relics: [{ bold: "", text: "" }],
-  //       subObjectsTitle: { title: "", items: [{ bold: "", text: "" }] },
-  //       interestingFacts: [{ bold: "", text: "" }],
-  //       subObjectsInputs: [{ value: "" }],
-  //       constructionPeriod: "",
-  //       architects: "",
-  //       founder: "",
-  //       meta: {
-  //         title: "",
-  //         description: "",
-  //         ogTitle: "",
-  //         ogDescription: "",
-  //         keywords: "",
-  //         ogImage: ""
-  //       }
-  //     }
-  //   });
-
-  //   const [showSecondDescription, setShowSecondDescription] = useState(false);
-  //   const [copied, setCopied] = useState(false);
-  //   const isUnesco = watch("isUnesco");
-
-
-  //   const watchedFields = watch();
-
-  //   const { fields: fullFields, append: appendFull, move: moveFull } = useFieldArray({ control, name: "full_description" });
-  //   const { fields: ticketFields, append: appendTicket, move: moveTicket } = useFieldArray({ control, name: "ticketItems" });
-  //   const { fields: relicsFields, append: appendRelics, move: moveRelics } = useFieldArray({ control, name: "relics" });
-  //   const { fields: intFactsFields, append: append_intFacts, move: move_intFacts } = useFieldArray({ control, name: "interestingFacts" });
-  //   const { fields: sabInputFields, append: append_sabInput } = useFieldArray({ control, name: "subObjectsInputs" });
-  //   const { fields: sabDickripInputFields, append: append_sabDiscripInput } = useFieldArray({ control, name: "shortDescriptionSubObjects" });
-  //   const { fields: obFields, append: append_ob, move: move_ob } = useFieldArray({ control, name: "subObjectsTitle.items" });
-  //   //fields — текущее состояние массива
-  //   //append — добавление нового абзаца
-  //   //remove — удаление абзаца
-
-  //   // перезаписываем короткое описание в полное при условиях - пользователь сам не запонил полное, стоит выбрано, что подробнее не нужно
-  //   const isFullDescriptionEmpty =
-  //     !watchedFields.full_description?.some(
-  //       item => item?.bold || item?.text
-  //     );
-  //   const shouldAutoFillDescription =
-  //     watchedFields.showMore === "false" &&
-  //     watchedFields.short_description?.trim() &&
-  //     isFullDescriptionEmpty;
-
-  //   // функция для построения объекта loc в зависимости от выбранных патчей
-  //   const buildLoc = (pathData, loc) => {
-  //     return {
-  //       country: pathData[loc.country]?.label || "",
-  //       region: pathData[loc.country]?.regions?.[loc.region]?.label || "",
-  //       district:
-  //         pathData[loc.country]?.regions?.[loc.region]?.districts?.[loc.district]?.label || "",
-  //       city:
-  //         pathData[loc.country]
-  //           ?.regions?.[loc.region]
-  //           ?.districts?.[loc.district]
-  //           ?.cities?.[loc.city] || ""
-  //     };
-  //   };
-
-  //   const previewObject = {
-  //     id: watchedFields.id,
-  //     type: [watchedFields.type],
-  //     rating: watchedFields.rating,
-  //     path: watchedFields.id,
-  //     countryPath: watchedFields.country,
-  //     regionPath: watchedFields.region,
-  //     districtPath: watchedFields.district,
-  //     cityPath: watchedFields.city,
-  //     ...(watchedFields.isChildAttraction === "true" && { hiddenFromList: true }),
-  //     ...(watchedFields.showMore === "true" && { showMore: true }),
-  //     fotoCard: watchedFields.foto,
-  //     coord: {
-  //       lat: Number(watchedFields.coord?.lat),
-  //       lng: Number(watchedFields.coord?.lng)
-  //     },
-
-  //     translations: {
-  //       ru: {
-  //         name: watchedFields.name,
-  //         loc: {
-  //           ...buildLoc(pathData, watchedFields),
-  //           cityDistrict: watchedFields.cityDistrict || ""
-  //         },
-  //         ...(watchedFields.hasOfficialSite && watchedFields.officialSiteLink && {
-  //           officialSite: [{ bold: "Официальный сайт", link: watchedFields.officialSiteLink }]
-  //         }),
-  //         ...(watchedFields.isUnesco && watchedFields.unesco?.year && {
-  //           unesco_status: {
-  //             included: true,
-  //             year: Number(watchedFields.unesco.year),
-  //             type: watchedFields.unesco.type,
-  //             criteria: watchedFields.unesco.criteria,
-  //             epoch: watchedFields.unesco.epoch,
-  //             series: watchedFields.unesco.series
-  //           }
-  //         }),
-  //         ...(watchedFields.subObjectsInputs?.filter(o => o.value?.trim()).length > 0 && {
-  //           subObjects: watchedFields.subObjectsInputs
-  //             .filter(o => o.value?.trim())
-  //             .map(o => o.value)
-  //         }),
-  //         ...(watchedFields.shortDescriptionSubObjects?.items?.some(item => item.bold?.trim() || item.text?.trim()) && {
-  //           short_description_subObjects: {
-  //             text: watchedFields.shortDescriptionSubObjects.title?.trim() || "",
-  //             items: watchedFields.shortDescriptionSubObjects.items
-  //               .filter(item => item.bold?.trim() || item.text?.trim())
-  //               .map(item => ({
-  //                 bold: item.bold?.trim() || "",
-  //                 text: item.text?.trim() || ""
-  //               }))
-  //           }
-  //         }),
-  //         short_description: watchedFields.short_description,
-  //         ...(watchedFields.short_description2.length > 0 && { short_description2: watchedFields.short_description2 }),
-  //         full_description: {
-  //           title: "Описание и история",
-  //           items: shouldAutoFillDescription
-  //             ? [
-  //               {
-  //                 text: watchedFields.short_description
-  //               }
-  //             ]
-  //             : watchedFields.full_description
-  //               .filter(item => item.bold?.trim() || item.text?.trim())
-  //               .map(item => ({
-  //                 ...(item.bold?.trim() && { bold: item.bold }),
-  //                 ...(item.text?.trim() && { text: item.text })
-  //               }))
-  //         },
-  //         ...(watchedFields.ticketItems?.some(item => item.bold.trim() || item.text.trim()) && {
-  //           practical_info: {
-  //             title: "Практическая информация",
-  //             items: watchedFields.ticketItems
-  //               ?.filter(item => item.bold.trim() || item.text.trim())
-  //               .map(item => ({
-  //                 ...(item.bold.trim() && { bold: item.bold }),
-  //                 ...(item.text.trim() && { text: item.text })
-  //               }))
-  //           }
-  //         }),
-  //         ...(watchedFields.relics?.some(item => item.bold.trim() || item.text.trim()) && {
-  //           relics: {
-  //             title: "Реликвии и ценности",
-  //             items: watchedFields.relics
-  //               ?.filter(item => item.bold.trim() || item.text.trim())
-  //               .map(item => ({
-  //                 ...(item.bold.trim() && { bold: item.bold }),
-  //                 ...(item.text.trim() && { text: item.text })
-  //               }))
-  //           }
-  //         }),
-  //         ...(watchedFields.subObjectsTitle.title.length > 0 && {
-  //           sub_objects: {
-  //             title: watchedFields.subObjectsTitle.title || "Экспозиции",
-  //             items: watchedFields.subObjectsTitle.items
-  //               .filter(item => item?.bold?.trim() || item?.text?.trim())
-  //               .map(item => ({
-  //                 ...(item.bold.trim() && { bold: item.bold }),
-  //                 ...(item.text.trim() && { text: item.text })
-  //               }))
-  //           }
-  //         }),
-  //         ...(watchedFields.interestingFacts?.some(item => item.bold.trim() || item.text.trim()) && {
-  //           interestingFacts: {
-  //             title: "Интересные факты",
-  //             isList: true,
-  //             items: watchedFields.interestingFacts
-  //               .filter(item => item?.bold?.trim() || item?.text?.trim())
-  //               .map(item => ({
-  //                 ...(item?.bold?.trim() && { bold: item.bold }),
-  //                 ...(item?.text?.trim() && { text: item.text })
-  //               }))
-  //           }
-  //         }),
-  //         ...(watchedFields.constructionPeriod.length > 0 && { construction_period: watchedFields.constructionPeriod }),
-  //         ...(watchedFields.architects.length > 0 && { architects: watchedFields.architects }),
-  //         ...(watchedFields.founder.length > 0 && { founder: watchedFields.founder }),
-  //         meta: {
-  //           title: watchedFields.meta.title,
-  //           description: watchedFields.meta.description,
-  //           ogTitle: watchedFields.meta.ogTitle,
-  //           ogDescription: watchedFields.meta.ogDescription,
-  //           keywords: watchedFields.meta.keywords,
-  //           ogImage: watchedFields.meta.ogImage,
-  //         }
-  //       }
-  //     },
-  //   };
-
-  //   const clearAll = () => {
-  //     reset(); // сброс всех полей к defaultValues
-  //     setCopied(false);
-  //   };
-
-  //   // функции копирования и валидации незаполненных обязательных полей
-  //   const collectErrors = (obj, parentKey = "") => {
-  //     let result = [];
-
-  //     for (const [key, value] of Object.entries(obj)) {
-  //       const fullKey = parentKey ? `${parentKey}.${key}` : key;
-
-  //       if (value?.message) {
-  //         result.push(`${fullKey}: ${value.message}`);
-  //       } else if (Array.isArray(value)) {
-  //         value.forEach((item, index) => {
-  //           if (item) {
-  //             result.push(
-  //               ...collectErrors(item, `${fullKey}[${index}]`)
-  //             );
-  //           }
-  //         });
-  //       } else if (typeof value === "object" && value !== null) {
-  //         result.push(...collectErrors(value, fullKey));
-  //       }
-  //     }
-
-  //     return result;
-  //   };
-
-  //   const handleCopy = async () => {
-  //     const valid = await trigger();
-
-  //     if (!valid) {
-  //       const allErrors = collectErrors(errors).join("\n");
-
-  //       alert(`Пожалуйста, заполните обязательные поля:\n${allErrors}`);
-  //       return;
-  //     }
-
-  //     navigator.clipboard.writeText(toJsModuleString(previewObject));
-  //     setCopied(true);
-  //     setTimeout(() => setCopied(false), 2000);
-  //   };
-
-
-  //   // Правильный вывод объекта
-  //   const toJsModuleString = (obj, indent = 0) => {
-  //     const space = "  ".repeat(indent);
-
-  //     if (Array.isArray(obj)) {
-  //       // Если все элементы строки
-  //       if (obj.every(v => typeof v === "string")) {
-  //         return `[${obj.map(v => `"${v}"`).join(", ")}]`;
-  //       }
-
-  //       const arrayItems = obj.map(item => {
-  //         // Если элемент — "простой объект", вывести в одну строку
-  //         if (
-  //           typeof item === "object" &&
-  //           item !== null &&
-  //           Object.values(item).every(v => typeof v === "string" || typeof v === "number")
-  //         ) {
-  //           const inner = Object.entries(item)
-  //             .map(([k, v]) => `${k}: "${v}"`)
-  //             .join(", ");
-  //           return `${space}  { ${inner} }`;
-  //         }
-  //         return `${space}  ${toJsModuleString(item, indent + 1)}`;
-  //       });
-
-  //       return `[\n${arrayItems.join(",\n")}\n${space}]`;
-  //     }
-
-  //     if (typeof obj === "object" && obj !== null) {
-  //       const entries = Object.entries(obj)
-  //         .filter(([, value]) => value !== undefined && value !== null)
-  //         .map(([key, value]) => {
-  //           if (typeof value === "string") return `${key}: "${value}"`;
-  //           return `${key}: ${toJsModuleString(value, indent + 1)}`;
-  //         });
-  //       return `{\n${space}  ${entries.join(`,\n${space}  `)}\n${space}}`;
-  //     }
-
-  //     return obj;
-  //   };
-
-
-
-
-
-
-
-  //     <div className='forma'>
-  //       {/* // -------------- ID */}
-  //       <div className='id'>
-  //         <label><span className="required">*</span>ID</label>
-  //         <span className='note'>Пишем латынью, не надо вставлять тире, но можно нижнее подчеркивание</span>
-  //         <input type="text" {...register("id", { required: "Поле ID обязательно" })} />
-  //       </div>
-
-  //       {/* // -------------- Название */}
-  //       <div className='name'>
-  //         <label><span className="required">*</span>Название</label>
-  //         <input type="text" {...register("name", { required: "Поле Название обязательно" })} />
-  //       </div>
-
-  //       {/* // -------------- Тип достопримечательности */}
-  //       <div className="type">
-  //         <label><span className="required">*</span>Тип достопримечательности</label>
-  //         <select {...register("type", { required: "Выберите тип" })}>
-  //           <option value="">Выберите тип</option>
-  //           <option value="museum">Музеи</option>
-  //           <option value="cathedral">Соборы, церкви и монастыри</option>
-  //           <option value="palace_or_castle">Дворцы и замки</option>
-  //           <option value="amusement_park">Парки развлечений</option>
-  //           <option value="historical_building">Исторические сооружения</option>
-  //           <option value="historical_area">Исторические районы</option>
-  //           <option value="technical_structure">Технические сооружения</option>
-  //           <option value="nature">Природа</option>
-  //           <option value="monument_or_fountain">Памятники и фонтаны</option>
-  //           <option value="square">Площади</option>
-  //           <option value="landmark">Знаковые места</option>
-  //           <option value="viewpoint">Смотровые площадки</option>
-  //         </select>
-  //         <p className='note'>Если ничего не подходит, а надо, то добавляем в файл src/components/AttractionsFilters (в объекте attractionTypes). И не забываем обновить форму</p>
-  //       </div>
-
-  //       {/* // -------------- Рейтинг */}
-  //       <div className="type">
-  //         <label><span className="required">*</span>Рейтинг</label>
-  //         <select {...register("rating", { required: "Выберите рейтинг" })}>
-  //           <option value="">Выберите рейтинг</option>
-  //           <option value="top">Топовый</option>
-  //           <option value="popular">Популярный</option>
-  //           <option value="local">Локальный</option>
-  //         </select>
-  //         <p className='note'>Рейтинг выбирается строго по таблице</p>
-  //       </div>
-
-
-  //       {/* // -------------- Патчи */}
-  //       <div className='path'>
-  //         <h3><span className="required">*</span>Патчи</h3>
-
-  //         <select {...register("country", { required: "Выберите страну" })}>
-  //           <option value="">Выберите страну</option>
-  //           {Object.entries(pathData).map(([key, value]) => (
-  //             <option key={key} value={key}>
-  //               {value.label}
-  //             </option>
-  //           ))}
-  //         </select>
-
-  //         <select
-  //           {...register("region", { required: "Выберите область/землю" })}
-  //           disabled={!watchedFields.country}
-  //         >
-  //           <option value="">Выберите землю/область</option>
-
-  //           {watchedFields.country &&
-  //             Object.entries(pathData[watchedFields.country]?.regions || {}).map(
-  //               ([key, value]) => (
-  //                 <option key={key} value={key}>
-  //                   {value.label}
-  //                 </option>
-  //               )
-  //             )}
-  //         </select>
-
-  //         <select
-  //           {...register("district", { required: "Выберите район/край" })}
-  //           disabled={!watchedFields.region}
-  //         >
-  //           <option value="">Выберите район/край</option>
-
-  //           {watchedFields.country &&
-  //             watchedFields.region &&
-  //             Object.entries(
-  //               pathData[watchedFields.country]?.regions?.[watchedFields.region]?.districts || {}
-  //             ).map(([key, value]) => (
-  //               <option key={key} value={key}>
-  //                 {value.label}
-  //               </option>
-  //             ))}
-  //         </select>
-
-  //         <select
-  //           {...register("city", { required: "Выберите город" })}
-  //           disabled={!watchedFields.district}
-  //         >
-  //           <option value="">Выберите город</option>
-
-  //           {watchedFields.country &&
-  //             watchedFields.region &&
-  //             watchedFields.district &&
-  //             Object.entries(
-  //               pathData[watchedFields.country]
-  //                 ?.regions?.[watchedFields.region]
-  //                 ?.districts?.[watchedFields.district]
-  //                 ?.cities || {}
-  //             ).map(([key, label]) => (
-  //               <option key={key} value={key}>
-  //                 {label}
-  //               </option>
-  //             ))}
-  //         </select>
-  //       </div>
-
-  //       {/* // -------------- Местоположение */}
-  //       <div className="field">
-  //         <label>Район города</label>
-  //         <input type="text" placeholder="Например: район Altstadt-Nord (округ Innenstadt)" {...register("cityDistrict")} />
-  //       </div>
-
-  //       {/* // -------------- Координаты */}
-  //       <div className="coord">
-  //         <h3>Координаты</h3>
-
-  //         <div className="coord__row">
-  //           <div className="field">
-  //             <label>Широта (lat)</label>
-  //             <input type="number" step="any" placeholder="50.93845" {...register("coord.lat", { valueAsNumber: true })} />
-  //           </div>
-
-  //           <div className="field">
-  //             <label>Долгота (lng)</label>
-  //             <input type="number" step="any" placeholder="6.96260" {...register("coord.lng", { valueAsNumber: true })} />
-  //           </div>
-  //         </div>
-  //       </div>
-
-  //       {/* // -------------- Вложенные достопримечательности */}
-  //       <div className='subObjects'>
-  //         <label><span className="note">Заполняем только, если есть вложенные достопримечательности</span>. Это связь с дочерними дост-тями</label>
-  //         {sabInputFields.map((field, index) => (
-  //           <input key={field.id} type="text" {...register(`subObjectsInputs.${index}.value`)} placeholder="вставляем id вложенной достопримечательности" />
-  //         ))}
-  //         <button type="button" onClick={() => append_sabInput("")}> Добавить абзац</button>
-  //         <span className='note'>(если вложенных достопримечательностей больше, чем одна)</span>
-  //       </div>
-
-  //       {/* // -------------- Перечень дочерних достопримечательностей */}
-  //       <div className='description'>
-  //         <label><span className="note">Заполняем только, если есть вложенные достопримечательности.</span>Перечень дочерних достопримечательностей</label>
-  //         {sabDickripInputFields.map((item, i) => (
-  //           <div key={item.id} className='subobject-item'>
-  //             {i === 0 && (
-  //               <textarea className='description-textarea' {...register(`shortDescriptionSubObjects.title`)} rows={2} placeholder="Пример: В старом городе Люденшайда расположены такие достопримечательности:" />
-  //             )}
-  //             <input type="text" {...register(`shortDescriptionSubObjects.items.${i}.bold`)} placeholder="Название достопримечательности, например: Церковь Спасителя" />
-  //             <input type="text" {...register(`shortDescriptionSubObjects.items.${i}.text`)} placeholder="Краткое описание достопримечательности" />
-  //           </div>
-  //         ))}
-
-  //         <button type="button" onClick={() => append_sabDiscripInput({ bold: "", text: "" })}>
-  //           Добавить достопримечательность
-  //         </button>
-  //       </div>
-
-  //       {/* // -------------- Является ли эта достопримечательность дочерней? */}
-  //       <div className='unesco'>
-  //         <label>Является ли эта достопримечательность дочерней?</label>
-  //         <div>
-  //           <label><input type="radio" value="true" {...register("isChildAttraction")} /> Да </label>
-  //           <label><input type="radio" value="false" {...register("isChildAttraction")} /> Нет </label>
-  //         </div>
-  //       </div>
-
-  //       {/* кнопка "Подробнее" - показываем только если дочерняя */}
-  //       {watchedFields.isChildAttraction === "true" && (
-  //         <div className="show-more-question">
-  //           <label><span className="required">*</span>Нужна ли кнопка "Подробнее"?</label>
-  //           <p className='note'>в том смысле, что нужен ли переход на отдельную страницу. Если описания мало, то можно описать прямо в карточке</p>
-  //           <div>
-  //             <label> <input type="radio" value="true" {...register("showMore")} /> Да </label>
-  //             <label> <input type="radio" value="false" {...register("showMore")} /> Нет </label>
-  //           </div>
-  //         </div>
-  //       )}
-
-  //       {/* // -------------- Фото  */}
-  //       <div className='foto'>
-  //         <label><span className="required">*</span>Фотография</label>
-  //         <input type="text" {...register("foto", { required: "Поле Фотография обязательно" })} placeholder="Путь к фото в формате Country/region/city/attraction/001.jpg" />
-  //         <p className='note'>Если нужно добавить фото в фотогелерею, то работаем в файле src/datas/fotos/страна(de.js или ua.js). Указать патч города, потом патч дост-ти</p>
-  //       </div>
-
-  //       {/* // -------------- Официальный сайт */}
-  //       <div className='official-site'>
-  //         <label><input type="checkbox" {...register("hasOfficialSite")} />Есть ли официальный сайт</label>
-  //         <input type="text" {...register("officialSiteLink")} placeholder="Ссылка на официальный сайт" />
-  //       </div>
-
-  //       {/* // -------------- ЮНЕСКО  */}
-  //       <label>
-  //         <input type="checkbox" {...register("isUnesco")} />
-  //         Объект входит в список ЮНЕСКО
-  //       </label>
-
-  //       {isUnesco && (
-  //         <div className="unesco-fields">
-  //           <label><input type="number" {...register("unesco.year")} placeholder="Год" /></label>
-
-  //           <label><input type="text" {...register("unesco.type")} placeholder="Тип" /></label>
-  //           <label><input type="text" {...register("unesco.criteria")} placeholder="Критерии" /></label>
-  //           <label><input type="text" {...register("unesco.epoch")} placeholder="Эпоха" /></label>
-  //           <label><input type="text" {...register("unesco.series")} placeholder="Серия" /></label>
-  //         </div>
-  //       )}
-
-  //       {/* // -------------- Короткое описание */}
-  //       <div className='short_description'>
-  //         <label><span className="required">*</span>Короткое описание</label>
-  //         <p className='note'>Это описание для карточки в списке</p>
-  //         <textarea type="textarea" {...register("short_description", { required: "Короткое описание обязательно" })} rows={3} className='short_description-textarea' />
-  //         {showSecondDescription && (
-  //           <textarea {...register("short_description2")} placeholder="Доп. абзац" rows={3} className='short_description-textarea' />
-  //         )}
-  //         <button type="button" onClick={() => setShowSecondDescription(true)}>Добавить абзац</button>
-  //       </div>
-
-  //       {/* // -------------- Полное описание */}
-  //       <div className="description">
-  //         <label><span className="required">*</span>Описание и история</label>
-  //         <p className='note'>Каждый следующий абзац - в новое поле (кнопка "Добавить поле")</p>
-  //         {fullFields.map((fullFields, i) => (
-  //           <div key={fullFields.id} placeholder="Текст абзаца" rows={3}>
-  //             <input type="text" {...register(`full_description.${i}.bold`)} placeholder="Жирный текст (bold)" className='description-bold' />
-  //             <textarea type="textarea" {...register(`full_description.${i}.text`, i === 0 ? { required: "Поле Описание обязательно" } : {})} placeholder="Текст абзаца" rows={3} className='description-textarea' />
-
-  //             <div className="move-buttons">
-  //               <button type="button" disabled={i === 0} onClick={() => moveFull(i, i - 1)}> ⬆ </button>
-  //               <button type="button" disabled={i === fullFields.length - 1} onClick={() => moveFull(i, i + 1)}> ⬇ </button>
-  //             </div>
-  //           </div>
-  //         ))}
-  //         <button type="button" onClick={() => appendFull({ bold: "", text: "" })}> Добавить абзац</button>
-  //       </div>
-
-  //       {/* // -------------- Практическая информация */}
-  //       <div className="description">
-  //         <label>Практическая информация</label>
-  //         <p className='note'>Здесь добавляем адресс, цены на билеты, режим роботы</p>
-  //         {ticketFields.map((ticketFields, i) => (
-  //           <div key={ticketFields.id} placeholder="Текст абзаца" rows={3}>
-  //             <input type="text" {...register(`ticketItems.${i}.bold`)} placeholder="Жирный текст (bold)" className='description-bold' />
-  //             <textarea type="textarea" {...register(`ticketItems.${i}.text`)} placeholder="Текст абзаца" rows={3} className='description-textarea' />
-
-  //             <div className="move-buttons">
-  //               <button type="button" disabled={i === 0} onClick={() => moveTicket(i, i - 1)}> ⬆ </button>
-  //               <button type="button" disabled={i === ticketFields.length - 1} onClick={() => moveTicket(i, i + 1)}> ⬇ </button>
-  //             </div>
-  //           </div>
-  //         ))}
-  //         <button type="button" onClick={() => appendTicket({ bold: "", text: "" })}> Добавить абзац</button>
-  //       </div>
-
-  //       {/* // -------------- Реликвии и ценности */}
-  //       <div className="description">
-  //         <label>Реликвии <span className='note'>(если есть)</span></label>
-  //         {relicsFields.map((relicsFields, i) => (
-  //           <div key={relicsFields.id} placeholder="Текст абзаца" rows={3}>
-  //             <input type="text" {...register(`relics.${i}.bold`)} placeholder="Жирный текст (bold)" className='description-bold' />
-  //             <textarea type="textarea" {...register(`relics.${i}.text`)} placeholder="Текст абзаца" rows={3} className='description-textarea' />
-
-  //             <div className="move-buttons">
-  //               <button type="button" disabled={i === 0} onClick={() => moveRelics(i, i - 1)}> ⬆ </button>
-  //               <button type="button" disabled={i === relicsFields.length - 1} onClick={() => moveRelics(i, i + 1)}> ⬇ </button>
-  //             </div>
-  //           </div>
-  //         ))}
-  //         <button type="button" onClick={() => appendRelics({ bold: "", text: "" })}> Добавить абзац</button>
-  //       </div>
-
-  //       {/* // -------------- Объекты (например экспозиции) */}
-  //       <div className="description">
-  //         <label>Объекты <span className='note'>(например экспозиции в музее, не путать с дочерними объектами)</span></label>
-  //         <input value={watch("subObjectsTitle.title")} {...register("subObjectsTitle.title")} placeholder="Название, например -  Экспозиции" />
-  //         {obFields.map((obFields, i) => (
-  //           <div key={obFields.id}>
-  //             <input type="text" {...register(`subObjectsTitle.items.${i}.bold`)} placeholder="Жирный текст (bold)" className='description-bold' />
-  //             <textarea type="textarea" {...register(`subObjectsTitle.items.${i}.text`)} placeholder="Текст абзаца" rows={3} className='description-textarea' />
-
-  //             <div className="move-buttons">
-  //               <button type="button" disabled={i === 0} onClick={() => move_ob(i, i - 1)}> ⬆ </button>
-  //               <button type="button" disabled={i === obFields.length - 1} onClick={() => move_ob(i, i + 1)}> ⬇ </button>
-  //             </div>
-  //           </div>
-  //         ))}
-  //         <button type="button" onClick={() => append_ob({ bold: "", text: "" })}> Добавить абзац</button>
-  //       </div>
-
-  //       {/* // -------------- Интересные факты */}
-  //       <div className="description">
-  //         <label>Интересные факты</label>
-  //         {intFactsFields.map((intFactsFields, i) => (
-  //           <div key={intFactsFields.id} placeholder="Текст абзаца" rows={3}>
-  //             <input type="text" {...register(`interestingFacts.${i}.bold`)} placeholder="Жирный текст (bold)" className='description-bold' />
-  //             <textarea type="textarea" {...register(`interestingFacts.${i}.text`)} placeholder="Текст абзаца" rows={3} className='description-textarea' />
-
-  //             <div className="move-buttons">
-  //               <button type="button" disabled={i === 0} onClick={() => move_intFacts(i, i - 1)}> ⬆ </button>
-  //               <button type="button" disabled={i === intFactsFields.length - 1} onClick={() => move_intFacts(i, i + 1)}> ⬇ </button>
-  //             </div>
-  //           </div>
-  //         ))}
-  //         <button type="button" onClick={() => append_intFacts({ bold: "", text: "" })}> Добавить абзац</button>
-  //       </div>
-
-  //       {/* // -------------- Период основания */}
-  //       <div className='id'>
-  //         <label>Период основания</label>
-  //         <input type="text" {...register("constructionPeriod")} />
-  //       </div>
-
-  //       {/* // -------------- Архитектор */}
-  //       <div className='id'>
-  //         <label>Архитектор</label>
-  //         <input type="text" {...register("architects")} />
-  //       </div>
-
-  //       {/* // -------------- Основатель */}
-  //       <div className='id'>
-  //         <label>Основатель</label>
-  //         <input type="text" {...register("founder")} />
-  //       </div>
-
-  //       {/* // -------------- Мета-данные */}
-  //       <div className='meta'>
-  //         <label><span className="required">*</span>Мета-наименование для поисковиков</label>
-  //         <input type="text" {...register("meta.title", { required: "Поле Мета-наименование для поисковиков обязательно" })} />
-  //       </div>
-  //       <div className='meta'>
-  //         <label><span className="required">*</span>Мета-описание для поисковиков</label>
-  //         <textarea type="text" {...register("meta.description", { required: "Поле Мета-описание для поисковиков обязательно" })} className='meta-textarea' />
-  //       </div>
-  //       <div className='meta'>
-  //         <label><span className="required">*</span>Мета-название для соцсетей</label>
-  //         <input type="text" {...register("meta.ogTitle", { required: "Поле Мета-название для соцсетей обязательно" })} />
-  //       </div>
-  //       <div className='meta'>
-  //         <label><span className="required">*</span>Мета-описание для соцсетей</label>
-  //         <textarea type="text" {...register("meta.ogDescription", { required: "Поле Мета-описание для соцсетей обязательно" })} className='meta-textarea' />
-  //       </div>
-  //       <div className='meta'>
-  //         <label><span className="required">*</span>Ключевые слова</label>
-  //         <textarea type="text" {...register("meta.keywords", { required: "Поле Мета-ключевые слова обязательно" })} className='meta-textarea' />
-  //       </div>
-  //       <div className='meta'>
-  //         <label><span className="required">*</span>Мета-фото для соцсетей</label>
-  //         <input type="text" {...register("meta.ogImage", { required: "Поле Мета-фото для соцсетей обязательно" })} placeholder="Полный путь к фото - https://our-travels.info/new/foto/Germany/nrw/koln/Rhein-Erft-Kreis/frechen/burg-bachem/Burg-Bachem_3.jpg" />
-  //       </div>
-
-
-  //       {/* // -------------- Предпросмотр и кнопки */}
-  //       <div className='prev'>
-  //         <h4>Предпросмотр:</h4>
-  //         <pre>{toJsModuleString(previewObject) + ","}</pre>
-  //       </div>
-
-  //       <div className='clear-copy'>
-  //         <p><button type="button" onClick={clearAll}>Очистить всё</button></p>
-  //         <p><button type="button" onClick={handleCopy}>{copied ? "Скопировано ✅" : "Скопировать в буфер"}</button></p>
-  //       </div>
-
-  //     </div >
-
-  //   )
+//     <div className='forma'>
+
+//       {/* // -------------- Тип достопримечательности */}
+//       <div className="type">
+//         <label><span className="required">*</span>Тип достопримечательности</label>
+//         <select {...register("type", { required: "Выберите тип" })}>
+//           <option value="">Выберите тип</option>
+//           <option value="museum">Музеи</option>
+//           <option value="cathedral">Соборы, церкви и монастыри</option>
+//           <option value="palace_or_castle">Дворцы и замки</option>
+//           <option value="amusement_park">Парки развлечений</option>
+//           <option value="historical_building">Исторические сооружения</option>
+//           <option value="historical_area">Исторические районы</option>
+//           <option value="technical_structure">Технические сооружения</option>
+//           <option value="nature">Природа</option>
+//           <option value="monument_or_fountain">Памятники и фонтаны</option>
+//           <option value="square">Площади</option>
+//           <option value="landmark">Знаковые места</option>
+//           <option value="viewpoint">Смотровые площадки</option>
+//         </select>
+//         <p className='note'>Если ничего не подходит, а надо, то добавляем в файл src/components/AttractionsFilters (в объекте attractionTypes). И не забываем обновить форму</p>
+//       </div>
+
+//       {/* // -------------- Рейтинг */}
+//       <div className="type">
+//         <label><span className="required">*</span>Рейтинг</label>
+//         <select {...register("rating", { required: "Выберите рейтинг" })}>
+//           <option value="">Выберите рейтинг</option>
+//           <option value="top">Топовый</option>
+//           <option value="popular">Популярный</option>
+//           <option value="local">Локальный</option>
+//         </select>
+//         <p className='note'>Рейтинг выбирается строго по таблице</p>
+//       </div>
+
+//       {/* // -------------- Местоположение */}
+//       <div className="field">
+//         <label>Район города</label>
+//         <input type="text" placeholder="Например: район Altstadt-Nord (округ Innenstadt)" {...register("cityDistrict")} />
+//       </div>
+
+//       {/* // -------------- Координаты */}
+//       <div className="coord">
+//         <h3>Координаты</h3>
+
+//         <div className="coord__row">
+//           <div className="field">
+//             <label>Широта (lat)</label>
+//             <input type="number" step="any" placeholder="50.93845" {...register("coord.lat", { valueAsNumber: true })} />
+//           </div>
+
+//           <div className="field">
+//             <label>Долгота (lng)</label>
+//             <input type="number" step="any" placeholder="6.96260" {...register("coord.lng", { valueAsNumber: true })} />
+//           </div>
+//         </div>
+//       </div>
+
+//       {/* // -------------- Вложенные достопримечательности */}
+//       <div className='subObjects'>
+//         <label><span className="note">Заполняем только, если есть вложенные достопримечательности</span>. Это связь с дочерними дост-тями</label>
+//         {sabInputFields.map((field, index) => (
+//           <input key={field.id} type="text" {...register(`subObjectsInputs.${index}.value`)} placeholder="вставляем id вложенной достопримечательности" />
+//         ))}
+//         <button type="button" onClick={() => append_sabInput("")}> Добавить абзац</button>
+//         <span className='note'>(если вложенных достопримечательностей больше, чем одна)</span>
+//       </div>
+
+//       {/* // -------------- Перечень дочерних достопримечательностей */}
+//       <div className='description'>
+//         <label><span className="note">Заполняем только, если есть вложенные достопримечательности.</span>Перечень дочерних достопримечательностей</label>
+//         {sabDickripInputFields.map((item, i) => (
+//           <div key={item.id} className='subobject-item'>
+//             {i === 0 && (
+//               <textarea className='description-textarea' {...register(`shortDescriptionSubObjects.title`)} rows={2} placeholder="Пример: В старом городе Люденшайда расположены такие достопримечательности:" />
+//             )}
+//             <input type="text" {...register(`shortDescriptionSubObjects.items.${i}.bold`)} placeholder="Название достопримечательности, например: Церковь Спасителя" />
+//             <input type="text" {...register(`shortDescriptionSubObjects.items.${i}.text`)} placeholder="Краткое описание достопримечательности" />
+//           </div>
+//         ))}
+
+//         <button type="button" onClick={() => append_sabDiscripInput({ bold: "", text: "" })}>
+//           Добавить достопримечательность
+//         </button>
+//       </div>
+
+//       {/* // -------------- Является ли эта достопримечательность дочерней? */}
+//       <div className='unesco'>
+//         <label>Является ли эта достопримечательность дочерней?</label>
+//         <div>
+//           <label><input type="radio" value="true" {...register("isChildAttraction")} /> Да </label>
+//           <label><input type="radio" value="false" {...register("isChildAttraction")} /> Нет </label>
+//         </div>
+//       </div>
+
+//       {/* кнопка "Подробнее" - показываем только если дочерняя */}
+//       {watchedFields.isChildAttraction === "true" && (
+//         <div className="show-more-question">
+//           <label><span className="required">*</span>Нужна ли кнопка "Подробнее"?</label>
+//           <p className='note'>в том смысле, что нужен ли переход на отдельную страницу. Если описания мало, то можно описать прямо в карточке</p>
+//           <div>
+//             <label> <input type="radio" value="true" {...register("showMore")} /> Да </label>
+//             <label> <input type="radio" value="false" {...register("showMore")} /> Нет </label>
+//           </div>
+//         </div>
+//       )}
+
+//       {/* // -------------- Фото  */}
+//       <div className='foto'>
+//         <label><span className="required">*</span>Фотография</label>
+//         <input type="text" {...register("foto", { required: "Поле Фотография обязательно" })} placeholder="Путь к фото в формате Country/region/city/attraction/001.jpg" />
+//         <p className='note'>Если нужно добавить фото в фотогелерею, то работаем в файле src/datas/fotos/страна(de.js или ua.js). Указать патч города, потом патч дост-ти</p>
+//       </div>
+
+//       {/* // -------------- Официальный сайт */}
+//       <div className='official-site'>
+//         <label><input type="checkbox" {...register("hasOfficialSite")} />Есть ли официальный сайт</label>
+//         <input type="text" {...register("officialSiteLink")} placeholder="Ссылка на официальный сайт" />
+//       </div>
+
+//       {/* // -------------- ЮНЕСКО  */}
+//       <label>
+//         <input type="checkbox" {...register("isUnesco")} />
+//         Объект входит в список ЮНЕСКО
+//       </label>
+
+//       {isUnesco && (
+//         <div className="unesco-fields">
+//           <label><input type="number" {...register("unesco.year")} placeholder="Год" /></label>
+
+//           <label><input type="text" {...register("unesco.type")} placeholder="Тип" /></label>
+//           <label><input type="text" {...register("unesco.criteria")} placeholder="Критерии" /></label>
+//           <label><input type="text" {...register("unesco.epoch")} placeholder="Эпоха" /></label>
+//           <label><input type="text" {...register("unesco.series")} placeholder="Серия" /></label>
+//         </div>
+//       )}
+
+//       {/* // -------------- Полное описание */}
+//       <div className="description">
+//         <label><span className="required">*</span>Описание и история</label>
+//         <p className='note'>Каждый следующий абзац - в новое поле (кнопка "Добавить поле")</p>
+//         {fullFields.map((fullFields, i) => (
+//           <div key={fullFields.id} placeholder="Текст абзаца" rows={3}>
+//             <input type="text" {...register(`full_description.${i}.bold`)} placeholder="Жирный текст (bold)" className='description-bold' />
+//             <textarea type="textarea" {...register(`full_description.${i}.text`, i === 0 ? { required: "Поле Описание обязательно" } : {})} placeholder="Текст абзаца" rows={3} className='description-textarea' />
+
+//             <div className="move-buttons">
+//               <button type="button" disabled={i === 0} onClick={() => moveFull(i, i - 1)}> ⬆ </button>
+//               <button type="button" disabled={i === fullFields.length - 1} onClick={() => moveFull(i, i + 1)}> ⬇ </button>
+//             </div>
+//           </div>
+//         ))}
+//         <button type="button" onClick={() => appendFull({ bold: "", text: "" })}> Добавить абзац</button>
+//       </div>
+
+//       {/* // -------------- Практическая информация */}
+//       <div className="description">
+//         <label>Практическая информация</label>
+//         <p className='note'>Здесь добавляем адресс, цены на билеты, режим роботы</p>
+//         {ticketFields.map((ticketFields, i) => (
+//           <div key={ticketFields.id} placeholder="Текст абзаца" rows={3}>
+//             <input type="text" {...register(`ticketItems.${i}.bold`)} placeholder="Жирный текст (bold)" className='description-bold' />
+//             <textarea type="textarea" {...register(`ticketItems.${i}.text`)} placeholder="Текст абзаца" rows={3} className='description-textarea' />
+
+//             <div className="move-buttons">
+//               <button type="button" disabled={i === 0} onClick={() => moveTicket(i, i - 1)}> ⬆ </button>
+//               <button type="button" disabled={i === ticketFields.length - 1} onClick={() => moveTicket(i, i + 1)}> ⬇ </button>
+//             </div>
+//           </div>
+//         ))}
+//         <button type="button" onClick={() => appendTicket({ bold: "", text: "" })}> Добавить абзац</button>
+//       </div>
+
+//       {/* // -------------- Реликвии и ценности */}
+//       <div className="description">
+//         <label>Реликвии <span className='note'>(если есть)</span></label>
+//         {relicsFields.map((relicsFields, i) => (
+//           <div key={relicsFields.id} placeholder="Текст абзаца" rows={3}>
+//             <input type="text" {...register(`relics.${i}.bold`)} placeholder="Жирный текст (bold)" className='description-bold' />
+//             <textarea type="textarea" {...register(`relics.${i}.text`)} placeholder="Текст абзаца" rows={3} className='description-textarea' />
+
+//             <div className="move-buttons">
+//               <button type="button" disabled={i === 0} onClick={() => moveRelics(i, i - 1)}> ⬆ </button>
+//               <button type="button" disabled={i === relicsFields.length - 1} onClick={() => moveRelics(i, i + 1)}> ⬇ </button>
+//             </div>
+//           </div>
+//         ))}
+//         <button type="button" onClick={() => appendRelics({ bold: "", text: "" })}> Добавить абзац</button>
+//       </div>
+
+//       {/* // -------------- Объекты (например экспозиции) */}
+//       <div className="description">
+//         <label>Объекты <span className='note'>(например экспозиции в музее, не путать с дочерними объектами)</span></label>
+//         <input value={watch("subObjectsTitle.title")} {...register("subObjectsTitle.title")} placeholder="Название, например -  Экспозиции" />
+//         {obFields.map((obFields, i) => (
+//           <div key={obFields.id}>
+//             <input type="text" {...register(`subObjectsTitle.items.${i}.bold`)} placeholder="Жирный текст (bold)" className='description-bold' />
+//             <textarea type="textarea" {...register(`subObjectsTitle.items.${i}.text`)} placeholder="Текст абзаца" rows={3} className='description-textarea' />
+
+//             <div className="move-buttons">
+//               <button type="button" disabled={i === 0} onClick={() => move_ob(i, i - 1)}> ⬆ </button>
+//               <button type="button" disabled={i === obFields.length - 1} onClick={() => move_ob(i, i + 1)}> ⬇ </button>
+//             </div>
+//           </div>
+//         ))}
+//         <button type="button" onClick={() => append_ob({ bold: "", text: "" })}> Добавить абзац</button>
+//       </div>
+
+//       {/* // -------------- Интересные факты */}
+//       <div className="description">
+//         <label>Интересные факты</label>
+//         {intFactsFields.map((intFactsFields, i) => (
+//           <div key={intFactsFields.id} placeholder="Текст абзаца" rows={3}>
+//             <input type="text" {...register(`interestingFacts.${i}.bold`)} placeholder="Жирный текст (bold)" className='description-bold' />
+//             <textarea type="textarea" {...register(`interestingFacts.${i}.text`)} placeholder="Текст абзаца" rows={3} className='description-textarea' />
+
+//             <div className="move-buttons">
+//               <button type="button" disabled={i === 0} onClick={() => move_intFacts(i, i - 1)}> ⬆ </button>
+//               <button type="button" disabled={i === intFactsFields.length - 1} onClick={() => move_intFacts(i, i + 1)}> ⬇ </button>
+//             </div>
+//           </div>
+//         ))}
+//         <button type="button" onClick={() => append_intFacts({ bold: "", text: "" })}> Добавить абзац</button>
+//       </div>
+
+//       {/* // -------------- Период основания */}
+//       <div className='id'>
+//         <label>Период основания</label>
+//         <input type="text" {...register("constructionPeriod")} />
+//       </div>
+
+//       {/* // -------------- Архитектор */}
+//       <div className='id'>
+//         <label>Архитектор</label>
+//         <input type="text" {...register("architects")} />
+//       </div>
+
+//       {/* // -------------- Основатель */}
+//       <div className='id'>
+//         <label>Основатель</label>
+//         <input type="text" {...register("founder")} />
+//       </div>
+
+//       {/* // -------------- Мета-данные */}
+//       <div className='meta'>
+//         <label><span className="required">*</span>Мета-наименование для поисковиков</label>
+//         <input type="text" {...register("meta.title", { required: "Поле Мета-наименование для поисковиков обязательно" })} />
+//       </div>
+//       <div className='meta'>
+//         <label><span className="required">*</span>Мета-описание для поисковиков</label>
+//         <textarea type="text" {...register("meta.description", { required: "Поле Мета-описание для поисковиков обязательно" })} className='meta-textarea' />
+//       </div>
+//       <div className='meta'>
+//         <label><span className="required">*</span>Мета-название для соцсетей</label>
+//         <input type="text" {...register("meta.ogTitle", { required: "Поле Мета-название для соцсетей обязательно" })} />
+//       </div>
+//       <div className='meta'>
+//         <label><span className="required">*</span>Мета-описание для соцсетей</label>
+//         <textarea type="text" {...register("meta.ogDescription", { required: "Поле Мета-описание для соцсетей обязательно" })} className='meta-textarea' />
+//       </div>
+//       <div className='meta'>
+//         <label><span className="required">*</span>Ключевые слова</label>
+//         <textarea type="text" {...register("meta.keywords", { required: "Поле Мета-ключевые слова обязательно" })} className='meta-textarea' />
+//       </div>
+//       <div className='meta'>
+//         <label><span className="required">*</span>Мета-фото для соцсетей</label>
+//         <input type="text" {...register("meta.ogImage", { required: "Поле Мета-фото для соцсетей обязательно" })} placeholder="Полный путь к фото - https://our-travels.info/new/foto/Germany/nrw/koln/Rhein-Erft-Kreis/frechen/burg-bachem/Burg-Bachem_3.jpg" />
+//       </div>
+
+//     </div >
+
+//   )

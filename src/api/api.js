@@ -61,3 +61,39 @@ export const checkAdminSession = () =>
   apiFetch(`${BASE_URL}/api/auth/check`, {
     credentials: "include"
   });
+
+  export const adminLogin = (password) =>
+  apiFetch(`${BASE_URL}/api/auth/login`, {
+    method: "POST",
+    credentials: "include",
+    headers: {
+      "Content-Type": "application/json"
+    },
+    body: JSON.stringify({ password })
+  });
+
+export const addAttraction = (data) =>
+  apiFetch(`${BASE_URL}/api/add/`, {
+    method: "POST",
+    credentials: "include",
+    headers: {
+      "Content-Type": "application/json"
+    },
+    body: JSON.stringify(data)
+  });
+
+  export const getCityDistricts = (cityId) =>
+  apiFetch(`${BASE_URL}/api/add/cityDistricts/${cityId}`, {
+    credentials: "include"
+  });
+
+
+export const addCityDistrict = (data) =>
+  apiFetch(`${BASE_URL}/api/add/cityDistrict`, {
+    method: "POST",
+    credentials: "include",
+    headers: {
+      "Content-Type": "application/json"
+    },
+    body: JSON.stringify(data)
+  });
