@@ -44,3 +44,5 @@ const convertDescriptionToHtml = (text, headings) => {
         .filter(Boolean)
         .join("\n");
 };
+
+module.exports = convertDescriptionToHtml;

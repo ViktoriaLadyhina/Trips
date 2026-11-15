@@ -200,6 +200,7 @@ const datas =
     denkmal_beethoven_bonn: { id: 908, ru: 'Памятник Бетховену', de: 'Beethoven-Denkmal', uk: 'Пам’ятник Бетховену' },
     altes_rathaus_bonn: { id: 912, ru: 'Старая ратуша Бонна', de: 'Altes Rathaus Bonn', uk: 'Стара ратуша Бонна' },
     namen_jesu_kirche_bonn: { id: 913, ru: 'Церковь Имени Иисуса', de: 'Namen Jesu Kirche', uk: 'Церква Імені Ісуса' },
+    minoritenkirche_bonn: { id: 0, ru: 'Миноритская церковь Святого Ремигия', de: 'St. Remigius', uk: 'Міноритська церква Святого Ремігія' },
 
     // Dortmund
     westfalenpark: { ru: 'Вестфаленпарк', de: 'Westfalenpark', uk: 'Вестфаленпарк' },

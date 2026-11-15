@@ -386,6 +386,41 @@ const AttractionForm = () => {
           </div>
         </div>
 
+        {/* Рейтинг достопримечательности */}
+        <div className="district-field">
+          <label htmlFor="attribute_rating">Рейтинг достопримечательности: <span className="note">(обязательно)</span></label>
+          <select
+            id="attribute_rating"
+            {...register("attribute_rating", { required: true })}
+            required
+          >
+            <option value="" disabled>Выберите рейтинг</option>
+            {topOptions
+              .filter((option) => option.value !== "all")
+              .map((option) => (
+                <option key={option.value} value={option.value}>
+                  {option.ru}
+                </option>
+              ))}
+          </select>
+        </div>
+
+        {/* Статус сохранности */}
+        <div className="district-field">
+          <label htmlFor="attribute_status">Статус сохранности:</label>
+          <select
+            id="attribute_status"
+            {...register("attribute_status")}
+          >
+            <option value="">Не выбран</option>
+            {statusOptions.map((option) => (
+              <option key={option.value} value={option.value}>
+                {option.ru}
+              </option>
+            ))}
+          </select>
+        </div>
+
 
         {/* Дополнительные атрибуты карты и маршрутов */}
         <div className="district-field">
