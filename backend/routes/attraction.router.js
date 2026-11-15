@@ -95,7 +95,6 @@ router.get("/:attrPath", async (req, res) => {
         }
 
         // 6. LOCATION + UNESCO
-
         const location = await getLocation(db, attr.id, lang);
 
         const unesco_status = await getUnesco(db, attr.id);

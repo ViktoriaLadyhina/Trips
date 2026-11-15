@@ -72,6 +72,7 @@ export const checkAdminSession = () =>
     body: JSON.stringify({ password })
   });
 
+  // добавление достопримечательности
 export const addAttraction = (data) =>
   apiFetch(`${BASE_URL}/api/add/`, {
     method: "POST",
@@ -82,12 +83,26 @@ export const addAttraction = (data) =>
     body: JSON.stringify(data)
   });
 
+
+ // сохранение достопримечательности (продолжение, форма 2)
+export const addAttraction2 = (data) =>
+  apiFetch(`${BASE_URL}/api/add2/`, {
+    method: "POST",
+    credentials: "include",
+    headers: {
+      "Content-Type": "application/json"
+    },
+    body: JSON.stringify(data)
+  });
+
+
+  // поиск района города по ID города
   export const getCityDistricts = (cityId) =>
   apiFetch(`${BASE_URL}/api/add/cityDistricts/${cityId}`, {
     credentials: "include"
   });
 
-
+// добавление района города
 export const addCityDistrict = (data) =>
   apiFetch(`${BASE_URL}/api/add/cityDistrict`, {
     method: "POST",
@@ -96,4 +111,11 @@ export const addCityDistrict = (data) =>
       "Content-Type": "application/json"
     },
     body: JSON.stringify(data)
+  });
+
+  //получение списка фотографий с сервера по ID достопримечательности.
+  export const getAttractionPhotos = (attractionId) =>
+  apiFetch(`${BASE_URL}/api/attractionPhotos/${attractionId}`, {
+    method: "GET",
+    credentials: "include"
   });

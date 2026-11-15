@@ -1,5 +1,6 @@
 const BASE_PHOTO_URL = import.meta.env.VITE_BASE_PHOTO_URL;
 
+//преобразует путь к фотографии в полный URL, чтобы браузер мог её показать.
 export const toFullUrl = (path) => {
     if (!path) return null;
     if (path.startsWith("http")) return path;
@@ -10,6 +11,7 @@ export const toFullUrl = (path) => {
     return `${base}/${cleanPath}`;
 };
 
+// исправляет пути к изображениям внутри HTML-контента
 export const fixHtmlImages = (html) => {
         return html.replace(
             /src="([^"]+)"/g,

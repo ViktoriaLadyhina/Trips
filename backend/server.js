@@ -57,7 +57,8 @@ const attractionRouter = require("./routes/attraction.router.js")
 const routRouter = require("./routes/rout.router.js")
 const unescoRouter = require("./routes/unesco.roter.js")
 const eventRouter = require("./routes/event.router.js")
-const addRouter = require("./routes/addAttraction.router.js")
+const addAttr = require("./routes/addAttraction.router.js")
+const addAttr2 = require("./routes/addAttraction2.router.js");
 const authRouter = require("./routes/auth.router.js");
 
 // COUNTRY LIST API
@@ -106,7 +107,8 @@ app.use("/api/unesco", unescoRouter);
 app.use("/api/event", eventRouter);
 
 //forma
-app.use("/api/add", addRouter);
+app.use("/api/add", addAttr);
+app.use("/api/add2", addAttr2);
 app.use("/api/auth", authRouter); // защита маршрута добавления достопримечательности
 
 

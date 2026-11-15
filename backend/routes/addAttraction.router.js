@@ -2,6 +2,9 @@ const express = require("express");
 const db = require("../db");
 const router = express.Router();
 
+const getEntityPhotos = require("../repositories/getPhotos");
+const convertDescriptionToHtml = require("../utils/convertDescriptionToHtml");
+
 const getLocation = async (cityId) => {
     const location = {
         country_id: null,
@@ -59,6 +62,7 @@ const getLocation = async (cityId) => {
     return location;
 };
 
+// Получение информации о местоположении города
 router.get("/location/:cityId", async (req, res) => {
     if (!req.session.isAdmin) {
         return res.status(401).json({
@@ -93,6 +97,7 @@ router.get("/location/:cityId", async (req, res) => {
     }
 });
 
+// Получение списка районов города
 router.get("/cityDistricts/:cityId", async (req, res) => {
     if (!req.session.isAdmin) {
         return res.status(401).json({
@@ -132,7 +137,36 @@ router.get("/cityDistricts/:cityId", async (req, res) => {
     }
 });
 
+// Получение фотографий достопримечательности
+router.get("/attractionPhotos/:attractionId", async (req, res) => {
+    if (!req.session.isAdmin) {
+        return res.status(401).json({
+            error: "Unauthorized"
+        });
+    }
 
+    try {
+        const attractionId = Number(req.params.attractionId);
+
+        if (!Number.isInteger(attractionId) || attractionId <= 0) {
+            return res.status(400).json({
+                error: "Invalid attraction ID"
+            });
+        }
+
+const photoData = await getEntityPhotos(db, attractionId);
+
+res.json(photoData);
+
+    } catch (error) {
+        console.error("Error fetching attraction photos:", error);
+        res.status(500).json({
+            error: "Server error"
+        });
+    }
+});
+
+// Добавление района города 
 router.post("/cityDistrict", async (req, res) => {
     if (!req.session.isAdmin) {
         return res.status(401).json({
@@ -141,9 +175,10 @@ router.post("/cityDistrict", async (req, res) => {
     }
 
     try {
-        const { parent_id, name_ru, name_uk, name_de } = req.body;
+        const { parent_id, district_path, name_ru, name_uk, name_de } = req.body;
 
-        if (!parent_id || !name_ru?.trim() || !name_uk?.trim() || !name_de?.trim()) {
+        if (!parent_id || !district_path?.trim()
+            || !name_ru?.trim() || !name_uk?.trim() || !name_de?.trim()) {
             return res.status(400).json({
                 error: "All fields are required"
             });
@@ -168,12 +203,7 @@ router.post("/cityDistrict", async (req, res) => {
             });
         }
 
-        const path = `${name_de.trim()
-            .toLowerCase()
-            .normalize("NFD")
-            .replace(/[\u0300-\u036f]/g, "")
-            .replace(/[^a-z0-9]+/g, "_")
-            .replace(/^_+|_+$/g, "")}_${cityId}`;
+        const path = district_path.trim();
 
         const [existingPath] = await db.query(
             "SELECT id FROM entities WHERE path = ?",
@@ -220,6 +250,7 @@ router.post("/cityDistrict", async (req, res) => {
     }
 });
 
+// Добавление достопримечательности
 router.post("/", async (req, res) => {
 
     if (!req.session.isAdmin) {
@@ -229,9 +260,16 @@ router.post("/", async (req, res) => {
     }
 
     try {
-        const { path, parent_id,
-            name_ru, name_uk, name_de, cityDistrict_ids,
-            short_description_ru, short_description_uk, short_description_de
+        const {
+            path,
+            parent_id,
+            name_ru, name_uk, name_de,
+            cityDistrict_ids,
+            short_description_ru, short_description_uk, short_description_de,
+            attribute_types, attribute_features, attribute_rating, attribute_status, mapOpen, map, routes,
+            photos,
+            officialSite, officialSite_title_ru, officialSite_title_uk, officialSite_title_de,
+            full_description_ru, full_description_uk, full_description_de
         } = req.body;
 
         if (!path || !parent_id
@@ -242,6 +280,28 @@ router.post("/", async (req, res) => {
             });
         }
 
+        const allowedTypes = ["museum", "cathedral", "palace_or_castle", "amusement_park", "historical_building", "historical_area", "technical_structure", "nature", "monument_or_fountain", "square"];
+        const allowedFeatures = ["landmark", "viewpoint", "free_entry"];
+        const allowedRatings = ["top", "popular", "local"];
+        const allowedStatuses = ["active", "partial", "lost"];
+
+        if (
+            !Array.isArray(attribute_types) || attribute_types.length === 0 ||
+            !Array.isArray(attribute_features ?? []) || !attribute_rating ||
+            !allowedRatings.includes(attribute_rating) ||
+            (mapOpen != null && typeof mapOpen !== "string") ||
+            (map != null && typeof map !== "string") ||
+            (routes != null && typeof routes !== "string") ||
+            (attribute_status && !allowedStatuses.includes(attribute_status)) ||
+            attribute_types.some(type => !allowedTypes.includes(type)) ||
+            (attribute_features ?? []).some(feature => !allowedFeatures.includes(feature)) ||
+            new Set(attribute_types).size !== attribute_types.length ||
+            new Set(attribute_features ?? []).size !== (attribute_features ?? []).length
+        ) {
+            return res.status(400).json({
+                error: "Invalid attraction attributes"
+            });
+        }
 
         const [existingPath] = await db.query(
             "SELECT id FROM entities WHERE path = ?",
@@ -264,7 +324,6 @@ router.post("/", async (req, res) => {
                 error: "City not found"
             });
         }
-
 
         let cityDistrictId = null;
         let extraCityDistrictIds = null;
@@ -348,7 +407,6 @@ router.post("/", async (req, res) => {
             ]
         );
 
-
         await db.query(
             `INSERT INTO entity_locations
             (entity_id, country_id, region_id, district_id, subRegion_id, city_id, cityDistrict_id, extra_cityDistrict_ids)
@@ -365,6 +423,150 @@ router.post("/", async (req, res) => {
                 extraCityDistrictIds
             ]
         );
+
+        // Сохранение аттрибутов
+        const attributes = [];
+
+        attribute_types.forEach((type) => {
+            attributes.push([result.insertId, "type", type]);
+        });
+
+        (attribute_features ?? []).forEach((feature) => {
+            attributes.push([result.insertId, "feature", feature]);
+        });
+
+        attributes.push([result.insertId, "rating", attribute_rating]);
+
+        if (attribute_status) {
+            attributes.push([result.insertId, "status", attribute_status]);
+        }
+
+        if (mapOpen?.trim()) {
+            attributes.push([result.insertId, "mapOpen", mapOpen.trim()]);
+        }
+
+        if (map?.trim()) {
+            attributes.push([result.insertId, "map", map.trim()]);
+        }
+
+        if (routes?.trim()) {
+            attributes.push([result.insertId, "routes", routes.trim()]);
+        }
+
+        const placeholders = attributes.map(() => "(?, ?, ?)").join(", ");
+        const values = attributes.flat();
+
+        await db.query(
+            `INSERT INTO entity_attributes (entity_id, attribute_group, value)
+    VALUES ${placeholders}`,
+            values
+        );
+
+        // Сохранение фотографий
+        const validPhotos = (photos ?? []).filter(
+            (photo) => photo.path?.trim()
+        );
+
+        for (const [index, photo] of validPhotos.entries()) {
+            await db.query(
+                `INSERT INTO entity_photos
+            (entity_id, path, sort_order, title_ru, title_uk, title_de, is_main)
+         VALUES (?, ?, ?, ?, ?, ?, ?)`,
+                [
+                    result.insertId,
+                    photo.path.trim(),
+                    photo.sort_order ?? index + 1,
+                    photo.title_ru?.trim() || null,
+                    photo.title_uk?.trim() || null,
+                    photo.title_de?.trim() || null,
+                    photo.is_main ? 1 : 0
+                ]
+            );
+        }
+
+        // Сохранение официального сайта
+        const siteUrl = officialSite?.trim();
+
+        if (siteUrl) {
+            let validSiteUrl = false;
+
+            try {
+                const parsedUrl = new URL(siteUrl);
+                validSiteUrl =
+                    parsedUrl.protocol === "http:" ||
+                    parsedUrl.protocol === "https:";
+            } catch {
+                validSiteUrl = false;
+            }
+
+            if (validSiteUrl) {
+                const escapeHtml = (value) =>
+                    String(value)
+                        .replace(/&/g, "&amp;")
+                        .replace(/</g, "&lt;")
+                        .replace(/>/g, "&gt;")
+                        .replace(/"/g, "&quot;")
+                        .replace(/'/g, "&#39;");
+
+                const siteTitles = {
+                    ru: officialSite_title_ru,
+                    uk: officialSite_title_uk,
+                    de: officialSite_title_de
+                };
+
+                for (const [language, title] of Object.entries(siteTitles)) {
+                    const cleanTitle = typeof title === "string" ? title.trim() : "";
+
+                    if (!cleanTitle) continue;
+
+                    const link = `<a href="${escapeHtml(siteUrl)}" target="_blank" rel="noopener noreferrer">${escapeHtml(cleanTitle)}</a>`;
+
+                    await db.query(
+                        `INSERT INTO content (entity_id, block_key, language, content)
+                         VALUES (?, ?, ?, ?)`,
+                        [
+                            result.insertId,
+                            "officialSite",
+                            language,
+                            link
+                        ]
+                    );
+                }
+            }
+        }
+
+        // Сохранение полного описания
+        const descriptions = {
+            ru: full_description_ru,
+            uk: full_description_uk,
+            de: full_description_de
+        };
+
+        const descriptionHeadings = {
+            ru: ["Описание", "История"],
+            uk: ["Опис", "Історія"],
+            de: ["Beschreibung", "Geschichte"]
+        };
+
+        for (const [language, description] of Object.entries(descriptions)) {
+            const htmlDescription = convertDescriptionToHtml(
+                description,
+                descriptionHeadings[language]
+            );
+
+            if (!htmlDescription) continue;
+
+            await db.query(
+                `INSERT INTO content (entity_id, block_key, language, content)
+                 VALUES (?, ?, ?, ?)`,
+                [
+                    result.insertId,
+                    "full_description",
+                    language,
+                    htmlDescription
+                ]
+            );
+        }
 
         res.status(201).json({
             id: result.insertId,

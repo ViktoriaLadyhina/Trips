@@ -1,8 +1,12 @@
 import { useState, useRef, useEffect } from 'react';
 import './AttractionsFilters.scss';
 
+// ВАЖНО: при изменении этих вариантов обновить соответствующие списки
+// allowedTypes, allowedFeatures, allowedRatings и allowedStatuses
+// в backend/routes/addAttraction.router.js
+
 // === Типы достопримечательностей ===
-const attractionTypes = [
+export const attractionTypes = [
   { value: 'all', ru: 'Все типы', uk: 'Усі типи', de: 'Alle Typen' },
   { value: 'museum', ru: 'Музеи', uk: 'Музеї', de: 'Museen' },
   { value: 'cathedral', ru: 'Соборы, церкви и монастыри', uk: 'Собори, церкви та монастирі', de: 'Kathedralen, Kirchen und Klöster' },
@@ -17,7 +21,7 @@ const attractionTypes = [
 ];
 
 // === Особенности ===
-const featureOptions = [
+export const featureOptions = [
   { value: 'all', ru: 'Все особенности', uk: 'Усі особливості', de: 'Alle Merkmale' },
   { value: 'landmark', ru: 'Знаковые места', uk: 'Знакові місця', de: 'Wahrzeichen' },
   { value: 'viewpoint', ru: 'Смотровые площадки', uk: 'Оглядові майданчики', de: 'Aussichtspunkte' },
@@ -25,7 +29,7 @@ const featureOptions = [
 ];
 
 // === Рейтинг ===
-const topOptions = [
+export const topOptions = [
   { value: 'all', ru: 'Рейтинг: все', uk: 'Рейтинг: усі', de: 'Bewertung: alle' },
   { value: 'top', ru: 'Топовые', uk: 'Топові', de: 'Top' },
   { value: 'popular', ru: 'Популярные', uk: 'Популярні', de: 'Beliebt' },
@@ -47,7 +51,7 @@ const sortOptions = [
 ];
 
 // === Статус сохранности ===
-const statusOptions = [
+export const statusOptions = [
   { value: 'active', ru: 'Сохранившиеся', uk: 'Збережені', de: 'Erhalten' },
   { value: 'partial', ru: 'Руины', uk: 'Руїни', de: 'Ruinen' },
   { value: 'lost', ru: 'Утраченные', uk: 'Втрачені', de: 'Verloren' },
