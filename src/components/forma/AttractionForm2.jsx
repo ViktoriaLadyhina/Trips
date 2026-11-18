@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import { useForm, useFieldArray } from "react-hook-form";
 import { getAttractionPhotos, addAttraction2 } from "../../api/api";
+import './AttractionForm.scss';
 
 function AttractionForm2({ attractionId }) {
     const [photos, setPhotos] = useState([]);
@@ -14,7 +15,8 @@ function AttractionForm2({ attractionId }) {
                     item_ru: "", item_uk: "", item_de: "",
                     image_id: null
                 }
-            ]
+            ],
+            practical_info_ru: "", practical_info_uk: "", practical_info_de: ""
         }
     });
 
@@ -54,80 +56,67 @@ function AttractionForm2({ attractionId }) {
     }, [attractionId]);
 
     return (
-        <form onSubmit={handleSubmit(onSubmit)}>
+        <form className='forma' onSubmit={handleSubmit(onSubmit)}>
             <p>ID достопримечательности: {attractionId}</p>
 
             <h3>Заголовок блока</h3>
-            <label> Заголовок (RU): <input type="text" {...register("item_title_ru")} /> </label>
-            <label> Заголовок (UK): <input type="text" {...register("item_title_uk")} /> </label>
-            <label> Заголовок (DE): <input type="text" {...register("item_title_de")} /> </label>
-
+            <div className="field">
+                <label> Заголовок (RU): <input type="text" {...register("item_title_ru")} /> </label>
+                <label> Заголовок (UK): <input type="text" {...register("item_title_uk")} /> </label>
+                <label> Заголовок (DE): <input type="text" {...register("item_title_de")} /> </label>
+            </div>
 
             <h3>Описание блока</h3>
-            {fields.map((field, index) => (
-                <div key={field.id}>
-                    <h4>Элемент {index + 1}</h4>
-                    <label> Описание (RU): <textarea rows={10} {...register(`items.${index}.item_ru`)}
-                        />
-                    </label>
+            <div className="field">
+                {fields.map((field, index) => (
+                    <div key={field.id}>
+                        <h4>Элемент {index + 1}</h4>
+                        <label> Описание (RU): <textarea rows={10} {...register(`items.${index}.item_ru`)} /> </label>
+                        <label> Опис (UK): <textarea rows={10} {...register(`items.${index}.item_uk`)} /> </label>
+                        <label> Beschreibung (DE): <textarea rows={10} {...register(`items.${index}.item_de`)} /> </label>
 
-                    <label>
-                        Опис (UK):
-                        <textarea
-                            rows={10}
-                            {...register(`items.${index}.item_uk`)}
-                        />
-                    </label>
+                        <label> Выбрать фотографию:
+                            <select
+                                {...register(`items.${index}.image_id`, {
+                                    setValueAs: (value) =>
+                                        value === "" ? null : Number(value)
+                                })}
+                            >
+                                <option value="">Без фотографии</option>
+                                {photos.map((photo) => (
+                                    <option key={photo.id} value={photo.id}>
+                                        {photo.title?.ru || photo.path}
+                                    </option>
+                                ))}
+                            </select>
+                        </label>
 
-                    <label>
-                        Beschreibung (DE):
-                        <textarea
-                            rows={10}
-                            {...register(`items.${index}.item_de`)}
-                        />
-                    </label>
+                        {fields.length > 1 && (
+                            <button type="button" onClick={() => remove(index)} > Удалить элемент</button>
+                        )}
+                    </div>
+                ))}
 
-                    <label>
-                        Выбрать фотографию:
-                        <select
-                            {...register(`items.${index}.image_id`, {
-                                setValueAs: (value) =>
-                                    value === "" ? null : Number(value)
-                            })}
-                        >
-                            <option value="">Без фотографии</option>
-                            {photos.map((photo) => (
-                                <option key={photo.id} value={photo.id}>
-                                    {photo.title?.ru || photo.path}
-                                </option>
-                            ))}
-                        </select>
-                    </label>
+                <button type="button"
+                    onClick={() =>
+                        append({
+                            item_ru: "",
+                            item_uk: "",
+                            item_de: "",
+                            image_id: null
+                        })
+                    }
+                >
+                    Добавить ещё
+                </button>
+            </div>
 
-                    {fields.length > 1 && (
-                        <button
-                            type="button"
-                            onClick={() => remove(index)}
-                        >
-                            Удалить элемент
-                        </button>
-                    )}
-                </div>
-            ))}
-
-            <button
-                type="button"
-                onClick={() =>
-                    append({
-                        item_ru: "",
-                        item_uk: "",
-                        item_de: "",
-                        image_id: null
-                    })
-                }
-            >
-                Добавить ещё
-            </button>
+             <h3>Практическая информация</h3>
+            <div className="field">
+                <label> Практическая информация (RU): <textarea rows={10} {...register("practical_info_ru")} /> </label>
+                <label> Практична інформація (UK): <textarea rows={10} {...register("practical_info_uk")} /> </label>
+                <label> Praktische Informationen (DE): <textarea rows={10} {...register("practical_info_de")} /> </label>
+            </div>
 
             <button type="submit">Сохранить данные в БД</button>
         </form>

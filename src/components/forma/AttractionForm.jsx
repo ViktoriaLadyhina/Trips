@@ -534,9 +534,11 @@ const AttractionForm = () => {
         <button type="submit">Отправить данные в БД</button>
       </form>
 
-      {createdAttractionId && (
+      {/* {createdAttractionId && (
         <AttractionForm2 attractionId={createdAttractionId} />
-      )}
+      )} */}
+
+      <AttractionForm2 attractionId={1294} />
     </>
   )
 }

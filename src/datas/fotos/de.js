@@ -5,11 +5,6 @@ export const Fotos = {
 
     // округ Кёльн
     koln_city: {
-      schokoladenmuseum: [
-        { path: "Germany/nrw/koln/koln-city/schokoladenmuseum/001.jpg", title: { ru: "Музей шоколада (фото взято с википедии)", uk: "Музей шоколаду (фото взято з Вікіпедії)", de: "Schokoladenmuseum (Foto von Wikipedia entnommen)" } },
-        { path: "Germany/nrw/koln/koln-city/schokoladenmuseum/002.jpg", title: { ru: "Музей шоколада, 2026", uk: "Музей шоколаду, 2026", de: "Schokoladenmuseum, 2026" } },
-        { path: "Germany/nrw/koln/koln-city/schokoladenmuseum/003.jpg", title: { ru: "Музей шоколада, 2026", uk: "Музей шоколаду, 2026", de: "Schokoladenmuseum, 2026" } },
-      ],
       forstbotanischer_garten: [
         { path: "Germany/nrw/koln/koln-city/forstbotanischer_garten/001.jpg", title: { ru: "Ботанический сад и лесопарк (фото взято с википедии)", uk: "Ботанічний сад і лісопарк (фото взято з Вікіпедії)", de: "Forstbotanischer Garten (Foto von Wikipedia entnommen)" } }
       ],

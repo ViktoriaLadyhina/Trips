@@ -1,4 +1,3 @@
-// Преобразование обычного текста в HTML
 const convertDescriptionToHtml = (text, headings) => {
     if (typeof text !== "string" || !text.trim()) {
         return "";
@@ -18,31 +17,70 @@ const convertDescriptionToHtml = (text, headings) => {
             "<strong>$1</strong>"
         );
 
-    return text
-        .trim()
-        .split(/\n\s*\n/)
-        .map((paragraph) => {
-            const cleanText = paragraph.trim();
+    const normalizedHeadings = headings.map((item) =>
+        item.toLowerCase()
+    );
 
-            if (!cleanText) return "";
+    const lines = text.trim().split(/\r?\n/);
+    const result = [];
+    let paragraph = [];
+    let listItems = [];
 
-            const heading = headings.find(
-                (item) =>
-                    item.toLowerCase() === cleanText.toLowerCase()
+    const flushParagraph = () => {
+        if (!paragraph.length) return;
+
+        result.push(
+            `<p>${paragraph.map(formatLine).join("<br>")}</p>`
+        );
+        paragraph = [];
+    };
+
+    const flushList = () => {
+        if (!listItems.length) return;
+
+        result.push(
+            `<ul>${listItems.map((item) => `<li>${formatLine(item)}</li>`).join("")}</ul>`
+        );
+        listItems = [];
+    };
+
+    for (const line of lines) {
+        const cleanLine = line.trim();
+
+        if (!cleanLine) {
+            flushParagraph();
+            flushList();
+            continue;
+        }
+
+        const headingIndex = normalizedHeadings.indexOf(
+            cleanLine.toLowerCase()
+        );
+
+        if (headingIndex !== -1) {
+            flushParagraph();
+            flushList();
+
+            result.push(
+                `<h2>${escapeHtml(headings[headingIndex])}</h2>`
             );
+            continue;
+        }
 
-            if (heading) {
-                return `<h2>${escapeHtml(heading)}</h2>`;
-            }
+        if (cleanLine.startsWith("- ")) {
+            flushParagraph();
+            listItems.push(cleanLine.slice(2));
+            continue;
+        }
 
-            const lines = cleanText
-                .split(/\r?\n/)
-                .map(formatLine);
+        flushList();
+        paragraph.push(cleanLine);
+    }
 
-            return `<p>${lines.join("<br>")}</p>`;
-        })
-        .filter(Boolean)
-        .join("\n");
+    flushParagraph();
+    flushList();
+
+    return result.join("\n\n");
 };
 
 module.exports = convertDescriptionToHtml;

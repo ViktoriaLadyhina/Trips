@@ -115,7 +115,7 @@ export const addCityDistrict = (data) =>
 
   //получение списка фотографий с сервера по ID достопримечательности.
   export const getAttractionPhotos = (attractionId) =>
-  apiFetch(`${BASE_URL}/api/attractionPhotos/${attractionId}`, {
+  apiFetch(`${BASE_URL}/api/add/attractionPhotos/${attractionId}`, {
     method: "GET",
     credentials: "include"
   });

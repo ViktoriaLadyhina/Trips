@@ -17,7 +17,8 @@ router.post("/", async (req, res) => {
         const {
             attractionId,
             item_title_ru, item_title_uk, item_title_de,
-            items
+            items,
+            practical_info_ru, practical_info_uk, practical_info_de,
         } = req.body;
 
         const id = Number(attractionId);
@@ -28,6 +29,7 @@ router.post("/", async (req, res) => {
             });
         }
 
+        // заголовок item и сам блок
         if (
             typeof item_title_ru !== "string" ||
             typeof item_title_uk !== "string" ||
@@ -65,6 +67,7 @@ router.post("/", async (req, res) => {
                 });
             }
 
+            // фото в блоке item
             if (
                 item.image_id != null &&
                 item.image_id !== "" &&
@@ -142,6 +145,39 @@ router.post("/", async (req, res) => {
              VALUES ${placeholders}`,
             values
         );
+
+        // Сохранение практической информации
+        const practicalInfos = {
+            ru: practical_info_ru,
+            uk: practical_info_uk,
+            de: practical_info_de
+        };
+
+        const practicalInfoHeadings = {
+            ru: ["Практическая информация"],
+            uk: ["Практична інформація"],
+            de: ["Praktische Informationen"]
+        };
+
+        for (const [language, info] of Object.entries(practicalInfos)) {
+            const htmlInfo = convertDescriptionToHtml(
+                info,
+                practicalInfoHeadings[language]
+            );
+
+            if (!htmlInfo) continue;
+
+            await db.query(
+                `INSERT INTO content (entity_id, block_key, language, content)
+         VALUES (?, ?, ?, ?)`,
+                [
+                    id,
+                    "practical_info",
+                    language,
+                    htmlInfo
+                ]
+            );
+        }
 
         res.status(201).json({
             message: "Attraction content saved",

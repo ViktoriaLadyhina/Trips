@@ -200,7 +200,7 @@ const datas =
     denkmal_beethoven_bonn: { id: 908, ru: 'Памятник Бетховену', de: 'Beethoven-Denkmal', uk: 'Пам’ятник Бетховену' },
     altes_rathaus_bonn: { id: 912, ru: 'Старая ратуша Бонна', de: 'Altes Rathaus Bonn', uk: 'Стара ратуша Бонна' },
     namen_jesu_kirche_bonn: { id: 913, ru: 'Церковь Имени Иисуса', de: 'Namen Jesu Kirche', uk: 'Церква Імені Ісуса' },
-    minoritenkirche_bonn: { id: 0, ru: 'Миноритская церковь Святого Ремигия', de: 'St. Remigius', uk: 'Міноритська церква Святого Ремігія' },
+    minoritenkirche_bonn: { id: 1293, ru: 'Миноритская церковь Святого Ремигия', de: 'St. Remigius', uk: 'Міноритська церква Святого Ремігія' },
 
     // Dortmund
     westfalenpark: { ru: 'Вестфаленпарк', de: 'Westfalenpark', uk: 'Вестфаленпарк' },
@@ -211,7 +211,7 @@ const datas =
     roemisch_germanisches_museum: { id: 747, ru: 'Римско-германский музей', de: 'Römisch-Germanisches Museum', uk: 'Римсько-германський музей' },
     farina_duftmuseum: { id: 743, ru: 'Музей духов в доме Фарина', de: 'Duftmuseum im Farina-Haus', uk: 'Музей парфумів у домі Фаріна' },
     museum_ludwig: { id: 735, ru: 'Музей Людвига', de: 'Museum Ludwig', uk: 'Музей Людвіга' },
-    schokoladenmuseum: { ru: 'Музей шоколада', de: 'Schokoladenmuseum', uk: 'Музей шоколаду' },
+    schokoladenmuseum: { id: 1294, ru: 'Музей шоколада', de: 'Schokoladenmuseum', uk: 'Музей шоколаду' },
     miqua_koln: { id: 745, ru: 'Музей в археологическом квартале Кёльна – MiQua', de: 'Museum im archäologischen Viertel Köln – MiQua', uk: 'Музей в археологічному кварталі Кельна – MiQua' },
     wallraf_richartz_museum: { id: 736, ru: 'Музей Вальрафа-Рихарца', de: 'Wallraf-Richartz-Museum', uk: 'Музей Вальрафа-Ріхарцa' },
     koln_bridges: { ru: 'Мосты Кёльна через Рейн', de: 'Kölner Rheinbrücken', uk: 'Мости Кельна через Рейн' },

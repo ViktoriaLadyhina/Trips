@@ -1,63 +1,6 @@
 const datas = [
 
     // Köln-city
-   
-    {
-        id: "schokoladenmuseum",
-        name: "Schokoladenmuseum",
-        type: ["museum"], rating: "popular",
-        path: "schokoladenmuseum",
-        countryPath: "germany", regionPath: "nrw", districtPath: "city", cityPath: "koln_city",
-        fotoCard: "Germany/nrw/koln/koln-city/schokoladenmuseum/001.jpg",
-        location: "Köln, Stadtteil Altstadt-Süd (Stadtbezirk Innenstadt), Deutschland",
-        officialSite: [
-            {
-                bold: "Offizielle Website des Schokoladenmuseums Köln",
-                link: "https://www.schokoladenmuseum.de/"
-            }
-        ],
-        construction_period: "1992–1993 (eröffnet am 31. Oktober 1993)",
-        architects: ["Fritz Eller"],
-        founder: "Hans Imhoff – Gründer des Museums, deutscher Schokoladenunternehmer",
-        short_description: "Das Schokoladenmuseum Köln präsentiert 5000 Jahre Kakaokultur und Schokoladenproduktion – von alten Zivilisationen bis zur modernen Fabrik, mit einem beeindruckenden Schokoladenbrunnen und einer gläsernen „Schokoladenfabrik“.",
-        full_description: {
-            title: "Beschreibung und Geschichte",
-            items: [
-                { bold: "Über das Museum.", text: "Das Museum befindet sich auf der Halbinsel Rheinauhafen in Köln und bietet den Besuchern eine Reise durch die Geschichte des Kakaos und der Schokolade bis hin zur modernen Industrie." },
-                { bold: "Hauptattraktion", text: " – ein drei Meter hoher Schokoladenbrunnen mit rund 200 kg flüssiger Schokoladenmasse, der zum Symbol des Museums wurde." },
-                { bold: "Ausstellung und Bedeutung.", text: "Auf über 4000 m² und mit mehr als 2500 Exponaten erzählt das Museum von der Kulturgeschichte des Kakaos, der Industrialisierung der Schokoladenproduktion und der modernen Konsumgesellschaft." },
-                { bold: "Gebäude und Architektur.", text: "Das Gebäude kombiniert das alte Zollamtsgebäude (Hauptzollamt) mit einem neuen Glas-Aluminium-Anbau im postmodernen Stil am Rheinufer. Architekt – Fritz Eller." },
-                { bold: "Weitere Besonderheiten.", text: "Im Museum befindet sich eine „gläserne Schokoladenfabrik“, in der Besucher den gesamten Herstellungsprozess von der Röstung der Kakaobohnen bis zur fertigen Tafel beobachten können." }
-            ]
-        },
-        tickets_and_entry: {
-            title: "Praktische Informationen",
-            items: [
-                { bold: "Adresse:", text: "Am Schokoladenmuseum 1a, 50678 Köln" },
-                { bold: "Öffnungszeiten:", text: "Täglich 10:00 – 18:00. Letzter Einlass eine Stunde vor Schließung." },
-                { bold: "Eintrittspreise (ca. 2025):", text: "<br>Erwachsene ~16,50 €, <br>Kinder/Schüler ~9,50 € u.a." },
-                { bold: "Parken und Verkehr:", text: "Parkhaus „Rheinauhafen“ in der Nähe; fußläufig vom Stadtzentrum Kölns erreichbar." }
-            ]
-        },
-        interestingFacts: {
-            title: "Interessante Fakten",
-            items: [
-                { text: "Das Museum finanziert sich vollständig selbst und erhält keine Zuschüsse – eine Seltenheit in der Museumswelt." },
-                { text: "Die Ausstellung umfasst 5000 Jahre Kakaogeschichte – von den Maya und Azteken bis heute." },
-                { text: "In der gläsernen Schokoladenfabrik kann man beobachten, wie Schokoladenfiguren – etwa Hasen, Herzen oder Pandas – von Hand hergestellt werden." },
-                { text: "Das Museum wurde am 31. Oktober 1993 eröffnet und zählt zu den meistbesuchten Museen Kölns." }
-            ]
-        },
-        coord: { lat: 50.93204, lng: 6.96444 },
-        meta: {
-            title: "Schokoladenmuseum Köln: Eine Reise in die Welt des Kakaos und der Süßigkeiten",
-            description: "Das Schokoladenmuseum in Köln zeigt den Weg des Kakaos von der tropischen Plantage bis zur Schokoladentafel. Besuchen Sie die gläserne Fabrik, den 200-kg-Schokoladenbrunnen und entdecken Sie die Geschichte der süßen Versuchung.",
-            ogTitle: "Schokoladenmuseum Köln – Das süßeste Museum Deutschlands",
-            ogDescription: "Tauchen Sie ein in die Welt von Kakao und Schokolade in Köln: von alten Zivilisationen bis zur modernen Fabrik und dem berühmten Schokoladenbrunnen.",
-            keywords: "Schokoladenmuseum, Köln, Sehenswürdigkeit, Schokolade, Konditorkunst, Museum Köln, Ausstellungen, Schokoladenherstellung, Kulturerbe, Verkostungen, Tourismus Deutschland, Führungen, historisches Gebäude",
-            ogImage: "https://our-travels.info/foto/Germany/nrw/koln/koln-city/schokoladenmuseum/001.jpg"
-        }
-    },
     {
         id: "ostasiatische_kunst_koln",
         name: "Museum für Ostasiatische Kunst",
