@@ -86,7 +86,6 @@ const Region = forwardRef(({ data, countryPath, regionPath, districtPath, subreg
     data?.type?.toLowerCase() === "subregion" &&
     sortedCities.length > 0;
 
-console.log(sortedCities);
   return (
     <div className='region' ref={ref}>
 

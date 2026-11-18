@@ -165,7 +165,7 @@ useEffect(() => {
     { label: lang === "ru" ? "Главная" : lang === "de" ? "Startseite" : "Головна", path: "/" },
     { label: datas.countries[countryPath][lang], path: `/${countryPath}` },
     { label: datas.regions[regionPath][lang], path: `/${countryPath}/${regionPath}` },
-    { label: datas.districts[districtPath][lang] }
+    { label: datas.districts[districtPath]?.[lang] || districtPath }
   ];
 
   return (
