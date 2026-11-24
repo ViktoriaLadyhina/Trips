@@ -80,6 +80,8 @@ const datas =
     luedenscheid: { id: 298, ru: 'Город Люденшайд', de: 'Stadt Lüdenscheid', uk: 'Місто Люденшайд' },
     altena: { id: 293, ru: 'Город Альтена', de: 'Stadt Altena', uk: 'Місто Альтена' },
 
+    detmold_city: { id: 1335, ru: 'Город Детмольд', de: 'Stadt Altena', uk: 'Місто Детмольд' },
+
     velbert: { id: 410, ru: 'Город Фельберт', de: 'Stadt Velbert', uk: 'Місто Фельберт' },
 
     dorsten: { id: 811, ru: 'Город Дорстен', de: 'Stadt Dorsten', uk: 'Місто Дорстен' },
@@ -161,6 +163,9 @@ const datas =
     luedenscheid_vogelberg: { id: 710, parent: 298, ru: 'район Фогельберг', de: 'Stadtteil Vogelberg', uk: 'район Фогельберг' },
     luedenscheid_wettringhof: { id: 711, parent: 298, ru: 'район Веттрингоф', de: 'Stadtteil Wettringhof', uk: 'район Веттрінггоф' },
     luedenscheid_dickenberg_eggenscheid: { id: 712, parent: 298, ru: 'район Диккенберг / Эгеншайд', de: 'Stadtteil Dickenberg / Eggenscheid', uk: 'район Диккенберг / Егеншайд' },
+
+    detmold_sud: { id: 1371, parent: 1335, ru: 'район Детмольд-Юг', de: 'Stadtbezirk Detmold-Süd', uk: 'район Детмольд-Південь' },
+    detmold_nord: { id: 1372, parent: 1335, ru: 'район Детмольд-Север', de: 'Stadtbezirk Detmold-Nord', uk: 'район Детмольд-Північ' },
 
     monschau_altstadt: { id: 659, parent: 185, ru: 'Исторический центр Моншау', de: 'Stadtteil Altstadt', uk: 'Історичний центр Моншау' },
     monschau_hoefen: { id: 660, parent: 185, ru: 'район Хёфен', de: 'Stadtteil Höfen', uk: 'район Хьофен' },
@@ -314,6 +319,14 @@ const datas =
     lutherkirche_altena: { ru: 'Евангелическо-лютеранская церковь Лютера', de: 'Lutherkirche Altena', uk: 'Євангелічно-лютеранська церква Лютера' },
     gustav_selve_altena: { ru: 'Памятник Густаву Сельве', de: 'Gustav-Selve-Denkmal', uk: 'Пам’ятник Густаву Сельве' },
     st_matthaeus_church_altena: { ru: 'Приходская церковь Святого Матфея', de: 'Katholische Pfarrkirche St. Matthäus', uk: 'Парафіяльна церква Святого Матвія' },
+
+    // Detmold okrug
+    // край lippe 
+    // detmold
+    altstadt_detmold: { id: 1370, ru: 'Исторический центр Детмольда', de: 'Historischer Stadtkern Detmold', uk: 'Історичний центр Детмольда' },
+    // нужно добавить фото 
+    castle_detmold: { id: 1373, ru: 'Княжеский резиденц-замок Детмольда', de: 'Fürstliches Residenzschloss Detmold', uk: 'Князівський резиденц-замок Детмольда' },
+    // нужно добавить фото 
 
     // Düsseldorf okrug
     // край mettmann 
