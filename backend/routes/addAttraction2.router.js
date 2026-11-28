@@ -23,6 +23,7 @@ router.post("/", async (req, res) => {
             item_title_ru, item_title_uk, item_title_de,
             items,
             practical_info_ru, practical_info_uk, practical_info_de,
+            interestingFacts_ru, interestingFacts_uk, interestingFacts_de
         } = req.body;
 
         const id = Number(attractionId);
@@ -56,6 +57,7 @@ router.post("/", async (req, res) => {
             });
         }
 
+        // проверка на заполнение полей заголовка и элементов item на всех языках
         const languages = ["ru", "uk", "de"];
 
         const titleStatus = validateLanguages({
@@ -156,6 +158,33 @@ router.post("/", async (req, res) => {
             });
         }
 
+        const interestingFacts = {
+            ru: interestingFacts_ru,
+            uk: interestingFacts_uk,
+            de: interestingFacts_de
+        };
+
+        if (
+            Object.values(interestingFacts).some(
+                (fact) =>
+                    fact != null &&
+                    typeof fact !== "string"
+            )
+        ) {
+            return res.status(400).json({
+                error: "Invalid interesting facts fields"
+            });
+        }
+
+        const interestingFactsStatus = validateLanguages(interestingFacts);
+        console.log("Interesting facts validation:", interestingFacts);
+
+        if (interestingFactsStatus === "incomplete") {
+            return res.status(400).json({
+                error: "Interesting facts must be filled in all languages"
+            });
+        }
+
         connection = await db.getConnection();
         await connection.beginTransaction();
         transactionStarted = true;
@@ -248,6 +277,35 @@ router.post("/", async (req, res) => {
                         "practical_info",
                         language,
                         htmlInfo
+                    ]
+                );
+            }
+        }
+
+        // Сохранение интересных фактов
+        if (interestingFactsStatus === "valid") {
+            const interestingFactsHeadings = {
+                ru: ["Интересные факты"],
+                uk: ["Цікаві факти"],
+                de: ["Interessante Fakten"]
+            };
+
+            for (const [language, fact] of Object.entries(interestingFacts)) {
+                const heading = interestingFactsHeadings[language][0];
+
+                const htmlFacts = convertDescriptionToHtml(
+                    `${heading}\n\n${fact.trim()}`,
+                    [heading]
+                );
+
+                await connection.query(
+                    `INSERT INTO content (entity_id, block_key, language, content)
+                     VALUES (?, ?, ?, ?)`,
+                    [
+                        id,
+                        "interestingFacts",
+                        language,
+                        htmlFacts
                     ]
                 );
             }
