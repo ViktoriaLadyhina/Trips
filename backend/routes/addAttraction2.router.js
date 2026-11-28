@@ -4,6 +4,7 @@ const db = require("../db");
 const router = express.Router();
 
 const convertDescriptionToHtml = require("../utils/convertDescriptionToHtml");
+const validateLanguages = require("../utils/validateLanguages");
 
 //Продолжение добавления достопримечательности (форма 2)
 router.post("/", async (req, res) => {
@@ -12,6 +13,9 @@ router.post("/", async (req, res) => {
             error: "Unauthorized"
         });
     }
+
+    let connection;
+    let transactionStarted = false;
 
     try {
         const {
@@ -34,8 +38,7 @@ router.post("/", async (req, res) => {
             typeof item_title_ru !== "string" ||
             typeof item_title_uk !== "string" ||
             typeof item_title_de !== "string" ||
-            !Array.isArray(items) ||
-            items.length === 0
+            !Array.isArray(items)
         ) {
             return res.status(400).json({
                 error: "Invalid content fields"
@@ -55,6 +58,18 @@ router.post("/", async (req, res) => {
 
         const languages = ["ru", "uk", "de"];
 
+        const titleStatus = validateLanguages({
+            ru: item_title_ru,
+            uk: item_title_uk,
+            de: item_title_de
+        });
+
+        if (titleStatus === "incomplete") {
+            return res.status(400).json({
+                error: "Item title must be filled in all languages"
+            });
+        }
+
         for (const item of items) {
             if (
                 !item ||
@@ -65,6 +80,22 @@ router.post("/", async (req, res) => {
                 return res.status(400).json({
                     error: "Invalid item fields"
                 });
+            }
+
+            const itemStatus = validateLanguages({
+                ru: item.item_ru,
+                uk: item.item_uk,
+                de: item.item_de
+            });
+
+            if (itemStatus === "incomplete") {
+                return res.status(400).json({
+                    error: "Item description must be filled in all languages"
+                });
+            }
+
+            if (itemStatus === "empty") {
+                continue;
             }
 
             // фото в блоке item
@@ -99,85 +130,131 @@ router.post("/", async (req, res) => {
             de: item_title_de
         };
 
-        const values = [];
-
-        for (const language of languages) {
-            values.push(
-                id,
-                "item_title",
-                language,
-                convertDescriptionToHtml(
-                    titles[language],
-                    [titles[language].trim()]
-                ),
-                null
-            );
-
-            for (const item of items) {
-                const imageId =
-                    item.image_id == null || item.image_id === ""
-                        ? null
-                        : Number(item.image_id);
-
-                values.push(
-                    id,
-                    "item",
-                    language,
-                    convertDescriptionToHtml(item[`item_${language}`], []),
-                    imageId
-                );
-            }
-        }
-
-        const placeholders = values
-            .map(() => "?")
-            .reduce((result, value, index) => {
-                if (index % 5 === 0) {
-                    result.push("(?, ?, ?, ?, ?)");
-                }
-                return result;
-            }, [])
-            .join(", ");
-
-        await db.query(
-            `INSERT INTO content
-                (entity_id, block_key, language, content, image_id)
-             VALUES ${placeholders}`,
-            values
-        );
-
-        // Сохранение практической информации
         const practicalInfos = {
             ru: practical_info_ru,
             uk: practical_info_uk,
             de: practical_info_de
         };
 
-        const practicalInfoHeadings = {
-            ru: ["Практическая информация"],
-            uk: ["Практична інформація"],
-            de: ["Praktische Informationen"]
-        };
+        if (
+            Object.values(practicalInfos).some(
+                (info) =>
+                    info != null &&
+                    typeof info !== "string"
+            )
+        ) {
+            return res.status(400).json({
+                error: "Invalid practical information fields"
+            });
+        }
 
-        for (const [language, info] of Object.entries(practicalInfos)) {
-            const htmlInfo = convertDescriptionToHtml(
-                info,
-                practicalInfoHeadings[language]
-            );
+        const practicalInfoStatus = validateLanguages(practicalInfos);
 
-            if (!htmlInfo) continue;
+        if (practicalInfoStatus === "incomplete") {
+            return res.status(400).json({
+                error: "Practical information must be filled in all languages"
+            });
+        }
 
-            await db.query(
-                `INSERT INTO content (entity_id, block_key, language, content)
-         VALUES (?, ?, ?, ?)`,
-                [
+        connection = await db.getConnection();
+        await connection.beginTransaction();
+        transactionStarted = true;
+
+        const values = [];
+
+        // Сохраняем заголовок только на всех трех языках
+        if (titleStatus === "valid") {
+            for (const language of languages) {
+                values.push(
                     id,
-                    "practical_info",
+                    "item_title",
                     language,
-                    htmlInfo
-                ]
+                    convertDescriptionToHtml(
+                        titles[language].trim(),
+                        [titles[language].trim()]
+                    ),
+                    null
+                );
+            }
+        }
+
+        // Сохраняем только полностью заполненные элементы item
+        for (const item of items) {
+            const itemStatus = validateLanguages({
+                ru: item.item_ru,
+                uk: item.item_uk,
+                de: item.item_de
+            });
+
+            if (itemStatus === "empty") continue;
+
+            const imageId =
+                item.image_id == null || item.image_id === ""
+                    ? null
+                    : Number(item.image_id);
+
+            for (const language of languages) {
+                values.push(
+                    id,
+                    "item",
+                    language,
+                    convertDescriptionToHtml(
+                        item[`item_${language}`].trim(),
+                        []
+                    ),
+                    imageId
+                );
+            }
+        }
+
+        if (values.length > 0) {
+            const placeholders = values
+                .map(() => "?")
+                .reduce((result, value, index) => {
+                    if (index % 5 === 0) {
+                        result.push("(?, ?, ?, ?, ?)");
+                    }
+                    return result;
+                }, [])
+                .join(", ");
+
+            await connection.query(
+                `INSERT INTO content
+            (entity_id, block_key, language, content, image_id)
+         VALUES ${placeholders}`,
+                values
             );
         }
+
+        // Сохранение практической информации
+        if (practicalInfoStatus === "valid") {
+            const practicalInfoHeadings = {
+                ru: ["Практическая информация"],
+                uk: ["Практична інформація"],
+                de: ["Praktische Informationen"]
+            };
+
+            for (const [language, info] of Object.entries(practicalInfos)) {
+                const htmlInfo = convertDescriptionToHtml(
+                    info,
+                    practicalInfoHeadings[language]
+                );
+
+                await connection.query(
+                    `INSERT INTO content (entity_id, block_key, language, content)
+             VALUES (?, ?, ?, ?)`,
+                    [
+                        id,
+                        "practical_info",
+                        language,
+                        htmlInfo
+                    ]
+                );
+            }
+        }
+
+        await connection.commit();
+        transactionStarted = false;
 
         res.status(201).json({
             message: "Attraction content saved",
@@ -185,10 +262,23 @@ router.post("/", async (req, res) => {
         });
 
     } catch (error) {
-        console.error(error);
+        if (connection && transactionStarted) {
+            try {
+                await connection.rollback();
+            } catch (rollbackError) {
+                console.error("Transaction rollback failed:", rollbackError);
+            }
+        }
+
+        console.error("Failed to save attraction content:", error);
+
         res.status(500).json({
             error: "Server error"
         });
+    } finally {
+        if (connection) {
+            connection.release();
+        }
     }
 });
 

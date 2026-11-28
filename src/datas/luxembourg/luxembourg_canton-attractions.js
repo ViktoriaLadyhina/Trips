@@ -4,140 +4,140 @@ const datas = [
   //           { bold: "Мост Понт-дю-Шато", text: "– исторический мост в старом городе Люксембурга, входящий в систему бывших городских укреплений и являющийся частью пешеходных маршрутов." },
   //           { bold: "Мост Пассерель", text: "– исторический каменный мост в городе Люксембург, соединяющий район старого города с кварталом вокзала и являющийся важной частью городской транспортной и пешеходной сети." },
 
-  {
-    id: "pont_du_chateau_luxembourg",
-    type: ["historical_building"], rating: "local",
-    path: "pont_du_chateau_luxembourg",
-    countryPath: "luxembourg", regionPath: "luxembourg_canton", districtPath: "city", cityPath: "luxembourg_city",
-    hiddenFromList: true, showMore: true,
-    fotoCard: "Luxembourg/luxembourg_canton/luxembourg_city/old_town/pont_du_chateau/001.jpg",
-    map: "bridges_luxembourg",
-    coord: { lat: 49.61158, lng: 6.13594 },
-    translations: {
-      ru: {
-        name: "Мост Понт-дю-Шато",
-        location: "Люксембург (квартал Ville Haute), Люксембург",
-        short_description: "Мост Понт-дю-Шато – это исторический мост в Люксембурге, расположенный в районе старых городских укреплений. Он соединяет важные части исторического центра и связан с развитием фортификационной системы города.",
-        full_description: {
-          title: "Описание и история",
-          items: [
-            { bold: "Мост Понт-дю-Шато (Pont du Château)", text: "находится в исторической части Люксембурга, где на протяжении веков формировалась система мостов, укреплений и подземных коммуникаций. Район вокруг моста относится к зоне бывших городских оборонительных сооружений, которые делали Люксембург одной из самых укреплённых крепостей Европы." },
-            { text: "Мост играет не только транспортную, но и архитектурно-историческую роль. Он является частью городской структуры, сформированной на сложном рельефе – с перепадами высот, скалами и крепостными стенами. Благодаря этому мост стал элементом, который объединяет разные уровни города." },
-            { text: "Сегодня мост воспринимается как часть исторического ландшафта Люксембурга и маршрутов для прогулок по старому городу." },
-            { bold: "История моста ", text: "связана с развитием укреплений Люксембурга, которые активно строились и перестраивались с Средневековья до Нового времени. В разные периоды город находился под влиянием различных европейских держав, что отражалось на инфраструктуре." },
-            { text: "Первоначальный мост был построен в 1735 году в рамках укреплений Люксембурга. Впоследствии сооружение неоднократно перестраивалось, а современный вид оно приобрело после реконструкции 1992–1993 годов." },
-            { text: "С течением времени военная функция укреплений утратила значение, и район постепенно интегрировался в городскую структуру. Мост сохранился как часть исторического наследия." }
-          ]
-        },
-        tickets_and_entry: {
-          title: "Практическая информация",
-          items: [
-            { bold: "Адрес:", text: "Rue du Pont du Château / Corniche (район Bock), L-2340 Luxembourg, Luxembourg" }]
-        },
-        interestingFacts: {
-          title: "Интересные факты",
-          isList: true,
-          items: [
-            { text: "Мост находится в зоне бывших оборонительных укреплений города" },
-            { text: "Район вокруг включён в список наследия ЮНЕСКО (как часть укреплений Люксембурга)" },
-            { text: "Рельеф города делает мосты важнейшими элементами городской структуры" },
-            { text: "Многие подобные сооружения в Люксембурге изначально имели военное значение" }
-          ]
-        },
-        construction_period: "1735 год",
-        meta: {
-          title: "Мост Понт-дю-Шато Люксембург – исторический мост старого города",
-          description: "Мост Понт-дю-Шато – исторический мост в Люксембурге, расположенный в старом городе и связанный с системой бывших укреплений и фортификаций.",
-          ogTitle: "Мост Понт-дю-Шато – исторический мост Люксембурга",
-          ogDescription: "Небольшой, но важный исторический мост в Люксембурге, часть старых укреплений и прогулочных маршрутов по городу.",
-          keywords: "Люксембург, Pont du Château, мост Понт-дю-Шато Люксембург, старый город Люксембург, крепость Люксембург, исторические мосты, достопримечательность",
-          ogImage: "https://our-travels.info/foto/Luxembourg/luxembourg_canton/luxembourg_city/old_town/pont_du_chateau/001.jpg"
-        }
-      },
-      uk: {
-        name: "Міст Понт-дю-Шато",
-        location: "Люксембург (квартал Ville Haute), Люксембург",
-        short_description: "Міст Понт-дю-Шато – це історичний міст у Люксембурзі, розташований у районі старих міських укріплень. Він з’єднує важливі частини історичного центру та пов’язаний із розвитком фортифікаційної системи міста.",
-        full_description: {
-          title: "Опис та історія",
-          items: [
-            { bold: "Міст Понт-дю-Шато (Pont du Château)", text: "знаходиться в історичній частині Люксембургу, де протягом століть формувалася система мостів, укріплень і підземних комунікацій. Район навколо мосту належить до зони колишніх міських оборонних споруд, які робили Люксембург однією з найбільш укріплених фортець Європи." },
-            { text: "Міст виконує не лише транспортну, а й архітектурно-історичну роль. Він є частиною міської структури, сформованої на складному рельєфі – з перепадами висот, скелями та фортифікаційними стінами. Завдяки цьому міст став елементом, який поєднує різні рівні міста." },
-            { text: "Сьогодні міст сприймається як частина історичного ландшафту Люксембургу та маршрутів для прогулянок старим містом." },
-            { bold: "Історія мосту ", text: "пов’язана з розвитком укріплень Люксембургу, які активно будувалися та перебудовувалися з Середньовіччя до Нового часу. У різні періоди місто перебувало під впливом різних європейських держав, що відображалося на інфраструктурі." },
-            { text: "Первісний міст був збудований у 1735 році в межах укріплень Люксембургу. Згодом споруда неодноразово перебудовувалася, а сучасного вигляду набула після реконструкції 1992–1993 років." },
-            { text: "З часом військова функція укріплень втратила значення, і район поступово інтегрувався в міську структуру. Міст зберігся як частина історичної спадщини." }
-          ]
-        },
-        tickets_and_entry: {
-          title: "Практична інформація",
-          items: [
-            { bold: "Адреса:", text: "Rue du Pont du Château / Corniche (район Bock), L-2340 Люксембург, Люксембург" }
-          ]
-        },
-        interestingFacts: {
-          title: "Цікаві факти",
-          isList: true,
-          items: [
-            { text: "Міст розташований у зоні колишніх оборонних укріплень міста" },
-            { text: "Район навколо включено до списку спадщини ЮНЕСКО (як частина укріплень Люксембургу)" },
-            { text: "Рельєф міста робить мости важливими елементами міської структури" },
-            { text: "Багато подібних споруд у Люксембурзі спочатку мали військове значення" }
-          ]
-        },
-        construction_period: "1735 рік",
-        meta: {
-          title: "Міст Понт-дю-Шато Люксембург – історичний міст старого міста",
-          description: "Міст Понт-дю-Шато – історичний міст у Люксембурзі, розташований у старому місті та пов’язаний із системою колишніх укріплень і фортифікацій.",
-          ogTitle: "Міст Понт-дю-Шато – історичний міст Люксембургу",
-          ogDescription: "Невеликий, але важливий історичний міст у Люксембурзі, частина старих укріплень і прогулянкових маршрутів містом.",
-          keywords: "Люксембург, Pont du Château, міст Понт-дю-Шато Люксембург, старе місто Люксембург, фортеця Люксембург, історичні мости, визначна пам’ятка",
-          ogImage: "https://our-travels.info/foto/Luxembourg/luxembourg_canton/luxembourg_city/old_town/pont_du_chateau/001.jpg"
-        }
-      },
-      de: {
-        name: "Pont du Château Brücke",
-        location: "Luxemburg (Viertel Ville Haute), Luxemburg",
-        short_description: "Die Pont du Château Brücke ist eine historische Brücke in Luxemburg, die sich im Bereich der alten Stadtbefestigungen befindet. Sie verbindet wichtige Teile des historischen Zentrums und steht im Zusammenhang mit der Entwicklung des Festungssystems der Stadt.",
-        full_description: {
-          title: "Beschreibung und Geschichte",
-          items: [
-            { bold: "Pont du Château (Schlossbrücke)", text: "befindet sich im historischen Teil von Luxemburg, wo sich über Jahrhunderte ein System aus Brücken, Befestigungen und unterirdischen Anlagen entwickelte. Die Umgebung der Brücke gehört zu den ehemaligen städtischen Verteidigungsanlagen, die Luxemburg zu einer der am stärksten befestigten Festungen Europas machten." },
-            { text: "Die Brücke erfüllt nicht nur eine verkehrstechnische, sondern auch eine architektonisch-historische Funktion. Sie ist Teil der städtischen Struktur, die durch ein komplexes Relief mit Höhenunterschieden, Felsen und Festungsmauern geprägt ist. Dadurch wurde sie zu einem verbindenden Element zwischen verschiedenen Stadtebenen." },
-            { text: "Heute wird die Brücke als Teil der historischen Landschaft Luxemburgs und der Spazierwege durch die Altstadt wahrgenommen." },
-            { bold: "Geschichte der Brücke ", text: "ist eng mit der Entwicklung der Befestigungsanlagen Luxemburgs verbunden, die vom Mittelalter bis zur Neuzeit intensiv gebaut und umgestaltet wurden. In verschiedenen Epochen stand die Stadt unter dem Einfluss unterschiedlicher europäischer Mächte, was sich in der Infrastruktur widerspiegelte." },
-            { text: "Die ursprüngliche Brücke wurde 1735 im Rahmen der Festungsanlagen Luxemburgs errichtet. Im Laufe der Zeit wurde sie mehrfach umgebaut und erhielt ihr heutiges Erscheinungsbild nach der Restaurierung 1992–1993." },
-            { text: "Mit der Zeit verlor die militärische Funktion der Befestigungen an Bedeutung, und das Gebiet wurde schrittweise in die städtische Struktur integriert. Die Brücke blieb als Teil des historischen Erbes erhalten." }
-          ]
-        },
-        tickets_and_entry: {
-          title: "Praktische Informationen",
-          items: [
-            { bold: "Adresse:", text: "Rue du Pont du Château / Corniche (Bock-Viertel), L-2340 Luxemburg, Luxemburg" }
-          ]
-        },
-        interestingFacts: {
-          title: "Interessante Fakten",
-          isList: true,
-          items: [
-            { text: "Die Brücke befindet sich im Bereich ehemaliger städtischer Verteidigungsanlagen" },
-            { text: "Die Umgebung ist Teil des UNESCO-Welterbes (Festungsanlagen Luxemburgs)" },
-            { text: "Die Topografie der Stadt macht Brücken zu wichtigen Elementen der städtischen Struktur" },
-            { text: "Viele ähnliche Bauwerke in Luxemburg hatten ursprünglich eine militärische Funktion" }
-          ]
-        },
-        construction_period: "1735",
-        meta: {
-          title: "Pont du Château Brücke Luxemburg – historische Brücke der Altstadt",
-          description: "Die Pont du Château Brücke ist eine historische Brücke in Luxemburg, gelegen in der Altstadt und verbunden mit dem ehemaligen Festungssystem der Stadt.",
-          ogTitle: "Pont du Château – historische Brücke in Luxemburg",
-          ogDescription: "Eine kleine, aber bedeutende historische Brücke in Luxemburg, Teil der alten Festungsanlagen und Spazierwege durch die Stadt.",
-          keywords: "Luxemburg, Pont du Château, Schlossbrücke Luxemburg, Altstadt Luxemburg, Festung Luxemburg, historische Brücken, Sehenswürdigkeit",
-          ogImage: "https://our-travels.info/foto/Luxembourg/luxembourg_canton/luxembourg_city/old_town/pont_du_chateau/001.jpg"
-        }
-      }
-    }
-  },
+  // {
+  //   id: "pont_du_chateau_luxembourg",
+  //   type: ["historical_building"], rating: "local",
+  //   path: "pont_du_chateau_luxembourg",
+  //   countryPath: "luxembourg", regionPath: "luxembourg_canton", districtPath: "city", cityPath: "luxembourg_city",
+  //   hiddenFromList: true, showMore: true,
+  //   fotoCard: "Luxembourg/luxembourg_canton/luxembourg_city/old_town/pont_du_chateau/001.jpg",
+  //   map: "bridges_luxembourg",
+  //   coord: { lat: 49.61158, lng: 6.13594 },
+  //   translations: {
+  //     ru: {
+  //       name: "Мост Понт-дю-Шато",
+  //       location: "Люксембург (квартал Ville Haute), Люксембург",
+  //       short_description: "Мост Понт-дю-Шато – это исторический мост в Люксембурге, расположенный в районе старых городских укреплений. Он соединяет важные части исторического центра и связан с развитием фортификационной системы города.",
+  //       full_description: {
+  //         title: "Описание и история",
+  //         items: [
+  //           { bold: "Мост Понт-дю-Шато (Pont du Château)", text: "находится в исторической части Люксембурга, где на протяжении веков формировалась система мостов, укреплений и подземных коммуникаций. Район вокруг моста относится к зоне бывших городских оборонительных сооружений, которые делали Люксембург одной из самых укреплённых крепостей Европы." },
+  //           { text: "Мост играет не только транспортную, но и архитектурно-историческую роль. Он является частью городской структуры, сформированной на сложном рельефе – с перепадами высот, скалами и крепостными стенами. Благодаря этому мост стал элементом, который объединяет разные уровни города." },
+  //           { text: "Сегодня мост воспринимается как часть исторического ландшафта Люксембурга и маршрутов для прогулок по старому городу." },
+  //           { bold: "История моста ", text: "связана с развитием укреплений Люксембурга, которые активно строились и перестраивались с Средневековья до Нового времени. В разные периоды город находился под влиянием различных европейских держав, что отражалось на инфраструктуре." },
+  //           { text: "Первоначальный мост был построен в 1735 году в рамках укреплений Люксембурга. Впоследствии сооружение неоднократно перестраивалось, а современный вид оно приобрело после реконструкции 1992–1993 годов." },
+  //           { text: "С течением времени военная функция укреплений утратила значение, и район постепенно интегрировался в городскую структуру. Мост сохранился как часть исторического наследия." }
+  //         ]
+  //       },
+  //       tickets_and_entry: {
+  //         title: "Практическая информация",
+  //         items: [
+  //           { bold: "Адрес:", text: "Rue du Pont du Château / Corniche (район Bock),Luxembourg, Luxembourg" }]
+  //       },
+  //       interestingFacts: {
+  //         title: "Интересные факты",
+  //         isList: true,
+  //         items: [
+  //           { text: "Мост находится в зоне бывших оборонительных укреплений города" },
+  //           { text: "Район вокруг включён в список наследия ЮНЕСКО (как часть укреплений Люксембурга)" },
+  //           { text: "Рельеф города делает мосты важнейшими элементами городской структуры" },
+  //           { text: "Многие подобные сооружения в Люксембурге изначально имели военное значение" }
+  //         ]
+  //       },
+  //       construction_period: "1735 год",
+  //       meta: {
+  //         title: "Мост Понт-дю-Шато Люксембург – исторический мост старого города",
+  //         description: "Мост Понт-дю-Шато – исторический мост в Люксембурге, расположенный в старом городе и связанный с системой бывших укреплений и фортификаций.",
+  //         ogTitle: "Мост Понт-дю-Шато – исторический мост Люксембурга",
+  //         ogDescription: "Небольшой, но важный исторический мост в Люксембурге, часть старых укреплений и прогулочных маршрутов по городу.",
+  //         keywords: "Люксембург, Pont du Château, мост Понт-дю-Шато Люксембург, старый город Люксембург, крепость Люксембург, исторические мосты, достопримечательность",
+  //         ogImage: "https://our-travels.info/foto/Luxembourg/luxembourg_canton/luxembourg_city/old_town/pont_du_chateau/001.jpg"
+  //       }
+  //     },
+  //     uk: {
+  //       name: "Міст Понт-дю-Шато",
+  //       location: "Люксембург (квартал Ville Haute), Люксембург",
+  //       short_description: "Міст Понт-дю-Шато – це історичний міст у Люксембурзі, розташований у районі старих міських укріплень. Він з’єднує важливі частини історичного центру та пов’язаний із розвитком фортифікаційної системи міста.",
+  //       full_description: {
+  //         title: "Опис та історія",
+  //         items: [
+  //           { bold: "Міст Понт-дю-Шато (Pont du Château)", text: "знаходиться в історичній частині Люксембургу, де протягом століть формувалася система мостів, укріплень і підземних комунікацій. Район навколо мосту належить до зони колишніх міських оборонних споруд, які робили Люксембург однією з найбільш укріплених фортець Європи." },
+  //           { text: "Міст виконує не лише транспортну, а й архітектурно-історичну роль. Він є частиною міської структури, сформованої на складному рельєфі – з перепадами висот, скелями та фортифікаційними стінами. Завдяки цьому міст став елементом, який поєднує різні рівні міста." },
+  //           { text: "Сьогодні міст сприймається як частина історичного ландшафту Люксембургу та маршрутів для прогулянок старим містом." },
+  //           { bold: "Історія мосту ", text: "пов’язана з розвитком укріплень Люксембургу, які активно будувалися та перебудовувалися з Середньовіччя до Нового часу. У різні періоди місто перебувало під впливом різних європейських держав, що відображалося на інфраструктурі." },
+  //           { text: "Первісний міст був збудований у 1735 році в межах укріплень Люксембургу. Згодом споруда неодноразово перебудовувалася, а сучасного вигляду набула після реконструкції 1992–1993 років." },
+  //           { text: "З часом військова функція укріплень втратила значення, і район поступово інтегрувався в міську структуру. Міст зберігся як частина історичної спадщини." }
+  //         ]
+  //       },
+  //       tickets_and_entry: {
+  //         title: "Практична інформація",
+  //         items: [
+  //           { bold: "Адреса:", text: "Rue du Pont du Château / Corniche (район Bock), L-2340 Люксембург, Люксембург" }
+  //         ]
+  //       },
+  //       interestingFacts: {
+  //         title: "Цікаві факти",
+  //         isList: true,
+  //         items: [
+  //           { text: "Міст розташований у зоні колишніх оборонних укріплень міста" },
+  //           { text: "Район навколо включено до списку спадщини ЮНЕСКО (як частина укріплень Люксембургу)" },
+  //           { text: "Рельєф міста робить мости важливими елементами міської структури" },
+  //           { text: "Багато подібних споруд у Люксембурзі спочатку мали військове значення" }
+  //         ]
+  //       },
+  //       construction_period: "1735 рік",
+  //       meta: {
+  //         title: "Міст Понт-дю-Шато Люксембург – історичний міст старого міста",
+  //         description: "Міст Понт-дю-Шато – історичний міст у Люксембурзі, розташований у старому місті та пов’язаний із системою колишніх укріплень і фортифікацій.",
+  //         ogTitle: "Міст Понт-дю-Шато – історичний міст Люксембургу",
+  //         ogDescription: "Невеликий, але важливий історичний міст у Люксембурзі, частина старих укріплень і прогулянкових маршрутів містом.",
+  //         keywords: "Люксембург, Pont du Château, міст Понт-дю-Шато Люксембург, старе місто Люксембург, фортеця Люксембург, історичні мости, визначна пам’ятка",
+  //         ogImage: "https://our-travels.info/foto/Luxembourg/luxembourg_canton/luxembourg_city/old_town/pont_du_chateau/001.jpg"
+  //       }
+  //     },
+  //     de: {
+  //       name: "Pont du Château Brücke",
+  //       location: "Luxemburg (Viertel Ville Haute), Luxemburg",
+  //       short_description: "Die Pont du Château Brücke ist eine historische Brücke in Luxemburg, die sich im Bereich der alten Stadtbefestigungen befindet. Sie verbindet wichtige Teile des historischen Zentrums und steht im Zusammenhang mit der Entwicklung des Festungssystems der Stadt.",
+  //       full_description: {
+  //         title: "Beschreibung und Geschichte",
+  //         items: [
+  //           { bold: "Pont du Château (Schlossbrücke)", text: "befindet sich im historischen Teil von Luxemburg, wo sich über Jahrhunderte ein System aus Brücken, Befestigungen und unterirdischen Anlagen entwickelte. Die Umgebung der Brücke gehört zu den ehemaligen städtischen Verteidigungsanlagen, die Luxemburg zu einer der am stärksten befestigten Festungen Europas machten." },
+  //           { text: "Die Brücke erfüllt nicht nur eine verkehrstechnische, sondern auch eine architektonisch-historische Funktion. Sie ist Teil der städtischen Struktur, die durch ein komplexes Relief mit Höhenunterschieden, Felsen und Festungsmauern geprägt ist. Dadurch wurde sie zu einem verbindenden Element zwischen verschiedenen Stadtebenen." },
+  //           { text: "Heute wird die Brücke als Teil der historischen Landschaft Luxemburgs und der Spazierwege durch die Altstadt wahrgenommen." },
+  //           { bold: "Geschichte der Brücke ", text: "ist eng mit der Entwicklung der Befestigungsanlagen Luxemburgs verbunden, die vom Mittelalter bis zur Neuzeit intensiv gebaut und umgestaltet wurden. In verschiedenen Epochen stand die Stadt unter dem Einfluss unterschiedlicher europäischer Mächte, was sich in der Infrastruktur widerspiegelte." },
+  //           { text: "Die ursprüngliche Brücke wurde 1735 im Rahmen der Festungsanlagen Luxemburgs errichtet. Im Laufe der Zeit wurde sie mehrfach umgebaut und erhielt ihr heutiges Erscheinungsbild nach der Restaurierung 1992–1993." },
+  //           { text: "Mit der Zeit verlor die militärische Funktion der Befestigungen an Bedeutung, und das Gebiet wurde schrittweise in die städtische Struktur integriert. Die Brücke blieb als Teil des historischen Erbes erhalten." }
+  //         ]
+  //       },
+  //       tickets_and_entry: {
+  //         title: "Praktische Informationen",
+  //         items: [
+  //           { bold: "Adresse:", text: "Rue du Pont du Château / Corniche (Bock-Viertel), L-2340 Luxemburg, Luxemburg" }
+  //         ]
+  //       },
+  //       interestingFacts: {
+  //         title: "Interessante Fakten",
+  //         isList: true,
+  //         items: [
+  //           { text: "Die Brücke befindet sich im Bereich ehemaliger städtischer Verteidigungsanlagen" },
+  //           { text: "Die Umgebung ist Teil des UNESCO-Welterbes (Festungsanlagen Luxemburgs)" },
+  //           { text: "Die Topografie der Stadt macht Brücken zu wichtigen Elementen der städtischen Struktur" },
+  //           { text: "Viele ähnliche Bauwerke in Luxemburg hatten ursprünglich eine militärische Funktion" }
+  //         ]
+  //       },
+  //       construction_period: "1735",
+  //       meta: {
+  //         title: "Pont du Château Brücke Luxemburg – historische Brücke der Altstadt",
+  //         description: "Die Pont du Château Brücke ist eine historische Brücke in Luxemburg, gelegen in der Altstadt und verbunden mit dem ehemaligen Festungssystem der Stadt.",
+  //         ogTitle: "Pont du Château – historische Brücke in Luxemburg",
+  //         ogDescription: "Eine kleine, aber bedeutende historische Brücke in Luxemburg, Teil der alten Festungsanlagen und Spazierwege durch die Stadt.",
+  //         keywords: "Luxemburg, Pont du Château, Schlossbrücke Luxemburg, Altstadt Luxemburg, Festung Luxemburg, historische Brücken, Sehenswürdigkeit",
+  //         ogImage: "https://our-travels.info/foto/Luxembourg/luxembourg_canton/luxembourg_city/old_town/pont_du_chateau/001.jpg"
+  //       }
+  //     }
+  //   }
+  // },
   {
     id: "bridges_luxembourg",
     type: ["technical_structure"], rating: "top",

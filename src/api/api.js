@@ -1,16 +1,33 @@
 const BASE_URL = import.meta.env.VITE_API_URL;
 
+
 const apiFetch = async (url, options = {}) => {
   const response = await fetch(url, {
     ...options
   });
 
   if (!response.ok) {
-    throw new Error(`HTTP error: ${response.status}`);
+    let errorMessage = `HTTP error: ${response.status}`;
+
+    try {
+      const errorData = await response.json();
+
+      if (typeof errorData.error === "string") {
+        errorMessage = errorData.error;
+      }
+    } catch (error) {
+      // Keep the default HTTP error message.
+    }
+
+    const apiError = new Error(errorMessage);
+    apiError.status = response.status;
+
+    throw apiError;
   }
 
   return response.json();
 };
+
 
 export const getCountries = (lang = "ru") =>
   apiFetch(`${BASE_URL}/api/countries?lang=${lang}`);

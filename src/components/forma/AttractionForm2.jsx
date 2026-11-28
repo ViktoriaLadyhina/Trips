@@ -28,16 +28,95 @@ function AttractionForm2({ attractionId }) {
 
     const onSubmit = async (data) => {
         try {
+
+            const allItems = data.items || [];
+
+            for (const item of allItems) {
+                const itemLanguages = [
+                    item.item_ru, item.item_uk, item.item_de
+                ].map((value) => typeof value === "string" ? value.trim() : ""
+                );
+
+                const hasItemContent = itemLanguages.some(Boolean);
+
+                if (hasItemContent && !itemLanguages.every(Boolean)) {
+                    alert(
+                        "Заполните описание элемента на русском, украинском и немецком языках либо оставьте все три поля пустыми."
+                    );
+                    return;
+                }
+            }
+
+            const filledItems = allItems.filter((item) =>
+                [item.item_ru, item.item_uk, item.item_de].some(
+                    (value) => typeof value === "string" && value.trim() !== ""
+                )
+            );
+
+            const titleLanguages = [
+                data.item_title_ru, data.item_title_uk, data.item_title_de
+            ].map((value) => typeof value === "string" ? value.trim() : ""
+            );
+
+            const practicalInfoLanguages = [
+                data.practical_info_ru, data.practical_info_uk, data.practical_info_de
+            ].map((value) => typeof value === "string" ? value.trim() : ""
+            );
+
+
+            const hasItemTitle = titleLanguages.some(Boolean);
+            const hasPracticalInfo = practicalInfoLanguages.some(Boolean);
+
+            if (hasItemTitle && !titleLanguages.every(Boolean)) {
+                alert("Заполните заголовок блока на русском, украинском и немецком языках либо оставьте все три поля пустыми.");
+                return;
+            }
+
+            if (hasPracticalInfo && !practicalInfoLanguages.every(Boolean)) {
+                alert("Заполните практическую информацию на русском, украинском и немецком языках либо оставьте все три поля пустыми.");
+                return;
+            }
+
             await addAttraction2({
+                ...data,
                 attractionId,
-                ...data
+                items: filledItems,
             });
 
             alert("Данные блока сохранены");
+
         } catch (error) {
-            console.error("Ошибка сохранения блока:", error);
-            alert("Не удалось сохранить данные блока");
+            console.error("Failed to save attraction content:", error);
+
+            if (!error.status) {
+                alert("Не удалось связаться с сервером. Проверьте подключение к интернету и попробуйте ещё раз.");
+            } else if (error.status === 401) {
+                alert("Ваша сессия завершилась. Войдите в систему заново.");
+            } else if (error.status === 400) {
+                const validationMessages = {
+                    "Invalid attraction ID": "Некорректный ID достопримечательности.",
+                    "Invalid content fields": "Проверьте поля заголовка и описания блока.",
+                    "Attraction not found": "Достопримечательность не найдена в базе данных.",
+                    "Item title must be filled in all languages": "Заполните заголовок блока на русском, украинском и немецком языках.",
+                    "Invalid item fields": "Проверьте поля описания элемента.",
+                    "Item description must be filled in all languages": "Заполните описание элемента на русском, украинском и немецком языках либо оставьте все три поля пустыми.",
+                    "Invalid image ID": "Выбрана некорректная фотография.",
+                    "Photo not found for this attraction": "Выбранная фотография не принадлежит этой достопримечательности.",
+                    "Invalid practical information fields": "Проверьте поля практической информации.",
+                    "Practical information must be filled in all languages": "Заполните практическую информацию на русском, украинском и немецком языках либо оставьте все три поля пустыми."
+                };
+
+                alert(
+                    validationMessages[error.message] ||
+                    "Проверьте введённые данные и попробуйте ещё раз."
+                );
+            } else if (error.status === 500) {
+                alert("Произошла ошибка на сервере. Данные не удалось сохранить.");
+            } else {
+                alert("Не удалось сохранить данные блока. Попробуйте ещё раз.");
+            }
         }
+
     };
 
     useEffect(() => {
@@ -46,7 +125,7 @@ function AttractionForm2({ attractionId }) {
                 const photoData = await getAttractionPhotos(attractionId);
                 setPhotos(photoData.photos ?? []);
             } catch (error) {
-                console.error("Ошибка загрузки фотографий:", error);
+                console.error("Failed to load attraction photos:", error);
             }
         };
 
@@ -111,7 +190,7 @@ function AttractionForm2({ attractionId }) {
                 </button>
             </div>
 
-             <h3>Практическая информация</h3>
+            <h3>Практическая информация</h3>
             <div className="field">
                 <label> Практическая информация (RU): <textarea rows={10} {...register("practical_info_ru")} /> </label>
                 <label> Практична інформація (UK): <textarea rows={10} {...register("practical_info_uk")} /> </label>

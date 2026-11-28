@@ -324,9 +324,7 @@ const datas =
     // край lippe 
     // detmold
     altstadt_detmold: { id: 1370, ru: 'Исторический центр Детмольда', de: 'Historischer Stadtkern Detmold', uk: 'Історичний центр Детмольда' },
-    // нужно добавить фото 
     castle_detmold: { id: 1373, ru: 'Княжеский резиденц-замок Детмольда', de: 'Fürstliches Residenzschloss Detmold', uk: 'Князівський резиденц-замок Детмольда' },
-    // нужно добавить фото 
 
     // Düsseldorf okrug
     // край mettmann 
@@ -445,7 +443,7 @@ const datas =
     old_town_luxembourg: { id: 897, ru: 'Старый город Люксембурга', de: 'Altstadt Luxemburg', uk: 'Старе місто Люксембурга' },
     casemates_du_bock_luxembourg: { id: 902, ru: 'Казематы Бок', de: 'Bock-Kasematten', uk: 'Каземати Бок' },
     abbey_neumunster_luxembourg: { id: 911, ru: 'Абатство Неймюнстер', de: 'Abtei Neumünster', uk: 'Абатство Неймюнстер' },
-    pont_du_chateau_luxembourg: { ru: 'Мост Понт-дю-Шато', de: 'Pont du Château Brücke', uk: 'Міст Понт-дю-Шато' },
+    pont_du_chateau_luxembourg: { id: 1374, ru: 'Мост Понт-дю-Шато', de: 'Pont du Château Brücke', uk: 'Міст Понт-дю-Шато' },
     bridges_luxembourg: { ru: 'Мосты и виадуки Люксембурга', de: 'Brücken und Viadukte von Luxemburg', uk: 'Мости та віадуки Люксембурга' },
     passerelle_luxembourg: { ru: 'Мост Пассерель', de: 'Passerelle-Brücke', uk: 'Міст Пассерель' },
     adolphe_luxembourg: { ru: 'Мост Адольфа', de: 'Adolphe-Brücke', uk: 'Міст Адольфа' },

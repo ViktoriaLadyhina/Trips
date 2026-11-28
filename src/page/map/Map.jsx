@@ -311,6 +311,26 @@ const Map = () => {
                     </ul>
                   </li>
 
+                  {/* Округ Detmold */}
+                  <li><Link to="/germany/nrw/detmold">{t.districts.detmold[lang]}</Link>
+                    <ul>
+                      {/* Край Lippe */}
+                      <li><span>{t.subRegions.lippe[lang]}</span>
+                        <ul>
+                          <li><Link to="/germany/nrw/detmold/detmold_city">{t.cities.detmold_city[lang]}</Link>
+                            <ul>
+                              <li><Link to="/germany/nrw/detmold/detmold_city/attractions/altstadt_detmold">{t.attractions.altstadt_detmold[lang]}</Link>
+                                <ul>
+                                  <li><Link to="/germany/nrw/detmold/detmold_city/attractions/castle_detmold">{t.attractions.castle_detmold[lang]}</Link></li>
+                                </ul>
+                              </li>
+                            </ul>
+                          </li>
+                        </ul>
+                      </li>
+                    </ul>
+                  </li>
+
                   {/* Округ Düsseldorf */}
                   <li><Link to="/germany/nrw/dusseldorf">{t.districts.dusseldorf[lang]}</Link>
                     <ul>
