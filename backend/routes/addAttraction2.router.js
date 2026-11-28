@@ -283,6 +283,7 @@ router.post("/", async (req, res) => {
         }
 
         // Сохранение интересных фактов
+        console.log("Saving interesting facts to database");
         if (interestingFactsStatus === "valid") {
             const interestingFactsHeadings = {
                 ru: ["Интересные факты"],

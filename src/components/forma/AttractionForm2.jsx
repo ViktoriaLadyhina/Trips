@@ -6,7 +6,6 @@ import './AttractionForm.scss';
 function AttractionForm2({ attractionId }) {
     const [photos, setPhotos] = useState([]);
 
-
     const { register, handleSubmit, control } = useForm({
         defaultValues: {
             item_title_ru: "", item_title_uk: "", item_title_de: "",
@@ -16,7 +15,8 @@ function AttractionForm2({ attractionId }) {
                     image_id: null
                 }
             ],
-            practical_info_ru: "", practical_info_uk: "", practical_info_de: ""
+            practical_info_ru: "", practical_info_uk: "", practical_info_de: "",
+            interestingFacts_ru: "", interestingFacts_uk: "", interestingFacts_de: ""
         }
     });
 
@@ -24,7 +24,6 @@ function AttractionForm2({ attractionId }) {
         control,
         name: "items"
     });
-
 
     const onSubmit = async (data) => {
         try {
@@ -63,9 +62,13 @@ function AttractionForm2({ attractionId }) {
             ].map((value) => typeof value === "string" ? value.trim() : ""
             );
 
+            const interestingFactsLanguages = [
+                data.interestingFacts_ru, data.interestingFacts_uk, data.interestingFacts_de
+            ].map((value) => typeof value === "string" ? value.trim() : "");
 
             const hasItemTitle = titleLanguages.some(Boolean);
             const hasPracticalInfo = practicalInfoLanguages.some(Boolean);
+            const hasInterestingFacts = interestingFactsLanguages.some(Boolean);
 
             if (hasItemTitle && !titleLanguages.every(Boolean)) {
                 alert("Заполните заголовок блока на русском, украинском и немецком языках либо оставьте все три поля пустыми.");
@@ -74,6 +77,11 @@ function AttractionForm2({ attractionId }) {
 
             if (hasPracticalInfo && !practicalInfoLanguages.every(Boolean)) {
                 alert("Заполните практическую информацию на русском, украинском и немецком языках либо оставьте все три поля пустыми.");
+                return;
+            }
+
+            if (hasInterestingFacts && !interestingFactsLanguages.every(Boolean)) {
+                alert("Заполните интересные факты на русском, украинском и немецком языках либо оставьте все три поля пустыми.");
                 return;
             }
 
@@ -103,7 +111,9 @@ function AttractionForm2({ attractionId }) {
                     "Invalid image ID": "Выбрана некорректная фотография.",
                     "Photo not found for this attraction": "Выбранная фотография не принадлежит этой достопримечательности.",
                     "Invalid practical information fields": "Проверьте поля практической информации.",
-                    "Practical information must be filled in all languages": "Заполните практическую информацию на русском, украинском и немецком языках либо оставьте все три поля пустыми."
+                    "Practical information must be filled in all languages": "Заполните практическую информацию на русском, украинском и немецком языках либо оставьте все три поля пустыми.",
+                    "Invalid interesting facts fields": "Проверьте поля интересных фактов.",
+                    "Interesting facts must be filled in all languages": "Заполните интересные факты на русском, украинском и немецком языках либо оставьте все три поля пустыми.",
                 };
 
                 alert(
@@ -150,9 +160,9 @@ function AttractionForm2({ attractionId }) {
                 {fields.map((field, index) => (
                     <div key={field.id}>
                         <h4>Элемент {index + 1}</h4>
-                        <label> Описание (RU): <textarea rows={10} {...register(`items.${index}.item_ru`)} /> </label>
-                        <label> Опис (UK): <textarea rows={10} {...register(`items.${index}.item_uk`)} /> </label>
-                        <label> Beschreibung (DE): <textarea rows={10} {...register(`items.${index}.item_de`)} /> </label>
+                        <label> Описание (RU): <textarea rows={10} {...register(`items.${index}.item_ru`)} placeholder={"**Временные выставки (Sonderausstellungen)**\nВ замке регулярно ..."}/> </label>
+                        <label> Опис (UK): <textarea rows={10} {...register(`items.${index}.item_uk`)} placeholder={"**Тимчасові виставки (Sonderausstellungen)**\nУ замку регулярно ..."}/> </label>
+                        <label> Beschreibung (DE): <textarea rows={10} {...register(`items.${index}.item_de`)} placeholder={"**Sonderausstellungen**\nIm Schloss finden regelmäßig ..."}/> </label>
 
                         <label> Выбрать фотографию:
                             <select
@@ -164,7 +174,7 @@ function AttractionForm2({ attractionId }) {
                                 <option value="">Без фотографии</option>
                                 {photos.map((photo) => (
                                     <option key={photo.id} value={photo.id}>
-                                        {photo.title?.ru || photo.path}
+                                        {`${photo.sort_order} – ${photo.title?.ru || photo.path}`}
                                     </option>
                                 ))}
                             </select>
@@ -192,9 +202,16 @@ function AttractionForm2({ attractionId }) {
 
             <h3>Практическая информация</h3>
             <div className="field">
-                <label> Практическая информация (RU): <textarea rows={10} {...register("practical_info_ru")} /> </label>
-                <label> Практична інформація (UK): <textarea rows={10} {...register("practical_info_uk")} /> </label>
-                <label> Praktische Informationen (DE): <textarea rows={10} {...register("practical_info_de")} /> </label>
+                <label> Практическая информация (RU): <textarea rows={10} {...register("practical_info_ru")} placeholder={"**Адрес:** 5, Park Dräi Eechelen, L-1499 Luxembourg, Luxembourg\n\n**Часы работы:**\n- Вторник – воскресенье: 10:00–18:00.\n- Среда: 10:00–20:00.\n- Понедельник: выходной.\n\n**Стоимость:**\n- Стандартный билет — 7 €.\n- Комбинированный билет — 12 €.\n\n**Доступность:** описание доступности объекта."}/> </label>
+                <label> Практична інформація (UK): <textarea rows={10} {...register("practical_info_uk")} placeholder={"**Адреса:** 5, Park Dräi Eechelen, L-1499 Luxembourg, Luxembourg\n\n**Години роботи:**\n- Вівторок – неділя: 10:00–18:00.\n- Середа: 10:00–20:00.\n- Понеділок: вихідний.\n\n**Вартість:**\n- Стандартний квиток — 7 €.\n- Комбінований квиток — 12 €.\n\n**Доступність:** опис доступності об'єкта."}/> </label>
+                <label> Praktische Informationen (DE): <textarea rows={10} {...register("practical_info_de")} placeholder={"**Adresse:** 5, Park Dräi Eechelen, L-1499 Luxembourg, Luxembourg\n\n**Öffnungszeiten:**\n- Dienstag–Sonntag: 10:00–18:00.\n- Mittwoch: 10:00–20:00.\n- Montag: geschlossen.\n\n**Eintrittspreise:**\n- Standardticket — 7 €.\n- Kombiticket — 12 €.\n\n**Barrierefreiheit:** Beschreibung der Zugänglichkeit."}/> </label>
+            </div>
+
+            <h3>Интересные факты</h3>
+            <div className="field">
+                <label> Интересные факты (RU): <textarea rows={10} {...register("interestingFacts_ru")} placeholder={"- Первый интересный факт.\n- Второй интересный факт."} /> </label>
+                <label> Цікаві факти (UK): <textarea rows={10} {...register("interestingFacts_uk")} placeholder={"- Перший цікавий факт.\n- Другий цікавий факт."} /> </label>
+                <label> Interessante Fakten (DE): <textarea rows={10} {...register("interestingFacts_de")} placeholder={"- Erste interessante Tatsache.\n- Zweite interessante Tatsache."} /> </label>
             </div>
 
             <button type="submit">Сохранить данные в БД</button>
