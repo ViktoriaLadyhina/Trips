@@ -16,7 +16,11 @@ function AttractionForm2({ attractionId }) {
                 }
             ],
             practical_info_ru: "", practical_info_uk: "", practical_info_de: "",
-            interestingFacts_ru: "", interestingFacts_uk: "", interestingFacts_de: ""
+            interestingFacts_ru: "", interestingFacts_uk: "", interestingFacts_de: "",
+            sculptors_ru: "", sculptors_uk: "", sculptors_de: "",
+            architects_ru: "", architects_uk: "", architects_de: "",
+            founder_ru: "", founder_uk: "", founder_de: "",
+            construction_period_ru: "", construction_period_uk: "", construction_period_de: "",
         }
     });
 
@@ -66,22 +70,58 @@ function AttractionForm2({ attractionId }) {
                 data.interestingFacts_ru, data.interestingFacts_uk, data.interestingFacts_de
             ].map((value) => typeof value === "string" ? value.trim() : "");
 
+
+            const sculptorsLanguages = [
+                data.sculptors_ru, data.sculptors_uk, data.sculptors_de
+            ].map((value) => typeof value === "string" ? value.trim() : "");
+
+            const architectsLanguages = [
+                data.architects_ru, data.architects_uk, data.architects_de
+            ].map((value) => typeof value === "string" ? value.trim() : "");
+
+            const founderLanguages = [
+                data.founder_ru, data.founder_uk, data.founder_de
+            ].map((value) => typeof value === "string" ? value.trim() : "");
+
+            const constructionPeriodLanguages = [
+                data.construction_period_ru, data.construction_period_uk, data.construction_period_de
+            ].map((value) => typeof value === "string" ? value.trim() : "");
+
+
             const hasItemTitle = titleLanguages.some(Boolean);
             const hasPracticalInfo = practicalInfoLanguages.some(Boolean);
             const hasInterestingFacts = interestingFactsLanguages.some(Boolean);
+            const hasSculptors = sculptorsLanguages.some(Boolean);
+            const hasArchitects = architectsLanguages.some(Boolean);
+            const hasFounder = founderLanguages.some(Boolean);
+            const hasConstructionPeriod = constructionPeriodLanguages.some(Boolean);
 
             if (hasItemTitle && !titleLanguages.every(Boolean)) {
                 alert("Заполните заголовок блока на русском, украинском и немецком языках либо оставьте все три поля пустыми.");
                 return;
             }
-
             if (hasPracticalInfo && !practicalInfoLanguages.every(Boolean)) {
                 alert("Заполните практическую информацию на русском, украинском и немецком языках либо оставьте все три поля пустыми.");
                 return;
             }
-
             if (hasInterestingFacts && !interestingFactsLanguages.every(Boolean)) {
                 alert("Заполните интересные факты на русском, украинском и немецком языках либо оставьте все три поля пустыми.");
+                return;
+            }
+            if (hasSculptors && !sculptorsLanguages.every(Boolean)) {
+                alert("Заполните сведения о скульпторе на русском, украинском и немецком языках либо оставьте все три поля пустыми.");
+                return;
+            }
+            if (hasArchitects && !architectsLanguages.every(Boolean)) {
+                alert("Заполните сведения об архитекторах на русском, украинском и немецком языках либо оставьте все три поля пустыми.");
+                return;
+            }
+            if (hasFounder && !founderLanguages.every(Boolean)) {
+                alert("Заполните сведения об основателе на русском, украинском и немецком языках либо оставьте все три поля пустыми.");
+                return;
+            }
+            if (hasConstructionPeriod && !constructionPeriodLanguages.every(Boolean)) {
+                alert("Заполните период основания на русском, украинском и немецком языках либо оставьте все три поля пустыми.");
                 return;
             }
 
@@ -160,9 +200,9 @@ function AttractionForm2({ attractionId }) {
                 {fields.map((field, index) => (
                     <div key={field.id}>
                         <h4>Элемент {index + 1}</h4>
-                        <label> Описание (RU): <textarea rows={10} {...register(`items.${index}.item_ru`)} placeholder={"**Временные выставки (Sonderausstellungen)**\nВ замке регулярно ..."}/> </label>
-                        <label> Опис (UK): <textarea rows={10} {...register(`items.${index}.item_uk`)} placeholder={"**Тимчасові виставки (Sonderausstellungen)**\nУ замку регулярно ..."}/> </label>
-                        <label> Beschreibung (DE): <textarea rows={10} {...register(`items.${index}.item_de`)} placeholder={"**Sonderausstellungen**\nIm Schloss finden regelmäßig ..."}/> </label>
+                        <label> Описание (RU): <textarea rows={6} {...register(`items.${index}.item_ru`)} placeholder={"**Временные выставки (Sonderausstellungen)**\nВ замке регулярно ..."}/> </label>
+                        <label> Опис (UK): <textarea rows={6} {...register(`items.${index}.item_uk`)} placeholder={"**Тимчасові виставки (Sonderausstellungen)**\nУ замку регулярно ..."}/> </label>
+                        <label> Beschreibung (DE): <textarea rows={6} {...register(`items.${index}.item_de`)} placeholder={"**Sonderausstellungen**\nIm Schloss finden regelmäßig ..."}/> </label>
 
                         <label> Выбрать фотографию:
                             <select
@@ -209,10 +249,40 @@ function AttractionForm2({ attractionId }) {
 
             <h3>Интересные факты</h3>
             <div className="field">
-                <label> Интересные факты (RU): <textarea rows={10} {...register("interestingFacts_ru")} placeholder={"- Первый интересный факт.\n- Второй интересный факт."} /> </label>
-                <label> Цікаві факти (UK): <textarea rows={10} {...register("interestingFacts_uk")} placeholder={"- Перший цікавий факт.\n- Другий цікавий факт."} /> </label>
-                <label> Interessante Fakten (DE): <textarea rows={10} {...register("interestingFacts_de")} placeholder={"- Erste interessante Tatsache.\n- Zweite interessante Tatsache."} /> </label>
+                <label> Интересные факты (RU): <textarea rows={6} {...register("interestingFacts_ru")} placeholder={"- Первый интересный факт.\n- Второй интересный факт."} /> </label>
+                <label> Цікаві факти (UK): <textarea rows={6} {...register("interestingFacts_uk")} placeholder={"- Перший цікавий факт.\n- Другий цікавий факт."} /> </label>
+                <label> Interessante Fakten (DE): <textarea rows={6} {...register("interestingFacts_de")} placeholder={"- Erste interessante Tatsache.\n- Zweite interessante Tatsache."} /> </label>
             </div>
+
+
+            <h3>Скульптор</h3>
+            <div className="field">
+                <label> Скульптор (RU): <textarea rows={1} {...register("sculptors_ru")} placeholder="**Скульпторы:** Имя и фамилия скульптора." /> </label>
+                <label> Скульптор (UK): <textarea rows={1} {...register("sculptors_uk")} placeholder="**Скульптори:** Ім'я та прізвище скульптора." /> </label>
+                <label> Bildhauer (DE): <textarea rows={1} {...register("sculptors_de")} placeholder="**Bildhauer:** Vor- und Nachname des Bildhauers." /> </label>
+            </div>
+
+            <h3>Архитекторы</h3>
+            <div className="field">
+                <label> Архитекторы (RU): <textarea rows={1} {...register("architects_ru")} placeholder="**Архитекторы:** Имена и фамилии архитекторов." /> </label>
+                <label> Архітектори (UK): <textarea rows={1} {...register("architects_uk")} placeholder="**Архітектори:** Імена та прізвища архітекторів." /> </label>
+                <label> Architekten (DE): <textarea rows={1} {...register("architects_de")} placeholder="**Architekten:** Namen der Architekten." /> </label>
+            </div>
+
+            <h3>Основатель</h3>
+            <div className="field">
+                <label> Основатель (RU): <textarea rows={1} {...register("founder_ru")} placeholder="**Основатель:** Зигфрид Люксембургский" /> </label>
+                <label> Засновник (UK): <textarea rows={1} {...register("founder_uk")} placeholder="**Засновник:** Ім'я та прізвище засновника." /> </label>
+                <label> Gründer (DE): <textarea rows={1} {...register("founder_de")} placeholder="**Gründers:** Vor- und Nachname des Gründers." /> </label>
+            </div>
+
+            <h3>Период основания</h3>
+            <div className="field">
+                <label> Период основания (RU): <textarea rows={2} {...register("construction_period_ru")} placeholder="**Период формирования:** с 963 года, основные укрепления создавались и расширялись в XII–XIX веках" /> </label>
+                <label> Період заснування (UK): <textarea rows={2} {...register("construction_period_uk")} placeholder="**Період формування:** з 963 року, основні укріплення створювалися та розширювалися у XII–XIX століттях." /> </label>
+                <label> Gründungszeitraum (DE): <textarea rows={2} {...register("construction_period_de")} placeholder="**Entstehungszeitraum:** seit 963, die wichtigsten Befestigungsanlagen wurden im 12.–19. Jahrhundert errichtet und erweitert." /> </label>
+            </div>
+
 
             <button type="submit">Сохранить данные в БД</button>
         </form>

@@ -23,7 +23,11 @@ router.post("/", async (req, res) => {
             item_title_ru, item_title_uk, item_title_de,
             items,
             practical_info_ru, practical_info_uk, practical_info_de,
-            interestingFacts_ru, interestingFacts_uk, interestingFacts_de
+            interestingFacts_ru, interestingFacts_uk, interestingFacts_de,
+            sculptors_ru, sculptors_uk, sculptors_de,
+            architects_ru, architects_uk, architects_de,
+            founder_ru, founder_uk, founder_de,
+            construction_period_ru, construction_period_uk, construction_period_de
         } = req.body;
 
         const id = Number(attractionId);
@@ -184,6 +188,102 @@ router.post("/", async (req, res) => {
             });
         }
 
+
+        const sculptors = {
+            ru: sculptors_ru,
+            uk: sculptors_uk,
+            de: sculptors_de
+        };
+
+        const architects = {
+            ru: architects_ru,
+            uk: architects_uk,
+            de: architects_de
+        };
+
+        const founder = {
+            ru: founder_ru,
+            uk: founder_uk,
+            de: founder_de
+        };
+
+        const constructionPeriod = {
+            ru: construction_period_ru,
+            uk: construction_period_uk,
+            de: construction_period_de
+        };
+
+
+        if (
+            Object.values(sculptors).some(
+                (value) => value != null && typeof value !== "string"
+            )
+        ) {
+            return res.status(400).json({
+                error: "Invalid sculptors fields"
+            });
+        }
+
+        if (
+            Object.values(architects).some(
+                (value) => value != null && typeof value !== "string"
+            )
+        ) {
+            return res.status(400).json({
+                error: "Invalid architects fields"
+            });
+        }
+
+        if (
+            Object.values(founder).some(
+                (value) => value != null && typeof value !== "string"
+            )
+        ) {
+            return res.status(400).json({
+                error: "Invalid founder fields"
+            });
+        }
+
+        if (
+            Object.values(constructionPeriod).some(
+                (value) => value != null && typeof value !== "string"
+            )
+        ) {
+            return res.status(400).json({
+                error: "Invalid construction period fields"
+            });
+        }
+
+
+        const sculptorsStatus = validateLanguages(sculptors);
+        const architectsStatus = validateLanguages(architects);
+        const founderStatus = validateLanguages(founder);
+        const constructionPeriodStatus = validateLanguages(constructionPeriod);
+
+        if (sculptorsStatus === "incomplete") {
+            return res.status(400).json({
+                error: "Sculptors must be filled in all languages"
+            });
+        }
+
+        if (architectsStatus === "incomplete") {
+            return res.status(400).json({
+                error: "Architects must be filled in all languages"
+            });
+        }
+
+        if (founderStatus === "incomplete") {
+            return res.status(400).json({
+                error: "Founder must be filled in all languages"
+            });
+        }
+
+        if (constructionPeriodStatus === "incomplete") {
+            return res.status(400).json({
+                error: "Construction period must be filled in all languages"
+            });
+        }
+
         connection = await db.getConnection();
         await connection.beginTransaction();
         transactionStarted = true;
@@ -263,8 +363,11 @@ router.post("/", async (req, res) => {
             };
 
             for (const [language, info] of Object.entries(practicalInfos)) {
+
+                const heading = practicalInfoHeadings[language][0];
+
                 const htmlInfo = convertDescriptionToHtml(
-                    info,
+                    `${heading}\n\n${info.trim()}`,
                     practicalInfoHeadings[language]
                 );
 
@@ -297,23 +400,42 @@ router.post("/", async (req, res) => {
                     [heading]
                 );
 
-const [result] = await connection.query(
-    `INSERT INTO content (entity_id, block_key, language, content)
-     VALUES (?, ?, ?, ?)`,
-    [
-        id,
-        "interestingFacts",
-        language,
-        htmlFacts
-    ]
-);
+                await connection.query(
+                    `INSERT INTO content (entity_id, block_key, language, content)
+                     VALUES (?, ?, ?, ?)`,
+                    [
+                        id,
+                        "interestingFacts",
+                        language,
+                        htmlFacts
+                    ]
+                );
+            }
+        }
 
-console.log("Interesting facts inserted:", {
-    entityId: id,
-    language,
-    affectedRows: result.affectedRows,
-    insertId: result.insertId
-});
+        // Сохранение блоков про скульпторов, архитекторов, основателя и период строительства
+        const optionalBlocks = [
+            { key: "sculptors", values: sculptors, status: sculptorsStatus },
+            { key: "architects", values: architects, status: architectsStatus },
+            { key: "founder", values: founder, status: founderStatus },
+            { key: "construction_period", values: constructionPeriod, status: constructionPeriodStatus }
+        ];
+
+        for (const block of optionalBlocks) {
+            if (block.status !== "valid") continue;
+
+            for (const language of languages) {
+                const htmlContent = convertDescriptionToHtml(
+                    block.values[language].trim(),
+                    []
+                );
+
+                await connection.query(
+                    `INSERT INTO content
+                    (entity_id, block_key, language, content)
+                    VALUES (?, ?, ?, ?)`,
+                    [id, block.key, language, htmlContent]
+                );
             }
         }
 
