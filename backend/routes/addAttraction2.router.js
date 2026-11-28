@@ -177,7 +177,6 @@ router.post("/", async (req, res) => {
         }
 
         const interestingFactsStatus = validateLanguages(interestingFacts);
-        console.log("Interesting facts validation:", interestingFacts);
 
         if (interestingFactsStatus === "incomplete") {
             return res.status(400).json({
@@ -283,7 +282,6 @@ router.post("/", async (req, res) => {
         }
 
         // Сохранение интересных фактов
-        console.log("Saving interesting facts to database");
         if (interestingFactsStatus === "valid") {
             const interestingFactsHeadings = {
                 ru: ["Интересные факты"],
@@ -299,16 +297,23 @@ router.post("/", async (req, res) => {
                     [heading]
                 );
 
-                await connection.query(
-                    `INSERT INTO content (entity_id, block_key, language, content)
-                     VALUES (?, ?, ?, ?)`,
-                    [
-                        id,
-                        "interestingFacts",
-                        language,
-                        htmlFacts
-                    ]
-                );
+const [result] = await connection.query(
+    `INSERT INTO content (entity_id, block_key, language, content)
+     VALUES (?, ?, ?, ?)`,
+    [
+        id,
+        "interestingFacts",
+        language,
+        htmlFacts
+    ]
+);
+
+console.log("Interesting facts inserted:", {
+    entityId: id,
+    language,
+    affectedRows: result.affectedRows,
+    insertId: result.insertId
+});
             }
         }
 
